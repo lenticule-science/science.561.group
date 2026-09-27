@@ -40,7 +40,7 @@ where:
 - $A$ is the **agent** — the party who commits; $A$ is accountable for discharge
 - $\varphi$ is the **act-class** — the type of act $A$ commits to performing; $\varphi$ specifies what counts as discharge (what act satisfies the commitment); it is an act-type, not a specific act
 - $\tau \in T$ is the **deadline** — the latest history by which $A$ must have performed an act of type $\varphi$
-- $P$ is the **principal** — the party who holds the correlative [Hohfeldian](../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/hohfeldian-position.md) claim-right; $P$ is the right-holder corresponding to $A$'s obligation to perform $\varphi$
+- $P$ is the **principal** — the party who holds the correlative [Hohfeldian](../../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/services/hohfeldian-services-section/content/text/glossary/terms/hohfeldian-position.md) claim-right; $P$ is the right-holder corresponding to $A$'s obligation to perform $\varphi$
 
 The **commitment proposition** $c \in H_{t_0}$ asserts "$A$ performs an act of type $\varphi$ at some history $t_1 \leq \tau$." The creation of the commitment is the act of submitting $c$ for [transfer-nucleus](../../../../../../triage/math/relational-history-fiber-transferring-nucleus.md) fixation at $t_0$.
 

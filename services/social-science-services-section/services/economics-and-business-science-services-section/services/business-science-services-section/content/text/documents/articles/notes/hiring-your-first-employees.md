@@ -117,7 +117,7 @@ Federal and state employment laws prohibit asking about: age (beyond confirming 
 
 For hands-on roles (kitchen, counter service, skilled trades), a paid working interview — 2–4 hours on a real shift — reveals more than any conversation. You see their actual skills, speed, cleanliness, and how they interact with the team.
 
-**Important**: Pay them for the working interview. Unpaid trial shifts violate wage laws in most jurisdictions and signal that you don't value [labor](../../sociology/terms/labor.md).
+**Important**: Pay them for the working interview. Unpaid trial shifts violate wage laws in most jurisdictions and signal that you don't value [labor](../../../../../../../../sociology-science-services-section/content/text/glossary/terms/labor.md).
 
 ---
 
@@ -128,7 +128,7 @@ When you hire your first employee, you take on legal obligations. Missing any of
 ### Before they start
 
 - **Employer Identification Number (EIN)**: If you don't have one yet, get one from the IRS (free, immediate, online).
-- **State employer registration**: Register with your state's department of revenue and department of [labor](../../sociology/terms/labor.md).
+- **State employer registration**: Register with your state's department of revenue and department of [labor](../../../../../../../../sociology-science-services-section/content/text/glossary/terms/labor.md).
 - **Workers' compensation insurance**: Required in almost every state. Get a policy before anyone starts work.
 - **Employment eligibility**: Every employee must complete Form I-9 (verifying identity and work authorization) on or before their first day.
 - **Tax withholding**: Employee completes Form W-4 (federal) and any state equivalent. You are responsible for withholding income tax, Social Security, and Medicare from each paycheck.
@@ -175,7 +175,7 @@ A new employee's first week determines whether they stay. Most turnover in hourl
 
 ## Scheduling and labor cost management
 
-[Labor](../../sociology/terms/labor.md) is typically a small business's largest controllable expense. Scheduling is how you manage it.
+[Labor](../../../../../../../../sociology-science-services-section/content/text/glossary/terms/labor.md) is typically a small business's largest controllable expense. Scheduling is how you manage it.
 
 ### Principles
 

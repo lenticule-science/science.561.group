@@ -26,6 +26,6 @@ In the [Write-for-a-Month: Zombie Novel](../../../../../../../public-services-se
 
 - [biopolitics](../../../../../../sociology/theories/critical-theory/theories/biopolitics/terms/biopolitics.md) — the governance framework within which immunitary logic operates
 - [bare life](../../political-philosophy/terms/bare-life.md) — the residue of immunitary exclusion
-- [individuation](individuation.md) — the process that auto-immunity disrupts when defense turns against the self
-- [metastability](metastability.md) — the charged equilibrium that auto-immune oscillation sustains
+- [individuation](../../../../services/western-services-section/services/metaphysics-services-section/services/process-philosophy-services-section/content/text/glossary/terms/individuation.md) — the process that auto-immunity disrupts when defense turns against the self
+- [metastability](../../../../services/western-services-section/services/metaphysics-services-section/services/process-philosophy-services-section/content/text/glossary/terms/metastability.md) — the charged equilibrium that auto-immune oscillation sustains
 - [ontology](../../metaphysics/theories/ontology/terms/ontology.md) — auto-immunity raises the question of what kind of being survives its own self-negation

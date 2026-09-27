@@ -27,7 +27,7 @@ Constitutionalism also raises the counter-majoritarian problem: if the constitut
 
 ## Related
 
-- [Sovereignty](./sovereignty.md) — the authority that constitutions claim to constitute and constrain
-- [Rule of law](./rule-of-law.md) — the principle that constitutionalism institutionalizes
+- [Sovereignty](../../../../../law-science-services-section/content/text/glossary/terms/sovereignty.md) — the authority that constitutions claim to constitute and constrain
+- [Rule of law](../../../../../law-science-services-section/content/text/glossary/terms/rule-of-law.md) — the principle that constitutionalism institutionalizes
 - [Rights](./rights.md) — the claims that constitutions entrench against ordinary politics
-- [Codification](./codification.md) — the broader project of organizing law into authoritative texts
+- [Codification](../../../../../law-science-services-section/content/text/glossary/terms/codification.md) — the broader project of organizing law into authoritative texts

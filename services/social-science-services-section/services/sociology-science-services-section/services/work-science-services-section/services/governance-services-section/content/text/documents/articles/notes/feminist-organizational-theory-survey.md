@@ -111,7 +111,7 @@ Gender inequality cannot be solved by removing individual bias or improving repr
 
 - [Role](../terms/role.md) — how roles are defined and whose interests that serves
 - [Office](../../../terms/office.md) — the formal position and its authority
-- [Accountability](../terms/accountability.md) — who is answerable for what, and to whom
+- [Accountability](../../../glossary/terms/accountability.md) — who is answerable for what, and to whom
 - [Duty](../terms/duty.md) — what is required, and by whom, and what happens if it is not done
 - [Assignment](../../../terms/assignment.md) — how work reaches people
 - [Delegation](../../../terms/delegation.md) — the transfer of authority and accountability

@@ -61,7 +61,7 @@ And if something as massive as climate change can be so massively reframed, just
 
 Also, just to humanize myself a bit but I have been getting sick every morning for the past 8 mornings, which is a lot for me! I normally struggle with nausea a lot, because of a very bad back injury.
 
-Which is relevant because it is hard to see people talk about "I would integrate things like [decolonization](../../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/content/text/glossary/terms/decolonization.md) into my climate adaptation if I weren't so busy with a dayjob" as though the working a dayjob isn't
+Which is relevant because it is hard to see people talk about "I would integrate things like [decolonization](../../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section/services/povinellian-services-section/services/settler-colonialism-services-section/content/text/glossary/terms/decolonization.md) into my climate adaptation if I weren't so busy with a dayjob" as though the working a dayjob isn't
 
 1.  a need induced by colonization
 2.  a privilege afforded by colonization and ability

@@ -64,7 +64,7 @@ Accountability requires recurrence — a review that happens once is an event; a
 Term-limited offices, elections that recur, audits that recur — these create the periodic supervision that prevents power from drifting unchecked.
 The rhythm of return is what governance builds on.
 H.-G.
-Gadamer (1960) showed that all understanding occurs within [tradition](tradition.md), and tradition is itself a form of recurrence — practices and meanings that return across generations, adapted to new circumstances but continuous with what came before.
+Gadamer (1960) showed that all understanding occurs within [tradition](../../../../services/sociology-science-services-section/content/text/glossary/terms/tradition.md), and tradition is itself a form of recurrence — practices and meanings that return across generations, adapted to new circumstances but continuous with what came before.
 
 The biological world runs on recurrence.
 [Crop rotation](../../../../../domestic-science-services-section/services/domestic-production-services-section/services/gardening-services-section/content/glossary/terms/crop-rotation.md) works because different crops return in sequence, managing soil and pest cycles.
@@ -75,7 +75,7 @@ Life itself depends on recurrence — on patterns that return.
 
 [Cadence](./cadence.md) is the operational instantiation of recurrence.
 Rhythm (in music) is recurrence applied to sound.
-[Tradition](tradition.md) is recurrence applied to culture.
+[Tradition](../../../../services/sociology-science-services-section/content/text/glossary/terms/tradition.md) is recurrence applied to culture.
 The concept is general; its domain instances are distinct.
 
-See also: [Cadence](./cadence.md) · [Time](../../../../../philosophy-services-section/content/text/glossary/terms/time.md) · [Tradition](tradition.md) · [Review](./review.md) · [Governance](./governance.md)
+See also: [Cadence](./cadence.md) · [Time](../../../../../philosophy-services-section/content/text/glossary/terms/time.md) · [Tradition](../../../../services/sociology-science-services-section/content/text/glossary/terms/tradition.md) · [Review](./review.md) · [Governance](./governance.md)

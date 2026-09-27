@@ -38,7 +38,7 @@ Content strategy addresses problems that individual technical writing can't solv
 
 For this vault, content strategy operates implicitly through the [style guide](style-guide.md)'s content type conventions, the [plain language specification](../topics/plain-language/index.md)'s standards, and the organizational structure of discipline modules. Each page has a defined type (term, lesson, index, etc.), each type has conventions, and the conventions create a consistent reader experience across hundreds of pages.
 
-Content strategy connects writing studies to [information architecture](information-architecture.md): both ask how content should be organized, but content strategy adds the temporal dimension — how content is created, maintained, and retired over its lifecycle.
+Content strategy connects writing studies to [information architecture](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/technical-writing-services-section/content/text/glossary/terms/information-architecture.md): both ask how content should be organized, but content strategy adds the temporal dimension — how content is created, maintained, and retired over its lifecycle.
 
 ## Related terms
 
@@ -51,8 +51,8 @@ Content strategy connects writing studies to [information architecture](informat
 
 ## Related
 
-- [information architecture](information-architecture.md) — IA structures content spatially; content strategy manages it temporally
+- [information architecture](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/technical-writing-services-section/content/text/glossary/terms/information-architecture.md) — IA structures content spatially; content strategy manages it temporally
 - [style-guide](style-guide.md) — style guides are a content strategy tool for maintaining consistency
 - [genre](./genre.md) — content types are genres that content strategy standardizes across an organization
-- [document design](./document-design.md) — document design handles the visual and structural presentation that content strategy governs
+- [document design](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/plain-language-services-section/content/text/glossary/terms/document-design.md) — document design handles the visual and structural presentation that content strategy governs
 - [audience](../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/glossary/concepts/audience.md) — content strategy requires knowing who the content serves and what they need

@@ -55,7 +55,7 @@ Lists and tables are not formatting choices — they are structural decisions ab
 
 ## Progressive disclosure
 
-[Progressive disclosure](../../../../../../plain-language-services-section/content/text/glossary/terms/progressive-disclosure.md) presents information in layers — the essential first, the detailed second, the edge cases third. It manages [cognitive load](../../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/cognitive-load.md) by not presenting everything at once.
+[Progressive disclosure](../../../../../../plain-language-services-section/content/text/glossary/terms/progressive-disclosure.md) presents information in layers — the essential first, the detailed second, the edge cases third. It manages [cognitive load](../../../../../../plain-language-services-section/content/text/glossary/terms/cognitive-load.md) by not presenting everything at once.
 
 In document structure, progressive disclosure means:
 - **Lead with the goal.** Start each section by telling the reader what it covers and why it matters.
@@ -89,7 +89,7 @@ Following these patterns consistently is not rigidity — it's architecture. Eac
 
 - [information architecture](../../../glossary/terms/information-architecture.md)
 - [progressive disclosure](../../../../../../plain-language-services-section/content/text/glossary/terms/progressive-disclosure.md)
-- [cognitive load](../../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/cognitive-load.md)
+- [cognitive load](../../../../../../plain-language-services-section/content/text/glossary/terms/cognitive-load.md)
 - [genre](../../../../../../rhetoric-and-composition-services-section/content/text/glossary/terms/genre.md)
 - [minimalism](../../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/minimalism.md)
-- [document design](../../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/document-design.md)
+- [document design](../../../../../../plain-language-services-section/content/text/glossary/terms/document-design.md)

@@ -28,5 +28,5 @@ John Sweller is an Australian educational psychologist whose cognitive load theo
 
 ## Related
 
-- [readability](../../../../../../../../../../social-science-services-section/content/text/glossary/terms/readability.md) — cognitive load theory explains why readability matters beyond surface features
+- [readability](../../../../../../../../communication-science-services-section/services/writing-services-section/services/plain-language-services-section/content/text/glossary/terms/readability.md) — cognitive load theory explains why readability matters beyond surface features
 - [designing effective lessons](../../../../../../../../../../social-science-services-section/services/education-science-services-section/services/pedagogy-services-section/content/text/documents/articles/notes/designing-effective-lessons.md) — the vault's lesson design draws on cognitive load principles

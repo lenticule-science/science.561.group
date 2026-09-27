@@ -20,15 +20,15 @@ The concept of the draft encodes an important insight about writing: good prose 
 
 Different drafts serve different purposes:
 
-- The **first draft** (or rough draft, or discovery draft) gets material on the page. Its function is generation, not quality. [Peter Elbow](../../general/people/peter-elbow.md) and [freewriting](freewriting.md) practitioners treat the first draft as [writer-based prose](./writer-based-prose.md): organized around the writer's thinking process, not the reader's needs [@elbow1973].
-- **Subsequent drafts** reorganize for the reader: restructuring, cutting, adding evidence, clarifying argument. This is where [revision](revision.md) happens — not at the sentence level (that comes later) but at the structural level.
+- The **first draft** (or rough draft, or discovery draft) gets material on the page. Its function is generation, not quality. [Peter Elbow](../../general/people/peter-elbow.md) and [freewriting](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/essay-writing-services-section/content/text/glossary/terms/freewriting.md) practitioners treat the first draft as [writer-based prose](./writer-based-prose.md): organized around the writer's thinking process, not the reader's needs [@elbow1973].
+- **Subsequent drafts** reorganize for the reader: restructuring, cutting, adding evidence, clarifying argument. This is where [revision](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/essay-writing-services-section/content/text/glossary/terms/revision.md) happens — not at the sentence level (that comes later) but at the structural level.
 - The **final draft** addresses sentence-level concerns: [diction](./diction.md), [syntax](./syntax.md), consistency, proofreading. Editing for polish before the structure is right wastes effort on sentences that may be cut.
 
 The common mistake is trying to produce the final draft first — composing and editing simultaneously. This produces neither fluency nor quality, because the generative process (which needs freedom) and the evaluative process (which needs judgment) interfere with each other.
 
 ## Related terms
 
-- [revision](revision.md) — the process of transforming one draft into the next
-- [freewriting](freewriting.md) — a method for producing first-draft material quickly
+- [revision](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/essay-writing-services-section/content/text/glossary/terms/revision.md) — the process of transforming one draft into the next
+- [freewriting](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/essay-writing-services-section/content/text/glossary/terms/freewriting.md) — a method for producing first-draft material quickly
 - [writer-based prose](./writer-based-prose.md) — what first drafts naturally produce
 - [voice](./voice.md) — voice often emerges through multiple drafts as the writer discovers what they're saying

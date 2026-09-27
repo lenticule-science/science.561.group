@@ -9,7 +9,7 @@ tags: []
 
 ***Above the fold*** is the portion of a web page visible before the reader scrolls — the content that appears in the browser window on first load. The term comes from newspaper publishing, where "above the fold" referred to the top half of the front page, visible on a newsstand.
 
-On the web, above the fold is the most valuable real estate in copywriting. Research consistently shows that readers spend disproportionate attention on what they see first. The [headline](headline.md), [value proposition](value-proposition.md), and primary [call to action](call-to-action.md) should all be visible above the fold — the reader should know what the page offers, why it matters, and what to do about it before they scroll.
+On the web, above the fold is the most valuable real estate in copywriting. Research consistently shows that readers spend disproportionate attention on what they see first. The [headline](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/copywriting-services-section/content/text/glossary/terms/headline.md), [value proposition](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/copywriting-services-section/content/text/glossary/terms/value-proposition.md), and primary [call to action](call-to-action.md) should all be visible above the fold — the reader should know what the page offers, why it matters, and what to do about it before they scroll.
 
 "Above the fold" is a useful principle but not a rigid rule. Its exact position varies by screen size, device, and browser — there is no universal fold line. And research on long-form [landing pages](landing-page.md) shows that readers do scroll, provided the above-the-fold content gives them a reason to. The principle is really about priority: put the most important information first, because not everyone will reach what comes later.
 
@@ -17,6 +17,6 @@ The concept applies beyond landing pages. In email copywriting, above the fold i
 
 ## Related terms
 
-- [headline](headline.md) — the most important above-the-fold element
-- [value proposition](value-proposition.md) — must be visible above the fold
+- [headline](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/copywriting-services-section/content/text/glossary/terms/headline.md) — the most important above-the-fold element
+- [value proposition](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/copywriting-services-section/content/text/glossary/terms/value-proposition.md) — must be visible above the fold
 - [landing page](landing-page.md) — the format where above-the-fold placement matters most

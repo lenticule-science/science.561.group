@@ -13,8 +13,8 @@ A ***landing page*** is a web page designed for a single purpose: to convert a v
 
 The landing page is the copywriter's primary canvas on the web. Its structure follows a persuasive sequence:
 
-1. **[Headline](headline.md)** — promises a specific benefit. The visitor decides within seconds whether to keep reading.
-2. **[Value proposition](value-proposition.md)** — what the reader gets and why it matters. One or two sentences, [above the fold](above-the-fold.md).
+1. **[Headline](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/copywriting-services-section/content/text/glossary/terms/headline.md)** — promises a specific benefit. The visitor decides within seconds whether to keep reading.
+2. **[Value proposition](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/copywriting-services-section/content/text/glossary/terms/value-proposition.md)** — what the reader gets and why it matters. One or two sentences, [above the fold](above-the-fold.md).
 3. **Explanation** — how the product or service delivers on the promise. Features translated into benefits. Concrete, specific, scannable.
 4. **[Social proof](social-proof.md)** — evidence that others have benefited. Testimonials, case studies, logos, numbers.
 5. **Objection handling** — addressing the reader's hesitations. Price, complexity, risk, trust. FAQ sections often serve this function.
@@ -22,14 +22,14 @@ The landing page is the copywriter's primary canvas on the web. Its structure fo
 
 This structure is not arbitrary — it mirrors the psychology of a buying decision. The reader must first understand the offer (headline, value proposition), then believe it (explanation, proof), then overcome hesitation (objections), then act (CTA).
 
-The landing page's effectiveness is measurable through [conversion](conversion.md) rate: the percentage of visitors who take the desired action. This measurability makes landing pages the most testable form of copywriting. [Headlines](headline.md), CTAs, layouts, and copy length can all be [A/B tested](ab-testing.md) against alternatives.
+The landing page's effectiveness is measurable through [conversion](conversion.md) rate: the percentage of visitors who take the desired action. This measurability makes landing pages the most testable form of copywriting. [Headlines](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/copywriting-services-section/content/text/glossary/terms/headline.md), CTAs, layouts, and copy length can all be [A/B tested](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/copywriting-services-section/content/text/glossary/terms/ab-testing.md) against alternatives.
 
 The most common landing page failure is distraction — too many links, too many messages, too many competing actions. A landing page with navigation to the rest of the site loses visitors to curiosity. Every element that doesn't serve the page's single purpose works against it.
 
 ## Related terms
 
-- [headline](headline.md) — the landing page's first and most important sentence
+- [headline](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/copywriting-services-section/content/text/glossary/terms/headline.md) — the landing page's first and most important sentence
 - [call to action](call-to-action.md) — the action the landing page drives toward
 - [conversion](conversion.md) — the metric that measures landing page success
 - [above the fold](above-the-fold.md) — the visible area before scrolling, where the value proposition must appear
-- [A/B testing](ab-testing.md) — the method for optimizing landing page elements
+- [A/B testing](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/copywriting-services-section/content/text/glossary/terms/ab-testing.md) — the method for optimizing landing page elements

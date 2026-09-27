@@ -15,10 +15,10 @@ description: "Custer Died for Your Sins: An Indian Manifesto [cite:@deloriaCuste
 
 Deloria addresses multiple audiences simultaneously: Indigenous peoples organizing for sovereignty, settler liberals whose sympathy substitutes for justice, and the academic establishment (particularly anthropologists) whose study of Indigenous peoples has served their own careers more than Indigenous communities. The critique of anthropology is pointed and influential — Deloria argues that Indigenous peoples have been studied to death while their land continues to be taken, and that the knowledge produced by this study serves the colonial apparatus, not the studied communities.
 
-The book's directness, humor, and [refusal](../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/content/text/glossary/terms/refusal.md) of sentimentality set a tone that influenced decades of subsequent Indigenous intellectual work.
+The book's directness, humor, and [refusal](../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section/services/anarchism-services-section/services/strategy-services-section/content/text/glossary/terms/refusal.md) of sentimentality set a tone that influenced decades of subsequent Indigenous intellectual work.
 
 ## Related
 
 - [Vine Deloria Jr.](./vine-deloria-jr.md)
 - [Decolonization](../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section/services/povinellian-services-section/services/settler-colonialism-services-section/content/text/glossary/terms/decolonization.md)
-- [Refusal](../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/content/text/glossary/terms/refusal.md)
+- [Refusal](../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section/services/anarchism-services-section/services/strategy-services-section/content/text/glossary/terms/refusal.md)

@@ -43,7 +43,7 @@ When Minsky proposed frames (1974), he was not just building a data structure. H
 
 Each representation scheme is an ontological commitment — a declaration of what kinds of things exist and what kinds of relations hold between them. The Entity-Attribute-Value-Transaction (EAVT) model commits to a specific ontology: the world consists of entities that have attributes with values, and every change is a transaction. This is not a neutral storage format. It is a claim that institutional reality is constituted by discrete, attributable, time-stamped acts.
 
-This commitment is not accidental. It mirrors the structure of [status function declarations](../../../../../../../../../../social-science-services-section/content/text/glossary/terms/status-function-declaration.md): an entity (target) acquires an attribute (status) with a value (the institutional role) through a transaction (the authorizing act). The datastore does not merely store facts about the world. It constitutes the institutional world it describes.
+This commitment is not accidental. It mirrors the structure of [status function declarations](../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/content/text/glossary/terms/status-function-declaration.md): an entity (target) acquires an attribute (status) with a value (the institutional role) through a transaction (the authorizing act). The datastore does not merely store facts about the world. It constitutes the institutional world it describes.
 
 ## Records as institutional facts
 
@@ -64,5 +64,5 @@ Documentation is the practice of constituting knowledge through committed, prese
 ## See also
 
 - [Document](../../../../../terms/document.md) — Briet's definition and the archival principles
-- [Status Function Declaration](../../../../../../../../../../social-science-services-section/content/text/glossary/terms/status-function-declaration.md) — the formal mechanism by which institutional facts are constituted
+- [Status Function Declaration](../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/content/text/glossary/terms/status-function-declaration.md) — the formal mechanism by which institutional facts are constituted
 - [Epistemology](../terms/epistemology.md) — the broader field of study

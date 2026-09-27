@@ -62,7 +62,7 @@ The step-by-step format follows the [computation-protocol](../../../../../../../
 
 - Use `example` for any concrete instance that exercises the theory's machinery on specific inputs.
 - Use [theorem](../../../../../../../../../../engineering-science-services-section/services/computer-science-services-section/services/software-services-section/services/lean-services-section/content/text/glossary/terms/theorem.md) when the content is a *general* claim about a class of cases.
-- Use [narrative](../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/content/text/glossary/terms/narrative.md) when the content is a *story* about how concepts connect, not a worked construction.
+- Use [narrative](../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section/services/anarchism-services-section/services/anarchist-communication-services-section/content/text/glossary/terms/narrative.md) when the content is a *story* about how concepts connect, not a worked construction.
 - Use a tool / script in the theory's `tools/` directory when the content is an *executable* — the example may then cite the tool and its output, but the executable itself is not an example note.
 
 ## Validation rules (informal)

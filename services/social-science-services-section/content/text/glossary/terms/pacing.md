@@ -16,7 +16,7 @@ Several techniques adjust pace within and between scenes:
 
 - **Sentence length.** Short sentences accelerate. Long, subordinated sentences slow the reader down. In a fight scene, cutting sentences to fragments creates urgency. In a reflective passage, lengthening them creates space for thought.
 - **Detail density.** Dense [imagery](imagery.md) and sensory detail slow the pace by filling time with perception. A paragraph describing a room in close detail makes the reader linger; a paragraph that crosses a room in a sentence moves them through quickly.
-- **[Dialogue](dialogue.md) vs. narration.** Dialogue generally accelerates pace because it unfolds in real time. Narration can move at any speed.
+- **[Dialogue](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/fiction-services-section/content/text/glossary/terms/dialogue.md) vs. narration.** Dialogue generally accelerates pace because it unfolds in real time. Narration can move at any speed.
 - **White space and section breaks.** A gap between sections signals a skip in time. The reader understands that something has been left out, and the gap itself creates a rhythm.
 
 Pacing failures are felt more than analyzed. A reader who says "it dragged in the middle" is reporting a pacing problem — scenes that didn't earn their length or summaries that didn't compress enough. A reader who says "the ending felt rushed" is reporting the opposite — events that needed scene-level attention but received only summary.
@@ -25,13 +25,13 @@ Pacing failures are felt more than analyzed. A reader who says "it dragged in th
 
 - [scene](scene.md) — the expanded, moment-by-moment mode that slows pace
 - [tension](tension.md) — pacing controls the build and release of tension
-- [dialogue](dialogue.md) — tends to accelerate pace
+- [dialogue](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/fiction-services-section/content/text/glossary/terms/dialogue.md) — tends to accelerate pace
 - [exposition](exposition.md) — can slow pace if not integrated into action
 
 ## Related
 
 - [syntax](./syntax.md) — sentence length controls pacing at the micro level
-- [revision](./revision.md) — pacing problems are identified and corrected through revision
+- [revision](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/essay-writing-services-section/content/text/glossary/terms/revision.md) — pacing problems are identified and corrected through revision
 
 ***Pacing*** is the control of speed in writing — how quickly the reader moves through the text and how much time any given moment receives. Pacing operates at every scale: sentence, paragraph, section, and whole text.
 
@@ -39,6 +39,6 @@ At the sentence level, short sentences speed the reader up; long sentences slow 
 
 [Gérard Genette](../../../../../information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/gerard-genette.md) formalized narrative pacing in *Narrative Discourse* (1980) with four categories: **summary** (narrated time exceeds narrative time), **scene** (the two roughly match), **stretch** (narrative time exceeds narrated time — slow motion), and **pause** (narrative time passes with no story time — a description or digression) [@genette1980]. These categories describe what every reader intuitively feels: some passages race and others linger.
 
-Good pacing matches speed to importance. The moments that matter most get the most space. This sounds obvious but is routinely violated — writers lavish detail on setup and rush through the scenes that carry emotional weight. The [revision](./revision.md) process often consists of identifying where pacing is wrong: where the text lingers on what doesn't matter and hurries past what does.
+Good pacing matches speed to importance. The moments that matter most get the most space. This sounds obvious but is routinely violated — writers lavish detail on setup and rush through the scenes that carry emotional weight. The [revision](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/essay-writing-services-section/content/text/glossary/terms/revision.md) process often consists of identifying where pacing is wrong: where the text lingers on what doesn't matter and hurries past what does.
 
 In nonfiction, pacing matters just as much. A reader who encounters ten dense paragraphs of theory without a concrete example, a break, or a change of register will lose momentum. Alternating between abstract argument and concrete illustration is a pacing strategy, not just a clarity strategy.

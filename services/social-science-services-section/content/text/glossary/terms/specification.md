@@ -11,7 +11,7 @@ tags: []
 
 A ***specification*** is a document that states precisely how a system, component, or process should behave. Specifications prioritize completeness and unambiguity over readability — every edge case, condition, and requirement must be addressed, because the specification's readers (engineers, testers, legal reviewers) will use it as the authoritative reference for what the system is supposed to do.
 
-Specifications differ from other technical documents in their relationship to truth. [Procedural documentation](procedural-documentation.md) describes how to do something; a specification describes how something *should* work. The specification is normative — it defines correctness. If the system doesn't match the specification, the system is wrong (or the specification needs updating).
+Specifications differ from other technical documents in their relationship to truth. [Procedural documentation](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/technical-writing-services-section/content/text/glossary/terms/procedural-documentation.md) describes how to do something; a specification describes how something *should* work. The specification is normative — it defines correctness. If the system doesn't match the specification, the system is wrong (or the specification needs updating).
 
 Effective specifications share several structural features:
 
@@ -24,6 +24,6 @@ The hardest part of writing a specification is completeness — accounting for e
 
 ## Related terms
 
-- [procedural documentation](procedural-documentation.md) — describes how to do something; the specification describes what the system should do
+- [procedural documentation](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/technical-writing-services-section/content/text/glossary/terms/procedural-documentation.md) — describes how to do something; the specification describes what the system should do
 - [API documentation](api-documentation.md) — often a form of specification for software interfaces
-- [usability testing](usability-testing.md) — specifications themselves need to be usable by their readers
+- [usability testing](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/plain-language-services-section/content/text/glossary/terms/usability-testing.md) — specifications themselves need to be usable by their readers

@@ -14,7 +14,7 @@ The distinction matters: people habitually eat lunch around noon, but no one tre
 Customary law requires both practice (people do it) and *opinio juris* (people believe they must).
 
 Customary law was the dominant form of legal ordering for most of human history.
-Before [codification](../../../../services/sociology-science-services-section/content/text/glossary/terms/codification.md), most communities governed themselves through inherited norms transmitted orally and enforced through community mechanisms — elders, councils, religious authorities, social pressure.
+Before [codification](../../../../services/law-science-services-section/content/text/glossary/terms/codification.md), most communities governed themselves through inherited norms transmitted orally and enforced through community mechanisms — elders, councils, religious authorities, social pressure.
 The codification projects of the eighteenth and nineteenth centuries — the Napoleonic Code, the common law's gradual textualization — aimed to replace customary law with state law: written, uniform, centrally administered.
 They succeeded formally but not completely.
 Customary norms continue to regulate land tenure, family relations, commercial practice, and conflict resolution in communities worldwide, often alongside or beneath state law.

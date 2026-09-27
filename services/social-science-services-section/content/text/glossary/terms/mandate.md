@@ -46,7 +46,7 @@ where: - $A$ is the **authorizing source** — the statute, regulation, constitu
   The clerk files a document because the rules of civil procedure mandate filing; not because the judge asked.
 
 4. **Refusal is violation**: refusing to perform $\varphi$ when $C = 1$ is itself a breach — of the mandate-holder's duty, of the institutional rule, of their office.
-  The mandate creates a duty (see [Duty](duty.md)) whose discharge is the performance of $\varphi$.
+  The mandate creates a duty (see [Duty](../../../../services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/content/text/glossary/terms/duty.md)) whose discharge is the performance of $\varphi$.
   Refusal without legal justification (e.g., the document is not in proper form) is actionable.
 
 ## Mandate vs. command vs. duty

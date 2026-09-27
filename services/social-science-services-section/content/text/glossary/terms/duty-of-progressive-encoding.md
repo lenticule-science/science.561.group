@@ -7,7 +7,7 @@ instance-of: duty
 ---
 
 The duty of progressive encoding is the obligation to encode completed work so that it can be reproduced at lower cost.
-It is a [duty](duty.md) in the Hohfeldian sense: the bearer is any office-holder, the correlative party is the institution and its future members, and the normative system is any governance framework that values institutional learning.
+It is a [duty](../../../../services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/content/text/glossary/terms/duty.md) in the Hohfeldian sense: the bearer is any office-holder, the correlative party is the institution and its future members, and the normative system is any governance framework that values institutional learning.
 
 ## The five-tuple
 
@@ -71,6 +71,6 @@ Discharge is not the production of the artifact alone (that is execution settlem
 
 - [Settlement path](settlement-path.md) — the trajectory this duty traverses
 - [Progressive automation](../../../../services/sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/progressive-automation.md) — the organizational policy this duty instantiates
-- [Duty](duty.md) — the general Hohfeldian concept
+- [Duty](../../../../services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/content/text/glossary/terms/duty.md) — the general Hohfeldian concept
 - [Discharge](../../../../services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/content/text/glossary/terms/discharge.md) — what counts as fulfilling this duty
 - [Formality level](../../../../services/sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/formality-level.md) — the scale measuring settlement progress

@@ -9,7 +9,7 @@ tags: []
 description: "Media scholar whose work examines the professionalization of social media influencers and the tension between authenticity and brand management."
 ---
 
-Loes van Driel is a media scholar whose research examines how social media influencers navigate the tension between performing authenticity for followers and maintaining professionalism for brands and algorithms. With Delia Dumitrica, van Driel studied how influencers manage the dual-audience structure that characterizes platform [labor](../../sociology/terms/labor.md).
+Loes van Driel is a media scholar whose research examines how social media influencers navigate the tension between performing authenticity for followers and maintaining professionalism for brands and algorithms. With Delia Dumitrica, van Driel studied how influencers manage the dual-audience structure that characterizes platform [labor](../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/content/text/glossary/terms/labor.md).
 
 ## Notable works
 

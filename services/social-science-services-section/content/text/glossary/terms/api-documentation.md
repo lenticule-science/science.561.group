@@ -14,7 +14,7 @@ tags: []
 API documentation typically includes several content types:
 
 - **Reference documentation** — a systematic description of every endpoint, method, parameter, and response. This is the lookup material: what does this function accept, what does it return, what errors can occur. Reference docs are organized for scanning, not reading — developers arrive with a specific question and need to find the answer fast.
-- **Guides and tutorials** — narrative documentation that walks the developer through common tasks: authentication, making a first request, handling pagination. These are [procedural documentation](procedural-documentation.md) for developers, organized by goal rather than by API surface.
+- **Guides and tutorials** — narrative documentation that walks the developer through common tasks: authentication, making a first request, handling pagination. These are [procedural documentation](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/technical-writing-services-section/content/text/glossary/terms/procedural-documentation.md) for developers, organized by goal rather than by API surface.
 - **Code examples** — working code in relevant languages that demonstrates usage. Examples are often the first thing developers look at; many skip the prose entirely and work from examples. Examples that don't work — that contain errors, use deprecated methods, or skip necessary setup — destroy trust.
 - **Changelogs and migration guides** — documentation of what changed between versions and how to adapt. Especially important for APIs that external developers depend on.
 
@@ -24,6 +24,6 @@ Good API documentation is tested. If the code examples are extracted from the do
 
 ## Related terms
 
-- [procedural documentation](procedural-documentation.md) — API guides are a specialized form of procedural documentation
+- [procedural documentation](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/technical-writing-services-section/content/text/glossary/terms/procedural-documentation.md) — API guides are a specialized form of procedural documentation
 - [audience](../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/glossary/concepts/audience.md) — API docs serve developers, whose needs and reading patterns differ from general audiences
-- [information architecture](information-architecture.md) — how API docs are organized determines whether developers can find what they need
+- [information architecture](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/technical-writing-services-section/content/text/glossary/terms/information-architecture.md) — how API docs are organized determines whether developers can find what they need

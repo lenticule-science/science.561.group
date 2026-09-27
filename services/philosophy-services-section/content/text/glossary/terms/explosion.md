@@ -33,4 +33,4 @@ The rejection of explosion does not mean that contradictions are harmless or des
 
 - [Dialetheia](./dialetheia.md) — a true contradiction; the concept that requires explosion to fail if it is to be non-trivially assertible
 - [Bivalence](bivalence.md) — the classical principle that admits only two truth values; paraconsistent logics often extend beyond two
-- [Law of Excluded Middle](law-of-excluded-middle.md) — retained in some paraconsistent logics (LP), rejected in others
+- [Law of Excluded Middle](../../../../services/western-services-section/services/analytic-philosophy-services-section/content/text/glossary/terms/law-of-excluded-middle.md) — retained in some paraconsistent logics (LP), rejected in others

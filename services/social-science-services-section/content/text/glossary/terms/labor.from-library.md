@@ -112,7 +112,7 @@ Two terms must be separated:
   It is the expenditure of human capacity in concrete form, producing a determinate product or service.
 - **Labor-power** ($\Lambda$) is the *capacity* to labor — the worker's potential to expend $L$ over a given period, considered as a thing the worker possesses and can transfer.
 
-Under [capitalism](../../../../services/sociology-science-services-section/content/text/glossary/terms/capitalism.md), $\Lambda$ becomes a commodity.
+Under [capitalism](../../../../services/sociology-science-services-section/services/critical-theory-science-services-section/services/anarchism-services-section/content/text/glossary/terms/capitalism.md), $\Lambda$ becomes a commodity.
 Workers, dispossessed of means of production, must sell their labor-power for a wage; the employer then directs how that capacity is used.
 The wage's value is set by the cost of reproducing $\Lambda$ — the worker's subsistence.
 The value the worker actually produces during the contracted period is set by what their labor $L$ creates.

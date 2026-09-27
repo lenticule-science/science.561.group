@@ -6,10 +6,10 @@ aliases:
   - "lyric essays"
 date-created: 2026-03-06
 tags: []
-description: "A ***lyric essay*** is a hybrid form that borrows techniques from [poetry](_index.md) — fragmentation, juxtaposition, white space, [imagery](imagery.md) over [argument](argument.md) — to do the [essay](essay.md)'s work of thinking through a subject."
+description: "A ***lyric essay*** is a hybrid form that borrows techniques from poetry — fragmentation, juxtaposition, white space, imagery over argument — to do the essay's work of thinking through a subject."
 ---
 
-A ***lyric essay*** is a hybrid form that borrows techniques from [poetry](../../poetry/index.md) — fragmentation, juxtaposition, white space, [imagery](imagery.md) over [argument](argument.md) — to do the [essay](essay.md)'s work of thinking through a subject. The term was popularized by John D'Agata and Deborah Tall in their work editing the *Seneca Review*, where they defined the lyric essay as a form that "takes the lyric's density and shapeliness and applies it to the essay's discursiveness."
+A ***lyric essay*** is a hybrid form that borrows techniques from [poetry](../../poetry/index.md) — fragmentation, juxtaposition, white space, [imagery](imagery.md) over [argument](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/essay-writing-services-section/content/text/glossary/terms/argument.md) — to do the [essay](essay.md)'s work of thinking through a subject. The term was popularized by John D'Agata and Deborah Tall in their work editing the *Seneca Review*, where they defined the lyric essay as a form that "takes the lyric's density and shapeliness and applies it to the essay's discursiveness."
 
 The lyric essay does not argue in the conventional sense. It does not state a [thesis](thesis.md), present [evidence](../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/evidence.md), and defend a [conclusion](conclusion.md). Instead, it arranges fragments — images, reflections, quotations, memories, facts — in a sequence whose logic is associative rather than deductive. The meaning emerges from the arrangement, from what is placed next to what and from the gaps between sections.
 
@@ -21,5 +21,5 @@ The lyric essay is useful when a subject resists sequential argument — when th
 
 - [essay](essay.md) — the broader form
 - [imagery](imagery.md) — the lyric essay's primary material
-- [personal essay](personal-essay.md) — often overlaps; many lyric essays are personal
+- [personal essay](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/essay-writing-services-section/content/text/glossary/terms/personal-essay.md) — often overlaps; many lyric essays are personal
 - [voice](voice.md) — compressed and deliberate in the lyric essay

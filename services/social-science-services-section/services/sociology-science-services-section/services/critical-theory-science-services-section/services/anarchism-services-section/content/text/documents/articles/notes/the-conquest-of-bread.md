@@ -11,11 +11,11 @@ description: "Kropotkin's 1892 text outlining the practical organization of an a
 type: reference
 ---
 
-*The Conquest of Bread* (*La Conquête du Pain*, 1892) is [Pyotr Kropotkin](./pyotr-kropotkin.md)'s practical outline of how an [anarcho-communist](../../../../../../../../../content/text/glossary/terms/anarcho-communism.md) society could organize production, distribution, housing, and governance without [the state](../../../../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/notes/undated/the-state.md), [capitalism](../../../../../../../../../content/text/glossary/terms/capitalism.md), or [hierarchy](../../../glossary/terms/hierarchy.md). Where *[Mutual Aid](./mutual-aid.md)* demonstrates that [self-organization](../../../glossary/terms/self-organization.md) is empirically real, *The Conquest of Bread* shows what it could look like at the scale of an entire society.
+*The Conquest of Bread* (*La Conquête du Pain*, 1892) is [Pyotr Kropotkin](./pyotr-kropotkin.md)'s practical outline of how an [anarcho-communist](../../../glossary/terms/anarcho-communism.md) society could organize production, distribution, housing, and governance without [the state](../../../../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/notes/undated/the-state.md), [capitalism](../../../glossary/terms/capitalism.md), or [hierarchy](../../../glossary/terms/hierarchy.md). Where *[Mutual Aid](./mutual-aid.md)* demonstrates that [self-organization](../../../glossary/terms/self-organization.md) is empirically real, *The Conquest of Bread* shows what it could look like at the scale of an entire society.
 
 ## The argument
 
-Kropotkin begins with a claim about wealth: everything that exists — every building, every machine, every road, every piece of cultivated land — is the product of collective [labor](../../../glossary/terms/labor.md) accumulated over generations. No individual produced any of it alone. The claim of individual [property](../../../glossary/terms/property.md) rights over collectively produced wealth is therefore a form of theft — not Proudhon's abstract "property is theft" but a concrete accounting argument. If everything is collectively produced, it should be collectively owned.
+Kropotkin begins with a claim about wealth: everything that exists — every building, every machine, every road, every piece of cultivated land — is the product of collective [labor](../../../../../../../../../content/text/glossary/terms/labor.md) accumulated over generations. No individual produced any of it alone. The claim of individual [property](../../../glossary/terms/property.md) rights over collectively produced wealth is therefore a form of theft — not Proudhon's abstract "property is theft" but a concrete accounting argument. If everything is collectively produced, it should be collectively owned.
 
 From this follows the program: expropriation. The revolution's first task is not to seize [the state](../../../../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/notes/undated/the-state.md) but to take possession of the means of production — land, factories, housing — and place them under collective control. Distribution should be by need, not by contribution (against the collectivist position of [Bakunin](./mikhail-bakunin.md)). Kropotkin argues that individual contribution to collective production cannot be meaningfully measured: every worker depends on infrastructure, knowledge, and labor performed by others. The only just principle is to ensure that everyone's needs are met.
 
@@ -29,7 +29,7 @@ The text's emphasis on need-based distribution connects to the school's analysis
 
 ## Related
 
-- [anarcho-communism](../../../../../../../../../content/text/glossary/terms/anarcho-communism.md) — the program the text outlines
+- [anarcho-communism](../../../glossary/terms/anarcho-communism.md) — the program the text outlines
 - [property](../../../glossary/terms/property.md) — the institution it critiques
 - [federation](../../../glossary/terms/federation.md) — the organizational form it proposes
 - [mutual aid](../../../glossary/terms/mutual-aid.md) — the principle underlying its vision

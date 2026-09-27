@@ -37,7 +37,7 @@ Within visual engineering, Bauhaus supplies the relational substrate. It provide
 
 ## Related schools
 
-- [Brutalism](../../../../../../../../../engineering-science-services-section/services/design-engineering-science-services-section/content/text/documents/articles/notes/brutalism.md) — shares the Bauhaus emphasis on structural [legibility](../../documents/articles/research/2026/07/31/lenticule-import/library/humanities/domains/sociology/terms/legibility.md) but adds friction and scarcity
+- [Brutalism](../../../../../../../../../engineering-science-services-section/services/design-engineering-science-services-section/content/text/documents/articles/notes/brutalism.md) — shares the Bauhaus emphasis on structural [legibility](../../../../../../../../../philosophy-services-section/services/black-philosophy-services-section/services/abolition-services-section/services/state-repression-services-section/content/text/glossary/terms/legibility.md) but adds friction and scarcity
 
 - [Tuftean Information Design](../../../../../../../../../engineering-science-services-section/services/design-engineering-science-services-section/content/text/documents/articles/notes/tuftean-information-design.md) — shares the concern with constructed clarity but from an evidence/data direction
 

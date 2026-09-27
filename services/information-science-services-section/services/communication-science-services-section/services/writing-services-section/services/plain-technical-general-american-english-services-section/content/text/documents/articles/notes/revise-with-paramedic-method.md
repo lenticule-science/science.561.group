@@ -13,7 +13,7 @@ type: operational
 title: revise-with-paramedic-method
 ---
 
-- The [Paramedic Method](../../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/paramedic-method.md) is [Richard Lanham](../../../../../../../../../../knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/richard-lanham.md)'s systematic procedure for revising sentences written in the [Official Style](../../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/official-style.md) — the bloated, nominalized prose common in academic, legal, and bureaucratic writing [@lanham2006].
+- The [Paramedic Method](../../../../../../plain-language-services-section/content/text/glossary/terms/paramedic-method.md) is [Richard Lanham](../../../../../../../../../../knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/richard-lanham.md)'s systematic procedure for revising sentences written in the [Official Style](../../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/official-style.md) — the bloated, nominalized prose common in academic, legal, and bureaucratic writing [@lanham2006].
 - For each sentence that feels heavy or unclear, apply these steps in order:
   1. Circle the prepositions (*of*, *in*, *by*, *for*, *with*, *at*, *on*). Too many prepositions signal a noun-heavy sentence that buries the action.
   2. Circle the *is/was/are/were* forms — "to be" verbs. These often indicate that the real action is hiding in a nominalization.

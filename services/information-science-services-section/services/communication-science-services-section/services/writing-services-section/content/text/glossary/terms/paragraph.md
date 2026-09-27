@@ -17,11 +17,11 @@ The sentences that follow the topic sentence develop it: providing evidence, exp
 
 Paragraph length is a [pacing](./pacing.md) tool. Short paragraphs (one to three sentences) create urgency and emphasis. Long paragraphs (eight or more sentences) slow the reader down and develop ideas in depth. A page of uniformly long paragraphs feels dense; a page of uniformly short ones feels thin. Variation in paragraph length creates rhythm.
 
-In fiction, paragraphs serve additional purposes. A paragraph break can signal a shift in time, location, or perspective. A single-sentence paragraph creates emphasis through isolation. [Dialogue](../../../../../../../../../social-science-services-section/content/text/glossary/terms/dialogue.md) typically starts a new paragraph with each speaker change.
+In fiction, paragraphs serve additional purposes. A paragraph break can signal a shift in time, location, or perspective. A single-sentence paragraph creates emphasis through isolation. [Dialogue](../../../../services/fiction-services-section/content/text/glossary/terms/dialogue.md) typically starts a new paragraph with each speaker change.
 
 ## Related terms
 
 - [thesis](../../../../../../../../../social-science-services-section/content/text/glossary/terms/thesis.md) — the overall claim that paragraphs collectively develop
 - [transition](../../../../../../../../../social-science-services-section/content/text/glossary/terms/transition.md) — the connective tissue between paragraphs
 - [pacing](./pacing.md) — paragraph length controls reading speed
-- [coherence](../../../../../../../../../social-science-services-section/content/text/glossary/terms/cognitive-load.md) — a well-constructed paragraph reduces cognitive load by grouping related ideas
+- [coherence](../../../../services/plain-language-services-section/content/text/glossary/terms/cognitive-load.md) — a well-constructed paragraph reduces cognitive load by grouping related ideas

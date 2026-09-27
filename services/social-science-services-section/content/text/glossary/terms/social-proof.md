@@ -23,6 +23,6 @@ The ethical boundary: social proof must be genuine. Fabricated testimonials, mis
 
 ## Related terms
 
-- [value proposition](value-proposition.md) — social proof supports the value proposition's credibility
+- [value proposition](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/copywriting-services-section/content/text/glossary/terms/value-proposition.md) — social proof supports the value proposition's credibility
 - [landing page](landing-page.md) — social proof is a standard component of landing page structure
 - [conversion](conversion.md) — social proof reduces hesitation and increases conversion

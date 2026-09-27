@@ -12,14 +12,14 @@ tags: []
 
 E.M. Forster distinguished between **flat** and **round** characters. Flat characters embody a single quality or idea and can be summarized in a sentence — they are not lesser for this, but they serve a different function than round characters, who surprise convincingly, whose behavior is complex enough that the reader can't fully predict them [@forster1927]. The distinction is functional, not evaluative: a story needs both.
 
-Characters are revealed through what they do (action), what they say ([dialogue](../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/dialogue.md)), what they think (interiority), what others say about them, and what the [narrator](../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/narrator.md) tells the reader directly. The balance among these methods is a [point of view](./point-of-view.md) decision. A first-person narrator has direct access to their own thoughts but must infer others'; a third-person omniscient narrator can move between minds.
+Characters are revealed through what they do (action), what they say ([dialogue](dialogue.md)), what they think (interiority), what others say about them, and what the [narrator](narrator.md) tells the reader directly. The balance among these methods is a [point of view](./point-of-view.md) decision. A first-person narrator has direct access to their own thoughts but must infer others'; a third-person omniscient narrator can move between minds.
 
 [Wayne Booth](../../../../../../../../../knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/wayne-booth.md) argued that characterization is always rhetorical — the writer's choices about what to reveal and withhold shape the reader's sympathies and judgments, whether or not the writer intends them to [@booth1961]. A character described with detailed interiority invites empathy; a character seen only from outside can feel opaque or threatening. These effects are craft decisions.
 
 ## Related terms
 
-- [dialogue](../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/dialogue.md) — the primary tool for revealing character through speech
-- [narrator](../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/narrator.md) — the voice through which character is filtered
+- [dialogue](dialogue.md) — the primary tool for revealing character through speech
+- [narrator](narrator.md) — the voice through which character is filtered
 - [point of view](./point-of-view.md) — determines what access the reader has to character interiority
 - [conflict](../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/conflict.md) — character is revealed and changed through conflict
 - [scene](../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/scene.md) — the unit of narrative where character is shown in action

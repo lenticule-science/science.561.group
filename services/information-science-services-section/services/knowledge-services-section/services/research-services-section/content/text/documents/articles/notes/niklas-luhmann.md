@@ -10,7 +10,7 @@ keywords:
 description: "German sociologist who developed a theory of society as composed of self-referential, autopoietic communication systems that produce and reproduce themselves through their own operations."
 ---
 
-Niklas Luhmann (1927–1998) was a German sociologist who developed one of the most comprehensive social theories of the twentieth century. Drawing on [cybernetics](../../information/terms/cybernetics.md), [autopoiesis](../../../../../../../../cybernetics-services-section/content/text/glossary/terms/autopoiesis.md), and the [phenomenological](../../../../../../../../../../philosophy-services-section/content/text/glossary/terms/phenomenology.md) tradition, Luhmann theorized society as composed not of people but of communications — self-referential systems that produce and reproduce themselves through their own operations.
+Niklas Luhmann (1927–1998) was a German sociologist who developed one of the most comprehensive social theories of the twentieth century. Drawing on [cybernetics](../../information/terms/cybernetics.md), [autopoiesis](../../../../../../../../cybernetics-services-section/content/text/glossary/terms/autopoiesis.md), and the [phenomenological](../../../../../../../../../../philosophy-services-section/services/western-services-section/services/continental-services-section/services/phenomenology-services-section/content/text/glossary/terms/phenomenology.md) tradition, Luhmann theorized society as composed not of people but of communications — self-referential systems that produce and reproduce themselves through their own operations.
 
 ## Core ideas
 

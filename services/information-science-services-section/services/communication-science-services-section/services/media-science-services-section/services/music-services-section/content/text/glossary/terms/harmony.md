@@ -25,5 +25,5 @@ The word "harmony" carries a normative connotation that is worth noting: it impl
 
 - [Melody](./melody.md) — the horizontal dimension; harmony is what happens between simultaneous melodies
 - [Tonality](./tonality.md) — the system that organizes harmonic relationships around a center
-- [Drone](./drone.md) — a sustained harmonic ground
+- [Drone](drone.md) — a sustained harmonic ground
 - [Timbre](./timbre.md) — the spectral content that colors harmonic combinations

@@ -6,10 +6,10 @@ aliases:
   - "claims"
 date-created: 2026-03-06
 tags: []
-description: "A ***claim*** is a single assertion that the writer asks the reader to accept. An essay's [thesis](thesis.md) is its central claim; the essay's body paragraphs contain supporting claims, each of which advances the thesis by establishing a piece of the overall [argument](argument.md)."
+description: "A ***claim*** is a single assertion that the writer asks the reader to accept. An essay's thesis is its central claim; the essay's body paragraphs contain supporting claims, each of which advances the thesis by establishing a piece of the overall argument."
 ---
 
-A ***claim*** is a single assertion that the writer asks the reader to accept. An essay's [thesis](thesis.md) is its central claim; the essay's body paragraphs contain supporting claims, each of which advances the thesis by establishing a piece of the overall [argument](argument.md).
+A ***claim*** is a single assertion that the writer asks the reader to accept. An essay's [thesis](thesis.md) is its central claim; the essay's body paragraphs contain supporting claims, each of which advances the thesis by establishing a piece of the overall [argument](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/essay-writing-services-section/content/text/glossary/terms/argument.md).
 
 Claims vary in kind:
 
@@ -23,7 +23,7 @@ The most common error in essay writing is presenting claims without evidence —
 
 ## Related terms
 
-- [argument](argument.md) — the structure that connects claims to evidence
+- [argument](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/essay-writing-services-section/content/text/glossary/terms/argument.md) — the structure that connects claims to evidence
 - [thesis](thesis.md) — the essay's central claim
 - [evidence](../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/evidence.md) — the material that supports claims
 - [warrant](warrant.md) — the reasoning that connects evidence to a claim

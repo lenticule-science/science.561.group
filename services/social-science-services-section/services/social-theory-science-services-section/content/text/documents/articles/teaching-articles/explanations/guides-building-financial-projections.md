@@ -69,7 +69,7 @@ Divide all costs into fixed and variable:
 
 **Variable costs** scale with sales:
 - Cost of goods sold (ingredients, materials)
-- Hourly [labor](../../research/2026/07/31/lenticule-import/library/social-sciences/working/_archive/discipline-intake/business/prose/teaching/sociology/terms/labor.md) (additional staff for busy periods)
+- Hourly [labor](../../../../../../../sociology-science-services-section/content/text/glossary/terms/labor.md) (additional staff for busy periods)
 - Packaging and supplies
 - Credit card processing fees
 - Utilities (usage-based portion)

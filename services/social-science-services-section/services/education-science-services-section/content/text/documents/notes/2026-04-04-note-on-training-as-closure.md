@@ -73,6 +73,6 @@ This applies to any system that develops capability through iterated practice: h
 
 ## See also
 
-- [Situated learning](../../../../../../content/text/glossary/terms/situated-learning.md) — learning as trajectory toward full participation
-- [Community of practice](../../../../../../content/text/glossary/terms/community-of-practice.md) — the social structure in which closure operates
+- [Situated learning](../../../../services/learning-services-section/content/text/glossary/terms/situated-learning.md) — learning as trajectory toward full participation
+- [Community of practice](../../../../services/learning-services-section/content/text/glossary/terms/community-of-practice.md) — the social structure in which closure operates
 - [Competency-based progression](./2026-04-04-note-on-competency-based-progression.md) — assessment as fixed-point detection

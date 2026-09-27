@@ -89,7 +89,7 @@ references:
 
 In 1847, the Society of Agriculture and Horticulture at Utrecht awarded a gold medal to a plant recently arrived from Japan — "the most interesting ornamental plant of the year." The plant was *Reynoutria japonica*, Japanese knotweed. Within 150 years, the same species would be listed among the world's 100 worst invasive alien species by the International Union for Conservation of Nature, would be the subject of dedicated legislation in multiple countries, and would cost the British economy an estimated £166 million annually in control and property devaluation.
 
-The story of how this happened is a case study in [colonial botany](../../../../../../humanities/domains/sociology/domains/critical-theory/domains/povinellian/domains/settler-colonialism/terms/colonial-botany.md), ecological ignorance, and the consequences of removing an organism from the relational context that constrains it.
+The story of how this happened is a case study in [colonial botany](../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section/services/povinellian-services-section/services/settler-colonialism-services-section/content/text/glossary/terms/colonial-botany.md), ecological ignorance, and the consequences of removing an organism from the relational context that constrains it.
 
 ## The introduction
 
@@ -169,7 +169,7 @@ The Japanese knotweed invasion illustrates a principle that ecologists have arti
 
 What makes knotweed destructive is the *removal of relations* — the severing of the ecological context that constrains it. Siebold did not import a dangerous plant. He imported a plant and left behind the relationships that made it manageable. The destruction is not a property of the organism but of the relational gap — the absence of the fungi, insects, and competing plants that constitute the [ecosystem](../../../glossary/terms/ecosystem.md) the organism evolved within.
 
-This framing connects knotweed's invasion to the broader pattern of [colonial botany](../../../../../../humanities/domains/sociology/domains/critical-theory/domains/povinellian/domains/settler-colonialism/terms/colonial-botany.md): the extraction of organisms from their native relational contexts for use in colonial economies, followed by ecological consequences that the extractive framework could not anticipate because it understood organisms as portable resources rather than as participants in relationships.
+This framing connects knotweed's invasion to the broader pattern of [colonial botany](../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section/services/povinellian-services-section/services/settler-colonialism-services-section/content/text/glossary/terms/colonial-botany.md): the extraction of organisms from their native relational contexts for use in colonial economies, followed by ecological consequences that the extractive framework could not anticipate because it understood organisms as portable resources rather than as participants in relationships.
 
 ## See also
 
@@ -177,5 +177,5 @@ This framing connects knotweed's invasion to the broader pattern of [colonial bo
 - [Ecosystem](../../../glossary/terms/ecosystem.md) — the relational context knotweed was removed from
 - [Symbiosis](../../../glossary/terms/symbiosis.md) — the co-evolved relationships that control knotweed in Japan
 - [Resilience](../terms/resilience.md) — ecological resilience and invasive species
-- [Colonial Botany](../../../../../../humanities/domains/sociology/domains/critical-theory/domains/povinellian/domains/settler-colonialism/terms/colonial-botany.md) — the structural pattern
+- [Colonial Botany](../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section/services/povinellian-services-section/services/settler-colonialism-services-section/content/text/glossary/terms/colonial-botany.md) — the structural pattern
 - [Japanese Knotweed as Medicine](../../../../../../medical-science-services-section/services/herbalism-services-section/content/text/documents/articles/notes/japanese-knotweed-as-medicine.md) — the same plant's medicinal significance

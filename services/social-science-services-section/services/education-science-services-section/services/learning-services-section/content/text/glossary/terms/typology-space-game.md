@@ -23,5 +23,5 @@ This proposal is a design hypothesis from a 2026-08-21 draft note. Its closest l
 ## Related terms
 
 - [cone-edge input](./cone-edge-input.md) — the moment-to-moment tutoring move that operates within a single fiber of this game board
-- [zone of proximal development](../../../../../../../../content/text/glossary/terms/zone-of-proximal-development.md) — the developmental space each transport step must remain calibrated to
-- [community of practice](../../../../../../../../content/text/glossary/terms/community-of-practice.md) — the social setting within which typological transfer is exercised in live use
+- [zone of proximal development](zone-of-proximal-development.md) — the developmental space each transport step must remain calibrated to
+- [community of practice](community-of-practice.md) — the social setting within which typological transfer is exercised in live use

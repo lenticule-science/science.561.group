@@ -36,5 +36,5 @@ and institutions that produce the appearance of objectivity.
 ## Related terms
 
 - [Totality](./totality.md)
-- [Dialectics](./dialectics.md)
+- [Dialectics](../../../../services/western-services-section/services/marxism-services-section/content/text/glossary/terms/dialectics.md)
 - [Historicization](./historicization.md)

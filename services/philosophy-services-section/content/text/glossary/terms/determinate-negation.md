@@ -35,10 +35,10 @@ is negated.
 
 ## Related terms
 
-- [Dialectics](./dialectics.md)
+- [Dialectics](../../../../services/western-services-section/services/marxism-services-section/content/text/glossary/terms/dialectics.md)
 - [Mediation](./mediation.md)
 - [Immanence](../../metaphysics/terms/immanence.md)
-- [Materialism](materialism.md)
+- [Materialism](../../../../services/western-services-section/services/metaphysics-services-section/content/text/glossary/terms/materialism.md)
 
 ## Sources
 

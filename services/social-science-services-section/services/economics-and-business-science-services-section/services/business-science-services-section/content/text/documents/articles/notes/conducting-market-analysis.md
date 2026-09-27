@@ -17,13 +17,13 @@ type: lesson
 
 ## What this lesson covers
 
-How to research and document the external conditions in which a business will operate. This lesson covers three components of [market analysis](../../../../../../../../sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/market-analysis.md): defining the [target market](../../../../../../../../sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/target-market.md), conducting a [competitive analysis](../../../../../../../../sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/competitive-analysis.md), and assembling a [SWOT analysis](../../../../../../../../sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/swot-analysis.md). The goal is to produce a clear, evidence-grounded picture of who the customers are, who else serves them, and where the business fits.
+How to research and document the external conditions in which a business will operate. This lesson covers three components of [market analysis](../../../../../../../../sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/market-analysis.md): defining the [target market](../../../../../services/marketing-science-services-section/content/text/glossary/terms/target-market.md), conducting a [competitive analysis](../../../../../services/strategy-services-section/content/text/glossary/terms/competitive-analysis.md), and assembling a [SWOT analysis](../../../../../../../../sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/swot-analysis.md). The goal is to produce a clear, evidence-grounded picture of who the customers are, who else serves them, and where the business fits.
 
 ---
 
 ## Part 1: Target market profile
 
-The [target market](../../../../../../../../sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/target-market.md) is the specific group of people the business intends to serve. Defining it requires answering three sets of questions.
+The [target market](../../../../../services/marketing-science-services-section/content/text/glossary/terms/target-market.md) is the specific group of people the business intends to serve. Defining it requires answering three sets of questions.
 
 ### Demographics: who are they?
 
@@ -71,7 +71,7 @@ State what you know, what you're estimating, and what you need to learn. A targe
 
 ## Part 2: Competitive analysis
 
-[Competitive analysis](../../../../../../../../sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/competitive-analysis.md) identifies who else serves the target market and assesses their strengths and weaknesses relative to your business.
+[Competitive analysis](../../../../../services/strategy-services-section/content/text/glossary/terms/competitive-analysis.md) identifies who else serves the target market and assesses their strengths and weaknesses relative to your business.
 
 ### Step 1: Identify competitors
 
@@ -152,7 +152,7 @@ The [SWOT analysis](../../../../../../../../sociology-science-services-section/s
 | | Helpful | Harmful |
 |---|---|---|
 | **Internal** | **S**: Unique regional menu; experienced chef; event programming capability; lower rent (off-main-street location) | **W**: No brand recognition yet; limited seating (40 capacity); single-chef dependency; no delivery infrastructure |
-| **External** | **O**: Growing interest in regional Mexican cuisine; nearest competitor closes at 8pm (evening market open); new housing development within 1 mile | **T**: National chain expansion in area; rising food costs; [labor](../../sociology/terms/labor.md) shortage in food service; zoning review pending for event permits |
+| **External** | **O**: Growing interest in regional Mexican cuisine; nearest competitor closes at 8pm (evening market open); new housing development within 1 mile | **T**: National chain expansion in area; rising food costs; [labor](../../../../../../../../sociology-science-services-section/content/text/glossary/terms/labor.md) shortage in food service; zoning review pending for event permits |
 
 ### Using the SWOT
 

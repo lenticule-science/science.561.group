@@ -57,7 +57,7 @@ A [Environment](../../../../../../../../../../content/text/glossary/terms/enviro
 
 ## Relation to normative system
 
-A [NormativeSystem](../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/normative-system.md) adds deontic layering on top of the enabling relation: it distinguishes between legally permitted moves (those the enabling relation allows) and normatively obligated moves (those the norm set Δ demands), and between legally possible moves and normatively prohibited ones. An arena has no deontic operators — it recognizes only the legal/illegal distinction. A normative system adds O(φ), P(φ), F(φ) on top of the legal/illegal base.
+A [NormativeSystem](../../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/content/text/glossary/terms/normative-system.md) adds deontic layering on top of the enabling relation: it distinguishes between legally permitted moves (those the enabling relation allows) and normatively obligated moves (those the norm set Δ demands), and between legally possible moves and normatively prohibited ones. An arena has no deontic operators — it recognizes only the legal/illegal distinction. A normative system adds O(φ), P(φ), F(φ) on top of the legal/illegal base.
 
 ## Categorical structure
 

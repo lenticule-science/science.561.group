@@ -20,7 +20,7 @@ Common qualifiers include:
 - **Exception acknowledgment** — "with the notable exception of," "except in cases where."
 - **Conditionality** — "if X holds," "assuming Y," "provided that Z."
 
-Stephen Toulmin's model of [argument](argument.md) includes qualification as a structural component: every claim has a [warrant](warrant.md) (the logical bridge from evidence to claim) and a qualifier that specifies the degree of certainty. "Social media probably contributes to adolescent depression" (qualified) is a different claim than "social media causes adolescent depression" (unqualified), and the first is more likely to survive scrutiny.
+Stephen Toulmin's model of [argument](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/essay-writing-services-section/content/text/glossary/terms/argument.md) includes qualification as a structural component: every claim has a [warrant](warrant.md) (the logical bridge from evidence to claim) and a qualifier that specifies the degree of certainty. "Social media probably contributes to adolescent depression" (qualified) is a different claim than "social media causes adolescent depression" (unqualified), and the first is more likely to survive scrutiny.
 
 The failure mode of qualification is hedging — qualifying so heavily that the claim says nothing. "It is possible that under certain circumstances some features of social media might in some cases be associated with something that could perhaps be described as depressive symptoms" has qualified itself out of existence. The goal is to qualify until the claim is honest, then stop.
 
@@ -28,5 +28,5 @@ The failure mode of qualification is hedging — qualifying so heavily that the 
 
 - [claim](claim.md) — what qualification refines
 - [warrant](warrant.md) — the logical bridge that qualification specifies the limits of
-- [concession](concession.md) — acknowledging limits of the argument, a related move
+- [concession](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/essay-writing-services-section/content/text/glossary/terms/concession.md) — acknowledging limits of the argument, a related move
 - [evidence](../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/evidence.md) — the strength of evidence determines the appropriate level of qualification

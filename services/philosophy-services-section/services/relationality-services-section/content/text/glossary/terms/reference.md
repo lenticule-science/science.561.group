@@ -724,7 +724,7 @@ Once [Meet](../../triage/meet.md) and [Join](../../triage/join.md) exist, a new 
 
 This structure — the greatest z with z ∧ x ≤ y — is residuation. It appears here between [Judgement](../../documents/articles/notes/undated/judgement.md)s but will reappear later between [Flow](../../documents/articles/notes/undated/flow.md) and [Nucleus](../../../../services/agency-services-section/content/text/documents/articles/research/predicated-agentic-orchestration-platform/library/relational-hyperverse-repository/math/nucleus.md), governing dynamics and closure. Residuation is a deep structural pattern in the derivation.
 
-[Implication](../../triage/implication.md) forces [Negation](../../triage/negation.md) (implying the bottom — the trivially empty [Judgement](../../documents/articles/notes/undated/judgement.md)). The complete structure of [Order](../../triage/order.md), [Meet](../../triage/meet.md), [Join](../../triage/join.md), and [Implication](../../triage/implication.md) is a [Heyting algebra](../../disciplines/mathematics/concepts/heyting-algebra/index.md) — constructive logic. This is not classical logic: the [law of excluded middle](../../../../../../content/text/glossary/terms/law-of-excluded-middle.md) does not hold. Proof of existence requires construction, not merely the refutation of non-existence.
+[Implication](../../triage/implication.md) forces [Negation](../../triage/negation.md) (implying the bottom — the trivially empty [Judgement](../../documents/articles/notes/undated/judgement.md)). The complete structure of [Order](../../triage/order.md), [Meet](../../triage/meet.md), [Join](../../triage/join.md), and [Implication](../../triage/implication.md) is a [Heyting algebra](../../disciplines/mathematics/concepts/heyting-algebra/index.md) — constructive logic. This is not classical logic: the [law of excluded middle](../../../../../western-services-section/services/analytic-philosophy-services-section/content/text/glossary/terms/law-of-excluded-middle.md) does not hold. Proof of existence requires construction, not merely the refutation of non-existence.
 
 ---
 
@@ -2216,7 +2216,7 @@ Negate is denial: finding the strongest [recognition](../../phenomena/recognitio
 
 Negate arises in [Movement I: Logical Origination](../concepts/movements-logical-origination.md) as the formal expression of the excluding dynamic that makes [differentiation](../concepts/differentiation.md) possible. Every act of distinction carries both an including side and an excluding side. Negate formalizes the excluding side: given a recognition A, Negate(A) is the strongest recognition whose [combining](../../triage/together.md) with A yields [Bottom](../../triage/bottom.md) — the empty recognition.
 
-Denial in the relational logic is not classical. Negating and then negating again does not always return to the original recognition. Some information is lost in the round trip, because not all determination is decidable from within the relational field. This reflects the constructive character of relational reasoning: some questions have no determinate answer until relational activity resolves them. In a world constituted by relations, the [law of excluded middle](../../../../../../content/text/glossary/terms/law-of-excluded-middle.md) does not hold universally — there can be genuine indeterminacy.
+Denial in the relational logic is not classical. Negating and then negating again does not always return to the original recognition. Some information is lost in the round trip, because not all determination is decidable from within the relational field. This reflects the constructive character of relational reasoning: some questions have no determinate answer until relational activity resolves them. In a world constituted by relations, the [law of excluded middle](../../../../../western-services-section/services/analytic-philosophy-services-section/content/text/glossary/terms/law-of-excluded-middle.md) does not hold universally — there can be genuine indeterminacy.
 
 This non-classical character is not a deficiency. It expresses the relational stance that existence is determined through ongoing relational activity, not by a fixed set of facts independent of the relations that constitute them.
 
@@ -2332,7 +2332,7 @@ This is not a defect. It is the relational logic doing what it does: every coher
 
 Recursive domain unfolding is why the derivation does not terminate. It is the specific mechanism through which the open-endedness of relationality is earned — not assumed. The derivation does not declare itself incomplete by fiat. It shows, through the logic of meta-relational closure, that each completed domain necessarily indicates a further domain.
 
-This open-endedness is consistent with [relational ontology](../../../../../../content/text/glossary/terms/relational-ontology.md). A framework that claimed to be complete — that achieved closure with no further domain implied — would contradict the relational stance. It would assert a fact of the matter independent of the relations that constitute it.
+This open-endedness is consistent with [relational ontology](../../../../../western-services-section/services/metaphysics-services-section/services/ontology-services-section/content/text/glossary/terms/relational-ontology.md). A framework that claimed to be complete — that achieved closure with no further domain implied — would contradict the relational stance. It would assert a fact of the matter independent of the relations that constitute it.
 
 ## Connection to predictive determination
 
@@ -2385,7 +2385,7 @@ Relational [ontology](../../../philosophy/terms/ontology.md) is the philosophica
 
 This is not merely an alternative philosophical stance adopted for its consequences. The derivation demonstrates it: beginning from Relationlessness, the primitive act of [differentiation](../concepts/differentiation.md) produces [recognition](../../phenomena/recognition.md) before any entity-like structure exists. [Closure](../../phenomena/closure.md) produces self-maintaining units, but those units are constituted by the [closure](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) of relational activity, not by substance or [property](../../../sociology/terms/property.md).
 
-The derivation's logic is intuitionistic (a [Heyting algebra](../../../mathematics/concepts/heyting-algebra/index.md) with [Together](../../terms/together.md), [Either](../../terms/either.md), [Implies](../../terms/implies.md), and [Negate](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/complement.md)), not classical. This reflects the relational stance: not every question has a determinate answer. Some matters are genuinely indeterminate until relational activity resolves them. The [law of excluded middle](../../../../../../content/text/glossary/terms/law-of-excluded-middle.md) fails because existence is relational, not substantial — there is no fact of the matter independent of the relations that constitute it.
+The derivation's logic is intuitionistic (a [Heyting algebra](../../../mathematics/concepts/heyting-algebra/index.md) with [Together](../../terms/together.md), [Either](../../terms/either.md), [Implies](../../terms/implies.md), and [Negate](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/complement.md)), not classical. This reflects the relational stance: not every question has a determinate answer. Some matters are genuinely indeterminate until relational activity resolves them. The [law of excluded middle](../../../../../western-services-section/services/analytic-philosophy-services-section/content/text/glossary/terms/law-of-excluded-middle.md) fails because existence is relational, not substantial — there is no fact of the matter independent of the relations that constitute it.
 
 Relational [ontology](../../../philosophy/terms/ontology.md) is grounded in Lakota epistemologies, where the primacy of relations over entities is not a theoretical innovation but a lived understanding. The derivation formalizes what that understanding requires: that relating precedes and constitutes what is related.
 
@@ -2414,7 +2414,7 @@ Relationlessness is also not a starting condition that gets used up. The derivat
 ## Related
 
 - [The Derivation](../../documents/articles/notes/2026/03/02/2026-03-02-triage-the-derivation.md) — the argument that begins by distinguishing existence from relationlessness
-- [Relational Ontology](../../../../../../content/text/glossary/terms/relational-ontology.md) — the philosophical claim that relations are prior to entities
+- [Relational Ontology](../../../../../western-services-section/services/metaphysics-services-section/services/ontology-services-section/content/text/glossary/terms/relational-ontology.md) — the philosophical claim that relations are prior to entities
 - [Differentiation](../concepts/differentiation.md) — the primitive act that draws the first boundary
 - [Bottom](../../terms/bottom.md) — the minimal recognition within the algebra, distinct from relationlessness
 
@@ -2533,7 +2533,7 @@ Each movement identifies correspondences to established mathematics — not as t
 
 ## Related
 
-- [Relational Ontology](../../../../../../content/text/glossary/terms/relational-ontology.md) — the philosophical claim the derivation demonstrates
+- [Relational Ontology](../../../../../western-services-section/services/metaphysics-services-section/services/ontology-services-section/content/text/glossary/terms/relational-ontology.md) — the philosophical claim the derivation demonstrates
 - [The Five Mathematical Systems](five-mathematical-systems.md) — how the derivation connects to four mathematical universes
 - [Incitement](./relational-derivation.md) — the phenomenon that drives each phase forward
 - [Induction](../../phenomena/induction.md) — the complementary phenomenon of completed structure producing new properties

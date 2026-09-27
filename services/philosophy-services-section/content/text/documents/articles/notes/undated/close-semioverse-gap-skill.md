@@ -7,7 +7,7 @@ title: close-semioverse-gap
 
 # Close Semioverse Gap
 
-A gap in the semioverse is a reference that does not resolve -- a [handle](../../research/2026/07/31/lenticule-import/library/philosophy/relationality/archive/domains/universes/semiotic-universe/terms/handle.md) that
+A gap in the semioverse is a reference that does not resolve -- a [handle](../../../../../../services/relationality-services-section/services/interactive-semioverse-services-section/content/text/glossary/terms/handle.md) that
 points to nothing, a link to a page that does not exist, a skill dependency that
 cannot be satisfied. Gaps are visible as broken [interaction surfaces](../../../../../../services/relationality-services-section/services/interactive-semioverse-services-section/content/text/glossary/terms/interaction-surface.md).
 

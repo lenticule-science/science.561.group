@@ -33,6 +33,6 @@ The dominance of textual transmission in Western education is historically speci
 
 ## Related terms
 
-- [land-based education](../../../../services/education-science-services-section/content/text/glossary/terms/land-based-education.md) — education embedded in place, often transmitted orally and through practice
-- [popular education](../../../../services/education-science-services-section/content/text/glossary/terms/popular-education.md) — community-based education that frequently uses oral and dialogic methods
-- [apprenticeship](apprenticeship.md) — sustained learning through practice, often involving oral instruction
+- [land-based education](../../../../services/education-science-services-section/services/pedagogy-services-section/content/text/glossary/terms/land-based-education.md) — education embedded in place, often transmitted orally and through practice
+- [popular education](../../../../services/education-science-services-section/services/pedagogy-services-section/content/text/glossary/terms/popular-education.md) — community-based education that frequently uses oral and dialogic methods
+- [apprenticeship](../../../../services/education-science-services-section/services/knowledge-transmission-services-section/content/text/glossary/terms/apprenticeship.md) — sustained learning through practice, often involving oral instruction

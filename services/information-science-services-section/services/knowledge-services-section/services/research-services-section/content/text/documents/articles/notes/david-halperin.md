@@ -30,5 +30,5 @@ David M. Halperin is a scholar of classics, English, and women's studies at the 
 - [Michel Foucault](./michel-foucault.md) — whose analysis of sexuality Halperin extends and defends
 - [Queer theory](../../sociology/schools/queer/index.md) — the tradition his work helped establish
 - [Normalization](../../sociology/schools/queer/terms/normalization.md) — the process his historicist method reveals
-- [Heteronormativity](../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/content/text/glossary/terms/heteronormativity.md) — the framework his historical analysis denaturalizes
+- [Heteronormativity](../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section/services/queer-services-section/content/text/glossary/terms/heteronormativity.md) — the framework his historical analysis denaturalizes
 - [Eve Kosofsky Sedgwick](./eve-kosofsky-sedgwick.md) — fellow founding queer theorist

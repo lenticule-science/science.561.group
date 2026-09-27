@@ -37,4 +37,4 @@ This is significant for the framework's politics: *objectification* in the moral
 - [Relating](relating.md) — the activity that constitutes both positions.
 - [Relational entity](relational-entity.md) — what occupies subject and object positions.
 - [Predication cell](../../../../math/domains/voidmath/terms/predication-cell.md) — the math articulation; the object is the third coordinate of the cell.
-- [Relational ontology](../../../../../../content/text/glossary/terms/relational-ontology.md) — the framework's commitment.
+- [Relational ontology](../../../../../western-services-section/services/metaphysics-services-section/services/ontology-services-section/content/text/glossary/terms/relational-ontology.md) — the framework's commitment.

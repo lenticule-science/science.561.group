@@ -28,4 +28,4 @@ Ethical constraints matter. Fabricated testimonials, incentivized reviews disgui
 - [social proof](social-proof.md) — the category testimonials belong to
 - [ethos](ethos.md) — testimonials build credibility through third-party endorsement
 - [landing page](landing-page.md) — testimonials typically appear in the social proof section
-- [direct response](direct-response.md) — testimonials are a core direct-response technique
+- [direct response](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/copywriting-services-section/content/text/glossary/terms/direct-response.md) — testimonials are a core direct-response technique

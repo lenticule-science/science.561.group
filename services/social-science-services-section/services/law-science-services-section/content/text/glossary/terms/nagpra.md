@@ -22,6 +22,6 @@ Mission alignment in NAGPRA-adjacent work therefore depends entirely on who the 
 
 ## Related terms
 
-- [Evidentiary credentialing](../../../../../sociology-science-services-section/content/text/glossary/terms/evidentiary-credentialing.md) — the general process this section already carries, of which NAGPRA cultural-affiliation determination is a specific, buyer-dependent instance
+- [Evidentiary credentialing](evidentiary-credentialing.md) — the general process this section already carries, of which NAGPRA cultural-affiliation determination is a specific, buyer-dependent instance
 - [Adjudication](./adjudication.md) — the general legal process NAGPRA's consultation and determination procedure instantiates
 - [Chain of title](./chain-of-title.md) — the documentary-reconstruction method NAGPRA's 2024 rule deliberately subordinates to tribal oral history and determination

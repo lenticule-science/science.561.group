@@ -11,7 +11,7 @@ aliases:
 
 # Norm
 
-The mathematical realization of a [norm](../../../../../../governance-services-section/content/glossary/terms/norm.md): the unit of which a [normative system](../../../../../../../../../../../content/text/glossary/terms/normative-system.md) is composed. A norm is a triple $\mathcal{N} = (\varphi, O, N)$ — a propositional content $\varphi$, a deontic operator $O \in \{\mathrm{Obl}, \mathrm{Per}, \mathrm{Proh}\}$, and a normative system $N$ within which the norm is operative.
+The mathematical realization of a [norm](../../../../../../governance-services-section/content/glossary/terms/norm.md): the unit of which a [normative system](../../../../../../governance-services-section/content/text/glossary/terms/normative-system.md) is composed. A norm is a triple $\mathcal{N} = (\varphi, O, N)$ — a propositional content $\varphi$, a deontic operator $O \in \{\mathrm{Obl}, \mathrm{Per}, \mathrm{Proh}\}$, and a normative system $N$ within which the norm is operative.
 
 ## Data
 
@@ -19,7 +19,7 @@ A norm $\mathcal{N} \in E_{\mathrm{op}}$ is a substrate entity carrying:
 
 - $\langle \mathcal{N}, \texttt{propositional-content}, \varphi\rangle = \mathbf{t}$ — references the cell-pattern $\varphi \subseteq \Phi_W$ that the norm prescribes.
 - $\langle \mathcal{N}, \texttt{deontic-operator}, k\rangle = \mathbf{t}$ where $k \in \{\texttt{Obl}, \texttt{Per}, \texttt{Proh}\}$.
-- $\langle \mathcal{N}, \texttt{operative-in}, N\rangle = \mathbf{t}$ — references the [normative system](../../../../../../../../../../../content/text/glossary/terms/normative-system.md) within which $\mathcal{N}$ has force.
+- $\langle \mathcal{N}, \texttt{operative-in}, N\rangle = \mathbf{t}$ — references the [normative system](../../../../../../governance-services-section/content/text/glossary/terms/normative-system.md) within which $\mathcal{N}$ has force.
 
 Conditional norms ("if $\psi$ then $\mathrm{Obl}(\varphi)$") carry an additional cell $\langle \mathcal{N}, \texttt{antecedent}, \psi\rangle = \mathbf{t}$ — the condition under which the deontic operator applies.
 
@@ -33,7 +33,7 @@ A norm $\mathcal{N} = (\varphi, O, N)$ corresponds to a [closure rule](../../../
 | $\mathrm{Per}(\varphi)$ | No closure rule fires *against* $\varphi$. Permission is the absence of a prohibition; the substrate-algebraic witness is the *non-existence* of a $\mathrm{Proh}(\varphi)$ rule in $\mathcal{S}_N$. |
 | $\mathrm{Proh}(\varphi)$ | $\psi \,\wedge\,$ (each cell in $\varphi$ at $\mathbf{t}$) $\Longrightarrow$ violation cell $\langle V, \texttt{prohibited-cell-asserted}, \varphi\rangle$ at $\mathbf{t}$. The prohibition is a closure rule that fires *on the assertion* of the prohibited content. |
 
-This is exactly the input/output logic of Boella & van der Torre cited in the [normative-system](../../../../../../../../../../../content/text/glossary/terms/normative-system.md) text: a norm is a $(\psi, \varphi)$ pair encoded as a closure rule.
+This is exactly the input/output logic of Boella & van der Torre cited in the [normative-system](../../../../../../governance-services-section/content/text/glossary/terms/normative-system.md) text: a norm is a $(\psi, \varphi)$ pair encoded as a closure rule.
 
 ## The four invariants as substrate properties
 
@@ -53,7 +53,7 @@ A conditional norm "if $\psi$ then $\mathrm{Obl}(\varphi)$" is the closure rule 
 
 ## Operativity through joint settlement
 
-Per [normative-system](../../../../../../../../../../../content/text/glossary/terms/normative-system.md), a norm is *operative at stage $\tau$* iff both required predicates have reached affirming settlement: the recognition predicate $\langle \varphi, \texttt{recognized-as-norm-in}, N\rangle = \mathbf{t}$ and the execution predicate $\langle \varphi, \texttt{forward-binding-in}, N\rangle = \mathbf{t}$. The four-corner joint-settlement reading at the norm level matches the corresponding office-incumbency reading at the office level: same two-axis structure, different content.
+Per [normative-system](../../../../../../governance-services-section/content/text/glossary/terms/normative-system.md), a norm is *operative at stage $\tau$* iff both required predicates have reached affirming settlement: the recognition predicate $\langle \varphi, \texttt{recognized-as-norm-in}, N\rangle = \mathbf{t}$ and the execution predicate $\langle \varphi, \texttt{forward-binding-in}, N\rangle = \mathbf{t}$. The four-corner joint-settlement reading at the norm level matches the corresponding office-incumbency reading at the office level: same two-axis structure, different content.
 
 ## Validity vs. truth
 

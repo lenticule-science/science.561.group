@@ -29,6 +29,6 @@ Error messages are a microcosm of technical writing: they must be clear, specifi
 ## Related terms
 
 - [audience](../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/glossary/concepts/audience.md) — error messages are written for users at their least patient
-- [readability](readability.md) — clarity matters most when the reader is stressed
-- [procedural documentation](procedural-documentation.md) — an error message's "what to do next" is a micro-procedure
-- [cognitive load](cognitive-load.md) — error messages should minimize the effort required to recover
+- [readability](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/plain-language-services-section/content/text/glossary/terms/readability.md) — clarity matters most when the reader is stressed
+- [procedural documentation](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/technical-writing-services-section/content/text/glossary/terms/procedural-documentation.md) — an error message's "what to do next" is a micro-procedure
+- [cognitive load](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/plain-language-services-section/content/text/glossary/terms/cognitive-load.md) — error messages should minimize the effort required to recover

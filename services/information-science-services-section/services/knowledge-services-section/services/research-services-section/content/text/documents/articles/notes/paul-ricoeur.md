@@ -32,5 +32,5 @@ Paul Ricoeur (1913–2005) was a French philosopher whose work on narrative, tim
 ## Related
 
 - [narrative identity](../../../../../../../../../../social-science-services-section/content/text/glossary/terms/narrative-identity.md) — Ricoeur's central concept for writing studies
-- [memoir](../../../../../../../../../../social-science-services-section/content/text/glossary/terms/memoir.md) — the genre most directly engaged with narrative identity
+- [memoir](../../../../../../../../communication-science-services-section/services/writing-services-section/services/fiction-services-section/content/text/glossary/terms/memoir.md) — the genre most directly engaged with narrative identity
 - [fiction writing](../../writing/disciplines/fiction/index.md) — Ricoeur's mimesis theory applies to fiction's relationship with lived experience

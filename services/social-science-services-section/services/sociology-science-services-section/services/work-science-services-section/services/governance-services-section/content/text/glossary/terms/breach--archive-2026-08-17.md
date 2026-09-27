@@ -83,7 +83,7 @@ This is the formal analog of the legal principle that approaching compliance is 
 
 ## Breach and accountability
 
-[Accountability](./accountability.md) determines who bears the normative consequences of breach. When a subordinate $B'$ breaches a duty within scope $S$, the breach record $(D, t^*, p)$ is a fact about $B'$'s performance. But the accountability function makes the commanding officer $B$ answerable for the breach even if $B$ did not cause it. $B$ is accountable; $B'$ may be responsible. Both normative positions can exist simultaneously.
+[Accountability](accountability.md) determines who bears the normative consequences of breach. When a subordinate $B'$ breaches a duty within scope $S$, the breach record $(D, t^*, p)$ is a fact about $B'$'s performance. But the accountability function makes the commanding officer $B$ answerable for the breach even if $B$ did not cause it. $B$ is accountable; $B'$ may be responsible. Both normative positions can exist simultaneously.
 
 ## Breach vs. failure
 

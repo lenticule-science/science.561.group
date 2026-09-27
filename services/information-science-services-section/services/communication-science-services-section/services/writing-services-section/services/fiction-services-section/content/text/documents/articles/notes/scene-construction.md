@@ -47,9 +47,9 @@ The answer: scenes are for moments where something changes. A character makes a 
 A scene has four elements, present in varying proportions:
 
 - **Action** — what characters physically do. Movement through space, gestures, physical interaction with objects and other characters.
-- **[Dialogue](../../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/dialogue.md)** — what characters say. Speech that reveals character, advances the situation, and carries [subtext](../../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/subtext.md) — what isn't said but is communicated.
+- **[Dialogue](../../../glossary/terms/dialogue.md)** — what characters say. Speech that reveals character, advances the situation, and carries [subtext](../../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/subtext.md) — what isn't said but is communicated.
 - **Setting** — the physical environment. Not description for its own sake but the material conditions that shape what can happen and how it feels. A conversation in a kitchen means something different from the same conversation in a parking lot.
-- **Interiority** — the character's thoughts, perceptions, and feelings. Access to interiority is governed by [point of view](../../../glossary/terms/point-of-view.md) and [focalization](../../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/focalization.md) — a first-person narrator can report their thoughts directly; a close third can render them; a distant third cannot.
+- **Interiority** — the character's thoughts, perceptions, and feelings. Access to interiority is governed by [point of view](../../../glossary/terms/point-of-view.md) and [focalization](../../../glossary/terms/focalization.md) — a first-person narrator can report their thoughts directly; a close third can render them; a distant third cannot.
 
 The proportions vary by scene and by writer. A scene heavy on dialogue and light on interiority moves fast and puts the reader in the position of an observer, reading characters from the outside. A scene heavy on interiority and light on action slows down, granting access to the character's inner experience. Neither is inherently better. The question is what the scene needs to accomplish.
 
@@ -87,8 +87,8 @@ This principle — enter late, exit early — comes from screenwriting but appli
 ## Related terms
 
 - [scene](../../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/scene.md)
-- [dialogue](../../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/dialogue.md)
+- [dialogue](../../../glossary/terms/dialogue.md)
 - [pacing](../../../../../../../content/text/glossary/terms/pacing.md)
 - [setting](../../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/setting.md)
-- [show don't tell](../../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/show-dont-tell.md)
+- [show don't tell](../../../glossary/terms/show-dont-tell.md)
 - [conflict](../../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/conflict.md)

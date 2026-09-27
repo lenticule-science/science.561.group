@@ -24,4 +24,4 @@ In many African and Afro-diasporic traditions, call-and-response is not merely a
 
 - [Rhythm](../../../../../../../../../../../philosophy-services-section/content/text/glossary/terms/rhythm.md) — the temporal coordination that makes exchange possible
 - [Improvisation](../../../../services/music-theory-services-section/content/text/glossary/terms/improvisation.md) — call-and-response as a framework for real-time variation
-- [Polyrhythm](./polyrhythm.md) — another structure of simultaneous, interdependent musical activities
+- [Polyrhythm](polyrhythm.md) — another structure of simultaneous, interdependent musical activities

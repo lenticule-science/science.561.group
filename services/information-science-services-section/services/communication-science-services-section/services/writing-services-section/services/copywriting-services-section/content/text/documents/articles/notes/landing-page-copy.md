@@ -28,7 +28,7 @@ type: lesson
 
 A [landing page](../../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/landing-page.md) is a single-purpose persuasive document. Every element serves one goal: moving the visitor toward the [call to action](../../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/call-to-action.md). The page's structure follows the reader's psychology — it answers their questions in the order they naturally ask them.
 
-**"What is this?"** → the [headline](../../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/headline.md) and [value proposition](../../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/value-proposition.md)
+**"What is this?"** → the [headline](../../../glossary/terms/headline.md) and [value proposition](../../../glossary/terms/value-proposition.md)
 **"How does it work?"** → the explanation section
 **"Can I trust this?"** → [social proof](../../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/social-proof.md) and credibility
 **"What if..."** → objection handling
@@ -110,4 +110,4 @@ The test is not word count but conversion rate. If the page converts well at 500
 - [conversion](../../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/conversion.md)
 - [social proof](../../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/social-proof.md)
 - [above the fold](../../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/above-the-fold.md)
-- [A/B testing](../../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/ab-testing.md)
+- [A/B testing](../../../glossary/terms/ab-testing.md)

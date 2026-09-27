@@ -31,5 +31,5 @@ To hold something in common is to stand in a specific set of relations with othe
 - [primitive-accumulation](../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/notes/undated/primitive-accumulation.md) — the broader process of which [enclosure](../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/notes/undated/enclosure.md) is a part
 - [reciprocity](reciprocity.md) — the mode of exchange that sustains commons
 - [mutual-aid](./mutual-aid.md) — the practice of collective care that commons enable
-- [use-value](./use-value.md) — what commons organize production around
-- [Relational ontology](../../../../../philosophy-services-section/content/text/glossary/terms/relational-ontology.md) — the framework that recognizes commons as relational governance
+- [use-value](../../../../services/sociology-science-services-section/services/critical-theory-science-services-section/services/marxism-services-section/content/text/glossary/terms/use-value.md) — what commons organize production around
+- [Relational ontology](../../../../../philosophy-services-section/services/western-services-section/services/metaphysics-services-section/services/ontology-services-section/content/text/glossary/terms/relational-ontology.md) — the framework that recognizes commons as relational governance

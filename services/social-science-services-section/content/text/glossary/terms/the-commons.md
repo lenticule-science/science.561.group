@@ -17,10 +17,10 @@ Pastureland, fisheries, forests, waterways, seed stocks, knowledge, and care net
 
 ## The enclosure of the commons
 
-The destruction of the commons is the historical origin of [capitalism](../../../../services/sociology-science-services-section/content/text/glossary/terms/capitalism.md).
+The destruction of the commons is the historical origin of [capitalism](../../../../services/sociology-science-services-section/services/critical-theory-science-services-section/services/anarchism-services-section/content/text/glossary/terms/capitalism.md).
 In England between the fifteenth and nineteenth centuries, common lands — where communities had grazed animals, gathered fuel, foraged food, and organized collective life for centuries — were systematically enclosed: fenced off, privatized, and converted into the [property](property.md) of individual landowners.
 The people who had depended on the commons were expelled.
-With no land to sustain themselves, they were forced into cities and into wage [labor](labor.md) — selling their time and effort to factory owners because the alternative, after enclosure, was starvation.
+With no land to sustain themselves, they were forced into cities and into wage [labor](../../../../services/sociology-science-services-section/content/text/glossary/terms/labor.md) — selling their time and effort to factory owners because the alternative, after enclosure, was starvation.
 
 This process — the violent conversion of commonly held resources into private property — was not incidental to capitalism.
 It was constitutive.
@@ -59,9 +59,9 @@ From an anarchist perspective, this is [legitimacy](legitimacy.md) production: t
 ## Related
 
 - [property](property.md) — the institution that replaced the commons through enclosure
-- [capitalism](../../../../services/sociology-science-services-section/content/text/glossary/terms/capitalism.md) — the system enclosure made possible
+- [capitalism](../../../../services/sociology-science-services-section/services/critical-theory-science-services-section/services/anarchism-services-section/content/text/glossary/terms/capitalism.md) — the system enclosure made possible
 - [colonialism](colonialism.md) — the global enclosure of Indigenous commons
-- [expropriation](../../../../services/sociology-science-services-section/content/text/glossary/terms/expropriation.md) — the reclamation of enclosed resources
+- [expropriation](../../../../services/sociology-science-services-section/services/critical-theory-science-services-section/services/anarchism-services-section/content/text/glossary/terms/expropriation.md) — the reclamation of enclosed resources
 - [mutual aid](mutual-aid.md) — the cooperative practice commoning embodies
 - [dual power](../../../../services/sociology-science-services-section/content/text/glossary/terms/dual-power.md) — contemporary commoning as alternative infrastructure
 - [self-organization](../../../../services/sociology-science-services-section/services/critical-theory-science-services-section/services/anarchism-services-section/content/text/glossary/terms/self-organization.md) — the governance capacity commons demonstrate

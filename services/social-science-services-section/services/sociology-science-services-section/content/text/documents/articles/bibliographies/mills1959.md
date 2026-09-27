@@ -25,4 +25,4 @@ Mills's *The Power Elite* (1956) is the empirical companion text — the analysi
 
 ## Where used in sociology
 
-- Implicitly across the discipline; the methodological move "personal trouble / structural issue" structures how the library reads the relation between [agency](../../../../../../../../philosophy-services-section/content/text/glossary/terms/agency.md) and [structure](../../../triage/teaching/explanations/structure.md).
+- Implicitly across the discipline; the methodological move "personal trouble / structural issue" structures how the library reads the relation between [agency](../../../../../../../../philosophy-services-section/services/relationality-services-section/content/text/glossary/terms/agency.md) and [structure](../../../triage/teaching/explanations/structure.md).

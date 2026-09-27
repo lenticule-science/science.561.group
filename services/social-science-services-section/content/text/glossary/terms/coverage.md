@@ -40,7 +40,7 @@ Gaps outside covered hours are acceptable and expected. **On-call coverage** mea
 Coverage gaps are a specific failure mode: the moment between an outgoing shift and an incoming shift where neither has assumed responsibility.
 No one is watching; no one is accountable.
 The [handoff](handoff.md) protocol exists to prevent this — the [watch](watch.md) continuity invariant states that at no moment is a critical position vacant.
-The [investiture](investiture.md) process in governance mirrors this: a role must never be unoccupied during a valid investiture chain.
+The [investiture](../../../../services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/content/text/glossary/terms/investiture.md) process in governance mirrors this: a role must never be unoccupied during a valid investiture chain.
 When one officer is relieved, the next immediately assumes authority; there is no gap.
 
 The [roster](roster.md) is the operational instrument that achieves coverage.

@@ -11,7 +11,7 @@ aliases:
 
 # Institution
 
-The mathematical realization of an [institution](../../../../../../governance-services-section/content/glossary/terms/institution.md) per the library's quintuple definition: a system of *constitutive rules* of the form "X counts as Y in context C" maintained by collective recognition. Per Searle's [status-function-declaration](../../../../../../../../../../../content/text/glossary/terms/status-function-declaration.md), institutions create institutional facts by collective acceptance.
+The mathematical realization of an [institution](../../../../../../governance-services-section/content/glossary/terms/institution.md) per the library's quintuple definition: a system of *constitutive rules* of the form "X counts as Y in context C" maintained by collective recognition. Per Searle's [status-function-declaration](../../../../../../governance-services-section/content/text/glossary/terms/status-function-declaration.md), institutions create institutional facts by collective acceptance.
 
 The aggregated recognition cell $\mathrm{Rec}_\tau(I)$ is $\leq_k$-monotone: once it reaches $\mathbf{t}$ (enough members are providing recognition), settling-monotonicity ensures it stays there until potential retraction.
 By the [predication-settling CALM corollary](../../../../../../../../../../../../information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/formalization/infomaterial/lib/infomaterial/docs/verso/mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/content/sheaf/content/settling-cohomology/references/settling-calm-corollary.md), the query "is institution $I$ operative?" is therefore coordination-free on the positive side — any replica with a local snapshot of the recognition cells can locally confirm operativity.
@@ -83,7 +83,7 @@ Per the library's institution text, three traditions ground institutions differe
 
 ## Institution vs. normative system
 
-A [normative system](../../../../../../../../../../../content/text/glossary/terms/normative-system.md) is the more general structure: a collection of norms with authority, scope, and coherence. An institution is a normative system *with positions and constitutive rules*: $I$'s $\mathrm{CR}$ generates the institutional facts that the norms apply to.
+A [normative system](../../../../../../governance-services-section/content/text/glossary/terms/normative-system.md) is the more general structure: a collection of norms with authority, scope, and coherence. An institution is a normative system *with positions and constitutive rules*: $I$'s $\mathrm{CR}$ generates the institutional facts that the norms apply to.
 
 Every institution is a normative system; not every normative system is an institution. A pure declarative normative system (norms without status-function-declarations) does not constitute new institutional facts; it just regulates existing brute facts. An institution's distinguishing feature is that it *creates the facts it then regulates*: contracts, marriages, money, citizenship, offices — these are institutional facts that exist only because the institution constitutes them.
 

@@ -29,7 +29,7 @@ The pattern is a design hypothesis stated in a 2026-08-21 draft note, not yet im
 
 ## Related terms
 
-- [community of practice](../../../../../../../../content/text/glossary/terms/community-of-practice.md) — the social structure within which the flywheel's tutoring interactions occur
-- [apprenticeship](../../../../../../../../content/text/glossary/terms/apprenticeship.md) — the embodied learning relationship this pattern extends by making every session's residue a corpus contribution
+- [community of practice](community-of-practice.md) — the social structure within which the flywheel's tutoring interactions occur
+- [apprenticeship](../../../../../knowledge-transmission-services-section/content/text/glossary/terms/apprenticeship.md) — the embodied learning relationship this pattern extends by making every session's residue a corpus contribution
 - [elder-hour multiplier](../../../../../knowledge-transmission-services-section/content/text/glossary/terms/elder-hour-multiplier.md) — the companion pattern for how the flywheel treats scarce fluent-speaker time
 - [cone-edge input](./cone-edge-input.md) — the moment-to-moment tutoring move that draws on the corpus this flywheel grows

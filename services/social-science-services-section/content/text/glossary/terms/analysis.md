@@ -7,7 +7,7 @@ date-created: 2026-03-06
 tags: []
 ---
 
-***Analysis*** is the move from [evidence](../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/evidence.md) to meaning — the writer's explanation of what the evidence shows, how it connects to the [claim](claim.md), and why it matters. If evidence is the raw material of an [argument](argument.md), analysis is the processing that turns it into support.
+***Analysis*** is the move from [evidence](../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/evidence.md) to meaning — the writer's explanation of what the evidence shows, how it connects to the [claim](claim.md), and why it matters. If evidence is the raw material of an [argument](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/essay-writing-services-section/content/text/glossary/terms/argument.md), analysis is the processing that turns it into support.
 
 The most common failure in essay writing is presenting evidence without analysis. A paragraph that quotes a source, states a statistic, or describes an example and then moves on has given the reader data but no interpretation. The reader is left asking: "So what? What does this mean? Why did the writer include this?" Analysis answers those questions.
 
@@ -22,6 +22,6 @@ A useful ratio: for every sentence of evidence, write at least two sentences of 
 ## Related terms
 
 - [evidence](../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/evidence.md) — the material that analysis interprets
-- [argument](argument.md) — the structure that analysis serves
+- [argument](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/essay-writing-services-section/content/text/glossary/terms/argument.md) — the structure that analysis serves
 - [claim](claim.md) — what analysis connects evidence to
 - [warrant](warrant.md) — the logical bridge that analysis makes explicit

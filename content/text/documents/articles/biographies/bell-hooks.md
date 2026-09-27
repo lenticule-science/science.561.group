@@ -21,9 +21,9 @@ bell hooks (Gloria Jean Watkins) wrote at the intersection of race, class, gende
 ## Related
 
 - [Paulo Freire](../../../../../services/information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/paulo-freire.md) — her primary intellectual predecessor in pedagogy
-- [engaged pedagogy](../../../../../services/social-science-services-section/services/education-science-services-section/content/text/glossary/terms/engaged-pedagogy.md) — her distinct framework for teaching as a practice of freedom
-- [dialogic education](../../../../../services/social-science-services-section/services/education-science-services-section/content/text/glossary/terms/dialogic-education.md) — the Freirean tradition she extended and transformed
-- [dialogic education](../../../../../services/social-science-services-section/services/education-science-services-section/content/text/glossary/terms/dialogic-education.md) — the tradition she extended
+- [engaged pedagogy](../../../../../services/social-science-services-section/services/education-science-services-section/services/pedagogy-services-section/content/text/glossary/terms/engaged-pedagogy.md) — her distinct framework for teaching as a practice of freedom
+- [dialogic education](../../../../../services/social-science-services-section/services/education-science-services-section/services/pedagogy-services-section/content/text/glossary/terms/dialogic-education.md) — the Freirean tradition she extended and transformed
+- [dialogic education](../../../../../services/social-science-services-section/services/education-science-services-section/services/pedagogy-services-section/content/text/glossary/terms/dialogic-education.md) — the tradition she extended
 
 bell hooks (Gloria Jean Watkins, 1952–2021) wrote the books of contemporary U.S. Black feminism that reach the broadest readership, in the prose style she insisted feminism had to develop if it was to be more than an academic tradition. The lowercased name (her great-grandmother's, taken to put the focus on the work rather than on the writer) is the politics in miniature.
 

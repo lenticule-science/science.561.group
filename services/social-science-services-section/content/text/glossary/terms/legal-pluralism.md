@@ -31,8 +31,8 @@ When state law claims supremacy over indigenous governance, it isn't describing 
 
 ## Related terms
 
-- [Jurisdiction](jurisdiction.md) — the boundaries that legal pluralism complicates
+- [Jurisdiction](../../../../services/law-science-services-section/services/jurisdiction-services-section/content/text/glossary/terms/jurisdiction.md) — the boundaries that legal pluralism complicates
 - [Sovereignty](sovereignty.md) — the authority claims that legal pluralism multiplies
 - [Rule of law](rule-of-law.md) — the principle that legal pluralism challenges
-- [Codification](../../../../services/sociology-science-services-section/content/text/glossary/terms/codification.md) — the process that converts customary norms into state law
-- [Legibility](legibility.md) — the state's demand for a single, administrable legal order
+- [Codification](../../../../services/law-science-services-section/content/text/glossary/terms/codification.md) — the process that converts customary norms into state law
+- [Legibility](../../../../../philosophy-services-section/services/black-philosophy-services-section/services/abolition-services-section/services/state-repression-services-section/content/text/glossary/terms/legibility.md) — the state's demand for a single, administrable legal order

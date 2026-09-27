@@ -72,5 +72,5 @@ Competency-based progression does not solve the problem of deciding *which* comp
 
 - [Backward design](../../glossary/terms/backward-design.md) — designing from objectives backward
 - [Curriculum](../../glossary/terms/curriculum.md) — the structure that organizes progression
-- [Scaffolding](../../../../../../content/text/glossary/terms/scaffolding.md) — graduated support during learning
-- [Zone of proximal development](../../../../../../content/text/glossary/terms/zone-of-proximal-development.md) — Vygotsky's account of readiness
+- [Scaffolding](../../../../services/learning-services-section/content/text/glossary/terms/scaffolding.md) — graduated support during learning
+- [Zone of proximal development](../../../../services/learning-services-section/content/text/glossary/terms/zone-of-proximal-development.md) — Vygotsky's account of readiness

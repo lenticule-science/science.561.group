@@ -77,7 +77,7 @@ Other specializations (federation-envelope precheck via consensus-quorum, accoun
 ## Theoretical shape
 
 **1.
-Substrate-purity preserved across embodied dispatch** ([Charter](../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/charter.md) C5; substrate-purity discipline).
+Substrate-purity preserved across embodied dispatch** ([Charter](../../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/content/text/glossary/terms/charter.md) C5; substrate-purity discipline).
 A workitem dispatched to a drone is *not* a flight command; it is an authorization to initiate. **The substrate stays pure** — workitems, witnesses, cost cells.
 The flight is downstream.
 

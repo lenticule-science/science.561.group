@@ -45,7 +45,7 @@ Each take feeds data back to platforms.
 Each analysis produces the narrative closure that allows the system to proceed as though coherence was maintained.
 
 The more an event resists easy explanation, the more interpretive cycles it produces.
-The more cycles, the more [legibility](../../../../research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/content/individual/content/agent/actuating/content/actuator/embodying/content/body/integrating/content/drone/swarming/content/swarm/content/social/content/relating/content/relational-entity/content/social-being/content/social-relation/content/power/subjectifying/content/subject/content/possessive-individual/ontologizing/content/liberalism/analyzing/content/cybernetic-postliberalism/governing/content/governance/content/critical-theory/domains/abolition/domains/state-repression/terms/legibility.md) the system has to route into behavioral analytics.
+The more cycles, the more [legibility](../../../../../../../../../../../black-philosophy-services-section/services/abolition-services-section/services/state-repression-services-section/content/text/glossary/terms/legibility.md) the system has to route into behavioral analytics.
 The confusion is not a failure of governance.
 The confusion is governance operating through the feedback mechanism that confusion creates.
 

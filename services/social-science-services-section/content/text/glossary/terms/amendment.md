@@ -60,7 +60,7 @@ The conservative/non-conservative distinction corresponds to the [Extends](../..
 
 ## The site-morphism reading
 
-A charter is formally a site $(\mathcal{B}, J)$ — a blueprint category $\mathcal{B}$ equipped with a Grothendieck topology $J$ ([Charter](charter.md)).
+A charter is formally a site $(\mathcal{B}, J)$ — a blueprint category $\mathcal{B}$ equipped with a Grothendieck topology $J$ ([Charter](../../../../services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/content/text/glossary/terms/charter.md)).
 A morphism of charters is a **site morphism** $(\mu, \nu) : (\mathcal{B}_1, J_1) \to (\mathcal{B}_2, J_2)$: a functor $\mu : \mathcal{B}_1 \to \mathcal{B}_2$ that is continuous ($J_1$-covering families map to $J_2$-covering families) and a natural transformation $\nu$ on the corresponding policy sheaves.
 
 In the [Relational Universe Morphism](../math/relational-universe-morphism.md) sense: an amendment is a morphism of relational universes restricted to the governance layer — a history category morphism $\mu$ (scope adjustment) plus a natural isomorphism $\nu : H_1 \xrightarrow{\sim} \mu^* H_2$ of policy presheaves (the policy revision, pulling the amended policies back along $\mu$).

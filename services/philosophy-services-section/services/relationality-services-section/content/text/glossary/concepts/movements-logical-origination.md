@@ -63,7 +63,7 @@ Determining relating, relation, and relational form provides the minimal dynamic
 
 ## Mathematical correspondence
 
-The structure earned here corresponds to what mathematicians call a complete [Heyting algebra](../../triage/relationality-2/ai-generated-relationality/mathematics/concepts/heyting-algebra/index.md) — a logical structure in which not every question has a determinate answer. The truth that appears here is not a primitive binary value but the persistence of a distinction — a boundary that continues to recognize itself. This reflects the relational stance: some matters are genuinely indeterminate until relational activity resolves them. The [law of excluded middle](../../../../../../content/text/glossary/terms/law-of-excluded-middle.md) fails because existence is relational, not substantial.
+The structure earned here corresponds to what mathematicians call a complete [Heyting algebra](../../triage/relationality-2/ai-generated-relationality/mathematics/concepts/heyting-algebra/index.md) — a logical structure in which not every question has a determinate answer. The truth that appears here is not a primitive binary value but the persistence of a distinction — a boundary that continues to recognize itself. This reflects the relational stance: some matters are genuinely indeterminate until relational activity resolves them. The [law of excluded middle](../../../../../western-services-section/services/analytic-philosophy-services-section/content/text/glossary/terms/law-of-excluded-middle.md) fails because existence is relational, not substantial.
 
 ## What incites Movement II
 

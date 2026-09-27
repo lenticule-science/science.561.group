@@ -66,11 +66,11 @@ Version A is a reference document. A reader who already understands [partial ord
 
 Version B is a lesson. The reader arrives at the definition having already encountered the thing it defines.
 
-This difference is not just a matter of style. [Paulo Freire](../../../../../../../../../../information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/paulo-freire.md) described conventional education as the [banking model](../../../../../../../content/text/glossary/terms/banking-model.md): the teacher deposits knowledge into passive students, who receive and memorize it [@freire_PedagogyOppressed_1970]. A lesson that opens with a definition and expects the reader to absorb it reproduces the banking model in written form. The alternative — what [Freire](../../../../../../../../../../information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/paulo-freire.md) called problem-posing education — starts from a situation the learner can engage with and builds understanding through that engagement.
+This difference is not just a matter of style. [Paulo Freire](../../../../../../../../../../information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/paulo-freire.md) described conventional education as the [banking model](../../../glossary/terms/banking-model.md): the teacher deposits knowledge into passive students, who receive and memorize it [@freire_PedagogyOppressed_1970]. A lesson that opens with a definition and expects the reader to absorb it reproduces the banking model in written form. The alternative — what [Freire](../../../../../../../../../../information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/paulo-freire.md) called problem-posing education — starts from a situation the learner can engage with and builds understanding through that engagement.
 
 ## Prerequisites
 
-[Decolonial Pedagogy](./decolonial-pedagogy.md) — especially the sections on the [banking model](../../../../../../../content/text/glossary/terms/banking-model.md) and problem-posing education.
+[Decolonial Pedagogy](./decolonial-pedagogy.md) — especially the sections on the [banking model](../../../glossary/terms/banking-model.md) and problem-posing education.
 
 ## Core concepts
 
@@ -86,7 +86,7 @@ The confusion between these two forms is the most common problem in technical wr
 
 Grant Wiggins and Jay McTighe's *Understanding by Design* framework proposes working backward from desired understanding [@wiggins_UnderstandingDesign_2005]. The process has three stages:
 
-1. **Identify the desired result.** What should the learner be able to do or explain after completing the lesson? Not "understand X" (too vague) but something specific: "determine whether a given relation is a [partial order](../../../../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/partial-order.md)," or "explain why a [Heyting algebra](../../../../mathematics/concepts/heyting-algebra/index.md) does not satisfy the [law of excluded middle](../../../../../../../../../../philosophy-services-section/content/text/glossary/terms/law-of-excluded-middle.md)."
+1. **Identify the desired result.** What should the learner be able to do or explain after completing the lesson? Not "understand X" (too vague) but something specific: "determine whether a given relation is a [partial order](../../../../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/partial-order.md)," or "explain why a [Heyting algebra](../../../../mathematics/concepts/heyting-algebra/index.md) does not satisfy the [law of excluded middle](../../../../../../../../../../philosophy-services-section/services/western-services-section/services/analytic-philosophy-services-section/content/text/glossary/terms/law-of-excluded-middle.md)."
 
 2. **Determine acceptable evidence.** How will you (or the learner) know the result has been achieved? This might be a worked problem, a self-check question, or the ability to generate an example. If you cannot describe what "understanding" looks like in practice, the learning goal is not specific enough.
 

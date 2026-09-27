@@ -32,7 +32,7 @@ Friction in a normative system is the failure of the system's own dynamics to pr
 
 ## Gap as measure of institutional compliance
 
-In a [NormativeSystem](../../../../../../../../content/text/glossary/terms/normative-system.md), the compliance of an agent's output is the gap of that output relative to the system's required settlement. A fully compliant output has zero gap. An obligation is discharged iff the agent's performance has reached zero gap at the required history. The norm system is satisfied when all obligated outputs are at zero gap.
+In a [NormativeSystem](../../../../services/governance-services-section/content/text/glossary/terms/normative-system.md), the compliance of an agent's output is the gap of that output relative to the system's required settlement. A fully compliant output has zero gap. An obligation is discharged iff the agent's performance has reached zero gap at the required history. The norm system is satisfied when all obligated outputs are at zero gap.
 
 Most institutional work is the work of closing gaps — accumulating witnessings, aligning evidence direction, shepherding partially-settled claims toward full determination. The presence of gap is not a defect of the system but the natural condition of any system whose work is ongoing.
 

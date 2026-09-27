@@ -10,7 +10,7 @@ keywords:
 description: "Anthropologist whose work examines how digital platforms reshape self-presentation, labor, and language through modular, format-driven logics."
 ---
 
-Ilana Gershon is an anthropologist at Rice University whose work examines how communication technologies reshape social relationships, [labor](../../sociology/terms/labor.md) markets, and self-presentation. Her research connects the structural features of digital platforms — their demands for modularity, brevity, and format compliance — to broader transformations in how people understand and present themselves as social and economic subjects.
+Ilana Gershon is an anthropologist at Rice University whose work examines how communication technologies reshape social relationships, [labor](../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/content/text/glossary/terms/labor.md) markets, and self-presentation. Her research connects the structural features of digital platforms — their demands for modularity, brevity, and format compliance — to broader transformations in how people understand and present themselves as social and economic subjects.
 
 ## Core ideas
 
@@ -35,5 +35,5 @@ Gershon's framework allows emsenn to distinguish between language designed for c
 - [Meme grammar](../../../../../../../../communication-science-services-section/services/linguistics-services-section/content/text/glossary/terms/meme-grammar.md) — platform language as modular simulation
 - [Syntactic branding](../../../../../../../../communication-science-services-section/services/linguistics-services-section/content/text/glossary/terms/syntactic-branding.md) — self-presentation through format compliance
 - [Dead English](../../../../../../../../communication-science-services-section/services/linguistics-services-section/content/text/glossary/terms/dead-english.md) — institutional language stripped of relational capacity
-- [Programmability](../../../../../../../../../../social-science-services-section/content/text/glossary/terms/programmability.md) — [Chun](./wendy-chun.md)'s parallel analysis of digital self-updating
+- [Programmability](../../../../../../../../../content/text/glossary/terms/programmability.md) — [Chun](./wendy-chun.md)'s parallel analysis of digital self-updating
 - [Wendy Chun](./wendy-chun.md) — fellow theorist of digital habitual updating

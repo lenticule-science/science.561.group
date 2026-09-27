@@ -10,7 +10,7 @@ keywords:
 description: "The recognition that humanity as currently constituted may be in terminal decline, and that the appropriate response is care through that process rather than attempts at preservation."
 ---
 
-Hospicing humanity is the recognition that humanity, as currently organized under [capitalism](../terms/capitalism.md) and [settler-colonial](../../sociology/topics/settler-colonialism/index.md) expansion, may be in a process of terminal decline — and that the appropriate response is to care for it through its dissolution.
+Hospicing humanity is the recognition that humanity, as currently organized under [capitalism](../../../../services/critical-theory-science-services-section/services/anarchism-services-section/content/text/glossary/terms/capitalism.md) and [settler-colonial](../../sociology/topics/settler-colonialism/index.md) expansion, may be in a process of terminal decline — and that the appropriate response is to care for it through its dissolution.
 
 The hospice metaphor is precise: hospice care does not aim at cure. It aims at dignity, reduced suffering, and honest presence with what is happening. Applied to humanity, this means the project of total liberation does not require believing that the current form of human civilization can be saved. It may involve helping it end with less suffering and more grace.
 

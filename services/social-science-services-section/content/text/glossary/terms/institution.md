@@ -213,7 +213,7 @@ The vessel's registry is the persistence mechanism of the institutional identity
 
 ## Relation to normative system
 
-A [NormativeSystem](normative-system.md) is the computationally precise formalization of an institution.
+A [NormativeSystem](../../../../services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/content/text/glossary/terms/normative-system.md) is the computationally precise formalization of an institution.
 Where the institution is defined by constitutive rules and collective acceptance, a normative system is defined by a formal tuple ⟨Ag, R, Sc, Π, Δ⟩ with explicit roles, scenes, and deontic constraints.
 Every institution can be approximated as a normative system; not every normative system captures the reconstitutive downward causation that Hodgson identifies in mature institutions.
 
@@ -379,7 +379,7 @@ A specific court operating within that legal system is an organization — a gro
 A [Vessel](../../../../../philosophy-services-section/content/text/glossary/terms/vessel.md) is an institution in the Searlean sense: its constitutive rules assign the status *captain* to an agent (giving that agent the deontic power to issue orders the crew is obligated to follow), assign *crew* status to other agents (giving them duties of obedience and privileges of protection), and define the charter as the constitutive document.
 The vessel's registry is the persistence mechanism of the institutional identity — it maintains the collective recognition even through complete crew replacement.
 
-A [NormativeSystem](./normative-system.md) is the computationally precise formalization of an institution.
+A [NormativeSystem](../../../../services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/content/text/glossary/terms/normative-system.md) is the computationally precise formalization of an institution.
 Where the institution is defined by constitutive rules and collective acceptance, a normative system is defined by a formal tuple with explicit roles, scenes, and deontic constraints.
 Every institution can be approximated as a normative system; not every normative system captures the reconstitutive downward causation that Hodgson identifies in mature institutions.
 

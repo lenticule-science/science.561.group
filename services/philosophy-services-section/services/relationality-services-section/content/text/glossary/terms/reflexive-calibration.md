@@ -5,6 +5,7 @@ keywords:
   - Relationality
 date-updated: 2026-03-09
 part-of: mathematics/concepts/reflexive-calibration/terms
+introduces: term
 ---
 
 Reflexive calibration treats measurement consistency as the restoration of [residuated sufficiency](../../slop/relationality/ai-generated-relationality/relationality-slop-2026-03-03/terms/index.md) between recognitions sharing a relational order.

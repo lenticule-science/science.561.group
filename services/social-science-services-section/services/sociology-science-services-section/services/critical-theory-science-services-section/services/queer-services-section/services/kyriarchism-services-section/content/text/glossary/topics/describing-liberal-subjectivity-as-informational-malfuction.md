@@ -16,7 +16,7 @@ node-relations: ()
 
 This paper interprets liberal subjectivity as a malfunctioning information-processing architecture. Extending the principle of information-theoretic stability (emsenn 2025b), we show that the liberal subject functions as an over-stabilized adaptive system: one that maximizes internal coherence at the cost of correspondence with external informational reality.
 
-By analyzing the feedback structure of liberal sociotechnical systems, we demonstrate how alignment mechanisms designed to preserve epistemic stability become sources of divergence amplification. This provides a [cybernetic](../../../information/disciplines/cybernetics/index.md) account of [ideological](../../../../../../../../../../content/text/glossary/terms/ideology.md) self-maintenance as an entropic anomaly within the broader ecology of informational systems.
+By analyzing the feedback structure of liberal sociotechnical systems, we demonstrate how alignment mechanisms designed to preserve epistemic stability become sources of divergence amplification. This provides a [cybernetic](../../../information/disciplines/cybernetics/index.md) account of [ideological](../../../../../../../anarchism-services-section/content/text/glossary/terms/ideology.md) self-maintenance as an entropic anomaly within the broader ecology of informational systems.
 
 # Introduction
 
@@ -73,7 +73,7 @@ $$
 \partial_t I(b; b') > \partial_t I(b; E),
 $$
 
-where $I(b; b')$ is mutual information among beliefs over time and $I(b; E)$ is mutual information with environment. Such internal coupling produces neural reinforcement of preexisting models, a biological analogue to [ideological](../../../../../../../../../../content/text/glossary/terms/ideology.md) self-confirmation (Boyd 2018, emsenn 2025d).
+where $I(b; b')$ is mutual information among beliefs over time and $I(b; E)$ is mutual information with environment. Such internal coupling produces neural reinforcement of preexisting models, a biological analogue to [ideological](../../../../../../../anarchism-services-section/content/text/glossary/terms/ideology.md) self-confirmation (Boyd 2018, emsenn 2025d).
 
 # Systemic Consequences
 
@@ -123,7 +123,7 @@ $$
 \frac{d}{dt} D_{\mathrm{KL}}(E_t||b_t) > 0
 $$
 
-despite $\partial_t D_{\mathrm{KL}}(b_{t+\delta}||b_t) \approx 0$. This drift represents the informational signature of [ideological](../../../../../../../../../../content/text/glossary/terms/ideology.md) decay: an increase in environmental surprise unaccompanied by corresponding update.
+despite $\partial_t D_{\mathrm{KL}}(b_{t+\delta}||b_t) \approx 0$. This drift represents the informational signature of [ideological](../../../../../../../anarchism-services-section/content/text/glossary/terms/ideology.md) decay: an increase in environmental surprise unaccompanied by corresponding update.
 
 # Discussion
 
@@ -150,7 +150,7 @@ Systems engineered to remain indefinitely stable without external calibration wi
 
 # Conclusion
 
-Liberal subjectivity can be formalized as an information-theoretic malfunction: a system that maximizes internal stability while decoupling from external informational flows. By grounding this diagnosis in divergence dynamics, mutual-information geometry, and feedback theory, we describe [ideology](../../../../../../../../../../content/text/glossary/terms/ideology.md) not as belief content but as a mode of thermodynamic misregulation. Restoring adaptivity requires reintroducing entropy: designing feedback architectures that reward correspondence rather than mere coherence.
+Liberal subjectivity can be formalized as an information-theoretic malfunction: a system that maximizes internal stability while decoupling from external informational flows. By grounding this diagnosis in divergence dynamics, mutual-information geometry, and feedback theory, we describe [ideology](../../../../../../../anarchism-services-section/content/text/glossary/terms/ideology.md) not as belief content but as a mode of thermodynamic misregulation. Restoring adaptivity requires reintroducing entropy: designing feedback architectures that reward correspondence rather than mere coherence.
 
 # References
 

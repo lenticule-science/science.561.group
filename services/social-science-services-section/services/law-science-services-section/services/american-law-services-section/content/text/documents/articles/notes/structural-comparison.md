@@ -41,7 +41,7 @@ Learning goal: formally compare legal and market recuperation as structural path
 
 ## The Situationist baseline
 
-The Situationist account of recuperation [@debord1967] describes a cycle: an oppositional cultural form emerges → the [spectacle](../../../../../../../../sociology-science-services-section/content/text/glossary/terms/spectacle.md) identifies it → the form is commodified → its oppositional content is neutralized → the form circulates as a consumer product. The mechanism is the market. The agent is capital. The timescale is that of commercial trends.
+The Situationist account of recuperation [@debord1967] describes a cycle: an oppositional cultural form emerges → the [spectacle](../../../../../../../../sociology-science-services-section/services/critical-theory-science-services-section/services/situationist-services-section/content/text/glossary/terms/spectacle.md) identifies it → the form is commodified → its oppositional content is neutralized → the form circulates as a consumer product. The mechanism is the market. The agent is capital. The timescale is that of commercial trends.
 
 This account has been productive. It correctly identifies the dynamic by which punk, hip-hop, zines, street art, and many other subcultural forms have been absorbed into commercial circuits. But it treats the market as the primary — sometimes the only — pathway of recuperation. The prairieland case demonstrates that the state operates a parallel pathway with different structural properties.
 
@@ -49,7 +49,7 @@ This account has been productive. It correctly identifies the dynamic by which p
 
 | Property | Market recuperation | Legal recuperation |
 |---|---|---|
-| **Mechanism** | Commodification | [Evidentiary credentialing](../../../../../../../../sociology-science-services-section/content/text/glossary/terms/evidentiary-credentialing.md) |
+| **Mechanism** | Commodification | [Evidentiary credentialing](../../../../../../../content/text/glossary/terms/evidentiary-credentialing.md) |
 | **Agent** | Capital (investors, platforms, markets) | The state (courts, prosecutors, precedent) |
 | **Medium** | Commercial exchange | [Legal proceedings](../../../../../../../../../content/text/glossary/terms/adversarial-procedure.md) |
 | **Timescale** | Years to decades | Months |

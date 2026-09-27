@@ -88,7 +88,7 @@ description: \### I.
 
 -   \*\*2004\*\* -- Facebook founded: ~affective~ regulation\_ becomes infrastructure. Collapse curated through status updates and Like-based [legibility](../../../../../../../../../../philosophy-services-section/services/black-philosophy-services-section/services/abolition-services-section/services/state-repression-services-section/content/text/glossary/terms/legibility.md).
 
--   \*\*2006--2009\*\* -- Rise of lifehacking, quantified self, and ~Calm~ [capitalism](../../../../../../../content/text/glossary/terms/capitalism.md)\_: the liberal subject is now a productivity machine regulating mood, breath, and sleep.
+-   \*\*2006--2009\*\* -- Rise of lifehacking, quantified self, and ~Calm~ [capitalism](../../../../../../critical-theory-science-services-section/services/anarchism-services-section/content/text/glossary/terms/capitalism.md)\_: the liberal subject is now a productivity machine regulating mood, breath, and sleep.
 
 -   \*\*2010\*\* -- ~Burning~ Man\_ peaks as venture capitalist playland: contradiction (wealth + collapse) resolved through communal aestheticized detachment.
 
@@ -130,7 +130,7 @@ This gives us the \*\*second derivation\*\*: ~collapse~ is aestheticized as re
 
 \### ****III. Hollywood and the Ontogenesis of Genre (1910s--1930s)****
 
-\> \*\*[Berlant](../../../../../../../../../../information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/lauren-berlant.md)'s theory of genre\*\* teaches us that genre is not just storytelling---it is a mode of world-structuring, of organizing affect and expectation. Hollywood doesn't just produce escapism---it produces the genre of Californicated contradiction: apocalypse as [spectacle](../../../../../../../content/text/glossary/terms/spectacle.md), trauma as plot point, desire as destiny.
+\> \*\*[Berlant](../../../../../../../../../../information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/lauren-berlant.md)'s theory of genre\*\* teaches us that genre is not just storytelling---it is a mode of world-structuring, of organizing affect and expectation. Hollywood doesn't just produce escapism---it produces the genre of Californicated contradiction: apocalypse as [spectacle](../../../../../../critical-theory-science-services-section/services/situationist-services-section/content/text/glossary/terms/spectacle.md), trauma as plot point, desire as destiny.
 
 Under this regime, incoherence is resolved not by explanation but \*\*by genre-saturation\*\*. The subject learns to \*\*feel their way through contradiction\*\*, not to understand it.
 

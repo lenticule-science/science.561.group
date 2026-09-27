@@ -29,4 +29,4 @@ The sociological reality is more complicated. Habeas review is procedurally comp
 - [Rights](./rights.md) — the liberty interest habeas corpus protects
 - [Incarceration](./incarceration.md) — the condition habeas corpus challenges
 - [Constitutionalism](./constitutionalism.md) — the constitutional framework within which habeas corpus operates
-- [Sovereignty](./sovereignty.md) — the state power habeas corpus constrains
+- [Sovereignty](../../../../../law-science-services-section/content/text/glossary/terms/sovereignty.md) — the state power habeas corpus constrains

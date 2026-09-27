@@ -20,8 +20,8 @@ Cruel optimism is a concept developed by [Lauren Berlant](../../general/people/l
 The optimism is cruel not because the subject is foolish but because the attachment itself is the obstacle.
 The good life, the stable career, the inclusive institution, the reformed state: these are objects of desire whose pursuit sustains the conditions that prevent their realization.
 
-[Berlant](../../general/people/lauren-berlant.md) argues that cruel optimism is not a personal pathology but a structural condition of life under late [capitalism](../../../../services/sociology-science-services-section/content/text/glossary/terms/capitalism.md) and [late liberalism](./late-liberalism.md).
-The fantasy of upward mobility sustains a [labor](./labor.md) market that destroys the conditions for it.
+[Berlant](../../general/people/lauren-berlant.md) argues that cruel optimism is not a personal pathology but a structural condition of life under late [capitalism](../../../../services/sociology-science-services-section/services/critical-theory-science-services-section/services/anarchism-services-section/content/text/glossary/terms/capitalism.md) and [late liberalism](../../../../services/sociology-science-services-section/services/critical-theory-science-services-section/services/povinellian-services-section/content/text/glossary/terms/late-liberalism.md).
+The fantasy of upward mobility sustains a [labor](../../../../services/sociology-science-services-section/content/text/glossary/terms/labor.md) market that destroys the conditions for it.
 The fantasy of inclusion sustains institutions whose function is exclusion.
 The fantasy of reform sustains a political order that absorbs every reform into its own reproduction.
 
@@ -30,7 +30,7 @@ The concept operates in the space between affect and structure.
 This is what makes the optimism cruel: it is not false hope but real attachment to conditions that are organized against the thing hoped for.
 
 In emsenn's letters-to-the-web, cruel optimism names the condition of settler-facing politics: the attachment to recognition, reform, and institutional inclusion as paths to [decolonization](./decolonization.md) — when these paths are themselves mechanisms of [settler colonialism](./settler-colonialism.md)'s reproduction.
-It also describes the condition of the organic intellectual whose attachment to pedagogical [legibility](./legibility.md) sustains the very formatting that neutralizes insurgent thought.
+It also describes the condition of the organic intellectual whose attachment to pedagogical [legibility](../../../../../philosophy-services-section/services/black-philosophy-services-section/services/abolition-services-section/services/state-repression-services-section/content/text/glossary/terms/legibility.md) sustains the very formatting that neutralizes insurgent thought.
 
 :PROPERTIES:
 :ID:       c8d724ba-7d9c-4034-952a-4d58b0031d41
@@ -48,6 +48,6 @@ It also describes the condition of the organic intellectual whose attachment to 
 - [Recuperation](../../../../services/sociology-science-services-section/content/text/glossary/terms/recuperation.md) — the process that cruel optimism sustains
 - [Settler moves to innocence](./settler-moves-to-innocence.md) — a form of cruel optimism
 - [Quasi-event](quasi-event.md) — the managed disturbance that cruel optimism produces
-- [Refusal](../../../../services/sociology-science-services-section/content/text/glossary/terms/refusal.md) — the practice of detaching from cruel attachments
-- [Assimilation politics](../../../../services/sociology-science-services-section/content/text/glossary/terms/assimilation-politics.md) — the attachment to normative inclusion as a path to queer liberation
+- [Refusal](../../../../services/sociology-science-services-section/services/critical-theory-science-services-section/services/anarchism-services-section/services/strategy-services-section/content/text/glossary/terms/refusal.md) — the practice of detaching from cruel attachments
+- [Assimilation politics](../../../../services/sociology-science-services-section/services/critical-theory-science-services-section/services/queer-services-section/content/text/glossary/terms/assimilation-politics.md) — the attachment to normative inclusion as a path to queer liberation
 - [Homonormativity](../../../../services/sociology-science-services-section/content/text/glossary/terms/homonormativity.md) — the cruel optimism of queer respectability

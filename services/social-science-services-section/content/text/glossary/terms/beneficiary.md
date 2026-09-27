@@ -9,10 +9,10 @@ date-created: 2026-04-01
 ---
 
 A beneficiary is the party whose interests an institutional structure is constituted to serve.
-The [trustee](trustee.md) manages property for the beneficiary's benefit.
+The [trustee](../../../../services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/content/text/glossary/terms/trustee.md) manages property for the beneficiary's benefit.
 The [steward](steward.md) manages a household for the owner's benefit.
 The [office](../../../../../services/economics-and-business-science-services-section/services/business-science-services-section/content/text/glossary/terms/office.md) exists to serve a function that benefits a determinate set of people.
-The [ship](ship.md) sails for the benefit of whoever the [charter](charter.md) names.
+The [ship](ship.md) sails for the benefit of whoever the [charter](../../../../services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/content/text/glossary/terms/charter.md) names.
 
 The beneficiary does not hold the position, does not command the operation, and may not even know about it.
 A trust can exist for the benefit of a minor who has no knowledge of the trust.
@@ -47,7 +47,7 @@ You can be a beneficiary without being a subject (the beneficiary of a charitabl
 
 ## The beneficiary in governance structures
 
-In a [trust](trustee.md): the beneficiary holds equitable title.
+In a [trust](../../../../services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/content/text/glossary/terms/trustee.md): the beneficiary holds equitable title.
 Legal title belongs to the trustee, but the trust exists for the beneficiary.
 The trustee's absolute no-self-benefit constraint is the structural expression of the beneficiary's priority.
 

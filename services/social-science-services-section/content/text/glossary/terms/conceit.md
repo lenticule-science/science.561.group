@@ -1,7 +1,7 @@
 ---
 
 name: "Conceit"
-description: "A ***conceit*** is an extended [metaphor](metaphor.md) that develops a surprising comparison across an entire poem or passage, exploring the likeness in sustained detail. Where a metaphor makes a single connection (\"life is a journey\"), a conceit commits to the comparison and draws out its implications — pursuing the logic of the likeness further than the reader expects."
+description: "A ***conceit*** is an extended metaphor that develops a surprising comparison across an entire poem or passage, exploring the likeness in sustained detail. Where a metaphor makes a single connection (\"life is a journey\"), a conceit commits to the comparison and draws out its implications — pursuing the logic of the likeness further than the reader expects."
 aliases:
   - "Conceit"
   - "conceit"
@@ -11,7 +11,7 @@ date-created: 2026-03-06
 tags: []
 ---
 
-A ***conceit*** is an extended [metaphor](metaphor.md) that develops a surprising comparison across an entire poem or passage, exploring the likeness in sustained detail. Where a metaphor makes a single connection ("life is a journey"), a conceit commits to the comparison and draws out its implications — pursuing the logic of the likeness further than the reader expects.
+A ***conceit*** is an extended [metaphor](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/poetry-services-section/content/text/glossary/terms/metaphor.md) that develops a surprising comparison across an entire poem or passage, exploring the likeness in sustained detail. Where a metaphor makes a single connection ("life is a journey"), a conceit commits to the comparison and draws out its implications — pursuing the logic of the likeness further than the reader expects.
 
 The most famous conceits are the Metaphysical conceits of the seventeenth century, especially John Donne's. In "A Valediction: Forbidding Mourning," Donne compares two lovers' souls to the two legs of a drawing compass — one stays fixed while the other moves, and the moving leg traces a perfect circle only because of the fixed one. The comparison is unexpected (lovers and compasses?) but, once developed, startlingly precise.
 

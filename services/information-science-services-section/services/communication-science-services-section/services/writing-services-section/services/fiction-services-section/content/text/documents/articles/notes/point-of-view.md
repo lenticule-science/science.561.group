@@ -44,9 +44,9 @@ Each version gives the reader a different relationship to the character — acce
 [Gérard Genette](../../../../../../../../../../knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/gerard-genette.md) clarified POV by splitting it into two questions [@genette1980]:
 
 - **Voice**: Who speaks? Who is narrating?
-- **[Focalization](../../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/focalization.md)**: Who sees? Through whose perception is the story filtered?
+- **[Focalization](../../../glossary/terms/focalization.md)**: Who sees? Through whose perception is the story filtered?
 
-These questions can have different answers. A third-person narrator (voice) can present events through a single character's perception (focalization). A first-person narrator speaks and sees, but may not understand what they see — producing [unreliable narration](../../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/unreliable-narrator.md).
+These questions can have different answers. A third-person narrator (voice) can present events through a single character's perception (focalization). A first-person narrator speaks and sees, but may not understand what they see — producing [unreliable narration](../../../glossary/terms/unreliable-narrator.md).
 
 ## The practical options
 
@@ -90,7 +90,7 @@ Between scenes or chapters, POV can shift. Many novels alternate between focal c
 
 ## Unreliable narration
 
-[Wayne Booth](../../../../../../../../../../knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/wayne-booth.md) defined the [unreliable narrator](../../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/unreliable-narrator.md) as one whose account the reader has reason to doubt [@booth1961]. Unreliability is not a defect but a technique. The gap between what the narrator says and what the reader understands is where meaning lives.
+[Wayne Booth](../../../../../../../../../../knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/wayne-booth.md) defined the [unreliable narrator](../../../glossary/terms/unreliable-narrator.md) as one whose account the reader has reason to doubt [@booth1961]. Unreliability is not a defect but a technique. The gap between what the narrator says and what the reader understands is where meaning lives.
 
 Unreliable narration works because the reader reads *through* the narrator, picking up signals the narrator doesn't intend to send. A narrator who insists they're fine while describing increasingly chaotic behavior communicates more through the contradiction than either element alone.
 
@@ -106,7 +106,7 @@ This technique requires that the writer know more than the narrator — and that
 ## Related terms
 
 - [point of view](../../../glossary/terms/point-of-view.md)
-- [focalization](../../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/focalization.md)
-- [narrator](../../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/narrator.md)
-- [unreliable narrator](../../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/unreliable-narrator.md)
+- [focalization](../../../glossary/terms/focalization.md)
+- [narrator](../../../glossary/terms/narrator.md)
+- [unreliable narrator](../../../glossary/terms/unreliable-narrator.md)
 - [scene](../../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/scene.md)

@@ -102,7 +102,7 @@ The discharge event is the transition from positive gap to zero gap on both pred
 
 ## Gap as measure of institutional compliance
 
-In a [NormativeSystem](normative-system.md), the compliance of an agent's output is the gap of that output relative to the system's required settlement.
+In a [NormativeSystem](../../../../services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/content/text/glossary/terms/normative-system.md), the compliance of an agent's output is the gap of that output relative to the system's required settlement.
 A fully compliant output has zero gap.
 An obligation is discharged iff the agent's performance has reached zero gap at the required history.
 The norm system is satisfied when all obligated outputs are at zero gap.
@@ -125,7 +125,7 @@ As a quality, gap is comparable across claims (one claim has a larger gap than a
 The gap quality differs from substantive qualities (color, weight, kind) in that it tracks the *relation between the claim and its target settlement*, not an intrinsic property of the claim itself.
 The same claim can have a large gap in one system and a small gap in another, depending on the surrounding witnessings and the system's settlement criteria.
 
-In a [NormativeSystem](normative-system.md), the compliance of an agent's output is the gap of that output relative to $H^*_t$. A fully compliant output has zero gap. An obligation $O(\varphi)$ is discharged iff the agent's performance of $\varphi$ has zero gap at the required history. The norm system is satisfied when all obligated outputs are at zero gap.
+In a [NormativeSystem](../../../../services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/content/text/glossary/terms/normative-system.md), the compliance of an agent's output is the gap of that output relative to $H^*_t$. A fully compliant output has zero gap. An obligation $O(\varphi)$ is discharged iff the agent's performance of $\varphi$ has zero gap at the required history. The norm system is satisfied when all obligated outputs are at zero gap.
 
 ## The gap as spectral eigenvalue
 

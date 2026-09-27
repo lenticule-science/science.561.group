@@ -78,7 +78,7 @@ A deduction reduces taxable income. A \$1,000 deduction for someone in the 24% t
 
 | Deduction | What qualifies | Notes |
 |---|---|---|
-| **Cost of goods sold** | Ingredients, materials, direct [labor](../../research/2026/07/31/lenticule-import/library/social-sciences/working/_archive/discipline-intake/business/prose/teaching/sociology/terms/labor.md) | Subtracted from revenue to calculate gross profit — the largest deduction for most businesses |
+| **Cost of goods sold** | Ingredients, materials, direct [labor](../../../../../../../sociology-science-services-section/content/text/glossary/terms/labor.md) | Subtracted from revenue to calculate gross profit — the largest deduction for most businesses |
 | **Rent** | [Commercial lease](../../../../../../../economics-and-business-science-services-section/services/business-science-services-section/content/text/glossary/terms/commercial-lease.md) payments | Fully deductible |
 | **Wages and salaries** | Employee compensation | Includes employer's share of [payroll](../../research/2026/07/31/lenticule-import/library/social-sciences/working/_archive/discipline-intake/business/prose/teaching/explanations/theories/accounting/terms/payroll.md) taxes |
 | **[Insurance](../../../../../../../../content/text/glossary/terms/business-insurance.md)** | Business insurance premiums | General liability, property, workers' comp, etc. |

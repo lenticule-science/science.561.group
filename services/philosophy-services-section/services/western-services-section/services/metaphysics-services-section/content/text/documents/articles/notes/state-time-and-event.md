@@ -27,7 +27,7 @@ McTaggart (1908) distinguished two temporal orderings: the A-series (past, prese
 
 Prior (1967) formalized the A-series as tense logic: operators F ("it will be the case that") and P ("it was the case that") over propositions. A proposition like Fp ("it will rain") is true now if p holds at some future moment. The key move is that Prior treats temporal facts as modal — they concern what is possible or necessary relative to the present state, not what exists timelessly. Tense logic makes the present state the evaluation point for all temporal claims. The state is not just a snapshot; it is a perspective from which past and future are assessed.
 
-Whitehead (1929) rejected the idea that time is a line on which events sit. For Whitehead, [actual occasions](../../../../../../../../../content/text/glossary/terms/actual-occasion.md) are the basic units of reality — each one comes into being, achieves definiteness, and perishes, becoming data for the next. Time is the creative advance of occasions, not a container for them. An occasion's "state" is its achieved satisfaction — the result of its becoming. This is closer to the automata-theoretic picture than it first appears: each occasion is a transition that produces a new configuration, and the configuration is exactly what subsequent occasions inherit.
+Whitehead (1929) rejected the idea that time is a line on which events sit. For Whitehead, [actual occasions](../../../../../services/process-philosophy-services-section/content/text/glossary/terms/actual-occasion.md) are the basic units of reality — each one comes into being, achieves definiteness, and perishes, becoming data for the next. Time is the creative advance of occasions, not a container for them. An occasion's "state" is its achieved satisfaction — the result of its becoming. This is closer to the automata-theoretic picture than it first appears: each occasion is a transition that produces a new configuration, and the configuration is exactly what subsequent occasions inherit.
 
 ## Three formal accounts
 
@@ -66,4 +66,4 @@ This matters because it means you cannot have any one of the three without the o
 - [State](../../../../../terms/state.md) — term definition
 - [Event](../../../../../terms/event.md) — term definition
 - [Time](../../../../../../../../../content/text/glossary/terms/time.md) — term definition
-- [Actual Occasion](../../../../../../../../../content/text/glossary/terms/actual-occasion.md) — Whitehead's fundamental unit
+- [Actual Occasion](../../../../../services/process-philosophy-services-section/content/text/glossary/terms/actual-occasion.md) — Whitehead's fundamental unit

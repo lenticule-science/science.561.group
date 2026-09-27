@@ -29,4 +29,4 @@ John R. Hayes is an American cognitive psychologist at Carnegie Mellon Universit
 ## Related
 
 - [Linda Flower](./linda-flower.md) — primary collaborator on the cognitive process model
-- [revision](../../../../../../../../../../social-science-services-section/content/text/glossary/terms/revision.md) — Hayes's research showed revision is recursive, not a final stage
+- [revision](../../../../../../../../communication-science-services-section/services/writing-services-section/services/essay-writing-services-section/content/text/glossary/terms/revision.md) — Hayes's research showed revision is recursive, not a final stage

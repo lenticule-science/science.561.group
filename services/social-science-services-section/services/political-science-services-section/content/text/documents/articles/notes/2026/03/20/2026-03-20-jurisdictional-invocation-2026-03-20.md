@@ -12,7 +12,7 @@ An **JurisdictionalInvocation** is a triple $(G, F, \varphi)$:
 $$\mathcal{Inv} = (G : \mathrm{Person},\; F : \mathrm{Forum},\; \varphi \in H_t)$$
 
 where:
-- $G$ is the **invoker** — the party introducing the matter; $G$ must hold assertive [Standing](../../../../../../../../../../content/text/glossary/terms/standing.md) in $F$ for the act-class $\Phi$ that includes introducing matters of the type $\varphi$
+- $G$ is the **invoker** — the party introducing the matter; $G$ must hold assertive [Standing](../../../../../../../../../sociology-science-services-section/services/work-science-services-section/services/governance-services-section/content/text/glossary/terms/standing.md) in $F$ for the act-class $\Phi$ that includes introducing matters of the type $\varphi$
 - $F$ is the **forum** with jurisdiction $\mathcal{J} = (A, T_J, H_J, V)$ — the normative system whose nucleus $\sigma^{\mathcal{J}}_t$ is being requested to operate on $\varphi$
 - $\varphi \in H_t$ is the **matter** — the fiber element being introduced; it exists in $H_t$ prior to invocation but is not in $F$'s sub-fiber $H^J_t$ until $G$'s act places it there
 

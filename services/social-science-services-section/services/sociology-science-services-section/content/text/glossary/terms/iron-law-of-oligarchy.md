@@ -36,5 +36,5 @@ Michels wrote about formal parties and unions with elected officers and written 
 ## Related terms
 
 - [Tyranny of Structurelessness](./tyranny-of-structurelessness.md) — Jo Freeman's complementary argument about informal hierarchy
-- [Vanguardism](./vanguardism.md) — Lenin's affirmative case for concentrated leadership, which the iron law treats as a structural default rather than a strategic choice
-- [Hegemony](../../../../services/critical-theory-science-services-section/services/marxism-services-section/services/gramscian-services-section/content/glossary/terms/hegemony.md) — Gramsci's account of leadership legitimated through cultural work rather than formal office
+- [Vanguardism](../../../../services/critical-theory-science-services-section/services/marxism-services-section/content/text/glossary/terms/vanguardism.md) — Lenin's affirmative case for concentrated leadership, which the iron law treats as a structural default rather than a strategic choice
+- [Hegemony](../../../../services/critical-theory-science-services-section/services/marxism-services-section/services/gramscian-services-section/content/text/glossary/terms/hegemony.md) — Gramsci's account of leadership legitimated through cultural work rather than formal office

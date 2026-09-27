@@ -45,5 +45,5 @@ The hardest problems — in schools, communities, organizations, or ecologies �
 - [Coherence](./coherence.md) — the structural concept
 - [Boundary](./boundary.md) — what relational activity produces
 - [Reflexivity](./reflexivity.md) — the capacity to shift boundaries
-- [Relational ontology](../../../../../../content/text/glossary/terms/relational-ontology.md) — the philosophical position that relations are prior to entities
+- [Relational ontology](../../../../../western-services-section/services/metaphysics-services-section/services/ontology-services-section/content/text/glossary/terms/relational-ontology.md) — the philosophical position that relations are prior to entities
 - [Closure operator](../../mathematics/concepts/closure-operator/index.md) — the mathematical structure of stabilization

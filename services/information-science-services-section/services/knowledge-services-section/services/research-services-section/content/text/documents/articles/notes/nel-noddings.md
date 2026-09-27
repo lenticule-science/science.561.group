@@ -22,7 +22,7 @@ Nel Noddings (1929–2022) was an American philosopher and educator who develope
 
 ## Significance for this research
 
-Noddings's phenomenology of the caring relation — the insistence that care is relational and requires completion by the cared-for — connects directly to the [letters-to-the-web](/personal/writing/letters-to-the-web/care-loops-that-dont-close.md) on care loops that don't close. Her account of engrossment as receptive attention to the particular other parallels [prehension](../../../../../../../../../../philosophy-services-section/content/text/glossary/terms/prehension.md) in [process philosophy](../../philosophy/disciplines/process-philosophy/index.md).
+Noddings's phenomenology of the caring relation — the insistence that care is relational and requires completion by the cared-for — connects directly to the [letters-to-the-web](/personal/writing/letters-to-the-web/care-loops-that-dont-close.md) on care loops that don't close. Her account of engrossment as receptive attention to the particular other parallels [prehension](../../../../../../../../../../philosophy-services-section/services/western-services-section/services/metaphysics-services-section/services/process-philosophy-services-section/content/text/glossary/terms/prehension.md) in [process philosophy](../../philosophy/disciplines/process-philosophy/index.md).
 
 ## Notable works
 

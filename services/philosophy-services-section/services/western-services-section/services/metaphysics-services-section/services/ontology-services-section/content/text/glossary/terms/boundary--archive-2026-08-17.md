@@ -33,8 +33,8 @@ In Whitehead's process philosophy, every actual entity has a boundary in a tempo
 
 The Holographic Boundary Identity conjecture in this repository's mathematical framework proposes that the subobject classifier of the bulk topos is isomorphic to the double-negation subtopos of the boundary. In plain terms: the boundary is the fixed point where the logic of the universe becomes classical. The bulk carries intuitionistic, many-valued, unsettled logic. The boundary carries Boolean, decided, stable logic. Everything true in the bulk is already fully encoded in the stable logic of the boundary.
 
-This gives boundary a precise role in [relational ontology](../../../../../../../../../../content/text/glossary/terms/relational-ontology.md). An entity's boundary is not its skin or its edge. It is the projection of its full relational complexity onto the interface through which other entities encounter it. A human relating to a computer system is not modeled in full — the system knows them through their boundary: credentials, roles, attention, history. The boundary is complete for the purposes of the relation, just as the holographic boundary is complete for the physics of the bulk.
+This gives boundary a precise role in [relational ontology](relational-ontology.md). An entity's boundary is not its skin or its edge. It is the projection of its full relational complexity onto the interface through which other entities encounter it. A human relating to a computer system is not modeled in full — the system knows them through their boundary: credentials, roles, attention, history. The boundary is complete for the purposes of the relation, just as the holographic boundary is complete for the physics of the bulk.
 
 ## See also
 
-- [Relational ontology](../../../../../../../../../../content/text/glossary/terms/relational-ontology.md) — the philosophical position that grounds this account of boundary
+- [Relational ontology](relational-ontology.md) — the philosophical position that grounds this account of boundary

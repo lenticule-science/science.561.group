@@ -30,5 +30,5 @@ Stacey Pigg is an American rhetoric and writing scholar at North Carolina State 
 ## Related
 
 - [Linda Flower](./linda-flower.md) — the cognitive process model that Pigg's work extends to digital environments
-- [revision](../../../../../../../../../../social-science-services-section/content/text/glossary/terms/revision.md) — distributed writing blurs the boundary between drafting and revising
+- [revision](../../../../../../../../communication-science-services-section/services/writing-services-section/services/essay-writing-services-section/content/text/glossary/terms/revision.md) — distributed writing blurs the boundary between drafting and revising
 - [rhetoric and composition](../../writing/topics/rhetoric-and-composition/index.md) — Pigg's work represents the field's contemporary engagement with digital writing practices

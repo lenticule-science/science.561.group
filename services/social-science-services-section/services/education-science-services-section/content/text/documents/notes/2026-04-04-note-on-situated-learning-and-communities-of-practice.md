@@ -56,8 +56,8 @@ Despite these limits, the core claim stands and is well-supported: learning is f
 
 ## See also
 
-- [Situated learning](../../../../../../content/text/glossary/terms/situated-learning.md) — the term definition
-- [Community of practice](../../../../../../content/text/glossary/terms/community-of-practice.md) — the term definition
-- [Apprenticeship](../../../../../../content/text/glossary/terms/apprenticeship.md) — the paradigmatic case
-- [Experiential learning](../../../../../../content/text/glossary/terms/experiential-learning.md) — Kolb's related cycle model
-- [Praxis](../../glossary/terms/praxis.md) — Freire's theory-practice unity
+- [Situated learning](../../../../services/learning-services-section/content/text/glossary/terms/situated-learning.md) — the term definition
+- [Community of practice](../../../../services/learning-services-section/content/text/glossary/terms/community-of-practice.md) — the term definition
+- [Apprenticeship](../../../../services/knowledge-transmission-services-section/content/text/glossary/terms/apprenticeship.md) — the paradigmatic case
+- [Experiential learning](../../../../services/learning-services-section/content/text/glossary/terms/experiential-learning.md) — Kolb's related cycle model
+- [Praxis](../../../../services/pedagogy-services-section/content/text/glossary/terms/praxis.md) — Freire's theory-practice unity

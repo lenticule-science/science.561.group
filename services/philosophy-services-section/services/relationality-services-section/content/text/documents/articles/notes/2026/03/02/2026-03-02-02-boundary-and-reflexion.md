@@ -57,7 +57,7 @@ Folding produces [Self-Relation](../../../../../../../../../../content/text/glos
 
 Reflexion (this derivation uses the older spelling to distinguish its specific meaning) is sometimes confused with self-reference — a thing pointing at itself. But reflexion in this derivation is more specific. It is the act of folding the boundary back into the system, so that the system's limit becomes part of what the system is. A mirror reflects an image; reflexion integrates the frame of the mirror into the picture.
 
-The Hegelian tradition develops a related idea: self-consciousness arises when thought encounters its own limits and folds those limits back into itself. The derivation reaches an analogous point through structural forcing rather than through the [phenomenology](../../../../../../../../../../content/text/glossary/terms/phenomenology.md) of consciousness. The forcing is: an inert boundary threatens coherence, so the unit must engage it.
+The Hegelian tradition develops a related idea: self-consciousness arises when thought encounters its own limits and folds those limits back into itself. The derivation reaches an analogous point through structural forcing rather than through the [phenomenology](../../../../../../../../../western-services-section/services/continental-services-section/services/phenomenology-services-section/content/text/glossary/terms/phenomenology.md) of consciousness. The forcing is: an inert boundary threatens coherence, so the unit must engage it.
 
 ## Worked example
 

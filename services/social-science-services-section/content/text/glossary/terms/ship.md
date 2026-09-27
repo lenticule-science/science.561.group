@@ -45,7 +45,7 @@ A ship requires four things:
 2. **A flag** — the identity conferred by the commissioning authority.
   In admiralty, the flag state is the sovereign entity that registers a ship and confers its legal identity.
   A ship without a flag is stateless: no port of registry, no authority backing its operations, no recognized identity.
-  When a [confederacy](confederacy.md) charters a ship, it confers identity — the ship sails under the confederacy's flag and the confederacy's directives are the highest authority the ship recognizes.
+  When a [confederacy](../../../../services/sociology-science-services-section/content/text/glossary/terms/confederacy.md) charters a ship, it confers identity — the ship sails under the confederacy's flag and the confederacy's directives are the highest authority the ship recognizes.
 
 3. **A captain** — the person invested with operational command.
   The [captain](captain.md) commands the ship within the charter's bounds.
@@ -99,7 +99,7 @@ The captain commands the ship; the confederacy commands whether there is a ship.
 ## Why ships matter for autonomous groups
 
 The ship structure solves a specific problem: how autonomous groups produce coordinated action without becoming a hierarchy.
-A [confederacy](confederacy.md) does not centralize — it commissions.
+A [confederacy](../../../../services/sociology-science-services-section/content/text/glossary/terms/confederacy.md) does not centralize — it commissions.
 Each ship it charters has hierarchical command (the captain commands), but the confederacy itself remains a covenant between equals.
 The ships answer to the confederacy's directives, not to each other.
 

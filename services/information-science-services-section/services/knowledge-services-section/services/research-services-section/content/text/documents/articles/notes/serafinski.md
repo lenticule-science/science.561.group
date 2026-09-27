@@ -13,7 +13,7 @@ Serafinski is the pseudonym of the anonymous author of *Blessed is the Flame: An
 ## Core ideas
 
 - **Anarcho-[nihilism](../../philosophy/disciplines/nihilism/index.md)**: a political orientation that acts against domination without requiring hope, progress, or the expectation of success. Resistance is justified by the conditions it responds to, not by its prospects.
-- **Concentration camp resistance**: Serafinski documents sabotage, revolt, and [refusal](../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/content/text/glossary/terms/refusal.md) within the camps as political acts that cannot be understood through frameworks that measure action by its outcomes.
+- **Concentration camp resistance**: Serafinski documents sabotage, revolt, and [refusal](../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section/services/anarchism-services-section/services/strategy-services-section/content/text/glossary/terms/refusal.md) within the camps as political acts that cannot be understood through frameworks that measure action by its outcomes.
 
 ## Notable works
 

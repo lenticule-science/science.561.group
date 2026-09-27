@@ -16,7 +16,7 @@ A medical report adopts a clinical tone. A eulogy adopts a solemn one. A satiric
 
 Tone is distinct from [voice](voice.md). Voice is the writer's characteristic sound across their work; tone is the attitude adopted for a specific piece or passage. A writer with a naturally dry voice can write in tones that range from comic to devastating — the dryness stays, but the attitude shifts.
 
-In fiction, tone is shaped by the [narrator](narrator.md). A first-person narrator's tone reveals character — a bitter narrator and a generous narrator describe the same events differently. The gap between a narrator's tone and the events they describe is one source of irony and [unreliable narration](unreliable-narrator.md).
+In fiction, tone is shaped by the [narrator](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/fiction-services-section/content/text/glossary/terms/narrator.md). A first-person narrator's tone reveals character — a bitter narrator and a generous narrator describe the same events differently. The gap between a narrator's tone and the events they describe is one source of irony and [unreliable narration](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/fiction-services-section/content/text/glossary/terms/unreliable-narrator.md).
 
 ## Related terms
 

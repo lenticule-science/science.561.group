@@ -25,6 +25,6 @@ Improvisation is inherently relational. The solo improviser relates to the instr
 ## Related terms
 
 - [Call-and-response](./call-and-response.md) — a structured framework for improvisatory exchange
-- [Polyrhythm](./polyrhythm.md) — a rhythmic framework within which improvisation occurs
+- [Polyrhythm](polyrhythm.md) — a rhythmic framework within which improvisation occurs
 - [Rhythm](../../../../../../../../../../../philosophy-services-section/content/text/glossary/terms/rhythm.md) — the temporal dimension of improvisatory decision-making
 - [Melody](./melody.md) — the pitch dimension of improvisatory decision-making

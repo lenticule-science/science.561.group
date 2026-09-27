@@ -42,7 +42,7 @@ title: apply-legibility-analysis
 ## Prerequisites
 
 - Familiarity with [intelligence as legibility](../../../glossary/terms/intelligence-as-legibility.md) — the theoretical framework
-- Familiarity with [legibility](../../../../../../../../../../../../../../philosophy-services-section/services/black-philosophy-services-section/services/abolition-services-section/services/state-repression-services-section/content/text/glossary/terms/legibility.md) — Scott's original concept
+- Familiarity with [legibility](../../../../../../../../philosophy-services-section/services/black-philosophy-services-section/services/abolition-services-section/services/state-repression-services-section/content/text/glossary/terms/legibility.md) — Scott's original concept
 - Familiarity with [mirror-imaging](../../../glossary/terms/mirror-imaging.md) — a specific form of legibility failure
 - Familiarity with [strategic culture analysis](../../../glossary/terms/strategic-culture-analysis.md) — the primary corrective for cultural-level legibility failure
 

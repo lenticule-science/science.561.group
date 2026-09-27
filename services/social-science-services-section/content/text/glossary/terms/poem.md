@@ -23,5 +23,5 @@ Poems range from the briefest fixed forms ([haiku](haiku.md), epigram) to book-l
 - [Poetry](../disciplines/poetry/index.md) — the discipline of composing poems
 - [meter](meter.md) — the rhythmic skeleton of formal verse
 - [imagery](imagery.md) — sensory language that gives poems their concrete texture
-- [metaphor](metaphor.md) — figurative identification central to poetic meaning
+- [metaphor](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/poetry-services-section/content/text/glossary/terms/metaphor.md) — figurative identification central to poetic meaning
 - [prosody](prosody.md) — the study of how poems sound

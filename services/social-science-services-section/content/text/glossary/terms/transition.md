@@ -26,5 +26,5 @@ Bad transitions announce themselves: "In this section, I will discuss..." Good t
 
 - [paragraph](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/content/text/glossary/terms/paragraph.md) — the unit between which transitions operate most visibly
 - [thesis](./thesis.md) — transitions connect individual points back to the central claim
-- [readability](./readability.md) — smooth transitions are a major factor in perceived readability
+- [readability](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/plain-language-services-section/content/text/glossary/terms/readability.md) — smooth transitions are a major factor in perceived readability
 - [syntax](syntax.md) — sentence-level structure creates micro-transitions through known-to-new ordering

@@ -26,4 +26,4 @@ Juana María Rodríguez is a scholar of performance studies, queer theory, and L
 
 - [Queer-of-color critique](../../sociology/schools/queer/schools/queer-of-color/index.md) — the tradition her work extends
 - [José Esteban Muñoz](./jose-esteban-munoz.md) — fellow scholar of queer Latina/o cultural production
-- [Disidentification](../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/content/text/glossary/terms/disidentification.md) — a concept her work engages
+- [Disidentification](../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section/services/queer-services-section/content/text/glossary/terms/disidentification.md) — a concept her work engages

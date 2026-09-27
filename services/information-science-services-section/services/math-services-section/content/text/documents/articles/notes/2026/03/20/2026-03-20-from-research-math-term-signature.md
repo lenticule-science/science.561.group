@@ -208,7 +208,7 @@ No — axioms live in theories
 Institution morphism
 Goguen & Burstall (1992)
 
-**[NormativeSystem](../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/normative-system.md)**
+**[NormativeSystem](../../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/content/text/glossary/terms/normative-system.md)**
 Roles + norms + deontic constraints
 Yes
 Normative morphism

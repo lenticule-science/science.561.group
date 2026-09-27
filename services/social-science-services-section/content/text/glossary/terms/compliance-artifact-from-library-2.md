@@ -13,7 +13,7 @@ see-also:
 
 A compliance artifact is a cultural practice that has been adopted by an institution not for its community function but for its credentialing value — its capacity to demonstrate institutional character, satisfy regulatory expectations, or strengthen an evidentiary position.
 
-The compliance artifact is the end product of [evidentiary credentialing](../../../../services/sociology-science-services-section/content/text/glossary/terms/evidentiary-credentialing.md).
+The compliance artifact is the end product of [evidentiary credentialing](../../../../services/law-science-services-section/content/text/glossary/terms/evidentiary-credentialing.md).
 Once a legal proceeding establishes that a practice signals institutional good faith, institutions across the relevant sector adopt it as a compliance measure.
 The practice is performed because not performing it creates institutional vulnerability — not because a community needs it, not because it serves a function the institution values on its own terms, but because the [legal formatting](../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/notes/undated/legal-formatting.md) has established it as expected.
 

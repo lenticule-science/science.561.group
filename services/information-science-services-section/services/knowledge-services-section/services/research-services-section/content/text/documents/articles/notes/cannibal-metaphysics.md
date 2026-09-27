@@ -17,4 +17,4 @@ The book develops [perspectivism](../../../../../../../../../../philosophy-servi
 - [Perspectivism](../../../../../../../../../../philosophy-services-section/content/text/glossary/terms/perspectivism.md)
 - [Multinaturalism](../../../../../../../../../../philosophy-services-section/content/text/glossary/terms/multinaturalism.md)
 - [Ontological turn](../../philosophy/terms/ontological-turn.md)
-- [Relational ontology](../../../../../../../../../../philosophy-services-section/content/text/glossary/terms/relational-ontology.md)
+- [Relational ontology](../../../../../../../../../../philosophy-services-section/services/western-services-section/services/metaphysics-services-section/services/ontology-services-section/content/text/glossary/terms/relational-ontology.md)

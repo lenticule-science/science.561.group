@@ -38,6 +38,6 @@ Dummett's work also bridges analytic philosophy of language and [intuitionistic 
 
 - [L. E. J. Brouwer](./l-e-j-brouwer.md) — whose intuitionism Dummett re-grounded in meaning theory
 - [Arend Heyting](./arend-heyting.md) — whose formal system Dummett's philosophy interprets
-- [Mathematical constructivism](../../../../../../../../../../philosophy-services-section/content/text/glossary/terms/mathematical-constructivism.md) — the philosophical tradition
-- [Law of excluded middle](../../../../../../../../../../philosophy-services-section/content/text/glossary/terms/law-of-excluded-middle.md) — the classical principle Dummett's argument challenges
+- [Mathematical constructivism](../../../../../../../../../../philosophy-services-section/services/western-services-section/services/analytic-philosophy-services-section/content/text/glossary/terms/mathematical-constructivism.md) — the philosophical tradition
+- [Law of excluded middle](../../../../../../../../../../philosophy-services-section/services/western-services-section/services/analytic-philosophy-services-section/content/text/glossary/terms/law-of-excluded-middle.md) — the classical principle Dummett's argument challenges
 - [Intuitionistic Logic](../../philosophy/concepts/logic/schools/intuitionistic/index.md) — the school Dummett's philosophy supports

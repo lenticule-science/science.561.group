@@ -35,4 +35,4 @@ A subject is always a [relational entity](relational-entity.md) — a stable pat
 - [Relating](relating.md) — the activity that constitutes both positions.
 - [Relational entity](relational-entity.md) — what occupies subject and object positions.
 - [Predication cell](../../../../math/domains/voidmath/terms/predication-cell.md) — the math articulation; the subject is the first coordinate of the cell.
-- [Relational ontology](../../../../../../content/text/glossary/terms/relational-ontology.md) — the framework's commitment to relations as ontologically prior.
+- [Relational ontology](../../../../../western-services-section/services/metaphysics-services-section/services/ontology-services-section/content/text/glossary/terms/relational-ontology.md) — the framework's commitment to relations as ontologically prior.

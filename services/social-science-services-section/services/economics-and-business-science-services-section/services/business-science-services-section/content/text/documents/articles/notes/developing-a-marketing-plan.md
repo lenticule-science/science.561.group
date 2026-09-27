@@ -31,7 +31,7 @@ How to develop a [marketing plan](../../../../../../../../sociology-science-serv
 
 A marketing plan answers three questions in sequence:
 
-1. **Who are we trying to reach?** (From your [target market](../../../../../../../../sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/target-market.md) profile)
+1. **Who are we trying to reach?** (From your [target market](../../../../../services/marketing-science-services-section/content/text/glossary/terms/target-market.md) profile)
 2. **Where do we reach them?** (Channel selection)
 3. **What do we say?** (Messaging and positioning)
 
@@ -77,7 +77,7 @@ Match channels to the target market's behavior (documented in your market analys
 
 ## Messaging and positioning
 
-Messaging translates your differentiation (from [competitive analysis](../../../../../../../../sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/competitive-analysis.md)) into language that resonates with the target market.
+Messaging translates your differentiation (from [competitive analysis](../../../../../services/strategy-services-section/content/text/glossary/terms/competitive-analysis.md)) into language that resonates with the target market.
 
 ### Positioning statement
 

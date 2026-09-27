@@ -29,7 +29,7 @@ Legal positivists from Bentham onward have rejected natural law as metaphysical 
 ## Related
 
 - [Rights](./rights.md) — the concept natural law grounds in pre-political authority
-- [Legitimacy](./legitimacy.md) — the quality natural law claims to provide independent of positive enactment
+- [Legitimacy](../../../../services/critical-theory-science-services-section/services/anarchism-services-section/content/text/glossary/terms/legitimacy.md) — the quality natural law claims to provide independent of positive enactment
 - [Customary law](./customary-law.md) — another non-positivist source of legal obligation
-- [Rule of law](./rule-of-law.md) — the principle natural law theorists claim positive law must embody
+- [Rule of law](../../../../../law-science-services-section/content/text/glossary/terms/rule-of-law.md) — the principle natural law theorists claim positive law must embody
 - [Constitutionalism](./constitutionalism.md) — the institutional form through which natural law limits are often enforced

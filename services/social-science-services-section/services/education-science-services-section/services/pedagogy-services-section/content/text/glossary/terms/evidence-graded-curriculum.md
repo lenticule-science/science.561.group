@@ -28,5 +28,5 @@ An evidence-graded curriculum differs from ordinary [backward design](../../../.
 
 - [curriculum](../../../../../../content/text/glossary/terms/curriculum.md) — the structured sequence of lessons that evidence grading is applied to, unit by unit
 - [backward design](../../../../../../content/text/glossary/terms/backward-design.md) — the design framework evidence-graded curricula extend by making evidence-checking explicit and dated
-- [banking model](../../../../../../content/text/glossary/terms/banking-model.md) — the deposit-and-recall approach evidence grading resists by requiring rerunnable proof of capability, not a record of exposure
+- [banking model](banking-model.md) — the deposit-and-recall approach evidence grading resists by requiring rerunnable proof of capability, not a record of exposure
 - [Evidence Grading for Personal Language Study](../../../../../../../../../../../public-services-section/services/personal-services-section/services/emsenn-services-section/services/emsenn-languages-services-section/services/emsenn-language-learning-services-section/content/text/documents/articles/guides/evidence-grading-for-personal-language-study.md) — the canonical source for the Built+green / Research-grade / Roadmap vocabulary and entry shape this term relies on

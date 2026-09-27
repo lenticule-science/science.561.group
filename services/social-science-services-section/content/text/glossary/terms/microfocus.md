@@ -25,7 +25,7 @@ A **MicroFocus** is a pair $\mathcal{F}_{\mathrm{mic}} = (H_{t^*}, a^*)$:
 $$\mathcal{F}_{\mathrm{mic}} = (H_{t^*} : \mathbf{HA}_{\mathrm{nucl}},\; a^* \in H_{t^*})$$
 
 where:
-- $H_{t^*}$ is the **focal fiber** — the Heyting algebra obtained from a [MacroFocus](macrofocus.md) $(H, t^*)$; it carries the commuting nuclear pair $(\sigma_{t^*}, \Delta_{t^*})$
+- $H_{t^*}$ is the **focal fiber** — the Heyting algebra obtained from a [MacroFocus](../../../../services/sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/macrofocus.md) $(H, t^*)$; it carries the commuting nuclear pair $(\sigma_{t^*}, \Delta_{t^*})$
 - $a^* \in H_{t^*}$ is the **focal element** — the specific designated proposition currently under active processing; not a set, not a sublocale, but a single element of the fiber
 
 A MicroFocus presupposes a MacroFocus: $H_{t^*}$ exists only after $t^*$ has been designated. A MicroFocus does not presuppose a MesoFocus: element designation does not require prior settlement classification, though the relationship between $a^*$ and $\mathrm{Fix}(j)$ is operationally significant (see below).
@@ -119,7 +119,7 @@ In the three-level focus stack from [Focus](../../../../services/sociology-scien
 
 | Level | Answers | Math object |
 |---|---|---|
-| **Level 1** ([MacroFocus](macrofocus.md)) | *Which fiber is the current working context?* | $(H, t^*)$ — pointed presheaf |
+| **Level 1** ([MacroFocus](../../../../services/sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/macrofocus.md)) | *Which fiber is the current working context?* | $(H, t^*)$ — pointed presheaf |
 | **Level 2** ([MesoFocus](../../../../services/sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/mesofocus.md)) | *What is settled within the working fiber?* | $(H_{t^*}, j, \mathrm{Fix}(j))$ — nuclear sublocale |
 | **Level 3** (MicroFocus) | *What specific element is being processed now?* | $(H_{t^*}, a^*)$ — designated element |
 

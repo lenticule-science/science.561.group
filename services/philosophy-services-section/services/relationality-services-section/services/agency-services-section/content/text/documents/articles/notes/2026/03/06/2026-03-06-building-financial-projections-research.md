@@ -74,7 +74,7 @@ Divide all costs into fixed and variable:
 
 **Fixed costs** don't change with sales volume (within a relevant range): - Rent / mortgage - Insurance - Salaried wages - Loan payments - Licenses and permits - Utilities (base amount) - Accounting and legal fees
 
-**Variable costs** scale with sales: - Cost of goods sold (ingredients, materials) - Hourly [labor](../../../../research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/content/individual/content/agent/endeavoring/content/endeavor/organizing/content/organization/resourcing/content/resource/sociology/terms/labor.md) (additional staff for busy periods) - Packaging and supplies - Credit card processing fees - Utilities (usage-based portion)
+**Variable costs** scale with sales: - Cost of goods sold (ingredients, materials) - Hourly [labor](../../../../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/content/text/glossary/terms/labor.md) (additional staff for busy periods) - Packaging and supplies - Credit card processing fees - Utilities (usage-based portion)
 
 Some costs are semi-variable — they have a fixed base plus a variable component.
 Utilities are the classic example.

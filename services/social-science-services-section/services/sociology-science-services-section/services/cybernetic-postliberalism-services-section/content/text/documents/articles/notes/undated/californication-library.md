@@ -37,7 +37,7 @@ The state does not merely tell you what you cannot do; it shapes who you are, wh
 Foucault's concept of confession is central to the mechanism.
 Modern power incites people to speak about themselves -- their desires, traumas, beliefs.
 This speech is not free expression.
-It is an act of subjection that binds the speaker to the [ideological](../../../../../../../../content/text/glossary/terms/ideology.md) system they confess within.
+It is an act of subjection that binds the speaker to the [ideological](../../../../../../../critical-theory-science-services-section/services/anarchism-services-section/content/text/glossary/terms/ideology.md) system they confess within.
 
 Social media industrializes this confessional logic at scale.
 But confession alone does not explain how people stay attached to a system that visibly fails to deliver what it promises.
@@ -128,7 +128,7 @@ You were trained to feel that your response was adequate.
 ## California as projection zone
 
 The term references California not as geography but as historical laboratory.
-The Franciscan missions (Misiones Californianas) established the template: convert populations through the management of [labor](../../../../triage/exploring-californication/terms/labor.md), belief, and daily practice.
+The Franciscan missions (Misiones Californianas) established the template: convert populations through the management of [labor](../../../../../../../../content/text/glossary/terms/labor.md), belief, and daily practice.
 The Gold Rush formatted extraction as opportunity.
 Hollywood industrialized the production of inhabitable fantasy.
 The counterculture -- Esalen Institute, psychedelic experimentation, the Summer of Love -- transmuted political contradiction into spiritual journey.

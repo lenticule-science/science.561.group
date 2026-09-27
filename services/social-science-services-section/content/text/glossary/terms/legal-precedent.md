@@ -45,6 +45,6 @@ The precedent doesn't require citation to operate; its influence is ambient, sha
 
 - [Adversarial procedure](adversarial-procedure.md) — the contest structure in which precedent-setting decisions are made
 - [Character evidence](../../../../services/sociology-science-services-section/content/text/glossary/terms/character-evidence.md) — the evidentiary form whose use precedent standardizes
-- [Evidentiary credentialing](../../../../services/sociology-science-services-section/content/text/glossary/terms/evidentiary-credentialing.md) — the process that precedent makes durable
+- [Evidentiary credentialing](../../../../services/law-science-services-section/content/text/glossary/terms/evidentiary-credentialing.md) — the process that precedent makes durable
 - [Recuperation](../../../../services/sociology-science-services-section/content/text/glossary/terms/recuperation.md) — the absorption of oppositional forms that precedent makes permanent
 - [Enclosure](../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/notes/undated/enclosure.md) — the broader dynamic of closing off formerly open practices

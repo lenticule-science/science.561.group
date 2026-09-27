@@ -166,7 +166,7 @@ This correspondence is the foundation of [proof assistants](../../research/2026/
 theorem, write a program of the corresponding type [@pierce_TypesProgrammingLanguages_2002]. The type checker verifies the proof by
 checking that the program is well-typed.
 
-Because the type system is based on [intuitionistic logic](../explanations/intuitionistic-logic.md), [excluded middle](../../../../../../../../../philosophy-services-section/content/text/glossary/terms/law-of-excluded-middle.md) ($P \vee \neg P$) is not available by default. A proof of $P \vee Q$ must supply a proof of $P$ or a proof of $Q$ — you cannot argue by contradiction unless you explicitly add classical axioms.
+Because the type system is based on [intuitionistic logic](../explanations/intuitionistic-logic.md), [excluded middle](../../../../../../../../../philosophy-services-section/services/western-services-section/services/analytic-philosophy-services-section/content/text/glossary/terms/law-of-excluded-middle.md) ($P \vee \neg P$) is not available by default. A proof of $P \vee Q$ must supply a proof of $P$ or a proof of $Q$ — you cannot argue by contradiction unless you explicitly add classical axioms.
 
 ## Indexed families and universes
 

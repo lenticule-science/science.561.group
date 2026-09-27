@@ -67,7 +67,7 @@ Enrich from two directions:
 Enriching these propagates upward: every entity that references `thing` inherits meaning through the graph.
 A small investment at the bottom yields large returns across the entire vocabulary.
 
-**From above: operational context.** The top-level entities — the [ship](./ship.md), the [charter](charter.md), the [goals](../../../../../../information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/glossary/terms/goal.md) — provide the CONTEXT that makes lower-level entities meaningful.
+**From above: operational context.** The top-level entities — the [ship](./ship.md), the [charter](../../../../services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/content/text/glossary/terms/charter.md), the [goals](../../../../../../information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/glossary/terms/goal.md) — provide the CONTEXT that makes lower-level entities meaningful.
 A [task](./task.md)'s `part-of: some-plan` only computes if the [plan](./plan.md)'s fiber is rich enough to say something about the task.
 Enriching the top provides the frame within which middle-level entities become informative.
 

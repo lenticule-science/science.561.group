@@ -20,12 +20,12 @@ A strong thesis is specific enough to be wrong. "Shakespeare was a great writer"
 
 The thesis doesn't need to appear in the first sentence, but the reader should be able to identify it within the first few paragraphs. If a reader can't say what the piece is arguing after reading the introduction, the thesis isn't clear enough — or isn't there.
 
-In practice, writers often discover their thesis through [drafting](draft.md). The first draft's thesis is frequently buried in the conclusion, because that's where the writer figured out what they were saying. [Revision](revision.md) moves that discovery to the front of the text, transforming the writer's process of discovery into the reader's experience of following an argument.
+In practice, writers often discover their thesis through [drafting](draft.md). The first draft's thesis is frequently buried in the conclusion, because that's where the writer figured out what they were saying. [Revision](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/essay-writing-services-section/content/text/glossary/terms/revision.md) moves that discovery to the front of the text, transforming the writer's process of discovery into the reader's experience of following an argument.
 
 ## Related terms
 
 - [essay](essay.md) — the genre most centrally organized around a thesis
 - [draft](draft.md) — the thesis is often discovered through drafting rather than decided in advance
-- [revision](revision.md) — revision often involves finding, clarifying, or relocating the thesis
+- [revision](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/essay-writing-services-section/content/text/glossary/terms/revision.md) — revision often involves finding, clarifying, or relocating the thesis
 - [paragraph](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/content/text/glossary/terms/paragraph.md) — each paragraph develops some aspect of the thesis
 - [transition](./transition.md) — transitions connect paragraphs back to the thesis

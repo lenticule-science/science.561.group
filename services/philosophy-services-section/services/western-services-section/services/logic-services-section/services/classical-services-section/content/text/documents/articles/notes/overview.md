@@ -26,8 +26,8 @@ Classical logic is not merely a set of inference rules. It is a philosophical po
 Classical logic rests on three interlocking principles:
 
 1. **[Bivalence](../../../../../../../../../../../content/text/glossary/terms/bivalence.md)**: every proposition is either true or false. There is no third option, no gap, no indeterminacy.
-2. **[Law of excluded middle](../../../../../../../../../../../content/text/glossary/terms/law-of-excluded-middle.md)**: for any proposition P, the disjunction P ∨ ¬P is logically valid.
-3. **[Truth-functionality](../../../../../../../../../../../content/text/glossary/terms/truth-functionality.md)**: the truth value of a compound proposition is determined entirely by the truth values of its components.
+2. **[Law of excluded middle](../../../../../../../../analytic-philosophy-services-section/content/text/glossary/terms/law-of-excluded-middle.md)**: for any proposition P, the disjunction P ∨ ¬P is logically valid.
+3. **[Truth-functionality](../../../glossary/terms/truth-functionality.md)**: the truth value of a compound proposition is determined entirely by the truth values of its components.
 
 These principles together produce a logic of total information. The universe, from the standpoint of classical logic, is fully determinate: every question has an answer, even if we don't know it. Ignorance is a feature of the knower, not of reality.
 

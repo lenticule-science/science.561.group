@@ -10,7 +10,7 @@ aliases:
 tags: []
 ---
 
-A franchise is a business arrangement in which the owner of a brand and operating system (the franchisor) licenses independent operators (franchisees) to run locations using the franchisor's name, products, and methods in exchange for fees and ongoing royalties. The franchisee supplies the capital and [labor](labor.md); the franchisor supplies the system.
+A franchise is a business arrangement in which the owner of a brand and operating system (the franchisor) licenses independent operators (franchisees) to run locations using the franchisor's name, products, and methods in exchange for fees and ongoing royalties. The franchisee supplies the capital and [labor](../../../../services/sociology-science-services-section/content/text/glossary/terms/labor.md); the franchisor supplies the system.
 
 Franchising is both a growth strategy and an [exit strategy](../../../../services/sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/exit-strategy.md). As a growth strategy, it allows rapid geographic expansion without the franchisor bearing the capital cost of each new location — franchisees fund their own build-outs. As an exit strategy, it converts a single successful business into an intellectual [property](property.md) asset (the brand and system) that generates recurring royalty revenue and can itself be sold to a larger operator or private equity firm.
 

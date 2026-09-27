@@ -13,7 +13,7 @@ cites:
 description: Mieke Bal (born 1946) is a Dutch cultural theorist and narratologist whose work refined and extended Gérard Genette's narrative framework, above all the concept of focalization — the distinction between who speaks and who perceives in a…
 ---
 
-Mieke Bal (born 1946) is a Dutch cultural theorist and narratologist whose work refined and extended [Gérard Genette](./gerard-genette.md)'s narrative framework, above all the concept of [focalization](../../../../../../../../../../social-science-services-section/content/text/glossary/terms/focalization.md) — the distinction between who speaks and who perceives in a narrative.
+Mieke Bal (born 1946) is a Dutch cultural theorist and narratologist whose work refined and extended [Gérard Genette](./gerard-genette.md)'s narrative framework, above all the concept of [focalization](../../../../../../../../communication-science-services-section/services/writing-services-section/services/fiction-services-section/content/text/glossary/terms/focalization.md) — the distinction between who speaks and who perceives in a narrative.
 
 ## Core ideas
 
@@ -29,7 +29,7 @@ Mieke Bal (born 1946) is a Dutch cultural theorist and narratologist whose work 
 
 ## Related
 
-- [focalization](../../../../../../../../../../social-science-services-section/content/text/glossary/terms/focalization.md) — the concept Bal most significantly refined
+- [focalization](../../../../../../../../communication-science-services-section/services/writing-services-section/services/fiction-services-section/content/text/glossary/terms/focalization.md) — the concept Bal most significantly refined
 - [Gérard Genette](./gerard-genette.md) — whose framework Bal extended
 - [point of view](../../writing/disciplines/fiction/terms/point-of-view.md) — the broader craft concept that focalization specifies
 - [fiction writing](../../writing/disciplines/fiction/index.md) — the discipline where Bal's narratological work is most directly applied

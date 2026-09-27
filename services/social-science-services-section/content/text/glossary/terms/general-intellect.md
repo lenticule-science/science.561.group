@@ -118,16 +118,16 @@ It supplies the substrate on which [immaterial-labor](immaterial-labor.md) draws
 
 ## Related
 
-- [Class composition](../../../../services/sociology-science-services-section/content/text/glossary/terms/class-composition.md)
+- [Class composition](../../../../services/sociology-science-services-section/services/critical-theory-science-services-section/services/marxism-services-section/services/autonomism-services-section/content/text/glossary/terms/class-composition.md)
 - [Primitive accumulation](../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/notes/undated/primitive-accumulation.md)
 - [Precarity](../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/notes/undated/precarity.md)
 
 General intellect is [Karl Marx](../../general/people/karl-marx.md)'s term, from the *Grundrisse* (1858), for the collective knowledge, skills, and social cooperation that become embedded in productive forces.
-[Marx](../../general/people/karl-marx.md) argued that as production depends less on individual [labor](./labor.md) time and more on the general state of science and technology — on knowledge that is inherently social — the [labor](./labor.md) theory of value enters crisis.
+[Marx](../../general/people/karl-marx.md) argued that as production depends less on individual [labor](../../../../services/sociology-science-services-section/content/text/glossary/terms/labor.md) time and more on the general state of science and technology — on knowledge that is inherently social — the [labor](../../../../services/sociology-science-services-section/content/text/glossary/terms/labor.md) theory of value enters crisis.
 Value becomes harder to measure by time when the productive force is collective intelligence rather than individual exertion.
 
 [Operaismo](/sociology/terms/operaismo.md) and [autonomist](/sociology/schools/autonomism/index.md) thinkers — particularly Paolo Virno and Antonio Negri — revived and extended the concept.
-Under what they term cognitive [capitalism](../../../../services/sociology-science-services-section/content/text/glossary/terms/capitalism.md), the general intellect is no longer fixed in machinery (as [Marx](../../general/people/karl-marx.md) primarily imagined) but lives in the communicative, affective, and cognitive capacities of workers themselves.
+Under what they term cognitive [capitalism](../../../../services/sociology-science-services-section/services/critical-theory-science-services-section/services/anarchism-services-section/content/text/glossary/terms/capitalism.md), the general intellect is no longer fixed in machinery (as [Marx](../../general/people/karl-marx.md) primarily imagined) but lives in the communicative, affective, and cognitive capacities of workers themselves.
 Knowledge, language, and cooperation are both the means of production and the product.
 This makes the general intellect a primary site of value extraction and of struggle: capital must capture and enclose what is inherently common.
 

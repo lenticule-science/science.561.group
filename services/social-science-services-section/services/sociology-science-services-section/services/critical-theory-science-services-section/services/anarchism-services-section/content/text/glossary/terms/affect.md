@@ -1,0 +1,80 @@
+---
+name: "Affect"
+date-created: 2026-03-07
+aliases:
+  - "Affect"
+  - "affect"
+  - "affects"
+  - affective
+keywords:
+  - anarchism
+description: "The felt, bodily dimension of political experience — intensities that precede and exceed conscious emotion. Anarchist analysis uses affect to explain how domination operates at the level of feeling (fear, exhaustion, numbness) and how resistance produces its own intensities (solidarity, rage, armed joy) that escape rational calculation."
+part-of: medicine/disciplines/psychology/terms
+contrasts-with: emotion
+requires: interoception
+measured-by:
+  - valence
+  - arousal
+component-of: psychopathology
+enables: somatic-awareness
+type: term
+---
+
+Affect is the felt, bodily dimension of experience that precedes and exceeds conscious emotion. You walk into a room and something is wrong — you feel it before you identify it. A crowd shifts from restive to furious in a moment no individual decided. The exhaustion of precarious work settles into your body as a background hum you stop noticing. These are affects: intensities registered by the body before the mind categorizes them as feelings, and often persisting beneath or alongside whatever emotions the mind produces.
+
+The distinction between affect and emotion is not decorative. Emotions are named, recognized, managed: "I am angry," "I am afraid," "I am hopeful." Naming an emotion is already a symbolic operation — it locates your experience within the [symbolic order](../../../../../../../../../../../../../public-services-section/services/personal-services-section/services/emsenn-services-section/content/text/glossary/terms/the-symbolic-order.md)'s vocabulary of recognized feelings. Affect is what precedes and exceeds this naming. It is the raw intensity before it becomes "anger," the bodily registration before it becomes "fear," the shift in a room before anyone calls it "tension." Affect is pre-personal (it circulates between bodies, not just within them) and pre-linguistic (it operates before and beneath language).
+
+## Why affect matters for anarchism
+
+[Domination](../../../../../../../../../../../../../public-services-section/services/personal-services-section/services/emsenn-services-section/content/text/glossary/terms/domination.md) does not operate only through institutions, laws, and economic arrangements. It operates through affect: through the felt, bodily dimension of living under [hierarchy](../../../../../../../../../../../../../public-services-section/services/personal-services-section/services/emsenn-services-section/content/text/glossary/terms/hierarchy.md). Consider what it feels like — not what you think about it, but what it feels like in the body — to be surveilled, to be precarious, to be subject to arbitrary authority, to spend your waking hours doing work that serves someone else's accumulation. The affects of domination include:
+
+- **Exhaustion** — not just physical tiredness but the affective depletion that [capitalism](../../../../../../../../../../../../../public-services-section/services/personal-services-section/services/emsenn-services-section/content/text/glossary/terms/capitalism.md)'s temporal demands produce. You do not merely lack time; you lack the intensity to use the time you have.
+
+- **Numbness** — the affective shutdown that chronic domination produces. You stop feeling the indignity because feeling it is too costly. This numbness is functional for the system: it prevents the affects that would drive [refusal](../../../../../../../../../../../../../public-services-section/services/personal-services-section/services/emsenn-services-section/content/text/glossary/terms/refusal.md).
+
+- **Anxiety** — the ambient, objectless dread that precarity produces. Not fear of a specific threat but the generalized sense that the ground could give way at any moment. [The state](../../../../services/state-services-section/content/text/glossary/terms/the-state.md) and capitalism both depend on this anxiety: it keeps people oriented toward survival rather than resistance.
+
+- **Shame** — the affect of [obedience](../../../../../../../../../../../../../public-services-section/services/personal-services-section/services/emsenn-services-section/content/text/glossary/terms/obedience.md). The person who complies with authority they know is illegitimate does not merely act against their principles; they feel something — a contraction, a diminishment, a bodily registration of submission. Shame accumulates.
+
+These are not individual psychological problems. They are the affective infrastructure of domination — the felt dimension of structural arrangements that political analysis typically addresses only in their institutional form.
+
+## The affects of resistance
+
+Resistance produces its own affects. [Solidarity](../../../../../../../../../../../../../public-services-section/services/personal-services-section/services/emsenn-services-section/content/text/glossary/terms/solidarity.md) is not only a political commitment; it is a felt intensity — the bodily experience of standing with others against a shared domination. The general strike, the occupation, the blockade, the moment when a community collectively refuses compliance — these produce affects that cannot be reduced to their strategic content:
+
+- **Rage** — not anger (which is named and managed) but the pre-linguistic intensity of encountering domination, the bodily surge that precedes any decision about what to do.
+
+- **Exhilaration** — the affect of [direct action](../../../../../../../../../../../../../public-services-section/services/personal-services-section/services/emsenn-services-section/content/text/glossary/terms/direct-action.md), the intensity of acting without permission, of discovering your own capacity in the act.
+
+- **[Armed joy](armed-joy.md)** — [Bonanno](../../../../../../../../../../../../../references/people/alfredo-bonanno.md)'s name for the affect of present-tense freedom, the dissolution of the boundary between struggle and life. Armed joy is an affective concept: it names not a belief or a strategy but a felt intensity in the act of resistance.
+
+- **[Jouissance](../../../../../../../../../../../../../public-services-section/services/personal-services-section/services/emsenn-services-section/content/text/glossary/theories/anarcho-nihilism/terms/jouissance.md)** — the excessive, disruptive intensity that exceeds even armed joy. Jouissance pushes past the affects the subject can comfortably contain — it includes the self-destructive dimension, the willingness to sustain damage, the intensity that exceeds rational calculation.
+
+## Affect and recuperation
+
+[Recuperation](../../../../../../../../../../../../../public-services-section/services/personal-services-section/services/emsenn-services-section/content/text/glossary/terms/recuperation.md) operates affectively, not only ideologically. The system does not merely co-opt radical ideas; it captures and domesticates radical affects. Consumer culture is an affect-management system: it produces regulated doses of intensity (the thrill of the new product, the vicarious rebellion of the action movie, the managed "anarchy" of the festival) that discharge disruptive affects in forms compatible with the system's reproduction.
+
+This is why analyzing resistance only in terms of ideas, demands, and programs misses a crucial dimension. A movement can maintain its ideological integrity while losing its affective force. The ideas remain radical; the felt intensity of resistance dissipates into managed forms. The system does not need to refute your analysis. It needs to drain the affect that would drive you to act on it.
+
+## Affect and the body
+
+Affect is bodily. This is not a metaphor. The exhaustion of precarious labor is in the muscles, the posture, the quality of sleep. The anxiety of surveillance is in the gut, the pattern of breathing, the habitual scanning of the environment. The exhilaration of collective action is in the voice, the stride, the sense of the body as capable rather than constrained. [Domination](../../../../../../../../../../../../../public-services-section/services/personal-services-section/services/emsenn-services-section/content/text/glossary/terms/domination.md) inscribes itself on bodies; resistance begins when bodies refuse the inscription.
+
+This connects to [self-organization](self-organization.md): the capacity for autonomous action is not merely a political principle but an affective one. A body that has been exhausted, numbed, shamed, and made anxious by domination does not simply decide to resist when presented with a correct analysis. It must recover the affective capacity for resistance — which is why [mutual aid](../../../../../../../../../../../../../public-services-section/services/personal-services-section/services/emsenn-services-section/content/text/glossary/terms/mutual-aid.md), care, and the material conditions for rest and recovery are not secondary to political struggle but preconditions for it.
+
+## Related
+
+- [the symbolic order](the-symbolic-order.md) — the system that names affects as emotions and manages them
+- [the pleasure principle](the-pleasure-principle.md) — the homeostatic management of affective intensity
+- [Interoception](../../../../../../../../../../../natural-science-services-section/services/biological-science-services-section/services/medical-science-services-section/services/somatics-services-section/content/text/glossary/terms/interoception.md) — the sensory channel through which affect registers
+- [Psychopathology](../../../../../../../../../../../natural-science-services-section/services/biological-science-services-section/services/medical-science-services-section/services/psychology-services-section/content/text/documents/articles/notes/psychopathology.md) — affect in the context of psychological suffering
+- [Shen](../../../../../../../../../../../natural-science-services-section/services/biological-science-services-section/services/medical-science-services-section/services/traditional-chinese-medicine-services-section/content/text/glossary/terms/shen.md) — TCM's framework for awareness and affective coherence
+- [Somatic Awareness](../../../../../../../../../../../natural-science-services-section/services/biological-science-services-section/services/medical-science-services-section/services/somatics-services-section/content/text/glossary/terms/somatic-awareness.md) — first-person access to affective states through the body
+
+Affect is the body's ongoing felt evaluation of its situation — a continuous, pre-reflective process that colors all experience. It is not the same as emotion. Emotions are discrete, named states (anger, sadness, joy) that emerge when affect is processed through cognitive appraisal and cultural categories. Affect is more basic: the felt sense of whether things are going well or badly, whether the current situation requires approach or withdrawal, whether the organism is safe or threatened.
+
+Affect has two primary dimensions: **valence** (pleasant to unpleasant) and **arousal** (calm to activated). Any affective state can be located on these two axes. Anxiety is high arousal, negative valence. Contentment is low arousal, positive valence. Excitement is high arousal, positive valence. Depression is low arousal, negative valence.
+
+The sensory basis of affect is [interoception](../../../../../../../../../../../natural-science-services-section/services/biological-science-services-section/services/medical-science-services-section/services/somatics-services-section/content/text/glossary/terms/interoception.md) — the sense of the body's internal state. The insular cortex integrates signals from the viscera (heart rate, gut state, breathing, [muscle](../../../../../../../../../../../natural-science-services-section/services/biological-science-services-section/services/medical-science-services-section/services/human-body-services-section/content/text/documents/articles/notes/the-musculoskeletal-system.md) tension) into a felt sense that constitutes the body's affective commentary on its situation. This is why affect is not purely psychological: it is a bodily process, mediated by the [autonomic nervous system](../../../../../../../../../../../philosophy-services-section/services/relationality-services-section/content/text/topics/human-body/terms/homeostasis.md), expressed in physiological changes, and accessible through [somatic practices](../../../../../../../../../../../philosophy-services-section/services/relationality-services-section/content/text/concepts/somatics/index.md) as well as through verbal reflection.
+
+In Traditional Chinese Medicine, the [Zang-Fu](../../../../../../../../../../../natural-science-services-section/services/biological-science-services-section/services/medical-science-services-section/services/traditional-chinese-medicine-services-section/content/text/glossary/terms/zang-fu.md) organ systems each have associated affective qualities — the Heart houses [Shen](../../../../../../../../../../../natural-science-services-section/services/biological-science-services-section/services/medical-science-services-section/services/traditional-chinese-medicine-services-section/content/text/glossary/terms/shen.md) (clarity and relational presence), the Liver governs emotional flexibility, the Lung is associated with grief. These are not metaphors but functional descriptions: when the Heart's Shen is disturbed, a person may be anxious, disoriented, or affectively flat. The TCM framework describes affect as distributed across functional systems rather than located in a single organ.

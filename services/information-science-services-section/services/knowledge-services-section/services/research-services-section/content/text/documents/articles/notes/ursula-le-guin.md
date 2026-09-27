@@ -35,5 +35,5 @@ Ursula K. Le Guin (1929–2018) was an American novelist and essayist whose fict
 
 - [fiction writing](../../writing/disciplines/fiction/index.md) — *Steering the Craft* is a key text for the discipline
 - [point of view](../../writing/disciplines/fiction/terms/point-of-view.md) — Le Guin's treatment of POV as ethical choice
-- [dialogue](../../../../../../../../../../social-science-services-section/content/text/glossary/terms/dialogue.md) — Le Guin's exercises develop attention to the sound of speech
+- [dialogue](../../../../../../../../communication-science-services-section/services/writing-services-section/services/fiction-services-section/content/text/glossary/terms/dialogue.md) — Le Guin's exercises develop attention to the sound of speech
 - [genre](../../../../../../../../communication-science-services-section/services/writing-services-section/services/rhetoric-and-composition-services-section/content/text/glossary/terms/genre.md) — Le Guin's work challenges the literary/genre hierarchy

@@ -21,11 +21,11 @@ Reconstructing a chain of title across several such generations, often spanning 
 
 A reconstructed chain of title is not, by itself, a legally binding determination of ownership.
 It is the evidentiary basis on which a licensed attorney issues a title opinion, or on which a party presents its case in a [partition action](./partition-action.md) or a probate proceeding — the reconstruction work is paralegal-tier input to a legal product requiring attorney sign-off, a distinction this section's mission-aligned-markets note treats as a load-bearing constraint on the market rather than a detail.
-A chain-of-title reconstruction is also, structurally, an instance of what this section's [evidentiary credentialing](../../../../../sociology-science-services-section/content/text/glossary/terms/evidentiary-credentialing.md) term describes more generally: a body of underlying fact (here, a family's actual inheritance history) reformatted into the specific documentary form a legal proceeding is built to accept.
+A chain-of-title reconstruction is also, structurally, an instance of what this section's [evidentiary credentialing](evidentiary-credentialing.md) term describes more generally: a body of underlying fact (here, a family's actual inheritance history) reformatted into the specific documentary form a legal proceeding is built to accept.
 
 ## Related terms
 
 - [Heirs' property](./heirs-property.md) — the land-tenure condition whose chain of title is broken or unrecorded
 - [Intestate succession](./intestate-succession.md) — the non-deed transfer event a chain of title must trace through
 - [Partition action](./partition-action.md) — the court proceeding a reconstructed chain of title is typically built to support or contest
-- [Evidentiary credentialing](../../../../../sociology-science-services-section/content/text/glossary/terms/evidentiary-credentialing.md) — the general process of which chain-of-title reconstruction is a specific instance
+- [Evidentiary credentialing](evidentiary-credentialing.md) — the general process of which chain-of-title reconstruction is a specific instance

@@ -23,7 +23,7 @@ requires: investiture
 date-modified: 2026-03-29
 ---
 
-A captain is the person invested with operational command of a [ship](ship.md) — the holder of the ship's command [office](../../../../../services/economics-and-business-science-services-section/services/business-science-services-section/content/text/glossary/terms/office.md), bearing absolute authority aboard within the bounds of the ship's [charter](confederacy.md).
+A captain is the person invested with operational command of a [ship](ship.md) — the holder of the ship's command [office](../../../../../services/economics-and-business-science-services-section/services/business-science-services-section/content/text/glossary/terms/office.md), bearing absolute authority aboard within the bounds of the ship's [charter](../../../../services/sociology-science-services-section/content/text/glossary/terms/confederacy.md).
 The captain's authority is delegated, bounded, and revocable: delegated by the commissioning authority that chartered the ship, bounded by the charter's terms, and revocable by the commissioning authority without dissolving the ship.
 
 The word comes from Late Latin *capitaneus*, from *caput* (head).
@@ -45,7 +45,7 @@ The captain holds three things that together constitute command:
 2. **Accountability upward** — the obligation to answer to the commissioning authority for the ship's conduct and the charter's fulfillment.
   The captain's authority is not sovereign; it is delegated.
   Max Weber's analysis of bureaucratic authority (*Economy and Society*, 1922, Part III) identifies the structural position: the officeholder exercises authority within a defined jurisdiction, subject to review by the appointing authority.
-  The captain commands the ship; the [confederacy](confederacy.md) commands whether there is a ship, and whether this captain commands it.
+  The captain commands the ship; the [confederacy](../../../../services/sociology-science-services-section/content/text/glossary/terms/confederacy.md) commands whether there is a ship, and whether this captain commands it.
 
 3. **Responsibility for the venture** — the duty to prosecute the ship's purpose as declared in the charter.
   The captain is not free to pursue personal aims using the ship's resources and crew.

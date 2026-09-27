@@ -60,7 +60,7 @@ Within visual engineering, Cubism supplies anti-closure. It prevents the [Bauhau
 ## Related schools
 
 - [Bauhaus Pedagogy](./bauhaus-pedagogy.md) — shares the relational emphasis but constructs through composition rather than fragmentation
-- [Brutalism](./brutalism.md) — shares the [refusal](../../../../../../../../social-science-services-section/services/sociology-science-services-section/content/text/glossary/terms/refusal.md) of decorative smoothness but through austerity rather than plurality
+- [Brutalism](./brutalism.md) — shares the [refusal](../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section/services/anarchism-services-section/services/strategy-services-section/content/text/glossary/terms/refusal.md) of decorative smoothness but through austerity rather than plurality
 
 ## See also
 

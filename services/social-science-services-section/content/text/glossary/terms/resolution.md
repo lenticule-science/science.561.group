@@ -19,7 +19,7 @@ Resolution does several kinds of work:
 - **Reveals internal change.** The [character](./character.md) who began the story afraid is now brave — or has learned to live with fear. The resolution shows who the character has become through the events of the story.
 - **Recontextualizes the beginning.** The best resolutions send the reader back to the opening with new understanding. Details that seemed incidental turn out to be significant. The story means something different in retrospect.
 
-Not all stories resolve cleanly. Open endings leave the central conflict unsettled, asking the reader to sit with ambiguity. This is not a failure of craft but a deliberate choice — one that works when the ambiguity is meaningful (the conflict is genuinely unresolvable) and fails when it is evasive (the writer couldn't decide what happens). The [arc](arc.md) of the story should make the ending feel complete even when it is not conclusive.
+Not all stories resolve cleanly. Open endings leave the central conflict unsettled, asking the reader to sit with ambiguity. This is not a failure of craft but a deliberate choice — one that works when the ambiguity is meaningful (the conflict is genuinely unresolvable) and fails when it is evasive (the writer couldn't decide what happens). The [arc](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/fiction-services-section/content/text/glossary/terms/arc.md) of the story should make the ending feel complete even when it is not conclusive.
 
 The resolution's most common failure is rushing. After the climax, the writer feels the story is over and wraps up in a paragraph what deserves a scene. The reader has invested in the characters and wants to see the aftermath — not a summary of it.
 
@@ -27,5 +27,5 @@ The resolution's most common failure is rushing. After the climax, the writer fe
 
 - [plot](plot.md) — the structure whose final phase is the resolution
 - [conflict](conflict.md) — what the resolution settles
-- [arc](arc.md) — the overall shape of change that the resolution completes
+- [arc](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/fiction-services-section/content/text/glossary/terms/arc.md) — the overall shape of change that the resolution completes
 - [tension](tension.md) — resolution is the release of accumulated tension

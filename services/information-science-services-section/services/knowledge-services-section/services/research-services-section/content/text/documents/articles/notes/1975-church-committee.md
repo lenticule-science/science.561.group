@@ -16,7 +16,7 @@ The Church Committee's final reports led to the creation of the Foreign Intellig
 
 ## Related
 
-- [COINTELPRO](../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/content/text/glossary/terms/cointelpro.md)
+- [COINTELPRO](../../../../../../../../../../philosophy-services-section/services/black-philosophy-services-section/services/abolition-services-section/services/state-repression-services-section/content/text/glossary/terms/cointelpro.md)
 - [Surveillance](../../../../../../../../../../philosophy-services-section/services/black-philosophy-services-section/services/abolition-services-section/services/state-repression-services-section/content/text/glossary/terms/surveillance.md)
 - [COINTELPRO begins (1956)](./1956-cointelpro-begins.md)
 - [James Angleton](./james-angleton.md) — CIA counterintelligence chief whose forced resignation was connected to the Church Committee investigations

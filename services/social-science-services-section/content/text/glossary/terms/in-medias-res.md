@@ -14,15 +14,15 @@ In medias res works because it prioritizes engagement over orientation. A story 
 
 The technique creates two structural requirements:
 
-- **Backstory must be delivered later.** The information that a chronological opening would have established upfront must be woven into the narrative through [flashback](flashback.md), dialogue, [interiority](interiority.md), or contextual detail. The challenge is delivering this information without stopping the story's momentum — without the [exposition](exposition.md) dump that in medias res was designed to avoid.
+- **Backstory must be delivered later.** The information that a chronological opening would have established upfront must be woven into the narrative through [flashback](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/fiction-services-section/content/text/glossary/terms/flashback.md), dialogue, [interiority](interiority.md), or contextual detail. The challenge is delivering this information without stopping the story's momentum — without the [exposition](exposition.md) dump that in medias res was designed to avoid.
 - **The opening must be self-sufficient.** The reader doesn't yet know the characters or situation. The opening scene must be compelling on its own terms — vivid enough, strange enough, or tense enough that the reader commits to learning the context rather than demanding it upfront.
 
-In medias res is the default opening strategy in commercial fiction, film, and [copywriting](../../copywriting/index.md) (where the [headline](headline.md) drops the reader into a problem or promise). Literary fiction uses it selectively, sometimes preferring a slower opening that builds atmosphere or establishes [voice](voice.md). The choice depends on what the story needs the reader to feel first: urgency (in medias res) or immersion (chronological opening).
+In medias res is the default opening strategy in commercial fiction, film, and [copywriting](../../copywriting/index.md) (where the [headline](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/copywriting-services-section/content/text/glossary/terms/headline.md) drops the reader into a problem or promise). Literary fiction uses it selectively, sometimes preferring a slower opening that builds atmosphere or establishes [voice](voice.md). The choice depends on what the story needs the reader to feel first: urgency (in medias res) or immersion (chronological opening).
 
 ## Related terms
 
 - [plot](plot.md) — in medias res reorders the plot's chronological sequence
 - [exposition](exposition.md) — must be delivered differently when the story starts in the middle
-- [flashback](flashback.md) — a common tool for filling in backstory after an in medias res opening
+- [flashback](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/fiction-services-section/content/text/glossary/terms/flashback.md) — a common tool for filling in backstory after an in medias res opening
 - [hook](hook.md) — in medias res is one of the strongest hooking techniques
 - [pacing](pacing.md) — in medias res accelerates the opening pace

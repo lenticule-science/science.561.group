@@ -23,7 +23,7 @@ Virginia Held is an American moral and political philosopher who provided the mo
 
 ## Significance for this research
 
-Held's insistence that persons are constituted by relationships aligns with [relational ontology](../../../../../../../../../../philosophy-services-section/content/text/glossary/terms/relational-ontology.md) — the philosophical position that relations are prior to entities. Her critique of the autonomous subject parallels [process philosophy](../../philosophy/disciplines/process-philosophy/index.md)'s rejection of [substance metaphysics](../../../../../../../../../../philosophy-services-section/content/text/glossary/terms/substance-metaphysics.md). Her argument that practice generates moral understanding connects to the broader processual epistemology that this research develops.
+Held's insistence that persons are constituted by relationships aligns with [relational ontology](../../../../../../../../../../philosophy-services-section/services/western-services-section/services/metaphysics-services-section/services/ontology-services-section/content/text/glossary/terms/relational-ontology.md) — the philosophical position that relations are prior to entities. Her critique of the autonomous subject parallels [process philosophy](../../philosophy/disciplines/process-philosophy/index.md)'s rejection of [substance metaphysics](../../../../../../../../../../philosophy-services-section/services/western-services-section/services/metaphysics-services-section/services/process-philosophy-services-section/content/text/glossary/terms/substance-metaphysics.md). Her argument that practice generates moral understanding connects to the broader processual epistemology that this research develops.
 
 ## Notable works
 

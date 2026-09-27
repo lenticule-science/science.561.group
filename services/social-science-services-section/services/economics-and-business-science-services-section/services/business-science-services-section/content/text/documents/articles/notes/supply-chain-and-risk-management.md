@@ -95,7 +95,7 @@ Organize risks by category:
 **Operational risks** — things that disrupt daily functioning:
 - Equipment failure (kitchen equipment, HVAC, POS system)
 - [Supply chain](../../../glossary/terms/supply-chain.md) disruption (supplier outage, delivery failure, ingredient shortage)
-- [Labor](../../sociology/terms/labor.md) shortage (key staff illness, turnover, no-shows)
+- [Labor](../../../../../../../../sociology-science-services-section/content/text/glossary/terms/labor.md) shortage (key staff illness, turnover, no-shows)
 - Facility problems (plumbing, electrical, pest infestation)
 - Food safety incident (contamination, allergen exposure, temperature failure)
 

@@ -59,7 +59,7 @@ The Mutual Aid Disaster Relief current uses a distinct cluster of
 methods to organize disaster work from below. These methods include
 listening to impacted communities, decentralized network mobilization,
 [autonomous direct action](../terms/autonomous-direct-action.md),
-[popular education](../../../../../../../../../../../../education-science-services-section/content/text/glossary/terms/popular-education.md), and the building of
+[popular education](../../../../../../../../../../../../education-science-services-section/services/pedagogy-services-section/content/text/glossary/terms/popular-education.md), and the building of
 [survival programs](../terms/survival-programs.md) that meet urgent
 needs while increasing collective capacity [@madrabout2025;
 @madrprograms2024; @madrprinciples2020].

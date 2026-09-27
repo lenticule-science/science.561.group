@@ -21,7 +21,7 @@ John M. Carroll is an American information scientist and human-computer interact
 - **Minimalism in documentation**: Carroll's research at IBM in the 1980s found that users performed worse with comprehensive manuals than with stripped-down, task-oriented materials. Users don't read manuals front-to-back — they start trying to do things immediately and consult documentation only when stuck. Traditional manuals bury the information users need under introductions and conceptual frameworks that users skip in practice [@carroll1990].
 - **Action-oriented instruction**: documentation should let users start doing meaningful tasks immediately rather than front-loading theory. This aligns with cognitive research showing that people learn better by doing than by reading about doing.
 - **Error recognition and recovery**: users make mistakes. Good documentation anticipates common errors and helps users recover, not just describes the happy path. This was a departure from documentation traditions that presented only ideal workflows.
-- **Iterative, empirical design**: Carroll developed minimalism through iterative [usability testing](../../../../../../../../../../social-science-services-section/content/text/glossary/terms/usability-testing.md) — watching real users fail with documentation, then redesigning and retesting. This empirical approach connects to [Karen Schriver](./karen-schriver.md)'s protocol-aided methods and [Janice Redish](./janice-redish.md)'s usability testing for content.
+- **Iterative, empirical design**: Carroll developed minimalism through iterative [usability testing](../../../../../../../../communication-science-services-section/services/writing-services-section/services/plain-language-services-section/content/text/glossary/terms/usability-testing.md) — watching real users fail with documentation, then redesigning and retesting. This empirical approach connects to [Karen Schriver](./karen-schriver.md)'s protocol-aided methods and [Janice Redish](./janice-redish.md)'s usability testing for content.
 
 ## Notable works
 
@@ -31,6 +31,6 @@ John M. Carroll is an American information scientist and human-computer interact
 ## Related
 
 - [minimalism](../../../../../../../../../../social-science-services-section/content/text/glossary/terms/minimalism.md) — the term entry for Carroll's approach to documentation
-- [usability testing](../../../../../../../../../../social-science-services-section/content/text/glossary/terms/usability-testing.md) — the empirical method Carroll used to develop and validate minimalist documentation
-- [task analysis](../../../../../../../../../../social-science-services-section/content/text/glossary/terms/task-analysis.md) — minimalism organizes documentation around tasks, not system features
+- [usability testing](../../../../../../../../communication-science-services-section/services/writing-services-section/services/plain-language-services-section/content/text/glossary/terms/usability-testing.md) — the empirical method Carroll used to develop and validate minimalist documentation
+- [task analysis](../../../../../../../../communication-science-services-section/services/writing-services-section/services/plain-language-services-section/content/text/glossary/terms/task-analysis.md) — minimalism organizes documentation around tasks, not system features
 - [Janice Redish](./janice-redish.md) — complementary work on usability testing for written content

@@ -29,7 +29,7 @@ Use intuitionistic logic when:
 
 ## The key difference from classical logic
 
-Classical propositional logic assumes the **[law of excluded middle](../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../philosophy-services-section/content/text/glossary/terms/law-of-excluded-middle.md)**: for every proposition $P$, either $P$ or $\neg P$ holds. Intuitionistic logic drops this assumption. A proposition is true when you have a construction (a proof, a witness, an exhibit) that establishes it. A proposition is false when you have a construction showing it leads to contradiction. A proposition for which you have neither is simply undecided — it is not forced into one bin or the other.
+Classical propositional logic assumes the **[law of excluded middle](../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../philosophy-services-section/services/western-services-section/services/analytic-philosophy-services-section/content/text/glossary/terms/law-of-excluded-middle.md)**: for every proposition $P$, either $P$ or $\neg P$ holds. Intuitionistic logic drops this assumption. A proposition is true when you have a construction (a proof, a witness, an exhibit) that establishes it. A proposition is false when you have a construction showing it leads to contradiction. A proposition for which you have neither is simply undecided — it is not forced into one bin or the other.
 
 This is not a restriction for the sake of austerity. It reflects the structure of situations where knowledge is partial: the meaning of a [sign](../../../../linguistics/topics/semiotics/terms/sign.md) may be underdetermined; a measurement may be inconclusive; a claim may have evidence for it without that evidence being decisive. Intuitionistic logic gives these situations a formal language.
 
@@ -43,15 +43,15 @@ The [Brouwer](../../../../../../../../../../../../../../../../../../../../../../
 - A proof of $\neg A$ is a method that transforms any proof of $A$ into a proof of $\bot$ (absurdity).
 - There is no proof of $\bot$.
 
-Under this reading, $A \vee \neg A$ requires that you can either prove $A$ or derive a contradiction from $A$. For many propositions, you can do neither, so [excluded middle](../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../philosophy-services-section/content/text/glossary/terms/law-of-excluded-middle.md) fails.
+Under this reading, $A \vee \neg A$ requires that you can either prove $A$ or derive a contradiction from $A$. For many propositions, you can do neither, so [excluded middle](../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../philosophy-services-section/services/western-services-section/services/analytic-philosophy-services-section/content/text/glossary/terms/law-of-excluded-middle.md) fails.
 
-## What changes without [excluded middle](../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../philosophy-services-section/content/text/glossary/terms/law-of-excluded-middle.md)
+## What changes without [excluded middle](../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../philosophy-services-section/services/western-services-section/services/analytic-philosophy-services-section/content/text/glossary/terms/law-of-excluded-middle.md)
 
 Several classically valid principles become unavailable:
 
 | Principle | Classical | Intuitionistic |
 |-----------|-----------|----------------|
-| $A \vee \neg A$ ([excluded middle](../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../philosophy-services-section/content/text/glossary/terms/law-of-excluded-middle.md)) | valid | not generally valid |
+| $A \vee \neg A$ ([excluded middle](../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../philosophy-services-section/services/western-services-section/services/analytic-philosophy-services-section/content/text/glossary/terms/law-of-excluded-middle.md)) | valid | not generally valid |
 | $\neg\neg A \Rightarrow A$ (double negation elimination) | valid | not generally valid |
 | $(\neg B \Rightarrow \neg A) \Rightarrow (A \Rightarrow B)$ (contraposition, strong form) | valid | not generally valid |
 | $(A \Rightarrow B) \vee (B \Rightarrow A)$ (linearity) | valid | not generally valid |
@@ -76,7 +76,7 @@ The forcing relation $w \Vdash A$ is defined inductively:
 - $w \Vdash A \Rightarrow B$ iff for every $w' \geq w$, if $w' \Vdash A$ then $w' \Vdash B$.
 - $w \Vdash \neg A$ iff for every $w' \geq w$, $w' \nVdash A$.
 
-Notice: [excluded middle](../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../philosophy-services-section/content/text/glossary/terms/law-of-excluded-middle.md) fails because there may be a world $w$ where $A$ does not yet hold, but some extension of $w$ makes $A$ true — so $\neg A$ does not hold at $w$ either.
+Notice: [excluded middle](../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../philosophy-services-section/services/western-services-section/services/analytic-philosophy-services-section/content/text/glossary/terms/law-of-excluded-middle.md) fails because there may be a world $w$ where $A$ does not yet hold, but some extension of $w$ makes $A$ true — so $\neg A$ does not hold at $w$ either.
 
 ## The algebraic connection
 
@@ -103,5 +103,5 @@ At $w_0$, neither $p$ nor $\neg p$ is forced. Excluded middle fails. The [Heytin
 
 - A set of atomic propositions.
 - Connectives $\wedge, \vee, \Rightarrow, \neg$ with BHK reading.
-- An inference system (e.g. natural deduction for intuitionistic logic) that lacks [excluded middle](../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../philosophy-services-section/content/text/glossary/terms/law-of-excluded-middle.md) and double negation elimination.
+- An inference system (e.g. natural deduction for intuitionistic logic) that lacks [excluded middle](../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../philosophy-services-section/services/western-services-section/services/analytic-philosophy-services-section/content/text/glossary/terms/law-of-excluded-middle.md) and double negation elimination.
 

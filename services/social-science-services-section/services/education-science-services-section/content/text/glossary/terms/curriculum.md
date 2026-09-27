@@ -32,6 +32,6 @@ The plural form "curricula" (Latin) is used in this vault alongside the angliciz
 
 ## Related terms
 
-- [banking model](./banking-model.md) -- the pedagogical approach that curricula in this vault are designed to avoid
-- [dialogic education](./dialogic-education.md) -- the participatory approach that informs curriculum design here
-- [conscientization](./conscientization.md) -- the critical awareness that well-designed curricula can support
+- [banking model](../../../../services/pedagogy-services-section/content/text/glossary/terms/banking-model.md) -- the pedagogical approach that curricula in this vault are designed to avoid
+- [dialogic education](../../../../services/pedagogy-services-section/content/text/glossary/terms/dialogic-education.md) -- the participatory approach that informs curriculum design here
+- [conscientization](../../../../services/pedagogy-services-section/content/text/glossary/terms/conscientization.md) -- the critical awareness that well-designed curricula can support

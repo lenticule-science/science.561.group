@@ -40,7 +40,7 @@ The Official Style is not a deliberate choice. It is the default register of ins
 
 ## The Paramedic Method
 
-Lanham's [Paramedic Method](../../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/paramedic-method.md) is a systematic procedure for revising Official Style prose [@lanham2006]:
+Lanham's [Paramedic Method](../../../../../../plain-language-services-section/content/text/glossary/terms/paramedic-method.md) is a systematic procedure for revising Official Style prose [@lanham2006]:
 
 1. **Circle the prepositions.** Count them. More than two per sentence is a warning sign.
 2. **Circle the "is/was/are/were" forms.** These "to be" verbs often indicate that the real action is hiding somewhere else.
@@ -96,9 +96,9 @@ The solution is not to choose clarity over precision or precision over clarity. 
 
 ## Related terms
 
-- [Paramedic Method](../../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/paramedic-method.md)
+- [Paramedic Method](../../../../../../plain-language-services-section/content/text/glossary/terms/paramedic-method.md)
 - [Official Style](../../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/official-style.md)
-- [revision](../../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/revision.md)
+- [revision](../../../../../../essay-writing-services-section/content/text/glossary/terms/revision.md)
 - [voice](../../../../../../rhetoric-and-composition-services-section/content/text/glossary/terms/voice.md)
 - [style](../../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/style.md)
-- [cognitive load](../../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/cognitive-load.md)
+- [cognitive load](../../../../../../plain-language-services-section/content/text/glossary/terms/cognitive-load.md)

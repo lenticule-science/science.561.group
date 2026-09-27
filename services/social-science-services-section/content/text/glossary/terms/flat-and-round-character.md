@@ -20,11 +20,11 @@ Forster's distinction is descriptive, not evaluative — flat characters are not
 
 A related distinction is **static** vs. **dynamic**: a static character is the same at the end of the story as at the beginning; a dynamic character has changed. Flat characters are usually static (their single trait persists). Round characters can be either static or dynamic — a character can be deeply complex and still refuse to change, which may be the story's point.
 
-The mistake is making every character round. A novel where every minor figure has a detailed inner life and a personal [arc](arc.md) loses focus — the reader can't tell whose story matters. The craft is distributing depth appropriately: round treatment for the characters whose inner lives drive the narrative, flat treatment for those who serve other functions.
+The mistake is making every character round. A novel where every minor figure has a detailed inner life and a personal [arc](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/fiction-services-section/content/text/glossary/terms/arc.md) loses focus — the reader can't tell whose story matters. The craft is distributing depth appropriately: round treatment for the characters whose inner lives drive the narrative, flat treatment for those who serve other functions.
 
 ## Related terms
 
 - [character](./character.md) — the broader concept that flat/round specifies
 - [protagonist](protagonist.md) — almost always a round character
-- [arc](arc.md) — round characters may have arcs; flat characters typically don't
+- [arc](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/fiction-services-section/content/text/glossary/terms/arc.md) — round characters may have arcs; flat characters typically don't
 - [interiority](interiority.md) — round characters are typically given interiority; flat characters typically aren't

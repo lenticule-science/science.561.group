@@ -14,7 +14,7 @@ description: "Analysis of how the intelligence system's rendering of Iran as a l
 
 ## 1. The legibility thesis
 
-[Intelligence as legibility](../../../../../../../content/text/glossary/terms/intelligence-as-legibility.md) argues that the intelligence system operates as an apparatus of [legibility](../../../../../../../../../../../../../../../../philosophy-services-section/services/black-philosophy-services-section/services/abolition-services-section/services/state-repression-services-section/content/text/glossary/terms/legibility.md) in James C. Scott's sense: it renders the adversary into categories that make action possible — target coordinates, order of battle, leadership networks, capability assessments — while destroying the situated, relational, informal knowledge that the legible representation cannot encode. The 2026 Iran war is a case study in both the power and the cost of this operation.
+[Intelligence as legibility](../../../../../../../content/text/glossary/terms/intelligence-as-legibility.md) argues that the intelligence system operates as an apparatus of [legibility](../../../../../../../../../../philosophy-services-section/services/black-philosophy-services-section/services/abolition-services-section/services/state-repression-services-section/content/text/glossary/terms/legibility.md) in James C. Scott's sense: it renders the adversary into categories that make action possible — target coordinates, order of battle, leadership networks, capability assessments — while destroying the situated, relational, informal knowledge that the legible representation cannot encode. The 2026 Iran war is a case study in both the power and the cost of this operation.
 
 ## 2. What legibility achieved
 
@@ -69,6 +69,6 @@ The legibility framework does not argue that the intelligence system should have
 ## Related concepts
 
 - [Intelligence as legibility](../../../../../../../content/text/glossary/terms/intelligence-as-legibility.md) — the framework this analysis applies
-- [Legibility](../../../../../../../../../../../../../../../../philosophy-services-section/services/black-philosophy-services-section/services/abolition-services-section/services/state-repression-services-section/content/text/glossary/terms/legibility.md) — Scott's original concept
+- [Legibility](../../../../../../../../../../philosophy-services-section/services/black-philosophy-services-section/services/abolition-services-section/services/state-repression-services-section/content/text/glossary/terms/legibility.md) — Scott's original concept
 - [Strategic culture analysis](../../../../../../../content/text/glossary/terms/strategic-culture-analysis.md) — the partial correction for legibility's blind spots
 - [Pattern-of-life](../../../../../../../content/text/glossary/terms/pattern-of-life.md) — a technology of individual-level legibility

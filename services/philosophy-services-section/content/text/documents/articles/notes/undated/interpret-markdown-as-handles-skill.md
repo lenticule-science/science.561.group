@@ -7,7 +7,7 @@ title: interpret-markdown-as-handles
 
 # Interpret Markdown as Handles
 
-- Choose the markdown unit to treat as a [handle](../../research/2026/07/31/lenticule-import/library/philosophy/relationality/archive/domains/universes/semiotic-universe/domains/interactive-semioverse/terms/handle.md) (document, section, or heading).
+- Choose the markdown unit to treat as a [handle](../../../../../../services/relationality-services-section/services/interactive-semioverse-services-section/content/text/glossary/terms/handle.md) (document, section, or heading).
 - Assign each handle a stable identifier and a seed element in the semantic domain.
 - Record how frontmatter fields map into semantic seeds (title, tags, dependencies).
 - Note which fields are treated as [interaction surfaces](../../../../../../services/relationality-services-section/services/interactive-semioverse-services-section/content/text/glossary/terms/interaction-surface.md) versus static metadata.

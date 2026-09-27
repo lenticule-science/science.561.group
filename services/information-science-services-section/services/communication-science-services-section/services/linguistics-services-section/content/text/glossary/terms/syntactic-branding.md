@@ -9,6 +9,7 @@ keywords:
 description: "A style of speaking that aligns the speaker with a specific affective register and demographic code, reinforced by algorithmic feedback loops."
 date-updated: 2026-03-09
 part-of: relationality/disciplines/cybernetic-postliberalism/disciplines/linguistics/terms
+introduces: term - "syntactic branding"
 ---
 
 
@@ -18,4 +19,4 @@ What distinguishes syntactic branding from ordinary stylistic variation is the r
 
 The process collapses the distinction between style and format. A style, in emsenn's usage, emerges from a speaker's relationship to a language, a community, and a situation. A format is a repeatable template that can be adopted without any of those relationships. Syntactic branding converts the former into the latter. The speaker is not drawing on a living tradition; they are performing a version of speech that the platform has identified as engaging.
 
-emsenn connects syntactic branding to the broader dynamics of [meme grammar](./meme-grammar.md) and [linguistic extraction](./linguistic-extraction.md). The grammatical forms that syntactic branding circulates are often extracted forms — structures taken from AAVE, creoles, or other living traditions, stripped of relational context, and repackaged as engagement signals. The speaker who adopts these forms may not recognize the extraction, because the platform presents them as native features of digital communication rather than as borrowed material.
+emsenn connects syntactic branding to the broader dynamics of [meme grammar](./meme-grammar.md) and [linguistic extraction](linguistic-extraction.md). The grammatical forms that syntactic branding circulates are often extracted forms — structures taken from AAVE, creoles, or other living traditions, stripped of relational context, and repackaged as engagement signals. The speaker who adopts these forms may not recognize the extraction, because the platform presents them as native features of digital communication rather than as borrowed material.

@@ -28,7 +28,7 @@ The sociological interest lies in how administrative law operates as a mode of [
 
 ## Related
 
-- [Rule of law](./rule-of-law.md) — the principle administrative law claims to serve
-- [Sovereignty](./sovereignty.md) — the authority that agencies exercise by delegation
+- [Rule of law](../../../../../law-science-services-section/content/text/glossary/terms/rule-of-law.md) — the principle administrative law claims to serve
+- [Sovereignty](../../../../../law-science-services-section/content/text/glossary/terms/sovereignty.md) — the authority that agencies exercise by delegation
 - [Judicial review](../../../../../../content/text/glossary/terms/judicial-review.md) — the mechanism courts use to check agency action
-- [Legitimacy](./legitimacy.md) — the contested democratic legitimacy of agency rulemaking
+- [Legitimacy](../../../../services/critical-theory-science-services-section/services/anarchism-services-section/content/text/glossary/terms/legitimacy.md) — the contested democratic legitimacy of agency rulemaking

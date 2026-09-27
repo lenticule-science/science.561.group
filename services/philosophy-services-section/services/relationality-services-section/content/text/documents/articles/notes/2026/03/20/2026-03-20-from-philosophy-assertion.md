@@ -75,7 +75,7 @@ An *insincere* assertion satisfies the surface form without the conditions — i
 |---|---|---|
 | **Assertion** | $p \in H_t$ | $S$ is committed to $p$'s truth; $A$ is invited to update |
 | **[Commitment](2026-03-20-from-philosophy-commitment.md)** | $\varphi \in H^*_t$ | $S$ is obligated to perform $\varphi$; already execution-settled |
-| **Declaration** ([StatusFunctionDeclaration](../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/status-function-declaration.md)) | institutional fact | $p$ is constituted as true by the act of saying so |
+| **Declaration** ([StatusFunctionDeclaration](../../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/content/text/glossary/terms/status-function-declaration.md)) | institutional fact | $p$ is constituted as true by the act of saying so |
 | **[Report](../../../../../../../../services/agency-services-section/content/text/glossary/terms/report.md)** | findings differential | author is accountable for accuracy; recipient is the designated uptake |
 
 The key distinction: an assertion claims truth; a declaration *creates* truth (within an institutional context).

@@ -75,5 +75,5 @@ Separating capability from work-type fixed both: a `procedure` task with `requir
 - [skill](./skills.md) — named operational primitive that enables one or more capabilities
 - [role](./role.md) — organizational position grouping capabilities
 - [work-type](./work.md) — settlement classification of work
-- [duty](duty.md) — Hohfeldian obligation; capabilities are what makes discharging duties feasible
+- [duty](../../../../services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/content/text/glossary/terms/duty.md) — Hohfeldian obligation; capabilities are what makes discharging duties feasible
 - [Capability Dictionary](../../../../../../../lib/legacy/2026-07-31-lenticule-science-corpus/animating/content/becoming/doing/working/governing/content/individual/content/agent/actuating/content/actuator/embodying/content/body/integrating/content/drone/swarming/content/swarm/content/social/_archive/relationality-repo/sociology/theories/work/texts/capability-dictionary.md) — the controlled vocabulary of capabilities used in operations

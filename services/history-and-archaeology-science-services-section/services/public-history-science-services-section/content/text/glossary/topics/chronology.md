@@ -233,7 +233,7 @@ The Parsley Massacre (Spanish: El Corte "the cutting"; Creole: kout kouto-a "the
 
  The massacre was carried out by the Dominican Army on the orders of Dominican dictator Rafael Trujillo, who initiated the violence with this statement, given on Oct. 2nd, 1937:
 
- "To the Dominicans who were complaining of the depredations by Haitians living among them, thefts of cattle, provisions, fruits, etc., and were thus prevented from enjoying in peace the products of their [labor](../../sociology/terms/labor.md), I have responded, \'I will fix this.\' And we have already begun to remedy the situation. Three hundred Haitians are now dead in Bánica. This remedy will continue."
+ "To the Dominicans who were complaining of the depredations by Haitians living among them, thefts of cattle, provisions, fruits, etc., and were thus prevented from enjoying in peace the products of their [labor](../../../../../../../social-science-services-section/services/sociology-science-services-section/content/text/glossary/terms/labor.md), I have responded, \'I will fix this.\' And we have already begun to remedy the situation. Three hundred Haitians are now dead in Bánica. This remedy will continue."
 
  In the following week, hundreds of Dominican troops poured into the region, killing Haitians with rifles, machetes, shovels, knives, and bayonets. Haitian children were reportedly thrown in the air and caught by soldiers\' bayonets, then thrown on their mothers\' corpses. Others were drowned in the sea, making identification and counting of the dead impossible.
 
@@ -268,7 +268,7 @@ aliases:
   - "COINTELPRO begins"
 ---
 
-In August 1956, FBI Director J. Edgar Hoover authorized COINTELPRO-CPUSA, the first of what would become a series of covert [counterintelligence programs](../../../../../../../social-science-services-section/services/sociology-science-services-section/content/text/glossary/terms/cointelpro.md) targeting domestic political organizations. The initial program targeted the Communist Party USA; subsequent programs expanded to the Socialist Workers Party (1961), white supremacist groups (1964), Black nationalist organizations including the Black Panther Party (1967), and the "New Left" including the anti-war movement (1968).
+In August 1956, FBI Director J. Edgar Hoover authorized COINTELPRO-CPUSA, the first of what would become a series of covert [counterintelligence programs](../../../../../../../philosophy-services-section/services/black-philosophy-services-section/services/abolition-services-section/services/state-repression-services-section/content/text/glossary/terms/cointelpro.md) targeting domestic political organizations. The initial program targeted the Communist Party USA; subsequent programs expanded to the Socialist Workers Party (1961), white supremacist groups (1964), Black nationalist organizations including the Black Panther Party (1967), and the "New Left" including the anti-war movement (1968).
 
 The programs operated covertly until 1971, when the Citizens' Commission to Investigate the FBI broke into the FBI's field office in Media, Pennsylvania and released internal documents to journalists. The full scope of the programs was subsequently documented by the [Church Committee](../../../../../../../information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/1975-church-committee.md) (1975–1976).
 
@@ -374,7 +374,7 @@ The Church Committee's final reports led to the creation of the Foreign Intellig
 
 ## Related
 
-- [COINTELPRO](../../../../../../../social-science-services-section/services/sociology-science-services-section/content/text/glossary/terms/cointelpro.md)
+- [COINTELPRO](../../../../../../../philosophy-services-section/services/black-philosophy-services-section/services/abolition-services-section/services/state-repression-services-section/content/text/glossary/terms/cointelpro.md)
 - [Surveillance](/sociology/terms/surveillance.md)
 - [COINTELPRO begins (1956)](../../../../../../../information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/1956-cointelpro-begins.md)
 - [James Angleton](/general/people/james-angleton.md) — CIA counterintelligence chief whose forced resignation was connected to the Church Committee investigations

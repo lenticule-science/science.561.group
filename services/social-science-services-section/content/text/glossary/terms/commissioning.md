@@ -11,7 +11,7 @@ date-created: 2026-04-01
 
 Commissioning is the act by which an authority constitutes a vessel for a purpose.
 A navy commissions a warship — the hull goes from being a construction project to being a ship in service, with a captain, a crew, and a mission.
-A [confederacy](confederacy.md) commissions a ship by issuing a [charter](./charter.md) — the vessel goes from being a container to being a ship with an [endeavor](endeavor.md).
+A [confederacy](../../../../services/sociology-science-services-section/content/text/glossary/terms/confederacy.md) commissions a ship by issuing a [charter](../../../../services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/content/text/glossary/terms/charter.md) — the vessel goes from being a container to being a ship with an [endeavor](endeavor.md).
 
 Commissioning is a constitutive speech act.
 Before commissioning, there is a vessel (a structure capable of holding things) and an authority (a group with the standing to purpose it).
@@ -28,7 +28,7 @@ Commissioning performs three acts simultaneously:
   A charter installed by commissioning is a constitutive document.
 
 2. **Names the captain.** The commissioning authority designates who commands.
-  This is the [investiture](investiture.md) of the [captain](captain.md) — the formal act that creates command authority.
+  This is the [investiture](../../../../services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/content/text/glossary/terms/investiture.md) of the [captain](captain.md) — the formal act that creates command authority.
   The captain's authority flows from the commissioning, not from personal qualities or consent of the crew.
 
 3. **Constitutes the mandate.** The commissioning creates the authorization under which the [crew](../../../../services/political-science-services-section/services/military-science-services-section/content/text/glossary/terms/crew.md) operates.
@@ -43,7 +43,7 @@ A captain delegates watch authority to a duty officer (the ship already exists).
 A confederacy commissions a ship (the ship comes into institutional existence through the act).
 Delegation is intra-structural; commissioning is constitutive.
 
-**From [investiture](investiture.md).** Investiture installs a person into an existing [office](../../../../../services/economics-and-business-science-services-section/services/business-science-services-section/content/text/glossary/terms/office.md).
+**From [investiture](../../../../services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/content/text/glossary/terms/investiture.md).** Investiture installs a person into an existing [office](../../../../../services/economics-and-business-science-services-section/services/business-science-services-section/content/text/glossary/terms/office.md).
 Commissioning creates the office, the vessel, and the mandate all at once.
 When a new captain is installed on an already-commissioned ship, that is investiture.
 When the ship is first constituted for service, that is commissioning.
@@ -58,7 +58,7 @@ In admiralty: a charter party is a contract; commissioning is the ceremony that 
 
 Not just anyone can commission.
 The act requires standing — the authority to constitute institutional reality.
-A [confederacy](confederacy.md) has standing to commission ships because its member groups have delegated upward the authority to coordinate action.
+A [confederacy](../../../../services/sociology-science-services-section/content/text/glossary/terms/confederacy.md) has standing to commission ships because its member groups have delegated upward the authority to coordinate action.
 A [sovereign](sovereignty.md) has standing because sovereignty includes the power to constitute institutions.
 A private party can commission a venture (chartering a merchant ship) because the legal system recognizes their standing to contract.
 

@@ -31,7 +31,7 @@ E-commerce is the sale of products or services through the web. The buyer browse
 
 In e-commerce, the web is the storefront. Revenue comes from selling goods at a markup over cost. The website displays the product, processes the payment, and coordinates fulfillment.
 
-The unit economics of e-commerce center on three numbers: **average order value** (AOV), **cost of goods sold** (COGS), and **customer acquisition cost** (CAC). A clothing brand selling a $60 shirt with $20 in COGS and $15 in customer acquisition cost earns $25 gross profit per order. If the customer buys twice, [LTV](customer-lifetime-value.md) is $50 gross profit on $30 in acquisition cost — viable. If the customer buys once and never returns, LTV is $25 on $15 in acquisition — thinner, but still positive.
+The unit economics of e-commerce center on three numbers: **average order value** (AOV), **cost of goods sold** (COGS), and **customer acquisition cost** (CAC). A clothing brand selling a $60 shirt with $20 in COGS and $15 in customer acquisition cost earns $25 gross profit per order. If the customer buys twice, [LTV](../../../../../../../economics-and-business-science-services-section/services/business-science-services-section/content/text/glossary/terms/customer-lifetime-value.md) is $50 gross profit on $30 in acquisition cost — viable. If the customer buys once and never returns, LTV is $25 on $15 in acquisition — thinner, but still positive.
 
 E-commerce businesses acquire customers through four channels:
 
@@ -39,7 +39,7 @@ E-commerce businesses acquire customers through four channels:
 
 **[Organic search](./organic-traffic.md).** E-commerce sites rank for product-related queries ("best running shoes for flat feet," "ceramic plant pots") through product page optimization, category page SEO, and [content marketing](../../../../../../../../content/text/glossary/terms/content-marketing.md) (buying guides, how-to articles that link to products). Organic acquisition is free per click but slow to build and dependent on Google.
 
-**Marketplaces.** Selling through Amazon, Etsy, eBay, or Walmart Marketplace gives access to the marketplace's existing traffic. The tradeoff: the marketplace takes 8-45% of the sale price (depending on category and platform) and controls the customer relationship. The seller gets volume but not ownership of the customer data or the ability to build [brand](brand.md) recognition.
+**Marketplaces.** Selling through Amazon, Etsy, eBay, or Walmart Marketplace gives access to the marketplace's existing traffic. The tradeoff: the marketplace takes 8-45% of the sale price (depending on category and platform) and controls the customer relationship. The seller gets volume but not ownership of the customer data or the ability to build [brand](../../../../../../../economics-and-business-science-services-section/services/business-science-services-section/content/text/glossary/terms/brand.md) recognition.
 
 **Email and retention.** Once a customer has purchased, the [email list](./email-list.md) becomes the primary channel for repeat sales. Post-purchase email sequences (order confirmation → product care tips → related product recommendations → seasonal promotions) drive 20-40% of revenue for mature e-commerce businesses. The email list converts the one-time buyer into a repeat customer, which is where e-commerce margin lives: repeat customers cost nothing to acquire.
 

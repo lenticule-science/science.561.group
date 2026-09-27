@@ -25,4 +25,4 @@ The danger of analogy is overextension. Every analogy breaks down at some point 
 
 - [imagery](./imagery.md) — analogy works through concrete, sensory comparison
 - [exposition](./exposition.md) — analogy is a tool for exposition, making complex ideas accessible
-- [cognitive load](./cognitive-load.md) — analogy reduces cognitive load by connecting new concepts to existing knowledge
+- [cognitive load](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/plain-language-services-section/content/text/glossary/terms/cognitive-load.md) — analogy reduces cognitive load by connecting new concepts to existing knowledge

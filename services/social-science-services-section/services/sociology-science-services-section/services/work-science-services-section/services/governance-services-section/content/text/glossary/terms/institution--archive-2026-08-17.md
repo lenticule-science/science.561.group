@@ -87,7 +87,7 @@ A [Vessel](../../../../../../../../../../../philosophy-services-section/content/
 
 ## Relation to normative system
 
-A [NormativeSystem](../../../../../../../../../../content/text/glossary/terms/normative-system.md) is the computationally precise formalization of an institution. Where the institution is defined by constitutive rules and collective acceptance, a normative system is defined by a formal tuple with explicit roles, scenes, and deontic constraints. Every institution can be approximated as a normative system; not every normative system captures the reconstitutive downward causation that Hodgson identifies in mature institutions.
+A [NormativeSystem](normative-system.md) is the computationally precise formalization of an institution. Where the institution is defined by constitutive rules and collective acceptance, a normative system is defined by a formal tuple with explicit roles, scenes, and deontic constraints. Every institution can be approximated as a normative system; not every normative system captures the reconstitutive downward causation that Hodgson identifies in mature institutions.
 
 ## Institution vs. enterprise vs. substrate
 

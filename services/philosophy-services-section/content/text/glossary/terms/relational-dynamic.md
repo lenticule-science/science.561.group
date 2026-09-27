@@ -7,4 +7,4 @@ visibility: public
 type: dynamic
 ---
 
-A ***relational dynamic*** is a [dynamic](../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/dynamic.md) within a [relational field](relational-field.md).
+A ***relational dynamic*** is a [dynamic](../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/dynamic.md) within a [relational field](../../../../services/relationality-services-section/content/text/glossary/terms/relational-field.md).

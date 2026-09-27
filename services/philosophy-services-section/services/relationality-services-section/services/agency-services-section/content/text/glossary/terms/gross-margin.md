@@ -17,7 +17,7 @@ derives-from: record
 ---
 
 Gross margin is gross profit divided by revenue, expressed as a percentage.
-If a restaurant generates \$50,000 in monthly revenue and spends \$17,500 on food and direct [labor](../../documents/articles/research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/content/individual/content/agent/endeavoring/content/endeavor/organizing/content/organization/resourcing/content/resource/recording/content/record/accounting/sociology/terms/labor.md) (cost of goods sold), gross profit is \$32,500 and gross margin is 65%.
+If a restaurant generates \$50,000 in monthly revenue and spends \$17,500 on food and direct [labor](../../../../../../../../../social-science-services-section/services/sociology-science-services-section/content/text/glossary/terms/labor.md) (cost of goods sold), gross profit is \$32,500 and gross margin is 65%.
 
 Gross margin reveals how efficiently the business converts inputs into revenue.
 A 65% gross margin means \$0.65 of every revenue dollar is available to cover operating expenses (rent, utilities, salaries, marketing) and produce profit.

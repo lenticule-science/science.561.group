@@ -14,10 +14,10 @@ Imperialism is the extension of a state's power over other territories and peopl
 A country doesn't need to plant a flag and install a governor to exercise imperial power — it can control another country's economy through debt, shape its politics through coups and military aid, or subordinate its culture through media and institutional influence.
 The defining feature is asymmetric power: one state shapes the conditions of life in another, extracting wealth or strategic advantage while bearing few of the costs.
 
-Vladimir Lenin argued in 1916 that imperialism was not an incidental policy choice but a structural necessity of advanced [capitalism](../../../../services/sociology-science-services-section/content/text/glossary/terms/capitalism.md).
+Vladimir Lenin argued in 1916 that imperialism was not an incidental policy choice but a structural necessity of advanced [capitalism](../../../../services/sociology-science-services-section/services/critical-theory-science-services-section/services/anarchism-services-section/content/text/glossary/terms/capitalism.md).
 As domestic markets saturated and the rate of profit fell, capital required new territories for investment, new sources of raw materials, and new populations to exploit.
-European colonial empires, on this analysis, were not historical accidents but the geographical expression of [capitalism](../../../../services/sociology-science-services-section/content/text/glossary/terms/capitalism.md)'s need to expand.
-This framework connects imperialism to [capitalism](../../../../services/sociology-science-services-section/content/text/glossary/terms/capitalism.md) at the structural level: the system requires an outside to exploit, and imperialism is the mechanism that creates and maintains that outside.
+European colonial empires, on this analysis, were not historical accidents but the geographical expression of [capitalism](../../../../services/sociology-science-services-section/services/critical-theory-science-services-section/services/anarchism-services-section/content/text/glossary/terms/capitalism.md)'s need to expand.
+This framework connects imperialism to [capitalism](../../../../services/sociology-science-services-section/services/critical-theory-science-services-section/services/anarchism-services-section/content/text/glossary/terms/capitalism.md) at the structural level: the system requires an outside to exploit, and imperialism is the mechanism that creates and maintains that outside.
 
 Imperialism didn't end with [decolonization](./decolonization.md).
 After formal colonial rule receded in the mid-20th Century, imperial power continued through new mechanisms.
@@ -28,13 +28,13 @@ This is what critics call [neoliberal](neoliberalism.md) imperialism: domination
 
 [Colonialism](./colonialism.md) and imperialism overlap but aren't identical.
 Colonialism involves direct political control over a territory; imperialism can operate without it.
-The United States exercises imperial power across the globe — through military bases, trade agreements, dollar [hegemony](./hegemony.md), and institutional influence — without formally colonizing most of the territories it dominates.
+The United States exercises imperial power across the globe — through military bases, trade agreements, dollar [hegemony](../../../../services/sociology-science-services-section/services/critical-theory-science-services-section/services/marxism-services-section/services/gramscian-services-section/content/text/glossary/terms/hegemony.md), and institutional influence — without formally colonizing most of the territories it dominates.
 Recognizing this distinction helps identify imperial dynamics where the colonial framework doesn't apply, and avoids treating imperialism as a finished chapter rather than an ongoing structure.
 
 ## Related terms
 
 - [colonialism](./colonialism.md) — direct political control over another people's territory, one form imperialism takes
-- [capitalism](../../../../services/sociology-science-services-section/content/text/glossary/terms/capitalism.md) — the economic system whose expansion drives imperial dynamics
+- [capitalism](../../../../services/sociology-science-services-section/services/critical-theory-science-services-section/services/anarchism-services-section/content/text/glossary/terms/capitalism.md) — the economic system whose expansion drives imperial dynamics
 - [neoliberalism](neoliberalism.md) — the contemporary framework through which imperial power operates via markets and debt
 - [primitive-accumulation](../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/notes/undated/primitive-accumulation.md) — the ongoing dispossession that imperialism facilitates globally
 - [settler-colonialism](../topics/settler-colonialism/index.md) — imperialism that aims at permanent territorial replacement

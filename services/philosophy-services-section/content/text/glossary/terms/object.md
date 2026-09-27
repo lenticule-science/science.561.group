@@ -33,8 +33,8 @@ An object is a [[thing]] that exists as [[matter|physical matter]] in the [[mate
 
 ## Related
 
-- [Relational entity](relational-entity.md) — what occupies subject and object positions.
-- [Relational ontology](relational-ontology.md) — the framework's commitment.
+- [Relational entity](../../../../services/relationality-services-section/content/text/glossary/terms/relational-entity.md) — what occupies subject and object positions.
+- [Relational ontology](../../../../services/western-services-section/services/metaphysics-services-section/services/ontology-services-section/content/text/glossary/terms/relational-ontology.md) — the framework's commitment.
 
 In the [relationality](../_index.md) framework, **object** names a position in a directed act of [relating](relating.md): the relatum *toward which* the predicate runs. With [subject](subject.md), the object completes the directed triadic structure of relating. What makes the object an object — rather than the subject — is the directionality of the relating: the predicate is asserted *of* the subject *in relation to* the object.
 

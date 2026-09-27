@@ -30,7 +30,7 @@ Spillers is foundational for the [black-radical-tradition](../theories/humanitie
 - [Saidiya Hartman](saidiya-hartman.md) — extends Spillers's analysis into the afterlife of slavery
 - [Sylvia Wynter](sylvia-wynter.md) — parallel analysis of how dominant categories produce human and non-human
 - [Fred Moten](fred-moten.md) — develops Black radical tradition from Spillers's foundations
-- [Frantz Fanon](frantz-fanon.md) — parallel [phenomenology](../../../../../services/philosophy-services-section/content/text/glossary/terms/phenomenology.md) of racialized embodiment
+- [Frantz Fanon](frantz-fanon.md) — parallel [phenomenology](../../../../../services/philosophy-services-section/services/western-services-section/services/continental-services-section/services/phenomenology-services-section/content/text/glossary/terms/phenomenology.md) of racialized embodiment
 - [C. Riley Snorton](../../../../../services/information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/c-riley-snorton.md) — extends the body/flesh distinction into trans studies and the co-constitution of Blackness and transness
 
 Hortense Spillers is a literary theorist and critic whose work examines the relationship between language, race, and embodiment in American culture. She is Gertrude Conaway Vanderbilt Professor Emerita at Vanderbilt University. Her essay "Mama's Baby, Papa's Maybe: An American Grammar Book" (1987) is one of the most influential texts in Black feminist theory.

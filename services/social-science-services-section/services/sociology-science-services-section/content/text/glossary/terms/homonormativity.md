@@ -25,4 +25,4 @@ Homonormativity is the [recuperation](recuperation.md) of queer politics. Where 
 
 ## Related
 
-- [Heteronormativity](./heteronormativity.md) — the normative framework homonormativity upholds
+- [Heteronormativity](../../../../services/critical-theory-science-services-section/services/queer-services-section/content/text/glossary/terms/heteronormativity.md) — the normative framework homonormativity upholds

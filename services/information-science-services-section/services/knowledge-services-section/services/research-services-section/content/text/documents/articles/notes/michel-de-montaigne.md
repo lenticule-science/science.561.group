@@ -29,5 +29,5 @@ Michel de Montaigne (1533–1592) was a French writer who invented the essay for
 
 - [essay](../../../glossary/terms/essay.md) — the form Montaigne invented
 - [essay writing](../../writing/disciplines/essay-writing/index.md) — the discipline that descends from Montaigne's practice
-- [freewriting](../../../../../../../../../../social-science-services-section/content/text/glossary/terms/freewriting.md) — Montaigne's exploratory method anticipates freewriting's generative principle
+- [freewriting](../../../../../../../../communication-science-services-section/services/writing-services-section/services/essay-writing-services-section/content/text/glossary/terms/freewriting.md) — Montaigne's exploratory method anticipates freewriting's generative principle
 - [George Orwell](./george-orwell.md) — an essayist in Montaigne's tradition, adapted to political concerns

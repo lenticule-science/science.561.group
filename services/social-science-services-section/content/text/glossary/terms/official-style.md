@@ -19,7 +19,7 @@ The Official Style has consistent features: passive voice, strings of prepositio
 
 Lanham argued that this style persists not because writers lack skill but because institutions reward it. The Official Style performs authority and caution: passive voice avoids naming who acts, nominalizations hide agency, and hedging avoids commitment. These are useful for writers who want to avoid accountability. They are hostile to readers who need to understand what happened and who is responsible.
 
-The [Paramedic Method](./paramedic-method.md) is Lanham's systematic procedure for revising Official Style prose. His *lard factor* metric — the percentage of words that can be cut without losing meaning — makes the problem quantifiable. Typical Official Style prose runs 50–70% lard.
+The [Paramedic Method](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/plain-language-services-section/content/text/glossary/terms/paramedic-method.md) is Lanham's systematic procedure for revising Official Style prose. His *lard factor* metric — the percentage of words that can be cut without losing meaning — makes the problem quantifiable. Typical Official Style prose runs 50–70% lard.
 
 [Joseph Williams](../../general/people/joseph-williams.md) explained the same phenomenon from a linguistic perspective: when actions appear as nouns and agents disappear from subject position, readers must reconstruct the underlying meaning, increasing processing effort [@williams2006]. [George Orwell](../../general/people/george-orwell.md) identified the political dimension: obscure language conceals who does what to whom, which serves those in power [@orwell1946].
 
@@ -27,7 +27,7 @@ The vault's [style guide](style-guide.md) and [plain language specification](../
 
 ## Related terms
 
-- [Paramedic Method](./paramedic-method.md) — Lanham's procedure for revising the Official Style
-- [readability](./readability.md) — the Official Style reduces readability through syntactic complexity
-- [plain language movement](./plain-language-movement.md) — the movement opposing institutional prose conventions
+- [Paramedic Method](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/plain-language-services-section/content/text/glossary/terms/paramedic-method.md) — Lanham's procedure for revising the Official Style
+- [readability](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/plain-language-services-section/content/text/glossary/terms/readability.md) — the Official Style reduces readability through syntactic complexity
+- [plain language movement](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/plain-language-services-section/content/text/glossary/terms/plain-language-movement.md) — the movement opposing institutional prose conventions
 - [language and power](../topics/language-and-power/index.md) — the Official Style encodes institutional power relations in prose

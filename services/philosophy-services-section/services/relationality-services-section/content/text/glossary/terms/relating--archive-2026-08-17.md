@@ -32,6 +32,6 @@ The relationality framework's contribution is the formal articulation through vo
 ## See also
 
 - [Relationality](../_index.md) — the framework itself.
-- [Relational ontology](../../../../../../content/text/glossary/terms/relational-ontology.md) — the philosophical position.
+- [Relational ontology](../../../../../western-services-section/services/metaphysics-services-section/services/ontology-services-section/content/text/glossary/terms/relational-ontology.md) — the philosophical position.
 - [Predication](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/predication.md) — the mathematical-voice counterpart.
 - [Relationlessness](relationlessness.md) — the originating paradox from which relating arises.

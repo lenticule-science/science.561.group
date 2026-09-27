@@ -29,7 +29,7 @@ keywords:
 
 ## Revision is not editing
 
-Editing fixes sentences: grammar, spelling, word choice, punctuation. [Revision](../../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/revision.md) fixes the essay: structure, argument, evidence, focus. Editing polishes the surface; revision changes the substance.
+Editing fixes sentences: grammar, spelling, word choice, punctuation. [Revision](../../../glossary/terms/revision.md) fixes the essay: structure, argument, evidence, focus. Editing polishes the surface; revision changes the substance.
 
 The most common mistake is editing too early. A writer who spends an hour perfecting the opening paragraph of a first [draft](../../../glossary/terms/draft.md) may discover, three paragraphs later, that the opening needs to be cut entirely. Edit after the structure is right, not before.
 
@@ -71,7 +71,7 @@ Cutting feels like loss. It isn't. A shorter essay that says what it means is st
 
 ## Sentence-level revision: the Paramedic Method
 
-Once the structure is sound, revise at the sentence level. [Richard Lanham](../../../../../../../../../../knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/richard-lanham.md)'s [Paramedic Method](../../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/paramedic-method.md) provides a systematic procedure [@lanham2006]:
+Once the structure is sound, revise at the sentence level. [Richard Lanham](../../../../../../../../../../knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/richard-lanham.md)'s [Paramedic Method](../../../../../../plain-language-services-section/content/text/glossary/terms/paramedic-method.md) provides a systematic procedure [@lanham2006]:
 
 1. Circle the prepositions. Too many prepositions ("the implementation of the process of the development of") signal nominalized, bureaucratic prose.
 2. Circle the "is" forms. "Is," "was," "were," "been" — these often indicate passive voice or static description where active verbs would be stronger.
@@ -93,9 +93,9 @@ The second version is shorter, clearer, and assigns responsibility. The first ve
 
 ## Related terms
 
-- [revision](../../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/revision.md)
+- [revision](../../../glossary/terms/revision.md)
 - [draft](../../../glossary/terms/draft.md)
-- [paramedic method](../../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/paramedic-method.md)
+- [paramedic method](../../../../../../plain-language-services-section/content/text/glossary/terms/paramedic-method.md)
 - [thesis](../../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/thesis.md)
 - [conclusion](../../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/conclusion.md)
 - [voice](../../../../../../rhetoric-and-composition-services-section/content/text/glossary/terms/voice.md)

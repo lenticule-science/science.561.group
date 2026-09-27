@@ -70,7 +70,7 @@ A clean handoff requires: (1) a status briefing from the outgoing watch-stander 
 The watch log is not a task list; it is a continuous narrative of the watch-stander's observations, the state of the system, and any events that occurred.
 This narrative is the artifact by which the next watch-stander inherits not just information but context.
 
-The coverage invariant — "at no moment is the role unoccupied" — is the same invariant that applies to governance [investiture](investiture.md), where leadership transitions must preserve continuity and ensure no moment when the office is vacant.
+The coverage invariant — "at no moment is the role unoccupied" — is the same invariant that applies to governance [investiture](../../../../services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/content/text/glossary/terms/investiture.md), where leadership transitions must preserve continuity and ensure no moment when the office is vacant.
 The watch is the structural unit by which continuous coverage is engineered.
 
 See also: [Shift](shift.md) · [Handoff](handoff.md) · [Rotation](rotation.md) · [Coverage](coverage.md) · [Cadence](cadence.md)

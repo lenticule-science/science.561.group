@@ -30,5 +30,5 @@ The effects of incarceration extend far beyond the incarcerated person. Families
 
 ## Related
 
-- [Social control](./social-control.md) — the broader function that incarceration serves
+- [Social control](../../../../../law-science-services-section/content/text/glossary/terms/social-control.md) — the broader function that incarceration serves
 - [Abolition](../../../../../../../philosophy-services-section/services/black-philosophy-services-section/services/abolition-services-section/content/text/glossary/topics/abolition.md) — the movement to dismantle incarceration as a social institution

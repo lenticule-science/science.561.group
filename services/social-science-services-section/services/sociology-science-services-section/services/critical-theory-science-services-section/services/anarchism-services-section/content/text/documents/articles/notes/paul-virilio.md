@@ -11,7 +11,7 @@ description: "Paul Virilio (1932–2018) was a French urbanist, aesthetic philos
 introduces: person
 ---
 
-Paul Virilio (1932–2018) was a French urbanist and political theorist whose work analyzed speed, technology, and warfare as the constitutive — not incidental — structures of modern political power. His central contribution was *dromology*: the claim that political history is, at base, the history of [speed](../../../../../../../../../content/text/glossary/terms/speed.md) — that whoever controls the means of acceleration controls the territory, the population, and the future.
+Paul Virilio (1932–2018) was a French urbanist and political theorist whose work analyzed speed, technology, and warfare as the constitutive — not incidental — structures of modern political power. His central contribution was *dromology*: the claim that political history is, at base, the history of [speed](../../../glossary/terms/speed.md) — that whoever controls the means of acceleration controls the territory, the population, and the future.
 
 ## Core ideas
 
@@ -22,7 +22,7 @@ Paul Virilio (1932–2018) was a French urbanist and political theorist whose wo
 
 ## Significance for this research
 
-Virilio was not an [anarchist](../../../terms/anarchism.md), but his analysis is directly useful for [anarchist](../index.md) critique. His demonstration that speed serves domination — that acceleration is not neutral progress but a political technology — provides the analytical ground for understanding why [prefigurative politics](../../../../../../../../../content/text/glossary/terms/prefigurative-politics.md) requires temporal autonomy, why [consensus](../../../../../../../../../../../content/text/glossary/terms/horizontal-organization.md) is structurally incompatible with the speed-regime, and why the demand to "be more efficient" is always implicitly a demand to accept hierarchy.
+Virilio was not an [anarchist](../../../terms/anarchism.md), but his analysis is directly useful for [anarchist](../index.md) critique. His demonstration that speed serves domination — that acceleration is not neutral progress but a political technology — provides the analytical ground for understanding why [prefigurative politics](../../../../../services/organization-services-section/content/text/glossary/terms/prefigurative-politics.md) requires temporal autonomy, why [consensus](../../../../../../../../../../../content/text/glossary/terms/horizontal-organization.md) is structurally incompatible with the speed-regime, and why the demand to "be more efficient" is always implicitly a demand to accept hierarchy.
 
 His concept of the accident also connects to [crisis ordinariness](../../../../../../../../../../philosophy-services-section/services/western-services-section/services/political-philosophy-services-section/services/liberalism-services-section/services/late-liberalism-services-section/content/text/glossary/terms/crisis-ordinariness.md): the speed-accident is not an exception but a structural product of the system that generates it. The faster the system, the more catastrophic and less recoverable the accident — and at sufficient speed, the accident becomes the ordinary condition.
 
@@ -35,6 +35,6 @@ His concept of the accident also connects to [crisis ordinariness](../../../../.
 
 ## Related
 
-- [speed](../../../../../../../../../content/text/glossary/terms/speed.md) — the concept his dromology analyzes
+- [speed](../../../glossary/terms/speed.md) — the concept his dromology analyzes
 - [Ivan Illich](../../../../../../../../../../information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/ivan-illich.md) — parallel critique of speed's false economy
-- [Guy Debord](../../../../../../../../../../information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/guy-debord.md) — parallel analysis of the [spectacle](../../../../../../../../../content/text/glossary/terms/spectacle.md) as a perceptual regime
+- [Guy Debord](../../../../../../../../../../information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/guy-debord.md) — parallel analysis of the [spectacle](../../../../../../situationist-services-section/content/text/glossary/terms/spectacle.md) as a perceptual regime

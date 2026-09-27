@@ -17,7 +17,7 @@ id: american-law-lesson-counterinsurgency-and-legal-infrastructure
 type: lesson
 ---
 
-Audience: learners who have completed [Structural comparison](./structural-comparison.md), with working knowledge of [counterinsurgency](../../../../../../../../sociology-science-services-section/content/text/glossary/terms/counterinsurgency.md) doctrine and [COINTELPRO](../../../../../../../../sociology-science-services-section/content/text/glossary/terms/cointelpro.md) history.
+Audience: learners who have completed [Structural comparison](./structural-comparison.md), with working knowledge of [counterinsurgency](../../../../../../../../sociology-science-services-section/content/text/glossary/terms/counterinsurgency.md) doctrine and [COINTELPRO](../../../../../../../../../../philosophy-services-section/services/black-philosophy-services-section/services/abolition-services-section/services/state-repression-services-section/content/text/glossary/terms/cointelpro.md) history.
 
 Learning goal: articulate the structural parallel between legal cultural governance and counterinsurgency, identify where the analogy holds and where it breaks, and explain why the distinction matters.
 

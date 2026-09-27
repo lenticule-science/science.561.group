@@ -21,7 +21,7 @@ This is not a defect. It is the relational logic doing what it does: every coher
 
 Recursive domain unfolding is why the derivation does not terminate. It is the specific mechanism through which the open-endedness of relationality is earned — not assumed. The derivation does not declare itself incomplete by fiat. It shows, through the logic of meta-relational closure, that each completed domain necessarily indicates a further domain.
 
-This open-endedness is consistent with [relational ontology](../../../../../../content/text/glossary/terms/relational-ontology.md). A framework that claimed to be complete — that achieved closure with no further domain implied — would contradict the relational stance. It would assert a fact of the matter independent of the relations that constitute it.
+This open-endedness is consistent with [relational ontology](../../../../../western-services-section/services/metaphysics-services-section/services/ontology-services-section/content/text/glossary/terms/relational-ontology.md). A framework that claimed to be complete — that achieved closure with no further domain implied — would contradict the relational stance. It would assert a fact of the matter independent of the relations that constitute it.
 
 ## Connection to predictive determination
 

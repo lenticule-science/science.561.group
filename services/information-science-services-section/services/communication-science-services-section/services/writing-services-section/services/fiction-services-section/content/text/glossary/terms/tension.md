@@ -21,7 +21,7 @@ Tension differs from [conflict](../../../../../../../../../../../social-science-
 Tension operates at multiple scales:
 
 - **Macro tension** (also called dramatic tension) spans the whole narrative: Will the character achieve their goal? Will the mystery be solved? This is what keeps the reader turning pages across chapters.
-- **Micro tension** operates within scenes and sentences: an ambiguous line of [dialogue](../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/dialogue.md), a detail that doesn't fit, a sentence that delays its resolution. This is what keeps the reader reading within a page.
+- **Micro tension** operates within scenes and sentences: an ambiguous line of [dialogue](dialogue.md), a detail that doesn't fit, a sentence that delays its resolution. This is what keeps the reader reading within a page.
 - **Suspense** is tension focused on an anticipated event — the reader knows something is coming and waits for it. Alfred Hitchcock distinguished suspense from surprise: surprise is a bomb going off without warning; suspense is knowing the bomb is under the table while the characters talk.
 
 [Pacing](../../../../../../content/text/glossary/terms/pacing.md) controls tension. Slowing down before a crucial moment builds it; speeding up during action releases it. [Subtext](../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/subtext.md) creates it — the gap between what characters say and what the reader knows. Information management creates it — what the reader knows, what they don't, and when they find out.

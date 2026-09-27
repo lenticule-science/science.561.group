@@ -12,7 +12,7 @@ The Parsley Massacre (Spanish: El Corte "the cutting"; Creole: kout kouto-a "the
 
  The massacre was carried out by the Dominican Army on the orders of Dominican dictator Rafael Trujillo, who initiated the violence with this statement, given on Oct. 2nd, 1937:
 
- "To the Dominicans who were complaining of the depredations by Haitians living among them, thefts of cattle, provisions, fruits, etc., and were thus prevented from enjoying in peace the products of their [labor](../../sociology/terms/labor.md), I have responded, \'I will fix this.\' And we have already begun to remedy the situation. Three hundred Haitians are now dead in Bánica. This remedy will continue."
+ "To the Dominicans who were complaining of the depredations by Haitians living among them, thefts of cattle, provisions, fruits, etc., and were thus prevented from enjoying in peace the products of their [labor](../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/content/text/glossary/terms/labor.md), I have responded, \'I will fix this.\' And we have already begun to remedy the situation. Three hundred Haitians are now dead in Bánica. This remedy will continue."
 
  In the following week, hundreds of Dominican troops poured into the region, killing Haitians with rifles, machetes, shovels, knives, and bayonets. Haitian children were reportedly thrown in the air and caught by soldiers\' bayonets, then thrown on their mothers\' corpses. Others were drowned in the sea, making identification and counting of the dead impossible.
 

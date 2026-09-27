@@ -30,8 +30,8 @@ Richard A. Lanham is an American rhetorician at UCLA whose work on prose style d
 
 ## Related
 
-- [Paramedic Method](../../../../../../../../../../social-science-services-section/content/text/glossary/terms/paramedic-method.md) — the term entry for Lanham's revision procedure
+- [Paramedic Method](../../../../../../../../communication-science-services-section/services/writing-services-section/services/plain-language-services-section/content/text/glossary/terms/paramedic-method.md) — the term entry for Lanham's revision procedure
 - [Official Style](../../../../../../../../../../social-science-services-section/content/text/glossary/terms/official-style.md) — the term entry for the bureaucratic prose Lanham diagnosed
 - [Joseph Williams](./joseph-williams.md) — a contemporary who developed complementary clarity principles from cognitive and linguistic rather than rhetorical foundations
-- [revision](../../../../../../../../../../social-science-services-section/content/text/glossary/terms/revision.md) — the broader process the Paramedic Method serves
+- [revision](../../../../../../../../communication-science-services-section/services/writing-services-section/services/essay-writing-services-section/content/text/glossary/terms/revision.md) — the broader process the Paramedic Method serves
 - [plain language writing](../../writing/topics/plain-language/index.md) — the vault's preference for active voice and concrete verbs reflects Lanham's influence

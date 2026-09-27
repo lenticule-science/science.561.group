@@ -25,7 +25,7 @@ The expository essay is the default mode of academic writing outside the humanit
 
 ## Related terms
 
-- [argument](argument.md) — what distinguishes the argumentative essay from the expository one
+- [argument](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/essay-writing-services-section/content/text/glossary/terms/argument.md) — what distinguishes the argumentative essay from the expository one
 - [analysis](analysis.md) — the interpretive move that gives expository writing depth beyond reporting
 - [synthesis](synthesis.md) — combining sources to build a comprehensive explanation
 - [introduction](introduction.md) — must frame the question the exposition answers

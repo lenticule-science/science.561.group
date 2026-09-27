@@ -33,7 +33,7 @@ The distinction between role and office runs through the entire normative ontolo
 
 A **Role** is a normative interface type: it specifies what you can and must do when you occupy it. Filling a role is capability-matching: you fill $R$ by operative satisfaction of $\kappa_R$ — i.e., $s_{a,\kappa_R} \in H^*_t$ — and acceptance of the norm-set $N_R$. No formal act is required to fill a role you are capable of filling; role-filling can be informal.
 
-An **[Office](../../../terms/office.md)** is a formally invested deontic position: a full [HohfeldianPosition](../../../../../../../../../../content/text/glossary/terms/hohfeldian-position.md) profile (powers, duties, privileges, immunities) transferred by a formal investiture act $I^+$. The office specifies not just what the occupant can do but what they must, may, and are immune from — the complete four-position Hohfeldian profile. Offices are installed; roles are filled.
+An **[Office](../../../terms/office.md)** is a formally invested deontic position: a full [HohfeldianPosition](../../../../services/hohfeldian-services-section/content/text/glossary/terms/hohfeldian-position.md) profile (powers, duties, privileges, immunities) transferred by a formal investiture act $I^+$. The office specifies not just what the occupant can do but what they must, may, and are immune from — the complete four-position Hohfeldian profile. Offices are installed; roles are filled.
 
 An Office always defines a Role: the office's power-profile specifies a capability signature and the office's duties specify a norm-set. A Role does not always define an Office: roles can be filled without formal investiture, and roles specify capability without the full Hohfeldian correlative structure that offices carry.
 

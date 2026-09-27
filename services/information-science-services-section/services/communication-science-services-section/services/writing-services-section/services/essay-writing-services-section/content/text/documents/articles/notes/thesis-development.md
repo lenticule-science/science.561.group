@@ -44,7 +44,7 @@ The most common mistake in essay writing is deciding what to argue before writin
 
 1. **Start with a question, not an answer.** "Why do notification systems work the way they do?" is more generative than "Notification systems are bad." The question opens space for discovery; the premature answer closes it.
 
-2. **[Freewrite](../../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/freewriting.md) toward the question.** Write without stopping for 15-20 minutes. Don't organize, don't edit, don't worry about quality. You're generating material — raw thought that will contain the seeds of an argument.
+2. **[Freewrite](../../../glossary/terms/freewriting.md) toward the question.** Write without stopping for 15-20 minutes. Don't organize, don't edit, don't worry about quality. You're generating material — raw thought that will contain the seeds of an argument.
 
 3. **Read what you wrote for surprises.** The thesis is usually in the passage where you surprised yourself — where you wrote something you didn't expect to think. [Linda Flower](../../../../../../../../../../knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/linda-flower.md) called this the transition from [writer-based prose](../../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/writer-based-prose.md) (organized around the writer's discovery) to reader-based prose (organized for the reader's understanding) [@flowerhayes1981].
 
@@ -60,7 +60,7 @@ A working thesis should pass three tests:
 
 ## The thesis moves
 
-Most first [drafts](../../../glossary/terms/draft.md) bury the thesis in the conclusion — because that's where the writer figured out what they were saying. [Revision](../../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/revision.md) often consists of moving the discovery from the end to the beginning and restructuring the essay to develop it rather than arrive at it.
+Most first [drafts](../../../glossary/terms/draft.md) bury the thesis in the conclusion — because that's where the writer figured out what they were saying. [Revision](../../../glossary/terms/revision.md) often consists of moving the discovery from the end to the beginning and restructuring the essay to develop it rather than arrive at it.
 
 This is normal, not a failure. The first draft discovers the thesis; the second draft deploys it. The writer's experience (question → exploration → discovery) becomes the reader's experience (claim → evidence → understanding).
 
@@ -73,7 +73,7 @@ This is normal, not a failure. The first draft discovers the thesis; the second 
 ## Related terms
 
 - [thesis](../../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/thesis.md)
-- [freewriting](../../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/freewriting.md)
+- [freewriting](../../../glossary/terms/freewriting.md)
 - [draft](../../../glossary/terms/draft.md)
 - [evidence](../../../glossary/terms/evidence.md)
-- [revision](../../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/revision.md)
+- [revision](../../../glossary/terms/revision.md)

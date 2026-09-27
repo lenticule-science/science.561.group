@@ -39,7 +39,7 @@ where $\mathrm{prop}(\mathrm{ax})$ is the fiber element corresponding to axiom $
 
 2. **Geometric restriction**: all axioms are geometric sequents; axioms requiring $\forall$ at the meta-level (such as separation: "any two amalgamations are equal") are not permitted. Non-geometric constraints are handled by the nuclear quotient, not by axiomatic fiat.
 
-3. **No constituted community**: the blueprint declares what must be provided, not who provides it. There are no agents, no covering policies, no deontic constraints in $\mathrm{Ax}$. Adding a community constitutes a [Charter](../../../../../../../social-science-services-section/content/text/glossary/terms/charter.md).
+3. **No constituted community**: the blueprint declares what must be provided, not who provides it. There are no agents, no covering policies, no deontic constraints in $\mathrm{Ax}$. Adding a community constitutes a [Charter](../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/content/text/glossary/terms/charter.md).
 
 4. **Operational determinism**: the blueprint fully constrains which sub-configurations are valid (subobject classification by the axioms) — every valid configuration is either specified or can be derived from the axioms by the geometric inference rules.
 
@@ -51,7 +51,7 @@ The origin of the term: a blueprint is a photographic reproduction of a technica
 
 **Blueprint is not Signature.** A [Signature](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/signature.md) has no axioms — it is purely syntactic vocabulary. A blueprint adds axioms to the vocabulary, constraining which configurations are valid. The signature says "these operations exist"; the blueprint says "these operations must satisfy these constraints."
 
-**Blueprint is not Charter.** A [Charter](../../../../../../../social-science-services-section/content/text/glossary/terms/charter.md) adds a constituted community and covering policies to a blueprint — it makes the blueprint live by declaring who operates under it and what counts as covering the scope. A blueprint alone has no community, no Grothendieck topology, no sheaf condition.
+**Blueprint is not Charter.** A [Charter](../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/content/text/glossary/terms/charter.md) adds a constituted community and covering policies to a blueprint — it makes the blueprint live by declaring who operates under it and what counts as covering the scope. A blueprint alone has no community, no Grothendieck topology, no sheaf condition.
 
 **Blueprint is not Model.** A model $M \models \mathbb{T}$ is a [Signature](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/signature.md) implementation satisfying all axioms in $\mathrm{Ax}$. Multiple models of the same blueprint exist; the blueprint is the invariant that all models share.
 
@@ -100,7 +100,7 @@ The three-stage development:
 |---|---|---|
 | [Outpost](../../../../../../../../social-science-services-section/services/political-science-services-section/services/military-science-services-section/content/text/glossary/terms/outpost.md) | Operation surface only: signature $\mathbf{S}$, no axioms | Named operations, ungoverned |
 | **Blueprint** | Geometric theory $(\mathbf{S}, \mathrm{Ax})$ | Axioms — constraints on valid configurations |
-| [Charter](../../../../../../../social-science-services-section/content/text/glossary/terms/charter.md) | Site $(\mathbf{S}, \mathrm{Ax}, J)$ | Grothendieck topology $J$ — covering policies, constituted community |
+| [Charter](../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/content/text/glossary/terms/charter.md) | Site $(\mathbf{S}, \mathrm{Ax}, J)$ | Grothendieck topology $J$ — covering policies, constituted community |
 | [Locale](../../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/locale.md) | Classifying topos $\mathbf{Sh}(\mathbf{S}, \mathrm{Ax}, J)$ | Sheaf category — global sections, live operations |
 
 The step from Outpost to Blueprint is adding governance: axioms constrain what was previously unconstrained. The step from Blueprint to Charter is constituting the community: declaring who operates under the blueprint and what covering families count as comprehensive. The step from Charter to Locale is activating the sheaf: compatible local sections assemble into global sections.

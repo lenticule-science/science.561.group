@@ -69,7 +69,7 @@ The framework has no inherent subjects, only entities that are subjects within s
 - [Relating](relating.md) — the activity that constitutes both positions.
 - [Relational entity](relational-entity.md) — what occupies subject and object positions.
 - [Predication cell](../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/predication-cell.md) — the math articulation; the subject is the first coordinate of the cell.
-- [Relational ontology](../../../../../philosophy-services-section/content/text/glossary/terms/relational-ontology.md) — the framework's commitment to relations as ontologically prior.
+- [Relational ontology](../../../../../philosophy-services-section/services/western-services-section/services/metaphysics-services-section/services/ontology-services-section/content/text/glossary/terms/relational-ontology.md) — the framework's commitment to relations as ontologically prior.
 
 A subject is a person as produced by the institutions, practices, and discourses that act on them.
 The word carries a deliberate double meaning: a subject is both the one who acts (the thinking subject of philosophy) and the one who is acted upon (the subject of a king, the subject of an experiment).

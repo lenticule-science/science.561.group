@@ -33,7 +33,7 @@ Janice (Ginny) Redish is an American researcher and practitioner in plain langua
 
 ## Related
 
-- [usability testing](../../../../../../../../../../social-science-services-section/content/text/glossary/terms/usability-testing.md) — the term entry for the testing methods Redish advocates
+- [usability testing](../../../../../../../../communication-science-services-section/services/writing-services-section/services/plain-language-services-section/content/text/glossary/terms/usability-testing.md) — the term entry for the testing methods Redish advocates
 - [content strategy](../../../../../../../../../../social-science-services-section/content/text/glossary/terms/content-strategy.md) — Redish's usability-first approach extends to content governance
 - [minimalism](../../../../../../../../../../social-science-services-section/content/text/glossary/terms/minimalism.md) — Redish's "letting go of the words" aligns with Carroll's minimalist approach
 - [plain language writing](../../writing/topics/plain-language/index.md) — the vault's plain language specification draws on her principles

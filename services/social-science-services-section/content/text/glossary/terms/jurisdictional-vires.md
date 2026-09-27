@@ -29,7 +29,7 @@ name: "JurisdictionalVires"
 
 $$Q_{\mathrm{vires}}(\varphi, A, t) = \begin{cases} 1 & \text{if } \mathrm{JV}(A, \varphi, t) \in H^{*\mathcal{J}}_t \\ 0 & \text{otherwise} \end{cases}$$
 
-where $\mathrm{JV}(A, \varphi, t) = R_{\mathcal{J}}(\mathrm{pos}(A, t), \varphi, V(t, \varphi))$ is the jurisdictional validity proposition from [Jurisdiction](jurisdiction.md).
+where $\mathrm{JV}(A, \varphi, t) = R_{\mathcal{J}}(\mathrm{pos}(A, t), \varphi, V(t, \varphi))$ is the jurisdictional validity proposition from [Jurisdiction](../../../../services/law-science-services-section/services/jurisdiction-services-section/content/text/glossary/terms/jurisdiction.md).
 
 $Q_{\mathrm{vires}} = 1$ is called **intra vires** ("within the powers"). $Q_{\mathrm{vires}} = 0$ is called **ultra vires** ("beyond the powers").
 
@@ -53,7 +53,7 @@ These are not mutually exclusive: an act can fail on multiple conditions simulta
 
 ## JurisdictionalVires vs. excess
 
-**JurisdictionalVires** measures whether an act is within $A$'s full jurisdiction $\mathcal{J}$. **[JurisdictionalExcess](jurisdictional-excess.md)** is the condition of being intra vires within $\mathcal{J}$ but outside an officer's personal sub-jurisdiction $Z = \mathcal{J}|_B$:
+**JurisdictionalVires** measures whether an act is within $A$'s full jurisdiction $\mathcal{J}$. **[JurisdictionalExcess](../../../../services/law-science-services-section/services/jurisdiction-services-section/content/text/glossary/terms/jurisdictional-excess.md)** is the condition of being intra vires within $\mathcal{J}$ but outside an officer's personal sub-jurisdiction $Z = \mathcal{J}|_B$:
 
 $$\mathrm{JurisdictionalExcess}(B, \varphi, t) \iff Q_{\mathrm{vires}}(\varphi, A, t) = 1 \;\wedge\; Q_{\mathrm{vires}}(\varphi, B, t) = 0$$
 
@@ -63,7 +63,7 @@ An ultra vires act creates no duties at all — it is a dead letter.
 
 ## Nuclear reading
 
-Using the nuclear axioms for $\sigma_t$ and $\Delta_t$ on $H_t$, and the definition $\mathrm{JV}(A, \varphi, t) := \mathrm{pos}(A, t) \wedge \varphi$ from [Jurisdiction](jurisdiction.md):
+Using the nuclear axioms for $\sigma_t$ and $\Delta_t$ on $H_t$, and the definition $\mathrm{JV}(A, \varphi, t) := \mathrm{pos}(A, t) \wedge \varphi$ from [Jurisdiction](../../../../services/law-science-services-section/services/jurisdiction-services-section/content/text/glossary/terms/jurisdiction.md):
 
 **Definition (intra vires and ultra vires).** $Q_{\mathrm{vires}}(\varphi, A, t) = 1$ iff $\mathrm{JV}(A, \varphi, t) \in \mathrm{Fix}(\sigma_t)$. $Q_{\mathrm{vires}}(\varphi, A, t) = 0$ otherwise.
 This is a definition, naming the fixed-point condition.

@@ -67,7 +67,7 @@ Four properties distinguish a campaign from a project or a plan:
 
 In the Haudenosaunee model, when coordinated action was needed — a diplomatic mission, a military campaign, a trade expedition — the relevant nations commissioned ventures with specific leaders and participants.
 The campaign IS what confederacies commission [ships](./ship.md) to execute.
-The ship's [charter](charter.md) may encompass multiple campaigns over its lifetime, but each campaign is a distinct coordinated push.
+The ship's [charter](../../../../services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/content/text/glossary/terms/charter.md) may encompass multiple campaigns over its lifetime, but each campaign is a distinct coordinated push.
 
 Clausewitz distinguishes three levels: the war (political aim — indefinite), the campaign (strategic aim — seasonal), and the engagement (tactical aim — immediate).
 This maps onto the work hierarchy: the enterprise is the war, the campaign coordinates projects toward a strategic waypoint, and tasks are the engagements.

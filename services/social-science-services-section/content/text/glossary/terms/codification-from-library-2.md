@@ -22,7 +22,7 @@ Common law systems have extensive statutory codes (the United States Code fills 
 The difference is one of emphasis: where does a lawyer look first — to the statute or to the prior cases?
 
 The sociological interest in codification lies in what it produces.
-Codification is a [legibility](legibility.md) project: it takes dispersed, locally variable, orally transmitted norms and converts them into a single, centrally administered text.
+Codification is a [legibility](../../../../../philosophy-services-section/services/black-philosophy-services-section/services/abolition-services-section/services/state-repression-services-section/content/text/glossary/terms/legibility.md) project: it takes dispersed, locally variable, orally transmitted norms and converts them into a single, centrally administered text.
 The Napoleonic Code was explicitly designed to replace the patchwork of customary laws across France with a uniform system.
 This uniformity has administrative advantages — the same rules apply everywhere, legal outcomes are more predictable, legal training can be standardized.
 It also has costs: local practices, customary arrangements, and community-specific norms that don't fit the code's categories are rendered invisible or illegal.

@@ -27,7 +27,7 @@ This vault's grounding in Lakota epistemologies is an epistemological commitment
 ## Related terms
 
 - [Ontology](./ontology.md) — the study of what exists; epistemology and [ontology](./ontology.md) shape each other
-- [Constructivism](constructivism.md) — the position that knowledge is constructed, not discovered
-- [Phenomenology](../../../../../philosophy-services-section/content/text/glossary/terms/phenomenology.md) — the study of experience, which supplies epistemology with its raw material
+- [Constructivism](../../../../services/education-science-services-section/services/learning-services-section/content/text/glossary/terms/constructivism.md) — the position that knowledge is constructed, not discovered
+- [Phenomenology](../../../../../philosophy-services-section/services/western-services-section/services/continental-services-section/services/phenomenology-services-section/content/text/glossary/terms/phenomenology.md) — the study of experience, which supplies epistemology with its raw material
 - [Perspectivism](../../../../../philosophy-services-section/content/text/glossary/terms/perspectivism.md) — the position that knowledge is always from a perspective
-- [Relational Ontology](../../../../../philosophy-services-section/content/text/glossary/terms/relational-ontology.md) — if relations are prior to things, then knowledge is relational too
+- [Relational Ontology](../../../../../philosophy-services-section/services/western-services-section/services/metaphysics-services-section/services/ontology-services-section/content/text/glossary/terms/relational-ontology.md) — if relations are prior to things, then knowledge is relational too

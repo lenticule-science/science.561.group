@@ -64,7 +64,7 @@ The Fortress stake — approximately \$168 million — was first broken by adult
 The loan carried an interest rate of approximately 24 percent annually [@institutionalinvestor_MindGeekExecsOwnersVisa_2021].
 This figure is documented in the Brown Rudnick federal RICO complaint in _Fleites v.
 MindGeek_, which characterizes the rate as "reflecting the unwillingness of legitimate mainstream capital to invest in the company because of the innumerable red flags of illegality" [@institutionalinvestor_MindGeekExecsOwnersVisa_2021].
-The complaint also notes that the loan was "secured by all of MindGeek's assets, including its intellectual [property](../../../../../../../content/text/glossary/terms/property.md), and provided substantial control over management and the company's operations" [@institutionalinvestor_MindGeekExecsOwnersVisa_2021].
+The complaint also notes that the loan was "secured by all of MindGeek's assets, including its intellectual [property](../../../../../../critical-theory-science-services-section/services/anarchism-services-section/content/text/glossary/terms/property.md), and provided substantial control over management and the company's operations" [@institutionalinvestor_MindGeekExecsOwnersVisa_2021].
 
 The loan enabled Thylmann to expand Manwin from approximately 200 to 1,200 staff and acquire dozens of tube sites, production studios, and content platforms across North America and Europe [@omr_CatchingFabianThylmannZuckerberg_2020].
 

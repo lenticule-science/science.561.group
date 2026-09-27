@@ -21,7 +21,7 @@ Euphemism serves two functions:
 
 The writer's task is to distinguish between these functions. Euphemism that respects the reader's feelings without obscuring reality is appropriate. Euphemism that obscures reality to prevent the reader from judging it is dishonest. The test: if the reader would respond differently to the direct term than to the euphemism, the euphemism is doing political work, not social work.
 
-The [plain language](./plain-language-movement.md) tradition generally opposes euphemism on the grounds that clear communication requires calling things what they are. This is correct as a default — but a default, not an absolute. A technical document about error handling should say "the process failed," not "the process experienced a suboptimal outcome." A condolence note may use "passed away" without being dishonest.
+The [plain language](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/plain-language-services-section/content/text/glossary/terms/plain-language-movement.md) tradition generally opposes euphemism on the grounds that clear communication requires calling things what they are. This is correct as a default — but a default, not an absolute. A technical document about error handling should say "the process failed," not "the process experienced a suboptimal outcome." A condolence note may use "passed away" without being dishonest.
 
 ## Related terms
 

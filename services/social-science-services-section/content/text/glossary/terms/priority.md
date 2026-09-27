@@ -38,7 +38,7 @@ A [deadline](./deadline.md) creates urgency, but priority determines whether the
 A trivial task with a tight deadline is still trivial; a critical task with a distant deadline is still critical.
 
 Priority sources from four dimensions.
-First, **goal alignment** — does this task advance the [charter's](charter.md) stated goals?
+First, **goal alignment** — does this task advance the [charter's](../../../../services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/content/text/glossary/terms/charter.md) stated goals?
 A task that directly supports a declared objective is higher priority than a task that supports only adjacent goals.
 Second, **dependency leverage** — does completing this task unblock other high-priority work?
 A task that blocks five downstream tasks is higher priority than one that stands alone.

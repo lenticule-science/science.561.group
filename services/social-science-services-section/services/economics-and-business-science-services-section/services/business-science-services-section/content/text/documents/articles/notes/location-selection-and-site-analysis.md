@@ -24,7 +24,7 @@ Before negotiating a [commercial lease](../../../glossary/terms/commercial-lease
 
 ## Prerequisites
 
-[Conducting Market Analysis](./conducting-market-analysis.md). You need to know who your [target market](../../../../../../../../sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/target-market.md) is — their demographics, behaviors, and spending patterns — before you can evaluate whether a specific location gives you access to them.
+[Conducting Market Analysis](./conducting-market-analysis.md). You need to know who your [target market](../../../../../services/marketing-science-services-section/content/text/glossary/terms/target-market.md) is — their demographics, behaviors, and spending patterns — before you can evaluate whether a specific location gives you access to them.
 
 ---
 

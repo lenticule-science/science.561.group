@@ -28,5 +28,5 @@ Eugene Schwartz (1927–1995) was an American copywriter and direct-response adv
 ## Related
 
 - [copywriting](../../writing/disciplines/copywriting/index.md) — the discipline Schwartz theorized
-- [value proposition](../../../../../../../../../../social-science-services-section/content/text/glossary/terms/value-proposition.md) — must be calibrated to the reader's awareness level
-- [headline](../../../../../../../../../../social-science-services-section/content/text/glossary/terms/headline.md) — Schwartz's awareness levels determine headline strategy
+- [value proposition](../../../../../../../../communication-science-services-section/services/writing-services-section/services/copywriting-services-section/content/text/glossary/terms/value-proposition.md) — must be calibrated to the reader's awareness level
+- [headline](../../../../../../../../communication-science-services-section/services/writing-services-section/services/copywriting-services-section/content/text/glossary/terms/headline.md) — Schwartz's awareness levels determine headline strategy

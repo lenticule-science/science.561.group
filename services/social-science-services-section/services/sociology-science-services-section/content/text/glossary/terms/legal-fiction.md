@@ -26,4 +26,4 @@ The sociological interest is that legal fictions reveal the gap between legal ca
 
 ## Related
 
-- [Codification](./codification.md) — the project legal fictions help to preserve by managing doctrinal strain
+- [Codification](../../../../../law-science-services-section/content/text/glossary/terms/codification.md) — the project legal fictions help to preserve by managing doctrinal strain

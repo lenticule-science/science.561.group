@@ -28,7 +28,7 @@ The [footprint](../../../glossary/terms/footprint.md) of a handle is the closure
 
 ## Delta
 
-[Delta](../../../../../../../../../content/text/glossary/terms/delta.md) formalizes semiotic difference at three levels: syntactic (which interactions differ), semantic-local (which fragment elements differ), and semantic-closed (what difference remains after closure). This captures how [signs](../../../../../../../../../../information-science-services-section/services/communication-science-services-section/services/linguistics-services-section/services/semiotics-services-section/content/text/glossary/terms/sign.md) acquire value through contrast.
+[Delta](../../../glossary/terms/delta.md) formalizes semiotic difference at three levels: syntactic (which interactions differ), semantic-local (which fragment elements differ), and semantic-closed (what difference remains after closure). This captures how [signs](../../../../../../../../../../information-science-services-section/services/communication-science-services-section/services/linguistics-services-section/services/semiotics-services-section/content/text/glossary/terms/sign.md) acquire value through contrast.
 
 ## Subtraction
 

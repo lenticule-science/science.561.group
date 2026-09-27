@@ -19,7 +19,7 @@ Care ethics begins with a rejection: the dominant traditions in Western moral ph
 
 The key commitments that distinguish care ethics from other frameworks:
 
-- **Persons are relational**: there is no moral agent prior to or independent of the relationships that constitute them. This aligns with [relational ontology](../../../../../../../../../../../content/text/glossary/terms/relational-ontology.md).
+- **Persons are relational**: there is no moral agent prior to or independent of the relationships that constitute them. This aligns with [relational ontology](../../../../../../../../metaphysics-services-section/services/ontology-services-section/content/text/glossary/terms/relational-ontology.md).
 - **Dependency is constitutive**: all persons depend on others, and this dependency is not a deficiency but the condition of ethical life.
 - **Context over principle**: adequate moral reasoning attends to the specifics of a situation rather than subsuming it under a general rule.
 - **Emotion is morally relevant**: the feelings that arise in caring relationships — [attentiveness](../../../../../../../../../../../content/text/glossary/terms/attentiveness.md), empathy, concern — are sources of moral knowledge, not obstacles to it.

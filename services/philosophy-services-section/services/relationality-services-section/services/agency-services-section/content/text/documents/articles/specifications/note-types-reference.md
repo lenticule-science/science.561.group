@@ -67,7 +67,7 @@ A reference SHOULD have its source PDF / text under the theory's `references/sou
 
 - Use `reference` for any external work the corpus cites by name.
 - Use [theorem](../../../../../../../../../../engineering-science-services-section/services/computer-science-services-section/services/software-services-section/services/lean-services-section/content/text/glossary/terms/theorem.md) when the content is a *result* the corpus reproves or attributes — the theorem note cites the reference.
-- Use [narrative](../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/content/text/glossary/terms/narrative.md) when the content is a *commentary* on a body of literature — the narrative cites multiple references.
+- Use [narrative](../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section/services/anarchism-services-section/services/anarchist-communication-services-section/content/text/glossary/terms/narrative.md) when the content is a *commentary* on a body of literature — the narrative cites multiple references.
 - Use a [people note](#) for a *person* whose biography or role is the subject — a reference is for *works*, not authors.
 
 ## Validation rules (informal)

@@ -28,7 +28,7 @@ keywords:
 
 ## The headline's job
 
-A [headline](../../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/headline.md) has one job: earn the reader's next second of attention. Not their commitment, not their money, not their email address — just one more second. Everything else in the copy depends on that second.
+A [headline](../../../glossary/terms/headline.md) has one job: earn the reader's next second of attention. Not their commitment, not their money, not their email address — just one more second. Everything else in the copy depends on that second.
 
 [David Ogilvy](../../../../../../../../../../knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/david-ogilvy.md) put the stakes simply: on average, five times as many people read the headline as read the body copy [@ogilvy1983]. This means that when you've written your headline, you've spent eighty cents of your dollar. If the headline fails, nothing else matters — the reader is gone.
 
@@ -67,7 +67,7 @@ Most effective headlines follow one of four patterns:
 
 ## The value proposition
 
-The [value proposition](../../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/value-proposition.md) is the headline expanded into a promise: what the reader gets, why it matters, and why this offer rather than alternatives.
+The [value proposition](../../../glossary/terms/value-proposition.md) is the headline expanded into a promise: what the reader gets, why it matters, and why this offer rather than alternatives.
 
 A value proposition has three components:
 
@@ -92,12 +92,12 @@ The better version names the problem (chasing updates), offers a specific soluti
 - Write ten headlines before choosing one. The first headline is rarely the best — it's the most obvious. Push past obvious.
 - Read your headline without the body copy. If the reader would scroll past it, it's not doing its job.
 - Check every headline for specificity. Replace vague words ("better," "fast," "easy") with concrete ones ("3x faster," "in under 2 minutes," "without writing code").
-- Test headlines against each other whenever the platform allows [A/B testing](../../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/ab-testing.md). What the writer thinks will work and what actually works are often different.
+- Test headlines against each other whenever the platform allows [A/B testing](../../../glossary/terms/ab-testing.md). What the writer thinks will work and what actually works are often different.
 
 ## Related terms
 
-- [headline](../../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/headline.md)
-- [value proposition](../../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/value-proposition.md)
+- [headline](../../../glossary/terms/headline.md)
+- [value proposition](../../../glossary/terms/value-proposition.md)
 - [above the fold](../../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/above-the-fold.md)
 - [hook](../../../../../../essay-writing-services-section/content/text/glossary/terms/hook.md)
-- [A/B testing](../../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/ab-testing.md)
+- [A/B testing](../../../glossary/terms/ab-testing.md)

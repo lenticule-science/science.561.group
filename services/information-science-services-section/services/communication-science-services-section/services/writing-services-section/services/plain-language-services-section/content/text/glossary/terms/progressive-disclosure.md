@@ -23,14 +23,14 @@ In this vault, progressive disclosure operates at several levels:
 - **Lessons** move from concrete examples to formal definitions, following [Richard Mayer](../../../../../../../../../knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/richard-mayer.md)'s finding that learners build understanding from examples to principles [@mayer2009].
 - **Headings** function as a scannable layer. The [plain language specification](../topics/plain-language/index.md) requires headings that are useful on their own (section 5.4) — readers should be able to scan headings and find what they need without reading the body text.
 
-Progressive disclosure connects to [cognitive load](../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/cognitive-load.md) theory: presenting all information simultaneously overloads working memory, while layering information lets readers process it at their own pace [@sweller1988]. It also connects to [task analysis](../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/task-analysis.md): progressive disclosure assumes that different readers need different depths of information, and structures content so each reader can stop at the level that serves their purpose.
+Progressive disclosure connects to [cognitive load](cognitive-load.md) theory: presenting all information simultaneously overloads working memory, while layering information lets readers process it at their own pace [@sweller1988]. It also connects to [task analysis](task-analysis.md): progressive disclosure assumes that different readers need different depths of information, and structures content so each reader can stop at the level that serves their purpose.
 
 The design module's [information architecture](../../design/disciplines/information-architecture/index.md) discipline treats progressive disclosure as a core IA principle. The writing module's concern is narrower: how to structure individual documents and document sets so that the reader encounters information in the order and at the depth they need.
 
 ## Related terms
 
 - [information architecture](../../../../../technical-writing-services-section/content/text/glossary/terms/information-architecture.md) — progressive disclosure is an IA strategy for managing complexity
-- [cognitive load](../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/cognitive-load.md) — progressive disclosure reduces cognitive load by layering information
-- [document design](../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/document-design.md) — headings, sections, and folding structures implement progressive disclosure visually
-- [task analysis](../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/task-analysis.md) — different tasks require different levels of detail; progressive disclosure supports this
+- [cognitive load](cognitive-load.md) — progressive disclosure reduces cognitive load by layering information
+- [document design](document-design.md) — headings, sections, and folding structures implement progressive disclosure visually
+- [task analysis](task-analysis.md) — different tasks require different levels of detail; progressive disclosure supports this
 - [minimalism](../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/minimalism.md) — minimalist documentation uses progressive disclosure to present information when the reader needs it

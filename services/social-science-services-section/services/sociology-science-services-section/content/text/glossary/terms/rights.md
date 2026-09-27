@@ -32,5 +32,5 @@ The sociological question about rights is not whether they exist in some philoso
 ## Related
 
 - [Due process](../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/notes/undated/due-process.md) — the procedural rights that protect against arbitrary state action
-- [Sovereignty](./sovereignty.md) — the authority against which rights claims are made
-- [Legitimacy](./legitimacy.md) — the social acceptance that rights claims can confer or withdraw
+- [Sovereignty](../../../../../law-science-services-section/content/text/glossary/terms/sovereignty.md) — the authority against which rights claims are made
+- [Legitimacy](../../../../services/critical-theory-science-services-section/services/anarchism-services-section/content/text/glossary/terms/legitimacy.md) — the social acceptance that rights claims can confer or withdraw

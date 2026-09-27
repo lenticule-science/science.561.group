@@ -31,7 +31,7 @@ By [InternalNucleusDefinability](../../../../../../services/agency-services-sect
 
 Both nuclei find room above $a$. The claim is below its σ-saturation (the historical maximum) and below its Δ-transfer (the universal forward floor). It is underdetermined in both temporal directions.
 
-The joint projection $\pi_t = \sigma_t \circ \Delta_t$ maps $a$ into $H^*_t$ in at most two steps — through the Δ-shadow ([Conjecture](from-philosophy-conjecture-claim.md)) or σ-shadow ([Corroborated](from-philosophy-corroborated-claim.md)) as intermediate positions. An Open claim is as far as any element can be from [Law](../../../../../../../../../social-science-services-section/content/text/glossary/terms/lawful-claim.md).
+The joint projection $\pi_t = \sigma_t \circ \Delta_t$ maps $a$ into $H^*_t$ in at most two steps — through the Δ-shadow ([Conjecture](from-philosophy-conjecture-claim.md)) or σ-shadow ([Corroborated](from-philosophy-corroborated-claim.md)) as intermediate positions. An Open claim is as far as any element can be from [Law](../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/content/text/glossary/terms/lawful-claim.md).
 
 ## What this is
 
@@ -39,7 +39,7 @@ An **Open** claim is a live question. Neither the backward record of history nor
 
 This is what "open problem" or "open question" names across all knowledge-work traditions: a problem that the historical record has not settled (no completed derivation, no established consensus) and that the forward trajectory of the field has not universally committed to (experiments disagree, extensions give different answers, no universal prediction converges on it).
 
-The word "open" is chosen with precision: not "unknown" (which would suggest the claim might be unanswerable), not "false" (which would place it at $\bot$), but *open* — live, under investigation, producing genuine inquiry. The relational hyperverse has no unanswerable questions in principle: the tower construction settles every element at some finite level, and at the colimit $\mathcal{H}$, modal collapse sends everything to [Law](../../../../../../../../../social-science-services-section/content/text/glossary/terms/lawful-claim.md). An Open claim is not permanently open; it is open *at this stage of the construction*.
+The word "open" is chosen with precision: not "unknown" (which would suggest the claim might be unanswerable), not "false" (which would place it at $\bot$), but *open* — live, under investigation, producing genuine inquiry. The relational hyperverse has no unanswerable questions in principle: the tower construction settles every element at some finite level, and at the colimit $\mathcal{H}$, modal collapse sends everything to [Law](../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/content/text/glossary/terms/lawful-claim.md). An Open claim is not permanently open; it is open *at this stage of the construction*.
 
 ## What the nuclear conditions mean for a knowledge claim
 
@@ -47,7 +47,7 @@ The word "open" is chosen with precision: not "unknown" (which would suggest the
 
 **Δ-open: the future has not committed.** There exist concurrent extensions $s \star t$ such that restricting back from $H_{s \star t}$ to $H_t$ gives something strictly above $a$. Different forward paths give different answers. The future has not converged on $a$ as the universal floor. Some extensions go higher; some might go differently.
 
-**Together:** An Open claim is at the maximum distance from the doubly-quiescent layer $H^*_t$. The joint projection $\pi_t = \sigma_t \circ \Delta_t$ must take at least two steps to land it in $H^*_t$ — first Δ-closure (producing a [Conjecture](from-philosophy-conjecture-claim.md): universal forward presence), then σ-closure (producing a [Law](../../../../../../../../../social-science-services-section/content/text/glossary/terms/lawful-claim.md): historical grounding). Or the path can go through σ first ([Corroborated](from-philosophy-corroborated-claim.md)) then Δ. Both paths lead to the same Law by the [CommutativeNuclearSquare](../../../../triage/math/commutative-nuclear-square.md).
+**Together:** An Open claim is at the maximum distance from the doubly-quiescent layer $H^*_t$. The joint projection $\pi_t = \sigma_t \circ \Delta_t$ must take at least two steps to land it in $H^*_t$ — first Δ-closure (producing a [Conjecture](from-philosophy-conjecture-claim.md): universal forward presence), then σ-closure (producing a [Law](../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/content/text/glossary/terms/lawful-claim.md): historical grounding). Or the path can go through σ first ([Corroborated](from-philosophy-corroborated-claim.md)) then Δ. Both paths lead to the same Law by the [CommutativeNuclearSquare](../../../../triage/math/commutative-nuclear-square.md).
 
 **In knowledge work:** An Open claim is the frontier. It has a name — it is a specific claim $a \in H_t$, not formless ignorance — but neither history nor forward projection has determined it. It is something we can point to, reason about, and work to settle. The corpus of the relational hyperverse contains many Open claims: these are exactly the elements whose `ast:` is not yet written, or whose ast has been computed and found to be free-shadow.
 
@@ -57,7 +57,7 @@ The word "open" is chosen with precision: not "unknown" (which would suggest the
 
 | Position | Nuclear condition | Epistemic status |
 |---|---|---|
-| [**Law**](../../../../../../../../../social-science-services-section/content/text/glossary/terms/lawful-claim.md) | $\sigma_t(a)=a$ and $\Delta_t(a)=a$ | Both past and future closed. |
+| [**Law**](../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/content/text/glossary/terms/lawful-claim.md) | $\sigma_t(a)=a$ and $\Delta_t(a)=a$ | Both past and future closed. |
 | [**Corroborated**](from-philosophy-corroborated-claim.md) | $\sigma_t(a)=a$ and $\Delta_t(a)\neq a$ | Past closed; future still open. |
 | [**Conjecture**](from-philosophy-conjecture-claim.md) | $\sigma_t(a)\neq a$ and $\Delta_t(a)=a$ | Future committed; past not yet grounding. |
 | **Open** | $\sigma_t(a)\neq a$ and $\Delta_t(a)\neq a$ | Both past and future open. |

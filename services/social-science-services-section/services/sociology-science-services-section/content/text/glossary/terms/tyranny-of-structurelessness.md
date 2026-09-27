@@ -32,5 +32,5 @@ Freeman's argument runs parallel to, and was developed independently of, Robert 
 ## Related terms
 
 - [Iron Law of Oligarchy](./iron-law-of-oligarchy.md) — Michels' parallel argument about formally structured organizations
-- [Vanguardism](./vanguardism.md) — the opposing strategic tradition, which Freeman's essay implicitly rebuts from a different direction than the anarchist critique already covered there
-- [Prefigurative Politics](./prefigurative-politics.md) — the tradition of building non-hierarchical relations in the present that Freeman's critique is most often read as chastening
+- [Vanguardism](../../../../services/critical-theory-science-services-section/services/marxism-services-section/content/text/glossary/terms/vanguardism.md) — the opposing strategic tradition, which Freeman's essay implicitly rebuts from a different direction than the anarchist critique already covered there
+- [Prefigurative Politics](../../../../services/critical-theory-science-services-section/services/anarchism-services-section/services/organization-services-section/content/text/glossary/terms/prefigurative-politics.md) — the tradition of building non-hierarchical relations in the present that Freeman's critique is most often read as chastening

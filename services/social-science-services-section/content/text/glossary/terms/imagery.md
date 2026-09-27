@@ -19,7 +19,7 @@ In poetry, imagery carries even more weight. A poem often builds its entire argu
 
 ## Related terms
 
-- [show don't tell](show-dont-tell.md) — imagery is the primary technique for showing
+- [show don't tell](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/fiction-services-section/content/text/glossary/terms/show-dont-tell.md) — imagery is the primary technique for showing
 - [diction](./diction.md) — specific, concrete word choice is what makes imagery vivid
 - [setting](setting.md) — established through imagery
 - [tone](./tone.md) — the selection and quality of images establishes tone
@@ -27,7 +27,7 @@ In poetry, imagery carries even more weight. A poem often builds its entire argu
 
 ## Related
 
-- [metaphor](metaphor.md) — figurative imagery that identifies one thing as another
+- [metaphor](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/poetry-services-section/content/text/glossary/terms/metaphor.md) — figurative imagery that identifies one thing as another
 - [simile](simile.md) — figurative imagery that compares explicitly
 - [lyric](lyric.md) — the lyric mode centers on image and feeling
 - [alliteration](alliteration.md) — sound imagery through consonant repetition
@@ -39,4 +39,4 @@ Ezra Pound defined the image as "that which presents an intellectual and emotion
 
 Imagery works through specificity. "A flower" produces no image; "a bruised peony, petals dropping into the sink" does. The specific detail activates the reader's sensory memory — they see, smell, or feel something particular, and that sensory grounding makes the poem's abstractions real.
 
-Images can be literal (describing what is actually present) or figurative (using [metaphor](metaphor.md) or [simile](simile.md) to connect what is present to something else). Most poems use both, moving between the concrete world and the associations it generates.
+Images can be literal (describing what is actually present) or figurative (using [metaphor](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/poetry-services-section/content/text/glossary/terms/metaphor.md) or [simile](simile.md) to connect what is present to something else). Most poems use both, moving between the concrete world and the associations it generates.

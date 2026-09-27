@@ -18,4 +18,4 @@ The sentences that follow the topic sentence develop it: providing evidence, exp
 
 Paragraph length is a [pacing](pacing.md) tool. Short paragraphs (one to three sentences) create urgency and emphasis. Long paragraphs (eight or more sentences) slow the reader down and develop ideas in depth. A page of uniformly long paragraphs feels dense; a page of uniformly short ones feels thin. Variation in paragraph length creates rhythm.
 
-In fiction, paragraphs serve additional purposes. A paragraph break can signal a shift in time, location, or perspective. A single-sentence paragraph creates emphasis through isolation. [Dialogue](dialogue.md) typically starts a new paragraph with each speaker change.
+In fiction, paragraphs serve additional purposes. A paragraph break can signal a shift in time, location, or perspective. A single-sentence paragraph creates emphasis through isolation. [Dialogue](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/fiction-services-section/content/text/glossary/terms/dialogue.md) typically starts a new paragraph with each speaker change.

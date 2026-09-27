@@ -9,4 +9,4 @@ visibility: public
 
 ***Subjectivity analysis*** is the [analysis](../../../../../../../philosophy-services-section/services/western-services-section/services/analytic-philosophy-services-section/content/text/glossary/terms/analysis.md) of [subjectivity](../../../../../../../philosophy-services-section/content/text/glossary/terms/subjectivity.md).
 
-[Psychoanalysis](psychoanalysis.md) is the currently dominant model of subjectivity analysis, though [my research](../../../../../../../philosophy-services-section/services/relationality-services-section/content/text/documents/articles/notes/undated/my-research.md) leans more toward [schizoanalysis](schizoanalysis.md).
+[Psychoanalysis](../../../../services/critical-theory-science-services-section/services/anarchism-services-section/content/text/glossary/terms/psychoanalysis.md) is the currently dominant model of subjectivity analysis, though [my research](../../../../../../../philosophy-services-section/services/relationality-services-section/content/text/documents/articles/notes/undated/my-research.md) leans more toward [schizoanalysis](schizoanalysis.md).

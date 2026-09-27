@@ -11,7 +11,7 @@ aliases:
 
 # Succession
 
-The Hohfeldian operation by which an office's incumbency transfers to the next-priority candidate when the current incumbent becomes unavailable. Per the library's [hohfeldian-succession term](../../../../../../../../../../../content/text/glossary/terms/hohfeldian-succession.md), a succession is a pair $(O, L)$ — an office and a priority-ordered list of candidate holders — together with an activation predicate that fires when the primary holder is unavailable.
+The Hohfeldian operation by which an office's incumbency transfers to the next-priority candidate when the current incumbent becomes unavailable. Per the library's [hohfeldian-succession term](../../../../../../governance-services-section/services/hohfeldian-services-section/content/text/glossary/terms/hohfeldian-succession.md), a succession is a pair $(O, L)$ — an office and a priority-ordered list of candidate holders — together with an activation predicate that fires when the primary holder is unavailable.
 
 ## Definition
 

@@ -45,7 +45,7 @@ data _⊎_ (A B : Set) : Set where
 -- Universal: dependent function type (x : A) → P x
 ```
 
-Because Agda is [intuitionistic](../../../../../../../../../../../../information-science-services-section/services/math-services-section/content/text/documents/articles/teaching-articles/explanations/intuitionistic-logic.md), [excluded middle](../../../../../../../../../../../../philosophy-services-section/content/text/glossary/terms/law-of-excluded-middle.md) is not available by default. A proof of `A ⊎ B` must supply a proof of `A` or a proof of `B` — you cannot argue "suppose neither, derive a contradiction."
+Because Agda is [intuitionistic](../../../../../../../../../../../../information-science-services-section/services/math-services-section/content/text/documents/articles/teaching-articles/explanations/intuitionistic-logic.md), [excluded middle](../../../../../../../../../../../../philosophy-services-section/services/western-services-section/services/analytic-philosophy-services-section/content/text/glossary/terms/law-of-excluded-middle.md) is not available by default. A proof of `A ⊎ B` must supply a proof of `A` or a proof of `B` — you cannot argue "suppose neither, derive a contradiction."
 
 ## Equational reasoning
 

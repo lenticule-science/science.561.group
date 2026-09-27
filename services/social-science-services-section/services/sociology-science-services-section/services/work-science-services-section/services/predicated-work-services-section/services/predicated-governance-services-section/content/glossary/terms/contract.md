@@ -68,7 +68,7 @@ Per the library's enterprise-vs-contract distinction, both involve commitments b
 
 ## Contract formation as second-quartet exercise
 
-Per the [hohfeldian-position](../../../../../../../../../../../content/text/glossary/terms/hohfeldian-position.md) text, contract formation is a second-quartet phenomenon. The substrate-algebraic content:
+Per the [hohfeldian-position](../../../../../../governance-services-section/services/hohfeldian-services-section/content/text/glossary/terms/hohfeldian-position.md) text, contract formation is a second-quartet phenomenon. The substrate-algebraic content:
 
 The four contractual jural relations — once formed by the offer-acceptance closure rule — are $\leq_k$-monotone at $\mathbf{t}$.
 By the [predication-settling CALM corollary](../../../../../../../../../../../../information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/formalization/infomaterial/lib/infomaterial/docs/verso/mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/content/sheaf/content/settling-cohomology/references/settling-calm-corollary.md):

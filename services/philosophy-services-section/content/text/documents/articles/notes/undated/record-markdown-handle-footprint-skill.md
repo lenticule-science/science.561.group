@@ -9,5 +9,5 @@ title: record-markdown-handle-footprint
 
 - Build the [interaction surface](../../../../../../services/relationality-services-section/services/interactive-semioverse-services-section/content/text/glossary/terms/interaction-surface.md) for the markdown handle.
 - Generate the handle fragment as the least fragment containing those terms.
-- Apply the [closure operator](../../research/2026/07/31/lenticule-import/library/philosophy/relationality/archive/domains/universes/concepts/closure-operator/index.md) to compute the [footprint](../../research/2026/07/31/lenticule-import/library/philosophy/relationality/archive/domains/universes/semiotic-universe/domains/interactive-semioverse/terms/footprint.md).
-- Record the [footprint](../../research/2026/07/31/lenticule-import/library/philosophy/relationality/archive/domains/universes/semiotic-universe/domains/interactive-semioverse/terms/footprint.md) summary and any delta against prior versions.
+- Apply the [closure operator](../../research/2026/07/31/lenticule-import/library/philosophy/relationality/archive/domains/universes/concepts/closure-operator/index.md) to compute the [footprint](../../../../../../services/relationality-services-section/services/interactive-semioverse-services-section/content/text/glossary/terms/footprint.md).
+- Record the [footprint](../../../../../../services/relationality-services-section/services/interactive-semioverse-services-section/content/text/glossary/terms/footprint.md) summary and any delta against prior versions.

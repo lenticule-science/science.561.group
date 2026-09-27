@@ -29,7 +29,7 @@ Legal scholarship studies what the law says. Political critique studies who the 
 
 When a cultural practice enters a legal proceeding, it is formatted — translated from its social context into a legal category. This formatting isn't interpretation. The court doesn't try to understand the zine; it uses the zine as evidence of something else. The practice's content, its community function, its history — all irrelevant. What matters is its institutional provenance and what it can be made to signal.
 
-This is a productive process in [Foucault](../../../../../philosophy/disciplines/critical-theory/schools/foucault/index.md)'s sense [@foucault1977]: the legal system doesn't passively observe social realities, it generates new ones. After the testimony, zine production is no longer just a cultural practice; it is also an [evidentiary credential](../../../../../../../../sociology-science-services-section/content/text/glossary/terms/evidentiary-credentialing.md). Institutions that become aware of this dual function face a new incentive: produce zines to demonstrate institutional character, regardless of any community relation.
+This is a productive process in [Foucault](../../../../../philosophy/disciplines/critical-theory/schools/foucault/index.md)'s sense [@foucault1977]: the legal system doesn't passively observe social realities, it generates new ones. After the testimony, zine production is no longer just a cultural practice; it is also an [evidentiary credential](../../../../../../../content/text/glossary/terms/evidentiary-credentialing.md). Institutions that become aware of this dual function face a new incentive: produce zines to demonstrate institutional character, regardless of any community relation.
 
 ## What sociological analysis adds
 

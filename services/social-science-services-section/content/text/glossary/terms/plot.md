@@ -21,4 +21,4 @@ Plot and [character](./character.md) are inseparable in practice. Henry James as
 - [conflict](conflict.md) — the engine that drives plot forward
 - [scene](scene.md) — the unit of narrative in which plot events occur
 - [character](./character.md) — plot and character are mutually constitutive
-- [narrator](narrator.md) — the narrator's choices about sequence and emphasis shape how the plot is experienced
+- [narrator](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/fiction-services-section/content/text/glossary/terms/narrator.md) — the narrator's choices about sequence and emphasis shape how the plot is experienced

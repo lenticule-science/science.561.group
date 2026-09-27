@@ -23,7 +23,7 @@ It does not ask whether everyone in comparable situations would be helped.
 The relation generates the obligation and the obligation generates the action.
 
 This is the temporal structure that distinguishes emergent obligation from rule-based systems.
-[Proceduralism](proceduralism.md) produces obligation through process: obligations exist because they were collectively established, transparently documented, and ratifiable by all affected parties.
+[Proceduralism](../../../../services/sociology-science-services-section/content/text/glossary/terms/proceduralism.md) produces obligation through process: obligations exist because they were collectively established, transparently documented, and ratifiable by all affected parties.
 This works when there is time to establish them.
 Under collapse — when conditions shift faster than procedures can track, when the people affected change from hour to hour, when the resources available transform between morning and night — procedural obligation cannot keep up.
 By the time the assembly ratifies the obligation, the situation it addressed no longer exists.

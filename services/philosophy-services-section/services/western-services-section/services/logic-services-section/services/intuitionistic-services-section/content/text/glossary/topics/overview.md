@@ -29,7 +29,7 @@ The inference rules that survive the transition from classical to intuitionistic
 
 | Retained | Lost |
 |----------|------|
-| Modus ponens | [Law of excluded middle](../../../../../../../../../../content/text/glossary/terms/law-of-excluded-middle.md) |
+| Modus ponens | [Law of excluded middle](../../../../../../../analytic-philosophy-services-section/content/text/glossary/terms/law-of-excluded-middle.md) |
 | Conjunction introduction and elimination | Double negation elimination |
 | Disjunction introduction | Strong contraposition |
 | Existential introduction (with [witness](../terms/witness.md)) | Non-constructive existence proofs |
@@ -45,6 +45,6 @@ This asymmetry is philosophically significant. It means that the space of propos
 
 ## Connecting to the broader project
 
-The constructivist orientation of intuitionistic logic connects it to [relational ontology](../../../../../../../../../../content/text/glossary/terms/relational-ontology.md) and [process philosophy](../../../../../disciplines/process-philosophy/index.md): in all three, what exists is constituted through activity rather than given in advance. The [semiotic universe](../../../../../../mathematics/objects/universes/semiotic-universe/index.md) is built on [Heyting algebras](../../../../../../mathematics/concepts/heyting-algebra/index.md) — the algebraic semantics of intuitionistic logic — because meaning, like mathematical truth under constructivism, admits degrees of determination that a binary framework cannot capture.
+The constructivist orientation of intuitionistic logic connects it to [relational ontology](../../../../../../../metaphysics-services-section/services/ontology-services-section/content/text/glossary/terms/relational-ontology.md) and [process philosophy](../../../../../disciplines/process-philosophy/index.md): in all three, what exists is constituted through activity rather than given in advance. The [semiotic universe](../../../../../../mathematics/objects/universes/semiotic-universe/index.md) is built on [Heyting algebras](../../../../../../mathematics/concepts/heyting-algebra/index.md) — the algebraic semantics of intuitionistic logic — because meaning, like mathematical truth under constructivism, admits degrees of determination that a binary framework cannot capture.
 
 Check for understanding: Why does ¬¬P → P fail in intuitionistic logic? What does the gap between ¬¬P and P represent?

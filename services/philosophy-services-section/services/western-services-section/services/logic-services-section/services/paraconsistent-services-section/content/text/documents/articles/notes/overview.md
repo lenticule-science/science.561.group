@@ -37,7 +37,7 @@ But this defense presupposes that consistency is always achievable and always th
 
 Paraconsistent logics differ in what they keep and what they discard from classical logic:
 
-- **LP (Logic of Paradox)**, Priest's system, retains [excluded middle](../../../../../../../../../../../content/text/glossary/terms/law-of-excluded-middle.md) and even [bivalence](../../../../../../../../../../../content/text/glossary/terms/bivalence.md) in a modified form (every proposition is true, false, or both). It rejects explosion and disjunctive syllogism (from A ∨ B and ¬A, infer B). LP is the logic of dialetheism.
+- **LP (Logic of Paradox)**, Priest's system, retains [excluded middle](../../../../../../../../analytic-philosophy-services-section/content/text/glossary/terms/law-of-excluded-middle.md) and even [bivalence](../../../../../../../../../../../content/text/glossary/terms/bivalence.md) in a modified form (every proposition is true, false, or both). It rejects explosion and disjunctive syllogism (from A ∨ B and ¬A, infer B). LP is the logic of dialetheism.
 - **Preservationism** (Schotch and Jennings) keeps classical logic but restricts the inference rules to avoid combining contradictory premises. Contradiction is quarantined rather than tolerated.
 - **Relevant logics** (Anderson and Belnap) require that the premises of a valid argument be relevant to the conclusion — that there be a real connection between hypothesis and conclusion. Explosion fails because A ∧ ¬A has no relevance connection to an arbitrary B.
 - **Belnap's four-valued logic** adds a "neither true nor false" value alongside "both true and false," producing a lattice of epistemic states suited to reasoning with incomplete and inconsistent information.

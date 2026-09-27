@@ -28,4 +28,4 @@ Linda Tuhiwai Smith (born 1950) is a Māori (Ngāti Awa, Ngāti Porou) scholar w
 ## Related
 
 - [Leanne Simpson](./leanne-simpson.md) — also works on Indigenous knowledge systems, from Nishnaabeg perspective
-- [land-based education](../../../../../../../../../../social-science-services-section/services/education-science-services-section/content/text/glossary/terms/land-based-education.md) — an approach her work supports
+- [land-based education](../../../../../../../../../../social-science-services-section/services/education-science-services-section/services/pedagogy-services-section/content/text/glossary/terms/land-based-education.md) — an approach her work supports

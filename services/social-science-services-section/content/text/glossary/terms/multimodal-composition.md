@@ -31,6 +31,6 @@ For this vault, multimodal composition raises practical questions:
 ## Related terms
 
 - [genre](genre.md) — multimodal composition raises questions about whether genres are defined by mode or by social action
-- [document design](./document-design.md) — document design is the practice of composing across visual and textual modes
+- [document design](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/plain-language-services-section/content/text/glossary/terms/document-design.md) — document design is the practice of composing across visual and textual modes
 - [rhetoric and composition](../topics/rhetoric-and-composition/index.md) — the discipline that studies multimodal composition
 - [discourse community](./discourse-community.md) — different discourse communities privilege different modes

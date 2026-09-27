@@ -93,7 +93,7 @@ The mechanisms remain, however, the standard analytical inventory in organizatio
 
 ## Distinguished from
 
-- **[Bureaucracy](bureaucracy.md)** — bureaucracy is a particular *form of organization* characterized by a particular combination of coordination mechanisms (heavy on standardization of work processes and direct supervision via the office hierarchy, light on mutual adjustment and standardization of norms).
+- **[Bureaucracy](../../../../services/sociology-science-services-section/services/critical-theory-science-services-section/services/anarchism-services-section/content/text/glossary/terms/bureaucracy.md)** — bureaucracy is a particular *form of organization* characterized by a particular combination of coordination mechanisms (heavy on standardization of work processes and direct supervision via the office hierarchy, light on mutual adjustment and standardization of norms).
   Coordination mechanisms are the elementary components; bureaucracy is one institutional configuration of them.
 - **[Scientific management](scientific-management.md)** — scientific management is a specific methodology for implementing standardization-of-work-processes coordination, originally for industrial production and subsequently extended to other domains.
   It is one tradition of one mechanism, not the whole vocabulary.
@@ -105,4 +105,4 @@ The mechanisms remain, however, the standard analytical inventory in organizatio
 ## Within this library
 
 Coordination mechanisms supply the design vocabulary the [classical-organization-theory-survey](../texts/classical-organization-theory-survey.md) draws on for its synthesis of mid-twentieth-century organization theory.
-The framework is the formal-organizational complement to [bureaucracy](bureaucracy.md)'s historical-sociological account, the design vocabulary against which [scientific-management](scientific-management.md) is read as a particular standardization-of-processes program, and the elementary inventory against which the [predicated-work tradition](_index.md) develops its alternative coordination apparatus.
+The framework is the formal-organizational complement to [bureaucracy](../../../../services/sociology-science-services-section/services/critical-theory-science-services-section/services/anarchism-services-section/content/text/glossary/terms/bureaucracy.md)'s historical-sociological account, the design vocabulary against which [scientific-management](scientific-management.md) is read as a particular standardization-of-processes program, and the elementary inventory against which the [predicated-work tradition](_index.md) develops its alternative coordination apparatus.

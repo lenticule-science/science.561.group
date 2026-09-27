@@ -16,7 +16,7 @@ small, guided exercise.
 
 ## Prerequisites
 
-- [Dialectics](../../../../../../../../../content/text/glossary/terms/dialectics.md)
+- [Dialectics](../../../glossary/terms/dialectics.md)
 - [Determinate Negation](../../../../../../../../../content/text/glossary/terms/determinate-negation.md)
 - [Mediation](../../../../../../../../../content/text/glossary/terms/mediation.md)
 - [Historicization](../../../../../../../../../content/text/glossary/terms/historicization.md)

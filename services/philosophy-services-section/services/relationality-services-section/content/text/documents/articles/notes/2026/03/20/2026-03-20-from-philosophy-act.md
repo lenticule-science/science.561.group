@@ -72,11 +72,11 @@ Acts partition by act-type $\alpha$. The principal act-types in this system, cla
 
 **Deontic acts** (world-to-word fit) — acts whose output binds future behavior:
 - [Commitment](2026-03-20-from-philosophy-commitment.md) ($\alpha = \mathrm{commit}$): $A$ submits $\varphi$ as a forward-stable obligation — output lands in $\mathrm{TrShadow}_t \cup H^*_t$; the act constrains future states to be compatible with $\varphi$
-- Authorization ($\alpha = \mathrm{authorize}$): $A$ exercises a [HohfeldianPosition](../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/hohfeldian-position.md) Power to alter another's normative position
+- Authorization ($\alpha = \mathrm{authorize}$): $A$ exercises a [HohfeldianPosition](../../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/services/hohfeldian-services-section/content/text/glossary/terms/hohfeldian-position.md) Power to alter another's normative position
 
 **Constitutive acts** (double direction of fit) — acts whose output both represents and creates an institutional fact:
 - Declaration ($\alpha = \mathrm{declare}$): $A$ performs a StatusFunctionDeclaration; $\varphi$ is an institutional fact created by the act itself; the act's performance constitutes $\varphi \in H^*_t$
-- [Investiture](../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/investiture.md) ($\alpha = \mathrm{invest}^+$): $A$ assumes a role, binding themselves to a deontic profile; the investiture record $\iota(A, O, t) \in H^*_t$ is produced directly
+- [Investiture](../../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/content/text/glossary/terms/investiture.md) ($\alpha = \mathrm{invest}^+$): $A$ assumes a role, binding themselves to a deontic profile; the investiture record $\iota(A, O, t) \in H^*_t$ is produced directly
 
 **Operational acts** (procedural fit) — acts in the FARS agent loop:
 - Read ($\alpha = \mathrm{read}$): $A$ reads a resource, producing $\varphi$ as the resource's content representation

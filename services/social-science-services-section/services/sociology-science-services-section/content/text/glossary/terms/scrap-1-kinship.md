@@ -25,6 +25,6 @@ Western anthropology has historically treated kinship as a classificatory system
 - [Grounded normativity](../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/notes/undated/grounded-normativity.md)
 - [Social reproduction](../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/notes/undated/social-reproduction.md)
 - [Mutual aid](/sociology/terms/mutual-aid.md)
-- [Compulsory heterosexuality](compulsory-heterosexuality.md) — the institution that organizes kinship around heterosexual reproduction
+- [Compulsory heterosexuality](../../../../services/critical-theory-science-services-section/services/queer-services-section/content/text/glossary/terms/compulsory-heterosexuality.md) — the institution that organizes kinship around heterosexual reproduction
 - [Queer theory](../../documents/articles/research/2026/07/31/lenticule-import/library/social-sciences/sociology/_archive/from-governing-locus-community/kinship/docs/dev/schools/queer/index.md) — interrogates the normative frameworks that govern kinship recognition
 - [Gayle Rubin](../../../../../../../information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/gayle-rubin.md) — analyzed kinship as the sex/gender system organizing the exchange of women

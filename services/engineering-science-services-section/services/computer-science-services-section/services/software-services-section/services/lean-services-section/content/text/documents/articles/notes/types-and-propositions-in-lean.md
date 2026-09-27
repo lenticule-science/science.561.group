@@ -106,7 +106,7 @@ This is the [Curry-Howard correspondence](../../../../../../../../../../../../in
 
 ## Classical reasoning
 
-Lean's logic is intuitionistic by default — [excluded middle](../../../../../../../../../../../../philosophy-services-section/content/text/glossary/terms/law-of-excluded-middle.md) is not assumed. To use
+Lean's logic is intuitionistic by default — [excluded middle](../../../../../../../../../../../../philosophy-services-section/services/western-services-section/services/analytic-philosophy-services-section/content/text/glossary/terms/law-of-excluded-middle.md) is not assumed. To use
 classical reasoning:
 
 ```lean
@@ -114,7 +114,7 @@ open Classical in
 theorem em_example (P : Prop) : P ∨ ¬P := em P
 ```
 
-`Classical.em` provides [excluded middle](../../../../../../../../../../../../philosophy-services-section/content/text/glossary/terms/law-of-excluded-middle.md) as an axiom. Lean also provides `Classical.choice`
+`Classical.em` provides [excluded middle](../../../../../../../../../../../../philosophy-services-section/services/western-services-section/services/analytic-philosophy-services-section/content/text/glossary/terms/law-of-excluded-middle.md) as an axiom. Lean also provides `Classical.choice`
 (a global choice principle). These are available but opt-in: you import them when you need
 them, and the proof explicitly records their use.
 

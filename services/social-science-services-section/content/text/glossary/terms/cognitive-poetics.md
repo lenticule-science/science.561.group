@@ -18,6 +18,6 @@ The [Write-for-a-Month](../curricula/write-for-a-month/index.md) curricula apply
 ## Related terms
 
 - [constraint-based composition](./constraint-based-composition.md) — the compositional method that cognitive poetics helps explain
-- [cognitive load](./cognitive-load.md) — the mental effort that constraints redistribute
-- [readability](./readability.md) — a related concern with how text structure affects comprehension
+- [cognitive load](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/plain-language-services-section/content/text/glossary/terms/cognitive-load.md) — the mental effort that constraints redistribute
+- [readability](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/plain-language-services-section/content/text/glossary/terms/readability.md) — a related concern with how text structure affects comprehension
 - [audience](../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/glossary/concepts/audience.md) — cognitive poetics specifies what the audience's cognitive apparatus does with the text

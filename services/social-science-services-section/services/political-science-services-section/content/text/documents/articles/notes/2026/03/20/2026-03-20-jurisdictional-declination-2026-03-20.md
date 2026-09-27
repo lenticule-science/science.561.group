@@ -67,7 +67,7 @@ The joint proposition "jurisdiction holds AND declination is issued" is a settle
 
 ## JurisdictionalDeclination and accountability
 
-$A$ is [Accountable](../../../../research/2026/07/31/lenticule-import/library/social-sciences/governing/content/terms/accountability.md) for the exercise of its jurisdiction: $A : \mathrm{Outcomes}(\mathcal{J}) \to \{A\}$ means $A$ is answerable for all outcomes within $\mathcal{J}$, including the outcome of not acting. A declination is itself an outcome within $\mathcal{J}$: it appears in $\mathrm{Outcomes}(\mathcal{J})$ and $A$ is accountable for it. This is the formal basis of "a court cannot escape accountability by simply refusing to hear cases within its jurisdiction without cause."
+$A$ is [Accountable](../../../../../../../../../sociology-science-services-section/services/work-science-services-section/services/governance-services-section/content/text/glossary/terms/accountability.md) for the exercise of its jurisdiction: $A : \mathrm{Outcomes}(\mathcal{J}) \to \{A\}$ means $A$ is answerable for all outcomes within $\mathcal{J}$, including the outcome of not acting. A declination is itself an outcome within $\mathcal{J}$: it appears in $\mathrm{Outcomes}(\mathcal{J})$ and $A$ is accountable for it. This is the formal basis of "a court cannot escape accountability by simply refusing to hear cases within its jurisdiction without cause."
 
 ## Open questions
 

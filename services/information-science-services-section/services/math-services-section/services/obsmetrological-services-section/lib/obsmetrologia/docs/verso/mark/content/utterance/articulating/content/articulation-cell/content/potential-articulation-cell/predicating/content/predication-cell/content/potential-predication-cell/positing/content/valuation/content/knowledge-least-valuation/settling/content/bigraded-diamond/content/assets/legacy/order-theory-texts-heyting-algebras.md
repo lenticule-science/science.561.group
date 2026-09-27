@@ -23,7 +23,7 @@ Use [Heyting algebras](../../../concepts/heyting-algebra/index.md) when you can:
 
 - Start from a [lattice](../terms/lattice.md) with top $\top$ and bottom $\bot$.
 - Define an implication operation $a \Rightarrow b$ for every pair of elements.
-- Accept that some elements may lack complements — [excluded middle](../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../philosophy-services-section/content/text/glossary/terms/law-of-excluded-middle.md) may fail.
+- Accept that some elements may lack complements — [excluded middle](../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../philosophy-services-section/services/western-services-section/services/analytic-philosophy-services-section/content/text/glossary/terms/law-of-excluded-middle.md) may fail.
 
 ## Definitions
 
@@ -39,7 +39,7 @@ for all $a, b, c \in H$.
 
 A [Heyting algebra](../../../concepts/heyting-algebra/index.md) is **complete** when every subset (not just every pair) has a meet and a join — that is, the underlying [lattice](../terms/lattice.md) is a complete [lattice](../terms/lattice.md).
 
-A **[Boolean algebra](../../../concepts/boolean-algebra/index.md)** is a [Heyting](../../../../general/people/arend-heyting.md) algebra where every element $a$ has a complement $\neg a$ such that $a \wedge \neg a = \bot$ and $a \vee \neg a = \top$. In a [Boolean algebra](../../../concepts/boolean-algebra/index.md), [excluded middle](../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../philosophy-services-section/content/text/glossary/terms/law-of-excluded-middle.md) holds universally. In a general [Heyting algebra](../../../concepts/heyting-algebra/index.md) it does not.
+A **[Boolean algebra](../../../concepts/boolean-algebra/index.md)** is a [Heyting](../../../../general/people/arend-heyting.md) algebra where every element $a$ has a complement $\neg a$ such that $a \wedge \neg a = \bot$ and $a \vee \neg a = \top$. In a [Boolean algebra](../../../concepts/boolean-algebra/index.md), [excluded middle](../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../philosophy-services-section/services/western-services-section/services/analytic-philosophy-services-section/content/text/glossary/terms/law-of-excluded-middle.md) holds universally. In a general [Heyting algebra](../../../concepts/heyting-algebra/index.md) it does not.
 
 ## Vocabulary (plain language)
 
@@ -91,7 +91,7 @@ This is a complete [Heyting algebra](../../../concepts/heyting-algebra/index.md)
 
 ## Common mistakes
 
-- Assuming [excluded middle](../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../philosophy-services-section/content/text/glossary/terms/law-of-excluded-middle.md). In a [Heyting algebra](../../../concepts/heyting-algebra/index.md), $a \vee \neg a = \top$ is not guaranteed. Check before using it.
+- Assuming [excluded middle](../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../philosophy-services-section/services/western-services-section/services/analytic-philosophy-services-section/content/text/glossary/terms/law-of-excluded-middle.md). In a [Heyting algebra](../../../concepts/heyting-algebra/index.md), $a \vee \neg a = \top$ is not guaranteed. Check before using it.
 - Confusing pseudocomplement with complement. The pseudocomplement $\neg a$ is the largest element disjoint from $a$, but $a$ and $\neg a$ may not cover the whole algebra.
 - Treating implication as material implication. In classical logic, $a \Rightarrow b$ equals $\neg a \vee b$. In a [Heyting](../../../../general/people/arend-heyting.md) algebra, this identity can fail.
 

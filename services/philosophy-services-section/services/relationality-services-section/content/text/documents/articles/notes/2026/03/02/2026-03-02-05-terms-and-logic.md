@@ -62,7 +62,7 @@ From order, the derivation forces:
 
 The result is a **[Heyting algebra](../../../../../../triage/relationality-2/ai-generated-relationality/disciplines/mathematics/concepts/heyting-algebra/index.md)** — the algebraic structure of constructive logic. (For the connection to standard mathematics, see [Relational Heyting Algebra](../../../../../../triage/relationality-2/ai-generated-relationality/disciplines/mathematics/concepts/heyting-algebra/index.md).)
 
-Why constructive logic and not classical? Classical logic assumes every proposition is either true or false (the [law of excluded middle](../../../../../../../../../../content/text/glossary/terms/law-of-excluded-middle.md)). Constructive logic does not — it requires that any claim of existence be backed by a construction. In the derivation, this is forced: nothing has been assumed, so nothing can be asserted without construction. The logic that emerges from the derivation is constructive because the derivation itself is constructive — every structure that exists has been derived.
+Why constructive logic and not classical? Classical logic assumes every proposition is either true or false (the [law of excluded middle](../../../../../../../../../western-services-section/services/analytic-philosophy-services-section/content/text/glossary/terms/law-of-excluded-middle.md)). Constructive logic does not — it requires that any claim of existence be backed by a construction. In the derivation, this is forced: nothing has been assumed, so nothing can be asserted without construction. The logic that emerges from the derivation is constructive because the derivation itself is constructive — every structure that exists has been derived.
 
 The algebra constrains the syntax (the term language from step 10):
 
@@ -120,7 +120,7 @@ Observation extracts what can be seen from a term in a context — it registers 
 <details>
 <summary>3. Why does the derivation produce constructive logic rather than classical logic?</summary>
 
-Classical logic assumes every proposition is true or false ([excluded middle](../../../../../../../../../../content/text/glossary/terms/law-of-excluded-middle.md)). But the derivation has not assumed anything — every structure has been derived by construction. A claim of existence in this framework must be backed by a construction, because nothing exists without having been derived. This forces constructive logic (a [Heyting algebra](../../../../../../triage/relationality-2/mathematics/concepts/heyting-algebra/index.md)) rather than classical logic (a [Boolean algebra](../../../../../../triage/relationality-2/mathematics/concepts/boolean-algebra/index.md)).
+Classical logic assumes every proposition is true or false ([excluded middle](../../../../../../../../../western-services-section/services/analytic-philosophy-services-section/content/text/glossary/terms/law-of-excluded-middle.md)). But the derivation has not assumed anything — every structure has been derived by construction. A claim of existence in this framework must be backed by a construction, because nothing exists without having been derived. This forces constructive logic (a [Heyting algebra](../../../../../../triage/relationality-2/mathematics/concepts/heyting-algebra/index.md)) rather than classical logic (a [Boolean algebra](../../../../../../triage/relationality-2/mathematics/concepts/boolean-algebra/index.md)).
 </details>
 
 <details>

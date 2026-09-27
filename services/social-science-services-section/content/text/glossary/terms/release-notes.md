@@ -17,12 +17,12 @@ Effective release notes follow a predictable structure:
 - **Version identifier and date** — which release this describes and when it was published.
 - **Summary** — a one-paragraph overview of the most significant changes.
 - **Categorized changes** — grouped by type: new features, improvements, bug fixes, breaking changes, deprecations. Breaking changes — anything that requires the reader to modify their existing usage — should be visually prominent.
-- **Migration guidance** — for breaking changes, specific instructions for updating. This is [procedural documentation](procedural-documentation.md) embedded within the release notes.
+- **Migration guidance** — for breaking changes, specific instructions for updating. This is [procedural documentation](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/technical-writing-services-section/content/text/glossary/terms/procedural-documentation.md) embedded within the release notes.
 
 The most common failure in release notes is writing them for the development team rather than for users. "Refactored the authentication module" describes what the developers did; "Login now supports two-factor authentication" describes what the user gains. The reader's question is always "what does this mean for me?" — not "what did you do?"
 
 ## Related terms
 
-- [procedural documentation](procedural-documentation.md) — migration guidance within release notes is procedural
+- [procedural documentation](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/technical-writing-services-section/content/text/glossary/terms/procedural-documentation.md) — migration guidance within release notes is procedural
 - [audience](../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/glossary/concepts/audience.md) — release notes are written for existing users, not new ones
 - [progressive disclosure](progressive-disclosure.md) — summary first, details for those who need them

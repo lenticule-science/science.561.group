@@ -26,4 +26,4 @@ emsenn's "A storm is a storm is a storm" (2025-09-22) argues that postliberalism
 
 ## Related
 
-- [Producerism](./producerism.md) — the rhetorical framework postliberalism deploys
+- [Producerism](../../../../services/critical-theory-science-services-section/services/postliberalism-services-section/content/text/glossary/terms/producerism.md) — the rhetorical framework postliberalism deploys

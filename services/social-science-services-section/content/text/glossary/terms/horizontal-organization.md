@@ -28,7 +28,7 @@ Horizontal organization connects to [federation](/sociology/terms/federation.md)
 ## Related terms
 
 - [Federation](/sociology/terms/federation.md)
-- [Prefigurative politics](../../../../services/sociology-science-services-section/content/text/glossary/terms/prefigurative-politics.md)
+- [Prefigurative politics](../../../../services/sociology-science-services-section/services/critical-theory-science-services-section/services/anarchism-services-section/services/organization-services-section/content/text/glossary/terms/prefigurative-politics.md)
 - [Anarchism](/sociology/terms/anarchism.md)
 - [Affinity group](/sociology/terms/affinity-group.md)
 - [Direct action](../../../../services/sociology-science-services-section/content/text/glossary/terms/direct-action.md)

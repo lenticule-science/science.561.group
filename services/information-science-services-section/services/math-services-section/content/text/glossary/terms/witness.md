@@ -7,7 +7,7 @@ A **witness** is the retained thing that shows how a claim holds. Keeping it kee
 
 ## In constructive logic
 
-A witness is a specific object satisfying an existential claim. To prove $\exists x.\,P(x)$ intuitionistically one must produce a particular $a$ together with a proof that $P(a)$; the object $a$ is the witness. By the BHK interpretation a proof of $\exists x.\,P(x)$ is the pair $(a, p)$, and under Curry–Howard it is a program computing that pair, so the witness requirement is also an effectiveness requirement: existence is backed by construction. A classical proof by contradiction shows that non-existence is impossible without saying what exists. In model theory the weaker, classical sense is any element satisfying a formula in a structure ([constructive proof](../../../../../../../philosophy-services-section/content/text/glossary/terms/constructive-proof.md)).
+A witness is a specific object satisfying an existential claim. To prove $\exists x.\,P(x)$ intuitionistically one must produce a particular $a$ together with a proof that $P(a)$; the object $a$ is the witness. By the BHK interpretation a proof of $\exists x.\,P(x)$ is the pair $(a, p)$, and under Curry–Howard it is a program computing that pair, so the witness requirement is also an effectiveness requirement: existence is backed by construction. A classical proof by contradiction shows that non-existence is impossible without saying what exists. In model theory the weaker, classical sense is any element satisfying a formula in a structure ([constructive proof](../../../../../../../philosophy-services-section/services/western-services-section/services/logic-services-section/services/intuitionistic-services-section/content/text/glossary/terms/constructive-proof.md)).
 
 ## In an articulation cell
 
@@ -30,6 +30,6 @@ The event log is the cumulative witness chain across all operator invocations. W
 - [Articulation cell](articulation-cell.md)
 - [Trace](trace.md)
 - [Curry–Howard translation](curry-howard-translation.md)
-- [Constructive proof](../../../../../../../philosophy-services-section/content/text/glossary/terms/constructive-proof.md)
+- [Constructive proof](../../../../../../../philosophy-services-section/services/western-services-section/services/logic-services-section/services/intuitionistic-services-section/content/text/glossary/terms/constructive-proof.md)
 - [Decidability](../../../../../../../philosophy-services-section/content/text/glossary/terms/decidability.md)
 - [Provenness](../../../../../../../philosophy-services-section/content/text/glossary/terms/provenness.md)

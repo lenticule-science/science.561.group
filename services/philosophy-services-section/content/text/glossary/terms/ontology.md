@@ -22,16 +22,16 @@ The word comes from the Greek *ontos* (being) and *logos* (study). Ontology does
 
 The dominant tradition in Western philosophy — *substance ontology* — answers that the world is made of independent things (substances) that have properties and enter into relations with each other. A rock exists on its own; its hardness is a [property](../../sociology/terms/property.md) it has; its sitting on a table is a relation it enters into. The rock comes first; relations come second.
 
-[Relational ontology](./relational-ontology.md) reverses this priority. Relations don't happen between pre-existing things; things are constituted through relations. The rock is what it is because of the relations it sustains — its molecular bonds, its position in a landscape, its history of formation. Change the relations, and you change the thing. This is the ontological position at the foundation of the [relationality](/relationality/index.md) project developed in this vault: relations are more fundamental than the entities they relate.
+[Relational ontology](../../../../services/western-services-section/services/metaphysics-services-section/services/ontology-services-section/content/text/glossary/terms/relational-ontology.md) reverses this priority. Relations don't happen between pre-existing things; things are constituted through relations. The rock is what it is because of the relations it sustains — its molecular bonds, its position in a landscape, its history of formation. Change the relations, and you change the thing. This is the ontological position at the foundation of the [relationality](/relationality/index.md) project developed in this vault: relations are more fundamental than the entities they relate.
 
-The distinction between substance ontology and [relational ontology](./relational-ontology.md) isn't abstract. It shapes how people think about identity, ecology, politics, and knowledge. If people are independent substances, then society is a contract between pre-formed individuals. If people are constituted through relations, then severing someone from their relations — from land, language, community — doesn't just inconvenience them; it changes what they are.
+The distinction between substance ontology and [relational ontology](../../../../services/western-services-section/services/metaphysics-services-section/services/ontology-services-section/content/text/glossary/terms/relational-ontology.md) isn't abstract. It shapes how people think about identity, ecology, politics, and knowledge. If people are independent substances, then society is a contract between pre-formed individuals. If people are constituted through relations, then severing someone from their relations — from land, language, community — doesn't just inconvenience them; it changes what they are.
 
 An ***ontology*** is a [theory](theory.md) of [being](being.md).
 
 ## Related terms
 
-- [Relational Ontology](./relational-ontology.md) — the position that relations are prior to entities
-- [Metaphysics](./metaphysics.md) — the broader study of the fundamental nature of reality, of which ontology is a part
+- [Relational Ontology](../../../../services/western-services-section/services/metaphysics-services-section/services/ontology-services-section/content/text/glossary/terms/relational-ontology.md) — the position that relations are prior to entities
+- [Metaphysics](../../../../services/western-services-section/services/metaphysics-services-section/content/text/glossary/terms/metaphysics.md) — the broader study of the fundamental nature of reality, of which ontology is a part
 - [Epistemology](./epistemology.md) — the study of knowledge; what you think exists shapes what you think counts as knowing
 - [Ontological turn](../topics/ontological-turn/index.md) — the movement in philosophy and anthropology that takes non-Western ontologies seriously
 - [Ontologization](./ontologization.md) — treating contingent arrangements as fixed features of reality

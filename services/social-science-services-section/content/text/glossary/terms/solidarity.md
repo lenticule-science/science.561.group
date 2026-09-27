@@ -8,7 +8,7 @@ description: "The practice of standing with others against shared conditions of 
 ---
 
 Solidarity is the practice of standing with others who face [domination](domination.md) — not because you feel sorry for them, not because helping them benefits you, but because you recognize that their struggle and yours are connected.
-It is the basic social relationship of [anarchist](../../../../../../../lib/legacy/2026-07-31-lenticule-science-corpus/animating/content/becoming/doing/working/governing/content/individual/content/agent/actuating/content/actuator/embodying/content/body/integrating/content/drone/swarming/content/swarm/content/social/_archive/sociology/content/critical-theory/theories/anarchism/_index.md) politics: the commitment to act together against shared conditions of [hierarchy](hierarchy.md), even when the specific hierarchy does not affect you directly.
+It is the basic social relationship of [anarchist](../../../../../../../lib/legacy/2026-07-31-lenticule-science-corpus/animating/content/becoming/doing/working/governing/content/individual/content/agent/actuating/content/actuator/embodying/content/body/integrating/content/drone/swarming/content/swarm/content/social/_archive/sociology/content/critical-theory/theories/anarchism/_index.md) politics: the commitment to act together against shared conditions of [hierarchy](../../../../services/sociology-science-services-section/services/critical-theory-science-services-section/services/anarchism-services-section/content/text/glossary/terms/hierarchy.md), even when the specific hierarchy does not affect you directly.
 
 Solidarity is not charity.
 Charity flows downward — from those who have to those who lack.
@@ -29,6 +29,6 @@ This is why solidarity is incompatible with [obedience](obedience.md): the obedi
 
 ## Related
 
-- [Freedom](../../../../services/sociology-science-services-section/content/text/glossary/terms/freedom.md) — the condition solidarity works toward
-- [The general strike](../../../../services/sociology-science-services-section/content/text/glossary/terms/the-general-strike.md) — solidarity as collective action
+- [Freedom](../../../../services/sociology-science-services-section/services/critical-theory-science-services-section/services/anarchism-services-section/content/text/glossary/terms/freedom.md) — the condition solidarity works toward
+- [The general strike](../../../../services/sociology-science-services-section/services/critical-theory-science-services-section/services/anarchism-services-section/content/text/glossary/terms/the-general-strike.md) — solidarity as collective action
 - [Direct action](../../../../services/sociology-science-services-section/content/text/glossary/terms/direct-action.md) — solidarity expressed without institutional mediation

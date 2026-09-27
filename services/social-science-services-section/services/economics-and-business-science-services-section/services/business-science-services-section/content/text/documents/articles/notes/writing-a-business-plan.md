@@ -54,7 +54,7 @@ Written last, placed first. The executive summary is the entire business plan co
 
 Include:
 - What the business is (concept, product/service, location)
-- Who it serves ([target market](../../../../../../../../sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/target-market.md), in one sentence)
+- Who it serves ([target market](../../../../../services/marketing-science-services-section/content/text/glossary/terms/target-market.md), in one sentence)
 - Why now (the opportunity or gap in the market)
 - How it makes money ([revenue model](../../../../../../../../sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/revenue-model.md), key numbers)
 - How much money is needed and what it's for ([use of funds](../../../../../../finance-science-services-section/content/text/glossary/terms/use-of-funds.md), one paragraph)
@@ -75,16 +75,16 @@ Include:
 
 What the business sells, in specific detail:
 - Menu or product catalog (not every item — representative examples with pricing)
-- What makes the offering distinctive (ties to [competitive analysis](../../../../../../../../sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/competitive-analysis.md))
+- What makes the offering distinctive (ties to [competitive analysis](../../../../../services/strategy-services-section/content/text/glossary/terms/competitive-analysis.md))
 - Sourcing (where key ingredients or materials come from)
 - Pricing approach (reference [pricing strategy](../../../../../../../../sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/pricing-strategy.md) — don't reproduce the entire analysis)
 
 ### 4. Market analysis (2–3 pages)
 
 Drawn from [Conducting Market Analysis](./conducting-market-analysis.md):
-- [Target market](../../../../../../../../sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/target-market.md) profile (demographics, psychographics, behavior)
+- [Target market](../../../../../services/marketing-science-services-section/content/text/glossary/terms/target-market.md) profile (demographics, psychographics, behavior)
 - Market size (how many potential customers, how much they spend)
-- [Competitive analysis](../../../../../../../../sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/competitive-analysis.md) (who else serves this market, how you're different)
+- [Competitive analysis](../../../../../services/strategy-services-section/content/text/glossary/terms/competitive-analysis.md) (who else serves this market, how you're different)
 - [SWOT analysis](../../../../../../../../sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/swot-analysis.md) (summarized — the full matrix plus the key strategic implications)
 
 ### 5. Marketing and sales strategy (1–2 pages)

@@ -7,7 +7,7 @@ type: babble
 description: Earlier today I was around Turntide Islands, talking about deciding praxis, especially climate breakdown praxis.
 ---
 
-Earlier today I was around [Turntide Islands](../../../../../../../../../philosophy-services-section/services/relationality-services-section/content/text/documents/articles/notes/undated/turntide-islands-index.md), talking about [deciding](../../../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/deciding.md) [praxis](../../../../../../../../../social-science-services-section/services/education-science-services-section/content/text/glossary/terms/praxis.md), especially [climate breakdown praxis](../../../../../../../../../philosophy-services-section/content/text/glossary/terms/climate-breakdown-praxis.md).
+Earlier today I was around [Turntide Islands](../../../../../../../../../philosophy-services-section/services/relationality-services-section/content/text/documents/articles/notes/undated/turntide-islands-index.md), talking about [deciding](../../../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/deciding.md) [praxis](../../../../../../../../../social-science-services-section/services/education-science-services-section/services/pedagogy-services-section/content/text/glossary/terms/praxis.md), especially [climate breakdown praxis](../../../../../../../../../philosophy-services-section/content/text/glossary/terms/climate-breakdown-praxis.md).
 
 And I said:
 

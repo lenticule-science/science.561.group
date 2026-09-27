@@ -30,10 +30,10 @@ The framework's central insight is that curriculum design is frequently done for
 
 This vault's curricula use backward design. Each [curriculum](./curriculum.md) begins with a target capability, identifies prerequisites, and sequences lessons to build toward that target. The pedagogy discipline's [designing effective lessons](../../../../services/pedagogy-services-section/content/text/documents/articles/notes/designing-effective-lessons.md) lesson describes this process in detail.
 
-Backward design is compatible with [critical pedagogy](../schools/critical-pedagogy/index.md) when the desired results include [conscientization](./conscientization.md) and the capacity for transformative action — though Wiggins and McTighe's framework does not itself address the politics of what counts as understanding or who determines the desired results. See [knowledge sovereignty](../../knowledge-transmission/terms/knowledge-sovereignty.md) for the question of who has authority over educational goals.
+Backward design is compatible with [critical pedagogy](../schools/critical-pedagogy/index.md) when the desired results include [conscientization](../../../../services/pedagogy-services-section/content/text/glossary/terms/conscientization.md) and the capacity for transformative action — though Wiggins and McTighe's framework does not itself address the politics of what counts as understanding or who determines the desired results. See [knowledge sovereignty](../../knowledge-transmission/terms/knowledge-sovereignty.md) for the question of who has authority over educational goals.
 
 ## Related terms
 
 - [curriculum](./curriculum.md) — the structured sequence that backward design produces
-- [conscientization](./conscientization.md) — a potential target of backward design in critical pedagogy
-- [scaffolding](../../../../../../content/text/glossary/terms/scaffolding.md) — the temporary support structures used within backward-designed instruction
+- [conscientization](../../../../services/pedagogy-services-section/content/text/glossary/terms/conscientization.md) — a potential target of backward design in critical pedagogy
+- [scaffolding](../../../../services/learning-services-section/content/text/glossary/terms/scaffolding.md) — the temporary support structures used within backward-designed instruction

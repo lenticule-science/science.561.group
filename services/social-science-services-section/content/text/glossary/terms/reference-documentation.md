@@ -11,7 +11,7 @@ tags: []
 
 ***Reference documentation*** is writing organized for lookup rather than reading — the dictionary, the API reference, the configuration guide, the glossary. Its readers know what they're looking for; they need to find it quickly, get the answer, and return to their work.
 
-Reference documentation is distinguished from [procedural documentation](procedural-documentation.md) and [tutorials](tutorial.md) by its structure. Procedures are ordered by task sequence; tutorials are ordered by learning progression; reference documentation is ordered by the system's structure — alphabetically, by component, by function, by parameter. The organizing principle is findability, not narrative.
+Reference documentation is distinguished from [procedural documentation](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/technical-writing-services-section/content/text/glossary/terms/procedural-documentation.md) and [tutorials](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/technical-writing-services-section/content/text/glossary/terms/tutorial.md) by its structure. Procedures are ordered by task sequence; tutorials are ordered by learning progression; reference documentation is ordered by the system's structure — alphabetically, by component, by function, by parameter. The organizing principle is findability, not narrative.
 
 Effective reference documentation provides, for each entry:
 
@@ -27,6 +27,6 @@ The challenge of reference documentation is balancing completeness with usabilit
 ## Related terms
 
 - [API documentation](api-documentation.md) — the most common form of reference documentation in software
-- [procedural documentation](procedural-documentation.md) — organized by task rather than by structure
-- [tutorial](tutorial.md) — organized by learning progression
-- [information architecture](information-architecture.md) — the organizational principles that make reference documentation findable
+- [procedural documentation](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/technical-writing-services-section/content/text/glossary/terms/procedural-documentation.md) — organized by task rather than by structure
+- [tutorial](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/technical-writing-services-section/content/text/glossary/terms/tutorial.md) — organized by learning progression
+- [information architecture](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/technical-writing-services-section/content/text/glossary/terms/information-architecture.md) — the organizational principles that make reference documentation findable

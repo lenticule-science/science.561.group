@@ -14,7 +14,7 @@ The legal requirements vary by jurisdiction — offer, acceptance, consideration
 
 Contract is the legal form of market exchange.
 Every purchase, employment relationship, lease, and business partnership is mediated by contract.
-This makes contract law the infrastructure of [capitalism](../../../../services/sociology-science-services-section/content/text/glossary/terms/capitalism.md): without enforceable agreements, complex economic coordination falls apart.
+This makes contract law the infrastructure of [capitalism](../../../../services/sociology-science-services-section/services/critical-theory-science-services-section/services/anarchism-services-section/content/text/glossary/terms/capitalism.md): without enforceable agreements, complex economic coordination falls apart.
 The freedom to contract — to enter voluntary agreements on terms of one's choosing — is one of the central values of liberal legal systems.
 
 But the freedom of contract is formal, not substantive.

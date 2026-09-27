@@ -9,9 +9,9 @@ see-also:
 ---
 
 Civil law (in the sense of private law, not the civil law tradition of continental Europe) is the body of rules governing disputes between private parties — individuals, corporations, organizations.
-Where [criminal law](criminal-law.md) is brought by the state and results in punishment, civil law is brought by one party against another and typically results in compensation, injunctions, or declaratory judgments.
+Where [criminal law](../../../../services/law-science-services-section/content/text/glossary/terms/criminal-law.md) is brought by the state and results in punishment, civil law is brought by one party against another and typically results in compensation, injunctions, or declaratory judgments.
 
-The major branches of civil law include [contract](contract.md) (enforceable agreements), [tort](../../../../services/sociology-science-services-section/content/text/glossary/terms/tort.md) (civil wrongs causing harm), property (rights over things), and family law (marriage, divorce, custody, inheritance).
+The major branches of civil law include [contract](../../../../services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/content/text/glossary/terms/contract.md) (enforceable agreements), [tort](../../../../services/sociology-science-services-section/content/text/glossary/terms/tort.md) (civil wrongs causing harm), property (rights over things), and family law (marriage, divorce, custody, inheritance).
 Each branch has its own doctrines, procedures, and policy concerns, but all share the basic civil law structure: a private plaintiff, a private defendant, and a remedy aimed at restoring the plaintiff to the position they would have occupied absent the wrong.
 
 The distinction between criminal and civil law is structural, not moral.

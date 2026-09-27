@@ -104,7 +104,7 @@ The principles of web writing apply to microcopy at an extreme scale:
 
 - [microcopy](../../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/microcopy.md)
 - [brand voice](../../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/brand-voice.md)
-- [headline](../../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/headline.md)
+- [headline](../../../glossary/terms/headline.md)
 - [call to action](../../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/call-to-action.md)
 - [above the fold](../../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/above-the-fold.md)
 - [plain language](../../../topics/plain-language/index.md)

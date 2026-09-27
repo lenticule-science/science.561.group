@@ -16,7 +16,7 @@ lookup when reading or writing dialectical analysis.
 
 ## Core terms
 
-- **[Dialectics](../../../../../../../../../content/text/glossary/terms/dialectics.md)**: analysis of development
+- **[Dialectics](../../../glossary/terms/dialectics.md)**: analysis of development
   through internal contradiction.
 - **[Determinate Negation](../../../../../../../../../content/text/glossary/terms/determinate-negation.md)**:
   transformation specific to a form's own limits.

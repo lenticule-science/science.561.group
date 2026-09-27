@@ -31,6 +31,6 @@ Rudolf Flesch (1911–1986) was an Austrian-American readability researcher and 
 
 ## Related
 
-- [readability](../../../../../../../../../../social-science-services-section/content/text/glossary/terms/readability.md) — the concept his formulas attempted to quantify
+- [readability](../../../../../../../../communication-science-services-section/services/writing-services-section/services/plain-language-services-section/content/text/glossary/terms/readability.md) — the concept his formulas attempted to quantify
 - [Janice Redish](./janice-redish.md) — extended plain language from readability metrics to usability testing
 - [plain language writing](../../writing/topics/plain-language/index.md) — the tradition Flesch helped establish

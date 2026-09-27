@@ -31,9 +31,9 @@ Wayne C. Booth (1921–2005) was an American literary critic and rhetorician at 
 ## Related
 
 - [fiction writing](../../writing/disciplines/fiction/index.md) — Booth is a key thinker for the fiction discipline
-- [narrator](../../../../../../../../../../social-science-services-section/content/text/glossary/terms/narrator.md) — Booth's reliability concept defines how narrators are analyzed
+- [narrator](../../../../../../../../communication-science-services-section/services/writing-services-section/services/fiction-services-section/content/text/glossary/terms/narrator.md) — Booth's reliability concept defines how narrators are analyzed
 - [point of view](../../writing/disciplines/fiction/terms/point-of-view.md) — the implied author adds a layer beyond POV categories
-- [show don't tell](../../../../../../../../../../social-science-services-section/content/text/glossary/terms/show-dont-tell.md) — Booth argued that showing and telling are both rhetorical choices
+- [show don't tell](../../../../../../../../communication-science-services-section/services/writing-services-section/services/fiction-services-section/content/text/glossary/terms/show-dont-tell.md) — Booth argued that showing and telling are both rhetorical choices
 - [rhetoric and composition](../../writing/topics/rhetoric-and-composition/index.md) — the discipline Booth's work bridges with literary studies
 - [genre](../../../../../../../../communication-science-services-section/services/writing-services-section/services/rhetoric-and-composition-services-section/content/text/glossary/terms/genre.md) — Booth's analysis of fiction's rhetoric applies genre theory to narrative
 - [audience](../../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/glossary/concepts/audience.md) — the implied author concept clarifies the writer-reader relationship

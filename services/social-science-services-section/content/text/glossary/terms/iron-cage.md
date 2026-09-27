@@ -72,5 +72,5 @@ The mistranslation has substantive consequences for what the image is taken to c
 
 ## Within this library
 
-The iron cage is the diagnostic image that frames Weber's account of [bureaucracy](bureaucracy.md) and is the macro-historical companion to the [Weber on bureaucracy and legitimacy survey](theories/governance/texts/weber-bureaucracy-and-legitimacy-survey.md).
+The iron cage is the diagnostic image that frames Weber's account of [bureaucracy](../../../../services/sociology-science-services-section/services/critical-theory-science-services-section/services/anarchism-services-section/content/text/glossary/terms/bureaucracy.md) and is the macro-historical companion to the [Weber on bureaucracy and legitimacy survey](theories/governance/texts/weber-bureaucracy-and-legitimacy-survey.md).
 The image returns transformed in the [labor-process-theory-survey](../texts/labor-process-theory-survey.md) (Burawoy on the manufacture of consent within the cage), in the [orders-of-worth-survey](theories/governance/texts/orders-of-worth-survey.md) (the industrial order of worth as one cité within the cage), and in the [algorithmic-governance-and-governance-by-indicators-survey](theories/governance/texts/algorithmic-governance-and-governance-by-indicators-survey.md) (the contemporary algorithmic-quantitative form the cage is taking).

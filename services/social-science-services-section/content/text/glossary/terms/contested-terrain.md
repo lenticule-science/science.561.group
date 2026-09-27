@@ -92,7 +92,7 @@ The technologies, procedures, and personnel systems are *moves in the antagonism
   The frameworks are compatible: deskilling is one of the moves capital makes in the contest, especially under technical and bureaucratic control regimes.
 - **Industrial relations** as a field — conventional industrial relations treats the capital-labor relation through its institutionalized expressions (collective bargaining, grievance procedures, labor law).
   Edwards treats the same expressions as *settlements* (always provisional) of the underlying contest, and reads the institutional forms in light of the contest they presuppose.
-- **Bureaucracy** ([Weber](bureaucracy.md)) — Weber's bureaucracy is a general administrative form across state, firm, party, and army.
+- **Bureaucracy** ([Weber](../../../../services/sociology-science-services-section/services/critical-theory-science-services-section/services/anarchism-services-section/content/text/glossary/terms/bureaucracy.md)) — Weber's bureaucracy is a general administrative form across state, firm, party, and army.
   Edwards's *bureaucratic control* is the firm-specific deployment of bureaucratic apparatus to manage the labor process.
   Many bureaucratic features Weber identifies (rule-bound impersonal authority, written documentation, expert qualification) reappear in Edwards's bureaucratic-control regime, but Edwards reads them through the capital-labor antagonism Weber bracketed.
 

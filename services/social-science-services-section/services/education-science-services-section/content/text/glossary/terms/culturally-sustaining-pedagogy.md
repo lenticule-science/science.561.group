@@ -35,16 +35,16 @@ The framework developed through three generations:
 
 The framework connects to several traditions in this vault:
 
-- **[Black radical pedagogies](../schools/black-radical-pedagogies/index.md)** share the commitment to education that serves Black communities rather than assimilating them into dominant culture. The [freedom school](./freedom-school.md) tradition is culturally sustaining in practice.
+- **[Black radical pedagogies](../schools/black-radical-pedagogies/index.md)** share the commitment to education that serves Black communities rather than assimilating them into dominant culture. The [freedom school](../../../../services/pedagogy-services-section/content/text/glossary/terms/freedom-school.md) tradition is culturally sustaining in practice.
 - **[Indigenous pedagogies](../schools/indigenous-pedagogies/index.md)** go further: they do not merely sustain Indigenous cultures within institutional settings but assert that Indigenous knowledge systems are independent and self-governing. [Knowledge sovereignty](../../knowledge-transmission/terms/knowledge-sovereignty.md) is the stronger claim.
-- **[Miseducation](./miseducation.md)** names what culturally sustaining pedagogy opposes: education that teaches students to despise their own cultures and defer to dominant ones.
+- **[Miseducation](../../../../services/pedagogy-services-section/content/text/glossary/terms/miseducation.md)** names what culturally sustaining pedagogy opposes: education that teaches students to despise their own cultures and defer to dominant ones.
 
-The framework's limitation is that it can be absorbed into institutional reform without challenging the institutions themselves. Culturally sustaining pedagogy can be practiced within schools that remain structurally unchanged — adding cultural content without redistributing power. The traditions of [popular education](./popular-education.md), [deschooling](./deschooling.md), and [anarchist pedagogies](../schools/anarchist-pedagogies/index.md) raise the question of whether institutional education can be culturally sustaining without structural transformation.
+The framework's limitation is that it can be absorbed into institutional reform without challenging the institutions themselves. Culturally sustaining pedagogy can be practiced within schools that remain structurally unchanged — adding cultural content without redistributing power. The traditions of [popular education](../../../../services/pedagogy-services-section/content/text/glossary/terms/popular-education.md), [deschooling](../../../../services/pedagogy-services-section/content/text/glossary/terms/deschooling.md), and [anarchist pedagogies](../schools/anarchist-pedagogies/index.md) raise the question of whether institutional education can be culturally sustaining without structural transformation.
 
 ## Related terms
 
-- [miseducation](./miseducation.md) — the condition culturally sustaining pedagogy addresses
-- [hidden curriculum](./hidden-curriculum.md) — the institutional structures that undermine cultural sustenance
-- [freedom school](./freedom-school.md) — community-controlled education that sustains Black cultural practices
+- [miseducation](../../../../services/pedagogy-services-section/content/text/glossary/terms/miseducation.md) — the condition culturally sustaining pedagogy addresses
+- [hidden curriculum](../../../../services/pedagogy-services-section/content/text/glossary/terms/hidden-curriculum.md) — the institutional structures that undermine cultural sustenance
+- [freedom school](../../../../services/pedagogy-services-section/content/text/glossary/terms/freedom-school.md) — community-controlled education that sustains Black cultural practices
 - [knowledge sovereignty](../../knowledge-transmission/terms/knowledge-sovereignty.md) — the broader claim that communities govern their own knowledge systems
-- [engaged pedagogy](./engaged-pedagogy.md) — hooks' framework for teaching that honors the whole person, including cultural identity
+- [engaged pedagogy](../../../../services/pedagogy-services-section/content/text/glossary/terms/engaged-pedagogy.md) — hooks' framework for teaching that honors the whole person, including cultural identity

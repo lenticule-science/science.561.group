@@ -23,7 +23,7 @@ keywords:
 ## Assumed audience
 
 - Reading level: comfortable writing prose; new to writing documentation for others.
-- Background: has written essays or reports but not [procedural documentation](../../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/procedural-documentation.md) or reference material for unfamiliar readers.
+- Background: has written essays or reports but not [procedural documentation](../../../glossary/terms/procedural-documentation.md) or reference material for unfamiliar readers.
 - Goal: learn to analyze an audience and organize documentation around the reader's tasks.
 
 ## The fundamental problem
@@ -44,13 +44,13 @@ Classification is useful but limited. It tells you about the reader's category, 
 
 **Intuition-based analysis** imagines a specific reader and predicts what they'll understand and where they'll struggle. This is what most writers do by default — they picture a reader and write for that person. The problem, as Schriver's research showed, is that writers' intuitions about readers are often wrong. We imagine a reader much like ourselves, which leads us to assume shared knowledge that doesn't exist.
 
-**Feedback-based analysis** tests the document with real readers. [Think-aloud protocols](../../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/think-aloud-protocol.md) — where a reader verbalizes their thought process while using a document — are the most revealing form. They show not just what the reader didn't understand but how they misunderstood, what they expected, and where the document's structure failed them.
+**Feedback-based analysis** tests the document with real readers. [Think-aloud protocols](../../../../../../plain-language-services-section/content/text/glossary/terms/think-aloud-protocol.md) — where a reader verbalizes their thought process while using a document — are the most revealing form. They show not just what the reader didn't understand but how they misunderstood, what they expected, and where the document's structure failed them.
 
 Schriver's research found that feedback-based methods are the only ones that reliably reveal comprehension failures. Classification and intuition can guide a first draft; feedback should inform revision.
 
 ## Task analysis
 
-[Task analysis](../../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/task-analysis.md) breaks a process into the steps a reader needs to follow. It is the foundation of [procedural documentation](../../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/procedural-documentation.md) — instructions, how-tos, tutorials.
+[Task analysis](../../../../../../plain-language-services-section/content/text/glossary/terms/task-analysis.md) breaks a process into the steps a reader needs to follow. It is the foundation of [procedural documentation](../../../glossary/terms/procedural-documentation.md) — instructions, how-tos, tutorials.
 
 The procedure for conducting a task analysis:
 
@@ -81,8 +81,8 @@ The principle behind this practice: make the reader's expected knowledge explici
 ## Related terms
 
 - [audience](../../../../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/glossary/concepts/audience.md)
-- [task analysis](../../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/task-analysis.md)
+- [task analysis](../../../../../../plain-language-services-section/content/text/glossary/terms/task-analysis.md)
 - [writer-based prose](../../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/writer-based-prose.md)
-- [usability testing](../../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/usability-testing.md)
-- [protocol-aided audience analysis](../../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/protocol-aided-audience-analysis.md)
-- [procedural documentation](../../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/procedural-documentation.md)
+- [usability testing](../../../../../../plain-language-services-section/content/text/glossary/terms/usability-testing.md)
+- [protocol-aided audience analysis](../../../../../../plain-language-services-section/content/text/glossary/terms/protocol-aided-audience-analysis.md)
+- [procedural documentation](../../../glossary/terms/procedural-documentation.md)

@@ -24,7 +24,7 @@ A **MesoFocus** is a triple $\mathcal{F}_{\mathrm{mes}} = (H_{t^*}, j, \mathrm{F
 $$\mathcal{F}_{\mathrm{mes}} = (H_{t^*} : \mathbf{HA}_{\mathrm{nucl}},\; j : H_{t^*} \to H_{t^*},\; \mathrm{Fix}(j) \subseteq H_{t^*})$$
 
 where:
-- $H_{t^*}$ is the **focal fiber** — the Heyting algebra obtained from a [MacroFocus](./macrofocus.md) $(H, t^*)$ at the designated history $t^*$; it carries the relational universe's nuclear pair $(\sigma_{t^*}, \Delta_{t^*})$
+- $H_{t^*}$ is the **focal fiber** — the Heyting algebra obtained from a [MacroFocus](macrofocus.md) $(H, t^*)$ at the designated history $t^*$; it carries the relational universe's nuclear pair $(\sigma_{t^*}, \Delta_{t^*})$
 - $j : H_{t^*} \to H_{t^*}$ is the **focal nucleus** — an internal nuclear endomorphism on $H_{t^*}$: idempotent ($j \circ j = j$), monotone ($a \leq b \Rightarrow j(a) \leq j(b)$), inflationary ($a \leq j(a)$), and a Heyting algebra endomorphism ($j(a \wedge b) = j(a) \wedge j(b)$)
 - $\mathrm{Fix}(j) = \{a \in H_{t^*} : j(a) = a\}$ is the **focal sublocale** — the sub-Heyting-algebra of elements already at their $j$-closure; in locale theory, this is the **closed sublocale** defined by $j$; it is the "settled" region of $H_{t^*}$ relative to the nucleus $j$
 
@@ -85,7 +85,7 @@ In the three-level focus stack from [Focus](./focus.md), MesoFocus is Level 2:
 
 | Level | Answers | Math object |
 |---|---|---|
-| **Level 1** ([MacroFocus](./macrofocus.md)) | *Which fiber is the current working context?* | $(H, t^*)$ — pointed presheaf |
+| **Level 1** ([MacroFocus](macrofocus.md)) | *Which fiber is the current working context?* | $(H, t^*)$ — pointed presheaf |
 | **Level 2** (MesoFocus) | *What is settled within the working fiber?* | $(H_{t^*}, j, \mathrm{Fix}(j))$ — nuclear sublocale |
 | **Level 3** ([MicroFocus](../../../../../../../../content/text/glossary/terms/microfocus.md)) | *What specific element is being processed now?* | $(H_{t^*}, a^*)$ — designated element |
 

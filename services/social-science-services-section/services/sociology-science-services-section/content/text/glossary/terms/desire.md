@@ -28,7 +28,7 @@ This is the mechanism [anarcho-nihilism](../_index.md) identifies as the central
 
 ## Desire and recuperation
 
-Desire is also vulnerable to [recuperation](recuperation.md) precisely because it targets an object. Systems of domination can redirect desire by offering substitute objects: the desire for freedom becomes the desire for consumer choice; the desire for community becomes the desire for brand belonging; the desire for meaningful work becomes the desire for a fulfilling career. [Capitalism](capitalism.md) is, among other things, a machine for producing substitute objects of desire — commodities that promise to fill the lack that desire is structured around, and that never do, because the lack is structural, not incidental. You buy the product, the lack persists, you buy another product. The circuit of desire and consumption is endless because desire's non-fulfillment is its operating principle.
+Desire is also vulnerable to [recuperation](recuperation.md) precisely because it targets an object. Systems of domination can redirect desire by offering substitute objects: the desire for freedom becomes the desire for consumer choice; the desire for community becomes the desire for brand belonging; the desire for meaningful work becomes the desire for a fulfilling career. [Capitalism](../../../../services/critical-theory-science-services-section/services/anarchism-services-section/content/text/glossary/terms/capitalism.md) is, among other things, a machine for producing substitute objects of desire — commodities that promise to fill the lack that desire is structured around, and that never do, because the lack is structural, not incidental. You buy the product, the lack persists, you buy another product. The circuit of desire and consumption is endless because desire's non-fulfillment is its operating principle.
 
 This is why the anarcho-nihilist turn from desire to [drive](./drive.md) matters strategically, not only philosophically. Desire can be redirected because it has an object; drive cannot, because it does not. The shift from desire-based to drive-based resistance is a shift from a form of political engagement that the system can capture to one that it cannot.
 
@@ -38,5 +38,5 @@ Desire is not something anarcho-nihilism rejects in favor of drive. Desire is ho
 
 ## Related
 
-- [jouissance](./jouissance.md) — what drive produces and desire cannot access
-- [refusal](refusal.md) — what operates at the level of drive
+- [jouissance](../../../../services/critical-theory-science-services-section/services/anarchism-services-section/services/anarcho-nihilism-services-section/content/text/glossary/terms/jouissance.md) — what drive produces and desire cannot access
+- [refusal](../../../../services/critical-theory-science-services-section/services/anarchism-services-section/services/strategy-services-section/content/text/glossary/terms/refusal.md) — what operates at the level of drive

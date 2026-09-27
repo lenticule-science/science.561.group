@@ -39,7 +39,7 @@ Terms and definitions related to Information.
 
 - [discipline](/library/domains/science/domains/information/terms/discipline/) 2026-03-07
 
-- [Programmability](/library/domains/science/domains/information/terms/programmability/) 2026-03-03
+- [Programmability](../../../../../../../../../../../information-science-services-section/content/text/glossary/terms/programmability.md) 2026-03-03
 
 - [school](/library/domains/science/domains/information/terms/school/) 2026-03-07
 

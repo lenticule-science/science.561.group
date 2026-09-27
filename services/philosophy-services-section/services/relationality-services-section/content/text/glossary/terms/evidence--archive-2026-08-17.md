@@ -17,13 +17,13 @@ The framework recognizes the distinction because the four resulting configuratio
 - **Affirming evidence high, denying low** — the claim is settled toward [true](true.md).
 - **Affirming evidence low, denying high** — the claim is settled toward [false](false.md).
 - **Both high** — the claim is settled with evidence in both directions; the system has [recognized](recognition.md) genuine contradiction or controversy. The framework treats this as a positive datum rather than as a defect to be resolved by collapsing one side.
-- **Both low** — the claim is unsettled; no evidence has accumulated. This is the [absurd](../../../../../../content/text/glossary/terms/absurd.md) corner, where the claim holds (if it holds at all) only on bare assertion without evidential support.
+- **Both low** — the claim is unsettled; no evidence has accumulated. This is the [absurd](absurd.md) corner, where the claim holds (if it holds at all) only on bare assertion without evidential support.
 
 These four configurations correspond to the four corners of the framework's [settlement](settlement.md) structure, and to the four canonical evidence values of the framework's mathematical [bilattice](../../../../math/domains/voidmath/terms/bilattice.md).
 
 ## Evidence is positive
 
-Evidence in the framework's sense is always *positive achievement*. Affirming evidence is something witnessed *for* the claim; denying evidence is something witnessed *against*. The mere absence of affirming evidence is not denying evidence — it is just absence, the [absurd](../../../../../../content/text/glossary/terms/absurd.md) state of un-witnessed-ness. The framework's distinction between *no evidence* and *negative evidence* rests on this: both are achievements, not defaults, and the two are structurally distinct.
+Evidence in the framework's sense is always *positive achievement*. Affirming evidence is something witnessed *for* the claim; denying evidence is something witnessed *against*. The mere absence of affirming evidence is not denying evidence — it is just absence, the [absurd](absurd.md) state of un-witnessed-ness. The framework's distinction between *no evidence* and *negative evidence* rests on this: both are achievements, not defaults, and the two are structurally distinct.
 
 This positivity is what distinguishes a claim that has been refuted (denying evidence has been recorded) from a claim that has not yet been examined (no evidence has been recorded). Refutation is achieved by witnessing-against; un-examination is the default that no witnessing has yet altered. The framework's [false](false.md) terms develops the implications of this distinction in detail.
 

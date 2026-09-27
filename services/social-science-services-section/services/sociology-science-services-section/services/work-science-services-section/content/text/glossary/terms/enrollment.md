@@ -40,7 +40,7 @@ The enrollment constitutes $p$ as a **section** of the role fibration over $V$ f
 
 1. **Section condition**: $R(p) = r$ and $r \in \mathrm{Roles}(V)$ — $p$ fills an actual role in $V$'s complement, not a phantom position. The section condition $\pi_r \circ R = \mathrm{id}_{\mathrm{Roles}(V)}$ ensures that every required role has a person assigned ([Section](../../../../../../../../../information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/obsmetrologia/docs/verso/mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/content/sheaf/content/section/section.md): a right inverse of the projection).
 
-2. **Discreteness of enrollment act**: enrollment is not continuous but instantaneous. There is a specific moment $\iota_p$ — the signing, the declaration, the formal assumption — at which $p$ transitions from non-crew to crew. Before $\iota_p$: $p \notin \mathrm{Crew}(V, T)$. After $\iota_p$: $p \in \mathrm{Crew}(V, T)$ with role $r$. This mirrors the [Investiture](../../../../../../../../content/text/glossary/terms/investiture.md) structure: enrollment is the crew-level investiture.
+2. **Discreteness of enrollment act**: enrollment is not continuous but instantaneous. There is a specific moment $\iota_p$ — the signing, the declaration, the formal assumption — at which $p$ transitions from non-crew to crew. Before $\iota_p$: $p \notin \mathrm{Crew}(V, T)$. After $\iota_p$: $p \in \mathrm{Crew}(V, T)$ with role $r$. This mirrors the [Investiture](../../../../services/governance-services-section/content/text/glossary/terms/investiture.md) structure: enrollment is the crew-level investiture.
 
 3. **Period-specificity**: $p$'s section status is bounded by $T$. The enrollment constitutes a section for $T$ only — not an indefinite assignment. At $T$'s end (the discharge predicate $\delta_p$), the section status lapses. The bounded-period invariant is what distinguishes crew enrollment from permanent institutional membership.
 
@@ -54,11 +54,11 @@ The section condition is the minimal structural occupancy condition. It says:
 - $p$ is in the correct fiber (the role $r$ position in $V$)
 - The assignment is right-invertible: knowing the role, you can recover the person
 
-The section condition says nothing about dynamics (how $p$ came to be enrolled), obligation (whether $p$ is fulfilling their duties), or performance (how well $p$ is executing role $r$). Those dimensions are added by [Duty](../domains/governance/terms/duty.md) (the deontic obligations of the role), [Discharge](../../../../services/governance-services-section/content/text/glossary/terms/discharge.md) (performance recognition), and [Serving](./serving.md) (the ongoing act of service).
+The section condition says nothing about dynamics (how $p$ came to be enrolled), obligation (whether $p$ is fulfilling their duties), or performance (how well $p$ is executing role $r$). Those dimensions are added by [Duty](../domains/governance/terms/duty.md) (the deontic obligations of the role), [Discharge](../../../../services/governance-services-section/content/text/glossary/terms/discharge.md) (performance recognition), and [Serving](serving.md) (the ongoing act of service).
 
 ## Enrollment vs. investiture
 
-[Investiture](../../../../../../../../content/text/glossary/terms/investiture.md) installs an agent into a **formal office** with a Hohfeldian deontic profile — a position in the normative system. Enrollment installs a person into a **role in a crew** for a bounded operational period. The structures are related but distinct:
+[Investiture](../../../../services/governance-services-section/content/text/glossary/terms/investiture.md) installs an agent into a **formal office** with a Hohfeldian deontic profile — a position in the normative system. Enrollment installs a person into a **role in a crew** for a bounded operational period. The structures are related but distinct:
 
 | Dimension | Investiture | Enrollment |
 |---|---|---|

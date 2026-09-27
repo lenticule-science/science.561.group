@@ -47,7 +47,7 @@ The economics differ fundamentally from display advertising. Programmatic ads ar
 - **Podcast sponsorships.** Host-read ads within podcast episodes — effectively sponsored audio content. The host's personal endorsement carries weight that a pre-recorded ad does not. Priced on a CPM basis ($15-50 CPM for mid-roll, $25-100+ for host-read endorsements).
 - **Native advertising.** Sponsored content that matches the surrounding editorial format so closely that only the disclosure label distinguishes it from organic content. Platforms like Taboola and Outbrain distribute native ads as "recommended" articles below editorial content. The FTC's 2023 native advertising guidance [@ftc2023native] requires that native ads be clearly and prominently labeled — "Sponsored," "Advertisement," or "Paid Post" — in a way consumers can recognize before engaging.
 
-**Pricing sponsored content** depends on audience size, audience quality, and the publisher's [brand](brand.md) authority. Common pricing models:
+**Pricing sponsored content** depends on audience size, audience quality, and the publisher's [brand](../../../../../../../economics-and-business-science-services-section/services/business-science-services-section/content/text/glossary/terms/brand.md) authority. Common pricing models:
 
 | Model | Typical range | When used |
 |---|---|---|

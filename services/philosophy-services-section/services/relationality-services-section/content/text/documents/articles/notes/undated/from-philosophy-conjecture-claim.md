@@ -30,7 +30,7 @@ By [InternalNucleusDefinability](../../../../../../services/agency-services-sect
 
 - **σ-open** ($\sigma_t(a) \neq a$): $a$ is not the join of all elements with its sub-history restriction profile — the saturation nucleus finds something strictly above: $\sigma_t(a) > a$. The historical record of sub-histories would justify a strictly stronger claim. The backward grounding is incomplete.
 
-The saturation nucleus has more to add: $\sigma_t(a) > a$. Applying $\sigma_t$ closes the remaining openness and lands in $H^*_t$: a Conjecture is one $\sigma$-step from [Law](../../../../../../../../../social-science-services-section/content/text/glossary/terms/lawful-claim.md).
+The saturation nucleus has more to add: $\sigma_t(a) > a$. Applying $\sigma_t$ closes the remaining openness and lands in $H^*_t$: a Conjecture is one $\sigma$-step from [Law](../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/content/text/glossary/terms/lawful-claim.md).
 
 ## What this is
 
@@ -40,7 +40,7 @@ This is what "conjecture" names in mathematics: a proposition that every test co
 
 The word "conjecture" captures the asymmetry: we *have* the claim (the future confirms it), but we do not yet *have the derivation* (the past would justify something more precisely stated). The claim is not uncertain — it is universally present in every extension — but it is *underdetermined by history*.
 
-The distinction from [Law](../../../../../../../../../social-science-services-section/content/text/glossary/terms/lawful-claim.md): a Law is also Δ-closed, but additionally σ-closed — the historical record fully grounds it. For a Conjecture, $\sigma_t(a) > a$: history supports something stronger than $a$, but $a$ is what every extension universally contains.
+The distinction from [Law](../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/content/text/glossary/terms/lawful-claim.md): a Law is also Δ-closed, but additionally σ-closed — the historical record fully grounds it. For a Conjecture, $\sigma_t(a) > a$: history supports something stronger than $a$, but $a$ is what every extension universally contains.
 
 ## What the nuclear conditions mean for a knowledge claim
 
@@ -56,7 +56,7 @@ The distinction from [Law](../../../../../../../../../social-science-services-se
 
 | Position | Nuclear condition | Epistemic status |
 |---|---|---|
-| [**Law**](../../../../../../../../../social-science-services-section/content/text/glossary/terms/lawful-claim.md) | $\sigma_t(a)=a$ and $\Delta_t(a)=a$ | Both past and future closed. |
+| [**Law**](../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/content/text/glossary/terms/lawful-claim.md) | $\sigma_t(a)=a$ and $\Delta_t(a)=a$ | Both past and future closed. |
 | [**Corroborated**](from-philosophy-corroborated-claim.md) | $\sigma_t(a)=a$ and $\Delta_t(a)\neq a$ | Past closed; future still open. |
 | **Conjecture** | $\sigma_t(a)\neq a$ and $\Delta_t(a)=a$ | Future committed; past not yet grounding. |
 | [**Open**](open-claim.md) | $\sigma_t(a)\neq a$ and $\Delta_t(a)\neq a$ | Both past and future open. |

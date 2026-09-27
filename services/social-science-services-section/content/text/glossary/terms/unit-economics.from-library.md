@@ -17,7 +17,7 @@ The core components of unit economics vary by business type:
 
 **For subscription businesses:**
 - Revenue per unit: average revenue per subscriber per period
-- [Customer lifetime value](../../../../services/sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/customer-lifetime-value.md) (LTV): total revenue per subscriber over their lifetime
+- [Customer lifetime value](../../../../services/economics-and-business-science-services-section/services/business-science-services-section/content/text/glossary/terms/customer-lifetime-value.md) (LTV): total revenue per subscriber over their lifetime
 - [Customer acquisition cost](../../../../services/sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/customer-acquisition-cost.md) (CAC): cost to acquire each subscriber
 - Key ratio: LTV:CAC (must exceed 3:1 for sustainability)
 

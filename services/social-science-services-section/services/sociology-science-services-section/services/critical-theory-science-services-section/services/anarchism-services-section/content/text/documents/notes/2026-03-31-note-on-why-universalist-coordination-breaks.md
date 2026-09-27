@@ -35,7 +35,7 @@ The commitment is real and serious. But it carries a hidden dependency: it works
 
 ### 3. Legitimacy requires process
 
-[Proceduralism](../../../../../../../../../../content/text/glossary/terms/proceduralism.md) follows: since decisions must be justifiable to everyone, there must be a process through which justification happens. Assemblies, consensus rounds, transparent documentation, collective ratification. These procedures are the mechanism by which epistemic universalism is enacted. Without them, the universalist commitment is just an aspiration. With them, coordination gains legitimacy — but also gains a time cost, a safety cost (transparency), and a dependency on institutional infrastructure (meeting spaces, communication channels, shared language).
+[Proceduralism](../../../../../../../../content/text/glossary/terms/proceduralism.md) follows: since decisions must be justifiable to everyone, there must be a process through which justification happens. Assemblies, consensus rounds, transparent documentation, collective ratification. These procedures are the mechanism by which epistemic universalism is enacted. Without them, the universalist commitment is just an aspiration. With them, coordination gains legitimacy — but also gains a time cost, a safety cost (transparency), and a dependency on institutional infrastructure (meeting spaces, communication channels, shared language).
 
 ### 4. All of this is heading somewhere
 

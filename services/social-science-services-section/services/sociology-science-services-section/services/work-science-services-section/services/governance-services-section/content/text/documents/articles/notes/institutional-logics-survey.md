@@ -14,9 +14,9 @@ cites:
 
 ## Introduction
 
-The governance domain treats [normative systems](../../../../../../../../../../../content/text/glossary/terms/normative-system.md) and [institutions](../terms/institution.md) as relatively stable structures: a set of [norms](../terms/norm.md) that constrain and enable behavior within a bounded domain. But organizations and fields rarely operate under a single normative regime. A hospital must simultaneously satisfy patient care logics, medical research logics, financial/efficiency logics, and state regulatory logics. A public university navigates academic prestige logics, market competition logics, public service logics, and state funding logics. A professional services firm operates within market logics, professional logics, and corporate logics. What happens when these systems make conflicting demands?
+The governance domain treats [normative systems](../../../glossary/terms/normative-system.md) and [institutions](../terms/institution.md) as relatively stable structures: a set of [norms](../terms/norm.md) that constrain and enable behavior within a bounded domain. But organizations and fields rarely operate under a single normative regime. A hospital must simultaneously satisfy patient care logics, medical research logics, financial/efficiency logics, and state regulatory logics. A public university navigates academic prestige logics, market competition logics, public service logics, and state funding logics. A professional services firm operates within market logics, professional logics, and corporate logics. What happens when these systems make conflicting demands?
 
-Institutional logics theory provides a framework for understanding how multiple, often competing [normative systems](../../../../../../../../../../../content/text/glossary/terms/normative-system.md) coexist within organizations and fields, how they shape attention and action, and what strategies organizations deploy when their demands conflict.
+Institutional logics theory provides a framework for understanding how multiple, often competing [normative systems](../../../glossary/terms/normative-system.md) coexist within organizations and fields, how they shape attention and action, and what strategies organizations deploy when their demands conflict.
 
 ## The foundational framework: Friedland and Alford
 
@@ -96,7 +96,7 @@ Boltanski and Thévenot's framework parallels institutional logics theory but fo
 
 ## Synthesis: Multiple logics as the condition of governance
 
-Institutional logics theory transforms how we understand governance. The governance domain previously modeled [normative systems](../../../../../../../../../../../content/text/glossary/terms/normative-system.md) and [institutions](../terms/institution.md) as relatively stable, internally coherent structures. Institutional logics theory shows that the real object of governance is not a single system but the **coexistence and management of multiple systems**.
+Institutional logics theory transforms how we understand governance. The governance domain previously modeled [normative systems](../../../glossary/terms/normative-system.md) and [institutions](../terms/institution.md) as relatively stable, internally coherent structures. Institutional logics theory shows that the real object of governance is not a single system but the **coexistence and management of multiple systems**.
 
 This has three major implications:
 
@@ -122,7 +122,7 @@ Several questions remain for future research and institutional development:
 
 ## See also
 
-- [Normative system](../../../../../../../../../../../content/text/glossary/terms/normative-system.md)
+- [Normative system](../../../glossary/terms/normative-system.md)
 - [Institution](../terms/institution.md)
 - [Norm](../terms/norm.md)
 - [Norm conflict](../terms/norm-conflict.md)

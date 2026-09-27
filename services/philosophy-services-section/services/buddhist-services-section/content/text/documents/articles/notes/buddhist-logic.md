@@ -37,7 +37,7 @@ This three-aspect schema is not a syllogism in the Aristotelian sense. It does n
 The [catuṣkoṭi](../../../../../../../content/text/glossary/terms/catuskoti.md) (tetralemma) predates the pramāṇa tradition — it appears in the earliest Buddhist texts and receives systematic deployment in Nāgārjuna's *Mūlamadhyamakakārikā* (c. 2nd century CE). Its four corners — affirmation, denial, both, neither — challenge the foundations of [classical logic](../../classical/index.md):
 
 - The **"both"** corner violates [bivalence](../../../../../../../content/text/glossary/terms/bivalence.md) and the law of non-contradiction. It admits what [paraconsistent logic](../../paraconsistent/index.md) calls [dialetheia](../../../../../../../content/text/glossary/terms/dialetheia.md) — true contradictions.
-- The **"neither"** corner violates the [law of excluded middle](../../../../../../../content/text/glossary/terms/law-of-excluded-middle.md). It admits propositions that are genuinely indeterminate — a position shared with [intuitionistic logic](../../intuitionistic/index.md).
+- The **"neither"** corner violates the [law of excluded middle](../../../../../../western-services-section/services/analytic-philosophy-services-section/content/text/glossary/terms/law-of-excluded-middle.md). It admits propositions that are genuinely indeterminate — a position shared with [intuitionistic logic](../../intuitionistic/index.md).
 
 The catuṣkoṭi thus occupies a logical space that neither classical, intuitionistic, nor paraconsistent logic fully captures on its own. It is broader than any single Western non-classical logic, admitting both gaps (intuitionistic "neither") and gluts (paraconsistent "both") simultaneously.
 

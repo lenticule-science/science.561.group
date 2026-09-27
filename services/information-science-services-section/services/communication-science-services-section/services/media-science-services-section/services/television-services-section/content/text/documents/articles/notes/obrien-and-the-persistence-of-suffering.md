@@ -22,7 +22,7 @@ The parallel isn't decorative. Both Job and O'Brien sit at the intersection of f
 
 ## The Enlisted Man
 
-O'Brien's rank matters. He is an enlisted man in a fleet of officers. In a franchise built around captains and commanders, O'Brien holds the position closest to [labor](../../../../sociology/terms/labor.md) in the traditional sense: he maintains the station's systems, manages repair crews, and handles the material infrastructure that lets the command staff make decisions. His suffering isn't incidental to this position. It follows from it.
+O'Brien's rank matters. He is an enlisted man in a fleet of officers. In a franchise built around captains and commanders, O'Brien holds the position closest to [labor](../../../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/content/text/glossary/terms/labor.md) in the traditional sense: he maintains the station's systems, manages repair crews, and handles the material infrastructure that lets the command staff make decisions. His suffering isn't incidental to this position. It follows from it.
 
 Job, too, occupies a specific social location. He is wealthy, respected, a patriarch — but before God, he has no standing. His friends insist that suffering implies guilt, that the moral order is transactional. Job refuses this, and that refusal is the theological core of the book. Suffering, Job insists, is not evidence of wrongdoing. The system doesn't owe him an explanation, but it owes him better than a guilt transfer.
 

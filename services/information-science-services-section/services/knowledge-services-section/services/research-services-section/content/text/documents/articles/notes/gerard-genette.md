@@ -31,6 +31,6 @@ Gérard Genette (1930–2018) was a French literary theorist whose *Narrative Di
 ## Related
 
 - [point of view](../../writing/disciplines/fiction/terms/point-of-view.md) — Genette's voice/focalization distinction refines POV analysis
-- [narrator](../../../../../../../../../../social-science-services-section/content/text/glossary/terms/narrator.md) — Genette's diegetic framework classifies narrator types
+- [narrator](../../../../../../../../communication-science-services-section/services/writing-services-section/services/fiction-services-section/content/text/glossary/terms/narrator.md) — Genette's diegetic framework classifies narrator types
 - [fiction writing](../../writing/disciplines/fiction/index.md) — *Narrative Discourse* is a key text for the discipline
 - [Wayne Booth](./wayne-booth.md) — Booth's rhetorical approach to narrative complements Genette's structural one

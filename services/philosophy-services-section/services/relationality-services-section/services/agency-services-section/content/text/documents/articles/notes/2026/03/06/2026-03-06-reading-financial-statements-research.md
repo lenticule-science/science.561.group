@@ -33,7 +33,7 @@ The statement works by subtraction, peeling away layers of cost:
 | Line | What it means |
 |---|---|
 | **Revenue** (top line) | Total sales — everything customers paid |
-| − Cost of goods sold (COGS) | Direct costs of producing what was sold (ingredients, materials, direct [labor](../../../../research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/content/individual/content/agent/endeavoring/content/endeavor/organizing/content/organization/resourcing/content/resource/recording/content/record/accounting/content/sociology/terms/labor.md)) |
+| − Cost of goods sold (COGS) | Direct costs of producing what was sold (ingredients, materials, direct [labor](../../../../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/content/text/glossary/terms/labor.md)) |
 | = **Gross profit** | What remains after production costs |
 | − Operating expenses | Indirect costs of running the business (rent, utilities, salaries, marketing, insurance) |
 | = **Operating income** | Profit from core business operations |

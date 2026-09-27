@@ -31,10 +31,10 @@ is negated.
 
 ## Related terms
 
-- [Dialectics](../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../philosophy-services-section/content/text/glossary/terms/dialectics.md)
+- [Dialectics](../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../philosophy-services-section/services/western-services-section/services/marxism-services-section/content/text/glossary/terms/dialectics.md)
 - [Mediation](../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../philosophy-services-section/content/text/glossary/terms/mediation.md)
 - [Immanence](../../metaphysics/terms/immanence.md)
-- [Materialism](../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../philosophy-services-section/content/text/glossary/terms/materialism.md)
+- [Materialism](../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../philosophy-services-section/services/western-services-section/services/metaphysics-services-section/content/text/glossary/terms/materialism.md)
 
 ## Sources
 

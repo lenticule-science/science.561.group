@@ -21,7 +21,7 @@ Effective microcopy follows several principles:
 - **Error recovery** — [error messages](error-message.md) are the most critical microcopy. A good error message says what went wrong, why, and what to do about it. "Invalid input" fails on all three counts; "That password needs at least 8 characters — you entered 6" succeeds.
 - **Personality without obstruction** — microcopy can carry [brand voice](brand-voice.md), but clarity always takes priority. A witty loading message is fine; a witty error message that makes the user work to understand what went wrong is not.
 
-The term "UX writing" (user experience writing) describes the professional practice of writing microcopy. UX writers work within product teams, alongside designers and engineers, writing the text that appears at every point of interaction. The discipline draws on [information architecture](information-architecture.md), [cognitive load](cognitive-load.md) theory, and [usability testing](usability-testing.md) — the same foundations as technical writing, applied at the sentence and phrase level.
+The term "UX writing" (user experience writing) describes the professional practice of writing microcopy. UX writers work within product teams, alongside designers and engineers, writing the text that appears at every point of interaction. The discipline draws on [information architecture](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/technical-writing-services-section/content/text/glossary/terms/information-architecture.md), [cognitive load](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/plain-language-services-section/content/text/glossary/terms/cognitive-load.md) theory, and [usability testing](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/plain-language-services-section/content/text/glossary/terms/usability-testing.md) — the same foundations as technical writing, applied at the sentence and phrase level.
 
 ## Related terms
 
@@ -29,4 +29,4 @@ The term "UX writing" (user experience writing) describes the professional pract
 - [call to action](call-to-action.md) — buttons and links are microcopy
 - [error message](error-message.md) — a critical form of microcopy
 - [conversion](conversion.md) — what effective microcopy supports
-- [cognitive load](cognitive-load.md) — what microcopy should minimize
+- [cognitive load](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/plain-language-services-section/content/text/glossary/terms/cognitive-load.md) — what microcopy should minimize

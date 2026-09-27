@@ -25,7 +25,7 @@ On the web, a page may have multiple CTAs — a primary action and secondary alt
 
 ## Related
 
-- [headline](headline.md) — opens the persuasion that the CTA closes
+- [headline](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/copywriting-services-section/content/text/glossary/terms/headline.md) — opens the persuasion that the CTA closes
 - [conversion](conversion.md) — what happens when the reader follows the CTA
 - [landing page](landing-page.md) — the structure that leads to the CTA
-- [value proposition](value-proposition.md) — the reason the reader should act
+- [value proposition](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/copywriting-services-section/content/text/glossary/terms/value-proposition.md) — the reason the reader should act

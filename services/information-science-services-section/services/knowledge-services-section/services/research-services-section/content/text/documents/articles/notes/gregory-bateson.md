@@ -35,4 +35,4 @@ Bateson also provides a critical counterpoint. His systems thinking can tend tow
 - [Cybernetics](../../information/terms/cybernetics.md) — the field he carried into anthropology and ecology
 - [Second-order cybernetics](../../../../../../../../cybernetics-services-section/content/text/glossary/terms/second-order-cybernetics.md) — the reflexive turn his work anticipates
 - [Autopoiesis](../../../../../../../../cybernetics-services-section/content/text/glossary/terms/autopoiesis.md) — the related concept of self-producing systems
-- [Relational ontology](../../../../../../../../../../philosophy-services-section/content/text/glossary/terms/relational-ontology.md) — the philosophical position his work supports
+- [Relational ontology](../../../../../../../../../../philosophy-services-section/services/western-services-section/services/metaphysics-services-section/services/ontology-services-section/content/text/glossary/terms/relational-ontology.md) — the philosophical position his work supports

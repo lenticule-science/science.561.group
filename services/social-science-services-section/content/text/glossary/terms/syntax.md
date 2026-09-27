@@ -25,4 +25,4 @@ In fiction and poetry, syntax carries expressive weight beyond clarity. Hemingwa
 - [voice](voice.md) — syntax is a primary component of a writer's voice
 - [style](style.md) — the broader category that includes syntax
 - [pacing](./pacing.md) — sentence length and structure control pace at the micro level
-- [readability](./readability.md) — syntactic clarity is a major factor in readability
+- [readability](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/plain-language-services-section/content/text/glossary/terms/readability.md) — syntactic clarity is a major factor in readability

@@ -17,7 +17,7 @@ defines:
   - "private law"
 ---
 
-Civil law (in the sense of private law, not the civil law tradition of continental Europe) is the body of rules governing disputes between private parties — individuals, corporations, organizations. Where [criminal law](./criminal-law.md) is brought by the state and results in punishment, civil law is brought by one party against another and typically results in compensation, injunctions, or declaratory judgments.
+Civil law (in the sense of private law, not the civil law tradition of continental Europe) is the body of rules governing disputes between private parties — individuals, corporations, organizations. Where [criminal law](../../../../../law-science-services-section/content/text/glossary/terms/criminal-law.md) is brought by the state and results in punishment, civil law is brought by one party against another and typically results in compensation, injunctions, or declaratory judgments.
 
 The major branches of civil law include [contract](./contract.md) (enforceable agreements), [tort](./tort.md) (civil wrongs causing harm), property (rights over things), and family law (marriage, divorce, custody, inheritance). Each branch has its own doctrines, procedures, and policy concerns, but all share the basic civil law structure: a private plaintiff, a private defendant, and a remedy aimed at restoring the plaintiff to the position they would have occupied absent the wrong.
 

@@ -43,7 +43,7 @@ Check the Essay Catalog if you want to see all the essays that are a part of [my
 
 - [Poem](./poem.md) — another written artifact, distinguished from the essay by its attention to the material qualities of language
 - [writer-based prose](./writer-based-prose.md) — the failure mode where essays are organized around the writer's discovery rather than the reader's need
-- [revision](revision.md) — the process through which discovery drafts become finished essays
+- [revision](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/essay-writing-services-section/content/text/glossary/terms/revision.md) — the process through which discovery drafts become finished essays
 - [audience](../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/glossary/concepts/audience.md) — the reader the essay addresses shapes its register, evidence, and assumptions
 
 An ***essay*** is a written artifact, usually a few hundred to several thousand words, that develops a focused exploration of one or a few topics.

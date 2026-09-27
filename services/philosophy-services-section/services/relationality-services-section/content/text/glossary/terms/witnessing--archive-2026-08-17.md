@@ -6,7 +6,7 @@ date-created: 2026-04-28
 
 A **witnessing** is an act of [relating](relating.md) that structurally affirms or denies a relation — the unit of [inquiry](inquiry.md) in the [relationality](../_index.md) framework. To witness a relation is to perform the derivational move that records evidence for or against it; to *be* a witness for a relation is to occupy a structural role in the system of relations such that the relation's settlement depends on you.
 
-Witnessing is what moves a claim from [absurd](../../../../../../content/text/glossary/terms/absurd.md) (un-evidenced, holding only on its own assertion) toward [determination](determination.md) (structurally settled by relations). Each witnessing adds a unit of evidence to the [settlement](settlement.md) of some claim; many witnessings together produce the claim's eventual settlement position.
+Witnessing is what moves a claim from [absurd](absurd.md) (un-evidenced, holding only on its own assertion) toward [determination](determination.md) (structurally settled by relations). Each witnessing adds a unit of evidence to the [settlement](settlement.md) of some claim; many witnessings together produce the claim's eventual settlement position.
 
 ## Witnessing is positive
 

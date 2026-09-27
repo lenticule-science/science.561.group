@@ -13,5 +13,5 @@ teaches:
 ---
 
 
-This [genealogy](../../../../../../../lib/legacy/2026-06-17-archive-emsenn-net/content/emsenn-archive-org/gibwodgit/archive/flowif/library/theories/humanities/theories/sociology/theories/critical-theory/theories/foucauldian/terms/genealogy.md) traces how typographic practices evolved to support [legibility](../../../../../../../../../philosophy-services-section/services/black-philosophy-services-section/services/abolition-services-section/services/state-repression-services-section/content/glossary/terms/legibility.md),
+This [genealogy](../../../../../../../lib/legacy/2026-06-17-archive-emsenn-net/content/emsenn-archive-org/gibwodgit/archive/flowif/library/theories/humanities/theories/sociology/theories/critical-theory/theories/foucauldian/terms/genealogy.md) traces how typographic practices evolved to support [legibility](../../../../../../../../../philosophy-services-section/services/black-philosophy-services-section/services/abolition-services-section/services/state-repression-services-section/content/text/glossary/terms/legibility.md),
 annotation, and structured reading.

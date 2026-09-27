@@ -18,5 +18,5 @@ Mutual aid is distinguished from charity. Charity flows downward from those with
 
 - [Anarchism](/sociology/terms/anarchism.md)
 - [Direct action](direct-action.md)
-- [Prefigurative politics](prefigurative-politics.md)
+- [Prefigurative politics](../../../../services/critical-theory-science-services-section/services/anarchism-services-section/services/organization-services-section/content/text/glossary/terms/prefigurative-politics.md)
 - [Pyotr Kropotkin](/general/people/pyotr-kropotkin.md)

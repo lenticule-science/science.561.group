@@ -30,5 +30,5 @@ Ellen Lupton is an American graphic designer, writer, and curator at Cooper Hewi
 
 ## Related
 
-- [document design](../../../../../../../../../../social-science-services-section/content/text/glossary/terms/document-design.md) — Lupton's work extends document design into contemporary typography and digital contexts
+- [document design](../../../../../../../../communication-science-services-section/services/writing-services-section/services/plain-language-services-section/content/text/glossary/terms/document-design.md) — Lupton's work extends document design into contemporary typography and digital contexts
 - [Karen Schriver](./karen-schriver.md) — complementary work connecting visual design to reader cognition

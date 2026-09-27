@@ -12,7 +12,7 @@ description: "The direct costs of producing the goods or services a business sel
 ---
 
 Cost of goods sold (COGS) is the total direct cost of producing what the business sells during a period.
-For a restaurant: food, beverages, and the direct [labor](../../../../research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/content/individual/content/agent/endeavoring/content/endeavor/organizing/content/organization/resourcing/content/resource/recording/content/record/accounting/content/sociology/terms/labor.md) involved in preparation.
+For a restaurant: food, beverages, and the direct [labor](../../../../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/content/text/glossary/terms/labor.md) involved in preparation.
 For a retailer: the wholesale cost of merchandise.
 For a manufacturer: raw materials and production labor.
 

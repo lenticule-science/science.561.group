@@ -50,4 +50,4 @@ It is therefore a training form that reproduces capacity without reproducing a s
 
 - [Collective Care](collective-care.md) - a group process that helps keep learning and participation sustainable
 - [Lightweight Protocol](lightweight-protocol.md) - a procedural form that often turns shared skills into coordinated action
-- [Popular Education](../../../../services/education-science-services-section/content/text/glossary/terms/popular-education.md) - the broader pedagogical tradition that informs this practice
+- [Popular Education](../../../../services/education-science-services-section/services/pedagogy-services-section/content/text/glossary/terms/popular-education.md) - the broader pedagogical tradition that informs this practice

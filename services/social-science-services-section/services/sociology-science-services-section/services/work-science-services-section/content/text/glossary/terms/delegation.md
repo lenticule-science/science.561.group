@@ -117,7 +117,7 @@ The delegation operator is what creates [StaffOfficer](../../../../../../../poli
 $$\mathrm{delegate}(Q, G_{\mathrm{domain}}, B) = \mathrm{StaffOfficer}(Q, G_{\mathrm{domain}}, \mathrm{Advisory})$$
 $$\mathrm{delegate}(Q, G_{\mathrm{positional}}, B) + \mathrm{investiture} = \mathrm{DutyOfficer}(W, Q, \ldots)$$
 
-Staff officers receive functional domain delegations; duty officers receive positional delegations bounded by a watch interval. The duty officer additionally requires [Investiture](../../../../../../../../content/text/glossary/terms/investiture.md) — a formal assumption act — which ordinary staff delegation does not require.
+Staff officers receive functional domain delegations; duty officers receive positional delegations bounded by a watch interval. The duty officer additionally requires [Investiture](../../../../services/governance-services-section/content/text/glossary/terms/investiture.md) — a formal assumption act — which ordinary staff delegation does not require.
 
 ## Nuclear reading
 
@@ -160,6 +160,6 @@ Staff officers receive functional domain delegations; duty officers receive posi
 
 ## Delegation as exercise of a Hohfeldian Power
 
-The [HohfeldianPosition](../../../../../../../../content/text/glossary/terms/hohfeldian-position.md) spec resolves the open question about delegation's normative type: a delegation is exactly the exercise of a **Power** (second quartet) by $Q$. A Hohfeldian Power is the capacity to create new normative relations — to bring about a change in another party's normative position by performing a voluntary act. When $Q$ delegates $G$ to $B$, $Q$ exercises a Power: $Q$'s voluntary act (the delegation) creates a new normative relation in which $B$ now has the authority to act within $G$, and $B$'s counterpart position is a **Liability** — $B$ is liable to have their normative position changed by $Q$'s exercise of the delegating power (and also by $Q$'s revocation).
+The [HohfeldianPosition](../../../../services/governance-services-section/services/hohfeldian-services-section/content/text/glossary/terms/hohfeldian-position.md) spec resolves the open question about delegation's normative type: a delegation is exactly the exercise of a **Power** (second quartet) by $Q$. A Hohfeldian Power is the capacity to create new normative relations — to bring about a change in another party's normative position by performing a voluntary act. When $Q$ delegates $G$ to $B$, $Q$ exercises a Power: $Q$'s voluntary act (the delegation) creates a new normative relation in which $B$ now has the authority to act within $G$, and $B$'s counterpart position is a **Liability** — $B$ is liable to have their normative position changed by $Q$'s exercise of the delegating power (and also by $Q$'s revocation).
 
-The `authority-transfer` opcode in this spec's AST corresponds to the Power-Liability pair in the [HohfeldianPosition](../../../../../../../../content/text/glossary/terms/hohfeldian-position.md) first-to-second-quartet structure: delegation is a Power (second quartet) and the beneficiary's reception of the grant is a Liability (the correlative of Power).
+The `authority-transfer` opcode in this spec's AST corresponds to the Power-Liability pair in the [HohfeldianPosition](../../../../services/governance-services-section/services/hohfeldian-services-section/content/text/glossary/terms/hohfeldian-position.md) first-to-second-quartet structure: delegation is a Power (second quartet) and the beneficiary's reception of the grant is a Liability (the correlative of Power).

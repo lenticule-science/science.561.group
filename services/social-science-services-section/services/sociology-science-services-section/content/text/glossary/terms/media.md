@@ -28,13 +28,13 @@ Every media technology creates a structure of access: who can produce, who can d
 - **The pulpit and the manuscript**: Communication controlled by religious and political [authority](../../../terms/authority.md). Access to production severely restricted. The audience is assembled by institutional power.
 - **The printing press**: Production becomes possible outside institutional control. The pamphlet, the broadsheet, the clandestine press — these enable communication that challenges existing [hierarchies](../../../terms/hierarchy.md). But printing requires capital, literacy, and distribution networks, all of which are structured by [class](../../../terms/class.md) and power.
 - **Broadcast (radio, television)**: One-to-many communication at unprecedented scale. The audience becomes massive but passive — reception without reply. Broadcast consolidates communicative power in corporations and states.
-- **Digital platforms**: Many-to-many communication becomes technically possible, but the infrastructure is owned by corporations whose profit model depends on attention capture. Access to production expands; control over distribution concentrates. The [spectacle](spectacle.md) does not disappear but becomes participatory — everyone produces content within structures they do not control.
+- **Digital platforms**: Many-to-many communication becomes technically possible, but the infrastructure is owned by corporations whose profit model depends on attention capture. Access to production expands; control over distribution concentrates. The [spectacle](../../../../services/critical-theory-science-services-section/services/situationist-services-section/content/text/glossary/terms/spectacle.md) does not disappear but becomes participatory — everyone produces content within structures they do not control.
 
 ## Media and recuperation
 
 Media are a primary mechanism of [recuperation](recuperation.md). Radical movements produce their own media — zines, independent radio, community networks — but the dominant media system absorbs radical aesthetics, language, and images while stripping them of their political content. Punk becomes a media product. Protest becomes a media event. Revolution becomes a brand. The form of opposition is broadcast; the substance is neutralized.
 
-[Californication](../schools/cybernetic-postliberalism/terms/californication.md) operates through media as its primary infrastructure: platforms format structural contradiction as personally manageable content, genre-calibrate crisis into [narrative](./narrative.md), and produce the feedback loops through which subjects regulate themselves under conditions of collapse.
+[Californication](../schools/cybernetic-postliberalism/terms/californication.md) operates through media as its primary infrastructure: platforms format structural contradiction as personally manageable content, genre-calibrate crisis into [narrative](../../../../services/critical-theory-science-services-section/services/anarchism-services-section/services/anarchist-communication-services-section/content/text/glossary/terms/narrative.md), and produce the feedback loops through which subjects regulate themselves under conditions of collapse.
 
 ## Anarchist counter-media
 
@@ -44,6 +44,6 @@ The question anarchist communication analysis poses is not "how do we get our me
 
 ## Related
 
-- [narrative](./narrative.md) — the form through which media organizes experience
-- [ideology](ideology.md) — operates through the meanings media circulate
-- [propaganda of the deed](propaganda-of-the-deed.md) — action that communicates without relying on media infrastructure
+- [narrative](../../../../services/critical-theory-science-services-section/services/anarchism-services-section/services/anarchist-communication-services-section/content/text/glossary/terms/narrative.md) — the form through which media organizes experience
+- [ideology](../../../../services/critical-theory-science-services-section/services/anarchism-services-section/content/text/glossary/terms/ideology.md) — operates through the meanings media circulate
+- [propaganda of the deed](../../../../services/critical-theory-science-services-section/services/anarchism-services-section/services/strategy-services-section/content/text/glossary/terms/propaganda-of-the-deed.md) — action that communicates without relying on media infrastructure

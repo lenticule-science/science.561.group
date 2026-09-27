@@ -29,6 +29,6 @@ mediated, and historically transformed.
 
 ## Related terms
 
-- [Dialectics](./dialectics.md)
+- [Dialectics](../../../../services/western-services-section/services/marxism-services-section/content/text/glossary/terms/dialectics.md)
 - [Mediation](./mediation.md)
 - [Historicization](./historicization.md)

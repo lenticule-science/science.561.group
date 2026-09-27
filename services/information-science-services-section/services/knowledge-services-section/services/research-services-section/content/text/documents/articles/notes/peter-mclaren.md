@@ -10,7 +10,7 @@ keywords:
 description: Peter McLaren (1948–) is a Canadian-born scholar who connected critical pedagogy to anti-capitalist and anti-imperialist politics, arguing that education must be understood within the global structures of capitalism and colonialism.
 ---
 
-Peter McLaren (1948–) is a Canadian-born scholar who connected [critical pedagogy](../../education/disciplines/pedagogy/schools/critical-pedagogy/index.md) to anti-capitalist and anti-[imperialist](../../../../../../../../../../social-science-services-section/content/text/glossary/terms/imperialism.md) politics, arguing that education must be understood within the global structures of [capitalism](../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/content/text/glossary/terms/capitalism.md) and [colonialism](../../sociology/terms/colonialism.md).
+Peter McLaren (1948–) is a Canadian-born scholar who connected [critical pedagogy](../../education/disciplines/pedagogy/schools/critical-pedagogy/index.md) to anti-capitalist and anti-[imperialist](../../../../../../../../../../social-science-services-section/content/text/glossary/terms/imperialism.md) politics, arguing that education must be understood within the global structures of [capitalism](../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section/services/anarchism-services-section/content/text/glossary/terms/capitalism.md) and [colonialism](../../sociology/terms/colonialism.md).
 
 ## Core ideas
 

@@ -146,7 +146,7 @@ The fundamental equation: **Assets = Liabilities + Equity**
 | Category | Examples |
 |---|---|
 | **Current assets** | Cash, inventory, accounts receivable |
-| **Non-current assets** | Equipment, vehicles, [property](../../../../../../../../../../../../../sociology-science-services-section/content/text/glossary/terms/property.md) |
+| **Non-current assets** | Equipment, vehicles, [property](../../../../../../../../../../../../../sociology-science-services-section/services/critical-theory-science-services-section/services/anarchism-services-section/content/text/glossary/terms/property.md) |
 | **Current liabilities** | Bills due within a year, short-term loans, accounts payable |
 | **Non-current liabilities** | Long-term loans, mortgages |
 | **Equity** | Owner's investment + retained earnings − distributions |

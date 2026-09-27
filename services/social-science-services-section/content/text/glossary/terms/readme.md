@@ -17,7 +17,7 @@ An effective README answers five questions in order:
 
 1. **What is this?** — one or two sentences describing what the project does. Not how it works, not its architecture, not its history — what it does for the person using it.
 2. **Why does it exist?** — the problem it solves. This helps the reader determine relevance: if they don't have this problem, they don't need this project.
-3. **How do I start?** — installation or setup instructions. These are [procedural documentation](procedural-documentation.md) and should follow the same principles: numbered steps, prerequisites stated, expected results included.
+3. **How do I start?** — installation or setup instructions. These are [procedural documentation](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/technical-writing-services-section/content/text/glossary/terms/procedural-documentation.md) and should follow the same principles: numbered steps, prerequisites stated, expected results included.
 4. **How do I use it?** — a basic usage example. Not comprehensive documentation but enough to show the reader what working with the project looks like.
 5. **Where do I learn more?** — links to full documentation, contributing guidelines, license information.
 
@@ -25,6 +25,6 @@ The README's challenge is compression. It must provide enough information to ori
 
 ## Related terms
 
-- [procedural documentation](procedural-documentation.md) — the README's installation section is procedural
+- [procedural documentation](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/technical-writing-services-section/content/text/glossary/terms/procedural-documentation.md) — the README's installation section is procedural
 - [progressive disclosure](progressive-disclosure.md) — the README is the first layer of documentation
 - [audience](../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/glossary/concepts/audience.md) — the README is written for newcomers, not existing users

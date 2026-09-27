@@ -34,7 +34,7 @@ How to find, evaluate, and negotiate a [commercial lease](../../../glossary/term
 
 | Factor | What to evaluate |
 |---|---|
-| **Location** | Foot traffic, vehicle traffic, visibility from the street, parking, proximity to your [target market](../../../../../../../../sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/target-market.md) |
+| **Location** | Foot traffic, vehicle traffic, visibility from the street, parking, proximity to your [target market](../../../../../services/marketing-science-services-section/content/text/glossary/terms/target-market.md) |
 | **Size** | Square footage for your operation (kitchen, dining room, storage, restrooms, office). Measure — don't trust the listing |
 | **Condition** | What's already built out? A former restaurant has plumbing, ventilation, and electrical for a kitchen. A former retail shop does not. Build-out costs for a restaurant in a raw space can exceed \$100,000 |
 | **Zoning** | Is the space zoned for your use? A restaurant needs food service zoning. A bar needs a liquor license, which may depend on zoning. Verify before signing anything |

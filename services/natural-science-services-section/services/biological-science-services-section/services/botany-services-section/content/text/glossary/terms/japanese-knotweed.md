@@ -153,5 +153,5 @@ Young shoots harvested in spring when 15–30 cm tall are edible and have a tart
 - [Biological Control](../../../../../ecology-services-section/content/text/glossary/terms/biological-control.md) — the *Aphalara itadori* program
 - [Identifying Japanese Knotweed](../../documents/articles/notes/identifying-japanese-knotweed.md) — field identification guide
 - [The Japanese Knotweed Invasion](../../../../../ecology-services-section/content/text/documents/articles/notes/japanese-knotweed-invasion.md) — ecological and historical context
-- [Colonial Botany](../../../../../../humanities/domains/sociology/domains/critical-theory/domains/povinellian/domains/settler-colonialism/terms/colonial-botany.md) — the entanglement of plant introduction with colonial history
+- [Colonial Botany](../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section/services/povinellian-services-section/services/settler-colonialism-services-section/content/text/glossary/terms/colonial-botany.md) — the entanglement of plant introduction with colonial history
 - [Symbiosis](../../../../../ecology-services-section/content/text/glossary/terms/symbiosis.md) — knotweed's relationship with mycorrhizal fungi in its native range

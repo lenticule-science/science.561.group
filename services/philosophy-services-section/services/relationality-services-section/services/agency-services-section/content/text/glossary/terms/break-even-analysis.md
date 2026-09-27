@@ -23,7 +23,7 @@ Below this threshold the business consumes more than it earns; above it, each ad
 
 The calculation divides costs into two categories.
 Fixed costs persist regardless of sales volume: rent, insurance, salaried wages, loan payments.
-Variable costs scale with production or sales: ingredients, hourly [labor](../../documents/articles/research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/content/individual/content/agent/endeavoring/content/endeavor/organizing/content/organization/resourcing/content/resource/financing/sociology/terms/labor.md), packaging, transaction fees.
+Variable costs scale with production or sales: ingredients, hourly [labor](../../../../../../../../../social-science-services-section/services/sociology-science-services-section/content/text/glossary/terms/labor.md), packaging, transaction fees.
 The break-even point in units equals fixed costs divided by the contribution margin per unit (selling price minus variable cost per unit).
 The break-even point in revenue equals fixed costs divided by the contribution margin ratio (contribution margin per unit divided by selling price).
 

@@ -20,4 +20,4 @@ The critical essay's [evidence](../../../../../information-science-services-sect
 
 ## Related
 
-- [argument](argument.md) — the structure the critical essay builds
+- [argument](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/essay-writing-services-section/content/text/glossary/terms/argument.md) — the structure the critical essay builds

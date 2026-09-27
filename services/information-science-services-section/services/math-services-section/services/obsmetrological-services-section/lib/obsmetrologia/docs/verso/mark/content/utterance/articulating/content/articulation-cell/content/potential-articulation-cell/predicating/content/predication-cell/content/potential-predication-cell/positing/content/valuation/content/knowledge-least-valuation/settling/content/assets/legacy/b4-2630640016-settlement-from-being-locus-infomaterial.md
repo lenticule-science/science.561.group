@@ -4,7 +4,7 @@ description: "The four-cornered joint structure of relational claims under inqui
 date-created: 2026-04-28
 ---
 
-In the [relationality](../_index.md) framework, **settlement** names the joint four-cornered structure within which every relational claim has its position. It is not a single value attached to a claim but a *position in a two-dimensional space* — the space whose two axes are the truth axis ([true](true.md) ↔ [false](false.md)) and the knowledge axis ([absurd](../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../philosophy-services-section/content/text/glossary/terms/absurd.md) ↔ [determination](determination.md)). The four corners of this space are the extremal positions a claim can occupy; the interior is the mass of partial settlements that constitute most of what inquiry actually deals with.
+In the [relationality](../_index.md) framework, **settlement** names the joint four-cornered structure within which every relational claim has its position. It is not a single value attached to a claim but a *position in a two-dimensional space* — the space whose two axes are the truth axis ([true](true.md) ↔ [false](false.md)) and the knowledge axis ([absurd](../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../philosophy-services-section/services/relationality-services-section/content/text/glossary/terms/absurd.md) ↔ [determination](determination.md)). The four corners of this space are the extremal positions a claim can occupy; the interior is the mass of partial settlements that constitute most of what inquiry actually deals with.
 
 Settlement replaces the classical commitment to bivalent truth-value (every proposition is true or false) without replacing it with a higher-arity truth-value. A claim's position is not one of two, three, or four discrete values but a position in the joint structure, with the four corners as poles. Most claims live in the interior, with truth-axis and knowledge-axis values that are neither maximal nor minimal.
 
@@ -12,14 +12,14 @@ Settlement replaces the classical commitment to bivalent truth-value (every prop
 
 The truth axis runs from [false](false.md) (denial) to [true](true.md) (affirmation). It records the *direction* in which evidence accumulates — whether what has been witnessed affirms or denies the relation.
 
-The knowledge axis runs from [absurd](../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../philosophy-services-section/content/text/glossary/terms/absurd.md) (no evidence) to [determination](determination.md) (full evidence). It records the *amount* of witnessing structure that has accumulated — how much relational machinery the framework has applied to the claim.
+The knowledge axis runs from [absurd](../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../philosophy-services-section/services/relationality-services-section/content/text/glossary/terms/absurd.md) (no evidence) to [determination](determination.md) (full evidence). It records the *amount* of witnessing structure that has accumulated — how much relational machinery the framework has applied to the claim.
 
 The two axes are independent. A claim can be:
 
 - High on the knowledge axis (determined) and high on the truth axis (true) — this is the *true-only* corner: fully settled toward affirmation.
 - High on the knowledge axis (determined) and low on the truth axis (false) — this is the *false-only* corner: fully settled toward denial.
 - High on the knowledge axis (determined) and *neither* on the truth axis — this is the *both* corner: fully settled with evidence in both directions, paraconsistently. This is the [determination](determination.md) extreme without truth-axis tilt.
-- Low on the knowledge axis (absurd) — this is the *neither* corner: no settlement, the truth axis is undefined because no evidence has been accumulated. This is the [absurd](../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../philosophy-services-section/content/text/glossary/terms/absurd.md) extreme.
+- Low on the knowledge axis (absurd) — this is the *neither* corner: no settlement, the truth axis is undefined because no evidence has been accumulated. This is the [absurd](../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../philosophy-services-section/services/relationality-services-section/content/text/glossary/terms/absurd.md) extreme.
 
 The four-cornered shape is therefore not a flat enumeration of four values; it is the four extremal positions of a two-dimensional joint structure.
 

@@ -29,8 +29,8 @@ Karen A. Schriver is an American researcher in document design and information d
 
 ## Related
 
-- [document design](../../../../../../../../../../social-science-services-section/content/text/glossary/terms/document-design.md) — the practice her work established on empirical foundations
-- [protocol-aided audience analysis](../../../../../../../../../../social-science-services-section/content/text/glossary/terms/protocol-aided-audience-analysis.md) — her method of using think-aloud protocols to study real readers
-- [think-aloud protocol](../../../../../../../../../../social-science-services-section/content/text/glossary/terms/think-aloud-protocol.md) — the research method she applied to document testing
+- [document design](../../../../../../../../communication-science-services-section/services/writing-services-section/services/plain-language-services-section/content/text/glossary/terms/document-design.md) — the practice her work established on empirical foundations
+- [protocol-aided audience analysis](../../../../../../../../communication-science-services-section/services/writing-services-section/services/plain-language-services-section/content/text/glossary/terms/protocol-aided-audience-analysis.md) — her method of using think-aloud protocols to study real readers
+- [think-aloud protocol](../../../../../../../../communication-science-services-section/services/writing-services-section/services/plain-language-services-section/content/text/glossary/terms/think-aloud-protocol.md) — the research method she applied to document testing
 - [audience](../../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/glossary/concepts/audience.md) — Schriver's research shows why abstract audience analysis fails without testing
 - [plain language writing](../../writing/topics/plain-language/index.md) — the plain language specification's testing requirements draw on her work

@@ -32,7 +32,7 @@ Peter Elbow is an American composition scholar whose work on the writing process
 
 ## Related
 
-- [freewriting](../../../../../../../../../../social-science-services-section/content/text/glossary/terms/freewriting.md) — the term entry for Elbow's composing method
+- [freewriting](../../../../../../../../communication-science-services-section/services/writing-services-section/services/essay-writing-services-section/content/text/glossary/terms/freewriting.md) — the term entry for Elbow's composing method
 - [first-order and second-order thinking](../../../../../../../../../../social-science-services-section/content/text/glossary/terms/first-order-thinking.md) — the term entry for Elbow's framework separating generation from evaluation
-- [revision](../../../../../../../../../../social-science-services-section/content/text/glossary/terms/revision.md) — Elbow's separation of generating and revising clarifies what revision is for
+- [revision](../../../../../../../../communication-science-services-section/services/writing-services-section/services/essay-writing-services-section/content/text/glossary/terms/revision.md) — Elbow's separation of generating and revising clarifies what revision is for
 - [Linda Flower](./linda-flower.md) — her cognitive process research provided empirical grounding for Elbow's observations about composing

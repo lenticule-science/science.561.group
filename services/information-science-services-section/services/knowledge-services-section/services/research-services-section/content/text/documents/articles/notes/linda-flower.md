@@ -31,7 +31,7 @@ Linda Flower is an American rhetoric and composition scholar at Carnegie Mellon 
 ## Related
 
 - [writer-based prose](../../../../../../../../../../social-science-services-section/content/text/glossary/terms/writer-based-prose.md) — the term entry for Flower's distinction between writer-based and reader-based prose
-- [think-aloud protocol](../../../../../../../../../../social-science-services-section/content/text/glossary/terms/think-aloud-protocol.md) — the research method Flower and Hayes used to study composing
-- [task analysis](../../../../../../../../../../social-science-services-section/content/text/glossary/terms/task-analysis.md) — Flower's work explains why writer-based organization fails in procedural content
-- [revision](../../../../../../../../../../social-science-services-section/content/text/glossary/terms/revision.md) — the process Flower's research illuminated as recursive, not terminal
+- [think-aloud protocol](../../../../../../../../communication-science-services-section/services/writing-services-section/services/plain-language-services-section/content/text/glossary/terms/think-aloud-protocol.md) — the research method Flower and Hayes used to study composing
+- [task analysis](../../../../../../../../communication-science-services-section/services/writing-services-section/services/plain-language-services-section/content/text/glossary/terms/task-analysis.md) — Flower's work explains why writer-based organization fails in procedural content
+- [revision](../../../../../../../../communication-science-services-section/services/writing-services-section/services/essay-writing-services-section/content/text/glossary/terms/revision.md) — the process Flower's research illuminated as recursive, not terminal
 - [audience](../../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/glossary/concepts/audience.md) — her writer-based/reader-based distinction clarifies what audience awareness means in practice

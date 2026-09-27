@@ -10,6 +10,7 @@ keywords:
 description: "Language that maintains grammatical form while voiding relational function — language that circulates without presence."
 date-updated: 2026-03-09
 part-of: relationality/disciplines/cybernetic-postliberalism/disciplines/linguistics/terms
+introduces: term - "dead English" - "dead english"
 ---
 
 
@@ -21,4 +22,4 @@ emsenn traces how dead English evacuates agency at three levels. At the sentence
 
 What makes dead English dangerous, in emsenn's account, is not just its institutional use but its internalization. Individuals adopt institutional tones in personal speech — responding to a friend's grief with "I hear you and I want you to know that your feelings are valid" rather than with direct engagement. The grammar of the institution migrates into intimate speech.
 
-emsenn connects this analysis to [Victor Klemperer](../../../../../../../knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/victor-klemperer.md), who documented how grammar does [ideological](../../../../../../../../../social-science-services-section/services/sociology-science-services-section/content/text/glossary/terms/ideology.md) work independent of explicit content, and to [Lauren Berlant](../../../../../../../knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/lauren-berlant.md), whose work on genre shows how formal structures shape what can be said and felt within them.
+emsenn connects this analysis to [Victor Klemperer](../../../../../../../knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/victor-klemperer.md), who documented how grammar does [ideological](../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section/services/anarchism-services-section/content/text/glossary/terms/ideology.md) work independent of explicit content, and to [Lauren Berlant](../../../../../../../knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/lauren-berlant.md), whose work on genre shows how formal structures shape what can be said and felt within them.

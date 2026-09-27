@@ -35,6 +35,6 @@ an external principle standing outside the world.
 ## Related terms
 
 - [Ontology](../theories/ontology/terms/ontology.md)
-- [Metaphysics](./metaphysics.md)
-- [Dialectics](dialectics.md)
+- [Metaphysics](../../../../services/western-services-section/services/metaphysics-services-section/content/text/glossary/terms/metaphysics.md)
+- [Dialectics](../../../../services/western-services-section/services/marxism-services-section/content/text/glossary/terms/dialectics.md)
 - [Mediation](mediation.md)

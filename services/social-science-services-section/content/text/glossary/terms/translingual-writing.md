@@ -33,4 +33,4 @@ The vault's current conventions operate within a monolingual framework. Translin
 - [language and power](../topics/language-and-power/index.md) — translingual theory makes explicit how language standards encode power relations
 - [discourse community](discourse-community.md) — discourse communities may be monolingual, bilingual, or translingual
 - [audience](../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/glossary/concepts/audience.md) — translingual awareness expands what counts as effective writing for diverse audiences
-- [plain language movement](./plain-language-movement.md) — plain language and translingual approaches share a commitment to access but differ on what counts as "plain"
+- [plain language movement](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/plain-language-services-section/content/text/glossary/terms/plain-language-movement.md) — plain language and translingual approaches share a commitment to access but differ on what counts as "plain"

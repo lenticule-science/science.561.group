@@ -32,4 +32,4 @@ Jay Timothy Dolmage is a Canadian rhetoric and disability studies scholar at the
 
 - [accessibility](../../../../../../../../communication-science-services-section/services/writing-services-section/services/plain-language-services-section/content/text/glossary/terms/accessibility.md) — the writing-specific application of Dolmage's universal design arguments
 - [language and power](../../writing/topics/language-and-power/index.md) — ableism in writing conventions is a power concern
-- [cognitive load](../../../../../../../../../../social-science-services-section/content/text/glossary/terms/cognitive-load.md) — Dolmage's work connects to cognitive load theory by showing that "standard" cognitive load assumptions exclude neurodivergent readers
+- [cognitive load](../../../../../../../../communication-science-services-section/services/writing-services-section/services/plain-language-services-section/content/text/glossary/terms/cognitive-load.md) — Dolmage's work connects to cognitive load theory by showing that "standard" cognitive load assumptions exclude neurodivergent readers

@@ -30,4 +30,4 @@ The [duty of execution](./duty-of-execution.md) applies to individual tasks. Pla
 
 - [Plan](../../../terms/plan.md) — what is being stewarded
 - [Duty of execution](./duty-of-execution.md) — the companion duty on individual tasks
-- [Accountability](./accountability.md) — who answers when the plan fails
+- [Accountability](accountability.md) — who answers when the plan fails

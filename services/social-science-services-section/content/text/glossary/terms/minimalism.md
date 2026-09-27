@@ -16,18 +16,18 @@ Carroll's research at IBM in the 1980s found that learners using traditional com
 Minimalist documentation follows several principles:
 
 1. **Choose an action-oriented approach.** Let users start doing meaningful tasks immediately. Don't front-load theory, background, or conceptual overviews.
-2. **Anchor the tool in the task.** Organize documentation around what users are trying to accomplish, not around the system's features or architecture. This aligns with [task analysis](./task-analysis.md) and the shift from [writer-based to reader-based prose](./writer-based-prose.md) [@flowerhayes1981].
+2. **Anchor the tool in the task.** Organize documentation around what users are trying to accomplish, not around the system's features or architecture. This aligns with [task analysis](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/plain-language-services-section/content/text/glossary/terms/task-analysis.md) and the shift from [writer-based to reader-based prose](./writer-based-prose.md) [@flowerhayes1981].
 3. **Support error recognition and recovery.** Users make mistakes. Documentation should anticipate common errors and help users recover, not just describe the happy path.
 4. **Support reading to do, studying, and locating.** Different users have different needs at different times. The same person may need a tutorial (reading to do), a concept explanation (studying), and a reference entry (locating). Minimalism doesn't mean writing less — it means writing what each reader needs, in the form they need it, without forcing them through content they don't.
 
-Minimalism connects to [cognitive load](./cognitive-load.md) theory: extraneous material in documentation doesn't just waste the reader's time — it actively degrades learning by consuming working memory that could be used for understanding [@sweller1988]. It also connects to [Janice Redish](../../general/people/janice-redish.md)'s work on web content: users scan, select, and act — they rarely read comprehensively [@redish2012].
+Minimalism connects to [cognitive load](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/plain-language-services-section/content/text/glossary/terms/cognitive-load.md) theory: extraneous material in documentation doesn't just waste the reader's time — it actively degrades learning by consuming working memory that could be used for understanding [@sweller1988]. It also connects to [Janice Redish](../../general/people/janice-redish.md)'s work on web content: users scan, select, and act — they rarely read comprehensively [@redish2012].
 
 Minimalism is not the same as brevity. A minimalist manual may be long if the task domain is complex. The point is that every section earns its place by serving a reader need, and no section exists because the writer thought it was interesting or because the system architecture suggested it.
 
 ## Related terms
 
-- [task analysis](./task-analysis.md) — minimalism organizes documentation around tasks, not system features
-- [cognitive load](./cognitive-load.md) — minimalism reduces extraneous cognitive load by cutting material that doesn't serve the reader
+- [task analysis](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/plain-language-services-section/content/text/glossary/terms/task-analysis.md) — minimalism organizes documentation around tasks, not system features
+- [cognitive load](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/plain-language-services-section/content/text/glossary/terms/cognitive-load.md) — minimalism reduces extraneous cognitive load by cutting material that doesn't serve the reader
 - [writer-based prose](./writer-based-prose.md) — comprehensive manuals organized by system architecture are writer-based; minimalist documentation is reader-based
-- [usability testing](./usability-testing.md) — Carroll developed minimalism through iterative usability testing
+- [usability testing](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/plain-language-services-section/content/text/glossary/terms/usability-testing.md) — Carroll developed minimalism through iterative usability testing
 - [progressive disclosure](./progressive-disclosure.md) — minimalism uses progressive disclosure to present information when the reader needs it

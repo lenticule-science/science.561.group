@@ -34,9 +34,9 @@ Our task is to show how this process stabilizes—how corporate systems learn to
 We borrow the minimal machinery of [category theory](../../../../research/2026/07/31/lenticule-import/library/arts/mathematics/objects/categories/index.md) to describe cultural circulation.
 
 - ****Objects****: media forms, institutions, discourses.
-- ****Morphisms****: transformations between them (narrative, [ideological](../../../../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/content/text/glossary/terms/ideology.md), affective).
+- ****Morphisms****: transformations between them (narrative, [ideological](../../../../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section/services/anarchism-services-section/content/text/glossary/terms/ideology.md), affective).
 - ****Comonad****: the context-machine that wraps every form in its conditions of production.
-- ****Coalgebra****: a form that reproduces itself under that context—a [fixed point](../../../../research/2026/07/31/lenticule-import/library/arts/mathematics/concepts/fixed-point/index.md) of [ideology](../../../../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/content/text/glossary/terms/ideology.md).
+- ****Coalgebra****: a form that reproduces itself under that context—a [fixed point](../../../../research/2026/07/31/lenticule-import/library/arts/mathematics/concepts/fixed-point/index.md) of [ideology](../../../../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section/services/anarchism-services-section/content/text/glossary/terms/ideology.md).
 
 A cultural work is **certified** when its internal process matches the structure of the larger system that contains it.
 The moment of equivalence $C r \simeq r$ marks not freedom, but perfect capture.
@@ -92,7 +92,7 @@ Formally, $C r_{\text{show}} \cong r_{\text{show}}$.
 > Its structure is anarchic in event and authoritarian in recurrence.
 > It converts the impossible into the familiar, pleasure into product.
 > Each episode closes the gap between creation and consumption,
-> making imagination itself a [labor](../../../../research/2026/07/31/lenticule-import/library/arts/sociology/terms/labor.md) process for the brand.
+> making imagination itself a [labor](../../../../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/content/text/glossary/terms/labor.md) process for the brand.
 
 Residual tensions—[nihilism](../../../../research/2026/07/31/lenticule-import/library/arts/philosophy/disciplines/nihilism/index.md), irony, the surreal tone of joy without cost—remain,
 but they are harmonized by Disney’s moral frame and reset mechanism.
@@ -103,11 +103,11 @@ The corporate system no longer fears anarchy; it manufactures it.
 Comedy, song, and repetition act as the comultiplication of the comonad:
 they copy rebellion into new instances without altering the schema.
 The show’s infinite summer is not liberation from time but time’s industrial simulation.
-Its laughter is a safety valve for the impossibility of genuine [refusal](../../../../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/content/text/glossary/terms/refusal.md).
+Its laughter is a safety valve for the impossibility of genuine [refusal](../../../../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section/services/anarchism-services-section/services/strategy-services-section/content/text/glossary/terms/refusal.md).
 
 # 8. Conclusion
 
-Under categorical scrutiny, **Phineas and Ferb** emerges as a certified coalgebra of late media [capitalism](../../../../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/content/text/glossary/terms/capitalism.md):
+Under categorical scrutiny, **Phineas and Ferb** emerges as a certified coalgebra of late media [capitalism](../../../../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section/services/anarchism-services-section/content/text/glossary/terms/capitalism.md):
 a structure that sustains itself by absorbing contradiction.
 The show’s apparent freedom is real at the level of affect,
 but null at the level of reproduction.

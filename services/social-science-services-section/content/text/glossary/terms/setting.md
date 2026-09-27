@@ -11,7 +11,7 @@ tags: []
 
 Setting operates at multiple scales. At the largest scale, it is the historical period, the culture, the political conditions. At the middle scale, it is the city, the neighborhood, the institution. At the smallest scale, it is the room, the light, the objects on the table. Fiction writers move between these scales, using specific sensory detail at the small scale to make the larger conditions feel real.
 
-Setting and [character](./character.md) interact continuously. Characters are shaped by where they come from and constrained by where they are. A character's relationship to their setting — whether they belong, whether they're displaced, whether they notice their surroundings at all — reveals who they are. The [point of view](point-of-view.md) determines whose perception of the setting the reader receives.
+Setting and [character](./character.md) interact continuously. Characters are shaped by where they come from and constrained by where they are. A character's relationship to their setting — whether they belong, whether they're displaced, whether they notice their surroundings at all — reveals who they are. The [point of view](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/fiction-services-section/content/text/glossary/terms/point-of-view.md) determines whose perception of the setting the reader receives.
 
 In genre fiction, setting often carries the genre's defining constraints — the rules of a fantasy world, the technology of a science fiction future, the social codes of a historical period. These constraints are not decorative; they generate the [conflicts](conflict.md) and possibilities that drive the [plot](plot.md).
 
@@ -20,4 +20,4 @@ In genre fiction, setting often carries the genre's defining constraints — the
 - [scene](scene.md) — each scene occurs in a specific setting
 - [character](./character.md) — setting shapes and reveals character
 - [conflict](conflict.md) — setting generates constraints that produce conflict
-- [point of view](point-of-view.md) — determines whose perception of setting the reader receives
+- [point of view](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/fiction-services-section/content/text/glossary/terms/point-of-view.md) — determines whose perception of setting the reader receives

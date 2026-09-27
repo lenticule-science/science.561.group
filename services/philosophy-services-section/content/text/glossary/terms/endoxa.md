@@ -38,7 +38,7 @@ keeping those judgments revisable through argument.
 
 ## Related terms
 
-- [Dialectics](dialectics.md)
+- [Dialectics](../../../../services/western-services-section/services/marxism-services-section/content/text/glossary/terms/dialectics.md)
 - [Epistemology](../domains/western/domains/epistemology/terms/epistemology.md)
 - [Historicization](historicization.md)
 

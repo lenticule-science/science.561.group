@@ -61,7 +61,7 @@ A **Role** is a normative interface type: it specifies what you can and must do 
 Filling a role is capability-matching: you fill $R$ by operative satisfaction of $\kappa_R$ — i.e., $s_{a,\kappa_R} \in H^*_t$ — and acceptance of the norm-set $N_R$.
 No formal act is required to fill a role you are capable of filling; role-filling can be informal.
 
-An **[Office](../../../../../services/economics-and-business-science-services-section/services/business-science-services-section/content/text/glossary/terms/office.md)** is a formally invested deontic position: a full [HohfeldianPosition](hohfeldian-position.md) profile (powers, duties, privileges, immunities) transferred by a formal investiture act $I^+$.
+An **[Office](../../../../../services/economics-and-business-science-services-section/services/business-science-services-section/content/text/glossary/terms/office.md)** is a formally invested deontic position: a full [HohfeldianPosition](../../../../services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/services/hohfeldian-services-section/content/text/glossary/terms/hohfeldian-position.md) profile (powers, duties, privileges, immunities) transferred by a formal investiture act $I^+$.
 The office specifies not just what the occupant can do but what they must, may, and are immune from — the complete four-position Hohfeldian profile.
 Offices are installed; roles are filled.
 
@@ -199,7 +199,7 @@ This is the nuclear characterization of Biddle's role strain: not incoherence of
 | **Role** | Capability-signature + norm-set | $N_R$ indexed to role | Bearer-independent type | Capability-matching + norm-acceptance |
 | **[Office](../../../../../services/economics-and-business-science-services-section/services/business-science-services-section/content/text/glossary/terms/office.md)** | Full Hohfeldian deontic profile | Duties derived from powers | Formally invested position | Investiture $I^+$ |
 | **[Norm](norm.md)** | Deontic operator on proposition | Itself | Element of $\mathrm{Fix}(\sigma_t)$ | N/A — exists, not filled |
-| **[Duty](duty.md)** | Three-place Hohfeldian relation | N/A — is a norm instance | $\mathbf{D}(a, \varphi, r) \in H^*_t$ | Established by authority act |
+| **[Duty](../../../../services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/content/text/glossary/terms/duty.md)** | Three-place Hohfeldian relation | N/A — is a norm instance | $\mathbf{D}(a, \varphi, r) \in H^*_t$ | Established by authority act |
 | **[Incumbent](incumbent.md)** | Person $\times$ Office pair | Inherits from office | $(p, o)$ with $f_{p,o} \in H^*_t$ | Investiture |
 
 ## Open questions

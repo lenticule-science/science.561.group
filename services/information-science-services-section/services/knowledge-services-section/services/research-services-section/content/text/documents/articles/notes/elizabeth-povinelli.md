@@ -39,4 +39,4 @@ Povinelli's quasi-event appears throughout emsenn's letters-to-the-web as a tool
 - [Geontologies](../../philosophy/terms/geontologies.md) — her framework for governance of the Life/Nonlife distinction
 - [Lauren Berlant](./lauren-berlant.md) — fellow theorist of impasse and endurance
 - [Settler colonialism](../../sociology/terms/settler-colonialism.md) — the political structure she analyzes
-- [Refusal](../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/content/text/glossary/terms/refusal.md) — the practice that responds to abandonment
+- [Refusal](../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section/services/anarchism-services-section/services/strategy-services-section/content/text/glossary/terms/refusal.md) — the practice that responds to abandonment

@@ -34,7 +34,7 @@ They are deprioritized through institutional logics that allocate maintenance re
 The communities left behind are not destroyed; they are released from the institutional care that would have prevented their degradation.
 
 For communities facing abandonment, the adaptive implications are specific.
-The institutional scaffolding that [proceduralist](../../../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/proceduralism.md) frameworks assume — functioning government, responsive emergency services, accessible courts, maintained infrastructure — does not exist.
+The institutional scaffolding that [proceduralist](../../../../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/content/text/glossary/terms/proceduralism.md) frameworks assume — functioning government, responsive emergency services, accessible courts, maintained infrastructure — does not exist.
 Frameworks that depend on this scaffolding cannot operate.
 What persists is relational infrastructure: [kinship](../../../undated/kinship.md) networks, place-based knowledge, informal mutual support, and the [opacity](../../../../../../../../../../../../content/text/glossary/terms/opacity.md) that protects adaptive structures from the same institutions that withdrew maintenance in the first place.
 

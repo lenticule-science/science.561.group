@@ -40,9 +40,9 @@ For the standard mathematical treatment, see [Heyting algebras in mathematics](.
 
 ### Why constructive, not classical?
 
-A **[Boolean algebra](../../triage/mathematics/concepts/boolean-algebra/index.md)** is a [Heyting algebra](../../triage/mathematics/concepts/heyting-algebra/index.md) where an additional law holds: for every proposition A, either A or its negation is true (the [law of excluded middle](../../../../../../content/text/glossary/terms/law-of-excluded-middle.md)). Classical logic is Boolean.
+A **[Boolean algebra](../../triage/mathematics/concepts/boolean-algebra/index.md)** is a [Heyting algebra](../../triage/mathematics/concepts/heyting-algebra/index.md) where an additional law holds: for every proposition A, either A or its negation is true (the [law of excluded middle](../../../../../western-services-section/services/analytic-philosophy-services-section/content/text/glossary/terms/law-of-excluded-middle.md)). Classical logic is Boolean.
 
-The derivation does not produce a [Boolean algebra](../../triage/mathematics/concepts/boolean-algebra/index.md). Why? Because the [law of excluded middle](../../../../../../content/text/glossary/terms/law-of-excluded-middle.md) requires that every question has a definite yes-or-no answer, even without construction. But in the derivation, nothing exists without having been derived. You cannot assert "this or not-this" unless you can construct which one holds.
+The derivation does not produce a [Boolean algebra](../../triage/mathematics/concepts/boolean-algebra/index.md). Why? Because the [law of excluded middle](../../../../../western-services-section/services/analytic-philosophy-services-section/content/text/glossary/terms/law-of-excluded-middle.md) requires that every question has a definite yes-or-no answer, even without construction. But in the derivation, nothing exists without having been derived. You cannot assert "this or not-this" unless you can construct which one holds.
 
 Think of it this way: in the derivation, to say "X exists" means "X has been derived — here is the construction." To say "X or not-X" would require either producing X or producing a proof that X is impossible. The derivation cannot shortcut this by assuming one or the other holds.
 
@@ -87,7 +87,7 @@ Suppose you have three judgements: A = "this is a tree," B = "this is an oak," a
 <details>
 <summary>1. What is the key structural difference between a [Heyting](../../../../../../../information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/arend-heyting.md) algebra and a [Boolean algebra](../../triage/mathematics/concepts/boolean-algebra/index.md)?</summary>
 
-In a [Boolean algebra](../../triage/mathematics/concepts/boolean-algebra/index.md), every element has a complement (the [law of excluded middle](../../../../../../content/text/glossary/terms/law-of-excluded-middle.md) holds: A ∨ ¬A = top for all A). In a [Heyting algebra](../../triage/mathematics/concepts/heyting-algebra/index.md), this does not necessarily hold. Negation exists (as implication to the bottom), but A ∨ ¬A may not equal the top element.
+In a [Boolean algebra](../../triage/mathematics/concepts/boolean-algebra/index.md), every element has a complement (the [law of excluded middle](../../../../../western-services-section/services/analytic-philosophy-services-section/content/text/glossary/terms/law-of-excluded-middle.md) holds: A ∨ ¬A = top for all A). In a [Heyting algebra](../../triage/mathematics/concepts/heyting-algebra/index.md), this does not necessarily hold. Negation exists (as implication to the bottom), but A ∨ ¬A may not equal the top element.
 </details>
 
 <details>

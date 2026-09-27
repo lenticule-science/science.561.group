@@ -21,5 +21,5 @@ The risk is overuse. When everything in a passage whispers, looms, dances, and b
 ## Related terms
 
 - [figurative language](figurative-language.md) — the category personification belongs to
-- [metaphor](metaphor.md) — personification is a specific type of metaphor
+- [metaphor](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/poetry-services-section/content/text/glossary/terms/metaphor.md) — personification is a specific type of metaphor
 - [imagery](./imagery.md) — personification often creates sensory images

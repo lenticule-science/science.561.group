@@ -7,7 +7,7 @@ date-created: 2026-03-06
 tags: []
 ---
 
-***Simile*** is a figure of speech that compares two things using "like" or "as" — "My love is like a red, red rose" (Burns), "the evening is spread out against the sky / Like a patient etherized upon a table" (Eliot). Unlike [metaphor](metaphor.md), which identifies one thing as another, simile explicitly marks the comparison, keeping both terms distinct.
+***Simile*** is a figure of speech that compares two things using "like" or "as" — "My love is like a red, red rose" (Burns), "the evening is spread out against the sky / Like a patient etherized upon a table" (Eliot). Unlike [metaphor](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/poetry-services-section/content/text/glossary/terms/metaphor.md), which identifies one thing as another, simile explicitly marks the comparison, keeping both terms distinct.
 
 This explicitness is not weakness. Simile preserves the gap between the things compared, and that gap is where meaning lives. When Eliot compares the evening to an etherized patient, the reader holds both images — the sky and the operating table — and the dissonance between them creates the poem's unsettling mood. A metaphor ("the evening was a patient etherized upon a table") would fuse the images; the simile keeps them in tension.
 
@@ -15,6 +15,6 @@ Epic simile (also called Homeric simile) extends the comparison over multiple li
 
 ## Related terms
 
-- [metaphor](metaphor.md) — figurative identification without explicit comparison markers
+- [metaphor](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/poetry-services-section/content/text/glossary/terms/metaphor.md) — figurative identification without explicit comparison markers
 - [lyric](lyric.md) — figurative language is central to the lyric mode
 - [alliteration](alliteration.md) — sound devices that often work alongside figurative language

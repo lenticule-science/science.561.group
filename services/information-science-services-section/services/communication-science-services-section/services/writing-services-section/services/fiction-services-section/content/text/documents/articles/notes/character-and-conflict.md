@@ -56,7 +56,7 @@ The obstacle can be external (another character, the environment, social structu
 Characters are revealed through four channels:
 
 - **Action** — what characters do, especially under pressure. A character who says they value honesty but lies to avoid discomfort is revealed by the contradiction between speech and action. What a character does when the cost is high tells the reader who they are.
-- **[Dialogue](../../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/dialogue.md)** — what characters say and how they say it. Dialogue reveals character through [diction](../../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/diction.md) (word choice), [syntax](../../../../../../rhetoric-and-composition-services-section/content/text/glossary/terms/syntax.md) (sentence structure), and [subtext](../../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/subtext.md) (what is meant but not said). A character who speaks in short, clipped sentences communicates something different from one who qualifies everything.
+- **[Dialogue](../../../glossary/terms/dialogue.md)** — what characters say and how they say it. Dialogue reveals character through [diction](../../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/diction.md) (word choice), [syntax](../../../../../../rhetoric-and-composition-services-section/content/text/glossary/terms/syntax.md) (sentence structure), and [subtext](../../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/subtext.md) (what is meant but not said). A character who speaks in short, clipped sentences communicates something different from one who qualifies everything.
 - **Choice** — decisions with consequences. The decisions that reveal character most fully are those where there is no good option — where every choice costs something. These dilemmas are where [theme](../../../glossary/terms/theme.md) and character intersect: what the character chooses tells the reader what the story values.
 - **Interiority** — thoughts, perceptions, feelings. Available only through certain [point of view](../../../glossary/terms/point-of-view.md) choices, interiority gives the reader access to the character's inner life. But interiority alone doesn't create character — a character who thinks one thing and does another is more interesting than one whose actions and thoughts align perfectly.
 
@@ -74,7 +74,7 @@ The interaction between internal and external conflict is where fiction generate
 
 Ernest Hemingway's iceberg theory applies: the writer should know everything about the character, but the story should show only what's necessary. The reader senses the mass beneath the surface — the character's history, the reasons behind their behavior — without needing it all explained. When [backstory](../../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/backstory.md) surfaces, it should arrive because the present-tense action demands it, not because the writer wants to share what they know.
 
-[Flashback](../../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/flashback.md) is the most common technique for delivering backstory within scenes, but it carries risks — it interrupts narrative momentum and can feel like the story is stalling. Use flashback when the past event is dramatic enough to sustain a scene of its own and when the reader needs to witness it rather than hear about it.
+[Flashback](../../../glossary/terms/flashback.md) is the most common technique for delivering backstory within scenes, but it carries risks — it interrupts narrative momentum and can feel like the story is stalling. Use flashback when the past event is dramatic enough to sustain a scene of its own and when the reader needs to witness it rather than hear about it.
 
 ## Guidance
 
@@ -88,7 +88,7 @@ Ernest Hemingway's iceberg theory applies: the writer should know everything abo
 - [character](../../../glossary/terms/character.md)
 - [conflict](../../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/conflict.md)
 - [backstory](../../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/backstory.md)
-- [dialogue](../../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/dialogue.md)
+- [dialogue](../../../glossary/terms/dialogue.md)
 - [theme](../../../glossary/terms/theme.md)
-- [arc](../../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/arc.md)
-- [flashback](../../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/flashback.md)
+- [arc](../../../glossary/terms/arc.md)
+- [flashback](../../../glossary/terms/flashback.md)

@@ -27,6 +27,6 @@ Jorge Arango is an information architect and author whose work examines how info
 
 ## Related
 
-- [document design](../../../../../../../../../../social-science-services-section/content/text/glossary/terms/document-design.md) — information architecture extends document design principles to interactive environments
+- [document design](../../../../../../../../communication-science-services-section/services/writing-services-section/services/plain-language-services-section/content/text/glossary/terms/document-design.md) — information architecture extends document design principles to interactive environments
 - [genre](../../../../../../../../communication-science-services-section/services/writing-services-section/services/rhetoric-and-composition-services-section/content/text/glossary/terms/genre.md) — information architecture creates the structures within which genres operate
 - [technical writing](../../writing/disciplines/technical-writing/index.md) — information architecture is a core method of technical writing

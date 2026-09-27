@@ -63,7 +63,7 @@ Fitness is not static. The dynamic view:
 - $\mathrm{Fit}_t(x, R) = 1$ at $t_1$ → the entity now fills the role; can be installed
 - $\mathrm{Fit}_t(x, R) < 1$ at $t_2 > t_1$ → the entity has degraded; is no longer fit for the role
 
-The trajectory of fitness is the entity's *development profile* with respect to $R$. An [Investiture](../../../../../../../../../../social-science-services-section/content/text/glossary/terms/investiture.md) requires $\mathrm{Fit}_{t_0}(x, R) = 1$ at the moment of installation; subsequent fitness changes are the entity's ongoing responsibility to maintain.
+The trajectory of fitness is the entity's *development profile* with respect to $R$. An [Investiture](../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/content/text/glossary/terms/investiture.md) requires $\mathrm{Fit}_{t_0}(x, R) = 1$ at the moment of installation; subsequent fitness changes are the entity's ongoing responsibility to maintain.
 
 ## Spectral thermodynamics of fitness development
 

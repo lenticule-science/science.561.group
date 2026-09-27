@@ -15,6 +15,7 @@ ast:
     - access-predicate
 aliases:
   - Room
+name: Room
 ---
 
 # Room

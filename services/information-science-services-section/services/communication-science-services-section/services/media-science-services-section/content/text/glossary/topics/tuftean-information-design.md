@@ -7,7 +7,7 @@ description: "Edward Tufte's information design as an ethic of integrity under c
 
 Edward Tufte's information design as an ethic of integrity under constraint within visual engineering: attention-budget discipline, micro/macro coherence, evidence-first graphics.
 
-Edward Tufte&rsquo;s information design, as drawn on by [visual engineering practices](../../documents/articles/research/2026/07/31/lenticule-import/library/arts/arts-theory/design/topics/visual-engineering/index.md), functions as an ethics-and-clarity pillar rather than an aesthetic one. It prevents the composite from drifting into &ldquo;poster style&rdquo; that sacrifices integrity for affect. The objective is evidence-first [legibility](../../documents/articles/research/2026/07/31/lenticule-import/library/humanities/domains/sociology/terms/legibility.md) and micro/macro coherence.
+Edward Tufte&rsquo;s information design, as drawn on by [visual engineering practices](../../documents/articles/research/2026/07/31/lenticule-import/library/arts/arts-theory/design/topics/visual-engineering/index.md), functions as an ethics-and-clarity pillar rather than an aesthetic one. It prevents the composite from drifting into &ldquo;poster style&rdquo; that sacrifices integrity for affect. The objective is evidence-first [legibility](../../../../../../../../../philosophy-services-section/services/black-philosophy-services-section/services/abolition-services-section/services/state-repression-services-section/content/text/glossary/terms/legibility.md) and micro/macro coherence.
 
 ## Methods and approach
 

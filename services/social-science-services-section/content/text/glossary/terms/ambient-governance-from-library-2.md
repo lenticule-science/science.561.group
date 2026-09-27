@@ -22,7 +22,7 @@ When a legal proceeding establishes that a cultural practice is evidence of inst
 The "ambient" qualifier distinguishes this mode from direct governance (commands, regulations, prohibitions) and from disciplinary governance (surveillance, monitoring, punishment).
 Ambient governance doesn't watch, doesn't command, and doesn't punish.
 It shapes the field.
-An institution that doesn't produce [compliance artifacts](compliance-artifact.md) isn't penalized; it simply appears out of step — lacking the practices that everyone else in the sector performs.
+An institution that doesn't produce [compliance artifacts](../../../../services/law-science-services-section/content/text/glossary/terms/compliance-artifact.md) isn't penalized; it simply appears out of step — lacking the practices that everyone else in the sector performs.
 The pressure is social and institutional, not legal, even though the legal system originated it.
 
 This makes ambient governance uniquely difficult to resist.

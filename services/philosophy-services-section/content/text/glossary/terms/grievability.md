@@ -24,6 +24,6 @@ In emsenn's analysis of [anarchist](../../sociology/schools/anarchism/index.md) 
 
 - [Fascist grammar](../../../../../social-science-services-section/services/sociology-science-services-section/services/cybernetic-postliberalism-services-section/content/text/glossary/terms/fascist-grammar.md) — the rhetorical structure that renders enemies ungrievable
 - [Biopolitics](../../../../../../sociology/theories/critical-theory/theories/biopolitics/terms/biopolitics.md) — the governance of who lives and who dies
-- [Reproductive futurism](reproductive-futurism.md) — whose futures are protected, and whose are not
+- [Reproductive futurism](../../../../services/western-services-section/services/political-philosophy-services-section/services/queer-theory-services-section/content/text/glossary/terms/reproductive-futurism.md) — whose futures are protected, and whose are not
 - [Precarity](../../../../services/relationality-services-section/services/agency-services-section/content/text/documents/articles/notes/undated/precarity.md) — the differential distribution of vulnerability that grievability tracks
 - [Vulnerability](vulnerability.md) — care ethics' account of susceptibility to harm as constitutive

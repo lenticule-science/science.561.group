@@ -26,5 +26,5 @@ Many of the world's musical traditions treat timbre as a primary compositional p
 ## Related terms
 
 - [Harmony](./harmony.md) — timbre affects how harmonic combinations are perceived
-- [Drone](./drone.md) — sustained timbral presence
+- [Drone](drone.md) — sustained timbral presence
 - [Improvisation](./improvisation.md) — timbral variation as an improvisational resource

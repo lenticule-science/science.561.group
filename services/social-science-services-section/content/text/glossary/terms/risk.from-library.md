@@ -40,7 +40,7 @@ The "risky" population (the poor, the racialized, the undocumented, the mentally
 This means the language of risk is the language of preemptive control.
 You do not need to have done anything wrong to be subjected to risk management.
 You need only to be categorized as risky.
-The risk framework enables governance to operate on populations before harm occurs — and because the assessment of who is risky is structured by existing [hierarchies](hierarchy.md) of race, class, and gender, risk management reproduces the structures it claims to neutrally assess.
+The risk framework enables governance to operate on populations before harm occurs — and because the assessment of who is risky is structured by existing [hierarchies](../../../../services/sociology-science-services-section/services/critical-theory-science-services-section/services/anarchism-services-section/content/text/glossary/terms/hierarchy.md) of race, class, and gender, risk management reproduces the structures it claims to neutrally assess.
 
 ## Risk and care
 
@@ -59,8 +59,8 @@ They are the result of a political environment in which risk management has beco
 The risk framework has specific consequences for resistance.
 [Direct action](../../../../services/sociology-science-services-section/content/text/glossary/terms/direct-action.md) is, by definition, risky — it operates outside the channels that manage and legitimate political participation.
 The risk framework categorizes this as irresponsible: action that has not been assessed, approved, and managed is action that poses unacceptable risk.
-This is how the language of safety can be deployed against liberation: the demand to "be safe" becomes the demand to submit to management, and [refusal](../../../../services/sociology-science-services-section/content/text/glossary/terms/refusal.md) of management becomes recklessness.
+This is how the language of safety can be deployed against liberation: the demand to "be safe" becomes the demand to submit to management, and [refusal](../../../../services/sociology-science-services-section/services/critical-theory-science-services-section/services/anarchism-services-section/services/strategy-services-section/content/text/glossary/terms/refusal.md) of management becomes recklessness.
 
 Anarchist analysis recognizes that this framing inverts the actual structure of danger.
-The riskiest condition is domination itself — the ongoing structural harm of [capitalism](../../../../services/sociology-science-services-section/content/text/glossary/terms/capitalism.md), [colonialism](colonialism.md), and the state.
+The riskiest condition is domination itself — the ongoing structural harm of [capitalism](../../../../services/sociology-science-services-section/services/critical-theory-science-services-section/services/anarchism-services-section/content/text/glossary/terms/capitalism.md), [colonialism](colonialism.md), and the state.
 Risk management, by focusing on the dangers of action rather than the dangers of the status quo, naturalizes existing arrangements and pathologizes attempts to change them.

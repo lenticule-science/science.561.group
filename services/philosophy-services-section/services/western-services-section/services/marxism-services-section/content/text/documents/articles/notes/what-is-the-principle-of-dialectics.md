@@ -257,8 +257,8 @@ negation both cancels and preserves prior form.**
 
 ## Related pages
 
-- [Dialectics](../../../../../../../../../content/text/glossary/terms/dialectics.md)
-- [Materialism](../../../../../../../../../content/text/glossary/terms/materialism.md)
+- [Dialectics](../../../glossary/terms/dialectics.md)
+- [Materialism](../../../../../../metaphysics-services-section/content/text/glossary/terms/materialism.md)
 - [Ontology](../../metaphysics/domains/ontology/terms/ontology.md)
 - [Dialectics Reference Sheet](./dialectics-reference-sheet.md)
 - [How to Evaluate a Dialectical Argument](./how-to-evaluate-a-dialectical-argument.md)

@@ -28,4 +28,4 @@ This connects to emsenn's broader analysis of how systems stabilize through norm
 ## Related
 
 - [Fascist grammar](../../../../services/cybernetic-postliberalism-services-section/content/text/glossary/terms/fascist-grammar.md) — depends on hypernormalization to make its sequence habitual
-- [Spectacle](./spectacle.md) — [Debord](../../general/people/guy-debord.md)'s parallel concept of displaced social life
+- [Spectacle](../../../../services/critical-theory-science-services-section/services/situationist-services-section/content/text/glossary/terms/spectacle.md) — [Debord](../../general/people/guy-debord.md)'s parallel concept of displaced social life

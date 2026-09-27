@@ -16,11 +16,11 @@ The concept of conversion distinguishes copywriting from other writing disciplin
 
 Conversion is not a single event. Marketing professionals describe a "conversion funnel" — a sequence of progressively smaller commitments: awareness → interest → consideration → action. Each stage has its own copy needs. Top-of-funnel copy introduces; middle-of-funnel copy educates and differentiates; bottom-of-funnel copy closes.
 
-The copywriter's job is to reduce friction at every stage of the funnel — removing obstacles between the reader's current state and the desired action. Unclear [value propositions](value-proposition.md), hidden [calls to action](call-to-action.md), unanswered objections, and excessive form fields are all sources of friction that reduce conversion.
+The copywriter's job is to reduce friction at every stage of the funnel — removing obstacles between the reader's current state and the desired action. Unclear [value propositions](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/copywriting-services-section/content/text/glossary/terms/value-proposition.md), hidden [calls to action](call-to-action.md), unanswered objections, and excessive form fields are all sources of friction that reduce conversion.
 
 ## Related terms
 
 - [call to action](call-to-action.md) — the instruction that triggers conversion
 - [landing page](landing-page.md) — the page designed to maximize conversion
-- [A/B testing](ab-testing.md) — the method for comparing conversion rates between alternatives
-- [value proposition](value-proposition.md) — the promise that motivates conversion
+- [A/B testing](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/copywriting-services-section/content/text/glossary/terms/ab-testing.md) — the method for comparing conversion rates between alternatives
+- [value proposition](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/copywriting-services-section/content/text/glossary/terms/value-proposition.md) — the promise that motivates conversion

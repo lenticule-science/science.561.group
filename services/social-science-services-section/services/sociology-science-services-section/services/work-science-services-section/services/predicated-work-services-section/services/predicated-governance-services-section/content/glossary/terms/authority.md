@@ -25,7 +25,7 @@ of [jural relations](../../../../../../../../../../../../../../public-services-s
 
 ## Authority as second-quartet bundle
 
-Per the library's [hohfeldian-position](../../../../../../../../../../../content/text/glossary/terms/hohfeldian-position.md) text, authority is the *second-quartet* Hohfeldian power: the capacity to *alter normative state*, distinguished from the *first-quartet* claim/duty/privilege that operates on substantive acts.
+Per the library's [hohfeldian-position](../../../../../../governance-services-section/services/hohfeldian-services-section/content/text/glossary/terms/hohfeldian-position.md) text, authority is the *second-quartet* Hohfeldian power: the capacity to *alter normative state*, distinguished from the *first-quartet* claim/duty/privilege that operates on substantive acts.
 
 Substrate-algebraically, this distinction lives in the closure-rule structure:
 

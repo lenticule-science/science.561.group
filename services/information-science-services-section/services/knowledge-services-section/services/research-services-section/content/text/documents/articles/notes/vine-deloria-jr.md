@@ -33,5 +33,5 @@ Vine Deloria Jr. (1933–2005) was a Standing Rock Sioux author, lawyer, and sch
 - [Leanne Simpson](./leanne-simpson.md) — fellow theorist of Indigenous resurgence
 - [Ontological turn](../../philosophy/terms/ontological-turn.md) — the movement his critique of Western [epistemology](../../philosophy/terms/epistemology.md) anticipates
 - [Perspectivism](../../../../../../../../../../philosophy-services-section/content/text/glossary/terms/perspectivism.md) — the framework his place-based [epistemology](../../philosophy/terms/epistemology.md) resonates with
-- [Substance metaphysics](../../../../../../../../../../philosophy-services-section/content/text/glossary/terms/substance-metaphysics.md) — what his critique of Western universalism targets
+- [Substance metaphysics](../../../../../../../../../../philosophy-services-section/services/western-services-section/services/metaphysics-services-section/services/process-philosophy-services-section/content/text/glossary/terms/substance-metaphysics.md) — what his critique of Western universalism targets
 - [Geontologies](../../philosophy/terms/geontologies.md) — [Povinelli](./elizabeth-povinelli.md)'s framework where place-based knowledge challenges the Life/Nonlife distinction

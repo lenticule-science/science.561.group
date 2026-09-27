@@ -10,7 +10,7 @@ keywords:
 description: "The direct costs of producing the goods or services a business sells — materials, ingredients, and direct labor — subtracted from revenue to calculate gross profit."
 ---
 
-Cost of goods sold (COGS) is the total direct cost of producing what the business sells during a period. For a restaurant: food, beverages, and the direct [labor](../../sociology/terms/labor.md) involved in preparation. For a retailer: the wholesale cost of merchandise. For a manufacturer: raw materials and production labor.
+Cost of goods sold (COGS) is the total direct cost of producing what the business sells during a period. For a restaurant: food, beverages, and the direct [labor](../../../../../../../sociology-science-services-section/content/text/glossary/terms/labor.md) involved in preparation. For a retailer: the wholesale cost of merchandise. For a manufacturer: raw materials and production labor.
 
 COGS does not include indirect costs like rent, utilities, marketing, or administrative salaries — those are [operating expenses](../../../../services/accounting-services-section/content/text/glossary/terms/operating-expenses.md). The distinction matters because:
 

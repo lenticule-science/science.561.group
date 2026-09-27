@@ -6,7 +6,7 @@ type: act
 visibility: public
 ---
 
-***Being*** is an [act](../../../../services/relationality-services-section/services/agency-services-section/content/text/glossary/concepts/tekodynamics-concepts-act-act.md) of a [condition](../../../../services/relationality-services-section/services/agency-services-section/content/text/glossary/terms/condition.md) being [true](true.md) for a [thing](thing.md).
+***Being*** is an [act](../../../../services/relationality-services-section/services/agency-services-section/content/text/glossary/concepts/tekodynamics-concepts-act-act.md) of a [condition](../../../../services/relationality-services-section/services/agency-services-section/content/text/glossary/terms/condition.md) being [true](../../../../services/relationality-services-section/content/text/glossary/terms/true.md) for a [thing](thing.md).
 
 Yes, that description uses itself twice (is an act, being true). I'm trying.
 
@@ -16,4 +16,4 @@ For the [concept](../../../../../information-science-services-section/content/te
   - `X` is usually a [form](../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/form.md), [structure](structure.md), mode, etc.
   - `Y` is usually a [condition](../../../../services/relationality-services-section/services/agency-services-section/content/text/glossary/terms/condition.md)
   - `is` is:
-    - [claiming](../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/claiming.md) that `Y` is [true](true.md) of `X`
+    - [claiming](../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/claiming.md) that `Y` is [true](../../../../services/relationality-services-section/content/text/glossary/terms/true.md) of `X`

@@ -26,6 +26,6 @@ conditions and temporal development.
 
 ## Related terms
 
-- [Dialectics](./dialectics.md)
-- [Materialism](materialism.md)
+- [Dialectics](../../../../services/western-services-section/services/marxism-services-section/content/text/glossary/terms/dialectics.md)
+- [Materialism](../../../../services/western-services-section/services/metaphysics-services-section/content/text/glossary/terms/materialism.md)
 - [Epistemology](../../epistemology/terms/epistemology.md)

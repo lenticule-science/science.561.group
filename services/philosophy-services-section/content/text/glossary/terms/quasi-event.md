@@ -23,7 +23,7 @@ A quasi-event, as theorized by [Elizabeth Povinelli](../../general/people/elizab
 
 In emsenn's "Governing by confusion," the April 2025 tariff cycle is analyzed as a quasi-event: a policy disruption that activated feedback loops (procurement pauses, Treasury auction shifts, narrative stabilization) without ever escaping its containment bounds. The system processed the deviation and returned to equilibrium. The interpretation that followed — the commentary, the analysis, the explanations — was not separate from the containment but its final phase: the narrative closure that rendered the managed disruption legible as an event.
 
-In "Citing for containment," the Stop Cop City movement is analyzed through the same lens: a moment of apparent resistance that was already structured by the institutional, narrative, and academic frameworks that would process it into [legibility](../../sociology/terms/legibility.md) after the fact.
+In "Citing for containment," the Stop Cop City movement is analyzed through the same lens: a moment of apparent resistance that was already structured by the institutional, narrative, and academic frameworks that would process it into [legibility](../../../../services/black-philosophy-services-section/services/abolition-services-section/services/state-repression-services-section/content/text/glossary/terms/legibility.md) after the fact.
 
 ## Related terms
 
@@ -31,5 +31,5 @@ In "Citing for containment," the Stop Cop City movement is analyzed through the 
 - [Povinellian school](../disciplines/critical-theory/schools/povinelli/index.md) — the curriculum module for Povinelli's framework
 - [Cruel optimism](../../sociology/terms/cruel-optimism.md) — the attachment that quasi-events sustain
 - [Recuperation](../../../../../social-science-services-section/services/sociology-science-services-section/content/text/glossary/terms/recuperation.md) — the absorption of disruption into continuity
-- [Legibility](../../sociology/terms/legibility.md) — the condition quasi-events produce
+- [Legibility](../../../../services/black-philosophy-services-section/services/abolition-services-section/services/state-repression-services-section/content/text/glossary/terms/legibility.md) — the condition quasi-events produce
 - [Cybernetics](../../information/terms/cybernetics.md) — the feedback logic that enables containment

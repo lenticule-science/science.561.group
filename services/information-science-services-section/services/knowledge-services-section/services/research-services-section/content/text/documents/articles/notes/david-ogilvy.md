@@ -29,5 +29,5 @@ David Ogilvy (1911–1999) was a British-American advertising executive who foun
 ## Related
 
 - [copywriting](../../writing/disciplines/copywriting/index.md) — the discipline Ogilvy's work defines
-- [headline](../../../../../../../../../../social-science-services-section/content/text/glossary/terms/headline.md) — Ogilvy's primary unit of analysis
+- [headline](../../../../../../../../communication-science-services-section/services/writing-services-section/services/copywriting-services-section/content/text/glossary/terms/headline.md) — Ogilvy's primary unit of analysis
 - [brand voice](../../../../../../../../../../social-science-services-section/content/text/glossary/terms/brand-voice.md) — Ogilvy insisted on consistent brand personality

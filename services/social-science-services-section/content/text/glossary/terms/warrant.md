@@ -1,7 +1,7 @@
 ---
 
 name: "Warrant"
-description: "A ***warrant*** is the reasoning that connects [evidence](../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/evidence.md) to a [claim](claim.md) — the logical bridge that explains *why* the evidence supports the claim. Stephen Toulmin introduced the term in *The Uses of Argument* (1958) to name the often-unstated assumption that makes an [argument](argument.md) work."
+description: "A ***warrant*** is the reasoning that connects evidence to a claim — the logical bridge that explains *why* the evidence supports the claim. Stephen Toulmin introduced the term in *The Uses of Argument* (1958) to name the often-unstated assumption that makes an argument work."
 aliases:
   - "Warrant"
   - "warrant"
@@ -10,7 +10,7 @@ date-created: 2026-03-06
 tags: []
 ---
 
-A ***warrant*** is the reasoning that connects [evidence](../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/evidence.md) to a [claim](claim.md) — the logical bridge that explains *why* the evidence supports the claim. Stephen Toulmin introduced the term in *The Uses of Argument* (1958) to name the often-unstated assumption that makes an [argument](argument.md) work.
+A ***warrant*** is the reasoning that connects [evidence](../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/evidence.md) to a [claim](claim.md) — the logical bridge that explains *why* the evidence supports the claim. Stephen Toulmin introduced the term in *The Uses of Argument* (1958) to name the often-unstated assumption that makes an [argument](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/essay-writing-services-section/content/text/glossary/terms/argument.md) work.
 
 Consider: "This policy has failed (claim), because unemployment has risen 3% since it was enacted (evidence)." The warrant — unstated — is that a policy's success should be measured by employment numbers. If the reader shares that assumption, the argument works. If the reader believes the policy should be measured by other criteria (inflation, GDP, poverty rates), the argument fails — not because the evidence is wrong but because the warrant is contested.
 

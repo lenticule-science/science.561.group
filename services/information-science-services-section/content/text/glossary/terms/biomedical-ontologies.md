@@ -52,6 +52,7 @@ tags:
   - ontology
   - information-architecture
   - biomedicine
+description: Biomedical ontologies are formal classification systems that organize biological and medical knowledge into machine-processable structures. They are among the most successful applications of the Semantic Web's core technologies — and they succeed precisely because their domain warrants the rigidity those technologies impose.
 ---
 
 Biomedical ontologies are formal classification systems that organize biological and medical knowledge into machine-processable structures. They are among the most successful applications of the Semantic Web's core technologies — and they succeed precisely because their domain warrants the rigidity those technologies impose.

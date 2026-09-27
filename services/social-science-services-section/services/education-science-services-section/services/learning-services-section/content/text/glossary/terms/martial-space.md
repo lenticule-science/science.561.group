@@ -28,7 +28,7 @@ As with the geometry it draws on, martial space is a design metaphor stated in d
 
 ## Related terms
 
-- [zone of proximal development](../../../../../../../../content/text/glossary/terms/zone-of-proximal-development.md) — the developmental space a form-drill is calibrated within
+- [zone of proximal development](zone-of-proximal-development.md) — the developmental space a form-drill is calibrated within
 - [cone-edge input](./cone-edge-input.md) — the moment-to-moment move that selects what a learner practices next
 - [evidence-graded curriculum](../../../../../pedagogy-services-section/content/text/glossary/terms/evidence-graded-curriculum.md) — the explicit grading discipline "dojo grading" names as already in house use
-- [community of practice](../../../../../../../../content/text/glossary/terms/community-of-practice.md) — the social structure sparring occurs within
+- [community of practice](community-of-practice.md) — the social structure sparring occurs within
