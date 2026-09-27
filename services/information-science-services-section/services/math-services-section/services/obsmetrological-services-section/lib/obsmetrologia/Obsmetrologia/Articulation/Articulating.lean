@@ -5,8 +5,8 @@ import Obsmetrologia.Articulation.Articulating.Utterance
 
 Articulating is the **base morphism** of the whole library: the first arrow of the
 generative unfolding, the one every other morphism is reached *from*. It takes an
-`Utterance` and **brings a relation into being** — it asserts the related, with
-positive evidence, where before there was only the unrelated.
+`Utterance` and **brings a relation into being** where before there was only
+relationlessness.
 
 Three properties make it the floor of the proof-path:
 

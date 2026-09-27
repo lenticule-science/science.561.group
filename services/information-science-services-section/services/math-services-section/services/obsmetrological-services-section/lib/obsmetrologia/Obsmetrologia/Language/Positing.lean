@@ -10,6 +10,7 @@ import Obsmetrologia.Language.Positing.D4Gauge
 import Obsmetrologia.Language.Positing.Evidence
 import Obsmetrologia.Language.Positing.FiberAlgebra
 import Obsmetrologia.Language.Positing.Four
+import Obsmetrologia.Language.Positing.FourCorner
 import Obsmetrologia.Language.Positing.RelBool
 import Obsmetrologia.Language.Positing.Gauge
 import Obsmetrologia.Language.Positing.LightCone

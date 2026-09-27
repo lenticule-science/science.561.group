@@ -1,5 +1,5 @@
 import Obsmetrologia.Calculus.Probability.Measure
-import Obsmetrologia.Articulation.Articulating.FourCorner
+import Obsmetrologia.Language.Positing.FourCorner
 
 /-! # Finite measurement scenarios and sheaf-theoretic contextuality
 

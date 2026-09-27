@@ -3,46 +3,38 @@ import Obsmetrologia.Articulation.Articulating
 /-!
 # Articulation Cell — articulating's codomain
 
-**Owner ruling 2026-09-21, "measured, not seeded."** A **cell** is the utterance
-plus, on each side, the **witnesses** that side has been articulated by:
-`tokenSlot`, `claimSlot`. Presence in a slot — the slot being non-empty — is that
-side's status, and the four corners are the four presence patterns. A slot only
-grows; nothing is ever removed from it, so a cell's evidence is **lossless**.
+A **cell** is an utterance together with, on each of its two hands, the witnesses
+that hand has been articulated by: `tokenSlot` and `claimSlot`. A hand is
+articulated when its slot holds a witness, and the four corners are the four
+patterns of which hands are articulated. A slot only grows; nothing is ever removed
+from it, so a cell keeps every witness it was given.
 
-**Articulating measures.** To articulate an utterance `u` is to put its own token
-in the token slot: `articulate u := ⟨u, [u.token], []⟩`. A freshly articulated
-utterance is therefore **potential** — told true — *never* absurd: articulating
-never produces the empty cell. **Engaging** puts a witness in the claim slot,
-reaching **stable**: `engage c w := { c with claimSlot := w :: c.claimSlot }`.
+**Articulating places the token.** To articulate an utterance `u` is to put its own
+token in the token slot: `articulate u := ⟨u, [u.token], []⟩`. A freshly articulated
+cell is therefore at `potential`, never at `absurd`: articulating never produces the
+empty cell. **Engaging** puts a witness in the claim slot, reaching `stable`:
+`engage c w := { c with claimSlot := w :: c.claimSlot }`.
 
-**Absurd and active are not articulating's output.** `absurd` (both slots empty)
-is the **un-articulated position** — where a cell *would* sit before any
-articulation reaches it — reached only by the value algebra (`meetK`), never by
-articulating. `active` (claim witnessed, token not) is likewise never what
-articulating produces; it too is reached only downstream, by the value algebra
-(negation/converse), never by articulating itself.
+| Corner      | token hand      | claim hand      |
+|-------------|-----------------|-----------------|
+| `absurd`    | not articulated | not articulated |
+| `potential` | articulated     | not articulated |
+| `active`    | not articulated | articulated     |
+| `stable`    | articulated     | articulated     |
 
-By `(token, claim)` articulation status the four corners are:
+`absurd` is the un-articulated position, where a cell would sit before any
+articulation reaches it. `active` has the claim hand articulated without the token
+hand. Articulating produces neither, since it always places the token; both are
+reached only downstream of articulating.
 
-| Cell        | token | claim | reading                                           |
-|-------------|-------|-------|---------------------------------------------------|
-| `absurd`    | no    | no    | neither side told — the un-articulated position    |
-| `potential` | yes   | no    | told true: token articulated, claim not            |
-| `active`    | no    | yes   | told false: claim articulated, token not            |
-| `stable`    | yes   | yes   | told both: both sides articulated                   |
+These are articulation's names for its corners. How the same four points read as
+values, in positing's knowledge and truth orders, belongs to positing
+(`Language/Positing/FourCorner.lean`).
 
 Nothing free is introduced: a cell is an `Utterance` plus two witness `Slot`s (each
 a `List Token`), and the four corners are *derived* from whether each slot is
 empty. The headline result is `Articulating.Corner.card_eq_four`: there are
-exactly four cells — proven, not postulated.
-
-**Naming convention (authoritative, ruled 2026-08-05).** This table — the
-*evidence reading* — is the deliberate convention: `absurd` is the (no, no)
-un-articulated position, the claim with no evidence that holds only because
-nothing constrains it; `stable` is the (yes, yes) told-both terminus, the
-≤ₖ-absorbing point no further telling can move. RelMath and `assets/legacy/`
-prose use the older rotated labeling (`potential` initial, `absurd` both-told)
-and are kept as honest history. See `docs/history/corner-naming-convention.md`.
+exactly four corners, proven, not postulated.
 -/
 
 namespace Obsmetrologia
@@ -61,7 +53,8 @@ structure Articulating.Cell where
   claimSlot : Slot
   deriving DecidableEq, Repr, Inhabited
 
-/-- The typed potential cell: an utterance told true (token articulated, claim not).
+/-- The typed potential cell: an utterance at the potential corner (token hand
+articulated, claim hand not).
 This is the Type-level carrier from which predicating proceeds. -/
 structure Articulating.PotentialCell where
   utterance : Utterance
@@ -70,14 +63,13 @@ structure Articulating.PotentialCell where
 /-- The four corners of the partition. These are *names* for the four points of
 `Bool × Bool`; they carry no data of their own. -/
 inductive Articulating.Corner where
-  /-- Neither side articulated — told none. The un-articulated position: the
-  claim that holds only because nothing constrains it. -/
+  /-- Neither hand articulated: the un-articulated position. -/
   | absurd
-  /-- Token articulated, claim not — told true. -/
+  /-- Token hand articulated, claim hand not. -/
   | potential
-  /-- Claim articulated, token not — told false. -/
+  /-- Claim hand articulated, token hand not. -/
   | active
-  /-- Both sides articulated — told both. -/
+  /-- Both hands articulated. -/
   | stable
   deriving DecidableEq, Repr, Inhabited
 
@@ -142,27 +134,26 @@ def corner (c : Articulating.Cell) : Articulating.Corner :=
 the token side; the claim side is left free. -/
 def articulate (u : Utterance) : Articulating.Cell := ⟨u, [u.token], []⟩
 
-/-- **The articulated cell is potential — told true — never absurd.** Articulating
-never produces the un-articulated position. -/
+/-- **The articulated cell is potential, never absurd.** Articulating never
+produces the un-articulated position. -/
 @[simp] theorem articulate_corner (u : Utterance) :
     (articulate u).corner = Articulating.Corner.potential := rfl
 
-/-- **Engaging**: a witness on the claim side makes the claim good, without
-disturbing whatever the token side already carries. -/
+/-- **Engaging**: a witness in the claim slot articulates the claim hand, without
+disturbing whatever the token hand already carries. -/
 def engage (c : Articulating.Cell) (w : Token) : Articulating.Cell :=
   { c with claimSlot := w :: c.claimSlot }
 
-/-- Engaging a freshly articulated cell reaches `stable`: both sides witnessed. -/
+/-- Engaging a freshly articulated cell reaches `stable`: both hands articulated. -/
 @[simp] theorem engage_articulate_corner (u : Utterance) (w : Token) :
     (engage (articulate u) w).corner = Articulating.Corner.stable := rfl
 
-/-- Engaging never touches the token side's status. -/
+/-- Engaging never touches the token hand's status. -/
 theorem engage_tokenArticulated (c : Articulating.Cell) (w : Token) :
     (engage c w).tokenArticulated = c.tokenArticulated := rfl
 
-/-- **The un-articulated position**: both slots empty, ⊥. This is where a cell
-*would* be before any articulation; it is not articulating's output, only the
-value algebra's (`meetK`) — see `Positing.Reading`. Replaces `Cell.initial`. -/
+/-- **The un-articulated position**: both slots empty, the `absurd` corner. This is
+where a cell *would* be before any articulation; it is not articulating's output. -/
 def unarticulated (u : Utterance) : Articulating.Cell := ⟨u, [], []⟩
 
 @[simp] theorem unarticulated_corner (u : Utterance) :
@@ -221,8 +212,8 @@ end Articulating.Cell
 
 namespace Articulating.PotentialCell
 
-/-- Forget a typed potential cell (told true) to the ambient articulation cell:
-articulating measures the utterance. -/
+/-- Forget a typed potential cell to the ambient articulation cell: articulating
+places the utterance's token. -/
 def toCell (c : Articulating.PotentialCell) : Articulating.Cell :=
   Articulating.Cell.articulate c.utterance
 
@@ -251,8 +242,7 @@ def cell : Articulating → Articulating.Cell
     cell (.pair u a) = Articulating.Cell.engage (Articulating.Cell.articulate u) a.head.token := rfl
 
 /-- **Only potential and stable are articulated.** Absurd and active are never
-the output of articulating; they are reached by the value algebra (meet,
-negation), never articulated. -/
+the output of articulating; they are reached only downstream of it. -/
 theorem cell_corner (a : Articulating) :
     (cell a).corner = Articulating.Corner.potential ∨ (cell a).corner = Articulating.Corner.stable := by
   cases a with
@@ -277,9 +267,9 @@ namespace Articulating.Cell
 
 /-- The corner classification is surjective onto the four corners: every corner is
 realized by some cell over any chosen utterance. The partition has no empty cell.
-Exhibited directly: the un-articulated position, the articulated cell, an
-active cell built by fiat (value algebra, not articulation), and an engaged
-cell. -/
+Exhibited directly: the un-articulated position, the articulated cell, a cell
+with only its claim hand witnessed (built directly, not by articulating), and an
+engaged cell. -/
 theorem corner_surjective (u : Utterance) (k : Articulating.Corner) :
     ∃ c : Articulating.Cell, c.corner = k := by
   cases k

@@ -1,5 +1,5 @@
 import ObsmetrologiaManual.DocSetup
-import Obsmetrologia.Articulation.Articulating.FourCorner
+import Obsmetrologia.Language.Positing.FourCorner
 
 open Verso.Genre Manual InlineLean
 open Obsmetrologia
@@ -276,7 +276,7 @@ four-corner, is the reading corner:
 
 {docstring Obsmetrologia.articulation_phase_is_reading}
 
-The un-articulated cell is the knowledge-bottom reading:
+Read at positing, the un-articulated cell is the knowledge-bottom value:
 
 {docstring Obsmetrologia.absurd_is_kBot}
 

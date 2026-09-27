@@ -1,5 +1,5 @@
 import ObsmetrologiaManual.DocSetup
-import Obsmetrologia.Articulation.Articulating.FourCorner
+import Obsmetrologia.Language.Positing.FourCorner
 import Obsmetrologia.Language.Predicating.Cell
 import Obsmetrologia.Language.Positing.Valuation
 import Obsmetrologia.Closure.Regime

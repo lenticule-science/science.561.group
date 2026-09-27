@@ -1,5 +1,5 @@
 import Obsmetrologia.AperiodicOrder.Tiling.SoficShift
-import Obsmetrologia.Articulation.Articulating.FourCorner
+import Obsmetrologia.Language.Positing.FourCorner
 import Obsmetrologia.Language.Positing.BigradedCohomology
 import Obsmetrologia.QuantumContextuality.MeasurementScenario
 import Obsmetrologia.Cohomology.AllocationSolver

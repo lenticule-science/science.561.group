@@ -1,4 +1,4 @@
-import Obsmetrologia.Articulation.Articulating.FourCorner
+import Obsmetrologia.Language.Positing.FourCorner
 import Obsmetrologia.Language.Positing.NucleusAndCommutingNuclei
 import Obsmetrologia.Language.Positing.Gauge
 

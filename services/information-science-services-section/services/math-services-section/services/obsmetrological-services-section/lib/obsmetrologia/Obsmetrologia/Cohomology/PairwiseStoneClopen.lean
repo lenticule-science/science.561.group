@@ -1,6 +1,6 @@
 import Obsmetrologia.Calculus.Logic.TwistProductResiduation
 import Obsmetrologia.Language.Positing.Gauge
-import Obsmetrologia.Articulation.Articulating.FourCorner
+import Obsmetrologia.Language.Positing.FourCorner
 
 /-!
 # PairwiseStoneClopen — the Priestley/pairwise-Stone dual of FOUR

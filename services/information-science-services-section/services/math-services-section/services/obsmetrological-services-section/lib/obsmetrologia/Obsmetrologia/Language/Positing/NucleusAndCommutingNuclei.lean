@@ -1,5 +1,5 @@
 import Obsmetrologia.Calculus.Order.OrderInfra
-import Obsmetrologia.Articulation.Articulating.FourCorner
+import Obsmetrologia.Language.Positing.FourCorner
 
 /-!
 # NucleusAndCommutingNuclei — the standalone nuclear-quartet theory (DERIVED, L0)

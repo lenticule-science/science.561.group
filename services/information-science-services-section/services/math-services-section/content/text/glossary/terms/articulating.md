@@ -1,9 +1,9 @@
 ---
 name: Articulating
-description: "The base morphism of the language spine: it takes an utterance and brings a relation into being, asserting the related with evidence where there was only the unrelated. One-way, recursively generated, and the seed of every other morphism; the first stage of the spine, whose regime is aperiodic."
+description: "The base morphism of the language spine: it takes an utterance and brings a relation into being where there was only relationlessness. One-way, recursively generated, and the seed of every other morphism; the first stage of the spine, whose regime is aperiodic."
 aliases: [articulate, articulation, reflex]
 ---
-**Articulating** is the base morphism of the language spine ([`Articulation/Articulating.lean`](../../../../services/obsmetrological-services-section/lib/obsmetrologia/Obsmetrologia/Articulation/Articulating.lean)). It takes an [utterance](utterance.md) and brings a relation into being: it asserts the related, with evidence, where before there was only the unrelated.
+**Articulating** is the base morphism of the language spine ([`Articulation/Articulating.lean`](../../../../services/obsmetrological-services-section/lib/obsmetrologia/Obsmetrologia/Articulation/Articulating.lean)). It takes an [utterance](utterance.md) and brings a relation into being where before there was only relationlessness.
 
 Three properties make it the floor everything else stands on:
 
@@ -11,7 +11,7 @@ Three properties make it the floor everything else stands on:
 - **Inductively generated.** Articulating is recursively the pair `[utterance, articulating]`: `utter` articulates an innermost utterance and `pair` articulates an utterance over a further articulating. The recursion has no terminator in its schema; concrete instances bottom out at an innermost utterance whose token and claim are primitive [marks](mark.md), which is what gives the type finite inhabitants.
 - **It seeds every other morphism.** Everything downstream factors through cells in the closure of articulating's image.
 
-**Articulating measures.** To articulate an utterance is to put its own token in the token slot of an [articulation cell](articulation-cell.md). A freshly articulated utterance is therefore *potential*, told true, and never *absurd*: articulating never produces the empty cell.
+**Articulating places the token.** To articulate an utterance is to put its own token in the token slot of an [articulation cell](articulation-cell.md). A freshly articulated utterance is therefore *potential* and never *absurd*: articulating never produces the empty cell.
 
 **Stage and regime.** Articulating is the first of the four stages (articulate → predicate → posit → settle), and its [regime](regime.md) is aperiodic. A finite run of articulations is finite (`Trace.ord_regime_strict`); the aperiodic character belongs to articulating's unbounded recursion, whose substitution-like recurrences never stabilize at a countable stage. Work that articulates, including language-model inference, can be witnessed but not settled.
 
