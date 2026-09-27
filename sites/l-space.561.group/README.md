@@ -87,5 +87,4 @@ grants live beside it in `oauth/` (or at `LSPACE_OAUTH_STATE`).
 | `LSPACE_OAUTH_STATE` | Where the authorization server keeps clients and grants, when not in the state directory. |
 | `GEODE_AUTHORING_ROOT`, `GEODE_AUTHORING_REGION` | The live checkout GEODE admits Markdown from; `/mcp` reads the same archive. |
 
-Locally, the repository's `.mcp.json` `l-space` entry runs CAIRN's stdio MCP server
-(`knowledge-system-server/apps/mcp-stdio.mjs`), with the same tools over the whole services tree.
+Clients reach these tools through the machine's one MetroPlat node, never through a copy of the archive started per client.
