@@ -1,19 +1,18 @@
 \section{Evidence and measure: the charge with its witnesses, and the trace that measures it}
 
-Owner ruling 2026-09-21, ``the admission boundary, restored.'' A bare
-\texttt{Charge} (\cref{thm:charge}) is the presence pattern alone; positing
+A bare reading (\cref{thm:charge}) is the presence pattern alone; positing
 does not admit one directly. What is admitted carries its witnesses:
-\texttt{Charged} pairs a value with the lossless evidence it was read off,
+\texttt{Valued} pairs a value with the lossless evidence it was read off,
 and the trace-level \texttt{measure} builds that evidence from an
 articulating trace against a codec's contrariety, never by denial.
 
-\begin{proposition}[Charged: value with lossless evidence]\label{thm:charged}\lean{Obsmetrologia.Charged}\leanok\uses{thm:charge, thm:articulation-cell}
+\begin{proposition}[Charged: value with lossless evidence]\label{thm:charged}\lean{Obsmetrologia.Valued}\leanok\uses{thm:charge}
 A \emph{charged} value pairs a \texttt{value : Charge} with
 \texttt{evidence : Slot \(\times\) Slot} (for-witnesses, against-witnesses).
-\texttt{presence} reads the evidence pair back as a \texttt{Charge}, exactly
-as a cell's own slots are read as its corner. \texttt{ofCell} builds a
-\texttt{Charged} straight off an articulation cell: value its corner,
-evidence its two slots. \texttt{joinK}, \texttt{meetK}, \texttt{joinT},
+\texttt{presence} reads the evidence pair back as a reading. Evidence belongs
+to value, which enters at positing: an articulation cell's subject and object
+slots are positions of a predication, not evidence, and are not read as a
+value. \texttt{joinK}, \texttt{meetK}, \texttt{joinT},
 \texttt{meetT} apply the matching \texttt{Charge} operation to the value
 while unioning the evidence on each side regardless of which operation is
 applied --- combining evidence is never selective. \texttt{negate} swaps the
@@ -21,38 +20,36 @@ two evidence sides along with the value; \texttt{conflate} may raise the
 value above what the evidence shows, the one operation licensed to do so.
 \end{proposition}
 
-\begin{proposition}[Measured]\label{thm:charged-measured}\lean{Obsmetrologia.Charged.Measured}\leanok\uses{thm:charged}
+\begin{proposition}[Measured]\label{thm:charged-measured}\lean{Obsmetrologia.Valued.Measured}\leanok\uses{thm:charged}
 A charged value is \emph{measured} when its value is exactly its evidence's
 presence pattern: \(x.\mathrm{value} = x.\mathrm{presence}\). This is the
 formal invariant behind ``measured, not seeded'': a measured value carries no
 more and no less than its witnesses show.
 \end{proposition}
 
-\begin{theorem}[A cell's own reading is measured]\label{thm:charged-ofcell-measured}\lean{Obsmetrologia.Charged.ofCell_measured}\leanok\uses{thm:charged-measured, thm:articulation-cell-corner}
-For any articulation cell \(c\), \(\texttt{ofCell}\,c\) is measured: a
-cell's corner is definitionally the presence pattern of its own two slots, so
-reading a \texttt{Charged} straight off a cell can never disagree with the
-cell's own evidence.
+\begin{theorem}[A one-sided value is measured]\label{thm:valued-onesided-measured}\lean{Obsmetrologia.Valued.oneSided_measured}\leanok\uses{thm:charged-measured}
+A value witnessed on its first coordinate only, by one token, is measured: its
+value is exactly the presence pattern its single witness shows.
 \end{theorem}
 
-\begin{theorem}[Knowledge-join preserves measured]\label{thm:charged-joink-measured}\lean{Obsmetrologia.Charged.joinK_measured}\leanok\uses{thm:charged-measured}
+\begin{theorem}[Knowledge-join preserves measured]\label{thm:charged-joink-measured}\lean{Obsmetrologia.Valued.joinK_measured}\leanok\uses{thm:charged-measured}
 If \(x\) and \(y\) are both measured, so is \(\texttt{joinK}\,x\,y\): raising
 two honestly-read values by their honest union of evidence keeps the result
 honest.
 \end{theorem}
 
-\begin{theorem}[Absurd reached, witnesses kept: the meet can break measured]\label{thm:charged-meetk-not-measured}\lean{Obsmetrologia.Charged.meetK_not_measured}\leanok\uses{thm:charged-measured, thm:charged-joink-measured}
+\begin{theorem}[Absurd reached, witnesses kept: the meet can break measured]\label{thm:charged-meetk-not-measured}\lean{Obsmetrologia.Valued.meetK_not_measured}\leanok\uses{thm:charged-measured, thm:charged-joink-measured}
 There exist measured \(x\) and \(y\) with \(\texttt{meetK}\,x\,y\)
 \textbf{not} measured: the knowledge meet of a potential telling and an
 active telling drives the value down to \(\bot_k\) while keeping both
-witnesses on record. This is the formal difference between ``absurd, told
-nothing'' (\cref{thm:articulation-cell-initial}, no evidence at all) and
+witnesses on record. This is the formal difference between ``absurd, no
+evidence at all'' and
 ``absurd, two tellings that cancelled'' (evidenced on both sides, value below
 what the evidence alone would license reading as neutral) --- the meet
 reaches a value the evidence has outrun, not a value the evidence supports.
 \end{theorem}
 
-\begin{theorem}[Presumption only ever raises]\label{thm:charged-presumefree-ge}\lean{Obsmetrologia.Charged.presumeFree_ge}\leanok\uses{thm:charged}
+\begin{theorem}[Presumption only ever raises]\label{thm:charged-presumefree-ge}\lean{Obsmetrologia.Valued.presumeFree_ge}\leanok\uses{thm:charged}
 \texttt{presumeFree} raises every evidence-free side of a charged value to
 present while leaving the evidence itself untouched. For any \(x\),
 \(x.\mathrm{value} \le_k \texttt{presumeFree}\,x.\mathrm{value}\): presumption
@@ -60,9 +57,9 @@ is the one sanctioned breach of \cref{thm:charged-measured}, and it never
 lowers a value, only raises one that evidence has not yet pinned.
 \end{theorem}
 
-\begin{theorem}[A bare articulated cell presumes to stable]\label{thm:charged-presumefree-articulate}\lean{Obsmetrologia.Charged.presumeFree_articulate}\leanok\uses{thm:charged-presumefree-ge, thm:cell-articulate-corner}
-Presuming the charged reading of a freshly articulated cell reaches
-\(\top_k\): potential presumes up to stable. This is the pointwise fact the
+\begin{theorem}[A one-sided value presumes to stable]\label{thm:charged-presumefree-articulate}\lean{Obsmetrologia.Valued.presumeFree_oneSided}\leanok\uses{thm:charged-presumefree-ge}
+Presuming a value witnessed on one coordinate only reaches \(\top_k\):
+potential presumes up to stable. This is the pointwise fact the
 counit cone (\cref{thm:cvaluation-brim}) generalizes to every cell of a
 valuation.
 \end{theorem}

@@ -66,12 +66,8 @@ things the scaffolding nodes gestured at without stating.
 ## What this does not do
 
 It does not derive a *cell-intrinsic* corner (one property of `φ` alone) — the
-schema forbids that, and no theorem here claims it. Nor does it touch the still-open
-measured-vs-seeded question `ArticulationMeasure.lean` and
-`docs/history/corner-naming-convention.md` leave open: whether a cell's own
-articulation status and an independently posited valuation reading at the same claim
-should ever be required to agree. `phase` reads a valuation; it does not manufacture
-one.
+schema forbids that, and no theorem here claims it. `phase` reads a valuation; it
+does not manufacture one.
 -/
 
 namespace Obsmetrologia

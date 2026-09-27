@@ -1,4 +1,3 @@
-import Obsmetrologia.Language.Positing.ArticulationMeasure
 import Obsmetrologia.Language.Positing.Batch
 import Obsmetrologia.Language.Positing.Bigraded
 import Obsmetrologia.Language.Positing.BigradedCohomology

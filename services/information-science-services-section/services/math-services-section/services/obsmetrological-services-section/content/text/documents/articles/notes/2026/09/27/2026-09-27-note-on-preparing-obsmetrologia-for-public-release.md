@@ -68,18 +68,24 @@ construction costs `Quot.sound` and nothing more (08-17 note, §5.1).
 
 ## Where the Lean diverges from the theory
 
-1. **Measurement uses contrariety.** `Language/Positing/Measure.lean` reads
-   evidence against a cell from articulations of a contrary predicate
-   (`Contrary`, `no_denial`). Contrariety has no basis in the theory. Evidence
-   for and against is Belnap's reading of a value's two coordinates, and it
-   belongs to the truth order that positing introduces; it is not a relational
-   or articulation-stage notion. Negation is not assumed to be the evidence
-   swap either: the swap is the bilattice's truth-order negation, and how
-   negation arises in the theory is still to be derived.
-   *Fixed alongside:* the articulation corners had been glossed as Belnap
-   readings ("told true", "told false"); articulation now names them only by
-   which hands are articulated, and the reading of a cell as a value moved to
-   `Language/Positing/FourCorner.lean` (`c286ea1ce5e`).
+1. **How evidence against enters is not settled.** Evidence for and against
+   is Belnap's reading of a value's two coordinates; it belongs to the truth
+   order that positing introduces and is not a relational or articulation-stage
+   notion. Two witnesses place denial differently, both at positing. The
+   2026-06-17 monograph makes it a codec move: "a contrary fact is the
+   articulation of a contrary predicate", which `Language/Positing/Measure.lean`
+   implements as `Contrary`. The predication-categories formulation instead
+   tells the same cell against ("Alice does not like Bob" is told P(a, b) = f).
+   Negation is not assumed to be the evidence swap either: the swap is the
+   bilattice's truth-order negation, and how negation arises in the theory is
+   still to be derived.
+   *Fixed alongside:* an articulation cell's two slots are the subject and
+   object positions of the predication articulating opens, not evidence sides
+   and not the utterance's hands (`subjectSlot`, `objectSlot`); articulation
+   names its corners only by which positions are filled (`c286ea1ce5e`,
+   `9e486934204`); and the modules that read an articulation cell as a value
+   (`ArticulationMeasure`, `Valued.ofCell`) are gone, since value enters at
+   positing.
 2. **Regimes are paired with corners.** `Closure/Regime.lean` still has
    `regimeCornerBij`. Pairing each regime with a spine stage (aperiodic with
    articulating, transfinite with predicating, Scott-continuous with positing,
@@ -104,10 +110,10 @@ construction costs `Quot.sound` and nothing more (08-17 note, §5.1).
 
 **A. The spine as the metrology.**
 
-1. Remove `Contrary`. Measure a predication cell from the articulation
-   cells of the articulatings that land on it, keeping their witnesses, and
-   read evidence for and against only where positing's truth order is in
-   play.
+1. Settle how evidence against enters at positing (the monograph's contrary
+   predicate or a telling against the same cell), and make measurement read
+   utterances through the codec that turns a domain's evidence into them,
+   keeping every witness.
 2. Re-land the stage and regime pairing.
 3. Make the oriented cell the spine's predicate.
 4. Make the measured composite the spine.
@@ -250,7 +256,8 @@ each with its `#print axioms` line:
   defined reindexing of an oriented pair is one of four generators.
   `thirdMap_not_orbital` shows that at exactly three entities there are
   nine, because a pair can then name its complement. Predication forces
-  FOUR because the utterance has two hands. This is the cleanest standalone
+  FOUR because a predication has two positions, subject and object, the same
+  two whose fillings give the four articulation corners. This is the cleanest standalone
   paper in the library.
 - `LightCone.kle_iff_lightcone` and `k4_is_PT`: the knowledge order is the
   causal order of a 1+1 diamond. Negation is parity and conflation is time
