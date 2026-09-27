@@ -163,9 +163,20 @@ export const LSPACE_PROJECTION = Object.freeze({
   },
 });
 
+/** The section a garden reads: LSPACE_ROOT, else the Lenticule Science forest. Another instance of
+ *  L-Space (Binding Generations') reads its own section under its own wing, title and realm. */
+export const lSpaceRoot = (environment = process.env) => setting('LSPACE_ROOT', environment) ?? SCIENCE_ROOT;
+const lSpaceCatalog = (environment) => ({ ...LSPACE_CATALOG, wing: setting('LSPACE_WING', environment) ?? LSPACE_CATALOG.wing });
+const lSpaceProjection = (environment) => ({
+  ...LSPACE_PROJECTION,
+  ...(setting('LSPACE_TITLE', environment) === undefined ? {} : { title: setting('LSPACE_TITLE', environment) }),
+  ...(setting('LSPACE_SUBTITLE', environment) === undefined ? {} : { subtitle: setting('LSPACE_SUBTITLE', environment), description: setting('LSPACE_SUBTITLE', environment) }),
+});
+
 /** The garden as one application of the web server: admission first, then VaultMaze, media, GEODE and MCP. */
 export async function lSpaceApplication(environment = process.env) {
   const stateDir = stateDirectory(environment);
+  const root = lSpaceRoot(environment);
   if (stateDir === undefined) throw new TypeError('L-Space needs LSPACE_STATE_DIR');
   const admission = createWebAdmissionApplication({
     providers: admissionProviders(environment),
@@ -173,12 +184,12 @@ export async function lSpaceApplication(environment = process.env) {
     // GEODE's writes are the author's; its reads are any admitted reader's; /ns/ is public by doctrine.
     // The notebook buckets read the author's own Google account, so they are the author's alone.
     authorRoute: (path, method) => isBucketsRoute(path) || (method === 'POST' && (path === '/api/action' || path === '/api/refresh')),
-    realm: 'l-space.561.group',
+    realm: publicBaseUrl(environment) === undefined ? 'l-space.561.group' : new URL(publicBaseUrl(environment)).host,
     authors: setting('LSPACE_AUTHOR_SUBJECTS', environment)?.split(',').map((subject) => subject.trim()) ?? [...AUTHOR_SUBJECTS],
     publicRoute: lSpacePublicRoute,
   });
   const site = { baseIri: `${publicBaseUrl(environment) ?? 'https://l-space.561.group'}/`, language: 'en' };
-  const vaultMaze = await createVaultMazeRuntime({ root: SCIENCE_ROOT, catalog: LSPACE_CATALOG, site, projection: { ...LSPACE_PROJECTION, sourceRevision: setting('GITHUB_SHA', environment) ?? setting('LENTICULE_SCIENCE_SOURCE_REVISION', environment) ?? null } });
+  const vaultMaze = await createVaultMazeRuntime({ root, catalog: lSpaceCatalog(environment), site, projection: { ...lSpaceProjection(environment), sourceRevision: setting('GITHUB_SHA', environment) ?? setting('LENTICULE_SCIENCE_SOURCE_REVISION', environment) ?? null } });
   const media = mediaContent(environment);
   const composed = [
     { resources: healthResources({ now: () => new Date() }) },
@@ -204,7 +215,7 @@ export async function lSpaceApplication(environment = process.env) {
     composed.push(geodeApplication({ workspace }));
     archive = workspace.archive;
   }
-  const openedArchive = () => (archive ??= openArchive({ root: SCIENCE_ROOT, excludes: [...EXCLUDED_SEGMENTS] }));
+  const openedArchive = () => (archive ??= openArchive({ root, excludes: [...EXCLUDED_SEGMENTS] }));
   composed.push(...mcpApplications({ admission, environment, archive: openedArchive }));
   return mergeApps(...composed);
 }
