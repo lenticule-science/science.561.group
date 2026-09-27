@@ -91,9 +91,14 @@ sellers up about 400% in a year (search synthesis; [MyWifeQuitHerJob](https://my
   FDA's own open data lists 42,240 device-listing records for establishments in
   mainland China as of 2026-09-14, each naming its US agent
   ([openFDA device registration](https://open.fda.gov/apis/device/registrationlisting/)).
-  Many of those agents are one-person LLCs; the first record read names a
-  Dover, Delaware LLC with a Hotmail address. Device registration renews
-  every year between October 1 and December 31.
+  Read in full on 2026-09-26 they are 5,016 establishments served by 1,479
+  distinct US agents. The market is concentrated at the top and fragmented
+  below: Regrek LLC, a Dover, Delaware LLC answering at a Hotmail address, is
+  agent for 741 establishments (15%); Registrar Corp for 332; IRC USA for 134;
+  the next seven, individuals and small firms in Texas, Washington,
+  California, Colorado, Louisiana and New York, for 62–109 each; and the
+  other 1,469 agents for the remaining 3,239. Every live registration expires in its
+  current year and renews between October 1 and December 31.
 - **FCC responsible party.** Radio and digital devices authorized by the
   Supplier's Declaration of Conformity must have a US-located responsible
   party (the importer, for imported goods) who can produce test records on
