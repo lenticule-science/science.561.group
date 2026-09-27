@@ -25,9 +25,9 @@ The claim-site carried here is:
   tail;
 * familiar comparison: an edge of a graph labelled by a relation; a pair of
   events with "precedes" between them;
-* danger: reading this page's cell as what `Spine.predicate` itself returns.
-  It is not; `Spine.predicate` stays the reflexive, depth-zero case. The
-  oriented cell is what *measuring* a trace reads (see `Positing.Measure`).
+* danger: reading the reflexive seed as the whole of predicating. The seed
+  is only the floor; `Spine.predicate` is this page's cell, and it is also
+  what *measuring* a trace reads (see `Positing.Measure`).
 
 The governing sentence is:
 
@@ -88,15 +88,14 @@ example (a : Articulating) :
 
 ## What This Page Does Not Say
 
-**Ruled 2026-09-21.** It does not replace `Spine.predicate`, and no owner
-ruling remains pending on that point: the oriented cell is what *measuring*
-reads. `Obsmetrologia.measure k trace φ` (Book II's measured-reading page)
+The oriented cell is the spine's predicate (`Spine.predicate_eq_orientedCell`,
+since 2026-09-27), and it is what *measuring* reads. `Obsmetrologia.measure k trace φ` (Book II's measured-reading page)
 collects, for a claim `φ`, the head tokens of every articulating in a trace
 whose `orientedCell` equals `φ` — so it is articulating's own generated
 cells, oriented, that a measured valuation is built against, and this page's
 `orientedCell` is exactly the function that trace-measuring reads by.
-`Spine.predicate` (the reflexive seed of the head, `orientedCell_utter`)
-stays exactly what it always was: the depth-zero case of this same function,
-not a rival reading superseded by it. It does not compute a causal order; it
+On the floor the spine's predicate is the reflexive seed of the one utterance
+(`orientedCell_utter`), so nothing that articulated a single utterance reads
+differently. It does not compute a causal order; it
 supplies the cells, pairs of tokens with a claim between them, from which a
 composition-generated settling would compute one.

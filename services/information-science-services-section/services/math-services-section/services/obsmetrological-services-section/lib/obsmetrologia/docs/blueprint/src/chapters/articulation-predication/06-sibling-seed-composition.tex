@@ -145,12 +145,15 @@ generated, by the articulation with the tokens exchanged and the claim carried; 
 two projections recover the reflexive seeds of the two ends; and the token edge reads
 only the head and the tail's head. The cells articulating generates are thus the
 pairs of tokens with a claim between them, the shape a causal set has, reached from
-articulating rather than taken as a given DAG. \textbf{Ruled 2026-09-21}: the
+articulating rather than taken as a given DAG. The
 oriented cell is what \emph{measuring} reads --- \texttt{measure k trace} collects
-witnesses by each articulating's own \texttt{orientedCell}, not by the spine's
-reflexive \texttt{predicate} --- so it is articulating's generated cells, oriented,
-that a trace is measured against. \texttt{Spine.predicate} (the reflexive seed of
-the head, \texttt{orientedCell\_utter}) stays exactly as the depth-zero case of this
-same function: no owner ruling remains pending on whether predicating should read
-the head over the tail. Every declaration is axiom-free.
+witnesses by each articulating's own \texttt{orientedCell} --- so it is
+articulating's generated cells, oriented, that a trace is measured against. Every
+declaration is axiom-free.
+\end{theorem}
+\begin{theorem}[The spine predicates the oriented cell]\label{thm:spine-predicate-oriented}\lean{Obsmetrologia.Spine.predicate, Obsmetrologia.Spine.predicate_eq_orientedCell, Obsmetrologia.Spine.predicate_utter, Obsmetrologia.Spine.predicate_oriented}\leanok\uses{thm:oriented-cell}
+The spine's predicating morphism is the oriented cell, the head articulated over
+the tail, so the literal composite and the measured composite predicate alike. On
+the floor it is the reflexive seed of the one utterance, so nothing that articulated
+a single utterance reads differently; at depth one its subject and object can differ.
 \end{theorem}

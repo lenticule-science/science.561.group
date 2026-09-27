@@ -108,7 +108,8 @@ construction costs `Quot.sound` and nothing more (08-17 note, §5.1).
    exhaustiveness proof was used by nothing. *Fixed:*
    `Language/Predicating/Generators.lean` derives them from the mark's surface
    not being its identity (`166e17e491d`).
-4. **The spine reads only the head.** `Spine.predicate` produces reflexive
+4. **The spine read only the head.** *Settled 2026-09-27:* `Spine.predicate` is
+   now `Articulating.orientedCell`, the reflexive seed only on the floor. Before, it produced reflexive
    seeds. `Articulating.orientedCell` (`Predicating/Oriented.lean`) is the
    one composition the recursion determines without a choice. The 09-21 note
    seated it beside the spine rather than in it.
@@ -127,7 +128,7 @@ construction costs `Quot.sound` and nothing more (08-17 note, §5.1).
    utterances through the codec that turns a domain's evidence into them,
    keeping every witness.
 2. Re-land the stage and regime pairing. *Done 2026-09-27 (`3a78ce8c741`).*
-3. Make the oriented cell the spine's predicate.
+3. Make the oriented cell the spine's predicate. *Done 2026-09-27.*
 4. Make the measured composite the spine.
 5. Seat the root identification as the biextensional collapse of the measured
    utterance space. Prove that measurement factors through it and that Chu

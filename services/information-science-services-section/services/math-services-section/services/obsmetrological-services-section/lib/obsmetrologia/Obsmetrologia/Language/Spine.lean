@@ -12,7 +12,8 @@ import Obsmetrologia.Language.Settling.Cones
 The smallest typed composition of the language stages.
 
 `articulate` makes an `Articulating` from a typed token and claim;
-`predicate` reads its head as the predicating locus; `posit` admits a
+`predicate` reads its oriented cell (`Articulating.orientedCell`: the head's
+token, the head's claim, the tail's head token) as the predicating locus; `posit` admits a
 caller-supplied `Reading` at that locus; and `settle` applies an explicit
 `Reading.Closure`.  Nothing in `run`'s own composite derives either
 coordinate of a reading — `admitted` is a caller-supplied value, the value
@@ -21,7 +22,7 @@ any reading of a supplied `Reading` or `Record` as refutational evidence
 remains a caller-side requirement, not a construction provided here.
 
 **The measured composite** (`runTrace`, below `run`) is the re-based spine:
-articulate a trace, predicate its cells (`Articulating.orientedCell`),
+articulate a trace, predicate its cells (the same `predicate`),
 *measure* the reading from the trace itself (`Obsmetrologia.measure`, ruled
 2026-09-21 in `Positing/Measure.lean`) rather than accept it from the
 caller, then settle. `run` is kept exactly as it was — the value-algebra
@@ -37,9 +38,26 @@ namespace Spine
 def articulate (t : Token) (c : Claim) : Articulating :=
   .utter ⟨t, c⟩
 
-/-- Articulating to predicating: the oriented claim locus of the head utterance. -/
+/-- Articulating to predicating: the oriented cell, the head articulated over the tail. On
+the floor (`utter u`) it is the reflexive seed of the one utterance (`predicate_utter`); at
+depth one and above its object is the tail's head token, the one composition the recursion
+determines without a choice. It is the cell measuring reads by, so the literal composite and
+the measured composite predicate alike. -/
 def predicate (a : Articulating) : PredicationCell :=
-  PredicationCell.seed a.head
+  a.orientedCell
+
+/-- On the floor the spine's predicate is the reflexive seed. -/
+@[simp] theorem predicate_utter (u : Utterance) :
+    predicate (.utter u) = PredicationCell.seed u := rfl
+
+/-- The spine predicates exactly what measuring reads. -/
+theorem predicate_eq_orientedCell (a : Articulating) :
+    predicate a = Articulating.orientedCell a := rfl
+
+/-- Depth one generates orientation: the spine's predicate can have subject distinct from object. -/
+theorem predicate_oriented :
+    ∃ a : Articulating, (predicate a).subject ≠ (predicate a).object :=
+  Articulating.orientation_generated
 
 /-- Positing admits a caller-supplied FOUR reading at an already-established locus. -/
 def posit (locus : PredicationCell) (admitted : Reading) : Meme :=
