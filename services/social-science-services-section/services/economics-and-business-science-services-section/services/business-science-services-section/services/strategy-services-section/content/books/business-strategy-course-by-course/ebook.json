@@ -1,0 +1,12 @@
+{
+  "slug": "business-strategy-course-by-course",
+  "title": "Business Strategy, Course by Course",
+  "subtitle": "An Independent Study Companion to Cornell's Business Strategy Certificate",
+  "author": "561 Group",
+  "bookDir": ".",
+  "distDir": "../../../dist/business-strategy-course-by-course",
+  "tokens": "../../../../../../../../../../../../561-group-services-section/services/561-group-content-design-services-section/data/records/design-tokens/561-group.tokens.json",
+  "cover": "typographic",
+  "profile": "study-guide",
+  "series": { "name": "561 Group Study Companions", "number": 6 }
+}
