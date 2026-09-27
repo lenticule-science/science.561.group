@@ -7,7 +7,7 @@ name: 2026-09-27-note-on-preparing-obsmetrologia-for-public-release
 authors:
   - claude-opus-5-5
 status: draft-for-review
-keywords: ["obsmetrologia", "release", "axiom-law", "quot-sound", "biextensional-collapse", "utterance", "evidence-swap", "regime", "lineage"]
+keywords: ["obsmetrologia", "release", "axiom-law", "quot-sound", "biextensional-collapse", "utterance", "four-generators", "regime", "lineage"]
 tags: ["draft"]
 ---
 
@@ -70,33 +70,44 @@ construction costs `Quot.sound` and nothing more (08-17 note, §5.1).
 
 1. **Measurement uses contrariety.** `Language/Positing/Measure.lean` reads
    evidence against a cell from articulations of a contrary predicate
-   (`Contrary`, `no_denial`). Evidence against is instead a primitive side of
-   the same cell, and negation swaps the sides (the math term
-   [negation](../../../../../../../../../../content/text/glossary/terms/negation.md);
-   Nelson 1949, Belnap, Fitting, Avron). SignChain changed to this in commit
-   `207fc831317`, and the Lean has not.
+   (`Contrary`, `no_denial`). Contrariety has no basis in the theory. Evidence
+   for and against is Belnap's reading of a value's two coordinates, and it
+   belongs to the truth order that positing introduces; it is not a relational
+   or articulation-stage notion. Negation is not assumed to be the evidence
+   swap either: the swap is the bilattice's truth-order negation, and how
+   negation arises in the theory is still to be derived.
+   *Fixed alongside:* the articulation corners had been glossed as Belnap
+   readings ("told true", "told false"); articulation now names them only by
+   which hands are articulated, and the reading of a cell as a value moved to
+   `Language/Positing/FourCorner.lean` (`c286ea1ce5e`).
 2. **Regimes are paired with corners.** `Closure/Regime.lean` still has
    `regimeCornerBij`. Pairing each regime with a spine stage (aperiodic with
    articulating, transfinite with predicating, Scott-continuous with positing,
    finite with settling; math term `regime.md`) was built in `13bb572267d`
    and reverted in `62cc23f874e` only because that session excluded Lean.
-3. **The spine reads only the head.** `Spine.predicate` produces reflexive
+3. **The four generators were listed, not derived.** Specialization,
+   converse and the two projections were definitions, and `Orbital`'s
+   exhaustiveness proof was used by nothing. *Fixed:*
+   `Language/Predicating/Generators.lean` derives them from the mark's surface
+   not being its identity (`166e17e491d`).
+4. **The spine reads only the head.** `Spine.predicate` produces reflexive
    seeds. `Articulating.orientedCell` (`Predicating/Oriented.lean`) is the
    one composition the recursion determines without a choice. The 09-21 note
    seated it beside the spine rather than in it.
-4. **The caller supplies the reading.** `Spine.run` still accepts a
+5. **The caller supplies the reading.** `Spine.run` still accepts a
    caller-supplied reading. `runTrace` measures it and is the composite the
    theory describes.
-5. **There is no root identification.** Nothing yet quotients the utterance
+6. **There is no root identification.** Nothing yet quotients the utterance
    space.
 
 ## Ordered work
 
 **A. The spine as the metrology.**
 
-1. Replace `Contrary` with sided telling: a telling is an articulating plus
-   its side. Measure both sides of the same cell, and restate `no_denial` as
-   "evidence against comes only from a telling against".
+1. Remove `Contrary`. Measure a predication cell from the articulation
+   cells of the articulatings that land on it, keeping their witnesses, and
+   read evidence for and against only where positing's truth order is in
+   play.
 2. Re-land the stage and regime pairing.
 3. Make the oriented cell the spine's predicate.
 4. Make the measured composite the spine.
@@ -263,7 +274,8 @@ foundation begins where the relational derivation begins:
   constituted by their relations
   ([On Relationality](../../../../../../../../../../../../../philosophy-services-section/services/relationality-services-section/content/text/documents/articles/notes/on-relationality.md)).
 - A mark has no identity but its role.
-- Contradiction is held as told-both, not exploded.
+- Difference is held open in tension, an ordered composite of two, rather
+  than collapsed or exploded.
 - Knowledge is witnessed, never declared, and only grows.
 
 Standard mathematics then appears as what that foundation recovers. That
@@ -272,8 +284,8 @@ starting point whose consequences are checked, not a restyling of familiar
 results.
 
 **Precedents.** The package cites independent precedent openly instead of
-claiming novelty for the four-cornered structure. Nāgārjuna's catuṣkoṭi
-(affirmation, denial, both, neither;
+claiming novelty for the four-cornered structure positing's truth order
+reads. Nāgārjuna's catuṣkoṭi (affirmation, denial, both, neither;
 [Buddhist logic](../../../../../../../../../../../../../philosophy-services-section/services/buddhist-services-section/content/text/documents/articles/notes/buddhist-logic.md))
 is the same four-point space. Priest ("The Logic of the Catuṣkoṭi",
 *Comparative Philosophy* 1(2), 2010) reads it as First Degree Entailment,

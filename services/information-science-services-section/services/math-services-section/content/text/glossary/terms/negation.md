@@ -19,7 +19,7 @@ references:
   - Odintsov 2008, Constructive Negations and Paraconsistency, Springer
 ---
 
-**Negation** $\sim$ swaps the two sides of [evidence](evidence.md). Evidence for an assertion becomes evidence against it, and evidence against becomes evidence for. How much is known about the assertion does not change. This is the negation proved in the predication-categories theory and carried into Obsmetrologia's [bilattice negation](../../../../services/obsmetrological-services-section/lib/obsmetrologia/docs/verso/mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/pre-bilattice/content/bilattice/content/negation/negation.md).
+**Negation** $\sim$ swaps the two sides of [evidence](evidence.md). Evidence for an assertion becomes evidence against it, and evidence against becomes evidence for. How much is known about the assertion does not change. It is the negation of a [bilattice](bilattice.md) ([bilattice negation](../../../../services/obsmetrological-services-section/lib/obsmetrologia/docs/verso/mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/pre-bilattice/content/bilattice/content/negation/negation.md)), and it belongs to the truth order: it reads a value's two coordinates as evidence for and evidence against, which is Belnap's reading, not a relational or articulation-stage one.
 
 ## Definition
 
@@ -68,7 +68,7 @@ Nelson's constructive logic with strong negation (Nelson 1949) has both operatio
 - implication is computed coordinatewise from the base lattice, $\langle a_+, a_- \rangle \to \langle b_+, b_- \rangle = \langle a_+ \to b_+,\; a_+ \wedge b_- \rangle$;
 - the pseudocomplement acts on the positive coordinate through that implication.
 
-The framework's negation is the strong one. On the house's residuated twist product (residuum $\langle x, y \rangle \Rightarrow \langle z, v \rangle = \langle (x \to z) \wedge (v \to y),\ x v \rangle$, unit told-both $\langle 1, 1 \rangle$), implication into the unit is exactly $\sim$. Linear negation and the evidence swap therefore coincide.
+The bilattice negation is the strong one. On the residuated twist product (residuum $\langle x, y \rangle \Rightarrow \langle z, v \rangle = \langle (x \to z) \wedge (v \to y),\ x v \rangle$, unit told-both $\langle 1, 1 \rangle$), implication into the unit is exactly $\sim$. Linear negation and the evidence swap therefore coincide.
 
 ## Negation and conflation
 

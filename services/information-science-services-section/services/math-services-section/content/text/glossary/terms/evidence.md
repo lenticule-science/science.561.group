@@ -7,7 +7,9 @@ date-created: 2026-04-29
 
 **Evidence** is the role borne by the two coordinates of a [twist-product](../../../../services/obsmetrological-services-section/lib/obsmetrologia/docs/verso/mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/residuated-lattice/content/twist-product/twist-product.md) value $\langle a_+, a_- \rangle \in L \times L$. The first coordinate $a_+$ tracks **positive evidence** — information *for* the assertion. The second coordinate $a_-$ tracks **negative evidence** — information *against*. Together they record the two-sided evidential situation a value reports.
 
-The two evidence kinds are not just two lattice components used as bookkeeping. They behave differently under the two parallel orders of the [bilattice](bilattice.md), and the difference is what makes the framework's settlement structure four-cornered rather than bivalent.
+This is Belnap's reading of the two coordinates, and it belongs to the truth order. Articulation reads its cells only by which hands of an utterance are articulated, and relationality has no evidence against; evidence for and against enters with value and its truth order at [positing](positing.md).
+
+The two evidence kinds are not just two lattice components used as bookkeeping. They behave differently under the two parallel orders of the [bilattice](bilattice.md), and the difference is what makes a bilattice's values four-cornered rather than bivalent.
 
 ## Behavior under the two orders
 
@@ -49,7 +51,7 @@ Evidence is claim-relative. The same record can support one claim, refute anothe
 
 ## Evidence has an arrow of time
 
-Evidence accumulates monotonically: under settling, positions rise in the knowledge order and never fall. Once recorded, evidence is not erased. New evidence can shift the tilt on the truth axis, and a claim settled toward affirmation becomes told-both if evidence against arrives, but nothing returns a claim to the unwitnessed state. In Obsmetrologia this is the measurement law that extending a trace can only add witnesses ([positing](positing.md)).
+Evidence accumulates monotonically: under settling, positions rise in the knowledge order and never fall. Once recorded, evidence is not erased. New evidence can shift the tilt on the truth axis, and a claim settled toward affirmation becomes told-both if evidence against arrives, but nothing returns a claim to the unwitnessed state.
 
 ## Keeping evidence in a system
 
