@@ -90,7 +90,7 @@ When a new frontmatter field is introduced anywhere in the system, a correspondi
 
 ## Body links as graph edges
 
-Inline links in the body (`[text](../../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/path.md)`) are also graph edges — less structured than frontmatter relations, but still edges. The full graph includes both frontmatter relations and body links. A body link that has no corresponding frontmatter relation is a candidate for nucleus evaluation: it may normalize to `uses:`, `grounding:`, or another specific predicate once its role is determined.
+Inline links in the body (`[text](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/path.md)`) are also graph edges — less structured than frontmatter relations, but still edges. The full graph includes both frontmatter relations and body links. A body link that has no corresponding frontmatter relation is a candidate for nucleus evaluation: it may normalize to `uses:`, `grounding:`, or another specific predicate once its role is determined.
 
 ## Input pathway
 
@@ -202,7 +202,23 @@ See [markdown-frontmatter](markdown-frontmatter.md) for the full validation pipe
 ## What this is NOT
 
 This encoding spec does not describe the distributed runtime.
-For the live distributed system (rqlite, NATS, Dapr, PydanticAI, LangGraph), see [distributed-relational-machine-runtime](distributed-relational-machine-runtime.md).
+For the live distributed system (rqlite, NATS, Dapr, PydanticAI, LangGraph), see [distributed-relational-machine-runtime](../../../../../../../../../public-services-section/services/personal-services-section/services/emsenn-services-section/content/text/glossary/terms/distributed-relational-machine-runtime.md).
+
+## A relation is an entity
+
+When an entity carries a relation it stands in that relation: the entity is
+the subject, the relation the predicate, the value the object. For the system
+to reason about its own relations, each relation must itself be an entity, with
+an `id` and a `description` stating what is true of an entity that stands in
+it. A relation used before it is declared is vocabulary debt, an edge whose
+label has no node; it does not come into existence by being used. A relation
+used within one locale lives in that locale's vocabulary; one used across
+locales lives where cross-locale vocabulary is kept.
+
+Every specific relation (`grounding`, `uses`, `extends`, and the rest) is what a
+bare [`related`](related.md) proposal between two entities settles to, so any
+specific relation can be reached by proposing `related(A, B)` and reading what
+settles.
 
 ## Open questions
 
