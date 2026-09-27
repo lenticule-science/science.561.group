@@ -1,0 +1,9 @@
+{
+  "slug": "the-x402-economy",
+  "title": "The x402 Economy",
+  "subtitle": "How the Web's Unused Payment Code Became a Way for Software to Pay, and What It Has Earned So Far",
+  "author": "561 Group",
+  "bookDir": ".",
+  "distDir": "../../../dist/the-x402-economy",
+  "tokens": "../../../../../../../../../../561-group-services-section/services/561-group-content-design-services-section/data/records/design-tokens/561-group.tokens.json"
+}
