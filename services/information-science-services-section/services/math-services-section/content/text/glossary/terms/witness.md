@@ -5,6 +5,8 @@ aliases: [witnesses, witnessing, witness chain]
 ---
 A **witness** is the retained thing that shows how a claim holds. Keeping it keeps the *how*: two witnesses can establish the same proposition and still differ in their bounds, paths, agreements or residue, and reducing either to "it holds" loses that.
 
+Witnessing, the act that yields a witness, is not reserved to a person or a proof system. A sensor's reading, an instrument's trace, a computation's log and a stratum's deposit each retain how something holds; what makes a record a witness is that it keeps the how, not who kept it. A witness is also positive: where there is none, the side is unwitnessed, which is not a witness of the opposite.
+
 ## In constructive logic
 
 A witness is a specific object satisfying an existential claim. To prove $\exists x.\,P(x)$ intuitionistically one must produce a particular $a$ together with a proof that $P(a)$; the object $a$ is the witness. By the BHK interpretation a proof of $\exists x.\,P(x)$ is the pair $(a, p)$, and under Curry–Howard it is a program computing that pair, so the witness requirement is also an effectiveness requirement: existence is backed by construction. A classical proof by contradiction shows that non-existence is impossible without saying what exists. In model theory the weaker, classical sense is any element satisfying a formula in a structure ([constructive proof](../../../../../../../philosophy-services-section/services/western-services-section/services/logic-services-section/services/intuitionistic-services-section/content/text/glossary/terms/constructive-proof.md)).

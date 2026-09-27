@@ -1,13 +1,13 @@
 ---
 name: "Settlement"
-description: "The four-cornered joint structure of values in the voidmath bilattice — composed of two independent axes (truth and knowledge) whose extremal positions give the four corners a predication value can occupy. The mathematical articulation of the relationality framework's settlement concept."
+description: "The four-cornered joint structure of values in the voidmath bilattice — composed of two independent axes (truth and knowledge) whose extremal positions give the four corners a predication value can occupy. The relationality framework reads the same structure in its own vocabulary."
 date-created: 2026-04-28
 
 ---
 
 In voidmath, **settlement** names the four-cornered joint structure within which every [predication](predication.md) value sits. It is not a single position but a *position in a two-dimensional space* — the space whose two axes are the [truth order](../../../../services/obsmetrological-services-section/lib/obsmetrologia/docs/verso/mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/pre-bilattice/content/truth-order/truth-order.md) ($\leq_t$, running from $\mathbf{f}$ to $\mathbf{t}$) and the [knowledge order](../../../../services/obsmetrological-services-section/lib/obsmetrologia/docs/verso/mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/pre-bilattice/content/knowledge-order/knowledge-order.md) ($\leq_k$, running from $\bot$ to $\top$). The four corners of this space are the extremal positions a value can occupy in the [bilattice](bilattice.md); the interior is the mass of partial settlements that constitute most actual valuations.
 
-Settlement is the math-side articulation of the [relationality framework's settlement concept](./settlement.md). The two domains describe the same structure in different vocabularies: where the philosophical voice speaks of absurd, [determination](./determination.md), true, and false as positions, the math voice speaks of $\bot$, $\top$, $\mathbf{t}$, and $\mathbf{f}$ as the corresponding bilattice extremes.
+The relationality framework reads this same structure in its own vocabulary, not as a second concept: where the philosophical voice speaks of absurd, [determination](./determination.md), true, and false as positions, the math voice speaks of $\bot$, $\top$, $\mathbf{t}$, and $\mathbf{f}$ as the corresponding bilattice extremes.
 
 ## The two axes
 
@@ -50,4 +50,3 @@ Settlement is not a separate construction added to the bilattice; it is the join
 - [Bilattice](bilattice.md) — the algebraic structure within which settlement lives.
 - [Knowledge order](../../../../services/obsmetrological-services-section/lib/obsmetrologia/docs/verso/mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/pre-bilattice/content/knowledge-order/knowledge-order.md), [Truth order](../../../../services/obsmetrological-services-section/lib/obsmetrologia/docs/verso/mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/pre-bilattice/content/truth-order/truth-order.md) — the two axes of the joint structure.
 - [Predication fiber algebra](predication-fiber-algebra.md) — the structure that holds settlements across all predication cells with predicate fixed.
-- [Settlement (relationality)](./settlement.md) — the philosophical-voice counterpart; the same structure in the language of relationality.
