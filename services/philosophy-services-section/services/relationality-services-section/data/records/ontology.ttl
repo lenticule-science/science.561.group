@@ -720,17 +720,6 @@ of relation and the first structure (the relative).""" ;
     rel:derivesFrom rel:Tension ;
     rel:attestedIn "draft 7 (relating), draft 0 (relating as primitive)" .
 
-rel:Unrelating a rel:Act ;
-    rdfs:label "Unrelating" ;
-    skos:definition """The complement of relating: the minimal act of exclusion.
-The primitive pair is relating/unrelating. The ternary structure is
-{relating, unrelating, relating(relating, unrelating)}.""" ;
-    rel:inMovement rel:MovementI ;
-    rel:derivationStep 107 ;
-    rel:derivesFrom rel:Excluding ;
-    rel:dualOf rel:Relating ;
-    rel:attestedIn "draft 0 (unrelating), draft 7 (unrelate)" .
-
 rel:Relation a rel:Condition ;
     rdfs:label "Relation" ;
     skos:definition """The stabilized condition in which inclusion and exclusion
@@ -1207,7 +1196,7 @@ derivation paths converge on the same language.""" ;
 rel:Witnessing a rel:Act ;
     rdfs:label "Witnessing" ;
     skos:definition """The first observation. The product of reflexing that
-records the tension between unrelating and relating. Witnessing
+records Not Relating and Relating together. Witnessing
 determines that both coexist but cannot determine which carries
 the act. This unresolved indeterminacy compels the next step.
 Defined in draft 9 as Witness = (NotRelating Relating).""" ;

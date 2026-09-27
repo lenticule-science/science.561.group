@@ -7,7 +7,6 @@ depends-on:
   - polity-cell-system
   - wolakhota-closure-system
   - omniciye-council
-realizes: [unrelating]
 title: Iyúhá-šni withdrawal
 description: The iyúhá-šni morphism is the substrate-operation by which an agent or polity-unit refuses an engagement without severing the underlying relation.
 ---

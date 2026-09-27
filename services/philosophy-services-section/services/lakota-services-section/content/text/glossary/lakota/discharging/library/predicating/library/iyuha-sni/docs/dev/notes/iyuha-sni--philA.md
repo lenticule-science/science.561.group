@@ -13,7 +13,7 @@ description: Iyúhá-šni — to go-out-from, to withdraw — is the act of refu
 Iyúhá-šni — *to go-out-from*, *to withdraw* — is the act of *refusing-to-be-bound* in a particular relational engagement without thereby severing relation.
 It is the complement of [woótakuye](wotakuye.md) (kinship-as-act).
 Where woótakuye is the binding-activity, iyúhá-šni is the refusing-of-this-bind.
-In the relational framework, iyúhá-šni is *unrelating* — the resisting-act that preserves difference and prevents collapse-into-triviality.
+
 
 ## The asymmetry with woótakuye
 

@@ -382,8 +382,6 @@ These may be the same concept at different scales (relating at level 1 produces 
 
 Draft 7: "Relating is the minimal act that sustains the tension between including and excluding, holding a thing in coherent existing. It maintains the dynamic interplay necessary for the thing to remain open as both what it is and not what it is not." Relating is not a new primitive but is compelled by the need to keep including and excluding coherently aligned over time.
 
-Draft 0: The minimal ternary structure is {relating, unrelating, relating(relating, unrelating)}. The third element is the binding act — relating applied to the pair of relating and unrelating. Only relating can perform binding (unrelating, by definition, cannot bind).
-
 Draft 7's derivation: Relating produces the condition of relation, and relation together with relating produces the relative — the first structure. This completes the first cycle of the triadic engine.
 
 Draft 1: "The act of relating: the continuous act that maintains the interplay between including and excluding." This is the philosophical name for Flow — the ongoing activity of sustaining coherence at the level of directed dynamics.

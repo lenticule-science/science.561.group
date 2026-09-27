@@ -113,6 +113,5 @@ And every such form, under these acts, eventually yields a structure that **cont
 ## Related
 
 - [[domain of relationality]]
-- [[Relating and Unrelating are Different]]
 - [[relating requires difference]]
 - [[reflexive collapse]]

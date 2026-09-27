@@ -19,7 +19,7 @@ references:
   - Odintsov 2008, Constructive Negations and Paraconsistency, Springer
 ---
 
-**Negation** $\sim$ swaps the two sides of [evidence](evidence.md). Evidence for an assertion becomes evidence against it, and evidence against becomes evidence for. How much is known about the assertion does not change. This is the negation proved in the predication-categories theory and carried into Obsmetrologia's [bilattice negation](../../../../services/obsmetrological-services-section/lib/obsmetrologia/docs/verso/mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/pre-bilattice/content/bilattice/content/negation/negation.md). In this knowledge base, "negation", "negating" and $\sim$ mean this operation and nothing else.
+**Negation** $\sim$ swaps the two sides of [evidence](evidence.md). Evidence for an assertion becomes evidence against it, and evidence against becomes evidence for. How much is known about the assertion does not change. This is the negation proved in the predication-categories theory and carried into Obsmetrologia's [bilattice negation](../../../../services/obsmetrological-services-section/lib/obsmetrologia/docs/verso/mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/pre-bilattice/content/bilattice/content/negation/negation.md).
 
 ## Definition
 
@@ -69,8 +69,6 @@ Nelson's constructive logic with strong negation (Nelson 1949) has both operatio
 - the pseudocomplement acts on the positive coordinate through that implication.
 
 The framework's negation is the strong one. On the house's residuated twist product (residuum $\langle x, y \rangle \Rightarrow \langle z, v \rangle = \langle (x \to z) \wedge (v \to y),\ x v \rangle$, unit told-both $\langle 1, 1 \rangle$), implication into the unit is exactly $\sim$. Linear negation and the evidence swap therefore coincide.
-
-Older notes gave the pseudocomplement other names. The acts derivation calls it *Negate* (act 131, "not a" as "a implies Ground Recognition"). Movement I calls it "negation as orthogonality": the largest disjoint subobject, with double negation. The early philosophy glossary asked whether negation is "exclusion of true in the result of a predicate". All three are the pseudocomplement, which relationality names [unrelating](../../../../../../../philosophy-services-section/services/relationality-services-section/content/text/glossary/terms/unrelating.md). None of them is negation. Contrariety (a value "opposed" to another without swapping evidence) is not negation either.
 
 ## Negation and conflation
 

@@ -48,4 +48,3 @@ All the other acts of relationality (including, excluding, relating, reflexing, 
 
 - [Tension](tension.md), [Difference](difference.md), [Relative](relative.md)
 - [Relating](relating.md), [Relation](relation.md)
-- [Unrelating](unrelating.md)

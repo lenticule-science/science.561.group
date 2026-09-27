@@ -15,7 +15,7 @@ aliases:
 
 ## Derivation
 
-- [[postulate-grounding]]:: In the foundational derivation of [[relationality]], we established that **relating and unrelating** must both exist to induce a relational domain. However, once that domain is constituted, **only relating operates as the sole act.** All further differentiation, structure, and dynamics arise **internally** through relating, reflexing, and composing.
+- [[postulate-grounding]]:: In the foundational derivation of [[relationality]], **relating is the sole act.** All further differentiation, structure, and dynamics arise **internally** through relating, reflexing, and composing.
 
 Critically, relationality is not merely about **the existence of structures** but about their **co-positioning in tension.** Relational structures do not float in isolation—they achieve identity and effect **through their structured interplay.** This interplay is not passive; it is the **active holding-together of difference.**
 
