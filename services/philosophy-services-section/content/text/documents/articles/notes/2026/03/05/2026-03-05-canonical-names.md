@@ -49,7 +49,6 @@ producing structures.
 | Tensioning | draft 7, conditions/tension.md | Mutual opposition of including and excluding |
 | Differing | draft 7, conditions/difference.md | Being set apart; induced by tensioning |
 | Relating | draft 7, acts/relate.md | Sustaining tension productively |
-| Unrelating | draft 7, acts/unrelate.md | Minimal act of exclusion; complement to relating |
 | Reflecting | draft 7, acts/reflect.md | Sustaining reflexivity over time |
 | Existing | draft 7, acts/exist.md | Claiming something is; drawing a distinction |
 

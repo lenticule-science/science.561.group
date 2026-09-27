@@ -1,6 +1,6 @@
 ---
 title: "Terms Reference (AI-Generated, 2026-03-03)"
-note: "Consolidated from individual term definition files. Uses relating/unrelating vocabulary. Each term preserves its original frontmatter fields and narrative text verbatim."
+note: "Consolidated from individual term definition files. Each term preserves its original frontmatter fields and narrative text verbatim."
 date-created: 2026-03-03
 register: foundational-terms
 description: "Every step of the derivation produces three things in sequence: an act, a condition, and a structure."

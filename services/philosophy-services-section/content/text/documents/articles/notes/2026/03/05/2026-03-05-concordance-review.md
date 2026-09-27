@@ -71,13 +71,6 @@ explains the four-part framework itself.
 
 ### Medium priority (referenced 8-17 times, fill important gaps)
 
-**5. Unrelating** — 17 references across 9 files
-The complement to relating. Draft 0's primitive pair is relating/unrelating
-(not including/excluding). Draft 7 defines unrelate as "the minimal act
-of exclusion." The ternary structure {relating, unrelating,
-relating(relating, unrelating)} depends on it. But it has no concept
-file — it's only mentioned within relating.md and other files.
-
 **6. Reflecting (vs. Reflexing)** — 12 references across 3 files
 Q17 resolves that these are genuinely distinct (instantaneous act vs.
 sustained maintenance of reflexivity). The canonical-names doc lists
@@ -240,7 +233,6 @@ of differentiate.md, closing.md instead of close.md?
 | HIGH | RITM | 34 across 8 files | DONE — ritm.md |
 | HIGH | RelationalLanguage / λ_R | 24 across 8 files | DONE — relational-language.md |
 | HIGH | Four-part framework | 22 across 8 files | DONE — four-part-framework.md |
-| MEDIUM | Unrelating | 17 across 9 files | DONE — unrelating.md |
 | MEDIUM | Reflecting (vs. Reflexing) | 12 across 3 files | DONE — reflecting.md |
 | MEDIUM | Stratifying / Constructible | 20 across 9 files | DONE — stratifying.md |
 | MEDIUM | Conserving / Conservation | 8 across 6 files | DONE — conserving.md |

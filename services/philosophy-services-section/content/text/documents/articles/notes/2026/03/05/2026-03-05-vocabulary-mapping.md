@@ -80,8 +80,6 @@ description: Draft 7 is the most atomized draft, with individual files for each 
 - ReflexiveInfinity
 
 ### Only in Draft 0
-- Relating/Unrelating as the primitive pair (not Include/Exclude)
-- Minimal ternary structure: {relating, unrelating, relating(relating, unrelating)}
 - Positionality (existence requires positional relation)
 - Domain of Relating → Domain of Extension → Domain of Reflexion (three-domain taxonomy, files 04-09)
 - Domain 1→2→3→4 (file 01): Relating → Propagation/Trace → Alignment/MetaReflexivity → Cross-Dynamics
@@ -185,7 +183,6 @@ Draft 7 is the most atomized draft, with individual files for each concept. It i
 | define | act | "binding a thing within a relation to a meaning or determination" |
 | derive | act | "bringing out what is compelled by a given condition or structure" |
 | reflect | act | "sustaining reflexivity; differs from reflex by being ongoing" |
-| unrelate | act | "the minimal act of exclusion; complement to relating" |
 | difference | condition | "marks a thing as set apart; induced by tension" |
 | exclusion | condition | "holding a thing out of what is; actively maintained absence" |
 | inclusion | condition | "holding a thing within what is; actively maintained presence" |
@@ -195,7 +192,6 @@ Draft 7 is the most atomized draft, with individual files for each concept. It i
 | self-relation | condition | "being positioned as both source and target of own relation" |
 | relative | structure | "the minimal structure that holds a relation open durably" (FIRST STRUCTURE) |
 | thing | structure | "any stabilized relative; relationally constituted" |
-| ternary relational structure | structure | "{ relating, unrelating, relating(relating, unrelating) }" |
 | reflexive relational sequence | structure | "R(0):=S, R(n+1):=reflect(R(n))" |
 
 ### Draft 9 — S-Expression Computational Derivation

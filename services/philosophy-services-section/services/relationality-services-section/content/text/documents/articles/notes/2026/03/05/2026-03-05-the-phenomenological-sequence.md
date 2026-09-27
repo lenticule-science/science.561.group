@@ -115,16 +115,7 @@ persists.
 Draft 7: "Relating is the act of holding including and excluding in
 productive opposition."
 
-Draft 0 formalizes this as the ternary structure:
-{relating, unrelating, relating(relating, unrelating)}
-
-The third element — relating applied to itself and its complement — is the
-self-application that generates the triadic engine. Relating relates its
-own relating and unrelating, producing a structure that describes the
-process by which structures are produced.
-
-Source: draft 7, acts/relate.md, acts/unrelate.md; draft 0,
-"terse derivations.md."
+Source: draft 7, acts/relate.md.
 
 ### 6. Relation
 

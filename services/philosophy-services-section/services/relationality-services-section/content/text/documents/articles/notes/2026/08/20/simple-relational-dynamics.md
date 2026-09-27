@@ -106,7 +106,7 @@ Each class can be **formally identified** by analyzing the TraceMap’s structur
 We define **Propagation Invariants**—properties that **do not change** regardless of the propagation trace:
 
 - **Node Identity:** node labels and original positions remain unchanged.
-- **Primitive Acts:** the fundamental acts (relating, unrelating, etc.) are invariant.
+- **Primitive Acts:** the fundamental act (relating) and its reflexes are invariant.
 - **Network Topology:** the pattern of node-edge connectivity remains fixed; only depth and alignment states are updated.
 
 ---

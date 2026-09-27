@@ -9,7 +9,16 @@ Tension is the first non-trivial condition in the derivation of [existing](exist
 
 In a Heyting algebra this openness shows where excluded middle fails: $a \vee \neg a$ need not be the top, so a claim and its complement need not exhaust what is.
 
+## Formally
+
+A tension is the ordered [composite](composition.md) of two relational structures at one shared [relational depth](relational-depth.md):
+
+$$\mathrm{Tension}(A, B, n) := \mathrm{composite}(2, [A, B], n).$$
+
+It introduces no act beyond [relating](relating.md). Its order carries its identity: $\mathrm{Tension}(A, B, n) \neq \mathrm{Tension}(B, A, n)$ even when $A = B$, which is how a tension holds differentiation within a unit. Both structures keep their own content and depth. A tension is itself a relational structure: it can be reflexively deepened, keeping $A$ before $B$ ([reflexive sequencing](reflexive-sequencing.md)), and assembled into [chains](chain.md).
+
 ## Related
 
 - [Existing](existing.md)
 - [Difference](difference.md)
+- [Composition](composition.md), [Chain](chain.md), [Reflexive sequencing](reflexive-sequencing.md)

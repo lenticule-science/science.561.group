@@ -170,9 +170,8 @@ Source: draft 9, on-relationality.md (S-expression derivation, lines 1-500+).
 Draft 0 provides a different decomposition of the early closure cycles,
 organized into named domains:
 
-- **Domain of Relating**: The ternary structure {relating, unrelating,
-  relating(relating, unrelating)}. The minimal configuration that makes
-  relating coherent.
+- **Domain of Relating**: Relating, the one act: every later
+  structure is relating applied to what relating has produced.
 - **Domain of Extension**: Ordered composition of relational structures —
   binary extension, chains, nesting, reflexive extension. The combinatorial
   structure of how things compose side-by-side.

@@ -145,14 +145,13 @@ absence of relation.
 The minimal relational configuration has three elements, not two:
 
 1. **Relating**: the act of holding opposition together
-2. **Unrelating**: the complement — the act of exclusion
-3. **Relating applied to itself and its complement**: the self-application
+2. **Relating applied to itself**: the self-application
    that generates further structure
 
 The third element is the crucial one. Relating does not merely hold two
 things in opposition — it relates its own holding to the exclusion it
 holds against. This self-application is what makes the relational field
-generative. Without it, relating and unrelating would be static opposites.
+generative.
 With it, the opposition produces new structure at every reflexive depth.
 
 ### Indeterminacy is genuine

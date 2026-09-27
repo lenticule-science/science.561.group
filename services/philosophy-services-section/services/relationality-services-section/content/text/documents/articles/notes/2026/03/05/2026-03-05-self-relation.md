@@ -22,5 +22,4 @@ self-relation(S): reflex(S) = relating(S, S)
 ## Properties
 
 - Requires a structure to be an admissible input to [../../../../../../../../../slop/relationality/ai-generated-relationality/relationality-slop-2026-03-02/acts/relate](../../../undated/acts-relate.md).
-- Cannot be derived from [../../../../../../../../../slop/relationality/ai-generated-relationality/relationality-slop-2026-03-02/acts/relate](../../../undated/acts-relate.md) or [../../../../../../../../Relationality/triage/00-probably-redundant/20250502-relational-notes/fffstem/relating/acts/unrelate](2026-03-05-unrelate.md) alone.
 - Enables layered depth: a structure becomes part of itself again.

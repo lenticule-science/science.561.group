@@ -11,7 +11,7 @@ description: All 13 human drafts have been read.
 
 All 13 human drafts have been read. Listed roughly chronologically:
 
-- **Draft 0** (`human-draft-0/terse derivations.md`, `derivations to integrate 01-03.md`, `Simple Relational Dynamics.md`, etc.): Earliest formalization. Relating/unrelating as primitive pair. Introduces "structural tension" and the minimal ternary structure. Also contains: 4-domain progression (Relating → Propagation → Alignment → Cross-Dynamics), detailed propagation formalization with directionality, irreducible asymmetry, reflexive equilibrium, domain emergence, type-homogeneity, depth-coherence.
+- **Draft 0** (`human-draft-0/terse derivations.md`, `derivations to integrate 01-03.md`, `Simple Relational Dynamics.md`, etc.): Earliest formalization. Introduces "structural tension" and the minimal ternary structure. Also contains: 4-domain progression (Relating → Propagation → Alignment → Cross-Dynamics), detailed propagation formalization with directionality, irreducible asymmetry, reflexive equilibrium, domain emergence, type-homogeneity, depth-coherence.
 - **Draft 1** (`human-draft-1/main derivations.md`, `Relational Derivatives.md`, `Untitled 1-14.md`): Philosophical derivation, 9 phases, no math. The triadic engine (act → condition → structure). Also contains ~15 variations of a granular S-expression derivation (37+ named steps from Relate through Reset) and a separate computational derivation path (Reflex → Reflexion → True/False → Tuple → Apply).
 - **Draft 2** (`human-draft-2/Deriving Relationlessness.md`): Computational approach. Builds True/False, Tuple, Apply, Eval, Not/And/Or/Implies, ForAll/Exists, Set/Membership from Reflex.
 - **Draft 3 PRE** (`human-draft-3/proposing-a-reflexive-existence.md`): Master treatise, 5 Parts (Logic, Structure, Arithmetic, Geometry, Physics). 31+ operators defined axiomatically.
@@ -55,7 +55,6 @@ These documents articulate the framework — not just what concepts exist but ho
 - [tension.md](../../../../../../glossary/terms/tension.md) — the condition of mutual opposition between inclusion and exclusion
 - [difference.md](../../../../../../glossary/terms/difference.md) — the condition of being set apart (induced by tension)
 - [relating.md](../../../undated/relating.md) — the act sustaining tension (distinct from include/exclude)
-- [unrelating.md](../../../../../../glossary/terms/unrelating.md) — the complement of relating: minimal act of exclusion
 - [relative.md](../../../../../../glossary/terms/relative.md) — the first structure (holds relation open durably)
 - [reflecting.md](../../../../../../glossary/terms/reflecting.md) — sustaining reflexivity over time (distinct from reflexing)
 

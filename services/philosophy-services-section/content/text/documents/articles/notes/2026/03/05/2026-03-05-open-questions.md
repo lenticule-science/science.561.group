@@ -178,13 +178,11 @@ This self-stabilization is what distinguishes relationality from frameworks that
 
 **Resolution**: The same act at different scales of iteration.
 
-- **Movement I**: Relating is the act that sustains tension between including and excluding. Draft 7: "Relating is the act of holding including and excluding in productive opposition." Draft 0: relating(relating, unrelating) — relating applied to itself and its complement, producing the ternary structure.
+- **Movement I**: Relating is the act that sustains tension between including and excluding. Draft 7: "Relating is the act of holding including and excluding in productive opposition."
 
 - **Movement III**: Flow is the directed continuation of stability. PRE: Flow is a KZ-lax idempotent comonad that preserves the core balance.
 
 The connection: relating at Movement I binds inclusion and exclusion into tension. When this binding is iterated (Iterate = Together(a, Induces(a, Top))), it stabilizes into Close/Open/Balance. When Balance is directed — when the equilibrium is given orientation — it becomes Flow. Flow IS relating at the scale of the whole stabilized field, just as relating at Movement I is the primitive version operating on individual recognitions.
-
-Draft 0's ternary structure {relating, unrelating, relating(relating, unrelating)} provides the key: relating applied to itself at a higher order IS the triadic engine. The same self-application pattern that produces the ternary structure at Movement I produces Flow at Movement III. The difference is scale (individual recognitions vs. the whole field) and the additional structure accumulated between them (closure, interior, balance, modality).
 
 **For the published knowledge graph**: Use "relating" for the Movement I act and "Flow" for the Movement III operator. Note that Flow is relating at the scale of the stabilized field.
 

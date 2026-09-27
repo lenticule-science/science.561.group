@@ -28,9 +28,8 @@ a new kind of operation — which is the next movement.
 
 Draft 0 organizes the early derivation into named domains:
 
-**Domain 1 (Relating)**: The minimal ternary structure
-{relating, unrelating, relating(relating, unrelating)}. The three
-primitive operations that make relating coherent.
+**Domain 1 (Relating)**: Relating, the one act, with its
+reflexes and ordered composites.
 
 **Domain 2 (Propagation and Trace)**: Emerges from Domain 1 when
 relational acts propagate beyond their immediate context. Introduces

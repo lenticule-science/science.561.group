@@ -21,7 +21,6 @@ This table maps each relational concept to its mathematical correspondence. The 
 | Togethering | Combining recognitions coherently | Meet (greatest lower bound, ∧) | Combined recognitions are the strongest thing weaker than both |
 | Eithering | Choosing between recognitions | Join (least upper bound, ∨) | Chosen recognitions are the weakest thing stronger than both |
 | Inducing | Conditional relating: what must be added for b given a | Heyting implication (residual of meet) | The residuation a ∧ b ≤ c iff a ≤ b ⇨ c holds |
-| Unrelating (the act *Negate*) | Total exclusion: the most one can exclude while remaining coherent | Pseudocomplement ¬a = a ⇨ ⊥ | The pseudocomplement is not Boolean (¬¬a ≥ a but ¬¬a may strictly exceed a) and is not the evidence-swap negation |
 | Iterating | Self-application: T(a) = a ∧ (a ⇨ ⊤) | Iterate endomap on a Heyting algebra | Self-application is monotone and inflationary |
 | The non-Boolean gap | Genuine indeterminacy: some matters are not yet determined | Heyting (not Boolean) algebra | The law of excluded middle fails; intuitionistic logic |
 | **Movement I as a whole** | **Coherent distinguishing produces a logical core** | **Complete Heyting algebra** | **All lattice identities, distributivity, residuation** |
