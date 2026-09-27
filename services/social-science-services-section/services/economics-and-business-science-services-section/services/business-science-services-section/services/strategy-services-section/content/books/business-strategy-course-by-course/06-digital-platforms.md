@@ -52,7 +52,7 @@ Ask:
   once, one platform is less likely to take the whole market.
 - **Will the market tip?** Strong network effects, high costs of
   multi-homing and little demand for special features push a market toward
-  one winner; the opposite conditions allow more than one platform to survive
+  one winner (a **winner-take-all** market); the opposite conditions allow more than one platform to survive
   [@eisenmann2006].
 - **Can it capture value?** A platform that creates interactions but can't
   charge for them has no business.

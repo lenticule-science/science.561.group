@@ -86,7 +86,7 @@
         "target": "epub",
         "configuration": {
           "profile": "epub-screen-pdf-v1",
-          "editionInputDigest": "ni:///sha-256;rjKcqLeixW1SpXVBzQxoBVAaM8Ia0LgrdOcU_4YyL1U"
+          "editionInputDigest": "ni:///sha-256;aREkNtXcwKbrmm1tOoi3nyu6AmY1OZBv0zeMWvI_JyU"
         },
         "sourceSpan": {
           "type": "ArtifactFabricationSourceSpan",
@@ -101,7 +101,7 @@
         "target": "screen-pdf",
         "configuration": {
           "profile": "epub-screen-pdf-v1",
-          "editionInputDigest": "ni:///sha-256;rjKcqLeixW1SpXVBzQxoBVAaM8Ia0LgrdOcU_4YyL1U"
+          "editionInputDigest": "ni:///sha-256;aREkNtXcwKbrmm1tOoi3nyu6AmY1OZBv0zeMWvI_JyU"
         },
         "sourceSpan": {
           "type": "ArtifactFabricationSourceSpan",
@@ -142,13 +142,13 @@
         ]
       }
     ],
-    "specificationDigest": "ni:///sha-256;m9xQagDdyz3ngIvINwh3f7UAws3UjT79BtDZZ2z1x7A"
+    "specificationDigest": "ni:///sha-256;QM7gLsI1NP0i6Mr2tdBKbHUdcwwV0in-4KKH8K1AO9o"
   },
   "plan": {
     "type": "ArtifactFabricationRealizationPlan",
     "version": 1,
     "artifactId": "business-strategy-course-by-course-edition",
-    "specificationDigest": "ni:///sha-256;m9xQagDdyz3ngIvINwh3f7UAws3UjT79BtDZZ2z1x7A",
+    "specificationDigest": "ni:///sha-256;QM7gLsI1NP0i6Mr2tdBKbHUdcwwV0in-4KKH8K1AO9o",
     "projectionIds": [
       "epub",
       "screen-pdf"
@@ -178,15 +178,15 @@
   "artifacts": {
     "epub": {
       "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/561-group-services-section/data/state/editions/business-strategy-course-by-course/business-strategy-course-by-course.epub",
-      "bytes": 138418,
-      "sha256": "ni:///sha-256;eKFrAixWkNwbZ955ir13twG8eftkE1dLAb1VgIcL5Fw"
+      "bytes": 144244,
+      "sha256": "ni:///sha-256;Mekk_co9RVp5y4oLBYuqbRsEzjA9aPbADxEMwbfKLNI"
     },
     "screenPdf": {
       "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/561-group-services-section/data/state/editions/business-strategy-course-by-course/business-strategy-course-by-course.pdf",
-      "bytes": 159340,
-      "sha256": "ni:///sha-256;Vg2ksamCLBMBYCQrBRfIxx1lZHYSxvhbHlY30bwaxFw"
+      "bytes": 176382,
+      "sha256": "ni:///sha-256;l6R_BwmGIIH7yVjLpA5ZLyXOqfn1J-uHZI4AwEVUu90"
     },
-    "buildRecordDigest": "ni:///sha-256;EdjG8oGye7yMlXOPDYRb1dWfmlJIXiM2YJ98h1tToMY"
+    "buildRecordDigest": "ni:///sha-256;-0CfZNjL7Z-RqHv3RdVlXgZbPJgw9cj-FYNxQn7OMus"
   },
   "formatEvidence": {
     "renderer": {

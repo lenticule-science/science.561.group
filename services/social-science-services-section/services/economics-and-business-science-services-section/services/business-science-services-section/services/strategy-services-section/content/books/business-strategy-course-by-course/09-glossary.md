@@ -37,8 +37,8 @@ the time comes. [5]
 **Customer and supplier surplus.** Willingness to pay minus price; payment
 minus opportunity cost. [1]
 
-**Disintermediation.** A platform or intermediary cutting out the business
-that sold through it, or being cut out itself. [6]
+**Disintermediation.** A platform cutting out the businesses that sell
+through it, for example by selling its own version of their products. [6]
 
 **Disruptive innovation.** An entrant's product that starts worse on the
 market's key measures but cheaper or simpler, with overlooked customers, and
@@ -94,6 +94,12 @@ groups rather than by making a product itself. [6]
 **Platform dependence.** Relying on a platform whose fees and rules you
 don't control. [6]
 
+**Platform governance.** The rules a platform sets and enforces for its
+participants, which decide whether they trust it. [6]
+
+**Price structure.** How a platform splits its total charges between its
+sides. [6]
+
 **Prisoner's dilemma.** A game in which each player's dominant strategy
 leaves both worse off than cooperating. [5]
 
@@ -117,10 +123,16 @@ inimitable and non-substitutable. [1]
 **Scenario planning.** Testing strategies against a few plausible futures.
 [2]
 
+**Seeding.** Bringing one side of a platform yourself, such as signing
+suppliers before buyers arrive. [6]
+
 **Signpost.** An early sign of which scenario is unfolding. [2]
 
 **Single-side value.** A reason for one side to join a platform before the
 other side is there. [6]
+
+**Subsidy side.** The side of a platform that pays little or nothing,
+because the other side values its presence. [6]
 
 **Supplier opportunity cost.** The least a supplier would accept, what it
 could earn elsewhere. [1]
@@ -150,4 +162,5 @@ complementors. [1]
 
 **Willingness to pay.** The most a customer would pay. [1]
 
-**Winner-take-all.** A market that tips to one dominant platform. [6]
+**Winner-take-all.** A market in which one platform ends up with most of the
+users and most of the value. [6]
