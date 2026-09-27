@@ -89,7 +89,8 @@ $$n = \frac{z^2 \, p(1 - p)}{e^2}$$
 
 With no prior guess, use $p = 0.5$, which gives the largest $n$. For a margin
 of ±5 percentage points at 95 percent: $n = 1.96^2 \times 0.25 / 0.05^2 \approx
-384$. That's why Plan 3 drew 400. For a small population of size $N$, the
+384.2$, which rounds up to 385: sample sizes always round up, because rounding
+down would miss the target margin. That's why Plan 3 drew 400. For a small population of size $N$, the
 finite-population correction reduces it: $n_{\text{adj}} = n / (1 + (n - 1)/N)$.
 
 A popular rule says "30 is enough." It isn't a sample-size rule: it's a rough
@@ -111,7 +112,7 @@ nothing about the margin of error you need.
 1. Selection bias: gym members aren't representative of all adults.
 2. Because the bias comes from who can be selected, not from how many; more
    of the same people repeats the same bias.
-3. $1.96^2 \times 0.25 / 0.03^2 \approx 1{,}067$.
+3. $1.96^2 \times 0.25 / 0.03^2 \approx 1{,}067.1$, rounded up to 1,068.
 4. Survivorship bias: planes hit elsewhere (such as the engines) may not
    have returned, so the damage seen shows where planes can be hit and
    survive.

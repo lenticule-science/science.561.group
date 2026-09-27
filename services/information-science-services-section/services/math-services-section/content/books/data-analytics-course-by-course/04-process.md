@@ -52,11 +52,11 @@ Cochran's formula gives the sample size [@cochran1977]:
 $$n = \frac{1.96^2 \times p(1 - p)}{e^2}$$
 
 With no prior guess for $p$, use 0.5, which gives the largest (safest) $n$.
-For ±5 points: $n = 3.8416 \times 0.25 / 0.0025 \approx 384$. The margin
+For ±5 points: $n = 3.8416 \times 0.25 / 0.0025 \approx 384.2$, which rounds up to 385: sample sizes always round up, since a fraction of a person can't be surveyed and rounding down would miss the target margin. The margin
 shrinks with the square root of the sample, so halving it takes four times
 the sample. For a small population of size $N$, a finite-population
 correction lowers the number needed: $n_{\text{adj}} = n / (1 + (n - 1)/N)$.
-Surveying 384 of a library's 2,000 card holders needs only about 323.
+For a library's 2,000 card holders, the 385 becomes $385 / (1 + 384/2{,}000) \approx 323.0$, so 323.
 
 A common rule says 30 is enough. That rule is about when a sample *mean*
 starts to behave normally; it says nothing about the margin you need.
@@ -222,7 +222,7 @@ report says so.
 
 1. Any four of: replication, transfer, manipulation, human error, viruses,
    system failures.
-2. $3.8416 \times 0.25 / 0.0016 \approx 600$.
+2. $3.8416 \times 0.25 / 0.0016 = 600.25$, rounded up to 601.
 3. A sample that small has low power: it could easily miss a real
    difference.
 4. Duplicate, outdated, incomplete, incorrect, inconsistent.
