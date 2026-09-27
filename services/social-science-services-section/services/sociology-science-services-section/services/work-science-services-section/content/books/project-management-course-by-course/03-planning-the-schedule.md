@@ -61,7 +61,9 @@ The three-point estimate comes from PERT, a method the U.S. Navy developed in
 the late 1950s for its Polaris program. PERT weights the most likely time
 four times as heavily as the extremes [@malcolm1959]:
 
-$$\text{Expected time} = \frac{o + 4m + p}{6}$$
+$$E = \frac{o + 4m + p}{6}$$
+
+where $E$ is the expected time.
 
 Because the pessimistic time is usually further from the most likely time
 than the optimistic one is, the expected time usually comes out longer than
