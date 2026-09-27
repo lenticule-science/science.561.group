@@ -163,3 +163,28 @@ valuation is exactly \texttt{Valuation.knowledgeLeast}~\(\varphi\). This
 anchors \cref{thm:knowledge-least}'s own reading --- the value at cells no
 articulating has reached --- as the special case of measuring nothing at all.
 \end{theorem}
+
+\begin{definition}[The measured Chu space of a trace]\label{thm:measured-chu}\lean{Obsmetrologia.measuredChu}\leanok\uses{thm:trace-measure}
+A trace's measurement read as a FOUR-valued Chu space: tokens are the points, a
+claim together with the token it is told toward is a test, and the entry at a
+token \(t\) and test \((c, o)\) is the reading measured at the oriented cell
+\(\langle t, c, o\rangle\).
+\end{definition}
+\begin{definition}[The root identification: biextensional collapse]\label{thm:root-identification}\lean{Obsmetrologia.ChuSpace.collapse, Obsmetrologia.ChuSpace.collapse_separable, Obsmetrologia.ChuSpace.collapse_extensional, Obsmetrologia.ChuSpace.collapse_mk_eq_iff}\leanok\uses{thm:measured-chu}
+The biextensional collapse of a Chu space identifies points with equal rows and
+states with equal columns, and the matrix descends to both quotients. The result
+is separable and extensional (Pratt 1999; clarification of a formal context,
+Ganter \& Wille 1999; the separated, extensional classification, Barwise \&
+Seligman 1997). Identifying two presentations uses \texttt{Quot.sound} and
+nothing else.
+\end{definition}
+\begin{theorem}[Measurement factors through the root identification]\label{thm:measure-factors-collapse}\lean{Obsmetrologia.measure_factors_collapse, Obsmetrologia.token_identified_iff}\leanok\uses{thm:root-identification}
+The reading measured at any cell is the collapsed matrix at the cell's collapsed
+subject and collapsed test, with no axiom. Two tokens are identified exactly when
+every claim toward every token measures them alike: identity is role.
+\end{theorem}
+\begin{theorem}[Chu transforms descend]\label{thm:chu-collapse-descends}\lean{Obsmetrologia.ChuMap.collapse}\leanok\uses{thm:root-identification}
+A Chu transform \(C \to D\) induces a Chu transform between the collapses: its
+forward map respects row equality and its backward map column equality, both by
+adjointness.
+\end{theorem}

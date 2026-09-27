@@ -1,5 +1,6 @@
 import ObsmetrologiaManual.DocSetup
 import Obsmetrologia.Language.Spine
+import Obsmetrologia.Language.Identification
 
 open Verso.Genre Manual InlineLean
 open Obsmetrologia
@@ -199,6 +200,25 @@ example (closure : Reading.Closure) (k : Contradictory) (trace : List Articulati
     (φ : PredicationCell) : Meme :=
   Spine.runTrace closure k trace φ
 ```
+
+## The Root Identification
+
+Read a trace's measurement as a Chu space, with tokens as points and a claim
+toward a token as a test. A mark's identity is its role: two tokens are one
+when every claim toward every token measures them alike. That is the space's
+biextensional collapse, and measuring any cell factors through it:
+
+```lean
+example (k : Contradictory) (trace : List Articulating) (φ : PredicationCell) :
+    (measure k trace φ).value =
+      (ChuSpace.collapse (measuredChu k trace)).r
+        (Quot.mk _ φ.subject) (Quot.mk _ (φ.predicate, φ.object)) :=
+  measure_factors_collapse k trace φ
+```
+
+The collapse is separable and extensional, and a Chu transform descends to the
+collapses (`ChuMap.collapse`). The quotient is the one identification the axiom
+law admits: `Quot.sound`, used once, here.
 
 ## What This Page Does Not Say
 

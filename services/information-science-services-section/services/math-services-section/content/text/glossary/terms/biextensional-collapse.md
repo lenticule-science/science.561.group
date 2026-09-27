@@ -10,6 +10,7 @@ aliases:
   - "extensional"
   - "biextensional"
 date-created: 2026-09-27
+date-modified: 2026-09-27
 term-kind: construction
 specialization: quotient
 references:
@@ -39,9 +40,9 @@ This is why the collapse is a **stipulated** identification in the sense of the 
 
 ## In Obsmetrologia
 
-A [mark](mark.md)'s surface string "is not identity; identity is role, downstream" (`Primitive/Mark.lean`). An [utterance](utterance.md) places marks on two hands, token and claim, and a trace of articulatings measures a reading for each cell ([evidence](evidence.md)). Read that measurement as a Chu space: token-side marks as points, claim-side marks as tests, and the measured reading as the matrix entry. Its biextensional collapse is then the identification "a mark's identity is its role" made exact. Two tokens are one token when every claim reads them alike, and two claims are one claim when every token reads them alike.
+A [mark](mark.md)'s surface string "is not identity; identity is role, downstream" (`Primitive/Mark.lean`). An [utterance](utterance.md) places marks on two hands, token and claim, and a trace of articulatings measures a reading for each cell ([evidence](evidence.md)). Read that measurement as a Chu space: tokens as points, a claim together with the token it is told toward as a test, and the reading measured at that oriented cell as the matrix entry. Its biextensional collapse is then the identification "a mark's identity is its role" made exact. Two tokens are one token when every claim toward every token measures them alike, and two tests are one when every token reads them alike.
 
-The 2026-09-03 note on the one identification asks which relation the library's single root `Quot.sound` should identify along. This construction answers it. The one identification is the biextensional collapse of the measured utterance space. It is seated at the root, and every later identification factors through it. The Lean library does not yet define it.
+The 2026-09-03 note on the one identification asks which relation the library's single root `Quot.sound` should identify along. This construction answers it. The one identification is the biextensional collapse of the measured utterance space. It is seated at the root, and every later identification factors through it. Obsmetrologia defines it in [`Language/Identification.lean`](../../../../services/obsmetrological-services-section/lib/obsmetrologia/Obsmetrologia/Language/Identification.lean) (2026-09-27): `measuredChu` is the measured space, `ChuSpace.collapse` the collapse, proved separable and extensional; measuring any cell factors through it with no axiom (`measure_factors_collapse`), two tokens are identified exactly when every test measures them alike (`token_identified_iff`), and a Chu transform descends to the collapses (`ChuMap.collapse`). The identifications use `Quot.sound` and nothing else.
 
 ## Related
 

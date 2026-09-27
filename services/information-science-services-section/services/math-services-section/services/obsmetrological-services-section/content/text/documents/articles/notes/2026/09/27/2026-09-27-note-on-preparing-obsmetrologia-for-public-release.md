@@ -117,7 +117,11 @@ construction costs `Quot.sound` and nothing more (08-17 note, §5.1).
    measured composite at a newly articulated claim (`run_eq_runTrace`), and what is
    articulated is told for (`run_pos`, axiom-free). The caller-supplied composite is
    `Spine.runSupplied`.
-6. **There is no root identification.** Nothing yet quotients the utterance
+6. **There was no root identification.** *Settled 2026-09-27:* `Language/Identification.lean`
+   seats it as the biextensional collapse of the measured trace (`measuredChu`,
+   `ChuSpace.collapse`, separable and extensional); measurement factors through it with no
+   axiom (`measure_factors_collapse`), identity is role (`token_identified_iff`), and Chu
+   transforms descend (`ChuMap.collapse`), all on `Quot.sound` alone. Before, nothing quotiented the utterance
    space.
 
 ## Ordered work
@@ -131,7 +135,7 @@ construction costs `Quot.sound` and nothing more (08-17 note, §5.1).
 2. Re-land the stage and regime pairing. *Done 2026-09-27 (`3a78ce8c741`).*
 3. Make the oriented cell the spine's predicate. *Done 2026-09-27.*
 4. Make the measured composite the spine. *Done 2026-09-27.*
-5. Seat the root identification as the biextensional collapse of the measured
+5. *Done 2026-09-27.* Seat the root identification as the biextensional collapse of the measured
    utterance space. Prove that measurement factors through it and that Chu
    transforms descend.
 
