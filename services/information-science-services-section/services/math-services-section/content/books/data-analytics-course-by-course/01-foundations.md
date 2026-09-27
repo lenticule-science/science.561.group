@@ -21,7 +21,7 @@ the day's total. That number, "Eastside, Saturday 14 March, 312," is a piece
 of **data**: a recorded fact about the world. A year of those numbers, for
 five branches, is a **data set**.
 
-**Data analysis** is collecting, transforming and organizing data in order to
+**Data analysis** is collecting, transforming and organizing data to
 draw conclusions, make predictions and support decisions. The board's
 question, "why did weekend visits fall?", is what turns the door counts from
 a record into something to analyze.

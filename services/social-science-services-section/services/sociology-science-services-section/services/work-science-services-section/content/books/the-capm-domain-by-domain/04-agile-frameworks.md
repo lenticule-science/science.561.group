@@ -137,7 +137,7 @@ customer.
 
 **Kanban** [@anderson2010]. A method for improving flow. Visualize the work on
 a board; **limit work in progress** per stage; manage flow; make policies
-explicit; improve continuously. Kanban has no prescribed iterations or roles:
+explicit; implement feedback loops; improve collaboratively. Kanban has no prescribed iterations or roles:
 work is **pulled** into a stage when there's capacity. By Little's law,
 average lead time equals work in progress divided by throughput
 [@little1961], which is why lowering WIP shortens delivery time.

@@ -20,7 +20,7 @@ The board said: "Weekend visits are down. Why?" That's a worry, not yet a
 question an analysis can answer. Before collecting anything, an analyst
 pins down what kind of problem it is and what exactly needs answering.
 
-Problems that data can help with fall into a handful of types:
+The course sorts the problems data can help with into six types:
 
 - **Making predictions:** what will happen? (Visits next summer.)
 - **Categorizing:** which group does each thing belong to? (Which patrons are

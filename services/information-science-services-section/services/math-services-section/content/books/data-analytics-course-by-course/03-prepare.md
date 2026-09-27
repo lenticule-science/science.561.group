@@ -143,7 +143,10 @@ refer to another table's primary key (`visits.branch_id` refers to
 collected it and when, how it's been changed. Without metadata, "visits" in
 one table and "entries" in another may or may not be the same thing.
 
-**SQL** retrieves data with **queries**. The core pattern:
+**SQL** retrieves data with **queries**. The core of SQL is standard, but
+databases differ in their functions; this book's queries follow BigQuery, the
+database the course uses, and say so where another database would differ. The
+core pattern:
 
 ```sql
 SELECT branch_id, visit_date, visitors

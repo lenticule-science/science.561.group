@@ -22,7 +22,18 @@ references:
     author:
       - family: Chapman
         given: Pete
-      - literal: et al.
+      - family: Clinton
+        given: Julian
+      - family: Kerber
+        given: Randy
+      - family: Khabaza
+        given: Thomas
+      - family: Reinartz
+        given: Thomas
+      - family: Shearer
+        given: Colin
+      - family: Wirth
+        given: Rüdiger
     publisher: SPSS
     issued:
       date-parts:
@@ -207,7 +218,56 @@ references:
     author:
       - family: Harris
         given: Charles R.
-      - literal: et al.
+      - family: Millman
+        given: K. Jarrod
+      - family: van der Walt
+        given: Stéfan J.
+      - family: Gommers
+        given: Ralf
+      - family: Virtanen
+        given: Pauli
+      - family: Cournapeau
+        given: David
+      - family: Wieser
+        given: Eric
+      - family: Taylor
+        given: Julian
+      - family: Berg
+        given: Sebastian
+      - family: Smith
+        given: Nathaniel J.
+      - family: Kern
+        given: Robert
+      - family: Picus
+        given: Matti
+      - family: Hoyer
+        given: Stephan
+      - family: van Kerkwijk
+        given: Marten H.
+      - family: Brett
+        given: Matthew
+      - family: Haldane
+        given: Allan
+      - family: Fernández del Río
+        given: Jaime
+      - family: Wiebe
+        given: Mark
+      - family: Peterson
+        given: Pearu
+      - family: Gérard-Marchant
+        given: Pierre
+      - family: Sheppard
+        given: Kevin
+      - family: Reddy
+        given: Tyler
+      - family: Weckesser
+        given: Warren
+      - family: Abbasi
+        given: Hameer
+      - family: Gohlke
+        given: Christoph
+      - family: Oliphant
+        given: Travis E.
     container-title: Nature
     volume: "585"
     page: 357-362

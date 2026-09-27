@@ -151,7 +151,38 @@ references:
     author:
       - family: Beck
         given: Kent
-      - literal: et al.
+      - family: Beedle
+        given: Mike
+      - family: van Bennekum
+        given: Arie
+      - family: Cockburn
+        given: Alistair
+      - family: Cunningham
+        given: Ward
+      - family: Fowler
+        given: Martin
+      - family: Grenning
+        given: James
+      - family: Highsmith
+        given: Jim
+      - family: Hunt
+        given: Andrew
+      - family: Jeffries
+        given: Ron
+      - family: Kern
+        given: Jon
+      - family: Marick
+        given: Brian
+      - family: Martin
+        given: Robert C.
+      - family: Mellor
+        given: Steve
+      - family: Schwaber
+        given: Ken
+      - family: Sutherland
+        given: Jeff
+      - family: Thomas
+        given: Dave
     issued:
       date-parts:
         - [2001]
@@ -350,7 +381,12 @@ references:
     author:
       - family: Jacobson
         given: Ivar
-      - literal: et al.
+      - family: Christerson
+        given: Magnus
+      - family: Jonsson
+        given: Patrik
+      - family: Övergaard
+        given: Gunnar
     publisher: Addison-Wesley
     issued:
       date-parts:

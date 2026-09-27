@@ -37,7 +37,10 @@ Data often arrives in the wrong type or shape:
   in a spreadsheet, `=VALUE(A2)`.
 - **Dates** in mixed formats: convert to one date type (`CAST(... AS DATE)`)
   and display as YYYY-MM-DD. Extract parts with `EXTRACT(YEAR FROM
-  visit_date)` or the spreadsheet's `=YEAR(A2)`, `=WEEKDAY(A2)`.
+  visit_date)` or the spreadsheet's `=YEAR(A2)`, `=WEEKDAY(A2)`. Date
+  functions are where SQL dialects differ most: `EXTRACT` works in BigQuery,
+  PostgreSQL and MySQL, while SQLite uses `strftime('%Y', visit_date)` and has
+  no date type to cast to.
 - **Text** joined or split: `CONCAT(first, ' ', last)` or `=A2&" "&B2`;
   `=LEFT()`, `=RIGHT()`, `=MID()`, `=LEN()`.
 
@@ -64,7 +67,9 @@ LEFT JOIN hours AS h
  AND EXTRACT(YEAR FROM v.visit_date) = h.year;
 ```
 
-The aliases (`v`, `b`, `h`) keep column names unambiguous. A LEFT JOIN to
+The aliases (`v`, `b`, `h`) keep column names unambiguous. This join matches
+hours by calendar year; the worked example below labels September-to-March
+seasons first, because that's how the question is framed. A LEFT JOIN to
 `hours` keeps visits even for a year the hours sheet doesn't cover, which then
 show up as `NULL` hours for you to investigate.
 

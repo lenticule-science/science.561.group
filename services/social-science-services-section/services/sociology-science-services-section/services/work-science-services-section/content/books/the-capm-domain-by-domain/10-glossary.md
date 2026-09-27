@@ -11,6 +11,9 @@ each cycle; Agile. [1, 4]
 **Agile Release Train.** In SAFe, a team of Agile teams that plans and
 delivers together. [4]
 
+**Activity.** A scheduled piece of work that produces part of a work
+package. [3]
+
 **Assumption.** Something believed true for planning, without proof. [1]
 
 **Baseline.** An approved version of scope, schedule or cost, changed only
@@ -25,6 +28,9 @@ owns them, when and how they're measured. [2]
 meets it. [5]
 
 **Business case.** The justification for a project. [2]
+
+**Charter.** The document that authorizes a project and names its project
+manager. [2, 3]
 
 **Constraint.** A limit the project must work within. [1]
 
@@ -41,6 +47,9 @@ shortest project duration. [3]
 time. [4]
 
 **Definition of done.** The quality standard every increment must meet. [4]
+
+**Deliverable.** A product, result or capability a project must produce.
+[3]
 
 **Earned value management.** Comparing planned value, earned value and actual
 cost. [3]
@@ -85,6 +94,9 @@ delivers value and teaches the team what users want. [6]
 **Organizational process assets (OPAs).** The organization's own plans,
 processes, templates and knowledge. [4]
 
+**Phase.** A stretch of the life cycle ending in a major deliverable or
+decision. [1, 3]
+
 **Portfolio.** Projects, programs and operations managed together for
 strategic objectives. [1]
 
@@ -118,6 +130,9 @@ source and to design, build and test. [5, 6]
 
 **Servant leadership.** Leading by serving the team and removing obstacles.
 [4]
+
+**Subsidiary plan.** A plan for managing one area of the project, such as
+scope, schedule, cost or risk. [2, 3]
 
 **Stakeholder register.** Records stakeholders' identification, assessment
 and classification. [2]

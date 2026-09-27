@@ -54,7 +54,9 @@ $$n = \frac{1.96^2 \times p(1 - p)}{e^2}$$
 With no prior guess for $p$, use 0.5, which gives the largest (safest) $n$.
 For ±5 points: $n = 3.8416 \times 0.25 / 0.0025 \approx 384$. The margin
 shrinks with the square root of the sample, so halving it takes four times
-the sample.
+the sample. For a small population of size $N$, a finite-population
+correction lowers the number needed: $n_{\text{adj}} = n / (1 + (n - 1)/N)$.
+Surveying 384 of a library's 2,000 card holders needs only about 323.
 
 A common rule says 30 is enough. That rule is about when a sample *mean*
 starts to behave normally; it says nothing about the margin you need.

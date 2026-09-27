@@ -189,13 +189,15 @@ LEFT JOIN does.
 ```python
 saturdays = saturdays.assign(
     level=pd.cut(saturdays["visitors"], bins=[0, 150, 300, 1000],
-                 labels=["quiet", "steady", "busy"])
+                 labels=["quiet", "steady", "busy"], include_lowest=True)
 )
 saturdays["level"].value_counts()
 ```
 
 `pd.cut` makes each bin include its right edge, so 150 is "quiet" and 151 is
-"steady."
+"steady." It excludes the first bin's left edge unless you pass
+`include_lowest=True`; without it, a day with 0 visitors would get no label at
+all.
 
 ## Worked example: the monthly report as a script
 

@@ -37,7 +37,18 @@ references:
     author:
       - family: Chapman
         given: Pete
-      - literal: et al.
+      - family: Clinton
+        given: Julian
+      - family: Kerber
+        given: Randy
+      - family: Khabaza
+        given: Thomas
+      - family: Reinartz
+        given: Thomas
+      - family: Shearer
+        given: Colin
+      - family: Wirth
+        given: Rüdiger
     publisher: SPSS
     issued:
       date-parts:
@@ -222,7 +233,56 @@ references:
     author:
       - family: Harris
         given: Charles R.
-      - literal: et al.
+      - family: Millman
+        given: K. Jarrod
+      - family: van der Walt
+        given: Stéfan J.
+      - family: Gommers
+        given: Ralf
+      - family: Virtanen
+        given: Pauli
+      - family: Cournapeau
+        given: David
+      - family: Wieser
+        given: Eric
+      - family: Taylor
+        given: Julian
+      - family: Berg
+        given: Sebastian
+      - family: Smith
+        given: Nathaniel J.
+      - family: Kern
+        given: Robert
+      - family: Picus
+        given: Matti
+      - family: Hoyer
+        given: Stephan
+      - family: van Kerkwijk
+        given: Marten H.
+      - family: Brett
+        given: Matthew
+      - family: Haldane
+        given: Allan
+      - family: Fernández del Río
+        given: Jaime
+      - family: Wiebe
+        given: Mark
+      - family: Peterson
+        given: Pearu
+      - family: Gérard-Marchant
+        given: Pierre
+      - family: Sheppard
+        given: Kevin
+      - family: Reddy
+        given: Tyler
+      - family: Weckesser
+        given: Warren
+      - family: Abbasi
+        given: Hameer
+      - family: Gohlke
+        given: Christoph
+      - family: Oliphant
+        given: Travis E.
     container-title: Nature
     volume: "585"
     page: 357-362
@@ -252,6 +312,23 @@ references:
       date-parts:
         - [2018]
     URL: https://www.w3.org/TR/WCAG21/
+  belnap1977:
+    type: chapter
+    title: A Useful Four-Valued Logic
+    author:
+      - family: Belnap
+        given: Nuel D.
+    container-title: Modern Uses of Multiple-Valued Logic
+    editor:
+      - family: Dunn
+        given: J. Michael
+      - family: Epstein
+        given: George
+    publisher: Reidel
+    page: 5-37
+    issued:
+      date-parts:
+        - [1977]
   ganter-wille1999:
     type: book
     title: "Formal Concept Analysis: Mathematical Foundations"
@@ -320,6 +397,7 @@ and act.
 | Aggregation paradoxes | Simpson [@simpson1951] |
 | Choosing visual encodings | Cleveland and McGill [@cleveland-mcgill1984]; Tufte [@tufte2001]; Few on dashboards [@few2006] |
 | Accessible visualization | WCAG 2.1 [@wcag21] |
+| Missing and conflicting values | Belnap's four-valued logic [@belnap1977]; the section's concept-lattice article |
 | Data ethics and privacy | The fair information practices [@hew1973]; GDPR's principles [@gdpr2016] |
 | Python, NumPy, pandas | McKinney [@mckinney2022]; Harris et al. [@harris2020] |
 
@@ -358,7 +436,10 @@ and act.
   [@wickham2014] are exactly the conditions under which a spreadsheet *is* a
   well-formed context, so tidying is making the context explicit.
 - **A missing value isn't a false one.** The same article reads cells in the
-  four-valued bilattice: unattested, affirmed, denied, contested. Data
+  four-valued bilattice: unattested, affirmed, denied, contested. That
+  bilattice is Belnap's four-valued logic, which he proposed for a computer
+  combining reports from sources that may be silent or contradict one another
+  [@belnap1977]. Data
   cleaning meets all four. A blank cell is *unattested*, not zero or "no"; two
   sources that disagree about one record make it *contested*. Cleaning that
   fills blanks with zeros, or silently keeps one of two conflicting values,

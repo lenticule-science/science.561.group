@@ -228,7 +228,14 @@ references:
     author:
       - family: Gray
         given: Colin M.
-      - literal: et al.
+      - family: Kou
+        given: Yubo
+      - family: Battles
+        given: Bryan
+      - family: Hoggatt
+        given: Joseph
+      - family: Toombs
+        given: Austin L.
     container-title: Proceedings of the 2018 CHI Conference on Human Factors in Computing Systems
     issued:
       date-parts:
