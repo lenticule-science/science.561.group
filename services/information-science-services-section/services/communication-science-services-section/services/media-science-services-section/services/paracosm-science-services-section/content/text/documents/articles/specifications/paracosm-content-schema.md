@@ -41,17 +41,26 @@ frontmatter. Filename is the canonical slug (`lower-kebab-case.md`).
 Frontmatter is flat — engine-consumable fields, paracosm-meta fields,
 and cross-reference fields all sit at the same level. Trust the names.
 
-This schema is a v0.1 starting point. As real content lands, fields
-will be added, renamed, or split. The type catalog and the naming
-conventions are the load-bearing parts; everything else is refinable.
+This is version 0.2 of the schema. Version 0.1 set the type catalog and the
+naming conventions, which are the load-bearing parts. Version 0.2
+(2026-09-28) adds what a canon needs to hold several works and be checked by
+the [Reproducible Paracosm Specification](reproducible-paracosm-specification.md):
+
+- the types `work`, `novum`, `dynamic` and `modality`;
+- the fields `canons`, `retired-names`, `pronunciation`, `voice`, `foreign`, `written-at`, `concerns` and `contradicts`;
+- formal time fields.
+
+The [engineering note on paracosm engineering in FeltOS](../../../../../../../../../../../../../../engineering-services-section/content/text/documents/articles/notes/2026/09/28/2026-09-28-note-on-paracosm-engineering-in-feltos.md)
+describes the software that reads them. Fields are still added, renamed or
+split as real content lands.
 
 ## Required fields
 
 - `type:` — discriminant. Determines how the entry is interpreted.
   Currently defined: `place`, `being`, `thing`, `term`, `text`,
-  `year`, `event`, `era`, `faction`, `species`. Paracosms may
-  extend this set when needed (GAZ may need `session`, etc. — add
-  and document here).
+  `year`, `event`, `era`, `faction`, `species`, `work`, `novum`,
+  `dynamic`, `modality`. Paracosms may extend this set when needed
+  (GAZ may need `session`, etc. — add and document here).
 - `name:` — human-readable name. Strings, capitalization, spaces and
   punctuation allowed.
 - `description:` — single-line description, OpenGraph/web style.
@@ -83,6 +92,15 @@ conventions are the load-bearing parts; everything else is refinable.
   cite this place."
 - `see-also:` — non-ordering cross-reference. Hyperlinks and footnotes
   in renders, no semantic constraint.
+- `aliases:` — other names the entry goes by.
+- `retired-names:` — names the entry no longer goes by. A work set after
+  the change must not use them.
+- `canons:` — the canons (possible worlds of this paracosm) the entry holds
+  in. An entry without it holds in every canon. Two canons are two models of
+  one signature: they may disagree about facts, never about which types and
+  fields exist.
+- `pronunciation:` — how the name is said, for narration (IPA or a
+  respelling).
 
 ## Type-specific fields (starting set)
 
@@ -98,6 +116,8 @@ conventions are the load-bearing parts; everything else is refinable.
 - `located-in:` — slug of a place.
 - `inventory:` — list of slugs of things carried.
 - `grammar:` — `article:`, `pronoun:`, etc.
+- `started:`, `ended:` — the being's lifetime, as time values.
+- `voice:` — the narration voice for the being's point-of-view chapters.
 
 ### `thing`
 
@@ -107,6 +127,8 @@ conventions are the load-bearing parts; everything else is refinable.
 ### `term`
 
 - `defines:` — list of names this entry establishes the meaning of.
+- `foreign:` — `true` when the term is not English in the world's
+  telling. A foreign term needs a `pronunciation:`.
 
 ### `text`
 
@@ -114,6 +136,13 @@ conventions are the load-bearing parts; everything else is refinable.
 - `references:` — list of slugs (places, beings, things, terms, other
   texts) this text mentions.
 - `narrated-by:` — slug of a being, if applicable.
+- `written-at:` — time value at which the text was written in the world.
+- `concerns:` — list of event or era slugs the text is about. A text
+  written after what it concerns is a document from a later era: the
+  epic's distance.
+- `contradicts:` — list of text slugs this text disagrees with. Their
+  conflicting claims are then held as a declared contradiction (⊤), as
+  testimony, and are not a continuity error.
 
 ### `faction`
 
@@ -153,10 +182,68 @@ Standard era suffixes are **`bB`** (before the Break),
 / authorial). Older variants like `pc` should be normalized to `aB`
 when extracting.
 
-Other entries reference time entries via fields like `at-year:`,
-`during:`, `started:`, `ended:`, and `mentioned-in:`. These fields
-are not yet formalized — add them to the schema as they get used in
-real entries.
+Every time entry carries `index:`, its number on the paracosm's one
+timeline (a year number on the paracosm's calendar; negative before its
+epoch). Eras carry `started:` and `ended:`; events carry `at:` and may
+carry `during:` (an era) and `after:` (events it follows).
+
+A **time value** is the slug of a time entry, an integer on the paracosm's
+timeline, or, when the paracosm's README declares `calendar: gregorian`, an
+ISO date (`YYYY-MM-DD`). Every time value can be compared with every other.
+The fields that take time values are `at:`, `during:`, `started:`,
+`ended:`, `after:` and `written-at:`; `at-year:` in older entries means
+`at:`.
+
+### `work`
+
+A work set in the paracosm: a novel, serial, audiobook, graphic novel, game
+or in-world document published as such. A work is a locale of the canon:
+a window with its own observation. Lives in `works/`.
+
+- `canon:` — the canon it is set in.
+- `from:`, `to:` — its window, as time values.
+- `places:` — slugs of the places it shows (their `in-region` places are
+  included).
+- `pov:` — slugs of its point-of-view beings.
+- `genre:`, `medium:` — its observation.
+- `manuscript:` — path of its ebook manifest, relative to the entry.
+- `arc:` — its beats, in order.
+- `reveals:` — the secrets it reveals, each `{id, subject, predicate}`,
+  each revealed in exactly one chapter.
+- `refusals:` — patterns the prose must not contain, each
+  `{id, pattern, reason}`.
+- `pov-alternates:` — `true` when no two chapters in a row share a point
+  of view.
+
+A work's story bible is derived from the canon and this entry; it is never
+written by hand.
+
+### `novum`
+
+A departure from the actual world. Everything a paracosm does not declare
+is the actual world (minimal departure). Lives in `nova/`.
+
+- `departs-from:` — the actual-world fact departed from, with `source:`
+  (a citation).
+- `consequences:` — slugs of the dynamics, events, factions or things the
+  novum drives. A novum without consequences is decoration.
+
+### `dynamic`
+
+A load-bearing system of the world: an ecology, economy, belief, technology
+or war that the engine can run. Lives in `dynamics/`.
+
+- `couples:` — slugs of the other dynamics it moves or is moved by.
+- `capability:` — the FeltOS capability or field that runs it.
+- `drives:` — slugs of the events it causes.
+
+### `modality`
+
+A mode of access to the world that characters use and are used by:
+knowledge, prescience, memory, secrecy, time. Lives in `modalities/`.
+
+- `kind:` — knowledge | prescience | memory | secrecy | time | …
+- `held-by:` — slugs of the beings or factions that hold it.
 
 ## Body convention by type
 
@@ -193,9 +280,15 @@ and the validator's output becomes a worklist.
 
 ## Consumers
 
+- **FeltOS**: the flatfile resource graph's Markdown provider reads each
+  frontmatter field as a claim with the entry as its witness, and FeltOS
+  holds the claims as a four-valued world. A place is a room, `exits` are
+  its exits, and a being `located-in` it is present. The paracosm module
+  checks the canon and derives each work's story bible.
 - **TAB** (Fennel): markdown → Fennel tables, frontmatter fields become
-  table keys, `behaviors:` resolved against `engine/behaviors/`.
-- **qtOps** (Racket): markdown → closure-of-procedures, frontmatter
+  table keys, `behaviors:` resolved against `engine/behaviors/`. Teraum's
+  and Okaga's MUD worlds.
+- **qtOps** (Racket), earlier: markdown → closure-of-procedures, frontmatter
   fields become initial procedure values, `behaviors:` resolved as `<>`
   qualities.
 - **Hugo**: renders entries as web pages, body prose visible, frontmatter
