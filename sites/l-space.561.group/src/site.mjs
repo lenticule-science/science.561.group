@@ -200,7 +200,7 @@ export async function lSpaceApplication(environment = process.env) {
     publicRoute: lSpacePublicRoute,
   });
   const site = { baseIri: `${publicBaseUrl(environment) ?? 'https://l-space.561.group'}/`, language: 'en' };
-  const vaultMaze = await createVaultMazeRuntime({ root, catalog: lSpaceCatalog(environment), site, projection: { ...lSpaceProjection(environment), sourceRevision: sourceRevision(root, environment) }, cacheDir: join(stateDir, 'vaultmaze') });
+  const vaultMaze = await createVaultMazeRuntime({ root, catalog: lSpaceCatalog(environment), site, projection: lSpaceProjection(environment), sourceRevision: sourceRevision(root, environment), cacheDir: join(stateDir, 'vaultmaze') });
   const media = mediaContent(environment);
   const composed = [
     { resources: healthResources({ now: () => new Date() }) },
