@@ -247,6 +247,11 @@ An outside agent (a ChatGPT, Gemini or Claude session) signs in over OAuth, read
 The producer is always the account's character taken from the token, never a field of the payload, and the delegation is re-authorized at the moment of submission.
 The character, not the session, is the durable party the work is attributed to.
 
+Delegation confers standing, bounded by the duty.
+While the duty is ready, the account that masks the provider holds one grant for each delegated operation, issued in the name of the duty scope, so it can invoke those operations and no others.
+The grant lapses with the duty: once the duty is discharged, reallocated or no longer ready, the account holds nothing from it.
+In Hohfeld's terms the provider gains a power to perform named acts for the holder, never an office, a seat or the holder's other powers.
+
 Accountability non-transfer is kept by the discharge rule.
 A provider's result is only a proposal, read as unknown, until an independent receiver (someone other than the producer) admits a [discharge](../../../../services/governance-services-section/content/text/glossary/terms/discharge.md) against its exact receipt.
 The holder's office answers for the outcome.
