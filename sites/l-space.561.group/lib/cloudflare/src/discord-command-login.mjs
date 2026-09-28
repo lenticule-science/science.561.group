@@ -3,8 +3,9 @@
  * client secret: Discord's Ed25519 signature authenticates the command, then
  * the configured bot re-observes current membership on every protected read.
  */
-import { base64UrlEncode, clearedCookie, cookieValue, opaqueCookie, sealConfidential, unsealConfidential, DISCORD_SESSION_COOKIE_NAME } from "./session.mjs";
+import { clearedCookie, cookieValue, opaqueCookie, sealConfidential, unsealConfidential, DISCORD_SESSION_COOKIE_NAME } from "./session.mjs";
 import { discordSubjectHash } from "./discord-auth.mjs";
+import { randomToken } from "./random-token.mjs";
 
 export const DISCORD_INTERACTION_PATH = "/api/v1/discord/interactions";
 export const DISCORD_COMMAND_CHALLENGE_PATH = "/api/v1/discord/command-challenge";
@@ -22,9 +23,7 @@ const dbFor = (env) => env?.LEARNER_STATE && typeof env.LEARNER_STATE.prepare ==
 const nowSeconds = (now) => Math.floor(now() / 1000);
 const encoder = new TextEncoder();
 
-function randomToken(bytes = 32) {
-  return base64UrlEncode(crypto.getRandomValues(new Uint8Array(bytes)));
-}
+
 
 async function hash(value) {
   const bytes = new Uint8Array(await crypto.subtle.digest("SHA-256", encoder.encode(value)));

@@ -1,7 +1,8 @@
-import { existsSync, readFileSync, statSync } from "node:fs";
+import { existsSync, statSync } from "node:fs";
 import { join, resolve } from "node:path";
 
 import { searchImmutableRoomIndex } from "@red-cup-engineering/cairn/room-index-search";
+import { json } from "./release-json.mjs";
 
 const ROOM_KEY = /^[0-9a-f]{64}$/u;
 const RELEASE_ID = /^[0-9a-f]{64}$/u;
@@ -15,10 +16,7 @@ function immutable(value) {
   return Object.freeze(value);
 }
 
-function json(path, label) {
-  try { return JSON.parse(readFileSync(path, "utf8")); }
-  catch (error) { throw new Error(`cannot read ${label} at ${path}: ${error instanceof Error ? error.message : String(error)}`); }
-}
+
 
 function fixedReleaseRoot(offered) {
   const root = resolve(offered ?? process.env.L_SPACE_RELEASE_ROOT ?? DEFAULT_L_SPACE_RELEASE_ROOT);

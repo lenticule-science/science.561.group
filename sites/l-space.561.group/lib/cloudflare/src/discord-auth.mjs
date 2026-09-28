@@ -27,6 +27,7 @@ import {
   sealConfidential,
   unsealConfidential,
 } from "./session.mjs";
+import { randomToken } from "./random-token.mjs";
 
 export const DISCORD_LOGIN_PATH = "/oauth/discord/login";
 export const DISCORD_CALLBACK_PATH = "/oauth/discord/callback";
@@ -35,9 +36,7 @@ const SESSION_TTL_SECONDS = 14 * 24 * 60 * 60;
 const REFRESH_SKEW_SECONDS = 60;
 const SNOWFLAKE = /^\d{17,20}$/u;
 
-function randomToken(bytes = 32) {
-  return base64UrlEncode(crypto.getRandomValues(new Uint8Array(bytes)));
-}
+
 
 async function sha256Bytes(value) {
   return new Uint8Array(await crypto.subtle.digest("SHA-256", new TextEncoder().encode(value)));

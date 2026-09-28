@@ -26,14 +26,13 @@ import {
   SESSION_COOKIE_NAME,
   TRANSACTION_COOKIE_NAME,
 } from "./session.mjs";
+import { randomToken } from "./random-token.mjs";
 
 export const LOGIN_PATH = "/oauth/login";
 export const CALLBACK_PATH = "/oauth/callback";
 export const LOGOUT_PATH = "/oauth/logout";
 
-function randomToken(bytes = 32) {
-  return base64UrlEncode(crypto.getRandomValues(new Uint8Array(bytes)));
-}
+
 
 async function sha256Base64Url(value) {
   const digest = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(value));

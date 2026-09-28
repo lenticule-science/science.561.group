@@ -1,17 +1,15 @@
-import { existsSync, readFileSync, statSync } from "node:fs";
+import { existsSync, statSync } from "node:fs";
 import { basename, join, resolve } from "node:path";
 
 import { createGeodeReleaseGraph } from "@red-cup-engineering/geode/release-graph";
 
 import { DEFAULT_L_SPACE_RELEASE_ROOT } from "./release-observation.mjs";
 import { validateLSpaceReleaseGraph } from "./release-graph-artifact.mjs";
+import { json } from "./release-json.mjs";
 
 const cache = new Map();
 
-function json(path, label) {
-  try { return JSON.parse(readFileSync(path, "utf8")); }
-  catch (error) { throw new Error(`cannot read ${label} at ${path}: ${error instanceof Error ? error.message : String(error)}`); }
-}
+
 
 export function openLSpaceReleaseGraph({ releaseRoot } = {}) {
   const root = resolve(releaseRoot ?? process.env.L_SPACE_RELEASE_ROOT ?? DEFAULT_L_SPACE_RELEASE_ROOT);
