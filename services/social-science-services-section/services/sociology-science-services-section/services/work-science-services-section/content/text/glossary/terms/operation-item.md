@@ -49,7 +49,7 @@ In practice: any operation that handles both atomic and composite work items by 
 
 ## Commitment
 
-An OperationItem is **committed** — it has been triaged, judged actionable, and placed in a Task. Uncommitted potential work items are [FlatfileAgentResourceSystemIdeas](../../../../../../../../../../../public-services-section/services/personal-services-section/services/emsenn-services-section/content/text/glossary/terms/idea.md) (open terms awaiting closure). The transition from Idea to OperationItem is the act of closing the open term into a ground specification.
+An OperationItem is **committed** — it has been triaged, judged actionable, and placed in a Task. Uncommitted potential work is an idea: an open term not yet closed. The transition from idea to OperationItem is the act of closing the open term into a ground specification.
 
 ## Required fields
 

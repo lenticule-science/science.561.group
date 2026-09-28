@@ -50,7 +50,7 @@ phase-normalization-constant, relational-kramers-kronig, dissolved-fml-quantum-c
 
 Checked citations in spec/skillful-work.md, spec/math-unit.md, spec/math-unit-name.md,
 spec/naming-math-unit.md, spec/frontmatter.md against math/. All citations
-valid ([Nuclear Quartet Subalgebra](../../../../../../../relationality-services-section/services/agency-services-section/content/text/documents/articles/research/predicated-agentic-orchestration-platform/library/relational-hyperverse-repository/math/nuclear-quartet-subalgebra.md), [Nuclear Quartet Theorem](../../../../../../../relationality-services-section/services/agency-services-section/content/text/documents/articles/research/predicated-agentic-orchestration-platform/library/relational-hyperverse-repository/math/nuclear-quartet-theorem.md) both exist and support the claims).
+valid ([Nuclear Quartet Subalgebra](../../../../../../../relationality-services-section/services/agency-services-section/content/text/documents/articles/research/predicated-agentic-orchestration-platform/library/relational-hyperverse-repository/math/nuclear-quartet-subalgebra.md), [Nuclear Quartet Theorem](../../../../../../../../../../../public-services-section/services/personal-services-section/services/emsenn-services-section/content/text/glossary/terms/nuclear-quartet-theorem.md) both exist and support the claims).
 No disputes filed.
 
 ---

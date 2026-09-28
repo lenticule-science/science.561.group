@@ -10,7 +10,7 @@ date-created: 2026-03-18
 date-modified: 2026-04-01
 ---
 
-YAML [frontmatter](../../../../../../triage/theories/computing/theories/markdown/terms/frontmatter.md) in markdown files is a serialization of an RDF directed labeled graph.
+YAML [frontmatter](../../../../../../glossary/terms/frontmatter.md) in markdown files is a serialization of an RDF directed labeled graph.
 
 The RDF data model (W3C 2004; Cyganiak, Wood, Lanthaler 2014) represents knowledge as a **directed labeled graph** G = (V, E) where:
 

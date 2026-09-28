@@ -69,6 +69,6 @@ Cross-file queries load multiple entity files, merge their frontmatter graphs in
 - Whether the graph should be materialized to disk (as Turtle or JSON-LD) for use by external tools, or kept in-memory only.
 - Whether SHACL shapes cover all currently used frontmatter predicates, or whether there are unvalidated predicates in the wild.
 
-YAML [frontmatter](../../../../../../../../../engineering-services-section/services/computer-engineering-services-section/content/glossary/theories/computing/theories/markdown/terms/frontmatter.md) in markdown files is a serialization of an RDF directed labeled graph.
+YAML [frontmatter](../../../../services/markdown-services-section/content/text/glossary/terms/frontmatter.md) in markdown files is a serialization of an RDF directed labeled graph.
 
 The RDF data model (W3C 2004; Cyganiak, Wood, Lanthaler 2014) represents knowledge as a **directed labeled graph** G = (V, E) where:

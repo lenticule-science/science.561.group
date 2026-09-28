@@ -76,7 +76,7 @@ There is no tension.
 In a [FlatfileAgentialResourceSystem](../../../../flatfile-agential-resource-system.md):
 
 - `related:` in frontmatter asserts a connection without specifying the specific predicate
-- `related:` in the multi-entity file pattern (see [frontmatter](frontmatter.md)) is the default relation between a section entity and the file-level entity
+- `related:` in the multi-entity file pattern (see [frontmatter](../../../../../../../../../../../../../../../../../../engineering-science-services-section/services/computer-science-services-section/services/markdown-services-section/content/text/glossary/terms/frontmatter.md)) is the default relation between a section entity and the file-level entity
 - Any `related:` entry is a candidate for future normalization via the appropriate propose-relation skill
 
 ## Open questions

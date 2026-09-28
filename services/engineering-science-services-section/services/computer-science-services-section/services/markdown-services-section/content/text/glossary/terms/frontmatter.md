@@ -1,14 +1,17 @@
 ---
 name: "frontmatter"
+description: "A structured metadata block at the start of a document, separated from its body, carrying machine-readable assertions about the document as key-value pairs."
 aliases:
-  - "frontmatter"
+  - "front matter"
+  - "front-matter"
+  - "metadata block"
 date-created: 2025-12-31
-tags: []
+date-modified: 2026-09-27
 ---
 
-**Frontmatter** is a block of structured metadata placed at the top of a [Markdown file](./markdown-file.md), delimited by a pair of `---` lines. The content between the delimiters is written in YAML (a human-readable data format) and provides machine-readable information about the document.
+**Frontmatter** is a block of structured metadata at the top of a [Markdown file](./markdown-file.md), before the document's body. It carries machine-readable assertions about the document: not its prose, but what the document is, what it relates to and how it should be processed. The body is for human readers; the frontmatter is for assertions. Because both sit in one file, the document describes itself.
 
-A typical frontmatter block looks like this:
+In Markdown the block is YAML between a pair of `---` lines:
 
 ```yaml
 ---
@@ -19,130 +22,30 @@ tags:
 ---
 ```
 
-Everything above the closing `---` is metadata; everything below it is the document's body content. Markdown processors and static site generators read the frontmatter to determine how to render, categorize, and link the document.
+Everything above the closing `---` is metadata; everything below it is the body. Markdown processors and static site generators read the frontmatter to decide how to render, categorize and link the document.
 
-Frontmatter can contain any fields the author or system requires. Common fields include `title` (the document's display name), `date-created` (when the document was first written), `tags` (classification labels), `aliases` (alternative names the document can be referenced by), and `description` (a brief summary for search engines or previews).
+## Where it comes from
 
-In knowledge management tools like Obsidian, frontmatter serves as the primary mechanism for attaching structured data to otherwise unstructured notes. Search, filtering, and graph views all draw on frontmatter fields. In static site generators like Quartz, Hugo, or Jekyll, frontmatter controls page titles, URLs, publication dates, and template selection.
+The idea is older than the name. Library catalog cards carried author, title, subject headings and call number on the card's front, with the record's body elsewhere. The Dublin Core Metadata Initiative (1995) standardized fifteen elements (title, creator, subject, description, date and others) for describing digital resources. What frontmatter adds is co-location: the metadata lives inside the document instead of in a separate catalog, database or sidecar file.
 
-The YAML format requires attention to syntax. Strings containing colons, brackets, or other special characters should be wrapped in quotation marks. Lists are indicated by indented lines beginning with `-`. Incorrect indentation or missing delimiters will cause parsing errors that prevent the document from rendering.
+Tom Preston-Werner brought YAML frontmatter to static site generators with Jekyll in 2008. Hugo, Gatsby, Eleventy and Obsidian adopted the convention. TOML between `+++` delimiters and JSON blocks exist but are less common. The format varies; the concept (structured assertions co-located with content and parsed separately from the body) is the same across all of them.
 
-Within this [vault](./vault.md), every published [note](./note.md) requires at minimum a `title` and `date-created` field in its frontmatter.
+## Fields
+
+A block can carry any fields its author or system needs. Common ones are `title` or `name` (the display name), `date-created`, `date-modified`, `tags` (classification labels), `aliases` (other names the document can be linked by) and `description` (a one-sentence summary). In Obsidian, frontmatter is the main way to attach structured data to notes, and search, filters and graph views draw on it. In Quartz, Hugo and Jekyll it controls the page's layout and listing.
+
+YAML needs care. A string containing a colon, a bracket or another special character should be quoted. List items are indented lines beginning with `-`. Wrong indentation or a missing delimiter is a parse error that stops the document from being read.
+
+Within this [vault](./vault.md), every published [note](./note.md) carries at least a `title` or `name` and a `date-created`.
+
+## Frontmatter as a graph
+
+Frontmatter puts a document's relational assertions where a machine can read them without parsing the body. A collection of frontmatter-bearing documents can then be queried as a graph: each document is a node, and each key-value pair is an edge to another node or to a literal. This is the structure of an RDF [triple](../../../../../../../../../information-science-services-section/content/text/glossary/terms/subject-predicate-object.md) store, written in plain text: the document is the subject, the key the predicate, the value the object. It follows Frege's function-argument analysis (*Begriffsschrift*, 1879), in which a predicate is an unsaturated function (his term in "Function and Concept", 1891): the key names a relation, the document fills its subject place and the value its object place.
+
+A human can read the YAML and see the document's relations; a machine can parse it and build the graph; neither needs the other. The schema is whatever keys documents actually use, so it grows from practice instead of being imposed in advance. [Markdown frontmatter](../../../../../../content/text/glossary/terms/markdown-frontmatter.md) gives the RDF reading in detail and how shapes validate it, and [relational system markdown](../../../../../../content/text/glossary/terms/relational-system-markdown.md) gives this system's conventions for keys and values.
 
 ## Related terms
 
-- [Markdown file](./markdown-file.md) — the file format that uses frontmatter
-- [note](./note.md) — a document in a knowledge management system
-- [vault](./vault.md) — a collection of notes organized as a knowledge base
-
-option "name<sub>income</sub>" "Input" option "name<sub>expenses</sub>" "Output" option "operating<sub>currency</sub>" "GAZ" option "booking<sub>method</sub>" "FIFO" 2021-01-01 commodity USD name: "United States Dollar" asset-class: "cash" 2021-01-01 commodity GAZ name: "GAZ token" asset-class: "token" 2021-01-01 commodity GAL-WAT name: "water, gallon" asset-class: "resource" 2021-01-01 commodity MIN name: "minute of labor" asset-class: "labor"
-
-2021-10-01 open Assets:Inventory:Ammo 2021-10-01 open Liabilities:Esther 2021-10-01 \* "Purchase BBs" Assets:Inventory:Ammo 6000 BB-177 {{14.99 USD}} Liabilities:Esther
-
-2021-10-11 open Liabilities:Emsenn 2021-10-11 open Equity:Craft:Records 2021-10-11 \* "19:25, Work on records" Equity:Craft:Records 3 MIN {0.2 GAZ} Liabilities:Emsenn
-
-2021-10-11 open Equity:House:Kitchen:Tools 2021-10-11 \* "13:29, Wash the dishes" Equity:House:Kitchen:Tools 19 MIN {0.2 GAZ} Liabilities:Emsenn
-
-2021-10-11 open Equity:Craft:Meals 2021-10-11 \* "13:49, Cook" Equity:Craft:Meals 13 MIN {0.2 GAZ} Liabilities:Emsenn
-
-2021-10-12 open Equity:House:Porch 2021-10-12 \* "10:05, Tidy the porch" Equity:House:Porch 188 MIN {0.2 GAZ} Liabilities:Emsenn
-
-2021-10-12 open Equity:Land:Soil 2021-10-12 \* "12:03, Soilwork" Equity:Land:Soil 53 MIN {0.2 GAZ} Liabilities:Emsenn
-
-2021-10-12 event "plant" "Move houseplants from porch to inside for winter" 2021-10-12 open Equity:House:Plants 2021-10-12 \* "Planting" Equity:House:Plants 31 MIN {0.2 GAZ} Liabilities:Emsenn
-
-2021-10-13 open Equity:Land 2021-10-13 \* "Fire BBs at squirrels" Assets:Inventory:Ammo -2 BB-177 {} Equity:Land
-
-2021-10-13 open Assets:Inventory:Medicine:Cannabis 2021-10-13 \* "Reup" Assets:Inventory:Medicine:Cannabis 28 GRAM-CANN {{275 USD}} Liabilities:Esther
-
-2021-10-13 \* "08:41, Work on records" Equity:Craft:Records 12 MIN {0.2 GAZ} Liabilities:Emsenn
-
-2021-10-12 \* "09:28, Tidy the porch" Equity:House:Porch 40 MIN {0.2 GAZ} Liabilities:Emsenn
-
-2021-10-13 \* "10:08, Soilwork" Equity:Land:Soil 11 MIN {0.2 GAZ} Liabilities:Emsenn
-
-2021-10-13 \* "10:19, Raking" Equity:Land 38 MIN {0.2 GAZ} Liabilities:Emsenn
-
-2021-10-19 \* "13:41, Scything" Equity:Land 19 MIN {0.2 GAZ} Liabilities:Emsenn
-
-2021-10-13 \* "14:00, Soilwork" Equity:Land:Soil 11 MIN {0.2 GAZ} Liabilities:Emsenn
-
-2021-10-14 \* "08:44, Weed the garden" Equity:Land 53 MIN {0.2 GAZ} Liabilities:Emsenn
-
-2021-10-14 \* "09:38, Wash the dishes" Equity:House:Kitchen:Tools 18 MIN {0.2 GAZ} Liabilities:Emsenn
-
-2021-10-14 open Equity:House:Downstairs 2021-10-14 \* "09:56, Tidy downstairs" Equity:House:Downstairs 15 MIN {0.2 GAZ} Liabilities:Emsenn
-
-2021-10-14 \* "10:12, Tidy downstairs" Equity:House:Downstairs 4 MIN {0.2 GAZ} Liabilities:Emsenn
-
-2021-10-14 \* "11:52, Tidy the garden" Equity:Land 81 MIN {0.2 GAZ} Liabilities:Emsenn
-
-2021-10-13 \* "14:00, Soilwork" Equity:Land:Soil 121 MIN {0.2 GAZ} Liabilities:Emsenn
-
-2021-10-14 \* "17:00, Tidy downstairs" Equity:House:Downstairs 90 MIN {0.2 GAZ} Liabilities:Emsenn
-
-2021-10-14 \* "20:29, Work on records" Equity:Craft:Records 15 MIN {0.2 GAZ} Liabilities:Emsenn
-
-2021-10-14 \* "10:16, Wash the dishes" Equity:House:Kitchen:Tools 24 MIN {0.2 GAZ} Liabilities:Emsenn
-
-2021-10-15 \* "10:50, Raking" Equity:Land 93 MIN {0.2 GAZ} Liabilities:Emsenn
-
-2021-10-15 open Assets:Inventory:Water:Loose 2021-10-15 open Assets:Inventory:Larder 2021-10-15 open Input:Shopping:Food:HarrisTeeter 2021-10-15 open Output:Money:Shopping:Food:HarrisTeeter 2021-10-15 \* "Go to grocery (Inventory)" Assets:Inventory:Water:Loose 8 GAL-WAT {0.89 USD} Assets:Inventory:Larder 1 CAN-BAKEBEAN {0.69 USD} Assets:Inventory:Larder 80 TBSP-CAFE {{7.99 USD}} Assets:Inventory:Larder 120 TBSP-HOTCER {{4.39 USD}} Assets:Inventory:Larder 8 PCK-CUCUM {{2.19 USD}} Assets:Inventory:Larder 10 OZ-CHEESE {{2.50 USD}} Assets:Inventory:Larder 72 TBSP-PNUT {{2.19 USD}} Input:Shopping:Food:HarrisTeeter 2021-10-15 \* "Go to grocery (Finance)" Output:Money:Shopping:Food:HarrisTeeter 27.07 USD Liabilities:Esther
-
-2021-10-15 \* "13:12, Raking" Equity:Land 92 MIN {0.2 GAZ} Liabilities:Emsenn
-
-2021-10-15 open Assets:Inventory:Water:Aquatainers 2021-10-15 open Assets:Inventory:Water:Bedside 2021-10-15 open Assets:Inventory:Water:Kitchen 2021-10-15 open Liabilities:Infrastructure:Water 2021-10-15 \* "Fill water containers" Assets:Inventory:Water:Aquatainers 28 GAL-WAT {0.006 USD} Assets:Inventory:Water:Bedside 2 GAL-WAT {0.006 USD} Assets:Inventory:Water:Kitchen 2 GAL-WAT {0.006 USD} Liabilities:Infrastructure:Water
-
-2021-10-16 \* "13:58, Work on records" Equity:Craft:Records 54 MIN {0.2 GAZ} Liabilities:Emsenn
-
-2021-10-16 \* "14:52, Work on records" Equity:Craft:Records 55 MIN {0.2 GAZ} Liabilities:Emsenn
-
-2021-10-16 \* "16:01, Work on records" Equity:Craft:Records 143 MIN {0.2 GAZ} Liabilities:Emsenn
-
-2021-10-16 \* "18:55, Work on records" Equity:Craft:Records 72 MIN {0.2 GAZ} Liabilities:Emsenn
-
-2021-10-16 \* "21:41, Work on records" Equity:Craft:Records 8 MIN {0.2 GAZ} Liabilities:Emsenn
-
-2021-10-16 \* "Cook lunch, \[2021-10-16 Sat 17:03\]" Assets:Inventory:Larder -1 CAN-BAKEBEAN {} Assets:Inventory:Water:Kitchen -0.25 GAL-WAT {} Liabilities:Emsenn
-
-2021-10-17 \* "08:18, Tidy downstairs" Equity:House:Downstairs 16 MIN {0.2 GAZ} Liabilities:Emsenn
-
-2021-10-17 \* "9:07, Tidy downstairs" Equity:House:Downstairs 15 MIN {0.2 GAZ} Liabilities:Emsenn
-
-2021-10-17 \* "9:48, Tidy downstairs" Equity:House:Downstairs 19 MIN {0.2 GAZ} Liabilities:Emsenn
-
-2021-10-17 \* "10:07, Cook hot cereal (Labor)" Equity:Craft:Meals 25 MIN {0.2 GAZ} Liabilities:Emsenn 2021-10-17 \* "10:07, Cook hot cereal (Materials)" Assets:Inventory:Water:Kitchen -0.125 GAL-WAT {} Assets:Inventory:Larder -8 TBSP-HOTCER {} Liabilities:Emsenn
-
-2021-10-14 \* "10:13, Wash the dishes" Equity:House:Kitchen:Tools 4 MIN {0.2 GAZ} Liabilities:Emsenn
-
-2021-10-17 open Input:Waste:Food:Coffee 2021-10-17 open Assets:Land:Compost 2021-10-17 \* "Make coffee" Assets:Inventory:Water:Kitchen -0.125 GAL-WAT {} Assets:Inventory:Larder -2 TBSP-CAFE {} Liabilities:Emsenn 2021-10-17 \* "Make coffee (Waste)" Input:Waste:Food:Coffee 2 TBSP-CAFE Assets:Land:Compost
-
-2021-10-17 \* "11:23, Work on records" Equity:Craft:Records 17 MIN {0.2 GAZ} Liabilities:Emsenn
-
-2021-10-17 \* "12:56, Work on records" Equity:Craft:Records 35 MIN {0.2 GAZ} Liabilities:Emsenn
-
-2021-10-17 \* "Water houseplants, 09:41 (Material)" Assets:Inventory:Water:Kitchen -0.5 GAL-WAT {} Equity:House:Plants 2021-10-17 \* "Water houseplants, 09:41 (Labor)" Equity:House:Plants 7 MIN {0.2 GAZ} Liabilities:Emsenn
-
-2021-10-17 \* "Make coffee" Assets:Inventory:Water:Kitchen -0.125 GAL-WAT {} Assets:Inventory:Larder -2 TBSP-CAFE {} Liabilities:Emsenn 2021-10-17 \* "Make coffee (Waste)" Input:Waste:Food:Coffee -2 TBSP-CAFE Assets:Land:Compost
-
-2021-10-17 open Input:Waste:Packaging 2021-10-17 open Assets:Inventory:Storage 2021-10-17 \* "Ate snack" Assets:Inventory:Larder -5 PCK-CUCUM {} Assets:Inventory:Larder -2.5 OZ-CHEESE {} Liabilities:Esther 2021-10-17 \* "Ate snack" Assets:Inventory:Larder -2 PCK-CUCUM {} Assets:Inventory:Larder -2.5 OZ-CHEESE {} Assets:Inventory:Larder -1.5 TBSP-PNUT {} Liabilities:Emsenn 2021-10-17 \* "Snack waste" Assets:Inventory:Storage 1 QT-JAR {0 GAZ} Assets:Inventory:Storage 1 PT-JAR {0 GAZ} Input:Waste:Packaging 2021-10-17 \* "Snack waste" Assets:Inventory:Larder -1 PCK-CUCUM {} Assets:Land:Compost
-
-2021-10-17 \* "Fire BBs at squirrels" Assets:Inventory:Ammo -1 BB-177 {} Equity:Land
-
-2021-10-17 \* "13:40, Work on records" Equity:Craft:Records 23 MIN {0.2 GAZ} Liabilities:Emsenn
-
-2021-10-12 \* "17:37, Tidy the porch" Equity:House:Porch 22 MIN {0.2 GAZ} Liabilities:Emsenn
-
-2021-10-17 \* "07:55, Cook" Equity:Craft:Meals 17 MIN {0.2 GAZ} Liabilities:Emsenn
-
-2021-10-17 \* "Fire BBs at squirrels" Assets:Inventory:Ammo -5 BB-177 {} Equity:Land
-
-2021-10-14 \* "10:54, Wash the dishes" Equity:House:Kitchen:Tools 34 MIN {0.2 GAZ} Liabilities:Emsenn
-
-2021-10-19 \* "11:28, Maintain cutting boards" Equity:House:Kitchen:Tools 15 MIN {0.2 GAZ} Liabilities:Emsenn
-
-2021-10-19 \* "13:22, Work on records" Equity:Craft:Records 60 MIN {0.2 GAZ} Liabilities:Emsenn
-
-2021-10-19 \* "16:02, Tidy the garden" Equity:Land 50 MIN {0.2 GAZ} Liabilities:Emsenn
-
-2021-10-19 \* "12:05, Raking" Equity:Land 169 MIN {0.2 GAZ} Liabilities:Emsenn
+- [Markdown file](./markdown-file.md): the file format that carries frontmatter
+- [note](./note.md): a document in a knowledge management system
+- [vault](./vault.md): a collection of notes organized as a knowledge base

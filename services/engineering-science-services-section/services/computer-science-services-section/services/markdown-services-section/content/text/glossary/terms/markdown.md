@@ -24,7 +24,7 @@ Every entity file MUST have exactly one H1 heading (`# Title`) as the first head
 Headings MUST use `#` syntax — no underline style (`===` or `---` underlines are semantically equivalent in CommonMark but excluded here for consistency).
 
 Markdown MAY use fenced code blocks, tables, blockquotes, and lists.
-Cross-references use `[text](../../../../../humanities/domains/math/domains/topology/terms/path.md)` links; `{#anchor-id}` on headers creates deep-link targets within a file.
+Cross-references use `[text](../../../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/path.md)` links; `{#anchor-id}` on headers creates deep-link targets within a file.
 
 ## Relation to frontmatter
 

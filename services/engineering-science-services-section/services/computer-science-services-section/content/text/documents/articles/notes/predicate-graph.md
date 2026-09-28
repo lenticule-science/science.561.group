@@ -139,24 +139,24 @@ Each domain ASR specification defines axioms for its content types.
 Five domains currently have axiom registries:
 
 **Mathematics** (at
-[mathematical ASR](../../../mathematics/specifications/mathematical-agential-semioverse-repository/index.md)):
+[mathematical ASR](../../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/index.md)):
 definition, theorem, proof, axiom, conjecture, lemma, corollary,
 proposition.
 
 **Philosophy** (at
-[philosophical ASR](../../../philosophy/specifications/philosophical-agential-semioverse-repository/index.md)):
+[philosophical ASR](../../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/index.md)):
 claim, argument, objection, position, tradition.
 
 **Sociology** (at
-[sociological ASR](../../../sociology/specifications/sociological-agential-semioverse-repository/index.md)):
+[sociological ASR](../../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/index.md)):
 term, concept, school, lesson, text.
 
 **Games** (at
-[ludic ASR](../../../games/specifications/ludic-agential-semioverse-repository/index.md)):
+[ludic ASR](../../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/index.md)):
 term, lesson, specification, text, topic.
 
 **Education** (at
-[pedagogical ASR](../../../education/specifications/pedagogical-agential-semioverse-repository/index.md)):
+[pedagogical ASR](../../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/index.md)):
 lesson, curriculum.
 
 Universal axioms apply across all domains: handle targets must resolve
@@ -236,7 +236,7 @@ The formal path toward full Heyting-valued satisfaction requires:
 2. **The Lindenbaum-Tarski construction.** The set of axioms for a type
    T, quotiented by logical equivalence, forms a Heyting algebra. This
    is the
-   [Lindenbaum-Tarski algebra](../../../mathematics/concepts/lindenbaum-tarski-algebra/index.md)
+   [Lindenbaum-Tarski algebra](../../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/index.md)
    of T's theory. The current axiom registries define the generators of
    this algebra; the Heyting operations (meet, join, implication) define
    how axiom satisfaction values combine.
@@ -244,7 +244,7 @@ The formal path toward full Heyting-valued satisfaction requires:
 3. **Lean formalization.** The correspondence between the predicate
    graph's satisfaction relation and the semiotic universe's truth
    values should be provable in
-   [Lean](../../../technology/topics/lean/index.md). The existing
+   [Lean](../../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/index.md). The existing
    Lean formalization at `formalization/Relationality/` proves that the
    recognition field axioms constitute a Heyting algebra (Genesis.lean).
    Extending this to formalize the type theories and their satisfaction
@@ -324,7 +324,7 @@ reports zero new gaps.
 The predicate graph is the foundation that other ASR specifications
 build on:
 
-- **[Semiotic Markdown](../semiotic-markdown/index.md)** defines the
+- **[Semiotic Markdown](../../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/index.md)** defines the
   file model: how pages encode triplets (frontmatter fields) and
   content (body text). It specifies the encoding; the predicate graph
   is what the encoding produces.
@@ -334,7 +334,7 @@ build on:
   exist and what they mean. The predicate graph is the instantiation of
   that vocabulary across all pages.
 
-- **[Directory Organization](./directory-organization/index.md)**
+- **[Directory Organization](../../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/index.md)**
   determines the handle structure (file paths) and the implicit
   classification (discipline, subdirectory type). Handles are the
   node identifiers in the predicate graph; directory position determines

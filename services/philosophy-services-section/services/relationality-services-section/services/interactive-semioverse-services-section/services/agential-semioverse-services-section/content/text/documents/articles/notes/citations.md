@@ -251,7 +251,7 @@ The first known use of this technique predates the published record [citation ne
 
 ## Citation expectations by content type
 
-The [style guide](../../../writing/texts/style-guide.md) specifies what each content type requires. In summary:
+The [style guide](../../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/style-guide.md) specifies what each content type requires. In summary:
 
 | Content type | Citation expectation |
 |---|---|
