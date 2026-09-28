@@ -1,0 +1,23 @@
+{
+  "slug": "understanding-infection-associated-chronic-illness",
+  "title": "Understanding Infection-Associated Chronic Illness",
+  "subtitle": "A Public Guide to Long COVID, Post-Exertional Malaise, and the Science Behind the Diagnosis",
+  "author": "561 Group",
+  "date": "2026-09-02",
+  "bookDir": ".",
+  "distDir": "../../../data/state/editions/understanding-infection-associated-chronic-illness",
+  "description": "A public guide to Long COVID, post-exertional malaise, and infection-associated chronic illness: what is established, what is a well-supported hypothesis, and what remains contested. This is educational material, not medical advice.",
+  "keywords": [
+    "infection-associated chronic illness",
+    "Long COVID",
+    "post-exertional malaise",
+    "pacing",
+    "health education"
+  ],
+  "subjects": [
+    "HEA000000",
+    "MED000000",
+    "SCI000000"
+  ],
+  "marks": []
+}
