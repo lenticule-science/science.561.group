@@ -108,6 +108,35 @@ offer is witnessed to have. Three things follow from that definition.
   include the words readers use to ask ("books like C-dramas", "slow burn",
   "closed door"), because those words become the listing's keywords.
 
+## Readings are hypotheses, and the slate is the experiment
+
+A gap reading and its design rules are hypotheses about one segment, not laws
+for the house. The founder put it this way on 2026-09-27, after the first
+study's evidence ruled out the possessive, wrist-grabbing lead: "American
+readers say they don't like wrist grabbing, but also, they ate up *Fifty Shades
+of Grey*. ... we should always take the research into mind like a business who
+can do testing, given how cheap production can get with AI."
+
+Stated and revealed preferences diverge, and they diverge by segment. The same
+trope that a demand's evidence reads *false* for one audience can read *true*
+for another. So:
+
+- **A demand names its segment.** "American romance readers" is not a segment;
+  "closed-door readers who came from C-dramas" is. Evidence for and against
+  should be attached to the segment it was observed in.
+- **Rules belong to a canon, not the house.** A story bible's `refusals` are
+  that canon's choices, enforced by the manuscript lint for that book only. A
+  darker line, a different author or a different canon sets its own.
+- **Production is cheap, so test instead of converging.** Where a demand reads
+  *both*, or where readings for two segments conflict, commission more than one
+  work: different authors, lines or canons aimed at different segments. Let the
+  measure readout (the promote-to-research edge) settle it.
+- **Plan slates, not titles.** Each title enters with a hypothesis (segment,
+  combination, price, channel), a cheap test, and the readout that would
+  justify further investment.
+- **Argue against the founder's taste too.** The founder asked for market
+  evidence to push back on their own biases as well as on the research's.
+
 ## The guard: fill, don't flood
 
 The house research memo on AI slop
