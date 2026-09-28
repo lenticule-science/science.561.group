@@ -10,6 +10,7 @@
 // author may write. Nothing here is code that belongs to L-Space; it is what L-Space says about
 // itself.
 
+import { execFileSync } from 'node:child_process';
 import { timingSafeEqual } from 'node:crypto';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -176,6 +177,13 @@ const lSpaceProjection = (environment) => ({
   ...(setting('LSPACE_SUBTITLE', environment) === undefined ? {} : { subtitle: setting('LSPACE_SUBTITLE', environment), description: setting('LSPACE_SUBTITLE', environment) }),
 });
 
+function sourceRevision(root, environment) {
+  const explicit = setting('GITHUB_SHA', environment) ?? setting('LENTICULE_SCIENCE_SOURCE_REVISION', environment);
+  if (explicit !== undefined) return explicit;
+  try { return execFileSync('git', ['-C', root, 'rev-parse', 'HEAD'], { encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] }).trim(); }
+  catch { return null; }
+}
+
 /** The garden as one application of the web server: admission first, then VaultMaze, media, GEODE and MCP. */
 export async function lSpaceApplication(environment = process.env) {
   const stateDir = stateDirectory(environment);
@@ -192,7 +200,7 @@ export async function lSpaceApplication(environment = process.env) {
     publicRoute: lSpacePublicRoute,
   });
   const site = { baseIri: `${publicBaseUrl(environment) ?? 'https://l-space.561.group'}/`, language: 'en' };
-  const vaultMaze = await createVaultMazeRuntime({ root, catalog: lSpaceCatalog(environment), site, projection: { ...lSpaceProjection(environment), sourceRevision: setting('GITHUB_SHA', environment) ?? setting('LENTICULE_SCIENCE_SOURCE_REVISION', environment) ?? null } });
+  const vaultMaze = await createVaultMazeRuntime({ root, catalog: lSpaceCatalog(environment), site, projection: { ...lSpaceProjection(environment), sourceRevision: sourceRevision(root, environment) }, cacheDir: join(stateDir, 'vaultmaze') });
   const media = mediaContent(environment);
   const composed = [
     { resources: healthResources({ now: () => new Date() }) },
