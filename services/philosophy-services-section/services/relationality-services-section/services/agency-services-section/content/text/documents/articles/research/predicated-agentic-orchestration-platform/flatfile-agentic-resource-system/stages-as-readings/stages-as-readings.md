@@ -16,7 +16,7 @@ The substrate's algebra is one machine; the stages are six questions it answers.
 
 The framing matters because the natural intuition — "we have six stages, so we need six things in the substrate" — produces six parallel runtime systems that the algebra cannot relate.
 FARS rejects that intuition.
-The substrate has the algebra ($\odot$, $\Rightarrow$, [`compose`](../morphisms/compose.md), [`restrict`](../code/transformers/restrict.md), [`settle`](../code/transformers/settle.md), [`respond`](../code/transformers/respond.md)) and the [referencing-entity pattern](../flatfile/referencing-entity-pattern/referencing-entity-pattern.md).
+The substrate has the algebra ($\odot$, $\Rightarrow$, [`compose`](../../../../../../../../../../../../content/text/glossary/terms/compose.md), [`restrict`](../code/transformers/restrict.md), [`settle`](../code/transformers/settle.md), [`respond`](../code/transformers/respond.md)) and the [referencing-entity pattern](../flatfile/referencing-entity-pattern/referencing-entity-pattern.md).
 Stages emerge from how those ingredients are combined; they are not new ingredients.
 
 ## The six stage-readings
@@ -26,7 +26,7 @@ Each work-cycle stage is a fiber composition over substrate Notes:
 - **Planning** is the production of [task](../../../../../../../../../../../../../social-science-services-section/services/social-theory-science-services-section/content/text/glossary/terms/task-cell-system.md) Notes whose fibers commit some predicates and leave others at $\bot$.
   The stage's reading: "what is the unsaturated form of this work?" — the plan as the $\odot$-fixpoint of task-assertion on a goal fiber.
 
-- **Dispatch** is [`dispatch`](../morphisms/dispatch.md), with [assignment](../../../../../../../../../../../humanities/theories/sociology/theories/work/theories/predicated-work/objects/assignment.md) Notes as the entities the dispatcher emits when the match valuation reaches threshold.
+- **Dispatch** is [`dispatch`](../../../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/dispatch.md), with [assignment](../../../../../../../../../../../humanities/theories/sociology/theories/work/theories/predicated-work/objects/assignment.md) Notes as the entities the dispatcher emits when the match valuation reaches threshold.
   The stage's reading: "which office's fiber composes with this task's requirement fiber under $\odot$?"
 
 - **Execution** is the emission of [execution-event](../../../../../../../../../../../../../social-science-services-section/services/social-theory-science-services-section/content/text/glossary/terms/execution-event.md) Notes against an active assignment, and the substrate's read of state via [derived-state-via-walks](../derived-state-via-walks/derived-state-via-walks.md).
@@ -51,7 +51,7 @@ The stages do not extend the vocabulary; they walk it from different starting po
   Planning Notes enter on the mutation channel; dispatch happens via the dispatch operator (which itself uses the substrate's existing channels for its own substrate edits); execution events enter on a configured channel (typically `execution`); observations enter on the observation channel; findings and adjustments enter on the mutation channel.
   A FARS realization MAY route work-cycle entities onto dedicated per-stage channels for indexing convenience — the algebra does not care — but the stage decomposition is *not a substrate-channel commitment*.
 
-- **No kernel paths per stage.** [`respond`](../code/transformers/respond.md), [`compose`](../morphisms/compose.md), [`restrict`](../code/transformers/restrict.md), [`settle`](../code/transformers/settle.md), [`dispatch`](../morphisms/dispatch.md) are the substrate's operators.
+- **No kernel paths per stage.** [`respond`](../code/transformers/respond.md), [`compose`](../../../../../../../../../../../../content/text/glossary/terms/compose.md), [`restrict`](../code/transformers/restrict.md), [`settle`](../code/transformers/settle.md), [`dispatch`](../../../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/dispatch.md) are the substrate's operators.
   None of them is stage-specific.
   A consumer doing planning calls the same `compose` and `settle` a consumer doing review calls; the difference is in which Notes' fibers are inputs and which questions are being asked.
 

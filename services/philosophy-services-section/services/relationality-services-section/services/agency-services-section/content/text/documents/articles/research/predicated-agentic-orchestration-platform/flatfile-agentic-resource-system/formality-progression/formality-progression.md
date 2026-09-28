@@ -25,7 +25,7 @@ The four levels:
   Frontmatter keys with controlled-vocabulary values; checklists with named items; tables with typed columns.
   F2 content is mechanically parseable and supports both LLM and deterministic operators; agents reading F2 content do so with mid-tier model cost or deterministic computation.
 - **F3 — algebraic.** Knowledge expressed as predicates with bilattice-valued cells and closure rules connecting them.
-  F3 content is the substrate's algebra acting on itself: predicates compose under [`compose`](../morphisms/compose.md) and [`restrict`](../code/transformers/restrict.md); rules fire under [`settle`](../code/transformers/settle.md); the substrate's behavior is determined without LLM invocation.
+  F3 content is the substrate's algebra acting on itself: predicates compose under [`compose`](../../../../../../../../../../../../content/text/glossary/terms/compose.md) and [`restrict`](../code/transformers/restrict.md); rules fire under [`settle`](../code/transformers/settle.md); the substrate's behavior is determined without LLM invocation.
   F3 content runs at $0 LLM cost.
 
 ## Sharpening as the settlement path

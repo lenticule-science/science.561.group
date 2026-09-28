@@ -72,7 +72,7 @@ A FARS realization that has never used named senders is operating in the unmarke
   A FARS realization MAY layer a guard-channel policy on top of the structural bound for additional access control, but the bound itself is not a policy.
 
 - **Not a routing primitive.** The sender names *who is sending*, not *where the message goes*.
-  Routing — selecting which entity to respond against — remains the job of [`dispatch`](../morphisms/dispatch.md).
+  Routing — selecting which entity to respond against — remains the job of [`dispatch`](../../../../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/dispatch.md).
   A message may have a sender and still need to be dispatched against a candidate set; the sender just bounds what the message contributes to the dispatch's match-strength composition.
 
 - **Not a replacement for the message Note.** A message is still a fiber the substrate processes.
