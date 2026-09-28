@@ -118,6 +118,8 @@ split as real content lands.
 - `grammar:` — `article:`, `pronoun:`, etc.
 - `started:`, `ended:` — the being's lifetime, as time values.
 - `voice:` — the narration voice for the being's point-of-view chapters.
+- `embodied:` — `false` for a being with no body or place, such as the web itself or
+  a network mind. A work's observation check does not ask to locate it.
 
 ### `thing`
 
