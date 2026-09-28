@@ -6,5 +6,18 @@
   "bookDir": ".",
   "distDir": "../../../dist/the-x402-economy",
   "tokens": "../../../../../../../../../../561-group-services-section/services/561-group-content-design-services-section/data/records/design-tokens/561-group.tokens.json",
-  "cover": "typographic"
+  "cover": "typographic",
+  "description": "How the web’s unused payment code became a way for software to pay, and what it has earned so far: HTTP 402’s history, one paid request step by step, who governs x402, its rivals, the market measurements, security and US law.",
+  "keywords": [
+    "x402",
+    "stablecoins",
+    "agent payments",
+    "HTTP 402"
+  ],
+  "subjects": [
+    "BUS090000",
+    "BUS114000",
+    "COM060180"
+  ],
+  "marks": []
 }
