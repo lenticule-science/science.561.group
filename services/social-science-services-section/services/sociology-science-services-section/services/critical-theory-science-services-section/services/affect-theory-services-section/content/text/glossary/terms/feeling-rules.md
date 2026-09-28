@@ -26,3 +26,4 @@ When intellectual labor is commodified, the feeling rules of its genre determine
 - [Industrial intellectualism](../../../../../../../cybernetic-postliberalism-services-section/content/text/glossary/terms/industrial-intellectualism.md) — intellectual [labor](../../../../../../../../content/text/glossary/terms/labor.md) governed by genre's feeling rules
 - [Neurotic platformal intellectual](../../../../../../../cybernetic-postliberalism-services-section/content/text/glossary/terms/neurotic-platformal-intellectual.md) — the subject position governed by platform-specific feeling rules
 - [Fascist grammar](../../../../../../../cybernetic-postliberalism-services-section/content/text/glossary/terms/fascist-grammar.md) — a grammar whose steps prescribe specific affects
+- [Ideal affect](./ideal-affect.md) — the feeling states a culture wants to feel, which a genre offers alongside the ones it prescribes
