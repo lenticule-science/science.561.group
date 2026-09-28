@@ -1,13 +1,14 @@
 ---
-
-name: theorem-of-reproducible-paracosmic-models
+title: "Theorem of reproducible paracosmic models"
+aliases:
   - "Theorem of reproducible paracosmic models"
   - "theorem of reproducible paracosmic models"
+  - Theorem of Reproducible Paracosmic Models
 date-created: 2025-10-10T22:07:00
-introduces: specification
-title: theorem-of-reproducible-paracosmic-models - "Theorem of reproducible paracosmic models" - "theorem of reproducible paracosmic models"
 description: We present a unified categorical theory of \paracosms\—formal models of narrative and ludic worlds—grounded in the coexistence of modal structure (possibility, necessity, knowledge, play) and reproducibility (coherence under…
 ---
+
+# Abstract
 
 We present a unified categorical theory of \*paracosms\*—formal models of narrative and ludic worlds—grounded in the coexistence of modal structure (possibility, necessity, knowledge, play) and reproducibility (coherence under reconstruction).
 By defining internal modal endofunctors within a reflective localization of the model category of a world sketch, we prove two main results:
@@ -25,7 +26,7 @@ A paracosm’s central challenge is ****reproducibility****: different interpret
 Narratively, this appears as **canon** or **continuity**; mechanically, as **state coherence**.
 Formally, it is the invariance of world structure under permissible transformations.
 
-We approach this through [category theory](../../../mathematics/objects/categories/index.md):
+We approach this through [category theory](../../../../../../../../../../../../../knowledge-services-section/content/text/glossary/terms/category-theory.md):
 
 - functorial semantics (Lawvere) defines the algebraic skeleton of the world;
 - gluing and descent (Ehresmann, Grothendieck) model narrative locality;
@@ -41,7 +42,7 @@ The result is a single categorical system capturing both narrative modality and 
 
 A ****paracosmic sketch**** $ S $ consists of:
 
-1.  a small category $ \mathcal{C}_S $ of entities, events, and relations (the **diegetic [ontology](../../../philosophy/terms/ontology.md)**);
+1.  a small category $ \mathcal{C}_S $ of entities, events, and relations (the **diegetic [ontology](../../../../../../../../../../../../../../../philosophy-services-section/content/text/glossary/terms/ontology.md)**);
 2.  designated (co)limit cones encoding compositional constraints (causal, spatial, temporal);
 3.  a finite family of ****modal endofunctors****
     $$
@@ -51,7 +52,7 @@ A ****paracosmic sketch**** $ S $ consists of:
 
 </div>
 
-A **model** of $ S $ is a [functor](../../../mathematics/objects/categories/ordinary-categories/terms/functor.md) $ M:\mathcal{C}_S \to \mathbf{Set} $ preserving the specified (co)limits.
+A **model** of $ S $ is a [functor](../../../../../../../../../../../../../math-services-section/content/text/glossary/terms/functor.md) $ M:\mathcal{C}_S \to \mathbf{Set} $ preserving the specified (co)limits.
 The category of models is denoted $ \mathbf{Mod}(S) $.
 
 <div class="remark">
@@ -101,7 +102,7 @@ Morphisms $f:(M,\mu_i)\to(N,\nu_i)$ satisfy $f\circ\mu_i = \nu_i\circ\Box_i(f)$.
 </div>
 
 For each $i\in I$, let $\mathsf{Mod}_{\Box_i}(S)$ denote the category of $\Box_i$-coalgebras.
-The assignment $i\mapsto\mathsf{Mod}_{\Box_i}(S)$ defines a pseudo-[functor](../../../mathematics/objects/categories/ordinary-categories/terms/functor.md) $\mathcal{M}:I\to\mathbf{Cat}$; its Grothendieck construction
+The assignment $i\mapsto\mathsf{Mod}_{\Box_i}(S)$ defines a pseudo-[functor](../../../../../../../../../../../../../math-services-section/content/text/glossary/terms/functor.md) $\mathcal{M}:I\to\mathbf{Cat}$; its Grothendieck construction
 $$
 \int_I \mathcal{M}
 $$
@@ -114,7 +115,7 @@ If each $\Box_i$ is left exact, preserves colimits of connected diagrams, and ad
 
 1.  the projection $p:\int_I\mathcal{M}\to\mathbf{Mod}(S)$ is a fibration;
 2.  each fibre $\mathsf{Mod}_{\Box_i}(S)$ is reflective in $\mathbf{Mod}(S)$;
-3.  there exists a left adjoint ****modal encoding [functor](../../../mathematics/objects/categories/ordinary-categories/terms/functor.md)****
+3.  there exists a left adjoint ****modal encoding [functor](../../../../../../../../../../../../../math-services-section/content/text/glossary/terms/functor.md)****
     $$
       \mathsf{Encode}_\Box : \mathbf{Mod}(S)\to\int_I\mathcal{M},
       \quad M\mapsto\{(\Box_i M,\varepsilon_i)\}_{i\in I},
@@ -134,8 +135,8 @@ All narrative possibilities consistent with the world’s structure are encoded 
 To model retelling, evolution, and observation, we impose three equivalences on $\mathbf{Mod}(S)$:
 
 1.  ****Gluing (J):**** local models agreeing on overlaps glue to a unique global model (descent).
-2.  ****Normalization (N):**** rewrite rules forming a terminating, locally confluent system induce a normalization [functor](../../../mathematics/objects/categories/ordinary-categories/terms/functor.md) $N$ with $N^2\simeq N$.
-3.  ****Bisimulation (O):**** an observation [functor](../../../mathematics/objects/categories/ordinary-categories/terms/functor.md) $O:\mathbf{Mod}(S)\to\mathbf{Kr}$ preserves modal truth; bisimilar models are observationally equivalent.
+2.  ****Normalization (N):**** rewrite rules forming a terminating, locally confluent system induce a normalization [functor](../../../../../../../../../../../../../math-services-section/content/text/glossary/terms/functor.md) $N$ with $N^2\simeq N$.
+3.  ****Bisimulation (O):**** an observation [functor](../../../../../../../../../../../../../math-services-section/content/text/glossary/terms/functor.md) $O:\mathbf{Mod}(S)\to\mathbf{Kr}$ preserves modal truth; bisimilar models are observationally equivalent.
 
 Quotienting by these yields the ****reproducible paracosm****:
 $$
@@ -148,12 +149,12 @@ $$
 If $S$ admits effective gluing, terminating confluent rewriting, and modal-preserving observation, then:
 
 1.  $\mathsf{RP}(S)$ is complete, cocomplete, and institutionally invariant;
-2.  the modal encoding [functor](../../../mathematics/objects/categories/ordinary-categories/terms/functor.md) $\mathsf{Encode}_\Box$ factors through the quotient:
+2.  the modal encoding [functor](../../../../../../../../../../../../../math-services-section/content/text/glossary/terms/functor.md) $\mathsf{Encode}_\Box$ factors through the quotient:
     $$
       \mathsf{Encode}_\Box : \mathsf{RP}(S) \to \int_I\mathsf{RP}_{\Box_i}(S),
       $$
     where each $\mathsf{RP}_{\Box_i}(S)$ is the image of $\mathsf{Mod}_{\Box_i}(S)$ under the quotient functor;
-3.  this factorization is an equivalence up to natural [isomorphism](../../../mathematics/objects/categories/ordinary-categories/terms/isomorphism.md).
+3.  this factorization is an equivalence up to natural [isomorphism](../../../../../../../../../../../../../math-services-section/content/text/glossary/terms/isomorphism.md).
 
 Therefore, the reproducible world is precisely the canonical modal closure of the paracosmic sketch $S$.
 
@@ -162,8 +163,8 @@ Therefore, the reproducible world is precisely the canonical modal closure of th
 **Proof Sketch.**
 Completeness and cocompleteness follow from local presentability and closure of reflective subcategories under localization.
 Institutional invariance follows from Goguen–Burstall’s result that satisfaction commutes with signature [morphisms](../../../../../../../../../../../../../math-services-section/content/text/glossary/terms/morphism.md).
-Factorization of $\mathsf{Encode}_\Box$ holds because $\Box_i$ commutes with the three equivalence-generating [functors](../../../mathematics/objects/categories/ordinary-categories/terms/functor.md) (preserving gluing, normalization, and observation).
-Uniqueness up to natural [isomorphism](../../../mathematics/objects/categories/ordinary-categories/terms/isomorphism.md) arises from the universal [property](../../../sociology/terms/property.md) of reflective localizations.
+Factorization of $\mathsf{Encode}_\Box$ holds because $\Box_i$ commutes with the three equivalence-generating [functors](../../../../../../../../../../../../../math-services-section/content/text/glossary/terms/functor.md) (preserving gluing, normalization, and observation).
+Uniqueness up to natural [isomorphism](../../../../../../../../../../../../../math-services-section/content/text/glossary/terms/isomorphism.md) arises from the universal property of reflective localizations.
 
 # 5. Interpretation and Consequences
 

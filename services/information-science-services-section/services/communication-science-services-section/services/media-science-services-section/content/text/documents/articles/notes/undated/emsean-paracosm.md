@@ -16,13 +16,10 @@ paracosm." Directory naming follows the noun.
 
 ## Regions
 
-- [`teraum/`](../../research/2026/07/31/lenticule-import/library/arts/ludics/media/worldbuilding/emsean-paracosm/archive/teraum) — long-developed setting, has its own MUD work
-  in [TAB](../../research/2026/07/31/lenticule-import/library/arts/ludics/media/worldbuilding/engineering/toys/tab) and
-  [qtOps](../../research/2026/07/31/lenticule-import/library/arts/ludics/media/worldbuilding/engineering/toys/qtops) archives, and a MASH
-  importer at [`tools/import_teraum.py`](../../research/2026/07/31/lenticule-import/library/arts/ludics/media/worldbuilding/engineering/tools/agentics/mash/tools/import_teraum.py).
-- [`okaga/`](../../research/2026/07/31/lenticule-import/library/arts/ludics/media/worldbuilding/emsean-paracosm/archive/okaga) — older setting with stories already in the
-  corpus (`triage/content/.../the-okaga.md`). Less code-side
-  development than Teraum.
+- [Teraum](../../../../../../../../../../../../../public-services-section/services/public-media-services-section/services/public-fiction-media-services-section/services/public-paracosm-media-services-section/services/teraum-paracosm-services-section) — the long-developed setting, with its own MUD world in
+  [TAB](../../../../../../../../../../../../../public-services-section/services/public-media-services-section/services/public-fiction-media-services-section/services/public-paracosm-media-services-section/services/teraum-paracosm-services-section/worlds/teraum-tab) and earlier qtOps and MASH importer work.
+- [Okaga](../../../../../../../../../../../../../public-services-section/services/public-media-services-section/services/public-fiction-media-services-section/services/public-paracosm-media-services-section/services/okaga-paracosm-services-section) — the older setting, with stories already in the corpus and
+  its own [TAB world](../../../../../../../../../../../../../public-services-section/services/public-media-services-section/services/public-fiction-media-services-section/services/public-paracosm-media-services-section/services/okaga-paracosm-services-section/worlds/okaga-tab).
 
 ## Paracosm-wide material
 
@@ -34,4 +31,4 @@ paracosm." Directory naming follows the noun.
 Region-local vocabulary and prose live under each region's own
 `terms/` and `texts/`.
 
-See [the schema](../../research/2026/07/31/lenticule-import/library/arts/ludics/media/worldbuilding/emsean-paracosm/SCHEMA.md) for entry conventions.
+See [the paracosm content schema](../../../../../../services/paracosm-science-services-section/content/text/documents/articles/specifications/paracosm-content-schema.md) for entry conventions.

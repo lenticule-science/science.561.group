@@ -3,6 +3,9 @@ title: "Phineas and Ferb as Episodic Jouissance within Corporate Liberation"
 description: "Reads Phineas and Ferb through category theory, semiotics, and political economy as corporate-framed anarchic joy that reproduces its conditions of capture."
 date-created: 2025-10-13T22:08:00
 keywords: ["phineas-and-ferb", "corporate-media", "jouissance", "category-theory", "semiotics", "ideology"]
+aliases:
+  - Phineas and Ferb as episodic jouissance within corporate Liberation
+  - phineas and ferb as episodic jouissance within corporate liberation
 ---
 
 ## Abstract

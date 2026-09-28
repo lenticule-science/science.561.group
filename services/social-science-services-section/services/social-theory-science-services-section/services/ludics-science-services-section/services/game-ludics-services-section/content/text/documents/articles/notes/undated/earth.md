@@ -23,7 +23,7 @@ Currently a seed: one folktale entry. Add more as they surface.
 - `places/`, `beings/`, `things/`, `terms/` — to be created when
   individual entries surface.
 
-See [the schema](../../../../../../../../../../../../../philosophy-services-section/services/relationality-services-section/lib/agency/skills/paracosms/SCHEMA.md) for entry conventions.
+See [the schema](../../../../../../../../../../../../../information-science-services-section/services/communication-science-services-section/services/media-science-services-section/services/paracosm-science-services-section/content/text/documents/articles/specifications/paracosm-content-schema.md) for entry conventions.
 
 ## Texts
 

@@ -5,12 +5,19 @@ aliases:
   - "zines"
   - "fanzine"
   - "fanzines"
+  - Zine
 date-created: 2026-03-06
 tags: []
 date-modified: 2026-03-09
 part-of: media/topics/zines/terms
 date-updated: 2026-03-09
 type: term
+keywords:
+  - self-publishing
+  - amateur-press
+  - punk
+  - riot-grrrl
+  - role-playing-games
 ---
 
 A zine is a small, self-published work of text and images, typically reproduced by photocopier or other low-cost means and distributed outside commercial publishing channels. The word is short for "magazine" or "fanzine," and the form is defined less by any particular content than by its mode of production: cheap, fast, and controlled by its maker rather than by an editor, publisher, or distributor.

@@ -6,6 +6,13 @@ aliases:
   - The Walking Dead as an Ontology of Unfinished Death
 date-created: 2026-02-27T17:21:58-06:00
 description: The zombie has long been available to cultural analysis as a figure of mediation between social fear and bodily disorder.
+keywords:
+  - the-walking-dead
+  - zombie
+  - biopolitics
+  - necropolitics
+  - ontology
+  - unfinished-death
 ---
 
 ## I. Introduction — Theoretical Frame and Research Question
