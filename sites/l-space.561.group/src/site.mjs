@@ -233,7 +233,7 @@ export async function lSpaceApplication(environment = process.env) {
 
 /**
  * The platforms whose territory tiles with the garden's, by the credential each presents:
- * `LSPACE_GATEWAY_TOKENS` lists `name=token` pairs (ops.561.group=...). A gateway carries the
+ * `LSPACE_GATEWAY_TOKENS` lists `name=token` pairs (bare-cedar-fog.561.group=...). A gateway carries the
  * garden to everyone its own admission admits, so its calls read the garden as an admitted
  * reader; writing stays with the garden's authors.
  */
