@@ -7,45 +7,49 @@ identity: cupping
 name: Cupping
 references:
   cao2012:
-    authors:
-      - Huijuan Cao
-      - Xun Li
-      - Jianping Liu
+    authors: [Huijuan Cao, Xun Li, Jianping Liu]
     title: "An Updated Review of the Efficacy of Cupping Therapy"
     year: 2012
     publication: "PLoS ONE"
-    publisher: "Public Library of Science (PLoS)"
     doi: "10.1371/journal.pone.0031793"
     url: "https://doi.org/10.1371/journal.pone.0031793"
   kim2011:
-    authors:
-      - Jong-In Kim
-      - Myeong Soo Lee
-      - Dong-Hyo Lee
-      - Kate Boddy
-      - Edzard Ernst
+    authors: [Jong-In Kim, Myeong Soo Lee, Dong-Hyo Lee, Kate Boddy, Edzard Ernst]
     title: "Cupping for Treating Pain: A Systematic Review"
     year: 2011
     publication: "Evidence-Based Complementary and Alternative Medicine"
-    publisher: "Wiley"
     doi: "10.1093/ecam/nep035"
     url: "https://doi.org/10.1093/ecam/nep035"
   lauche2012:
-    authors:
-      - Romy Lauche
-      - Holger Cramer
-      - Claudia Hohmann
-      - Kyung-Eun Choi
-      - Thomas Rampp
-      - Felix Joyonto Saha
-      - Frauke Musial
-      - Jost Langhorst
-      - Gustav Dobos
+    authors: [Romy Lauche, Holger Cramer, Claudia Hohmann, Kyung-Eun Choi, Thomas Rampp, Felix Joyonto Saha, Frauke Musial, Jost Langhorst, Gustav Dobos]
     title: "The Effect of Traditional Cupping on Pain and Mechanical Thresholds in Patients with Chronic Nonspecific Neck Pain: A Randomised Controlled Pilot Study"
     year: 2012
     publication: "Evidence-Based Complementary and Alternative Medicine"
-    publisher: "Wiley"
     doi: "10.1155/2012/429718"
     url: "https://doi.org/10.1155/2012/429718"
+  nielsen2012:
+    authors: [Arya Nielsen, Ben Kligler, Brian S. Koll]
+    title: "Safety protocols for Gua sha (press-stroking) and Baguan (cupping)"
+    year: 2012
+    publication: "Complementary Therapies in Medicine"
+    doi: "10.1016/j.ctim.2012.05.004"
+    url: "https://doi.org/10.1016/j.ctim.2012.05.004"
 ---
-Cupping (ba guan, literally 'pulling cups') is a therapeutic method in Traditional Chinese Medicine drawing stagnant Qi and Blood to the body's surface using suction created inside sealed cups. Like acupuncture and tui na, cupping works within the meridian and organ-function systems of TCM, applied according to pattern diagnosis. Four distinct cupping methods are used. Fire cupping: a flame heats inside the cup creating suction; heat warms the area and opens pores. Wet cupping: after fire cupping, skin is lightly scratched to bring blood to the surface, then cup is reapplied, drawing stagnant blood more forcefully. Sliding cupping: oil is applied to skin, then a fire-cupped cup is moved across the surface along meridian lines or muscle groups, combining cupping and fascial release. Flash cupping: rapid repeated application and removal of cups over the same area, creating stronger effect. Cupping appears in classical TCM texts including the Huang Di Nei Jing and the Zhenjiu Jiayi Jing (compiled 259 CE), standardized through Ming Dynasty texts and remaining central in contemporary practice. In TCM terms, cupping addresses stagnation—the condition where Qi or Blood no longer flows smoothly. When stagnation occurs, Blood accumulates; when Blood stagnates, pain is prominent and bruising appears. Cupping draws stagnant material toward the skin surface where the body can clear it. The practitioner assesses skin color and texture under the cup—deep purple or dark red indicates the degree of stagnation being drawn. The discoloration fades over days as the body reabsorbs and processes the mobilized Qi and Blood. Biomedical research examining cupping's effects (Cao et al. 2012; Kim et al. 2011; Lauche et al. 2012) has documented increased local blood flow, anti-inflammatory effects through increased prostaglandins, and in pain conditions efficacy approaching other manual therapies. The ecchymosis mechanism involves negative pressure drawing blood toward the skin surface and creating controlled vasodilation—not vessel rupture but tissue inflammation triggering healing.
+
+Cupping (ba guan, "pulling cups") is a therapeutic method in Chinese medicine that applies negative pressure to the body surface. Within traditional practice it is selected through pattern diagnosis and may be used to move constrained Qi and Blood, warm or open a region, or address pain and other patterns of obstruction.
+
+Methods include fire cupping, wet cupping, sliding cupping, and rapid repeated or flash techniques. These differ materially and should not be treated as one identical intervention.
+
+The circular red-to-purple marks produced by dry cupping are often read traditionally in relation to stagnation and treatment response. From a biomedical perspective, suction changes local perfusion and can produce petechiae or ecchymosis through superficial microvascular blood extravasation. These descriptions concern the same treated surface but are not equivalent diagnostic categories.
+
+Earlier versions of this entry described the marks as "not vessel rupture" and attributed broad anti-inflammatory effects to increased prostaglandins. That wording was too strong. The defensible biomedical description is local vascular and tissue response to negative pressure, with clinical pain evidence that remains heterogeneous and generally limited by study quality.
+
+Wet cupping deliberately breaches the skin and therefore has additional infection-control and blood-exposure requirements. Even dry cupping and [gua sha](./gua-sha.md) can create petechiae/ecchymosis; safety literature treats contaminated instruments and bloodborne-pathogen exposure as relevant concerns [@nielsen2012].
+
+## Related
+
+- [Gua Sha](./gua-sha.md)
+- [Sha](./sha.md)
+- [Qi](./qi.md)
+- [Xue (Blood)](./xue.md)
+- [Meridians](./meridians.md)
