@@ -216,6 +216,11 @@ a window with its own observation. Lives in `works/`.
   `{id, pattern, reason}`.
 - `pov-alternates:` — `true` when no two chapters in a row share a point
   of view.
+- `line:` — the slug of the line (a series with a promise to readers, such
+  as a romance line) the work belongs to, when the paracosm has several.
+- `number:` — its place in that line.
+- `status:` — `planned`, `drafting` or `published`. A planned work may
+  leave its manuscript and arc unset.
 
 A work's story bible is derived from the canon and this entry; it is never
 written by hand.
