@@ -6,9 +6,9 @@ treatment: the substance theory of Qi, Blood (Xue), Body Fluids (Jin Ye),
 and Essence (Jing); the Zang-Fu organ-function systems and the channels
 (meridians) that connect them; the Yin-Yang and Wu Xing (Five Phase)
 frameworks that organize clinical reasoning; pattern diagnosis and its
-supporting arts (pulse, tongue); and the therapeutic modalities —
-acupuncture, moxibustion, herbal medicine — through which the system
-acts.
+supporting arts (pulse, tongue); and therapeutic modalities including
+acupuncture, moxibustion, herbal medicine, tui na, cupping, gua sha, and
+movement or cultivation practices.
 
 Its material is organized by artifact role under `content/`: glossary
 terms for individual concepts (`content/text/glossary/terms/`), topic
@@ -31,3 +31,10 @@ as proof that either system derives from or reduces to the other.
 Authority over the tradition's own claims remains with its practitioners
 and textual lineage; this section's biomedical comparisons are read as
 external commentary, not as adjudication.
+
+For practices that produce directly measurable tissue effects, this
+section distinguishes kinds of claim rather than collapsing them:
+historical attestation, traditional medical interpretation, observed
+physiology, clinical evidence, mechanistic hypothesis, cultural or
+phenomenological account, and commercial claim. Gua sha and sha are a
+reference case for this method.
