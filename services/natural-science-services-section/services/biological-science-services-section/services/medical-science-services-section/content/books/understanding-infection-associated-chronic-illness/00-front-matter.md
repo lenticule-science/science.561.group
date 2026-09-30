@@ -1,25 +1,26 @@
 ---
-title: Front Matter
-description: Copyright (c) 2026 561 Group.
+title: About this book
+references:
+  dehlia2024:
+    type: article-journal
+    title: "The persistence of myalgic encephalomyelitis/chronic fatigue syndrome (ME/CFS) after SARS-CoV-2 infection: A systematic review and meta-analysis"
+    container-title: "Journal of Infection"
+    author:
+      - family: "Dehlia"
+        given: "Ankush"
+      - family: "Guthridge"
+        given: "Mark A."
+    issued:
+      date-parts:
+        - [2024, 12]
+    volume: 89
+    issue: 6
+    page: "106297"
+    DOI: 10.1016/j.jinf.2024.106297
+    URL: https://doi.org/10.1016/j.jinf.2024.106297
 ---
 
-# Understanding Infection-Associated Chronic Illness
-
-### A Public Guide to Long COVID, Post-Exertional Malaise, and the Science Behind the Diagnosis
-
-*Published by 561 Group*
-
----
-
-Copyright (c) 2026 561 Group. All rights reserved.
-
-This book is sold for the use of the individual purchaser. No part of it
-may be reproduced, redistributed, or resold without written permission,
-except for brief quotations used in a review.
-
-First edition.
-
----
+# About this book {.unnumbered}
 
 ## Who this book is for
 
@@ -43,8 +44,8 @@ competing case definitions (WHO, RECOVER, NASEM), the real uncertainty in
 its prevalence estimates, and why a number from one study is not always a
 claim about the same population as a number from another. Chapter 3 maps
 the leading mechanistic hypotheses -- viral persistence, immune
-dysregulation, latent-virus reactivation, microclotting, mitochondrial
-dysfunction, dysautonomia, gut dysbiosis -- honestly labeled by their
+dysregulation (including Epstein-Barr virus reactivation and the
+contested microclot hypothesis), and dysautonomia -- honestly labeled by their
 actual evidence state, not by which sounds most convincing. Chapter 4
 covers post-exertional malaise (PEM) and pacing, the symptom and the
 self-management practice that connects long COVID to myalgic
@@ -66,7 +67,7 @@ that the conversation you have with that clinician, or with a study you
 read on your own, starts from an accurate picture of what is and is not
 yet known.
 
-Every chapter cites its sources. A bracketed marker like [@dehlia2024]
+Every chapter cites its sources. A parenthetical author-year citation like [@dehlia2024]
 after a sentence points to a specific published study; the full citation
 -- authors, journal, year, and a link you can look up yourself -- is
 collected in the References section at the end of the book. You don't

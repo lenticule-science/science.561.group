@@ -1,0 +1,288 @@
+{
+  "type": "EbookEditionProof",
+  "version": 1,
+  "editionInputDigest": "ni:///sha-256;DrndM4sDovHlmwFMjionFoRpNaOxesWMfrg_IlQ5wn4",
+  "artifacts": {
+    "epub": "ni:///sha-256;pv_NyfRX6CjqB6IL9EThxEVrcTHIg0PBlPllRxsk7IE",
+    "screenPdf": "ni:///sha-256;9KxasF6sSfawBxEtZduU2WAFDkEr-yQDwTV-uQw-ZJ4"
+  },
+  "proofer": "independent proofreading agent (claude-opus-5-5 subagent)",
+  "writer": "claude-opus-5-5 writing session 7ebe0b88",
+  "provedAt": "2026-09-30T02:11:15Z",
+  "method": "Recomputed sha256 of EPUB and PDF (match stage record). Read full EPUB text and References; grepped for paths/tool names/raw markers/U+FFFD in EPUB and PDF text; inspected content.opf; viewed cover and PDF pages 1, 3, 55. Verified against sources: RECOVER-AUTONOMIC announcement (fetched) and ClinicalTrials.gov NCT06305806; Crossref and PubMed/publisher abstracts (via search) for Wulf Hanson, Björnson, Swank, Donadio, Sanal-Hayes, Sawano, Mateu, Chen, Yong, Yao, McPhee, Geraghty. Not independently verified (sources unreachable): Hany, Stein, Su, Klein, Hofmann, Hall, Wallukat, Thaweethai, Soriano, Ford numbers beyond the prior agent's check. Re-proof of the restaged build: recomputed digests (match), sentence-level diff of old vs new EPUB text, re-read all changed passages, re-grepped for FFFD/paths/raw markers (none), confirmed PDF Donadio title and TOC render. Final pass: recomputed digests (match); sentence diff of previous vs final EPUB shows only the f29/f30 edits (plus edition digest line); both passages confirmed in EPUB and PDF text; no U+FFFD, paths or raw markers.",
+  "findings": [
+    {
+      "id": "f1",
+      "file": "03-mechanisms.md:521 and :595",
+      "severity": "error",
+      "claim": "PAX LC trial described as 28 days of drug that 'successfully reduced viral markers and broke the virus's replication cycle'; bottom line repeats 'despite successfully lowering viral markers'. The trial gave 15 days of drug (primary endpoint at day 28) and its published primary result was PROMIS-29 physical health; no viral-marker result is reported in the Lancet ID paper.",
+      "source": "Sawano et al. 2025, Lancet Infect Dis 25(8):936-46 (doi 10.1016/s1473-3099(25)00073-8): 100 adults, nirmatrelvir-ritonavir twice daily for 15 days, no difference vs placebo-ritonavir in PHSS change at day 28 (p=0.54).",
+      "fix": "Verified in new build: Replace 'either an antiviral drug (nirmatrelvir-ritonavir) or placebo for 28 days' with 'either an antiviral drug (nirmatrelvir-ritonavir) or a placebo for 15 days, with outcomes measured at day 28'. Delete 'The antiviral successfully reduced viral markers and broke the virus's replication cycle. Yet patients taking the antiviral' and write 'Patients taking the antiviral'. In the bottom line replace 'One antiviral trial did not produce symptom improvement despite successfully lowering viral markers.' with 'One antiviral trial did not produce symptom improvement.' Also in the ch3 'evidence state' keep 'single trial with a single drug'.",
+      "resolution": "fixed"
+    },
+    {
+      "id": "f2",
+      "file": "03-mechanisms.md:571 (ch3) and 05-reading-research.md:~420 (ch5)",
+      "severity": "error",
+      "claim": "RECOVER-AUTONOMIC coordinated care is described in ch3 as '(pacing, compression garments, increased fluid intake)' and in ch4 as 'includes activity pacing guidance'. The RECOVER announcement says only 'regular check-ins with a care coordinator as well as specific recommendations for diet and lifestyle changes'; the registry (NCT06305806) lists high-salt diet, water intake, abdominal binder, exercise/rehabilitation, education and a care coordinator. Pacing is not named in either source. Ch3 also says 'QoL measures' were unchanged, which the announcement does not state.",
+      "source": "https://recovercovid.org/news/recover-autonomic-clinical-trial-results-shared-2026-acc-conference (28 Mar 2026); ClinicalTrials.gov NCT06305806.",
+      "fix": "Verified in new build: Ch3: replace '(pacing, compression garments, increased fluid intake)' with '(regular check-ins with a care coordinator plus diet and lifestyle recommendations)'; replace 'did not improve symptoms or quality-of-life measures' with 'did not significantly improve POTS symptoms'.",
+      "resolution": "fixed"
+    },
+    {
+      "id": "f3",
+      "file": "03-mechanisms.md:571-575",
+      "severity": "correction",
+      "claim": "Ch3 says coordinated-care patients improved more 'than those on medication alone', and calls it a 'secondary finding'. The announcement compares ivabradine+coordinated care with ivabradine+usual care (the trial is 2x2), and does not label it secondary. Ch5 words it correctly. Ch3 also calls ivabradine 'one antiarrhythmic drug' (it is a heart-rate-lowering drug, not an antiarrhythmic) and calls the null primary result 'promising rather than settled'; and 'first purpose-built randomized trial' is unsupported (announcement: one of 2 RECOVER trials in long COVID POTS).",
+      "source": "RECOVER announcement above.",
+      "fix": "Verified in new build: Replace 'reported more symptom improvement than those on medication alone' with 'among those taking ivabradine, reported more symptom improvement than those receiving usual care'; delete 'A secondary finding was that'; replace 'The first purpose-built randomized trial' with 'One of two RECOVER randomized trials'; replace 'one antiarrhythmic drug worked pharmacologically but not symptomatically' with 'the heart-rate-lowering drug ivabradine lowered heart rate but did not significantly improve symptoms'; replace 'they should be read as promising rather than settled' with 'they should be read as preliminary'.",
+      "resolution": "fixed"
+    },
+    {
+      "id": "f4",
+      "file": "04-pem-pacing.md:306",
+      "severity": "error",
+      "claim": "Ch4 presents RECOVER-AUTONOMIC as 'real trial evidence' for pacing ('includes activity pacing guidance', 'points in a hopeful direction'). The trial did not test pacing, its coordinated-care package is not documented to include pacing, the comparison was within the ivabradine group, and the result is a conference/press summary. Also ch4 says 'than those on medication alone'. Using it as pacing support overclaims; the closing summary ('Early trial evidence in related conditions points in that direction') repeats it.",
+      "source": "RECOVER announcement; NCT06305806 (no pacing intervention listed).",
+      "fix": "Verified in new build: Delete the whole 'Trial evidence:' paragraph, or replace with: 'Trial evidence: No randomized trial has yet tested pacing itself for post-exertional malaise. A long COVID POTS trial (RECOVER-AUTONOMIC) tested a coordinated-care package of check-ins with a care coordinator and diet and lifestyle recommendations; its results have so far been shared only in a conference announcement and are not evidence about pacing.' In 04-pem-pacing.md:312 delete 'Early trial evidence in related conditions points in that direction.' and change 'seems to help based on patient experience and early evidence' to 'seems to help based on patient experience'. Change the intro 'several pieces of evidence' accordingly.",
+      "resolution": "fixed"
+    },
+    {
+      "id": "f5",
+      "file": "04-pem-pacing.md:312",
+      "severity": "error",
+      "claim": "Safety/overreach: 'You have every reason to believe that pacing ... will help preserve your function' and 'Decades of patient experience ... suggest it works' / 'The mechanistic reasoning ... is sound' state benefit more strongly than the cited evidence allows (Sanal-Hayes: fatigue effect not significant, k=4; trivial effects on function and pain). Also nothing tells the reader to involve a clinician or when to seek urgent care.",
+      "source": "Sanal-Hayes et al. 2025 (doi 10.1080/21641846.2024.2433390); NICE NG206.",
+      "fix": "Verified in new build: Replace 'You have every reason to believe that pacing — staying within an energy envelope and avoiding activity that triggers crashes — will help preserve your function and quality of life.' with 'Many people with post-exertional malaise find that pacing — staying within an energy envelope and avoiding activity that triggers crashes — helps them avoid crashes, and it is what current UK guidance recommends, but controlled trials have not yet shown how much it helps.' Replace 'The physiological reasoning is sound.' (:302 and :312) with 'The physiological reasoning is plausible.' and 'The mechanistic reasoning ... is sound' (:292) with '... is plausible'. Append to the last section: 'Talk with a clinician who knows your case about how to fit pacing around your other conditions, and seek care promptly for new or alarming symptoms such as chest pain, fainting, or severe shortness of breath.'",
+      "resolution": "fixed"
+    },
+    {
+      "id": "f6",
+      "file": "05-reading-research.md:374-376",
+      "severity": "error",
+      "claim": "Ch5 says Mateu et al. 'directly contradicted the first study's claim that antigen was specific to long COVID' and that the first study 'was not' blinded. Swank et al. reported spike 'predominantly' in PASC, not exclusive specificity, and no source given shows Swank was unblinded. Mateu still found antigen more often in long COVID (31% vs 20% at 6-12 months) and 5.4% in uninfected controls (omitted). Ch5 step 5 also asserts the 31% vs 20% difference 'reaches statistical significance' without a source.",
+      "source": "Swank 2023 abstract ('predominantly in PASC patients up to 12 months'); Mateu et al. 2026 abstract: 31% LC, 20% recovered, 5.4% uninfected at 6-12 mo; 3%, 0%, 0% at 18-24 mo.",
+      "fix": "Verified in new build: Replace 'This directly contradicted the first study's claim that antigen was specific to long COVID.' with 'This did not support the idea that antigen is a marker specific to long COVID: it was found more often in long COVID but also in many recovered people, and in 5.4% of uninfected controls.' Replace 'blinding (the second study was blinded to clinical status, the first was not)' with 'blinding (the second study measured antigen blinded to clinical status)' and 'Three things' with 'Two things plus the added uninfected controls' or drop blinding from the list. In Step 5 replace 'a difference that reaches statistical significance' with 'a difference that may or may not be meaningful'. Add '(5.4% of uninfected controls also tested positive)' after 'never had COVID' sentence if desired.",
+      "resolution": "fixed"
+    },
+    {
+      "id": "f7",
+      "file": "02-long-covid.md:240",
+      "severity": "error",
+      "claim": "'looked at long COVID across ten cohort studies in ten countries' is wrong. Wulf Hanson pooled 54 studies and 2 medical-record databases (1.2 million people, 22 countries); 10 of the 54 were collaborating cohorts in 10 countries. The three clusters were the Global Burden of Disease symptom clusters, not chosen 'because those three had the strongest evidence' (:~285). Estimate is people with symptoms 3 months after symptomatic infection.",
+      "source": "Wulf Hanson et al. 2022, JAMA 328(16):1604 abstract.",
+      "fix": "Verified in new build: Replace 'across ten cohort studies in ten countries' with 'by pooling 54 studies and two large medical-record databases covering 1.2 million people in 22 countries'. Replace 'because those three had the strongest evidence across multiple studies, but this is not an exhaustive or universal list' with 'because those were the symptom clusters the analysis defined, but this is not an exhaustive or universal list'.",
+      "resolution": "fixed"
+    },
+    {
+      "id": "f8",
+      "file": "05-reading-research.md:412",
+      "severity": "correction",
+      "claim": "Ch5 says the GBD study 'estimated that 144.7 million people worldwide had long COVID' and calls the range a 'confidence interval'. The study estimated people with at least one of three persistent symptom clusters (3 months after symptomatic infection), and reports a 95% uncertainty interval; ch2 words it correctly.",
+      "source": "Wulf Hanson 2022 abstract.",
+      "fix": "Verified in new build: Replace 'estimated that 144.7 million people worldwide had long COVID in 2020-2021' with 'estimated that 144.7 million people worldwide experienced at least one persistent symptom cluster in 2020-2021'; replace 'The confidence interval?' with 'The 95% uncertainty interval?'.",
+      "resolution": "fixed"
+    },
+    {
+      "id": "f9",
+      "file": "03-mechanisms.md:569",
+      "severity": "correction",
+      "claim": "Small-fiber neuropathy paragraph overstates Donadio: 'consistently find' (one prospective case-control study of 66 patients); the study found autonomic skin innervation did NOT differ from controls (somatic fibers were reduced) and SFN was NOT correlated with autoimmune abnormalities, yet the paragraph frames SFN as autonomic and motivates IVIG by autoantibody damage. The 79% group was compared with 94%, and both were reduced vs healthy controls.",
+      "source": "Donadio et al. 2025, Eur J Neurol 32(1):e16538 abstract: 'autonomic innervation did not differ'; 'autoimmune abnormalities ... not correlated with SFN'.",
+      "fix": "Verified in new build: 'consistently find' changed to 'report'; 'autoimmune antibodies' changed to 'immune mechanisms'; sentence on spared autonomic fibers and no autoimmune correlation added (see f30).",
+      "resolution": "fixed"
+    },
+    {
+      "id": "f10",
+      "file": "03-mechanisms.md:563 and 02-long-covid.md:270",
+      "severity": "correction",
+      "claim": "Björnson (31% POTS, 27% orthostatic symptoms without POTS) is a single prospective study of 467 nonhospitalized, highly symptomatic patients (sick leave >=50%), examined at a median 12 months. Ch3 writes 'studies ... presenting to specialty clinics'; ch2 says autonomic symptoms 'appear in a majority ... in that same study', which the abstract does not report.",
+      "source": "Björnson et al. 2025, Circ Arrhythm Electrophysiol 18(10) abstract.",
+      "fix": "Verified in new build: Ch3: replace 'In studies of symptomatic long-COVID patients presenting to specialty clinics, about 31 percent' with 'In one prospective study of 467 highly symptomatic long-COVID patients, about 31 percent'. Ch2: delete the sentence 'The broader category of autonomic symptoms ... appears in a majority of people with long COVID who have been carefully evaluated in that same study.'",
+      "resolution": "fixed"
+    },
+    {
+      "id": "f11",
+      "file": "00-front-matter.md:~45-60",
+      "severity": "correction",
+      "claim": "Front matter says Chapter 3 maps seven hypotheses including 'mitochondrial dysfunction' and 'gut dysbiosis'. Chapter 3 organizes three theories (persistence, immune dysregulation incl. EBV and microclots, dysautonomia); mitochondrial and gut-dysbiosis hypotheses appear only in Chapter 1.",
+      "source": "Cross-check of chapter text.",
+      "fix": "Verified in new build: Replace 'viral persistence, immune dysregulation, latent-virus reactivation, microclotting, mitochondrial dysfunction, dysautonomia, gut dysbiosis' with 'viral persistence, immune dysregulation (including Epstein-Barr virus reactivation and the contested microclot hypothesis), and dysautonomia'.",
+      "resolution": "fixed"
+    },
+    {
+      "id": "f12",
+      "file": "00-front-matter.md:70",
+      "severity": "correction",
+      "claim": "'A bracketed marker like (Dehlia and Guthridge 2024)' - the markers are parenthetical author-year citations, not bracketed.",
+      "source": "Rendered text.",
+      "fix": "Verified in new build: Replace 'A bracketed marker like' with 'A parenthetical author-year citation like'.",
+      "resolution": "fixed"
+    },
+    {
+      "id": "f13",
+      "file": "01-what-is-iaci.md:469-475",
+      "severity": "correction",
+      "claim": "Ch1 says NASEM in 2024 'decided to group' conditions under IACI and that IACI 'includes six named conditions' per NASEM 2024a. That source is a workshop proceedings; it does not adopt an official six-condition list. The 'six' is the book's own selection.",
+      "source": "NASEM 2024a, 'Toward a Common Research Agenda in Infection-Associated Chronic Illnesses: Proceedings of a Workshop' (doi 10.17226/27462).",
+      "fix": "Verified in new build: Replace 'decided to group these conditions together under one umbrella term' with 'convened a workshop that used one umbrella term for these conditions'. Replace 'Infection-associated chronic illness includes six named conditions:' with 'This book discusses six infection-associated chronic conditions:'. Replace 'the ones that IACI groups together' with 'the ones this book discusses'.",
+      "resolution": "fixed"
+    },
+    {
+      "id": "f14",
+      "file": "01-what-is-iaci.md:524",
+      "severity": "correction",
+      "claim": "Bullet 'These are not simply deconditioning or psychological illness' is filed under 'Established findings' but makes uncited claims ('People with these conditions often did not have anxiety, depression ... before infection'; 'fatigue ... do not resolve through standard approaches to deconditioning') and describes graded exercise neutrally-favourably as a 'standard approach'.",
+      "source": "No source given; IOM 2015 supports only PEM criteria.",
+      "fix": "Verified in new build: Replace the sentence 'The fatigue and cognitive impairment do not resolve through standard approaches to deconditioning (graded exercise that gradually increases activity).' with 'The fatigue and post-exertional worsening are not explained by simple deconditioning.' and delete 'People with these conditions often did not have anxiety, depression, or other psychiatric illness before infection, and psychiatric symptoms do not fully explain the pattern.' or add a citation.",
+      "resolution": "fixed"
+    },
+    {
+      "id": "f15",
+      "file": "01-what-is-iaci.md:548 (and 05-reading-research.md:396-400)",
+      "severity": "correction",
+      "claim": "Ch1 presents Hall et al. as a case-control study of 'patients' vs controls in the same sentence as long COVID studies; Hall studied POTS patients (all causes), not long COVID. Ch3/ch5 say so correctly.",
+      "source": "Hall et al. 2022, Circulation 146(8):613-22.",
+      "fix": "Verified in new build: Replace 'found no meaningful difference between patients and controls for any of eleven receptors tested' with 'found no meaningful difference between patients with POTS (from all causes) and healthy controls for any of eleven receptors tested'.",
+      "resolution": "fixed"
+    },
+    {
+      "id": "f16",
+      "file": "04-pem-pacing.md:294",
+      "severity": "correction",
+      "claim": "Ch4 says 'A 2024 systematic review and meta-analysis' but cites Sanal-Hayes 2025 (online Nov 2024, print Jan 2025). The review covers ME/CFS pacing; the abstract reports fatigue SMD -1.09 (95% CI -2.38 to 0.21, k=4), trivial effects on function and pain.",
+      "source": "Sanal-Hayes 2025; Crossref: published-print 2025-01-02.",
+      "fix": "Verified in new build: Replace 'A 2024 systematic review and meta-analysis of pacing' with 'A 2025 systematic review and meta-analysis of pacing in ME/CFS'.",
+      "resolution": "fixed"
+    },
+    {
+      "id": "f17",
+      "file": "04-pem-pacing.md:~300 (Geraghty)",
+      "severity": "note",
+      "claim": "Geraghty survey figure (more than half reporting large negative responses to GET; 54-74% across surveys) comes from self-selected patient surveys; text says 'patient-reported-outcome survey' but should say self-selected.",
+      "source": "Geraghty, Hann, Kurtev 2019.",
+      "fix": "Verified in new build: Insert 'self-selected' before 'patient-reported-outcome survey'.",
+      "resolution": "fixed"
+    },
+    {
+      "id": "f18",
+      "file": "05-reading-research.md:358",
+      "severity": "correction",
+      "claim": "Ch5 says the 45% answers 'of people who were sick at four months, how many had unresolved symptoms' - wrong denominator; it is people who had COVID-19. Also 'the CDC put current long COVID under 20%' is unsupported/garbled; Yao et al. recalculated 11% (86,552/735,006) and 25% for follow-up >=111 days.",
+      "source": "O'Mahoney 2023; Yao 2023 (eClinicalMedicine 59:101949).",
+      "fix": "Verified in new build: denominator sentence replaced; unconfirmed CDC/5.3%-9.8% parenthetical deleted.",
+      "resolution": "fixed"
+    },
+    {
+      "id": "f19",
+      "file": "05-reading-research.md:408",
+      "severity": "correction",
+      "claim": "Confidence-interval explanation: 'if you repeated this survey many times, 95% of the time the true percentage would fall within this range' is the common misstatement; the 95% refers to the procedure's intervals (each new sample gives a new interval).",
+      "source": "Standard statistics.",
+      "fix": "Verified in new build: Replace with 'if you repeated this survey many times and built an interval each time, about 95% of those intervals would contain the true percentage.'",
+      "resolution": "fixed"
+    },
+    {
+      "id": "f20",
+      "file": "01-what-is-iaci.md:492,520; 02-long-covid.md:~250; 05:358",
+      "severity": "note",
+      "claim": "'6-7%' current prevalence: Ford et al. gave 7.5% (June 2022) and 6.0% (June 2023); ch5 quotes 6%. Consider '6-7.5%' or 'about 6%' for consistency.",
+      "source": "Ford et al. 2023 MMWR 72(32):866-70.",
+      "fix": "Verified in new build: Replace '6-7%' with 'roughly 6-7.5%' in ch1/ch2 body text (headings may stay).",
+      "resolution": "fixed"
+    },
+    {
+      "id": "f21",
+      "file": "03-mechanisms.md:539",
+      "severity": "note",
+      "claim": "T-cell exhaustion called 'the most robust single finding in the immune dysregulation literature' though replicated only by the same group; later text hedges. Consider 'a frequently reported finding'.",
+      "source": "Aid et al. 2026.",
+      "fix": "Verified in new build: Replace 'This is the most robust single finding in the immune dysregulation literature, though independent replication by different labs is still in progress.' with 'Independent replication by different labs is still in progress.'",
+      "resolution": "fixed"
+    },
+    {
+      "id": "f22",
+      "file": "03-mechanisms.md (Chen 2026 paragraph)",
+      "severity": "note",
+      "claim": "Mouse passage is properly hedged, but IgG from only two of three patient subgroups caused pain hypersensitivity (third reduced locomotion), so 'antibodies from long-COVID patients produced pronounced, lasting pain sensitivity' generalizes slightly.",
+      "source": "Chen et al. 2026, Cell Rep Med.",
+      "fix": "Verified in new build: Replace 'antibodies from long-COVID patients produced' with 'antibodies from two of three long-COVID patient subgroups produced'.",
+      "resolution": "fixed"
+    },
+    {
+      "id": "f23",
+      "file": "03-mechanisms.md:455",
+      "severity": "correction",
+      "claim": "Typo in reference author given name 'ALessandro' (renders in EPUB and PDF references for Donadio).",
+      "source": "Rendered References.",
+      "fix": "Verified in new build: Replace 'ALessandro' with 'Alessandro'. (Correct capitalization in the source CSL record for donadio.)",
+      "resolution": "fixed"
+    },
+    {
+      "id": "f24",
+      "file": "PDF references (Donadio entry)",
+      "severity": "correction",
+      "claim": "PDF renders U+FFFD ('COVID?19') in the Donadio reference title: the title contains U+2010 hyphen which the PDF fonts lack. EPUB shows it correctly.",
+      "source": "current-pdf.txt line ~1918; Crossref title contains 'COVID‐​19'.",
+      "fix": "Verified in new build: Replace U+2010 in the reference title with ASCII '-' (title becomes 'Small Fiber Neuropathy Associated with COVID-19 Infection and Vaccination: A Prospective Case-Control Study').",
+      "resolution": "fixed"
+    },
+    {
+      "id": "f25",
+      "file": "EPUB content.opf",
+      "severity": "correction",
+      "claim": "content.opf lacks the subtitle (no dc:title with title-type=subtitle) and dc:description is the first paragraph of Chapter 5 rather than the ebook.json description, so retailers/readers would show a wrong blurb. Title, creator (Culvert Health, aut) and publisher (Causeway Services) are correct.",
+      "source": "x/EPUB/content.opf lines 5-10 vs ebook.json 'description' and 'subtitle'.",
+      "fix": "Set dc:description to ebook.json description ('A public guide to Long COVID, post-exertional malaise, and infection-associated chronic illness: what is established, what is a well-supported hypothesis, and what remains contested. This is educational material, not medical advice.') and add subtitle meta: <dc:title id=\"epub-subtitle\">A Public Guide to Long COVID, Post-Exertional Malaise, and the Science Behind the Diagnosis</dc:title> with <meta refines=\"#epub-subtitle\" property=\"title-type\">subtitle</meta>.",
+      "resolution": "declined",
+      "reason": "House-wide EPUB pipeline issue: produce-ebook passes no description, so pandoc takes the last chapter's front-matter description, and pandoc 3.1.3 writes the subtitle only on the title page. Fixing it changes the bytes of every already-validated edition, so it is logged as a pipeline debt. Retailers (KDP included) take title, subtitle and description from the listing record, not from the OPF."
+    },
+    {
+      "id": "f26",
+      "file": "PDF TOC / chapter headings",
+      "severity": "note",
+      "claim": "TOC shows doubled numbering ('1  Chapter 1: What ...', '2  Chapter 2: ...'); consider removing the automatic number or the 'Chapter N:' prefix. Cover and sampled pages (1, 3, 30, 55) show no clipping or overlap.",
+      "source": "pdftoppm -r 60 page 3.",
+      "fix": "Drop either the LaTeX section number or the 'Chapter N:' text in headings.",
+      "resolution": "declined",
+      "reason": "House convention across Causeway editions (the Handbook uses the same 'Chapter N:' headings); a pipeline-wide change, logged as a debt."
+    },
+    {
+      "id": "f27",
+      "file": "ebook.json / References",
+      "severity": "note",
+      "claim": "References cite 'Accessed September 30, 2026' for RECOVER while build date is 2026-09-29 (title page/copyright dated 2026-09-30); copyright page says the PDF font sentence in the EPUB too. Harmless but inconsistent. No '/home', 'MetroPlat', 'FeltOS', 'codex', raw '[@', '???' or U+FFFD (except Donadio in PDF) found in either text extraction.",
+      "source": "grep of current-epub.txt and current-pdf.txt.",
+      "fix": "Change access date to 'September 29, 2026' or align build date; optionally drop 'The PDF is set in Roboto Slab and Noto Sans.' from the EPUB copyright page.",
+      "resolution": "declined",
+      "reason": "The access date matches the edition date (2026-09-30), which the title page and copyright page carry. The PDF typeface sentence on the EPUB copyright page is house-wide."
+    },
+    {
+      "id": "f28",
+      "file": "04-pem-pacing.md:266 vs :~250",
+      "severity": "note",
+      "claim": "Delay stated as '12 to 72 hours' in one place and 'Twelve to 48 hours' in another; ch1 says 'hours to days'. IOM wording ('hours, days, or even weeks') fits ch1.",
+      "source": "IOM 2015.",
+      "fix": "Verified in new build: Change 'Twelve to 48 hours later' to 'Twelve to 72 hours later, or sometimes longer'.",
+      "resolution": "fixed"
+    },
+    {
+      "id": "f29",
+      "file": "ch4 pacing section ('Trial evidence:' paragraph, EPUB line 286)",
+      "severity": "correction",
+      "claim": "New wording 'No randomized trial has yet tested pacing itself for post-exertional malaise' is probably false: the ME/CFS pacing meta-analysis the book cites (Sanal-Hayes 2025) pooled randomized and other studies of pacing (e.g. adaptive pacing arms), though none was specific to PEM and all were small. It also sits awkwardly beside the chapter's own meta-analysis paragraph.",
+      "source": "Sanal-Hayes et al. 2025 (k=4 for fatigue); ch4 line 294 paragraph.",
+      "fix": "Verified in new build: Replace 'No randomized trial has yet tested pacing itself for post-exertional malaise.' with 'No large, well-controlled randomized trial has yet tested pacing specifically for post-exertional malaise.'",
+      "resolution": "fixed"
+    },
+    {
+      "id": "f30",
+      "file": "ch3 Donadio paragraph (EPUB line 237)",
+      "severity": "correction",
+      "claim": "Part of f9 not applied: paragraph still omits that Donadio found skin autonomic fibers spared and SFN uncorrelated with autoimmune results, and still ends by tying SFN to orthostatic symptoms. Also 'much lower rates in uninfected controls' is not reported in the abstract (it reports reduced somatic fibers vs healthy controls, not an SFN rate).",
+      "source": "Donadio et al. 2025 abstract.",
+      "fix": "Verified in new build: After '(Donadio et al. 2025).' insert ' That study also found that the skin's autonomic nerve fibers were spared and that the neuropathy did not track with autoimmune test results, so its link to dysautonomia is uncertain.' Replace 'compared to much lower rates in uninfected controls' with 'and somatic small nerve fibers were reduced compared with healthy controls'.",
+      "resolution": "fixed"
+    }
+  ]
+}

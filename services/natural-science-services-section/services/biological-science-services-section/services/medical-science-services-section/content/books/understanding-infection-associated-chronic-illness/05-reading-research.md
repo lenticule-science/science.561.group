@@ -18,6 +18,325 @@ cites:
   - Was the rate of Long Covid as high as 45%–a scary report with flaw
   - Response to "Was the rate of Long Covid as high as 45%–a scary report with flaw"
   - "RECOVER-AUTONOMIC: A Study of Medications and Coordinated Non-Medication Care for Long COVID-Related Postural Tachycardia Syndrome, Ivabradine Appendix (NCT06305806)"
+  - "RECOVER-AUTONOMIC clinical trial results shared at 2026 ACC conference"
+references:
+  soriano2022:
+    type: article-journal
+    title: "A clinical case definition of post-COVID-19 condition by a Delphi consensus"
+    container-title: "The Lancet Infectious Diseases"
+    author:
+      - family: "Soriano"
+        given: "Joan B"
+      - family: "Murthy"
+        given: "Srinivas"
+      - family: "Marshall"
+        given: "John C"
+      - family: "Relan"
+        given: "Pryanka"
+      - family: "Diaz"
+        given: "Janet V"
+    issued:
+      date-parts:
+        - [2022, 4]
+    volume: 22
+    issue: 4
+    page: "e102-e107"
+    DOI: 10.1016/s1473-3099(21)00703-9
+    URL: https://doi.org/10.1016/s1473-3099(21)00703-9
+  thaweethai2023:
+    type: article-journal
+    title: "Development of a Definition of Postacute Sequelae of SARS-CoV-2 Infection"
+    container-title: "JAMA"
+    author:
+      - family: "Thaweethai"
+        given: "Tanayott"
+      - family: "Jolley"
+        given: "Sarah E."
+      - family: "Karlson"
+        given: "Elizabeth W."
+      - literal: others
+    issued:
+      date-parts:
+        - [2023, 6, 13]
+    volume: 329
+    issue: 22
+    page: "1934"
+    DOI: 10.1001/jama.2023.8823
+    URL: https://doi.org/10.1001/jama.2023.8823
+  cdc2023pulse:
+    type: article-journal
+    title: "Long COVID and Significant Activity Limitation Among Adults, by Age — United States, June 1–13, 2022, to June 7–19, 2023"
+    container-title: "MMWR. Morbidity and Mortality Weekly Report"
+    author:
+      - family: "Ford"
+        given: "Nicole D."
+      - family: "Slaughter"
+        given: "Douglas"
+      - family: "Edwards"
+        given: "Deja"
+      - literal: others
+    issued:
+      date-parts:
+        - [2023, 8, 11]
+    volume: 72
+    issue: 32
+    page: "866-870"
+    DOI: 10.15585/mmwr.mm7232a3
+    URL: https://doi.org/10.15585/mmwr.mm7232a3
+  omahoney2023:
+    type: article-journal
+    title: "The prevalence and long-term health effects of Long Covid among hospitalised and non-hospitalised populations: a systematic review and meta-analysis"
+    container-title: "eClinicalMedicine"
+    author:
+      - family: "O'Mahoney"
+        given: "Lauren L."
+      - family: "Routen"
+        given: "Ash"
+      - family: "Gillies"
+        given: "Clare"
+      - literal: others
+    issued:
+      date-parts:
+        - [2023, 1]
+    volume: 55
+    page: "101762"
+    DOI: 10.1016/j.eclinm.2022.101762
+    URL: https://doi.org/10.1016/j.eclinm.2022.101762
+  yao2023:
+    type: article-journal
+    title: "Was the rate of Long Covid as high as 45%–a scary report with flaw"
+    container-title: "eClinicalMedicine"
+    author:
+      - family: "Yao"
+        given: "Lan"
+      - family: "Wang"
+        given: "Gang"
+      - family: "Aleya"
+        given: "Lotfi"
+      - literal: others
+    issued:
+      date-parts:
+        - [2023, 5]
+    volume: 59
+    page: "101949"
+    DOI: 10.1016/j.eclinm.2023.101949
+    URL: https://doi.org/10.1016/j.eclinm.2023.101949
+  omahoneyreply2023:
+    type: article-journal
+    title: "Response to \"Was the rate of Long Covid as high as 45%–a scary report with flaw\""
+    container-title: "eClinicalMedicine"
+    author:
+      - family: "O'Mahoney"
+        given: "Lauren L."
+      - family: "Routen"
+        given: "Ash"
+      - family: "Gillies"
+        given: "Clare"
+      - family: "Khunti"
+        given: "Kamlesh"
+    issued:
+      date-parts:
+        - [2023, 5]
+    volume: 59
+    page: "101950"
+    DOI: 10.1016/j.eclinm.2023.101950
+    URL: https://doi.org/10.1016/j.eclinm.2023.101950
+  swank2023:
+    type: article-journal
+    title: "Persistent Circulating Severe Acute Respiratory Syndrome Coronavirus 2 Spike Is Associated With Post-acute Coronavirus Disease 2019 Sequelae"
+    container-title: "Clinical Infectious Diseases"
+    author:
+      - family: "Swank"
+        given: "Zoe"
+      - family: "Senussi"
+        given: "Yasmeen"
+      - family: "Manickas-Hill"
+        given: "Zachary"
+      - literal: others
+    issued:
+      date-parts:
+        - [2023, 2, 8]
+    volume: 76
+    issue: 3
+    page: "e487-e490"
+    DOI: 10.1093/cid/ciac722
+    URL: https://doi.org/10.1093/cid/ciac722
+  mateu2026:
+    type: article-journal
+    title: "Blinded two-year longitudinal evaluation of SARS-CoV-2 antigenemia in long COVID"
+    container-title: "Clinical Microbiology and Infection"
+    author:
+      - family: "Mateu"
+        given: "Lourdes"
+      - family: "Hansen"
+        given: "Louise L."
+      - family: "Carmezim"
+        given: "Joao Pedro"
+      - literal: others
+    issued:
+      date-parts:
+        - [2026, 9]
+    volume: 32
+    issue: 9
+    page: "1487-1494"
+    DOI: 10.1016/j.cmi.2026.06.014
+    URL: https://doi.org/10.1016/j.cmi.2026.06.014
+  wallukat2021:
+    type: article-journal
+    title: "Functional autoantibodies against G-protein coupled receptors in patients with persistent Long-COVID-19 symptoms"
+    container-title: "Journal of Translational Autoimmunity"
+    author:
+      - family: "Wallukat"
+        given: "Gerd"
+      - family: "Hohberger"
+        given: "Bettina"
+      - family: "Wenzel"
+        given: "Katrin"
+      - literal: others
+    issued:
+      date-parts:
+        - [2021]
+    volume: 4
+    page: "100100"
+    DOI: 10.1016/j.jtauto.2021.100100
+    URL: https://doi.org/10.1016/j.jtauto.2021.100100
+  hofmann2025:
+    type: article-journal
+    title: "Functional Autoantibodies Targeting G-Protein-Coupled Receptors and Their Clinical Phenotype in Patients with Long-COVID"
+    container-title: "International Journal of Molecular Sciences"
+    author:
+      - family: "Hofmann"
+        given: "Sophia"
+      - family: "Lucio"
+        given: "Marianna"
+      - family: "Wallukat"
+        given: "Gerd"
+      - literal: others
+    issued:
+      date-parts:
+        - [2025, 7, 14]
+    volume: 26
+    issue: 14
+    page: "6746"
+    DOI: 10.3390/ijms26146746
+    URL: https://doi.org/10.3390/ijms26146746
+  hall2022:
+    type: article-journal
+    title: "Detection of G Protein–Coupled Receptor Autoantibodies in Postural Orthostatic Tachycardia Syndrome Using Standard Methodology"
+    container-title: "Circulation"
+    author:
+      - family: "Hall"
+        given: "Juliette"
+      - family: "Bourne"
+        given: "Kate M."
+      - family: "Vernino"
+        given: "Steven"
+      - literal: others
+    issued:
+      date-parts:
+        - [2022, 8, 23]
+    volume: 146
+    issue: 8
+    page: "613-622"
+    DOI: 10.1161/circulationaha.122.059971
+    URL: https://doi.org/10.1161/circulationaha.122.059971
+  dehlia2024:
+    type: article-journal
+    title: "The persistence of myalgic encephalomyelitis/chronic fatigue syndrome (ME/CFS) after SARS-CoV-2 infection: A systematic review and meta-analysis"
+    container-title: "Journal of Infection"
+    author:
+      - family: "Dehlia"
+        given: "Ankush"
+      - family: "Guthridge"
+        given: "Mark A."
+    issued:
+      date-parts:
+        - [2024, 12]
+    volume: 89
+    issue: 6
+    page: "106297"
+    DOI: 10.1016/j.jinf.2024.106297
+    URL: https://doi.org/10.1016/j.jinf.2024.106297
+  wulfhanson2022:
+    type: article-journal
+    title: "Estimated Global Proportions of Individuals With Persistent Fatigue, Cognitive, and Respiratory Symptom Clusters Following Symptomatic COVID-19 in 2020 and 2021"
+    container-title: "JAMA"
+    author:
+      - family: "Wulf Hanson"
+        given: "Sarah"
+      - family: "Abbafati"
+        given: "Cristiana"
+      - family: "Aerts"
+        given: "Joachim G"
+      - literal: others
+    issued:
+      date-parts:
+        - [2022, 10, 25]
+    volume: 328
+    issue: 16
+    page: "1604"
+    DOI: 10.1001/jama.2022.18931
+    URL: https://doi.org/10.1001/jama.2022.18931
+  recoverautonomicivabradine2026:
+    type: webpage
+    title: "RECOVER-AUTONOMIC (Ivabradine): Randomized Trial of the Effect of Ivabradine Versus Placebo on Long COVID Symptoms"
+    number: NCT06305806
+    author:
+      - literal: Duke University
+    container-title: ClinicalTrials.gov
+    URL: https://clinicaltrials.gov/study/NCT06305806
+    accessed:
+      date-parts:
+        - [2026, 9, 29]
+  recover2026accnews:
+    type: webpage
+    title: "RECOVER-AUTONOMIC clinical trial results shared at 2026 ACC conference"
+    author:
+      - literal: RECOVER Initiative
+    container-title: RECOVER
+    URL: https://recovercovid.org/news/recover-autonomic-clinical-trial-results-shared-2026-acc-conference
+    accessed:
+      date-parts:
+        - [2026, 9, 30]
+  kellpretorius2022:
+    type: article-journal
+    title: "A central role for amyloid fibrin microclots in long COVID/PASC: origins and therapeutic implications"
+    container-title: "Biochemical Journal"
+    author:
+      - family: "Kell"
+        given: "Douglas B."
+      - family: "Laubscher"
+        given: "Gert Jacobus"
+      - family: "Pretorius"
+        given: "Etheresia"
+    issued:
+      date-parts:
+        - [2022, 2, 25]
+    volume: 479
+    issue: 4
+    page: "537-559"
+    DOI: 10.1042/bcj20220016
+    URL: https://doi.org/10.1042/bcj20220016
+  hunt2024:
+    type: article-journal
+    title: "Challenging the current hypothesis that thrombosis is responsible for the post-COVID-19 condition"
+    container-title: "Research and Practice in Thrombosis and Haemostasis"
+    author:
+      - family: "Hunt"
+        given: "Beverley J."
+      - family: "Kuehn"
+        given: "Rebecca"
+      - family: "Fox"
+        given: "Tilly"
+      - literal: others
+    issued:
+      date-parts:
+        - [2024, 5]
+    volume: 8
+    issue: 4
+    page: "102442"
+    DOI: 10.1016/j.rpth.2024.102442
+    URL: https://doi.org/10.1016/j.rpth.2024.102442
 ---
 
 # Chapter 5: How to Read Research About Your Own Illness
@@ -36,7 +355,7 @@ Here is what you might actually find:
 
 **The straightforward case:** A study explicitly states "we used the 2024 NASEM definition of long COVID: a chronic condition present at least three months post-infection, affecting one or more organ systems, with these specific inclusion criteria." That tells you exactly who the study looked at. If that matches your own experience, the findings may be relevant to you. If the study focused on patients with diagnosed myalgic encephalomyelitis, and you do not have that diagnosis, the finding applies to a subset, not necessarily to you.
 
-**The comparison problem:** You read two studies that both claim to study "long COVID prevalence." One reports 6% of all US adults have current long COVID (this is the CDC Household Pulse Survey, which is self-report with no formal case definition) [@cdc2023pulse]. Another reports 45% of COVID survivors were symptomatic at four months (the O'Mahoney meta-analysis, which pooled studies with heterogeneous definitions) [@omahoney2023]. These two numbers are not contradictory — they are answering *different questions* using *different methods*. The first is "what do Americans say when asked directly?" The second is "of people who were sick at four months, how many had unresolved symptoms?" The same person could fall into one category and not the other, or neither. The O'Mahoney number is itself contested: other researchers, writing a critique letter in the same journal, recalculated the pooled prevalence directly from O'Mahoney's own supplementary data and got 11% (86,552 out of 735,006 people), not 45% — attributing most of the gap to how the studies were pooled and weighted [@yao2023]. They also pointed out that some of the 194 pooled studies followed patients for less than about four months, and cited other estimates that landed much lower (the CDC put current long COVID under 20%; one other study put it at 5.3%-9.8%), with prevalence ranging from 3% to 91% across the individual studies that went into the pool. O'Mahoney and colleagues published a reply defending their original methods [@omahoneyreply2023]. Neither side has retracted anything; this is an open methodological dispute about how to pool studies that used very different definitions and follow-up windows, not a case of one side simply being wrong.
+**The comparison problem:** You read two studies that both claim to study "long COVID prevalence." One reports 6% of all US adults have current long COVID (this is the CDC Household Pulse Survey, which is self-report with no formal case definition) [@cdc2023pulse]. Another reports 45% of COVID survivors were symptomatic at four months (the O'Mahoney meta-analysis, which pooled studies with heterogeneous definitions) [@omahoney2023]. These two numbers are not contradictory — they are answering *different questions* using *different methods*. The first is "what do Americans say when asked directly?" The second is "of people who had COVID-19, how many had at least one unresolved symptom at about four months?" The same person could fall into one category and not the other, or neither. The O'Mahoney number is itself contested: other researchers, writing a critique letter in the same journal, recalculated the pooled prevalence directly from O'Mahoney's own supplementary data and got 11% (86,552 out of 735,006 people), not 45% — attributing most of the gap to how the studies were pooled and weighted [@yao2023]. They also pointed out that some of the 194 pooled studies followed patients for less than about four months, and cited other estimates that landed much lower, with prevalence ranging from 3% to 91% across the individual studies that went into the pool. O'Mahoney and colleagues published a reply defending their original methods [@omahoneyreply2023]. Neither side has retracted anything; this is an open methodological dispute about how to pool studies that used very different definitions and follow-up windows, not a case of one side simply being wrong.
 
 When you read prevalence numbers, ask yourself: *is this the same population as the last study I read?* If not, the numbers cannot be compared as though one is more "correct." They are measurements of different things.
 
@@ -44,7 +363,7 @@ When you read prevalence numbers, ask yourself: *is this the same population as 
 
 The next thing to look for when reading a study is *how many people* the researchers studied and *whether they had a comparison group*. Bigger studies are not always better, but they are often more trustworthy. A study of nine people can generate a real, important observation — but that observation is preliminary until somebody else repeats it with a larger group or more rigorous methods.
 
-Here is an example with real consequences. In 2023, a team published a small study (n=63 people with long COVID) showing that circulating spike protein antigen was detected in 60% of patients with long COVID and 0% of recovered COVID patients [@swank2023]. This was the first report of this finding and it got attention — it seemed like researchers had found a biological marker specific to long COVID.
+Here is an example with real consequences. In 2023, a team published a small study (n=63 people with long COVID) reporting that circulating spike protein antigen was detected mostly in patients with long COVID, up to a year after infection, and rarely in patients who had recovered [@swank2023]. This was the first report of this finding and it got attention — it seemed like researchers had found a biological marker specific to long COVID.
 
 But here is what happened next: larger studies with better methods tried to repeat that finding.
 
@@ -52,9 +371,9 @@ Later, a more rigorous, blinded study examined 425 people: 167 with long COVID, 
 
 What did they find? Yes, antigen was detected in people with long COVID (31% at six to twelve months). But antigen was *also* detected in 20% of people who had fully recovered from COVID. By eighteen to twenty-four months, antigen had become rare in all groups. Most importantly: antigen was not associated with the *number* or *type* of symptoms. People with the same antigen levels had wildly different symptom burdens.
 
-This directly contradicted the first study's claim that antigen was specific to long COVID.
+This did not support the idea that antigen is a marker specific to long COVID: it was found more often in long COVID but also in many recovered people, and in 5.4% of uninfected controls.
 
-What changed between the two studies? Three things: **sample size** (63 vs 425), **blinding** (the second study was blinded to clinical status, the first was not), and **controls** (the second study included uninfected people to test the assay itself). These three things are what make the larger study more trustworthy.
+What changed between the two studies? Three things: **sample size** (63 vs 425), **blinding** (the second study measured antigen blinded to clinical status), and **controls** (the second study included uninfected people to test the assay itself). These are what make the larger study more trustworthy.
 
 When you read a study, look for:
 
@@ -86,11 +405,11 @@ When you read about a new mechanism or marker, ask: *Has anybody else confirmed 
 
 When you read a study that says something like "6% of US adults currently have long COVID" [@cdc2023pulse], that number is often paired with something called a confidence interval: a range around the headline figure. This range is not a guess about error. It is a precise statement about what the study's uncertainty actually is.
 
-What does "95% confidence interval" mean? It means: if you repeated this survey or study many times, 95% of the time the true percentage would fall within this range. It does not mean "we are 95% sure the true answer is in this specific range." It means "this method, applied this many times, produces a range that contains the true answer 95% of the time." The distinction sounds technical, but it is important: it is about the method's reliability, not your personal certainty.
+What does "95% confidence interval" mean? It means: if you repeated this survey many times and built an interval each time, about 95% of those intervals would contain the true percentage. It does not mean "we are 95% sure the true answer is in this specific range." It means "this method, applied this many times, produces a range that contains the true answer 95% of the time." The distinction sounds technical, but it is important: it is about the method's reliability, not your personal certainty.
 
 The width of the confidence interval tells you something important: how much uncertainty is baked into the estimate. This is a real, published estimate: a meta-analysis pooling 13 studies found that 51% of long COVID patients meet ME/CFS criteria (95% CI: 42%-60%) [@dehlia2024]. That wide interval (an 18-percentage-point spread) tells you the estimate has substantial uncertainty. This is not a weakness in the study — it is an honest statement that the true percentage could reasonably be anywhere in that range. A narrow interval, like 51% (95% CI: 49%-53%), tells you the estimate is more precise.
 
-Here is a striking example from the research: the Global Burden of Disease study estimated that 144.7 million people worldwide had long COVID in 2020-2021 [@wulfhanson2022]. The confidence interval? 54.8 million to 312.9 million. That is a six-fold spread — the low estimate is a bit over a third of the headline number, and the high estimate is more than double it. Does that mean the study is worthless? No. It means the researchers were honest about how much uncertainty there is when you try to model a condition globally, across different countries, with different definitions and different data quality. The wide interval is important information: it tells you this number is a rough estimate, not a precise count.
+Here is a striking example from the research: the Global Burden of Disease study estimated that 144.7 million people worldwide experienced at least one persistent symptom cluster in 2020-2021 [@wulfhanson2022]. The 95% uncertainty interval? 54.8 million to 312.9 million. That is a six-fold spread — the low estimate is a bit over a third of the headline number, and the high estimate is more than double it. Does that mean the study is worthless? No. It means the researchers were honest about how much uncertainty there is when you try to model a condition globally, across different countries, with different definitions and different data quality. The wide interval is important information: it tells you this number is a rough estimate, not a precise count.
 
 When you read a number with a confidence interval, look at the width of the range. A narrow range is more precise; a wide range is more uncertain. Either can be valuable information, as long as you know which one you are looking at.
 
@@ -98,13 +417,13 @@ When you read a number with a confidence interval, look at the width of the rang
 
 The hardest skill in reading research is knowing when *one study's result* is a genuine discovery and when it is a preliminary observation that might not hold up. You cannot look at a single study and know this with certainty. But you can look for signs of robustness.
 
-A classic example is the ivabradine trial we discussed in Chapter 4. Researchers tested a drug called ivabradine against placebo in 181 people with long COVID dysautonomia [@recoverautonomicivabradine2026]. It was actually a 2-by-2 trial: it also crossed each drug arm with either coordinated non-medication care (structured guidance on hydration, compression, exercise pacing, and the like) or usual care, so every patient landed in one of four combinations. On the drug alone, it worked exactly as expected: ivabradine slowed the heart rate. But by itself, that did not translate into patients feeling better — their orthostatic-intolerance symptom scores did not improve on ivabradine alone versus placebo alone. The combination arm told a different story: patients who got ivabradine *together with* the coordinated non-medication care showed a significantly greater improvement in symptoms than placebo (the interaction between drug and care approach was statistically significant, p=0.004). Heart rate going down did not, by itself, fix the symptom — but heart rate control paired with structured non-drug care did better than either alone.
+A useful example is the ivabradine trial we discussed in Chapter 3. Researchers tested a drug called ivabradine, which slows the heart rate, against placebo in 181 people with long-COVID postural tachycardia [@recoverautonomicivabradine2026]. It was a 2-by-2 trial: each patient was also randomized to either coordinated non-medication care (regular check-ins with a care coordinator plus lifestyle and equipment support) or usual care, so every patient landed in one of four combinations. The drug did what it is known to do: it lowered heart rate. But that did not translate into patients feeling better — their orthostatic-intolerance symptom scores, the trial's primary outcome, did not improve significantly on ivabradine compared with placebo. Among patients on ivabradine, though, those who also got coordinated care reported more improvement than those who got usual care [@recover2026accnews]. Heart rate going down did not, by itself, fix the symptom.
 
-This is not a study failure. It is a study that asks an important question — does fixing the heart rate fix the problem? — and gets a more interesting answer than a flat yes or no: not by itself, but combined with coordinated care, patients did better. That is a good illustration of this chapter's own point: a single variable in isolation (the drug alone) can look like a negative result, while the same variable combined with another intervention shows a real effect. (As of this writing, these results have only been presented at a cardiology conference and have not yet appeared in a peer-reviewed journal — worth knowing, because conference results sometimes change during the peer-review process.)
+This is not a study failure. It is a study that asks an important question — does fixing the heart rate fix the problem? — and gets a clear answer on its main outcome: not by itself. It also shows why you should check what a trial measured: a drug can move the number it acts on (heart rate) without moving the thing patients care about (how they feel when they stand up). (As of this writing, these results have been presented at a cardiology conference and summarized by the research program, but have not yet appeared in a peer-reviewed journal — worth knowing, because conference results sometimes change during the peer-review process.)
 
-But here is the limitation: it was *one trial*, with *one drug*, on *one primary outcome*, and the combined-care result came out of a single platform trial's factorial design, not a dedicated replication. Other drugs might work differently. A different outcome measure might show something else. Different patients might respond better or worse. The finding is important but preliminary.
+But here is the limitation: it was *one trial*, with *one drug*, on *one primary outcome*, and the coordinated-care observation came out of a single trial's secondary comparisons, not a dedicated replication. Other drugs might work differently. A different outcome measure might show something else. Different patients might respond better or worse. The finding is important but preliminary.
 
-Now imagine a year passes, and two other independent research teams run similar trials pairing a heart-rate drug with coordinated non-medication care in similar patients. Both get the same pattern: the drug alone does not move symptoms, but drug-plus-coordinated-care does. Now you have replication — three independent teams, three trials, same pattern. At that point, the finding has graduated from preliminary to fairly robust.
+Now imagine a year passes, and two other independent research teams run similar trials of heart-rate drugs, with and without coordinated non-medication care, in similar patients. Both get the same pattern: the drug alone does not move symptoms, but adding coordinated care helps. Now you have replication — three independent teams, three trials, same pattern. At that point, the finding has graduated from preliminary to fairly robust.
 
 When you read a study describing a treatment or mechanism, ask: *Is this from one team or have others confirmed it?* If it is one team with one study, that finding is worth knowing about, but it is preliminary. If multiple independent teams have confirmed it, even with different methods or patient populations, you can have more confidence it reflects something real.
 
@@ -138,7 +457,7 @@ Step 3: Look at the study design. How many people? Do they have an uninfected co
 
 Step 4: Check whether this is a single study or whether other teams have confirmed it. If this is the first report, it is preliminary. If three teams have independently confirmed it, that is much stronger.
 
-Step 5: Look at the confidence intervals and effect sizes. A headline that says "virus causes symptoms" is vague. The actual finding might be "virus was detected in 31% of long COVID patients and 20% of recovered patients, a difference that reaches statistical significance." That is a weaker claim than the headline suggests.
+Step 5: Look at the confidence intervals and effect sizes. A headline that says "virus causes symptoms" is vague. The actual finding might be "virus was detected in 31% of long COVID patients and 20% of recovered patients, a difference that may or may not be meaningful." That is a weaker claim than the headline suggests.
 
 Step 6: Look for alternative explanations. Did the researchers discuss other reasons the finding might show up? Did they test those alternatives?
 

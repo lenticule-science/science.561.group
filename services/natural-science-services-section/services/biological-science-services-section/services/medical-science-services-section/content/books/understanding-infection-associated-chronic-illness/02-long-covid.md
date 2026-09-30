@@ -12,6 +12,181 @@ cites:
   - "The prevalence and long-term health effects of Long Covid among hospitalised and non-hospitalised populations: a systematic review and meta-analysis"
   - "Long COVID: major findings, mechanisms and recommendations"
   - Prevalence and Clinical Impact of Postural Orthostatic Tachycardia Syndrome in Highly Symptomatic Long COVID
+references:
+  soriano2022:
+    type: article-journal
+    title: "A clinical case definition of post-COVID-19 condition by a Delphi consensus"
+    container-title: "The Lancet Infectious Diseases"
+    author:
+      - family: "Soriano"
+        given: "Joan B"
+      - family: "Murthy"
+        given: "Srinivas"
+      - family: "Marshall"
+        given: "John C"
+      - family: "Relan"
+        given: "Pryanka"
+      - family: "Diaz"
+        given: "Janet V"
+    issued:
+      date-parts:
+        - [2022, 4]
+    volume: 22
+    issue: 4
+    page: "e102-e107"
+    DOI: 10.1016/s1473-3099(21)00703-9
+    URL: https://doi.org/10.1016/s1473-3099(21)00703-9
+  thaweethai2023:
+    type: article-journal
+    title: "Development of a Definition of Postacute Sequelae of SARS-CoV-2 Infection"
+    container-title: "JAMA"
+    author:
+      - family: "Thaweethai"
+        given: "Tanayott"
+      - family: "Jolley"
+        given: "Sarah E."
+      - family: "Karlson"
+        given: "Elizabeth W."
+      - literal: others
+    issued:
+      date-parts:
+        - [2023, 6, 13]
+    volume: 329
+    issue: 22
+    page: "1934"
+    DOI: 10.1001/jama.2023.8823
+    URL: https://doi.org/10.1001/jama.2023.8823
+  nasem2024longcovid:
+    type: report
+    title: "A Long COVID Definition: A Chronic, Systemic Disease State with Profound Consequences"
+    publisher: National Academies Press
+    author:
+      - literal: "National Academies of Sciences, Engineering, and Medicine"
+    issued:
+      date-parts:
+        - [2024, 7]
+    DOI: 10.17226/27768
+    URL: https://doi.org/10.17226/27768
+  iom2015:
+    type: report
+    title: "Beyond Myalgic Encephalomyelitis/Chronic Fatigue Syndrome: Redefining an Illness"
+    publisher: National Academies Press
+    author:
+      - literal: "Institute of Medicine"
+    issued:
+      date-parts:
+        - [2015, 3]
+    DOI: 10.17226/19012
+    URL: https://doi.org/10.17226/19012
+  cdc2023pulse:
+    type: article-journal
+    title: "Long COVID and Significant Activity Limitation Among Adults, by Age — United States, June 1–13, 2022, to June 7–19, 2023"
+    container-title: "MMWR. Morbidity and Mortality Weekly Report"
+    author:
+      - family: "Ford"
+        given: "Nicole D."
+      - family: "Slaughter"
+        given: "Douglas"
+      - family: "Edwards"
+        given: "Deja"
+      - literal: others
+    issued:
+      date-parts:
+        - [2023, 8, 11]
+    volume: 72
+    issue: 32
+    page: "866-870"
+    DOI: 10.15585/mmwr.mm7232a3
+    URL: https://doi.org/10.15585/mmwr.mm7232a3
+  cdcpulsetracker2024:
+    type: webpage
+    title: Long COVID - Household Pulse Survey
+    author:
+      - literal: National Center for Health Statistics
+    container-title: Centers for Disease Control and Prevention
+    URL: https://www.cdc.gov/nchs/covid19/pulse/long-covid.htm
+    accessed:
+      date-parts:
+        - [2026, 9, 29]
+  wulfhanson2022:
+    type: article-journal
+    title: "Estimated Global Proportions of Individuals With Persistent Fatigue, Cognitive, and Respiratory Symptom Clusters Following Symptomatic COVID-19 in 2020 and 2021"
+    container-title: "JAMA"
+    author:
+      - family: "Wulf Hanson"
+        given: "Sarah"
+      - family: "Abbafati"
+        given: "Cristiana"
+      - family: "Aerts"
+        given: "Joachim G"
+      - literal: others
+    issued:
+      date-parts:
+        - [2022, 10, 25]
+    volume: 328
+    issue: 16
+    page: "1604"
+    DOI: 10.1001/jama.2022.18931
+    URL: https://doi.org/10.1001/jama.2022.18931
+  omahoney2023:
+    type: article-journal
+    title: "The prevalence and long-term health effects of Long Covid among hospitalised and non-hospitalised populations: a systematic review and meta-analysis"
+    container-title: "eClinicalMedicine"
+    author:
+      - family: "O'Mahoney"
+        given: "Lauren L."
+      - family: "Routen"
+        given: "Ash"
+      - family: "Gillies"
+        given: "Clare"
+      - literal: others
+    issued:
+      date-parts:
+        - [2023, 1]
+    volume: 55
+    page: "101762"
+    DOI: 10.1016/j.eclinm.2022.101762
+    URL: https://doi.org/10.1016/j.eclinm.2022.101762
+  davis2023:
+    type: article-journal
+    title: "Long COVID: major findings, mechanisms and recommendations"
+    container-title: "Nature Reviews Microbiology"
+    author:
+      - family: "Davis"
+        given: "Hannah E."
+      - family: "McCorkell"
+        given: "Lisa"
+      - family: "Vogel"
+        given: "Julia Moore"
+      - family: "Topol"
+        given: "Eric J."
+    issued:
+      date-parts:
+        - [2023, 3]
+    volume: 21
+    issue: 3
+    page: "133-146"
+    DOI: 10.1038/s41579-022-00846-2
+    URL: https://doi.org/10.1038/s41579-022-00846-2
+  bjornson2025:
+    type: article-journal
+    title: "Prevalence and Clinical Impact of Postural Orthostatic Tachycardia Syndrome in Highly Symptomatic Long COVID"
+    container-title: "Circulation: Arrhythmia and Electrophysiology"
+    author:
+      - family: "Björnson"
+        given: "Mikael"
+      - family: "Wijnbladh"
+        given: "Klara"
+      - family: "Törnberg"
+        given: "Anna"
+      - literal: others
+    issued:
+      date-parts:
+        - [2025, 10]
+    volume: 18
+    issue: 10
+    DOI: 10.1161/circep.124.013629
+    URL: https://doi.org/10.1161/circep.124.013629
 ---
 
 # Chapter 2: Long COVID — Definitions and Why They Disagree
@@ -58,11 +233,11 @@ When you see a statistic about how many people have long COVID, stop and ask: wh
 
 ### The CDC Household Pulse Survey: 6–7% of US adults
 
-The CDC periodically asks a representative sample of noninstitutionalized US adults "Have you ever been told you have long COVID?" and "Do you currently have long COVID?" This is a self-report survey with no clinical confirmation behind the answer. In June 2022, about 7.5% of US adults said they currently had long COVID. By June 2023, that figure had dropped to 6%, and among adults who had ever had COVID-19, the figure fell from 18.9% to 11.0% over the same interval [@cdc2023pulse]. A March 2024 wave put it at roughly 7% again — about 17 million adults [@cdcpulsetracker2024]. This number tells you what people self-report, which is useful for understanding how common people perceive the condition to be, but it does not tell you how many people actually meet a verified clinical case definition. It is a tracking trend, not a clinical case count.
+The CDC periodically asks a representative sample of noninstitutionalized US adults "Have you ever been told you have long COVID?" and "Do you currently have long COVID?" This is a self-report survey with no clinical confirmation behind the answer. In June 2022, about 7.5% of US adults said they currently had long COVID. By June 2023, that figure had dropped to 6%, and among adults who had ever had COVID-19, the figure fell from 18.9% to 11.0% over the same interval [@cdc2023pulse]. The CDC keeps publishing later waves on its tracker [@cdcpulsetracker2024]. This number tells you what people self-report, which is useful for understanding how common people perceive the condition to be, but it does not tell you how many people actually meet a verified clinical case definition. It is a tracking trend, not a clinical case count.
 
 ### The Global Burden of Disease modeling: 144.7 million people, with massive uncertainty
 
-An international collaboration looked at long COVID across ten cohort studies in ten countries and modeled global prevalence. They organized the condition around three symptom clusters (fatigue, cognitive problems, and respiratory symptoms) and estimated that 144.7 million people experienced at least one cluster in 2020–2021 [@wulfhanson2022]. But here is the critical number that most discussions skip: the 95% uncertainty interval was 54.8 million to 312.9 million. That is a near-6-fold spread. The wide interval reflects real uncertainty in the data — different studies used different methods, different populations, different definitions. The finding is not "144.7 million people have long COVID." The finding is "we don't actually know the number, but we know it is large, and the true figure could be anywhere from one-third to more than two times the middle estimate."
+An international collaboration looked at long COVID by pooling 54 studies and two large medical-record databases covering 1.2 million people in 22 countries and modeled global prevalence. They organized the condition around three symptom clusters (fatigue, cognitive problems, and respiratory symptoms) and estimated that 144.7 million people experienced at least one cluster in 2020–2021 [@wulfhanson2022]. But here is the critical number that most discussions skip: the 95% uncertainty interval was 54.8 million to 312.9 million. That is a near-6-fold spread. The wide interval reflects real uncertainty in the data — different studies used different methods, different populations, different definitions. The finding is not "144.7 million people have long COVID." The finding is "we don't actually know the number, but we know it is large, and the true figure could be anywhere from one-third to more than two times the middle estimate."
 
 ### The meta-analysis: 45% of survivors symptomatic at four months
 
@@ -70,7 +245,7 @@ A 2023 meta-analysis pooled studies of people who had COVID-19 and looked at wha
 
 ### What these numbers actually tell you
 
-Read together, these three approaches give you different answers to different questions. The CDC survey asks "What do people think they have?" and the answer is "6–7% self-report it" [@cdc2023pulse]. The global modeling asks "If we tried to quantify the scope of the problem across all countries," and the answer is "somewhere between 55 million and 313 million, with a central estimate of 145 million, but we're genuinely uncertain" [@wulfhanson2022]. The meta-analysis asks "What fraction of COVID survivors have some lingering symptom at some point in the first four months?" and the answer is "45%, but only if we pool across studies that used different thresholds" [@omahoney2023]. None of these is wrong, and none is directly comparable to the other two.
+Read together, these three approaches give you different answers to different questions. The CDC survey asks "What do people think they have?" and the answer is "roughly 6–7.5% self-report it" [@cdc2023pulse]. The global modeling asks "If we tried to quantify the scope of the problem across all countries," and the answer is "somewhere between 55 million and 313 million, with a central estimate of 145 million, but we're genuinely uncertain" [@wulfhanson2022]. The meta-analysis asks "What fraction of COVID survivors have some lingering symptom at some point in the first four months?" and the answer is "45%, but only if we pool across studies that used different thresholds" [@omahoney2023]. None of these is wrong, and none is directly comparable to the other two.
 
 This is not a flaw in the researchers. This is the cost of the definitional heterogeneity. Until the field converges on a single agreed case definition that researchers use consistently — the way they did for, say, diabetes or heart disease — any claim about prevalence will come with this caveat: "depends on which definition, and the definitions are still evolving."
 
@@ -92,7 +267,7 @@ Shortness of breath on exertion that is not explained by deconditioning, and chr
 
 ### Cardiovascular and autonomic symptoms
 
-Heart palpitations, a sensation of the heart racing or skipping, appear in the RECOVER research definition [@thaweethai2023]. A subset of people develop or worsen postural orthostatic tachycardia syndrome (POTS), a condition where your heart rate increases excessively when you stand up, and where you may feel dizzy, light-headed, or like you might pass out on standing. A prospective study of highly symptomatic long COVID clinic patients found that 31% met formal POTS criteria on standardized testing, with a further 27% having orthostatic symptoms without meeting full diagnostic thresholds [@bjornson2025]. The broader category of autonomic symptoms — symptoms related to the nervous system that controls heart rate, blood pressure, digestion, and other automatic functions — appears in a majority of people with long COVID who have been carefully evaluated in that same study.
+Heart palpitations, a sensation of the heart racing or skipping, appear in the RECOVER research definition [@thaweethai2023]. A subset of people develop or worsen postural orthostatic tachycardia syndrome (POTS), a condition where your heart rate increases excessively when you stand up, and where you may feel dizzy, light-headed, or like you might pass out on standing. A prospective study of highly symptomatic long COVID clinic patients found that 31% met formal POTS criteria on standardized testing, with a further 27% having orthostatic symptoms without meeting full diagnostic thresholds [@bjornson2025].
 
 ### Gastrointestinal symptoms
 
@@ -104,7 +279,7 @@ Loss of or change in sense of smell or taste was common early in the pandemic an
 
 ## Symptom clusters, not one symptom in everyone
 
-No single symptom is present in all people with long COVID. Some people have prominent fatigue and cognitive problems but minimal respiratory symptoms. Others have severe autonomic dysfunction and respiratory issues but less cognitive involvement. Some have profound post-exertional malaise; others have fatigue without the characteristic delay and worsening that defines post-exertional malaise. The global modeling work organized the condition around three clusters specifically — fatigue, cognitive problems, and respiratory symptoms — because those three had the strongest evidence across multiple studies, but this is not an exhaustive or universal list [@wulfhanson2022].
+No single symptom is present in all people with long COVID. Some people have prominent fatigue and cognitive problems but minimal respiratory symptoms. Others have severe autonomic dysfunction and respiratory issues but less cognitive involvement. Some have profound post-exertional malaise; others have fatigue without the characteristic delay and worsening that defines post-exertional malaise. The global modeling work organized the condition around three clusters specifically — fatigue, cognitive problems, and respiratory symptoms — because those were the symptom clusters the analysis defined, but this is not an exhaustive or universal list [@wulfhanson2022].
 
 The NASEM definition acknowledges this explicitly: long COVID can present as a single symptom or as multiple diagnosable conditions [@nasem2024longcovid]. This heterogeneity is real. It means that if you have long COVID, your specific symptoms may not match someone else's profile, and that does not mean one of you does not actually have the condition. You both do; you just experience different aspects of it.
 
