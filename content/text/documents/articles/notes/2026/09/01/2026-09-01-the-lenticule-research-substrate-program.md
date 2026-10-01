@@ -365,3 +365,8 @@ Standing debts filed at the head of the build: the false
 2026-08-21-agent-science-founding record (disk/record contradiction), and
 the FARS-expansion carrier disagreement (an April carrier's expansion vs
 current law). No goal-stack roadmap thread yet names this program.
+
+Widened 2026-09-30: the corpus knowledge graph program
+(`services/information-science-services-section/services/knowledge-services-section/services/knowledge-organization-services-section/content/text/documents/articles/notes/2026/09/30/2026-09-30-the-corpus-knowledge-graph-program.md`)
+carries this doctrine from glossary terms to every carrier in the 561 Group
+and schedules Lots 4–8 and 10 inside its four waves; Lot 9 stays here.
