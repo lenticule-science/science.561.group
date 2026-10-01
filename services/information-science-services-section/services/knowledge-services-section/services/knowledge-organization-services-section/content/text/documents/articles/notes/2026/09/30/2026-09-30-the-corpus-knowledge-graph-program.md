@@ -50,6 +50,37 @@ metrics that drive the work queue. The house has the parts of most of these and 
 | Embedding or hybrid index over the corpus | none (FTS5 over revisions only) |
 | Hand-declared ontologies under `data/ontology/` (violates D5 and the data trio) | 23 `.ttl` files |
 
+## Ledger measurement (2026-09-30, commit `b42d6bf5c28`)
+
+Wave 1.1 landed as `corpus-census-service` (bin `census-corpus`), and these are its first readings.
+Its dated census record and wanted queue live in `561-group-services-section/data/records/knowledge/corpus/`.
+The per-carrier rows are a derived payload Git ignores; the record names their count and SHA-256, so a re-derivation at the commit is checkable.
+It reads the commit, not the working tree, and counts link and citekey occurrences, so its figures differ from the survey's above, which counted distinct keys over the working tree.
+Where the two disagree, the ledger's figure is the one later waves gate on.
+
+| Measure | Live | Archive |
+|---|---|---|
+| Carriers (`.md` / `.org`) | 28,904 (27,088 / 1,816) | 11,703 (9,788 / 1,915) |
+| Markdown carriers without frontmatter / with malformed frontmatter | 1,250 / 195 | 2,142 / 260 |
+| Public carriers (`visibility: public`, no `consent-status`) | 594 | 13 |
+| Term carriers admitted / refused | 4,744 / 4,725 | not schema-read |
+| Bibliography carriers admitted / refused | 187 / 388 | not schema-read |
+| Carriers under no schema | 18,860 | 11,703 |
+| Relative links resolved / broken / escaping the root | 68,865 / 36,999 (35%) / 435 | 11,103 / 19,986 / 43 |
+| Wikilinks resolved / unresolved / ambiguous | 2,892 / 3,265 (48%) / 534 | 3,391 / 3,669 / 848 |
+| Citekey occurrences in the citing carrier's map / known elsewhere / unknown | 1,597 / 1,553 / 3,537 (53%) | 8 / 909 / 109 |
+| Identities (`<section>/<stem>`) / ambiguous / carriers behind them | 28,281 / 454 / 1,077 | — |
+
+The live demand queue (`wanted.json`) has three parts.
+
+- 1,638 wanted pages (479 named by two or more carriers).
+  The top ones are `induce` (51 referrers), `relational expression` (27), `postulate` (23) and `constrain` (22), and links into the retired `zeds/` and `triage/` trees.
+- 1,080 wanted references (384 cited by two or more carriers), led by the writing sections' canon: `flowerhayes1981` (22), `redish2012` and `williams2006` (18), `schriver1997` (16).
+- 17,617 broken path targets.
+  1,617 are named by three or more carriers and listed; the rest are counted.
+
+`science/philosophy` alone holds 20,288 of the 36,999 live broken links.
+
 ## Decisions
 
 These are settled for this program, from house theory first and published standards second.
@@ -124,6 +155,11 @@ Sections are independent, so most workstreams fan out one work item per owning s
    - visibility.
    The rows are EAVT-compatible, so Lot 6 lifts them unmodified. The dated ledger and its census land in `561-group-services-section/data/records/knowledge/`.
    Gate: 100% of tracked `content/**/*.md` and `*.org` carriers have a row, and two runs over the same commit are byte-identical.
+   **Landed 2026-09-30** (`corpus-census-service`).
+   Rows cover every tracked `.md` and `.org` file, not only `content/`, so READMEs and package documents are subjects too.
+   Both gate conditions hold at `b42d6bf5c28`.
+   Decision 8's queue ships with it: wanted pages, wanted references and wanted paths.
+   Stubs, refusals and contested cells join the queue in later waves.
 2. **Carrier-kind schema family** (owner: the science schema sections).
    Schemas for `note`, `reference`, `question`, `theorem`, `person`, `place`, `event` and `log-entry`, beside `term`.
    These are the kinds the corpus already states most often: theorem 757, personal-log-entry 642, note 542 and 247, reference 489, question 372, place 283, person 263, event 197.
@@ -140,7 +176,7 @@ Sections are independent, so most workstreams fan out one work item per owning s
    - otherwise match the stem within the scheme, then across the nearest schemes (the same nearest-section rule as SKOS resolution);
    - rewrite only when there is exactly one candidate.
    Every other target becomes an authorship-demand item.
-   Gate: broken relative links fall from 44,620 to under 2,000, and every survivor is a queued demand item.
+   Gate: live broken relative links fall from 36,999 (ledger, `b42d6bf5c28`) to under 2,000, and every survivor is a queued demand item.
 2. **Key normalization**, the corpus-wide folds in Decision 6.
    Gate: `type`/`kind`, `author`/`authors` and `date`/`date-created` each have one spelling across all admitted carriers.
 3. **Citations into one library** (owner: `bibliography-engineering-services-section`).
@@ -211,10 +247,10 @@ Gate: the loop runs on a schedule, and each run writes a dated quality record an
 
 | Measure | Now | Gate |
 |---|---|---|
-| Carriers with a ledger row | glossary only | 100% |
+| Carriers with a ledger row | 100% (40,607 at `b42d6bf5c28`) | 100%, met |
 | Carriers admitted under a kind schema | 4,744 | ≥ 80% of the ledger |
-| Broken relative Markdown links | 44,620 | < 2,000, all queued |
-| Citekey resolution | 58% | 95% |
+| Broken relative Markdown links (live) | 36,999 | < 2,000, all queued |
+| Citekey resolution | 58% of distinct keys; 47% of live occurrences known to the corpus | 95% |
 | Science carriers citing nothing | 84% | measured and queued; falling every release |
 | Shared identities served as first match | 404 | 0 (all 300) |
 | Term-to-RDF builders | 2 | 1 |
@@ -240,6 +276,6 @@ Gate: the loop runs on a schedule, and each run writes a dated quality record an
 1. Whether `consent-status` gains a value vocabulary. Lot 2's rule stands: grep first, coin nothing.
 2. Whether `/ns/` graduates from l-space to `561.group` before external dereference signal exists. This program needs `561.group/knowledge/` to resolve, so the two are decided together in Wave 3.1.
 3. Whether the deep `recovered/` (1,632), `legacy/` (3,916) and `obsmetrologia` (1,847) trees are carriers or archives.
-   Until decided, the ledger rows them as `kind: archive` and excludes them from targets.
+   Until decided, the ledger rows them in its `archive` stratum (any `lib`, `legacy`, `triage`, `recovered`, `_archive` or `lenticule-import` directory) and excludes them from targets.
 4. The three-theories rule for predicates versus 94 registered predicates.
    The registry's new SKOS mapping makes every predicate's meaning explicit; whether to prune is decided from usage counts the ledger reports.
