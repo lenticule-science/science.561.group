@@ -8,7 +8,6 @@ aliases:
   - "immunitary logic"
 date-created: 2026-03-06
 tags: []
-title: "Auto-Immunity"
 defines:
   - "Auto-Immunity"
   - "immunitary logic"

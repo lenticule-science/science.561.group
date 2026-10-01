@@ -1,6 +1,6 @@
 ---
 id: ca6e8f16-e8ea-485f-9c6d-750dcd819bd4
-title: American anarchist
+name: American anarchist
 date-created: 2025-08-31
 visibility: public
 ---

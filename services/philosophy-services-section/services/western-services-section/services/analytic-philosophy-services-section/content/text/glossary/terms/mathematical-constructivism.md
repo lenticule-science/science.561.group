@@ -16,7 +16,6 @@ enables: intuitionistic-logic
 contrasts-with: [platonism, formalism]
 requires: constructive-proof
 inverse-of: law-of-excluded-middle
-title: "Mathematical Constructivism"
 defines:
   - "Mathematical Constructivism"
   - "constructivism (mathematics)"

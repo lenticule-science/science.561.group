@@ -10,7 +10,6 @@ keywords:
 description: "The principle that action itself communicates political ideas more effectively than words — historically associated with insurrectionary acts but originally encompassing any exemplary practice of anarchist principles."
 tags: []
 part-of: sociology/schools/anarchism/topics/strategy/terms
-title: "Propaganda of the Deed"
 defines:
   - "Propaganda of the Deed"
   - "propaganda by the deed"

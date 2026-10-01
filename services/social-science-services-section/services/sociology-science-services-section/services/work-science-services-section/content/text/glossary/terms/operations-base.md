@@ -5,7 +5,7 @@ status: draft
 symbol: "B_{\\mathrm{op}}"
 depends-on: [residuated-lattice, predicate-category, entity-set, settling-bound]
 realizes: [predication-settling]
-title: Operations base
+name: Operations base
 description: The base $B{\mathrm{op}} = (\mathbf{2}, \mathcal{C}{\mathrm{op}}, E{\mathrm{op}}, \lambda)$ over which operational work is a predication settling.
 ---
 

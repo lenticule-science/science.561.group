@@ -20,7 +20,7 @@ see-also:
   - ../examples/hjelmslevian-system.md
   - ../examples/lotmanian-system.md
   - ../../../../information/theories/knowledge-systems/theories/predicated-knowledge-systems/objects/predicated-knowledge-system.md
-title: Semiotic system
+name: Semiotic system
 description: "A semiotic system is a tuple $\\mathcal{S} = (V, O, I, K, R, \\Sigma)$ where:"
 ---
 

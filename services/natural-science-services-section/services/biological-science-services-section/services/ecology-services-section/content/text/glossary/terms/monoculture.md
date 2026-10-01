@@ -55,7 +55,7 @@ Monoculture is not inherently catastrophic at small scales. A gardener growing a
 
 ## See also
 
-- [Polyculture](../../../../../../../../../domestic-science-services-section/services/domestic-production-services-section/services/gardening-services-section/content/glossary/terms/polyculture.md) — the alternative
+- [Polyculture](../../../../../../../../../domestic-science-services-section/services/domestic-production-services-section/services/gardening-services-section/content/text/glossary/terms/polyculture.md) — the alternative
 - [Allelopathy](allelopathy.md) — a mechanism that creates monocultures
 - [Invasive Species](invasive-species.md) — the primary cause of ecological monocultures
 - [Ecosystem](ecosystem.md) — the community structure monocultures simplify

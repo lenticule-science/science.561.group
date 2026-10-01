@@ -9,7 +9,6 @@ keywords:
 description: "The repatriation of Indigenous land and life — not a metaphor for other social justice projects."
 date-modified: 2026-03-09
 part-of: sociology/topics/settler-colonialism/terms
-title: "Decolonization"
 type: term
 tags:
   - SettlerColonialism

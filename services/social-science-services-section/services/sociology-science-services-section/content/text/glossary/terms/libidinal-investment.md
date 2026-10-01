@@ -1,6 +1,6 @@
 ---
 
-title: "Libidinal Investment"
+name: "Libidinal Investment"
 description: "The attachment of psychic energy or desire to an object, idea, person, or social structure — explaining why people are bound to things that may not serve their interests."
 date-created: 2026-03-02
 date-modified: 2026-03-29

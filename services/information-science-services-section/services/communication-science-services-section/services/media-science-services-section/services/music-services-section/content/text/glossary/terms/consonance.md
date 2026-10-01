@@ -6,7 +6,6 @@ aliases:
   - "consonant"
 tags: []
 description: "The perceptual quality of stability or restfulness in a combination of simultaneous pitches."
-title: "Consonance"
 defines:
   - "Consonance"
   - "consonant"

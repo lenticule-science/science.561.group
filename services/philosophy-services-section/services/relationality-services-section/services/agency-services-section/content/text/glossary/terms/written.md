@@ -1,5 +1,5 @@
 ---
-title: "M2: Surveys and gap terms written"
+name: "M2: Surveys and gap terms written"
 specialization: milestone
 date-created: 2026-04-03
 plan: agent-governance-enrichment

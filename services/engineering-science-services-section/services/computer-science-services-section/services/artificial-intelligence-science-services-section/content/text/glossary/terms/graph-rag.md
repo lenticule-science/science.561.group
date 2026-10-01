@@ -1,5 +1,5 @@
 ---
-title: "GraphRAG"
+name: "GraphRAG"
 description: "A retrieval-augmented generation pattern that retrieves from a knowledge graph rather than a flat vector store — using entity relationships to answer multi-hop queries that standard RAG cannot."
 defines: GraphRAG
 domain: artificial-intelligence

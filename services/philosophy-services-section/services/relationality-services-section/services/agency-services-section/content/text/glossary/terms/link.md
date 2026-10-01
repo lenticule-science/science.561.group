@@ -2,7 +2,7 @@
 aliases:
 - links
 id: b07e5b56-b83b-4380-bff5-ace422998017
-title: link
+name: link
 date-created: 2025-08-22
 type: structure
 visibility: public

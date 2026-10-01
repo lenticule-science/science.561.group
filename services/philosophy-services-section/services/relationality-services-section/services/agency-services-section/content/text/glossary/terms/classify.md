@@ -4,7 +4,7 @@ class: substrate-operation
 status: sketch
 depends-on: [predicated-knowledge-system, four-group-register-as-fibration, upper-ontology-as-predicate-vocabulary, identity-by-relations]
 see-also: [assert, specialize, predicate-category-stratification]
-title: Classify
+name: Classify
 description: The substrate operation by which an entity is placed in the predicate-category schema — i.e., assigned to a stratum (per the upper ontology) and to one or more facets within the stratum.
 ---
 

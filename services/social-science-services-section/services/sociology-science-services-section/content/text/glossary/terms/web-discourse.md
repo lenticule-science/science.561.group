@@ -1,6 +1,6 @@
 ---
 id: f3a2807c-a8b0-45ac-92d9-ebb9f843ff22
-title: Web discourse
+name: Web discourse
 date-created: 2025-09-06
 ---
 

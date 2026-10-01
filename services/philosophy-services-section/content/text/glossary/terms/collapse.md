@@ -1,6 +1,6 @@
 ---
 id: a09b4c5a-3010-4148-b851-671d50308fd7
-title: collapse
+name: collapse
 date-created: 2025-08-29
 ---
 

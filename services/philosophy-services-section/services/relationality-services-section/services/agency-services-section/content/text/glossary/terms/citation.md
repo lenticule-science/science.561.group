@@ -1,5 +1,5 @@
 ---
-title: "Citation"
+name: "Citation"
 type: "page"
 date-created: 2026-03-20
 description: A Citation is a four-tuple (C, W, L, ρ) — a citing claim C ∈ Ht, a cited work W ∈ H{τW} (a settled record committed at τW < t), a locus L specifying the specific element within W, and a grounding relation type ρ ∈ {quotation, paraphrase,…

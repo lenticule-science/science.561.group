@@ -1,6 +1,6 @@
 ---
 id: 366b95d3-0db7-4142-a9a2-686516f1530c
-title: Pope
+name: Pope
 date-created: 2025-09-02
 visibility: public
 ---

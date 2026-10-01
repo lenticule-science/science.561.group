@@ -1,6 +1,6 @@
 ---
 
-title: "Jineoloji"
+name: "Jineoloji"
 date-created: 2026-04-02
 aliases:
   - "jineoloji"

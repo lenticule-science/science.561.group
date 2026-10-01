@@ -1,5 +1,5 @@
 ---
-title: "Budget"
+name: "Budget"
 aliases:
   - "Budget"
   - "budget"

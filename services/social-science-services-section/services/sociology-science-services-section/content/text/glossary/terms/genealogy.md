@@ -32,7 +32,6 @@ references:
     publication: Gallimard
 aliases:
   - genealogy
-title: "Genealogy"
 type: term
 tags:
   - CriticalTheory

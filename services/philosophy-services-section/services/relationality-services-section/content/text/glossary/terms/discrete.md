@@ -1,5 +1,5 @@
 ---
-title: "Discrete"
+name: "Discrete"
 identity: discrete
 description: "Discrete is maximal separation: the perspective that treats every element as standing alone, with no local connectivity between parts."
 date-created: 2026-03-04

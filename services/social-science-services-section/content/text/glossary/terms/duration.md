@@ -1,5 +1,5 @@
 ---
-title: "Duration"
+name: "Duration"
 description: "The measured or lived extent of a process, state, or activity in time — the span from start to finish, connecting Bergson's qualitative durée with operational time-tracking."
 defines: duration
 date-created: 2026-04-04

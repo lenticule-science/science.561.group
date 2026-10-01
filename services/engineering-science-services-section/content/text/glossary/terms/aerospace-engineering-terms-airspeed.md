@@ -1,5 +1,5 @@
 ---
-title: "Airspeed"
+name: "Airspeed"
 type: "term"
 date-created: 2026-03-07
 ---

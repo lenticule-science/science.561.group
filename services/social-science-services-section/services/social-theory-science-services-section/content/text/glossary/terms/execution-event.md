@@ -6,7 +6,7 @@ symbol: E
 depends-on: [task-cell-system, assignment, predication-cell, settling-monotonicity]
 realizes: [execution]
 see-also: [observation, assignment, completion-as-quiescence]
-title: Execution event
+name: Execution event
 description: The substrate-entity emitted by an executing office when it produces work-state movement against an assignment.
 ---
 

@@ -1,6 +1,6 @@
 ---
 id: b7014013-8f96-463c-b45f-c689fe90f20a
-title: University of Gothenburg
+name: University of Gothenburg
 date-created: 2025-08-29
 ---
 

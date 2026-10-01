@@ -1,5 +1,5 @@
 ---
-title: "Codiscrete"
+name: "Codiscrete"
 identity: codiscrete
 description: "Codiscrete is maximal connection: the perspective that treats every element as connected to every other, with no internal boundaries."
 date-created: 2026-03-04

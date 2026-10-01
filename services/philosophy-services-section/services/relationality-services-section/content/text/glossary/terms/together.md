@@ -1,5 +1,5 @@
 ---
-title: "Together"
+name: "Together"
 identity: together
 description: "Together is combining: the shared refinement of two recognitions."
 date-created: 2026-03-04

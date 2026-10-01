@@ -16,7 +16,6 @@ references:
     year: 2022
     url: https://plato.stanford.edu/entries/aristotle-logic/
 description: "In Aristotelian dialectic, accepted or authoritative opinions that function as starting points for testing and clarifying claims."
-title: Endoxa
 defines:
 - endoxa
 - reputable opinions

@@ -1,5 +1,5 @@
 ---
-title: "emsenn.net"
+name: "emsenn.net"
 type: "value"
 date-created: 2026-03-30
 description: "The state of knowledge about an assertion: unattested, affirmed, denied, or contested."

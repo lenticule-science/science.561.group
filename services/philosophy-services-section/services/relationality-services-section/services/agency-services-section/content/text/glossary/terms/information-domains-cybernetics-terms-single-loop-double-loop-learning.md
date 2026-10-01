@@ -1,5 +1,5 @@
 ---
-title: "Single-Loop and Double-Loop Learning"
+name: "Single-Loop and Double-Loop Learning"
 type: "term"
 date-created: 2026-03-05
 ---

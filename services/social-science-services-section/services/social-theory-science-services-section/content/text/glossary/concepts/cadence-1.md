@@ -9,7 +9,7 @@ description: "The temporal grain of a recurrent practice: the index set $TR$ of 
 
 # Cadence
 
-The *temporal grain* of a [recurrent practice](../../../../../sociology-science-services-section/services/work-science-services-section/services/predicated-work-services-section/content/glossary/terms/recurrent-practice.md): the index set $T_R$ of cycle boundaries together with the spacing structure that lets cycles be identified, named, and counted by the working community.
+The *temporal grain* of a [recurrent practice](../../../../../sociology-science-services-section/services/work-science-services-section/services/predicated-work-services-section/content/text/glossary/terms/recurrent-practice.md): the index set $T_R$ of cycle boundaries together with the spacing structure that lets cycles be identified, named, and counted by the working community.
 
 A cadence is more than a partition of the settling ordinal $\lambda$ into intervals. It is a community-recognized rhythm — *weekly*, *sprint-length*, *seasonal*, *generational* — whose boundaries are themselves substrate-recordable as cycle-start and cycle-end witnesses. The cadence is what makes the recurrent practice *recurrent in practice* rather than merely formally periodic.
 
@@ -49,7 +49,7 @@ The cadence-regime relationship completes the analysis of [regime-of-recurrent-p
 
 ## Cadence multi-scale nesting
 
-Cadences nest: a session-cadence $T_{\mathrm{sess}}$ is contained in a daily cadence $T_{\mathrm{day}} \supset T_{\mathrm{sess}}$, which is contained in a weekly cadence $T_{\mathrm{week}} \supset T_{\mathrm{day}}$, etc. Per [recurrent-practice](../../../../../sociology-science-services-section/services/work-science-services-section/services/predicated-work-services-section/content/glossary/terms/recurrent-practice.md), the composition of nested practices is a recurrent practice with the union of cadence sets.
+Cadences nest: a session-cadence $T_{\mathrm{sess}}$ is contained in a daily cadence $T_{\mathrm{day}} \supset T_{\mathrm{sess}}$, which is contained in a weekly cadence $T_{\mathrm{week}} \supset T_{\mathrm{day}}$, etc. Per [recurrent-practice](../../../../../sociology-science-services-section/services/work-science-services-section/services/predicated-work-services-section/content/text/glossary/terms/recurrent-practice.md), the composition of nested practices is a recurrent practice with the union of cadence sets.
 
 The nesting structure means that at a weekly boundary $\tau_w \in T_{\mathrm{week}}$, the settle-cycle morphism for the weekly practice fires *on top of* the already-settled daily and session practices. The weekly settle-cycle can read the settled state of all sessions and days in that week (all of which have already fired their own settle-cycle morphisms), making the weekly cycle's antecedent's aggregation naturally Markov (depends on the prior week's output, which is the settled state of all the week's sessions).
 
@@ -80,8 +80,8 @@ BC holds for standard nesting: session-boundaries commute with the daily fiber (
 
 ## Where used
 
-- [recurrent-practice](../../../../../sociology-science-services-section/services/work-science-services-section/services/predicated-work-services-section/content/glossary/terms/recurrent-practice.md) — the definition that cadence parameterizes.
-- [operations-loop](../../../../../sociology-science-services-section/services/work-science-services-section/services/predicated-work-services-section/content/glossary/terms/operations-loop.md) — a worked instance with a six-phase per-cycle structure.
+- [recurrent-practice](../../../../../sociology-science-services-section/services/work-science-services-section/services/predicated-work-services-section/content/text/glossary/terms/recurrent-practice.md) — the definition that cadence parameterizes.
+- [operations-loop](../../../../../sociology-science-services-section/services/work-science-services-section/services/predicated-work-services-section/content/text/glossary/terms/operations-loop.md) — a worked instance with a six-phase per-cycle structure.
 - [settle-cycle](../../documents/articles/notes/undated/settle-cycle.md) — the morphism advancing the practice by one cadence step.
 - [regime-of-recurrent-practice](../../../../../sociology-science-services-section/services/work-science-services-section/services/predicated-work-services-section/content/glossary/concepts/regime-of-recurrent-practice.md) — the regime is bounded by the cadence's order type.
 - [non-hohfeldian-governance-traditions](../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/notes/undated/non-hohfeldian-governance-traditions.md) — ecological cadences as condition-driven cycle-transition rules.

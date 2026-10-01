@@ -1,5 +1,5 @@
 ---
-title: "Control Surface"
+name: "Control Surface"
 type: "term"
 date-created: 2026-03-06
 ---

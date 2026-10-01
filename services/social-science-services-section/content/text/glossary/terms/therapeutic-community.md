@@ -20,7 +20,6 @@ references:
     publication: "Disaster Research Center"
     year: 1977
     url: "https://udspace.udel.edu/handle/19716/409"
-title: Therapeutic Community
 tags:
 - disaster-studies
 - collective-behavior

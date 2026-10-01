@@ -3,7 +3,7 @@ type: definition
 class: prestack
 symbol: "\\mathscr{M}^{\\mathrm{meta}}_{\\mathrm{pre}}"
 depends-on: [parameter-base-category, closure-rule-system, closure-rule, closure-rule-language, closure-operator, settling-moduli-prestack]
-title: Meta-moduli prestack of closure-rule systems
+name: Meta-moduli prestack of closure-rule systems
 description: "The pseudo-functor $\\mathbf{B}^{\\mathrm{op}} \\to \\mathbf{Gpd}$ sending each base $(\\mathbf{L}, \\mathcal{C}, E, \\lambda) \\in \\mathbf{B}$ to the groupoid of closure-rule systems over that base, modulo closure-equivalence:"
 ---
 

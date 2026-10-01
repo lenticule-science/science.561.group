@@ -3,7 +3,7 @@ type: definition
 class: functor
 symbol: "V \\colon O \\to \\mathrm{Settlings}"
 depends-on: [predication-settling, settling-morphism, predication-settling-category]
-title: Multi-observer system
+name: Multi-observer system
 description: A multi-observer system on a base $B$ is a small category $O$ together with a functor
 ---
 

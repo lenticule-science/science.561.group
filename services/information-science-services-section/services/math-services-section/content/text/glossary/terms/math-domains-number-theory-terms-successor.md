@@ -1,5 +1,5 @@
 ---
-title: "Successor"
+name: "Successor"
 type: "definition"
 date-created: 2025-12-26
 ---

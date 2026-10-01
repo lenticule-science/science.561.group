@@ -1,6 +1,6 @@
 ---
 id: 1390632d-eba1-4030-ae6c-280f64da7290
-title: emsenn's External Communications
+name: emsenn's External Communications
 ---
 
 [My Essays](ess/index.org)  

@@ -1,6 +1,6 @@
 ---
 id: 9d46260d-0745-4ef5-a673-c25fc3f9305a
-title: existential distinction complex
+name: existential distinction complex
 date-created: 2025-10-07
 ---
 

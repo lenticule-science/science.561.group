@@ -8,7 +8,6 @@ aliases:
 keywords:
   - gender-theory
 description: "The normative framework that organizes social institutions, kinship, and political life around heterosexual reproduction and the gender binary."
-title: "Heteronormativity"
 type: term
 tags:
   - GenderTheory

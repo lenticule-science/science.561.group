@@ -1,5 +1,5 @@
 ---
-title: "Preserves-Core"
+name: "Preserves-Core"
 identity: preserves-core
 description: "Preserves-Core is the condition that directed motion respects the modal structure of being."
 date-created: 2026-03-04

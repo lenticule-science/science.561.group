@@ -4,7 +4,7 @@ class: category
 realizes: [causal-evidence]
 symbol: "\\mathcal{C}_{\\mathrm{cone}}"
 depends-on: [predicate-category, light-cone, spacetime-entity-set]
-title: Light-cone predicate category
+name: Light-cone predicate category
 description: "The predicate category appropriate to predicated cosmology: a small category $\\mathcal{C}{\\mathrm{cone}}$ whose objects are physical observable predicates and whose morphisms are restricted to those compatible with the light cone…"
 ---
 

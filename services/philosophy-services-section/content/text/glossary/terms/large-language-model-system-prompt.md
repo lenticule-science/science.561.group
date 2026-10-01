@@ -1,6 +1,6 @@
 ---
 id: 4306aad0-1595-48d3-ad2d-066a859b04dd
-title: large language model system prompt
+name: large language model system prompt
 date-created: 2025-09-26
 visibility: public
 type: concept

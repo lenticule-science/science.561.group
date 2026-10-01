@@ -11,7 +11,6 @@ date-updated: 2026-03-09
 part-of: business/topics/negotiation/terms
 governs: negotiation
 determines: leverage
-title: "BATNA"
 tags:
   - business
 date-modified: 2026-03-09

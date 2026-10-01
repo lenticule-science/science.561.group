@@ -14,7 +14,6 @@ enables:
   - conscientization
 contrasts-with:
   - banking-model
-title: "curriculum"
 defines:
   - "curriculum"
   - "curricula"

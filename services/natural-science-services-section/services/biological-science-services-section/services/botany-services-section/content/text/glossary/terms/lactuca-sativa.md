@@ -54,5 +54,5 @@ Wild *Lactuca serriola* occupies disturbed, well-drained habitats in Mediterrane
 ## See also
 
 - [Asteraceae](../terms/asteraceae.md)
-- [Lettuce cultivation](../../../../../../../../../domestic-science-services-section/services/domestic-production-services-section/services/gardening-services-section/content/glossary/terms/lettuce.md)
+- [Lettuce cultivation](../../../../../../../../../domestic-science-services-section/services/domestic-production-services-section/services/gardening-services-section/content/text/glossary/terms/lettuce.md)
 - [Thermoinhibition in seed germination](../ecology/terms/thermoinhibition.md)

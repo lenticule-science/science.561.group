@@ -1,7 +1,7 @@
 ---
 field: "eidic theory"
 id: b6681877-e441-49cc-af6c-14bd0cf66876
-title: eidon
+name: eidon
 date-created: 2025-09-13
 type: abstraction
 visibility: public

@@ -1,5 +1,5 @@
 ---
-title: "Bottom"
+name: "Bottom"
 identity: bottom
 description: "Bottom is the empty recognition — the one that nothing satisfies."
 date-created: 2026-03-04

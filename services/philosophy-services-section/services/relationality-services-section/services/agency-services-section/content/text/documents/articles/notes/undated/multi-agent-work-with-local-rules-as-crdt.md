@@ -34,7 +34,7 @@ The [crdt-convergence-with-per-observer-rules theorem](../../../../../../../../.
 In the work setting:
 
 - Each agent's replica is a [distributed settling system](distributed-settling-system.md) replica indexed by the agent.
-- The [witness-as-increment morphism](../../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/predicated-work-services-section/content/glossary/terms/witness-as-increment.md) is the replication step: a witness an agent produces propagates to other agents' replicas.
+- The [witness-as-increment morphism](../../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/predicated-work-services-section/content/text/glossary/terms/witness-as-increment.md) is the replication step: a witness an agent produces propagates to other agents' replicas.
 - The [adjudicate-witness-conflict morphism](../../../../../../../../../../../social-science-services-section/services/social-theory-science-services-section/content/text/documents/articles/notes/undated/adjudicate-witness-conflict.md) handles the case where two agents' local rules produce conflicting consequents on the same cell — this is the $\top$-state case in the bilattice, not a convergence failure.
 
 The compatibility condition rules out rules that would force incompatible *knowledge-order* assertions: both $v(\psi) = \mathbf{f}$ and $v(\psi) = \mathbf{t}$ from different agents' rule systems.

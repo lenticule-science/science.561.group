@@ -1,6 +1,6 @@
 ---
 description: A recipe book I found in an antique shop in Pittsboro, NC. Probably copyright someone else.
-title: "Spade and Trowel Garden Club: Favorite Recipes 1962-63"
+name: "Spade and Trowel Garden Club: Favorite Recipes 1962-63"
 ---
 
 > The following transcription uses the same characters as the original book. It's worth noting, since `1-4` usually means `1/4`.

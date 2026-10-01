@@ -9,7 +9,7 @@ depends-on:
 see-also:
   - distributed-settling-system
   - crdt-convergence-with-per-observer-rules
-title: Ruled multi-observer system
+name: Ruled multi-observer system
 description: An extension of the multi-observer system carrying per-observer closure-rule data.
 ---
 

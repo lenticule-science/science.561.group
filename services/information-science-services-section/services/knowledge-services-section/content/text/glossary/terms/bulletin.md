@@ -1,6 +1,6 @@
 ---
 id: 4a29f148-bdf2-4030-961e-c258fb8708c7
-title: bulletin
+name: bulletin
 date-created: 2025-07-28
 ---
 

@@ -4,7 +4,7 @@ class: refactor-generator
 status: draft
 depends-on: [codebase-cell-system, refactor, extract]
 realizes: [refactor]
-title: Inline
+name: Inline
 description: "The inverse of extract: given an extracted definition $d'$ that is referenced only from $d$, fold $d'$'s cells back into $d$ and remove the references edge."
 ---
 

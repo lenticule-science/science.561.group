@@ -1,6 +1,6 @@
 ---
 id: 480dd22f-d4dc-4540-94e9-91243de24787
-title: naïve scientist
+name: naïve scientist
 date-created: 2025-08-29
 ---
 

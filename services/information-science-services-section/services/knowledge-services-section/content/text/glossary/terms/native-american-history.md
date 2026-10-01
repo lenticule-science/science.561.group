@@ -1,6 +1,6 @@
 ---
 id: a8d3bd75-8f68-421d-b3bc-036d31249c04
-title: Native American history
+name: Native American history
 date-created: 2025-09-01
 type: history
 visibility: public

@@ -11,7 +11,6 @@ contains:
   - swot-analysis
   - target-market
 produces: marketing-plan
-title: "Market Analysis"
 description: "Market analysis is the systematic study of the external conditions in which a business operates: who the potential customers are, what competitors exist, how large the addressable market is, and what trends are shaping demand. It answers the question \"is there a viable market for this?\" before the business commits capital to finding out the hard way."
 date-modified: 2026-03-09
 ---

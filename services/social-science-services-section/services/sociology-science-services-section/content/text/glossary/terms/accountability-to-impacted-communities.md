@@ -33,7 +33,6 @@ keywords:
 cites:
   - madrprinciples2020
   - madrabout2025
-title: "Accountability to Impacted Communities"
 authors:
   - claude
 type: term

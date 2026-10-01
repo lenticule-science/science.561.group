@@ -1,5 +1,5 @@
 ---
-title: "Entails"
+name: "Entails"
 identity: entails
 description: "Entails is the ordering of recognitions: the relationship that holds when one recognition includes another."
 date-created: 2026-03-04

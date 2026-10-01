@@ -9,7 +9,6 @@ keywords:
 description: "The structuring of experience into story — with characters, sequence, causation, and meaning. Narrative is not a neutral description of what happened but a political act that determines which experiences count, whose perspective organizes the telling, and what the story means."
 date-modified: 2026-03-09
 part-of: sociology/schools/anarchism/schools/anarchist-communication/terms
-title: "Narrative"
 type: term
 tags:
   - Sociology

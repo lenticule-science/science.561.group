@@ -1,5 +1,5 @@
 ---
-title: "Accessibility Relation"
+name: "Accessibility Relation"
 aliases:
   - "accessibility relation"
   - "accessibility relations"

@@ -10,7 +10,7 @@ see-also:
 references:
   - Hofstra-van Oosten 2003
   - van Oosten 2008
-title: oPCA — Ordered Partial Combinatory Algebra
+name: oPCA — Ordered Partial Combinatory Algebra
 description: "An ordered partial combinatory algebra (oPCA) is a PCA $(A, \\cdot)$ equipped with a preorder $\\leq$ on $A$ such that application is monotone:"
 ---
 

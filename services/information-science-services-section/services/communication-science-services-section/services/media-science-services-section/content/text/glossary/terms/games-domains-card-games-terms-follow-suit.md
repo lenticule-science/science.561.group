@@ -1,5 +1,5 @@
 ---
-title: "follow suit"
+name: "follow suit"
 type: "term"
 date-created: 2026-03-01
 ---

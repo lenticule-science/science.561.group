@@ -3,7 +3,7 @@ type: definition
 class: closure-rule
 symbol: "\\sigma_n"
 depends-on: [step-n-substitution-recurrence, closure-rule-system, closure-rule, closure-rule-language, closure-operator]
-title: Step-n substitution rule
+name: Step-n substitution rule
 description: A formal closure-rule object capturing the step-n recurrence structure.
 ---
 

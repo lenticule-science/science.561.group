@@ -1,7 +1,7 @@
 ---
 author: emsenn
 id: 130901da-561e-4823-a0a2-44fa95e54c1f
-title: The Outer Worlds
+name: The Outer Worlds
 date-created: 2025-07-21
 ---
 

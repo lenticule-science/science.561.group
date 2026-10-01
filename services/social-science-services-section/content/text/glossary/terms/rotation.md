@@ -1,5 +1,5 @@
 ---
-title: "Rotation"
+name: "Rotation"
 description: "Cycling through a sequence of role-holders or duty assignments over time — the temporal mechanism that prevents power concentration, distributes burden, and builds breadth."
 defines: rotation
 date-created: 2026-04-04
@@ -70,7 +70,7 @@ Fixed sequence is most predictable but least flexible; randomized is fairest but
 Folkard and Tucker (2003) showed that 12-hour shifts are often optimal for operational roles because they balance fatigue against handoff cost. **Scope** is what gets rotated: a single role, a set of roles, or entire offices. **Continuity** is whether people exit entirely or rotate back to previous roles—a fixed cycle (A→B→C→A) creates predictable long-term patterns, while one-time assignment creates definitive separation.
 
 Agricultural rotation operates by the same structural logic.
-[Crop rotation](../../../../../domestic-science-services-section/services/domestic-production-services-section/services/gardening-services-section/content/glossary/terms/crop-rotation.md) cycles different crops through the same fields to manage soil fertility and break pest cycles.
+[Crop rotation](../../../../../domestic-science-services-section/services/domestic-production-services-section/services/gardening-services-section/content/text/glossary/terms/crop-rotation.md) cycles different crops through the same fields to manage soil fertility and break pest cycles.
 The field is the fixed position; the crop is what rotates.
 Grass-clover one year restores nitrogen; grain the next consumes it; fallow returns land to recovery.
 The pattern is recurrent—the sequence repeats across years—and the mechanism is identical to organizational rotation: distributing demand across a resource to prevent depletion and allow recovery.
@@ -81,4 +81,4 @@ The practice was not accidental: it was encoded in the constitutional structure 
 Woodburn (1982) shows the same pattern in East African pastoralist societies where formal offices don't exist but rotation of hunting leadership and resource access prevents the emergence of permanent hierarchy.
 Rotation is how you maintain [recurrence](recurrence.md) of power-holding—the pattern of governance repeats, but the occupant changes.
 
-See also: [Recurrence](recurrence.md) · [Office](../../../../../services/economics-and-business-science-services-section/services/business-science-services-section/content/text/glossary/terms/office.md) · [Shift](./shift.md) · [Cadence](./cadence.md) · [Succession](../../../../services/sociology-science-services-section/services/work-science-services-section/services/predicated-work-services-section/services/predicated-governance-services-section/content/glossary/terms/succession.md) · [Incumbent](./incumbent.md)
+See also: [Recurrence](recurrence.md) · [Office](../../../../../services/economics-and-business-science-services-section/services/business-science-services-section/content/text/glossary/terms/office.md) · [Shift](./shift.md) · [Cadence](./cadence.md) · [Succession](../../../../services/sociology-science-services-section/services/work-science-services-section/services/predicated-work-services-section/services/predicated-governance-services-section/content/text/glossary/terms/succession.md) · [Incumbent](./incumbent.md)

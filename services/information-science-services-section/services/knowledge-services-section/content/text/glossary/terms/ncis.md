@@ -1,6 +1,6 @@
 ---
 id: 94bbc666-0828-45b6-b5f6-76ac438e0f88
-title: NCIS
+name: NCIS
 type: television show
 visibility: public
 ---

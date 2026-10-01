@@ -9,7 +9,6 @@ tags: []
 description: "Real-time compositional decision-making within a framework of constraints."
 date-updated: 2026-03-09
 part-of: music/disciplines/music-theory/terms
-title: "Improvisation"
 defines:
   - "Improvisation"
   - "improvisatory"

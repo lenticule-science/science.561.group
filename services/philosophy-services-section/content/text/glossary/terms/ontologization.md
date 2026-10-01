@@ -11,7 +11,6 @@ acts-on: contingency
 contrasts-with: relational-ontology
 analogous-to: [reification, naturalization]
 inverse-of: contingency
-title: "Ontologization"
 defines:
   - "Ontologization"
   - "ontologize"

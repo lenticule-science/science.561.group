@@ -1,6 +1,6 @@
 ---
 id: e834dcc7-792d-4577-bff0-279b7041b57a
-title: interrogative isolation of relational morphisms
+name: interrogative isolation of relational morphisms
 date-created: 2025-10-15
 ---
 

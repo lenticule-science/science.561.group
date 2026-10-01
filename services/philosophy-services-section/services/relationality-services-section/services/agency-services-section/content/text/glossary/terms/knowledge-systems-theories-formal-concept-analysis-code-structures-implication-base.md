@@ -4,7 +4,7 @@ class: derived-content
 status: stable
 depends-on: [formal-context, attribute-implication]
 see-also: [duquenne-guigues-completeness]
-title: Implication base
+name: Implication base
 description: An implication base of a formal context $\mathbb{K} = (G, M, I)$ is a set $\mathcal{B} \subseteq \mathcal{P}(M) \times \mathcal{P}(M)$ of attribute implications such that the deductive closure of $\mathcal{B}$ under the Armstrong rules…
 ---
 

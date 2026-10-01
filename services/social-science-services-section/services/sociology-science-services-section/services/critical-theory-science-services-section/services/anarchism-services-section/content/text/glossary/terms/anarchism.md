@@ -8,7 +8,6 @@ tags: []
 description: "The political philosophy and practice that opposes all forms of domination — state, capital, patriarchy, colonialism — and seeks to organize social life through voluntary, non-hierarchical association."
 date-modified: 2026-03-09
 part-of: sociology/schools/anarchism/terms
-title: "Anarchism"
 type: term
 defines:
   - "Anarchism"

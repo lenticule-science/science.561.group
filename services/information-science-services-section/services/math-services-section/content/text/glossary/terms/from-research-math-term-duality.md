@@ -1,5 +1,5 @@
 ---
-title: "Duality"
+name: "Duality"
 type: "term"
 date-created: 2026-03-29
 ---

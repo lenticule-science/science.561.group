@@ -12,7 +12,6 @@ enables:
   - conscientization
 governs:
   - curriculum
-title: backward design
 defines:
 - backward design
 - understanding by design

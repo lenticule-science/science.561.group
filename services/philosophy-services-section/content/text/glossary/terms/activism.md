@@ -1,6 +1,6 @@
 ---
 id: e3db3a27-f692-410b-8515-ce9d007bb071
-title: activism
+name: activism
 date-created: 2025-08-25
 type: condition
 visibility: public

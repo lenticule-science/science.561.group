@@ -1,5 +1,5 @@
 ---
-title: "Recursion"
+name: "Recursion"
 type: "definition"
 date-created: 2025-12-26
 ---

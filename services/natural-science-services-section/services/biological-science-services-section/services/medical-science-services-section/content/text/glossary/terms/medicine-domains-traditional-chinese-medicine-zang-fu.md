@@ -1,5 +1,5 @@
 ---
-title: "Zang-Fu (Organ-Function Systems)"
+name: "Zang-Fu (Organ-Function Systems)"
 type: "term"
 date-created: 2026-03-06
 ---

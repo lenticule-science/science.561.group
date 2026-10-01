@@ -20,7 +20,6 @@ references:
 contrasts-with: opacity
 operates-through: legibility
 enables: proceduralism
-title: "Crisis Capture"
 ---
 
 Crisis capture is the process by which external institutions — states, corporations, NGOs, or development agencies — absorb community-led crisis responses into managerial or extractive frameworks. A neighborhood organizes its own flood relief; the city takes over coordination and routes resources through official channels that exclude the people who built the response. A community develops mutual aid networks during a pandemic; a nonprofit formalizes them into a grant-funded program with reporting requirements, branding, and institutional oversight. The autonomous response is captured and reformatted into something the institution can administer.

@@ -14,7 +14,6 @@ aliases:
 field: liberalism
 visibility: public
 type: worlding framework
-title: "Late Liberalism"
 ---
 
 Late liberalism, as theorized by [Elizabeth Povinelli](../../../../../../../../../../../../general/people/elizabeth-povinelli.md), names the phase of liberal governance that follows the recognition of liberalism's colonial, racial, and environmental violence — in which that recognition is managed through inclusion, multiculturalism, and procedural reform rather than structural transformation.

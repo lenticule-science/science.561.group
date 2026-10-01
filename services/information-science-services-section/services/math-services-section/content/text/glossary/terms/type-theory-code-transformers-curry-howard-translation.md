@@ -3,7 +3,7 @@ type: definition
 class: structure-preserving-translation
 status: current
 depends-on: [simply-typed-lambda-calculus, typing-judgment, function-type, product-type, sum-type, empty-type, unit-type]
-title: Curry-Howard translation
+name: Curry-Howard translation
 description: The Curry-Howard translation is the bidirectional structure-preserving correspondence between proofs in intuitionistic natural deduction and terms of the simply-typed-lambda-calculus (and, in extended form, between intuitionistic logic…
 ---
 

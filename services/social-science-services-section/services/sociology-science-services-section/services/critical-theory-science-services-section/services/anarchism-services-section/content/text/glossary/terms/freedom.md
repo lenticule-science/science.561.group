@@ -7,7 +7,6 @@ aliases:
   - "liberation"
 tags: []
 description: "The condition of living without domination — not the liberal freedom to choose among options within a system of authority, but the collective capacity to organize life without hierarchy, coercion, or command."
-title: "Freedom"
 type: term
 defines:
   - "Freedom (anarchist)"

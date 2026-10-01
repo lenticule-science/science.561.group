@@ -3,7 +3,7 @@ aliases:
 - process of genring
 - genring process
 id: e0a0197f-faa2-407c-ba4c-7710df189b32
-title: genre scripting
+name: genre scripting
 date-created: 2025-09-02
 visibility: public
 ---

@@ -48,7 +48,7 @@ home; this section relates to it rather than duplicating or relocating it:
   `japanese-knotweed.md` — the botanical/invasive-species record for
   knotweed, including its edibility and *itadori* culinary use, remains
   in botany.
-- [`agricultural-science-services-section`'s `gardening-services-section`](../../../../../domestic-science-services-section/services/domestic-production-services-section/services/gardening-services-section/content/glossary/terms/wild-garlic-ramps.md)'s
+- [`agricultural-science-services-section`'s `gardening-services-section`](../../../../../domestic-science-services-section/services/domestic-production-services-section/services/gardening-services-section/content/text/glossary/terms/wild-garlic-ramps.md)'s
   `wild-garlic-ramps.md` — the most complete existing foraging-ethics
   document in the library, covering the "10 percent once a decade"
   sustainable-harvest guideline and Indigenous-appropriation concerns, but

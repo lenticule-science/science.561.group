@@ -1,6 +1,6 @@
 ---
 id: 6ed83166-3335-4cd8-a1e7-cb5a39488963
-title: Dead Kennedys
+name: Dead Kennedys
 date-created: 2025-09-05
 type: music artist
 ---

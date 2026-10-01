@@ -1,5 +1,5 @@
 ---
-title: "Acedia"
+name: "Acedia"
 defines: acedia
 aliases: [acedia, sloth, spiritual sloth, accidie]
 description: "The Thomist vice — one of the seven deadly sins in the Western tradition — of spiritual torpor: the inability to rouse oneself to the good one knows one should pursue. Acedia is not laziness in the ordinary sense (the disinclination to work) but a specifically spiritual condition: the soul's withdrawal from its own ends, often manifest as restlessness, distraction, and aversion to what would actually fulfill it."

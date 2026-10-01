@@ -1,5 +1,5 @@
 ---
-title: "line height"
+name: "line height"
 type: "term"
 date-created: 2025-12-31
 ---

@@ -9,7 +9,6 @@ keywords:
   - gender-theory
   - black-radical-tradition
 description: "An analytical method that reads the co-constitution of race, sexuality, gender, and political economy — treating none as prior or autonomous."
-title: "Queer of Color Analysis"
 type: term
 tags:
   - GenderTheory

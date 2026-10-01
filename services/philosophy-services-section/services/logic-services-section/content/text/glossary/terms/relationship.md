@@ -15,7 +15,7 @@ explores:
   - predication-hyperdoctrine
   - bilattice-k-axiom-multi-agent-epistemic
   - kz-diamond-hierarchical-swarm-coordination
-title: "Relation between the two \"bigraded\" structures: cohomology bigrading vs common-knowledge bigrading"
+name: "Relation between the two \"bigraded\" structures: cohomology bigrading vs common-knowledge bigrading"
 description: The corpus contains two distinct bigraded structures, both natural and both called "bigraded," exploiting different two-axis features of the predication hyperdoctrine.
 ---
 

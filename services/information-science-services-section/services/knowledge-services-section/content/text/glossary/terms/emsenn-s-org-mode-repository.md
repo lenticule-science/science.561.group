@@ -1,4 +1,4 @@
 ---
-title: emsenn's Org-mode repository
+name: emsenn's Org-mode repository
 ---
 

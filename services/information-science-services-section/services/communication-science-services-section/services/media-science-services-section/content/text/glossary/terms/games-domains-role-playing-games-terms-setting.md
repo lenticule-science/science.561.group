@@ -1,5 +1,5 @@
 ---
-title: "setting"
+name: "setting"
 type: "term"
 date-created: 2026-01-01
 ---

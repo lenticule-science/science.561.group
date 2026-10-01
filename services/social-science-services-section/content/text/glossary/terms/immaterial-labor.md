@@ -1,5 +1,5 @@
 ---
-title: "Immaterial Labor"
+name: "Immaterial Labor"
 description: "Lazzarato's term for labor that produces the informational and cultural content of the commodity — labor whose characteristic outputs are subjectivity, communication, knowledge, and affect, that mobilizes capacities developed largely outside the wage relation, and whose value cannot be measured in labor time as industrial labor could."
 defines: immaterial-labor
 related: [labor-process, real-subsumption, general-intellect, multitude, social-factory]

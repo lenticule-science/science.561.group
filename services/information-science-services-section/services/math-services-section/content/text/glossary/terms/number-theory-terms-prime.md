@@ -1,5 +1,5 @@
 ---
-title: "Prime"
+name: "Prime"
 aliases:
   - "prime"
   - "prime number"

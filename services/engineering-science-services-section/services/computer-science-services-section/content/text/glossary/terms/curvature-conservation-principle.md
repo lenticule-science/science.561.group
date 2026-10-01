@@ -1,7 +1,7 @@
 ---
 id: ce55d5cb-98b0-42db-909d-f136d5864bda
 node-relations: "((field . mathematical physics) (instantiates . principle) (field . information theory) (field . general relativity) (field . quantum cosmology) (domain . Fisher-Rao manifold) (deriving . Theorem of Information-Theoretic Stability as Reward Function))"
-title: Curvature Conservation Principle
+name: Curvature Conservation Principle
 date-created: 2025-10-11
 ---
 

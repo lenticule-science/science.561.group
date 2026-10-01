@@ -18,7 +18,6 @@ references:
     title: "Diasporas in Modern Societies: Myths of Homeland and Return"
     publication: "Diaspora: A Journal of Transnational Studies"
     year: 1991
-title: "Diaspora"
 ---
 
 Diaspora names a people dispersed from their homeland who maintain collective identity, memory, and connection across distance. The term originates from the Greek *diaspora* ("scattering"), first applied to Jewish communities living outside the Land of Israel, and has been extended to Armenian, African, Kurdish, Palestinian, and many other dispersed populations.

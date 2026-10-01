@@ -7,7 +7,6 @@ aliases:
   - "anarcho-communist"
 tags: []
 description: "The current within anarchism that advocates collective ownership of productive resources and distribution based on need — communism without the state, organized through mutual aid, federation, and voluntary association."
-title: "Anarcho-Communism"
 type: term
 defines:
   - "Anarcho-Communism"

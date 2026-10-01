@@ -24,7 +24,6 @@ references:
       - literal: Simpson
     issued:
       - year: 2017
-title: Embodied Transmission
 ---
 
 [Embodied transmission](embodied-transmission.md) is the carrying of knowledge in and through the body — in skilled movement, posture, timing, sensation, and the trained responsiveness that comes from sustained practice. Knowledge transmitted this way includes how to farm, build, heal, fight, dance, cook, navigate, and make. It cannot be fully captured in text: a manual can describe how to throw a pot, but the knowledge lives in the hands, the posture, the timing, the feel of the clay.

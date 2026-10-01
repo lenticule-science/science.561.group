@@ -3,7 +3,7 @@ type: definition
 class: groupoid
 symbol: "\\mathrm{KP}^\\simeq(B)"
 depends-on: [predication-settling, mutually-locally-derivable, settling-morphism, settling-automorphism-1-truncation]
-title: Settling fiber groupoid
+name: Settling fiber groupoid
 description: "For a fixed base $B = (\\mathbf{L}, \\mathcal{C}, E, \\lambda)$, the settling fiber groupoid $\\mathrm{KP}^\\simeq(B)$ has:"
 ---
 

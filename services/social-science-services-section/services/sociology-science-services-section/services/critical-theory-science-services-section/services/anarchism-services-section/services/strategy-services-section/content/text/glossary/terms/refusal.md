@@ -10,7 +10,6 @@ keywords:
   - settler-colonialism
   - SettlerColonialism
 part-of: sociology/schools/anarchism/topics/strategy/terms
-title: "Refusal"
 defines:
   - "Refusal"
   - "politics of refusal"

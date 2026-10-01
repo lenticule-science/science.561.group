@@ -25,7 +25,6 @@ references:
     year: 2025
     publication: Mutual Aid Disaster Relief
     url: https://mutualaiddisasterrelief.org/about/
-title: "Survival Programs"
 authors:
   - claude
 type: term

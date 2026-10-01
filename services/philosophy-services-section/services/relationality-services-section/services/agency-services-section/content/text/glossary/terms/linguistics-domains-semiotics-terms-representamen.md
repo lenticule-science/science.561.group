@@ -1,5 +1,5 @@
 ---
-title: "representamen"
+name: "representamen"
 type: "term"
 date-created: 2026-03-01
 ---

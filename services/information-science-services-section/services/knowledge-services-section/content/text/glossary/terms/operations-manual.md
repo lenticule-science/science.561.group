@@ -1,5 +1,5 @@
 ---
-title: Operations Manual
+name: Operations Manual
 ---
 
 # Projects

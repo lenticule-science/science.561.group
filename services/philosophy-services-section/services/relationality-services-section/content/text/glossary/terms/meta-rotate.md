@@ -1,5 +1,5 @@
 ---
-title: "Meta-Rotate"
+name: "Meta-Rotate"
 identity: meta-rotate
 description: "Meta-Rotate is cyclic exchange: the act of shifting the roles within a system so that each component takes the position of the next."
 date-created: 2026-03-04

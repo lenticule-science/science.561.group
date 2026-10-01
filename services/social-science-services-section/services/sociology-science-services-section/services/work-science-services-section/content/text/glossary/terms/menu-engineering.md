@@ -13,7 +13,6 @@ optimizes:
   - gross-margin
   - average-check
 requires: cost-of-goods-sold
-title: "Menu Engineering"
 tags:
   - business
 date-modified: 2026-03-09

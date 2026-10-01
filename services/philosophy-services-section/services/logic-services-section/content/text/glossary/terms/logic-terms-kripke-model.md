@@ -1,5 +1,5 @@
 ---
-title: "Kripke Model"
+name: "Kripke Model"
 aliases:
   - "kripke model"
   - "Kripke model"

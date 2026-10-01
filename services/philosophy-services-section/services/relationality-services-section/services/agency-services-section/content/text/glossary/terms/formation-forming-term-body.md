@@ -1,5 +1,5 @@
 ---
-title: Forming Term Body
+name: Forming Term Body
 description: Story.
 ---
 # Forming Term Body

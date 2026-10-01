@@ -12,7 +12,7 @@ method:
   - "[[emsenn thought]]"
 yield:
   - "[[semantic coherence]]"
-title: Monadastery from emsvault root
+name: Monadastery from emsvault root
 description: A monadastery is an interpretative space where telemetric casting is practiced.
 ---
 

@@ -36,7 +36,6 @@ references:
     container-title: Seuil/Gallimard
     issued:
       - year: 2004
-title: "Governmentality"
 tags:
   - critical-theory
 date-updated: 2026-03-09

@@ -9,7 +9,7 @@ depends-on:
 see-also:
   - relation-graph-update.md
   - ../specifications/note-types/_index.md
-title: Staging area to theory promotion decision
+name: Staging area to theory promotion decision
 description: The promotion morphism is the discipline operation that moves a note from the staging area (where un-typed or in-progress material lives, typically operations-side) into a settled location in the vault, under a typed home, with all its…
 ---
 

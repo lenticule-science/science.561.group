@@ -1,5 +1,5 @@
 ---
-title: "Milestone"
+name: "Milestone"
 description: "A recognizable state of a plan — a configuration of task completions that marks meaningful progress toward the plan's goal."
 defines: milestone
 date-created: 2026-04-03

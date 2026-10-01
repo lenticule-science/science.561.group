@@ -24,4 +24,4 @@ The Seneca curve is a model shape fit to simple system-dynamics equations and a 
 - [Seneca effect](../../../glossary/terms/seneca-effect.md)
 - [Limits to growth](../../../glossary/terms/limits-to-growth.md)
 - [Peak everything](../../../glossary/terms/peak-everything.md)
-- [Catabolic collapse](../../../../../../../../../../history-and-archaeology-science-services-section/services/social-history-science-services-section/content/glossary/terms/catabolic-collapse.md)
+- [Catabolic collapse](../../../../../../../../../../history-and-archaeology-science-services-section/services/social-history-science-services-section/content/text/glossary/terms/catabolic-collapse.md)

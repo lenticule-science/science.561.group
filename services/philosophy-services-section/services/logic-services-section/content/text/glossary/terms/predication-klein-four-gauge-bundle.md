@@ -4,7 +4,7 @@ class: equivariant-sheaf
 symbol: "\\mathcal{G}_{v}"
 depends-on: [settling-associated-sheaf, bitopological-settling-site, four-bilattice, internal-z2-gauge, negation, predication-settling]
 see-also: [equivariant-cohomology-decomposition, internal-z2-gauge, strong-mld-via-composed-duality, jung-rivieccio-duality]
-title: Klein-four gauge bundle
+name: Klein-four gauge bundle
 description: The Klein-four gauge bundle of a predication settling is the $(\mathbb{Z}/2 \times \mathbb{Z}/2)$-equivariant sheaf on the bitopological settling site arising from the four bilattice involutions acting fiberwise.
 ---
 

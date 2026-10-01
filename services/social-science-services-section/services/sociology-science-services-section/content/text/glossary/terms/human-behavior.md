@@ -1,6 +1,6 @@
 ---
 id: 522bc8d5-bc22-405a-80cf-485768e56cae
-title: human behavior
+name: human behavior
 date-created: 2025-08-29
 visibility: public
 ---

@@ -1,5 +1,5 @@
 ---
-title: "semiosis"
+name: "semiosis"
 type: "term"
 date-created: 2026-03-01
 ---

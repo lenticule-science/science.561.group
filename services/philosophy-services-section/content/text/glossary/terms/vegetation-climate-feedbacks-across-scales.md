@@ -1,7 +1,7 @@
 ---
 id: bd003efc-4837-4d71-a628-caef0068571b
 roam-refs: "@miralles_vegetation_climate_2025"
-title: Vegetation–climate feedbacks across scales
+name: Vegetation–climate feedbacks across scales
 date-created: 2025-10-06
 visibility: public
 type: journal article

@@ -1,5 +1,5 @@
 ---
-title: "Verbascum Thapsus"
+name: "Verbascum Thapsus"
 aliases:
   - mullein
   - great mullein

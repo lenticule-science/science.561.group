@@ -35,4 +35,4 @@ Unlike cultivated cucumber and melon, *M. scabra* exhibits notable drought toler
 
 ## See also
 
-[Mexican sour gherkin cultivation](../../../../../../../../../../../domestic-science-services-section/services/domestic-production-services-section/services/gardening-services-section/content/glossary/terms/mexican-sour-gherkin.md)
+[Mexican sour gherkin cultivation](../../../../../../../../../../../domestic-science-services-section/services/domestic-production-services-section/services/gardening-services-section/content/text/glossary/terms/mexican-sour-gherkin.md)

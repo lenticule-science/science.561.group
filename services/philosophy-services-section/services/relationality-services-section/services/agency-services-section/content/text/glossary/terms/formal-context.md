@@ -4,7 +4,7 @@ class: substrate-object
 status: stable
 depends-on: []
 see-also: [concept-lattice, derivation-operator]
-title: Formal context
+name: Formal context
 description: A formal context is a triple $\mathbb{K} = (G, M, I)$ where $G$ and $M$ are sets and $I \subseteq G \times M$.
 ---
 

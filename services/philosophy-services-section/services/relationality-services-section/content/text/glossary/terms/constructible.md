@@ -1,5 +1,5 @@
 ---
-title: "Constructible"
+name: "Constructible"
 identity: constructible
 description: "Constructible is the condition that captures relationality's core commitment: things are constituted through their relations."
 date-created: 2026-03-04

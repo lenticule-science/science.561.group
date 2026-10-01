@@ -16,7 +16,7 @@ references:
   - Hyland-Ong 1996
   - Abramsky-Ghica-Murawski-Ong-Stark 2004
   - Caires-Pfenning 2010
-title: CGS — Concurrent Games with Symmetry
+name: CGS — Concurrent Games with Symmetry
 description: Concurrent games with symmetry (CGS) is the $$-autonomous category constructed by Rideau-Winskel (2011) and Castellan-Clairambault-Winskel (2014, 2017).
 ---
 

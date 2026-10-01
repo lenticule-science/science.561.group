@@ -10,7 +10,6 @@ tags: []
 description: "The deliberate false labeling of movement participants as police informants, used by state agencies to destroy trust within political organizations."
 date-modified: 2026-03-09
 part-of: sociology/topics/state-repression/terms
-title: "Snitch-Jacketing"
 type: term
 defines:
   - "Snitch-Jacketing"

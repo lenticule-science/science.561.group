@@ -34,7 +34,6 @@ references:
       - literal: Hooks
     issued:
       - year: 1994
-title: dialogic education
 ---
 
 [Dialogic education](dialogic-education.md) is [Paulo Freire](../../../../../../general/people/paulo-freire.md)'s alternative to the [banking model](banking-model.md) [@freire_PedagogyOppressed_1970]. In dialogic (or problem-posing) education, teacher and student are co-investigators who examine the world together through dialogue. The teacher does not transmit knowledge; instead, teacher and student pose problems drawn from their shared situation and investigate them collaboratively.

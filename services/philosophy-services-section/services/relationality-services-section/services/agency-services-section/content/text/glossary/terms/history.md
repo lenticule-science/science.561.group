@@ -1,5 +1,5 @@
 ---
-title: "History"
+name: "History"
 type: "page"
 description: A History is an element of the history monoid (T, ⋆, e) — the initial Axiomatic Relational History Poset over a finite step set Σ and commutation relation I ⊆ Σ×Σ.
 ---

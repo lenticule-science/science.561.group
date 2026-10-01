@@ -3,7 +3,7 @@ kind: morphism
 type: rule-morphism
 symbol: "\\alpha_{\\Sigma_1}^{\\Sigma_2}"
 depends-on: [step-n-substitution-rule, step-n-substitution-recurrence]
-title: Alphabet-extension morphism
+name: Alphabet-extension morphism
 description: The morphism between step-$n$ substitution rules over different-but-related alphabets at the same step depth $n$.
 ---
 

@@ -8,7 +8,6 @@ tags: []
 produced-by: analysis
 enables: validity
 requires: formal-language
-title: "Logical Form"
 ---
 
 The **logical form** of a statement or argument is its underlying structural pattern, stripped of particular content and expressed in the notation of formal logic. Revealing logical form is one of the core tasks of [analysis](analysis.md) in [analytic philosophy](../index.md).

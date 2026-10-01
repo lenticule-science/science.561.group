@@ -12,7 +12,7 @@ description: The four virtues — wówačhantognaka (generosity), wóksape (wisd
 
 The [four virtues](../../../../indigenous/theories/lakotaean-philosophy/concepts/four-virtues.md) — *wówačhantognaka* (generosity), *wóksape* (wisdom), *wóohitika* (bravery), *wówačhiŋtȟaŋka* (fortitude) — are realized in the substrate as a family of *evaluation predicates* on conduct cells.
 
-This is a specialization of predicated-governance's [conduct-teachings-as-evaluation-predicates](../../../../../../../../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/predicated-work-services-section/services/predicated-governance-services-section/content/glossary/terms/conduct-teachings-as-evaluation-predicates.md) — the parent treats conduct-teachings generally; this specialization fixes the specific four virtues that constitute the Lakota evaluation system.
+This is a specialization of predicated-governance's [conduct-teachings-as-evaluation-predicates](../../../../../../../../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/predicated-work-services-section/services/predicated-governance-services-section/content/text/glossary/terms/conduct-teachings-as-evaluation-predicates.md) — the parent treats conduct-teachings generally; this specialization fixes the specific four virtues that constitute the Lakota evaluation system.
 
 ## The four evaluation predicates
 

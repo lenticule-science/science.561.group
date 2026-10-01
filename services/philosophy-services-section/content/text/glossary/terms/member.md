@@ -1,6 +1,6 @@
 ---
 id: 265b6725-5b20-408c-8aff-593c9d76304f
-title: member
+name: member
 date-created: 2025-08-15
 type: structure
 visibility: public

@@ -31,7 +31,6 @@ references:
     authors:
       - Wenger
     year: 1998
-title: community of practice
 defines:
 - community of practice
 - communities of practice

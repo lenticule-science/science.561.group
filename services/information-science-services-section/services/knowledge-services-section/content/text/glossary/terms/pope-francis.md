@@ -1,6 +1,6 @@
 ---
 id: b211c43b-9474-4245-9bde-4a6ab16ad80b
-title: Pope Francis
+name: Pope Francis
 date-created: 2025-08-31
 visibility: public
 ---

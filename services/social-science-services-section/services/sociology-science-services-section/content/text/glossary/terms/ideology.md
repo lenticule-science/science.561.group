@@ -7,7 +7,6 @@ aliases:
 tags: []
 keywords:
   - anarchism
-title: "Ideology"
 description: "The system of ideas, assumptions, and narratives that makes domination appear natural, necessary, or invisible — not a conspiracy of deception but a structural feature of hierarchical societies in which the perspective of the dominant is encoded as common sense."
 defines: "ideology (anarchist analysis)"
 type: term

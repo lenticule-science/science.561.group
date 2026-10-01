@@ -23,7 +23,6 @@ references:
       - literal: Freire
     issued:
       - year: 1970
-title: banking model
 defines:
 - banking model
 - banking concept of education

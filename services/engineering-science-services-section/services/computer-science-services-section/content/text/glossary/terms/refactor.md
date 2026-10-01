@@ -3,7 +3,7 @@ type: object
 class: substrate-automorphism-candidate
 status: draft
 depends-on: [codebase-cell-system, settling-morphism, invisible-automorphism-subgroup]
-title: Refactor
+name: Refactor
 description: A refactor of a codebase settling $v^{\mathrm{code}}$ under witness language $W$ is an element of the invisible-automorphism subgroup $NW(v^{\mathrm{code}})$ — an automorphism of the codebase cell-system that fixes every cell of $W$ that…
 ---
 

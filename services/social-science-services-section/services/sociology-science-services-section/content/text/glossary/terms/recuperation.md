@@ -9,7 +9,6 @@ tags: []
 description: "The process by which radical ideas, practices, and aesthetics are absorbed into dominant culture and stripped of their oppositional content."
 keywords:
   - Anarchism
-title: "Recuperation"
 defines: "recuperation"
 type: term
 ---

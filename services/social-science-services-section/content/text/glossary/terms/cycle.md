@@ -1,5 +1,5 @@
 ---
-title: "Cycle"
+name: "Cycle"
 description: "One complete iteration of a recurrence pattern — from start through all phases back to the starting condition, carrying novelty from each pass."
 defines: cycle
 date-created: 2026-04-04

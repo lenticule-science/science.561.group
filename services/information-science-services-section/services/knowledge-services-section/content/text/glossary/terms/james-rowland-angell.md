@@ -1,6 +1,6 @@
 ---
 id: 6d9aa7c9-f557-4778-9f72-f90b3e4714e2
-title: James Rowland Angell
+name: James Rowland Angell
 date-created: 2025-09-01
 visibility: public
 ---

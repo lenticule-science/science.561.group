@@ -5,7 +5,7 @@ class: theory
 symbol: "T"
 depends-on: [predicate-category, closure-operator, predication-model, predication-settling, entity-set, residuated-lattice]
 see-also: [resource, theory-relative-ideal, researching, subtheory]
-title: Predication theory
+name: Predication theory
 description: A predication theory is a quadruple $T = (\mathbf{L}, \mathcal{C}, E, \mathrm{Cl})$ where $\mathbf{L}$ is an integral commutative residuated lattice, $\mathcal{C}$ is a predicate category with finite limits, $E$ is an entity set, and…
 ---
 

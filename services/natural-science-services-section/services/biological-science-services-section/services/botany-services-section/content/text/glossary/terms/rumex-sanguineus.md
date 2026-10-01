@@ -52,4 +52,4 @@ In its native European habitats, *Rumex sanguineus* is a mid-successional specie
 - [Oxalic acid in plant chemistry](../chemistry/terms/oxalic-acid.md)
 - [Anthocyanins and plant pigmentation](../chemistry/terms/anthocyanins.md)
 - [Perennial vegetable crops](../ecology/terms/perennial-vegetables.md)
-- [Bloody dock cultivation](../../../../../../../../../domestic-science-services-section/services/domestic-production-services-section/services/gardening-services-section/content/glossary/terms/bloody-dock.md)
+- [Bloody dock cultivation](../../../../../../../../../domestic-science-services-section/services/domestic-production-services-section/services/gardening-services-section/content/text/glossary/terms/bloody-dock.md)

@@ -1,5 +1,5 @@
 ---
-title: "Combination"
+name: "Combination"
 aliases:
   - "combination"
   - "combinations"

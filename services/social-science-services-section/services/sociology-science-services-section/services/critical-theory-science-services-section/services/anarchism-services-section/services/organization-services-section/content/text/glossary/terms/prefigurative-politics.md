@@ -7,7 +7,6 @@ aliases:
 tags: []
 description: "The practice of building the social relations you want in the present rather than deferring them to a future that will arrive after the revolution. The means must embody the ends."
 part-of: sociology/schools/anarchism/topics/organization/terms
-title: "Prefigurative Politics"
 defines:
   - "Prefigurative Politics"
   - "prefiguration"

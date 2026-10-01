@@ -1,5 +1,5 @@
 ---
-title: "Multimessenger fusion as a heterogeneous-fiber bilattice meet"
+name: "Multimessenger fusion as a heterogeneous-fiber bilattice meet"
 type: question
 status: open
 component-of: predicated-astronomy

@@ -1,5 +1,5 @@
 ---
-title: "Review"
+name: "Review"
 description: "The act of comparing actual outcomes against planned outcomes — the structured assessment that produces learning and feeds the feedback stage. As a record, a review is a container of findings."
 defines: review
 date-created: 2026-04-03

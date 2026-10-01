@@ -10,7 +10,6 @@ contrasts-with: natality
 produces: cruel-optimism
 requires: the-child
 acts-on: political-life
-title: "Reproductive Futurism"
 ---
 
 Reproductive futurism, as theorized by [Lee Edelman](../../../../../../../../../../../information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/lee-edelman.md) in *No Future: Queer Theory and the Death Drive* (2004), names the political fantasy that organizes all of politics around the figure of the Child. The Child — not any actual child, but the abstract [symbol](../../../../../../../../../../content/text/linguistics/topics/semiotics/terms/symbol.md) of futurity — becomes the ultimate justification for every political sacrifice. Under reproductive futurism, political life is oriented toward securing an unbroken lineage stretching into the indefinite future: the survival of the community through biological and cultural reproduction. Every demand for restraint, every call for sacrifice, every deferral of present needs is grounded in the imperative to protect the Child's future.

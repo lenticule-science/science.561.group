@@ -3,7 +3,7 @@ type: definition
 class: prestack
 symbol: "\\mathscr{M}^{\\mathrm{pre}}"
 depends-on: [parameter-base-category, parameter-base-topology, visible-settling-fiber-groupoid, settling-fiber-groupoid]
-title: Settling moduli prestack
+name: Settling moduli prestack
 description: "The pseudo-functor $\\mathbf{B}^{\\mathrm{op}} \\to \\mathbf{Gpd}$ sending each base $(\\mathbf{L}, \\mathcal{C}, E, \\lambda) \\in \\mathbf{B}$ to its visible settling fiber groupoid:"
 ---
 

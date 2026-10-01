@@ -4,7 +4,7 @@ class: substrate
 status: draft
 depends-on: [predication-cell-set, predication-settling, witness-as-increment]
 realizes: [codebase-as-substrate-content]
-title: Codebase cell-system
+name: Codebase cell-system
 description: The codebase of a software project, presented as a predication-cell-set over an entity set $E{\mathrm{code}}$ and a predicate alphabet $\Pi{\mathrm{code}}$.
 ---
 

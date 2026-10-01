@@ -3,7 +3,7 @@ type: definition
 class: rewrite-step
 status: current
 depends-on: [beta-reduction, substitution-operator]
-title: Beta-reduction step
+name: Beta-reduction step
 description: A beta-reduction step is a single application of the beta-reduction rule to a redex anywhere inside a term.
 ---
 

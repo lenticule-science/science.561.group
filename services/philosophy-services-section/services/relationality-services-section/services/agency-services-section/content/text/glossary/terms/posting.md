@@ -1,5 +1,5 @@
 ---
-title: "Posting"
+name: "Posting"
 aliases:
   - "Posting"
   - "posting"

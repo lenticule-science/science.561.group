@@ -1,6 +1,6 @@
 ---
 id: 706c0a25-0655-46da-8f19-2e99ccb155a5
-title: mode of existence
+name: mode of existence
 date-created: 2025-08-31
 ---
 

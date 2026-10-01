@@ -26,7 +26,6 @@ references:
     container-title: Comparative Philosophy
     issued:
       - year: 2010
-title: "Catuṣkoṭi"
 defines:
   - "Catuṣkoṭi"
   - "catuskoti"

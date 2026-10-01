@@ -1,6 +1,6 @@
 ---
 id: c8791cf6-b21b-466a-a550-a5740204bf92
-title: Heritage Foundation
+name: Heritage Foundation
 date-created: 2025-08-30
 ---
 

@@ -19,7 +19,6 @@ requires:
 keywords:
   - Anarchism
   - CriticalTheory
-title: prefigurative education
 defines:
 - prefigurative education
 - prefigurative pedagogy

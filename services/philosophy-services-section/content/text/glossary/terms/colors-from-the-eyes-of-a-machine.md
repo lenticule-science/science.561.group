@@ -1,6 +1,6 @@
 ---
 id: c0fdf10a-8b6a-40da-8ae5-f90e676c7c43
-title: colors from the eyes of a machine
+name: colors from the eyes of a machine
 date-created: 2025-07-23
 ---
 

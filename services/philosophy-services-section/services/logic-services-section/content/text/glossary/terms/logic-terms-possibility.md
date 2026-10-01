@@ -1,5 +1,5 @@
 ---
-title: "Possibility"
+name: "Possibility"
 aliases:
   - "possibility"
   - "possible"

@@ -1,5 +1,5 @@
 ---
-title: "Governance Indicator"
+name: "Governance Indicator"
 description: "A quantitative measure used as an instrument of governance — making entities visible, comparable, and rankable in ways that exert governance effects (resource allocation, conditionality, reform direction) even without formal authority. The Doing Business rank, Human Development Index, Corruption Perceptions Index, Rule of Law Index, and ratings-firm sovereign debt scores are paradigm cases."
 defines: governance-indicator
 related: [algorithmic-regulation, hypernudge, ordinal-society, policy, normative-system]

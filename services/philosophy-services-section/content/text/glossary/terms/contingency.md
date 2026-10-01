@@ -6,7 +6,6 @@ date-modified: 2026-03-29
 component-of: metaphysics
 contrasts-with: necessity
 inverse-of: ontologization
-title: "Contingency"
 defines:
   - "contingency"
   - "contingent"

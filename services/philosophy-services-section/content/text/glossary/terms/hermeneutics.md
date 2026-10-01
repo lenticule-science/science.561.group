@@ -1,6 +1,6 @@
 ---
 id: ef2fc7f3-6389-43b5-a418-bb210d36abd0
-title: hermeneutics
+name: hermeneutics
 date-created: 2025-08-27
 ---
 

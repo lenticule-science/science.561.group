@@ -5,7 +5,7 @@ class: theory
 symbol: "(S, \\pi)"
 depends-on: [predication-theory, closure-restriction, closure-restriction-is-closure, subtheory-settled-state, subtheory-inclusion]
 see-also: [resource, researching, idealization-morphism, theory-relative-ideal]
-title: Subtheory
+name: Subtheory
 description: "A subtheory of a predication theory $T = (\\mathbf{L}, \\mathcal{C}^T, E, \\mathrm{Cl}^T)$ is a pair $(\\mathcal{C}^S, \\pi)$ where $\\mathcal{C}^S$ is a predicate category and $\\pi : \\mathcal{C}^S \\hookrightarrow \\mathcal{C}^T$ is a type…"
 ---
 

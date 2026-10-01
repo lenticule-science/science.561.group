@@ -1,5 +1,5 @@
 ---
-title: "Watch"
+name: "Watch"
 description: "A shift within a continuous coverage requirement — the naval/military term for duty rotation under an unbroken coverage invariant, ensuring the position is never vacant."
 defines: watch
 date-created: 2026-04-04

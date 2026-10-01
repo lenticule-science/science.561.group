@@ -1,6 +1,6 @@
 ---
 id: 470cd805-c1b3-4357-ab15-913b9283c7c2
-title: unproven
+name: unproven
 date-created: 2025-08-30
 type: condition
 visibility: public

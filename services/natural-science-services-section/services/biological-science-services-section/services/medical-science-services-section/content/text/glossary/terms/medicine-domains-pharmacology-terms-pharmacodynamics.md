@@ -1,5 +1,5 @@
 ---
-title: "Pharmacodynamics"
+name: "Pharmacodynamics"
 type: "term"
 date-created: 2026-03-06
 ---

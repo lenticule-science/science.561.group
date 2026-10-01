@@ -8,7 +8,6 @@ tags: []
 description: "The organization of pitch around a central tone that functions as a point of rest and reference."
 date-updated: 2026-03-09
 part-of: music/disciplines/music-theory/terms
-title: "Tonality"
 defines:
   - "Tonality"
   - "tonal"

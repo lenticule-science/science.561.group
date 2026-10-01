@@ -1,5 +1,5 @@
 ---
-title: "Coverage"
+name: "Coverage"
 description: "The invariant that all required time intervals are staffed — what shifts, watches, and rosters exist to maintain."
 defines: coverage
 date-created: 2026-04-04

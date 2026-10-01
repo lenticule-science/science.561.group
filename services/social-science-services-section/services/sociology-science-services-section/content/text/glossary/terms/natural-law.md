@@ -9,7 +9,6 @@ see-also:
   - "/sociology/disciplines/legalism/index.md"
 references:
   - /sociology/disciplines/legalism/index.md
-title: "natural law"
 type: term
 tags:
   - Legalism

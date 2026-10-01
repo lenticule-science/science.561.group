@@ -40,7 +40,6 @@ references:
     container-title: MIT Press
     issued:
       - year: 1983
-title: "State"
 description: "The composite of all conditions defining a thing at a given moment — from static snapshots through Harel's state machines to Bergson's duration."
 defines: state
 date-modified: 2026-04-06

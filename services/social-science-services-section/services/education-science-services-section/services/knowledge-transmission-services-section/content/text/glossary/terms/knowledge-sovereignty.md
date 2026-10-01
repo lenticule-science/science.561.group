@@ -50,7 +50,6 @@ references:
     type: document
     title: "Red Pedagogy: Native American Social and Political Thought"
 part-of: sociology/topics/settler-colonialism/terms
-title: Knowledge Sovereignty
 defines:
 - knowledge sovereignty
 - epistemic sovereignty

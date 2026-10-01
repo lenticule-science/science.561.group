@@ -1,5 +1,5 @@
 ---
-title: "Congruence"
+name: "Congruence"
 aliases:
   - "congruence"
   - "congruent"

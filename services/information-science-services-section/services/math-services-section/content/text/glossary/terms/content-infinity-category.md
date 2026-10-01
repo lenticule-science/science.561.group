@@ -1,5 +1,5 @@
 ---
-title: "Infinity Category"
+name: "Infinity Category"
 aliases:
   - "infinity category"
   - "infinity categories"

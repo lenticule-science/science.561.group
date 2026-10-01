@@ -10,7 +10,7 @@ description: The substrate-recorded data that drives the operations settling for
 
 The substrate-recorded data that drives the [operations settling](../../../../../../../../../../../public-services-section/services/personal-services-section/services/emsenn-services-section/content/text/glossary/terms/operations-settling.md) forward — the material out of which the [increment sequence](../../../../../../../../../humanities/theories/math/theories/categories/theories/predication-categories/objects/increment-sequence.md) is built when work is the subject.
 
-Operational evidence is not a single kind of object; it is the genus of all witnesses, observations, completion claims, capability assertions, and event-log entries that a working community records. The unifying property is *substrate-citability*: each piece of evidence is a [witness](../../../../services/predicated-work-services-section/content/glossary/terms/witness-as-increment.md) increment $u_\tau(\phi) = v$ at some stage $\tau$, on some predication cell $\phi$, with some bilattice value $v \in \mathbf{FOUR}$.
+Operational evidence is not a single kind of object; it is the genus of all witnesses, observations, completion claims, capability assertions, and event-log entries that a working community records. The unifying property is *substrate-citability*: each piece of evidence is a [witness](../../../../services/predicated-work-services-section/content/text/glossary/terms/witness-as-increment.md) increment $u_\tau(\phi) = v$ at some stage $\tau$, on some predication cell $\phi$, with some bilattice value $v \in \mathbf{FOUR}$.
 
 The four-state reading of $v$ — $\bot, \mathbf{t}, \mathbf{f}, \top$ — is what distinguishes operational evidence from the classical-logic *facts* of a propositional accounting:
 
@@ -67,7 +67,7 @@ This is particularly sharp at the boundary between the operations settling's str
 
 ## Where used
 
-- [witness-as-increment](../../../../services/predicated-work-services-section/content/glossary/terms/witness-as-increment.md) — the formal correspondence.
+- [witness-as-increment](../../../../services/predicated-work-services-section/content/text/glossary/terms/witness-as-increment.md) — the formal correspondence.
 - [completion-as-quiescence](../../../../services/predicated-work-services-section/content/glossary/concepts/completion-as-quiescence.md) — completion is defined in terms of evidence stabilizing.
 - [dispatch](../../morphisms/dispatch.md) — dispatch is a residuation over capability-evidence.
 - [aim-generativity-iff-aperiodic](../../../../../../../social-theory-science-services-section/content/text/documents/articles/notes/undated/aim-generativity-iff-aperiodic.md) — the finite-support commitment (P1) is the key premise for the theorem's forward direction.

@@ -1,5 +1,4 @@
 ---
-title: "True"
 defines: "true"
 aliases: [ truth, affirmation, relational-affirmation, "true" ]
 description: "The semantic property a sentence, proposition, or judgment has when what it claims to be the case is the case — the affirmative of the two values in classical logic and a contested subject in non-classical and philosophical accounts."

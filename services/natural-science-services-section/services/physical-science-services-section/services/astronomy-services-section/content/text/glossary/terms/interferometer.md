@@ -1,5 +1,5 @@
 ---
-title: "Interferometer"
+name: "Interferometer"
 type: term
 component-of: astronomical-instruments
 ---

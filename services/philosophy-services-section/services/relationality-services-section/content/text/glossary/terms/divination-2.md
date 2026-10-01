@@ -1,5 +1,5 @@
 ---
-title: "divination"
+name: "divination"
 aliases:
   - "divination"
 date-created: 2025-12-31

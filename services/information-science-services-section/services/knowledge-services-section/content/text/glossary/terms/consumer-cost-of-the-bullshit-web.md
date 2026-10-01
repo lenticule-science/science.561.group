@@ -1,5 +1,5 @@
 ---
-title: Consumer Cost of the Bullshit Web
+name: Consumer Cost of the Bullshit Web
 aliases:
   - consumer-cost-of-the-bullshit-web
 specialization: research

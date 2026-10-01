@@ -1,6 +1,6 @@
 ---
 id: d1afc3b9-8c3e-458b-8215-35d427aed655
-title: Juri Lotman
+name: Juri Lotman
 date-created: 2025-09-20
 ---
 

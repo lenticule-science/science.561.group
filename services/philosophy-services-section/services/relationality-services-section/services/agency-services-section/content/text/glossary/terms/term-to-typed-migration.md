@@ -9,7 +9,7 @@ depends-on:
 see-also:
   - ../specifications/term-to-typed-migration.md
   - questions/term-to-typed-migration-discipline.md
-title: Term-to-typed migration
+name: Term-to-typed migration
 description: "The substrate operation that promotes a type: term note to its typed successor — concept, object (definition), reference, narrative, or, in the rare case it does not belong in the corpus, deletion."
 ---
 

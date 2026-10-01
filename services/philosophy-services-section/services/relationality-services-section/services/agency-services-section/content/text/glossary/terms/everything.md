@@ -3,7 +3,7 @@ definition: every thing
 aliases:
   - all things
 dg-publish: true
-title: Relational systems terms everything everything 001864
+name: Relational systems terms everything everything 001864
 description: Everything is every old-notes/domains/tekodynamics/glossary/thing, taken together without separation based on quality.
 ---
 

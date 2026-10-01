@@ -12,7 +12,7 @@ references:
   - Hyland 2002
   - Seely 1989
   - de Paiva 1991
-title: Dial(Eff) — the Dialectica category over Eff
+name: Dial(Eff) — the Dialectica category over Eff
 description: "The Dialectica category $\\mathbf{Dial}(\\mathbf{Eff})$ (Hyland 2002, building on de Paiva 1991) is the $$-autonomous category with:"
 ---
 

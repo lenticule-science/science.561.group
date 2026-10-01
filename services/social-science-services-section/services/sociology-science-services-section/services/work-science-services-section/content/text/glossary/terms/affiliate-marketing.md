@@ -6,7 +6,6 @@ domain: web-business
 restricts: Web Monetization
 uses: Conversion Rate, Revenue Per Mille, SEO, Content Strategy
 date-created: 2026-03-29
-title: "Affiliate Marketing"
 defines: Affiliate Marketing
 related: Programmatic Advertising
 date-modified: 2026-03-29

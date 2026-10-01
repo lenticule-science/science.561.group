@@ -1,6 +1,6 @@
 ---
 
-title: "Power/Knowledge"
+name: "Power/Knowledge"
 description: "Foucault's thesis that power and knowledge are mutually constitutive — power produces knowledge and knowledge enables power, with no neutral ground between them."
 date-created: 2026-01-01
 date-modified: 2026-03-29

@@ -37,7 +37,6 @@ references:
       - literal: Horton
     issued:
       - year: 1998
-title: popular education
 defines:
 - popular education
 - educación popular

@@ -1,5 +1,5 @@
 ---
-title: "dialogism"
+name: "dialogism"
 type: "term"
 date-created: 2026-03-05
 ---

@@ -5,7 +5,7 @@ symbol: "\\mathrm{conflcmp}_{\\mathfrak{C}}"
 status: draft
 depends-on: [comparison-morphism, predicatory-confluence, confluence-join, comparison-witness-object]
 see-also: [positing-generated-confluence, beckmann-moser2024]
-title: Confluence comparison morphism
+name: Confluence comparison morphism
 description: A confluence comparison morphism compares divergent settling branches by asking whether they admit a common successor under the operations allowed by the context.
 ---
 

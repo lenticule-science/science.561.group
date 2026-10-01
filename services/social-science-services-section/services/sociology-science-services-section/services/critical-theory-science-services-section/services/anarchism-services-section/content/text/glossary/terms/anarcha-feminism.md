@@ -8,7 +8,6 @@ aliases:
 keywords:
   - anarchism
 description: "The current within anarchism that analyzes patriarchy as inseparable from the state, capitalism, and colonialism, and insists that liberation requires the simultaneous abolition of all forms of domination."
-title: "Anarcha-Feminism"
 type: term
 tags:
   - Anarchism

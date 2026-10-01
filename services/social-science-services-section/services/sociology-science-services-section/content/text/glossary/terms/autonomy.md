@@ -6,7 +6,6 @@ aliases:
   - "autonomous"
 tags: []
 description: "Self-governance — the capacity of a person, group, or community to make decisions about their own life without being directed by an external authority."
-title: "Autonomy"
 type: term
 defines:
   - "Autonomy"

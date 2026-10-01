@@ -3,7 +3,7 @@ type: definition
 class: forgetful-operator
 status: current
 depends-on: [simply-typed-lambda-calculus, untyped-lambda-calculus, lambda-term]
-title: Type erasure
+name: Type erasure
 description: Type erasure is the operator that strips type annotations from a term of a typed calculus, producing a term of the untyped-lambda-calculus.
 ---
 

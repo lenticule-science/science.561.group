@@ -1,5 +1,5 @@
 ---
-title: "Equal"
+name: "Equal"
 identity: equal
 description: "Equal is strict identity: the condition that two expressions denote exactly the same thing, with no room for structural variation or contextual relativity."
 date-created: 2026-03-04

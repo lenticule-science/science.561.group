@@ -38,4 +38,4 @@ Parsley is foundational to Mediterranean cuisines, essential to French bouquet g
 
 - [Apiaceae family morphology](./apiaceae.md)
 - [Furanocoumarins in plants](../furanocoumarins.md)
-- [Parsley cultivation](../../../../../../../../../domestic-science-services-section/services/domestic-production-services-section/services/gardening-services-section/content/glossary/terms/parsley-cultivation.md)
+- [Parsley cultivation](../../../../../../../../../domestic-science-services-section/services/domestic-production-services-section/services/gardening-services-section/content/text/glossary/terms/parsley-cultivation.md)

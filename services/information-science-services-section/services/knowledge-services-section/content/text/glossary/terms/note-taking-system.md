@@ -4,7 +4,7 @@ aliases:
 - system for taking notes
 - note-taking systems
 id: 4c19cb03-3fa8-4b0c-a956-a2c42de1d712
-title: note-taking system
+name: note-taking system
 date-created: 2025-08-22
 visibility: public
 ---

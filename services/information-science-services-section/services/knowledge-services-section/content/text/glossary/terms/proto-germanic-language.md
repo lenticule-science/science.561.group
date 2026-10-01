@@ -2,7 +2,7 @@
 aliases:
 - Proto-Germanic
 id: 5248a5a2-7e33-47c2-96c0-51874c92ccd4
-title: Proto-Germanic language
+name: Proto-Germanic language
 type: language
 visibility: public
 ---

@@ -1,5 +1,5 @@
 ---
-title: "Half-Life"
+name: "Half-Life"
 type: "term"
 date-created: 2026-03-06
 ---

@@ -1,5 +1,5 @@
 ---
-title: "draw pile"
+name: "draw pile"
 type: "term"
 date-created: 2026-03-01
 ---

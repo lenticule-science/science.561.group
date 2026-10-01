@@ -1,6 +1,6 @@
 ---
 id: 3765e050-17a1-4ebf-9e17-1187ca8090df
-title: Sofi Tucker
+name: Sofi Tucker
 date-created: 2025-07-22
 ---
 

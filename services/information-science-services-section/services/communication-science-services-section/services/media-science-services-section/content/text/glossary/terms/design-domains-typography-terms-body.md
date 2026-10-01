@@ -1,5 +1,5 @@
 ---
-title: "body text"
+name: "body text"
 type: "term"
 date-created: 2026-03-03
 ---

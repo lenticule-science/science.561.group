@@ -1,6 +1,6 @@
 ---
 id: b48584c1-8bd6-4cc8-acf8-655c9285e3e6
-title: von Stuck
+name: von Stuck
 date-created: 2025-07-23
 ---
 

@@ -1,6 +1,6 @@
 ---
 id: cd72e285-d828-480a-b4bd-fff30fee4e82
-title: emsenn's Source Code
+name: emsenn's Source Code
 ---
 
 The source code I've written; a part of my projects catalog.

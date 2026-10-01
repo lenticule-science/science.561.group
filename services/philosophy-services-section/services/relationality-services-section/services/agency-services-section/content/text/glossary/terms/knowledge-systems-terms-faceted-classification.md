@@ -14,7 +14,7 @@ keywords:
 description: "Glossary entry. The substantive content has been promoted to the typed concept at teaching/explanations/faceted-classification.md."
 promoted-to:
   - teaching/explanations/faceted-classification.md
-title: Faceted classification (term)
+name: Faceted classification (term)
 ---
 
 # Faceted classification (term)

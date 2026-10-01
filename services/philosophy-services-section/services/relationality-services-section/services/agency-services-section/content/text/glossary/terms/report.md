@@ -1,5 +1,5 @@
 ---
-title: "Report"
+name: "Report"
 type: "page"
 date-created: 2026-03-20
 description: A Report is a five-tuple (Auth, Scope, Δ, τ, Rec) — an author Auth with investigative standing over the subject domain, a Scope specifying the subject matter, a findings differential Δ recording what became settled during the reporting…

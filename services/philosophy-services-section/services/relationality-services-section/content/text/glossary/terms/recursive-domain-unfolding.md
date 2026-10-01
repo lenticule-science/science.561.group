@@ -1,5 +1,5 @@
 ---
-title: "Recursive Domain Unfolding"
+name: "Recursive Domain Unfolding"
 identity: recursive-domain-unfolding
 description: "Recursive domain unfolding is the phenomenon by which closure at a relational level exposes new implicit dynamics that lie outside the closed domain, indicating the necessity of formalizing a subsequent relational domain."
 date-created: 2026-03-04

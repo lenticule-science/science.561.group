@@ -1,6 +1,6 @@
 ---
 id: 281fb41a-7c08-41ca-a429-7092a3e2dc8f
-title: Thérèse of Lisieux
+name: Thérèse of Lisieux
 date-created: 2025-09-06
 ---
 

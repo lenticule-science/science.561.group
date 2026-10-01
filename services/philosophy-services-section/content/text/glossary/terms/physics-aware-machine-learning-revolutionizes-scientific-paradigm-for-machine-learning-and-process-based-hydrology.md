@@ -1,7 +1,7 @@
 ---
 id: 4dee6a41-a25f-4089-81e8-aacfddde5e27
 roam-refs: "@xu_physics_aware_2023"
-title: Physics-aware Machine Learning Revolutionizes Scientific Paradigm for Machine Learning and Process-based Hydrology
+name: Physics-aware Machine Learning Revolutionizes Scientific Paradigm for Machine Learning and Process-based Hydrology
 date-created: 2025-10-06
 visibility: public
 type: journal article

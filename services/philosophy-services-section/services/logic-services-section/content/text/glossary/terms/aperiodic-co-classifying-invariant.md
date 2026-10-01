@@ -4,7 +4,7 @@ realizes: [cohomological-equivalence]
 class: cosheaf-homology-class
 symbol: "\\check{\\mathrm{cl}}\\text{-}\\mathrm{inv}(v)"
 depends-on: [aperiodic-classifying-invariant, settling-cohomology, settling-associated-sheaf, aperiodic-settling, closure-ordinal, quantale-enriched-cosheaf, verdier-duality-bitopological-site]
-title: Aperiodic co-classifying invariant
+name: Aperiodic co-classifying invariant
 description: The cosheaf-homology dual of the aperiodic classifying invariant.
 ---
 

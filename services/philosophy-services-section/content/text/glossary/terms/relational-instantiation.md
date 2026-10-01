@@ -1,6 +1,6 @@
 ---
 id: 6f5aca7f-ffaf-4798-aa33-f7ef3ec2e43b
-title: relational instantiation
+name: relational instantiation
 date-created: 2025-09-06
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: "icon"
+name: "icon"
 type: "term"
 date-created: 2026-03-01
 ---

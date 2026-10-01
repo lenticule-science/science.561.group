@@ -4,7 +4,7 @@ class: type-former
 status: current
 depends-on: [function-type, binder, universe]
 symbol: "\\Pi(x : A).\\,B(x)"
-title: Pi type
+name: Pi type
 description: "A Pi type $\\Pi(x : A).\\,B(x)$ is the type of dependent functions: functions whose output type may depend on the input value."
 ---
 

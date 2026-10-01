@@ -1,5 +1,5 @@
 ---
-title: "Spes"
+name: "Spes"
 defines: spes
 aliases: [spes, hope, theological hope, virtue of hope]
 description: "The Thomist theological virtue of hope: the disposition by which the soul tends toward a future good that is difficult but possible to attain, structured as expectation rather than certainty. Spes is bounded by despair (the conviction that the good cannot be attained) on one side and by presumption (the assumption that the good can be attained without effort or grace) on the other."

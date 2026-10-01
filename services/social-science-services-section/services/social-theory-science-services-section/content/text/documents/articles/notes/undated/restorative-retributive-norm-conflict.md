@@ -13,7 +13,7 @@ When a polity's normative system contains both restorative and retributive accou
 
 ## Setup
 
-Let $\mathcal{P}$ be a polity with normative system $\mathcal{S}_N = \mathcal{S}_{\mathrm{rest}} \cup \mathcal{S}_{\mathrm{retrib}}$, where $\mathcal{S}_{\mathrm{rest}}$ is the [restorative-accountability](../../../../../../../sociology-science-services-section/services/work-science-services-section/services/predicated-work-services-section/services/predicated-governance-services-section/content/glossary/terms/restorative-accountability.md) closure-rule subsystem and $\mathcal{S}_{\mathrm{retrib}}$ is a retributive accountability subsystem (violation implies sanction-debt on the harming party).
+Let $\mathcal{P}$ be a polity with normative system $\mathcal{S}_N = \mathcal{S}_{\mathrm{rest}} \cup \mathcal{S}_{\mathrm{retrib}}$, where $\mathcal{S}_{\mathrm{rest}}$ is the [restorative-accountability](../../../../../../../sociology-science-services-section/services/work-science-services-section/services/predicated-work-services-section/services/predicated-governance-services-section/content/text/glossary/terms/restorative-accountability.md) closure-rule subsystem and $\mathcal{S}_{\mathrm{retrib}}$ is a retributive accountability subsystem (violation implies sanction-debt on the harming party).
 
 Both subsystems fire on the same violation-witness cell $\langle V, \texttt{harm-recorded}\rangle = \mathbf{t}$, but their immediate consequents are on different cells:
 

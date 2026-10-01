@@ -34,7 +34,6 @@ references:
       - literal: Hooks
     issued:
       - year: 2003
-title: engaged pedagogy
 ---
 
 [Engaged pedagogy](engaged-pedagogy.md) is [bell hooks](../../../../../../general/people/bell-hooks.md)' framework for teaching as a practice of freedom — an extension and reworking of [Paulo Freire](../../../../../../general/people/paulo-freire.md)'s [critical pedagogy](../../../../../../content/text/glossary/schools/critical-pedagogy/index.md) through the lens of Black feminist thought and the embodied realities of race, gender, and class in the classroom [@hooks_TeachingTransgress_1994].

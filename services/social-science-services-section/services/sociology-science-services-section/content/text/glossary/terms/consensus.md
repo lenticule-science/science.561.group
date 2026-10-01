@@ -6,7 +6,6 @@ aliases:
   - "consensus decision-making"
 tags: []
 description: "A decision-making process in which a group works toward a proposal everyone can accept — not unanimity or voting, but a commitment to hearing all concerns and modifying proposals until no one is compelled to comply with a decision they find unacceptable."
-title: "Consensus"
 type: term
 defines:
   - "Consensus"

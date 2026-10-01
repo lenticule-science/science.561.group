@@ -9,7 +9,6 @@ keywords:
 description: "The technologies, institutions, and practices through which communication is produced, distributed, and received at scale. Media are not neutral channels — they shape what can be communicated, who can communicate, and how communication is experienced."
 date-modified: 2026-03-09
 part-of: sociology/schools/anarchism/schools/anarchist-communication/terms
-title: "Media"
 type: term
 tags:
   - Sociology

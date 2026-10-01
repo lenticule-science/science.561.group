@@ -7,7 +7,6 @@ tags: []
 description: "The philosophical position that relations are ontologically prior to entities — things are constituted through their relations rather than existing independently and then entering into relations."
 date-updated: 2026-03-29
 contrasts-with: substance-metaphysics
-title: "Relational Ontology"
 date-modified: 2026-03-29
 ---
 

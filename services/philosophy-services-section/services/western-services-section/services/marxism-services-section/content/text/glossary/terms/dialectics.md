@@ -12,7 +12,6 @@ description: "A method of reasoning through contradiction — thesis, antithesis
 contains: [historical-materialism, idealist-dialectics]
 requires: contradiction
 produces: synthesis
-title: "Dialectics"
 tags:
   - methodology
 defines:

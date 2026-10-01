@@ -6,7 +6,7 @@ symbol: "Λ"
 depends-on: [jural-relation, office-as-double-settlement, normative-system, operations-settling, bigraded-settling-cohomology]
 realizes: [leitourgia]
 see-also: [leitourgia-discharge-as-bigraded-settlement, community-constitution-as-sheaf-descent, recognition-as-bigraded-common-knowledge]
-title: Leitourgia
+name: Leitourgia
 description: The mathematical realization of the leitourgia — a public service obligation imposed by position rather than chosen, discharged by correct enactment before a constituted witnessing community, at irreversible personal cost.
 ---
 

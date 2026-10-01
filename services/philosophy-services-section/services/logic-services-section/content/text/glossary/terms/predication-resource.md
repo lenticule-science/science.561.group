@@ -4,7 +4,7 @@ class: placed-settling
 symbol: "(v^R, \\iota, T)"
 depends-on: [predication-settling, predication-settling-base-morphism, predication-settling-category, predicate-category]
 see-also: [theory-relative-ideal, resource-deficit, idealization-morphism, researching]
-title: Resource
+name: Resource
 description: "A resource is a triple $(v^R, \\iota, T)$ consisting of:"
 ---
 

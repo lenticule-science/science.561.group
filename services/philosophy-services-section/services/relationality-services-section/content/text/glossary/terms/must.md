@@ -1,5 +1,5 @@
 ---
-title: "Must"
+name: "Must"
 identity: must
 description: "Must is necessity: what survives all closure."
 date-created: 2026-03-04

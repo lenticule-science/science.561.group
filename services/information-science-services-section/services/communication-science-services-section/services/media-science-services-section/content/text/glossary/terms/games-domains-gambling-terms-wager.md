@@ -1,5 +1,5 @@
 ---
-title: "wager"
+name: "wager"
 type: "term"
 date-created: 2025-12-31
 ---

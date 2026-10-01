@@ -24,6 +24,6 @@ HANDY is a stylized, low-dimensional model calibrated to illustrate a mechanism,
 ## Bridges
 
 - [HANDY model](../../../glossary/terms/handy-model.md)
-- [Structural-demographic theory](../../../../../../../../../../history-and-archaeology-science-services-section/services/social-history-science-services-section/content/glossary/terms/structural-demographic-theory.md)
+- [Structural-demographic theory](../../../../../../../../../../history-and-archaeology-science-services-section/services/social-history-science-services-section/content/text/glossary/terms/structural-demographic-theory.md)
 - [Limits to growth](../../../glossary/terms/limits-to-growth.md)
-- [Catabolic collapse](../../../../../../../../../../history-and-archaeology-science-services-section/services/social-history-science-services-section/content/glossary/terms/catabolic-collapse.md)
+- [Catabolic collapse](../../../../../../../../../../history-and-archaeology-science-services-section/services/social-history-science-services-section/content/text/glossary/terms/catabolic-collapse.md)

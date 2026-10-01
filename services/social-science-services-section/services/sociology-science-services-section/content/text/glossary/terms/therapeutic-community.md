@@ -1,5 +1,5 @@
 ---
-title: Therapeutic Community
+name: Therapeutic Community
 date-created: 2026-03-08 00:00:00
 aliases:
 - therapeutic community

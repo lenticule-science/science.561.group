@@ -1,5 +1,5 @@
 ---
-title: Ikmu
+name: Ikmu
 ---
 
 # Introduction

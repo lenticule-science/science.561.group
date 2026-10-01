@@ -35,4 +35,4 @@ Consistent water availability is critical for fruit development; drought stress 
 
 ## See also
 
-[Cucumber cultivation](../../../../../../../../../../../domestic-science-services-section/services/domestic-production-services-section/services/gardening-services-section/content/glossary/terms/cucumber.md)
+[Cucumber cultivation](../../../../../../../../../../../domestic-science-services-section/services/domestic-production-services-section/services/gardening-services-section/content/text/glossary/terms/cucumber.md)

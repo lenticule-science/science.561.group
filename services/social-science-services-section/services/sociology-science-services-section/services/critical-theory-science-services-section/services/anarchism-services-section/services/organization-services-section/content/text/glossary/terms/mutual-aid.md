@@ -6,7 +6,6 @@ aliases:
 tags: []
 description: "Reciprocal voluntary cooperation as both a biological-sociological fact and a political practice, distinguished from charity by its horizontal, non-hierarchical character."
 part-of: sociology/schools/anarchism/topics/organization/terms
-title: "Mutual Aid"
 defines:
   - "Mutual Aid (anarchist)"
 date-modified: 2026-03-09

@@ -1,6 +1,6 @@
 ---
 id: 1dc5c641-63c2-4003-aeab-3a57f6847561
-title: jouissance
+name: jouissance
 date-created: 2025-09-04
 ---
 

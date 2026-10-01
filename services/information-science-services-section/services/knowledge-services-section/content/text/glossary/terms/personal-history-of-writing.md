@@ -1,5 +1,5 @@
 ---
-title: Personal History of Writing
+name: Personal History of Writing
 ---
 
 # Introduction {#document-introduction}

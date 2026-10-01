@@ -1,5 +1,5 @@
 ---
-title: "mutual information"
+name: "mutual information"
 type: "term"
 date-created: 2025-12-30
 ---

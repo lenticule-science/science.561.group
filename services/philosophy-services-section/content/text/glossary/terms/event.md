@@ -27,7 +27,6 @@ references:
     title: "The Unreality of Time"
     publication: "Mind, 17(68)"
     year: 1908
-title: "Event"
 date-modified: 2026-03-29
 type: term
 defines:

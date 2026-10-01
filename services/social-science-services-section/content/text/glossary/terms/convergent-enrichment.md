@@ -1,5 +1,5 @@
 ---
-title: "Convergent Enrichment"
+name: "Convergent Enrichment"
 description: "A task prioritization strategy for bootstrapping a self-describing system: enrich from the bottom (foundational vocabulary) and the top (operational context) simultaneously, letting the two fronts converge in the middle where most work happens."
 defines: convergent-enrichment
 date-created: 2026-04-06

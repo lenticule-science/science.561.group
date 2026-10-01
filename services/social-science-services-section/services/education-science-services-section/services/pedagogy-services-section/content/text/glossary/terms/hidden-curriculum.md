@@ -18,7 +18,6 @@ acts-on:
 - student
 keywords:
   - CriticalTheory
-title: hidden curriculum
 ---
 
 The [hidden curriculum](hidden-curriculum.md) is the set of lessons that educational institutions teach without explicitly intending to — through their structures, routines, social relations, and unstated assumptions rather than through their formal content. Students learn not only what is taught but also what is practiced: how time is organized, who speaks and who listens, what questions are permitted, what counts as success, and whose knowledge is valued.

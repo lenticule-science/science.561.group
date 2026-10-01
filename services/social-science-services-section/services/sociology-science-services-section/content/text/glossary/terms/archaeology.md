@@ -24,7 +24,6 @@ references:
     title: L'Archéologie du savoir
     year: 1969
     publication: Gallimard
-title: "Archaeology"
 type: term
 tags:
   - CriticalTheory

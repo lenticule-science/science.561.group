@@ -13,7 +13,7 @@ keywords:
 description: "Glossary entry. The substantive content has been promoted to the typed concept at teaching/explanations/domain-analysis.md."
 promoted-to:
   - teaching/explanations/domain-analysis.md
-title: Domain analysis (term)
+name: Domain analysis (term)
 ---
 
 # Domain analysis (term)

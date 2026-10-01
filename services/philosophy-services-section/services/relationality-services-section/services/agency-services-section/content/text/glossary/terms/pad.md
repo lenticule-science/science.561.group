@@ -1,6 +1,6 @@
 ---
 
-title: "Pad"
+name: "Pad"
 description: "A pad directive tells Beancount to insert an automatic transaction that brings an account's balance to the amount required by the next balance assertion. It's used to bridge gaps in the data — typically when starting to track an account that already has a balance, or when there's a period of unrecorded activity."
 aliases:
   - "Pad"

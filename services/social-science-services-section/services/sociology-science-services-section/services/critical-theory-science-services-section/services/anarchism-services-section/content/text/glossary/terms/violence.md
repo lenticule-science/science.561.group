@@ -7,7 +7,6 @@ aliases:
 keywords:
   - anarchism
 description: "Anarchism's analysis of violence as asymmetric: the state and capital exercise systematic, ongoing violence that is rendered invisible by its legality and normality, while resistance to this violence is framed as the origin of violence. The question is not 'violence or nonviolence?' but 'whose violence is made invisible?'"
-title: "Violence"
 type: term
 tags:
   - Anarchism

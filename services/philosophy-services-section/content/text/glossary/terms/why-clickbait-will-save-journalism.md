@@ -1,6 +1,6 @@
 ---
 author: emsenn
-title: Why Clickbait Will Save Journalism
+name: Why Clickbait Will Save Journalism
 aliases:
   - why-clickbait-will-save-journalism
 specialization: research

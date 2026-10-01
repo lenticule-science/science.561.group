@@ -1,5 +1,5 @@
 ---
-title: "Qi Stagnation"
+name: "Qi Stagnation"
 type: "term"
 date-created: 2026-04-02
 ---

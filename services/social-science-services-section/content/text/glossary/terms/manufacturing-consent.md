@@ -1,5 +1,5 @@
 ---
-title: "Manufacturing Consent"
+name: "Manufacturing Consent"
 description: "Burawoy's thesis that the labor process itself organizes worker consent to its own continuation through workplace games — making out, the rate, the relative rewards of harder versus easier jobs — that absorb workers' creative energies into the productive process while obscuring exploitation. Distinct from Herman and Chomsky's later use of the same phrase for media-system propaganda functions."
 defines: manufacturing-consent
 related: [labor-process, deskilling, real-subsumption, contested-terrain, hegemony]

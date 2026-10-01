@@ -1,5 +1,5 @@
 ---
-title: "Faceted Classification"
+name: "Faceted Classification"
 type: "term"
 date-created: 2026-03-31
 ---

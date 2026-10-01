@@ -7,7 +7,6 @@ instance-of: thing
 date-created: 2026-03-04
 date-modified: 2026-03-29
 contrasts-with: substance-object
-title: "Object"
 defines:
   - object
 related:

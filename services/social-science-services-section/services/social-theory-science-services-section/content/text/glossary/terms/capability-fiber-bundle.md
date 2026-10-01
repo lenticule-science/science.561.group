@@ -4,7 +4,7 @@ class: fiber-bundle
 status: draft
 symbol: "\\mathcal{K}"
 depends-on: [operations-base, predication-fiber-algebra, normative-operational-layering]
-title: Capability fiber bundle
+name: Capability fiber bundle
 description: "The pair $\\mathcal{K} = (\\mathcal{K}^{\\mathrm{prov}}, \\mathcal{K}^{\\mathrm{req}})$ of predication fiber algebras over the operations base, indexed by the two capability predicates:"
 ---
 
@@ -83,7 +83,7 @@ Both propagations are realized via the [predicate-specialization morphism](../..
 By [settling-monotonicity](../../documents/articles/humanities/theories/math/theories/categories/theories/predication-categories/concepts/settling-monotonicity.md), both capability cells and authority cells only grow in $\leq_k$. The behaviors are:
 
 - *Capability revocation*: a negative-evidence witness moves a capability cell from $\mathbf{t}$ to $\top$ (not back to $\bot$). Repair resolves $\top$ to $\mathbf{f}$ via the substrate's repair catalog.
-- *Authority revocation*: the [revocation](../../../../../sociology-science-services-section/services/work-science-services-section/services/predicated-work-services-section/services/predicated-governance-services-section/content/glossary/terms/revocation.md) morphism moves the jural relation's cells from $\mathbf{t}$ toward $\top$ (via a contradicting revocation increment), which the repair machinery resolves by retiring the relation ($\mathbf{f}$-settlement). This is the felicity-checked version of authority removal.
+- *Authority revocation*: the [revocation](../../../../../sociology-science-services-section/services/work-science-services-section/services/predicated-work-services-section/services/predicated-governance-services-section/content/text/glossary/terms/revocation.md) morphism moves the jural relation's cells from $\mathbf{t}$ toward $\top$ (via a contradicting revocation increment), which the repair machinery resolves by retiring the relation ($\mathbf{f}$-settlement). This is the felicity-checked version of authority removal.
 
 Capability revocation is simpler (any witness-producer can assert a negative capability witness). Authority revocation requires the revocation morphism's felicity condition (the revoker must hold the power to revoke), matching the governance structure's constraint that authority cannot be removed arbitrarily.
 

@@ -8,7 +8,6 @@ tags: []
 description: "The simultaneous sounding of pitches and the relations between simultaneities."
 date-updated: 2026-03-09
 part-of: music/disciplines/music-theory/terms
-title: "Harmony"
 defines:
   - "Harmony"
   - "harmonic"

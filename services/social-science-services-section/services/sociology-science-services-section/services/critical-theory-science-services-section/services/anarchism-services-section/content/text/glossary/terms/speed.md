@@ -7,7 +7,6 @@ aliases:
   - "dromological"
 tags: []
 description: "The political analysis of velocity as a structure of domination — how the acceleration of production, circulation, communication, and warfare serves state and capital while foreclosing the temporal conditions for autonomy, deliberation, and non-hierarchical organization."
-title: "Speed"
 type: term
 defines:
   - "Speed"

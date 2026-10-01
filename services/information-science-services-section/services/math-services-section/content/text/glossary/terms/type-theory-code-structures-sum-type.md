@@ -4,7 +4,7 @@ class: type-former
 status: current
 depends-on: [function-type]
 symbol: A + B
-title: Sum type
+name: Sum type
 description: A sum type (also coproduct type or disjoint union) $A + B$ is the type of values that are either an $A$, tagged left, or a $B$, tagged right.
 ---
 

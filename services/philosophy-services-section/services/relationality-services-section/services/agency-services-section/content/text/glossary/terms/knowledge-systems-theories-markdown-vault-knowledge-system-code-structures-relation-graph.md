@@ -8,7 +8,7 @@ depends-on:
   - teaching/explanations/_index.md
 see-also:
   - theories/predicated-markdown-vault-knowledge-system/objects/predication-graph.md
-title: Relation graph
+name: Relation graph
 description: The relation graph of a vault is the typed multi-graph whose nodes are the vault's notes and whose edges are the typed relations declared in their frontmatter.
 ---
 

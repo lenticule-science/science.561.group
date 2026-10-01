@@ -1,5 +1,5 @@
 ---
-title: "Blood (Xue)"
+name: "Blood (Xue)"
 type: "term"
 date-created: 2026-04-02
 ---

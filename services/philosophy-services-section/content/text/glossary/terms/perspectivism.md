@@ -22,7 +22,6 @@ references:
     title: "Cannibal Metaphysics: For a Post-Structural Anthropology"
     publication: "Univocal Publishing"
     year: 2014
-title: "Perspectivism"
 type: term
 defines:
   - "Perspectivism"

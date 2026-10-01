@@ -1,6 +1,6 @@
 ---
 id: 30c71347-8d64-4ae8-86c7-0e650ce6a768
-title: intertheoretic reduction
+name: intertheoretic reduction
 date-created: 2025-09-17
 type: reduction
 visibility: public

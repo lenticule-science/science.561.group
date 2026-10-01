@@ -1,6 +1,6 @@
 ---
 
-title: "Fava"
+name: "Fava"
 description: "Fava is a web-based user interface for Beancount. It reads a Beancount file and presents the data through an interactive dashboard with account views, income statements, balance sheets, trial balances, journal entries, and charts."
 aliases:
   - "Fava"

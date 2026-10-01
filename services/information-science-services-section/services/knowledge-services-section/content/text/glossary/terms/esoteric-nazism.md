@@ -1,6 +1,6 @@
 ---
 id: 6d12d4bf-9995-4aef-a356-e1448a659fa2
-title: Esoteric Nazism
+name: Esoteric Nazism
 date-created: 2025-08-28
 type: nazism
 visibility: public

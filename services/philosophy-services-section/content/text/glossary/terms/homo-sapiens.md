@@ -1,6 +1,6 @@
 ---
 id: 6882cc6d-049d-4c68-866a-67bc57fce725
-title: Homo sapiens
+name: Homo sapiens
 date-created: 2025-08-29
 ---
 

@@ -1,6 +1,6 @@
 ---
 id: 79e9d700-b744-43c9-926e-46c122e0e0da
-title: Luc Boltanski
+name: Luc Boltanski
 date-created: 2025-09-02
 ---
 

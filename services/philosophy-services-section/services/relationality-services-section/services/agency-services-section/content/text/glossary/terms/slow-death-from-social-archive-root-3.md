@@ -1,5 +1,5 @@
 ---
-title: "Slow Death"
+name: "Slow Death"
 aliases:
   - "Slow Death"
   - "slow death"

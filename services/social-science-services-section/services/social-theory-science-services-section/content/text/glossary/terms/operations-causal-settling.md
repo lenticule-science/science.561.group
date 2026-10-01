@@ -5,7 +5,7 @@ status: draft
 symbol: "v^{\\mathrm{caus}}_{\\mathrm{op}}"
 depends-on: [operations-base, operations-settling, witness-as-increment]
 realizes: [lorentzian-causal-settling, void-cone-structure]
-title: Operations causal settling
+name: Operations causal settling
 description: The substrate-algebraic structure of operational time — which dispatch events causally precede which others, which are independent (parallelizable), which are unreachable from each other across the operations base.
 ---
 
@@ -101,7 +101,7 @@ The **operational consensus structure** across role-bearers is the agreement of 
 
 ## Where used
 
-- [witness-as-increment](../../../../../sociology-science-services-section/services/work-science-services-section/services/predicated-work-services-section/content/glossary/terms/witness-as-increment.md) — every increment is a dispatch event $e \in E_{\mathrm{ev}}$; the operations causal settling is the closure of these increment-events under direct enablement.
+- [witness-as-increment](../../../../../sociology-science-services-section/services/work-science-services-section/services/predicated-work-services-section/content/text/glossary/terms/witness-as-increment.md) — every increment is a dispatch event $e \in E_{\mathrm{ev}}$; the operations causal settling is the closure of these increment-events under direct enablement.
 - [handoff-cobordism](handoff-cobordism.md) — a handoff cobordism's closure ordinal is bounded below by the longest causal chain in the handoff's bulk: the bulk's settling cannot complete faster than its causal-precedence depth.
 - [retrospect-via-cosettling](../../../../../sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/retrospect-via-cosettling.md) — retrospect on $v^{\mathrm{caus}}_{\mathrm{op}}$ produces backward causal pre-images: the cosettling's preimages are alternative causal histories consistent with the same outcome. This is the substrate-algebraic content of "what could have caused this outcome other than what actually did?"
 - [cadence-as-step-shift-rg-flow](../../../../../sociology-science-services-section/services/work-science-services-section/content/text/documents/articles/notes/undated/cadence-as-step-shift-rg-flow.md) — at each cadence boundary, the operations causal settling restricted to events at depth $\leq n$ is the step-$n$ causal substructure. The step-shift extends this by one cadence-level, adding a new layer of causal events that the next-finer cadence cannot resolve.

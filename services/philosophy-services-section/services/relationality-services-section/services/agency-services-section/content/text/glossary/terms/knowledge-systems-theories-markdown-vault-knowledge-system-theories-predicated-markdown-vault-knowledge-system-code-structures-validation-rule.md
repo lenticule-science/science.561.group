@@ -11,7 +11,7 @@ see-also:
   - fars-lint-as-closure-operator.md
   - ../theorems/theory-discipline-conformance-decidable.md
   - ../../../../../../../../../humanities/theories/math/theories/categories/theories/predication-categories/concepts/closure-rule-system.md
-title: Validation rule
+name: Validation rule
 description: "A validation rule is a single discipline-level check the curation theory commits to: a decidable predicate $\\varphi$ on the vault's relation graph (or on a single note in it) that holds when the discipline is satisfied and fails when it…"
 ---
 

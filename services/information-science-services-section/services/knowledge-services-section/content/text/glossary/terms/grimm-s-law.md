@@ -2,7 +2,7 @@
 aliases:
 - First Germanic Consonant Shift
 id: 2288288d-79ff-4120-b94b-acf9b7fccb8b
-title: Grimm's Law
+name: Grimm's Law
 date-created: 2025-08-25
 ---
 

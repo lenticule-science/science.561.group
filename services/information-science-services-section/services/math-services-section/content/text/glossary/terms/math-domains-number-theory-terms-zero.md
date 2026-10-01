@@ -1,5 +1,5 @@
 ---
-title: "Zero"
+name: "Zero"
 type: "definition"
 date-created: 2025-12-26
 ---

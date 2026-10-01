@@ -1,6 +1,6 @@
 ---
 id: e25c5a32-99b6-489f-9033-e00d741e3424
-title: September 6
+name: September 6
 date-created: 2025-09-06
 ---
 

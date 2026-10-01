@@ -1,5 +1,5 @@
 ---
-title: Alternate Beginnings
+name: Alternate Beginnings
 ---
 
 # Introduction

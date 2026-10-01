@@ -8,7 +8,7 @@ see-also:
 references:
   - Kleene 1945
   - van Oosten 2008
-title: PCA — Partial Combinatory Algebra
+name: PCA — Partial Combinatory Algebra
 description: "A partial combinatory algebra (PCA) is a set $A$ with a partial binary operation $\\cdot$ satisfying the existence of two elements $k, s \\in A$ such that for all $a, b, c \\in A$:"
 ---
 

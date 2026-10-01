@@ -1,6 +1,6 @@
 ---
 id: 4793230b-7a30-4f7d-9b00-3d1d84238882
-title: acting
+name: acting
 date-created: 2025-08-29
 visibility: public
 ---

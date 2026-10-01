@@ -1,6 +1,6 @@
 ---
 
-title: "Kripke Model"
+name: "Kripke Model"
 description: "Let $mathcal{F} = (W, R)$ be a [Kripke frame](../../documents/articles/research/2026/07/31/lenticule-import/kripke-frame.md)."
 aliases:
   - "kripke model"

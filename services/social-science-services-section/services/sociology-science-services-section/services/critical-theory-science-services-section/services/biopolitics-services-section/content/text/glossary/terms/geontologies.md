@@ -14,7 +14,6 @@ extends: biopolitics
 enables: extractivism
 contrasts-with: animism
 contains: quasi-event
-title: "Geontologies"
 tags:
   - political-theory
 defines:

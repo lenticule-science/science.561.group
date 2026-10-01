@@ -1,5 +1,5 @@
 ---
-title: Composing Morphism
+name: Composing Morphism
 description: Story.
 ---
 # Composing Morphism

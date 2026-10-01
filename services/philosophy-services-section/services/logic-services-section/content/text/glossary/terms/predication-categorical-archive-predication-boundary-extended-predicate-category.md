@@ -15,7 +15,7 @@ see-also:
   - predicate-subject-projection
   - predicate-object-projection
   - orbit-coloring-generator-structural-integration
-title: Boundary-extended predicate category
+name: Boundary-extended predicate category
 description: Fix a residuated lattice $\mathbf L$ and an entity set $E$.
 ---
 

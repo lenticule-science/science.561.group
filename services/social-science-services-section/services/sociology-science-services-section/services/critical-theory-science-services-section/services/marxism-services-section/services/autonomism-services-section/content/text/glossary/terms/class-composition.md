@@ -9,7 +9,6 @@ aliases:
 tags: []
 date-modified: 2026-03-09
 part-of: sociology/schools/autonomism/terms
-title: "Class Composition"
 type: term
 defines:
   - "Class Composition"

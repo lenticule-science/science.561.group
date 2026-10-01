@@ -6,7 +6,6 @@ aliases:
   - "coercive"
 tags: []
 description: "The use or credible threat of force, deprivation, or punishment to compel behavior — the mechanism that distinguishes domination from disagreement and compulsory association from voluntary."
-title: "Coercion"
 type: term
 defines:
   - "Coercion"

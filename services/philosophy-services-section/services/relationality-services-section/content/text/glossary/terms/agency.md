@@ -9,7 +9,6 @@ see-also:
   - action
   - structure
   - power
-title: "Agency"
 defines:
   - agency
 related:

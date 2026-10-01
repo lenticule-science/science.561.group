@@ -13,7 +13,6 @@ requires: [communitas, labor]
 contrasts-with: immunitas
 enables: [harm-reduction, care-infrastructure]
 governs: access
-title: "Disability Justice"
 type: term
 tags:
   - SocialMovements

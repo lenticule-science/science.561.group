@@ -8,7 +8,6 @@ tags: []
 produced-by: satisfaction
 enables: prehension
 contrasts-with: substance-metaphysics
-title: "Objective Immortality"
 ---
 
 Objective immortality is [Alfred North Whitehead](../../../../../../../../../../general/people/alfred-north-whitehead.md)'s term for the way a completed [actual occasion](actual-occasion.md) continues to have reality after it perishes as a subject. When an occasion reaches [satisfaction](satisfaction.md), it ceases to be a subject of experience — it is no longer becoming — but its achieved character is not lost. It becomes an object: a datum available for [prehension](prehension.md) by every subsequent occasion. In this sense it is immortal, though not as a persisting substance; it is immortal as an objective fact that conditions all future becoming.

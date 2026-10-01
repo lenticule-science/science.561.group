@@ -5,7 +5,7 @@ status: draft
 symbol: "\\rho_\\tau : v^{\\mathrm{op}}_\\kappa \\rightsquigarrow T^{-1}(v^{\\mathrm{op}}_\\kappa)"
 depends-on: [operations-settling, audit-conflation, work-symmetry-group]
 realizes: [cosettling, iterated-cosettling-counts-derivable-cells, single-step-cosettling-via-closure-cover-hypergraph]
-title: Retrospect via cosettling
+name: Retrospect via cosettling
 description: The substrate-algebraic operation behind retrospective inference, post-hoc audit, and after-action review on an operations settling $v^{\mathrm{op}}$.
 ---
 

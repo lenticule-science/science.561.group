@@ -13,7 +13,7 @@ keywords:
 description: "Glossary entry. The substantive content has been promoted to the typed concept at teaching/explanations/integrative-levels.md."
 promoted-to:
   - teaching/explanations/integrative-levels.md
-title: Integrative levels (term)
+name: Integrative levels (term)
 ---
 
 # Integrative levels (term)

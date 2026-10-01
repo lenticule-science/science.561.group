@@ -1,5 +1,5 @@
 ---
-title: "Action"
+name: "Action"
 type: "term"
 date-created: 2026-03-29
 ---

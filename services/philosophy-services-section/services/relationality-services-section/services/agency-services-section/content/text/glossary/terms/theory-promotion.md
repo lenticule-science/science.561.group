@@ -9,7 +9,7 @@ depends-on:
 see-also:
   - ../specifications/theory-discipline.md
   - questions/what-makes-a-directory-a-theory.md
-title: Theory promotion
+name: Theory promotion
 description: The substrate operation that promotes a directory from staging-area to theory-directory once the theory-discipline's six requirements hold.
 ---
 

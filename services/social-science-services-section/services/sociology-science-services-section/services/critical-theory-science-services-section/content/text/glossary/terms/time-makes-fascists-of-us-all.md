@@ -1,6 +1,6 @@
 ---
 id: 59aa35f6-6dce-4353-8c57-c7cf9e2f7161
-title: Time Makes Fascists of Us All
+name: Time Makes Fascists of Us All
 date-created: 2025-09-03
 ---
 

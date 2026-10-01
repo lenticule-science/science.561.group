@@ -4,7 +4,7 @@ class: degenerate-instance
 status: sketch
 depends-on: [predication-fiber-algebra, knowledge-fiber-algebra]
 see-also: [predicated-knowledge-system]
-title: Concept lattice as degenerate fiber
+name: Concept lattice as degenerate fiber
 description: An FCA concept lattice (Ganter & Wille 1999) is a knowledge fiber algebra under the value-domain restriction $\mathbf{L} = \mathbf{2}$ (Boolean), with the closure-rule system fixed at the Galois closure induced by the formal context's…
 ---
 

@@ -13,7 +13,7 @@ see-also:
   - questions/translation-as-fiber-morphism.md
   - references/lotman1990.md
   - references/jakobson1959.md
-title: Translation
+name: Translation
 description: The operation that maps sign-relations in one semiotic system into sign-relations in another, under an explicit cross-system identity-mapping that asserts which sign-objects in the two systems are the same and which are not.
 ---
 

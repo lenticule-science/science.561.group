@@ -13,7 +13,6 @@ part-of: business/disciplines/marketing/terms
 measures: marketing-plan
 contrasts-with: customer-lifetime-value
 governed-by: conversion-rate
-title: "Customer Acquisition Cost"
 tags:
   - business
 date-modified: 2026-03-09

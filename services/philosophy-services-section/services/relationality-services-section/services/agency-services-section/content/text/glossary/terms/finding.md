@@ -6,7 +6,7 @@ symbol: F
 depends-on: [observation, plan, predication-cell]
 realizes: [finding]
 see-also: [adjustment, observation, retrospect-via-cosettling]
-title: Finding
+name: Finding
 description: "The substrate-entity produced by the review stage: a structured judgment comparing observed work-state to expected work-state."
 ---
 

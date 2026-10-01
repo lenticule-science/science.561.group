@@ -1,6 +1,6 @@
 ---
 id: 487cf66a-0f75-40c0-99e6-844936fd5d57
-title: think tank
+name: think tank
 date-created: 2025-09-05
 visibility: public
 ---

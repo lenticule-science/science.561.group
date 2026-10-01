@@ -1,5 +1,5 @@
 ---
-title: "lean"
+name: "lean"
 aliases:
   - "lean"
 id: lean

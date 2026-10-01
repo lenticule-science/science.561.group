@@ -3,7 +3,7 @@ type: definition
 class: family
 symbol: "(v_t)_{t \\in I}"
 depends-on: [predication-settling, settling-morphism, skh-deformation-ext-classification, settling-moduli-stack-theorem]
-title: Settling path
+name: Settling path
 description: A settling path is a continuous family of settlings parameterized by an interval $I \subseteq \mathbb{R}$ (or more generally, a connected topological space).
 ---
 

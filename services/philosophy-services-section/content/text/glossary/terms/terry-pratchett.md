@@ -1,6 +1,6 @@
 ---
 id: bb6a7511-0051-47f1-998f-081b94eec3cb
-title: Terry Pratchett
+name: Terry Pratchett
 date-created: 2025-08-23
 visibility: public
 ---

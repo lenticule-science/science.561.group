@@ -1,6 +1,6 @@
 ---
 id: fa27ba56-6f0b-4356-9d2d-edd6b438e18f
-title: National Frankenstein Day
+name: National Frankenstein Day
 date-created: 2025-08-30
 ---
 

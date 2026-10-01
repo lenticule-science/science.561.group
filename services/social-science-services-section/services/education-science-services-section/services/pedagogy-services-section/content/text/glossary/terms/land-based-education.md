@@ -48,7 +48,6 @@ references:
       - literal: Deloria
     issued:
       - year: 2001
-title: land-based education
 ---
 
 [Land-based education](land-based-education.md) is a framework in which the land itself is understood as teacher and curriculum. It emerges from Indigenous intellectual traditions that treat place, ecological relationship, and sustained presence on the land as primary sources of knowledge — not metaphorically, but as the actual medium through which specific knowledge (ecological, ceremonial, political, medicinal) is produced and transmitted.

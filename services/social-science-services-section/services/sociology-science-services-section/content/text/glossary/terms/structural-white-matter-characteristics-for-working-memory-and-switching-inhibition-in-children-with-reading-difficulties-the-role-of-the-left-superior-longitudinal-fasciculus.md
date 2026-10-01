@@ -1,6 +1,6 @@
 ---
 id: 38fbfed6-dea7-471b-9049-a49311e19ee1
-title: "Structural white matter characteristics for working memory and switching/inhibition in children with reading difficulties: The role of the left superior longitudinal fasciculus"
+name: "Structural white matter characteristics for working memory and switching/inhibition in children with reading difficulties: The role of the left superior longitudinal fasciculus"
 date-created: 2025-10-08
 ---
 

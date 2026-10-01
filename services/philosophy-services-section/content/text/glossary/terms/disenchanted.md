@@ -1,6 +1,6 @@
 ---
 id: 17231ccd-102e-4843-b3ae-c78801c95edf
-title: disenchanted
+name: disenchanted
 date-created: 2025-09-13
 visibility: public
 ---

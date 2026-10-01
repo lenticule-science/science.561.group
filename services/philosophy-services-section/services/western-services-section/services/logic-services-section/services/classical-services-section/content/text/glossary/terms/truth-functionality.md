@@ -11,7 +11,6 @@ keywords:
 requires: bivalence
 component-of: classical-logic
 verifies: tautology
-title: "Truth-Functionality"
 tags:
   - logic
 defines:

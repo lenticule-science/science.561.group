@@ -1,7 +1,7 @@
 ---
 field: "relational dynamics"
 id: c289a415-7cf4-44fd-a5dd-0139c6c56f0e
-title: relational dynamic
+name: relational dynamic
 date-created: 2025-09-26
 visibility: public
 type: dynamic

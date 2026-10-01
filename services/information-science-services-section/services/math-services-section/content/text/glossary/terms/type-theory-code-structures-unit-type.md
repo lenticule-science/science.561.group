@@ -4,7 +4,7 @@ class: type-former
 status: current
 depends-on: [typing-judgment]
 symbol: \mathbf{1}
-title: Unit type
+name: Unit type
 description: The unit type $\mathbf{1}$ is the type with exactly one inhabitant, written $\star$ (or $()$ or $\langle\rangle$).
 ---
 

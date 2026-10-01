@@ -1,5 +1,5 @@
 ---
-title: "Thrust-to-Weight Ratio"
+name: "Thrust-to-Weight Ratio"
 type: "term"
 date-created: 2026-03-06
 ---

@@ -8,7 +8,6 @@ aliases:
   - "working class"
 tags: []
 description: "The division of society into groups based on their relationship to ownership and work — those who own productive resources and profit from others' labor, and those who must work for wages to survive."
-title: "Class"
 type: term
 defines:
   - "Class"

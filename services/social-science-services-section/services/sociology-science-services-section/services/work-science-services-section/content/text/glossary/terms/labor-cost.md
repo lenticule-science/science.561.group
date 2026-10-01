@@ -12,7 +12,6 @@ date-updated: 2026-03-09
 part-of: business/disciplines/operations/terms
 component-of: operating-expenses
 determines: net-income
-title: "Labor Cost"
 tags:
   - business
 date-modified: 2026-03-09

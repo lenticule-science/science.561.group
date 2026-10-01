@@ -1,5 +1,5 @@
 ---
-title: "Algorithmic Regulation"
+name: "Algorithmic Regulation"
 description: "Karen Yeung's term for regulatory regimes that operate through algorithmic systems — predictive, population-categorical, design-embedded — rather than through general rules applied case-by-case after the fact under conditions permitting reasoned contestation. A structurally distinct regulatory form whose interaction with constitutional and human-rights protections is deeply unsettled."
 defines: algorithmic-regulation
 related: [hypernudge, governance-indicator, surveillance-capitalism, ordinal-society, normative-system, charter, policy]

@@ -1,6 +1,6 @@
 ---
 id: 665f3bf4-5182-4f41-8854-4bd36b67fe32
-title: Renkah Oru
+name: Renkah Oru
 date-created: 2025-09-05
 ---
 

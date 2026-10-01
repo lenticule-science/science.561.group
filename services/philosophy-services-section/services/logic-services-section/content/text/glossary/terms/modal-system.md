@@ -1,6 +1,6 @@
 ---
 
-title: "Modal System"
+name: "Modal System"
 description: "Let $(A, Box)$ be a modal algebra, i.e., a Boolean algebra $A$ equipped with a unary operator $Box colon A \to A$ satisfying $Box\top = \top$ and $Box(a wedge b) = Box a wedge Box b$ (normality)."
 aliases:
   - "modal system"

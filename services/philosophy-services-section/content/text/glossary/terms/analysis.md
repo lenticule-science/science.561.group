@@ -8,7 +8,6 @@ tags: []
 contains: [conceptual-analysis, logical-analysis]
 produces: logical-form
 component-of: analytic-philosophy
-title: "Analysis"
 ---
 
 **Analysis** is the method of clarifying a concept, proposition, or problem by decomposing it into simpler, more tractable parts. In [analytic philosophy](../index.md), analysis serves as the primary tool of philosophical investigation.

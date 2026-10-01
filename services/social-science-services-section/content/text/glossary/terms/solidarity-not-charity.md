@@ -37,7 +37,6 @@ references:
     publication: "A Katrina Reader"
     year: 2005
     url: "https://katrinareader.cwsworkshop.org/common-ground-collective.html"
-title: Solidarity Not Charity
 tags:
 - mutual-aid
 - disaster-studies

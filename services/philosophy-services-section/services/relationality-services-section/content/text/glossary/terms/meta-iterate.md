@@ -1,5 +1,5 @@
 ---
-title: "Meta-Iterate"
+name: "Meta-Iterate"
 identity: meta-iterate
 description: "Meta-Iterate is systemic self-renewal: the act of applying a system to itself, transforming the triad as a whole."
 date-created: 2026-03-04

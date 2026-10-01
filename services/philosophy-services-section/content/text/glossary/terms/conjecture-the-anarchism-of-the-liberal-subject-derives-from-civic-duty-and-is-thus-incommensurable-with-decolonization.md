@@ -1,6 +1,6 @@
 ---
 id: b8ba4fe5-30bb-479a-842b-37c20dc4c0e5
-title: "Conjecture: The anarchism of the liberal subject derives from civic duty and is thus incommensurable with decolonization"
+name: "Conjecture: The anarchism of the liberal subject derives from civic duty and is thus incommensurable with decolonization"
 date-created: 2025-08-30
 type: conjecture
 visibility: public

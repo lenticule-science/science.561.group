@@ -9,7 +9,6 @@ keywords:
   - anarchism
 description: "The anarchist current that emphasizes informal organization, immediate attack on structures of domination, and the refusal of permanent organizations, political programs, and negotiation with power."
 part-of: sociology/schools/anarchism/schools/insurrectionary-anarchism/terms
-title: "Insurrectionary Anarchism"
 tags:
   - insurrectionary-anarchism
 defines:

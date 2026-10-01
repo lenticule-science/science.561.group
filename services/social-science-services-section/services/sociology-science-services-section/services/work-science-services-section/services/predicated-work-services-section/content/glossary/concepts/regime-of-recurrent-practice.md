@@ -8,7 +8,7 @@ description: "A recurrent practice $R = (\\mathcal{S}R, TR, \\alphaR)$ embedded 
 
 # Regime of a recurrent practice
 
-A [recurrent practice](../terms/recurrent-practice.md) $R = (\mathcal{S}_R, T_R, \alpha_R)$ embedded in an [operations settling](../../../../../../../../../../../../public-services-section/services/personal-services-section/services/emsenn-services-section/content/text/glossary/terms/operations-settling.md) lives in a specific regime determined by its aggregation structure $\alpha_R$:
+A [recurrent practice](../../text/glossary/terms/recurrent-practice.md) $R = (\mathcal{S}_R, T_R, \alpha_R)$ embedded in an [operations settling](../../../../../../../../../../../../public-services-section/services/personal-services-section/services/emsenn-services-section/content/text/glossary/terms/operations-settling.md) lives in a specific regime determined by its aggregation structure $\alpha_R$:
 
 | $\alpha_R$ | Regime of $R$ as a sub-settling |
 |---|---|

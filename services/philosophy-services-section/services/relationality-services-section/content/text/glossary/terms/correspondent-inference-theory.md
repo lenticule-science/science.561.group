@@ -1,6 +1,6 @@
 ---
 id: 52d0ce2c-62cf-4f08-8444-3cdfba15a8e8
-title: Correspondent Inference Theory
+name: Correspondent Inference Theory
 date-created: 2025-08-29
 ---
 

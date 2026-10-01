@@ -3,7 +3,7 @@ aliases:
 - GTAVI
 author: emsenn
 id: 848aa467-7549-4478-a075-19dd92d9dabb
-title: Grand Theft Auto VI
+name: Grand Theft Auto VI
 date-created: 2025-07-21
 type: video game
 visibility: public

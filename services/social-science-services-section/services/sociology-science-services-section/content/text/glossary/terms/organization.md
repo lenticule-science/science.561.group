@@ -1,6 +1,6 @@
 ---
 id: 291f9264-5b97-4f48-acfc-53dc7ac77301
-title: organization
+name: organization
 description: "A purposive collective that acts as one — the genus. A company (charter, staff, governance, standing — see company.md) is one species of organization, distinguished by perpetual succession and entity-status collective attribution; it is not a synonym for organization, and organization is not a synonym for it. Not every organization is a company: an affinity group, a federation, a board, or a duty-bearing office is an organization without being a company (no charter-bound entity-standing, no staff in company.md's sense). The 561 Group's own bands and kinship (Pheží Ocháǧe) are explicitly not an organization in this sense at all — see corporate-culm.md's culm/rhizome distinction."
 date-created: 2025-09-05
 date-modified: 2026-09-28

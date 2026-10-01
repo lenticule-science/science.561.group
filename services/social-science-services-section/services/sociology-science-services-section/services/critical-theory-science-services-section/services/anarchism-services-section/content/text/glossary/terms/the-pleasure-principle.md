@@ -10,7 +10,6 @@ keywords:
   - anarchism
   - psychoanalysis
 description: "Freud's principle that the psychic apparatus seeks to reduce tension and maintain equilibrium — the homeostatic management of satisfaction. Anarchist analysis uses it to describe how systems of domination manage populations through the regulated distribution of pleasure, and how resistance that operates 'beyond the pleasure principle' escapes this management."
-title: "The Pleasure Principle"
 type: term
 tags:
   - Anarchism

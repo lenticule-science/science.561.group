@@ -1,6 +1,6 @@
 ---
 id: 13385238-45a3-4452-9402-b1c73e67e99c
-title: Kentish language
+name: Kentish language
 date-created: 2025-08-25
 type: language
 visibility: public

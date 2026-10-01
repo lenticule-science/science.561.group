@@ -5,7 +5,7 @@ status: current
 depends-on: [lambda-term, beta-reduction, alpha-equivalence]
 realizes: [beta-reduction, normalization, confluence]
 symbol: \Lambda
-title: Untyped lambda calculus
+name: Untyped lambda calculus
 description: "The untyped lambda calculus $\\Lambda$ is the formal system whose terms are lambda-terms modulo alpha-equivalence, with one computation rule, beta-reduction:"
 ---
 

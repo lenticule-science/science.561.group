@@ -4,7 +4,7 @@ class: structural-operator
 status: stable
 depends-on: [formal-context]
 see-also: [intent-extent-duality, concept-lattice]
-title: Derivation operator
+name: Derivation operator
 description: "The pair of operators $({-})': \\mathcal{P}(G) \\to \\mathcal{P}(M)$ and $({-})': \\mathcal{P}(M) \\to \\mathcal{P}(G)$ induced by a formal context $\\mathbb{K} = (G, M, I)$ via"
 ---
 

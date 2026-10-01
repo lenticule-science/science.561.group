@@ -1,6 +1,6 @@
 ---
 id: 37df7e7e-2f40-40e8-8b2c-8a74980e1ca8
-title: fascist grammaring
+name: fascist grammaring
 date-created: 2025-10-16
 ---
 

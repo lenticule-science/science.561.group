@@ -23,7 +23,6 @@ references:
       - literal: Bruner
     issued:
       - year: 1960
-title: spiral curriculum
 ---
 
 A [spiral curriculum](spiral-curriculum.md) is a curriculum structure in which subjects are revisited at increasing levels of depth and complexity, each pass building on the understanding developed in the previous one. The concept was introduced by [Jerome Bruner](../../../../../../../../../information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/jerome-bruner.md) in *The Process of Education* (1960) [@bruner_ProcessEducation_1960].

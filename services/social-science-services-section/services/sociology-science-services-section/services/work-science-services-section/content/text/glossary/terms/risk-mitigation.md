@@ -12,7 +12,6 @@ requires:
   - standard-operating-procedures
 governed-by: corporate-structure
 addresses: supply-chain
-title: "Risk Mitigation"
 description: "Risk mitigation is the identification, assessment, and reduction of threats to a business's operations, finances, or legal standing. It asks: what could go wrong, how likely is it, how severe would the consequences be, and what can be done to reduce the probability or impact?"
 date-modified: 2026-03-09
 ---

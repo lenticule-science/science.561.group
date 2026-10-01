@@ -1,5 +1,4 @@
 ---
-title: "Meter"
 date-created: 2026-03-05T00:00:00
 date-modified: 2026-04-30
 aliases:
@@ -49,7 +48,7 @@ references:
     container-title: University of Arkansas Press
     issued:
       - year: 1990
-name: "meter"
+name: "Meter"
 ---
 
 Meter is the abstract pattern that a metrical poem keeps a near-bargain with — a fixed template of stressed and unstressed syllables, of syllable counts, or of long and short syllables, against which each spoken line is heard.

@@ -2,7 +2,6 @@
 name: "Determination"
 description: "The mode in which a claim has been structurally witnessed by its relations to other claims; the settled outcome of relational witnessing. The contrasting mode to absurdity; what relating produces when its activity stabilizes locally."
 date-created: 2026-04-28
-title: "Determination"
 defines:
   - determination
   - determined

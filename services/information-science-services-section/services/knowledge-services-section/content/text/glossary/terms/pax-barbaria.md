@@ -1,6 +1,6 @@
 ---
 id: 759c3d7f-bfb5-49fe-bbb6-4103859a79b8
-title: Pax Barbaria
+name: Pax Barbaria
 date-created: 2025-08-26
 visibility: public
 ---

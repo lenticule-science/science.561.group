@@ -1,6 +1,6 @@
 ---
 id: 6fcbf1ea-4e4f-4210-a4eb-a5cacab5dc20
-title: Lakotaean philosophy
+name: Lakotaean philosophy
 date-created: 2025-09-20
 ---
 

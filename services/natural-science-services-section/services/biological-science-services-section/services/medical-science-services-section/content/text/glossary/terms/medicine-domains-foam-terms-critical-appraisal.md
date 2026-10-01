@@ -1,5 +1,5 @@
 ---
-title: "Critical Appraisal"
+name: "Critical Appraisal"
 type: "term"
 date-created: 2026-03-03
 ---

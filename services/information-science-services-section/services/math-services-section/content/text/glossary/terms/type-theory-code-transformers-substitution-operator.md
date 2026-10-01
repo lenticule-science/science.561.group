@@ -3,7 +3,7 @@ type: definition
 class: syntactic-operator
 status: current
 depends-on: [substitution, lambda-term]
-title: Substitution operator
+name: Substitution operator
 description: The substitution operator $[-/-]$ is the binary operation taking a lambda-term $M$, a variable $x$, and a term $N$, and producing the capture-avoiding substitution $M[N/x]$.
 ---
 

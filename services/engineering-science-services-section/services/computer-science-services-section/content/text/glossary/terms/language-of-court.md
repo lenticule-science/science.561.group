@@ -1,7 +1,7 @@
 ---
 field: "legalism"
 id: d943bda4-5b7b-4da9-9bf7-ad0147dba3e7
-title: language of court
+name: language of court
 visibility: public
 ---
 

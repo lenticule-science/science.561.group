@@ -1,5 +1,5 @@
 ---
-title: "Addition"
+name: "Addition"
 type: "definition"
 date-created: 2025-12-26
 ---

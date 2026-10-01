@@ -1,5 +1,5 @@
 ---
-title: "agda"
+name: "agda"
 aliases:
   - "agda"
   - "Agda"

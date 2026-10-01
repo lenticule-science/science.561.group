@@ -4,7 +4,7 @@ class: context-combination
 status: stable
 depends-on: [formal-context]
 see-also: [subposition, scale-measure]
-title: Apposition
+name: Apposition
 description: The combination of two formal contexts that share an object set, by union of their attribute sets.
 ---
 

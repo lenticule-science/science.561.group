@@ -1,6 +1,6 @@
 ---
 id: b7d64e1d-3912-48d9-a8cf-b4ead98a00bb
-title: Supreme Court
+name: Supreme Court
 date-created: 2025-09-01
 type: court
 visibility: public

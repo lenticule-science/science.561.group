@@ -1,6 +1,6 @@
 ---
 id: 656a4c2c-5328-42f3-a08c-7eb8c726fd0d
-title: alumni
+name: alumni
 date-created: 2025-09-06
 type: person
 visibility: public

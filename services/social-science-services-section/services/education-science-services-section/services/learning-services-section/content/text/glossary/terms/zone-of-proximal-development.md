@@ -26,7 +26,6 @@ references:
       - literal: Vygotsky
     issued:
       - year: 1978
-title: zone of proximal development
 ---
 
 The [zone of proximal development](zone-of-proximal-development.md) (ZPD) is the distance between what a learner can do independently and what they can do with guidance from a more capable partner. The concept was introduced by [Lev Vygotsky](../../../../../../../../../information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/lev-vygotsky.md) in *Mind in Society* [@vygotsky_MindInSociety_1978].

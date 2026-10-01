@@ -4,7 +4,7 @@ class: refactor-generator
 status: draft
 depends-on: [codebase-cell-system, refactor]
 realizes: [refactor]
-title: Extract
+name: Extract
 description: A refactor that introduces a new definition (function, method, type) in the codebase cell-system, redirecting cells from the original site to the extracted definition, without changing the witness sheaf.
 ---
 

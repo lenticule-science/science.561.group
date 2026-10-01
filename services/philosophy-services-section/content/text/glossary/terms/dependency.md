@@ -1,5 +1,5 @@
 ---
-title: "Dependency"
+name: "Dependency"
 description: "The condition of requiring care from others — treated in care ethics as a fundamental feature of human existence, not a deficiency or deviation from autonomy."
 date-created: 2026-03-05T00:00:00
 date-modified: 2026-03-29

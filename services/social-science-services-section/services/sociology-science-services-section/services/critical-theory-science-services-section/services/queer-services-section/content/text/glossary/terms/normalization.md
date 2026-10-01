@@ -9,7 +9,6 @@ keywords:
   - social-theory
   - gender-theory
 description: "The process by which certain practices, identities, and ways of being are constituted as 'normal' — not through prohibition of deviance but through the production of a standard against which all conduct is measured."
-title: "Normalization"
 type: term
 tags:
   - SocialTheory

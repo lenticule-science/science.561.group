@@ -8,7 +8,6 @@ tags: []
 description: "A small autonomous group organized by mutual trust and shared analysis rather than formal membership, constituting the basic organizational unit of insurrectionary anarchism."
 date-modified: 2026-03-09
 part-of: sociology/schools/anarchism/topics/organization/terms
-title: "Affinity Group"
 type: term
 defines:
   - "Affinity Group"

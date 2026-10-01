@@ -9,7 +9,6 @@ see-also:
   - "/sociology/disciplines/legalism/schools/american-law/index.md"
 references:
   - /sociology/disciplines/legalism/schools/american-law/index.md
-title: "prosecutorial discretion"
 type: term
 tags:
   - Legalism

@@ -7,7 +7,6 @@ aliases:
   - "syndicalism"
 tags: []
 description: "The current within anarchism that organizes through labor unions run directly by workers — without paid officials, party leadership, or state mediation — using the general strike as the revolutionary method."
-title: "Anarcho-Syndicalism"
 type: term
 defines:
   - "Anarcho-Syndicalism"

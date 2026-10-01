@@ -1,5 +1,5 @@
 ---
-title: "Bank Reconciliation"
+name: "Bank Reconciliation"
 aliases:
   - "Bank Reconciliation"
   - "bank reconciliation"

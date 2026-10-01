@@ -26,7 +26,6 @@ references:
       - literal: Freire
     issued:
       - year: 1970
-title: conscientization
 defines:
 - conscientization
 - conscientização

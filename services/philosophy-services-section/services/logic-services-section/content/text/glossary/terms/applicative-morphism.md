@@ -11,7 +11,7 @@ see-also:
 references:
   - van Oosten 2008
   - Hofstra-van Oosten 2003
-title: Applicative morphism
+name: Applicative morphism
 description: "An applicative morphism $\\gamma: A \\to B$ between PCAs is a function $\\gamma: A \\to B$ tracked by a realizer $r \\in B$ satisfying:"
 ---
 

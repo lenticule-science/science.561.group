@@ -1,7 +1,7 @@
 ---
 author: emsenn
 description: A service offering
-title: Tarot Reading
+name: Tarot Reading
 created: 2019-04-29T21:55:07
 modified: 2025-07-13T21:56:15
 ---

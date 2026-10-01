@@ -10,7 +10,6 @@ ship-with-summary: 68
 dont-ship: 40
 udc-id: ["004.8"]
 arxiv-id: ["cs.MA"]
-title: fars-terms-audit
 description: Audit of the 119 FARS spec terms for user-readability.
 ---
 

@@ -33,5 +33,5 @@ In temperate regions with cold winters, cultivated leeks overwinter as dormant p
 
 ## See also
 
-- [Leek cultivation](../../../../../../../../../domestic-science-services-section/services/domestic-production-services-section/services/gardening-services-section/content/glossary/terms/leek-cultivation.md)
+- [Leek cultivation](../../../../../../../../../domestic-science-services-section/services/domestic-production-services-section/services/gardening-services-section/content/text/glossary/terms/leek-cultivation.md)
 - [Allium tricoccum (true wild leek)](./allium-tricoccum.md)

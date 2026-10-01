@@ -1,7 +1,7 @@
 ---
 id: de993a30-4f0b-42b8-be9a-43b8d08fe0fd
 roam-refs: "@minh-ha_woman_1989"
-title: Woman, Native, Other
+name: Woman, Native, Other
 date-created: 2025-10-04
 ---
 

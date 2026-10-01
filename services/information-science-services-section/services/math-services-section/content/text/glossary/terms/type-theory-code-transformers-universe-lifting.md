@@ -3,7 +3,7 @@ type: definition
 class: embedding
 status: current
 depends-on: [universe, universe-level]
-title: Universe lifting
+name: Universe lifting
 description: "Universe lifting $\\mathrm{Lift}{i,j} : \\mathrm{Type}i \\hookrightarrow \\mathrm{Type}j$ (for $i \\le j$) is the canonical embedding that sends a type at level $i$ to its image at level $j$."
 ---
 

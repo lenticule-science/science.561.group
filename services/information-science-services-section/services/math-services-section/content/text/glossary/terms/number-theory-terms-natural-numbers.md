@@ -1,5 +1,5 @@
 ---
-title: "Natural Numbers"
+name: "Natural Numbers"
 aliases:
   - "natural numbers"
   - "natural number"

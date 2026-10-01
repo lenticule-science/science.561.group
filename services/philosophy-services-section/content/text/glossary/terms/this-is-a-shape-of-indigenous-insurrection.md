@@ -1,6 +1,6 @@
 ---
 id: d433d37c-5ce0-4d9c-8714-4d4b1cbf8492
-title: This Is A Shape Of Indigenous Insurrection
+name: This Is A Shape Of Indigenous Insurrection
 date-created: 2025-10-07
 ---
 

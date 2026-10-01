@@ -5,7 +5,7 @@ symbol: "\\mathrm{diffcmp}_{\\mathfrak{C}}"
 status: draft
 depends-on: [comparison-morphism, predicatory-differentiation, evidence-residual, four-symmetric-evidence-difference]
 see-also: [commutation-defect]
-title: Difference comparison morphism
+name: Difference comparison morphism
 description: A difference comparison morphism compares two valuations or settlings by producing the evidence that separates them under the selected standard.
 ---
 

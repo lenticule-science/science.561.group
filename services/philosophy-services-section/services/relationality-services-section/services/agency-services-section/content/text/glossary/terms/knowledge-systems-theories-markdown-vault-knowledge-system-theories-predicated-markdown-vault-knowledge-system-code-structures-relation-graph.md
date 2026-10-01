@@ -11,7 +11,7 @@ realizes:
 see-also:
   - ../theorems/relation-graph-topo-sortable-under-depends-on.md
   - ../theorems/typed-kinds-mutually-exclusive.md
-title: Relation graph
+name: Relation graph
 description: The relation graph of a vault is the directed labeled multigraph whose vertices are typed notes and whose edges are frontmatter-relations.
 ---
 

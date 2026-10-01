@@ -1,5 +1,5 @@
 ---
-title: "Induction"
+name: "Induction"
 type: "definition"
 date-created: 2025-12-26
 ---

@@ -1,5 +1,5 @@
 ---
-title: "Shape"
+name: "Shape"
 identity: shape
 description: "Shape is overall form: the perspective that strips away local detail to reveal how things are connected at the largest scale."
 date-created: 2026-03-04

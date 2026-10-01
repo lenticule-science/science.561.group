@@ -1,5 +1,5 @@
 ---
-title: "linked data"
+name: "linked data"
 type: "term"
 date-created: 2026-03-01
 ---

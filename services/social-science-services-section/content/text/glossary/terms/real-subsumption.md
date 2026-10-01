@@ -1,5 +1,5 @@
 ---
-title: "Real Subsumption"
+name: "Real Subsumption"
 description: "Marx's term for the second stage of capital's domination of the labor process, in which capital reorganizes the technical content of the labor process itself — through division of labor, machinery, factory discipline, time-and-motion methods — to maximize relative surplus value, with the labor process now bearing capital's organizational stamp throughout. Distinguished from formal subsumption, in which capital takes over an existing labor process without yet transforming its technical content."
 defines: real-subsumption
 related: [labor-process, deskilling, scientific-management, manufacturing-consent, general-intellect]

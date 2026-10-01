@@ -1,5 +1,5 @@
 ---
-title: You Need a Holistic Action Plan
+name: You Need a Holistic Action Plan
 aliases:
   - you-need-a-holistic-action-plan
 specialization: research

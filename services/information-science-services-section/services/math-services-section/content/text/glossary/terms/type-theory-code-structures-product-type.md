@@ -4,7 +4,7 @@ class: type-former
 status: current
 depends-on: [function-type]
 symbol: A \times B
-title: Product type
+name: Product type
 description: "A product type $A \\times B$ is the type of ordered pairs $(a, b)$ with $a : A$ and $b : B$."
 ---
 

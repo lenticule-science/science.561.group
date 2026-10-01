@@ -54,7 +54,6 @@ references:
     container-title: Macmillan
     issued:
       - year: 1929
-title: "Act"
 description: "What a thing does that produces change — the realization of capacity, from Aristotle's energeia to Whitehead's actual occasions."
 defines: act
 date-modified: 2026-04-06

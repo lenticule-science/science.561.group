@@ -1,5 +1,5 @@
 ---
-title: "Selection effect as fiber restriction"
+name: "Selection effect as fiber restriction"
 type: theorem
 status: sketch
 component-of: predicated-astronomy

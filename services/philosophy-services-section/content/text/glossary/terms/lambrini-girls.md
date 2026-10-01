@@ -1,6 +1,6 @@
 ---
 id: 9d6326d0-06ac-493d-a73d-19523091469a
-title: Lambrini Girls
+name: Lambrini Girls
 date-created: 2025-07-22
 ---
 

@@ -9,7 +9,7 @@ realizes:
 see-also:
   - teaching/explanations/register.md
   - ../../information/theories/information-theory/_index.md
-title: Shannon channel
+name: Shannon channel
 description: The Shannon channel is the foundational formal model of a communication channel, due to Shannon (1948, A Mathematical Theory of Communication).
 ---
 

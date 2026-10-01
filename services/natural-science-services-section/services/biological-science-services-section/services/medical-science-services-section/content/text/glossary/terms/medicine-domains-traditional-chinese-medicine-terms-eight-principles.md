@@ -1,5 +1,5 @@
 ---
-title: "Eight Principles"
+name: "Eight Principles"
 type: "term"
 date-created: 2026-04-02
 ---

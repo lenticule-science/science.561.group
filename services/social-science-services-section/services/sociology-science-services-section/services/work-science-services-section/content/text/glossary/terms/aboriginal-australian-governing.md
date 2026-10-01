@@ -6,7 +6,6 @@ class: relational-infrastructure-realization
 status: draft
 realizes: ../../governing-by-kinship.md
 depends-on: [governing-by-kinship, jural-relation, polity, jurisdiction, consensus-closure]
-title: Aboriginal Australian governing
 ---
 
 The Aboriginal Australian realization of the [governing-by-kinship](../../../../../../../../../../../public-services-section/services/personal-services-section/services/emsenn-services-section/content/text/documents/articles/essays/governing-by-kinship.md) pattern. The abstract structure $(G, \mu, \mathrm{path\text{-}knowledge})$ is filled in with the specific tradition's grouping algebra, the specific knowledge cells that index along it, and the specific closure rules that condition on it.

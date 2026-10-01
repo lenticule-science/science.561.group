@@ -3,7 +3,7 @@ type: definition
 class: predicate-section
 symbol: "=_E"
 depends-on: [predication-hyperdoctrine, predicate-specialization, equality-via-equalizer, truth-order, specialization-hyperdoctrinal-adjoints, entity-set]
-title: Classical equality (derived)
+name: Classical equality (derived)
 description: "Fix a predicate specialization $g : q \\to p$ with $\\mathrm{dom}(q) = \\DeltaE := \\{(s, s) : s \\in E\\}$ — the diagonal sub-support of the entity set $E$."
 kind: definition
 ---

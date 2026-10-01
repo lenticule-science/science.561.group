@@ -1,6 +1,6 @@
 ---
 
-title: "Channel Entry"
+name: "Channel Entry"
 description: "归经 (gui jing) — the concept that each medicinal herb has an affinity for specific meridians and organ-function systems, directing its therapeutic effects to particular body regions and functions"
 date-created: 2026-04-02
 aliases:

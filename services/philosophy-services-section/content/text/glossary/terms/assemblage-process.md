@@ -3,7 +3,7 @@ aliases:
 - process of assemblage
 field: "assemblage theory"
 id: c5b63cac-433b-4542-bd04-a65fdd946bff
-title: assemblage process
+name: assemblage process
 date-created: 2025-09-06
 type: process
 visibility: public

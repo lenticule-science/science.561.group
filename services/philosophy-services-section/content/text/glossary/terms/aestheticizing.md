@@ -1,7 +1,7 @@
 ---
 field: "aesthetics"
 id: 7849c222-b1f6-452e-871f-bc8f743357f8
-title: aestheticizing
+name: aestheticizing
 date-created: 2025-09-04
 type: act
 visibility: public

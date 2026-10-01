@@ -17,7 +17,6 @@ enables:
   - knowledge-sovereignty
 tags:
   - decolonial
-title: culturally sustaining pedagogy
 defines:
 - culturally sustaining pedagogy
 - culturally responsive pedagogy

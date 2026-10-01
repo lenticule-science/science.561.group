@@ -1,5 +1,5 @@
 ---
-title: "Roster"
+name: "Roster"
 description: "The assignment of personnel to shifts — a mapping from time slots to people that instantiates coverage and makes a schedule executable."
 defines: roster
 date-created: 2026-04-04

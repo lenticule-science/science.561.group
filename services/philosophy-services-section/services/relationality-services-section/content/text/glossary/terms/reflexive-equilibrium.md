@@ -1,5 +1,5 @@
 ---
-title: "Reflexive Equilibrium"
+name: "Reflexive Equilibrium"
 identity: reflexive-equilibrium
 description: "Reflexive equilibrium is the state in which further reflexive acts do not alter the structural form of the relational system."
 date-created: 2026-03-04

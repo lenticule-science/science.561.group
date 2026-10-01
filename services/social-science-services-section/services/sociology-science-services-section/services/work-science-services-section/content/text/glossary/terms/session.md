@@ -12,7 +12,6 @@ keywords:
   - web
   - metrics
 part-of: business/theories/web/terms
-title: "Session"
 type: term
 tags:
   - Business

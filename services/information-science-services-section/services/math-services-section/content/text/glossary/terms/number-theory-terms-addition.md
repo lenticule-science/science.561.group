@@ -1,5 +1,5 @@
 ---
-title: "Addition"
+name: "Addition"
 aliases:
   - "addition"
   - "sum"

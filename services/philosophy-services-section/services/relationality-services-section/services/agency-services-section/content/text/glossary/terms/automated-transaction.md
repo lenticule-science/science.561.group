@@ -1,6 +1,6 @@
 ---
 
-title: "Automated Transaction"
+name: "Automated Transaction"
 description: "An automated transaction is a rule that generates additional postings whenever a real transaction matches a pattern."
 aliases:
   - "Automated Transaction"

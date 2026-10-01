@@ -18,7 +18,7 @@ The [work vocabulary's four-way taxonomy](../../../../../../../../../../../../..
 | Process | yes | yes | $\mathcal{S}_T$ is ground and deterministic: all goal cells are determined from $v^T_0$ in one firing step; no disjunctive rules. |
 | Procedure | yes | no | Goal cells are determined (meaning fixed), but $\mathcal{S}_T$ contains branching rules — rules with disjunctive or conditional antecedents that route execution along different paths depending on which increment arrives first. |
 | Derivation | no | yes | The execution path (which closure rules fire in which order) is determined by $\mathcal{S}_T$, but the target valuation $v^*_T$ is not fixed at dispatch time — it is resolved during settling as the meaning-cells themselves settle. |
-| Inquiry | no | no | Both $v^*_T$ and the execution path are open. $\mathcal{S}_T$ starts nearly empty and acquires rules incrementally via [witness-as-increment](../../../../../../services/predicated-work-services-section/content/glossary/terms/witness-as-increment.md) as evidence arrives. |
+| Inquiry | no | no | Both $v^*_T$ and the execution path are open. $\mathcal{S}_T$ starts nearly empty and acquires rules incrementally via [witness-as-increment](../../../../../../services/predicated-work-services-section/content/text/glossary/terms/witness-as-increment.md) as evidence arrives. |
 
 ## Formal statement
 

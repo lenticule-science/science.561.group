@@ -10,7 +10,7 @@ see-also:
   - translation.md
   - codeswitching.md
   - ../../../../information/theories/knowledge-systems/theories/predicated-knowledge-systems/morphisms/specialize.md
-title: Specialization
+name: Specialization
 description: "The operation by which a sign-vehicle (or coded-pairing) in a semiotic system is refined to a more-specific one along the system's paradigmatic sub-structure: $f: V{\\mathrm{specific}} \\to V{\\mathrm{general}}$ in the system's…"
 ---
 

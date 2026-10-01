@@ -1,5 +1,5 @@
 ---
-title: "Labor Process"
+name: "Labor Process"
 description: "The concrete activity by which human labor power is transformed into value-producing work. In Marx's exposition, the labor process in general comprises three simple elements (purposive activity, the object of activity, instruments of activity); under capitalism it is subsumed by the valorization process whose logic determines its concrete organizational form."
 defines: labor-process
 related: [real-subsumption, work, work-unit, operation, deskilling, manufacturing-consent]

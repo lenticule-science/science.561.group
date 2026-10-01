@@ -5,7 +5,7 @@ status: draft
 symbol: "K_4 \\curvearrowright v^{\\mathrm{op}}"
 depends-on: [operations-settling, operations-base]
 realizes: [klein-four-symmetry, internal-z2-gauge]
-title: Work symmetry group
+name: Work symmetry group
 description: The Klein-four group $K4 = \langle \sim, - \rangle$ — the natural symmetry of any bilattice carrying both negation and conflation — acts on every operations settling $v^{\mathrm{op}}$ by acting cellwise on its $\mathbf{FOUR}$-valued cells.
 ---
 

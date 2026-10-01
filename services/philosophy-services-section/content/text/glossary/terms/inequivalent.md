@@ -1,6 +1,6 @@
 ---
 id: 888b3a50-3d98-4b9f-bb32-08adbee01012
-title: inequivalent
+name: inequivalent
 date-created: 2025-08-26
 ---
 

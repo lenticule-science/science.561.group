@@ -5,7 +5,7 @@ status: draft
 symbol: W
 depends-on: [task-cell-system, plan, normative-operational-layering, work-regime]
 realizes: [workflow]
-title: Workflow
+name: Workflow
 description: "The mathematical realization of a workflow: a directed-graph composition of work units with a single algebraic constraint — the input cell-pattern type equals the output cell-pattern type."
 ---
 

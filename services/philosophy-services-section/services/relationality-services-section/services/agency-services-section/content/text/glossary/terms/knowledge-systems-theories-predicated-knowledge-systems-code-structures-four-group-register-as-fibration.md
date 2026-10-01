@@ -5,7 +5,7 @@ status: sketch
 depends-on: [predication-fibration, predicate-category, predicated-knowledge-system]
 realizes: [knowing-as-settling, discourse-community-as-fiber]
 see-also: [pmest-as-five-axis-decomposition, four-group-register-as-regime]
-title: Four-group register as fibration
+name: Four-group register as fibration
 description: The four-group directory layout — governing, engaging, situating, defining — that this corpus inherits from earlier prior-art work is the visible surface of a four-stratum decomposition of the predicate category $\mathcal{C}$ in any…
 ---
 

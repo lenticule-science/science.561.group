@@ -1,5 +1,5 @@
 ---
-title: "Accentual-Syllabic Verse"
+name: "Accentual-Syllabic Verse"
 date-created: 2026-04-30
 aliases:
   - "accentual-syllabic verse"

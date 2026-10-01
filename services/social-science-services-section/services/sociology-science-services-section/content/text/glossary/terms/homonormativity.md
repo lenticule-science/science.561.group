@@ -8,7 +8,6 @@ aliases:
 keywords:
   - gender-theory
 description: "The assimilation of queer life into normative structures of domesticity, consumption, state recognition, and respectability."
-title: "Homonormativity"
 type: term
 tags:
   - GenderTheory

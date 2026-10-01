@@ -5,7 +5,7 @@ status: current
 depends-on: [variable, binder]
 realizes: [variable, binder]
 symbol: M
-title: Lambda term
+name: Lambda term
 description: A lambda term is an expression in the grammar
 ---
 

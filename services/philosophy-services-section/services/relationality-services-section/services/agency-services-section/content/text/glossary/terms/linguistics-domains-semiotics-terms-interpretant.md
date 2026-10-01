@@ -1,5 +1,5 @@
 ---
-title: "interpretant"
+name: "interpretant"
 type: "term"
 date-created: 2025-12-31
 ---

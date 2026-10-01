@@ -1,6 +1,6 @@
 ---
 id: 2c0e8932-f9d5-4878-a938-616088f7f25a
-title: star
+name: star
 date-created: 2025-10-18
 ---
 

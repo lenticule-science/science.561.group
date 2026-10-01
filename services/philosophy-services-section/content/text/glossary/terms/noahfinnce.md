@@ -1,6 +1,6 @@
 ---
 id: d754d529-5df5-4681-b500-4af39e6216c4
-title: NOAHFINNCE
+name: NOAHFINNCE
 date-created: 2025-07-22
 ---
 

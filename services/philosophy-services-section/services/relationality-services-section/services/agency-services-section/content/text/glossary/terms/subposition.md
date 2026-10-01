@@ -4,7 +4,7 @@ class: context-combination
 status: stable
 depends-on: [formal-context]
 see-also: [apposition]
-title: Subposition
+name: Subposition
 description: The combination of two formal contexts that share an attribute set, by union of their object sets.
 ---
 

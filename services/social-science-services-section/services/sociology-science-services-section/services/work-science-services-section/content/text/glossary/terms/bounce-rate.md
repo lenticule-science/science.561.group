@@ -11,7 +11,6 @@ keywords:
   - web
   - metrics
 part-of: business/theories/web/terms
-title: "Bounce Rate"
 type: term
 tags:
   - Business

@@ -1,6 +1,6 @@
 ---
 id: ddca63e0-1d58-46f1-b305-f9052108325a
-title: liberal epistemology
+name: liberal epistemology
 date-created: 2025-08-30
 type: epistemology
 visibility: public

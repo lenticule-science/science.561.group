@@ -1,6 +1,6 @@
 ---
 id: 40b8538e-cacb-4cee-841b-adabe5ff8096
-title: apically articulating
+name: apically articulating
 type: articulating
 ---
 

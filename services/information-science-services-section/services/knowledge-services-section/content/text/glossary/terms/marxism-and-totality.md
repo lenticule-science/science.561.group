@@ -1,6 +1,6 @@
 ---
 id: 28f3f274-e0ec-4b62-bdf7-28520ae273d2
-title: Marxism and Totality
+name: Marxism and Totality
 date-created: 2025-09-13
 ---
 

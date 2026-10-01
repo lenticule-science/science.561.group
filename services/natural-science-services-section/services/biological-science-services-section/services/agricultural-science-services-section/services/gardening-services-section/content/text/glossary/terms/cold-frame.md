@@ -40,4 +40,4 @@ Cold frames were central to French intensive gardening traditions, where they we
 ## See also
 
 - [Row Cover](./row-cover.md) — lighter, more portable season extension
-- [Hardening Off](../../../../../../../../../../../domestic-science-services-section/services/domestic-production-services-section/services/gardening-services-section/content/glossary/terms/hardening-off.md) — the process cold frames enable
+- [Hardening Off](../../../../../../../../../../../domestic-science-services-section/services/domestic-production-services-section/services/gardening-services-section/content/text/glossary/terms/hardening-off.md) — the process cold frames enable

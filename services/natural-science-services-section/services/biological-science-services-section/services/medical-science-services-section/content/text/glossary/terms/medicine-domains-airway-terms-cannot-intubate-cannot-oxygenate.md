@@ -1,5 +1,5 @@
 ---
-title: "Cannot-Intubate, Cannot-Oxygenate (CICO)"
+name: "Cannot-Intubate, Cannot-Oxygenate (CICO)"
 type: "term"
 date-created: 2026-03-03
 ---

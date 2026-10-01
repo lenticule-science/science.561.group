@@ -10,7 +10,6 @@ aliases:
 tags: []
 date-modified: 2026-03-09
 part-of: sociology/topics/political-economy/terms
-title: "Pareto Condition"
 type: term
 defines:
   - "Pareto Condition"

@@ -1,5 +1,5 @@
 ---
-title: "Stabilizes-Between"
+name: "Stabilizes-Between"
 identity: stabilizes-between
 description: "Stabilizes-Between is the condition for self-persistence between dual poles."
 date-created: 2026-03-04

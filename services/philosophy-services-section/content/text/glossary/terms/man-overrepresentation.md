@@ -1,5 +1,5 @@
 ---
-title: "Overrepresentation of Man"
+name: "Overrepresentation of Man"
 defines: man-overrepresentation
 aliases: [man-overrepresentation, overrepresentation of man, the overrepresentation, man as if it were the human]
 description: "Wynter's term for the structural condition in which the modern Western secular subject — Man, in two successive overrepresentations (Man1 of the rational political subject, Man2 of the bio-economic subject) — has been mistaken for the human itself, with the consequence that other genres of the human are positioned as subhuman, prehuman, or insufficiently human. The overrepresentation is not a correctable bias but the structural form of modern knowledge, governing what counts as rational, scientific, and fully human."

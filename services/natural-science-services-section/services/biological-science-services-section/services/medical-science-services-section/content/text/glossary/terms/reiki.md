@@ -1,6 +1,6 @@
 ---
 
-title: "Reiki"
+name: "Reiki"
 description: "A Japanese healing practice developed by Mikao Usui in which a practitioner channels energy through their hands to support healing"
 aliases:
   - "reiki"

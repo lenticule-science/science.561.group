@@ -39,7 +39,6 @@ references:
       - literal: Alfred North Whitehead
     issued:
       - year: 1929
-title: Condition
 description: "A specific quality of a thing at a given moment — a quality indexed by time."
 defines: condition
 date-modified: "2026-04-03"

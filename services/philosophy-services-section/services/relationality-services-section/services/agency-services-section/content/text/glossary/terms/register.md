@@ -1,5 +1,5 @@
 ---
-title: "Register"
+name: "Register"
 aliases:
   - "Register"
   - "register"

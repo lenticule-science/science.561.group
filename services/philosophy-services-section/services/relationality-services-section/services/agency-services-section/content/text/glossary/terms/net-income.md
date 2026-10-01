@@ -1,5 +1,5 @@
 ---
-title: "Net Income"
+name: "Net Income"
 date-created: 2026-03-06T00:00:00
 type: term
 aliases:

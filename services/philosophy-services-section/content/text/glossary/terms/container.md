@@ -12,7 +12,6 @@ date-modified: 2026-04-06
 visibility: public
 id: container
 defines: container
-title: Container
 ---
 
 A container is anything that holds something else inside it. A box is a container. A bag is a container. A room, a drawer, a pocket, a folder, a cell, a shipping container, a zip file — all containers.

@@ -1,6 +1,6 @@
 ---
 id: 3d550045-9f52-416c-bd4b-c47fe60452a8
-title: Early Modern English language
+name: Early Modern English language
 type: language
 visibility: public
 ---

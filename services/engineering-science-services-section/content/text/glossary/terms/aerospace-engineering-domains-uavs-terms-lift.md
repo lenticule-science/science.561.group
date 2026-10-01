@@ -1,5 +1,5 @@
 ---
-title: "Lift"
+name: "Lift"
 type: "term"
 date-created: 2026-03-06
 ---

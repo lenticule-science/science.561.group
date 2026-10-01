@@ -1,5 +1,5 @@
 ---
-title: Email with Emacs
+name: Email with Emacs
 ---
 
 # Introduction

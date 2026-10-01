@@ -1,5 +1,5 @@
 ---
-title: "Successor"
+name: "Successor"
 aliases:
   - "successor"
   - "successor function"

@@ -28,7 +28,6 @@ references:
       - literal: Woodson
     issued:
       - year: 1933
-title: miseducation
 ---
 
 [Miseducation](miseducation.md) is education that systematically damages the people it claims to serve — not through failure to teach, but through success in teaching the wrong things. The concept was articulated by [Carter G. Woodson](../../../../../../../../../information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/carter-g-woodson.md) in *The Mis-Education of the Negro* (1933) [@woodson_MisEducationNegro_1933].

@@ -16,7 +16,6 @@ governs:
 enables:
   - franchise
   - risk-mitigation
-title: "Corporate Structure"
 defines:
   - "Corporate Structure"
   - "LLC"

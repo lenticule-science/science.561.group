@@ -1,6 +1,6 @@
 ---
 id: d8e776b1-21e8-45fb-aee7-6b4f44d28823
-title: Parts & Spares
+name: Parts & Spares
 date-created: 2025-07-22
 type: music artist
 visibility: public

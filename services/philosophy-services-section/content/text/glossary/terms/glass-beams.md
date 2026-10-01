@@ -1,6 +1,6 @@
 ---
 id: 76946d54-e419-4cc2-a9e5-8c5483c50111
-title: Glass Beams
+name: Glass Beams
 date-created: 2025-07-21
 ---
 

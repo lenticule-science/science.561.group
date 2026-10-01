@@ -5,7 +5,6 @@ description: "The portion of a website's visitors that arrive through unpaid sea
 domain: web-business
 uses: SEO, Pageview
 date-created: 2026-03-29
-title: "Organic Traffic"
 defines: Organic Traffic
 related: Content Strategy, Web Monetization, Conversion Rate
 date-modified: 2026-03-29

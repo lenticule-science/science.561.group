@@ -4,7 +4,7 @@ class: refactor-generator
 status: draft
 depends-on: [codebase-cell-system, refactor, invisible-automorphism-subgroup]
 realizes: [refactor]
-title: Rename
+name: Rename
 description: A refactor that permutes identifiers in the codebase cell-system without changing any other cell.
 ---
 

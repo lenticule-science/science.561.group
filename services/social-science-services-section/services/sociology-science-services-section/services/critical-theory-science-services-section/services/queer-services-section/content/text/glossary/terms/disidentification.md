@@ -9,7 +9,6 @@ keywords:
   - gender-theory
   - black-radical-tradition
 description: "A mode of navigating dominant ideology by working on and against it simultaneously — neither assimilating nor rejecting but transforming from within."
-title: "Disidentification"
 type: term
 tags:
   - GenderTheory

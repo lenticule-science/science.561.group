@@ -1,5 +1,5 @@
 ---
-title: "Record"
+name: "Record"
 type: "page"
 date-created: 2026-03-20
 description: A Record is a triple (K, V, τ) — a key K that identifies the record and situates it within an indexing scheme, a value V that constitutes the record's content (a structured assignment from field names to field values), and a time-stamp or…

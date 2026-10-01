@@ -1,5 +1,5 @@
 ---
-title: "Deskilling"
+name: "Deskilling"
 description: "Braverman's thesis that monopoly capitalism systematically degrades work through the separation of conception from execution and the reduction of labor to interchangeable simple operations, with skill expropriated from workers and recomposed in the planning department, the machine, and the procedure."
 defines: deskilling
 related: [labor-process, real-subsumption, scientific-management, manufacturing-consent, contested-terrain, capability]

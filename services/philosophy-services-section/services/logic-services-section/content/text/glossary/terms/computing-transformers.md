@@ -1,5 +1,5 @@
 ---
-title: transformers/
+name: transformers/
 description: Canonical transformers of the category of computing — the morphisms and constructions that relate its structures.
 ---
 # transformers/

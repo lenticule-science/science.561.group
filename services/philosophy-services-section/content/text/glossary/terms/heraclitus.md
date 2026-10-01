@@ -1,6 +1,6 @@
 ---
 id: 9e28e696-0522-4c3c-8b8c-143d84711b5a
-title: Heraclitus
+name: Heraclitus
 date-created: 2025-08-29
 type: proto-classical greek philosopher
 visibility: public

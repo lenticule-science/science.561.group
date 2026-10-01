@@ -1,7 +1,7 @@
 ---
 author: emsenn
 id: b4f46c09-8d3c-4e0b-a3d7-cd979d39c768
-title: ontogenrism
+name: ontogenrism
 date-created: 2025-08-29
 type: ontological process
 visibility: public

@@ -1,5 +1,5 @@
 ---
-title: "Geontologies"
+name: "Geontologies"
 description: "Povinelli's name for the governance of the distinction between Life and Nonlife — the ontological division that structures late liberal power, more fundamental than biopolitics because it determines what counts as alive in the first place."
 date-created: 2026-03-05
 type: term

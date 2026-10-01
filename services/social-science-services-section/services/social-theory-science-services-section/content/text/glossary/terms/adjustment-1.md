@@ -6,7 +6,7 @@ symbol: J
 depends-on: [finding, plan, predication-cell, settling-monotonicity]
 realizes: [adjustment]
 see-also: [finding, retrospect-via-cosettling, multi-agent-work-as-crdt]
-title: Adjustment
+name: Adjustment
 description: "The substrate-entity produced by the feedback stage: a structured change applied in response to a finding."
 ---
 

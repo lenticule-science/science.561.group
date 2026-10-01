@@ -1,5 +1,5 @@
 ---
-title: "Variance"
+name: "Variance"
 aliases:
   - "Variance"
   - "variance"

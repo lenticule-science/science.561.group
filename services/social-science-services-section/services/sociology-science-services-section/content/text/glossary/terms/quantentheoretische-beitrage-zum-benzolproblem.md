@@ -1,7 +1,7 @@
 ---
 id: efe18fcb-5488-4a0e-b221-ab14aa14e23d
 roam-refs: "@huckel_quantentheoretische_1931"
-title: Quantentheoretische Beiträge zum Benzolproblem
+name: Quantentheoretische Beiträge zum Benzolproblem
 date-created: 2025-10-08
 ---
 

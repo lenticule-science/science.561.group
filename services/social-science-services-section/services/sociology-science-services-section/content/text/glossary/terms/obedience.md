@@ -5,7 +5,6 @@ aliases:
   - "obedience"
 tags: []
 description: "The habit of complying with authority — the behavior anarchism identifies as the mechanism through which hierarchy reproduces itself, sustained not primarily by force but by the internalization of subordination as natural or necessary."
-title: "Obedience"
 type: term
 defines:
   - "Obedience"

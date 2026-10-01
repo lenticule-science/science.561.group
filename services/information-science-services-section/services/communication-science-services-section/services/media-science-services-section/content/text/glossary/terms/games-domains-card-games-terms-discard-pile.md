@@ -1,5 +1,5 @@
 ---
-title: "discard pile"
+name: "discard pile"
 type: "term"
 date-created: 2026-03-01
 ---

@@ -3,7 +3,7 @@ type: definition
 class: decision-procedure
 status: current
 depends-on: [typing-judgment, typing-context, simply-typed-lambda-calculus]
-title: Type checking
+name: Type checking
 description: "Type checking is the operator (and the algorithm implementing it) that decides whether a given typing-judgment $\\Gamma \\vdash M : A$ holds."
 ---
 

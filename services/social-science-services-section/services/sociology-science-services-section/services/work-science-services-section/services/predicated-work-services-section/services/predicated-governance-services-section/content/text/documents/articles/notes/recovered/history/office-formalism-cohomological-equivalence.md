@@ -59,7 +59,7 @@ Condition (I) holds for *standard* offices: offices where incumbency is purely c
 
 Condition (I) may fail for *contested offices* where explicit revocation of recognition triggers explicit revocation of induction (e.g., a rule that says "if recognition is explicitly denied, induction is automatically invalidated"). Such a rule reads a negative recognition witness and writes a negative induction witness — a cross-predicate negative interaction, violating (I).
 
-The predicated-governance's [revocation](../morphisms/revocation.md) morphism is precisely the operation that can violate (I): revocation removes a jural relation by asserting $\mathbf{f}$ on its cells. If revocation of recognition cascades to revocation of induction via a closure rule, condition (I) fails for that office.
+The predicated-governance's [revocation](../../../../../glossary/terms/revocation.md) morphism is precisely the operation that can violate (I): revocation removes a jural relation by asserting $\mathbf{f}$ on its cells. If revocation of recognition cascades to revocation of induction via a closure rule, condition (I) fails for that office.
 
 ## Summary of findings
 

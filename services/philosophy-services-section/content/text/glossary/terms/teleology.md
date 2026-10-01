@@ -9,7 +9,6 @@ instance-of: metaphysics
 description: "Explanation or organization structured by an end, goal, or purpose — where what something is for determines what it does and how it is evaluated."
 contrasts-with: [relational-ontology, anarcho-nihilism, grounded-normativity]
 enables: [proceduralism, epistemic-universalism, cooperative-reciprocity]
-title: "Teleology"
 defines:
   - "teleology"
   - "teleological"

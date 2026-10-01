@@ -1,5 +1,5 @@
 ---
-title: "primary intension"
+name: "primary intension"
 type: "term"
 date-created: 2025-12-31
 ---

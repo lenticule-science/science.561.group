@@ -1,5 +1,5 @@
 ---
-title: "Qi"
+name: "Qi"
 type: "term"
 date-created: 2026-03-05
 ---

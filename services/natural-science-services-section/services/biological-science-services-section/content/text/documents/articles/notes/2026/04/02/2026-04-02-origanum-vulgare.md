@@ -40,5 +40,5 @@ Oregano is foundational to Greek, Italian, Turkish, and Mexican cuisines. It is 
 ## See also
 
 - [Carvacrol and thymol in Lamiaceae](../../../../research/2026/07/31/lenticule-import/_archive/atom/scripts/bonding/content/molecule/scripts/assembling/content/cell/scripts/integrating/content/organism/scripts/speciating/content/plant/scripts/classifying/content/angiosperm/scripts/familializing/content/lamiaceae/scripts/instantiating/content/carvacrol.md)
-- [Oregano cultivation](../../../../../../../../../../../domestic-science-services-section/services/domestic-production-services-section/services/gardening-services-section/content/glossary/terms/oregano-cultivation.md)
+- [Oregano cultivation](../../../../../../../../../../../domestic-science-services-section/services/domestic-production-services-section/services/gardening-services-section/content/text/glossary/terms/oregano-cultivation.md)
 - [Mediterranean herb traditions](../../../../research/2026/07/31/lenticule-import/_archive/atom/scripts/bonding/content/molecule/scripts/assembling/content/cell/scripts/integrating/content/organism/scripts/speciating/content/plant/scripts/classifying/content/angiosperm/scripts/familializing/content/lamiaceae/scripts/humanities/theories/sociology/theories/food-culture/texts/mediterranean-herbs.md)

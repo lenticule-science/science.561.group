@@ -1,5 +1,5 @@
 ---
-title: Legal Information
+name: Legal Information
 ---
 
 # Introduction

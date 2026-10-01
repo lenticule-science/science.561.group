@@ -1,5 +1,5 @@
 ---
-title: "Recognition Refusal"
+name: "Recognition Refusal"
 date-created: 2026-03-30
 aliases:
   - "recognition refusal"

@@ -1,5 +1,5 @@
 ---
-title: "Recursion"
+name: "Recursion"
 aliases:
   - "recursion"
   - "recursive definition"

@@ -25,7 +25,6 @@ references:
   - id: ref2
     type: document
     title: Compulsory Mis-Education
-title: "deschooling"
 tags:
   - anarchism
 ---

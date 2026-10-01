@@ -1,6 +1,6 @@
 ---
 id: cf1b4087-aebc-46d0-b2ad-6a9f4237a066
-title: Existential Stratified Directed Infinity-Homotopy Geometry Model of Molecular Stabilization
+name: Existential Stratified Directed Infinity-Homotopy Geometry Model of Molecular Stabilization
 date-created: 2025-10-08
 ---
 

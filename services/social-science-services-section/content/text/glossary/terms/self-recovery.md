@@ -41,7 +41,6 @@ references:
     issue: 2
     pages: "434-445"
     url: "https://www.mdpi.com/2673-8945/2/2/24"
-title: Self-Recovery
 tags:
 - disaster-studies
 - recovery

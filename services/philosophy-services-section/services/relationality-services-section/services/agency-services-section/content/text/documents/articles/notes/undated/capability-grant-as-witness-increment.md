@@ -10,7 +10,7 @@ description: A working community grants agent $A$ the capability $c$ — perhaps
 # Granting a capability is a witness-increment that lifts dispatch readiness
 
 A working community grants agent $A$ the capability $c$ — perhaps by completing $A$'s training, recording $A$'s certification, or admitting $A$ to a role.
-In the predicated-work theory, the grant is a single substrate operation: a [witness](../../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/predicated-work-services-section/content/glossary/terms/witness-as-increment.md) increment on the cell $\langle A, \texttt{provides-capability}, c \rangle$ asserting value $\mathbf{t}$.
+In the predicated-work theory, the grant is a single substrate operation: a [witness](../../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/predicated-work-services-section/content/text/glossary/terms/witness-as-increment.md) increment on the cell $\langle A, \texttt{provides-capability}, c \rangle$ asserting value $\mathbf{t}$.
 This worked example traces what that single operation entails downstream.
 
 ## The increment

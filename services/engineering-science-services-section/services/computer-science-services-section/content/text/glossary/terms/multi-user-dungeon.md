@@ -7,7 +7,7 @@ aliases:
 - multi-user dungeons
 id: 14cc5094-e5c2-4d53-828b-0da7d5684793
 roam-refs: "https://en.wikipedia.org/wiki/Multi-user_dungeon"
-title: multi-user dungeon
+name: multi-user dungeon
 date-created: 2025-08-23
 visibility: public
 ---

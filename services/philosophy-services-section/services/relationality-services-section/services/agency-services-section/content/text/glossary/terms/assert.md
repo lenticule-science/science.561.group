@@ -4,7 +4,7 @@ class: substrate-operation
 status: sketch
 depends-on: [predicated-knowledge-system, predication-fiber-algebra, knowledge-order]
 see-also: [classify, federate, evidence-accumulation, assertion-monotonicity]
-title: Assert
+name: Assert
 description: The substrate operation by which a community adds a predication to its predicated knowledge system.
 ---
 

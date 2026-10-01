@@ -1,6 +1,6 @@
 ---
 id: 53132310-edf7-4f34-afdc-67c0470eda04
-title: punk
+name: punk
 date-created: 2025-07-21
 ---
 

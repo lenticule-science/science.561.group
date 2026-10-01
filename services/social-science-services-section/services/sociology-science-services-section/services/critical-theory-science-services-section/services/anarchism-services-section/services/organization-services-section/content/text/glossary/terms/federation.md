@@ -8,7 +8,6 @@ aliases:
 tags: []
 description: "The horizontal coordination of autonomous groups through delegates who carry specific, revocable mandates — anarchism's answer to 'how does self-organization work at large scales?'"
 part-of: sociology/schools/anarchism/topics/organization/terms
-title: "Federation"
 defines:
   - "Federation"
   - "federalism (anarchist)"

@@ -1,6 +1,6 @@
 ---
 id: e39947c4-1bd9-44d0-bfb5-3e2bef417065
-title: Earth
+name: Earth
 date-created: 2025-09-01
 ---
 

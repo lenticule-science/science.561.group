@@ -8,7 +8,6 @@ keywords:
   - anarchism
   - psychoanalysis
 description: "In Lacanian psychoanalysis, the mode of wanting organized around lack — desire targets a future object, is sustained by its own non-fulfillment, and is vulnerable to collapse when the object proves unattainable. Anarcho-nihilism distinguishes desire from drive to explain why hope-based resistance fails."
-title: "Desire"
 type: term
 tags:
   - Anarchism

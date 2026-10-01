@@ -1,5 +1,5 @@
 ---
-title: Header Bidding
+name: Header Bidding
 description: "A programmatic advertising technique where multiple ad exchanges bid simultaneously on each impression before the ad server makes its decision — replacing the sequential waterfall with a parallel auction."
 defines: Header Bidding
 domain: web-business

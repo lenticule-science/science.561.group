@@ -1,6 +1,6 @@
 ---
 id: 08675b4b-07b6-4680-9533-5ce69628ffd3
-title: common relational path
+name: common relational path
 date-created: 2025-10-12
 ---
 

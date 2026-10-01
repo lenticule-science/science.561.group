@@ -1,6 +1,6 @@
 ---
 id: 87dcc563-2075-4836-9631-aff77a38c7ba
-title: advice
+name: advice
 date-created: 2025-09-06
 ---
 

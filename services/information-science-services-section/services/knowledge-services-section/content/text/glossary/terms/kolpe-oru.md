@@ -1,6 +1,6 @@
 ---
 id: 2517266b-b917-4758-b104-082a8fd3b08e
-title: Kolpe Oru
+name: Kolpe Oru
 date-created: 2025-09-05
 ---
 

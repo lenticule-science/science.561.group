@@ -10,7 +10,6 @@ part-of: business/disciplines/strategy/terms
 requires: corporate-structure
 governed-by: financial-projections
 enables: franchise
-title: "Exit Strategy"
 description: "An exit strategy is the planned mechanism by which a business owner or investor converts their ownership stake into cash or other liquid value. It answers the question that sits beneath every investment: how does the money come back?"
 date-modified: 2026-03-09
 ---

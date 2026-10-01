@@ -4,7 +4,7 @@ realizes: [replica-cover]
 class: system
 lean: PredicationCategories.Homebrew.Settling.CRDT.DistributedSKPSystem
 depends-on: [predication-settling, closure-drivenness, knowledge-order, predication-fiber-algebra]
-title: Distributed settling system
+name: Distributed settling system
 description: A distributed settling system over $(\mathbf{L}, \mathcal{C}, E, \lambda)$ is a finite family $\{v^{(i)}\}{i \in I}$ of predication settlings, each evolving independently via its own closure-driven settling.
 ---
 

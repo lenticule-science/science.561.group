@@ -1,5 +1,5 @@
 ---
-title: "connotation"
+name: "connotation"
 type: "term"
 date-created: 2026-03-05
 ---

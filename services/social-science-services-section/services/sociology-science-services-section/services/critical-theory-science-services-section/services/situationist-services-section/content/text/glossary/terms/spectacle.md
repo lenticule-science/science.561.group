@@ -9,7 +9,6 @@ aliases:
 keywords:
   - media-theory
 description: "Debord's concept naming the social relation in which lived experience is displaced by its representation, and social life is organized around the production and consumption of appearances."
-title: "Spectacle"
 type: term
 tags:
   - MediaTheory

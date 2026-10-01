@@ -1,6 +1,6 @@
 ---
 id: e4df1c6c-6282-4273-9a9d-52379f9ca2e8
-title: Sahel music
+name: Sahel music
 type: music genre
 visibility: public
 ---

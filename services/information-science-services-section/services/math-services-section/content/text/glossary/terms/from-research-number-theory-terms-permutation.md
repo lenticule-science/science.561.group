@@ -1,5 +1,5 @@
 ---
-title: "Permutation"
+name: "Permutation"
 type: "term"
 date-created: 2026-03-05
 ---

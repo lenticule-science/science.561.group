@@ -1,5 +1,5 @@
 ---
-title: "Recurrence"
+name: "Recurrence"
 description: "The temporal pattern of events that return — what makes a review weekly, a season annual, an obligation generational — distinguished from mere repetition by the novelty each return carries."
 defines: recurrence
 date-created: 2026-04-04
@@ -67,7 +67,7 @@ H.-G.
 Gadamer (1960) showed that all understanding occurs within [tradition](../../../../services/sociology-science-services-section/content/text/glossary/terms/tradition.md), and tradition is itself a form of recurrence — practices and meanings that return across generations, adapted to new circumstances but continuous with what came before.
 
 The biological world runs on recurrence.
-[Crop rotation](../../../../../domestic-science-services-section/services/domestic-production-services-section/services/gardening-services-section/content/glossary/terms/crop-rotation.md) works because different crops return in sequence, managing soil and pest cycles.
+[Crop rotation](../../../../../domestic-science-services-section/services/domestic-production-services-section/services/gardening-services-section/content/text/glossary/terms/crop-rotation.md) works because different crops return in sequence, managing soil and pest cycles.
 Seeds germinate across multiple years as a bet-hedging strategy against drought or flood.
 The circadian rhythm returns daily.
 The menstrual cycle returns monthly.

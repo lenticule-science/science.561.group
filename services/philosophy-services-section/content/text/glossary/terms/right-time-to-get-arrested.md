@@ -1,6 +1,6 @@
 ---
 author: emsenn
-title: Right Time to Get Arrested
+name: Right Time to Get Arrested
 aliases:
   - right-time-to-get-arrested
 specialization: research

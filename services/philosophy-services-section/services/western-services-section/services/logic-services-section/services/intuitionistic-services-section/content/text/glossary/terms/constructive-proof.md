@@ -11,7 +11,6 @@ keywords:
 component-of: intuitionistic-logic
 produces: witness
 contrasts-with: proof-by-contradiction
-title: "Constructive Proof"
 tags:
   - logic
 defines:

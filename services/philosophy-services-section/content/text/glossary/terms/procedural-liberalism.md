@@ -26,7 +26,6 @@ references:
 field: liberalism
 visibility: public
 type: proceduralism
-title: "Procedural Liberalism"
 ---
 
 Procedural liberalism is the political theory that the state should remain neutral among competing conceptions of the good life and instead establish fair procedures through which individuals pursue their own ends. Associated primarily with John Rawls, the claim is that justice consists in the structure of institutions rather than in any particular vision of human flourishing. A just society does not promote a specific religion, way of life, or account of what makes life worth living. It secures rights and fair processes — due process, equal protection, freedom of conscience — that let individuals and communities determine their own goods. The state is a referee, not a coach.

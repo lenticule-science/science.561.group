@@ -1,6 +1,6 @@
 ---
 
-title: "minor arcana"
+name: "minor arcana"
 description: "The **minor arcana** are the 56 suit cards in a tarot deck, divided into four suits — typically Wands, Cups, Swords, and Pentacles (names vary by deck tradition). Each suit contains numbered cards from Ace through Ten and four court cards (Page, Knight, Queen, King)."
 aliases:
   - "minor arcana"

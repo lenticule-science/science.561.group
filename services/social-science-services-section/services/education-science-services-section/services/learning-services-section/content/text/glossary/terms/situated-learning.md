@@ -22,7 +22,6 @@ references:
     authors:
       - Lave
     year: 1991
-title: situated learning
 ---
 
 [Situated learning](situated-learning.md) is the theory that learning is fundamentally embedded in the activity, context, and culture in which it occurs. It is not a process of absorbing abstract knowledge that can then be "applied" to situations; it is a process of becoming a participant in a practice.

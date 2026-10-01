@@ -5,7 +5,6 @@ description: "The practice of generating revenue from web-based content or servi
 domain: web-business
 uses: Programmatic Advertising, Paywall, Affiliate Marketing, Organic Traffic
 date-created: 2026-03-29
-title: "Web Monetization"
 defines: Web Monetization
 related: Revenue Per Mille, Content Strategy, Conversion Rate
 date-modified: 2026-03-29

@@ -1,5 +1,5 @@
 ---
-title: "Ambidextrous"
+name: "Ambidextrous"
 identity: ambidextrous
 description: "Ambidextrous is the condition of having no directional bias: building a whole from parts and constraining a whole to cohere with all parts yield the same result."
 date-created: 2026-03-04

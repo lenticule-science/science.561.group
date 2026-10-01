@@ -1,6 +1,6 @@
 ---
 
-title: "actual play"
+name: "actual play"
 description: "Actual play is the public presentation of a role-playing session as media: a livestream, podcast, video series, transcript, or edited recording. In older hobby usage, the phrase could also mean play as it actually happened at the table, especially when contrasted with theory or preparation. In current TTRPG discourse, it usually names a published form of play."
 aliases:
   - "actual play"

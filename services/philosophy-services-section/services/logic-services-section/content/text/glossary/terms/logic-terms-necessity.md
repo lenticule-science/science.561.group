@@ -1,5 +1,5 @@
 ---
-title: "Necessity"
+name: "Necessity"
 aliases:
   - "necessity"
   - "necessary"

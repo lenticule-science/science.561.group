@@ -5,7 +5,7 @@ status: current
 depends-on: [lambda-term, function-type, typing-judgment, typing-context, beta-reduction]
 realizes: [typing-judgment, normalization, confluence, inhabitation]
 symbol: \lambda^{\to}
-title: Simply typed lambda calculus
+name: Simply typed lambda calculus
 description: The simply typed lambda calculus ($\lambda^{\to}$, STLC) extends the untyped-lambda-calculus by assigning a type to every well-formed term.
 ---
 

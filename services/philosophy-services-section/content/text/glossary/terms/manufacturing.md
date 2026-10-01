@@ -2,7 +2,7 @@
 aliases:
 - manufactured manufacture
 id: 1be51aed-5b43-4d4c-926c-50792e6fc987
-title: manufacturing
+name: manufacturing
 type: producing
 visibility: public
 ---

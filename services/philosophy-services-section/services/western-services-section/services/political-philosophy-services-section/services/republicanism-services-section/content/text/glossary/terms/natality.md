@@ -9,7 +9,6 @@ contrasts-with: [reproductive-futurism, fascist-grammar]
 enables: prefigurative-politics
 requires: plurality
 component-of: political-life
-title: "Natality"
 ---
 
 Natality, as theorized by [Hannah Arendt](../../../../../../../../../../content/text/general/people/hannah-arendt.md) in *The Human Condition* (1958), names the capacity to begin something new — the fact that each human action introduces novelty into the world. For [Arendt](../../../../../../../../../../content/text/general/people/hannah-arendt.md), natality is not a biological fact about birth but a political and [ontological](../../../../../../../../../../content/text/glossary/terms/ontology.md) condition: because humans are born, because each person arrives as someone who has never existed before, every action carries the potential to initiate what could not have been predicted or determined in advance.

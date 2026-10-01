@@ -1,5 +1,5 @@
 ---
-title: "Orbital Mechanics"
+name: "Orbital Mechanics"
 type: "term"
 date-created: 2026-03-06
 ---

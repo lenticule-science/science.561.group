@@ -4,7 +4,7 @@ class: type-former
 status: current
 depends-on: [universe-level]
 symbol: \mathrm{Type}_i
-title: Universe
+name: Universe
 description: A universe $\mathrm{Type}i$ is a type whose inhabitants are themselves types.
 ---
 

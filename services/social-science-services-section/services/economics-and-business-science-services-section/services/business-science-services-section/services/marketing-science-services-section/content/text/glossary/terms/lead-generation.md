@@ -13,7 +13,6 @@ produces: email-list
 enables: conversion-rate
 analogous-to: affiliate-marketing
 measured-by: conversion-rate
-title: "Lead Generation"
 description: "Lead generation is the process of attracting and capturing contact information from potential customers — people who have indicated interest in a product, service, or topic but have not yet made a purchase. A \"lead\" is a person whose name, email address, or other contact information the business has obtained with their consent, enabling follow-up communication."
 tags:
   - business

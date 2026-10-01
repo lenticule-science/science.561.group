@@ -12,7 +12,7 @@ see-also:
   - ../theorems/theory-discipline-conformance-decidable.md
   - ../theorems/frontmatter-relation-graph-acyclic-modulo-see-also.md
   - ../../../../../../../../../engineering/theories/tech/theories/computing/theories/predicated-computing/objects/predication-graph-store.md
-title: FARS lint as closure operator
+name: FARS lint as closure operator
 description: "The FARS lint operator is the algorithmic realization of the curation theory's closure-rule-system: the operator that, given a vault, applies every validation rule and emits the set of defects the vault contains."
 ---
 

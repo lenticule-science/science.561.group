@@ -1,5 +1,5 @@
 ---
-title: You Are Conscious
+name: You Are Conscious
 ---
 
 # Introduction

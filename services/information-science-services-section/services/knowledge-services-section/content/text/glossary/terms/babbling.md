@@ -1,7 +1,7 @@
 ---
 author: emsenn
 id: f2829f05-2e51-461e-bcaa-c62c396b7cd7
-title: babbling
+name: babbling
 date-created: 2025-07-19
 ---
 

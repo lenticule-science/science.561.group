@@ -11,7 +11,6 @@ date-updated: 2026-03-09
 part-of: business/disciplines/operations/terms
 measures: operations
 governs: revenue-model
-title: "Capacity Utilization"
 tags:
   - business
 date-modified: 2026-03-09

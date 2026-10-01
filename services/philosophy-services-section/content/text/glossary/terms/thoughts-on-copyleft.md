@@ -1,6 +1,6 @@
 ---
 author: emsenn
-title: Thoughts on Copyleft
+name: Thoughts on Copyleft
 aliases:
   - thoughts-on-copyleft
 specialization: research

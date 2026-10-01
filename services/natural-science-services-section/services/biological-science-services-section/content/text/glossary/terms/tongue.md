@@ -1,6 +1,6 @@
 ---
 id: 30fed6ae-b28e-4ceb-973a-b9a355447bf1
-title: tongue
+name: tongue
 date-created: 2025-08-12
 type: organ
 visibility: public

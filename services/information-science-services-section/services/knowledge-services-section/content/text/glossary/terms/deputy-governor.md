@@ -1,6 +1,6 @@
 ---
 id: f39366d4-0935-433b-844a-920bfd728f99
-title: deputy governor
+name: deputy governor
 date-created: 2025-09-01
 type: governor
 visibility: public

@@ -1,5 +1,5 @@
 ---
-title: "Disability Justice"
+name: "Disability Justice"
 type: "term"
 date-created: 2026-03-03
 ---

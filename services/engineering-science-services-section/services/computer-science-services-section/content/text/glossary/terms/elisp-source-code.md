@@ -1,5 +1,5 @@
 ---
-title: Elisp Source Code
+name: Elisp Source Code
 ---
 
 - [Index](theindex.org)

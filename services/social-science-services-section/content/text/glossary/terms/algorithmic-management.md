@@ -1,5 +1,5 @@
 ---
-title: "Algorithmic Management"
+name: "Algorithmic Management"
 description: "The exercise of managerial functions — task allocation, performance evaluation, pricing, discipline, termination — by software systems rather than human supervisors. Constitutes, on Kellogg-Valentine-Christin's argument, a new contested terrain of control characterized by the six R's: restricting, recommending, recording, rating, replacing, rewarding."
 defines: algorithmic-management
 related: [scientific-management, deskilling, contested-terrain, ghost-work, autonomy-paradox, dispatch]

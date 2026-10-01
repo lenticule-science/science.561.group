@@ -1,6 +1,6 @@
 ---
 
-title: "Spacetime"
+name: "Spacetime"
 aliases:
   - "spacetime"
   - "space-time"

@@ -1,5 +1,5 @@
 ---
-title: "Confession"
+name: "Confession"
 defines: confession
 aliases: [confession, confessional]
 description: "The technology of self-disclosure that operates as a mechanism of power-knowledge in modernity: the requirement or solicitation of the subject to speak truthfully about themselves — their desires, transgressions, identities — to a recognized authority, with the speech itself producing the subject as a particular kind of truth-bearer rather than merely revealing pre-existing facts."

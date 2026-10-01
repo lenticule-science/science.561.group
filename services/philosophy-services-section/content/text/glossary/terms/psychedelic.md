@@ -1,6 +1,6 @@
 ---
 id: 359bf87b-2ae0-4149-a186-1c9ef8d33dee
-title: psychedelic
+name: psychedelic
 date-created: 2025-07-21
 aliases:
   - psychedelic music

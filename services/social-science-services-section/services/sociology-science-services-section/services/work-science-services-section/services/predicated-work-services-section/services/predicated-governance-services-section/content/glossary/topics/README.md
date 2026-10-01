@@ -13,7 +13,7 @@ Per the library's [governance index](../../../../../../../../../../../library/th
 Three reasons:
 
 1. **Library structure.** Governance is treated as a sub-domain of work in the library, not a peer; this subtheory mirrors that.
-2. **Substrate inheritance.** The predicated-governance program inherits predicated-work's [operations-base](../../../../../content/glossary/terms/operations-base.md), [operations-settling](../../../../../../../../../../../../../../public-services-section/services/personal-services-section/services/emsenn-services-section/content/text/glossary/terms/operations-settling.md), [witness-as-increment](../../../../../content/glossary/terms/witness-as-increment.md), and the regime-classification machinery. It does not need to re-derive these.
+2. **Substrate inheritance.** The predicated-governance program inherits predicated-work's [operations-base](../../../../../content/text/glossary/terms/operations-base.md), [operations-settling](../../../../../../../../../../../../../../public-services-section/services/personal-services-section/services/emsenn-services-section/content/text/glossary/terms/operations-settling.md), [witness-as-increment](../../../../../content/text/glossary/terms/witness-as-increment.md), and the regime-classification machinery. It does not need to re-derive these.
 3. **Co-content.** The Hohfeldian apparatus (jural relations, offices, delegation, etc.) presupposes a working substrate of agents-doing-things; without that substrate, the normative structure has nothing to modify. The subtheory shape captures this dependency.
 
 ## Convention

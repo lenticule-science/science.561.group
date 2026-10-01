@@ -21,7 +21,6 @@ references:
     title: Götzen-Dämmerung
     year: 1889
     publication: C. G. Naumann
-title: "Active Nihilism"
 ---
 
 Active nihilism is Friedrich Nietzsche's term for the form of nihilism that responds to the collapse of metaphysical foundations not with exhaustion or despair (passive nihilism) but with the active destruction of old values and the creation of new ones. It is nihilism as a force, not as a condition — the hammer, not the rubble. Nietzsche's image in *Twilight of the Idols* (1889) — "philosophizing with a hammer" — captures the stance: the old idols are hollow, and the hammer's tap reveals them as such. Active nihilism is the willingness to tap.

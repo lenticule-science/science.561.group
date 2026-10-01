@@ -1,5 +1,5 @@
 ---
-title: "Calibration link"
+name: "Calibration link"
 type: concept
 class: calibration
 component-of: predicated-astronomy

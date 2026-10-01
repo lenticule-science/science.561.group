@@ -1,6 +1,6 @@
 ---
 id: b80a3679-9484-4a0f-80f4-02cb31cbf3a6
-title: Task-evoked metabolic demands of the posteromedial default mode network are shaped by dorsal attention and frontoparietal control networks
+name: Task-evoked metabolic demands of the posteromedial default mode network are shaped by dorsal attention and frontoparietal control networks
 date-created: 2025-10-08
 ---
 

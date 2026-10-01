@@ -4,7 +4,7 @@ realizes: [kz-coherent-sheaf, cohomological-equivalence]
 class: sheaf
 symbol: "\\mathcal{F}_U^{(k, -)}"
 depends-on: [paraconsistent-settling-associated-sheaf, settling-associated-sheaf, knowledge-order, four-bilattice, negation]
-title: Negative-paraconsistent settling-associated sheaf
+name: Negative-paraconsistent settling-associated sheaf
 description: The bilattice-negation mirror of the paraconsistent settling-associated sheaf $\mathcal{F}U^{(k)}$.
 ---
 

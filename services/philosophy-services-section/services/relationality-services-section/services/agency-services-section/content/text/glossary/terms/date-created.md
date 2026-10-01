@@ -1,5 +1,5 @@
 ---
-title: "Date Created"
+name: "Date Created"
 type: "page"
 description: The date an entity was first written into the system.
 ---

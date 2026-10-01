@@ -20,7 +20,6 @@ references:
     publication: "Disaster Research Center"
     year: 2006
     url: "https://udspace.udel.edu/items/8849506e-eb66-4728-851d-8df03e9d1540"
-title: Distributed Sensemaking
 tags:
 - disaster-studies
 - communication

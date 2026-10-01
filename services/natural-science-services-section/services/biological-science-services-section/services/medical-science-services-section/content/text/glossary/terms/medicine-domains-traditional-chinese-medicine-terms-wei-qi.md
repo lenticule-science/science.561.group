@@ -1,5 +1,5 @@
 ---
-title: "Wei Qi"
+name: "Wei Qi"
 type: "term"
 date-created: 2026-04-02
 ---

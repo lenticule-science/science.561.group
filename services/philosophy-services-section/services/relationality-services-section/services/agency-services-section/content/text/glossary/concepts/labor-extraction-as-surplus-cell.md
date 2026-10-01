@@ -18,7 +18,7 @@ The gap between what $A$'s work produces and what $A$ is permitted to claim is t
 Let $T$ be a task with task-cell-system $\Gamma_T = (E_T, \mathcal{S}_T, v_T^{\mathrm{target}})$.
 Let $A$ be the agent assigned to execute $T$.
 
-**Value produced by execution**: Let $V_T \subseteq \mathcal{E}_{\mathrm{op}}$ be the set of cells that advance in the knowledge order as a direct result of $A$'s execution — cells whose values change from $\bot$ toward $\mathbf{t}$ because of $A$'s [witness-as-increment](../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/predicated-work-services-section/content/glossary/terms/witness-as-increment.md) contributions.
+**Value produced by execution**: Let $V_T \subseteq \mathcal{E}_{\mathrm{op}}$ be the set of cells that advance in the knowledge order as a direct result of $A$'s execution — cells whose values change from $\bot$ toward $\mathbf{t}$ because of $A$'s [witness-as-increment](../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/predicated-work-services-section/content/text/glossary/terms/witness-as-increment.md) contributions.
 
 **Value claimable by $A$**: Let $V_A \subseteq V_T$ be the subset of cells that $A$ is permitted to claim — cells whose claim is authorized by the authority-gate at the time of claim.
 Authorization requires $\mathrm{gate}(A, \mathrm{claim}, c) = \mathbf{t}$ for each $c \in V_A$.

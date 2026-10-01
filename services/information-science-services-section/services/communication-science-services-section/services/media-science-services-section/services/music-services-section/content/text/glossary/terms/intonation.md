@@ -8,7 +8,6 @@ tags: []
 description: "The tuning of pitches in performance, especially the expressive and culturally determined deviations from fixed-pitch systems."
 date-updated: 2026-03-09
 part-of: music/disciplines/music-theory/terms
-title: "Intonation"
 date-modified: 2026-03-09
 ---
 

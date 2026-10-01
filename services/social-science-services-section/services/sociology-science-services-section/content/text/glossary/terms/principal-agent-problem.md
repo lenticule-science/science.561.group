@@ -12,7 +12,6 @@ keywords:
 description: "A governance structure where a principal defines objectives and agents execute them, creating inherent information asymmetry and misaligned incentives."
 date-modified: 2026-03-09
 part-of: sociology/topics/political-economy/terms
-title: "Principal-Agent Problem"
 authors:
   - claude
 type: term

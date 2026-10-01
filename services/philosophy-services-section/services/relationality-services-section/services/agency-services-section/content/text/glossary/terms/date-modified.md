@@ -1,5 +1,5 @@
 ---
-title: "Date Modified"
+name: "Date Modified"
 type: "page"
 description: The date an entity was last substantively changed.
 ---

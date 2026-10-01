@@ -1,5 +1,5 @@
 ---
-title: "Union"
+name: "Union"
 aliases:
   - "union"
   - "unions"

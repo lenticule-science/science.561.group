@@ -3,7 +3,7 @@ type: definition
 class: rewrite-step
 status: current
 depends-on: [eta-equivalence, lambda-term]
-title: Eta-reduction step
+name: Eta-reduction step
 description: "An eta-reduction step is a single application of the eta-equivalence rule, read in the contracting direction:"
 ---
 

@@ -7,7 +7,6 @@ aliases:
 tags: []
 description: "An economic system in which a small number of people own the things everyone needs to work and live — land, tools, factories, buildings — and everyone else must work for them in exchange for wages. Anarchism opposes it as a system of domination."
 part-of: sociology/topics/political-economy/terms
-title: "Capitalism"
 defines:
   - "Capitalism"
   - "capitalist"

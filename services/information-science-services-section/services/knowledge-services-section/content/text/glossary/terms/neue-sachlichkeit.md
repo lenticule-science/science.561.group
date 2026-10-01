@@ -3,7 +3,7 @@ aliases:
 - New Objectivity
 field: "German culture"
 id: 134ba6ea-9d1d-4730-9d8c-5bb39a98d754
-title: Neue Sachlichkeit
+name: Neue Sachlichkeit
 date-created: 2025-09-13
 type: cultural movement
 ---

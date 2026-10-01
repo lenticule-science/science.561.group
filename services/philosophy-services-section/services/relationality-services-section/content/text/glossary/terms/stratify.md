@@ -1,5 +1,5 @@
 ---
-title: "Stratify"
+name: "Stratify"
 identity: stratify
 description: "Stratify is the act of organizing determination in a well-founded order: ensuring that each level of a relational configuration is settled before the next is built upon it."
 date-created: 2026-03-04

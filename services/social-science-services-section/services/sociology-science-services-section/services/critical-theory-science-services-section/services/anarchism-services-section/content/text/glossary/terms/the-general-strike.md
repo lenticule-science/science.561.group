@@ -6,7 +6,6 @@ aliases:
   - "general strike"
 tags: []
 description: "The simultaneous withdrawal of labor across an entire economy — anarcho-syndicalism's central concept, in which workers exercise collective power not by seizing the means of production but by refusing to operate them."
-title: "The General Strike"
 type: term
 defines:
   - "The General Strike"

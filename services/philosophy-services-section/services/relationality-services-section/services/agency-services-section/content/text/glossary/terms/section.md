@@ -1,5 +1,5 @@
 ---
-title: "Section"
+name: "Section"
 type: "page"
 date-created: 2026-03-19
 description: "A Section is a morphism s: B → E satisfying p ∘ s = idB for a fibration p: E → B — a coherent assignment of one element per fiber to every base point."

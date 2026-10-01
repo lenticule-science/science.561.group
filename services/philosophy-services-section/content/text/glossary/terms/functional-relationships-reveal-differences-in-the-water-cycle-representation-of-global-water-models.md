@@ -1,7 +1,7 @@
 ---
 id: 84a7db9c-d465-4aad-871c-81e29ea10b1c
 roam-refs: "@gnann_functional_2023"
-title: Functional relationships reveal differences in the water cycle representation of global water models
+name: Functional relationships reveal differences in the water cycle representation of global water models
 date-created: 2025-10-06
 visibility: public
 type: journal article

@@ -19,7 +19,6 @@ extended-by:
   - event
 dg-permalink: thing
 dg-publish: true
-title: Thing
 defines: thing
 name: Thing
 ---

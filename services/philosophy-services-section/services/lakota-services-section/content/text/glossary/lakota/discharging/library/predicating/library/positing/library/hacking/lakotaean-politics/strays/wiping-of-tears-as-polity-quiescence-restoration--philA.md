@@ -41,7 +41,7 @@ The wiping-of-tears morphism, performed approximately one year after the loss (o
 
 ## Restorative governance as substrate machinery
 
-This morphism is one of the polity's principal *restorative governance* operations (it sits alongside the predicated-governance object [restorative-accountability](../../../../../../../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/predicated-work-services-section/services/predicated-governance-services-section/content/glossary/terms/restorative-accountability.md), of which it is a Lakota instance).
+This morphism is one of the polity's principal *restorative governance* operations (it sits alongside the predicated-governance object [restorative-accountability](../../../../../../../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/predicated-work-services-section/services/predicated-governance-services-section/content/text/glossary/terms/restorative-accountability.md), of which it is a Lakota instance).
 The polity does not require a punitive apparatus to maintain itself across loss; it has substrate morphisms that repair the relational structure directly.
 
 The contrast with punitive substrate machinery is sharp.

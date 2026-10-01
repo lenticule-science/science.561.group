@@ -1,6 +1,6 @@
 ---
 id: d784b1db-bbce-49ec-b515-471e7f5ed07d
-title: holy anger
+name: holy anger
 date-created: 2025-09-06
 type: anger
 visibility: public

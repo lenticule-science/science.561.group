@@ -1,6 +1,6 @@
 ---
 id: a6abe253-9ae0-4214-9506-4dccfaf8a95c
-title: Supreme Court of the United States
+name: Supreme Court of the United States
 date-created: 2025-08-30
 type: supreme court
 visibility: public

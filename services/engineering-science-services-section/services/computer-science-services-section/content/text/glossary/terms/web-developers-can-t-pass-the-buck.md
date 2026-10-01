@@ -1,6 +1,6 @@
 ---
 author: emsenn
-title: Web Developers Can't Pass the Buck
+name: Web Developers Can't Pass the Buck
 ---
 
 There's this thread going around the Fediverse about how metrics in web performance are bunk, but how it's excusable because academics hadn't yet demonstrated their bunkness.

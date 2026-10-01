@@ -14,7 +14,6 @@ produces: legibility
 delivered-via: institutional-response
 part-of:
   - late-liberalism
-title: "Quasi-Event"
 ---
 
 A quasi-event, as theorized by [Elizabeth Povinelli](../../general/people/elizabeth-povinelli.md), is a disturbance that appears to open possibility — to disrupt the ordinary, to create a moment of contingency — but is already embedded in the logic of its own containment. The quasi-event is not a failed event. It is a managed one: a deviation that the system has already accounted for, that activates existing protocols of response, and that concludes with the restoration of the prior order under the appearance of having confronted something.

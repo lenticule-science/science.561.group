@@ -1,5 +1,5 @@
 ---
-title: "Intersection"
+name: "Intersection"
 aliases:
   - "intersection"
   - "intersections"

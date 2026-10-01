@@ -1,5 +1,5 @@
 ---
-title: Judgement Day
+name: Judgement Day
 ---
 
 # Introduction

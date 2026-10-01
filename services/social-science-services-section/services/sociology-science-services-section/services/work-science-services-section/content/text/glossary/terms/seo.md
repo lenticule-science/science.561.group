@@ -5,7 +5,6 @@ description: "The practice of structuring a website and its content to rank high
 domain: web-business
 uses: Organic Traffic, Content Strategy
 date-created: 2026-03-29
-title: "Search Engine Optimization"
 defines: Search Engine Optimization
 related: Pageview, Web Monetization
 date-modified: 2026-03-29

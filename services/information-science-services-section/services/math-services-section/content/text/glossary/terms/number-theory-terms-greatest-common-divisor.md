@@ -1,5 +1,5 @@
 ---
-title: "Greatest Common Divisor"
+name: "Greatest Common Divisor"
 aliases:
   - "greatest common divisor"
   - "GCD"

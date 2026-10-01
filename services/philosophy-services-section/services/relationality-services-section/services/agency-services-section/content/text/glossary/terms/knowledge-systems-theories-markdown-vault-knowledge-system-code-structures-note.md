@@ -8,7 +8,7 @@ see-also:
   - vault.md
   - relation-graph.md
   - theories/predicated-markdown-vault-knowledge-system/concepts/note.md
-title: Note
+name: Note
 description: "A note is the parent-level formal model of a single markdown file in a vault: a record of a single semantic commitment, with a typed identity and a structured set of edges to other notes."
 ---
 

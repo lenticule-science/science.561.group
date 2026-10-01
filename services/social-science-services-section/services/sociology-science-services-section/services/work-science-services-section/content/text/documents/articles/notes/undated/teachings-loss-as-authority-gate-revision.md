@@ -10,7 +10,7 @@ description: "Formal statement of the structural consequence when a conduct-teac
 
 # Teachings Loss as Authority-Gate Revision
 
-Formal statement of the structural consequence when a [conduct-teachings](../../../../../../services/predicated-work-services-section/services/predicated-governance-services-section/content/glossary/terms/conduct-teachings-as-evaluation-predicates.md) discipline is in force: degradation of any single teaching-evaluation cell is sufficient to block the authority-gate for the teachings-governed agent — without any revocation act.
+Formal statement of the structural consequence when a [conduct-teachings](../../../../../../services/predicated-work-services-section/services/predicated-governance-services-section/content/text/glossary/terms/conduct-teachings-as-evaluation-predicates.md) discipline is in force: degradation of any single teaching-evaluation cell is sufficient to block the authority-gate for the teachings-governed agent — without any revocation act.
 
 ## Setup
 
@@ -18,7 +18,7 @@ Let $(\Theta, \varepsilon, J)$ be a conduct-teachings discipline on the operatio
 
 - $\Theta = \{\theta_1, \ldots, \theta_n\}$ is the named set of teachings.
 - $\varepsilon(A, \theta) \in \mathbf{FOUR}$ is the evaluation cell value for agent $A$ on teaching $\theta$, maintained by community-judgment witnesses.
-- $J$ is the community-judgment recognition mechanism: a [consensus-closure](../../../../../../services/predicated-work-services-section/services/predicated-governance-services-section/content/glossary/terms/consensus-closure.md) over evaluation witnesses that resolves contested evaluations.
+- $J$ is the community-judgment recognition mechanism: a [consensus-closure](../../../../../../services/predicated-work-services-section/services/predicated-governance-services-section/content/text/glossary/terms/consensus-closure.md) over evaluation witnesses that resolves contested evaluations.
 
 Let $\mathrm{gate}(A, X)$ denote the authority-gate cell for agent $A$ performing act $X$ under this discipline.
 
@@ -44,7 +44,7 @@ By the [authority-gate](../../../../triage/teaching/explanations/authority-gate.
 
 This is an *endogenous* authority-gate revision: no external actor performs a revocation act. The gate fails because the evaluation-profile no longer satisfies the teaching-discipline's conjunction. Contrast with:
 
-- [Revocation](../../../../../../services/predicated-work-services-section/services/predicated-governance-services-section/content/glossary/terms/revocation.md): a principal's explicit morphism that installs a revocation-witness cell.
+- [Revocation](../../../../../../services/predicated-work-services-section/services/predicated-governance-services-section/content/text/glossary/terms/revocation.md): a principal's explicit morphism that installs a revocation-witness cell.
 - [Removal from office](../../../../triage/questions/removal-from-office.md): an external authority's decision that drives the recognition predicate.
 
 In each of those, an agent acts to produce authority-gate failure. Here, authority-gate failure is a *structural consequence* of cell-value changes in the evaluation predicate — no separate act is required or performed.
@@ -70,7 +70,7 @@ The installation is intact; the gate is blocked. This is the structural form of 
 
 ## Composition with rotational authority
 
-When [rotational-authority](../../../../../../services/predicated-work-services-section/services/predicated-governance-services-section/content/glossary/terms/rotational-authority.md) is composed with a teachings discipline, the eligibility condition for the next-rotation incumbent requires:
+When [rotational-authority](../../../../../../services/predicated-work-services-section/services/predicated-governance-services-section/content/text/glossary/terms/rotational-authority.md) is composed with a teachings discipline, the eligibility condition for the next-rotation incumbent requires:
 
 $$\bigwedge_{\theta \in \Theta} \varepsilon(A, \theta) = \mathbf{t} \;\text{ at selection time.}$$
 

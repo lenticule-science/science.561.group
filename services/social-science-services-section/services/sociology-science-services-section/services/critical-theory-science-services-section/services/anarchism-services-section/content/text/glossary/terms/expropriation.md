@@ -7,7 +7,6 @@ aliases:
 keywords:
   - anarchism
 description: "The collective reclamation of wealth, land, and means of production from private owners, understood not as theft but as the recovery of collectively produced resources that were stolen through enclosure, colonialism, and wage labor."
-title: "Expropriation"
 type: term
 tags:
   - Anarchism

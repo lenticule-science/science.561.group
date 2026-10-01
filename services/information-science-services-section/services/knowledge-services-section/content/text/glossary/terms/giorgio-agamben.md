@@ -1,6 +1,6 @@
 ---
 id: f4081f8c-19fd-48a6-abb7-403b835bae13
-title: Giorgio Agamben
+name: Giorgio Agamben
 date-created: 2025-08-31
 visibility: public
 ---

@@ -8,7 +8,6 @@ aliases:
 tags: []
 date-modified: 2026-03-09
 part-of: sociology/schools/postliberalism/terms
-title: "Producerism"
 type: term
 defines:
   - "Producerism"

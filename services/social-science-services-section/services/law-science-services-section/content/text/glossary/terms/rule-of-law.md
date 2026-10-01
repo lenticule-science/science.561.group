@@ -8,7 +8,6 @@ see-also:
   - "/sociology/disciplines/legalism/index.md"
 references:
   - /sociology/disciplines/legalism/index.md
-title: "rule of law"
 type: term
 tags:
   - Legalism

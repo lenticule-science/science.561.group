@@ -1,5 +1,5 @@
 ---
-title: "Description"
+name: "Description"
 type: "page"
 date-created: 2026-03-18
 description: A Description is a separating predicate for an object — a formula φ(x) that holds of the described object and distinguishes it from other objects of the same type within the intended domain of discourse.

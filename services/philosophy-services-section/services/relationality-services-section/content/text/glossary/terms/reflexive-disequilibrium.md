@@ -1,5 +1,5 @@
 ---
-title: "Reflexive Disequilibrium"
+name: "Reflexive Disequilibrium"
 date-created: 2026-03-02T00:00:00
 type: term
 keywords:

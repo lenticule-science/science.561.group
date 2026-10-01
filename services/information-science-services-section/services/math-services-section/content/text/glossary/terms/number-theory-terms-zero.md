@@ -1,5 +1,5 @@
 ---
-title: "Zero"
+name: "Zero"
 aliases:
   - "zero"
   - "0"

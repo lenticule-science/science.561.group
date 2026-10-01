@@ -1,5 +1,5 @@
 ---
-title: "Iron Cage"
+name: "Iron Cage"
 description: "Weber's diagnostic image (stahlhartes Gehäuse — 'shell as hard as steel,' Parsons-translated as 'iron cage') for the condition in which the rationalization process that produced modern capitalism and modern bureaucracy creates an order imprisoning even those it serves, with no clear path out and no clear meaning beyond its own efficient functioning."
 defines: iron-cage
 related: [bureaucracy, authority, rationalization]

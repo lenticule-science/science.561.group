@@ -8,7 +8,6 @@ tags: []
 description: "A sequence of pitches heard as a coherent, directed line."
 date-updated: 2026-03-09
 part-of: music/disciplines/music-theory/terms
-title: "Melody"
 defines:
   - "Melody"
   - "melodic"

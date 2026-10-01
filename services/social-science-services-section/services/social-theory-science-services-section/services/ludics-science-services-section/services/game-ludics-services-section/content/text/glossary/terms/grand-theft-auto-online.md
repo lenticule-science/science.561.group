@@ -3,7 +3,7 @@ aliases:
 - GTAO
 author: emsenn
 id: fc4e513a-a49f-44fc-a580-e3bb32342dea
-title: Grand Theft Auto Online
+name: Grand Theft Auto Online
 date-created: 2025-07-21
 ---
 

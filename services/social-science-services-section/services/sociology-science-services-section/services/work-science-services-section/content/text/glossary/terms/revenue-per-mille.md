@@ -5,7 +5,6 @@ description: "The total revenue earned per one thousand pageviews or sessions on
 domain: web-business
 uses: Pageview
 date-created: 2026-03-29
-title: "Revenue Per Mille"
 defines: Revenue Per Mille
 related: Programmatic Advertising, Conversion Rate, Web Monetization
 date-modified: 2026-03-29

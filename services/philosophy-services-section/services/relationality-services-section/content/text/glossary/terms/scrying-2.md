@@ -1,5 +1,5 @@
 ---
-title: "scrying"
+name: "scrying"
 aliases:
   - "scrying"
 date-created: 2025-12-31
@@ -8,7 +8,7 @@ tags: []
 description: Scrying is a divinatory practice in which a practitioner gazes into a reflective, translucent, or otherwise visually ambiguous surface — a scrying medium — to receive images, impressions, or insights.
 ---
 
-**Scrying** is a divinatory practice in which a practitioner gazes into a reflective, translucent, or otherwise visually ambiguous surface — a [scrying medium](../../../../../../../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/semiotic-computer-system-services-section/services/divination-computer-system-service/services/scrying-services-section/content/glossary/terms/scrying-medium.md) — to receive images, impressions, or insights. Common media include crystal balls, dark mirrors, bowls of water, fire, and smoke.
+**Scrying** is a divinatory practice in which a practitioner gazes into a reflective, translucent, or otherwise visually ambiguous surface — a [scrying medium](../../../../../../../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/semiotic-computer-system-services-section/services/divination-computer-system-service/services/scrying-services-section/content/text/glossary/terms/scrying-medium.md) — to receive images, impressions, or insights. Common media include crystal balls, dark mirrors, bowls of water, fire, and smoke.
 
 The mechanism, from a naturalistic perspective, is pareidolia and hypnagogic imagery: the visual ambiguity of the medium provides a substrate onto which the practitioner's subconscious projects patterns. From a spiritual perspective, the medium serves as a threshold between ordinary perception and a mode of seeing that is not constrained by physical stimulus.
 

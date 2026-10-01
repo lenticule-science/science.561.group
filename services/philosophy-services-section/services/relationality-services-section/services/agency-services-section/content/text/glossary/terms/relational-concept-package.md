@@ -1,5 +1,5 @@
 ---
-title: "Relational Concept Package"
+name: "Relational Concept Package"
 type: "page"
 date-created: 2026-03-18
 description: "A ConceptPackage in a RelationsSystem: a ConceptPackage whose contents are RelationalEntities satisfying UG conditions, growing toward a RelationsSystemLocale as it becomes complete."

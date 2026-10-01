@@ -91,7 +91,7 @@ Applied sustainable-harvest guidance for ramps specifically, including the
 harvest from only 10% of a patch per year, return to the same patch only
 after a decade) and a discussion of Indigenous-appropriation concerns in
 contemporary ramp foraging, already exists at gardening's
-[`wild-garlic-ramps.md`](../../../../../../../../../domestic-science-services-section/services/domestic-production-services-section/services/gardening-services-section/content/glossary/terms/wild-garlic-ramps.md).
+[`wild-garlic-ramps.md`](../../../../../../../../../domestic-science-services-section/services/domestic-production-services-section/services/gardening-services-section/content/text/glossary/terms/wild-garlic-ramps.md).
 That content remains canonically owned there (it is scoped to garden
 cultivation); this entry relates to it as the applied precedent for the
 population-ecology and honorable-harvest science documented here at the

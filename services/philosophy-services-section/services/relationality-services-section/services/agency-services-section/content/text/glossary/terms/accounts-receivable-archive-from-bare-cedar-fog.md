@@ -1,5 +1,5 @@
 ---
-title: "Accounts Receivable"
+name: "Accounts Receivable"
 date-created: 2026-03-06T00:00:00
 type: term
 aliases:

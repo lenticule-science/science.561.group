@@ -1,5 +1,5 @@
 ---
-title: "Particular Other"
+name: "Particular Other"
 description: "The concrete, specific person who stands in a care relation — opposed to the 'generalized other' of Kantian ethics, irreducible in needs, history, and vulnerability."
 date-created: 2026-03-05T00:00:00
 date-modified: 2026-03-29

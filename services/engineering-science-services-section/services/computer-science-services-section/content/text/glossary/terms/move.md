@@ -4,7 +4,7 @@ class: refactor-generator
 status: draft
 depends-on: [codebase-cell-system, refactor]
 realizes: [refactor]
-title: Move
+name: Move
 description: A refactor that changes the value of defined-in cells — relocating a definition from one source file to another — without changing any other witness cell.
 ---
 

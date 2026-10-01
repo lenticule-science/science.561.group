@@ -1,5 +1,5 @@
 ---
-title: "Memetic Repeatability"
+name: "Memetic Repeatability"
 type: "term"
 date-created: 2026-03-03
 ---

@@ -3,7 +3,7 @@ type: definition
 realizes: [entity]
 class: set
 symbol: E
-title: Entity set
+name: Entity set
 description: A set, denoted $E$, whose elements are entities.
 ---
 

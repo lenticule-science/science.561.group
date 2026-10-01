@@ -1,5 +1,5 @@
 ---
-title: "Process"
+name: "Process"
 description: "The fundamental character of reality in Whitehead's metaphysics: becoming rather than being, change rather than persistence — entities are achievements of processes, not substrates that undergo them."
 date-created: 2025-12-31
 date-modified: 2026-03-29

@@ -1,5 +1,5 @@
 ---
-title: "Observatory"
+name: "Observatory"
 type: term
 component-of: astronomical-instruments
 ---

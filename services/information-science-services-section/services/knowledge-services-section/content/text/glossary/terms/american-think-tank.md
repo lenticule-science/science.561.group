@@ -1,6 +1,6 @@
 ---
 id: 710ce2cf-e849-4934-ae6b-351ab66fcc56
-title: American think tank
+name: American think tank
 date-created: 2025-09-05
 visibility: public
 ---

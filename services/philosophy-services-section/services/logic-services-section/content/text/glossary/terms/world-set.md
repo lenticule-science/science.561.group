@@ -3,7 +3,7 @@ kind: definition
 type: set
 symbol: W
 depends-on: [settling-bound]
-title: World set
+name: World set
 description: A set, denoted $W$, of worlds over which the modal structure on a knowledge presheaf is indexed.
 ---
 

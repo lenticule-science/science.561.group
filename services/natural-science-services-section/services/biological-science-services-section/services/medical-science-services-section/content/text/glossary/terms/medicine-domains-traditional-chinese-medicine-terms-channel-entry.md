@@ -1,5 +1,5 @@
 ---
-title: "Channel Entry"
+name: "Channel Entry"
 type: "term"
 date-created: 2026-04-02
 ---

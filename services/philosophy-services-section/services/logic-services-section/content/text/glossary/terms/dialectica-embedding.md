@@ -14,7 +14,7 @@ references:
   - Hyland 2002
   - Seely 1989
   - Girard 1987
-title: Dialectica embedding
+name: Dialectica embedding
 description: The Dialectica embedding is the full and faithful functor
 ---
 

@@ -12,7 +12,6 @@ produced-by: surplus
 delivered-via: [sacrifice, war, luxury, festival]
 part-of:
   - bataille
-title: "Accursed Share"
 defines:
   - "Accursed Share"
   - "la part maudite"

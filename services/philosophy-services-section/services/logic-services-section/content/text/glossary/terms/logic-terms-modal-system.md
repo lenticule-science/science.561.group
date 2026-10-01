@@ -1,5 +1,5 @@
 ---
-title: "Modal System"
+name: "Modal System"
 aliases:
   - "modal system"
   - "modal systems"

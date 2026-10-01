@@ -35,4 +35,4 @@ The species requires long growing seasons (120-180 days) and sustained warmth, m
 
 ## See also
 
-[Bottle gourd cultivation](../../../../../../../../../../../domestic-science-services-section/services/domestic-production-services-section/services/gardening-services-section/content/glossary/terms/bottle-gourd.md)
+[Bottle gourd cultivation](../../../../../../../../../../../domestic-science-services-section/services/domestic-production-services-section/services/gardening-services-section/content/text/glossary/terms/bottle-gourd.md)

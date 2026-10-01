@@ -1,6 +1,6 @@
 ---
 id: e1a29ca6-8757-4546-99cb-a966cedef001
-title: Eric Hobsbawm
+name: Eric Hobsbawm
 date-created: 2025-09-20
 ---
 

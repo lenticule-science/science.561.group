@@ -1,6 +1,6 @@
 ---
 id: 4e51cd77-ef58-4943-99e3-02fbb0624f5e
-title: IGORR
+name: IGORR
 date-created: 2025-07-22
 ---
 

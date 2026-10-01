@@ -1,5 +1,5 @@
 ---
-title: "Labor"
+name: "Labor"
 description: "Labor is purposeful human activity that transforms the world. The Marxist tradition distinguishes labor from labor-power; feminist political economy adds reproductive labor; Indigenous traditions refuse the separation between labor and the relations of life."
 defines: Labor
 aliases:

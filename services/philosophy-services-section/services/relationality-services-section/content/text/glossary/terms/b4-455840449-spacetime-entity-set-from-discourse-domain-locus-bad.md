@@ -4,7 +4,7 @@ class: set
 realizes: [cosmic-event]
 symbol: "E_{\\mathrm{cos}}"
 depends-on: [spacetime, entity-set, cosmic-event]
-title: Spacetime entity set
+name: Spacetime entity set
 description: Fix a spacetime manifold $(M, g)$ — a four-dimensional Lorentzian manifold satisfying the Einstein equations or, in Lambda-CDM, the FLRW metric on a comoving slice.
 ---
 

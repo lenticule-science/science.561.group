@@ -1,6 +1,6 @@
 ---
 id: 5b925fcb-5aa7-48e2-b58d-e43155b750a4
-title: oppressed person
+name: oppressed person
 date-created: 2025-08-31
 type: person
 visibility: public

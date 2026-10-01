@@ -11,7 +11,7 @@ see-also:
   - teaching/explanations/register.md
   - speech-act.md
   - rhetorical-situation.md
-title: Common ground
+name: Common ground
 description: The common ground of a conversation is the accumulating set of propositions, presuppositions, and mutual beliefs that the participants take to be shared, and take each other to take to be shared, and so on.
 ---
 

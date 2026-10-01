@@ -1,6 +1,6 @@
 ---
 id: b7890d8e-e787-488f-9618-abef4d12dbf9
-title: koad
+name: koad
 date-created: 2025-07-22
 ---
 

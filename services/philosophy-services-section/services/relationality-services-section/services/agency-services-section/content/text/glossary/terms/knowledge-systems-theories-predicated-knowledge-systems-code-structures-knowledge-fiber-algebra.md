@@ -5,7 +5,7 @@ status: sketch
 symbol: K_p
 depends-on: [predication-fiber-algebra, scope, predicated-knowledge-system]
 realizes: [knowing-as-settling]
-title: Knowledge fiber algebra
+name: Knowledge fiber algebra
 description: For a predicated knowledge system $\mathcal{K} = (\mathbf{L}, \mathcal{C}, E, \mathcal{S}, \Sigma)$ and a predicate $p \in \mathcal{C}$, the knowledge fiber algebra at $p$ $Kp$ is the predication fiber algebra at $p$, restricted to the…
 ---
 

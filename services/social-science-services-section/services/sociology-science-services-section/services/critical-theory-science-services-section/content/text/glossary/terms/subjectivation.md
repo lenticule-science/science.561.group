@@ -1,6 +1,6 @@
 ---
 id: e56a685f-e87f-47e7-900b-610e9fb2f436
-title: subjectivation
+name: subjectivation
 date-created: 2025-09-01
 date-modified: 2026-09-27
 description: "The production of subjects: how institutions, practices and discourses make a person into both the one who acts and the one acted upon (Foucault)."

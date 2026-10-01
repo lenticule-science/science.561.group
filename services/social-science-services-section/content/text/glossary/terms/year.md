@@ -1,6 +1,6 @@
 ---
 id: d150eaba-d55f-401c-8487-6f2f84d16ace
-title: year
+name: year
 ---
 
 ``` {.elisp tangle="./src/gnoponemacs/capture-templates/rty.el"}

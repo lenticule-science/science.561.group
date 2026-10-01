@@ -31,7 +31,6 @@ references:
     issued:
       - year: 1978
 component-of: epistemology
-title: constructivism
 ---
 
 [Constructivism](constructivism.md) is the theory that learners build understanding by integrating new information with existing mental structures, rather than passively receiving transmitted knowledge. Learning is not the transfer of ready-made knowledge from teacher to student; it is an potential process of construction in which the learner makes sense of new experience by relating it to what they already know.

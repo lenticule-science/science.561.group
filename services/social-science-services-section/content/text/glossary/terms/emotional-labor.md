@@ -1,5 +1,5 @@
 ---
-title: "Emotional labor"
+name: "Emotional labor"
 defines: emotional-labor
 aliases: [emotional labor, emotion work]
 description: "The labor of producing or suppressing feelings to meet the affective expectations of an institution, role, or audience — distinct from physical or cognitive labor in that what is being shaped is the worker's own feeling-state. Coined by Arlie Russell Hochschild in *The Managed Heart* (1983) to analyze the affective work of service-sector employees."

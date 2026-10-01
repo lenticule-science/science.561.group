@@ -19,7 +19,7 @@ see-also:
   - dag.md
   - tree.md
   - ../morphisms/graph-homomorphism.md
-title: Directed graph
+name: Directed graph
 description: "A directed graph (or digraph) is a graph whose edges are ordered pairs of vertices: each edge has a source and a target, and the edge runs from the former to the latter."
 derives-from: scripts
 ---

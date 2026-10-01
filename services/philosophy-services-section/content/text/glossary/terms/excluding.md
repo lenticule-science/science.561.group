@@ -1,6 +1,6 @@
 ---
 id: f1906f33-c35e-4f1d-a02f-16d955d7e5e2
-title: excluding
+name: excluding
 date-created: 2025-08-15
 type: act
 visibility: public

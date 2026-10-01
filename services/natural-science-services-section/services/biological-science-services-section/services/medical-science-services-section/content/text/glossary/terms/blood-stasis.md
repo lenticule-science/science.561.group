@@ -1,5 +1,5 @@
 ---
-title: Blood Stasis
+name: Blood Stasis
 description: "血瘀 (xue yu) — a pathological condition in which blood flow is impeded, stagnant, or obstructed, producing fixed sharp pain, dark complexion, and purple tongue — one of the most clinically significant pathological products in TCM"
 date-created: 2026-04-02
 aliases:

@@ -1,5 +1,5 @@
 ---
-title: "Source"
+name: "Source"
 type: "page"
 description: The source of a directed edge or morphism is the vertex or object it departs from.
 aliases:

@@ -1,5 +1,5 @@
 ---
-title: "secondary intension"
+name: "secondary intension"
 aliases:
   - "secondary intension"
 date-created: 2025-12-31

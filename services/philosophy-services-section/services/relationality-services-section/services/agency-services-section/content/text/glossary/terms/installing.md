@@ -1,6 +1,6 @@
 ---
 id: e1ea6d35-c059-48c9-8086-0ec0c2c6bd1c
-title: installing
+name: installing
 visibility: public
 description: Installing is the act of putting a component in a system.
 ---

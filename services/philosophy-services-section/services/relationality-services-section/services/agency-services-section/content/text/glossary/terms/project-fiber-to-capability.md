@@ -3,7 +3,7 @@ type: morphism
 class: projection
 status: draft
 depends-on: [capability-fiber-bundle, quantifier-adjoints-on-work-fibers, normative-operational-layering]
-title: Project fiber to capability
+name: Project fiber to capability
 description: "The morphism $\\pi^{\\exists} : \\mathcal{K}^{\\mathrm{prov}} \\to \\mathcal{K}^{\\mathrm{avail}}$ that takes the agent-indexed provides-capability fiber and projects out the agent argument by an existential quantifier-adjoint, producing a…"
 ---
 
@@ -13,7 +13,7 @@ The morphism $\pi^{\exists} : \mathcal{K}^{\mathrm{prov}} \to \mathcal{K}^{\math
 
 ## Data
 
-The morphism is the [knowledge-order existential adjoint](../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/predicated-work-services-section/content/glossary/terms/quantifier-adjoints-on-work-fibers.md) $\exists_f^k$ for $f$ the subject-projection morphism collapsing the agent argument:
+The morphism is the [knowledge-order existential adjoint](../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/predicated-work-services-section/content/text/glossary/terms/quantifier-adjoints-on-work-fibers.md) $\exists_f^k$ for $f$ the subject-projection morphism collapsing the agent argument:
 
 $$\pi^\exists \sigma (c) \;=\; \bigvee_{A \in E_{\mathrm{op}}}^{(k)} \sigma_A(c)$$
 

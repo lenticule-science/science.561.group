@@ -1,5 +1,5 @@
 ---
-title: "Access Intimacy"
+name: "Access Intimacy"
 type: "term"
 date-created: 2026-03-03
 ---

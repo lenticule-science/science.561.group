@@ -1,5 +1,5 @@
 ---
-title: "Shift"
+name: "Shift"
 description: "A bounded work period assigned to a role-holder — the basic unit of organizational time allocation that turns scheduling into concrete human commitment."
 defines: shift
 date-created: 2026-04-04

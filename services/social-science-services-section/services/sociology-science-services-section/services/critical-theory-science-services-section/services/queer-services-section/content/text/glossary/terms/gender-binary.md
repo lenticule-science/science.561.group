@@ -8,7 +8,6 @@ aliases:
 keywords:
   - gender-theory
 description: "The classificatory system that divides human beings into two mutually exclusive categories — male/female, man/woman — and treats this division as natural, exhaustive, and foundational to social organization."
-title: "Gender Binary"
 type: term
 tags:
   - GenderTheory

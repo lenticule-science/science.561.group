@@ -1,5 +1,5 @@
 ---
-title: "win condition"
+name: "win condition"
 type: "term"
 date-created: 2026-03-06
 ---

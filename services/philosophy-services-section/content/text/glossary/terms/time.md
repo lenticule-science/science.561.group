@@ -15,7 +15,6 @@ references:
   ref5:
     title: "Prigogine"
 date-created: 2026-04-03
-title: Time
 defines: time
 ---
 

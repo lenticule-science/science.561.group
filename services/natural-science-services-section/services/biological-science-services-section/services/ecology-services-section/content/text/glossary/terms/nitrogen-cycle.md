@@ -56,4 +56,4 @@ The nitrogen cycle is thus central to both ecosystem function and agricultural p
 
 - [Nitrogen Fixation](../../../../../../content/text/documents/articles/notes/2026/04/02/2026-04-02-nitrogen-fixation.md) — the key transformation
 - [Symbiosis](symbiosis.md) — the relationship that enables legume fixation
-- [Crop Rotation](../../../../../../../../../domestic-science-services-section/services/domestic-production-services-section/services/gardening-services-section/content/glossary/terms/crop-rotation.md) — agricultural application
+- [Crop Rotation](../../../../../../../../../domestic-science-services-section/services/domestic-production-services-section/services/gardening-services-section/content/text/glossary/terms/crop-rotation.md) — agricultural application

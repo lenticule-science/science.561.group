@@ -9,7 +9,6 @@ keywords:
   - anarchism
   - psychoanalysis
 description: "The system of language, law, categories, and shared meaning through which a society organizes itself — and through which domination is naturalized. Drawn from Lacanian psychoanalysis, the symbolic order names the structure that makes hierarchy appear as reason, coercion as procedure, and domination as the way things simply are."
-title: "The Symbolic Order"
 type: term
 tags:
   - Anarchism

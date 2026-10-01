@@ -4,7 +4,7 @@ aliases:
 created: 2018-11-28T22:21:35
 modified: 2025-07-13T22:23:05
 specialization: research
-title: "Roger Stone's Connection to Russian Intelligence"
+name: "Roger Stone's Connection to Russian Intelligence"
 author: ["emsenn"]
 date: 2018-11-28
 tags: ["Roger-Stone", "Russia"]

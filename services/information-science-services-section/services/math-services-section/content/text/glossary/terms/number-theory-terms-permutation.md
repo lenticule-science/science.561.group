@@ -1,5 +1,5 @@
 ---
-title: "Permutation"
+name: "Permutation"
 aliases:
   - "permutation"
   - "permutations"

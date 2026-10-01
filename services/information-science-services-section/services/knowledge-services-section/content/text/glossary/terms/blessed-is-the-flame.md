@@ -2,7 +2,7 @@
 author: "Serafinski"
 id: a6bdfc4d-666a-4363-90ea-b169f81d33d7
 roam-refs: "https://theanarchistlibrary.org/library/serafinski-blessed-is-the-flame"
-title: Blessed is the Flame
+name: Blessed is the Flame
 date-created: 2025-08-26
 type: essay
 visibility: public

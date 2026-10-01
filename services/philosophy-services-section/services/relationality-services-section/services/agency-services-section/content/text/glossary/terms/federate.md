@@ -4,7 +4,7 @@ class: substrate-operation
 status: sketch
 depends-on: [predicated-knowledge-system, scope, discourse-community-as-fiber]
 see-also: [assert, federation-as-bilattice-colimit]
-title: Federate
+name: Federate
 description: The substrate operation by which two predicated knowledge systems' scopes are joined into a single substrate region while preserving each scope's local closure-rule subset, predicate vocabulary, entity identity, and consistency commitments.
 ---
 

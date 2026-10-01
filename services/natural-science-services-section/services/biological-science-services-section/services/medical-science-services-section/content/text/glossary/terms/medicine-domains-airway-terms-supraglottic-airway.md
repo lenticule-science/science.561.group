@@ -1,5 +1,5 @@
 ---
-title: "Supraglottic Airway"
+name: "Supraglottic Airway"
 type: "term"
 date-created: 2026-03-03
 ---

@@ -18,7 +18,6 @@ ast:
         - history-monoid
     - commuting-nucleus-pair:
         - fiber-family
-title: "Relational State"
 defines:
   - relational state
 related:

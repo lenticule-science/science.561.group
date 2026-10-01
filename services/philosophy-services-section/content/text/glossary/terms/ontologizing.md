@@ -1,7 +1,7 @@
 ---
 id: 7ce83293-bb4b-4787-953b-5d8b7506cc78
 resource-description: "((resource type . theorizing) (paradigm . relational dynamics) (field of theory . being) (process . ((conceptualizing . secondary intension) (expressing . Fregean first-order predicate) (testing . Tarskian model-theoretic truth)) (reflexive process . true)) (process goal . ontological closure))"
-title: ontologizing
+name: ontologizing
 date-created: 2025-08-29
 visibility: public
 ---

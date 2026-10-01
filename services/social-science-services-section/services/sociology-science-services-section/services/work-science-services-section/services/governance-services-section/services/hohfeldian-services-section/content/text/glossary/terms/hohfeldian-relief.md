@@ -78,7 +78,7 @@ Relief is simultaneous with assumption by the successor: $\varepsilon(h_{\mathrm
 There is no mutual acknowledgement from the outgoing holder because they cannot give it.
 The documentation is performed by the incoming holder: the assumption is documented in writing, recording the time of assumption and the triggering condition.
 
-Emergency succession is the relief case studied in [Succession](../../../../../../../predicated-work-services-section/services/predicated-governance-services-section/content/glossary/terms/succession.md): the ordered list of candidates activates when the primary holder's binding cannot be maintained.
+Emergency succession is the relief case studied in [Succession](../../../../../../../predicated-work-services-section/services/predicated-governance-services-section/content/text/glossary/terms/succession.md): the ordered list of candidates activates when the primary holder's binding cannot be maintained.
 
 ## Math grounding
 

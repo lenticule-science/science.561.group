@@ -1,5 +1,5 @@
 ---
-title: "Transit method"
+name: "Transit method"
 type: term
 component-of: planetary-astronomy
 ---

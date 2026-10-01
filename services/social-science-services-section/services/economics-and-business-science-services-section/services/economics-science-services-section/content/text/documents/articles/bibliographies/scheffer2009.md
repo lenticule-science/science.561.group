@@ -31,6 +31,6 @@ Early-warning signals are generic diagnostics, not predictions of timing or magn
 ## Bridges
 
 - [Critical transition](../../../glossary/terms/critical-transition.md)
-- [Catabolic collapse](../../../../../../../../../../history-and-archaeology-science-services-section/services/social-history-science-services-section/content/glossary/terms/catabolic-collapse.md)
-- [Five stages of collapse](../../../../../../../../../../history-and-archaeology-science-services-section/services/social-history-science-services-section/content/glossary/terms/five-stages-of-collapse.md)
-- [Structural-demographic theory](../../../../../../../../../../history-and-archaeology-science-services-section/services/social-history-science-services-section/content/glossary/terms/structural-demographic-theory.md)
+- [Catabolic collapse](../../../../../../../../../../history-and-archaeology-science-services-section/services/social-history-science-services-section/content/text/glossary/terms/catabolic-collapse.md)
+- [Five stages of collapse](../../../../../../../../../../history-and-archaeology-science-services-section/services/social-history-science-services-section/content/text/glossary/terms/five-stages-of-collapse.md)
+- [Structural-demographic theory](../../../../../../../../../../history-and-archaeology-science-services-section/services/social-history-science-services-section/content/text/glossary/terms/structural-demographic-theory.md)

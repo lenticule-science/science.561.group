@@ -1,7 +1,7 @@
 ---
 id: 1793c515-8037-4119-8ba9-afea1a81fc6e
 roam-refs: "@mcmillan_global_2025"
-title: Global patterns in observed hydrologic processes
+name: Global patterns in observed hydrologic processes
 date-created: 2025-10-06
 visibility: public
 type: journal article

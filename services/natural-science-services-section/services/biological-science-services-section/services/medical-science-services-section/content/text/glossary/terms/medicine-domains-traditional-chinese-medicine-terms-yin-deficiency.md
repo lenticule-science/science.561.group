@@ -1,5 +1,5 @@
 ---
-title: "Yin Deficiency"
+name: "Yin Deficiency"
 type: "term"
 date-created: 2026-04-02
 ---

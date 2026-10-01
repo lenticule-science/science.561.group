@@ -1,5 +1,5 @@
 ---
-title: Binding Terms
+name: Binding Terms
 description: Story.
 ---
 # Binding Terms

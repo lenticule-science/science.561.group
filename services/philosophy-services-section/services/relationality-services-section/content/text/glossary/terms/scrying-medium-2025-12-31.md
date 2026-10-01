@@ -1,5 +1,5 @@
 ---
-title: "scrying medium"
+name: "scrying medium"
 aliases:
   - "scrying medium"
 date-created: 2025-12-31

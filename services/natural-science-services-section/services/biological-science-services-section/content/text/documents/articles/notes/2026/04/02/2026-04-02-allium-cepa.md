@@ -37,5 +37,5 @@ Onion flavor derives from volatile sulfur compounds released when cell walls are
 ## See also
 
 - [Allium cepa day-length classification](../../../../research/2026/07/31/lenticule-import/_archive/atom/scripts/bonding/content/molecule/scripts/assembling/content/cell/scripts/integrating/content/organism/scripts/speciating/content/plant/scripts/classifying/content/angiosperm/scripts/familializing/content/amaryllidaceae/scripts/instantiating/content/path)
-- [Shallot cultivation](../../../../../../../../../../../domestic-science-services-section/services/domestic-production-services-section/services/gardening-services-section/content/glossary/terms/onion-shallot.md)
-- [Bulbing onion cultivation](../../../../../../../../../../../domestic-science-services-section/services/domestic-production-services-section/services/gardening-services-section/content/glossary/terms/onion-bulbing.md)
+- [Shallot cultivation](../../../../../../../../../../../domestic-science-services-section/services/domestic-production-services-section/services/gardening-services-section/content/text/glossary/terms/onion-shallot.md)
+- [Bulbing onion cultivation](../../../../../../../../../../../domestic-science-services-section/services/domestic-production-services-section/services/gardening-services-section/content/text/glossary/terms/onion-bulbing.md)

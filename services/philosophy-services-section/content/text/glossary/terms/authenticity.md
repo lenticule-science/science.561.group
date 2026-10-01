@@ -18,7 +18,6 @@ references:
     title: "Authenticity"
     publication: "Anthropology Today"
     year: 1986
-title: "Authenticity"
 ---
 
 Authenticity is the claim that a person, practice, or community expresses its true nature — that it is what it really is, uncontaminated by external influence, faithful to an original form. The concept has roots in Existentialist philosophy (Heidegger, Sartre) but its political deployment belongs to [Romantic nationalism](../../sociology/terms/romantic-nationalism.md): the claim that each people has an authentic spirit ([*Volksgeist*](../../../../services/relationality-services-section/services/agency-services-section/content/text/documents/articles/notes/undated/volksgeist.md)) expressed in authentic practices, and that these practices must be preserved against the corruptions of [modernity](./modernity.md).

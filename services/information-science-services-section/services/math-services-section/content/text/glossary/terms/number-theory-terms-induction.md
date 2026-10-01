@@ -1,5 +1,5 @@
 ---
-title: "Induction"
+name: "Induction"
 aliases:
   - "induction"
   - "mathematical induction"

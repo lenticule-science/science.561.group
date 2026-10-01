@@ -1,5 +1,5 @@
 ---
-title: Distributed Sensemaking
+name: Distributed Sensemaking
 date-created: 2026-03-08 00:00:00
 aliases:
 - distributed sensemaking

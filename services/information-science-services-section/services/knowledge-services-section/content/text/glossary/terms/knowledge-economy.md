@@ -1,6 +1,6 @@
 ---
 id: d572f1d8-5afc-465c-bf1e-e4b3aa75cbab
-title: knowledge economy
+name: knowledge economy
 date-created: 2025-09-03
 ---
 

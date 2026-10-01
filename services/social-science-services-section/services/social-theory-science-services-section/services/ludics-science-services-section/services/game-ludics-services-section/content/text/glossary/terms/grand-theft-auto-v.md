@@ -3,7 +3,7 @@ aliases:
 - GTAV
 author: emsenn
 id: d318e803-09f7-43b9-b1bb-0139dbbde9aa
-title: Grand Theft Auto V
+name: Grand Theft Auto V
 date-created: 2025-07-21
 type: video game
 visibility: public

@@ -10,7 +10,6 @@ tags: []
 description: "FBI counterintelligence programs (1956–1971) that targeted civil rights, anti-war, Black liberation, and Indigenous movements through infiltration, disinformation, and harassment."
 date-modified: 2026-03-09
 part-of: sociology/topics/state-repression/terms
-title: "COINTELPRO"
 type: term
 defines:
   - "COINTELPRO"

@@ -1,7 +1,7 @@
 ---
 id: 15aa1cc5-91b5-44cb-8a1f-89bf7eeefbd0
 roam-refs: "@berlant_cruel_2011"
-title: Cruel Optimism
+name: Cruel Optimism
 date-created: 2025-08-19
 type: text
 visibility: public

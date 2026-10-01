@@ -6,7 +6,6 @@ aliases:
   - "informality"
 tags: []
 description: "The insurrectionary anarchist principle that revolutionary organization should be temporary, task-specific, and non-bureaucratic — forming around action rather than accumulating structure."
-title: "Informal Organization"
 type: term
 defines:
   - "Informal Organization"

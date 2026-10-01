@@ -13,7 +13,6 @@ governs:
   - marketing-plan
   - revenue-model
   - pricing-strategy
-title: "Target Market"
 description: "A target market is the specific group of people a business intends to serve — defined by demographics (age, income, location, occupation), psychographics (values, lifestyle, preferences), and behavioral patterns (purchasing frequency, spending habits, decision-making process). Identifying a target market means choosing who the business is for, which simultaneously means choosing who it is not for."
 defines:
   - "Target Market"

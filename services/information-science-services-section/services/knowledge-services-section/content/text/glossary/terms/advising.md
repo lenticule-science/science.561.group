@@ -1,6 +1,6 @@
 ---
 id: 00144e3e-bc47-4b1c-9204-5b6cfeca200c
-title: advising
+name: advising
 date-created: 2025-09-05
 visibility: public
 ---

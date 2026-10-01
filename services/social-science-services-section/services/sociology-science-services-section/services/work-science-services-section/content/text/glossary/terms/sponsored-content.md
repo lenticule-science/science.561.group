@@ -1,5 +1,5 @@
 ---
-title: Sponsored Content
+name: Sponsored Content
 description: "Content created or commissioned by an advertiser and published through a publisher's channel — monetization through paid editorial integration rather than automated ad slots."
 defines: Sponsored Content
 domain: web-business

@@ -1,6 +1,6 @@
 ---
 id: bbde1314-0cdc-4f9c-8d87-80b5aeb1c0a6
-title: human science
+name: human science
 date-created: 2025-08-29
 type: science
 visibility: public

@@ -1,6 +1,6 @@
 ---
 author: emsenn
-title: Post to @emsenn@kolektiva.social, 2025-07-20
+name: Post to @emsenn@kolektiva.social, 2025-07-20
 date-created: 2025-07-20
 ---
 

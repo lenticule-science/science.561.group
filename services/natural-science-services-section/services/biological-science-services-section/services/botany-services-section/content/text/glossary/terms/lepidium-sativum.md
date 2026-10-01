@@ -50,4 +50,4 @@ The species is commonly grown as a simple, fast, and reliable hobby crop for chi
 - [Brassicaceae](../terms/brassicaceae.md)
 - [Glucosinolate biosynthesis](../chemistry/terms/glucosinolates.md)
 - [Rapid phenology in annual crops](../ecology/terms/rapid-phenology.md)
-- [Garden cress cultivation](../../../../../../../../../domestic-science-services-section/services/domestic-production-services-section/services/gardening-services-section/content/glossary/terms/garden-cress.md)
+- [Garden cress cultivation](../../../../../../../../../domestic-science-services-section/services/domestic-production-services-section/services/gardening-services-section/content/text/glossary/terms/garden-cress.md)

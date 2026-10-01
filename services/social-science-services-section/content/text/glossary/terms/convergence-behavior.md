@@ -31,7 +31,6 @@ references:
     publication: "Disaster Research Center"
     year: 2010
     url: "https://udspace.udel.edu/items/d050fc11-cbbe-4ded-b4dd-79c3257e871c"
-title: Convergence Behavior
 tags:
 - disaster-studies
 - collective-behavior

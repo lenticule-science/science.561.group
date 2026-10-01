@@ -1,5 +1,5 @@
 ---
-title: "Weak messianic power"
+name: "Weak messianic power"
 defines: weak-messianic-power
 aliases: [weak messianic power, schwache messianische kraft]
 description: "Benjamin's term, from the second of the 'Theses on the Philosophy of History' (1940), for the power each generation possesses to recognize a claim from past generations on the present and to act on that claim. The power is weak (not sovereign, not redemptive in itself) but it is nevertheless a power — the past has expectations of us that we can refuse, fulfill, or betray."

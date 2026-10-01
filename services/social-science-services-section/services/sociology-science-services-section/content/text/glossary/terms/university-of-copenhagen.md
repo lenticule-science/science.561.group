@@ -1,6 +1,6 @@
 ---
 id: 338bd4ab-90a3-44ed-9099-c078bfd2399f
-title: University of Copenhagen
+name: University of Copenhagen
 date-created: 2025-08-29
 visibility: public
 ---

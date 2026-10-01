@@ -1,5 +1,5 @@
 ---
-title: "Binomial Coefficient"
+name: "Binomial Coefficient"
 aliases:
   - "binomial coefficient"
   - "binomial coefficients"

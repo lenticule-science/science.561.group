@@ -33,4 +33,4 @@ Columbian Exchange traders carried *C. pepo* to Europe by the 16th century, from
 
 ## See also
 
-[Zucchini cultivation](../../../../../../../../../../../domestic-science-services-section/services/domestic-production-services-section/services/gardening-services-section/content/glossary/terms/zucchini.md) | [Pumpkin cultivation](../../../../../../../../../../../domestic-science-services-section/services/domestic-production-services-section/services/gardening-services-section/content/glossary/terms/pumpkin.md)
+[Zucchini cultivation](../../../../../../../../../../../domestic-science-services-section/services/domestic-production-services-section/services/gardening-services-section/content/text/glossary/terms/zucchini.md) | [Pumpkin cultivation](../../../../../../../../../../../domestic-science-services-section/services/domestic-production-services-section/services/gardening-services-section/content/text/glossary/terms/pumpkin.md)

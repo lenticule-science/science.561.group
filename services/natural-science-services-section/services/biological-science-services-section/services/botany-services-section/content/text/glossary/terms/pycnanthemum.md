@@ -37,5 +37,5 @@ Pycnanthemum species were used by Native Americans as medicinal tea for digestiv
 
 - [Menthol and essential oils in Lamiaceae](../menthol.md)
 - [Pollinator-plant interactions in native flora](../../../science/domains/biology/domains/ecology/texts/pollination-native-plants.md)
-- [Mountain mint cultivation](../../../../../../../../../domestic-science-services-section/services/domestic-production-services-section/services/gardening-services-section/content/glossary/terms/mountain-mint-cultivation.md)
+- [Mountain mint cultivation](../../../../../../../../../domestic-science-services-section/services/domestic-production-services-section/services/gardening-services-section/content/text/glossary/terms/mountain-mint-cultivation.md)
 - [Lamiaceae family](./lamiaceae.md)

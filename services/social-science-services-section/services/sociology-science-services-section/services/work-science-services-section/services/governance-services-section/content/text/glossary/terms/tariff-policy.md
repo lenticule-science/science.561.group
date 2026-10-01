@@ -1,6 +1,5 @@
 ---
 id: 31746645-c463-4a40-ba84-4149af536d32
-title: tariff policy
 name: Tariff policy
 description: "A state's choice of which imports to tax at the border, at what rates, under which legal authorities, and for which ends: revenue, protection, bargaining leverage or sanction."
 date-created: 2025-09-24

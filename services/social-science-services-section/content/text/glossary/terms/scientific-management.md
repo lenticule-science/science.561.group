@@ -1,5 +1,5 @@
 ---
-title: "Scientific Management"
+name: "Scientific Management"
 description: "Frederick Winslow Taylor's program for the systematic study and reorganization of industrial work — replacing rule-of-thumb craft methods with time-and-motion-determined procedures, separating the design of work (engineering and management) from its execution (the worker), and tying compensation to measured output. The originating technical-managerial expression of real subsumption."
 defines: scientific-management
 related: [labor-process, real-subsumption, deskilling, coordination-mechanism, bureaucracy]

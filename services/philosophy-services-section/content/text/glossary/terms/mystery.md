@@ -1,6 +1,6 @@
 ---
 id: 4826d09d-607a-49f9-beb5-7f3ee507340f
-title: mystery
+name: mystery
 date-created: 2025-08-29
 visibility: public
 ---

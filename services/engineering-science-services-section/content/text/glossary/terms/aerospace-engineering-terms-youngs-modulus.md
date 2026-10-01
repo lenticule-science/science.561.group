@@ -1,5 +1,5 @@
 ---
-title: "Young's Modulus"
+name: "Young's Modulus"
 type: "term"
 date-created: 2026-03-07
 ---

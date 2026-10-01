@@ -1,5 +1,5 @@
 ---
-title: "Meta-Balance"
+name: "Meta-Balance"
 identity: meta-balance
 description: "Meta-Balance is the coherence condition for systems: the condition that all three components of a triad are mutually balanced, each pair compatible and each component mediating coherently for the other two."
 date-created: 2026-03-04

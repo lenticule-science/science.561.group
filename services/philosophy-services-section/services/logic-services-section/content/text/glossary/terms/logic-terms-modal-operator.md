@@ -1,5 +1,5 @@
 ---
-title: "Modal Operator"
+name: "Modal Operator"
 aliases:
   - "modal operator"
   - "modal operators"

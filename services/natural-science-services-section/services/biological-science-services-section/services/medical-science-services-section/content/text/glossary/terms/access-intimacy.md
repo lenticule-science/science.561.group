@@ -25,7 +25,6 @@ references:
   - id: ref2
     type: document
     title: Leah Lakshmi Piepzna-Samarasinha
-title: "Access Intimacy"
 type: term
 tags:
   - DisabilityJustice

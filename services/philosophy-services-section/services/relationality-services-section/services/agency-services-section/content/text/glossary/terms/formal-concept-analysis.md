@@ -1,5 +1,5 @@
 ---
-title: "emsenn.net"
+name: "emsenn.net"
 type: "method"
 date-created: 2026-03-30
 description: A mathematical framework for deriving conceptual hierarchies from data tables.

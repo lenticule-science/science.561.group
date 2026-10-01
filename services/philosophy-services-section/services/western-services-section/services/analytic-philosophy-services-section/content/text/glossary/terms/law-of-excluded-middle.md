@@ -15,7 +15,6 @@ component-of: classical-logic
 requires: bivalence
 contrasts-with: [constructive-proof, intuitionistic-logic]
 enables: proof-by-contradiction
-title: "Law of Excluded Middle"
 defines:
   - "Law of Excluded Middle"
   - "excluded middle"

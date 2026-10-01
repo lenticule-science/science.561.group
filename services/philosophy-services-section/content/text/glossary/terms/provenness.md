@@ -19,7 +19,6 @@ references:
     publication: Monatshefte für Mathematik und Physik
 type: structure
 visibility: public
-title: "Provenness"
 defines:
   - "Provenness"
   - "proven"

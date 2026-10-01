@@ -1,5 +1,5 @@
 ---
-title: "Divisibility"
+name: "Divisibility"
 aliases:
   - "divisibility"
   - "divides"

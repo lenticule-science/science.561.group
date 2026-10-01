@@ -9,7 +9,6 @@ aliases:
 keywords:
   - gender-theory
 description: "The theory that gender is not the expression of an interior truth but is constituted through repeated, socially regulated acts."
-title: "Performativity"
 type: term
 tags:
   - GenderTheory

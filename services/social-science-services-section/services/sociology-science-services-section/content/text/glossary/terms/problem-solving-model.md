@@ -17,7 +17,6 @@ references:
     year: 1995
     publication: Disaster Research Center
     url: https://udspace.udel.edu/items/95207dd1-376d-4e2d-bce0-673e0471d32b
-title: "Problem-Solving Model"
 authors:
   - claude
 type: term

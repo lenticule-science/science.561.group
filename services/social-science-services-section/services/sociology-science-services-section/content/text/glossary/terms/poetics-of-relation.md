@@ -1,7 +1,7 @@
 ---
 id: 96869b87-df4c-4fd9-ad32-846ee37b0301
 roam-refs: "http://archive.org/details/poeticsofrelatio0000glis @glissant_poetics_1997"
-title: Poetics of Relation
+name: Poetics of Relation
 date-created: 2025-10-04
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: "Capacity"
+name: "Capacity"
 description: "The amount of work an agent or system can handle in a given time period — the resource constraint that limits throughput and governs dispatch."
 defines: capacity
 date-created: 2026-04-03

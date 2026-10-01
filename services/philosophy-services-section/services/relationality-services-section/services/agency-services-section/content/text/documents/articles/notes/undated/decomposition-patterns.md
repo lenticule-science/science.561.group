@@ -8,7 +8,7 @@ description: The decompose-task morphism defines task decomposition with a singl
 
 # What closure-rule shapes correspond to non-AND decomposition patterns?
 
-The [decompose-task morphism](../../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/predicated-work-services-section/content/glossary/terms/decompose-task.md) defines task decomposition with a single composition rule $r_{\mathrm{compose}}$ whose antecedent is the *conjunction* of all subtasks' goal-cell settlements.
+The [decompose-task morphism](../../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/predicated-work-services-section/content/text/glossary/terms/decompose-task.md) defines task decomposition with a single composition rule $r_{\mathrm{compose}}$ whose antecedent is the *conjunction* of all subtasks' goal-cell settlements.
 This is AND-decomposition: the parent settles iff every subtask settles.
 
 Real decomposition includes patterns the AND-rule does not cover:

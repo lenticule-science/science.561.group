@@ -1,7 +1,7 @@
 ---
 author: emsenn
 id: e651afd7-937f-4d63-916d-a89c9a6f0a17
-title: bounding
+name: bounding
 date-created: 2025-07-19
 ---
 

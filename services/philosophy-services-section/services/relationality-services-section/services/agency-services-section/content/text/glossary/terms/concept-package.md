@@ -1,5 +1,5 @@
 ---
-title: "Concept Package"
+name: "Concept Package"
 type: "page"
 date-created: 2026-03-18
 description: "A ConceptPackage is a Package organized around one Concept: it colocates the concept's full grammatical family (noun, adjective, flat verb, gerund specs) with its operational artifacts (runbooks, scripts) under a single named boundary."

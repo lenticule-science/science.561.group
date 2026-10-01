@@ -4,7 +4,7 @@ class: generalised-substrate
 status: stable
 depends-on: [formal-context, derivation-operator]
 see-also: [belohlavek-bridge, concept-lattice]
-title: Residuated context
+name: Residuated context
 description: "A residuated (or $\\mathbf{L}$-valued) formal context is a quadruple $\\mathbb{K} = (G, M, \\mathbf{L}, I)$ where $G$ and $M$ are sets, $\\mathbf{L}$ is a complete residuated lattice $(\\mathbf{L}, \\wedge, \\vee, \\otimes, \\to, 0, 1)$, and $I: G…"
 ---
 

@@ -23,7 +23,6 @@ references:
     title: Poetics of Relation
     year: 1997
     publication: University of Michigan Press
-title: "Opacity"
 defines:
   - "Opacity"
   - "right to opacity"

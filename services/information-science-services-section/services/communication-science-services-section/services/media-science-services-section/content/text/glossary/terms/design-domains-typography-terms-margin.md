@@ -1,5 +1,5 @@
 ---
-title: "margin"
+name: "margin"
 type: "term"
 date-created: 2025-12-31
 ---

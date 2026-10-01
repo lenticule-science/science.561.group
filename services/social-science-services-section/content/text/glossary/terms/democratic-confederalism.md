@@ -1,5 +1,5 @@
 ---
-title: "Democratic Confederalism"
+name: "Democratic Confederalism"
 date-created: 2026-04-02
 aliases:
   - "democratic confederalism"

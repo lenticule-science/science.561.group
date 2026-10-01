@@ -1,6 +1,6 @@
 ---
 author: emsenn
-title: Thoughts on Upcoming ICE Raids
+name: Thoughts on Upcoming ICE Raids
 aliases:
   - thoughts-on-upcoming-ice-raids
 specialization: research

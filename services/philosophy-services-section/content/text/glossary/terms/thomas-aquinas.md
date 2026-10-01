@@ -1,6 +1,6 @@
 ---
 id: 7fd79463-840a-4004-a485-cc2aadae2af4
-title: Thomas Aquinas
+name: Thomas Aquinas
 date-created: 2025-08-31
 ---
 

@@ -3,7 +3,7 @@ author: "Cheryl I. Harris"
 id: 9917d10c-63b0-4b0c-a918-187e8a7053e9
 publication-year: "1993"
 publisher: "Harvard Law Review"
-title: Whiteness as Property
+name: Whiteness as Property
 date-created: 2025-09-25
 visibility: public
 ---

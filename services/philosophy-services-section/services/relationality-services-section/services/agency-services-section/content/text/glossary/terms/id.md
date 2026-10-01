@@ -1,5 +1,5 @@
 ---
-title: "Id"
+name: "Id"
 type: "page"
 date-created: 2026-03-18
 description: An Id is a candidate key — an injective, content-independent constant symbol in the language of a scope that denotes exactly one object within that scope and is stable across changes to the object's content.

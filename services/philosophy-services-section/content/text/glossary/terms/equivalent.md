@@ -1,6 +1,6 @@
 ---
 id: 34a5d066-d5e7-4ee4-bb5a-fb7a79a9441b
-title: equivalent
+name: equivalent
 date-created: 2025-08-26
 ---
 

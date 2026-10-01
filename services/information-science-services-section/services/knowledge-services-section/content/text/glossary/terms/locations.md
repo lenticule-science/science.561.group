@@ -1,6 +1,6 @@
 ---
 id: 32be7c92-912e-419d-ad36-bf187fcbbdd7
-title: Locations
+name: Locations
 ---
 
 This is a list of locations, a part of my [my encyclopedia](emsenn-s-encyclopedia.md).

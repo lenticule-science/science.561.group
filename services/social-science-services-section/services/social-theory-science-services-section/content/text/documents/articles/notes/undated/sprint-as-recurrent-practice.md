@@ -9,7 +9,7 @@ description: A sprint — the standard agile-software unit of cadence-bounded wo
 
 # A sprint is a recurrent practice with variable strict cadence
 
-A *sprint* — the standard agile-software unit of cadence-bounded work — instantiates the [recurrent-practice](../../../../../../../sociology-science-services-section/services/work-science-services-section/services/predicated-work-services-section/content/glossary/terms/recurrent-practice.md) object with a [variable strict cadence](../../research/2026/07/31/lenticule-import/library/social-sciences/working/_archive/teaching/explanations/cadence.md) and a per-cycle phase structure that mirrors the [operations-loop](../../../../../../../sociology-science-services-section/services/work-science-services-section/services/predicated-work-services-section/content/glossary/terms/operations-loop.md).
+A *sprint* — the standard agile-software unit of cadence-bounded work — instantiates the [recurrent-practice](../../../../../../../sociology-science-services-section/services/work-science-services-section/services/predicated-work-services-section/content/text/glossary/terms/recurrent-practice.md) object with a [variable strict cadence](../../research/2026/07/31/lenticule-import/library/social-sciences/working/_archive/teaching/explanations/cadence.md) and a per-cycle phase structure that mirrors the [operations-loop](../../../../../../../sociology-science-services-section/services/work-science-services-section/services/predicated-work-services-section/content/text/glossary/terms/operations-loop.md).
 
 ## The instance
 

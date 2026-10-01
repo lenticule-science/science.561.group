@@ -35,4 +35,4 @@ Beyond culinary application, *T. cucumerina* holds ethnomedicinal significance i
 
 ## See also
 
-[Snake gourd cultivation](../../../../../../../../../../../domestic-science-services-section/services/domestic-production-services-section/services/gardening-services-section/content/glossary/terms/snake-gourd.md)
+[Snake gourd cultivation](../../../../../../../../../../../domestic-science-services-section/services/domestic-production-services-section/services/gardening-services-section/content/text/glossary/terms/snake-gourd.md)

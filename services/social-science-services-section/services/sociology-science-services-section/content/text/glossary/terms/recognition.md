@@ -26,7 +26,6 @@ references:
 defines:
   - recognition
   - politics of recognition
-title: "Recognition"
 ---
 
 Recognition is the political framework in which a subordinate group seeks acknowledgment of its distinct identity, rights, and existence from the dominant power. Charles Taylor (1994) argued that recognition is a vital human need — that misrecognition (being seen as inferior, invisible, or distorted) is a form of oppression, and that justice requires the dominant society to acknowledge the equal worth of different cultural groups.

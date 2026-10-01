@@ -6,7 +6,6 @@ domain: web-business
 restricts: Web Monetization
 uses: Churn Rate, Organic Traffic, Conversion Rate, Willingness to Pay
 date-created: 2026-03-29
-title: "Paywall"
 defines: Paywall
 related: Content Strategy, SEO
 date-modified: 2026-03-29

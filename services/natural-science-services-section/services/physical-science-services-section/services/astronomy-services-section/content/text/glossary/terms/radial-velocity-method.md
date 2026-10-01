@@ -1,5 +1,5 @@
 ---
-title: "Radial-velocity method"
+name: "Radial-velocity method"
 type: term
 component-of: planetary-astronomy
 ---

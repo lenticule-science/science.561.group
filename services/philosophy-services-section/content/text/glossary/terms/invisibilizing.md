@@ -1,6 +1,6 @@
 ---
 id: c1e9dc54-9aa1-4044-94b7-cdb3669a83b3
-title: invisibilizing
+name: invisibilizing
 date-created: 2025-08-24
 ---
 

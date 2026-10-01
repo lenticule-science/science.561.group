@@ -15,7 +15,7 @@ link, regardless of which rank executed $X$. The proof is established under the 
 *permanent incumbency at $r_1$*: the captain's accountability cells are stable because the
 captain's incumbency cells are stable.
 
-The [rotational-authority](../../../../../../services/predicated-work-services-section/services/predicated-governance-services-section/content/glossary/terms/rotational-authority.md) object describes incumbency
+The [rotational-authority](../../../../../../services/predicated-work-services-section/services/predicated-governance-services-section/content/text/glossary/terms/rotational-authority.md) object describes incumbency
 that *cycles* through eligible population members at rotation boundaries. The current
 incumbent's incumbency cells retire at $\tau + \pi$; new incumbency cells settle for the
 next agent.

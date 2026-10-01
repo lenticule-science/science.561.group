@@ -1,6 +1,6 @@
 ---
 id: fda5081c-3687-489f-b04a-5bf24c00a22d
-title: stellar satellite
+name: stellar satellite
 date-created: 2025-10-18
 ---
 

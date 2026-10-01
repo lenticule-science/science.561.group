@@ -11,7 +11,6 @@ keywords:
 description: "The principle that explanatory grounds operate within a form or process, rather than from an external transcendent source."
 aliases:
   - immanence
-title: "Immanence"
 tags:
   - metaphysics
   - ontology

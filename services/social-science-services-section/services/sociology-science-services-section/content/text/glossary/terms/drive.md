@@ -9,7 +9,6 @@ keywords:
   - anarchism
   - psychoanalysis
 description: "In Lacanian psychoanalysis, the mode of wanting that does not target an object but operates through repetition — drive circles endlessly without aiming at satisfaction, and its operation is its own purpose. Anarcho-nihilism identifies drive as the ground of resistance that persists when hope collapses."
-title: "Drive"
 type: term
 tags:
   - Anarchism

@@ -4,7 +4,7 @@ class: structural-invariant
 status: stable
 depends-on: [formal-context, derivation-operator]
 see-also: [basic-theorem-of-fca, concept-as-closed-pair]
-title: Concept lattice
+name: Concept lattice
 description: The concept lattice of a formal context $\mathbb{K} = (G, M, I)$ is the partially ordered set $\mathfrak{B}(\mathbb{K}) = (\{(A, B) \mid A' = B, B' = A\}, \le)$ where $(A1, B1) \le (A2, B2) \iff A1 \subseteq A2 \iff B2 \subseteq B1$.
 ---
 

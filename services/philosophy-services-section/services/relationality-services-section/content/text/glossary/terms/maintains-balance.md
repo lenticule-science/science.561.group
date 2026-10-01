@@ -1,5 +1,5 @@
 ---
-title: "Maintains-Balance"
+name: "Maintains-Balance"
 identity: maintains-balance
 description: "Maintains-Balance is the condition that a dynamic process respects the modal structure of being."
 date-created: 2026-03-04

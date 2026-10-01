@@ -1,5 +1,5 @@
 ---
-title: "Commodity"
+name: "Commodity"
 aliases:
   - "Commodity"
   - "commodity"

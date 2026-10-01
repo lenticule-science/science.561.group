@@ -1,5 +1,5 @@
 ---
-title: Forming Least Fix Term
+name: Forming Least Fix Term
 description: Story.
 ---
 # Forming Least Fix Term

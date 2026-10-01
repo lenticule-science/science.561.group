@@ -1,5 +1,5 @@
 ---
-title: "Either"
+name: "Either"
 identity: either
 description: "Either is choosing: the combined scope of two recognitions."
 date-created: 2026-03-04

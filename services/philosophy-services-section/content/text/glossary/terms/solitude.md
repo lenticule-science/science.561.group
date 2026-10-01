@@ -1,6 +1,6 @@
 ---
 id: 82af9530-2b24-42b3-b8a4-000570d4867e
-title: solitude
+name: solitude
 date-created: 2025-08-29
 ---
 

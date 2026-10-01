@@ -1,5 +1,5 @@
 ---
-title: "Graph"
+name: "Graph"
 aliases:
   - "graph"
   - "graphs"

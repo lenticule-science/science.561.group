@@ -11,7 +11,6 @@ date-updated: 2026-03-09
 part-of: business/disciplines/human-resources/terms
 requires: at-will-employment
 extends: documentation
-title: "Progressive Discipline"
 tags:
   - business
 date-modified: 2026-03-09

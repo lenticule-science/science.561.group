@@ -1,6 +1,6 @@
 ---
 id: b180208b-8e7d-4fcf-8b6c-20ec3b4c5a0e
-title: naming
+name: naming
 date-created: 2025-08-25
 type: act
 visibility: public

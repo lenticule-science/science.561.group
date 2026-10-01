@@ -1,5 +1,5 @@
 ---
-title: "Line of Credit"
+name: "Line of Credit"
 date-created: 2026-03-06T00:00:00
 type: term
 aliases:

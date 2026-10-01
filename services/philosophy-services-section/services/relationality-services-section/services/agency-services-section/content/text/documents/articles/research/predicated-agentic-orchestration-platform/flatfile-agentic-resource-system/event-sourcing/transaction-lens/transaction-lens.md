@@ -36,7 +36,7 @@ It does *not* replace the chart-of-accounts.md the captain drafted under `operat
 
 ## Why this is the right shape
 
-The [operations-loop](../../../../../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/predicated-work-services-section/content/glossary/terms/operations-loop.md) goal-doc states the convergence condition explicitly: *"the entropy theorem says entropy decreases monotonically until the stationary profile is reached.
+The [operations-loop](../../../../../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/predicated-work-services-section/content/text/glossary/terms/operations-loop.md) goal-doc states the convergence condition explicitly: *"the entropy theorem says entropy decreases monotonically until the stationary profile is reached.
 The detailed balance condition (debits = credits) IS the signature of stationarity."* The transaction lens makes that condition *computable* from substrate state, without requiring the operations loop to run through any new piece of infrastructure.
 
 ## How the projection works

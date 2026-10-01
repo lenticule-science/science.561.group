@@ -1,6 +1,6 @@
 ---
 id: 7f6e79b8-94e5-4a33-a4a9-42ed851e8d0b
-title: fiction character
+name: fiction character
 date-created: 2025-09-06
 visibility: public
 ---

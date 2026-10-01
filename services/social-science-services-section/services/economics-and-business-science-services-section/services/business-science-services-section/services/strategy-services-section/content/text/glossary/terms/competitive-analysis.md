@@ -12,7 +12,6 @@ requires: target-market
 enables:
   - swot-analysis
   - marketing-plan
-title: "Competitive Analysis"
 description: "Competitive analysis is the systematic identification and evaluation of businesses that serve the same [target market](../../../../../marketing-science-services-section/content/text/glossary/terms/target-market.md) or fulfill the same customer need. It asks: who else does what this business does, how do they do it, and where are the gaps?"
 date-modified: 2026-03-09
 ---

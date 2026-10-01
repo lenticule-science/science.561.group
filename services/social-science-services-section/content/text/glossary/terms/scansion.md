@@ -1,5 +1,5 @@
 ---
-title: "Scansion"
+name: "Scansion"
 date-created: 2026-04-30
 aliases:
   - "scansion"

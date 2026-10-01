@@ -1,5 +1,5 @@
 ---
-title: "Requisite Variety"
+name: "Requisite Variety"
 type: "term"
 date-created: 2026-03-03
 ---

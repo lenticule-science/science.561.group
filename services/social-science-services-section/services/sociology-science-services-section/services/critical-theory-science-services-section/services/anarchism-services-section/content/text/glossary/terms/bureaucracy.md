@@ -1,5 +1,4 @@
 ---
-title: "Bureaucracy"
 description: "An administrative form characterized by jurisdictional fixity, office hierarchy, written documentation, expert training, full-time vocation, general impersonal rules, and the separation of office from officeholder. The characteristic carrier of rational-legal authority and, on Weber's argument, the technically superior administrative apparatus of modernity."
 defines: bureaucracy
 related: [authority, office, officium, normative-system, charter, polity, iron-cage]

@@ -1,5 +1,5 @@
 ---
-title: "Instrument fiber"
+name: "Instrument fiber"
 type: object
 class: predicate-fiber
 component-of: predicated-astronomy

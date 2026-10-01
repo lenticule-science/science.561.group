@@ -1,6 +1,6 @@
 ---
 id: a59e492e-c82b-411d-80bd-8379560c6024
-title: blaming
+name: blaming
 date-created: 2025-08-27
 visibility: public
 ---

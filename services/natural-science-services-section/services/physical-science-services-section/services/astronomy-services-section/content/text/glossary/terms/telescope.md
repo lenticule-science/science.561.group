@@ -1,5 +1,5 @@
 ---
-title: "Telescope"
+name: "Telescope"
 type: term
 component-of: astronomical-instruments
 ---

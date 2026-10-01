@@ -1,5 +1,5 @@
 ---
-title: "Hu Zhang"
+name: "Hu Zhang"
 type: "term"
 date-created: 2026-04-02
 ---

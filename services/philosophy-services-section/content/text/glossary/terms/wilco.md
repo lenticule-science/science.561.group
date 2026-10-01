@@ -1,6 +1,6 @@
 ---
 id: d68f2732-b1d6-43e1-887f-ff2aec3590f4
-title: Wilco
+name: Wilco
 date-created: 2025-08-26
 type: music artist
 visibility: public

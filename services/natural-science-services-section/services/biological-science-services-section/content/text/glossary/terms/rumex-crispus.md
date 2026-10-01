@@ -1,5 +1,5 @@
 ---
-title: "Rumex crispus"
+name: "Rumex crispus"
 aliases:
   - yellow dock
   - curly dock

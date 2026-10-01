@@ -1,6 +1,6 @@
 ---
 id: 6650a5e4-91cd-4374-97e2-b79b4071d874
-title: individual freedom
+name: individual freedom
 date-created: 2025-08-30
 type: concept
 visibility: public

@@ -1,7 +1,7 @@
 ---
 id: d22b6d4f-05fb-4f28-9db9-b63871e60251
 roam-refs: "@lehne_reading_2015"
-title: Reading a Suspenseful Literary Text Activates Brain Areas Related to Social Cognition and Predictive Inference
+name: Reading a Suspenseful Literary Text Activates Brain Areas Related to Social Cognition and Predictive Inference
 date-created: 2025-10-08
 ---
 

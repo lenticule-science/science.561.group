@@ -10,7 +10,7 @@ see-also:
   - translation.md
   - specialization.md
   - references/halliday1978.md
-title: Codeswitching
+name: Codeswitching
 description: The per-utterance operation by which a sign-act produced under one code within a federated semiotic system invokes a portion produced under a different code, without translating between the two codes — the recipient is presumed to operate…
 ---
 

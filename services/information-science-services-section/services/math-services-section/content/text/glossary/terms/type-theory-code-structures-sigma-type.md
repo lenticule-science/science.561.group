@@ -4,7 +4,7 @@ class: type-former
 status: current
 depends-on: [product-type, binder, universe]
 symbol: "\\Sigma(x : A).\\,B(x)"
-title: Sigma type
+name: Sigma type
 description: "A Sigma type $\\Sigma(x : A).\\,B(x)$ is the type of dependent pairs: pairs $(a, b)$ where $a : A$ and $b : B(a)$ — the type of the second component may depend on the value of the first."
 ---
 

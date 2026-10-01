@@ -30,7 +30,6 @@ references:
     issue: 3
     pages: "1265-1275"
     url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC9258740/"
-title: Community Clinic
 tags:
 - disaster-studies
 - community-health

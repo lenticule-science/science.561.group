@@ -1,5 +1,5 @@
 ---
-title: "Coordination Mechanism"
+name: "Coordination Mechanism"
 description: "Henry Mintzberg's term for the basic means by which organizations coordinate the work of their members — mutual adjustment, direct supervision, standardization of work processes, standardization of outputs, standardization of skills, and standardization of norms. The elementary vocabulary of organizational design, with each mechanism appropriate to different complexity, scale, and uncertainty conditions."
 defines: coordination-mechanism
 related: [bureaucracy, scientific-management, role, capability, work-type, labor-process]

@@ -1,6 +1,6 @@
 ---
 id: 8748fadd-0b0a-40f7-80e7-12212f5a43be
-title: political activism
+name: political activism
 date-created: 2025-08-25
 ---
 

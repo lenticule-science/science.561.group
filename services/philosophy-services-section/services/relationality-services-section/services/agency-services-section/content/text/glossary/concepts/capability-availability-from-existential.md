@@ -8,7 +8,7 @@ description: "The capability-availability fiber $\\mathrm{avail}^C : C \\to \\ma
 
 # Capability availability as the existential adjoint over agents
 
-The *capability-availability* fiber $\mathrm{avail}^C : C \to \mathbf{FOUR}$ — recording, for each capability $c$, whether *some agent* in the working community provides $c$ — is the value of the [knowledge-order existential adjoint](../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/predicated-work-services-section/content/glossary/terms/quantifier-adjoints-on-work-fibers.md) $\exists_f^k$ on the `provides-capability` fiber, where $f$ is the subject-projection morphism collapsing the agent argument.
+The *capability-availability* fiber $\mathrm{avail}^C : C \to \mathbf{FOUR}$ — recording, for each capability $c$, whether *some agent* in the working community provides $c$ — is the value of the [knowledge-order existential adjoint](../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/predicated-work-services-section/content/text/glossary/terms/quantifier-adjoints-on-work-fibers.md) $\exists_f^k$ on the `provides-capability` fiber, where $f$ is the subject-projection morphism collapsing the agent argument.
 
 Equivalently, $\mathrm{avail}^C = \pi^\exists \sigma$, where $\pi^\exists$ is the [project-fiber-to-capability](../terms/project-fiber-to-capability.md) morphism.
 

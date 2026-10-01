@@ -1,6 +1,6 @@
 ---
 author: emsenn
-title: Thoughts on Free Software Developers
+name: Thoughts on Free Software Developers
 aliases:
   - thoughts-on-free-software-developers
 specialization: research

@@ -1,5 +1,5 @@
 ---
-title: "Chinese Aerophone Predication Framework"
+name: "Chinese Aerophone Predication Framework"
 description: "Framework for understanding Chinese aerophones through predication theory"
 type: definition
 date-created: 2026-05-12

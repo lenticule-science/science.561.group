@@ -1,6 +1,6 @@
 ---
 id: 9fee0f36-1b36-43c7-b896-14b6700c7738
-title: person
+name: person
 date-created: 2025-08-25
 aliases:
   - Person

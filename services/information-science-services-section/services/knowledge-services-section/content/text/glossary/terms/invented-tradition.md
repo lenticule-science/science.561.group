@@ -1,6 +1,6 @@
 ---
 id: a04828a5-add1-4eac-be54-63d32938cfd0
-title: invented tradition
+name: invented tradition
 date-created: 2025-09-20
 ---
 

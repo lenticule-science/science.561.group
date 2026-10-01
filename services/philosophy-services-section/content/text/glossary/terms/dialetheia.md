@@ -12,7 +12,6 @@ keywords:
 contrasts-with: bivalence
 instance-of: polyvalence
 analogous-to: catuskoti
-title: "Dialetheia"
 tags:
   - logic
 defines:

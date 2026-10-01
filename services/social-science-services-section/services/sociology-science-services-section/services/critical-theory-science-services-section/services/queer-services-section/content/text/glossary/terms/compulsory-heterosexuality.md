@@ -9,7 +9,6 @@ keywords:
   - gender-theory
   - feminism
 description: "The institution — not merely the practice — through which women's labor, sexuality, and relational life are organized for men's benefit."
-title: "Compulsory Heterosexuality"
 type: term
 tags:
   - GenderTheory

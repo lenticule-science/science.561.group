@@ -1,5 +1,5 @@
 ---
-title: "Global"
+name: "Global"
 identity: global
 description: "Global is external observation: the perspective that extracts what can be seen from outside — the features consistently defined across the entire relational configuration."
 date-created: 2026-03-04

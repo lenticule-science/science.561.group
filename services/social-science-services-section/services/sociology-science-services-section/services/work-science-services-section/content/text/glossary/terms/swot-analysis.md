@@ -11,7 +11,6 @@ component-of: market-analysis
 requires: competitive-analysis
 produces: risk-mitigation
 enables: marketing-plan
-title: "SWOT Analysis"
 date-modified: 2026-03-09
 ---
 

@@ -1,6 +1,6 @@
 ---
 id: 8e7b3a84-6cfd-4532-8811-1ebca8b575a0
-title: Pollyanna
+name: Pollyanna
 date-created: 2025-07-22
 ---
 

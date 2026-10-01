@@ -7,7 +7,6 @@ measures: impression
 factors-through: [impression, conversion-rate]
 enables: [affiliate-marketing, programmatic-advertising]
 date-created: 2026-03-29
-title: "Click-Through Rate"
 defines: Click-Through Rate
 date-updated: 2026-03-29
 ---

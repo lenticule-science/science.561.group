@@ -5,7 +5,7 @@ date-created: \[2025-03-15 Sat\]
 id: 842af495-dc21-4fda-94fb-4ae965f62fac
 roam-refs: "https://emsenn.substack.com/p/the-network-effect"
 substack-subtitle: Facebook, Russia, and the long road to now
-title: The Network Effect
+name: The Network Effect
 visibility: public
 type: letter to the web
 aliases:

@@ -1,5 +1,5 @@
 ---
-title: "Character"
+name: "Character"
 type: "page"
 date-created: 2026-03-20
 description: "A Character is a pair (χ, Fχ) — an internal nuclear endomorphism χ : H → H in the relational universe R distinct from the normative nuclei σ and Δ, and the fixed sub-Heyting-algebra Fχ = Fix(χ) ⊆ H it determines — such that Fχ is the…"

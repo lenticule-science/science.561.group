@@ -22,7 +22,6 @@ references:
 defines:
   - race
   - racialization
-title: "Race"
 ---
 
 Race is a system of classification that assigns human populations to hierarchically ranked categories based on phenotype, ancestry, or geographic origin. The critical insight of modern scholarship is that race is not a biological reality but a political technology — a way of organizing domination that produces the categories it claims to discover.

@@ -8,7 +8,6 @@ aliases:
 keywords:
   - anarchism
 description: "Anarcho-nihilism's analysis of hope as a political requirement — the demand that resistance justify itself through the expectation of a better future, which functions as a gatekeeping mechanism that excludes the honest, the traumatized, and the clear-eyed, and renders resistance dependent on a psychological state the existing order systematically undermines."
-title: "Hope"
 type: term
 tags:
   - Anarchism

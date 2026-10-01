@@ -87,7 +87,6 @@ ast:
         - value-presheaf
     - value-presheaf:
         - object-type
-title: "Quality"
 description: "Any aspect of a thing that can be observed, measured, or distinguished — from Aristotle's four species through Locke's primary/secondary distinction to Whitehead's eternal objects and Deleuze's intensive differences."
 defines: quality
 date-modified: 2026-04-06

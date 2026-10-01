@@ -1,6 +1,6 @@
 ---
 id: 50fa005c-10b2-4fbd-a295-05dee84bf876
-title: Korean house
+name: Korean house
 aliases:
   - Korean house
 date-created: 2025-07-22

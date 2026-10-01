@@ -15,7 +15,6 @@ references:
     title: Decolonization is not a metaphor
     publication: "Decolonization: Indigeneity, Education & Society 1(1)"
     year: 2012
-title: "Settler Moves to Innocence"
 type: term
 defines:
   - "Settler Moves to Innocence"

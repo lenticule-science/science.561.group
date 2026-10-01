@@ -1,6 +1,6 @@
 ---
 id: 1ab7db61-eb25-4490-ba77-165a00be53b8
-title: InfoPonEmacs Homepage
+name: InfoPonEmacs Homepage
 ---
 
 This is the project homepage for InfoPonEmacs, my Emacs configuration

@@ -17,7 +17,7 @@ description: The polity's response-to-harm subsystem.
 The polity's response-to-harm subsystem.
 The structural commitment: the polity has *no* closure rules that produce confinement-cells, sanction-cells-with-carry-over, or punitive-installation-cells.
 The response-to-harm subsystem produces only *relation-repair* cells.
-This subsystem is the specialization of [restorative-accountability](../../../../../../../../../../../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/predicated-work-services-section/services/predicated-governance-services-section/content/glossary/terms/restorative-accountability.md) to the Lakota polity-cell-system.
+This subsystem is the specialization of [restorative-accountability](../../../../../../../../../../../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/predicated-work-services-section/services/predicated-governance-services-section/content/text/glossary/terms/restorative-accountability.md) to the Lakota polity-cell-system.
 
 ## Structural commitment
 

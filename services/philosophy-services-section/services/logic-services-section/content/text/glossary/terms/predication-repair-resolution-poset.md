@@ -4,7 +4,7 @@ class: poset
 symbol: "W"
 depends-on: [inconsistency-sheaf, paraconsistent-equality, four-bilattice, knowledge-order]
 see-also: [bigraded-settling-cohomology, settling-monotonicity, closure-2-monad-lax-idempotence]
-title: Repair-resolution poset
+name: Repair-resolution poset
 description: A repair-resolution poset $W = (\{\textsf{open}, \textsf{proposed}, \textsf{resolved}, \textsf{archived}\}, \leW)$ is the four-element forward-only poset of states a $\top$-cell witness in the inconsistency sheaf may occupy as it…
 ---
 

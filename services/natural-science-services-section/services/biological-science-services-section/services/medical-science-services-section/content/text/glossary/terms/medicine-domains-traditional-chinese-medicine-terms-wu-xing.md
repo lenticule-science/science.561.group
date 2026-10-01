@@ -1,5 +1,5 @@
 ---
-title: "Wu Xing (Five Phases)"
+name: "Wu Xing (Five Phases)"
 type: "term"
 date-created: 2026-03-06
 ---

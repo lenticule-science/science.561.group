@@ -1,6 +1,6 @@
 ---
 id: 9a68444f-a358-4206-b3fc-cf7e7c5c999b
-title: diagnostic process
+name: diagnostic process
 date-created: 2025-09-03
 type: process
 visibility: public

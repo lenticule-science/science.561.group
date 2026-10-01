@@ -12,7 +12,7 @@ description: Completion-as-quiescence characterizes task completion as the settl
 
 ## Why abandonment is not completion's negation
 
-In the four-bilattice, the completion cell $\langle T, \texttt{complete}\rangle$ progresses from $\bot$ (not yet determined) toward $\mathbf{t}$ (completed) as evidence accumulates via [witness-as-increment](../../../../../../services/predicated-work-services-section/content/glossary/terms/witness-as-increment.md). The cell can also land at $\mathbf{f}$ (task definitively not complete — declared failed) or $\top$ (contested completion). Abandonment cannot simply be $\langle T, \texttt{complete}\rangle = \mathbf{f}$: that would mean the task is *declared failed*, not *deliberately stopped*. Abandonment is a third normative act distinct from both failure and completion.
+In the four-bilattice, the completion cell $\langle T, \texttt{complete}\rangle$ progresses from $\bot$ (not yet determined) toward $\mathbf{t}$ (completed) as evidence accumulates via [witness-as-increment](../../../../../../services/predicated-work-services-section/content/text/glossary/terms/witness-as-increment.md). The cell can also land at $\mathbf{f}$ (task definitively not complete — declared failed) or $\top$ (contested completion). Abandonment cannot simply be $\langle T, \texttt{complete}\rangle = \mathbf{f}$: that would mean the task is *declared failed*, not *deliberately stopped*. Abandonment is a third normative act distinct from both failure and completion.
 
 One candidate: a distinct abandonment cell $\langle T, \texttt{abandoned}\rangle = \mathbf{t}$, installed by a deliberate act with governance standing, that triggers closure rules blocking further work-increment on $T$.
 

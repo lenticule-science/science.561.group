@@ -43,5 +43,5 @@ Tendergreen is the widely grown American selection, producing smooth, tender lea
 ## See also
 
 - [Brassicaceae](../terms/brassicaceae.md)
-- [Mustard greens cultivation](../../../../../../../../../domestic-science-services-section/services/domestic-production-services-section/services/gardening-services-section/content/glossary/terms/mustard-greens.md)
+- [Mustard greens cultivation](../../../../../../../../../domestic-science-services-section/services/domestic-production-services-section/services/gardening-services-section/content/text/glossary/terms/mustard-greens.md)
 - [Bolting in leafy greens](../ecology/terms/bolting-vernalization.md)

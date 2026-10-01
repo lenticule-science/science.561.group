@@ -5,7 +5,7 @@ author: "Frantz Fanon"
 id: 2fcf1671-a1d0-4847-a462-97baa0132ac2
 publication-year: "1952"
 publisher: "Seuil"
-title: Peau noire, masques blancs
+name: Peau noire, masques blancs
 date-created: 2025-09-25
 visibility: public
 type: book

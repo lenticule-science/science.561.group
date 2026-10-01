@@ -1,5 +1,5 @@
 ---
-title: "Damp-Heat"
+name: "Damp-Heat"
 type: "term"
 date-created: 2026-04-02
 ---

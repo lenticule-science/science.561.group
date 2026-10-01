@@ -7,7 +7,6 @@ aliases:
 tags: []
 description: "The strategy of building alternative institutions — food systems, mutual aid networks, conflict resolution, cooperative economies — that meet real needs outside the state and capitalism, making existing power arrangements unnecessary rather than seizing them."
 part-of: sociology/schools/anarchism/topics/strategy/terms
-title: "Dual Power"
 defines:
   - "Dual Power"
   - "counter-power"

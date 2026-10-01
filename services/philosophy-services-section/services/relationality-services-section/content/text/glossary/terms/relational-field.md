@@ -4,7 +4,6 @@ description: "The totality of relational entities, their states, and the relatio
 date-created: 2026-04-28
 aliases:
   - relational field
-title: "Relational Field"
 defines:
   - relational field
 related:

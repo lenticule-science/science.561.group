@@ -1,5 +1,5 @@
 ---
-title: "Possible World"
+name: "Possible World"
 aliases:
   - "possible world"
   - "possible worlds"

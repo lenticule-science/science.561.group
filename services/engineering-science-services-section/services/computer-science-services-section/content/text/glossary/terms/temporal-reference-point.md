@@ -1,6 +1,6 @@
 ---
 id: cad4dbdc-a8b7-4a1a-abdb-bdd40cb1276a
-title: temporal reference point
+name: temporal reference point
 date-created: 2025-10-21
 ---
 

@@ -14,7 +14,6 @@ keywords:
   - subscriptions
   - metrics
 part-of: business/theories/web/terms
-title: "Churn Rate"
 type: term
 tags:
   - Business

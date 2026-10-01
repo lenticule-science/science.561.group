@@ -29,7 +29,6 @@ references:
     issued:
       - year: 1970
 visibility: public
-title: praxis
 ---
 
 [Praxis](praxis.md) is the unity of reflection and action — thought that leads to action, action that is informed by thought, and the ongoing cycle between them. The concept is central to [Paulo Freire](../../../../../../general/people/paulo-freire.md)'s pedagogy and to the broader [critical pedagogy](../../../../../../content/text/glossary/schools/critical-pedagogy/index.md) tradition [@freire_PedagogyOppressed_1970].

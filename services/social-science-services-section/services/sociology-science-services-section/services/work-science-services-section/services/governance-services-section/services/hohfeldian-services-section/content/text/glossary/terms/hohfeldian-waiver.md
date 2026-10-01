@@ -60,7 +60,7 @@ Formal implied waiver requires the forum's σ-settlement of the "waived" proposi
 
 ## Waiver and estoppel
 
-Waiver and equitable estoppel ([Estoppel](../../../../../../../predicated-work-services-section/services/predicated-governance-services-section/content/glossary/terms/estoppel.md), if specified) both result in a party being unable to assert a right.
+Waiver and equitable estoppel ([Estoppel](../../../../../../../predicated-work-services-section/services/predicated-governance-services-section/content/text/glossary/terms/estoppel.md), if specified) both result in a party being unable to assert a right.
 The distinction:
 
 - **Waiver**: $Q$ voluntarily relinquishes $C$; $C$ is extinguished; the right is gone.

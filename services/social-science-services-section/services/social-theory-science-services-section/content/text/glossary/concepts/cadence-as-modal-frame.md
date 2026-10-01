@@ -14,7 +14,7 @@ Sharpens [cadence](../../documents/articles/research/2026/07/31/lenticule-import
 
 ## The cadence frame
 
-Let $R = (\mathcal{S}_R, T_R, \alpha_R)$ be a [recurrent practice](../../../../../sociology-science-services-section/services/work-science-services-section/services/predicated-work-services-section/content/glossary/terms/recurrent-practice.md) with cycle-boundary ordinals $T_R = \{\tau_0, \tau_1, \tau_2, \ldots\}$. The *cadence frame* of $R$ is the bilattice accessibility relation $R^{\mathrm{cad}} \subseteq \lambda \times \lambda$ defined by
+Let $R = (\mathcal{S}_R, T_R, \alpha_R)$ be a [recurrent practice](../../../../../sociology-science-services-section/services/work-science-services-section/services/predicated-work-services-section/content/text/glossary/terms/recurrent-practice.md) with cycle-boundary ordinals $T_R = \{\tau_0, \tau_1, \tau_2, \ldots\}$. The *cadence frame* of $R$ is the bilattice accessibility relation $R^{\mathrm{cad}} \subseteq \lambda \times \lambda$ defined by
 
 $$\sigma \,R^{\mathrm{cad}}\, \sigma' \;\iff\; \sigma' \geq \sigma \;\text{ and }\; (\exists n)\,\sigma' \in [\tau_n, \tau_{n+1}) \;\text{ and }\; \sigma \in [\tau_{n-k}, \tau_{n-k+1})\,\text{ for some }\,0 \leq k \leq h_R$$
 

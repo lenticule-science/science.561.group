@@ -1,6 +1,6 @@
 ---
 id: 67364976-f757-41b6-80ba-501628ca48ca
-title: instancing
+name: instancing
 date-created: 2025-09-06
 visibility: public
 type: act

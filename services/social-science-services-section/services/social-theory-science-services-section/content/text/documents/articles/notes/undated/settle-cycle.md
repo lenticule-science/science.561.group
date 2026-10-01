@@ -9,7 +9,7 @@ description: "The morphism $\\SigmaR : v^{\\mathrm{op}}{\\taun} \\mapsto v^{\\ma
 
 # Settle cycle
 
-The morphism $\Sigma_R : v^{\mathrm{op}}_{\tau_n} \mapsto v^{\mathrm{op}}_{\tau_{n+1}}$ advancing an [operations settling](../../../../../../../../../../../public-services-section/services/personal-services-section/services/emsenn-services-section/content/text/glossary/terms/operations-settling.md) by one cadence step of a [recurrent practice](../../../../../../../sociology-science-services-section/services/work-science-services-section/services/predicated-work-services-section/content/glossary/terms/recurrent-practice.md) $R = (\mathcal{S}_R, T_R, \alpha_R)$ — the substrate-algebraic *one-cycle-of-work* operator.
+The morphism $\Sigma_R : v^{\mathrm{op}}_{\tau_n} \mapsto v^{\mathrm{op}}_{\tau_{n+1}}$ advancing an [operations settling](../../../../../../../../../../../public-services-section/services/personal-services-section/services/emsenn-services-section/content/text/glossary/terms/operations-settling.md) by one cadence step of a [recurrent practice](../../../../../../../sociology-science-services-section/services/work-science-services-section/services/predicated-work-services-section/content/text/glossary/terms/recurrent-practice.md) $R = (\mathcal{S}_R, T_R, \alpha_R)$ — the substrate-algebraic *one-cycle-of-work* operator.
 
 ## Data
 
@@ -65,7 +65,7 @@ $$\exists^{k/t}_{p_A}(p_B^* \phi) \;\Rightarrow\; f^*(\exists^{k/t}_g \phi)$$
 
 is invertible. This means queries of the form "was there some sub-event within cycle $n$ satisfying condition $\phi$?" can be computed from either the pre-cycle or post-cycle states — the existential over sub-events commutes with the cycle's temporal advance. No coordination or round-tripping is needed: existential cycle-internal queries are temporally coherent.
 
-This is the operational ground for the [operations loop's](../../../../../../../sociology-science-services-section/services/work-science-services-section/services/predicated-work-services-section/content/glossary/terms/operations-loop.md) phase-level analysis: each phase's existential content ("did dispatch happen?", "did review occur?") is temporally BC-coherent across the cycle boundary.
+This is the operational ground for the [operations loop's](../../../../../../../sociology-science-services-section/services/work-science-services-section/services/predicated-work-services-section/content/text/glossary/terms/operations-loop.md) phase-level analysis: each phase's existential content ("did dispatch happen?", "did review occur?") is temporally BC-coherent across the cycle boundary.
 
 ## Normative changes at cycle boundaries
 
@@ -74,13 +74,13 @@ Cycle boundaries $\tau_n \in T_R$ are sites where normative changes frequently o
 At the cycle-start boundary $\tau_n$, two categories of increments are typical:
 
 1. *Operational increments*: task completions, new task openings, dispatch events, witness records. These are the standard Type O→O events.
-2. *Normative increments*: office rotations (per [rotational-authority](../../../../../../../sociology-science-services-section/services/work-science-services-section/services/predicated-work-services-section/services/predicated-governance-services-section/content/glossary/terms/rotational-authority.md)), charter-rule firing on violations detected in the prior cycle, installation of new incumbents. These are Type O→N and N→O events.
+2. *Normative increments*: office rotations (per [rotational-authority](../../../../../../../sociology-science-services-section/services/work-science-services-section/services/predicated-work-services-section/services/predicated-governance-services-section/content/text/glossary/terms/rotational-authority.md)), charter-rule firing on violations detected in the prior cycle, installation of new incumbents. These are Type O→N and N→O events.
 
 The settle-cycle morphism applies $\mathrm{cl}^{\mathcal{S}_R}$ over the full cycle's increments — both types — producing a settled state that updates both layers simultaneously. The normative changes at the cycle boundary propagate via the N→O rules into the next cycle's operational state (e.g., a new incumbent's authority cells are settled at the cycle boundary; dispatch-eligibility rules read those authority cells in the subsequent operational closure).
 
 ## Cycle witnesses and the audit log
 
-Per [witness-as-increment](../../../../../../../sociology-science-services-section/services/work-science-services-section/services/predicated-work-services-section/content/glossary/terms/witness-as-increment.md), each increment $u_\tau$ in $\bigvee_{\tau_n \leq \tau < \tau_{n+1}} u_\tau$ is a witness. The settle-cycle morphism's application of $\mathrm{cl}^{\mathcal{S}_R}$ produces additional witnesses (closure-rule-derived cells) layered on top of the direct increment-witnesses.
+Per [witness-as-increment](../../../../../../../sociology-science-services-section/services/work-science-services-section/services/predicated-work-services-section/content/text/glossary/terms/witness-as-increment.md), each increment $u_\tau$ in $\bigvee_{\tau_n \leq \tau < \tau_{n+1}} u_\tau$ is a witness. The settle-cycle morphism's application of $\mathrm{cl}^{\mathcal{S}_R}$ produces additional witnesses (closure-rule-derived cells) layered on top of the direct increment-witnesses.
 
 The cycle's audit log is the sequence of these witness-cells in chronological order of their stage $\tau$. A full audit of the cycle's events is a reading of the audit log; a compliance check is a check whether any charter-rule-derived violation-record cells appear in the log.
 

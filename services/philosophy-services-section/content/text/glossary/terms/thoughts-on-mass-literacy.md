@@ -1,6 +1,6 @@
 ---
 author: emsenn
-title: Thoughts on Mass Literacy
+name: Thoughts on Mass Literacy
 aliases:
   - thoughts-on-mass-literacy
 specialization: research

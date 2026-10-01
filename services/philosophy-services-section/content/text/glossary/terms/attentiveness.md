@@ -1,5 +1,5 @@
 ---
-title: "Attentiveness"
+name: "Attentiveness"
 description: "The first phase of Tronto's care model — the capacity to notice that care is needed, perceiving vulnerability without filtering through abstract principle or self-interest."
 date-created: 2026-03-05T00:00:00
 date-modified: 2026-03-29

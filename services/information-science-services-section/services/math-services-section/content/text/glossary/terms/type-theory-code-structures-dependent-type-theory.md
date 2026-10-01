@@ -5,7 +5,7 @@ status: current
 depends-on: [simply-typed-lambda-calculus, pi-type, sigma-type, identity-type, universe, inductive-type]
 realizes: [typing-judgment, inhabitation, universe-level]
 symbol: MLTT
-title: Dependent type theory
+name: Dependent type theory
 description: A dependent type theory is a type theory in which types may depend on values — the type of the second component of a pair may mention the first component, the output type of a function may mention the input.
 ---
 

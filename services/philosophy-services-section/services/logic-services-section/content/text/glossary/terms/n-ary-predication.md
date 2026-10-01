@@ -3,7 +3,7 @@ type: definition
 class: presheaf
 symbol: "v^{(n)}"
 depends-on: [predication-settling, predicate-category, entity-set, closure-2-monad]
-title: $n$-ary predication
+name: $n$-ary predication
 description: Generalizes predication categories' binary predication-cells ($E \times E$) to $n$-ary cells ($E^n$) for $n \geq 1$.
 kind: definition
 ---

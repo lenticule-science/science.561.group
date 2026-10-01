@@ -1,6 +1,6 @@
 ---
 id: a13e23bb-8a68-4ed2-91a4-c0fab19ba825
-title: Midsummer
+name: Midsummer
 date-created: 2025-09-05
 visibility: public
 ---

@@ -1,5 +1,5 @@
 ---
-title: "alea"
+name: "alea"
 type: "term"
 date-created: 2026-03-06
 ---

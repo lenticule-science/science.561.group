@@ -9,7 +9,7 @@ description: A worked instance of a recurrent practice whose closure rules genui
 
 # Generational review as transfinite-bounded recurrence
 
-A worked instance of a [recurrent practice](../terms/recurrent-practice.md) whose closure rules genuinely *limit-aggregate* across all prior cycles, placing the practice in the [transfinite-bounded regime](./regime-of-recurrent-practice.md) ($\omega < \kappa < \omega_1$). The practice: an *N-yearly state-of-the-function review* (e.g., a generational review every 25 years for a multi-generational endeavor) whose closure rule is *not* finite-history but reads aggregations across all prior cycles cumulatively.
+A worked instance of a [recurrent practice](../../text/glossary/terms/recurrent-practice.md) whose closure rules genuinely *limit-aggregate* across all prior cycles, placing the practice in the [transfinite-bounded regime](./regime-of-recurrent-practice.md) ($\omega < \kappa < \omega_1$). The practice: an *N-yearly state-of-the-function review* (e.g., a generational review every 25 years for a multi-generational endeavor) whose closure rule is *not* finite-history but reads aggregations across all prior cycles cumulatively.
 
 This is the worked counterpart to [weekly-calendar-as-recurrent-practice](../../../../../../../../../../../../public-services-section/services/personal-services-section/services/emsenn-services-section/content/text/documents/articles/essays/weekly-calendar-as-recurrent-practice.md): same shape (a recurrent-practice triple) but a different aggregation structure that lifts the regime above Scott-continuous.
 
@@ -62,7 +62,7 @@ This depth-$n$ variant is a [step-$n$ recurrent practice](../../../../../../../.
 | All-prior (limit-aggregating) | Limit-aggregating | Transfinite-bounded | Non-trivial, LES-computed |
 | Uncountable cofinality | Limit-aggregating, uncountable | Aperiodic | Firing-ordinal class |
 
-The Haudenosaunee seven-generation principle (see [consensus-closure](../../../services/predicated-governance-services-section/content/glossary/terms/consensus-closure.md)) sits at the depth-$7$ variant: each decision is evaluated against its consequences seven generations forward.
+The Haudenosaunee seven-generation principle (see [consensus-closure](../../../services/predicated-governance-services-section/content/text/glossary/terms/consensus-closure.md)) sits at the depth-$7$ variant: each decision is evaluated against its consequences seven generations forward.
 As a recurrent practice, the seven-generation review has depth-$7$ antecedents (finite-history, $n = 7$) and is Scott-continuous — but its step-$7$ combinatorial dynamics produce a Perron-Frobenius-governed long-term frequency pattern, giving non-trivial step-$7$ classifying invariant $\mathrm{cl}\text{-}\mathrm{inv}^{(7)} \in \mathbb{Z}^7$.
 This is a structurally distinct $H^1$-class from the all-prior limit-aggregating generational review: two routes to non-trivial cohomology via different mechanisms.
 

@@ -18,7 +18,6 @@ ast:
             - identity
     - relation-set:
         - identity
-title: "Relational Entity"
 defines:
   - relational entity
   - relational unit

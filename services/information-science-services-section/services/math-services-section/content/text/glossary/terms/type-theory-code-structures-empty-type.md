@@ -4,7 +4,7 @@ class: type-former
 status: current
 depends-on: [typing-judgment]
 symbol: \mathbf{0}
-title: Empty type
+name: Empty type
 description: The empty type $\mathbf{0}$ (also $\bot$) is the type with no inhabitants.
 ---
 

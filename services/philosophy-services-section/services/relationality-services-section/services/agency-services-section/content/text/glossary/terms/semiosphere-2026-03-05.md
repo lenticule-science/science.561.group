@@ -1,5 +1,5 @@
 ---
-title: "semiosphere"
+name: "semiosphere"
 aliases:
   - "semiosphere"
 date-created: 2026-03-05

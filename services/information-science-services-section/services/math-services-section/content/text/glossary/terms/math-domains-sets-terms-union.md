@@ -1,5 +1,5 @@
 ---
-title: "Union"
+name: "Union"
 type: "term"
 date-created: 2025-12-26
 ---

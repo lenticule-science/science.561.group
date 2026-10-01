@@ -4,7 +4,7 @@ class: predicate-category-schema
 status: sketch
 depends-on: [predicate-category, predicated-knowledge-system]
 see-also: [four-group-register-as-fibration]
-title: Upper ontology as predicate vocabulary
+name: Upper ontology as predicate vocabulary
 description: "An upper ontology (BFO, DOLCE, SUMO, Cyc) is, in the predicated framing, a predicate-category schema: a chosen partial structure on the predicate category $\\mathcal{C}$ of a predicated knowledge system, naming a small set of top-level…"
 ---
 

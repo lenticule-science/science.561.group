@@ -1,5 +1,5 @@
 ---
-title: "Bounded Rationality"
+name: "Bounded Rationality"
 description: "Herbert Simon's concept that real decision-makers operate under cognitive, informational, and time constraints that preclude classical optimization, instead engaging in satisficing — searching the alternative space until a 'good enough' option is found rather than identifying the global optimum."
 defines: bounded-rationality
 related: [satisficing, organizational-search, dispatch, planning, capability]

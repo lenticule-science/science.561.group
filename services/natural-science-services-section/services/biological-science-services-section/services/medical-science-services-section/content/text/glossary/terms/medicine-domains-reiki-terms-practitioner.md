@@ -1,5 +1,5 @@
 ---
-title: "Practitioner"
+name: "Practitioner"
 type: "term"
 date-created: 2025-12-31
 ---

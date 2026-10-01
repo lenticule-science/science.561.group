@@ -1,5 +1,5 @@
 ---
-title: "M1: Governance terms complete"
+name: "M1: Governance terms complete"
 specialization: milestone
 date-created: 2026-04-03
 plan: agent-governance-enrichment

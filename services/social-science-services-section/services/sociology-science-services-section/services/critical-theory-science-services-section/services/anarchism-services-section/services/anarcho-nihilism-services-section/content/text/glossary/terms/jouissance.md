@@ -8,7 +8,6 @@ keywords:
   - anarchism
   - psychoanalysis
 description: "The excessive, transgressive pleasure of resistance that operates beyond instrumental calculation — drawn from Lacanian psychoanalysis and developed here as the affective ground of anarcho-nihilist action."
-title: "Jouissance"
 type: term
 tags:
   - Anarchism

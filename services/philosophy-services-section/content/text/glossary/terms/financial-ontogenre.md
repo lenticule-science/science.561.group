@@ -1,6 +1,6 @@
 ---
 id: 5e00d51f-4f3d-422a-9071-f8273c33099e
-title: financial ontogenre
+name: financial ontogenre
 date-created: 2025-08-29
 ---
 

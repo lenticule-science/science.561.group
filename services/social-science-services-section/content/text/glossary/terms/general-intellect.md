@@ -1,5 +1,4 @@
 ---
-title: "General Intellect"
 description: "Marx's term, in the Grundrisse's 'Fragment on Machines,' for the socialized knowledge, scientific capacity, and accumulated cooperative intelligence of humanity that becomes a direct productive force as production becomes increasingly machine-mediated and knowledge-intensive. The post-operaismo tradition's foundational concept for theorizing cognitive capitalism and immaterial labor."
 defines: general-intellect
 related: [immaterial-labor, real-subsumption, labor-process, multitude, social-factory]

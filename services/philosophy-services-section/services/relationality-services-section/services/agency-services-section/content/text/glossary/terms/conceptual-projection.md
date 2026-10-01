@@ -4,7 +4,7 @@ class: lattice-quotient
 status: stable
 depends-on: [formal-context, concept-lattice]
 see-also: [scale-measure, apposition]
-title: Conceptual projection
+name: Conceptual projection
 description: The operation by which a sub-vocabulary of attributes induces a quotient on the concept lattice.
 ---
 

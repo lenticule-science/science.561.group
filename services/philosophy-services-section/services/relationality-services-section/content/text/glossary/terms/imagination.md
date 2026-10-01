@@ -2,7 +2,7 @@
 aliases:
 - Einbildungskraft
 id: 5fd154b5-9358-438e-9b93-8f19590bbe97
-title: imagination
+name: imagination
 date-created: 2025-08-26
 visibility: public
 type: thinking

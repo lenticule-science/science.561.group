@@ -1,5 +1,5 @@
 ---
-title: "Virtual Posting"
+name: "Virtual Posting"
 aliases:
   - "Virtual Posting"
   - "virtual posting"

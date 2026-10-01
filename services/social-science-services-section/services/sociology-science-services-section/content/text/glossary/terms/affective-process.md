@@ -1,6 +1,6 @@
 ---
 id: 68f012c1-4853-4483-8154-31c629f52a88
-title: affective process
+name: affective process
 aliases:
   - affective process
   - Affective Process

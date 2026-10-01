@@ -1,5 +1,5 @@
 ---
-title: "Effort"
+name: "Effort"
 description: "The potential work time an agent spends on a task — distinct from wall-clock duration and from total available capacity."
 defines: effort
 date-created: 2026-04-04

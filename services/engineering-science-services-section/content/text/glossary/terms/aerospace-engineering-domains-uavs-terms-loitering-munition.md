@@ -1,5 +1,5 @@
 ---
-title: "Loitering Munition"
+name: "Loitering Munition"
 type: "term"
 date-created: 2026-03-06
 ---

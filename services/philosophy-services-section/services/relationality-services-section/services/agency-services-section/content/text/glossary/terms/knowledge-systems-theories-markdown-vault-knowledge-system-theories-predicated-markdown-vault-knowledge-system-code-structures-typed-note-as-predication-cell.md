@@ -13,7 +13,7 @@ realizes:
   - teaching/explanations/note.md
 see-also:
   - relation-graph.md
-title: Typed note as predication cell
+name: Typed note as predication cell
 description: The formal identification of a typed note with a predication-cell on the substrate.
 ---
 

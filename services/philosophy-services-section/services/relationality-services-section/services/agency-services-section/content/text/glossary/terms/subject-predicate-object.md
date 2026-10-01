@@ -1,5 +1,5 @@
 ---
-title: "emsenn.net"
+name: "emsenn.net"
 type: "triple"
 date-created: 2026-03-30
 description: "The basic structure of an assertion: a subject, a predicate relating it to an object, and the object."

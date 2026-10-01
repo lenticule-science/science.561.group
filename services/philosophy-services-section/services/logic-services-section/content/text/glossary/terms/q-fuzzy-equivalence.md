@@ -2,7 +2,7 @@
 kind: definition
 type: equivalence
 depends-on: [quantale-enriched-sheaf, quantale-enriched-cosheaf]
-title: q-fuzzy equivalence in $\mathbf{Q\text{-}Cat}{\mathrm{cwl}}$
+name: q-fuzzy equivalence in $\mathbf{Q\text{-}Cat}{\mathrm{cwl}}$
 description: The Q-enriched analogue of categorical equivalence, allowing for quantale-graded error.
 ---
 

@@ -6,7 +6,7 @@ symbol: O
 depends-on: [execution-event, task-cell-system, predication-cell]
 realizes: [observation]
 see-also: [finding, execution-event, audit-as-cech-resolution-of-operations-settling]
-title: Observation
+name: Observation
 description: "The substrate-entity produced by the tracking stage: a derived reading of the work substrate's state at a point in time."
 ---
 

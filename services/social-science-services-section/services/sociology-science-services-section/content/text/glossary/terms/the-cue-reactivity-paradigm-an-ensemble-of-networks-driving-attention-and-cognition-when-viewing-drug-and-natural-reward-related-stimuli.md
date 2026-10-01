@@ -1,6 +1,6 @@
 ---
 id: dd36fee2-e077-4ad4-b384-caba49532d8b
-title: "The cue-reactivity paradigm: An ensemble of networks driving attention and cognition when viewing drug and natural reward-related stimuli"
+name: "The cue-reactivity paradigm: An ensemble of networks driving attention and cognition when viewing drug and natural reward-related stimuli"
 date-created: 2025-10-08
 ---
 

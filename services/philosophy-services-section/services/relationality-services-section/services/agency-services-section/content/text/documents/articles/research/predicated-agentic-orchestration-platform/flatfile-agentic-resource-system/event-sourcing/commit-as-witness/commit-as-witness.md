@@ -20,7 +20,7 @@ title: commit-as-witness
 # Commit as witness
 
 The bridge between a git substrate's *commit events* and a FARS substrate's *witness chain*.
-A commit is the canonical externally-recorded operational event in a flatfile substrate that lives inside a git working tree; the predicated-work [witness-as-increment correspondence](../../../../../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/predicated-work-services-section/content/glossary/terms/witness-as-increment.md) demands that every such operational event correspond to an [increment](../../../../../../../../../../../humanities/theories/math/theories/categories/theories/predication-categories/objects/increment-sequence.md) cell in the [operations settling](../../../../../../../../../../../../../../../../public-services-section/services/personal-services-section/services/emsenn-services-section/content/text/glossary/terms/operations-settling.md).
+A commit is the canonical externally-recorded operational event in a flatfile substrate that lives inside a git working tree; the predicated-work [witness-as-increment correspondence](../../../../../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/predicated-work-services-section/content/text/glossary/terms/witness-as-increment.md) demands that every such operational event correspond to an [increment](../../../../../../../../../../../humanities/theories/math/theories/categories/theories/predication-categories/objects/increment-sequence.md) cell in the [operations settling](../../../../../../../../../../../../../../../../public-services-section/services/personal-services-section/services/emsenn-services-section/content/text/glossary/terms/operations-settling.md).
 This concept names the correspondence at the FARS substrate.
 
 ## The correspondence
@@ -45,7 +45,7 @@ Snapshot and merge commits are accounted for in their own buckets so the worklis
 ### Binding (substantive commits only)
 
 A substantive commit's increment cell shape is determined by *two complementary witness sources* — the **message** (the agent's claim about what the commit does) and the **diff** (the substrate's observation of what files changed).
-Per [witness-as-increment](../../../../../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/predicated-work-services-section/content/glossary/terms/witness-as-increment.md), the agent's claim is a witness candidate but the substrate-observed event is the stronger witness; this concept therefore treats both as load-bearing rather than treating the message as authoritative and the diff as auxiliary.
+Per [witness-as-increment](../../../../../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/predicated-work-services-section/content/text/glossary/terms/witness-as-increment.md), the agent's claim is a witness candidate but the substrate-observed event is the stronger witness; this concept therefore treats both as load-bearing rather than treating the message as authoritative and the diff as auxiliary.
 
 **Source 1 — message bindings.** Slugs named in the commit's subject + body, parsed under the four reference rules in the next section.
 

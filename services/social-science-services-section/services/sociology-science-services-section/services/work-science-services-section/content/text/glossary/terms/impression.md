@@ -13,7 +13,6 @@ keywords:
   - advertising
   - metrics
 part-of: business/theories/web/terms
-title: "Impression"
 type: term
 tags:
   - Business

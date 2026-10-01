@@ -29,7 +29,6 @@ references:
     publication: "Mutual Aid Disaster Relief"
     year: 2022
     url: "https://mutualaiddisasterrelief.org/join/"
-title: Collective Care
 tags:
 - disaster-studies
 - care-work

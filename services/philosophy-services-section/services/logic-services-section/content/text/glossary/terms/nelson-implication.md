@@ -13,7 +13,7 @@ simple-contrapositive: fails-on-bilattice
 introduced-by: chajda-langer-2021
 generalized-by: [busaniche-galatos-marcos-2022, rivieccio-busaniche-2024]
 date-created: 2026-03-30
-title: Logic code transformers nelson implication
+name: Logic code transformers nelson implication
 ---
 
 The Nelson implication is an implication operation on [bilattices](../../documents/articles/research/2026/07/algebra/objects/bilattice.md) and [twist products](../../../../../../../information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/obsmetrologia/docs/verso/mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/residuated-lattice/content/twist-product/twist-product.md) that incorporates both direct and contrapositive reasoning simultaneously:

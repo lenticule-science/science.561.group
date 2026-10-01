@@ -1,5 +1,5 @@
 ---
-title: "Quasi-Event"
+name: "Quasi-Event"
 description: "Povinelli's term for a disturbance that appears to open possibility but is already embedded in the logic of its own containment — a managed deviation that restores prior order under the appearance of having confronted something."
 date-created: 2026-03-05
 date-modified: 2026-03-29

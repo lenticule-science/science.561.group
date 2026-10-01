@@ -33,4 +33,4 @@ In wild populations across northern Asia and North America, *A. schoenoprasum* i
 
 ## See also
 
-- [Chive cultivation](../../../../../../../../../../../domestic-science-services-section/services/domestic-production-services-section/services/gardening-services-section/content/glossary/terms/chive-cultivation.md)
+- [Chive cultivation](../../../../../../../../../../../domestic-science-services-section/services/domestic-production-services-section/services/gardening-services-section/content/text/glossary/terms/chive-cultivation.md)

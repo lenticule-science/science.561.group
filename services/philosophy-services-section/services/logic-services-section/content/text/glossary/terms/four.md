@@ -9,7 +9,7 @@ see-also:
 references:
   - Belnap 1977
   - Hyland 1982
-title: FOUR — the bilattice of computational truth values
+name: FOUR — the bilattice of computational truth values
 description: $\mathbf{FOUR} \cong \mathbf{2} \times \mathbf{2}$ is the bilattice of external computational truth values.
 ---
 

@@ -20,7 +20,6 @@ references:
     title: "The Ontological Turn: An Anthropological Exposition"
     publication: "Cambridge University Press"
     year: 2017
-title: "Ontological Turn"
 type: term
 defines:
   - "Ontological Turn"

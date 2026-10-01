@@ -1,5 +1,5 @@
 ---
-title: Why It Might End
+name: Why It Might End
 ---
 
 # Introduction

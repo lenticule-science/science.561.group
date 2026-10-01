@@ -1,5 +1,5 @@
 ---
-title: "M2: Core structures extracted"
+name: "M2: Core structures extracted"
 specialization: milestone
 date-created: 2026-04-06
 plan: pws-math-mining

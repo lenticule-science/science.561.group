@@ -1,5 +1,5 @@
 ---
-title: "fold"
+name: "fold"
 type: "term"
 date-created: 2026-03-09
 ---

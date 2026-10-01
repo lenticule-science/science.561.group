@@ -1,5 +1,5 @@
 ---
-title: "komi"
+name: "komi"
 type: "term"
 date-created: 2026-03-09
 ---

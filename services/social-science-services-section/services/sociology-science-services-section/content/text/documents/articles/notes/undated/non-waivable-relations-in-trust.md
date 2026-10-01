@@ -13,7 +13,7 @@ Multiple non-Western governance traditions recognize categories of jural relatio
 
 ## Why this matters for the substrate
 
-The [waiver morphism](../../../../../../services/work-science-services-section/services/predicated-work-services-section/services/predicated-governance-services-section/content/glossary/terms/waiver.md) represents waiver as installation of a new cell (not retraction of the right cell). Its pre-condition requires individual disposal standing. For trust-held relations, this standing is blocked, producing a $\top$-valued authority cell when individual waiver is attempted. The trust-held cell is a governance-pattern-specific parameter — its content depends on which tradition's account of trust-holding is operative.
+The [waiver morphism](../../../../../../services/work-science-services-section/services/predicated-work-services-section/services/predicated-governance-services-section/content/text/glossary/terms/waiver.md) represents waiver as installation of a new cell (not retraction of the right cell). Its pre-condition requires individual disposal standing. For trust-held relations, this standing is blocked, producing a $\top$-valued authority cell when individual waiver is attempted. The trust-held cell is a governance-pattern-specific parameter — its content depends on which tradition's account of trust-holding is operative.
 
 ## Specific questions by tradition
 

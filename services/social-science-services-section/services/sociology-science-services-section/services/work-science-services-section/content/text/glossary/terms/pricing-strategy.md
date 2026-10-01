@@ -14,7 +14,6 @@ governed-by:
   - willingness-to-pay
   - price-elasticity
 determines: revenue-model
-title: "Pricing Strategy"
 tags:
   - business
 date-modified: 2026-03-09

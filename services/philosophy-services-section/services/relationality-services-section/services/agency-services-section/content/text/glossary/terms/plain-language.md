@@ -1,5 +1,5 @@
 ---
-title: "Plain Language"
+name: "Plain Language"
 type: object
 class: institution
 aliases:

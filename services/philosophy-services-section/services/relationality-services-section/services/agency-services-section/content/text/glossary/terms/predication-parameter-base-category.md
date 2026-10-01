@@ -3,7 +3,7 @@ type: definition
 class: category
 symbol: "\\mathbf{B}"
 depends-on: [residuated-lattice, predicate-category, entity-set, settling-bound]
-title: Parameter base category
+name: Parameter base category
 description: The 1-category whose objects are predication settling base parameters $(\mathbf{L}, \mathcal{C}, E, \lambda)$ and whose morphisms are 4-tuples $(\ell, e, \pi, \phi\lambda)$.
 ---
 

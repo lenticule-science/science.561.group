@@ -3,7 +3,7 @@ aliases:
 - ⊢
 id: b4314f19-b112-4af5-9a8d-f714d946d87f
 node-relations: "((extends . entailment))"
-title: syntactic entailment
+name: syntactic entailment
 date-created: 2025-08-29
 ---
 

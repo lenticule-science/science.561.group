@@ -1,5 +1,5 @@
 ---
-title: "Observer-instrument"
+name: "Observer-instrument"
 type: concept
 class: observer
 component-of: predicated-astronomy

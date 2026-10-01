@@ -58,7 +58,7 @@ Capacity and authority checks (per the [dispatch morphism](../../research/2026/0
 
 $$u_\tau = \{ \langle T, \texttt{assigned-to}, A_2\rangle = \mathbf{t} \}$$
 
-Together with [correlate-of](../../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/predicated-work-services-section/services/predicated-governance-services-section/content/glossary/terms/correlate-of.md)'s firing creating the correlative liability/duty in $A_2$.
+Together with [correlate-of](../../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/predicated-work-services-section/services/predicated-governance-services-section/content/text/glossary/terms/correlate-of.md)'s firing creating the correlative liability/duty in $A_2$.
 
 ## What's substrate-algebraically substantive
 

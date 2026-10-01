@@ -9,7 +9,6 @@ keywords:
   - anarchism
 description: "The anarchist current that analyzes ecological destruction and the domination of the natural world as inseparable from the domination of human beings, insisting that both arise from the same structures of hierarchy."
 part-of: sociology/schools/anarchism/schools/green-anarchism/terms
-title: "Green Anarchism"
 tags:
   - ecology
 defines:

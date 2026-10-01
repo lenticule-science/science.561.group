@@ -1,6 +1,6 @@
 ---
 id: a299fe51-7629-4b6e-afa0-7c7717371cc7
-title: post to @emsenn@kolektiva.social
+name: post to @emsenn@kolektiva.social
 date-created: 2025-08-25
 type: activitypub note
 visibility: public

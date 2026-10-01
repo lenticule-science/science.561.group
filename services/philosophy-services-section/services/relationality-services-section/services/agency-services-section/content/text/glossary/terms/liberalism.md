@@ -4,7 +4,7 @@ class: base
 status: draft
 depends-on: [possessive-individual, affect-governance, subject-formation]
 see-also: [platform, cruel-optimism, interpellation]
-title: Liberalism
+name: Liberalism
 description: Liberalism is the political-economic formation premised on the self-owning individual, formal equality before the law, private property, and the market — the order that takes the free, separate, rights-bearing person as both its starting…
 derives-from: possessive-individual
 ---

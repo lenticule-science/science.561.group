@@ -5,7 +5,7 @@ status: draft
 symbol: "\\mathrm{Inc}"
 depends-on: [office-as-double-settlement, jural-relation]
 realizes: [incumbent]
-title: Incumbent
+name: Incumbent
 description: "The mathematical realization of an incumbent per the library's quadruple definition: the formal tuple recording that a particular agent currently holds a particular office at a particular history."
 ---
 

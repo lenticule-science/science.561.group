@@ -1,5 +1,5 @@
 ---
-title: "Markdown"
+name: "Markdown"
 description: "Markdown is a markup language whose source strings are parsed by the CommonMark specification into an abstract syntax tree — a dual representation as both human-readable plain text and structured document tree."
 date-created: 2026-03-18
 ---

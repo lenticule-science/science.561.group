@@ -1,7 +1,6 @@
 ---
 name: identify-fungal-structures
 description: From a description or image of a fungus, identify visible structures (fruiting body, mycelium), substrate, and likely ecological role.
-title: identify-fungal-structures
 ---
 
 # Identify Fungal Structures

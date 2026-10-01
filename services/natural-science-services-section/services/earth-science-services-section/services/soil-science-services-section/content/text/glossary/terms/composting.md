@@ -1,7 +1,7 @@
 ---
 id: c228af75-7054-44be-95ea-b3ca049128de
 node-relations: "((instantiates . process) (field . soil science))"
-title: composting
+name: composting
 date-created: 2025-09-23
 ---
 

@@ -1,5 +1,4 @@
 ---
-title: "Phase"
 description: "A distinct stage within a lifecycle — a bounded period during which an entity has a particular character and defined entry and exit conditions."
 defines: phase
 aliases: [phases]

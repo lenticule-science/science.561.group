@@ -1,5 +1,5 @@
 ---
-title: "Semiring"
+name: "Semiring"
 type: "definition"
 date-created: 2025-12-26
 ---

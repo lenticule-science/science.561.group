@@ -1,5 +1,5 @@
 ---
-title: emsenn's GTAO Empire
+name: emsenn's GTAO Empire
 ---
 
 # Activities

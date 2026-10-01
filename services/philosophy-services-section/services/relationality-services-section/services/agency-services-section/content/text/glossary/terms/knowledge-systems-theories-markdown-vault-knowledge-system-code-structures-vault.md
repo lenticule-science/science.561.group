@@ -12,7 +12,7 @@ see-also:
   - note.md
   - relation-graph.md
   - theories/predicated-markdown-vault-knowledge-system/_index.md
-title: Vault
+name: Vault
 description: A vault is the parent-level formal model of a markdown-vault knowledge system as a single coherent corpus.
 ---
 

@@ -1,6 +1,6 @@
 ---
 id: 72c79a55-c160-4e42-9209-3ec79e077412
-title: secular
+name: secular
 date-created: 2025-08-31
 visibility: public
 ---

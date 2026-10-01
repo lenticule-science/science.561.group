@@ -1,5 +1,5 @@
 ---
-title: Emsenn.Net
+name: Emsenn.Net
 type: definition
 dg-publish: true
 description: emsenn.net is the top-level Internet domain I've used for my personal website.

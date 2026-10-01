@@ -6,7 +6,6 @@ aliases:
   - "revolutionary"
 tags: []
 description: "The fundamental transformation of social relations — not the seizure of state power by new rulers, but the abolition of the hierarchical structures that make rulers possible."
-title: "Revolution"
 type: term
 defines:
   - "Revolution (anarchist)"

@@ -2,7 +2,7 @@
 aliases:
 - dies died
 id: d1f161bb-0501-4fc0-a347-e05ca2a12946
-title: dying
+name: dying
 date-created: 2025-08-25
 type: stopping
 visibility: public

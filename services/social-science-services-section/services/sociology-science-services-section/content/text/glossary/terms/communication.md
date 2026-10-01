@@ -9,7 +9,6 @@ keywords:
 description: "The process by which meaning is produced, circulated, and received between people — not merely the transmission of messages but the social activity through which shared reality is constructed, contested, and maintained."
 date-modified: 2026-03-09
 part-of: sociology/schools/anarchism/schools/anarchist-communication/terms
-title: "Communication"
 type: term
 tags:
   - Sociology

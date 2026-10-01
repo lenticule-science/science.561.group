@@ -6,7 +6,7 @@ status: draft
 realizes: [internal-z2-gauge, klein-four-symmetry]
 depends-on: [predication-fibration, predication-hyperdoctrine, predicate-category, klein-four-gauge-bundle, four-bilattice, internal-z2-gauge, negation, conflation]
 see-also: [klein-four-gauge-bundle, equivariant-cohomology-decomposition, beck-chevalley-commutation-on-predication-bilattices, closure-flow-curvature-regime-correspondence]
-title: Gauge connection on a predication hyperdoctrine
+name: Gauge connection on a predication hyperdoctrine
 description: "Fix a predication hyperdoctrine $p : \\mathcal{E} \\twoheadrightarrow \\mathcal{C}$ over base parameters $(\\mathbf{L}, \\mathcal{C}, E)$."
 ---
 

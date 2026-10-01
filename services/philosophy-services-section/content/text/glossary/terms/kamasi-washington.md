@@ -1,6 +1,6 @@
 ---
 id: af83db45-8a5a-4f8d-8ff6-68dfe93bc913
-title: Kamasi Washington
+name: Kamasi Washington
 date-created: 2025-07-21
 type: music artist
 visibility: public

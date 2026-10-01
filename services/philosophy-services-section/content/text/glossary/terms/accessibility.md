@@ -1,5 +1,5 @@
 ---
-title: accessibility
+name: accessibility
 description: "Accessibility (often abbreviated a11y) in web design means ensuring that people with disabilities can perceive, understand, navigate, and interact with web content. The term encompasses a wide range of conditions — visual, auditory, motor, cognitive, neurological — and a corresponding range of assistive technologies: screen readers, magnifiers, voice control, switch devices, Braille displays."
 aliases:
 - accessibility

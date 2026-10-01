@@ -1,5 +1,5 @@
 ---
-title: "Anthraquinone"
+name: "Anthraquinone"
 type: "term"
 date-created: 2026-04-02
 ---

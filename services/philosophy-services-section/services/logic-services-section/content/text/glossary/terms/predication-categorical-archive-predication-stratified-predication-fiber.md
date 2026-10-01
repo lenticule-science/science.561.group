@@ -4,7 +4,7 @@ class: filtered-algebra
 symbol: "A^{\\flat}_p"
 depends-on: [predication-fiber-algebra, closure-rule-system, bilattice-stabilization-nucleus, closure-operator, settling-monotonicity, knowledge-order]
 see-also: [closure-2-monad, sigma-delta-pass-decomposition, settling-fiber-groupoid, witness]
-title: Stratified predication fiber
+name: Stratified predication fiber
 description: A stratified predication fiber $A^{\flat}p$ over a closure-rule system $\mathcal{S}$ and a bilattice-stabilization nucleus $N\Delta$ is the predication fiber algebra $Ap$ equipped with a per-cell-atom stratum assignment
 ---
 

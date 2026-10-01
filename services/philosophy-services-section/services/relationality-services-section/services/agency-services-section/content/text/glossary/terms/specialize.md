@@ -4,7 +4,7 @@ class: predicate-category-operation
 status: sketch
 depends-on: [predicate-category, predication-fibration, knowledge-fiber-algebra]
 see-also: [classify, federate, predicate-category-stratification]
-title: Specialize
+name: Specialize
 description: "The predicate-category operation by which a more general predicate is refined to a more specific one along a category morphism $f: p{\\mathrm{specific}} \\to p{\\mathrm{general}}$ in $\\mathcal{C}$."
 ---
 

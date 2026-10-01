@@ -15,7 +15,7 @@ references:
   - Hyland 2002
   - Castellan-Clairambault-Winskel 2014
   - Castellan-Clairambault-Winskel 2017
-title: "F: Dial(Eff) → CGS"
+name: "F: Dial(Eff) → CGS"
 description: "The Dialectica-to-CGS functor $F: \\mathbf{Dial}(\\mathbf{Eff}) \\to \\mathbf{CGS}$ is the $$-autonomous functor that embeds the Dialectica category into concurrent games with symmetry, constructed from the Dialectica-game correspondence."
 ---
 

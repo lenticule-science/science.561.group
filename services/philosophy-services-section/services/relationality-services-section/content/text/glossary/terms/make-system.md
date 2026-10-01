@@ -1,5 +1,5 @@
 ---
-title: "Make System"
+name: "Make System"
 identity: make-system
 description: "Make System is the act of packaging a triad of operations into a single entity that can be manipulated as a whole."
 date-created: 2026-03-04

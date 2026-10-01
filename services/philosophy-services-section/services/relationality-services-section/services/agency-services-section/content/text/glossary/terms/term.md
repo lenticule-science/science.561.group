@@ -1,5 +1,5 @@
 ---
-title: "Term"
+name: "Term"
 type: "page"
 date-created: 2026-03-18
 description: A Term is an element of the free algebra T(Σ, X) over a signature Σ and variable set X.

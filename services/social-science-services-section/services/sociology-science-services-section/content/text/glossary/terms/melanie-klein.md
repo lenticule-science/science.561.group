@@ -1,6 +1,6 @@
 ---
 id: 71592639-60c2-48ea-a73e-01c5670fae7e
-title: Melanie Klein
+name: Melanie Klein
 date-created: 2025-09-25
 ---
 

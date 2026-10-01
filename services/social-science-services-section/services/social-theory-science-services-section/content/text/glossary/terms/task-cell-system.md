@@ -5,7 +5,7 @@ status: draft
 symbol: T
 depends-on: [operations-settling, predication-cell, closure-rule-system]
 realizes: [task]
-title: Task cell system
+name: Task cell system
 description: "The mathematical realization of a task: a triple"
 ---
 

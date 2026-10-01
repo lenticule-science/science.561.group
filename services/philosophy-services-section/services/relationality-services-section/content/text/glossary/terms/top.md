@@ -1,5 +1,5 @@
 ---
-title: "Top"
+name: "Top"
 identity: top
 description: "Top is the universal recognition — the one that everything satisfies."
 date-created: 2026-03-04

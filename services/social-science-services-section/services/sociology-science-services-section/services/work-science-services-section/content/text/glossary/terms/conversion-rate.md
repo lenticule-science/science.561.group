@@ -16,7 +16,6 @@ measures: [web-monetization, e-commerce, affiliate-marketing, paywall]
 dual-of: churn-rate
 contrasts-with: bounce-rate
 governs: revenue-per-mille
-title: "Conversion Rate"
 type: term
 tags:
   - Business

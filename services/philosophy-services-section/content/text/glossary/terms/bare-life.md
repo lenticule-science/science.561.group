@@ -7,7 +7,6 @@ aliases:
   - "homo sacer"
 date-created: 2026-03-06
 tags: []
-title: "Bare Life"
 defines:
   - "Bare Life"
   - "homo sacer"

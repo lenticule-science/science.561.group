@@ -1,5 +1,5 @@
 ---
-title: "Calendar"
+name: "Calendar"
 description: "The shared temporal coordinate system that organizing and scheduling operate on — a system for dividing time into named, countable units that enable coordination."
 defines: calendar
 date-created: 2026-04-04

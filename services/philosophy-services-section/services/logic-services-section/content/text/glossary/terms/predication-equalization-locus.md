@@ -4,7 +4,7 @@ class: subobject
 symbol: "\\mathrm{Eq}(F,G)"
 depends-on: [predicatory-equalization, predication-valuation]
 see-also: [commutation-defect, ps-equalizers-collapse]
-title: Equalization locus
+name: Equalization locus
 description: "For two operational endomaps $F,G : X \\to X$ on a common class $X$ of predication valuations or settlings, the equalization locus is"
 ---
 

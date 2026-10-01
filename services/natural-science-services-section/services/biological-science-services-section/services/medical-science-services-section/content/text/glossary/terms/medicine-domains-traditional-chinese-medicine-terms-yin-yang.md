@@ -1,5 +1,5 @@
 ---
-title: "Yin and Yang"
+name: "Yin and Yang"
 type: "term"
 date-created: 2026-03-06
 ---

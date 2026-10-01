@@ -1,5 +1,5 @@
 ---
-title: Cataloging Terms
+name: Cataloging Terms
 description: Story.
 ---
 # Cataloging Terms

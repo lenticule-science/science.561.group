@@ -12,7 +12,6 @@ produces: impasse
 delivered-via: [habituation, attrition]
 part-of:
   - late-liberalism
-title: "Crisis Ordinariness"
 defines:
   - "Crisis Ordinariness"
   - "ordinary crisis"

@@ -1,6 +1,6 @@
 ---
 id: 248a20b9-8f25-40bb-a274-2db8fb5545d9
-title: text post
+name: text post
 date-created: 2025-09-19
 ---
 

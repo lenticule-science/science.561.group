@@ -7,7 +7,6 @@ aliases:
   - "settler colonialism"
 tags: []
 description: "The domination and dispossession of one people by another through the seizure of land, the destruction of governance systems, and the imposition of the colonizer's authority — a form of hierarchy anarchism opposes as inseparable from state power and capitalism."
-title: "Colonialism"
 defines:
   - "Colonialism"
   - "colonial"

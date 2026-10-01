@@ -1,6 +1,6 @@
 ---
 id: 1a36aaf7-5417-49c5-9667-0f2144a44700
-title: Kazdoura
+name: Kazdoura
 date-created: 2025-07-21
 ---
 

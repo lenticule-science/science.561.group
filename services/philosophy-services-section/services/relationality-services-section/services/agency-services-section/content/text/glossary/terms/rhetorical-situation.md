@@ -11,7 +11,7 @@ see-also:
   - teaching/explanations/register.md
   - speech-act.md
   - common-ground.md
-title: Rhetorical situation
+name: Rhetorical situation
 description: The rhetorical situation is the foundational formal model of the conditions that call a discourse into being and constrain what counts as a fitting response, due to Lloyd Bitzer (1968, "The Rhetorical Situation," Philosophy and Rhetoric).
 ---
 

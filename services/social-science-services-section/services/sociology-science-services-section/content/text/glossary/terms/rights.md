@@ -9,7 +9,6 @@ see-also:
   - "/sociology/disciplines/legalism/index.md"
 references:
   - /sociology/disciplines/legalism/index.md
-title: "rights"
 type: term
 tags:
   - Legalism

@@ -1,6 +1,6 @@
 ---
 
-title: "Accessibility Relation"
+name: "Accessibility Relation"
 description: "Let $W$ be a set (of [possible worlds](../../documents/articles/research/2026/07/31/lenticule-import/teaching/explanations/possible-world.md))."
 aliases:
   - "accessibility relation"

@@ -1,5 +1,5 @@
 ---
-title: "Semiring"
+name: "Semiring"
 aliases:
   - "semiring"
   - "semirings"

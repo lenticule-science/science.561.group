@@ -1,6 +1,6 @@
 ---
 id: 38e9ac9e-192c-4e5e-a5fb-bfb1f527ed5e
-title: American conservative think tank
+name: American conservative think tank
 date-created: 2025-09-05
 visibility: public
 ---

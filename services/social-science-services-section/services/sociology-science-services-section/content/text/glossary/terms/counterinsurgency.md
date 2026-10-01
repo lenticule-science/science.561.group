@@ -10,7 +10,6 @@ tags: []
 description: "The set of practices by which states suppress, disrupt, and preempt organized resistance to their authority."
 date-modified: 2026-03-09
 part-of: sociology/topics/state-repression/terms
-title: "Counterinsurgency"
 type: term
 defines:
   - "Counterinsurgency"

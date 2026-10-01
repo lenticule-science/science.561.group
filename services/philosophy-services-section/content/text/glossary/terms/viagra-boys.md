@@ -1,6 +1,6 @@
 ---
 id: 896fed52-817a-433f-8018-1a3bda457d8d
-title: Viagra Boys
+name: Viagra Boys
 date-created: 2025-07-22
 ---
 

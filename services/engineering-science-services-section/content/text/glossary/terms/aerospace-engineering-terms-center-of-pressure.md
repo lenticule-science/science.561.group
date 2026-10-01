@@ -1,5 +1,5 @@
 ---
-title: "Center of Pressure"
+name: "Center of Pressure"
 type: "term"
 date-created: 2026-03-07
 ---

@@ -1,5 +1,5 @@
 ---
-title: "emsenn.net"
+name: "emsenn.net"
 type: "fiber"
 date-created: 2026-03-30
 description: The collection of all subject-object pairs sharing a predicate, together with their epistemic values.

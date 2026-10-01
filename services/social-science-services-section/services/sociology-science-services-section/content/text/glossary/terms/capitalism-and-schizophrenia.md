@@ -1,6 +1,6 @@
 ---
 id: ceb3806d-86b8-453c-b469-82f524992817
-title: Capitalism and Schizophrenia
+name: Capitalism and Schizophrenia
 date-created: 2025-08-25
 visibility: public
 ---

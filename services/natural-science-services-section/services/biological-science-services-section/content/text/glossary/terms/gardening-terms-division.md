@@ -1,5 +1,5 @@
 ---
-title: "division"
+name: "division"
 type: "term"
 date-created: 2026-03-07
 ---

@@ -1,6 +1,6 @@
 ---
 id: 3512096b-1dd2-4386-b9bb-a185f82f5e4c
-title: collaborating
+name: collaborating
 date-created: 2025-08-25
 ---
 

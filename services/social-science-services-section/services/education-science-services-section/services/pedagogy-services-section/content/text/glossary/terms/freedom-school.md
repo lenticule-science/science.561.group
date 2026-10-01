@@ -21,7 +21,6 @@ addresses:
 tags:
   - black-studies
   - decolonial
-title: freedom school
 defines:
 - freedom school
 - freedom schools

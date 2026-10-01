@@ -3,7 +3,7 @@ type: definition
 class: grothendieck-topology
 symbol: "J_\\mathbf{B}"
 depends-on: [parameter-base-category, priestley-dual-cover-topology]
-title: Parameter base topology
+name: Parameter base topology
 description: The Grothendieck topology on the parameter base category $\mathbf{B}$ for which the settling moduli prestack is a stack.
 ---
 

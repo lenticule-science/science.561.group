@@ -4,7 +4,7 @@ realizes: [invisible-automorphism-subgroup, visible-automorphism-quotient]
 class: groupoid
 symbol: "\\mathrm{KP}^{\\mathrm{vis}}(B)"
 depends-on: [settling-fiber-groupoid, invisible-automorphism-subgroup, visible-automorphism-quotient, settling-automorphism-decomposition]
-title: Visible settling fiber groupoid
+name: Visible settling fiber groupoid
 description: "The quotient of the settling fiber groupoid by the normal subgroupoid of invisible automorphisms:"
 ---
 

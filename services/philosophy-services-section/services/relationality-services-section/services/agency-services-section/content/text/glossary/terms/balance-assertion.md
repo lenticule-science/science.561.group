@@ -1,5 +1,5 @@
 ---
-title: "Balance Assertion"
+name: "Balance Assertion"
 aliases:
   - "Balance Assertion"
   - "balance assertion"

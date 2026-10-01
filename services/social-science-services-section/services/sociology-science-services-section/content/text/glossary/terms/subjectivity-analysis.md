@@ -1,7 +1,7 @@
 ---
 field: "subjectivity"
 id: 5a8b7270-85c3-4d57-8bbf-9697e0636d95
-title: subjectivity analysis
+name: subjectivity analysis
 date-created: 2025-09-06
 type: analysis
 visibility: public

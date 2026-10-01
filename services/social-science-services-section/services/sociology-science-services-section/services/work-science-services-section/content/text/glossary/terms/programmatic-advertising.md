@@ -6,7 +6,6 @@ domain: web-business
 restricts: Web Monetization
 uses: Revenue Per Mille, Pageview, Impression, Two-Sided Market
 date-created: 2026-03-29
-title: "Programmatic Advertising"
 defines: Programmatic Advertising
 related: Affiliate Marketing
 date-modified: 2026-03-29

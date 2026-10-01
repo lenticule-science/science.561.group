@@ -1,5 +1,5 @@
 ---
-title: Identifying Morphism
+name: Identifying Morphism
 description: Story.
 ---
 # Identifying Morphism

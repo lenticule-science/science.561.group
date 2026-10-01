@@ -1,5 +1,5 @@
 ---
-title: "Mutual Aid"
+name: "Mutual Aid"
 date-created: 2026-03-02
 type: term
 aliases:

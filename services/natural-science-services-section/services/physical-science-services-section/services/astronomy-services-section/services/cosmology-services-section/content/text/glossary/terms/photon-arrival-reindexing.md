@@ -1,5 +1,5 @@
 ---
-title: "Photon-arrival reindexing"
+name: "Photon-arrival reindexing"
 type: morphism
 class: time-reindexing
 component-of: predicated-astronomy

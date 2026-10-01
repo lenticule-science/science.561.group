@@ -1,6 +1,6 @@
 ---
 id: 8b04b575-9d87-4e98-8a4c-64b037c2c47d
-title: Félix Guattari
+name: Félix Guattari
 date-created: 2025-08-24
 type: psychoanalyst
 visibility: public

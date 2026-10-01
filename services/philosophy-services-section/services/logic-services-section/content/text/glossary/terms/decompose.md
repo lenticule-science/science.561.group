@@ -2,7 +2,7 @@
 type: theorem
 status: proved
 depends-on: [predicate-category, predicate-specialization, predicate-converse, predicate-subject-projection, predicate-object-projection, predication-fibration]
-title: Finite-limit morphisms decompose as generators
+name: Finite-limit morphisms decompose as generators
 description: Every finite-limit construction morphism in a predicate category $\mathcal{C}$ decomposes as a composition of the four generator classes.
 ---
 

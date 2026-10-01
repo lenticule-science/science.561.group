@@ -29,4 +29,4 @@ Flesh is denser and richer in β-carotene than *C. pepo* and *C. maxima*. Starch
 
 ## See also
 
-[Butternut squash cultivation](../../../../../../../../../../../domestic-science-services-section/services/domestic-production-services-section/services/gardening-services-section/content/glossary/terms/butternut-squash.md)
+[Butternut squash cultivation](../../../../../../../../../../../domestic-science-services-section/services/domestic-production-services-section/services/gardening-services-section/content/text/glossary/terms/butternut-squash.md)

@@ -1,6 +1,6 @@
 ---
 id: bb635b18-7f1d-4e0a-bb7b-1b0a48c13241
-title: proven
+name: proven
 date-created: 2025-08-31
 type: condition
 visibility: public

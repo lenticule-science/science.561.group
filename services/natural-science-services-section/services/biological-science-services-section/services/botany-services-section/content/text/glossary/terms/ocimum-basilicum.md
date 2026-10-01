@@ -35,5 +35,5 @@ Basil is foundational to Mediterranean cuisines, particularly Italian cooking, w
 ## See also
 
 - [Linalool and essential oils in Lamiaceae](../volatile-compounds-lamiaceae.md)
-- [Basil cultivation](../../../../../../../../../domestic-science-services-section/services/domestic-production-services-section/services/gardening-services-section/content/glossary/terms/basil-cultivation.md)
+- [Basil cultivation](../../../../../../../../../domestic-science-services-section/services/domestic-production-services-section/services/gardening-services-section/content/text/glossary/terms/basil-cultivation.md)
 - [Lamiaceae family morphology](./lamiaceae.md)

@@ -1,5 +1,5 @@
 ---
-title: "Backlog"
+name: "Backlog"
 description: "A queue of candidate work units that have been captured but not yet committed to a plan — the holding area between idea and intention."
 defines: backlog
 date-created: 2026-04-03

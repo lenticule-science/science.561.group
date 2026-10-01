@@ -11,7 +11,7 @@ see-also:
   - staging-area-to-theory-promotion-decision.md
   - ../theorems/frontmatter-relation-graph-acyclic-modulo-see-also.md
   - ../objects/fars-lint-as-closure-operator.md
-title: Relation graph update
+name: Relation graph update
 description: The relation-graph-update morphism is the operation that updates the vault's relation graph in response to a vault edit (note added, note edited, note deleted, note relocated).
 ---
 

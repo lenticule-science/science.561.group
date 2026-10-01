@@ -11,7 +11,6 @@ keywords:
   - Logic
 component-of: classical-logic
 inverse-of: paraconsistent-logic
-title: "Explosion"
 tags:
   - logic
 defines:

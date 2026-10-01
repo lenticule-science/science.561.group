@@ -16,7 +16,6 @@ references:
     title: "Cosmological Deixis and Amerindian Perspectivism"
     publication: "Journal of the Royal Anthropological Institute"
     year: 1998
-title: "Multinaturalism"
 type: term
 defines:
   - "Multinaturalism"

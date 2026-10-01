@@ -1,6 +1,6 @@
 ---
 id: 242cf429-065f-43ab-8df5-8d99619facd3
-title: Rujen
+name: Rujen
 date-created: 2025-07-21
 ---
 

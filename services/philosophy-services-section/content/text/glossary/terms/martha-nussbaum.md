@@ -1,6 +1,6 @@
 ---
 id: a5aa0589-2c6b-40a0-a01a-ccef23e78de5
-title: Martha Nussbaum
+name: Martha Nussbaum
 date-created: 2025-09-01
 ---
 

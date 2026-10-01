@@ -47,4 +47,4 @@ In cultivation, *C. perfoliata* requires moist (not waterlogged), humus-rich, sl
 
 - [Montiaceae](../../../undated/montiaceae.md)
 - [Winter annuals in vegetable production](../../../../research/2026/07/31/lenticule-import/_archive/atom/scripts/bonding/content/molecule/scripts/assembling/content/cell/scripts/integrating/content/organism/scripts/speciating/content/plant/scripts/classifying/content/angiosperm/scripts/familializing/content/montiaceae/scripts/instantiating/content/ecology/terms/winter-annual-phenology.md)
-- [Miner's lettuce cultivation](../../../../../../../../../../../domestic-science-services-section/services/domestic-production-services-section/services/gardening-services-section/content/glossary/terms/miners-lettuce.md)
+- [Miner's lettuce cultivation](../../../../../../../../../../../domestic-science-services-section/services/domestic-production-services-section/services/gardening-services-section/content/text/glossary/terms/miners-lettuce.md)

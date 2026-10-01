@@ -1,5 +1,5 @@
 ---
-title: Which Words I Wonder
+name: Which Words I Wonder
 ---
 
 # Introduction

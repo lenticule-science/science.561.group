@@ -1,5 +1,5 @@
 ---
-title: "Hypernudge"
+name: "Hypernudge"
 description: "Karen Yeung's term for the use of big-data analytics to dynamically and continuously personalize choice architectures to influence behavior at scale, going beyond the static nudges of Thaler-Sunstein behavioral economics. A regulation-by-design that operates through the digital environment the user navigates, with the regulatory effect achieved before any explicit rule or sanction is invoked."
 defines: hypernudge
 related: [algorithmic-regulation, governance-indicator, surveillance-capitalism, ordinal-society, policy]

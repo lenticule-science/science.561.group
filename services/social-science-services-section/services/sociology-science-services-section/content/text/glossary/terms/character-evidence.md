@@ -9,7 +9,6 @@ see-also:
   - "/sociology/disciplines/legalism/schools/american-law/index.md"
 references:
   - /sociology/disciplines/legalism/schools/american-law/index.md
-title: "character evidence"
 type: term
 tags:
   - Legalism

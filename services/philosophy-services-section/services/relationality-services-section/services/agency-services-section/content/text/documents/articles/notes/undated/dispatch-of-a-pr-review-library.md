@@ -59,7 +59,7 @@ Capacity and authority checks (per the [dispatch morphism](../../research/2026/0
 $$u_\tau = \bigl\{\, A^* \mathrel{\colon}\; \langle A^*, \texttt{assigns-task}, T\rangle = \mathbf{t},\; \langle A^*, \texttt{to-office}, A_2\rangle = \mathbf{t},\; \langle A^*, \texttt{authority-bound}, \texttt{review-PR}\rangle = \mathbf{t},\; \langle A^*, \texttt{capability-match}, \delta(A_2, T)\rangle = \mathbf{t} \,\bigr\}$$
 
 The task fiber on $T$ is *unchanged* by dispatch — no `assigned-to` cell on $T$ — and the dispatch relationship is walked from $T$ via reverse-edges on `assigns-task`.
-Together with [correlate-of](../../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/predicated-work-services-section/services/predicated-governance-services-section/content/glossary/terms/correlate-of.md)'s firing creating the correlative liability/duty in $A_2$.
+Together with [correlate-of](../../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/predicated-work-services-section/services/predicated-governance-services-section/content/text/glossary/terms/correlate-of.md)'s firing creating the correlative liability/duty in $A_2$.
 
 ## What's substrate-algebraically substantive
 

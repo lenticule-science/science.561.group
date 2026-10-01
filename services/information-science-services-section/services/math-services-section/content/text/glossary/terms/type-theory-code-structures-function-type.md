@@ -4,7 +4,7 @@ class: type-former
 status: current
 depends-on: [lambda-term, typing-judgment]
 symbol: A \to B
-title: Function type
+name: Function type
 description: A function type $A \to B$ is the type of lambda-terms that, given an argument of type $A$, produce a result of type $B$.
 ---
 

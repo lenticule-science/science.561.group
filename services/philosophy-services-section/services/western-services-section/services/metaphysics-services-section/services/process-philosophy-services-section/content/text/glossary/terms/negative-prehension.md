@@ -8,7 +8,6 @@ aliases:
 tags: []
 dual-of: prehension
 acts-on: actual-occasion
-title: "Negative Prehension"
 ---
 
 A negative prehension is an [actual occasion](actual-occasion.md)'s exclusion of a datum from its process of [concrescence](concrescence.md). Where a positive [prehension](prehension.md) integrates a datum into the occasion's becoming — grasping it, valuing it, making it ingredient in the emerging unity — a negative prehension sets a datum aside. The datum is felt as irrelevant, incompatible, or to be excluded, and this exclusion is itself a constitutive act.

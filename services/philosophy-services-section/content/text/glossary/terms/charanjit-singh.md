@@ -1,6 +1,6 @@
 ---
 id: 24174b96-4f98-4fbc-9058-26273385da03
-title: Charanjit Singh
+name: Charanjit Singh
 date-created: 2025-07-21
 visibility: public
 ---

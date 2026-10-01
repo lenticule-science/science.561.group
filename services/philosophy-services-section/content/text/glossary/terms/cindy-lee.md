@@ -1,6 +1,6 @@
 ---
 id: dafceb57-2e84-4c89-b2fc-81a8bd126507
-title: Cindy Lee
+name: Cindy Lee
 date-created: 2025-07-21
 ---
 

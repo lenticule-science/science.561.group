@@ -1,6 +1,6 @@
 ---
 id: 5796d6d6-b2e5-44b0-9899-b9367cd1533f
-title: Mdou Moctar
+name: Mdou Moctar
 date-created: 2025-07-21
 ---
 

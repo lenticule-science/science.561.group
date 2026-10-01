@@ -1,5 +1,5 @@
 ---
-title: "Proposition"
+name: "Proposition"
 aliases:
   - "proposition"
   - "propositions"

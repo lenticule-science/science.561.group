@@ -1,5 +1,5 @@
 ---
-title: Forming Substitution Term
+name: Forming Substitution Term
 description: Story.
 ---
 # Forming Substitution Term

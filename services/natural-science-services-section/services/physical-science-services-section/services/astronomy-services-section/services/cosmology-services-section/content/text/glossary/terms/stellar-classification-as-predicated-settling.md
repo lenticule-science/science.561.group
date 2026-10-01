@@ -1,5 +1,5 @@
 ---
-title: "Stellar classification as a predicated settling"
+name: "Stellar classification as a predicated settling"
 type: example
 status: draft
 component-of: predicated-astronomy

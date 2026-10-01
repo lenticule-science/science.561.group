@@ -1,6 +1,6 @@
 ---
 id: 3c299282-1aba-4a83-a45e-14f0cb67d37d
-title: extraterrestrial civilization
+name: extraterrestrial civilization
 date-created: 2025-09-01
 visibility: public
 type: civilization

@@ -1,5 +1,5 @@
 ---
-title: Forming Application Term
+name: Forming Application Term
 description: Story.
 ---
 # Forming Application Term

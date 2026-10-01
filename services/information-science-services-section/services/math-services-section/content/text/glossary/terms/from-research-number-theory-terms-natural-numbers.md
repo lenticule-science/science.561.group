@@ -1,5 +1,5 @@
 ---
-title: "Natural Numbers"
+name: "Natural Numbers"
 type: "definition"
 date-created: 2025-12-26
 ---

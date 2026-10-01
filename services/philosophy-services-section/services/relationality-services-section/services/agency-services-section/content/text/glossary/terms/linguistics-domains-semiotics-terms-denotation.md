@@ -1,5 +1,5 @@
 ---
-title: "denotation"
+name: "denotation"
 type: "term"
 date-created: 2026-03-05
 ---

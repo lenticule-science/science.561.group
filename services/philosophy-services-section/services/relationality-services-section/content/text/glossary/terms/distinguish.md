@@ -1,5 +1,5 @@
 ---
-title: "Distinguish"
+name: "Distinguish"
 identity: distinguish
 description: "Distinguish is the most primitive operation in relationality — the act of drawing a boundary between one region and another."
 date-created: 2026-03-04

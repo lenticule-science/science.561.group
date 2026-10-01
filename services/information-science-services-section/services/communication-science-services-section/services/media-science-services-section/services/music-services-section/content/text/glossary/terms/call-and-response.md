@@ -7,7 +7,6 @@ aliases:
   - "antiphony"
 tags: []
 description: "A musical structure in which one voice states and another answers, constituting a relational exchange."
-title: "Call-and-Response"
 type: term
 defines:
   - "Call-and-Response"

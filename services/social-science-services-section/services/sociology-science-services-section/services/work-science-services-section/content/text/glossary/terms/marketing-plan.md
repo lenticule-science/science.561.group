@@ -14,7 +14,6 @@ requires:
   - competitive-analysis
 enables: revenue-model
 governed-by: target-market
-title: "Marketing Plan"
 defines:
   - "Marketing Plan"
   - "marketing strategy"

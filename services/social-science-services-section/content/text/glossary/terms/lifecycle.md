@@ -1,5 +1,5 @@
 ---
-title: "Lifecycle"
+name: "Lifecycle"
 description: "The ordered sequence of phases an entity passes through from creation to completion or dissolution — the temporal shape of an entity's existence."
 defines: lifecycle
 aliases: [lifecycles, life-cycle, life cycle]

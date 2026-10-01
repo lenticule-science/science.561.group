@@ -6,7 +6,6 @@ contains: [cargo, contents]
 instance-of: container
 date-created: 2026-03-29
 date-modified: 2026-03-29
-title: Vessel
 defines: vessel
 name: Vessel
 ---

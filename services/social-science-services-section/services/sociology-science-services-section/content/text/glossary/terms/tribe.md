@@ -17,7 +17,6 @@ references:
 defines:
   - tribe
   - tribalism
-title: "Tribe"
 ---
 
 A tribe is a kinship-based political unit organized through lineage, alliance, and reciprocal obligation — typically governed by councils of elders, chiefs, or aghas whose authority derives from kinship position and personal prestige rather than from bureaucratic office. Tribal structures are real social forms with specific logics: they distribute resources through kinship networks, resolve disputes through mediation and customary law, and reproduce themselves through marriage alliances and genealogical reckoning.

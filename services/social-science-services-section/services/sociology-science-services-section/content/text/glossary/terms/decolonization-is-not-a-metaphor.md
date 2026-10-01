@@ -2,7 +2,7 @@
 author: "Eve Tuck K. Wayne Yang"
 id: 21e23b2b-5d94-4296-a004-316a28a16556
 roam-refs: "\\[cite:@DecolonizationIsNotAMetaphor\\]"
-title: Decolonization is not a Metaphor
+name: Decolonization is not a Metaphor
 date-created: 2025-08-26
 type: essay
 visibility: public

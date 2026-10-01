@@ -1,5 +1,5 @@
 ---
-title: "Responsiveness"
+name: "Responsiveness"
 description: "The fourth phase of Tronto's care model — the criterion by which care's adequacy is judged, asking whether the cared-for actually received what was needed."
 date-created: 2026-03-05T00:00:00
 date-modified: 2026-03-29

@@ -1,5 +1,5 @@
 ---
-title: "KZ-Lax"
+name: "KZ-Lax"
 identity: kz-lax
 description: "KZ-Lax is the self-limitation condition on Flow: flowing twice does not take you further than flowing once."
 date-created: 2026-03-04

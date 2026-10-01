@@ -6,7 +6,6 @@ aliases:
   - "dissonant"
 tags: []
 description: "The perceptual quality of tension, instability, or roughness in a combination of simultaneous pitches."
-title: "Dissonance"
 defines:
   - "Dissonance"
   - "dissonant"

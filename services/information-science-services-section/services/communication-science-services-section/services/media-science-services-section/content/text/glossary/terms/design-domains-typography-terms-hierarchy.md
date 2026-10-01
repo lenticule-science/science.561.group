@@ -1,5 +1,5 @@
 ---
-title: "hierarchy"
+name: "hierarchy"
 type: "term"
 date-created: 2025-12-31
 ---
@@ -10,4 +10,4 @@ Typographic hierarchy is established through contrasts in size, weight, color, s
 
 Most documents use three to four levels of hierarchy. Fewer levels risk ambiguity about how content relates; more levels risk overwhelming the reader with distinctions that stop being meaningful. Each level should differ from its neighbors by enough to be unmistakable — a common guideline is to change the font size by at least 20 to 25 percent between levels.
 
-Hierarchy interacts with [line height](../../../../../../../../../engineering-science-services-section/services/design-engineering-science-services-section/services/typography-services-section/content/glossary/terms/line-height.md) and [margins](../../../../../../../../../engineering-science-services-section/services/design-engineering-science-services-section/services/typography-services-section/content/text/glossary/terms/margin.md): headings typically carry more space above them (to separate from what came before) and less below (to bind them to what they introduce). This use of whitespace to group and separate is as much a part of hierarchy as the type itself.
+Hierarchy interacts with [line height](../../../../../../../../../engineering-science-services-section/services/design-engineering-science-services-section/services/typography-services-section/content/text/glossary/terms/line-height.md) and [margins](../../../../../../../../../engineering-science-services-section/services/design-engineering-science-services-section/services/typography-services-section/content/text/glossary/terms/margin.md): headings typically carry more space above them (to separate from what came before) and less below (to bind them to what they introduce). This use of whitespace to group and separate is as much a part of hierarchy as the type itself.

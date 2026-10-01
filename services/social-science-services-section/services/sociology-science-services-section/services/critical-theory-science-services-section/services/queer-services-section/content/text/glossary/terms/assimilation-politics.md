@@ -10,7 +10,6 @@ keywords:
   - gender-theory
   - political-theory
 description: "The political strategy of securing rights and recognition for queer people by demonstrating conformity to existing normative frameworks — domesticity, monogamy, military service, consumption — rather than challenging the frameworks themselves."
-title: "Assimilation Politics"
 type: term
 tags:
   - GenderTheory

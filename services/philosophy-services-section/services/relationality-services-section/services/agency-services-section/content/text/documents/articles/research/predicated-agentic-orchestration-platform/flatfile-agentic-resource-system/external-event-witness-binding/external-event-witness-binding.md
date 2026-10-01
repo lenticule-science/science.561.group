@@ -17,7 +17,7 @@ title: external-event-witness-binding
 ## Statement
 
 A FARS realization records witnesses for in-process operator calls (the `fars` operator surface) but is silent about *external* operational events: git commits, CI runs, MCP tool invocations from outside the FARS process, agent-inbox messages, scheduled jobs, file edits made through non-`fars` paths.
-The predicated-work [witness-as-increment correspondence](../../../../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/predicated-work-services-section/content/glossary/terms/witness-as-increment.md) requires that every operational event correspond to an increment cell.
+The predicated-work [witness-as-increment correspondence](../../../../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/predicated-work-services-section/content/text/glossary/terms/witness-as-increment.md) requires that every operational event correspond to an increment cell.
 The question: *which* external events FARS commits to absorbing, *how* they become `Witness` records, and *who* is authoritative for the binding.
 
 ## Decomposition

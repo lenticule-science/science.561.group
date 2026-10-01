@@ -1,6 +1,6 @@
 ---
 
-title: "Modal Operator"
+name: "Modal Operator"
 description: "Let $H$ be a [Heyting algebra](../../documents/articles/research/2026/07/teaching/explanations/heyting-algebra/index.md)."
 aliases:
   - "modal operator"

@@ -14,7 +14,6 @@ contrasts-with: representation
 delivered-via: media
 part-of:
   - baudrillard
-title: "Simulacra"
 defines:
   - "Simulacra"
   - "simulacrum"

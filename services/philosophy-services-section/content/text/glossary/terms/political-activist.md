@@ -1,7 +1,7 @@
 ---
 field: "politics"
 id: cd489fa6-d90e-49fc-b977-6e47fadd6e26
-title: political activist
+name: political activist
 date-created: 2025-08-25
 type: activist
 ---

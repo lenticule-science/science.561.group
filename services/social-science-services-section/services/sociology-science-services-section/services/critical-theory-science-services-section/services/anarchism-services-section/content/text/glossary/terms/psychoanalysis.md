@@ -9,7 +9,6 @@ keywords:
   - anarchism
   - psychoanalysis
 description: "The theoretical tradition, from Freud through Lacan, that analyzes the unconscious structures shaping desire, drive, and subjectivity. Anarchism draws on psychoanalysis not as therapy but as political analysis: it explains how domination operates at the level of wanting, how systems manage resistance through the regulation of pleasure, and why some forms of resistance escape this management."
-title: "Psychoanalysis"
 type: term
 tags:
   - Anarchism

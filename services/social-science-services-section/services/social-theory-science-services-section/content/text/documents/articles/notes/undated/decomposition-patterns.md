@@ -8,7 +8,7 @@ description: The decompose-task morphism defines task decomposition with a singl
 
 # What closure-rule shapes correspond to non-AND decomposition patterns?
 
-The [decompose-task morphism](../../../../../../../sociology-science-services-section/services/work-science-services-section/services/predicated-work-services-section/content/glossary/terms/decompose-task.md) defines task decomposition with a single composition rule $r_{\mathrm{compose}}$ whose antecedent is the *conjunction* of all subtasks' goal-cell settlements. This is AND-decomposition: the parent settles iff every subtask settles.
+The [decompose-task morphism](../../../../../../../sociology-science-services-section/services/work-science-services-section/services/predicated-work-services-section/content/text/glossary/terms/decompose-task.md) defines task decomposition with a single composition rule $r_{\mathrm{compose}}$ whose antecedent is the *conjunction* of all subtasks' goal-cell settlements. This is AND-decomposition: the parent settles iff every subtask settles.
 
 Real decomposition includes patterns the AND-rule does not cover:
 
@@ -22,7 +22,7 @@ Real decomposition includes patterns the AND-rule does not cover:
 
 ### AND-decomposition
 
-Already formalized in [decompose-task](../../../../../../../sociology-science-services-section/services/work-science-services-section/services/predicated-work-services-section/content/glossary/terms/decompose-task.md). The composition rule is $\Pi_1$ (universal conjunction over a finite set):
+Already formalized in [decompose-task](../../../../../../../sociology-science-services-section/services/work-science-services-section/services/predicated-work-services-section/content/text/glossary/terms/decompose-task.md). The composition rule is $\Pi_1$ (universal conjunction over a finite set):
 
 $$r_{\mathrm{AND}}: \bigwedge_{i=1}^{n} \bigl(\bigwedge_{\phi \in G_{T_i}} v(\phi) = v^*_{T_i}(\phi)\bigr) \;\Longrightarrow\; \bigwedge_{\phi \in G_T} v(\phi) \geq_k v^*_T(\phi)$$
 

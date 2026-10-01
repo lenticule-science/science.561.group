@@ -1,6 +1,6 @@
 ---
 id: 5ecd0b58-ee8b-4a5e-aa87-fe106a312bc4
-title: methodologies of subjectivity analysis
+name: methodologies of subjectivity analysis
 date-created: 2025-09-06
 visibility: public
 ---

@@ -1,5 +1,5 @@
 ---
-title: "Kripke Frame"
+name: "Kripke Frame"
 aliases:
   - "kripke frame"
   - "Kripke frame"

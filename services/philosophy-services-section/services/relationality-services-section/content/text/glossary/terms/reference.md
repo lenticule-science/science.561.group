@@ -1,5 +1,5 @@
 ---
-title: "Terms Reference (AI-Generated, 2026-03-03)"
+name: "Terms Reference (AI-Generated, 2026-03-03)"
 note: "Consolidated from individual term definition files. Each term preserves its original frontmatter fields and narrative text verbatim."
 date-created: 2026-03-03
 register: foundational-terms

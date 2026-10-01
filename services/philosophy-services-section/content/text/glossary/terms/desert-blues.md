@@ -2,7 +2,7 @@
 aliases:
 - desert blues
 id: 6796ebdb-bcb6-4c0a-9f28-5331118ffb04
-title: Tishoumaren
+name: Tishoumaren
 date-created: 2025-07-21
 type: music genre
 visibility: public

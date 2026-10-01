@@ -4,7 +4,7 @@ realizes: [cohomological-equivalence]
 class: cohomology-class
 symbol: "\\mathrm{cl}\\text{-}\\mathrm{inv}(v)"
 depends-on: [settling-cohomology, settling-associated-sheaf, aperiodic-settling, closure-ordinal, settling-morphism]
-title: Aperiodic classifying invariant
+name: Aperiodic classifying invariant
 description: The cohomology class in $H^1$ that classifies aperiodic-regime predication settlings up to mutually-locally-derivable equivalence.
 ---
 

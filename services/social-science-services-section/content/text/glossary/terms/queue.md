@@ -1,5 +1,5 @@
 ---
-title: "Queue"
+name: "Queue"
 description: "A container that holds work units in a defined order, awaiting dispatch or processing — the buffer between stages of the operations loop."
 defines: queue
 date-created: 2026-04-03

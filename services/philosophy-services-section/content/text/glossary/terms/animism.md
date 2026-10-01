@@ -27,7 +27,6 @@ references:
     title: "'Animism' Revisited: Personhood, Environment, and Relational Epistemology"
     publication: "Current Anthropology"
     year: 1999
-title: "Animism"
 type: term
 defines:
   - "Animism"

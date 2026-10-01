@@ -1,5 +1,5 @@
 ---
-title: "Implies"
+name: "Implies"
 identity: implies
 description: "Implies is conditional relating: the internal expression of when one recognition guarantees another."
 date-created: 2026-03-04

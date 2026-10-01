@@ -1,6 +1,6 @@
 ---
 id: e4a1ca80-d49f-4481-8fa6-51c35e46cbb6
-title: legal communication
+name: legal communication
 date-created: 2025-08-31
 type: communication
 visibility: public

@@ -1,7 +1,7 @@
 ---
 author: emsenn
 id: bc7c9861-6f01-4f8e-ac8f-feb6c9cc0706
-title: node
+name: node
 date-created: 2025-07-30
 ---
 

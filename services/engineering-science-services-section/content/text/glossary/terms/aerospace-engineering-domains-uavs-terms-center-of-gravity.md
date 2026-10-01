@@ -1,5 +1,5 @@
 ---
-title: "Center of Gravity"
+name: "Center of Gravity"
 type: "term"
 date-created: 2026-03-06
 ---

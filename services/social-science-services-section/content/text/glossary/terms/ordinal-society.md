@@ -1,5 +1,5 @@
 ---
-title: "Ordinal Society"
+name: "Ordinal Society"
 description: "Marion Fourcade and Kieran Healy's term for a society in which life chances, opportunities, and social standing are increasingly distributed through algorithmic ranking and scoring systems — credit scores, school rankings, criminal-risk scores, employability ratings, platform reputation scores — that turn previously categorical or qualitative judgments into ordinal positions on continuous scales."
 defines: ordinal-society
 related: [governance-indicator, hypernudge, algorithmic-regulation, surveillance-capitalism, platform]

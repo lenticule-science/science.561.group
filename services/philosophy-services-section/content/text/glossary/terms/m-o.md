@@ -1,6 +1,6 @@
 ---
 id: 995ecdfe-2cc8-4a5a-aa5e-5f8961556b7b
-title: M&O
+name: M&O
 date-created: 2025-07-22
 ---
 

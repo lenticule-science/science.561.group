@@ -13,7 +13,7 @@ Terms and definitions related to Typography.
 
 - [hierarchy](/library/domains/engineering/domains/design/domains/typography/terms/hierarchy/) 2025-12-31
 
-- [line height](/library/domains/engineering/domains/design/domains/typography/terms/line-height/) 2025-12-31
+- [line height](../../../../../../../../../../../engineering-science-services-section/services/design-engineering-science-services-section/services/typography-services-section/content/text/glossary/terms/line-height.md) 2025-12-31
 
 - [line length](/library/domains/engineering/domains/design/domains/typography/terms/line-length/) 2025-12-31
 

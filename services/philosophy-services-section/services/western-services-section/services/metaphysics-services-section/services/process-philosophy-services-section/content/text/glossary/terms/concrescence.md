@@ -8,7 +8,6 @@ tags: []
 requires: [prehension, subjective-aim]
 produces: [actual-occasion, satisfaction]
 governed-by: creativity
-title: "Concrescence"
 ---
 
 Concrescence (from the Latin *concrescere*, to grow together) is [Alfred North Whitehead](../../../../../../../../../../general/people/alfred-north-whitehead.md)'s term for the process by which an [actual occasion](actual-occasion.md) constitutes itself as a determinate unity from the multiplicity of its [prehensions](prehension.md). It is the internal process of becoming: the occasion begins as an open potentiality defined by its initial data (the prehended past) and its subjective aim (a lure toward a particular form of integration), and it concludes by achieving a definite, novel unity — its "satisfaction."

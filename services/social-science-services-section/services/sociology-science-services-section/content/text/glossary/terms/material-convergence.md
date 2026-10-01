@@ -1,5 +1,5 @@
 ---
-title: Material Convergence
+name: Material Convergence
 date-created: 2026-03-08 00:00:00
 aliases:
 - material convergence

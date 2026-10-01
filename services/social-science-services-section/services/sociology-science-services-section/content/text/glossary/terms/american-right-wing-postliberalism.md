@@ -1,6 +1,6 @@
 ---
 id: decbd8ac-dd39-4a1b-8a1e-be3d8bdf6f1d
-title: American right-wing postliberalism
+name: American right-wing postliberalism
 date-created: 2025-08-31
 visibility: public
 ---

@@ -1,5 +1,5 @@
 ---
-title: "Naming Structures, Not Phenomena: Five Vocabulary Refinements and the Principle Behind Them"
+name: "Naming Structures, Not Phenomena: Five Vocabulary Refinements and the Principle Behind Them"
 description: "Five vocabulary refinements (rigidity subscripts, Deborah number, conductor/insulator retirement, unit-word registers, genet) and the diagnostic behind them; tests zeolitization against its own discipline."
 date-created: 2026-07-25
 kind: research-note

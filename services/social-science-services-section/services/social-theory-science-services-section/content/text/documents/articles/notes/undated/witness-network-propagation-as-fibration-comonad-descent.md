@@ -25,7 +25,7 @@ Per [agent-team-as-bilattice-network-sheaf](../../research/2026/07/31/lenticule-
 - **Total $\mathcal{W}$**: the bundle of local witness cell-systems — each fiber $\mathcal{W}_t$ over node $t$ is the cell-system of witnesses agent $t$ has incorporated into their local view of the operations settling.
 - **Projection $\pi$**: forget-the-fiber-content, retain communication topology.
 
-A **witness statement** at node $t$ is a [witness-as-increment](../../../../../../../sociology-science-services-section/services/work-science-services-section/services/predicated-work-services-section/content/glossary/terms/witness-as-increment.md) cell-pattern $w \in \mathcal{W}_t$. **Propagation** takes $w$ and produces a cell-pattern on $\mathcal{W}_{t'}$ for each $t'$ reachable from $t$ in $\mathcal{T}$.
+A **witness statement** at node $t$ is a [witness-as-increment](../../../../../../../sociology-science-services-section/services/work-science-services-section/services/predicated-work-services-section/content/text/glossary/terms/witness-as-increment.md) cell-pattern $w \in \mathcal{W}_t$. **Propagation** takes $w$ and produces a cell-pattern on $\mathcal{W}_{t'}$ for each $t'$ reachable from $t$ in $\mathcal{T}$.
 
 By [emmenegger-fibration-comonad](../../research/2026/07/math/theories/categories/theories/predication-categories/theorems/emmenegger-fibration-comonad.md), the fibration $\pi$ admits a comonad structure $\Sigma$ on the total category whose counit is the projection-to-fiber and whose comultiplication is the duplicate-with-context map. Propagation of $w$ along the fibration is, formally, the descent of the local $\Sigma$-coalgebra $(\mathcal{W}_t, w)$ along the fibration to a descent datum on the bundle.
 
@@ -92,7 +92,7 @@ The directional content — that witness propagation is fibration-comonad descen
 ## Where used
 
 - [agent-team-as-bilattice-network-sheaf](../../research/2026/07/31/lenticule-import/library/social-sciences/working/_archive/agent-team-as-bilattice-network-sheaf.md) — supplies the team-as-network-sheaf structure on which the witness-network fibration is built.
-- [witness-as-increment](../../../../../../../sociology-science-services-section/services/work-science-services-section/services/predicated-work-services-section/content/glossary/terms/witness-as-increment.md) — supplies the cell-pattern submitted at $t$ that becomes the $\Sigma$-coalgebra structure.
+- [witness-as-increment](../../../../../../../sociology-science-services-section/services/work-science-services-section/services/predicated-work-services-section/content/text/glossary/terms/witness-as-increment.md) — supplies the cell-pattern submitted at $t$ that becomes the $\Sigma$-coalgebra structure.
 - [adjudicate-witness-conflict](adjudicate-witness-conflict.md) — the operation that selects a $\check{H}^1$-representative from a descent-failed propagation; per (e).
 - [adjudication-modes-and-h1](adjudication-modes-and-h1.md) — the adjudication-mode taxonomy whose modes correspond to $H^1$-representative-selection policies.
 - [multi-agent-work-as-crdt](../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/notes/undated/multi-agent-work-as-crdt.md) — the CRDT analysis is the coarse-grained version of the present theorem; the present theorem refines it by exhibiting the fibration-comonad-descent structure underlying the CRDT's eventual-consistency convergence.

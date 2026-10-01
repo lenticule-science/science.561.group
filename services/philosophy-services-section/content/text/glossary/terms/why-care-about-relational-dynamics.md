@@ -3,7 +3,7 @@ author: emsenn
 id: a1cb33fd-1477-4493-bce5-902c4ba66257
 resource-description: "((resource type . essay) (author . emsenn) (creation date . \\[2025-10-05 Sun 11:55\\]) (subject . relational dynamics))"
 roam-refs: "@emsenn_introducting_relational_dynamics_2025"
-title: Why Care About Relational Dynamics?
+name: Why Care About Relational Dynamics?
 date-created: 2025-10-05
 visibility: public
 ---

@@ -1,6 +1,6 @@
 ---
 id: 7706e59a-4dca-436b-a67c-66a45e9eca8d
-title: being
+name: being
 date-created: 2025-08-25
 type: act
 visibility: public

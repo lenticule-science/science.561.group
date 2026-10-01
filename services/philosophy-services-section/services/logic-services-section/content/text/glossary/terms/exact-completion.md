@@ -11,7 +11,7 @@ see-also:
 references:
   - Carboni-Celia-Magno 1982
   - Hyland 1982
-title: Exact completion
+name: Exact completion
 description: The exact completion is the construction
 ---
 

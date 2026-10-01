@@ -1,5 +1,5 @@
 ---
-title: "Engrossment"
+name: "Engrossment"
 description: "Noddings's term for the receptive mode in which the one-caring receives the cared-for's reality on their own terms — not projection or empathy but direct reception."
 date-created: 2026-03-05T00:00:00
 date-modified: 2026-03-29

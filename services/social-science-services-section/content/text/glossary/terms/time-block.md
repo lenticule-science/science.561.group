@@ -1,5 +1,5 @@
 ---
-title: "Time-Block"
+name: "Time-Block"
 description: "A reserved interval on a calendar for specific work — the unit of intentional time allocation that converts priority into scheduled action."
 defines: time-block
 date-created: 2026-04-04

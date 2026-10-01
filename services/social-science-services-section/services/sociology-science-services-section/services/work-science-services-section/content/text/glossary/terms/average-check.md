@@ -11,7 +11,6 @@ part-of: business/disciplines/operations/terms
 measures: revenue-model
 component-of: income-statement
 governs: break-even-analysis
-title: "Average Check"
 description: "The average check is the mean amount a customer spends per transaction. It is calculated by dividing total revenue over a period by the number of transactions in that period. In food service and hospitality, the term \"average check\" is standard; in retail, \"average ticket\" or \"average transaction value\" are equivalent."
 defines:
   - "Average Check"

@@ -1,5 +1,5 @@
 ---
-title: "Mereology"
+name: "Mereology"
 description: "The study of the relations between parts and wholes — what it means for one thing to be a part of another and how parts compose wholes."
 date-created: 2026-03-03T00:00:00
 date-modified: 2026-03-29

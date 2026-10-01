@@ -24,7 +24,6 @@ references:
     year: 2019
     publication: Mutual Aid Disaster Relief
     url: https://mutualaiddisasterrelief.org/mission-and-vision/
-title: "Autonomous Direct Action"
 authors:
   - claude
 type: term

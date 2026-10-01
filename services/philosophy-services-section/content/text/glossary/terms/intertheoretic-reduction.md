@@ -1,5 +1,5 @@
 ---
-title: "Intertheoretic Reduction"
+name: "Intertheoretic Reduction"
 description: "The claim that one scientific theory can be derived from or explained by another, typically more fundamental, theory — connecting vocabularies through bridge laws."
 date-created: 2026-03-02
 date-modified: 2026-03-29

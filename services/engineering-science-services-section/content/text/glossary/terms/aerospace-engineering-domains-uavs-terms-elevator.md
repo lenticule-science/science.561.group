@@ -1,5 +1,5 @@
 ---
-title: "Elevator"
+name: "Elevator"
 type: "term"
 date-created: 2026-03-06
 ---

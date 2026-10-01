@@ -1,5 +1,5 @@
 ---
-title: "Observation cell"
+name: "Observation cell"
 type: concept
 class: observation
 component-of: predicated-astronomy

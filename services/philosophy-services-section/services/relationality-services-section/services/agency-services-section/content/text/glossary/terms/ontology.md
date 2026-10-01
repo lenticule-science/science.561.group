@@ -1,5 +1,5 @@
 ---
-title: "emsenn.net"
+name: "emsenn.net"
 type: "data-structure"
 date-created: 2026-03-31
 description: A formal specification of what exists in a domain and how things in it relate.

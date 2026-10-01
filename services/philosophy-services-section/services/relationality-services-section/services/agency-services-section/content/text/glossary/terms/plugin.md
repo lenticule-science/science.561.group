@@ -1,6 +1,6 @@
 ---
 
-title: "Plugin"
+name: "Plugin"
 description: "A plugin is a Python module that transforms the stream of directives after Beancount parses the input file. Plugins can add, modify, or remove directives and generate errors."
 aliases:
   - "Plugin"

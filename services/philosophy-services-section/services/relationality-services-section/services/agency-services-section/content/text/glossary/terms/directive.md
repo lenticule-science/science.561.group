@@ -1,5 +1,5 @@
 ---
-title: "Directive"
+name: "Directive"
 aliases:
   - "Directive"
   - "directive"

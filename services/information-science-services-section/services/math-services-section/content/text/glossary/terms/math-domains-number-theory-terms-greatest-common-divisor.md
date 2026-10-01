@@ -1,5 +1,5 @@
 ---
-title: "Greatest Common Divisor"
+name: "Greatest Common Divisor"
 type: "term"
 date-created: 2026-03-05
 ---

@@ -1,5 +1,5 @@
 ---
-title: Emsenn'S Delta Register
+name: Emsenn'S Delta Register
 date-created: "2025-04-15T00:00:00"
 type: "[term](../../triage/term)"
 introduces: "[term](../../triage/term)"

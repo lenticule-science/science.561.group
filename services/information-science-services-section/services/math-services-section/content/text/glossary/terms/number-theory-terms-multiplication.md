@@ -1,5 +1,5 @@
 ---
-title: "Multiplication"
+name: "Multiplication"
 aliases:
   - "multiplication"
   - "product"

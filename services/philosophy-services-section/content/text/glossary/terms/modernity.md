@@ -19,7 +19,6 @@ references:
     title: "Seeing Like a State"
     publication: "Yale University Press"
     year: 1998
-title: "Modernity"
 ---
 
 Modernity names the historical condition characterized by industrialization, urbanization, secularization, bureaucratic rationalization, the nation-state, mass media, and the global circulation of capital. More precisely, it names the *claim* that these processes constitute progress — a directional movement from tradition toward something better, or at least something inevitable.

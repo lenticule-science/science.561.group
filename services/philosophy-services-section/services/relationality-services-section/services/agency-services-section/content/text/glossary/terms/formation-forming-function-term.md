@@ -1,5 +1,5 @@
 ---
-title: Forming Function Term
+name: Forming Function Term
 description: Story.
 ---
 # Forming Function Term

@@ -2,7 +2,7 @@
 type: definition
 class: cell-complex
 depends-on: [bitopological-settling-site, paired-priestley-space, anderson-putnam-direct-limit, aperiodic-settling]
-title: Transfinite cell complex
+name: Transfinite cell complex
 description: A transfinite cell complex is a regular CW-complex-style structure with cell set indexed by a countable ordinal up to $\omega1$.
 ---
 

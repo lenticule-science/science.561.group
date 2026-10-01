@@ -1,6 +1,6 @@
 ---
 id: 7b55bed5-f798-4563-8194-f4bf8f3cc1ac
-title: tekodynamics
+name: tekodynamics
 date-created: 2025-09-19
 ---
 

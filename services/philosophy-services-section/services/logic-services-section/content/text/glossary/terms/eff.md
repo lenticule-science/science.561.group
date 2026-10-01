@@ -14,7 +14,7 @@ see-also:
 references:
   - Hyland 1982
   - Carboni-Celia-Magno 1982
-title: Eff — the effective topos
+name: Eff — the effective topos
 description: The effective topos $\mathbf{Eff} = RT(\mathcal{K}1)$ is the realizability topos over Kleene's first algebra $\mathcal{K}1$.
 ---
 

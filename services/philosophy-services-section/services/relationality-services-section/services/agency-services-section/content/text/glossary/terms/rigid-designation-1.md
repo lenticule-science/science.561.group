@@ -1,5 +1,5 @@
 ---
-title: "rigid designation"
+name: "rigid designation"
 aliases:
   - "rigid designation"
 date-created: 2025-12-31

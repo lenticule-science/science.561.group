@@ -1,6 +1,6 @@
 ---
 id: c2429bed-dc34-493f-8030-8daaad1e3b67
-title: Charlie don't surf
+name: Charlie don't surf
 date-created: 2025-09-02
 ---
 

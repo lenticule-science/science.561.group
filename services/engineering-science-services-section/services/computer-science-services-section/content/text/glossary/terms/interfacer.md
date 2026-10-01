@@ -24,7 +24,6 @@ references:
     title: "Combinators for Bidirectional Tree Transformations: A Linguistic Approach to the View-Update Problem"
     publication: "ACM Transactions on Programming Languages and Systems 29(3)"
     year: 2007
-title: "Interfacer"
 defines: interfacer
 related: [boundary, adapter-pattern, serialization, format]
 ---

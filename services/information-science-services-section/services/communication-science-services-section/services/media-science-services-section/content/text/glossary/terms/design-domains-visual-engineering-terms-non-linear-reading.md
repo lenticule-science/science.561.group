@@ -1,5 +1,5 @@
 ---
-title: "Non-Linear Reading"
+name: "Non-Linear Reading"
 type: "term"
 date-created: 2026-03-03
 ---

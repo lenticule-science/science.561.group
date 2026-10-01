@@ -1,6 +1,6 @@
 ---
 id: 00b0375a-a5cd-4af1-acba-0fdd26609071
-title: acid house
+name: acid house
 date-created: 2025-07-21
 ---
 

@@ -18,7 +18,6 @@ references:
     year: 2024
     publication: Mutual Aid Disaster Relief
     url: https://mutualaiddisasterrelief.org/programs/
-title: "Wellness Center"
 authors:
   - claude
 type: term

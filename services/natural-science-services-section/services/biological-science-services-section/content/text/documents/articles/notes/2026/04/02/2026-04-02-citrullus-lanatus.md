@@ -33,4 +33,4 @@ Watermelon genetics has been extensively mapped; multiple QTL (quantitative trai
 
 ## See also
 
-[Watermelon cultivation](../../../../../../../../../../../domestic-science-services-section/services/domestic-production-services-section/services/gardening-services-section/content/glossary/terms/watermelon.md)
+[Watermelon cultivation](../../../../../../../../../../../domestic-science-services-section/services/domestic-production-services-section/services/gardening-services-section/content/text/glossary/terms/watermelon.md)

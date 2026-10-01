@@ -1,5 +1,5 @@
 ---
-title: "Resource"
+name: "Resource"
 type: "page"
 date-created: 2026-03-18
 description: A Resource is an Entity whose content makes claims about something — defining, describing, or characterizing an object — and is read for understanding rather than invoked for execution.

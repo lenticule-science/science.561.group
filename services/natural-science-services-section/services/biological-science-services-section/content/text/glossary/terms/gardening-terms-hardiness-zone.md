@@ -1,5 +1,5 @@
 ---
-title: "hardiness zone"
+name: "hardiness zone"
 type: "term"
 date-created: 2026-03-06
 ---

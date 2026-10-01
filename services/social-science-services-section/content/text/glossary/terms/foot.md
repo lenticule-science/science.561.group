@@ -1,5 +1,5 @@
 ---
-title: "Foot"
+name: "Foot"
 date-created: 2026-04-30
 aliases:
   - "foot"

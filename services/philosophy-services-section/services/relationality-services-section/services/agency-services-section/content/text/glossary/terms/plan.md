@@ -5,7 +5,7 @@ status: draft
 symbol: P
 depends-on: [task-cell-system, operations-settling, decompose-task, normative-operational-layering]
 realizes: [plan]
-title: Plan
+name: Plan
 description: "The mathematical realization of a plan: a closure-rule-driven coordination of multiple task cell systems under a dependency partial order."
 ---
 
@@ -72,7 +72,7 @@ The hierarchy continues upward: *campaign* contains projects; *goal* is the top-
 
 ## Plan vs. recurrent practice
 
-A plan and a [recurrent practice](../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/predicated-work-services-section/content/glossary/terms/recurrent-practice.md) are distinct: a plan has a single completion (its milestones jointly settle once); a recurrent practice has periodic firing without single completion.
+A plan and a [recurrent practice](../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/predicated-work-services-section/content/text/glossary/terms/recurrent-practice.md) are distinct: a plan has a single completion (its milestones jointly settle once); a recurrent practice has periodic firing without single completion.
 A plan with periodic re-execution (e.g., "run this plan every quarter") is a recurrent practice whose per-cycle content is the plan's execution.
 
 ## Regime

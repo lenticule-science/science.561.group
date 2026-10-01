@@ -1,5 +1,5 @@
 ---
-title: "Celestial sphere"
+name: "Celestial sphere"
 type: term
 component-of: astronomy
 ---

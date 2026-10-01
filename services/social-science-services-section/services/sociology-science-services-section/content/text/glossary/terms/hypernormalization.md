@@ -9,7 +9,6 @@ tags: []
 description: "The process by which a dysfunctional system is maintained because everyone accepts the fiction of its functioning as normal, even when all participants know it is false."
 type: term
 part-of: sociology/schools/cybernetic-postliberalism/terms
-title: "Hypernormalization"
 defines:
   - "Hypernormalization"
   - "hypernormalisation"

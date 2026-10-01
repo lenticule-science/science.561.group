@@ -1,5 +1,5 @@
 ---
-title: "Contested Terrain"
+name: "Contested Terrain"
 description: "Richard Edwards's framework treating the capitalist workplace as a site of ongoing struggle between capital and labor over the organization of work, with capital deploying successive control regimes — simple, technical, bureaucratic — as labor's resistance forces each prior regime into crisis. The control-side complement to Burawoy's consent-side analysis."
 defines: contested-terrain
 related: [labor-process, manufacturing-consent, scientific-management, deskilling, real-subsumption, bureaucracy]

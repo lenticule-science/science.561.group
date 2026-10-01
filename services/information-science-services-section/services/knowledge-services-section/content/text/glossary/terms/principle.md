@@ -1,6 +1,6 @@
 ---
 id: 09871008-e878-4c03-b4ac-f3f9d4811e0b
-title: principle
+name: principle
 date-created: 2025-09-17
 visibility: public
 ---

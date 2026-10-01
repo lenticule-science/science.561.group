@@ -8,7 +8,6 @@ aliases:
 tags: []
 date-modified: 2026-03-09
 part-of: sociology/schools/autonomism/terms
-title: "Care Work"
 type: term
 defines:
   - "Care Work"

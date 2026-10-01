@@ -22,7 +22,6 @@ references:
     url: https://www.census.gov/retail/ecommerce.html
 cites:
   - census2024
-title: "E-Commerce"
 defines: E-Commerce
 date-updated: 2026-03-29
 ---

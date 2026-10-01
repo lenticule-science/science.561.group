@@ -20,7 +20,6 @@ references:
     publication: "Disaster Research Center"
     year: 1994
     url: "https://udspace.udel.edu/items/5344b8d1-0911-4ecc-9fff-abdcf49ed7d7"
-title: Situational Altruism
 tags:
 - disaster-studies
 - volunteerism

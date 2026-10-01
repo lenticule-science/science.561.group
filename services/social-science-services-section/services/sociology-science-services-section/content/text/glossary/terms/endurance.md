@@ -1,5 +1,5 @@
 ---
-title: "Endurance"
+name: "Endurance"
 description: "Povinelli's term for the political practice of persisting under conditions of abandonment — the ongoing work of continuing to exist in a world organized to make your persistence irrelevant."
 date-created: 2026-03-05
 date-modified: 2026-03-29

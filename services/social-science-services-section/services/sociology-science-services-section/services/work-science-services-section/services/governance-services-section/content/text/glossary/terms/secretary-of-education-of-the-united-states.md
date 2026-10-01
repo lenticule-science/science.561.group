@@ -1,6 +1,6 @@
 ---
 id: aaeee8cc-efea-4b78-b61c-6567a90e3ee7
-title: Secretary of Education of the United States
+name: Secretary of Education of the United States
 date-created: 2025-08-30
 visibility: public
 ---

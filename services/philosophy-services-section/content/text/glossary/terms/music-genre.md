@@ -1,6 +1,6 @@
 ---
 id: 2d77e9d7-6819-4cc8-9189-a81b5cff3d92
-title: music genre
+name: music genre
 aliases:
   - music genre
 ---

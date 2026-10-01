@@ -34,7 +34,6 @@ references:
       - literal: Kaba
     issued:
       - year: 2021
-title: mutual aid pedagogy
 defines:
 - mutual aid pedagogy
 - mutual aid as pedagogy

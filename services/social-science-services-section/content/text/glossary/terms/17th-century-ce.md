@@ -2,7 +2,7 @@
 aliases:
 - 17th century
 id: 2d7060e2-be23-4744-aff4-c1edf87b59fb
-title: 17th Century CE
+name: 17th Century CE
 date-created: 2025-08-25
 visibility: public
 ---

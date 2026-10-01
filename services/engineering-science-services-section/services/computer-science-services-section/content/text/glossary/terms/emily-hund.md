@@ -1,6 +1,6 @@
 ---
 id: d1a9d842-0364-4d7f-84dd-613bfe52fb79
-title: Emily Hund
+name: Emily Hund
 date-created: 2025-09-02
 visibility: public
 ---

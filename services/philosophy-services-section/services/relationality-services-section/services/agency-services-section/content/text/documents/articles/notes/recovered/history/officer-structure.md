@@ -26,7 +26,7 @@ Per the library's officer text:
 
 1. **The office exists.** $O$'s structural cells are settled at $\mathbf{t}$ — normative-structure, action-domain, deontic-profile-actions.
 2. **Investiture has occurred.** A felicitous [installation](../morphisms/installation.md) increment was admitted, asserting the recognition predicate; subsequently the induction predicate also reached $\mathbf{t}$.
-3. **The binding is current.** No witness has retired the incumbency: $\langle \iota, \texttt{relieved-by}, A\rangle$ is not at $\mathbf{t}$ for any $A$, and no [revocation](../morphisms/revocation.md) of recognition has fired.
+3. **The binding is current.** No witness has retired the incumbency: $\langle \iota, \texttt{relieved-by}, A\rangle$ is not at $\mathbf{t}$ for any $A$, and no [revocation](../../../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/predicated-work-services-section/services/predicated-governance-services-section/content/text/glossary/terms/revocation.md) of recognition has fired.
 
 ## Officer vs. role-bearer
 

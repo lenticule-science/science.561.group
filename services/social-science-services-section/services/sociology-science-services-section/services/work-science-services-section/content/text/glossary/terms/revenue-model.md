@@ -11,7 +11,6 @@ requires: target-market
 enables:
   - break-even-analysis
   - financial-projections
-title: "Revenue Model"
 description: "A revenue model describes the structure by which a business earns money — what it sells, to whom, at what price, and through what mechanism of exchange. It is the top-line logic of the [income statement](../../../terms/income-statement.md): before a business can project costs or profits, it must articulate how revenue enters."
 date-modified: 2026-03-09
 ---

@@ -13,7 +13,7 @@ see-also:
   - rhetorical-situation.md
 references:
   - references/grice1975.md
-title: Speech act
+name: Speech act
 description: The speech act is the foundational formal model of saying-as-doing, due to J.
 ---
 

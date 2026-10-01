@@ -1,5 +1,5 @@
 ---
-title: "Harm Reduction"
+name: "Harm Reduction"
 type: "term"
 date-created: 2026-03-03
 ---

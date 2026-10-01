@@ -5,7 +5,7 @@ class: settling
 symbol: "\\hat{v}"
 depends-on: [predication-settling, closure-operator, predication-fiber-algebra, truth-order, settling-bound, settling-quiescence]
 see-also: [modeling-morphism, predication-settling-category]
-title: Predication model
+name: Predication model
 description: "A predication model over $(\\mathbf{L}, \\mathcal{C}, E, \\lambda)$ is a predication settling $\\hat{v}$ that is quiescent at some $\\tau^ < \\lambda$ and whose quiescent value is a closure fixpoint: for all $p \\in \\mathcal{C}$,"
 ---
 

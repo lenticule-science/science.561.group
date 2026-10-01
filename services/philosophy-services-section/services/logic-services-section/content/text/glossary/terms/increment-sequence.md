@@ -3,7 +3,7 @@ type: definition
 realizes: [evidence]
 symbol: U
 depends-on: [predication-valuation, settling-bound, predicate-category, predicate-category-naturality]
-title: Increment sequence
+name: Increment sequence
 description: "A family $U = (u\\tau){\\tau < \\lambda}$ indexed by a settling bound $\\lambda$, where each $u\\tau$ is a predication valuation that is $\\mathcal{C}$-natural — that is, $f^(u\\tau(p)) = u\\tau(q)$ for every morphism $f : q \\to p$ in the…"
 ---
 

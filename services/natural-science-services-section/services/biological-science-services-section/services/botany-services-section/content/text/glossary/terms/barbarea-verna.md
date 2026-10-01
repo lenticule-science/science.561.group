@@ -51,4 +51,4 @@ Minimal pest pressure occurs during cool seasons; flea beetles and cabbage butte
 - [Brassicaceae](../terms/brassicaceae.md)
 - [Nasturtium officinale (watercress)](../botany/terms/nasturtium-officinale.md)
 - [Thermodormancy in seed ecology](../ecology/terms/thermodormancy.md)
-- [Upland cress cultivation](../../../../../../../../../domestic-science-services-section/services/domestic-production-services-section/services/gardening-services-section/content/glossary/terms/upland-cress.md)
+- [Upland cress cultivation](../../../../../../../../../domestic-science-services-section/services/domestic-production-services-section/services/gardening-services-section/content/text/glossary/terms/upland-cress.md)

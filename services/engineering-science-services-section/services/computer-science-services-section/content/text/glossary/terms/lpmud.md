@@ -1,6 +1,6 @@
 ---
 id: 46dab219-c7a1-4d18-8152-aeae6a92906a
-title: LPMUD
+name: LPMUD
 date-created: 2025-08-29
 ---
 

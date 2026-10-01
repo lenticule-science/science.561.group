@@ -24,7 +24,6 @@ references:
       - literal: Lave
     issued:
       - year: 1991
-title: Apprenticeship
 ---
 
 [Apprenticeship](apprenticeship.md) is a mode of learning in which a less experienced practitioner develops knowledge and skill through sustained participation in practice under the guidance of a more experienced one. The apprentice does not first learn theory and then apply it; they learn through doing — observing, imitating, attempting, failing, receiving correction, and gradually taking on more complex and central tasks.

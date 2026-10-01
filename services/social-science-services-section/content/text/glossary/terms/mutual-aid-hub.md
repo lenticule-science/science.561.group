@@ -1,5 +1,5 @@
 ---
-title: "Mutual Aid Hub"
+name: "Mutual Aid Hub"
 date-created: 2026-03-08T00:00:00
 authors:
   - claude

@@ -1,5 +1,5 @@
 ---
-title: "Motivational Displacement"
+name: "Motivational Displacement"
 description: "Noddings's term for the shift in motivation from pursuing one's own projects to acting on behalf of the cared-for — arising from engrossment rather than from principle."
 date-created: 2026-03-05T00:00:00
 date-modified: 2026-03-29

@@ -1,5 +1,5 @@
 ---
-title: "Studiositas"
+name: "Studiositas"
 defines: studiositas
 aliases: [studiositas, studiousness, disciplined love of knowledge]
 description: "The Thomist virtue of studiousness: the disciplined and proportioned love of knowledge that orders the desire to know to the goods that knowledge serves. Studiositas is the moderating virtue of the cognitive appetite, structurally opposed on one side by curiositas (the disordered desire for knowledge) and on the other by negligence (the failure to seek knowledge one should pursue)."

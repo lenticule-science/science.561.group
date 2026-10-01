@@ -9,7 +9,6 @@ aliases:
 keywords:
   - social-theory
 description: "The social process by which a person is reduced from a whole person to a discredited or discreditable one, organized around an attribute that is deeply discrediting in a given social context."
-title: "Stigma"
 type: term
 tags:
   - SocialTheory

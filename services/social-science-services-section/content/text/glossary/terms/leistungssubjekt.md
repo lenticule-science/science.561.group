@@ -1,5 +1,5 @@
 ---
-title: "Leistungssubjekt"
+name: "Leistungssubjekt"
 defines: leistungssubjekt
 aliases: [leistungssubjekt, achievement-subject, achievement subject, performance-subject]
 description: "Han's term for the late-neoliberal subject who has displaced the disciplinary 'you must' with the permissive 'you can,' and who, finding 'you can' indistinguishable from a tacit 'you must,' exploits themselves in the name of self-realization. The subject is simultaneously project and product, exploiter and exploited; the resulting depression and burnout are structural rather than individual."

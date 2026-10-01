@@ -1,6 +1,6 @@
 ---
 id: 9e40095c-cc98-4eaf-96a6-5e964a3750df
-title: ontological process
+name: ontological process
 date-created: 2025-08-29
 type: process
 visibility: public

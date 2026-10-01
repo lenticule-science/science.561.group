@@ -9,7 +9,6 @@ keywords:
 description: "The regeneration of Indigenous practices, governance, and relationships to land as acts of freedom, distinct from and prior to recognition by the settler-colonial state."
 date-modified: 2026-03-09
 part-of: sociology/topics/settler-colonialism/terms
-title: "Indigenous Resurgence"
 type: term
 tags:
   - SettlerColonialism

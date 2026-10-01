@@ -1,6 +1,6 @@
 ---
 id: d588916c-e345-4c84-bc2e-73c80a1ee013
-title: schizoanalysis
+name: schizoanalysis
 date-created: 2025-08-25
 ---
 

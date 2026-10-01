@@ -1,5 +1,5 @@
 ---
-title: "Polyphenol"
+name: "Polyphenol"
 type: "term"
 date-created: 2026-04-02
 ---

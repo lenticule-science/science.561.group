@@ -1,6 +1,6 @@
 ---
 id: 6235fd75-8eae-4449-bd4f-d18b96cd01d4
-title: left-wing academic person
+name: left-wing academic person
 date-created: 2025-08-31
 visibility: public
 ---

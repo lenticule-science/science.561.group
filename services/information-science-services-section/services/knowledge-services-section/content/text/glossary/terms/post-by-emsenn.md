@@ -1,6 +1,6 @@
 ---
 id: c6e269a7-5a0f-4966-b887-9e6da1e02927
-title: post by emsenn
+name: post by emsenn
 date-created: 2025-09-19
 ---
 

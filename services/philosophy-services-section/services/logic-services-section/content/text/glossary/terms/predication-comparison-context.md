@@ -4,7 +4,7 @@ class: structure
 symbol: "\\mathfrak{C}"
 depends-on: [predicatory-comparison, comparison-standard, predication-settling, predication-cell]
 see-also: [comparison-witness-object]
-title: Comparison context
+name: Comparison context
 description: A comparison context is the data that makes a comparison well-typed.
 ---
 

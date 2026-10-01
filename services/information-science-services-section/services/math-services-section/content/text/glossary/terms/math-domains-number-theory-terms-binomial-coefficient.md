@@ -1,5 +1,5 @@
 ---
-title: "Binomial Coefficient"
+name: "Binomial Coefficient"
 type: "term"
 date-created: 2026-03-05
 ---

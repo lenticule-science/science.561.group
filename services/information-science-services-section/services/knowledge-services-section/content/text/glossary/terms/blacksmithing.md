@@ -1,6 +1,6 @@
 ---
 id: 641a3271-77f2-4f77-8f30-78571038f968
-title: blacksmithing
+name: blacksmithing
 date-created: 2025-09-05
 ---
 

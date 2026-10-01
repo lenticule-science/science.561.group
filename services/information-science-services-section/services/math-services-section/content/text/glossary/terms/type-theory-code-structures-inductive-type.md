@@ -3,7 +3,7 @@ type: definition
 class: type-former
 status: current
 depends-on: [pi-type, sigma-type, sum-type]
-title: Inductive type
+name: Inductive type
 description: An inductive type is a type defined by a finite list of constructors, each producing inhabitants of the type from data of specified types.
 ---
 

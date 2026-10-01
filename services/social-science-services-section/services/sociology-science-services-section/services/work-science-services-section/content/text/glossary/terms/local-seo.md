@@ -18,7 +18,6 @@ references:
     url: https://support.google.com/business/answer/7091
 cites:
   - google2023local
-title: "Local SEO"
 defines: Local SEO
 date-updated: 2026-03-29
 ---

@@ -1,5 +1,5 @@
 ---
-title: Equalizing Terms
+name: Equalizing Terms
 description: Story.
 ---
 # Equalizing Terms

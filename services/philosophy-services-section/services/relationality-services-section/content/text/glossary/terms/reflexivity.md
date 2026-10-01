@@ -9,7 +9,6 @@ date-last-modified: "[2025-05-03](../../../../../../content/text/research/2026/0
 aliases:
   - Derivation
 introduces: "[condition](../../../../../../content/text/glossary/terms/condition)"
-title: "Reflexivity"
 defines:
   - reflexivity
   - reflexive act

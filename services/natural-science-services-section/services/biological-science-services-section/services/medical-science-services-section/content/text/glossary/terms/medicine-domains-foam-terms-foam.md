@@ -1,5 +1,5 @@
 ---
-title: "Free Open-Access Medicine (FOAM)"
+name: "Free Open-Access Medicine (FOAM)"
 type: "term"
 date-created: 2026-03-03
 ---

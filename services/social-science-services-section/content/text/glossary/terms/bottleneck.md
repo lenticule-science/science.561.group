@@ -1,5 +1,5 @@
 ---
-title: "Bottleneck"
+name: "Bottleneck"
 description: "The constraint that limits the throughput of the entire system — the single resource whose capacity determines how fast work flows."
 defines: bottleneck
 date-created: 2026-04-03

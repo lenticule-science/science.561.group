@@ -3,7 +3,7 @@ type: definition
 class: syntactic-operator
 status: current
 depends-on: [alpha-equivalence, binder]
-title: Alpha-conversion
+name: Alpha-conversion
 description: Alpha-conversion is the operation of consistently renaming a bound variable in a lambda-term.
 ---
 

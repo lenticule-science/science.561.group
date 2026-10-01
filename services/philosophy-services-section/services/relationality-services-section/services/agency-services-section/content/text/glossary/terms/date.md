@@ -1,5 +1,5 @@
 ---
-title: "Date"
+name: "Date"
 type: "page"
 description: A point in calendar time, represented as an ISO 8601 date string.
 ---

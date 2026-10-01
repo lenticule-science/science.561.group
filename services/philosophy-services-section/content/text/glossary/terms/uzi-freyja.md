@@ -1,6 +1,6 @@
 ---
 id: 7e591672-1914-4cf6-a9e6-a7689a16ff4a
-title: Uzi Freyja
+name: Uzi Freyja
 date-created: 2025-07-21
 ---
 

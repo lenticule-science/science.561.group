@@ -21,7 +21,6 @@ references:
     publication: "Viking"
     year: 2009
     url: "https://www.penguinrandomhouse.com/books/301070/a-paradise-built-in-hell-by-rebecca-solnit/"
-title: Elite Panic
 tags:
 - disaster-studies
 - political-sociology

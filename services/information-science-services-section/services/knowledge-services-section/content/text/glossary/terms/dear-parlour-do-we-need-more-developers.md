@@ -1,5 +1,5 @@
 ---
-title: Dear Parlour, Do We Need More Developers?
+name: Dear Parlour, Do We Need More Developers?
 ---
 
 # Introduction

@@ -1,5 +1,5 @@
 ---
-title: "Excludes"
+name: "Excludes"
 identity: excludes
 description: "Excludes expresses incompatibility between two recognitions."
 date-created: 2026-03-04

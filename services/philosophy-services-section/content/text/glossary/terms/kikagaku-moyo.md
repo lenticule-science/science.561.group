@@ -1,6 +1,6 @@
 ---
 id: 8dc0ab09-ee59-45f3-b103-b312875a554a
-title: Kikagaku Moyo
+name: Kikagaku Moyo
 date-created: 2025-07-21
 type: music artist
 visibility: public

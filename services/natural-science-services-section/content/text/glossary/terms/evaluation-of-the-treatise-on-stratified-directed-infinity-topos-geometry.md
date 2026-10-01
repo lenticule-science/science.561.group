@@ -1,7 +1,7 @@
 ---
 id: 72f50c6b-9e96-4709-ab8a-f5d81d499311
 node-relations: "((instantiates . evaluation) (subject . Treatise on Stratified Directed Infinity-Topos Geometry) (author . ChatGPT))"
-title: Evaluation of the Treatise on Stratified Directed Infinity-Topos Geometry
+name: Evaluation of the Treatise on Stratified Directed Infinity-Topos Geometry
 date-created: 2025-10-09
 ---
 

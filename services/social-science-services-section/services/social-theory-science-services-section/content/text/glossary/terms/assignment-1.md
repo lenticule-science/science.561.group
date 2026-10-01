@@ -6,7 +6,7 @@ symbol: A
 depends-on: [task-cell-system, capability-fiber-bundle, dispatch, jural-relation]
 realizes: [assignment]
 see-also: [execution-event, predicated-governance/morphisms/assignment, dispatch-monotonicity]
-title: Assignment
+name: Assignment
 description: "The substrate-entity produced by the dispatch morphism: a first-class predication-cell-system that records the bounded transfer of work from a dispatcher's office to an executing office."
 ---
 

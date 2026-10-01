@@ -1,5 +1,5 @@
 ---
-title: "Milky Way"
+name: "Milky Way"
 type: term
 component-of: galactic-astronomy
 ---

@@ -12,7 +12,6 @@ enables: risk-mitigation
 governs:
   - supply-chain
   - point-of-sale
-title: "Standard Operating Procedures"
 defines:
   - "Standard Operating Procedures"
   - "SOPs"

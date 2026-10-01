@@ -4,7 +4,7 @@ class: context-projection
 status: stable
 depends-on: [formal-context, scale]
 see-also: [conceptual-projection]
-title: Scale-measure
+name: Scale-measure
 description: The morphism by which a many-valued context is projected to a binary context via a chosen scale (per scale).
 ---
 

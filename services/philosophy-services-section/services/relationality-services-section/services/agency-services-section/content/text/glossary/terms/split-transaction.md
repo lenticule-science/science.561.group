@@ -1,5 +1,5 @@
 ---
-title: "Split Transaction"
+name: "Split Transaction"
 aliases:
   - "Split Transaction"
   - "split transaction"

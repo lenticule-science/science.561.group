@@ -1,5 +1,5 @@
 ---
-title: "Property"
+name: "Property"
 description: "What a thing possesses — an intrinsic feature distinct from an observed quality. A knife is sharp whether or not anyone tests it. Distinguishes categorical properties (what something IS) from dispositional properties (what it CAN DO)."
 defines: property
 aliases: [ properties, property ]

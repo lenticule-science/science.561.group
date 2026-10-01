@@ -1,6 +1,6 @@
 ---
 id: 6e88661c-adaf-4c5f-b4e5-d3a21d0334fc
-title: anti-Indigenous racism in the United States
+name: anti-Indigenous racism in the United States
 date-created: 2025-09-01
 ---
 
