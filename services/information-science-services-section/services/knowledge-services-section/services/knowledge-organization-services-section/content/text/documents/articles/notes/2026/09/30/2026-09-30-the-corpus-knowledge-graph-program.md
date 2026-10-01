@@ -201,13 +201,15 @@ These are settled for this program, from house theory first and published standa
     VaultMaze, GEODE, `/ns/` and `/mcp` all read the same release checkout through one walker and one ledger.
     The live authoring tree is for authoring, not serving.
 12. **The ledger is the integration gate, and it only ratchets.**
-    No integration may raise, in any section it touches, the live count of:
+    No integration may raise, in any section, the live count of:
     - broken path links;
     - unresolved wikilinks;
     - unlawful citekeys (any key outside the citing carrier's own map);
     - schema refusals.
 
     `census-corpus` compares the candidate commit with its base, and `duty-worktree-check` runs it beside the changed packages' checks.
+    Every section is compared, not only the touched ones, because deleting a carrier breaks the links to it from sections the change never touched.
+    A moved carrier keeps its debt in the section it left, so a move is refused only for the damage it does.
     This is Wikidata's constraint-report loop moved before the write.
     It stops new debt from every agent at once, which no amount of bulk repair can do while agents keep writing.
     A refusal is database-proof execution: a write without a derivation witness changes nothing. It is a refusal, not an action, so the knowledge plane still selects no actions.
@@ -332,6 +334,14 @@ This is the shape that uses many agents and machines at once. The deriver (Wave 
    `duty-worktree-check` calls it.
    This is the next bite, because every later work item's acceptance is one of these commands.
    Gate: the ratchet refuses a fixture commit that adds one broken link to a section, admits one that removes one, and runs in under 10 s on a one-section change.
+   **Landed 2026-09-30** (`corpus-census-service`'s `corpus-ledger.mjs`, wired into the code development engine's `duty-worktree-check`).
+   - The fixture gate holds: a commit adding a broken link exits 1 naming the section's rise, and one removing a link exits 0 with the fall.
+   - The comparison reuses carrier facts by blob, not whole rows. Resolution depends on what else exists, so it runs again over every carrier.
+     The facts live in a per-user store keyed by blob, extension, schema and filename, and by the digest of the code that reads them.
+     It is cold once (about 45 s) and warm after that: 6.6–8.7 s and 0.9 GB for a worktree check of the full house corpus against `origin/main`.
+   - `--worktree` checks the tree as `git add -A` would commit it, so a duty is held to the ratchet before it commits.
+     The check fails the duty when any section rises, and lists each rise.
+   - The ledger adds `unlawfulCitekeys` to the rows (5,090 live at the fork), and `--section` with `--assert` gives Wave 1.6 its acceptance commands.
 6. **The work-intent deriver** (owner: knowledge-systems-architect), as in Decision 13.
    `derive-knowledge-work-intents` reads the census, the rows and the wanted queue, and writes one `metroplat.work.structured-intent`.
    Its shape follows `derive-set-of-duplication-work-intents`:
@@ -490,7 +500,7 @@ Agent scale sets the pace, not one author's hours. Each date is a gate measured 
 
 | By | Gate |
 |---|---|
-| 2026-10-03 | Wave 0 holds. Wave 1.5 (assertions and ratchet) and 1.6 (deriver) land. The first derived intent covers the 50 most indebted sections. |
+| 2026-10-03 | Wave 0 holds. Wave 1.5 (assertions and ratchet, landed 2026-09-30) and 1.6 (deriver) land. The first derived intent covers the 50 most indebted sections. |
 | 2026-10-10 | Wave 1 complete: `note` and the next seven kind schemas generated, predicate semantics registered, identity 300s served, scorecards published, SEAVT rows lifted; the topic-section model restored. |
 | 2026-10-24 | Wave 2's rule repairs complete: link fold, key folds, Org conversion. Broken path links under 2,000, and every tie is filed for decision. |
 | 2026-11-07 | Citations in one library, external evidence captured for public carriers, one walker and one builder. Wave 3.1–3.3 serve and dump. |
