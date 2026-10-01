@@ -1,6 +1,6 @@
 ---
 title: "The corpus knowledge graph program"
-description: "Program carrier for turning the whole 561 Group corpus, not only its glossaries, into one admitted, linked, cited, dereferenceable and searchable knowledge graph, run as the Monitor and Knowledge of the house's corpus MAPE-K loop. It sets ledger-measured baselines, a debt ratchet at integration, ledger-derived work intents per section, gated targets, four waves in dependency order, and the owning office for each workstream."
+description: "Program carrier for turning the whole 561 Group corpus, not only its glossaries, into one admitted, linked, cited, dereferenceable and searchable knowledge graph, run as the Monitor and Knowledge of the house's corpus MAPE-K loop. It sets ledger-measured baselines, a debt ratchet at integration, ledger-derived work signals per section that section micro-enterprises take, gated targets, four waves in dependency order, and the owning office for each workstream."
 date-created: 2026-09-30
 type: note
 name: 2026-09-30-the-corpus-knowledge-graph-program
@@ -216,16 +216,16 @@ These are settled for this program, from house theory first and published standa
 13. **Every work item is a ledger predicate.**
     A work item's acceptance is a `census-corpus` assertion over one section, such as live broken path links ≤ 0 or carriers under no schema ≤ n.
     The assertion runs as a command, so it is the rail's `deterministicExecution` with `command-exit-status: 0`.
-    A deriver turns the ledger and the wanted queue into one structured work intent:
-    - the endeavor is this program;
-    - one campaign per wave;
-    - one project per workstream;
-    - one `work-item:` per owning section, ranked by D4's priced yield.
+    Sections are micro-enterprises ([micro-enterprises hold their own work](../../../../../../../../../../../../../../../561-group-services-section/content/text/documents/articles/notes/2026/09/30/2026-09-30-note-on-micro-enterprises-holding-their-own-work.md)), so the ledger posts work and never allocates it.
+    A deriver turns the ledger into one open signal per indebted section, posted by the `corpus-knowledge-ledger` node micro-enterprise, which is also the signal's assayer:
+    - the endeavor is this program, and its campaign is the ratchet's debt;
+    - one project, plan and task per section;
+    - one `work-item:` per debt the section's own carriers carry.
 
-    Nobody writes work items by hand. The ledger writes them, and the ledger closes them.
-    Coordination freedom is proved, not assumed. Each item's write set is its own section's carriers.
-    Items with disjoint write sets commute, so their fan-out is order-independent.
-    The deriver checks disjointness and names every overlapping pair in the rail's `conflicts` before anything runs.
+    Whichever micro-enterprise's taking policy admits a signal takes it into its own root. Ranking by D4's priced yield becomes the signal's offer, never an assignment.
+    Nobody writes work items by hand. The ledger writes them, and the ledger closes them: a section measured clear has its resulted signal accepted, or its untaken signal withdrawn.
+    Coordination freedom is proved, not assumed. One signal's write set is its own section's live carriers, so signals commute and their fan-out is order-independent.
+    The debts within one section share that write set, so the deriver names every pair of them in the rail's `conflicts`.
     A fold that would write into another section is split at the border.
 14. **Sections are micro-enterprises with a knowledge account.**
     Each owning section's ledger rollup is its scorecard:
@@ -342,16 +342,23 @@ This is the shape that uses many agents and machines at once. The deriver (Wave 
    - `--worktree` checks the tree as `git add -A` would commit it, so a duty is held to the ratchet before it commits.
      The check fails the duty when any section rises, and lists each rise.
    - The ledger adds `unlawfulCitekeys` to the rows (5,090 live at the fork), and `--section` with `--assert` gives Wave 1.6 its acceptance commands.
-6. **The work-intent deriver** (owner: knowledge-systems-architect), as in Decision 13.
-   `derive-knowledge-work-intents` reads the census, the rows and the wanted queue, and writes one `metroplat.work.structured-intent`.
-   Its shape follows `derive-set-of-duplication-work-intents`:
-   - one `work-item:` per owning section and workstream, ranked by D4;
-   - `work` and `skill` set for the owning office's duty;
-   - `deterministicExecution` running the item's ledger assertion.
+6. **The work-signal deriver** (owner: knowledge-systems-architect), as in Decision 13.
+   The first plan was one ecosystem-wide intent admitted centrally and allocated to section offices.
+   That is the one work bucket the micro-enterprise note retires, so the deriver posts signals instead.
+   `deriveKnowledgeWorkSignals` reads the census rows and writes one signal per live section whose own carriers carry ratchet debt:
+   - each signal is a `metroplat.work.structured-intent` built with the board's `signalOf`, tagged `knowledge-debt`, `section:<path>` and its debts;
+   - each `work-item:` carries `work` (link repair, lawful citation or schema admission) and `deterministicExecution` running `census-corpus --section <s> --only --assert <measure><=0`;
+   - a signal is addressed by what it asks, not the counts, so it stays the same signal while the debt persists, and the counts travel beside it.
 
-   The intent is a dated record beside the census, admitted with `structured-work-intent-admit` once Wave 0 holds.
-   Gate: the first derived intent's items cover the 50 sections holding 90% of measured debt, and every item's acceptance command fails at the commit it was derived from.
+   Each census run writes `signals.json` beside `wanted.json`.
+   `reconcileKnowledgeSignals` plans the ledger's standing on the board: post what is new, accept what a taker repaired, withdraw what nobody needs.
+   Gate: the signals cover the sections holding 90% of measured debt, and every item's acceptance command fails at the commit it was derived from.
    That failure is what proves each item names real work.
+   **Landed 2026-09-30** (`corpus-census-service`'s `knowledge-work-signals.mjs`; poster record `knowledge-organization-services-section/lib/agency/enterprises/corpus-knowledge-ledger.json`).
+   - At `25688e24e2f`: 343 signals carrying 536 work items and 50,467 debt. The 33 most indebted sections hold 90% of it, so the 50-section gate is met.
+   - The acceptance commands sampled at the largest, median and smallest signal all exit 1 at that commit.
+   - The census run that writes them takes 34 s and 1.2 GB.
+   - Posting waits on the MetroPlat entrance (Wave 0): the ledger applies its reconciliation through `signal-post`, `signal-accept` and `signal-withdraw` under its own identity.
 7. **The section scorecard**, as in Decision 14.
    Each scorecard also carries its FORD/ANZSRC facet, the only enforced classification, so every scorecard can be rolled up by field.
    The census record gains one scorecard per owning section (demand owed, debt carried, product shipped). The rendered site shows them as a table per release.
@@ -477,10 +484,10 @@ In the knowledge plane, outputs are evidence and models, not actions. Actions ru
 
   Every settling pass emits D4's H⁰/H¹/χ receipts. Their index balance is the run-integrity check.
   A refused merge carries its obstruction quantity rather than being averaged away.
-- **Plan:** the deriver writes the structured work intent from the scorecards and the demand queue, priced by D4.
-  The intent is advice: a structured intent the rail may admit.
-- **Execute:** the rail, not the loop, admits the intent and allocates each item to its section's office, where outside agents and zero-cash workers run it.
-  The item is discharged when its ledger assertion exits 0 and a receiver other than its writer accepts it.
+- **Plan:** the deriver posts one open signal per indebted section from the scorecards and the demand queue, with D4's price as its offer.
+  A signal is advice: demand any micro-enterprise may take.
+- **Execute:** the loop does not admit or allocate. A section's micro-enterprise, or any whose taking policy admits the signal, takes it into its own root, where its own offices, outside agents and zero-cash workers run it.
+  The item is discharged when its ledger assertion exits 0 and the ledger, as assayer and not the writer, accepts the result.
 - **Knowledge:** the SEAVT rows and claim bundles, which only grow (D2).
 
 Self-improvement changes the loop's rules, never its authority. A changed resolver, ranking or schema is a versioned rule revision that must:
@@ -491,7 +498,7 @@ Self-improvement changes the loop's rules, never its authority. A changed resolv
 A human intervention in the loop is recorded as a cause-coded incident, which is how the loop learns what it cannot yet do.
 
 Lot 8 (`settle-corpus`) runs this loop by hand first. Lot 10's vertical slice proves one carrier admitted, settled, served, dereferenced and receipted.
-Gate: the loop runs on a schedule. Each run writes a dated census, scorecards, settling receipts and a derived intent.
+Gate: the loop runs on a schedule. Each run writes a dated census, scorecards, settling receipts and the derived signals, reconciled on the board.
 Over four consecutive runs it closes more demand than it opens, with no work item written by hand and the incident count falling.
 
 ## Schedule
@@ -500,7 +507,7 @@ Agent scale sets the pace, not one author's hours. Each date is a gate measured 
 
 | By | Gate |
 |---|---|
-| 2026-10-03 | Wave 0 holds. Wave 1.5 (assertions and ratchet, landed 2026-09-30) and 1.6 (deriver) land. The first derived intent covers the 50 most indebted sections. |
+| 2026-10-03 | Wave 0 holds. Wave 1.5 (assertions and ratchet, landed 2026-09-30) and 1.6 (signal deriver, landed 2026-09-30) land. The first derived signals cover the 50 most indebted sections. |
 | 2026-10-10 | Wave 1 complete: `note` and the next seven kind schemas generated, predicate semantics registered, identity 300s served, scorecards published, SEAVT rows lifted; the topic-section model restored. |
 | 2026-10-24 | Wave 2's rule repairs complete: link fold, key folds, Org conversion. Broken path links under 2,000, and every tie is filed for decision. |
 | 2026-11-07 | Citations in one library, external evidence captured for public carriers, one walker and one builder. Wave 3.1–3.3 serve and dump. |
