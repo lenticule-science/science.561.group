@@ -16,6 +16,7 @@
     "body": {"type": "string", "minLength": 1, "description": "Definition and distinctions carried for readers."},
     "description": {"type": "string", "minLength": 1, "description": "Concise independent summary of the concept."},
     "consent-status": {"type": "string", "minLength": 1, "description": "Freeform consent or access designation carried with the term (the corpus speaks of kin-gated, season-gated, and protocol-gated regions but fixes no value set). Any nonempty string is admitted; the vocabulary of consent-status values is explicitly deferred."},
+    "visibility": {"type": "string", "enum": ["public", "authenticated"], "description": "Which publication surface may carry the term, under the house surface policy: \"public\" opts the term into the anonymous surface (the public glossary vocabulary, the knowledge garden's public tree); absent or \"authenticated\" keeps it to signed-in readers. Only the term's own carrier can open it to the public."},
     "type": {"type": "string", "minLength": 1, "description": "The semantic kind instantiated by the resource. This is a resource tag, not a document-format label."},
     "creator": {"type": "string", "minLength": 1, "description": "The entity that created the resource, when that claim is part of the term's semantics."},
     "aliases": {
