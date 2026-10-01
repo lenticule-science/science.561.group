@@ -1,11 +1,11 @@
 import ObsmetrologiaManual.DocSetup
-import Obsmetrologia.KineticTheory.Gas.DiscreteVelocityCollision
-import Obsmetrologia.KineticTheory.Plasma.Quasineutrality
-import Obsmetrologia.KineticTheory.Plasma.DebyeGraphScreening
-import Obsmetrologia.KineticTheory.Plasma.TopologicalWaveSheaf
-import Obsmetrologia.KineticTheory.Fluid.VortexCohomology
-import Obsmetrologia.KineticTheory.Liquid.OrnsteinZernikeClosure
-import Obsmetrologia.KineticTheory.Liquid.DensityFunctionalFlow
+import ObsmetrologiaPhysicalScience.KineticTheory.Gas.DiscreteVelocityCollision
+import ObsmetrologiaPhysicalScience.KineticTheory.Plasma.Quasineutrality
+import ObsmetrologiaPhysicalScience.KineticTheory.Plasma.DebyeGraphScreening
+import ObsmetrologiaPhysicalScience.KineticTheory.Plasma.TopologicalWaveSheaf
+import ObsmetrologiaPhysicalScience.KineticTheory.Fluid.VortexCohomology
+import ObsmetrologiaPhysicalScience.KineticTheory.Liquid.OrnsteinZernikeClosure
+import ObsmetrologiaPhysicalScience.KineticTheory.Liquid.DensityFunctionalFlow
 
 open Verso.Genre Manual InlineLean
 open Obsmetrologia

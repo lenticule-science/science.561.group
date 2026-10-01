@@ -1,7 +1,7 @@
 import ObsmetrologiaManual.DocSetup
-import Obsmetrologia.KineticTheory.Gas.BoltzmannClosure
-import Obsmetrologia.KineticTheory.Gas.MolecularChaosGluing
-import Obsmetrologia.Thermodynamics.BoltzmannEntropy
+import ObsmetrologiaPhysicalScience.KineticTheory.Gas.BoltzmannClosure
+import ObsmetrologiaPhysicalScience.KineticTheory.Gas.MolecularChaosGluing
+import ObsmetrologiaPhysicalScience.Thermodynamics.BoltzmannEntropy
 
 open Verso.Genre Manual InlineLean
 open Obsmetrologia

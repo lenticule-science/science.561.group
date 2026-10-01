@@ -1,7 +1,7 @@
 import ObsmetrologiaManual.DocSetup
 import Obsmetrologia.Site.Basic
-import Obsmetrologia.AperiodicOrder.MaterialSectors.Contact.ShroudIndexedKeratin
-import Obsmetrologia.CausalSets.BlackHoles.Hole
+import ObsmetrologiaMaterials.Contact.ShroudIndexedKeratin
+import ObsmetrologiaPhysicalScience.CausalSets.BlackHoles.Hole
 
 open Verso.Genre Manual InlineLean
 open Obsmetrologia

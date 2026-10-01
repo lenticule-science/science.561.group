@@ -1,5 +1,6 @@
 import ObsmetrologiaManual.DocSetup
 import Obsmetrologia.Settlement
+import ObsmetrologiaPhysicalScience.Settlements
 
 open Verso.Genre Manual InlineLean
 open Obsmetrologia

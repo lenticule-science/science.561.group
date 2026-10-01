@@ -2,7 +2,7 @@ import ObsmetrologiaManual.DocSetup
 import Obsmetrologia.Closure.LaxSlackDiagnosis
 import Obsmetrologia.Cohomology.LawvereHarmonicCohomology
 import Obsmetrologia.Dynamics.Flow.TransfiniteClosureFlow
-import Obsmetrologia.DenseMatter.Quark
+import ObsmetrologiaPhysicalScience.DenseMatter.Quark
 
 open Verso.Genre Manual InlineLean
 open Obsmetrologia

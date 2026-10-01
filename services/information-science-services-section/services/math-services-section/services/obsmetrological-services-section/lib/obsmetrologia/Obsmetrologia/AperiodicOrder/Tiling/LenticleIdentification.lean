@@ -1,6 +1,5 @@
 import Obsmetrologia.Site.Basic
 import Obsmetrologia.AperiodicOrder.Tiling.ChromaticLorentzian
-import Obsmetrologia.AperiodicOrder.Tiling.WeaveDraft
 import Obsmetrologia.Cohomology.InconsistencySheaf
 
 /-!
@@ -22,11 +21,6 @@ inconsistent knowledge-join exactly when the two readings disagree.
 * `covers_pullback_to_lenticle` — the site-level pullback cover on the overlap.
 * `definite_joinK_inconsistency_iff_disagreement` — local disagreement is exactly
   `Reading.isInconsistency` of the knowledge-join for definite readings.
-* `lenticle_miscrossing_isInconsistency` — the lenticle-local mis-crossing bridge
-  reuses `AperiodicOrder.Tiling.miscrossing_isInconsistency`.
-* `lenticleCrossingReading_inconsistency_iff_both_over` — the lenticle crossing
-  is inconsistent exactly in the mis-crossing case where both strands assert
-  over-crossing.
 * `lenticleSection_miscrossing_somewhere_iff_disagreement` — on a finite lenticle
   support, two definite reading-valued sections disagree somewhere exactly when
   their pointwise knowledge-join is inconsistent somewhere.
@@ -63,6 +57,9 @@ inconsistent knowledge-join exactly when the two readings disagree.
 ## Tags
 
 lenticle, overlap, cover pullback, mis-crossing, inconsistency sheaf
+
+The weave-crossing reading at a lenticle (`lenticleCrossingReading` and its mis-crossing
+theorems) lives in the fibercraft package's `LenticleCrossing` module.
 -/
 
 namespace Obsmetrologia
@@ -350,42 +347,6 @@ theorem lenticleSection_miscrossing_somewhere_iff_disagreement_on_support
         unfold LenticleMiscrossingSomewhere LenticleDisagreementSomewhere at hrest ⊢
         simp only [List.any_cons, hhead, hrest]
   rw [h]
-
-/-- A lenticle-local crossing reading is the existing crossing reading read at the overlap. -/
-def lenticleCrossingReading (_U₁ _U₂ : Site.Clopen) (warpOver weftOver : Bool) : Reading :=
-  AperiodicOrder.Tiling.crossingReading warpOver weftOver
-
-/-- The lenticle-local crossing reading is definitionally the existing crossing reading;
-the clopen parameters only record the overlap locus where it is read. -/
-@[simp] theorem lenticleCrossingReading_eq_crossingReading
-    (U₁ U₂ : Site.Clopen) (warpOver weftOver : Bool) :
-    lenticleCrossingReading U₁ U₂ warpOver weftOver =
-      AperiodicOrder.Tiling.crossingReading warpOver weftOver := rfl
-
-/-- The lenticle-local mis-crossing is the existing mis-crossing theorem at the overlap. -/
-theorem lenticle_miscrossing_isInconsistency (U₁ U₂ : Site.Clopen) :
-    Reading.isInconsistency (lenticleCrossingReading U₁ U₂ true true) = true :=
-  by simpa using AperiodicOrder.Tiling.miscrossing_isInconsistency
-
-/-- The lenticle-local crossing reading is inconsistent exactly in the
-mis-crossing case: both strands assert the over-crossing. -/
-theorem lenticleCrossingReading_inconsistency_iff_both_over
-    (U₁ U₂ : Site.Clopen) (warpOver weftOver : Bool) :
-  Reading.isInconsistency (lenticleCrossingReading U₁ U₂ warpOver weftOver) = true ↔
-      warpOver = true ∧ weftOver = true := by
-  cases warpOver <;> cases weftOver
-  · simp [lenticleCrossingReading, AperiodicOrder.Tiling.hole_is_kBot, Reading.isInconsistency,
-      Reading.kBot, Reading.kTop]
-  · simp [lenticleCrossingReading, AperiodicOrder.Tiling.crossingReading, Reading.isInconsistency,
-      Reading.kTop, Articulating.FourCorner.toCorner, Articulating.Corner.ofStatus]
-  · simp [lenticleCrossingReading, AperiodicOrder.Tiling.crossingReading, Reading.isInconsistency,
-      Reading.kTop, Articulating.FourCorner.toCorner, Articulating.Corner.ofStatus]
-  · simpa using lenticle_miscrossing_isInconsistency U₁ U₂
-
-/-- A defect-free lenticle-local crossing carries no inconsistency. -/
-theorem lenticle_defectFree_consistent (U₁ U₂ : Site.Clopen) (b : Bool) :
-    Reading.isInconsistency (lenticleCrossingReading U₁ U₂ b (!b)) = false := by
-  simpa [lenticleCrossingReading] using AperiodicOrder.Tiling.defectFree_consistent b
 
 /-- The one-cell lenticle census is the `H⁰_⊤` inconsistency count. -/
 theorem lenticle_singleton_h0top_count (v : Valuation) (φ : PredicationCell) :

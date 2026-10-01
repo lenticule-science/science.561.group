@@ -19,7 +19,7 @@ The Wolfram model's causal graphs are causal sets, and this paper says so
 formally: the discrete causal structure a multiway system generates is the
 same object the causal-set programme (Sorkin, Bombelli) studies, and its
 manifold-likeness is the same question. That is the lineage
-`Obsmetrologia/CausalSets/Dimension/Manifoldlikeness.lean` formalizes for
+`ObsmetrologiaPhysicalScience/CausalSets/Dimension/Manifoldlikeness.lean` formalizes for
 the house (the Hauptvermutung stated cohomologically, the invariance half
 proved). So the honeycomb's dual graph, which the exchanges-as-cells
 article reads as a causal set, and a Wolfram-model causal graph are

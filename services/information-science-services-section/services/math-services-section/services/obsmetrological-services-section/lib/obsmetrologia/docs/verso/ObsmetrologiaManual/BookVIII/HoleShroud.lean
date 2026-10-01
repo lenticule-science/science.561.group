@@ -1,7 +1,8 @@
 import ObsmetrologiaManual.DocSetup
-import Obsmetrologia.CausalSets.BlackHoles.Horizon
-import Obsmetrologia.CausalSets.BlackHoles.DiamondLiftClosure
-import Obsmetrologia.CausalSets.BlackHoles.Deshrouding
+import ObsmetrologiaPhysicalScience.CausalSets.BlackHoles.Horizon
+import ObsmetrologiaPhysicalScience.CausalSets.BlackHoles.DiamondLiftClosure
+import ObsmetrologiaPhysicalScience.CausalSets.BlackHoles.Deshrouding
+import ObsmetrologiaMaterials.HorizonMembrane
 
 open Verso.Genre Manual InlineLean
 open Obsmetrologia

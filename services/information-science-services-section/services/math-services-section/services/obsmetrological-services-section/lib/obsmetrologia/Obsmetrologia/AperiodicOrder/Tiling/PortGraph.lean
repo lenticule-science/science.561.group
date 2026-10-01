@@ -1,4 +1,6 @@
-import Obsmetrologia.AperiodicOrder.Tiling.WeaveDraft
+import Obsmetrologia.AperiodicOrder.Tiling.SoficShift
+import Obsmetrologia.Language.Positing.FourCorner
+import Obsmetrologia.Language.Positing.BigradedCohomology
 
 /-!
 # Port graphs: the lenticular condensate carrier
@@ -58,12 +60,9 @@ topology is a walk, not an edge set. -/
 abbrev Thread (B : Type) := List (ThreadPass B)
 
 /-- The **hole transition** of a single-hole lenticule: a legal pass enters one side and exits
-the other — the within-bead edge `p⁻—p⁺`. It is literally the plain-weave warp rule. -/
-def holeTransition : Graph Bool := warpAlt
-
-/-- **A lenticule's hole transition is the plain-weave crossing rule.** Beadwork's local routing
-law and weaving's crossing law are one object; a bead is a crossing on a rigid body. -/
-theorem holeTransition_eq_warpAlt : holeTransition = warpAlt := rfl
+the other — the within-bead edge `p⁻—p⁺`. It is literally the plain-weave warp rule
+(`holeTransition_eq_warpAlt`, in the fibercraft package's `LenticleCrossing`). -/
+def holeTransition : Graph Bool := fun a b => a != b
 
 /-- A pass is **legal** when its in/out sides satisfy the hole transition (the thread goes in one
 side and out the other). -/
@@ -73,7 +72,7 @@ def Legal {B : Type} (p : ThreadPass B) : Prop := holeTransition p.2.1 p.2.2 = t
 fold-back (same side in and out) is illegal, exactly as a weave forbids a same-state repeat. -/
 theorem legal_iff_distinct {B : Type} (b : B) (i j : Bool) :
     Legal (b, i, j) ↔ i ≠ j := by
-  cases i <;> cases j <;> simp [Legal, holeTransition, warpAlt]
+  cases i <;> cases j <;> simp [Legal, holeTransition]
 
 /-- A **thread is legal** when every pass threads through its lenticule. -/
 def ThreadLegal {B : Type} (Γ : Thread B) : Prop := ∀ p ∈ Γ, Legal p

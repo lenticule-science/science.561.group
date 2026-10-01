@@ -5,11 +5,11 @@ import Obsmetrologia.Language.Positing.FiberAlgebra
 import Obsmetrologia.Site.DFrame
 import Obsmetrologia.Site.Sheaf
 import Obsmetrologia.Dynamics.Flow.CurvatureRegime
-import Obsmetrologia.CausalSets.Causal.Order
+import ObsmetrologiaPhysicalScience.CausalSets.Causal.Order
 import Obsmetrologia.AperiodicOrder.Tiling.Witness.JeandelRaoSubstitutionTower
-import Obsmetrologia.KineticTheory.Plasma.ReconnectionCurvature
-import Obsmetrologia.QuantumContextuality.HardyModel
-import Obsmetrologia.ReactionNetworks.SupportProjection
+import ObsmetrologiaPhysicalScience.KineticTheory.Plasma.ReconnectionCurvature
+import ObsmetrologiaPhysicalScience.QuantumContextuality.HardyModel
+import ObsmetrologiaPhysicalScience.ReactionNetworks.SupportProjection
 
 open Verso.Genre Manual InlineLean
 open Obsmetrologia

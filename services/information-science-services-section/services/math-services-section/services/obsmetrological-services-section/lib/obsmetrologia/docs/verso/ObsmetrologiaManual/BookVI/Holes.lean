@@ -3,7 +3,7 @@ import Obsmetrologia.Site.Basic
 import Obsmetrologia.Site.Section
 import Obsmetrologia.Site.Sheaf
 import Obsmetrologia.Cohomology.InconsistencySheaf
-import Obsmetrologia.AperiodicOrder.Defect
+import ObsmetrologiaPhysicalScience.CondensedMatter.Defect
 
 open Verso.Genre Manual InlineLean
 open Obsmetrologia

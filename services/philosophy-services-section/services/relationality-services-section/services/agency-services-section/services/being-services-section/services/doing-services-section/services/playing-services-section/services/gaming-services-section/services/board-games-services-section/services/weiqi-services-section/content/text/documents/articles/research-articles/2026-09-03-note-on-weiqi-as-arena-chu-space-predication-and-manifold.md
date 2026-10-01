@@ -188,7 +188,7 @@ also a rule.
 Three house lineages share the words "manifold", "holes", and "foam" and are
 not one theory: the MASH knowledge manifold above; the resolution-floor tower
 (§1.5); and the causal-set lineage, which is the only one a weiqi carrier
-explicitly uses. `Obsmetrologia/CausalSets/Dimension/Manifoldlikeness.lean`
+explicitly uses. `ObsmetrologiaPhysicalScience/CausalSets/Dimension/Manifoldlikeness.lean`
 states the causal-set Hauptvermutung cohomologically: "the cohomology of that
 order complex *is* the topology of the reconstructed spacetime — its Betti
 numbers are the holes of the approximated manifold", proves the invariance
@@ -289,7 +289,7 @@ marked "inference" are this note's and are unproved.
 | weiqi | agentics / enterprise / program | carrier |
 |---|---|---|
 | Player and Opponent | polarities relative to an interface, not identities; "at a downstream consumer seam, the producer's output changes polarity" | glass-sponge §17.2 |
-| a move `{P} f {Q}` | a Hoare program: `precondition`, `move`, `postcondition`, `preserves`; the Hoare triple is the lax Chu condition `P ≤ f*(Q)` | `Obsmetrologia/Computing/HoareProgram.lean` (restored to the live tree 2026-09-03, commit 3c76b4e15a6); territory audit, `boolean_hoare_is_lax_chu` (compiled, axiom-free, not committed) |
+| a move `{P} f {Q}` | a Hoare program: `precondition`, `move`, `postcondition`, `preserves`; the Hoare triple is the lax Chu condition `P ≤ f*(Q)` | `ObsmetrologiaComputing/HoareProgram.lean` (restored to the live tree 2026-09-03, commit 3c76b4e15a6); territory audit, `boolean_hoare_is_lax_chu` (compiled, axiom-free, not committed) |
 | stone then capture resolution | `KeratinousHoareProgram`: "lock the seed, then settle it" — irreversible locking followed by Tarski settlement to the least compatible section | `HoareProgram.lean` |
 | the kernel's `Game.play` | the finite Boolean instance of that program: precondition = `isLegal` (occupied, suicide, ko regime), move = `applyStonePlacement`, postcondition = the position invariants the 73 kernel tests state | inference; `apps/weiqi-kernel/src/game.mts` |
 | liberty | a duty's lawful available discharge that keeps the strategy admitted | §17.7 |

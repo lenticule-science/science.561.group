@@ -1,5 +1,4 @@
 import Obsmetrologia.Calculus.Probability.Stochastic
-import Obsmetrologia.CausalSets.Dimension.OrderingFraction
 
 /-!
 # Maslov dequantization — the two faces of one settling semiring
@@ -37,12 +36,14 @@ between them are here, green.
 
 * `boolStoch_idempotent` / `natStoch_not_idempotent` — the `p = ∞` face is idempotent, `p = 1` is not.
 * `countingDequantization` — `supp` is an exact, monotone semiring homomorphism (`+ ↦ ∨`, `× ↦ ∧`).
-* `supp_apexCount_diamond` — the magnitude `|Apex| = 5` dequantizes to the existence projection `true`.
+
+The arc tie `supp_apexCount_diamond` (the causal diamond's apex count `5` dequantizes to `true`) lives
+in the physical-science package's `CausalSets.Action.DiamondDequantization`.
 
 ## References
 
 `content/.../causal-dalembertian/content/sprinkling-average`; the value semiring of
-`Probability.Stochastic`, the apex count of `CausalSets.Dimension.OrderingFraction`.
+`Probability.Stochastic`.
 
 ## Tags
 
@@ -151,20 +152,6 @@ def countingDequantization : StochHom natStoch boolStoch where
   map_add := supp_add
   map_mul := supp_mul
   map_mono := fun a b h => supp_mono a b h
-
-/-! ## (D) The arc tie — magnitude dequantizes to shape
-
-The curvature arc lives on the `p = 1` (counting) face — the action, the curvature, the apex count are
-`ℕ`/`ℤ` magnitudes. Dequantizing sends each to its `p = ∞` existence projection: the green order/shape the
-settling machinery computes. -/
-
-open Obsmetrologia.CausalSets.Dimension.OrderingFraction
-
-/-- **The diamond's apex magnitude dequantizes to its existence projection.** `|Apex| = 5` (a `p = 1`
-magnitude) maps under `supp` to `true` (the `p = ∞` projection: the diamond *has* causal order). The
-magnitude `5` is the data the dequantization discards; `true` is the order-shape it keeps. -/
-theorem supp_apexCount_diamond :
-    supp (apexCount fourEvents diamondPrec) = true := by decide
 
 end Probability.Dequantization
 end Obsmetrologia

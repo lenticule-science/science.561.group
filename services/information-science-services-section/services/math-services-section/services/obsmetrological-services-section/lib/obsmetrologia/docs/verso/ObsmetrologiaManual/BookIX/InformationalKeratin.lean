@@ -1,5 +1,5 @@
 import ObsmetrologiaManual.DocSetup
-import Obsmetrologia.AperiodicOrder.MaterialSectors.Contact.CollatzBarrierDecidableCore
+import ObsmetrologiaMaterials.Contact.CollatzBarrierDecidableCore
 
 open Verso.Genre Manual InlineLean
 open Obsmetrologia

@@ -1,5 +1,5 @@
 import ObsmetrologiaManual.DocSetup
-import Obsmetrologia.Computing.FormatsFour
+import ObsmetrologiaComputing.FormatsFour
 
 open Verso.Genre Manual InlineLean
 open Obsmetrologia

@@ -1,7 +1,8 @@
 # Obsmetrologia Verso docs: type-checked prose over the Obsmetrologia library.
 #
-# The manual package builds against the Obsmetrologia source tree. Obsmetrologia never
-# depends on the manual. The proof-tree markdown under docs/verso/mark is mounted into
+# The manual builds against the Obsmetrologia package and the applied packages that
+# import it (physical science, materials, economics, fibercraft, computing). None of
+# them depends on the manual. The proof-tree markdown under docs/verso/mark is mounted into
 # the manual appendix by the docs assembly script.
 
 name = "obsmetrologia-verso-docs"
@@ -17,9 +18,29 @@ name = "verso"
 git = "https://github.com/leanprover/verso.git"
 rev = "v4.31.0"
 
-[[lean_lib]]
+[[require]]
 name = "Obsmetrologia"
-srcDir = "../.."
+path = "../.."
+
+[[require]]
+name = "ObsmetrologiaPhysicalScience"
+path = "../../../../../../../../../natural-science-services-section/services/physical-science-services-section/lib/obsmetrologia-physical-science"
+
+[[require]]
+name = "ObsmetrologiaMaterials"
+path = "../../../../../../../../../engineering-science-services-section/services/materials-services-section/lib/obsmetrologia-materials"
+
+[[require]]
+name = "ObsmetrologiaEconomics"
+path = "../../../../../../../../../social-science-services-section/services/economics-and-business-science-services-section/services/economics-science-services-section/lib/obsmetrologia-economics"
+
+[[require]]
+name = "ObsmetrologiaFibercraft"
+path = "../../../../../../../../../engineering-science-services-section/services/fibercraft-services-section/lib/obsmetrologia-fibercraft"
+
+[[require]]
+name = "ObsmetrologiaComputing"
+path = "../../../../../../../../../engineering-science-services-section/services/computer-science-services-section/lib/obsmetrologia-computing"
 
 [[lean_lib]]
 name = "ObsmetrologiaManual"

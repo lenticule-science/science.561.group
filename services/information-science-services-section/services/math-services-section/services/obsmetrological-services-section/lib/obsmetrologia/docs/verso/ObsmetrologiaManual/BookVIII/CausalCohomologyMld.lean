@@ -1,12 +1,12 @@
 import ObsmetrologiaManual.DocSetup
-import Obsmetrologia.CausalSets.Causal.Cohomology
-import Obsmetrologia.CausalSets.Causal.Cohomology.H2
-import Obsmetrologia.CausalSets.Causal.Cohomology.N
-import Obsmetrologia.CausalSets.Causal.Involutivity
-import Obsmetrologia.CausalSets.Causal.Liouville
-import Obsmetrologia.CausalSets.Causal.Net
-import Obsmetrologia.CausalSets.Causal.MLDClassification
-import Obsmetrologia.CausalSets.Causal.Cohomology.MLD
+import ObsmetrologiaPhysicalScience.CausalSets.Causal.Cohomology
+import ObsmetrologiaPhysicalScience.CausalSets.Causal.Cohomology.H2
+import ObsmetrologiaPhysicalScience.CausalSets.Causal.Cohomology.N
+import ObsmetrologiaPhysicalScience.CausalSets.Causal.Involutivity
+import ObsmetrologiaPhysicalScience.CausalSets.Causal.Liouville
+import ObsmetrologiaPhysicalScience.CausalSets.Causal.Net
+import ObsmetrologiaPhysicalScience.CausalSets.Causal.MLDClassification
+import ObsmetrologiaPhysicalScience.CausalSets.Causal.Cohomology.MLD
 
 open Verso.Genre Manual InlineLean
 open Obsmetrologia

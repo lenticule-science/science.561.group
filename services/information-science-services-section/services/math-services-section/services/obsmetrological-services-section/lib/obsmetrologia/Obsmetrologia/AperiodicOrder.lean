@@ -1,26 +1,7 @@
-import Obsmetrologia.AperiodicOrder.Crystal.Bead
-import Obsmetrologia.AperiodicOrder.Crystal.Crystal
-import Obsmetrologia.AperiodicOrder.Crystal.Glass
-import Obsmetrologia.AperiodicOrder.Crystal.Quasicrystal
-import Obsmetrologia.AperiodicOrder.Crystal.Tile
-import Obsmetrologia.AperiodicOrder.Defect
-import Obsmetrologia.AperiodicOrder.AffineHolonomy
-import Obsmetrologia.AperiodicOrder.GlassDynamics.Basin
-import Obsmetrologia.AperiodicOrder.GlassDynamics.Heterogeneity
-import Obsmetrologia.AperiodicOrder.GlassDynamics.KCM
-import Obsmetrologia.AperiodicOrder.GlassDynamics.Overlap
-import Obsmetrologia.AperiodicOrder.GlassDynamics.Rotation
-import Obsmetrologia.AperiodicOrder.MaterialSectors.Contact.CollatzBarrierDecidableCore
-import Obsmetrologia.AperiodicOrder.MaterialSectors.Contact.CollatzBarrierKeratin
-import Obsmetrologia.AperiodicOrder.MaterialSectors.Contact.Keratin
-import Obsmetrologia.AperiodicOrder.MaterialSectors.Contact.ShroudIndexedKeratin
-import Obsmetrologia.AperiodicOrder.MaterialSectors.KappaSectorCharges
-import Obsmetrologia.AperiodicOrder.MaterialSectors.SectorPhaseDiagram
 import Obsmetrologia.AperiodicOrder.Tiling.AndersonPutnam
 import Obsmetrologia.AperiodicOrder.Tiling.AperiodicSettleFrame
 import Obsmetrologia.AperiodicOrder.Tiling.ArithmeticZetaStar
 import Obsmetrologia.AperiodicOrder.Tiling.Autopoiesis
-import Obsmetrologia.AperiodicOrder.Tiling.BoundaryLinkGraphMatter
 import Obsmetrologia.AperiodicOrder.Tiling.ChromaticLorentzian
 import Obsmetrologia.AperiodicOrder.Tiling.Classification
 import Obsmetrologia.AperiodicOrder.Tiling.ClassificationReduction
@@ -30,7 +11,6 @@ import Obsmetrologia.AperiodicOrder.Tiling.CohomologicalEquivalence
 import Obsmetrologia.AperiodicOrder.Tiling.CollatzTwoAdicLock
 import Obsmetrologia.AperiodicOrder.Tiling.ColorPredictor
 import Obsmetrologia.AperiodicOrder.Tiling.CommonBaseClassification
-import Obsmetrologia.AperiodicOrder.Tiling.CondensateMatter
 import Obsmetrologia.AperiodicOrder.Tiling.Diffraction
 import Obsmetrologia.AperiodicOrder.Tiling.FiniteAutocorrelation
 import Obsmetrologia.AperiodicOrder.Tiling.FiniteInfiniteCharger
@@ -41,14 +21,11 @@ import Obsmetrologia.AperiodicOrder.Tiling.InverseHull
 import Obsmetrologia.AperiodicOrder.Tiling.J26
 import Obsmetrologia.AperiodicOrder.Tiling.KappaStratification
 import Obsmetrologia.AperiodicOrder.Tiling.LenticleIdentification
-import Obsmetrologia.AperiodicOrder.Tiling.MatterTopology
 import Obsmetrologia.AperiodicOrder.Tiling.MetallicModuli
 import Obsmetrologia.AperiodicOrder.Tiling.MetallizationDichotomy
 import Obsmetrologia.AperiodicOrder.Tiling.Moduli
-import Obsmetrologia.AperiodicOrder.Tiling.Percolation
 import Obsmetrologia.AperiodicOrder.Tiling.PortGraph
 import Obsmetrologia.AperiodicOrder.Tiling.PortGrowth
-import Obsmetrologia.AperiodicOrder.Tiling.PortGrowthTime
 import Obsmetrologia.AperiodicOrder.Tiling.PortVershik
 import Obsmetrologia.AperiodicOrder.Tiling.SoficShift
 import Obsmetrologia.AperiodicOrder.Tiling.StepN.CLehmer
@@ -68,7 +45,6 @@ import Obsmetrologia.AperiodicOrder.Tiling.SynonymyAntonymy
 import Obsmetrologia.AperiodicOrder.Tiling.TransfiniteUpToClosure
 import Obsmetrologia.AperiodicOrder.Tiling.Universality
 import Obsmetrologia.AperiodicOrder.Tiling.UpToClosureCoinduction
-import Obsmetrologia.AperiodicOrder.Tiling.WeaveDraft
 import Obsmetrologia.AperiodicOrder.Tiling.Witness.DecidableCore
 import Obsmetrologia.AperiodicOrder.Tiling.Witness.HatMetatile
 import Obsmetrologia.AperiodicOrder.Tiling.Witness.HatReflectionFrequency
@@ -79,14 +55,14 @@ import Obsmetrologia.AperiodicOrder.Tiling.Witness.JeandelRaoSubstitution
 import Obsmetrologia.AperiodicOrder.Tiling.Witness.JeandelRaoSubstitutionTower
 
 /-!
-# AperiodicOrder — aperiodic tilings and quasicrystalline matter
+# AperiodicOrder — aperiodic tilings
 
-The substitution-system/tiling core (`Tiling`, incl. the metallic-mean `StepN` tower
-and the Jeandel-Rao `Witness` cohomology computations), the proved reduction chain
-`Tile -> Bead -> Crystal -> Quasicrystal -> Glass` (`Crystal`), the glass phase's own
-dynamics (`GlassDynamics`: basins, kinetically constrained facilitation, replica
-overlap, dynamic heterogeneity, gauge rotation), the material sector/phase readouts
-built on top of the tiling and glass carriers (`MaterialSectors`, incl. the keratin
-contact-complex material texture and its Collatz-barrier bridge), and the crystal/
-quasicrystal/glass reading of the general cohomological defect invariant (`Defect`).
+The substitution-system/tiling core (`Tiling`, incl. the metallic-mean `StepN` tower,
+the port-graph and lenticle carriers, and the Jeandel-Rao `Witness` cohomology
+computations) and the tiling moduli.
+
+The matter built on these carriers — the `Tile -> Bead -> Crystal -> Quasicrystal -> Glass`
+chain, glass dynamics, defects, condensate matter — is in `ObsmetrologiaPhysicalScience`;
+the material sector readouts are in `ObsmetrologiaMaterials`; the weave draft is in
+`ObsmetrologiaFibercraft`.
 -/

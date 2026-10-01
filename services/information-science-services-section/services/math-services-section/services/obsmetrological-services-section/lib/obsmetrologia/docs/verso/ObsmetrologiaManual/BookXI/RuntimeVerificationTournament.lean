@@ -1,5 +1,5 @@
 import ObsmetrologiaManual.DocSetup
-import Obsmetrologia.GameTheory.VerificationTournament
+import ObsmetrologiaComputing.GameTheory.VerificationTournament
 
 open Verso.Genre Manual InlineLean
 open Obsmetrologia

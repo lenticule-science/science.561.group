@@ -1,15 +1,16 @@
 import ObsmetrologiaManual.DocSetup
 import Obsmetrologia.AperiodicOrder.Tiling.History
 import Obsmetrologia.AperiodicOrder.Tiling.InverseHull
-import Obsmetrologia.AperiodicOrder.Tiling.MatterTopology
-import Obsmetrologia.AperiodicOrder.Tiling.BoundaryLinkGraphMatter
-import Obsmetrologia.AperiodicOrder.Tiling.Percolation
+import ObsmetrologiaPhysicalScience.CondensedMatter.MatterTopology
+import ObsmetrologiaComputing.BoundaryLinkGraphMatter
+import ObsmetrologiaPhysicalScience.CondensedMatter.Percolation
 import Obsmetrologia.AperiodicOrder.Tiling.Diffraction
 import Obsmetrologia.AperiodicOrder.Tiling.FiniteInfiniteCharger
 import Obsmetrologia.AperiodicOrder.Tiling.StepN.FixedPoint
 import Obsmetrologia.AperiodicOrder.Tiling.Witness.JeandelRaoDecidableCore
 import Obsmetrologia.AperiodicOrder.Tiling.Witness.JeandelRaoSubstitutionTower
 import Obsmetrologia.AperiodicOrder.Tiling.Witness.JeandelRaoPersistence
+import ObsmetrologiaFibercraft.LenticleCrossing
 
 open Verso.Genre Manual InlineLean
 open Obsmetrologia

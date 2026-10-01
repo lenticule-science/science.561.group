@@ -1,5 +1,5 @@
 import ObsmetrologiaManual.DocSetup
-import Obsmetrologia.CausalSets.Causal.ArrowOfTime
+import ObsmetrologiaPhysicalScience.CausalSets.Causal.ArrowOfTime
 
 open Verso.Genre Manual InlineLean
 open Obsmetrologia

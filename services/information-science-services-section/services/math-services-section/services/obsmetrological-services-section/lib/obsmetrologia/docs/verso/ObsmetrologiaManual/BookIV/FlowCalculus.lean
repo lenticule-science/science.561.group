@@ -2,7 +2,7 @@ import ObsmetrologiaManual.DocSetup
 import Obsmetrologia.Dynamics.Flow.LawvereLaplacianSpectralGap
 import Obsmetrologia.Calculus.Probability.Stochastic
 import Obsmetrologia.Calculus.Probability.Dequantization
-import Obsmetrologia.Computing.FormatsFour
+import ObsmetrologiaComputing.FormatsFour
 
 open Verso.Genre Manual InlineLean
 open Obsmetrologia

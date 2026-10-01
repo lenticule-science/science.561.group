@@ -6,7 +6,6 @@ import Obsmetrologia.Cohomology.CRDTCohomologicalCALM
 import Obsmetrologia.Cohomology.CoordinationCohomology
 import Obsmetrologia.Cohomology.DifferentialBypass
 import Obsmetrologia.Cohomology.FrobeniusTQFT
-import Obsmetrologia.Cohomology.HoleDiamondHusainov
 import Obsmetrologia.Cohomology.InconsistencySheaf
 import Obsmetrologia.Cohomology.KZCoherentSheaf
 import Obsmetrologia.Cohomology.LandauerEntropy

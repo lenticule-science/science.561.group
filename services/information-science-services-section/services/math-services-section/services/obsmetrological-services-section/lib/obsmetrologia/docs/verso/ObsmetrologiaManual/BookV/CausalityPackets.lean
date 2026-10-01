@@ -1,5 +1,5 @@
 import ObsmetrologiaManual.DocSetup
-import Obsmetrologia.Computing.CausalityPacket
+import ObsmetrologiaComputing.CausalityPacket
 
 open Verso.Genre Manual InlineLean
 open Obsmetrologia

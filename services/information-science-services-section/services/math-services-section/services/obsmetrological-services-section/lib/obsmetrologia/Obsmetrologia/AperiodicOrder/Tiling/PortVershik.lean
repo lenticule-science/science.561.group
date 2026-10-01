@@ -1,9 +1,9 @@
-import Obsmetrologia.AperiodicOrder.Tiling.PortGrowthTime
+import Obsmetrologia.AperiodicOrder.Tiling.PortGrowth
 
 /-!
 # The Vershik adic successor: the serial yarn order completing Bratteli–Vershik
 
-`PortGrowth` gives the Bratteli tower's **edges** (the incidence) and `PortGrowthTime` gives its
+`PortGrowth` gives the Bratteli tower's **edges** (the incidence) and `PortGrowthTime` (physical-science package) gives its
 **levels** (time = past-count). The third and last piece of a Bratteli–Vershik system is the
 **adic successor** — the map that takes one path to the next in the serial order. This module
 builds it on the dyadic (radix-2) stationary tower, the canonical minimal Cantor system, where the

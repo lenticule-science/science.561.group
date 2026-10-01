@@ -1,9 +1,9 @@
 import ObsmetrologiaManual.DocSetup
-import Obsmetrologia.CausalSets.Support.Microlocal
-import Obsmetrologia.CausalSets.Support.Causal
-import Obsmetrologia.CausalSets.Support.Cotangent
-import Obsmetrologia.CausalSets.Support.Valued
-import Obsmetrologia.CausalSets.Support.Polarization
+import ObsmetrologiaPhysicalScience.CausalSets.Support.Microlocal
+import ObsmetrologiaPhysicalScience.CausalSets.Support.Causal
+import ObsmetrologiaPhysicalScience.CausalSets.Support.Cotangent
+import ObsmetrologiaPhysicalScience.CausalSets.Support.Valued
+import ObsmetrologiaPhysicalScience.CausalSets.Support.Polarization
 
 open Verso.Genre Manual InlineLean
 open Obsmetrologia

@@ -1,5 +1,5 @@
 import ObsmetrologiaManual.DocSetup
-import Obsmetrologia.DenseMatter.Quark
+import ObsmetrologiaPhysicalScience.DenseMatter.Quark
 
 open Verso.Genre Manual InlineLean
 open Obsmetrologia

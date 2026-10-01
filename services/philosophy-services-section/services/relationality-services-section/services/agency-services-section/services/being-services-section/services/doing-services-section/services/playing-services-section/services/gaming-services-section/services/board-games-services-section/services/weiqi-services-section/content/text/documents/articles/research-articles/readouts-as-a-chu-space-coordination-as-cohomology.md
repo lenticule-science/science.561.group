@@ -110,7 +110,7 @@ audit records this as "the strongest new bridge recovered," open beyond
 "total deterministic Boolean programs to FOUR-valued, partial,
 relational, resource-sensitive, and refusing programs." That generalized
 Hoare program is carried by
-[Obsmetrologia/Computing/HoareProgram.lean](../../../../../../../../../../../../../../../../../../../../../../information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/obsmetrologia/Obsmetrologia/Computing/HoareProgram.lean).
+[ObsmetrologiaComputing/HoareProgram.lean](../../../../../../../../../../../../../../../../../../../../../../information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/obsmetrologia-computing/ObsmetrologiaComputing/HoareProgram.lean).
 
 A weiqi move is exactly the shape `{P} move {Q}`: a precondition
 (legality — no occupied point, no suicide, no ko-regime violation), the

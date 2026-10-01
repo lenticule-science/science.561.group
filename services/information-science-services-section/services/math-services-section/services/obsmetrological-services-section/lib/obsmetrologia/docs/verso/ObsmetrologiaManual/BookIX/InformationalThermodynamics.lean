@@ -1,5 +1,5 @@
 import ObsmetrologiaManual.DocSetup
-import Obsmetrologia.Thermodynamics.Temperature
+import ObsmetrologiaPhysicalScience.Thermodynamics.Temperature
 
 open Verso.Genre Manual InlineLean
 open Obsmetrologia

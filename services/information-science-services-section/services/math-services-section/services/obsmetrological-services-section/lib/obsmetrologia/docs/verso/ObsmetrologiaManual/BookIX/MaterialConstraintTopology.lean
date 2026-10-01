@@ -1,8 +1,8 @@
 import ObsmetrologiaManual.DocSetup
-import Obsmetrologia.AperiodicOrder.GlassDynamics.Overlap
-import Obsmetrologia.AperiodicOrder.GlassDynamics.Heterogeneity
-import Obsmetrologia.AperiodicOrder.GlassDynamics.Basin
-import Obsmetrologia.AperiodicOrder.Crystal.Glass
+import ObsmetrologiaPhysicalScience.CondensedMatter.GlassDynamics.Overlap
+import ObsmetrologiaPhysicalScience.CondensedMatter.GlassDynamics.Heterogeneity
+import ObsmetrologiaPhysicalScience.CondensedMatter.GlassDynamics.Basin
+import ObsmetrologiaPhysicalScience.CondensedMatter.Crystal.Glass
 import Obsmetrologia.Calculus.Order.PersistentH0
 
 open Verso.Genre Manual InlineLean

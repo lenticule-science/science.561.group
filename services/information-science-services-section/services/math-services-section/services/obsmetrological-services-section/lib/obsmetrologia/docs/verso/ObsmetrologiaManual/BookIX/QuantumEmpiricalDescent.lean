@@ -1,6 +1,6 @@
 import ObsmetrologiaManual.DocSetup
-import Obsmetrologia.QuantumContextuality.EmpiricalModel
-import Obsmetrologia.QuantumContextuality.HardyEmpiricalModel
+import ObsmetrologiaPhysicalScience.QuantumContextuality.EmpiricalModel
+import ObsmetrologiaPhysicalScience.QuantumContextuality.HardyEmpiricalModel
 
 open Verso.Genre Manual InlineLean
 open Obsmetrologia

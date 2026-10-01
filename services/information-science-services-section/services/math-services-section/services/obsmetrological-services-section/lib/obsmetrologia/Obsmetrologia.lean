@@ -47,25 +47,25 @@ introduces an `axiom`, `opaque`, or `constant`.
 * `Obsmetrologia.BigradedCohomology` — the aperiodic-regime **trichotomy** (consistent /
                                paraconsistent / mixed) + the internal **ℤ/2 gauge** (`~`).
 * `Obsmetrologia.Settlement`       — the recurring site/settlement shape (a bare base paired
-                               with content admitted by its own law), one cell instantiated
-                               at `Tiles`, `Beads`, `Hole`, and the bitopological settling
-                               site's Čech gluing.
-* `Obsmetrologia.AperiodicOrder`   — aperiodic tilings and quasicrystalline matter: the
-                               substitution-system/tiling core, the proved reduction
-                               chain `Tile → Bead → Crystal → Quasicrystal → Glass`,
-                               the glass phase's own dynamics, and the material
-                               sector/phase readouts built on those carriers.
-* `Obsmetrologia.CausalSets`       — causal set theory: the causal order, its Alexandrov
-                               topology, curvature, dimension, and the black-hole
-                               no-readout regions and horizons built on it.
-* `Obsmetrologia.QuantumContextuality` — quantum contextuality: KCBS, Hardy, the PR box,
-                               and the Fock condensate.
-* `Obsmetrologia.KineticTheory`    — kinetic theory of gases, liquids, plasmas, and fluids.
-* `Obsmetrologia.ReactionNetworks` — chemical reaction network theory.
-* `Obsmetrologia.DenseMatter`      — dense-matter physics: neutron-star equations of state
-                               and the quark gauge/Wilson-loop bridge.
-* `Obsmetrologia.GameTheory`       — the verification-tournament certificate: Nash
-                               stability over a monotone closure orbit.
+                               with content admitted by its own law), instantiated here at
+                               the bitopological settling site's Čech gluing.
+* `Obsmetrologia.AperiodicOrder`   — aperiodic tilings: the substitution-system/tiling core,
+                               the port-graph and lenticle carriers, and their moduli.
+
+## Pure mathematics only
+
+This package holds mathematics and nothing else. Theory whose objects are physical, chemical,
+material, craft, economic, or software entities lives in packages that import this one, in the
+section that owns the subject:
+
+* `ObsmetrologiaPhysicalScience` — causal sets, condensed matter (crystal, glass, defects),
+  kinetic theory, thermodynamics, dense matter, quantum contextuality, reaction networks.
+* `ObsmetrologiaMaterials` — material sectors, contact mechanics, vitrimer exchange.
+* `ObsmetrologiaEconomics` — attention allocation, the allocation solver, currency cocones.
+* `ObsmetrologiaFibercraft` — weave drafts and lenticle crossings.
+* `ObsmetrologiaComputing` — program formats, Hoare programs, causality packets, game theory.
+
+Nothing in this package may import any of them.
 -/
 import Obsmetrologia.Primitive
 import Obsmetrologia.Articulation
@@ -76,19 +76,8 @@ import Obsmetrologia.Closure
 import Obsmetrologia.Cohomology
 import Obsmetrologia.Dynamics
 import Obsmetrologia.AperiodicOrder
-import Obsmetrologia.Thermodynamics
-import Obsmetrologia.CausalSets
-import Obsmetrologia.QuantumContextuality
-import Obsmetrologia.Cohomology.CurrencyCocone
-import Obsmetrologia.Cohomology.AttentionAllocation
-import Obsmetrologia.Cohomology.AllocationSolver
 import Obsmetrologia.Cohomology.FiringGenerators
 import Obsmetrologia.Closure.RegimeGate
 import Obsmetrologia.Closure.RegimeCofinality
 import Obsmetrologia.Closure.Monad.LaxSlack
-import Obsmetrologia.KineticTheory
-import Obsmetrologia.ReactionNetworks
-import Obsmetrologia.DenseMatter
-import Obsmetrologia.GameTheory
-import Obsmetrologia.Computing
 import Obsmetrologia.Settlement

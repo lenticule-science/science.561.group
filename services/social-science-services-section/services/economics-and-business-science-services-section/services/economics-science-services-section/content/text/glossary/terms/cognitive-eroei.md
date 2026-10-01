@@ -12,7 +12,7 @@ provenance:
   sources:
     - lib/emsenn/services/561-group/services/engineering-services-section/content/text/documents/articles/notes/2026/08/01/2026-08-01-note-on-the-content-addressed-glass-sponge-semantic-compute-complex.md#19-cognitive-eroei-and-metabolic-criticality
     - lib/emsenn/services/561-group/services/science-services-section/services/social-science-services-section/services/economics-and-business-science-services-section/services/economics-science-services-section/content/text/glossary/terms/energy-return-on-investment.md
-    - lib/emsenn/services/561-group/services/science-services-section/services/information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/obsmetrologia/Obsmetrologia/Cohomology/AttentionAllocation.lean
+    - lib/emsenn/services/561-group/services/science-services-section/services/information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/obsmetrologia-economics/ObsmetrologiaEconomics/AttentionAllocation.lean
 ---
 
 Cognitive EROEI is a proposed account of whether a bounded inference process

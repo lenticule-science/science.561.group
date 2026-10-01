@@ -2,7 +2,7 @@ import ObsmetrologiaManual.DocSetup
 import Obsmetrologia.Cohomology.AlexandrovHusainov
 import Obsmetrologia.Cohomology.AntiLandauerEntropy
 import Obsmetrologia.Cohomology.CRDTCohomologicalCALM
-import Obsmetrologia.AperiodicOrder.Defect
+import ObsmetrologiaPhysicalScience.CondensedMatter.Defect
 import Obsmetrologia.Cohomology.LandauerEntropy
 import Obsmetrologia.Cohomology.NegativeParaconsistentSheaf
 import Obsmetrologia.Cohomology.TransfiniteCellComplex

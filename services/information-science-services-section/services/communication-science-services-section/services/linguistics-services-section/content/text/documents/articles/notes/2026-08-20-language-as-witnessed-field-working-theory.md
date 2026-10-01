@@ -102,7 +102,7 @@ applied to a language it is reconstruction with error budgets; applied
 forward it grades a proposed coinage by whether it lies within the
 language's own generative cone (the neologism conformance readout).
 Curvature enters through Lambek bi-residuation
-(Obsmetrologia/CausalSets/Curvature/Lambek.lean:
+(ObsmetrologiaPhysicalScience/CausalSets/Curvature/Lambek.lean:
 residuals_coincide_iff_commutative): where composition is most
 non-commutative the field curves, and curvature concentrates at typological
 obstructions. Typology is field geometry; L2 difficulty is transport cost

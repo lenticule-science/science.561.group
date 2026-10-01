@@ -1,8 +1,8 @@
 import ObsmetrologiaManual.DocSetup
-import Obsmetrologia.AperiodicOrder.MaterialSectors.Contact.ShroudIndexedKeratin
-import Obsmetrologia.CausalSets.BlackHoles.Hole
-import Obsmetrologia.DenseMatter.Neutron.EOS
-import Obsmetrologia.DenseMatter.Neutron.PastaTopology
+import ObsmetrologiaMaterials.Contact.ShroudIndexedKeratin
+import ObsmetrologiaPhysicalScience.CausalSets.BlackHoles.Hole
+import ObsmetrologiaPhysicalScience.DenseMatter.Neutron.EOS
+import ObsmetrologiaPhysicalScience.DenseMatter.Neutron.PastaTopology
 
 open Verso.Genre Manual InlineLean
 open Obsmetrologia

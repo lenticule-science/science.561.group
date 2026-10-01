@@ -1,12 +1,10 @@
 import Obsmetrologia.Site.Basic
-import Obsmetrologia.QuantumContextuality.FockCondensate
-import Obsmetrologia.AperiodicOrder.MaterialSectors.SectorPhaseDiagram
 
 /-!
 # Filters, fibers, and sectors
 
-This module records the general shape that the site, Fock, and material-sector
-constructions already share without collapsing them:
+This module records the general shape that site covers, Fock sectors, and material
+sectors share without collapsing them:
 
 * a **filter** is a predicate selecting admissible points inside an already named fiber;
 * a **fiber** is a family indexed by a base;
@@ -16,6 +14,10 @@ constructions already share without collapsing them:
 
 The point is structural hygiene: filters do not move the base, fibers are indexed
 families, and sectors are parallel axes rather than rungs of one ladder.
+
+Only the site instance lives here. The Fock instance (`fockSectorFamily`) is in the
+physical-science package and the material instance (`materialSectorFamily`) in the materials
+package; both import this module.
 -/
 
 namespace Obsmetrologia
@@ -80,70 +82,6 @@ theorem siteCoverFilter_is_fiber_local {U : Site.Clopen} {fam : List Site.Clopen
     (h : siteCoverFilter.accepts U fam) :
     (∀ Ui ∈ fam, Ui ⊑ U) ∧ Site.joinList fam = U :=
   Site.covers_is_fiber_local h
-
-/-! ## Fock sectors as an axis-indexed family -/
-
-/-- Fock sectors are indexed by particle number. -/
-def fockSectorFamily (Mode : Type) : SectorFamily Nat where
-  Sector := fun n => Fin n → Mode
-
-/-- The total space of the particle-number sector family is the existing finite Fock carrier. -/
-def fockSectorTotal_toFockSpace {Mode : Type}
-    (s : (fockSectorFamily Mode).Total) : QuantumContextuality.FockSpace Mode :=
-  s
-
-/-- The existing finite Fock carrier is the total space of the particle-number sector family. -/
-def fockSpace_toFockSectorTotal {Mode : Type}
-    (s : QuantumContextuality.FockSpace Mode) : (fockSectorFamily Mode).Total :=
-  s
-
-/-- The Fock total-space identification round-trips on sector-family points. -/
-theorem fockSectorTotal_roundtrip {Mode : Type}
-    (s : (fockSectorFamily Mode).Total) :
-    fockSpace_toFockSectorTotal (fockSectorTotal_toFockSpace s) = s := by
-  cases s
-  rfl
-
-/-! ## Material sectors as a product of axes -/
-
-open Obsmetrologia.AperiodicOrder.Tiling
-open Obsmetrologia.AperiodicOrder.Tiling.Moduli
-open Obsmetrologia.AperiodicOrder.MaterialSectors.SectorPhaseDiagram
-
-/-- The transport sector fiber retains its ordinal and moduli indices. -/
-abbrev MaterialTransportFiber : Type 1 :=
-  @Sigma Ord (fun κ => @Sigma ModuliPoint (fun p => TransportSector κ p))
-
-/-- The material sector family: structural, transport, and topological axes have distinct
-fiber types. The structural/topological sectors are lifted only so this mixed universe
-family can sit beside the higher transport fiber. Thermal data remains a control
-parameter outside this sector family. -/
-def materialSectorFamily : SectorFamily.{1} MaterialSector where
-  Sector
-    | MaterialSector.structural => ULift StructuralSector
-    | MaterialSector.transport => MaterialTransportFiber
-    | MaterialSector.topological => ULift TopologicalSector
-
-/-- A material sector phase point is a section through the material sector family,
-with transport retaining its ordinal/moduli indices. -/
-def materialSectorSectionOfPoint {G : AperiodicOrder.Crystal.Glass}
-    {γ : G.RatBasinFreeEnergyBridge} {b : G.basins.Basin} {θ : Real.Internal.Rat}
-    {κ : Ord} {p : ModuliPoint}
-    (P : SectorPhasePoint γ b θ κ p) :
-    (a : MaterialSector) → materialSectorFamily.Sector a
-  | MaterialSector.structural => ULift.up P.structural
-  | MaterialSector.transport => ⟨κ, p, P.transport⟩
-  | MaterialSector.topological => ULift.up P.topological
-
-/-- Reading a material phase point as a sector section preserves the proved bridge:
-metallizable transport and conducting topology are carried together at the material
-carrier, not collapsed into one sector. -/
-theorem materialSectorSection_metallic_transport_conducts {G : AperiodicOrder.Crystal.Glass}
-    {γ : G.RatBasinFreeEnergyBridge} {b : G.basins.Basin} {θ : Real.Internal.Rat}
-    {κ : Ord} {p : ModuliPoint}
-    (P : SectorPhasePoint γ b θ κ p) :
-    P.transport.readout = TransportReadout.metallizable ∧ P.topological.Conducting :=
-  P.metallic_transport_conducts
 
 end Site.FilterFiberSector
 end Obsmetrologia

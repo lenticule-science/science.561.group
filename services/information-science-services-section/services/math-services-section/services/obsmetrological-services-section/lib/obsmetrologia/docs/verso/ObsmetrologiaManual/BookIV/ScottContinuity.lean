@@ -2,7 +2,7 @@ import ObsmetrologiaManual.DocSetup
 import Obsmetrologia.Closure.Scott
 import Obsmetrologia.Cohomology.ScottFace
 import Obsmetrologia.AperiodicOrder.Tiling.KappaStratification
-import Obsmetrologia.AperiodicOrder.MaterialSectors.KappaSectorCharges
+import ObsmetrologiaMaterials.KappaSectorCharges
 
 open Verso.Genre Manual InlineLean
 open Obsmetrologia

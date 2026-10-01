@@ -1,5 +1,5 @@
 import ObsmetrologiaManual.DocSetup
-import Obsmetrologia.CausalSets.BlackHoles.Horizon
+import ObsmetrologiaPhysicalScience.CausalSets.BlackHoles.Horizon
 
 open Verso.Genre Manual InlineLean
 

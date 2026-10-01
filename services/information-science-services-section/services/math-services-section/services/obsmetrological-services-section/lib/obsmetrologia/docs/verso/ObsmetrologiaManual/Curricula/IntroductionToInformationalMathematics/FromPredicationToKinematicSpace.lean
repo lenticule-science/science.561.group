@@ -1,5 +1,5 @@
 import ObsmetrologiaManual.DocSetup
-import Obsmetrologia.CausalSets.BlackHoles.DiamondBeads
+import ObsmetrologiaPhysicalScience.CausalSets.BlackHoles.DiamondBeads
 import Obsmetrologia.Language.Predicating.Cell
 
 open Verso.Genre Manual InlineLean

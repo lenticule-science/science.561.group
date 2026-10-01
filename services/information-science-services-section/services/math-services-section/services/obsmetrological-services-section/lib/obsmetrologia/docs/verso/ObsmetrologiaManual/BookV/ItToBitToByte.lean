@@ -1,7 +1,7 @@
 import ObsmetrologiaManual.DocSetup
 import Obsmetrologia.Articulation
 import Obsmetrologia.Closure.Collatz.AffineTrace
-import Obsmetrologia.Computing.FormatsFour
+import ObsmetrologiaComputing.FormatsFour
 import Obsmetrologia.Language.Positing.BigradedTower
 import Obsmetrologia.Cohomology.AntiLandauerEntropy
 

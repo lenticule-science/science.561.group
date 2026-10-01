@@ -1,11 +1,11 @@
 import ObsmetrologiaManual.DocSetup
-import Obsmetrologia.AperiodicOrder.GlassDynamics.KCM
-import Obsmetrologia.KineticTheory.Fluid.VortexCohomology
-import Obsmetrologia.KineticTheory.Plasma.ReconnectionCurvature
-import Obsmetrologia.ReactionNetworks.SupportProjection
-import Obsmetrologia.QuantumContextuality.HardyModel
-import Obsmetrologia.QuantumContextuality.PentagonSymmetry
-import Obsmetrologia.QuantumContextuality.KCBS
+import ObsmetrologiaPhysicalScience.CondensedMatter.GlassDynamics.KCM
+import ObsmetrologiaPhysicalScience.KineticTheory.Fluid.VortexCohomology
+import ObsmetrologiaPhysicalScience.KineticTheory.Plasma.ReconnectionCurvature
+import ObsmetrologiaPhysicalScience.ReactionNetworks.SupportProjection
+import ObsmetrologiaPhysicalScience.QuantumContextuality.HardyModel
+import ObsmetrologiaPhysicalScience.QuantumContextuality.PentagonSymmetry
+import ObsmetrologiaPhysicalScience.QuantumContextuality.KCBS
 
 open Verso.Genre Manual InlineLean
 open Obsmetrologia

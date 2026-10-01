@@ -1,9 +1,9 @@
 import ObsmetrologiaManual.DocSetup
-import Obsmetrologia.CausalSets.Dimension.Fingerprint
-import Obsmetrologia.CausalSets.Dimension.Manifoldlikeness
-import Obsmetrologia.CausalSets.Continuum.Hauptvermutung
-import Obsmetrologia.CausalSets.Continuum.Sprinkling
-import Obsmetrologia.CausalSets.Continuum.ChuActionColimit
+import ObsmetrologiaPhysicalScience.CausalSets.Dimension.Fingerprint
+import ObsmetrologiaPhysicalScience.CausalSets.Dimension.Manifoldlikeness
+import ObsmetrologiaPhysicalScience.CausalSets.Continuum.Hauptvermutung
+import ObsmetrologiaPhysicalScience.CausalSets.Continuum.Sprinkling
+import ObsmetrologiaPhysicalScience.CausalSets.Continuum.ChuActionColimit
 
 open Verso.Genre Manual InlineLean
 open Obsmetrologia

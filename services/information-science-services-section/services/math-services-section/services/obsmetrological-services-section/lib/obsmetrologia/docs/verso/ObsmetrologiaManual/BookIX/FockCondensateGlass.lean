@@ -1,5 +1,5 @@
 import ObsmetrologiaManual.DocSetup
-import Obsmetrologia.QuantumContextuality.FockCondensate
+import ObsmetrologiaPhysicalScience.QuantumContextuality.FockCondensate
 
 open Verso.Genre Manual InlineLean
 open Obsmetrologia

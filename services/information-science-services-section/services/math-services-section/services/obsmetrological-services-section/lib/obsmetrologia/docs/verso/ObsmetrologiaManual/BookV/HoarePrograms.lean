@@ -1,5 +1,5 @@
 import ObsmetrologiaManual.DocSetup
-import Obsmetrologia.Computing.HoareProgram
+import ObsmetrologiaComputing.HoareProgram
 
 open Verso.Genre Manual InlineLean
 open Obsmetrologia

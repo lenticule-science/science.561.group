@@ -36,7 +36,7 @@ with stated error budgets rather than scholarly consensus; applied forward,
 it grades a proposed coinage by whether it falls inside the language's own
 generative cone — the readout named [neologism
 conformance](./neologism-conformance.md). Curvature enters through Lambek
-bi-residuation (`Obsmetrologia/CausalSets/Curvature/Lambek.lean`, theorem
+bi-residuation (`ObsmetrologiaPhysicalScience/CausalSets/Curvature/Lambek.lean`, theorem
 `residuals_coincide_iff_commutative`): where composition is most
 non-commutative, the field curves, and curvature concentrates at
 typological obstructions between languages — the instrument built on this is

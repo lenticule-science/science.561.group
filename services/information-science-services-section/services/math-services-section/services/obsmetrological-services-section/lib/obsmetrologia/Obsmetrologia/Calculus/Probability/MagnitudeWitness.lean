@@ -1,5 +1,4 @@
 import Obsmetrologia.Calculus.Probability.Dequantization
-import Obsmetrologia.CausalSets.Action.EinsteinHilbertAction
 
 /-!
 # The magnitude witness — the non-divisibility `D ∤ C` that dequantization forgets
@@ -17,7 +16,8 @@ restore.
 
 At a causal boundary the curvature magnitude is `±1`, whose witness is always on (`D ∤ 1` for
 every `D ≥ 2`); in the flat interior the magnitude is `0`, whose witness is off (`D ∣ 0`). So
-curvature ≠ 0 ↔ the witness fires (`diamond_boundary_witness`, `diamond_interior_no_witness`).
+curvature ≠ 0 ↔ the witness fires (`diamond_boundary_witness`, `diamond_interior_no_witness`, in the
+physical-science package's `CausalSets.Action.DiamondDequantization`).
 The non-vanishing of curvature, the descent depth, and the residue gap are one non-divisibility
 `D ∤ C` — the magnitude `supp` throws away.
 
@@ -29,12 +29,11 @@ The non-vanishing of curvature, the descent depth, and the residue gap are one n
 
 * `supp_blind_to_dvd` — the support map cannot see divisibility: same support, different `D ∣ ·`.
 * `witness_one` / `witness_zero` — the witness is always on at magnitude `1`, off at `0`.
-* `diamond_boundary_witness` / `diamond_interior_no_witness` — curvature `≠ 0` iff the witness fires.
 
 ## References
 
 `content/.../valuation/content/maslov-dequantization`; the support map of `Probability.Dequantization`, the
-residue gap of `Closure.Collatz.ResidueGap`, the curvature of `CausalSets.Action.EinsteinHilbertAction`.
+residue gap of `Closure.Collatz.ResidueGap`.
 
 ## Tags
 
@@ -43,9 +42,6 @@ non-divisibility, residue gap, descent depth, dequantization, magnitude, curvatu
 
 namespace Obsmetrologia
 namespace Probability.Dequantization
-
-open Obsmetrologia.CausalSets.Action.EinsteinHilbertAction
-open Obsmetrologia.CausalSets.Dimension.OrderingFraction
 
 /-! ## (A) The divisibility witness -/
 
@@ -79,26 +75,6 @@ theorem supp_blind_to_dvd (D : Nat) (hD : 2 ≤ D) :
     have h1 : D ∣ 1 := (Nat.dvd_add_right (Nat.dvd_refl D)).mp h
     have := Nat.le_of_dvd Nat.one_pos h1
     omega
-
-/-! ## (C) The curvature witness — `≠ 0` iff the witness fires
-
-The diamond's local curvature is `1` at the minimal (past-boundary) event and `0` in the interior
-(`diamond_localCurvature`). Reading its magnitude through `witness` shows the witness fires exactly
-where the curvature is nonzero — the discrete Ricci witness as a non-divisibility. -/
-
-/-- **The diamond's boundary curvature carries the witness.** The magnitude `|□1(0)| = 1` gives
-`witness D = true` for every `D ≥ 2`: the past-boundary curvature is an always-on non-divisibility. -/
-theorem diamond_boundary_witness (D : Nat) (hD : 2 ≤ D) :
-    witness D (Int.natAbs (localCurvature fourEvents diamondPrec 0)) = true := by
-  rw [show localCurvature fourEvents diamondPrec 0 = 1 from diamond_localCurvature.1]
-  exact witness_one D hD
-
-/-- **The diamond's interior carries no witness.** The magnitude `|□1(3)| = 0` gives `witness D =
-false`: the flat interior has `D ∣ 0`, no non-divisibility. So curvature `≠ 0 ↔` the witness fires. -/
-theorem diamond_interior_no_witness (D : Nat) :
-    witness D (Int.natAbs (localCurvature fourEvents diamondPrec 3)) = false := by
-  rw [show localCurvature fourEvents diamondPrec 3 = 0 from diamond_localCurvature.2.2.2]
-  exact witness_zero D
 
 end Probability.Dequantization
 end Obsmetrologia

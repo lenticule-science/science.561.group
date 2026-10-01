@@ -1,6 +1,6 @@
 import ObsmetrologiaManual.DocSetup
-import Obsmetrologia.CausalSets.Causal.Diamond
-import Obsmetrologia.CausalSets.Incidence.Mobius
+import ObsmetrologiaPhysicalScience.CausalSets.Causal.Diamond
+import ObsmetrologiaPhysicalScience.CausalSets.Incidence.Mobius
 
 open Verso.Genre Manual InlineLean
 open Obsmetrologia

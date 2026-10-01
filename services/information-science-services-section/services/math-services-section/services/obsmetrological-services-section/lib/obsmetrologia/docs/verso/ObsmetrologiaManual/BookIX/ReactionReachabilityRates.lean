@@ -1,7 +1,7 @@
 import ObsmetrologiaManual.DocSetup
-import Obsmetrologia.ReactionNetworks.Reachability
-import Obsmetrologia.ReactionNetworks.MassActionRate
-import Obsmetrologia.ReactionNetworks.DetailedBalance
+import ObsmetrologiaPhysicalScience.ReactionNetworks.Reachability
+import ObsmetrologiaPhysicalScience.ReactionNetworks.MassActionRate
+import ObsmetrologiaPhysicalScience.ReactionNetworks.DetailedBalance
 
 open Verso.Genre Manual InlineLean
 open Obsmetrologia
