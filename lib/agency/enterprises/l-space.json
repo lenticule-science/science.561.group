@@ -1,0 +1,30 @@
+{
+  "id": "l-space",
+  "name": "L-Space",
+  "kind": "market",
+  "entity": "561-group-llc",
+  "faces": "Readers and researchers of Lenticule Science's research corpus, published as the public knowledge garden at l-space.561.group and walked as the VaultMaze world.",
+  "offices": [
+    "l-space-lead"
+  ],
+  "host": "bare-cedar-fog",
+  "takes": {
+    "words": [
+      "l-space",
+      "lspace",
+      "vaultmaze",
+      "knowledge garden",
+      "lenticule"
+    ],
+    "limit": 4
+  },
+  "assesses": {
+    "work": "assessing-l-space-demand",
+    "skill": "assess-taken-demand"
+  },
+  "x-provenance": {
+    "recorded-by": "claude-opus-5-5",
+    "recorded-on": "2026-09-30",
+    "source": "561-group-services-section/content/text/documents/articles/notes/2026/09/30/2026-09-30-note-on-micro-enterprises-holding-their-own-work.md"
+  }
+}
