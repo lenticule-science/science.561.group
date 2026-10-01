@@ -12,7 +12,7 @@
 
 import { execFileSync } from 'node:child_process';
 import { timingSafeEqual } from 'node:crypto';
-import { join } from 'node:path';
+import { join, relative, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { SIGN_IN_PATH, createWebAdmissionApplication, defaultPublicRoute } from '@red-cup-engineering/computer-web-server/admission/application';
 import { createPrincipalRegistry } from '@red-cup-engineering/computer-web-server/admission/principals';
@@ -30,6 +30,9 @@ import { createImmutableContentCustody } from '@red-cup-engineering/immutable-co
 import { createFileStore, createPathContent } from '@red-cup-engineering/immutable-content-custody-service/file-store';
 import { niResource } from '@red-cup-engineering/http-services-section/ni';
 import { s3Resource } from '@red-cup-engineering/http-services-section/s3';
+
+/** The 561 Group's root, against which a garden's section path (and so its glossary's concept IRIs) is named. */
+export const GROUP_ROOT = fileURLToPath(new URL('../../../../../', import.meta.url));
 
 /** The content root: the Lenticule Science section, every `content/` tree beneath it. */
 export const SCIENCE_ROOT = fileURLToPath(new URL('../../../', import.meta.url));
@@ -171,8 +174,16 @@ export const lSpaceRoot = (environment = process.env) => setting('LSPACE_ROOT', 
  *  An instance whose site is part of its garden (Binding Generations') drops 'sites'. */
 export const lSpaceExcludes = (environment = process.env) => setting('LSPACE_EXCLUDE', environment)?.split(',').map((segment) => segment.trim()).filter(Boolean) ?? [...EXCLUDED_SEGMENTS];
 const lSpaceCatalog = (environment) => ({ ...LSPACE_CATALOG, wing: setting('LSPACE_WING', environment) ?? LSPACE_CATALOG.wing, exclude: lSpaceExcludes(environment) });
+/** Where a garden's root sits in the 561 Group: `services/science-services-section` for the Lenticule Science forest. */
+export const lSpaceSectionPath = (root) => {
+  const path = relative(GROUP_ROOT, root).split(sep).join('/');
+  if (path.startsWith('..')) throw new TypeError(`L-Space root ${root} is outside the 561 Group`);
+  return path;
+};
+
 const lSpaceProjection = (environment) => ({
   ...LSPACE_PROJECTION,
+  glossary: { sectionPath: lSpaceSectionPath(lSpaceRoot(environment)) },
   ...(setting('LSPACE_TITLE', environment) === undefined ? {} : { title: setting('LSPACE_TITLE', environment) }),
   ...(setting('LSPACE_SUBTITLE', environment) === undefined ? {} : { subtitle: setting('LSPACE_SUBTITLE', environment), description: setting('LSPACE_SUBTITLE', environment) }),
 });

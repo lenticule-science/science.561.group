@@ -18,7 +18,10 @@ L-Space. What it composes is owned elsewhere:
   root, the browser engine projected from the education platform, CAIRN, and
   TUFTE, and the content-addressed room release under `/vault/`, with its
   anonymous tree under `/vault/public/` holding only rooms whose own frontmatter
-  says `visibility: public`. It also keeps each reader's review state.
+  says `visibility: public`. Its public glossary terms are also served as one
+  machine-readable vocabulary at `/vault/public/glossary.jsonld` (SKOS and
+  schema.org `DefinedTerm`), which anonymous readers may fetch. It also keeps
+  each reader's review state.
 - **GEODE** is the workbench the author is admitted to, mounted as its own
   application over a live checkout when `GEODE_AUTHORING_ROOT` names one.
 - **The web admission service** decides who may read what, and keeps signed sessions and the
