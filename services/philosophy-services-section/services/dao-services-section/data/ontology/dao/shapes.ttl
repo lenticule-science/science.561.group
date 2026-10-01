@@ -1,6 +1,6 @@
 # GENERATED — do not edit by hand.
 # Regenerate with json-schema-to-owl-shacl-service's project-json-schema-as-ontology
-# over /home/emsenn/info/lib/emsenn/services/561-group/services/science-services-section/services/philosophy-services-section/services/dao-services-section/data/records/schema/glossary/terms, after editing a *.schema.json file there.
+# over ../../records/schema/glossary/terms (relative to this file), after editing a *.schema.json file there.
 # Classes minted: glossary/terms/house-translation, glossary/terms/translation-rendering, glossary/terms/translation-variance-record.
 
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -73,7 +73,8 @@
     sh:message "citekey is required per glossary/terms/translation-rendering" ;
     sh:minCount 1 ;
     sh:maxCount 1 ;
-    sh:datatype xsd:string .
+    sh:datatype xsd:string ;
+    sh:pattern "^[a-z]+[0-9]{4}$" .
 
 <https://emsenn.net/ns/schema/glossary/terms/translation-renderingShape/translator>
     sh:path <https://emsenn.net/ns/schema/glossary/terms/translation-rendering#translator> ;
@@ -130,7 +131,8 @@
     sh:message "term is required per glossary/terms/translation-variance-record" ;
     sh:minCount 1 ;
     sh:maxCount 1 ;
-    sh:datatype xsd:string .
+    sh:datatype xsd:string ;
+    sh:pattern "^[a-z][a-z0-9]*(-[a-z0-9]+)*$" .
 
 <https://emsenn.net/ns/schema/glossary/terms/translation-variance-recordShape/hanzi>
     sh:path <https://emsenn.net/ns/schema/glossary/terms/translation-variance-record#hanzi> ;

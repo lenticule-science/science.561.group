@@ -1,6 +1,6 @@
 # GENERATED — do not edit by hand.
 # Regenerate with json-schema-to-owl-shacl-service's project-json-schema-as-ontology
-# over /home/emsenn/info/lib/emsenn/services/561-group/services/science-services-section/services/philosophy-services-section/services/dao-services-section/data/records/schema/glossary/terms, after editing a *.schema.json file there.
+# over ../../records/schema/glossary/terms (relative to this file), after editing a *.schema.json file there.
 # Classes minted: glossary/terms/house-translation, glossary/terms/translation-rendering, glossary/terms/translation-variance-record.
 
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .

@@ -2,6 +2,7 @@
 title: "The corpus knowledge graph program"
 description: "Program carrier for turning the whole 561 Group corpus, not only its glossaries, into one admitted, linked, cited, dereferenceable and searchable knowledge graph, run as the Monitor and Knowledge of the house's corpus MAPE-K loop. It sets ledger-measured baselines, a debt ratchet at integration, ledger-derived work signals per section that section micro-enterprises take, gated targets, four waves in dependency order, and the owning office for each workstream."
 date-created: 2026-09-30
+date-updated: 2026-09-30
 type: note
 name: 2026-09-30-the-corpus-knowledge-graph-program
 authors:
@@ -322,6 +323,20 @@ This is the shape that uses many agents and machines at once. The deriver (Wave 
    Those eight, plus the Org glossary's conversion in Wave 2.5, cover 86% of unschematized live carriers.
    The stated `type` values (`theorem`, `reference`, `question`, `person`, `place`, `event`) become subtypes of the directory kinds that carry them, not rival kinds.
    Gate: OWL plus SHACL generated for each schema, with no hand-written Turtle. Live carriers under no schema fall from 18,860 to under 2,700.
+   **`note` landed 2026-09-30.**
+   - The canonical schema is knowledge organization's `data/records/schema/carriers/note.schema.json` (`$id` `carriers/note`).
+     It replaces the knowledge-system server's `vault/note`, the app-held copy the note contract compiled.
+   - `json-schema-to-owl-shacl-service` now reads `$ref` as JSON Schema does: a pointer fragment reuses that subschema in place, and a reference schema resolves `$ref`s without minting a class.
+     It generates `data/ontology/carriers/{ontology,shapes}.ttl`, with the term schema as the reference.
+   - `carrier-kind-engineering-services-section` projects the schema, tests it equal to science, and admits frontmatter by kind.
+     It also holds the path-to-kind rule the census uses, and the note repair planners from the retired contract.
+   - Measured at `89827a11d0d`: live carriers under no schema fall from 18,862 to 8,043.
+     Of 10,819 notes, 3,649 are admitted and 7,170 refused.
+     The refusals are the repair queue: `required:date-created` 6,194, `required:description` 1,013, `type:references` 610, `required:title` 237 and `pattern:keywords` 235.
+     The first is the `date`→`date-created` key fold of Decision 6, with the dated path as its second source.
+   - The ratchet is unchanged by the new law, because base and candidate are both read under it. A new note with no frontmatter is new refusal debt in its section.
+
+   `concept` is next.
 3. **Predicate registry semantics**, as in Decision 4.
    Gate: every registered predicate states its SKOS mapping and its inverse or `inverse: null`. `glossary-skos.mjs` reads them and has no hard-coded sets.
 4. **Identity policy in code**, as in Decision 2.
@@ -413,7 +428,8 @@ This is the shape that uses many agents and machines at once. The deriver (Wave 
    - CAIRN's `buildTermJsonLd` is replaced by the shared `definedTermJsonLd`.
    - The unused `termToThingJsonLd` and `termToCollectionPageJsonLd` are retired.
    - Every corpus walker delegates to the ledger's walker.
-   - Dead code is retired: `note-contract.mjs`, `research-document-metadata-admission-service` and `medical-glossary-delivery-service`, unless a consumer is named.
+   - Dead code is retired: `research-document-metadata-admission-service` and `medical-glossary-delivery-service`, unless a consumer is named.
+     `note-contract.mjs` was retired by Wave 1.2; its repair planners live on in `carrier-kind-engineering-services-section`.
    - The missing exports are fixed (`static-site-publisher/workspace-graph`, GEODE's `check`).
    - The stale READMEs are corrected (L-Space, VaultMaze, bibliography, section).
    Gate: one JSON-LD term shape, one walker, no export pointing at a missing file.
@@ -522,8 +538,8 @@ Agent scale sets the pace, not one author's hours. Each date is a gate measured 
 | Integrations that raise a touched section's debt | unguarded | 0 (the ratchet refuses them) |
 | Work items written by hand for this program | all | 0 (derived from the ledger, closed by its assertions) |
 | Owning sections with a scorecard | 0 of 821 | 821 |
-| Live carriers under no schema | 18,860 | < 2,700 |
-| Live carriers admitted under a kind schema | 4,931 (terms and bibliographies) | ≥ 90% of live carriers |
+| Live carriers under no schema | 8,043 (18,860 before the `note` schema) | < 2,700 |
+| Live carriers admitted under a kind schema | 8,580 (terms, bibliographies and notes) | ≥ 90% of live carriers |
 | Broken path links (live) | 36,999 | ~3/5 removed by the rule fold; 0 once offices settle border and downward candidates |
 | Live carriers with no link or wikilink | 14,783 (51%) | measured per kind; falling every release |
 | Lawful citekey occurrences (key in the citing carrier's own map) | 1,597 of 6,687 (24%) | ≥ 95%, every survivor a wanted reference |

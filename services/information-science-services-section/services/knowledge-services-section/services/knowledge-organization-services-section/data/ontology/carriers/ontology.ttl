@@ -1,0 +1,78 @@
+# GENERATED — do not edit by hand.
+# Regenerate with json-schema-to-owl-shacl-service's project-json-schema-as-ontology
+# over ../../records/schema/carriers (relative to this file), after editing a *.schema.json file there.
+# References: glossary/terms/term.
+# Classes minted: carriers/note.
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+
+<https://emsenn.net/ns/schema/carriers/note>
+    rdf:type owl:Class ;
+    rdfs:label "Note carrier" ;
+    rdfs:comment "What the frontmatter of a carrier in a `notes/` artifact-role directory says about it: what it is called and about, when it was written, which section owns it, what it asserts about other terms, and what it cites. The directory states the kind; glossary term records are held to the term schema instead. Keys beyond these are admitted; relation keys are the relation vocabulary's predicates, folded in by the admitter that compiles this schema." .
+
+<https://emsenn.net/ns/schema/carriers/note#title>
+    rdf:type owl:DatatypeProperty ;
+    rdfs:domain <https://emsenn.net/ns/schema/carriers/note> ;
+    rdfs:comment "The note's title." ;
+    rdfs:range xsd:string .
+
+<https://emsenn.net/ns/schema/carriers/note#description>
+    rdf:type owl:DatatypeProperty ;
+    rdfs:domain <https://emsenn.net/ns/schema/carriers/note> ;
+    rdfs:comment "One or two sentences saying what the note is about, for readers and retrieval." ;
+    rdfs:range xsd:string .
+
+<https://emsenn.net/ns/schema/carriers/note#date-created>
+    rdf:type owl:DatatypeProperty ;
+    rdfs:domain <https://emsenn.net/ns/schema/carriers/note> ;
+    rdfs:comment "The date the note was first written, ISO 8601." ;
+    rdfs:range xsd:string .
+
+<https://emsenn.net/ns/schema/carriers/note#date-updated>
+    rdf:type owl:DatatypeProperty ;
+    rdfs:domain <https://emsenn.net/ns/schema/carriers/note> ;
+    rdfs:range xsd:string .
+
+<https://emsenn.net/ns/schema/carriers/note#date-modified>
+    rdf:type owl:DatatypeProperty ;
+    rdfs:domain <https://emsenn.net/ns/schema/carriers/note> ;
+    rdfs:range xsd:string .
+
+<https://emsenn.net/ns/schema/carriers/note#type>
+    rdf:type owl:DatatypeProperty ;
+    rdfs:domain <https://emsenn.net/ns/schema/carriers/note> ;
+    rdfs:comment "The kind of note: note, article, explanation, bibliography, research-article, and so on." ;
+    rdfs:range xsd:string .
+
+<https://emsenn.net/ns/schema/carriers/note#science-owner>
+    rdf:type owl:DatatypeProperty ;
+    rdfs:domain <https://emsenn.net/ns/schema/carriers/note> ;
+    rdfs:comment "The services section whose science the note belongs to." ;
+    rdfs:range xsd:string .
+
+<https://emsenn.net/ns/schema/carriers/note#status>
+    rdf:type owl:DatatypeProperty ;
+    rdfs:domain <https://emsenn.net/ns/schema/carriers/note> ;
+    rdfs:range xsd:string .
+
+<https://emsenn.net/ns/schema/carriers/note#aliases>
+    rdf:type owl:DatatypeProperty ;
+    rdfs:domain <https://emsenn.net/ns/schema/carriers/note> ;
+    rdfs:comment "Other designations admitted for this concept in the same glossary scope." ;
+    rdfs:range xsd:string .
+
+<https://emsenn.net/ns/schema/carriers/note#keywords>
+    rdf:type owl:DatatypeProperty ;
+    rdfs:domain <https://emsenn.net/ns/schema/carriers/note> ;
+    rdfs:comment "Retrieval or compound-composition keys; they are not aliases by default." ;
+    rdfs:range xsd:string .
+
+<https://emsenn.net/ns/schema/carriers/note#tags>
+    rdf:type owl:DatatypeProperty ;
+    rdfs:domain <https://emsenn.net/ns/schema/carriers/note> ;
+    rdfs:range xsd:string .
