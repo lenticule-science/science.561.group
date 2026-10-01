@@ -5,7 +5,6 @@ aliases:
   - "orientation"
 date-created: 2025-12-31
 tags: []
-type: term
 description: Orientation refers to whether a tarot card appears upright or reversed (upside-down) when revealed in a spread.
 ---
 

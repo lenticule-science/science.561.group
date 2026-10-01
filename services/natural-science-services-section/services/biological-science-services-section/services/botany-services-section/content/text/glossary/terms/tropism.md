@@ -14,7 +14,6 @@ keywords:
 date-modified: 2026-03-09
 part-of: biology/disciplines/botany/terms
 date-updated: 2026-03-09
-type: term
 ---
 
 A tropism is a directional growth or movement response of an organism to an environmental stimulus. The term derives from the Greek *tropos* (turning). Phototropism is growth toward or away from light; gravitropism is growth in response to gravity; thigmotropism is growth in response to touch; chemotropism is growth in response to chemical gradients.

@@ -1,6 +1,6 @@
 ---
 name: "Role Clarity"
-date-created: 2026-03-08T00:00:00
+date-created: 2026-03-08
 authors:
   - claude
 aliases:

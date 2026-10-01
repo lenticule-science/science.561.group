@@ -8,7 +8,6 @@ name: Subposition
 description: The combination of two formal contexts that share an attribute set, by union of their object sets.
 ---
 
-# Subposition
 
 The combination of two formal contexts that share an attribute set, by union of their object sets. Given $\mathbb{K}_1 = (G_1, M, I_1)$ and $\mathbb{K}_2 = (G_2, M, I_2)$ with $G_1 \cap G_2 = \emptyset$, their **subposition** is
 

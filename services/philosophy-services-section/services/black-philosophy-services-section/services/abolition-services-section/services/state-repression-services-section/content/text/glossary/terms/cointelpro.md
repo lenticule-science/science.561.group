@@ -3,17 +3,11 @@
 name: "COINTELPRO"
 date-created: 2026-03-02
 aliases:
-  - "COINTELPRO"
-  - "cointelpro"
   - "Counter Intelligence Program"
 tags: []
 description: "FBI counterintelligence programs (1956–1971) that targeted civil rights, anti-war, Black liberation, and Indigenous movements through infiltration, disinformation, and harassment."
 date-modified: 2026-03-09
 part-of: sociology/topics/state-repression/terms
-type: term
-defines:
-  - "COINTELPRO"
-  - "Counter Intelligence Program"
 date-updated: 2026-03-09
 ---
 

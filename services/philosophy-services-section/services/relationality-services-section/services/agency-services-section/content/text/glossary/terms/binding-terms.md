@@ -2,7 +2,6 @@
 name: Binding Terms
 description: Story.
 ---
-# Binding Terms
 
 *Story.*  Seeds do not yet name the resulting term.  Applying FirstName to SeedTerm produces the act BindTerm.
 

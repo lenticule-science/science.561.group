@@ -2,14 +2,9 @@
 
 name: "Bare Life"
 aliases:
-  - "Bare Life"
-  - "bare life"
   - "homo sacer"
 date-created: 2026-03-06
 tags: []
-defines:
-  - "Bare Life"
-  - "homo sacer"
 ---
 
 ***Bare life*** (*nuda vita*) is [Giorgio Agamben](../../../../../../../../../references/people/giorgio-agamben.md)'s term for human existence stripped to its biological minimum — life that is included in the political order only by being excluded from it. Agamben develops the concept in *Homo Sacer: Sovereign Power and Bare Life* (1995), drawing on [Michel Foucault](../../../../../../../../../references/people/michel-foucault.md)'s [biopolitics](../../../../../../sociology/theories/critical-theory/theories/biopolitics/terms/biopolitics.md) and Carl Schmitt's theory of sovereignty.

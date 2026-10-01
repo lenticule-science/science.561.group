@@ -6,7 +6,6 @@ aliases:
   - "direct sow"
 date-created: 2026-03-06
 tags: []
-type: term
 ---
 
 Planting seeds directly into the soil where the plant will grow to

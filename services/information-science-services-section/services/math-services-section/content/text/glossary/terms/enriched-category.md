@@ -5,7 +5,6 @@ aliases:
   - "enriched categories"
 date-created: 2025-12-31
 tags: []
-type: term
 ---
 
 An enriched category over a [monoidal category](./monoidal-category.md) V is a category-like structure whose [hom-objects](./hom-object.md) are objects of V rather than [sets](./set.md). An ordinary [category](./category.md) is enriched over Set (with Cartesian product); replacing Set with a richer base V allows the [morphisms](./morphism.md) between two objects to carry additional structure — topological, algebraic, or homotopical.

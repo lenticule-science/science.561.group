@@ -9,7 +9,6 @@ keywords:
   - CombatSystems
   - Governance
 description: "The organizational translation of reality into plans: collecting inputs, producing shared pictures, generating options, and maintaining coordination through rhythms and artifacts."
-type: term
 ---
 
 Staff work is the organizational translation of reality into plans. In large formations, command is not a lone leader making decisions; it is a system in which staffs collect inputs, produce shared operational pictures, generate options, and maintain coordination through rhythms and standardized artifacts.

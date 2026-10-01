@@ -24,7 +24,6 @@ references:
     title: "Frames of War: When Is Life Grievable?"
     publication: "Verso"
     year: 2009
-type: term
 ---
 
 Grievability, as theorized by Judith Butler in *Precarious Life* (2004) and *Frames of War* (2009), names the condition under which a life is recognized as worth mourning — and therefore worth protecting. Grievability is not a response to death but a precondition for recognizing life as life in the first place. A life that is not apprehended as grievable is not fully apprehended as living. The question of who can be grieved is prior to the question of who can be killed.

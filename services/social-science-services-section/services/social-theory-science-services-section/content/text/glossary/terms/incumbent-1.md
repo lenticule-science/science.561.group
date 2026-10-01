@@ -9,7 +9,6 @@ name: Incumbent
 description: "The mathematical realization of an incumbent per the library's quadruple definition: the formal tuple recording that a particular agent currently holds a particular office at a particular history."
 ---
 
-# Incumbent
 
 The mathematical realization of an [incumbent](../../humanities/theories/sociology/theories/work/terms/incumbent.md) per the library's quadruple definition: the formal tuple recording that a particular agent currently holds a particular office at a particular history.
 

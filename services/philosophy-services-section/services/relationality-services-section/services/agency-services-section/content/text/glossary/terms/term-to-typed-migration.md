@@ -13,7 +13,6 @@ name: Term-to-typed migration
 description: "The substrate operation that promotes a type: term note to its typed successor — concept, object (definition), reference, narrative, or, in the rare case it does not belong in the corpus, deletion."
 ---
 
-# Term-to-typed migration
 
 The substrate operation that promotes a `type: term` note to its typed successor — `concept`, `object` (definition), `reference`, `narrative`, or, in the rare case it does not belong in the corpus, deletion. The corpus carries ~2,054 `type: term` notes inherited from the older lexical/encyclopedic vocabulary; the migration morphism is what brings them under the typed discipline.
 

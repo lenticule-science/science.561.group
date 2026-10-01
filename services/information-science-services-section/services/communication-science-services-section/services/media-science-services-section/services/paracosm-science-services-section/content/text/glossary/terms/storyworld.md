@@ -7,7 +7,6 @@ date-created: 2026-03-05
 tags: []
 date-updated: 2026-03-09
 part-of: media/topics/worldbuilding/terms
-type: term
 ---
 
 A storyworld is the abstract structure that a reader, viewer, or player reconstructs from the textual, visual, or interactive evidence provided by a narrative. The term is most closely associated with narratologists such as Gérard Genette and Marie-Laure Ryan, who use it to describe the totality of a narrative's implied reality—not merely what is explicitly stated, but the consistent domain from which those statements derive their coherence.

@@ -4,9 +4,8 @@ name: "Pageview"
 description: "A single instance of a web page being loaded in a browser — the fundamental unit of measurement for web traffic and the denominator in most monetization metrics."
 domain: web-business
 date-created: 2026-03-29
-defines: Pageview
-related: Revenue Per Mille, Organic Traffic, Bounce Rate, Session, Web Monetization
 date-modified: 2026-03-29
+see-also: revenue-per-mille-organic-traffic-bounce-rate-session-web-monetization
 ---
 
 A pageview is a single instance of a web page being loaded (or reloaded) in a browser. It is the fundamental unit of measurement for web traffic and the denominator in most monetization metrics, including [revenue per mille](./revenue-per-mille.md).

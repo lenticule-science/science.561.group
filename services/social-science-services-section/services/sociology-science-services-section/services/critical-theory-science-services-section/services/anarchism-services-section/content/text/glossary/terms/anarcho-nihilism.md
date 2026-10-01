@@ -2,8 +2,6 @@
 name: "Anarcho-Nihilism"
 date-created: 2026-03-06
 aliases:
-  - "Anarcho-Nihilism"
-  - "anarcho-nihilism"
   - "anarchist nihilism"
   - anarcho-nihilist
 keywords:
@@ -12,11 +10,7 @@ description: "The anarchist position that resistance to domination does not requ
 part-of: sociology/schools/anarchism/schools/anarcho-nihilism/terms
 tags:
   - nihilism
-defines:
-  - "Anarcho-Nihilism"
-  - "anarcho-nihilist"
 date-modified: 2026-03-09
-type: term
 date-updated: 2026-03-09
 ---
 

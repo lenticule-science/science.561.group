@@ -1,6 +1,5 @@
 ---
 name: "Spectroscopy"
-type: term
 component-of: astronomy
 ---
 

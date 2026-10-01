@@ -9,7 +9,6 @@ name: Task cell system
 description: "The mathematical realization of a task: a triple"
 ---
 
-# Task cell system
 
 The mathematical realization of a [task](../../documents/articles/humanities/theories/sociology/theories/work/terms/task.md): a triple
 

@@ -8,7 +8,6 @@ name: Federate
 description: The substrate operation by which two predicated knowledge systems' scopes are joined into a single substrate region while preserving each scope's local closure-rule subset, predicate vocabulary, entity identity, and consistency commitments.
 ---
 
-# Federate
 
 The substrate operation by which two predicated knowledge systems' scopes are joined into a single substrate region while preserving each scope's local closure-rule subset, predicate vocabulary, entity identity, and consistency commitments.
 

@@ -2,15 +2,11 @@
 name: "Metaphysics"
 date-created: 2026-03-03
 aliases:
-  - "metaphysics"
   - "metaphysical"
 tags: []
 description: "The branch of philosophy that studies the fundamental nature of reality — what the world is made of at the deepest level."
 date-updated: 2026-03-29
 contains: [ontology, materialism, process-philosophy]
-defines:
-  - "Metaphysics"
-  - "metaphysical"
 date-modified: 2026-03-29
 ---
 

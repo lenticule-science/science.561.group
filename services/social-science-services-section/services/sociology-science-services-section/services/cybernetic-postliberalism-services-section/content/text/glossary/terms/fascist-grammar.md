@@ -7,7 +7,6 @@ keywords:
   - Rhetoric
   - Fascism
 description: "emsenn's term for the six-step rhetorical sequence that fascism follows regardless of vocabulary."
-type: term
 ---
 
 

@@ -3,7 +3,6 @@ name: "Telemetric Signal"
 date-created: 2025-04-15
 keywords:
   - CyberneticPostliberalism
-type: term
 aliases:
   - Telemetric Signal - telemetric signals
   - dr-telemetric-signal - telemetric signals
@@ -17,7 +16,6 @@ method:
   - "[register](register)"
   - "[recognize](../../documents/articles/notes/recognize.md)"
   - "[grammatize](grammatize)"
-date: 2025-04-15
 ---
 
 A ***telemetric signal*** is a deviation that becomes available for casting. It is not simply a message, value, or expression—it is a **registered disturbance**, a unit of relevance recognized by a system capable of composing with difference: delta.

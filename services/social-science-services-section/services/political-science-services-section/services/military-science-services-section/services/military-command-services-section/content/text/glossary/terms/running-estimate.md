@@ -24,7 +24,6 @@ references:
 cites:
   - usarmy2019adp5_0
   - usarmy2014fm6
-type: term
 ---
 
 A running estimate is a continuously updated staff assessment of the situation and a functional area’s ability to support the mission. It is the staff’s primary mechanism for keeping planning and execution connected [@usarmy2019adp5_0].

@@ -2,32 +2,24 @@
 name: "Foot"
 date-created: 2026-04-30
 aliases:
-  - "foot"
   - "feet"
   - "metrical foot"
   - "metrical feet"
 tags: []
-defines:
-  - "foot"
-  - "metrical foot"
 contrasts-with: [line, syllable]
 references:
-  - id: fussell1979
-    type: document
+  fussell1979:
+    authors:
+      - P. Fussell
     title: Poetic Meter and Poetic Form
-    author:
-      - literal: P. Fussell
-    container-title: McGraw-Hill
-    issued:
-      - year: 1979
-  - id: attridge1995
-    type: document
+    year: 1979
+    publication: McGraw-Hill
+  attridge1995:
+    authors:
+      - D. Attridge
     title: "Poetic Rhythm: An Introduction"
-    author:
-      - literal: D. Attridge
-    container-title: Cambridge University Press
-    issued:
-      - year: 1995
+    year: 1995
+    publication: Cambridge University Press
 ---
 
 A foot is the basic unit of measure in [accentual-syllabic verse](accentual-syllabic-verse.md) — a small, fixed grouping of syllables with a prescribed stress pattern.

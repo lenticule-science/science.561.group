@@ -7,7 +7,6 @@ name: Parameter base category
 description: The 1-category whose objects are predication settling base parameters $(\mathbf{L}, \mathcal{C}, E, \lambda)$ and whose morphisms are 4-tuples $(\ell, e, \pi, \phi\lambda)$.
 ---
 
-# Parameter base category
 
 The 1-category whose objects are predication settling base parameters $(\mathbf{L}, \mathcal{C}, E, \lambda)$ and whose morphisms are 4-tuples $(\ell, e, \pi, \phi_\lambda)$.
 

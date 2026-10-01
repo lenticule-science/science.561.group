@@ -9,7 +9,6 @@ name: Confluence comparison morphism
 description: A confluence comparison morphism compares divergent settling branches by asking whether they admit a common successor under the operations allowed by the context.
 ---
 
-# Confluence comparison morphism
 
 A **confluence comparison morphism** compares divergent settling branches by asking whether they admit a common successor under the operations allowed by the context.
 

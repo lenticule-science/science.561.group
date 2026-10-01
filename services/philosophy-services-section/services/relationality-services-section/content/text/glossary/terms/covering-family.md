@@ -6,7 +6,6 @@ tags: []
 aliases:
   - covering families
   - covering family
-type: term
 ---
 
 A covering family for an object U in a site or [∞-site](./infinity-site.md) is a collection of morphisms {fᵢ: Uᵢ → U} that together "cover" U — they jointly provide enough information about U that any compatible local data on the Uᵢ determines global data on U. Covering families are the covers specified by the Grothendieck topology.

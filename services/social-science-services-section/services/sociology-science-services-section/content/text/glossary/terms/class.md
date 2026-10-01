@@ -2,16 +2,11 @@
 name: "Class"
 date-created: 2026-03-06
 aliases:
-  - "class"
   - "class division"
   - "ruling class"
   - "working class"
 tags: []
 description: "The division of society into groups based on their relationship to ownership and work — those who own productive resources and profit from others' labor, and those who must work for wages to survive."
-type: term
-defines:
-  - "Class"
-  - "class division"
 ---
 
 Class is the division of people into groups based on their relationship to ownership and work. In [capitalist](../../../../services/critical-theory-science-services-section/services/anarchism-services-section/content/text/glossary/terms/capitalism.md) society, the basic class division is between those who own productive resources — land, factories, businesses, capital — and those who do not and must work for wages to survive. The owners (sometimes called the ruling class, the bourgeoisie, or capitalists) profit from the work of others. The workers (sometimes called the working class or proletariat) produce value that exceeds their wages, and the difference goes to the owners. This is not a difference of income or lifestyle but of structural position: the relationship between owner and worker is one of [authority](./authority.md) and dependence.

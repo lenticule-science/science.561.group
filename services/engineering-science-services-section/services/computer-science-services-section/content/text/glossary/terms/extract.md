@@ -8,7 +8,6 @@ name: Extract
 description: A refactor that introduces a new definition (function, method, type) in the codebase cell-system, redirecting cells from the original site to the extracted definition, without changing the witness sheaf.
 ---
 
-# Extract
 
 A refactor that introduces a new definition (function, method, type) in the [codebase cell-system](codebase-cell-system.md), redirecting cells from the original site to the extracted definition, without changing the witness sheaf.
 

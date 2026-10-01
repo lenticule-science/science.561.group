@@ -3,8 +3,7 @@ name: French Marigold
 description: Annual cultivar of Tagetes patula, 45-70 days to first flower. Compact 0.3-0.8 m plants. Roots produce terthienyls that suppress root-knot nematodes; volatile limonene deters whitefly. Interplant throughout vegetable gardens 4-5 feet from susceptible crops. Full sun, well-drained soil. Low fertility preference.
 date-created: 2026-04-02
 aliases: [marigold, Tagetes patula, Mexican marigold]
-related-to:
-  - "[Tagetes patula](../../../../../../../../science/theories/biology/theories/botany/terms/tagetes-patula.md)"
+see-also: tagetes-patula
 ---
 
 French marigold cultivation leverages [Tagetes patula](../../../../../../../../../natural-science-services-section/services/biological-science-services-section/services/botany-services-section/content/text/glossary/terms/tagetes-patula.md) for rapid flowering, compact habit, and powerful nematicidal and insecticide properties. The species is the premier companion planting crop for vegetable gardens, particularly in regions with persistent root-knot nematode (*Meloidogyne*) pressure.

@@ -8,7 +8,6 @@ keywords:
   - CombatSystems
   - Governance
 description: "Friendly information that, if known by the adversary, would compromise operations; used to guide OPSEC and reporting discipline."
-type: term
 ---
 
 Essential Elements of Friendly Information (EEFI) are the friendly information that, if known by the adversary, would compromise operations. EEFI shape operational security (OPSEC) priorities and reporting discipline.

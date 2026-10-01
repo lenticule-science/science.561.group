@@ -6,7 +6,6 @@ tags: []
 aliases:
   - strata
   - stratum
-type: term
 ---
 
 A stratum is one layer in a [stratification](./stratification.md) — a single piece of the decomposition. In a stratified topological space, each stratum is typically a manifold (a smooth, uniform piece), and the full space is assembled by gluing strata of different dimensions together along their boundaries.

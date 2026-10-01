@@ -15,7 +15,6 @@ name: Validation rule
 description: "A validation rule is a single discipline-level check the curation theory commits to: a decidable predicate $\\varphi$ on the vault's relation graph (or on a single note in it) that holds when the discipline is satisfied and fails when it…"
 ---
 
-# Validation rule
 
 A **validation rule** is a single discipline-level check the curation theory commits to: a decidable predicate $\varphi$ on the [vault's relation graph](../../documents/articles/research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/knowing/content/objects/relation-graph.md) (or on a single note in it) that holds when the discipline is satisfied and fails when it is violated. The set of all validation rules the curation theory commits to is its closure-rule-system (the upstream concept lives at the [predication-categories closure-rule-system](../../documents/articles/research/2026/07/31/lenticule-import/animating/content/humanities/theories/math/theories/categories/theories/predication-categories/concepts/closure-rule-system.md); the curation theory inherits it without re-defining); the FARS lint toolkit is the operator that applies them.
 

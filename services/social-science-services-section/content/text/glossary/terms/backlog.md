@@ -1,29 +1,24 @@
 ---
 name: "Backlog"
 description: "A queue of candidate work units that have been captured but not yet committed to a plan — the holding area between idea and intention."
-defines: backlog
 date-created: 2026-04-03
 instance-of: container
 contains: [work-unit, task]
 distinguished-from: [queue, plan]
 part-of-stage: planning
 references:
-  - id: allen2001
-    type: document
+  allen2001:
+    authors:
+      - David Allen
     title: "Getting Things Done: The Art of Stress-Free Productivity"
-    author:
-      - literal: David Allen
-    container-title: Viking
-    issued:
-      - year: 2001
-  - id: anderson2010
-    type: document
+    year: 2001
+    publication: Viking
+  anderson2010:
+    authors:
+      - David J. Anderson
     title: "Kanban: Successful Evolutionary Change for Your Technology Business"
-    author:
-      - literal: David J. Anderson
-    container-title: Blue Hole Press
-    issued:
-      - year: 2010
+    year: 2010
+    publication: Blue Hole Press
 ---
 
 A backlog is a [container](../../../../../philosophy-services-section/content/text/glossary/terms/container.md) of candidate [work units](../../../../services/sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/work-unit.md) that have been captured but not yet committed to a [plan](plan.md).

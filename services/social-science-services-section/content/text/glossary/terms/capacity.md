@@ -1,38 +1,31 @@
 ---
 name: "Capacity"
 description: "The amount of work an agent or system can handle in a given time period — the resource constraint that limits throughput and governs dispatch."
-defines: capacity
 date-created: 2026-04-03
 instance-of: quality
 quality-of: [agent, system]
 constrains: [assignment, dispatch]
 part-of-stage: dispatch
 references:
-  - id: little1961
-    type: document
+  little1961:
+    authors:
+      - John D. C. Little
     title: "A Proof for the Queuing Formula: L = λW"
-    author:
-      - literal: John D. C. Little
-    container-title: Operations Research, 9(3)
-    issued:
-      - year: 1961
-  - id: goldratt1984
-    type: document
+    year: 1961
+    publication: Operations Research, 9(3)
+  goldratt1984:
+    authors:
+      - Eliyahu M. Goldratt
+      - Jeff Cox
     title: "The Goal: A Process of Ongoing Improvement"
-    author:
-      - literal: Eliyahu M. Goldratt
-      - literal: Jeff Cox
-    container-title: North River Press
-    issued:
-      - year: 1984
-  - id: reinertsen2009
-    type: document
+    year: 1984
+    publication: North River Press
+  reinertsen2009:
+    authors:
+      - Donald G. Reinertsen
     title: The Principles of Product Development Flow
-    author:
-      - literal: Donald G. Reinertsen
-    container-title: Celeritas Publishing
-    issued:
-      - year: 2009
+    year: 2009
+    publication: Celeritas Publishing
 ---
 
 Capacity is the amount of work an agent or system can handle in a given time period.

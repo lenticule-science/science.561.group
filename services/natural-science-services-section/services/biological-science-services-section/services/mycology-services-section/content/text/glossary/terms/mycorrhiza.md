@@ -10,7 +10,6 @@ keywords:
   - Mycology
   - Symbiosis
   - PlantFungalInteraction
-type: term
 ---
 
 Mycorrhiza (plural: mycorrhizae): a symbiotic association between a fungus and the roots of a plant. The term means literally "fungus-root" (Greek *mykes* + *rhiza*). In a mycorrhizal association, the fungal [mycelium](./mycelium.md) extends from the plant's root system into the surrounding soil, vastly increasing the surface area available for nutrient and water absorption. The plant gains enhanced mineral nutrition — especially phosphorus, which is poorly mobile in soil — and the fungus gains photosynthetically fixed carbon from the plant.

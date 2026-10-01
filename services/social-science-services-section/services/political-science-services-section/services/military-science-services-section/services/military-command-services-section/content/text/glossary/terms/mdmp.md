@@ -25,7 +25,6 @@ references:
 cites:
   - usarmy2014fm6
   - usarmy2019adp5_0
-type: term
 ---
 
 The Military Decisionmaking Process (MDMP) is a detailed planning paradigm used to produce orders and synchronize action in complex operations. It is designed to make staff work legible: each step produces artifacts that can be briefed, challenged, revised, and handed off [@usarmy2014fm6].

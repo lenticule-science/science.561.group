@@ -4,7 +4,6 @@ description: "Viveiros de Castro's ontological inversion of multiculturalism: on
 date-created: 2026-03-03
 date-modified: 2026-03-29
 aliases:
-  - "multinaturalism"
   - "many natures"
 inverse-of: multiculturalism
 produced-by: perspectivism
@@ -16,10 +15,6 @@ references:
     title: "Cosmological Deixis and Amerindian Perspectivism"
     publication: "Journal of the Royal Anthropological Institute"
     year: 1998
-type: term
-defines:
-  - "Multinaturalism"
-  - "many natures"
 ---
 
 Multinaturalism is the ontological inversion of multiculturalism proposed by Eduardo Viveiros de Castro. Where Western multiculturalism assumes one nature (a single objective reality) and many cultures (different representations of that reality), multinaturalism proposes one culture (a universal condition of subjectivity and sociality) and many natures (different material worlds constituted by different bodies). The move is not from "one truth, many perspectives" to "no truth, anything goes," but from a metaphysics of substance to a metaphysics of relation: what exists depends on the relational position from which existence is constituted.

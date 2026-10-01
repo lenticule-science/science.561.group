@@ -22,7 +22,6 @@ ast:
 name: "Accord"
 ---
 
-# Accord
 
 ## Formal definition
 

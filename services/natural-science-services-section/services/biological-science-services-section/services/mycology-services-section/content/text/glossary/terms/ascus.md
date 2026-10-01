@@ -9,7 +9,6 @@ keywords:
   - Mycology
   - Reproduction
   - FungalStructure
-type: term
 ---
 
 

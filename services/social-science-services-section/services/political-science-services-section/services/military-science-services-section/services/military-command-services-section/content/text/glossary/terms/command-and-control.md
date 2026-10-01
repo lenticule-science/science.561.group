@@ -18,7 +18,6 @@ references:
     publication: "Joint Publication 1-02 (as amended through 15 Feb 2016)"
 cites:
   - jointchiefs2016dictionary
-type: term
 ---
 
 Command and control (C2) is the exercise of authority and direction by a properly designated commander over assigned and attached forces in the accomplishment of the mission [@jointchiefs2016dictionary].

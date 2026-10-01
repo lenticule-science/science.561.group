@@ -1,7 +1,7 @@
 ---
 type: "[[term]]"
-dg-publish: true
 term-domain: research
+visibility: public
 ---
 
 An ***argumentative essay*** is (definition:: an [[essay]] for [[arguing]] a [[truth]] about a [[old-notes/domains/tekodynamics/glossary/thing]]).

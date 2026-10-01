@@ -1,7 +1,6 @@
 ---
 name: "Calendar"
 description: "The shared temporal coordinate system that organizing and scheduling operate on — a system for dividing time into named, countable units that enable coordination."
-defines: calendar
 date-created: 2026-04-04
 instance-of: relation
 aliases:
@@ -12,22 +11,18 @@ requires: [time]
 applies-to: [organization, operations, scheduling]
 part-of-stage: planning
 references:
-  - id: richards1998
-    type: document
+  richards1998:
+    authors:
+      - E. G. Richards
     title: "Mapping Time: The Calendar and Its History"
-    author:
-      - literal: E. G. Richards
-    container-title: Oxford University Press
-    issued:
-      - year: 1998
-  - id: nelson2008
-    type: document
+    year: 1998
+    publication: Oxford University Press
+  nelson2008:
+    authors:
+      - Richard R. Nelson
     title: "Calendars: Systems for Organizing Time"
-    author:
-      - literal: Richard R. Nelson
-    container-title: "In: The Oxford Handbook of Institutional Analysis"
-    issued:
-      - year: 2008
+    year: 2008
+    publication: "In: The Oxford Handbook of Institutional Analysis"
 ---
 
 A calendar is a system for organizing time into named, countable units — days, weeks, months, years, fiscal quarters, project phases.

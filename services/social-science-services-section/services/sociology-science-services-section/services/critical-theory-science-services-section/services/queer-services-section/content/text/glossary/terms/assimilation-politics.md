@@ -3,20 +3,15 @@
 name: "Assimilation Politics"
 date-created: 2026-03-06
 aliases:
-  - "assimilation politics"
   - "gay rights"
   - "LGBT rights"
 keywords:
   - gender-theory
   - political-theory
 description: "The political strategy of securing rights and recognition for queer people by demonstrating conformity to existing normative frameworks — domesticity, monogamy, military service, consumption — rather than challenging the frameworks themselves."
-type: term
 tags:
   - GenderTheory
   - PoliticalTheory
-defines:
-  - "Assimilation Politics"
-  - "gay rights"
 ---
 
 **Assimilation politics** names the dominant political strategy of the mainstream gay and lesbian movement from the 1990s onward: securing inclusion within existing institutions — marriage, the military, anti-discrimination law, adoption — by demonstrating that queer people are "just like" heterosexual people in all respects except sexual object choice. The strategy seeks recognition, legal protection, and social respectability by conforming to normative expectations rather than challenging the norms themselves.

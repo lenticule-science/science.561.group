@@ -8,7 +8,6 @@ name: Resource
 description: "A resource is a triple $(v^R, \\iota, T)$ consisting of:"
 ---
 
-# Resource
 
 A **resource** is a triple $(v^R, \iota, T)$ consisting of:
 

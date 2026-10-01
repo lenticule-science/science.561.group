@@ -1,8 +1,10 @@
 ---
 id: 4e35e30e-ab4b-4d2a-a19c-f4e9cfa802a0
-roam-refs: "@chiossi_short-form_2023"
 name: "Short-Form Videos Degrade Our Capacity to Retain Intentions: Effect of Context Switching On Prospective Memory"
 date-created: 2025-10-08
+provenance:
+  sources:
+    - "@chiossi_short-form_2023"
 ---
 
 # [resource code](../../../../../../../philosophy-services-section/content/text/glossary/terms/resource-code.md)

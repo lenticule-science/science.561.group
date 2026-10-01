@@ -1,12 +1,11 @@
 ---
 id: vessel
 description: "A hollow object made to hold something."
-aliases: [ vessels, Vessel ]
+aliases: [ vessels ]
 contains: [cargo, contents]
 instance-of: container
 date-created: 2026-03-29
 date-modified: 2026-03-29
-defines: vessel
 name: Vessel
 ---
 

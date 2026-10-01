@@ -45,11 +45,10 @@ instances:
   - pddl-plan
 introduced-by: fikes-nilsson-1971
 id: plan
-defines: Plan
-related: Procedure, Process, Task, Inquiry, Intention, STRIPS, PDDL
 where:
 - $\mathcal{O}$ is the **operation set** — the finite collection of **steps** (intended actions, operations, or tasks) that the plan consists of; each step $o \in \mathcal{O}$ has its own preconditions (what must hold before $o$ executes) and effects (what $o$ changes in the state when it executes)
 - $\prec$ is the **ordering constraint** — a strict partial order on $\mathcal{O}$ specifying which steps must precede which; $o_1 \prec o_2$ means "step $o_1$ must be completed before step $o_2$ begins"; $\prec$ is the plan's causal and temporal skeleton; steps not related by $\prec$ may execute in any order (or concurrently)
+see-also: procedure-process-task-inquiry-intention-strips-pddl
 ---
 
 A plan is a structured commitment to a finite set of intended actions, connected by dependencies, aimed at transforming a current situation toward a goal. A plan says what must happen and what must happen before what — but it does not dictate every detail of execution.

@@ -2,7 +2,6 @@
 name: "culturally sustaining pedagogy"
 description: "An educational approach that actively sustains the cultural practices, languages, and knowledge systems of communities marginalized by dominant institutions"
 aliases:
-  - "culturally sustaining pedagogy"
   - "culturally responsive pedagogy"
   - "culturally relevant pedagogy"
 date-created: 2026-03-06
@@ -17,9 +16,6 @@ enables:
   - knowledge-sovereignty
 tags:
   - decolonial
-defines:
-- culturally sustaining pedagogy
-- culturally responsive pedagogy
 ---
 
 [Culturally sustaining pedagogy](./culturally-sustaining-pedagogy.md) is an approach to education that seeks to sustain — not merely tolerate or respond to — the cultural practices, languages, and knowledge systems of communities that have been marginalized by dominant educational institutions.

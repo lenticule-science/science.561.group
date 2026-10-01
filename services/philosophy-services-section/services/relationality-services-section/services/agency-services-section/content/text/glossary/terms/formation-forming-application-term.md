@@ -2,7 +2,6 @@
 name: Forming Application Term
 description: Story.
 ---
-# Forming Application Term
 
 *Story.*  The pair still needs to record the combined application.  Forcing PairApplication to witness TailTrace yields FormApplicationTerm.
 

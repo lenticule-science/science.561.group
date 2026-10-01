@@ -5,7 +5,6 @@ aliases:
   - "prime number"
   - "primes"
 date-created: 2026-03-05
-type: term
 tags: []
 description: A prime is an integer $p > 1$ whose only positive divisors are $1$ and $p$.
 ---

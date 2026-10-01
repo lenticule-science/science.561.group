@@ -1,11 +1,9 @@
 ---
 name: "Lightweight Protocol"
-date-created: 2026-03-08T00:00:00
+date-created: 2026-03-08
 authors:
   - claude
-type: term
 aliases:
-  - "lightweight protocol"
   - "lightweight protocols"
   - "loose protocol"
   - "loose protocols"
@@ -15,36 +13,24 @@ keywords:
   - MutualAid
   - DecisionMaking
 description: "A minimal procedural form that coordinates people and tasks without hardening response into a rigid command hierarchy."
-defines:
-  - "lightweight protocol"
-  - "lightweight protocols"
-  - "loose protocol"
-  - "loose protocols"
 cites:
   - landau2022
   - occupysandyorientation2012
 references:
-  - id: landau2022
-    type: article-journal
+  landau2022:
+    authors:
+      - Laura Landau
     title: "Mutual Aid as Disaster Response in NYC: Hurricane Sandy to COVID-19"
-    volume: 9
-    issue: 2
-    author:
-      - literal: Laura Landau
-    container-title: Journal of Extreme Events
-    page: "2241001"
-    issued:
-      - year: 2022
-    URL: https://mutualaiddisasterrelief.org/wp-content/uploads/2023/05/Mutual-Aid-As-Disaster-Response-in-NYC.pdf
-  - id: occupysandyorientation2012
-    type: document
+    year: 2022
+    publication: Journal of Extreme Events
+    url: https://mutualaiddisasterrelief.org/wp-content/uploads/2023/05/Mutual-Aid-As-Disaster-Response-in-NYC.pdf
+  occupysandyorientation2012:
+    authors:
+      - Occupy Sandy
     title: Occupy Sandy Field Orientation
-    author:
-      - literal: Occupy Sandy
-    container-title: Superstorm Research Lab
-    issued:
-      - year: 2012
-    URL: https://superstormresearchlab.org/wp-content/uploads/2013/07/newoccupysandyfieldorientation520clinton.pdf
+    year: 2012
+    publication: Superstorm Research Lab
+    url: https://superstormresearchlab.org/wp-content/uploads/2013/07/newoccupysandyfieldorientation520clinton.pdf
 tags:
   - disaster-studies
   - procedures

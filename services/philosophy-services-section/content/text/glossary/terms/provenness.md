@@ -4,7 +4,6 @@ description: "The epistemic status of having been established through demonstrat
 date-created: 2026-03-02
 date-modified: 2026-03-29
 aliases:
-  - "provenness"
   - "proven"
 component-of: epistemology
 contrasts-with: truth
@@ -19,9 +18,6 @@ references:
     publication: Monatshefte für Mathematik und Physik
 type: structure
 visibility: public
-defines:
-  - "Provenness"
-  - "proven"
 ---
 
 Provenness is the property of having been established through a process of demonstration, verification, or validation. Unlike truth (which concerns correspondence or coherence), provenness concerns the epistemic status of a claim relative to a community's standards of evidence and reasoning. A claim may be true without being proven, and in some formal systems, the gap between truth and provenness is itself a subject of study.

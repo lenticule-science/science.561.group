@@ -12,7 +12,11 @@ keywords:
   - biogeochemistry
   - soil
   - agriculture
-related-to: [nitrogen-fixation, nitrification, denitrification, symbiosis]
+see-also:
+  - nitrogen-fixation
+  - nitrification
+  - denitrification
+  - symbiosis
 ---
 
 The nitrogen cycle is the set of biogeochemical processes by which nitrogen moves between its atmospheric, terrestrial, and aquatic reservoirs. Nitrogen is essential to all living organisms — it is a core component of proteins, nucleic acids, and chlorophyll — yet most of Earth's nitrogen (78% of the atmosphere) is locked in inert molecular form (N₂) that most organisms cannot use. The nitrogen cycle describes how this unavailable nitrogen becomes biologically available and how it cycles through life and back to the atmosphere.

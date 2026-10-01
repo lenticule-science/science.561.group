@@ -1,5 +1,4 @@
 ---
-date: "\\[2025-08-28 Thu 14:06\\]"
 id: 30c00bf3-5afe-43d9-8760-a130f6a7b3e8
 name: closed-source software
 date-created: 2025-08-28

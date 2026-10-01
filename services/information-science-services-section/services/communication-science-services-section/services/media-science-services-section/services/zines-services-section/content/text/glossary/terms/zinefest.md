@@ -10,7 +10,6 @@ date-created: 2026-03-06
 tags: []
 date-updated: 2026-03-09
 part-of: media/topics/zines/terms
-type: term
 visibility: public
 ---
 

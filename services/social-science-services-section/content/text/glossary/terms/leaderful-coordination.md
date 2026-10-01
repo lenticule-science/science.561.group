@@ -1,11 +1,9 @@
 ---
 name: "Leaderful Coordination"
-date-created: 2026-03-08T00:00:00
+date-created: 2026-03-08
 authors:
   - claude
-type: term
 aliases:
-  - "leaderful coordination"
   - "leaderful organizing"
   - "leaderful organization"
 keywords:
@@ -14,35 +12,24 @@ keywords:
   - MutualAid
   - Organizations
 description: "A coordination form in which leadership capacity is widely distributed and situational rather than concentrated in a single authority."
-defines:
-  - "leaderful coordination"
-  - "leaderful organizing"
-  - "leaderful organization"
 cites:
   - landau2022
   - madrprinciples2020
 references:
-  - id: landau2022
-    type: article-journal
+  landau2022:
+    authors:
+      - Laura Landau
     title: "Mutual Aid as Disaster Response in NYC: Hurricane Sandy to COVID-19"
-    volume: 9
-    issue: 2
-    author:
-      - literal: Laura Landau
-    container-title: Journal of Extreme Events
-    page: "2241001"
-    issued:
-      - year: 2022
-    URL: https://mutualaiddisasterrelief.org/wp-content/uploads/2023/05/Mutual-Aid-As-Disaster-Response-in-NYC.pdf
-  - id: madrprinciples2020
-    type: document
+    year: 2022
+    publication: Journal of Extreme Events
+    url: https://mutualaiddisasterrelief.org/wp-content/uploads/2023/05/Mutual-Aid-As-Disaster-Response-in-NYC.pdf
+  madrprinciples2020:
+    authors:
+      - Mutual Aid Disaster Relief
     title: Guiding Principles
-    author:
-      - literal: Mutual Aid Disaster Relief
-    container-title: Mutual Aid Disaster Relief
-    issued:
-      - year: 2020
-    URL: https://mutualaiddisasterrelief.org/guiding-principles/
+    year: 2020
+    publication: Mutual Aid Disaster Relief
+    url: https://mutualaiddisasterrelief.org/guiding-principles/
 tags:
   - disaster-studies
   - decision-making

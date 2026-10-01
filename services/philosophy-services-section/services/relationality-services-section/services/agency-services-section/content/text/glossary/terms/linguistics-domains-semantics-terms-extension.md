@@ -1,6 +1,5 @@
 ---
 name: "extension"
-type: "term"
 date-created: 2025-12-31
 ---
 

@@ -20,7 +20,6 @@ references:
     title: "Il faut défendre la société: Cours au Collège de France 1975-1976"
     publication: "Seuil/Gallimard"
     year: 1997
-type: term
 aliases:
   - biopower
 ---

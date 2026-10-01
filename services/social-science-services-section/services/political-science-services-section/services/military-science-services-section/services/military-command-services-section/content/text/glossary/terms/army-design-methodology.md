@@ -26,7 +26,6 @@ references:
 cites:
   - usarmy2015atp5_0_1
   - usarmy2019adp5_0
-type: term
 ---
 
 Army Design Methodology (ADM) is an Army methodology for **framing the operational environment**, **framing the problem**, and **developing an operational approach** so that detailed planning stays connected to reality [@usarmy2015atp5_0_1].

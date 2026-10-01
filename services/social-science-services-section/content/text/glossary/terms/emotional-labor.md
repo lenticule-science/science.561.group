@@ -1,66 +1,56 @@
 ---
 name: "Emotional labor"
-defines: emotional-labor
-aliases: [emotional labor, emotion work]
+aliases: [ emotion work, emotional-labor ]
 description: "The labor of producing or suppressing feelings to meet the affective expectations of an institution, role, or audience — distinct from physical or cognitive labor in that what is being shaped is the worker's own feeling-state. Coined by Arlie Russell Hochschild in *The Managed Heart* (1983) to analyze the affective work of service-sector employees."
-related: [feeling-rules, affective-labor, emotion-work]
 contrasts-with: [physical-labor, cognitive-labor]
 date-created: 2026-04-27
 references:
-  - id: hochschild1983
-    type: document
+  hochschild1983:
+    authors:
+      - Arlie Russell Hochschild
     title: "The Managed Heart: Commercialization of Human Feeling"
+    year: 1983
+    publication: University of California Press
     note: the foundational text; the flight-attendant study and the original formulation of emotional labor
-    author:
-      - literal: Arlie Russell Hochschild
-    container-title: University of California Press
-    issued:
-      - year: 1983
-  - id: hochschild1989
-    type: document
+  hochschild1989:
+    authors:
+      - Arlie Russell Hochschild
     title: "The Second Shift: Working Families and the Revolution at Home"
+    year: 1989
+    publication: Viking
     note: the extension of emotion-work analysis to the household and the gendered division of unpaid affective labor
-    author:
-      - literal: Arlie Russell Hochschild
-    container-title: Viking
-    issued:
-      - year: 1989
-  - id: goffman1959
-    type: document
+  goffman1959:
+    authors:
+      - Erving Goffman
     title: The Presentation of Self in Everyday Life
+    year: 1959
+    publication: Doubleday
     note: the dramaturgical analysis Hochschild builds on; impression management as the precursor concept
-    author:
-      - literal: Erving Goffman
-    container-title: Doubleday
-    issued:
-      - year: 1959
-  - id: ehrenreich2001
-    type: document
+  ehrenreich2001:
+    authors:
+      - Barbara Ehrenreich
     title: "Nickel and Dimed: On (Not) Getting By in America"
+    year: 2001
+    publication: Metropolitan Books
     note: the empirical-journalistic application; how emotional labor compounds physical labor in low-wage service work
-    author:
-      - literal: Barbara Ehrenreich
-    container-title: Metropolitan Books
-    issued:
-      - year: 2001
-  - id: hardt1999
-    type: document
+  hardt1999:
+    authors:
+      - Michael Hardt
     title: Affective Labor
+    year: 1999
+    publication: boundary 2 26(2)
     note: the autonomist-Marxist generalization of the concept to immaterial labor in the post-Fordist economy
-    author:
-      - literal: Michael Hardt
-    container-title: boundary 2 26(2)
-    issued:
-      - year: 1999
-  - id: weeks2007
-    type: document
+  weeks2007:
+    authors:
+      - Kathi Weeks
     title: "Life Within and Against Work: Affective Labor, Feminist Critique, and Post-Fordist Politics"
+    year: 2007
+    publication: Ephemera 7(1)
     note: the feminist-Marxist synthesis; how emotional labor relates to broader politics of work
-    author:
-      - literal: Kathi Weeks
-    container-title: Ephemera 7(1)
-    issued:
-      - year: 2007
+see-also:
+  - feeling-rules
+  - affective-labor
+  - emotion-work
 ---
 
 **Emotional labor** is the labor of producing or suppressing feelings to meet the affective expectations of an institution, role, or audience.

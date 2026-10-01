@@ -1,7 +1,6 @@
 ---
 name: "Hyperverse"
 component-of: multiverse
-type: term
 ---
 
 

@@ -8,7 +8,6 @@ date-created: 2026-03-05
 tags: []
 date-updated: 2026-03-09
 part-of: media/topics/worldbuilding/terms
-type: term
 ---
 
 A secondary world is a self-consistent fictional reality that operates according to its own internal laws, distinct from the primary world of the reader or audience. The term derives from J.R.R. Tolkien's essay "On Fairy-Stories" (1947), where he argues that the fantasy author creates a "Secondary World which your mind can enter," and that within it, "what he relates is 'true': it accords with the laws of that world."

@@ -7,7 +7,6 @@ name: Refactor
 description: A refactor of a codebase settling $v^{\mathrm{code}}$ under witness language $W$ is an element of the invisible-automorphism subgroup $NW(v^{\mathrm{code}})$ — an automorphism of the codebase cell-system that fixes every cell of $W$ that…
 ---
 
-# Refactor
 
 A **refactor** of a codebase settling $v^{\mathrm{code}}$ under witness language $W$ is an element of the [invisible-automorphism subgroup](../../../../../../../philosophy-services-section/services/logic-services-section/content/text/glossary/concepts/invisible-automorphism-subgroup.md) $N_W(v^{\mathrm{code}})$ — an automorphism of the codebase cell-system that fixes every cell of $W$ that has been newly designated by the settling.
 

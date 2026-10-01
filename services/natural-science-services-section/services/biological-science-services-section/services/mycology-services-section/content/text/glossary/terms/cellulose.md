@@ -9,7 +9,6 @@ keywords:
   - Mycology
   - Biochemistry
   - PlantBiology
-type: term
 ---
 
 

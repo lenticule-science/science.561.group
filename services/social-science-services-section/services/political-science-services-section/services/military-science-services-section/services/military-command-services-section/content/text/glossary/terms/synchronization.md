@@ -10,7 +10,6 @@ keywords:
   - CombatSystems
   - Governance
 description: "The deliberate arrangement of activities in time, space, and purpose so distributed actions converge; often expressed through synchronization matrices and coordinating instructions."
-type: term
 ---
 
 Synchronization is the deliberate arrangement of activities in time, space, and purpose so distributed actions converge.

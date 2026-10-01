@@ -6,7 +6,6 @@ aliases:
   - "plant cutting"
 date-created: 2026-03-07
 tags: []
-type: term
 ---
 
 A piece of stem, leaf, or root removed from a parent plant and placed

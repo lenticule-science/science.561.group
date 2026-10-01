@@ -7,7 +7,6 @@ name: Alphabet-extension morphism
 description: The morphism between step-$n$ substitution rules over different-but-related alphabets at the same step depth $n$.
 ---
 
-# Alphabet-extension morphism
 
 The morphism between step-$n$ substitution rules over different-but-related alphabets at the same step depth $n$. Companion to the [step-shift morphism](../../documents/articles/research/2026/07/31/lenticule-import/yet-another-unsorted-archive-dump/predication-categories/_archive/bucket-3/morphisms/step-shift-morphism.md): where step-shift is the "vertical" morphism increasing $n$, alphabet-extension is the "horizontal" morphism varying the substitution structure within fixed $n$.
 

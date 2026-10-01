@@ -10,7 +10,6 @@ name: Finding
 description: "The substrate-entity produced by the review stage: a structured judgment comparing observed work-state to expected work-state."
 ---
 
-# Finding
 
 The substrate-entity produced by the [review](../../../../../../content/text/glossary/terms/review.md) stage: a structured judgment comparing observed work-state to expected work-state. Per the [referencing-entity pattern](../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/research/predicated-agentic-orchestration-platform/flatfile-agentic-resource-system/flatfile/referencing-entity-pattern/referencing-entity-pattern.md), findings are *first-class entities a review entity contains*, not bullet points in a review's body. The review is thin; the findings are where the substantive content lives.
 

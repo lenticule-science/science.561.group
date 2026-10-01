@@ -8,7 +8,6 @@ name: Repair-resolution poset
 description: A repair-resolution poset $W = (\{\textsf{open}, \textsf{proposed}, \textsf{resolved}, \textsf{archived}\}, \leW)$ is the four-element forward-only poset of states a $\top$-cell witness in the inconsistency sheaf may occupy as it…
 ---
 
-# Repair-resolution poset
 
 A **repair-resolution poset** $W = (\{\textsf{open}, \textsf{proposed}, \textsf{resolved}, \textsf{archived}\}, \le_W)$ is the four-element forward-only poset of states a $\top$-cell witness in the [inconsistency sheaf](../../../../../../../information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/obsmetrologia/docs/verso/mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/content/sheaf/content/inconsistency-sheaf/inconsistency-sheaf.md) may occupy as it traverses its repair lifecycle. The poset is the math-side carrier of the substrate's monotone, append-only repair-tracking discipline.
 

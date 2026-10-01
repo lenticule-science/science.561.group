@@ -21,7 +21,6 @@ aliases:
 name: "Relief"
 ---
 
-# Relief
 
 ## Formal definition
 

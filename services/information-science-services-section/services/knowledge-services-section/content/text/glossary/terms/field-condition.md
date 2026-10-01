@@ -1,6 +1,5 @@
 ---
 type: "[[concept]]"
-date: 2025-04-12
 
 delta:
   - "[[invisible modulation structures]]"
@@ -27,6 +26,7 @@ enfolds:
   - "[[delta register]]"
 aliases:
   - field condition
+date-created: 2025-04-12
 ---
 # field condition
 

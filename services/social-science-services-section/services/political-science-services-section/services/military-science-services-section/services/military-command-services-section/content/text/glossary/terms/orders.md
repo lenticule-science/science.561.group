@@ -11,7 +11,6 @@ keywords:
   - CombatSystems
   - Governance
 description: "Standardized command texts that distribute intent, tasks, constraints, and synchronization so multiple units can act coherently."
-type: term
 ---
 
 Orders are standardized command texts that distribute intent, tasks, constraints, and synchronization so multiple units can act coherently. In western militaries, orders are formats: they compress complexity into predictable sections so that recipients can quickly find what they need.

@@ -3,33 +3,24 @@ name: "Intertheoretic Reduction"
 description: "The claim that one scientific theory can be derived from or explained by another, typically more fundamental, theory — connecting vocabularies through bridge laws."
 date-created: 2026-03-02
 date-modified: 2026-03-29
-type: term
 aliases:
-  - "intertheoretic reduction"
-  - "theory reduction"
-defines:
-  - "Intertheoretic Reduction"
   - "theory reduction"
 component-of: analytic-philosophy
 contrasts-with: [emergence, multiple-realizability]
 requires: bridge-law
 references:
-  - id: nagel1961
-    type: document
+  nagel1961:
+    authors:
+      - Ernest Nagel
     title: The Structure of Science
-    author:
-      - literal: Ernest Nagel
-    container-title: Harcourt, Brace & World
-    issued:
-      - year: 1961
-  - id: fodor1974
-    type: document
+    year: 1961
+    publication: Harcourt, Brace & World
+  fodor1974:
+    authors:
+      - Jerry Fodor
     title: "Special Sciences (Or: The Disunity of Science as a Working Hypothesis)"
-    author:
-      - literal: Jerry Fodor
-    container-title: Synthese
-    issued:
-      - year: 1974
+    year: 1974
+    publication: Synthese
 visibility: public
 ---
 

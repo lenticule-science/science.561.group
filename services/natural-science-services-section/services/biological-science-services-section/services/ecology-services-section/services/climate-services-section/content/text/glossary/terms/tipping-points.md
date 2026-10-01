@@ -7,7 +7,6 @@ aliases:
   - "tipping elements"
 description: "Thresholds in the climate system beyond which changes become self-perpetuating and irreversible on human timescales."
 tags: []
-type: term
 ---
 
 Climate tipping points are thresholds beyond which changes in a climate subsystem become self-perpetuating — driven by internal [feedback loops](./feedback-loops.md) rather than by continued external forcing. Once a tipping point is crossed, the system transitions to a qualitatively different state, and this transition is effectively irreversible on human timescales (centuries to millennia).

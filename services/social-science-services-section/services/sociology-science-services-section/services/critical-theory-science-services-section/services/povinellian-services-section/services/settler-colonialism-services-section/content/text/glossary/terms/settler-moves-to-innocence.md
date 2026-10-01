@@ -2,7 +2,6 @@
 name: "Settler Moves to Innocence"
 date-created: 2026-03-02
 aliases:
-  - "settler moves to innocence"
   - "moves to innocence"
 tags: []
 date-modified: 2026-03-09
@@ -15,10 +14,6 @@ references:
     title: Decolonization is not a metaphor
     publication: "Decolonization: Indigeneity, Education & Society 1(1)"
     year: 2012
-type: term
-defines:
-  - "Settler Moves to Innocence"
-  - "moves to innocence"
 date-updated: 2026-03-09
 ---
 

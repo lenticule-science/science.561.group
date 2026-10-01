@@ -7,7 +7,6 @@ date-created: 2026-03-05
 tags: []
 date-updated: 2026-03-09
 part-of: media/topics/worldbuilding/terms
-type: term
 ---
 
 A paracosm is a detailed, internally structured imaginary world, typically developed over an extended period through sustained imaginative engagement. The term originates in developmental psychology, introduced by Robert Silvey and Stephen MacKeith in the 1970s to describe the elaborate fantasy worlds constructed by children, and later elaborated by David Cohen and MacKeith in *Creating Imaginary Worlds* (1991). Their research emphasized the process of paracosmic creation—the interlinked, iteratively developing properties of the imagined domain—rather than the specific content or scale of any particular world.

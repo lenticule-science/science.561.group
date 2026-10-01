@@ -18,19 +18,17 @@ ast:
         - history-monoid
     - commuting-nucleus-pair:
         - fiber-family
-defines:
-  - relational state
-related:
+id: relational-state
+date-modified: 2026-03-19
+see-also:
   - relating
   - relational-entity
   - relational-field
   - settlement
-  - true
-  - false
+  - "true"
+  - "false"
   - absurd
   - determination
-id: relational-state
-date-modified: 2026-03-19
 ---
 
 A **relational state** is the configuration that a [relational entity](relational-entity.md) occupies at a given moment of inquiry. Where the entity is the stable pattern, the state is the specific position the pattern is at right now: the witnessings that have been performed, the [settlement](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/settlement.md) the entity has reached, the constraints the entity is under given current evidence.

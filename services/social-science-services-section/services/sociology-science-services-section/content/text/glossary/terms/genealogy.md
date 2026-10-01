@@ -31,15 +31,11 @@ references:
     year: 1975
     publication: Gallimard
 aliases:
-  - genealogy
-type: term
+  - descent (Herkunft)
+  - emergence (Entstehung)
 tags:
   - CriticalTheory
   - Methodology
-defines:
-  - "genealogy"
-  - "descent (Herkunft)"
-  - "emergence (Entstehung)"
 ---
 
 Genealogy is a method for tracing how present-day concepts, institutions, and practices emerged through contingency, conflict, and power rather than through rational development or natural necessity. Where most histories explain the present as the outcome of progress or design, genealogy shows that the present is the product of struggles that could have gone otherwise.

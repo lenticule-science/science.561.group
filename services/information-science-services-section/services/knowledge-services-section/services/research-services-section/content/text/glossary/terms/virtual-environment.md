@@ -3,10 +3,10 @@ org-id: d6db98dc-1126-40e7-8ddc-8b3897be5c0c
 org-date-created: 2025-08-26T17:13:00
 name: Virtual Environment
 date-created: 2025-04-01
-dg-publish: true
 aliases:
   - virtual environment
 tags: []
+visibility: public
 ---
 
 An [environment](./environment.md) constructed with [digital computer|digital computers](digital computer|digital computers) or through [imagination](imagination).

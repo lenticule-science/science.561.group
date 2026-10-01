@@ -10,7 +10,6 @@ name: Leitourgia
 description: The mathematical realization of the leitourgia — a public service obligation imposed by position rather than chosen, discharged by correct enactment before a constituted witnessing community, at irreversible personal cost.
 ---
 
-# Leitourgia
 
 The mathematical realization of the [leitourgia](../../../humanities/theories/sociology/theories/work/theories/governance/terms/leitourgia.md) — a public service obligation imposed by position rather than chosen, discharged by correct enactment before a constituted witnessing community, at irreversible personal cost. Formalizes the two-stage discharge structure (form-enactment + forward-stability) as a bigraded settlement condition on the operations settling.
 

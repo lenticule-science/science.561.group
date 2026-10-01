@@ -1,7 +1,7 @@
 ---
 name: Event
 description: "Something that happens at a specific time — the exemplification of a property by an object at a moment, from Kim's structured triples to Whitehead's actual occasions."
-aliases: [ events, event ]
+aliases: [ events ]
 date-created: 2026-04-03
 instance-of: [act, change]
 requires: [time]
@@ -28,9 +28,6 @@ references:
     publication: "Mind, 17(68)"
     year: 1908
 date-modified: 2026-03-29
-type: term
-defines:
-  - "Event"
 ---
 
 An event is something that happens at a specific [time](./time.md) — a change that can be dated and identified. A window breaking, a patient's fever spiking, a vote being cast, a bell ringing. These are events. Events mark the transition of a [thing](./thing.md) from one [state](./state.md) to another.

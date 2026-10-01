@@ -1,37 +1,27 @@
 ---
 name: "Mereology"
 description: "The study of the relations between parts and wholes — what it means for one thing to be a part of another and how parts compose wholes."
-date-created: 2026-03-03T00:00:00
+date-created: 2026-03-03
 date-modified: 2026-03-29
-type: term
 aliases:
-  - "mereology"
   - "mereological"
   - "part-whole relation"
-defines:
-  - "Mereology"
-  - "mereological"
-  - "part-whole relation"
-  - "component-of"
-  - "contains"
+  - component-of
+  - contains
 component-of: ontology
 contrasts-with: set-theory
 references:
-  - id: lesniewski1916
-    type: document
+  lesniewski1916:
+    authors:
+      - Stanisław Leśniewski
     title: Podstawy ogólnej teorii mnogości I
-    author:
-      - literal: Stanisław Leśniewski
-    issued:
-      - year: 1916
-  - id: simons1987
-    type: document
+    year: 1916
+  simons1987:
+    authors:
+      - Peter Simons
     title: "Parts: A Study in Ontology"
-    author:
-      - literal: Peter Simons
-    container-title: Clarendon Press
-    issued:
-      - year: 1987
+    year: 1987
+    publication: Clarendon Press
 ---
 
 Mereology is the study of the relations between parts and wholes. It asks what it means for one thing to be a part of another, how parts compose wholes, and whether composition is governed by universal principles or context-dependent conditions. The word derives from the Greek *meros* (part), and the discipline was formalized by Stanisław Leśniewski in the early twentieth century as an alternative to set theory for representing structure.

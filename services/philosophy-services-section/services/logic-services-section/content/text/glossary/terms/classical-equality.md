@@ -8,7 +8,6 @@ description: "Fix a predicate specialization $g : q \\to p$ with $\\mathrm{dom}(
 kind: definition
 ---
 
-# Classical equality (derived)
 
 Fix a [predicate specialization](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/predicate-specialization.md) $g : q \to p$ with $\mathrm{dom}(q) = \Delta_E := \{(s, s) : s \in E\}$ — the diagonal sub-support of the [entity set](../../documents/articles/research/2026/07/31/lenticule-import/yet-another-unsorted-archive-dump/predication-categories/_archive/bucket-4/articulating/library/aperiodic-articulation-category/library/aperiodic-articulation-cell/library/potential-aperiodic-articulation-cell/predicating/library/transfinite-predication-category/hacking/library/predication-hyperdoctrine/library/classical-equality/docs/dev/scraps/entity-set.md) $E$. The **classical equality** on an [predication hyperdoctrine](../../documents/articles/research/2026/07/31/lenticule-import/yet-another-unsorted-archive-dump/predication-categories/_archive/bucket-4/articulating/library/aperiodic-articulation-category/library/aperiodic-articulation-cell/library/potential-aperiodic-articulation-cell/predicating/library/transfinite-predication-category/hacking/library/predication-hyperdoctrine/library/classical-equality/docs/dev/scraps/predication-hyperdoctrine.md) is the $\leq_t$-Lawvere image
 

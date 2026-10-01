@@ -1,35 +1,26 @@
 ---
 name: "Particular Other"
 description: "The concrete, specific person who stands in a care relation — opposed to the 'generalized other' of Kantian ethics, irreducible in needs, history, and vulnerability."
-date-created: 2026-03-05T00:00:00
+date-created: 2026-03-05
 date-modified: 2026-03-29
-type: term
 aliases:
-  - "particular other"
-  - "concrete other"
-defines:
-  - "Particular Other"
   - "concrete other"
 component-of: care-ethics
 contrasts-with: generalized-other
 requires: [dependency, vulnerability]
 references:
-  - id: noddings1984
-    type: document
+  noddings1984:
+    authors:
+      - Nel Noddings
     title: "Caring: A Feminine Approach to Ethics and Moral Education"
-    author:
-      - literal: Nel Noddings
-    container-title: University of California Press
-    issued:
-      - year: 1984
-  - id: benhabib1992
-    type: document
+    year: 1984
+    publication: University of California Press
+  benhabib1992:
+    authors:
+      - Seyla Benhabib
     title: "Situating the Self: Gender, Community and Postmodernism in Contemporary Ethics"
-    author:
-      - literal: Seyla Benhabib
-    container-title: Routledge
-    issued:
-      - year: 1992
+    year: 1992
+    publication: Routledge
 ---
 
 The particular other is the concrete, specific person who stands in a care relation — as opposed to the "generalized other" of Kantian and contractualist ethics. Care ethics insists that moral life does not begin with abstract others who are interchangeable bearers of rights but with specific persons whose needs, histories, and vulnerabilities are irreducibly their own.

@@ -8,7 +8,6 @@ keywords:
 cites:
   - "A Theory of Semiotics"
   - "Peirce's Theory of Signs"
-type: term
 tags:
   - peirce
 references:

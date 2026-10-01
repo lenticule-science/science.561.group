@@ -3,7 +3,6 @@ name: "Telemetric Casting Cycle"
 date-created: 2025-04-15
 keywords:
   - CyberneticPostliberalism
-type: term
 aliases:
   - Related Records
   - dr-telemetric-casting-cycle
@@ -15,7 +14,6 @@ signal:
 method:
   - "[formalize](formalize)"
   - "[sequence recognition](sequence recognition)"
-date: 2025-04-15
 ---
 
 A ***casting cycle*** is a unit of recursive grammatical behavior in which a yield is retained as a new signal. It is the structure through which a telemetric system sustains coherence without stabilizing meaning.

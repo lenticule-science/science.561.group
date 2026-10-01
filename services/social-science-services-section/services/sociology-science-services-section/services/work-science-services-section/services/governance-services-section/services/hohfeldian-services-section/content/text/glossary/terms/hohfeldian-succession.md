@@ -20,7 +20,6 @@ aliases:
 name: "Succession"
 ---
 
-# Succession
 
 ## Formal definition
 

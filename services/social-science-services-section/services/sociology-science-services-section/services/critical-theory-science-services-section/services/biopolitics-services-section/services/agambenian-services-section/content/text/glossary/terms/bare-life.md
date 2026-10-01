@@ -22,7 +22,6 @@ references:
     title: "Homo Sacer: Sovereign Power and Bare Life"
     publication: "Stanford University Press"
     year: 1998
-type: term
 ---
 
 Bare life (*nuda vita*) is Giorgio Agamben's term for human existence stripped to its biological minimum — life that is included in the political order only by being excluded from it. Agamben develops the concept in *Homo Sacer: Sovereign Power and Bare Life* (1995; English translation 1998), drawing on Foucault's biopolitics and Carl Schmitt's theory of sovereignty.

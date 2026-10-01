@@ -8,7 +8,6 @@ name: Specialize
 description: "The predicate-category operation by which a more general predicate is refined to a more specific one along a category morphism $f: p{\\mathrm{specific}} \\to p{\\mathrm{general}}$ in $\\mathcal{C}$."
 ---
 
-# Specialize
 
 The predicate-category operation by which a more general predicate is refined to a more specific one along a category morphism $f: p_{\mathrm{specific}} \to p_{\mathrm{general}}$ in $\mathcal{C}$. The specialisation is *contravariant in fibers*: the substitution functor $f^*: K_{p_\mathrm{general}} \to K_{p_\mathrm{specific}}$ pulls a community's knowledge under the general predicate down to the specific one, restricted to the cells the specialisation admits.
 

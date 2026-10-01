@@ -1,9 +1,7 @@
 ---
 name: "Overrepresentation of Man"
-defines: man-overrepresentation
-aliases: [man-overrepresentation, overrepresentation of man, the overrepresentation, man as if it were the human]
+aliases: [ man-overrepresentation, the overrepresentation, man as if it were the human ]
 description: "Wynter's term for the structural condition in which the modern Western secular subject — Man, in two successive overrepresentations (Man1 of the rational political subject, Man2 of the bio-economic subject) — has been mistaken for the human itself, with the consequence that other genres of the human are positioned as subhuman, prehuman, or insufficiently human. The overrepresentation is not a correctable bias but the structural form of modern knowledge, governing what counts as rational, scientific, and fully human."
-related: [genres-of-the-human, sociogenic-principle, coloniality-of-being, descriptive-statement]
 contrasts-with: [pluriversal-human, post-anthropocentric-human]
 date-created: 2026-04-27
 date-modified: 2026-04-27
@@ -72,6 +70,11 @@ references:
     container-title: Duke University Press
     issued:
       - year: 2014
+see-also:
+  - genres-of-the-human
+  - sociogenic-principle
+  - coloniality-of-being
+  - descriptive-statement
 ---
 
 The **overrepresentation of Man** is Sylvia Wynter's term for the structural condition in which the modern Western secular subject — *Man*, in two successive overrepresentations (Man1 of the rational political subject, Man2 of the bio-economic subject) — has been mistaken for the human itself. The mistake is not an error of perception or a correctable bias. It is the structural form of modern knowledge: the conditions under which something counts as rational, scientific, fully human, normatively standard. Other genres of the human are positioned, by the overrepresentation, as the constitutive outside that the figure of Man requires in order to remain Man. To unsettle the overrepresentation is to begin the work of constructing a new descriptive statement of the human — a project Wynter calls "the human, after Man."

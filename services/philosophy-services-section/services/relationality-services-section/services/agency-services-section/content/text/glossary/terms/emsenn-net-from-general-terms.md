@@ -1,8 +1,8 @@
 ---
 name: Emsenn.Net
 type: definition
-dg-publish: true
 description: emsenn.net is the top-level Internet domain I've used for my personal website.
+visibility: public
 ---
 
 [emsenn.net](https://emsenn.net) is the [top-level Internet domain](top-level Internet domain) I've used for my [personal website](personal website). As of [2023-12-24](../../documents/articles/research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/knowing/content/knowledge-science/archive/library/personal-websites/references/2023-12-24), it is used to host [Groundhog Autonomous Zone|my Webplace](Groundhog Autonomous Zone|my Webplace).

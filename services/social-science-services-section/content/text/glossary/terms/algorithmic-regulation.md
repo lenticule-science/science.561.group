@@ -1,51 +1,49 @@
 ---
 name: "Algorithmic Regulation"
 description: "Karen Yeung's term for regulatory regimes that operate through algorithmic systems — predictive, population-categorical, design-embedded — rather than through general rules applied case-by-case after the fact under conditions permitting reasoned contestation. A structurally distinct regulatory form whose interaction with constitutional and human-rights protections is deeply unsettled."
-defines: algorithmic-regulation
-related: [hypernudge, governance-indicator, surveillance-capitalism, ordinal-society, normative-system, charter, policy]
 contrasts-with: [classical-regulation, rule-based-regulation]
 date-created: 2026-05-03
 references:
-  - id: yeung-2017
-    type: document
+  yeung-2017:
+    authors:
+      - Karen Yeung
     title: "'Hypernudge': Big Data as a Mode of Regulation by Design"
-    author:
-      - literal: Karen Yeung
-    container-title: Information, Communication & Society, 20(1)
-    issued:
-      - year: 2017
-  - id: yeung-2018
-    type: document
+    year: 2017
+    publication: Information, Communication & Society, 20(1)
+  yeung-2018:
+    authors:
+      - Karen Yeung
     title: "Algorithmic Regulation: A Critical Interrogation"
-    author:
-      - literal: Karen Yeung
-    container-title: Regulation & Governance, 12(4)
-    issued:
-      - year: 2018
-  - id: hildebrandt2015
-    type: document
+    year: 2018
+    publication: Regulation & Governance, 12(4)
+  hildebrandt2015:
+    authors:
+      - Mireille Hildebrandt
     title: "Smart Technologies and the End(s) of Law: Novel Entanglements of Law and Technology"
-    author:
-      - literal: Mireille Hildebrandt
-    container-title: Edward Elgar
-    issued:
-      - year: 2015
-  - id: pasquale2015
-    type: document
+    year: 2015
+    publication: Edward Elgar
+  pasquale2015:
+    authors:
+      - Frank Pasquale
     title: "The Black Box Society: The Secret Algorithms That Control Money and Information"
-    author:
-      - literal: Frank Pasquale
-    container-title: Harvard University Press
-    issued:
-      - year: 2015
-  - id: eubanks2018
-    type: document
+    year: 2015
+    publication: Harvard University Press
+  eubanks2018:
+    authors:
+      - Virginia Eubanks
     title: "Automating Inequality: How High-Tech Tools Profile, Police, and Punish the Poor"
-    author:
-      - literal: Virginia Eubanks
-    container-title: St. Martin's Press
-    issued:
-      - year: 2018
+    year: 2018
+    publication: St. Martin's Press
+aliases:
+  - algorithmic-regulation
+see-also:
+  - hypernudge
+  - governance-indicator
+  - surveillance-capitalism
+  - ordinal-society
+  - normative-system
+  - charter
+  - policy
 ---
 
 **Algorithmic regulation** is Karen Yeung's term, formulated in [Algorithmic Regulation: A Critical Interrogation](yeung-2018), for regulatory regimes that operate through algorithmic systems rather than through the general-rule, case-by-case, contestable apparatus that classical legal and administrative regulation inherits from the modern legal tradition.

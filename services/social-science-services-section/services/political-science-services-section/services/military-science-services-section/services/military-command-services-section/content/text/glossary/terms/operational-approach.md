@@ -38,7 +38,6 @@ cites:
   - usarmy2019adp5_0
   - usmc2020mcwp5_10
   - nato2019ajp5
-type: term
 ---
 
 An operational approach is a broad description of the actions and conditions that will achieve the desired end state. It is the bridge between [operational design](./operational-design.md) and detailed planning [@jointchiefs2011jp5].

@@ -2,7 +2,6 @@
 name: Vernacular Autoethnosis
 date-created: 2026-03-04
 type: definition
-dg-publish: true
 aliases:
   - "vernacular autoethnosis"
 id: vernacular-autoethnosis
@@ -12,6 +11,7 @@ keywords:
   - SelfDetermination
   - Decolonization
 description: "The practice of self-determining an ethos through the creation and use of chosen rituals, stories, language patterns, and word choices."
+visibility: public
 ---
 
 ***Vernacular autoethnosis*** is (definition:: the [practicing|practice](practicing|practice) of [self-determining](self-determining) an [ethos](../../../../../../../../../social-science-services-section/content/text/glossary/terms/ethos.md) through [creating](creating) and [using](using) chosen [ritual|rituals](ritual|rituals), [story|stories](story|stories), [language pattern|language patterns](language pattern|language patterns), and [word choice|word choices](word choice|word choices)).

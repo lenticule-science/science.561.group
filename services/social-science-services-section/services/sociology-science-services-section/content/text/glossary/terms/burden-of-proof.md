@@ -9,14 +9,12 @@ see-also:
   - "/sociology/disciplines/legalism/index.md"
 references:
   - /sociology/disciplines/legalism/index.md
-type: term
 tags:
   - Legalism
-defines:
-  - "burden of proof"
-  - "standard of proof"
-  - "beyond a reasonable doubt"
-  - "preponderance of the evidence"
+aliases:
+  - standard of proof
+  - beyond a reasonable doubt
+  - preponderance of the evidence
 ---
 
 The burden of proof determines which party must prove what, and how convincingly, in a legal proceeding. It has two components: the burden of production (who must present [evidence](./evidence.md)) and the burden of persuasion (who loses if the evidence is inconclusive).

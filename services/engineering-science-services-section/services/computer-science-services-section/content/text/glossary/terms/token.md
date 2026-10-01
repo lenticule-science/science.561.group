@@ -11,16 +11,14 @@ aliases:
   - subword token
   - tokens
 references:
-  - id: sennrich2016
-    type: document
+  sennrich2016:
+    authors:
+      - Rico Sennrich
+      - Barry Haddow
+      - Alexandra Birch
     title: Neural Machine Translation of Rare Words with Subword Units
-    author:
-      - literal: Rico Sennrich
-      - literal: Barry Haddow
-      - literal: Alexandra Birch
-    container-title: Proceedings of the 54th Annual Meeting of the Association for Computational Linguistics
-    issued:
-      - year: 2016
+    year: 2016
+    publication: Proceedings of the 54th Annual Meeting of the Association for Computational Linguistics
 sources:
   - title: "ERC-20 Token Standard"
     url: https://eips.ethereum.org/EIPS/eip-20

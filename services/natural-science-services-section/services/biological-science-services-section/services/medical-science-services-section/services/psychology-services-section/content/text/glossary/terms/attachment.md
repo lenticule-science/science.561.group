@@ -14,7 +14,6 @@ requires: affect
 enables: therapeutic-alliance
 component-of: psychotherapy
 governs: neuroception
-type: term
 ---
 
 Attachment theory (John Bowlby, Mary Ainsworth) describes the biological system by which infants seek proximity to caregivers when distressed, and the relational patterns that develop from how caregivers respond. These patterns persist into adulthood, organizing how a person experiences intimacy, manages distress, and relates to others — including therapists.

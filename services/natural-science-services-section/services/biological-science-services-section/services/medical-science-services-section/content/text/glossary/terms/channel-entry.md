@@ -16,17 +16,14 @@ keywords:
 requires: [meridians, zang-fu]
 enables: herbal-medicine
 references:
-  - id: bensky2004
-    type: document
+  bensky2004:
+    authors:
+      - Dan Bensky
+      - Steven Clavey
+      - Erich Stöger
     title: "Chinese Herbal Medicine: Materia Medica"
-    edition: 3rd
-    author:
-      - literal: Dan Bensky
-      - literal: Steven Clavey
-      - literal: Erich Stöger
-    container-title: Eastland Press
-    issued:
-      - year: 2004
+    year: 2004
+    publication: Eastland Press
 ---
 
 Channel entry (gui jing 归经, literally "returning to the channel") is the concept in [Traditional Chinese Medicine](../../../../services/traditional-chinese-medicine-services-section/content/text/glossary/terms/traditional-chinese-medicine.md) that each medicinal herb has a natural affinity for specific [meridians](../../../../services/traditional-chinese-medicine-services-section/content/text/glossary/terms/meridians.md) and [organ-function systems](../../../../services/traditional-chinese-medicine-services-section/content/text/glossary/terms/zang-fu.md). When an herb "enters" a channel, it means the herb's therapeutic effects are directed preferentially toward the organs and body regions associated with that channel. Channel entry is one of the three primary classification axes for herbs in the TCM materia medica, alongside the four natures (thermal character) and five tastes.

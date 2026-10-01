@@ -2,16 +2,11 @@
 name: "Dual Power"
 date-created: 2026-03-06
 aliases:
-  - "dual power"
   - "counter-power"
 tags: []
 description: "The strategy of building alternative institutions — food systems, mutual aid networks, conflict resolution, cooperative economies — that meet real needs outside the state and capitalism, making existing power arrangements unnecessary rather than seizing them."
 part-of: sociology/schools/anarchism/topics/strategy/terms
-defines:
-  - "Dual Power"
-  - "counter-power"
 date-modified: 2026-03-09
-type: term
 date-updated: 2026-03-09
 ---
 

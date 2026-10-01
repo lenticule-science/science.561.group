@@ -30,7 +30,6 @@ references:
 name: "Contract"
 ---
 
-# Contract
 
 ## Formal definition
 

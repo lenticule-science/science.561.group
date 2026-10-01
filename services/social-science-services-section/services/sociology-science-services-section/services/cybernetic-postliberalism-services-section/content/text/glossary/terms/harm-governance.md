@@ -7,7 +7,6 @@ keywords:
   - Governance
   - Care
 description: "emsenn's term for the logic that political action must be managed — administered through risk frameworks — in order to be legitimate."
-type: term
 ---
 
 

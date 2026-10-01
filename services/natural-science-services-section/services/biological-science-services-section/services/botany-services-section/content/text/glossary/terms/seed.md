@@ -8,7 +8,6 @@ keywords:
   - Botany
   - Reproduction
   - PlantEvolution
-type: term
 ---
 
 Seed: a structure containing a plant embryo, a food reserve, and a protective coat. Seeds are the reproductive units of gymnosperms (conifers, cycads) and angiosperms (flowering plants). Each seed packages the next generation in a self-contained unit — the embryo carries the genetic blueprint, the endosperm or cotyledons provide the energy for initial growth, and the seed coat shields both from desiccation, mechanical damage, and pathogens until conditions favor germination.

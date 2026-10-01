@@ -4,7 +4,6 @@ aliases:
   - "Slow Death"
   - "slow death"
 date-created: 2026-03-06
-type: term
 tags: []
 date-updated: 2026-03-09
 part-of: sociology/schools/affect-theory/schools/berlant/terms

@@ -8,7 +8,6 @@ keywords:
   - CombatSystems
   - Governance
 description: "Long-term capability shaping: doctrine, organization, training systems, procurement, and professional education that determine what a force can do."
-type: term
 ---
 
 Force development is long-term capability shaping: doctrine, organization, training systems, procurement, and professional education that determine what a force can do. It is the slow time of command: the part that happens before war and persists after it.

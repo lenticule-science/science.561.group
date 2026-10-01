@@ -8,7 +8,6 @@ keywords:
   - Botany
   - CellBiology
   - Photosynthesis
-type: term
 ---
 
 Chloroplast: the organelle in plant cells (and algae) where photosynthesis occurs. Chloroplasts contain chlorophyll — the pigment that absorbs light energy — organized in flattened membrane structures called thylakoids, which are often stacked into grana. The thylakoid membranes are the site of the light-dependent reactions, where light energy drives the splitting of water molecules and the generation of ATP and NADPH. These energy carriers then fuel the Calvin cycle in the surrounding stroma, fixing atmospheric carbon dioxide into organic sugars. The entire process converts light energy into chemical energy, providing the foundation for nearly all food webs on Earth.

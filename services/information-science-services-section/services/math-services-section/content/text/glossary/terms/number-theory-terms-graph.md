@@ -4,7 +4,6 @@ aliases:
   - "graph"
   - "graphs"
 date-created: 2026-03-05
-type: term
 tags: []
 description: A graph $G = (V, E)$ is a pair consisting of a set $V$ of vertices and a set $E$ of edges, where each edge connects two vertices.
 ---

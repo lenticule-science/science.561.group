@@ -15,9 +15,8 @@ ast:
         - source-focus
         - target-history
 id: refocusing
-defines: Refocusing
-related: MacroFocus, Focus, MesoFocus, RelationalMachine, RelationalState, Passage
 date-modified: 2026-03-20
+see-also: macrofocus-focus-mesofocus-relationalmachine-relationalstate-passage
 ---
 
 ## Formal definition

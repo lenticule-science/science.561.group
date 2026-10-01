@@ -8,7 +8,6 @@ name: Universe
 description: A universe $\mathrm{Type}i$ is a type whose inhabitants are themselves types.
 ---
 
-# Universe
 
 A **universe** $\mathrm{Type}_i$ is a type whose inhabitants are themselves types. A universe is needed in [dependent-type-theory](dependent-type-theory.md) so that the type formers — [pi-type](pi-type.md), [sigma-type](sigma-type.md), [identity-type](identity-type.md) — can quantify over types as data.
 

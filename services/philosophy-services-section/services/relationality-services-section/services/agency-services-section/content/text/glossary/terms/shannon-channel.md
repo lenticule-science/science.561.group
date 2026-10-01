@@ -13,7 +13,6 @@ name: Shannon channel
 description: The Shannon channel is the foundational formal model of a communication channel, due to Shannon (1948, A Mathematical Theory of Communication).
 ---
 
-# Shannon channel
 
 The **Shannon channel** is the foundational formal model of a communication channel, due to Shannon (1948, *A Mathematical Theory of Communication*). It abstracts a channel as a probabilistic mapping from a finite input alphabet to a finite output alphabet, characterised by its channel capacity — the maximum mutual information between input and output, optimised over all input distributions.
 

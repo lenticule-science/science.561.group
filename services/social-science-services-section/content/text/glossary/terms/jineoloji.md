@@ -10,14 +10,12 @@ description: "The Kurdish women's movement's indigenous feminist theory — 'the
 extends: democratic-confederalism
 contrasts-with: [liberal-feminism, western-feminism-as-import]
 references:
-  - id: ocalan2013
-    type: document
+  ocalan2013:
+    authors:
+      - A. Ocalan
     title: "Liberating Life: Woman's Revolution"
-    author:
-      - literal: A. Ocalan
-    container-title: International Initiative
-    issued:
-      - year: 2013
+    year: 2013
+    publication: International Initiative
 ---
 
 Jineoloji (from Kurmanji *jin*, "woman," and Greek *-loji*, "science") is the Kurdish women's movement's indigenous feminist theory: the "science of women" or, more precisely, the science of free life grounded in the liberation of women.

@@ -9,7 +9,6 @@ keywords:
   - CombatSystems
   - Governance
 description: "A small set of information requirements identified by the commander as critical to facilitating timely decision making."
-type: term
 ---
 
 Commander’s Critical Information Requirements (CCIR) are the small set of information requirements the commander identifies as critical to facilitate timely decision making.

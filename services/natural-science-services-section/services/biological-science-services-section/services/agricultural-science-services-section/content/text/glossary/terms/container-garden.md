@@ -1,6 +1,6 @@
 ---
 id: 3d2bcdf5-e418-42ea-8d49-1817736f2ebd
-title: container garden
+name: container garden
 type: garden,, container
 visibility: public
 ---

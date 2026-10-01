@@ -11,7 +11,6 @@ keywords:
   - fictional-worlds
   - continuity
   - reproducible-paracosm
-type: term
 ---
 
 Canon, in media studies, is the set of facts, events, and relationships accepted as authoritative within a fictional world. It establishes what "actually happened" in the world and what can be relied upon as true across different works, tellings, or media set in that world.

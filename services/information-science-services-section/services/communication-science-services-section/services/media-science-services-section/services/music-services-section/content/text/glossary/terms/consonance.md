@@ -2,13 +2,9 @@
 name: "Consonance"
 date-created: 2026-03-05
 aliases:
-  - "consonance"
   - "consonant"
 tags: []
 description: "The perceptual quality of stability or restfulness in a combination of simultaneous pitches."
-defines:
-  - "Consonance"
-  - "consonant"
 ---
 
 Consonance is the perceptual quality of stability, rest, or "fitting together" in a combination of simultaneous pitches. Its complement is [dissonance](./dissonance.md) — the quality of tension, roughness, or instability. Together, consonance and [dissonance](./dissonance.md) form the basic polarity of [harmonic](harmony.md) perception in the Western theoretical tradition.

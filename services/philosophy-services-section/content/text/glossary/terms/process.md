@@ -3,22 +3,17 @@ name: "Process"
 description: "The fundamental character of reality in Whitehead's metaphysics: becoming rather than being, change rather than persistence — entities are achievements of processes, not substrates that undergo them."
 date-created: 2025-12-31
 date-modified: 2026-03-29
-type: term
 aliases:
-  - "process"
-defines:
-  - "Process"
+  []
 contrasts-with: substance-metaphysics
 contains: [actual-occasion, concrescence, prehension]
 references:
-  - id: whitehead1929
-    type: document
+  whitehead1929:
+    authors:
+      - Alfred North Whitehead
     title: "Process and Reality: An Essay in Cosmology"
-    author:
-      - literal: Alfred North Whitehead
-    container-title: Macmillan
-    issued:
-      - year: 1929
+    year: 1929
+    publication: Macmillan
 ---
 
 In process philosophy, process names the fundamental character of reality: becoming rather than being, change rather than persistence, relation rather than substance. To say that reality is processual is not merely to say that things change — which even substance metaphysics acknowledges — but that becoming is ontologically prior to being. Entities are achievements of processes, not substrates that undergo processes. The river is not a thing that flows but a flowing that we identify as a river. The organism is not a substance that metabolizes but a metabolizing that we identify as an organism.

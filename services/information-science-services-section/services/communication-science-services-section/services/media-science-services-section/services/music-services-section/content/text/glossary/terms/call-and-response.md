@@ -2,15 +2,10 @@
 name: "Call-and-Response"
 date-created: 2026-03-05
 aliases:
-  - "call-and-response"
   - "call and response"
   - "antiphony"
 tags: []
 description: "A musical structure in which one voice states and another answers, constituting a relational exchange."
-type: term
-defines:
-  - "Call-and-Response"
-  - "antiphony"
 ---
 
 Call-and-response is a musical structure in which a leading voice (the call) is answered by one or more responding voices (the response). The pattern is among the most widespread musical structures in the world, appearing in West African communal singing, African American gospel and blues, Indigenous ceremonial song, Gregorian chant (as antiphony), and countless other traditions.

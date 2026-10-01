@@ -6,7 +6,6 @@ aliases:
   - "tensor products"
 date-created: 2025-12-31
 tags: []
-type: term
 ---
 
 The tensor product in a [monoidal category](./monoidal-category.md) is a bifunctor ⊗: C × C → C that combines two objects into one. It is the categorical analogue of multiplication: just as a [monoid](./monoid.md) has a binary operation on elements, a monoidal category has a binary operation on objects.

@@ -10,7 +10,6 @@ keywords:
 description: "An operational outcome of visual engineering: perceptual mass and structural emphasis."
 cites:
   - "What Attributes Guide the Deployment of Visual Attention and How Do They Do It?"
-type: term
 tags:
   - visual-attention
   - typography

@@ -8,7 +8,6 @@ name: Unit type
 description: The unit type $\mathbf{1}$ is the type with exactly one inhabitant, written $\star$ (or $()$ or $\langle\rangle$).
 ---
 
-# Unit type
 
 The **unit type** $\mathbf{1}$ is the type with exactly one inhabitant, written $\star$ (or $()$ or $\langle\rangle$). Its formation is *nullary*: it takes no arguments.
 

@@ -4,7 +4,6 @@ description: "The four-cornered logical structure in which a proposition may be 
 date-created: 2026-03-05
 date-modified: 2026-03-29
 aliases:
-  - "catuṣkoṭi"
   - "catuskoti"
   - "tetralemma"
   - "four-cornered negation"
@@ -26,11 +25,6 @@ references:
     container-title: Comparative Philosophy
     issued:
       - year: 2010
-defines:
-  - "Catuṣkoṭi"
-  - "catuskoti"
-  - "tetralemma"
-  - "four-cornered negation"
 ---
 
 The catuṣkoṭi (Sanskrit: "four corners"; also called the tetralemma) is a logical structure in which a proposition is evaluated against four possibilities: it may be affirmed, denied, both affirmed and denied, or neither affirmed nor denied. The structure appears across Indian philosophy — in Jain anekāntavāda, in early Buddhist Abhidharma classification, in the Nyāya tradition's accounts of inference — but receives its most radical deployment in Nāgārjuna's *Mūlamadhyamakakārikā* (c. 2nd century CE), where it becomes the primary instrument for demonstrating that all phenomena are empty (*śūnya*) of inherent existence.

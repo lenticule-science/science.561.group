@@ -16,7 +16,6 @@ aliases:
 name: "MicroFocus"
 ---
 
-# MicroFocus
 
 ## Formal definition
 

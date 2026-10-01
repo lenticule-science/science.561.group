@@ -2,14 +2,12 @@
 name: "Ideology"
 date-created: 2026-03-03
 aliases:
-  - "ideology"
   - "ideological"
+  - ideology (anarchist analysis)
 tags: []
 keywords:
   - anarchism
 description: "The system of ideas, assumptions, and narratives that makes domination appear natural, necessary, or invisible — not a conspiracy of deception but a structural feature of hierarchical societies in which the perspective of the dominant is encoded as common sense."
-defines: "ideology (anarchist analysis)"
-type: term
 ---
 
 Ideology names the production and circulation of belief systems that present contingent social arrangements as natural, inevitable, or desirable. The concept has a long and contested history. [Karl Marx](../../../../../../../information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/karl-marx.md) and Friedrich Engels used it in *The German Ideology* (1846) to describe how the ruling class's ideas become the ruling ideas of an age — not through conspiracy but through control of the institutions that produce knowledge: schools, churches, courts, media.

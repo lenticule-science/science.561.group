@@ -3,19 +3,13 @@
 name: "Spectacle"
 date-created: 2026-03-03
 aliases:
-  - "spectacle"
   - "the spectacle"
   - "society of the spectacle"
 keywords:
   - media-theory
 description: "Debord's concept naming the social relation in which lived experience is displaced by its representation, and social life is organized around the production and consumption of appearances."
-type: term
 tags:
   - MediaTheory
-defines:
-  - "Spectacle"
-  - "the spectacle"
-  - "society of the spectacle"
 ---
 
 The spectacle is a concept developed by [Guy Debord](../../../../../../../../../../../../references/people/guy-debord.md) in *The Society of the Spectacle* (1967) to name the social relation in which lived experience is displaced by its representation. The spectacle is not a collection of images — not television, not advertising, not media in the narrow sense — but the entire organization of social life around mediated appearance. It names the condition in which the commodity has achieved the total colonization of social life, such that being gives way to having, and having gives way to appearing.

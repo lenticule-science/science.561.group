@@ -1,42 +1,41 @@
 ---
 name: "Labor Process"
 description: "The concrete activity by which human labor power is transformed into value-producing work. In Marx's exposition, the labor process in general comprises three simple elements (purposive activity, the object of activity, instruments of activity); under capitalism it is subsumed by the valorization process whose logic determines its concrete organizational form."
-defines: labor-process
-related: [real-subsumption, work, work-unit, operation, deskilling, manufacturing-consent]
 date-created: 2026-05-03
 references:
-  - id: marx1867
-    type: document
+  marx1867:
+    authors:
+      - Karl Marx
     title: Das Kapital, Band I
-    author:
-      - literal: Karl Marx
-    container-title: Verlag von Otto Meissner, Hamburg
-    issued:
-      - year: 1867
-  - id: marx1976
-    type: document
+    year: 1867
+    publication: Verlag von Otto Meissner, Hamburg
+  marx1976:
+    authors:
+      - Karl Marx
     title: Capital Volume I
-    author:
-      - literal: Karl Marx
-    container-title: Penguin/New Left Review, trans. Ben Fowkes
-    issued:
-      - year: 1976
-  - id: braverman1974
-    type: document
+    year: 1976
+    publication: Penguin/New Left Review, trans. Ben Fowkes
+  braverman1974:
+    authors:
+      - Harry Braverman
     title: "Labor and Monopoly Capital: The Degradation of Work in the Twentieth Century"
-    author:
-      - literal: Harry Braverman
-    container-title: Monthly Review Press
-    issued:
-      - year: 1974
-  - id: thompson1983
-    type: document
+    year: 1974
+    publication: Monthly Review Press
+  thompson1983:
+    authors:
+      - Paul Thompson
     title: "The Nature of Work: An Introduction to Debates on the Labour Process"
-    author:
-      - literal: Paul Thompson
-    container-title: Macmillan
-    issued:
-      - year: 1983
+    year: 1983
+    publication: Macmillan
+aliases:
+  - labor-process
+see-also:
+  - real-subsumption
+  - work
+  - work-unit
+  - operation
+  - deskilling
+  - manufacturing-consent
 ---
 
 The **labor process** is the concrete activity by which human labor power is transformed into value-producing work — the actually-occurring conjunction of worker, object worked on, and instruments through which the work is performed.

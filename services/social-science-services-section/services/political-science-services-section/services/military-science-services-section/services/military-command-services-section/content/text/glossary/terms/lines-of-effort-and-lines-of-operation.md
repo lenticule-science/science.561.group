@@ -12,7 +12,6 @@ keywords:
   - CombatSystems
   - Governance
 description: "Two planning paradigms for organizing action: lines of operation structure maneuver through space and time; lines of effort organize progress through conditions and effects."
-type: term
 ---
 
 Lines of operation (LOOs) and lines of effort (LOEs) are two paradigms for organizing action.

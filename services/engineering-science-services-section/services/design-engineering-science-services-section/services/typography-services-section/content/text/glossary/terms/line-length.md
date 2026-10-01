@@ -4,7 +4,6 @@ aliases:
   - "line length"
 date-created: 2025-12-31
 tags: []
-type: term
 ---
 
 **Line length** (also called *measure*) is the horizontal width of a block of text, commonly expressed as a character count per line. It is one of the primary controls on readability.

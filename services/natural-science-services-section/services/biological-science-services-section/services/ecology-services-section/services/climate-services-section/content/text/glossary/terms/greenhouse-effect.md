@@ -5,7 +5,6 @@ aliases:
   - "greenhouse effect"
 description: "The trapping of heat in Earth's atmosphere by gases that absorb and re-emit infrared radiation — a natural process intensified by anthropogenic emissions."
 tags: []
-type: term
 ---
 
 The greenhouse effect is the process by which certain atmospheric gases (water vapor, carbon dioxide, methane, nitrous oxide, and others) absorb infrared radiation emitted by the Earth's surface and re-emit it in all directions, including back toward the surface. This trapping of heat warms the planet beyond what its distance from the sun alone would produce. Without the natural greenhouse effect, Earth's average surface temperature would be roughly -18°C rather than the ~15°C that has sustained complex life.

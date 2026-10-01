@@ -18,7 +18,6 @@ name: Dialectica embedding
 description: The Dialectica embedding is the full and faithful functor
 ---
 
-# Dialectica embedding
 
 The **Dialectica embedding** is the full and faithful functor
 

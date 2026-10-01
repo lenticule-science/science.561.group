@@ -1,5 +1,5 @@
 ---
-dg-publish: true
+visibility: public
 ---
 
 

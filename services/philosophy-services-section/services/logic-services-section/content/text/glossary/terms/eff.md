@@ -18,7 +18,6 @@ name: Eff — the effective topos
 description: The effective topos $\mathbf{Eff} = RT(\mathcal{K}1)$ is the realizability topos over Kleene's first algebra $\mathcal{K}1$.
 ---
 
-# Eff — the effective topos
 
 The **effective topos** $\mathbf{Eff} = RT(\mathcal{K}_1)$ is the realizability topos over Kleene's first algebra $\mathcal{K}_1$. It is an elementary topos — not a Grothendieck topos — with Heyting-valued first-order internal logic.
 

@@ -13,7 +13,6 @@ name: FOUR — the bilattice of computational truth values
 description: $\mathbf{FOUR} \cong \mathbf{2} \times \mathbf{2}$ is the bilattice of external computational truth values.
 ---
 
-# FOUR — the bilattice of computational truth values
 
 $\mathbf{FOUR} \cong \mathbf{2} \times \mathbf{2}$ is the bilattice of external computational truth values. Its four elements record the settled state of a computational predicate once all computation has run:
 

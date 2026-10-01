@@ -9,13 +9,11 @@ see-also:
   - "/sociology/disciplines/legalism/index.md"
 references:
   - /sociology/disciplines/legalism/index.md
-type: term
 tags:
   - Legalism
-defines:
-  - "codification"
-  - "statutory law"
-  - "common law"
+aliases:
+  - statutory law
+  - common law
 ---
 
 Codification is the process of organizing legal rules into a systematic, written code. A codified system derives its authority from the text of the statute: the law is what the legislature wrote down. An uncodified (common law) system derives its authority from accumulated judicial decisions: the law is what courts have ruled in prior cases.

@@ -1,44 +1,43 @@
 ---
 name: "Contested Terrain"
 description: "Richard Edwards's framework treating the capitalist workplace as a site of ongoing struggle between capital and labor over the organization of work, with capital deploying successive control regimes — simple, technical, bureaucratic — as labor's resistance forces each prior regime into crisis. The control-side complement to Burawoy's consent-side analysis."
-defines: contested-terrain
-related: [labor-process, manufacturing-consent, scientific-management, deskilling, real-subsumption, bureaucracy]
 date-created: 2026-05-03
 references:
-  - id: edwards1979
-    type: document
+  edwards1979:
+    authors:
+      - Richard Edwards
     title: "Contested Terrain: The Transformation of the Workplace in the Twentieth Century"
-    author:
-      - literal: Richard Edwards
-    container-title: Basic Books
-    issued:
-      - year: 1979
-  - id: braverman1974
-    type: document
+    year: 1979
+    publication: Basic Books
+  braverman1974:
+    authors:
+      - Harry Braverman
     title: Labor and Monopoly Capital
-    author:
-      - literal: Harry Braverman
-    container-title: Monthly Review Press
-    issued:
-      - year: 1974
-  - id: burawoy1979
-    type: document
+    year: 1974
+    publication: Monthly Review Press
+  burawoy1979:
+    authors:
+      - Michael Burawoy
     title: "Manufacturing Consent: Changes in the Labor Process Under Monopoly Capitalism"
-    author:
-      - literal: Michael Burawoy
-    container-title: University of Chicago Press
-    issued:
-      - year: 1979
-  - id: gordon-edwards-reich-1982
-    type: document
+    year: 1979
+    publication: University of Chicago Press
+  gordon-edwards-reich-1982:
+    authors:
+      - David Gordon
+      - Richard Edwards
+      - Michael Reich
     title: Segmented Work, Divided Workers
-    author:
-      - literal: David Gordon
-      - literal: Richard Edwards
-      - literal: Michael Reich
-    container-title: Cambridge University Press
-    issued:
-      - year: 1982
+    year: 1982
+    publication: Cambridge University Press
+aliases:
+  - contested-terrain
+see-also:
+  - labor-process
+  - manufacturing-consent
+  - scientific-management
+  - deskilling
+  - real-subsumption
+  - bureaucracy
 ---
 
 **Contested terrain** is the central image and analytical frame of Richard Edwards's [1979 book of that title](edwards1979).

@@ -31,7 +31,6 @@ scope-governance:
 name: "Charter"
 ---
 
-# Charter
 
 ## What this is
 

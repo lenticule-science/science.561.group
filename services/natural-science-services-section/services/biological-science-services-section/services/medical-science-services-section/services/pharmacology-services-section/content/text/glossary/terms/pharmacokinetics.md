@@ -13,7 +13,6 @@ dual-of: pharmacodynamics
 contains: [bioavailability, half-life, drug-metabolism, renal-clearance]
 determines: [dosing-frequency, dose-adjustment, drug-interaction]
 governed-by: [hepatic-function, renal-function, cyp-enzymes]
-type: term
 ---
 
 **Pharmacokinetics** is the study of what the body does to a drug — how it is absorbed, distributed, metabolized, and eliminated. The four processes are conventionally summarized as ADME:

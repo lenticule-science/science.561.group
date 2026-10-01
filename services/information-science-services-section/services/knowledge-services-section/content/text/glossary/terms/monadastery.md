@@ -1,6 +1,5 @@
 ---
 type: "[[term]]"
-date: 2025-04-15
 signal: true
 signals:
   - "[[research]]"
@@ -14,6 +13,7 @@ yield:
   - "[[semantic coherence]]"
 aliases:
   - Monadastery
+date-created: 2025-04-15
 ---
 
 A ***monadastery*** is an [[interpretative space]] where [[telemetric-cast|telemetric casting]] is practiced. It is a site of intentional [[telemetric research]] done using the [[telemetric-method]].

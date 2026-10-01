@@ -7,7 +7,6 @@ description: "A ConceptPackage is a Package organized around one Concept: it col
 
 A ConceptPackage is a Package organized around one Concept: it colocates the concept's full grammatical family (noun, adjective, flat verb, gerund specs) with its operational artifacts (runbooks, scripts) under a single named boundary.
 
-# Concept Package
 
 ## What this is
 

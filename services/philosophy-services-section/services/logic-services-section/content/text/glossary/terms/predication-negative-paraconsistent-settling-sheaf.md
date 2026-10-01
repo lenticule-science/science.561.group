@@ -8,7 +8,6 @@ name: Negative-paraconsistent settling-associated sheaf
 description: The bilattice-negation mirror of the paraconsistent settling-associated sheaf $\mathcal{F}U^{(k)}$.
 ---
 
-# Negative-paraconsistent settling-associated sheaf
 
 The bilattice-[negation](../../documents/articles/research/2026/07/31/morphisms/negation.md) mirror of the [paraconsistent settling-associated sheaf](../../../../../../../information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/obsmetrologia/docs/verso/mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/content/sheaf/content/paraconsistent-settling-associated-sheaf/paraconsistent-settling-associated-sheaf.md) $\mathcal{F}_U^{(k)}$. Where $\mathcal{F}_U^{(k)}$ tracks the *Belnap-designated positive-evidence* increments (cells transitioning to $\mathbf{t}$ or $\top$ — gaining a truth-component), $\mathcal{F}_U^{(k, -)}$ tracks the symmetric *Belnap-designated negative-evidence* increments (cells transitioning to $\mathbf{f}$ or $\top$ — gaining a falsity-component).
 

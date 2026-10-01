@@ -2,19 +2,13 @@
 name: "Propaganda of the Deed"
 date-created: 2026-03-06
 aliases:
-  - "Propaganda of the Deed"
-  - "propaganda of the deed"
   - "propaganda by the deed"
 keywords:
   - anarchism
 description: "The principle that action itself communicates political ideas more effectively than words — historically associated with insurrectionary acts but originally encompassing any exemplary practice of anarchist principles."
 tags: []
 part-of: sociology/schools/anarchism/topics/strategy/terms
-defines:
-  - "Propaganda of the Deed"
-  - "propaganda by the deed"
 date-modified: 2026-03-09
-type: term
 date-updated: 2026-03-09
 ---
 

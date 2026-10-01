@@ -19,7 +19,6 @@ keywords:
   - WebDesign
 cites:
   - Responsive Web Design
-type: term
 ---
 
 Responsive design is an approach to web design in which a page's layout and presentation adapt to the size, resolution, and capabilities of the device displaying it. Rather than building separate versions of a site for desktop, tablet, and phone, a single HTML document uses flexible layouts and CSS media queries to rearrange itself for each context.

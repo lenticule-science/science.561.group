@@ -7,9 +7,9 @@ aliases:
   - spud
   - Irish potato
   - white potato
-related-to:
-  - "[Solanum tuberosum](../../../../../../../../science/theories/biology/theories/botany/terms/solanum-tuberosum.md)"
-  - "[Tomato](tomato.md)"
+see-also:
+  - solanum-tuberosum
+  - tomato
 ---
 
 ## Growing Season and Climate

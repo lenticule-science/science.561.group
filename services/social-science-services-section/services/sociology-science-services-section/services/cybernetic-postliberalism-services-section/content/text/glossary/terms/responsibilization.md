@@ -7,7 +7,6 @@ keywords:
   - Governance
   - Affect
 description: "The governance mechanism that reframes systemic problems as personal self-management, making the subject responsible for conditions they cannot transform."
-type: term
 node-relations: ((process . responsibilizing))
 visibility: public
 ---

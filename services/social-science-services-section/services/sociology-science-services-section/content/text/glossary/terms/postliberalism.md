@@ -3,17 +3,11 @@
 name: "Postliberalism"
 date-created: 2026-03-03
 aliases:
-  - "postliberalism"
   - "post-liberalism"
   - "postliberal"
 tags: []
 date-modified: 2026-03-09
 part-of: sociology/schools/postliberalism/terms
-type: term
-defines:
-  - "Postliberalism"
-  - "post-liberalism"
-  - "postliberal"
 date-updated: 2026-03-09
 ---
 

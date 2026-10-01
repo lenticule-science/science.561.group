@@ -4,7 +4,7 @@ aliases:
   - all things
 date-created: 2026-03-04
 definition: every thing
-dg-publish: true
+visibility: public
 ---
 
 

@@ -13,7 +13,6 @@ requires: object
 enables: composition
 contains: [source, target]
 extends: directed-relation
-type: term
 ---
 
 A morphism is a directed connection from one [object](./object.md) to another inside a [category](./category.md). It extends a plain [directed relation](./directed-graph.md) with the requirement that morphisms compose: if f goes from A to B and g goes from B to C, then there is a composite g ∘ f going from A to C, and this composition is associative.

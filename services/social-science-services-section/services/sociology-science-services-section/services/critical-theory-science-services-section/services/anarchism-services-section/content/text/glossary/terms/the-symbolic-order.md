@@ -2,18 +2,14 @@
 name: "The Symbolic Order"
 date-created: 2026-03-07
 aliases:
-  - "The Symbolic Order"
-  - "the symbolic order"
   - "symbolic order"
 keywords:
   - anarchism
   - psychoanalysis
 description: "The system of language, law, categories, and shared meaning through which a society organizes itself — and through which domination is naturalized. Drawn from Lacanian psychoanalysis, the symbolic order names the structure that makes hierarchy appear as reason, coercion as procedure, and domination as the way things simply are."
-type: term
 tags:
   - Anarchism
   - Psychoanalysis
-defines: "the symbolic order"
 ---
 
 The symbolic order is the system of language, categories, law, and shared meaning through which a society organizes itself. It is not any particular institution — not [the state](../../../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/notes/undated/the-state.md), not [capitalism](capitalism.md), not [patriarchy](patriarchy.md) — but the underlying structure through which all institutions become intelligible, legitimate, and apparently natural. When a landlord collects rent, the symbolic order is the system that makes "landlord," "tenant," "rent," "lease," and "property right" mean something — that distributes these categories across persons and things and enforces the distribution as reality. Without the symbolic order, there is no landlord; there is a person and a building. The symbolic order converts that physical situation into a social relation of [domination](../../../../../../../../content/text/glossary/terms/domination.md).

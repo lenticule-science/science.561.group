@@ -8,7 +8,6 @@ date-created: 2026-03-05
 tags: []
 date-updated: 2026-03-09
 part-of: media/topics/worldbuilding/terms
-type: term
 ---
 
 Praxonic worldbuilding is a recursive method of fictional world construction that begins with pressure rather than premise. It is the applied form of [relational worlding](relational-worlding.md), elaborated through the Praxonic Worldbuilding Guide into a step-by-step process for constructing worlds from unresolved tension.

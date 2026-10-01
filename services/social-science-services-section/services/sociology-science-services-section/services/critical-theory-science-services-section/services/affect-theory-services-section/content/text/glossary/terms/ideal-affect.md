@@ -1,6 +1,6 @@
 ---
 name: "Ideal affect"
-date-created: 2026-09-27T00:00:00
+date-created: 2026-09-27
 aliases:
   - "ideal affect"
   - "affect valuation"

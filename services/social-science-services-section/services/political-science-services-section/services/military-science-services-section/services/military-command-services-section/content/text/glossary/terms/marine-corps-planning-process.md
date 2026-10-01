@@ -18,7 +18,6 @@ references:
     publication: "MCWP 5-10 (10 Aug 2020; Change 1, 30 Jan 2026)"
 cites:
   - usmc2020mcwp5_10
-type: term
 ---
 
 The Marine Corps Planning Process (MCPP) is a planning paradigm for producing plans and orders. Like other western staff planning paradigms, it exists to translate uncertainty into a decision, an executable concept, and the coordination products that make distributed action coherent [@usmc2020mcwp5_10].

@@ -4,7 +4,6 @@ name: "Session"
 description: "A session is a group of interactions that a single user has with a website within a bounded time period. It begins when the user arrives at the site and ends when they leave or when a period of inactivity expires — Google Analytics uses a 30-minute inactivity timeout by default. If a visitor reads an article, leaves for 45 minutes, and returns, that counts as two sessions."
 date-created: 2026-03-29
 aliases:
-  - "session"
   - "web session"
   - "visit"
 keywords:
@@ -12,15 +11,10 @@ keywords:
   - web
   - metrics
 part-of: business/theories/web/terms
-type: term
 tags:
   - Business
   - Web
   - Metrics
-defines:
-  - "Session"
-  - "web session"
-  - "visit"
 ---
 
 A session is a group of interactions that a single user has with a website within a bounded time period. It begins when the user arrives at the site and ends when they leave or when a period of inactivity expires — Google Analytics uses a 30-minute inactivity timeout by default. If a visitor reads an article, leaves for 45 minutes, and returns, that counts as two sessions.

@@ -3,18 +3,12 @@
 name: "Counterinsurgency"
 date-created: 2026-03-02
 aliases:
-  - "counterinsurgency"
   - "counter-insurgency"
   - "COIN"
 tags: []
 description: "The set of practices by which states suppress, disrupt, and preempt organized resistance to their authority."
 date-modified: 2026-03-09
 part-of: sociology/topics/state-repression/terms
-type: term
-defines:
-  - "Counterinsurgency"
-  - "counter-insurgency"
-  - "COIN"
 date-updated: 2026-03-09
 ---
 

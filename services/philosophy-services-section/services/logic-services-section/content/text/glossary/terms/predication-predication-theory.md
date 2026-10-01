@@ -9,7 +9,6 @@ name: Predication theory
 description: A predication theory is a quadruple $T = (\mathbf{L}, \mathcal{C}, E, \mathrm{Cl})$ where $\mathbf{L}$ is an integral commutative residuated lattice, $\mathcal{C}$ is a predicate category with finite limits, $E$ is an entity set, and…
 ---
 
-# Predication theory
 
 A **predication theory** is a quadruple $T = (\mathbf{L}, \mathcal{C}, E, \mathrm{Cl})$ where $\mathbf{L}$ is an integral commutative [residuated lattice](../../documents/articles/research/2026/07/31/lenticule-import/from-predicate-category/residuated-lattice.md), $\mathcal{C}$ is a [predicate category](../../documents/articles/research/2026/07/31/lenticule-import/from-predicate-category/predicate-category.md) with finite limits, $E$ is an [entity set](../../documents/articles/research/2026/07/31/lenticule-import/from-predicate-category/entity-set.md), and $\mathrm{Cl}$ is a [closure operator](../../documents/articles/research/2026/07/31/lenticule-import/morphisms/closure-operator.md) on the predication fiber functor $F : \mathcal{C}^{\mathrm{op}} \to \mathbf{DBiLat}(\mathbf{L})$ over $(\mathbf{L}, \mathcal{C}, E)$.
 

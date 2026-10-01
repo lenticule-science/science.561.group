@@ -1,7 +1,6 @@
 ---
 name: "Effort"
 description: "The potential work time an agent spends on a task — distinct from wall-clock duration and from total available capacity."
-defines: effort
 date-created: 2026-04-04
 aliases: ["efforts"]
 instance-of: quality
@@ -10,31 +9,25 @@ contrasts-with: [duration, capacity]
 applies-to: [task, plan, work-unit, assignment]
 part-of-stage: tracking
 references:
-  - id: reinertsen2009
-    type: document
+  reinertsen2009:
+    authors:
+      - Donald G. Reinertsen
     title: The Principles of Product Development Flow
-    author:
-      - literal: Donald G. Reinertsen
-    container-title: Celeritas Publishing
-    issued:
-      - year: 2009
-  - id: kahneman-tversky1979
-    type: document
+    year: 2009
+    publication: Celeritas Publishing
+  kahneman-tversky1979:
+    authors:
+      - Daniel Kahneman
+      - Amos Tversky
     title: "Intuitive Prediction: Biases and Corrective Procedures"
-    author:
-      - literal: Daniel Kahneman
-      - literal: Amos Tversky
-    container-title: TIMS Studies in Management Science
-    issued:
-      - year: 1979
-  - id: ohno1988
-    type: document
+    year: 1979
+    publication: TIMS Studies in Management Science
+  ohno1988:
+    authors:
+      - Taiichi Ohno
     title: "Toyota Production System: Beyond Large-Scale Production"
-    author:
-      - literal: Taiichi Ohno
-    container-title: Productivity Press
-    issued:
-      - year: 1988
+    year: 1988
+    publication: Productivity Press
 ---
 
 Effort is the potential work time an agent spends on a task, measured in hours, person-days, or story points.

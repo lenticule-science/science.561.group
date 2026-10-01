@@ -10,7 +10,6 @@ keywords:
   - Mycology
   - Nutrition
   - Biology
-type: term
 ---
 
 

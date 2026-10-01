@@ -1,42 +1,40 @@
 ---
 name: "Scientific Management"
 description: "Frederick Winslow Taylor's program for the systematic study and reorganization of industrial work — replacing rule-of-thumb craft methods with time-and-motion-determined procedures, separating the design of work (engineering and management) from its execution (the worker), and tying compensation to measured output. The originating technical-managerial expression of real subsumption."
-defines: scientific-management
-related: [labor-process, real-subsumption, deskilling, coordination-mechanism, bureaucracy]
 date-created: 2026-05-03
 references:
-  - id: taylor1911
-    type: document
+  taylor1911:
+    authors:
+      - Frederick Winslow Taylor
     title: The Principles of Scientific Management
-    author:
-      - literal: Frederick Winslow Taylor
-    container-title: Harper & Brothers
-    issued:
-      - year: 1911
-  - id: taylor1903
-    type: document
+    year: 1911
+    publication: Harper & Brothers
+  taylor1903:
+    authors:
+      - Frederick Winslow Taylor
     title: Shop Management
-    author:
-      - literal: Frederick Winslow Taylor
-    container-title: American Society of Mechanical Engineers
-    issued:
-      - year: 1903
-  - id: braverman1974
-    type: document
+    year: 1903
+    publication: American Society of Mechanical Engineers
+  braverman1974:
+    authors:
+      - Harry Braverman
     title: Labor and Monopoly Capital
-    author:
-      - literal: Harry Braverman
-    container-title: Monthly Review Press
-    issued:
-      - year: 1974
-  - id: kanigel1997
-    type: document
+    year: 1974
+    publication: Monthly Review Press
+  kanigel1997:
+    authors:
+      - Robert Kanigel
     title: "The One Best Way: Frederick Winslow Taylor and the Enigma of Efficiency"
-    author:
-      - literal: Robert Kanigel
-    container-title: Viking
-    issued:
-      - year: 1997
+    year: 1997
+    publication: Viking
+aliases:
+  - scientific-management
+see-also:
+  - labor-process
+  - real-subsumption
+  - deskilling
+  - coordination-mechanism
+  - bureaucracy
 ---
 
 **Scientific management** is Frederick Winslow Taylor's program for the systematic study and reorganization of industrial work, formulated in his consulting practice with U.S. machine shops and steel mills from the 1880s onward and most influentially codified in [The Principles of Scientific Management](taylor1911) and the earlier [Shop Management](taylor1903).

@@ -5,7 +5,6 @@ aliases:
   - "infinity categories"
   - "∞-category"
 date-created: 2025-12-31
-type: term
 tags: []
 description: "An ∞-category is a category-like structure with morphisms in all dimensions: objects, morphisms between objects, 2-morphisms between morphisms, 3-morphisms between 2-morphisms, and so on, with coherent composition at every level."
 derives-from: scripts

@@ -14,7 +14,6 @@ determines: [dosing-frequency, time-to-steady-state, withdrawal-timing]
 requires: [drug-metabolism, renal-clearance]
 governs: drug-accumulation
 measured-by: plasma-concentration
-type: term
 ---
 
 **Half-life** (t½) is the time required for the plasma concentration of a drug to decrease by half. It is the fundamental parameter governing how long a drug's effects last, how frequently it must be dosed, and how long it takes to reach steady state or to be fully eliminated from the body.

@@ -15,7 +15,6 @@ produced-by:
 - content-strategy
 contrasts-with: organic-traffic
 date-created: 2026-03-29
-defines: Email List
 date-updated: 2026-03-29
 ---
 

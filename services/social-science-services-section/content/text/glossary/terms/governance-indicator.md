@@ -1,62 +1,56 @@
 ---
 name: "Governance Indicator"
 description: "A quantitative measure used as an instrument of governance — making entities visible, comparable, and rankable in ways that exert governance effects (resource allocation, conditionality, reform direction) even without formal authority. The Doing Business rank, Human Development Index, Corruption Perceptions Index, Rule of Law Index, and ratings-firm sovereign debt scores are paradigm cases."
-defines: governance-indicator
-related: [algorithmic-regulation, hypernudge, ordinal-society, policy, normative-system]
 date-created: 2026-05-03
 references:
-  - id: merry-davis-kingsbury-2015
-    type: document
+  merry-davis-kingsbury-2015:
+    authors:
+      - Sally Engle Merry
+      - Kevin E. Davis
+      - Benedict Kingsbury (Eds.)
     title: "The Quiet Power of Indicators: Measuring Governance, Corruption, and Rule of Law"
-    author:
-      - literal: Sally Engle Merry
-      - literal: Kevin E. Davis
-      - literal: Benedict Kingsbury (Eds.)
-    container-title: Cambridge University Press
-    issued:
-      - year: 2015
-  - id: merry-2016
-    type: document
+    year: 2015
+    publication: Cambridge University Press
+  merry-2016:
+    authors:
+      - Sally Engle Merry
     title: "The Seductions of Quantification: Measuring Human Rights, Gender Violence, and Sex Trafficking"
-    author:
-      - literal: Sally Engle Merry
-    container-title: University of Chicago Press
-    issued:
-      - year: 2016
-  - id: espeland-stevens-2008
-    type: document
+    year: 2016
+    publication: University of Chicago Press
+  espeland-stevens-2008:
+    authors:
+      - Wendy Nelson Espeland
+      - Mitchell L. Stevens
     title: A Sociology of Quantification
-    author:
-      - literal: Wendy Nelson Espeland
-      - literal: Mitchell L. Stevens
-    container-title: European Journal of Sociology, 49(3)
-    issued:
-      - year: 2008
-  - id: espeland-sauder-2007
-    type: document
+    year: 2008
+    publication: European Journal of Sociology, 49(3)
+  espeland-sauder-2007:
+    authors:
+      - Wendy Nelson Espeland
+      - Michael Sauder
     title: "Rankings and Reactivity: How Public Measures Recreate Social Worlds"
-    author:
-      - literal: Wendy Nelson Espeland
-      - literal: Michael Sauder
-    container-title: American Journal of Sociology, 113(1)
-    issued:
-      - year: 2007
-  - id: porter-1995
-    type: document
+    year: 2007
+    publication: American Journal of Sociology, 113(1)
+  porter-1995:
+    authors:
+      - Theodore M. Porter
     title: "Trust in Numbers: The Pursuit of Objectivity in Science and Public Life"
-    author:
-      - literal: Theodore M. Porter
-    container-title: Princeton University Press
-    issued:
-      - year: 1995
-  - id: desrosieres-1998
-    type: document
+    year: 1995
+    publication: Princeton University Press
+  desrosieres-1998:
+    authors:
+      - Alain Desrosières
     title: "The Politics of Large Numbers: A History of Statistical Reasoning"
-    author:
-      - literal: Alain Desrosières
-    container-title: Harvard University Press
-    issued:
-      - year: 1998
+    year: 1998
+    publication: Harvard University Press
+aliases:
+  - governance-indicator
+see-also:
+  - algorithmic-regulation
+  - hypernudge
+  - ordinal-society
+  - policy
+  - normative-system
 ---
 
 A **governance indicator** is a quantitative measure used as an instrument of governance — a number that *exerts governance effects* by making entities (countries, firms, schools, hospitals, neighborhoods, individuals) visible, comparable, and rankable across previously incommensurable cases.

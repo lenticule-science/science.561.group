@@ -9,7 +9,6 @@ name: Retrospect via cosettling
 description: The substrate-algebraic operation behind retrospective inference, post-hoc audit, and after-action review on an operations settling $v^{\mathrm{op}}$.
 ---
 
-# Retrospect via cosettling
 
 The substrate-algebraic operation behind retrospective inference, post-hoc audit, and after-action review on an [operations settling](../../../../../../../../../../../public-services-section/services/personal-services-section/services/emsenn-services-section/content/text/glossary/terms/operations-settling.md) $v^{\mathrm{op}}$.
 

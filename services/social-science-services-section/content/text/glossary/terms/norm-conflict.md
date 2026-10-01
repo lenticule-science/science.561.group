@@ -21,7 +21,6 @@ aliases:
 name: "Norm Conflict"
 ---
 
-# Norm Conflict
 
 ## Formal definition
 

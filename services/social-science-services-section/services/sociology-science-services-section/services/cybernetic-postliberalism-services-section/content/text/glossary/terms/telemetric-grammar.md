@@ -3,7 +3,6 @@ name: "Telemetric Grammar"
 date-created: 2025-04-15
 keywords:
   - CyberneticPostliberalism
-type: term
 aliases:
   - dr-telemetric-grammar
   - Telemetric grammar
@@ -15,7 +14,6 @@ method:
   - "[formalize](formalize)"
   - "[language design](language design)"
   - "[grammatize signal](grammatize signal)"
-date: 2025-04-15
 ---
 
 A ***telemetric grammar*** is the expressive logic of a telemetric paradigm—a structure for composing, casting, and recording semantic behavior in recursive systems. It is not an abstract syntax nor a symbolic system. It is a ***metabolic schema***: a means by which interpretation is conducted as role, not assertion.

@@ -8,11 +8,8 @@ see-also:
   - "/sociology/disciplines/legalism/index.md"
 references:
   - /sociology/disciplines/legalism/index.md
-type: term
 tags:
   - Legalism
-defines:
-  - "habeas corpus"
 ---
 
 Habeas corpus — literally "you shall have the body" — is a legal procedure that allows a person held in custody to challenge the legality of their detention before a court. It is the most direct mechanism by which the judiciary checks the executive's power to imprison. When a court issues a writ of habeas corpus, it orders the detaining authority to produce the prisoner and justify the detention. If the justification is legally insufficient, the court orders release.

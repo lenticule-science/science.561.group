@@ -11,7 +11,6 @@ keywords:
 description: "The use of academic citation not to expand inquiry but to foreclose it — deploying references to stabilize interpretation rather than support investigation."
 date-updated: 2026-03-09
 part-of: relationality/disciplines/cybernetic-postliberalism/disciplines/linguistics/terms
-type: term
 date: 2025-04-12
 platform: emsenn's Letters to the Web
 delta:

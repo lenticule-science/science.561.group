@@ -3,17 +3,12 @@
 name: "Homonormativity"
 date-created: 2026-03-06
 aliases:
-  - "homonormativity"
   - "homonormative"
 keywords:
   - gender-theory
 description: "The assimilation of queer life into normative structures of domesticity, consumption, state recognition, and respectability."
-type: term
 tags:
   - GenderTheory
-defines:
-  - "Homonormativity"
-  - "homonormative"
 ---
 
 **Homonormativity** names the process by which queer politics is reorganized around inclusion within — rather than critique of — existing normative structures. The term was coined by Lisa Duggan in "The New Homonormativity" (2002) to describe a politics that does not contest dominant heteronormative assumptions and institutions, but upholds and sustains them, while promising the possibility of a demobilized gay constituency and a privatized, depoliticized gay culture anchored in domesticity and consumption.

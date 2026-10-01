@@ -24,7 +24,6 @@ Table of contents
 
 - [Open questions](#open-questions)
 
-# History
 
 ## What this is
 

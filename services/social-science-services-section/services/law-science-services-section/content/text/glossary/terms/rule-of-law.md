@@ -8,11 +8,8 @@ see-also:
   - "/sociology/disciplines/legalism/index.md"
 references:
   - /sociology/disciplines/legalism/index.md
-type: term
 tags:
   - Legalism
-defines:
-  - "rule of law"
 ---
 
 The rule of law is the principle that governance should operate through publicly known, generally applicable, prospective rules rather than through the arbitrary will of individuals. In its thinnest form, it means that the state acts through law rather than decree: rules exist, are published, and are applied by institutions rather than personal fiat. In thicker formulations, it includes requirements like judicial independence, due process, equality before the law, and constraints on governmental power.

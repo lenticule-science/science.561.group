@@ -1,7 +1,6 @@
 ---
 name: Header Bidding
 description: "A programmatic advertising technique where multiple ad exchanges bid simultaneously on each impression before the ad server makes its decision — replacing the sequential waterfall with a parallel auction."
-defines: Header Bidding
 domain: web-business
 restricts: programmatic-advertising
 optimizes: programmatic-advertising
@@ -9,15 +8,13 @@ acts-on: impression
 measured-by: revenue-per-mille
 date-created: 2026-03-29
 references:
-  - id: prebid2015
-    type: document
+  prebid2015:
+    authors:
+      - AppNexus
     title: "Prebid.js: An Open-Source Header Bidding Solution"
-    author:
-      - literal: AppNexus
-    container-title: Prebid.org
-    issued:
-      - year: 2015
-    URL: https://prebid.org
+    year: 2015
+    publication: Prebid.org
+    url: https://prebid.org
 cites:
   - prebid2015
 date-updated: 2026-03-29

@@ -24,13 +24,12 @@ references:
     title: L'Archéologie du savoir
     year: 1969
     publication: Gallimard
-type: term
 tags:
   - CriticalTheory
   - Methodology
-defines:
-  - "archaeology (method)"
-  - "episteme"
+aliases:
+  - archaeology (method)
+  - episteme
 ---
 
 Archaeology is Foucault's method for analyzing the conditions that make a body of knowledge possible in a given historical period, without treating those conditions as steps in a story of progress. Where a conventional history of ideas traces how one thinker influenced another — how Darwin built on Malthus, how Pasteur corrected Lister — archaeology asks a different question: what rules of formation had to be in place for these statements to appear at all?

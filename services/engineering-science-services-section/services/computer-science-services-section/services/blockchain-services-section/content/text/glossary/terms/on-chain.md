@@ -1,6 +1,5 @@
 ---
 type: "[[adjective]]"
-date: 2025-04-15
 
 signal:
   - "[[blockchain as memory system]]"
@@ -12,6 +11,7 @@ method:
   - "[[contrast registers]]"
 aliases:
   - Related Records
+date-created: 2025-04-15
 ---
 
 An ***on-chain*** interpretive condition is one in which meaning, identity, and coherence are **resolved through traceable consensus mechanisms**—like a [[blockchain]].

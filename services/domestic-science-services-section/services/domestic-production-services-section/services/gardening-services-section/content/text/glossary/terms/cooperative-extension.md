@@ -6,7 +6,6 @@ aliases:
   - "extension service"
 date-created: 2026-03-06
 tags: []
-type: term
 ---
 
 A university-affiliated program that translates agricultural and

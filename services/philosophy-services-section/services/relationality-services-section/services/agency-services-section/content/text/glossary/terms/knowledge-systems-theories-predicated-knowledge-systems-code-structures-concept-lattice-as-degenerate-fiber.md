@@ -8,7 +8,6 @@ name: Concept lattice as degenerate fiber
 description: An FCA concept lattice (Ganter & Wille 1999) is a knowledge fiber algebra under the value-domain restriction $\mathbf{L} = \mathbf{2}$ (Boolean), with the closure-rule system fixed at the Galois closure induced by the formal context's…
 ---
 
-# Concept lattice as degenerate fiber
 
 An **FCA concept lattice** (Ganter & Wille 1999) is a [knowledge fiber algebra](../../documents/articles/research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/knowing/content/knowledge-science/systems/archive/knowledge-fiber-algebra.md) under the value-domain restriction $\mathbf{L} = \mathbf{2}$ (Boolean), with the closure-rule system fixed at the **Galois closure** induced by the formal context's incidence relation, with no scope structure (single trivial scope), and with the predicate vocabulary collapsed to a single binary "has-attribute" predicate.
 

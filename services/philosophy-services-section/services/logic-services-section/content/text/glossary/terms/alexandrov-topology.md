@@ -5,7 +5,6 @@ name: Alexandrov topology
 description: For a poset $(P, \leq)$, the Alexandrov topology has as open sets the up-sets — sets closed under going up along $\leq$ (or, in the dual convention, down-sets; the choice fixes a direction).
 ---
 
-# Alexandrov topology
 
 For a poset $(P, \leq)$, the **Alexandrov topology** has as open sets the up-sets — sets closed under going up along $\leq$ (or, in the dual convention, down-sets; the choice fixes a direction).
 

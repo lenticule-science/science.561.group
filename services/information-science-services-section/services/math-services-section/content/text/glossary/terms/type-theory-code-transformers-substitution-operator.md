@@ -7,7 +7,6 @@ name: Substitution operator
 description: The substitution operator $[-/-]$ is the binary operation taking a lambda-term $M$, a variable $x$, and a term $N$, and producing the capture-avoiding substitution $M[N/x]$.
 ---
 
-# Substitution operator
 
 The **substitution operator** $[-/-]$ is the binary operation taking a [lambda-term](lambda-term.md) $M$, a [variable](../../documents/articles/research/2026/07/31/lenticule-import/_archive/teaching/explanations/variable.md) $x$, and a term $N$, and producing the capture-avoiding [substitution](substitution.md) $M[N/x]$.
 

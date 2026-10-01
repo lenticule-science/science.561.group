@@ -5,7 +5,6 @@ aliases:
   - "raised garden bed"
 date-created: 2026-03-07
 tags: []
-type: term
 ---
 
 A contained growing area where the soil surface is elevated above the

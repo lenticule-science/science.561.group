@@ -6,7 +6,6 @@ aliases:
   - "perennial plant"
 date-created: 2026-03-06
 tags: []
-type: term
 ---
 
 A plant that lives for more than two years. Many perennials die back to

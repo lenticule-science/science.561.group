@@ -1,57 +1,51 @@
 ---
 description: "Marx's term, in the Grundrisse's 'Fragment on Machines,' for the socialized knowledge, scientific capacity, and accumulated cooperative intelligence of humanity that becomes a direct productive force as production becomes increasingly machine-mediated and knowledge-intensive. The post-operaismo tradition's foundational concept for theorizing cognitive capitalism and immaterial labor."
-defines: general-intellect
-related: [immaterial-labor, real-subsumption, labor-process, multitude, social-factory]
 date-created: 2026-05-03
 references:
-  - id: marx1857
-    type: document
+  marx1857:
+    authors:
+      - Karl Marx
     title: Grundrisse der Kritik der politischen Ökonomie
-    author:
-      - literal: Karl Marx
-    container-title: Marx-Engels-Gesamtausgabe (composed 1857–1858, first published 1939–1941)
-    issued:
-      - year: 1857
-  - id: marx1973
-    type: document
+    year: 1857
+    publication: Marx-Engels-Gesamtausgabe (composed 1857–1858, first published 1939–1941)
+  marx1973:
+    authors:
+      - Karl Marx
     title: "Grundrisse: Foundations of the Critique of Political Economy"
-    author:
-      - literal: Karl Marx
-    container-title: Penguin/New Left Review, trans. Martin Nicolaus
-    issued:
-      - year: 1973
-  - id: virno2004
-    type: document
+    year: 1973
+    publication: Penguin/New Left Review, trans. Martin Nicolaus
+  virno2004:
+    authors:
+      - Paolo Virno
     title: "A Grammar of the Multitude: For an Analysis of Contemporary Forms of Life"
-    author:
-      - literal: Paolo Virno
-    container-title: Semiotext(e)
-    issued:
-      - year: 2004
-  - id: vercellone2007
-    type: document
+    year: 2004
+    publication: Semiotext(e)
+  vercellone2007:
+    authors:
+      - Carlo Vercellone
     title: From Formal Subsumption to General Intellect
-    author:
-      - literal: Carlo Vercellone
-    container-title: Historical Materialism, 15(1)
-    issued:
-      - year: 2007
-  - id: hardt-negri-2000
-    type: document
+    year: 2007
+    publication: Historical Materialism, 15(1)
+  hardt-negri-2000:
+    authors:
+      - Michael Hardt
+      - Antonio Negri
     title: Empire
-    author:
-      - literal: Michael Hardt
-      - literal: Antonio Negri
-    container-title: Harvard University Press
-    issued:
-      - year: 2000
+    year: 2000
+    publication: Harvard University Press
 aliases:
-  - general intellect
+  - general-intellect
 tags: []
 part-of: sociology/schools/autonomism/terms
 name: "General Intellect"
 date-updated: 2026-03-09
 date-modified: 2026-03-09
+see-also:
+  - immaterial-labor
+  - real-subsumption
+  - labor-process
+  - multitude
+  - social-factory
 ---
 
 **General intellect** is Marx's term, appearing in the famous "Fragment on Machines" of the [Grundrisse](marx1857) (composed 1857–1858, first published 1939–1941, English translation [1973](marx1973)), for the socialized knowledge, scientific capacity, technical skill, and accumulated cooperative intelligence of humanity considered as a *direct productive force*.

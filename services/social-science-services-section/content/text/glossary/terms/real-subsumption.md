@@ -1,51 +1,47 @@
 ---
 name: "Real Subsumption"
 description: "Marx's term for the second stage of capital's domination of the labor process, in which capital reorganizes the technical content of the labor process itself — through division of labor, machinery, factory discipline, time-and-motion methods — to maximize relative surplus value, with the labor process now bearing capital's organizational stamp throughout. Distinguished from formal subsumption, in which capital takes over an existing labor process without yet transforming its technical content."
-defines: real-subsumption
-related: [labor-process, deskilling, scientific-management, manufacturing-consent, general-intellect]
 contrasts-with: [formal-subsumption]
 date-created: 2026-05-03
 references:
-  - id: marx1867
-    type: document
+  marx1867:
+    authors:
+      - Karl Marx
     title: Das Kapital, Band I
-    author:
-      - literal: Karl Marx
-    container-title: Verlag von Otto Meissner, Hamburg
-    issued:
-      - year: 1867
-  - id: marx1864
-    type: document
+    year: 1867
+    publication: Verlag von Otto Meissner, Hamburg
+  marx1864:
+    authors:
+      - Karl Marx
     title: Resultate des unmittelbaren Produktionsprozesses (Unpublished Chapter Six of Capital)
-    author:
-      - literal: Karl Marx
-    container-title: Marx-Engels-Archiv, Frankfurt 1933
-    issued:
-      - year: 1864
-  - id: marx1976
-    type: document
+    year: 1864
+    publication: Marx-Engels-Archiv, Frankfurt 1933
+  marx1976:
+    authors:
+      - Karl Marx
     title: Capital Volume I (Penguin edition with Resultate as Appendix)
-    author:
-      - literal: Karl Marx
-    container-title: Penguin/New Left Review, trans. Ben Fowkes
-    issued:
-      - year: 1976
-  - id: vercellone2007
-    type: document
+    year: 1976
+    publication: Penguin/New Left Review, trans. Ben Fowkes
+  vercellone2007:
+    authors:
+      - Carlo Vercellone
     title: "From Formal Subsumption to General Intellect: Elements for a Marxist Reading of the Thesis of Cognitive Capitalism"
-    author:
-      - literal: Carlo Vercellone
-    container-title: Historical Materialism, 15(1)
-    issued:
-      - year: 2007
-  - id: braverman1974
-    type: document
+    year: 2007
+    publication: Historical Materialism, 15(1)
+  braverman1974:
+    authors:
+      - Harry Braverman
     title: Labor and Monopoly Capital
-    author:
-      - literal: Harry Braverman
-    container-title: Monthly Review Press
-    issued:
-      - year: 1974
+    year: 1974
+    publication: Monthly Review Press
+aliases:
+  - real-subsumption
+see-also:
+  - labor-process
+  - deskilling
+  - scientific-management
+  - manufacturing-consent
+  - general-intellect
 ---
 
 **Real subsumption** is Marx's term for the second of two historical stages by which capital comes to dominate the [labor process](labor-process.md).

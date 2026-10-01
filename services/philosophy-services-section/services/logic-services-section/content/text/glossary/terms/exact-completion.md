@@ -15,7 +15,6 @@ name: Exact completion
 description: The exact completion is the construction
 ---
 
-# Exact completion
 
 The **exact completion** is the construction
 

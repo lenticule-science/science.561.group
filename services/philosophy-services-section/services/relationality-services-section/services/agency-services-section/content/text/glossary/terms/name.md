@@ -7,7 +7,6 @@ description: A Name is a rigid designator — a syntactic constant that picks ou
 
 A Name is a rigid designator — a syntactic constant that picks out the same object in every context, stable across changes to the object's properties — whose valid forms are constrained by a regular grammar.
 
-# Name
 
 ## What this is
 

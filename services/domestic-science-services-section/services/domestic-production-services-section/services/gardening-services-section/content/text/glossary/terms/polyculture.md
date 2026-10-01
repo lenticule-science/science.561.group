@@ -12,7 +12,11 @@ keywords:
   - agroecology
   - resilience
 contrasts-with: [monoculture]
-related-to: [companion-planting, intercropping, three-sisters-polyculture, crop-rotation]
+see-also:
+  - companion-planting
+  - intercropping
+  - three-sisters-polyculture
+  - crop-rotation
 ---
 
 Polyculture is the simultaneous cultivation of two or more crop species in the same field, garden bed, or spatial unit. It stands in direct opposition to monoculture, replacing single-crop uniformity with intentional species diversity.

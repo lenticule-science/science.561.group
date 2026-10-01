@@ -2,12 +2,11 @@
 name: "Absurd"
 description: "The mode in which a claim holds because no relational structure constrains it — the bare-assertion mode. The starting state of any inquiry under the relationality commitment, and the irreducible base on which every determination ultimately rests."
 date-created: 2026-04-28
-defines:
-  - absurd
+aliases:
   - absurdity
-related:
-  - true
-  - false
+see-also:
+  - "true"
+  - "false"
   - determination
   - settlement
   - relationlessness

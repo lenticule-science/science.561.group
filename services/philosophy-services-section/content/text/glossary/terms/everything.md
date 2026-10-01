@@ -5,9 +5,9 @@ aliases:
   - totality
 date-created: 2026-03-04
 definition: every thing
-dg-publish: true
 description: "Every thing taken together — the totality without boundary, the universe of reference."
 date-modified: 2026-04-03
+visibility: public
 ---
 
 

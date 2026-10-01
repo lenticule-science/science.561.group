@@ -7,8 +7,7 @@ aliases:
   - garden cress
   - pepper cress
   - cress
-related-to:
-  - "[Garden cress cultivation](../../../../../../engineering/domains/domesticity/domains/production/gardening/terms/garden-cress.md)"
+see-also: garden-cress
 ---
 
 ## Taxonomy and Origin

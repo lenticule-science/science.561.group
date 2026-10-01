@@ -3,7 +3,6 @@ name: "Telemetric Cast"
 date-created: 2025-04-15
 keywords:
   - CyberneticPostliberalism
-type: term
 aliases:
   - Usage
   - dr-telemetric-cast
@@ -15,7 +14,6 @@ signal:
 method:
   - "[apply](apply)"
   - "[../../slop/relationality/ai-generated-relationality/relationality-slop-2026-03-04/terms/compose](../../slop/relationality/ai-generated-relationality/relationality-slop-2026-03-04/terms/compose)"
-date: 2025-04-15
 ---
 
 To ***cast*** is to initiate a telemetric invocation by aligning a signal with a method inside a field. This alignment produces a yield, which may itself become signal for future casting.

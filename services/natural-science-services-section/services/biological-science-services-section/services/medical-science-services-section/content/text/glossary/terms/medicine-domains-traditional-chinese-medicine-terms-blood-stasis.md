@@ -1,6 +1,5 @@
 ---
 name: "Blood Stasis"
-type: "term"
 date-created: 2026-04-02
 ---
 

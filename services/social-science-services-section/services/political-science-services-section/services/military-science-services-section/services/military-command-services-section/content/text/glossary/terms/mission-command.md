@@ -25,7 +25,6 @@ references:
 cites:
   - jointchiefs2016dictionary
   - usarmy2019missioncommand
-type: term
 ---
 
 Mission command is a command philosophy that uses decentralization to survive uncertainty and time pressure [@jointchiefs2016dictionary].

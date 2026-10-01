@@ -29,7 +29,6 @@ enfolds:
   - "[digital forgetting](digital forgetting)"
 surfaced-in:
   - "[The Politics of Signal Memory (and Why Governance Might Not Be Real)](The Politics of Signal Memory (and Why Governance Might Not Be Real))"
-date: 2025-04-13
 status: active
 ---
 

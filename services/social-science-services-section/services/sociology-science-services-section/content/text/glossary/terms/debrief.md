@@ -2,9 +2,8 @@
 name: Debrief
 date-created: 2026-03-08
 aliases:
-- debrief
 - debriefing
-- report-back
+  - report-back
 tags:
 - disaster-studies
 - learning
@@ -36,11 +35,6 @@ cites:
   - relieftoolkit2022
 authors:
   - claude
-type: term
-defines:
-  - "debrief"
-  - "debriefing"
-  - "report-back"
 ---
 
 A debrief is a reflective and informational practice in which

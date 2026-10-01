@@ -1,77 +1,66 @@
 ---
 name: "Leistungssubjekt"
-defines: leistungssubjekt
-aliases: [leistungssubjekt, achievement-subject, achievement subject, performance-subject]
+aliases: [ achievement-subject, achievement subject, performance-subject ]
 description: "Han's term for the late-neoliberal subject who has displaced the disciplinary 'you must' with the permissive 'you can,' and who, finding 'you can' indistinguishable from a tacit 'you must,' exploits themselves in the name of self-realization. The subject is simultaneously project and product, exploiter and exploited; the resulting depression and burnout are structural rather than individual."
-related: [burnout-society, psychopolitics, transparency-society, governmentality]
 contrasts-with: [disciplinary-subject, sovereign-subject]
 date-created: 2026-04-27
 date-modified: 2026-04-27
 references:
-  - id: han2010
-    type: document
+  han2010:
+    authors:
+      - Byung-Chul Han
     title: Müdigkeitsgesellschaft
+    year: 2010
+    publication: Matthes & Seitz
     note: the original German formulation; the achievement-subject as the displaced successor of Foucault's disciplinary subject
-    author:
-      - literal: Byung-Chul Han
-    container-title: Matthes & Seitz
-    issued:
-      - year: 2010
-  - id: han2015a
-    type: document
+  han2015a:
+    authors:
+      - Byung-Chul Han
     title: The Burnout Society
+    year: 2015
+    publication: Stanford University Press
     note: the English translation that made the concept portable beyond the German-language phenomenological tradition
-    author:
-      - literal: Byung-Chul Han
-    container-title: Stanford University Press
-    issued:
-      - year: 2015
-  - id: han2017
-    type: document
+  han2017:
+    authors:
+      - Byung-Chul Han
     title: "Psychopolitics: Neoliberalism and New Technologies of Power"
+    year: 2017
+    publication: Verso
     note: the extension of the achievement-subject analysis to data-mediated affective governance
-    author:
-      - literal: Byung-Chul Han
-    container-title: Verso
-    issued:
-      - year: 2017
-  - id: foucault1977
-    type: document
+  foucault1977:
+    authors:
+      - Michel Foucault
     title: "Discipline and Punish: The Birth of the Prison"
+    year: 1977
+    publication: Pantheon
     note: the disciplinary-subject formation Han's achievement-subject succeeds and inverts
-    author:
-      - literal: Michel Foucault
-    container-title: Pantheon
-    issued:
-      - year: 1977
-  - id: ehrenberg1998
-    type: document
+  ehrenberg1998:
+    authors:
+      - Alain Ehrenberg
     title: "La Fatigue d'être soi: Dépression et société"
+    year: 1998
+    publication: Odile Jacob
     note: the prior French sociology of depression-as-exhaustion-of-the-self that Han builds on
-    author:
-      - literal: Alain Ehrenberg
-    container-title: Odile Jacob
-    issued:
-      - year: 1998
-  - id: rose1989
-    type: document
+  rose1989:
+    authors:
+      - Nikolas Rose
     title: "Governing the Soul: The Shaping of the Private Self"
+    year: 1989
+    publication: Routledge
     note: the governmentality lineage's account of self-as-project, the upstream framing Han radicalizes
-    author:
-      - literal: Nikolas Rose
-    container-title: Routledge
-    issued:
-      - year: 1989
-  - id: boltanski1999
-    type: document
+  boltanski1999:
+    authors:
+      - Luc Boltanski
+      - Ève Chiapello
     title: Le nouvel esprit du capitalisme
+    year: 1999
+    publication: Gallimard
     note: the parallel French sociology of the project-self in flexible capitalism; an adjacent diagnosis
-    author:
-      - literal: Luc Boltanski
-      - literal: Ève Chiapello
-    container-title: Gallimard
-    issued:
-      - year: 1999
+see-also:
+  - burnout-society
+  - psychopolitics
+  - transparency-society
+  - governmentality
 ---
 
 The **Leistungssubjekt** — the *achievement-subject* — is Byung-Chul Han's name for the subject of late-neoliberal society.

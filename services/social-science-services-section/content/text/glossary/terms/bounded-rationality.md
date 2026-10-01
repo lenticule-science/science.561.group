@@ -1,62 +1,56 @@
 ---
 name: "Bounded Rationality"
 description: "Herbert Simon's concept that real decision-makers operate under cognitive, informational, and time constraints that preclude classical optimization, instead engaging in satisficing — searching the alternative space until a 'good enough' option is found rather than identifying the global optimum."
-defines: bounded-rationality
-related: [satisficing, organizational-search, dispatch, planning, capability]
 contrasts-with: [perfect-rationality, expected-utility-maximization]
 date-created: 2026-05-03
 references:
-  - id: simon1947
-    type: document
+  simon1947:
+    authors:
+      - Herbert A. Simon
     title: "Administrative Behavior: A Study of Decision-Making Processes in Administrative Organization"
-    author:
-      - literal: Herbert A. Simon
-    container-title: Macmillan
-    issued:
-      - year: 1947
-  - id: simon1955
-    type: document
+    year: 1947
+    publication: Macmillan
+  simon1955:
+    authors:
+      - Herbert A. Simon
     title: A Behavioral Model of Rational Choice
-    author:
-      - literal: Herbert A. Simon
-    container-title: Quarterly Journal of Economics, 69(1)
-    issued:
-      - year: 1955
-  - id: simon1956
-    type: document
+    year: 1955
+    publication: Quarterly Journal of Economics, 69(1)
+  simon1956:
+    authors:
+      - Herbert A. Simon
     title: Rational Choice and the Structure of the Environment
-    author:
-      - literal: Herbert A. Simon
-    container-title: Psychological Review, 63(2)
-    issued:
-      - year: 1956
-  - id: march-simon-1958
-    type: document
+    year: 1956
+    publication: Psychological Review, 63(2)
+  march-simon-1958:
+    authors:
+      - James G. March
+      - Herbert A. Simon
     title: Organizations
-    author:
-      - literal: James G. March
-      - literal: Herbert A. Simon
-    container-title: Wiley
-    issued:
-      - year: 1958
-  - id: cyert-march-1963
-    type: document
+    year: 1958
+    publication: Wiley
+  cyert-march-1963:
+    authors:
+      - Richard M. Cyert
+      - James G. March
     title: A Behavioral Theory of the Firm
-    author:
-      - literal: Richard M. Cyert
-      - literal: James G. March
-    container-title: Prentice-Hall
-    issued:
-      - year: 1963
-  - id: gigerenzer-2008
-    type: document
+    year: 1963
+    publication: Prentice-Hall
+  gigerenzer-2008:
+    authors:
+      - Gerd Gigerenzer
+      - Reinhard Selten (Eds.)
     title: "Bounded Rationality: The Adaptive Toolbox"
-    author:
-      - literal: Gerd Gigerenzer
-      - literal: Reinhard Selten (Eds.)
-    container-title: MIT Press
-    issued:
-      - year: 2008
+    year: 2008
+    publication: MIT Press
+aliases:
+  - bounded-rationality
+see-also:
+  - satisficing
+  - organizational-search
+  - dispatch
+  - planning
+  - capability
 ---
 
 **Bounded rationality** is Herbert Simon's concept, formulated in [Administrative Behavior](simon1947) and developed in a series of subsequent papers [simon1955, simon1956], that real decision-makers — individuals and organizations alike — operate under cognitive, informational, and temporal constraints that preclude the optimization assumed in classical economic and decision theory.

@@ -7,14 +7,12 @@ aliases:
 description: "Kurdish armed resistance fighters — 'those who walk before death' — a term spanning ideologically incompatible movements that has itself become a contested genre figure, both imposed and self-adopted."
 contrasts-with: [jash, regular-army]
 references:
-  - id: mcdowall2004
-    type: document
+  mcdowall2004:
+    authors:
+      - D. McDowall
     title: A Modern History of the Kurds
-    author:
-      - literal: D. McDowall
-    container-title: I.B. Tauris
-    issued:
-      - year: 2004
+    year: 2004
+    publication: I.B. Tauris
 ---
 
 Peshmerga (Kurmanji: *pêşmerge*, from *pêş* "before" + *merg* "death") means "those who walk before death" — Kurdish armed resistance fighters willing to die for Kurdish liberation. The term carries the weight of a century of struggle against four states (Turkey, Iran, Iraq, Syria) and the dignity of a people who have maintained armed self-defense in the face of genocide, chemical weapons, and systematic cultural erasure.

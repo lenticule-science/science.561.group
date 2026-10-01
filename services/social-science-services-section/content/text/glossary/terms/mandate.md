@@ -18,7 +18,6 @@ aliases:
 name: "Mandate"
 ---
 
-# Mandate
 
 ## Formal definition
 

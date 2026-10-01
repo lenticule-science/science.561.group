@@ -21,7 +21,6 @@ aliases:
 name: "JurisdictionalExcess"
 ---
 
-# JurisdictionalExcess
 
 ## Formal definition
 

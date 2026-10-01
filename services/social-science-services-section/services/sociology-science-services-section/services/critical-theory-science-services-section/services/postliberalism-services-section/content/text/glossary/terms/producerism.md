@@ -3,15 +3,10 @@
 name: "Producerism"
 date-created: 2026-03-03
 aliases:
-  - "producerism"
   - "producerist"
 tags: []
 date-modified: 2026-03-09
 part-of: sociology/schools/postliberalism/terms
-type: term
-defines:
-  - "Producerism"
-  - "producerist"
 date-updated: 2026-03-09
 ---
 

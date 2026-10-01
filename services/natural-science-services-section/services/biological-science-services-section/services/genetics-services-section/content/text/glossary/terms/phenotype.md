@@ -9,7 +9,6 @@ keywords:
   - Genetics
 date-updated: 2026-03-09
 part-of: biology/disciplines/genetics/terms
-type: term
 ---
 
 A phenotype is the set of observable characteristics of an organism — its morphology, behavior, physiology, biochemistry. The term was introduced by Wilhelm Johannsen in 1911 to distinguish the observable organism (phenotype) from the hereditary material (genotype). The distinction was meant to be clean: genotype is the cause, phenotype is the effect.

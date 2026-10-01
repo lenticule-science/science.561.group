@@ -4,7 +4,6 @@ description: "Viveiros de Castro's proposition from Amerindian ethnography: all 
 date-created: 2026-03-03
 date-modified: 2026-03-29
 aliases:
-  - "perspectivism"
   - "Amerindian perspectivism"
   - "multinaturalist perspectivism"
 component-of: ontological-turn
@@ -22,11 +21,6 @@ references:
     title: "Cannibal Metaphysics: For a Post-Structural Anthropology"
     publication: "Univocal Publishing"
     year: 2014
-type: term
-defines:
-  - "Perspectivism"
-  - "Amerindian perspectivism"
-  - "multinaturalist perspectivism"
 ---
 
 Perspectivism, as developed by Eduardo Viveiros de Castro from Amerindian ethnography, is the proposition that all beings see themselves as human — that is, as subjects — but see other beings according to the kind of body they inhabit. A jaguar sees itself as a person drinking manioc beer in a longhouse; what it sees as manioc beer, a human sees as blood. The world is not one nature viewed from many cultural perspectives (multiculturalism) but one culture — subjectivity, intentionality, sociality — instantiated through many natures (multinaturalism).

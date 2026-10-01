@@ -3,8 +3,7 @@ name: "Virtual Posting"
 aliases:
   - "Virtual Posting"
   - "virtual posting"
-date-created: 2026-03-06T00:00:00
-type: term
+date-created: 2026-03-06
 authors:
   - claude-opus-4-6
 keywords:

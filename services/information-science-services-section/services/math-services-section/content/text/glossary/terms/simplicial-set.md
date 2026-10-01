@@ -5,7 +5,6 @@ aliases:
   - "simplicial sets"
 date-created: 2025-12-31
 tags: []
-type: term
 ---
 
 A simplicial set is a [functor](./functor.md) X: Δᵒᵖ → Set, where Δ is the simplex category (objects are the finite ordinals [0], [1], [2], ..., [morphisms](./morphism.md) are order-preserving maps) and Set is the [category](./category.md) of [sets](./set.md). Concretely, a simplicial set consists of a set Xₙ of n-simplices for each n ≥ 0, together with face maps dᵢ: Xₙ → Xₙ₋₁ (removing the i-th vertex) and degeneracy maps sᵢ: Xₙ → Xₙ₊₁ (repeating the i-th vertex), satisfying the simplicial identities.

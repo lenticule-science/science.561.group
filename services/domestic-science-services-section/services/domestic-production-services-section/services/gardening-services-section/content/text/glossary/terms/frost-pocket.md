@@ -5,7 +5,6 @@ aliases:
   - "frost pocket"
 date-created: 2026-03-07
 tags: []
-type: term
 ---
 
 A low-lying area where cold air collects on still nights. Because cold

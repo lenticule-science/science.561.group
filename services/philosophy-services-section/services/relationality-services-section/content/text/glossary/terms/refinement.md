@@ -6,7 +6,6 @@ tags: []
 aliases:
   - refinement
   - refinements
-type: term
 ---
 
 A refinement is a morphism from a coarser to a finer [stratum](./stratum.md) — a map that extracts more detailed or more local information. In a [stratified](./stratification.md) structure, refinement maps go in a preferred direction (coarser → finer), and this directedness is part of the [directed](./directed.md) structure of the site.

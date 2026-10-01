@@ -1,10 +1,8 @@
 ---
 name: "Rotation"
 description: "Cycling through a sequence of role-holders or duty assignments over time — the temporal mechanism that prevents power concentration, distributes burden, and builds breadth."
-defines: rotation
 date-created: 2026-04-04
 aliases:
-  - "rotation"
   - "rotating"
 instance-of: [recurrence, act]
 applies-to: [office, shift, governance, burdens, authority]
@@ -13,39 +11,31 @@ contrasts-with: [tenure, specialization, concentration]
 requires: [time, sequence, multiple-agents]
 part-of-stage: cross-cutting
 references:
-  - id: manville-ober2003
-    type: document
+  manville-ober2003:
+    authors:
+      - Brook Manville
+      - Josiah Ober
     title: "A Company of Citizens: What the World's First Democracies Teach Us About Leadership"
-    author:
-      - literal: Brook Manville
-      - literal: Josiah Ober
-    container-title: Harvard Business School Press
-    issued:
-      - year: 2003
-  - id: hansen2005
-    type: document
+    year: 2003
+    publication: Harvard Business School Press
+  hansen2005:
+    authors:
+      - Mogens Herman Hansen
     title: The Athenian Democracy in the Age of Demosthenes
-    author:
-      - literal: Mogens Herman Hansen
-    container-title: University of Oklahoma Press
-    issued:
-      - year: 2005
-  - id: woodburn1982
-    type: document
+    year: 2005
+    publication: University of Oklahoma Press
+  woodburn1982:
+    authors:
+      - James Woodburn
     title: Egalitarianism and Hierarchy in East African Pastoralist Societies
-    author:
-      - literal: James Woodburn
-    container-title: Journal of the International African Institute
-    issued:
-      - year: 1982
-  - id: morgan1877
-    type: document
+    year: 1982
+    publication: Journal of the International African Institute
+  morgan1877:
+    authors:
+      - Lewis Henry Morgan
     title: Ancient Society
-    author:
-      - literal: Lewis Henry Morgan
-    container-title: Henry Holt and Company
-    issued:
-      - year: 1877
+    year: 1877
+    publication: Henry Holt and Company
 ---
 
 Rotation is the [recurrence](recurrence.md) of assignment: different people take the same role in sequence, and the pattern repeats across time.

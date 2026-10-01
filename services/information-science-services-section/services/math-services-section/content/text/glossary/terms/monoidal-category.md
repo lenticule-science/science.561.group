@@ -5,7 +5,6 @@ aliases:
   - "monoidal categories"
 date-created: 2025-12-31
 tags: []
-type: term
 ---
 
 A monoidal category is a [category](./category.md) C equipped with a [tensor product](./tensor-product.md) ⊗: C × C → C, a [unit object](./unit-object.md) I, and coherence [isomorphisms](./isomorphism.md) for associativity ((A ⊗ B) ⊗ C ≅ A ⊗ (B ⊗ C)) and units (I ⊗ A ≅ A ≅ A ⊗ I). These [isomorphisms](./isomorphism.md) must satisfy the pentagon and triangle coherence conditions, ensuring that all ways of re-associating and inserting units agree.

@@ -19,7 +19,6 @@ name: Boundary-extended predicate category
 description: Fix a residuated lattice $\mathbf L$ and an entity set $E$.
 ---
 
-# Boundary-extended predicate category
 
 Fix a [residuated lattice](../../documents/articles/research/2026/07/31/lenticule-import/from-predicate-category/residuated-lattice.md) $\mathbf L$ and an [entity set](../../documents/articles/research/2026/07/31/lenticule-import/from-predicate-category/entity-set.md) $E$. The **boundary-extended predicate category** $\mathcal C^\beta$ is the category whose objects are predicates and whose morphisms are *all* natural — i.e. $\mathrm{Sym}(E)$-equivariant — [bilattice homomorphisms](../../documents/articles/research/2026/07/31/lenticule-import/morphisms/bilattice-homomorphism.md) between [predication fiber algebras](../../documents/articles/research/2026/07/31/lenticule-import/from-predicate-category/predication-fiber-algebra.md), with no [bottom-preservation](../../documents/articles/research/2026/07/31/lenticule-import/morphisms/bilattice-homomorphism.md) requirement. Composition is composition of bilattice homomorphisms.
 

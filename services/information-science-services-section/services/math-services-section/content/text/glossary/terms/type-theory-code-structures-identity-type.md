@@ -8,7 +8,6 @@ name: Identity type
 description: The identity type $\mathrm{Id}A(a, b)$ (also written $a =A b$) is the type of proofs of equality between two terms $a, b$ of type $A$.
 ---
 
-# Identity type
 
 The **identity type** $\mathrm{Id}_A(a, b)$ (also written $a =_A b$) is the type of *proofs of equality* between two terms $a, b$ of type $A$. It is the simplest nontrivial dependent [inductive-type](inductive-type.md): one constructor $\mathrm{refl}_a : \mathrm{Id}_A(a, a)$ generates everything.
 

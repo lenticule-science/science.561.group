@@ -4,7 +4,6 @@ aliases:
   - "combination"
   - "combinations"
 date-created: 2026-03-05
-type: term
 tags: []
 description: A combination is an unordered selection of elements from a set.
 ---

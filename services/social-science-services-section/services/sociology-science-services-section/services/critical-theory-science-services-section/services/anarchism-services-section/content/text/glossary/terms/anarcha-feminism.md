@@ -2,16 +2,12 @@
 name: "Anarcha-Feminism"
 date-created: 2026-03-06
 aliases:
-  - "Anarcha-Feminism"
-  - "anarcha-feminism"
   - "anarcho-feminism"
 keywords:
   - anarchism
 description: "The current within anarchism that analyzes patriarchy as inseparable from the state, capitalism, and colonialism, and insists that liberation requires the simultaneous abolition of all forms of domination."
-type: term
 tags:
   - Anarchism
-defines: "anarcha-feminism"
 ---
 
 Anarcha-feminism is the analysis that [patriarchy](patriarchy.md) is not a separate system of [domination](../../../../../../../../content/text/glossary/terms/domination.md) but is structurally interlocked with [the state](../../../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/notes/undated/the-state.md), [capitalism](capitalism.md), and [colonialism](../../../../../povinellian-services-section/services/settler-colonialism-services-section/content/text/glossary/terms/colonialism.md). It follows that you cannot abolish one without confronting the others: a revolution that liberates workers while subordinating women has not understood what [hierarchy](../../../../../../../../content/text/glossary/terms/hierarchy.md) is.

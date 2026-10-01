@@ -7,7 +7,6 @@ description: An Id is a candidate key — an injective, content-independent cons
 
 An Id is a candidate key — an injective, content-independent constant symbol in the language of a scope that denotes exactly one object within that scope and is stable across changes to the object's content.
 
-# Id
 
 ## What this is
 

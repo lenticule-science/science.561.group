@@ -5,7 +5,6 @@ aliases:
   - hierarchy
 date-created: 2025-12-31
 tags: []
-type: term
 ---
 In [typography](../index.md), **hierarchy** is the system of visual distinctions that tells a reader which elements are most important, how content is organized, and where to look next. It differentiates [headings](./heading.md), [body text](./body.md), [captions](./caption.md), and other elements so that the structure of a document is visible before a single word is read.
 

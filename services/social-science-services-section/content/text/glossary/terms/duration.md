@@ -1,7 +1,6 @@
 ---
 name: "Duration"
 description: "The measured or lived extent of a process, state, or activity in time — the span from start to finish, connecting Bergson's qualitative durée with operational time-tracking."
-defines: duration
 date-created: 2026-04-04
 aliases: ["durations"]
 instance-of: quality
@@ -10,39 +9,31 @@ part-of-stage: cross-cutting
 extends: [time]
 contrasts-with: [effort, deadline, schedule]
 references:
-  - id: bergson1889
-    type: document
+  bergson1889:
+    authors:
+      - Henri Bergson
     title: "Time and Free Will: An Essay on the Immediate Data of Consciousness"
-    author:
-      - literal: Henri Bergson
-    container-title: Dover Publications
-    issued:
-      - year: 1889
-  - id: reinertsen2009
-    type: document
+    year: 1889
+    publication: Dover Publications
+  reinertsen2009:
+    authors:
+      - Donald G. Reinertsen
     title: The Principles of Product Development Flow
-    author:
-      - literal: Donald G. Reinertsen
-    container-title: Celeritas Publishing
-    issued:
-      - year: 2009
-  - id: kahneman-tversky1979
-    type: document
+    year: 2009
+    publication: Celeritas Publishing
+  kahneman-tversky1979:
+    authors:
+      - Daniel Kahneman
+      - Amos Tversky
     title: "Intuitive Prediction: Biases and Corrective Procedures"
-    author:
-      - literal: Daniel Kahneman
-      - literal: Amos Tversky
-    container-title: TIMS Studies in Management Science
-    issued:
-      - year: 1979
-  - id: hofstadter1979
-    type: document
+    year: 1979
+    publication: TIMS Studies in Management Science
+  hofstadter1979:
+    authors:
+      - Douglas R. Hofstadter
     title: "Gödel, Escher, Bach: An Eternal Golden Braid"
-    author:
-      - literal: Douglas R. Hofstadter
-    container-title: Basic Books
-    issued:
-      - year: 1979
+    year: 1979
+    publication: Basic Books
 ---
 
 Duration is the span from the beginning to the end of a process, activity, or state — the extent of something in time, measured either as clock intervals or as lived, phenomenological experience.

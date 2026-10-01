@@ -25,7 +25,6 @@ references:
 cites:
   - huntington1957
   - janowitz1960
-type: term
 ---
 
 Service branches are the armed services as enduring institutions: they persist across conflicts through budgets, training pipelines, procurement systems, and professional cultures [@huntington1957].

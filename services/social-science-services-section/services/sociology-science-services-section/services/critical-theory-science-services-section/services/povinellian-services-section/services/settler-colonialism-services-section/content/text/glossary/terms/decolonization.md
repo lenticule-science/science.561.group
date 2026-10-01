@@ -2,19 +2,14 @@
 name: "Decolonization"
 date-created: 2026-03-02
 aliases:
-  - "decolonization"
   - "decolonize"
 keywords:
   - settler-colonialism
 description: "The repatriation of Indigenous land and life — not a metaphor for other social justice projects."
 date-modified: 2026-03-09
 part-of: sociology/topics/settler-colonialism/terms
-type: term
 tags:
   - SettlerColonialism
-defines:
-  - "Decolonization"
-  - "decolonize"
 date-updated: 2026-03-09
 ---
 

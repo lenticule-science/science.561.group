@@ -7,7 +7,6 @@ name: Type erasure
 description: Type erasure is the operator that strips type annotations from a term of a typed calculus, producing a term of the untyped-lambda-calculus.
 ---
 
-# Type erasure
 
 **Type erasure** is the operator that strips type annotations from a term of a typed calculus, producing a term of the [untyped-lambda-calculus](../../documents/articles/research/2026/07/31/lenticule-import/objects/untyped-lambda-calculus.md). It is the forgetful map from typed to untyped syntax.
 

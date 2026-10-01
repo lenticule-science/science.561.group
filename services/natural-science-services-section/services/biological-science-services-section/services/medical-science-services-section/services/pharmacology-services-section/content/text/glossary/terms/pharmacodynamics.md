@@ -13,7 +13,6 @@ contains: [dose-response-relationships, receptor-binding, tolerance, sensitizati
 determines: [therapeutic-index, side-effects]
 enables: [harm-reduction, overdose-reversal]
 acts-on: [receptors, enzymes, ion-channels]
-type: term
 ---
 
 **Pharmacodynamics** is the study of what a drug does to the body — the mechanisms through which a drug produces its effects. Where [pharmacokinetics](./pharmacokinetics.md) asks how a drug reaches its target, pharmacodynamics asks what happens when it gets there.

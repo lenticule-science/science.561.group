@@ -2,7 +2,7 @@
 
 name: "Franchise"
 description: "A franchise is a business arrangement in which the owner of a brand and operating system (the franchisor) licenses independent operators (franchisees) to run locations using the franchisor's name, products, and methods in exchange for fees and ongoing royalties. The franchisee supplies the capital and [labor](../../../../../../../../../../../public-services-section/services/personal-services-section/services/emsenn-services-section/content/text/sociology/terms/labor.md); the franchisor supplies the system."
-date-created: 2026-03-06T00:00:00
+date-created: 2026-03-06
 aliases:
   - "franchise"
   - "franchise model"

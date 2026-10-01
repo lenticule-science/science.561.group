@@ -3,7 +3,6 @@
 name: "Tribe"
 date-created: 2026-04-02
 aliases:
-  - "tribe"
   - "tribal"
   - "tribalism"
 description: "A kinship-based political unit organized through lineage, alliance, and reciprocal obligation — analytically useful for specific social structures but politically dangerous when applied as a genre category that reduces complex societies to 'tribal peoples.'"
@@ -14,9 +13,6 @@ references:
     title: "Agha, Shaikh and State: The Social and Political Structures of Kurdistan"
     publication: "Zed Books"
     year: 1992
-defines:
-  - tribe
-  - tribalism
 ---
 
 A tribe is a kinship-based political unit organized through lineage, alliance, and reciprocal obligation — typically governed by councils of elders, chiefs, or aghas whose authority derives from kinship position and personal prestige rather than from bureaucratic office. Tribal structures are real social forms with specific logics: they distribute resources through kinship networks, resolve disputes through mediation and customary law, and reproduce themselves through marriage alliances and genealogical reckoning.

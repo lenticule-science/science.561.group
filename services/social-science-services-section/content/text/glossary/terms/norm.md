@@ -20,7 +20,6 @@ aliases:
 name: "Norm"
 ---
 
-# Norm
 
 ## Formal definition
 

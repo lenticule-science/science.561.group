@@ -3,7 +3,6 @@ name: "Explosion"
 description: "The classical principle that from a contradiction, any proposition whatsoever can be derived — making inconsistency catastrophic. Paraconsistent logic is defined by rejecting this."
 date-created: 2026-03-05
 aliases:
-  - "explosion"
   - "ex falso quodlibet"
   - "principle of explosion"
   - "ex contradictione quodlibet"
@@ -13,11 +12,6 @@ component-of: classical-logic
 inverse-of: paraconsistent-logic
 tags:
   - logic
-defines:
-  - "Explosion"
-  - "explosion"
-  - "ex falso quodlibet"
-  - "principle of explosion"
 ---
 
 Explosion (ex falso quodlibet, "from the false, anything follows") is the principle of [classical logic](../../classical/index.md) that from a contradiction, any proposition whatsoever can be derived. If both A and ¬A hold, then for any B, the following argument is valid: from A, derive A ∨ B by disjunction introduction; from ¬A and A ∨ B, derive B by disjunctive syllogism. This means that any inconsistent classical theory is trivial — it proves everything.

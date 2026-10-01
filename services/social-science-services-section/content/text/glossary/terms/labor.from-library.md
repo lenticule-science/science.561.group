@@ -1,11 +1,66 @@
 ---
 name: "Labor"
 description: "Labor is purposeful human activity that transforms the world. The Marxist tradition distinguishes labor from labor-power; feminist political economy adds reproductive labor; Indigenous traditions refuse the separation between labor and the relations of life."
-defines: Labor
 aliases:
-  - "labor"
   - "labour"
-related:
+contrasts-with:
+  - leisure
+  - play
+  - labor-as-commodity
+  - work-as-job
+references:
+  marx1867:
+    authors:
+      - Karl Marx
+    title: Capital, Volume 1
+    year: 1867
+    publication: Penguin (1976 trans.; orig. German 1867)
+  marx1844:
+    authors:
+      - Karl Marx
+    title: Economic and Philosophic Manuscripts of 1844
+    year: 1844
+    publication: International Publishers (1964 trans.)
+  federici2004:
+    authors:
+      - Silvia Federici
+    title: "Caliban and the Witch: Women, the Body and Primitive Accumulation"
+    year: 2004
+    publication: Autonomedia
+  dallacosta1972:
+    authors:
+      - Mariarosa Dalla Costa
+      - Selma James
+    title: The Power of Women and the Subversion of the Community
+    year: 1972
+    publication: Falling Wall Press
+  tronti1966:
+    authors:
+      - Mario Tronti
+    title: Operai e Capitale
+    year: 1966
+    publication: Einaudi
+  negri1991:
+    authors:
+      - Antonio Negri
+    title: "Marx Beyond Marx: Lessons on the Grundrisse"
+    year: 1991
+    publication: Autonomedia
+  coulthard2014:
+    authors:
+      - Glen Sean Coulthard
+    title: "Red Skin, White Masks: Rejecting the Colonial Politics of Recognition"
+    year: 2014
+    publication: University of Minnesota Press
+  simpson2017:
+    authors:
+      - Leanne Betasamosake Simpson
+    title: "As We Have Always Done: Indigenous Freedom Through Radical Resistance"
+    year: 2017
+    publication: University of Minnesota Press
+date-created: 2026-03-03
+date-modified: 2026-04-28
+see-also:
   - labor-power
   - surplus-value
   - alienation
@@ -15,79 +70,6 @@ related:
   - wage-labor
   - primitive-accumulation
   - refusal-of-work
-contrasts-with:
-  - leisure
-  - play
-  - labor-as-commodity
-  - work-as-job
-references:
-  - id: marx1867
-    type: document
-    title: Capital, Volume 1
-    author:
-      - literal: Karl Marx
-    container-title: Penguin (1976 trans.; orig. German 1867)
-    issued:
-      - year: 1867
-  - id: marx1844
-    type: document
-    title: Economic and Philosophic Manuscripts of 1844
-    author:
-      - literal: Karl Marx
-    container-title: International Publishers (1964 trans.)
-    issued:
-      - year: 1844
-  - id: federici2004
-    type: document
-    title: "Caliban and the Witch: Women, the Body and Primitive Accumulation"
-    author:
-      - literal: Silvia Federici
-    container-title: Autonomedia
-    issued:
-      - year: 2004
-  - id: dallacosta1972
-    type: document
-    title: The Power of Women and the Subversion of the Community
-    author:
-      - literal: Mariarosa Dalla Costa
-      - literal: Selma James
-    container-title: Falling Wall Press
-    issued:
-      - year: 1972
-  - id: tronti1966
-    type: document
-    title: Operai e Capitale
-    author:
-      - literal: Mario Tronti
-    container-title: Einaudi
-    issued:
-      - year: 1966
-  - id: negri1991
-    type: document
-    title: "Marx Beyond Marx: Lessons on the Grundrisse"
-    author:
-      - literal: Antonio Negri
-    container-title: Autonomedia
-    issued:
-      - year: 1991
-  - id: coulthard2014
-    type: document
-    title: "Red Skin, White Masks: Rejecting the Colonial Politics of Recognition"
-    author:
-      - literal: Glen Sean Coulthard
-    container-title: University of Minnesota Press
-    issued:
-      - year: 2014
-  - id: simpson2017
-    type: document
-    title: "As We Have Always Done: Indigenous Freedom Through Radical Resistance"
-    author:
-      - literal: Leanne Betasamosake Simpson
-    container-title: University of Minnesota Press
-    issued:
-      - year: 2017
-date-created: 2026-03-03
-date-modified: 2026-04-28
 ---
 
 ## What This Is

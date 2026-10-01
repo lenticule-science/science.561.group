@@ -8,7 +8,6 @@ name: Stratified predication fiber
 description: A stratified predication fiber $A^{\flat}p$ over a closure-rule system $\mathcal{S}$ and a bilattice-stabilization nucleus $N\Delta$ is the predication fiber algebra $Ap$ equipped with a per-cell-atom stratum assignment
 ---
 
-# Stratified predication fiber
 
 A **stratified predication fiber** $A^{\flat}_p$ over a [closure-rule system](../../documents/articles/research/2026/07/31/lenticule-import/from-predicate-category/teaching/explanations/closure-rule-system.md) $\mathcal{S}$ and a [bilattice-stabilization nucleus](../../documents/articles/research/2026/07/31/lenticule-import/from-predicate-category/bilattice-stabilization-nucleus.md) $N_\Delta$ is the [predication fiber algebra](../../documents/articles/research/2026/07/31/lenticule-import/from-predicate-category/predication-fiber-algebra.md) $A_p$ equipped with a per-cell-atom **stratum assignment**
 

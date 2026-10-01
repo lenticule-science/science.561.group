@@ -1,26 +1,21 @@
 ---
 name: "Motivational Displacement"
 description: "Noddings's term for the shift in motivation from pursuing one's own projects to acting on behalf of the cared-for — arising from engrossment rather than from principle."
-date-created: 2026-03-05T00:00:00
+date-created: 2026-03-05
 date-modified: 2026-03-29
-type: term
 aliases:
-  - "motivational displacement"
-defines:
-  - "Motivational Displacement"
+  []
 component-of: care-ethics
 requires: engrossment
 enables: responsiveness
 contrasts-with: [altruism, duty]
 references:
-  - id: noddings1984
-    type: document
+  noddings1984:
+    authors:
+      - Nel Noddings
     title: "Caring: A Feminine Approach to Ethics and Moral Education"
-    author:
-      - literal: Nel Noddings
-    container-title: University of California Press
-    issued:
-      - year: 1984
+    year: 1984
+    publication: University of California Press
 ---
 
 Motivational displacement is Nel Noddings's term for the shift in motivation that occurs when a person moves from pursuing their own projects to acting on behalf of the cared-for. Together with engrossment, it constitutes the caring relation. Where engrossment is the receptive phase — attending to the other's reality — motivational displacement is the active phase: the carer's energy and attention flow toward what the cared-for needs.

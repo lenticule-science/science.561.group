@@ -4,7 +4,6 @@ name: "Churn Rate"
 description: "Churn rate is the percentage of subscribers who cancel their subscription within a given period, usually expressed monthly or annually."
 date-created: 2026-03-29
 aliases:
-  - "churn rate"
   - "subscriber churn"
   - "customer churn"
   - "attrition rate"
@@ -14,15 +13,11 @@ keywords:
   - subscriptions
   - metrics
 part-of: business/theories/web/terms
-type: term
 tags:
   - Business
   - Web
   - Subscriptions
   - Metrics
-defines:
-  - "Churn rate"
-  - "subscriber churn"
 ---
 
 Churn rate is the percentage of subscribers who cancel their subscription within a given period, usually expressed monthly or annually. The formula:

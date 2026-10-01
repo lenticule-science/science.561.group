@@ -17,7 +17,6 @@ name: Speech act
 description: The speech act is the foundational formal model of saying-as-doing, due to J.
 ---
 
-# Speech act
 
 The **speech act** is the foundational formal model of saying-as-doing, due to J. L. Austin (1962, *How to Do Things with Words*) and elaborated by John Searle (1969, *Speech Acts*). The model formalises an utterance as a typed triple of acts performed simultaneously: a *locutionary* act (uttering meaningful words with a particular sense and reference), an *illocutionary* act (the act performed *in* uttering — asserting, promising, requesting, declaring), and a *perlocutionary* act (the effect produced *by* uttering — convincing, persuading, alarming, amusing).
 

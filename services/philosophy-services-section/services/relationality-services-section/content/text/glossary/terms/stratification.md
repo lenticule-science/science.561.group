@@ -6,7 +6,6 @@ tags: []
 aliases:
   - stratification
   - stratifications
-type: term
 ---
 
 A stratification is a decomposition of a space or category into layers called [strata](./stratum.md), ordered by [refinement](./refinement.md) or dimension. Formally, a stratification of an object X assigns to each point or sub-object a stratum label from a partially ordered set, such that the strata are compatible with the object's structure.

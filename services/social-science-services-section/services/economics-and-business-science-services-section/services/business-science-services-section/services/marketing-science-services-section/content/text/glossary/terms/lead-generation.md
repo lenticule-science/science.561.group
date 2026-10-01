@@ -2,9 +2,9 @@
 name: "Lead Generation"
 date-created: 2026-03-29
 aliases:
-  - "lead generation"
   - "lead gen"
   - "leads"
+  - lead
 keywords:
   - Business
   - Marketing
@@ -17,9 +17,6 @@ description: "Lead generation is the process of attracting and capturing contact
 tags:
   - business
   - marketing
-defines:
-  - "Lead generation"
-  - "lead"
 ---
 
 Lead generation is the process of attracting and capturing contact information from potential customers — people who have indicated interest in a product, service, or topic but have not yet made a purchase. A "lead" is a person whose name, email address, or other contact information the business has obtained with their consent, enabling follow-up communication.

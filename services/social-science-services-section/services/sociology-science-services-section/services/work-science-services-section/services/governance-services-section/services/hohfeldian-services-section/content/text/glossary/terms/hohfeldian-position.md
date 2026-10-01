@@ -22,7 +22,6 @@ aliases:
 name: "Hohfeldian Position"
 ---
 
-# Hohfeldian Position
 
 ## What this is
 

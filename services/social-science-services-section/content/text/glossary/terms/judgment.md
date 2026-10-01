@@ -22,7 +22,6 @@ aliases:
 name: "Judgment"
 ---
 
-# Judgment
 
 ## Formal definition
 

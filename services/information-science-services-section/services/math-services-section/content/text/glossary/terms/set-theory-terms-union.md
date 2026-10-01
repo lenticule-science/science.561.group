@@ -4,7 +4,6 @@ aliases:
   - "union"
   - "unions"
 date-created: 2025-12-26
-type: term
 tags: []
 description: "The union of two sets A and B, written A ∪ B, is the set of elements belonging to A, to B, or to both: A ∪ B = {x : x ∈ A or x ∈ B}."
 ---

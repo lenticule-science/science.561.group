@@ -1,6 +1,5 @@
 ---
 type: "[[term]]"
-date: 2025-04-15
 
 signal:
   - "[[record accumulation]]"
@@ -14,6 +13,7 @@ method:
 aliases:
   - Related Records
   - Semantic yield farming
+date-created: 2025-04-15
 ---
 
 ***Semantic yield farming*** is the iterative casting of interpretive structures (signals, methods, fields) to generate reusable records (yields) which may reenter the casting system. It describes a practice in which the primary goal is not insight, but **generative accumulation**—building a reservoir of role-bearing records.

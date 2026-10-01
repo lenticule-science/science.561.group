@@ -21,7 +21,6 @@ aliases:
 name: "Role"
 ---
 
-# Role
 
 ## Formal definition
 

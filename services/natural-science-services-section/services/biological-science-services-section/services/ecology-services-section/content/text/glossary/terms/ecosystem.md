@@ -9,7 +9,6 @@ keywords:
   - Ecology
 date-updated: 2026-03-09
 part-of: biology/disciplines/ecology/terms
-type: term
 ---
 
 An ecosystem is a community of living [organisms](../../../../../../content/text/glossary/terms/organism.md) together with the nonliving components of their environment — water, soil, atmosphere, sunlight — interacting as a system. The term was coined by Arthur Tansley in 1935. Ecosystems can be as small as a tide pool or as large as the Amazon basin, but the concept is the same: organisms and their physical environment, connected by flows of energy and cycles of matter.

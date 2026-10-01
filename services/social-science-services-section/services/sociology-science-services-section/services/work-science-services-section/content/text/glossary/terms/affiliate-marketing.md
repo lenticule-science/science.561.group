@@ -6,9 +6,8 @@ domain: web-business
 restricts: Web Monetization
 uses: Conversion Rate, Revenue Per Mille, SEO, Content Strategy
 date-created: 2026-03-29
-defines: Affiliate Marketing
-related: Programmatic Advertising
 date-modified: 2026-03-29
+see-also: programmatic-advertising
 ---
 
 Affiliate marketing is a revenue model in which a website earns a commission for referring visitors to a merchant who then makes a purchase. The publisher embeds tracked links (affiliate links) in their content; when a reader clicks one and completes a qualifying action — usually a purchase, sometimes a sign-up or free trial — the merchant pays the publisher a percentage of the sale or a fixed fee.

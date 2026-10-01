@@ -1,6 +1,5 @@
 ---
 name: "Main sequence"
-type: term
 component-of: stellar-astronomy
 ---
 

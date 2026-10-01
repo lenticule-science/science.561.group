@@ -8,7 +8,6 @@ name: Equalization locus
 description: "For two operational endomaps $F,G : X \\to X$ on a common class $X$ of predication valuations or settlings, the equalization locus is"
 ---
 
-# Equalization locus
 
 For two operational endomaps $F,G : X \to X$ on a common class $X$ of predication valuations or settlings, the **equalization locus** is
 

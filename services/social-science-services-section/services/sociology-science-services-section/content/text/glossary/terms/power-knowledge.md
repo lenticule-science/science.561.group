@@ -6,34 +6,28 @@ date-created: 2026-01-01
 date-modified: 2026-03-29
 keywords:
   - critical-theory
-defines:
-  - "power/knowledge"
-  - "pouvoir/savoir"
 component-of: foucault
 produces: discourse
 enables: [biopower, governmentality]
 governs: subject
 contrasts-with: ideology
 references:
-  - id: foucault1975
-    type: document
+  foucault1975:
+    authors:
+      - Michel Foucault
     title: "Surveiller et punir: Naissance de la prison"
-    author:
-      - literal: Michel Foucault
-    container-title: Gallimard
-    issued:
-      - year: 1975
-  - id: foucault1980
-    type: document
+    year: 1975
+    publication: Gallimard
+  foucault1980:
+    authors:
+      - Michel Foucault
     title: "Power/Knowledge: Selected Interviews and Other Writings, 1972–1977"
-    author:
-      - literal: Michel Foucault
-    container-title: Pantheon Books
-    issued:
-      - year: 1980
-type: term
+    year: 1980
+    publication: Pantheon Books
 tags:
   - CriticalTheory
+aliases:
+  - pouvoir/savoir
 ---
 
 Power/knowledge (*pouvoir/savoir*) is the relationship in which power relations produce fields of knowledge, and knowledge in turn sustains and extends power. The two are not merely connected — they are mutually constitutive. There is no knowledge that is not produced within power relations, and no exercise of power that does not simultaneously produce knowledge. The common assumption that knowledge is neutral (scientists discover facts; politicians misuse them) and that knowledge liberates (the more we know, the freer we are) both fail to reckon with this entanglement.

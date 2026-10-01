@@ -21,7 +21,6 @@ aliases:
 name: "JurisdictionalInvocation"
 ---
 
-# JurisdictionalInvocation
 
 ## Formal definition
 

@@ -3,18 +3,14 @@
 name: "Compulsory Heterosexuality"
 date-created: 2026-03-06
 aliases:
-  - "compulsory heterosexuality"
   - "compulsory heterosexuality and lesbian existence"
 keywords:
   - gender-theory
   - feminism
 description: "The institution — not merely the practice — through which women's labor, sexuality, and relational life are organized for men's benefit."
-type: term
 tags:
   - GenderTheory
   - Feminism
-defines:
-  - "Compulsory Heterosexuality"
 ---
 
 **Compulsory heterosexuality** is a concept developed by [Adrienne Rich](../../../../../../../../../../../information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/adrienne-rich.md) in "Compulsory Heterosexuality and Lesbian Existence" (1980). Rich argued that heterosexuality is not a natural preference or orientation but a political institution — enforced through economic dependence, ideological pressure, erasure of alternatives, and violence — that organizes women's [labor](../../../../../../../../../terms/labor.md), sexuality, and relational life for men's benefit.

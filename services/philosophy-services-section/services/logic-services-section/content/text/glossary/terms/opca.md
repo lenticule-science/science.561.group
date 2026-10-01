@@ -14,7 +14,6 @@ name: oPCA — Ordered Partial Combinatory Algebra
 description: "An ordered partial combinatory algebra (oPCA) is a PCA $(A, \\cdot)$ equipped with a preorder $\\leq$ on $A$ such that application is monotone:"
 ---
 
-# oPCA — Ordered Partial Combinatory Algebra
 
 An **ordered partial combinatory algebra** (oPCA) is a PCA $(A, \cdot)$ equipped with a preorder $\leq$ on $A$ such that application is monotone:
 

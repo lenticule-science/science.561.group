@@ -8,7 +8,6 @@ name: Implication base
 description: An implication base of a formal context $\mathbb{K} = (G, M, I)$ is a set $\mathcal{B} \subseteq \mathcal{P}(M) \times \mathcal{P}(M)$ of attribute implications such that the deductive closure of $\mathcal{B}$ under the Armstrong rules…
 ---
 
-# Implication base
 
 An **implication base** of a formal context $\mathbb{K} = (G, M, I)$ is a set $\mathcal{B} \subseteq \mathcal{P}(M) \times \mathcal{P}(M)$ of attribute implications such that the deductive closure of $\mathcal{B}$ under the Armstrong rules (per [attribute-implication](../../documents/articles/research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/knowing/content/knowledge-science/systems/archive/teaching/explanations/attribute-implication.md)) equals $\mathrm{Imp}(\mathbb{K})$, the full set of implications holding in $\mathbb{K}$.
 

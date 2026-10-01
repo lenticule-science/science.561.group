@@ -2,15 +2,10 @@
 name: "Speed"
 date-created: 2026-03-06
 aliases:
-  - "speed"
   - "dromology"
   - "dromological"
 tags: []
 description: "The political analysis of velocity as a structure of domination — how the acceleration of production, circulation, communication, and warfare serves state and capital while foreclosing the temporal conditions for autonomy, deliberation, and non-hierarchical organization."
-type: term
-defines:
-  - "Speed"
-  - "dromology"
 ---
 
 Speed, as a political concept, names the recognition that velocity is not neutral — that the acceleration of production, circulation, communication, and governance serves specific structures of domination and forecloses specific forms of resistance. [Paul Virilio](../../documents/articles/notes/paul-virilio.md) formalized this analysis as *dromology* (from the Greek *dromos*, race): the study of speed as the hidden variable of political power. In *[Speed and Politics](../../documents/articles/notes/speed-and-politics.md)* (1977), Virilio argues that political power has always been dromological — the capacity to move faster than the enemy, whether through cavalry, railways, or telecommunications, is the foundational capacity of the [state](../../../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/notes/undated/the-state.md).

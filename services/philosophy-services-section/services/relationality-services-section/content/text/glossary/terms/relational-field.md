@@ -3,10 +3,8 @@ name: "Relational Field"
 description: "The totality of relational entities, their states, and the relations among them — the structure that emerges when acts of relating reach reflexive stability at every level. Not a container in which entities are placed but the structure that constitutes them."
 date-created: 2026-04-28
 aliases:
-  - relational field
-defines:
-  - relational field
-related:
+  []
+see-also:
   - relating
   - relational-entity
   - relational-state

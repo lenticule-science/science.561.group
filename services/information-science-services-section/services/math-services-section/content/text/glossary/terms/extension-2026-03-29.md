@@ -1,7 +1,6 @@
 ---
 name: "Extension"
 date-created: 2026-03-29
-type: term
 aliases:
   - "extension"
 restricts: morphism

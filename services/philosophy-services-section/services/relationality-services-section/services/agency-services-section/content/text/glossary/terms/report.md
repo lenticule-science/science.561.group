@@ -33,7 +33,6 @@ Table of contents
 
 - [Open questions](#open-questions)
 
-# Report
 
 ## Formal definition
 

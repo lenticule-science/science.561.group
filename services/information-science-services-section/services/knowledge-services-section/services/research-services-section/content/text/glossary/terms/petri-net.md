@@ -9,7 +9,6 @@ date-created: 2026-01-08
 keywords:
   - Modeling
   - FormalMethods
-type: term
 ---
 
 

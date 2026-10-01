@@ -8,7 +8,6 @@ keywords:
   - CombatSystems
   - Governance
 description: "A planning paradigm that divides a campaign or operation into phases to manage sequencing, resources, decision points, and transitions."
-type: term
 ---
 
 Phasing is the planning paradigm that divides a campaign or operation into phases to manage sequencing, resources, decision points, and transitions.

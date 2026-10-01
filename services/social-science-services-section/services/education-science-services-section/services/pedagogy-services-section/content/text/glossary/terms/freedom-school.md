@@ -2,10 +2,7 @@
 name: "freedom school"
 description: "A community-organized educational institution created outside the state school system to serve Black communities denied adequate education"
 aliases:
-  - "freedom school"
   - "freedom schools"
-  - "Freedom School"
-  - "Freedom Schools"
 date-created: 2026-03-06
 keywords:
   - BlackStudies
@@ -21,9 +18,6 @@ addresses:
 tags:
   - black-studies
   - decolonial
-defines:
-- freedom school
-- freedom schools
 ---
 
 A [freedom school](freedom-school.md) is a community-organized educational institution created outside the state school system to serve Black communities and other communities denied adequate education. The term originates with the Student Nonviolent Coordinating Committee (SNCC), which established freedom schools during the 1964 Mississippi Freedom Summer as part of the broader struggle for civil rights and Black self-determination [@payne_IveGotLightFreedom_2007].

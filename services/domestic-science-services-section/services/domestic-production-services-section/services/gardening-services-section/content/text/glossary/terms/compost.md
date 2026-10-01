@@ -6,7 +6,6 @@ aliases:
   - "composting"
 date-created: 2026-03-07
 tags: []
-type: term
 ---
 
 Decomposed organic material (plant scraps, leaves, food waste) used as

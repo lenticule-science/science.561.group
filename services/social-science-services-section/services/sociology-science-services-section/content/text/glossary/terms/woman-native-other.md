@@ -1,8 +1,10 @@
 ---
 id: de993a30-4f0b-42b8-be9a-43b8d08fe0fd
-roam-refs: "@minh-ha_woman_1989"
 name: Woman, Native, Other
 date-created: 2025-10-04
+provenance:
+  sources:
+    - "@minh-ha_woman_1989"
 ---
 
 # [resource code](../../../../../../../philosophy-services-section/content/text/glossary/terms/resource-code.md)

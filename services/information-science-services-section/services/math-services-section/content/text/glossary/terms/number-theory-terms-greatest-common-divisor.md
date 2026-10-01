@@ -5,7 +5,6 @@ aliases:
   - "GCD"
   - "gcd"
 date-created: 2026-03-05
-type: term
 tags: []
 description: The greatest common divisor of two integers $a$ and $b$, written $\gcd(a, b)$, is the largest positive integer that divides both $a$ and $b$.
 ---

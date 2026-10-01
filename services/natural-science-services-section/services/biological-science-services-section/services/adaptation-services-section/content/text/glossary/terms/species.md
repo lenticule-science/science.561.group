@@ -10,7 +10,6 @@ keywords:
   - Evolution
 date-updated: 2026-03-09
 part-of: biology/disciplines/evolutionary-biology/terms
-type: term
 ---
 
 A species is, roughly, a group of organisms that can interbreed and produce fertile offspring. This is the **biological species concept**, proposed by Ernst Mayr in 1942, and it works well for many sexually reproducing animals. It fails for asexual organisms (most prokaryotes), for organisms that hybridize freely (many plants, some animals), and for extinct organisms known only from fossils.

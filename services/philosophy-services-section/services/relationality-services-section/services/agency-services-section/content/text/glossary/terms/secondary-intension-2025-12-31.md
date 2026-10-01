@@ -3,7 +3,6 @@ name: "secondary intension"
 aliases:
   - "secondary intension"
 date-created: 2025-12-31
-type: term
 tags: []
 description: A secondary intension is the component of a term's meaning that fixes its referent based on how the actual world turns out to be — the metaphysical dimension of intension.
 ---

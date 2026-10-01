@@ -2,17 +2,12 @@
 name: "Federation"
 date-created: 2026-03-06
 aliases:
-  - "federation"
   - "federated"
   - federalism (anarchist)
 tags: []
 description: "The horizontal coordination of autonomous groups through delegates who carry specific, revocable mandates — anarchism's answer to 'how does self-organization work at large scales?'"
 part-of: sociology/schools/anarchism/topics/organization/terms
-defines:
-  - "Federation"
-  - "federalism (anarchist)"
 date-modified: 2026-03-09
-type: term
 date-updated: 2026-03-09
 ---
 

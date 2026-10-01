@@ -46,7 +46,6 @@ references:
     title: "Terrestrial water fluxes dominated by transpiration"
     publication: "Nature"
     year: 2013
-type: term
 ---
 
 

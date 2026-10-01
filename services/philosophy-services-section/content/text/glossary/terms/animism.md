@@ -4,7 +4,6 @@ description: "The recognition that other-than-human beings are persons — relat
 date-created: 2026-03-03
 date-modified: 2026-03-29
 aliases:
-  - "animism"
   - "new animism"
   - "relational animism"
 instance-of: relational-ontology
@@ -27,11 +26,6 @@ references:
     title: "'Animism' Revisited: Personhood, Environment, and Relational Epistemology"
     publication: "Current Anthropology"
     year: 1999
-type: term
-defines:
-  - "Animism"
-  - "new animism"
-  - "relational animism"
 ---
 
 Animism, in its contemporary philosophical and anthropological sense (sometimes called "new animism" to distinguish it from the colonial-era category), names the recognition that other-than-human beings — animals, plants, rivers, stones, winds — are persons: relational beings with their own perspectives, agencies, and social lives. This is not a belief that rocks have human minds inside them but a different understanding of what personhood is. In animist ontologies, personhood is not a property possessed by a special class of beings (humans) but a relational capacity that emerges through engagement, reciprocity, and attention.

@@ -7,7 +7,6 @@ keywords:
   - Saussure
 cites:
   - "Course in General Linguistics"
-type: term
 tags:
   - saussure
 references:

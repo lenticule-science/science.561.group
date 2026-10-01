@@ -9,8 +9,7 @@ aliases:
   - wiingashk
   - Ojibwe sacred medicine
   - fragrant holy grass
-related-to:
-  - "[Sweet grass cultivation](../../../../../../engineering/domains/domesticity/domains/production/gardening/terms/sweet-grass.md)"
+see-also: sweet-grass
 ---
 
 ## Taxonomy and Distribution

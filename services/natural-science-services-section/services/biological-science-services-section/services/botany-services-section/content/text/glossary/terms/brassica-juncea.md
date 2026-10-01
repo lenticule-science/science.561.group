@@ -8,8 +8,7 @@ aliases:
   - Indian mustard
   - brown mustard
   - leaf mustard
-related-to:
-  - "[Mustard greens cultivation](../../../../../../engineering/domains/domesticity/domains/production/gardening/terms/mustard-greens.md)"
+see-also: mustard-greens
 ---
 
 ## Taxonomy and Geographic Origin

@@ -18,7 +18,6 @@ references:
     publication: "Joint Publication 1-02 (as amended through 15 Feb 2016)"
 cites:
   - jointchiefs2016dictionary
-type: term
 ---
 
 A theater of operations is an operational area defined by the geographic combatant commander for the conduct or support of specific military operations [@jointchiefs2016dictionary].

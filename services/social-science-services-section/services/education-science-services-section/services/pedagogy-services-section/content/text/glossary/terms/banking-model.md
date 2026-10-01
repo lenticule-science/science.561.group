@@ -2,7 +2,6 @@
 name: "banking model"
 description: "Freire's characterization of conventional education as depositing fixed knowledge into passive recipients, mirroring structures of domination"
 aliases:
-  - "banking model"
   - "banking concept of education"
 date-created: 2026-03-01
 keywords:
@@ -23,9 +22,6 @@ references:
       - literal: Freire
     issued:
       - year: 1970
-defines:
-- banking model
-- banking concept of education
 ---
 
 The [banking model](banking-model.md) of education, as described by [Paulo Freire](../../../../../../general/people/paulo-freire.md) in *Pedagogy of the Oppressed* [@freire_PedagogyOppressed_1970], characterizes conventional teaching as a process of depositing information into passive recipients. The teacher possesses knowledge; the student receives it. The more faithfully the student stores and reproduces the deposit, the more successful the education.

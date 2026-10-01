@@ -2,7 +2,6 @@
 name: "Economies of Abandonment"
 description: "Povinelli's name for the mode of governance in which late liberalism manages populations through withdrawal of resources, infrastructure, and recognition — producing the evidence of unviability that retroactively justifies the withdrawal."
 date-created: 2026-03-05
-type: term
 keywords:
   - critical-theory
   - political-theory

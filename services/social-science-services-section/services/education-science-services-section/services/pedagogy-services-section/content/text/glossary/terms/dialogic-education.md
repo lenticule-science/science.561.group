@@ -2,7 +2,6 @@
 name: "dialogic education"
 description: "Freire's model of education in which teacher and student are co-investigators who examine the world together through dialogue"
 aliases:
-  - "dialogic education"
   - "problem-posing education"
 date-created: 2026-03-01
 keywords:
@@ -16,9 +15,6 @@ produces:
   - conscientization
 tags:
   - critical-theory
-defines:
-  - dialogic education
-  - problem-posing education
 references:
   - id: freire_PedagogyOppressed_1970
     type: document

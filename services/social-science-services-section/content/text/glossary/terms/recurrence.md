@@ -1,10 +1,8 @@
 ---
 name: "Recurrence"
 description: "The temporal pattern of events that return — what makes a review weekly, a season annual, an obligation generational — distinguished from mere repetition by the novelty each return carries."
-defines: recurrence
 date-created: 2026-04-04
 aliases:
-  - "recurrence"
   - "recurring"
 instance-of: quality
 applies-to: [cadence, tradition, governance, review]
@@ -13,30 +11,24 @@ enables: [cadence, tradition, governance, review]
 contrasts-with: [repetition, cyclicity]
 requires: [time]
 references:
-  - id: prigogine1997
-    type: document
+  prigogine1997:
+    authors:
+      - Ilya Prigogine
     title: "The End of Certainty: Time, Chaos, and the New Laws of Nature"
-    author:
-      - literal: Ilya Prigogine
-    container-title: Free Press
-    issued:
-      - year: 1997
-  - id: eliade1954
-    type: document
+    year: 1997
+    publication: Free Press
+  eliade1954:
+    authors:
+      - Mircea Eliade
     title: The Myth of the Eternal Return
-    author:
-      - literal: Mircea Eliade
-    container-title: Princeton University Press
-    issued:
-      - year: 1954
-  - id: gadamer1960
-    type: document
+    year: 1954
+    publication: Princeton University Press
+  gadamer1960:
+    authors:
+      - H.-G. Gadamer
     title: Truth and Method
-    author:
-      - literal: H.-G. Gadamer
-    container-title: Continuum
-    issued:
-      - year: 1960
+    year: 1960
+    publication: Continuum
 ---
 
 Recurrence is the temporal pattern of events that return.

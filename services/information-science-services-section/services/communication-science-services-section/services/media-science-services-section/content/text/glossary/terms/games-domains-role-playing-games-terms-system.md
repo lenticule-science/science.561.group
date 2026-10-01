@@ -1,6 +1,5 @@
 ---
 name: "system"
-type: "term"
 date-created: 2026-01-01
 ---
 

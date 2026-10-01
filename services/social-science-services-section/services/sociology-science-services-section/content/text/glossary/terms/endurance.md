@@ -9,17 +9,12 @@ component-of: povinelli
 addresses: economies-of-abandonment
 contrasts-with: [resistance, resilience]
 references:
-  - id: povinelli2011
-    type: document
+  povinelli2011:
+    authors:
+      - Elizabeth A. Povinelli
     title: "Economies of Abandonment: Social Belonging and Endurance in Late Liberalism"
-    author:
-      - literal: Elizabeth A. Povinelli
-    container-title: Duke University Press
-    issued:
-      - year: 2011
-type: term
-defines:
-  - endurance
+    year: 2011
+    publication: Duke University Press
 tags:
   - CriticalTheory
 ---

@@ -18,7 +18,6 @@ aliases:
 name: Room
 ---
 
-# Room
 
 ## Formal definition
 

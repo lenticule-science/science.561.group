@@ -2,17 +2,14 @@
 name: "Desire"
 date-created: 2026-03-06
 aliases:
-  - "Desire"
-  - "desire"
+  - desire (Lacanian)
 keywords:
   - anarchism
   - psychoanalysis
 description: "In Lacanian psychoanalysis, the mode of wanting organized around lack — desire targets a future object, is sustained by its own non-fulfillment, and is vulnerable to collapse when the object proves unattainable. Anarcho-nihilism distinguishes desire from drive to explain why hope-based resistance fails."
-type: term
 tags:
   - Anarchism
   - Psychoanalysis
-defines: "desire (Lacanian)"
 ---
 
 Desire is the mode of wanting organized around what you do not have. You desire what is absent — the revolution that has not yet come, the justice that does not yet exist, the freedom you have not yet achieved. Desire is structured by lack: it targets an object, pursues it, and is sustained by the gap between the wanting and the having. If the object were obtained, desire would not be satisfied — it would relocate to a new object, because desire is not really about the object at all. It is about the movement toward what is missing.

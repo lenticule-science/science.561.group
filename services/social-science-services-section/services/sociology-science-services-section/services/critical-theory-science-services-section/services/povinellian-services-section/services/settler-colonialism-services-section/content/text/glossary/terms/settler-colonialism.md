@@ -2,7 +2,6 @@
 name: "Settler Colonialism"
 date-created: 2026-03-02
 aliases:
-  - "settler colonialism"
   - "settler-colonial"
   - "settler colonial"
   - settler-colonialism
@@ -11,13 +10,8 @@ keywords:
 description: "An ongoing structure of domination organized around the replacement of Indigenous peoples with a settler society on Indigenous land."
 date-modified: 2026-03-09
 part-of: sociology/topics/settler-colonialism/terms
-type: term
 tags:
   - SettlerColonialism
-defines:
-  - "Settler Colonialism"
-  - "settler-colonial"
-  - "settler colonial"
 date-updated: 2026-03-09
 ---
 

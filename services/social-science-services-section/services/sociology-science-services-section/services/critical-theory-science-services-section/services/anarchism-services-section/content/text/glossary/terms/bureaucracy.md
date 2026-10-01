@@ -1,56 +1,51 @@
 ---
 description: "An administrative form characterized by jurisdictional fixity, office hierarchy, written documentation, expert training, full-time vocation, general impersonal rules, and the separation of office from officeholder. The characteristic carrier of rational-legal authority and, on Weber's argument, the technically superior administrative apparatus of modernity."
-defines: bureaucracy
-related: [authority, office, officium, normative-system, charter, polity, iron-cage]
 contrasts-with: [patrimonial-administration, charismatic-following, household-administration]
 date-created: 2026-05-03
 references:
-  - id: weber1922
-    type: document
+  weber1922:
+    authors:
+      - Max Weber
     title: Wirtschaft und Gesellschaft
-    author:
-      - literal: Max Weber
-    container-title: J.C.B. Mohr (Paul Siebeck), Tübingen
-    issued:
-      - year: 1922
-  - id: weber1968
-    type: document
+    year: 1922
+    publication: J.C.B. Mohr (Paul Siebeck), Tübingen
+  weber1968:
+    authors:
+      - Max Weber
     title: Economy and Society
-    author:
-      - literal: Max Weber
-    container-title: Bedminster Press, eds. Roth & Wittich
-    issued:
-      - year: 1968
-  - id: bendix1960
-    type: document
+    year: 1968
+    publication: Bedminster Press, eds. Roth & Wittich
+  bendix1960:
+    authors:
+      - Reinhard Bendix
     title: "Max Weber: An Intellectual Portrait"
-    author:
-      - literal: Reinhard Bendix
-    container-title: Doubleday
-    issued:
-      - year: 1960
-  - id: du-gay-2000
-    type: document
+    year: 1960
+    publication: Doubleday
+  du-gay-2000:
+    authors:
+      - Paul du Gay
     title: "In Praise of Bureaucracy: Weber, Organization, Ethics"
-    author:
-      - literal: Paul du Gay
-    container-title: SAGE
-    issued:
-      - year: 2000
-  - id: meyer-rowan-1977
-    type: document
+    year: 2000
+    publication: SAGE
+  meyer-rowan-1977:
+    authors:
+      - John W. Meyer
+      - Brian Rowan
     title: "Institutionalized Organizations: Formal Structure as Myth and Ceremony"
-    author:
-      - literal: John W. Meyer
-      - literal: Brian Rowan
-    container-title: American Journal of Sociology, 83(2)
-    issued:
-      - year: 1977
+    year: 1977
+    publication: American Journal of Sociology, 83(2)
 aliases:
-  - bureaucracy
   - bureaucratic
 tags: []
 name: "Bureaucracy"
+see-also:
+  - authority
+  - office
+  - officium
+  - normative-system
+  - charter
+  - polity
+  - iron-cage
 ---
 
 A **bureaucracy**, in Max Weber's sense, is an administrative form whose ideal-type combines a small number of structural features that together distinguish it from the patrimonial, charismatic, and household-based administrative forms it historically displaces.

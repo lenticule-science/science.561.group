@@ -9,7 +9,6 @@ description: Liberalism is the political-economic formation premised on the self
 derives-from: possessive-individual
 ---
 
-# Liberalism
 
 Liberalism is the political-economic formation premised on the self-owning individual, formal equality before the law, private property, and the market — the order that takes the free, separate, rights-bearing person as both its starting point and its end.
 It is at once a political philosophy, an economic order, and a way of picturing what a human being fundamentally is.

@@ -4,7 +4,6 @@ description: "A movement in anthropology, philosophy, and science studies that t
 date-created: 2026-03-03
 date-modified: 2026-03-29
 aliases:
-  - "ontological turn"
   - "the ontological turn"
 contains: [perspectivism, multinaturalism, animism]
 contrasts-with: [multiculturalism, naturalism]
@@ -20,10 +19,6 @@ references:
     title: "The Ontological Turn: An Anthropological Exposition"
     publication: "Cambridge University Press"
     year: 2017
-type: term
-defines:
-  - "Ontological Turn"
-  - "the ontological turn"
 ---
 
 The ontological turn is a movement in anthropology, philosophy, and science studies that emerged in the early 2000s, challenging the assumption that there is one nature and many cultures (multiculturalism) by proposing instead that different peoples may constitute and inhabit genuinely different worlds. Where earlier anthropology treated non-Western ontologies as beliefs, representations, or symbolic systems overlaid on a shared material reality, the ontological turn takes them as descriptions of how things actually are — not metaphors to be decoded but realities to be engaged.

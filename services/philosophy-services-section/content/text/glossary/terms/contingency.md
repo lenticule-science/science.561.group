@@ -6,9 +6,8 @@ date-modified: 2026-03-29
 component-of: metaphysics
 contrasts-with: necessity
 inverse-of: ontologization
-defines:
-  - "contingency"
-  - "contingent"
+aliases:
+  - contingent
 ---
 
 Contingency is the condition of existing without necessity — something is contingent when it exists but could have been otherwise. A contingent thing depends on conditions that could have been different. It is not random — a contingent arrangement has specific, traceable causes — but those causes were not inevitable, and different causes would have produced a different arrangement.

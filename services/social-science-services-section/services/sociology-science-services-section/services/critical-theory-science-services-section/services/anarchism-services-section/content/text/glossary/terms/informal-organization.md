@@ -2,13 +2,9 @@
 name: "Informal Organization"
 date-created: 2026-03-06
 aliases:
-  - "informal organization"
   - "informality"
 tags: []
 description: "The insurrectionary anarchist principle that revolutionary organization should be temporary, task-specific, and non-bureaucratic — forming around action rather than accumulating structure."
-type: term
-defines:
-  - "Informal Organization"
 ---
 
 Informal organization is the [insurrectionary anarchist](insurrectionary-anarchism.md) principle that revolutionary organization should be temporary, task-specific, and non-bureaucratic: groups form around specific actions, accomplish or abandon them, and dissolve rather than persisting as permanent structures. [Alfredo Bonanno](../../../../../../../../../../../../references/people/alfredo-bonanno.md) is the primary theorist of this position.

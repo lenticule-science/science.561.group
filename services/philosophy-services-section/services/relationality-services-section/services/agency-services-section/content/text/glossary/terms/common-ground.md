@@ -15,7 +15,6 @@ name: Common ground
 description: The common ground of a conversation is the accumulating set of propositions, presuppositions, and mutual beliefs that the participants take to be shared, and take each other to take to be shared, and so on.
 ---
 
-# Common ground
 
 The **common ground** of a conversation is the accumulating set of propositions, presuppositions, and mutual beliefs that the participants take to be shared, and take each other to take to be shared, and so on. The model is due to Robert Stalnaker (1978, "Assertion") in its semantic form and elaborated by Herbert Clark (1996, *Using Language*) into the canonical pragmatic-substrate model used across discourse pragmatics today.
 

@@ -1,6 +1,5 @@
 ---
 name: "Laminar and Turbulent Flow"
-type: "term"
 date-created: 2026-03-07
 ---
 

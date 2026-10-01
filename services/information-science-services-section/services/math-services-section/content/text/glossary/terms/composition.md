@@ -11,7 +11,6 @@ requires: [morphism, object]
 acts-on: morphism
 produces: morphism
 governed-by: [associativity, identity-morphism]
-type: term
 ---
 
 Composition is the operation that combines two consecutive [morphisms](./morphism.md) into one. If f goes from A to B and g goes from B to C, their composite g ∘ f goes from A to C. You do f first, then g. The notation reads right to left: g ∘ f means "g after f."

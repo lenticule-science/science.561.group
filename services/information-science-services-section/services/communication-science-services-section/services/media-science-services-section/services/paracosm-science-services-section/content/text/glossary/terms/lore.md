@@ -9,7 +9,6 @@ tags: []
 date-modified: 2026-03-09
 part-of: media/topics/worldbuilding/terms
 date-updated: 2026-03-09
-type: term
 keywords:
   - canon
   - continuity

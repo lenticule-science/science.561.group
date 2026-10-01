@@ -21,7 +21,6 @@ aliases:
 name: "JurisdictionalDeclination"
 ---
 
-# JurisdictionalDeclination
 
 ## Formal definition
 

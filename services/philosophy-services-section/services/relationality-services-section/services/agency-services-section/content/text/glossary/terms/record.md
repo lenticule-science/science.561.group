@@ -21,7 +21,6 @@ Table of contents
 
 - [Open questions](#open-questions)
 
-# Record
 
 ## Formal definition
 

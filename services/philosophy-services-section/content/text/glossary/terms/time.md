@@ -15,7 +15,6 @@ references:
   ref5:
     title: "Prigogine"
 date-created: 2026-04-03
-defines: time
 ---
 
 Time is the dimension in which [change](./change.md) occurs and [events](./event.md) are ordered — what makes "before" and "after" meaningful. Without time, there is no change, no events, no history. A thing could have no past and no future. It could only be what it is right now, forever. Augustine captured this in *Confessions* XI: "What then is time? If no one asks me, I know; if I want to explain it, I do not know."

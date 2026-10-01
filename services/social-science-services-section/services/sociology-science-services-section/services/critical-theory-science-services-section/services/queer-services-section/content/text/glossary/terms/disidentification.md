@@ -3,18 +3,14 @@
 name: "Disidentification"
 date-created: 2026-03-06
 aliases:
-  - "disidentification"
   - "disidentifications"
 keywords:
   - gender-theory
   - black-radical-tradition
 description: "A mode of navigating dominant ideology by working on and against it simultaneously — neither assimilating nor rejecting but transforming from within."
-type: term
 tags:
   - GenderTheory
   - BlackRadicalTradition
-defines:
-  - "Disidentification"
 ---
 
 **Disidentification** is a concept developed by [José Esteban Muñoz](../../../../../../../../../../../information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/jose-esteban-munoz.md) in *Disidentifications: Queers of Color and the Performance of Politics* (1999). It names a third mode of engaging with dominant [ideology](../../../../../../../../content/text/glossary/terms/ideology.md), beyond identification (assimilation into the norm) and counter-identification (blanket rejection of the norm). Disidentification works on and against dominant codes simultaneously — recycling, reworking, and repurposing encoded meaning rather than accepting or refusing it wholesale.

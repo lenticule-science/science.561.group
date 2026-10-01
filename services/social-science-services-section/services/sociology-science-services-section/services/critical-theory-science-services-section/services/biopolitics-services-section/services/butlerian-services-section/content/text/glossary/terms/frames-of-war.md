@@ -12,7 +12,6 @@ references:
     title: "Frames of War: When Is Life Grievable?"
     publication: "Verso"
     year: 2009
-type: term
 ---
 
 Frames of war, as Butler develops the concept in *Frames of War: When Is Life Grievable?* (2009), names the visual, discursive, and institutional frames through which war is presented to publics — and through which the lives destroyed in war are rendered either grievable or invisible. The frame is not a neutral window onto events. It is a structure that determines what appears within it and what is excluded, what registers as a life and what does not, what counts as violence and what counts as security.

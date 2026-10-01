@@ -8,7 +8,6 @@ name: Rename
 description: A refactor that permutes identifiers in the codebase cell-system without changing any other cell.
 ---
 
-# Rename
 
 A refactor that permutes identifiers in the [codebase cell-system](codebase-cell-system.md) without changing any other cell. Formally, an entity-permutation $\pi_E \in \mathrm{Sym}(E_{\mathrm{code}})$ that is the identity on every entity that is not an identifier-class entity, restricted to identifier classes whose action on the settling-associated sheaf is trivial.
 

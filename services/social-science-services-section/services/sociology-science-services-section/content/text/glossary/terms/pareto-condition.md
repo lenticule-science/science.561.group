@@ -3,19 +3,12 @@ name: "Pareto Condition"
 description: "The Pareto condition (or Pareto optimality) is a criterion from welfare economics: a state of affairs is Pareto optimal if no one can be made better off without making someone else worse off. A change is a Pareto improvement if it benefits at least one person while harming no one."
 date-created: 2026-03-02
 aliases:
-  - "Pareto condition"
   - "Pareto optimality"
   - "Pareto efficiency"
   - "Pareto optimal"
 tags: []
 date-modified: 2026-03-09
 part-of: sociology/topics/political-economy/terms
-type: term
-defines:
-  - "Pareto Condition"
-  - "Pareto optimality"
-  - "Pareto efficiency"
-  - "Pareto optimal"
 date-updated: 2026-03-09
 ---
 

@@ -2,15 +2,12 @@
 name: "Expropriation"
 date-created: 2026-03-06
 aliases:
-  - "Expropriation"
-  - "expropriation"
+  []
 keywords:
   - anarchism
 description: "The collective reclamation of wealth, land, and means of production from private owners, understood not as theft but as the recovery of collectively produced resources that were stolen through enclosure, colonialism, and wage labor."
-type: term
 tags:
   - Anarchism
-defines: "expropriation"
 ---
 
 Expropriation is the collective reclamation of the means of production — land, factories, housing, tools, infrastructure — from those who hold them as private [property](property.md). Anarchism holds that this is not theft but recovery: everything that exists was produced through collective [labor](../../../../../../../../content/text/glossary/terms/labor.md) accumulated over generations, and private ownership of collectively produced wealth is itself the original theft. As Proudhon argued: "[property](property.md) is theft." Expropriation is the reversal.

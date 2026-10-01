@@ -3,7 +3,7 @@ name: Observing
 aliases:
   - observe
   - observed
-dg-publish: true
+visibility: public
 ---
 
 

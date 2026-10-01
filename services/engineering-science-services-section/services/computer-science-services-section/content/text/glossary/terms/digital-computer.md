@@ -11,7 +11,7 @@ aliases:
 date-created: 2026-02-28
 tags: []
 dg-permalink: enc/def/digital-computer
-dg-publish: true
+visibility: public
 ---
 A **digital computer** is a machine that operates on discrete (digital) representations of [information](../../../information/index.md). It accepts input, processes it according to stored instructions, and produces output — all by manipulating sequences of binary digits. This definition covers everything from a pocket calculator to a supercomputer cluster, but the machines most relevant here are general-purpose programmable computers: devices whose behavior is determined by software rather than fixed circuitry.
 

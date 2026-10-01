@@ -1,11 +1,9 @@
 ---
 name: "Shift"
 description: "A bounded work period assigned to a role-holder — the basic unit of organizational time allocation that turns scheduling into concrete human commitment."
-defines: shift
 date-created: 2026-04-04
 instance-of: interval
 aliases:
-  - "shift"
   - "work shift"
 applies-to: [roster, coverage, operations, dispatch]
 part-of-stage: execution
@@ -13,31 +11,25 @@ enables: [roster, handoff, coverage]
 contrasts-with: [task, project]
 requires: [interval, role, agent]
 references:
-  - id: folkard-tucker2003
-    type: document
+  folkard-tucker2003:
+    authors:
+      - Simon Folkard
+      - Philip Tucker
     title: Shift Work, Safety, and Productivity
-    author:
-      - literal: Simon Folkard
-      - literal: Philip Tucker
-    container-title: Occupational Medicine
-    issued:
-      - year: 2003
-  - id: mintzberg1979
-    type: document
+    year: 2003
+    publication: Occupational Medicine
+  mintzberg1979:
+    authors:
+      - Henry Mintzberg
     title: The Structuring of Organizations
-    author:
-      - literal: Henry Mintzberg
-    container-title: Prentice-Hall
-    issued:
-      - year: 1979
-  - id: ida2020
-    type: document
+    year: 1979
+    publication: Prentice-Hall
+  ida2020:
+    authors:
+      - International Labour Organization
     title: "Working Time Arrangements: Workplace Implications and Policy Considerations"
-    author:
-      - literal: International Labour Organization
-    container-title: ILO Publications
-    issued:
-      - year: 2020
+    year: 2020
+    publication: ILO Publications
 ---
 
 A shift is an [interval](interval.md) of time during which a specific person or role is assigned to cover a specific duty or function.

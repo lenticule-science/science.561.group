@@ -3,7 +3,6 @@ name: "Crisis Ordinariness"
 description: "Berlant's name for the condition in which crisis persists as the ordinary texture of life rather than arriving as rupture."
 date-created: 2026-03-03
 aliases:
-  - "crisis ordinariness"
   - "ordinary crisis"
 tags: []
 requires: cruel-optimism
@@ -12,9 +11,6 @@ produces: impasse
 delivered-via: [habituation, attrition]
 part-of:
   - late-liberalism
-defines:
-  - "Crisis Ordinariness"
-  - "ordinary crisis"
 ---
 
 Crisis ordinariness, as theorized by [Lauren Berlant](../../general/people/lauren-berlant.md) in *Cruel Optimism* (2011), names the condition in which crisis does not arrive as a rupture but persists as the ordinary texture of life. [Berlant](../../general/people/lauren-berlant.md) argues that what is commonly called "crisis" — economic [precarity](../../../../services/relationality-services-section/services/agency-services-section/content/text/documents/articles/notes/undated/precarity.md), health deterioration, environmental degradation — is often not an interruption of normal functioning but its ongoing operation. The language of crisis implies a before and after, a stable state disrupted and eventually restored. Crisis ordinariness refuses that framing: the instability is the condition, not the exception.

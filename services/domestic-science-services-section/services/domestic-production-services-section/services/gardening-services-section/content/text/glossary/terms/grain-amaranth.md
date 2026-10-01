@@ -3,8 +3,7 @@ name: Grain Amaranth
 description: Annual cultivar of Amaranthus cruentus, 75-150 days to grain maturity depending on cultivar. Pendant or erect tassels of dense flowers. Gluten-free pseudocereal grain with 16-17% protein and superior amino acid balance (high lysine). Also produces edible leaves. Deep-red flower bracts yield natural dye. Golden Giant (most productive, 90-110 days); Aurelia's Verde (rapid, 75-90 days); traditional Hopi Red (120-150 days, deep dye color).
 date-created: 2026-04-02
 aliases: [amaranth, Hopi red, Amaranthus cruentus grain]
-related-to:
-  - "[Amaranthus cruentus](../../../../../../../../science/theories/biology/theories/botany/terms/amaranthus-cruentus.md)"
+see-also: amaranthus-cruentus
 ---
 
 Grain amaranth cultivation grows [Amaranthus cruentus](../../../../../../../../../natural-science-services-section/services/biological-science-services-section/content/text/documents/articles/notes/2026/04/02/2026-04-02-amaranthus-cruentus.md) as a gluten-free pseudocereal with exceptional nutritional profile, ornamental pendant tassels, and secondary uses for natural dye and edible leaves. The crop is exceptionally productive in marginal soils and drought conditions.

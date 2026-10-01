@@ -3,17 +3,12 @@
 name: "Gender Binary"
 date-created: 2026-03-06
 aliases:
-  - "gender binary"
   - "sex/gender distinction"
 keywords:
   - gender-theory
 description: "The classificatory system that divides human beings into two mutually exclusive categories — male/female, man/woman — and treats this division as natural, exhaustive, and foundational to social organization."
-type: term
 tags:
   - GenderTheory
-defines:
-  - "Gender Binary"
-  - "sex/gender distinction"
 ---
 
 The **gender binary** is the classificatory system that divides human beings into two mutually exclusive categories — male and female, man and woman — and treats this division as natural, exhaustive, and foundational to social organization. It operates at multiple levels simultaneously: as a biological claim (there are two sexes), a psychological claim (there are two genders corresponding to two sexes), a social claim (persons must be legible as one or the other), and a normative claim (this division is natural and deviation from it is pathological).

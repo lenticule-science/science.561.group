@@ -1,16 +1,9 @@
 ---
 name: "Pramāṇa"
 description: "A source or method of knowledge that produces justified, reliable cognition — the framework within which Indian formal logic operates, embedding inference within epistemology from the start."
-date-created: 2026-03-05T00:00:00
+date-created: 2026-03-05
 date-modified: 2026-03-29
-type: term
 aliases:
-  - "pramāṇa"
-  - "pramana"
-  - "valid cognition"
-  - "means of knowledge"
-defines:
-  - "Pramāṇa"
   - "pramana"
   - "valid cognition"
   - "means of knowledge"

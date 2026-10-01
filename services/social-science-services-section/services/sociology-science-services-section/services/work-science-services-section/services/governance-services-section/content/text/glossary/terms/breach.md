@@ -21,7 +21,6 @@ name: "Breach"
 where: - $D$ is the **duty** (or commitment) — the normative requirement whose satisfaction is being assessed; $D$ specifies the act-class $\varphi$ that must be performed and the deadline $t^*$ by which it must be produced - $t^* \in T$ is the **deadline** — the assessment history; breach is evaluated at $t^*$, not before - $p$ is the **performance** — the act produced by the duty-bearer in attempted satisfaction of $D$; $p$ may be an actual performance act, or $\varnothing$ if no performance was attempted
 ---
 
-# Breach
 
 ## Formal definition
 

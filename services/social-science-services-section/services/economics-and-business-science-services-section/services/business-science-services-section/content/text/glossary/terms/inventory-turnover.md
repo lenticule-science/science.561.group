@@ -11,7 +11,6 @@ date-updated: 2026-03-09
 part-of: business/disciplines/operations/terms
 measures: inventory
 determines: cash-conversion-cycle
-type: term
 ---
 
 Inventory turnover measures how quickly [inventory](./inventory.md) moves through the business:

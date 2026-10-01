@@ -6,10 +6,9 @@ aliases:
   - "Plugin"
   - "plugin"
   - "Beancount plugin"
-date-created: 2026-03-06T00:00:00
+date-created: 2026-03-06
 keywords:
   - accounting
-type: term
 ---
 
 A plugin is a Python module that transforms the stream of directives after Beancount parses the input file.

@@ -14,7 +14,6 @@ keywords:
   - Peirce
   - Phenomenology
 description: "Peirce's three universal categories — Firstness, Secondness, Thirdness — the irreducible modes of being that structure his entire philosophical system, from sign classification to logic to metaphysics."
-type: term
 ---
 
 [Charles Sanders Peirce](../../../../../../../../../knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/charles-sanders-peirce.md) proposed three universal categories that he claimed exhaustively classify the modes in which anything can be present to the mind. He called them Firstness, Secondness, and Thirdness — or sometimes the cenopythagorean categories. They are not categories of things but of ways of being: any phenomenon, when analyzed, exhibits one or more of these modes.

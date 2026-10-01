@@ -1,11 +1,9 @@
 ---
 name: "Resource Cataloging"
-date-created: 2026-03-08T00:00:00
+date-created: 2026-03-08
 authors:
   - claude
-type: term
 aliases:
-  - "resource cataloging"
   - "resource cataloguing"
   - "cataloging"
   - "cataloguing"
@@ -15,33 +13,24 @@ keywords:
   - Documentation
   - MutualAid
 description: "The practice of recording what resources are available, where they are, what condition they are in, and how they can be matched to need."
-defines:
-  - "resource cataloging"
-  - "resource cataloguing"
-  - "cataloging"
-  - "cataloguing"
 cites:
   - nelan2016
   - relieftoolkit2022
 references:
-  - id: nelan2016
-    type: document
+  nelan2016:
+    authors:
+      - Mary Nelan
     title: "The social construction of donations: agility, adaptability, and alignment as success determinants in relief supply chains"
-    author:
-      - literal: Mary Nelan
-    container-title: University of Delaware
-    issued:
-      - year: 2016
-    URL: https://udspace.udel.edu/items/c3949776-d424-48c2-a370-7f1ea6b43b01
-  - id: relieftoolkit2022
-    type: document
+    year: 2016
+    publication: University of Delaware
+    url: https://udspace.udel.edu/items/c3949776-d424-48c2-a370-7f1ea6b43b01
+  relieftoolkit2022:
+    authors:
+      - Mutual Aid Disaster Relief
     title: Introducing the Relief Toolkit, a platform for connecting across disasters
-    author:
-      - literal: Mutual Aid Disaster Relief
-    container-title: Mutual Aid Disaster Relief
-    issued:
-      - year: 2022
-    URL: https://mutualaiddisasterrelief.org/introducing-the-relief-toolkit/
+    year: 2022
+    publication: Mutual Aid Disaster Relief
+    url: https://mutualaiddisasterrelief.org/introducing-the-relief-toolkit/
 tags:
   - disaster-studies
   - logistics

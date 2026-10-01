@@ -10,7 +10,6 @@ keywords:
   - Mycology
   - Ecology
   - Decomposition
-type: term
 ---
 
 A saprotroph is an organism that obtains nutrients by decomposing dead organic matter. Fungi are the dominant saprotrophs in terrestrial ecosystems — they are the only organisms that can break down [lignin](./lignin.md), the structural polymer that gives wood its rigidity. Without saprotrophic fungi, dead wood, leaf litter, and other plant matter would accumulate indefinitely, locking carbon and nutrients out of biological circulation. This is not hypothetical: before fungi evolved the enzymatic capacity to decompose lignin — roughly 300 million years ago, at the end of the Carboniferous period — dead trees accumulated in vast quantities, eventually forming the coal deposits we mine today.

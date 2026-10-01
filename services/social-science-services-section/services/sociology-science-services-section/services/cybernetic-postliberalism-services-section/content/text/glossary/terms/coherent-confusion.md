@@ -7,8 +7,6 @@ keywords:
   - CyberneticPostliberalism
   - Governance
 description: "A governance condition in which ambiguity is not a failure of communication but a method of social control — subjects remain confused but functional, providing the interpretive labor that sustains the system."
-type: term
-date: 2025-04-15
 signal: true
 signals:
   - "[[old-notes/Groundhog Autonomous Zone/tri/Governing by Confusion]]"

@@ -1,6 +1,5 @@
 ---
 type: "[[field condition]]"
-date: 2025-04-12
 voice: structured reference record
 delta:
   - "[[representational governance]]"
@@ -32,6 +31,7 @@ keywords:
   - cybernetic-postliberalism
   - cybernetics
   - governance
+date-created: 2025-04-12
 ---
 
 ## Definition

@@ -1,7 +1,7 @@
 ---
 name: Essay
 type: definition
-dg-publish: true
+visibility: public
 ---
 
 

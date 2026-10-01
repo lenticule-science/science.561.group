@@ -5,7 +5,6 @@ aliases:
   - "seed"
 date-created: 2026-03-07
 tags: []
-type: term
 ---
 
 A dormant plant embryo enclosed in a protective coat, along with a

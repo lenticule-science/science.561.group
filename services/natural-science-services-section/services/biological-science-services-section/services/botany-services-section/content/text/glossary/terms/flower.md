@@ -8,7 +8,6 @@ keywords:
   - Botany
   - Reproduction
   - Coevolution
-type: term
 ---
 
 Flower: the reproductive structure of angiosperms (flowering plants). A typical flower is organized in four concentric whorls: sepals, which protect the developing bud; petals, which attract pollinators through color, shape, and scent; stamens, the male organs producing pollen; and carpels, the female organs containing ovules. Not all flowers follow this pattern — some lack petals, some bear only male or only female parts, and some are reduced to near invisibility in wind-pollinated species like grasses. But the basic architecture of the flower, however modified, serves a single function: bringing pollen and ovule together for fertilization.

@@ -1,7 +1,6 @@
 ---
 name: "Bookkeeping"
-date-created: 2026-03-06T00:00:00
-type: term
+date-created: 2026-03-06
 aliases:
   - "Bookkeeping"
   - "bookkeeping"

@@ -2,39 +2,29 @@
 name: "Accentual-Syllabic Verse"
 date-created: 2026-04-30
 aliases:
-  - "accentual-syllabic verse"
   - "accentual-syllabic meter"
   - "syllable-stress verse"
 tags: []
-defines:
-  - "accentual-syllabic verse"
-  - "accentual-syllabic meter"
 contrasts-with: [accentual-verse, syllabic-verse, quantitative-verse, free-verse]
 references:
-  - id: attridge1995
-    type: document
+  attridge1995:
+    authors:
+      - D. Attridge
     title: "Poetic Rhythm: An Introduction"
-    author:
-      - literal: D. Attridge
-    container-title: Cambridge University Press
-    issued:
-      - year: 1995
-  - id: fussell1979
-    type: document
+    year: 1995
+    publication: Cambridge University Press
+  fussell1979:
+    authors:
+      - P. Fussell
     title: Poetic Meter and Poetic Form
-    author:
-      - literal: P. Fussell
-    container-title: McGraw-Hill
-    issued:
-      - year: 1979
-  - id: steele1990
-    type: document
+    year: 1979
+    publication: McGraw-Hill
+  steele1990:
+    authors:
+      - T. Steele
     title: "Missing Measures: Modern Poetry and the Revolt Against Meter"
-    author:
-      - literal: T. Steele
-    container-title: University of Arkansas Press
-    issued:
-      - year: 1990
+    year: 1990
+    publication: University of Arkansas Press
 ---
 
 Accentual-syllabic verse is the metrical system that counts both the number of syllables in a line and the placement of stresses among them.

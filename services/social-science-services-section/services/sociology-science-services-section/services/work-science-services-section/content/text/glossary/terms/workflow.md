@@ -1,6 +1,6 @@
 ---
 description: "A directed graph of tasks — edges represent dependencies or information flow, the graph structure is the plan."
-aliases: [workflows]
+aliases: [ workflows, Workflow ]
 composed-of: task
 structure: directed-graph
 edges: dependency, information-flow
@@ -24,8 +24,7 @@ ast:
     - soundness-condition:
         - routing-logic
         - data-flow
-defines: Workflow
-related: Plan, Procedure, Process, Orchestration, PetriNet, BPELProcess
+see-also: plan-procedure-process-orchestration-petrinet-bpelprocess
 ---
 
 A workflow is a composition of [work](./work.md) units with one algebraic constraint: the initial input type equals the final output type. The workflow takes something of type X and produces something of type X, regardless of what happens internally. The internal structure is unconstrained — flat sequence, branching web, parallel paths, nested sub-workflows. What matters is the boundary: same type in, same type out.

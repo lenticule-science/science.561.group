@@ -24,8 +24,11 @@ references:
     title: "Combinators for Bidirectional Tree Transformations: A Linguistic Approach to the View-Update Problem"
     publication: "ACM Transactions on Programming Languages and Systems 29(3)"
     year: 2007
-defines: interfacer
-related: [boundary, adapter-pattern, serialization, format]
+see-also:
+  - boundary
+  - adapter-pattern
+  - serialization
+  - format
 ---
 
 An **interfacer** is a component that sits at a system boundary and translates between the system's internal content and an external representation: markdown text, a JSON document, a JSON-RPC message, an agent's context window, an HTTP body, a file format. Every system that communicates with the outside world has interfacers, whether or not it names them. In a predication substrate the interfacer is the I/O discipline: the rules by which predications enter from outside and leave to outside, with the guarantee that round trips do not silently corrupt content.

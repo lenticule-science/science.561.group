@@ -2,43 +2,32 @@
 id: 68f012c1-4853-4483-8154-31c629f52a88
 name: affective process
 aliases:
-  - affective process
-  - Affective Process
   - affective processes
 type: process
 visibility: public
 date-created: 2025-08-31
-defines:
-  - Affective Process
-  - affective processes
 component-of: affect-theory
 contrasts-with: emotion
 acts-on: body
 enables: libidinal-investment
 references:
-  - id: massumi2002
-    type: document
+  massumi2002:
+    authors:
+      - Brian Massumi
     title: "Parables for the Virtual: Movement, Affect, Sensation"
-    author:
-      - literal: Brian Massumi
-    container-title: Duke University Press
-    issued:
-      - year: 2002
-  - id: ahmed2004
-    type: document
+    year: 2002
+    publication: Duke University Press
+  ahmed2004:
+    authors:
+      - Sara Ahmed
     title: The Cultural Politics of Emotion
-    author:
-      - literal: Sara Ahmed
-    container-title: Edinburgh University Press
-    issued:
-      - year: 2004
-  - id: spinoza1677
-    type: document
+    year: 2004
+    publication: Edinburgh University Press
+  spinoza1677:
+    authors:
+      - Baruch Spinoza
     title: Ethics
-    author:
-      - literal: Baruch Spinoza
-    issued:
-      - year: 1677
+    year: 1677
 ---
 
 An ***affective process*** is a process that [changes](../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/changing.md) affect.

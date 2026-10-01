@@ -8,7 +8,6 @@ name: Formal context
 description: A formal context is a triple $\mathbb{K} = (G, M, I)$ where $G$ and $M$ are sets and $I \subseteq G \times M$.
 ---
 
-# Formal context
 
 A **formal context** is a triple $\mathbb{K} = (G, M, I)$ where $G$ and $M$ are sets and $I \subseteq G \times M$. Elements of $G$ are *objects*, elements of $M$ are *attributes*, $(g, m) \in I$ is read "$g$ has attribute $m$" and abbreviated $g \, I \, m$.
 

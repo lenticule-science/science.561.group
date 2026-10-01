@@ -17,7 +17,6 @@ governed-by: [wu-xing, yin-yang]
 produces: [qi, jing, shen]
 enables: pattern-diagnosis
 acts-on: meridians
-type: term
 references:
   kaptchuk2000:
     authors:

@@ -7,7 +7,6 @@ keywords:
   - Climate
   - Decolonization
 description: "The recognition that climate change disproportionately harms those least responsible for causing it, and that meaningful climate response requires addressing the structures of domination that produce both emissions and vulnerability."
-type: term
 ---
 
 Climate justice is the recognition that climate change is not an equal-opportunity crisis. Those least responsible for greenhouse gas emissions — Indigenous peoples, Global South populations, low-income communities, communities of color — bear disproportionate consequences: displacement, food and water insecurity, extreme weather, loss of land and livelihood. The structures that produce emissions (fossil capital, industrial agriculture, extractive economies) are the same structures that produce vulnerability ([settler colonialism](/sociology/terms/settler-colonialism.md), racial [capitalism](../../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section/services/anarchism-services-section/content/text/glossary/terms/capitalism.md), [extractivism](./extractivism.md)).

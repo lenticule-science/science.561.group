@@ -8,7 +8,6 @@ name: Assert
 description: The substrate operation by which a community adds a predication to its predicated knowledge system.
 ---
 
-# Assert
 
 The substrate operation by which a community adds a predication to its [predicated knowledge system](../../documents/articles/research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/knowing/content/knowledge-science/systems/objects/predicated-knowledge-system.md). Asserting the predication-cell $(s, p, o)$ with positive evidence value $\alpha \in \mathbf{L}$ from source $\sigma$ in scope $S$ produces a fiber-algebra update:
 

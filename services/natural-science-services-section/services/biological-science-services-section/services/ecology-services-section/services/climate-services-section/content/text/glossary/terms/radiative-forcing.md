@@ -5,7 +5,6 @@ aliases:
   - "radiative forcing"
 description: "The change in net energy flux at the top of the atmosphere caused by changes in atmospheric composition, measured in watts per square meter."
 tags: []
-type: term
 ---
 
 Radiative forcing is the change in the net energy balance at the top of the atmosphere — the difference between incoming solar radiation and outgoing thermal radiation — caused by changes in atmospheric composition or other external factors. It is measured in watts per square meter (W/m²) and provides a standardized way to compare the climate impact of different factors: greenhouse gases, aerosols, changes in solar output, and land use changes.

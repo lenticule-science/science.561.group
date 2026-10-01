@@ -11,7 +11,6 @@ keywords:
   - Reproduction
   - Chytridiomycota
 description: A motile, flagellated spore produced by chytrid fungi — the only fungi that retain the ancestral capacity for active swimming.
-type: term
 ---
 
 

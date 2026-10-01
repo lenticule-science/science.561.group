@@ -1,53 +1,38 @@
 ---
-date-created: 2026-03-05T00:00:00
+date-created: 2026-03-05
 date-modified: 2026-04-30
 aliases:
-  - "meter"
   - "metre"
   - "poetry meter"
   - "poetic meter"
   - "metrical"
 tags: []
-defines:
-  - "meter"
-  - "metre"
-  - "poetry meter"
-  - "poetic meter"
-  - "metrical"
 contrasts-with: [rhythm, free-verse, prose]
 references:
-  - id: attridge1995
-    type: document
+  attridge1995:
+    authors:
+      - D. Attridge
     title: "Poetic Rhythm: An Introduction"
-    author:
-      - literal: D. Attridge
-    container-title: Cambridge University Press
-    issued:
-      - year: 1995
-  - id: fussell1979
-    type: document
+    year: 1995
+    publication: Cambridge University Press
+  fussell1979:
+    authors:
+      - P. Fussell
     title: Poetic Meter and Poetic Form
-    author:
-      - literal: P. Fussell
-    container-title: McGraw-Hill
-    issued:
-      - year: 1979
-  - id: hollander1981
-    type: document
+    year: 1979
+    publication: McGraw-Hill
+  hollander1981:
+    authors:
+      - J. Hollander
     title: "Rhyme's Reason: A Guide to English Verse"
-    author:
-      - literal: J. Hollander
-    container-title: Yale University Press
-    issued:
-      - year: 1981
-  - id: steele1990
-    type: document
+    year: 1981
+    publication: Yale University Press
+  steele1990:
+    authors:
+      - T. Steele
     title: "Missing Measures: Modern Poetry and the Revolt Against Meter"
-    author:
-      - literal: T. Steele
-    container-title: University of Arkansas Press
-    issued:
-      - year: 1990
+    year: 1990
+    publication: University of Arkansas Press
 name: "Meter"
 ---
 

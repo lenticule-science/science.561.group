@@ -8,7 +8,6 @@ name: Light-cone predicate category
 description: "The predicate category appropriate to predicated cosmology: a small category $\\mathcal{C}{\\mathrm{cone}}$ whose objects are physical observable predicates and whose morphisms are restricted to those compatible with the light cone…"
 ---
 
-# Light-cone predicate category
 
 The [predicate category](../../documents/articles/research/humanities/theories/math/theories/categories/theories/predication-categories/objects/predicate-category.md) appropriate to predicated cosmology: a small category $\mathcal{C}_{\mathrm{cone}}$ whose objects are physical observable predicates and whose morphisms are restricted to those compatible with the [light cone](../../../../../../../natural-science-services-section/services/physical-science-services-section/services/astronomy-services-section/content/text/glossary/terms/light-cone.md) structure of the [spacetime entity set](../../../../../../../natural-science-services-section/services/physical-science-services-section/services/astronomy-services-section/services/cosmology-services-section/content/text/documents/articles/notes/spacetime-entity-set.md).
 

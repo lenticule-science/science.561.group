@@ -3,18 +3,13 @@
 name: "Performativity"
 date-created: 2026-03-06
 aliases:
-  - "performativity"
   - "gender performativity"
   - "performative"
 keywords:
   - gender-theory
 description: "The theory that gender is not the expression of an interior truth but is constituted through repeated, socially regulated acts."
-type: term
 tags:
   - GenderTheory
-defines:
-  - "Performativity"
-  - "gender performativity"
 ---
 
 **Performativity**, as developed by [Judith Butler](../../../../../../../../../../../../references/people/judith-butler.md) in *Gender Trouble* (1990) and *Bodies That Matter* (1993), names the process by which gender is constituted through repeated acts — gestures, speech, bodily comportment, dress, and institutional performances — rather than expressed from an interior truth. There is no gender identity behind the expressions of gender; the identity is performatively constituted by the very expressions that are said to be its results.

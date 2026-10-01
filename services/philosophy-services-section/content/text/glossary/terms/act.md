@@ -4,11 +4,9 @@ aliases:
   - acts
   - action
   - actions
-  - act
 date-created: 2026-03-04
 type: definition
 dg-permalink: enc/def/act
-dg-publish: true
 extends: thing
 performed-by: thing
 requires:
@@ -55,8 +53,8 @@ references:
     issued:
       - year: 1929
 description: "What a thing does that produces change — the realization of capacity, from Aristotle's energeia to Whitehead's actual occasions."
-defines: act
 date-modified: 2026-04-06
+visibility: public
 ---
 
 

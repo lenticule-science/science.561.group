@@ -17,7 +17,6 @@ governed-by: biopolitics
 optimized-by: harm-reduction
 component-of: public-health
 date-updated: 2026-03-09
-type: term
 ---
 
 A syndemic occurs when two or more epidemics interact synergistically, amplifying each other's effects within a population. [Merrill Singer](../../../../../../../../../../../information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/merrill-singer.md) developed the concept in the 1990s through his work in medical anthropology on the intersection of HIV, substance use disorders, and violence in Hartford, Connecticut. The key distinction is between co-occurring conditions and synergistic ones: a syndemic is not merely multiple diseases present in the same population but diseases whose biological and social dynamics intensify each other. HIV weakens immune systems, substance use increases HIV transmission, and violence disrupts both treatment adherence and community infrastructure. These are not parallel crises but a single compounding process.

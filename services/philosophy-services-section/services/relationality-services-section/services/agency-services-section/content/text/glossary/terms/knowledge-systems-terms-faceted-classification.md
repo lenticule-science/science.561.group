@@ -1,5 +1,4 @@
 ---
-type: term
 class: glossary-redirect
 status: superseded-by-concept
 date-created: 2026-03-31
@@ -17,7 +16,6 @@ promoted-to:
 name: Faceted classification (term)
 ---
 
-# Faceted classification (term)
 
 This term has been promoted under the [term-to-typed-migration](../../documents/articles/research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/knowing/content/knowledge-science/systems/archive/theories/markdown-vault-knowledge-system/theories/predicated-markdown-vault-knowledge-system/morphisms/term-to-typed-migration.md) discipline. The substantive content lives at the typed concept [faceted-classification](../../documents/articles/research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/knowing/content/knowledge-science/systems/archive/teaching/explanations/faceted-classification.md).
 

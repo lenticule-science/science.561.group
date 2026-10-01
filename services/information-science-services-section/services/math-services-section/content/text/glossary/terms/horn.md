@@ -6,7 +6,6 @@ aliases:
   - "horns"
 date-created: 2025-12-31
 tags: []
-type: term
 ---
 
 A horn Λⁿₖ is the [simplicial set](./simplicial-set.md) obtained from the boundary of the standard n-simplex Δⁿ by removing its k-th face. A horn is "almost" a simplex — it has all but one face, and the question of whether the missing face can be filled in determines the higher-categorical structure.

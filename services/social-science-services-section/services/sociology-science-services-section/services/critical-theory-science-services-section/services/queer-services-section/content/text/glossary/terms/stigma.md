@@ -3,18 +3,13 @@
 name: "Stigma"
 date-created: 2026-03-06
 aliases:
-  - "stigma"
   - "stigma management"
   - "spoiled identity"
 keywords:
   - social-theory
 description: "The social process by which a person is reduced from a whole person to a discredited or discreditable one, organized around an attribute that is deeply discrediting in a given social context."
-type: term
 tags:
   - SocialTheory
-defines:
-  - "Stigma"
-  - "spoiled identity"
 ---
 
 **Stigma** is a concept systematized by [Erving Goffman](../../../../../../../../../../../information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/erving-goffman.md) in *Stigma: Notes on the Management of Spoiled Identity* (1963). Goffman defined stigma as a relationship between an attribute and a stereotype: a deeply discrediting gap between a person's "virtual social identity" (what others expect them to be) and their "actual social identity" (what they are or are perceived to be). Stigma is not a property of a person or an attribute but a relationship between persons produced in social interaction.

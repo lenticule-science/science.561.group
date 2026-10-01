@@ -12,7 +12,6 @@ name: Note
 description: "A note is the parent-level formal model of a single markdown file in a vault: a record of a single semantic commitment, with a typed identity and a structured set of edges to other notes."
 ---
 
-# Note
 
 A **note** is the parent-level formal model of a single markdown file in a [vault](../../../../../../../../../engineering-science-services-section/services/computer-science-services-section/services/markdown-services-section/content/text/glossary/terms/vault.md): a record of a single semantic commitment, with a typed identity and a structured set of edges to other notes.
 

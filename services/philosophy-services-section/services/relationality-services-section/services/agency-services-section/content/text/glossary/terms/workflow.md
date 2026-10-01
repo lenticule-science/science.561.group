@@ -9,7 +9,6 @@ name: Workflow
 description: "The mathematical realization of a workflow: a directed-graph composition of work units with a single algebraic constraint — the input cell-pattern type equals the output cell-pattern type."
 ---
 
-# Workflow
 
 The mathematical realization of a [workflow](../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/workflow.md): a directed-graph composition of work units with a single algebraic constraint — *the input cell-pattern type equals the output cell-pattern type*.
 A workflow is a quadruple

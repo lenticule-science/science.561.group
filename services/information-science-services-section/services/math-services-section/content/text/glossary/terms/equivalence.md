@@ -5,7 +5,6 @@ aliases:
   - "equivalences"
 date-created: 2025-12-31
 tags: []
-type: term
 ---
 
 An equivalence in an [∞-category](./infinity-category.md) is a [morphism](./morphism.md) f: A → B that has an inverse up to higher [homotopies](./homotopy.md): there exists g: B → A with g ∘ f homotopic to id_A and f ∘ g homotopic to id_B, together with coherent higher homotopies witnessing these identifications. In an ordinary [category](./category.md), this reduces to [isomorphism](./isomorphism.md); in higher categories, the higher coherence data is essential.

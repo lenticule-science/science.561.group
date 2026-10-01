@@ -5,7 +5,6 @@ aliases:
   - "rhizome"
 date-created: 2026-03-07
 tags: []
-type: term
 ---
 
 A horizontal underground stem that grows outward from the parent plant,

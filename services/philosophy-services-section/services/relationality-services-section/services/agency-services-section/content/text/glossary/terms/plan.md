@@ -9,7 +9,6 @@ name: Plan
 description: "The mathematical realization of a plan: a closure-rule-driven coordination of multiple task cell systems under a dependency partial order."
 ---
 
-# Plan
 
 The mathematical realization of a [plan](../../documents/articles/research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/content/individual/content/agent/actuating/content/actuator/embodying/content/body/integrating/content/drone/swarming/content/swarm/content/humanities/theories/sociology/theories/work/terms/plan.md): a closure-rule-driven coordination of multiple [task cell systems](../../../../../../../../../social-science-services-section/services/social-theory-science-services-section/content/text/glossary/terms/task-cell-system.md) under a dependency partial order.
 A plan is a quadruple

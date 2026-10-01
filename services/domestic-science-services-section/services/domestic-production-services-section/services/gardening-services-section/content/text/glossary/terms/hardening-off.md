@@ -6,7 +6,6 @@ aliases:
   - "harden off"
 date-created: 2026-03-07
 tags: []
-type: term
 ---
 
 The process of gradually exposing indoor-grown seedlings to outdoor

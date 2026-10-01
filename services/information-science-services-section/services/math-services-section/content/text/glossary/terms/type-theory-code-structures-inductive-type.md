@@ -7,7 +7,6 @@ name: Inductive type
 description: An inductive type is a type defined by a finite list of constructors, each producing inhabitants of the type from data of specified types.
 ---
 
-# Inductive type
 
 An **inductive type** is a type defined by a finite list of *constructors*, each producing inhabitants of the type from data of specified types. The natural numbers are the canonical example:
 

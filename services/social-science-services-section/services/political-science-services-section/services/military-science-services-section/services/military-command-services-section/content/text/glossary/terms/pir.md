@@ -8,7 +8,6 @@ keywords:
   - CombatSystems
   - Governance
 description: "Intelligence requirements the commander deems critical to decision making, usually tied to specific decision points and triggers."
-type: term
 ---
 
 Priority Intelligence Requirements (PIR) are intelligence requirements the commander deems critical to decision making. They typically correspond to questions like:

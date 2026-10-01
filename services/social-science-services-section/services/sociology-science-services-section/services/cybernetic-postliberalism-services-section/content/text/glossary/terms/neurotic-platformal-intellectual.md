@@ -8,7 +8,6 @@ keywords:
   - Affect
   - Platforms
 description: "emsenn's term for the subject position produced when social media platforms industrialize confession, inciting users into performing expertise under conditions of anxiety, dual-audience pressure, and affective governance."
-type: term
 ---
 
 

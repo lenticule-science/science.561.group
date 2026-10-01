@@ -6,8 +6,7 @@ aliases:
   - Strawberry blite
   - Captain cook spinach
   - Chenopodium capitatum cultivation
-related-to:
-  - "[Chenopodium capitatum botanical term](../../../../../../../../science/theories/biology/theories/botany/terms/chenopodium-capitatum.md)"
+see-also: chenopodium-capitatum
 ---
 
 *Chenopodium capitatum* offers unique dual-harvest opportunity: early-season tender spinach-like leaves, followed by post-bolting edible red berries. The species is so cold-hardy and self-seeding that it can become a perennial volunteer crop in gardens if managed for this purpose.

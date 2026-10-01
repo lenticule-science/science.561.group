@@ -8,12 +8,10 @@ see-also:
   - "/sociology/disciplines/legalism/index.md"
 references:
   - /sociology/disciplines/legalism/index.md
-type: term
 tags:
   - Legalism
-defines:
-  - "customary law"
-  - "customary international law"
+aliases:
+  - customary international law
 ---
 
 Customary law is law that derives its authority from long-established practice rather than from formal enactment. A norm becomes customary law when it is followed consistently over time and when the community that follows it treats it as binding — not merely habitual but obligatory. The distinction matters: people habitually eat lunch around noon, but no one treats this as a legal obligation. Customary law requires both practice (people do it) and *opinio juris* (people believe they must).

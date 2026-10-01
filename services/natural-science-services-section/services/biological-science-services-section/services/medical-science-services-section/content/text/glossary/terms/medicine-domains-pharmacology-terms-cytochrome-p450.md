@@ -1,6 +1,5 @@
 ---
 name: "Cytochrome P450"
-type: "term"
 date-created: 2026-04-02
 ---
 

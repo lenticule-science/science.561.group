@@ -8,9 +8,9 @@ aliases:
   - peri-peri
   - African devil
   - Tabasco pepper
-related-to:
-  - "[Capsicum frutescens](../../../../../../../../science/theories/biology/theories/botany/terms/capsicum-frutescens.md)"
-  - "[Pepper](pepper.md)"
+see-also:
+  - capsicum-frutescens
+  - pepper
 ---
 
 ## Climate and Hardiness

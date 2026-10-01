@@ -3,8 +3,6 @@ name: Quality
 aliases:
   - qualities
 date-created: 2026-03-04
-dg-permalink: quality
-dg-publish: true
 extends: thing
 belongs-to: thing
 component-of:
@@ -88,12 +86,12 @@ ast:
     - value-presheaf:
         - object-type
 description: "Any aspect of a thing that can be observed, measured, or distinguished — from Aristotle's four species through Locke's primary/secondary distinction to Whitehead's eternal objects and Deleuze's intensive differences."
-defines: quality
 date-modified: 2026-04-06
 where:
 - $X : T^{\mathrm{op}} \to \mathbf{Set}$ is the **object-type presheaf** — the type of objects being evaluated; $X(t)$ is the set of objects of type $X$ at history $t$
 - $V : T^{\mathrm{op}} \to \mathbf{Set}$ is the **value-presheaf** — the codomain of the quality; $V(t)$ is the set of possible quality values at $t$; often $V = H$ (the fiber Heyting algebra) or $V = \mathbb{R}$ (a real-valued scale)
 - $Q_t : X(t) \to V(t)$ is the **quality map at $t$** — the valuation of objects of type $X$ at history $t$; $Q_t(x)$ is the quality of $x$ at $t$
+visibility: public
 ---
 
 

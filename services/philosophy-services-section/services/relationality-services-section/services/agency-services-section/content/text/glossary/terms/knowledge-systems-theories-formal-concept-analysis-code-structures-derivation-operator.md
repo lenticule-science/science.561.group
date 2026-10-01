@@ -8,7 +8,6 @@ name: Derivation operator
 description: "The pair of operators $({-})': \\mathcal{P}(G) \\to \\mathcal{P}(M)$ and $({-})': \\mathcal{P}(M) \\to \\mathcal{P}(G)$ induced by a formal context $\\mathbb{K} = (G, M, I)$ via"
 ---
 
-# Derivation operator
 
 The pair of operators $({-})': \mathcal{P}(G) \to \mathcal{P}(M)$ and $({-})': \mathcal{P}(M) \to \mathcal{P}(G)$ induced by a formal context $\mathbb{K} = (G, M, I)$ via
 

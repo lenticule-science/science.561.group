@@ -17,7 +17,6 @@ references:
     publication: "Army Doctrine Publication 5-0 (31 Jul 2019)"
 cites:
   - usarmy2019adp5_0
-type: term
 ---
 
 The operations process is the recurring paradigm by which commanders and staffs **plan**, **prepare**, **execute**, and **assess** operations. It treats operations as a continuous cycle rather than a one-time plan [@usarmy2019adp5_0].

@@ -9,7 +9,6 @@ name: Untyped lambda calculus
 description: "The untyped lambda calculus $\\Lambda$ is the formal system whose terms are lambda-terms modulo alpha-equivalence, with one computation rule, beta-reduction:"
 ---
 
-# Untyped lambda calculus
 
 The **untyped lambda calculus** $\Lambda$ is the formal system whose terms are [lambda-terms](lambda-term.md) modulo [alpha-equivalence](alpha-equivalence.md), with one computation rule, [beta-reduction](beta-reduction.md):
 

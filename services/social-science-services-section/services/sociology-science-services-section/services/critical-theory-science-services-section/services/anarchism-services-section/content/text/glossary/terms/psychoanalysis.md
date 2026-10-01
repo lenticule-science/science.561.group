@@ -2,18 +2,15 @@
 name: "Psychoanalysis"
 date-created: 2026-03-07
 aliases:
-  - "Psychoanalysis"
-  - "psychoanalysis"
   - "psychoanalytic theory"
+  - psychoanalysis (as political theory)
 keywords:
   - anarchism
   - psychoanalysis
 description: "The theoretical tradition, from Freud through Lacan, that analyzes the unconscious structures shaping desire, drive, and subjectivity. Anarchism draws on psychoanalysis not as therapy but as political analysis: it explains how domination operates at the level of wanting, how systems manage resistance through the regulation of pleasure, and why some forms of resistance escape this management."
-type: term
 tags:
   - Anarchism
   - Psychoanalysis
-defines: "psychoanalysis (as political theory)"
 ---
 
 Psychoanalysis is the theoretical tradition originating with Sigmund Freud and radicalized by Jacques Lacan that analyzes the unconscious structures shaping human desire, repetition, and subjectivity. It is not primarily relevant to [anarchism](../../../../../../../../content/text/glossary/_index.md) as a clinical practice (the treatment of neurosis on the couch) but as a political theory — an account of how [domination](../../../../../../../../content/text/glossary/terms/domination.md) operates at the level of wanting, and why some forms of resistance to domination succeed in escaping its capture while others do not.

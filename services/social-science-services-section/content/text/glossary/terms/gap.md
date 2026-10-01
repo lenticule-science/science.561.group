@@ -21,7 +21,6 @@ aliases:
 name: "Gap"
 ---
 
-# Gap
 
 ## Formal definition
 

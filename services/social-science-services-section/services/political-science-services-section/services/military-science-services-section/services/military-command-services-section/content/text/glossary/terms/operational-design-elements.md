@@ -31,7 +31,6 @@ cites:
   - jointchiefs2011jp5
   - usarmy2019adp5_0
   - nato2019ajp5
-type: term
 ---
 
 Operational design uses a recurring set of **elements** to make a problem and an approach discussable [@jointchiefs2011jp5].

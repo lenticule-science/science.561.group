@@ -5,7 +5,6 @@ name: Anderson–Putnam direct limit
 description: For a substitution dynamical system with a substitution self-map $\omega$ on a finite cell complex $\Gamma\omega$ (the Anderson–Putnam complex), the dynamical space is the inverse limit
 ---
 
-# Anderson–Putnam direct limit
 
 For a substitution dynamical system with a substitution self-map $\omega$ on a finite cell complex $\Gamma_\omega$ (the **Anderson–Putnam complex**), the dynamical space is the inverse limit
 

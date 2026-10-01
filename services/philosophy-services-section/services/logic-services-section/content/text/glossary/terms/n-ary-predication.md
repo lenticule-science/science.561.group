@@ -8,7 +8,6 @@ description: Generalizes predication categories' binary predication-cells ($E \t
 kind: definition
 ---
 
-# $n$-ary predication
 
 Generalizes predication categories' [binary predication-cells](../../documents/articles/research/2026/07/31/lenticule-import/yet-another-unsorted-archive-dump/predication-categories/_archive/bucket-4/articulating/library/aperiodic-articulation-category/library/aperiodic-articulation-cell/library/potential-aperiodic-articulation-cell/predicating/library/transfinite-predication-category/hacking/library/n-ary-predication/docs/dev/scraps/predication-settling.md) ($E \times E$) to **$n$-ary cells** ($E^n$) for $n \geq 1$. An $n$-ary predicate $p$ has values $v^{(n)}(p)(e_1, \ldots, e_n) \in \mathbf{L}$ — a bilattice-valued (or $\mathcal{V}$-valued) assignment of "how $p$ relates the $n$-tuple $(e_1, \ldots, e_n)$."
 

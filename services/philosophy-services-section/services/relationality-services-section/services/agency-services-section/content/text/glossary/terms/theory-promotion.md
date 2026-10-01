@@ -13,7 +13,6 @@ name: Theory promotion
 description: The substrate operation that promotes a directory from staging-area to theory-directory once the theory-discipline's six requirements hold.
 ---
 
-# Theory promotion
 
 The substrate operation that promotes a directory from [staging-area](../../documents/articles/research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/knowing/content/knowledge-science/systems/archive/teaching/explanations/staging-area.md) to [theory-directory](../../documents/articles/research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/knowing/content/knowledge-science/systems/archive/teaching/explanations/theory-directory.md) once the [theory-discipline](../../documents/articles/specifications/theory-discipline.md)'s six requirements hold. Theory promotion is the closure step that turns "real work in progress" into "an established theory the corpus loads on."
 

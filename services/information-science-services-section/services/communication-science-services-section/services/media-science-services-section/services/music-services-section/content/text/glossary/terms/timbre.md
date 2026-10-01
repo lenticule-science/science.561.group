@@ -2,17 +2,12 @@
 name: "Timbre"
 date-created: 2026-03-05
 aliases:
-  - "timbre"
   - "timbral"
   - "tone color"
 tags: []
 description: "The quality of a sound that distinguishes it from other sounds at the same pitch and volume."
 date-updated: 2026-03-09
 part-of: music/disciplines/music-theory/terms
-defines:
-  - "Timbre"
-  - "timbral"
-  - "tone color"
 date-modified: 2026-03-09
 ---
 

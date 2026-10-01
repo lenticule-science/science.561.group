@@ -8,7 +8,6 @@ name: Comparison context
 description: A comparison context is the data that makes a comparison well-typed.
 ---
 
-# Comparison context
 
 A **comparison context** is the data that makes a comparison well-typed.
 

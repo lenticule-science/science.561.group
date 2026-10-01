@@ -29,26 +29,19 @@ analogous-to:
 - hypercoagulability
 - chronic-inflammation
 references:
-  - id: chen2004
-    type: article-journal
+  chen2004:
+    authors:
+      - Ke-ji Chen
+      - Hui Xu
     title: The integration of traditional Chinese medicine and Western medicine
-    volume: 11
-    author:
-      - literal: Ke-ji Chen
-      - literal: Hui Xu
-    container-title: European Review
-    page: 225-235
-    issued:
-      - year: 2003
-  - id: maciocia2015
-    type: document
+    year: 2003
+    publication: European Review
+  maciocia2015:
+    authors:
+      - Giovanni Maciocia
     title: The Foundations of Chinese Medicine
-    edition: 3rd
-    author:
-      - literal: Giovanni Maciocia
-    container-title: Churchill Livingstone/Elsevier
-    issued:
-      - year: 2015
+    year: 2015
+    publication: Churchill Livingstone/Elsevier
 ---
 
 Blood stasis (xue yu 血瘀) is a pathological condition in [Traditional Chinese Medicine](../../../../services/traditional-chinese-medicine-services-section/content/text/glossary/terms/traditional-chinese-medicine.md) in which blood flow is impeded, slowed, or obstructed. It is not merely "poor circulation" in the colloquial sense — it is a specific diagnostic category with characteristic signs, defined causes, predictable complications, and targeted treatment principles. Blood stasis is one of the most clinically important pathological products in TCM because it both results from and causes further disease, creating self-reinforcing cycles of obstruction and dysfunction.

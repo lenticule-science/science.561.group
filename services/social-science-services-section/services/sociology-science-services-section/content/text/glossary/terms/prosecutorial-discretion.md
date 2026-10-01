@@ -9,12 +9,9 @@ see-also:
   - "/sociology/disciplines/legalism/schools/american-law/index.md"
 references:
   - /sociology/disciplines/legalism/schools/american-law/index.md
-type: term
 tags:
   - Legalism
   - AmericanLaw
-defines:
-  - "prosecutorial discretion"
 ---
 
 Prosecutorial discretion is the power of prosecutors to decide whether, whom, and how to charge. It is the most consequential structural feature of the American legal system from a sociological perspective, because it determines which social conflicts enter the legal apparatus at all. The vast majority of potentially prosecutable conduct is never charged. What gets prosecuted is a product of institutional priorities, resource constraints, political pressures, and — crucially — the categories through which prosecutors perceive the social world.

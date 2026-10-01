@@ -8,10 +8,10 @@ aliases:
   - chili pepper
   - sweet pepper
   - hot pepper
-related-to:
-  - "[Capsicum annuum](../../../../../../../../science/theories/biology/theories/botany/terms/capsicum-annuum.md)"
-  - "[Habanero](habanero.md)"
-  - "[Piri piri](piri-piri.md)"
+see-also:
+  - capsicum-annuum
+  - habanero
+  - piri-piri
 ---
 
 ## Starting from Seed and Transplants

@@ -3,8 +3,7 @@ name: Hosta Shade
 description: "Perennial cultivar genus of Hosta, hardy zones 3-9. The premier shade plant. Broad variegated or solid-colored leaves in basal mounds (0.3-1.5 m wide depending on cultivar). Part to full shade (2-4+ hours dappled sun). Hardy, long-lived (30-50+ years), extremely low-maintenance. Major threats: slugs, deer. Variegated margins ('Gold Standard,' 'Patriot') or centers ('Moonlight,' 'October Light'). Large types ('Sum and Substance,' 'Big Daddy'); miniatures ('Little Treasure'); slow-growing, space-efficient perennials."
 date-created: 2026-04-02
 aliases: [plantain lily, hosta lily, shade plant, Hosta]
-related-to:
-  - "[Hosta](../../../../../../../../science/theories/biology/theories/botany/terms/hosta.md)"
+see-also: hosta
 ---
 
 Hosta cultivation grows [*Hosta*](../../../../../../../../../natural-science-services-section/services/biological-science-services-section/services/botany-services-section/content/text/glossary/terms/hosta.md) as the preeminent shade garden perennial, prized for bold, variegated foliage, ease of cultivation, extreme longevity, and minimal maintenance. Over 6,000 named cultivars offer an extraordinary range of leaf shapes, sizes, colors, and variegation patterns.

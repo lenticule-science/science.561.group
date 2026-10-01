@@ -1,7 +1,7 @@
 ---
 name: Argumentative Essay
 type: definition
-dg-publish: true
+visibility: public
 ---
 
 

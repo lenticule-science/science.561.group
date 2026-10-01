@@ -9,7 +9,6 @@ keywords:
 cites:
   - "A Simplified Model for Facet Analysis"
   - "Prolegomena to Library Classification"
-type: term
 references:
   - id: spiteri_SimplifiedModelFacetAnalysis_1998
     type: document

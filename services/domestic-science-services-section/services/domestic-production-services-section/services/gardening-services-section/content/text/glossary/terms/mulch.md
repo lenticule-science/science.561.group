@@ -6,7 +6,6 @@ aliases:
   - "mulching"
 date-created: 2026-03-07
 tags: []
-type: term
 ---
 
 A layer of material spread on the soil surface around plants. Mulch

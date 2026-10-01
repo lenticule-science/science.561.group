@@ -21,7 +21,6 @@ aliases:
 name: "Standing"
 ---
 
-# Standing
 
 ## Formal definition
 

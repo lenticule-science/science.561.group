@@ -10,7 +10,6 @@ keywords:
   - mycology
   - reproduction
   - dispersal
-type: term
 ---
 
 A spore is the reproductive unit of a fungus. Spores are small, typically single-celled structures produced in enormous quantities — a single fruiting body can release billions — and dispersed by wind, water, animals, or mechanical ejection. They are the means by which a fungal [mycelium](./mycelium.md) propagates across space, colonizing new substrates and environments. Spores can be produced sexually, through the fusion and recombination of genetic material from compatible mating types, or asexually, as clonal copies of the parent mycelium.

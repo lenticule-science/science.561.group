@@ -4,7 +4,6 @@ aliases:
   - "margin"
 date-created: 2025-12-31
 tags: []
-type: term
 ---
 
 **Margins** are the spaces surrounding a text block that separate it from the edge of the page or screen, from adjacent elements, and from the reader's hand or the binding. They serve several functions: they give the text visual breathing room, they affect the [line length](./line-length.md) of the text block, and they can provide space for annotations, navigation, or [hierarchy](./hierarchy.md) cues.

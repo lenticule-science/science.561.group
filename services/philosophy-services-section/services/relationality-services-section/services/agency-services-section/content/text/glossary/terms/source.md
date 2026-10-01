@@ -8,7 +8,6 @@ aliases:
 
 The source of a directed edge or morphism is the vertex or object it departs from. Synonym for domain in category theory; synonym for tail in directed graph theory.
 
-# Source
 
 ## What this is
 

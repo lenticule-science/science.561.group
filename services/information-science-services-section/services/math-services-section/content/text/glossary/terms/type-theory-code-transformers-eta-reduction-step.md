@@ -7,7 +7,6 @@ name: Eta-reduction step
 description: "An eta-reduction step is a single application of the eta-equivalence rule, read in the contracting direction:"
 ---
 
-# Eta-reduction step
 
 An **eta-reduction step** is a single application of the [eta-equivalence](eta-equivalence.md) rule, read in the contracting direction:
 

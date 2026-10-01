@@ -2,7 +2,6 @@
 name: "Corporate Structure"
 date-created: 2026-03-06
 aliases:
-  - "corporate structure"
   - "business entity"
   - "LLC"
   - "C-Corp"
@@ -16,11 +15,6 @@ governs:
 enables:
   - franchise
   - risk-mitigation
-defines:
-  - "Corporate Structure"
-  - "LLC"
-  - "C-Corp"
-  - "S-Corp"
 date-modified: 2026-03-09
 ---
 

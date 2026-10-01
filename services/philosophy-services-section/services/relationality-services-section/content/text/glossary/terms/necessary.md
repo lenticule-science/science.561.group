@@ -2,10 +2,9 @@
 name: "Necessary"
 description: "The mode in which a claim has been witnessed tightly enough that the relations force its shape — the third mode in the inquiry trajectory from absurd to determined. The structural-pressure mode, where a claim is no longer optional but not yet finally settled."
 date-created: 2026-04-28
-defines:
-  - necessary
+aliases:
   - necessity
-related:
+see-also:
   - absurd
   - possible
   - determination

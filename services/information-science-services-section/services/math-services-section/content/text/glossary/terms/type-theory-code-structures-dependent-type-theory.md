@@ -9,7 +9,6 @@ name: Dependent type theory
 description: A dependent type theory is a type theory in which types may depend on values — the type of the second component of a pair may mention the first component, the output type of a function may mention the input.
 ---
 
-# Dependent type theory
 
 A **dependent type theory** is a type theory in which types may *depend on values* — the type of the second component of a pair may mention the first component, the output type of a function may mention the input. The two binders that distinguish a dependent type theory are the [pi-type](pi-type.md) $\Pi(x : A).\,B(x)$ and the [sigma-type](sigma-type.md) $\Sigma(x : A).\,B(x)$.
 

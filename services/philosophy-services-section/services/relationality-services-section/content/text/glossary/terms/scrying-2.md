@@ -3,7 +3,6 @@ name: "scrying"
 aliases:
   - "scrying"
 date-created: 2025-12-31
-type: term
 tags: []
 description: Scrying is a divinatory practice in which a practitioner gazes into a reflective, translucent, or otherwise visually ambiguous surface — a scrying medium — to receive images, impressions, or insights.
 ---

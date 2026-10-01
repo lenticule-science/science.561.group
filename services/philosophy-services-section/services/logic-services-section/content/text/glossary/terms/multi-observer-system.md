@@ -8,7 +8,6 @@ description: A multi-observer system on a base $B$ is a small category $O$ toget
 kind: definition
 ---
 
-# Multi-observer system
 
 A **multi-observer system** on a base $B$ is a small category $O$ together with a functor
 

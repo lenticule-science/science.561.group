@@ -4,7 +4,6 @@ aliases:
   - "kripke model"
   - "Kripke model"
 date-created: 2025-12-26
-type: term
 tags: []
 mathematical-object: kripke-frame
 references:

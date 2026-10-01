@@ -29,7 +29,6 @@ references:
   - id: ref2
     type: document
     title: morville_InformationArchitectureWorldWideWeb_2006
-type: term
 ---
 
 Wayfinding is the process by which a person determines where they are, where they want to go, and how to get there within an environment — physical or informational. The term comes from environmental psychology and urban design, particularly [Lynch](../../../../../../../../../information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/kevin-lynch.md)'s *The Image of the City* [@lynch_ImageCity_1960], which studied how people navigate cities using mental models built from paths, edges, districts, nodes, and landmarks.

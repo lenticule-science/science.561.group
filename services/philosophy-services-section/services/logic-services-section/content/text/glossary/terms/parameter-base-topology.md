@@ -7,7 +7,6 @@ name: Parameter base topology
 description: The Grothendieck topology on the parameter base category $\mathbf{B}$ for which the settling moduli prestack is a stack.
 ---
 
-# Parameter base topology
 
 The Grothendieck topology on the [parameter base category](../../documents/articles/notes/undated/parameter-base-category.md) $\mathbf{B}$ for which the [settling moduli prestack](../../../../../relationality-services-section/services/agency-services-section/content/text/documents/articles/notes/undated/settling-moduli-prestack.md) is a stack.
 

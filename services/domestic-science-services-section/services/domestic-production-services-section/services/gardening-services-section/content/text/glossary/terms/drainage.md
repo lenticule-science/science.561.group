@@ -6,7 +6,6 @@ aliases:
   - "soil drainage"
 date-created: 2026-03-06
 tags: []
-type: term
 ---
 
 How quickly water moves through soil. Drainage depends on soil texture

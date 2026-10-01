@@ -7,7 +7,6 @@ aliases:
   - "commuting diagram"
 date-created: 2025-12-26
 tags: []
-type: term
 ---
 
 A commutative diagram is a diagram of [objects](./object.md) and [morphisms](./morphism.md) in which all directed paths between the same two objects compose to the same [morphism](./morphism.md).

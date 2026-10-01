@@ -5,9 +5,8 @@ description: "The total revenue earned per one thousand pageviews or sessions on
 domain: web-business
 uses: Pageview
 date-created: 2026-03-29
-defines: Revenue Per Mille
-related: Programmatic Advertising, Conversion Rate, Web Monetization
 date-modified: 2026-03-29
+see-also: programmatic-advertising-conversion-rate-web-monetization
 ---
 
 Revenue per mille (RPM) is the total revenue earned per one thousand pageviews or sessions on a website. "Mille" is Latin for thousand. The formula is straightforward:

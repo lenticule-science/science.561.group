@@ -1,6 +1,5 @@
 ---
 name: "secondary intension"
-type: "term"
 date-created: 2025-12-31
 ---
 

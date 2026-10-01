@@ -1,7 +1,6 @@
 ---
 name: "Use of Funds"
-date-created: 2026-03-06T00:00:00
-type: term
+date-created: 2026-03-06
 aliases:
   - "use of funds"
   - "use of proceeds"

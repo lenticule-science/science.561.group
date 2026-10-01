@@ -7,8 +7,7 @@ aliases:
   - tomato
   - cultivated tomato
   - common tomato
-related-to:
-  - "[Tomato cultivation](../../../../../../engineering/domains/domesticity/domains/production/gardening/terms/tomato.md)"
+see-also: tomato
 ---
 
 ## Taxonomy and Distribution

@@ -7,7 +7,6 @@ aliases:
   - stratified directed infinity-site
   - stratified directed ∞-site
   - working definition
-type: term
 ---
 
 A stratified directed ∞-site is an [∞-site](./infinity-site.md) whose objects are layered by a [stratification](./stratification.md) and whose morphisms respect a [directed](./directed.md) structure. It combines three ideas: the higher categorical structure of an ∞-site (enabling homotopy-coherent sheaf conditions), the layering of objects into [strata](./stratum.md) of different types or scales, and the directedness of [refinement](./refinement.md) maps that prevents arbitrary reversal.

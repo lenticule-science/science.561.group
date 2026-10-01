@@ -1,6 +1,5 @@
 ---
 name: "Atmosphere"
-type: "term"
 date-created: 2026-03-06
 ---
 

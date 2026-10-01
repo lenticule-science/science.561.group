@@ -3,7 +3,6 @@
 name: "Recognition"
 date-created: 2026-04-02
 aliases:
-  - "recognition"
   - "politics of recognition"
 description: "The political framework in which a subordinate group seeks acknowledgment of its identity from the dominant power — critiqued by Coulthard and Simpson as a trap that requires performing the dominant power's genre in exchange for legibility."
 contrasts-with: [refusal, self-determination]
@@ -23,9 +22,6 @@ references:
     title: "Mohawk Interruptus: Political Life Across the Borders of Settler States"
     publication: "Duke University Press"
     year: 2014
-defines:
-  - recognition
-  - politics of recognition
 ---
 
 Recognition is the political framework in which a subordinate group seeks acknowledgment of its distinct identity, rights, and existence from the dominant power. Charles Taylor (1994) argued that recognition is a vital human need — that misrecognition (being seen as inferior, invisible, or distorted) is a form of oppression, and that justice requires the dominant society to acknowledge the equal worth of different cultural groups.

@@ -8,7 +8,6 @@ name: Upper ontology as predicate vocabulary
 description: "An upper ontology (BFO, DOLCE, SUMO, Cyc) is, in the predicated framing, a predicate-category schema: a chosen partial structure on the predicate category $\\mathcal{C}$ of a predicated knowledge system, naming a small set of top-level…"
 ---
 
-# Upper ontology as predicate vocabulary
 
 An **upper ontology** (BFO, DOLCE, SUMO, Cyc) is, in the predicated framing, a **predicate-category schema**: a chosen partial structure on the predicate category $\mathcal{C}$ of a [predicated knowledge system](../../documents/articles/research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/knowing/content/knowledge-science/systems/archive/predicated-knowledge-system.md), naming a small set of top-level predicate-strata together with a relation taxonomy that gives the morphism structure relating predicates across strata.
 

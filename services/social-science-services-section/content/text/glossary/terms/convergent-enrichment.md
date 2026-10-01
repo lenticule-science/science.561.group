@@ -1,47 +1,43 @@
 ---
 name: "Convergent Enrichment"
 description: "A task prioritization strategy for bootstrapping a self-describing system: enrich from the bottom (foundational vocabulary) and the top (operational context) simultaneously, letting the two fronts converge in the middle where most work happens."
-defines: convergent-enrichment
 date-created: 2026-04-06
 instance-of: method
 applies-to: [plan, task, endeavor]
 part-of-stage: planning
 enables: [dispatch, settlement]
 requires: [priority, leverage]
-related: [settlement-path, progressive-automation, focus]
 references:
-  - id: reinertsen2009
-    type: document
+  reinertsen2009:
+    authors:
+      - Donald G. Reinertsen
     title: The Principles of Product Development Flow
-    author:
-      - literal: Donald G. Reinertsen
-    container-title: Celeritas Publishing
-    issued:
-      - year: 2009
-  - id: goldratt1984
-    type: document
+    year: 2009
+    publication: Celeritas Publishing
+  goldratt1984:
+    authors:
+      - Eliyahu M. Goldratt
     title: The Goal
-    author:
-      - literal: Eliyahu M. Goldratt
-    container-title: North River Press
-    issued:
-      - year: 1984
-  - id: rother2009
-    type: document
+    year: 1984
+    publication: North River Press
+  rother2009:
+    authors:
+      - Mike Rother
     title: Toyota Kata
-    author:
-      - literal: Mike Rother
-    container-title: McGraw-Hill
-    issued:
-      - year: 2009
-  - id: ohno1988
-    type: document
+    year: 2009
+    publication: McGraw-Hill
+  ohno1988:
+    authors:
+      - Taiichi Ohno
     title: "Toyota Production System: Beyond Large-Scale Production"
-    author:
-      - literal: Taiichi Ohno
-    container-title: Productivity Press
-    issued:
-      - year: 1988
+    year: 1988
+    publication: Productivity Press
+aliases:
+  - convergent-enrichment
+see-also:
+  - settlement-path
+  - progressive-automation
+  - focus
 ---
 
 Convergent enrichment is a task prioritization strategy for bootstrapping a self-describing system — one where the infrastructure needed to plan work IS the work being planned.

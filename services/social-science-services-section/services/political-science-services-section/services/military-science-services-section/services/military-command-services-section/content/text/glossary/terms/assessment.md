@@ -24,7 +24,6 @@ references:
 cites:
   - usarmy2019adp5_0
   - alssa2020operationassessment
-type: term
 ---
 
 Assessment is the process of monitoring the situation and evaluating progress toward objectives to inform decisions, adaptation, and re-planning [@usarmy2019adp5_0].

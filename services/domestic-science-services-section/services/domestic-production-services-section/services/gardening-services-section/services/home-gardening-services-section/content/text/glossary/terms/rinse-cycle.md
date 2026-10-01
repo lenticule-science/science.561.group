@@ -4,7 +4,6 @@ aliases:
   - "rinse cycle"
 date-created: 2026-01-01
 tags: []
-type: term
 ---
 
 A rinse cycle is a routine of rinsing seeds or [sprouts](./sprout.md) with clean water to reduce microbial growth and maintain freshness during the growing process. In [home gardening](../index.md), rinse cycles are the primary food-safety intervention available to growers who lack commercial-scale sanitation equipment.

@@ -15,7 +15,6 @@ name: Rhetorical situation
 description: The rhetorical situation is the foundational formal model of the conditions that call a discourse into being and constrain what counts as a fitting response, due to Lloyd Bitzer (1968, "The Rhetorical Situation," Philosophy and Rhetoric).
 ---
 
-# Rhetorical situation
 
 The **rhetorical situation** is the foundational formal model of the conditions that call a discourse into being and constrain what counts as a fitting response, due to Lloyd Bitzer (1968, "The Rhetorical Situation," *Philosophy and Rhetoric*). The model formalises the situation as a triple of *exigence*, *audience*, and *constraints* that jointly determine which discourses are *fitting* — possible, appropriate, and effective — in the situation.
 

@@ -2,7 +2,6 @@
 name: "Standard Operating Procedures"
 date-created: 2026-03-06
 aliases:
-  - "standard operating procedures"
   - "SOPs"
   - "SOP"
 tags: []
@@ -12,9 +11,6 @@ enables: risk-mitigation
 governs:
   - supply-chain
   - point-of-sale
-defines:
-  - "Standard Operating Procedures"
-  - "SOPs"
 date-modified: 2026-03-09
 ---
 

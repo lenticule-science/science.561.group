@@ -7,7 +7,6 @@ aliases:
   - Minor arcana
 date-created: 2025-12-31
 tags: []
-type: term
 keywords:
   - tarot
 dependencies:

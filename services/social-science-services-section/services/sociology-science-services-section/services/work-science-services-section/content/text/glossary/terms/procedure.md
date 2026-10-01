@@ -1,7 +1,6 @@
 ---
 aliases:
   - procedures
-  - procedure
 description: Work whose meaning is settled but whose execution branches on conditions — you know what you're producing but the path depends on what you encounter.
 identity: procedure
 name: Procedure
@@ -35,7 +34,6 @@ contrasts-with: process, inquiry, derivation
 composes-into: workflow
 instance-of: work
 id: procedure
-defines: Procedure
 ---
 A procedure is work whose meaning is settled but whose execution path is not. You know what you are trying to produce. You do not know which steps you will take to produce it, because that depends on conditions you evaluate as you go.
 

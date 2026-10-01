@@ -3,8 +3,7 @@ name: Quality
 aliases:
   - qualities
 date-created: 2026-03-04
-dg-permalink: quality
-dg-publish: true
+visibility: public
 ---
 
 

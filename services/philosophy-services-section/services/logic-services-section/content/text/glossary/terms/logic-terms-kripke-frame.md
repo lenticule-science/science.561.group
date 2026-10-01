@@ -5,7 +5,6 @@ aliases:
   - "Kripke frame"
   - "frame"
 date-created: 2025-12-26
-type: term
 tags: []
 mathematical-object: set
 references:

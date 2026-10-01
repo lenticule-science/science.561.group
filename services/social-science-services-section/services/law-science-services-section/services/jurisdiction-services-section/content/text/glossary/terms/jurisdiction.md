@@ -29,7 +29,6 @@ references:
 name: "Jurisdiction"
 ---
 
-# Jurisdiction
 
 ## Formal definition
 

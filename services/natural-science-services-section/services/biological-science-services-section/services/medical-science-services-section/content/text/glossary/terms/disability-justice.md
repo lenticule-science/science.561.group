@@ -3,7 +3,7 @@ name: "Disability Justice"
 date-created: 2026-03-03
 date-modified: 2026-03-29
 aliases:
-  - "disability justice"
+  []
 keywords:
   - social-movements
   - SocialMovements
@@ -13,11 +13,8 @@ requires: [communitas, labor]
 contrasts-with: immunitas
 enables: [harm-reduction, care-infrastructure]
 governs: access
-type: term
 tags:
   - SocialMovements
-defines:
-  - "Disability Justice"
 ---
 
 Disability justice is a political framework developed by disabled activists of color — particularly the performance collective Sins Invalid, [Mia Mingus](../../../../../../../../../information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/mia-mingus.md), [Leah Lakshmi Piepzna-Samarasinha](../../../../../../../../../information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/leah-lakshmi-piepzna-samarasinha.md), and [Patty Berne](../../../../../../../../../information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/patty-berne.md) — that grounds disability in intersecting systems of oppression rather than treating it as an individual medical condition. Where the disability rights movement focused on legal inclusion and accommodation within existing institutions, disability justice insists that those institutions are themselves organized around ableism, racism, [capitalism](../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section/services/anarchism-services-section/content/text/glossary/terms/capitalism.md), and [settler colonialism](../../sociology/topics/settler-colonialism/index.md). Access cannot be secured by adding ramps to structures built on exclusion.

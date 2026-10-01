@@ -21,7 +21,6 @@ Table of contents
 
 - [Key references](#key-references)
 
-# Section
 
 ## Formal definition
 

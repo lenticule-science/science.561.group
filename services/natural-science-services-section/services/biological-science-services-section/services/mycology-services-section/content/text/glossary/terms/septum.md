@@ -10,7 +10,6 @@ keywords:
   - Mycology
   - FungalStructure
   - CellBiology
-type: term
 ---
 
 

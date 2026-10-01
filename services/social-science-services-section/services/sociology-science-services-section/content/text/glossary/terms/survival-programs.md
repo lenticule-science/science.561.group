@@ -3,7 +3,6 @@ name: Survival Programs
 date-created: 2026-03-08
 aliases:
 - survival program
-- survival programs
 tags:
 - mutual-aid
 - disaster-studies
@@ -27,10 +26,6 @@ references:
     url: https://mutualaiddisasterrelief.org/about/
 authors:
   - claude
-type: term
-defines:
-  - "survival program"
-  - "survival programs"
 cites:
   - madrprograms2024
   - madrabout2025

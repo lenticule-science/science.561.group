@@ -9,12 +9,10 @@ see-also:
   - "/sociology/disciplines/legalism/index.md"
 references:
   - /sociology/disciplines/legalism/index.md
-type: term
 tags:
   - Legalism
-defines:
-  - "natural law"
-  - "natural right"
+aliases:
+  - natural right
 ---
 
 Natural law is the claim that certain legal or moral principles exist independent of human enactment — that some things are right or wrong regardless of what any legislature, court, or sovereign declares. The tradition holds that these principles are discoverable through reason, accessible to all rational beings, and binding on all human societies.

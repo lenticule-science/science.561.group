@@ -9,7 +9,6 @@ name: Subtheory
 description: "A subtheory of a predication theory $T = (\\mathbf{L}, \\mathcal{C}^T, E, \\mathrm{Cl}^T)$ is a pair $(\\mathcal{C}^S, \\pi)$ where $\\mathcal{C}^S$ is a predicate category and $\\pi : \\mathcal{C}^S \\hookrightarrow \\mathcal{C}^T$ is a type…"
 ---
 
-# Subtheory
 
 A **subtheory** of a [predication theory](../../documents/articles/research/2026/07/31/lenticule-import/from-predicate-category/predication-theory.md) $T = (\mathbf{L}, \mathcal{C}^T, E, \mathrm{Cl}^T)$ is a pair $(\mathcal{C}^S, \pi)$ where $\mathcal{C}^S$ is a [predicate category](../../documents/articles/research/2026/07/31/lenticule-import/from-predicate-category/predicate-category.md) and $\pi : \mathcal{C}^S \hookrightarrow \mathcal{C}^T$ is a type embedding — a functor faithful and generator-class-preserving — together with the induced predication theory
 

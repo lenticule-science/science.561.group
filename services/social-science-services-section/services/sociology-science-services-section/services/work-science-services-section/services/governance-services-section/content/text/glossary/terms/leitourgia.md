@@ -31,7 +31,6 @@ name: "Leitourgia"
 where:
 ---
 
-# Leitourgia
 
 ## What it is
 

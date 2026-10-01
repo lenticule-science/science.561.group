@@ -8,7 +8,6 @@ keywords:
   - CombatSystems
   - Governance
 description: "Information the commander needs about the status and capabilities of friendly forces to make timely decisions during planning and execution."
-type: term
 ---
 
 Friendly Force Information Requirements (FFIR) are the information the commander needs about the status and capabilities of friendly forces to make timely decisions.

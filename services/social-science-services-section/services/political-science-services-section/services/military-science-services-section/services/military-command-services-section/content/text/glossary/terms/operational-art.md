@@ -24,7 +24,6 @@ references:
 cites:
   - jointchiefs2016dictionary
   - jointchiefs2011jp5
-type: term
 ---
 
 Operational art is the cognitive approach by commanders and staffs — supported by their skill, knowledge, experience, creativity, and judgment — to develop strategies, campaigns, and operations to organize and employ military forces by integrating ends, ways, and means. In more recent joint planning doctrine, operational art is also framed explicitly in terms of evaluating risk [@jointchiefs2016dictionary].

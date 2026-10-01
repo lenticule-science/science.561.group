@@ -23,7 +23,6 @@ aliases:
 name: "Investiture"
 ---
 
-# Investiture
 
 ## Formal definition
 

@@ -7,7 +7,6 @@ name: Meta-moduli prestack of closure-rule systems
 description: "The pseudo-functor $\\mathbf{B}^{\\mathrm{op}} \\to \\mathbf{Gpd}$ sending each base $(\\mathbf{L}, \\mathcal{C}, E, \\lambda) \\in \\mathbf{B}$ to the groupoid of closure-rule systems over that base, modulo closure-equivalence:"
 ---
 
-# Meta-moduli prestack of closure-rule systems
 
 The pseudo-functor $\mathbf{B}^{\mathrm{op}} \to \mathbf{Gpd}$ sending each base $(\mathbf{L}, \mathcal{C}, E, \lambda) \in \mathbf{B}$ to the **groupoid of [closure-rule systems](../../documents/articles/research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/knowing/content/spatiotemporal-knowledge-presheaf/content/parameter-base-category/content/parameter-base-topology/content/settling-moduli-prestack/content/meta-moduli-prestack/_archive/teaching/explanations/closure-rule-system.md) over that base, modulo closure-equivalence**:
 

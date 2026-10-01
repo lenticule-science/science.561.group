@@ -14,7 +14,6 @@ component-of: psychotherapy
 requires: attachment
 determines: psychotherapy-outcome
 enables: [trauma, pain-assessment]
-type: term
 ---
 
 The therapeutic alliance is the quality of the working relationship between therapist and client. Edward Bordin (1979) identified three components: **agreement on goals** (therapist and client share an understanding of what they are working toward), **agreement on tasks** (the methods used in therapy make sense to the client), and **the bond** (trust, warmth, mutual respect, and the client's sense of being seen).

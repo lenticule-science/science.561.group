@@ -1,6 +1,5 @@
 ---
 name: "Hertzsprung–Russell diagram"
-type: term
 component-of: stellar-astronomy
 ---
 

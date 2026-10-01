@@ -5,9 +5,9 @@ aliases:
 date-created: 2025-04-01
 tags: []
 dg-home: true
-dg-publish: true
 dg-permalink: index
 type: "[[project-as-command-term]]"
+visibility: public
 ---
 
 

@@ -8,7 +8,6 @@ name: Sigma type
 description: "A Sigma type $\\Sigma(x : A).\\,B(x)$ is the type of dependent pairs: pairs $(a, b)$ where $a : A$ and $b : B(a)$ — the type of the second component may depend on the value of the first."
 ---
 
-# Sigma type
 
 A **Sigma type** $\Sigma(x : A).\,B(x)$ is the type of dependent pairs: pairs $(a, b)$ where $a : A$ and $b : B(a)$ — the type of the second component may depend on the value of the first. When $B$ does not depend on $x$, the Sigma type degenerates to the ordinary [product-type](product-type.md) $A \times B$.
 

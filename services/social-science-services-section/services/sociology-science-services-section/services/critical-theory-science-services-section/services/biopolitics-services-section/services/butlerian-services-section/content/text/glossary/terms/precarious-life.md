@@ -14,7 +14,6 @@ references:
     title: "Precarious Life: The Powers of Mourning and Violence"
     publication: "Verso"
     year: 2004
-type: term
 ---
 
 Precarious life, as Butler develops it in *Precarious Life: The Powers of Mourning and Violence* (2004), names the condition of exposure to violence, deprivation, and abandonment that is not equally shared but differentially distributed. All human life is precarious in the ontological sense — every body is vulnerable to injury, illness, and death. But precariousness in the political sense is produced: specific populations are made precarious by the withdrawal of legal protection, economic security, and social recognition, while other populations are shielded by the same structures that expose the first.

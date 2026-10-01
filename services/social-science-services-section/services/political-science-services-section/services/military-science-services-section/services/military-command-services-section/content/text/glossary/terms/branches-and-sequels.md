@@ -9,7 +9,6 @@ keywords:
   - CombatSystems
   - Governance
 description: "A planning paradigm for adaptation: branches are contingency options within a plan; sequels are subsequent plans based on possible outcomes."
-type: term
 ---
 
 Branch and sequel plans are a paradigm for planning under uncertainty.

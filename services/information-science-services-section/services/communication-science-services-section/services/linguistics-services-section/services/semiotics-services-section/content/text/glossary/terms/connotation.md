@@ -14,7 +14,6 @@ cites:
   - "Elements of Semiology"
   - "Prolegomena to a Theory of Language"
   - "Semiotics: The Basics"
-type: term
 tags:
   - semiotics
 references:

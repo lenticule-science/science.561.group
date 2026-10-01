@@ -2,7 +2,6 @@
 name: "popular education"
 description: "Education organized by and for communities, outside state or institutional control, directed toward collective understanding and action"
 aliases:
-  - "popular education"
   - "educación popular"
 date-created: 2026-03-06
 keywords:
@@ -37,9 +36,6 @@ references:
       - literal: Horton
     issued:
       - year: 1998
-defines:
-- popular education
-- educación popular
 ---
 
 [Popular education](popular-education.md) (*educación popular*) is education organized by and for communities, outside the control of the state or formal institutions, directed toward collective understanding and action. It draws on [Paulo Freire](../../../../../../general/people/paulo-freire.md)'s work [@freire_PedagogyOppressed_1970] but predates it — workers' education movements, anarchist schools, and community-based literacy campaigns have practiced forms of popular education since at least the 19th Century.

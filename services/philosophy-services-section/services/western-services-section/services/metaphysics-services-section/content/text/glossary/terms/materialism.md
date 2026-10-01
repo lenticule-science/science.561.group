@@ -2,7 +2,6 @@
 name: "Materialism"
 date-created: 2026-03-03
 aliases:
-  - "materialism"
   - "materialist"
   - "philosophical materialism"
 tags: []
@@ -10,10 +9,6 @@ description: "The philosophical position that the physical or material world is 
 date-updated: 2026-03-29
 contrasts-with: idealism
 enables: historical-materialism
-defines:
-  - "Materialism"
-  - "materialist"
-  - "philosophical materialism"
 date-modified: 2026-03-29
 ---
 

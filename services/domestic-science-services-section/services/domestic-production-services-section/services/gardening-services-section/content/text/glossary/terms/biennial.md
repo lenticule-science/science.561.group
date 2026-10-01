@@ -6,7 +6,6 @@ aliases:
   - "biennial plant"
 date-created: 2026-03-06
 tags: []
-type: term
 ---
 
 A plant that takes two growing seasons to complete its life cycle. In the

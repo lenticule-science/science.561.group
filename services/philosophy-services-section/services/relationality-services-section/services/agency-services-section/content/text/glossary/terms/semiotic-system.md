@@ -24,7 +24,6 @@ name: Semiotic system
 description: "A semiotic system is a tuple $\\mathcal{S} = (V, O, I, K, R, \\Sigma)$ where:"
 ---
 
-# Semiotic system
 
 A **semiotic system** is a tuple $\mathcal{S} = (V, O, I, K, R, \Sigma)$ where:
 

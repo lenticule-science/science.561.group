@@ -8,7 +8,6 @@ name: Apposition
 description: The combination of two formal contexts that share an object set, by union of their attribute sets.
 ---
 
-# Apposition
 
 The combination of two formal contexts that share an object set, by union of their attribute sets. Given $\mathbb{K}_1 = (G, M_1, I_1)$ and $\mathbb{K}_2 = (G, M_2, I_2)$ with $M_1 \cap M_2 = \emptyset$, their **apposition** is
 

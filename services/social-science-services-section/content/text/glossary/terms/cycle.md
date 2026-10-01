@@ -1,10 +1,8 @@
 ---
 name: "Cycle"
 description: "One complete iteration of a recurrence pattern — from start through all phases back to the starting condition, carrying novelty from each pass."
-defines: cycle
 date-created: 2026-04-04
 aliases:
-  - "cycle"
   - "cycles"
 instance-of: thing
 component-of: [recurrence, cadence]
@@ -13,30 +11,24 @@ contrasts-with: [repetition, recurrence, phase]
 requires: [recurrence, time]
 applies-to: [review, sprint, fiscal-year, cadence, governance]
 references:
-  - id: deming1986
-    type: document
+  deming1986:
+    authors:
+      - W. Edwards Deming
     title: Out of the Crisis
-    author:
-      - literal: W. Edwards Deming
-    container-title: MIT Press
-    issued:
-      - year: 1986
-  - id: reinertsen2009
-    type: document
+    year: 1986
+    publication: MIT Press
+  reinertsen2009:
+    authors:
+      - Donald G. Reinertsen
     title: The Principles of Product Development Flow
-    author:
-      - literal: Donald G. Reinertsen
-    container-title: Celeritas Publishing
-    issued:
-      - year: 2009
-  - id: prigogine1997
-    type: document
+    year: 2009
+    publication: Celeritas Publishing
+  prigogine1997:
+    authors:
+      - Ilya Prigogine
     title: "The End of Certainty: Time, Chaos, and the New Laws of Nature"
-    author:
-      - literal: Ilya Prigogine
-    container-title: Free Press
-    issued:
-      - year: 1997
+    year: 1997
+    publication: Free Press
 ---
 
 A cycle is one complete iteration of a [recurrence](recurrence.md) pattern — a single turn from start through all phases back to the starting structural condition.

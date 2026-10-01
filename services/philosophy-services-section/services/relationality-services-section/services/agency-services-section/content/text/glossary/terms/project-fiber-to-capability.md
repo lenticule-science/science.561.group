@@ -7,7 +7,6 @@ name: Project fiber to capability
 description: "The morphism $\\pi^{\\exists} : \\mathcal{K}^{\\mathrm{prov}} \\to \\mathcal{K}^{\\mathrm{avail}}$ that takes the agent-indexed provides-capability fiber and projects out the agent argument by an existential quantifier-adjoint, producing a…"
 ---
 
-# Project fiber to capability
 
 The morphism $\pi^{\exists} : \mathcal{K}^{\mathrm{prov}} \to \mathcal{K}^{\mathrm{avail}}$ that takes the agent-indexed `provides-capability` fiber and projects out the agent argument by an existential quantifier-adjoint, producing a *capability-availability* fiber: a function $C \to \mathbf{FOUR}$ recording, for each capability, whether *some agent* provides it.
 

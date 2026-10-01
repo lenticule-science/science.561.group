@@ -7,7 +7,6 @@ keywords:
   - CyberneticPostliberalism
   - Affect
 description: "The process of tuning expectations for how a life should go, derived from Berlant's genre theory and applied by emsenn to show how crisis is formatted as personal narrative rather than structural condition."
-type: term
 ---
 
 

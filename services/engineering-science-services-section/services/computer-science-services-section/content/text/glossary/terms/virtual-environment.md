@@ -1,6 +1,6 @@
 ---
 name: Virtual Environment
-dg-publish: true
+visibility: public
 ---
 
 

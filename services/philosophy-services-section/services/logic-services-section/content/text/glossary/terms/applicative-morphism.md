@@ -15,7 +15,6 @@ name: Applicative morphism
 description: "An applicative morphism $\\gamma: A \\to B$ between PCAs is a function $\\gamma: A \\to B$ tracked by a realizer $r \\in B$ satisfying:"
 ---
 
-# Applicative morphism
 
 An **applicative morphism** $\gamma: A \to B$ between PCAs is a function $\gamma: A \to B$ tracked by a realizer $r \in B$ satisfying:
 

@@ -6,7 +6,6 @@ aliases:
   - "body copy"
 date-created: 2026-03-03
 tags: []
-type: term
 ---
 
 Body text is the primary reading text of a document, the continuous prose that carries its main content. It stands in contrast to [headings](./heading.md), [captions](./caption.md), display type, and other typographic elements that serve structural or supplementary roles.

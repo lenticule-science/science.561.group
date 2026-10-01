@@ -6,7 +6,6 @@ aliases:
   - "major arcana"
 date-created: 2025-12-31
 tags: []
-type: term
 ---
 
 The **major arcana** are the 22 trump cards in a tarot deck, numbered 0 (The Fool) through 21 (The World). They represent archetypal themes, life passages, and psychological forces that operate at a larger scale than the everyday situations depicted in the [minor arcana](minor-arcana.md).

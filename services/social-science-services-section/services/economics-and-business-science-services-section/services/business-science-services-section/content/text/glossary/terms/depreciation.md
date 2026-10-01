@@ -7,7 +7,6 @@ aliases:
 keywords:
   - Business
 description: "The accounting method of spreading the cost of a long-lived asset over its useful life, recognizing the expense gradually rather than all at once."
-type: term
 ---
 
 Depreciation allocates the cost of a physical asset — equipment, vehicles, furniture, leasehold improvements — across the years it will be used. A \$15,000 commercial oven with a 10-year useful life depreciates at \$1,500 per year under straight-line depreciation: each year, \$1,500 appears as an expense on the [income statement](./income-statement.md), reducing reported profit, while the asset's book value on the [balance sheet](./balance-sheet.md) decreases by the same amount.

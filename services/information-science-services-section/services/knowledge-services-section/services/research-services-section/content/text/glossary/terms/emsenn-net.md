@@ -2,9 +2,9 @@
 name: Emsenn.Net
 date-created: 2026-03-04
 type: definition
-dg-publish: true
 aliases:
   - emsenn.net
+visibility: public
 ---
 
 [emsenn.net](https://emsenn.net) is the [top-level Internet domain](top-level Internet domain) I've used for my [personal website](personal website). As of [2023-12-24](2023-12-24), it is used to host [Groundhog Autonomous Zone|my Webplace](Groundhog Autonomous Zone|my Webplace).

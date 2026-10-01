@@ -3,18 +3,14 @@
 name: "Normalization"
 date-created: 2026-03-06
 aliases:
-  - "normalization"
   - "normalizing"
 keywords:
   - social-theory
   - gender-theory
 description: "The process by which certain practices, identities, and ways of being are constituted as 'normal' — not through prohibition of deviance but through the production of a standard against which all conduct is measured."
-type: term
 tags:
   - SocialTheory
   - GenderTheory
-defines:
-  - "Normalization"
 ---
 
 **Normalization** names the process by which certain practices, identities, and ways of being are constituted as "normal" — and thereby rendered invisible, unmarked, and presumptively natural. [Michel Foucault](../../../../../../../../../../../../references/people/michel-foucault.md) identified normalization as the characteristic operation of disciplinary power in *Discipline and Punish* (1975): modern institutions govern not primarily by prohibiting deviant acts but by producing a standard of normality against which all conduct is measured, ranked, and corrected. The examination, the case file, the statistical distribution — these are the instruments through which normal and abnormal are produced.

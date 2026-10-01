@@ -1,7 +1,6 @@
 ---
 name: "Watch"
 description: "A shift within a continuous coverage requirement — the naval/military term for duty rotation under an unbroken coverage invariant, ensuring the position is never vacant."
-defines: watch
 date-created: 2026-04-04
 instance-of: assignment
 extends: shift
@@ -9,30 +8,24 @@ applies-to: [coverage, operations, governance, rotation]
 part-of-stage: execution
 requires: [handoff, coverage-invariant]
 references:
-  - id: usnps2015
-    type: document
+  usnps2015:
+    authors:
+      - United States Navy Personnel Command
     title: Watch Standing Guide
-    author:
-      - literal: United States Navy Personnel Command
-    container-title: Naval Personnel Guidance
-    issued:
-      - year: 2015
-  - id: mallam2015
-    type: document
+    year: 2015
+    publication: Naval Personnel Guidance
+  mallam2015:
+    authors:
+      - Simon A. Mallam
     title: Understanding Ship Operations
-    author:
-      - literal: Simon A. Mallam
-    container-title: Routledge
-    issued:
-      - year: 2015
-  - id: agency2008
-    type: document
+    year: 2015
+    publication: Routledge
+  agency2008:
+    authors:
+      - Dinah Mosche
     title: "24/7: Why Is Everyone Working All the Time?"
-    author:
-      - literal: Dinah Mosche
-    container-title: Beacon Press
-    issued:
-      - year: 2008
+    year: 2008
+    publication: Beacon Press
 ---
 
 A watch is a [shift](shift.md) where the defining constraint is that the position must never be vacant.

@@ -1,7 +1,7 @@
 ---
 id: work
 description: "An episode of doing with a defined output — the base concept of which all work types are specializations."
-aliases: [ work-unit, Work, work ]
+aliases: [ work-unit, Work ]
 characterized-by: output
 types: process, procedure, derivation, inquiry
 organized-by: task
@@ -25,9 +25,8 @@ ast:
     - result:
         - capacity
         - situation
-defines: Work
-related: Process, Application, Procedure, Inquiry, Derivation, Activity, Operation
 date-modified: 2026-09-27
+see-also: process-application-procedure-inquiry-derivation-activity-operation
 ---
 
 Work is an episode of doing with a defined output: an [act](../../../../../../../../../philosophy-services-section/content/text/glossary/terms/act.md) restricted to episodes with a nameable result. Work is characterized entirely by what it produces, not by what happens inside it. The output may be an artifact, a judgment, a transformed state, or a report that nothing was found — but it must be something nameable. An episode of doing that produces nothing nameable is not work; it is time spent.

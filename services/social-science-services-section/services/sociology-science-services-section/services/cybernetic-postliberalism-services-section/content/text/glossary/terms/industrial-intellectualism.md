@@ -6,7 +6,6 @@ aliases:
 keywords:
   - Affect
 description: "emsenn's term for the conversion of thought into narrative products packaged for recognizability within a genre, where truth-value is determined by affective satisfaction rather than material correspondence."
-type: term
 ---
 
 

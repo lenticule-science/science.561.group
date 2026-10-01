@@ -11,7 +11,6 @@ keywords:
   - symbiosis
   - chemical-ecology
   - ChemicalEcology
-type: term
 ---
 
 Root exudates are chemical compounds secreted by plant roots into the surrounding soil. They include sugars, amino acids, organic acids, flavonoids, strigolactones, and other signaling molecules. Plants release a significant portion of their photosynthetically fixed carbon — estimates range from 10% to 40% — through root exudation. This is not waste. Root exudates shape the soil environment, attract beneficial microorganisms, deter pathogens, and initiate the chemical dialogues through which [mycorrhizal](./mycorrhiza.md) partnerships are established.

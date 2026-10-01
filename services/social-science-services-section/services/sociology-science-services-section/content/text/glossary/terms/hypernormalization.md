@@ -3,15 +3,10 @@
 name: "Hypernormalization"
 date-created: 2026-03-03
 aliases:
-  - "hypernormalization"
   - "hypernormalisation"
 tags: []
 description: "The process by which a dysfunctional system is maintained because everyone accepts the fiction of its functioning as normal, even when all participants know it is false."
-type: term
 part-of: sociology/schools/cybernetic-postliberalism/terms
-defines:
-  - "Hypernormalization"
-  - "hypernormalisation"
 ---
 
 Hypernormalization describes the process by which a dysfunctional system is maintained because everyone involved accepts the fiction of its functioning as normal, even though all participants know it is false. The concept originates in the anthropologist Alexei Yurchak's analysis of late Soviet society in *Everything Was Forever, Until It Was No More* (2005), where he showed how Soviet citizens participated in rituals, slogans, and institutional performances they knew to be hollow — not because they were deceived but because the fiction had become the only available framework for social life.

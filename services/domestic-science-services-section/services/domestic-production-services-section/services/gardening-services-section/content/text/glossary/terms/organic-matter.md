@@ -5,7 +5,6 @@ aliases:
   - "organic matter"
 date-created: 2026-03-06
 tags: []
-type: term
 ---
 
 Decomposed plant and animal material in soil. Organic matter holds

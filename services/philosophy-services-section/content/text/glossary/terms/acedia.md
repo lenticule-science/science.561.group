@@ -1,9 +1,7 @@
 ---
 name: "Acedia"
-defines: acedia
-aliases: [acedia, sloth, spiritual sloth, accidie]
+aliases: [ sloth, spiritual sloth, accidie ]
 description: "The Thomist vice — one of the seven deadly sins in the Western tradition — of spiritual torpor: the inability to rouse oneself to the good one knows one should pursue. Acedia is not laziness in the ordinary sense (the disinclination to work) but a specifically spiritual condition: the soul's withdrawal from its own ends, often manifest as restlessness, distraction, and aversion to what would actually fulfill it."
-related: [tristitia, spes, dejection, melancholia]
 contrasts-with: [magnanimity, spes, fortitude]
 date-created: 2026-04-27
 date-modified: 2026-04-27
@@ -62,6 +60,11 @@ references:
     container-title: Riverhead
     issued:
       - year: 2008
+see-also:
+  - tristitia
+  - spes
+  - dejection
+  - melancholia
 ---
 
 **Acedia** is the Thomist name for the vice — one of the seven capital sins in the Western tradition — of spiritual torpor: the inability to rouse oneself to the good one knows one should pursue. Acedia is not laziness in the ordinary sense (the disinclination to work) but a specifically spiritual condition. The acedic soul is restless and distracted, often busy, but withdrawn from its own ends. What it knows would fulfill it has become aversive; what does not fulfill it has become compelling.

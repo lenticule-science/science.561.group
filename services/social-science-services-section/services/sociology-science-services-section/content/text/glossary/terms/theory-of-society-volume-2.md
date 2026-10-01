@@ -1,9 +1,11 @@
 ---
 id: 757b4cd5-9d3b-4b08-9268-62c4692703df
-roam-refs: "@luhmann_theory_2013"
 name: Theory of Society, Volume 2
 date-created: 2025-10-04
 visibility: public
+provenance:
+  sources:
+    - "@luhmann_theory_2013"
 ---
 
 # [resource code](../../../../../../../philosophy-services-section/content/text/glossary/terms/resource-code.md)

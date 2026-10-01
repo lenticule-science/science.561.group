@@ -3,7 +3,6 @@ name: "rigid designation"
 aliases:
   - "rigid designation"
 date-created: 2025-12-31
-type: term
 tags: []
 description: A rigid designator is a term that refers to the same object in every possible world where that object exists.
 ---

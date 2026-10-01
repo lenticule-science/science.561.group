@@ -25,7 +25,6 @@ aliases:
 name: "Steward"
 ---
 
-# Steward
 
 ## What this is
 

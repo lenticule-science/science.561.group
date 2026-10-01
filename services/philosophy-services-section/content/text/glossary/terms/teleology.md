@@ -3,15 +3,11 @@
 name: "Teleology"
 date-created: 2026-03-30
 aliases:
-  - "teleology"
   - "teleological"
 instance-of: metaphysics
 description: "Explanation or organization structured by an end, goal, or purpose — where what something is for determines what it does and how it is evaluated."
 contrasts-with: [relational-ontology, anarcho-nihilism, grounded-normativity]
 enables: [proceduralism, epistemic-universalism, cooperative-reciprocity]
-defines:
-  - "teleology"
-  - "teleological"
 ---
 
 Teleology is explanation or organization structured by an end. A teleological system is one where purpose precedes action — where what something is *for* determines what it does, what counts as success, and what counts as deviation. The acorn grows toward the oak. The policy is evaluated by whether it achieves its stated goal. The community is organized toward the society it intends to become.

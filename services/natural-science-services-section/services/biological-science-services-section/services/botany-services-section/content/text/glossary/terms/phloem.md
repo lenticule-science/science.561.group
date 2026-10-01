@@ -10,7 +10,6 @@ keywords:
   - plant-physiology
   - VascularTissue
   - PlantPhysiology
-type: term
 ---
 
 Phloem is the living vascular tissue in plants responsible for transporting sugars, amino acids, hormones, and other organic molecules from sites of production (sources) to sites of consumption or storage (sinks). In most plants, the primary sources are mature leaves, where [photosynthesis](./photosynthesis-as-relation.md) generates sugars, and the primary sinks are growing tissues, roots, fruits, and storage organs. The phloem thus functions as the plant's distribution network, connecting the organs that capture energy to the organs that consume it.

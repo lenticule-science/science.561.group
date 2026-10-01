@@ -10,7 +10,6 @@ keywords:
   - MolecularBiology
 date-updated: 2026-03-09
 part-of: biology/disciplines/genetics/terms
-type: term
 ---
 
 Deoxyribonucleic acid (DNA) is the molecule that stores genetic information in living organisms. It consists of two complementary strands of nucleotides wound into a double helix, a structure first described by James Watson and Francis Crick in 1953, building on X-ray crystallography by Rosalind Franklin and Maurice Wilkins. Each nucleotide contains one of four bases — adenine (A), thymine (T), guanine (G), cytosine (C) — and the sequence of these bases encodes the instructions for building proteins.

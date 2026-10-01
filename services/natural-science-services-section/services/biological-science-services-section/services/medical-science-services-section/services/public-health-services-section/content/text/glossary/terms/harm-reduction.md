@@ -16,7 +16,6 @@ analogous-to: disability-justice
 requires: access-intimacy
 date-updated: 2026-03-09
 component-of: public-health
-type: term
 ---
 
 Harm reduction is a public health approach that aims to reduce the negative consequences of risky behaviors — particularly drug use — without requiring abstinence as a precondition for care. Needle exchanges, naloxone distribution, supervised consumption sites, and safer supply programs all operate on harm reduction principles: meet people where they are, reduce the immediate dangers, and treat survival as the first priority rather than demanding behavioral transformation before offering help.

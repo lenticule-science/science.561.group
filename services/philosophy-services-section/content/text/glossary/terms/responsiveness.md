@@ -1,26 +1,21 @@
 ---
 name: "Responsiveness"
 description: "The fourth phase of Tronto's care model — the criterion by which care's adequacy is judged, asking whether the cared-for actually received what was needed."
-date-created: 2026-03-05T00:00:00
+date-created: 2026-03-05
 date-modified: 2026-03-29
-type: term
 aliases:
-  - "responsiveness"
-defines:
-  - "Responsiveness"
+  []
 component-of: care-ethics
 requires: [attentiveness, motivational-displacement]
 acts-on: particular-other
 measures: care-work
 references:
-  - id: tronto1993
-    type: document
+  tronto1993:
+    authors:
+      - Joan C. Tronto
     title: "Moral Boundaries: A Political Argument for an Ethic of Care"
-    author:
-      - literal: Joan C. Tronto
-    container-title: Routledge
-    issued:
-      - year: 1993
+    year: 1993
+    publication: Routledge
 ---
 
 Responsiveness is the fourth and final phase in Joan Tronto's model of care and the criterion by which the adequacy of care is judged. After care has been noticed (attentiveness), taken up as responsibility (taking care of), and performed as concrete labor (care-giving), responsiveness asks: did the care actually meet the need? How does the cared-for receive and respond to the care given?

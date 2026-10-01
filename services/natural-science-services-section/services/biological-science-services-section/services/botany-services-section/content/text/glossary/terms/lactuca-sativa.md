@@ -7,8 +7,7 @@ aliases:
   - lettuce
   - garden lettuce
   - cultivated lettuce
-related-to:
-  - "[Lettuce cultivation](../../../../../../engineering/domains/domesticity/domains/production/gardening/terms/lettuce.md)"
+see-also: lettuce
 ---
 
 ## Taxonomy and Domestication

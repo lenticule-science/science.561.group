@@ -8,7 +8,6 @@ name: Scale-measure
 description: The morphism by which a many-valued context is projected to a binary context via a chosen scale (per scale).
 ---
 
-# Scale-measure
 
 The morphism by which a many-valued context is projected to a binary context via a chosen scale (per [scale](../../documents/articles/research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/knowing/content/knowledge-science/systems/archive/teaching/explanations/scale.md)). Given a many-valued context $(G, M, W, I)$ where $I: G \times M \rightharpoonup W$, and for each many-valued attribute $a \in M$ a scale $\mathbb{S}_a = (W_a, N_a, J_a)$ with $W_a \supseteq \mathrm{range}(I({-}, a))$, the **derived (binary) context** $\mathbb{K}_{\mathbb{S}}$ has:
 

@@ -6,7 +6,6 @@ aliases:
 keywords:
   - IndigenousResurgence
 description: "The right of peoples to define their own food systems — what they grow, how they grow it, and how it circulates — rather than having food systems determined by market forces."
-type: term
 ---
 
 Food sovereignty is the right of peoples to define their own food systems: what they grow, how they grow it, and how food circulates within and between communities. The concept was articulated as a political framework by La Via Campesina at the World Food Summit in 1996. It goes beyond food security — which asks only whether a population has enough food — to insist on community control over agricultural practices, seed systems, land use, and the social relations of food production. A population can be food-secure while having no sovereignty over its food system, as when communities depend entirely on imported commodities or industrial supply chains they do not control.

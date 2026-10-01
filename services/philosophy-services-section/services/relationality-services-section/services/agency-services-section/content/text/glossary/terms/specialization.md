@@ -14,7 +14,6 @@ name: Specialization
 description: "The operation by which a sign-vehicle (or coded-pairing) in a semiotic system is refined to a more-specific one along the system's paradigmatic sub-structure: $f: V{\\mathrm{specific}} \\to V{\\mathrm{general}}$ in the system's…"
 ---
 
-# Specialization
 
 The operation by which a sign-vehicle (or coded-pairing) in a [semiotic system](semiotic-system.md) is *refined* to a more-specific one along the system's [paradigmatic](../concepts/paradigm.md) sub-structure: $f: V_{\mathrm{specific}} \to V_{\mathrm{general}}$ in the system's vehicle-category, with the dual operation $f^*$ pulling general-position interpretants back to specific ones.
 

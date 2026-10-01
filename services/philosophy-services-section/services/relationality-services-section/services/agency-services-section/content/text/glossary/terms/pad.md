@@ -6,10 +6,9 @@ aliases:
   - "Pad"
   - "pad"
   - "pad directive"
-date-created: 2026-03-06T00:00:00
+date-created: 2026-03-06
 keywords:
   - accounting
-type: term
 ---
 
 A pad directive tells Beancount to insert an automatic transaction that brings an account's balance to the amount required by the next balance assertion.

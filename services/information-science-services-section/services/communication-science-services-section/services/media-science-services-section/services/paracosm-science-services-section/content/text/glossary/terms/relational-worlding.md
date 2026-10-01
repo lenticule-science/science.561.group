@@ -9,7 +9,6 @@ tags: []
 date-modified: 2026-03-09
 part-of: media/topics/worldbuilding/terms
 date-updated: 2026-03-09
-type: term
 ---
 
 Relational worlding is a field-based approach to [worldbuilding](worldbuilding.md) that constructs fictional worlds not from maps, timelines, or [lore](lore.md), but from pressure, friction, and the residue of unresolved tension. The Relational Worlding Grammar (RWG) formalizes this approach as an ontology built from six base entities: fields, actors, traces, alignments, emissions, and methods.

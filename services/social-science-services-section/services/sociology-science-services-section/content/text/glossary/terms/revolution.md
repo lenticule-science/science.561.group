@@ -2,13 +2,10 @@
 name: "Revolution"
 date-created: 2026-03-06
 aliases:
-  - "revolution"
   - "revolutionary"
+  - Revolution (anarchist)
 tags: []
 description: "The fundamental transformation of social relations — not the seizure of state power by new rulers, but the abolition of the hierarchical structures that make rulers possible."
-type: term
-defines:
-  - "Revolution (anarchist)"
 ---
 
 Revolution, in [anarchist](../_index.md) use, is the fundamental transformation of social relations — the dismantling of [hierarchy](./hierarchy.md), [authority](./authority.md), and [domination](./domination.md) and their replacement with [voluntary association](../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/notes/undated/voluntary-association.md), [mutual aid](../../../../services/critical-theory-science-services-section/services/anarchism-services-section/services/organization-services-section/content/text/glossary/terms/mutual-aid.md), and [self-organization](../../../../services/critical-theory-science-services-section/services/anarchism-services-section/content/text/glossary/terms/self-organization.md). It is not the replacement of one set of rulers with another.

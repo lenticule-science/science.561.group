@@ -6,7 +6,6 @@ aliases:
   - "COVID-19"
 date: 2026-02-23T10:08:00
 tags: []
-type: term
 ---
 
 COVID-19 (Coronavirus Disease 2019) is the respiratory illness caused by the virus SARS-CoV-2. The World Health Organization declared it a pandemic in March 2020. The disease spread worldwide, killing millions, and prompted lockdowns, border closures, and mass vaccination campaigns across most countries.

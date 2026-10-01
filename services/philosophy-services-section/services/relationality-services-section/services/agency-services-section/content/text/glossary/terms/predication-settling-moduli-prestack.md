@@ -7,7 +7,6 @@ name: Settling moduli prestack
 description: "The pseudo-functor $\\mathbf{B}^{\\mathrm{op}} \\to \\mathbf{Gpd}$ sending each base $(\\mathbf{L}, \\mathcal{C}, E, \\lambda) \\in \\mathbf{B}$ to its visible settling fiber groupoid:"
 ---
 
-# Settling moduli prestack
 
 The pseudo-functor $\mathbf{B}^{\mathrm{op}} \to \mathbf{Gpd}$ sending each base $(\mathbf{L}, \mathcal{C}, E, \lambda) \in \mathbf{B}$ to its [visible settling fiber groupoid](../../documents/articles/notes/undated/visible-settling-fiber-groupoid.md):
 

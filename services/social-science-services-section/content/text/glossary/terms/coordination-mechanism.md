@@ -1,43 +1,42 @@
 ---
 name: "Coordination Mechanism"
 description: "Henry Mintzberg's term for the basic means by which organizations coordinate the work of their members — mutual adjustment, direct supervision, standardization of work processes, standardization of outputs, standardization of skills, and standardization of norms. The elementary vocabulary of organizational design, with each mechanism appropriate to different complexity, scale, and uncertainty conditions."
-defines: coordination-mechanism
-related: [bureaucracy, scientific-management, role, capability, work-type, labor-process]
 date-created: 2026-05-03
 references:
-  - id: mintzberg1979
-    type: document
+  mintzberg1979:
+    authors:
+      - Henry Mintzberg
     title: "The Structuring of Organizations: A Synthesis of the Research"
-    author:
-      - literal: Henry Mintzberg
-    container-title: Prentice-Hall
-    issued:
-      - year: 1979
-  - id: mintzberg1989
-    type: document
+    year: 1979
+    publication: Prentice-Hall
+  mintzberg1989:
+    authors:
+      - Henry Mintzberg
     title: "Mintzberg on Management: Inside Our Strange World of Organizations"
-    author:
-      - literal: Henry Mintzberg
-    container-title: Free Press
-    issued:
-      - year: 1989
-  - id: thompson1967
-    type: document
+    year: 1989
+    publication: Free Press
+  thompson1967:
+    authors:
+      - James D. Thompson
     title: Organizations in Action
-    author:
-      - literal: James D. Thompson
-    container-title: McGraw-Hill
-    issued:
-      - year: 1967
-  - id: march-simon-1958
-    type: document
+    year: 1967
+    publication: McGraw-Hill
+  march-simon-1958:
+    authors:
+      - James G. March
+      - Herbert A. Simon
     title: Organizations
-    author:
-      - literal: James G. March
-      - literal: Herbert A. Simon
-    container-title: Wiley
-    issued:
-      - year: 1958
+    year: 1958
+    publication: Wiley
+aliases:
+  - coordination-mechanism
+see-also:
+  - bureaucracy
+  - scientific-management
+  - role
+  - capability
+  - work-type
+  - labor-process
 ---
 
 A **coordination mechanism**, in Henry Mintzberg's sense, is one of a small number of basic means by which organizations coordinate the work of their members.

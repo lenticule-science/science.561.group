@@ -9,13 +9,11 @@ see-also:
   - "/sociology/disciplines/legalism/schools/american-law/index.md"
 references:
   - /sociology/disciplines/legalism/schools/american-law/index.md
-type: term
 tags:
   - Legalism
   - AmericanLaw
-defines:
-  - "character evidence"
-  - "character exhibit"
+aliases:
+  - character exhibit
 ---
 
 Character evidence is testimony, documentation, or material artifacts entered into a legal proceeding to establish the nature, orientation, or disposition of a party — typically an institution or individual. In American law, character evidence is governed by specific rules (Federal Rules of Evidence 404-405 and their state equivalents), but the sociological interest lies not in the rules but in the formatting effects.

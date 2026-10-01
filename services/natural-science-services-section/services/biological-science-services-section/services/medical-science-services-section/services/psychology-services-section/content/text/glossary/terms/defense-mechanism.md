@@ -15,7 +15,6 @@ acts-on: affect
 produced-by: trauma
 component-of: psychopathology
 analogous-to: character-armor
-type: term
 ---
 
 Defense mechanisms are automatic psychological operations that protect the person from experiencing intolerable anxiety, pain, or threats to their self-concept. They operate unconsciously — the person does not choose to deploy them and typically does not recognize their operation. The concept originates with Sigmund Freud and was systematized by Anna Freud in *The Ego and the Mechanisms of Defence* (1936).

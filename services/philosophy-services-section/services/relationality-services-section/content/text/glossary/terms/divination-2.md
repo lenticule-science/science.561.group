@@ -3,7 +3,6 @@ name: "divination"
 aliases:
   - "divination"
 date-created: 2025-12-31
-type: term
 tags: []
 description: Divination is a family of interpretive practices that seek insight, guidance, or knowledge through the reading of patterns, signs, or chance events.
 ---

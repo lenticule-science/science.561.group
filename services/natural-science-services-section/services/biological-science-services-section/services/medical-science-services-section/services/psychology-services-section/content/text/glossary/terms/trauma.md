@@ -16,7 +16,6 @@ acts-on: [affect, attachment, nervous-system]
 produces: defense-mechanism
 component-of: [psychopathology, biopsychosocial-model]
 optimized-by: somatic-experiencing
-type: term
 ---
 
 Trauma is defined not by the event but by the organism's response to it. A traumatic experience is one that overwhelms the [nervous system's](../../../../../human-body-services-section/content/text/documents/articles/notes/the-nervous-system.md) capacity to process, integrate, and resolve the threat. The same event — a car accident, an assault, a natural disaster — may be traumatic for one person and not another, depending on their resources, support, history, and nervous system capacity at the time.

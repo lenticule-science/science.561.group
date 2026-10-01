@@ -12,21 +12,19 @@ aliases:
   - self-attention
   - transformer architecture
 references:
-  - id: vaswani2017
-    type: document
+  vaswani2017:
+    authors:
+      - Ashish Vaswani
+      - Noam Shazeer
+      - Niki Parmar
+      - Jakob Uszkoreit
+      - Llion Jones
+      - Aidan N. Gomez
+      - Lukasz Kaiser
+      - Illia Polosukhin
     title: Attention Is All You Need
-    author:
-      - literal: Ashish Vaswani
-      - literal: Noam Shazeer
-      - literal: Niki Parmar
-      - literal: Jakob Uszkoreit
-      - literal: Llion Jones
-      - literal: Aidan N. Gomez
-      - literal: Lukasz Kaiser
-      - literal: Illia Polosukhin
-    container-title: Advances in Neural Information Processing Systems
-    issued:
-      - year: 2017
+    year: 2017
+    publication: Advances in Neural Information Processing Systems
 ---
 
 The transformer is a [neural network](./neural-network.md) architecture introduced by Vaswani et al. in "Attention Is All You Need" (2017). It processes input sequences using **self-attention** — a mechanism that allows every element in a sequence to attend to every other element, computing relevance weights dynamically rather than relying on fixed-distance connections. This replaced the recurrent architectures (LSTMs, GRUs) that previously dominated sequence modeling, which processed inputs one step at a time and struggled with long-range dependencies.

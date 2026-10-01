@@ -12,7 +12,6 @@ name: PCA — Partial Combinatory Algebra
 description: "A partial combinatory algebra (PCA) is a set $A$ with a partial binary operation $\\cdot$ satisfying the existence of two elements $k, s \\in A$ such that for all $a, b, c \\in A$:"
 ---
 
-# PCA — Partial Combinatory Algebra
 
 A **partial combinatory algebra** (PCA) is a set $A$ with a partial binary operation $\cdot$ satisfying the existence of two elements $k, s \in A$ such that for all $a, b, c \in A$:
 

@@ -9,7 +9,6 @@ name: Operations causal settling
 description: The substrate-algebraic structure of operational time — which dispatch events causally precede which others, which are independent (parallelizable), which are unreachable from each other across the operations base.
 ---
 
-# Operations causal settling
 
 The substrate-algebraic structure of *operational time* — which dispatch events causally precede which others, which are independent (parallelizable), which are unreachable from each other across the operations base. Instantiates the [Lorentzian causal-structure settling](../../../../../../../information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/obsmetrologia/docs/verso/mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/content/lorentzian-causal-settling/lorentzian-causal-settling.md) on the operations base's event set.
 

@@ -1,37 +1,30 @@
 ---
 name: "Bottleneck"
 description: "The constraint that limits the throughput of the entire system — the single resource whose capacity determines how fast work flows."
-defines: bottleneck
 date-created: 2026-04-03
 instance-of: constraint
 constrains: [system, flow]
 part-of-stage: tracking
 references:
-  - id: goldratt1984
-    type: document
+  goldratt1984:
+    authors:
+      - Eliyahu M. Goldratt
+      - Jeff Cox
     title: "The Goal: A Process of Ongoing Improvement"
-    author:
-      - literal: Eliyahu M. Goldratt
-      - literal: Jeff Cox
-    container-title: North River Press
-    issued:
-      - year: 1984
-  - id: reinertsen2009
-    type: document
+    year: 1984
+    publication: North River Press
+  reinertsen2009:
+    authors:
+      - Donald G. Reinertsen
     title: The Principles of Product Development Flow
-    author:
-      - literal: Donald G. Reinertsen
-    container-title: Celeritas Publishing
-    issued:
-      - year: 2009
-  - id: little1961
-    type: document
+    year: 2009
+    publication: Celeritas Publishing
+  little1961:
+    authors:
+      - John D. C. Little
     title: "A Proof for the Queuing Formula: L = λW"
-    author:
-      - literal: John D. C. Little
-    container-title: Operations Research, 9(3)
-    issued:
-      - year: 1961
+    year: 1961
+    publication: Operations Research, 9(3)
 ---
 
 A bottleneck is the [constraint](../../../../terms/constraint.md) that limits the throughput of the entire system.

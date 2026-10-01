@@ -8,13 +8,11 @@ see-also:
   - "/sociology/disciplines/legalism/index.md"
 references:
   - /sociology/disciplines/legalism/index.md
-type: term
 tags:
   - Legalism
-defines:
-  - "administrative law"
-  - "regulatory law"
-  - "administrative state"
+aliases:
+  - regulatory law
+  - administrative state
 ---
 
 Administrative law is the body of rules governing the creation, operation, and judicial review of government agencies — the regulatory bodies that administer everything from environmental protection to food safety to immigration to broadcasting. The administrative state is where most governance actually happens: Congress passes broad statutes; agencies write the detailed rules, issue permits, conduct inspections, and impose penalties.

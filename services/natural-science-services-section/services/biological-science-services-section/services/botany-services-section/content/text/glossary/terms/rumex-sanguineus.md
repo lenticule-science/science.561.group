@@ -8,8 +8,7 @@ aliases:
   - red-veined dock
   - sorrel
   - docks
-related-to:
-  - "[Bloody dock cultivation](../../../../../../engineering/domains/domesticity/domains/production/gardening/terms/bloody-dock.md)"
+see-also: bloody-dock
 ---
 
 ## Taxonomy and Biogeography

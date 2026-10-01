@@ -1,6 +1,6 @@
 ---
 name: "Filipendula Ulmaria"
-date-created: 2026-03-04T00:00:00
+date-created: 2026-03-04
 ---
 
 Common name: meadowsweet.

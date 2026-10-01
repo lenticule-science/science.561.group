@@ -1,7 +1,7 @@
 ---
 id: thing
 description: "Anything that can be distinguished from everything else — the base of all other concepts."
-aliases: [ things, thing, Thing, Thing - things ]
+aliases: [ things, Thing - things ]
 date-created: 2026-03-04
 date-modified: 2026-03-29
 type: structure
@@ -17,9 +17,6 @@ extended-by:
   - container
   - vessel
   - event
-dg-permalink: thing
-dg-publish: true
-defines: thing
 name: Thing
 ---
 

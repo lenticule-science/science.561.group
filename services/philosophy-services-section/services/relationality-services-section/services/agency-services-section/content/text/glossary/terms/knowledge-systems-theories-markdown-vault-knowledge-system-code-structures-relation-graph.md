@@ -12,7 +12,6 @@ name: Relation graph
 description: The relation graph of a vault is the typed multi-graph whose nodes are the vault's notes and whose edges are the typed relations declared in their frontmatter.
 ---
 
-# Relation graph
 
 The **relation graph** of a [vault](../../../../../../../../../engineering-science-services-section/services/computer-science-services-section/services/markdown-services-section/content/text/glossary/terms/vault.md) is the typed multi-graph whose nodes are the vault's [notes](../../documents/articles/research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/knowing/content/knowledge-science/systems/archive/note.md) and whose edges are the typed relations declared in their frontmatter.
 

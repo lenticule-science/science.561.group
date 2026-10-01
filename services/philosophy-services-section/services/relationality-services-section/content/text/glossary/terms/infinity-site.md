@@ -7,7 +7,6 @@ aliases:
   - infinity site
   - infinity-site
   - ∞-site
-type: term
 ---
 
 An ∞-site is an ∞-category equipped with a Grothendieck topology — a specification of [covering families](./covering-family.md) for each object, satisfying higher-categorical analogues of the axioms for a site. The Grothendieck topology on an ∞-category determines which presheaves (∞-functors to spaces) satisfy the sheaf condition, now understood as homotopy descent.

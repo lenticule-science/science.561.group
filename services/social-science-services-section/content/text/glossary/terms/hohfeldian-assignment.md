@@ -23,7 +23,6 @@ aliases:
 name: "Assignment"
 ---
 
-# Assignment
 
 ## Formal definition
 

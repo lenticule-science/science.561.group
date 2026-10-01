@@ -8,7 +8,6 @@ keywords:
   - Botany
   - Reproduction
   - Coevolution
-type: term
 ---
 
 Pollination: the transfer of pollen from the male structures (stamens) to the female structures (carpels) of a [flower](./flower.md), enabling fertilization and [seed](./seed.md) production. Pollen grains, produced in the anther of the stamen, contain the male gametophyte — the cells that will ultimately deliver sperm to the ovule. When pollen lands on a compatible stigma (the receptive surface of the carpel), it germinates, extending a pollen tube through the style to the ovule, where fertilization occurs. This process is the critical link between the flower and the seed.

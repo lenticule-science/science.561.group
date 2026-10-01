@@ -7,7 +7,6 @@ name: Type checking
 description: "Type checking is the operator (and the algorithm implementing it) that decides whether a given typing-judgment $\\Gamma \\vdash M : A$ holds."
 ---
 
-# Type checking
 
 **Type checking** is the operator (and the algorithm implementing it) that decides whether a given [typing-judgment](typing-judgment.md) $\Gamma \vdash M : A$ holds. The input is a [typing-context](typing-context.md), a term, and a candidate type; the output is *yes* (the judgment is derivable) or *no*.
 

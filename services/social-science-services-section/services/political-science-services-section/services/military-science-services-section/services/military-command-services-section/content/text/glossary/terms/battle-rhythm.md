@@ -18,7 +18,6 @@ references:
     publication: "Field Manual 6-0 (5 May 2014; Change 1, 26 Mar 2015)"
 cites:
   - usarmy2014fm6
-type: term
 ---
 
 Battle rhythm is a deliberate daily cycle of command, staff, and unit activities intended to synchronize current and future operations [@usarmy2014fm6].

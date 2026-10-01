@@ -2,15 +2,12 @@
 name: "Recuperation"
 date-created: 2026-03-02
 aliases:
-  - "recuperation"
   - "co-optation"
   - cooptation
 tags: []
 description: "The process by which radical ideas, practices, and aesthetics are absorbed into dominant culture and stripped of their oppositional content."
 keywords:
   - Anarchism
-defines: "recuperation"
-type: term
 ---
 
 Recuperation is the process by which radical ideas, practices, and aesthetics are absorbed into dominant culture, stripped of their oppositional content, and repurposed to serve the systems they originally challenged. The term comes from the Situationist International ([Guy Debord](../people/guy-debord.md), Raoul Vaneigem), who argued that [capitalism](../../../../services/critical-theory-science-services-section/services/anarchism-services-section/content/text/glossary/terms/capitalism.md) has the capacity to turn any critique into a commodity — including the critique of commodification itself.

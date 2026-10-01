@@ -14,7 +14,6 @@ keywords:
   - Peirce
   - Logic
 description: "Abduction is Peirce's third mode of inference — the generation of explanatory hypotheses from surprising facts. It is the creative, conjectural moment in semiosis."
-type: term
 ---
 
 Abduction is [Charles Sanders Peirce](../../../../../../../../../knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/charles-sanders-peirce.md)'s name for the mode of inference that generates explanatory hypotheses. Given a surprising observation, abduction asks: what would make this unsurprising? It proposes a possible explanation — not as proven fact but as a conjecture worth investigating. Peirce also called it retroduction and hypothesis; in contemporary philosophy of science, the closest descendant is inference to the best explanation.

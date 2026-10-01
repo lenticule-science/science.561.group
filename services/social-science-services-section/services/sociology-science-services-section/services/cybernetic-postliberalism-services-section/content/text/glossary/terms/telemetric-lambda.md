@@ -3,7 +3,6 @@ name: "Telemetric Lambda"
 date-created: 2025-04-13
 keywords:
   - CyberneticPostliberalism
-type: term
 aliases:
   - Symbolic Form
   - Telemetric lambda
@@ -23,7 +22,6 @@ enfolds:
   - "[modulation systems](modulation systems)"
   - "[recursive sensemaking](recursive sensemaking)"
   - "[signal ontology](signal ontology)"
-date: 2025-04-13
 status: active
 ---
 

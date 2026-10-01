@@ -2,7 +2,6 @@
 name: Identifying Morphism
 description: Story.
 ---
-# Identifying Morphism
 
 *Story.*  Identity maps trivially preserve all recognitions.  Morph witnessing Reflex produces IdentifyMorph.
 

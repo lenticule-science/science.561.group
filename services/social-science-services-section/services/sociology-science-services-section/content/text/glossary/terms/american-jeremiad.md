@@ -5,7 +5,6 @@ aliases:
   - "American jeremiad"
   - "jeremiad"
 tags: []
-type: term
 ---
 
 The American jeremiad is a rhetorical form identified by Sacvan Bercovitch in *The American Jeremiad* (1978). It combines lamentation over present decline with reaffirmation of the community's founding mission, transforming criticism into a ritual of renewal rather than a call for structural change.

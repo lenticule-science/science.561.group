@@ -7,8 +7,7 @@ aliases:
   - Mountain spinach
   - Purple orach growing
   - Atriplex hortensis cultivation
-related-to:
-  - "[Atriplex hortensis botanical term](../../../../../../../../science/theories/biology/theories/botany/terms/atriplex-hortensis.md)"
+see-also: atriplex-hortensis
 ---
 
 *Atriplex hortensis* is the summer answer to heat-sensitive greens like lettuce and spinach. The species thrives in warm (25–35°C) conditions where other salad crops bolt or stress. The cultivar with deep-purple foliage ('var. atrosanguinea') is particularly striking in mixed plantings.

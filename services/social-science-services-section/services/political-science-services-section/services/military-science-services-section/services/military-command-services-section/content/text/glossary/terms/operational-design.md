@@ -45,7 +45,6 @@ cites:
   - usarmy2015atp5_0_1
   - usmc2020mcwp5_10
   - nato2019ajp5
-type: term
 ---
 
 Operational design is the analytical framework that underpins operational-level planning: it helps commanders and staffs **frame the operational environment**, **define the problem**, and **develop an operational approach** [@jointchiefs2011jp5].

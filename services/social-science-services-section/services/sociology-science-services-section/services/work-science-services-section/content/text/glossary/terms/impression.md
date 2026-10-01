@@ -4,7 +4,6 @@ name: "Impression"
 description: "An impression is a single instance of an advertisement being loaded and displayed to a user. It is the fundamental unit of measurement in digital advertising — the atomic event that the entire [programmatic advertising](./programmatic-advertising.md) system is built to produce and count."
 date-created: 2026-03-29
 aliases:
-  - "impression"
   - "ad impression"
   - "impressions"
 keywords:
@@ -13,15 +12,11 @@ keywords:
   - advertising
   - metrics
 part-of: business/theories/web/terms
-type: term
 tags:
   - Business
   - Web
   - Advertising
   - Metrics
-defines:
-  - "Impression"
-  - "ad impression"
 ---
 
 An impression is a single instance of an advertisement being loaded and displayed to a user. It is the fundamental unit of measurement in digital advertising — the atomic event that the entire [programmatic advertising](./programmatic-advertising.md) system is built to produce and count.

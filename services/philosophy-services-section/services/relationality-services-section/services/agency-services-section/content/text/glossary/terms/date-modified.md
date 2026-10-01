@@ -6,7 +6,6 @@ description: The date an entity was last substantively changed.
 
 The date an entity was last substantively changed. Updated whenever the entity's content changes.
 
-# Date Modified
 
 ## What this is
 

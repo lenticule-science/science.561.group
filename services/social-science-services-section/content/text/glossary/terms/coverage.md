@@ -1,31 +1,26 @@
 ---
 name: "Coverage"
 description: "The invariant that all required time intervals are staffed — what shifts, watches, and rosters exist to maintain."
-defines: coverage
 date-created: 2026-04-04
 instance-of: constraint
 applies-to: [shift, watch, roster, operations]
 constrains: [assignment, roster, handoff]
 part-of-stage: planning
 references:
-  - id: mintzberg1979
-    type: document
+  mintzberg1979:
+    authors:
+      - Henry Mintzberg
     title: The Structuring of Organizations
-    author:
-      - literal: Henry Mintzberg
-    container-title: Prentice-Hall
-    issued:
-      - year: 1979
-  - id: dittman2016
-    type: document
+    year: 1979
+    publication: Prentice-Hall
+  dittman2016:
+    authors:
+      - Jeremy P. Dittman
+      - Lara Khaldi
+      - Ruben D. Ortega
     title: "Continuous Operations: Organizational Models and Staffing Strategies"
-    author:
-      - literal: Jeremy P. Dittman
-      - literal: Lara Khaldi
-      - literal: Ruben D. Ortega
-    container-title: Journal of Organizational Design
-    issued:
-      - year: 2016
+    year: 2016
+    publication: Journal of Organizational Design
 ---
 
 Coverage is the organizational invariant that ensures every required [interval](interval.md) has at least one assigned agent responsible for a function.

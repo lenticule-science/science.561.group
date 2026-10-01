@@ -2,17 +2,14 @@
 name: "Communication"
 date-created: 2026-03-07
 aliases:
-  - "Communication"
-  - "communication"
+  []
 keywords:
   - sociology
 description: "The process by which meaning is produced, circulated, and received between people — not merely the transmission of messages but the social activity through which shared reality is constructed, contested, and maintained."
 date-modified: 2026-03-09
 part-of: sociology/schools/anarchism/schools/anarchist-communication/terms
-type: term
 tags:
   - Sociology
-defines: "communication"
 date-updated: 2026-03-09
 ---
 

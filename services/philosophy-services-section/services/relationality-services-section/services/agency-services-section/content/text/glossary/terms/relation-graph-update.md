@@ -15,7 +15,6 @@ name: Relation graph update
 description: The relation-graph-update morphism is the operation that updates the vault's relation graph in response to a vault edit (note added, note edited, note deleted, note relocated).
 ---
 
-# Relation graph update
 
 The **relation-graph-update morphism** is the operation that updates the vault's [relation graph](../../documents/articles/research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/knowing/content/objects/relation-graph.md) in response to a vault edit (note added, note edited, note deleted, note relocated). It is the morphism that closes the loop between the vault's primary representation (notes as files) and its derived representation (the typed multi-graph of frontmatter edges).
 

@@ -1,6 +1,5 @@
 ---
 name: "Stellar classification"
-type: term
 component-of: stellar-astronomy
 ---
 

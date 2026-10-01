@@ -9,7 +9,6 @@ keywords:
   - Mycology
   - Symbiosis
   - CellBiology
-type: term
 ---
 
 

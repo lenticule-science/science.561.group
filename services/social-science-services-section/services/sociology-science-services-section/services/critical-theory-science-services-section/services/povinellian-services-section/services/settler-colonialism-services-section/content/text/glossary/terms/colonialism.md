@@ -2,15 +2,10 @@
 name: "Colonialism"
 date-created: 2026-03-06
 aliases:
-  - "colonialism"
   - "colonial"
   - "settler colonialism"
 tags: []
 description: "The domination and dispossession of one people by another through the seizure of land, the destruction of governance systems, and the imposition of the colonizer's authority — a form of hierarchy anarchism opposes as inseparable from state power and capitalism."
-defines:
-  - "Colonialism"
-  - "colonial"
-type: term
 ---
 
 Colonialism is the [domination](../../../../../../../../../../content/text/glossary/terms/domination.md) and dispossession of one people by another — the seizure of their land, the destruction of their governance systems, the extraction of their resources and labor, and the imposition of the colonizer's [authority](../../../../../../../../../../content/text/glossary/terms/authority.md) over every aspect of life. It is not an event that happened in the past. For Indigenous peoples living under settler states — the United States, Canada, Australia, Israel, and others — colonialism is an ongoing structure: the land is still taken, the governance systems are still suppressed, the resources are still extracted, and the colonizer's [state](../../../../../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/notes/undated/the-state.md) still claims [authority](../../../../../../../../../../content/text/glossary/terms/authority.md) over Indigenous nations.

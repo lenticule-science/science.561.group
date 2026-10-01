@@ -1,7 +1,7 @@
 ---
 
 description: "A specific, measurable, time-bounded target that serves a broader goal — decidable (achieved or not), trackable (progress metric), and grounded in SMART/OKR traditions."
-aliases: [objectives]
+aliases: [ objectives, Objective ]
 contrasts-with: [goal, intent, task]
 instance-of: work
 traditions: [doran-smart, grove-okr]
@@ -24,13 +24,12 @@ ast:
         - target
         - relational-history-fiber-fixed-layer
 id: objective
-defines: Objective
-related: Goal, Teleology, Intent, Endeavor, Will, Report, Discharge
 where:
 - $o$ is the **specific target element** — a concrete, measurable element of $H_t$ whose settlement in $H^*_\tau$ constitutes achievement; $o$ is more specific than the goal $g$ it serves: where $g$ may be broad ("improve operational effectiveness"), $o$ is bounded and decidable ("complete this specific inspection by this date")
 - $g$ is the **goal** the objective serves — $o \leq g$ in the fiber order, so that driving $o$ to settlement contributes to driving $g$ toward settlement; the objective is a decomposition of the goal into a specific, tractable sub-target
 - $m : H_t \to [0,1]$ is the **progress metric** — a function that tracks how close $o$ is to settlement at the current history; $m(o) = 0$ means no progress; $m(o) = 1$ means achieved ($o \in H^*_t$); $m$ is what makes the objective *measurable* in the SMART sense — without $m$, there is no way to track progress toward $\tau$
 - $\tau$ is the **deadline** — the specific target history at which $o$ must be in $H^*_\tau$; $\tau$ converts the objective into a time-bounded commitment; without $\tau$, a goal can be perpetually deferred; $\tau$ makes deferral a failure
+see-also: goal-teleology-intent-endeavor-will-report-discharge
 ---
 
 An objective is a specific, measurable, time-bounded target that serves a broader goal. It has four parts: a target (what counts as achieved), a goal it serves (the broader direction), a progress metric (how to track movement), and a deadline (when it must be achieved by).

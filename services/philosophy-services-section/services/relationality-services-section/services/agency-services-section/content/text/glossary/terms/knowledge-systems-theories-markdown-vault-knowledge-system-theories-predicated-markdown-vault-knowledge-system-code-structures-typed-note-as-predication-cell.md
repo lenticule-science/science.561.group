@@ -17,7 +17,6 @@ name: Typed note as predication cell
 description: The formal identification of a typed note with a predication-cell on the substrate.
 ---
 
-# Typed note as predication cell
 
 The formal identification of a typed [note](../../documents/articles/research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/knowing/content/knowledge-science/systems/archive/teaching/explanations/note.md) with a [predication-cell](../../documents/articles/research/2026/07/31/lenticule-import/animating/content/humanities/theories/math/theories/categories/theories/predication-categories/concepts/predication-cell.md) on the substrate. Under this identification a markdown-vault knowledge system is a [predicated knowledge system](../../documents/articles/research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/knowing/predicated-knowledge-systems/objects/predicated-knowledge-system.md) whose substrate entities are file-system paths and whose predicate vocabulary is the established frontmatter-relation set.
 

@@ -28,7 +28,6 @@ references:
     publication: "The United States Army"
     year: 2025
     url: "https://www.army.mil/article/283214/tmd_publishes_training_circular_to_augment_fm_and_adp_7_0"
-type: term
 ---
 
 A rehearsal is a structured pre-execution practice through which a

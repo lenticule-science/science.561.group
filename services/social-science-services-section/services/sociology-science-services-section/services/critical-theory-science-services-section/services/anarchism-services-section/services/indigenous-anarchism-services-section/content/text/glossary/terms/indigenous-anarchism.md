@@ -2,17 +2,14 @@
 name: "Indigenous Anarchism"
 date-created: 2026-03-02
 aliases:
-  - "Indigenous anarchism"
+  []
 keywords:
   - decolonization
 description: "The recognition that many Indigenous governance systems embody what anarchist analysis describes — non-hierarchy, consensus, direct democracy — without deriving from the European anarchist tradition."
 date-modified: 2026-03-09
 part-of: sociology/schools/anarchism/schools/indigenous-anarchism/terms
-type: term
 tags:
   - Decolonization
-defines:
-  - "Indigenous Anarchism"
 date-updated: 2026-03-09
 ---
 

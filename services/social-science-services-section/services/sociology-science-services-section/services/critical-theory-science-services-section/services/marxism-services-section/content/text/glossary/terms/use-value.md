@@ -1,7 +1,7 @@
 ---
 name: "Use-Value"
 description: "Use-value is the usefulness of a thing for satisfying a human need or want. A coat keeps someone warm; a loaf of bread feeds someone. [Karl Marx](../../../../../../../../../../../../../references/people/karl-marx.md) opens *Capital* (1867) with the distinction between use-value and [exchange-value](exchange-value.md) because the commodity is the unity of both, and the tension between them drives the analysis forward."
-date-created: 2026-03-03T00:00:00
+date-created: 2026-03-03
 aliases:
   - "use-value"
   - "use value"

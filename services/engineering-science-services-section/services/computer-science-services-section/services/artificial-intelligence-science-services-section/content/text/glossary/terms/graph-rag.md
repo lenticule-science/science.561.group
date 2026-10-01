@@ -1,7 +1,6 @@
 ---
 name: "GraphRAG"
 description: "A retrieval-augmented generation pattern that retrieves from a knowledge graph rather than a flat vector store — using entity relationships to answer multi-hop queries that standard RAG cannot."
-defines: GraphRAG
 domain: artificial-intelligence
 extends: retrieval-augmented-generation
 requires: embedding
@@ -10,31 +9,27 @@ contrasts-with: retrieval-augmented-generation
 date-created: 2026-03-29
 date-modified: 2026-03-29
 references:
-  - id: edge2024
-    type: document
+  edge2024:
+    authors:
+      - D. Edge
+      - H. Trinh
+      - N. Cheng
+      - J. Bradley
+      - A. Chao
+      - A. Mody
+      - S. Truitt
+      - J. Larson
     title: "From Local to Global: A Graph RAG Approach to Query-Focused Summarization"
-    author:
-      - literal: D. Edge
-      - literal: H. Trinh
-      - literal: N. Cheng
-      - literal: J. Bradley
-      - literal: A. Chao
-      - literal: A. Mody
-      - literal: S. Truitt
-      - literal: J. Larson
-    container-title: arXiv
-    issued:
-      - year: 2024
-    URL: https://arxiv.org/abs/2404.16130
-  - id: syseval2025
-    type: document
+    year: 2024
+    publication: arXiv
+    url: https://arxiv.org/abs/2404.16130
+  syseval2025:
+    authors:
+      - Various
     title: "RAG vs. GraphRAG: A Systematic Evaluation"
-    author:
-      - literal: Various
-    container-title: arXiv
-    issued:
-      - year: 2025
-    URL: https://arxiv.org/abs/2502.11371
+    year: 2025
+    publication: arXiv
+    url: https://arxiv.org/abs/2502.11371
 cites:
   - edge2024
   - syseval2025

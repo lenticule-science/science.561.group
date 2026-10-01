@@ -8,12 +8,10 @@ see-also:
   - "/sociology/disciplines/legalism/index.md"
 references:
   - /sociology/disciplines/legalism/index.md
-type: term
 tags:
   - Legalism
-defines:
-  - "sovereignty"
-  - "sovereign"
+aliases:
+  - sovereign
 ---
 
 Sovereignty is the claim to supreme authority within a defined territory — the power to make, enforce, and adjudicate law without answering to a higher authority. In its classical formulation (Jean Bodin, Thomas Hobbes), sovereignty is indivisible and absolute: there must be a final decision-maker whose authority is not subject to review. In practice, sovereignty is distributed, contested, and layered.

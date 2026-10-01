@@ -2,13 +2,9 @@
 
 name: "evidentiary credentialing"
 aliases:
-  - "evidentiary credentialing"
   - "evidentiary credential"
 date-created: 2026-03-06
 tags: []
-type: term
-defines:
-  - "evidentiary credentialing"
 ---
 
 Evidentiary credentialing is the process by which a legal proceeding transforms a cultural practice into a marker of institutional character. When a practice is entered into evidence as proof that an institution operates in good faith, serves a community, or maintains a particular orientation, the practice acquires a new function: it becomes something institutions must perform to maintain their legal and reputational standing, regardless of whether the practice retains the qualities that made it meaningful in its original context.

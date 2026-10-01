@@ -7,7 +7,8 @@ date-modified: 2026-09-27
 extends: Work
 component-of: OperationItem
 id: work-unit
-defines: WorkUnit
+aliases:
+  - WorkUnit
 ---
 
 A work unit is a concrete, fully specified instance of [work](./work.md). All parameters are bound to specific values: who does it, what they do it to, what operation they perform, and what output they produce. Nothing is left open.

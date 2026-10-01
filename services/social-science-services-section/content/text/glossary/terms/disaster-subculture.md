@@ -1,11 +1,9 @@
 ---
 name: "Disaster Subculture"
-date-created: 2026-03-08T00:00:00
+date-created: 2026-03-08
 authors:
   - claude
-type: term
 aliases:
-  - "disaster subculture"
   - "disaster subcultures"
 keywords:
   - DisasterStudies
@@ -13,32 +11,25 @@ keywords:
   - CollectiveBehavior
   - Preparedness
 description: "A community's preserved residue of learning about recurrent hazards, expressed in knowledge, norms, practices, and organizational expectations."
-defines:
-  - "disaster subculture"
-  - "disaster subcultures"
 cites:
   - wengerweller1973
   - anderson1965
 references:
-  - id: wengerweller1973
-    type: document
+  wengerweller1973:
+    authors:
+      - Dennis E. Wenger
+      - Jack M. Weller
     title: "Disaster Subcultures: The Cultural Residues of Community Disasters"
-    author:
-      - literal: Dennis E. Wenger
-      - literal: Jack M. Weller
-    container-title: Disaster Research Center
-    issued:
-      - year: 1973
-    URL: https://udspace.udel.edu/items/cdb691c2-8046-4658-b29b-df8d78fa2a71
-  - id: anderson1965
-    type: document
+    year: 1973
+    publication: Disaster Research Center
+    url: https://udspace.udel.edu/items/cdb691c2-8046-4658-b29b-df8d78fa2a71
+  anderson1965:
+    authors:
+      - William A. Anderson
     title: "Some Observations On A Disaster Subculture: The Organizational Response Of Cincinnati, Ohio, To The 1964 Flood"
-    author:
-      - literal: William A. Anderson
-    container-title: Disaster Research Center
-    issued:
-      - year: 1965
-    URL: https://udspace.udel.edu/items/f2b8a7c3-6ec8-4032-b9fc-fec97a360f37
+    year: 1965
+    publication: Disaster Research Center
+    url: https://udspace.udel.edu/items/f2b8a7c3-6ec8-4032-b9fc-fec97a360f37
 tags:
   - disaster-studies
   - culture

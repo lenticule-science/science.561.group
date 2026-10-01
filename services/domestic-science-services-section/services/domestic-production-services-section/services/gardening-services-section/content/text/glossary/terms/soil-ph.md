@@ -6,7 +6,6 @@ aliases:
   - "pH"
 date-created: 2026-03-06
 tags: []
-type: term
 ---
 
 A measure of how acidic or alkaline soil is, on a scale from 0 to 14.

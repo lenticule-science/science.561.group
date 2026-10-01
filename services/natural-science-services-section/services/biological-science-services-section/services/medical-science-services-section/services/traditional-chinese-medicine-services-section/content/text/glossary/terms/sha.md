@@ -6,7 +6,6 @@ aliases:
   - sha syndrome
   - sha disorder
 description: "A historically broad Chinese medical category referring to characteristic acute illness presentations and surface signs, later central to gua sha theory; not simply a synonym for biomedical bruising."
-type: term
 component-of: traditional-chinese-medicine
 manifested-by: gua-sha
 keywords:

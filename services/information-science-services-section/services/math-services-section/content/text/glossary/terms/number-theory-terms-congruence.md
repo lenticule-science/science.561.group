@@ -5,7 +5,6 @@ aliases:
   - "congruent"
   - "modular congruence"
 date-created: 2026-03-05
-type: term
 tags: []
 description: Two integers $a$ and $b$ are congruent modulo $n$ (written $a \equiv b \pmod{n}$) if $n$ divides $a - b$.
 ---

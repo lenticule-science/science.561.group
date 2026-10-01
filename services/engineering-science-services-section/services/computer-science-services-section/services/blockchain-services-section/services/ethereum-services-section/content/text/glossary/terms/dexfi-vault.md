@@ -1,5 +1,4 @@
 ---
-date: "\\[2025-08-26 Tue 08:43\\]"
 id: b63358cf-e102-4c88-b0ab-2e85874bead5
 name: DexFi vault
 date-created: 2025-08-26

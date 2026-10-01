@@ -4,6 +4,6 @@ aliases:
   - mullein
   - great mullein
   - common mullein
-date-created: "2026-03-04T00:00:00"
+date-created: "2026-03-04"
 invasive-to: "[South Dakota](South Dakota)"
 ---

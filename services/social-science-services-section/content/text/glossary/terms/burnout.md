@@ -1,57 +1,45 @@
 ---
 name: "Burnout"
-date-created: 2026-03-08T00:00:00
+date-created: 2026-03-08
 authors:
   - claude
-type: term
 aliases:
-  - "burnout"
+  []
 keywords:
   - DisasterStudies
   - Labor
   - Sustainment
   - CareWork
 description: "A condition of chronic exhaustion, depersonalization, or reduced sense of accomplishment that can emerge when disaster response stress is not adequately managed."
-defines:
-  - "burnout"
 cites:
   - redcross2021
   - fernandesjesus2021
 references:
-  - id: redcross2021
-    type: article-journal
+  redcross2021:
+    authors:
+      - Paola M. Bagnasco
+      - Elisa Catania
+      - Michela Zanini
+      - Giovanni Aleo
+      - Luca Sasso
     title: "Prevalence of burnout syndrome among Italian volunteers of the Red Cross: a cross-sectional study"
-    volume: 59
-    issue: 2
-    author:
-      - literal: Paola M. Bagnasco
-      - literal: Elisa Catania
-      - literal: Michela Zanini
-      - literal: Giovanni Aleo
-      - literal: Luca Sasso
-    container-title: Industrial Health
-    page: 117-127
-    issued:
-      - year: 2021
-    URL: https://pmc.ncbi.nlm.nih.gov/articles/PMC8010165/
-  - id: fernandesjesus2021
-    type: article-journal
+    year: 2021
+    publication: Industrial Health
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8010165/
+  fernandesjesus2021:
+    authors:
+      - Maria Fernandes-Jesus
+      - Guanlan Mao
+      - Evangelos Ntontis
+      - Chris Cocking
+      - Michael McTague
+      - Anna Schwarz
+      - Joanna Semlyen
+      - John Drury
     title: "More Than a COVID-19 Response: Sustaining Mutual Aid Groups During and Beyond the Pandemic"
-    volume: 12
-    author:
-      - literal: Maria Fernandes-Jesus
-      - literal: Guanlan Mao
-      - literal: Evangelos Ntontis
-      - literal: Chris Cocking
-      - literal: Michael McTague
-      - literal: Anna Schwarz
-      - literal: Joanna Semlyen
-      - literal: John Drury
-    container-title: Frontiers in Psychology
-    page: "716202"
-    issued:
-      - year: 2021
-    URL: https://pmc.ncbi.nlm.nih.gov/articles/PMC8563598/
+    year: 2021
+    publication: Frontiers in Psychology
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8563598/
 tags:
   - disaster-studies
   - labor

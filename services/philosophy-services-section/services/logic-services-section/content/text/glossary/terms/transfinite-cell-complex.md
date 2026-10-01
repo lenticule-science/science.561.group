@@ -6,7 +6,6 @@ name: Transfinite cell complex
 description: A transfinite cell complex is a regular CW-complex-style structure with cell set indexed by a countable ordinal up to $\omega1$.
 ---
 
-# Transfinite cell complex
 
 A **transfinite cell complex** is a regular CW-complex-style structure with cell set indexed by a countable ordinal up to $\omega_1$. The dimension of each individual cell is finite (or countable); the transfinite content is in the *cardinality and indexing* of the cell set, not in cells of transfinite dimension.
 

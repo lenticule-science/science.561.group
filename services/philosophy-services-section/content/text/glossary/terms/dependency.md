@@ -1,37 +1,28 @@
 ---
 name: "Dependency"
 description: "The condition of requiring care from others — treated in care ethics as a fundamental feature of human existence, not a deficiency or deviation from autonomy."
-date-created: 2026-03-05T00:00:00
+date-created: 2026-03-05
 date-modified: 2026-03-29
-type: term
 aliases:
-  - "dependency"
   - "dependencies"
-  - "nested dependency"
-defines:
-  - "Dependency"
   - "nested dependency"
 component-of: care-ethics
 requires: vulnerability
 produces: care-work
 contrasts-with: autonomy
 references:
-  - id: kittay1999
-    type: document
+  kittay1999:
+    authors:
+      - Eva Feder Kittay
     title: "Love's Labor: Essays on Women, Equality and Dependency"
-    author:
-      - literal: Eva Feder Kittay
-    container-title: Routledge
-    issued:
-      - year: 1999
-  - id: fineman2004
-    type: document
+    year: 1999
+    publication: Routledge
+  fineman2004:
+    authors:
+      - Martha Albertson Fineman
     title: "The Autonomy Myth: A Theory of Dependency"
-    author:
-      - literal: Martha Albertson Fineman
-    container-title: The New Press
-    issued:
-      - year: 2004
+    year: 2004
+    publication: The New Press
 ---
 
 Dependency is the condition of requiring care from others. Care ethics treats dependency not as a deficiency or deviation from an ideal of autonomy but as a fundamental feature of human existence. All persons are dependent at some point — as infants, as ill or aging bodies, as members of communities — and many are dependent throughout their lives in ways that liberal political theory systematically renders invisible.

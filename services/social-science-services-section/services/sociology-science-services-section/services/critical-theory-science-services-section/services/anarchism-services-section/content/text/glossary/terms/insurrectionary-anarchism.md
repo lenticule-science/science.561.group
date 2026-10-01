@@ -2,8 +2,6 @@
 name: "Insurrectionary Anarchism"
 date-created: 2026-03-06
 aliases:
-  - "Insurrectionary Anarchism"
-  - "insurrectionary anarchism"
   - "insurrectionism"
 keywords:
   - anarchism
@@ -11,11 +9,7 @@ description: "The anarchist current that emphasizes informal organization, immed
 part-of: sociology/schools/anarchism/schools/insurrectionary-anarchism/terms
 tags:
   - insurrectionary-anarchism
-defines:
-  - "Insurrectionary Anarchism"
-  - "insurrectionism"
 date-modified: 2026-03-09
-type: term
 date-updated: 2026-03-09
 ---
 

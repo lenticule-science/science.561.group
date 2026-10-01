@@ -15,7 +15,6 @@ cites:
   - "The Dialogic Imagination"
   - "Marxism and the Philosophy of Language"
   - "Semiotics: The Basics"
-type: term
 tags:
   - semiotics
   - literary-theory

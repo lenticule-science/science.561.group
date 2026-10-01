@@ -12,9 +12,8 @@ ast:
     - focal-nucleus:
         - focal-fiber
 id: mesofocus
-defines: MesoFocus
-related: Focus, MacroFocus, MicroFocus, Character, RelationalState, Nucleus
 date-modified: 2026-03-20
+see-also: focus-macrofocus-microfocus-character-relationalstate-nucleus
 ---
 
 ## Formal definition

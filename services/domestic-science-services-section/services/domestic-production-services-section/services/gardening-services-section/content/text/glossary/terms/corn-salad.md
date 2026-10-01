@@ -7,8 +7,7 @@ aliases:
   - Lamb's lettuce growing
   - Valerianella cultivation
   - Corn salad growing
-related-to:
-  - "[Valerianella locusta botanical term](../../../../../../../../science/theories/biology/theories/botany/terms/valerianella-locusta.md)"
+see-also: valerianella-locusta
 ---
 
 *Valerianella locusta* is the most cold-hardy leafy green suitable for temperate gardens; nowhere else does such a premium, tender green thrive in winter conditions. Success depends strictly on fall sowing and accepting the winter-only harvest window.

@@ -7,8 +7,7 @@ aliases:
   - Bloody dock growing
   - Sorrel cultivation
   - Rumex sanguineus cultivation
-related-to:
-  - "[Rumex sanguineus botanical term](../../../../../../../../science/theories/biology/theories/botany/terms/rumex-sanguineus.md)"
+see-also: rumex-sanguineus
 ---
 
 *Rumex sanguineus* combines ornamental foliage (striking red veins), edible functionality, and perennial longevity. Once established, a single plant provides multiple harvests over 5–10 years with minimal maintenance.

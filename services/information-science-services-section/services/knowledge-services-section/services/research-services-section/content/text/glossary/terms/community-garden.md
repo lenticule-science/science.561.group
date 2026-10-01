@@ -4,7 +4,7 @@ aliases:
   - community gardens
 date-created: 2026-03-04
 dg-permalink: enc/def/community-garden
-dg-publish: true
+visibility: public
 ---
 
 

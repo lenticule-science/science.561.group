@@ -1,27 +1,22 @@
 ---
 name: "Queue"
 description: "A container that holds work units in a defined order, awaiting dispatch or processing — the buffer between stages of the operations loop."
-defines: queue
 date-created: 2026-04-03
 instance-of: container
 contains: [work-unit, task]
 part-of-stage: dispatch
 references:
-  - id: anderson2010
-    type: document
+  anderson2010:
+    authors:
+      - David J. Anderson
     title: "Kanban: Successful Evolutionary Change for Your Technology Business"
-    author:
-      - literal: David J. Anderson
-    issued:
-      - year: 2010
-  - id: little1961
-    type: document
+    year: 2010
+  little1961:
+    authors:
+      - John D. C. Little
     title: "A Proof for the Queuing Formula: L = λW"
-    author:
-      - literal: John D. C. Little
-    container-title: Operations Research, 9(3)
-    issued:
-      - year: 1961
+    year: 1961
+    publication: Operations Research, 9(3)
 ---
 
 A queue is a [container](../../../../../philosophy-services-section/content/text/glossary/terms/container.md) that holds [work units](../../../../services/sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/work-unit.md) in a defined order, awaiting dispatch or processing.

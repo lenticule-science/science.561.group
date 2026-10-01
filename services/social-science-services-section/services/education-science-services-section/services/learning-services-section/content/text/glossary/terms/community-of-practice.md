@@ -2,7 +2,6 @@
 name: "community of practice"
 description: "A group of people who share a domain of interest and learn through regular mutual engagement, joint enterprise, and shared repertoire"
 aliases:
-  - "community of practice"
   - "communities of practice"
 date-created: 2026-03-06
 tags: []
@@ -31,9 +30,6 @@ references:
     authors:
       - Wenger
     year: 1998
-defines:
-- community of practice
-- communities of practice
 ---
 
 A [community of practice](community-of-practice.md) is a group of people who share a concern or passion for something they do and learn how to do it better as they interact regularly. The term was introduced by [Jean Lave](../../../../../../../../../information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/jean-lave.md) and [Etienne Wenger](../../../../../../../../../information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/etienne-wenger.md) in *Situated Learning* [@lave_SituatedLearning_1991] and developed further in Wenger's *Communities of Practice* [@wenger_CommunitiesOfPractice_1998].

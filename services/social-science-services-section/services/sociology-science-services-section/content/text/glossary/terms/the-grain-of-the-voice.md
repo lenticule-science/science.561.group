@@ -1,8 +1,10 @@
 ---
 id: afd7821f-9197-45fa-9945-fb7025c36cbb
-roam-refs: "@barthes_grain_1985"
 name: The Grain of the Voice
 date-created: 2025-10-04
+provenance:
+  sources:
+    - "@barthes_grain_1985"
 ---
 
 # [resource code](../../../../../../../philosophy-services-section/content/text/glossary/terms/resource-code.md)

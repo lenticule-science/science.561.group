@@ -3,18 +3,12 @@
 name: "Snitch-Jacketing"
 date-created: 2026-03-02
 aliases:
-  - "snitch-jacketing"
   - "snitch jacketing"
   - "bad-jacketing"
 tags: []
 description: "The deliberate false labeling of movement participants as police informants, used by state agencies to destroy trust within political organizations."
 date-modified: 2026-03-09
 part-of: sociology/topics/state-repression/terms
-type: term
-defines:
-  - "Snitch-Jacketing"
-  - "snitch jacketing"
-  - "bad-jacketing"
 date-updated: 2026-03-09
 ---
 

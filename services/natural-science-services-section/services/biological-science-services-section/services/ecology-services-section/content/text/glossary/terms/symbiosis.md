@@ -12,7 +12,6 @@ keywords:
   - Relationality
 date-updated: 2026-03-09
 part-of: biology/disciplines/ecology/terms
-type: term
 ---
 
 Symbiosis is the persistent, intimate association between organisms of different species. The term was coined by Heinrich Anton de Bary in 1879 and encompasses mutualism (both benefit), commensalism (one benefits, the other is unaffected), and parasitism (one benefits at the other's cost). The common thread is obligate relational entanglement: the organisms' lives are constituted through their association.

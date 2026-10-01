@@ -8,7 +8,6 @@ name: Spacetime entity set
 description: Fix a spacetime manifold $(M, g)$ — a four-dimensional Lorentzian manifold satisfying the Einstein equations or, in Lambda-CDM, the FLRW metric on a comoving slice.
 ---
 
-# Spacetime entity set
 
 Fix a [spacetime](../../../../../../../natural-science-services-section/services/physical-science-services-section/services/physics-services-section/content/text/glossary/terms/spacetime.md) manifold $(M, g)$ — a four-dimensional Lorentzian manifold satisfying the Einstein equations or, in [Lambda-CDM](../../../../../../../natural-science-services-section/services/physical-science-services-section/services/astronomy-services-section/services/cosmology-services-section/content/text/glossary/terms/lambda-cdm-model.md), the FLRW metric on a comoving slice. The **spacetime entity set** $E_{\mathrm{cos}}$ is the underlying point set of $M$, considered as the [entity set](../../documents/articles/research/2026/humanities/theories/math/theories/categories/theories/predication-categories/objects/entity-set.md) of the [cosmological settling](../../documents/articles/research/2026/07/31/lenticule-import/entity/_archive/cosmological-settling.md).
 

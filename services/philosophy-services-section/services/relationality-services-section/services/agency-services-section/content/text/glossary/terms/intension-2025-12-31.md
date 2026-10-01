@@ -3,7 +3,6 @@ name: "intension"
 aliases:
   - "intension"
 date-created: 2025-12-31
-type: term
 tags: []
 description: An intension is the rule, concept, or mode of presentation that determines what a term refers to.
 ---

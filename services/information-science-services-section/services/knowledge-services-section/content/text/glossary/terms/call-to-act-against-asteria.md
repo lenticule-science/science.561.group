@@ -10,9 +10,9 @@ mirrors:
 tags: []
 description: A Disneyfied denial of the Haw River's history... and a threat to its possible futures
 date-published: 2023-12-07
-dg-publish: true
 type: "[[argumentative-essay]]"
 series: Catalog of emsenn's Letters to the Web
+visibility: public
 ---
 
 Beneath the saccharine veneer of [[disney]]'s "(topic:: [[Asteria]])" project lies a reality starkly at odds with its advertised "campus of discovery." This (topic:: [[gentrifying|proposed development]]), slated for the [[headwaters of the Haw River]], ignores the centuries of [[Indigenous dispossession]] and [[Black enslavement]] that have ravaged this land, while simultaneously threatening the ecological health of the river and the future of the surrounding communities. From Disney's [press release on Asteria](https://www.prnewswire.com/news-releases/storyliving-by-disney-announces-asteria-new-residential-community-in-north-carolina-302007738.html):

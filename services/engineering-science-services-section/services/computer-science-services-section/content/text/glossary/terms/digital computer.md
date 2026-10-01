@@ -4,7 +4,7 @@ aliases:
   - computer
   - computers
 dg-permalink: enc/def/digital-computer
-dg-publish: true
+visibility: public
 ---
 
 

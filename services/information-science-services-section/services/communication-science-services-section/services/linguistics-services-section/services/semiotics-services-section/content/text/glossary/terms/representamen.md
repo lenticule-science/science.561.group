@@ -8,7 +8,6 @@ keywords:
   - Peirce
 cites:
   - "Collected Papers of Charles Sanders Peirce"
-type: term
 tags:
   - peirce
 references:

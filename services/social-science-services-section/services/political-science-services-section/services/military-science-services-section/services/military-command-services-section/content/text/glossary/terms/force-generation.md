@@ -17,7 +17,6 @@ references:
     publication: "NATO topic page (updated 3 Apr 2025)"
 cites:
   - nato2025troopcontributions
-type: term
 ---
 
 Force generation is the institutional process of producing and assigning ready forces. In NATO usage, it is the process by which Allies (and sometimes partners) resource the personnel and equipment needed to carry out approved operations and missions [@nato2025troopcontributions].

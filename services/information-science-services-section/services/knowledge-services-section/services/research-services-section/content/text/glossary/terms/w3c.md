@@ -7,7 +7,6 @@ aliases:
 keywords:
   - Web
 description: "The main international standards organization for the World Wide Web."
-type: term
 ---
 
 The **World Wide Web Consortium** (**W3C**) is the main international standards organization for the Web. Founded by Tim Berners-Lee in 1994, the W3C develops specifications and guidelines intended to ensure the long-term growth and interoperability of web technologies.

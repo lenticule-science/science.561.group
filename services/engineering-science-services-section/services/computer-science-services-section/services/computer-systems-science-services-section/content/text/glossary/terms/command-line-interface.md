@@ -1,6 +1,5 @@
 ---
 id: 6db3533f-dabe-4555-8179-e4ba18ba4acc
-roam_aliases: CLI
 name: command line interface
 date-created: 2025-08-11
 aliases:

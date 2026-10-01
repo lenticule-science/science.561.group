@@ -7,7 +7,6 @@ keywords:
   - Governance
   - Cybernetics
 description: "Governance that operates through recursive feedback containment rather than top-down directive control."
-type: term
 ---
 
 

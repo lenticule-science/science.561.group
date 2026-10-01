@@ -3,7 +3,6 @@ name: "curriculum"
 description: "A structured sequence of lessons designed to move a learner from a starting state of understanding to a target state of capability"
 date-created: 2025-01-01
 aliases:
-  - curriculum
   - curricula
 tags: []
 produced-by:
@@ -14,9 +13,6 @@ enables:
   - conscientization
 contrasts-with:
   - banking-model
-defines:
-  - "curriculum"
-  - "curricula"
 ---
 
 A curriculum is a structured sequence of lessons designed to move a learner from a starting state of understanding to a target state of capability. In this vault, the term refers to the ordered collections of lessons that live in `curricula/` directories within each discipline module.

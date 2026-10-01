@@ -25,7 +25,6 @@ references:
 cites:
   - usmc2020mcwp5_10
   - usarmy2014fm6
-type: term
 ---
 
 Wargaming is a disciplined planning activity for testing a plan (or a course of action) against **time**, **uncertainty**, and **adaptation**. Its purpose is not prediction; its purpose is to surface what must be decided, what must be known, and what will break [@usmc2020mcwp5_10].

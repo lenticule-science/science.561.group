@@ -2,15 +2,12 @@
 name: "Violence"
 date-created: 2026-03-06
 aliases:
-  - "Violence"
-  - "violence"
+  - violence (anarchist analysis)
 keywords:
   - anarchism
 description: "Anarchism's analysis of violence as asymmetric: the state and capital exercise systematic, ongoing violence that is rendered invisible by its legality and normality, while resistance to this violence is framed as the origin of violence. The question is not 'violence or nonviolence?' but 'whose violence is made invisible?'"
-type: term
 tags:
   - Anarchism
-defines: "violence (anarchist analysis)"
 ---
 
 Violence is the exercise of physical force to damage, restrain, dispossess, or kill. Every political tradition claims to oppose violence. The question [anarchism](../../../../../../../../content/text/glossary/_index.md) asks is: whose violence counts as violence?

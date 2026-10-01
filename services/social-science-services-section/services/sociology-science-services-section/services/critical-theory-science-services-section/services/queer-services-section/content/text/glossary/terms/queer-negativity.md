@@ -1,7 +1,7 @@
 ---
 
 name: "Queer Negativity"
-date-created: 2026-03-06T00:00:00
+date-created: 2026-03-06
 aliases:
   - "queer negativity"
   - "antisocial thesis"

@@ -2,7 +2,6 @@
 name: "Marketing Plan"
 date-created: 2026-03-06
 aliases:
-  - "marketing plan"
   - "marketing strategy"
   - "customer acquisition plan"
 tags: []
@@ -14,9 +13,6 @@ requires:
   - competitive-analysis
 enables: revenue-model
 governed-by: target-market
-defines:
-  - "Marketing Plan"
-  - "marketing strategy"
 date-modified: 2026-03-09
 ---
 

@@ -6,10 +6,12 @@ aliases:
 - multi-user dimension
 - multi-user dungeons
 id: 14cc5094-e5c2-4d53-828b-0da7d5684793
-roam-refs: "https://en.wikipedia.org/wiki/Multi-user_dungeon"
 name: multi-user dungeon
 date-created: 2025-08-23
 visibility: public
+provenance:
+  sources:
+    - https://en.wikipedia.org/wiki/Multi-user_dungeon
 ---
 
 A ***multi-user dungeon*** (MUD, also defined as muti-user dimension or domain) is a virtual environment where multiple [users](../../../../../../../philosophy-services-section/content/text/glossary/terms/user.md) [interact](../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/interacting.md) using a [command line interface](../../../../services/computer-systems-science-services-section/content/text/glossary/terms/command-line-interface.md). MUDs are often [role-playing games](../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/services/being-services-section/services/doing-services-section/services/playing-services-section/services/gaming-services-section/services/role-playing-games-services-section/content/text/glossary/terms/role-playing-game.md), so may be [described](../../../../../../../philosophy-services-section/services/relationality-services-section/content/text/glossary/terms/describing.md) as [similar](../../../../../../../philosophy-services-section/content/text/glossary/terms/similar.md) to [interactive fiction](../../../../../../../philosophy-services-section/content/text/glossary/terms/interactive-fiction-story.md), [tabletop role-playing games](../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/services/being-services-section/services/doing-services-section/services/playing-services-section/services/gaming-services-section/services/role-playing-games-services-section/content/text/glossary/terms/tabletop-role-playing-game.md), and [online chat rooms](../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/online-chat-room.md).

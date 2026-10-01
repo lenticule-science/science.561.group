@@ -8,12 +8,10 @@ see-also:
   - "/sociology/disciplines/legalism/index.md"
 references:
   - /sociology/disciplines/legalism/index.md
-type: term
 tags:
   - Legalism
-defines:
-  - "restorative justice"
-  - "transformative justice"
+aliases:
+  - transformative justice
 ---
 
 Restorative justice is an approach to harm that centers repair over punishment. Instead of asking "what law was broken, who broke it, and what punishment do they deserve?" restorative justice asks "who was harmed, what are their needs, and whose obligation is it to meet those needs?" The shift reframes the legal response to harm from a procedure directed at the offender to a process directed at the relationship between offender, victim, and community.

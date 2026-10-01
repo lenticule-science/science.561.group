@@ -24,7 +24,6 @@ aliases:
 name: "Appeal"
 ---
 
-# Appeal
 
 ## Formal definition
 

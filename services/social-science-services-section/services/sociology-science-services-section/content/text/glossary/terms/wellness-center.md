@@ -2,7 +2,6 @@
 name: Wellness Center
 date-created: 2026-03-08
 aliases:
-- wellness center
 - wellness centers
 tags:
 - disaster-studies
@@ -20,10 +19,6 @@ references:
     url: https://mutualaiddisasterrelief.org/programs/
 authors:
   - claude
-type: term
-defines:
-  - "wellness center"
-  - "wellness centers"
 cites:
   - madrprograms2024
 ---

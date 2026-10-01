@@ -6,7 +6,6 @@ aliases:
 keywords:
   - Decolonization
 description: "The disproportionate placement of environmental hazards — pollution, waste, extraction, industrial facilities — in communities of color and Indigenous communities."
-type: term
 ---
 
 Environmental racism is the disproportionate placement of environmental hazards — toxic waste facilities, polluting industries, resource extraction operations, contaminated water systems — in communities of color and Indigenous communities. The concept was named by Benjamin Chavis (later Chavis Muhammad) in a 1982 study of hazardous waste siting in the United States, which found that race was the strongest predictor of proximity to toxic waste facilities, stronger than income.

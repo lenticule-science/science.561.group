@@ -8,8 +8,7 @@ aliases:
   - Irish potato
   - white potato
   - spud
-related-to:
-  - "[Potato cultivation](../../../../../../engineering/domains/domesticity/domains/production/gardening/terms/potato.md)"
+see-also: potato
 ---
 
 ## Taxonomy and Geographic Origin

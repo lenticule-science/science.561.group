@@ -2,7 +2,6 @@
 name: "land-based education"
 description: "A pedagogical framework in which the land itself is teacher and curriculum, rooted in Indigenous intellectual traditions of place-based, reciprocal relationship"
 aliases:
-  - "land-based education"
   - "land as pedagogy"
 date-created: 2026-03-01
 keywords:
@@ -23,9 +22,6 @@ delivered-via:
 tags:
   - indigenous
   - decolonial
-defines:
-  - land-based education
-  - land as pedagogy
 references:
   - id: simpson_AsWeHaveAlwaysDone_2017
     type: document

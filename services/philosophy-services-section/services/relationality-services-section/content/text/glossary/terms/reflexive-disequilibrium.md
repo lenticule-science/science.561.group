@@ -1,14 +1,11 @@
 ---
 name: "Reflexive Disequilibrium"
-date-created: 2026-03-02T00:00:00
-type: term
+date-created: 2026-03-02
 keywords:
   - relationality
 description: Reflexive disequilibrium is the failure of residuated sufficiency between distinct recognitions of the same cosmological field.
 tags:
   - Relationality
-defines:
-  - "Reflexive Disequilibrium"
 ---
 
 Reflexive disequilibrium is the failure of [residuated sufficiency](../../../slop/relationality/ai-generated-relationality/relationality-slop-2026-03-03/terms/index.md) between distinct recognitions of the same cosmological field.

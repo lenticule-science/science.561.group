@@ -5,7 +5,6 @@ aliases:
   - line height
 date-created: 2025-12-31
 tags: []
-type: term
 ---
 
 **Line height** (also called *leading*, from the lead strips once placed between lines of metal type) is the vertical distance from one baseline of text to the next. It controls how much space separates successive lines within a paragraph.

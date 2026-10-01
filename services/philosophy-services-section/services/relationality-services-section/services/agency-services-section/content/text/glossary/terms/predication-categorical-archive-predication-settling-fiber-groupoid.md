@@ -7,7 +7,6 @@ name: Settling fiber groupoid
 description: "For a fixed base $B = (\\mathbf{L}, \\mathcal{C}, E, \\lambda)$, the settling fiber groupoid $\\mathrm{KP}^\\simeq(B)$ has:"
 ---
 
-# Settling fiber groupoid
 
 For a fixed base $B = (\mathbf{L}, \mathcal{C}, E, \lambda)$, the **settling fiber groupoid** $\mathrm{KP}^\simeq(B)$ has:
 

@@ -2,7 +2,6 @@
 name: Composing Morphism
 description: Story.
 ---
-# Composing Morphism
 
 *Story.*  Composing two structure-preserving maps yields another.  Morph witnessing Morph produces ComposeMorph.
 

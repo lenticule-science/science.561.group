@@ -6,7 +6,6 @@ name: Finite-limit morphisms decompose as generators
 description: Every finite-limit construction morphism in a predicate category $\mathcal{C}$ decomposes as a composition of the four generator classes.
 ---
 
-# Finite-limit morphisms decompose as generators
 
 Every finite-limit construction morphism in a [predicate category](../../documents/articles/research/2026/07/31/lenticule-import/objects/predicate-category.md) $\mathcal{C}$ decomposes as a composition of the four generator classes.
 

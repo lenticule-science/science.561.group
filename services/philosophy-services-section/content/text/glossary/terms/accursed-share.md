@@ -3,7 +3,6 @@ name: "Accursed Share"
 description: "Bataille's name for the surplus energy any economy produces beyond what it needs — the portion that must be expended without return, defining a civilization by how it wastes."
 date-created: 2026-03-03
 aliases:
-  - "accursed share"
   - "la part maudite"
 tags: []
 contrasts-with: scarcity
@@ -12,9 +11,6 @@ produced-by: surplus
 delivered-via: [sacrifice, war, luxury, festival]
 part-of:
   - bataille
-defines:
-  - "Accursed Share"
-  - "la part maudite"
 ---
 
 The accursed share, as theorized by [Georges Bataille](../../general/people/georges-bataille.md) in *The Accursed Share* (1949; English translation 1988), names the surplus energy that any economy produces beyond what it needs for maintenance and growth — the portion that must be expended without return. [Bataille](../../general/people/georges-bataille.md) argued that the fundamental problem of political economy is not scarcity but excess. Every living system and every social order generates more energy than it can absorb into productive use. What cannot be reinvested in growth must be spent: through sacrifice, war, luxury, festival, or destruction.

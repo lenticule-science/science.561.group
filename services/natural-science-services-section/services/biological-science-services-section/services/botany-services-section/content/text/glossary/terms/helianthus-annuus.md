@@ -7,8 +7,7 @@ aliases:
   - sunflower
   - cultivated sunflower
   - Helianthus
-related-to:
-  - "[Sunflower cultivation](../../../../../../engineering/domains/domesticity/domains/production/gardening/terms/sunflower.md)"
+see-also: sunflower
 ---
 
 ## Taxonomy and Domestication

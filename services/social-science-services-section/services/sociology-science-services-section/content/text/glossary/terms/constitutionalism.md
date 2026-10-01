@@ -8,12 +8,10 @@ see-also:
   - "/sociology/disciplines/legalism/index.md"
 references:
   - /sociology/disciplines/legalism/index.md
-type: term
 tags:
   - Legalism
-defines:
-  - "constitutionalism"
-  - "constitution"
+aliases:
+  - constitution
 ---
 
 Constitutionalism is the principle that government power should be structured and limited by a foundational legal document — a constitution — that is harder to change than ordinary law. The constitution defines the organs of government, distributes power among them, and specifies the rights that government may not violate. Ordinary legislation must conform to the constitution; if it doesn't, it can be struck down through [judicial review](../../../../../../content/text/glossary/terms/judicial-review.md).

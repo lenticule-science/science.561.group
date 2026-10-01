@@ -8,7 +8,6 @@ keywords:
   - WebDesign
 cites:
   - "HTML5 for Web Designers"
-type: term
 ---
 
 Semantic HTML is the practice of choosing HTML elements based on the meaning they convey rather than the visual appearance they produce. A `<nav>` element declares that its contents are navigation links; an `<article>` declares a self-contained piece of content; a `<header>` marks introductory material. These elements communicate structure to browsers, screen readers, search engines, and any other software that processes the document.

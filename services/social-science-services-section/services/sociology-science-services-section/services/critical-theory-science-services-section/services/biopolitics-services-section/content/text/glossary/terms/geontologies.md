@@ -5,7 +5,6 @@ part-of:
 name: "Geontologies"
 date-created: 2026-03-03
 aliases:
-  - "geontologies"
   - "geontopower"
 keywords:
   - political-theory
@@ -16,9 +15,6 @@ contrasts-with: animism
 contains: quasi-event
 tags:
   - political-theory
-defines:
-  - "Geontologies"
-  - "geontopower"
 ---
 
 Geontologies, as theorized by [Elizabeth Povinelli](../../../../../../../../../../../../../../../../../references/people/elizabeth-povinelli.md) in *Geontologies: A Requiem to Late Liberalism* (2016), names the governance of the distinction between Life and Nonlife — the [ontological](../../../../../../../../../../../philosophy-services-section/metaphysics/theories/ontology/terms/ontology.md) division that undergirds late liberal power. Where [biopolitics](../../../../../../../../../../../../../../sociology/theories/critical-theory/theories/biopolitics/terms/biopolitics.md) governs through the management of living populations, geontopower governs through the maintenance of the boundary between what is alive and what is inert, what counts as a living being with interests and what counts as mere matter available for use.

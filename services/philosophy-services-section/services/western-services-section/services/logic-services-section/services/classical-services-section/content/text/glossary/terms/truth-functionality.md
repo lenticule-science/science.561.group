@@ -3,7 +3,6 @@ name: "Truth-Functionality"
 description: "The property of a connective whose compound truth value is determined entirely by the truth values of its components — the semantic backbone of classical propositional logic."
 date-created: 2026-03-05
 aliases:
-  - "truth-functionality"
   - "truth-functional"
   - "truth-functional connective"
 keywords:
@@ -13,10 +12,6 @@ component-of: classical-logic
 verifies: tautology
 tags:
   - logic
-defines:
-  - "Truth-functionality"
-  - "truth-functional"
-  - "truth-functional connective"
 ---
 
 A [connective](../../../../../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/connective.md) is truth-functional when the truth value of the compound it forms is determined entirely by the truth values of its components. Classical propositional logic is truth-functional throughout: knowing the truth values of A and B suffices to determine the truth values of A ∧ B, A ∨ B, A → B, and ¬A. This property is what makes truth tables possible and is the semantic backbone of classical [propositional logic](../../../../../../../../../../../information-science-services-section/services/math-services-section/content/text/documents/articles/teaching-articles/explanations/propositional-logic.md).

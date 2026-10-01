@@ -1,7 +1,6 @@
 ---
 name: "Time-Block"
 description: "A reserved interval on a calendar for specific work — the unit of intentional time allocation that converts priority into scheduled action."
-defines: time-block
 date-created: 2026-04-04
 instance-of: interval
 aliases:
@@ -13,22 +12,18 @@ applies-to: [schedule, task, agent]
 part-of-stage: planning
 contrasts-with: [shift, meeting, context-switching]
 references:
-  - id: newport2016
-    type: document
+  newport2016:
+    authors:
+      - Cal Newport
     title: "Deep Work: Rules for Focused Success in a Distracted World"
-    author:
-      - literal: Cal Newport
-    container-title: Grand Central Publishing
-    issued:
-      - year: 2016
-  - id: covey1989
-    type: document
+    year: 2016
+    publication: Grand Central Publishing
+  covey1989:
+    authors:
+      - Stephen R. Covey
     title: The 7 Habits of Highly Effective People
-    author:
-      - literal: Stephen R. Covey
-    container-title: Free Press
-    issued:
-      - year: 1989
+    year: 1989
+    publication: Free Press
 ---
 
 A time-block is an [interval](interval.md) on a [calendar](calendar.md) reserved for specific work.

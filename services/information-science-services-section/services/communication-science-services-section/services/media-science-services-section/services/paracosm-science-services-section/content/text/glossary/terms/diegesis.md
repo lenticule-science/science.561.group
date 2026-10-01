@@ -11,7 +11,6 @@ keywords:
   - narratology
   - worldbuilding
   - reproducible-paracosm
-type: term
 ---
 
 Diegesis is the world as it exists within a narrative—the reality that the characters inhabit and the events they experience. The term derives from Greek rhetoric (Plato's distinction between diegesis, narration, and mimesis, imitation) and enters modern usage through narratology, particularly the work of Gérard Genette.

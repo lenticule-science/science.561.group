@@ -9,7 +9,6 @@ name: Simply typed lambda calculus
 description: The simply typed lambda calculus ($\lambda^{\to}$, STLC) extends the untyped-lambda-calculus by assigning a type to every well-formed term.
 ---
 
-# Simply typed lambda calculus
 
 The **simply typed lambda calculus** ($\lambda^{\to}$, STLC) extends the [untyped-lambda-calculus](../../documents/articles/research/2026/07/31/lenticule-import/_archive/untyped-lambda-calculus.md) by assigning a type to every well-formed term. Types are built from a set of *base types* $P, Q, \ldots$ by the [function-type](function-type.md) constructor $A \to B$.
 

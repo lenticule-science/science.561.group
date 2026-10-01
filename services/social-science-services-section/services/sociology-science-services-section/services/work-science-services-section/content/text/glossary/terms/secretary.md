@@ -14,9 +14,8 @@ ast:
     - record-set
     - authentication-function
 id: secretary
-defines: Secretary
-related: Clerk, Principal, Office, Duty, Trustee
 date-modified: 2026-03-19
+see-also: clerk-principal-office-duty-trustee
 ---
 
 ## Formal definition

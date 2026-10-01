@@ -11,7 +11,6 @@ keywords:
   - FungalStructure
   - CellBiology
 description: A hyphal organization in which the filament lacks internal cross-walls (septa), forming a continuous multinucleate tube — the alternative to septate construction.
-type: term
 ---
 
 

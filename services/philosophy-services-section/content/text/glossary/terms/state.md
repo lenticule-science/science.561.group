@@ -2,7 +2,6 @@
 name: State
 date-created: 2026-03-04
 type: definition
-dg-publish: true
 aliases:
   - states
 extends: thing
@@ -16,33 +15,27 @@ contrasts-with:
 changes-via: act
 transitions-to: state
 references:
-  - id: harel1987
-    type: document
+  harel1987:
+    authors:
+      - David Harel
     title: "Statecharts: A Visual Formalism for Complex Systems"
-    author:
-      - literal: David Harel
-    container-title: Science of Computer Programming, 8(3)
-    issued:
-      - year: 1987
-  - id: bergson1889
-    type: document
+    year: 1987
+    publication: Science of Computer Programming, 8(3)
+  bergson1889:
+    authors:
+      - Henri Bergson
     title: "Time and Free Will: An Essay on the Immediate Data of Consciousness"
-    author:
-      - literal: Henri Bergson
-    issued:
-      - year: 1889
-  - id: barwise-perry1983
-    type: document
+    year: 1889
+  barwise-perry1983:
+    authors:
+      - Jon Barwise
+      - John Perry
     title: Situations and Attitudes
-    author:
-      - literal: Jon Barwise
-      - literal: John Perry
-    container-title: MIT Press
-    issued:
-      - year: 1983
+    year: 1983
+    publication: MIT Press
 description: "The composite of all conditions defining a thing at a given moment — from static snapshots through Harel's state machines to Bergson's duration."
-defines: state
 date-modified: 2026-04-06
+visibility: public
 ---
 
 

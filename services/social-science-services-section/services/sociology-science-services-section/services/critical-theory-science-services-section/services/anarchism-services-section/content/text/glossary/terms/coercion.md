@@ -2,13 +2,9 @@
 name: "Coercion"
 date-created: 2026-03-06
 aliases:
-  - "coercion"
   - "coercive"
 tags: []
 description: "The use or credible threat of force, deprivation, or punishment to compel behavior — the mechanism that distinguishes domination from disagreement and compulsory association from voluntary."
-type: term
-defines:
-  - "Coercion"
 ---
 
 Coercion is the use or credible threat of force, deprivation, or punishment to compel behavior. It is the mechanism that maintains [hierarchy](../../../../../../../../content/text/glossary/terms/hierarchy.md), enforces [authority](../../../../../../../../content/text/glossary/terms/authority.md), and produces [domination](../../../../../../../../content/text/glossary/terms/domination.md). For [anarchism](../../../../../../../../content/text/glossary/_index.md), coercion is the line that distinguishes compulsory association from [voluntary](../../../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/notes/undated/voluntary-association.md): a relationship sustained by coercion is one you cannot leave or refuse without suffering consequences imposed by the other party.

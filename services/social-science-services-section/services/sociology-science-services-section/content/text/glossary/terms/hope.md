@@ -2,16 +2,13 @@
 name: "Hope"
 date-created: 2026-03-06
 aliases:
-  - "Hope"
-  - "hope"
   - "optimism"
+  - hope (anarcho-nihilist critique)
 keywords:
   - anarchism
 description: "Anarcho-nihilism's analysis of hope as a political requirement — the demand that resistance justify itself through the expectation of a better future, which functions as a gatekeeping mechanism that excludes the honest, the traumatized, and the clear-eyed, and renders resistance dependent on a psychological state the existing order systematically undermines."
-type: term
 tags:
   - Anarchism
-defines: "hope (anarcho-nihilist critique)"
 ---
 
 Hope, in the anarcho-nihilist analysis, is not a virtue but a requirement — and the requirement is the problem. The demand that activists, organizers, and resisters maintain hope — believe that a better world is possible, that things will improve, that the arc of history bends toward justice — functions as a precondition for political engagement. If you cannot produce hope, you are excluded from the struggle. Your honest assessment of conditions is reframed as defeatism. Your trauma is reframed as a personal obstacle to be overcome. Your analysis — that ecological collapse is accelerating, that state power is consolidating, that [capitalism](../../../../services/critical-theory-science-services-section/services/anarchism-services-section/content/text/glossary/terms/capitalism.md) adapts faster than its opponents — is treated as something to be argued out of rather than engaged with.

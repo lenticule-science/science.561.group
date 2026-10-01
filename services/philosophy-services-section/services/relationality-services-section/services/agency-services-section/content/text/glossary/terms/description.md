@@ -10,7 +10,6 @@ visibility: public
 
 A Description is a separating predicate for an object — a formula φ(x) that holds of the described object and distinguishes it from other objects of the same type within the intended domain of discourse.
 
-# Description
 
 ## What this is
 

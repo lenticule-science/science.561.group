@@ -7,7 +7,6 @@ name: Curry-Howard translation
 description: The Curry-Howard translation is the bidirectional structure-preserving correspondence between proofs in intuitionistic natural deduction and terms of the simply-typed-lambda-calculus (and, in extended form, between intuitionistic logic…
 ---
 
-# Curry-Howard translation
 
 The **Curry-Howard translation** is the bidirectional structure-preserving correspondence between proofs in intuitionistic natural deduction and terms of the [simply-typed-lambda-calculus](../../documents/articles/research/2026/07/31/lenticule-import/objects/simply-typed-lambda-calculus.md) (and, in extended form, between [intuitionistic logic](../../documents/articles/research/2026/07/31/logic/concepts/decidability.md) and [dependent-type-theory](dependent-type-theory.md)).
 

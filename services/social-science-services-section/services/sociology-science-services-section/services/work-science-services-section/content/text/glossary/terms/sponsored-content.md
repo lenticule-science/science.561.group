@@ -1,7 +1,6 @@
 ---
 name: Sponsored Content
 description: "Content created or commissioned by an advertiser and published through a publisher's channel — monetization through paid editorial integration rather than automated ad slots."
-defines: Sponsored Content
 domain: web-business
 restricts: web-monetization
 requires:
@@ -13,23 +12,19 @@ analogous-to: affiliate-marketing
 delivered-via: email-list
 date-created: 2026-03-29
 references:
-  - id: ftc2023native
-    type: document
+  ftc2023native:
+    authors:
+      - Federal Trade Commission
     title: "Native Advertising: A Guide for Businesses"
-    author:
-      - literal: Federal Trade Commission
-    container-title: Federal Trade Commission
-    issued:
-      - year: 2023
-    URL: https://www.ftc.gov/business-guidance/resources/native-advertising-guide-businesses
-  - id: iab2019native
-    type: document
+    year: 2023
+    publication: Federal Trade Commission
+    url: https://www.ftc.gov/business-guidance/resources/native-advertising-guide-businesses
+  iab2019native:
+    authors:
+      - Interactive Advertising Bureau
     title: iab2019native
-    author:
-      - literal: Interactive Advertising Bureau
-    container-title: IAB
-    issued:
-      - year: 2019
+    year: 2019
+    publication: IAB
 cites:
   - ftc2023native
   - iab2019native

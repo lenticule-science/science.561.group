@@ -10,8 +10,7 @@ aliases:
   - Brussels sprouts
   - cole crops
   - brassicas
-related-to:
-  - "[Brassica oleracea cultivation](brassica-oleracea.md)"
+see-also: brassica-oleracea
 ---
 
 ## Taxonomy and Evolution

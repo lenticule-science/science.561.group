@@ -9,13 +9,11 @@ see-also:
   - "/sociology/disciplines/legalism/index.md"
 references:
   - /sociology/disciplines/legalism/index.md
-type: term
 tags:
   - Legalism
-defines:
-  - "social control"
-  - "formal social control"
-  - "informal social control"
+aliases:
+  - formal social control
+  - informal social control
 ---
 
 Social control is any mechanism by which a society enforces conformity to its norms. Law is only one such mechanism — and not always the most effective one. Gossip, shame, ostracism, economic pressure, professional norms, and family expectations all regulate behavior without legal intervention.

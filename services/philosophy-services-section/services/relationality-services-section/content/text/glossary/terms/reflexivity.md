@@ -8,11 +8,9 @@ date-introduced: "[2025-05-03](../../../../../../content/text/research/2026/07/3
 date-last-modified: "[2025-05-03](../../../../../../content/text/research/2026/07/31/lenticule-import/library/philosophy/relationality/archive/triage/relationality-2/domains/human-draft-7/domains/system/domains/conditions/2025-05-03)"
 aliases:
   - Derivation
-introduces: "[condition](../../../../../../content/text/glossary/terms/condition)"
-defines:
-  - reflexivity
   - reflexive act
-related:
+introduces: "[condition](../../../../../../content/text/glossary/terms/condition)"
+see-also:
   - relating
   - witnessing
   - settlement

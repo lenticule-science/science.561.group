@@ -1,7 +1,5 @@
 ---
-date: "\\[2025-08-22 Fri 10:25\\]"
 id: ef154080-677a-4756-b411-aeceb54936e6
-roam_aliases: GUI
 name: graphical user interface
 date-created: 2025-08-22
 index:

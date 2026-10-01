@@ -8,7 +8,6 @@ name: Residuated context
 description: "A residuated (or $\\mathbf{L}$-valued) formal context is a quadruple $\\mathbb{K} = (G, M, \\mathbf{L}, I)$ where $G$ and $M$ are sets, $\\mathbf{L}$ is a complete residuated lattice $(\\mathbf{L}, \\wedge, \\vee, \\otimes, \\to, 0, 1)$, and $I: G…"
 ---
 
-# Residuated context
 
 A **residuated (or $\mathbf{L}$-valued) formal context** is a quadruple $\mathbb{K} = (G, M, \mathbf{L}, I)$ where $G$ and $M$ are sets, $\mathbf{L}$ is a complete residuated lattice $(\mathbf{L}, \wedge, \vee, \otimes, \to, 0, 1)$, and $I: G \times M \to \mathbf{L}$ assigns each object–attribute pair a *truth degree* in $\mathbf{L}$.
 

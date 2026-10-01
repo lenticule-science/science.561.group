@@ -3,7 +3,6 @@ name: "Mathematical Constructivism"
 description: "The philosophy that mathematical objects exist only when constructed — existence claims require witnesses, and proof-by-contradiction does not produce objects."
 date-created: 2026-03-03
 aliases:
-  - "mathematical constructivism"
   - "constructivism (mathematics)"
   - "intuitionism"
   - "mathematical intuitionism"
@@ -16,11 +15,6 @@ enables: intuitionistic-logic
 contrasts-with: [platonism, formalism]
 requires: constructive-proof
 inverse-of: law-of-excluded-middle
-defines:
-  - "Mathematical Constructivism"
-  - "constructivism (mathematics)"
-  - "intuitionism"
-  - "mathematical intuitionism"
 date-modified: 2026-03-09
 ---
 

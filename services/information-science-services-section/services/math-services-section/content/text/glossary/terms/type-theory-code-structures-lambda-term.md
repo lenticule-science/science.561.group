@@ -9,7 +9,6 @@ name: Lambda term
 description: A lambda term is an expression in the grammar
 ---
 
-# Lambda term
 
 A **lambda term** is an expression in the grammar
 

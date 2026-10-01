@@ -24,7 +24,6 @@ aliases:
 name: "Officium"
 ---
 
-# Officium
 
 ## What this is
 

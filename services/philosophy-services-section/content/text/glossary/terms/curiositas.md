@@ -1,9 +1,7 @@
 ---
 name: "Curiositas"
-defines: curiositas
-aliases: [curiositas, vicious curiosity, disordered curiosity]
+aliases: [ vicious curiosity, disordered curiosity ]
 description: "The Thomist vice of disordered cognitive appetite: the desire to know that has been severed from its proper ends and that consumes its subject without orienting them to truth. Curiositas is restless, distracted, and self-perpetuating; it desires the knowing-as-such, regardless of whether the known is worth knowing or fits the knower's vocation. Structurally opposed to studiositas (the virtuous discipline of cognitive appetite)."
-related: [studiositas, acedia, attention, spectacle]
 contrasts-with: [studiositas]
 date-created: 2026-04-27
 date-modified: 2026-04-27
@@ -72,6 +70,11 @@ references:
     container-title: University of Chicago Press
     issued:
       - year: 1993
+see-also:
+  - studiositas
+  - acedia
+  - attention
+  - spectacle
 ---
 
 **Curiositas** is the Thomist vice of *disordered cognitive appetite*: the desire to know that has been severed from its proper ends and that consumes its subject without orienting them to truth. Aquinas treats it (II-II, q. 167) as the deformation of an appetite that is good in itself: humans naturally desire to know, the desire is part of their constitution, and the desire becomes vicious when it loses its orientation. The curious subject knows in order to know more; the knowing has become the end. The result is restlessness, scattering, an inability to be present to any one thing because the next thing is always pulling.

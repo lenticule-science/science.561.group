@@ -6,7 +6,6 @@ aliases:
   - "tensor unit"
 date-created: 2025-12-31
 tags: []
-type: term
 ---
 
 The unit object I in a [monoidal category](./monoidal-category.md) is the object that acts as an identity for the [tensor product](./tensor-product.md): I ⊗ A ≅ A ≅ A ⊗ I for every object A, via coherent [isomorphisms](./isomorphism.md). It is the categorical analogue of the [identity element](./identity-element.md) in a [monoid](./monoid.md).

@@ -3,8 +3,7 @@ name: Plantain Herb
 description: Perennial cultivar of Plantago major, hardy zones 3-9. Basal rosette of broad ribbed leaves. Ubiquitous "weed" medicinal with multi-civilizational use (Ayurveda, TCM, Traditional Persian Medicine, Ojibwe/Iroquois/Menominee herbalism). Leaf poultice heals wounds, insect bites, inflamed skin—universal vulnerary application. Easy to cultivate anywhere; prefers moist, moderately fertile soil but tolerates poor soils. Harvest young leaves spring-summer for maximum potency. Dried leaves steep as throat-soothing tea.
 date-created: 2026-04-02
 aliases: [common plantain, white man's foot, ribwort, waybread]
-related-to:
-  - "[Plantago major](../../../../../../../../science/theories/biology/theories/botany/terms/plantago-major.md)"
+see-also: plantago-major
 ---
 
 Plantain cultivation grows [Plantago major](../../../../../../../../../natural-science-services-section/services/biological-science-services-section/content/text/documents/articles/notes/2026/04/02/2026-04-02-plantago-major.md) as a universally-accessible medicinal herb with documented use across Ayurveda, Traditional Chinese Medicine, Traditional Persian Medicine, and Native American herbalism. The fresh leaf poultice is the most effective and reliable preparation for wounds, insect bites, and inflamed skin.

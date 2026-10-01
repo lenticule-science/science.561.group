@@ -1,8 +1,7 @@
 ---
 name: Undercommons
-date-created: 2026-03-03 00:00:00
+date-created: 2026-03-03
 aliases:
-- undercommons
 - the undercommons
 tags:
 - black-study
@@ -21,9 +20,6 @@ keywords:
   - BlackStudy
 cites:
   - "The Undercommons: Fugitive Planning & Black Study"
-defines:
-  - Undercommons
-  - the undercommons
 ---
 
 The undercommons is a concept developed by [Fred Moten](../../../../../../../../../../../references/people/fred-moten.md) and [Stefano Harney](../../../../../../../../../../../references/people/stefano-harney.md) in *The Undercommons: Fugitive Planning and Black Study* (2013) [cite:@moten_Undercommons_2013]. It names not a place but a condition: the shared risk, fugitive relation, and collective study that happen in the breaks and margins of institutional life. The undercommons is what persists when people refuse to submit their knowledge, their [labor](../../../../../../../../../../../public-services-section/services/personal-services-section/services/terms/labor.md), and their relations to institutional accounting — when study continues without becoming a program, a credential, or a deliverable.

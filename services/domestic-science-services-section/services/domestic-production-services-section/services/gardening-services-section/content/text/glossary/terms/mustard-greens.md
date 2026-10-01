@@ -6,8 +6,7 @@ aliases:
   - Mustard cultivation
   - Japanese mustard
   - Tendergreen cultivation
-related-to:
-  - "[Brassica juncea botanical term](../../../../../../../../science/theories/biology/theories/botany/terms/brassica-juncea.md)"
+see-also: brassica-juncea
 ---
 
 *Brassica juncea* (mustard greens) thrives in cool conditions (10–20°C); warm weather triggers rapid bolting, making it unsuitable for mid-season cultivation. Focus on spring and fall plantings for reliable harvest.

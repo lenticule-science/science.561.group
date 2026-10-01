@@ -5,7 +5,6 @@ aliases:
   - "microclimate"
 date-created: 2026-03-06
 tags: []
-type: term
 ---
 
 The climate conditions of a small, specific area that differ from the

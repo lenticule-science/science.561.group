@@ -2,13 +2,9 @@
 name: "Autonomy"
 date-created: 2026-03-06
 aliases:
-  - "autonomy"
   - "autonomous"
 tags: []
 description: "Self-governance — the capacity of a person, group, or community to make decisions about their own life without being directed by an external authority."
-type: term
-defines:
-  - "Autonomy"
 ---
 
 Autonomy means self-governance: the capacity to make decisions about your own life without being directed by an external [authority](./authority.md). For [anarchism](../_index.md), autonomy is not a privilege to be earned or a right to be granted by [the state](../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/notes/undated/the-state.md) — it is the default condition of human beings, which [hierarchy](./hierarchy.md) suppresses and which [self-organization](../../../../services/critical-theory-science-services-section/services/anarchism-services-section/content/text/glossary/terms/self-organization.md) restores.

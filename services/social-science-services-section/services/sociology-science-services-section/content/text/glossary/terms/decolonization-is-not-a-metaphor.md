@@ -1,7 +1,6 @@
 ---
 author: "Eve Tuck K. Wayne Yang"
 id: 21e23b2b-5d94-4296-a004-316a28a16556
-roam-refs: "\\[cite:@DecolonizationIsNotAMetaphor\\]"
 name: Decolonization is not a Metaphor
 date-created: 2025-08-26
 type: essay
@@ -11,6 +10,9 @@ aliases:
   - decolonization is not a metaphor
 cites:
   - Decolonization Is Not a Metaphor
+provenance:
+  sources:
+    - "[cite:@DecolonizationIsNotAMetaphor]"
 ---
 
 ***Decolonization is not a Metaphor*** is an [essay](../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/notes/undated/essay.md) [authored](../../../../../../../philosophy-services-section/content/text/glossary/terms/authoring.md) by [Eve Tuck](../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/eve-tuck.md) and [K. Wayne Yang](k-wayne-yang.md) in [2012ce](../../../../../../content/text/glossary/terms/2012ce.md) that [analyzes](../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/analyzing.md) the [appropriation](../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/appropriation.md) of "[decolonization](../../../../services/critical-theory-science-services-section/services/povinellian-services-section/services/settler-colonialism-services-section/content/text/glossary/terms/decolonization.md)" in [academic](../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/academic-discourse.md) and [activist discourse](../../../../../../../engineering-science-services-section/services/computer-science-services-section/content/text/glossary/terms/activist-discourse.md). \[cite:@TuckYang2012\] They [claim](../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/claiming.md) that decolonization must refer to the [material repatriation of Indigenous being](../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/material-repatriation-of-indigenous-being.md), not a class of actions they describe as "[settler moves to innocence](../../../../services/critical-theory-science-services-section/content/text/glossary/terms/settler-move-to-innocence.md)".

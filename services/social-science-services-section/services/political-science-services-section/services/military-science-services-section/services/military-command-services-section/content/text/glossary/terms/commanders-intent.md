@@ -18,7 +18,6 @@ references:
     publication: "Joint Publication 1-02 (as amended through 15 Feb 2016)"
 cites:
   - jointchiefs2016dictionary
-type: term
 ---
 
 The commander's intent is a clear and concise expression of the purpose of the operation and the desired military end state. It supports mission command, provides focus to the staff, and helps subordinate and supporting commanders act to achieve the desired results without further orders, even when the operation does not unfold as planned [@jointchiefs2016dictionary].

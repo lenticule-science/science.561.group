@@ -2,12 +2,9 @@
 name: "Obedience"
 date-created: 2026-03-06
 aliases:
-  - "obedience"
+  []
 tags: []
 description: "The habit of complying with authority — the behavior anarchism identifies as the mechanism through which hierarchy reproduces itself, sustained not primarily by force but by the internalization of subordination as natural or necessary."
-type: term
-defines:
-  - "Obedience"
 ---
 
 Obedience is the habit of complying with [authority](./authority.md). [Anarchism](../_index.md) identifies it as the primary mechanism through which [hierarchy](./hierarchy.md) reproduces itself — not [coercion](../../../../services/critical-theory-science-services-section/services/anarchism-services-section/content/text/glossary/terms/coercion.md), which is expensive and unstable, but the internalization of subordination as natural, necessary, or virtuous. A system of [domination](./domination.md) is secure not when it can punish every act of disobedience but when most people do not consider disobedience in the first place.

@@ -4,16 +4,12 @@ description: "The process of treating something contingent — a social arrangem
 date-created: 2026-03-02
 date-modified: 2026-03-29
 aliases:
-  - "ontologization"
   - "ontologize"
 component-of: ontology
 acts-on: contingency
 contrasts-with: relational-ontology
 analogous-to: [reification, naturalization]
 inverse-of: contingency
-defines:
-  - "Ontologization"
-  - "ontologize"
 ---
 
 Ontologization is the process of treating something contingent — a social arrangement, a conceptual distinction, a historical product — as if it were a fixed feature of reality. To ontologize is to convert what is made into what simply is, removing it from the domain of question and critique. The operation is powerful because it is invisible: once an arrangement has been ontologized, the question of how it came to be becomes nonsensical. It did not come to be. It simply is.

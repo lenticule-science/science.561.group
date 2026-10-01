@@ -2,14 +2,11 @@
 name: "Direct Action"
 date-created: 2026-03-06
 aliases:
-  - "direct action"
+  []
 tags: []
 description: "Doing the thing yourself instead of asking someone in authority to do it for you — action that achieves its goal without appealing to legislators, courts, bosses, or any other intermediary for permission."
 part-of: sociology/schools/anarchism/topics/strategy/terms
 date-modified: 2026-03-09
-type: term
-defines:
-  - "Direct Action"
 date-updated: 2026-03-09
 ---
 

@@ -13,7 +13,6 @@ measured-by: [route-of-administration, first-pass-metabolism]
 determines: [dose-equivalence, overdose-risk]
 governs: dose-response-relationships
 analogous-to: absorption-rate
-type: term
 ---
 
 **Bioavailability** is the fraction of an administered drug dose that reaches the systemic circulation in an unchanged, pharmacologically active form. It is expressed as a percentage: a drug with 100% bioavailability delivers its entire dose to the bloodstream; a drug with 50% bioavailability delivers half.

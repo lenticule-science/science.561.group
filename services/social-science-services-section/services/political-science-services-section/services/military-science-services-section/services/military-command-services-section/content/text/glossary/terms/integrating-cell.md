@@ -26,7 +26,6 @@ references:
     publication: "The United States Army"
     year: 2025
     url: "https://www.army.mil/article/282494/staff_integration_for_large_scale_combat_operations_transitioning_integrating_cells_from_garrison_to_warfighting"
-type: term
 ---
 
 An integrating cell is a staff grouping that connects multiple functions

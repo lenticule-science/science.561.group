@@ -8,8 +8,7 @@ aliases:
   - hosta lily
   - shade plant
   - Asparagaceae lily-relative
-related-to:
-  - "[Hosta cultivation](../../../../../../engineering/domains/domesticity/domains/production/gardening/terms/hosta-shade.md)"
+see-also: hosta-shade
 ---
 
 ## Taxonomy and Distribution

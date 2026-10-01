@@ -2,18 +2,14 @@
 name: "The Unconscious"
 date-created: 2026-03-07
 aliases:
-  - "The Unconscious"
-  - "the unconscious"
   - "unconscious"
 keywords:
   - anarchism
   - psychoanalysis
 description: "The dimension of mental life not available to conscious awareness — not a hidden room but a structure that shapes what subjects want, do, and repeat without knowing why. Anarchist analysis draws on the unconscious to explain how domination persists at the level of subjectivity, not only institutions."
-type: term
 tags:
   - Anarchism
   - Psychoanalysis
-defines: "the unconscious"
 ---
 
 The unconscious is the dimension of mental life that is not available to conscious reflection. It is not a container (a box of repressed memories) but a structure — an active process that shapes what you want, what you do, what you repeat, and what you cannot see about your own motivations. You do not have an unconscious the way you have a liver. You are structured by it.

@@ -6,7 +6,6 @@ aliases:
   - "DTM"
 date-created: 2026-03-06
 tags: []
-type: term
 ---
 
 The number of days from planting (for direct-sown crops) or

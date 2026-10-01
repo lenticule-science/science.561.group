@@ -1,27 +1,22 @@
 ---
 name: "Engrossment"
 description: "Noddings's term for the receptive mode in which the one-caring receives the cared-for's reality on their own terms — not projection or empathy but direct reception."
-date-created: 2026-03-05T00:00:00
+date-created: 2026-03-05
 date-modified: 2026-03-29
-type: term
 aliases:
-  - "engrossment"
-defines:
-  - "Engrossment"
+  []
 component-of: care-ethics
 requires: attentiveness
 enables: motivational-displacement
 acts-on: particular-other
 contrasts-with: empathy
 references:
-  - id: noddings1984
-    type: document
+  noddings1984:
+    authors:
+      - Nel Noddings
     title: "Caring: A Feminine Approach to Ethics and Moral Education"
-    author:
-      - literal: Nel Noddings
-    container-title: University of California Press
-    issued:
-      - year: 1984
+    year: 1984
+    publication: University of California Press
 ---
 
 Engrossment is Nel Noddings's term for the receptive mode of consciousness in which the one-caring attends to the cared-for. It is not projection, analysis, or evaluation. It is a turning of attention toward the other in which the carer receives the other's reality — their feelings, their situation, their expressed needs — on the other's own terms. Together with motivational displacement, engrossment constitutes the caring relation in Noddings's framework.

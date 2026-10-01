@@ -2,16 +2,11 @@
 name: "Affinity Group"
 date-created: 2026-03-02
 aliases:
-  - "affinity group"
   - "affinity groups"
 tags: []
 description: "A small autonomous group organized by mutual trust and shared analysis rather than formal membership, constituting the basic organizational unit of insurrectionary anarchism."
 date-modified: 2026-03-09
 part-of: sociology/schools/anarchism/topics/organization/terms
-type: term
-defines:
-  - "Affinity Group"
-  - "affinity groups"
 date-updated: 2026-03-09
 ---
 

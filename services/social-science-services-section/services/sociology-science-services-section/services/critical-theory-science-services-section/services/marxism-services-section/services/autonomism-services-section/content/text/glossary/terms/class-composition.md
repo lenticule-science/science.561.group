@@ -2,19 +2,12 @@
 name: "Class Composition"
 date-created: 2026-03-03
 aliases:
-  - "class composition"
   - "technical composition"
   - "social composition"
   - "recomposition"
 tags: []
 date-modified: 2026-03-09
 part-of: sociology/schools/autonomism/terms
-type: term
-defines:
-  - "Class Composition"
-  - "technical composition"
-  - "social composition"
-  - "recomposition"
 date-updated: 2026-03-09
 ---
 

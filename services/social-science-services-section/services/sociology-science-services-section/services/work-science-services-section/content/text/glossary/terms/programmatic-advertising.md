@@ -6,9 +6,8 @@ domain: web-business
 restricts: Web Monetization
 uses: Revenue Per Mille, Pageview, Impression, Two-Sided Market
 date-created: 2026-03-29
-defines: Programmatic Advertising
-related: Affiliate Marketing
 date-modified: 2026-03-29
+see-also: affiliate-marketing
 ---
 
 Programmatic advertising is the automated buying and selling of ad space on websites through real-time auctions. When a visitor loads a web page containing programmatic ad slots, an auction occurs in the milliseconds between the page request and the page rendering: the publisher's ad server sends information about the visitor and the page to an ad exchange, advertisers' algorithms bid on the right to show that visitor an ad, and the winning ad is displayed — all before the page finishes loading.

@@ -3,8 +3,7 @@ name: Morning Glory
 description: Annual vine cultivar of Ipomoea purpurea, 60-75 days to first flower. Vigorous twining vine 2-3.5 m. Blue, purple, pink, or bicolored ephemeral flowers open at dawn, close by mid-morning. Full sun, moderate soil. Poor soil yields more flowers (nitrogen limitation). Prolific seeder; allow plants to complete seed maturation for self-sowing next season or deadhead to extend flowering.
 date-created: 2026-04-02
 aliases: [cultivated morning glory, blue morning glory, Ipomoea purpurea ornamental]
-related-to:
-  - "[Ipomoea purpurea](../../../../../../../../science/theories/biology/theories/botany/terms/ipomoea-purpurea.md)"
+see-also: ipomoea-purpurea
 ---
 
 Morning glory cultivation grows [Ipomoea purpurea](../../../../../../../../../natural-science-services-section/services/biological-science-services-section/content/text/documents/articles/notes/2026/04/02/2026-04-02-ipomoea-purpurea.md) as a vigorous annual vine with prolific blue, purple, pink, or bicolored flowers that open each morning and close by noon. The ephemeral daily flowering pattern is distinctive; sustained bloom from mid-summer through first frost makes morning glories reliable cover for trellises, fences, and pergolas.

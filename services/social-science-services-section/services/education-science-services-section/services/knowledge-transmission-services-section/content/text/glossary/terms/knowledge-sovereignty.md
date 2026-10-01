@@ -2,7 +2,6 @@
 name: "Knowledge Sovereignty"
 description: "The right of a people or community to control the production, interpretation, transmission, and use of their own knowledge"
 aliases:
-  - "knowledge sovereignty"
   - "epistemic sovereignty"
   - "intellectual sovereignty"
   - data sovereignty
@@ -50,9 +49,6 @@ references:
     type: document
     title: "Red Pedagogy: Native American Social and Political Thought"
 part-of: sociology/topics/settler-colonialism/terms
-defines:
-- knowledge sovereignty
-- epistemic sovereignty
 date-updated: 2026-03-09
 date-modified: 2026-03-09
 ---

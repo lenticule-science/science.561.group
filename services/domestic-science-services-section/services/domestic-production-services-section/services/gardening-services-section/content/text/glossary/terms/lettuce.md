@@ -7,8 +7,7 @@ aliases:
   - Salad greens cultivation
   - Looseleaf lettuce
   - Butterhead lettuce
-related-to:
-  - "[Lactuca sativa botanical term](../../../../../../../../science/theories/biology/theories/botany/terms/lactuca-sativa.md)"
+see-also: lactuca-sativa
 ---
 
 *Lactuca sativa* is primarily a cool-season crop. Optimal growth occurs at 15–20°C; temperatures above 22°C trigger bolting and stress. Success depends on timing plantings to avoid heat.

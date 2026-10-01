@@ -28,7 +28,6 @@ references:
     title: The Rise and Fall of Strategic Planning
     year: 1994
     publication: Free Press
-type: term
 keywords:
   - combat-systems
   - governance

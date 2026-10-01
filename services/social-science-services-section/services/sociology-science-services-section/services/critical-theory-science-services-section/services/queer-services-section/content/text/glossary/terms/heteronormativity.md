@@ -3,17 +3,12 @@
 name: "Heteronormativity"
 date-created: 2026-03-06
 aliases:
-  - "heteronormativity"
   - "heteronormative"
 keywords:
   - gender-theory
 description: "The normative framework that organizes social institutions, kinship, and political life around heterosexual reproduction and the gender binary."
-type: term
 tags:
   - GenderTheory
-defines:
-  - "Heteronormativity"
-  - "heteronormative"
 ---
 
 **Heteronormativity** names the set of normative assumptions — embedded in law, kinship, [labor](../../../../../../../../../terms/labor.md), education, medicine, and everyday practice — that organize social life around heterosexual reproduction and the binary division of gender. It is not simply the statistical prevalence of heterosexuality but the institutional enforcement of heterosexuality as the default, natural, and only fully intelligible form of intimate and social life.

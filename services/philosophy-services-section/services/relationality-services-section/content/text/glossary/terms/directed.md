@@ -6,7 +6,6 @@ tags: []
 aliases:
   - directed
   - directed structure
-type: term
 ---
 
 A directed structure on a category or ∞-category means that morphisms have a preferred direction: not all morphisms are invertible. In an ordinary category, this is the default — morphisms go from source to target and need not have inverses. The term "directed" is emphasized when contrasting with groupoids or ∞-groupoids, where all morphisms are invertible.

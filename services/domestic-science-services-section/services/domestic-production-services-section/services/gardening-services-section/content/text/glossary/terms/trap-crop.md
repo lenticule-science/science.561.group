@@ -11,7 +11,10 @@ keywords:
   - gardening
   - pest-management
   - integrated-pest-management
-related-to: [companion-planting, push-pull-strategy, biological-control]
+see-also:
+  - companion-planting
+  - push-pull-strategy
+  - biological-control
 ---
 
 A trap crop is a plant grown deliberately to attract pest insects away from nearby valued crops. The trap crop concentrates pests in one location where they can be removed, killed, or treated, reducing pest pressure on the target crops. This is a specific application within integrated pest management — using the pest's own behavior against it.

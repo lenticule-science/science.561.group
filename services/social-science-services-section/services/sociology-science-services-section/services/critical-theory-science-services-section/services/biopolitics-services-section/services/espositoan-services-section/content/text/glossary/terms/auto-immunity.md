@@ -28,7 +28,6 @@ references:
     title: "Foi et Savoir"
     publication: "Seuil"
     year: 1998
-type: term
 ---
 
 Auto-immunity, in its philosophical sense, names the condition in which a system's mechanisms of self-protection turn against the system itself — defense that becomes destruction, preservation that produces the threat it was designed to prevent. The concept draws on immunology but has been developed independently by Roberto Esposito and Jacques Derrida as a framework for understanding politics, community, and meaning.

@@ -8,13 +8,11 @@ keywords:
 see-also:
   - "/sociology/disciplines/legalism/index.md"
 aliases:
-  - Legitimacy
+  []
 references:
   - /sociology/disciplines/legalism/index.md
-type: term
 tags:
   - Anarchism
-defines: "legitimacy"
 ---
 
 Legitimacy is the quality that distinguishes authority from coercion — the social acceptance that makes people comply with power not because they are forced to but because they recognize the power as rightful. A legal system has legitimacy when the people subject to it treat its rules and decisions as binding, not merely as threats.

@@ -20,7 +20,6 @@ field:
   - "[interpretive systems](interpretive systems)"
 yield:
   - "[premature coherence exposure](premature coherence exposure)"
-date: "[[2025-04-13]]"
 ---
 
 A **premature coherence exposure** is a cognitive condition in which an output presents as confidently coherent—but **feels obviously or unnervingly wrong**. The problem isn’t just factual error, but a failure to reflect the ambiguity, pacing, or contextual softening that human communication typically provides.

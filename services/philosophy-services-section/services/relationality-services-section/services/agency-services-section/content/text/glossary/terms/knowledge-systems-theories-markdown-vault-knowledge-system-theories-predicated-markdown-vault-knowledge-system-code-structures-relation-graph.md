@@ -15,7 +15,6 @@ name: Relation graph
 description: The relation graph of a vault is the directed labeled multigraph whose vertices are typed notes and whose edges are frontmatter-relations.
 ---
 
-# Relation graph
 
 The **relation graph** of a vault is the directed labeled multigraph whose vertices are typed [notes](../../documents/articles/research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/knowing/content/knowledge-science/systems/archive/teaching/explanations/note.md) and whose edges are [frontmatter-relations](../../documents/articles/research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/knowing/content/knowledge-science/systems/archive/teaching/explanations/frontmatter-relation.md). It is the substrate's [predication-fibration](../../documents/articles/research/2026/07/31/lenticule-import/animating/content/humanities/theories/math/theories/categories/theories/predication-categories/objects/predication-fibration.md) at the markdown-vault layer, restricted to the established frontmatter-relation predicate vocabulary.
 

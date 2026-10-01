@@ -8,7 +8,6 @@ name: Concept lattice
 description: The concept lattice of a formal context $\mathbb{K} = (G, M, I)$ is the partially ordered set $\mathfrak{B}(\mathbb{K}) = (\{(A, B) \mid A' = B, B' = A\}, \le)$ where $(A1, B1) \le (A2, B2) \iff A1 \subseteq A2 \iff B2 \subseteq B1$.
 ---
 
-# Concept lattice
 
 The **concept lattice** of a formal context $\mathbb{K} = (G, M, I)$ is the partially ordered set $\mathfrak{B}(\mathbb{K}) = (\{(A, B) \mid A' = B, B' = A\}, \le)$ where $(A_1, B_1) \le (A_2, B_2) \iff A_1 \subseteq A_2 \iff B_2 \subseteq B_1$.
 

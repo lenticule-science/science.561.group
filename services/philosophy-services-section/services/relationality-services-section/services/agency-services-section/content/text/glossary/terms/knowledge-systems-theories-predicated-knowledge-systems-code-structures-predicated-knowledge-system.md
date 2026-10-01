@@ -8,7 +8,6 @@ name: Predicated knowledge system
 description: "A predicated knowledge system is a tuple $\\mathcal{K} = (\\mathbf{L}, \\mathcal{C}, E, \\mathcal{S}, \\Sigma)$ where:"
 ---
 
-# Predicated knowledge system
 
 A **predicated knowledge system** is a tuple $\mathcal{K} = (\mathbf{L}, \mathcal{C}, E, \mathcal{S}, \Sigma)$ where:
 

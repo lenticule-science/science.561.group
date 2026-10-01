@@ -1,6 +1,6 @@
 ---
 name: Organized Abandonment
-date-created: 2026-03-03 00:00:00
+date-created: 2026-03-03
 aliases:
 - organized abandonment
 tags: []

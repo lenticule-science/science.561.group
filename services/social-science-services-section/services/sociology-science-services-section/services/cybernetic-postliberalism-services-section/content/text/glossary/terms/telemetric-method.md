@@ -3,7 +3,6 @@ name: "Telemetric Method"
 date-created: 2025-04-15
 keywords:
   - CyberneticPostliberalism
-type: term
 aliases:
   - Related Records
   - dr-telemetric-method
@@ -15,7 +14,6 @@ signal:
 method:
   - "[formalize](formalize)"
   - "[proceduralize](proceduralize)"
-date: 2025-04-15
 ---
 
 A ***telemetric method*** is a structured behavior that engages a signal within a field to produce a yield. It is not a tool, not a plan, and not a function. It is a ***relational gesture***—a repeatable, role-performing structure used in casting.

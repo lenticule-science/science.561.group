@@ -3,7 +3,7 @@ name: "Access Intimacy"
 date-created: 2026-03-03
 date-modified: 2026-03-29
 aliases:
-  - "access intimacy"
+  []
 keywords:
   - disability-justice
   - care-work
@@ -25,13 +25,9 @@ references:
   - id: ref2
     type: document
     title: Leah Lakshmi Piepzna-Samarasinha
-type: term
 tags:
   - DisabilityJustice
   - CareWork
-defines:
-  - "Access Intimacy"
-  - "access intimacy"
 ---
 
 Access intimacy is a concept developed by [Mia Mingus](../../../../../../../../../information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/mia-mingus.md) within the [disability justice](./disability-justice.md) framework. It names the feeling of ease that arises when someone understands your access needs and moves to meet them without requiring you to explain, justify, or prove those needs. Access intimacy is not accommodation in the institutional sense — not the filing of paperwork, the requesting of exceptions, or the provision of services after formal evaluation. It is the trust that access will be anticipated and shared as part of the relationship itself.

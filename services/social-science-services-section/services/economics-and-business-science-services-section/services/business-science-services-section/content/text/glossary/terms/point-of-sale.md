@@ -12,7 +12,6 @@ produces:
   - average-check
   - income-statement
 enables: inventory
-type: term
 ---
 
 A point of sale (POS) is the location and system where a customer transaction is completed — where payment is exchanged for goods or services. In contemporary usage, "POS" almost always refers to the integrated hardware and software system that processes sales: a terminal or tablet that records what was purchased, calculates the total, processes payment (cash, card, or digital), and logs the transaction in the business's records.

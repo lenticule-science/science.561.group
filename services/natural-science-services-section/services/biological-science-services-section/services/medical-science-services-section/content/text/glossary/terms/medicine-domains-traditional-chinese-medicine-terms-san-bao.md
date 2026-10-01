@@ -1,6 +1,5 @@
 ---
 name: "San Bao (Three Treasures)"
-type: "term"
 date-created: 2026-03-05
 ---
 

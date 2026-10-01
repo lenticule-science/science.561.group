@@ -8,7 +8,6 @@ name: Empty type
 description: The empty type $\mathbf{0}$ (also $\bot$) is the type with no inhabitants.
 ---
 
-# Empty type
 
 The **empty type** $\mathbf{0}$ (also $\bot$) is the type with no inhabitants. There is no introduction rule. The elimination rule says: from a term of $\mathbf{0}$ you can produce a term of any type.
 

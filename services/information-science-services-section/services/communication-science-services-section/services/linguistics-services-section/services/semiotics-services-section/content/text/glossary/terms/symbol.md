@@ -9,7 +9,6 @@ keywords:
 cites:
   - "Collected Papers of Charles Sanders Peirce"
   - "Peirce's Theory of Signs"
-type: term
 tags:
   - peirce
 references:

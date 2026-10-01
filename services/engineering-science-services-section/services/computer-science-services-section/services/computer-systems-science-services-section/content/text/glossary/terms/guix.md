@@ -1,5 +1,4 @@
 ---
-date: "\\[2025-09-16 Tue 18:37\\]"
 field: "computing"
 id: fd807957-f450-4d5f-b7f9-691b792fc39d
 name: Guix

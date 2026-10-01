@@ -8,8 +8,7 @@ aliases:
   - golden yarrow
   - yellow yarrow
   - Achillea
-related-to:
-  - "[Fernleaf yarrow cultivation](../../../../../../engineering/domains/domesticity/domains/production/gardening/terms/fernleaf-yarrow.md)"
+see-also: fernleaf-yarrow
 ---
 
 ## Taxonomy and Distribution

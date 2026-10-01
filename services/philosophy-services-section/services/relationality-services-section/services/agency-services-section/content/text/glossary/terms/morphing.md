@@ -2,7 +2,6 @@
 name: Morphing
 description: Story.
 ---
-# Morphing
 
 *Story.*  To compare our structures we need morphisms that preserve meets, joins, and implication.  ImplyRecognition witnessing JoinRecognition yields Morph.
 

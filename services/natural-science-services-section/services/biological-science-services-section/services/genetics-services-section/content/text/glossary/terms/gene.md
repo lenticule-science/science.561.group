@@ -10,7 +10,6 @@ keywords:
   - Genetics
 date-updated: 2026-03-09
 part-of: biology/disciplines/genetics/terms
-type: term
 ---
 
 A gene is a segment of [DNA](./dna.md) that encodes the information needed to produce a functional product — usually a protein, sometimes a functional RNA molecule. Genes are the units of heredity: they are passed from parent to offspring through reproduction, and the variation among genes within a population is the material on which [natural selection](../../../../../adaptation-services-section/content/text/glossary/terms/natural-selection.md) acts.

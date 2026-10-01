@@ -2,7 +2,6 @@
 name: "Dialectics"
 date-created: 2026-03-03
 aliases:
-  - "dialectics"
   - "dialectic"
   - "dialectical"
   - "dialectical method"
@@ -14,11 +13,6 @@ requires: contradiction
 produces: synthesis
 tags:
   - methodology
-defines:
-  - "Dialectics"
-  - "dialectic"
-  - "dialectical"
-  - "dialectical method"
 ---
 
 

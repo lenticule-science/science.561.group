@@ -2,17 +2,14 @@
 name: "Jouissance"
 date-created: 2026-03-06
 aliases:
-  - "Jouissance"
-  - "jouissance"
+  - jouissance (anarcho-nihilist)
 keywords:
   - anarchism
   - psychoanalysis
 description: "The excessive, transgressive pleasure of resistance that operates beyond instrumental calculation — drawn from Lacanian psychoanalysis and developed here as the affective ground of anarcho-nihilist action."
-type: term
 tags:
   - Anarchism
   - Psychoanalysis
-defines: "jouissance (anarcho-nihilist)"
 ---
 
 Jouissance is the excessive pleasure that resistance produces independent of its outcomes. It is not happiness (which requires that things go well), not satisfaction (which requires that a need be met), not even joy in the ordinary sense (which implies something to be joyful about). It is the intensity of the act of [refusal](../../../../../strategy-services-section/content/text/glossary/terms/refusal.md) itself — the experience that exceeds any calculation of costs and benefits, that cannot be justified by what it achieves, and that persists even when what it achieves is nothing. This is the affective ground of [anarcho-nihilism](../../../../../../../../../../content/text/glossary/_index.md): you do not resist because you expect to win, and yet resistance is not joyless. Something happens in the act that exceeds the act's instrumental content. That something is jouissance.

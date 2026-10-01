@@ -2,17 +2,11 @@
 name: "Care Work"
 date-created: 2026-03-03
 aliases:
-  - "care work"
   - "care labor"
   - "carework"
 tags: []
 date-modified: 2026-03-09
 part-of: sociology/schools/autonomism/terms
-type: term
-defines:
-  - "Care Work"
-  - "care labor"
-  - "carework"
 date-updated: 2026-03-09
 ---
 

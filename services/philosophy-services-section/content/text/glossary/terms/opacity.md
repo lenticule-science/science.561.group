@@ -4,7 +4,6 @@ description: "Glissant's concept for the right of every person, culture, and kno
 date-created: 2026-03-03
 date-modified: 2026-03-29
 aliases:
-  - "opacity"
   - "right to opacity"
 component-of: creolization
 dual-of: refusal
@@ -23,9 +22,6 @@ references:
     title: Poetics of Relation
     year: 1997
     publication: University of Michigan Press
-defines:
-  - "Opacity"
-  - "right to opacity"
 ---
 
 Opacity, as Édouard Glissant develops it in *Poétique de la Relation* (1990), is the right of every person, culture, and form of knowledge to not be made transparent — to refuse translation into the terms of dominant understanding. It is not obscurity or vagueness but a relational stance: the refusal to submit oneself to the demand for comprehension as a precondition for being granted existence, value, or political standing.

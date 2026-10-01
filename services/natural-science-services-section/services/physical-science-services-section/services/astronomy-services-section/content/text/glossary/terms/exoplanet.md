@@ -1,6 +1,5 @@
 ---
 name: "Exoplanet"
-type: term
 component-of: planetary-astronomy
 ---
 

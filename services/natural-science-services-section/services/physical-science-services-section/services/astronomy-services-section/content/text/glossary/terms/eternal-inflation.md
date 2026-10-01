@@ -1,7 +1,6 @@
 ---
 name: "Eternal inflation"
 component-of: multiverse
-type: term
 ---
 
 

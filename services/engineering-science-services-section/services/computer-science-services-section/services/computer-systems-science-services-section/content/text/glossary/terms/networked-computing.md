@@ -1,5 +1,4 @@
 ---
-date: "\\[2025-08-23 Sat 10:25\\]"
 id: 3dae7b0f-d45b-45a3-920d-7c0a44b53c94
 name: networked computing
 date-created: 2025-08-23

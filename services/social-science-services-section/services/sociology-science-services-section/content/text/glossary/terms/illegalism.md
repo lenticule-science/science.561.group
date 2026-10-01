@@ -2,15 +2,12 @@
 name: "Illegalism"
 date-created: 2026-03-06
 aliases:
-  - "Illegalism"
-  - "illegalism"
+  []
 keywords:
   - anarchism
 description: "The anarchist practice of treating law as a structure of domination to be violated rather than reformed, encompassing individual expropriation, counterfeiting, smuggling, and the general refusal to recognize the authority of legal systems."
-type: term
 tags:
   - Anarchism
-defines: "illegalism"
 ---
 
 Illegalism is the anarchist practice of refusing to recognize the [authority](./authority.md) of law and acting accordingly — stealing, squatting, counterfeiting, smuggling, forging documents, and otherwise violating the legal order not as aberrant behavior but as a principled response to a system of [domination](./domination.md). Where [direct action](./direct-action.md) acts without asking permission, illegalism acts against the legal framework that claims the right to grant permission in the first place.

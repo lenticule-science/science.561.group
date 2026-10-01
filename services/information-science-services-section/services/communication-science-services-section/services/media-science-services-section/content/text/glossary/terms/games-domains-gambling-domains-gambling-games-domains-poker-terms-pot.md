@@ -1,6 +1,5 @@
 ---
 name: "pot"
-type: "term"
 date-created: 2025-12-31
 ---
 

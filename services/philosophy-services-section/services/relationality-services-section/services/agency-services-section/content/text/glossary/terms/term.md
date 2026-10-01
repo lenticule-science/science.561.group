@@ -19,7 +19,6 @@ Table of contents
 
 - [Open questions](#open-questions)
 
-# Term
 
 ## What this is
 

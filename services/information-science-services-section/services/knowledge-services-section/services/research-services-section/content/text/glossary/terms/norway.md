@@ -5,8 +5,7 @@ aliases:
   - "norway"
 date-created: 2025-04-01
 tags: []
-type: term
-dg-publish: true
+visibility: public
 ---
 
 **Norway** (Norwegian: *Norge* or *Noreg*) is a Nordic country on the Scandinavian Peninsula in Northern Europe. It shares borders with Sweden, Finland, and Russia, and has an extensive Atlantic and Arctic coastline shaped by fjords.

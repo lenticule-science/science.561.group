@@ -17,7 +17,6 @@ measured-by:
   - arousal
 component-of: psychopathology
 enables: somatic-awareness
-type: term
 ---
 
 Affect is the felt, bodily dimension of experience that precedes and exceeds conscious emotion. You walk into a room and something is wrong — you feel it before you identify it. A crowd shifts from restive to furious in a moment no individual decided. The exhaustion of precarious work settles into your body as a background hum you stop noticing. These are affects: intensities registered by the body before the mind categorizes them as feelings, and often persisting beneath or alongside whatever emotions the mind produces.

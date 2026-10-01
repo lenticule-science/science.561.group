@@ -2,19 +2,15 @@
 name: "The Pleasure Principle"
 date-created: 2026-03-07
 aliases:
-  - "The Pleasure Principle"
-  - "the pleasure principle"
   - "pleasure principle"
   - "beyond the pleasure principle"
 keywords:
   - anarchism
   - psychoanalysis
 description: "Freud's principle that the psychic apparatus seeks to reduce tension and maintain equilibrium — the homeostatic management of satisfaction. Anarchist analysis uses it to describe how systems of domination manage populations through the regulated distribution of pleasure, and how resistance that operates 'beyond the pleasure principle' escapes this management."
-type: term
 tags:
   - Anarchism
   - Psychoanalysis
-defines: "the pleasure principle"
 ---
 
 The pleasure principle is Freud's term for the psychic tendency to reduce tension, discharge excitation, and return to equilibrium. When tension rises (hunger, frustration, desire), the organism seeks to discharge it; when equilibrium is restored, the result is experienced as pleasure. The system is homeostatic: it aims not at maximum pleasure but at manageable levels of excitation — enough to motivate, not enough to overwhelm. Pleasure, in this framework, is not ecstasy but the restoration of balance.

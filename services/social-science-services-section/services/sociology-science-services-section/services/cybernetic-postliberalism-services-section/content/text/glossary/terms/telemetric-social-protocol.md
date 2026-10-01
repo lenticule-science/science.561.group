@@ -1,6 +1,5 @@
 ---
 type: "[[infrastructure-protocol]]"
-date: 2025-04-13
 voice: structured reference record
 status: "active"
 
@@ -33,6 +32,7 @@ keywords:
   - CyberneticPostliberalism
   - Governance
   - PoliticalEconomy
+date-created: 2025-04-13
 ---
 
 ## Definition

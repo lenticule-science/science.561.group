@@ -1,10 +1,12 @@
 ---
 id: 15aa1cc5-91b5-44cb-8a1f-89bf7eeefbd0
-roam-refs: "@berlant_cruel_2011"
 name: Cruel Optimism
 date-created: 2025-08-19
 type: text
 visibility: public
+provenance:
+  sources:
+    - "@berlant_cruel_2011"
 ---
 
 ***Cruel Optimism*** is a [text](../../../../../../../information-science-services-section/content/text/glossary/terms/text.md) [authored](../../../../../../../philosophy-services-section/content/text/glossary/terms/authoring.md) by [Lauren Berlant](../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/lauren-berlant.md). [coins a term](../../../../../../../philosophy-services-section/content/text/glossary/terms/coining-a-term.md),

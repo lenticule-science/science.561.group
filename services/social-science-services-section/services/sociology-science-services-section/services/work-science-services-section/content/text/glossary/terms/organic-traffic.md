@@ -5,9 +5,8 @@ description: "The portion of a website's visitors that arrive through unpaid sea
 domain: web-business
 uses: SEO, Pageview
 date-created: 2026-03-29
-defines: Organic Traffic
-related: Content Strategy, Web Monetization, Conversion Rate
 date-modified: 2026-03-29
+see-also: content-strategy-web-monetization-conversion-rate
 ---
 
 Organic traffic is the portion of a website's visitors that arrive through unpaid search engine results. When someone types a query into Google, Bing, or another search engine and clicks on a non-ad result, that click is organic traffic. It is distinguished from paid traffic (search ads, display ads, social media ads), referral traffic (links from other websites), direct traffic (typing a URL or using a bookmark), and social traffic (links from social media platforms).

@@ -7,8 +7,7 @@ aliases:
   - Upland cress growing
   - Winter cress
   - Barbarea cultivation
-related-to:
-  - "[Barbarea verna botanical term](../../../../../../../../science/theories/biology/theories/botany/terms/barbarea-verna.md)"
+see-also: barbarea-verna
 ---
 
 *Barbarea verna* is the ideal solution for gardeners seeking watercress flavor without the infrastructure demands of flowing water or hydroponic systems. Extremely cold-hardy and productive in winter.

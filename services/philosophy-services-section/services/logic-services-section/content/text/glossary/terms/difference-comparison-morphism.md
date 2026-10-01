@@ -9,7 +9,6 @@ name: Difference comparison morphism
 description: A difference comparison morphism compares two valuations or settlings by producing the evidence that separates them under the selected standard.
 ---
 
-# Difference comparison morphism
 
 A **difference comparison morphism** compares two valuations or settlings by producing the evidence that separates them under the selected standard.
 

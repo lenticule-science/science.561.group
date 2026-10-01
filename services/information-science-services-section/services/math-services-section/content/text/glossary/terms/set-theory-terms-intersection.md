@@ -4,7 +4,6 @@ aliases:
   - "intersection"
   - "intersections"
 date-created: 2025-12-26
-type: term
 tags: []
 description: "The intersection of two sets A and B, written A ∩ B, is the set of elements belonging to both A and B: A ∩ B = {x : x ∈ A and x ∈ B}."
 ---

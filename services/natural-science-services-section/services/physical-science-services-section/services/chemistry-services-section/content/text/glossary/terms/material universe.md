@@ -1,7 +1,7 @@
 ---
-dg-publish: true
 dg-permalink: enc/def/material-universe
 type: "[[definition]]"
+visibility: public
 ---
 The material universe is (definition:: the collective term for all [[matter|physical matter]], [[energy]], and [[space]] that is [[zeds/Relationality/triage/00-probably-redundant/modules/relating]] together).
 

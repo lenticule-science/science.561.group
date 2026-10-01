@@ -2,16 +2,12 @@
 name: "Improvisation"
 date-created: 2026-03-05
 aliases:
-  - "improvisation"
   - "improvised"
   - "improvisatory"
 tags: []
 description: "Real-time compositional decision-making within a framework of constraints."
 date-updated: 2026-03-09
 part-of: music/disciplines/music-theory/terms
-defines:
-  - "Improvisation"
-  - "improvisatory"
 date-modified: 2026-03-09
 ---
 

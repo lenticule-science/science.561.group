@@ -4,7 +4,6 @@ aliases:
   - "fertilizer"
 date-created: 2026-03-07
 tags: []
-type: term
 ---
 
 A material added to soil or applied to plants to supply nutrients —

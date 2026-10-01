@@ -2,15 +2,11 @@
 name: "Tonality"
 date-created: 2026-03-05
 aliases:
-  - "tonality"
   - "tonal"
 tags: []
 description: "The organization of pitch around a central tone that functions as a point of rest and reference."
 date-updated: 2026-03-09
 part-of: music/disciplines/music-theory/terms
-defines:
-  - "Tonality"
-  - "tonal"
 date-modified: 2026-03-09
 ---
 

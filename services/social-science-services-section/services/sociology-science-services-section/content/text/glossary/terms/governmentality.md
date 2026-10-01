@@ -3,39 +3,31 @@
 name: "Governmentality"
 date-created: 2026-03-03
 aliases:
-  - "governmentality"
+  - art of government
+  - conduct of conduct
 keywords:
   - governance
 description: "Foucault's concept for the mode of power that operates through the management of populations — not by prohibiting behavior but by inciting, shaping, and optimizing conduct through norms, statistics, and institutional design."
 date-modified: 2026-03-09
 part-of: sociology/topics/state-repression/terms
-type: term
-defines:
-  - governmentality
-  - art of government
-  - conduct of conduct
 component-of: foucault
 extends: biopower
 governs: subject
 requires: power-knowledge
 enables: late-liberalism
 references:
-  - id: foucault2004a
-    type: document
+  foucault2004a:
+    authors:
+      - Michel Foucault
     title: "Sécurité, territoire, population: Cours au Collège de France 1977-1978"
-    author:
-      - literal: Michel Foucault
-    container-title: Seuil/Gallimard
-    issued:
-      - year: 2004
-  - id: foucault2004b
-    type: document
+    year: 2004
+    publication: Seuil/Gallimard
+  foucault2004b:
+    authors:
+      - Michel Foucault
     title: "Naissance de la biopolitique: Cours au Collège de France 1978-1979"
-    author:
-      - literal: Michel Foucault
-    container-title: Seuil/Gallimard
-    issued:
-      - year: 2004
+    year: 2004
+    publication: Seuil/Gallimard
 tags:
   - critical-theory
 date-updated: 2026-03-09

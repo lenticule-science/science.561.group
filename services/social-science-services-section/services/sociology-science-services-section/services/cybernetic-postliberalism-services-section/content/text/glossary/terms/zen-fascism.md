@@ -9,7 +9,6 @@ keywords:
   - Governance
   - Affect
 description: "The convergence of authoritarian structure with affective minimalism and spiritualized detachment, in which calmness and coherence are enforced as ethical norms and deviation from affective legibility is pathologized."
-type: term
 ---
 
 

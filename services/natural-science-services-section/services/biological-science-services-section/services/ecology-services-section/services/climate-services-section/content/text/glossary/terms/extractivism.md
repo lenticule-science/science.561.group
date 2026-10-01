@@ -8,7 +8,6 @@ keywords:
   - Decolonization
   - SettlerColonialism
 description: "The orientation toward the natural world as a resource depot to be mined, drilled, logged, and depleted — an orientation inseparable from settler-colonial and capitalist structures."
-type: term
 ---
 
 Extractivism is the orientation toward the living world as a resource depot — material to be mined, drilled, logged, fished, and depleted for profit or industrial use. It is not simply an economic practice but a relational stance: the world is treated as raw material available for human appropriation, and the relationships that constitute ecosystems, communities, and species are rendered invisible or irrelevant.

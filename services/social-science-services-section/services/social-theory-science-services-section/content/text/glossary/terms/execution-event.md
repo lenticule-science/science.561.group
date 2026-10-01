@@ -10,7 +10,6 @@ name: Execution event
 description: The substrate-entity emitted by an executing office when it produces work-state movement against an assignment.
 ---
 
-# Execution event
 
 The substrate-entity emitted by an executing office when it produces work-state movement against an [assignment](../../documents/articles/research/2026/07/31/lenticule-import/library/social-sciences/working/_archive/assignment.md). Per [execution](../../../../../sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/execution.md), an execution event is a first-class entity that *concerns* a task without mutating it — the [referencing-entity pattern](../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/research/predicated-agentic-orchestration-platform/flatfile-agentic-resource-system/flatfile/referencing-entity-pattern/referencing-entity-pattern.md) applied to the execution stage. The task remains thin; the task's effective state at time $t$ is folded from the most-recent-first walk of execution events whose `concerns-task` cell points back at the task per [derived-state-via-walks](../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/research/predicated-agentic-orchestration-platform/flatfile-agentic-resource-system/derived-state-via-walks/derived-state-via-walks.md).
 

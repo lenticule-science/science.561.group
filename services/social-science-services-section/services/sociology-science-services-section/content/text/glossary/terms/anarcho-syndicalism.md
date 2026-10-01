@@ -2,15 +2,10 @@
 name: "Anarcho-Syndicalism"
 date-created: 2026-03-06
 aliases:
-  - "anarcho-syndicalism"
   - "anarcho-syndicalist"
   - "syndicalism"
 tags: []
 description: "The current within anarchism that organizes through labor unions run directly by workers — without paid officials, party leadership, or state mediation — using the general strike as the revolutionary method."
-type: term
-defines:
-  - "Anarcho-Syndicalism"
-  - "syndicalism"
 ---
 
 Anarcho-syndicalism is the current within [anarchism](../_index.md) that organizes through labor unions (*syndicats* in French) run directly by the workers themselves — without paid officials, professional negotiators, party leadership, or state mediation. The union is both the instrument of struggle under [capitalism](../../../../services/critical-theory-science-services-section/services/anarchism-services-section/content/text/glossary/terms/capitalism.md) and the embryo of the future society: the same organization that fights the boss today will run the workplace tomorrow.

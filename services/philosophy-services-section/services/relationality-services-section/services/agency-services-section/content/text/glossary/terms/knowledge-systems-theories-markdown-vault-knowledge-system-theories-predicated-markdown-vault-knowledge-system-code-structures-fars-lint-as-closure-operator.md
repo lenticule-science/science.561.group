@@ -16,7 +16,6 @@ name: FARS lint as closure operator
 description: "The FARS lint operator is the algorithmic realization of the curation theory's closure-rule-system: the operator that, given a vault, applies every validation rule and emits the set of defects the vault contains."
 ---
 
-# FARS lint as closure operator
 
 The **FARS lint operator** is the algorithmic realization of the curation theory's closure-rule-system: the operator that, given a vault, applies every [validation rule](../../documents/articles/research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/knowing/content/knowledge-science/systems/archive/validation-rule.md) and emits the set of defects the vault contains. Read predication-categorically, the operator is a *closure operator* on the witness lattice over a fixed vault — idempotent, extensive, and monotone — whose fixed points are the witness-saturated states; the *discipline-conformant* states are the fixed points with empty witness set.
 

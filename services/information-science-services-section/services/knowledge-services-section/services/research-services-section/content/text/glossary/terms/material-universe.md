@@ -2,7 +2,6 @@
 name: Material Universe
 date-created: 2026-03-04
 type: definition
-dg-publish: true
 dg-permalink: enc/def/material-universe
 aliases:
   - "material universe"
@@ -12,6 +11,7 @@ keywords:
   - Ontology
   - Physics
 description: "The material universe is the relational field of all physical matter, energy, and space — a single structured web of interaction."
+visibility: public
 ---
 
 The material universe is (definition:: the collective term for all [matter|physical matter](matter|physical matter), [energy](./energy.md), and [space](space) that is [../../../../slop/relationality/ai-generated-relationality/relationality-slop-2026-03-03/terms/relating](../../../../slop/relationality/ai-generated-relationality/relationality-slop-2026-03-03/terms/relating) together).

@@ -10,7 +10,6 @@ keywords:
   - PlantBiology
 date-updated: 2026-03-09
 part-of: biology/disciplines/botany/terms
-type: term
 ---
 
 Photosynthesis is the process by which plants, algae, and some bacteria convert light energy into chemical energy, using carbon dioxide and water to produce sugars and releasing oxygen as a byproduct. The overall reaction:

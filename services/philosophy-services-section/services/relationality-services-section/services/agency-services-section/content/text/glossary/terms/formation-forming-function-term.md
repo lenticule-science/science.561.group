@@ -2,7 +2,6 @@
 name: Forming Function Term
 description: Story.
 ---
-# Forming Function Term
 
 *Story.*  A body alone is not yet the function that returns to the TraceContext.  Forcing FormTermBody to witness the traced context yields FormFunctionTerm.
 

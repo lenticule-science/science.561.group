@@ -7,31 +7,25 @@ aliases:
 description: "Abdullah Ocalan's political philosophy synthesizing PKK Marxism with Bookchin's libertarian municipalism — a model of stateless self-governance through nested communes, gender co-governance, and ecological communalism, practiced in Rojava."
 contrasts-with: [nation-state, vanguardism, liberal-democracy]
 references:
-  - id: ocalan2011
-    type: document
+  ocalan2011:
+    authors:
+      - A. Ocalan
     title: Democratic Confederalism
-    author:
-      - literal: A. Ocalan
-    container-title: International Initiative
-    issued:
-      - year: 2011
-  - id: bookchin1990
-    type: document
+    year: 2011
+    publication: International Initiative
+  bookchin1990:
+    authors:
+      - M. Bookchin
     title: The Philosophy of Social Ecology
-    author:
-      - literal: M. Bookchin
-    container-title: Black Rose Books
-    issued:
-      - year: 1990
-  - id: jongerden2012
-    type: document
+    year: 1990
+    publication: Black Rose Books
+  jongerden2012:
+    authors:
+      - J. Jongerden
+      - A. H. Akkaya
     title: "Born from the Left: The Making of the PKK"
-    author:
-      - literal: J. Jongerden
-      - literal: A. H. Akkaya
-    container-title: Routledge
-    issued:
-      - year: 2012
+    year: 2012
+    publication: Routledge
 ---
 
 Democratic confederalism is Abdullah Ocalan's political philosophy for stateless self-governance, developed during his imprisonment on Imrali Island (from 1999 onward) through a synthesis of the PKK's Marxist-Leninist heritage with Murray Bookchin's libertarian municipalism.

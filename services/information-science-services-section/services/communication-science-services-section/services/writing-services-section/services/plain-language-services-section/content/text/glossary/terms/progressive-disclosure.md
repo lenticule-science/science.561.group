@@ -8,7 +8,6 @@ tags: []
 date-modified: 2026-03-09
 part-of: writing/topics/plain-language/terms
 date-updated: 2026-03-09
-type: term
 class: principle
 ---
 

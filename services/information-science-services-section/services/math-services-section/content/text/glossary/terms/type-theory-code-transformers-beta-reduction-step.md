@@ -7,7 +7,6 @@ name: Beta-reduction step
 description: A beta-reduction step is a single application of the beta-reduction rule to a redex anywhere inside a term.
 ---
 
-# Beta-reduction step
 
 A **beta-reduction step** is a single application of the [beta-reduction](beta-reduction.md) rule to a redex anywhere inside a term. The relation $M \to_\beta N$ holds whenever $N$ is obtained from $M$ by replacing one β-redex $(\lambda x.\,P)\;Q$ in $M$ with its contractum $P[Q/x]$ (using the [substitution-operator](substitution-operator.md)).
 

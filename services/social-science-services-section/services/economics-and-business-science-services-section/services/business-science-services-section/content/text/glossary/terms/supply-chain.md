@@ -10,7 +10,6 @@ part-of: business/disciplines/operations/terms
 determines: cost-of-goods-sold
 governed-by: standard-operating-procedures
 produces: risk-mitigation
-type: term
 ---
 
 A supply chain is the sequence of entities, processes, and relationships through which raw materials become finished products and reach the end customer. It includes suppliers, manufacturers, distributors, and retailers — each link adding transformation, transportation, or transaction costs.

@@ -1,5 +1,4 @@
 ---
-date: "\\[2025-08-29 Fri 20:55\\]"
 id: 73b215bc-b09d-4b76-935a-5e93bb52e9e2
 name: MACRO-10
 date-created: 2025-08-29

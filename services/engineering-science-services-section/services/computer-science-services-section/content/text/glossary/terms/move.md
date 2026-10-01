@@ -8,7 +8,6 @@ name: Move
 description: A refactor that changes the value of defined-in cells — relocating a definition from one source file to another — without changing any other witness cell.
 ---
 
-# Move
 
 A refactor that changes the value of `defined-in` cells — relocating a definition from one source file to another — without changing any other witness cell. An entity-permutation acting on the file-entity coordinate of `defined-in` cells.
 

@@ -1,6 +1,5 @@
 ---
 name: "Astronomical unit"
-type: term
 symbol: au
 component-of: astronomy
 ---

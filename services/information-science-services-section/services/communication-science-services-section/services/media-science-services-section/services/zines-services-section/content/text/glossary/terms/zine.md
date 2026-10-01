@@ -11,7 +11,6 @@ tags: []
 date-modified: 2026-03-09
 part-of: media/topics/zines/terms
 date-updated: 2026-03-09
-type: term
 keywords:
   - self-publishing
   - amateur-press

@@ -9,9 +9,6 @@ see-also:
   - action
   - structure
   - power
-defines:
-  - agency
-related:
   - relating
   - witnessing
   - relational-entity

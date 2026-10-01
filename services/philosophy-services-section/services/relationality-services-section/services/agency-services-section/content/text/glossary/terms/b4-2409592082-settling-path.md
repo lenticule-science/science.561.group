@@ -7,7 +7,6 @@ name: Settling path
 description: A settling path is a continuous family of settlings parameterized by an interval $I \subseteq \mathbb{R}$ (or more generally, a connected topological space).
 ---
 
-# Settling path
 
 A **settling path** is a continuous family of settlings parameterized by an interval $I \subseteq \mathbb{R}$ (or more generally, a connected topological space). Formally:
 

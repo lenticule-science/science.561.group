@@ -5,7 +5,6 @@ aliases:
   - "llamacpp"
 date-created: 2026-03-08
 tags: []
-type: term
 ---
 **llama.cpp** is an open-source C/C++ implementation of [large language model](../../../../../../content/text/glossary/terms/large-language-model.md) inference, originally built for Meta's [Llama](../../../../../../content/text/glossary/terms/llama.md) models but now supporting most open-weight model architectures. It is the inference engine underneath [Ollama](ollama/index.md).
 

@@ -9,14 +9,12 @@ see-also:
   - "/sociology/disciplines/legalism/index.md"
 references:
   - /sociology/disciplines/legalism/index.md
-type: term
 tags:
   - Legalism
-defines:
-  - "tort"
-  - "tort law"
-  - "negligence"
-  - "liability"
+aliases:
+  - tort law
+  - negligence
+  - liability
 ---
 
 A tort is a civil wrong — an act or omission that causes harm to another person and for which the law provides a remedy, typically monetary compensation. Tort law is distinct from criminal law: the state prosecutes crimes, but injured parties bring tort claims. The same act (an assault, for example) can be both a crime and a tort, prosecuted by the state and sued for by the victim.

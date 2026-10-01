@@ -4,7 +4,6 @@ aliases:
   - "primary intension"
 date-created: 2025-12-31
 tags: []
-type: term
 ---
 
 A **primary intension** is the component of a term's meaning that determines its referent based on how things turn out to be — the epistemic dimension of [intension](./intension.md). David Chalmers introduced the concept as part of his two-dimensional semantic framework, which separates two ways a term can determine reference.

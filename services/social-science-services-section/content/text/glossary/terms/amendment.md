@@ -20,7 +20,6 @@ aliases:
 name: "Amendment"
 ---
 
-# Amendment
 
 ## Formal definition
 

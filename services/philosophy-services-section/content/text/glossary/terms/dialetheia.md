@@ -3,7 +3,6 @@ name: "Dialetheia"
 description: "A proposition that is both true and false — a genuine feature of reality rather than an error, requiring the failure of explosion to be non-trivially assertible."
 date-created: 2026-03-05
 aliases:
-  - "dialetheia"
   - "dialetheia (logic)"
   - "true contradiction"
   - "dialetheism"
@@ -14,11 +13,6 @@ instance-of: polyvalence
 analogous-to: catuskoti
 tags:
   - logic
-defines:
-  - "Dialetheia"
-  - "dialetheia"
-  - "dialetheism"
-  - "true contradiction"
 ---
 
 A dialetheia is a proposition that is both true and false. Dialetheism is the philosophical position that dialetheia exist — that some contradictions are not merely apparent or the result of error but are genuine features of reality or of our best theories about it.

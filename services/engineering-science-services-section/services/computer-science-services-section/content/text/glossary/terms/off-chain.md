@@ -1,6 +1,5 @@
 ---
 type: "[[adjective]]"
-date: 2025-04-15
 
 signal:
   - "[[postmodern interpretive drift]]"
@@ -12,6 +11,7 @@ method:
   - "[[identify exclusion]]"
 aliases:
   - Related Records
+date-created: 2025-04-15
 ---
 
 An ***off-chain*** condition is one in which signal behavior is **not logged, resolved, or rendered legible by any shared infrastructure**. There is no ledger, no register, no protocolic memory.

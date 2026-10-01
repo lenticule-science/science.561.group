@@ -2,7 +2,6 @@
 name: "Policy"
 description: "A Policy is an enacted, standing normative commitment that applies to all agents within a defined scope and persists until explicitly repealed, generating duties for whoever falls within the scope."
 aliases:
-  - "policy"
   - "standing commitment"
   - "organizational policy"
 extends: [Norm]
@@ -31,13 +30,12 @@ references:
     publication: "University of California Press"
     year: 1960
 date-created: 2026-04-03
-defines: Policy
-related: Norm, Duty, NormativeSystem, Rule, Authority, Institution, Charter
 type: concept
 keywords:
   - AgentialSemioverse
   - Governance
   - Relationality
+see-also: norm-duty-normativesystem-rule-authority-institution-charter
 ---
 
 ## What This Is

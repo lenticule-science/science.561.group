@@ -9,7 +9,6 @@ name: Handoff cobordism
 description: "A handoff cobordism is a settling cobordism instantiated to model the standard operational pattern of one team or one cycle handing operational state to another: shift handoff, sprint-end-to-sprint-start, cycle-to-cycle continuation,…"
 ---
 
-# Handoff cobordism
 
 A **handoff cobordism** is a [settling cobordism](../../documents/articles/humanities/theories/math/theories/categories/theories/predication-categories/objects/settling-cobordism-category.md) instantiated to model the standard operational pattern of one team or one cycle handing operational state to another: shift handoff, sprint-end-to-sprint-start, cycle-to-cycle continuation, succession in office, generational role transfer.
 

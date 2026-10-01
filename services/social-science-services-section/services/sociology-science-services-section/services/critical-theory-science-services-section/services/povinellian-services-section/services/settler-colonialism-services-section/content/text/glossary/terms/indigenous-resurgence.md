@@ -2,19 +2,14 @@
 name: "Indigenous Resurgence"
 date-created: 2026-03-02
 aliases:
-  - "Indigenous resurgence"
   - "resurgence"
 keywords:
   - settler-colonialism
 description: "The regeneration of Indigenous practices, governance, and relationships to land as acts of freedom, distinct from and prior to recognition by the settler-colonial state."
 date-modified: 2026-03-09
 part-of: sociology/topics/settler-colonialism/terms
-type: term
 tags:
   - SettlerColonialism
-defines:
-  - "Indigenous Resurgence"
-  - "resurgence"
 date-updated: 2026-03-09
 ---
 

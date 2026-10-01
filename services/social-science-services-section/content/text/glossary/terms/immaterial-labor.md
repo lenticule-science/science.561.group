@@ -1,52 +1,48 @@
 ---
 name: "Immaterial Labor"
 description: "Lazzarato's term for labor that produces the informational and cultural content of the commodity — labor whose characteristic outputs are subjectivity, communication, knowledge, and affect, that mobilizes capacities developed largely outside the wage relation, and whose value cannot be measured in labor time as industrial labor could."
-defines: immaterial-labor
-related: [labor-process, real-subsumption, general-intellect, multitude, social-factory]
 date-created: 2026-05-03
 references:
-  - id: lazzarato1996
-    type: document
+  lazzarato1996:
+    authors:
+      - Maurizio Lazzarato
     title: Immaterial Labor
-    author:
-      - literal: Maurizio Lazzarato
-    container-title: In Virno & Hardt (Eds.), Radical Thought in Italy. University of Minnesota Press
-    issued:
-      - year: 1996
-  - id: hardt-negri-2000
-    type: document
+    year: 1996
+    publication: In Virno & Hardt (Eds.), Radical Thought in Italy. University of Minnesota Press
+  hardt-negri-2000:
+    authors:
+      - Michael Hardt
+      - Antonio Negri
     title: Empire
-    author:
-      - literal: Michael Hardt
-      - literal: Antonio Negri
-    container-title: Harvard University Press
-    issued:
-      - year: 2000
-  - id: hardt-negri-2004
-    type: document
+    year: 2000
+    publication: Harvard University Press
+  hardt-negri-2004:
+    authors:
+      - Michael Hardt
+      - Antonio Negri
     title: "Multitude: War and Democracy in the Age of Empire"
-    author:
-      - literal: Michael Hardt
-      - literal: Antonio Negri
-    container-title: Penguin
-    issued:
-      - year: 2004
-  - id: vercellone2007
-    type: document
+    year: 2004
+    publication: Penguin
+  vercellone2007:
+    authors:
+      - Carlo Vercellone
     title: From Formal Subsumption to General Intellect
-    author:
-      - literal: Carlo Vercellone
-    container-title: Historical Materialism, 15(1)
-    issued:
-      - year: 2007
-  - id: weeks2007
-    type: document
+    year: 2007
+    publication: Historical Materialism, 15(1)
+  weeks2007:
+    authors:
+      - Kathi Weeks
     title: "Life Within and Against Work: Affective Labor, Feminist Critique, and Post-Fordist Politics"
-    author:
-      - literal: Kathi Weeks
-    container-title: Ephemera, 7(1)
-    issued:
-      - year: 2007
+    year: 2007
+    publication: Ephemera, 7(1)
+aliases:
+  - immaterial-labor
+see-also:
+  - labor-process
+  - real-subsumption
+  - general-intellect
+  - multitude
+  - social-factory
 ---
 
 **Immaterial labor** is the term Maurizio Lazzarato introduced in his [1996 essay of the same name](lazzarato1996) to name "the labor that produces the informational and cultural content of the commodity."

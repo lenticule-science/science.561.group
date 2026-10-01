@@ -6,7 +6,6 @@ description: A point in calendar time, represented as an ISO 8601 date string.
 
 A point in calendar time, represented as an ISO 8601 date string. The general concept underlying date-created and date-modified relations.
 
-# Date
 
 ## What this is
 

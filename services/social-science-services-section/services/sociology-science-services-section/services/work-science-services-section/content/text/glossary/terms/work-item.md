@@ -7,7 +7,6 @@ date-modified: 2026-04-03
 aliases:
   - WorkItem
 id: work-item
-defines: WorkItem
 ---
 
 A work item is an element of a [task](./task.md). It is either:

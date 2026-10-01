@@ -2,7 +2,6 @@
 name: "institution"
 date-created: 2026-03-06
 date-updated: 2026-03-06
-type: term
 keywords:
   - social-theory
   - governance

@@ -11,7 +11,6 @@ date-updated: 2026-03-09
 part-of: business/disciplines/operations/terms
 component-of: balance-sheet
 governed-by: fifo
-type: term
 measured-by: inventory-turnover
 ---
 

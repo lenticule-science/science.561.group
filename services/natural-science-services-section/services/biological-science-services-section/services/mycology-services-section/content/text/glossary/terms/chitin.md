@@ -8,7 +8,6 @@ keywords:
   - Mycology
   - FungalStructure
   - Biochemistry
-type: term
 ---
 
 Chitin: a long-chain polymer of N-acetylglucosamine that forms the primary structural component of fungal cell walls. It is the material that makes [hyphae](./hyphae.md) rigid and resistant — the fungal equivalent of cellulose in plants or collagen in animals. Chitin molecules assemble into microfibrils that are embedded in a matrix of other polysaccharides and proteins, forming a composite wall that is tough, flexible, and biologically resistant to degradation. This structural resilience contributes to the durability of fungal tissues, from the persistent [mycelium](./mycelium.md) threading through soil to the flesh of a [fruiting body](./fruiting-body.md).

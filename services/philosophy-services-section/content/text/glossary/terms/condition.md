@@ -2,7 +2,6 @@
 name: Condition
 aliases:
   - conditions
-  - condition
 date-created: 2026-03-04
 definition: a quality of the state of a thing at a given time
 component-of:
@@ -40,7 +39,6 @@ references:
     issued:
       - year: 1929
 description: "A specific quality of a thing at a given moment — a quality indexed by time."
-defines: condition
 date-modified: "2026-04-03"
 ---
 

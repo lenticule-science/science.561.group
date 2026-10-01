@@ -8,30 +8,24 @@ aliases:
 enables: indigenous-sovereignty
 description: "The rejection of settler-colonial frameworks of recognition as the condition of Indigenous political existence — refusing to make Indigenous governance legible to the colonizer in order to be granted legitimacy."
 references:
-  - id: coulthard2014
-    type: document
+  coulthard2014:
+    authors:
+      - G. Coulthard
     title: "Red Skin, White Masks: Rejecting the Colonial Politics of Recognition"
-    author:
-      - literal: G. Coulthard
-    container-title: University of Minnesota Press
-    issued:
-      - year: 2014
-  - id: simpson2017
-    type: document
+    year: 2014
+    publication: University of Minnesota Press
+  simpson2017:
+    authors:
+      - L. B. Simpson
     title: "As We Have Always Done: Indigenous Freedom through Radical Resistance"
-    author:
-      - literal: L. B. Simpson
-    container-title: University of Minnesota Press
-    issued:
-      - year: 2017
-  - id: fanon1952
-    type: document
+    year: 2017
+    publication: University of Minnesota Press
+  fanon1952:
+    authors:
+      - F. Fanon
     title: Black Skin, White Masks
-    author:
-      - literal: F. Fanon
-    container-title: Éditions du Seuil
-    issued:
-      - year: 1952
+    year: 1952
+    publication: Éditions du Seuil
 extends: [grounded-normativity, refusal]
 contrasts-with: epistemic-universalism
 component-of: decolonization

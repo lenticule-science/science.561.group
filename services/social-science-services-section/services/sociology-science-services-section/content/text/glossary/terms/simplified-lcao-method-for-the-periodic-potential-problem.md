@@ -1,8 +1,10 @@
 ---
 id: 066d5525-5524-48ac-bb4e-12c21459c0b1
-roam-refs: "@slater_simplified_1954"
 name: Simplified LCAO Method for the Periodic Potential Problem
 date-created: 2025-10-08
+provenance:
+  sources:
+    - "@slater_simplified_1954"
 ---
 
 # [resource code](../../../../../../../philosophy-services-section/content/text/glossary/terms/resource-code.md)

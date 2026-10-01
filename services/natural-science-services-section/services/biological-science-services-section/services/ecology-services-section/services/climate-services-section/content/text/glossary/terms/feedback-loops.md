@@ -7,7 +7,6 @@ aliases:
   - "positive feedback"
 description: "Self-reinforcing (positive) and self-correcting (negative) cycles in the climate system that amplify or dampen initial changes in temperature or composition."
 tags: []
-type: term
 ---
 
 Climate feedback loops are processes by which an initial change in the climate system produces effects that either amplify (positive feedback) or dampen (negative feedback) the original change. Positive feedbacks are the primary mechanism by which moderate initial warming could produce catastrophic outcomes — they are why the relationship between emissions and consequences is nonlinear.

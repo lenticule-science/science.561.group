@@ -2,14 +2,11 @@
 name: "Mutual Aid"
 date-created: 2026-03-02
 aliases:
-  - "mutual aid"
+  - Mutual Aid (anarchist)
 tags: []
 description: "Reciprocal voluntary cooperation as both a biological-sociological fact and a political practice, distinguished from charity by its horizontal, non-hierarchical character."
 part-of: sociology/schools/anarchism/topics/organization/terms
-defines:
-  - "Mutual Aid (anarchist)"
 date-modified: 2026-03-09
-type: term
 date-updated: 2026-03-09
 ---
 

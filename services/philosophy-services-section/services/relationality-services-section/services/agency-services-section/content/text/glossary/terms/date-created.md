@@ -6,7 +6,6 @@ description: The date an entity was first written into the system.
 
 The date an entity was first written into the system. Set once at creation; never updated.
 
-# Date Created
 
 ## What this is
 

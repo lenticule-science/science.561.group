@@ -2,15 +2,10 @@
 
 name: "Auto-Immunity"
 aliases:
-  - "Auto-Immunity"
-  - "auto-immunity"
   - "immunitary"
   - "immunitary logic"
 date-created: 2026-03-06
 tags: []
-defines:
-  - "Auto-Immunity"
-  - "immunitary logic"
 ---
 
 ***Auto-immunity***, in its philosophical sense, names the condition in which a system's mechanisms of self-protection turn against the system itself — defense that becomes destruction, preservation that produces the threat it was designed to prevent. The concept draws on immunology but has been developed independently by [Roberto Esposito](../../../../../../../../../references/people/roberto-esposito.md) and Jacques Derrida as a framework for understanding politics, community, and meaning.

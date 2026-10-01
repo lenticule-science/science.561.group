@@ -4,7 +4,6 @@ aliases:
   - "permutation"
   - "permutations"
 date-created: 2026-03-05
-type: term
 tags: []
 description: A permutation of a set is an arrangement of its elements in a definite order.
 ---

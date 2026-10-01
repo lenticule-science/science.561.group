@@ -4,21 +4,16 @@ name: "Bounce Rate"
 description: "Bounce rate is the percentage of sessions in which the visitor views only a single page before leaving the site. A \"bounce\" is a visit with no second interaction — no click to another page, no form submission, no event that the analytics system records as engagement."
 date-created: 2026-03-29
 aliases:
-  - "bounce rate"
   - "bounce"
 keywords:
   - business
   - web
   - metrics
 part-of: business/theories/web/terms
-type: term
 tags:
   - Business
   - Web
   - Metrics
-defines:
-  - "Bounce rate"
-  - "bounce"
 ---
 
 Bounce rate is the percentage of sessions in which the visitor views only a single page before leaving the site. A "bounce" is a visit with no second interaction — no click to another page, no form submission, no event that the analytics system records as engagement.

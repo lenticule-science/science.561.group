@@ -2,14 +2,9 @@
 name: "Consensus"
 date-created: 2026-03-06
 aliases:
-  - "consensus"
   - "consensus decision-making"
 tags: []
 description: "A decision-making process in which a group works toward a proposal everyone can accept — not unanimity or voting, but a commitment to hearing all concerns and modifying proposals until no one is compelled to comply with a decision they find unacceptable."
-type: term
-defines:
-  - "Consensus"
-  - "consensus decision-making"
 ---
 
 Consensus is a decision-making process in which a group works toward a proposal that everyone can accept. It is not the same as unanimity (everyone enthusiastically agrees) or voting (the majority decides and the minority complies). Consensus means that every person affected by a decision has the opportunity to raise concerns, propose modifications, and — if a proposal is truly unacceptable to them — block it. The process is not complete until either the proposal is modified to address all serious concerns or those with concerns agree to stand aside (accept a decision they would not have chosen but can live with).

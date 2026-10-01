@@ -6,8 +6,7 @@ aliases:
   - Cress cultivation
   - Pepper cress
   - Garden cress growing
-related-to:
-  - "[Lepidium sativum botanical term](../../../../../../../../science/theories/biology/theories/botany/terms/lepidium-sativum.md)"
+see-also: lepidium-sativum
 ---
 
 *Lepidium sativum* is one of the fastest-maturing vegetables and requires minimal space and resources; perfect for succession planting to ensure continuous supply of peppery, tender greens.

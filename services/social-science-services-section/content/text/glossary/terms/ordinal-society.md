@@ -1,45 +1,43 @@
 ---
 name: "Ordinal Society"
 description: "Marion Fourcade and Kieran Healy's term for a society in which life chances, opportunities, and social standing are increasingly distributed through algorithmic ranking and scoring systems — credit scores, school rankings, criminal-risk scores, employability ratings, platform reputation scores — that turn previously categorical or qualitative judgments into ordinal positions on continuous scales."
-defines: ordinal-society
-related: [governance-indicator, hypernudge, algorithmic-regulation, surveillance-capitalism, platform]
 date-created: 2026-05-03
 references:
-  - id: fourcade-healy-2017
-    type: document
+  fourcade-healy-2017:
+    authors:
+      - Marion Fourcade
+      - Kieran Healy
     title: Seeing Like a Market
-    author:
-      - literal: Marion Fourcade
-      - literal: Kieran Healy
-    container-title: Socio-Economic Review, 15(1)
-    issued:
-      - year: 2017
-  - id: fourcade-healy-2024
-    type: document
+    year: 2017
+    publication: Socio-Economic Review, 15(1)
+  fourcade-healy-2024:
+    authors:
+      - Marion Fourcade
+      - Kieran Healy
     title: The Ordinal Society
-    author:
-      - literal: Marion Fourcade
-      - literal: Kieran Healy
-    container-title: Harvard University Press
-    issued:
-      - year: 2024
-  - id: espeland-sauder-2007
-    type: document
+    year: 2024
+    publication: Harvard University Press
+  espeland-sauder-2007:
+    authors:
+      - Wendy Nelson Espeland
+      - Michael Sauder
     title: "Rankings and Reactivity: How Public Measures Recreate Social Worlds"
-    author:
-      - literal: Wendy Nelson Espeland
-      - literal: Michael Sauder
-    container-title: American Journal of Sociology, 113(1)
-    issued:
-      - year: 2007
-  - id: rosenblat-2018
-    type: document
+    year: 2007
+    publication: American Journal of Sociology, 113(1)
+  rosenblat-2018:
+    authors:
+      - Alex Rosenblat
     title: "Uberland: How Algorithms Are Rewriting the Rules of Work"
-    author:
-      - literal: Alex Rosenblat
-    container-title: University of California Press
-    issued:
-      - year: 2018
+    year: 2018
+    publication: University of California Press
+aliases:
+  - ordinal-society
+see-also:
+  - governance-indicator
+  - hypernudge
+  - algorithmic-regulation
+  - surveillance-capitalism
+  - platform
 ---
 
 The **ordinal society** is the term Marion Fourcade and Kieran Healy develop across their [2017 paper](fourcade-healy-2017) and [2024 book](fourcade-healy-2024) of that name for a society whose distinctive feature is the proliferation of algorithmic *ranking and scoring* systems that distribute life chances along continuous ordinal scales.

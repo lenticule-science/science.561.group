@@ -23,7 +23,6 @@ Table of contents
 
 - [Open questions](#open-questions)
 
-# Citation
 
 ## Formal definition
 

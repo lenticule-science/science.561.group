@@ -4,7 +4,6 @@ aliases:
   - "seed hull"
 date-created: 2026-01-01
 tags: []
-type: term
 ---
 
 A seed hull is the outer shell of a seed, which often detaches during sprouting and must be removed before harvest. In [home gardening](../index.md) for [sprouts](./sprout.md) and [microgreens](../topics/microgreens/index.md), hulls are a practical concern because they affect texture, appearance, and shelf life of the finished product.

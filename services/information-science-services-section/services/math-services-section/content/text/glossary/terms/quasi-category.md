@@ -7,7 +7,6 @@ aliases:
   - "quasicategory"
 date-created: 2025-12-31
 tags: []
-type: term
 ---
 
 A quasi-category is a [simplicial set](./simplicial-set.md) in which every inner [horn](./horn.md) has a filler: for every map Λⁿₖ → X with 0 < k < n, there exists an extension Δⁿ → X. This condition ensures that composites of [morphisms](./morphism.md) exist but are not required to be unique — they are unique only up to a contractible space of choices.

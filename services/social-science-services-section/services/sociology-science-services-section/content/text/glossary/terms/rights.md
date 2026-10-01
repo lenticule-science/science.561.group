@@ -9,15 +9,13 @@ see-also:
   - "/sociology/disciplines/legalism/index.md"
 references:
   - /sociology/disciplines/legalism/index.md
-type: term
 tags:
   - Legalism
-defines:
-  - "rights"
-  - "legal rights"
-  - "natural rights"
-  - "positive rights"
-  - "negative rights"
+aliases:
+  - legal rights
+  - natural rights
+  - positive rights
+  - negative rights
 ---
 
 A right is a claim that one party can make against another, backed by some authority — legal, moral, customary, or divine. In legal systems, rights are enforceable claims: if someone violates your right, you can seek a remedy through the courts. But the concept extends beyond law into political philosophy, ethics, and everyday moral reasoning.

@@ -3,8 +3,7 @@ name: Fernleaf Yarrow
 description: "Perennial cultivar of Achillea filipendulina, hardy zones 3-9. Finely feathery foliage, golden-yellow flat-topped flower clusters (0.8-1.5 m tall). Cut flowers last 2-3 weeks fresh; dry beautifully for winter arrangements. Dye plant: quercetin produces bright yellow-gold. Attracts parasitoid wasps and tachinid flies—beneficial insect reservoir. Drought-tolerant, long-lived, low-maintenance. 'Gold Plate' (largest flowers, 1.2-1.5 m); 'Cloth of Gold' (reliable golden-yellow, 1 m)."
 date-created: 2026-04-02
 aliases: [golden yarrow, yellow yarrow, Achillea filipendulina]
-related-to:
-  - "[Achillea filipendulina](../../../../../../../../science/theories/biology/theories/botany/terms/achillea-filipendulina.md)"
+see-also: achillea-filipendulina
 ---
 
 Fernleaf yarrow cultivation grows [Achillea filipendulina](../../../../../../../../../natural-science-services-section/services/biological-science-services-section/services/botany-services-section/content/text/glossary/terms/achillea-filipendulina.md) as a long-lived perennial with elegant feathery foliage and prolific golden-yellow flat-topped flower clusters that function as both ornament and beneficial insect attractant. The flowers excel in fresh and dried arrangements.

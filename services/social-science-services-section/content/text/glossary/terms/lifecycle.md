@@ -1,7 +1,6 @@
 ---
 name: "Lifecycle"
 description: "The ordered sequence of phases an entity passes through from creation to completion or dissolution — the temporal shape of an entity's existence."
-defines: lifecycle
 aliases: [lifecycles, life-cycle, life cycle]
 date-created: 2026-04-04
 extends: [state, event]
@@ -9,14 +8,12 @@ enables: [task-sequencing, temporal-shape, phase-constraints]
 contrasts-with: [workflow, state-machine, trajectory]
 applies-to: [task, plan, norm, role, endeavor, enterprise]
 references:
-  - id: harel1987
-    type: document
+  harel1987:
+    authors:
+      - David Harel
     title: "Statecharts: A Visual Formalism for Complex Systems"
-    author:
-      - literal: David Harel
-    container-title: Science of Computer Programming
-    issued:
-      - year: 1987
+    year: 1987
+    publication: Science of Computer Programming
 ---
 
 A lifecycle is the ordered sequence of phases an entity passes through from creation to completion or dissolution.

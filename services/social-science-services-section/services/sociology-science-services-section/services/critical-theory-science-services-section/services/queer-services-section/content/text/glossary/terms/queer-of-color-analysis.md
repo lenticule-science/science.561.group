@@ -3,18 +3,14 @@
 name: "Queer of Color Analysis"
 date-created: 2026-03-06
 aliases:
-  - "queer of color analysis"
   - "queer-of-color analysis"
 keywords:
   - gender-theory
   - black-radical-tradition
 description: "An analytical method that reads the co-constitution of race, sexuality, gender, and political economy — treating none as prior or autonomous."
-type: term
 tags:
   - GenderTheory
   - BlackRadicalTradition
-defines:
-  - "Queer of Color Analysis"
 ---
 
 **Queer of color analysis** is a method developed by [Roderick Ferguson](../../../../../../../../../../../information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/roderick-ferguson.md) in *Aberrations in Black: Toward a Queer of Color Critique* (2004). It names an analytical practice that reads the co-constitution of race, sexuality, gender, and [political economy](../../../../../anarchism-services-section/content/text/glossary/terms/capitalism.md) rather than treating any of these as autonomous axes of oppression that can be analyzed in isolation.

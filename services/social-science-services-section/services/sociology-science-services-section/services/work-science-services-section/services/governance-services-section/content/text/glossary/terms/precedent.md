@@ -21,7 +21,6 @@ aliases:
 name: "Precedent"
 ---
 
-# Precedent
 
 ## Formal definition
 

@@ -7,8 +7,7 @@ aliases:
   - French marigold
   - Mexican marigold
   - Tagetes
-related-to:
-  - "[Marigold cultivation](../../../../../../engineering/domains/domesticity/domains/production/gardening/terms/french-marigold.md)"
+see-also: french-marigold
 ---
 
 ## Taxonomy and Distribution

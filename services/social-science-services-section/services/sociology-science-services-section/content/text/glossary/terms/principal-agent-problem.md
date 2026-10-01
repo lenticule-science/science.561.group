@@ -14,7 +14,6 @@ date-modified: 2026-03-09
 part-of: sociology/topics/political-economy/terms
 authors:
   - claude
-type: term
 tags:
   - PoliticalEconomy
   - Governance

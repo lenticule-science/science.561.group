@@ -20,7 +20,6 @@ aliases:
 name: "Waiver"
 ---
 
-# Waiver
 
 ## Formal definition
 

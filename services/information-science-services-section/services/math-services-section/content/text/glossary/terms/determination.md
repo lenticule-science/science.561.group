@@ -3,7 +3,6 @@ name: "Determination"
 date-created: 2026-03-29
 requires: [morphism]
 restricts: morphism
-type: term
 ---
 
 Determination is when knowing one thing lets you compute another. If you know the churn rate, you can compute the customer lifetime value. Churn rate determines lifetime value. The value is a function of the input — not caused by it, not correlated with it, but computable from it.

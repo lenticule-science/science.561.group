@@ -1,7 +1,6 @@
 ---
 name: "Review"
 description: "The act of comparing actual outcomes against planned outcomes — the structured assessment that produces learning and feeds the feedback stage. As a record, a review is a container of findings."
-defines: review
 date-created: 2026-04-03
 extends: [record]
 instance-of: [act, container]
@@ -15,22 +14,18 @@ output-to: [finding]
 has: [scope, review-type]
 scope-takes: [session, plan, project, goal]
 references:
-  - id: army-aar1993
-    type: document
+  army-aar1993:
+    authors:
+      - US Army
     title: A Leader's Guide to After-Action Reviews
-    author:
-      - literal: US Army
-    container-title: Training Circular 25-20
-    issued:
-      - year: 1993
-  - id: argyris-schon1978
-    type: document
+    year: 1993
+    publication: Training Circular 25-20
+  argyris-schon1978:
+    authors:
+      - Chris Argyris
+      - Donald A. Schön
     title: "Organizational Learning: A Theory of Action Perspective"
-    author:
-      - literal: Chris Argyris
-      - literal: Donald A. Schön
-    issued:
-      - year: 1978
+    year: 1978
 ---
 
 A review is the [act](../../../../philosophy/terms/act.md) of comparing actual outcomes against planned outcomes.

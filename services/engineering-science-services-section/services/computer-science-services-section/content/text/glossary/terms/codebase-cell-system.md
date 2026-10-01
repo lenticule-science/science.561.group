@@ -8,7 +8,6 @@ name: Codebase cell-system
 description: The codebase of a software project, presented as a predication-cell-set over an entity set $E{\mathrm{code}}$ and a predicate alphabet $\Pi{\mathrm{code}}$.
 ---
 
-# Codebase cell-system
 
 The codebase of a software project, presented as a [predication-cell-set](../../../humanities/theories/math/theories/categories/theories/predication-categories/objects/predication-cell-set.md) over an entity set $E_{\mathrm{code}}$ and a predicate alphabet $\Pi_{\mathrm{code}}$.
 

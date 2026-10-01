@@ -2,7 +2,6 @@
 name: Accountability to Impacted Communities
 date-created: 2026-03-08
 aliases:
-- accountability to impacted communities
 - community accountability
 tags:
 - disaster-studies
@@ -35,10 +34,6 @@ cites:
   - madrabout2025
 authors:
   - claude
-type: term
-defines:
-  - "accountability to impacted communities"
-  - "community accountability"
 ---
 
 Accountability to impacted communities is the governance principle that

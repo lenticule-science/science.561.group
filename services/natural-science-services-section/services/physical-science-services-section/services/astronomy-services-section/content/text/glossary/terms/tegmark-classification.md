@@ -1,7 +1,6 @@
 ---
 name: "Tegmark multiverse classification"
 component-of: multiverse
-type: term
 ---
 
 

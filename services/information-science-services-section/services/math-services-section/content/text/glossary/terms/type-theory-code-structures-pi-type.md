@@ -8,7 +8,6 @@ name: Pi type
 description: "A Pi type $\\Pi(x : A).\\,B(x)$ is the type of dependent functions: functions whose output type may depend on the input value."
 ---
 
-# Pi type
 
 A **Pi type** $\Pi(x : A).\,B(x)$ is the type of dependent functions: functions whose output type may depend on the input value. When $B$ does not depend on $x$, the Pi type degenerates to the ordinary [function-type](function-type.md) $A \to B$.
 

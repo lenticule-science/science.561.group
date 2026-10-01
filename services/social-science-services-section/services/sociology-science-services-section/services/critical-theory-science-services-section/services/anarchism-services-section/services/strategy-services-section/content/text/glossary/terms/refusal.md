@@ -2,7 +2,6 @@
 name: "Refusal"
 date-created: 2026-03-06
 aliases:
-  - "refusal"
   - politics of refusal
 tags: []
 description: "The practice of declining to participate in systems of domination — withdrawing compliance, cooperation, labor, or recognition from structures that require your obedience to function."
@@ -10,11 +9,7 @@ keywords:
   - settler-colonialism
   - SettlerColonialism
 part-of: sociology/schools/anarchism/topics/strategy/terms
-defines:
-  - "Refusal"
-  - "politics of refusal"
 date-modified: 2026-03-09
-type: term
 date-updated: 2026-03-09
 ---
 

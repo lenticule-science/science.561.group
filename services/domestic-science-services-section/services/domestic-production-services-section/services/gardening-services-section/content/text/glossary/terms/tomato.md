@@ -5,8 +5,7 @@ date-created: 2026-04-02
 aliases:
   - tomatoes
   - cultivated tomato
-related-to:
-  - "[Solanum lycopersicum](../../../../../../../../science/theories/biology/theories/botany/terms/solanum-lycopersicum.md)"
+see-also: solanum-lycopersicum
 ---
 
 ## Growing Season and Climate

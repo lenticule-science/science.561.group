@@ -9,14 +9,12 @@ see-also:
   - "/sociology/disciplines/legalism/schools/american-law/index.md"
 references:
   - /sociology/disciplines/legalism/schools/american-law/index.md
-type: term
 tags:
   - Legalism
   - AmericanLaw
-defines:
-  - "legal personhood"
-  - "legal person"
-  - "corporate personhood"
+aliases:
+  - legal person
+  - corporate personhood
 ---
 
 Legal personhood is the category that determines who or what can hold rights, bear obligations, and appear in legal proceedings. In American law, legal personhood extends beyond human beings to corporations, trusts, governmental bodies, and certain other entities. The sociological interest lies not in the doctrinal details but in what the category produces: a division of the social world into entities the legal system can recognize and entities it can't.

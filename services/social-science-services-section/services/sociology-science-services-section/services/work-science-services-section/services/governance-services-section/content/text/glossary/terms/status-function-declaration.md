@@ -22,7 +22,6 @@ aliases:
 name: "Status Function Declaration"
 ---
 
-# Status Function Declaration
 
 ## What this is
 

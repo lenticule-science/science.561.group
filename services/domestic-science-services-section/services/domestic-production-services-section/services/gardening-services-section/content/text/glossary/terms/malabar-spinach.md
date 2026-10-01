@@ -7,8 +7,7 @@ aliases:
   - Red vine spinach cultivation
   - Basella rubra cultivation
   - Indian spinach
-related-to:
-  - "[Basella rubra botanical term](../../../../../../../../science/theories/biology/theories/botany/terms/basella-rubra.md)"
+see-also: basella-rubra
 ---
 
 *Basella rubra* is a long-season, vigorous tropical vine that produces continuously under warm, humid conditions. Suitable only for USDA zones 10–12 (frost-free) or greenhouse/container cultivation in cooler climates. The plant is ideal for vertical trellising, making efficient use of space in warm gardens, high tunnels, and greenhouses.

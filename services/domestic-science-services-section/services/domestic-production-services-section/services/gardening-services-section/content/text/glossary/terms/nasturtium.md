@@ -3,8 +3,7 @@ name: Nasturtium
 description: Annual cultivar of Tropaeolum majus, 55-70 days to first flower. Trailing vines 1.5-3 m or compact bush types 0.3-0.5 m. Entirely edible—peppery flowers, leaves, unripe seed pods ("poor man's capers"). Premier aphid trap crop; plant 4-5 feet from vulnerable crops (tomato, squash, beans). Full sun, moderate soil, consistent moisture. Cold-sensitive annual.
 date-created: 2026-04-02
 aliases: [garden nasturtium, Indian cress, capucine]
-related-to:
-  - "[Tropaeolum majus](../../../../../../../../science/theories/biology/theories/botany/terms/tropaeolum-majus.md)"
+see-also: tropaeolum-majus
 ---
 
 Nasturtium cultivation grows [Tropaeolum majus](../../../../../../../../../natural-science-services-section/services/biological-science-services-section/content/text/documents/articles/notes/2026/04/02/2026-04-02-tropaeolum-majus.md) for edible flowers, leaves, and seed pods as well as its unparalleled function as an aphid trap crop. The plant is highly palatable to black bean aphid (*Aphis fabae*), cotton aphid (*Aphis gossypii*), and green peach aphid (*Myzus persicae*), concentrating pest populations and diverting pressure from tomato, squash, beans, and other vulnerable crops.

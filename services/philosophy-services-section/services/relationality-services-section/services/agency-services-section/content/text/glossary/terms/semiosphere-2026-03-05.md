@@ -3,7 +3,6 @@ name: "semiosphere"
 aliases:
   - "semiosphere"
 date-created: 2026-03-05
-type: term
 authors:
   - emsenn
 keywords:

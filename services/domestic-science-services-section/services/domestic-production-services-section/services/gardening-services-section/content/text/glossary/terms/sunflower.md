@@ -3,8 +3,7 @@ name: Sunflower
 description: Annual cultivar of Helianthus annuus, 60-110 days to maturity. Tall cultivars (2-3.5 m) require staking; dwarf ornamental cultivars (0.6-1 m) do not. Full sun, well-drained soil, consistent moisture. Prolific pollinator attractor. Large-headed giants mature in 90-110 days; rapid confection types in 65-90 days.
 date-created: 2026-04-02
 aliases: [cultivated sunflower, annual sunflower]
-related-to:
-  - "[Helianthus annuus](../../../../../../../../science/theories/biology/theories/botany/terms/helianthus-annuus.md)"
+see-also: helianthus-annuus
 ---
 
 Sunflower cultivation spans diverse cultivar groups selected from [Helianthus annuus](../../../../../../../../../natural-science-services-section/services/biological-science-services-section/services/botany-services-section/content/text/glossary/terms/helianthus-annuus.md) for ornament, oil seed, or confection. Cultivars range from dwarf ornamentals (0.6 m, compact capitulum, double flowers) to tall giants (3 m, single stem, 30+ cm capitula).

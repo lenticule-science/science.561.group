@@ -10,7 +10,6 @@ keywords:
   - Symbiosis
   - FungalStructure
 description: The intercellular hyphal network formed by ectomycorrhizal fungi between root cortical cells, serving as the primary interface for nutrient exchange between fungus and plant.
-type: term
 ---
 
 

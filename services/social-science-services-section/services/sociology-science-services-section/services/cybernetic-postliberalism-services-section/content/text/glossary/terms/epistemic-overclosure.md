@@ -5,7 +5,6 @@ keywords:
   - Relationality
 date-updated: 2026-03-09
 part-of: sociology/schools/cybernetic-postliberalism/terms
-type: term
 ---
 
 Epistemic overclosure is the condition in which a system's predictive model ceases to track external dynamics while maintaining internal coherence.

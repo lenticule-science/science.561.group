@@ -1,7 +1,6 @@
 ---
 name: "World"
 component-of: multiverse
-type: term
 ---
 
 

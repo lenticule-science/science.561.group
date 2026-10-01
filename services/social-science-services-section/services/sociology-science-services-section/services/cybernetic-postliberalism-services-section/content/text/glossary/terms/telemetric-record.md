@@ -3,7 +3,6 @@ name: "Telemetric Record"
 date-created: 2025-04-15
 keywords:
   - CyberneticPostliberalism
-type: term
 aliases:
   - Related Records
   - "[]"
@@ -17,7 +16,6 @@ method:
   - "[store](store)"
   - "[grammatize](grammatize)"
   - "[contextualize](contextualize)"
-date: 2025-04-15
 ---
 
 A ***record*** is a unit of trace within a casting cycle. It is not a file, document, or note—it is a **semantic object** produced by and for telemetric grammar.

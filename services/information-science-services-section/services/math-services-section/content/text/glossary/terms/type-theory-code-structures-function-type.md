@@ -8,7 +8,6 @@ name: Function type
 description: A function type $A \to B$ is the type of lambda-terms that, given an argument of type $A$, produce a result of type $B$.
 ---
 
-# Function type
 
 A **function type** $A \to B$ is the type of [lambda-terms](lambda-term.md) that, given an argument of type $A$, produce a result of type $B$. The introduction rule is λ-abstraction; the elimination rule is application.
 

@@ -3,10 +3,8 @@ name: "Telemetric Paradigm"
 date-created: 2025-04-14
 keywords:
   - CyberneticPostliberalism
-type: term
 aliases:
   - Telemetric paradigm
-date: 2025-04-14
 signal:
   - "[[interpret]]"
   - "[[systems theory]]"

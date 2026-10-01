@@ -7,7 +7,6 @@ name: Universe lifting
 description: "Universe lifting $\\mathrm{Lift}{i,j} : \\mathrm{Type}i \\hookrightarrow \\mathrm{Type}j$ (for $i \\le j$) is the canonical embedding that sends a type at level $i$ to its image at level $j$."
 ---
 
-# Universe lifting
 
 **Universe lifting** $\mathrm{Lift}_{i,j} : \mathrm{Type}_i \hookrightarrow \mathrm{Type}_j$ (for $i \le j$) is the canonical embedding that sends a type at level $i$ to its image at level $j$. It is the operator that realises *cumulativity* of the [universe](universe.md) hierarchy.
 

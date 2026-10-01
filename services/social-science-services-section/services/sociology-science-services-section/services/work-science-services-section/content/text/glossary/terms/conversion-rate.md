@@ -4,7 +4,6 @@ name: "Conversion Rate"
 description: "A conversion rate is the percentage of visitors who complete a desired action — a purchase, a subscription sign-up, a newsletter registration, a click on an [affiliate link](./affiliate-marketing.md), or any other defined goal."
 date-created: 2026-03-29
 aliases:
-  - "conversion rate"
   - "conversion"
   - "CVR"
 keywords:
@@ -16,14 +15,10 @@ measures: [web-monetization, e-commerce, affiliate-marketing, paywall]
 dual-of: churn-rate
 contrasts-with: bounce-rate
 governs: revenue-per-mille
-type: term
 tags:
   - Business
   - Web
   - Metrics
-defines:
-  - "Conversion rate"
-  - "conversion"
 ---
 
 A conversion rate is the percentage of visitors who complete a desired action — a purchase, a subscription sign-up, a newsletter registration, a click on an [affiliate link](./affiliate-marketing.md), or any other defined goal. The formula:

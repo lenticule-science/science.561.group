@@ -2,7 +2,6 @@
 name: "Average Check"
 date-created: 2026-03-06
 aliases:
-  - "average check"
   - "average ticket"
   - "average transaction value"
 tags: []
@@ -12,9 +11,6 @@ measures: revenue-model
 component-of: income-statement
 governs: break-even-analysis
 description: "The average check is the mean amount a customer spends per transaction. It is calculated by dividing total revenue over a period by the number of transactions in that period. In food service and hospitality, the term \"average check\" is standard; in retail, \"average ticket\" or \"average transaction value\" are equivalent."
-defines:
-  - "Average Check"
-  - "average ticket"
 date-modified: 2026-03-09
 ---
 

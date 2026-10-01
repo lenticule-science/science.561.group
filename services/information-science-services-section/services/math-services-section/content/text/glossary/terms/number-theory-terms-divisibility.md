@@ -4,7 +4,6 @@ aliases:
   - "divisibility"
   - "divides"
 date-created: 2026-03-05
-type: term
 tags: []
 description: An integer $a$ divides an integer $b$ (written $a \mid b$) if there exists an integer $k$ such that $b = ak$.
 ---

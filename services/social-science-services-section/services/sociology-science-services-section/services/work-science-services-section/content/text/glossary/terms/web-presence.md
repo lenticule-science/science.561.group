@@ -7,7 +7,6 @@ domain: web
 requires: [seo, content-strategy, brand]
 produces: organic-traffic
 contains: [website, search-listings, review-profiles, social-accounts]
-type: term
 date-updated: 2026-03-29
 ---
 

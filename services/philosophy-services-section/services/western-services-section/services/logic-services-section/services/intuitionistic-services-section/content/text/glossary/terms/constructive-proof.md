@@ -3,7 +3,6 @@ name: "Constructive Proof"
 description: "A proof that establishes truth by directly exhibiting the required object or method — rather than by showing that its non-existence leads to contradiction."
 date-created: 2026-03-05
 aliases:
-  - "constructive proof"
   - "constructive evidence"
   - "proof as construction"
 keywords:
@@ -13,10 +12,6 @@ produces: witness
 contrasts-with: proof-by-contradiction
 tags:
   - logic
-defines:
-  - "Constructive Proof"
-  - "constructive proof"
-  - "constructive evidence"
 ---
 
 A constructive proof is a proof that establishes the truth of a proposition by directly exhibiting the required mathematical object or method, rather than by showing that its non-existence leads to contradiction. In intuitionistic logic, all proofs are constructive: to prove that something exists, you must produce it; to prove a disjunction, you must prove one of the disjuncts and say which.

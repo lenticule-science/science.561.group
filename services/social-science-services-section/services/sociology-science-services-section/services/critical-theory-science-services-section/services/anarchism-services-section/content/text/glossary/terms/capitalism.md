@@ -2,16 +2,11 @@
 name: "Capitalism"
 date-created: 2026-03-06
 aliases:
-  - "capitalism"
   - "capitalist"
 tags: []
 description: "An economic system in which a small number of people own the things everyone needs to work and live — land, tools, factories, buildings — and everyone else must work for them in exchange for wages. Anarchism opposes it as a system of domination."
 part-of: sociology/topics/political-economy/terms
-defines:
-  - "Capitalism"
-  - "capitalist"
 date-modified: 2026-03-09
-type: term
 date-updated: 2026-03-09
 ---
 

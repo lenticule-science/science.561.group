@@ -15,7 +15,6 @@ references:
     title: "Geontologies: A Requiem to Late Liberalism"
     publication: "Duke University Press"
     year: 2016
-type: term
 aliases:
   - geontopower
 ---

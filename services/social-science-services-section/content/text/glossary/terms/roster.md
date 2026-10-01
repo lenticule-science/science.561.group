@@ -1,7 +1,6 @@
 ---
 name: "Roster"
 description: "The assignment of personnel to shifts — a mapping from time slots to people that instantiates coverage and makes a schedule executable."
-defines: roster
 date-created: 2026-04-04
 instance-of: relation
 aliases:
@@ -12,26 +11,22 @@ enables: [coverage, handoff, rotation]
 requires: [shift, availability, competency]
 relates: [schedule, assignment, coverage, shift]
 references:
-  - id: ernst2004
-    type: document
+  ernst2004:
+    authors:
+      - Andreas T. Ernst
+      - Houyuan Jiang
+      - Mohan Krishnamoorthy
+      - David Sier
     title: "Staff Scheduling and Rostering: A Review of Applications, Methods and Models"
-    author:
-      - literal: Andreas T. Ernst
-      - literal: Houyuan Jiang
-      - literal: Mohan Krishnamoorthy
-      - literal: David Sier
-    container-title: European Journal of Operational Research
-    issued:
-      - year: 2004
-  - id: burke2010
-    type: document
+    year: 2004
+    publication: European Journal of Operational Research
+  burke2010:
+    authors:
+      - Edmund K. Burke
+      - Patrick De Causmaecker
     title: The Practice and Theory of Automated Timetabling
-    author:
-      - literal: Edmund K. Burke
-      - literal: Patrick De Causmaecker
-    container-title: Operations Research Quarterly
-    issued:
-      - year: 2010
+    year: 2010
+    publication: Operations Research Quarterly
 ---
 
 A roster is a mapping from [shifts](shift.md) to people.

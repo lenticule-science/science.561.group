@@ -2,15 +2,11 @@
 name: "Freedom"
 date-created: 2026-03-06
 aliases:
-  - "freedom"
   - "liberty"
   - "liberation"
+  - Freedom (anarchist)
 tags: []
 description: "The condition of living without domination — not the liberal freedom to choose among options within a system of authority, but the collective capacity to organize life without hierarchy, coercion, or command."
-type: term
-defines:
-  - "Freedom (anarchist)"
-  - "liberation"
 ---
 
 Freedom, in anarchist use, is the condition of living without [domination](../../../../../../../../content/text/glossary/terms/domination.md). It is not the same as the liberal concept of freedom, and the difference matters.

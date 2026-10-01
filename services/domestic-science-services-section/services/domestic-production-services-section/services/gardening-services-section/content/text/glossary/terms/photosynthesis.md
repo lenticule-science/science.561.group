@@ -5,7 +5,6 @@ aliases:
   - "photosynthesis"
 date-created: 2026-03-06
 tags: []
-type: term
 ---
 
 The process by which plants convert light energy, water, and carbon

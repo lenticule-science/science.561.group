@@ -3,7 +3,6 @@ name: "scrying medium"
 aliases:
   - "scrying medium"
 date-created: 2025-12-31
-type: term
 tags: []
 description: A scrying medium is a physical surface or substance used as a focus for scrying — a divinatory practice in which the practitioner gazes into the medium to receive images, impressions, or insights.
 ---

@@ -1,5 +1,4 @@
 ---
-date: "\\[2025-08-26 Tue 08:30\\]"
 id: 143c2343-29da-435e-af97-142c5b307bbc
 name: Hive account
 date-created: 2025-08-26

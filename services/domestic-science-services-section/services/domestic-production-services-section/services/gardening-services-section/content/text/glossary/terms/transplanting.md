@@ -6,7 +6,6 @@ aliases:
   - "transplant"
 date-created: 2026-03-06
 tags: []
-type: term
 ---
 
 The act of moving a plant from one growing location to another, typically

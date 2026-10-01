@@ -2,7 +2,6 @@
 name: structures/
 description: Mathematical structures of the category of computing — the objects of the theory as established in prose/learning/claims/.
 ---
-# structures/
 
 Mathematical structures of the category of computing — the objects of the theory as established in `prose/learning/claims/`.
 

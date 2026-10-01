@@ -18,16 +18,15 @@ ast:
             - identity
     - relation-set:
         - identity
-defines:
-  - relational entity
+id: relational-entity
+date-modified: 2026-03-19
+aliases:
   - relational unit
-related:
+see-also:
   - relating
   - relational-state
   - relational-field
   - relationality
-id: relational-entity
-date-modified: 2026-03-19
 ---
 
 A **relational entity** is a stable pattern constituted by acts of [relating](../../../../../../content/text/glossary/terms/relating.md). It is not a substance that possesses intrinsic properties and then enters into relations. It is what it is because of the relations it sustains, and it would be something different if those relations were different.

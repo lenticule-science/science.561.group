@@ -12,7 +12,10 @@ keywords:
   - microclimate
   - season-extension
 contrasts-with: [hot-bed, greenhouse]
-related-to: [season-extension, hardening-off, row-cover]
+see-also:
+  - season-extension
+  - hardening-off
+  - row-cover
 ---
 
 A cold frame is a bottomless, box-like structure with a transparent cover (typically glass or polycarbonate) placed directly over garden soil to warm the soil and air beneath through solar radiation and thermal mass. It extends the growing season by creating a localized microclimate several degrees warmer than ambient conditions.

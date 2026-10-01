@@ -9,7 +9,6 @@ name: Four-group register as fibration
 description: The four-group directory layout — governing, engaging, situating, defining — that this corpus inherits from earlier prior-art work is the visible surface of a four-stratum decomposition of the predicate category $\mathcal{C}$ in any…
 ---
 
-# Four-group register as fibration
 
 The four-group directory layout — **governing**, **engaging**, **situating**, **defining** — that this corpus inherits from earlier prior-art work is the visible surface of a four-stratum decomposition of the predicate category $\mathcal{C}$ in any predicated knowledge system.
 

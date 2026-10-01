@@ -1,76 +1,65 @@
 ---
 name: "Weak messianic power"
-defines: weak-messianic-power
-aliases: [weak messianic power, schwache messianische kraft]
+aliases: [ schwache messianische kraft, weak-messianic-power ]
 description: "Benjamin's term, from the second of the 'Theses on the Philosophy of History' (1940), for the power each generation possesses to recognize a claim from past generations on the present and to act on that claim. The power is weak (not sovereign, not redemptive in itself) but it is nevertheless a power — the past has expectations of us that we can refuse, fulfill, or betray."
-related: [jetztzeit, dialectical-image, angel-of-history, redemption]
 contrasts-with: [progress-historiography, sovereign-messianism]
 date-created: 2026-04-27
 date-modified: 2026-04-27
 references:
-  - id: benjamin1968
-    type: document
+  benjamin1968:
+    authors:
+      - Walter Benjamin
     title: Illuminations
+    year: 1968
+    publication: Schocken Books
     note: the standard English translation containing the 'Theses on the Philosophy of History' where weak messianic power is named
-    author:
-      - literal: Walter Benjamin
-    container-title: Schocken Books
-    issued:
-      - year: 1968
-  - id: benjamin2003
-    type: document
+  benjamin2003:
+    authors:
+      - Walter Benjamin
     title: "Selected Writings, Volume 4: 1938-1940"
+    year: 2003
+    publication: Harvard University Press
     note: the more recent and philologically careful translation, with the Theses placed in their late-correspondence context
-    author:
-      - literal: Walter Benjamin
-    container-title: Harvard University Press
-    issued:
-      - year: 2003
-  - id: scholem1981
-    type: document
+  scholem1981:
+    authors:
+      - Gershom Scholem
     title: "Walter Benjamin: The Story of a Friendship"
+    year: 1981
+    publication: Schocken Books
     note: the indispensable account of Benjamin's relation to Jewish messianic thought from his closest interlocutor in that tradition
-    author:
-      - literal: Gershom Scholem
-    container-title: Schocken Books
-    issued:
-      - year: 1981
-  - id: derrida1994
-    type: document
+  derrida1994:
+    authors:
+      - Jacques Derrida
     title: Specters of Marx
+    year: 1994
+    publication: Routledge
     note: the influential later development that takes weak messianic power as a structure of inheritance and obligation; the messianic without messianism
-    author:
-      - literal: Jacques Derrida
-    container-title: Routledge
-    issued:
-      - year: 1994
-  - id: agamben2005
-    type: document
+  agamben2005:
+    authors:
+      - Giorgio Agamben
     title: "The Time That Remains: A Commentary on the Letter to the Romans"
+    year: 2005
+    publication: Stanford University Press
     note: the Pauline-philosophical reading that recovers messianic time as the time of the now, adjacent to Benjamin's Jetztzeit
-    author:
-      - literal: Giorgio Agamben
-    container-title: Stanford University Press
-    issued:
-      - year: 2005
-  - id: lowy2005
-    type: document
+  lowy2005:
+    authors:
+      - Michael Löwy
     title: "Fire Alarm: Reading Walter Benjamin's 'On the Concept of History'"
+    year: 2005
+    publication: Verso
     note: the careful thesis-by-thesis political reading of the Theses; the most useful single commentary
-    author:
-      - literal: Michael Löwy
-    container-title: Verso
-    issued:
-      - year: 2005
-  - id: taubes2004
-    type: document
+  taubes2004:
+    authors:
+      - Jacob Taubes
     title: The Political Theology of Paul
+    year: 2004
+    publication: Stanford University Press
     note: the political-theological context that connects Benjamin's messianism to the Pauline tradition Schmitt and Agamben also work in
-    author:
-      - literal: Jacob Taubes
-    container-title: Stanford University Press
-    issued:
-      - year: 2004
+see-also:
+  - jetztzeit
+  - dialectical-image
+  - angel-of-history
+  - redemption
 ---
 
 **Weak messianic power** is the term Walter Benjamin uses, in the second of his "Theses on the Philosophy of History" (1940), for the power each living generation possesses to recognize a claim from past generations on the present and to act on that claim.

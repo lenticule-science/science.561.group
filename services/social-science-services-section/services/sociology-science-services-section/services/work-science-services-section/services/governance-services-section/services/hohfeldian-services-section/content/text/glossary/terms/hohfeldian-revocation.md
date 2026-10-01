@@ -21,7 +21,6 @@ aliases:
 name: "Revocation"
 ---
 
-# Revocation
 
 ## Formal definition
 

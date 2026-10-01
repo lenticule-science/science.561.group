@@ -1,6 +1,5 @@
 ---
 name: "Celestial sphere"
-type: term
 component-of: astronomy
 ---
 

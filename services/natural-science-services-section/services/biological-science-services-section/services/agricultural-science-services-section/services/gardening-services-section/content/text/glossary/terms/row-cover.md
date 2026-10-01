@@ -12,7 +12,10 @@ keywords:
   - gardening
   - pest-management
   - season-extension
-related-to: [cold-frame, frost-protection, season-extension]
+see-also:
+  - cold-frame
+  - frost-protection
+  - season-extension
 ---
 
 A row cover is a sheet of lightweight, spunbond polypropylene fabric (typically 0.5–1.5 oz per square yard) laid directly over growing plants or supported on low hoops. It functions as a flexible microclimate modifier — controlling temperature, excluding pests, and reducing wind stress — while allowing most sunlight and water to reach the plants below.

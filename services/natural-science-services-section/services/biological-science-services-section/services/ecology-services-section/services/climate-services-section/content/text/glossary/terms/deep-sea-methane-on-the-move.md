@@ -14,7 +14,6 @@ description: Triage conversion of Deep Sea Methane on the Move.md.
 keywords:
   - Environment
 source: /inbox/triage/Deep Sea Methane on the Move.md
-dg-publish: true
 date-published: 2023-12-07
 permalink: /deep-sea-methane-on-the-move/
 created: "[2023-12-07](2023-12-07)"
@@ -25,6 +24,7 @@ tags:
   - degrowth
   - science
   - note
+visibility: public
 ---
 
 🌊 Unveiling the Ocean's Hidden Climate Threat 🚨

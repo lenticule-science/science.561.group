@@ -5,7 +5,6 @@ aliases:
   - "bulb"
 date-created: 2026-03-07
 tags: []
-type: term
 ---
 
 A layered underground storage organ that contains a compressed stem

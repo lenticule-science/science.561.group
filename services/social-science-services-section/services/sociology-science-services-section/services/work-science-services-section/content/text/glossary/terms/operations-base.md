@@ -9,7 +9,6 @@ name: Operations base
 description: The base $B{\mathrm{op}} = (\mathbf{2}, \mathcal{C}{\mathrm{op}}, E{\mathrm{op}}, \lambda)$ over which operational work is a predication settling.
 ---
 
-# Operations base
 
 The base $B_{\mathrm{op}} = (\mathbf{2}, \mathcal{C}_{\mathrm{op}}, E_{\mathrm{op}}, \lambda)$ over which operational work is a [predication settling](../../../../../../../../../../humanities/theories/math/theories/categories/theories/predication-categories/objects/predication-settling.md). Each component:
 

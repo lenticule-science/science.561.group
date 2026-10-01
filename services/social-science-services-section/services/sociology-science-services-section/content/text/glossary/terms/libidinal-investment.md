@@ -5,11 +5,6 @@ description: "The attachment of psychic energy or desire to an object, idea, per
 date-created: 2026-03-02
 date-modified: 2026-03-29
 aliases:
-  - "libidinal investment"
-  - "libidinal economy"
-  - "cathexis"
-defines:
-  - "Libidinal Investment"
   - "libidinal economy"
   - "cathexis"
 enables: cruel-optimism
@@ -17,24 +12,19 @@ contrasts-with: false-consciousness
 produced-by: desire
 acts-on: social-structure
 references:
-  - id: freud1915
-    type: document
+  freud1915:
+    authors:
+      - Sigmund Freud
     title: Instincts and Their Vicissitudes
-    author:
-      - literal: Sigmund Freud
-    container-title: Standard Edition, Vol. XIV
-    issued:
-      - year: 1915
-  - id: deleuze-guattari1972
-    type: document
+    year: 1915
+    publication: Standard Edition, Vol. XIV
+  deleuze-guattari1972:
+    authors:
+      - Gilles Deleuze
+      - Félix Guattari
     title: "L'Anti-Œdipe: Capitalisme et Schizophrénie"
-    author:
-      - literal: Gilles Deleuze
-      - literal: Félix Guattari
-    container-title: Les Éditions de Minuit
-    issued:
-      - year: 1972
-type: term
+    year: 1972
+    publication: Les Éditions de Minuit
 component-of: affect-theory
 part-of:
   - deleuze-guattari

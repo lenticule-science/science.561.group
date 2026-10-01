@@ -21,7 +21,6 @@ ast:
     - goal
     - plans
 id: project
-defines: Project
 ---
 
 A project is a named container of related [plans](./plan.md) oriented toward a single stated goal. It is the highest-level grouping of work below organizational goals — a project says "this is the thing we are trying to accomplish" and the plans within it say how.

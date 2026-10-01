@@ -8,7 +8,6 @@ name: Classify
 description: The substrate operation by which an entity is placed in the predicate-category schema — i.e., assigned to a stratum (per the upper ontology) and to one or more facets within the stratum.
 ---
 
-# Classify
 
 The substrate operation by which an entity is *placed* in the predicate-category schema — i.e., assigned to a stratum (per the [upper ontology](../../documents/articles/research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/knowing/content/knowledge-science/systems/objects/upper-ontology-as-predicate-vocabulary.md)) and to one or more facets within the stratum. Under the [identity-by-relations](../../documents/articles/research/2026/07/31/lenticule-import/animating/content/becoming/doing/engineering/theories/tech/theories/computing/theories/predicated-computing/concepts/identity-by-relations.md) discipline, classification is *not* a separate "type assignment" — it is the substrate's settling under the closure rules that propagate from the cell-level predications the entity participates in.
 

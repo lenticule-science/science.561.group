@@ -34,7 +34,8 @@ references:
     title: "ISSAI Framework — Audit Findings"
     year: 1947
     note: "Formalized audit finding structure: condition, criteria, cause, effect"
-defines: finding
+aliases:
+  - finding
 ---
 
 A finding is a judgment comparing what happened to what was supposed to happen. It is what the [review](../../../../../../content/text/glossary/terms/review.md) stage produces. A finding takes [observations](observation.md) (actual state) and plan/goal predicates (intended state) as inputs and produces a structured assessment: what the gap is, why it exists, and how much it matters.

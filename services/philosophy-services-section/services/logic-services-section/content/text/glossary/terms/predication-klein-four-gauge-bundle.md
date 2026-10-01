@@ -8,7 +8,6 @@ name: Klein-four gauge bundle
 description: The Klein-four gauge bundle of a predication settling is the $(\mathbb{Z}/2 \times \mathbb{Z}/2)$-equivariant sheaf on the bitopological settling site arising from the four bilattice involutions acting fiberwise.
 ---
 
-# Klein-four gauge bundle
 
 The **Klein-four gauge bundle** of a predication settling is the $(\mathbb{Z}/2 \times \mathbb{Z}/2)$-equivariant sheaf on the bitopological settling site arising from the four bilattice involutions acting fiberwise. It extends the [internal $\mathbb{Z}/2$ gauge](../../documents/articles/research/2026/07/31/lenticule-import/from-predicate-category/teaching/explanations/internal-z2-gauge.md) — the negation action — to the full symmetry group of $\mathbf{FOUR}$.
 

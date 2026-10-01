@@ -8,8 +8,7 @@ aliases:
   - Molokheya cultivation
   - Jute mallow cultivation
   - Egyptian spinach
-related-to:
-  - "[Corchorus olitorius botanical term](../../../../../../../../science/theories/biology/theories/botany/terms/corchorus-olitorius.md)"
+see-also: corchorus-olitorius
 ---
 
 *Corchorus olitorius* is a tropical plant adapted to heat and humidity; cultivation outside its native range requires conscious planning to provide warmth. For gardeners in the Palestinian, Lebanese, Egyptian, or Indian diaspora, growing molokhia from family seeds carries both nutritional and cultural significance.

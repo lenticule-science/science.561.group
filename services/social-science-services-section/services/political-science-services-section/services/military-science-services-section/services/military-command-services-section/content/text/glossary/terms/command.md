@@ -8,7 +8,6 @@ keywords:
   - CombatSystems
   - Governance
 description: "Authority and responsibility to make decisions and direct action under uncertainty, binding collective violence to a coherent purpose."
-type: term
 ---
 
 Command is the authority and responsibility to make decisions and direct action under uncertainty. In military organizations, command binds collective violence to a coherent purpose: it establishes who decides, how decisions propagate, and how initiative is constrained.

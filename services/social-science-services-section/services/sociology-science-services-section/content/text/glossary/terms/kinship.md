@@ -2,7 +2,7 @@
 
 name: "Kinship"
 description: "Kinship names the systems of relation that organize social, economic, and political life. Who counts as kin, what obligations flow between kin, and how kinship is established vary across cultures — but every society organizes through kinship in some form."
-date-created: 2026-03-03T00:00:00
+date-created: 2026-03-03
 aliases:
   - "kinship"
   - "kinship systems"

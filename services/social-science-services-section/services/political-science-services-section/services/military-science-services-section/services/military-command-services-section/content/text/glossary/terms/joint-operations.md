@@ -17,7 +17,6 @@ references:
     publication: "Joint Publication 1-02 (as amended through 15 Feb 2016)"
 cites:
   - jointchiefs2016dictionary
-type: term
 ---
 
 Joint operations are military actions conducted by joint forces and those Service forces employed in specified command relationships with each other [@jointchiefs2016dictionary].

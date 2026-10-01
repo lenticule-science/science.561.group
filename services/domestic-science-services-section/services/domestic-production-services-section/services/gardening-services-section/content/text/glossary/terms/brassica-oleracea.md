@@ -8,8 +8,7 @@ aliases:
   - Kale cultivation
   - Brussels sprouts cultivation
   - Cole crop cultivation
-related-to:
-  - "[Brassica oleracea botanical term](brassica-oleracea.md)"
+see-also: brassica-oleracea
 ---
 
 All *Brassica oleracea* cultivar groups share fundamental growing requirements: cool soil and air temperatures (15–20°C optimal), consistent moisture, rich soil, and fall timing for superior flavor.

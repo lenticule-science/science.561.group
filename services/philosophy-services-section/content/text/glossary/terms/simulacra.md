@@ -3,7 +3,6 @@ name: "Simulacra"
 description: "Baudrillard's term for signs that bear no relation to any reality — copies without originals, circulating through their own internal logic."
 date-created: 2026-03-03
 aliases:
-  - "simulacra"
   - "simulacrum"
   - "simulation"
 tags: []
@@ -14,10 +13,6 @@ contrasts-with: representation
 delivered-via: media
 part-of:
   - baudrillard
-defines:
-  - "Simulacra"
-  - "simulacrum"
-  - "simulation"
 ---
 
 Simulacra, as theorized by Jean Baudrillard in *Simulacra and Simulation* (1981), are [signs](../../linguistics/topics/semiotics/terms/sign.md) that bear no relation to any reality — copies without originals. Baudrillard proposed four successive stages of the image's relationship to reality. In the first, the image reflects a basic reality — it is a faithful representation. In the second, the image masks and perverts reality — it misrepresents what exists. In the third, the image masks the absence of reality — it conceals the fact that there is nothing behind the representation. In the fourth and final stage, the image bears no relation to reality whatsoever. It has become its own pure simulacrum, circulating without reference, producing meaning only through its own internal logic of circulation.

@@ -20,7 +20,6 @@ references:
     publication: "Army Doctrine Publication 5-0 (31 Jul 2019)"
 cites:
   - usarmy2019adp5_0
-type: term
 ---
 
 Decision support is the set of planning artifacts that connect **decision points** to **information requirements**, **triggers**, and **planned actions** so commanders can adapt under time pressure [@usarmy2019adp5_0].

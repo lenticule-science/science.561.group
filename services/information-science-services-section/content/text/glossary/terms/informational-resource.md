@@ -6,7 +6,6 @@ date-created: 2026-03-18
 date-modified: 2026-09-09
 ---
 
-# Informational Resource
 
 This term names the information-content sense of resource used in this
 information-science section. It does not define the engineering term

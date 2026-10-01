@@ -4,7 +4,7 @@ name: "Focus"
 description: "A Focus is a pair (H, t*) — an ambient RelationalState H and a designated focal history t* ∈ T — inducing a tripartite Gurwitsch field: the focal fiber H_{t*} as theme, the restriction-accessible fibers {H_t : t ≤ t*, t ≠ t*} as thematic field, and the remaining fibers as margin. The defining structure: focus is the designated current working fiber in a presheaf — the position at which the RelationalMachine currently operates, from which context radiates via restriction maps outward, and within which the nuclear pair (σ_{t*}, Δ_{t*}) partitions propositions into the nuclear focal sublocale H*_{t*} and its complement."
 date-created: 2026-03-20
 aliases:
-  - focus
+  []
 params:
   ambient-presheaf: relational-state
   focal-history: relational-history
@@ -17,9 +17,8 @@ ast:
         - focal-history
         - ambient-presheaf
 id: focus
-defines: Focus
-related: RelationalState, IndexedAutomaton, RelationalMachine, History, Character, Persona, MacroFocus, MesoFocus, MicroFocus
 date-modified: 2026-03-20
+see-also: relationalstate-indexedautomaton-relationalmachine-history-character-persona-macrofocus-mesofocus-microfocus
 ---
 
 ## Formal definition

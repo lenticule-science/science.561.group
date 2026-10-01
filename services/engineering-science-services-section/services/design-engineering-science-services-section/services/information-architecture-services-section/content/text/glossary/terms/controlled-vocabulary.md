@@ -8,7 +8,6 @@ keywords:
   - InformationArchitecture
 cites:
   - "The Accidental Taxonomist"
-type: term
 tags:
   - information-architecture
 references:

@@ -2,14 +2,9 @@
 name: "The General Strike"
 date-created: 2026-03-06
 aliases:
-  - "the general strike"
   - "general strike"
 tags: []
 description: "The simultaneous withdrawal of labor across an entire economy — anarcho-syndicalism's central concept, in which workers exercise collective power not by seizing the means of production but by refusing to operate them."
-type: term
-defines:
-  - "The General Strike"
-  - "general strike"
 ---
 
 The general strike is the simultaneous withdrawal of [labor](../../../../../../../../content/text/glossary/terms/labor.md) across an entire economy. It is anarcho-syndicalism's central concept: the claim that workers do not need to seize [the state](../../../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/notes/undated/the-state.md) or the means of production — they need only stop working, and the system that depends on their labor collapses.

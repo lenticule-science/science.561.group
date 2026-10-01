@@ -8,8 +8,7 @@ aliases:
   - Scotch bonnet pepper
   - datil pepper
   - Biquinho pepper
-related-to:
-  - "[Habanero cultivation](../../../../../../engineering/domains/domesticity/domains/production/gardening/terms/habanero.md)"
+see-also: habanero
 ---
 
 ## Taxonomy and Center of Origin

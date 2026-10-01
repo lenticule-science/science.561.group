@@ -2,39 +2,29 @@
 name: "Scansion"
 date-created: 2026-04-30
 aliases:
-  - "scansion"
   - "scan"
   - "to scan"
 tags: []
-defines:
-  - "scansion"
-  - "to scan"
 contrasts-with: [reading-aloud, recitation]
 references:
-  - id: attridge1995
-    type: document
+  attridge1995:
+    authors:
+      - D. Attridge
     title: "Poetic Rhythm: An Introduction"
-    author:
-      - literal: D. Attridge
-    container-title: Cambridge University Press
-    issued:
-      - year: 1995
-  - id: hollander1981
-    type: document
+    year: 1995
+    publication: Cambridge University Press
+  hollander1981:
+    authors:
+      - J. Hollander
     title: "Rhyme's Reason: A Guide to English Verse"
-    author:
-      - literal: J. Hollander
-    container-title: Yale University Press
-    issued:
-      - year: 1981
-  - id: steele1999
-    type: document
+    year: 1981
+    publication: Yale University Press
+  steele1999:
+    authors:
+      - T. Steele
     title: All the Fun's in How You Say a Thing
-    author:
-      - literal: T. Steele
-    container-title: Ohio University Press
-    issued:
-      - year: 1999
+    year: 1999
+    publication: Ohio University Press
 ---
 
 Scansion is the analytic technique for marking, on the page, which syllables of a line of [metrical](meter.md) verse are stressed and which are unstressed, so that the [meter](meter.md) the line is keeping — and the places it departs from that meter — can be read off explicitly.

@@ -1,50 +1,45 @@
 ---
 name: "Deskilling"
 description: "Braverman's thesis that monopoly capitalism systematically degrades work through the separation of conception from execution and the reduction of labor to interchangeable simple operations, with skill expropriated from workers and recomposed in the planning department, the machine, and the procedure."
-defines: deskilling
-related: [labor-process, real-subsumption, scientific-management, manufacturing-consent, contested-terrain, capability]
 date-created: 2026-05-03
 references:
-  - id: braverman1974
-    type: document
+  braverman1974:
+    authors:
+      - Harry Braverman
     title: "Labor and Monopoly Capital: The Degradation of Work in the Twentieth Century"
-    author:
-      - literal: Harry Braverman
-    container-title: Monthly Review Press
-    issued:
-      - year: 1974
-  - id: taylor1911
-    type: document
+    year: 1974
+    publication: Monthly Review Press
+  taylor1911:
+    authors:
+      - Frederick Winslow Taylor
     title: The Principles of Scientific Management
-    author:
-      - literal: Frederick Winslow Taylor
-    container-title: Harper & Brothers
-    issued:
-      - year: 1911
-  - id: friedman1977
-    type: document
+    year: 1911
+    publication: Harper & Brothers
+  friedman1977:
+    authors:
+      - Andrew L. Friedman
     title: "Industry and Labour: Class Struggle at Work and Monopoly Capitalism"
-    author:
-      - literal: Andrew L. Friedman
-    container-title: Macmillan
-    issued:
-      - year: 1977
-  - id: wood-1989
-    type: document
+    year: 1977
+    publication: Macmillan
+  wood-1989:
+    authors:
+      - Stephen Wood (Ed.)
     title: The Transformation of Work? Skill, Flexibility and the Labour Process
-    author:
-      - literal: Stephen Wood (Ed.)
-    container-title: Unwin Hyman
-    issued:
-      - year: 1989
-  - id: attewell-1987
-    type: document
+    year: 1989
+    publication: Unwin Hyman
+  attewell-1987:
+    authors:
+      - Paul Attewell
     title: The Deskilling Controversy
-    author:
-      - literal: Paul Attewell
-    container-title: Work and Occupations, 14(3)
-    issued:
-      - year: 1987
+    year: 1987
+    publication: Work and Occupations, 14(3)
+see-also:
+  - labor-process
+  - real-subsumption
+  - scientific-management
+  - manufacturing-consent
+  - contested-terrain
+  - capability
 ---
 
 **Deskilling** is Harry Braverman's thesis, formulated in [Labor and Monopoly Capital](braverman1974), that monopoly capitalism systematically *degrades* work — strips it of the skill, judgment, and discretion that pre-Taylorist craft and clerical labor possessed.

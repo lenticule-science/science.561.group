@@ -2,15 +2,12 @@
 name: "Property"
 date-created: 2026-03-06
 aliases:
-  - "property"
   - "private property"
+  - Property (anarchist analysis)
 tags: []
 description: "A social relationship in which one person's claim to control a resource is enforced against everyone else. Anarchism distinguishes personal possessions from private ownership of productive resources, opposing the latter as a form of domination."
 part-of: sociology/topics/political-economy/terms
 date-modified: 2026-03-09
-type: term
-defines:
-  - "Property (anarchist analysis)"
 date-updated: 2026-03-09
 ---
 

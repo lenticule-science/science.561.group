@@ -7,10 +7,10 @@ aliases:
   - aubergine
   - brinjal
   - melongene
-related-to:
-  - "[Solanum melongena](../../../../../../../../science/theories/biology/theories/botany/terms/solanum-melongena.md)"
-  - "[Tomato](tomato.md)"
-  - "[Pepper](pepper.md)"
+see-also:
+  - solanum-melongena
+  - tomato
+  - pepper
 ---
 
 ## Climate and Growing Season

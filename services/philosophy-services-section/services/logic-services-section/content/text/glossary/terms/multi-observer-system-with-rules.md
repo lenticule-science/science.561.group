@@ -13,7 +13,6 @@ name: Ruled multi-observer system
 description: An extension of the multi-observer system carrying per-observer closure-rule data.
 ---
 
-# Ruled multi-observer system
 
 An extension of the [multi-observer system](multi-observer-system.md) carrying per-observer closure-rule data. Where the base [multi-observer system](multi-observer-system.md) treats each observer's settling as a black-box settled state, a *ruled* multi-observer system records *which closure rule system produced* each observer's settling — making explicit the inferential dynamics behind each observer's view.
 

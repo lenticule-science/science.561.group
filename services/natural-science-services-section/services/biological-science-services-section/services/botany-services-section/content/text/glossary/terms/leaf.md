@@ -8,7 +8,6 @@ keywords:
   - Botany
   - PlantAnatomy
   - Photosynthesis
-type: term
 ---
 
 Leaf: the primary photosynthetic organ of most plants. Leaves are typically flat and thin, a geometry that maximizes surface area for light capture while minimizing the distance gases must diffuse to reach photosynthetic cells. The internal structure of a leaf reflects this function: the mesophyll, where [chloroplasts](./chloroplast.md) concentrate, is the site of carbon fixation; veins — bundles of [xylem](./xylem.md) and [phloem](./phloem.md) — provide water, minerals, and a route for exporting sugars; and the epidermis, the outer protective layer, is punctuated by [stomata](./stomata.md) that regulate gas exchange.

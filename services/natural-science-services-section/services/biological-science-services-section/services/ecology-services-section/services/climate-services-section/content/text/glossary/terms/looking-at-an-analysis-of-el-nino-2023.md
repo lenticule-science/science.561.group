@@ -12,7 +12,7 @@ description: Triage conversion of Looking at an Analysis of El Nino 2023.md.
 keywords:
   - Environment
 source: /inbox/triage/Looking at an Analysis of El Nino 2023.md
-dg-publish: true
+visibility: public
 ---
 
 A analytical essay came out 2023-12-14, authored by James Hansen, Makiko Sato, and Reto Ruedy.

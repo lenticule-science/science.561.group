@@ -7,7 +7,6 @@ name: $n$-ary predication
 description: Generalizes predication categories' binary predication-cells ($E \times E$) to $n$-ary cells ($E^n$) for $n \geq 1$.
 ---
 
-# $n$-ary predication
 
 Generalizes predication categories' [binary predication-cells](../../documents/articles/research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/knowing/content/spatiotemporal-knowledge-presheaf/content/n-ary-predication/_archive/predication-settling.md) ($E \times E$) to **$n$-ary cells** ($E^n$) for $n \geq 1$. An $n$-ary predicate $p$ has values $v^{(n)}(p)(e_1, \ldots, e_n) \in \mathbf{L}$ — a bilattice-valued (or $\mathcal{V}$-valued) assignment of "how $p$ relates the $n$-tuple $(e_1, \ldots, e_n)$."
 

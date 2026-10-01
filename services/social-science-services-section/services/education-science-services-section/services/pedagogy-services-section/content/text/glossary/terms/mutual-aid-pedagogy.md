@@ -2,7 +2,6 @@
 name: "mutual aid pedagogy"
 description: "Learning organized through reciprocal support rather than hierarchical instruction, where expertise is distributed and teaching roles rotate"
 aliases:
-  - "mutual aid pedagogy"
   - "mutual aid as pedagogy"
 date-created: 2026-03-06
 keywords:
@@ -34,9 +33,6 @@ references:
       - literal: Kaba
     issued:
       - year: 2021
-defines:
-- mutual aid pedagogy
-- mutual aid as pedagogy
 ---
 
 [Mutual aid pedagogy](mutual-aid-pedagogy.md) is a form of learning organized through reciprocal support rather than hierarchical instruction. People teach what they know and learn what they don't, without fixed roles of teacher and student. The practice draws on [Pyotr Kropotkin](../../../../../../general/people/pyotr-kropotkin.md)'s account of mutual aid as a factor of evolution — the observation that cooperation, not competition, sustains communities and enables collective flourishing [@kropotkin_MutualAid_1902].

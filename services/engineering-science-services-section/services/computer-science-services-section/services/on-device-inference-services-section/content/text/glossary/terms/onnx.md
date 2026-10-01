@@ -4,7 +4,7 @@ name: "ONNX"
 aliases:
   - "ONNX"
   - "Open Neural Network Exchange"
-date-created: 2026-03-08T00:00:00
+date-created: 2026-03-08
 tags: []
 ---
 **ONNX** (Open Neural Network Exchange) is an open file format for representing trained machine learning models. It defines a common set of operators and a standard way to describe a computational graph, so a model trained in one framework (PyTorch, TensorFlow) can be exported to ONNX and run in another runtime.

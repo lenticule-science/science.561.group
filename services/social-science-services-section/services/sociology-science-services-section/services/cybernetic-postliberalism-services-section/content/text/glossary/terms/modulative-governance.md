@@ -9,7 +9,6 @@ keywords:
   - CyberneticPostliberalism
   - Governance
 description: "Governance that operates by shaping which signals a system registers and responds to, rather than by declaring rules."
-date: 2025-04-13
 dates-modified:
   - "[[2025-05-15]]"
 signal: true

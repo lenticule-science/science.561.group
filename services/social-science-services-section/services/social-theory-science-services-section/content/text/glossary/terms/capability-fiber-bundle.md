@@ -8,7 +8,6 @@ name: Capability fiber bundle
 description: "The pair $\\mathcal{K} = (\\mathcal{K}^{\\mathrm{prov}}, \\mathcal{K}^{\\mathrm{req}})$ of predication fiber algebras over the operations base, indexed by the two capability predicates:"
 ---
 
-# Capability fiber bundle
 
 The pair $\mathcal{K} = (\mathcal{K}^{\mathrm{prov}}, \mathcal{K}^{\mathrm{req}})$ of [predication fiber algebras](../../documents/articles/humanities/theories/math/theories/categories/theories/predication-categories/objects/predication-fiber-algebra.md) over the operations base, indexed by the two capability predicates:
 

@@ -1,19 +1,17 @@
 ---
 id: object
 description: "A thing that exists as physical matter — it has mass, takes up space, and can be observed."
-aliases: [ objects, object, Object ]
+aliases: [ objects ]
 extends: thing
 instance-of: thing
 date-created: 2026-03-04
 date-modified: 2026-03-29
 contrasts-with: substance-object
-defines:
-  - object
-related:
+name: "Object"
+see-also:
   - subject
   - relating
-  - predication-cell (voidmath)
-name: "Object"
+  - predication-cell-voidmath
 ---
 
 An object is a [thing](thing.md) that exists as physical matter. It has mass, takes up space, and can be observed. A rock, a cup, a chair, a person's body, a planet — all objects.

@@ -1,9 +1,7 @@
 ---
 author: "emsenn"
-date: \[2025-03-15 Sat\]
-date-created: \[2025-03-15 Sat\]
+date-created: 2025-03-15
 id: 842af495-dc21-4fda-94fb-4ae965f62fac
-roam-refs: "https://emsenn.substack.com/p/the-network-effect"
 substack-subtitle: Facebook, Russia, and the long road to now
 name: The Network Effect
 visibility: public
@@ -11,6 +9,9 @@ type: letter to the web
 aliases:
   - The network effect
 date-written: 2025-03-15
+provenance:
+  sources:
+    - https://emsenn.substack.com/p/the-network-effect
 ---
 
 Seven years ago, I wrote this essay to piece together the connective tissue between Facebook, Russian financial networks, and the Trump campaign’s digital strategy. At the time, the conversation was focused on Cambridge Analytica, disinformation, and the fallout of the 2016 election. Since then, we’ve lived through another election cycle shaped by platform power, a billionaire takeover of Twitter, and a fresh wave of information warfare that makes 2016 look almost quaint by comparison.

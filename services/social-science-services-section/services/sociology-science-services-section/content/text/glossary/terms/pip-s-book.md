@@ -1,6 +1,6 @@
 ---
 dg-permalink: fic/flash/pips-book
-dg-publish: true
+visibility: public
 ---
 
 In this [[flash fiction]], a [[squirrel]] named **Pip** learns how to make a [[book]] and put [[narrative||stories]] into it, helping others in the forest see their [[world]] in a new way.

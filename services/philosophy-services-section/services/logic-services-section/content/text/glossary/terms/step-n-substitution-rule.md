@@ -7,7 +7,6 @@ name: Step-n substitution rule
 description: A formal closure-rule object capturing the step-n recurrence structure.
 ---
 
-# Step-n substitution rule
 
 A formal closure-rule object capturing the [step-n recurrence](../../documents/articles/research/2026/07/31/lenticule-import/yet-another-unsorted-archive-dump/predication-categories/_archive/bucket-4/articulating/library/aperiodic-articulation-category/library/aperiodic-articulation-cell/library/potential-aperiodic-articulation-cell/predicating/library/transfinite-predication-category/library/transfinite-predication-cell/library/potential-transfinite-predication-cell/positing/library/scott-continuous-posit-category/library/scott-continuous-posit-cell/library/potential-scott-continuous-posit-cell/settling/library/finite-settlement-algebra/hacking/library/step-n-substitution-rule/docs/dev/concepts/step-n-substitution-recurrence.md) structure. A **step-$n$ substitution rule** is a closure rule with antecedent depending on the prior $n$ settled stages and consequent producing new cells via an $n$-term recurrence pattern.
 

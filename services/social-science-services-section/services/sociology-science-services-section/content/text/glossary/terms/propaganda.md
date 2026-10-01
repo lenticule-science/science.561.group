@@ -2,17 +2,14 @@
 name: "Propaganda"
 date-created: 2026-03-07
 aliases:
-  - "Propaganda"
-  - "propaganda"
+  []
 keywords:
   - sociology
 description: "The systematic production and distribution of communication designed to shape belief, attitude, or behavior in service of a political project. Propaganda is not defined by being false but by being instrumental — communication organized around effects rather than truth."
 date-modified: 2026-03-09
 part-of: sociology/schools/anarchism/schools/anarchist-communication/terms
-type: term
 tags:
   - Sociology
-defines: "propaganda"
 date-updated: 2026-03-09
 ---
 

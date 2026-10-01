@@ -1,20 +1,17 @@
 ---
 name: "Milestone"
 description: "A recognizable state of a plan — a configuration of task completions that marks meaningful progress toward the plan's goal."
-defines: milestone
 date-created: 2026-04-03
 instance-of: state
 applies-to: plan
 part-of-stage: tracking
 references:
-  - id: cooper1990
-    type: document
+  cooper1990:
+    authors:
+      - Robert G. Cooper
     title: "Stage-Gate Systems: A New Tool for Managing New Products"
-    author:
-      - literal: Robert G. Cooper
-    container-title: Business Horizons, 33(3)
-    issued:
-      - year: 1990
+    year: 1990
+    publication: Business Horizons, 33(3)
 ---
 
 A milestone is a recognizable [state](../../../../philosophy/terms/state.md) of a [plan](plan.md) — a specific configuration of task completions that marks meaningful progress toward the plan's goal.

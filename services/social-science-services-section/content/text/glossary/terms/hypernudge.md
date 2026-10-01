@@ -1,44 +1,40 @@
 ---
 name: "Hypernudge"
 description: "Karen Yeung's term for the use of big-data analytics to dynamically and continuously personalize choice architectures to influence behavior at scale, going beyond the static nudges of Thaler-Sunstein behavioral economics. A regulation-by-design that operates through the digital environment the user navigates, with the regulatory effect achieved before any explicit rule or sanction is invoked."
-defines: hypernudge
-related: [algorithmic-regulation, governance-indicator, surveillance-capitalism, ordinal-society, policy]
 contrasts-with: [nudge, command-and-control-regulation]
 date-created: 2026-05-03
 references:
-  - id: yeung-2017
-    type: document
+  yeung-2017:
+    authors:
+      - Karen Yeung
     title: "'Hypernudge': Big Data as a Mode of Regulation by Design"
-    author:
-      - literal: Karen Yeung
-    container-title: Information, Communication & Society, 20(1)
-    issued:
-      - year: 2017
-  - id: thaler-sunstein-2008
-    type: document
+    year: 2017
+    publication: Information, Communication & Society, 20(1)
+  thaler-sunstein-2008:
+    authors:
+      - Richard H. Thaler
+      - Cass R. Sunstein
     title: "Nudge: Improving Decisions About Health, Wealth, and Happiness"
-    author:
-      - literal: Richard H. Thaler
-      - literal: Cass R. Sunstein
-    container-title: Yale University Press
-    issued:
-      - year: 2008
-  - id: zuboff2019
-    type: document
+    year: 2008
+    publication: Yale University Press
+  zuboff2019:
+    authors:
+      - Shoshana Zuboff
     title: The Age of Surveillance Capitalism
-    author:
-      - literal: Shoshana Zuboff
-    container-title: PublicAffairs
-    issued:
-      - year: 2019
-  - id: yeung-2018
-    type: document
+    year: 2019
+    publication: PublicAffairs
+  yeung-2018:
+    authors:
+      - Karen Yeung
     title: "Algorithmic Regulation: A Critical Interrogation"
-    author:
-      - literal: Karen Yeung
-    container-title: Regulation & Governance, 12(4)
-    issued:
-      - year: 2018
+    year: 2018
+    publication: Regulation & Governance, 12(4)
+see-also:
+  - algorithmic-regulation
+  - governance-indicator
+  - surveillance-capitalism
+  - ordinal-society
+  - policy
 ---
 
 **Hypernudge** is Karen Yeung's term, introduced in [her 2017 paper](yeung-2017), for the use of big-data analytics to *dynamically and continuously personalize choice architectures* in ways that shape behavior at scale.

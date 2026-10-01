@@ -10,7 +10,6 @@ name: Assignment
 description: "The substrate-entity produced by the dispatch morphism: a first-class predication-cell-system that records the bounded transfer of work from a dispatcher's office to an executing office."
 ---
 
-# Assignment
 
 The substrate-entity produced by the [dispatch](../../documents/articles/research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/content/individual/content/agent/actuating/content/actuator/embodying/content/body/integrating/content/drone/swarming/content/swarm/content/social/_archive/sociology/content/work/theories/predicated-work/code/morphisms/dispatch.md) morphism: a first-class predication-cell-system that records the bounded transfer of work from a dispatcher's office to an executing office.
 An assignment is the [assignment](../../documents/articles/research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/content/individual/content/agent/actuating/content/actuator/embodying/content/body/integrating/content/drone/swarming/content/swarm/content/social/_archive/sociology/content/work/theories/terms/assignment.md) library term realized at the bilattice value-domain.

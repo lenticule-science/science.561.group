@@ -7,9 +7,9 @@ aliases:
   - Mexican husk tomato
   - Mexican groundcherry
   - husk cherry
-related-to:
-  - "[Physalis philadelphica](../../../../../../../../science/theories/biology/theories/botany/terms/physalis-philadelphica.md)"
-  - "[Tomato](tomato.md)"
+see-also:
+  - physalis-philadelphica
+  - tomato
 ---
 
 ## Growing Season and Climate

@@ -6,8 +6,7 @@ aliases:
 id: agda
 authors:
   - claude-opus-4-6
-date-created: 2026-03-01T00:00:00
-type: term
+date-created: 2026-03-01
 keywords:
   - formal-methods
   - programming-languages

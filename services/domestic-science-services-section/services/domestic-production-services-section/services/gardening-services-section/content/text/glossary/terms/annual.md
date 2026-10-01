@@ -6,7 +6,6 @@ aliases:
   - "annual plant"
 date-created: 2026-03-06
 tags: []
-type: term
 ---
 
 A plant that completes its entire life cycle — germination, growth,

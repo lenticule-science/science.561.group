@@ -9,8 +9,7 @@ aliases:
   - piri piri
   - Tabasco pepper
   - malagueta
-related-to:
-  - "[Piri piri cultivation](../../../../../../engineering/domains/domesticity/domains/production/gardening/terms/piri-piri.md)"
+see-also: piri-piri
 ---
 
 ## Taxonomy and Geographic Distribution

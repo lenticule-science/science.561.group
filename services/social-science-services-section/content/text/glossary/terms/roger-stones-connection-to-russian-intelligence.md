@@ -1,14 +1,13 @@
 ---
 aliases:
   - roger-stones-connection-to-russian-intelligence
-created: 2018-11-28T22:21:35
 modified: 2025-07-13T22:23:05
 specialization: research
 name: "Roger Stone's Connection to Russian Intelligence"
 author: ["emsenn"]
-date: 2018-11-28
 tags: ["Roger-Stone", "Russia"]
 draft: false
+date-created: 2018-11-28
 ---
 ~~+~~ title = "Roger Stone's Connection to Russian Intelligence" author = \["emsenn"\] description = "This file is a contemporary record of emsenn's personal information." date = 2018-11-28 lastmod = 2018-11-28T23:00:07-05:00 tags = \["the-2016-presidential-election"\] categories = \["essay"\] draft = false weight = 3012 ~~+~~
 

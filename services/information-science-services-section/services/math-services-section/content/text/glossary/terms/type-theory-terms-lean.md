@@ -6,7 +6,6 @@ id: lean
 authors:
   - gpt-5.2-codex
 date-created: 2026-01-08
-type: term
 keywords:
   - formal-methods
   - programming-languages

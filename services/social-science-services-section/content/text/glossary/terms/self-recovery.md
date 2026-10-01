@@ -1,10 +1,9 @@
 ---
 name: "Self-Recovery"
-date-created: 2026-03-08T00:00:00
+date-created: 2026-03-08
 authors:
   - claude
 aliases:
-  - "self-recovery"
   - "shelter self-recovery"
 keywords:
   - DisasterStudies
@@ -46,9 +45,6 @@ tags:
 - recovery
 - housing
 - mutual-aid
-defines:
-- self-recovery
-- shelter self-recovery
 ---
 ﻿---
 name: "Self-Recovery"

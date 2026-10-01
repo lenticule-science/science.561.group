@@ -4,7 +4,6 @@ aliases:
   - "extension"
 date-created: 2025-12-31
 tags: []
-type: term
 ---
 
 The **extension** of a term is the actual object or set of objects that the term picks out in a given world. Where [intension](./intension.md) concerns how a term determines its referent, extension concerns what that referent turns out to be.

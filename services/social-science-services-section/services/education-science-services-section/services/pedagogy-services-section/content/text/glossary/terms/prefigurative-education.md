@@ -2,9 +2,8 @@
 name: prefigurative education
 description: "Education that embodies the social relations it seeks to create, where the form of learning carries political meaning"
 aliases:
-- prefigurative education
 - prefigurative pedagogy
-date-created: 2026-03-06 00:00:00
+date-created: 2026-03-06
 tags:
 - anarchism
 - critical-theory
@@ -19,9 +18,6 @@ requires:
 keywords:
   - Anarchism
   - CriticalTheory
-defines:
-- prefigurative education
-- prefigurative pedagogy
 ---
 
 [Prefigurative education](prefigurative-education.md) is education that embodies the social relations it seeks to create. If the goal is a non-hierarchical society, the learning environment is organized non-hierarchically. If the goal is communal self-determination, the curriculum is determined by the community. The form of education is not separate from its content — the medium carries political meaning.

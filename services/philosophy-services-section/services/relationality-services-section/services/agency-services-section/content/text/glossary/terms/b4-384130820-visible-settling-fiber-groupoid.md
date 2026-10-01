@@ -8,7 +8,6 @@ name: Visible settling fiber groupoid
 description: "The quotient of the settling fiber groupoid by the normal subgroupoid of invisible automorphisms:"
 ---
 
-# Visible settling fiber groupoid
 
 The quotient of the [settling fiber groupoid](../../documents/articles/notes/undated/settling-fiber-groupoid.md) by the normal subgroupoid of [invisible automorphisms](../../../../../../../logic-services-section/content/text/glossary/concepts/invisible-automorphism-subgroup.md):
 

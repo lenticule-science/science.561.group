@@ -8,7 +8,6 @@ name: Product type
 description: "A product type $A \\times B$ is the type of ordered pairs $(a, b)$ with $a : A$ and $b : B$."
 ---
 
-# Product type
 
 A **product type** $A \times B$ is the type of ordered pairs $(a, b)$ with $a : A$ and $b : B$. The introduction rule is pairing; the elimination rules are projection.
 

@@ -12,7 +12,6 @@ description: "A sign is something that stands for something else to an interpret
 cites:
   - "Collected Papers of Charles Sanders Peirce"
   - "Peirce's Theory of Signs"
-type: term
 ---
 
 A sign is something that stands for something else to an interpreter.

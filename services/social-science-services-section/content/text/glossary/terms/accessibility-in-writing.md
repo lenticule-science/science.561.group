@@ -9,7 +9,6 @@ aliases:
 date-created: 2026-03-06
 date-modified: 2026-05-04
 tags: []
-type: term
 ---
 
 ***Accessibility in writing*** is the practice of designing documents so they can be used by people with the widest possible range of abilities — including those who use screen readers, have low vision, process text differently due to cognitive or learning differences, or read in a second language.

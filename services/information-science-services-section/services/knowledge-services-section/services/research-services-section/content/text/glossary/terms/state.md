@@ -2,10 +2,10 @@
 name: State
 date-created: 2026-03-04
 type: definition
-dg-publish: true
 term-type: "[noun](noun)"
 term-domain: "[tekodynamics](tekodynamics)"
 introduces: "[term](term)"
+visibility: public
 ---
 
 

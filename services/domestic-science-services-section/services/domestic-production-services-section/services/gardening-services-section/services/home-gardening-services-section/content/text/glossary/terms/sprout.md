@@ -4,7 +4,6 @@ aliases:
   - "sprout"
 date-created: 2026-01-01
 tags: []
-type: term
 ---
 
 A sprout is a germinated seed harvested and eaten before true leaves develop, typically within three to seven days of soaking. In [home gardening](../index.md), sprouts are among the simplest crops to grow because they require no soil, no light (in most cases), and no specialized equipment beyond a jar and clean water.

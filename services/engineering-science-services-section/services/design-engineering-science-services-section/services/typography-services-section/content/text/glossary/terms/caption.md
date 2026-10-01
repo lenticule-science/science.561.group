@@ -5,7 +5,6 @@ aliases:
   - "caption text"
 date-created: 2026-03-03
 tags: []
-type: term
 ---
 
 A caption is text that accompanies an image, figure, table, or other visual element to provide context, explanation, or attribution. Captions sit at the boundary between the visual content they describe and the [body text](./body.md) that surrounds it.

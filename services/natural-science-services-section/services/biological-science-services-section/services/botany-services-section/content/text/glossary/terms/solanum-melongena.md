@@ -8,8 +8,7 @@ aliases:
   - aubergine
   - brinjal
   - melongene
-related-to:
-  - "[Eggplant cultivation](../../../../../../engineering/domains/domesticity/domains/production/gardening/terms/eggplant.md)"
+see-also: eggplant
 ---
 
 ## Taxonomy and Center of Domestication

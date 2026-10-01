@@ -9,7 +9,6 @@ name: Work symmetry group
 description: The Klein-four group $K4 = \langle \sim, - \rangle$ — the natural symmetry of any bilattice carrying both negation and conflation — acts on every operations settling $v^{\mathrm{op}}$ by acting cellwise on its $\mathbf{FOUR}$-valued cells.
 ---
 
-# Work symmetry group
 
 The Klein-four group $K_4 = \langle \sim, - \rangle$ — the natural symmetry of any [bilattice](../../documents/articles/humanities/theories/math/theories/categories/theories/predication-categories/objects/bilattice.md) carrying both [negation](../../documents/articles/humanities/theories/math/theories/categories/theories/predication-categories/morphisms/negation.md) and [conflation](../../documents/articles/humanities/theories/math/theories/categories/theories/predication-categories/morphisms/conflation.md) — acts on every [operations settling](../../../../../../../../../public-services-section/services/personal-services-section/services/emsenn-services-section/content/text/glossary/terms/operations-settling.md) $v^{\mathrm{op}}$ by acting cellwise on its $\mathbf{FOUR}$-valued cells. The four group elements have distinct, named operational readings:
 

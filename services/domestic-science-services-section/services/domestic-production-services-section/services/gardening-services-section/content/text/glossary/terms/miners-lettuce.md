@@ -6,8 +6,7 @@ aliases:
   - Claytonia cultivation
   - Winter purslane cultivation
   - Miner's lettuce growing
-related-to:
-  - "[Claytonia perfoliata botanical term](../../../../../../../../science/theories/biology/theories/botany/terms/claytonia-perfoliata.md)"
+see-also: claytonia-perfoliata
 ---
 
 *Claytonia perfoliata* is a cool-season annual ideally suited to partial-shade cultivation in spring and fall; the species self-seeds reliably, allowing continuous production from volunteer seedlings in subsequent seasons.

@@ -28,7 +28,6 @@ references:
     publication: "The United States Army"
     year: 2026
     url: "https://www.army.mil/article/289968/the_training_management_directorate_underneath_the_combined_arms_command_training_completes_tc_7_0_series_1_4"
-type: term
 ---
 
 An after-action review is a structured review process used to examine

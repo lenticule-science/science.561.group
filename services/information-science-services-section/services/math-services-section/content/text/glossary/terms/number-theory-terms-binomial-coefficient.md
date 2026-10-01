@@ -4,7 +4,6 @@ aliases:
   - "binomial coefficient"
   - "binomial coefficients"
 date-created: 2026-03-05
-type: term
 tags: []
 description: The binomial coefficient $\binom{n}{k}$ (read "$n$ choose $k$") counts the number of combinations of $k$ elements from a set of $n$.
 ---

@@ -1,6 +1,5 @@
 ---
-date: "\\[2025-09-25 Thu 09:31\\]"
-date-created: "\\[2025-09-25 Thu 09:31\\]"
+date-created: "2025-09-25"
 id: bcc2ddef-11dd-4bd9-909a-3e671de0e649
 name: white-coding as retaliation against anti-whiteness displaced into non-white communities
 type: social dynamic

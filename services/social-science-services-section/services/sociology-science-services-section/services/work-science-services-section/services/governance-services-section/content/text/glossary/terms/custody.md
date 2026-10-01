@@ -18,7 +18,6 @@ aliases:
 name: "Custody"
 ---
 
-# Custody
 
 ## Formal definition
 

@@ -11,7 +11,6 @@ keywords:
   - Biochemistry
 date-updated: 2026-03-09
 part-of: biology/disciplines/physiology/terms
-type: term
 ---
 
 Metabolism is the total set of chemical reactions occurring in a living [organism](../../../../../../content/text/glossary/terms/organism.md). It is what keeps organisms alive — the continuous chemical activity that extracts energy from the environment, builds and maintains cellular structures, and disposes of waste products. An organism that stops metabolizing is dead.

@@ -2,7 +2,6 @@
 name: "backward design"
 description: "A curriculum design framework that begins with desired learning outcomes and works backward through assessment to determine instruction"
 aliases:
-  - "backward design"
   - "understanding by design"
 date-created: 2026-03-06
 tags: []
@@ -12,9 +11,6 @@ enables:
   - conscientization
 governs:
   - curriculum
-defines:
-- backward design
-- understanding by design
 ---
 
 [Backward design](./backward-design.md) is a framework for curriculum and lesson design that begins with the desired understanding and works backward to determine how to get there. Instead of starting with content or activities and hoping that understanding follows, the designer asks: what should the learner be able to do at the end? What would demonstrate that understanding? Only then: what experiences and instruction would develop that understanding?

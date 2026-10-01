@@ -2,7 +2,6 @@
 name: Equalizing Terms
 description: Story.
 ---
-# Equalizing Terms
 
 *Story.*  Equality of terms is detected by observational recognitions applied to typing judgements.  RecognizeObservation witnessing JudgeTyping yields the act EqualizeTerms.
 

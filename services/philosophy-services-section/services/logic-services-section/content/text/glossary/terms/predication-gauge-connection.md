@@ -10,7 +10,6 @@ name: Gauge connection on a predication hyperdoctrine
 description: "Fix a predication hyperdoctrine $p : \\mathcal{E} \\twoheadrightarrow \\mathcal{C}$ over base parameters $(\\mathbf{L}, \\mathcal{C}, E)$."
 ---
 
-# Gauge connection on a predication hyperdoctrine
 
 Fix a [predication hyperdoctrine](../../documents/articles/research/2026/07/31/lenticule-import/from-predicate-category/predication-hyperdoctrine.md) $p : \mathcal{E} \twoheadrightarrow \mathcal{C}$ over base parameters $(\mathbf{L}, \mathcal{C}, E)$. Let $K_4 = \mathrm{Aut}(\mathbf{FOUR}) = \langle {\sim}, - \rangle$ be the Klein-four group of bilattice automorphisms of [$\mathbf{FOUR}$](../../documents/articles/research/2026/07/31/lenticule-import/from-predicate-category/four-bilattice.md), realized as the fiberwise [Klein-four gauge bundle](../../documents/articles/research/2026/07/31/lenticule-import/from-predicate-category/klein-four-gauge-bundle.md) $\mathcal{G}$ on $\mathcal{E}$.
 

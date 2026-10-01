@@ -16,7 +16,6 @@ references:
   - linguistics/topics/semiotics/terms/interpretant.md
   - linguistics/topics/semiotics/terms/semiosis.md
   - linguistics/topics/semiotics/terms/peirces-categories.md
-type: term
 see-also:
   - linguistics/topics/semiotics/terms/interpretant.md
   - linguistics/topics/semiotics/terms/semiosis.md

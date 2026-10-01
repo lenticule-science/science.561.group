@@ -9,7 +9,6 @@ authors:
   - claude-opus-4-6
 keywords:
   - Accounting
-type: term
 ---
 
 

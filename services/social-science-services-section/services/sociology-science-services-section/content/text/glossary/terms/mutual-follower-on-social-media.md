@@ -1,5 +1,4 @@
 ---
-date: "\\[2025-09-06 Sat 09:08\\]"
 field: "social media"
 id: 1e0ef763-96c2-4de0-b0d0-eae99bfe3709
 name: mutual follower on social media

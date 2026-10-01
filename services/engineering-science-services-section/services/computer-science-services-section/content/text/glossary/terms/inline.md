@@ -8,7 +8,6 @@ name: Inline
 description: "The inverse of extract: given an extracted definition $d'$ that is referenced only from $d$, fold $d'$'s cells back into $d$ and remove the references edge."
 ---
 
-# Inline
 
 The inverse of [extract](extract.md): given an extracted definition $d'$ that is referenced only from $d$, fold $d'$'s cells back into $d$ and remove the `references` edge. Formally, the entity-permutation that returns $d'$ to permanent-$\bot$ status while restoring the cells of $d$ to the pre-extract configuration.
 

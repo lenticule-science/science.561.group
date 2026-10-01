@@ -1,6 +1,5 @@
 ---
 description: "A distinct stage within a lifecycle — a bounded period during which an entity has a particular character and defined entry and exit conditions."
-defines: phase
 aliases: [phases]
 date-created: 2026-04-04
 extends: [state]
@@ -11,22 +10,18 @@ instance-of: state
 applies-to: [task, plan, project, endeavor, enterprise]
 part-of-stage: cross-cutting
 references:
-  - id: harel1987
-    type: document
+  harel1987:
+    authors:
+      - David Harel
     title: "Statecharts: A Visual Formalism for Complex Systems"
-    author:
-      - literal: David Harel
-    container-title: Science of Computer Programming, 8(3)
-    issued:
-      - year: 1987
-  - id: cooper1990
-    type: document
+    year: 1987
+    publication: Science of Computer Programming, 8(3)
+  cooper1990:
+    authors:
+      - Robert G. Cooper
     title: "Stage-Gate Systems: A New Tool for Managing New Products"
-    author:
-      - literal: Robert G. Cooper
-    container-title: Business Horizons, 33(3)
-    issued:
-      - year: 1990
+    year: 1990
+    publication: Business Horizons, 33(3)
 name: Phase
 ---
 

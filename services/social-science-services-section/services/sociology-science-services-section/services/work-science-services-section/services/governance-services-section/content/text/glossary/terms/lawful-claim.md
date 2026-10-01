@@ -20,7 +20,6 @@ aliases:
 name: "Law"
 ---
 
-# Law
 
 ## Formal definition
 

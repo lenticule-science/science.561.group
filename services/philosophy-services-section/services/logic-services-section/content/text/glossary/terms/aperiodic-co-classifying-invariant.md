@@ -8,7 +8,6 @@ name: Aperiodic co-classifying invariant
 description: The cosheaf-homology dual of the aperiodic classifying invariant.
 ---
 
-# Aperiodic co-classifying invariant
 
 The cosheaf-homology dual of the [aperiodic classifying invariant](../../documents/articles/research/2026/07/31/lenticule-import/yet-another-unsorted-archive-dump/predication-categories/_archive/bucket-4/articulating/library/aperiodic-articulation-category/library/aperiodic-articulation-cell/library/potential-aperiodic-articulation-cell/predicating/library/transfinite-predication-category/library/transfinite-predication-cell/library/potential-transfinite-predication-cell/positing/library/scott-continuous-posit-category/library/scott-continuous-posit-cell/library/potential-scott-continuous-posit-cell/settling/library/finite-settlement-algebra/hacking/library/aperiodic-co-classifying-invariant/docs/dev/scraps/aperiodic-classifying-invariant.md). Where $\mathrm{cl}\text{-}\mathrm{inv}(v) \in H^1$ records the aperiodic settling's MLD-class as a sheaf cohomology class — built from cocycles on the bitopological settling site — the **co-classifying invariant** $\check{\mathrm{cl}}\text{-}\mathrm{inv}(v) \in H_1$ records the same MLD-class as a cosheaf *homology* class — built from cycles on the cosheaf side.
 

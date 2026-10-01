@@ -2,17 +2,11 @@
 name: "Operaismo"
 date-created: 2026-03-03
 aliases:
-  - "operaismo"
   - "workerism"
   - "Italian workerism"
 tags: []
 date-modified: 2026-03-09
 part-of: sociology/schools/autonomism/schools/operaismo/terms
-type: term
-defines:
-  - "Operaismo"
-  - "workerism"
-  - "Italian workerism"
 date-updated: 2026-03-09
 ---
 

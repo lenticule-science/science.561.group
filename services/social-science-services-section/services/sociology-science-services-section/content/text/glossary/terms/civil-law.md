@@ -8,12 +8,10 @@ see-also:
   - "/sociology/disciplines/legalism/index.md"
 references:
   - /sociology/disciplines/legalism/index.md
-type: term
 tags:
   - Legalism
-defines:
-  - "civil law"
-  - "private law"
+aliases:
+  - private law
 ---
 
 Civil law (in the sense of private law, not the civil law tradition of continental Europe) is the body of rules governing disputes between private parties — individuals, corporations, organizations. Where [criminal law](../../../../../law-science-services-section/content/text/glossary/terms/criminal-law.md) is brought by the state and results in punishment, civil law is brought by one party against another and typically results in compensation, injunctions, or declaratory judgments.

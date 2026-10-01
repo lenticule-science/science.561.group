@@ -2,16 +2,11 @@
 name: "Prefigurative Politics"
 date-created: 2026-03-06
 aliases:
-  - "prefigurative politics"
   - "prefiguration"
 tags: []
 description: "The practice of building the social relations you want in the present rather than deferring them to a future that will arrive after the revolution. The means must embody the ends."
 part-of: sociology/schools/anarchism/topics/organization/terms
-defines:
-  - "Prefigurative Politics"
-  - "prefiguration"
 date-modified: 2026-03-09
-type: term
 date-updated: 2026-03-09
 ---
 

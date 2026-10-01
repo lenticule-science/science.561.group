@@ -10,7 +10,6 @@ name: Adjustment
 description: "The substrate-entity produced by the feedback stage: a structured change applied in response to a finding."
 ---
 
-# Adjustment
 
 The substrate-entity produced by the [feedback](../../../../../../content/text/glossary/terms/feedback.md) stage: a structured change applied in response to a [finding](../../documents/articles/research/2026/07/31/lenticule-import/library/social-sciences/working/_archive/finding.md). Per the [referencing-entity pattern](../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/research/predicated-agentic-orchestration-platform/flatfile-agentic-resource-system/flatfile/referencing-entity-pattern/referencing-entity-pattern.md), an adjustment is a first-class entity that targets some other entity (a plan, a task, a procedure, a term, a policy, an office) and asserts the change as substrate content. Adjustments are not new work — new work enters through planning. Adjustments modify the conditions under which future work happens.
 

@@ -9,7 +9,6 @@ keywords:
 cites:
   - "Collected Papers of Charles Sanders Peirce"
   - "Semiotics: The Basics"
-type: term
 tags:
   - peirce
 references:

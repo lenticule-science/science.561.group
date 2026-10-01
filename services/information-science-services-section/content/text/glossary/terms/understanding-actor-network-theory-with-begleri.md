@@ -1,9 +1,9 @@
 ---
-dg-publish: true
 type: comparative essay
 description: Looking at begleri as object & artifact to describe ANT
 aliases:
   - Understanding Actor Network Theory With Begleri
+visibility: public
 ---
 It's fascinating when you think about [[begleri]] through the lens of [[actor-network theory]].
 

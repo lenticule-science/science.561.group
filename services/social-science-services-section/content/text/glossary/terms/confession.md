@@ -1,66 +1,57 @@
 ---
 name: "Confession"
-defines: confession
-aliases: [confession, confessional]
+aliases: [ confessional ]
 description: "The technology of self-disclosure that operates as a mechanism of power-knowledge in modernity: the requirement or solicitation of the subject to speak truthfully about themselves — their desires, transgressions, identities — to a recognized authority, with the speech itself producing the subject as a particular kind of truth-bearer rather than merely revealing pre-existing facts."
-related: [governmentality, power-knowledge, biopolitics, subjectivation]
 contrasts-with: [silence, refusal-of-self-disclosure, privacy]
 date-created: 2026-04-27
 references:
-  - id: foucault1978
-    type: document
+  foucault1978:
+    authors:
+      - Michel Foucault
     title: "The History of Sexuality, Volume 1: An Introduction"
+    year: 1978
+    publication: Pantheon
     note: the canonical formulation; the chapter on confession traces the technology from Christian pastoral practice through psychiatric and sexological discourse
-    author:
-      - literal: Michel Foucault
-    container-title: Pantheon
-    issued:
-      - year: 1978
-  - id: foucault1981
-    type: document
+  foucault1981:
+    authors:
+      - Michel Foucault
     title: About the Beginning of the Hermeneutics of the Self
+    year: 1981
+    publication: Political Theory 21(2), published 1993
     note: the late lectures developing the historical genealogy of confession from antiquity through the Christian pastoral
-    author:
-      - literal: Michel Foucault
-    container-title: Political Theory 21(2), published 1993
-    issued:
-      - year: 1981
-  - id: foucault2014
-    type: document
+  foucault2014:
+    authors:
+      - Michel Foucault
     title: "On the Government of the Living: Lectures at the Collège de France, 1979-1980"
+    year: 2014
+    publication: Palgrave Macmillan
     note: the systematic treatment of avowal (l'aveu) as the broader category within which confession operates
-    author:
-      - literal: Michel Foucault
-    container-title: Palgrave Macmillan
-    issued:
-      - year: 2014
-  - id: brooks2000
-    type: document
+  brooks2000:
+    authors:
+      - Peter Brooks
     title: "Troubling Confessions: Speaking Guilt in Law and Literature"
+    year: 2000
+    publication: University of Chicago Press
     note: the legal-literary register of confession; how the confessional structure operates in legal procedure and narrative
-    author:
-      - literal: Peter Brooks
-    container-title: University of Chicago Press
-    issued:
-      - year: 2000
-  - id: taylor2013
-    type: document
+  taylor2013:
+    authors:
+      - Chloë Taylor
     title: "The Culture of Confession from Augustine to Foucault: A Genealogy of the 'Confessing Animal'"
+    year: 2013
+    publication: Routledge
     note: the systematic genealogy from Augustine through to Foucault; the emergence of the confessing subject
-    author:
-      - literal: Chloë Taylor
-    container-title: Routledge
-    issued:
-      - year: 2013
-  - id: illouz2008
-    type: document
+  illouz2008:
+    authors:
+      - Eva Illouz
     title: "Saving the Modern Soul: Therapy, Emotions, and the Culture of Self-Help"
+    year: 2008
+    publication: University of California Press
     note: the contemporary therapeutic-confessional regime and its industrial form
-    author:
-      - literal: Eva Illouz
-    container-title: University of California Press
-    issued:
-      - year: 2008
+see-also:
+  - governmentality
+  - power-knowledge
+  - biopolitics
+  - subjectivation
 ---
 
 **Confession**, in the Foucauldian sense, is the technology of self-disclosure that operates as a mechanism of power-knowledge in modernity.

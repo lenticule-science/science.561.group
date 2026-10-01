@@ -2,15 +2,10 @@
 name: "Anarcho-Communism"
 date-created: 2026-03-06
 aliases:
-  - "anarcho-communism"
   - "anarchist communism"
   - "anarcho-communist"
 tags: []
 description: "The current within anarchism that advocates collective ownership of productive resources and distribution based on need — communism without the state, organized through mutual aid, federation, and voluntary association."
-type: term
-defines:
-  - "Anarcho-Communism"
-  - "anarchist communism"
 ---
 
 Anarcho-communism is the current within [anarchism](../../../../../../../../content/text/glossary/_index.md) that advocates collective ownership of productive resources and distribution based on need rather than on wages, markets, or contribution. It is [communism](../../../../../../../../content/text/marxism/terms/communism.md) without [the state](../../../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/notes/undated/the-state.md): the means of production — land, tools, factories, workshops — are held in common by the communities that use them, and goods are distributed according to need rather than according to how much someone can pay or how much they produced.

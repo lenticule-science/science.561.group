@@ -7,7 +7,6 @@ description: "A ConceptPackage in a RelationsSystem: a ConceptPackage whose cont
 
 A ConceptPackage in a RelationsSystem: a ConceptPackage whose contents are RelationalEntities satisfying U_G conditions, growing toward a RelationsSystemLocale as it becomes complete.
 
-# Relational Concept Package
 
 ## What this is
 

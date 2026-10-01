@@ -2,7 +2,6 @@
 name: Forming Least Fix Term
 description: Story.
 ---
-# Forming Least Fix Term
 
 *Story.*  The pair must still record the invariant term that survives self-application.  Forcing PairLeastFix to witness TailTrace yields FormLeastFixTerm.
 

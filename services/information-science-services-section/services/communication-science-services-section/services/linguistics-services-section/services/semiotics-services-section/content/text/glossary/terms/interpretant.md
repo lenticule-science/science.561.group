@@ -11,7 +11,6 @@ description: "The interpretant is the meaning produced by a sign — the functio
 cites:
   - "Collected Papers of Charles Sanders Peirce"
   - "Peirce's Theory of Signs"
-type: term
 tags:
   - peirce
 references:

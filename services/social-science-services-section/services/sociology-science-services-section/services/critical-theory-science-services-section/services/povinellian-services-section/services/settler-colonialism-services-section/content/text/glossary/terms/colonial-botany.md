@@ -3,7 +3,7 @@ name: "Colonial botany"
 aliases:
   - "Colonial botany"
   - "colonial botany"
-date-created: 2026-03-03T00:00:00
+date-created: 2026-03-03
 introduces: concept
 keywords:
   - ecology

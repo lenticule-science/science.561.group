@@ -3,8 +3,8 @@ aliases:
   - Glasya Labolas
 keywords:
   - definition
-created: 2025-07-12T11:58:42
 modified: 2025-07-12T12:01:02
+date-created: 2025-07-12
 ---
 ***Glasya-Labolas*** is the 25th [[Spirit of the Ars Goetia]]. He is a [[president]] and [[earl]], and [[commanding|commands]] 36 [[legion|legions]].
 

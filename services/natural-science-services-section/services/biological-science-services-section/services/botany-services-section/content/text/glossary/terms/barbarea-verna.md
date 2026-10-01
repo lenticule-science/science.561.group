@@ -8,8 +8,7 @@ aliases:
   - land cress
   - winter cress
   - yellowrocket
-related-to:
-  - "[Upland cress cultivation](../../../../../../engineering/domains/domesticity/domains/production/gardening/terms/upland-cress.md)"
+see-also: upland-cress
 ---
 
 ## Taxonomy and Biogeography

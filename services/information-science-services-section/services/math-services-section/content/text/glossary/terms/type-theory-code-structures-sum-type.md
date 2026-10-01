@@ -8,7 +8,6 @@ name: Sum type
 description: A sum type (also coproduct type or disjoint union) $A + B$ is the type of values that are either an $A$, tagged left, or a $B$, tagged right.
 ---
 
-# Sum type
 
 A **sum type** (also *coproduct type* or *disjoint union*) $A + B$ is the type of values that are either an $A$, tagged left, or a $B$, tagged right. The introduction rules are the two injections; the elimination rule is case analysis.
 

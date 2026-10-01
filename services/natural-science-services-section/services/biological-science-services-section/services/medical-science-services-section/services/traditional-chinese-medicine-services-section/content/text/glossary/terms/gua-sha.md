@@ -7,7 +7,6 @@ aliases:
   - scraping therapy
   - press-stroking
 description: "A traditional East Asian surface treatment in which a smooth-edged instrument is repeatedly press-stroked over lubricated skin, often intentionally raising sha as petechial or ecchymotic discoloration."
-type: term
 component-of: traditional-chinese-medicine
 acts-on: [qi, xue, meridians]
 produces: sha

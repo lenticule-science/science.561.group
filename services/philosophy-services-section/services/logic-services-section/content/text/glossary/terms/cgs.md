@@ -20,7 +20,6 @@ name: CGS — Concurrent Games with Symmetry
 description: Concurrent games with symmetry (CGS) is the $$-autonomous category constructed by Rideau-Winskel (2011) and Castellan-Clairambault-Winskel (2014, 2017).
 ---
 
-# CGS — Concurrent Games with Symmetry
 
 **Concurrent games with symmetry** (CGS) is the $*$-autonomous category constructed by Rideau-Winskel (2011) and Castellan-Clairambault-Winskel (2014, 2017). It is the unified ambient for the typed theory of computing.
 

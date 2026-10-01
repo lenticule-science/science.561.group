@@ -8,7 +8,6 @@ keywords:
   - CombatSystems
   - Governance
 description: "Moments in time and space where a commander must choose among options; decision points are made explicit through triggers and decision support tools."
-type: term
 ---
 
 Decision points are moments in time and space where a commander must choose among options.

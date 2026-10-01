@@ -26,7 +26,6 @@ ast:
         - relational-history-fiber-saturating-nucleus
         - relational-history-fiber-transferring-nucleus
 id: incumbent
-defines: Incumbent
 where:
 - $O = (T, J, H, \sigma, \Delta)$ is the [Office](../../../../../../../economics-and-business-science-services-section/services/business-science-services-section/content/text/glossary/terms/office.md) — the normative presheaf with nuclei defined over all histories in $T$
 - $t_{\mathrm{now}} \in T$ is the **current history** — the designated base point for "now"; incumbency is a relation at a specific history, not a global structure

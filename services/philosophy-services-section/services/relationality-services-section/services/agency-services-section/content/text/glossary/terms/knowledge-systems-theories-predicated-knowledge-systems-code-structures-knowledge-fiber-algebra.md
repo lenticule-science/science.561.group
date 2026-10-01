@@ -9,7 +9,6 @@ name: Knowledge fiber algebra
 description: For a predicated knowledge system $\mathcal{K} = (\mathbf{L}, \mathcal{C}, E, \mathcal{S}, \Sigma)$ and a predicate $p \in \mathcal{C}$, the knowledge fiber algebra at $p$ $Kp$ is the predication fiber algebra at $p$, restricted to the…
 ---
 
-# Knowledge fiber algebra
 
 For a [predicated knowledge system](../../documents/articles/research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/knowing/content/knowledge-science/systems/archive/predicated-knowledge-system.md) $\mathcal{K} = (\mathbf{L}, \mathcal{C}, E, \mathcal{S}, \Sigma)$ and a predicate $p \in \mathcal{C}$, the **knowledge fiber algebra at $p$** $K_p$ is the [predication fiber algebra](../../documents/articles/research/2026/07/31/lenticule-import/animating/content/becoming/doing/humanities/theories/math/theories/categories/theories/predication-categories/objects/predication-fiber-algebra.md) at $p$, restricted to the system's settled state under $\mathcal{S}$ within a chosen scope.
 

@@ -16,7 +16,6 @@ component-of: traditional-chinese-medicine
 acts-on: qi
 contains: zang-fu
 enables: [acupuncture, pattern-diagnosis]
-type: term
 references:
   kaptchuk2000:
     authors:

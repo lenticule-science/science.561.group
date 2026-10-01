@@ -20,7 +20,6 @@ references:
     publication: "The United States Army"
     year: 2018
     url: "https://www.army.mil/article/206360/functional_and_integrating_cells_within_sustainment_brigade_staffs"
-type: term
 ---
 
 A functional cell is a staff grouping organized around similar

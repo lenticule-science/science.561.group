@@ -8,7 +8,6 @@ name: Coarse settling moduli
 description: "For a fixed base $B = (\\mathbf{L}, \\mathcal{C}, E, \\lambda)$, the coarse settling moduli is the set of components of the visible settling fiber groupoid:"
 ---
 
-# Coarse settling moduli
 
 For a fixed base $B = (\mathbf{L}, \mathcal{C}, E, \lambda)$, the **coarse settling moduli** is the set of components of the [visible settling fiber groupoid](../../documents/articles/notes/undated/visible-settling-fiber-groupoid.md):
 

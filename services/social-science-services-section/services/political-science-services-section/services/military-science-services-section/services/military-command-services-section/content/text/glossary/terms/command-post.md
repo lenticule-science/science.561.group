@@ -32,7 +32,6 @@ references:
     publication: "The United States Army"
     year: 2024
     url: "https://www.army.mil/article/273842/future_conflicts_demand_flexible_and_mobile_command_posts"
-type: term
 ---
 
 A command post is the headquarters node from which commanders and

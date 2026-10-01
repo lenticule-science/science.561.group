@@ -1,6 +1,5 @@
 ---
 type: "[[adjective]]"
-date: 2025-04-15
 
 signal:
   - "[[telemetric register]]"
@@ -13,6 +12,7 @@ method:
   - "[[cast]]"
 aliases:
   - Related Records
+date-created: 2025-04-15
 ---
 
 An ***in-register*** condition is one in which signal is interpreted through **structured, recursive recordkeeping**—like within a [[delta register]] or a casting-based system of role-bearing documents.

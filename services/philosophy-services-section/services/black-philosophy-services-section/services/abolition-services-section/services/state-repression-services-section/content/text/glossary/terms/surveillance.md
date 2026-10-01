@@ -3,16 +3,11 @@
 name: "Surveillance"
 date-created: 2026-03-02
 aliases:
-  - "surveillance"
   - "mass surveillance"
 tags: []
 description: "The systematic monitoring of populations, communications, and movements — both targeted (intelligence on specific individuals) and mass (collection of data on entire populations)."
 date-modified: 2026-03-09
 part-of: sociology/topics/state-repression/terms
-type: term
-defines:
-  - "Surveillance"
-  - "mass surveillance"
 date-updated: 2026-03-09
 ---
 

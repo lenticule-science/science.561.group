@@ -15,7 +15,6 @@ requires: [bioavailability, therapeutic-index]
 enables: [overdose-reversal, harm-reduction]
 governs: polypharmacy
 contrasts-with: dose-response-relationships
-type: term
 ---
 
 A **drug interaction** occurs when one drug modifies the effect of another — altering its absorption, distribution, metabolism, elimination, or mechanism of action. Drug interactions can increase a drug's effect (potentiation), decrease it (antagonism), or produce effects that neither drug produces alone.

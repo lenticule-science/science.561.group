@@ -1,6 +1,5 @@
 ---
 name: "Photometry"
-type: term
 component-of: astronomy
 ---
 

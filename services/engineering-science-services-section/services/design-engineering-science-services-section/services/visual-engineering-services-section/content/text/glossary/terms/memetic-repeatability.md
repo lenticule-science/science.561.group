@@ -9,7 +9,6 @@ keywords:
 description: "An operational outcome of visual engineering: a learnable kit that travels through re-performance."
 cites:
   - "Culture and the Evolutionary Process"
-type: term
 tags:
   - cultural-transmission
 references:

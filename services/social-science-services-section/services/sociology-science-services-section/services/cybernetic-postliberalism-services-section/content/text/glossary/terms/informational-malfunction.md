@@ -5,7 +5,6 @@ keywords:
   - Relationality
 date-updated: 2026-03-09
 part-of: sociology/schools/cybernetic-postliberalism/terms
-type: term
 ---
 
 Informational malfunction is a pathological mode of information-processing in which a system maximizes internal coherence at the cost of correspondence with its environment.

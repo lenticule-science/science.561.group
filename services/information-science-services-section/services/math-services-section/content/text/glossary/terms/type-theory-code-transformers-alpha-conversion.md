@@ -7,7 +7,6 @@ name: Alpha-conversion
 description: Alpha-conversion is the operation of consistently renaming a bound variable in a lambda-term.
 ---
 
-# Alpha-conversion
 
 **Alpha-conversion** is the operation of consistently renaming a bound [variable](../../documents/articles/research/2026/07/31/lenticule-import/_archive/teaching/explanations/variable.md) in a [lambda-term](lambda-term.md). Replacing the bound $x$ in $\lambda x.\,M$ with a fresh $y$ produces $\lambda y.\,M[y/x]$, which is [alpha-equivalent](alpha-equivalence.md) to the original.
 

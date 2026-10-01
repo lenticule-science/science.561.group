@@ -3,8 +3,7 @@ name: Blue Columbine
 description: "Perennial cultivar of Aquilegia caerulea, hardy zones 3-9. Distinctive spurred flowers with blue sepals, white petals (color range: solid blue, purple, bicolored variants exist). Blooms year two from seed; self-seeds prolifically. Early-season nectar plant for bumblebees and hummingbirds (May-June). Prefers cool climates, well-drained soil, part shade in hot climates. Sensitive to heat and humidity."
 date-created: 2026-04-02
 aliases: [Rocky Mountain columbine, Colorado blue columbine, Aquilegia caerulea]
-related-to:
-  - "[Aquilegia caerulea](../../../../../../../../science/theories/biology/theories/botany/terms/aquilegia-caerulea.md)"
+see-also: aquilegia-caerulea
 ---
 
 Blue columbine cultivation grows [Aquilegia caerulea](../../../../../../../../../natural-science-services-section/services/biological-science-services-section/content/text/documents/articles/notes/2026/04/02/2026-04-02-aquilegia-caerulea.md) as a long-lived perennial with elegant spurred flowers and critical early-season nectar for native bumblebees and hummingbirds. The plant is cold-hardy (zones 3-9) and self-perpetuating through prolific self-seeding.

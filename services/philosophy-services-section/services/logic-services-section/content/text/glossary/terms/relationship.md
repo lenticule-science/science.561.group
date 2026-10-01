@@ -19,7 +19,6 @@ name: "Relation between the two \"bigraded\" structures: cohomology bigrading vs
 description: The corpus contains two distinct bigraded structures, both natural and both called "bigraded," exploiting different two-axis features of the predication hyperdoctrine.
 ---
 
-# Relation between the two "bigraded" structures: cohomology bigrading vs common-knowledge bigrading
 
 The corpus contains **two distinct bigraded structures**, both natural and both called "bigraded," exploiting different two-axis features of the predication hyperdoctrine. They are *not* the same construction, and the relation between them is open structural content.
 

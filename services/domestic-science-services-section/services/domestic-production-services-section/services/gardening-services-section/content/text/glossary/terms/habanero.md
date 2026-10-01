@@ -6,9 +6,9 @@ aliases:
   - habanero pepper
   - Scotch bonnet
   - Caribbean pepper
-related-to:
-  - "[Capsicum chinense](../../../../../../../../science/theories/biology/theories/botany/terms/capsicum-chinense.md)"
-  - "[Pepper](pepper.md)"
+see-also:
+  - capsicum-chinense
+  - pepper
 ---
 
 ## Climate and Hardiness

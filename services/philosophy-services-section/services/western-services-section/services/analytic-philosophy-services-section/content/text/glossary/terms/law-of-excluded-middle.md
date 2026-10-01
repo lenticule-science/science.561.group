@@ -3,7 +3,6 @@ name: "Law of Excluded Middle"
 description: "The principle that for any proposition P, either P is true or ¬P is true — rejected by constructivism and intuitionistic logic for infinite domains."
 date-created: 2026-03-03
 aliases:
-  - "law of excluded middle"
   - "excluded middle"
   - "tertium non datur"
   - "LEM"
@@ -15,11 +14,6 @@ component-of: classical-logic
 requires: bivalence
 contrasts-with: [constructive-proof, intuitionistic-logic]
 enables: proof-by-contradiction
-defines:
-  - "Law of Excluded Middle"
-  - "excluded middle"
-  - "tertium non datur"
-  - "LEM"
 date-modified: 2026-03-09
 ---
 

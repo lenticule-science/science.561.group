@@ -1,64 +1,59 @@
 ---
 name: "Algorithmic Management"
 description: "The exercise of managerial functions — task allocation, performance evaluation, pricing, discipline, termination — by software systems rather than human supervisors. Constitutes, on Kellogg-Valentine-Christin's argument, a new contested terrain of control characterized by the six R's: restricting, recommending, recording, rating, replacing, rewarding."
-defines: algorithmic-management
-related: [scientific-management, deskilling, contested-terrain, ghost-work, autonomy-paradox, dispatch]
 date-created: 2026-05-03
 references:
-  - id: rosenblat-stark-2016
-    type: document
+  rosenblat-stark-2016:
+    authors:
+      - Alex Rosenblat
+      - Luke Stark
     title: "Algorithmic Labor and Information Asymmetries: A Case Study of Uber's Drivers"
-    author:
-      - literal: Alex Rosenblat
-      - literal: Luke Stark
-    container-title: International Journal of Communication, 10
-    issued:
-      - year: 2016
-  - id: rosenblat2018
-    type: document
+    year: 2016
+    publication: International Journal of Communication, 10
+  rosenblat2018:
+    authors:
+      - Alex Rosenblat
     title: "Uberland: How Algorithms Are Rewriting the Rules of Work"
-    author:
-      - literal: Alex Rosenblat
-    container-title: University of California Press
-    issued:
-      - year: 2018
-  - id: kellogg-valentine-christin-2020
-    type: document
+    year: 2018
+    publication: University of California Press
+  kellogg-valentine-christin-2020:
+    authors:
+      - Katherine C. Kellogg
+      - Melissa A. Valentine
+      - Angèle Christin
     title: "Algorithms at Work: The New Contested Terrain of Control"
-    author:
-      - literal: Katherine C. Kellogg
-      - literal: Melissa A. Valentine
-      - literal: Angèle Christin
-    container-title: Academy of Management Annals, 14(1)
-    issued:
-      - year: 2020
-  - id: wood-2019
-    type: document
+    year: 2020
+    publication: Academy of Management Annals, 14(1)
+  wood-2019:
+    authors:
+      - Alex J. Wood
+      - Mark Graham
+      - Vili Lehdonvirta
+      - Isis Hjorth
     title: "Good Gig, Bad Gig: Autonomy and Algorithmic Control in the Global Gig Economy"
-    author:
-      - literal: Alex J. Wood
-      - literal: Mark Graham
-      - literal: Vili Lehdonvirta
-      - literal: Isis Hjorth
-    container-title: Work, Employment and Society, 33(1)
-    issued:
-      - year: 2019
-  - id: edwards1979
-    type: document
+    year: 2019
+    publication: Work, Employment and Society, 33(1)
+  edwards1979:
+    authors:
+      - Richard Edwards
     title: "Contested Terrain: The Transformation of the Workplace"
-    author:
-      - literal: Richard Edwards
-    container-title: Basic Books
-    issued:
-      - year: 1979
-  - id: ajunwa2023
-    type: document
+    year: 1979
+    publication: Basic Books
+  ajunwa2023:
+    authors:
+      - Ifeoma Ajunwa
     title: "The Quantified Worker: Law and Technology in the Modern Workplace"
-    author:
-      - literal: Ifeoma Ajunwa
-    container-title: Cambridge University Press
-    issued:
-      - year: 2023
+    year: 2023
+    publication: Cambridge University Press
+aliases:
+  - algorithmic-management
+see-also:
+  - scientific-management
+  - deskilling
+  - contested-terrain
+  - ghost-work
+  - autonomy-paradox
+  - dispatch
 ---
 
 **Algorithmic management** is the exercise of managerial functions — task allocation, performance evaluation, pricing, scheduling, discipline, deactivation — by software systems rather than (or alongside) human supervisors.

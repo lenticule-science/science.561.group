@@ -17,7 +17,6 @@ references:
     publication: "Joint Publication 5-0 (11 Aug 2011)"
 cites:
   - jointchiefs2011jp5
-type: term
 ---
 
 The Joint Operation Planning Process (JOPP) is the joint planning paradigm used to develop plans and orders for joint operations [@jointchiefs2011jp5].

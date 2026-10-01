@@ -2,15 +2,11 @@
 name: "Harmony"
 date-created: 2026-03-05
 aliases:
-  - "harmony"
   - "harmonic"
 tags: []
 description: "The simultaneous sounding of pitches and the relations between simultaneities."
 date-updated: 2026-03-09
 part-of: music/disciplines/music-theory/terms
-defines:
-  - "Harmony"
-  - "harmonic"
 date-modified: 2026-03-09
 ---
 

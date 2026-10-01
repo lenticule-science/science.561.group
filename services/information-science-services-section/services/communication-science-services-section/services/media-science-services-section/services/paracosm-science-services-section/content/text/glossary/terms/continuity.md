@@ -11,7 +11,6 @@ keywords:
   - canon
   - reproducible-paracosm
   - role-playing-games
-type: term
 ---
 
 Continuity is the internal consistency of a fictional world across its multiple realizations—different works, episodes, installments, tellings, or play sessions set in the same world. A world exhibits continuity when established facts, character histories, spatial relationships, and causal sequences remain coherent from one realization to the next.

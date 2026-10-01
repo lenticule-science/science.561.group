@@ -10,7 +10,6 @@ keywords:
   - CyberneticPostliberalism
   - Governance
 description: "A governance structure in which power operates through symbolic declaration and formal response, treating deviation as noncompliance and organizing participation through legal legibility."
-date: 2025-04-13
 voice: structured reference record
 delta:
   - "[[noncompliance as deviation]]"

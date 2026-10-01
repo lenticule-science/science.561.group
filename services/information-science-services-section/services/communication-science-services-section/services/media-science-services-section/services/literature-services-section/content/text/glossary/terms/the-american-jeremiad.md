@@ -5,9 +5,11 @@ references:
   - TheAmericanJeremiad
 name: The American Jeremiad
 date-created: 2025-09-28
-roam-refs: \[cite:@TheAmericanJeremiad\]
 visibility: public
 type: book
+provenance:
+  sources:
+    - "[cite:@TheAmericanJeremiad]"
 ---
 
 # code

@@ -2,13 +2,9 @@
 name: "Dissonance"
 date-created: 2026-03-05
 aliases:
-  - "dissonance"
   - "dissonant"
 tags: []
 description: "The perceptual quality of tension, instability, or roughness in a combination of simultaneous pitches."
-defines:
-  - "Dissonance"
-  - "dissonant"
 ---
 
 Dissonance is the perceptual quality of tension, roughness, or instability in a combination of simultaneous pitches. In Western tonal practice, dissonance creates the drive toward resolution — the expectation that tension will give way to [consonance](./consonance.md). Without dissonance, tonal music would have no motion; it is the engine of [harmonic](harmony.md) movement.

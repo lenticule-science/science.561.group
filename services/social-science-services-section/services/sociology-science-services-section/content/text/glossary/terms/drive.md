@@ -2,18 +2,15 @@
 name: "Drive"
 date-created: 2026-03-06
 aliases:
-  - "Drive"
-  - "drive"
   - "the drive"
+  - drive (Lacanian)
 keywords:
   - anarchism
   - psychoanalysis
 description: "In Lacanian psychoanalysis, the mode of wanting that does not target an object but operates through repetition — drive circles endlessly without aiming at satisfaction, and its operation is its own purpose. Anarcho-nihilism identifies drive as the ground of resistance that persists when hope collapses."
-type: term
 tags:
   - Anarchism
   - Psychoanalysis
-defines: "drive (Lacanian)"
 ---
 
 Drive is the mode of wanting that does not aim at an object. Where [desire](./desire.md) targets what is absent — the revolution, the better world, the thing you do not yet have — drive operates without a target. It repeats. It circles. Its movement is its own purpose. Lacan described the drive as a circuit: it goes out toward an object, does not reach it, returns, and goes out again. The satisfaction of drive is not in reaching the destination but in the going.

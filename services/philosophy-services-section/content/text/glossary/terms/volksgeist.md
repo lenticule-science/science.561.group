@@ -10,22 +10,18 @@ description: "Herder's claim that each people possesses a unique spirit expresse
 enables: [genring, romantic-nationalism, invention-of-tradition]
 contrasts-with: [enlightenment-universalism]
 references:
-  - id: herder1784
-    type: document
+  herder1784:
+    authors:
+      - J. G. Herder
     title: Ideen zur Philosophie der Geschichte der Menschheit
-    author:
-      - literal: J. G. Herder
-    container-title: Johann Friedrich Hartknoch
-    issued:
-      - year: 1784
-  - id: fichte1808
-    type: document
+    year: 1784
+    publication: Johann Friedrich Hartknoch
+  fichte1808:
+    authors:
+      - J. G. Fichte
     title: Reden an die deutsche Nation
-    author:
-      - literal: J. G. Fichte
-    container-title: Realschulbuchhandlung
-    issued:
-      - year: 1808
+    year: 1808
+    publication: Realschulbuchhandlung
 ---
 
 *Volksgeist* is Johann Gottfried Herder's term for the unique spirit of a people, expressed through its particular language, songs, customs, myths, and material practices. Against the Enlightenment universalism of his contemporaries, Herder argued (1784) that there is no single human nature but only particular peoples, each with its own way of being in the world. The *Volk* is not a political unit (that is the state) but a cultural one: the organic community that speaks, sings, and tells stories in a way no other community does.

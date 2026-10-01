@@ -3,8 +3,7 @@ name: Sweet Grass
 description: Perennial grass cultivar of Hierochloe odorata, hardy zones 3-8. Rhizomatous, spreading mat-forming habit. Produces sweet vanilla fragrance (coumarin). Thrives in consistently moist, mineral-rich soil. Propagate by rhizome division (spring or fall). Indigenous sacred medicine of Anishinaabe peoples (Ojibwe, Odawa, Potawatomi); one of Four Sacred Medicines. Dried bundles used for smudging. Three-strand braids represent mind, body, spirit.
 date-created: 2026-04-02
 aliases: [wiingashk, holy grass, fragrant holy grass, Ojibwe sacred medicine]
-related-to:
-  - "[Hierochloe odorata](../../../../../../../../science/theories/biology/theories/botany/terms/hierochloe-odorata.md)"
+see-also: hierochloe-odorata
 ---
 
 Sweet grass cultivation grows [Hierochloe odorata](../../../../../../../../../natural-science-services-section/services/biological-science-services-section/services/botany-services-section/content/text/glossary/terms/hierochloe-odorata.md) for its sweet vanilla fragrance, its role as one of the Four Sacred Medicines in Anishinaabe tradition, and its use in smudging ceremonies and spiritual practice. The plant is called *wiingashk* in Ojibwe—the sacred hair of O'gushnan (Mother Earth).

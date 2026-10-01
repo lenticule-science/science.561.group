@@ -8,8 +8,7 @@ aliases:
   - Mexican husk tomato
   - Mexican groundcherry
   - husk cherry
-related-to:
-  - "[Tomatillo cultivation](../../../../../../engineering/domains/domesticity/domains/production/gardening/terms/tomatillo.md)"
+see-also: tomatillo
 ---
 
 ## Taxonomy and Geographic Origin

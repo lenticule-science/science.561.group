@@ -1,8 +1,6 @@
 ---
 name: "Iron Cage"
 description: "Weber's diagnostic image (stahlhartes Gehäuse — 'shell as hard as steel,' Parsons-translated as 'iron cage') for the condition in which the rationalization process that produced modern capitalism and modern bureaucracy creates an order imprisoning even those it serves, with no clear path out and no clear meaning beyond its own efficient functioning."
-defines: iron-cage
-related: [bureaucracy, authority, rationalization]
 date-created: 2026-05-03
 references:
   - id: weber1905
@@ -35,6 +33,12 @@ references:
     container-title: J.C.B. Mohr (Paul Siebeck), Tübingen
     issued:
       - year: 1922
+aliases:
+  - iron-cage
+see-also:
+  - bureaucracy
+  - authority
+  - rationalization
 ---
 
 The **iron cage** (Weber's *stahlhartes Gehäuse* — literally a "shell as hard as steel") is the diagnostic image, deployed in the closing pages of [The Protestant Ethic and the Spirit of Capitalism](weber1905), for the condition that the rationalization process bequeaths to its inheritors.

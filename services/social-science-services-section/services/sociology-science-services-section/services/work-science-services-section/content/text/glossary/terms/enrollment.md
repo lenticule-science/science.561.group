@@ -18,9 +18,8 @@ ast:
         - vessel
         - operational-period
 id: enrollment
-defines: Enrollment
-related: Crew, Vessel, Person, Investiture, Act, Section, Discharge
 date-modified: 2026-03-20
+see-also: crew-vessel-person-investiture-act-section-discharge
 ---
 
 ## Formal definition

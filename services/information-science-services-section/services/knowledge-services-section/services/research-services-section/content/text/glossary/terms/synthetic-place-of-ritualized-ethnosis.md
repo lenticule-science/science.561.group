@@ -7,7 +7,6 @@ aliases:
   - "SPOREs"
 date-created: 2026-03-04
 type: definition
-dg-publish: true
 id: synthetic-place-of-ritualized-ethnosis
 authors:
   - emsenn
@@ -20,6 +19,7 @@ tags:
   - description
 created: 2023-12-13T19:06
 modified: 2025-07-13T23:00
+visibility: public
 ---
 
 Both the starting point and whole of a specific type of [virtual environment](virtual environment) for an individual to engage in [vernacular autoethnosis](vernacular autoethnosis). SPOREs are closely related to [digital garden|digital gardens](digital garden|digital gardens), but are specifically oriented toward [constructivism|constructivist learning practies](constructivism|constructivist learning practies).

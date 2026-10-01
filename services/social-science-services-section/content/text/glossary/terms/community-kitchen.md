@@ -1,11 +1,9 @@
 ---
 name: "Community Kitchen"
-date-created: 2026-03-08T00:00:00
+date-created: 2026-03-08
 authors:
   - claude
-type: term
 aliases:
-  - "community kitchen"
   - "community kitchens"
 keywords:
   - DisasterStudies
@@ -13,44 +11,32 @@ keywords:
   - MutualAid
   - CareWork
 description: "A grassroots food-preparation and distribution site that turns donations, labor, and local knowledge into collective nourishment."
-defines:
-  - "community kitchen"
-  - "community kitchens"
 cites:
   - landau2022
   - watters2014
   - madrprograms2024
 references:
-  - id: landau2022
-    type: article-journal
+  landau2022:
+    authors:
+      - Laura Landau
     title: "Mutual Aid as Disaster Response in NYC: Hurricane Sandy to COVID-19"
-    volume: 9
-    issue: 2
-    author:
-      - literal: Laura Landau
-    container-title: Journal of Extreme Events
-    page: "2241001"
-    issued:
-      - year: 2022
-    URL: https://mutualaiddisasterrelief.org/wp-content/uploads/2023/05/Mutual-Aid-As-Disaster-Response-in-NYC.pdf
-  - id: watters2014
-    type: document
+    year: 2022
+    publication: Journal of Extreme Events
+    url: https://mutualaiddisasterrelief.org/wp-content/uploads/2023/05/Mutual-Aid-As-Disaster-Response-in-NYC.pdf
+  watters2014:
+    authors:
+      - Siobhan Watters
     title: Mutual Aid and Distribution in Occupy Sandy
-    author:
-      - literal: Siobhan Watters
-    container-title: MIT 3874G lecture manuscript
-    issued:
-      - year: 2014
-    URL: https://mutualaiddisasterrelief.org/wp-content/uploads/2019/11/Mutual_Aid_and_Distribution_in_Occupy_Sandy.pdf
-  - id: madrprograms2024
-    type: document
+    year: 2014
+    publication: MIT 3874G lecture manuscript
+    url: https://mutualaiddisasterrelief.org/wp-content/uploads/2019/11/Mutual_Aid_and_Distribution_in_Occupy_Sandy.pdf
+  madrprograms2024:
+    authors:
+      - Mutual Aid Disaster Relief
     title: Survival Programs
-    author:
-      - literal: Mutual Aid Disaster Relief
-    container-title: Mutual Aid Disaster Relief
-    issued:
-      - year: 2024
-    URL: https://mutualaiddisasterrelief.org/programs/
+    year: 2024
+    publication: Mutual Aid Disaster Relief
+    url: https://mutualaiddisasterrelief.org/programs/
 tags:
   - disaster-studies
   - food-provision

@@ -21,7 +21,6 @@ references:
     publication: "Joint Publication 3-33"
     year: 2018
     url: "https://www.jcs.mil/Portals/36/Documents/Doctrine/pubs/jp3_33.pdf"
-type: term
 ---
 
 A liaison officer is a representative placed with another headquarters

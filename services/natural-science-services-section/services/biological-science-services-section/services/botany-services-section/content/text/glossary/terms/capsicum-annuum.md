@@ -8,8 +8,7 @@ aliases:
   - bell pepper
   - chili pepper
   - common pepper
-related-to:
-  - "[Pepper cultivation](../../../../../../engineering/domains/domesticity/domains/production/gardening/terms/pepper.md)"
+see-also: pepper
 ---
 
 ## Taxonomy and Domestication

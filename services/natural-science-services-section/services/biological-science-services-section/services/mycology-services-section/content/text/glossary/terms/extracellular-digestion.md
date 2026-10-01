@@ -9,7 +9,6 @@ keywords:
   - Mycology
   - Nutrition
   - Biochemistry
-type: term
 ---
 
 

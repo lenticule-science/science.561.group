@@ -9,7 +9,6 @@ contains: [vertex, edge, path, cycle]
 enables: [morphism, partial-order, state-machine, topological-sort]
 contrasts-with: undirected-graph
 date-updated: 2026-03-29
-type: term
 ---
 
 A directed graph is a set of vertices connected by edges that have a direction. An edge from u to v goes one way — it does not also go from v to u. This is the difference from an undirected graph, where edges have no direction.

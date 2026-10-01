@@ -8,11 +8,8 @@ see-also:
   - "/sociology/disciplines/legalism/index.md"
 references:
   - /sociology/disciplines/legalism/index.md
-type: term
 tags:
   - Legalism
-defines:
-  - "legal fiction"
 ---
 
 A legal fiction is a statement accepted as true by a legal system despite being known to be false or at least unverifiable — adopted not because it describes reality but because it produces useful legal results. Corporate personhood is the paradigmatic example: the law treats a corporation as a "person" who can own property, enter contracts, sue and be sued. No one believes a corporation is literally a person. The fiction exists because it solves a practical problem — how to assign rights and obligations to collective entities.

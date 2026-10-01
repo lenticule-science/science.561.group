@@ -8,7 +8,6 @@ keywords:
   - Governance
   - Affect
 description: "emsenn's term for the liberal subject produced by californication: simultaneously responsible for managing global crises and structurally incapable of transforming the conditions that produce them."
-type: term
 ---
 
 

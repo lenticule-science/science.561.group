@@ -10,7 +10,6 @@ name: Observation
 description: "The substrate-entity produced by the tracking stage: a derived reading of the work substrate's state at a point in time."
 ---
 
-# Observation
 
 The substrate-entity produced by the [tracking](../../../../../sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/tracking.md) stage: a derived reading of the work substrate's state at a point in time. Observations live in their own fiber, *separate from the entities they observe* — the substrate-algebraic implementation of Goodhart's law (Strathern 1997): the metric is not part of the fiber being measured. The FARS substrate's commitment to this isolation is [observation-fiber-isolation](../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/research/predicated-agentic-orchestration-platform/flatfile-agentic-resource-system/observation-fiber-isolation/observation-fiber-isolation.md).
 

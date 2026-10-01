@@ -4,7 +4,6 @@ aliases:
   - "food-safe"
 date-created: 2026-01-01
 tags: []
-type: term
 ---
 
 Food-safe describes a material, surface, or substance that is suitable for contact with food without introducing harmful chemicals, residues, or contaminants. In [home gardening](../index.md) — particularly when growing [sprouts](./sprout.md) and [microgreens](../topics/microgreens/index.md) — the food-safe status of containers, growing media, and cleaning agents determines whether the harvest is safe to eat.

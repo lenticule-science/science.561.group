@@ -4,7 +4,7 @@ description: "The set of lessons educational institutions teach implicitly throu
 aliases:
 - hidden curriculum
 - implicit curriculum
-date-created: 2026-03-06 00:00:00
+date-created: 2026-03-06
 tags:
 - critical-theory
 contrasts-with:

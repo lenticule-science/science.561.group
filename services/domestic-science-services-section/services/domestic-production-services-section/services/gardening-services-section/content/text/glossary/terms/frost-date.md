@@ -6,7 +6,6 @@ aliases:
   - "first frost date"
 date-created: 2026-03-07
 tags: []
-type: term
 ---
 
 The average date on which the last spring frost or first autumn frost

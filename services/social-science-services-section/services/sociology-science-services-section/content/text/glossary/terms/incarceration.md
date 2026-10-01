@@ -9,14 +9,12 @@ see-also:
   - "/sociology/disciplines/legalism/index.md"
 references:
   - /sociology/disciplines/legalism/index.md
-type: term
 tags:
   - Legalism
-defines:
-  - "incarceration"
-  - "mass incarceration"
-  - "imprisonment"
-  - "prison"
+aliases:
+  - mass incarceration
+  - imprisonment
+  - prison
 ---
 
 Incarceration is the confinement of a person in a controlled facility — prison, jail, detention center — as a legal sanction or pending legal proceedings. It is the paradigmatic expression of the state's coercive power over the individual body.

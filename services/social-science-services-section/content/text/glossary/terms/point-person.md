@@ -1,11 +1,9 @@
 ---
 name: "Point Person"
-date-created: 2026-03-08T00:00:00
+date-created: 2026-03-08
 authors:
   - claude
-type: term
 aliases:
-  - "point person"
   - "point people"
 keywords:
   - DisasterStudies
@@ -13,34 +11,27 @@ keywords:
   - Communication
   - MutualAid
 description: "A temporary coordination role responsible for carrying information between a small working group and a wider hub, hotline, or dispatch function."
-defines:
-  - "point person"
-  - "point people"
 cites:
   - occupysandyorientation2012
   - ambinder2013
 references:
-  - id: occupysandyorientation2012
-    type: document
+  occupysandyorientation2012:
+    authors:
+      - Occupy Sandy
     title: Occupy Sandy Field Orientation
-    author:
-      - literal: Occupy Sandy
-    container-title: Superstorm Research Lab
-    issued:
-      - year: 2012
-    URL: https://superstormresearchlab.org/wp-content/uploads/2013/07/newoccupysandyfieldorientation520clinton.pdf
-  - id: ambinder2013
-    type: document
+    year: 2012
+    publication: Superstorm Research Lab
+    url: https://superstormresearchlab.org/wp-content/uploads/2013/07/newoccupysandyfieldorientation520clinton.pdf
+  ambinder2013:
+    authors:
+      - E. Ambinder
+      - D. Jennings
+      - I. Blachman-Biatch
+      - et al.
     title: "The Resilient Social Network: @OccupySandy #SuperstormSandy"
-    author:
-      - literal: E. Ambinder
-      - literal: D. Jennings
-      - literal: I. Blachman-Biatch
-      - literal: et al.
-    container-title: Homeland Security Studies and Analysis Institute
-    issued:
-      - year: 2013
-    URL: https://asprtracie.hhs.gov/technical-resources/resource/5299/the-resilient-social-network-occupysandy-superstormsandy
+    year: 2013
+    publication: Homeland Security Studies and Analysis Institute
+    url: https://asprtracie.hhs.gov/technical-resources/resource/5299/the-resilient-social-network-occupysandy-superstormsandy
 tags:
   - disaster-studies
   - roles

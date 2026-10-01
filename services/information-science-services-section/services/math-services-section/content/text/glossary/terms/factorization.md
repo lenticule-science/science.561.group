@@ -2,7 +2,6 @@
 name: "Factorization"
 date-created: 2026-03-29
 requires: [morphism, composition]
-type: term
 ---
 
 Factorization is breaking a process into steps. If getting from A to C always passes through B, then the process A → C factors through B. It decomposes into A → B followed by B → C.

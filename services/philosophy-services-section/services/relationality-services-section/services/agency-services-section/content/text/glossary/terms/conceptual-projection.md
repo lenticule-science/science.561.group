@@ -8,7 +8,6 @@ name: Conceptual projection
 description: The operation by which a sub-vocabulary of attributes induces a quotient on the concept lattice.
 ---
 
-# Conceptual projection
 
 The operation by which a sub-vocabulary of attributes induces a quotient on the concept lattice. Given a context $\mathbb{K} = (G, M, I)$ and a subset $N \subseteq M$, the **projected context** is $\mathbb{K}|_N := (G, N, I \cap (G \times N))$, restricting the incidence to the chosen attribute subset.
 

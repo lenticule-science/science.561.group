@@ -6,7 +6,6 @@ aliases:
   - "loamy soil"
 date-created: 2026-03-06
 tags: []
-type: term
 ---
 
 A soil texture that is a roughly equal blend of sand, silt, and clay.

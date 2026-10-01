@@ -1,11 +1,9 @@
 ---
 name: "Mutual Aid Hub"
-date-created: 2026-03-08T00:00:00
+date-created: 2026-03-08
 authors:
   - claude
-type: term
 aliases:
-  - "mutual aid hub"
   - "mutual aid hubs"
   - "hub"
   - "hubs"
@@ -15,47 +13,35 @@ keywords:
   - MutualAid
   - Organizations
 description: "A decentralized coordination site where volunteers, supplies, information, and care practices are gathered, matched, and redistributed."
-defines:
-  - "mutual aid hub"
-  - "mutual aid hubs"
 cites:
   - landau2022
   - ambinder2013
   - watters2014
 references:
-  - id: landau2022
-    type: article-journal
+  landau2022:
+    authors:
+      - Laura Landau
     title: "Mutual Aid as Disaster Response in NYC: Hurricane Sandy to COVID-19"
-    volume: 9
-    issue: 2
-    author:
-      - literal: Laura Landau
-    container-title: Journal of Extreme Events
-    page: "2241001"
-    issued:
-      - year: 2022
-    URL: https://mutualaiddisasterrelief.org/wp-content/uploads/2023/05/Mutual-Aid-As-Disaster-Response-in-NYC.pdf
-  - id: ambinder2013
-    type: document
+    year: 2022
+    publication: Journal of Extreme Events
+    url: https://mutualaiddisasterrelief.org/wp-content/uploads/2023/05/Mutual-Aid-As-Disaster-Response-in-NYC.pdf
+  ambinder2013:
+    authors:
+      - E. Ambinder
+      - D. Jennings
+      - I. Blachman-Biatch
+      - et al.
     title: "The Resilient Social Network: @OccupySandy #SuperstormSandy"
-    author:
-      - literal: E. Ambinder
-      - literal: D. Jennings
-      - literal: I. Blachman-Biatch
-      - literal: et al.
-    container-title: Homeland Security Studies and Analysis Institute
-    issued:
-      - year: 2013
-    URL: https://asprtracie.hhs.gov/technical-resources/resource/5299/the-resilient-social-network-occupysandy-superstormsandy
-  - id: watters2014
-    type: document
+    year: 2013
+    publication: Homeland Security Studies and Analysis Institute
+    url: https://asprtracie.hhs.gov/technical-resources/resource/5299/the-resilient-social-network-occupysandy-superstormsandy
+  watters2014:
+    authors:
+      - Siobhan Watters
     title: Mutual Aid and Distribution in Occupy Sandy
-    author:
-      - literal: Siobhan Watters
-    container-title: MIT 3874G lecture manuscript
-    issued:
-      - year: 2014
-    URL: https://mutualaiddisasterrelief.org/wp-content/uploads/2019/11/Mutual_Aid_and_Distribution_in_Occupy_Sandy.pdf
+    year: 2014
+    publication: MIT 3874G lecture manuscript
+    url: https://mutualaiddisasterrelief.org/wp-content/uploads/2019/11/Mutual_Aid_and_Distribution_in_Occupy_Sandy.pdf
 tags:
   - disaster-studies
   - logistics

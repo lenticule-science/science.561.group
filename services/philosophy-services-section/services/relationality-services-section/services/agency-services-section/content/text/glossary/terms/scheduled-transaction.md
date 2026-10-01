@@ -5,10 +5,9 @@ description: "A scheduled transaction is a template for a recurring transaction 
 aliases:
   - "Scheduled Transaction"
   - "scheduled transaction"
-date-created: 2026-03-06T00:00:00
+date-created: 2026-03-06
 keywords:
   - accounting
-type: term
 ---
 
 A scheduled transaction is a template for a recurring transaction that GnuCash can create automatically or with user confirmation.

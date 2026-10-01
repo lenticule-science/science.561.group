@@ -1,11 +1,9 @@
 ---
 name: "Warehouse"
-date-created: 2026-03-08T00:00:00
+date-created: 2026-03-08
 authors:
   - claude
-type: term
 aliases:
-  - "warehouse"
   - "warehouses"
 keywords:
   - DisasterStudies
@@ -13,34 +11,27 @@ keywords:
   - Infrastructure
   - MutualAid
 description: "A storage and coordination site where incoming goods are received, sorted, held, and redistributed during disaster response."
-defines:
-  - "warehouse"
-  - "warehouses"
 cites:
   - wachtendorf2010
   - watters2014
 references:
-  - id: wachtendorf2010
-    type: document
+  wachtendorf2010:
+    authors:
+      - Tricia Wachtendorf
+      - Bethany Brown
+      - Jose Holguin-Veras
+      - Satish Ukkusuri
     title: "Catastrophe Characteristics and Their Impact on Critical Supply Chains: Problematizing Material Convergence and Management Following Hurricane Katrina"
-    author:
-      - literal: Tricia Wachtendorf
-      - literal: Bethany Brown
-      - literal: Jose Holguin-Veras
-      - literal: Satish Ukkusuri
-    container-title: Disaster Research Center
-    issued:
-      - year: 2010
-    URL: https://udspace.udel.edu/items/d050fc11-cbbe-4ded-b4dd-79c3257e871c
-  - id: watters2014
-    type: document
+    year: 2010
+    publication: Disaster Research Center
+    url: https://udspace.udel.edu/items/d050fc11-cbbe-4ded-b4dd-79c3257e871c
+  watters2014:
+    authors:
+      - Siobhan Watters
     title: Mutual Aid and Distribution in Occupy Sandy
-    author:
-      - literal: Siobhan Watters
-    container-title: MIT 3874G lecture manuscript
-    issued:
-      - year: 2014
-    URL: https://mutualaiddisasterrelief.org/wp-content/uploads/2019/11/Mutual_Aid_and_Distribution_in_Occupy_Sandy.pdf
+    year: 2014
+    publication: MIT 3874G lecture manuscript
+    url: https://mutualaiddisasterrelief.org/wp-content/uploads/2019/11/Mutual_Aid_and_Distribution_in_Occupy_Sandy.pdf
 tags:
   - disaster-studies
   - logistics

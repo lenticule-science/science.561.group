@@ -1,6 +1,5 @@
 ---
 name: "Galactic rotation curve"
-type: term
 component-of: galactic-astronomy
 ---
 

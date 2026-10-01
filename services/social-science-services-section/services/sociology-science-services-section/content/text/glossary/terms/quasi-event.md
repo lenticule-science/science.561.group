@@ -11,19 +11,14 @@ contrasts-with: event
 enables: recuperation
 produces: legibility
 references:
-  - id: povinelli2011
-    type: document
+  povinelli2011:
+    authors:
+      - Elizabeth A. Povinelli
     title: "Economies of Abandonment: Social Belonging and Endurance in Late Liberalism"
-    author:
-      - literal: Elizabeth A. Povinelli
-    container-title: Duke University Press
-    issued:
-      - year: 2011
+    year: 2011
+    publication: Duke University Press
 aliases:
-  - quasi-event
-type: term
-defines:
-  - quasi-event
+  []
 tags:
   - CriticalTheory
 ---

@@ -2,8 +2,6 @@
 name: "Green Anarchism"
 date-created: 2026-03-06
 aliases:
-  - "Green Anarchism"
-  - "green anarchism"
   - "eco-anarchism"
 keywords:
   - anarchism
@@ -11,11 +9,7 @@ description: "The anarchist current that analyzes ecological destruction and the
 part-of: sociology/schools/anarchism/schools/green-anarchism/terms
 tags:
   - ecology
-defines:
-  - "Green Anarchism"
-  - "eco-anarchism"
 date-modified: 2026-03-09
-type: term
 date-updated: 2026-03-09
 ---
 

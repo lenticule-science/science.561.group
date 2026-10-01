@@ -8,7 +8,6 @@ aliases:
   - "right Kan extension"
 date-created: 2026-03-02
 tags: []
-type: term
 ---
 
 A Kan extension is the universal way to extend a [functor](./functor.md) along another [functor](./functor.md). Given [functors](./functor.md) F: C → D and K: C → E, the left Kan extension Lan_K(F): E → D is the "best approximation" of F that factors through K.

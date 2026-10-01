@@ -26,7 +26,6 @@ references:
     publication: "The United States Army"
     year: 2025
     url: "https://www.army.mil/article/286205/adaptive_c2_modernizing_army_command_and_control"
-type: term
 ---
 
 A common operating picture is a shared visual and informational frame

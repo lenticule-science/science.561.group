@@ -1,5 +1,4 @@
 ---
-date: "\\[2025-08-28 Thu 14:07\\]"
 id: dfaffd02-f11e-4d8d-894c-8364c1477d18
 name: Linux culture
 date-created: 2025-08-28

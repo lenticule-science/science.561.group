@@ -16,7 +16,6 @@ name: Vault
 description: A vault is the parent-level formal model of a markdown-vault knowledge system as a single coherent corpus.
 ---
 
-# Vault
 
 A **vault** is the parent-level formal model of a markdown-vault knowledge system as a single coherent corpus.
 

@@ -5,9 +5,8 @@ description: "The practice of structuring a website and its content to rank high
 domain: web-business
 uses: Organic Traffic, Content Strategy
 date-created: 2026-03-29
-defines: Search Engine Optimization
-related: Pageview, Web Monetization
 date-modified: 2026-03-29
+see-also: pageview-web-monetization
 ---
 
 Search engine optimization (SEO) is the practice of structuring a website and its content to rank higher in unpaid search engine results, thereby increasing [organic traffic](./organic-traffic.md). It is part technical discipline (ensuring search engines can crawl and index a site correctly), part editorial discipline (creating content that matches what people search for), and part reputation discipline (earning signals of authority from other sites).

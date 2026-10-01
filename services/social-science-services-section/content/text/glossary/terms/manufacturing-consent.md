@@ -1,42 +1,40 @@
 ---
 name: "Manufacturing Consent"
 description: "Burawoy's thesis that the labor process itself organizes worker consent to its own continuation through workplace games — making out, the rate, the relative rewards of harder versus easier jobs — that absorb workers' creative energies into the productive process while obscuring exploitation. Distinct from Herman and Chomsky's later use of the same phrase for media-system propaganda functions."
-defines: manufacturing-consent
-related: [labor-process, deskilling, real-subsumption, contested-terrain, hegemony]
 date-created: 2026-05-03
 references:
-  - id: burawoy1979
-    type: document
+  burawoy1979:
+    authors:
+      - Michael Burawoy
     title: "Manufacturing Consent: Changes in the Labor Process Under Monopoly Capitalism"
-    author:
-      - literal: Michael Burawoy
-    container-title: University of Chicago Press
-    issued:
-      - year: 1979
-  - id: burawoy1985
-    type: document
+    year: 1979
+    publication: University of Chicago Press
+  burawoy1985:
+    authors:
+      - Michael Burawoy
     title: "The Politics of Production: Factory Regimes Under Capitalism and Socialism"
-    author:
-      - literal: Michael Burawoy
-    container-title: Verso
-    issued:
-      - year: 1985
-  - id: braverman1974
-    type: document
+    year: 1985
+    publication: Verso
+  braverman1974:
+    authors:
+      - Harry Braverman
     title: Labor and Monopoly Capital
-    author:
-      - literal: Harry Braverman
-    container-title: Monthly Review Press
-    issued:
-      - year: 1974
-  - id: edwards1979
-    type: document
+    year: 1974
+    publication: Monthly Review Press
+  edwards1979:
+    authors:
+      - Richard Edwards
     title: "Contested Terrain: The Transformation of the Workplace in the Twentieth Century"
-    author:
-      - literal: Richard Edwards
-    container-title: Basic Books
-    issued:
-      - year: 1979
+    year: 1979
+    publication: Basic Books
+aliases:
+  - manufacturing-consent
+see-also:
+  - labor-process
+  - deskilling
+  - real-subsumption
+  - contested-terrain
+  - hegemony
 ---
 
 **Manufacturing consent** is Michael Burawoy's thesis, formulated in his ethnographic study of a Chicago machine shop [burawoy1979], that the labor process itself organizes workers' consent to participate in their own exploitation.

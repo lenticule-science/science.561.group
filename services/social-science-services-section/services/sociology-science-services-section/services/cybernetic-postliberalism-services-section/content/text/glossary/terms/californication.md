@@ -7,7 +7,6 @@ keywords:
   - Governance
   - Affect
 description: "emsenn's term for the recursive liberal worlding system that operationalizes structural contradiction as affectively manageable content, enabling liberal governance to persist under collapse."
-type: term
 ---
 
 

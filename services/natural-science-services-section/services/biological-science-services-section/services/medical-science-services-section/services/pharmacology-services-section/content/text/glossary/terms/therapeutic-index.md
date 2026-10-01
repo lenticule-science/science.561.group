@@ -14,7 +14,6 @@ measures: [pharmacodynamics, dose-response-relationships]
 governed-by: [half-life, drug-interaction, bioavailability]
 enables: [harm-reduction, naloxone-distribution, drug-checking, safe-supply]
 governs: [dosing-protocol, therapeutic-drug-monitoring]
-type: term
 ---
 
 The **therapeutic index** (TI) is the ratio between the dose of a drug that produces toxicity and the dose that produces the desired therapeutic effect. A drug with a wide therapeutic index (TI = 100) is relatively safe — there is a large margin between the dose that helps and the dose that harms. A drug with a narrow therapeutic index (TI = 2) is dangerous — the dose that helps is close to the dose that kills.
