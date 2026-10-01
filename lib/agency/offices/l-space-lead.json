@@ -2,7 +2,7 @@
   "id": "l-space-lead",
   "name": "L-Space lead",
   "kind": "office",
-  "normative-structure": "The L-Space lead answers for the demand L-Space takes from the settlement signal board: it assesses each taken demand in the terms of the faces L-Space serves, turns what is L-Space's work into work its own offices do, posts what another micro-enterprise does back on the board, and gives back what is not L-Space's work with its reasons. It staffs nothing outside L-Space, does not hand a signal to a chosen enterprise, and does not accept its own results.",
+  "normative-structure": "The L-Space lead answers for the demand L-Space takes up from the work board: it assesses each taken demand in the terms of the faces L-Space serves, turns what is L-Space's work into work its own offices do, posts what another micro-enterprise does back on the board, and gives back what is not L-Space's work with its reasons. It staffs nothing outside L-Space, does not hand a thread to a chosen enterprise, and does not accept its own results.",
   "deontic-profile": {
     "assessing-l-space-demand": "duty",
     "accepting-its-own-work": "deontic-immunity"
