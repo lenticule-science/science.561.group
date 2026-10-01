@@ -1,6 +1,6 @@
 ---
 title: "The corpus knowledge graph program"
-description: "Program carrier for turning the whole 561 Group corpus, not only its glossaries, into one admitted, linked, cited, dereferenceable and searchable knowledge graph, run as the house's first autonomic MAPE-K loop. It sets measured baselines, gated targets, four waves in dependency order, and the owning office for each workstream."
+description: "Program carrier for turning the whole 561 Group corpus, not only its glossaries, into one admitted, linked, cited, dereferenceable and searchable knowledge graph, run as the Monitor and Knowledge of the house's corpus MAPE-K loop. It sets ledger-measured baselines, a debt ratchet at integration, ledger-derived work intents per section, gated targets, four waves in dependency order, and the owning office for each workstream."
 date-created: 2026-09-30
 type: note
 name: 2026-09-30-the-corpus-knowledge-graph-program
@@ -81,13 +81,59 @@ The live demand queue (`wanted.json`) has three parts.
 
 `science/philosophy` alone holds 20,288 of the 36,999 live broken links.
 
+## What the ledger changed
+
+The first readings overturn four assumptions this program started with.
+
+1. **Broken links are mostly misplacement and demand, not rot.**
+   Over the 12,409 listed broken-link occurrences, measured against every rename Git recorded in 2026 (755,478 paths):
+   - Rename history repairs 2.5% (310). Re-resolving from the source carrier's earlier paths repairs 1.8% (222).
+   - The content librarian's resolution rule is "nearest by filesystem distance, neighbours or upward, never downward".
+     Under it, one carrier in the referrer's own, sibling or ancestor section bears the name in 38.7% (4,794).
+   - Several such carriers tie in 9.4% (1,163). Polysemy across sections is correct, so these are borders, not damage.
+   - Only a descendant section carries the name in 29.1% (3,615). Rewriting would resolve downward, which the rule forbids.
+   - Nothing tracked carries the name in 22.9% (2,837). These are pages someone linked and nobody wrote.
+
+   So the repair is a scope resolver, not history replay, and it can repair under two-fifths of these occurrences by rule.
+   The rest is demand: pages owed at the scope that named them.
+   A path link to an unwritten page is a red link, which a wiki treats as legitimate demand, not as an error.
+2. **The corpus barely cites, and most of what it cites breaks the citation law.**
+   Only 1,070 of 28,904 live carriers (3.7%) cite anything with `[@key]`. Of 2,432 claim-kind carriers (research, essay, theory, concept, teaching), 95 do.
+   14,783 live carriers (51%) carry no link or wikilink at all.
+   The science topic-section model permits inline `[@key]` "only when the key exists in that file's `references:` map".
+   So the ledger's 1,553 `covered` occurrences break the law just as the 3,537 `unknown` ones do. Only 1,597 of 6,687 occurrences (24%) are lawful.
+   The binding constraint is coverage and lawful depth-1 citation, not a bigger library.
+3. **Nine kinds cover 86% of the unschematized corpus.**
+   Of the 18,860 live carriers under no schema:
+
+   | Kind | Carriers |
+   |---|---|
+   | note | 10,869 |
+   | term (the Org parallel glossary) | 1,569 |
+   | concept | 795 |
+   | log | 643 |
+   | readme | 588 |
+   | research | 532 |
+   | essay | 454 |
+   | topic | 414 |
+   | teaching-article | 403 |
+
+   One `note` schema admits more than half of them.
+4. **Debt is concentrated.**
+   Debt here is broken links, unresolved wikilinks, unknown citekeys, refusals and unschematized carriers. 821 owning sections hold live carriers.
+   The ten most indebted hold 68% of the measured debt, the top 50 hold 90%, and the top 100 hold 94%.
+   Five sections lead: `emsenn` (personal), `relationality`, `relationality/agency`, `philosophy` itself, and `logic`.
+   A 50-item fan-out reaches nine-tenths of the work.
+
 ## Decisions
 
 These are settled for this program, from house theory first and published standards second.
 
-1. **Every carrier is a subject.**
-   A tracked Markdown or Org file under a section's `content/` is one subject.
-   Its frontmatter keys are predicates, and their values are objects (the program's `[file: [key: value]]` reading).
+1. **Every carrier is a subject; its rows are the knowledge.**
+   A tracked Markdown or Org file is one subject.
+   The owner's ruling of 2026-09-03 stands: "Frontmatter remains a carrier format for prose". The knowledge representation is RMN cells in SEAVT rows.
+   So the ledger's rows are level-0, append-only rows (D3), and the frontmatter is what they are read from.
+   Lot 6's EAVT→SEAVT lift moves forward into Wave 1, because every later wave reads rows, not files.
    Admission is by rule only (D6). A carrier that fails admission becomes a typed refusal row and is never dropped.
 2. **Identity is scheme-qualified.**
    A subject's identity is `<scheme>/<stem>`, where the scheme is the owning section path with the `services/` connectors dropped.
@@ -99,43 +145,152 @@ These are settled for this program, from house theory first and published standa
    OWL classes and properties and SHACL shapes are generated from them by the house's `json-schema-to-owl-shacl-service`.
    That is the house equivalent of LinkML, so LinkML is not adopted.
    The 23 hand-declared `data/ontology/*.ttl` files are retired once their classes exist in the generated layer (D5: generated, never hand-declared).
+   The topic-section model gave `data/ontology/` a seat. D5 and the data-trio law are later and govern: the seat holds generated output.
 4. **The relation predicate registry is data, and it carries semantics.**
    `relation-predicates.json` gains, per predicate: `inverse`, a SKOS mapping (`broader`, `narrower`, `related`, `exactMatch`, `closeMatch`), an optional CiTO or PROV mapping, and `subPropertyOf`.
    The hard-coded `BROADER` and `NARROWER` sets in `glossary-skos.mjs` move into that data.
    The registry then publishes each predicate as an OWL object property at `/ns/predicate/<name>`.
-   Declared inverses are the converse-predicate ledger that ks-05 (contested cells) lacks.
+   Declared inverses are the converse-predicate ledger that ks-05 (contested cells) lacks. With them, contested cells stop reading as zero.
+   The registry also states, per predicate:
+   - its relation class: ordering, cross-reference, classifier or verification (`lean:`);
+   - which of the four predicate generators produced it: specialization, converse, subject-projection or object-projection.
+
+   A `depends-on` cycle is a soundness diagnostic.
+   A local predicate is lifted into the registry once it recurs in three theories, which answers the pruning question by rule.
 5. **Kind comes from the artifact-role directory before it comes from a key.**
    `documents/articles/<kind>/`, `glossary/<kind>/` and `logs/<kind>/` already state each file's kind.
    A carrier's `type` is admitted when it agrees with its directory's kind. A carrier whose `type` disagrees, or that has none, is a refusal row, not a guess.
 6. **Folds, not rewrites.**
    Legacy key families are folded into admitted slots by byte-preserving, revision-guarded plans.
    The glossary fold (`foldLegacyTermKeys`, commit `49816588d9d`) is the pattern.
-   The corpus-wide families are `kind`→`type`, `author`→`authors`, `date`→`date-created`, and inline `references:` entries → citekey carriers.
+   The corpus-wide families are `kind`→`type`, `author`→`authors` and `date`→`date-created`.
+   The citation fold is a fourth: a cited key known elsewhere is copied into the citing carrier's own `references:` map.
    A value that disagrees with what the carrier already states stays in place for a person (D2: nothing is overwritten).
-7. **Citations are claims.**
-   Every `[@key]` resolves to one `<citekey>.md` carrier in the bibliography schema, holding CSL-JSON.
-   A citation from a carrier to a source is an admitted relation with a CiTO intent (`cito:citesAsEvidence`, `cito:disputes`, …) and a locator.
+7. **Citations are claims, at the depth the source earns.**
+   The science topic-section model's three depths govern. It is recoverable from history (Wave 2.7).
+   - **Depth 1.** The citing carrier's `references:` map holds CSL-JSON per key, and inline `[@key]` is lawful only for keys in that map.
+     A depth-1-only citation is healthy.
+   - **Depth 2.** A `<citekey>.md` bibliography carrier exists only when a source "deserves more than a citation". Its body says why the source is central, what it does not settle, and what it bridges.
+   - **`.bib` files.** They are projections, "never a second source of truth".
+
+   A citation is an admitted relation with a CiTO intent (`cito:citesAsEvidence`, `cito:disputes`, …) and a locator.
    This is Lot 7's citation-triple (carrier, world, evidence), and its predicate list is checked against CiTO before any predicate is coined.
-8. **Authorship demand is a ranked queue.**
+8. **Authorship demand is a ranked, priced queue.**
    D1's backward leg ships first as the queue a professional wiki calls "wanted pages".
-   Its items are unresolved link targets, empty stubs, unresolved citekeys, refused carriers and contested cells, ranked by inbound demand over repair cost (D4).
+   Its items are:
+   - unresolved link targets and red links;
+   - empty stubs;
+   - unlawful citekeys;
+   - claim-kind carriers citing nothing;
+   - refused carriers.
+
+   An item is discharged only when D4's priced yield exceeds discovery-plus-repair cost. Inbound demand is the first yield estimate, and repair cost comes from the item's class.
+   Contested cells are not demand items: "contradiction is data, never a defect by default".
    This is Lot 5's seam with its simplest real implementation.
-9. **Public stays opt-in.**
+9. **Public stays opt-in, and consent filters every claim.**
    Nothing becomes public by migration. The program produces a publication-candidate queue (admitted, cited, linked, with no `consent-status`).
    The founder's one move flips `visibility: public` per batch.
+   Consent is a first-class admitted field (D6). Every surface (pages, dumps, `/mcp`, retrieval) filters per claim, not only per carrier, so a public carrier never serves a withheld claim.
 10. **Model drafts are candidates, never substrate.**
    Agent-drafted bodies for stubs enter with `status: draft`, the model among the `authors`, and the write contract's `semanticEvidence` excerpts quoted from carriers that already exist.
    They are admitted to the authenticated graph and never to the public surface until a person promotes them.
-   That keeps D6 true: no extracted claim enters as settled.
+   "A writer cannot accept its own manuscript".
+   A draft's receiver is never the drafting office, and a model judge is never the sole gate when judge and drafter share model lineage.
+   That keeps D6 true: no extracted claim enters as settled. Extraction proposes and never commits.
 11. **One read path, from the release.**
     VaultMaze, GEODE, `/ns/` and `/mcp` all read the same release checkout through one walker and one ledger.
     The live authoring tree is for authoring, not serving.
+12. **The ledger is the integration gate, and it only ratchets.**
+    No integration may raise, in any section it touches, the live count of:
+    - broken path links;
+    - unresolved wikilinks;
+    - unlawful citekeys (any key outside the citing carrier's own map);
+    - schema refusals.
+
+    `census-corpus` compares the candidate commit with its base, and `duty-worktree-check` runs it beside the changed packages' checks.
+    This is Wikidata's constraint-report loop moved before the write.
+    It stops new debt from every agent at once, which no amount of bulk repair can do while agents keep writing.
+    A refusal is database-proof execution: a write without a derivation witness changes nothing. It is a refusal, not an action, so the knowledge plane still selects no actions.
+13. **Every work item is a ledger predicate.**
+    A work item's acceptance is a `census-corpus` assertion over one section, such as live broken path links ≤ 0 or carriers under no schema ≤ n.
+    The assertion runs as a command, so it is the rail's `deterministicExecution` with `command-exit-status: 0`.
+    A deriver turns the ledger and the wanted queue into one structured work intent:
+    - the endeavor is this program;
+    - one campaign per wave;
+    - one project per workstream;
+    - one `work-item:` per owning section, ranked by D4's priced yield.
+
+    Nobody writes work items by hand. The ledger writes them, and the ledger closes them.
+    Coordination freedom is proved, not assumed. Each item's write set is its own section's carriers.
+    Items with disjoint write sets commute, so their fan-out is order-independent.
+    The deriver checks disjointness and names every overlapping pair in the rail's `conflicts` before anything runs.
+    A fold that would write into another section is split at the border.
+14. **Sections are micro-enterprises with a knowledge account.**
+    Each owning section's ledger rollup is its scorecard:
+    - demand it owes (wanted items in its scheme);
+    - debt it carries (broken, unresolved, refused, unschematized);
+    - product it ships (admitted, cited, public, retrieved).
+
+    The scorecard is published per release beside the census.
+    The section, not the founder, owns its numbers, and its office takes its work from them.
+    Micro-enterprises are relations, not production stages, so the scorecard also counts what other sections' carriers resolve into this one: research is common capital, valued by the relations it enabled.
+    The knowledge offices keep their custody:
+    - **Chief knowledge officer.** Coordinates without taking the specialist custody below.
+    - **Knowledge-systems architect.** Holds the ledger, the ratchet and the deriver. It measures incumbents before claiming meet-or-beat.
+    - **Content librarian.** Holds resolution scope, completeness stated as a count, and "the glossary does not define".
+    - **Bibliography engineering.** Holds the citation depths.
+    - **Each section's office.** Holds its own repairs.
+15. **Claims are paraconsistent, content-addressed bundles.**
+    - **The bundle.** An admitted citation, `broader` edge or contested cell is a claim in nanopublication shape: an assertion, its provenance (the citing carrier and the evidence it quotes) and its publication info.
+    - **Identity.** A claim's content address is an RFC 6920 `ni:` SHA-256 over its typed envelope, taken in the order admit → type → normalize → settle → envelope → encode → digest.
+      Normalization is not settlement.
+      The address names the content, never the entity: a subject's IRI and its claims' addresses stay distinct, as do actor and content identity.
+    - **The log.** Bundles append to a bitemporal log, and each release publishes its Merkle head (a transparency log).
+      Retraction is another event.
+    - **The value.** Each claim's four-valued cell (t, f, both, neither) is computed from its supporting and disputing edges (`cito:supports`, `cito:disputes`), never stated.
+      Absence is *neither*, never false.
+      *Both* is data. It is reported and served as contested, and never repaired by averaging (borders are never discharged).
+      No published standard represents Belnap values in RDF, so the cell is a house predicate in the registry.
+      It carries provenance, scope, time and authority beside it, because FOUR alone supplies none of them.
+    - **The serialization.** Named graphs carry claims until RDF 1.2 triple terms reach Recommendation; RDF 1.2 Concepts has been a Candidate Recommendation since 2026-04-07.
+      Attribution is never collapsed into assertion.
+16. **Retrieval is graph-native, vocabulary-spined and model-free at index time.**
+    - **Index.** Three channels are fused by reciprocal rank and reranked by a local cross-encoder:
+      - the SKOS label spine (preferred, alternative and hidden labels, including outsiders' words);
+      - BM25 (FTS5);
+      - local dense vectors (Qwen3-Embedding-0.6B or EmbeddingGemma, zero-cash).
+
+      Dense-only search is unsafe, so the spine comes first.
+      Personalized PageRank then runs over the admitted relation graph.
+      That is HippoRAG 2's shape without its model-extracted triples. The house graph already exists, and D6 forbids extracted ones.
+    - **What is skipped.** GraphRAG and LightRAG cost 10–100× the indexing tokens for task-dependent gains, so they are not adopted *on cost*.
+      ks-11's meet-then-beat still measures them, with LlamaIndex, on the same gold set before this design claims to beat them.
+    - **Chunk prefixes.** Each chunk's prefix is its title, IRI, scheme and heading path: contextual retrieval by rule, with no model call.
+    - **Witnesses.** An embedding is the provenance-forgetting projection, so every served hit re-attaches its witnesses: IRI, blob SHA, claim addresses and four-valued cells.
+      Groundedness is bounded by recall, so recall is the gate.
+    - **Gold set.** It is derived by rule:
+      - every identity's title and aliases must retrieve its own carrier;
+      - every resolved link's sentence must retrieve its target.
+
+      That gives tens of thousands of free positives. A 150-question hand-checked set anchors them, with outsider-worded queries among them.
+      Each run reports recall, the zero-result rate, and which channel found each hit.
+17. **External evidence is captured, not trusted.**
+    Every external URL a live carrier cites gets a capture record: the Wayback snapshot, and the SHA-256 of the bytes retrieved, held by the content-addressed storage service.
+    Link rot is then a fold that adds the capture beside the claim, never an edit of the claim (D2).
+18. **Standards in their current state, not their hoped state.**
+    - **Adopt now.** SHACL 1.0, the Recommendation (1.2 Core is a Working Draft as of 2026-08-03).
+      DCAT 3, a Recommendation since 2024-08-22. SKOS, and schema.org `DefinedTerm`.
+      RO-Crate 1.2 for evidence packages. Static dumps instead of a SPARQL endpoint.
+    - **Publish but do not count on.** `llms.txt`: 97% of such files drew no requests in May 2026, and a 300,000-domain study found no citation lift.
+      Agents are served through `/mcp`.
 
 ## Waves, in dependency order (data → code → networking → systems)
 
 Each workstream lands as MetroPlat work items with machine-checked goals.
 A goal is a ledger measurement crossing a threshold, never a green test suite.
-Sections are independent, so most workstreams fan out one work item per owning section (about 250 glossaries, more content roots); that is the shape that uses many agents and machines at once.
+Sections are independent, so most workstreams fan out one work item per owning section.
+There are 821 such sections, and the top 50 hold 90% of the debt.
+This is the shape that uses many agents and machines at once. The deriver (Wave 1.6) writes the fan-out, so its size follows the ledger, not a plan.
 
 ### Wave 0: the rail
 
@@ -161,29 +316,73 @@ Sections are independent, so most workstreams fan out one work item per owning s
    Decision 8's queue ships with it: wanted pages, wanted references and wanted paths.
    Stubs, refusals and contested cells join the queue in later waves.
 2. **Carrier-kind schema family** (owner: the science schema sections).
-   Schemas for `note`, `reference`, `question`, `theorem`, `person`, `place`, `event` and `log-entry`, beside `term`.
-   These are the kinds the corpus already states most often: theorem 757, personal-log-entry 642, note 542 and 247, reference 489, question 372, place 283, person 263, event 197.
-   Gate: OWL plus SHACL generated for each schema, with no hand-written Turtle.
+   The order is by directory kind, as the ledger measured it. The first schema is `note` (10,869), then `concept`, `log`, `readme`, `research`, `essay`, `topic` and `teaching-article`.
+   Those eight, plus the Org glossary's conversion in Wave 2.5, cover 86% of unschematized live carriers.
+   The stated `type` values (`theorem`, `reference`, `question`, `person`, `place`, `event`) become subtypes of the directory kinds that carry them, not rival kinds.
+   Gate: OWL plus SHACL generated for each schema, with no hand-written Turtle. Live carriers under no schema fall from 18,860 to under 2,700.
 3. **Predicate registry semantics**, as in Decision 4.
    Gate: every registered predicate states its SKOS mapping and its inverse or `inverse: null`. `glossary-skos.mjs` reads them and has no hard-coded sets.
 4. **Identity policy in code**, as in Decision 2.
    Gate: `/ns/term/<stem>` returns 300 for each of the 404 shared identities.
+5. **Ledger assertions and the ratchet** (owner: knowledge-systems-architect), as in Decision 12.
+   - `census-corpus` gains `--section <scheme>` and `--assert <measure><op><n>`; a failed assertion exits non-zero.
+   - It also gains `--base <rev>`, which compares the touched sections' rollups between two commits and exits non-zero on any rise.
+   - The census must fit a gate. A full run costs about 90 s and 1.2 GB today, so the comparison reuses the base's rows by blob SHA and re-reads only the changed carriers.
+
+   `duty-worktree-check` calls it.
+   This is the next bite, because every later work item's acceptance is one of these commands.
+   Gate: the ratchet refuses a fixture commit that adds one broken link to a section, admits one that removes one, and runs in under 10 s on a one-section change.
+6. **The work-intent deriver** (owner: knowledge-systems-architect), as in Decision 13.
+   `derive-knowledge-work-intents` reads the census, the rows and the wanted queue, and writes one `metroplat.work.structured-intent`.
+   Its shape follows `derive-set-of-duplication-work-intents`:
+   - one `work-item:` per owning section and workstream, ranked by D4;
+   - `work` and `skill` set for the owning office's duty;
+   - `deterministicExecution` running the item's ledger assertion.
+
+   The intent is a dated record beside the census, admitted with `structured-work-intent-admit` once Wave 0 holds.
+   Gate: the first derived intent's items cover the 50 sections holding 90% of measured debt, and every item's acceptance command fails at the commit it was derived from.
+   That failure is what proves each item names real work.
+7. **The section scorecard**, as in Decision 14.
+   Each scorecard also carries its FORD/ANZSRC facet, the only enforced classification, so every scorecard can be rolled up by field.
+   The census record gains one scorecard per owning section (demand owed, debt carried, product shipped). The rendered site shows them as a table per release.
+   Gate: all 821 owning sections have a scorecard, and the release diff shows which moved.
+
+8. **The SEAVT lift** (Lot 6, moved forward by Decision 1).
+   The ledger's per-carrier rows are lifted into level-0 SEAVT rows, one row per frontmatter cell, append-only and keyed by blob SHA.
+   σ and Δ stay separate passes over them (D3).
+   Gate: every admitted cell of every live carrier is a row, and re-lifting at the same commit adds none.
 
 ### Wave 2: code (bulk repair; this is where agent scale goes)
 
-1. **Link repair.** A deterministic resolver per section:
-   - follow git rename history (`git log --follow --name-status`) to the file's current path;
-   - otherwise match the stem within the scheme, then across the nearest schemes (the same nearest-section rule as SKOS resolution);
-   - rewrite only when there is exactly one candidate.
-   Every other target becomes an authorship-demand item.
-   Gate: live broken relative links fall from 36,999 (ledger, `b42d6bf5c28`) to under 2,000, and every survivor is a queued demand item.
+1. **Link repair.** One deterministic scope resolver, shared by the census, the fold and the authoring tools.
+   The resolver applies the content librarian's rule: nearest by filesystem distance, neighbours or upward, never downward.
+   Measured rates over the listed occurrences are in parentheses. Rename history is consulted last, because it explains under 3%.
+   - **Damage** (38.7%). One carrier in the referrer's own, sibling or ancestor section bears the name: rewrite to it.
+   - **Unwritten** (22.9%). Nothing carries the name. The path link becomes a wikilink to the wanted page (a red link), so it is demand, not an error, and it joins `wanted.pages`.
+   - **Borders** (9.4%). Several in-scope carriers tie, so the link stays as written. A candidate row names every candidate, and the owning office settles them in one batch decision per section.
+     Polysemy is correct, so the office may instead answer with a disambiguating page.
+   - **Downward only** (29.1%). Only a descendant section carries the name.
+     The resolver never guesses downward. The office either writes the page at the referring scope or rewrites the link explicitly into the descendant.
+
+   The fold is byte-preserving and revision-guarded (Decision 6), and each pass emits D4's settling receipts.
+   The same resolver runs at write time in the house Markdown tools, so new links resolve before the ratchet sees them.
+   Gate:
+   - The rule fold (damage plus red links) removes about three-fifths of the 36,999 live broken links at `b42d6bf5c28`, measured on the fold itself.
+   - Every survivor is a border or downward candidate row in its section's queue.
+   - Zero live broken path links remain once the offices settle their candidates.
 2. **Key normalization**, the corpus-wide folds in Decision 6.
    Gate: `type`/`kind`, `author`/`authors` and `date`/`date-created` each have one spelling across all admitted carriers.
-3. **Citations into one library** (owner: `bibliography-engineering-services-section`).
-   - Extract the 4,970 inline `references:` entries and the 17 `.bib` files (1,212 entries) into `<citekey>.md` carriers.
-   - Reconcile them against CrossRef and OpenAlex with the existing lookups, then project to CSL-JSON.
-   - Restore the README's missing scripts or remove their claims.
-   Gate: citekey resolution rises from 58% to 95%, and the unfilled `@citekey` placeholder (67 uses) is gone.
+3. **Lawful depth-1 citation** (owner: `bibliography-engineering-services-section`), as in Decision 7.
+   - **Fold covered keys.** A key the citing carrier uses but another carrier's map, a bibliography carrier or a `.bib` entry knows is copied as CSL-JSON into the citing carrier's own `references:` map. That covers 1,553 live occurrences at `b42d6bf5c28`.
+   - **Queue unknown keys.** A key nothing knows becomes a wanted reference.
+     Agents propose CSL-JSON from CrossRef and OpenAlex as candidates under Decision 10.
+     A DOI or ISBN that resolves to the stated title is the admitting rule.
+   - **Depth 2 only when earned.** No bulk extraction into `<citekey>.md` carriers.
+     A source cited by three or more carriers across two or more sections is a depth-2 *candidate*, and it gets a carrier only with the body the topic model requires.
+   - **`.bib` files.** The 17 files (1,212 entries) are regenerated from the maps, never read as truth.
+   - **The README.** Restore its missing scripts or remove their claims.
+
+   Gate: lawful citekey occurrences rise from 24% (1,597 of 6,687) to 95%. Every survivor is a wanted reference. The unfilled `@citekey` placeholder (67 uses) is gone.
 4. **Glossary completion**, continuing this week's fold.
    - Fold or register the remaining keys: `index`, `author`, `field`, `subject`, `node-relations`, `mathematical-object`, `hanzi`/`pinyin`, `org-properties`, top-level `sources`, and `dg-permalink`.
    - Repair the 58 carriers with malformed YAML.
@@ -201,9 +400,23 @@ Sections are independent, so most workstreams fan out one work item per owning s
    - The missing exports are fixed (`static-site-publisher/workspace-graph`, GEODE's `check`).
    - The stale READMEs are corrected (L-Space, VaultMaze, bibliography, section).
    Gate: one JSON-LD term shape, one walker, no export pointing at a missing file.
-7. **Lost theory restored.** The PKS and markdown-vault theory links point at `research/2026/07/31/lenticule-import/`, and the topic-section model at `2026-08-30-science-topic-section-model.md`.
-   Restore both from git history if they ever existed; otherwise repoint or retire every citation of them.
+7. **Lost theory restored.**
+   - **The science topic-section model.** It was deleted on 2026-09-23 and still governs citation depth (Decision 7). It is recoverable at `47074d50270^:…/561-group-science-services-section/content/text/documents/articles/specifications/2026-08-30-science-topic-section-model.md`.
+     Restore it to the science section, minus the `data/ontology/` seat that D5 overrides.
+   - **The PKS and markdown-vault theory.** Its links point at `research/2026/07/31/lenticule-import/`. Restore it from Git history if it ever existed; otherwise repoint or retire every citation of it.
+
    Gate: no theory carrier cites a missing file.
+8. **Citation coverage** (owner: `bibliography-engineering-services-section` with each section's office).
+   A live carrier whose kind makes claims (`research`, `research-article`, `essay`, `teaching-article`, `theory`, `concept`) and that cites nothing becomes a `citation-wanted` demand item: Wikipedia's "citation needed", queued instead of inlined.
+   Agents draft candidate citations under Decision 10. A candidate is admitted only when its quoted span is found verbatim in captured, hashed evidence (Decision 17).
+   Gate: the share of claim-kind carriers citing anything is measured per release and rises every release. The first gate is 25%, up from 95 of 2,432 (3.9%) at `b42d6bf5c28`.
+9. **Evidence capture**, as in Decision 17.
+   Gate: every external URL in a live public carrier has a capture record. Authenticated carriers follow in demand order.
+10. **Archive stratum retired from targets.**
+    The 11,703 archive carriers (`lib`, `legacy`, `triage`, `recovered`, `_archive`, `lenticule-import`) are evidence for D3's strata, not subjects.
+    They keep their rows and are never edited (D2). Live links into them count as resolved evidence links, not as live subjects.
+    Live links that name archive paths that do not exist (the `triage/404.md` family alone has 556 occurrences) are repaired like any other.
+    Gate: no live target counts an archive carrier, and no live work item names one.
 
 ### Wave 3: networking (publication and retrieval)
 
@@ -221,43 +434,92 @@ Sections are independent, so most workstreams fan out one work item per owning s
 3. **Dumps.** Each release writes a versioned public dump (N-Quads, JSON-LD and a SQLite table) and a quarterly RO-Crate snapshot deposited to Zenodo for a DOI.
    This is the papers lane the program already names (ORCID, Zenodo).
    Gate: the dump hash is recorded in the DCAT, and the DOI resolves.
-4. **Agent retrieval** (owner: CAIRN). Its `search` and `fetch` MCP tools are upgraded, not replaced:
-   - BM25 (FTS5) plus dense embeddings (sqlite-vec, embedded by zero-cash local inference) over heading-sized chunks, each prefixed with its title, IRI and scheme;
-   - reciprocal-rank fusion;
-   - one or two hops of expansion over admitted relations.
-   Answers carry IRIs and blob shas so they can be cited.
-   Gate: recall@10 ≥ 0.85 on a 150-question evaluation set with gold carriers, re-run each release.
+4. **Agent retrieval** (owner: CAIRN), as in Decision 16. Its `search` and `fetch` MCP tools are upgraded, not replaced:
+   - BM25 (FTS5) plus dense embeddings (sqlite-vec, embedded by zero-cash local inference) over heading-sized chunks, each prefixed with its title, IRI, scheme and heading path;
+   - reciprocal-rank fusion, then a local cross-encoder rerank;
+   - Personalized PageRank over the admitted relation graph, seeded by the fused hits.
+
+   Answers carry IRIs and blob SHAs so they can be cited. Each answer also carries its claims' four-valued cells, so a contested claim reads as contested.
+   At 30,000 carriers (about 100,000 to 300,000 chunks), brute-force sqlite-vec answers in milliseconds, so no ANN service is needed.
+   Gate: recall@10 ≥ 0.90 on the rule-derived self-retrieval set and ≥ 0.85 on the 150-question hand-checked set, re-run each release.
+   A regression blocks the release.
 5. **Reconciliation outward.** Public concepts are matched to Wikidata QIDs by rule plus review and published as `skos:exactMatch` or `skos:closeMatch`.
    Gate: the match rate is reported; no match is asserted without review.
 
 ### Wave 4: systems (the autonomic loop)
 
-The knowledge graph becomes the house's first running MAPE-K node:
+The house already runs knowledge loops: the Web-signal MAPE-K loop, and the corpus-management service's `project-corpus-knowledge-mape`.
+This wave does not add a rival. The corpus ledger becomes that loop's Monitor and its Knowledge, and the loop keeps its closure rules:
+- contradictions remain explicit;
+- analysis selects no action;
+- execution emits advice and never writes customer territory.
 
-- **Monitor:** the ledger, per release.
-- **Analyze:** completeness, consistency (SHACL violations, `broader` cycles, ⊤ contested cells), connectivity (orphans, components, mean degree), link rot, citation coverage, freshness.
-- **Plan:** the authorship-demand queue, ranked by D4's metabolic rule.
-- **Execute:** queue items dispatched as MetroPlat work items to outside agents and zero-cash workers.
-- **Knowledge:** the corpus, which only grows (D2).
+In the knowledge plane, outputs are evidence and models, not actions. Actions run on the rail, under offices and receivers.
+
+- **Monitor:** the ledger, at every integration (the ratchet) and every release (the census).
+- **Analyze:** each SHACL shape reports its violation ratio per section, as Wikidata's constraint reports do. The other measures are:
+  - completeness;
+  - consistency (`broader` and `depends-on` cycles);
+  - contest, the count of claims whose cell is *both*, reported as data and never as a defect;
+  - connectivity (orphans, components, mean degree);
+  - capture freshness, citation coverage and retrieval recall;
+  - Diátaxis coverage, the share of terms, concepts and topics carrying all four surfaces.
+
+  Every settling pass emits D4's H⁰/H¹/χ receipts. Their index balance is the run-integrity check.
+  A refused merge carries its obstruction quantity rather than being averaged away.
+- **Plan:** the deriver writes the structured work intent from the scorecards and the demand queue, priced by D4.
+  The intent is advice: a structured intent the rail may admit.
+- **Execute:** the rail, not the loop, admits the intent and allocates each item to its section's office, where outside agents and zero-cash workers run it.
+  The item is discharged when its ledger assertion exits 0 and a receiver other than its writer accepts it.
+- **Knowledge:** the SEAVT rows and claim bundles, which only grow (D2).
+
+Self-improvement changes the loop's rules, never its authority. A changed resolver, ranking or schema is a versioned rule revision that must:
+- pass its authority and regression checks;
+- improve a held measure on evidence, not self-report;
+- roll back by address.
+
+A human intervention in the loop is recorded as a cause-coded incident, which is how the loop learns what it cannot yet do.
 
 Lot 8 (`settle-corpus`) runs this loop by hand first. Lot 10's vertical slice proves one carrier admitted, settled, served, dereferenced and receipted.
-Gate: the loop runs on a schedule, and each run writes a dated quality record and closes demand items it did not open by hand.
+Gate: the loop runs on a schedule. Each run writes a dated census, scorecards, settling receipts and a derived intent.
+Over four consecutive runs it closes more demand than it opens, with no work item written by hand and the incident count falling.
+
+## Schedule
+
+Agent scale sets the pace, not one author's hours. Each date is a gate measured by the ledger, not a promise of effort.
+
+| By | Gate |
+|---|---|
+| 2026-10-03 | Wave 0 holds. Wave 1.5 (assertions and ratchet) and 1.6 (deriver) land. The first derived intent covers the 50 most indebted sections. |
+| 2026-10-10 | Wave 1 complete: `note` and the next seven kind schemas generated, predicate semantics registered, identity 300s served, scorecards published, SEAVT rows lifted; the topic-section model restored. |
+| 2026-10-24 | Wave 2's rule repairs complete: link fold, key folds, Org conversion. Broken path links under 2,000, and every tie is filed for decision. |
+| 2026-11-07 | Citations in one library, external evidence captured for public carriers, one walker and one builder. Wave 3.1–3.3 serve and dump. |
+| 2026-11-21 | Retrieval at its recall gates. Claim bundles carry four-valued cells. |
+| 2026-11-30 | The MAPE-K loop runs on a schedule and closes more than it opens. |
 
 ## Targets
 
 | Measure | Now | Gate |
 |---|---|---|
 | Carriers with a ledger row | 100% (40,607 at `b42d6bf5c28`) | 100%, met |
-| Carriers admitted under a kind schema | 4,744 | ≥ 80% of the ledger |
-| Broken relative Markdown links (live) | 36,999 | < 2,000, all queued |
-| Citekey resolution | 58% of distinct keys; 47% of live occurrences known to the corpus | 95% |
-| Science carriers citing nothing | 84% | measured and queued; falling every release |
+| Integrations that raise a touched section's debt | unguarded | 0 (the ratchet refuses them) |
+| Work items written by hand for this program | all | 0 (derived from the ledger, closed by its assertions) |
+| Owning sections with a scorecard | 0 of 821 | 821 |
+| Live carriers under no schema | 18,860 | < 2,700 |
+| Live carriers admitted under a kind schema | 4,931 (terms and bibliographies) | ≥ 90% of live carriers |
+| Broken path links (live) | 36,999 | ~3/5 removed by the rule fold; 0 once offices settle border and downward candidates |
+| Live carriers with no link or wikilink | 14,783 (51%) | measured per kind; falling every release |
+| Lawful citekey occurrences (key in the citing carrier's own map) | 1,597 of 6,687 (24%) | ≥ 95%, every survivor a wanted reference |
+| Claim-kind carriers citing anything | 95 of 2,432 (3.9%) | ≥ 25%, then rising each release |
+| External URLs with a capture record | 0 | 100% of public, then demand order |
 | Shared identities served as first match | 404 | 0 (all 300) |
 | Term-to-RDF builders | 2 | 1 |
 | Corpus walkers | ~6 | 1 |
 | Public concepts dereferenceable | 0 | 100% |
-| Agent retrieval recall@10 | unmeasured | ≥ 0.85 |
+| Agent retrieval recall@10 (self-retrieval / hand-checked) | unmeasured | ≥ 0.90 / ≥ 0.85, regression blocks release |
 | Hand-declared ontology files | 23 | 0 |
+| Contested claims (cell *both*) served as contested | unmeasured (no converse ledger) | 100%; counted, never driven to zero |
+| Terms, concepts and topics with all four Diátaxis surfaces | unmeasured | measured per release; rising |
 
 ## Mapping onto the substrate lots
 
@@ -265,7 +527,7 @@ Gate: the loop runs on a schedule, and each run writes a dated quality record an
 |---|---|
 | Lot 4, vocabulary surface | Wave 3.1 |
 | Lot 5, backward seam | Decision 8, the demand queue |
-| Lot 6, EAVT→SEAVT lift | Wave 1.1 ledger rows, lifted unmodified |
+| Lot 6, EAVT→SEAVT lift | Wave 1.8, moved forward; reads Wave 1.1 rows |
 | Lot 7, citation triple | Decision 7, Wave 2.3 |
 | Lot 8, settle-corpus | Wave 4 |
 | Lot 9, σ/Δ extraction | unchanged, still deliberately late |
@@ -275,7 +537,10 @@ Gate: the loop runs on a schedule, and each run writes a dated quality record an
 
 1. Whether `consent-status` gains a value vocabulary. Lot 2's rule stands: grep first, coin nothing.
 2. Whether `/ns/` graduates from l-space to `561.group` before external dereference signal exists. This program needs `561.group/knowledge/` to resolve, so the two are decided together in Wave 3.1.
-3. Whether the deep `recovered/` (1,632), `legacy/` (3,916) and `obsmetrologia` (1,847) trees are carriers or archives.
-   Until decided, the ledger rows them in its `archive` stratum (any `lib`, `legacy`, `triage`, `recovered`, `_archive` or `lenticule-import` directory) and excludes them from targets.
-4. The three-theories rule for predicates versus 94 registered predicates.
-   The registry's new SKOS mapping makes every predicate's meaning explicit; whether to prune is decided from usage counts the ledger reports.
+3. ~~Whether the deep `recovered/`, `legacy/` and `obsmetrologia` trees are carriers or archives.~~
+   Decided in Wave 2.10: the archive stratum is evidence, rowed and never targeted.
+   A carrier leaves the archive only by being folded into a live carrier, which then cites it.
+4. ~~The three-theories rule for predicates versus 94 registered predicates.~~
+   Decided in Decision 4: a predicate stays registered when it recurs in three theories or is generated from one that does; the ledger's usage counts apply the rule.
+5. Whether D4's priced yield can be estimated before the first settling receipts exist.
+   Until it can, inbound demand stands in for yield and the item class for cost, and the deriver records that the price is provisional.
