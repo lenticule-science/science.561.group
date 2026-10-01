@@ -20,11 +20,15 @@ projects in `lib/formalization/infomaterial/` and `lib/formalization/relmath/`.
 They are mathematical research carriers, separate from the proof-assistant
 tooling that checks them.
 
-The Leader selected and authorized the dedicated private-repository formation
-course on 2026-07-18. The OSS membrane is seated here, published as the private
-`emsenn/obsmetrological-services-section` repository, and admitted by the
-ambient parent as one gitlink. That completed formation is historical evidence,
-not a continuing need for a classifier or assurance service.
+Earlier work attempted a dedicated-repository / gitlink formation for
+Obsmetrologia, but that is no longer the current source topology. The proof tree
+is tracked directly in the `bare-cedar-fog` monorepo under this Services
+Section; `lib/obsmetrologia` is an ordinary Git tree, not a mode-160000
+gitlink. Commit `3b122bf9a5638b1a13351dc2993b87ddb2dd7beb` records the
+ownership correction: proof changes use package-scoped staging against the
+monorepo's `main`, preserving this section's custody without inventing a
+standalone-repository boundary. Historical dedicated-repository/gitlink records
+remain provenance, not current operating topology.
 
 No absence of an application from Obsmetrologia makes the application invalid.
 Program-logic carriers that extend Obsmetrologia's own grammar live in the
@@ -82,7 +86,8 @@ the theorem-facts trace under `data/state/`.
 
 - **Over:** Lenticule Science (lab of the 561 Group).
 - **Intended role:** Sovereign State Enterprise.
-- **Current repository status:** dedicated private repository published under
-  `emsenn`; local membrane classified; ambient parent converted at
-  `5e2152b802f0af98a81d27d743179df356cfaf5d` to one OSS gitlink.
+- **Current repository status:** tracked directly in the
+  `emsenn/bare-cedar-fog` monorepo under this section; `lib/obsmetrologia`
+  is an ordinary Git tree, not a gitlink. Package-scoped proof commits preserve
+  the section boundary while landing on monorepo `main`.
 - **Holds:** the Obsmetrologia library and the proof line that extends it.
