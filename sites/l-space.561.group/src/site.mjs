@@ -233,11 +233,13 @@ export async function lSpaceApplication(environment = process.env) {
       root: authoringRoot,
       region: setting('GEODE_AUTHORING_REGION', environment) ?? '',
       excludes: lSpaceExcludes(environment),
+      observations: join(stateDir, 'cairn', 'geode-observations.jsonl'),
     });
     composed.push(geodeApplication({ workspace }));
     archive = workspace.archive;
   }
-  const openedArchive = () => (archive ??= openArchive({ root, excludes: lSpaceExcludes(environment) }));
+  // The archive's parsed documents persist in the state directory, so a restart reparses only what changed.
+  const openedArchive = () => (archive ??= openArchive({ root, excludes: lSpaceExcludes(environment), observations: join(stateDir, 'cairn', 'observations.jsonl') }));
   composed.push(...mcpApplications({ admission, environment, archive: openedArchive }));
   return mergeApps(...composed);
 }
