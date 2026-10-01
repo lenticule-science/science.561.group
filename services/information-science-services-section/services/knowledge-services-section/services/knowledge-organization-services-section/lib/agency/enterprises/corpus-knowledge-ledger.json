@@ -3,8 +3,17 @@
   "name": "Corpus Knowledge Ledger",
   "kind": "node",
   "entity": "561-group-llc",
-  "faces": "Every micro-enterprise whose carriers are in the corpus, and every reader and agent who finds, links or cites them: it measures each section's knowledge debt from the corpus census, holds the integration ratchet that refuses new debt, posts each indebted section's repair as an open signal on the board, and assays results by measuring again. It takes no signals; the sections that own the carriers do.",
-  "offices": ["knowledge-systems-architect"],
+  "faces": "Every micro-enterprise whose carriers are in the corpus, and every reader and agent who finds, links or cites them: it measures each section's knowledge debt from the corpus census, holds the integration ratchet that refuses new debt, opens each indebted section's repair as a request on the work board, and assays deliveries by measuring again. It takes no threads; the sections that own the carriers do.",
+  "offices": [
+    "knowledge-systems-architect"
+  ],
   "host": "bare-cedar-fog",
-  "x-provenance": { "recorded-by": "claude-opus-5-5", "recorded-on": "2026-09-30", "source": "561-group-services-section/content/text/documents/articles/notes/2026/09/30/2026-09-30-note-on-micro-enterprises-holding-their-own-work.md" }
+  "derives": [
+    "lib/emsenn/services/561-group/services/561-group-services-section/data/records/knowledge/corpus/requests.json"
+  ],
+  "x-provenance": {
+    "recorded-by": "claude-opus-5-5",
+    "recorded-on": "2026-09-30",
+    "source": "561-group-services-section/content/text/documents/articles/notes/2026/09/30/2026-09-30-note-on-micro-enterprises-holding-their-own-work.md"
+  }
 }
