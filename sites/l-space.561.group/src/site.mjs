@@ -222,6 +222,8 @@ export async function lSpaceApplication(environment = process.env) {
     { resources: [niResource([...(media === undefined ? [] : [media]), createPathContent((ni) => vaultMaze.media.get(ni))]), ...(setting('LSPACE_NOTEBOOK_BUCKETS', environment) === 'false' ? [] : [notebookBuckets()])] },
   ];
   const authoringRoot = setting('GEODE_AUTHORING_ROOT', environment);
+  // One archive serves the garden, GEODE's where it is configured; its full-text index persists either way.
+  const fullText = join(stateDir, 'cairn', 'full-text.sqlite');
   let archive;
   if (authoringRoot !== undefined) {
     // GEODE is loaded only where an authoring checkout is configured.
@@ -234,12 +236,13 @@ export async function lSpaceApplication(environment = process.env) {
       region: setting('GEODE_AUTHORING_REGION', environment) ?? '',
       excludes: lSpaceExcludes(environment),
       observations: join(stateDir, 'cairn', 'geode-observations.jsonl'),
+      fullText,
     });
     composed.push(geodeApplication({ workspace }));
     archive = workspace.archive;
   }
   // The archive's parsed documents persist in the state directory, so a restart reparses only what changed.
-  const openedArchive = () => (archive ??= openArchive({ root, excludes: lSpaceExcludes(environment), observations: join(stateDir, 'cairn', 'observations.jsonl'), fullText: join(stateDir, 'cairn', 'full-text.sqlite') }));
+  const openedArchive = () => (archive ??= openArchive({ root, excludes: lSpaceExcludes(environment), observations: join(stateDir, 'cairn', 'observations.jsonl'), fullText }));
   composed.push(...mcpApplications({ admission, environment, archive: openedArchive }));
   return mergeApps(...composed);
 }
