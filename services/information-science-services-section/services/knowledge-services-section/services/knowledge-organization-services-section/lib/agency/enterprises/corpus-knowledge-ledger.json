@@ -3,13 +3,13 @@
   "name": "Corpus Knowledge Ledger",
   "kind": "node",
   "entity": "561-group-llc",
-  "faces": "Every micro-enterprise whose carriers are in the corpus, and every reader and agent who finds, links or cites them: it measures each section's knowledge debt from the corpus census, holds the integration ratchet that refuses new debt, opens each indebted section's repair as a request on the work board, and assays deliveries by measuring again. It takes no threads; the sections that own the carriers do.",
+  "faces": "Every micro-enterprise whose carriers are in the corpus, and every reader and agent who finds, links or cites them: it measures each section's knowledge debt from the corpus census, holds the integration ratchet that refuses new debt, reports each indebted section on the work board as a nonconformity of the ratchet law, and verifies repairs by measuring again. It takes no threads; the sections that own the carriers do.",
   "offices": [
     "knowledge-systems-architect"
   ],
   "host": "bare-cedar-fog",
   "derives": [
-    "lib/emsenn/services/561-group/services/561-group-services-section/data/records/knowledge/corpus/requests.json"
+    "lib/emsenn/services/561-group/services/561-group-services-section/data/records/knowledge/corpus/reports.json"
   ],
   "x-provenance": {
     "recorded-by": "claude-opus-5-5",
