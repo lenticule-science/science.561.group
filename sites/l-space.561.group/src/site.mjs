@@ -239,7 +239,7 @@ export async function lSpaceApplication(environment = process.env) {
     archive = workspace.archive;
   }
   // The archive's parsed documents persist in the state directory, so a restart reparses only what changed.
-  const openedArchive = () => (archive ??= openArchive({ root, excludes: lSpaceExcludes(environment), observations: join(stateDir, 'cairn', 'observations.jsonl') }));
+  const openedArchive = () => (archive ??= openArchive({ root, excludes: lSpaceExcludes(environment), observations: join(stateDir, 'cairn', 'observations.jsonl'), fullText: join(stateDir, 'cairn', 'full-text.sqlite') }));
   composed.push(...mcpApplications({ admission, environment, archive: openedArchive }));
   return mergeApps(...composed);
 }
