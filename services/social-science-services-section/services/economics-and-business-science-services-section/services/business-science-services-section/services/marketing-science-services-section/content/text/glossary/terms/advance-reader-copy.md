@@ -30,4 +30,4 @@ An advance reader copy (ARC) is a copy of a book given free to chosen readers be
 
 **Pre-orders.** ARCs usually run alongside a pre-order. The book is listed with a future on-sale date, so early readers can buy, and reviewers can point to a listing. Retailers set deadlines for the final file (KDP: 72 hours before release; Google Play: 3 days; Apple Books: 10 business days) and punish a missed deadline by cancelling orders.
 
-**AI-generated books.** Reviewers weigh AI authorship, and NetGalley encourages publishers to disclose AI use in the book's description. An ARC of an AI-written book says so on the advance-reader page, before the reader decides whether to read and review it.
+**AI-generated books.** Distribution services and reviewers set their own terms for AI-written books. NetGalley encourages publishers to note AI use in the book's description, and some review blogs refuse such books outright. A publisher meets those terms where a service or reviewer sets them, and does not send a copy where the terms forbid it.
