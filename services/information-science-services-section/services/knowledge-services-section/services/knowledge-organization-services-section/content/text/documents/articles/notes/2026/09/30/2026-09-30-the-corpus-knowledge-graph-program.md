@@ -238,7 +238,7 @@ These are settled for this program, from house theory first and published standa
     The section, not the founder, owns its numbers, and its office takes its work from them.
     Micro-enterprises are relations, not production stages, so the scorecard also counts what other sections' carriers resolve into this one: research is common capital, valued by the relations it enabled.
     The knowledge offices keep their custody:
-    - **Chief knowledge officer.** Coordinates without taking the specialist custody below.
+    - **Chief science officer.** Coordinates without taking the specialist custody below.
     - **Knowledge-systems architect.** Holds the ledger, the ratchet and the deriver. It measures incumbents before claiming meet-or-beat.
     - **Content librarian.** Holds resolution scope, completeness stated as a count, and "the glossary does not define".
     - **Bibliography engineering.** Holds the citation depths.
