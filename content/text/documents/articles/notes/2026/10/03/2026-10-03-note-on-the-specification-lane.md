@@ -107,6 +107,40 @@ proved: the one-step reducts in leftmost-outermost order, sound and complete for
 
 Updated as slices land; newest first.
 
+- 2026-10-03, slice 3 (band regime, for Lane 6). `ObsmetrologiaComputing.Band`. Every theorem
+  rests on `Quot.sound` at most:
+  - membership as the least fixpoint of recognition: `IsMember`, computed with `members_iff`
+    by a pigeonhole stabilization;
+  - `recognition_monotone` and `withdrawal_retracts`;
+  - head standing as the knowledge-meet of recognition cells, with `head_collapses`;
+  - the council close as the knowledge-join of the engaged: `silence_never_blocks`,
+    `council_order_free`, `posits_climb`, `consensus_by_withdrawal`;
+  - `fission_keeps_everyone` and `fission_disjoint`, with kinship kept as camps-with;
+  - `confederate_glued_iff`, which glues or names the obstruction;
+  - `council_cost_bounded` (k(k−1)/2 per council) and `council_tree_reaches`.
+
+  Silence does not block. The corpus's merge is the knowledge-join, and ⊥ is its identity, so
+  organizing's current silence-blocks rule contradicts the theory it cites. The `band` suite
+  has 380 rows and is pending until organizing registers `src/agency/band-realization.mjs`.
+  The Lakota sources are cited as the theory basis; the module states only the organizational
+  mathematics, in general vocabulary.
+- 2026-10-03, honest-spine census (read-only). The widest false certificate is
+  `Closure.Regime.cohomologyVanishes`/`cohomologyVanishes_iff`, a table presented as "H¹ = 0 iff
+  strict/Scott" with no H¹ in it, at about 97 references across 37 files. Its family is
+  RegimeGate's flag tables and their `rfl` "derivations", `CurvatureRegime`, `NSCFiring`, and
+  copies in physical science. Also:
+  - `Hn := Unit` (9 users);
+  - `classify` and `four_regime_dichotomy` (no ordinal);
+  - `spine_is_strict` (a hand-set flag);
+  - the Fregean keystone and `quartet_recurrence`/`twistoring_eq_commutating` (defs presented
+    as keystones);
+  - `BigradedCohomology.trichotomy`;
+  - RegimeCycle's and Worlds' world↔regime facts.
+  Substantive and kept: `residue_dichotomy`, `dervish`, `omega_ahead`, `residue_germ_ahead`,
+  `iterSeq_residueBump`, `quantum_ahead_of_classical`, `kinetic_forced_by_residue` (with
+  `thermalResidue` defined as balanced), the orbital theorem, `measure_cons_le`, the Record
+  collapse, `kz_iff_strict`, and the root identification.
+
 - 2026-10-03, slice 2 (SEN λ). `Obsmetrologia.Language.Predicating.NormalOrder` (core, pure
   mathematics) computes `Tm.reducts`, `Tm.stepNO`, `Tm.normalize` and `Tm.lift`:
   - `mem_reducts_iff`: the reducts are `step`, sound and complete;
@@ -134,8 +168,10 @@ Updated as slices land; newest first.
 1. *Done.* Land the arena specification, its suite and its board request.
 2. *Done.* Land the SEN reducers, their suite and the request to the SEN implementation's
    owner (Lane 5).
-3. The honest spine: remove the false certificates the 2026-09-27 release note
-   lists (`SettlingCohomologyH1.Hn := Unit`, Bool tables restated as theorems).
+3. The honest spine, from the census above. A regime label is a definition, the declared
+   profile of a closure, and never a theorem about cohomology. Restate each table as a
+   definition and drop the claims it cannot carry. Then derive regimes from closure ordinals
+   where a carrier allows it. Remove `Hn := Unit` and its users. Demote the keystone defs.
 4. The four-worlds certificates as declarations with vectors; the handedness
    reading; the "agents ahead" claims, each with its evidence status.
 5. Obsmetrologia's stage-2 split: move the downstream namespaces, rename the pure
@@ -151,6 +187,15 @@ Updated as slices land; newest first.
    fission, confederate. Then the micro-enterprise decision rule (sanquan: the owner decides,
    members hold tenure) and qiangdan's bid comparator over wager targets.
 7. SignLang and the ordinal-valued cell (Lane 5/6 proposals): specify before either is built.
+   Lane 6 also asked for skills as designs: a judged play as a ludics interaction, where the
+   delivery is the Proponent's design and the conditions are the Opponent's tests. Accepted
+   means orthogonal. Discipline is the behaviour of designs orthogonal to customers' tests, and
+   mastery is being material in it. It needs loci per condition, `unmet` as divergence, and
+   vectors for mastered, admitted-not-material and not-admitted cases. Lane 5's asks:
+   - FOUR rows for `Reading.impK`, `FiberAlgebra.Reading.impT` and Bool `Record` orders;
+   - a regime for a projector's read, derived from its decode's closure data;
+   - pymetrologic (Python) as a realization on the rail through a Python runner;
+   - SignGraph's Lean Site with declaration names.
 8. The rail: lean-system `package.json` `files` should carry every suite's vectors
    (`lib/obsmetrologia-conformance/*.golden-vectors.jsonl`). This waits until the lockfile gate
    passes on origin, since a manifest change runs it.
