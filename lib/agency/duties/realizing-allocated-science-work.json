@@ -1,0 +1,17 @@
+{
+  "id": "realizing-allocated-science-work",
+  "name": "realizing allocated science work",
+  "authority": "emsenn/services/561-group/services/561-group-services-section#chief-science-officer",
+  "work": "realizing-allocated-science-work",
+  "claim": "senior-scientist",
+  "skills": [
+    "research"
+  ],
+  "delegation": true,
+  "receiver-condition": "The Chief Science Officer, or a science office it names, receives the outcome against the allocation; a kernel check or golden-vector judgment is evidence for that receiving, not the receiving. The Senior scientist never receives its own outcome, and an engineering office receives nothing of science's but consumes its specification.",
+  "x-provenance": {
+    "recorded-by": "claude-opus-5-5",
+    "recorded-on": "2026-10-02",
+    "source": "founder instruction 2026-10-02 and senior-scientist office"
+  }
+}
