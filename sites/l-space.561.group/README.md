@@ -32,8 +32,8 @@ L-Space. What it composes is owned elsewhere:
     directory's `principals.json`.
 
   Only the author may write through GEODE or `/mcp`: the verified Google principal named by
-  `LSPACE_AUTHOR_EMAIL`, or a local subject named in `LSPACE_AUTHOR_SUBJECTS` (by default the
-  founder's `password:emsenn` and `hive:emsenn0`).
+  `LSPACE_AUTHOR_EMAIL`, or a local subject named in `LSPACE_AUTHOR_SUBJECTS`; when neither
+  is set they are read from `author.json` in the state directory, and with neither nobody authors.
 
 ## Commands
 
@@ -80,13 +80,13 @@ grants live beside it in `oauth/` (or at `LSPACE_OAUTH_STATE`).
 | `SESSION_SECRET` | Signs sessions and seals confidential cookies; rotating it signs everyone out. |
 | `GOOGLE_CLIENT_ID`, `GOOGLE_CLIENT_SECRET` | The Google OAuth client. |
 | `LSPACE_ALLOWED_EMAILS` | Comma-separated addresses admitted through Google. Empty admits nobody. |
-| `LSPACE_AUTHOR_EMAIL` | The one address that may author; defaults to the founder's. |
+| `LSPACE_AUTHOR_EMAIL` | The one address that may author; defaults to `email` in the state directory's `author.json`. |
 | `DISCORD_CLIENT_ID`, `DISCORD_CLIENT_SECRET` | The Discord application, for user OAuth. |
 | `DISCORD_GUILD_ID`, `TURNTIDE_ISLANDER_ROLE_ID` | The exact guild and role snowflakes; names are never authorization keys. |
 | `DISCORD_BOT_TOKEN`, `DISCORD_PUBLIC_KEY` | Re-observe membership for command sessions; verify Discord interactions. |
 | `LSPACE_DATABASE_PATH` | The SQLite database for per-reader state. |
 | `LSPACE_STATE_DIR` | `principals.json`, Hive login nonces, and the authorization server's grants (default: beside the database). |
-| `LSPACE_AUTHOR_SUBJECTS` | Comma-separated local subjects who may author. |
+| `LSPACE_AUTHOR_SUBJECTS` | Comma-separated local subjects who may author; defaults to `subjects` in `author.json`. |
 | `LSPACE_OAUTH_STATE` | Where the authorization server keeps clients and grants, when not in the state directory. |
 | `GEODE_AUTHORING_ROOT`, `GEODE_AUTHORING_REGION` | The live checkout GEODE admits Markdown from; `/mcp` reads the same archive. |
 

@@ -11,6 +11,7 @@
 // itself.
 
 import { execFileSync } from 'node:child_process';
+import { readFileSync } from 'node:fs';
 import { timingSafeEqual } from 'node:crypto';
 import { join, relative, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -45,14 +46,21 @@ export const ATTRIBUTE_FIELDS = Object.freeze([
   'science-owner', 'type', 'kind', 'tags', 'keywords', 'cites', 'relates-to', 'related-terms', 'related-texts',
 ]);
 
-/** The one address that may author. Discord principals, including one belonging to the author, are readers. */
-export const AUTHOR_EMAIL = 'morgan.sennhauser@gmail.com';
-
-/** The author's own password and Hive sign-ins, which may author too. */
-export const AUTHOR_SUBJECTS = Object.freeze(['password:emsenn', 'hive:emsenn0']);
-
 /** Where the deployment keeps its state: principals.json, Hive login nonces, the authorization server's grants, reviews. */
 const stateDirectory = (environment) => setting('LSPACE_STATE_DIR', environment);
+
+/**
+ * Who may author is the deployment's own parameter, never a literal in the published source:
+ * `LSPACE_AUTHOR_EMAIL` and `LSPACE_AUTHOR_SUBJECTS` (comma-separated), else `author.json` in the state
+ * directory (`{ "email": string, "subjects": string[] }`). With neither, nobody authors.
+ */
+function authorIdentity(environment, stateDir) {
+  let held = {};
+  try { held = JSON.parse(readFileSync(join(stateDir, 'author.json'), 'utf8')); } catch { /* absent: no author is named */ }
+  const subjects = setting('LSPACE_AUTHOR_SUBJECTS', environment)?.split(',').map((subject) => subject.trim()).filter(Boolean)
+    ?? (Array.isArray(held.subjects) ? held.subjects.filter((subject) => typeof subject === 'string') : []);
+  return { email: setting('LSPACE_AUTHOR_EMAIL', environment) ?? (typeof held.email === 'string' ? held.email : undefined), subjects };
+}
 
 const setting = (name, environment = process.env) => {
   const value = environment[name];
@@ -200,14 +208,15 @@ export async function lSpaceApplication(environment = process.env) {
   const stateDir = stateDirectory(environment);
   const root = lSpaceRoot(environment);
   if (stateDir === undefined) throw new TypeError('L-Space needs LSPACE_STATE_DIR');
+  const author = authorIdentity(environment, stateDir);
   const admission = createWebAdmissionApplication({
     providers: admissionProviders(environment),
-    authorEmail: setting('LSPACE_AUTHOR_EMAIL', environment) ?? AUTHOR_EMAIL,
+    authorEmail: author.email,
     // GEODE's writes are the author's; its reads are any admitted reader's; /ns/ is public by doctrine.
     // The notebook buckets read the author's own Google account, so they are the author's alone.
     authorRoute: (path, method) => isBucketsRoute(path) || (method === 'POST' && (path === '/api/action' || path === '/api/refresh')),
     realm: publicBaseUrl(environment) === undefined ? 'l-space.561.group' : new URL(publicBaseUrl(environment)).host,
-    authors: setting('LSPACE_AUTHOR_SUBJECTS', environment)?.split(',').map((subject) => subject.trim()) ?? [...AUTHOR_SUBJECTS],
+    authors: author.subjects,
     publicRoute: lSpacePublicRoute,
   });
   const site = { baseIri: `${publicBaseUrl(environment) ?? 'https://l-space.561.group'}/`, language: 'en' };
