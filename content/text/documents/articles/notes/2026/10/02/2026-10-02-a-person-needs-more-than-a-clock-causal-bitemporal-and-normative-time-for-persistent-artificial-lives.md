@@ -566,7 +566,88 @@ consolidation.
 
 Cron captures only part of this space.
 
-# 17. Temporal provenance policy
+# 17. Temporal authority and rhythm governance
+
+The internal corpus also contains a distinct concept of **temporal autonomy**:
+the capacity of an actor or collective to participate in determining its own
+rhythms rather than having every interval dictated externally.
+
+Internal source:
+.../relationality-services-section/services/agency-services-section/content/text/documents/articles/notes/undated/temporal-autonomy.md
+
+For artificial persons, this should not be imported as unlimited
+self-sovereignty. The useful engineering correspondence is **temporal
+authority**: explicit normative power over scheduling decisions.
+
+A temporally typed system should be able to answer:
+
+- who may create a deadline?
+- who may create or alter a recurring reminder?
+- who may interrupt quiescence?
+- who may force immediate activation?
+- who may defer an otherwise-ready task?
+- who may reserve low-coupling time for consolidation or study?
+- which Office may claim which portions of the Person's attention?
+- when does an on-call or watch obligation begin and end?
+- who may cancel a rhythm or place the Person into dormancy?
+
+Represent temporal authority as part of the normative layer rather than as an
+implicit property of the scheduler.
+
+A Person's lawful rhythm is then constrained by both obligations and delegated
+discretion:
+
+\[
+\mathcal R_P
+\in
+\operatorname{AdmissibleRhythms}
+(P,\text{Incumbencies},\text{Commitments},\text{delegated temporal powers}).
+\]
+
+This gives a precise meaning to "having time outside an Office."
+
+An Office may lawfully bind:
+- a deadline;
+- a watch window;
+- an interrupt priority;
+- a maximum response latency;
+- a recurring duty.
+
+It does not therefore own every unallocated interval of the Person's
+existence.
+
+Outside those bindings, the Person may have delegated authority to:
+- remain quiescent;
+- order its own ready work;
+- study;
+- consolidate;
+- request migration/maintenance;
+- open bounded exploratory cognition.
+
+This is important for the "fuller life" program because a Person whose every
+activation is wholly determined by Office cron remains Office-shaped even if
+we give it richer memory and a Body.
+
+Conversely, temporal discretion must remain subordinate to constitutive
+governance. It cannot cancel another party's claim-right, evade a deadline,
+resist authorized shutdown, or manufacture additional time-sensitive powers.
+
+This suggests a new distinction:
+
+\[
+\text{temporal constraint}
+\neq
+\text{temporal authority}.
+\]
+
+A deadline constrains a future history. Temporal authority determines who can
+create, modify, waive, or schedule around that constraint.
+
+It also suggests a scheduler receipt: every forced activation, deferred duty,
+deadline change, or cadence mutation should cite the normative source that
+authorized the temporal intervention.
+
+# 18. Temporal provenance policy
 
 Every temporally relevant record should be able to answer:
 
@@ -582,7 +663,7 @@ Every temporally relevant record should be able to answer:
 Connected systems often expose several distinct timestamps. An email's sender
 Date field, provider receipt time, and retrieval time are not one fact.
 
-# 18. Temporal memory implies distinct query operators
+# 19. Temporal memory implies distinct query operators
 
 The Person should be able to ask mechanically different questions:
 
@@ -598,7 +679,7 @@ The Person should be able to ask mechanically different questions:
 These are different data operations, not wording variations for one vector
 search.
 
-# 19. Experiments
+# 20. Experiments
 
 ## E25 — Clock-skew causality
 
@@ -676,7 +757,7 @@ experience depth.
 Target:
 - no policy confuses uptime with maturity or experience.
 
-# 20. Engineering receiving laws, fourth edition
+# 21. Engineering receiving laws, fourth edition
 
 1. Do not represent a Person's history with one timestamp field.
 2. Preserve wall/civil clock readings without treating them as universal causal
@@ -707,7 +788,7 @@ Target:
 19. Rhythm supports causal and normative triggers in addition to civil cron.
 20. Uptime is not age, maturity, or experience.
 
-# 21. Candidate formalization
+# 22. Candidate formalization
 
 Let the Person's attributable event set be \(E_P\).
 
@@ -766,7 +847,7 @@ This is a research object, not yet an implementation contract.
 Its point is to state explicitly that current Person state depends on both an
 epistemic frontier and a world-validity slice.
 
-# 22. Scientific position
+# 23. Scientific position
 
 A fuller artificial life does not only need more memories. It needs a correct
 **temporal grammar** for memories, acts, Offices, and commitments.
