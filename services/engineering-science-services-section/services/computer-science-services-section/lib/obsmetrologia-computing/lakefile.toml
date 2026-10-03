@@ -1,6 +1,6 @@
 name = "ObsmetrologiaComputing"
 defaultTargets = ["ObsmetrologiaComputing"]
-description = "Computing over Obsmetrologia: program formats, Hoare programs, causality packets, boundary link graphs, and game-theoretic verification tournaments."
+description = "Computing over Obsmetrologia: program formats, Hoare programs, causality packets, boundary link graphs, game-theoretic verification tournaments, and provider attestation."
 license = "Apache-2.0"
 
 [leanOptions]
