@@ -5,7 +5,7 @@ import { basename, dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
 import { EMPTY_WITNESS_ROOT, identifyBytesSemanticContent, identifyJsonSemanticContent }
-  from "@red-cup-engineering/computer-code-engineering-services-section/semiotic-expression-notation/runtime";
+  from "@red-cup-engineering/computer-content-engineering-services-section/semantic-content-identity";
 import { ACTIVITYSTREAMS_CONTEXT } from "@red-cup-engineering/activitypub-services-section/activitystreams";
 
 const ACTOR = "urn:ame:oml";
