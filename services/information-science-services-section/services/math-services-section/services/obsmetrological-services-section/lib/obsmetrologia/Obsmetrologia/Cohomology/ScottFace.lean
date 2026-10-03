@@ -118,8 +118,7 @@ theorem h1_vanishes :
     ∧ (classify regimeData = ClosureRegime.strict ∨ classify regimeData = ClosureRegime.scott)
     ∧ (∀ D : Cech1, Cocycle D →
         (∃ g : Cochain, Coboundary D g)
-          ∧ (∀ g g' : Cochain, Coboundary D g → Coboundary D g' → g = g'))
-    ∧ (∀ (n : Nat), 2 ≤ n → ∀ x y : Hn n, x = y) :=
+          ∧ (∀ g g' : Cochain, Coboundary D g → Coboundary D g' → g = g')) :=
   settling_cohomology_h1_vanishes (classify regimeData) cohomology_vanishes
 
 /-- Any differential bypass whose ordinal route is the Scott face inherits
@@ -131,8 +130,7 @@ theorem differential_bypass_h1_vanishes {M : Valuation.ModalFrame} {E : Valuatio
     ∧ (classify regimeData = ClosureRegime.strict ∨ classify regimeData = ClosureRegime.scott)
     ∧ (∀ D : Cech1, Cocycle D →
         (∃ g : Cochain, Coboundary D g)
-          ∧ (∀ g g' : Cochain, Coboundary D g → Coboundary D g' → g = g'))
-    ∧ (∀ (n : Nat), 2 ≤ n → ∀ x y : Hn n, x = y) :=
+          ∧ (∀ g g' : Cochain, Coboundary D g → Coboundary D g' → g = g')) :=
   Cohomology.differential_bypass_h1_vanishes B cohomology_vanishes
 
 end ScottFace

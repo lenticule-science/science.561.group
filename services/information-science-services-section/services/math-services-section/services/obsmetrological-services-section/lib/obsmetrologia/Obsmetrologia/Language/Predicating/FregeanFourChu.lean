@@ -78,14 +78,14 @@ canonical Chu matrix. -/
   Valuation.phase_posit_knowledgeLeast claim
     (independentEvidenceReading evidence)
 
-/-- **Fregean predication forces FOUR, and FOUR presents the predication Chu
-space.**  The first two fields are the lossless equivalence between independent
-positive/negative evidence and `Reading`; the third says that the canonical Chu
-matrix reads that same reading at the same claim.
+/-- **Independent evidence is FOUR's two slots, and the predication Chu space reads it.**
+The first two fields are the round trip between independent positive/negative evidence and
+`Reading`, a finite check over `Bool × Bool` and the four readings. The third says the
+canonical Chu matrix reads that same reading at the same claim.
 
-This theorem is the compact formal statement of the lab result.  The standard
-ingredients have their own histories; their forced composition here is the
-Obsmetrologia result. -/
+Every field is a finite correspondence, true by the definition of `Reading` as two slots.
+That predication *forces* four is the orbital theorem (`Orbital.orbital_exhaustive`): from four
+entities on, every naturally defined reindexing of an oriented pair is one of four generators. -/
 structure FregeanPredicationForcesFourAndChu : Prop where
   evidence_roundtrip : ∀ evidence : Bool × Bool,
     ((independentEvidenceReading evidence).pos,
@@ -97,7 +97,7 @@ structure FregeanPredicationForcesFourAndChu : Prop where
     predicationChu.r claim (valuationOfIndependentEvidence claim evidence)
       = independentEvidenceReading evidence
 
-/-- The canonical witness of the predication--FOUR--Chu law. -/
+/-- The witness of the finite predication–FOUR–Chu correspondence. -/
 theorem fregean_predication_forces_four_and_chu :
     FregeanPredicationForcesFourAndChu where
   evidence_roundtrip := independentEvidenceReading_slots

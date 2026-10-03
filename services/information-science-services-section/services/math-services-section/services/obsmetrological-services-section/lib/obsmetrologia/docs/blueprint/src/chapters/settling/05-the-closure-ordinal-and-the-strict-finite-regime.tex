@@ -56,10 +56,10 @@ A settling problem is projected to three decidable coordinates: Scott
 continuity, finite base, and countable cofinality, with the finite-base
 constraints carried as fields.
 \end{proposition}
-\begin{theorem}[The four-regime dichotomy]\label{thm:four-regime-dichotomy}\lean{Obsmetrologia.four_regime_dichotomy}\leanok\uses{thm:closure-regime-data}
+\begin{proposition}[The flag classifier is exhaustive and exclusive]\label{thm:four-regime-dichotomy}\lean{Obsmetrologia.four_regime_dichotomy}\leanok\uses{thm:closure-regime-data}
 Every regime datum selects exactly the strict, Scott, transfinite-bounded, or
 aperiodic case, with the intended Boolean characterization for each case.
-\end{theorem}
+\end{proposition}
 \begin{definition}[Each regime is the regime of one stage]\label{thm:regime-stage}\lean{Obsmetrologia.Stage, Obsmetrologia.Stage.regime, Obsmetrologia.ClosureRegime.stage, Obsmetrologia.regimeStageBij}\leanok\uses{thm:closure-regime-carrier}
 The four stages of the language spine pair with the four regimes, in order:
 articulating is aperiodic, predicating transfinite-bounded, positing
@@ -68,18 +68,18 @@ descends. A regime is the character of one stage's closure, while a corner of
 the four-valued reading is a value inside a stage; the two fours are different
 objects and are not identified.
 \end{definition}
-\begin{theorem}[The spine classifies as strict]\label{thm:spine-is-strict-regime}\lean{Obsmetrologia.spine_is_strict}\leanok\uses{thm:strict-finite, thm:four-regime-dichotomy}
+\begin{proposition}[The spine's declared data classify as strict]\label{thm:spine-is-strict-regime}\lean{Obsmetrologia.spine_is_strict}\leanok\uses{thm:strict-finite, thm:four-regime-dichotomy}
 The finite charge-lattice spine has finite-base regime data, so its regime is
 strict.  The strict-finite theorem is the operational witness.
-\end{theorem}
-\begin{theorem}[The spine settles in the settling stage's regime]\label{thm:spine-settles-in-settling-regime}\lean{Obsmetrologia.spine_settles_in_settling_regime}\leanok\uses{thm:spine-is-strict-regime, thm:regime-stage}
+\end{proposition}
+\begin{proposition}[The spine's declared regime is the settling stage's]\label{thm:spine-settles-in-settling-regime}\lean{Obsmetrologia.spine_settles_in_settling_regime}\leanok\uses{thm:spine-is-strict-regime, thm:regime-stage}
 The spine's regime is the regime the settling stage pairs with.
-\end{theorem}
-\begin{theorem}[Regime cohomology vanishes exactly on strict/Scott]\label{thm:regime-cohomology-vanishes-iff}\lean{Obsmetrologia.cohomologyVanishes_iff}\leanok\uses{thm:four-regime-dichotomy, thm:spine-is-strict-regime}
+\end{proposition}
+\begin{proposition}[The declared cohomology profile: true on strict/Scott (a table)]\label{thm:regime-cohomology-vanishes-iff}\lean{Obsmetrologia.cohomologyVanishes_iff}\leanok\uses{thm:four-regime-dichotomy, thm:spine-is-strict-regime}
 The regime table marks the flat side: cohomology vanishes exactly for strict
 and Scott regimes, and can carry content on the transfinite-bounded and
 aperiodic side.
-\end{theorem}
+\end{proposition}
 \begin{theorem}[The settled value is genuinely fixed]\label{thm:settled-fixed}\lean{Obsmetrologia.Reading.settled_fixed}\leanok\uses{thm:settles-by-three}
 $f(f^3(x)) = f^3(x)$: after three steps the orbit is at an honest fixed point,
 not merely slowing.

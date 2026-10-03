@@ -167,9 +167,9 @@ theorem gate_aperiodic :
         Record.iterSeq Record.topBump (k + 1) s ≠ Record.iterSeq Record.topBump k s :=
   ⟨rfl, aperiodic_weakly_quiescent, aperiodic_never_settles_as_data⟩
 
-/-- **The gate, derived, at every regime.** `gate r = cohomologyVanishes r` for all four
-regimes of the tower — composed from the four justified cases above, not from comparing two
-literal tables. -/
+/-- **The gate agrees with the declared profile at every regime.** Each case's first component
+compares two finite tables (`gate` and `cohomologyVanishes`) by `rfl`. The case theorems above
+carry the derived content beside that comparison: the carrier facts of the regime tower. -/
 theorem gate_eq_cohomologyVanishes (r : ClosureRegime) : gate r = cohomologyVanishes r := by
   cases r
   · exact gate_strict.1

@@ -210,29 +210,13 @@ gluing (`glue_coboundary`), uniqueness by `Sheaf` separation (`glue_unique`). Ho
 theorem h1_vanishes (D : Cech1) : H1Vanishes D :=
   fun hcoc => ⟨⟨glue D, glue_coboundary D hcoc⟩, glue_unique D⟩
 
-/-! ## Vanishing above degree 1
-
-Settling cohomology vanishes above degree 1: all content sits in `H⁰` and `H¹`. We model
-`H^n` for `n ≥ 2` by the *empty* cochain bundle — there are no nondegenerate `n`-cochains,
-so `H^n = 0` trivially. We record this as: the only `n`-cochain for `n ≥ 2` is the zero
-cochain (the bundle above degree 1 is the singleton zero). -/
-
-/-- **The higher cochain bundle is degenerate.** For `n ≥ 2`, `Hn n` is the *zero group*:
-its only element is `AssocSheaf.zeroCochain`. We represent `H^n` (`n ≥ 2`) by the unit
-type's worth of data — exactly the zero section — so `H^n = 0`. -/
-def Hn (_n : Nat) : Type := Unit
-
-/-- **`H^n = 0` for `n ≥ 2` (vanishing above degree 1).** The higher cohomology bundle is
-the zero group: it has a unique element (all content is in `H⁰`/`H¹`). -/
-theorem hn_vanishes_above_one (n : Nat) (_h : 2 ≤ n) (x y : Hn n) : x = y := by
-  rfl
-
 /-! ## Settling cohomology `H¹` vanishes in the strict/Scott regime
 
 In the strict (`κ < ω`) and Scott-continuous (`κ = ω`) regimes, `H¹(cover, F_U) = 0`:
 every agreeing family of local `F_U`-sections glues to a unique global section. We bundle:
-the regime gate (`cohomologyVanishes r = true ⟺ r ∈ {strict, scott}`), the gluing/existence
-+ uniqueness (`h1_vanishes`), and vanishing above degree 1.
+the regime gate (`cohomologyVanishes r = true ⟺ r ∈ {strict, scott}`, a declared table of the
+regimes, not a computation of `H¹`) and the gluing/existence + uniqueness (`h1_vanishes`). No
+cochain complex above degree 1 is constructed here, so nothing is claimed about `Hⁿ` for `n ≥ 2`.
 
 Note the gluing/uniqueness conjunct reuses `h1_vanishes`, which is proved **unconditionally**
 above — for *every* Čech datum, no regime hypothesis required. The hypothesis `hr` below
@@ -246,9 +230,7 @@ with `H¹` vanishing (`cohomologyVanishes r = true`). Then:
 * (gluing / `H¹ = 0`) for *every* Čech datum `D` (any cover, any local `F_U`-sections),
   every agreeing family (1-cocycle) glues to a **global** `F_U`-section — *existence* by
   pointwise gluing on the designated cells — and that global section is **unique** —
-  *separation*, reusing `Sheaf`'s `H¹ = 0`. So `H¹(cover, F_U) = 0`;
-* (vanishing above degree 1) `H^n = 0` for all `n ≥ 2` — the higher cohomology bundle is
-  the zero group, all content in `H⁰`/`H¹`.
+  *separation*, reusing `Sheaf`'s `H¹ = 0`. So `H¹(cover, F_U) = 0`.
 
 The gluing conjunct holds **unconditionally** in this model — it is exactly `h1_vanishes`,
 proved for every Čech datum with no dependence on `r` or `hr`. `hr` is used only to discharge
@@ -262,13 +244,10 @@ theorem settling_cohomology_h1_vanishes (r : ClosureRegime)
     -- (H¹ = 0) every Čech datum's agreeing family glues to a unique global section
     ∧ (∀ D : Cech1, Cocycle D →
         (∃ g : Cochain, Coboundary D g)
-          ∧ (∀ g g' : Cochain, Coboundary D g → Coboundary D g' → g = g'))
-    -- (vanishing above degree 1) H^n = 0 for n ≥ 2
-    ∧ (∀ (n : Nat), 2 ≤ n → ∀ x y : Hn n, x = y) :=
+          ∧ (∀ g g' : Cochain, Coboundary D g → Coboundary D g' → g = g')) :=
   ⟨Obsmetrologia.cohomologyVanishes_iff r,
     (Obsmetrologia.cohomologyVanishes_iff r).mp hr,
-    fun D hcoc => h1_vanishes D hcoc,
-    hn_vanishes_above_one⟩
+    fun D hcoc => h1_vanishes D hcoc⟩
 
 /-! ## The classifying invariant is zero in the strict/Scott regime
 

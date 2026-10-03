@@ -127,8 +127,7 @@ theorem differential_bypass_h1_vanishes {M : ModalFrame} {E : Valuation}
     ∧ (classify d = ClosureRegime.strict ∨ classify d = ClosureRegime.scott)
     ∧ (∀ D : Cech1, Cocycle D →
         (∃ g : Cochain, Coboundary D g)
-          ∧ (∀ g g' : Cochain, Coboundary D g → Coboundary D g' → g = g'))
-    ∧ (∀ (n : Nat), 2 ≤ n → ∀ x y : Hn n, x = y) :=
+          ∧ (∀ g g' : Cochain, Coboundary D g → Coboundary D g' → g = g')) :=
   settling_cohomology_h1_vanishes (classify d) h
 
 /-- The bypass package gives agreement, κ-regime routing, and the obstruction table. -/

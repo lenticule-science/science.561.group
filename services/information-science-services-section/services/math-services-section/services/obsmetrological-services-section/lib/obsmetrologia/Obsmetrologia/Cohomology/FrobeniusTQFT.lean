@@ -32,8 +32,8 @@ We work the **cleanest 2D-TQFT Frobenius algebra**: `A = ℤ[x]/(x²)`, modeled 
 `Z(𝓑) = H•(F_{v_𝓑})`: the **two cohomological degrees** `H⁰ ⊕ H¹` are the two `Int`
 coordinates — `H⁰` carried by the `1`-axis (the unit/uniform class, `Cohomology.H0` the
 count of designated cells), `H¹` carried by the `x`-axis (the degree-`1` gluing class,
-`Cohomology.identityCochain`/`cl-inv`). `x² = 0` is exactly *vanishing above degree 1*
-(`Cohomology.hn_vanishes_above_one`). We tie `A` to the settling cohomology nominally via
+`Cohomology.identityCochain`/`cl-inv`). `x² = 0` truncates the carrier at degree 1, matching the
+settling complex, which is constructed only in degrees 0 and 1. We tie `A` to the settling cohomology nominally via
 `degreeOfClass` (which `Int`-coordinate a cohomology degree lands in) and by the worked
 finite model; the `K̂₄` grading reuses `Positing.Gauge.K4` (`Positing.BigradedTower`).
 
@@ -334,7 +334,7 @@ def Zcomm : Commutative where
 `Z2 = H⁰ ⊕ H¹`: the first `Int` is the `H⁰`-axis (the unit/uniform class — the
 `Cohomology.H0` count of designated cells lands here, on `1`), the second is the `H¹`-axis
 (the gluing class `cl-inv`/`Cohomology.identityCochain` lands here, on `x`). `x² = 0` is
-*vanishing above degree 1* (`Cohomology.hn_vanishes_above_one`). -/
+the carrier's truncation at degree 1. -/
 
 /-- The cohomological degree → carrier-axis embedding: degree `0` (`H⁰`, the count class) is
 the `1`-axis, degree `1` (`H¹`, the gluing class) is the `x`-axis. A class of degree `n`
@@ -353,7 +353,7 @@ theorem h0_on_unit_axis (v : Obsmetrologia.Valuation) (cells : List Obsmetrologi
   rfl
 
 /-- *Vanishing above degree 1* in the carrier: every class of degree `≥ 2` is the zero of
-`Z`, matching `Cohomology.hn_vanishes_above_one` (`x² = 0`, all content in `H⁰ ⊕ H¹`). -/
+`Z` (`x² = 0`, all content in `H⁰ ⊕ H¹`): a fact of the carrier, not of a higher complex. -/
 theorem degree_vanishes_above_one (n : Nat) (_h : 2 ≤ n) (c : Int) :
     degreeOfClass n c = Z2zero := by
   obtain ⟨k, rfl⟩ : ∃ k, n = k + 2 := ⟨n - 2, by omega⟩
@@ -429,8 +429,7 @@ TQFT algebra `ℤ[x]/(x²)`: unit `η(1) = 1`, multiplication `μ` the pair-of-p
 counit `ε` the **trace** (top-class coefficient = dual-disk integral), comultiplication `Δ`
 the Verdier-adjoint split — with associativity, unit, counit, and the **Frobenius
 compatibility** law ALL proven (`Zcomm`/`Zfrob`). It is tied to the settling cohomology
-(`H⁰` on the unit axis, `x² = 0` the vanishing above degree 1 of
-`Cohomology.hn_vanishes_above_one`) and `K̂₄`-graded by the proven Klein-four gauge
+(`H⁰` on the unit axis, `x² = 0` the carrier's truncation at degree 1) and `K̂₄`-graded by the proven Klein-four gauge
 (`Positing.Gauge.K4`, the equivariant decomposition). Corpus:
 `settling-frobenius-structure.md`. -/
 def settling_frobenius_algebra : SettlingFrobenius where

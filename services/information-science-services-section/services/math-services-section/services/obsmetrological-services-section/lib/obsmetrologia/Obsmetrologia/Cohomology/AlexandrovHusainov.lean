@@ -473,8 +473,8 @@ theorem cechAcyclic : CechAcyclic := fun D => Cohomology.h1_vanishes D
 
 /-- **Čech cohomology vanishes on the bounded sub-sites.** For a regime `r` whose cohomology
 vanishes (`cohomologyVanishes r = true`, i.e. `r` is `strict` or `scott`): the Čech `H¹` of
-every cover vanishes (`CechAcyclic`), Čech cohomology is trivial above degree one
-(`Cohomology.hn_vanishes_above_one`), and `r` is `strict`/`scott`.
+every cover vanishes (`CechAcyclic`), and `r` is `strict`/`scott`. No Čech complex above degree
+one is constructed, so nothing is claimed there.
 
 This claims only the **Čech** computation; it asserts nothing about derived-functor
 cohomology. (The Čech vanishing is unconditional here — the regime governs the *general*
@@ -482,9 +482,8 @@ dichotomy, where `H¹` can be nonzero in the non-Scott regimes.) -/
 theorem husainov_cech_acyclic_on_bounded_sites (r : ClosureRegime)
     (hr : Obsmetrologia.cohomologyVanishes r = true) :
     CechAcyclic
-    ∧ (∀ n : Nat, 2 ≤ n → ∀ x y : Cohomology.Hn n, x = y)
     ∧ (r = ClosureRegime.strict ∨ r = ClosureRegime.scott) :=
-  ⟨cechAcyclic, Cohomology.hn_vanishes_above_one, (Obsmetrologia.cohomologyVanishes_iff r).mp hr⟩
+  ⟨cechAcyclic, (Obsmetrologia.cohomologyVanishes_iff r).mp hr⟩
 
 end Alexandrov
 end Obsmetrologia

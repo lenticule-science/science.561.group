@@ -5,18 +5,18 @@ This section records claim nodes and dependency edges.
 \begin{theorem}[The modal four]\label{thm:modal}\lean{Obsmetrologia.Modal}\leanok\uses{thm:four-object, thm:quartet-corner}
 \texttt{Modal} is the four-constructor inductive $\{\texttt{neither}, \texttt{dia}, \texttt{box}, \texttt{both}\}$ --- the $\{$neither, $\Diamond$, $\Box$, both$\}$ reading of the recurring FOUR, naming the four ways of acting on the free carrier with two commuting closures. Its bijection \texttt{Modal.cornerBij} with \texttt{Articulating.Corner} certifies that the modal four-corner is the \emph{same} object as the articulation phase, the bilattice charge, and the nuclear-quartet corner, re-met under modal names.
 \end{theorem}
-\begin{theorem}[The master conflation --- the keystone]\label{thm:quartet-recurrence}\lean{Obsmetrologia.quartet_recurrence}\leanok\uses{thm:modal, thm:articulation-phase-is-charge, thm:four-fold}
+\begin{definition}[The master conflation, as data]\label{thm:quartet-recurrence}\lean{Obsmetrologia.quartet_recurrence}\leanok\uses{thm:modal, thm:articulation-phase-is-charge, thm:four-fold}
 \texttt{QuartetRecurrence} bundles the round-trip witnesses, and \texttt{quartet\_recurrence} proves it: the articulation-cell phase, \texttt{Articulating.FourCorner} ($\texttt{Bool} \times \texttt{Bool}$), \texttt{Charge} ($=\texttt{Articulating.Corner}$), the nuclear-quartet corner index, and \texttt{Modal} are \emph{all one object}. Every reading's round-trip is the identity, the articulation phase is the charge, and the cell is exhaustively four-cornered with no fifth reading. This is the one four-corner cell met at successive depths, made a single theorem depending on no axioms beyond \texttt{propext} and \texttt{Quot.sound}.
-\end{theorem}
+\end{definition}
 \begin{proposition}[The abstract commuting pair]\label{thm:commuting-pair}\lean{Obsmetrologia.CommutingPair}\leanok\uses{thm:quartet-recurrence}
 A \texttt{CommutingPair} on a carrier $C$ is two endomaps $f, g$ with $f \circ g = g \circ f$ --- the bare data shared by twistoring (two involutions) and commutating (two nuclei). The involution and idempotency laws of the specific depth are deliberately absent: they are not part of the shared coherence cell. Its \texttt{CommutingPair.cornerOp} reads the four corners as identity, $f$ alone, $g$ alone, and $f \circ g$.
 \end{proposition}
 \begin{theorem}[The recurring coherence 2-cell]\label{thm:commuting-square}\lean{Obsmetrologia.CommutingPair.square}\leanok\uses{thm:commuting-pair}
 \texttt{CommutingPair.square} proves the generic coherence: the \texttt{stable} corner operator $f \circ g$ agrees with $g \circ f$ --- both paths from the free corner to the doubly-acted corner coincide. This single lemma is the commuting-square 2-cell that recurs at every depth of the spine.
 \end{theorem}
-\begin{theorem}[Twistoring equals commutating]\label{thm:twistoring-eq-commutating}\lean{Obsmetrologia.twistoring_eq_commutating}\leanok\uses{thm:commuting-square, thm:klein-four-symmetry, thm:nuclear-quartet}
+\begin{definition}[Twistoring and commutating, paired]\label{thm:twistoring-eq-commutating}\lean{Obsmetrologia.twistoring_eq_commutating}\leanok\uses{thm:commuting-square, thm:klein-four-symmetry, thm:nuclear-quartet}
 \texttt{twistoringPair} instantiates the cell on \texttt{Charge} with $f = {\sim}$, $g = {-}$, commuting by the $K_4$ law; \texttt{commutatingPair} instantiates it on a Heyting algebra with $f = j_1$, $g = j_2$, commuting by the nuclear square. \texttt{twistoring\_eq\_commutating} proves both satisfy the \emph{same} generic \texttt{CommutingPair.square} at every point and index the same exhaustive four corners. The $\sigma\circ\Delta = \Delta\circ\sigma$ commuting square at aperiodic settling and the ${\sim}\circ{-} = {-}\circ{\sim}$ twist at the articulating birth-corner are one coherence 2-cell. The depth-specific laws differ --- involutions at articulating, idempotent nuclei at settling --- but neither enters the shared cell, which is only the commuting square.
-\end{theorem}
+\end{definition}
 
 \noindent\emph{Conflation frontier.} Two places where the formalization currently states a structured equivalence as a shape match or a single worked instance --- the data is named for the object it builds (\texttt{fcaClosureOp}, \texttt{frobeniusTqftCorrespondence}), and the \emph{specific} relation each only gestures at is the open node after it.
 

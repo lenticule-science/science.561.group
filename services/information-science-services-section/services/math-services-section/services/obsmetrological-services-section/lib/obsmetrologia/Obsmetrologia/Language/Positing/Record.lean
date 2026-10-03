@@ -101,6 +101,41 @@ def KLE (a b : Record) : Prop := a.pos ≤ b.pos ∧ a.neg ≤ b.neg
 /-- The truth order: positive tally up, negative tally down. -/
 def TLE (a b : Record) : Prop := a.pos ≤ b.pos ∧ b.neg ≤ a.neg
 
+/-- The knowledge order, decided. -/
+def leK (a b : Record) : Bool := decide (a.pos ≤ b.pos) && decide (a.neg ≤ b.neg)
+/-- The truth order, decided. -/
+def leT (a b : Record) : Bool := decide (a.pos ≤ b.pos) && decide (b.neg ≤ a.neg)
+
+/-- `leK` decides the knowledge order. -/
+theorem leK_iff (a b : Record) : leK a b = true ↔ KLE a b := by
+  unfold leK KLE
+  constructor
+  · intro h
+    cases h1 : decide (a.pos ≤ b.pos) with
+    | false => rw [h1] at h; exact nomatch h
+    | true =>
+      cases h2 : decide (a.neg ≤ b.neg) with
+      | false => rw [h1, h2] at h; exact nomatch h
+      | true => exact ⟨of_decide_eq_true h1, of_decide_eq_true h2⟩
+  · intro ⟨h1, h2⟩
+    rw [decide_eq_true h1, decide_eq_true h2]
+    rfl
+
+/-- `leT` decides the truth order. -/
+theorem leT_iff (a b : Record) : leT a b = true ↔ TLE a b := by
+  unfold leT TLE
+  constructor
+  · intro h
+    cases h1 : decide (a.pos ≤ b.pos) with
+    | false => rw [h1] at h; exact nomatch h
+    | true =>
+      cases h2 : decide (b.neg ≤ a.neg) with
+      | false => rw [h1, h2] at h; exact nomatch h
+      | true => exact ⟨of_decide_eq_true h1, of_decide_eq_true h2⟩
+  · intro ⟨h1, h2⟩
+    rw [decide_eq_true h1, decide_eq_true h2]
+    rfl
+
 theorem kle_refl (a : Record) : KLE a a := ⟨Nat.le_refl _, Nat.le_refl _⟩
 theorem kle_trans (a b c : Record) : KLE a b → KLE b c → KLE a c := by
   intro h1 h2; exact ⟨Nat.le_trans h1.1 h2.1, Nat.le_trans h1.2 h2.2⟩

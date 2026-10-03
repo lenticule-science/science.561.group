@@ -59,9 +59,8 @@ whose long exact sequence is the truth–knowledge LES re-bundling the designate
 (`AssocSheaf.designated_short_exact_sequence`).
 
 The **horizontal differential** `dh` is the Čech cochain differential modeled by the gluing
-obstruction: `H^n` content lives in `H⁰`/`H¹` and vanishes above degree 1
-(`Cohomology.hn_vanishes_above_one`), so the horizontal complex is the two-stage `H⁰/H¹`
-complex already proved.
+obstruction. Only degrees 0 and 1 are constructed (`H⁰` sections and the `H¹` gluing), so the
+horizontal complex is the two-stage `H⁰/H¹` complex already proved.
 
 ## Scope
 
@@ -69,7 +68,7 @@ complex already proved.
 `restrict_comp` + disjointness; the two-row structure is `Designation.two`; the split-SES facts
 are the re-bundled `designated_short_exact_sequence`. These are the cochain-level **inputs** to
 the mapping cone, not the cohomology-level LES. The refinement reuses
-`hn_vanishes_above_one`/`h1_vanishes`/`inconsistency_h1_vanishes`; note these vanishings hold
+`h1_vanishes`/`inconsistency_h1_vanishes`; note these vanishings hold
 **unconditionally** in this strict/finite model, so the regime hypothesis of
 `bigraded_refines_h1` gates only the regime classification, not the (already unconditional)
 collapse — the regime *dichotomy* is not witnessed here.
@@ -184,18 +183,10 @@ theorem dv_isSection (v : Valuation) (c : Cochain) : InconSheaf.IsSection v (dv 
 The horizontal differential `d_h : C^{d,n} → C^{d,n+1}` is the standard Čech cochain
 differential. For each row it is the differential of the row's sheaf cochain complex —
 already modeled in `SettlingCohomologyH1` / `InconsistencySheaf` via the Čech `H⁰`/`H¹`
-gluing obstruction, with content vanishing above degree 1 (`Cohomology.hn_vanishes_above_one`).
+gluing obstruction (degrees above 1 are not constructed).
 The total complex `Tot^N := ⊕_{d,n} C^{d,n}` has differential `d_h ± d_v`; because `d_v = 0`
 (`dv_zero`) and there are exactly two designations, `Tot` is the **mapping cone** of `d_v`
 between the two horizontal complexes. -/
-
-/-- **The bigraded `H^{d,n}` bundle.** For `truth` it is the truth-sheaf cohomology of degree
-`n` (truth content `H^{truth,n} = H^n_t`); for `inconsistency` it is the inconsistency-sheaf
-cohomology of degree `n` (`H^{inconsistency,n}`). We carry each row by the cohomological-degree
-marker `n` (the row's Čech complex realizes `H^n` in `H⁰`/`H¹`, zero above degree 1). -/
-def Hmn : Designation → Nat → Type
-  | .truth, n => Cohomology.Hn n
-  | .inconsistency, n => Cohomology.Hn n
 
 /-! ## The two-row mapping cone and the truth–knowledge LES
 
@@ -253,10 +244,9 @@ theorem bigraded_two_row_mapping_cone :
 The bigraded cohomology refines `H^n`: the cohomological degree `n` recovers the single-graded
 `H^n`, and the `truth`/`inconsistency` designations **separate** the truth-side content
 (`H^{truth,n} = H^n_t`, truth cohomology) from the inconsistency-side content
-(`H^{inconsistency,n}`, inconsistency cohomology). In the strict/Scott regime both rows vanish
-above degree 1 (reusing `Cohomology.hn_vanishes_above_one` and the row analogue), and the
-inconsistency `H¹` vanishes (`InconSheaf.inconsistency_h1_vanishes`), so the bigrading collapses
-to `H^{truth,n} = H^n_t`. -/
+(`H^{inconsistency,n}`, inconsistency cohomology). The inconsistency `H¹` vanishes
+(`InconSheaf.inconsistency_h1_vanishes`), so in degree 1 the bigrading collapses to the truth
+row. Degrees above 1 are not constructed. -/
 
 /-- **The bigraded cohomology refines single-graded settling cohomology.** For a
 closure-ordinal regime `r` with vanishing cohomology (`cohomologyVanishes r = true`):
@@ -265,14 +255,8 @@ closure-ordinal regime `r` with vanishing cohomology (`cohomologyVanishes r = tr
   `H^{inconsistency,n}` is the **inconsistency** cohomology — the two designations are exactly
   the truth-sheaf `F_U^{(t)}` and inconsistency-sheaf `F_U^{(⊤)}` cochain bundles
   (`row_truth`, `row_inconsistency`);
-* (degree recovery) the bigraded `H^{d,n}` bundle restricts on each designation to the
-  single-graded `H^n` bundle (`Hmn .truth n = Hmn .inconsistency n = Cohomology.Hn n`) — the
-  cohomological degree recovers `H^n`;
 * (regime gate) `cohomologyVanishes r = true ⟺ r ∈ {strict, scott}`
   (`ClosureOrdinalRegime.cohomologyVanishes_iff`); here the regime is strict or scott;
-* (both rows vanish above degree 1, strict regime) for `n ≥ 2`,
-  `H^{truth,n} = H^{inconsistency,n} = 0` (`Cohomology.hn_vanishes_above_one` on both rows) —
-  all content sits in degrees `0`/`1`;
 * (exactly two designation rows) the designation grade has two elements (`Designation.two`) —
   the corpus's two-row structure;
 * (the inconsistency `H¹` vanishes) every Čech datum's agreeing family of `F_U^{(⊤)}`
@@ -282,16 +266,11 @@ theorem bigraded_refines_h1 (r : ClosureRegime)
     (hr : Obsmetrologia.cohomologyVanishes r = true) :
     -- (separation) truth row is truth cohomology, inconsistency row is inconsistency cohomology
     (Row .truth = Cochain ∧ Row .inconsistency = Cochain)
-    -- (degree recovery) each designation's H^{d,n} is the single-graded H^n
-    ∧ (∀ n : Nat, Hmn .truth n = Cohomology.Hn n ∧ Hmn .inconsistency n = Cohomology.Hn n)
     -- (regime gate) cohomology vanishes ⟺ strict or scott
     ∧ (Obsmetrologia.cohomologyVanishes r = true ↔
         (r = ClosureRegime.strict ∨ r = ClosureRegime.scott))
     -- (the regime is strict or scott)
     ∧ (r = ClosureRegime.strict ∨ r = ClosureRegime.scott)
-    -- (both rows vanish above degree 1: H^{truth,n} and H^{inconsistency,n} are zero for n ≥ 2)
-    ∧ (∀ (n : Nat), 2 ≤ n →
-        (∀ x y : Hmn .truth n, x = y) ∧ (∀ x y : Hmn .inconsistency n, x = y))
     -- (exactly two designation rows — the corpus two-row structure)
     ∧ (∀ (d : Designation), d = Designation.truth ∨ d = Designation.inconsistency)
     -- (the inconsistency H¹ vanishes: glue to a unique global section)
@@ -300,10 +279,8 @@ theorem bigraded_refines_h1 (r : ClosureRegime)
           ∧ (∀ g g' : Cochain,
               Cohomology.Coboundary D g → Cohomology.Coboundary D g' → g = g')) :=
   ⟨⟨row_truth, row_inconsistency⟩,
-    fun _n => ⟨rfl, rfl⟩,
     Obsmetrologia.cohomologyVanishes_iff r,
     (Obsmetrologia.cohomologyVanishes_iff r).mp hr,
-    fun _n hn => ⟨Cohomology.hn_vanishes_above_one _n hn, Cohomology.hn_vanishes_above_one _n hn⟩,
     Designation.two,
     fun D hcoc => InconSheaf.inconsistency_h1_vanishes D hcoc⟩
 

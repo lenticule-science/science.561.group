@@ -12,7 +12,7 @@ and the stage-indexed `Δ⁺,⊤_τ` of `content/.../inconsistency-sheaf`).
 
 **Degree-0 decomposition (sections A–E).** `BigradedSettlingCohomology` proves the
 cochain-level input of the truth–knowledge mapping cone (the designated SES is split, the
-vertical differential `d_v = 0`), but its cohomology objects are placeholders (`Hn n := Unit`).
+vertical differential `d_v = 0`), but supplies no cohomology objects.
 Here the degree-0 cohomology objects are supplied — the designated-section subgroups
 `{c // Vanishes (mask v) c}` of the truth, inconsistency, and knowledge sheaves — and the
 direct-sum decomposition `KSec v ≅ TSec v × TopSec v` is an isomorphism (`split`/`merge`
@@ -25,8 +25,7 @@ cells are incident only to truth edges) — carries the six-term sequence
 
 `0 → H⁰_t → H⁰_k → H⁰_⊤ → H¹_t → H¹_k → H¹_⊤ → 0`
 
-as the entire graded LES (degrees above 1 are zero by construction, matching
-`Cohomology.hn_vanishes_above_one`). Exactness is stated in representative form. The
+as the entire graded LES (degrees above 1 are zero by construction: the complex has two terms). Exactness is stated in representative form. The
 connecting map sends a record 0-cocycle to its ambient coboundary, which lands in the truth
 edges; `connecting_zero_of_split` shows it vanishes identically when the complex splits as a
 direct sum (the static-mask case). `measurementComplex` is the minimal instance with a nonzero
@@ -189,19 +188,15 @@ theorem truth_knowledge_section_decomposition :
 sequence of the split designated SES collapses because all graded content is concentrated in degree
 0: there, the knowledge sections are the direct sum of the truth and `⊤` sections
 (`split`/`merge` are the induced maps and are mutually inverse — `H⁰(F_U^{(k)}) ≅ H⁰(F_U^{(t)}) ⊕
-H⁰(F_U^{(⊤)})`); in degree 1 the settling cohomology `H¹` **vanishes** for every Čech datum of each
-sheaf (every cocycle is a coboundary); and in every degree `n ≥ 2` the cohomology is the zero group.
-So the only nondegenerate graded piece is the `H⁰` direct sum, and the connecting maps of the
-LES are zero — the degenerate truth–knowledge LES, on real cohomology objects rather than the
-placeholder `Hn := Unit`. -/
+H⁰(F_U^{(⊤)})`); and in degree 1 the settling cohomology `H¹` **vanishes** for every Čech datum of
+each sheaf (every cocycle is a coboundary). No complex above degree 1 is constructed, so the
+statement is about degrees 0 and 1 only. -/
 theorem truth_knowledge_graded_decomposition :
     ((∀ c : KSec v, merge v (split v c) = c)
         ∧ (∀ p : TSec v × TopSec v, split v (merge v p) = p))
-    ∧ (∀ D : Cohomology.Cech1, Cohomology.H1Vanishes D)
-    ∧ (∀ n : Nat, 2 ≤ n → ∀ x y : Cohomology.Hn n, x = y) :=
+    ∧ (∀ D : Cohomology.Cech1, Cohomology.H1Vanishes D) :=
   ⟨⟨fun c => merge_split v c, fun p => split_merge v p⟩,
-   fun D => Cohomology.h1_vanishes D,
-   fun n hn x y => Cohomology.hn_vanishes_above_one n hn x y⟩
+   fun D => Cohomology.h1_vanishes D⟩
 
 /-! ## (F) Graded two-term complexes -/
 
@@ -424,8 +419,8 @@ theorem connecting_zero_of_split
 (`delta0_truth`); the connecting class of a record cocycle is truth-supported; exactness at
 `H⁰` of the quotient (`connecting_coboundary_iff_lifts`); exactness at `H¹` of the truth
 subcomplex (`truth_cocycle_ambient_coboundary_iff`); and the split degeneration
-(`connecting_zero_of_split`). Degrees above 1 are zero by construction
-(`Cohomology.hn_vanishes_above_one` is the sheaf-side statement). -/
+(`connecting_zero_of_split`). Degrees above 1 are zero by construction: the complex has two
+terms. -/
 theorem graded_two_term_les :
     (∀ c : K.Cell → Int, K.TruthCochain0 c → K.TruthCochain1 (K.delta0 c))
     ∧ (∀ c : K.Cell → Int, K.TopCocycle c → K.TruthCochain1 (K.connecting c))

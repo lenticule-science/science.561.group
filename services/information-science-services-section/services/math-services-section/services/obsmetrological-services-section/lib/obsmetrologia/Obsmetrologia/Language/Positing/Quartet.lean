@@ -109,9 +109,9 @@ structure QuartetRecurrence where
   /-- `Articulating.Corner ≃ Modal`, the modal reading of the recurring four. -/
   corner_modal_bij : Bij Articulating.Corner Modal
 
-/-- **THE KEYSTONE — the master conflation.** Articulating.Cell-phase, `Articulating.FourCorner`
-(`Bool × Bool`), `Reading` (= `Articulating.Corner`), the NuclearQuartet corner index, and `Modal`
-are all one object: the recurrence carries the explicit bijections. -/
+/-- **The master conflation, as data.** The explicit bijections between the four-corner
+readings: `Articulating.Corner`, `Articulating.FourCorner` (`Bool × Bool`) and `Modal`. A
+definition carrying two four-element bijections, each checked by cases. It is not a theorem. -/
 def quartet_recurrence : QuartetRecurrence where
   corner_fourCorner_bij := Articulating.FourCorner.cornerBij.flip
   corner_modal_bij := Modal.cornerBij
@@ -204,10 +204,10 @@ structure TwistoringEqCommutating where
   /-- The commutating pair on any settled fiber-algebra carrying commuting nuclei. -/
   commutating_pair : ∀ (H : Order.HeytingAlgebra), Order.CommutingNuclei H → CommutingPair H.carrier
 
-/-- **Twistoring = commutating.** The σ∘Δ = Δ∘σ commuting square at
-aperiodic settling and the ∼∘− = −∘∼ twist at the articulating birth-corner are the
-SAME coherence 2-cell: both are instances of the single generic `CommutingPair.square`,
-and both index the same exhaustive four `Articulating.Corner`s. This is exactly the corpus's claim
+/-- **Twistoring and commutating, paired as data.** The σ∘Δ = Δ∘σ commuting square at
+aperiodic settling and the ∼∘− = −∘∼ twist at the articulating birth-corner are both
+instances of the one generic `CommutingPair.square`. This definition pairs the two instances;
+it proves no equality between them. This is exactly the corpus's claim
 that commutating is "the analogue, on settled fiber-algebras, of twistoring at the
 articulating birth-corner."
 

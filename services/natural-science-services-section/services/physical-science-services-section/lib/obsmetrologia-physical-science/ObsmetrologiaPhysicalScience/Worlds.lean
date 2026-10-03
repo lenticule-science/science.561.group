@@ -6,6 +6,7 @@ import ObsmetrologiaPhysicalScience.CausalSets.BlackHoles.Deshrouding
 import ObsmetrologiaPhysicalScience.QuantumContextuality.KCBS
 import ObsmetrologiaPhysicalScience.QuantumContextuality.ContextualObstruction
 import ObsmetrologiaPhysicalScience.KineticTheory.Gas.MolecularChaosGluing
+import ObsmetrologiaPhysicalScience.KineticTheory.Gas.Reconstruction
 
 /-!
 # Worlds — the four physical worlds are the four closure regimes
@@ -27,7 +28,16 @@ the causal posits, and the thermodynamic settles. Settling leaves a residue, and
 residue returns to the kinetic. The worlds turn as a spiral (`Obsmetrologia.dervish`).
 Each lap passes through the same four worlds, and each lap carries one more residue.
 
-Each world rests on theorems the library already proves:
+**Evidence status (2026-10-03).** Pairing each world with a regime is the house's reading,
+recorded here as a definition (`worldRegimeBij` and the tables under it). The theorems listed
+below are real, and each world's anchor places them beside its pairing. No theorem derives the
+physics from the regime or the regime from the physics. What carries the regimes is
+`Closure.Regime.regime_tower`, which exhibits each rung on a carrier. The spiral
+(`residue_dichotomy`, `dervish`) and the certificates (`omega_ahead`, `residue_germ_ahead`) are
+proved on their carriers. `thermalResidue` is defined to be balanced. See the science note of
+2026-10-03 on the evidence status of agents ahead.
+
+Each world's anchor cites theorems the library proves:
 
 * **Thermodynamic.** An inflationary step on FOUR settles by stage three
   (`Reading.settles_by_three`). An equilibrating exchange never raises Boltzmann's
@@ -57,19 +67,21 @@ in the quantum or kinetic world carries a certificate
 *determined* as the step's fixed point.
 
 The claim that the kinetic world is forced by the residue of the thermodynamic world
-is proved here (`kinetic_forced_by_residue`). Every source of held `⊤` has a positive
+is proved here (`kinetic_forced_by_residue`), given that the thermal residue is defined
+as the balanced record `⟨m, m⟩` (`thermalResidue`). Every source of held `⊤` has a positive
 creation count (`TopCreationSource.count_pos`). Each held `⊤` is told both ways and
 lands in the record as a balanced residue. Any nonzero residue is a germ certificate
 at the aperiodic rung. Only zero temperature closes the spiral into a circle
 (`zero_temperature_circle`).
 
-## Open bridges
-
-These are stated as named propositions and are never asserted:
+## Bridges
 
 * `KineticReconstruction` — vanishing correlation glues: every decorrelated joint on
-  a finite state space factorizes. It is the converse of
-  `factorizes_imp_decorrelated`.
+  a finite state space factorizes, the converse of `factorizes_imp_decorrelated`.
+  **Proved** for integer joints (`kinetic_reconstruction`, 2026-10-03).
+
+This one is stated as a named proposition and is never asserted:
+
 * `QuantumValueCompletion` — the KCBS value is the least upper bound of a rising
   orbit of rational stages, none of which reaches it: an ahead certificate in the
   quantum world, without a step.
@@ -320,6 +332,16 @@ def QuantumValueCompletion : Prop :=
     (∀ n, q n ≤ q (n + 1))
     ∧ (∀ n, RReal.ofRat (q n) < QuantumContextuality.kcbsQuantumValue)
     ∧ ∀ b : RReal, (∀ n, RReal.ofRat (q n) ≤ b) → QuantumContextuality.kcbsQuantumValue ≤ b
+
+/-! ## (E) The kinetic reconstruction, proved -/
+
+/-- **Kinetic reconstruction holds** (2026-10-03). On a finite state space, an integer joint whose
+correlation minors all vanish factorizes: two-particle structure is visible to pairwise data
+(`KineticTheory.Gas.decorrelated_imp_factorizes`, the content argument with Bézout). Whatever
+pairwise data cannot see begins at three particles. -/
+theorem kinetic_reconstruction (n : Nat) : KineticReconstruction n :=
+  fun J hJ => KineticTheory.Gas.decorrelated_imp_factorizes (List.finRange n) (KineticTheory.Gas.finRange_pairwise_ne n)
+    (fun v => List.mem_finRange v) J hJ
 
 end Worlds
 end Obsmetrologia

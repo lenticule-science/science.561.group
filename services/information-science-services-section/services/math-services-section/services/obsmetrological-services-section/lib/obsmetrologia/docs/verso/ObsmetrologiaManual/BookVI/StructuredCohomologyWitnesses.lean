@@ -133,17 +133,11 @@ example (r : ClosureRegime)
     (hr : Obsmetrologia.cohomologyVanishes r = true) :
     (Row .truth = AssocSheaf.Cochain
       ∧ Row .inconsistency = AssocSheaf.Cochain)
-    ∧ (∀ n : Nat,
-      Hmn .truth n = Cohomology.Hn n
-        ∧ Hmn .inconsistency n = Cohomology.Hn n)
     ∧ (Obsmetrologia.cohomologyVanishes r = true ↔
         (r = ClosureRegime.strict
           ∨ r = ClosureRegime.scott))
     ∧ (r = ClosureRegime.strict
       ∨ r = ClosureRegime.scott)
-    ∧ (∀ n : Nat, 2 ≤ n →
-        (∀ x y : Hmn .truth n, x = y)
-          ∧ (∀ x y : Hmn .inconsistency n, x = y))
     ∧ (∀ d : Designation,
       d = Designation.truth
         ∨ d = Designation.inconsistency)

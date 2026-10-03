@@ -287,12 +287,10 @@ settling over a *finite* event set:
 * **(strict regime)** lands in `ClosureRegime.strict` — the closure ordinal `κ` is finite,
   bounded by the longest causal chain `D` (corpus: `κ = ⌈log₂ D⌉` rounds of reachability-
   matrix squaring). The settling is `spineData`-strict;
-* **(`H¹ = 0`)** in the strict regime the settling-associated sheaf's `H¹` **vanishes**
-  (`cohomologyVanishes ClosureRegime.strict = true`), and the regime gate confirms vanishing
-  happens *exactly* in the strict/Scott regimes (`cohomologyVanishes_iff`). So the causal
-  order glues from local causal data with no obstruction — there are **no NSC firings**, the
-  gluing is unobstructed (this is `SettlingCohomologyH1.settling_cohomology_h1_vanishes` at
-  `r = strict`);
+* **(the strict row of the regime table)** `cohomologyVanishes ClosureRegime.strict = true`.
+  This is a row of the declared regime table (`cohomologyVanishes_iff`), not a computation of
+  the causal order's `H¹`. The gluing fact proper, that every agreeing family of local sections
+  glues uniquely, holds unconditionally (`SettlingCohomologyH1.h1_vanishes`);
 * **(Boolean hub)** the whole settling is the `V = Boolean` instance of
   settling-over-a-value-category: `Positing.Value.booleanV` is a `ValueCategory` whose carrier
   is `Bool` — the Boolean value the causal valuation takes (`booleanV.le` is reflexive,
@@ -303,9 +301,10 @@ Reuses `ClosureRegimeData`/`cohomologyVanishes` (the strict-regime vanishing) an
 theorem causal_strict_regime_h1_zero :
     -- (strict regime) the finite causal settling is strict
     C.regime = ClosureRegime.strict
-    -- (H¹ = 0) the strict regime's settling cohomology vanishes …
+    -- (regime table) the strict row reads `cohomologyVanishes = true`; a declared row, not a
+    --   computation of this order's H¹ …
     ∧ cohomologyVanishes C.regime = true
-    -- … and vanishing is EXACTLY the strict/Scott regimes (the regime gate)
+    -- … and the table's rows are exactly strict and Scott
     ∧ (cohomologyVanishes ClosureRegime.strict = true ↔
         (ClosureRegime.strict = ClosureRegime.strict ∨ ClosureRegime.strict = ClosureRegime.scott))
     -- (Boolean hub) the value category is V = Boolean: booleanV's carrier is Bool, its

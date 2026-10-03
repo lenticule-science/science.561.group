@@ -20,9 +20,10 @@ introduces an `axiom`, `opaque`, or `constant`.
                                category and its object φ = (s, p, o). Category theory.
 * `Obsmetrologia.Positing`         — admits value: the FOUR bilattice of readings (= the four
                                phases met as value), the valuation, the ⊥ₖ seed.
-* `Obsmetrologia.FregeanFourChu`   — the restored keystone theorem: independent
-                               evidence on an oriented predication forces FOUR,
-                               and claim/valuation evaluation presents its Chu space.
+* `Obsmetrologia.FregeanFourChu`   — independent evidence on an oriented predication is
+                               FOUR's two slots, read through the predication Chu
+                               space (a finite correspondence; the forcing is
+                               `Orbital.orbital_exhaustive`).
 * `Obsmetrologia.Settling`         — the closure ◇∘□ to its fixed point; **generates order**:
                                `≤ₖ` proven a partial order, `∨ₖ`/`∧ₖ` its lub/glb,
                                Knaster–Tarski least fixed point.
@@ -44,7 +45,7 @@ introduces an `axiom`, `opaque`, or `constant`.
                                classical & paraconsistent **equality derived**, not posited.
 * `Obsmetrologia.Closure.Monad`     — the closure-2-monad's KZ/lax-idempotence reduction
                                (`kz_iff_strict`, no periodic orbits, `F_U=Cl∨ₖu` settles).
-* `Obsmetrologia.BigradedCohomology` — the aperiodic-regime **trichotomy** (consistent /
+* `Obsmetrologia.BigradedCohomology` — a classification table of readings (consistent /
                                paraconsistent / mixed) + the internal **ℤ/2 gauge** (`~`).
 * `Obsmetrologia.Settlement`       — the recurring site/settlement shape (a bare base paired
                                with content admitted by its own law), instantiated here at
@@ -80,5 +81,6 @@ import Obsmetrologia.Cohomology.FiringGenerators
 import Obsmetrologia.Closure.RegimeGate
 import Obsmetrologia.Closure.RegimeCofinality
 import Obsmetrologia.Closure.RegimeCycle
+import Obsmetrologia.Closure.RegimeComposition
 import Obsmetrologia.Closure.Monad.LaxSlack
 import Obsmetrologia.Settlement

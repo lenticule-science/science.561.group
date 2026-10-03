@@ -107,6 +107,27 @@ proved: the one-step reducts in leftmost-outermost order, sound and complete for
 
 Updated as slices land; newest first.
 
+- 2026-10-03, slice 4 (honest spine, first pass; P3; evidence ledger).
+  - `SettlingCohomologyH1.Hn := Unit` and `hn_vanishes_above_one` are removed. So are their
+    conjuncts in seven bundles, the derived `Hmn`, and the prose, blueprint and Verso
+    citations. Each bundle now says no complex above degree 1 is constructed.
+  - The regime tables are restated as the declared profile: `cohomologyVanishes` and its
+    `_iff`, `spine_is_strict`, `spine_settles_in_settling_regime`, and RegimeGate's
+    `gate_eq_cohomologyVanishes`, whose docstring had claimed a derivation it does not contain.
+    The keystone defs (`quartet_recurrence`, `twistoring_eq_commutating`) and the Fregean
+    correspondence are demoted in their docstrings, the root docstring and the blueprint
+    (theorem → definition/proposition). The blueprint's keystone is now the orbital theorem.
+  - P3 is settled: `Worlds.kinetic_reconstruction` proves `KineticReconstruction n` for every
+    `n` (integer joints, the content argument with a list Bézout, `KineticTheory.Gas.Reconstruction`).
+    Two-particle structure is visible to pairwise data.
+  - Science note 2026-10-03, on the evidence status of agents ahead: every four-worlds and
+    potential claim graded as proved, proved on a carrier, finite, declared, reading or open.
+  - Core `Record.leK`/`Record.leT` are axiom-free Bool orders. The `obsmetrologia` suite gains
+    rows for `Reading.impK` and `FiberAlgebra.Reading.impT`, which four.mjs binds since
+    `0cd87db602e` (644 rows; conforms). The `Record.leK`/`leT` rows wait until four.mjs binds its
+    `recordLeqK`/`recordLeqT` under those names, since an unbound operation in a registered suite
+    reads absurd.
+
 - 2026-10-03, slice 3 (band regime, for Lane 6). `ObsmetrologiaComputing.Band`. Every theorem
   rests on `Quot.sound` at most:
   - membership as the least fixpoint of recognition: `IsMember`, computed with `members_iff`

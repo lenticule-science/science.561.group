@@ -35,9 +35,12 @@ spine (`Stage.regime`): articulating aperiodic, predicating transfinite-bounded,
 Scott-continuous, settling strict-finite. The spine's ClosureRegimeData has
 `finiteBase = true`, so `classify` puts it in `strict` (`spine_is_strict`), the settling
 stage's regime (`spine_settles_in_settling_regime`), re-expressing
-`ClosureOrdinal.strict_finite`'s `κ ≤ 3`. Finally we record the
-dichotomy's **regime-dependent cohomology** table: `H¹ = 0` exactly in the strict and
-Scott regimes; the KZ diamond is fully alive only aperiodically.
+`ClosureOrdinal.strict_finite`'s `κ ≤ 3`. Finally we record the dichotomy's **declared
+cohomology profile** as a table (`cohomologyVanishes`): the corpus reads `H¹ = 0` in the strict
+and Scott regimes. The table computes no cohomology. Where an `H¹` is constructed
+(`Cohomology.SettlingCohomologyH1`, `Cohomology.CoordinationCohomology`), its vanishing is
+proved there. The regime content that is derived rather than declared is `regime_tower`: one
+family of carriers exhibits each rung.
 -/
 
 namespace Obsmetrologia
@@ -225,15 +228,15 @@ def spineData : ClosureRegimeData where
   fin_scott := fun _ => rfl
   fin_cof := fun _ => rfl
 
-/-- **The spine is strict.** The finite reading lattice's regime data classifies to
-`ClosureRegime.strict` — the strict-finite regime whose `κ ≤ 3` is
-`ClosureOrdinal.strict_finite` / `Reading.settles_by_three`. The decidable dichotomy
-recovers the spine's regime. -/
+/-- **The spine is strict, by its declared data.** `spineData` sets `finiteBase := true`, so
+`classify` reads `strict`; this holds by definition. Its operational content is
+`spine_settles_by_three`: every inflationary endomap of the reading lattice settles by
+stage three (`Reading.strict_finite`). -/
 theorem spine_is_strict : classify spineData = ClosureRegime.strict :=
   rfl
 
-/-- **The spine settles in the settling stage's regime.** The finite reading lattice's regime
-is the regime the settling stage pairs with. -/
+/-- **The spine's declared regime is the settling stage's.** Both sides are table lookups
+(`classify spineData` and `Stage.regime`); this holds by definition. -/
 theorem spine_settles_in_settling_regime : classify spineData = Stage.regime Stage.settling :=
   rfl
 
@@ -243,31 +246,30 @@ reading lattice — the operational content of `classify spineData = strict`. -/
 theorem spine_settles_by_three (f : Reading → Reading) (hf : ∀ a, Reading.KLE a (f a))
     (x : Reading) : Reading.SettlesBy f x 3 := Reading.strict_finite f hf x
 
-/-! ## (F) ClosureRegime-dependent cohomology
+/-! ## (F) The declared cohomology profile
 
-From the dichotomy's *regime-dependent structure of the KZ diamond* table: the strict
-and Scott-continuous regimes have `H¹ = 0` for the settling-associated sheaf; in the
-transfinite-bounded and aperiodic regimes the cohomology is non-trivial. The KZ
-diamond is "fully alive" only aperiodically. -/
+The dichotomy's table of the KZ diamond's structure: the corpus reads the strict and
+Scott-continuous regimes as having `H¹ = 0` for the settling-associated sheaf, and the
+transfinite-bounded and aperiodic regimes as carrying cohomological content. This section
+records that reading as a table. It constructs no cochain complex and computes no `H¹`. -/
 
-/-- Whether the settling-associated sheaf's `H¹` vanishes in a given regime: `true`
-(cohomology vanishes) in the strict and Scott regimes; `false` in the transfinite-
-bounded and aperiodic regimes, where the cohomological content is concentrated. -/
+/-- The regime's **declared** cohomology profile: `true` in the strict and Scott regimes,
+`false` in the transfinite-bounded and aperiodic regimes (the corpus's four-regime table). A
+table, not a computation: no `H¹` is computed here. -/
 def cohomologyVanishes : ClosureRegime → Bool
   | ClosureRegime.strict => true
   | ClosureRegime.scott => true
   | ClosureRegime.transfiniteBounded => false
   | ClosureRegime.aperiodic => false
 
-/-- **Cohomology vanishes exactly in the strict and Scott regimes.** `H¹ = 0` iff the
-regime is `strict` or `scott`; the KZ diamond is alive (cohomology non-trivial) only
-in the transfinite-bounded and aperiodic regimes. Proven by exhaustion. -/
+/-- **The declared profile's rows.** `cohomologyVanishes r` is `true` exactly at `strict` and
+`scott`. A finite check of the table above, not a theorem about cohomology. -/
 theorem cohomologyVanishes_iff (r : ClosureRegime) :
     cohomologyVanishes r = true ↔ (r = ClosureRegime.strict ∨ r = ClosureRegime.scott) := by
   cases r <;> simp [cohomologyVanishes]
 
-/-- The spine, being strict, has vanishing cohomology: the finite settling carries no
-`H¹`. A direct corollary of `spine_is_strict` and `cohomologyVanishes_iff`. -/
+/-- The spine's row of the declared profile reads `true`. Table lookups only
+(`spine_is_strict` and `cohomologyVanishes`). -/
 theorem spine_cohomology_vanishes : cohomologyVanishes (classify spineData) = true := by
   rw [spine_is_strict]; rfl
 
