@@ -79,5 +79,6 @@ import Obsmetrologia.AperiodicOrder
 import Obsmetrologia.Cohomology.FiringGenerators
 import Obsmetrologia.Closure.RegimeGate
 import Obsmetrologia.Closure.RegimeCofinality
+import Obsmetrologia.Closure.RegimeCycle
 import Obsmetrologia.Closure.Monad.LaxSlack
 import Obsmetrologia.Settlement

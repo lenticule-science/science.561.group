@@ -111,11 +111,12 @@ import ObsmetrologiaPhysicalScience.Settlements
 import ObsmetrologiaPhysicalScience.Thermodynamics
 import ObsmetrologiaPhysicalScience.Thermodynamics.BoltzmannEntropy
 import ObsmetrologiaPhysicalScience.Thermodynamics.Temperature
+import ObsmetrologiaPhysicalScience.Worlds
 
 /-!
 # ObsmetrologiaPhysicalScience
 
-Physical science over Obsmetrologia: causal sets, condensed matter (crystal, glass, glass dynamics, defects, affine holonomy, condensate matter, percolation), kinetic theory, thermodynamics, dense matter, quantum contextuality, and chemical reaction networks.
+Physical science over Obsmetrologia: causal sets, condensed matter (crystal, glass, glass dynamics, defects, affine holonomy, condensate matter, percolation), kinetic theory, thermodynamics, dense matter, quantum contextuality, chemical reaction networks, and the four worlds (thermodynamic, causal, quantum, kinetic) read as the closure-regime tower.
 
 Every module here imports the pure-mathematics package `Obsmetrologia`; nothing in
 `Obsmetrologia` imports this package. Declarations keep their `Obsmetrologia.*` names.
