@@ -77,8 +77,8 @@ evidence shows that these local realizations are compatible restrictions or
 lawful transports of one persistent identity?"
 
 Internal sources:
-- \`.../philosophy-services-section/content/text/documents/articles/notes/2026/03/20/2026-03-20-persistent-identity.md\`
-- \`.../predicated-agentic-orchestration-platform/session/session-as-time-bounded-sublocale/session-as-time-bounded-sublocale.md\`
+- `.../philosophy-services-section/content/text/documents/articles/notes/2026/03/20/2026-03-20-persistent-identity.md`
+- `.../predicated-agentic-orchestration-platform/session/session-as-time-bounded-sublocale/session-as-time-bounded-sublocale.md`
 
 ## 2. Four coupled structures, not one giant agent state
 
@@ -315,9 +315,9 @@ The later collected note on imagining found legacy material that treated
 imagining as low-trust counterfactual recombination and explicitly recorded it
 as an unformalized gap.
 
-The current \`@emsenn/knowing\` implementation lineage now derives each dream
+The current `@emsenn/knowing` implementation lineage now derives each dream
 form's regime/finality from settlement filtration. Commit
-\`54955285222104e5b33e2b3a71f693aec356536c\` makes the aperiodic form
+`54955285222104e5b33e2b3a71f693aec356536c` makes the aperiodic form
 non-finalizing: "unsettling dreams are aperiodic sessions."
 
 Scientific correction:
@@ -616,9 +616,9 @@ on different structures of one longitudinal agentic system.
 - Dreaming as Unwitnessed Settlement.
 - Imagining, collected as dreaming's unformalized companion.
 - Dreaming implementation lineage including
-  \`54955285222104e5b33e2b3a71f693aec356536c\`.
+  `54955285222104e5b33e2b3a71f693aec356536c`.
 - Companion note:
-  \`2026-10-02-person-body-office-pulse-persistent-agent-lives.md\`.
+  `2026-10-02-person-body-office-pulse-persistent-agent-lives.md`.
 
 ## External sources
 
