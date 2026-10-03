@@ -4,7 +4,8 @@ The Math Services Section is the Lenticule Science home for mathematical
 services and shared mathematical resources. Its first service is the Algebra
 Services Section.
 
-Computer realizations of mathematical transformations live in Computer Math:
+The shared computer realization of mathematical transformations is Metrologic, in
+the computer data section's `lib/metrologic`; research applications live in Computer Math:
 `computer-math-system-services-section/apps/`. The mathematical research
 carriers live here, including the Obsmetrologia Lean library and its related
 formalization projects under `services/obsmetrological-services-section/lib/formalization/`.
