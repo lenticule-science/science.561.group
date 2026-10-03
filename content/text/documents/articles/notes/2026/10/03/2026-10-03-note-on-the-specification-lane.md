@@ -107,13 +107,32 @@ proved: the one-step reducts in leftmost-outermost order, sound and complete for
 
 Updated as slices land; newest first.
 
+- 2026-10-03, slice 2 (SEN λ). `Obsmetrologia.Language.Predicating.NormalOrder` (core, pure
+  mathematics) computes `Tm.reducts`, `Tm.stepNO`, `Tm.normalize` and `Tm.lift`:
+  - `mem_reducts_iff`: the reducts are `step`, sound and complete;
+  - `stepNO_eq_head`: normal order is the first reduct;
+  - `stepNO_sound`, `stepNO_none`, `normalize_red` and `normalize_normal`;
+  - `normalize_unique`, by `church_rosser`.
+  All are axiom-free except `normalize_unique`, which inherits `propext` from the existing
+  `church_rosser` (a core debt). The `sen-lambda` suite has 2,375 rows: reducts, `dev` and normal
+  forms over 766 terms, plus `inst` and `lift`. It is pending until SEN's code layer registers
+  `src/semiotic-expression-notation/realization.mjs`. A probe with a five-line table over the
+  current `step`/`dev`/`normalize`/`instantiateSen`/`shiftSen` agrees on every row, so the fragment
+  conforms the moment the table is registered. The table is engineering's (Lane 5).
+- 2026-10-03, slice 1 (CALM), `77c78a69b3e` on origin/main:
+  - `ObsmetrologiaComputing.Calm`, `.WorkArena` and `.WorkArena.Fragment`;
+  - one suite per specification on the rail, where an unregistered realization is pending;
+  - the `work-arena` suite (474 rows).
+  The board request `C46tkmpK…` (assayer CTO) asks for organizing's realization and the
+  early-witness fix. Lane 2 took both, to ship as the seventeenth edition through its law-edition
+  path.
 - 2026-10-03: lane opened in worktree `lane-worktrees/lane-7` off
   `origin/main` `f0eecd80943`. No orphan paths inherited.
 
 ## Next slices
 
-1. Land the arena specification, its suite and its board request.
-2. Land the SEN reducers, their suite and the request to the SEN implementation's
+1. *Done.* Land the arena specification, its suite and its board request.
+2. *Done.* Land the SEN reducers, their suite and the request to the SEN implementation's
    owner (Lane 5).
 3. The honest spine: remove the false certificates the 2026-09-27 release note
    lists (`SettlingCohomologyH1.Hn := Unit`, Bool tables restated as theorems).
@@ -121,5 +140,17 @@ Updated as slices land; newest first.
    reading; the "agents ahead" claims, each with its evidence status.
 5. Obsmetrologia's stage-2 split: move the downstream namespaces, rename the pure
    modules named in applied vocabulary, and move the docs.
-6. Specify the band regime (Lane 6) and any SignLang or ordinal-cell proposal
-   (Lane 5) before either is built.
+6. The band regime (Lane 6's brief, 2026-10-03). Membership is the least fixpoint of recognition
+   by recognized members (tiyóšpaye T1). Head standing is the meet of recognition cells (T3).
+   The council closes by consensus through withdrawal (iyúhášni retracts engagement to ⊥ and
+   keeps membership); the corpus decides whether silence blocks. Quiescence is resting,
+   contested or in-common. Fission occurs on a collapsed recognition partition. Confederacy
+   glues by H¹ with a bounded fan-out, and the coordination cost per level is read as
+   PricedNerve reads it. Recognition and engagement are tellings; withdrawal, fission and
+   expulsion are coordinated (Calm). Operations: bandMembers, headStanding, councilClose,
+   fission, confederate. Then the micro-enterprise decision rule (sanquan: the owner decides,
+   members hold tenure) and qiangdan's bid comparator over wager targets.
+7. SignLang and the ordinal-valued cell (Lane 5/6 proposals): specify before either is built.
+8. The rail: lean-system `package.json` `files` should carry every suite's vectors
+   (`lib/obsmetrologia-conformance/*.golden-vectors.jsonl`). This waits until the lockfile gate
+   passes on origin, since a manifest change runs it.

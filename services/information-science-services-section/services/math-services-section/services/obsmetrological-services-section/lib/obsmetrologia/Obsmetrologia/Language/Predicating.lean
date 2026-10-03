@@ -10,6 +10,7 @@ import Obsmetrologia.Language.Predicating.Guarded
 import Obsmetrologia.Language.Predicating.Hyperdoctrine
 import Obsmetrologia.Language.Predicating.HyperdoctrineDual
 import Obsmetrologia.Language.Predicating.Morphism
+import Obsmetrologia.Language.Predicating.NormalOrder
 import Obsmetrologia.Language.Predicating.Orbital
 import Obsmetrologia.Language.Predicating.Oriented
 import Obsmetrologia.Language.Predicating.Quantifying
