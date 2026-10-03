@@ -113,7 +113,7 @@ because identity is grounded in the compatible section and its grounding, not
 continuous activity.
 
 Internal source:
-\`science-services-section/services/philosophy-services-section/content/text/documents/articles/notes/2026/03/20/2026-03-20-persistent-identity.md\`
+`science-services-section/services/philosophy-services-section/content/text/documents/articles/notes/2026/03/20/2026-03-20-persistent-identity.md`
 
 # 2. Virtual actors provide an exact engineering precedent
 
@@ -901,7 +901,7 @@ organization rather than by keeping a process talking to itself forever**.
 - FARS AgentRecord, Session, scope-as-fiber, kit-assembly,
   consolidation-as-settlement.
 - Predication world simulation — 2026-04-06.
-- Dreaming Science notes and current \`@emsenn/knowing\` lineage.
+- Dreaming Science notes and current `@emsenn/knowing` lineage.
 - The two prior 2026-10-02 persistent-person research notes.
 
 ## External sources
