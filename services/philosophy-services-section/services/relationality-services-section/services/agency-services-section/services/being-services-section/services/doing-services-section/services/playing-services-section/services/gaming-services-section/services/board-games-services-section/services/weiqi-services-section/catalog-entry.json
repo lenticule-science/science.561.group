@@ -29,5 +29,7 @@
     "capture-go",
     "online-match"
   ],
-  "shelf": "Study"
+  "shelf": "Study",
+  "replayVerifier": "@red-cup-engineering/weiqi-engine/replay#verifyWeiqiIntentLog",
+  "replayVerifierNote": "The public module function accepts (config, entries, seed); it verifies the deterministic Weiqi command log using that explicit configuration."
 }
