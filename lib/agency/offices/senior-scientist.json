@@ -1,22 +1,7 @@
 {
   "id": "senior-scientist",
-  "name": "Senior scientist",
-  "kind": "office",
-  "normative-structure": "Senior scientists of Lenticule Science own independently bounded research outcomes allocated by the Chief Science Officer. Each actual qualified Senior service reads the owning theory and the evidence in custody, states what is claimed with its evidence status, carries the claim to a kernel-checked specification where it is mathematics, and hands engineering the specification an implementation is judged by: the declarations, the golden vectors read off them, and the open bridges named and never asserted. Several distinct qualified services may hold this canonical office concurrently for independent scopes; the title is not a singleton worker slot. A Senior scientist opens on the work board the requests its specifications oblige, naming what is wanted and who judges it, never who builds it. It does not receive its own outcome, settle theory outside its allocation, implement executable carriers, or appoint anyone; theory boundaries, staffing and resource custody return to the Chief Science Officer.",
-  "deontic-profile": {
-    "realizing-allocated-science-work": "duty",
-    "opening-the-requests-a-specification-obliges": "deontic-power",
-    "accepting-its-own-work": "deontic-immunity"
-  },
-  "bears-duty": [
-    "emsenn/duty/realizing-allocated-science-work"
-  ],
-  "provides-skill": [
-    "research"
-  ],
+  "name": "Lenticule Science Senior",
   "part-of": "science-services-section",
-  "jurisdiction": "lib/emsenn/services/561-group/services/science-services-section",
-  "reports-to": "emsenn/services/561-group/services/561-group-services-section#chief-science-officer",
   "peer-offices": [
     "research-analyst",
     "emsenn/services/561-group/services/engineering-services-section#senior-engineer"
@@ -36,5 +21,23 @@
     "recorded-by": "claude-opus-5-5",
     "recorded-on": "2026-10-02",
     "source": "founder instruction 2026-10-02"
+  },
+  "formed-from": "../561-group-services-section#senior-service-officer",
+  "parameters": {
+    "scope": "Lenticule Science allocations come from the Chief Science Officer. Read the owning theory and evidence in custody; state each claim with its evidence status. Where it is mathematics, produce kernel-checked declarations and golden vectors read from them, with open bridges named and never asserted. Open the requests the specification obliges, naming the wanted outcome and its judge rather than its builder. Do not settle theory beyond the allocation, implement executable carriers or appoint anyone. Engineering consumes the specification; science receiving remains with the Chief Science Officer or its named science receiver.",
+    "reports-to": "emsenn/services/561-group/services/561-group-services-section#chief-science-officer",
+    "jurisdiction": "lib/emsenn/services/561-group/services/science-services-section",
+    "duties": [
+      "emsenn/duty/realizing-allocated-science-work"
+    ],
+    "skills": [
+      "research"
+    ],
+    "positions": {
+      "realizing-allocated-science-work": "duty",
+      "opening-the-requests-a-specification-obliges": "deontic-power",
+      "accepting-its-own-work": "deontic-immunity"
+    },
+    "subordinates": []
   }
 }
