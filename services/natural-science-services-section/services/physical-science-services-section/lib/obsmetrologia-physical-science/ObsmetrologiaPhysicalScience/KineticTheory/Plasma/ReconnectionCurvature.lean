@@ -45,7 +45,7 @@ braiding, and MHD/PIC reconnection *rates* — is the continuum layer above (not
 ## References
 `content/.../obsmetrologia_gases_liquids_plasmas_proof_frontier.md` §3.3.4, Batch E. Built on
 `Obsmetrologia.Flow.NSCFiring` and `Obsmetrologia.Flow.CurvatureRegime`
-(`vanishes_iff_flat`, `nonvanishes_iff_curved`).
+(`vanishes_iff_declaredFlat`, `nonvanishes_iff_declaredCurved`).
 
 ## Tags
 magnetic reconnection, frozen-in flux, non-Scott-continuous firing, curvature event, H¹, flat regime
@@ -95,13 +95,13 @@ theorem ideal_flow_has_no_reconnection (cl : Reading.Closure) (S : DirectedFamil
 
 /-- **A flat regime forbids reconnection.** If the field-line flow's regime is flat (Scott-continuous,
 `κ ≤ ω` — ideal MHD, `H¹ = 0`), then no stage-prefix is a reconnection event: the frozen-in constraint
-holds throughout. The ideal-MHD prohibition, read off `vanishes_iff_flat`. -/
+holds throughout. The ideal-MHD prohibition, read off `vanishes_iff_declaredFlat`. -/
 theorem flat_regime_forbids_reconnection_event (cl : Reading.Closure) (d : ClosureRegimeData)
     (hmatch : d.scottContinuous = true ↔ IsScottContinuous cl)
-    (hflat : IsFlat (classify d)) (S : DirectedFamily) :
+    (hflat : DeclaredFlat (classify d)) (S : DirectedFamily) :
     ¬ ReconnectionEvent { update := cl.op, history := S } := by
-  have hvan : cohomologyVanishes (classify d) = true := (vanishes_iff_flat (classify d)).mpr hflat
-  exact (no_nsc_firing_iff_omega_regime cl d hmatch).mp hvan S
+  have hvan : cohomologyVanishes (classify d) = true := (vanishes_iff_declaredFlat (classify d)).mpr hflat
+  exact (no_nsc_firing_iff_declared_omega_profile cl d hmatch).mp hvan S
 
 /-- **Reconnection forces non-vanishing cohomology** (`H¹ ≠ 0`). A reconnection event at any
 stage-prefix places the closure flow in a curved regime: `cohomologyVanishes (classify d) = false`. The
@@ -112,15 +112,15 @@ theorem reconnection_event_implies_H1_nonzero (cl : Reading.Closure) (d : Closur
     cohomologyVanishes (classify d) = false := by
   cases hv : cohomologyVanishes (classify d) with
   | false => rfl
-  | true => exact absurd hrec ((no_nsc_firing_iff_omega_regime cl d hmatch).mp hv S)
+  | true => exact absurd hrec ((no_nsc_firing_iff_declared_omega_profile cl d hmatch).mp hv S)
 
 /-- **Reconnection puts the flow in a curved regime.** The cohomological reading of
-`reconnection_event_implies_H1_nonzero`: a reconnection event forces `IsCurved (classify d)`. -/
+`reconnection_event_implies_H1_nonzero`: a reconnection event forces `DeclaredCurved (classify d)`. -/
 theorem reconnection_event_regime_curved (cl : Reading.Closure) (d : ClosureRegimeData)
     (hmatch : d.scottContinuous = true ↔ IsScottContinuous cl)
     (S : DirectedFamily) (hrec : ReconnectionEvent { update := cl.op, history := S }) :
-    IsCurved (classify d) :=
-  (nonvanishes_iff_curved (classify d)).mp
+    DeclaredCurved (classify d) :=
+  (nonvanishes_iff_declaredCurved (classify d)).mp
     (reconnection_event_implies_H1_nonzero cl d hmatch S hrec)
 
 /-! ## The obstruction has teeth: a reconnection event -/
@@ -138,8 +138,8 @@ theorem canonicalReconnection_is_event : ReconnectionEvent canonicalReconnection
 
 /-- **The canonical reconnection lives in a curved regime** (`H¹ ≠ 0`): its regime datum classifies as
 transfinite-bounded, with non-vanishing settling cohomology. -/
-theorem canonicalReconnection_regime_curved : IsCurved (classify nscRegimeData) :=
-  (nonvanishes_iff_curved (classify nscRegimeData)).mp nsc_cohomology_nonvanishing
+theorem canonicalReconnection_regime_curved : DeclaredCurved (classify nscRegimeData) :=
+  (nonvanishes_iff_declaredCurved (classify nscRegimeData)).mp nscRegimeData_profile_nonvanishing_table
 
 end KineticTheory.Plasma
 end Obsmetrologia

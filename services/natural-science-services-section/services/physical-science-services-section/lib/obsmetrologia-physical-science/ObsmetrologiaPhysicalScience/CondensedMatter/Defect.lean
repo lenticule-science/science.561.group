@@ -61,23 +61,23 @@ theorem no_defect_of_settles (v : Settling)
     ¬ HasDefect v := fun hd => hd (clinv_zero_of_settles v hr)
 
 /-- **Cohomology-vanishing regimes are defect-free** — the `H¹ = 0` form of `no_defect_of_settles`,
-via `vanishes_iff_flat`. -/
+via `vanishes_iff_declaredFlat`. -/
 theorem no_defect_of_vanishing (v : Settling) (h : cohomologyVanishes v.regime = true) :
     ¬ HasDefect v :=
-  fun hd => hd (clinv_zero_of_settles v ((vanishes_iff_flat v.regime).mp h))
+  fun hd => hd (clinv_zero_of_settles v ((vanishes_iff_declaredFlat v.regime).mp h))
 
 /-- **A defect forces a curved regime.** The contrapositive of `clinv_zero_of_settles`: a nonzero
 classifying invariant rules out the flat regimes, leaving transfinite-bounded or aperiodic. -/
-theorem hasDefect_curved (v : Settling) (h : HasDefect v) : IsCurved v.regime := by
-  rw [curved_iff_not_flat]
+theorem hasDefect_curved (v : Settling) (h : HasDefect v) : DeclaredCurved v.regime := by
+  rw [declaredCurved_iff_not_declaredFlat]
   intro hflat
   exact h (clinv_zero_of_settles v hflat)
 
 /-- **A defect forces non-vanishing cohomology** (`H¹ ≠ 0`): `hasDefect_curved` read through
-`nonvanishes_iff_curved`. The defect is a curvature event. -/
+`nonvanishes_iff_declaredCurved`. The defect is a curvature event. -/
 theorem hasDefect_nonvanishing (v : Settling) (h : HasDefect v) :
     cohomologyVanishes v.regime = false :=
-  (nonvanishes_iff_curved v.regime).mpr (hasDefect_curved v h)
+  (nonvanishes_iff_declaredCurved v.regime).mpr (hasDefect_curved v h)
 
 /-- **The aperiodic witness is a defect** — the defect predicate is inhabited, so the theory
 is not vacuous (unlike the flat Čech datum, where `h1_vanishes` kills every defect). -/

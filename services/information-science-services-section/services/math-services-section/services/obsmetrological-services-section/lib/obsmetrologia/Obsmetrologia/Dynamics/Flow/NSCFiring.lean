@@ -43,16 +43,21 @@ full join, not on any sub-stage". We prove:
 * `IsNSC op S` — the corpus inequation `op (⋁ₖ S) ≠ ⋁ₖ {op x : x ∈ S}` at a stage-prefix `S`;
   `L_ns op` — the predicate selecting the NSC stage-prefixes of `op`.
 * `scott_continuous_iff_no_nsc_firing` — a reading-closure is Scott-continuous **iff**
-  it has **no** NSC firing (`L_ns cl.op` empty), and — tying to the regime via
-  `scott_continuous_iff_omega_regime` — no NSC firing holds exactly in the cohomology-vanishing
-  `κ ≤ ω` (strict/scott) regimes (`Scott-continuous ⟺ L_ns = ∅ ⟺ κ ≤ ω`).
-* `nsc_firing_source_of_aperiodic` — NSC firings are exactly what produces the
-  non-Scott (transfinite-bounded/aperiodic) content: (a) over the finite reading carrier **no**
-  reading-closure has an NSC firing (reuse `finite_scott_continuous`), so NSC firings require an
-  infinite base / non-attained join; (b) a `∀`-antecedent firing operator (one that retracts on
-  the full join rather than commuting with it) **witnesses** an NSC firing — we exhibit a
-  concrete operator `forallAnteOp` and a concrete stage-prefix on which `IsNSC` holds; bundled
-  with the regime: `∀`-antecedent firing ⟹ NSC ⟹ non-Scott regime.
+  it has **no** NSC firing (`L_ns cl.op` empty). Proved.
+* `no_nsc_firing_iff_declared_omega_profile` — the same, through the declared regime
+  profile. The regime half is a table lookup (`cohomologyVanishes` is a table), so this
+  records agreement with the declared profile, not a derivation of a regime from firings.
+* `no_closure_nsc_firing_and_forallAnte_witness` — (a) over the finite reading carrier **no**
+  reading-closure has an NSC firing (`finite_scott_continuous`), and (b) a concrete
+  `∀`-antecedent operator `forallAnteOp` has an NSC firing on `botTopPrefix`. Proved.
+* `nscRegimeData` and its row: a **hand-set** flag datum, classified by the declared table.
+  It is not computed from `forallAnteOp` or any firing, so nothing here proves that NSC firings
+  source the transfinite-bounded or aperiodic regimes.
+
+-- OPEN: the corpus's "`L_ns` is the structural source of transfinite-bounded and aperiodic
+-- regime cohomology generators" (each `μ ∈ L_ns(κ)` contributes a `ℤ`-generator to `H¹`). It
+-- needs a closure flow with an ordinal, `H¹` of it, and a map from `L_ns` to generators; this
+-- module has only the finite-carrier model of a firing and the declared regime table.
 -/
 
 namespace Obsmetrologia.Flow.NSCFiring
@@ -134,16 +139,13 @@ theorem scott_continuous_iff_no_nsc_firing (cl : Reading.Closure) :
     -- double-negation elimination is constructive (`Decidable.not_not`).
     exact Decidable.not_not.mp (h S)
 
-/-- **No NSC firing ⟺ the cohomology-vanishing `κ ≤ ω` regime.** A regime datum
-`d` whose Scott-continuity verdict matches a reading-closure `cl` lands in the cohomology-
-vanishing strata (`cohomologyVanishes (classify d) = true`, i.e. strict or scott) **iff** `cl`
-has no NSC firing. Reuses `scott_continuous_iff_omega_regime` (cohomology vanishes ⟺
-`d.scottContinuous`) and the definitional fact that, over the finite carrier, the Scott
-verdict `d.scottContinuous = true` is equivalent to `IsScottContinuous cl` (both hold — the
-forward by `finite_scott_continuous`, recorded as the matching hypothesis `hmatch`), which by
-`scott_continuous_iff_no_nsc_firing` is no-NSC. This is the corpus chain
-`Scott-continuous ⟺ L_ns = ∅ ⟺ κ ≤ ω` (cohomology-vanishing). -/
-theorem no_nsc_firing_iff_omega_regime (cl : Reading.Closure) (d : ClosureRegimeData)
+/-- **No NSC firing ⟺ the declared vanishing profile, given a matching datum.** For a flag
+datum `d` whose `scottContinuous` flag is stipulated to match `cl` (`hmatch`), the declared
+profile `cohomologyVanishes (classify d)` is `true` iff `cl` has no NSC firing. The regime
+half is `scott_continuous_iff_omega_regime`, a lookup in the declared table, and `hmatch` is a
+hypothesis tying a flag to `cl`; nothing derives `d` from `cl`. The firing half is
+`scott_continuous_iff_no_nsc_firing`, which is proved. -/
+theorem no_nsc_firing_iff_declared_omega_profile (cl : Reading.Closure) (d : ClosureRegimeData)
     (hmatch : d.scottContinuous = true ↔ IsScottContinuous cl) :
     cohomologyVanishes (classify d) = true ↔ ∀ S : DirectedFamily, ¬ IsNSC cl.op S := by
   rw [scott_continuous_iff_omega_regime d, hmatch, scott_continuous_iff_no_nsc_firing cl]
@@ -199,28 +201,22 @@ theorem forallAnteOp_isNSC : IsNSC forallAnteOp botTopPrefix := by
   rw [sup_botTopPrefix]
   decide
 
-/-! ## (E) NSC firings are the source of the non-Scott (TB/aperiodic) regime
+/-! ## (E) A hand-set non-Scott datum, and the firing facts that are proved
 
-The two halves of the corpus's "`L_ns` is the source of transfinite-bounded & aperiodic
-cohomology generators", over the finite-carrier model:
+Two separate things sit in this section, with no map between them.
 
-* **(a)** Over a finite reading carrier there are **no** NSC firings for any reading-closure (`no_nsc_firing_of_closure`, from `finite_scott_continuous`): directed joins
-  are attained, so closures commute with them and stay in the strict regime. NSC firings
-  therefore require an **infinite base** / a non-attained join — the corpus's "Scott-continuous
-  ⟺ `κ ≤ ω`", contrapositively "NSC ⟹ `κ > ω`".
-* **(b)** A `∀`-antecedent firing operator — one that fires on sub-stages but retracts on the
-  full join, not commuting with it — **does** witness an NSC firing (`forallAnteOp_isNSC`). This
-  is the corpus's responsible inference: the rule with a `∀`-antecedent over earlier layers.
+* The finite-carrier firing facts: no reading-closure has an NSC firing
+  (`no_closure_nsc_firing_and_forallAnte_witness`, (a)), and `forallAnteOp` does
+  (`forallAnteOp_isNSC`, (b)). Both are proved.
+* A flag datum `nscRegimeData` with `scottContinuous := false`, classified by the declared
+  regime table. Its row is a lookup. The datum is chosen, not computed from a firing.
 
-Bundled: NSC firings exist exactly for non-closure (`∀`-antecedent) firings, and such a firing
-sits in the non-Scott regime (its regime datum, carrying `scottContinuous = false`, classifies
-to `transfiniteBounded`/`aperiodic`, never to the cohomology-vanishing strata). -/
+-- OPEN: that an NSC firing forces the non-Scott regime. It needs a regime derived from a
+-- closure's ordinal in place of Boolean flags. -/
 
-/-- A regime datum for a non-Scott firing carries `scottContinuous = false`; with countable
-cofinality it classifies to `transfiniteBounded`, else `aperiodic` — never to the
-cohomology-vanishing strata. We exhibit the transfinite-bounded datum (the simplest non-Scott
-witness): `scottContinuous = false`, infinite base (`finiteBase = false`, forced since a finite
-base would force Scott-continuity), countable cofinality. -/
+/-- A **hand-set** flag datum for a non-Scott settling: `scottContinuous = false`,
+`finiteBase = false`, `countableCofinality = true`. The flags are chosen so that `classify`
+returns `transfiniteBounded`; they are not computed from `forallAnteOp` or from any closure. -/
 def nscRegimeData : ClosureRegimeData where
   scottContinuous := false
   finiteBase := false
@@ -228,39 +224,28 @@ def nscRegimeData : ClosureRegimeData where
   fin_scott := by intro h; exact absurd h (by decide)
   fin_cof := by intro h; exact absurd h (by decide)
 
-/-- A non-Scott firing's regime datum classifies to `transfiniteBounded` (a non-Scott,
-cohomology-bearing regime): `scottContinuous = false ∧ countableCofinality = true` selects it via
-`classify_transfiniteBounded`. So the NSC content lives where `H¹ ≠ 0`. -/
+/-- `classify nscRegimeData = transfiniteBounded`: by `classify_transfiniteBounded` from the
+flags chosen above. -/
 theorem nscRegimeData_transfiniteBounded :
     classify nscRegimeData = ClosureRegime.transfiniteBounded :=
   (classify_transfiniteBounded nscRegimeData).mpr ⟨rfl, rfl⟩
 
-/-- The non-Scott regime datum has **non-vanishing** cohomology — `H¹ ≠ 0`: it classifies to
-`transfiniteBounded`, where `cohomologyVanishes = false`. This is the cohomological role the
-corpus assigns to `L_ns`: each NSC firing contributes a generator to the transfinite-bounded /
-aperiodic `H¹`. -/
-theorem nsc_cohomology_nonvanishing :
+/-- The declared profile at the hand-set datum's row reads non-vanishing:
+`cohomologyVanishes transfiniteBounded = false`. A table lookup; no `H¹` is computed, and no
+NSC firing enters. -/
+theorem nscRegimeData_profile_nonvanishing_table :
     cohomologyVanishes (classify nscRegimeData) = false := by
   rw [nscRegimeData_transfiniteBounded]; rfl
 
-/-- **NSC firings are the source of the non-Scott (TB/aperiodic) regime.** Bundles
-the two halves of the corpus's `L_ns`-is-the-source claim, over the finite-carrier model:
-
-* **(a)** every reading-closure has **no** NSC firing over the finite carrier
-  (`∀ cl S, ¬ IsNSC cl.op S`) — so NSC firings require an infinite base / non-attained join;
-* **(b)** a concrete `∀`-antecedent firing operator **witnesses** an NSC firing
-  (`IsNSC forallAnteOp botTopPrefix`);
-* **(c)** the non-Scott firing's regime datum classifies to the cohomology-**bearing**
-  `transfiniteBounded` regime (`cohomologyVanishes = false`), where `L_ns`'s `H¹`-generators
-  live.
-
-Together: NSC ⟺ non-Scott regime, and a `∀`-antecedent firing ⟹ NSC ⟹ non-Scott —
-`non-scott-continuous-firing-ordinal.md`'s "`L_ns` is the structural source of transfinite-
-bounded and aperiodic regime cohomology generators". -/
-theorem nsc_firing_source_of_aperiodic :
+/-- **The finite-carrier firing facts.** (a) Every reading-closure has no NSC firing
+(`no_nsc_firing_of_closure`, from `finite_scott_continuous`): an NSC firing needs an operator
+that is not a closure. (b) The `∀`-antecedent operator `forallAnteOp` has an NSC firing on
+`botTopPrefix` (`forallAnteOp_isNSC`). Both are proved. They say nothing about regimes or
+`H¹`: see `nscRegimeData_profile_nonvanishing_table` for the declared row, which no firing
+produces. -/
+theorem no_closure_nsc_firing_and_forallAnte_witness :
     (∀ (cl : Reading.Closure) (S : DirectedFamily), ¬ IsNSC cl.op S)
-    ∧ IsNSC forallAnteOp botTopPrefix
-    ∧ cohomologyVanishes (classify nscRegimeData) = false :=
-  ⟨no_nsc_firing_of_closure, forallAnteOp_isNSC, nsc_cohomology_nonvanishing⟩
+    ∧ IsNSC forallAnteOp botTopPrefix :=
+  ⟨no_nsc_firing_of_closure, forallAnteOp_isNSC⟩
 
 end Obsmetrologia.Flow.NSCFiring

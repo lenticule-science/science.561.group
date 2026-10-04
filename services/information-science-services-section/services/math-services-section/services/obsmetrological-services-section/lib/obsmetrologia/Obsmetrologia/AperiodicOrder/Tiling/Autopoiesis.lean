@@ -4,7 +4,7 @@ import Obsmetrologia.Language.Positing.Quartet
 import Obsmetrologia.Language.Positing.Bigraded
 
 /-!
-# NuclearAutopoiesisCell — the autopoietic cell and the Axiom of History Separation
+# NuclearAutopoiesisCell — the autopoietic cell, and the Axiom of History Separation stated
 
 Assembles the two commuting nuclei of an aperiodic settling — past-facing
 **saturating** `σ` and future-facing **transferring** `Δ` — into a self-producing
@@ -29,11 +29,12 @@ family of nuclear squares over histories forces aperiodicity.
 
 `(σ, Δ)` is modeled as an abstract `Order.CommutingNuclei H` (`σ = j₁`, `Δ = j₂`),
 reusing `NucleusAndCommutingNuclei` wholesale; `Reading.joinSquare` /
-`Positing.Bigraded` gives a worked instance. `history_separation_aperiodicity`
-exhibits `varyingFamily` as a witness that a history-separating family exists, and
-ties it to `AperiodicOrder.Tiling.aperiodicWitness` (`regime = aperiodic`,
-`cl-inv ≠ 0`): a constant nuclear pair forces `cl-inv = 0` (automorphisms invisible),
-a varying one does not.
+`Positing.Bigraded` gives a worked instance. `varying_family_beside_aperiodic_witness`
+records that a history-separating family exists, beside the chosen settling
+`AperiodicOrder.Tiling.aperiodicWitness` (`regime = aperiodic`, `cl-inv ≠ 0`). The two are
+not linked: the Axiom of History Separation (a varying family forces aperiodicity) is stated
+as `HistorySeparationForcesAperiodicity`, relative to a map from families to settlings, and is
+open.
 
 `Positing.FiberAlgebra.cross_order_not_knowledge_nucleus` (a truth-closure is not a
 knowledge-nucleus on the same algebra) concerns the two bilattice value orders and does
@@ -157,7 +158,7 @@ theorem nuclear_autopoiesis_cell {H : Order.HeytingAlgebra} (Q : Order.Commuting
   four_corners := Articulating.Corner.card_eq_four
   joint_is_intersection a := Order.NuclearQuartet.stable_iff_potential_and_active Q a
 
-/-! ## (3) The Axiom of History Separation — varying family ⟹ aperiodicity -/
+/-! ## (3) The Axiom of History Separation — stated, open -/
 
 /-- A `Positing.Bigraded.SquareFamily` that varies (`SquareFamily.Varies`): two
 histories carry different nuclear pairs `(σ_t, Δ_t)`. -/
@@ -170,24 +171,40 @@ theorem varyingFamily_historySeparating : HistorySeparating Reading.varyingFamil
 /-- `AperiodicOrder.Tiling.aperiodicWitness`: `regime = aperiodic`, `cl-inv ≠ 0`. -/
 def separatedSettling : AperiodicOrder.Tiling.Settling := AperiodicOrder.Tiling.aperiodicWitness
 
-/-- A varying nuclear family exists (`Reading.varyingFamily.Varies`); the settling it
-corresponds to (`separatedSettling`) is in `ClosureRegime.aperiodic` with `cl-inv ≠ 0`;
-and any settling in the `strict`/`scott` regime has `cl-inv = 0`. -/
-theorem history_separation_aperiodicity :
-    -- a history-separating (varying) nuclear family exists — history separation is realizable
+/-- **A varying family exists, beside an aperiodic witness.** Three facts with no map between
+them: (1) `Reading.varyingFamily` varies (proved); (2) `separatedSettling :=
+AperiodicOrder.Tiling.aperiodicWitness` has regime `aperiodic` by its definition and `cl-inv ≠ 0`
+(`aperiodicWitness_clinv_nonzero`), a chosen settling; (3) any settling whose regime is
+`strict` or `scott` has `cl-inv = 0` (`clinv_dichotomy.1`), which does not mention
+families. `separatedSettling` is not built from `varyingFamily`, so this does not show that a
+varying family forces aperiodicity; see `HistorySeparationForcesAperiodicity`. -/
+theorem varying_family_beside_aperiodic_witness :
+    -- a history-separating (varying) nuclear family exists
     Reading.varyingFamily.Varies
-    -- to which corresponds a settling in the APERIODIC regime with cl-inv ≠ 0:
-    -- varying ⟹ aperiodicity (cohomology nonzero, automorphisms visible)
+    -- a chosen settling in the APERIODIC regime with cl-inv ≠ 0, not derived from the family
     ∧ (separatedSettling.regime = ClosureRegime.aperiodic
         ∧ separatedSettling.clInv ≠ AperiodicOrder.Tiling.H1Class.zero)
-    -- the vanishing baseline: a CONSTANT (non-history-separating) settling — one in a
-    -- strict/scott regime — is forced to cl-inv = 0 (automorphisms invisible)
+    -- a settling in a strict/scott regime has cl-inv = 0
     ∧ (∀ v : AperiodicOrder.Tiling.Settling,
         (v.regime = ClosureRegime.strict ∨ v.regime = ClosureRegime.scott) →
           v.clInv = AperiodicOrder.Tiling.H1Class.zero) :=
   ⟨Reading.varyingFamily_varies,
    ⟨rfl, AperiodicOrder.Tiling.aperiodicWitness_clinv_nonzero⟩,
    AperiodicOrder.Tiling.clinv_dichotomy.1⟩
+
+-- OPEN: the Axiom of History Separation, that a fiberwise-varying family of nuclear squares
+-- forces aperiodicity. The statement below takes the missing map from a family to a settling as
+-- a parameter; no such map is defined in this package, so the claim is stated and not proved.
+
+/-- **History separation forces aperiodicity, relative to a map `settlingOf` from families to
+settlings.** For every varying family, the settling `settlingOf` assigns is aperiodic. Stated
+without proof (open): `settlingOf` is not defined here, and a definition that ignores its
+argument would make the statement true by construction. -/
+def HistorySeparationForcesAperiodicity
+    (settlingOf : ∀ {H : HeytingAlgebra} {I : Type}, SquareFamily H I →
+      AperiodicOrder.Tiling.Settling) : Prop :=
+  ∀ {H : HeytingAlgebra} {I : Type} (family : SquareFamily H I),
+    HistorySeparating family → (settlingOf family).regime = ClosureRegime.aperiodic
 
 /-! ## (4) History-filtration nuclei are distinct from value-order nuclei -/
 

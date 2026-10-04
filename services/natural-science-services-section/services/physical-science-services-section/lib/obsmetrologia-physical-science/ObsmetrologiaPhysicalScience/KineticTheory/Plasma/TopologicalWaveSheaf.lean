@@ -91,21 +91,21 @@ structure BandSheaf where
   regime : ClosureRegimeData
 
 /-- A **topologically protected edge mode**: the band's settling flow is curved (non-Scott) — a curvature obstruction, the finite projection of a protected edge mode that cannot be deformed into the bulk. -/
-def EdgeObstruction (B : BandSheaf) : Prop := IsCurved (classify B.regime)
+def EdgeObstruction (B : BandSheaf) : Prop := DeclaredCurved (classify B.regime)
 
 /-- **A protected edge mode forces `H¹ ≠ 0`.** A topologically protected (curved) band has non-vanishing
 settling cohomology, `cohomologyVanishes (classify B.regime) = false` — the bulk-edge correspondence
-read off `nonvanishes_iff_curved`. -/
+read off `nonvanishes_iff_declaredCurved`. -/
 theorem edge_obstruction_implies_H1_nonzero (B : BandSheaf) (h : EdgeObstruction B) :
     cohomologyVanishes (classify B.regime) = false :=
-  (nonvanishes_iff_curved (classify B.regime)).mpr h
+  (nonvanishes_iff_declaredCurved (classify B.regime)).mpr h
 
 /-- **A trivial (flat) bulk admits no protected edge mode.** If the band's settling regime is flat
 (`H¹ = 0`, the topologically trivial bulk), there is no protected edge mode — the bulk-edge
 correspondence prohibition. -/
-theorem flat_band_forbids_edge_obstruction (B : BandSheaf) (h : IsFlat (classify B.regime)) :
+theorem flat_band_forbids_edge_obstruction (B : BandSheaf) (h : DeclaredFlat (classify B.regime)) :
     ¬ EdgeObstruction B :=
-  fun hc => not_flat_and_curved (classify B.regime) ⟨h, hc⟩
+  fun hc => not_declaredFlat_and_declaredCurved (classify B.regime) ⟨h, hc⟩
 
 /-- An **aperiodic spectral band**: its settling flow is non-Scott-continuous with uncountable closure
 ordinal — the regime classifies as `aperiodic`. Witnesses that a protected edge mode occurs. -/

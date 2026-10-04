@@ -211,7 +211,7 @@ example :
   frozen_in_iff_no_reconnection canonicalReconnection
 
 example :
-    IsCurved (classify nscRegimeData) :=
+    DeclaredCurved (classify nscRegimeData) :=
   canonicalReconnection_regime_curved
 ```
 

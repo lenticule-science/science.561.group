@@ -2,7 +2,7 @@ import Obsmetrologia.Language.Positing.Four
 import Obsmetrologia.Language.Positing.ReadingTactic
 
 /-!
-# Bigraded cohomology — the aperiodic-regime trichotomy and the ℤ/2 gauge
+# Bigraded content — a two-bit classifier and the ℤ/2 gauge
 
 `Sheaf` proved `H¹ = 0` in the finite/strict regime. The **aperiodic** regime
 (κ ≥ ω₁) is exactly where `H¹` need **not** vanish, and the corpus classifies it
@@ -13,9 +13,11 @@ The newly-designated cells of a settling split **disjointly**:
 part — so the settling-associated sheaf splits `F^(k) ≅ F^(t) ⊕ F^(⊤)` (truth-side ⊕
 inconsistency-side), with `F^(⊤) = 0` iff there are no `⊤`-cells.
 
-The **bigraded classifying invariant** is the nonzero-pattern of `(H¹_t, H¹_⊤)` — and
-it is *itself the four-point FOUR object* (the recurrence). Its **trichotomy** on the
-nontrivial stratum:
+The corpus's **bigraded classifying invariant** is the nonzero-pattern of `(H¹_t, H¹_⊤)`.
+This module does not compute any `H¹`. It classifies the pair of Booleans
+`(truthContent, inconsistencyContent)` over a finite list of cells (`regimeOf`), and
+`regimeOf_nontrivial_cases` is the case split of that classifier on the nontrivial stratum
+(by definition). The corpus's names for the cases:
 
 * **consistent** — only `t`-firings (`F^(⊤) = 0`); the strict/Scott-continuous case;
 * **paraconsistent** — only `⊤`-firings;
@@ -29,8 +31,12 @@ The **internal `ℤ/2` gauge** is bilattice negation `~` (the Klein-four's `~` f
 * **sign-flipping on the `t`-summand** — `~` swaps `t ↔ f`, so a `t`-firing maps to an
   `f`-firing.
 
-Hence paraconsistent points are **gauge-stable**, classical points are **gauge-moved**.
-No free data.
+Hence paraconsistent points are **gauge-stable**, classical points are **gauge-moved**
+(`gauge_fixes_inconsistency`, `gauge_flips_truth`, `paraconsistent_gauge_stable`: proved on
+the Boolean contents).
+
+-- OPEN: the identification of the Booleans with `(H¹_t, H¹_⊤)` and of the case split with the
+-- aperiodic regime (see `regimeOf_nontrivial_cases`).
 -/
 
 namespace Obsmetrologia
@@ -63,7 +69,7 @@ theorem isTruthFiring_negate (c : Reading) : isTruthFiring (negate c) = isFalseF
 
 end Reading
 
-/-! ## The bigraded invariant and its trichotomy -/
+/-! ## The two-bit classifier and its cases -/
 
 /-- Truth-side content over a finite cell list: is there a `t`-firing? (`H¹_t ≠ 0`.) -/
 def truthContent (cells : List PredicationCell) (v : Valuation) : Bool :=
@@ -92,9 +98,16 @@ def regimeOf (t i : Bool) : Regime :=
   | false, true  => .paraconsistent
   | true,  true  => .mixed
 
-/-- **The aperiodic-regime trichotomy.** On the nontrivial stratum (some firing), a
-settling is consistent, paraconsistent, or mixed — disjoint and jointly exhaustive. -/
-theorem trichotomy (t i : Bool) (h : t || i = true) :
+/-- **The nontrivial cases of the two-bit classifier.** If `t || i = true`, then `regimeOf t i`
+is `consistent`, `paraconsistent` or `mixed`. A finite case split on two Booleans, by the
+definition of `regimeOf`. `regimeOf` classifies a pair of Booleans, and nothing here connects
+`truthContent`/`inconsistencyContent` to `H¹_t`/`H¹_⊤`, or the pair to the aperiodic regime.
+
+-- OPEN: the corpus's trichotomy of the aperiodic regime by the bigraded invariant
+-- `(H¹_t, H¹_⊤)`. It needs the two settling-associated sheaves `F^(t)`, `F^(⊤)` and their `H¹`;
+-- this package builds no cohomology complex above degree 1, and the Booleans here are cell
+-- counts over a finite list. -/
+theorem regimeOf_nontrivial_cases (t i : Bool) (h : t || i = true) :
     regimeOf t i = .consistent ∨ regimeOf t i = .paraconsistent ∨ regimeOf t i = .mixed := by
   reading
 

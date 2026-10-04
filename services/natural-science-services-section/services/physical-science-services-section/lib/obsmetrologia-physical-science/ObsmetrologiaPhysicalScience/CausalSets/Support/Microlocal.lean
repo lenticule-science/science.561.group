@@ -85,9 +85,9 @@ theorem causal_propagation_is_closure {E : Type} (C : CausalSet E) :
 /-- `H¹` vanishing classifies the singularity regime: vanishing ⟺ flat (empty singular support),
 nonvanishing ⟺ curved (singular). -/
 theorem h1_classifies_singularity_regime (r : ClosureRegime) :
-    (cohomologyVanishes r = true ↔ Flow.CurvatureRegime.IsFlat r)
-    ∧ (cohomologyVanishes r = false ↔ Flow.CurvatureRegime.IsCurved r) :=
-  ⟨Flow.CurvatureRegime.vanishes_iff_flat r, Flow.CurvatureRegime.nonvanishes_iff_curved r⟩
+    (cohomologyVanishes r = true ↔ Flow.CurvatureRegime.DeclaredFlat r)
+    ∧ (cohomologyVanishes r = false ↔ Flow.CurvatureRegime.DeclaredCurved r) :=
+  ⟨Flow.CurvatureRegime.vanishes_iff_declaredFlat r, Flow.CurvatureRegime.nonvanishes_iff_declaredCurved r⟩
 
 /-! ## (D) The bundled headline -/
 
@@ -98,11 +98,11 @@ theorem microlocal_support_propagation {E : Type} (C : CausalSet E) (r : Closure
     (∀ (S : CausalSets.Causal.Laplacian.Section E),
         CausalSets.Causal.Laplacian.causalClosure C (CausalSets.Causal.Laplacian.causalClosure C S)
           = CausalSets.Causal.Laplacian.causalClosure C S)
-    ∧ (cohomologyVanishes r = true ↔ Flow.CurvatureRegime.IsFlat r)
-    ∧ (cohomologyVanishes r = false ↔ Flow.CurvatureRegime.IsCurved r) :=
+    ∧ (cohomologyVanishes r = true ↔ Flow.CurvatureRegime.DeclaredFlat r)
+    ∧ (cohomologyVanishes r = false ↔ Flow.CurvatureRegime.DeclaredCurved r) :=
   ⟨fun S => CausalSets.Causal.Laplacian.causalClosure_idem C S,
-   Flow.CurvatureRegime.vanishes_iff_flat r,
-   Flow.CurvatureRegime.nonvanishes_iff_curved r⟩
+   Flow.CurvatureRegime.vanishes_iff_declaredFlat r,
+   Flow.CurvatureRegime.nonvanishes_iff_declaredCurved r⟩
 
 end CausalSets.Support.Microlocal
 end Obsmetrologia

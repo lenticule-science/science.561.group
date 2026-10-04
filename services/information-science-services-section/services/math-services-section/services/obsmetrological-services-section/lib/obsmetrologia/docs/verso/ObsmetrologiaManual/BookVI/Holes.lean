@@ -194,7 +194,7 @@ example :
 
 example (v : AperiodicOrder.Tiling.Settling)
     (h : Defect.HasDefect v) :
-    Flow.CurvatureRegime.IsCurved v.regime :=
+    Flow.CurvatureRegime.DeclaredCurved v.regime :=
   Defect.hasDefect_curved v h
 
 example (v : AperiodicOrder.Tiling.Settling)
