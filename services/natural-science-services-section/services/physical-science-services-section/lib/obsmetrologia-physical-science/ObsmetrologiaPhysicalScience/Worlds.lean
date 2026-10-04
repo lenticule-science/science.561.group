@@ -37,6 +37,15 @@ physics from the regime or the regime from the physics. What carries the regimes
 proved on their carriers. `thermalResidue` is defined to be balanced. See the science note of
 2026-10-03 on the evidence status of agents ahead.
 
+The world/regime/stage facts below (`world_stage_table`, `next_world_stage_table`,
+`world_rank_table_ordered`, `world_gap_flags_iff_upper`, `world_profile_table`) hold by the
+definitions of the tables. The `*_row_beside_theorems` statements put the declared pairing
+beside real theorems, with no map between them.
+
+-- OPEN: that the four physical worlds are the four closure regimes, with each world's
+-- physics derived from its regime (or the regime from the physics). Needs regimes derived
+-- from closures and a map from each world's carrier to a closure.
+
 Each world's anchor cites theorems the library proves:
 
 * **Thermodynamic.** An inflationary step on FOUR settles by stage three
@@ -60,7 +69,7 @@ Each world's anchor cites theorems the library proves:
 The worlds are ahead of one another in the precise sense of `RegimeGate.HasGap`.
 The thermodynamic and causal worlds have no gap: iteration attains the first, and
 the second has nothing to attain. The quantum and kinetic worlds have gaps: their
-completions are reached by proof and by no finite stage (`ahead_iff`). A proof made
+completions are reached by proof and by no finite stage (`world_gap_flags_iff_upper`). A proof made
 in the quantum or kinetic world carries a certificate
 (`AheadCertificate`, `GermCertificate`). The certificate moves a completion from
 *impossible* at every causal stage, to *necessary* as the orbit's least bound, to
@@ -143,40 +152,42 @@ def worldRegimeBij : Bij World ClosureRegime where
   left w := by cases w <;> rfl
   right r := by cases r <;> rfl
 
-/-- The stages of the worlds: the kinetic articulates, the quantum predicates, the
-causal posits, the thermodynamic settles. -/
-theorem world_stages :
+/-- The stages of the worlds, by definition: `World.stage` composes the declared tables
+`World.regime` and `Stage.regime`. -/
+theorem world_stage_table :
     World.kinetic.stage = Stage.articulating
     ∧ World.quantum.stage = Stage.predicating
     ∧ World.causal.stage = Stage.positing
     ∧ World.thermodynamic.stage = Stage.settling :=
   ⟨rfl, rfl, rfl, rfl⟩
 
-/-- The passage of the worlds is the cycle of the spine. -/
-theorem next_stage (w : World) : w.next.stage = w.stage.next := by
+/-- `World.next` agrees with `Stage.next` on the stage table (`rfl` by cases). By definition. -/
+theorem next_world_stage_table (w : World) : w.next.stage = w.stage.next := by
   cases w <;> rfl
 
-/-- **The order of the worlds.** The causal world sits above the thermodynamic world
-and below the quantum world, which sits below the kinetic world. -/
-theorem worlds_ordered :
+/-- **The order of the worlds in the rank table.** `decide` on `ClosureRegime.rank` read
+through `World.regime`. By definition: it orders four declared rows. -/
+theorem world_rank_table_ordered :
     World.thermodynamic.regime.rank < World.causal.regime.rank
     ∧ World.causal.regime.rank < World.quantum.regime.rank
     ∧ World.quantum.regime.rank < World.kinetic.regime.rank :=
   ⟨by decide, by decide, by decide⟩
 
-/-- **Which worlds are ahead.** A world has a gap, a completion reached by proof and
-by no finite stage, exactly when it is the quantum or the kinetic world. -/
-theorem ahead_iff (w : World) :
+/-- **Which worlds the gate's flags mark as having a gap.** By the declared flags, exactly the
+quantum and kinetic rows. A finite check of tables (`gap_flags_iff_upper_rank`), not a
+derivation from the physics. -/
+theorem world_gap_flags_iff_upper (w : World) :
     RegimeGate.HasGap w.regime ↔ (w = World.quantum ∨ w = World.kinetic) := by
-  rw [gap_iff_upper]
+  rw [gap_flags_iff_upper_rank]
   cases w
   · exact ⟨fun h => absurd h (by decide), fun h => by cases h <;> contradiction⟩
   · exact ⟨fun h => absurd h (by decide), fun h => by cases h <;> contradiction⟩
   · exact ⟨fun _ => Or.inl rfl, fun _ => by decide⟩
   · exact ⟨fun _ => Or.inr rfl, fun _ => by decide⟩
 
-/-- Cohomology vanishes in the two lower worlds and obstructs in the two upper ones. -/
-theorem world_cohomology :
+/-- The declared cohomology profile read through `World.regime`: `true` in the two lower rows,
+`false` in the two upper rows (`rfl`). A table lookup; no cohomology is computed. -/
+theorem world_profile_table :
     cohomologyVanishes World.thermodynamic.regime = true
     ∧ cohomologyVanishes World.causal.regime = true
     ∧ cohomologyVanishes World.quantum.regime = false
@@ -185,9 +196,10 @@ theorem world_cohomology :
 
 /-! ## (B) The anchors -/
 
-/-- **The thermodynamic world settles.** Every inflationary step on FOUR settles by
+/-- **The thermodynamic row, beside theorems.** The first conjunct is the declared pairing (`rfl`); the rest are real theorems that the pairing places beside it, unconnected to the regime by any map.
+ Every inflationary step on FOUR settles by
 stage three, and every equilibrating exchange lowers or keeps Boltzmann's `H`. -/
-theorem thermodynamic_anchor :
+theorem thermodynamic_row_beside_theorems :
     World.thermodynamic.regime = ClosureRegime.strict
     ∧ (∀ f : Reading → Reading, (∀ a, Reading.KLE a (f a)) →
         ∀ x, Reading.iter f 3 x = Reading.iter f 4 x)
@@ -195,9 +207,10 @@ theorem thermodynamic_anchor :
         Thermodynamics.configH q ≤ Thermodynamics.configH p) :=
   ⟨rfl, Reading.settles_by_three, fun _ _ h => Thermodynamics.htheorem h⟩
 
-/-- **The causal world goes on.** The tally increment fixes no record at any stage, and
+/-- **The causal row, beside theorems.** The first conjunct is the declared pairing (`rfl`); the rest are real theorems that the pairing places beside it, unconnected to the regime by any map.
+ The tally increment fixes no record at any stage, and
 the time section rises strictly along every causal step. -/
-theorem causal_anchor :
+theorem causal_row_beside_theorems :
     World.causal.regime = ClosureRegime.scott
     ∧ (∀ k r, Record.iter Record.succPos (k + 1) r ≠ Record.iter Record.succPos k r)
     ∧ (∀ {E : Type} (es : List E) (prec : E → E → Bool),
@@ -228,10 +241,11 @@ theorem quantum_ahead_of_classical (g : Fin 5 → Bool)
     (RReal.ofRat_mono (ratOfNat_le (QuantumContextuality.kcbs_classical_bound g hg)))
     QuantumContextuality.kcbs_quantum_value_exceeds_classical.2
 
-/-- **The quantum world is obstructed and ahead.** Its regime has a gap and an ahead
+/-- **The quantum row, beside theorems.** The first conjunct is the declared pairing (`rfl`); the rest are real theorems that the pairing places beside it, unconnected to the regime by any map.
+ Its regime has a gap and an ahead
 certificate, the PR box has a local section with no global extension, and the KCBS
 value exceeds every classical count. -/
-theorem quantum_anchor :
+theorem quantum_row_beside_theorems :
     World.quantum.regime = ClosureRegime.transfiniteBounded
     ∧ RegimeGate.HasGap World.quantum.regime
     ∧ Nonempty (AheadCertificate ORecord.OKLE ORecord.osuccPos omegaOrbit)
@@ -244,10 +258,11 @@ theorem quantum_anchor :
   ⟨rfl, RegimeGate.transfiniteBounded_has_gap, ⟨omega_ahead⟩,
     QuantumContextuality.prBox_logicallyContextual, quantum_ahead_of_classical⟩
 
-/-- **The kinetic world is obstructed and ahead.** Its regime has a gap, a perfectly
+/-- **The kinetic row, beside theorems.** The first conjunct is the declared pairing (`rfl`); the rest are real theorems that the pairing places beside it, unconnected to the regime by any map.
+ Its regime has a gap, a perfectly
 correlated joint does not factorize, and the balanced unit residue gives every seed a
 germ certificate. -/
-theorem kinetic_anchor :
+theorem kinetic_row_beside_theorems :
     World.kinetic.regime = ClosureRegime.aperiodic
     ∧ RegimeGate.HasGap World.kinetic.regime
     ∧ ¬ KineticTheory.Gas.Factorizes KineticTheory.Gas.eprJoint

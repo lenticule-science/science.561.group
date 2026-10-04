@@ -5,8 +5,8 @@ import Obsmetrologia.Closure.RegimeGate
 
 `Closure.Regime` lays the four regimes along the spine, one stage each:
 articulating (aperiodic) → predicating (transfinite-bounded) → positing (Scott) →
-settling (strict). Read as a passage, the spine descends the tower. This module
-closes it: settling hands its residue back to articulating, and the tower turns.
+settling (strict). Read as a passage, the spine descends the tower (a reading over
+declared tables: `spine_rank_table_descends`). This module closes it: settling hands its residue back to articulating, and the tower turns.
 
 The turn is a spiral, not a circle. Every lap passes through the same four stages
 (the whirl, period four), and every lap adds the same residue to the carried record
@@ -31,7 +31,7 @@ determined*:
 
 `AheadCertificate` is the data-valued form, inhabited at the transfinite-bounded rung
 by `ORecord.omegaPos`. `GermCertificate` is the class-valued form, inhabited at the
-aperiodic rung by every nonzero residue. `gap_split` proves that a gap is exactly one
+aperiodic rung by every nonzero residue. `gap_flags_split` proves that a gap is exactly one
 of the two shapes, read from the gate's own flags.
 
 ## Main definitions
@@ -43,7 +43,7 @@ of the two shapes, read from the gate's own flags.
 
 ## Main results
 
-* `Stage.next_four`, `spine_descends`, `return_ascends` — three steps down the tower,
+* `Stage.next_four`, `spine_rank_table_descends`, `return_rank_table_ascends` — three steps down the tower,
   one jump back to its top.
 * `iterSeq_residueBump` — `k` laps add `k` copies of the residue (the tiling).
 * `residue_dichotomy` — a zero residue settles at once; any other residue never
@@ -52,7 +52,7 @@ of the two shapes, read from the gate's own flags.
   truth bias fixed while the contradiction mass grows.
 * `dervish` — on the spiral, the stage returns every four steps and the carried record
   never does.
-* `omega_ahead`, `residue_germ_ahead`, `gap_split`, `ahead_exactly_at_gap` — the
+* `omega_ahead`, `residue_germ_ahead`, `gap_flags_split`, `gap_flags_beside_certificates` — the
   certificates, and where in the tower they live.
 -/
 
@@ -83,8 +83,12 @@ def ClosureRegime.rank : ClosureRegime → Nat
   | ClosureRegime.transfiniteBounded => 2
   | ClosureRegime.aperiodic => 3
 
-/-- Each spine step descends the tower by exactly one rung. -/
-theorem spine_descends (s : Stage) (h : s ≠ Stage.settling) :
+/-- Each spine step descends the rank table by one rung. By definition: `Stage.regime` and
+`ClosureRegime.rank` are tables, and this is a lookup (`rfl`) in them.
+
+-- OPEN: that the spine's passage descends a tower of closure ordinals. Needs regimes derived
+-- from closures in place of the declared `Stage.regime` table. -/
+theorem spine_rank_table_descends (s : Stage) (h : s ≠ Stage.settling) :
     s.next.regime.rank + 1 = s.regime.rank := by
   cases s
   · rfl
@@ -92,17 +96,19 @@ theorem spine_descends (s : Stage) (h : s ≠ Stage.settling) :
   · rfl
   · exact absurd rfl h
 
-/-- The return from settling climbs from the bottom of the tower to its top. -/
-theorem return_ascends :
+/-- The return from settling climbs from rank 0 to rank 3 in the tables. By definition
+(`rfl` on `Stage.regime`, `Stage.next` and `ClosureRegime.rank`). -/
+theorem return_rank_table_ascends :
     Stage.settling.regime = ClosureRegime.strict
     ∧ Stage.settling.next.regime = ClosureRegime.aperiodic
     ∧ ClosureRegime.strict.rank = 0
     ∧ ClosureRegime.aperiodic.rank = 3 :=
   ⟨rfl, rfl, rfl, rfl⟩
 
-/-- The tower's gaps sit at its top two rungs: a regime has a gap exactly when its
-rank is at least two. -/
-theorem gap_iff_upper (r : ClosureRegime) : RegimeGate.HasGap r ↔ 2 ≤ r.rank := by
+/-- The gate's flags and the rank table agree: `HasGap r` (read from three Boolean flags in
+`RegimeGate`) holds exactly when the rank table gives `2 ≤ r.rank`. A finite check of two
+tables, not a theorem about closures. -/
+theorem gap_flags_iff_upper_rank (r : ClosureRegime) : RegimeGate.HasGap r ↔ 2 ≤ r.rank := by
   cases r
   · exact ⟨fun h => absurd h RegimeGate.strict_no_gap, fun h => absurd h (by decide)⟩
   · exact ⟨fun h => absurd h RegimeGate.scott_no_gap, fun h => absurd h (by decide)⟩
@@ -338,10 +344,11 @@ def residue_germ_ahead (c : Record) (hc : c ≠ Record.kBot) (s : Nat → Record
   moving := (Record.residue_dichotomy c).2 hc |>.2.1 s
   unfixed := (Record.residue_dichotomy c).2 hc |>.1
 
-/-- **A gap has one of two shapes**, read from the gate's own flags: a fixed point that
-no finite stage reaches (the ahead shape), or no fixed point at all under a weak
-collapse (the germ shape). -/
-theorem gap_split (r : ClosureRegime) :
+/-- **The gate's flags split a gap into two shapes**: a fixed point that no finite stage
+reaches (the ahead shape), or no fixed point under a weak collapse (the germ shape). A
+finite check of the declared flag tables in `RegimeGate`; the flags are not read off any
+closure. -/
+theorem gap_flags_split (r : ClosureRegime) :
     RegimeGate.HasGap r ↔
       (RegimeGate.hasFixedPoint r = true ∧ RegimeGate.attainedAtFiniteStage r = false)
       ∨ (RegimeGate.hasFixedPoint r = false ∧ RegimeGate.weaklyQuiescent r = true) := by
@@ -349,11 +356,16 @@ theorem gap_split (r : ClosureRegime) :
     simp [RegimeGate.HasGap, RegimeGate.hasFixedPoint, RegimeGate.attainedAtFiniteStage,
       RegimeGate.weaklyQuiescent]
 
-/-- **Ahead exactly at the gaps.** Strict and Scott have no gap, so there is nothing for a
-limit proof to jump to. The transfinite-bounded rung takes the ahead shape, and the
-completed record certifies it. The aperiodic rung takes the germ shape, and every
-nonzero residue certifies it. -/
-theorem ahead_exactly_at_gap :
+/-- **The gate's gap flags, beside the certificates.** By the declared flags, strict and Scott
+have no gap and the transfinite-bounded and aperiodic rungs do; the completed record
+(`omega_ahead`) and every nonzero residue (`residue_germ_ahead`) are real certificates, proved
+on their carriers. The carriers are not derived from the rungs: the pairing of a certificate
+with a regime is the house's reading.
+
+-- OPEN: that a closure attains its fixed point only at a gap rung, derived from the closure
+-- and not from flags (whether a closure attains its fixed point at a finite stage is
+-- undecidable in general). -/
+theorem gap_flags_beside_certificates :
     (¬ RegimeGate.HasGap ClosureRegime.strict ∧ ¬ RegimeGate.HasGap ClosureRegime.scott)
     ∧ (RegimeGate.HasGap ClosureRegime.transfiniteBounded
         ∧ RegimeGate.hasFixedPoint ClosureRegime.transfiniteBounded = true

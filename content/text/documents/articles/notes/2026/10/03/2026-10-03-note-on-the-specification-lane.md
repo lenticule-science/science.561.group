@@ -107,6 +107,22 @@ proved: the one-step reducts in leftmost-outermost order, sound and complete for
 
 Updated as slices land; newest first.
 
+- 2026-10-03, slice 4c (honest spine, third pass), candidate `lane-7/honest-spine-3`:
+  - `classify`: a definition (an `if`-chain over three flags), kept; docstring says the flags
+    are inputs. `classify_exhaustive`: true because `classify` is total, kept.
+    `four_regime_dichotomy`: by definition, renamed `four_regime_flag_cases`; the ordinal
+    dichotomy is `-- OPEN:`.
+  - RegimeCycle: `spine_descends`, `return_ascends`, `gap_iff_upper`, `gap_split`,
+    `ahead_exactly_at_gap` are table facts, renamed `spine_rank_table_descends`,
+    `return_rank_table_ascends`, `gap_flags_iff_upper_rank`, `gap_flags_split`,
+    `gap_flags_beside_certificates`. The residue and certificate theorems stay (proved).
+  - Worlds: `world_stages`, `next_stage`, `worlds_ordered`, `ahead_iff`, `world_cohomology` are
+    table facts, renamed `world_stage_table`, `next_world_stage_table`,
+    `world_rank_table_ordered`, `world_gap_flags_iff_upper`, `world_profile_table`; the four
+    `*_anchor` theorems are now `*_row_beside_theorems`. "The worlds are the regimes" is
+    `-- OPEN:`.
+  - Other lanes cite `gap_iff_upper` in comments (signchain `src/contracts/phase.mjs`, metrologic
+    `settling/certificate.mjs`); those comments name the old declaration.
 - 2026-10-03, slice 4b (honest spine, second pass). Five census targets read and graded:
   - `CurvatureRegime`: by definition. `IsFlat`/`IsCurved`/`curvatureRank` become
     `DeclaredFlat`/`DeclaredCurved`/`declaredCurvatureRank`, `curvature_regime_correspondence`

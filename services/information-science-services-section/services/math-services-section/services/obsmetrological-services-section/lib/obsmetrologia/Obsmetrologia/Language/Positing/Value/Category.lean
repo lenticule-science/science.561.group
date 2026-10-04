@@ -35,7 +35,7 @@ We model this dependency-free:
   least fixed point above `v`, exactly as `Reading.Closure` / `ModalFrame` settle).
 * **`four_regime_v_independent`** — for **any** `V` and `VClosure` on it,
   carrying its regime data `ClosureRegimeData` classifies it (via `classify`) into one
-  of the four regimes, and the full `four_regime_dichotomy` holds *uniformly*: the
+  of the four regimes, and the full `four_regime_flag_cases` holds *uniformly*: the
   four characterizations are mutually exclusive and jointly exhaustive for every `V`.
   The classifier `regimeOf` factors through the `ClosureRegimeData` only — it never
   inspects `V` or its `VClosure` — so the four-regime classification is `V`-parametric
@@ -153,7 +153,7 @@ Boolean flags `κ` actually depends on: Scott-continuity, finite base, countable
 cofinality, with the corpus's two implications). The classifier `regimeOf` reads only
 `d` — it takes the `V` and `VClosure` purely as parameters and **discards** them — so
 the regime is a function of `d` alone, identical across all `V`. The full
-`four_regime_dichotomy` then holds uniformly over every `V`. -/
+`four_regime_flag_cases` then holds uniformly over every `V`. -/
 
 /-- The regime of a settling over `V`, **factored through its closure-ordinal data
 only**: `regimeOf V T d = classify d`. The value category `V` and the closure `T` are
@@ -178,14 +178,14 @@ its settling, the regime `regimeOf V T d`:
 * lands in exactly one of the four regimes (joint exhaustiveness), and each regime is
   selected by exactly its corpus condition — *finite base* (strict) / *Scott-continuous,
   infinite base* (Scott) / *non-Scott, countable cofinality* (transfinite-bounded) /
-  *non-Scott, uncountable cofinality* (aperiodic) — i.e. the full `four_regime_dichotomy`;
+  *non-Scott, uncountable cofinality* (aperiodic) — i.e. the full `four_regime_flag_cases`;
 * **does not depend on `V` or `T`**: for any other `V'`, `T'` with the *same* `d`, the
   regime is identical (`regimeOf_v_independent`).
 
 So the strict/Scott/TB/aperiodic classification is `V`-parametric in statement but the
 four cases are `V`-independent in content — the dichotomy is decided by the closure
 ordinal `κ` alone, recovering the corpus's continuous-valued-settling uniformity.
-Reuses `ClosureOrdinalRegime.four_regime_dichotomy`. -/
+Reuses `ClosureOrdinalRegime.four_regime_flag_cases`. -/
 theorem four_regime_v_independent (V : ValueCategory) (T : VClosure V) (d : ClosureRegimeData) :
     ((regimeOf V T d = ClosureRegime.strict ∨ regimeOf V T d = ClosureRegime.scott
         ∨ regimeOf V T d = ClosureRegime.transfiniteBounded
@@ -199,7 +199,7 @@ theorem four_regime_v_independent (V : ValueCategory) (T : VClosure V) (d : Clos
           (d.scottContinuous = false ∧ d.countableCofinality = false)))
     ∧ (∀ (V' : ValueCategory) (T' : VClosure V'),
         regimeOf V T d = regimeOf V' T' d) :=
-  ⟨four_regime_dichotomy d, fun V' T' => regimeOf_v_independent V V' T T' d⟩
+  ⟨four_regime_flag_cases d, fun V' T' => regimeOf_v_independent V V' T T' d⟩
 
 /-! ## (D) Boolean `{0,1}` and FOUR recover the spine
 
