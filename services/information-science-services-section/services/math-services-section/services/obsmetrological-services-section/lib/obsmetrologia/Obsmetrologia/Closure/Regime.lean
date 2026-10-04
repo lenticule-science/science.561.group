@@ -78,7 +78,8 @@ structure ClosureRegimeData where
   /-- Corpus constraint: a finite base forces countable cofinality. -/
   fin_cof : finiteBase = true → countableCofinality = true
 
-/-- Classify regime data into its regime via the corpus equivalences: strict if the
+/-- Classify regime data into its regime by its flags, in this order (a definition; the
+flags are inputs, not read off a closure or an ordinal): strict if the
 base is finite (`κ < ω`); else Scott if the closure is Scott-continuous (`κ = ω`);
 else transfinite-bounded if the cofinality is countable (`ω < κ < ω₁`); else aperiodic
 (`κ ≥ ω₁`). -/
@@ -137,21 +138,25 @@ theorem classify_aperiodic (d : ClosureRegimeData) :
       | exact Bool.noConfusion (hcc rfl)
       | simp [classify]
 
-/-- **Joint exhaustiveness.** Every regime datum classifies to one of the four
-regimes — trivially, since `classify` is total into `ClosureRegime`. -/
+/-- **Joint exhaustiveness.** Every regime datum classifies to one of the four regimes.
+Holds because `classify` is a total function into `ClosureRegime`. -/
 theorem classify_exhaustive (d : ClosureRegimeData) :
     classify d = ClosureRegime.strict ∨ classify d = ClosureRegime.scott
       ∨ classify d = ClosureRegime.transfiniteBounded ∨ classify d = ClosureRegime.aperiodic := by
   cases classify d <;> decide
 
-/-- **The four-regime dichotomy.** Bundles joint exhaustiveness with the
-four corpus characterizations: for any `ClosureRegimeData`, `classify` lands in one of the
-four regimes, and each regime is selected by exactly its corpus condition —
-*finite base* / *Scott-continuous, infinite base* / *non-Scott, countable cofinality*
-/ *non-Scott, uncountable cofinality*. Together with the implications between the
-conditions, exactly one holds, so the four conditions are mutually exclusive and
-jointly exhaustive — `four-regime-dichotomy.md` over the decidable characterization. -/
-theorem four_regime_dichotomy (d : ClosureRegimeData) :
+/-- **The four cases of the flag classifier.** For any `ClosureRegimeData`, `classify` lands
+in one of the four regimes, and each is selected by exactly the flag condition that `classify`
+is defined by (finite base / Scott-continuous with infinite base / non-Scott with countable
+cofinality / non-Scott with uncountable cofinality). The conditions are mutually exclusive and
+jointly exhaustive over the Boolean flags. This is a fact about the `if`-chain defining
+`classify`, proved by case analysis on the flags, and it holds by that definition.
+
+-- OPEN: the corpus's four-regime dichotomy (`four-regime-dichotomy.md`), that a closure
+-- ordinal `κ` falls in exactly one of `κ < ω`, `κ = ω`, `ω < κ < ω₁`, `κ ≥ ω₁`, with the
+-- Scott-continuity and cofinality flags derived from the closure. Here the flags are inputs
+-- (`ClosureRegimeData`), and no ordinal or closure determines them. -/
+theorem four_regime_flag_cases (d : ClosureRegimeData) :
     (classify d = ClosureRegime.strict ∨ classify d = ClosureRegime.scott
       ∨ classify d = ClosureRegime.transfiniteBounded ∨ classify d = ClosureRegime.aperiodic)
     ∧ (classify d = ClosureRegime.strict ↔ d.finiteBase = true)

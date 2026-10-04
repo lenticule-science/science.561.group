@@ -297,7 +297,7 @@ that stochastic settling is an instance of settling-over-`V`:
 * **(b)** `stochVC V` carries a `Positing.Value.VClosure` (`stochVClosure V`), so the hub's
   **four-regime classification is `V`-independent for stochastic settling**: for any
   closure-ordinal data `d`, `regimeOf (stochVC V) (stochVClosure V) d` satisfies the full
-  `four_regime_dichotomy` and agrees with the regime over every other value category
+  `four_regime_flag_cases` and agrees with the regime over every other value category
   (`four_regime_v_independent`);
 * **(c)** Perron–Frobenius existence holds concretely: the doubly-stochastic 2-state
   `witnessKernel` has the uniform distribution `uniformWitness` as a **stationary**

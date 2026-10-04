@@ -61,7 +61,7 @@ The classification lemmas give the four cases:
 
 and the bundled theorem is:
 
-{docstring Obsmetrologia.four_regime_dichotomy}
+{docstring Obsmetrologia.four_regime_flag_cases}
 
 Checked:
 
@@ -82,7 +82,7 @@ example (d : ClosureRegimeData) :
     /\ (classify d = ClosureRegime.aperiodic
         <-> (d.scottContinuous = false
              /\ d.countableCofinality = false)) :=
-  four_regime_dichotomy d
+  four_regime_flag_cases d
 ```
 
 This is the closure-phase version of "four" as a real partition. The regimes are

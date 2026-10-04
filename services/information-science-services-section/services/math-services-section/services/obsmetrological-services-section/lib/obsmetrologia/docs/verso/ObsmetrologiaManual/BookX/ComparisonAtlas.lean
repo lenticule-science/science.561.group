@@ -237,7 +237,7 @@ transfinite-bounded, and aperiodic.
 
 The four-regime dichotomy is:
 
-{docstring Obsmetrologia.four_regime_dichotomy}
+{docstring Obsmetrologia.four_regime_flag_cases}
 
 The flat/curved split is:
 
