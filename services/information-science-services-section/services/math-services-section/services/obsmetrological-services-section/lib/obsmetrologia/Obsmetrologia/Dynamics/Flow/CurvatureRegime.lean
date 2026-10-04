@@ -3,266 +3,182 @@ import Obsmetrologia.Cohomology.SettlingCohomologyH1
 import Obsmetrologia.Dynamics.Flow.NSCFiring
 
 /-!
-# Closure-flow curvature–regime correspondence
+# Closure-flow curvature labels on the declared regime profile
 
-This module formalizes the corpus theorem
+The corpus theorem
 
 `content/mark/.../knowledge-least-valuation/settling/_archive/`
 `predication-categorical-archive-predication-closure-flow-curvature-regime-correspondence.md`
 
-(marked `status: proved`). The closure operator's iteration `σ ↦ v_σ` is a discrete
-flow on the space of valuations. At Scott-continuous limit ordinals the flow is **flat**
-(parallel transport in the ordinal direction is trivial: the closure commutes with the
-directed `≤ₖ`-join). At a **non-Scott-continuous (NSC) firing ordinal** `μ ∈ L_ns(κ)` the
-flow has a **curvature event**: the value `v_μ` contains cells not recoverable as any
-filtered colimit of earlier values. The settling cohomology `H¹(𝐓*, F_v)` is the
-**curvature module** classifying the closure flow's total curvature content.
+(marked `status: proved`) reads the closure operator's iteration `σ ↦ v_σ` as a discrete flow
+and says that the four-regime classification is a classification by total curvature type,
+with `H¹` the curvature module, `rank H¹ = |L_ns(κ)|`.
 
-The theorem's content is the identification:
+## What this module proves
 
-> the four-regime classification **is** a classification by total curvature type, and
-> `H¹` is the curvature module — `rank H¹ = |L_ns(κ)|`.
+Nothing about curvature or `H¹`. It proves facts about two **labels** on the four
+`ClosureRegime` values and one table:
 
-## What we formalize (the differential-geometry dictionary as theorems)
+* `DeclaredFlat r := r = strict ∨ r = scott` and `DeclaredCurved r := r = transfiniteBounded ∨
+  r = aperiodic` are names for two sets of regimes, chosen to match the declared cohomology
+  profile `cohomologyVanishes` (`Closure.Regime`), which is itself a table. That they
+  partition the four regimes, and that `cohomologyVanishes` agrees with them, holds by the
+  definitions (`cases r <;> simp`).
+* `declaredTerminatesByOmega` is the same disjunction as `DeclaredFlat`; the "empty off-diagonal
+  cell" `¬ (DeclaredCurved r ∧ declaredTerminatesByOmega r)` restates that the two sets are
+  disjoint.
+* `declaredCurvatureRank : ClosureRegime → Option Nat` is a table: `some 0` on the flat rows,
+  `none` on the curved rows. It is not a rank of any module.
+* `declaredCurved_row_beside_nsc_witness` places the curved row of the table beside the
+  concrete NSC firing `NSCFiring.forallAnteOp_isNSC`. No map links the witness to the row
+  (`NSCFiring.nscRegimeData` is a hand-set flag datum, not computed from `forallAnteOp`).
+* `curvature_regime_table` bundles the label facts.
 
-The corpus's analogy is *structural, not metaphorical* — every leg is a proven theorem
-here, reusing the already-built regime/cohomology/NSC API:
+## What is open
 
-1. **FLAT vs CURVED.** `IsFlat r := r = strict ∨ r = scott` (the `κ ≤ ω` regimes, zero
-   curvature) and `IsCurved r := r = transfiniteBounded ∨ r = aperiodic` (the `κ > ω`
-   regimes, ≥ 1 curvature event). They **partition** the four corners:
-   `IsFlat r ↔ ¬ IsCurved r` (`flat_iff_not_curved`), exhaustively over the four regimes.
+-- OPEN: the corpus's identification of the regime classification with a classification by
+-- curvature, of `H¹` with the curvature module, and `rank H¹ = |L_ns(κ)|`. Each needs a
+-- cochain complex for the closure flow, a derivation of a regime from a closure's ordinal,
+-- and a map from NSC firing ordinals to generators of `H¹`. None is constructed in this
+-- package (see `SettlingCohomologyH1`: no complex is built above degree 1). The
+-- evidence-status ledger (science note 2026-10-03) grades the claim "by definition".
 
-2. **THE CORRESPONDENCE.** `cohomologyVanishes r = true ↔ IsFlat r`
-   (`vanishes_iff_flat`) and dually `cohomologyVanishes r = false ↔ IsCurved r`
-   (`nonvanishes_iff_curved`): **flat ⟺ H¹ = 0 ⟺ no curvature events**. This reuses
-   `ClosureOrdinalRegime.cohomologyVanishes_iff` (whose RHS `r = strict ∨ r = scott` is
-   literally `IsFlat r`).
-
-3. **THE 2×2 STRUCTURE.** `terminatesByOmega r := r = strict ∨ r = scott` (terminates in
-   `≤ ω` stages). The off-diagonal cell *curved ∧ ≤ω-terminating* is **empty**:
-   `¬ (IsCurved r ∧ terminatesByOmega r)` (`no_curved_omega_terminating`) — a
-   Scott-continuous settling terminates at `ω` with no curvature; a non-SC settling with
-   `κ ≤ ω` would contradict the four-regime characterization.
-
-4. **THE CURVATURE MODULE RANK.** `H¹ ≅ ⨁_{μ ∈ L_ns(κ)} ℤ`, so `rank H¹ = |L_ns(κ)|` —
-   the total curvature-event count. We model the rank as `Option Nat` **by design**: flat
-   regimes ↦ `some 0` (zero curvature events), curved
-   regimes ↦ `none` (≥ 1, possibly uncountable — the count is not a finite `Nat`).
-   `curvatureRank r = some 0 ↔ IsFlat r` (`rank_zero_iff_flat`). The rank-equals-`|L_ns|`
-   statement is tied to the NSC firing count via `NSCFiring.nsc_cohomology_nonvanishing`
-   (`rank_nonzero_has_nsc_firing`): the curved regime carries a witnessing NSC firing
-   (`IsNSC forallAnteOp botTopPrefix`), so its `H¹` is non-vanishing — one
-   ℤ-generator per curvature event of `L_ns`.
-
-5. **`curvature_regime_correspondence` bundles 1–4: the four regimes, the
-   flat/curved partition, `H¹ = 0 ⟺ flat ⟺ no curvature`, the empty off-diagonal cell,
-   the rank-zero characterization, and the NSC witness for the curved side.
-
-The dictionary, each claim backed by a proven theorem:
-
-  flat  ⟺ Scott-continuity        ⟺ trivial parallel transport  ⟺ `H¹ = 0`
-  curvature event                 ⟺ NSC firing `μ ∈ L_ns`       (`IsNSC`)
-  curvature module                =  `H¹`                        (`curvatureRank`)
-  `rank H¹ = |L_ns(κ)|`           =  total curvature-event count
+The proved NSC content lives in `Flow.NSCFiring` (`IsNSC`, `scott_continuous_iff_no_nsc_firing`,
+`no_nsc_firing_of_closure`, `forallAnteOp_isNSC`).
 -/
 
 namespace Obsmetrologia.Flow.CurvatureRegime
 
 open Obsmetrologia
 
-/-! ## (1) FLAT vs CURVED — the curvature dichotomy over the four regimes
+/-! ## (1) Two labels on the four regimes
 
-A regime is **flat** when its closure flow has zero curvature (parallel transport in the
-ordinal direction is trivial): the strict (`κ < ω`) and Scott-continuous (`κ = ω`)
-regimes. It is **curved** when the flow has at least one curvature event (an NSC firing):
-the transfinite-bounded (`ω < κ < ω₁`) and aperiodic (`κ ≥ ω₁`) regimes. -/
+A label names a set of regimes. Neither names a property of any closure flow: the
+membership of each regime is fixed by the definition below, in the same four-row shape as
+the declared profile `cohomologyVanishes`. -/
 
-/-- **A flat regime** — zero curvature, trivial parallel transport: `strict` or `scott`
-(`κ ≤ ω`). These are exactly the regimes where the closure flow commutes with the directed
-`≤ₖ`-join at every limit ordinal (Scott-continuity), so `H¹ = 0`. -/
-def IsFlat (r : ClosureRegime) : Prop :=
+/-- **Declared flat.** The label for the `strict` and `scott` rows of the four-regime table.
+A name chosen to match the rows where `cohomologyVanishes` is `true`; it is not a statement
+that any closure flow has zero curvature. -/
+def DeclaredFlat (r : ClosureRegime) : Prop :=
   r = ClosureRegime.strict ∨ r = ClosureRegime.scott
 
-/-- **A curved regime** — ≥ 1 curvature event (NSC firing), non-trivial parallel
-transport: `transfiniteBounded` or `aperiodic` (`κ > ω`). These are exactly the regimes
-where the closure flow fails to commute with the directed `≤ₖ`-join at some limit ordinal,
-so `H¹ ≠ 0`. -/
-def IsCurved (r : ClosureRegime) : Prop :=
+/-- **Declared curved.** The label for the `transfiniteBounded` and `aperiodic` rows. A name
+chosen to match the rows where `cohomologyVanishes` is `false`; it is not a statement that any
+closure flow has a curvature event. -/
+def DeclaredCurved (r : ClosureRegime) : Prop :=
   r = ClosureRegime.transfiniteBounded ∨ r = ClosureRegime.aperiodic
 
-/-- **Flat and curved partition the four regimes.** `IsFlat r ↔ ¬ IsCurved r` — every
-closure flow is either flat (zero curvature) or curved (positive curvature), never both
-and never neither. Proven by exhaustion over the four corners. This is the curvature
-dichotomy underlying the four-regime classification. -/
-theorem flat_iff_not_curved (r : ClosureRegime) : IsFlat r ↔ ¬ IsCurved r := by
-  cases r <;> simp [IsFlat, IsCurved]
+/-- The two labels split the four rows: `DeclaredFlat r ↔ ¬ DeclaredCurved r`. Holds by the
+definitions, by exhaustion over the four regimes. -/
+theorem declaredFlat_iff_not_declaredCurved (r : ClosureRegime) :
+    DeclaredFlat r ↔ ¬ DeclaredCurved r := by
+  cases r <;> simp [DeclaredFlat, DeclaredCurved]
 
-/-- The dual reading: `IsCurved r ↔ ¬ IsFlat r`. -/
-theorem curved_iff_not_flat (r : ClosureRegime) : IsCurved r ↔ ¬ IsFlat r := by
-  cases r <;> simp [IsFlat, IsCurved]
+/-- The dual reading: `DeclaredCurved r ↔ ¬ DeclaredFlat r`. By the definitions. -/
+theorem declaredCurved_iff_not_declaredFlat (r : ClosureRegime) :
+    DeclaredCurved r ↔ ¬ DeclaredFlat r := by
+  cases r <;> simp [DeclaredFlat, DeclaredCurved]
 
-/-- Flat and curved are mutually exclusive: no regime is both. -/
-theorem not_flat_and_curved (r : ClosureRegime) : ¬ (IsFlat r ∧ IsCurved r) := by
-  cases r <;> simp [IsFlat, IsCurved]
+/-- No regime carries both labels. By the definitions. -/
+theorem not_declaredFlat_and_declaredCurved (r : ClosureRegime) :
+    ¬ (DeclaredFlat r ∧ DeclaredCurved r) := by
+  cases r <;> simp [DeclaredFlat, DeclaredCurved]
 
-/-! ## (2) THE CORRESPONDENCE — flat ⟺ H¹ = 0 ⟺ no curvature events
+/-! ## (2) The labels against the declared profile -/
 
-The heart of the theorem: the cohomology vanishes **exactly** on the flat regimes. This
-reuses `ClosureOrdinalRegime.cohomologyVanishes_iff`, whose right-hand side
-`r = strict ∨ r = scott` is definitionally `IsFlat r`. So `H¹ = 0` and "flat" name the
-same set of regimes — the differential-geometry identity *flat ⟺ vanishing curvature*. -/
-
-/-- **The correspondence (flat side).** `cohomologyVanishes r = true ↔ IsFlat r`: the
-settling cohomology `H¹` vanishes **iff** the regime is flat. Directly reuses
-`cohomologyVanishes_iff` (its RHS is `IsFlat`). This is *flat ⟺ H¹ = 0 ⟺ no curvature
-events*. -/
-theorem vanishes_iff_flat (r : ClosureRegime) :
-    cohomologyVanishes r = true ↔ IsFlat r :=
+/-- `cohomologyVanishes r = true ↔ DeclaredFlat r`. `DeclaredFlat` is the right-hand side of
+`cohomologyVanishes_iff`, so this is that table lookup under the label's name. It does not
+say that `H¹` vanishes on flat flows: `cohomologyVanishes` is a table and no `H¹` is computed. -/
+theorem vanishes_iff_declaredFlat (r : ClosureRegime) :
+    cohomologyVanishes r = true ↔ DeclaredFlat r :=
   cohomologyVanishes_iff r
 
-/-- **The correspondence (curved side).** `cohomologyVanishes r = false ↔ IsCurved r`: the
-settling cohomology `H¹` is non-vanishing **iff** the regime is curved (≥ 1 curvature
-event). The dual of `vanishes_iff_flat`, proven by exhaustion. This is *curved ⟺ H¹ ≠ 0 ⟺
-a curvature event exists*. -/
-theorem nonvanishes_iff_curved (r : ClosureRegime) :
-    cohomologyVanishes r = false ↔ IsCurved r := by
-  cases r <;> simp [cohomologyVanishes, IsCurved]
+/-- `cohomologyVanishes r = false ↔ DeclaredCurved r`: a table lookup, by exhaustion. -/
+theorem nonvanishes_iff_declaredCurved (r : ClosureRegime) :
+    cohomologyVanishes r = false ↔ DeclaredCurved r := by
+  cases r <;> simp [cohomologyVanishes, DeclaredCurved]
 
-/-! ## (3) THE 2×2 STRUCTURE — the empty off-diagonal cell
+-- OPEN: flat ⟺ `H¹ = 0` ⟺ no curvature events, as a statement about a closure flow. It needs
+-- a cochain complex for the flow and a regime derived from the closure's ordinal.
 
-The theorem's 2×2 table crosses *flat/curved* with *terminates in ≤ ω stages / requires
-> ω stages*. The cell **curved ∧ ≤ω-terminating** is empty: a Scott-continuous settling
-terminates at `ω` with no curvature event; a non-Scott settling with `κ ≤ ω` would
-contradict the four-regime characterization (`κ > ω` for non-SC on infinite bases). -/
+/-! ## (3) The off-diagonal cell -/
 
-/-- **Terminates in `≤ ω` stages.** The closure ordinal `κ ≤ ω`: the `strict` (`κ < ω`)
-and `scott` (`κ = ω`) regimes. (Over the four regimes this coincides extensionally with
-`IsFlat`, but it is the *termination* coordinate of the 2×2 table — the column, not the
-row.) -/
-def terminatesByOmega (r : ClosureRegime) : Prop :=
+/-- The label for the `strict` and `scott` rows, as the termination column of the corpus's
+2×2 table. It is the same disjunction as `DeclaredFlat`; nothing here computes a closure
+ordinal. -/
+def declaredTerminatesByOmega (r : ClosureRegime) : Prop :=
   r = ClosureRegime.strict ∨ r = ClosureRegime.scott
 
-/-- **The off-diagonal cell is empty.** `¬ (IsCurved r ∧ terminatesByOmega r)`: no regime
-is simultaneously curved (≥ 1 curvature event) and `≤ ω`-terminating. *"Curved and
-terminates in `≤ ω` stages"* is impossible — a curvature event forces `κ > ω`. Proven by
-exhaustion over the four corners. This is the empty cell of the theorem's 2×2 structure. -/
-theorem no_curved_omega_terminating (r : ClosureRegime) :
-    ¬ (IsCurved r ∧ terminatesByOmega r) := by
-  cases r <;> simp [IsCurved, terminatesByOmega]
+/-- No regime is both `DeclaredCurved` and `declaredTerminatesByOmega`: the two sets are
+disjoint by their definitions. -/
+theorem no_declaredCurved_declaredTerminatesByOmega (r : ClosureRegime) :
+    ¬ (DeclaredCurved r ∧ declaredTerminatesByOmega r) := by
+  cases r <;> simp [DeclaredCurved, declaredTerminatesByOmega]
 
-/-- Equivalently: a `≤ ω`-terminating regime is flat (the populated diagonal of the 2×2,
-top row). -/
-theorem omega_terminating_is_flat (r : ClosureRegime) :
-    terminatesByOmega r → IsFlat r := by
-  cases r <;> simp [terminatesByOmega, IsFlat]
+/-- `declaredTerminatesByOmega r → DeclaredFlat r`: the two labels name the same set. -/
+theorem declaredTerminatesByOmega_is_declaredFlat (r : ClosureRegime) :
+    declaredTerminatesByOmega r → DeclaredFlat r := by
+  cases r <;> simp [declaredTerminatesByOmega, DeclaredFlat]
 
-/-! ## (4) THE CURVATURE MODULE RANK — `rank H¹ = |L_ns(κ)|`
+/-! ## (4) The declared rank table -/
 
-The corpus identifies `H¹ ≅ ⨁_{μ ∈ L_ns(κ)} ℤ`, with one `ℤ`-generator per curvature
-event, so `rank H¹ = |L_ns(κ)|` — the total curvature-event count of the closure flow.
-We model the rank as an `Option Nat` **by design**: a **flat** regime has rank `some 0` (the empty direct sum, the
-direct sum over `L_ns = ∅`); a **curved** regime has rank `none` — the curvature-event
-count is ≥ 1 and may be uncountable (`ω₁`-bounded in the aperiodic regime), so it is not a
-finite `Nat`. -/
-
-/-- **The curvature-module rank** `rank H¹ : ClosureRegime → Option Nat`. A flat regime has
-**zero** curvature events, so `rank H¹ = some 0` (the direct sum `⨁_∅ ℤ = 0`). A curved
-regime has **≥ 1** curvature event and possibly uncountably many (`|L_ns| = ω₁` in the
-aperiodic regime), which is not a finite `Nat`, so we record it as `none` (non-finite /
-positive rank). The scope: `some 0` is the zero rank; `none` faithfully
-marks "positive, possibly uncountable" — the count is not a finite `Nat`. -/
-def curvatureRank : ClosureRegime → Option Nat
+/-- The **declared rank** table: `some 0` on the flat rows, `none` on the curved rows. It is
+not the rank of any module. The corpus's `rank H¹ = |L_ns(κ)|` would need `H¹` and a count of
+NSC firing ordinals. -/
+def declaredCurvatureRank : ClosureRegime → Option Nat
   | ClosureRegime.strict => some 0
   | ClosureRegime.scott => some 0
   | ClosureRegime.transfiniteBounded => none
   | ClosureRegime.aperiodic => none
 
-/-- **Rank zero ⟺ flat.** `curvatureRank r = some 0 ↔ IsFlat r`: the curvature module has
-rank `0` (`H¹ = 0`, the empty direct sum over `L_ns = ∅`) **iff** the regime is flat. The
-rank reading of the correspondence: zero total curvature ⟺ no curvature events ⟺ flat.
-Proven by exhaustion. -/
-theorem rank_zero_iff_flat (r : ClosureRegime) :
-    curvatureRank r = some 0 ↔ IsFlat r := by
-  cases r <;> simp [curvatureRank, IsFlat]
+/-- `declaredCurvatureRank r = some 0 ↔ DeclaredFlat r`: a table lookup, by exhaustion. -/
+theorem declaredRank_zero_iff_declaredFlat (r : ClosureRegime) :
+    declaredCurvatureRank r = some 0 ↔ DeclaredFlat r := by
+  cases r <;> simp [declaredCurvatureRank, DeclaredFlat]
 
-/-- **Positive rank ⟺ curved.** `curvatureRank r = none ↔ IsCurved r`: the curvature
-module has non-finite (positive, possibly uncountable) rank **iff** the regime is curved.
-The curved regimes are exactly those with ≥ 1 curvature event. Proven by exhaustion. -/
-theorem rank_none_iff_curved (r : ClosureRegime) :
-    curvatureRank r = none ↔ IsCurved r := by
-  cases r <;> simp [curvatureRank, IsCurved]
+/-- `declaredCurvatureRank r = none ↔ DeclaredCurved r`: a table lookup, by exhaustion. -/
+theorem declaredRank_none_iff_declaredCurved (r : ClosureRegime) :
+    declaredCurvatureRank r = none ↔ DeclaredCurved r := by
+  cases r <;> simp [declaredCurvatureRank, DeclaredCurved]
 
-/-- **Rank tracks cohomology vanishing.** `curvatureRank r = some 0 ↔ cohomologyVanishes
-r = true`: the curvature module has rank zero iff `H¹` vanishes — both name the flat
-regimes. The `Option Nat` rank model and the Boolean `cohomologyVanishes` gate agree
-through the flat/curved partition. -/
-theorem rank_zero_iff_vanishes (r : ClosureRegime) :
-    curvatureRank r = some 0 ↔ cohomologyVanishes r = true := by
-  cases r <;> simp [curvatureRank, cohomologyVanishes]
+/-- `declaredCurvatureRank r = some 0 ↔ cohomologyVanishes r = true`: two tables with the same
+rows. -/
+theorem declaredRank_zero_iff_vanishes (r : ClosureRegime) :
+    declaredCurvatureRank r = some 0 ↔ cohomologyVanishes r = true := by
+  cases r <;> simp [declaredCurvatureRank, cohomologyVanishes]
 
-/-- **`rank H¹ = |L_ns|`: a curved regime carries a witnessing NSC firing.** The corpus's
-`rank H¹ = |L_ns(κ)|` says each curvature event (NSC firing `μ ∈ L_ns`) contributes one
-`ℤ`-generator. We tie the rank to the NSC firing count concretely: for the curved (here
-transfinite-bounded) regime datum `NSCFiring.nscRegimeData`, the cohomology is 
-**non-vanishing** (`H¹ ≠ 0`, `nsc_cohomology_nonvanishing`) *and* a concrete NSC firing
-exists witnessing the curvature event (`IsNSC forallAnteOp botTopPrefix`,
-`NSCFiring.forallAnteOp_isNSC`). So the curved regime's positive rank is backed by an
-actual `L_ns` element — `rank H¹ = |L_ns|` is not vacuous: ≥ 1 event ⟹ rank ≥ 1. -/
-theorem rank_nonzero_has_nsc_firing :
-    -- the curved (transfinite-bounded) regime datum has non-vanishing H¹ (positive rank) …
+/-- **The curved row beside an NSC firing witness.** Three facts, unconnected by any map:
+the hand-set datum `NSCFiring.nscRegimeData` classifies to a row whose declared profile is
+non-vanishing (a table lookup); that row's declared rank is `none` (a table lookup); and
+`forallAnteOp` has an NSC firing at `botTopPrefix` (proved by finite exhaustion, a real
+witness). The datum is not computed from the operator, so this does not show that the
+witness produces the row or any `H¹` generator. -/
+theorem declaredCurved_row_beside_nsc_witness :
     cohomologyVanishes (classify NSCFiring.nscRegimeData) = false
-    -- … its rank is `none` (positive, ≥ 1 curvature event) …
-    ∧ curvatureRank (classify NSCFiring.nscRegimeData) = none
-    -- … and a concrete NSC firing (curvature event μ ∈ L_ns) witnesses that count
+    ∧ declaredCurvatureRank (classify NSCFiring.nscRegimeData) = none
     ∧ NSCFiring.IsNSC NSCFiring.forallAnteOp NSCFiring.botTopPrefix := by
-  refine ⟨NSCFiring.nsc_cohomology_nonvanishing, ?_, NSCFiring.forallAnteOp_isNSC⟩
+  refine ⟨NSCFiring.nscRegimeData_profile_nonvanishing_table, ?_, NSCFiring.forallAnteOp_isNSC⟩
   rw [NSCFiring.nscRegimeData_transfiniteBounded]; rfl
 
-/-! ## (5) The curvature–regime correspondence
+-- OPEN: `rank H¹ = |L_ns(κ)|`, one `ℤ`-generator per NSC firing ordinal. It needs `H¹` of the
+-- closure flow, a derivation of the regime from the flow, and a map from `L_ns` to generators.
 
-The full theorem, bundling the dictionary legs. The differential-geometry dictionary
-(flat ⟺ trivial parallel transport ⟺ Scott-continuity; curvature event ⟺ NSC firing;
-`H¹` = curvature module; `rank H¹ = |L_ns(κ)|`) is *structural, not metaphorical* — each
-claim is one conjunct, backed by a proven theorem above. -/
+/-! ## (5) The label facts, bundled -/
 
-/-- **The curvature–regime correspondence.** For every closure-ordinal regime
-`r`, formalizing
-`predication-closure-flow-curvature-regime-correspondence.md` (`status: proved`):
-
-* **(flat/curved partition)** `IsFlat r ↔ ¬ IsCurved r` — every closure flow is flat (zero
-  curvature) or curved (positive curvature), never both, never neither (`flat_iff_not_curved`);
-
-* **(the correspondence — Parts 1 & 2 of the theorem)** `cohomologyVanishes r = true ↔
-  IsFlat r` and `cohomologyVanishes r = false ↔ IsCurved r` — the settling cohomology `H¹`
-  vanishes **iff** the regime is flat **iff** the closure flow has no curvature events;
-  `H¹ ≠ 0` **iff** curved **iff** ≥ 1 curvature event (`vanishes_iff_flat`,
-  `nonvanishes_iff_curved`). *The four-regime classification IS a classification by total
-  curvature type, and `H¹` is the curvature module.*
-
-* **(the 2×2 structure — empty off-diagonal cell)** `¬ (IsCurved r ∧ terminatesByOmega r)`
-  — *"curved and terminates in `≤ ω` stages"* is impossible: a curvature event forces
-  `κ > ω` (`no_curved_omega_terminating`);
-
-* **(curvature-module rank — Part 3)** `curvatureRank r = some 0 ↔ IsFlat r` — the
-  curvature module has rank zero (`H¹ = ⨁_∅ ℤ = 0`) iff flat; a curved regime has positive
-  (possibly uncountable) rank, one `ℤ`-generator per `μ ∈ L_ns(κ)` (`rank_zero_iff_flat`).
-
-The dictionary, each leg a theorem above: *flat ⟺ Scott-continuity ⟺ trivial parallel
-transport ⟺ `H¹ = 0`; curvature event ⟺ NSC firing `μ ∈ L_ns` (`IsNSC`); curvature module
-= `H¹` (`curvatureRank`); `rank H¹ = |L_ns(κ)|` = total curvature-event count*
-(`rank_nonzero_has_nsc_firing` exhibits a concrete event on the curved side). Depends on
-at most `propext` / `Quot.sound`. -/
-theorem curvature_regime_correspondence (r : ClosureRegime) :
-    (IsFlat r ↔ ¬ IsCurved r)
-    ∧ (cohomologyVanishes r = true ↔ IsFlat r)
-    ∧ (cohomologyVanishes r = false ↔ IsCurved r)
-    ∧ ¬ (IsCurved r ∧ terminatesByOmega r)
-    ∧ (curvatureRank r = some 0 ↔ IsFlat r) :=
-  ⟨flat_iff_not_curved r,
-    vanishes_iff_flat r,
-    nonvanishes_iff_curved r,
-    no_curved_omega_terminating r,
-    rank_zero_iff_flat r⟩
+/-- The label facts of this module, for every regime `r`: the split, the two profile lookups,
+the empty cell and the rank-table lookup. Each conjunct holds by the definitions; none is a
+theorem about curvature or `H¹`. -/
+theorem curvature_regime_table (r : ClosureRegime) :
+    (DeclaredFlat r ↔ ¬ DeclaredCurved r)
+    ∧ (cohomologyVanishes r = true ↔ DeclaredFlat r)
+    ∧ (cohomologyVanishes r = false ↔ DeclaredCurved r)
+    ∧ ¬ (DeclaredCurved r ∧ declaredTerminatesByOmega r)
+    ∧ (declaredCurvatureRank r = some 0 ↔ DeclaredFlat r) :=
+  ⟨declaredFlat_iff_not_declaredCurved r,
+    vanishes_iff_declaredFlat r,
+    nonvanishes_iff_declaredCurved r,
+    no_declaredCurved_declaredTerminatesByOmega r,
+    declaredRank_zero_iff_declaredFlat r⟩
 
 end Obsmetrologia.Flow.CurvatureRegime

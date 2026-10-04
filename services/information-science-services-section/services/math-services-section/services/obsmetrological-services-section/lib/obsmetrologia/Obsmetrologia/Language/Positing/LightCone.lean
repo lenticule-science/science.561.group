@@ -188,10 +188,13 @@ theorem timeSign_mul (g h : K4) : timeSign (K4.mul g h) = timeSign g * timeSign 
 theorem spaceSign_mul (g h : K4) : spaceSign (K4.mul g h) = spaceSign g * spaceSign h := by
   cases g <;> cases h <;> decide
 
-/-- **`K₄` is `{1, P, T, PT}`**: the identity fixes both coordinates, negation
-reverses space only, conflation reverses time only, and their composite reverses
-both. -/
-theorem k4_is_PT :
+/-- **The sign table of `K₄`.** Restates the four rows of `signs`, `timeSign` and `spaceSign`,
+which are defined by cases above: the identity `(1, 1)`, negation `(1, -1)`, conflation
+`(-1, 1)` and their composite `(-1, -1)`. It holds by definition (`decide` on the table). The
+content that these signs are the action of `K₄` is `act_centered` and `act_space`; that the
+action is faithful is `signs_injective`; that it is multiplicative is `timeSign_mul` and
+`spaceSign_mul`. -/
+theorem signs_table :
     signs K4.id = (1, 1) ∧ signs K4.neg = (1, -1)
       ∧ signs K4.conf = (-1, 1) ∧ signs K4.negConf = (-1, -1) := by
   decide

@@ -24,10 +24,11 @@ an NSC firing for its operator.  This turns the regime flag into an incidence
 condition.
 \end{theorem}
 
-\begin{theorem}[NSC firings source the non-Scott regimes]\label{thm:nsc-firing-source-of-aperiodic}\lean{Obsmetrologia.Flow.NSCFiring.nsc_firing_source_of_aperiodic}\leanok\uses{thm:scott-continuous-iff-no-nsc-firing, thm:regime-cohomology-vanishes-iff}
+\begin{theorem}[Finite-carrier NSC firing facts]\label{thm:nsc-firing-source-of-aperiodic}\lean{Obsmetrologia.Flow.NSCFiring.no_closure_nsc_firing_and_forallAnte_witness}\leanok\uses{thm:scott-continuous-iff-no-nsc-firing, thm:regime-cohomology-vanishes-iff}
 Genuine finite charge closures have no NSC firing, while a concrete
-forall-antecedent firing operator witnesses one.  The witness lands on the
-cohomology-bearing non-Scott side of the regime table.
+forall-antecedent firing operator witnesses one.  The statement says nothing about
+regimes: that NSC firings source the non-Scott regimes is open, since the regime
+datum of the module is chosen by hand and not computed from a firing.
 \end{theorem}
 
 \begin{theorem}[Transfinite closure flow has no settling-limit blowup]\label{thm:transfinite-closure-flow-no-blowup}\lean{Obsmetrologia.Valuation.ModalFrame.transfinite_closure_flow_no_blowup}\leanok\uses{thm:scott-continuous-iff-no-nsc-firing, thm:finite-scott-continuous}
@@ -45,14 +46,15 @@ so this claim needs an additional carrier for genuine/cofinal limit
 presentations before it can be promoted.
 \end{theorem}
 
-\begin{theorem}[Curvature is the non-Scott regime projection]\label{thm:curvature-regime-correspondence}\lean{Obsmetrologia.Flow.CurvatureRegime.curvature_regime_correspondence}\leanok\uses{thm:nsc-firing-source-of-aperiodic, thm:regime-cohomology-vanishes-iff}
-Flatness, vanishing \(H^1\), absence of curvature events, and strict/Scott
-regime membership are the same side of the projection.  Curvedness,
-nonvanishing \(H^1\), and NSC firing live on the transfinite-bounded or
-aperiodic side.
+\begin{theorem}[Curvature labels on the declared regime table]\label{thm:curvature-regime-correspondence}\lean{Obsmetrologia.Flow.CurvatureRegime.curvature_regime_table}\leanok\uses{thm:nsc-firing-source-of-aperiodic, thm:regime-cohomology-vanishes-iff}
+The labels ``declared flat'' and ``declared curved'' split the four regimes, and the
+declared cohomology profile (a table; no \(H^1\) is computed) agrees with them.  This holds
+by the definitions.  That the regime classification is a classification by curvature, with
+\(H^1\) the curvature module, is open.
 \end{theorem}
 
-\begin{theorem}[Positive curvature rank has an NSC firing witness]\label{thm:curvature-rank-has-nsc-firing}\lean{Obsmetrologia.Flow.CurvatureRegime.rank_nonzero_has_nsc_firing}\leanok\uses{thm:curvature-regime-correspondence}
-The positive-rank side is not empty bookkeeping: the formalized
-forall-antecedent operator supplies an actual NSC firing witness.
+\begin{theorem}[The curved row beside an NSC firing witness]\label{thm:curvature-rank-has-nsc-firing}\lean{Obsmetrologia.Flow.CurvatureRegime.declaredCurved_row_beside_nsc_witness}\leanok\uses{thm:curvature-regime-correspondence}
+The curved row of the declared tables is stated beside an actual NSC firing witness of the
+forall-antecedent operator.  No map links the witness to the row, so
+\(\operatorname{rank} H^1 = |L_{ns}|\) is open.
 \end{theorem}

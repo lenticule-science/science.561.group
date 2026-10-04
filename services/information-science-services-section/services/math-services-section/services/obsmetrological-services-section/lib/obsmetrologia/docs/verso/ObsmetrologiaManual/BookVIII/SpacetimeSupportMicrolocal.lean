@@ -101,9 +101,9 @@ example {E : Type} (C : CausalSet E) (r : ClosureRegime) :
       causalClosure C
         (causalClosure C S) = causalClosure C S)
     ∧ (cohomologyVanishes r = true ↔
-      Flow.CurvatureRegime.IsFlat r)
+      Flow.CurvatureRegime.DeclaredFlat r)
     ∧ (cohomologyVanishes r = false ↔
-      Flow.CurvatureRegime.IsCurved r) :=
+      Flow.CurvatureRegime.DeclaredCurved r) :=
   microlocal_support_propagation C r
 ```
 

@@ -350,10 +350,10 @@ def closureRegime (s : PhaseSubstitution) : Regime :=
   | .transfiniteBounded => .mixed
   | .aperiodic => .paraconsistent
 
-/-- The finite predictor-level phase is nontrivial, so the bigraded trichotomy applies. -/
+/-- The finite predictor-level phase is nontrivial, so the classifier's nontrivial cases apply. -/
 theorem phaseType_nontrivial (s : PhaseSubstitution) :
     phaseType s = .consistent ∨ phaseType s = .paraconsistent ∨ phaseType s = .mixed := by
-  exact trichotomy (phaseTruthContent s) (phaseInconsistencyContent s)
+  exact regimeOf_nontrivial_cases (phaseTruthContent s) (phaseInconsistencyContent s)
     (by cases s <;> decide)
 
 /-- The current finite/predictor-level phase map is the common value of the

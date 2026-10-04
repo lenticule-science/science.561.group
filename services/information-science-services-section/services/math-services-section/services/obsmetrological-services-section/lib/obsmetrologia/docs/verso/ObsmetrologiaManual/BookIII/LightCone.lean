@@ -125,7 +125,7 @@ example :
       ∧ Reading.signs K4.neg = (1, -1)
       ∧ Reading.signs K4.conf = (-1, 1)
       ∧ Reading.signs K4.negConf = (-1, -1) :=
-  Reading.k4_is_PT
+  Reading.signs_table
 
 open Obsmetrologia.Positing.Gauge in
 example (g h : K4) :

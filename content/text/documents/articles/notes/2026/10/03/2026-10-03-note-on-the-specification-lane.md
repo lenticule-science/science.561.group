@@ -107,6 +107,27 @@ proved: the one-step reducts in leftmost-outermost order, sound and complete for
 
 Updated as slices land; newest first.
 
+- 2026-10-03, slice 4b (honest spine, second pass). Five census targets read and graded:
+  - `CurvatureRegime`: by definition. `IsFlat`/`IsCurved`/`curvatureRank` become
+    `DeclaredFlat`/`DeclaredCurved`/`declaredCurvatureRank`, `curvature_regime_correspondence`
+    becomes `curvature_regime_table`; the curvature identification and `rank H¹ = |L_ns|` are
+    `-- OPEN:`.
+  - `NSCFiring`: mixed. Proved: `IsNSC`, `scott_continuous_iff_no_nsc_firing`,
+    `no_nsc_firing_of_closure`, `forallAnteOp_isNSC`. By definition: the regime half
+    (`nscRegimeData` is hand-set; `nsc_cohomology_nonvanishing` becomes
+    `nscRegimeData_profile_nonvanishing_table`; `nsc_firing_source_of_aperiodic` loses its table
+    conjunct and becomes `no_closure_nsc_firing_and_forallAnte_witness`).
+  - `history_separation_aperiodicity`: by definition (three unlinked facts), renamed
+    `varying_family_beside_aperiodic_witness`; the forcing is the `Prop`
+    `HistorySeparationForcesAperiodicity`, stated without proof.
+  - `trichotomy`: by definition (a case split of a two-Boolean classifier), renamed
+    `regimeOf_nontrivial_cases`; the aperiodic bigraded trichotomy is `-- OPEN:`.
+  - `k4_is_PT`: by definition (restates the sign tables), renamed `signs_table`; the action,
+    faithfulness and multiplicativity are `act_centered`, `act_space`, `signs_injective`,
+    `timeSign_mul`, `spaceSign_mul`, which stay.
+  Built with `LEAN_NUM_THREADS=1`, per module, in Obsmetrologia and ObsmetrologiaPhysicalScience.
+  Candidate `lane-7/honest-spine-2`.
+
 - 2026-10-03, slice 4 (honest spine, first pass; P3; evidence ledger).
   - `SettlingCohomologyH1.Hn := Unit` and `hn_vanishes_above_one` are removed. So are their
     conjuncts in seven bundles, the derived `Hmn`, and the prose, blueprint and Verso

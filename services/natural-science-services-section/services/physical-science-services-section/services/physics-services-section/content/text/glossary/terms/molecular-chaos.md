@@ -38,7 +38,7 @@ interval short compared to the mean free time — the rigorous justification the
 
 `Obsmetrologia.KineticTheory.Gas.MolecularChaosGluing` reads molecular chaos as a
 **vanishing obstruction**, the kinetic instance of `Cohomology.SettlingCohomologyH1` /
-`Flow.CurvatureRegime.vanishes_iff_flat` (`H¹ = 0 ⟺ flat ⟺ gluing unobstructed`). A joint
+`Flow.CurvatureRegime.vanishes_iff_declaredFlat` (`H¹ = 0 ⟺ flat ⟺ gluing unobstructed`). A joint
 distribution `Factorizes` — molecular chaos holds — exactly when it is the **separated
 gluing** of two single-particle sections; the obstruction is the **connected
 correlation** `corr`, the discrete truncated two-point function (a $2\times2$ minor),

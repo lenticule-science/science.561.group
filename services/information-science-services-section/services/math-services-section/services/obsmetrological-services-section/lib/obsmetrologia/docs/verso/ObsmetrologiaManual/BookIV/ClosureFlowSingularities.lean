@@ -40,7 +40,7 @@ The claim-site carried here is:
   `Obsmetrologia.Valuation.ModalFrame.firing_iff_not_smooth`,
   `Obsmetrologia.Blowup.predecessor_le_actual`,
   `Obsmetrologia.Valuation.freeEnergy_antitone`,
-  `Obsmetrologia.Flow.CurvatureRegime.curvature_regime_correspondence`,
+  `Obsmetrologia.Flow.CurvatureRegime.curvature_regime_table`,
   `Obsmetrologia.Valuation.ModalFrame.transfinite_settling_continuity`;
 * Blueprint/proof-tree nodes: this page is a Lean-side promotion of closure-flow
   archive nodes; later Blueprint physics nodes should point here before using
@@ -166,19 +166,19 @@ example (c : Reading.Closure)
 The Lyapunov language is lawful only on this finite support. Real thermodynamic
 free energy is not being claimed.
 
-## Curvature Is Regime Classification
+## Curvature Is a Regime Label
 
-Curvature first enters as a regime-side obstruction:
+Curvature enters only as two labels on the declared regime table:
 
-{docstring Obsmetrologia.Flow.CurvatureRegime.curvature_regime_correspondence}
+{docstring Obsmetrologia.Flow.CurvatureRegime.curvature_regime_table}
 
 Checked:
 
 ```lean
 example (r : ClosureRegime) :
-  (Flow.CurvatureRegime.IsFlat r <->
-    Not (Flow.CurvatureRegime.IsCurved r)) :=
-  (Flow.CurvatureRegime.curvature_regime_correspondence
+  (Flow.CurvatureRegime.DeclaredFlat r <->
+    Not (Flow.CurvatureRegime.DeclaredCurved r)) :=
+  (Flow.CurvatureRegime.curvature_regime_table
     r).1
 ```
 

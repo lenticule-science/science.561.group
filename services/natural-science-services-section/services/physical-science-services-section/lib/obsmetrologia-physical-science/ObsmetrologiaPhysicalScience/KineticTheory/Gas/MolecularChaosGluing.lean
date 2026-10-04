@@ -18,7 +18,7 @@ whose nonzero correlation provably **obstructs** factorization (the *Stosszahlan
 is a cocycle: antisymmetric under exchanging the two particles.
 
 This is the finite combinatorial obstruction, the kinetic instance of `Cohomology.SettlingCohomologyH1`
-/ `Flow.CurvatureRegime.vanishes_iff_flat` (`H¹ = 0 ⟺ flat ⟺ gluing unobstructed`); the
+/ `Flow.CurvatureRegime.vanishes_iff_declaredFlat` (`H¹ = 0 ⟺ flat ⟺ gluing unobstructed`); the
 rank-1 *reconstruction* (decorrelated ⟹ factorizes) and Lanford's propagation-of-chaos theorem over a
 continuum are the harder converse / not-visible analytic layer.
 

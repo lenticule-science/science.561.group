@@ -241,24 +241,24 @@ The four-regime dichotomy is:
 
 The flat/curved split is:
 
-{docstring Obsmetrologia.Flow.CurvatureRegime.IsFlat}
+{docstring Obsmetrologia.Flow.CurvatureRegime.DeclaredFlat}
 
-{docstring Obsmetrologia.Flow.CurvatureRegime.IsCurved}
+{docstring Obsmetrologia.Flow.CurvatureRegime.DeclaredCurved}
 
-{docstring Obsmetrologia.Flow.CurvatureRegime.flat_iff_not_curved}
+{docstring Obsmetrologia.Flow.CurvatureRegime.declaredFlat_iff_not_declaredCurved}
 
-{docstring Obsmetrologia.Flow.CurvatureRegime.nonvanishes_iff_curved}
+{docstring Obsmetrologia.Flow.CurvatureRegime.nonvanishes_iff_declaredCurved}
 
 Checked:
 
 ```lean
 example (r : ClosureRegime) :
-    IsFlat r <-> Not (IsCurved r) :=
-  flat_iff_not_curved r
+    DeclaredFlat r <-> Not (DeclaredCurved r) :=
+  declaredFlat_iff_not_declaredCurved r
 
 example (r : ClosureRegime) :
-    cohomologyVanishes r = false <-> IsCurved r :=
-  nonvanishes_iff_curved r
+    cohomologyVanishes r = false <-> DeclaredCurved r :=
+  nonvanishes_iff_declaredCurved r
 ```
 
 Repair path: if a page says "Scott-continuity" as generic domain theory, move it
