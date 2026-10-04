@@ -11,7 +11,11 @@ the arena's coordination claim is about. Moves on different threads do not inter
 supersession, which one opening says about an earlier one, is modelled as the opener's act
 on the earlier thread.
 
-The law splits the responses as the arena's ninth edition does. A **telling** (observe on
+The law splits the responses as the arena's ninth edition does. The eighteenth edition adds a
+sixth opening, the **supply**: a resource's holder binds itself to supply a stated amount until
+it lapses, and consumers **draw** from it and **return** what they did not use. A draw reads a
+quantity that every other draw changes, so it is coordinated; the supplier's restatement of what
+remains is a telling. What is left is read from the record and never stored (`supplyLeftAtLeast`). A **telling** (observe on
 an aim, a witness on a request's delivery, an argument on a proposal, a corroboration on a
 report, an answer to a question) only adds to a grow-only record. It is never refused for
 what was or was not played before, and it stays admissible after the thread closes. Every
@@ -46,7 +50,15 @@ The organizing package's `enterprise/work-arena.mjs` is the implementation this 
 from it in one place, deliberately. A witness on a delivery is a telling, so it is never
 refused for a delivery not yet on the thread. It is kept, and it bears on whichever delivery
 of its subject precedes it once that delivery stands. The implementation refuses such a
-witness. Content that the arena validates without reference to the history (statement
+witness.
+
+The eighteenth edition's supply departs from it in two more, and the law decides both. A
+reading of what remains is an observation, so it is read once it has held and never ahead of
+its telling (`intrinsic`): a reading dated after it was told is refused, as every observation
+of an aim is. The implementation accepts it, and the dated reading shadows every draw before
+its date. Readings of what remains that share one time and disagree give the least (a draw
+never overstates what is left); the implementation takes the first told. A supply has no
+assayer: the supplier speaks for it, and only the supplier's side is barred from drawing. Content that the arena validates without reference to the history (statement
 bounds, requirement form, benchmarks, evidence presence) is outside this law.
 -/
 
@@ -61,7 +73,7 @@ abbrev Time := Nat
 
 /-- The kinds of opening. -/
 inductive Kind where
-  | aim | request | propose | report | ask | declare
+  | aim | request | propose | report | ask | declare | supply
   deriving DecidableEq, Repr, Inhabited
 
 /-- The response acts, and `supersede`, which an opening says of an earlier thread. -/
@@ -69,19 +81,20 @@ inductive Act where
   | hold | wager | observe | attach | leave | withdraw
   | promise | decline | refine | counter | agree | release | deliver | accept | reject
   | adopt | argue | corroborate | resolve | answer
+  | draw | «return»
   | supersede
   deriving DecidableEq, Repr, Inhabited
 
 namespace Kind
 /-- Every kind. -/
-def all : List Kind := [aim, request, propose, report, ask, declare]
+def all : List Kind := [aim, request, propose, report, ask, declare, supply]
 end Kind
 
 namespace Act
 /-- Every act. -/
 def all : List Act :=
   [hold, wager, observe, attach, leave, withdraw, promise, decline, refine, counter, agree,
-   release, deliver, accept, reject, adopt, argue, corroborate, resolve, answer, supersede]
+   release, deliver, accept, reject, adopt, argue, corroborate, resolve, answer, supersede, draw, «return»]
 end Act
 
 /-- The acts that answer each kind of opening (the arena's `RESPONSE_MOVES`). `supersede`
@@ -94,6 +107,7 @@ def responses : Kind → List Act
   | .report => [.corroborate, .adopt, .attach, .resolve, .withdraw]
   | .ask => [.answer, .accept, .withdraw]
   | .declare => [.withdraw]
+  | .supply => [.draw, .«return», .observe, .withdraw]
 
 /-- The tellings of each kind (the arena's `TOLD_MOVES`). An acceptance on a question chooses an
 answer, so it is not a telling there. -/
@@ -104,6 +118,7 @@ def tellings : Kind → List Act
   | .report => [.corroborate]
   | .ask => [.answer]
   | .declare => []
+  | .supply => [.observe]
 
 /-- Whether an act answers a kind of opening. -/
 def answers (k : Kind) (a : Act) : Bool := (responses k).contains a
@@ -112,14 +127,16 @@ def answers (k : Kind) (a : Act) : Bool := (responses k).contains a
 def told (k : Kind) (a : Act) : Bool := (tellings k).contains a
 
 /-- The acts only a thread's taking side plays (the arena's `TAKER_MOVES`). -/
-def takerActs : List Act := [.promise, .decline, .hold, .wager, .adopt, .attach, .deliver, .release, .leave]
+def takerActs : List Act := [.promise, .decline, .hold, .wager, .adopt, .attach, .deliver, .release, .leave, .draw, .«return»]
 
 /-- Whether only the taking side plays an act. -/
 def takerAct (a : Act) : Bool := takerActs.contains a
 
 /-- A thread's opening: its kind, its opener, the assayer of its deliveries or answers (the
 opener unless one is named), its addressee, a request's conditions of satisfaction (ids from
-`1`; the need is claim `0`), and an aim's measures (each with a unit, read "more is better"). -/
+`1`; the need is claim `0`), and an aim's measures (each with a unit, read "more is better"). A supply (eighteenth edition) states its
+`amount` (the guaranteed floor of what is left), the time it `lapses`, and whether it `admitsOpen`
+(admits work while any is left, so the last draw may overdraw) or admits only draws that fit. -/
 structure Opening where
   kind : Kind
   opener : Player
@@ -127,13 +144,17 @@ structure Opening where
   addressee : Option Player := none
   conditions : List Nat := []
   measures : List Nat := []
+  amount : Nat := 0
+  lapses : Time := 0
+  admitsOpen : Bool := false
   deriving DecidableEq, Repr
 
 /-- One response. `about` names whose delivery or answer is accepted or rejected, or whose
 counter-offer is agreed. `measure`, `value`, `ends` and `observed` carry a wager's measure,
 target and period end, or an observation's measure, value and when the value held. `unmet`
 names the claims a rejection finds unmet. `terms` are a refinement's or counter-offer's
-conditions, and `completes` marks a refinement that completes the order after a miss. -/
+conditions, and `completes` marks a refinement that completes the order after a miss. `amount` is a draw's or a
+return's. -/
 structure Move where
   act : Act
   player : Player
@@ -146,6 +167,7 @@ structure Move where
   unmet : List Nat := []
   terms : List Nat := []
   completes : Bool := false
+  amount : Nat := 0
   deriving DecidableEq, Repr
 
 /-- A delivery: its deliverer, its time, and the revision of the order it answers. -/
@@ -164,6 +186,13 @@ structure Wager where
   ends : Time
   deriving DecidableEq, Repr
 
+/-- A draw on a supply, or a return to it: who, how much and when. -/
+structure Flow where
+  player : Player
+  amount : Nat
+  time : Time
+  deriving DecidableEq, Repr
+
 /-- What the coordinated moves have made of a thread. Tellings never enter it. -/
 structure Skeleton where
   holders : List Player := []
@@ -180,6 +209,8 @@ structure Skeleton where
   superseded : Bool := false
   resolved : Option Time := none
   chosen : Option Player := none
+  draws : List Flow := []
+  returns : List Flow := []
   deriving DecidableEq, Repr
 
 /-- The tellings a rule may read: "is any telling `p`?". -/
@@ -299,12 +330,45 @@ def forfeited (A : Told) (sk : Skeleton) (T : Time) (p : Player) : Bool :=
   let two := ended.drop (ended.length - 2)
   sk.holders.contains p && two.length == 2 && two.all (fun w => decide (wagerStanding A w T = .missed))
 
+/-! ## Supplies -/
+
+/-- The measure of a supply's observations: what remains of it. -/
+def remainingMeasure : Nat := 0
+
+/-- A reading of what remains of a supply: an observation of `remainingMeasure` by the supplier
+(the opener). Nobody else's observation of a supply bears on what is left. -/
+def isReading (o : Opening) (x : Move) : Bool :=
+  x.act == .observe && x.player == o.opener && x.measure == remainingMeasure
+
+/-- What a list of flows amounts to after time `s`. -/
+def flowAfter (l : List Flow) (s : Time) : Nat :=
+  (l.filter (fun f => decide (s < f.time))).foldl (fun a f => a + f.amount) 0
+
+/-- What a list of flows amounts to. -/
+def flowTotal (l : List Flow) : Nat := l.foldl (fun a f => a + f.amount) 0
+
+/-- What a player's flows amount to. -/
+def flowBy (l : List Flow) (p : Player) : Nat := flowTotal (l.filter fun f => f.player == p)
+
+/-- What a player holds drawn: its draws less its returns, as a sum on each side. -/
+def drawnBy (sk : Skeleton) (p : Player) : Nat := flowBy sk.draws p - flowBy sk.returns p
+
+/-- **What is left of a supply is at least `n`**, read from the record. Left is the supplier's
+latest reading of what remains (else the stated floor), less what was drawn after that reading and
+plus what was returned after it. Readings of one time that disagree give the least. Stated as a
+threshold because a rule reads the tellings only through "is any telling `p`?". -/
+def supplyLeftAtLeast (o : Opening) (A : Told) (sk : Skeleton) (n : Nat) : Bool :=
+  if A (isReading o) then
+    !(A fun x => isReading o x && !(A fun y => isReading o y && decide (x.observed < y.observed)) &&
+      !decide (n + flowAfter sk.draws x.observed ≤ x.value + flowAfter sk.returns x.observed))
+  else decide (n + flowTotal sk.draws ≤ o.amount + flowTotal sk.returns)
+
 /-! ## Standing -/
 
 /-- A thread's standing (the arena's `THREAD_STANDINGS`). -/
 inductive Standing where
   | «open» | held | declined | promised | delivered | accepted | adopted | resolved | answered
-  | withdrawn | superseded | «in-force»
+  | withdrawn | superseded | «in-force» | drawn
   deriving DecidableEq, Repr
 
 /-- Who a request or question is addressed to: the player whose counter-offer was agreed, else
@@ -339,6 +403,7 @@ def standing (A : Told) (o : Opening) (sk : Skeleton) : Standing :=
       else if A (fun w => w.act == .answer) then .answered
       else .open
     | .declare => .«in-force»
+    | .supply => if supplyLeftAtLeast o A sk 1 then .open else .drawn
 
 /-- The standings after which nobody but a teller plays (the arena's `CLOSED_STANDINGS`). -/
 def closedStandings : List Standing := [.accepted, .withdrawn, .superseded, .resolved]
@@ -355,6 +420,7 @@ def takers (o : Opening) (sk : Skeleton) : List Player :=
   | .request => sk.promisers
   | .propose | .report => sk.adopters
   | .ask | .declare => []
+  | .supply => (sk.draws.map (·.player)).filter fun p => decide (0 < drawnBy sk p)
 
 /-- Whether a taking still carries current work: an aim held, a request promised (not awaiting
 assay), a proposal or report adopted. -/
@@ -363,7 +429,7 @@ def currentTaking (k : Kind) (st : Standing) : Bool :=
   | .aim => st == .held
   | .request => st == .promised
   | .propose | .report => st == .adopted
-  | .ask | .declare => false
+  | .ask | .declare | .supply => false
 
 /-- A list of players without `p`. -/
 def without (p : Player) (l : List Player) : List Player := l.filter (· != p)
@@ -440,6 +506,13 @@ def rule (o : Opening) (sk : Skeleton) (A : Told) (m : Move) : Option Skeleton :
       else some { sk with chosen := some m.about }
     | .adopt => if sk.adopters.contains p then none else some { sk with adopters := sk.adopters ++ [p] }
     | .resolve => some { sk with resolved := some m.time }
+    | .draw =>
+      if decide (o.lapses < m.time) || m.amount == 0 then none
+      else if !supplyLeftAtLeast o A sk (if o.admitsOpen then 1 else m.amount) then none
+      else some { sk with draws := sk.draws ++ [⟨p, m.amount, m.time⟩] }
+    | .«return» =>
+      if decide (drawnBy sk p < m.amount) then none
+      else some { sk with returns := sk.returns ++ [⟨p, m.amount, m.time⟩] }
     | .observe => none
     | .reject => none
     | .argue => none
@@ -447,10 +520,13 @@ def rule (o : Opening) (sk : Skeleton) (A : Told) (m : Move) : Option Skeleton :
     | .answer => none
     | .supersede => none
 
-/-- What a telling needs of itself alone: an observation of a stated measure, observed no later
-than told; a witness by someone other than the deliverer. -/
+/-- What a telling needs of itself alone: an observation of a stated measure (of a supply, the
+measure of what remains), observed no later than told; a witness by someone other than the
+deliverer. -/
 def intrinsic (o : Opening) (m : Move) : Bool :=
-  if m.act == .observe then o.measures.contains m.measure && decide (m.observed ≤ m.time)
+  if m.act == .observe then
+    (if o.kind == .supply then m.measure == remainingMeasure else o.measures.contains m.measure) &&
+      decide (m.observed ≤ m.time)
   else if m.act == .accept || m.act == .reject then m.about != m.player
   else true
 
@@ -503,6 +579,7 @@ def outcome (o : Opening) (A : Told) (sk : Skeleton) (refused : List Move) (answ
       | .propose => Calm.setOf (takers o sk)
       | .report => Calm.setOf (takers o sk)
       | .declare => Calm.setOf (takers o sk)
+      | .supply => Calm.setOf (takers o sk)
     refused := Calm.setOf (refused.map (·.time))
     deliveries := sk.deliveries.map fun d =>
       if witnessed A sk d then

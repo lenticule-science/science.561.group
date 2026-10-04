@@ -107,6 +107,22 @@ proved: the one-step reducts in leftmost-outermost order, sound and complete for
 
 Updated as slices land; newest first.
 
+- 2026-10-04, slice 7c (the supply, eighteenth edition), candidate `lane-7/arena-supply`:
+  - `WorkArena` gains the `supply` kind, the acts `draw` and `return`, `Opening.amount/lapses/admitsOpen`,
+    `Move.amount` and `Standing.drawn`. What is left is `supplyLeftAtLeast`: the supplier's latest
+    reading of what remains (else the floor), less draws after it, plus returns after it. A draw is
+    admitted before the lapse when what is left is at least the draw (a supply that admits open: at
+    least one); a return when the player holds that much drawn; both barred to the supplier.
+  - CALM: a draw consumes a shared quantity, so it is coordinated, with withdraw, release, supersede
+    and forfeit (`supply_draw_needs_seal`, refused by a competing draw; `..._of_reading`, refused
+    by a late reading; `late_return_admits_draw`, admitted by a late return). A return and a
+    withdrawal are coordinated too. The supplier's restatement is a telling. The supply's standing
+    is not monotone in the tellings, both ways. All axiom-free; `fragment_law` covers the supply.
+  - The `work-arena` suite has 631 rows (474 kept unchanged, 157 for the supply). By a probe mapping
+    of the arena, it agrees on every supply row but two: a reading dated ahead of its telling (the law
+    refuses it; the arena accepts it) and tied readings (the law reads the least; the arena the first
+    told). Board request `Vk9qhwc4...` to organizing's engineering section. The arena has no
+    realization of the supply yet, so its supply rows throw until it maps them, and the gate judges that.
 - 2026-10-03, slice 4c (honest spine, third pass), candidate `lane-7/honest-spine-3`:
   - `classify`: a definition (an `if`-chain over three flags), kept; docstring says the flags
     are inputs. `classify_exhaustive`: true because `classify` is total, kept.
