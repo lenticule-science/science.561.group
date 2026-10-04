@@ -46,6 +46,7 @@ below was read off the Lean, not off the notes.
 | The quantum world is ahead of the classical | `Worlds.quantum_ahead_of_classical` | Proved |
 | The node loop is the cycle: Monitor is kinetic, Analyze quantum, Plan causal, Execute thermodynamic | none | Reading |
 | Plan is causal: coordination-free under CALM | `ObsmetrologiaComputing.Calm.sealed_arrival_eq_replay`, `WorkArena.fragment_law`, `told_sealFree` (2026-10-03) | Proved for the work arena's tellings: they need no seal, and every other act needs one or retracts |
+| A bounded allowance is coordination: drawing on a supply (eighteenth edition) needs the seal, and the supplier's restatement of what remains does not | `WorkArena.supply_draw_needs_seal`, `supply_draw_needs_seal_of_reading`, `late_return_admits_draw`, `supply_return_needs_seal`, `supply_withdraw_retracts`, `supply_left_not_monotone_down`, `supply_left_not_monotone_up`, `supply_telling_iff_sealFree`; `fragment_law` now covers the supply (2026-10-04) | Proved by witness (the kernel evaluates each history, axiom-free) and for the told split. Not proved: that the realization's draw admission is this one. The `work-arena` suite judges it. |
 
 ## The two hands
 

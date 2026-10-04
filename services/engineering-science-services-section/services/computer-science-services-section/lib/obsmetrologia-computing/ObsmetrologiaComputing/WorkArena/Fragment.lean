@@ -45,6 +45,26 @@ holds every move before it. The question is which moves need that seal.
   because FOUR is interlaced: the truth-meet is knowledge-monotone
   (`readingInterlaced.meetT_kmono`).
 
+The supply (eighteenth edition) lands in the same split, and the draw is the case that carries
+a quantity:
+
+* `supply_draw_needs_seal` — **a draw consumes a shared quantity, so it needs the seal.** Two
+  draws that together exceed what a supply holds cannot both stand, so whether one stands
+  depends on the other, which may be the earlier and arrive late. A bounded allowance is
+  coordination.
+* `supply_draw_needs_seal_of_reading` — the quantity is also read through a telling: a late
+  restatement by the supplier of what remains refuses a draw that stood.
+* `late_return_admits_draw` — the dependence runs both ways: a late return admits a draw the
+  seal-less reader had refused. So the draw has no coordination-free reader in either direction.
+* `supply_return_needs_seal`, `supply_withdraw_retracts` — a return reads the thread's closure
+  and a withdrawal closes it. Both are coordinated.
+* `supply_left_not_monotone_down`, `supply_left_not_monotone_up` — the supply's standing is not
+  monotone in the tellings: a late reading closes an open supply, and a later one reopens it. A
+  draw acts on that standing's threshold, so nothing may act on it before the seal.
+* `supply_telling_iff_sealFree` — on a supply, the acts that are tellings are exactly the
+  acts that can never be refused for another player's earlier move, among draw, return and
+  restatement.
+
 The two classes overlap in one way, and it is stated rather than hidden. A request's
 acceptance is a telling whose verdict closes the thread. The telling never needs the seal; the
 verdict is not monotone (`verdict_not_monotone`). So every coordinated move reads the verdict
@@ -235,6 +255,66 @@ theorem seal_ask_withdraw : NeedsSeal .ask .withdraw :=
 theorem retracts_declare_withdraw : Retracts .declare .withdraw :=
   ⟨declO, [], mv .withdraw 1 1, 2, rfl, rfl, by decide, by decide, by decide⟩
 
+/-! ## The supply: a quantity that draws share -/
+
+/-- A supply of `5`, held by player `1`, that admits only draws that fit and lapses at `100`. -/
+def supplyO : Opening := { kind := .supply, opener := 1, assayer := 1, amount := 5, lapses := 100 }
+
+/-- A draw by `p` at `t` of `n`. -/
+def drawMv (p : Player) (t : Time) (n : Nat) : Move := { act := .draw, player := p, time := t, amount := n }
+/-- A return by `p` at `t` of `n`. -/
+def returnMv (p : Player) (t : Time) (n : Nat) : Move := { act := .«return», player := p, time := t, amount := n }
+/-- The supplier's reading, told at `t`, that `v` remains as of `s`. -/
+def remainingMv (t s v : Nat) : Move := { act := .observe, player := 1, time := t, measure := remainingMeasure, value := v, observed := s }
+
+/-- **A draw needs the seal.** Player `2`'s draw of the whole supply stands alone, and is refused
+once player `4`'s earlier draw of the same amount arrives: the two exceed what the supply holds. -/
+theorem supply_draw_needs_seal : NeedsSeal .supply .draw :=
+  ⟨supplyO, [drawMv 2 3 5], drawMv 2 3 5, drawMv 4 2 5, rfl, rfl, by decide, by decide, by decide, by decide⟩
+
+/-- A draw is also refused by a telling that lowers what is left: the supplier's late reading
+that nothing remains. -/
+theorem supply_draw_needs_seal_of_reading :
+    ∃ (l : List Move) (m x : Move), m.act = .draw ∧ x.act = .observe ∧ x.player ≠ m.player ∧
+      x.time < m.time ∧ admitted supplyO l m = true ∧ admitted supplyO (x :: l) m = false :=
+  ⟨[drawMv 2 3 5], drawMv 2 3 5, remainingMv 2 2 0, rfl, rfl, by decide, by decide, by decide, by decide⟩
+
+/-- **A late return admits a draw.** Player `3`'s draw is refused while player `2`'s draw of the
+whole supply stands, and stands once player `2`'s earlier return arrives. -/
+theorem late_return_admits_draw :
+    ∃ (l : List Move) (m x : Move), m.act = .draw ∧ x.act = .«return» ∧ x.player ≠ m.player ∧
+      x.time < m.time ∧ admitted supplyO l m = false ∧ admitted supplyO (x :: l) m = true :=
+  ⟨[drawMv 2 1 5, drawMv 3 4 3], drawMv 3 4 3, returnMv 2 3 3, rfl, rfl, by decide, by decide, by decide, by decide⟩
+
+/-- **A return needs the seal**: it is refused once the supplier's earlier withdrawal arrives. -/
+theorem supply_return_needs_seal : NeedsSeal .supply .return :=
+  ⟨supplyO, [drawMv 2 1 3, returnMv 2 3 2], returnMv 2 3 2, lateWithdraw, rfl, rfl, by decide, by decide, by decide, by decide⟩
+
+/-- **A withdrawal retracts**: it closes an open supply. -/
+theorem supply_withdraw_retracts : Retracts .supply .withdraw :=
+  ⟨supplyO, [], mv .withdraw 1 1, 2, rfl, rfl, by decide, by decide, by decide⟩
+
+/-- **A late reading closes an open supply.** -/
+theorem supply_left_not_monotone_down :
+    ∃ (l : List Move) (x : Move), told .supply x.act = true ∧
+      (board supplyO l 9).standing = .open ∧ (board supplyO (x :: l) 9).standing = .drawn :=
+  ⟨[drawMv 2 3 2], remainingMv 4 4 0, rfl, by decide, by decide⟩
+
+/-- **A later reading reopens a drawn supply.** -/
+theorem supply_left_not_monotone_up :
+    ∃ (l : List Move) (x : Move), told .supply x.act = true ∧
+      (board supplyO l 9).standing = .drawn ∧ (board supplyO (x :: l) 9).standing = .open :=
+  ⟨[drawMv 2 3 5], remainingMv 4 4 3, rfl, by decide, by decide⟩
+
+/-- **On a supply, tellings are exactly the seal-free acts** among draw, return and restatement:
+a restatement stands alone, and neither a draw nor a return does. -/
+theorem supply_telling_iff_sealFree (a : Act) (h : a = .draw ∨ a = .«return» ∨ a = .observe) :
+    told .supply a = true ↔ SealFree .supply a := by
+  match a, h with
+  | .observe, _ => exact ⟨fun _ => told_sealFree _ _ rfl, fun _ => rfl⟩
+  | .draw, _ => exact ⟨fun ht => absurd ht (by decide), fun hf => absurd hf (not_sealFree_of_needsSeal supply_draw_needs_seal)⟩
+  | .«return», _ => exact ⟨fun ht => absurd ht (by decide), fun hf => absurd hf (not_sealFree_of_needsSeal supply_return_needs_seal)⟩
+
 /-! ## The fragment law -/
 
 /-- **The fragment law.** For every act that answers a kind of opening: a telling is
@@ -268,6 +348,9 @@ theorem fragment_law (k : Kind) (a : Act) (h : answers k a = true) :
     | exact ⟨fun ht => absurd ht (by decide), fun _ => Or.inl seal_ask_accept⟩
     | exact ⟨fun ht => absurd ht (by decide), fun _ => Or.inl seal_ask_withdraw⟩
     | exact ⟨fun ht => absurd ht (by decide), fun _ => Or.inr retracts_declare_withdraw⟩
+    | exact ⟨fun ht => absurd ht (by decide), fun _ => Or.inl supply_draw_needs_seal⟩
+    | exact ⟨fun ht => absurd ht (by decide), fun _ => Or.inl supply_return_needs_seal⟩
+    | exact ⟨fun ht => absurd ht (by decide), fun _ => Or.inr supply_withdraw_retracts⟩
 
 /-! ## Supersession and forfeit -/
 
