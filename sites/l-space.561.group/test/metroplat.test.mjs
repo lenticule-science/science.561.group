@@ -27,10 +27,15 @@ let server;
 try {
  const root=join(scratch,'corpus');await mkdir(root);const markdown='---\ntitle: Hearth evidence\ndescription: Carrier proof\n---\n# Hearth\nSHRIMP composition preserves <meaning> & evidence.\n';await writeFile(join(root,'hearth.md'),markdown);
  const config={repositoryRoot:scratch,stateDir:join(scratch,'state'),publicBaseUrl:'http://corpus.test',sessionSecret:'fixture-secret-must-be-long-enough-123456',instance:{name:'corpus-test',title:'Corpus test'}};
+ await writeFile(join(root,'public.md'),'---\ntitle: Shared hearth\nvisibility: public\n---\nKnowledge shared deliberately.\n');
  const selected=lSpaceMetroplat({config,configuration:{root}});
  const entrance=createEnterpriseEntrance(config,{federation:{clients:new Map(),tools:[],unavailable:[]},applications:[selected]});
  socketPath=join(scratch,'entrance.sock');server=await startNativeApplication(entrance.app,{path:socketPath});const origin='http://corpus.test';
  const anonymous=await fetch(origin+'/knowledge',{headers:{accept:'text/html'},redirect:'manual'});assert.equal(anonymous.status,302);assert.match(anonymous.headers.get('location'),/sign-in/);
+ const publicRead=await fetch(origin+'/knowledge/public?document=public.md',{headers:{accept:'text/html'}});assert.equal(publicRead.status,200);assert.match(await publicRead.text(),/Knowledge shared deliberately/);
+ const privateRead=await fetch(origin+'/knowledge/public?document=hearth.md',{headers:{accept:'text/html'}});assert.equal(privateRead.status,404);assert.doesNotMatch(await privateRead.text(),/Carrier proof|SHRIMP/);
+ await writeFile(join(root,'public.md'),'---\ntitle: Shared hearth\nvisibility: authenticated\n---\nSharing was withdrawn.\n');
+ const withdrawn=await fetch(origin+'/knowledge/public?document=public.md',{headers:{accept:'text/html'}});assert.equal(withdrawn.status,404);assert.doesNotMatch(await withdrawn.text(),/Sharing was withdrawn/);
  const machine=await entrance.authorization.registerMachineClient({subject:'fixture-reader',name:'fixture'});
  const issued=await fetch(origin+'/oauth/token',{method:'POST',body:new URLSearchParams({grant_type:'client_credentials',client_id:machine.client_id,client_secret:machine.client_secret,resource:'http://corpus.test/mcp'})});assert.equal(issued.status,200);const token=(await issued.json()).access_token;
  const auth={authorization:`Bearer ${token}`};

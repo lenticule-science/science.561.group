@@ -39,7 +39,10 @@ export function lSpaceMetroplat({config, configuration = {}, archive: suppliedAr
         const id=url.searchParams.get('document');
         if (id) {
           const note=await call('fetch',{id});
-          return page(`<article><h2>${escape(note.title)}</h2><p>${escape(note.id)}</p><pre style="white-space:pre-wrap">${escape(note.text)}</pre><details><summary>Source metadata</summary><pre>${escape(JSON.stringify(note.metadata,null,2))}</pre></details></article>`);
+          const source=await (await archive()).read(id);
+          const sharing=source.properties?.visibility === 'public'
+            ? `<p><a href="/knowledge/public?document=${escape(encodeURIComponent(id))}">Public reading link</a></p>` : '';
+          return page(`<article><h2>${escape(note.title)}</h2><p>${escape(note.id)}</p>${sharing}<pre style="white-space:pre-wrap">${escape(note.text)}</pre><details><summary>Source metadata</summary><pre>${escape(JSON.stringify(note.metadata,null,2))}</pre></details></article>`);
         }
         const query=url.searchParams.get('query');
         if (!query) return page('<p>Search, then open a result to read its full source document here.</p>');
@@ -50,5 +53,19 @@ export function lSpaceMetroplat({config, configuration = {}, archive: suppliedAr
       }
     },
   }]};
-  return {applications:[reading],tools};
+  const publicReading = {resources:[{
+    id:'lspace.public-reading', match:'/knowledge/public', methods:['GET'], public:true,
+    handler:async ({url}) => {
+      const unavailable = () => ({...page('<p>The public document is unavailable.</p>'),status:404});
+      const id=url.searchParams.get('document');
+      if (!id) return unavailable();
+      try {
+        const document=await (await archive()).read(id);
+        // Publication belongs to the source, never to a URL or a prior search.
+        if (document.properties?.visibility !== 'public') return unavailable();
+        return page(`<article><h2>${escape(document.title ?? id)}</h2><pre style="white-space:pre-wrap">${escape(document.markdown ?? document.body ?? '')}</pre></article>`);
+      } catch {return unavailable();}
+    },
+  }]};
+  return {applications:[reading,publicReading],tools};
 }
