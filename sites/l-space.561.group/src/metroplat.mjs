@@ -1,4 +1,4 @@
-import { join } from 'node:path';
+import { join, resolve } from 'node:path';
 import { openArchive } from '@red-cup-engineering/knowledge-system-server/archive';
 import { searchAndFetchTools, vaultMcpTools } from '@red-cup-engineering/knowledge-system-server/mcp-tools';
 import { textRepr } from '@red-cup-engineering/http-services-section/representation';
@@ -12,9 +12,10 @@ const page = (body) => textRepr(`<!doctype html><html lang="en"><head><meta char
  * people and machine clients; this application opens no listener or OAuth server.
  * Search URLs, HTTP reading and MCP fetch retain the same document id/revision. */
 export function lSpaceMetroplat({config, configuration = {}, archive: suppliedArchive}) {
-  const root = configuration.root === undefined
-    ? join(config.repositoryRoot, 'lib/emsenn/services/561-group/services/science-services-section')
-    : configuration.root;
+  if (typeof configuration.root !== 'string' || !configuration.root.trim()) {
+    throw new TypeError('L-Space requires its corpus root in the installed application configuration');
+  }
+  const root = resolve(config.repositoryRoot, configuration.root);
   let opened;
   const archive = () => suppliedArchive ?? (opened ??= openArchive({
     root, excludes: configuration.excludes ?? EXCLUDED_SEGMENTS,
