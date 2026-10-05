@@ -1,3 +1,12 @@
+import { parseBody, renderBody } from '@red-cup-engineering/markdown-engineering-services-section/relational-markdown';
+import { createHash } from 'node:crypto';
+import { createGeodeWorkspace } from '@red-cup-engineering/graphical-knowledge-system-server/workspace';
+import { createGeodeFetchHandler } from '@red-cup-engineering/graphical-knowledge-system-server/server';
+import { fetchApplication } from '@red-cup-engineering/computer-web-server/compose';
+import { readFileSync } from 'node:fs';
+import { parseEnv } from 'node:util';
+import { createVaultMazeApplication } from '@red-cup-engineering/graphical-knowledge-game-server/application';
+import { createReviewStore } from '@red-cup-engineering/graphical-knowledge-game-server/review-store';
 import { join, resolve } from 'node:path';
 import { openArchive } from '@red-cup-engineering/knowledge-system-server/archive';
 import { searchAndFetchTools, vaultMcpTools } from '@red-cup-engineering/knowledge-system-server/mcp-tools';
@@ -11,17 +20,56 @@ const page = (body) => textRepr(`<!doctype html><html lang="en"><head><meta char
 /** One installed, read-only archive projection. The FeltOS entrance admits both
  * people and machine clients; this application opens no listener or OAuth server.
  * Search URLs, HTTP reading and MCP fetch retain the same document id/revision. */
-export function lSpaceMetroplat({config, configuration = {}, archive: suppliedArchive}) {
+export function lSpaceMetroplat({config, admission, configuration = {}, archive: suppliedArchive}) {
   if (typeof configuration.root !== 'string' || !configuration.root.trim()) {
     throw new TypeError('L-Space requires its corpus root in the installed application configuration');
   }
   const root = resolve(config.repositoryRoot, configuration.root);
+  const environmentFile = configuration.environmentFileKey && process.env[configuration.environmentFileKey];
+  const settings = environmentFile ? parseEnv(readFileSync(environmentFile, 'utf8')) : {};
+  const reviewRoot = configuration.reviewRoot ?? settings.LSPACE_STATE_DIR;
+  const reviews = reviewRoot ? createVaultMazeApplication({
+    reviews:createReviewStore({root:resolve(reviewRoot)}),
+    subjectOf:async context => {
+      const principal=await admission?.identifyContext(context);
+      if (!principal) return null;
+      // A delegated human grant retains its issuer's pseudonym. A machine
+      // principal is not assigned a human's learning history.
+      const hash=principal.provider === 'bearer'
+        ? /^(?:google|password|hive):([a-f0-9]{64})$/u.exec(principal.subjectHash)?.[1]
+        : principal.subjectHash;
+      return typeof hash === 'string' && /^[a-f0-9]{64}$/u.test(hash) ? hash : null;
+    },
+  }) : undefined;
   let opened;
   const archive = () => suppliedArchive ?? (opened ??= openArchive({
     root, excludes: configuration.excludes ?? EXCLUDED_SEGMENTS,
     observations: join(config.stateDir, 'knowledge', 'observations.jsonl'),
     fullText: join(config.stateDir, 'knowledge', 'full-text.sqlite'),
   }).catch(error => {opened=undefined; throw error;}));
+  const authoringRoot = configuration.authoringRoot ?? settings.GEODE_AUTHORING_ROOT;
+  const authoringRegion = configuration.authoringRegion ?? settings.GEODE_AUTHORING_REGION ?? '';
+  let workbench;
+  const isAuthor = async context => {
+    const principal=await admission?.identifyContext(context);
+    if (!principal || principal.provider === 'bearer') return false;
+    let held={};
+    try {held=JSON.parse(readFileSync(join(reviewRoot, 'author.json'),'utf8'));} catch {}
+    const email=settings.LSPACE_AUTHOR_EMAIL ?? held.email;
+    if (principal.provider === 'google' && typeof email === 'string'
+      && principal.email?.trim().toLowerCase() === email.trim().toLowerCase()) return true;
+    const subjects=settings.LSPACE_AUTHOR_SUBJECTS?.split(',').map(value=>value.trim())
+      ?? (Array.isArray(held.subjects) ? held.subjects : []);
+    return ['password','hive'].includes(principal.provider) && subjects.some(subject=>typeof subject === 'string'
+      && subject.startsWith(principal.provider+':')
+      && createHash('sha256').update(subject).digest('hex') === principal.subjectHash);
+  };
+  const authoring = authoringRoot && resolve(authoringRoot) === root && authoringRegion === ''
+    ? fetchApplication(async (request, context) => {
+      if (!await isAuthor(context)) return new Response('Author access required',{status:403,headers:{'cache-control':'no-store'}});
+      workbench ??= createGeodeWorkspace({archive:await archive()}).then(workspace=>createGeodeFetchHandler({workspace,basePath:'/geode'})).catch(error=>{workbench=undefined;throw error;});
+      return (await workbench)(request);
+    }, {matches:request=>new URL(request.url).pathname.startsWith('/geode/')}) : undefined;
   const reader = {archive, canWrite:false};
   // Omit write descriptors entirely: visibility is not an authorization check.
   const descriptors = [
@@ -34,7 +82,8 @@ export function lSpaceMetroplat({config, configuration = {}, archive: suppliedAr
   const call = (name, input) => tools.find(tool => tool.name === `lspace_${name}`).handler(input);
   const reading = {resources:[{
     id:'lspace.metroplat', match:'/knowledge', methods:['GET'],
-    handler:async ({url}) => {
+    handler:async context => {
+      const {url}=context;
       try {
         const id=url.searchParams.get('document');
         if (id) {
@@ -42,10 +91,19 @@ export function lSpaceMetroplat({config, configuration = {}, archive: suppliedAr
           const source=await (await archive()).read(id);
           const sharing=source.properties?.visibility === 'public'
             ? `<p><a href="/knowledge/public?document=${escape(encodeURIComponent(id))}">Public reading link</a></p>` : '';
-          return page(`<article><h2>${escape(note.title)}</h2><p>${escape(note.id)}</p>${sharing}<pre style="white-space:pre-wrap">${escape(note.text)}</pre><details><summary>Source metadata</summary><pre>${escape(JSON.stringify(note.metadata,null,2))}</pre></details></article>`);
+          const rendered=renderBody(parseBody(source.body ?? ''), {resolve:target=>({href:`/knowledge?name=${encodeURIComponent(target)}`,type:'knowledge-name',title:target})});
+          return page(`<article><h2>${escape(note.title)}</h2><p>${escape(note.id)}</p>${sharing}<section>${rendered}</section><details><summary>Full source document</summary><pre style="white-space:pre-wrap">${escape(note.text)}</pre></details><details><summary>Source metadata</summary><pre>${escape(JSON.stringify(note.metadata,null,2))}</pre></details></article>`);
+        }
+        const name=url.searchParams.get('name');
+        if (name) {
+          const found=await call('vault_names',{name,limit:200});
+          return page(`<h2>Readings of ${escape(name)}</h2><p>These documents answer to this name; their differences remain available.</p><ul>${found.results.map(note=>`<li><a href="${escape(documentPath(note.path))}">${escape(note.title ?? note.path)}</a><p>${escape(note.path)}</p></li>`).join('')}</ul>${found.results.length ? '' : '<p>No document currently answers to this name.</p>'}`);
         }
         const query=url.searchParams.get('query');
-        if (!query) return page('<p>Search, then open a result to read its full source document here.</p>');
+        if (!query) {
+          const authorLink=authoring && await isAuthor(context) ? '<p><a href="/geode/">Author workbench</a></p>' : '';
+          return page('<p>Search, then open a result to read its full source document here.</p>'+authorLink);
+        }
         const found=await call('search',{query});
         return page(`<h2>Results for ${escape(query)}</h2><ul>${found.results.map(note=>`<li><a href="${escape(documentPath(note.id))}">${escape(note.title)}</a><p>${escape(note.text)}</p></li>`).join('')}</ul>`);
       } catch {
@@ -67,5 +125,5 @@ export function lSpaceMetroplat({config, configuration = {}, archive: suppliedAr
       } catch {return unavailable();}
     },
   }]};
-  return {applications:[reading,publicReading],tools};
+  return {applications:[reading,publicReading,...(reviews ? [reviews] : []),...(authoring ? [authoring] : [])],tools};
 }
