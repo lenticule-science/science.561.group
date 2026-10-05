@@ -10,7 +10,7 @@ export async function resolveReadingLinks(tree, {document, archive, documentUrl}
       const fragment = value.href.indexOf('#');
       const target = fragment < 0 ? value.href : value.href.slice(0, fragment);
       const anchor = fragment < 0 ? '' : value.href.slice(fragment);
-      let resolved=await archive.resolveLink(document, target);
+      let resolved;
       try {
         const path=posix.normalize(posix.join(posix.dirname(document),decodeURIComponent(target)));
         archive.admit(path);

@@ -45,3 +45,14 @@ test('non-knowledge Markdown cannot consume the admitted scan bound',async()=>{
     assert.deepEqual(result.paths,['content/text/knowledge.md']);assert.equal(result.truncated,false);
   } finally {await rm(root,{recursive:true,force:true});}
 });
+
+
+test('an exact admitted source-relative link needs no whole-corpus observation',async()=>{
+  const {resolveReadingLinks}=await import('../src/reading-links.mjs');
+  const tree={blocks:[{kind:'link',href:'../purpose.md#purpose',label:'Purpose'}]};
+  await resolveReadingLinks(tree,{document:'science/claim.md',archive:{
+    admit:path=>assert.equal(path,'purpose.md'),
+    resolveLink:()=>{throw new Error('Whole-corpus observation is unnecessary');},
+  },documentUrl:id=>'https://corpus.test/knowledge?document='+encodeURIComponent(id)});
+  assert.equal(tree.blocks[0].href,'https://corpus.test/knowledge?document=purpose.md#purpose');
+});
