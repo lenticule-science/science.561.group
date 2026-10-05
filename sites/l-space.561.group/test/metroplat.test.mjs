@@ -39,6 +39,9 @@ try {
  const read=await fetch(origin+'/knowledge?document=hearth.md',{headers:{...auth,accept:'text/html'}});assert.equal(read.status,200);const html=await read.text();assert.match(html,/&lt;meaning&gt; &amp; evidence/);
  const fetched=await selected.tools.find(t=>t.name==='lspace_fetch').handler({id:'hearth.md'});assert.equal(fetched.text,markdown);assert.ok(fetched.metadata.revision);
  const response=await fetch(origin+'/mcp',{method:'POST',headers:{...auth,'content-type':'application/json',accept:'application/json, text/event-stream'},body:JSON.stringify({jsonrpc:'2.0',id:1,method:'tools/call',params:{name:'lspace_fetch',arguments:{id:'hearth.md'}}})});assert.equal(response.status,200);const text=await response.text();assert.match(text,/Hearth evidence/);
+ const names=await selected.tools.find(t=>t.name==='lspace_vault_names').handler({name:'Hearth evidence'});assert.equal(names.results[0].path,'hearth.md');
+ assert.equal(selected.tools.some(t=>/vault_(write|edit|properties|move|merge)$/.test(t.name)),false);
+ const namesResponse=await fetch(origin+'/mcp',{method:'POST',headers:{...auth,'content-type':'application/json',accept:'application/json, text/event-stream'},body:JSON.stringify({jsonrpc:'2.0',id:2,method:'tools/call',params:{name:'lspace_vault_names',arguments:{name:'Hearth evidence'}}})});assert.equal(namesResponse.status,200);assert.match(await namesResponse.text(),/hearth.md/);
  const traversal=await selected.tools.find(t=>t.name==='lspace_fetch').handler({id:'../outside.md'}).then(()=>false,()=>true);assert.equal(traversal,true);
  console.log('PROVED: one archive, same document/revision in admitted HTTP and MCP, same-world discovery URL, anonymous refusal, traversal refusal, full Markdown preservation.');
 } finally {await server?.close();await rm(scratch,{recursive:true,force:true});}

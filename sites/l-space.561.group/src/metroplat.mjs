@@ -1,6 +1,6 @@
 import { join } from 'node:path';
 import { openArchive } from '@red-cup-engineering/knowledge-system-server/archive';
-import { searchAndFetchTools } from '@red-cup-engineering/knowledge-system-server/mcp-tools';
+import { searchAndFetchTools, vaultMcpTools } from '@red-cup-engineering/knowledge-system-server/mcp-tools';
 import { textRepr } from '@red-cup-engineering/http-services-section/representation';
 
 import { EXCLUDED_SEGMENTS } from './archive-policy.mjs';
@@ -21,8 +21,15 @@ export function lSpaceMetroplat({config, configuration = {}, archive: suppliedAr
     observations: join(config.stateDir, 'knowledge', 'observations.jsonl'),
     fullText: join(config.stateDir, 'knowledge', 'full-text.sqlite'),
   }).catch(error => {opened=undefined; throw error;}));
-  const tools = searchAndFetchTools({documentUrl: id => new URL(documentPath(id), config.publicBaseUrl).href})
-    .map(tool => ({...tool, name:`lspace_${tool.name}`, handler: input => tool.handler(input, {archive, canWrite:false})}));
+  const reader = {archive, canWrite:false};
+  // Omit write descriptors entirely: visibility is not an authorization check.
+  const descriptors = [
+    ...searchAndFetchTools({documentUrl: id => new URL(documentPath(id), config.publicBaseUrl).href}),
+    ...vaultMcpTools.filter(tool => !tool.visible || tool.visible(reader)),
+  ];
+  const tools = descriptors.map(tool => ({
+    ...tool, name:`lspace_${tool.name}`, handler: input => tool.handler(input, reader),
+  }));
   const call = (name, input) => tools.find(tool => tool.name === `lspace_${name}`).handler(input);
   const reading = {resources:[{
     id:'lspace.metroplat', match:'/knowledge', methods:['GET'],
