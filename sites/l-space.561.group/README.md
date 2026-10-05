@@ -10,6 +10,23 @@ References to `static-site-publisher.config.mjs`, a standalone L-Space service,
 or `static-site-publisher serve --release` are historical and must not be used
 as current deployment instructions.
 
+## MetroPlat corpus access
+
+The Group profile installs `@lenticule-science/l-space/metroplat` as
+`lSpaceMetroplat`. Inside FeltOS's existing entrance, `/knowledge` and
+`lspace_search`/`lspace_fetch` read one CAIRN archive over the Science corpus.
+People search and open complete source documents; agent results name those same
+`/knowledge?document=...` URLs and retain source revisions and metadata.
+The host's existing admission applies to both projections. No gateway token,
+HTTP corpus hop, additional client connector, listener or OAuth server is
+required for this reading capability.
+
+The older companion garden still carries public rooms, reviews, media,
+notebooks and authoring. Those distinct effects and external consumers remain
+migration work; installing the corpus reader does not establish their retirement
+or full single-world alignment. The shared archive policy retains custody and
+working-stratum exclusions in both projections.
+
 ## Current composition
 
 `lSpaceApplication(environment)` composes the existing owning services:

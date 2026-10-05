@@ -24,6 +24,7 @@
     "@red-cup-engineering/oauth-services-section": "workspace:*"
   },
   "exports": {
-    "./site": "./src/site.mjs"
+    "./site": "./src/site.mjs",
+    "./metroplat": "./src/metroplat.mjs"
   }
 }
