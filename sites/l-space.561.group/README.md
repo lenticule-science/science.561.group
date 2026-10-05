@@ -1,93 +1,119 @@
 # L-Space
 
-The Lenticule Science knowledge garden, at `https://l-space.561.group`.
+L-Space is the Lenticule Science knowledge garden at `https://l-space.561.group`.
+Its current deployable application is `src/site.mjs`, exported as
+`@lenticule-science/l-space/site` and loaded as a companion of the Bare Cedar
+Fog FeltOS host.
 
-- **L-Space** means **Lenticule Space**.
-- **SPACE** means **Semantic Position Arranging Conceptual Elements**.
-- **TUFTE** means **Tiling User Form Topology Engine**.
+There is no current standalone VICTOR/static-site-publisher application here.
+References to `static-site-publisher.config.mjs`, a standalone L-Space service,
+or `static-site-publisher serve --release` are historical and must not be used
+as current deployment instructions.
 
-L-Space is a VICTOR site. `static-site-publisher.config.mjs`, pointed at the Lenticule Science
-section, is the whole application; this package carries no code that belongs to
-L-Space. What it composes is owned elsewhere:
+## Current composition
 
-- **VICTOR** builds and serves the site. Its `vault` catalog dialect, owned by the
-  vault compiler, admits every note of the science forest as a room: the title
-  falls back to the file name, the date is optional, the type is open, and the
-  compiler's doors become typed relations. Each room is also a static page.
-- **VaultMaze** projects the reading experience: the browser application at the
-  root, the browser engine projected from the education platform, CAIRN, and
-  TUFTE, and the content-addressed room release under `/vault/`, with its
-  anonymous tree under `/vault/public/` holding only rooms whose own frontmatter
-  says `visibility: public`. Its public glossary terms are also served as one
-  machine-readable vocabulary at `/vault/public/glossary.jsonld` (SKOS and
-  schema.org `DefinedTerm`), which anonymous readers may fetch. It also keeps
-  each reader's review state.
-- **GEODE** is the workbench the author is admitted to, mounted as its own
-  application over a live checkout when `GEODE_AUTHORING_ROOT` names one.
-- **The web admission service** decides who may read what, and keeps signed sessions and the
-  gate over the artifact trees. Readers are admitted through:
-  - Google sign-in, for addresses on the `LSPACE_ALLOWED_EMAILS` allowlist;
-  - Discord, for current Turntide islanders, through user OAuth or the `/l-space-login` command;
-  - a username and password, or a Hive Keychain signature, for the people in the state
-    directory's `principals.json`.
+`lSpaceApplication(environment)` composes the existing owning services:
 
-  Only the author may write through GEODE or `/mcp`: the verified Google principal named by
-  `LSPACE_AUTHOR_EMAIL`, or a local subject named in `LSPACE_AUTHOR_SUBJECTS`; when neither
-  is set they are read from `author.json` in the state directory, and with neither nobody authors.
+- **web admission** decides who may read protected material;
+- **VaultMaze** reads the Science forest and projects the garden, public/private
+  room trees, feeds, glossary vocabulary and room metadata;
+- **GEODE** is loaded only when an authoring checkout is configured;
+- the **knowledge-system archive** serves search/read and persists parsed state;
+- **immutable content custody** serves ni-addressed media;
+- **Gemini Notebook buckets** are an optional author-only S3-style surface;
+- **OAuth + MCP** expose the admitted Science corpus to connected assistants.
 
-## Commands
+L-Space does not own those reusable engines. This package owns the Lenticule
+Science composition, policy, deployment bindings and receiving tests.
 
-```sh
-npm install
-npm run check      # two builds of the forest are the same release
-npm run build      # victor build <science-section> dist
-npm run serve      # the authoring loop: drafts visible, rebuilt on change
-npm run start      # the release, as the deployment unit runs it
-npm test
+## Public and protected rooms
+
+The default room is authenticated. A room is anonymous only when its own
+frontmatter contains the literal:
+
+```yaml
+visibility: public
 ```
 
-The forest is 22,000 rooms. A build takes about two minutes inside six
-gigabytes; `NODE_OPTIONS=--max-old-space-size=6144` is set in the unit.
+Custody/working strata such as `legacy`, `triage`, `private`, `dev`,
+`test`, `fixtures`, `dist`, `sites` and `lib` are excluded from the
+garden projection.
 
-## Assistants
+The anonymous garden is **not** the scientific-release set. A readable room is
+not thereby independently received Science, licensed for reuse, or a publication
+candidate. Scientific receiving and reuse rights remain separate authority
+questions.
 
-`/mcp` is the garden as an MCP server. To connect ChatGPT, Claude or any MCP client, give it the
-URL `https://l-space.561.group/mcp`. The client finds the garden's authorization server and
-registers itself. The reader signs in the same way as on the site (Google for allowlisted
-addresses, Discord for islanders) and then approves the client on a consent page. Every admitted
-reader can use `search` and `fetch`, the pair ChatGPT expects of a knowledge source, and the
-`vault_*` tools that read what the notes say. Only the author also sees the write tools.
+## Current public addresses
+
+VaultMaze exposes the anonymous public index and room JSON under the public vault
+tree and computes an ordinary server route for each room. The interactive garden
+and current MCP document links still use the VaultMaze application route.
+
+The existence of a computed ordinary route is not evidence that the deployed
+server currently serves that route as a crawlable document. That remains a
+receiver-side Web conformance obligation: activate the existing route only
+through the current VaultMaze/Web interfaces, then independently read it from
+outside the serving boundary before changing feeds, canonical links, or claiming
+crawlability.
+
+Do not create a second Science CMS or copy the manuscript into another content
+store to solve that problem.
+
+## MCP
+
+`/mcp` is L-Space's MCP server. Its authorization server uses the same admitted
+reader identity as the site. Admitted readers may search/read; authoring tools are
+shown only to the configured author.
+
+The MCP resource's current human document link is derived by `roomUrl` in
+`src/site.mjs`. Changing it to an ordinary room URL is appropriate only after
+that ordinary URL is actually served and independently received.
 
 ## Deployment
 
-`deploy/l-space.service` runs `static-site-publisher serve --release` on `127.0.0.1:18848` on
-the machine that holds the repository (`bare-cedar-fog`). A build of the forest needs about six
-gigabytes, more than the public host has. The public host's Caddy reaches the site over the
-tailnet (`deploy/Caddyfile`). It runs from a release checkout of the repository
-(`~/.local/share/561-group/releases/info/checkout`), so work in progress in the live tree never
-stops the site. The garden therefore publishes the science section as of that release. GEODE
-authors the live tree, and its edits appear once a new commit is checked out there and installed.
+L-Space is deployed as a dependency/companion of:
 
-The runtime environment file, mode `0600`, names the public origin and holds the provider
-credentials; nothing secret is committed. Per-reader state (review rows and Discord sessions)
-lives in one SQLite database at `LSPACE_DATABASE_PATH`. It is opened through the Cloudflare D1
-contract, so the same tables would serve a D1 deployment unchanged. The authorization server's
-grants live beside it in `oauth/` (or at `LSPACE_OAUTH_STATE`).
+`@561-group/bare-cedar-fog-host-deployment`
 
-| Variable | Meaning |
-| --- | --- |
-| `PUBLIC_BASE_URL` | The public origin identity providers redirect back to; also the issuer and the resource's origin. |
-| `SESSION_SECRET` | Signs sessions and seals confidential cookies; rotating it signs everyone out. |
-| `GOOGLE_CLIENT_ID`, `GOOGLE_CLIENT_SECRET` | The Google OAuth client. |
-| `LSPACE_ALLOWED_EMAILS` | Comma-separated addresses admitted through Google. Empty admits nobody. |
-| `LSPACE_AUTHOR_EMAIL` | The one address that may author; defaults to `email` in the state directory's `author.json`. |
-| `DISCORD_CLIENT_ID`, `DISCORD_CLIENT_SECRET` | The Discord application, for user OAuth. |
-| `DISCORD_GUILD_ID`, `TURNTIDE_ISLANDER_ROLE_ID` | The exact guild and role snowflakes; names are never authorization keys. |
-| `DISCORD_BOT_TOKEN`, `DISCORD_PUBLIC_KEY` | Re-observe membership for command sessions; verify Discord interactions. |
-| `LSPACE_DATABASE_PATH` | The SQLite database for per-reader state. |
-| `LSPACE_STATE_DIR` | `principals.json`, Hive login nonces, and the authorization server's grants (default: beside the database). |
-| `LSPACE_AUTHOR_SUBJECTS` | Comma-separated local subjects who may author; defaults to `subjects` in `author.json`. |
-| `LSPACE_OAUTH_STATE` | Where the authorization server keeps clients and grants, when not in the state directory. |
-| `GEODE_AUTHORING_ROOT`, `GEODE_AUTHORING_REGION` | The live checkout GEODE admits Markdown from; `/mcp` reads the same archive. |
+The host release, not an L-Space-local shell command, decides which committed
+source revision is live. Source merge, host release, process readiness and public
+HTTP receiving are separate receipts.
 
-Clients reach these tools through the machine's one MetroPlat node, never through a copy of the archive started per client.
+Relevant environment settings read by `src/site.mjs` include:
+
+- `LSPACE_STATE_DIR` — required state root;
+- `PUBLIC_BASE_URL` — public origin;
+- `LSPACE_ROOT` — Science/content root override;
+- `LSPACE_EXCLUDE`, `LSPACE_WING`, `LSPACE_TITLE`, `LSPACE_SUBTITLE` —
+  projection overrides;
+- `LSPACE_AUTHOR_EMAIL`, `LSPACE_AUTHOR_SUBJECTS`, `LSPACE_ALLOWED_EMAILS` —
+  author/admission policy inputs;
+- Google/Discord/password/Hive provider settings used by web admission;
+- `LSPACE_MEDIA_ROOT` — ni-addressed media root;
+- `LSPACE_NOTEBOOK_BUCKETS=false` — disable the optional Notebook bucket face;
+- `GEODE_AUTHORING_ROOT`, `GEODE_AUTHORING_REGION` — authoring checkout;
+- `LSPACE_OAUTH_STATE` — OAuth grant store;
+- `LSPACE_GATEWAY_TOKENS` — named trusted gateway credentials;
+- `GITHUB_SHA` or `LENTICULE_SCIENCE_SOURCE_REVISION` — explicit source
+  revision evidence.
+
+Secrets belong in deployment state/environment, never this repository.
+
+## Testing
+
+Run the package acceptance suite:
+
+```sh
+node --test test/*.test.mjs
+```
+
+The current site integration test starts `lSpaceApplication` through the same
+native web-application adapter used by the FeltOS host and verifies the bounded
+receiving invariants: public opt-in is anonymous, protected room surfaces remain
+gated, excluded custody material does not become a public room, and the public
+index still carries VaultMaze's ordinary route.
+
+A green package test proves those source/runtime invariants. It does not by
+itself prove the deployed companion is current or publicly reachable; those need
+host-release and outside-observation receipts.
