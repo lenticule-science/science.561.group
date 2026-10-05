@@ -1,3 +1,4 @@
+import { resolveReadingLinks } from './reading-links.mjs';
 import { retainDocumentEmbeds } from '@red-cup-engineering/knowledge-system-server/vault-catalog';
 import { createImmutableContentCustody } from '@red-cup-engineering/immutable-content-custody-service';
 import { createFileStore } from '@red-cup-engineering/immutable-content-custody-service/file-store';
@@ -31,6 +32,8 @@ export function lSpaceMetroplat({config, admission, configuration = {}, archive:
     throw new TypeError('L-Space requires its corpus root in the installed application configuration');
   }
   const root = resolve(config.repositoryRoot, configuration.root);
+  const sciencePrefix=configuration.sciencePrefix;
+  const authorRoot=sciencePrefix ? resolve(root,sciencePrefix) : root;
   const environmentFile = configuration.environmentFileKey && process.env[configuration.environmentFileKey];
   const settings = environmentFile ? parseEnv(readFileSync(environmentFile, 'utf8')) : {};
   const reviewRoot = configuration.reviewRoot ?? settings.LSPACE_STATE_DIR;
@@ -55,9 +58,16 @@ export function lSpaceMetroplat({config, admission, configuration = {}, archive:
   let opened;
   const archive = () => suppliedArchive ?? (opened ??= openArchive({
     root, excludes: configuration.excludes ?? EXCLUDED_SEGMENTS,
+    admitPath:path=>!sciencePrefix || path.startsWith(sciencePrefix+'/') || path.includes('/content/text/'),
     observations: join(config.stateDir, 'knowledge', 'observations.jsonl'),
     fullText: join(config.stateDir, 'knowledge', 'full-text.sqlite'),
-  }).catch(error => {opened=undefined; throw error;}));
+  }).then(held=>sciencePrefix ? Object.freeze({...held,
+    get paths(){return held.paths;}, get snapshot(){return held.snapshot;}, get version(){return held.version;},
+    read:async id=>{
+      // Existing science ids remain usable; canonical ids now name their Group context.
+      return held.read(held.paths.includes(id) ? id : sciencePrefix+'/'+id);
+    },
+  }) : held).catch(error => {opened=undefined; throw error;}));
   const authoringRoot = configuration.authoringRoot ?? settings.GEODE_AUTHORING_ROOT;
   const authoringRegion = configuration.authoringRegion ?? settings.GEODE_AUTHORING_REGION ?? '';
   let workbench;
@@ -75,11 +85,13 @@ export function lSpaceMetroplat({config, admission, configuration = {}, archive:
       && subject.startsWith(principal.provider+':')
       && createHash('sha256').update(subject).digest('hex') === principal.subjectHash);
   };
-  const authoring = authoringRoot && resolve(authoringRoot) === root && authoringRegion === ''
+  const authoring = authoringRoot && resolve(authoringRoot) === authorRoot && authoringRegion === ''
     ? fetchApplication(async (request, context) => {
       if (!await isAuthor(context)) return new Response('Author access required',{status:403,headers:{'cache-control':'no-store'}});
-      workbench ??= createGeodeWorkspace({archive:await archive()}).then(workspace=>createGeodeFetchHandler({workspace,basePath:'/geode'})).catch(error=>{workbench=undefined;throw error;});
-      return (await workbench)(request);
+      workbench ??= createGeodeWorkspace(sciencePrefix ? {root:authorRoot,excludes:configuration.excludes ?? EXCLUDED_SEGMENTS} : {archive:await archive()}).then(workspace=>createGeodeFetchHandler({workspace,basePath:'/geode'})).catch(error=>{workbench=undefined;throw error;});
+      const response=await (await workbench)(request);
+      if (sciencePrefix && !['GET','HEAD'].includes(request.method) && response.ok) await (await archive()).refresh();
+      return response;
     }, {matches:request=>new URL(request.url).pathname.startsWith('/geode/')}) : undefined;
   const bucketResource = settings.LSPACE_NOTEBOOK_BUCKETS === 'false' ? undefined : notebookBuckets();
   const notebooks = bucketResource ? {resources:[{...bucketResource,
@@ -95,7 +107,7 @@ export function lSpaceMetroplat({config, admission, configuration = {}, archive:
         : `/knowledge?name=${encodeURIComponent(identity)}`,config.publicBaseUrl).href,
   }), {matches:ownsVocabularyRequest});
   const roomDocument = async room => /^[a-f0-9]{64}$/u.test(room ?? '')
-    ? (await archive()).paths.find(path=>createHash('sha256').update(path).digest('hex') === room) : undefined;
+    ? (await archive()).paths.find(path=>[path,...(sciencePrefix && path.startsWith(sciencePrefix+'/') ? [path.slice(sciencePrefix.length+1)] : [])].some(id=>createHash('sha256').update(id).digest('hex') === room)) : undefined;
   const historicalEntry={resources:[{
     id:'lspace.historical-entry',match:'/knowledge/entry',methods:['GET'],public:true,
     handler:()=>page('<p><a href="/knowledge">Enter the knowledge corpus</a></p><script src="/knowledge/entry.js"></script>'),
@@ -127,9 +139,11 @@ export function lSpaceMetroplat({config, admission, configuration = {}, archive:
         if (id) {
           const note=await call('fetch',{id});
           const source=await (await archive()).read(id);
+          const sourceId=source.path ?? id;
           const sharing=source.properties?.visibility === 'public'
             ? `<p><a href="/knowledge/public?document=${escape(encodeURIComponent(id))}">Public reading link</a></p>` : '';
-          const rendered=renderBody(await retainDocumentEmbeds(parseBody(source.body ?? ''),{root,document:id,custody,excludes:configuration.excludes ?? EXCLUDED_SEGMENTS}), {resolve:target=>({href:`/knowledge?name=${encodeURIComponent(target)}`,type:'knowledge-name',title:target})});
+          const parsed=await resolveReadingLinks(parseBody(source.body ?? ''),{document:sourceId,archive:await archive(),documentUrl:target=>new URL(documentPath(target),config.publicBaseUrl).href});
+          const rendered=renderBody(await retainDocumentEmbeds(parsed,{root,document:sourceId,custody,excludes:configuration.excludes ?? EXCLUDED_SEGMENTS}), {resolve:target=>({href:`/knowledge?name=${encodeURIComponent(target)}`,type:'knowledge-name',title:target})});
           return page(`<article><h2>${escape(note.title)}</h2><p>${escape(note.id)}</p>${sharing}<section>${rendered}</section><details><summary>Full source document</summary><pre style="white-space:pre-wrap">${escape(note.text)}</pre></details><details><summary>Source metadata</summary><pre>${escape(JSON.stringify(note.metadata,null,2))}</pre></details></article>`);
         }
         const name=url.searchParams.get('name');
