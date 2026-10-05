@@ -1,3 +1,9 @@
+import { retainDocumentEmbeds } from '@red-cup-engineering/knowledge-system-server/vault-catalog';
+import { createImmutableContentCustody } from '@red-cup-engineering/immutable-content-custody-service';
+import { createFileStore } from '@red-cup-engineering/immutable-content-custody-service/file-store';
+import { niResource } from '@red-cup-engineering/http-services-section/ni';
+import { notebookBuckets } from './notebooks.mjs';
+import { handleVocabularyRequest, ownsVocabularyRequest } from '@red-cup-engineering/knowledge-system-server/vocabulary';
 import { parseBody, renderBody } from '@red-cup-engineering/markdown-engineering-services-section/relational-markdown';
 import { createHash } from 'node:crypto';
 import { createGeodeWorkspace } from '@red-cup-engineering/graphical-knowledge-system-server/workspace';
@@ -41,6 +47,11 @@ export function lSpaceMetroplat({config, admission, configuration = {}, archive:
       return typeof hash === 'string' && /^[a-f0-9]{64}$/u.test(hash) ? hash : null;
     },
   }) : undefined;
+  const mediaRoot=configuration.mediaRoot ?? settings.LSPACE_MEDIA_ROOT ?? join(reviewRoot ?? config.stateDir,'media');
+  const custody=createImmutableContentCustody({store:createFileStore(mediaRoot),maximumBytes:1024**3});
+  const ni=niResource(custody);
+  const media={resources:[{...ni,handler:async context=>await admission?.identifyContext(context)
+    ? ni.handler(context) : new Response('Reader admission required',{status:401,headers:{'cache-control':'no-store'}})}]};
   let opened;
   const archive = () => suppliedArchive ?? (opened ??= openArchive({
     root, excludes: configuration.excludes ?? EXCLUDED_SEGMENTS,
@@ -70,6 +81,28 @@ export function lSpaceMetroplat({config, admission, configuration = {}, archive:
       workbench ??= createGeodeWorkspace({archive:await archive()}).then(workspace=>createGeodeFetchHandler({workspace,basePath:'/geode'})).catch(error=>{workbench=undefined;throw error;});
       return (await workbench)(request);
     }, {matches:request=>new URL(request.url).pathname.startsWith('/geode/')}) : undefined;
+  const bucketResource = settings.LSPACE_NOTEBOOK_BUCKETS === 'false' ? undefined : notebookBuckets();
+  const notebooks = bucketResource ? {resources:[{...bucketResource,
+    handler:async context => await isAuthor(context)
+      ? bucketResource.handler(context)
+      : new Response('Author access required',{status:403,headers:{'cache-control':'no-store'}}),
+  }]} : undefined;
+  const vocabulary=fetchApplication(async request=>handleVocabularyRequest(request,{
+    archive:await archive(), baseUrl:configuration.vocabularyBaseUrl ?? config.publicBaseUrl,
+    documentUrl:(document,{public:published,identity})=>new URL(
+      published && !Object.hasOwn(document.properties ?? {},'consent-status')
+        ? `/knowledge/public?document=${encodeURIComponent(document.path)}`
+        : `/knowledge?name=${encodeURIComponent(identity)}`,config.publicBaseUrl).href,
+  }), {matches:ownsVocabularyRequest});
+  const roomDocument = async room => /^[a-f0-9]{64}$/u.test(room ?? '')
+    ? (await archive()).paths.find(path=>createHash('sha256').update(path).digest('hex') === room) : undefined;
+  const historicalEntry={resources:[{
+    id:'lspace.historical-entry',match:'/knowledge/entry',methods:['GET'],public:true,
+    handler:()=>page('<p><a href="/knowledge">Enter the knowledge corpus</a></p><script src="/knowledge/entry.js"></script>'),
+  },{
+    id:'lspace.historical-entry-script',match:'/knowledge/entry.js',methods:['GET'],public:true,
+    handler:()=>textRepr(`const room=new RegExp('^#/(room|public)/([a-f0-9]{64})$','u').exec(location.hash);location.replace(room ? '/knowledge'+(room[1]==='public'?'/public':'')+'?room='+room[2] : '/knowledge');`,{type:'text/javascript; charset=utf-8',cacheControl:{noStore:true}}),
+  }]};
   const reader = {archive, canWrite:false};
   // Omit write descriptors entirely: visibility is not an authorization check.
   const descriptors = [
@@ -85,13 +118,18 @@ export function lSpaceMetroplat({config, admission, configuration = {}, archive:
     handler:async context => {
       const {url}=context;
       try {
+        if (url.searchParams.has('room')) {
+          const document=await roomDocument(url.searchParams.get('room'));
+          return document ? new Response(null,{status:303,headers:{location:documentPath(document),'cache-control':'no-store'}})
+            : {...page('<p>The referenced document is unavailable.</p>'),status:404};
+        }
         const id=url.searchParams.get('document');
         if (id) {
           const note=await call('fetch',{id});
           const source=await (await archive()).read(id);
           const sharing=source.properties?.visibility === 'public'
             ? `<p><a href="/knowledge/public?document=${escape(encodeURIComponent(id))}">Public reading link</a></p>` : '';
-          const rendered=renderBody(parseBody(source.body ?? ''), {resolve:target=>({href:`/knowledge?name=${encodeURIComponent(target)}`,type:'knowledge-name',title:target})});
+          const rendered=renderBody(await retainDocumentEmbeds(parseBody(source.body ?? ''),{root,document:id,custody,excludes:configuration.excludes ?? EXCLUDED_SEGMENTS}), {resolve:target=>({href:`/knowledge?name=${encodeURIComponent(target)}`,type:'knowledge-name',title:target})});
           return page(`<article><h2>${escape(note.title)}</h2><p>${escape(note.id)}</p>${sharing}<section>${rendered}</section><details><summary>Full source document</summary><pre style="white-space:pre-wrap">${escape(note.text)}</pre></details><details><summary>Source metadata</summary><pre>${escape(JSON.stringify(note.metadata,null,2))}</pre></details></article>`);
         }
         const name=url.searchParams.get('name');
@@ -102,7 +140,8 @@ export function lSpaceMetroplat({config, admission, configuration = {}, archive:
         const query=url.searchParams.get('query');
         if (!query) {
           const authorLink=authoring && await isAuthor(context) ? '<p><a href="/geode/">Author workbench</a></p>' : '';
-          return page('<p>Search, then open a result to read its full source document here.</p>'+authorLink);
+          const notebookLink=notebooks && await isAuthor(context) ? '<p><a href="/buckets/">Author notebooks</a></p>' : '';
+          return page('<p>Search, then open a result to read its full source document here.</p>'+authorLink+notebookLink);
         }
         const found=await call('search',{query});
         return page(`<h2>Results for ${escape(query)}</h2><ul>${found.results.map(note=>`<li><a href="${escape(documentPath(note.id))}">${escape(note.title)}</a><p>${escape(note.text)}</p></li>`).join('')}</ul>`);
@@ -115,7 +154,7 @@ export function lSpaceMetroplat({config, admission, configuration = {}, archive:
     id:'lspace.public-reading', match:'/knowledge/public', methods:['GET'], public:true,
     handler:async ({url}) => {
       const unavailable = () => ({...page('<p>The public document is unavailable.</p>'),status:404});
-      const id=url.searchParams.get('document');
+      const id=url.searchParams.get('document') ?? await roomDocument(url.searchParams.get('room'));
       if (!id) return unavailable();
       try {
         const document=await (await archive()).read(id);
@@ -125,5 +164,12 @@ export function lSpaceMetroplat({config, admission, configuration = {}, archive:
       } catch {return unavailable();}
     },
   }]};
-  return {applications:[reading,publicReading,...(reviews ? [reviews] : []),...(authoring ? [authoring] : [])],tools};
+  const readerEmails=new Set((settings.LSPACE_ALLOWED_EMAILS ?? configuration.readerEmails ?? '').split(',').map(email=>email.trim().toLowerCase()).filter(Boolean));
+  const readerAccess={
+    admitEmail:email=>typeof email === 'string' && readerEmails.has(email.trim().toLowerCase()),
+    allowsRequest:(path,method)=>['GET','HEAD'].includes(method) && (path === '/knowledge' || path === '/knowledge/public' || path.startsWith('/.well-known/ni/'))
+      || path === '/api/v1/reviews',
+    allowsTool:name=>tools.some(tool=>tool.name === name),
+  };
+  return {readerAccess,applications:[historicalEntry,reading,publicReading,vocabulary,media,...(notebooks ? [notebooks] : []),...(reviews ? [reviews] : []),...(authoring ? [authoring] : [])],tools};
 }
