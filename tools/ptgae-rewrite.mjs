@@ -28,6 +28,18 @@ const GENERIC_SECTION = {
   replacement: 'Description incomplete.'
 };
 
+const SHARED_SECTION = {
+  code: 'PTR028',
+  pattern: /\bThis section holds shared knowledge and services concerning ([^.!?\n]+)\./g,
+  replace: (_match, subject) => `This section provides shared ${subject} knowledge and services.`
+};
+
+const OECD_HOME = {
+  code: 'PTR029',
+  pattern: /\bThis is the home for OECD FORD ([0-9.]+), ([^.!?\n]+)\./g,
+  replace: (_match, code, subject) => `This section covers OECD FORD ${code}: ${subject}.`
+};
+
 function rewriteOutsideCode(source, transform) {
   let out = '';
   let plain = '';
@@ -91,6 +103,16 @@ function transformPlainText(text, changes) {
     return GENERIC_SECTION.replacement;
   });
 
+  next = next.replace(SHARED_SECTION.pattern, (...args) => {
+    changes.push(SHARED_SECTION.code);
+    return SHARED_SECTION.replace(...args);
+  });
+
+  next = next.replace(OECD_HOME.pattern, (...args) => {
+    changes.push(OECD_HOME.code);
+    return OECD_HOME.replace(...args);
+  });
+
   return next;
 }
 
@@ -103,7 +125,9 @@ export function rewritePTGAE(source) {
 export const SAFE_REWRITE_CODES = new Set([
   ...SAFE_REWRITES.map(rule => rule.code),
   SECTION_STUDY.code,
-  GENERIC_SECTION.code
+  GENERIC_SECTION.code,
+  SHARED_SECTION.code,
+  OECD_HOME.code
 ]);
 
 // Throat-clearing phrases remain lint-only. Deleting them mechanically can

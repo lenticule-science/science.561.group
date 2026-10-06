@@ -45,7 +45,10 @@ const poison = [
   ['PTG037', 'It remains to be seen whether the cache is stable.'],
   ['PTG038', 'At its core, the service is a parser.'],
   ['PTG039', 'In conclusion, the parser is correct.'],
-  ['PTG040', 'This demonstrates the importance of typed receipts.']
+  ['PTG040', 'This demonstrates the importance of typed receipts.'],
+  ['PTG041', 'The Sociology Services Section maintains knowledge and practices for the study of social structure.'],
+  ['PTG042', 'This section holds shared knowledge and services concerning Tai Chi.'],
+  ['PTG043', 'This is the home for OECD FORD 5.3, education research.']
 ];
 
 for (const [code, source] of poison) {
@@ -62,6 +65,7 @@ const clean = [
   'The API is internal.',
   'We cannot establish the value from the available telemetry.',
   'The section description is incomplete.',
+  'The repository is the canonical home of the signed corpus.',
   'Backups prevent data loss after disk failure.',
   'The client supports Markdown, JSON, and YAML.',
   'Required: validate the input before admission.',
@@ -76,10 +80,13 @@ for (const source of clean) {
 
 const summary = summarizeFindings(lintPTGAE(poison.map(x => x[1]).join('\n')));
 assert.equal(summary.total, poison.length);
-assert.equal(summary.error, 1);
+assert.equal(summary.error, 3);
 assert.ok(summary.warning > 30);
 assert.ok(summary.info >= 4);
 assert.equal(summary.byCode.PTG013, 1);
+assert.equal(summary.byCode.PTG041, 1);
+assert.equal(summary.byCode.PTG042, 1);
+assert.equal(summary.byCode.PTG043, 1);
 
 for (const status of [
   'Observed', 'Measured', 'Inferred', 'Hypothesis', 'Model', 'Proposed',

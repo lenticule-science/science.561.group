@@ -109,6 +109,20 @@ Prefer curated PTGAE examples as generation context. Quarantine deprecated or po
 
 A generated draft is not factual, scientific, legal, translation, publication, or brand acceptance. Preserve those statuses separately.
 
+## Corpus evidence and contamination
+
+Frequency is evidence of recurrence, not evidence of approval. A phrase that appears across unrelated authoritative files may be a generator artifact rather than house style.
+
+Treat a defect as systemic when the same empty construction appears in two or more unrelated authoritative sources or when one known generator emits it repeatedly. Repair the source template, generator, prompt, schema, or rewrite rule before mass-editing descendants.
+
+Do not automatically condemn a frequent phrase whose meaning depends on context. For example, `designed to`, `helps`, and `home` can state real design, effect, or custody. A detector must target the defective construction, not merely a common word.
+
+## Detection is not rewrite authorization
+
+A linter may flag text that still needs human or domain judgment. Automatic rewriting requires a narrow semantics-preserving rule with positive and negative regression fixtures.
+
+If deleting or replacing a phrase can change claim status, actor, causality, scope, chronology, quotation, code, identifier, or technical meaning, leave it as a finding. The substantive owner or an explicitly authorized semantic rewrite must resolve it.
+
 ## Mechanical enforcement
 
 `tools/ptgae-lint.mjs` is the executable rule set. It must keep code examples out of prose findings, distinguish warning-level style pressure from hard corpus contamination, and provide machine-readable output for corpus work.
