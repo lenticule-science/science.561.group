@@ -1,5 +1,5 @@
 const RULES = [
-  { code: 'PTG001', severity: 'warning', pattern: /\bit is (?:important|worth) to note(?: that)?\b/gi, message: 'Delete the throat-clearing phrase and state the proposition.' },
+  { code: 'PTG001', severity: 'warning', pattern: /\b(?:it is important to note(?: that)?|it is worth noting(?: that)?)\b/gi, message: 'Delete the throat-clearing phrase and state the proposition.' },
   { code: 'PTG002', severity: 'warning', pattern: /\b(?:may|might|could)\s+(?:potentially|possibly)\b/gi, message: 'Use one uncertainty marker, not stacked modality.' },
   { code: 'PTG003', severity: 'warning', pattern: /\bone possible (?:approach|option|way) (?:could|would|might) be\b/gi, message: 'State the proposal directly.' },
   { code: 'PTG004', severity: 'info', pattern: /\bin order to\b/gi, message: 'Prefer “to” unless the longer phrase prevents ambiguity.' },
