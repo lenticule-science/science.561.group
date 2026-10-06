@@ -59,7 +59,7 @@ function rewriteOutsideCode(source, transform) {
       const nextNewline = source.indexOf('\n', i);
       const lineEnd = nextNewline === -1 ? source.length : nextNewline;
       const line = source.slice(i, lineEnd);
-      if (/^\\s{0,3}>/.test(line)) {
+      if (/^\s{0,3}>/.test(line)) {
         flush();
         out += line;
         i = lineEnd;

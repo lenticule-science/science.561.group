@@ -61,7 +61,7 @@ function maskMarkdownCode(source) {
       const nextNewline = source.indexOf('\n', i);
       const lineEnd = nextNewline === -1 ? source.length : nextNewline;
       const line = source.slice(i, lineEnd);
-      if (/^\\s{0,3}>/.test(line)) {
+      if (/^\s{0,3}>/.test(line)) {
         for (let j = i; j < lineEnd; j++) masked[j] = ' ';
         i = lineEnd - 1;
         continue;
