@@ -1,0 +1,14 @@
+{
+  "name": "@lenticule-science/fastmail-science-services-section",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "node --check src/capability-evidence.mjs && node --check test/capability-evidence.test.mjs",
+    "test": "node --test test/capability-evidence.test.mjs",
+    "verify": "npm run check && npm test"
+  },
+  "exports": {
+    ".": "./src/capability-evidence.mjs"
+  }
+}
