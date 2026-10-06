@@ -1,0 +1,65 @@
+{
+  "kind": "lenticule.relconlang.chu-row-projection",
+  "version": "0.1",
+  "status": "algebraic-projection-not-semantically-privileged",
+  "sourceAlgebra": "relating.aggregate(pair) = joinKnowledge(pair.left,pair.right)",
+  "stateAxis": [
+    "truth",
+    "falsity"
+  ],
+  "rows": [
+    {
+      "particle": "ta",
+      "profile": {
+        "truth": "potential",
+        "falsity": "absurd"
+      },
+      "knowledgeAggregate": "potential",
+      "stanceSystem": "potential",
+      "matches": true
+    },
+    {
+      "particle": "na",
+      "profile": {
+        "truth": "absurd",
+        "falsity": "potential"
+      },
+      "knowledgeAggregate": "potential",
+      "stanceSystem": "potential",
+      "matches": true
+    },
+    {
+      "particle": "sha",
+      "profile": {
+        "truth": "stable",
+        "falsity": "active"
+      },
+      "knowledgeAggregate": "stable",
+      "stanceSystem": "stable",
+      "matches": true
+    },
+    {
+      "particle": "mu",
+      "profile": {
+        "truth": "absurd",
+        "falsity": "absurd"
+      },
+      "knowledgeAggregate": "absurd",
+      "stanceSystem": "absurd",
+      "matches": true
+    }
+  ],
+  "consequence": "The richer Chu row distinguishes ta from na while its knowledge-order aggregate reproduces the flat stance-system value.",
+  "nonConsequence": "This projection is not selected by the manifest code, does not validate the matrix's linguistic interpretation, and does not repair the stale witnessJournal ta→active row. Standard relation state-extension and non-bottom occupancy give different projections.",
+  "nextTest": "Carry both the full Chu profile and its aggregate in an isolated experimental reader; evaluate which downstream tasks require the profile rather than only the aggregate.",
+  "lossiness": {
+    "preserves": "knowledge aggregate across the two state-relations",
+    "forgets": "which Chu state (truth or falsity) carries support",
+    "collision": [
+      "ta",
+      "na"
+    ],
+    "consequence": "aggregateReading cannot serve as the complete particle semantics or proposition-polarity reading"
+  },
+  "relatedAudit": "content/data/relconlang/chu-matrix-semantics-audit-v0.1.json"
+}

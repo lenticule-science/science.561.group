@@ -1,0 +1,99 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "lenticule/relconlang/stance-report-v0.1",
+  "title": "RelConLang Stance Report v0.1",
+  "description": "Experimental report that an utterance presents a target proposition under a RelConLang stance particle. The report is distinct from evidence on the target proposition.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "kind",
+    "utterance",
+    "speaker",
+    "target",
+    "particle",
+    "chuProfile",
+    "aggregateReading",
+    "targetEvidenceEffect"
+  ],
+  "properties": {
+    "kind": {
+      "const": "lenticule.relconlang.stance-report"
+    },
+    "utterance": {
+      "type": "string",
+      "minLength": 1
+    },
+    "speaker": {
+      "type": "string",
+      "minLength": 1
+    },
+    "target": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "identity",
+        "nucleus"
+      ],
+      "properties": {
+        "identity": {
+          "type": "string",
+          "minLength": 1
+        },
+        "nucleus": {
+          "$ref": "lenticule/relconlang/proposition-nucleus-v0.1"
+        }
+      }
+    },
+    "particle": {
+      "enum": [
+        "ta",
+        "na",
+        "sha",
+        "mu"
+      ]
+    },
+    "chuProfile": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "truth",
+        "falsity"
+      ],
+      "properties": {
+        "truth": {
+          "enum": [
+            "absurd",
+            "potential",
+            "active",
+            "stable"
+          ]
+        },
+        "falsity": {
+          "enum": [
+            "absurd",
+            "potential",
+            "active",
+            "stable"
+          ]
+        }
+      }
+    },
+    "aggregateReading": {
+      "enum": [
+        "absurd",
+        "potential",
+        "active",
+        "stable"
+      ]
+    },
+    "targetEvidenceEffect": {
+      "const": "none-by-grammar-alone",
+      "description": "Parsing a stance particle records the speaker's stance report but does not add a for/against witness to the target proposition."
+    },
+    "reportEvidence": {
+      "description": "Evidence that this stance report occurred, such as the utterance token, transcript span, or signed message. This is evidence for the report cell, not for the target proposition.",
+      "type": "array",
+      "items": {}
+    }
+  }
+}

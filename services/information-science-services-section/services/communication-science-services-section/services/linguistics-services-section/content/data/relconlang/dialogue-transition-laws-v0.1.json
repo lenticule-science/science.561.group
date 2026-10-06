@@ -1,0 +1,109 @@
+{
+  "kind": "lenticule.relconlang.dialogue-transition-laws",
+  "version": "0.1",
+  "status": "experimental-laws",
+  "principle": "Conditional relevance is a conversational state transition, not a truth value and not automatically a deontic obligation.",
+  "laws": [
+    {
+      "id": "polar-question-opens",
+      "pattern": "ku P",
+      "precondition": "P has a context-grounded proposition nucleus",
+      "effect": {
+        "open": "polar-question(P)",
+        "close": []
+      },
+      "expectedResponses": [
+        "answer(P)",
+        "denial-report(P)",
+        "refusal-about(P)",
+        "counter-question(Q)",
+        "repair/clarification"
+      ]
+    },
+    {
+      "id": "compatible-answer-closes",
+      "pattern": "se P'",
+      "precondition": "there exists open polar-question(P) and propositionRelation(P,P') ∈ {same-nucleus, refinement-or-update}",
+      "effect": {
+        "close": "polar-question(P)",
+        "relation": "question-answer"
+      },
+      "caution": "answer force alone is insufficient; an irrelevant se-clause does not close the question"
+    },
+    {
+      "id": "denial-report-can-answer",
+      "pattern": "nes+ccomp P'",
+      "maturity": "candidate construction",
+      "precondition": "there exists open polar-question(P) and propositionRelation(P,P') identifies the same target nucleus",
+      "effect": {
+        "close": "polar-question(P)",
+        "relation": "question-negative-answer/denial-report"
+      },
+      "targetEvidence": "unchanged by grammar; optional evidential policy may promote authenticated denial report to against witness"
+    },
+    {
+      "id": "refusal-closes-sequence-not-truth",
+      "pattern": "nul+ccomp P'",
+      "maturity": "candidate construction",
+      "precondition": "there exists open question/request relevance about P and P' targets that relevance",
+      "effect": {
+        "close": "relevance(P)",
+        "relation": "refusal"
+      },
+      "targetEvidence": "none-by-refusal-alone"
+    },
+    {
+      "id": "request-opens",
+      "pattern": "du P",
+      "effect": {
+        "open": "request-relevance(P)"
+      },
+      "deonticEffect": "none merely from dialogue force; explicit kod/normative structure is separate"
+    },
+    {
+      "id": "uptake-can-close-request",
+      "pattern": "ha P'",
+      "precondition": "open request-relevance(P) and P' is same/refinement of requested action",
+      "effect": {
+        "close": "request-relevance(P)",
+        "relation": "request-acknowledgement"
+      },
+      "caution": "acknowledgement of hearing alone may not entail acceptance/completion; the exact disposition must be read from content"
+    },
+    {
+      "id": "counter-question-nests",
+      "pattern": "ku Q in response to open polar-question(P)",
+      "effect": {
+        "open": "polar-question(Q)",
+        "preserve": "polar-question(P)",
+        "relation": "question-counter-question"
+      },
+      "note": "A counter-question may be relevant without satisfying the original question."
+    },
+    {
+      "id": "repair-targets-prior-reading",
+      "pattern": "repair move R addressing prior turn T",
+      "effect": {
+        "relation": "repair-response",
+        "target": "specific prior reading/proposition/term"
+      },
+      "caution": "repair is not defined by lower graph H1 and may preserve contradiction history"
+    }
+  ],
+  "nonlaws": [
+    "se always closes the latest question",
+    "ha always means acceptance",
+    "request creates a deontic obligation",
+    "refusal makes the requested proposition false",
+    "shared vocabulary proves response relevance",
+    "temporal adjacency alone proves respondsTo"
+  ],
+  "scoringAxes": [
+    "move recognition",
+    "target selection",
+    "proposition compatibility",
+    "state transition correctness",
+    "truth/evidence side effects",
+    "deictic grounding"
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "kind": "lenticule.relconlang.repair-report-assay",
+  "version": "0.1",
+  "status": "experimental",
+  "cases": [
+    {
+      "id": "local-term-replacement",
+      "text": "mi ran ri hena.",
+      "mechanism": "ri-replacement",
+      "target": "object position / prior candidate term",
+      "expected": "repair report proposes hena as replacement term",
+      "evidenceEffect": "none-by-language-alone"
+    },
+    {
+      "id": "lexical-repair-with-complement",
+      "text": "mi ga ren do ve mi ga ran do kelu.",
+      "mechanism": "ren-lexical",
+      "target": "embedded proposition ran(mi,kelu)",
+      "expected": "repair report proposes/announces a repair concerning embedded proposition; exact replacement relation still underdetermined",
+      "evidenceEffect": "none-by-language-alone"
+    },
+    {
+      "id": "repair-after-contradiction",
+      "context": {
+        "target": "ran(A,kelu)",
+        "evidenceFor": [
+          "w-for"
+        ],
+        "evidenceAgainst": [
+          "w-against"
+        ],
+        "derivedReading": "stable"
+      },
+      "repairSurface": "mi ga ren do ve mi ga ran do kelu.",
+      "expected": "language identifies a repair act but does not choose affirm/retract/acknowledge automatically",
+      "admissibleExplicitTransitions": [
+        "add corroborating evidence while preserving contradiction",
+        "authorized evidence retraction, if the evidence substrate supports visible retraction/history rather than deletion",
+        "acknowledge contradiction as standing without changing target evidence"
+      ]
+    },
+    {
+      "id": "diagnostic-not-repair-act",
+      "source": "communicating.discourse-state",
+      "diagnostic": "unresolved-reference",
+      "expected": "creates a repair need/diagnostic; no claim that a speaker performed a repair"
+    }
+  ],
+  "scoringAxes": [
+    "surface repair mechanism recognized",
+    "repair target identified",
+    "proposal/replacement identified",
+    "dialogue relation to prior turn identified",
+    "evidence effect kept separate",
+    "any evidence mutation carries an explicit warrant"
+  ]
+}

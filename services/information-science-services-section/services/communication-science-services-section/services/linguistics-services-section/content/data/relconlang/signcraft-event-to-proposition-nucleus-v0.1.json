@@ -1,0 +1,68 @@
+{
+  "kind": "lenticule.relconlang.signcraft-event-to-proposition-nucleus-map",
+  "version": "0.1",
+  "status": "candidate-projection",
+  "source": "@red-cup-engineering/signcraft/inference/relconlang",
+  "target": "lenticule/relconlang/proposition-nucleus-v0.1",
+  "mappings": [
+    {
+      "from": "row a=verb, v=<root>",
+      "to": "predicate.canonical",
+      "warrant": "declared-root"
+    },
+    {
+      "from": "surface verb token",
+      "to": "predicate.surface",
+      "note": "SignCraft row currently keeps canonical root; surface form must be retained separately if round-trip morphology is required"
+    },
+    {
+      "from": "row a=nsubj",
+      "to": "arguments[agent]"
+    },
+    {
+      "from": "row a=dobj",
+      "to": "arguments[patient]"
+    },
+    {
+      "from": "row a=obl:provenance",
+      "to": "obliques[provenance]"
+    },
+    {
+      "from": "row a=obl:locus",
+      "to": "obliques[locus]"
+    },
+    {
+      "from": "row a=obl:kind",
+      "to": "obliques[kind]"
+    },
+    {
+      "from": "row a=ccomp, v=<event-id>",
+      "to": "complements[]",
+      "note": "recursively project referenced event"
+    },
+    {
+      "from": "row a=verbFeature, v=aspect:*",
+      "to": "aspect"
+    },
+    {
+      "from": "row reading",
+      "to": "outside nucleus: evidence.aggregateReading"
+    },
+    {
+      "from": "row a=discourse",
+      "to": "outside nucleus: dialogueMove"
+    },
+    {
+      "from": "speaker/addressee context",
+      "to": "argument referent grounding",
+      "status": "missing from current SignCraft row carrier"
+    }
+  ],
+  "unresolved": [
+    "polarity/negation representation",
+    "modal semantics of kan/kod and other agency verbs",
+    "ta/na Chu profile preservation before aggregate reading",
+    "surface-form retention for realization/round-trip",
+    "speaker/addressee context"
+  ]
+}
