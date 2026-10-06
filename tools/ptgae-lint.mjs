@@ -38,7 +38,10 @@ const RULES = [
   { code: 'PTG037', severity: 'warning', pattern: /\bit remains to be seen\b/gi, message: 'State what is unknown and what observation would resolve it.' },
   { code: 'PTG038', severity: 'warning', pattern: /\b(?:at its core|at the core of)\b/gi, message: 'State the central mechanism or definition directly.' },
   { code: 'PTG039', severity: 'warning', pattern: /\b(?:in conclusion|to conclude|in summary)\b[:,]?/gi, message: 'Use a descriptive heading or state the conclusion without a transition label.' },
-  { code: 'PTG040', severity: 'warning', pattern: /\b(?:this|that) (?:clearly )?(?:demonstrates|shows) the (?:importance|value) of\b/gi, message: 'State the observed consequence or evidence directly.' }
+  { code: 'PTG040', severity: 'warning', pattern: /\b(?:this|that) (?:clearly )?(?:demonstrates|shows) the (?:importance|value) of\b/gi, message: 'State the observed consequence or evidence directly.' },
+  { code: 'PTG041', severity: 'error', pattern: /\bmaintains knowledge and practices for the study of\b/gi, message: 'Generic research scaffold hides the verb. State what the section studies or does.' },
+  { code: 'PTG042', severity: 'error', pattern: /\bthis section holds shared knowledge and services concerning\b/gi, message: 'Generic scope boilerplate is not a useful description. Name the section’s work or state that the description is incomplete.' },
+  { code: 'PTG043', severity: 'warning', pattern: /\bthis is the home for OECD FORD\b/gi, message: 'State the classification and scope directly instead of using “home for.”' }
 ];
 
 export const CLAIM_STATUS = new Set([
