@@ -98,8 +98,11 @@ function transformPlainText(text, changes) {
   let next = text;
 
   for (const rule of SAFE_REWRITES) {
-    next = next.replace(rule.pattern, () => {
+    next = next.replace(rule.pattern, match => {
       changes.push(rule.code);
+      if (/^[A-Z]/.test(match) && /^[a-z]/.test(rule.replacement)) {
+        return rule.replacement[0].toUpperCase() + rule.replacement.slice(1);
+      }
       return rule.replacement;
     });
   }

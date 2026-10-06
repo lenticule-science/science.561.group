@@ -4,13 +4,24 @@ import { rewritePTGAE, SAFE_REWRITE_CODES } from '../tools/ptgae-rewrite.mjs';
 const cases = [
   ['The change may potentially affect the parser.', 'The change may affect the parser.', 'PTR001'],
   ['The change could possibly affect the parser.', 'The change could affect the parser.', 'PTR002'],
+  ['The change might perhaps affect the parser.', 'The change might affect the parser.', 'PTR003'],
   ['We parse in order to preserve provenance.', 'We parse to preserve provenance.', 'PTR004'],
   ['The build failed due to the fact that the lockfile changed.', 'The build failed because the lockfile changed.', 'PTR005'],
+  ['In light of the fact that the source changed, we rebuilt the index.', 'Because the source changed, we rebuilt the index.', 'PTR006'],
+  ['The parser has the ability to preserve provenance.', 'The parser can preserve provenance.', 'PTR007'],
+  ['At this point in time the cache is empty.', 'Now the cache is empty.', 'PTR008'],
+  ['At the present time the cache is empty.', 'Now the cache is empty.', 'PTR009'],
+  ['In the event that validation fails, reject the record.', 'If validation fails, reject the record.', 'PTR010'],
+  ['The job runs on a regular basis.', 'The job runs regularly.', 'PTR011'],
+  ['Subsequent to validation, store the record.', 'After validation, store the record.', 'PTR012'],
+  ['Prior to validation, hash the record.', 'Before validation, hash the record.', 'PTR013'],
+  ['With regard to caching, store one copy.', 'About caching, store one copy.', 'PTR014'],
+  ['With respect to caching, store one copy.', 'About caching, store one copy.', 'PTR015'],
   ['The Sociology Services Section maintains knowledge and practices for the study of social structure.', 'The Sociology Services Section studies social structure.', 'PTR026'],
   ['The Music Services Section maintains knowledge and practices for this service domain.', 'Description incomplete.', 'PTR027'],
   ['This section holds shared knowledge and services concerning Tai Chi.', 'This section provides shared Tai Chi knowledge and services.', 'PTR028'],
   ['This is the home for OECD FORD 5.3, education research.', 'This section covers OECD FORD 5.3: education research.', 'PTR029']
-];
+]
 
 for (const [source, expected, code] of cases) {
   const result = rewritePTGAE(source);
