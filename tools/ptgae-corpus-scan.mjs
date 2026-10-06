@@ -6,7 +6,8 @@ const DEFAULT_EXTENSIONS = new Set(['.md', '.mdx', '.txt', '.html']);
 const SKIP_DIRS = new Set(['.git', 'node_modules', 'vendor', 'dist', 'build', '.next']);
 
 async function collect(target, files) {
-  const stat = await fs.stat(target);
+  const stat = await fs.lstat(target);
+  if (stat.isSymbolicLink()) return;
   if (stat.isFile()) {
     if (DEFAULT_EXTENSIONS.has(path.extname(target).toLowerCase())) files.push(target);
     return;
@@ -15,6 +16,7 @@ async function collect(target, files) {
   const entries = await fs.readdir(target, { withFileTypes: true });
   entries.sort((a, b) => a.name.localeCompare(b.name));
   for (const entry of entries) {
+    if (entry.isSymbolicLink()) continue;
     if (entry.isDirectory() && SKIP_DIRS.has(entry.name)) continue;
     await collect(path.join(target, entry.name), files);
   }

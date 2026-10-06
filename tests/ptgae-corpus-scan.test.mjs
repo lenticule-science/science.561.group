@@ -14,6 +14,14 @@ try {
   await fs.writeFile(path.join(root, 'node_modules', 'ignored.md'), 'It is important to note that this file must be ignored.\n');
   await fs.writeFile(path.join(root, 'docs', 'ignored.js'), 'It is important to note that this extension must be ignored.\n');
 
+  let symlinkCreated = false;
+  try {
+    await fs.symlink(path.join(root, 'docs', 'poison.md'), path.join(root, 'docs', 'linked-poison.md'));
+    symlinkCreated = true;
+  } catch (error) {
+    if (!['EPERM', 'EACCES', 'ENOTSUP'].includes(error?.code)) throw error;
+  }
+
   const results = await scanPTGAE([root]);
   assert.deepEqual(results.map(x => path.basename(x.file)), ['poison.md', 'study.md']);
   const summary = summarizeScan(results);
@@ -22,8 +30,9 @@ try {
   assert.equal(summary.findings, 2);
   assert.equal(summary.byCode.PTG013, 1);
   assert.equal(summary.byCode.PTG041, 1);
+  if (symlinkCreated) assert.ok(!results.some(x => path.basename(x.file) === 'linked-poison.md'));
 } finally {
   await fs.rm(root, { recursive: true, force: true });
 }
 
-console.log('ok corpus scanner finds text defects and skips excluded sources');
+console.log('ok corpus scanner finds text defects and skips excluded sources and symlinks');
