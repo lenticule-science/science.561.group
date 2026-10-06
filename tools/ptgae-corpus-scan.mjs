@@ -37,16 +37,46 @@ export async function scanPTGAE(targets) {
 }
 
 export function summarizeScan(results) {
-  const summary = { files: results.length, error: 0, warning: 0, info: 0, findings: 0, byCode: {} };
+  const summary = {
+    files: results.length,
+    error: 0,
+    warning: 0,
+    info: 0,
+    findings: 0,
+    byCode: {},
+    filesByCode: {},
+    systemic: []
+  };
+  const filesByCode = new Map();
+
   for (const result of results) {
     summary.error += result.summary.error;
     summary.warning += result.summary.warning;
     summary.info += result.summary.info;
     summary.findings += result.summary.total;
+
     for (const [code, count] of Object.entries(result.summary.byCode)) {
       summary.byCode[code] = (summary.byCode[code] ?? 0) + count;
+      const files = filesByCode.get(code) ?? [];
+      files.push(result.file);
+      filesByCode.set(code, files);
     }
   }
+
+  for (const [code, files] of [...filesByCode.entries()].sort(([a], [b]) => a.localeCompare(b))) {
+    summary.filesByCode[code] = files;
+  }
+
+  summary.systemic = [...filesByCode.entries()]
+    .filter(([, files]) => files.length >= 2)
+    .map(([code, files]) => ({
+      code,
+      files: files.length,
+      findings: summary.byCode[code] ?? 0,
+      paths: files
+    }))
+    .sort((a, b) => b.files - a.files || b.findings - a.findings || a.code.localeCompare(b.code));
+
   return summary;
 }
 
