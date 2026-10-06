@@ -40,6 +40,14 @@ const OECD_HOME = {
   replace: (_match, code, subject) => `This section covers OECD FORD ${code}: ${subject}.`
 };
 
+function findStraightQuoteEnd(source, start) {
+  for (let i = start + 1; i < source.length; i++) {
+    if (source[i] === '"' && source[i - 1] !== '\\') return i;
+    if (source[i] === '\n') return -1;
+  }
+  return -1;
+}
+
 function rewriteOutsideCode(source, transform) {
   let out = '';
   let plain = '';
@@ -66,6 +74,7 @@ function rewriteOutsideCode(source, transform) {
         continue;
       }
     }
+
     const three = source.slice(i, i + 3);
     if (!inline && (three === '```' || three === '~~~')) {
       flush();
@@ -77,12 +86,33 @@ function rewriteOutsideCode(source, transform) {
     }
 
     const ch = source[i];
+
     if (!fence && ch === '`') {
       flush();
       inline = !inline;
       out += ch;
       i += 1;
       continue;
+    }
+
+    if (!fence && !inline && ch === '"') {
+      const end = findStraightQuoteEnd(source, i);
+      if (end !== -1) {
+        flush();
+        out += source.slice(i, end + 1);
+        i = end + 1;
+        continue;
+      }
+    }
+
+    if (!fence && !inline && ch === '“') {
+      const end = source.indexOf('”', i + 1);
+      if (end !== -1 && !source.slice(i, end + 1).includes('\n')) {
+        flush();
+        out += source.slice(i, end + 1);
+        i = end + 1;
+        continue;
+      }
     }
 
     if (fence || inline) out += ch;
@@ -147,6 +177,9 @@ export const SAFE_REWRITE_CODES = new Set([
 // Throat-clearing phrases remain lint-only. Deleting them mechanically can
 // change capitalization or syntax around Markdown spans; a semantic rewrite
 // must own that change.
+//
+// Quoted source text is protected from automatic rewriting. The surrounding
+// prose may be normalized, but the quotation must remain faithful to its source.
 
 if (import.meta.url === 'file://' + process.argv[1]) {
   const fs = await import('node:fs/promises');

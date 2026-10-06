@@ -21,7 +21,7 @@ const cases = [
   ['The Music Services Section maintains knowledge and practices for this service domain.', 'Description incomplete.', 'PTR027'],
   ['This section holds shared knowledge and services concerning Tai Chi.', 'This section provides shared Tai Chi knowledge and services.', 'PTR028'],
   ['This is the home for OECD FORD 5.3, education research.', 'This section covers OECD FORD 5.3: education research.', 'PTR029']
-]
+];
 
 for (const [source, expected, code] of cases) {
   const result = rewritePTGAE(source);
@@ -37,11 +37,21 @@ for (const source of [
   '`may potentially` names a banned stacked-modality phrase.',
   '```\nThe change may potentially affect the parser.\n```',
   '> The source says the change may potentially affect the parser.',
-  '   > It is important to note that this is quoted source text.'
+  '   > It is important to note that this is quoted source text.',
+  'The source says "the change may potentially affect the parser."',
+  'The source says “the change may potentially affect the parser.”'
 ]) {
   const result = rewritePTGAE(source);
   assert.equal(result.text, source, 'unsafe, quoted, or protected text changed: ' + source);
   assert.equal(result.changed, false, 'unexpected rewrite receipt: ' + source);
 }
 
-console.log('ok ' + cases.length + ' safe rewrite fixtures; protected prose unchanged');
+const mixedStraight = rewritePTGAE('The change may potentially matter; the source says "it may potentially matter."');
+assert.equal(mixedStraight.text, 'The change may matter; the source says "it may potentially matter."');
+assert.deepEqual(mixedStraight.changes, ['PTR001']);
+
+const mixedCurly = rewritePTGAE('The change could possibly matter; the source says “it could possibly matter.”');
+assert.equal(mixedCurly.text, 'The change could matter; the source says “it could possibly matter.”');
+assert.deepEqual(mixedCurly.changes, ['PTR002']);
+
+console.log('ok ' + cases.length + ' safe rewrite fixtures; quoted and protected prose unchanged');
