@@ -57,6 +57,16 @@ function maskMarkdownCode(source) {
   let fence = null;
   let inInline = false;
   for (let i = 0; i < chars.length; i++) {
+    if (!inFence && !inInline && (i === 0 || chars[i - 1] === '\n')) {
+      const nextNewline = source.indexOf('\n', i);
+      const lineEnd = nextNewline === -1 ? source.length : nextNewline;
+      const line = source.slice(i, lineEnd);
+      if (/^\\s{0,3}>/.test(line)) {
+        for (let j = i; j < lineEnd; j++) masked[j] = ' ';
+        i = lineEnd - 1;
+        continue;
+      }
+    }
     if (!inInline && (source.startsWith('```', i) || source.startsWith('~~~', i))) {
       const mark = source.slice(i, i + 3);
       if (!inFence) { inFence = true; fence = mark; }
