@@ -71,7 +71,9 @@ const clean = [
   'Required: validate the input before admission.',
   'Unknown: the provider does not expose remaining quota.',
   '`It is important to note` is a banned throat-clearing phrase.',
-  '```\nIt is important to note that this example is intentionally bad.\n```'
+  '```\nIt is important to note that this example is intentionally bad.\n```',
+  '> It is important to note that this is quoted source text.',
+  '   > The source may potentially describe an obsolete behavior.'
 ];
 
 for (const source of clean) {

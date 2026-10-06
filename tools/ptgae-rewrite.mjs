@@ -55,6 +55,17 @@ function rewriteOutsideCode(source, transform) {
   };
 
   while (i < source.length) {
+    if (!fence && !inline && (i === 0 || source[i - 1] === '\n')) {
+      const nextNewline = source.indexOf('\n', i);
+      const lineEnd = nextNewline === -1 ? source.length : nextNewline;
+      const line = source.slice(i, lineEnd);
+      if (/^\\s{0,3}>/.test(line)) {
+        flush();
+        out += line;
+        i = lineEnd;
+        continue;
+      }
+    }
     const three = source.slice(i, i + 3);
     if (!inline && (three === '```' || three === '~~~')) {
       flush();

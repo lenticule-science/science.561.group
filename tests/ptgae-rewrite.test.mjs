@@ -24,10 +24,12 @@ for (const source of [
   'Unknown: the provider does not expose remaining quota.',
   'The repository is the canonical home of the signed corpus.',
   '`may potentially` names a banned stacked-modality phrase.',
-  '```\nThe change may potentially affect the parser.\n```'
+  '```\nThe change may potentially affect the parser.\n```',
+  '> The source says the change may potentially affect the parser.',
+  '   > It is important to note that this is quoted source text.'
 ]) {
   const result = rewritePTGAE(source);
-  assert.equal(result.text, source, 'unsafe or protected text changed: ' + source);
+  assert.equal(result.text, source, 'unsafe, quoted, or protected text changed: ' + source);
   assert.equal(result.changed, false, 'unexpected rewrite receipt: ' + source);
 }
 
