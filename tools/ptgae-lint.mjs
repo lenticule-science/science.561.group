@@ -50,6 +50,14 @@ export const CLAIM_STATUS = new Set([
   'Deprecated', 'Unknown'
 ]);
 
+function findStraightQuoteEnd(source, start) {
+  for (let i = start + 1; i < source.length; i++) {
+    if (source[i] === '"' && source[i - 1] !== '\\') return i;
+    if (source[i] === '\n') return -1;
+  }
+  return -1;
+}
+
 function maskMarkdownCode(source) {
   const chars = [...source];
   const masked = [...source];
@@ -79,6 +87,22 @@ function maskMarkdownCode(source) {
       inInline = !inInline;
       masked[i] = ' ';
       continue;
+    }
+    if (!inFence && !inInline && chars[i] === '"') {
+      const end = findStraightQuoteEnd(source, i);
+      if (end !== -1) {
+        for (let j = i; j <= end; j++) if (chars[j] !== '\n') masked[j] = ' ';
+        i = end;
+        continue;
+      }
+    }
+    if (!inFence && !inInline && chars[i] === '“') {
+      const end = source.indexOf('”', i + 1);
+      if (end !== -1 && !source.slice(i, end + 1).includes('\n')) {
+        for (let j = i; j <= end; j++) if (chars[j] !== '\n') masked[j] = ' ';
+        i = end;
+        continue;
+      }
     }
     if (inFence || inInline) {
       if (chars[i] !== '\n') masked[i] = ' ';
