@@ -123,7 +123,7 @@ A linter may flag text that still needs human or domain judgment. Automatic rewr
 
 If deleting or replacing a phrase can change claim status, actor, causality, scope, chronology, quotation, code, identifier, or technical meaning, leave it as a finding. The substantive owner or an explicitly authorized semantic rewrite must resolve it.
 
-Mechanical linting and rewriting must not treat Markdown blockquotes as house prose. Blockquotes preserve quoted source text; review the surrounding prose instead of silently normalizing the quotation.
+Mechanical linting and rewriting must not treat quotations as house prose. Preserve Markdown blockquotes and inline straight or curly quotations exactly. Lint and rewrite the surrounding prose, not the quoted source. Corpus frequency inside quotations is evidence about what the corpus cites, not evidence about 561 Group house style.
 
 ## Mechanical enforcement
 

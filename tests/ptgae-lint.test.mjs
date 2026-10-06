@@ -73,12 +73,24 @@ const clean = [
   '`It is important to note` is a banned throat-clearing phrase.',
   '```\nIt is important to note that this example is intentionally bad.\n```',
   '> It is important to note that this is quoted source text.',
-  '   > The source may potentially describe an obsolete behavior.'
+  '   > The source may potentially describe an obsolete behavior.',
+  'The source says "it is important to note that this example is intentionally bad."',
+  'The source says “the change may potentially affect the parser.”'
 ];
 
 for (const source of clean) {
   assert.deepEqual(lintPTGAE(source), [], `clean fixture was flagged: ${source}`);
 }
+
+const quotedMixed = lintPTGAE('The change may potentially matter; the source says "it may potentially matter."');
+assert.equal(quotedMixed.length, 1);
+assert.equal(quotedMixed[0].code, 'PTG002');
+assert.equal(quotedMixed[0].text.toLowerCase(), 'may potentially');
+
+const quotedMixedCurly = lintPTGAE('The change could possibly matter; the source says “it could possibly matter.”');
+assert.equal(quotedMixedCurly.length, 1);
+assert.equal(quotedMixedCurly[0].code, 'PTG002');
+assert.equal(quotedMixedCurly[0].text.toLowerCase(), 'could possibly');
 
 const summary = summarizeFindings(lintPTGAE(poison.map(x => x[1]).join('\n')));
 assert.equal(summary.total, poison.length);

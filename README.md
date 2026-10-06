@@ -15,4 +15,4 @@ The current PTGAE standard is in `docs/plain-technical-general-american-english.
 - Run `node tools/ptgae-rewrite.mjs FILE [...]` only for allow-listed semantics-preserving rewrites.
 - Run `node tools/ptgae-corpus-rewrite.mjs PATH [...]` for a dry-run corpus rewrite report; add `--write` only after reviewing the proposed changes.
 
-The linter ignores Markdown code examples. Automatic rewriting is narrower than linting: a flagged phrase is not permission to change substantive meaning. Automatic rewriting also preserves Markdown blockquotes and straight or curly quoted source text. Corpus scanning does not follow symbolic links.
+The linter ignores Markdown code and quoted source text. Automatic rewriting is narrower than linting: a flagged phrase is not permission to change substantive meaning. Automatic rewriting also preserves Markdown blockquotes and straight or curly quoted source text. Corpus scanning does not follow symbolic links.
