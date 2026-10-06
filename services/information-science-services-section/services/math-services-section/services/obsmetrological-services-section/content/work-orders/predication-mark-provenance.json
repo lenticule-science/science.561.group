@@ -1,0 +1,53 @@
+{
+  "type": "ObsmetrologiaProofWorkOrder",
+  "version": 1,
+  "id": "predication-mark-provenance",
+  "title": "Predication cells are mark-supported and generable from articulations without recovering provenance",
+  "module": "Obsmetrologia.Language.Predicating.MarkProvenance",
+  "headline": "Obsmetrologia.PredicationCell.syntheticSource_orientedCell",
+  "declarations": [
+    "Obsmetrologia.PredicationCell.markList",
+    "Obsmetrologia.PredicationCell.syntheticSource",
+    "Obsmetrologia.PredicationCell.syntheticSource_orientedCell",
+    "Obsmetrologia.PredicationCell.Generated",
+    "Obsmetrologia.PredicationCell.generated",
+    "Obsmetrologia.Articulating.orientedCell_subject_mark_mem_markList",
+    "Obsmetrologia.Articulating.orientedCell_predicate_mark_mem_markList",
+    "Obsmetrologia.Articulating.orientedCell_object_mark_mem_markList",
+    "Obsmetrologia.Articulating.provenanceCollisionShort",
+    "Obsmetrologia.Articulating.provenanceCollisionLong",
+    "Obsmetrologia.Articulating.provenanceCollision_ne",
+    "Obsmetrologia.Articulating.provenanceCollision_orientedCell_eq",
+    "Obsmetrologia.Articulating.orientedCell_not_injective",
+    "Obsmetrologia.PredicationCell.syntheticSource_not_provenance_recovery"
+  ],
+  "axiomBudget": [],
+  "requirements": [
+    {"id":"coordinate-support","statement":"Subject, predicate and object marks of every generated oriented cell occur in the generating articulating mark provenance."},
+    {"id":"synthetic-section","statement":"Every PredicationCell has a synthetic articulating built only from the cell marks whose orientedCell is exactly that cell."},
+    {"id":"non-injective","statement":"Articulating.orientedCell is not injective: distinct articulated histories can have the same predication cell."},
+    {"id":"no-history-recovery","statement":"The synthetic source proves generability only; it is not a left inverse recovering historical articulation provenance."}
+  ],
+  "prohibitions": [
+    {"id":"no-provenance-reconstruction-claim","statement":"Never describe syntheticSource as recovery or reconstruction of the original articulated history."},
+    {"id":"no-independent-mark-introduction","statement":"The synthetic source may duplicate cell marks but may not invent a new primitive mark."}
+  ],
+  "openQuestions": [],
+  "corpus": [
+    "lib/emsenn/services/561-group/services/science-services-section/services/information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/obsmetrologia/Obsmetrologia/Language/Predicating/Cell.lean",
+    "lib/emsenn/services/561-group/services/science-services-section/services/information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/obsmetrologia/Obsmetrologia/Language/Predicating/Oriented.lean"
+  ],
+  "references": [],
+  "frontierOf": "articulating-mark-provenance",
+  "blueprint": {
+    "chapter": "articulation-predication",
+    "chapterFile": "03-articulation-predication",
+    "file": "articulation-predication/09-mark-provenance",
+    "section": "Predication is generated from articulated marks",
+    "label": "thm:predication-mark-provenance",
+    "title": "Predication cells descend from articulated marks, but cells do not recover histories",
+    "statement": "Every coordinate mark of an oriented predication cell is supported by the generating articulating. Every cell has a synthetic articulated source, but orientedCell is non-injective, so generability does not imply historical provenance recovery.",
+    "uses": ["thm:articulating-mark-provenance","thm:predication","thm:oriented-cell"]
+  },
+  "verse": {"module":"ObsmetrologiaManual.BookII.PredicationMarkProvenance"}
+}
