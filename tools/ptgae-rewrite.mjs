@@ -16,19 +16,6 @@ const SAFE_REWRITES = [
   { code: 'PTR015', pattern: /\bwith respect to\b/gi, replacement: 'about' }
 ];
 
-const LEADING_FILLER = [
-  ['PTR016', /\bIt is important to note that\s+/gi],
-  ['PTR017', /\bIt is worth noting that\s+/gi],
-  ['PTR018', /\bIt should be noted that\s+/gi],
-  ['PTR019', /\bIt is worth mentioning that\s+/gi],
-  ['PTR020', /\bIt is important to remember that\s+/gi],
-  ['PTR021', /\bNeedless to say,\s*/gi],
-  ['PTR022', /\bAt the end of the day,\s*/gi],
-  ['PTR023', /\bIn conclusion,\s*/gi],
-  ['PTR024', /\bTo conclude,\s*/gi],
-  ['PTR025', /\bIn summary,\s*/gi]
-];
-
 const SECTION_STUDY = {
   code: 'PTR026',
   pattern: /\bThe ([A-Z][A-Za-z0-9 '&()/-]* Services Section) maintains knowledge and practices for the study of ([^.!?\n]+)\./g,
@@ -40,10 +27,6 @@ const GENERIC_SECTION = {
   pattern: /\bThe [A-Z][A-Za-z0-9 '&()/-]* Services Section maintains knowledge and practices for this service domain\./g,
   replacement: 'Description incomplete.'
 };
-
-function capitalizeFirstLetter(text) {
-  return text.replace(/^([\s"'([{]*)([a-z])/, (_m, prefix, letter) => prefix + letter.toUpperCase());
-}
 
 function rewriteOutsideCode(source, transform) {
   let out = '';
@@ -92,16 +75,9 @@ function transformPlainText(text, changes) {
   let next = text;
 
   for (const rule of SAFE_REWRITES) {
-    next = next.replace(rule.pattern, (...args) => {
+    next = next.replace(rule.pattern, () => {
       changes.push(rule.code);
       return rule.replacement;
-    });
-  }
-
-  for (const [code, pattern] of LEADING_FILLER) {
-    next = next.replace(pattern, (...args) => {
-      changes.push(code);
-      return '';
     });
   }
 
@@ -110,13 +86,10 @@ function transformPlainText(text, changes) {
     return SECTION_STUDY.replace(...args);
   });
 
-  next = next.replace(GENERIC_SECTION.pattern, (...args) => {
+  next = next.replace(GENERIC_SECTION.pattern, () => {
     changes.push(GENERIC_SECTION.code);
     return GENERIC_SECTION.replacement;
   });
-
-  const sentences = next.split(/(?<=[.!?])(?=\s|$)/);
-  next = sentences.map(capitalizeFirstLetter).join('');
 
   return next;
 }
@@ -124,19 +97,18 @@ function transformPlainText(text, changes) {
 export function rewritePTGAE(source) {
   const changes = [];
   const text = rewriteOutsideCode(source, plain => transformPlainText(plain, changes));
-  return {
-    text,
-    changed: text !== source,
-    changes
-  };
+  return { text, changed: text !== source, changes };
 }
 
 export const SAFE_REWRITE_CODES = new Set([
   ...SAFE_REWRITES.map(rule => rule.code),
-  ...LEADING_FILLER.map(([code]) => code),
   SECTION_STUDY.code,
   GENERIC_SECTION.code
 ]);
+
+// Throat-clearing phrases remain lint-only. Deleting them mechanically can
+// change capitalization or syntax around Markdown spans; a semantic rewrite
+// must own that change.
 
 if (import.meta.url === 'file://' + process.argv[1]) {
   const fs = await import('node:fs/promises');
@@ -155,9 +127,8 @@ if (import.meta.url === 'file://' + process.argv[1]) {
     const result = rewritePTGAE(source);
     if (!result.changed) continue;
     changed = true;
-    if (check) {
-      console.log(file + ': ' + result.changes.join(','));
-    } else {
+    if (check) console.log(file + ': ' + result.changes.join(','));
+    else {
       await fs.writeFile(file, result.text);
       console.log(file + ': rewrote ' + result.changes.join(','));
     }
