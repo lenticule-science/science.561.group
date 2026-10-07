@@ -102,7 +102,8 @@ if __name__ == "__main__":
             {
                 "assay": "ordered-history vs endpoint-sufficiency synthetic falsifier",
                 "interpretation_rule": (
-                    "A history advantage that collapses as endpoint measurement improves "
+                    "For this specified linear generator, a history advantage that collapses "
+                    "as endpoint measurement improves "
                     "supports ordinary hidden-state memory. A material advantage persisting "
                     "with exact endpoint measurement falsifies endpoint sufficiency for the "
                     "stated state description and motivates missing-state search or an "

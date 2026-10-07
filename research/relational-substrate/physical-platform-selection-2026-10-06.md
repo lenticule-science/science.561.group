@@ -26,7 +26,7 @@ Non-Brownian suspensions remain scientifically valuable, and Padamata & Keim, *P
 4. Apply the same diagnostic flow protocol to every sample.
 5. Fit held-out endpoint-only and endpoint-plus-history models at each state-description level.
 6. Compare the fitted history coefficient to the analytic measurement-error curve in `order-history-null-analytic.md`.
-7. Treat collapse with richer endpoint measurement as support for ordinary hidden-state memory. Treat a persistent residual only as falsification of endpoint sufficiency for that measured state; then search for missing present-state variables before considering a stronger relational interpretation.
+7. Treat collapse with richer endpoint measurement as support for ordinary hidden-state memory; a persistent physical history advantage must survive adequately expressive nonlinear endpoint modeling and model-misspecification controls before it is treated as evidence against endpoint sufficiency for the measured state, after which missing present-state variables should be sought before considering a stronger relational interpretation. The analytic curve is specific to the stated linear generator: with equiprobable H = ±1 and independent V ~ N(0,q), q > 0, observing Z = bH + V exactly makes Y = Z³ endpoint-sufficient even though population linear regression Y ~ Z + H has β_H = −2b³.
 
 ## Falsifiers / controls
 

@@ -12,7 +12,7 @@ with `Var(H)=Var(B)=1`, independent noise terms, `q = a^2 + Var(eps_z)`, and `s^
 
 `beta_H = d + c*b*s^2/(q+s^2)`.
 
-Under endpoint sufficiency (`d = 0`), apparent history information caused only by endpoint measurement error must collapse to zero as `s^2 -> 0`. If a material residual survives exact endpoint measurement, endpoint sufficiency is falsified for that state description; this motivates missing-state search or an explicit history variable, not a metaphysical conclusion.
+For this specified linear generator, under endpoint sufficiency (`d = 0`), apparent history information caused only by endpoint measurement error must collapse to zero as `s^2 -> 0`. If a material residual survives exact endpoint measurement, endpoint sufficiency is falsified for that state description; this motivates missing-state search or an explicit history variable, not a metaphysical conclusion.
 
 Acceptance test:
 1. Simulate the current generator across decreasing endpoint-noise levels.
