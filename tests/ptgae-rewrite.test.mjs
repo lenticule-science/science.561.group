@@ -16,7 +16,6 @@ const cases = [
   ['Subsequent to validation, store the record.', 'After validation, store the record.', 'PTR012'],
   ['Prior to validation, hash the record.', 'Before validation, hash the record.', 'PTR013'],
   ['With regard to caching, store one copy.', 'About caching, store one copy.', 'PTR014'],
-  ['With respect to caching, store one copy.', 'About caching, store one copy.', 'PTR015'],
   ['The Sociology Services Section maintains knowledge and practices for the study of social structure.', 'The Sociology Services Section studies social structure.', 'PTR026'],
   ['The Music Services Section maintains knowledge and practices for this service domain.', 'Description incomplete.', 'PTR027'],
   ['This section holds shared knowledge and services concerning Tai Chi.', 'This section provides shared Tai Chi knowledge and services.', 'PTR028'],
@@ -34,12 +33,17 @@ for (const source of [
   'It is important to note that the parser preserves provenance.',
   'Unknown: the provider does not expose remaining quota.',
   'The repository is the canonical home of the signed corpus.',
+  'Differentiate f with respect to x.',
+  'With respect to caching, store one copy.',
   '`may potentially` names a banned stacked-modality phrase.',
   '```\nThe change may potentially affect the parser.\n```',
   '> The source says the change may potentially affect the parser.',
   '   > It is important to note that this is quoted source text.',
   'The source says "the change may potentially affect the parser."',
-  'The source says “the change may potentially affect the parser.”'
+  'The source says “the change may potentially affect the parser.”',
+  '> Source states:\nThe change may potentially matter.',
+  '   > Source states:\nThe change could possibly matter.\n>\nAnother quoted paragraph might perhaps matter.',
+  '🔬 Source evidence:\n> Source states:\nThe change may potentially matter.'
 ]) {
   const result = rewritePTGAE(source);
   assert.equal(result.text, source, 'unsafe, quoted, or protected text changed: ' + source);
@@ -53,5 +57,10 @@ assert.deepEqual(mixedStraight.changes, ['PTR001']);
 const mixedCurly = rewritePTGAE('The change could possibly matter; the source says “it could possibly matter.”');
 assert.equal(mixedCurly.text, 'The change could matter; the source says “it could possibly matter.”');
 assert.deepEqual(mixedCurly.changes, ['PTR002']);
+
+const afterQuote = rewritePTGAE('> Source states:\nThe change may potentially matter.\n\nOur change could possibly help.');
+assert.equal(afterQuote.text, '> Source states:\nThe change may potentially matter.\n\nOur change could help.');
+assert.deepEqual(afterQuote.changes, ['PTR002']);
+assert.equal(SAFE_REWRITE_CODES.has('PTR015'), false);
 
 console.log('ok ' + cases.length + ' safe rewrite fixtures; quoted and protected prose unchanged');
