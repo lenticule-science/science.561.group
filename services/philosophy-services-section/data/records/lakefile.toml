@@ -1,7 +1,0 @@
-name = "NewVoid"
-version = "0.1.0"
-defaultTargets = ["NewVoid"]
-
-[[lean_lib]]
-name = "NewVoid"
-roots = ["VoidHarness", "Linter", "VoidCone"]

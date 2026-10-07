@@ -1,9 +1,0 @@
-{
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://research-notes.561.group/hacking/library/predication-notes/composting/library/identifier/identifier.schema.json",
-  "$dynamicAnchor": "identifier-shape",
-  "title": "Identifier",
-  "description": "JSON Schema for an identifier — a member of a set I equipped with an injection I -> surface (Bourbaki, Theory of Sets, Ch. II §3). The most basic value-layer primitive: a non-empty string that distinguishes its referent from others in I. The schema captures only the value-shape (a non-empty string); specific identifier kinds — name (kebab-case), URI, UUID, etc. — narrow this base via further pattern constraints or allOf compositions.",
-  "type": "string",
-  "minLength": 1
-}

@@ -1,8 +1,0 @@
----
-title: "Emsenn Noticed Eir Telemetric Grammar Resonates"
-date-created: 2026-03-04T00:00:00
-aliases:
-  - emsenn noticed eir telemetric grammar resonates
-  - emsenn-noticed-eir-telemetric-grammar-resonates
----
-> i've noticed that as i've named telemetricism and developed a grammar around it, and started using that in real interpersonal conversations in subtle ways (i.e. "that employee's behavior sent a signal to the managers") and that when i do, people start using these same terms. it feels like the grammar hits because it resonates with the way people are alreayd looking at things, telemetrically, but aren't used to discussing as, instead normally talking object-oriented.

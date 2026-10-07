@@ -1,6 +1,0 @@
-{"e":"cell-trace","a":"describing","v":"A finite ordered sequence of cell-records sharing a common cell-projection, satisfying same-cell, transaction-id-monotonicity, ≤_k-value-monotonicity, stratum-monotonicity, and provenance accumulativity. Layer-5 finite presentation of a predication-cell-trace.","t":"2026-05-20T00:00:00Z"}
-{"e":"cell-trace","a":"collecting","v":"cell-record","t":"2026-05-20T00:00:00Z"}
-{"e":"cell-trace","a":"packaging","v":"predication-cell-trace","t":"2026-05-20T00:00:00Z"}
-{"e":"cell-trace","a":"monotonic-in-knowledge-order","v":"cell-trace","t":"2026-05-20T00:00:00Z"}
-{"e":"cell-trace","a":"deriving-from","v":"cell-id","t":"2026-05-20T00:00:00Z"}
-{"e":"cell-trace","a":"deriving-via","v":"predicating","t":"2026-05-20T00:00:00Z"}

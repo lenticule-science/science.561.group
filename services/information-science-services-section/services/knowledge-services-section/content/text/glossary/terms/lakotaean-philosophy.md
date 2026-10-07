@@ -1,9 +1,0 @@
----
-id: 6fcbf1ea-4e4f-4210-a4eb-a5cacab5dc20
-name: Lakotaean philosophy
-date-created: 2025-09-20
----
-
-# Number
-
-Documented Lakota sacred numerology centers on four and seven (Očhéthi Šakówiŋ, the four directions, the "six directions" set phrase of the pipe prayer with the center unenumerated) — not five. The widely-circulated claim that the five-pointed star in cottonwood pith is "the Lakota morning star" traces to an unattributed 1970 sentence by a non-Native author, not to Densmore, Walker, Black Elk/Brown, or (so far as could be checked) Goodman; where the pith star appears in sources, its five is descriptive only. The provenance work, with sources and open leads, is in the 2026-08-22 note: `lib/emsenn/services/561-group/services/science-services-section/services/philosophy-services-section/services/relationality-services-section/services/agent-science-services-section/services/history-and-archaeology-science-services-section/services/social-history-science-services-section/content/documents/articles/notes/2026/08/22/2026-08-22-note-on-the-provenance-of-the-cottonwood-star.md`{.verbatim}

@@ -1,3 +1,0 @@
-# Biological Science Services Section
-
-This section holds biological-science work, split into seventeen subject children: `genetics-services-section`, `botany-services-section`, `human-science-services-section`, `foraging-services-section`, `neuroscience-services-section`, `mycology-services-section`, `medical-science-services-section`, `physiology-services-section`, `biological-senses-services-section`, `biotechnology-services-section`, `agricultural-science-services-section`, `biochemistry-services-section`, `adaptation-services-section`, `ecology-services-section`, `ethology-services-section`, and `inaturalist-services-section`. `lib/legacy` holds a prior capture; `content/text` holds current material.

@@ -1,6 +1,0 @@
----
-id: 3bb36f74-6f4d-4527-8d99-433e13fea1cd
-name: differential of influencer engagement
-date-created: 2025-09-02
----
-

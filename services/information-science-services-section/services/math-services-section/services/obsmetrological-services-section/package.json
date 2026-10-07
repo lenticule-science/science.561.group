@@ -1,9 +1,0 @@
-{
-  "name": "@lenticule-science/obsmetrological-services-section",
-  "version": "0.1.0",
-  "description": "The organizational holding for Lenticule Science's Obsmetrologia work, including change-bundle qualification.",
-  "type": "module",
-  "keywords": [
-    "science"
-  ]
-}

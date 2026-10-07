@@ -1,2 +1,0 @@
-# Signing key material stays on disk only, never tracked.
-**/data/a2a/*.pem

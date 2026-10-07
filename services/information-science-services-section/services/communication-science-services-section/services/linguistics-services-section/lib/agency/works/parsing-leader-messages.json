@@ -1,9 +1,0 @@
-{
-  "id": "parsing-leader-messages",
-  "name": "parsing leader messages",
-  "kind": "work",
-  "office": "leader-message-semiote",
-  "precondition": "one immutable source message and an admitted language-map id",
-  "move": "derive a charged parse forest and discourse state without selecting one ambiguous reading as the speaker's intent",
-  "postcondition": "one digest-bound candidate parse or typed refusal is returned and provider-local evidence is append-only"
-}

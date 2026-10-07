@@ -1,5 +1,0 @@
-{"e":"predication-valuation","a":"describing","v":"A function v assigning each predicate p an element v(p) ∈ A_p of the fiber algebra at p. Stored as (predicate-category, fiber-algebra map). Evaluating at (s, o) gives the cell's value v(p)(s, o) ∈ L^⋈.","t":"2026-05-19T23:00:00Z"}
-{"e":"predication-valuation","a":"assigning-to-predicate","v":"predication-fiber-algebra","t":"2026-05-19T23:00:00Z"}
-{"e":"predication-valuation","a":"domain-of-predicate-category","v":"predicate-category","t":"2026-05-19T23:00:00Z"}
-{"e":"predication-valuation","a":"indexed-by-cell-set","v":"predication-cell-set","t":"2026-05-19T23:00:00Z"}
-{"e":"predication-valuation","a":"element-of-predication-settling","v":"predication-settling","t":"2026-05-19T23:00:00Z"}

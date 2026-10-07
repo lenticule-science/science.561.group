@@ -1,4 +1,0 @@
-{"e":"variety","a":"describing","v":"The category Var of varieties of universal algebras. Objects are equationally-defined classes of Σ-algebras closed under homomorphisms, subalgebras, and direct products (Birkhoff's HSP theorem, 1935). Morphisms include reduct functors induced by signature inclusions Σ ⊂ Σ' and theory interpretations.","t":"2026-05-19T22:14:00Z"}
-{"e":"variety","a":"having-as-object","v":"bilattice","t":"2026-05-19T22:14:00Z"}
-{"e":"variety","a":"having-as-object","v":"pre-bilattice","t":"2026-05-19T22:14:00Z"}
-{"e":"variety","a":"forgetting-the-negation","v":"variety","t":"2026-05-19T22:14:00Z"}

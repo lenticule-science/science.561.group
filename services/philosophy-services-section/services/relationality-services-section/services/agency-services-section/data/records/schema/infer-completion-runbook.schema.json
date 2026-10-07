@@ -1,9 +1,0 @@
-{
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://561.group/swarm-intelligence/agentic-orchestration-platform/runbook/library/infer-completion-runbook/infer-completion-runbook.schema.json",
-  "title": "Infer-completion runbook (specialized runbook; finite-settlement-algebra)",
-  "description": "Restriction of runbook to the four-step infer-completion pattern: checking-budget → inferring (aperiodic-articulating) → tracking-cell → composing-cost. Triggered by work-items whose requiredSkill is infer-completion. Executor: any agent of agentKind inference-model.",
-  "kind": "object",
-  "variance": "restriction",
-  "allOf": [{ "$ref": "../../runbook.schema.json" }]
-}

@@ -1,6 +1,0 @@
----
-id: d5800d49-7355-4648-8031-605e3dde96c5
-name: transcendence
-date-created: 2025-08-29
----
-
