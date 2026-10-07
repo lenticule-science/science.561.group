@@ -12,8 +12,7 @@ const SAFE_REWRITES = [
   { code: 'PTR011', pattern: /\bon a regular basis\b/gi, replacement: 'regularly' },
   { code: 'PTR012', pattern: /\bsubsequent to\b/gi, replacement: 'after' },
   { code: 'PTR013', pattern: /\bprior to\b/gi, replacement: 'before' },
-  { code: 'PTR014', pattern: /\bwith regard to\b/gi, replacement: 'about' },
-  { code: 'PTR015', pattern: /\bwith respect to\b/gi, replacement: 'about' }
+  { code: 'PTR014', pattern: /\bwith regard to\b/gi, replacement: 'about' }
 ];
 
 const SECTION_STUDY = {
@@ -54,6 +53,7 @@ function rewriteOutsideCode(source, transform) {
   let i = 0;
   let fence = null;
   let inline = false;
+  let inBlockquote = false;
 
   const flush = () => {
     if (plain) {
@@ -67,12 +67,16 @@ function rewriteOutsideCode(source, transform) {
       const nextNewline = source.indexOf('\n', i);
       const lineEnd = nextNewline === -1 ? source.length : nextNewline;
       const line = source.slice(i, lineEnd);
-      if (/^\s{0,3}>/.test(line)) {
+      // Unmarked nonblank lines can continue a Markdown quote paragraph.
+      // Conservatively preserve the whole run until an unquoted blank line.
+      if (/^\s{0,3}>/.test(line) || (inBlockquote && line.trim())) {
+        inBlockquote = true;
         flush();
         out += line;
         i = lineEnd;
         continue;
       }
+      inBlockquote = false;
     }
 
     const three = source.slice(i, i + 3);
@@ -177,6 +181,8 @@ export const SAFE_REWRITE_CODES = new Set([
 // Throat-clearing phrases remain lint-only. Deleting them mechanically can
 // change capitalization or syntax around Markdown spans; a semantic rewrite
 // must own that change.
+// "With respect to" also remains lint-only: it can name a mathematical
+// variable of differentiation or another technical relation.
 //
 // Quoted source text is protected from automatic rewriting. The surrounding
 // prose may be normalized, but the quotation must remain faithful to its source.

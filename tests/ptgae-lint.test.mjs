@@ -75,7 +75,10 @@ const clean = [
   '> It is important to note that this is quoted source text.',
   '   > The source may potentially describe an obsolete behavior.',
   'The source says "it is important to note that this example is intentionally bad."',
-  'The source says “the change may potentially affect the parser.”'
+  'The source says “the change may potentially affect the parser.”',
+  '> Source states:\nThe change may potentially matter.',
+  '   > Source states:\nThe change could possibly matter.\n>\nAnother quoted paragraph might perhaps matter.',
+  '🔬 Source evidence:\n> Source states:\nThe change may potentially matter.'
 ];
 
 for (const source of clean) {
@@ -91,6 +94,12 @@ const quotedMixedCurly = lintPTGAE('The change could possibly matter; the source
 assert.equal(quotedMixedCurly.length, 1);
 assert.equal(quotedMixedCurly[0].code, 'PTG002');
 assert.equal(quotedMixedCurly[0].text.toLowerCase(), 'could possibly');
+
+const afterQuote = lintPTGAE('🔬 Source evidence:\n> Source states:\nThe change may potentially matter.\n\nOur change could possibly help.');
+assert.equal(afterQuote.length, 1);
+assert.equal(afterQuote[0].code, 'PTG002');
+assert.equal(afterQuote[0].line, 5);
+assert.equal(afterQuote[0].column, 12);
 
 const summary = summarizeFindings(lintPTGAE(poison.map(x => x[1]).join('\n')));
 assert.equal(summary.total, poison.length);
