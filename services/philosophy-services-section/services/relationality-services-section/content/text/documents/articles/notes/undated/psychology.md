@@ -1,7 +1,0 @@
----
-title: Psychology
-description: Psychology is the scientific study of mind and behavior.
----
-# Psychology
-
-Psychology is the scientific study of mind and behavior.

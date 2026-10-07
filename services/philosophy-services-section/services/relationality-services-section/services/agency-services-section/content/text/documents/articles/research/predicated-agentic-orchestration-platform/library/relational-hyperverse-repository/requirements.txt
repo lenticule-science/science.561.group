@@ -1,5 +1,0 @@
-pyyaml>=6.0
-sqlmodel>=0.0.21
-pydantic-ai-slim[anthropic,mcp,fastmcp]>=0.0.14
-anthropic>=0.40.0
-langgraph>=1.0

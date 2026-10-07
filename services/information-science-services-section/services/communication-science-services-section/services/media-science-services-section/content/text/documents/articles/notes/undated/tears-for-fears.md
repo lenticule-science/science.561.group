@@ -1,3 +1,0 @@
----
-title: "Tears For Fears"
----

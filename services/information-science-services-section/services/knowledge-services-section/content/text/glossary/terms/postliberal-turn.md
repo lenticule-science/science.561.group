@@ -1,6 +1,0 @@
----
-id: e0c340a0-a59e-4c89-8cfc-8f65333f33a7
-name: postliberal turn
-date-created: 2025-08-31
----
-

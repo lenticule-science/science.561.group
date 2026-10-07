@@ -1,3 +1,0 @@
-# social-history-research-science-services-section
-
-The science of doing the social-history section's own research: how evidence gets layered (primary documents anchoring press coverage, not the reverse), how a resolution pass checks a compiled note's claims against sources before anything downstream cites it as settled, how conflicting figures get reconciled rather than averaged or picked by preference, and how publication decisions are made with an eye to who else reads a well-organized public record — participants in a live action, the agencies investigating them, and the counsel defending them alike. First outputs: the doctrine, protocol, and playbook governing the Gadsden line / Lochiel research (2026-08-22).

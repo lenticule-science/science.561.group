@@ -1,2 +1,0 @@
-import ObsmetrologiaPhysicalScience.Thermodynamics.BoltzmannEntropy
-import ObsmetrologiaPhysicalScience.Thermodynamics.Temperature

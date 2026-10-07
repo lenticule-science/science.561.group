@@ -1,5 +1,0 @@
-{"e":"evaluating-a-cell","a":"describing","v":"Evaluate a predication cell against a valuation. Returns {cell, value} with cell and value as sibling fields, never merged into a value-bearing cell.","t":"2026-05-19T23:00:00Z"}
-{"e":"evaluating-a-cell","a":"consuming","v":"predication-cell","t":"2026-05-19T23:00:00Z"}
-{"e":"evaluating-a-cell","a":"consuming","v":"predication-valuation","t":"2026-05-19T23:00:00Z"}
-{"e":"evaluating-a-cell","a":"producing-pair","v":"predication-cell","t":"2026-05-19T23:00:00Z"}
-{"e":"evaluating-a-cell","a":"producing-pair","v":"bilattice-value","t":"2026-05-19T23:00:00Z"}

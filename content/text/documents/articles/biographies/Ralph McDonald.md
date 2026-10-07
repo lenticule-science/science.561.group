@@ -1,5 +1,0 @@
----
-title: "Ralph Mcdonald"
-description: "Ralph McDonald is (definition:: an accomplice who lives in Atlanta, Georgia where he's cultivating praxis focused on good land stewardship)."
----
-***Ralph McDonald*** is (definition:: an [accomplice](accomplice) who lives in [Atlanta, Georgia](Atlanta, Georgia) where he's [cultivating praxis](cultivating praxis) focused on [good land stewardship](good land stewardship)).

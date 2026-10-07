@@ -1,3 +1,0 @@
----
-title: "Reflexive Relational Derivation"
----

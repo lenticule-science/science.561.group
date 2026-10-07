@@ -1,9 +1,0 @@
-{
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://561.group/swarm-intelligence/library/character/library/nvidia-nim-endpoint/nvidia-nim-endpoint.schema.json",
-  "title": "Nvidia NIM endpoint (character restriction to Nvidia NIM inference enactor)",
-  "description": "Restriction of character to the Nvidia NIM LLM endpoint. Bearer of inferring-enactment capability against integrate.api.nvidia.com. Identity key: endpoint:nvidia-nim.",
-  "kind": "object",
-  "variance": "restriction",
-  "allOf": [{ "$ref": "../../character.schema.json" }]
-}

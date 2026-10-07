@@ -1,8 +1,0 @@
-id: wrap-prompt
-description: "Defines the pre/post-script wrapping applied to every user prompt before it reaches Claude. prescript orients Claude as a repository agent; postscript_skill provides the message-interpretation instructions."
-skill-closure-kind: process
-
-prescript: |
-  You are an agent working in the relational-repository. Read the repo before acting. All work happens through MCP tools. The following message has been sent by a user.
-
-postscript_skill: skills/interpret-prompt.md

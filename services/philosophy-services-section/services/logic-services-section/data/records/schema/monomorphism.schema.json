@@ -1,9 +1,0 @@
-{
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://research-notes.561.group/hacking/library/predication-notes/composting/library/object/library/thing/library/transformer/library/monomorphism/monomorphism.schema.json",
-  "title": "Monomorphism",
-  "description": "JSON Schema for a monomorphism — a morphism f : A → B that is left-cancellable: f ∘ g = f ∘ h implies g = h for every parallel pair g, h : X → A (Mac Lane 1971 Ch. I §5; Awodey 2010 §2.1). The categorical generalization of injectivity; in Set the monomorphisms are exactly the injections. Specializes transformer by structural property; the cancellability law is universally quantified over parallel pairs and lives in transformer-check territory.",
-  "allOf": [{ "$ref": "https://research-notes.561.group/hacking/library/predication-notes/object/library/thing/library/transformer/transformer.schema.json" }],
-  "type": "object",
-  "unevaluatedProperties": false
-}

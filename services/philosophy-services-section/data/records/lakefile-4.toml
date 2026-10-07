@@ -1,7 +1,0 @@
-name = "VoidMath20260325B"
-version = "0.1.0"
-defaultTargets = ["VoidMath20260325B"]
-
-[[lean_lib]]
-name = "VoidMath20260325B"
-roots = ["VoidHarness", "VoidCone"]

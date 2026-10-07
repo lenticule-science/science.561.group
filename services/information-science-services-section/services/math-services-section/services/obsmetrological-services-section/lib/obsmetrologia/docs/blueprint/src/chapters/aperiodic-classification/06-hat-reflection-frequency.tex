@@ -1,9 +1,0 @@
-\section{Hat reflection frequency}
-
-\begin{theorem}[Reflected hats have frequency $1:\varphi^4$ as an integer eigen-relation over $\mathbb{Z}[\varphi]$]\label{thm:hat-reflection-frequency}\lean{Obsmetrologia.AperiodicOrder.Tiling.Witness.hat_reflection_frequency_witness}\leanok\uses{thm:hat-metatile-substitution}
-In the golden integers $\mathbb{Z}[\varphi]$ ($\varphi^2=\varphi+1$, elements $a+b\varphi$ as integer pairs) the vector $v=(1,\,5-3\varphi,\,6\varphi-9,\,6-3\varphi)$ is a left eigenvector of the hat metatile matrix $M$ for the eigenvalue $\varphi^4=2+3\varphi$: $vM=\varphi^4 v$ entrywise. Weighted by hats per metatile $(4,1,2,2)$ it gives $3+3\varphi=3\varphi^2$; weighted by reflected hats per metatile $(1,0,0,0)$ it gives $1$; so unreflected $:$ reflected $=\varphi^4:1$ as an exact identity, with no real number and no Perron eigenvector. Every claim is a kernel \texttt{decide} over $\mathrm{Fin}\ 4$ and integer pairs.
-\end{theorem}
-
-\begin{theorem}[The golden left eigenvector is the hat's frequency vector]\label{thm:hat-perron-frequency}\notready\uses{thm:hat-reflection-frequency, thm:hat-metatile-substitution}
-\emph{Open frontier.} $v$ is the unique positive left Perron eigenvector of the primitive matrix $M$ up to scale, so its normalization is the metatile frequency vector of every hat tiling and $1:\varphi^4$ is a frequency. The target is positivity of $5-3\varphi$, $6\varphi-9$, $6-3\varphi$ through an order on $\mathbb{Z}[\varphi]$ (a sign law by the conjugate norm) or through the real $\varphi$ of the golden field bridge, and Perron--Frobenius uniqueness for primitive integer matrices in core.
-\end{theorem}

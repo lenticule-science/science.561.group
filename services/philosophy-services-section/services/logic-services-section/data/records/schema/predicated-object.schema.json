@@ -1,7 +1,0 @@
-{
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://research-notes.561.group/hacking/library/predication-notes/composting/library/predication-cell-set/library/predication-cell/library/predicated-object/predicated-object.schema.json",
-  "title": "Predicated object",
-  "description": "An entity in the role of the third coordinate of a predication cell — the entity 'to which' the subject is related under the predicate (concepts/object.md). Derives from entity by positional role: structurally a predicated-object is an entity, and the role is fixed by this schema's $id. The name is 'predicated-object' to clearly distinguish from the category-theoretic library/object/ — this is a specialization of entity by predication-cell role, not a renaming of the category-theoretic object. Literal-codomain extensions (when a predicate's third coordinate ranges over literal values) are a separate concern at the predicate / cell layer; predicated-object proper is the entity-valued case.",
-  "$ref": "https://research-notes.561.group/hacking/library/predication-notes/entity-set/library/entity/entity.schema.json"
-}

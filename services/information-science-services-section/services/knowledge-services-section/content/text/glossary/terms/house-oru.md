@@ -1,7 +1,0 @@
----
-id: 96a010d2-1e0d-4a63-843e-3f2daa277899
-name: House Oru
-date-created: 2025-09-05
----
-
-***House Oru***
