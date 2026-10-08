@@ -1,0 +1,67 @@
+---
+title: "Milestone v0.5 — Industrial control"
+description: "The OS operates physical infrastructure. MQTT and Modbus drivers; sensor framework; outpost model; first physical-binding deployment."
+kind: milestone
+status: planning
+version: "v0.5"
+of-campaign: campaign:ship-pypredcomp
+horizon: later
+target-by-ord: null
+completion-percent: 0.0
+---
+
+
+## Position in hierarchy
+
+- Of campaign: [campaigns/ship-pypredcomp.md](../../research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/content/individual/content/agent/endeavoring/content/endeavor/organizing/content/organization/operating/content/physical-process/interfacing/content/control-protocol/controlling/content/control-system/industrializing/content/industrial-control-system/campaigns/ship-pypredcomp.md)
+- Decomposes into goal: [goals/v0.5-first-physical-binding.md](../../research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/content/individual/content/agent/endeavoring/content/endeavor/organizing/content/organization/operating/content/physical-process/interfacing/content/control-protocol/controlling/content/control-system/industrializing/content/industrial-control-system/goals/v0.5-first-physical-binding.md)
+
+## Goal
+
+The OS operates physical systems.
+Sensor data flows in via MQTT or Modbus; the bilattice handles partial / contradictory / stale data natively; closure rules trigger actuation.
+The captain's first real physical binding (soil moisture, temperature, water level, pump controller) runs through the OS into the captain's ledger and dispatch.
+
+## Specs read
+
+- All v0.4 specs.
+- [specs/network/mqtt.md](../../research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/content/individual/content/agent/endeavoring/content/endeavor/organizing/content/organization/operating/content/physical-process/interfacing/content/control-protocol/controlling/content/control-system/industrializing/content/industrial-control-system/specs/network/mqtt.md) — citing MQTT 5.0.
+- [specs/network/modbus.md](modbus.md) — citing Modbus TCP.
+- [specs/drivers/mqtt-driver.md](../../research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/content/individual/content/agent/endeavoring/content/endeavor/organizing/content/organization/operating/content/physical-process/interfacing/content/control-protocol/controlling/content/control-system/industrializing/content/industrial-control-system/specs/drivers/mqtt-driver.md), [modbus-driver.md](modbus-driver.md).
+- [specs/bundled-apps/sensor-dashboard.md](../../research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/content/individual/content/agent/endeavoring/content/endeavor/organizing/content/organization/operating/content/physical-process/interfacing/content/control-protocol/controlling/content/control-system/industrializing/content/industrial-control-system/specs/bundled-apps/sensor-dashboard.md).
+- [specs/init-boot/outpost-image.md](../../research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/content/individual/content/agent/endeavoring/content/endeavor/organizing/content/organization/operating/content/physical-process/interfacing/content/control-protocol/controlling/content/control-system/industrializing/content/industrial-control-system/specs/init-boot/outpost-image.md) — lightweight OS image for edge deployment.
+
+## Decisions in scope
+
+All v0.4 decisions plus (new for v0.5): outpost-is-tiered-deployment, bilattice-handles-sensor-uncertainty, ics-actuation-is-respond.
+
+## Tasks (intra-milestone implementation slices)
+
+Task families:
+
+- **MQTT** (`t05-01..t05-04`): MQTT 5.0 driver; topic ↔ cell map; staleness; disagreement → $\top$.
+- **Modbus** (`t05-10..t05-11`): Modbus TCP driver; reads ↔ cells, writes ↔ closure-rule conclusions.
+- **Sensor framework** (`t05-20..t05-22`): sensor records; reading records; actuator records and actuation closure rules.
+- **Outpost model** (`t05-30..t05-32`): outpost OS image; tiered architecture; outpost-to-ship federation with selective sync.
+- **First physical binding** (`t05-40..t05-42`): real (or simulated) soil-moisture sensor through MQTT; dry-soil → calendar notification; optional pump controller via Modbus.
+
+## Deliverable
+
+- A v0.5 OS image with MQTT and Modbus drivers.
+- An outpost image bootable on a Raspberry Pi or equivalent.
+- A real (or hardware-faithfully-simulated) sensor produces cells that drive a closure-rule firing that triggers a notification.
+- The captain's ledger captures the actuation event (e.g., pump runtime).
+
+## Conformance gate
+
+1. All v0.4 vectors pass.
+2. A simulated MQTT broker round-trips with the OS's MQTT driver.
+3. A simulated Modbus controller round-trips read/write.
+4. Bilattice handles three test cases: stale reading → $\bot$ after horizon; disagreement → $\top$; affirmative reading → $t$.
+5. The outpost-to-ship federation works with selective sync.
+
+## Out of scope (deferred)
+
+- SDK for third-party apps (v0.6).
+- Productivity stack (v0.7).
+- Multiple-of-X actuator orchestration patterns beyond a single binding.

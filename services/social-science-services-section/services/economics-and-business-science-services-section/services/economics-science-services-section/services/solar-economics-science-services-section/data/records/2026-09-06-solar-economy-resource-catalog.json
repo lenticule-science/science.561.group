@@ -1,0 +1,32 @@
+{
+  "economy": "solar-economy",
+  "fieldMapping": {
+    "product": "name",
+    "text": ["name", "whatItDoes", "whatTheHouseTakes", "pricing", "termsOfService", "dataUse", "sourceQuotes"],
+    "sourceUrl": "url",
+    "observedAt": "measuredOn",
+    "disclosureClass": "class",
+    "requiresIdentity": "requiresIdentity",
+    "arena": "arena",
+    "identityAbsenceValues": ["not found", "n/a"],
+    "identityNoneValues": ["not found", "n/a"]
+  },
+  "resources": [
+    { "name": "Electricity (kWh at utility tariff)", "kind": "commodity", "rail": "the utility's own distribution grid and monthly billing account", "unit": "kWh, priced in USD per the utility's own tariff", "match": { "type": "arena-prefix", "prefix": "utility-tariff-data" } },
+    { "name": "Distributed-generation credit (net-metered kWh)", "kind": "credit", "rail": "the utility's internal net-metering ledger, credited against the household's USD-denominated bill", "unit": "kWh credited against a future USD-denominated bill", "match": { "type": "regex", "pattern": "net-meter|net metering", "flags": "i" } },
+    { "name": "Propane (gallon)", "kind": "commodity", "rail": "physical delivery by tank truck to an on-site propane tank", "unit": "gallon, priced in USD per the distributor's posted or contracted rate", "match": { "type": "regex", "pattern": "\\bpropane\\b", "flags": "i" } },
+    { "name": "Diesel / heating oil (gallon)", "kind": "commodity", "rail": "physical delivery or retail pump purchase", "unit": "gallon, priced in USD", "match": { "type": "regex", "pattern": "diesel|heating oil", "flags": "i" } },
+    { "name": "Cordwood", "kind": "commodity", "rail": "informal/local retail or self-harvested; physical delivery, no chain", "unit": "cord, priced in USD where sold; self-harvested wood carries no dollar price but a labor and land cost", "match": { "type": "regex", "pattern": "cordwood|firewood", "flags": "i" } },
+    { "name": "LIHEAP grant (federal, state-administered)", "kind": "credit", "rail": "the state agency's own benefit-disbursement process", "unit": "USD per household per heating season", "match": { "type": "regex", "pattern": "\\bLIHEAP\\b", "flags": "i" } },
+    { "name": "Tribal LIHEAP grant (Oglala Sioux Tribe)", "kind": "credit", "rail": "the Tribe's own district service centers, run in parallel to, not through, the state DSS LIHEAP office", "unit": "USD per household per program period; specific benefit amount not found", "match": { "type": "regex", "pattern": "Oglala Sioux|tribal LIHEAP", "flags": "i" } },
+    { "name": "Federal residential clean-energy tax credit (Section 25D)", "kind": "credit", "rail": "the household's own federal income tax return (Form 5695), nonrefundable, carried forward against future tax liability", "unit": "USD (30% of qualified solar/battery-storage installation expenditure), nonrefundable", "match": { "type": "regex", "pattern": "section 25D|residential clean.energy credit|solar tax credit", "flags": "i" } },
+    { "name": "Renewable Energy Certificate (REC)", "kind": "commodity", "rail": "the CleanCounts (M-RETS) electricity registry", "unit": "one REC per MWh generated from a qualifying renewable source", "match": { "type": "regex", "pattern": "\\bREC\\b|renewable energy certificate|M-RETS|cleancounts", "flags": "i" } },
+    { "name": "Interconnection queue position (Oceti Sakowin Power Authority)", "kind": "scarce-input", "rail": "SPP's own interconnection queue process; an administrative rail, not a chain or platform ledger", "unit": "one queue position per named generation project", "match": { "type": "regex", "pattern": "interconnection queue|\\bSPP\\b", "flags": "i" } },
+    { "name": "Transmission access / corridor land along a route", "kind": "scarce-input", "rail": "federal/state permitting and right-of-way easement process along the physical corridor route", "unit": "linear route-miles of right-of-way across named reservations", "match": { "type": "regex", "pattern": "transmission corridor|right-of-way", "flags": "i" } },
+    { "name": "Water rights touched by a capital project", "kind": "scarce-input", "rail": "state permitting and treaty/tribal water-rights law", "unit": "unknown (no first-party figure for a specific plant's water draw or a specific water-rights allocation)", "match": { "type": "regex", "pattern": "water rights|water-usage", "flags": "i" } },
+    { "name": "Consultation rights (structural claim held as an option)", "kind": "scarce-input", "rail": "federal/state environmental and permitting review processes (consultation requirements, PUC review, treaty rights)", "unit": "one consultation-rights claim per project/permitting proceeding", "match": { "type": "regex", "pattern": "consultation rights|treaty consultation", "flags": "i" } },
+    { "name": "Wit", "kind": "currency", "rail": "none yet; theory only", "unit": "wit (one witnessed distinction-step; physically, kT ln 2 per erased bit)", "match": { "type": "regex", "pattern": "\\bwit\\b", "flags": "i" } },
+    { "name": "Joule", "kind": "commodity", "rail": "the house's own sizing schema: position-sizing-service's barrierJoules field", "unit": "joule (J); kWh is the practical household-scale unit, 1 kWh = 3.6 MJ", "match": { "type": "regex", "pattern": "\\bjoule\\b", "flags": "i" } },
+    { "name": "USDC (x402 gateway settlement)", "kind": "currency", "rail": "Base (Coinbase L2), via the x402 gateway", "unit": "USDC (1:1 USD-pegged stablecoin)", "match": { "type": "arena-prefix", "prefix": "x402-listing-surface" } }
+  ]
+}

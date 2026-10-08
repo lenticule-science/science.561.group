@@ -1,0 +1,15 @@
+{
+  "id": "characterizing-flowcell-aquatic-sites",
+  "name": "characterizing FlowCell aquatic sites",
+  "authority": "emsenn",
+  "work": "characterizing-flowcell-aquatic-sites",
+  "claim": "emsenn",
+  "skills": [
+    "characterize-flowcell-aquatic-site"
+  ],
+  "delegation": true,
+  "x-provenance": {
+    "status": "draft-for-agency-admission",
+    "source-branch": "flowcell-institution-v0-1"
+  }
+}

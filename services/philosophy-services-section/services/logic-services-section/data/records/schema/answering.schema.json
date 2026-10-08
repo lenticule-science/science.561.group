@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://research-notes.561.group/hacking/library/predication-notes/composting/library/predication-cell-set/learning/answering/answering.schema.json",
+  "title": "answering",
+  "description": "Result schema for the answering action. The action posits a triple (subject, predicate, object) and a value into $\\Phi$, producing a cell-record at stratum asserted plus the persistence-path the record was appended to (if persistence is requested).",
+  "type": "object",
+  "required": ["cell-record"],
+  "additionalProperties": false,
+  "properties": {
+    "cell-record": {"$ref": "https://research-notes.561.group/hacking/library/predication-notes/predication-cell-set/library/predication-cell/library/cell-record/cell-record.schema.json"},
+    "appended-to": {
+      "type": "string",
+      "description": "Filesystem path of the JSONL file the cell-record was appended to. Present only when persistence was requested."
+    },
+    "append-index": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Zero-based index of the appended record in the persistence file."
+    }
+  }
+}

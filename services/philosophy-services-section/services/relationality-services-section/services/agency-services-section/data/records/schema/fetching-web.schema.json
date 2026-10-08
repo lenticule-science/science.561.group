@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://561.group/swarm-intelligence/fetching-web/fetching-web.schema.json",
+  "title": "Fetching-web morphism record",
+  "description": "Morphism: URL → web-document. Aperiodic morphism enacted by HTTP fetch. Variance: restriction of articulating-class to HTTP-fetching enactor. Sibling to prompting (human-typing), inferring (LLM-endpoint), articulating (neutral), reading-file (filesystem).",
+  "kind": "morphism",
+  "domain": "URL (non-empty string)",
+  "codomain": "#schema/web-document",
+  "variance": "restriction",
+  "monotone": true,
+  "type": "object",
+  "required": ["input", "output", "evidence"],
+  "additionalProperties": false,
+  "properties": {
+    "input": { "type": "string", "minLength": 1 },
+    "output": { "$ref": "library/web-document/web-document.schema.json" },
+    "evidence": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "minItems": 1,
+      "uniqueItems": true
+    }
+  }
+}

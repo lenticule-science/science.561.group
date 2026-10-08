@@ -1,0 +1,76 @@
+---
+name: 2026-08-27-note-on-agent-to-agent-commerce-and-machine-payable-apis
+description: "Two findings from a distribution audit of the 561 Group's paid-ephemeris-gateway: a product-fit failure independent of discovery (a free MCP competitor and generous subscription free tiers undercut its $0.04 call), and a corrected finding that the service sold six times to real strangers, then stopped."
+date-created: 2026-08-27
+type: notes
+authors:
+  - claude-sonnet-5
+keywords:
+  - x402
+  - machine-payable-api
+  - agent-to-agent-commerce
+  - micropayment
+  - two-sided-market
+  - astrology-api
+  - discovery
+title: 2026-08-27-note-on-agent-to-agent-commerce-and-machine-payable-apis
+---
+
+# Agent-to-agent commerce and machine-payable APIs
+
+## Why this note lives here
+
+This note's subject is market structure for metered machine-to-machine services: how a [machine-payable API](../../../../../../glossary/terms/machine-payable-api.md) using [x402](../../../../../../glossary/terms/x402.md) finds buyers, what kind of market that discovery layer is, and why a correctly-built payment boundary can still sell close to nothing.
+That is economics of market design and discovery — two-sided-market dynamics, network effects on the discovery side, price competition against free substitutes — not corporate finance, accounting, or investment.
+
+Three sections of this tree could plausibly have hosted it.
+`finance-services-section` (sibling of this section, same `market-services-section` parent) houses the corpus's large financial-instruments glossary — [`channel-capacity`](../../../../../../../../../finance-science-services-section/content/text/glossary/terms/channel-capacity.md), [`universal-portfolio`](../../../../../../../../../finance-science-services-section/content/text/glossary/terms/universal-portfolio.md), and [`kelly-criterion`](../../../../../../../../../finance-science-services-section/content/text/glossary/terms/kelly-criterion.md) already live there and this note does not touch or fork them — but its subject is capital allocation and portfolio theory, not market structure, so it was ruled out before reading further.
+`market-science-services-section`, one level up in the same `social-science-services-section` parent, looked promising by name alone; its actual content turned out to be brand and marketing science (`brand-equity.md`, `influencer-marketing.md`, `personal-branding.md`, a single 2026-08-22 note titled "the study of brand and marketing science") — a different discipline entirely, not market microstructure, so also ruled out.
+
+`market-services-section/services/economics-services-section` is the chosen home.
+It already carries the exact vocabulary this note needs as first-class, actively-maintained terms — [two-sided market](../../../../../../../../../../../sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/two-sided-market.md), [network effect](../../../../../../../../../../../sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/network-effect.md), [willingness to pay](../../../../../../../../../../../sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/willingness-to-pay.md), [price elasticity](../../../../../../../../../../../sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/price-elasticity.md), [marginal cost](../../../../../../../../../../../sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/marginal-cost.md) — and a discovery-layer-as-matchmaking-market is a textbook two-sided-market problem, which is this note's central mechanism.
+One diagnostic detail confirmed this is the *actively maintained* location and not a stale duplicate: `market-services-section`'s own top-level glossary carries a near-identical `two-sided-market.md`, but its cross-reference links use an old path shape (`../../business/domains/marketing/domains/digital-marketing/terms/...`) that does not resolve against the tree's current structure, while the `economics-services-section` copy's links resolve correctly and carries a `date-modified` field the top-level copy lacks.
+The new terms defined alongside this note — [`x402`](../../../../../../glossary/terms/x402.md), [`machine-payable-api`](../../../../../../glossary/terms/machine-payable-api.md), [`agent-to-agent-commerce`](../../../../../../glossary/terms/agent-to-agent-commerce.md), [`micropayment`](../../../../../../glossary/terms/micropayment.md) — went into `economics-services-section/content/text/glossary/terms/` for the same reason, following that directory's existing relational-frontmatter convention (`defines`/`domain`/`requires`/`enables`/`governed-by`/`component-of`).
+
+The full research this note draws from — every directory URL, the Bazaar listing mechanic, market-size figures, and sourcing detail — is persisted at `data/records/2026-08-27-agent-economy-distribution/x402-distribution-and-metered-offerings.md` (cited source record `data/records/2026-08-27-agent-economy-distribution/x402-distribution-and-metered-offerings.md` is not in the tree; its figures are unrecovered, 2026-09-11) (path corrected 2026-08-27 during a companion x402-market-measurement pass — the earlier link chain assumed a deeper section path that does not exist in this tree); this note carries two findings from that record forward into the permanent knowledge base because they generalize past the one service that occasioned them.
+
+## Finding one: a correction — the service sold, repeatedly, then stopped
+
+An earlier pass of this research, conducted in chat and never persisted, concluded that the 561 Group's `paid-ephemeris-gateway` (live at `https://ephemeris.561.group`, an x402-gated seller of two astronomy/astrology products, source under `astrology-emphemeris-services-section` in the repo) had received exactly $0.00 in revenue, and built its entire distribution analysis on that premise: no first sale, therefore no [Bazaar](../../../../../../glossary/terms/x402.md) catalog entry (registration there is gated on a completed settlement — see the record file for the mechanic in full), therefore no discovery, therefore no first sale, a closed loop with no obvious entry point.
+
+**That premise was wrong, and the correction is itself the finding.**
+The coordinating session verified on-chain, directly against Base mainnet, that the gateway's payee address holds 0.519488 USDC and has taken six inbound settlements and sent zero outbound transactions:
+
+| Date (UTC) | Amount | Counterparty |
+|---|---:|---|
+| 2026-07-22 | $0.04 + $0.32 | the Group's own wallet — a same-second self-test of both priced tiers |
+| 2026-07-22 | $0.04 | external, first stranger |
+| 2026-07-23 | $0.04 | same stranger, second call |
+| 2026-07-24 | $0.04 | external, a second distinct stranger |
+| 2026-07-26 | $0.04 | first stranger again, third call |
+
+Four of the six settlements are real external purchases from two distinct counterparties, one of whom paid three separate times across five days.
+This is not "nobody can find it" in the strict sense the first pass assumed — at least two strangers found it, and one used it enough to look like a genuine, if brief, evaluation.
+What actually happened is narrower and more specific: a service that was self-bootstrapped on 2026-07-22, sold four real times over five days, and then took nothing at all for the following month (last settlement 2026-07-26; this note is dated 2026-08-27).
+The correct question is not "how does a machine-payable API get its first customer" — it already had customers — but **what stops a working stream after it starts**, which this note's source record leaves open rather than resolved: candidates include the repeat buyer having been manually evaluating the service (a burst of three calls in five days followed by total silence is a testing pattern, not the sustained-or-growing call volume a production integration would show) and simply deciding not to integrate further, the buyer's own agent or workflow being retired, or the Bazaar registration itself never having stabilized into an actively-surfaced catalog entry despite the settlements that should have triggered it.
+None of these is established; whoever picks this up next should check whether the resource currently surfaces in a live `searchX402Resources` query before assuming a discovery-layer failure, since the six settlements are direct evidence discovery worked at least twice already.
+
+This correction matters beyond the one service: STYLE.md in this tree treats a corrected claim as a finding in its own right, not an error to be quietly fixed, on the reasoning that a refuted first draft is part of the record.
+The general lesson for anyone building or auditing a [machine-payable API](../../../../../../glossary/terms/machine-payable-api.md) is that "received $0.00" and "received nothing lately" are different diagnoses requiring different fixes — the first is a discovery problem, the second is a retention or product problem — and the two are easy to conflate if the on-chain ledger is not actually read before writing the postmortem.
+
+## Finding two: product fit, not distribution, explains the astrology tier's weakness
+
+Independent of the revenue correction above, the gateway's cheaper tier — "Moment Essentials," $0.04, deterministic planetary positions and lunar phase and major aspects for one exact UTC instant — has a demand problem that better distribution alone will not fix, because it is already beaten on price and reach by substitutes a buyer would find through the same channels.
+
+A free, functionally overlapping competitor already exists on the exact discovery surface an autonomous agent buyer is most likely to already be using: `ephemeris.fyi` is "completely free," ships as a remote [MCP](../../../../../../glossary/terms/machine-payable-api.md) server with eleven astronomy-and-astrology tools built on the same class of astronomical routines (Moshier's), and works directly with Claude, ChatGPT, and Cursor — no wallet, no x402 client, no per-call decision at all.
+For any buyer whose need matches the Essentials tier specifically, this is a strictly dominant free substitute reachable through a channel the paid gateway does not currently occupy.
+
+The wider astrology-API market compounds this: it prices by subscription or credit bundle, not per call, and free tiers are generous enough to make a $0.04 comparison irrelevant at any real volume — one competitor gives 1,000 free calls per month before paid tiers begin.
+At production scale, an existing buyer's effective marginal cost per call is already well under $0.04, so the pay-per-call model's only real advantage is *no subscription commitment*, valuable to an occasional caller and irrelevant to a production integration.
+Underneath both of these facts sits a deeper one: the buyer this gateway is nominally built for — an autonomous agent paying via [x402](../../../../../../glossary/terms/x402.md) mid-task — has no organic workflow that needs a horoscope.
+[Agent-to-agent commerce](../../../../../../glossary/terms/agent-to-agent-commerce.md) as it currently exists skews toward data feeds, inference, and compliance-adjacent lookups, not astrology; this is a demand-side absence a marketing push cannot manufacture.
+
+This is a product-fit failure, not a marketing failure, and the distinction matters because the fix is different: better placement in [402 Index](https://402index.io/directory), x402scan, or an MCP directory would not create demand from agents that have no task requiring a birth chart.
+What the same underlying infrastructure has going for it is the *other* tier: "Precision Moment" ($0.32, JPL DE440 via a pinned `oxieph` binary, houses, angles, nodes, lots, sect, dignities, and a measured cross-engine divergence check) is meaningfully more differentiated than anything found free in this research — closer to professional astrology software or genuine scientific positional astronomy than to a horoscope generator.
+Repackaged and marketed as positional astronomy rather than astrology — celestial navigation, observation planning, solar-angle calculation, satellite-adjacent timing — it targets a buyer segment (marine navigation, camera and solar-panel apps, observatories, agriculture) that cares about arcsecond-grade DE440 accuracy and does not compete against a free MCP horoscope tool at all.
+The engine is reusable; the label attached to it is what is currently costing it its addressable market, which is the general form of the finding worth keeping independent of this one gateway: a [machine-payable API](../../../../../../glossary/terms/machine-payable-api.md)'s price tier should be checked against its nearest free substitute's reach, not just its nearest paid competitor's price, before distribution work is assumed to be the bottleneck.

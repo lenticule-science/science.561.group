@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://561.group/swarm-intelligence/articulating/library/aperiodic-articulation-category/dreaming/dreaming.schema.json",
+  "title": "Dreaming (EAVT rows → EAVT rows; the settling arrow over memory)",
+  "description": "Dreaming consolidates a trace of EAVT rows into derived EAVT rows — the aperiodic→finite settling arrow over MEMORY, as pure structure work (pass / witness / generate via extension or restriction). ONE morphism read on the bigraded KZ-diamond's two axes; the four named corners (aperiodic/transfinite/scott-continuous/finite) are diagonal cells, NOT a ladder. Input and output are arrays of eavt-row — exactly {e,a,v,t} of OUR structures, no extra fields. `regime` selects the corner (a claim-tagged choice carried in opts at call time, not a schema enum). Variance: coincidence (declared). Per docs/GENEALOGY.md §5.",
+  "kind": "morphism",
+  "variance": "coincidence",
+  "type": "object",
+  "required": ["input", "output"],
+  "additionalProperties": false,
+  "properties": {
+    "input": {
+      "type": "array",
+      "items": { "type": "object", "description": "a witnessed predication (SPOT row {e,a,v,t}); a row in a trace, not a named library thing" }
+    },
+    "output": {
+      "type": "array",
+      "items": { "type": "object", "description": "a witnessed predication (SPOT row {e,a,v,t}); a row in a trace, not a named library thing" }
+    }
+  }
+}

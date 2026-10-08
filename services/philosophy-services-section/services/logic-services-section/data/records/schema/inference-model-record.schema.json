@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://research-notes.561.group/hacking/library/code/structures/library/records/inference-model-record.schema.json",
+  "title": "inference-model-observation",
+  "description": "Per-role observation schema for an inference-model record at doing/working/inferring/models/<slug>.md. Each record is one routable external LLM. Required frontmatter cells: provider, base-url, auth-env-var, model-name, skills, adapter. The dispatch picker reads these cells to route LLM-branch work to the model and the adapter the model declares. Optional cells carry affordance and provenance the picker does not read in v1 but downstream selection rules and surveys do.",
+  "type": "object",
+  "required": ["roleClass", "frontmatter"],
+  "properties": {
+    "roleClass": { "const": "inference-model" },
+    "frontmatter": {
+      "type": "object",
+      "required": ["provider", "base-url", "auth-env-var", "model-name", "skills", "adapter"],
+      "properties": {
+        "name": { "type": "string" },
+        "description": { "type": "string" },
+        "provider": { "type": "string", "minLength": 1 },
+        "base-url": { "type": "string", "pattern": "^https?://" },
+        "auth-env-var": { "type": "string", "pattern": "^[A-Z_][A-Z0-9_]*$" },
+        "model-name": { "type": "string" },
+        "model-version": { "type": "string" },
+        "skills": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)+$"
+          }
+        },
+        "adapter": {
+          "type": "string",
+          "pattern": "^doing/working/inferring/adapters/[a-z][a-z0-9-]*\\.mjs$"
+        },
+        "handedness": { "type": "string", "enum": ["outbound-only"] },
+        "provides-capabilities": { "type": "array", "items": { "type": "string" } },
+        "work-types": { "type": "array", "items": { "type": "string" } },
+        "context-window-tokens": { "oneOf": [{ "type": "integer", "minimum": 1 }, { "type": "string" }] },
+        "supports-tool-calling": { "type": "boolean" },
+        "supports-structured-output": { "type": "boolean" },
+        "grade": { "type": "string" },
+        "cost-per-token-in": { "type": "number", "minimum": 0 },
+        "cost-per-token-out": { "type": "number", "minimum": 0 },
+        "monthly-budget-tokens": { "oneOf": [{ "type": "integer" }, { "type": "string" }] },
+        "rate-limit-rpm": { "oneOf": [{ "type": "integer" }, { "type": "string" }] },
+        "rate-limit-rpd": { "oneOf": [{ "type": "integer" }, { "type": "string" }] },
+        "rate-limit-tpm": { "oneOf": [{ "type": "integer" }, { "type": "string" }] },
+        "rate-limit-tpd": { "oneOf": [{ "type": "integer" }, { "type": "string" }] },
+        "enrolled-at": { "type": ["string", "object"] },
+        "enrolled-by": { "type": "string" },
+        "survey-cited": { "type": "string" },
+        "authorized-for": { "type": "array", "items": { "type": "string" } },
+        "claude-code-authorized": { "type": "boolean" },
+        "claude-code-transport": { "type": "string" },
+        "claude-code-prompt-classes": { "type": "array", "items": { "type": "string" } }
+      }
+    }
+  }
+}

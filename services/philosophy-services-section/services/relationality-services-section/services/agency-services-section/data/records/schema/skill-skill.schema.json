@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://research-notes.561.group/hacking/library/code/structures/library/agent/skill.schema.json",
+  "title": "skill-observation",
+  "description": "Per-role observation schema for a SKILL.md file. Validated by linting-a-resource-file after envelope validation passes. Encodes the conformance rules from work/governance/rules/specifications/skill.md.",
+  "type": "object",
+  "required": ["roleClass", "frontmatter", "skill"],
+  "properties": {
+    "roleClass": { "const": "skill" },
+    "frontmatter": {
+      "type": "object",
+      "required": ["name", "description"],
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)+$",
+          "description": "Kebab-case skill slug. First component is a transformer gerund; resolution of the gerund and noun phrase to substrate is enforced cross-file by resolving-a-skill-name, not by this schema."
+        },
+        "description": {
+          "type": "string",
+          "pattern": "^[A-Z](?:(?!\\.\\s+[A-Z])[^\\n;])*\\.\\s+(?=[A-Z](?:(?!\\.\\s+[A-Z])[^\\n;])*\\.$)(?=[^\\n;]*?\\b(?:[Uu]se|[Ww]hen|USE|WHEN)\\b)[A-Z](?:(?!\\.\\s+[A-Z])[^\\n;])*\\.$",
+          "description": "R7: exactly two sentences on a single line. Sentence 1 names the change the skill causes; sentence 2 names when to use the skill and contains 'use' or 'when'. Semicolons forbidden in either sentence (would fuse the clauses). The negative-lookahead `(?!\\.\\s+[A-Z])` inside each sentence body forbids an internal sentence boundary, pinning the description to exactly two sentences."
+        }
+      }
+    },
+    "skill": {
+      "type": "object",
+      "required": ["bodySectionHeadings"],
+      "properties": {
+        "bodySectionHeadings": {
+          "type": "array",
+          "minItems": 3,
+          "prefixItems": [
+            { "const": "## Requirements" },
+            { "const": "## Steps" },
+            { "const": "## Outcomes" }
+          ],
+          "items": { "type": "string" },
+          "description": "Top-level '## ' headings in document order. The first three MUST be Requirements, Steps, Outcomes. Additional sections after Outcomes are permitted."
+        },
+        "scriptRefs": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Script paths referenced from ## Steps. Cross-file existence of each path is checked by resolving-a-skill-name, not by this schema."
+        }
+      }
+    }
+  },
+  "examples": [
+    {
+      "roleClass": "skill",
+      "frontmatter": {
+        "name": "making-a-skill",
+        "description": "Creates a conformant skill directory at doing/working/hacking/doing/working/skills/<slug>/ with SKILL.md, _index.md, and any scripts subdirectory the body requires. Use when adding a new reusable procedure to the skill catalog."
+      },
+      "skill": {
+        "bodySectionHeadings": ["## Requirements", "## Steps", "## Outcomes"],
+        "scriptRefs": ["${CLAUDE_SKILL_DIR}/scripts/make.mjs"]
+      }
+    }
+  ]
+}

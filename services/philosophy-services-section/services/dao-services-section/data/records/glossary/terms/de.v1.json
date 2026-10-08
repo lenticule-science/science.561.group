@@ -1,0 +1,44 @@
+{
+  "term": "de",
+  "hanzi": "德",
+  "pinyin": "dé",
+  "locus": [
+    "Daodejing 51"
+  ],
+  "translations": [
+    {
+      "citekey": "legge1891",
+      "translator": "James Legge",
+      "year": 1891,
+      "rendering": "All things are produced by the Tao, and nourished by its outflowing operation.",
+      "grounding": "checked-against-translation-comparison-aggregator"
+    },
+    {
+      "citekey": "waley1934",
+      "translator": "Arthur Waley",
+      "year": 1934,
+      "rendering": "Tao gave them birth; The 'power' of Tao reared them.",
+      "grounding": "checked-against-translation-comparison-aggregator"
+    },
+    {
+      "citekey": "lau1963",
+      "translator": "D. C. Lau",
+      "year": 1963,
+      "rendering": "The way gives them life; Virtue rears them.",
+      "grounding": "checked-against-translation-comparison-aggregator"
+    },
+    {
+      "citekey": "mitchell1988",
+      "translator": "Stephen Mitchell",
+      "year": 1988,
+      "rendering": "The Tao gives birth to all beings, nourishes them, maintains them, cares for them, comforts them, protects them.",
+      "note": "paraphrases de away entirely; no distinct English term is minted for it here",
+      "grounding": "checked-against-translation-comparison-aggregator"
+    }
+  ],
+  "houseTranslation": {
+    "text": "De is what showing up as some definite thing, rather than remaining wholly unformed, costs and yields at once.",
+    "grade": "FRAMING",
+    "isNewToThisGlossary": true
+  }
+}

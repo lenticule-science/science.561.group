@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://research-notes.561.group/hacking/library/code/structures/library/planning/workitem.schema.json",
+  "title": "workitem-record",
+  "description": "Cell-shape of a workitem — the in-flight data the dispatch chain passes between layers. Required cells are kind (∈ {process, procedure, derivation, inquiry}), skill (slug naming the capability the receiver must advertise), target (cell-id the response writes to). Kind-specific cells: parameters for process/procedure, prompt and optional maxTokens for derivation/inquiry. Per the workitem-record spec, the in-flight form coincides with the persisted-to-disk form. The dispatch chain's contract composer $refs this schema as the input shape of every dispatching-* skill.",
+  "type": "object",
+  "required": ["kind", "skill", "target"],
+  "properties": {
+    "kind": {
+      "type": "string",
+      "enum": ["process", "procedure", "derivation", "inquiry"]
+    },
+    "skill": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)+$",
+      "description": "Kebab-case slug of the capability the receiver must advertise."
+    },
+    "target": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Cell-id naming where the response is written. The literal '<inline>' means return to caller, do not persist."
+    },
+    "parameters": {
+      "type": "object",
+      "description": "Argument object passed to the receiver script's default-exported function. Required when kind is process or procedure."
+    },
+    "prompt": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Textual prompt sent to the LLM the picker selects. Required when kind is derivation or inquiry."
+    },
+    "maxTokens": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Optional cap on response length. Adapter default applies when omitted."
+    },
+    "created-at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "prefer-receiver": {
+      "type": "string",
+      "description": "Advisory receiver slug or path. Picker respects only when the named receiver advertises the capability."
+    }
+  },
+  "oneOf": [
+    {
+      "properties": {
+        "kind": { "enum": ["process", "procedure"] }
+      },
+      "required": ["parameters"]
+    },
+    {
+      "properties": {
+        "kind": { "enum": ["derivation", "inquiry"] }
+      },
+      "required": ["prompt"]
+    }
+  ]
+}

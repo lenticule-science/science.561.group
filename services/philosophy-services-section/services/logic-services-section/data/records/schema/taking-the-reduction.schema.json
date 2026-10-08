@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://research-notes.561.group/hacking/library/predication-notes/composting/library/object/library/thing/library/category/library/variety/doing/working/taking-the-reduction/taking-the-reduction.schema.json",
+  "title": "Forgetting-the-negation",
+  "description": "The reduct functor U : Bilattice → Pre-bilattice as data. A single bilattice instance is mapped to the pre-bilattice obtained by dropping the negating (and conflating, if present) operation tables.",
+  "type": "object",
+  "required": ["domain", "codomain"],
+  "additionalProperties": false,
+  "properties": {
+    "domain": {
+      "description": "A bilattice instance conforming to bilattice.schema.json.",
+      "$ref": "https://research-notes.561.group/hacking/library/predication-notes/object/library/thing/library/category/library/variety/library/bilattice/bilattice.schema.json"
+    },
+    "codomain": {
+      "description": "The pre-bilattice obtained by forgetting negation (and conflation if present). Conforms to pre-bilattice.schema.json. The script computes this from domain by stripping the negating and conflating fields.",
+      "$ref": "https://research-notes.561.group/hacking/library/predication-notes/object/library/thing/library/category/library/variety/library/pre-bilattice/pre-bilattice.schema.json"
+    }
+  }
+}

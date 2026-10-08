@@ -1,0 +1,4 @@
+{"e":"entity","a":"describing","v":"An element of an entity-set E. Carries no internal structure on its own; via the predication fibration acquires the slice-category P/e as its bundle of incident cells. On-disk: {slug, sorts?}.","t":"2026-05-19T23:00:00Z"}
+{"e":"entity","a":"member-of","v":"entity-set","t":"2026-05-19T23:00:00Z"}
+{"e":"entity","a":"slicing","v":"slice-category","t":"2026-05-19T23:00:00Z"}
+{"e":"entity","a":"inhabiting-position-of","v":"predication-cell","t":"2026-05-19T23:00:00Z"}

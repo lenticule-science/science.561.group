@@ -1,0 +1,49 @@
+id: find-weak
+description: "Determines which find-weak skill to run based on scope and kind, runs it, and returns the ranked defect list."
+skill-closure-kind: process
+
+inputs:
+  - name: scope
+    type: str
+    description: "A directory, file path, or blank for entire repo"
+  - name: kind
+    type: str
+    description: "math-unit | skill | spec | runbook | blank to infer from scope"
+
+outputs:
+  - name: defects
+    from: "{{run-find-skill.result}}"
+
+steps:
+  - id: resolve-kind
+    type: llm-call
+    system_prompt: |
+      Given a scope path and an optional kind hint, determine which find-weak skill to run.
+      Rules:
+      - If kind is explicitly given, use it.
+      - If scope starts with "math/" (and is not math/skills/), kind = math-unit.
+      - If scope contains "skills/", kind = skill.
+      - If scope starts with "spec/", kind = spec.
+      - If scope starts with "runbooks/", kind = runbook.
+      - If scope is blank or is the repo root, kind = all (run all four skills).
+      Return exactly one of: math-unit | skill | spec | runbook | all
+    user_input: "scope: {{inputs.scope}}\nkind hint: {{inputs.kind}}"
+    result_type: str
+
+  - id: run-find-skill
+    type: call
+    skill: "skills/find-weak-{{resolve-kind.result}}.md"
+    condition: "{{resolve-kind.result != 'all'}}"
+
+  - id: run-all-find-skills
+    type: for-each
+    condition: "{{resolve-kind.result == 'all'}}"
+    over:
+      - skills/find-weak-math-unit.md
+      - skills/find-weak-skill.md
+      - skills/find-weak-spec.md
+      - skills/find-weak-runbook.md
+    do:
+      - id: run-skill
+        type: call
+        skill: "{{item}}"

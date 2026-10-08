@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://research-notes.561.group/hacking/library/predication-notes/composting/library/object/library/thing/library/category/library/slice-category/slice-category.schema.json",
+  "title": "Slice category",
+  "description": "JSON Schema for a slice category C/A — the category whose objects are morphisms f : X → A in C with target A, and whose morphisms (X, f) → (Y, g) are morphisms h : X → Y in C such that g ∘ h = f (Mac Lane 1971 Ch. II §6; Awodey 2010 §1.6). Specializes category by carrying base-category and over-object cells naming what's being sliced.",
+  "allOf": [{ "$ref": "https://research-notes.561.group/hacking/library/predication-notes/object/library/thing/library/category/category.schema.json" }],
+  "type": "object",
+  "required": ["base-category", "over-object"],
+  "properties": {
+    "base-category": {
+      "$dynamicRef": "#name-shape",
+      "description": "The base category C being sliced."
+    },
+    "over-object": {
+      "$dynamicRef": "#name-shape",
+      "description": "The object A of C over which the slice is taken — the common codomain of the objects of C/A."
+    }
+  }
+}

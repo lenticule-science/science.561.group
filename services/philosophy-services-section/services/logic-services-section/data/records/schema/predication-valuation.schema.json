@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://research-notes.561.group/hacking/library/predication-notes/composting/library/predication-settling-category/library/predication-settling/library/predication-valuation/predication-valuation.schema.json",
+  "title": "Predication valuation",
+  "description": "JSON Schema for a predication valuation v — a function assigning each predicate p ∈ Π an element v(p) ∈ A_p of the predication fiber algebra at p. Stored as a predicate-category (the domain) plus a map from predicate-slug to fiber-algebra instance. Verifier checks that every predicate-key is in the category's object-set, every fiber's lattice agrees with a globally-fixed residuated lattice (when one is fixed), and every fiber's entity-set agrees with a globally-fixed entity-set.",
+  "type": "object",
+  "required": ["predicate-category", "fiber-algebras"],
+  "additionalProperties": false,
+  "properties": {
+    "predicate-category": {
+      "description": "The predicate-category C whose object-set Π is the valuation's domain. Stored as the full category so reindexing actions are addressable.",
+      "$ref": "https://research-notes.561.group/hacking/library/predication-notes/object/library/thing/library/category/library/predicate-category/predicate-category.schema.json"
+    },
+    "fiber-algebras": {
+      "description": "Map from predicate-slug to predication-fiber-algebra at that predicate. Each value v(p) ∈ A_p is recorded as a full fiber-algebra instance.",
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "https://research-notes.561.group/hacking/library/predication-notes/predication-fibration/library/predication-fiber-algebra/predication-fiber-algebra.schema.json"
+      }
+    },
+    "settling-step": {
+      "description": "Optional ordinal index recording which step τ this valuation occupies in a predication-settling, when the valuation is part of a settling trajectory.",
+      "type": "integer",
+      "minimum": 0
+    }
+  }
+}

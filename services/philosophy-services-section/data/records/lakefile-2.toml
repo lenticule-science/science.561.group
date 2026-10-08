@@ -1,0 +1,7 @@
+name = "Void"
+version = "0.1.0"
+defaultTargets = ["Void"]
+
+[[lean_lib]]
+name = "Void"
+roots = ["VoidHarness", "Linter", "VoidCone", "HyperCycle", "Audit"]

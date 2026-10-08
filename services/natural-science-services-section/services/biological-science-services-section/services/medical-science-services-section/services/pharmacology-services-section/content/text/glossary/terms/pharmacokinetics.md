@@ -1,0 +1,39 @@
+---
+name: "Pharmacokinetics"
+description: "The study of what the body does to a drug: absorption, distribution, metabolism, and elimination (ADME)"
+date-created: 2026-03-06
+authors:
+  - claude-opus-4-6
+aliases:
+  - "pharmacokinetics"
+  - "ADME"
+keywords:
+  - Pharmacology
+dual-of: pharmacodynamics
+contains: [bioavailability, half-life, drug-metabolism, renal-clearance]
+determines: [dosing-frequency, dose-adjustment, drug-interaction]
+governed-by: [hepatic-function, renal-function, cyp-enzymes]
+---
+
+**Pharmacokinetics** is the study of what the body does to a drug — how it is absorbed, distributed, metabolized, and eliminated. The four processes are conventionally summarized as ADME:
+
+**Absorption** — the movement of a drug from its site of administration into the bloodstream. A pill dissolves in the gut, crosses the intestinal wall, and enters the portal circulation. An intramuscular injection diffuses from the muscle into capillaries. An intravenous drug bypasses absorption entirely — it is already in the blood. The route of administration determines the speed and completeness of absorption, which determines [bioavailability](./bioavailability.md).
+
+**Distribution** — the movement of a drug from the bloodstream into the body's tissues. Distribution depends on blood flow (well-perfused organs like the brain, heart, liver, and kidneys receive drug first), protein binding (drugs bound to plasma proteins cannot cross into tissues; only the unbound fraction is pharmacologically active), lipid solubility (lipophilic drugs cross cell membranes readily and accumulate in fatty tissues), and specialized barriers (the blood-brain barrier limits access to the central nervous system).
+
+**Metabolism** — the chemical transformation of a drug, primarily by the liver. Hepatic enzymes — especially the cytochrome P450 (CYP) family — convert lipophilic drugs into more water-soluble metabolites that can be excreted by the kidneys. Metabolism can inactivate a drug, convert an inactive prodrug into its active form, or produce metabolites that are themselves pharmacologically active or toxic. The CYP system is the primary site of [drug interactions](./drug-interaction.md): drugs that induce or inhibit specific CYP enzymes alter the metabolism of every other drug processed by those enzymes.
+
+**Elimination** — the removal of drug and metabolites from the body. The kidneys are the primary route (renal excretion), with hepatobiliary excretion, pulmonary exhalation, and other minor routes contributing. The rate of elimination determines [half-life](./half-life.md) and therefore how long a drug's effects persist and how frequently it must be dosed.
+
+## Clinical significance
+
+Pharmacokinetics determines the practical questions of drug therapy: how much drug to give (dose), how often to give it (dosing interval), how quickly effect onset occurs (route-dependent), how long the effect lasts (half-life-dependent), and what happens when the body's processing capacity is impaired (dose adjustment in renal or hepatic failure).
+
+Understanding pharmacokinetics also explains why the same dose produces different effects in different patients. Age (pediatric patients have immature metabolic enzymes; elderly patients have decreased renal clearance), body composition (obese patients distribute lipophilic drugs into larger fat compartments), genetic variation (CYP2D6 polymorphisms produce ultra-rapid or poor metabolizers), and organ function (renal or hepatic impairment slows elimination) all alter pharmacokinetics — and therefore alter the drug's effect at the same dose.
+
+## Related terms
+
+- [Pharmacodynamics](./pharmacodynamics.md) — the companion concept: what the drug does to the body
+- [Bioavailability](./bioavailability.md) — the fraction that reaches systemic circulation
+- [Half-Life](./half-life.md) — the elimination rate that determines dosing
+- [Drug Interaction](./drug-interaction.md) — how drugs modify each other's pharmacokinetics

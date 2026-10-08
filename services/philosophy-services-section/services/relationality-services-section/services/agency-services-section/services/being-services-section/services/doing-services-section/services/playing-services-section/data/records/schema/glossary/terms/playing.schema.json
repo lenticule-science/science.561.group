@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "glossary/terms/playing",
+  "title": "playing",
+  "description": "Playing is the two-party boundary faculty of an agent: engaging a second party across a bounded arena. Formally, the interaction of two dual strategies — Girard's cut, Design ⊗ Design^⊥ → Interaction (Locus Solum, 2001; implemented as @red-cup-engineering/agentic-play-engine). An instance describes one such engagement. The design carrier itself is engineering custody; this schema names the engagement's shape, not the design's internals.",
+  "type": "object",
+  "required": ["proponent", "opponent", "arena"],
+  "properties": {
+    "twoParty": {
+      "const": true,
+      "description": "Playing is intrinsically two-party: it acts through a second party (opponent, partner, world), unlike the one-party faculties."
+    },
+    "proponent": {
+      "type": "string",
+      "description": "The playing agent's strategy — a design: a polarized valuation over a tree of loci, carried by @red-cup-engineering/playing."
+    },
+    "opponent": {
+      "type": "string",
+      "description": "The dual strategy (Design^⊥) — the second party's side of the engagement; duality swaps Proponent/Opponent polarity."
+    },
+    "arena": {
+      "type": "string",
+      "description": "The bounded space of engagement — the shared loci; culturally, the magic circle."
+    },
+    "interaction": {
+      "type": "object",
+      "description": "The cut of the two designs: converges when the interaction reaches the daimon (orthogonality) or fails to.",
+      "properties": {
+        "converged": { "type": "boolean", "description": "Orthogonality verdict: did the interaction reach the daimon ⊤?" }
+      }
+    },
+    "lusory": {
+      "type": "boolean",
+      "description": "Whether the engagement is held under the lusory attitude — constraints accepted because they make the activity possible (Suits 1978). See ./play.schema.json for the play qualities."
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://research-notes.561.group/hacking/library/code/structures/library/planning/work.schema.json",
+  "title": "work-observation",
+  "description": "Per-role observation schema for a work record under work/. Per the work spec, MUST carry title, status, description. SHOULD carry work-type, created-at, and other lifecycle/provenance fields when known. Work records use `title` rather than `name`.",
+  "type": "object",
+  "required": ["roleClass", "frontmatter"],
+  "properties": {
+    "roleClass": { "const": "work" },
+    "frontmatter": {
+      "type": "object",
+      "required": ["title", "status", "description"],
+      "properties": {
+        "title": { "type": "string", "minLength": 1 },
+        "status": { "type": "string", "minLength": 1 },
+        "description": { "type": "string", "minLength": 1 },
+        "work-type": {
+          "enum": ["process", "procedure", "derivation", "inquiry"]
+        },
+        "created-at": { "type": "string" }
+      }
+    }
+  }
+}

@@ -1,0 +1,1 @@
+The [[force]] that enables a [[old-notes/domains/tekodynamics/glossary/thing]] to [[act]].

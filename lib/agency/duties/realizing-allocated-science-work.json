@@ -1,0 +1,26 @@
+{
+  "id": "realizing-allocated-science-work",
+  "name": "realizing allocated science work",
+  "closure-provenance": {
+    "recorded-by": "claude-opus-5-5",
+    "recorded-on": "2026-10-02",
+    "source": "founder instruction 2026-10-02"
+  },
+  "x-provenance": {
+    "recorded-by": "claude-opus-5-5",
+    "recorded-on": "2026-10-02",
+    "source": "founder instruction 2026-10-02 and senior-scientist office",
+    "former-form-reference": "../561-group-services-section#senior-service-officer"
+  },
+  "authority": "emsenn/services/561-group/services/561-group-services-section#chief-science-officer",
+  "claim": "senior-scientist",
+  "work": "realizing-allocated-science-work",
+  "from": "A sourced and authorized research allocation naming the question, the theory it answers from, and the engineering consumer, if any, of its answer.",
+  "to": "The claim stated plainly, with no evidence grades or disclaimers; where it is mathematics, kernel-checked declarations in the owning Obsmetrologia package, golden vectors read off them for the engineering that realizes them, and the remaining derivations stated as work; and the requests the specification obliges opened on the work board.",
+  "cost": "Bounded reading of the owning theory and corpus, kernel checking on the host, and the least inference needed for unresolved derivation; no financial, credential or external commitment.",
+  "otherwise": "Keep the allocation open with the exact missing theory, evidence, proof or consumer. A conjecture stays named as a conjecture; it is never asserted to unblock engineering.",
+  "receiver-condition": "The Chief Science Officer, or a science office it names, receives the outcome against the allocation; a kernel check or golden-vector judgment is evidence for that receiving, not the receiving. The Senior scientist never receives its own outcome, and an engineering office receives nothing of science's but consumes its specification.",
+  "skills": [
+    "research"
+  ]
+}

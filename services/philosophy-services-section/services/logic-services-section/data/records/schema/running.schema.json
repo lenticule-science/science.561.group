@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://research-notes.561.group/hacking/library/predication-notes/composting/library/object/library/thing/library/system/doing/working/running/https://research-notes.561.group/hacking/library/doing/working/hacking/doing/working/running/running.schema.json",
+  "title": "running (of a system)",
+  "description": "EAVT cell schema for the generic running of any system — the most abstract layer of the running transformer's specialization chain. Specialized by subkinds.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "e": { "type": "string", "description": "Entity-slug, the run-instance identity." },
+    "a": { "type": "string", "enum": ["starting", "stopping"] },
+    "v": { "description": "Value/object of the predication." },
+    "t": { "type": "string", "format": "date-time" }
+  },
+  "required": ["e", "a", "v", "t"]
+}

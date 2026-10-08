@@ -1,0 +1,35 @@
+{
+  "id": "weiqi",
+  "displayName": "Weiqi",
+  "description": "The house weiqi (Go) platform: a deterministic rules engine (@red-cup-engineering/weiqi-engine -- five rulesets, area and territory scoring, SGF round-tripping, semantic move events, a Cartridge replay and durable-match core) under a client-side web app: Play (normal 9x9 against four local bot tiers, with an automatic area count after two passes), Online Match (a shared 9x9 game between two capability links, admitted and replayed server-side), Capture Go, Learn (interactive lesson player), Tsumego (spaced repetition), Study (replay of an admitted session), and Read (compiled glossary).",
+  "subdomain": "weiqi",
+  "entryPoints": {
+    "browser": "/",
+    "headless": "@red-cup-engineering/weiqi-engine (pure module export, no server needed)"
+  },
+  "entryPointsNote": "Deployed to weiqi.561.group as its own Cloudflare Worker (apps/weiqi-web/wrangler.jsonc: static assets from public/ plus the WeiqiMatchObject Durable Object behind /api/matches). npm run build && npm run serve inside apps/weiqi-web serves the same pages locally at http://localhost:8080/ without the match API; npm run dev runs wrangler dev for the deployed shape.",
+  "seedPolicy": {
+    "kind": "on-demand"
+  },
+  "seedPolicyNote": "Weiqi has no random state transition: the engine accepts a Cartridge seed but does not interpret it, and every bot tier is a function of board state plus an injectable tie-break RNG. The online match fixes no seed policy either; its record is the ordered, principal-attributed command log.",
+  "intentLog": {
+    "schemaVersion": "weiqi-v1"
+  },
+  "status": "playable",
+  "statusNote": "2026-09-16: the 9x9 Play page's Pass button and two-pass game end were repaired (Pass threw a ReferenceError and the end of the main phase was detected one move late, so no normal game could reach its count). Play now runs on 9x9, 13x13, or 19x19 as Black or White, with Undo (rebuilt from the session's own commands), dead-stone marking after two passes (the engine removes the marked groups as prisoners before its area count; the bot accepts the human's marking), a live capture count, and a fifth bot tier, Pondering (flat Monte Carlo over the engine's own random playouts, thinking in a Web Worker). Every tier gained endgame sense (never fills its own eyes or self-ataris for nothing; passes once the opponent has passed and no capture remains). Online Match reports the engine's count when both players have passed and offers 9/13/19. Study opens a share link, a finished Play session, or an imported SGF, shows the game's concept summary with what to read and train next, and shares by link; the site installs to a home screen with study content available offline. Honest gaps: no handicap stones or resignation in the shipped pages and no dead-stone marking in the online match (the engine now carries handicap, resign, and settlement commands in source, pending its publish), no ownership shading on the live pages yet (the engine now exports the map; the app wires it once that engine version is published), no ratings, no GnuGo/KataGo tier (the GTP and KataGo analysis client exists at @red-cup-engineering/go-engine-services-section but is not wired to this app).",
+  "energyBankWrapped": false,
+  "cartridgeWrapped": true,
+  "keywords": [
+    "go",
+    "weiqi",
+    "board-game",
+    "rules-kernel",
+    "tsumego",
+    "sgf",
+    "capture-go",
+    "online-match"
+  ],
+  "shelf": "Study",
+  "replayVerifier": "@red-cup-engineering/weiqi-engine/replay#verifyWeiqiIntentLog",
+  "replayVerifierNote": "The public module function accepts (config, entries, seed); it verifies the deterministic Weiqi command log using that explicit configuration."
+}

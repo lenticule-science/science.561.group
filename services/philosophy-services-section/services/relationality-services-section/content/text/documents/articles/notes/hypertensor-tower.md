@@ -1,0 +1,33 @@
+---
+title: Hypertensor Tower
+id: hypertensor-tower
+role: structure
+status: plan
+emerges_from: build-profile-tower
+proof_refs:
+- build-profile-tower
+fields:
+- name: base_fiber
+  type: hypertensor-fiber
+  description: fibre over which the tower is built.
+- name: profiles
+  type: matching-family
+  description: layered profiles reconstructed upward from the fibre.
+- name: flow_nucleus
+  type: flow-nucleus-adjunction
+  description: flow/nucleus compatibility along the tower.
+---
+
+
+
+## Definition
+- Carrier: profile towers attached to each [Hypertensor Fiber](./hypertensor-fiber.md).
+- Source: earned from [Build Profile Tower](./build-profile-tower.md) over stabilised recognitions.
+
+## Invariants
+- Compatible with composite towers via [Build Composite Profile Tower](./build-composite-profile-tower.md).
+- Respects flow/nucleus stability from [`flow`](./flow.md) and [`nucleate`](./nucleate.md).
+
+## Proof
+- Derived from: [Build Profile Tower](./build-profile-tower.md), applying tower construction to fibres.
+- Shows that: tower construction over fibres yields a well-defined carrier of hypertensor towers, stable under composition and flow/nucleus laws.

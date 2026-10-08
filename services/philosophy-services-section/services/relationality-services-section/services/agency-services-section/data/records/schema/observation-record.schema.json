@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://561.group/swarm-intelligence/agentic-orchestration-platform/memory/observation-record/observation-record.schema.json",
+  "title": "Observation record (agent's witnessed substrate state)",
+  "description": "Per lab/.../memory/observation-record/: a recall record of what the agent observed in the substrate at a particular tick. Anchored to a frontier; carries the agent's local view rather than the global trace.",
+  "kind": "object",
+  "type": "object",
+  "required": ["agent", "frontier", "observedAt"],
+  "additionalProperties": false,
+  "properties": {
+    "agent": { "type": "string", "minLength": 1 },
+    "frontier": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "observedAt": { "type": "string", "minLength": 1 }
+  }
+}

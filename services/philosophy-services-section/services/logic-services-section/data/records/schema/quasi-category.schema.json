@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://research-notes.561.group/hacking/library/predication-notes/composting/library/object/library/thing/library/category/library/infinity-category/library/quasi-category/quasi-category.schema.json",
+  "title": "quasi-category",
+  "description": "A simplicial set in which every inner horn has a filler (the weak Kan condition). Joyal's and Lurie's working model of (∞,1)-categories.",
+  "type": "object",
+  "properties": {
+    "name": { "type": "string", "const": "quasi-category" }
+  },
+  "required": ["name"]
+}

@@ -1,0 +1,92 @@
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix socd:  <https://emsenn.net/ns/domain/sociological#> .
+@prefix asr:   <https://emsenn.net/ns/agential-semioverse-repository#> .
+
+socd: a owl:Ontology ;
+    rdfs:label "Sociological ASR Ontology" ;
+    rdfs:comment """
+        Content types and typed relations for sociological knowledge
+        within an Agential Semioverse Repository. Validity is structural:
+        content is valid when its mechanisms, conditions, and positions
+        are made legible.
+    """ .
+
+# --- Classes ---
+
+socd:Term a owl:Class ;
+    rdfs:subClassOf asr:Content ;
+    rdfs:label "Term" ;
+    rdfs:comment "A vocabulary entry naming a phenomenon, mechanism, position, or condition." .
+
+socd:Concept a owl:Class ;
+    rdfs:subClassOf asr:Content ;
+    rdfs:label "Concept" ;
+    rdfs:comment "A synthetic page explaining how multiple terms relate as a mechanism." .
+
+socd:School a owl:Class ;
+    rdfs:subClassOf asr:Content ;
+    rdfs:label "School" ;
+    rdfs:comment "A theoretical tradition organizing terms, concepts, and methods." .
+
+socd:Lesson a owl:Class ;
+    rdfs:subClassOf asr:Content ;
+    rdfs:label "Lesson" ;
+    rdfs:comment "A curriculum module teaching sociological concepts through structured sequence." .
+
+socd:Text a owl:Class ;
+    rdfs:subClassOf asr:Content ;
+    rdfs:label "Text" ;
+    rdfs:comment "An essay, paper, or analysis advancing arguments or synthesizing research." .
+
+# --- Object Properties ---
+
+socd:school a owl:ObjectProperty ;
+    rdfs:label "school" ;
+    rdfs:comment "Source belongs to target theoretical tradition." ;
+    rdfs:range socd:School .
+
+socd:integrates a owl:ObjectProperty ;
+    rdfs:label "integrates" ;
+    rdfs:comment "Source assembles target into a mechanism." ;
+    rdfs:domain socd:Concept .
+
+socd:produces a owl:ObjectProperty ;
+    rdfs:label "produces" ;
+    rdfs:comment "Source generates target as an outcome." .
+
+socd:sustains a owl:ObjectProperty ;
+    rdfs:label "sustains" ;
+    rdfs:comment "Source maintains or reinforces target." .
+
+socd:contests a owl:ObjectProperty ;
+    rdfs:label "contests" ;
+    rdfs:comment "Source disputes target." .
+
+socd:usesConcepts a owl:ObjectProperty ;
+    rdfs:label "uses concepts" ;
+    rdfs:comment "Source draws on target concept for teaching." ;
+    rdfs:domain socd:Lesson ;
+    rdfs:range socd:Concept .
+
+socd:emergesUnder a owl:ObjectProperty ;
+    rdfs:label "emerges under" ;
+    rdfs:comment "Source appears under conditions named by target." .
+
+socd:cites a owl:ObjectProperty ;
+    rdfs:label "cites" ;
+    rdfs:comment "Source credits or references target." .
+
+socd:defines a owl:ObjectProperty ;
+    rdfs:label "defines" ;
+    rdfs:comment "Source is the authoritative definition of target." .
+
+socd:requires a owl:ObjectProperty ;
+    rdfs:label "requires" ;
+    rdfs:comment "Source requires understanding of target." .
+
+socd:teaches a owl:ObjectProperty ;
+    rdfs:label "teaches" ;
+    rdfs:comment "Source develops understanding of target." .

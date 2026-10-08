@@ -1,0 +1,117 @@
+---
+date-published: 2025-04-04
+title: Citing for Containment
+description: There is a gap between the story of Stop Cop City and the history of Weelaunee Forest.
+---
+There is a gap between the [[story]] of [[Stop Cop City]] and the [[history]] of [[Weelaunee Forest]]. Not just a difference in emphasis, but a structural disconnect—between the shape of public sense-making and the uneven, often invisible labor of holding ground, building trust, and adapting under pressure. For those who were materially entwined with Weelaunee before [[Cop City]], and before Stop Cop City, it doesn't just feel like something got lost. It’s that something else got installed in its place.
+
+For many of us, the experience didn’t affirm [[abolition]]. It demonstrated how fast [[carceral system|carceral systems]] learn. The state didn’t just repress the movement—it adapted to it. Local and regional governments treated the forest as a test case. Cop City wasn’t stopped. In its wake, coordination between law enforcement agencies deepened, surveillance practices were normalized, and repression became easier to justify. What began as a refusal was converted into feedback.
+
+[[Hannah Kass]]’s essay, _[[“Trees Give Life. Police Take It”]]_ is part of that pattern. Not because it gets the facts wrong, but because it participates in the same formatting structure that the movement was already struggling against. The essay doesn’t erase people or practices just by omission. It erases them by over-narrating the ones it includes. The problem isn’t misrepresentation. It’s that the piece arrives with its narrative already in place.
+
+This isn’t a rebuttal. It’s not a correction. It’s an effort to show how the story you already have was built—and what it cost. Not just in narrative accuracy, but in what practices became unsustainable once the story took shape. I'm not offering a better version of events. I'm pointing to the process by which events are made legible in the first place—and how that legibility can become its own form of containment.
+
+## Theories We Lived, Theories They Cited
+
+Before arriving at Stop Cop City, Kass had already published work analyzing how resistance movements are metabolized by the very systems they confront. In her earlier writing on food sovereignty, she described how radical action can be neutralized through narrative incorporation—how dissent is managed by being made intelligible. That wasn’t just analysis. It was a framework. And when she came to the forest, she brought that framework with her. She didn’t just enter the moment—she entered it with the story already forming.
+
+The theorists Kass turns to in current and earlier work - Gilmore, Glissant, Berlant, Mbembe - were already part of how many of us were thinking and working. Their concepts shaped how people on the ground navigated contradiction, risk, and care under pressure. These weren’t references we returned to afterward—they were part of how we built relations in the moment. But the way they show up in Kass’s essay doesn’t reflect that embedded use. They don’t appear as companions in contradiction. They’re used as citations to justify choices already made.
+
+[[Lauren Berlant]]’s work, especially _[[Cruel Optimism]]_, was one of the tools we used to think through what it meant to stay committed to futures we knew were compromised. In the forest, that meant asking: when does hope become a trap? When does staying become stuck? When does care start to reproduce the very systems we entered the woods to refuse? People didn’t just read Berlant—they used her to navigate hard decisions: how to withdraw, when to risk visibility, how to share harm without romanticizing it. Her work slowed things down. It made people hesitate, which sometimes meant we didn’t get hurt worse.
+
+Kass’s use of theory doesn’t reflect that kind of pressure. In her writing, these frameworks don’t emerge from the situation—they pre-define it. They don’t introduce tension. They resolve it. Rather than helping her stay with contradiction, they’re used to justify coherence: her arrest becomes transformation, the forest becomes a “life-world,” the carceral becomes fertile ground. The citations function less as tools than as signals, marking each step in a narrative arc that was already set. The theory isn’t used for reflective imagination—it’s used to confirm, as demonstrated in the abstract:
+
+> Wielding eco-defence and disruptive protest while prefiguring worlds where criminalised people and communities prevail even in the deadliest of places, forest defenders have undermined carceral state power.
+
+The citations that are used through the piece aren’t evidence that this abolition occurred through causal processees. Instead, they’re used as evidence that the story Kass tells can be read as undermining carcerality, when supported by the citations. The work of the footnotes isn’t to verify a relationship between cause and effect, or even that an effect occured. It’s to stabilize an interpretation. When theory is used this way, it doesn’t support struggle—it supersedes it. It lets outcomes be declared instead of examined. And once coherence sets in, the story doesn’t need to prove anything happened. It just needs to match the shape of what people already expect a successful movement to look like.
+
+## Epistemic Extraction As Method, not Side-Effect
+
+In Kass’s essay, practices like mutual aid, cultivation, and land refusal are presented as though they emerged from the experience of Stop Cop City. But they didn’t appear as tactical responses to that moment. They were already being practiced—maintained, shared, and adapted long before Cop City threatened Weelaunee and Stop Cop City became a movement. Some of them were fragile by design: intentionally quiet, dependent on trust, not meant to be made legible. When they appear in the text, they’re no longer held in relation. They’re extracted—turned into signals that can circulate without context or accountability.
+
+Kass doesn’t just describe these practices—she lifts them out of the contexts that made them possible. When she writes about learning cultivation techniques or participating in mutual aid, there’s no account of where those practices came from, who carried them, or what forms of care, consent, and risk they depended on. They appear as narrative texture, not embedded labor. The specificity of describing relationships is replaced by the story of her encounter.
+
+This kind of removal has been warned about. [[Leanne Betasamosake Simpson]] and [[Eve Tuck]] have both written clearly that not all knowledge is meant to be extracted, cited, or scaled. Some knowledge is held in place—geographically, relationally, and politically—because that’s where it works, where it provides care. When it's lifted out and circulated as insight, it doesn’t just lose context. It causes harm. It changes what others expect to find in those places. It turns embedded practice into generalized technique, and relational work into transferable content.
+
+[[Sylvia Wynter]]’s work helps clarify what survives these kinds of systems and why. Knowledge that remains legible in settler institutions is usually the kind that can be reformatted—stripped of land, specificity, and obligation. It’s not the most vital knowledge that gets carried forward. It’s the most portable. In Kass’s essay, what survives is what can be turned into narrative. The rest—what couldn’t be separated from its conditions—falls away.
+
+## Recursive Governance and the Performance of Praxis
+
+Kass frames her own arrest as a moment of political transformation—a site of emergent care, abolitionist relation, and personal clarity. This framing isn’t unusual. It mirrors a familiar arc: confrontation, rupture, reflection, politicization. But that arc doesn’t come from the conditions. It’s a pattern that was already available—already legible. It’s a form that allows disruption to be narrated without contradiction. And in that sense, it doesn’t register as deviation. It registers as continuity.
+
+What Kass describes as transformation didn’t interrupt the logic of carceral governance—it confirmed that it was operating as designed. Arrest didn’t break anything open. It was a known outcome, warned against by local organizers, predicted by those who had been navigating local presence for years. But once it happened, it could be framed as emergence. Not because it changed the stakes, but because it fit a pre-existing format: arrest becomes narrative, narrative becomes content, content becomes legitimacy.
+
+The arrest Kass centers wasn’t an unexpected rupture. It happened at an event that local and regional organizers had explicitly advised against attending. The warnings were direct and specific. They named the risks—not just of arrest, but of becoming a conduit for state signal processing. Warnings drew on specific, grounded knowledge—about how the charges would be deployed, how state and nonprofit infrastructure were already aligning, and how local law enforcement agencies were linked by kinship and institutional memory. The warnings also drew from the same theorists Kass had already cited in her earlier work: Berlant, Glissant, Gilmore.
+
+But the warnings were dismissed, downplayed, or deferred. And when the predictable happened, it was reinterpreted—not as a consequence of ignoring collective knowledge, but as a personal turning point. Now, support circulates around that moment. Talking events. Fundraisers. Institutional visibility. Meanwhile, the people who stayed—who kept trying to protect the forest, who warned about exactly this—are living lives that get harder after a loss they tried to inhibit gets used as a victory to make life easier for some.
+
+## Extraction As Structure
+
+"Epistemic extraction" can imply the consequences are immaterial: the lifting of knowledge, the erasure of names, the smoothing of contradiction. But in this case, the recursion didn’t stop at meaning. It moved resources. As attention shifted toward the arrest, material support followed. The people who were warned are now centered. Their story becomes the site of fundraising, programming, institutional reflection. And the people who warned them—who were trying to hold the ground that made refusal possible—are left out of the scene. This isn’t just narrative capture. It’s extraction.
+
+The question of protecting Weelaunee Forest became modulated through the question of Stopping Cop City. It was a question whose answers were fundable, teachable, institutionalizable.
+
+The demand to explain—to define what happened, who was there, what it meant—creates the condition for further removal. As soon as someone becomes the answer to those questions, their version becomes infrastructure. Institutions build around it. Programs follow it. The story becomes the site of investment, and everything that resists that legibility is treated as secondary, or disappeared. That’s not a side effect of narrative. It’s how extraction functions inside systems that reward coherence.
+
+This is exactly what Berlant warned about. In _Cruel Optimism_, she doesn’t just describe the attachments we can’t let go of—she shows how those attachments are maintained by infrastructures that convert crisis into continuity. The question isn’t whether something hurts. It’s whether the hurt can be narrated in a way that feels like progress. Kass’s account turns arrest into insight, misjudgment into emergence, structural warnings into backstory. It doesn’t interrupt the system she described in her earlier work. It completes the loop.
+
+[[Elizabeth Povinelli]] gives us language for this: the quasi-event. Not a spontaneous rupture, but a moment that feels open while already structuring its outcomes. The announcement of Cop City didn’t invite possibility. It narrowed it. The framing of “Stop Cop City” activated familiar systems—policing, funding, university research, activist signaling—all of which began to parse participation in advance. People were profiled before they arrived. Academic observers were pre-positioned through grants and learned framings. Tactical decisions were shaped by what the marginalized could afford, justified to donors, or narrated later as movement. What looked like emergence was the systems processing an operation.
+
+## Legibility Isn't Solidarity
+
+Kass invokes [[Édouard Glissant]]’s idea of opacity to describe the sense of connection and ambiguity she experienced during and after her arrest. But opacity, for Glissant, isn’t about ambiguity or intimacy. It’s about refusal—about declining to be made legible to systems of power. It’s a political stance, not a feeling. In Kass’s account, opacity becomes something affective and retrospective: a way to frame an already-processed moment as rich and ungraspable. But the arrest wasn’t opaque. It was fully legible. It had been predicted, advised against, and narratively routed. Calling it opaque doesn’t resist legibility. It rebrands it.
+
+The same slippage happens with Kass’s use of the [[undercommons]], drawn from [[Fred Moten]] and [[Stefano Harney]]. In their work, the undercommons isn’t a place you end up after an experience—it’s a condition you inhabit through refusal. It depends on shared risk, fugitive relation, and the rejection of institutional legibility. The forest wasn’t the undercommons because it contained contradiction. It was the undercommons when people refused to render it, refused to describe it, refused to let it become example. The moment it became a case study, it was already gone.
+## Necropolitics Isn't Branding
+
+Throughout the essay, Kass frames Cop City and the forest as “death-worlds,” drawing on [[Achille Mbembe]]’s concept of [[necropolitics]]. But in doing so, she flattens it into setting. Necropolitics becomes a backdrop—a way to intensify the stakes of her personal transformation, rather than a framework for analyzing who is made killable, and by what means. The framing doesn’t clarify how violence operated. It uses violence as atmosphere. What Mbembe names as a structure of disposability becomes, in Kass’s telling, a condition for insight.
+
+This contrast becomes sharper when read against [[Ruth Wilson Gilmore]]’s work. Gilmore doesn’t use the language of necropolitics—she writes about organized abandonment. About how institutions decide where resources go, and where they don’t. About how infrastructure becomes policy, and policy becomes premature death. In Weelaunee, that wasn’t theoretical. It was the conversion of a forest into a training site. Framing it as a death-world may gesture at severity, but it risks aestheticizing a process that was already underway through zoning, contracts, and coordination. The violence wasn’t waiting to be named. It was being built.
+
+This is where Gilmore and Povinelli overlap: abandonment sets the stage, and the quasi-event scripts the reaction. By the time the forest was named as a site of resistance, it had already been positioned as disposable. The displacement was slow, administrative, and intentional. The invitation to respond—to organize, to occupy, to oppose—came only after the terms were locked in. Kass’s framing misses this. It treats visibility as disruption, when it was part of the timeline. The refusal was already foreclosed. What remained was how the aftermath would be narrated.
+
+## Form Is Value
+
+Kass’s essay is structurally elegant—reflective, citational, carefully composed. But it’s that very structure that makes it legible to the systems that construct Cop Cities. Not just institutions, but platformed discourse: the circuits of academic publishing, media amplification, and nonprofit messaging that reward coherence over contradiction. These systems don’t amplify refusal. They amplify material that stabilizes the field—content that can circulate without interrupting the architecture it describes. The more polished the insight, the more extractable it becomes.
+
+Kass’s piece creates value by demonstrating that a disruptive experience can be resolved into a coherent narrative. It begins with the narrative formation of rupture—arrest, repression, confusion—and moves through an arc of reflection, relational insight, and theoretical affirmation. It cites widely, gestures toward complexity, and then organizes that complexity into clarity. Its thought is structured to produce stability.
+
+In doing so, it validates its own activity: the value of an event lies in its ability to confirm the frameworks used to interpret it—not in any material change it produces.  Stop Cop City is an abolitionist event because, when you apply the framing of abolitionist theory, it matches the criteria of what abolition is supposed to feel and look like, not because anything was abolished after it occurred.
+
+Kass writes, in her introduction:
+
+> “When abolitionists strategically combine procedural approaches with insurrectionary and autonomous approaches, the fight for abolition can be made significantly stronger. Indeed, a diversity of forest defence efforts have contributed to the stoppage of the Cop City development over the course of years of struggle. Forest defenders from all of these factions (and beyond) have refused to denounce one another’s tactics, supported one another through repression unconditionally, and have resisted co-optation—becoming stronger together.”
+
+This is the framing the rest of the piece operates from.
+
+But this isn’t what happened. Cop City is still being built. The site has not been protected. The land has not been returned. And the people who supported each other “unconditionally” are not the ones living with the consequences of that framing.
+
+## Necessary Omissions
+
+The story of unification replaces the reality of disagreement—not just after the fact, but as it was happening. Organizers and land stewards warned against specific tactics, named likely consequences, and tried to hold open alternatives. Those communications are explicitly erased in the text as "supported... unconditionally."
+
+There is explicitly no resistance to Kass that is not part of structural feedback loops. There's no critique of her presence, her actions, or interpretation. The only denouncements acknowledged are those that didn’t happen. The people who offered critique, issued warnings, or stepped back entirely don’t appear. Their refusals aren’t mischaracterized. They’re absent.
+
+This isn’t a narrative oversight. It’s a function of the coherence Kass’s story is built to produce. As the piece progresses, the pressure to maintain alignment—between theory, experience, and outcome—means that anything incompatible with that arc must be either reconciled or removed. And the longer coherence holds, the harder it becomes to include contradiction without destabilizing the frame. Eventually, the need to confirm meaning outweighs the need to reflect conditions.
+
+That pressure to confirm meaning isn’t just personal. It comes from how certain ways of knowing are built. When someone enters a moment like Stop Cop City with frameworks already in place—carefully cited, institutionally legible, designed to track harm and name resistance, and an expectation they will return to the university in the fall with information showing how real events look when these theories are applied—there’s pressure to find something that affirms them. Not because of bad faith, but because that’s how value is produced in the environments those frameworks come from. The story doesn’t just describe what happened. It proves that the tools brought into the forest still work. And when those tools are also what justify your presence, your risk, your relevance—that confirmation becomes its own form of necessity.
+
+## Navigating with Narrative
+
+When a narrative like this circulates—citation-rich, aesthetically refined, unchallenged in its internal logic—it doesn’t just shape memory. It guides action. It becomes a model for how people imagine resistance should look, and what outcomes to expect. And when that model presents harm as confirmation, and coherence as care, it’s not surprising that others start recreating it. Not because they’re naïve, but because they were told, explicitly, that this is what success looks like.
+
+I know someone who used to work part-time as a landscaper, and part-time as a land steward, who used to use the Weelaunee as a decentralized nursery—propagating native plants, cultivating medicine, sharing cuttings across neighborhoods. The forest was part of their economy, and part of their care, even as Cop City moved from idea to plan to construction contract. But with Stop Cop City, the work had to slow, navigate around the new ways people were using the forest. After the arrests, that work became impossible. The risk was too high, the visibility too dangerous.
+
+Today, they work full-time as a landscaper. They can't offer to plant free native plants for the city's Indigenous residents, because they don't have the forest that provided those plants in abundance.
+
+One of their clients now is a professor—someone who witnessed police beat protestors during the forest defense. They believed it worked: that Stop Cop City stopped Cop City. Why wouldn't they believe that - it's what the papers - both local news and distant academic - say happened.
+
+So now, that professor believes others should protest at Tesla dealerships. Get themselves beaten, and shot. They believe that other people getting shot will stop Elon Musk, not because bodily risk is a necessary part of bodily action, but because they have a narrative body of evidence that indicates it is a necessary step in stopping him.
+
+This isn’t a misunderstanding. It’s the signal working as designed. The story of Stop Cop City was formatted to look like a resolved arc: repression, rupture, reflection, synthesis. So now, when people see repression, they expect synthesis to follow. When someone gets beaten, they assume it means something is working. The model doesn’t need to match outcomes. It just needs to look like the last loop. That’s how recursive legibility reproduces itself: not by lying, but by narrating harm as proof of coherence.
+
+This is how formatting becomes strategy. Not just for the state, but for everyone trying to act inside systems that reward narrative resolution. When a piece like Kass’s becomes the memory of the movement, it does more than misrepresent what happened. It sets the terms for what will happen next. It teaches people how to be seen. It teaches institutions what to reward. And it teaches organizers which stories will be allowed to survive.
+
+None of that makes it malicious. That’s the problem. It doesn’t have to be.
+
+Kass didn’t invent the loop. She entered it. Like many before her, and many after, she brought a framework designed to make sense of capture—and proved its accuracy by performing it. Her citations are clean. Her analysis is compelling. Her prose is elegant. The piece circulates. And in circulating, it retrofits the forest into the arc it needed to confirm. That’s not a betrayal of the theory she cites. It’s the outcome they warned her about.

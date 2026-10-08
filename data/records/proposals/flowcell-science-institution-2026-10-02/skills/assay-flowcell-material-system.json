@@ -1,0 +1,33 @@
+{
+  "id": "assay-flowcell-material-system",
+  "type": "skill",
+  "name": "assay-flowcell-material-system",
+  "verb-phrase": "assaying a FlowCell material system",
+  "description": "Use when a FlowCell material, coating, membrane, polymer, electrolyte, electrofluid, ion/mineral system, or active-maintenance material needs qualification for a named engineering function.",
+  "preconditions": [
+    "the material/system and intended engineering function are named",
+    "the relevant freshwater/seawater and exposure envelope is identifiable"
+  ],
+  "postconditions": [
+    "compatibility and cycling evidence is recorded",
+    "leakage/fouling/corrosion/decon/material-loss consequences are bounded",
+    "energy and mass accounting is present for storage or active-maintenance claims"
+  ],
+  "witness": {
+    "records": [
+      "FlowCell material qualification",
+      "cycling/exposure evidence",
+      "energy/material balance where relevant",
+      "prohibited extrapolations"
+    ]
+  },
+  "closure-kind": "procedure",
+  "input-shape": "FlowCell scientific/configuration evidence appropriate to the named procedure",
+  "output-shape": "Typed FlowCell scientific evidence packet described by the postconditions",
+  "install": [
+    "claude",
+    "codex"
+  ],
+  "requires-capabilities": [],
+  "method": "# Assay a FlowCell material system\n\nIdentify the engineering function first: structure, seal, bearing, skin, membrane, electrolyte, hydraulic fluid, coating, sensor substrate, or repair system.\n\nConsider as applicable:\n- freshwater and seawater compatibility;\n- corrosion and galvanic behavior;\n- hydrolysis and UV/weather exposure;\n- sediment abrasion;\n- fouling and cleaning;\n- invasive-species hot-water decontamination;\n- freeze/thaw;\n- cyclic strain/fatigue;\n- leakage consequence;\n- mass loss/polymer shedding;\n- active-maintenance energy;\n- ion/mineral mass balance and round-trip energy.\n\nProducing a voltage once, precipitating a mineral, or healing once is not by itself storage or sustained maintenance. Return the qualified envelope, failure modes, evidence status, and prohibited extrapolations."
+}
