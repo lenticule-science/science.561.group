@@ -15,7 +15,7 @@ import {
 import {
   identifyNormalizedSemanticContent,
 } from "@red-cup-engineering/computer-code-engineering-services-section/semiotic-expression-notation/runtime";
-import { checkTerm } from "@red-cup-engineering/computer-data-engineering-services-section/semiotic-expression-notation/typing";
+import { checkTerm } from "@red-cup-engineering/computer-data-services-section/semiotic-expression-notation/typing";
 import { assayWitTransition, witTransitionAgentUrl } from "@red-cup-engineering/computer-inference-engine/fabric/effect-assay";
 import { ACTIVITYSTREAMS_CONTEXT } from "@red-cup-engineering/activitypub-services-section/activitystreams";
 
