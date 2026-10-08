@@ -1,7 +1,9 @@
 ---
 type: office
-slug: chief-computation-theorist
 charter: "Own the polity's computation-theory program — the predicated-computing theory and its descendants — as the standing interface for computation-theory questions."
+provides-skill:
+  - research
+  - learn-typed-lambda-calculus
 ---
 
 # Office of the Chief Computation Theorist
