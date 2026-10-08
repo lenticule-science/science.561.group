@@ -1,0 +1,22 @@
+---
+name: "diegesis"
+description: "Diegesis is the world as it exists within a narrative—the reality that the characters inhabit and the events they experience. The term derives from Greek rhetoric (Plato's distinction between diegesis, narration, and mimesis, imitation) and enters modern usage through narratology, particularly the work of Gérard Genette."
+aliases:
+  - "diegesis"
+  - "diegetic"
+  - Diegesis
+date-created: 2026-03-05
+tags: []
+keywords:
+  - narratology
+  - worldbuilding
+  - reproducible-paracosm
+---
+
+Diegesis is the world as it exists within a narrative—the reality that the characters inhabit and the events they experience. The term derives from Greek rhetoric (Plato's distinction between diegesis, narration, and mimesis, imitation) and enters modern usage through narratology, particularly the work of Gérard Genette.
+
+Something is diegetic if it exists or occurs within the world of the narrative. Dialogue, the weather a character experiences, the sound of a door closing in a film—these are diegetic. A film's soundtrack, a narrator's commentary addressed to the reader, or a game's heads-up display—these are extradiegetic: they exist for the audience but not for the characters.
+
+The distinction matters for [worldbuilding](worldbuilding.md) because it separates the constructed world from the apparatus used to present it. A [secondary world](secondary-world.md) is a diegetic reality: everything within it is, from the characters' perspective, simply real. The formal treatment in the [Reproducible Paracosm](../../documents/articles/notes/2025/10/10/2025-10-10-note-on-reproducible-paracosmic-models.md) framework names this explicitly: the paracosmic sketch's small category $\mathcal{C}_S$ is the "diegetic ontology"—the entities, events, and relations that constitute the world as experienced from within.
+
+Levels of diegesis allow for nested worlds. A story within a story is metadiegetic. A character who addresses the audience breaks the diegetic frame. These layerings are modeled in the Reproducible Paracosm framework as modal endofunctors: each modality (knowledge, memory, speculation) defines a distinct layer of the world's internal structure.
