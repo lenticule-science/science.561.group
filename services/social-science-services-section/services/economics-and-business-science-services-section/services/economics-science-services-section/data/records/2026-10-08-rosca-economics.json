@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../../../../../data/records/schema/literature-measurement.schema.json",
+  "id": "rosca-economics",
+  "kind": "literature-measurement",
+  "question": "What does the economics literature establish about ROSCA design, participation and welfare?",
+  "frame": {
+    "population": "ROSCA participants",
+    "exposure": "rotating savings and credit associations",
+    "comparator": "autarky; formal credit",
+    "outcomes": [
+      "participation rate",
+      "welfare",
+      "default",
+      "allocation mechanism"
+    ]
+  },
+  "notes": [],
+  "sources": [],
+  "searches": []
+}

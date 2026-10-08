@@ -185,7 +185,7 @@ The distal bypass's second step classifies an obstruction as **damage** if
 some discharge avoids the protected set and as a **border** if every
 discharge must collapse something protected; damage gets the least-cost
 repair, a border gets a certificate ([the distal
-bypass](../../../../../../../../../../../../../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/agent-computer-system-engineering-services-section/services/multi-agent-computer-system-engineering-services-section/services/multi-agent-computer-platform-engineering-services-section/content/text/documents/articles/notes/2026/07/16/2026-07-16-the-distal-bypass.md);
+bypass](../../../../../../../../../../../../../../../561-group-services-section/content/text/documents/articles/notes/2026/07/16/2026-07-16-the-distal-bypass.md);
 **documented, a house note that binds nobody**). C1 is the stratum where
 the obstruction is certified rather than discharged: the person's
 [energy

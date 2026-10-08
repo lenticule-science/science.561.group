@@ -1,0 +1,100 @@
+{
+  "$schema": "../../../../../../../../data/records/schema/literature-measurement.schema.json",
+  "id": "energy-theories-of-money",
+  "kind": "literature-measurement",
+  "question": "What do the energy theories of money and value (Soddy, Technocracy, Odum, Hall, Ayres, Keen, Garrett) establish, and what numbers do they carry?",
+  "frame": {
+    "population": "economies as energy-using systems",
+    "exposure": "energy availability and EROI",
+    "comparator": "monetary and neoclassical accounts",
+    "outcomes": [
+      "energy-GDP coupling",
+      "EROI thresholds",
+      "energy-denominated money"
+    ]
+  },
+  "notes": [],
+  "sources": [],
+  "searches": [
+    {
+      "register": "openalex",
+      "variables": {
+        "search": "What is the minimum EROI that a sustainable society must have",
+        "per_page": "6"
+      },
+      "observedAt": "2026-10-08",
+      "count": 870,
+      "included": []
+    },
+    {
+      "register": "openalex",
+      "variables": {
+        "search": "Energy, EROI and quality of life",
+        "per_page": "6"
+      },
+      "observedAt": "2026-10-08",
+      "count": 2165,
+      "included": []
+    },
+    {
+      "register": "openalex",
+      "variables": {
+        "search": "Keen Ayres Standish role of energy in production",
+        "per_page": "6"
+      },
+      "observedAt": "2026-10-08",
+      "count": 71,
+      "included": []
+    },
+    {
+      "register": "openalex",
+      "variables": {
+        "search": "Garrett constant ratio of global GDP to energy consumption civilization",
+        "per_page": "6"
+      },
+      "observedAt": "2026-10-08",
+      "count": 113,
+      "included": []
+    },
+    {
+      "register": "openalex",
+      "variables": {
+        "search": "Soddy wealth virtual wealth and debt energy money",
+        "per_page": "6"
+      },
+      "observedAt": "2026-10-08",
+      "count": 96,
+      "included": []
+    },
+    {
+      "register": "openalex",
+      "variables": {
+        "search": "Odum emergy environmental accounting",
+        "per_page": "6"
+      },
+      "observedAt": "2026-10-08",
+      "count": 1490,
+      "included": []
+    },
+    {
+      "register": "openalex",
+      "variables": {
+        "search": "Hall Klitgaard energy and the wealth of nations",
+        "per_page": "6"
+      },
+      "observedAt": "2026-10-08",
+      "count": 395,
+      "included": []
+    },
+    {
+      "register": "openalex",
+      "variables": {
+        "search": "Technocracy energy certificates Howard Scott",
+        "per_page": "6"
+      },
+      "observedAt": "2026-10-08",
+      "count": 42,
+      "included": []
+    }
+  ]
+}

@@ -41,3 +41,7 @@ or the operational running of the group's own social accounts (public-services f
 
 Founded 2026-08-22 during backup-phase additive study work;
 parent READMEs could not be edited to register this section, so registration in `media-science-services-section`'s README is carried as debt for after the backup.
+
+## Research notes
+
+- [Cognitive cost of sustained antagonistic Twitter use](content/text/documents/articles/notes/2026/10/07/2026-10-07-note-on-the-cognitive-cost-of-antagonistic-twitter.md) — conflict interpretation, executive demands, outrage reinforcement, continued involvement, and pleasant interruptions; links to the ME/CFS evidence.

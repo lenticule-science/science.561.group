@@ -1,0 +1,109 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "lenticule/artificial-abiogenesis/selection-event/v0.1",
+  "title": "Artificial Abiogenesis Selection Event v0.1",
+  "type": "object",
+  "required": [
+    "selection_id",
+    "at",
+    "cohort_contract",
+    "candidates",
+    "objectives",
+    "pareto_layers",
+    "novelty",
+    "archive_admissions",
+    "code_revision"
+  ],
+  "properties": {
+    "selection_id": {
+      "type": "string"
+    },
+    "at": {
+      "type": "string"
+    },
+    "cohort_contract": {
+      "type": "object"
+    },
+    "candidates": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "ineligible": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      }
+    },
+    "objectives": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "metric",
+          "direction"
+        ],
+        "properties": {
+          "metric": {
+            "type": "string"
+          },
+          "direction": {
+            "enum": [
+              "max",
+              "min"
+            ]
+          }
+        }
+      }
+    },
+    "pareto_layers": {
+      "type": "array",
+      "items": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      }
+    },
+    "novelty": {
+      "type": "object",
+      "additionalProperties": {
+        "type": [
+          "number",
+          "null"
+        ]
+      }
+    },
+    "archive_admissions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "archive_removals": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "random_seed": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "code_revision": {
+      "type": "string"
+    },
+    "evidence_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

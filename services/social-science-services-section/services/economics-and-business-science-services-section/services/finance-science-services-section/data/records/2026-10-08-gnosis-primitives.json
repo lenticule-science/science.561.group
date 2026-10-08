@@ -1,0 +1,254 @@
+{
+  "$schema": "../../../../../../../../data/records/schema/literature-measurement.schema.json",
+  "id": "gnosis-primitives",
+  "kind": "literature-measurement",
+  "question": "Which Gnosis Chain contracts (sDAI, BREAD, Aave, Safe, Superfluid, Circles) exist at which verified address and size as of 2026-10-08?",
+  "frame": {
+    "population": "EVM contracts on Gnosis (chain 100)",
+    "exposure": "xDAI, sDAI and BREAD balances",
+    "comparator": "Gnosis against Base primitives",
+    "outcomes": [
+      "address and verification",
+      "size",
+      "admin model"
+    ]
+  },
+  "notes": [
+    "../../content/text/documents/articles/notes/2026/10/08/2026-10-08-gnosis-primitives.md"
+  ],
+  "sources": [
+    {
+      "item": {
+        "id": "sdaigno2026",
+        "type": "software",
+        "title": "sDAI SavingsXDai vault on Gnosis",
+        "author": [
+          {
+            "literal": "Savings xDAI"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              8
+            ]
+          ]
+        },
+        "URL": "https://gnosisscan.io/address/0xaf204776c7245bF4147c2612BF6e5972Ee483701"
+      },
+      "design": "on-chain-measurement",
+      "findings": [
+        {
+          "finding": "sDAI 0xaf204776c7245bF4147c2612BF6e5972Ee483701 on Gnosis (Sourcify exact_match, SavingsXDai, not a proxy): asset() = WXDAI 0xe91D153E0b41518A2Ce8Dd3D7944Fa863463a97d; totalAssets() = 42,081,705.43 WXDAI; totalSupply() = 33,377,440.40 sDAI; convertToAssets(1e18) = 1.260783 WXDAI. owner() and interestRecipient() calls reverted.",
+          "exactSourceLanguage": "asset() -> 0xe91D153E0b41518A2Ce8Dd3D7944Fa863463a97d"
+        }
+      ],
+      "readFrom": "on-chain-read",
+      "observedAt": "2026-10-08"
+    },
+    {
+      "item": {
+        "id": "breadtoken2026",
+        "type": "software",
+        "title": "BREAD on Gnosis",
+        "author": [
+          {
+            "literal": "Breadchain Token"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              8
+            ]
+          ]
+        },
+        "URL": "https://gnosisscan.io/address/0xa555d5344f6FB6c65da19e403Cb4c1eC4a1a5Ee3"
+      },
+      "design": "on-chain-measurement",
+      "findings": [
+        {
+          "finding": "BREAD 0xa555d5344f6FB6c65da19e403Cb4c1eC4a1a5Ee3 on Gnosis: name \"Breadchain Stablecoin\", symbol BREAD, totalSupply() = 392,011.84; EIP173ProxyWithReceive (Sourcify exact_match) to implementation 0x3146b62466b76642127B9f4FE34fA7cd9968bf96; owner() 0x918dEf5d593F46735f74F9E2B280Fe51AF3A99ad; yieldAccrued() = 1,756.73 BREAD. DeFiLlama lists 550.44 BREAD held in Superfluid contracts.",
+          "exactSourceLanguage": "name() -> \"Breadchain Stablecoin\""
+        }
+      ],
+      "readFrom": "on-chain-read",
+      "observedAt": "2026-10-08",
+      "notFound": [
+        "Yield source and distribution contracts of Breadchain were not read.",
+        "Audit link."
+      ]
+    },
+    {
+      "item": {
+        "id": "circleshub2026",
+        "type": "software",
+        "title": "Circles v2 hub on Gnosis",
+        "author": [
+          {
+            "literal": "Circles Hub"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              8
+            ]
+          ]
+        },
+        "URL": "https://docs.aboutcircles.com"
+      },
+      "design": "on-chain-measurement",
+      "findings": [
+        {
+          "finding": "Candidate hub 0xc12C1E50ABB450d6205Ea2C3Fa861b3B834d13e8 on Gnosis has 48,905 hex chars of code; name() returns \"Circles\"; inflationDayZero() = 1602720000 (2020-10-15). No Sourcify match.",
+          "exactSourceLanguage": "name() -> \"Circles\""
+        }
+      ],
+      "readFrom": "on-chain-read",
+      "observedAt": "2026-10-08",
+      "notFound": [
+        "Provenance of the address in Circles documentation.",
+        "Audit link."
+      ]
+    },
+    {
+      "item": {
+        "id": "aavegnosis2026",
+        "type": "software",
+        "title": "Aave v3 Gnosis market",
+        "author": [
+          {
+            "literal": "Aave Gnosis"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              8
+            ]
+          ]
+        },
+        "URL": "https://github.com/bgd-labs/aave-address-book/blob/main/src/AaveV3Gnosis.sol"
+      },
+      "design": "on-chain-measurement",
+      "findings": [
+        {
+          "finding": "Pool 0xb50201558B00496A145fE76f7424749556E326D8 (address book), 3,869 hex chars of code; ACL_ADMIN 0x1dF462e2712496373A347f8ad10802a5E95f053D; implementation 0x567048E77778A1a9067C6C97527623cEAFED7961. getReservesList() returns 9 reserves including WXDAI 0xe91D153E..., sDAI 0xaf204776... and USDC.e 0xDDAfbb505ad214D7b80b1f830fcCc89B60fb7A83. USDC.e reserve currentLiquidityRate 9.60e21 ray (0.00096%), variable borrow 1.033e25 ray (1.03%); aToken 0xc6B7AcA6DE8a6044E0e32d0c841a89244A10D284."
+        }
+      ],
+      "readFrom": "on-chain-read",
+      "observedAt": "2026-10-08"
+    },
+    {
+      "item": {
+        "id": "safegnosis2026",
+        "type": "software",
+        "title": "Safe singleton and factory on Gnosis",
+        "author": [
+          {
+            "literal": "Safe Gnosis"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              8
+            ]
+          ]
+        },
+        "URL": "https://github.com/safe-global/safe-smart-account"
+      },
+      "design": "on-chain-measurement",
+      "findings": [
+        {
+          "finding": "Safe singleton 0x41675C099F32341bf84BFc5382aF534df5C7461a (47,161 hex chars) and proxy factory 0x4e1DCf7AD4e460CfD30791CCC4F9c8a4f820ec67 (6,111 hex chars) have code on Gnosis."
+        }
+      ],
+      "readFrom": "on-chain-read",
+      "observedAt": "2026-10-08"
+    },
+    {
+      "item": {
+        "id": "superfluidgno2026",
+        "type": "software",
+        "title": "Superfluid on Gnosis",
+        "author": [
+          {
+            "literal": "Superfluid Gnosis"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              8
+            ]
+          ]
+        },
+        "URL": "https://github.com/superfluid-org/protocol-monorepo/blob/dev/packages/metadata/networks.json"
+      },
+      "design": "on-chain-measurement",
+      "findings": [
+        {
+          "finding": "Gnosis (100): host 0x2dFe937cD98Ab92e59cF3139138f18c823a4efE7, cfaV1 0xEbdA4ceF883A7B12c4E669Ebc58927FBa8447C7D, gdaV1 0xd7992D358A20478c82dDEd98B3D8A9da46e99b82, superTokenFactory 0x23410e2659380784498509698ed70E414D384880 (addresses from metadata; code not tested)."
+        }
+      ],
+      "readFrom": "first-party-docs",
+      "observedAt": "2026-10-08"
+    },
+    {
+      "item": {
+        "id": "stablecoinsgno2026",
+        "type": "dataset",
+        "title": "Stablecoin charts for Gnosis",
+        "author": [
+          {
+            "literal": "DeFiLlama Stablecoins"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              8
+            ]
+          ]
+        },
+        "URL": "https://stablecoins.llama.fi/stablecoincharts/xdai?stablecoin=1"
+      },
+      "design": "dashboard-measurement",
+      "findings": [
+        {
+          "finding": "USDC circulating on Gnosis on 2026-10-07 (unix 1791417600) = $643,569.16."
+        }
+      ],
+      "readFrom": "api-read",
+      "observedAt": "2026-10-08"
+    }
+  ],
+  "searches": [
+    {
+      "register": "other",
+      "variables": {
+        "q": "Gnosis Pay contract addresses; Spark on Gnosis; Chainlink feeds Gnosis"
+      },
+      "observedAt": "2026-10-08",
+      "count": 0,
+      "included": [],
+      "reading": "Gnosis Pay and Spark on Gnosis addresses were not read; the Chainlink Gnosis directory lists USDC / USD 0x26C31ac71010aF62E6B486D1132E266D6298857D and DAI / USD 0x678df3415fc31947dA4324eC63212874be5a82f8 but these were not called."
+    }
+  ]
+}

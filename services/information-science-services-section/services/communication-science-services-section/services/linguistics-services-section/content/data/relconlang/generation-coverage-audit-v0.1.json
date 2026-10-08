@@ -1,0 +1,43 @@
+{
+  "kind": "lenticule.relconlang.generation-coverage-audit",
+  "version": "0.1",
+  "status": "experimental-audit",
+  "surfaces": [
+    {
+      "system": "@emsenn/communicating-in-relation-conlang",
+      "current": "exports base meme actions, manifest actions, and codecActions(bundle)",
+      "direction": "surface text -> articulation/settled parse/holographic reading",
+      "generation": "none found",
+      "note": "communicating codecActions are explicitly decode_L only; generic render is a human presentation of parse structure, not inverse realization"
+    },
+    {
+      "system": "@red-cup-engineering/signcraft/inference/speak",
+      "current": "generates stochastic surface clauses from witnessed predicate subject/object fibers",
+      "shape": "SUBJECT ga VERB do OBJECT.",
+      "generatedDimensions": [
+        "canonical predicate root",
+        "subject",
+        "object",
+        "explicit ga/do"
+      ],
+      "notGenerated": [
+        "stance particles/profile",
+        "dialogue particles/moves",
+        "aspect",
+        "ccomp",
+        "provenance/locus/kind",
+        "topic/focus/contrast/repair",
+        "deictic choice from speaker/addressee context",
+        "register variation",
+        "refusal/denial/repair reports"
+      ],
+      "note": "generation is a saturation experiment, not a general RelConLang realization codec"
+    }
+  ],
+  "existingPattern": {
+    "system": "english-language-codecs",
+    "lesson": "communicating intentionally leaves genuine structure→surface realization to a concrete language codec",
+    "caution": "English ClauseSpec is too narrow to copy verbatim because RelConLang needs stance, dialogue, information structure, ccomp, and explicit-role policy"
+  },
+  "conclusion": "RelConLang comprehension/generation maturity is asymmetric. Rich parseability must not be reported as productive expressive generation."
+}

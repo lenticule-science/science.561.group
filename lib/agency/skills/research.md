@@ -59,6 +59,54 @@ The role is filled at three different depths, depending on what the task require
 
 **Graph-analyst** is the structural filling: queries the [research graph](research) for patterns, connections, and gaps — which terms are heavily linked but missing, which predicates have low diversity, which subdomains have stub coverage. Use when the next move depends on understanding the shape of the corpus rather than its content.
 
+## Procedure
+
+A research question is measured before it is written. The measurement is a
+source record kept in the owning section's `data/records/`, whose `$schema` is
+`science-services-section/data/records/schema/literature-measurement.schema.json`.
+The registers it is measured against are data in
+`science-services-section/data/registers/` (`europepmc.json`,
+`clinicaltrials-gov.json`): each is a query and the CSL projection of its
+results. Red Cup Engineering's bibliography CLI runs them:
+
+```
+bibliography record-search <record> <register.json> name=value...
+bibliography record-read <record> <register.json> name=value...
+bibliography record-check <record>
+bibliography record-references <record> --write
+```
+
+1. **Recover.** Read what the library already holds on the question.
+2. **Frame.** Write the record: its `$schema`, `question`, and `frame`
+   (population, exposure in the literature's units, converting brand doses
+   to the studied agent, comparator, outcomes). The frame decides which hits
+   qualify.
+3. **Search the registers, not the web.** Run every search through
+   `record-search`; each run is a row whether or not it hits. Europe PMC
+   (`query=`) covers PubMed, PMC and international journals. Use `ABSTRACT:`/
+   `TITLE:`/`AUTH:` fields: bare terms match full text and flood the result.
+   Search ClinicalTrials.gov (`query.term=`) for registered and non-US
+   trials. Web search finds leads; a lead becomes evidence only once it is
+   read from a register. Fill each search's `included`, and write its
+   `reading` when nothing qualified: that row is what a statement that
+   something has not been studied rests on.
+4. **Read each source from its first-party surface.** `record-read` adds the
+   row (a CSL-JSON item under a house citekey) and prints the abstract.
+   Write `findings` with the source's own words in `exactSourceLanguage`,
+   plus design, n, country and exposures. Set `readFrom` to what was read.
+   A figure the abstract does not carry goes in `notFound` until the full
+   text is read. A source known only through a review is cited as the
+   review's finding.
+5. **Write rows, then prose.** The note states only what the rows carry and
+   cites each source by its house citation label ("Weyandt et al. 2018",
+   "Horrigan & Barnhill 2000", "Kassim 2023"). Its frontmatter `references:`
+   is derived by `record-references --write`.
+6. **Check.** `record-check` blocks on schema violations, a prose author-year
+   citation with no row, a cited row whose `readFrom` is
+   `secondary-summary`, and `references:` that differ from the record. It
+   warns on rows no note cites and on cited rows with no findings. A note
+   ships at zero errors.
+
 ## Duties, prohibitions, privileges
 
 The frontmatter encodes the role's normative profile by pointing at named entities, not by stating the rules in prose. Each [duty](../../../../library/domains/humanities/domains/sociology/domains/work/domains/governance/terms/duty.md), [prohibition](../../../services/information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/prohibition.md), and [privilege](../../../../library/domains/humanities/domains/sociology/domains/work/domains/governance/terms/privilege.md) is a slug that resolves to its own definition; the role file does not restate them. The intent is that an agent reading this file follows the slugs to learn what each obligation entails, rather than reading a bespoke summary that drifts from the canonical source.

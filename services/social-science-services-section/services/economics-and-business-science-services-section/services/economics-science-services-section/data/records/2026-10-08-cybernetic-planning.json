@@ -1,0 +1,19 @@
+{
+  "$schema": "../../../../../../../../data/records/schema/literature-measurement.schema.json",
+  "id": "cybernetic-planning",
+  "kind": "literature-measurement",
+  "question": "What do the Cybersyn, OGAS, VSM and computerised planning literatures establish about cybernetic coordination?",
+  "frame": {
+    "population": "planned and cybernetically managed economies",
+    "exposure": "Viable System Model; Cybersyn; OGAS; computational planning",
+    "comparator": "market coordination",
+    "outcomes": [
+      "design",
+      "implementation outcomes",
+      "computational feasibility"
+    ]
+  },
+  "notes": [],
+  "sources": [],
+  "searches": []
+}

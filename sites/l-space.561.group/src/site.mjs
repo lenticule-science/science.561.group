@@ -13,7 +13,7 @@
 import { execFileSync } from 'node:child_process';
 import { readFileSync } from 'node:fs';
 import { timingSafeEqual } from 'node:crypto';
-import { join, relative, sep } from 'node:path';
+import { basename, dirname, join, relative, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { SIGN_IN_PATH, createWebAdmissionApplication, defaultPublicRoute } from '@red-cup-engineering/computer-web-server/admission/application';
 import { createPrincipalRegistry } from '@red-cup-engineering/computer-web-server/admission/principals';
@@ -184,7 +184,14 @@ export const lSpaceExcludes = (environment = process.env) => setting('LSPACE_EXC
 const lSpaceCatalog = (environment) => ({ ...LSPACE_CATALOG, wing: setting('LSPACE_WING', environment) ?? LSPACE_CATALOG.wing, exclude: lSpaceExcludes(environment) });
 /** Where a garden's root sits in the 561 Group: `services/science-services-section` for the Lenticule Science forest. */
 export const lSpaceSectionPath = (root) => {
-  const path = relative(GROUP_ROOT, root).split(sep).join('/');
+  // The admitted live corpus can reside outside the application release checkout.
+  let group = GROUP_ROOT;
+  if (relative(group, root).startsWith('..')) {
+    group = root;
+    while (basename(group) !== '561-group' && dirname(group) !== group) group = dirname(group);
+  }
+  if (basename(group) !== '561-group') throw new TypeError(`L-Space root ${root} has no 561 Group carrier`);
+  const path = relative(group, root).split(sep).join('/');
   if (path.startsWith('..')) throw new TypeError(`L-Space root ${root} is outside the 561 Group`);
   return path;
 };
@@ -214,7 +221,7 @@ export async function lSpaceApplication(environment = process.env) {
     authorEmail: author.email,
     // GEODE's writes are the author's; its reads are any admitted reader's; /ns/ is public by doctrine.
     // The notebook buckets read the author's own Google account, so they are the author's alone.
-    authorRoute: (path, method) => isBucketsRoute(path) || (method === 'POST' && (path === '/api/action' || path === '/api/refresh')),
+    authorRoute: (path, method) => isBucketsRoute(path) || path.startsWith('/geode/') || (method === 'POST' && (path === '/api/action' || path === '/api/refresh')),
     realm: publicBaseUrl(environment) === undefined ? 'l-space.561.group' : new URL(publicBaseUrl(environment)).host,
     authors: author.subjects,
     publicRoute: lSpacePublicRoute,
@@ -247,7 +254,7 @@ export async function lSpaceApplication(environment = process.env) {
       observations: join(stateDir, 'cairn', 'geode-observations.jsonl'),
       fullText,
     });
-    composed.push(geodeApplication({ workspace }));
+    composed.push(geodeApplication({ workspace, basePath: '/geode' }));
     archive = workspace.archive;
   }
   // The archive's parsed documents persist in the state directory, so a restart reparses only what changed.

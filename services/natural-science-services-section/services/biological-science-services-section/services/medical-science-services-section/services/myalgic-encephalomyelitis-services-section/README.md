@@ -52,3 +52,7 @@ debts for this capability:
 - **Operations** — how that bundle is kept current as carriers change.
 - **561 Group** — our own running of the research line.
 - **Public** — the face, if any, this material is given.
+
+## Cognitive exertion research
+
+- [ME/CFS cognitive exertion and the limits of glutamate explanations](content/text/documents/articles/notes/2026/10/07/2026-10-07-note-on-mecfs-cognitive-exertion-and-glutamate-evidence.md) — acute fatigue, delayed PEM, perfusion, regional spectroscopy findings, and the proposed connection to antagonistic Twitter.

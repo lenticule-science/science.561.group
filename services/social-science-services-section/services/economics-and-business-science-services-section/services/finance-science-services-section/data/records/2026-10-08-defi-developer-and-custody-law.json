@@ -1,0 +1,530 @@
+{
+  "$schema": "../../../../../../../../data/records/schema/literature-measurement.schema.json",
+  "id": "defi-developer-and-custody-law",
+  "kind": "literature-measurement",
+  "question": "What do FinCEN guidance and 2026 actions, the money-transmitting statutes, the GENIUS Act and Senate market-structure text, Van Loon, the Tornado Cash delisting, the April 2025 DOJ memo, OFAC guidance and the SEC/CFTC 2026 interpretation establish about when a non-custodial, smart-contract-based pool and its developers are money transmitters, sanctions targets or securities intermediaries, as of 2026-10-08?",
+  "frame": {
+    "population": "developers and operators of a non-custodial yield-routing and mutual-credit smart-contract pool",
+    "exposure": "FIN-2019-G001, 31 CFR 1010.100(ff)(5), 18 U.S.C. 1960, GENIUS Act Section 2(7), Senate text Sections 309, 601, 604, Van Loon, DOJ memo, OFAC guidance",
+    "comparator": "a hosted wallet or custodial money transmitter",
+    "outcomes": [
+      "money transmitter status",
+      "criminal exposure under 1960",
+      "sanctions exposure for immutable contracts",
+      "staking and receipt-token securities status",
+      "status of statutory developer safe harbors"
+    ]
+  },
+  "notes": [
+    "../../content/text/documents/articles/notes/2026/10/08/2026-10-08-defi-developer-and-custody-law.md"
+  ],
+  "sources": [
+    {
+      "item": {
+        "id": "fincenguidance2019",
+        "type": "report",
+        "title": "Application of FinCEN's Regulations to Certain Business Models Involving Convertible Virtual Currencies, FIN-2019-G001",
+        "author": [
+          {
+            "literal": "FinCEN Guidance 2019"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2019
+            ]
+          ]
+        },
+        "URL": "https://www.fincen.gov/sites/default/files/2019-05/FinCEN%20Guidance%20CVC%20FINAL%20508.pdf"
+      },
+      "design": "regulatory-guidance",
+      "country": [
+        "US"
+      ],
+      "findings": [
+        {
+          "finding": "Section 4.2: treatment of an intermediary depends on four criteria and is not technology-dependent.",
+          "exactSourceLanguage": "The regulatory treatment of such intermediaries depends on four criteria: (a) who owns the value; (b) where the value is stored; (c) whether the owner interacts directly with the payment system where the CVC runs; and, (d) whether the person acting as intermediary has total independent control over the value."
+        },
+        {
+          "finding": "Section 4.2.1: a user of an unhosted single-signature wallet who transacts on the user's own behalf is not a money transmitter.",
+          "exactSourceLanguage": "In the case of unhosted, single-signature wallets, (a) the value (by definition) is the property of the owner and is stored in a wallet, while (b) the owner interacts with the payment system directly and has total independent control over the value. In so far as the person conducting a transaction through the unhosted wallet is doing so to purchase goods or services on the user’s own behalf, they are not a money transmitter."
+        },
+        {
+          "finding": "Section 4.2.2: a multiple-signature wallet provider that only adds a second validating key, without total independent control, is not a money transmitter; combined with hosted-wallet service, or with value held as entries in the provider's accounts, it is.",
+          "exactSourceLanguage": "If the multiple-signature wallet provider restricts its role to creating un-hosted wallets that require adding a second authorization key to the wallet owner’s private key in order to validate and complete transactions, the provider is not a money transmitter because it does not accept and transmit value.56 On the other hand, if the person combines the services of a multiple-signature wallet provider and a hosted wallet provider, that person will then qualify as a money transmitter. Likewise, if the value is represented as an entry in the accounts of the provider, the owner does not interact with the payment system directly, or the provider maintains total independent control of the value, the provider will also qualify as a money transmitter, regardless of the label the person applies to itself or its activities."
+        },
+        {
+          "finding": "Section 4.4: the money-transmitter interpretation that applies to kiosks applies to DApps that accept and transmit value, for profit or not, and may reach the DApp, its owners/operators, or both.",
+          "exactSourceLanguage": "The same regulatory interpretation that applies to mechanical agencies such as CVC kiosks applies to DApps that accept and transmit value, regardless of whether they operate for profit. Accordingly, when DApps perform money transmission, the definition of money transmitter will apply to the DApp, the owners/operators of the DApp, or both."
+        },
+        {
+          "finding": "Section 3 footnote 14 reproduces the 2011 rule: persons who provide services other than money transmission and move funds only as an integral part of the sale are not money transmitters.",
+          "exactSourceLanguage": "[P]ersons that sell goods or provide services other than money transmission services, and only transmit funds as an integral part of that sale of goods or provision of services, are not money transmitters."
+        }
+      ],
+      "readFrom": "legal-text",
+      "observedAt": "2026-10-08",
+      "population": "convertible virtual currency business models",
+      "notFound": [
+        "A statement that a pooled aggregation of already-separated member-owned value sent to a cooperative-controlled address is or is not money transmission; the guidance does not address pooling or yield routing."
+      ]
+    },
+    {
+      "item": {
+        "id": "fincenwithdrawal2026",
+        "type": "legislation",
+        "title": "Requirements for Certain Transactions Involving Convertible Virtual Currency or Digital Assets; Withdrawal of Notice of Proposed Rulemaking, 91 FR 63514",
+        "author": [
+          {
+            "literal": "FinCEN Withdrawal 2026"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "URL": "https://www.federalregister.gov/documents/2026/10/06/2026-20430"
+      },
+      "design": "regulatory-guidance",
+      "country": [
+        "US"
+      ],
+      "findings": [
+        {
+          "finding": "On October 6, 2026 FinCEN withdrew the 2020 unhosted-wallet reporting and recordkeeping NPRM and will take no further action on it.",
+          "exactSourceLanguage": "FinCEN is withdrawing a notice of proposed rulemaking (NPRM) that proposed requiring banks and money service businesses (MSBs) to submit reports, keep records, and verify the identity of customers in relation to transactions involving convertible virtual currency (CVC) or digital assets with legal tender status (LTDA) held in unhosted wallets or in wallets hosted in a jurisdiction identified by FinCEN. FinCEN will not take any further action on this NPRM."
+        },
+        {
+          "finding": "FinCEN gives the President's Working Group report under Executive Order 14178 as the reason.",
+          "exactSourceLanguage": "As stated in the report issued by the President's Working Group on Digital Asset Markets established by Executive Order 14178, ``Strengthening American Leadership in Digital Financial Technology,'' FinCEN is withdrawing the NPRM as part of the Trump Administration's ongoing efforts to ensure digital asset regulations are fit-for- purpose.\\4\\ FinCEN will take no further action on this NPRM."
+        }
+      ],
+      "readFrom": "legal-text",
+      "observedAt": "2026-10-08"
+    },
+    {
+      "item": {
+        "id": "usc1960",
+        "type": "legislation",
+        "title": "18 U.S.C. 1960, Prohibition of unlicensed money transmitting businesses",
+        "author": [
+          {
+            "literal": "18 USC 1960"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2006
+            ]
+          ]
+        },
+        "URL": "https://www.law.cornell.edu/uscode/text/18/1960"
+      },
+      "design": "statute",
+      "country": [
+        "US"
+      ],
+      "findings": [
+        {
+          "finding": "Section 1960(b)(1): three alternative theories - no state license where unlicensed operation is a state crime (knowledge of the licensing requirement not required), failure to register under 31 U.S.C. 5330, or knowing transmission of criminal proceeds or funds meant to support unlawful activity.",
+          "exactSourceLanguage": "(b) As used in this section— (1) the term “unlicensed money transmitting business” means a money transmitting business which affects interstate or foreign commerce in any manner or degree and— (A) is operated without an appropriate money transmitting license in a State where such operation is punishable as a misdemeanor or a felony under State law, whether or not the defendant knew that the operation was required to be licensed or that the operation was so punishable; (B) fails to comply with the money transmitting business registration requirements under section 5330 of title 31, United States Code, or regulations prescribed under such section; or (C) otherwise involves the transportation or transmission of funds that are known to the defendant to have been derived from a criminal offense or are intended to be used to promote or support unlawful activity;"
+        },
+        {
+          "finding": "Section 1960(b)(2): \"money transmitting\" is transferring funds on behalf of the public by any and all means.",
+          "exactSourceLanguage": "(2) the term “money transmitting” includes transferring funds on behalf of the public by any and all means including but not limited to transfers within this country or to locations abroad by wire, check, draft, facsimile, or courier;"
+        }
+      ],
+      "readFrom": "legal-text",
+      "observedAt": "2026-10-08"
+    },
+    {
+      "item": {
+        "id": "cfr1010100",
+        "type": "legislation",
+        "title": "31 CFR 1010.100(ff)(5), Money transmitter",
+        "author": [
+          {
+            "literal": "31 CFR 1010.100"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "URL": "https://www.law.cornell.edu/cfr/text/31/1010.100"
+      },
+      "design": "statute",
+      "country": [
+        "US"
+      ],
+      "findings": [
+        {
+          "finding": "Money transmitter means a person providing money transmission services or any other person engaged in the transfer of funds; status is a matter of facts and circumstances.",
+          "exactSourceLanguage": "(5) Money transmitter—(i) In general. (A) A person that provides money transmission services. The term “money transmission services” means the acceptance of currency, funds, or other value that substitutes for currency from one person and the transmission of currency, funds, or other value that substitutes for currency to another location or person by any means. “Any means” includes, but is not limited to, through a financial agency or institution; a Federal Reserve Bank or other facility of one or more Federal Reserve Banks, the Board of Governors of the Federal Reserve System, or both; an electronic funds transfer network; or an informal value transfer system; or (B) Any other person engaged in the transfer of funds. (ii) Facts and circumstances; Limitations. Whether a person is a money transmitter as described in this section is a matter of facts and circumstances."
+        },
+        {
+          "finding": "Limitation (F): a person that accepts and transmits funds only integral to the sale of goods or provision of services other than money transmission by that person is not a money transmitter; limitations (A)-(C) cover network-access providers, payment processors by agreement with the seller, and clearance and settlement intermediaries between BSA institutions.",
+          "exactSourceLanguage": "(A) Provides the delivery, communication, or network access services used by a money transmitter to support money transmission services; (B) Acts as a payment processor to facilitate the purchase of, or payment of a bill for, a good or service through a clearance and settlement system by agreement with the creditor or seller; (C) Operates a clearance and settlement system or otherwise acts as an intermediary solely between BSA regulated institutions."
+        },
+        {
+          "finding": "Limitation (F) text.",
+          "exactSourceLanguage": "(F) Accepts and transmits funds only integral to the sale of goods or the provision of services, other than money transmission services, by the person who is accepting and transmitting the funds."
+        }
+      ],
+      "readFrom": "legal-text",
+      "observedAt": "2026-10-08"
+    },
+    {
+      "item": {
+        "id": "geniusact2025",
+        "type": "legislation",
+        "title": "Guiding and Establishing National Innovation for U.S. Stablecoins Act (GENIUS Act), Public Law 119-27, 139 Stat. 419",
+        "author": [
+          {
+            "literal": "GENIUS Act"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025
+            ]
+          ]
+        },
+        "URL": "https://www.congress.gov/119/plaws/publ27/PLAW-119publ27.htm"
+      },
+      "design": "statute",
+      "country": [
+        "US"
+      ],
+      "findings": [
+        {
+          "finding": "Section 2(7)(B): the digital asset service provider definition excludes distributed ledger protocols and their developers, immutable and self-custodial software interfaces, validators, and participation in a liquidity pool.",
+          "exactSourceLanguage": "(B) does not include-- (i) a distributed ledger protocol; (ii) developing, operating, or engaging in the business of developing distributed ledger protocols or self-custodial software interfaces; (iii) an immutable and self-custodial software interface; (iv) developing, operating, or engaging in the business of validating transactions or operating a distributed ledger; or (v) participating in a liquidity pool or other similar mechanism for the provisioning of liquidity for peer-to-peer transactions."
+        },
+        {
+          "finding": "Section 2(9): a distributed ledger protocol is publicly available executable software deployed to a distributed ledger, including smart contracts or networks of smart contracts.",
+          "exactSourceLanguage": "(9) Distributed ledger protocol.--The term ``distributed ledger protocol'' means publicly available and accessible executable software deployed to a distributed ledger, including smart contracts or networks of smart contracts."
+        },
+        {
+          "finding": "Section 3(h)(1)(C): Section 3 does not apply to a transaction by means of a software or hardware wallet that facilitates an individual's own custody of digital assets.",
+          "exactSourceLanguage": "(C) to any transaction by means of a software or hardware wallet that facilitates an individual's own custody of digital assets."
+        }
+      ],
+      "readFrom": "legal-text",
+      "observedAt": "2026-10-08"
+    },
+    {
+      "item": {
+        "id": "clarityrs2026",
+        "type": "legislation",
+        "title": "H.R. 3633, Digital Asset Market Clarity Act of 2025, as reported to the Senate with an amendment in the nature of a substitute (Calendar No. 423), 2026-06-01",
+        "author": [
+          {
+            "literal": "CLARITY Senate Text"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "URL": "https://www.congress.gov/119/bills/hr3633/BILLS-119hr3633rs.htm"
+      },
+      "design": "statute",
+      "country": [
+        "US"
+      ],
+      "findings": [
+        {
+          "finding": "Section 604 (Blockchain Regulatory Certainty Act): a non-controlling developer or provider is not a money transmitting business under 31 U.S.C. 5330 and not engaged in money transmitting under 18 U.S.C. 1960 solely for creating or publishing software, providing hardware or software for a customer's own custody, or infrastructure support.",
+          "exactSourceLanguage": "(c) Treatment.--Notwithstanding any other provision of law, a non- controlling developer or provider-- (1) shall not be treated as-- (A) a money transmitting business, as defined in section 5330 of title 31, United States Code, and the regulations promulgated under that section; or (B) engaged in money transmitting, as defined in section 1960 of title 18, United States Code; and (2) on or after the date of enactment of this Act, shall not be otherwise subject to any registration requirement that is substantially similar to a requirement (as in effect on the day before the date of enactment of this Act) that applies to an entity described in subparagraph (A) or (B) of paragraph (1), solely on the basis of-- (A) creating or publishing software to facilitate the creation of, or providing maintenance services to, a distributed ledger or a service associated with a distributed ledger; (B) providing hardware or software to facilitate a customer's own custody or safekeeping of the digital assets of the customer; or (C) providing infrastructure support to maintain a distributed ledger service."
+        },
+        {
+          "finding": "Section 604(b)(3): the non-controlling test.",
+          "exactSourceLanguage": "(3) Non-controlling developer or provider.--The term ``non- controlling developer or provider'' means a developer or provider of a distributed ledger service that, in the regular course of operations, does not have the legal right or the unilateral and independent ability to control, initiate upon demand, or effectuate transactions involving digital assets to which users are entitled, without the approval, consent, or direction of any third party."
+        },
+        {
+          "finding": "Section 604(e)(1): the section does not affect classification as a money transmitter based on conduct outside subsection (c).",
+          "exactSourceLanguage": "(e) Rules of Construction.--Nothing in this section may be construed-- (1) to affect whether a developer or provider of a distributed ledger service is otherwise subject to classification or treatment as a money transmitter, or as engaged in money transmitting, under applicable Federal or State law, including laws relating to anti-money laundering or countering the financing of terrorism, based on conduct outside the scope of subsection (c);"
+        },
+        {
+          "finding": "Section 309 (Exchange Act 15H): developing or distributing a decentralized finance trading protocol, or operating or participating in a liquidity pool for spot digital commodity transactions, does not subject a person to the Exchange Act.",
+          "exactSourceLanguage": "``(5) Developing, publishing, constituting, administering, maintaining, or otherwise distributing a decentralized finance messaging system, or operating or participating in a liquidity pool, for the purpose of executing a spot contract for the purchase or sale of a digital commodity in relation to a decentralized finance trading protocol."
+        },
+        {
+          "finding": "Section 601 (Exchange Act 15H(a)(2)): a decentralized finance trading protocol is automated and non-discretionary without reliance on a person other than the user for custody; it loses that status where a person or group can control or materially alter it or can restrict, censor or prohibit its use; a decentralized governance system is not such a person or group.",
+          "exactSourceLanguage": "``(2) Decentralized finance trading protocol.-- ``(A) In general.--The term `decentralized finance trading protocol' means a distributed ledger system through which multiple participants can execute a financial transaction-- ``(i) in accordance with an automated rule or algorithm that is predetermined and non- discretionary; and ``(ii) without reliance on a person other than the user to maintain custody or control of the digital assets subject to the financial transaction. ``(B) Exclusions.-- ``(i) In general.--The term `decentralized finance trading protocol' does not include a distributed ledger system if-- ``(I) a person or group of persons under common control or acting pursuant to an agreement to act in concert has the authority, directly or indirectly, through any contract, arrangement, understanding, relationship, or otherwise, to control or materially alter the functionality, operation, or rules of consensus or agreement of the distributed ledger system; ``(II) the distributed ledger system does not operate, execute, and enforce its operations and transactions based solely on pre-established, transparent rules encoded directly within the source code of the distributed ledger system; or ``(III) a person or group of persons under common control has the unilateral authority, via operation of the distributed ledger system, to restrict, censor, or prohibit the use of the distributed ledger system, including any applicable system-based user activity. ``(ii) Special rule.--For purposes of clause (i), a decentralized governance system shall not be considered to be a person or a group of persons under common control or acting pursuant to an agreement to act in concert."
+        }
+      ],
+      "readFrom": "legal-text",
+      "observedAt": "2026-10-08",
+      "notFound": [
+        "Enactment: the bill failed cloture on the motion to proceed 49-50 on 2026-09-15 and is not law."
+      ]
+    },
+    {
+      "item": {
+        "id": "vanloon2024",
+        "type": "legal_case",
+        "title": "Van Loon v. Department of the Treasury, 122 F.4th 549 (5th Cir. 2024), No. 23-50669",
+        "author": [
+          {
+            "literal": "Van Loon Opinion"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024
+            ]
+          ]
+        },
+        "URL": "https://www.ca5.uscourts.gov/opinions/pub/23/23-50669-CV0.pdf",
+        "container-title": "Fifth Circuit"
+      },
+      "design": "court-decision",
+      "country": [
+        "US"
+      ],
+      "findings": [
+        {
+          "finding": "Holding: Tornado Cash's immutable smart contracts are not the property of a foreign national or entity, so they cannot be blocked under IEEPA and OFAC exceeded its authority; the court reversed and remanded.",
+          "exactSourceLanguage": "Until then, we hold that Tornado Cash’s immutable smart contracts (the lines of privacy-enabling software code) are not the “property” of a foreign national or entity, meaning (1) they cannot be blocked under IEEPA, and (2) OFAC overstepped its congressionally defined authority."
+        },
+        {
+          "finding": "Reasoning: the immutable contracts are not capable of being owned because no one can remove or update them and no one can exclude anyone from using them.",
+          "exactSourceLanguage": "The immutable smart contracts at issue in this appeal are not property because they are not capable of being owned. More than one thousand volunteers participated in a “trusted setup ceremony” to “irrevocably remov[e] the option for anyone to update, remove, or otherwise control those lines of code.” And as a result, no one can “exclude” anyone from using the Tornado Cash pool smart contracts. In fact, because these immutable smart contracts are unchangeable and unremovable, they remain available for anyone to use"
+        },
+        {
+          "finding": "Limit: mutable contracts are different - developers who can disconnect or replace them can own and control them.",
+          "exactSourceLanguage": "Sure, some smart contracts are capable of being owned in the sense that Tornado Cash developers can create new smart contracts and disconnect old mutable contracts. In theory, should Tornado Cash developers choose to comply with sanctions on mutable smart contracts, those developers could disconnect those mutable smart contracts to make them inaccessible and unusable by anyone on the Ethereum blockchain. But they cannot discard, change, disconnect, or control smart contracts that are immutable"
+        }
+      ],
+      "readFrom": "full-text",
+      "observedAt": "2026-10-08",
+      "notFound": [
+        "A holding on 18 U.S.C. 1960, the Bank Secrecy Act or criminal liability; the opinion decides only the IEEPA property question."
+      ]
+    },
+    {
+      "item": {
+        "id": "treasurytornado2025",
+        "type": "webpage",
+        "title": "Tornado Cash Delisting (Treasury press release, March 21, 2025)",
+        "author": [
+          {
+            "literal": "Treasury Delisting"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              3,
+              21
+            ]
+          ]
+        },
+        "URL": "https://home.treasury.gov/news/press-releases/sb0057"
+      },
+      "design": "regulatory-guidance",
+      "country": [
+        "US"
+      ],
+      "findings": [
+        {
+          "finding": "On March 21, 2025 Treasury removed Tornado Cash from the SDN list after reviewing \"novel legal and policy issues raised by use of financial sanctions\" in the context of Van Loon v. Treasury.",
+          "exactSourceLanguage": "novel legal and policy issues raised by use of financial sanctions"
+        }
+      ],
+      "readFrom": "first-party-docs",
+      "observedAt": "2026-10-08",
+      "notFound": [
+        "Full verbatim release text: the page was read through a summarising fetch that returns quotes of at most 125 characters."
+      ]
+    },
+    {
+      "item": {
+        "id": "blanche2025",
+        "type": "report",
+        "title": "Memorandum for All Department Employees: Ending Regulation By Prosecution (Deputy Attorney General, April 7, 2025)",
+        "author": [
+          {
+            "literal": "Blanche Memo"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025
+            ]
+          ]
+        },
+        "URL": "https://www.justice.gov/dag/media/1395781/dl"
+      },
+      "design": "regulatory-guidance",
+      "country": [
+        "US"
+      ],
+      "findings": [
+        {
+          "finding": "DOJ will no longer target exchanges, mixing and tumbling services, and offline wallets for the acts of end users or unwitting regulatory violations.",
+          "exactSourceLanguage": "the Department will no longer target virtual currency exchanges, mixing and tumbling services, and offline wallets for the acts of their end users or unwitting violations of regulations"
+        },
+        {
+          "finding": "Prosecutors should not charge unlicensed money transmitting under 1960(b)(1)(A) and (B), Bank Secrecy Act, unregistered securities, broker-dealer or CEA registration violations unless the defendant knew of the requirement and willfully violated it.",
+          "exactSourceLanguage": "Prosecutors should not charge regulatory violations in cases involving digital assets­ including but not limited to unlicensed money transmitting under 18 U.S.C. § 1960(b)(l)(A) and (B), violations of the Bank Secrecy Act, unregistered securities offering violations, unregistered Memorandum from the Deputy Attorney General Page 3 Subject: Ending Regulation By Prosecution broker-dealer violations, and other violations of registration requirements under the Commodity Exchange Act- unless there is evidence that the defendant knew of the licensing or registration requirement at issue and violated such a requirement willfully."
+        },
+        {
+          "finding": "Footnote 2: the policy is outside 1960(b)(1)(C) and does not reflect a view that 1960 requires willfulness in other contexts.",
+          "exactSourceLanguage": "This guidance does not reflect a view by the Department that the criminal offense set forth in 18 U.S.C. § 1960 requires proof of willfulness in other contexts, and it casts no doubt on existing case law. Moreover, 18 U.S.C. § 1960(b)(l)(C) requires that the transmission of funds \"are known to the defendant to have been derived from a criminal offense or are intended to be used to promote or support unlawful activity,\" and is therefore outside the scope of this policy."
+        },
+        {
+          "finding": "Footnote 1: the memo creates no enforceable rights.",
+          "exactSourceLanguage": "This guidance is not intended to, does not, and may not be relied upon to create any right or benefit, substantive or procedural, enforceable at law or in equity by any party against the United States, its departments, agencies, or entities, its officers, employees, or agents, or any other person."
+        }
+      ],
+      "readFrom": "legal-text",
+      "observedAt": "2026-10-08"
+    },
+    {
+      "item": {
+        "id": "ofacguidance2021",
+        "type": "report",
+        "title": "Sanctions Compliance Guidance for the Virtual Currency Industry (OFAC, October 2021)",
+        "author": [
+          {
+            "literal": "OFAC Guidance 2021"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2021
+            ]
+          ]
+        },
+        "URL": "https://ofac.treasury.gov/media/913571/download"
+      },
+      "design": "regulatory-guidance",
+      "country": [
+        "US"
+      ],
+      "findings": [
+        {
+          "finding": "OFAC civil penalties are generally strict liability; a U.S. person can be liable without knowing it was engaging in a violation, with a risk-based compliance program a mitigating factor.",
+          "exactSourceLanguage": "OFAC may impose civil penalties for sanctions violations generally based on a strict liability legal standard. This means that, in many cases, a U.S. person may be held civilly liable for sanctions violations even without having knowledge or reason to know it was engaging in such a violation. As a general matter, however, OFAC takes into consideration the totality of facts and circumstances surrounding an apparent violation to determine the appropriate enforcement response. For example, OFAC may consider as mitigating factors a virtual currency company’s implementation of a risk-based OFAC compliance program and remedial measures taken in response to an apparent violation."
+        }
+      ],
+      "readFrom": "full-text",
+      "observedAt": "2026-10-08",
+      "notFound": [
+        "Any statement in the guidance about immutable smart contracts or non-custodial protocols; the terms \"smart contract\" and \"DeFi\" do not appear in it."
+      ]
+    },
+    {
+      "item": {
+        "id": "secstaking2026",
+        "type": "legislation",
+        "title": "Application of the Federal Securities Laws to Certain Types of Crypto Assets and Certain Transactions Involving Crypto Assets, 91 FR 13714",
+        "author": [
+          {
+            "literal": "SEC CFTC Interpretation"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "URL": "https://www.federalregister.gov/documents/2026/03/23/2026-05635/application-of-the-federal-securities-laws-to-certain-types-of-crypto-assets-and-certain"
+      },
+      "design": "regulatory-guidance",
+      "country": [
+        "US"
+      ],
+      "findings": [
+        {
+          "finding": "Interpretation: Protocol Staking Activities (self staking, self-custodial staking with a third party, custodial staking, liquid staking), in the manner described, are not offers or sales of securities.",
+          "exactSourceLanguage": "Protocol Staking Activities, in the manner and under the circumstances described in this release, do not involve the offer and sale of a security within the meaning of section 2(a)(1) of the Securities Act or section 3(a)(10) of the Exchange Act. Accordingly, participants in Protocol Staking Activities do not need to register transactions with the Commission under the Securities Act or fall within an exemption from registration in connection with these Protocol Staking Activities."
+        },
+        {
+          "finding": "Interpretation: a staking receipt token that is a receipt for a non-security crypto asset not subject to an investment contract is not a security.",
+          "exactSourceLanguage": "The offer and sale of a Staking Receipt Token that is a receipt for a non-security crypto asset that is not subject to an investment contract, in the manner and under the circumstances described in this release, does not involve the offer and sale of a security within the meaning of section 2(a)(1) of the Securities Act or section 3(a)(10) of the Exchange Act."
+        },
+        {
+          "finding": "Footnote 131: where a liquid staking provider supplies the means to use a receipt token to generate further returns, that activity is outside the release.",
+          "exactSourceLanguage": "A holder of such a Staking Receipt Token may be able to use the Staking Receipt Token to generate additional returns. Where a Liquid Staking Provider provides the means by which such a Staking Receipt Token can be used to generate such returns, those activities are outside the scope of this release."
+        },
+        {
+          "finding": "A digital tool (membership, ticket, credential) does not carry rights such as passive yield or rights to future income, and is not a security.",
+          "exactSourceLanguage": "A digital tool does not have intrinsic economic properties or rights, such as generating a passive yield or conveying rights to future income, profits, or assets of a business enterprise or other entity, promisor, or obligor."
+        }
+      ],
+      "readFrom": "legal-text",
+      "observedAt": "2026-10-08",
+      "notFound": [
+        "Lending, vault deposits and automated yield strategies: \"lending\" does not appear in the release."
+      ]
+    }
+  ],
+  "searches": [
+    {
+      "register": "web",
+      "variables": {
+        "query": "Roman Storm Tornado Cash verdict sentencing retrial 2026"
+      },
+      "observedAt": "2026-10-08",
+      "count": 0,
+      "included": [],
+      "reading": "DOJ SDNY press release \"Founder Of Tornado Cash Crypto Mixing Service Convicted Of Knowingly Transmitting Criminal Proceeds\" (dated 2025-08-06 on the justice.gov listing) returned an empty page to the fetch tools used; the verdict (one count of conspiracy to operate an unlicensed money transmitting business, 5-year maximum; jury hung on money laundering and sanctions conspiracies) and the retrial adjournment to April 26, 2027 pending a Rule 29 motion are reported only by news coverage of August 2026 and the SDNY press release snippet, and were not read from the docket. No sentencing and no Second Circuit decision located."
+    },
+    {
+      "register": "web",
+      "variables": {
+        "query": "Galeotti 1960(b)(1)(C) decentralized non-custodial software August 21 2025 speech justice.gov"
+      },
+      "observedAt": "2026-10-08",
+      "count": 0,
+      "included": [],
+      "reading": "The Criminal Division statement of August 21, 2025 that DOJ will not bring new 1960(b)(1)(C) charges against truly decentralized, non-custodial software absent criminal intent was reported by news outlets; the justice.gov text was not located, so it is not a row. The Blanche memo footnote 2 is the first-party text on 1960(b)(1)(C)."
+    },
+    {
+      "register": "web",
+      "variables": {
+        "query": "FinCEN guidance non-custodial software money transmitter exemption 2025 2026",
+        "read": "federalregister.gov documents.json term \"convertible virtual currency\" FinCEN since 2025-01-01"
+      },
+      "observedAt": "2026-10-08",
+      "count": 13,
+      "included": [
+        "fincenwithdrawal2026"
+      ],
+      "reading": "FinCEN actions since 2025 in the Federal Register: 2026-10-06 withdrawal of the unhosted-wallet NPRM (read), 2026-10-06 proposed special measure on CVC mixing (91 FR 63513, not read), 2026-10-05 special measure proposal (91 FR 63208, not read), 2026-04-10 AML/CFT program NPRM for banks and MSBs (91 FR 18704, not read). No new FinCEN interpretive guidance replacing FIN-2019-G001 was found; FIN-2019-G001 is the operative text on wallets, multisig and DApps."
+    },
+    {
+      "register": "web",
+      "variables": {
+        "query": "Coinbase v. SEC dismissal February 2025; Risley v. Uniswap Second Circuit 2025"
+      },
+      "observedAt": "2026-10-08",
+      "count": 0,
+      "included": [],
+      "reading": "Looked for the Coinbase rulemaking-petition litigation and the Uniswap protocol litigation texts; the opinions and the SEC dismissal filing were not retrieved from court dockets in this session, so neither is a row."
+    }
+  ]
+}

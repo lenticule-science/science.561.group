@@ -1,0 +1,19 @@
+{
+  "$schema": "../../../../../../../../data/records/schema/literature-measurement.schema.json",
+  "id": "commons-governance-and-plural-funding",
+  "kind": "literature-measurement",
+  "question": "What do tests of Ostrom's design principles and the empirical quadratic/plural funding studies establish?",
+  "frame": {
+    "population": "commons institutions; public-goods funding rounds",
+    "exposure": "Ostrom principles; quadratic funding; cluster matching",
+    "comparator": "unmatched donations; one-person-one-vote",
+    "outcomes": [
+      "principle-robustness",
+      "funding distribution",
+      "collusion and sybil resistance"
+    ]
+  },
+  "notes": [],
+  "sources": [],
+  "searches": []
+}

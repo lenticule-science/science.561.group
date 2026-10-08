@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../../../../../data/records/schema/literature-measurement.schema.json",
+  "id": "mutual-credit-and-clearing",
+  "kind": "literature-measurement",
+  "question": "What do WIR, Sardex, LETS and liquidity-saving obligation clearing studies establish about mutual credit and multilateral clearing?",
+  "frame": {
+    "population": "mutual-credit networks and SMEs",
+    "exposure": "mutual credit; multilateral netting of obligations",
+    "comparator": "bank credit; gross settlement",
+    "outcomes": [
+      "volume",
+      "membership",
+      "liquidity saved",
+      "counter-cyclicality"
+    ]
+  },
+  "notes": [],
+  "sources": [],
+  "searches": []
+}

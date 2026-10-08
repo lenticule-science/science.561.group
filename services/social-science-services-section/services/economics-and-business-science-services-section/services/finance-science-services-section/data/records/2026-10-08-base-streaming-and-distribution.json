@@ -1,0 +1,220 @@
+{
+  "$schema": "../../../../../../../../data/records/schema/literature-measurement.schema.json",
+  "id": "base-streaming-and-distribution",
+  "kind": "literature-measurement",
+  "question": "Which Base primitives stream value over time or distribute it pro rata among many recipients, and at what verified address, size and audit status, as of 2026-10-08?",
+  "frame": {
+    "population": "EVM contracts on Base and Gnosis",
+    "exposure": "USDC or Super USDC streamed, vested or distributed",
+    "comparator": "Superfluid CFA/GDA against Sablier Lockup/Flow",
+    "outcomes": [
+      "address and verification",
+      "TVL",
+      "admin model",
+      "audit link"
+    ]
+  },
+  "notes": [
+    "../../content/text/documents/articles/notes/2026/10/08/2026-10-08-base-streaming-and-distribution.md"
+  ],
+  "sources": [
+    {
+      "item": {
+        "id": "superfluidcontracts2026",
+        "type": "software",
+        "title": "Superfluid host, CFA, GDA and Super USDC on Base and Gnosis",
+        "author": [
+          {
+            "literal": "Superfluid Contracts"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              8
+            ]
+          ]
+        },
+        "URL": "https://github.com/superfluid-org/protocol-monorepo/blob/dev/packages/metadata/networks.json"
+      },
+      "design": "on-chain-measurement",
+      "findings": [
+        {
+          "finding": "Base (8453) addresses from the metadata networks.json, each confirmed with cast code: host 0x4C073B3baB6d8826b8C5b229f3cfdC1eC6E47E74, cfaV1 0x19ba78B9cDB05A877718841c574325fdB53601bb, gdaV1 0xfE6c87BE05feDB2059d2EC41bA0A09826C9FD7aa, idaV1 0x66DF3f8e14CF870361378d8F61356D15d9F425C4, superTokenFactory 0xe20B9a38E0c96F61d1bA6b42a61512D56Fea1Eb3, governance 0x55F7758dd99d5e185f4CC08d4Ad95B71f598264D, resolver 0x6a214c324553F96F04eFBDd66908685525Da0E0d, cfaV1Forwarder 0xcfA132E353cB4E398080B9700609bb008eceB125, gdaV1Forwarder 0x6DA13Bde224A05a288748d857b9e7DDEffd1dE08, vestingSchedulerV3 0x6Bf35A170056eDf9aEba159dce4a640cfCef9312, flowScheduler 0xC72CEd15204d02183c83fEbb918b183E400811Ee."
+        },
+        {
+          "finding": "host.getAgreementClass(keccak256(\"org.superfluid-finance.agreements.ConstantFlowAgreement.v1\")) returned 0x19ba78B9... and the GeneralDistributionAgreement.v1 hash returned 0xfE6c87BE...; host.getSuperTokenFactory() returned 0xe20B9a38...; host.getGovernance() returned 0x55F7758d....",
+          "exactSourceLanguage": "getAgreementClass(...) -> 0x19ba78B9cDB05A877718841c574325fdB53601bb"
+        },
+        {
+          "finding": "Admin model: host, CFA and GDA are UUPSProxy contracts (Sourcify match, EIP-1967) with implementations host 0x2Dc25E221D493526Bf6A6FcE3076bA2C72b47678, CFA 0xc8bDd45A2b6A88303243F92b696E9BD6A9E93aA0, GDA 0x7db964af7F1c5D5c27023B80a40C19454053Ff70. The governance contract owner was not read."
+        },
+        {
+          "finding": "Super USDC (USDCx) on Base 0xD04383398dD2426297da660F9CCA3d439AF9ce1b, from resolver key supertokens.v1.USDCx: name \"Super USDC\", symbol \"USDCx\", decimals 18, getUnderlyingToken() = USDC 0x833589fC...2913, totalSupply() = 216,478.531315 USDCx, UUPSProxy with implementation 0x3e834Ac987635976BEb4Ab944CF683Db5c0E3E80.",
+          "exactSourceLanguage": "getUnderlyingToken() -> 0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913"
+        },
+        {
+          "finding": "DeFiLlama superfluid totalLiquidityUSD on Base = 1,251,689 on 2026-10-08 (unix 1791469523). Gnosis addresses from the same metadata: host 0x2dFe937cD98Ab92e59cF3139138f18c823a4efE7, cfaV1 0xEbdA4ceF883A7B12c4E669Ebc58927FBa8447C7D, gdaV1 0xd7992D358A20478c82dDEd98B3D8A9da46e99b82, superTokenFactory 0x23410e2659380784498509698ed70E414D384880; the DeFiLlama token list includes BREAD 550.44 and SDAI 9505.63 across Superfluid chains."
+        },
+        {
+          "finding": "Audit directory https://github.com/superfluid-org/protocol-monorepo/tree/dev/packages/ethereum-contracts/audits lists PeckShield 2021-01, Halborn 2022-02, Trail of Bits 2023-12 (comprehensive report with fix review), \"2026-01-27 Final Superfluid Collaborative Audit Report\" and \"2026-05-25 Final Superfluid Public Best Efforts Audit Contest Report\"; the scheduler contracts have a separate Superfluid-Scheduler-Report.pdf."
+        }
+      ],
+      "readFrom": "on-chain-read",
+      "observedAt": "2026-10-08",
+      "notFound": [
+        "SUP token address and distribution contracts were not read.",
+        "Governance owner address was not read."
+      ]
+    },
+    {
+      "item": {
+        "id": "sabliercontracts2026",
+        "type": "software",
+        "title": "Sablier Lockup v4.0 and Flow v3.0 on Base",
+        "author": [
+          {
+            "literal": "Sablier Contracts"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              8
+            ]
+          ]
+        },
+        "URL": "https://docs.sablier.com/guides/lockup/deployments"
+      },
+      "design": "on-chain-measurement",
+      "findings": [
+        {
+          "finding": "SablierLockup on Base 0xc19a09A66887017F603E5dF420ed3Cb9a5c07C0A (docs deployment lockup-v4.0; Sourcify match, SablierLockup, not a proxy), ERC-721 name \"Sablier Lockup NFT\"; nextStreamId() = 1227. SablierBatchLockup 0xE001bae5Ef0d86362Ca258bff994a97CAE1245F5 (docs).",
+          "exactSourceLanguage": "nextStreamId() -> 1227"
+        },
+        {
+          "finding": "SablierFlow on Base 0x0cbfe6ce6f05c47d6243bb3818837971c6ccb46b (docs deployment flow-v3.0; Sourcify exact_match, SablierFlow), ERC-721 name \"Sablier Flow NFT\"; nextStreamId() = 5; FlowNFTDescriptor 0x5b5e742305Be3A484EacCB124C83456463c24E6a.",
+          "exactSourceLanguage": "nextStreamId() -> 5"
+        },
+        {
+          "finding": "DeFiLlama Base TVL: sablier-lockup $5,522; sablier-flow $39,857 (total across chains: lockup $2,297,118, flow $727,934)."
+        }
+      ],
+      "readFrom": "first-party-docs",
+      "observedAt": "2026-10-08",
+      "notFound": [
+        "Audit report files in the lockup and flow repositories (shallow clones listed no audit directory).",
+        "admin() on both contracts reverted, so the admin model was not read."
+      ]
+    },
+    {
+      "item": {
+        "id": "allocontracts2026",
+        "type": "software",
+        "title": "Allo v2 on Base",
+        "author": [
+          {
+            "literal": "Allo Contracts"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              8
+            ]
+          ]
+        },
+        "URL": "https://github.com/allo-protocol/allo-v2"
+      },
+      "design": "on-chain-measurement",
+      "findings": [
+        {
+          "finding": "Allo 0x1133eA7Af70876e64665ecD07C0A0476d09465a1 has 4,457 hex chars of code (a proxy; no Sourcify match). getRegistry() returned 0x4AAcca72145e1dF2aeC137E1f3C5E3D75DB8b5f3, owner() returned 0x8C180840fcBb90CE8464B4eCd12ab0f840c6647C. getFeePercentage() reverted.",
+          "exactSourceLanguage": "getRegistry() -> 0x4AAcca72145e1dF2aeC137E1f3C5E3D75DB8b5f3"
+        }
+      ],
+      "readFrom": "on-chain-read",
+      "observedAt": "2026-10-08",
+      "notFound": [
+        "Address provenance from the Allo documentation was not read; the address was tested from memory against code on Base.",
+        "Audit link: github.com/gitcoinco/allo-v2 returned not found on clone."
+      ]
+    },
+    {
+      "item": {
+        "id": "yearntokenized2026",
+        "type": "software",
+        "title": "Yearn v3 TokenizedStrategy on Base",
+        "author": [
+          {
+            "literal": "Yearn Tokenized Strategy"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              8
+            ]
+          ]
+        },
+        "URL": "https://github.com/yearn/tokenized-strategy"
+      },
+      "design": "on-chain-measurement",
+      "findings": [
+        {
+          "finding": "TokenizedStrategy 0xD377919FA87120584B21279a491F82D5265A139c on Base: Sourcify exact_match, contract TokenizedStrategy, not a proxy, 32,293 hex chars of code. Strategies delegate to this one address for ERC-4626 accounting. DeFiLlama yearn-finance Base TVL $1,694,894; yearn-curating Base $3,251,268."
+        },
+        {
+          "finding": "Audit directory https://github.com/yearn/tokenized-strategy/tree/main/audits lists yAcademy (06-2023), Statemind and ChainSecurity reports."
+        }
+      ],
+      "readFrom": "on-chain-read",
+      "observedAt": "2026-10-08",
+      "notFound": [
+        "Octant v2 vault and strategy addresses on Base were not read."
+      ]
+    }
+  ],
+  "searches": [
+    {
+      "register": "other",
+      "variables": {
+        "q": "Octant v2 TokenizedStrategy vault Base address"
+      },
+      "observedAt": "2026-10-08",
+      "count": 0,
+      "included": [],
+      "reading": "Octant v2 addresses were not read in this pass; no row exists."
+    },
+    {
+      "register": "other",
+      "variables": {
+        "q": "Sablier audit reports lockup flow repository"
+      },
+      "observedAt": "2026-10-08",
+      "count": 0,
+      "included": [],
+      "reading": "The shallow clones of sablier-labs/lockup and sablier-labs/flow listed no audit pdf directory."
+    },
+    {
+      "register": "other",
+      "variables": {
+        "q": "Superfluid networks.json base-mainnet xdai-mainnet"
+      },
+      "observedAt": "2026-10-08",
+      "count": 2,
+      "included": [
+        "superfluidcontracts2026"
+      ],
+      "reading": "Both chains read."
+    }
+  ]
+}

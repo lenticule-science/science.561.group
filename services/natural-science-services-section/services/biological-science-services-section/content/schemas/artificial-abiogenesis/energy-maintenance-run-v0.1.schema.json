@@ -1,0 +1,270 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "lenticule/artificial-abiogenesis/energy-maintenance-run/v0.1",
+  "title": "R5 Energy-Coupled Maintenance Run v0.1",
+  "type": "object",
+  "required": [
+    "run_id",
+    "specimen_id",
+    "protocol",
+    "source",
+    "schedule",
+    "function_metric",
+    "raw_data",
+    "controls",
+    "provenance"
+  ],
+  "properties": {
+    "run_id": {
+      "type": "string"
+    },
+    "specimen_id": {
+      "type": "string"
+    },
+    "protocol": {
+      "const": "R5-energy-coupled-maintenance-v0.1"
+    },
+    "source": {
+      "type": "object",
+      "required": [
+        "class",
+        "measurement_refs"
+      ],
+      "properties": {
+        "class": {
+          "enum": [
+            "electrical",
+            "optical",
+            "hydraulic",
+            "chemical",
+            "thermal",
+            "mixed"
+          ]
+        },
+        "measurement_refs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "incident_energy_j": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "material_inflow_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "material_outflow_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "schedule": {
+      "type": "array",
+      "minItems": 3,
+      "items": {
+        "type": "object",
+        "required": [
+          "phase",
+          "start_s",
+          "end_s"
+        ],
+        "properties": {
+          "phase": {
+            "enum": [
+              "on",
+              "off",
+              "restart",
+              "control"
+            ]
+          },
+          "start_s": {
+            "type": "number",
+            "minimum": 0
+          },
+          "end_s": {
+            "type": "number",
+            "minimum": 0
+          }
+        }
+      }
+    },
+    "function_metric": {
+      "type": "object",
+      "required": [
+        "metric",
+        "higher_is_better",
+        "unit"
+      ],
+      "properties": {
+        "metric": {
+          "type": "string"
+        },
+        "higher_is_better": {
+          "type": "boolean"
+        },
+        "unit": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "raw_data": {
+      "type": "object",
+      "required": [
+        "q_timeseries_ref",
+        "source_timeseries_ref"
+      ],
+      "properties": {
+        "q_timeseries_ref": {
+          "type": "string"
+        },
+        "source_timeseries_ref": {
+          "type": "string"
+        },
+        "environment_timeseries_refs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "morphology_refs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "controls": {
+      "type": "object",
+      "properties": {
+        "passive_off_specimen_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "source_only_refs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "bolus_precharge_refs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "matched_temperature_refs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "required": [
+        "started_at",
+        "operator",
+        "protocol_revision"
+      ],
+      "properties": {
+        "started_at": {
+          "type": "string"
+        },
+        "operator": {
+          "type": "string"
+        },
+        "protocol_revision": {
+          "type": "string"
+        },
+        "analysis_revision": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "safety_review_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    },
+    "derived": {
+      "type": "object",
+      "properties": {
+        "off_loss": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "restart_recovery": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "maintenance_delta": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "on_pre_slope": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "off_slope": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "on_post_slope": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "cycle_count": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "r5_reading": {
+          "enum": [
+            "unknown",
+            "held",
+            "denied",
+            "contested"
+          ]
+        }
+      }
+    }
+  }
+}

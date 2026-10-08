@@ -832,7 +832,7 @@ overlaps, and the charts do not stop at the skin.
   what it observes.
 
 The geometry is the same one the house already uses for institutions in
-[the distal bypass](../../../../../../../../../../../../../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/agent-computer-system-engineering-services-section/services/multi-agent-computer-system-engineering-services-section/services/multi-agent-computer-platform-engineering-services-section/content/text/documents/articles/notes/2026/07/16/2026-07-16-the-distal-bypass.md):
+[the distal bypass](../../../../../../../../../../../../../../../561-group-services-section/content/text/documents/articles/notes/2026/07/16/2026-07-16-the-distal-bypass.md):
 local records with overlaps, an obstruction sheet derived by re-running
 checks over the overlaps, and a classification of each disagreement as
 damage or border. Applied to a person embedded in relations rather than to
@@ -1353,7 +1353,7 @@ repeated. The paradigm-level ones:
 - **The distal bypass** — local records with overlaps, an obstruction sheet
   derived from the overlaps, and damage classified apart from border, which
   is the whole geometry this paradigm applies to a body
-  ([note](../../../../../../../../../../../../../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/agent-computer-system-engineering-services-section/services/multi-agent-computer-system-engineering-services-section/services/multi-agent-computer-platform-engineering-services-section/content/text/documents/articles/notes/2026/07/16/2026-07-16-the-distal-bypass.md)).
+  ([note](../../../../../../../../../../../../../../../561-group-services-section/content/text/documents/articles/notes/2026/07/16/2026-07-16-the-distal-bypass.md)).
 - **Relationality** — the domain induced by relation and relationlessness,
   from which the commitment that the unit is the relation and not the part
   is derived rather than assumed ([term](../../../../../../../../../../../../../../services/philosophy-services-section/content/text/glossary/terms/relationality.md)).

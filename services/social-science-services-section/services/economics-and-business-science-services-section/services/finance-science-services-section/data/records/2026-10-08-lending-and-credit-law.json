@@ -1,0 +1,301 @@
+{
+  "$schema": "../../../../../../../../data/records/schema/literature-measurement.schema.json",
+  "id": "lending-and-credit-law",
+  "kind": "literature-measurement",
+  "question": "What do Regulation Z, the Colorado Uniform Consumer Credit Code, the Colorado and Wyoming money transmitter statutes and the CDFI certification rule establish about whether a member credit line or mutual-credit clearing inside a cooperative pool needs a lending or money-transmission license, as of 2026-10-08?",
+  "frame": {
+    "population": "a cooperative offering interest-free or low-rate member credit lines and mutual-credit clearing",
+    "exposure": "12 CFR 1026.2 and 1026.3; C.R.S. 5-1-301, 5-2-301, 11-110; W.S. 40-22; 12 CFR 1805.201",
+    "comparator": "a licensed consumer lender and a licensed money transmitter",
+    "outcomes": [
+      "Regulation Z coverage",
+      "state lending license triggers",
+      "state money transmission license triggers and virtual-currency exemption",
+      "CDFI route"
+    ]
+  },
+  "notes": [
+    "../../content/text/documents/articles/notes/2026/10/08/2026-10-08-lending-and-credit-law.md"
+  ],
+  "sources": [
+    {
+      "item": {
+        "id": "regz10263",
+        "type": "legislation",
+        "title": "12 CFR 1026.3, Regulation Z exempt transactions",
+        "author": [
+          {
+            "literal": "12 CFR 1026.3"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "URL": "https://www.law.cornell.edu/cfr/text/12/1026.3"
+      },
+      "design": "statute",
+      "country": [
+        "US"
+      ],
+      "findings": [
+        {
+          "finding": "Regulation Z does not apply to an extension of credit primarily for a business, commercial or agricultural purpose, or to an extension of credit to other than a natural person.",
+          "exactSourceLanguage": "(a) Business, commercial, agricultural, or organizational credit. (1) An extension of credit primarily for a business, commercial or agricultural purpose. (2) An extension of credit to other than a natural person, including credit to government agencies or instrumentalities."
+        }
+      ],
+      "readFrom": "legal-text",
+      "observedAt": "2026-10-08"
+    },
+    {
+      "item": {
+        "id": "regz10262",
+        "type": "legislation",
+        "title": "12 CFR 1026.2(a)(17), Regulation Z definition of creditor",
+        "author": [
+          {
+            "literal": "12 CFR 1026.2"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "URL": "https://www.law.cornell.edu/cfr/text/12/1026.2"
+      },
+      "design": "statute",
+      "country": [
+        "US"
+      ],
+      "findings": [
+        {
+          "finding": "A creditor regularly extends consumer credit that is subject to a finance charge or payable by written agreement in more than four installments, and to whom the obligation is initially payable.",
+          "exactSourceLanguage": "(17) Creditor means: (i) A person who regularly extends consumer credit that is subject to a finance charge or is payable by written agreement in more than four installments (not including a down payment), and to whom the obligation is initially payable, either on the face of the note or contract, or by agreement when there is no note or contract."
+        },
+        {
+          "finding": "A person regularly extends consumer credit only if it extended credit more than 25 times (more than 5 times for dwelling-secured transactions) in the preceding calendar year.",
+          "exactSourceLanguage": "(v) A person regularly extends consumer credit only if it extended credit (other than credit subject to the requirements of § 1026.32) more than 25 times (or more than 5 times for transactions secured by a dwelling) in the preceding calendar year."
+        }
+      ],
+      "readFrom": "legal-text",
+      "observedAt": "2026-10-08"
+    },
+    {
+      "item": {
+        "id": "coloradouccc2024",
+        "type": "legislation",
+        "title": "C.R.S. 5-1-301 (definitions) and 5-2-301 (authority to make supervised loans), Colorado Uniform Consumer Credit Code",
+        "author": [
+          {
+            "literal": "Colorado UCCC"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024
+            ]
+          ]
+        },
+        "URL": "https://colorado.public.law/statutes/crs_5-2-301"
+      },
+      "design": "statute",
+      "country": [
+        "US"
+      ],
+      "findings": [
+        {
+          "finding": "A supervised loan is a consumer loan, including a revolving credit account, whose finance charge rate exceeds twelve percent per year.",
+          "exactSourceLanguage": "“Supervised loan” means a consumer loan, including a loan made pursuant to a revolving credit account, in which the rate of the finance charge exceeds twelve percent per year as determined according to the provisions on finance charges contained in section 5-2-201."
+        },
+        {
+          "finding": "Unless a supervised financial organization or licensed, a person shall not engage in the business of making supervised loans.",
+          "exactSourceLanguage": "Unless a person is a supervised financial organization or has first obtained a license from the administrator authorizing the person to make supervised loans, the person shall not engage in the business of: (a) Making supervised loans or undertaking direct collection of payments from or enforcement of rights against consumers arising from supervised loans he or she has previously made;"
+        }
+      ],
+      "readFrom": "legal-text",
+      "observedAt": "2026-10-08",
+      "notFound": [
+        "The page is the colorado.public.law reader of the C.R.S. 2024 PDF; leg.colorado.gov was not read directly, and Colorado enactments after the 2024 compilation were not checked.",
+        "Whether a zero-rate member credit line counts as a \"consumer loan\" under 5-1-301; the consumer-loan definition was not read."
+      ]
+    },
+    {
+      "item": {
+        "id": "coloradomtl2024",
+        "type": "legislation",
+        "title": "C.R.S. 11-110-103, 105 and 106, Colorado money transmitters",
+        "author": [
+          {
+            "literal": "Colorado Money Transmitters"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024
+            ]
+          ]
+        },
+        "URL": "https://colorado.public.law/statutes/crs_11-110-103"
+      },
+      "design": "statute",
+      "country": [
+        "US"
+      ],
+      "findings": [
+        {
+          "finding": "Colorado defines money transmission as the sale or issuance of exchange or engaging in the business of receiving money for transmission or transmitting money within the United States or abroad by any means including electronic transfer.",
+          "exactSourceLanguage": "“Money transmission” means the sale or issuance of exchange or engaging in the business of receiving money for transmission or transmitting money within the United States or to locations abroad by any and all means including but not limited to payment instrument, wire, facsimile, or electronic transfer."
+        },
+        {
+          "finding": "\"Exchange\" means any check, draft, money order or other instrument for the transmission or payment of money or credit, and does not mean money or currency of any nation.",
+          "exactSourceLanguage": "“Exchange” means any check, draft, money order, or other instrument for the transmission or payment of money or credit. It does not mean money or currency of any nation."
+        },
+        {
+          "finding": "A person shall not engage in the business of money transmission without a license from the banking board.",
+          "exactSourceLanguage": "A person shall not engage in the business of money transmission without first procuring a license from the board"
+        },
+        {
+          "finding": "Exemptions cover government, entities organized under bank, savings and loan or credit union laws, and telegraph companies; no exemption for cooperatives or for virtual currency appears.",
+          "exactSourceLanguage": "Nothing in this article 110 shall apply to: Departments or agencies of the United States of America, or to any state or municipal government, or to corporations organized under the general banking, savings and loan, or credit union laws of this state or of the United States, or to the receipt of money by an incorporated telegraph or cable company at any office or agency thereof for immediate transmission by telegraph or cable."
+        }
+      ],
+      "readFrom": "legal-text",
+      "observedAt": "2026-10-08",
+      "notFound": [
+        "The page is the colorado.public.law reader of the C.R.S. 2024 PDF; leg.colorado.gov was not read directly, and Colorado enactments after the 2024 compilation were not checked.",
+        "Any Colorado statute or rule read that addresses virtual currency or digital tokens in the money transmitters article."
+      ]
+    },
+    {
+      "item": {
+        "id": "wyomingmta2026",
+        "type": "legislation",
+        "title": "Wyoming Money Transmitters Act, W.S. 40-22-101 et seq.",
+        "author": [
+          {
+            "literal": "Wyoming Money Transmitters Act"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "URL": "https://wyoleg.gov/statutes/compress/title40.pdf"
+      },
+      "design": "statute",
+      "country": [
+        "US"
+      ],
+      "findings": [
+        {
+          "finding": "Monetary value means a medium of exchange whether or not redeemable in money; money transmission means selling or issuing payment instruments or receiving money or monetary value for transmission by any means.",
+          "exactSourceLanguage": "(xii) \"Monetary value\" means a medium of exchange whether or not redeemable in money; (xiii) \"Money transmission\" means to engage in business to sell or issue payment instruments or receive money or monetary value for transmission to a location within or outside the United States by any and all means, including but not limited to wire, facsimile or electronic transfer;"
+        },
+        {
+          "finding": "A person is engaged in the business of money transmission if it advertises, offers or provides services to Wyoming residents for personal, family or household use through any medium including the internet.",
+          "exactSourceLanguage": "(b) A person is engaged in the business of money transmission if the person advertises, offers or provides services to Wyoming residents, for personal, family or household use, through any medium including, but not limited to, internet or other electronic means."
+        },
+        {
+          "finding": "The Act does not apply to buying, selling, issuing or taking custody of payment instruments in the form of virtual currency or receiving virtual currency for transmission by any means.",
+          "exactSourceLanguage": "(vi) Buying, selling, issuing, or taking custody of payment instruments in the form of virtual currency or receiving virtual currency for transmission to a location within or outside the United States by any means;"
+        },
+        {
+          "finding": "The Act does not apply to a person that does not meet the definition of a money services business under 31 CFR 1010.100(ff) as of January 1, 2020.",
+          "exactSourceLanguage": "(viii) A person engaged in the business of money transmission under this act that does not meet the definition of a money services business under 31 C.F.R. 1010.100(ff), as amended as of January 1, 2020."
+        }
+      ],
+      "readFrom": "legal-text",
+      "observedAt": "2026-10-08",
+      "notFound": [
+        "Whether a mutual-credit unit that is not virtual currency (not exchanged on a blockchain as a medium of exchange not recognized as legal tender) is \"monetary value\"; the statute defines both terms and does not address mutual credit."
+      ]
+    },
+    {
+      "item": {
+        "id": "cdfi12cfr1805201",
+        "type": "legislation",
+        "title": "12 CFR 1805.201, CDFI Program certification eligibility",
+        "author": [
+          {
+            "literal": "12 CFR 1805.201"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "URL": "https://www.law.cornell.edu/cfr/text/12/1805.201"
+      },
+      "design": "statute",
+      "country": [
+        "US"
+      ],
+      "findings": [
+        {
+          "finding": "A CDFI must have a primary mission of promoting community development, shown by activities directed to improving conditions of underserved people or residents of distressed communities.",
+          "exactSourceLanguage": "(1) Primary mission. A CDFI must have a primary mission of promoting community development. In determining whether an entity has such a primary mission, the CDFI Fund will consider whether the activities of the entity are purposefully directed toward improving the social and/or economic conditions of underserved people (which may include Low-Income persons or persons who lack adequate access to capital and/or Financial Services) and/or residents of economically distressed communities (which may include Investment Areas)."
+        },
+        {
+          "finding": "A CDFI must be a financing entity whose predominant business activity is providing, in arms-length transactions, financial products or services; a depository institution holding company, insured depository institution, insured credit union or state-insured credit union is deemed to meet it, and other organizations are assessed on financials and organizing documents.",
+          "exactSourceLanguage": "(2) Financing entity. (i) A CDFI shall be an entity whose predominant business activity is the provision, in arms-length transactions, of Financial Products and/or Financial Services. An entity may demonstrate that it meets this requirement if it is a(n): (A) Depository Institution Holding Company; (B) Insured Depository Institution, Insured Credit Union, or State-Insured Credit Union; or (C) Organization that is deemed by the CDFI Fund to have such a predominant business activity as a result of analysis of its financial statements, organizing documents, and any other information required to be submitted as part of its certification application."
+        },
+        {
+          "finding": "A CDFI must serve a target market of investment areas or targeted populations.",
+          "exactSourceLanguage": "(3) Target Market—(i) General. A CDFI must serve a Target Market by virtue of serving one or more Investment Areas and/or Targeted Populations."
+        }
+      ],
+      "readFrom": "legal-text",
+      "observedAt": "2026-10-08",
+      "notFound": [
+        "Eligibility items (4) to (6) (development services, accountability, non-government status) were not read."
+      ]
+    }
+  ],
+  "searches": [
+    {
+      "register": "web",
+      "variables": {
+        "query": "California Digital Financial Assets Law DFAL license July 1 2026 exemptions section 3103",
+        "site": "dfpi.ca.gov; leginfo.legislature.ca.gov"
+      },
+      "observedAt": "2026-10-08",
+      "count": 0,
+      "included": [],
+      "reading": "The DFPI FAQ page and the Financial Code text returned HTTP 403 to the fetch tools used. DFPI search-result summaries state that from July 1, 2026 a person may not engage in digital financial asset business activity with California residents without a license or a pending application, that the application portal opened March 9, 2026, and that Section 3103 exempts, among others, persons providing certain connectivity software or computing power to decentralized networks and persons expecting under $50,000 annual revenue from covered activity. The statutory text was not read, so California is not a row."
+    },
+    {
+      "register": "web",
+      "variables": {
+        "query": "New York BitLicense 23 NYCRR 200 virtual currency business activity non-custodial"
+      },
+      "observedAt": "2026-10-08",
+      "count": 0,
+      "included": [],
+      "reading": "No New York source was searched or read; New York is not covered."
+    },
+    {
+      "register": "web",
+      "variables": {
+        "query": "CFPB ECOA Regulation B business credit; NCUA federal credit union charter common bond digital"
+      },
+      "observedAt": "2026-10-08",
+      "count": 0,
+      "included": [],
+      "reading": "Regulation B (12 CFR 1002), the Equal Credit Opportunity Act text, CFPB 2025-2026 actions, and NCUA charter rules were not read in this session; the consumer-credit questions are answered only from Regulation Z and state code text read above."
+    }
+  ]
+}

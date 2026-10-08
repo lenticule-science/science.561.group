@@ -1,0 +1,68 @@
+{
+  "$schema": "../../../../../../../../data/records/schema/literature-measurement.schema.json",
+  "id": "conviction-voting-and-bonding-curves",
+  "kind": "literature-measurement",
+  "question": "How do conviction voting and augmented bonding curves work as deployed (1Hive Gardens, Commons Stack, Token Engineering Commons, Aragon Fundraising, Bancor, Continuous Organizations, Proof of Humanity), what happened to the deployed instances, and what do they fail at?",
+  "frame": {
+    "population": "deployed on-chain communities and treasuries using conviction voting or bonding-curve issuance",
+    "exposure": "protocol source code, deployed contract state, DeFiLlama reads, first-party docs and academic literature",
+    "comparator": "none (descriptive)",
+    "outcomes": [
+      "mechanism formulas and parameters",
+      "admin keys and upgradeability",
+      "scale and activity over time",
+      "failure and shutdown"
+    ]
+  },
+  "notes": [],
+  "sources": [
+    {
+      "item": {
+        "id": "felixfritsch2021",
+        "type": "article-journal",
+        "title": "Challenges and Approaches to Scaling the Global Commons",
+        "author": [
+          {
+            "literal": "Felix Fritsch"
+          },
+          {
+            "literal": "Jeff Emmett"
+          },
+          {
+            "literal": "Emaline Friedman"
+          },
+          {
+            "literal": "Rok Kranjc"
+          },
+          {
+            "literal": "Sarah Manski"
+          },
+          {
+            "literal": "Michael Zargham"
+          },
+          {
+            "literal": "Michel Bauwens"
+          }
+        ],
+        "container-title": "Frontiers in Blockchain",
+        "publisher": "Frontiers Media",
+        "volume": "4",
+        "issued": {
+          "date-parts": [
+            [
+              2021,
+              4,
+              1
+            ]
+          ]
+        },
+        "DOI": "10.3389/fbloc.2021.578721",
+        "URL": "https://doi.org/10.3389/fbloc.2021.578721"
+      },
+      "readFrom": "abstract",
+      "findings": [],
+      "observedAt": "2026-10-08"
+    }
+  ],
+  "searches": []
+}

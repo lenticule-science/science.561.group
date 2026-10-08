@@ -1,0 +1,52 @@
+{
+  "kind": "lenticule.relconlang.negation-denial-refusal-assay",
+  "version": "0.1",
+  "status": "experimental",
+  "distinctions": [
+    {
+      "name": "lexical-negate",
+      "example": "tu ga nes do kelu.",
+      "currentReading": "predicate nes(subject=tu, object=kelu)",
+      "notYet": "negation of an embedded proposition"
+    },
+    {
+      "name": "refusal",
+      "example": "mi ga nul do koda.",
+      "currentReading": "predicate nul(subject=mi, object=koda)",
+      "notYet": "generic proposition denial"
+    },
+    {
+      "name": "against-evidence",
+      "example": null,
+      "currentReading": "canonical FOUR active = for-empty/against-present",
+      "surfaceForm": "none currently demonstrated"
+    },
+    {
+      "name": "contradicted",
+      "example": "sha ni ga ren do kelu.",
+      "currentReading": "aggregate stance stable",
+      "caution": "stable is both-sided reading; current surface form reports/labels stance but evidence semantics remain open"
+    }
+  ],
+  "testsToDesign": [
+    "denial of a simple proposition while preserving its proposition nucleus",
+    "denial of an embedded proposition",
+    "adding evidence-against to a proposition that already has evidence-for and deriving stable by knowledge accumulation",
+    "refusing a request without asserting the requested proposition false",
+    "negating a quoted claim rather than its embedded content"
+  ],
+  "invariant": "Against-side evidence must be additive/auditable and must not be implemented as destructive replacement of for-side evidence.",
+  "candidateConstructions": [
+    {
+      "syntax": "mi ga nes do ve tu ga ran do sava.",
+      "role": "candidate metalinguistic denial of embedded proposition",
+      "promotion": "optional explicit denial-report → against-witness policy"
+    },
+    {
+      "syntax": "mi ga nul do ve tu ga ran do sava.",
+      "role": "refusal control",
+      "promotion": "must not become evidence-against merely from refusal"
+    }
+  ],
+  "existingNegativeSubstrate": "SignCraft formal contexts already carry denial pairs and can derive active/stable through the neg lane."
+}

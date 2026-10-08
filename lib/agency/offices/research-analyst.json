@@ -40,11 +40,10 @@
     "the glass-sponge note section 16.4: a second pass is a second channel only when it uses genuinely independent evidence; independence is evidential, not organizational, so a measurement is read from the surface, never from a prior summary of it",
     "Lenticule Science's standing evidence standard, as the medical and work program carriers state it: every claim carries its evidence status in plain words, a figure carries its source and effective date, a projection is labeled a projection",
     "search misses are data (owner movement 2026-09-03, session-bootstrap law): a null result from the wired search tools is a cold spot, not evidence of absence, and is recorded as such",
-    "the gig-assist incumbent measurement record (561-group-work-services-section/data/records/2026-09-05-gig-assist-incumbent-measurement.json): the row shape this office writes — arena, product, product_role, receiver, capability, normalized_value, unit, exact_source_language, source_url, source_title, disclosure_class, published_date, effective_date, observed_at, evidence_kind, assay_mode, result, confidence, conflicts, unknown_reason, next_evidence"
+    "the gig-assist incumbent measurement record (561-group-work-services-section/data/records/2026-09-05-gig-assist-incumbent-measurement.json): the row shape this office writes — arena, product, product_role, receiver, capability, normalized_value, unit, exact_source_language, source_url, source_title, disclosure_class, published_date, effective_date, observed_at, evidence_kind, assay_mode, result, confidence, conflicts, unknown_reason, next_evidence",
+    "the literature-measurement record and meter (2026-10-07): science-services-section/data/records/schema/literature-measurement.schema.json is the row shape for published-literature measurement, its registers are data in science-services-section/data/registers/, and Red Cup Engineering's bibliography CLI (record-search, record-read, record-check, record-references) runs them and checks a note against its record; first record: pharmacology-services-section/data/records/2026-10-07-low-dose-amphetamine-literature.json"
   ],
-  "unrealized": [
-    "no measurement-row schema is kept once under a science section's data/records/schema/; the row shape lives by example in two program records, and this office's first anomaly report names that gap"
-  ],
+  "unrealized": [],
   "founded": "2026-09-05",
   "x-provenance": {
     "recorded-by": "claude-interactive-session/executive-officer-to-the-leader",

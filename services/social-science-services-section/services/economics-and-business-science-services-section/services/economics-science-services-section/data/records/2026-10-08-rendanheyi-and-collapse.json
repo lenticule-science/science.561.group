@@ -1,0 +1,19 @@
+{
+  "$schema": "../../../../../../../../data/records/schema/literature-measurement.schema.json",
+  "id": "rendanheyi-and-collapse",
+  "kind": "literature-measurement",
+  "question": "What do Rendanheyi/Haier case studies and the collapse/complexity literature (Tainter) establish?",
+  "frame": {
+    "population": "Haier; complex societies",
+    "exposure": "micro-enterprise self-organisation; rising complexity costs",
+    "comparator": "bureaucratic hierarchy",
+    "outcomes": [
+      "structure",
+      "performance",
+      "marginal return on complexity"
+    ]
+  },
+  "notes": [],
+  "sources": [],
+  "searches": []
+}

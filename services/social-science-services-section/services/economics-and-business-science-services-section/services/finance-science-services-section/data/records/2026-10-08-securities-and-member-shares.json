@@ -1,0 +1,518 @@
+{
+  "$schema": "../../../../../../../../data/records/schema/literature-measurement.schema.json",
+  "id": "securities-and-member-shares",
+  "kind": "literature-measurement",
+  "question": "What do the Securities Act exemptions, Regulation CF and A, Colorado and Wyoming cooperative securities exemptions, Howey, Forman, Reves and Marine Bank, the NCB no-action letter, and the SEC 2026 interpretation and proposals establish about whether cooperative member shares, patronage credits and a pool token are securities and how they may be offered, as of 2026-10-08?",
+  "frame": {
+    "population": "a US cooperative issuing member shares, patronage credits and possibly a pool token",
+    "exposure": "15 U.S.C. 77c(a)(5); Regulation CF; Regulation A; C.R.S. 7-58-1009; W.S. 17-4-201; Supreme Court investment-contract cases; SEC 2026 interpretation",
+    "comparator": "investment shares and notes sold for return",
+    "outcomes": [
+      "security status of membership interest",
+      "security status of patronage retains",
+      "federal and state exemptions",
+      "offering ceilings",
+      "status of cooperative safe-harbor proposals"
+    ]
+  },
+  "notes": [
+    "../../content/text/documents/articles/notes/2026/10/08/2026-10-08-securities-and-member-shares.md"
+  ],
+  "sources": [
+    {
+      "item": {
+        "id": "securitiesact3a52026",
+        "type": "legislation",
+        "title": "Securities Act of 1933 Section 3(a), 15 U.S.C. 77c(a)(5), exempted securities",
+        "author": [
+          {
+            "literal": "Securities Act Section 3"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "URL": "https://www.law.cornell.edu/uscode/text/15/77c"
+      },
+      "design": "statute",
+      "country": [
+        "US"
+      ],
+      "findings": [
+        {
+          "finding": "Section 3(a)(5) exempts securities issued by savings and loan, building and loan, cooperative banks and similar supervised institutions, and by farmers' cooperatives exempt under 26 U.S.C. 521 and certain 501(c)(16) corporations.",
+          "exactSourceLanguage": "(5) Any security issued (A) by a savings and loan association, building and loan association, cooperative bank, homestead association, or similar institution, which is supervised and examined by State or Federal authority having supervision over any such institution; or (B) by (i) a farmer’s cooperative organization exempt from tax under section 521 of title 26, (ii) a corporation described in section 501(c)(16) of title 26 and exempt from tax under section 501(a) of title 26, or (iii) a corporation described in section 501(c)(2) of title 26 which is exempt from tax under section 501(a) of title 26 and is organized for the exclusive purpose of holding title to property, collecting income therefrom, and turning over the entire amount thereof, less expenses, to an organization or corporation described in clause (i) or (ii);"
+        }
+      ],
+      "readFrom": "legal-text",
+      "observedAt": "2026-10-08",
+      "notFound": [
+        "An exemption for a cooperative that is not a farmers' cooperative or a supervised thrift-type institution; Section 3(a)(5) does not name an LCA."
+      ]
+    },
+    {
+      "item": {
+        "id": "regcf2026",
+        "type": "legislation",
+        "title": "17 CFR 227.100, Regulation Crowdfunding exemption",
+        "author": [
+          {
+            "literal": "17 CFR 227.100"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "URL": "https://www.law.cornell.edu/cfr/text/17/227.100"
+      },
+      "design": "statute",
+      "country": [
+        "US"
+      ],
+      "findings": [
+        {
+          "finding": "An issuer may sell under Section 4(a)(6) up to $5,000,000 in any twelve-month period.",
+          "exactSourceLanguage": "(1) The aggregate amount of securities sold to all investors by the issuer in reliance on section 4(a)(6) of the Securities Act (15 U.S.C. 77d(a)(6)) during the 12-month period preceding the date of such offer or sale, including the securities offered in such transaction, shall not exceed $5,000,000;"
+        }
+      ],
+      "readFrom": "legal-text",
+      "observedAt": "2026-10-08"
+    },
+    {
+      "item": {
+        "id": "regulationa2026",
+        "type": "legislation",
+        "title": "17 CFR 230.251, Regulation A scope",
+        "author": [
+          {
+            "literal": "17 CFR 230.251"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "URL": "https://www.law.cornell.edu/cfr/text/17/230.251"
+      },
+      "design": "statute",
+      "country": [
+        "US"
+      ],
+      "findings": [
+        {
+          "finding": "Tier 1 offerings up to $20,000,000; Tier 2 up to $75,000,000.",
+          "exactSourceLanguage": "(1) Tier 1. Offerings pursuant to Regulation A in which the sum of all cash and other consideration to be received for the securities being offered (“aggregate offering price”) plus the gross proceeds for all securities sold pursuant to other offering statements within the 12 months before the start of and during the current offering of securities (“aggregate sales”) does not exceed $20,000,000, including not more than $6,000,000 offered by all selling securityholders that are affiliates of the issuer (“Tier 1 offerings”). (2) Tier 2. Offerings pursuant to §§ 230.251 through 230.263 (Regulation A) in which the sum of the aggregate offering price and aggregate sales does not exceed $75,000,000, including not more than $22,500,000 offered by all selling securityholders that are affiliates of the issuer (“Tier 2 offerings”)."
+        }
+      ],
+      "readFrom": "legal-text",
+      "observedAt": "2026-10-08"
+    },
+    {
+      "item": {
+        "id": "coloradolcasecurities2024",
+        "type": "legislation",
+        "title": "C.R.S. 7-58-1009, Relation to state securities law",
+        "author": [
+          {
+            "literal": "Colorado LCA Securities"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024
+            ]
+          ]
+        },
+        "URL": "https://colorado.public.law/statutes/crs_7-58-1009"
+      },
+      "design": "statute",
+      "country": [
+        "US"
+      ],
+      "findings": [
+        {
+          "finding": "Any security, patronage refund, per unit retain certificate, capital credit, evidence of membership or other equity instrument issued by an LCA as an investment in its stock or capital to its patron members is exempt from the Colorado Securities Act, and may be issued without broker-dealer registration of the issuer's directors, officers, members or salaried employees.",
+          "exactSourceLanguage": "Any security, patronage refund, per unit retain certificate, capital credit, evidence of membership, preferred equity certificate, or other equity instrument issued, sold, or reported by a limited cooperative association as an investment in its stock or capital to the patron members of the association or by an entity subject to this article or a similar law of any other jurisdiction and authorized to transact business or conduct activities in this state is exempt from the securities laws contained in the “Colorado Securities Act”, article 51 of title 11, C.R.S."
+        }
+      ],
+      "readFrom": "legal-text",
+      "observedAt": "2026-10-08",
+      "notFound": [
+        "The page is the colorado.public.law reader of the C.R.S. 2024 title 7 PDF; leg.colorado.gov was not read directly. The exemption is to the Colorado Securities Act only; it does not reach the federal Securities Act."
+      ]
+    },
+    {
+      "item": {
+        "id": "wyomingsecurities2026",
+        "type": "legislation",
+        "title": "Wyoming Securities Act, W.S. 17-4-201, exempt securities (cooperative interests)",
+        "author": [
+          {
+            "literal": "Wyoming Securities Act"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "URL": "https://wyoleg.gov/statutes/compress/title17.pdf"
+      },
+      "design": "statute",
+      "country": [
+        "US"
+      ],
+      "findings": [
+        {
+          "finding": "Exempt from registration: a member's or owner's interest in, or a retention certificate or like security given in lieu of a cash patronage dividend by, a cooperative organized and operated as a nonprofit membership cooperative under a state's cooperative laws, but not when sold to persons other than bona fide members.",
+          "exactSourceLanguage": "(viii) A member's or owner's interest in, or a retention certificate or like security given in lieu of a cash patronage dividend issued by, a cooperative organized and operated as a nonprofit membership cooperative under the cooperative laws of a state, but not a member's or owner's interest, retention certificate, or like security sold to persons other than bona fide members of the cooperative; and"
+        }
+      ],
+      "readFrom": "legal-text",
+      "observedAt": "2026-10-08"
+    },
+    {
+      "item": {
+        "id": "sechowey1946",
+        "type": "legal_case",
+        "title": "SEC v. W. J. Howey Co., 328 U.S. 293 (1946)",
+        "author": [
+          {
+            "literal": "Howey Opinion"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              1946
+            ]
+          ]
+        },
+        "URL": "https://www.law.cornell.edu/supremecourt/text/328/293"
+      },
+      "design": "court-decision",
+      "country": [
+        "US"
+      ],
+      "findings": [
+        {
+          "finding": "An investment contract is a contract, transaction or scheme whereby a person invests money in a common enterprise and is led to expect profits solely from the efforts of the promoter or a third party.",
+          "exactSourceLanguage": "an investment contract for purposes of the Securities Act means a contract, transaction or scheme whereby a person invests his money in a common enterprise and is led to expect profits solely from the efforts of the promoter or a third party, it being immaterial whether the shares in the enterprise are evidenced by formal certificates"
+        }
+      ],
+      "readFrom": "full-text",
+      "observedAt": "2026-10-08"
+    },
+    {
+      "item": {
+        "id": "formanunited1975",
+        "type": "legal_case",
+        "title": "United Housing Foundation, Inc. v. Forman, 421 U.S. 837 (1975)",
+        "author": [
+          {
+            "literal": "Forman Opinion"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              1975
+            ]
+          ]
+        },
+        "URL": "https://www.law.cornell.edu/supremecourt/text/421/837"
+      },
+      "design": "court-decision",
+      "country": [
+        "US"
+      ],
+      "findings": [
+        {
+          "finding": "Shares in a nonprofit cooperative housing project that were bought to obtain a place to live, not for profits, were not securities: the touchstone is investment in a common venture premised on a reasonable expectation of profits from the efforts of others.",
+          "exactSourceLanguage": "The touchastone is the presence of an investment in a common venture premised on a reasonable expectation of profits to be derived from the entrepreneurial or managerial efforts of others."
+        },
+        {
+          "finding": "The Court tied that to use: neither capital appreciation nor participation in earnings was offered; the focus was acquisition of a place to live.",
+          "exactSourceLanguage": "Here neither of the kinds of profits traditionally associated with securities were offered to respondents; instead, as indicated in the Information Bulletin, which stressed the 'non-profit' nature of the project, the focus was upon the acquisition of a place to live."
+        }
+      ],
+      "readFrom": "full-text",
+      "observedAt": "2026-10-08"
+    },
+    {
+      "item": {
+        "id": "revesernst1990",
+        "type": "legal_case",
+        "title": "Reves v. Ernst & Young, 494 U.S. 56 (1990)",
+        "author": [
+          {
+            "literal": "Reves Opinion"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              1990
+            ]
+          ]
+        },
+        "URL": "https://www.law.cornell.edu/supremecourt/text/494/56"
+      },
+      "design": "court-decision",
+      "country": [
+        "US"
+      ],
+      "findings": [
+        {
+          "finding": "Notes are presumed securities unless they resemble a judicially listed non-security category under the four-factor family-resemblance test; the Co-Op's demand notes, sold to raise capital and bought for interest, were securities.",
+          "exactSourceLanguage": "Under that test, a note is presumed to be a security unless it bears a strong resemblance, determined by examining four specified factors, to one of a judicially crafted list of categories of instrument that are not securities."
+        },
+        {
+          "finding": "The Court found the Co-Op notes securities: sold to raise capital, bought to earn interest, so naturally conceived as investments in a business enterprise.",
+          "exactSourceLanguage": "(1) the Co-Op sold them to raise capital, and purchasers bought them to earn a profit in the form of interest, so that they are most naturally conceived as investments in a business enterprise"
+        }
+      ],
+      "readFrom": "full-text",
+      "observedAt": "2026-10-08"
+    },
+    {
+      "item": {
+        "id": "marinebankweaver1982",
+        "type": "legal_case",
+        "title": "Marine Bank v. Weaver, 455 U.S. 551 (1982)",
+        "author": [
+          {
+            "literal": "Marine Bank Opinion"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              1982
+            ]
+          ]
+        },
+        "URL": "https://www.law.cornell.edu/supremecourt/text/455/551"
+      },
+      "design": "court-decision",
+      "country": [
+        "US"
+      ],
+      "findings": [
+        {
+          "finding": "A bank certificate of deposit is not a security because holders are protected by the federal banking laws; a privately negotiated profit-sharing agreement was not the type of instrument that comes to mind as a security.",
+          "exactSourceLanguage": "We therefore hold that the certificate of deposit purchased by the Weavers is not a security."
+        },
+        {
+          "finding": "The unusual instruments held securities involved offers to a number of potential investors, not a private transaction.",
+          "exactSourceLanguage": "The unusual instruments found to constitute securities in prior cases involved offers to a number of potential investors, not a private transaction as in this case."
+        }
+      ],
+      "readFrom": "full-text",
+      "observedAt": "2026-10-08"
+    },
+    {
+      "item": {
+        "id": "ncbnoaction2011",
+        "type": "report",
+        "title": "National Consumer Cooperative Bank, SEC Division of Corporation Finance no-action letter, January 3, 2011 (Securities Act Section 2(a)(1))",
+        "author": [
+          {
+            "literal": "NCB No-Action Letter"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2011
+            ]
+          ]
+        },
+        "URL": "https://www.sec.gov/divisions/corpfin/cf-noaction/2011/nccb010311-2a1.htm"
+      },
+      "design": "regulatory-guidance",
+      "country": [
+        "US"
+      ],
+      "findings": [
+        {
+          "finding": "The staff would not recommend enforcement if NCB offered Class C stock without registration, relying on counsel's opinion that it is not a security, noting it was issued only as part of the patronage refund, evidenced membership, carried no ordinary dividend rights, was transferable only to eligible borrowers with NCB approval and only at par.",
+          "exactSourceLanguage": "The Division will not recommend enforcement action to the Commission if NCB, in reliance on your opinion of counsel that the Class C stock is not a security under the 1933 Act or the 1934 Act, offers and sells the Class C stock without compliance with the registration requirements of the 1933 Act or the 1934 Act and stops filing periodic and current reports under the 1934 Act. In reaching this position, we note that: NCB is a Congressionally-chartered, member-owned cooperative with the stated purpose of providing financial and technical assistance to its cooperative members; NCB will issue the Class C stock only as part of its patronage refund, and for no other purpose; the Class C stock evidences membership in the cooperative and does not provide for ordinary dividend rights; the only holders of the Class C stock are and will be cooperative borrowers, organizations eligible to borrow, or organizations controlled by such borrowers; the Class C stock can be transferred only to another borrower, eligible borrower, or organization controlled by such borrower, and then only with the approval of NCB; the Class C stock can be transferred only for an amount equal to its par value, thereby precluding a profit on its sale;"
+        },
+        {
+          "finding": "The staff also noted NCB was subject to an alternative regulatory scheme and gave shareholders information other than through Exchange Act reports.",
+          "exactSourceLanguage": "NCB is subject to an alternative regulatory scheme; and NCB provides information to its shareholders through means other than 1934 Act reporting and will continue to do so."
+        },
+        {
+          "finding": "The letter states the position is on enforcement action only and expresses no legal conclusion.",
+          "exactSourceLanguage": "this response expresses the Division’s position on enforcement action only and does not express any legal conclusions on the question presented."
+        }
+      ],
+      "readFrom": "first-party-docs",
+      "observedAt": "2026-10-08",
+      "notFound": [
+        "A no-action letter after 2011 applying Howey to a cooperative membership bought to obtain services; a search of sec.gov surfaced only utility-holding-company cooperative letters (2001, 2004) and this one."
+      ]
+    },
+    {
+      "item": {
+        "id": "ccbo2025",
+        "type": "report",
+        "title": "Coalition for Cooperative Blockchain Organizations, Proposed SEC Rulemaking: Non-Fungible Membership Interests (submission to the SEC Crypto Task Force, April 30, 2025)",
+        "author": [
+          {
+            "literal": "Cooperative Blockchain Coalition"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025
+            ]
+          ]
+        },
+        "URL": "https://www.sec.gov/files/ctf-written-input-coa-coop-blockchain-orgs-prop-rulemaking-non-fungible-memb-interests-043025.pdf"
+      },
+      "design": "other",
+      "country": [
+        "US"
+      ],
+      "findings": [
+        {
+          "finding": "The coalition states that the SEC has treated non-transferable cooperative memberships as non-securities but its regulations contain no explicit safe harbor, and proposes one for memberships that are non-transferable except to the DAO or members at a pre-approved price, pay dividends based on each member's own efforts, and are bought by verified users or suppliers.",
+          "exactSourceLanguage": "For decades, the Securities and Exchange Commission has treated non-transferable cooperative memberships and similar interests as nonsecurities (e.g., Green Bay Packers stock). But SEC regulations do not provide an explicit “safe harbor” for such membership interests"
+        },
+        {
+          "finding": "Proposed condition (3): each purchaser is a verified user or supplier of the products or services of the DAO.",
+          "exactSourceLanguage": "(3) each purchaser of a membership interest is a verified user or supplier of the products or services provided by (a) the DAO or (b) any company in which the DAO owns equity."
+        }
+      ],
+      "readFrom": "first-party-docs",
+      "observedAt": "2026-10-08",
+      "notFound": [
+        "Any Commission or staff action adopting the proposal; this is a stakeholder submission, not an SEC position."
+      ]
+    },
+    {
+      "item": {
+        "id": "secinvestment2026",
+        "type": "legislation",
+        "title": "Application of the Federal Securities Laws to Certain Types of Crypto Assets and Certain Transactions Involving Crypto Assets, 91 FR 13714",
+        "author": [
+          {
+            "literal": "SEC CFTC Interpretation"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "URL": "https://www.federalregister.gov/documents/2026/03/23/2026-05635/application-of-the-federal-securities-laws-to-certain-types-of-crypto-assets-and-certain"
+      },
+      "design": "regulatory-guidance",
+      "country": [
+        "US"
+      ],
+      "findings": [
+        {
+          "finding": "A non-security crypto asset becomes subject to an investment contract when an issuer induces an investment of money in a common enterprise with representations or promises to undertake essential managerial efforts from which purchasers would reasonably expect profits; absent such representations it is not reasonable to expect profits.",
+          "exactSourceLanguage": "A non-security crypto asset becomes subject to an investment contract when an issuer offers it by inducing an investment of money in a common enterprise with representations or promises to undertake essential managerial efforts from which a purchaser would reasonably expect to derive profits.\\85\\ A purchaser's reasonable profit expectations depend on the issuer's representations or promises to engage in such essential managerial efforts.\\86\\ Absent such representations or promises being conveyed to purchasers,\\87\\ it would not be reasonable for a purchaser to expect profits from the contract, transaction, or scheme."
+        },
+        {
+          "finding": "The release cites Forman for the point that a cooperative's materials emphasising non-profit nature rather than the prospect of profit show no investment-contract offer.",
+          "exactSourceLanguage": "in finding that certain instruments issued by a housing cooperative were not ``securities,'' the Supreme Court in Forman specifically noted that: ``Nowhere does the [co-operative's Information] Bulletin seek to attract investors by the prospect of profits resulting from the efforts of the promoters or third parties. On the contrary, the Bulletin repeatedly emphasizes the `nonprofit' nature of the endeavor.'' 421 U.S. at 854"
+        },
+        {
+          "finding": "A digital tool (membership, ticket, credential) that does not generate passive yield or convey rights to future income is not a security; persons acquire it for functional utility.",
+          "exactSourceLanguage": "Persons acquire digital tools for their functional utility and do not have any rights or interest in or with respect to a business enterprise or other entity, promisor, or obligor just as persons acquiring a museum membership do not expect to realize a profit from the essential managerial efforts of the museum's operators."
+        }
+      ],
+      "readFrom": "legal-text",
+      "observedAt": "2026-10-08",
+      "notFound": [
+        "Application to a yield-bearing pool share, lending claim or credit token; the release does not discuss lending."
+      ]
+    },
+    {
+      "item": {
+        "id": "regcrypto2026",
+        "type": "legislation",
+        "title": "Regulation Crypto Assets (SEC proposal), 91 FR 54510, File S7-2026-27",
+        "author": [
+          {
+            "literal": "Regulation Crypto Assets"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "URL": "https://www.federalregister.gov/documents/2026/08/21/2026-17183/regulation-crypto-assets"
+      },
+      "design": "regulatory-guidance",
+      "country": [
+        "US"
+      ],
+      "findings": [
+        {
+          "finding": "The SEC proposes two Securities Act Section 5 exemptions - up to $5 million over four years and up to $75 million per twelve months - plus a conditional safe harbor under which a crypto asset is deemed not subject to an investment contract; comments due October 20, 2026.",
+          "exactSourceLanguage": "The first exemption would permit offerings of up to $5 million during a four-year period. The second exemption would permit offerings of up to $75 million during each 12-month period. Under both exemptions, issuers would be required to make certain principles-based narrative disclosures available to their investors. In addition, issuers under the second exemption would be required to provide financial statements and would be subject to ongoing reporting requirements. Issuers that rely on these exemptions would remain subject to the antifraud and antimanipulation provisions of the Federal securities laws. The proposed rules also would include a conditional safe harbor from the term ``investment contract'' in the definitions of ``security'' in the Securities Act of 1933 and the Securities Exchange Act of 1934. If the conditions of that proposed safe harbor are satisfied, then a crypto asset would be deemed not to be subject to an investment contract for purposes of those definitions of ``security.''"
+        }
+      ],
+      "readFrom": "legal-text",
+      "observedAt": "2026-10-08",
+      "notFound": [
+        "Any cooperative-specific provision: the word \"cooperative\" does not appear in the proposal."
+      ]
+    }
+  ],
+  "searches": [
+    {
+      "register": "web",
+      "variables": {
+        "query": "SEC no-action letter cooperative membership interest not a security Howey",
+        "site": "sec.gov"
+      },
+      "observedAt": "2026-10-08",
+      "count": 9,
+      "included": [
+        "ncbnoaction2011",
+        "ccbo2025"
+      ],
+      "reading": "The search surfaced the NCB 2011 letter and the 2025 coalition submission (read) and utility-holding-company cooperative letters of 2001 and 2004 (Western Farmers, Old Dominion; not read). No Commission statement on cooperative membership shares exists in the results; the Commission interpretation of 2026 does not discuss them except through the Forman citation."
+    },
+    {
+      "register": "web",
+      "variables": {
+        "query": "state cooperative securities exemptions Wyoming Colorado"
+      },
+      "observedAt": "2026-10-08",
+      "count": 2,
+      "included": [
+        "coloradolcasecurities2024",
+        "wyomingsecurities2026"
+      ],
+      "reading": "Colorado exempts LCA patron-member equity instruments from the Colorado Securities Act (7-58-1009); Wyoming exempts members' interests and retention certificates of nonprofit membership cooperatives sold to bona fide members (17-4-201). Neither exemption reaches the federal Securities Act, the federal definition of security, or interests sold to non-members."
+    }
+  ]
+}

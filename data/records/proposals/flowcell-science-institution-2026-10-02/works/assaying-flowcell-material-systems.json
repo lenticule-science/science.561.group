@@ -1,0 +1,11 @@
+{
+  "id": "assaying-flowcell-material-systems",
+  "name": "assaying FlowCell material systems",
+  "from": "A wetted material, coating, membrane, flexible polymer, bearing material, electrofluid, electrolyte, ion/mineral storage system, or active-maintenance material is proposed for a FlowCell function.",
+  "to": "A bounded qualification or rejection records compatibility, cycling, corrosion/fouling, decontamination, leakage consequence, material loss, and energy/mass accounting where relevant.",
+  "cost": "Laboratory attention, specimen/material consumption, analytical effort, and test energy.",
+  "otherwise": "A visually successful phenomenon such as one healing event, voltage, or precipitate is promoted into a durability or energy-storage claim.",
+  "needs": [
+    "assay-flowcell-material-system"
+  ]
+}

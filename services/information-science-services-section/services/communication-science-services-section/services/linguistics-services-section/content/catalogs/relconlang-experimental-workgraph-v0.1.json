@@ -1,0 +1,476 @@
+{
+  "kind": "lenticule.research-workgraph",
+  "id": "lenticule:relconlang-experimental-semantics:workgraph:v0.1",
+  "version": "0.1",
+  "status": "active",
+  "date": "2026-10-01",
+  "program": "lenticule:relconlang-experimental-semantics",
+  "policy": {
+    "productionIntegration": false,
+    "rule": "Prefer experiments that discriminate competing semantic models. Do not patch source grammar merely to make a current test pass.",
+    "maturity": "Each node reports evidence layer: source inspection, predicted differential, executable current test, or new assay."
+  },
+  "phases": [
+    {
+      "id": "P0",
+      "name": "carrier semantics",
+      "purpose": "Determine what the mathematical carriers mean before mapping grammar into them."
+    },
+    {
+      "id": "P1",
+      "name": "single-turn normalization",
+      "purpose": "Recover a context-grounded proposition plus independently represented stance, force, aspect, information structure, and provenance."
+    },
+    {
+      "id": "P2",
+      "name": "cross-turn dialogue",
+      "purpose": "Infer question/relevance/response/repair relations without hand-authored adjacency metadata."
+    },
+    {
+      "id": "P3",
+      "name": "realization",
+      "purpose": "Generate surface RelConLang from explicit semantic plans and measure round-trip loss."
+    },
+    {
+      "id": "P4",
+      "name": "learning and language evolution",
+      "purpose": "Test learned saturation, root-family productivity, and later diachronic change without leaking gold semantics."
+    }
+  ],
+  "nodes": [
+    {
+      "id": "four-indexing",
+      "phase": "P0",
+      "state": "active",
+      "question": "what-does-four-mean-over-different-linguistic-fibers.md",
+      "assays": [
+        "four-use-audit-v0.1.json"
+      ],
+      "blocks": [
+        "stance-semantics",
+        "message-lifecycle",
+        "presupposition-charge"
+      ],
+      "acceptance": "Every FOUR use names its fiber and the meaning of for/against coordinates."
+    },
+    {
+      "id": "chu-semantics",
+      "phase": "P0",
+      "state": "open",
+      "dependsOn": [
+        "four-indexing"
+      ],
+      "questions": [
+        "is-relconlang-clause-stance-the-knowledge-aggregate-of-its-chu-row.md",
+        "what-does-the-relconlang-chu-matrix-actually-mean.md"
+      ],
+      "assays": [
+        "chu-row-projection-v0.1.json",
+        "chu-matrix-semantics-audit-v0.1.json"
+      ],
+      "blocks": [
+        "stance-semantics"
+      ],
+      "acceptance": "An explicit projection law explains particle profiles and is tested independently of dual-involution."
+    },
+    {
+      "id": "stance-semantics",
+      "phase": "P0",
+      "state": "candidate-model-ready-for-minimal-pair-test",
+      "dependsOn": [
+        "four-indexing",
+        "chu-semantics",
+        "unmarked-stance"
+      ],
+      "questions": [
+        "should-relconlang-stance-contribute-evidence-or-store-a-four-reading.md",
+        "should-relconlang-stance-be-a-report-about-a-proposition.md"
+      ],
+      "assays": [
+        "stance-report-vs-target-evidence-v0.1.json"
+      ],
+      "schemas": [
+        "stance-report-v0.1.schema.json"
+      ],
+      "acceptance": "Grammar can report stance without fabricating target evidence; ta/na distinction is preserved at least at profile level."
+    },
+    {
+      "id": "negative-evidence",
+      "phase": "P0",
+      "state": "candidate-construction",
+      "dependsOn": [
+        "four-indexing",
+        "stance-semantics"
+      ],
+      "questions": [
+        "how-does-relconlang-express-propositional-negation.md",
+        "can-nes-plus-ccomp-realize-proposition-denial.md"
+      ],
+      "assays": [
+        "negation-denial-refusal-assay-v0.1.json",
+        "embedded-denial-bridge-v0.1.json"
+      ],
+      "blocks": [
+        "negative-answer-dialogue",
+        "repair-evidence-transition"
+      ],
+      "acceptance": "Denial and refusal are separable; against evidence enters through an explicit witness policy/substrate operation."
+    },
+    {
+      "id": "particle-admission",
+      "phase": "P1",
+      "state": "open",
+      "questions": [
+        "how-should-relconlang-particles-be-admitted.md"
+      ],
+      "assays": [
+        "particle-admission-audit-v0.1.json"
+      ],
+      "blocks": [
+        "parser-equivalence"
+      ],
+      "acceptance": "Grammatical markers need not masquerade as determiners/prepositions and no spurious legacy attachment is introduced."
+    },
+    {
+      "id": "grammar-provenance",
+      "phase": "P1",
+      "state": "open",
+      "dependsOn": [
+        "particle-admission"
+      ],
+      "questions": [
+        "how-should-grammatical-licensing-provenance-survive-parsing.md"
+      ],
+      "assays": [
+        "role-receipt-provenance-v0.1.json"
+      ],
+      "blocks": [
+        "register-realization"
+      ],
+      "acceptance": "Downstream reading can distinguish particle-licensed from position-licensed role recovery."
+    },
+    {
+      "id": "prefield-order",
+      "phase": "P1",
+      "state": "open",
+      "questions": [
+        "how-should-relconlang-order-prefield-operators.md"
+      ],
+      "assays": [
+        "prefield-order-assay-v0.1.json",
+        "dual-parser-differential-v0.1.json"
+      ],
+      "blocks": [
+        "realization",
+        "parser-equivalence"
+      ],
+      "acceptance": "Legal order/scope of stance, dialogue, provenance, and information operators is stated and discriminator cases agree."
+    },
+    {
+      "id": "deixis",
+      "phase": "P1",
+      "state": "open",
+      "questions": [
+        "how-should-relconlang-ground-indexicals-across-turns.md"
+      ],
+      "assays": [
+        "deixis-audit-v0.1.json",
+        "blind-dialogue-v0.2.json"
+      ],
+      "schemas": [
+        "dialogue-deictic-context-v0.1.schema.json"
+      ],
+      "blocks": [
+        "proposition-identity",
+        "dialogue"
+      ],
+      "acceptance": "mi/tu resolve to turn-relative speaker/addressee and quoted/role-shift exceptions are explicit."
+    },
+    {
+      "id": "proposition-identity",
+      "phase": "P1",
+      "state": "open",
+      "dependsOn": [
+        "deixis"
+      ],
+      "questions": [
+        "what-is-proposition-identity-across-relconlang-turns.md"
+      ],
+      "assays": [
+        "proposition-identity-assay-v0.1.json",
+        "signcraft-event-to-proposition-nucleus-v0.1.json"
+      ],
+      "schemas": [
+        "proposition-nucleus-v0.1.schema.json"
+      ],
+      "blocks": [
+        "dialogue",
+        "repair",
+        "realization"
+      ],
+      "acceptance": "Same/refinement/related/distinct comparisons preserve ccomp, obliques, canonical verb roots, and context-resolved arguments."
+    },
+    {
+      "id": "force-factorization",
+      "phase": "P1",
+      "state": "open",
+      "questions": [
+        "how-should-relconlang-force-factor.md",
+        "should-illocutionary-force-be-an-endomorphism.md"
+      ],
+      "blocks": [
+        "dialogue"
+      ],
+      "acceptance": "Coarse illocution and fine dialogue move are independently recoverable and composition rules are explicit."
+    },
+    {
+      "id": "interrogativity",
+      "phase": "P2",
+      "state": "open",
+      "dependsOn": [
+        "force-factorization",
+        "prefield-order"
+      ],
+      "questions": [
+        "what-makes-a-relconlang-utterance-a-question.md"
+      ],
+      "assays": [
+        "interrogativity-carrier-audit-v0.1.json"
+      ],
+      "blocks": [
+        "question-state"
+      ],
+      "acceptance": "ku, punctuation, and future prosodic carriers have explicit contribution/precedence laws."
+    },
+    {
+      "id": "question-state",
+      "phase": "P2",
+      "state": "experimental",
+      "dependsOn": [
+        "interrogativity",
+        "proposition-identity"
+      ],
+      "questions": [
+        "can-information-structure-update-relconlang-question-state.md"
+      ],
+      "assays": [
+        "information-structure-qud-assay-v0.1.json"
+      ],
+      "schemas": [
+        "question-issue-v0.1.schema.json"
+      ],
+      "blocks": [
+        "dialogue"
+      ],
+      "acceptance": "Question issues open/close from semantic compatibility; fi/ko constrain but do not invent hidden questions."
+    },
+    {
+      "id": "dialogue",
+      "phase": "P2",
+      "state": "experimental",
+      "dependsOn": [
+        "deixis",
+        "proposition-identity",
+        "force-factorization",
+        "question-state"
+      ],
+      "questions": [
+        "can-dialogue-relations-be-recovered-from-relconlang-alone.md",
+        "what-dialogue-transition-laws-does-relconlang-need.md"
+      ],
+      "assays": [
+        "blind-dialogue-v0.2.json",
+        "dialogue-transition-laws-v0.1.json"
+      ],
+      "schemas": [
+        "dialogue-turn-reading-v0.1.schema.json",
+        "dialogue-relevance-state-v0.1.schema.json"
+      ],
+      "acceptance": "Move, target, compatibility, relevance transition, and evidence effects score separately on hidden gold."
+    },
+    {
+      "id": "repair",
+      "phase": "P2",
+      "state": "experimental",
+      "dependsOn": [
+        "dialogue",
+        "negative-evidence",
+        "proposition-identity"
+      ],
+      "questions": [
+        "what-constitutes-repair-in-relconlang.md"
+      ],
+      "assays": [
+        "repair-layer-audit-v0.1.json",
+        "repair-report-assay-v0.1.json"
+      ],
+      "schemas": [
+        "repair-report-v0.1.schema.json"
+      ],
+      "acceptance": "ren/ri produce typed repair reports; diagnostics remain diagnostics; any evidence mutation is separately warranted; archival adjudication theory is not misreported as executable."
+    },
+    {
+      "id": "register-realization",
+      "phase": "P3",
+      "state": "experimental",
+      "dependsOn": [
+        "grammar-provenance",
+        "stance-semantics",
+        "force-factorization"
+      ],
+      "questions": [
+        "what-makes-a-relconlang-register-a-register.md"
+      ],
+      "assays": [
+        "register-semantics-audit-v0.1.json",
+        "register-profiles-v0.1.json"
+      ],
+      "blocks": [
+        "realization"
+      ],
+      "acceptance": "Register constrains realization without fabricating stance, evidence, or dialogue semantics."
+    },
+    {
+      "id": "realization",
+      "phase": "P3",
+      "state": "experimental",
+      "dependsOn": [
+        "prefield-order",
+        "proposition-identity",
+        "register-realization",
+        "dialogue",
+        "emission-policy"
+      ],
+      "questions": [
+        "what-should-a-relconlang-realization-codec-realize.md"
+      ],
+      "assays": [
+        "generation-coverage-audit-v0.1.json",
+        "realization-roundtrip-assay-v0.1.json"
+      ],
+      "schemas": [
+        "realization-plan-v0.1.schema.json"
+      ],
+      "acceptance": "Plan→surface→dual-reader projections meet declared semantic preservation and loss budget."
+    },
+    {
+      "id": "root-generativity",
+      "phase": "P4",
+      "state": "open",
+      "questions": [
+        "what-makes-a-relconlang-root-family-generative.md"
+      ],
+      "assays": [
+        "root-family-generativity-v0.1.json"
+      ],
+      "acceptance": "Known families round-trip root/template→surface→same root identity before autonomous coinage is tested."
+    },
+    {
+      "id": "saturation-learning",
+      "phase": "P4",
+      "state": "audit-complete-next-experiment-open",
+      "questions": [
+        "what-did-the-signcraft-relconlang-saturation-result-demonstrate.md"
+      ],
+      "assays": [
+        "signcraft-saturation-evaluation-audit-v0.1.json"
+      ],
+      "acceptance": "Report no-feature, manifest-feature, train-only-gold, historical-full-gold, and lexeme-holdout conditions separately.",
+      "dependsOn": [
+        "saturation-fiber-semantics"
+      ]
+    },
+    {
+      "id": "unmarked-stance",
+      "phase": "P0",
+      "state": "candidate-resolved",
+      "dependsOn": [
+        "four-indexing"
+      ],
+      "questions": [
+        "what-does-an-unmarked-relconlang-clause-say-about-stance.md"
+      ],
+      "assays": [
+        "unmarked-stance-audit-v0.1.json",
+        "explicit-vs-unmarked-stance-v0.1.json"
+      ],
+      "blocks": [
+        "stance-semantics",
+        "realization"
+      ],
+      "acceptance": "Preferred model: unmarked clause has no explicit stance report; explicit ta remains semantically observable even if a flat implementation projects both to potential. Validate with minimal-pair roundtrip."
+    },
+    {
+      "id": "saturation-fiber-semantics",
+      "phase": "P4",
+      "state": "candidate-resolved",
+      "dependsOn": [
+        "four-indexing",
+        "stance-semantics"
+      ],
+      "questions": [
+        "what-do-signcraft-saturation-fibers-mean.md"
+      ],
+      "assays": [
+        "saturation-fiber-semantics-v0.1.json"
+      ],
+      "blocks": [
+        "saturation-learning"
+      ],
+      "acceptance": "Preferred interpretation: fibers encode attested role/selectional incidence, while proposition evidence remains in a separate for/against carrier."
+    },
+    {
+      "id": "emission-policy",
+      "phase": "P3",
+      "state": "experimental",
+      "dependsOn": [
+        "stance-semantics",
+        "saturation-fiber-semantics",
+        "dialogue",
+        "register-realization",
+        "signed-inference-generation"
+      ],
+      "questions": [
+        "how-should-relconlang-generation-use-stance-and-evidence.md",
+        "how-should-relconlang-compose-inference-generation-speech-sampling-and-realization.md"
+      ],
+      "assays": [
+        "generation-stance-erasure-audit-v0.1.json",
+        "emission-policy-assay-v0.1.json",
+        "generation-planes-v0.1.json"
+      ],
+      "schemas": [
+        "emission-policy-v0.1.schema.json"
+      ],
+      "blocks": [
+        "realization"
+      ],
+      "acceptance": "Corpus continuation, semantic candidate selection, emission policy, and surface realization remain separately typed; unmarked output never acquires epistemic/assertive authority from selectional incidence alone."
+    },
+    {
+      "id": "signed-inference-generation",
+      "phase": "P3",
+      "state": "open",
+      "dependsOn": [
+        "negative-evidence",
+        "saturation-fiber-semantics"
+      ],
+      "questions": [
+        "should-signcraft-inference-generation-propose-negative-moves.md"
+      ],
+      "assays": [
+        "inference-generation-polarity-audit-v0.1.json"
+      ],
+      "blocks": [
+        "emission-policy"
+      ],
+      "acceptance": "Either negative/refutational proposals are typed as a distinct operation, or the inference move carrier is explicitly signed with tested energy laws for negative seeds."
+    }
+  ],
+  "recommendedNext": [
+    "Execute dual-parser differential cases that require no new code: particle/role/prefield acceptance and structural projections.",
+    "Specify/test stance-report projection while preserving target evidence.",
+    "Only after deixis+nucleus+question-state are stable, score blind-dialogue-v0.2.",
+    "Only after dialogue reading is stable, build any richer realization generator."
+  ]
+}
