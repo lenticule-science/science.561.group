@@ -14,7 +14,499 @@
       "allocation mechanism"
     ]
   },
-  "notes": [],
-  "sources": [],
-  "searches": []
+  "notes": [
+    "../../content/text/documents/articles/notes/2026/10/08/2026-10-08-rosca-economics.md"
+  ],
+  "sources": [
+    {
+      "item": {
+        "id": "besley1994",
+        "type": "article-journal",
+        "title": "Rotating savings and credit associations, credit markets and efficiency",
+        "author": [
+          {
+            "family": "Besley",
+            "given": "Timothy"
+          },
+          {
+            "family": "Coate",
+            "given": "Stephen"
+          },
+          {
+            "family": "Loury",
+            "given": "Glenn C."
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              1994
+            ]
+          ]
+        },
+        "container-title": "Review of Economic Studies",
+        "DOI": "10.2307/2297915",
+        "URL": "https://doi.org/10.2307/2297915"
+      },
+      "findings": [
+        {
+          "finding": "Neither random nor bidding roscas are efficient and individuals are better off with a credit market than with a bidding rosca; a random rosca can sometimes give higher ex ante expected utility than a credit market.",
+          "exactSourceLanguage": "We find that neither type of rosca is efficient and that individuals are better off with a credit market than a bidding rosca. Nonetheless, a random rosca may sometimes yield a higher level of ex ante expected utility to prospective participants than would a credit market."
+        }
+      ],
+      "readFrom": "abstract",
+      "observedAt": "2026-10-08",
+      "design": "theoretical",
+      "population": "model of saving for an indivisible good with random and bidding roscas"
+    },
+    {
+      "item": {
+        "id": "andersonbaland2002",
+        "type": "article-journal",
+        "title": "The economics of roscas and intrahousehold resource allocation",
+        "author": [
+          {
+            "family": "Anderson",
+            "given": "Siwan"
+          },
+          {
+            "family": "Baland",
+            "given": "Jean-Marie"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2002
+            ]
+          ]
+        },
+        "container-title": "Quarterly Journal of Economics",
+        "DOI": "10.1162/003355302760193931",
+        "URL": "https://doi.org/10.1162/003355302760193931"
+      },
+      "findings": [
+        {
+          "finding": "84 percent of rosca members are women; participation of women 18 and over is 40.0 percent (53 percent if living in a couple, 25.3 percent if not; 68.5 percent if working, 74.4 percent if working and in a couple), against 10.1 percent for men.",
+          "exactSourceLanguage": "The participation rate for men is 10.1%, for working men is 12.4% and for working men living in a couple, it is 9.6%."
+        },
+        {
+          "finding": "Most roscas have a pre-determined order, not random or bidding: 69.2 percent of the 385 do not change order after a cycle; the median number of cycles is 3.2 and the median cycle length 6.1 months, which the random-allocation rationale of Besley, Coate and Loury cannot explain.",
+          "exactSourceLanguage": "69.2% of the roscas in our sample do not change their order after a cycle."
+        },
+        {
+          "finding": "Participation is a strategy a wife uses to protect her savings from claims for immediate consumption by her husband.",
+          "exactSourceLanguage": "Participation in a rosca is a strategy a wife employs to protect her savings against claims by her husband for immediate consumption."
+        }
+      ],
+      "readFrom": "full-text",
+      "observedAt": "2026-10-08",
+      "design": "empirical-study",
+      "n": 520,
+      "country": [
+        "KE"
+      ],
+      "population": "520 households in Kibera, Nairobi, with 385 roscas"
+    },
+    {
+      "item": {
+        "id": "gugerty2007",
+        "type": "article-journal",
+        "title": "You can’t save alone: commitment and rotating savings and credit associations in Kenya",
+        "author": [
+          {
+            "family": "Gugerty",
+            "given": "Mary Kay"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2007
+            ]
+          ]
+        },
+        "container-title": "Economic Development and Cultural Change"
+      },
+      "findings": [
+        {
+          "finding": "Data from 70 roscas are consistent with rosca participation as a collective commitment mechanism against time-inconsistent preferences.",
+          "exactSourceLanguage": "Data from 70 roscas located in western Kenya indicate that the commitment hypothesis is plausible and broadly consistent with the design and patterns of participation in these roscas. As many rosca participants put it: “you can’t save alone”."
+        }
+      ],
+      "readFrom": "abstract",
+      "observedAt": "2026-10-08",
+      "design": "empirical-study",
+      "n": 70,
+      "country": [
+        "KE"
+      ],
+      "population": "70 roscas in western Kenya",
+      "notFound": [
+        "DOI not returned by the register."
+      ]
+    },
+    {
+      "item": {
+        "id": "casaburi2019",
+        "type": "article-journal",
+        "title": "Demand and supply of infrequent payments as a commitment device: evidence from Kenya",
+        "author": [
+          {
+            "family": "Casaburi",
+            "given": "Lorenzo"
+          },
+          {
+            "family": "Macchiavello",
+            "given": "Rocco"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2019
+            ]
+          ]
+        },
+        "container-title": "American Economic Review",
+        "DOI": "10.1257/aer.20180281",
+        "URL": "https://doi.org/10.1257/aer.20180281"
+      },
+      "findings": [
+        {
+          "finding": "Farmers are willing to incur sizable costs to receive infrequent payments as a commitment device, and poor contract enforcement limits competition among buyers in supplying them.",
+          "exactSourceLanguage": "farmers are willing to incur sizable costs to receive infrequent payments as a commitment device"
+        }
+      ],
+      "readFrom": "abstract",
+      "observedAt": "2026-10-08",
+      "design": "field-experiment",
+      "country": [
+        "KE"
+      ],
+      "population": "Kenyan dairy farmers, multiple experiments"
+    },
+    {
+      "item": {
+        "id": "fang2015",
+        "type": "report",
+        "title": "Rosca meets formal credit market",
+        "author": [
+          {
+            "family": "Fang",
+            "given": "Hanming"
+          },
+          {
+            "family": "Ke",
+            "given": "Rongzhu"
+          },
+          {
+            "family": "Zhou",
+            "given": "Li-An"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2015
+            ]
+          ]
+        },
+        "container-title": "NBER Working Paper 21683",
+        "DOI": "10.3386/w21683",
+        "URL": "https://doi.org/10.3386/w21683"
+      },
+      "findings": [
+        {
+          "finding": "A perfect credit market completely crowds out the rosca; with an imperfect credit market rosca and formal credit complement each other and improve welfare, and welfare need not rise monotonically as the credit market becomes more perfect.",
+          "exactSourceLanguage": "We show that a perfect credit market completely crowds out the role of Rosca. However, when credit market is present but imperfect, we show that Rosca and the formal credit market can complement each other in improving social welfare."
+        }
+      ],
+      "readFrom": "abstract",
+      "observedAt": "2026-10-08",
+      "design": "theoretical",
+      "population": "risk-averse participants with private income shocks"
+    },
+    {
+      "item": {
+        "id": "chiteji2002",
+        "type": "article-journal",
+        "title": "Promises kept: enforcement and the role of rotating savings and credit associations in an economy",
+        "author": [
+          {
+            "family": "Chiteji",
+            "given": "Ngina"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2002
+            ]
+          ]
+        },
+        "container-title": "Journal of International Development",
+        "DOI": "10.1002/jid.847",
+        "URL": "https://doi.org/10.1002/jid.847"
+      },
+      "findings": [
+        {
+          "finding": "Enforcement costs determine the desirability of rosca formation, with implications for the viability of roscas through the development process.",
+          "exactSourceLanguage": "A connection between enforcement costs and the desirability of rosca formation is illustrated"
+        }
+      ],
+      "readFrom": "abstract",
+      "observedAt": "2026-10-08",
+      "design": "theoretical"
+    },
+    {
+      "item": {
+        "id": "koike2018",
+        "type": "article-journal",
+        "title": "Reciprocity and exclusion in informal financial institutions: an experimental study of rotating savings and credit associations",
+        "author": [
+          {
+            "family": "Koike",
+            "given": "Shimpei"
+          },
+          {
+            "family": "Nakamaru",
+            "given": "Mayuko"
+          },
+          {
+            "family": "Otaka",
+            "given": "Tokinao"
+          },
+          {
+            "family": "Shimao",
+            "given": "Hajime"
+          },
+          {
+            "family": "Shimomura",
+            "given": "Ken-Ichi"
+          },
+          {
+            "family": "Yamato",
+            "given": "Takehiko"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2018
+            ]
+          ]
+        },
+        "container-title": "PLOS ONE",
+        "DOI": "10.1371/journal.pone.0202878",
+        "URL": "https://doi.org/10.1371/journal.pone.0202878"
+      },
+      "findings": [
+        {
+          "finding": "Excluding low contributors by vote raised contribution rates before and after receiving the pot; members reciprocated and revenged; an exogenous punishment barring receipt without prior contribution did not raise contributions.",
+          "exactSourceLanguage": "Excluding low contributors from ROSCA groups by voting increased contribution rates both before and after the receipt of returns."
+        }
+      ],
+      "readFrom": "abstract",
+      "observedAt": "2026-10-08",
+      "design": "field-experiment",
+      "population": "laboratory experiment on fixed roscas where receipt order is known",
+      "notFound": [
+        "Number of subjects not in the abstract."
+      ]
+    },
+    {
+      "item": {
+        "id": "czura2022",
+        "type": "article-journal",
+        "title": "Financial market responses to a natural disaster: evidence from credit networks and the Indian Ocean tsunami",
+        "author": [
+          {
+            "family": "Czura",
+            "given": "Kristina"
+          },
+          {
+            "family": "Klonner",
+            "given": "Stefan"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2022
+            ]
+          ]
+        },
+        "container-title": "Journal of Development Economics",
+        "DOI": "10.1016/j.jdeveco.2022.102996",
+        "URL": "https://doi.org/10.1016/j.jdeveco.2022.102996"
+      },
+      "findings": [
+        {
+          "finding": "After the 2004 tsunami the supply of funds in rosca credit networks stayed stable while demand by small and medium entrepreneurs rose, and funds were channelled from wage-employed members and commercial investors to entrepreneurs.",
+          "exactSourceLanguage": "We find that the supply of funds in these credit networks remained remarkably stable, while demand by small and medium-scale entrepreneurs increased significantly."
+        }
+      ],
+      "readFrom": "abstract",
+      "observedAt": "2026-10-08",
+      "design": "empirical-study",
+      "country": [
+        "IN"
+      ],
+      "population": "roscas along the South Indian coast after the 2004 tsunami",
+      "notFound": [
+        "Number of roscas and members not in the abstract."
+      ]
+    },
+    {
+      "item": {
+        "id": "muchapireyi2025",
+        "type": "manuscript",
+        "title": "Trustless: participation in ROSCA games",
+        "author": [
+          {
+            "family": "Muchapireyi",
+            "given": "Humphrey Takunda"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025
+            ]
+          ]
+        },
+        "container-title": "Preprints.org",
+        "DOI": "10.20944/preprints202511.1427.v1",
+        "URL": "https://doi.org/10.20944/preprints202511.1427.v1"
+      },
+      "findings": [
+        {
+          "finding": "Proposes anonymity-rating pools with fees and penalties as collateral and variable-length cycles, with ex-ante solvency from concentration bounds; reports that Zimbabwean rounds now vary the payout form from cash to bank transfer, mobile money and goods.",
+          "exactSourceLanguage": "we propose a mechanism for rotational savings and credit associations (ROSCAs) by matching players into pools based on an anonymity rating while privacy and regulatory auditability are preserved; and fees and penalties guarantee collateral"
+        }
+      ],
+      "readFrom": "abstract",
+      "observedAt": "2026-10-08",
+      "design": "theoretical",
+      "country": [
+        "ZW"
+      ],
+      "population": "proposed anonymity-matched ROSCA pools; Zimbabwe rounds",
+      "notFound": [
+        "No deployed contract or measured default rate is reported in the abstract."
+      ]
+    }
+  ],
+  "searches": [
+    {
+      "register": "openalex",
+      "variables": {
+        "search": "Besley Coate Loury economics of rotating savings and credit associations",
+        "per_page": "6"
+      },
+      "observedAt": "2026-10-08",
+      "count": 281,
+      "included": [
+        "besley1994"
+      ],
+      "reading": "The register does not return the 1993 American Economic Review paper (cited by the house ROSCA term); the 1994 Review of Economic Studies paper by the same authors was located by Crossref and read."
+    },
+    {
+      "register": "openalex",
+      "variables": {
+        "search": "Anderson Baland economics of roscas intrahousehold resource allocation Kenya",
+        "per_page": "6"
+      },
+      "observedAt": "2026-10-08",
+      "count": 172,
+      "included": [
+        "andersonbaland2002"
+      ]
+    },
+    {
+      "register": "openalex",
+      "variables": {
+        "search": "Gugerty you can't save alone commitment ROSCA Kenya",
+        "per_page": "6"
+      },
+      "observedAt": "2026-10-08",
+      "count": 124,
+      "included": [
+        "gugerty2007",
+        "casaburi2019"
+      ]
+    },
+    {
+      "register": "openalex",
+      "variables": {
+        "search": "Klonner bidding ROSCA chit funds private information",
+        "per_page": "6"
+      },
+      "observedAt": "2026-10-08",
+      "count": 12,
+      "included": [
+        "fang2015"
+      ]
+    },
+    {
+      "register": "openalex",
+      "variables": {
+        "search": "Global Findex savings clubs participation informal savings group",
+        "per_page": "6"
+      },
+      "observedAt": "2026-10-08",
+      "count": 260,
+      "included": [],
+      "reading": "Returns savings-group research reviews (Karlan, Ratan and Zinman 2014) and a Kenyan savings-club storage experiment; no Global Findex ROSCA participation figure surfaced through this register."
+    },
+    {
+      "register": "openalex",
+      "variables": {
+        "search": "rotating savings credit association default enforcement randomized",
+        "per_page": "6"
+      },
+      "observedAt": "2026-10-08",
+      "count": 1075,
+      "included": [
+        "chiteji2002",
+        "koike2018"
+      ]
+    },
+    {
+      "register": "web",
+      "variables": {
+        "url": "https://repository.tilburguniversity.edu/bitstreams/e0aa67ad-13fe-4c6f-9556-8a12f737411e/download"
+      },
+      "observedAt": "2026-10-08",
+      "count": 1,
+      "included": [
+        "andersonbaland2002"
+      ],
+      "reading": "Tilburg repository full text of Anderson and Baland."
+    },
+    {
+      "register": "openalex",
+      "variables": {
+        "search": "You Can't Save Alone: Commitment in Rotating Savings and Credit Associations in Kenya",
+        "per_page": "2"
+      },
+      "observedAt": "2026-10-08",
+      "count": 2,
+      "included": [
+        "gugerty2007"
+      ],
+      "reading": "Gugerty 2007 abstract."
+    },
+    {
+      "register": "openalex",
+      "variables": {
+        "search": "trustless rosca blockchain smart contract rotating savings"
+      },
+      "observedAt": "2026-10-08",
+      "count": 0,
+      "included": [],
+      "reading": "Searched for an on-chain ROSCA evaluation with deployed measurements; the one qualifying hit is a 2025 preprint (Muchapireyi) proposing a mechanism, with no deployed measurements."
+    }
+  ]
 }

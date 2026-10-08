@@ -1,0 +1,219 @@
+{
+  "$schema": "../../../../../../../../data/records/schema/literature-measurement.schema.json",
+  "id": "cross-chain-stablecoin-transfer",
+  "kind": "literature-measurement",
+  "question": "How does native USDC move between Base, Arbitrum, Optimism, Solana and Gnosis with CCTP v2, what does it cost and who attests, and how does value reach Hive?",
+  "frame": {
+    "population": "USDC on Base, Arbitrum, Optimism, Ethereum, Solana, Gnosis",
+    "exposure": "CCTP v2 burn-and-mint with Fast Transfer",
+    "comparator": "lock-and-mint and intent bridges",
+    "outcomes": [
+      "domains and addresses",
+      "attester set and threshold",
+      "Fast Transfer fee and allowance",
+      "Gnosis and Hive coverage"
+    ]
+  },
+  "notes": [
+    "../../content/text/documents/articles/notes/2026/10/08/2026-10-08-cross-chain-stablecoin-transfer.md"
+  ],
+  "sources": [
+    {
+      "item": {
+        "id": "circlechains2026",
+        "type": "webpage",
+        "title": "developers.circle.com CCTP supported blockchains and domains",
+        "author": [
+          {
+            "literal": "Circle CCTP Chains"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "URL": "https://developers.circle.com/cctp/cctp-supported-blockchains"
+      },
+      "design": "protocol-documentation",
+      "readFrom": "first-party-docs",
+      "observedAt": "2026-10-08",
+      "findings": [
+        {
+          "finding": "Domains: Ethereum 0, Avalanche 1, OP Mainnet 2, Arbitrum 3, Noble 4, Solana 5, Base 6, Polygon PoS 7, Sui 8, Aptos 9, Unichain 10, Linea 11, Codex 12, Sonic 13, World Chain 14, Monad 15, Sei 16, BNB Smart Chain 17, XDC 18, HyperEVM 19, Ink 21, Plume 22, Starknet 25, Arc 26, Stellar 27, EDGE 28, Injective 29, Morph 30, Pharos 31, Cronos 32, Plasma 33, X Layer 37. Fast Transfer as a source on Arbitrum, Base, Ethereum, OP Mainnet, Solana, Linea, Unichain, World Chain, Ink and others.",
+          "exactSourceLanguage": "Fast Transfer is \"available for source chains only when it provides a meaningful speed improvement over standard burn attestation times.\""
+        },
+        {
+          "finding": "Gnosis does not appear in the supported blockchains table or the domain list.",
+          "exactSourceLanguage": "table read"
+        }
+      ],
+      "notFound": [
+        "Gnosis domain",
+        "Hive domain"
+      ]
+    },
+    {
+      "item": {
+        "id": "circlecontracts2026",
+        "type": "webpage",
+        "title": "developers.circle.com CCTP EVM smart contracts and technical guide",
+        "author": [
+          {
+            "literal": "Circle CCTP Contracts"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "URL": "https://developers.circle.com/cctp/evm-smart-contracts"
+      },
+      "design": "protocol-documentation",
+      "readFrom": "first-party-docs",
+      "observedAt": "2026-10-08",
+      "findings": [
+        {
+          "finding": "On every listed mainnet EVM chain except EDGE: TokenMessengerV2 0x28b5a0e9C621a5BadaA536219b3a228C8168cf5d, MessageTransmitterV2 0x81D40F21F12A8F0E3252Bccb954D722d4c464B64, TokenMinterV2 0xfd78EE919681417d192449715b2594ab58f5D002, MessageV2 0xec546b6B005471ECf012e5aF77FBeC07e0FD8f78.",
+          "exactSourceLanguage": "address table"
+        },
+        {
+          "finding": "Hooks are metadata attached to a burn message; the contracts do not execute them. Iris signs messages at the finalized level for standard transfers (finality threshold 2000); an expiration 24 hours ahead is encoded before signing; contracts audited by ChainSecurity and OtterSec.",
+          "exactSourceLanguage": "\"Hooks in CCTP V2 are metadata that can be attached to a burn message.\"; \"Hook execution is left entirely to the integrator.\"; \"Circle's offchain attestation service, Iris, signs the message.\""
+        }
+      ],
+      "notFound": [
+        "burn limits and fee tables in the technical guide (links only)"
+      ]
+    },
+    {
+      "item": {
+        "id": "cctponchain2026",
+        "type": "dataset",
+        "title": "cast reads of CCTP v2 contracts on Base, Arbitrum, Optimism and Gnosis (2026-10-08)",
+        "author": [
+          {
+            "literal": "CCTP On Chain"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "URL": "https://basescan.org/address/0x81D40F21F12A8F0E3252Bccb954D722d4c464B64"
+      },
+      "design": "on-chain-measurement",
+      "readFrom": "on-chain-read",
+      "observedAt": "2026-10-08",
+      "findings": [
+        {
+          "finding": "Both contracts are 2175-byte proxies at the same addresses on Base (domain 6), Arbitrum (3) and Optimism (2): localDomain() returns 6, 3, 2; version() 1; maxMessageBodySize 8192; signatureThreshold() 2; on Base getNumEnabledAttesters() 2, MessageTransmitter owner 0x9c563B7B08C5506C4aae279E1f66658D5f9fD7B8, attesterManager 0xDf265e0329F6A08a772B48191b33bDC624499b84, TokenMessenger feeRecipient 0xBEA3621Ef88850E062cF4baCCaD72877E2c3e4Eb; TokenMinter burnLimitsPerMessage(Base USDC 0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913) = 1e13 (10,000,000 USDC); Base USDC totalSupply 4,353,798,104,767,051 (4.35 billion USDC).",
+          "exactSourceLanguage": "cast call signatureThreshold()(uint256)=2; getNumEnabledAttesters()=2"
+        },
+        {
+          "finding": "On Gnosis both addresses have codesize 0 and the Base USDC address has no code, so the contracts are not deployed there.",
+          "exactSourceLanguage": "cast codesize 0x28b5...cf5d --rpc-url gnosis = 0"
+        }
+      ]
+    },
+    {
+      "item": {
+        "id": "cctpiris2026",
+        "type": "dataset",
+        "title": "iris-api.circle.com v2 burn fees and fastBurn allowance (2026-10-08T19:49)",
+        "author": [
+          {
+            "literal": "Circle Iris API"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "URL": "https://iris-api.circle.com/v2/fastBurn/USDC/allowance"
+      },
+      "design": "dashboard-measurement",
+      "readFrom": "api-read",
+      "observedAt": "2026-10-08",
+      "findings": [
+        {
+          "finding": "Fees: Base to Arbitrum finalityThreshold 1000 (fast) minimumFee 1.3 basis points, 2000 (standard) 0; Arbitrum to Base fast 1.4, standard 0.",
+          "exactSourceLanguage": "GET /v2/burn/USDC/fees/6/3 -> [{\"finalityThreshold\":1000,\"minimumFee\":1.3},{\"finalityThreshold\":2000,\"minimumFee\":0}]"
+        },
+        {
+          "finding": "Fast Transfer allowance remaining 53,250,260.985516 USDC at 2026-10-08T19:49:05Z.",
+          "exactSourceLanguage": "GET /v2/fastBurn/USDC/allowance -> {\"allowance\":53250260.985516}"
+        }
+      ]
+    },
+    {
+      "item": {
+        "id": "llamausdc2026",
+        "type": "dataset",
+        "title": "stablecoins.llama.fi stablecoins with chainCirculating (2026-10-08)",
+        "author": [
+          {
+            "literal": "DeFiLlama USDC"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "URL": "https://stablecoins.llama.fi/stablecoins?includePrices=true"
+      },
+      "design": "dashboard-measurement",
+      "readFrom": "api-read",
+      "observedAt": "2026-10-08",
+      "findings": [
+        {
+          "finding": "USDC circulating 66.24 billion USD in total: Ethereum 45,772 million, Solana 6,837 million, Base 4,352 million, Arbitrum 2,480 million, Gnosis 12.8 million. USDT: Ethereum 76,570 million, Solana 2,883 million, Gnosis 0.7 million, Arbitrum listed at 0.0 under that key.",
+          "exactSourceLanguage": "chainCirculating.current.peggedUSD"
+        },
+        {
+          "finding": "DAI on Arbitrum 16.9 million, on Ethereum 4,228.7 million; USDS on Ethereum 7,013.8 million; USDe on Solana 503.8 million.",
+          "exactSourceLanguage": "chainCirculating"
+        }
+      ],
+      "notFound": [
+        "Optimism row under the key names tried (Optimism)"
+      ]
+    }
+  ],
+  "searches": [
+    {
+      "register": "web",
+      "variables": {
+        "q": "native USDC on Gnosis Chain CCTP"
+      },
+      "observedAt": "2026-10-08",
+      "count": 0,
+      "included": [],
+      "reading": "Circle lists no Gnosis domain; DeFiLlama shows 12.8 million USDC on Gnosis, which is a bridged representation, not a Circle-minted balance on that chain by CCTP; the token address of that representation was not read."
+    },
+    {
+      "register": "web",
+      "variables": {
+        "q": "Hive HBD wrapped on EVM, HBD exchange volume"
+      },
+      "observedAt": "2026-10-08",
+      "count": 0,
+      "included": [],
+      "reading": "CoinGecko returned an empty ticker list and 5.10 USD 24-hour volume for HBD; no wrapped HBD contract on an EVM chain was found in CoinGecko, DeFiLlama or the Magi repositories (see the layer-2 record)."
+    }
+  ]
+}

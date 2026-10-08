@@ -1,0 +1,318 @@
+{
+  "$schema": "../../../../../../../../data/records/schema/literature-measurement.schema.json",
+  "id": "hive-layer2-and-smart-contract-options",
+  "kind": "literature-measurement",
+  "question": "What smart-contract and layer-2 options exist on or around Hive as of 2026-10-08, how do they custody and reach other chains, and what has been measured?",
+  "frame": {
+    "population": "Hive Engine sidechain, Magi/VSC layer-2, HAF and hived itself",
+    "exposure": "peg accounts, committee keys, bridge repos, on-chain balances",
+    "comparator": "a pool contract on an EVM chain",
+    "outcomes": [
+      "custody model",
+      "consensus",
+      "EVM reach",
+      "status"
+    ]
+  },
+  "notes": [
+    "../../content/text/documents/articles/notes/2026/10/08/2026-10-08-hive-layer2-and-smart-contract-options.md"
+  ],
+  "sources": [
+    {
+      "item": {
+        "id": "hiveenginerpc2026",
+        "type": "dataset",
+        "title": "api.hive-engine.com/rpc blockchain, contracts: getLatestBlockInfo, tokens.tokens, witnesses.witnesses and witnesses.params",
+        "author": [
+          {
+            "literal": "Hive Engine RPC"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "URL": "https://api.hive-engine.com/rpc/contracts"
+      },
+      "design": "on-chain-measurement",
+      "readFrom": "api-read",
+      "observedAt": "2026-10-08",
+      "findings": [
+        {
+          "finding": "Sidechain head block 63,539,307 references Hive block 110,602,657: the sidechain is live and follows Hive block by block.",
+          "exactSourceLanguage": "getLatestBlockInfo: blockNumber 63539307, refHiveBlockNumber 110602657"
+        },
+        {
+          "finding": "Pegged tokens: SWAP.HIVE issued by honey-swap (supply field 9007199254740991, circulating 9007199254740934.51); SWAP.HBD issued by graphene-swap, supply 219,175.00902 = circulating 219,175.00902; SWAP.USDT issued by he-nuked, supply 1,161,568.998455, description \"DEPRECATED. DO NOT TRADE!\"; BEE (Hive Engine token) supply 5,084,208.64, staked 519,883.92.",
+          "exactSourceLanguage": "tokens.tokens rows"
+        },
+        {
+          "finding": "Each sidechain transaction is recorded with sender, contract, action and payload, for example sender scr00ge, contract market, action buy, payload {\"symbol\":\"CHAOS\",\"quantity\":\"10\",\"price\":\"6.26031604\",\"isSignedWithActiveKey\":true}, with the Hive block it references.",
+          "exactSourceLanguage": "getLatestBlockInfo transactions[0]"
+        },
+        {
+          "finding": "Sidechain consensus parameters: 21 witness slots, 20 top witnesses, 30 approvals per account, witnessSignaturesRequired 13, numberOfApprovedWitnesses 109, totalEnabledApprovalWeight 1,397,241; 28 enabled witnesses (hewitness, tribaldexwitness, actifit-he, kanibot, ph1102.ctp, ...).",
+          "exactSourceLanguage": "witnesses.params row"
+        }
+      ]
+    },
+    {
+      "item": {
+        "id": "hiveenginepeg2026",
+        "type": "software",
+        "title": "hive-engine/hivesmartcontracts contracts/hivepegged.js (raw.githubusercontent.com read 2026-10-08)",
+        "author": [
+          {
+            "literal": "Hive Engine Contracts"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "URL": "https://github.com/hive-engine/hivesmartcontracts/blob/master/contracts/hivepegged.js"
+      },
+      "design": "protocol-source-code",
+      "readFrom": "source-code",
+      "observedAt": "2026-10-08",
+      "findings": [
+        {
+          "finding": "Repository is the Hive Engine node software, pushed 2026-10-06, 18 stars; contracts are JavaScript files (tokens, market, marketpools, nft, witnesses, hivepegged, distribution, ...). The SWAP.HIVE buy action sends SWAP.HIVE minus a 0.75% fee (minimum 0.001 HIVE) to the buyer; \"SBD not supported\" in that action.",
+          "exactSourceLanguage": "let fee = api.BigNumber(quantityToSend).multipliedBy('0.0075').toFixed(3); ... } else { // SBD not supported }"
+        }
+      ]
+    },
+    {
+      "item": {
+        "id": "hiveenginebridge2026",
+        "type": "dataset",
+        "title": "api.hive.blog get_accounts for honey-swap, graphene-swap, hive-engine",
+        "author": [
+          {
+            "literal": "Hive Engine Bridge Accounts"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "URL": "https://api.hive.blog"
+      },
+      "design": "on-chain-measurement",
+      "readFrom": "api-read",
+      "observedAt": "2026-10-08",
+      "findings": [
+        {
+          "finding": "honey-swap holds 601,521.210 HIVE and 28.864 HBD; active authority is one key at weight 1 with threshold 1 (no multisig).",
+          "exactSourceLanguage": "get_accounts honey-swap active {\"weight_threshold\":1,\"key_auths\":[[\"STM5Xs1A...\",1]]}"
+        },
+        {
+          "finding": "graphene-swap holds 6,538.781 HBD liquid plus 40,066.897 HBD in savings (46,605.678 HBD) and 273.418 HIVE; one key, threshold 1. SWAP.HBD supply is 219,175.009, so the HBD held in this account is 21.3% of the supply.",
+          "exactSourceLanguage": "get_accounts graphene-swap"
+        },
+        {
+          "finding": "hive-engine holds 9,517.968 HIVE; owner and active thresholds are 1 with no account authorities.",
+          "exactSourceLanguage": "get_accounts hive-engine"
+        }
+      ],
+      "notFound": [
+        "multisig authority on the SWAP.HBD peg account (the brief expected a Hive-Engine multi-sig bridge; the authorities read are threshold 1 with a single key)"
+      ]
+    },
+    {
+      "item": {
+        "id": "magidocs2026",
+        "type": "webpage",
+        "title": "vsc-eco/docs: FAQ, Native Asset Mapping, Feeless In-Protocol Transactions, Stablecoin (HBD) as the Base Asset",
+        "author": [
+          {
+            "literal": "Magi Docs"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "URL": "https://github.com/vsc-eco/docs/blob/main/src/content/docs/FAQ.md"
+      },
+      "design": "protocol-documentation",
+      "readFrom": "first-party-docs",
+      "observedAt": "2026-10-08",
+      "findings": [
+        {
+          "finding": "Mainnet launch date, no token, WASM contracts.",
+          "exactSourceLanguage": "\"Mainnet has launched March 31st 2025.\"; \"Magi uses WebAssembly (or WASM) to power it's smart contracts.\"; \"No, Magi uses the native Hive tokens for all transactions on the network.\""
+        },
+        {
+          "finding": "Every liquidity pool is paired with HBD (pools needed grows O(n) rather than O(n^2)).",
+          "exactSourceLanguage": "\"Magi employs Hive Backed Dollars (HBD), an algorithmic stablecoin, as the base asset in all liquidity pools.\""
+        },
+        {
+          "finding": "Resource credits on Magi are tied to HBD held and regenerate about 25% per day.",
+          "exactSourceLanguage": "\"They are **tied to the amount of HBD** an account holds.\"; \"regenerates over time at a rate of approximately 25% per day\""
+        },
+        {
+          "finding": "Native Asset Mapping: assets from other chains are held in Magi vaults on their home chain, secured by the validator system; Litecoin, Dash and Solana support described as planned.",
+          "exactSourceLanguage": "\"The received BTC remains in the Magi vault on the Bitcoin mainnet and is secured by the Magi protocol validator system. ... (Litecoin, Dash, and Solana support is planned\""
+        }
+      ]
+    },
+    {
+      "item": {
+        "id": "maginode2026",
+        "type": "software",
+        "title": "vsc-eco/go-vsc-node README and docs (commit 3d4c965f, 2026-10-08): index.md, tss.md, consensus-upgrades.md, magi-lean-audit.md",
+        "author": [
+          {
+            "literal": "Magi Node"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "URL": "https://github.com/vsc-eco/go-vsc-node/blob/main/docs/index.md"
+      },
+      "design": "protocol-source-code",
+      "readFrom": "source-code",
+      "observedAt": "2026-10-08",
+      "findings": [
+        {
+          "finding": "Architecture: a layer-2 on top of the Hive block stream providing threshold signing, contract execution and bridging; networks vsc-mainnet, vsc-testnet, vsc-devnet; gateway wallet account vsc.gateway (system-config.go lines 304, 407, 499).",
+          "exactSourceLanguage": "\"It implements a layer-2 network on top of the Hive blockchain, providing threshold signing, contract execution, and bridging to external chains.\""
+        },
+        {
+          "finding": "Committee and keys: tss-lib ECDSA and EdDSA keygen by the current witness committee, reshare on rotation, activation only after a leader posts vsc.tss_commitment to Hive with a verified BLS quorum proof; only the slot leader broadcasts the final Hive custom_json operations.",
+          "exactSourceLanguage": "\"Only the slot leader is responsible for broadcasting the final Hive custom JSON operations.\""
+        },
+        {
+          "finding": "Consensus upgrades: the active version is a pure function of the on-chain election; a version floor rises only when at least 80% of committee stake announces it (ConsensusVersionActivationNum/Den 4/5).",
+          "exactSourceLanguage": "\"stake-readiness guard passes (≥ ConsensusVersionActivationNum/Den, default 80%, of committee stake already announces the target)\""
+        },
+        {
+          "finding": "The project's own audit dated 2026-04-29 lists, as Critical, that the epoch-boundary settlement handler is effectively disabled (selfID = \"\"), and, as High, a process-local duplicate-transaction guard that is not consensus-safe.",
+          "exactSourceLanguage": "\"Critical ... Settlement boundary handler is effectively disabled\"; \"Duplicate-tx guard is process-local memory, not consensus-state safe\""
+        },
+        {
+          "finding": "Bridge components: mapping-bot monitors UTXO chains (BTC, LTC, DASH, DOGE, BCH); zk Ethereum light client: sp1-helios-magi proves beacon-chain finality with SP1 Groth16 and zk-header-verifier (WASM, permissionless submitProof, max 12 headers per transaction, 10,000-block retention) stores headers read by the EVM bridge.",
+          "exactSourceLanguage": "\"Permissionless proof submission with hash chain verification. Read by the EVM bridge via contracts.read() for trustless deposit/withdrawal verification.\""
+        }
+      ],
+      "notFound": [
+        "committee size and threshold in the mainnet election (looked for in system-config.go; the committee is the elected witness set read from the chain)"
+      ]
+    },
+    {
+      "item": {
+        "id": "vscgateway2026",
+        "type": "dataset",
+        "title": "api.hive.blog get_accounts vsc.gateway, magi.network, vsc.network",
+        "author": [
+          {
+            "literal": "VSC Gateway Account"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "URL": "https://api.hive.blog"
+      },
+      "design": "on-chain-measurement",
+      "readFrom": "api-read",
+      "observedAt": "2026-10-08",
+      "findings": [
+        {
+          "finding": "vsc.gateway holds 217,175.354 HIVE, 4,702.248 HBD and 3,866.117 HBD in savings; owner and active authorities are each 18 keys with weights 150, 149 (x10), 157, 153, 224, 298, 574, 966, 1632, 2237, 2417 summing to 10000 with threshold 6667.",
+          "exactSourceLanguage": "get_accounts vsc.gateway active.weight_threshold 6667, 18 key_auths"
+        },
+        {
+          "finding": "magi.network holds 544.629 HIVE and 18.724 HBD; vsc.network holds 5,379.292 HIVE and 57.026 HBD; both have threshold 1 with one account authority and one key in the active set.",
+          "exactSourceLanguage": "get_accounts"
+        }
+      ]
+    },
+    {
+      "item": {
+        "id": "hiveengineaddr2026",
+        "type": "software",
+        "title": "github.com/hive-engine organization repositories (search API, 2026-10-08)",
+        "author": [
+          {
+            "literal": "Hive Engine Repos"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "URL": "https://github.com/hive-engine"
+      },
+      "design": "protocol-source-code",
+      "readFrom": "source-code",
+      "observedAt": "2026-10-08",
+      "findings": [
+        {
+          "finding": "hivesmartcontracts pushed 2026-10-06; hivesmartcontracts-wiki 2026-07-10; outpost 2026-08-22; hive-engine 2026-06-22; steemsmartcontracts (the Steem-era fork) last pushed 2023-03-03.",
+          "exactSourceLanguage": "repository list with pushed_at"
+        }
+      ]
+    }
+  ],
+  "searches": [
+    {
+      "register": "github-api",
+      "variables": {
+        "q": "org:vsc-eco"
+      },
+      "observedAt": "2026-10-08",
+      "count": 30,
+      "included": [
+        "magidocs2026",
+        "maginode2026"
+      ],
+      "reading": "The organization lists go-vsc-node (Go, pushed 2026-10-08), utxo-mapping, account-mapping, sp1-helios-magi, zk-header-verifier, crosschain-sdk (HIVE, HBD and BTC swaps, targets Hive Keychain, PeakD and Ecency), altera-app, market-sdk, token-sdk; the older TypeScript vsc-node was last pushed 2025-01-21."
+    },
+    {
+      "register": "web",
+      "variables": {
+        "q": "hive-eth bridge OR hive wrapped HBD ERC20 contract"
+      },
+      "observedAt": "2026-10-08",
+      "count": 0,
+      "included": [],
+      "reading": "No first-party source for a deployed ERC-20 wrapper of HIVE or HBD on an EVM chain was found; CoinGecko has no HBD contract address and DeFiLlama lists no HBD asset. The EVM-facing work found is the Magi zk-light-client bridge repos, whose deployment on an EVM chain was not found."
+    },
+    {
+      "register": "web",
+      "variables": {
+        "q": "VSC Magi mainnet 2026"
+      },
+      "observedAt": "2026-10-08",
+      "count": 10,
+      "included": [],
+      "reading": "A third-party summary reported a testnet marketplace initialised 2026-05-19 and a mainnet soft launch on 2025-03-31; only the FAQ above is first party for the launch date."
+    }
+  ]
+}
