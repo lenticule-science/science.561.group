@@ -131,4 +131,4 @@ export function dailySpread(dateIso, seedSalt = "routine-read") {
     provenance: Object.freeze({ method: SEEDED_DRAW_METHOD, seed }),
   });
 }
-import { mulberry32 } from "@red-cup-engineering/computer-data-engineering-services-section/randomization";
+import { mulberry32 } from "@red-cup-engineering/computer-data-services-section/randomization";
