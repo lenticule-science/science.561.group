@@ -1,0 +1,24 @@
+{
+  "type": "AdvanceReadingProfile",
+  "version": 1,
+  "observedOn": "2026-10-02",
+  "invite": "opens",
+  "reminder": {
+    "onSaleOffsetDays": 0
+  },
+  "reviewReadout": {
+    "onSaleOffsetDays": 14
+  },
+  "launchReadout": {
+    "onSaleOffsetDays": 30
+  },
+  "windowWeeks": {
+    "min": 2,
+    "max": 8
+  },
+  "sources": [
+    "https://authors.bookfunnel.com/help/send-arcs/",
+    "https://help.booksprout.co/article/133-rules-guidelines-for-authors",
+    "lib/emsenn/services/561-group/services/science-services-section/services/social-science-services-section/services/economics-and-business-science-services-section/services/business-science-services-section/services/marketing-science-services-section/content/text/glossary/terms/advance-reader-copy.md"
+  ]
+}
