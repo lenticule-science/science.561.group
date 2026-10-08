@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "type": "OlfactorySceneIntermediateRepresentation",
+  "serviceId": "urn:561:csm:olfactory-scene-ir:v1",
+  "recordedAt": "2026-10-03",
+  "intent": "Vendor-neutral intermediate representation for authoring, compiling, simulating, and validating scent experiences across active emitters and scent-bearing materials.",
+  "scene": {
+    "id": "urn:example:scene",
+    "timeline": {
+      "start": "event:scene-enter",
+      "end": "event:scene-exit"
+    },
+    "regions": [
+      {
+        "id": "urn:example:region",
+        "targetPercept": {
+          "reference": null,
+          "descriptors": [],
+          "intensity": {
+            "min": 0.0,
+            "max": 1.0
+          }
+        },
+        "temporalEnvelope": {
+          "onsetMaxSeconds": null,
+          "peakWindowSeconds": null,
+          "persistenceMaxSecondsAfterEnd": null
+        },
+        "safetyEnvelope": {
+          "ruleSetVersion": null,
+          "exposureClass": null
+        }
+      }
+    ]
+  },
+  "rendererCapabilityContract": {
+    "requiredFields": [
+      "rendererId",
+      "rendererClass",
+      "activeOrPassive",
+      "availableScentBasis",
+      "outputRange",
+      "onsetLatency",
+      "decayOrPersistence",
+      "spatialCoverage",
+      "triggerModes",
+      "maintenanceState",
+      "calibrationVersion"
+    ],
+    "rendererClasses": [
+      "air-diffuser",
+      "directional-emitter",
+      "scent-cannon",
+      "scent-bearing-polymer",
+      "scent-bearing-coating",
+      "touch-or-friction-release-surface",
+      "thermal-release-object",
+      "scent-card-or-sample",
+      "wearable",
+      "cartridge-device"
+    ]
+  },
+  "environmentModel": {
+    "supportedInputs": [
+      "geometry",
+      "airflow",
+      "hvac-zones",
+      "temperature",
+      "humidity",
+      "guest-paths",
+      "guest-density",
+      "dwell-time"
+    ]
+  },
+  "compileOutputs": [
+    "renderer-assignments",
+    "scent-score",
+    "material-specifications",
+    "trigger-schedule",
+    "predicted-spatial-emission-field",
+    "predicted-guest-path-percepts",
+    "carryover-and-reset-analysis",
+    "consumable-and-maintenance-cost",
+    "obstruction-report",
+    "validation-plan"
+  ],
+  "localToGlobalPolicy": {
+    "localSection": "renderer/zone/time assignment with a locally admissible scent state",
+    "restriction": "predicted or measured compatibility on overlapping space, time, airflow, or guest-path domains",
+    "globalSection": "one scene program whose local assignments remain jointly compatible over all required overlaps",
+    "obstructionExamples": [
+      "previous-scent-carryover-breaks-next-scene",
+      "hvac-cross-zone-contamination",
+      "guest-path-recombination-with-incompatible-backgrounds",
+      "passive-material-prevents-reset",
+      "renderer-latency-breaks-narrative-cue"
+    ]
+  },
+  "validationReceipt": {
+    "required": [
+      "sceneDigest",
+      "rendererInventoryDigest",
+      "environmentModelDigest",
+      "compilerVersion",
+      "ruleSetVersion",
+      "predictedTrajectory",
+      "measuredHumanObservations",
+      "measuredSensorObservations",
+      "deviations",
+      "obstructions",
+      "generatedAt"
+    ]
+  },
+  "claimBoundary": "This contract describes a research and orchestration layer. It does not establish safety certification, exposure compliance, hardware freedom-to-operate, or perceptual efficacy without context-specific validation."
+}
