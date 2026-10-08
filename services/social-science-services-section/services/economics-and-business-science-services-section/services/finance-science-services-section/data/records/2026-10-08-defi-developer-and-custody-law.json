@@ -26,7 +26,7 @@
         "title": "Application of FinCEN's Regulations to Certain Business Models Involving Convertible Virtual Currencies, FIN-2019-G001",
         "author": [
           {
-            "literal": "FinCEN Guidance 2019"
+            "literal": "FinCEN CVC Guidance"
           }
         ],
         "issued": {
@@ -78,7 +78,7 @@
         "title": "Requirements for Certain Transactions Involving Convertible Virtual Currency or Digital Assets; Withdrawal of Notice of Proposed Rulemaking, 91 FR 63514",
         "author": [
           {
-            "literal": "FinCEN Withdrawal 2026"
+            "literal": "FinCEN Unhosted Wallet Withdrawal"
           }
         ],
         "issued": {
@@ -114,7 +114,7 @@
         "title": "18 U.S.C. 1960, Prohibition of unlicensed money transmitting businesses",
         "author": [
           {
-            "literal": "18 USC 1960"
+            "literal": "Unlicensed Money Transmitting Statute"
           }
         ],
         "issued": {
@@ -150,7 +150,7 @@
         "title": "31 CFR 1010.100(ff)(5), Money transmitter",
         "author": [
           {
-            "literal": "31 CFR 1010.100"
+            "literal": "FinCEN Money Transmitter Rule"
           }
         ],
         "issued": {
@@ -406,7 +406,7 @@
         "title": "Sanctions Compliance Guidance for the Virtual Currency Industry (OFAC, October 2021)",
         "author": [
           {
-            "literal": "OFAC Guidance 2021"
+            "literal": "OFAC Virtual Currency Guidance"
           }
         ],
         "issued": {

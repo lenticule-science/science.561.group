@@ -26,7 +26,7 @@
         "title": "26 U.S.C. 1381, Organizations to which Subchapter T part applies",
         "author": [
           {
-            "literal": "26 USC 1381"
+            "literal": "Subchapter T Scope"
           }
         ],
         "issued": {
@@ -58,7 +58,7 @@
         "title": "26 U.S.C. 1382, Taxable income of cooperatives",
         "author": [
           {
-            "literal": "26 USC 1382"
+            "literal": "Subchapter T Taxable Income"
           }
         ],
         "issued": {
@@ -90,7 +90,7 @@
         "title": "26 U.S.C. 1388, Definitions; patronage dividend",
         "author": [
           {
-            "literal": "26 USC 1388"
+            "literal": "Subchapter T Definitions"
           }
         ],
         "issued": {
@@ -130,7 +130,7 @@
         "title": "26 CFR 301.7701-3, Classification of certain business entities",
         "author": [
           {
-            "literal": "26 CFR 301.7701-3"
+            "literal": "Entity Classification Rule"
           }
         ],
         "issued": {
@@ -165,7 +165,7 @@
         "title": "Revenue Ruling 2023-14 (staking rewards)",
         "author": [
           {
-            "literal": "Rev. Rul. 2023-14"
+            "literal": "Staking Revenue Ruling"
           }
         ],
         "issued": {
@@ -264,7 +264,7 @@
         "title": "Public Law 119-5 (H.J. Res. 25), congressional disapproval of IRS rule \"Gross Proceeds Reporting by Brokers That Regularly Provide Services Effectuating Digital Asset Sales\" (Congress.gov API)",
         "author": [
           {
-            "literal": "Public Law 119-5"
+            "literal": "DeFi Broker Disapproval"
           }
         ],
         "issued": {
