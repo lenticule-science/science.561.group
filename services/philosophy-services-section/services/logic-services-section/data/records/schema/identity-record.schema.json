@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://research-notes.561.group/hacking/library/predication-notes/composting/library/entity-set/library/entity/library/identity-record/identity-record.schema.json",
+  "title": "identity-record",
+  "description": "Substrate entry binding an identity-key (public component) to a substrate entity (the holder). The record's id is the canonical-form hash of the public-key-bytes — content-derived per hash-discipline. Private keys are never substrate content.",
+  "type": "object",
+  "required": ["id", "description", "holder", "scheme", "public-key-bytes", "uses", "revocation-status"],
+  "additionalProperties": true,
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Canonical-form hash of the public-key-bytes."
+    },
+    "description": {"type": "string", "minLength": 1},
+    "holder": {
+      "type": "string",
+      "description": "Reference to the substrate entity this key is bound to."
+    },
+    "scheme": {
+      "type": "string",
+      "enum": ["ed25519", "x25519", "rsa-4096", "nacl-sealedbox"],
+      "description": "Signature/encryption scheme. Determines verification and encryption procedures."
+    },
+    "public-key-bytes": {
+      "type": "string",
+      "description": "Public component, canonical-form-encoded (typically base64 or hex)."
+    },
+    "uses": {
+      "type": "string",
+      "enum": ["signing", "encryption", "signing-and-encryption"]
+    },
+    "created-at": {"type": "string", "format": "date-time"},
+    "valid-from": {"type": "string", "format": "date-time"},
+    "valid-until": {"type": "string", "format": "date-time"},
+    "predecessor": {
+      "type": "string",
+      "description": "Optional cell-id of the prior identity-record this replaces (for key rotation). Predecessor chain is acyclic."
+    },
+    "revocation-status": {
+      "type": "string",
+      "enum": ["active", "revoked", "compromised"]
+    },
+    "revoked-at": {"type": "string", "format": "date-time"},
+    "closure-kind": {"const": "identity"}
+  }
+}

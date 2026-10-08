@@ -1,0 +1,112 @@
+{
+  "profile": "shared-typed-substrate",
+  "version": 1,
+  "typeEngineBinding": {
+    "package": "@red-cup-engineering/computer-data-engine",
+    "entrypoint": "./types",
+    "schema": "schema/shared-typed-substrate-profile.schema.json"
+  },
+  "releaseTrustContract": {
+    "schema": "schema/artifact-release-trust-receipt.schema.json",
+    "consumer": "ArtifactRelease"
+  },
+  "settledTerms": [
+    {
+      "name": "Thing",
+      "source": "lib/emsenn/services/561-group/services/science-services-section/services/philosophy-services-section/content/text/glossary/terms/thing.md",
+      "admission": "admitted"
+    },
+    {
+      "name": "Relation",
+      "source": "lib/emsenn/services/561-group/services/science-services-section/services/philosophy-services-section/content/text/glossary/terms/relation.md",
+      "admission": "admitted"
+    },
+    {
+      "name": "Identity",
+      "source": "lib/emsenn/services/561-group/services/science-services-section/services/philosophy-services-section/content/text/glossary/terms/identity.md",
+      "admission": "source-present-unadmitted"
+    },
+    {
+      "name": "Graph",
+      "source": "lib/emsenn/services/561-group/services/science-services-section/services/information-science-services-section/services/math-services-section/content/text/glossary/terms/graph.md",
+      "admission": "source-present-unadmitted"
+    }
+  ],
+  "identityKinds": ["entity", "content", "assertion", "evidence"],
+  "graphProjection": {
+    "status": "derived-projection",
+    "source": "lib/emsenn/services/561-group/services/science-services-section/services/information-science-services-section/services/math-services-section/content/text/glossary/terms/graph.md",
+    "derivedFrom": "Relation"
+  },
+  "contextualSpecializations": [
+    {
+      "term": "Cell",
+      "context": "GFRTU local universe",
+      "source": "lib/emsenn/services/561-group/services/science-services-section/services/philosophy-services-section/services/relationality-services-section/content/text/glossary/terms/cell.md",
+      "admission": "admitted"
+    },
+    {
+      "term": "Cell",
+      "context": "biology",
+      "source": "lib/emsenn/services/561-group/services/science-services-section/services/natural-science-services-section/services/biological-science-services-section/content/text/glossary/terms/cell.md",
+      "admission": "admitted"
+    },
+    {
+      "term": "Actor",
+      "context": "ActivityPub protocol entity",
+      "source": "lib/emsenn/services/561-group/services/science-services-section/services/engineering-science-services-section/services/computer-science-services-section/services/computer-systems-science-services-section/services/computer-web-science-services-section/services/activitypub-services-section/content/text/glossary/terms/actor.md",
+      "admission": "admitted"
+    },
+    {
+      "term": "Actor",
+      "context": "record-producing person or office",
+      "source": "lib/emsenn/services/561-group/services/science-services-section/services/information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/glossary/terms/actor.md",
+      "admission": "source-present-unadmitted"
+    },
+    {
+      "term": "Resource",
+      "context": "claim-bearing entity read for understanding",
+      "source": "lib/emsenn/services/561-group/services/science-services-section/services/information-science-services-section/content/text/glossary/terms/resource.md",
+      "admission": "source-present-unadmitted"
+    },
+    {
+      "term": "Message",
+      "context": "engineering communication between entities",
+      "source": "lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/content/glossary/terms/message.md",
+      "admission": "admitted"
+    },
+    {
+      "term": "Channel",
+      "context": "medium constrained by capacity, bandwidth, and noise",
+      "source": "lib/emsenn/services/561-group/services/science-services-section/services/information-science-services-section/content/text/glossary/terms/channel.md",
+      "admission": "admitted"
+    }
+  ],
+  "refusals": [
+    {
+      "term": "Cell",
+      "claim": "universal-canonical-meaning",
+      "reason": "multiple-contextual-sources"
+    },
+    {
+      "term": "Actor",
+      "claim": "universal-canonical-meaning",
+      "reason": "multiple-contextual-sources"
+    },
+    {
+      "term": "Resource",
+      "claim": "universal-canonical-meaning",
+      "reason": "no-admitted-science-source"
+    },
+    {
+      "term": "Message",
+      "claim": "universal-canonical-meaning",
+      "reason": "no-admitted-science-source"
+    },
+    {
+      "term": "Channel",
+      "claim": "universal-canonical-meaning",
+      "reason": "source-is-planned"
+    }
+  ]
+}

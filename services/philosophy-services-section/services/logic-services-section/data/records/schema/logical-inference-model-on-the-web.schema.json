@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://research-notes.561.group/hacking/library/predication-notes/composting/library/object/library/thing/library/system/library/inference-model/library/logical-inference-model-on-the-web/logical-inference-model-on-the-web.schema.json",
+  "title": "Logical inference model on the web",
+  "description": "JSON Schema for an inference-model realized over HTTP. Inherits the inference-model fields and adds HTTP-wire-level fields.",
+  "type": "object",
+  "required": ["base-url", "http-method", "auth-scheme"],
+  "additionalProperties": true,
+  "properties": {
+    "base-url": {"type": "string", "format": "uri"},
+    "http-method": {"type": "string", "enum": ["POST", "GET"]},
+    "request-envelope": {"type": "string", "description": "Reference to the JSON request-body schema."},
+    "response-envelope": {"type": "string", "description": "Reference to the JSON response-body schema."},
+    "auth-scheme": {
+      "type": "string",
+      "enum": ["bearer-token", "x-api-key", "header"]
+    },
+    "streaming-supported": {"type": "boolean"}
+  }
+}

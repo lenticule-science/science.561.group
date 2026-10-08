@@ -1,0 +1,21 @@
+id: add-principle
+description: "Add a principle to a department's SOUL.md."
+skill-closure-kind: process
+
+inputs:
+  - name: department
+    type: str
+  - name: name
+    type: str
+  - name: body
+    type: str
+
+steps:
+  - id: write-principle
+    type: write
+    kind: Principle
+    department: "{{inputs.department}}"
+    flush: true
+    content:
+      name: "{{inputs.name}}"
+      body: "{{inputs.body}}"

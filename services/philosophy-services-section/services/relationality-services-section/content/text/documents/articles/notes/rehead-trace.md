@@ -1,0 +1,29 @@
+---
+title: Reheading Trace
+act: ReheadTrace
+top: RenewTrace
+bottom: HeadTrace
+summary: >-
+  Renewing alone does not isolate the next head, so the act *Renew Trace* must
+  witness the act *Head Trace* to define the new head.
+keywords:
+  - act
+layer: act
+status: plan
+index: 27
+strata:
+  - trace
+phase: free
+description: Renewing alone does not isolate the next head, so the act *Renew Trace* must witness the act *Head Trace* to define the new head.
+---
+
+## Interpretation
+
+Renewing alone does not isolate the next head, so the act *Renew Trace* must witness the act *Head Trace* to define the new head.
+
+The composition `(RenewTrace HeadTrace)` shows the act *Renew Trace* watching *Head Trace*.  This isolates the new immediate act, so we name it *Rehead Trace*.
+
+
+{{ act_info(page.meta) }}
+
+{{ act_nav(page.meta) }}

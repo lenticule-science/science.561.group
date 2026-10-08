@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://research-notes.561.group/hacking/library/predication-notes/composting/library/object/library/thing/library/category/library/limit/limit.schema.json",
+  "title": "Limit",
+  "description": "JSON Schema for a limit — the universal cone over a diagram (Mac Lane 1971 Ch. III §3-4; Awodey 2010 §5). Demonstrates JSON Schema 2020-12's primary-oneOf discriminator pattern: limit-kind tags one of {terminal, product, equalizer, pullback, general}, and each branch requires its specific witness fields via conditional required.",
+  "type": "object",
+  "required": ["name", "in-category", "limit-kind"],
+  "properties": {
+    "name": { "$dynamicRef": "#name-shape" },
+    "in-category": { "$dynamicRef": "#name-shape" },
+    "limit-kind": {
+      "enum": ["terminal", "product", "equalizer", "pullback", "general"],
+      "description": "The kind of limit, used as a tag-union discriminator."
+    }
+  },
+  "oneOf": [
+    {
+      "title": "Terminal limit",
+      "properties": {
+        "limit-kind": { "const": "terminal" },
+        "terminal-witness": {
+          "$dynamicRef": "#name-shape",
+          "description": "Reference to the terminal-object instance witnessing this limit."
+        }
+      },
+      "required": ["limit-kind", "terminal-witness"]
+    },
+    {
+      "title": "Product limit",
+      "properties": {
+        "limit-kind": { "const": "product" },
+        "product-witness": {
+          "$dynamicRef": "#name-shape",
+          "description": "Reference to the product instance witnessing this limit."
+        }
+      },
+      "required": ["limit-kind", "product-witness"]
+    },
+    {
+      "title": "Equalizer limit",
+      "properties": {
+        "limit-kind": { "const": "equalizer" },
+        "equalizer-witness": {
+          "$dynamicRef": "#name-shape",
+          "description": "Reference to the equalizer instance witnessing this limit."
+        }
+      },
+      "required": ["limit-kind", "equalizer-witness"]
+    },
+    {
+      "title": "Pullback limit",
+      "properties": {
+        "limit-kind": { "const": "pullback" },
+        "pullback-witness": {
+          "$dynamicRef": "#name-shape",
+          "description": "Reference to the pullback instance witnessing this limit."
+        }
+      },
+      "required": ["limit-kind", "pullback-witness"]
+    },
+    {
+      "title": "General limit",
+      "properties": {
+        "limit-kind": { "const": "general" },
+        "diagram": {
+          "$dynamicRef": "#name-shape",
+          "description": "Reference to the diagram instance this limit is over."
+        },
+        "limit-cone": {
+          "$dynamicRef": "#name-shape",
+          "description": "Reference to the universal cone instance — the limit's cone over the diagram."
+        }
+      },
+      "required": ["limit-kind", "diagram", "limit-cone"]
+    }
+  ]
+}

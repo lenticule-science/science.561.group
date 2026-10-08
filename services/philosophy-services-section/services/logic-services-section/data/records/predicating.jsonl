@@ -1,0 +1,5 @@
+{"e":"predicating","a":"describing","v":"The morphism that places a predication cell. Takes a cell (s, p, o) and a value drawn from the cell's fiber algebra under some valuation; returns the cell-record (cell, value, t) carrying a transaction-id.","t":"2026-05-19T23:00:00Z"}
+{"e":"predicating","a":"consuming","v":"predication-cell","t":"2026-05-19T23:00:00Z"}
+{"e":"predicating","a":"consuming","v":"bilattice-value","t":"2026-05-19T23:00:00Z"}
+{"e":"predicating","a":"producing","v":"cell-record","t":"2026-05-19T23:00:00Z"}
+{"e":"predicating","a":"defaulting-value-to-asserted-true-in","v":"four-bilattice","t":"2026-05-19T23:00:00Z"}

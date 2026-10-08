@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://active.development.561.group/articulating/library/aperiodic-articulation-category/library/aperiodic-articulation-cell/library/potential-aperiodic-articulation-cell/predicating/library/transfinite-predication-category/library/transfinite-predication-cell/library/potential-transfinite-predication-cell/positing/library/scott-continuous-posit-category/library/scott-continuous-posit-cell/library/potential-scott-continuous-posit-cell/settling/library/finite-settlement-algebra/hacking/library/increment-sequence/library/collatz-increment-sequence/collatz-increment-sequence.schema.json",
+  "title": "collatz-increment-sequence",
+  "description": "An instance of increment-sequence (U = (u_τ)) whose per-step evidence posits the next reached integer under the parity-branched Collatz map T(n) = 3n+1 (odd) or n/2 (even). Base fixed to L=2, single predicate 'reached', E=ℕ₊.",
+  "type": "object",
+  "properties": {
+    "name": { "type": "string", "const": "collatz-increment-sequence" },
+    "instance-of": { "type": "string", "const": "increment-sequence" },
+    "seed": { "type": "integer", "minimum": 1, "description": "The starting integer m = n_0." },
+    "base": {
+      "type": "object",
+      "description": "The fixed increment-sequence base (L, C, E, λ).",
+      "properties": {
+        "L": { "type": "string", "const": "2", "description": "Two-element Boolean residuated lattice." },
+        "predicate": { "type": "string", "const": "reached" },
+        "entities": { "type": "string", "const": "positive-integers" },
+        "settling-bound": { "type": "string", "description": "Total stopping time of the seed; finite iff the orbit halts." }
+      },
+      "required": ["L", "predicate", "entities"]
+    },
+    "increments": {
+      "type": "array",
+      "description": "The increment u_τ at each settling step: the single newly-reached cell.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "stage": { "type": "integer", "minimum": 0 },
+          "integer": { "type": "integer", "minimum": 1, "description": "n_τ, the integer reached at this stage." },
+          "posits-cell": { "type": "string", "description": "reached(n_τ) := t" }
+        },
+        "required": ["stage", "integer"]
+      }
+    }
+  },
+  "required": ["name", "instance-of", "seed", "base"]
+}

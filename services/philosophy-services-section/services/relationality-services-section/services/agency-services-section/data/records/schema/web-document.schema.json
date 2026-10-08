@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://561.group/swarm-intelligence/web-document/web-document.schema.json",
+  "title": "Web document (aperiodic-articulation-cell variant, codomain of fetching-web)",
+  "description": "Cell produced by fetching-web. Carries the requested URL, HTTP status, response headers, response body, and the fetch transaction time.",
+  "kind": "object",
+  "type": "object",
+  "required": ["url", "status", "headers", "body", "fetchedAt"],
+  "additionalProperties": false,
+  "properties": {
+    "url": { "type": "string", "minLength": 1 },
+    "status": { "type": "integer", "minimum": 0 },
+    "headers": {
+      "type": "object",
+      "additionalProperties": { "type": "string" }
+    },
+    "body": { "type": "string" },
+    "fetchedAt": { "type": "string", "minLength": 1 }
+  }
+}

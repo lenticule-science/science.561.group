@@ -1,0 +1,165 @@
+---
+title: "Act"
+id: act
+description: "An Act is a four-tuple (A, α, t, φ) — an agent A, an act-type α corresponding to a step s_α ∈ Σ, a history t at which the act is performed, and an output φ ∈ H_t that the act produces in the fiber. The act's history extension is t' = t⋆gen(s_α), NOT t' = t⋆φ: the step advances the history; the output is the semantic content in the fiber over the pre-act history. The shadow class type of φ classifies the act's normative character: H*_t (constitutive — doubly settled), SatShadow_t (recognized — backward-acknowledged but not forward-committed), TrShadow_t (committed — forward-stable but not yet backward-recognized), FreeShadow_t (preliminary — raw proposal requiring both nuclear closures). Authorship does not modify σ_t or Δ_t at t; acts generate new histories above t without altering the nuclear structure at t. External grounding: Davidson (1967) timed-event form, Austin (1962) locutionary/illocutionary/perlocutionary triad, Belnap-Perloff stit logic (1988)."
+requires: [agent, act-type, history]
+contains: [assertion, commitment, observation, declaration]
+governed-by: judgment
+enables: [duty, authority, trust, delegation]
+date-created: 2026-03-20
+date-modified: 2026-03-21
+params:
+  agent: person
+  act-type: relational-universe
+  history: relational-history
+  output: relational-history-fiber-proposition
+output: relational-history-fiber-proposition
+ast:
+  relational-universe-morphism:
+    - agent:
+        - act-type
+        - history
+    - output:
+        - agent
+        - history
+---
+
+
+## Formal definition
+
+An **Act** is a four-tuple $(A, \alpha, t, \varphi)$:
+
+$$(A : \mathrm{Agent},\; \alpha : \mathrm{ActType},\; t \in T,\; \varphi \in H_t)$$
+
+where:
+- $A$ is the **agent** — the party who performs the act; $A$ is the author of $\varphi$; without an agent, $\varphi$ may be a fiber element but it is not an act
+- $\alpha$ is the **act-type** — the kind of act being performed; every act-type corresponds to a step $s_\alpha \in \Sigma$ in the history monoid; act-types are drawn from the vocabulary of the domain (for officers: issue-order, sign-log, assume-watch; for speech acts: assert, declare, commit, request; for the FARS: read, write, invoke, emit)
+- $t \in T$ is the **history** at which the act is performed — the act is located in the history category; the act-type $\alpha$ determines a step $s_\alpha \in \Sigma$ that advances the history to $t' = t \star \mathrm{gen}(s_\alpha)$
+- $\varphi \in H_t$ is the **output** — the fiber element produced by the act at history $t$; $A$'s performance of $\alpha$ at $t$ produces $\varphi$ as the act's semantic content; $\varphi$ is what the act contributes to $H_t$
+
+**Authorship.** The act $(A, \alpha, t, \varphi)$ attributes $\varphi$ to $A$. This is the normative significance of authorship: $A$ is accountable for $\varphi$'s properties — its gap, its effects on other fiber elements, its consistency with prior acts. An element $\varphi \in H_t$ without an author is an ungrounded proposition; an act makes it an authored claim.
+
+**Success condition.** An act $(A, \alpha, t, \varphi)$ **succeeds** iff $\varphi \in H^*_t$ — the output is fully settled. A failed act produces $\varphi \notin H^*_t$: the output is submitted to the fiber but has positive [gap](../../../../../../../../../../../social-science-services-section/services/economics-and-business-science-services-section/services/business-science-services-section/content/text/glossary/terms/gap.md). Most acts produce non-settled outputs ($\varphi \notin H^*_t$); settlement is achieved through subsequent nuclear processing.
+
+## What this is
+
+An **Act** is the atom of agency. Everything an agent does — issuing an order, signing a document, making an assertion, assuming a watch, invoking a skill — is an act. All the more complex agent concepts (duty, authority, trust, delegation) are built from acts: they specify which acts an agent is obligated to perform, permitted to perform, empowered to perform, or immune from having performed on them.
+
+The four-tuple is minimal: strip any component and the act dissolves. Without agent: a brute fact, not an act. Without act-type: an undefined event. Without history: a free-floating proposition. Without output: a null event, not an act.
+
+## Acts and the history monoid
+
+**The step, not the output, advances the history.** Every act $(A, \alpha, t, \varphi)$ is associated with a step $s_\alpha \in \Sigma$ via its act-type $\alpha$. The act extends the history from $t$ to $t' = t \star \mathrm{gen}(s_\alpha)$. The **output $\varphi \in H_t$ is the semantic content** of the act in the fiber over the pre-act history $t$; the **step atom $\mathrm{gen}(s_\alpha) \in T$ is the structural extension** that advances position in the history monoid.
+
+These two are distinct objects living at different levels:
+- $\varphi \in H_t$: a Heyting algebra element, subject to nuclear processing, carrying a gap
+- $\mathrm{gen}(s_\alpha) \in T$: a history monoid element, subject to the prefix order, generating a new fiber $H_{t'}$
+
+**The history monoid $T$ is generated by the finite step set $\Sigma$**, not by propositions. If acts were to extend histories by appending their output propositions, the generating set of $T$ would be the uncountable set of all fiber elements — contradicting the axiom of finite generation.
+
+An act is therefore simultaneously:
+- A **local event** (producing $\varphi \in H_t$ in the current fiber)
+- A **history-extension** (generating new history $t' = t \star \mathrm{gen}(s_\alpha) \in T$)
+- A **restriction source** (all histories $t''$ with $t' \leq t''$ are downstream; restriction maps $H(t'' \to t') \to H(t' \to t)$ carry elements back through the act)
+
+## Act taxonomy
+
+Acts partition by act-type $\alpha$. The principal act-types in this system, classified by their **direction of fit** (Searle 1969):
+
+**Epistemic acts** (word-to-world fit) — acts whose output represents the world:
+- [Assertion](2026-03-20-from-philosophy-assertion.md) ($\alpha = \mathrm{assert}$): $A$ submits $\varphi$ as a candidate for $H^*_t$; claims $\varphi$ correctly represents the current state
+- [Observation](../18/2026-03-18-observation.md) ($\alpha = \mathrm{observe}$): $A$ reads the fiber to produce $\varphi$ as a report on $H_t$
+
+**Deontic acts** (world-to-word fit) — acts whose output binds future behavior:
+- [Commitment](2026-03-20-from-philosophy-commitment.md) ($\alpha = \mathrm{commit}$): $A$ submits $\varphi$ as a forward-stable obligation — output lands in $\mathrm{TrShadow}_t \cup H^*_t$; the act constrains future states to be compatible with $\varphi$
+- Authorization ($\alpha = \mathrm{authorize}$): $A$ exercises a [HohfeldianPosition](../../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/services/hohfeldian-services-section/content/text/glossary/terms/hohfeldian-position.md) Power to alter another's normative position
+
+**Constitutive acts** (double direction of fit) — acts whose output both represents and creates an institutional fact:
+- Declaration ($\alpha = \mathrm{declare}$): $A$ performs a StatusFunctionDeclaration; $\varphi$ is an institutional fact created by the act itself; the act's performance constitutes $\varphi \in H^*_t$
+- [Investiture](../../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/content/text/glossary/terms/investiture.md) ($\alpha = \mathrm{invest}^+$): $A$ assumes a role, binding themselves to a deontic profile; the investiture record $\iota(A, O, t) \in H^*_t$ is produced directly
+
+**Operational acts** (procedural fit) — acts in the FARS agent loop:
+- Read ($\alpha = \mathrm{read}$): $A$ reads a resource, producing $\varphi$ as the resource's content representation
+- Write ($\alpha = \mathrm{write}$): $A$ submits $\varphi$ to a resource, modifying the resource's state
+- Invoke ($\alpha = \mathrm{invoke}$): $A$ begins execution of a skill, submitting $\varphi$ as the invocation record
+- Emit ($\alpha = \mathrm{emit}$): $A$ submits $\varphi$ to the downstream locale's INBOX
+
+## Acts and duties
+
+A [Duty](../../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/content/text/glossary/terms/duty.md) $D(A, p, N, \varphi, C)$ is the normative condition that $A$ must perform act $(A, \alpha, t, \varphi)$ for some appropriate $\alpha$ by some deadline. The duty specifies WHAT must be produced ($\varphi$) and FOR WHOM ($C$); the act is the event of producing it. Duty and act are on different levels: duty is the normative constraint; act is the event. [Discharge](../../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/content/text/glossary/terms/discharge.md) is the event where the act's output reaches zero gap — the duty is satisfied.
+
+## Acts and judgment
+
+[Judgment](../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/judgment.md) selects which act to perform: given zone $Z$, intent $I$, and situation $f$, judgment produces $\alpha$ (the chosen act-type). The act is then the execution of that judgment: $(A, \alpha, t, \varphi)$ where $\varphi$ is the output of acting under $\alpha$ at the current history.
+
+## Nuclear reading
+
+**Definitions.** Fix an act $(A, \alpha, t, \varphi)$ with associated step $s_\alpha \in \Sigma$ and output $\varphi \in H_t$. The **locutionary component** is $\varphi$ (the content produced); the **illocutionary force** is $\alpha$ (what the act does with $\varphi$); the **perlocutionary effect** is the downstream nuclear processing of $\varphi$ — whether and how the nuclear pair $(\sigma_t, \Delta_t)$ processes $\varphi$ to settle it.
+
+**Proposition 1 (Shadow class type classifies the act's normative character).** The shadow class type of $\varphi$ determines what kind of normative work the act performs at $t$:
+
+| Shadow class type of $\varphi$ | Normative character of act |
+|---|---|
+| $H^*_t$ | **Constitutive**: the act directly generates a doubly-settled institutional fact; both nuclei immediately fix $\varphi$ |
+| $\mathrm{SatShadow}_t$ | **Recognized-but-uncommitted**: the act is backward-acknowledged ($\sigma_t(\varphi) = \varphi$) but $\varphi$ is not yet forward-stable; the act has illocutionary uptake but the perlocutionary commitment is pending |
+| $\mathrm{TrShadow}_t$ | **Committed-but-unrecognized**: $\varphi$ is forward-stable ($\Delta_t(\varphi) = \varphi$) but not yet backward-recognized; the act's output will persist forward but has not achieved normative recognition |
+| $\mathrm{FreeShadow}_t$ | **Preliminary**: the act produces a raw proposal; both nuclear closures are required before $\varphi$ reaches $H^*_t$; most ordinary acts produce FreeShadow output |
+
+*Proof.* By definition of the shadow class partition $H_t = H^*_t \sqcup \mathrm{SatShadow}_t \sqcup \mathrm{TrShadow}_t \sqcup \mathrm{FreeShadow}_t$. $\square$
+
+*The Austin connection.* SatShadow corresponds to the gap between illocution and perlocution: the act has been produced and acknowledged (illocution succeeded) but its downstream effect is not yet committed ($\Delta_t(\varphi) > \varphi$). TrShadow corresponds to the reverse: the effect is committed ($\Delta_t(\varphi) = \varphi$) but the illocutionary uptake has not fully registered ($\sigma_t(\varphi) > \varphi$). FreeShadow is the raw case — the utterance has been made but neither dimension is settled yet. H*_t is the Austin "felicitous performative" — both uptake and effect are simultaneously complete.
+
+**Proposition 2 (History extension is by step, not by output).** The act $(A, \alpha, t, \varphi)$ extends the history to $t' = t \star \mathrm{gen}(s_\alpha) \in T$ via the step $s_\alpha$, not by appending $\varphi$. The output $\varphi \in H_t$ is a Heyting algebra element in the fiber over $t$; the step atom $\mathrm{gen}(s_\alpha) \in T$ is a history monoid element.
+
+*Proof.* The history monoid $T_{\mathrm{init}}$ over $(\Sigma, I)$ is generated by $\Sigma$. Every element of $T_{\mathrm{init}}$ is a finite product of atoms $\mathrm{gen}(s)$ for $s \in \Sigma$. The fiber $H_t$ is a Heyting algebra completely separate from $T$ — elements of $H_t$ are not elements of $T$. The monoid operation $\star$ concatenates history elements, not fiber elements. $\square$
+
+*Content.* The distinction matters for three reasons: (1) the generating set of $T$ is finite ($|\Sigma| < \infty$), while fiber elements are uncountable; (2) the nuclear structure at $t$ — how $\sigma_t$ and $\Delta_t$ process $\varphi$ — depends on the history-monoid structure at $t$, not on $\varphi$ itself; (3) the Davidson event-form $(A, \alpha, t, \varphi)$ separates the predicate-type ($\alpha$, determining the step) from the object ($\varphi$, determining the content).
+
+**Proposition 3 (Authorship does not modify the nuclear structure at $t$).** The attribution of $\varphi$ to agent $A$ — the authorship annotation — does not modify $\sigma_t$ or $\Delta_t$. Both nuclei at $t$ are determined by the presheaf structure at and below $t$: $\sigma_t$ by restriction maps from predecessors $t_0 < t$; $\Delta_t$ by restriction maps from independent one-step extensions above $t$. The act $(A, \alpha, t, \varphi)$ adds history $t'$ above $t$; it does not modify the morphisms $H(i_{t_0, t})$ below $t$ or retroactively change the independent extension structure of the existing levels above $t$.
+
+*Proof.* $\sigma_t$ is a map $H_t \to H_t$ determined by the restriction maps $H(i_{t_0, t}) : H_t \to H_{t_0}$ for $t_0 < t$. An act at $t$ generates $t'$ above $t$; this adds a new morphism $H(t' \to t)$ to the diagram but leaves all existing morphisms unchanged. Similarly, $\Delta_t$ depends on the set $\{s \in \Sigma : s \perp t\}$ of independent steps; adding $t'$ above $t$ does not change which steps are independent of $t$. $\square$
+
+*Content.* This is the agent-immutability principle for acts: an agent's act cannot retroactively change what the nuclear pair means at the history of the act. The nuclei are facts about the history structure; they are not modified by what any agent submits to the fiber.
+
+**Proposition 4 (Forward persistence of the output).** The output $\varphi \in H_t$ persists to the new history $t' = t \star \mathrm{gen}(s_\alpha)$ iff $\varphi \in \mathrm{image}(H(t' \to t))$ — iff there exists $\varphi' \in H_{t'}$ with $H(t' \to t)(\varphi') = \varphi$. When $s_\alpha \perp t$ (the step is independent of the current history), this is exactly the condition $\varphi \in \mathrm{Fix}(\Delta_t)$ — forward persistence is transfer-stability.
+
+*Proof.* $\mathrm{Fix}(\Delta_t) = \bigcap_{s \perp t} \mathrm{image}(H(i_{s,t}))$ by definition of the transferring nucleus. For $s_\alpha \perp t$: $\mathrm{image}(H(i_{s_\alpha, t})) \supseteq \mathrm{Fix}(\Delta_t)$, and $\varphi \in \mathrm{Fix}(\Delta_t)$ implies $\varphi \in \mathrm{image}(H(i_{s_\alpha, t}))$. $\square$
+
+*The stit connection.* Belnap and Perloff's "seeing to it that" operator (stit, 1988) holds iff the agent's choice guarantees the proposition across all open histories. The nuclear analog: act $(A, \alpha, t, \varphi)$ with $\varphi \in \mathrm{Fix}(\Delta_t)$ satisfies $[A \; \mathrm{stit} : \varphi\text{ is forward-stable}]$ — $A$'s act sees to it that $\varphi$ persists to all independent extensions of $t$. For $\varphi \in \mathrm{FreeShadow}_t$: $A$ has produced $\varphi$ but has not seen to its forward stability — the stit condition fails.
+
+**Proposition 5 (Constitutive acts produce output in $H^*_t$ by the institution's constitutive rules).** For a declaration act $(A, \mathrm{declare}, t, \varphi)$: if the institution's constitutive rule $r_{\mathrm{declare}}$ is in $H^*_t$ (the rule is doubly stable), and the constitutive rule function $R_{CR}$ commutes with restriction maps (it is a natural transformation), then $R_{CR}(A, \mathrm{declare}, \varphi, t) \in H^*_t$ — the act produces doubly-settled output directly.
+
+*Proof.* By [Accountability](../../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/content/text/glossary/terms/accountability.md) Proposition 1 structure: if $r_{\mathrm{declare}} \in H^*_t$ and $R_{CR}$ commutes with restriction maps, then for any $a_B = R_{CR}(a_Q)$: $\sigma_t(a_B) = \sigma_t(R_{CR}(a_Q)) = R_{CR}(\sigma_t(a_Q)) = R_{CR}(a_Q) = a_B$ (since $a_Q \in H^*_t$). Same for $\Delta_t$. Therefore $a_B \in H^*_t$. $\square$
+
+*Content.* This formalizes Searle's "double direction of fit" for declarations. A declaration does not merely *represent* an institutional fact — it *constitutes* it. The nuclear reading: the act's constitutive force is the naturality of $R_{CR}$ — the constitutive rule commutes with the history's structure, so using the rule to constitute a fact at $t$ yields a doubly-stable result immediately, without nuclear processing. Felicity of the declaration = $r_{\mathrm{declare}} \in H^*_t$ (the constitutive rule is itself settled).
+
+## Classical grounding: Davidson, Austin, Belnap-Perloff
+
+**Davidson (1967), "The Logical Form of Action Sentences."** Davidson argued that action sentences have an implicit event variable $e$: "Jones buttered the toast at midnight" = $\exists e.\, \mathrm{Butter}(e) \land \mathrm{Agent}(e, \mathrm{Jones}) \land \mathrm{Time}(e, \mathrm{midnight})$. The act four-tuple $(A, \alpha, t, \varphi)$ is exactly this form:
+- $A$ = the agent variable
+- $\alpha$ = the event-type predicate
+- $t$ = the time anchor (a history, not a clock time)
+- $\varphi$ = the object/content of the event
+
+The Davidson form separates event-particulars (this specific act at $t$) from event-types ($\alpha$): two acts of the same type at different histories are distinct events. This matters for accountability — the accountability proposition $\mathrm{Ac}(A, \varphi, t)$ is about the specific event $(A, \alpha, t, \varphi)$, not about the act-type $\alpha$ in the abstract.
+
+**Austin (1962), *How to Do Things with Words*.** Every act $(A, \alpha, t, \varphi)$ has three aspects:
+- **Locutionary** = $\varphi$: the content produced — "what was said" or "what was done"
+- **Illocutionary** = $\alpha$: the force of the act — whether $\varphi$ was asserted, promised, declared, ordered
+- **Perlocutionary** = downstream nuclear processing of $\varphi$: whether the gap of $\varphi$ closes, whether $\varphi$ alters the normative positions of correlative parties
+
+The nuclear structure formalizes the perlocutionary dimension precisely. An act's perlocutionary effect = the nuclear processing of its output: the gap $(\sigma_t(\varphi), \Delta_t(\varphi))$ measures how much the act's output falls short of full normative effect; settlement of $\varphi$ into $H^*_t$ is the complete perlocutionary success.
+
+**Belnap and Perloff (1988), "Seeing to It That."** The stit operator $[A\;\mathrm{stit}: X]$ holds iff $A$'s choice in the current branching moment guarantees $X$ across all histories open at that moment. The nuclear analog separates two stit conditions:
+- $[A\;\mathrm{stit}: \sigma_t(\varphi) = \varphi]$ (backward recognition guaranteed): act produces $\varphi \in \mathrm{Fix}(\sigma_t)$ — the history's restriction profile settles $\varphi$ as meaning-recognized
+- $[A\;\mathrm{stit}: \Delta_t(\varphi) = \varphi]$ (forward commitment guaranteed): act produces $\varphi \in \mathrm{Fix}(\Delta_t)$ — $\varphi$ is present in the image of every independent one-step extension
+
+The full stit condition $[A\;\mathrm{stit}: \varphi \in H^*_t]$ requires both: the act produces doubly-settled output, which is only guaranteed by constitutive acts (declarations, investitures). Ordinary acts satisfy at most one stit condition; their outputs require subsequent nuclear processing to reach full settlement.
+
+## Open questions
+
+- Whether the act-type $\alpha$ is in exact bijection with the step set $\Sigma$, or whether multiple act-types can correspond to the same step — whether the semantic content of an act (what kind of normative work it does) is fully determined by the step it performs or is over-determined by the act-type vocabulary.
+- Whether collective acts are compositions of individual acts or primitives: whether $(A_1 \wedge A_2, \alpha, t, \varphi)$ is a valid act tuple when multiple agents jointly produce $\varphi$, and how the accountability and authorship structure distributes when multiple agents share authorship of a single output.
+- Whether the stit semantics for acts (Belnap-Perloff 1988) and the shadow class semantics for output propositions can be formally unified: whether $[A\;\mathrm{stit}: X]$ can always be expressed as a shadow class condition on the output of $A$'s act at the relevant history, or whether the stit branching-time structure adds information not captured by the nuclear pair.
+- Whether there are acts whose output $\varphi$ is in $H_s$ for $s \neq t$ — whether an act can produce its semantic content in a fiber other than the current one (e.g., a declaration that constitutes a fact "in advance" for a specific future history), and whether this requires the act four-tuple to include a target history as a fifth component.
+- Whether the Davidson event-form for acts and the Hohfeldian second-quartet positions (powers, liabilities) can be composed: whether the exercise of a Hohfeldian power is an act $(A, \mathrm{exercise\_power}, t, \varphi)$ where $\varphi$ is the Hohfeldian change produced, and whether power-exercises always land in $H^*_t$ (they constitute normative changes by definition) or can land in shadow classes (the normative change is attempted but not yet settled).

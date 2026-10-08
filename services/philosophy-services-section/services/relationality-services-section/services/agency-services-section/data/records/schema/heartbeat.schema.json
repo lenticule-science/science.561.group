@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://561.group/swarm-intelligence/agentic-orchestration-platform/heartbeat/heartbeat.schema.json",
+  "title": "Heartbeat morphism record (per-entity tick scheduler)",
+  "description": "Morphism: (heartbeat-state, entity-set) → next-heartbeat-state. Per platform-opener: 'Heartbeat is the per-entity scheduler that sequences ticks'. Visits each entity in declared order, applies one tick, accumulates witness records. Variance: restriction.",
+  "kind": "morphism",
+  "domain": "(heartbeat-state, entity-set)",
+  "codomain": "next-heartbeat-state",
+  "variance": "restriction",
+  "monotone": true,
+  "type": "object",
+  "required": ["inputState", "entitySet", "outputState", "evidence"],
+  "additionalProperties": false,
+  "properties": {
+    "inputState": { "type": "object" },
+    "entitySet": { "type": "array" },
+    "outputState": {
+      "type": "object",
+      "required": ["cycle", "lastTickedEntity"],
+      "additionalProperties": false,
+      "properties": {
+        "cycle": { "type": "integer", "minimum": 0 },
+        "lastTickedEntity": { "type": "string" }
+      }
+    },
+    "evidence": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "minItems": 1,
+      "uniqueItems": true
+    }
+  }
+}

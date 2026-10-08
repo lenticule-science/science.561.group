@@ -1,0 +1,33 @@
+---
+id: 4dee6a41-a25f-4089-81e8-aacfddde5e27
+name: Physics-aware Machine Learning Revolutionizes Scientific Paradigm for Machine Learning and Process-based Hydrology
+date-created: 2025-10-06
+visibility: public
+type: journal article
+provenance:
+  sources:
+    - "@xu_physics_aware_2023"
+---
+
+# [resource code](resource-code.md)
+
+## [BibTex entry](../../../../../engineering-science-services-section/services/computer-science-services-section/content/text/glossary/terms/bibtex-entry.md)
+
+``` {.bibtex canonical="yes"}
+
+@misc{xu_physics_aware_2023,
+    title = {Physics-aware {Machine} {Learning} {Revolutionizes} {Scientific} {Paradigm} for {Machine} {Learning} and {Process}-based {Hydrology}},
+    copyright = {arXiv.org perpetual, non-exclusive license},
+    url = {https://arxiv.org/abs/2310.05227},
+    doi = {10.48550/ARXIV.2310.05227},
+    abstract = {Accurate hydrological understanding and water cycle prediction are crucial for addressing scientific and societal challenges associated with the management of water resources, particularly under the dynamic influence of anthropogenic climate change. Existing reviews predominantly concentrate on the development of machine learning (ML) in this field, yet there is a clear distinction between hydrology and ML as separate paradigms. Here, we introduce physics-aware ML as a transformative approach to overcome the perceived barrier and revolutionize both fields. Specifically, we present a comprehensive review of the physics-aware ML methods, building a structured community (PaML) of existing methodologies that integrate prior physical knowledge or physics-based modeling into ML. We systematically analyze these PaML methodologies with respect to four aspects: physical data-guided ML, physics-informed ML, physics-embedded ML, and physics-aware hybrid learning. PaML facilitates ML-aided hypotheses, accelerating insights from big data and fostering scientific discoveries. We first conduct a systematic review of hydrology in PaML, including rainfall-runoff hydrological processes and hydrodynamic processes, and highlight the most promising and challenging directions for different objectives and PaML methods. Finally, a new PaML-based hydrology platform, termed HydroPML, is released as a foundation for hydrological applications. HydroPML enhances the explainability and causality of ML and lays the groundwork for the digital water cycle's realization. The HydroPML platform is publicly available at https://hydropml.github.io/.},
+    urldate = {2025-10-06},
+    publisher = {arXiv},
+    author = {Xu, Qingsong and Shi, Yilei and Bamber, Jonathan and Tuo, Ye and Ludwig, Ralf and Zhu, Xiao Xiang},
+    year = {2023},
+    note = {Version Number: 5},
+    keywords = {Artificial Intelligence (cs.AI), Fluid Dynamics (physics.flu-dyn), FOS: Computer and information sciences, FOS: Physical sciences, Machine Learning (cs.LG)},
+    annote = {Other
+44 pages, 6 figures},
+}
+```

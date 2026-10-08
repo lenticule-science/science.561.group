@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://research-notes.561.group/hacking/library/predication-notes/composting/library/identifier/library/name/doing/working/checking-a-name/checking-a-name-for-grammar/checking-a-name-for-grammar.schema.json",
+  "title": "Checking-a-name-for-grammar (transformer)",
+  "description": "Input/output shape of checking-a-name-for-grammar: the subject is a name; the predicate is a grammar (the project's name-grammar). Output is a check-decision: conforms-boolean plus diagnostics enumerating any failed parse or any parsed component that did not resolve to its declared record on disk.",
+  "type": "object",
+  "required": ["input", "output"],
+  "additionalProperties": false,
+  "properties": {
+    "input": {
+      "type": "object",
+      "required": ["subject", "predicate"],
+      "additionalProperties": false,
+      "properties": {
+        "subject": {
+          "description": "The name being checked. A kebab-case identifier per the name JSON Schema.",
+          "$ref": "https://research-notes.561.group/hacking/library/predication-notes/identifier/library/name/name.schema.json"
+        },
+        "predicate": {
+          "description": "The grammar the name is checked against. References the grammar JSON Schema.",
+          "$ref": "https://research-notes.561.group/hacking/library/predication-notes/object/library/thing/library/category/library/production-system/library/grammar/grammar.schema.json"
+        }
+      }
+    },
+    "output": {
+      "description": "A check-decision per the checking transformer's output schema.",
+      "type": "object"
+    }
+  }
+}
