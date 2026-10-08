@@ -33,6 +33,7 @@ Spec: master specification 2026-10-08 revision 3, Appendix B. Each task adds one
 - Realizer: `MemberSleeveV1.{routableYield, redeemablePrincipal}` (TP-EVM-004a).
 
 ### TP-LEAN-006 `v0.1` FloatDesk (group `desk`)
+- Status: done (2026-10-08); note `2026-10-08-note-on-tp-lean-006-float-desk`.
 - Declarations: `Refusal := feeUnknown | termOutOfRange | exceedsLine | agentCap | poolCap | writeoff | crossesBarrier | admitted`; `drawAdmitted` as the ordered refusal function over `(feeAvoided, term, minTerm, maxTerm, amount, open, limit, cap, lent, poolCap, writeoff, budget, drawSafe)`; `exposure_le_line`; `draw_never_crosses_barrier_over_horizon` (composes TP-LEAN-002 with `toDay = (due + settlementWindow) / 86400`); `pricePerson (capBpsPerYear amount termSeconds : Nat) := amount * capBpsPerYear * termSeconds / (365 * 86400 * 10000)` with `price_person_zero : capBpsPerYear = 0 → pricePerson = 0` and `price_cap_respected : pricePerson * 365 * 86400 * 10000 ≤ amount * capBpsPerYear * termSeconds` (rounding down); `priceBusiness (floor feeAvoided fractionBps) := max floor (feeAvoided * fractionBps / 10000)`; `overdue_changes_three_things` (over a small record: status, stale flag, cells list length +1); `void_releases_exposure`.
 - Vectors: `desk/{drawAdmitted,pricePerson,priceBusiness}.json`.
 - Realizer: `FloatDeskV1.{draw refusal order, priceOf}` (TP-EVM-009a).
