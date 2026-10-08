@@ -276,11 +276,14 @@ export function mcpApplications({ admission, environment = process.env, archive 
   const base = publicBaseUrl(environment) ?? 'https://l-space.561.group';
   const resource = `${base}/mcp`;
   const grants = setting('LSPACE_OAUTH_STATE', environment) ?? (stateDirectory(environment) === undefined ? undefined : join(stateDirectory(environment), 'oauth'));
+  const grantStoreProfile = setting('OAUTH_GRANT_STORE_PROFILE', environment);
+  const grantStore = grants === undefined ? undefined : createJsonFileGrantStore(grants, { profile: grantStoreProfile });
+  if (grantStoreProfile !== undefined && grantStore?.profile !== grantStoreProfile) throw new TypeError('requested OAuth grant custody profile is unavailable');
   const authorization = createAuthorizationServer({
     issuer: base,
     name: 'L-Space',
     resources: [resource],
-    ...(grants === undefined ? {} : { store: createJsonFileGrantStore(grants) }),
+    ...(grantStore === undefined ? {} : { store: grantStore }),
     authenticate: async (context) => {
       const principal = await admission.identifyContext(context);
       return principal === null ? undefined : { subject: `${principal.provider}:${principal.subjectHash}`, name: principal.label, ...(principal.email === undefined ? {} : { email: principal.email }), author: principal.author === true };
