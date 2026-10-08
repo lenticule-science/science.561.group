@@ -27,6 +27,7 @@ Spec: master specification 2026-10-08 revision 3, Appendix B. Each task adds one
 - Realizer: `SiteWitnessV1.meetOf`, `TidepoolTreasuryV1.pullDistributable` (TP-EVM-011b, TP-EVM-006b).
 
 ### TP-LEAN-005 `v0.1` Sleeve (group `sleeve`)
+- Status: done (2026-10-08); note `2026-10-08-note-on-tp-lean-005-sleeve`.
 - Declarations: `routableYield (value hwm : Nat) (h : hwm ≤ value) := value − hwm`; `routeYield (value hwm maxA) (h) := min maxA (value − hwm)` and `routeYield_preserves_principal : value − routeYield ≥ hwm`; `hwmAfterLoss (value hwm) := min hwm value` with `hwm_after_loss_le_value`; `redeemable (hwm value maxWithdraw) := min hwm (min value maxWithdraw)` with `redeem_le_redeemable` and `redeem_lowers_hwm : hwm' = hwm − min hwm assetsOut`; remark that `ShareValueMonotone` (open) is the vault-side assumption this module does not prove and that the EVM realizer tolerates one share of rounding.
 - Vectors: `sleeve/{routableYield,routeYield,hwmAfterLoss,redeemable}.json`.
 - Realizer: `MemberSleeveV1.{routableYield, redeemablePrincipal}` (TP-EVM-004a).
