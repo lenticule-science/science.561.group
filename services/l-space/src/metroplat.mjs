@@ -16,6 +16,7 @@ import { createVaultMazeApplication } from '@red-cup-engineering/graphical-knowl
 import { createReviewStore } from '@red-cup-engineering/graphical-knowledge-game-server/review-store';
 import { join, resolve } from 'node:path';
 import { openArchive } from '@red-cup-engineering/knowledge-system-server/archive';
+import { selectMetroplatCorpusRoot, assertMetroplatCorpusRoot } from './metroplat-root.mjs';
 import { searchAndFetchTools, vaultMcpTools } from '@red-cup-engineering/knowledge-system-server/mcp-tools';
 import { textRepr } from '@red-cup-engineering/http-services-section/representation';
 
@@ -31,7 +32,7 @@ export function lSpaceMetroplat({config, admission, configuration = {}, archive:
   if (typeof configuration.root !== 'string' || !configuration.root.trim()) {
     throw new TypeError('L-Space requires its corpus root in the installed application configuration');
   }
-  const root = resolve(config.repositoryRoot, configuration.root);
+  const root = selectMetroplatCorpusRoot(config.repositoryRoot, configuration.root);
   const sciencePrefix=configuration.sciencePrefix;
   const authorRoot=sciencePrefix ? resolve(root,sciencePrefix) : root;
   const environmentFile = configuration.environmentFileKey && process.env[configuration.environmentFileKey];
@@ -56,12 +57,12 @@ export function lSpaceMetroplat({config, admission, configuration = {}, archive:
   const media={resources:[{...ni,handler:async context=>await admission?.identifyContext(context)
     ? ni.handler(context) : new Response('Reader admission required',{status:401,headers:{'cache-control':'no-store'}})}]};
   let opened;
-  const archive = () => suppliedArchive ?? (opened ??= openArchive({
+  const archive = () => suppliedArchive ?? (opened ??= Promise.resolve().then(() => assertMetroplatCorpusRoot(root)).then(() => openArchive({
     root, excludes: configuration.excludes ?? EXCLUDED_SEGMENTS,
     admitPath:path=>!sciencePrefix || path.startsWith(sciencePrefix+'/') || path.includes('/content/text/'),
     observations: join(config.stateDir, 'knowledge', 'observations.jsonl'),
     fullText: join(config.stateDir, 'knowledge', 'full-text.sqlite'),
-  }).then(held=>sciencePrefix ? Object.freeze({...held,
+  })).then(held=>sciencePrefix ? Object.freeze({...held,
     get paths(){return held.paths;}, get snapshot(){return held.snapshot;}, get version(){return held.version;},
     read:async id=>{
       // Existing science ids remain usable; canonical ids now name their Group context.

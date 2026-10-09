@@ -134,3 +134,11 @@ index still carries VaultMaze's ordinary route.
 A green package test proves those source/runtime invariants. It does not by
 itself prove the deployed companion is current or publicly reachable; those need
 host-release and outside-observation receipts.
+
+### Cold Red Gate source-mount preflight (October 2026)
+
+The installed `lSpaceMetroplat` reader now selects its corpus root explicitly. By default it preserves the deployment-provided `configuration.root` relative to `config.repositoryRoot`. An operator may provide `METROPLAT_LSPACE_CORPUS_ROOT` as an **absolute path** to a verified authorized corpus mount; the reader refuses a relative override. The chosen path is checked lazily when the first archive query executes. A missing/non-directory root yields `LSPACE_CORPUS_ROOT_UNAVAILABLE` instead of a nested `realpath ENOENT`, with the affected root and a specific restoration path.
+
+This permits independent data mounts outside a Guix/Nix immutable release without silently substituting the latest random checkout or copying confidential corpus material into a public package. **Source code cannot establish that a particular host directory exists, is current, or is permitted.** Operators must independently verify host read access, corpus provenance/version, public vs protected projection, and a post-release `lspace_search`/fetch readback before declaring repaired service. A green local test only proves the source-level preflight.
+
+Regression tests: `node --test test/metroplat-root.test.mjs`. The Guix host configuration at `emsenn/cold-red-gate/deployment/profile.json` still names `lib/emsenn/services/561-group/services` within its package release. That configuration or its mounted `METROPLAT_LSPACE_CORPUS_ROOT` override must be reconciled and released separately under the machine's own source admission and receiving rules.
