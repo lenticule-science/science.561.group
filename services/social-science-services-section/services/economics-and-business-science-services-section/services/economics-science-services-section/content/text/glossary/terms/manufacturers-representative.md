@@ -1,0 +1,15 @@
+---
+name: "Manufacturer's representative"
+description: "An independent salesperson or agency that sells a manufacturer's products in a territory for a commission on closed sales, without salary and without buying the goods."
+aliases: [manufacturers representative, manufacturer's rep, independent sales rep, sales agent, commission sales rep, rep firm]
+domain: economics
+requires: [brokerage, contingency-fee]
+relates-to: [intermediation, chuhai]
+date-created: 2026-09-26
+authors: [claude-opus-5-5]
+---
+A manufacturer's representative is an independent salesperson or agency that sells a manufacturer's products to buyers in a territory and is paid a commission on the sales it closes. It carries no salary from the manufacturer, and it does not buy the goods: orders go from the buyer to the manufacturer, which ships and invoices, and the rep is paid its share after the buyer pays. It is therefore a form of [brokerage](./brokerage.md): paid on [contingency](./contingency-fee.md), never owning the thing sold. A distributor, by contrast, buys the goods and resells them at a margin, bearing [inventory risk](./inventory-risk.md).
+
+Commissions run 5–15% of the sale in general, 5–12% for industrial equipment, 10–20% for software, and higher for products sold rarely and in large amounts, by 2026 search synthesis ([Kennect](https://www.kennect.io/blogs/typical-sales-commission-rates)). The rate is negotiated over the product, the customer type (manufacturer, reseller or end user), business already in the territory, and whatever else the rep does (stocking samples, first-line service). When several reps touch one deal (where it originated, where the specification was won, where it shipped), the commission is split by an agreed formula ([MANA](https://www.manaonline.org/news/coming-to-agreement-on-split-commissions)). Payment is customarily monthly, 15–30 days after the month the buyer paid in. Most US states have sales representative statutes. Minnesota's, Minn. Stat. 325E.37, covers a person who contracts with a principal to solicit wholesale orders for commission and lives, works or has a territory in Minnesota: the principal must give 90 days' written notice with its reasons and 60 days to cure before ending the agreement (except for listed serious causes), and owes commission on every sale made before termination or the end of the notice, whichever is later ([Revisor](https://www.revisor.mn.gov/statutes/cite/325E.37)). Minn. Stat. 181.145 sets the deadline for paying an independent commission salesperson's earned commissions after the relationship ends: three working days with five days' notice, six without ([Revisor](https://www.revisor.mn.gov/statutes/cite/181.145)).
+
+A rep agency often carries several manufacturers' non-competing lines to the same buyers, so that one sales call can offer each buyer more. For a manufacturer outside the country, a rep is the cheapest form of local presence: an English-speaking person in the buyer's time zone who answers the phone, visits, quotes and follows up, paid only when something sells. That is why reps appear among what [Chinese firms going abroad](./chuhai.md) buy.

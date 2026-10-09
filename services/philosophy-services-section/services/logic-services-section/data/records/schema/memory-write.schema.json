@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://research-notes.561.group/hacking/library/predication-notes/composting/library/object/library/thing/library/system/library/operating-system/library/claude-code/library/auto-memory/library/memory-write/memory-write.schema.json",
+  "title": "Memory write event",
+  "description": "JSON Schema for a memory-write event payload — derived from the PreToolUse hook input when the tool target is under the auto-memory location.",
+  "type": "object",
+  "required": ["tool", "target-path"],
+  "additionalProperties": true,
+  "properties": {
+    "tool": {
+      "type": "string",
+      "enum": ["Write", "Edit", "MultiEdit"]
+    },
+    "target-path": {"type": "string"},
+    "in-repo-redirect": {"type": "string"},
+    "memory-type": {
+      "type": "string",
+      "enum": ["feedback", "reference", "user", "project"]
+    },
+    "memory-slug": {"type": "string"}
+  }
+}

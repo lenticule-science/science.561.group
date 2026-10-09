@@ -1,0 +1,47 @@
+\section{Geometric action and duality residues}
+
+\begin{theorem}[Chromatic-Lorentzian Einstein--Hilbert action --- settling is the d'Alembertian's Green's function]\label{thm:chromatic-lorentzian-action}\lean{Obsmetrologia.CausalSets.Action.Chromatic.chromatic_lorentzian_action}\leanok\uses{thm:chromatic-lorentzian-carrier, thm:causal-manifoldlikeness}
+The chromatic-Lorentzian carrier (\cref{thm:chromatic-lorentzian-carrier}) thrown at the discrete
+\textbf{Einstein--Hilbert / Benincasa--Dowker action} $S = \sum_x \Box 1(x)$, $\Box\varphi(x) =
+\sum_{y \preceq x} \mu(y,x)\varphi(y)$ (the retarded M\"obius d'Alembertian). On the causal chain the
+incidence M\"obius is $\mu(n,n) = 1$, $\mu(n{-}1,n) = -1$, so $\Box$ collapses to the \textbf{retarded
+backward difference} $\Box\varphi(n) = \varphi(n) - \varphi(n{-}1)$ (\texttt{box}), and the
+chromatic-Lorentzian \textbf{settling past-closure} is its \textbf{retarded Green's function}, the
+cumulative causal past-sum $G\varphi(n) = \sum_{m \leq n}\varphi(m)$ (\texttt{pastSum}) --- with
+$\texttt{ChromaticLorentzian.settle}$ (the $\mathrm{Bool}$ past-closure $\exists m \leq n,\, f\,m$) the
+$(\mathrm{Bool},\vee)$ projection of this $(\mathrm{Int},+)$ propagator. They are \textbf{mutually inverse}
+(\texttt{box\_pastSum}, \texttt{pastSum\_box}) --- the discrete fundamental theorem of calculus on the
+chain --- and from the inverse law: the EH curvature of the unit field is $\Box 1 = \delta_0$
+(\texttt{box\_unit}), localized at the causal origin; the action \textbf{telescopes to} $1$
+(\texttt{bdAction\_chain}), the chain's single causal boundary, matching $\texttt{Spacetime.Action.EinsteinHilbertAction.bdAction}$
+on the finite chain (\texttt{chain\_bdAction\_four}); and the settling is positive exactly where the
+propagator is (\texttt{settle\_iff\_pastSum\_pos}). So the chromatic Lorentzian's \textbf{settling is the
+Green's function of the Einstein--Hilbert d'Alembertian}, and its gravitational action counts the lone
+causal-origin event where settling begins --- the same M\"obius/Euler arithmetic
+(\cref{thm:causal-manifoldlikeness}) read as curvature rather than topology. Stays
+\texttt{\{propext, Quot.sound\}}.
+\end{theorem}
+
+\begin{theorem}[The discrete Ricci scalar is twice the Einstein--Hilbert action]\label{thm:discrete-ricci-scalar}\lean{Obsmetrologia.CausalSets.Curvature.Ricci.total_ricciScalar_eq_two_bdAction}\leanok\uses{thm:chromatic-lorentzian-action}
+The antisymmetric trace of the M\"obius curvature is the Bianchi defect $\mathtt{local} - \mathtt{row}$
+(retarded minus advanced); its \textbf{symmetric} companion is the \textbf{discrete Ricci scalar}
+$\mathtt{ricciScalar}\,x = \sum_y \mathtt{symCurvature}\,x\,y = \mathtt{localCurvature}\,x +
+\mathtt{rowCurvature}\,x$ (\texttt{ricciScalar\_eq}) --- the $+$-trace where the defect is the
+$-$-trace. The two are the two gradings of the one M\"obius double sum, the bigraded diamond's nuclei
+$(\sigma,\Delta) = (\text{retarded},\text{advanced})$ (\texttt{ricci\_defect\_bigrading}; \cref{thm:nuclear-square}).
+Summed over events the retarded and advanced totals agree (discrete Bianchi), so $\sum_x
+\mathtt{ricciScalar}\,x = 2\,\mathtt{bdAction}$ (\texttt{total\_ricciScalar\_eq\_two\_bdAction}): the
+Einstein--Hilbert action is exactly half the total scalar curvature. On the minimal causal diamond the
+profile is $(1,0,0,1)$ and the total is $2 = 2\cdot 1$ (\texttt{diamond\_total\_ricciScalar}). Only the
+metric-weighted \emph{continuum} scaling $\langle S\rangle \to -\tfrac14\!\int R\sqrt{g}$ stays
+frontier; the discrete $S \leftrightarrow R$ relation is green. Stays \texttt{\{propext, Quot.sound\}}.
+\end{theorem}
+
+\begin{theorem}[Aperiodic Verdier duality]\label{thm:aperiodic-verdier-duality}\notready\uses{thm:coclinv-strict-boolean, thm:q-fuzzy-equivalence-composes}
+\emph{(Open frontier --- stated, not formalized.)} The genuine Verdier duality:
+$H^1(\mathcal{F}_v) \simeq H_1(\check{\mathcal{F}}_v)$, where $H_1$ is the \emph{actual} cosheaf
+homology of the Verdier-dual cosheaf (not a renamed copy of $H^1$), in q-fuzzy generality via
+the derived-functor $\mathbb{D}$.  The strict-Boolean
+case (\cref{thm:coclinv-strict-boolean}) is a model of it, not a proof. This node stays red
+until the cosheaf homology and the comparison are constructed.
+\end{theorem}

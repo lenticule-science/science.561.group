@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "biology/atom",
+  "title": "atom",
+  "description": "The unit of matter: a nucleus of protons and neutrons with a surrounding electron structure. The substrate floor of the life tree — what bonds into the molecules that assemble into cells that integrate into organisms. (The corpus's chemistry, the bulk of which is the degenerate shadow; here it is the matter substrate from which life is generated, not a separate discipline.)",
+  "type": "object",
+  "required": [
+    "nucleus",
+    "electrons"
+  ],
+  "properties": {
+    "nucleus": {
+      "description": "protons (and neutrons) fixing the element's identity",
+      "const": true
+    },
+    "electrons": {
+      "description": "the electron structure that governs bonding and ionization",
+      "const": true
+    }
+  }
+}

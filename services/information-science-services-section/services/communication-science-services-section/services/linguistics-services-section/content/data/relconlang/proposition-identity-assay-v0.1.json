@@ -1,0 +1,56 @@
+{
+  "kind": "lenticule.relconlang.proposition-identity-assay",
+  "version": "0.1",
+  "status": "experimental",
+  "relations": [
+    "same-nucleus",
+    "refinement-or-update",
+    "related-distinct",
+    "unrelated",
+    "undetermined"
+  ],
+  "currentReaders": {
+    "roles": "surface verb + nsubj/dobj; English-preposition roles only",
+    "logicalForm": "surface verb + nsubj/dobj; ccomp relation not represented",
+    "lemma": "generic lemmatizer does not strip RelConLang aspect suffixes",
+    "holographicRead": "includes roles but currently omits polarity/scope/temporal/presupposition/logicalForm from the returned Reading"
+  },
+  "cases": [
+    {
+      "id": "simple-surface-match-after-grounding",
+      "left": "ku tu ga kan do kano?",
+      "right": "se tu ga kan do kano.",
+      "relation": "undetermined",
+      "reason": "Surface predicate/roles match, but legacy turn speakers change and tu is not yet deictically grounded. After grounding, compare referents rather than pronoun strings."
+    },
+    {
+      "id": "simple-semantic-mismatch",
+      "left": "ku tu ga kan do kano?",
+      "right": "se mi ga ran do sava.",
+      "relation": "unrelated",
+      "reason": "Current roles/logical-form layer already separates kan(tu,kano) from ran(mi,sava), even before deeper normalization."
+    },
+    {
+      "id": "aspectual-family",
+      "left": "mi ga ran do kelu.",
+      "right": "mi ga ran-en do kelu.",
+      "relation": "refinement-or-update",
+      "reason": "Intended shared predicate family with process aspect, but current generic lemma does not normalize ran-en to ran."
+    },
+    {
+      "id": "embedded-content",
+      "left": "mi ga vom do ve tu ga ran do sava.",
+      "right": "tu ga ran do sava.",
+      "relation": "related-distinct",
+      "reason": "Matrix promise and embedded proposition must remain structurally linked; current logicalForm flattens them into independent clauses."
+    },
+    {
+      "id": "oblique-sensitive",
+      "left": "sava pa mi ga mor do tilo.",
+      "right": "mi ga mor do tilo.",
+      "relation": "refinement-or-update",
+      "reason": "Provenance is semantically relevant but generic roles() does not encode RelConLang obl/case provenance."
+    }
+  ],
+  "successCriterion": "Comparison operates on context-grounded structured nuclei and reports why two readings are identical, refinements, merely related, or distinct."
+}

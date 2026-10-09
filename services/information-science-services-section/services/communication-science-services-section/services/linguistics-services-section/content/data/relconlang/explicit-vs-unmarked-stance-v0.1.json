@@ -1,0 +1,50 @@
+{
+  "kind": "lenticule.relconlang.explicit-vs-unmarked-stance-assay",
+  "version": "0.1",
+  "status": "candidate-model",
+  "candidateRule": "An unmarked clause has no explicit stance report. Explicit ta contributes stance information even when a downstream flat reader maps both cases to potential.",
+  "pairs": [
+    {
+      "unmarked": "mi ga ran do kelu.",
+      "explicit": "ta mi ga ran do kelu.",
+      "sharedPropositionNucleus": "ran(speaker,kelu)",
+      "unmarkedReading": {
+        "stanceReport": null,
+        "illocution": "ordinary/assertive remains independently analyzable",
+        "targetEvidenceEffect": "none-by-grammar-alone"
+      },
+      "explicitReading": {
+        "stanceReport": {
+          "particle": "ta",
+          "profile": "truth-oriented Chu profile",
+          "flatAggregate": "potential"
+        },
+        "targetEvidenceEffect": "none-by-grammar-alone"
+      },
+      "expectedDifference": "explicit ta must remain observable in the semantic projection even if both forms currently collapse to potential in SignCraft"
+    },
+    {
+      "unmarked": "tu ga vom do voma.",
+      "explicit": "ta tu ga vom do voma.",
+      "sharedPropositionNucleus": "vom(addressee,voma)",
+      "expectedDifference": "explicit stance report versus no explicit stance; commissive lexical semantics remain a separate coordinate"
+    }
+  ],
+  "languageEvidence": [
+    "grammar-reference core clause makes [charge/dialogue] optional",
+    "lesson 01 says: put a charge particle at the front when you need to say how the claim is held",
+    "ordinary corpus contains many unmarked clauses",
+    "no recovered source states that zero marking means implicit ta"
+  ],
+  "implementationConflict": {
+    "currentSignCraft": "parseLine defaults reading to potential before checking for a stance particle",
+    "consequence": "explicit ta and zero marking collapse in the current event-row reading",
+    "experimentalCorrection": "preserve surfaceStance explicitly; use null stanceReport for zero marking"
+  },
+  "acceptance": [
+    "dual readers recover the same proposition nucleus for each pair",
+    "explicit ta remains distinguishable from zero marking",
+    "no stance form mutates target proposition evidence by grammar alone",
+    "realization plan cannot drop explicit ta without declaring stance-information loss"
+  ]
+}

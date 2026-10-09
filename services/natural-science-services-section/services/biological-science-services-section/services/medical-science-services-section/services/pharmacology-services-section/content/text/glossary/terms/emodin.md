@@ -1,0 +1,89 @@
+---
+name: Emodin
+description: "An anthraquinone compound found in Japanese knotweed, rhubarb, and cascara — a laxative in traditional medicine and an anti-inflammatory, antimicrobial, and anticancer agent in modern pharmacological research"
+date-created: 2026-04-02
+aliases:
+- emodin
+- 1,3,8-trihydroxy-6-methylanthraquinone
+tags:
+- pharmacology
+- phytochemistry
+- anthraquinones
+- laxatives
+produced-by:
+- japanese-knotweed
+- rhubarb
+- cascara-sagrada
+- aloe-vera
+- senna
+acts-on:
+- NF-kB
+- casein-kinase-2
+- tyrosine-kinases
+- aquaporins
+enables:
+- laxative-effect
+- anti-inflammatory-activity
+- antimicrobial-activity
+instance-of: anthraquinone
+contrasts-with:
+- resveratrol
+- aloe-emodin
+references:
+  dong2016:
+    authors:
+    - Xin Dong
+    - Jing Fu
+    - Xiao-Bing Yin
+    - Song-Lin Cao
+    - Xiao-Cheng Li
+    - Li-Rong Lin
+    - Jia Ni
+    title: 'Emodin: A Review of its Pharmacology, Toxicity and Pharmacokinetics'
+    publication: Phytotherapy Research
+    year: 2016
+    volume: 30
+    pages: 1207-1218
+  huang2007:
+    authors:
+    - Qian Huang
+    - Guang-Du Lu
+    - Heather M. Shen
+    - Maxey C. M. Chung
+    - Choon Nam Ong
+    title: Anti-cancer properties of anthraquinones from rhubarb
+    publication: Medicinal Research Reviews
+    year: 2007
+    volume: 27
+    pages: 609-630
+---
+
+Emodin (1,3,8-trihydroxy-6-methylanthraquinone) is a naturally occurring anthraquinone found in the roots and rhizomes of several medicinal plants, including [Japanese knotweed](../../../../../../../botany-services-section/content/text/glossary/terms/japanese-knotweed.md) (*Reynoutria japonica*), rhubarb (*Rheum* spp.), cascara sagrada (*Frangula purshiana*), senna (*Senna alexandrina*), and aloe (*Aloe vera*). It is one of the principal bioactive compounds in the Traditional Chinese Medicine herb [Hu Zhang](../../../../../traditional-chinese-medicine-services-section/content/text/glossary/terms/hu-zhang.md) and in Da Huang (rhubarb root), where it contributes to their purgative and heat-clearing actions.
+
+## Traditional use
+
+In TCM, emodin-containing herbs are classified as bitter and cold — herbs that drain heat, dry dampness, and promote downward movement (purgation). Rhubarb root (Da Huang) is the archetypal "drastic purgative" in the Chinese materia medica, used for constipation with heat signs, abdominal distension, and blood stasis. Japanese knotweed rhizome (Hu Zhang) shares these properties. The laxative action of both herbs is attributable primarily to their anthraquinone content, of which emodin is a major component.
+
+The laxative mechanism is well characterized: emodin and related anthraquinones inhibit sodium and chloride absorption in the colon while stimulating chloride secretion, increasing luminal water content. They also stimulate colonic motility through effects on enteric neurons and smooth muscle. This combination — increased secretion and increased motility — produces the cathartic effect that traditional practitioners describe as "draining downward."
+
+## Modern pharmacology
+
+Beyond its laxative properties, emodin has attracted research attention for several pharmacological activities [@dong2016]:
+
+**Anti-inflammatory**: Emodin inhibits NF-κB activation and suppresses production of pro-inflammatory cytokines (TNF-α, IL-1β, IL-6) in both cell culture and animal models of inflammation. It inhibits the NLRP3 inflammasome, a protein complex implicated in chronic inflammatory conditions. These effects provide a pharmacological basis for the traditional use of Hu Zhang for painful, inflammatory conditions.
+
+**Antimicrobial and antiviral**: Emodin has demonstrated activity against several bacterial species in vitro, including *Staphylococcus aureus*, *Streptococcus* spp., and *Helicobacter pylori*. It disrupts bacterial cell membranes and inhibits bacterial enzyme activity. Emodin also shows antiviral activity, including in vitro activity against SARS-CoV-2 — though clinical significance of this in vitro activity remains to be established for both antibacterial and antiviral applications.
+
+**Anticancer**: Emodin inhibits cell proliferation and induces apoptosis in multiple cancer cell lines, acting through inhibition of casein kinase 2, tyrosine kinases, and HER2/neu signaling [@huang2007]. Animal studies show tumor growth inhibition. No human clinical trials have established anticancer efficacy.
+
+**Hepatoprotective and nephroprotective**: Paradoxically, emodin both protects against and can cause liver and kidney injury, depending on dose and duration. At low doses, it reduces oxidative stress in liver tissue. At high doses or with prolonged use, it causes hepatotoxicity and nephrotoxicity — a dose-response relationship that underscores why traditional formularies emphasize short-course use of purgative herbs and always combine them with harmonizing agents.
+
+## Safety
+
+Emodin's toxicity profile is the reason traditional formulas do not use emodin-containing herbs as long-term monotherapy. Chronic high-dose use can cause diarrhea, electrolyte depletion (hypokalemia), liver enzyme elevation, and kidney damage. The International Agency for Research on Cancer has classified aloe-emodin (a closely related compound) as possibly carcinogenic to humans (Group 2B), and emodin itself is under review. These concerns apply primarily to isolated high-dose emodin or to long-term daily use of anthraquinone laxatives — not to short-course traditional herbal formulas at standard doses, where emodin-containing herbs are buffered by other formula components.
+
+## See also
+
+- [Resveratrol](resveratrol.md) — the other major bioactive from Japanese knotweed, with complementary pharmacology
+- [Japanese Knotweed](../../../../../../../botany-services-section/content/text/glossary/terms/japanese-knotweed.md) — the plant source
+- [Hu Zhang](../../../../../traditional-chinese-medicine-services-section/content/text/glossary/terms/hu-zhang.md) — the TCM herb

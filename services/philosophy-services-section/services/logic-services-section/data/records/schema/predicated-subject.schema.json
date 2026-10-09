@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://research-notes.561.group/hacking/library/predication-notes/composting/library/predication-cell-set/library/predication-cell/library/predicated-subject/predicated-subject.schema.json",
+  "title": "Predicated subject",
+  "description": "An entity in the role of the first coordinate of a predication cell — the entity 'of which' a predicate is being asserted (concepts/subject.md). Derives from entity by positional role: structurally a predicated-subject is an entity, and the role is fixed by this schema's $id. The data shape is therefore exactly entity's data shape, expressed as a $ref.",
+  "$ref": "https://research-notes.561.group/hacking/library/predication-notes/entity-set/library/entity/entity.schema.json"
+}

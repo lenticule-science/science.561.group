@@ -1,0 +1,3 @@
+---
+title: Mathematical speculation
+---

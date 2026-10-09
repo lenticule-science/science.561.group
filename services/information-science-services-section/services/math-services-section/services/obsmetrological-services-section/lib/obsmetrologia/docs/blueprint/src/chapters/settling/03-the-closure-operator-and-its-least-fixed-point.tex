@@ -1,0 +1,122 @@
+\section{The closure operator and its least fixed point}
+\begin{proposition}[Closure operator]\label{thm:closure-operator}\lean{Obsmetrologia.Reading.Closure}\leanok\uses{thm:kle}
+A \texttt{Closure} bundles an endomap $\texttt{op}:\texttt{Charge}\to\texttt{Charge}$
+that is \emph{inflationary} ($a \le_k \texttt{op}\,a$), \emph{monotone}
+($a \le_k b \Rightarrow \texttt{op}\,a \le_k \texttt{op}\,b$), and
+\emph{idempotent} ($\texttt{op}(\texttt{op}\,a) = \texttt{op}\,a$). At the finite
+regime settling's modal closure $\Diamond\circ\Box$ is one such operator.
+\end{proposition}
+\begin{theorem}[Knaster--Tarski: $\texttt{op}\,a$ is a fixed point]\label{thm:op-fixed}\lean{Obsmetrologia.Reading.Closure.op_fixed}\leanok\uses{thm:closure-operator}
+For any closure $c$ and seed $a$, $c.\texttt{op}(c.\texttt{op}\,a) =
+c.\texttt{op}\,a$: settling stops changing after the closure is applied once.
+This is the closure form of the Knaster--Tarski fixed-point theorem.
+\end{theorem}
+\begin{theorem}[$\texttt{op}\,a$ is the least fixed point above $a$]\label{thm:op-least}\lean{Obsmetrologia.Reading.Closure.op_least}\leanok\uses{thm:closure-operator, thm:le-joink}
+Any fixed point $x$ with $a \le_k x$ and $c.\texttt{op}\,x = x$ satisfies
+$c.\texttt{op}\,a \le_k x$. Thus the settled value is the \emph{least} upper
+bound among fixed points above the seed --- the lub character of settling made
+precise.
+\end{theorem}
+\begin{proposition}[The canonical join-closure]\label{thm:join-closure}\lean{Obsmetrologia.Reading.joinClosure}\leanok\uses{thm:closure-operator, thm:joink-le}
+\texttt{joinClosure k} is the closure $a \mapsto k \vee_k a$: raise to the
+knowledge bound $k$ by joining. Inflation, monotonicity, and idempotence are
+each discharged over the finite lattice. It is the prototype settling dynamic
+``possibilize toward $k$.''
+\end{proposition}
+\begin{proposition}[Settling]\label{thm:settling}\lean{Obsmetrologia.Reading.settle}\leanok\uses{thm:closure-operator, thm:op-fixed}
+\texttt{settle c seed} is the fixed point reached from \texttt{seed} under the
+closure $c$, namely $c.\texttt{op}\,\texttt{seed}$. For an idempotent closure the
+orbit stabilizes in a single step --- the finite-regime confluence
+$\Diamond\Box = \Box\Diamond$ that drains the residue to zero. This is the
+headline export of the chapter: the morphism that brings a trace to its fixed
+point and, in doing so, generates the order it settles within.
+\end{proposition}
+\begin{theorem}[The settled value is a fixed point]\label{thm:settle-fixed}\lean{Obsmetrologia.Reading.settle_fixed}\leanok\uses{thm:settling}
+$c.\texttt{op}(\texttt{settle}\,c\,\texttt{seed}) = \texttt{settle}\,c\,\texttt{seed}$:
+once settled, nothing remains to descend.
+\end{theorem}
+\begin{theorem}[The settled value is least]\label{thm:settle-least}\lean{Obsmetrologia.Reading.settle_least}\leanok\uses{thm:settling, thm:op-least}
+For any fixed point $x$ above the seed, $\texttt{settle}\,c\,\texttt{seed} \le_k x$:
+settling lands on the least fixed point above its seed, never overshooting.
+\end{theorem}
+\begin{theorem}[Worked instance: settling $\bot_k$ toward $k$]\label{thm:settle-kbot}\lean{Obsmetrologia.Reading.settle_kBot}\leanok\uses{thm:settling, thm:join-closure}
+$\texttt{settle}\,(\texttt{joinClosure}\,k)\,\bot_k = k$: settling the
+knowledge-least charge toward a bound $k$ lands exactly on $k$, confirming that
+the deposited positing's seed climbs to its target.
+\end{theorem}
+
+\begin{theorem}[Closure-rule systems have immediate-consequence least fixed points]\label{thm:closure-rule-lfp}\lean{Obsmetrologia.ClosureRule.immediate_consequence_lfp}\leanok\uses{thm:settling, thm:valuation, thm:predication, thm:settle-least}
+A positive closure-rule system generates an immediate-consequence operator
+$T_S$. Once its finite-charge orbit has reached a fixed point, the generated
+closure $\mathrm{cl}^S v$ is the least fixed point of $T_S$ above the seed.
+\end{theorem}
+
+\begin{theorem}[Lawvere's fixed point and the Boolean liar's impossibility]\label{thm:lawvere-diagonal}\lean{Obsmetrologia.lawvere_fixed_point}\leanok\uses{thm:closure-operator}
+With point-surjectivity stated pointwise (every valued family is quoted at
+some point), a point-surjective $q : A \to A \to Y$ gives every endomap of
+$Y$ a fixed point (\texttt{lawvere\_fixed\_point}). Boolean negation has no
+fixed point, so no carrier quotes its own Boolean valuations
+(\texttt{no\_boolean\_self\_quotation}): two-valued self-reference has no
+home. Axiom-free.
+\end{theorem}
+
+\begin{theorem}[The asserted liar settles at $\top_k$]\label{thm:liar-closure-settles}\lean{Obsmetrologia.Reading.asserted_liar_settles_kTop}\leanok\uses{thm:closure-operator, thm:settling, thm:lawvere-diagonal}
+The liar step $a \mapsto a \vee_k \neg a$ --- accumulate a site's own
+negation into its record --- is a closure on the knowledge order
+(\texttt{liarClosure}). Its fixed points are exactly the negation-fixed
+poles $\bot_k$ and $\top_k$ (\texttt{liar\_step\_fixed\_iff}); the settled
+value is never on the truth axis (\texttt{liar\_settle\_ne\_truth}); the
+silent seed stays silent
+(\texttt{silent\_liar\_settles\_kBot}); and every asserted seed settles at
+held inconsistency (\texttt{asserted\_liar\_settles\_kTop}). The
+self-reference the two-valued carrier cannot house
+(\cref{thm:lawvere-diagonal}) exists here as a settling dynamic and
+settles in one step. Axiom-free.
+\end{theorem}
+
+\begin{theorem}[The reflexive tower and its self-application]\label{thm:reflexive-tower}\lean{Obsmetrologia.selfApp_mono}\leanok\uses{thm:liar-closure-settles, thm:kle}
+The finite approximants of the reflexive value carrier: rung zero is the
+charge carrier, each next rung the knowledge-monotone charge-valued maps
+of the previous, ordered pointwise (\texttt{valueRung}); consecutive
+rungs carry an embedding--projection pair whose section, retraction,
+deflation, and monotonicity laws are stated in the rung preorders
+(\texttt{valueEP} --- the rung carriers are function subtypes, so
+sections are compared by order, not by equality). Threads ---
+order-coherent choices of one section per rung --- are inhabited
+(\texttt{botThread}); a thread applies its next rung to its current one
+(\texttt{selfApp}); and this self-application is a knowledge-monotone
+charge sequence (\texttt{selfApp\_mono}): quotation applied to itself
+climbs $\le_k$, hence settles within the charge carrier's finite chain
+height. Axiom-free.
+\end{theorem}
+
+\begin{theorem}[The reflexive value carrier]\label{thm:reflexive-value-carrier}\notready\uses{thm:reflexive-tower, thm:liar-closure-settles, thm:record-settling-h1}
+\emph{(Open frontier --- stated, not formalized.)} Over plain types no
+carrier quotes its own valuations (\cref{thm:lawvere-diagonal}), so
+quotation needs a constrained function space: construct a carrier $D$ with
+$D \cong [D \to_k \mathrm{FOUR}]$, the knowledge-monotone valuation space
+--- the paraconsistent domain equation. On such a carrier Lawvere's
+diagonal is inhabited rather than impossible, every definable endomap of
+FOUR acquires a fixed point, and the liar of
+\cref{thm:liar-closure-settles} becomes a genuine self-quoting section:
+an entrenched $\top$-site produced by diagonalization alone --- mass from
+self-reference. The tower and its self-application are built
+(\cref{thm:reflexive-tower}) and the liar threads with their settled
+diagonals are proved (\cref{thm:liar-threads-diagonal}); what remains is
+the bilimit point-surjectivity: every knowledge-monotone
+finite-stage-determined valuation of the thread space is itself a
+thread, closing the domain equation.
+\end{theorem}
+
+\begin{theorem}[The liar threads and their settled diagonals]\label{thm:liar-threads-diagonal}\lean{Obsmetrologia.liar_threads_diagonal}\leanok\uses{thm:reflexive-tower, thm:liar-closure-settles}
+The diagonal sections of the reflexive tower, projection-coherent at
+every rung: the silent liar (`⊥ₖ` at rung zero; above, the negation of
+the argument's own self-application, \texttt{liarThread}) and the
+asserted liar (one telling of truth joined to the same negation,
+\texttt{assertedLiarThread}). The silent liar's self-application is
+$\bot_k$ at every stage (\texttt{silent\_liar\_thread\_selfApp} --- the
+ungrounded liar); the asserted liar's is $\top_k$ at every stage
+(\texttt{asserted\_liar\_thread\_selfApp}), and is negation-fixed: an
+entrenched inconsistency site produced by diagonalization on the tower.
+Axiom-free.
+\end{theorem}

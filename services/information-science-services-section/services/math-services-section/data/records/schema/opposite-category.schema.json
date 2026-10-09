@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "category-theory/category/scripts/dualizing/content/opposite-category",
+  "title": "opposite-category",
+  "description": "The category C^op with the same objects as C and every morphism reversed; composition order is swapped. The carrier of duality: any categorical statement transfers to C^op with all arrows reversed. A category refined by the arrow-reversal involution.",
+  "allOf": [
+    {
+      "$ref": "category-theory/category"
+    }
+  ],
+  "type": "object",
+  "required": [
+    "reverses"
+  ],
+  "properties": {
+    "reverses": {
+      "description": "same objects; every morphism f : A → B becomes f^op : B → A; (g ∘ f)^op = f^op ∘ g^op; (C^op)^op = C",
+      "const": true
+    }
+  }
+}

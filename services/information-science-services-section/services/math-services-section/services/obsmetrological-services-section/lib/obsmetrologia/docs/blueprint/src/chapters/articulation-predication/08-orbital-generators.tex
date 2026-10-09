@@ -1,0 +1,83 @@
+\section{Orbital generators: predication forces FOUR}
+
+The monograph's ``predication forces FOUR'' claim, in its \emph{generator
+exhaustiveness} sense. \texttt{Language.Predicating.Orbital} is a standalone
+module (it does not import \texttt{Cell.lean}) proving, for an abstract
+entity type \(E\) with no cell structure assumed, that a reindexing of an
+oriented pair natural in \(E\) --- a self-map of \(E \times E\) commuting
+with every permutation of \(E\), \texttt{Equivariant} --- is exhausted by
+exactly four maps once \(E\) has four pairwise-distinct entities. This is the
+keystone underneath \cref{thm:corner-card} and the recurring-four chapter's
+own four-fold checks: the concrete \texttt{PredicationCell.converse} /
+\texttt{subjProj} / \texttt{objProj} and the identity are the pair-level
+shadows of what naturality already forces.
+
+\begin{theorem}[Generator exhaustiveness, from four entities on]\label{thm:orbital-exhaustive}\lean{Obsmetrologia.Orbital.orbital_exhaustive}\leanok\uses{thm:predication-converse, thm:predication-proj}
+For an entity type \(E\) with four pairwise-distinct entities and an
+equivariant self-map \(f\) of \(E \times E\), \(f\) is one of exactly four
+maps: the identity, the converse (swap the two coordinates),
+subject-projection (send every pair to \((p_1,p_1)\)), or object-projection
+(send every pair to \((p_2,p_2)\)). The hypothesis is \emph{four}
+pairwise-distinct entities, not three: \cref{prop:orbital-three-counterexample}
+below shows three is genuinely insufficient. No axioms are used.
+\end{theorem}
+
+\begin{theorem}[The diagonal is always fixed]\label{thm:orbital-diagonal-fixed}\lean{Obsmetrologia.Orbital.diagonal_fixed}\leanok\uses{thm:orbital-exhaustive}
+Every equivariant self-map of \(E \times E\) fixes the diagonal,
+\(f\,(s,s) = (s,s)\), already with only \emph{three} pairwise-distinct
+entities: three is enough to find, for any candidate stray coordinate, a
+third element to swap it away with while fixing \(s\). Only the off-diagonal
+half of \cref{thm:orbital-exhaustive} needs the fourth entity.
+\end{theorem}
+
+\begin{proposition}[At exactly three entities, a fifth equivariant map]\label{prop:orbital-three-counterexample}\lean{Obsmetrologia.Orbital.ThreeSample.thirdMap_equivariant, Obsmetrologia.Orbital.ThreeSample.thirdMap_not_orbital}\leanok\uses{thm:orbital-diagonal-fixed}
+On the three-element sample type, the map \texttt{thirdMap} fixes the
+diagonal and sends every off-diagonal pair \((x,y)\) to the doubled
+\emph{excluded third} element, \((z,z)\) where \(z\) is the unique third
+entity distinct from \(x\) and \(y\). \texttt{thirdMap\_equivariant} shows
+this map is natural in every permutation of the three-element type;
+\texttt{thirdMap\_not\_orbital} shows it equals none of the four maps of
+\cref{thm:orbital-exhaustive}. The underlying count: a natural reindexing's
+image, on each hand, can only be drawn from the entities the pair itself can
+\emph{name} --- at three entities that is the pair's two ends \emph{and} the
+one excluded third, three nameable entities, giving \(3^2 = 9\) natural
+reindexings, of which \texttt{thirdMap} is one and the classical four of
+\cref{thm:orbital-exhaustive} are four more. From four entities on, a pair's
+complement is no longer nameable as a single further entity, so a pair can
+name only its own two ends, giving \(2^2 = 4\) --- the count settles at four
+and stays there. Four is the first entity count at which generator
+exhaustiveness, in the classical four-map sense, holds.
+\end{proposition}
+
+\begin{proposition}[The four generators are $\mathrm{Hom}(2,2)$]\label{prop:orbital-id-equivariant}\lean{Obsmetrologia.Orbital.id_equivariant}\leanok\uses{thm:orbital-exhaustive}
+The identity self-map of \(E \times E\) is equivariant, for any \(E\) at
+all --- no distinctness hypothesis needed, since it is built termwise from
+the permutation action. It is the first of the four generators
+\cref{thm:orbital-exhaustive} exhausts naturality into.
+\end{proposition}
+
+\begin{proposition}[Converse is equivariant]\label{prop:orbital-converse-equivariant}\lean{Obsmetrologia.Orbital.converse_equivariant}\leanok\uses{prop:orbital-id-equivariant}
+The pair-swap self-map \((p_1,p_2) \mapsto (p_2,p_1)\) is equivariant for any
+\(E\); it is the pair-level shadow of \texttt{PredicationCell.converse}
+(\cref{thm:predication-converse}).
+\end{proposition}
+
+\begin{proposition}[Subject-projection is equivariant]\label{prop:orbital-subjproj-equivariant}\lean{Obsmetrologia.Orbital.subjProj_equivariant}\leanok\uses{prop:orbital-id-equivariant}
+The constant-first-coordinate self-map \((p_1,p_2)\mapsto(p_1,p_1)\) is
+equivariant for any \(E\); it is the pair-level shadow of
+\texttt{PredicationCell.subjProj} (\cref{thm:predication-proj}).
+\end{proposition}
+
+\begin{proposition}[Object-projection is equivariant]\label{prop:orbital-objproj-equivariant}\lean{Obsmetrologia.Orbital.objProj_equivariant}\leanok\uses{prop:orbital-id-equivariant}
+The constant-second-coordinate self-map \((p_1,p_2)\mapsto(p_2,p_2)\) is
+equivariant for any \(E\); it is the pair-level shadow of
+\texttt{PredicationCell.objProj} (\cref{thm:predication-proj}).
+\end{proposition}
+
+The four propositions above hold for \emph{any} \(E\), with no distinctness
+hypothesis at all; \cref{thm:orbital-exhaustive} is the converse direction,
+that once \(E\) has four pairwise-distinct entities these four are
+\emph{all} the equivariant self-maps there are. Together they are the same
+\(2^2\) as the four corners of \cref{thm:corner-card}: each generator picks,
+for each output hand, one of the two input hands, and there are exactly four
+functions from a two-element set to itself.

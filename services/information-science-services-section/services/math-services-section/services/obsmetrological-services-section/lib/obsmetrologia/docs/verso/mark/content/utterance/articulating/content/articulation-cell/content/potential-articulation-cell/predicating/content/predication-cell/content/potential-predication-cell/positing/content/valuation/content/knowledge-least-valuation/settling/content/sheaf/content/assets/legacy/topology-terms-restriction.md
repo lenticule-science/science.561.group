@@ -1,0 +1,21 @@
+---
+title: "Restriction"
+aliases:
+  - "restriction"
+  - "restriction map"
+date-created: 2025-12-26
+type: term
+tags: []
+---
+
+Restriction is the operation of moving data from a larger context to a smaller one — given a section s defined on U and an inclusion V ⊆ U, the restriction s|_V is the section obtained by "forgetting" the data outside V.
+
+In a [presheaf](./presheaf.md) F on a category C, restriction is encoded by the functoriality: for each [morphism](../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../content/text/glossary/terms/morphism.md) i: V → U in C, there is a restriction map F(i): F(U) → F(V). These maps must satisfy:
+- F(id_U) = id_{F(U)} — restricting to the same context does nothing
+- F(j ∘ i) = F(i) ∘ F(j) — restricting in two steps equals restricting in one (note the contravariance)
+
+In classical topology, if F is a [presheaf](./presheaf.md) of continuous functions on a space X, then restriction sends a function defined on an open set U to its restriction to a smaller open set V ⊆ U — literally evaluating the same function on fewer points.
+
+Restriction is the "local" direction of [sheaf theory](../index.md): it moves from global to local. The opposite direction — assembling local data into global data — is [gluing](../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../content/text/glossary/terms/glue.md). The [sheaf condition](../../higher-topos-theory/terms/sheaf-condition.md) says these two directions are inverse: restriction decomposes global data into local data, and gluing reassembles it, recovering the original.
+
+In the [semiotic](../../../../linguistics/topics/semiotics/index.md) universe, restriction of operators to [fragments](../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../philosophy-services-section/services/relationality-services-section/content/text/glossary/terms/fragment.md) is well-defined precisely for [fragment-preserving](../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../philosophy-services-section/services/relationality-services-section/content/text/glossary/terms/fragment-preserving.md) operators: those whose output on a fragment stays within that fragment.

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://research-notes.561.group/hacking/library/predication-notes/composting/library/object/library/thing/library/category/library/infinity-category/infinity-category.schema.json",
+  "title": "infinity-category",
+  "description": "An (∞,1)-category — the higher-categorical generalization of a category. Morphisms compose up to homotopy specified at every dimension; presentations include quasi-categories, complete Segal spaces, simplicial categories, and relative categories.",
+  "type": "object",
+  "properties": {
+    "name": { "type": "string", "const": "infinity-category" }
+  },
+  "required": ["name"]
+}

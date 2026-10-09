@@ -1,0 +1,31 @@
+\section{Voxels and the adjacency frontier}
+
+This section records claim nodes and dependency edges.
+
+\begin{proposition}[Voxelize is a dimension parameter]\label{thm:voxel-instance}\lean{Obsmetrologia.Valuation.voxelize}\notready\uses{thm:pixelize-adjoint-triple, thm:pixelization-closure, thm:lenticule-hole, thm:glass-bead-material-realization}
+\emph{(Open frontier --- stated, not formalized.)} For the adjoint/closure spine,
+dimension is a parameter: $\texttt{GridPoint} := \texttt{Fin}\,n \times \texttt{Fin}\,m
+\times \texttt{Fin}\,k$ instantiates \cref{thm:pixelize-adjoint-triple} and
+\cref{thm:pixelization-closure} with no new proofs, and $\texttt{voxelize} :=
+\texttt{pixelize}$ at $d = 3$. Hexagonal grids likewise plug in unchanged, and dissolve
+the planar 4-versus-8 ambiguity by carrying a single adjacency system. The voxel's
+finite site-cell realization is the lenticule stratum's: the clopen-overlap cell of
+\cref{thm:lenticule-hole}/\cref{thm:glass-bead-material-realization} is the shape a
+voxel generalizes, and the directional refinement of a voxel is
+\cref{thm:lenticular-fiber-sample}. Everything dimension-specific lives in the next
+node, outside the fibration layer.
+\end{proposition}
+
+\begin{theorem}[Adjacency complementarity]\label{thm:adjacency-complementarity}\lean{Obsmetrologia.Discrete.VoxelAdjacency.complementary_pairing}\notready\uses{thm:voxel-instance, thm:k4-group}
+\emph{(Open frontier --- stated, not formalized.)} The connectivity structure of the cell
+reading: explicit 4/8-adjacency graphs on $\texttt{Fin}\,n \times \texttt{Fin}\,m$ and
+6/18/26-adjacency graphs on the voxel carrier, with whatever complementary-pairing
+separation theorem the digital-topology literature fixes (Kong--Rosenfeld 1989; a digital
+Jordan-type statement is the largest single new proof in the chapter). One negative
+finding is recorded now so no proof effort is misspent: the planar pairing
+$(4,8) \leftrightarrow (8,4)$ is a single involution --- a $\mathbb{Z}/2$ duality in the
+shape of \texttt{Kind}, \emph{not} an action of the Klein four-group of
+\cref{thm:k4-group}; whether the three 3D systems carry any genuine threefold structure
+matching $K_{4}$'s three nontrivial elements is open and gated on the literature's exact
+pairing statement.
+\end{theorem}

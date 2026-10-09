@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/content/aperiodic-settling/content/step-n-substitution-recurrence/content/step-n-substitution-rule/content/step-n-moduli-substack",
+  "title": "step-n-moduli-substack",
+  "description": "For a fixed step depth n >= 2, the sub-stack M^(n) of the meta-moduli stack consisting of the closure-equivalence classes whose representatives are primitive step-n substitution rules; the family {M^(n)} stratifies the meta-aperiodic stratum by step depth and carries the corpus's first internal renormalization-group structure.",
+  "type": "object",
+  "required": ["step", "meta-points", "primitive", "stratifies"],
+  "properties": {
+    "step": {
+      "type": "integer",
+      "minimum": 2,
+      "description": "the step-depth parameter n; M^(n) is defined for each n >= 2"
+    },
+    "meta-points": {
+      "type": "array",
+      "items": { "$ref": "mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/content/aperiodic-settling/content/step-n-substitution-recurrence/content/step-n-substitution-rule" },
+      "description": "the closure-equivalence classes [S] in this sub-stack, one per substitution-matrix structure modulo conjugacy; cardinality grows with n"
+    },
+    "primitive": {
+      "const": true,
+      "description": "each representative substitution rule is primitive (some power of its substitution matrix is strictly positive), as required for rank-theorem-based step-depth invariance"
+    },
+    "stratifies": {
+      "const": true,
+      "description": "M^(n) is a stratum of the meta-aperiodic stratum: M^meta_aper = (disjoint-union over n >= 2 of M^(n)) disjoint-union M^meta_aper,residue"
+    },
+    "step-shift": {
+      "type": "boolean",
+      "description": "the step-shift morphism sigma : M^(n) -> M^(n+1) embeds this sub-stack into the next, giving the ascending chain M^(2) -> M^(3) -> ... whose colimit is a candidate RG-fixed-point"
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/pre-bilattice/content/bilattice/content/four-bilattice/content/internal-z2-gauge",
+  "title": "internal-z2-gauge",
+  "description": "The Z/2 group action on FOUR generated above the four-bilattice: the non-trivial element acts as negation ~ and the identity element acts as the identity map. It is the symmetry that makes FOUR's two orders a bilattice, fixing the knowledge-symmetric values and swapping true and false.",
+  "type": "object",
+  "required": ["acts-on", "group", "non-trivial-element", "identity-element", "preserves-knowledge-order", "reverses-truth-order"],
+  "properties": {
+    "acts-on": {
+      "$ref": "mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/pre-bilattice/content/bilattice/content/four-bilattice",
+      "description": "FOUR, the four-element bilattice on which the gauge acts"
+    },
+    "group": {
+      "const": "Z/2",
+      "description": "the order-two cyclic group whose action constitutes the gauge"
+    },
+    "non-trivial-element": {
+      "const": "negation",
+      "description": "the non-identity element of Z/2 acts as negation ~"
+    },
+    "identity-element": {
+      "const": "identity",
+      "description": "the identity element of Z/2 acts as the identity map id"
+    },
+    "preserves-knowledge-order": {
+      "const": true,
+      "description": "the action is monotone for the knowledge order: x <=_k y implies ~x <=_k ~y"
+    },
+    "reverses-truth-order": {
+      "const": true,
+      "description": "the action is antitone for the truth order: x <=_t y implies ~y <=_t ~x"
+    },
+    "fixes-symmetric-values": {
+      "const": true,
+      "description": "fixes the knowledge-extreme values bottom and top while swapping t and f"
+    }
+  }
+}

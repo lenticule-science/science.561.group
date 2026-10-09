@@ -1,0 +1,25 @@
+{
+  "kind": "admitted-source-provenance",
+  "id": "communicating-runtime-admitted-from-agential-relationality",
+  "admitted-by": "linguistics-services-section",
+  "source-enterprise": "red-cup-engineering",
+  "source-territory": "src/content/assets/legacy/2026-06-27-agential-relationality",
+  "source-repository-commit": "911642453fc9f0376149065d981324815fd11d47",
+  "communicating-commit": "50f70076a0125576d56d30422e177a67b6dc371d",
+  "relating-commit": "f03a52fd58d93f111c37c433152bd24e26403f03",
+  "recovery-result": "urn:sha256:ec0327ae44951cbefc9f26ce404df948b92033fd863890bd59cb0f65c278ec50",
+  "contextual-bundle-digest": "sha256:4ca344890b7a2cef1608b1bc2a06647f8c199e8fe62dd90fcdc52119483e23bb",
+  "admission": "internal maintenance and operation inside Lenticule Science",
+  "public-redistribution": "undecided",
+  "runtime-form": "admitted compiled JavaScript plus a Lenticule-owned relating runtime; bare-package imports were mechanically rebound to explicit settlement-local files so no ignored node_modules or external runtime is required",
+  "admitted-tree-digests": {
+    "algorithm": "sha256 over the sorted sha256sum rows of every regular file",
+    "communicating-dist": "7883e70a492c44c715bcb0d7fd4d6a1552c0a674d4522aedae813daf53016506",
+    "communicating-dist-files": 79,
+    "relating-runtime": "c157afd314409544217c6d7692be986c96ab4df1a3f7124e9e852e48cd125789",
+    "relating-runtime-files": 352,
+    "communicating-source": "4082523b7515fc34b74510ad43b37f57f00147c90dacb233fd4924c8d4c1cbe5",
+    "communicating-source-files": 84
+  },
+  "source-preservation": "maintained TypeScript source is retained at lib/communicating/src; the Red Cup source remains unchanged"
+}

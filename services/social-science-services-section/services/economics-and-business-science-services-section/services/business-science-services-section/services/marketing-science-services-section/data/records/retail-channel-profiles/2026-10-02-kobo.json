@@ -1,0 +1,14 @@
+{
+  "type": "RetailChannelProfile",
+  "version": 1,
+  "observedOn": "2026-10-02",
+  "channel": "kobo",
+  "name": "Kobo Writing Life",
+  "finalFileDue": {
+    "businessDays": 3
+  },
+  "sources": [
+    "https://kobowritinglife.zendesk.com/hc/en-us/articles/360059386491-KWL-Guide-to-Pre-Orders"
+  ],
+  "caveat": "Secondary guides disagree (48 hours to 10 days); the profile follows Kobo's own guide."
+}

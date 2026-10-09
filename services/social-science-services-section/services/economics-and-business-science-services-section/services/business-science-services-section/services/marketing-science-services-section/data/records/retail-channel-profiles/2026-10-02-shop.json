@@ -1,0 +1,14 @@
+{
+  "type": "RetailChannelProfile",
+  "version": 1,
+  "observedOn": "2026-10-02",
+  "channel": "shop",
+  "name": "561 Group shop (house storefront)",
+  "finalFileDue": {
+    "hours": 0
+  },
+  "sources": [
+    "lib/emsenn/services/561-group/services/561-group-services-section/content/text/documents/articles/notes/2026/10/02/2026-10-02-note-on-the-pre-release-period-of-a-publication.md"
+  ],
+  "caveat": "The house serves its own release; the accepted edition must exist before the on-sale date, with no outside review window."
+}

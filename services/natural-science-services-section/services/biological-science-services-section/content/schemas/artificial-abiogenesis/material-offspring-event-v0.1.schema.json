@@ -1,0 +1,89 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "lenticule/artificial-abiogenesis/material-offspring-event/v0.1",
+  "title": "Material Offspring Event v0.1",
+  "type": "object",
+  "required": [
+    "event_id",
+    "parent_id",
+    "daughter_id",
+    "event_start",
+    "event_end",
+    "environment_ref",
+    "time_series_evidence",
+    "operator_interventions",
+    "autonomy_class",
+    "parent_daughter_similarity",
+    "assay_reading"
+  ],
+  "properties": {
+    "event_id": {
+      "type": "string"
+    },
+    "parent_id": {
+      "type": "string"
+    },
+    "daughter_id": {
+      "type": "string"
+    },
+    "event_start": {
+      "type": "string"
+    },
+    "event_end": {
+      "type": "string"
+    },
+    "environment_ref": {
+      "type": "string"
+    },
+    "energy_feed_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "time_series_evidence": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "operator_interventions": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "autonomy_class": {
+      "enum": [
+        "autonomous-under-declared-environment",
+        "externally-triggered-material-division",
+        "human-fission",
+        "ambiguous"
+      ]
+    },
+    "separation_metric": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "parent_daughter_similarity": {
+      "type": "object"
+    },
+    "background_similarity_distribution": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "assay_reading": {
+      "enum": [
+        "unknown",
+        "held",
+        "denied",
+        "contested"
+      ]
+    }
+  }
+}

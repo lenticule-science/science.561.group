@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predicate-category/content/predicatory-comparison/content/comparison-standard",
+  "title": "comparison-standard",
+  "description": "The relation or predicate that fixes what a predicatory comparison is checking - sameness, containment, strengthening, confluence, or residual difference. It is part of the mathematical data of a comparison context; two contexts over the same inputs but different standards define different comparison morphisms.",
+  "type": "object",
+  "required": ["family", "relation"],
+  "properties": {
+    "family": {
+      "enum": ["exact", "order", "residual", "confluence", "temporal"],
+      "description": "the standard family: exact (equality of valuations/composites, equalization loci), order ($\\leq_k$ containment, $\\leq_t$ strengthening), residual (evidence to add along a defined direction), confluence (common successor by allowed operations), or temporal (one stage, an interval, or after closure)"
+    },
+    "relation": {
+      "const": "predicate",
+      "description": "the relation or predicate the standard applies to the two compared settlings to decide the question"
+    },
+    "determines-question": {
+      "const": true,
+      "description": "the standard makes the comparison well-specified: it decides what counts as sameness, divergence, containment, truth-strengthening, joinability, or residual difference"
+    }
+  }
+}

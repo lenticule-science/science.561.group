@@ -1,0 +1,42 @@
+---
+type: theorem
+class: engineering-claim
+status: proved
+depends-on: [predication-fiber-algebra, predication-valuation, closure-2-monad, closure-2-monad-lax-idempotence, predicate-converse, closure-rule-system-realizes-closure-2-monad, settling-quiescence]
+see-also: [grade-as-cell-set-cardinality-invariant, four-regime-dichotomy, closure-orbit-as-query-result]
+---
+
+# Substrate entities admit a four-position classification by settledness × partneredness (voidmath F5.1–F5.4 as substrate predication)
+
+**Claim.** Every substrate entity's [predication-valuation](../../../../../../../humanities/theories/math/theories/categories/theories/predication-categories/objects/predication-valuation.md) restricted to the entity's index — its *fiber* in the substrate's algebra — admits a per-entity classification along two independent axes:
+
+- **Settledness.** The fiber is **settled** iff it is a fixed point of the [closure 2-monad](../../../../../../../humanities/theories/math/theories/categories/theories/predication-categories/morphisms/closure-2-monad.md): $\mathrm{cl}(v) = v$. Equivalently, no closure rule's antecedent is satisfied at $v$ in a way that would change a cell's value. Otherwise the fiber is **unsettled**.
+- **Partneredness.** Let $\Pi_\leftrightarrow \subseteq \Pi \times \Pi$ be the substrate's *partner relation* — the symmetric closure of the predicate-pair structure declared in the predicate category $\mathcal{C}$ (canonically: each [predicate-converse](../../../../../../../humanities/theories/math/theories/categories/theories/predication-categories/morphisms/predicate-converse.md) pair $(p, p^c)$, plus any further pairs the rule system declares). The fiber is **partnered** iff, for every $\langle s, p, o \rangle$ with $v\langle s, p, o \rangle \neq \bot$ and every $(p, q) \in \Pi_\leftrightarrow$, the corresponding partner cell $\langle s', q, o' \rangle$ (with indices determined by the partner relation, e.g., $(s', o') = (o, s)$ for the converse case) also has $v\langle s', q, o' \rangle \neq \bot$. Otherwise the fiber is **unpartnered**.
+
+The two axes are independent. The four resulting positions are:
+
+- **Settled · partnered (F5.3).** Closure-quiescent and partner-complete. The healthy state: no rule wants to fire, every predicate has its dual present. This position seeds the [vocabulary fold](vocabulary-fold-as-predicate-atom-promotion.md) — settled-partnered entities are candidates for promotion to predicate-atoms at the next vocabulary level.
+- **Settled · unpartnered (F5.1).** Closure-quiescent but missing partner cells. The fiber has stabilized at its current values, but its predicate-graph is incomplete: some asserted cells lack their dual. The substrate cannot fire further reductions, but the entity is also not a complete witness — partner-completion would require new edits, not new closure firings.
+- **Unsettled · partnered (F5.2).** All asserted cells have their partners, but at least one closure rule's antecedent is satisfied and unfired. The entity is rich-but-in-process — the substrate's next closure pass will change its values.
+- **Unsettled · unpartnered (F5.4).** Both incomplete and in-process. The entity is in the early phase of substrate intake, before either closure firing or partner completion has progressed.
+
+## Why the classification holds
+
+**Settledness is well-defined.** Per [closure-2-monad-lax-idempotence](../../../../../../../humanities/theories/math/theories/categories/theories/predication-categories/theorems/closure-2-monad-lax-idempotence.md), the closure operator is idempotent up to the lax-idempotent diamond, so "fixed point" is well-defined: $v$ is settled iff $\mathrm{cl}(v) = v$ (in the strict regime, exactly; in higher regimes, at the appropriate ordinal stage per [four-regime-dichotomy](../../../../../../../humanities/theories/math/theories/categories/theories/predication-categories/theorems/four-regime-dichotomy.md)). Per [settling-quiescence](../../../../../../../humanities/theories/math/theories/categories/theories/predication-categories/concepts/settling-quiescence.md), the substrate observes settledness by checking whether the next closure step changes the valuation.
+
+**Partneredness is well-defined.** Per [predicate-converse](../../../../../../../humanities/theories/math/theories/categories/theories/predication-categories/morphisms/predicate-converse.md), the predicate category $\mathcal{C}$ carries converse morphisms $f : p \to p^c$ that swap entity-pair indices. The partner relation $\Pi_\leftrightarrow$ is the substrate's declared symmetric structure on $\Pi$ that includes every converse pair plus any further symmetric pairs the [closure-rule-system](../../../../../../../humanities/theories/math/theories/categories/theories/predication-categories/concepts/closure-rule-system.md) admits. Partneredness is then a finite check on the fiber's support: for each non-$\bot$ cell, look up its declared partners and verify they are also non-$\bot$.
+
+**Independence of the axes.** Settledness depends on closure-rule satisfiability; partneredness depends on cell-support coverage. A cell-support-complete fiber may still have firable rules (e.g., a closure rule whose antecedent is *all* of two paired cells being $\mathbf{t}$) — this is the unsettled-partnered position. A closure-quiescent fiber may have unpaired cells if no rule's consequent is the missing partner cell — this is the settled-unpartnered position. The four positions are jointly exhaustive and mutually exclusive.
+
+## Engineering consequence
+
+- **The classification replaces ad-hoc `status:` fields.** A substrate that records `status: open|active|done` on entities is doing a coarse projection of the four-position taxonomy. The position is derivable from the entity's fiber and the substrate's rule system; storing it as a separate cell duplicates content the algebra already carries.
+- **Position transitions are computable from substrate edits.** An edit that admits new cells can move an entity from unpartnered to partnered (if the new cells complete partner pairs). A closure-firing pass moves an entity from unsettled to settled. The four positions form a partial order under "more committed" (settled-partnered is the maximal position); transitions are the substrate's progress signal.
+- **Position is consultable for prioritization.** The substrate's [`heartbeat-cycle`](../../../../../engineering/theories/tech/theories/computing/theories/predicated-computing/theories/agential-orchestration-platform/theories/flatfile-agentic-resource-system/morphisms/heartbeat-cycle.md) can prioritize unsettled entities for closure-firing and unpartnered entities for partner-completion edits, surfacing the substrate's incomplete-and-in-process work as the natural attention queue.
+- **Position is per-entity, not per-substrate.** A substrate at any moment carries entities at all four positions; the classification is local to each entity's fiber. This is distinct from the [four-regime-dichotomy](../../../../../../../humanities/theories/math/theories/categories/theories/predication-categories/theorems/four-regime-dichotomy.md), which classifies the *closure-ordinal of the whole settling system*. The two four-classifications are unrelated except in name.
+
+## Position
+
+This theorem grounds voidmath's *F5.1–F5.4 four-position taxonomy* as the product of two predication-category properties: closure-fixed-pointness and partner-completeness under the predicate category's converse structure. The voidmath claim "every entity occupies exactly one of four positions" becomes: every fiber is either a closure-fixed-point or not, and either partner-complete or not, giving four jointly-exhaustive cells.
+
+The taxonomy composes with the [referencing-entity pattern](../../../../../engineering/theories/tech/theories/computing/theories/predicated-computing/theories/agential-orchestration-platform/theories/flatfile-agentic-resource-system/concepts/referencing-entity-pattern.md): a referenced entity's effective fiber (folding referencing-entity contributions) carries its own four-position classification, distinct from the position of any single referencing entity. With [grade-as-cell-set-cardinality-invariant](grade-as-cell-set-cardinality-invariant.md), the substrate has a small set of cheap-to-compute structural metrics: grade (cell count), settledness (closure-fixed-pointness), partneredness (predicate-pair coverage), with position derived from the latter two.

@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://research-notes.561.group/hacking/library/predication-notes/composting/library/predication-cell-set/library/predication-shape/predication-shape.schema.json",
+  "title": "Predication shape",
+  "description": "JSON Schema for a predication-shape — the signature of a structure-form expressed as a finite list of characteristic predication cells. An entity inhabits the form iff its cell-graph supplies a witnessing cell for each characteristic cell at the prescribed cardinality. The list-and-cardinality form, per the theorem in code/structures/predication-shape.md, is the uniform reduction of sort/operation/relation/constant signature data when the interpretation category is the predication category P.",
+  "type": "object",
+  "required": ["characteristic-cells"],
+  "additionalProperties": false,
+  "properties": {
+    "form": {
+      "description": "Optional structure-form slug naming what this shape is the signature of.",
+      "type": "string",
+      "pattern": "^[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$"
+    },
+    "characteristic-cells": {
+      "description": "The list of characteristic cells. Each tuple (predicate, subject-sort, object-sort, cardinality) declares a required-or-optional incident cell on entities inhabiting the form.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["predicate", "cardinality"],
+        "additionalProperties": false,
+        "properties": {
+          "predicate": {
+            "description": "The predicate at this characteristic cell. Must be in the ambient predicate-category.",
+            "type": "string",
+            "pattern": "^[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$"
+          },
+          "subject-sort": {
+            "description": "Optional sort-slug constraining admissible subjects. When absent, any entity may be the subject.",
+            "type": "string",
+            "pattern": "^[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$"
+          },
+          "object-sort": {
+            "description": "Optional sort-slug constraining admissible objects. When absent, any entity may be the object.",
+            "type": "string",
+            "pattern": "^[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$"
+          },
+          "cardinality": {
+            "description": "Required cardinality of the witnessing cell-set: 'required' (exactly one), 'optional' (zero or one), 'list-valued' (zero or more), or 'set-valued' (zero or more distinct).",
+            "enum": ["required", "optional", "list-valued", "set-valued"]
+          }
+        }
+      }
+    }
+  }
+}

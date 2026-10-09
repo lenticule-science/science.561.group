@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "category-theory/category/scripts/functoring/content/functor/scripts/representing/content/presheaf/scripts/simplicializing/content/simplicial-set/scripts/filling/content/quasi-category/scripts/ascending/content/infinity-category/scripts/groupoidifying/content/infinity-1-category/scripts/descending/content/infinity-1-topos",
+  "title": "infinity-1-topos",
+  "description": "An (∞,1)-category satisfying descent (stable, effective colimits) — a context for homotopy-coherent logic and geometry, the ∞ analogue of a sheaf topos. An (∞,1)-category refined by the descent conditions.",
+  "allOf": [
+    {
+      "$ref": "category-theory/category/scripts/functoring/content/functor/scripts/representing/content/presheaf/scripts/simplicializing/content/simplicial-set/scripts/filling/content/quasi-category/scripts/ascending/content/infinity-category/scripts/groupoidifying/content/infinity-1-category"
+    }
+  ],
+  "type": "object",
+  "required": [
+    "descent"
+  ],
+  "properties": {
+    "descent": {
+      "description": "colimits are universal and effective (Giraud–Rezk–Lurie descent); local-to-global gluing holds coherently",
+      "const": true
+    }
+  }
+}

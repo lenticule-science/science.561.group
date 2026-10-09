@@ -1,0 +1,30 @@
+\section{The knowledge bilattice operations}
+
+\begin{proposition}[The FOUR bilattice operations]\label{thm:four-bilattice}\lean{Obsmetrologia.Reading.joinK}\leanok\uses{thm:four-charges, thm:predication, def:articulating}
+The charge carrier has knowledge join and meet, truth join and meet, negation,
+and the knowledge/truth comparisons. All are defined by Boolean slot algebra
+on the same four-point carrier.
+\end{proposition}
+
+\begin{theorem}[Knowledge order is a lattice]\label{thm:joinK-lattice}\lean{Obsmetrologia.Reading.joinK_assoc}\leanok\uses{thm:four-bilattice}
+Knowledge join and meet satisfy the bounded-lattice laws by finite exhaustion
+over the four charges. The corresponding truth operations satisfy the same
+lattice laws in the truth order.
+\end{theorem}
+
+\begin{theorem}[Distributivity and interlacing]\label{thm:bilattice-distrib}\lean{Obsmetrologia.Reading.meetK_joinK_distrib}\leanok\uses{thm:joinK-lattice, thm:valuation-meetK}
+The FOUR bilattice is distributive, and truth/knowledge operations interlace:
+a truth operation distributes across a knowledge operation on the same finite
+carrier.
+\end{theorem}
+
+\begin{theorem}[The seeded bottom $\bot_k$]\label{thm:kBot-least}\lean{Obsmetrologia.Reading.kBot_leK}\leanok\uses{thm:four-bilattice}
+Knowledge-bottom is the identity for knowledge join and the least element of
+the knowledge order. This is the value assigned before evidence raises a cell.
+\end{theorem}
+
+\begin{theorem}[Negation links the two orders]\label{thm:negate-duality}\lean{Obsmetrologia.Reading.negate_leT}\leanok\uses{thm:four-bilattice}
+Negation swaps the evidence slots. It preserves the knowledge order and
+reverses the truth order, fixing the knowledge poles while exchanging the two
+truth poles.
+\end{theorem}

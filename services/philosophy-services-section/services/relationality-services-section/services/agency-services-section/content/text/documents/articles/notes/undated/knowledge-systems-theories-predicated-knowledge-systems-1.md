@@ -1,0 +1,42 @@
+---
+title: Predicated Knowledge Systems
+description: A subtheory of knowledge-systems.
+---
+# Predicated Knowledge Systems
+
+A subtheory of [knowledge-systems](../../research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/knowing/content/knowledge-science). The named theory of how a knowledge system works when it has chosen the [predication-cell](../../research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/humanities/theories/math/theories/categories/theories/predication-categories/concepts/predication-cell.md) as its substrate.
+
+## Parent theory
+
+[knowledge-systems](../../research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/knowing/content/knowledge-science) — the parent theory in [information science](../../research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/knowing/_index.md). Predicated-knowledge-systems specialises the parent by making one ontological choice: the unit of stored knowledge is the subject-predicate-object cell, evaluated in the four-element bilattice $\mathbf{2} \otimes \mathbf{2}$ rather than in $\{\mathrm{true}, \mathrm{false}\}$ or in any other value-domain. Everything in this subtheory follows from that choice plus the predication-categories machinery that comes with it.
+
+## Predecessor sibling
+
+[knowing-semioverse](../../research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/knowing/content/knowledge-science/systems/knowing-semioverse) is the older form of this account. Knowing-semioverse organised a knowledge system around a four-group directory layout (governing / engaging / situating / defining) and a twelve-type cross-cutting vocabulary, derived from process ontology, philosophy of science, situated learning, and terminology science but without an underlying mathematical substrate. The predicated-knowledge-systems subtheory was written after the substrate — predication categories — was developed; it names what the four-group layout was implicitly a [fibration](../../research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/humanities/theories/math/theories/categories/theories/predication-categories/objects/predication-fibration.md) over and what the directory types were implicitly a [closure-rule language](../../research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/humanities/theories/math/theories/categories/theories/predication-categories/concepts/closure-rule-language.md) for. It does not deprecate the predecessor; it succeeds it. References from the predicated framing back to the knowing-semioverse layout are first-class via [`lift-from-knowing-semioverse`](../../research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/knowing/content/knowledge-science/systems/archive/morphisms/lift-from-knowing-semioverse.md).
+
+## Substrate commitment
+
+A knowledge system is *predicated* when, structurally:
+
+- The unit of stored knowledge is a subject-predicate-object [predication-cell](../../research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/humanities/theories/math/theories/categories/theories/predication-categories/concepts/predication-cell.md).
+- Each cell carries a value in the [twist product](../../../../../../../../../../../information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/obsmetrologia/docs/verso/mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/residuated-lattice/content/twist-product/twist-product.md) $\mathbf{2} \otimes \mathbf{2}$ — separate positive and negative evidence channels, ordered by both [truth](../../../../../../../../../../../information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/obsmetrologia/docs/verso/mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/pre-bilattice/content/truth-order/truth-order.md) and [knowledge](../../research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/humanities/theories/math/theories/categories/theories/predication-categories/concepts/knowledge-order.md).
+- The cells with a given predicate $p$ aggregate into a [predication fiber algebra](../../research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/humanities/theories/math/theories/categories/theories/predication-categories/objects/predication-fiber-algebra.md) $A_p$. The assignment $p \mapsto A_p$ is a contravariant functor over the predicate category — a [predication-fibration](../../research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/humanities/theories/math/theories/categories/theories/predication-categories/objects/predication-fibration.md) in the sense of Lawvere.
+- The system's inferential closure is the iterated application of a [closure-rule system](../../research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/humanities/theories/math/theories/categories/theories/predication-categories/concepts/closure-rule-system.md), classified by the [four-regime dichotomy](../../../../../../../../../../../information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/obsmetrologia/docs/verso/mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/references/four-regime-dichotomy.md) (strict / Scott-continuous / transfinite-bounded / aperiodic).
+
+These four commitments are what the upstream knowledge-organisation, knowledge-representation, and predication-logic literatures *jointly entail* once a knowledge system chooses the predication-cell. The substantive content of the subtheory — its synthesis essays, concepts, objects, morphisms, theorems, examples — names what those four commitments do, what they exclude, and what they let the system do that other substrates cannot.
+
+## Layout
+
+Following the [predication-categories](../../research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/humanities/theories/math/theories/categories/theories/predication-categories/_index.md) shape:
+
+- `concepts/` — semantic anchors named by the synthesis (knowing-as-settling, discourse-community-as-fiber, aboutness, epistemic-closure, evidence-accumulation, reified-retraction, predicate-category-stratification).
+- `objects/` — structural definitions (predicated-knowledge-system, knowledge-fiber-algebra, four-group-register-as-fibration, concept-lattice-as-degenerate-fiber, upper-ontology-as-predicate-vocabulary).
+- `morphisms/` — the operations a predicated knowledge system supports (assert, classify, specialize, federate, lift-from-knowing-semioverse).
+- `theorems/` — the load-bearing claims (most carry `status: sketch`; the synthesis is research-active per [CLAUDE.md](../../research/2026/07/31/lenticule-import/animating/content/CLAUDE.md)).
+- `examples/` — instantiations: this repository, Topic Maps, an FCA concept lattice, knowing-semioverse as predecessor, plus three reverse-engineering examples that recover RDF/OWL, Datalog, and Cyc microtheories from restrictions of the substrate.
+- `narratives/` — through-lines (from-Frege-to-FARS, what-knowledge-systems-inherits-when-it-goes-predicated).
+- `questions/` — open questions the synthesis surfaces.
+- `references/` — annotated reference notes for the load-bearing upstream works (knowledge organisation, integrative levels, knowledge representation, upper ontologies, process and situated learning); supplementary to the canonical reference notes in [predication-categories/references](../../research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/humanities/theories/math/theories/categories/theories/predication-categories/references).
+- `texts/` — five literature-review syntheses, one per upstream stream.
+
+Plus `_index.md` (this subtheory's frontmatter), `README.md` (this file), `references.bib` (consolidated BibTeX), and `research.toml` (FARS toolkit configuration).

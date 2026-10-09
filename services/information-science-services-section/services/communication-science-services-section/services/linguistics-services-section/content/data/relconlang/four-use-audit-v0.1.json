@@ -1,0 +1,159 @@
+{
+  "kind": "lenticule.relconlang.four-use-audit",
+  "version": "0.1",
+  "date": "2026-10-01",
+  "purpose": "Inventory distinct uses/projections of the FOUR carrier across relating/communicating/RelConLang so shared value names are not mistaken for shared semantics.",
+  "canonicalAlgebra": {
+    "coordinates": [
+      "evidence-for",
+      "evidence-against"
+    ],
+    "values": {
+      "absurd": [
+        0,
+        0
+      ],
+      "potential": [
+        1,
+        0
+      ],
+      "active": [
+        0,
+        1
+      ],
+      "stable": [
+        1,
+        1
+      ]
+    },
+    "knowledgeJoin": "componentwise accumulation"
+  },
+  "uses": [
+    {
+      "id": "predication-evidence",
+      "system": "@red-cup-engineering/relating",
+      "fiber": "predication cell evidence",
+      "interpretation": {
+        "potential": "for only",
+        "active": "against only",
+        "stable": "both",
+        "absurd": "neither"
+      },
+      "status": "canonical",
+      "source": "lib/.../relating/src/articulating/predicating/positing/bilattice-charge.mts"
+    },
+    {
+      "id": "parse-hypothesis",
+      "system": "@red-cup-engineering/communicating",
+      "fiber": "grammatical relation/hypothesis",
+      "interpretation": {
+        "potential": "supported hypothesis",
+        "active": "negative evidence",
+        "stable": "conflicting evidence",
+        "absurd": "no evidence"
+      },
+      "status": "explicit-bilattice-application",
+      "source": ".../communicating/src/speaking/listening/parsing/charging.mts"
+    },
+    {
+      "id": "membrane-truth-direction",
+      "system": "@red-cup-engineering/communicating",
+      "fiber": "claim subject over an agent membrane",
+      "interpretation": {
+        "potential": "asserted/for",
+        "active": "denied/against",
+        "stable": "asserted and denied",
+        "absurd": "no held direction"
+      },
+      "status": "explicit-bilattice-application",
+      "source": ".../communicating/src/communicate/face.mts"
+    },
+    {
+      "id": "relconlang-stance-particles",
+      "system": "@emsenn/communicating-in-relation-conlang",
+      "fiber": "clause stance",
+      "interpretation": "currently inconsistent across stance-system.json, witnessJournal, and richer Chu matrix",
+      "status": "open-with-candidate-chu-row-projection",
+      "source": "bare-cedar-fog/.../relation-language-corpus/data/{manifest.json,stance-system.json}",
+      "candidateBridge": "Aggregate each particle's [truth-state charge, falsity-state charge] with relating knowledge-order aggregate; results exactly match stance-system.json."
+    },
+    {
+      "id": "illocution-projection",
+      "system": "@red-cup-engineering/communicating",
+      "fiber": "result of illocution meme endomorphism",
+      "interpretation": "force operators transform charge; five forces project non-injectively to FOUR",
+      "status": "operator-not-taxonomy",
+      "source": ".../communicating/src/communicate/expressing.mts"
+    },
+    {
+      "id": "message-lifecycle",
+      "system": "@red-cup-engineering/communicating + @emsenn/socializing",
+      "fiber": "linear-resource transport lifecycle",
+      "interpretation": {
+        "potential": "in transit",
+        "active": "received/spent"
+      },
+      "status": "representation-unjustified",
+      "concern": "Player/Opponent handedness swaps recv/send coordinates but does not map potential to active.",
+      "source": ".../communicating/src/messaging/index.mts; .../socializing/README.md"
+    },
+    {
+      "id": "presupposition-detection",
+      "system": "@red-cup-engineering/communicating",
+      "fiber": "detected presupposed proposition before accommodation",
+      "interpretation": {
+        "absurd": "trigger found but presupposition not independently evidenced"
+      },
+      "status": "plausible-explicit-embedding",
+      "source": ".../understanding/semantics/presupposition.mts"
+    },
+    {
+      "id": "presuppose-morphism",
+      "system": "@red-cup-engineering/communicating",
+      "fiber": "background presupposition produced by presuppose",
+      "interpretation": {
+        "stable": "documented as already-held / both-witnessed"
+      },
+      "status": "representation-question",
+      "concern": "Implementation places the same trigger witness on both evidence-for and evidence-against coordinates; canonical FOUR reads this as contradiction.",
+      "source": ".../communicating/src/communicate/expressing.mts"
+    },
+    {
+      "id": "temporal-epistemic-reader",
+      "system": "@red-cup-engineering/communicating",
+      "fiber": "temporal/evidential frame",
+      "interpretation": {
+        "potential": "present/past firsthand",
+        "absurd": "future or reported"
+      },
+      "status": "representation-question",
+      "concern": "Reported evidence and futurity are not identical to absence of evidence. Current direct consumer found in English section codec, not RelConLang corpus.",
+      "source": ".../communicating/src/speaking/listening/understanding/semantics/tense.mts"
+    },
+    {
+      "id": "register-specificity",
+      "system": "@red-cup-engineering/communicating",
+      "fiber": "whether a register-fiber axis carries a selected value",
+      "interpretation": {
+        "potential": "specificity carried",
+        "absurd": "not carried"
+      },
+      "status": "explicit-boolean-embedding",
+      "source": ".../communicating/src/speaking/listening/algebra/register-fiber.mts"
+    }
+  ],
+  "rule": "Every use must state its fiber and coordinate interpretation. Reusing a ChargeValueName is not itself a semantic bridge.",
+  "derivedBridges": [
+    {
+      "id": "relconlang-chu-row-to-clause-stance",
+      "operation": "knowledge-order join across the truth/falsity state axis",
+      "result": {
+        "ta": "potential",
+        "na": "potential",
+        "sha": "stable",
+        "mu": "absurd"
+      },
+      "status": "derived from existing matrix + algebra; not implemented in parser"
+    }
+  ]
+}

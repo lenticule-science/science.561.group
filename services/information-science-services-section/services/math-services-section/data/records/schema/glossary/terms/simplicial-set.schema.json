@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "glossary/terms/simplicial-set",
+  "title": "simplicial-set",
+  "description": "A presheaf X : Δ^op → Set on the simplex category Δ: a set X_n of n-simplices for each n, with face maps d_i and degeneracy maps s_i satisfying the simplicial identities. The combinatorial skeleton of homotopy theory; a presheaf refined to the indexing category Δ.",
+  "allOf": [
+    {
+      "$ref": "./presheaf.schema.json"
+    }
+  ],
+  "type": "object",
+  "required": [
+    "indexed-by-simplices",
+    "face-and-degeneracy"
+  ],
+  "properties": {
+    "indexed-by-simplices": {
+      "description": "the base category is Δ, the finite non-empty ordinals with order-preserving maps",
+      "const": "delta"
+    },
+    "face-and-degeneracy": {
+      "description": "face maps d_i : X_n → X_{n-1} and degeneracy maps s_i : X_n → X_{n+1} satisfying the simplicial identities",
+      "const": true
+    }
+  }
+}

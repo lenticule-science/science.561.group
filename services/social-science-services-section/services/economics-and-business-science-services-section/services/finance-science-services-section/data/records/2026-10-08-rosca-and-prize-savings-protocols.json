@@ -1,0 +1,502 @@
+{
+  "$schema": "../../../../../../../../data/records/schema/literature-measurement.schema.json",
+  "id": "rosca-and-prize-savings-protocols",
+  "kind": "literature-measurement",
+  "question": "How does PoolTogether v5 turn pooled deposits into prizes (TWAB, tiers, liquidation of yield), what is its scale on Base on 2026-10-08, and what other ROSCA or savings-game protocols exist?",
+  "frame": {
+    "population": "on-chain prize savings and ROSCA-like protocols",
+    "exposure": "contract source and chain reads",
+    "comparator": "a priced rotating credit association",
+    "outcomes": [
+      "mechanism",
+      "keys",
+      "scale",
+      "failures"
+    ]
+  },
+  "notes": [
+    "../../content/text/documents/articles/notes/2026/10/08/2026-10-08-rosca-and-prize-savings-protocols.md"
+  ],
+  "sources": [
+    {
+      "item": {
+        "id": "ptprizepool2026",
+        "type": "software",
+        "title": "GenerationSoftware/pt-v5-prize-pool: PrizePool.sol",
+        "author": [
+          {
+            "literal": "PoolTogether Prize Pool Source"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              8
+            ]
+          ]
+        },
+        "URL": "https://github.com/GenerationSoftware/pt-v5-prize-pool"
+      },
+      "design": "protocol-source-code",
+      "findings": [
+        {
+          "finding": "One Prize Pool per chain; vaults contribute prize tokens and a daily draw (drawPeriodSeconds) releases them. A winner is determined without a transaction by the winner: isWinner(vault, user, tier, prizeIndex) compares a pseudo-random number derived from (draw id, vault, user, tier, prize index) and the awarded random number against the user's time-weighted average balance share (from the TwabController) of the vault and the vault's share of contributions over the tier's look-back range. Anyone may then claimPrize for the winner and earn a claim fee from a decaying reward.",
+          "exactSourceLanguage": "Every \"Draw\" a random number is provided and given to the Prize Pool and the next set of prizes are available."
+        },
+        {
+          "finding": "Tiers: the pool computes the number of tiers (with a canary tier) from the previous draw's claim count; each tier has odds, the grand prize period is grandPrizePeriodDraws draws, and unclaimed tiers' liquidity rolls over; a reserve takes reserveShares of each draw and funds claim rewards. setDrawManager can be called once, by the creator only; awardDraw is restricted to the draw manager.",
+          "exactSourceLanguage": "Sets the Draw Manager contract on the prize pool. Can only be called once by the creator."
+        },
+        {
+          "finding": "Shutdown: if no draw is awarded within drawTimeout the pool can be shut down and depositors withdraw proportional shutdown balances (computeShutdownPortion, withdrawShutdownBalance). README: \"Only WETH has been audited as the prizeToken for the prize pool.\""
+        },
+        {
+          "finding": "Source last commit 2025-02-19 (prize pool), vault 2025-07-30, claimer 2024-07-16, draw manager 2024-07-16."
+        }
+      ],
+      "readFrom": "source-code",
+      "observedAt": "2026-10-08"
+    },
+    {
+      "item": {
+        "id": "ptvault2026",
+        "type": "software",
+        "title": "GenerationSoftware/pt-v5-vault: PrizeVault.sol",
+        "author": [
+          {
+            "literal": "PoolTogether Vault Source"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              8
+            ]
+          ]
+        },
+        "URL": "https://github.com/GenerationSoftware/pt-v5-vault"
+      },
+      "design": "protocol-source-code",
+      "findings": [
+        {
+          "finding": "PrizeVault is an ERC-4626 vault (TwabERC20 shares, Claimable, ILiquidationSource, Ownable) over an underlying yield vault; deposit/mint record TWAB balances; yield above debt plus an immutable yieldBuffer is liquidatable: a LiquidationPair sells the yield for the prize token and sends it to the prize pool. Owner can set claimer, liquidation pair, yield fee percentage and recipient.",
+          "exactSourceLanguage": "contract PrizeVault is TwabERC20, Claimable, IERC4626, ILiquidationSource, Ownable"
+        },
+        {
+          "finding": "Principal is not at risk from the draw (a depositor can redeem at any time, which the TWAB then reflects); the risk is the underlying yield source and the vault owner's parameters."
+        }
+      ],
+      "readFrom": "source-code",
+      "observedAt": "2026-10-08"
+    },
+    {
+      "item": {
+        "id": "ptbasechain2026",
+        "type": "software",
+        "title": "PoolTogether v5 Prize Pool on Base: cast reads",
+        "author": [
+          {
+            "literal": "PoolTogether Base Reads"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              8
+            ]
+          ]
+        },
+        "URL": "https://basescan.org/address/0x45b2010d8A4f08b53c9fa7544C51dFd9733732cb"
+      },
+      "design": "on-chain-measurement",
+      "findings": [
+        {
+          "finding": "Prize Pool 0x45b2010d8A4f08b53c9fa7544C51dFd9733732cb on Base (8453), read 2026-10-08: prizeToken() = 0x4200000000000000000000000000000000000006 (WETH); drawPeriodSeconds() = 86400; getLastAwardedDrawId() = 841; numberOfTiers() = 7; accountedBalance() = 8.5334 WETH; twabController 0x7e63601F7e28C758Feccf8CDF02F6598694f44C6; drawManager 0x8A2782bedC79982EBFa3b68B315a2eE40DAF6aB0; tierShares 100, reserveShares 30, canaryShares 4, grandPrizePeriodDraws 91. The EIP-1967 implementation slot is empty: the pool is not a proxy and has no admin to upgrade it."
+        }
+      ],
+      "readFrom": "on-chain-read",
+      "observedAt": "2026-10-08",
+      "notFound": [
+        "number of vaults and depositors on Base; not read",
+        "WETH paid out in total"
+      ]
+    },
+    {
+      "item": {
+        "id": "ptdefillama2026",
+        "type": "software",
+        "title": "DeFiLlama reads: PoolTogether v3, v4, v5",
+        "author": [
+          {
+            "literal": "DeFiLlama PoolTogether"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              8
+            ]
+          ]
+        },
+        "URL": "https://api.llama.fi/protocol/pooltogether"
+      },
+      "design": "dashboard-measurement",
+      "findings": [
+        {
+          "finding": "Parent pooltogether chain TVL on 2026-10-08: Ethereum 5,231,375; Optimism 1,507,033; Polygon 513,453; Base 408,782; World Chain 89,770; Celo 39,790; Gnosis 17,688; total 7,845,734 USD. Child listings: pooltogether-v5 2,276,243 (Optimism, Ethereum, Base, World Chain, Gnosis); v4 730,045; v3 4,839,447 (category Yield Lottery)."
+        }
+      ],
+      "readFrom": "api-read",
+      "observedAt": "2026-10-08"
+    },
+    {
+      "item": {
+        "id": "goodghostingsource2026",
+        "type": "software",
+        "title": "Good-Ghosting/goodghosting-protocol-v1 and -v2 READMEs",
+        "author": [
+          {
+            "literal": "HaloFi Goodghosting Source"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              8
+            ]
+          ]
+        },
+        "URL": "https://github.com/Good-Ghosting/goodghosting-protocol-v2"
+      },
+      "design": "protocol-source-code",
+      "findings": [
+        {
+          "finding": "v1 game: divided into segments (weekly, monthly or other); players join in the first segment with a fixed amount (joinGame / joinWhitelistedGame); the stake is deposited to Aave (aDAI) on Ethereum or Moola on Celo; players must makeDeposit before each segment ends except the last, a \"waiting round\"; players who miss a deposit still get principal back but earn no interest; the interest is split among players who made every deposit; earlyWithdraw available with fees; admin withdraws performance fees. Variants: Polygon with Aave liquidity-mining MATIC rewards, Curve strategies.",
+          "exactSourceLanguage": "Players that missed a deposit, still get their principal back after the end of the game, but do not earn any interest."
+        },
+        {
+          "finding": "v2 adds deposit rounds of different length from the waiting round (hodl pools), flexible per-player deposit amounts up to a maximum, and interest accounting that weights time and amount of deposit.",
+          "exactSourceLanguage": "Accounting of the interest and rewards distributed to winners considers time and amount of deposit"
+        }
+      ],
+      "readFrom": "source-code",
+      "observedAt": "2026-10-08"
+    },
+    {
+      "item": {
+        "id": "goodghostinglegacy2026",
+        "type": "software",
+        "title": "Good-Ghosting community-legacy-archive-portal and community-legacy-docs",
+        "author": [
+          {
+            "literal": "HaloFi Legacy Portal"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              8
+            ]
+          ]
+        },
+        "URL": "https://github.com/Good-Ghosting/community-legacy-archive-portal"
+      },
+      "design": "protocol-documentation",
+      "findings": [
+        {
+          "finding": "The organisation page is titled \"HaloFi (prev. GoodGhosting)\"; the archive portal is a \"Community Legacy Support Portal\" for HaloFi Challenges and HaloFi Save that \"provides guidance for users to withdraw their funds via descentralized infrastructure\", with the legacy site hosted at halofi.me \"available till 20-Sep-2029\" and on IPFS, and links a farewell post to the community. The docs list Dedaub as v2 auditor (core contracts and five yield strategies, 2022-06), Quantstamp for v1, and state no insurance is provided against unknown bugs.",
+          "exactSourceLanguage": "Community Legacy Support Portal for HaloFi (prev. GoodGhosting) descentralized products"
+        },
+        {
+          "finding": "goodghosting.com answered with a TLS certificate for netlify.app that does not match the host on 2026-10-08."
+        }
+      ],
+      "readFrom": "first-party-docs",
+      "observedAt": "2026-10-08",
+      "notFound": [
+        "the farewell post text; not opened",
+        "number of games played, players or total value saved"
+      ]
+    },
+    {
+      "item": {
+        "id": "chitchainreadme2026",
+        "type": "software",
+        "title": "Anushlinux/ChitChain README (Aptos Move chit fund)",
+        "author": [
+          {
+            "literal": "ChitChain Readme"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              8
+            ]
+          ]
+        },
+        "URL": "https://github.com/Anushlinux/ChitChain"
+      },
+      "design": "protocol-documentation",
+      "findings": [
+        {
+          "finding": "A ROSCA as a chit fund with auction: Phase 1 collection, where members deposit their full contribution as collateral until the pool is full; Phase 2 monthly auctions where members bid for the pot; the highest bidder, offering the largest discount, receives pot minus discount and the other members receive discount / (N-1) as immediate dividend; repeat until all have won. The README states a protocol fee under 1 percent and \"Zero Default Risk: Phase I collection ensures full collateralization\".",
+          "exactSourceLanguage": "Winner receives: Pot - Discount; Other members receive: Discount / (N-1) as immediate dividend"
+        }
+      ],
+      "readFrom": "first-party-docs",
+      "observedAt": "2026-10-08",
+      "notFound": [
+        "deployment address, audit or usage"
+      ]
+    },
+    {
+      "item": {
+        "id": "orbitreadme2026",
+        "type": "software",
+        "title": "ChrisQuint0/Orbit README (Stellar Soroban savings circles)",
+        "author": [
+          {
+            "literal": "Orbit Readme"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              8
+            ]
+          ]
+        },
+        "URL": "https://github.com/ChrisQuint0/Orbit"
+      },
+      "design": "protocol-documentation",
+      "findings": [
+        {
+          "finding": "Savings circles (\"Orbit\") with a fixed contribution each cycle into a Soroban contract pool and automated rotation of the pot to one member by a predetermined or randomized sequence; written for the Philippine paluwagan.",
+          "exactSourceLanguage": "At the end of each cycle, the pooled funds are automatically disbursed to one member of the crew based on a pre-determined or randomized rotation sequence"
+        }
+      ],
+      "readFrom": "first-party-docs",
+      "observedAt": "2026-10-08",
+      "notFound": [
+        "deployment address, audit or usage"
+      ]
+    },
+    {
+      "item": {
+        "id": "impactchainreadme2026",
+        "type": "software",
+        "title": "Floyce/DeChama README (Impact Chain, Lightning ROSCA)",
+        "author": [
+          {
+            "literal": "Impact Chain Readme"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              8
+            ]
+          ]
+        },
+        "URL": "https://github.com/Floyce/DeChama"
+      },
+      "design": "protocol-documentation",
+      "findings": [
+        {
+          "finding": "A Bitcoin-native ROSCA on Lightning payments for Kenyan chamas: membership, loans and withdrawals need a 51 percent majority vote; automated payout to a saved Lightning address when the pool target is reached; proof of payment by payment hash. Not an EVM contract.",
+          "exactSourceLanguage": "Membership, loans, and withdrawals require a majority vote to execute."
+        }
+      ],
+      "readFrom": "first-party-docs",
+      "observedAt": "2026-10-08",
+      "notFound": [
+        "deployment, audit or usage"
+      ]
+    },
+    {
+      "item": {
+        "id": "tandanimiqreadme2026",
+        "type": "software",
+        "title": "ajanaku1/Tanda README (Nimiq Pay savings circles)",
+        "author": [
+          {
+            "literal": "Tanda Nimiq Readme"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              8
+            ]
+          ]
+        },
+        "URL": "https://github.com/ajanaku1/Tanda"
+      },
+      "design": "protocol-documentation",
+      "findings": [
+        {
+          "finding": "\"Tanda coordinates a fixed rotating savings circle without holding its money\": terms (name, amount, fixed turn order) in an invitation link, signed by members; each contribution goes straight from a member's wallet to the current recipient; no platform wallet, escrow, backend or database; the pot is rebuilt from memo-tagged Nimiq transaction history; 89 tests; running against the Nimiq testnet wallet.",
+          "exactSourceLanguage": "Tanda does not have a platform wallet, escrow account, backend, or database."
+        }
+      ],
+      "readFrom": "first-party-docs",
+      "observedAt": "2026-10-08",
+      "notFound": [
+        "mainnet deployment or usage"
+      ]
+    },
+    {
+      "item": {
+        "id": "goodghostingv1v2_2026",
+        "type": "software",
+        "title": "Good-Ghosting/goodghosting-protocol-v1 and -v2 READMEs",
+        "author": [
+          {
+            "family": "Source",
+            "given": "HaloFi Goodghosting"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              8
+            ]
+          ]
+        },
+        "URL": "https://github.com/Good-Ghosting/goodghosting-protocol-v2"
+      },
+      "design": "protocol-source-code",
+      "findings": [
+        {
+          "finding": "v1 game: divided into segments (weekly, monthly or other); players join in the first segment with a fixed amount (joinGame / joinWhitelistedGame); the stake is deposited to Aave (aDAI) on Ethereum or Moola on Celo; players must makeDeposit before each segment ends except the last, a \"waiting round\"; players who miss a deposit still get principal back but earn no interest; the interest is split among players who made every deposit; earlyWithdraw available with fees; admin withdraws performance fees. Variants: Polygon with Aave liquidity-mining MATIC rewards, Curve strategies.",
+          "exactSourceLanguage": "Players that missed a deposit, still get their principal back after the end of the game, but do not earn any interest."
+        },
+        {
+          "finding": "v2 adds deposit rounds of different length from the waiting round (hodl pools), flexible per-player deposit amounts up to a maximum, and interest accounting that weights time and amount of deposit.",
+          "exactSourceLanguage": "Accounting of the interest and rewards distributed to winners considers time and amount of deposit"
+        }
+      ],
+      "readFrom": "source-code",
+      "observedAt": "2026-10-08"
+    }
+  ],
+  "searches": [
+    {
+      "register": "other",
+      "variables": {
+        "q": "git clone GenerationSoftware/pt-v5-*"
+      },
+      "observedAt": "2026-10-08",
+      "count": 5,
+      "included": [
+        "ptprizepool2026",
+        "ptvault2026"
+      ],
+      "reading": "Shallow clones of prize-pool, vault, claimer, twab-controller and draw-manager; the first two were read in detail."
+    },
+    {
+      "register": "defillama-api",
+      "variables": {
+        "path": "/protocol/pooltogether"
+      },
+      "observedAt": "2026-10-08",
+      "count": 1,
+      "included": [
+        "ptdefillama2026"
+      ]
+    },
+    {
+      "register": "other",
+      "variables": {
+        "q": "git clone Good-Ghosting/Good-Ghosting-Contracts-v2"
+      },
+      "observedAt": "2026-10-08",
+      "count": 0,
+      "included": [],
+      "reading": "The first guessed repository path returned not found; the organisation Good-Ghosting (HaloFi) holds goodghosting-protocol-v1 and -v2, which were read."
+    },
+    {
+      "register": "web",
+      "variables": {
+        "q": "ROSCA smart contract github Solidity onchain rotating savings"
+      },
+      "observedAt": "2026-10-08",
+      "count": 10,
+      "included": [
+        "chitchainreadme2026",
+        "orbitreadme2026",
+        "impactchainreadme2026"
+      ],
+      "reading": "The web search surfaced hackathon-stage projects (several EVM projects named Sanca, Armina, ROSCA-Guard, Starosca, ROSCA dapp, Rotare, RizqFi on ETHGlobal, Chainlink and Devfolio showcase pages) and three public repositories read here; it found no widely adopted, audited ROSCA contract. Showcase-page descriptions were not rows."
+    },
+    {
+      "register": "web",
+      "variables": {
+        "q": "Tanda Celo MiniPay savings circles ChamaVault CeloSusu Ronda Circlepot"
+      },
+      "observedAt": "2026-10-08",
+      "count": 8,
+      "included": [
+        "tandanimiqreadme2026"
+      ],
+      "reading": "Celo/MiniPay savings-circle projects (ChamaVault, CeloSusu, Ronda, Circlepot) appeared only as KarmaHQ and ETHGlobal listings; their repositories and contracts were not read. TandaPay was searched by name and returned nothing."
+    },
+    {
+      "register": "other",
+      "variables": {
+        "q": "PrizePool reads on Base"
+      },
+      "observedAt": "2026-10-08",
+      "count": 1,
+      "included": [
+        "ptbasechain2026"
+      ]
+    },
+    {
+      "register": "github-api",
+      "variables": {
+        "q": "GenerationSoftware/pt-v5-*"
+      },
+      "observedAt": "2026-10-08",
+      "count": 5,
+      "included": [
+        "ptprizepool2026",
+        "ptvault2026"
+      ],
+      "reading": "Shallow clones of prize-pool, vault, claimer, twab-controller and draw-manager; the first two were read in detail."
+    },
+    {
+      "register": "github-api",
+      "variables": {
+        "q": "Good-Ghosting contracts v2"
+      },
+      "observedAt": "2026-10-08",
+      "count": 0,
+      "included": [],
+      "reading": "The repository path guessed for Goodghosting (Good-Ghosting/Good-Ghosting-Contracts-v2) returned not found; Goodghosting source and DeFiLlama listing were not located in this pass."
+    }
+  ]
+}

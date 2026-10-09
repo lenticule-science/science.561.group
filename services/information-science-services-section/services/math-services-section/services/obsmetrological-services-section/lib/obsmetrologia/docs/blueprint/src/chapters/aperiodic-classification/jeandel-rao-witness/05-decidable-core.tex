@@ -1,0 +1,25 @@
+\subsection{Decidable constructive core}
+
+\begin{theorem}[Jeandel--Rao eleven-tile witness as decidable constructive core]\label{thm:jeandel-rao-decidable-core}
+  \lean{Obsmetrologia.AperiodicOrder.Tiling.Witness.ExistenceQuestion}
+  \lean{Obsmetrologia.AperiodicOrder.Tiling.Witness.ExistenceQuestion.Assertion}
+  \lean{Obsmetrologia.AperiodicOrder.Tiling.Witness.DecidableCore}
+  \lean{Obsmetrologia.AperiodicOrder.Tiling.Witness.DecidableCore.ofCertificate}
+  \lean{Obsmetrologia.AperiodicOrder.Tiling.Witness.DecidableCore.assertion}
+  \lean{Obsmetrologia.AperiodicOrder.Tiling.Witness.jeandelRao_witness_is_decidable_core}
+  \leanok
+  \uses{thm:jeandel-rao-witness, thm:jeandel-rao-b3, thm:jeandel-rao-substitution-tower}
+The finite Jeandel--Rao object with tile count \(11\), decorated cochain
+\(\varphi\), and marker-ring core \(b_3\) is a decidable core of the
+constructive aperiodic existence question.  Its certificate consists exactly of
+the green finite nonzero class, the green marker-ring nonzero class, and the
+green substitution-tower direct-limit persistence statement.
+
+This is the precise green bridge behind the comparison with the domino problem:
+an undecidable existence problem may only assert that some aperiodic object
+exists, but this witness supplies the object together with a finite certificate
+that the library can decide because the certificate is already proved.  The
+node does not turn the domino problem into a decidable problem, and it does not
+close the remaining identification with the literal Labb\'e recognizable
+substitution matrix recorded at \cref{thm:jeandel-rao-persistence}.
+\end{theorem}

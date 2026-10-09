@@ -1,0 +1,42 @@
+---
+name: learn-decolonial-pedagogy
+description: >-
+  Identify the banking model in an educational practice, articulate the principles
+  of problem-posing education, and evaluate a knowledge system for epistemological
+  assumptions.
+title: learn-decolonial-pedagogy
+---
+
+# Learn Decolonial Pedagogy
+
+## What you will be able to do
+
+- Identify whether an educational practice reproduces the banking model (teacher deposits knowledge into passive students) and articulate what makes it so.
+- Describe problem-posing education as an alternative and explain how it differs structurally from the banking model.
+- Given a knowledge system (a curriculum, a library classification, a database schema), identify whose knowledge it centers, what forms of knowledge it privileges, and what it excludes.
+- Explain why "decolonize" is not a synonym for "diversify" or "critically examine" — what [decolonization](../../research/2026/07/31/lenticule-import/library/social-sciences/education/sociology/terms/decolonization.md) specifically requires (following [Eve Tuck](../../research/2026/07/31/lenticule-import/library/social-sciences/education/general/people/eve-tuck.md) and [K. Wayne Yang](../../research/2026/07/31/lenticule-import/library/social-sciences/education/general/people/k-wayne-yang.md)).
+
+## Prerequisites
+
+None. This skill is a starting point.
+
+## Lessons
+
+- [Decolonial Pedagogy](../../../../../../services/pedagogy-services-section/content/text/documents/articles/notes/decolonial-pedagogy.md) — the banking model, problem-posing education, engaged pedagogy, decolonizing methodologies, Red Pedagogy, land-based education, and the "[decolonization](../../research/2026/07/31/lenticule-import/library/social-sciences/education/sociology/terms/decolonization.md) is not a metaphor" corrective
+
+This is a single lesson. Work through it fully.
+
+## Scope
+
+This skill covers the major thinkers and frameworks in decolonial pedagogy as represented in the vault: [Paulo Freire](../../research/2026/07/31/lenticule-import/library/social-sciences/education/general/people/paulo-freire.md), [bell hooks](../../research/2026/07/31/lenticule-import/library/social-sciences/education/general/people/bell-hooks.md), [Linda Tuhiwai Smith](../../../../../../../../../information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/linda-tuhiwai-smith.md), Sandy Grande, [Leanne Betasamosake Simpson](../../research/2026/07/31/lenticule-import/library/social-sciences/education/general/people/leanne-simpson.md), and [Eve Tuck](../../research/2026/07/31/lenticule-import/library/social-sciences/education/general/people/eve-tuck.md) and [K. Wayne Yang](../../research/2026/07/31/lenticule-import/library/social-sciences/education/general/people/k-wayne-yang.md).
+
+It does not cover:
+
+- Lesson design or curriculum design (covered by separate pedagogy skills that depend on this one)
+- The full breadth of critical pedagogy (Henry Giroux, Peter McLaren, and others are mentioned but not developed)
+- Indigenous pedagogies in depth (the schools/indigenous-pedagogies page goes deeper, but land-based education in particular cannot be learned through text alone — it requires sustained relationship with place)
+- Non-anglophone decolonial thought ([Frantz Fanon](../../research/2026/07/31/lenticule-import/library/social-sciences/education/general/people/frantz-fanon.md), Aníbal Quijano, Walter Mignolo, and others are not yet represented)
+
+## Verification
+
+After completing the lesson, try this: pick any educational practice you have experienced (a class, a textbook, an online course, a training program). Describe it in terms of the banking model: who holds the knowledge, how does it flow, what role does the learner play? Then describe what a problem-posing alternative would look like. Finally, identify one [epistemological](../../research/2026/07/31/lenticule-import/library/social-sciences/education/philosophy/terms/epistemology.md) assumption the practice makes — what kind of knowledge does it treat as legitimate, and what does it exclude?

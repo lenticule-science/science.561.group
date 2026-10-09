@@ -1,0 +1,164 @@
+\section{The semigroup gap}
+
+\begin{theorem}[Non-descent is a semigroup certificate]
+  \label{thm:collatz-nondescent-iff}
+  \lean{Obsmetrologia.Closure.Collatz.nonDescent_iff_semigroup_certificate}
+  \leanok
+  \uses{thm:collatz-firstpassage-iff}
+  For a parent barrier with first-passage relation $2B\cdot y=A\cdot n+C$, write $D=2B-A$,
+  $M=2B$. The first-passage word fails to descend ($y\ge n$) exactly when $C$ lies in the
+  two-generator numerical semigroup $\langle D,M\rangle$, i.e. $C=D\cdot n+M\cdot d$ for some
+  $d$.
+\end{theorem}
+\begin{proposition}[Parent-barrier gap]
+  \label{thm:collatz-gap}
+  \lean{Obsmetrologia.Closure.Collatz.ParentBarrierGap}
+  \leanok
+  \uses{thm:collatz-nondescent-iff}
+  The \emph{gap} property: for every nontrivial parent barrier ($p\ne[]$, $p\ne[O]$), $C\notin
+  \langle D,M\rangle$. (Definition formalized; its truth is the frontier node
+  \cref{thm:collatz-gap-holds}.)
+\end{proposition}
+\begin{theorem}[Gap implies first-passage descent]
+  \label{thm:collatz-gap-implies-descent}
+  \lean{Obsmetrologia.Closure.Collatz.parentBarrierGap_implies_firstPassageDescent}
+  \leanok
+  \uses{thm:collatz-gap}
+  If the gap holds, every nontrivial first-passage word descends at any realising $n>2$.
+\end{theorem}
+\begin{theorem}[Gap is first-passage cylinder descent]
+  \label{thm:collatz-cylinder-seeds-descend}
+  \lean{Obsmetrologia.Closure.Collatz.parentBarrierGap_iff_cylinderSeeds_descend}
+  \leanok
+  \uses{thm:collatz-gap-implies-descent}
+  The semigroup gap is equivalent to strict descent of every seed in every
+  nontrivial first-passage parent-barrier cylinder. This is the dynamical reading
+  of the same frontier: semigroup nonmembership and first-passage cylinder
+  descent are one statement.
+\end{theorem}
+\begin{theorem}[Gap is backward-seed descent]
+  \label{thm:collatz-backward-seeds-descend}
+  \lean{Obsmetrologia.Closure.Collatz.BackwardCylinderSeed}
+  \lean{Obsmetrologia.Closure.Collatz.FirstPassageBackwardSeed}
+  \lean{Obsmetrologia.Closure.Collatz.BadFirstPassageBackwardSeed}
+  \lean{Obsmetrologia.Closure.Collatz.parentBarrier_inverseResidue_is_backwardSeed}
+  \lean{Obsmetrologia.Closure.Collatz.inTwoGenSemigroup_iff_badBackwardSeed}
+  \lean{Obsmetrologia.Closure.Collatz.parentBarrierGap_iff_no_badBackwardSeed}
+  \lean{Obsmetrologia.Closure.Collatz.parentBarrierGap_iff_backwardSeeds_descend}
+  \leanok
+  \uses{thm:collatz-cylinder-seeds-descend}
+  The same frontier can be read backward: a finite word has a bounded cylinder
+  representative, and for a parent barrier the inverse residue is exactly the
+  backward seed for \(p{+}[E]\). Semigroup membership is therefore equivalent
+  to a bad backward seed, and \texttt{ParentBarrierGap} is equivalent to strict
+  descent of every nontrivial first-passage backward seed.
+\end{theorem}
+\begin{theorem}[Gap is ordinal backward-margin carry]
+  \label{thm:collatz-backward-margin-carry}
+  \lean{Obsmetrologia.Ord.ofNat_le_ofNat_iff}
+  \lean{Obsmetrologia.Closure.Collatz.firstPassageBackwardMargin}
+  \lean{Obsmetrologia.Closure.Collatz.firstPassageBackwardDescentAmount}
+  \lean{Obsmetrologia.Closure.Collatz.firstPassageBackwardModulus}
+  \lean{Obsmetrologia.Closure.Collatz.firstPassageBackwardCarryQuotient}
+  \lean{Obsmetrologia.Closure.Collatz.firstPassageBackwardMargin_eq_ofNat_modulus_mul_descentAmount}
+  \lean{Obsmetrologia.Closure.Collatz.firstPassageBackwardSeed_descent_iff_margin_positive}
+  \lean{Obsmetrologia.Closure.Collatz.firstPassageBackwardSeed_descent_iff_fullCarry}
+  \lean{Obsmetrologia.Closure.Collatz.firstPassageBackwardCarryQuotient_eq_descentAmount}
+  \lean{Obsmetrologia.Closure.Collatz.firstPassageBackwardSeed_descent_iff_carryQuotient_positive}
+  \lean{Obsmetrologia.Closure.Collatz.firstPassageBackwardSeed_fullCarry_iff_carryQuotient_positive}
+  \lean{Obsmetrologia.Closure.Collatz.firstPassageBackwardSeed_carryQuotient_positive_iff_not_bad}
+  \lean{Obsmetrologia.Closure.Collatz.firstPassageBackwardSeed_fullCarry_iff_not_bad}
+  \lean{Obsmetrologia.Closure.Collatz.firstPassageBackwardSeedCell}
+  \lean{Obsmetrologia.Closure.Collatz.firstPassageBackwardSeedCell_active_iff_bad}
+  \lean{Obsmetrologia.Closure.Collatz.firstPassageBackwardSeedCell_stable_iff_not_bad}
+  \lean{Obsmetrologia.Closure.Collatz.parentBarrierGap_iff_backwardMargins_positive}
+  \lean{Obsmetrologia.Closure.Collatz.parentBarrierGap_iff_backwardMargins_fullCarry}
+  \lean{Obsmetrologia.Closure.Collatz.parentBarrierGap_iff_backwardCarryQuotients_positive}
+  \lean{Obsmetrologia.Closure.Collatz.parentBarrierGap_iff_no_activeBackwardSeedCell}
+  \lean{Obsmetrologia.Blowup.cellType}
+  \lean{Obsmetrologia.Blowup.active_nontrivial_forward_cellType_top}
+  \lean{Obsmetrologia.Blowup.active_cellType_top_iff_stable}
+  \lean{Obsmetrologia.Blowup.claimSide_firing_negates_to_tokenSide}
+  \lean{Obsmetrologia.Blowup.active_d4_bypass_cycle}
+  \lean{Obsmetrologia.Blowup.active_d4_bypass_first_firing}
+  \lean{Obsmetrologia.Order.CommutingNuclei.transferring_without_saturating_pi_ascends}
+  \lean{Obsmetrologia.Order.NuclearQuartet.active_not_potential_stable_ascends}
+  \lean{Obsmetrologia.AperiodicOrder.Tiling.Autopoiesis.cellCorner_active}
+  \lean{Obsmetrologia.AperiodicOrder.Tiling.Autopoiesis.cellCorner_stable}
+  \lean{Obsmetrologia.AperiodicOrder.Tiling.badBackwardSeedCell_induces_fSideFiring}
+  \lean{Obsmetrologia.AperiodicOrder.Tiling.badBackwardSeedCell_negates_to_tSideFiring}
+  \lean{Obsmetrologia.AperiodicOrder.Tiling.badBackwardSeedCell_d4_bypasses_to_tSideFiring}
+  \lean{Obsmetrologia.AperiodicOrder.Tiling.badBackwardSeedCell_activeToStable_isTopFiring}
+  \lean{Obsmetrologia.AperiodicOrder.Tiling.badBackwardSeedCell_isTransferring}
+  \lean{Obsmetrologia.AperiodicOrder.Tiling.parentBarrierGap_iff_noUngroundedClaimSideFiringAtParentBarrier}
+  \lean{Obsmetrologia.Articulating.utter_ne_pair}
+  \leanok
+  \uses{thm:collatz-backward-seeds-descend}
+  The backward margin \(D\cdot n-C\), the descent amount, and the parent modulus
+  are exposed as finite ordinals via \texttt{Ord.ofNat}; so is the whole-modulus
+  carry quotient \((D\cdot n-C)/M\). At a first-passage backward seed, this
+  quotient ordinal is exactly the descent-amount ordinal. Thus descent is
+  equivalent to quotient positivity, to the margin ordinal being positive, and to
+  the parent-modulus ordinal lying below the margin ordinal. Consequently
+  \texttt{ParentBarrierGap} is the full-carry/positive-quotient condition in the
+  finite ordinal fragment, not a separate numerical add-on. The same condition
+  can be read through the recurring token/claim cell: a bad seed is precisely the
+  \texttt{stable} corner, a claim without its positive-carry token, and the gap is
+  equivalent to absence of that corner for every nontrivial first-passage
+  backward seed. The firing table identifies the inducer of that corner as the
+  \texttt{fSide} firing \(\bot_k\to f\), and the autopoiesis cell reads
+  \texttt{active} as the saturating nucleus and \texttt{stable} as the transferring
+  nucleus. Thus the bad articulation is the transfer side firing before the
+  saturating identity side supplies the token. The abstract nuclear theorem now
+  names the same boundary: a transferring-fixed point outside the saturating
+  fixed points is not fixed by the joint forward closure, and it is raised by
+  \(\pi\). The dynamic table names the complementary boundary: a nontrivial
+  monotone firing out of \texttt{stable} is exactly the
+  \texttt{stable}\(\to\)\texttt{absurd} top firing. The FOUR/D4 symmetry now carries
+  the same mechanism across the gauge: negation transports
+  \texttt{potential}\(\to\)\texttt{stable} \texttt{fSide} to the natural
+  \texttt{potential}\(\to\)\texttt{active} \texttt{tSide} edge, while the D4
+  \texttt{negSwap} rotation gives the finite bypass cycle
+  \texttt{stable}\(\to\)\texttt{potential}\(\to\)\texttt{active}\(\to\)\texttt{absurd}.
+  Consequently the parent-barrier gap is equivalently the absence of ungrounded
+  claim-side \texttt{fSide} firings at nontrivial first-passage boundaries.
+\end{theorem}
+\begin{theorem}[The gap holds unconditionally at small odd-count]
+  \label{thm:collatz-gap-small-oddcount-slice}
+  \lean{Obsmetrologia.Closure.Collatz.nontrivial_parentBarrier_oddCount_ge_two}
+  \lean{Obsmetrologia.Closure.Collatz.parentBarrier_oddCount_two_shape}
+  \lean{Obsmetrologia.Closure.Collatz.parentBarrierGap_of_oddCount_two}
+  \lean{Obsmetrologia.Closure.Collatz.parentBarrierGap_holds_oddCount_le_two}
+  \lean{Obsmetrologia.Closure.Collatz.list_branch_length_three}
+  \lean{Obsmetrologia.Closure.Collatz.list_branch_length_four}
+  \lean{Obsmetrologia.Closure.Collatz.parentBarrier_oddCount_three_shape}
+  \lean{Obsmetrologia.Closure.Collatz.parentBarrierGap_of_oddCount_three}
+  \lean{Obsmetrologia.Closure.Collatz.parentBarrierGap_holds_oddCount_le_three}
+  \leanok
+  \uses{thm:collatz-gap}
+  Every nontrivial parent barrier has at least two odd steps
+  (\texttt{nontrivial\_parentBarrier\_oddCount\_ge\_two}), via the trace-exponent
+  sandwich $2^{\mathrm{len}}\le3^{\mathrm{oddCount}}<2\cdot2^{\mathrm{len}}$. At
+  exactly two odd steps the sandwich pins the length uniquely and the only shape is
+  $OOE$, for which the gap holds by direct computation
+  (\texttt{parentBarrierGap\_of\_oddCount\_two}); this closes
+  \texttt{ParentBarrierGap} unconditionally on the whole $\mathrm{oddCount}\le2$
+  slice. The same sandwich pins length $4$ at exactly three odd steps
+  ($2^{\mathrm{len}}\le3^3=27<2\cdot2^{\mathrm{len}}$), leaving two shapes with
+  three $O$'s and one $E$; the third \texttt{ParentBarrier} conjunct eliminates
+  $EOOO$, and the gap holds by direct computation at the two survivors $OOEO$ and
+  $OOOE$ (\texttt{parentBarrierGap\_of\_oddCount\_three}), extending the closed
+  slice to $\mathrm{oddCount}\le3$. Both slices are fully unconditional --- no
+  \texttt{sorry}, no numerical bound on the barrier itself --- and are the first
+  nonvacuous instances of the open gap \cref{thm:collatz-gap-holds} proved for
+  every barrier of the given shape, rather than audited numerically.
+\end{theorem}
+\begin{theorem}[Every first-passage cylinder descends]
+  \label{thm:collatz-all-firstpassage-descent}
+  \lean{Obsmetrologia.Closure.Collatz.parentBarrierGap_implies_all_firstPassage_descent}
+  \leanok
+  \uses{thm:collatz-gap-implies-descent, thm:collatz-cylinder-seeds-descend, thm:collatz-backward-seeds-descend, thm:collatz-backward-margin-carry}
+  Under the gap, \emph{every} first-passage cylinder descends, including the two
+  terminal-adjacent cases handled directly: $[E]$ (an even seed halves) and $[O,E]$
+  ($4\cdot T^2(n)=3n+1<4n$).
+\end{theorem}

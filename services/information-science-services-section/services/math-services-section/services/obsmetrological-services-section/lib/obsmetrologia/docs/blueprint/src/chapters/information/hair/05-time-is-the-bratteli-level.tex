@@ -1,0 +1,15 @@
+\section{Time is the Bratteli level}
+
+The discrete Hawking time function (\texttt{RegimeTimeSection}, $t(x) = \texttt{pastCount}(x)$) is the
+level grading of the port-growth tower. The bridge is green in \texttt{Obsmetrologia.AperiodicOrder.Tiling.PortGrowthTime}.
+
+\begin{theorem}[Weaving advances time]\label{thm:weaving-advances-time}\lean{Obsmetrologia.AperiodicOrder.Tiling.portGrowth_time_strict_mono}\leanok\uses{thm:port-growth}
+Along the level (prefix) order of a port-growth tower, the discrete time section strictly increases:
+the dropped \texttt{timeSection\_strict\_mono} instantiated at the level grading. A stitch's time is
+strictly greater than its parents' --- the Bratteli level is a Hawking global time function.
+\end{theorem}
+
+\begin{theorem}[Time is the level]\label{thm:time-is-level}\lean{Obsmetrologia.AperiodicOrder.Tiling.chain_timeSection_eq_level}\leanok\uses{thm:weaving-advances-time}
+On a four-level path the time section is $(0,1,2,3)$ --- the past-count equals the row number. The
+chain reading of the diamond's $(0,1,1,3)$: untie the two spacelike middles into successive rows.
+\end{theorem}

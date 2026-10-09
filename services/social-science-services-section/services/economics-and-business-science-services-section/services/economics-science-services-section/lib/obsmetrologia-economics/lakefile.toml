@@ -1,0 +1,20 @@
+name = "ObsmetrologiaEconomics"
+defaultTargets = ["ObsmetrologiaEconomics"]
+description = "Economics over Obsmetrologia: attention allocation, the allocation solver, and currency cocones."
+license = "Apache-2.0"
+
+[leanOptions]
+autoImplicit = false
+relaxedAutoImplicit = false
+pp.unicode.fun = true
+
+[[require]]
+name = "Obsmetrologia"
+path = "../../../../../../../information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/obsmetrologia"
+
+[[require]]
+name = "ObsmetrologiaPhysicalScience"
+path = "../../../../../../../natural-science-services-section/services/physical-science-services-section/lib/obsmetrologia-physical-science"
+
+[[lean_lib]]
+name = "ObsmetrologiaEconomics"

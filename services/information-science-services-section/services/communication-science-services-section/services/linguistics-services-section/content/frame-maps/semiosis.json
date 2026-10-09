@@ -1,0 +1,32 @@
+{
+  "kind": "lenticule-science.frame-language-map",
+  "id": "semiosis",
+  "version": "0.1.0",
+  "name": "semiosis and agential relationality",
+  "status": "operational",
+  "vocabulary": [
+    {"term": "semiote", "localReading": "an agent or office that participates in sign action under bounded relations"},
+    {"term": "semiosis", "localReading": "a sign process relating sign, interpretive activity, and what is thereby made meaningful"},
+    {"term": "semiosphere", "localReading": "the bounded sign environment across whose membrane translation must be explicit"},
+    {"term": "interpretant", "localReading": "a resulting or mediating reading, not an automatic declaration of a human speaker's intent"},
+    {"term": "ANT Colony", "localReading": "the service-owning collective whose semiotes act through its admission and contracts"}
+  ],
+  "readings": [
+    {"expression": "parse my message", "localReading": "produce one or more source-bound interpretants and expose ambiguity for customer admission"},
+    {"expression": "deception unshrouding", "localReading": "compare signs, claims, provenance, and boundary translations without claiming privileged access to hidden intent"}
+  ],
+  "nonCorrespondences": [
+    {"left": "interpretant", "right": "Leader intent", "reason": "a candidate sign relation cannot exercise the Leader office's settlement authority"},
+    {"left": "semiosphere boundary", "right": "filesystem path", "reason": "a semiotic membrane and a storage location may coincide in one implementation but are not the same relation"},
+    {"left": "ANT Colony", "right": "ambient root work pool", "reason": "the colony owns and refuses its acts; root does not absorb it"}
+  ],
+  "authority": {
+    "mayPresent": "candidate readings in this frame with source and map identity",
+    "mayNotSettleLeaderIntent": true,
+    "admissionLocus": "the customer office"
+  },
+  "provenance": {
+    "recoveredFrom": "@red-cup-engineering/communicating and agential-relationality prior art",
+    "recoveryResult": "urn:sha256:ec0327ae44951cbefc9f26ce404df948b92033fd863890bd59cb0f65c278ec50"
+  }
+}

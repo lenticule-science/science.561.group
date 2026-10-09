@@ -1,0 +1,30 @@
+{
+  "name": "@lenticule-science/obsmetrologia-change-bundle-qualification",
+  "version": "0.1.2",
+  "private": true,
+  "type": "module",
+  "description": "Validate evidence-backed change bundles for the Obsmetrologia mathematical library and record qualification decisions.",
+  "keywords": [
+    "obsmetrologia",
+    "change-bundle",
+    "qualification"
+  ],
+  "bin": {
+    "solicit-service": "./src/contract-change-bundle-qualification.mjs",
+    "invoke-service": "./src/contract-change-bundle-qualification.mjs"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "check": "node --check src/contract-change-bundle-qualification.mjs && npm test",
+    "verify": "npm run check"
+  },
+  "dependencies": {
+    "@red-cup-engineering/semiotic-eavt-services-section": "0.1.0",
+    "@red-cup-engineering/witness-journal-document-service": "0.1.0",
+    "@red-cup-engineering/activitypub-services-section": "0.8.1",
+    "@red-cup-engineering/computer-content-engineering-services-section": "0.1.0"
+  },
+  "exports": {
+    ".": "./src/contract-change-bundle-qualification.mjs"
+  }
+}

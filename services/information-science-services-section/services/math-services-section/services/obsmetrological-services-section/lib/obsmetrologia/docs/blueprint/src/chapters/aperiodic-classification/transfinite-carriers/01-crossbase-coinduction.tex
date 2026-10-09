@@ -1,0 +1,18 @@
+\subsection{Cross-base coinduction}
+
+\begin{theorem}[Coalgebraic cross-base MLD classification (up-to-closure coinduction)]\label{thm:coalgebraic-crossbase-mld}\lean{Obsmetrologia.AperiodicOrder.Tiling.UpTo.crossBase_classification}\leanok\uses{thm:common-base-mld-classification}
+Cross-base converse is carried by a settling bisimulation up to closure
+(\texttt{BisimUTC}).  The relation agrees on settled value and is closed under
+the joint closure step; absorption makes that enough to classify geometric MLD
+by equality of \(\mathrm{settle}\).  Equal settled value constructs the
+settled-value kernel, giving the converse on the settling coalgebra.
+\end{theorem}
+
+\begin{theorem}[Observed up-to-closure coinduction preserves analytic readouts]\label{thm:observed-upto-closure-coinduction}\lean{Obsmetrologia.AperiodicOrder.Tiling.UpTo.observedBisimUTC_sound}\leanok\uses{thm:coalgebraic-crossbase-mld}
+The coalgebraic kernel can be enriched by an explicit observation.  If a
+relation agrees on settled value, carries an observation, and is closed under
+the joint closure step, then up-to-closure coinduction preserves that
+observation along every orbit stage.  This is the recovered slot for
+diffraction, spectral, phase, or mass readouts; the unobserved
+\(\mathrm{settle}\)-kernel forgets this analytic data.
+\end{theorem}

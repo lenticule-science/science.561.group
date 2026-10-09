@@ -1,0 +1,400 @@
+{
+  "$schema": "../../../../../../../../data/records/schema/literature-measurement.schema.json",
+  "id": "mutual-credit-first-party-sardex-wir-credit-commons",
+  "kind": "literature-measurement",
+  "question": "What do the first-party surfaces of Sardex, WIR, the Credit Commons protocol, Holo/HoloFuel and Unyt state about mutual-credit scale, limits and federation, and what do the academic evaluations report?",
+  "frame": {
+    "population": "business-to-business and federated mutual-credit systems",
+    "exposure": "first-party statistics, protocol documents, peer-reviewed studies",
+    "comparator": "Tidepool member credit lines",
+    "outcomes": [
+      "scale",
+      "limits",
+      "federation and clearing",
+      "status"
+    ]
+  },
+  "notes": [
+    "../../content/text/documents/articles/notes/2026/10/08/2026-10-08-mutual-credit-first-party-sardex-wir-credit-commons.md"
+  ],
+  "sources": [
+    {
+      "item": {
+        "id": "sardexfirstparty2026",
+        "type": "webpage",
+        "title": "SardexPay site: 15-year news item (2025-06-21) and home page",
+        "author": [
+          {
+            "literal": "Sardex SpA"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              8
+            ]
+          ]
+        },
+        "URL": "https://www.sardexpay.net/news/15-anni/"
+      },
+      "design": "protocol-documentation",
+      "findings": [
+        {
+          "finding": "Sardex states, for 2025-06-20: \"15 anni, 10.000 aziende e +1 miliardo di crediti transati\"; network across 15 Italian regions; started 2010 by four young Sardinians; over 300 entrepreneurs at the Cagliari anniversary event.",
+          "exactSourceLanguage": "15 anni, 10.000 aziende e +1 miliardo di crediti transati"
+        },
+        {
+          "finding": "Sardex states its purpose as creating concrete business opportunities and \"fornire credito senza il peso degli interessi\": credit without the burden of interest; the home page describes paying in Sardex \"a tasso zero\" and recouping by selling to other members.",
+          "exactSourceLanguage": "fornire credito senza il peso degli interessi"
+        },
+        {
+          "finding": "Sardex SpA is a joint-stock company (registered office Serramanna, share capital paid 187,862 EUR); the home page cites Il Sole 24 Ore 2021-05-03 \"SardexPay corre e cresce dell'80%\". The site lists pages Governance and Codice etico."
+        }
+      ],
+      "readFrom": "first-party-docs",
+      "observedAt": "2026-10-08",
+      "notFound": [
+        "annual turnover by year and member credit-limit rules; not on the pages read",
+        "an English version: /en returned 404 on 2026-10-08"
+      ]
+    },
+    {
+      "item": {
+        "id": "wirfirstparty2026",
+        "type": "webpage",
+        "title": "WIR Bank 2025 annual report review page (gb.wir.ch)",
+        "author": [
+          {
+            "literal": "WIR Bank"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              8
+            ]
+          ]
+        },
+        "URL": "https://gb.wir.ch/de/2025/rueckblick"
+      },
+      "design": "protocol-documentation",
+      "findings": [
+        {
+          "finding": "The review page for Geschaeftsjahr 2025 describes growth in mortgages and customer deposits, private customers and the VIAC fintech subsidiary in words, with no WIR-franc (CHW) turnover, participant count or balance-sheet figure on the page."
+        }
+      ],
+      "readFrom": "first-party-docs",
+      "observedAt": "2026-10-08",
+      "notFound": [
+        "CHW turnover",
+        "number of WIR participants",
+        "pages Wichtigste Zahlen and Lagebericht: wichtigste-zahlen returned 404; the PDF annual report was not opened"
+      ]
+    },
+    {
+      "item": {
+        "id": "creditcommonsrepo2026",
+        "type": "software",
+        "title": "Credit Commons Microservices (gitlab.com/credit-commons-software-stack): fundamentals document and README",
+        "author": [
+          {
+            "literal": "Credit Commons Docs"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              8
+            ]
+          ]
+        },
+        "URL": "https://gitlab.com/credit-commons-software-stack/credit-commons-microservices"
+      },
+      "design": "protocol-documentation",
+      "findings": [
+        {
+          "finding": "Protocol: nodes are web services with a Ledger API; nodes form a tree with rootwards/leafwards relations and no direct peers; a node has at least two accounts and at most one rootwards account; the rootwards account is the Balance-of-Trade (BoT) account, which members commit to restore to zero in the long run. A transversal transaction is recorded on every intermediate node as a transaction between two of that node's accounts.",
+          "exactSourceLanguage": "The relationship between any pair of connected nodes is a 'rootwards/leafwards relationship - there are no direct peer relationships."
+        },
+        {
+          "finding": "Limits: \"Accounts can only trade within limits straddling zero. E.g. +100, -100\"; a transaction is valid only if the payee's resulting balance is below the maximum and the payer's resulting balance above the minimum; limits or the algorithm setting them come from a governance process, possibly negotiation among members. Each branchwards node has a conversion rate to its rootwards node.",
+          "exactSourceLanguage": "Accounts can only trade within limits straddling zero."
+        },
+        {
+          "finding": "Integrity: nodes keep the same record of a shared transaction by a hash chain over transaction id, workflow name, version number and entry quantities and descriptions; workflows are JSON state machines saying which account may take which transition; parents by default cannot interrogate child ledgers and store no trader names for remote transactions."
+        },
+        {
+          "finding": "Repository state: shallow clone last commit 2021-02-22; README section \"WHAT WE NEED\" is empty. Slater's blog (2020-10-06) announced the reference implementation as \"a decade of working with community currencies\" and said development \"will have to come from government or philanthropic organisations, users (or future users) and/or volunteers.\""
+        }
+      ],
+      "readFrom": "first-party-docs",
+      "observedAt": "2026-10-08",
+      "notFound": [
+        "any deployed network or user count"
+      ]
+    },
+    {
+      "item": {
+        "id": "holodocs2026",
+        "type": "webpage",
+        "title": "Holo Hosting: Pricing and currency page",
+        "author": [
+          {
+            "literal": "Holo Hosting"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              8
+            ]
+          ]
+        },
+        "URL": "https://holo.host/resources/currency/"
+      },
+      "design": "protocol-documentation",
+      "findings": [
+        {
+          "finding": "Status stated by Holo: \"HoloFuel is designed as the mutual-credit utility currency for accounting within the hosting network and has not launched.\" Hosting is priced per deployment and settled in national currencies such as USD and EUR; HOT was issued in 2018 as a product pre-sale voucher and \"Holo Limited does not currently offer token exchange, conversion or redemption services\".",
+          "exactSourceLanguage": "HoloFuel is designed as the mutual-credit utility currency for accounting within the hosting network and has not launched."
+        },
+        {
+          "finding": "Until HoloFuel exists as the internal accounting system, micro-payments and direct peer payments between customers and hosts are not supported. HOT was documented in 2018 as redeemable for HoloFuel at 1:1 once operational."
+        }
+      ],
+      "readFrom": "first-party-docs",
+      "observedAt": "2026-10-08"
+    },
+    {
+      "item": {
+        "id": "unytdocs2026",
+        "type": "webpage",
+        "title": "Unyt site: how it works, roadmap, FAQ",
+        "author": [
+          {
+            "literal": "Unyt"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              8
+            ]
+          ]
+        },
+        "URL": "https://unyt.co/roadmap/"
+      },
+      "design": "protocol-documentation",
+      "findings": [
+        {
+          "finding": "Unyt describes itself as an accounting engine \"built to power HoloFuel for the Holo Hosting network\" that lets a group define currencies (including mutual credit with configurable credit limits, fees and membership requirements), Smart Agreements (billing, escrow, revenue sharing), atomic multi-currency trades and bridging of EVM tokens; it runs peer to peer on participants' devices on Holochain and in Moss groupware.",
+          "exactSourceLanguage": "Unyt's accounting engine was built to power HoloFuel for the Holo Hosting network"
+        },
+        {
+          "finding": "Roadmap dates stated: Unyt launch September 2025; Circulo (a community mutual credit currency) September 2025; Smart Agreements October 2025; Atomic multi-currency trades December 2025; blockchain bridging January and February 2026; KYC/AML integrations and token gating March 2026; data migration and recovery in progress for Q2 2026."
+        }
+      ],
+      "readFrom": "first-party-docs",
+      "observedAt": "2026-10-08",
+      "notFound": [
+        "source code of the Unyt accounting zomes (github.com/unytco not read)",
+        "member or transaction counts for Circulo"
+      ]
+    },
+    {
+      "item": {
+        "id": "laurasartori2016",
+        "type": "article-journal",
+        "title": "From complementary currency to institution: A micro-macro study of the Sardex mutual credit system",
+        "author": [
+          {
+            "family": "Sartori",
+            "given": "Laura"
+          },
+          {
+            "family": "Dini",
+            "given": "P."
+          }
+        ],
+        "container-title": "London School of Economics and Political Science Research Online (London School of Economics and Political Science)",
+        "publisher": "London School of Economics and Political Science",
+        "volume": "107",
+        "issue": "2",
+        "page": "273-304",
+        "issued": {
+          "date-parts": [
+            [
+              2016,
+              8,
+              1
+            ]
+          ]
+        },
+        "DOI": "10.1425/84070",
+        "URL": "https://doi.org/10.1425/84070"
+      },
+      "readFrom": "abstract",
+      "findings": [
+        {
+          "finding": "Interview study of Sardex as social-innovation start-up, complementary currency, mutual credit system and socio-economic circuit: trust was and remains fundamental to creating and operating the system; Sardex became a mediator of economic exchanges and an institution at regional level.",
+          "exactSourceLanguage": "The main findings are that trust was and continues to be fundamentally important for the creation and operation of the mutual credit system"
+        }
+      ],
+      "observedAt": "2026-10-08",
+      "design": "empirical-study",
+      "country": [
+        "IT"
+      ],
+      "population": "Sardex circuit members and founders (interviews)"
+    },
+    {
+      "item": {
+        "id": "jamesstodder2009",
+        "type": "article-journal",
+        "title": "Complementary credit networks and macroeconomic stability: Switzerland's Wirtschaftsring",
+        "author": [
+          {
+            "family": "Stodder",
+            "given": "James"
+          }
+        ],
+        "container-title": "Journal of Economic Behavior & Organization",
+        "publisher": "Elsevier BV",
+        "volume": "72",
+        "issue": "1",
+        "page": "79-95",
+        "issued": {
+          "date-parts": [
+            [
+              2009,
+              6,
+              28
+            ]
+          ]
+        },
+        "DOI": "10.1016/j.jebo.2009.06.002",
+        "URL": "https://doi.org/10.1016/j.jebo.2009.06.002"
+      },
+      "readFrom": "abstract",
+      "findings": [
+        {
+          "finding": "Studies Switzerland's Wirtschaftsring (WIR) as a complementary credit network in relation to macroeconomic stability. Neither OpenAlex nor Crossref carries the abstract, so only the title and bibliographic record were read."
+        }
+      ],
+      "observedAt": "2026-10-08",
+      "design": "empirical-study",
+      "country": [
+        "CH"
+      ]
+    },
+    {
+      "item": {
+        "id": "paolodini2026",
+        "type": "article-journal",
+        "title": "Neutral Settlement Layer for Interoperability between Different Forms of Local Monetary and Financial Expression",
+        "author": [
+          {
+            "family": "Dini",
+            "given": "Paolo"
+          },
+          {
+            "family": "Fleischman",
+            "given": "Tomaž"
+          }
+        ],
+        "container-title": "International Journal of Community Currency Research",
+        "volume": "29",
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              1,
+              24
+            ]
+          ]
+        },
+        "DOI": "10.26034/zh.ijccr.2025.8310",
+        "URL": "https://doi.org/10.26034/zh.ijccr.2025.8310"
+      },
+      "readFrom": "abstract",
+      "findings": [
+        {
+          "finding": "Proposes multilateral set-off of mutual debts as a settlement layer between non-convertible currencies and simulates clusters of companies on a dataset of more than 40,000 companies: up to 95 percent of total Net Internal Debt can be settled within communities, the remainder in outside money.",
+          "exactSourceLanguage": "Up to 95% of the total Net Internal Debt can be settled within the communities, with the remainder settled with outside money."
+        }
+      ],
+      "observedAt": "2026-10-08",
+      "design": "simulation",
+      "n": 40000,
+      "population": "dataset of more than 40,000 companies"
+    }
+  ],
+  "searches": [
+    {
+      "register": "openalex.json",
+      "variables": {
+        "search": "Sardex complementary currency Sardinia mutual credit"
+      },
+      "observedAt": "2026-10-08",
+      "count": 3,
+      "included": [
+        "laurasartori2016"
+      ],
+      "reading": "The first hit is the Sartori interview study; the Sardex first-party statistics are read from the company site."
+    },
+    {
+      "register": "openalex.json",
+      "variables": {
+        "search": "Complementary credit networks and macroeconomic stability: Switzerland's Wirtschaftsring"
+      },
+      "observedAt": "2026-10-08",
+      "count": 1,
+      "included": [
+        "jamesstodder2009"
+      ],
+      "reading": "Record without abstract in OpenAlex and Crossref; WIR scale figures not found on the WIR bank surfaces read."
+    },
+    {
+      "register": "openalex.json",
+      "variables": {
+        "search": "Credit Commons open protocol and accounting system for interoperable local currencies"
+      },
+      "observedAt": "2026-10-08",
+      "count": 1,
+      "included": [
+        "paolodini2026"
+      ],
+      "reading": "The 2016 Credit Commons paper by Priftis, Slater and Trabichet was not returned by OpenAlex; the first hit is a 2026 paper on a neutral settlement layer. The Credit Commons protocol is therefore read from the project repository and blog only."
+    },
+    {
+      "register": "openalex.json",
+      "variables": {
+        "search": "Credit Commons Priftis Slater Trabichet interoperable local currencies"
+      },
+      "observedAt": "2026-10-08",
+      "count": 0,
+      "included": [],
+      "reading": "No result matching the 2016 Credit Commons paper."
+    },
+    {
+      "register": "openalex.json",
+      "variables": {
+        "search": "Holochain mutual credit HoloFuel"
+      },
+      "observedAt": "2026-10-08",
+      "count": 4,
+      "included": [],
+      "reading": "Four Holochain results (IoT healthcare security, medical education, a cybernetic-currency conversation); none studies HoloFuel or mutual credit."
+    }
+  ]
+}

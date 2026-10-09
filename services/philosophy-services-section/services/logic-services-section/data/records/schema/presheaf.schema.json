@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://research-notes.561.group/hacking/library/predication-notes/composting/library/object/library/thing/library/category/library/functor/library/presheaf/presheaf.schema.json",
+  "title": "Presheaf",
+  "description": "JSON Schema for a presheaf — a contravariant functor F : C^op → D from a category C to a value-category D (Mac Lane 1971 Ch. III §2; Mac Lane & Moerdijk 1992 Ch. I §3). Classical presheaves are Set-valued (D = Set); the 561 corpus also uses DBiLat-valued presheaves (the predication-fiber-functor). Specializes functor by requiring contravariance and adding a value-category cell. Uses oneOf to discriminate Set-valued from category-valued presheaves.",
+  "allOf": [{ "$ref": "https://research-notes.561.group/hacking/library/predication-notes/object/library/thing/library/category/library/functor/functor.schema.json" }],
+  "type": "object",
+  "required": ["value-category"],
+  "properties": {
+    "value-category": {
+      "enum": ["set", "category"],
+      "description": "The kind of value-category. set: classical Set-valued presheaves (the Yoneda-lemma case). category: D-valued presheaves for arbitrary D (e.g., the predication-fiber-functor with D = DBiLat)."
+    }
+  },
+  "oneOf": [
+    {
+      "title": "Set-valued presheaf",
+      "properties": {
+        "value-category": { "const": "set" }
+      },
+      "required": ["value-category"]
+    },
+    {
+      "title": "Category-valued presheaf",
+      "properties": {
+        "value-category": { "const": "category" },
+        "specific-value-category": {
+          "$dynamicRef": "#name-shape",
+          "description": "The specific category D that the presheaf takes values in. Required only for the category-valued branch."
+        }
+      },
+      "required": ["value-category", "specific-value-category"]
+    }
+  ]
+}

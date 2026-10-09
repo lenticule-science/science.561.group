@@ -1,0 +1,109 @@
+{
+  "kind": "lenticule.relconlang.chu-matrix-semantics-audit",
+  "version": "0.1",
+  "status": "open-semantic-interpretation",
+  "matrix": {
+    "ta": {
+      "truth": "potential",
+      "falsity": "absurd"
+    },
+    "na": {
+      "truth": "absurd",
+      "falsity": "potential"
+    },
+    "sha": {
+      "truth": "stable",
+      "falsity": "active"
+    },
+    "mu": {
+      "truth": "absurd",
+      "falsity": "absurd"
+    }
+  },
+  "receipts": {
+    "manifestChuReceipt": "checks only the generic Chu dual-involution on the supplied matrix",
+    "linguisticInterpretationChecked": false
+  },
+  "projections": [
+    {
+      "id": "knowledge-join-row",
+      "definition": "knowledgeJoinAll(matrix entries in the row)",
+      "output": {
+        "ta": "potential",
+        "na": "potential",
+        "sha": "stable",
+        "mu": "absurd"
+      },
+      "matchesStanceSystem": true,
+      "loss": "collapses ta and na despite their opposite state orientations"
+    },
+    {
+      "id": "relation-state-extension-membership",
+      "definition": "a particle belongs to a state extension iff that matrix cell has its positive side told (potential or stable), exactly as relating.stateExtension defines relation extension",
+      "stateExtensions": {
+        "truth": [
+          "ta",
+          "sha"
+        ],
+        "falsity": [
+          "na"
+        ]
+      },
+      "inducedProfiles": {
+        "ta": [
+          true,
+          false
+        ],
+        "na": [
+          false,
+          true
+        ],
+        "sha": [
+          true,
+          false
+        ],
+        "mu": [
+          false,
+          false
+        ]
+      },
+      "observation": "sha is not in the falsity extension because sha×falsity is active, whose positive side is not told",
+      "consequence": "this projection does not encode sha as both truth and falsity"
+    },
+    {
+      "id": "nonbottom-state-occupancy",
+      "definition": "treat any non-absurd matrix cell as a state being informationally occupied",
+      "inducedProfiles": {
+        "ta": [
+          true,
+          false
+        ],
+        "na": [
+          false,
+          true
+        ],
+        "sha": [
+          true,
+          true
+        ],
+        "mu": [
+          false,
+          false
+        ]
+      },
+      "inducedCanonicalFour": {
+        "ta": "potential",
+        "na": "active",
+        "sha": "stable",
+        "mu": "absurd"
+      },
+      "observation": "this recovers the four canonical evidence-side patterns, but no current relation API identifies non-bottom occupancy with state membership"
+    }
+  ],
+  "semanticTensions": [
+    "stance prose calls na possible/pending/not-yet-settled, while the matrix places its only non-bottom entry at the state named falsity",
+    "stance prose calls sha contradiction-held, but standard relation stateExtension excludes sha from the falsity extension",
+    "knowledge-join projection reproduces the flat stance table but is not shown by manifest code to be the intended semantic projection"
+  ],
+  "conclusion": "The matrix is a structurally valid Chu-shaped artifact with an unresolved linguistic interpretation. Preserve it, but do not cite dualInvolution or row-aggregate coincidence as proof of stance semantics."
+}

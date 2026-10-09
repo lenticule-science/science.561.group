@@ -1,0 +1,20 @@
+\subsection{Shift-equivalence universality}
+
+\begin{theorem}[Universality class $=$ fixed-dimension shift-equivalence class]\label{thm:universality-se-class}\lean{Obsmetrologia.AperiodicOrder.Tiling.Universality.universality_class_se_invariance}\leanok\uses{thm:mld-refines-cohequiv, thm:clinv-dichotomy}
+At a fixed dimension $n$, two primitive non-singular step-$n$ substitution
+matrices have the same universality class iff they are shift equivalent (the
+class is $\mathrm{Quot}\,\mathrm{SE}$), and the cohomological classifying
+invariant $\mathrm{cl\text{-}inv}$ is SE-invariant (rules sharing the
+classifying coordinate carry the same class)
+(\texttt{universality\_class\_se\_invariance}).
+\end{theorem}
+
+\begin{theorem}[Cross-dimensional shift equivalence]\label{thm:universality-cross-dim-se}\notready\uses{thm:universality-se-class}
+\emph{Open frontier, stated but not formalized.} The general universality
+relation is shift equivalence across dimensions, where the strong shift
+equivalence may change the matrix rank (Williams' classification of subshifts
+of finite type up to conjugacy). The core models SE only at a fixed $n$
+(\cref{thm:universality-se-class}); the rank-changing relation and the
+decidability status of the Williams problem are the open frontier. Red until
+cross-dimension SE is modeled.
+\end{theorem}

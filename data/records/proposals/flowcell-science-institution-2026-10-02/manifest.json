@@ -1,0 +1,20 @@
+{
+  "kind": "flowcell-agency-admission-draft",
+  "status": "draft-for-authorized-agency-admission",
+  "section": "lenticule-science",
+  "request": "ni:///sha-256;gRCQ64aIWRYi5-rb_IVjuvyw9q0UiJlAhoRc4zTinWA",
+  "currentLaw": {
+    "officeSchema": "emsenn/schema/office",
+    "dutySchema": "emsenn/schema/duty",
+    "workSchema": "emsenn/schema/work",
+    "skillSchema": "emsenn/schema/skill"
+  },
+  "reusesExisting": [
+    "research-analyst",
+    "chief-computation-theorist",
+    "chief-mathematician",
+    "obsmetrologia-consultant",
+    "mathematical-library-steward"
+  ],
+  "note": "These records are staged source proposals. They do not become institutional fact until admitted by an authorized agency act."
+}

@@ -1,0 +1,9 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://561.group/swarm-intelligence/agentic-orchestration-platform/runbook/library/read-and-articulate-runbook/read-and-articulate-runbook.schema.json",
+  "title": "Read-and-articulate runbook (specialized runbook; full four-regime descent)",
+  "description": "Restriction of runbook to the six-step file-ingestion pattern walking the full four-regime descent: reading-file (aperiodic-articulating) → decoding (aperiodic-articulating) → predicating (transfinite-predicating) → positing (scott-continuous-positing) → settling (finite-settling) → tracking-cell. The runbook record itself is finite-settlement-algebra; its steps traverse all four regimes — the canonical 'heterogeneous input becomes SPO rows' pipeline.",
+  "kind": "object",
+  "variance": "restriction",
+  "allOf": [{ "$ref": "../../runbook.schema.json" }]
+}

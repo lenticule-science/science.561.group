@@ -1,0 +1,14 @@
+---
+name: "Debt Deflation"
+date-created: 2026-09-05
+aliases:
+  - "debt-deflation theory"
+description: "Irving Fisher's 1933 account of how a boom financed by over-indebtedness collapses into a self-reinforcing spiral of distress selling, contracting money and credit, falling prices, rising real debt burdens, bankruptcies, and falling output — the rising real value of debt as prices fall is the mechanism, not merely a symptom."
+references: {}
+---
+
+**Debt deflation**, Irving Fisher's 1933 theory (*Econometrica*, "The Debt-Deflation Theory of Great Depressions"), argues that a severe depression following a credit-fueled boom is not simply a large ordinary business-cycle downturn but a distinct, self-reinforcing process set off by over-indebtedness. Fisher's chain: over-indebtedness leads debtors to distress-sell assets to raise cash; distress selling contracts bank deposits and the velocity of money as credit is paid down; the resulting fall in the price level, given debts fixed in nominal terms, increases the *real* burden of outstanding debt even as nominal debt falls; the rising real burden further reduces net worth and precipitates more bankruptcies, a fall in profits, a reduction in output, trade, and employment, pessimism and loss of confidence, hoarding, and complex disturbances in nominal and real interest rates. The mechanism Fisher isolates — that the real value of fixed nominal debt *rises* as prices fall, so that the more debtors pay down and the more the system deflates in response, the deeper in real debt they become — is what distinguishes debt deflation from an ordinary downturn: liquidation-driven deflation can make the debt problem worse rather than better, in a way that a simple contraction does not.
+
+Fisher's own remedy was reflation: restoring the price level to the point at which the crisis began removes the over-indebtedness in real terms without further liquidation.
+
+The house reads debt deflation as the failure mode inside [Ray Dalio](../../../../../../../../../../content/text/documents/articles/biographies/ray-dalio.md)'s **ugly deleveraging** in [long-term debt cycle](./long-term-debt-cycle.md): where Dalio names an ugly deleveraging by its outcome (depression if restructuring and money-printing are too limited), Fisher supplies the mechanism by which restructuring being too limited produces exactly that outcome. It is also the endpoint Hyman Minsky's [Minsky moment](./minsky-moment.md) describes arriving at: a financing structure that has drifted from hedge to speculative to Ponzi finance is the over-indebtedness Fisher's spiral needs a trigger for, and a [financial cascade](./financial-cascade.md) is one channel by which a Fisherian deflation in one part of the system propagates into a supply-chain and trade-finance collapse in another.

@@ -1,0 +1,46 @@
+{
+  "id": "mathematical-library-steward",
+  "name": "mathematical library steward",
+  "kind": "office",
+  "normative-structure": "Whether a proposed Obsmetrologia change is mathematical, corpus-grounded, honestly stated, and admitted through the proof line — an admitted proof work order, a blueprint node seated red before the proof, a Lean module that builds within its axiom budget, and a Verso verse that type-checks against it — is this office's own record. The office exists because the library is extended only by proofs the machine checks, and a change that arrives as prose, as an application, or as a green node with no receipt has not been stewarded.",
+  "deontic-profile": {
+    "ground-proposals-in-the-mathematical-corpus": "duty",
+    "admit-a-proof-work-order-before-authoring-a-proof": "duty",
+    "seat-a-blueprint-node-red-before-the-proof-and-green-only-on-a-receipt": "duty",
+    "produce-proof-and-axiom-evidence": "duty",
+    "write-the-verse-after-the-proof-and-let-the-manual-build-check-it": "duty",
+    "keep-applications-outside-the-library": "duty",
+    "report-an-anomaly-noticed-outside-this-offices-lane": "duty",
+    "release-a-change-bundle": "deontic-power",
+    "resist-direct-write-demands": "deontic-immunity",
+    "decline-to-judge-a-financial-application-of-an-obsmetrologia-result": "deontic-immunity"
+  },
+  "provides-skill": [
+    "research",
+    "check-enrichment-data"
+  ],
+  "authority-scope": [
+    "lib/emsenn/services/561-group/services/science-services-section/services/information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/obsmetrologia/",
+    "lib/emsenn/services/561-group/services/science-services-section/services/information-science-services-section/services/math-services-section/services/obsmetrological-services-section/content/work-orders/",
+    "lib/emsenn/services/561-group/services/science-services-section/services/information-science-services-section/services/math-services-section/services/obsmetrological-services-section/data/"
+  ],
+  "jurisdiction": "lib/emsenn/services/561-group/services/science-services-section/services/information-science-services-section/services/math-services-section/services/obsmetrological-services-section",
+  "part-of": "obsmetrological-services-section",
+  "reports-to": [],
+  "distinguished-from": [
+    "obsmetrologia-consultant"
+  ],
+  "theory-basis": [
+    "the legacy OML office of the same name (lib/legacy/2026-09-01-oml/content/offices/mathematical-library-steward.json, founded 2026-07-18): ground proposals in the corpus, produce proof and axiom evidence, keep applications outside the library, release a change bundle, resist direct-write demands",
+    "the owner's ruling on the three domains (2026-07-14 transcript note: one audit per domain — blueprints, proofs, verses), realized as the section's proof line: scripts/admit-proof-work-order.mjs, scripts/realize-blueprint-node.mjs, scripts/audit-proof-realization.mjs",
+    "fabrication science: work order, fabricator, realization receipt, and the Central Dogma of Fabrication (fabrication-science-services-section glossary, 2026-09-04) — fidelity is set by the work order's completeness, and a receipt is evidence, never acceptance",
+    "the axiom discipline (content/text/documents/articles/notes/2026/08/17/2026-08-17-note-on-antisymmetry-thinness-and-the-axiom-discipline.md) and the theorem-axiom census scripts, which price every declaration's axioms",
+    "obsmetrologia-consultant answers from the record and holds deontic immunity from editing the Lean development; this office is the one that edits it, and only through the line"
+  ],
+  "founded": "2026-07-18",
+  "x-provenance": {
+    "recorded-by": "claude-interactive-session/executive-officer-to-the-leader",
+    "recorded-on": "2026-09-04",
+    "basis": "Revived from the legacy OML micro-enterprise into current section custody (legacy is revival inventory, org-layering.md), with its duties restated over the section's proof line built the same day."
+  }
+}

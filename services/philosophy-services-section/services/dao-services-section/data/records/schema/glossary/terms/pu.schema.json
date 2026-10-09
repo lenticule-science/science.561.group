@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "glossary/terms/pu",
+  "title": "pu",
+  "description": "\"The uncarved block\": the condition of unworked wholeness a thing is in before being cut into distinct, named, functional shapes.",
+  "allOf": [
+    {
+      "$ref": "./translation-variance-record.schema.json"
+    },
+    {
+      "properties": {
+        "term": {
+          "const": "pu"
+        }
+      }
+    }
+  ]
+}

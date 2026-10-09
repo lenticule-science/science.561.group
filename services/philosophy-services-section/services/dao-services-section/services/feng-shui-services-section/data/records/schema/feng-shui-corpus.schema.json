@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://561.group/schema/feng-shui-corpus.schema.json",
+  "title": "Feng Shui recommendation corpus",
+  "type": "object",
+  "required": ["corpus", "sources", "claims", "recommendations", "capability_evidence", "market_evidence", "open_questions"],
+  "properties": {
+    "corpus": {
+      "type": "object",
+      "required": ["id", "version", "scope", "rights_policy"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^feng-shui-"},
+        "version": {"type": "string", "pattern": "^v[0-9]+$"},
+        "scope": {"type": "string"},
+        "rights_policy": {"type": "string"}
+      }
+    },
+    "sources": {"type": "array", "items": {"$ref": "#/$defs/source"}},
+    "claims": {"type": "array", "items": {"$ref": "#/$defs/claim"}},
+    "recommendations": {"type": "array", "items": {"$ref": "#/$defs/recommendation"}},
+    "capability_evidence": {"type": "array", "items": {"$ref": "#/$defs/evidence"}},
+    "market_evidence": {"type": "array", "items": {"$ref": "#/$defs/evidence"}},
+    "open_questions": {"type": "array", "items": {"type": "object", "required": ["id", "result", "next_evidence"], "properties": {"id": {"type": "string"}, "result": {"type": "string"}, "next_evidence": {"type": "string"}}}}
+  },
+  "$defs": {
+    "source": {"type": "object", "required": ["id", "author", "title", "url", "published_date", "observed_at", "source_location", "rights"], "properties": {"id": {"type": "string", "pattern": "^src-"}, "author": {"type": "string"}, "title": {"type": "string"}, "url": {"type": "string", "format": "uri"}, "published_date": {"type": "string"}, "observed_at": {"type": "string", "format": "date-time"}, "source_location": {"type": "string"}, "rights": {"type": "string"}}},
+    "claim": {"type": "object", "required": ["id", "source_id", "kind", "paraphrase", "tradition", "applicability", "limits"], "properties": {"id": {"type": "string", "pattern": "^clm-"}, "source_id": {"type": "string", "pattern": "^src-"}, "kind": {"enum": ["practice", "method", "scope", "personal-report", "topic-only"]}, "paraphrase": {"type": "string"}, "tradition": {"type": "string"}, "applicability": {"type": "array", "items": {"type": "string"}}, "limits": {"type": "array", "items": {"type": "string"}}}},
+    "recommendation": {"type": "object", "required": ["id", "claim_ids", "required_scene_facts", "actions", "limits", "commercial_link_policy"], "properties": {"id": {"type": "string", "pattern": "^rec-"}, "claim_ids": {"type": "array", "minItems": 1, "items": {"type": "string", "pattern": "^clm-"}}, "required_scene_facts": {"type": "array", "items": {"type": "string"}}, "actions": {"type": "array", "minItems": 1, "items": {"type": "string"}}, "limits": {"type": "array", "items": {"type": "string"}}, "commercial_link_policy": {"type": "string"}}},
+    "evidence": {"type": "object", "required": ["id", "product", "role", "arena", "claim", "source_id", "evidence_kind", "result", "unknown_reason", "next_evidence"], "properties": {"id": {"type": "string"}, "product": {"type": "string"}, "role": {"enum": ["same-job-incumbent", "upstream-provider", "complement", "reference-implementation"]}, "arena": {"type": "string"}, "claim": {"type": "string"}, "source_id": {"type": "string", "pattern": "^src-"}, "evidence_kind": {"enum": ["documented", "observed", "assayed"]}, "result": {"type": "string"}, "unknown_reason": {"type": "string"}, "next_evidence": {"type": "string"}}}
+  }
+}

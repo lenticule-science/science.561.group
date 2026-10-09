@@ -1,0 +1,163 @@
+\section{The Vershik successor: the serial yarn order}
+
+The third Bratteli--Vershik piece is the adic successor --- the serial yarn order, the dyadic
+odometer, green in \texttt{Obsmetrologia.Closure.Odometer}. With it the Bratteli--Vershik system of a
+self-similar textile is complete in-tree: edges (\cref{thm:port-growth}), levels-as-time
+(\cref{thm:weaving-advances-time}), and the serial successor.
+
+\begin{proposition}[The Vershik adic successor]\label{thm:vershik}\lean{Obsmetrologia.Odometer.vershik}\leanok\uses{thm:port-growth}
+The next path in the serial order, the little-endian ``$+1$ with carry'' odometer: a not-yet-maximal
+edge advances and stops; a maximal edge resets and carries up a level. The serial yarn order ---
+finish the stitch, carry to the next row.
+\end{proposition}
+
+\begin{theorem}[The successor is the serial $+1$]\label{thm:vershik-succ}\lean{Obsmetrologia.Odometer.vershik_succ}\leanok\uses{thm:vershik}
+On any path not yet maximal, the adic successor increments the serial index:
+$\texttt{toNat}(\texttt{vershik}\,p) = \texttt{toNat}\,p + 1$. The serial yarn order is the integer
+successor until a row maxes out.
+\end{theorem}
+
+\begin{theorem}[The maximal path wraps to the minimal]\label{thm:vershik-wrap}\lean{Obsmetrologia.Odometer.vershik_replicate_true}\leanok\uses{thm:vershik}
+The all-maximal path of any height carries past the top and returns to the all-minimal path --- the
+adic map's one discontinuity, where the serial order closes into a cycle.
+\end{theorem}
+
+\begin{theorem}[On two levels the successor is a 4-cycle]\label{thm:vershik-cycle}\lean{Obsmetrologia.Odometer.vershik_two_cycle}\leanok\uses{thm:vershik-succ, thm:vershik-wrap}
+Iterating \texttt{vershik} four times returns any two-level path to itself: the minimal dyadic
+odometer, every path reached --- the Bratteli--Vershik minimality of the two-row self-similar tower.
+\end{theorem}
+
+\begin{proposition}[The dyadic tower]\label{thm:dyadic-tower}\lean{Obsmetrologia.Odometer.dyadicTower}\leanok\uses{thm:vershik}
+The dyadic tower as an inverse system: stage $n$ is the length-$n$ paths,
+restriction is prefix truncation, functoriality by the take laws. Its
+threads are the hull of the tower.
+\end{proposition}
+
+\begin{theorem}[The dyadic hull is Cantor space]\label{thm:dyadic-hull-cantor}\lean{Obsmetrologia.Odometer.dyadicHull_is_cantor}\leanok\uses{thm:dyadic-tower}
+Reading a Cantor point's prefix thread recovers the point, and every thread
+is the thread of its reads: the inverse limit $\varprojlim \{0,1\}^n$ is
+$2^{\mathbb{N}}$, in coordinates.
+\end{theorem}
+
+\begin{theorem}[The odometer is a tower endomorphism]\label{thm:vershik-tower-endomorphism}\lean{Obsmetrologia.Odometer.vershikStage_proj}\leanok\uses{thm:dyadic-tower, thm:vershik-succ}
+The Vershik successor commutes with prefix truncation
+(\texttt{vershik\_take}: the carry propagates left to right), so the
+successor acts stage-wise on the tower and descends to the Cantor hull
+(\texttt{vershikHull}) --- the odometer as a dynamic on the inverse limit,
+not only on finite paths.
+\end{theorem}
+
+\begin{theorem}[The stage is one full cycle]\label{thm:vershik-cycle-full}\lean{Obsmetrologia.Odometer.vershikIter_cycle}\leanok\uses{thm:vershik-succ, thm:vershik-wrap}
+The $2^L$-fold successor is the identity on $L$-level paths, and no smaller
+positive iterate fixes any path: in serial coordinates the $m$-fold iterate
+adds $m$ modulo $2^L$ (\texttt{toNat\_vershikIter}, stated as an exact
+equation with a wrap count), the serial index separates paths of equal level
+(\texttt{eq\_of\_toNat\_eq}), and the index is bounded by $2^L$
+(\texttt{toNat\_lt}). Generalizes \cref{thm:vershik-cycle} from two levels to
+all levels.
+\end{theorem}
+
+\begin{theorem}[The periodic-point law of a stage]\label{thm:vershik-periodic-law}\lean{Obsmetrologia.Odometer.vershikIter_fixed_iff}\leanok\uses{thm:vershik-cycle-full}
+The $m$-fold successor fixes an $L$-level path exactly when $2^L \mid m$.
+Each stage is a single $2^L$-cycle, so every iterate fixes all $2^L$ paths
+or none: the fixed-point count of the $m$-th iterate at stage $L$ is
+$2^L \cdot [2^L \mid m]$ --- the complete periodic-orbit data of the finite
+stages.
+\end{theorem}
+
+\begin{theorem}[The hull has no periodic points]\label{thm:hull-aperiodic}\lean{Obsmetrologia.Odometer.vershikHullIter_ne_self}\leanok\uses{thm:vershik-periodic-law, thm:vershik-tower-endomorphism}
+No positive iterate of the odometer fixes any thread of the Cantor hull: a
+fixed thread would be fixed at every stage, and any stage with $m < 2^n$
+refuses by the periodic-point law. Every finite stage is periodic; the
+inverse limit has empty periodic spectrum --- aperiodicity of the hull
+dynamic as a theorem about the tower's own carrier, with no regime data
+asserted.
+\end{theorem}
+
+\begin{theorem}[The periodicity dichotomy of the tower]\label{thm:tower-periodicity-dichotomy}\lean{Obsmetrologia.Odometer.tower_periodicity_dichotomy}\leanok\uses{thm:vershik-periodic-law, thm:hull-aperiodic}
+The bundle: at every finite stage the fixed-point counts are $2^n$ at
+multiples of $2^n$ and $0$ elsewhere; on the hull all counts vanish. The
+periodic-orbit spectrum of stage $n$ is the single orbit length $2^n$ ---
+the tower sees only the prime $2$ --- and in the limit the spectrum empties.
+\end{theorem}
+
+\begin{theorem}[Each stage is a single orbit]\label{thm:vershik-stage-transitive}\lean{Obsmetrologia.Odometer.vershikIter_reaches}\leanok\uses{thm:vershik-cycle-full}
+Any two paths of the same level are connected by fewer than $2^L$ successor
+steps: the stage orbit is one cycle through all $2^L$ paths, so the stage
+orbit graph has $2^L$ vertices, $2^L$ edges, and one component.
+\end{theorem}
+
+\begin{theorem}[The hull odometer is minimal and aperiodic]\label{thm:vershik-hull-minimal}\lean{Obsmetrologia.Odometer.vershikHull_minimal_aperiodic}\leanok\uses{thm:vershik-stage-transitive, thm:hull-aperiodic, thm:vershik-tower-endomorphism}
+Every orbit of the hull odometer is dense --- for any two threads and any
+stage, some iterate carries the first to agree with the second at that stage
+(every cylinder is visited) --- and no positive iterate has a fixed point.
+The module header's ``canonical minimal Cantor system'' is now a theorem,
+not prose: minimality by \texttt{vershikHull\_orbit\_dense}, aperiodicity by
+\cref{thm:hull-aperiodic}.
+\end{theorem}
+
+\begin{theorem}[The serial chart and the `Fin` avatar]\label{thm:vershik-serial-chart}\lean{Obsmetrologia.Odometer.vershikFinIter_cycle}\leanok\uses{thm:vershik-cycle-full, thm:vershik-stage-transitive}
+The stage orbit is its own coordinate chart: \texttt{ofNat n v} (the $v$-th
+successor step from the minimal path) is a two-sided inverse to the serial
+index \texttt{toNat} (\texttt{toNat\_ofNat}, \texttt{ofNat\_toNat}), with no
+modular arithmetic stated anywhere --- the chart is the dynamics. Conjugating
+gives the successor's $\mathrm{Fin}(2^n)$ avatar \texttt{vershikFin}, whose
+$2^n$-fold iterate is the identity (\texttt{vershikFinIter\_cycle}), by pure
+transport of \cref{thm:vershik-cycle-full}.
+\end{theorem}
+
+\begin{theorem}[The winding exchange]\label{thm:vershik-winding-exchange}\notready\uses{thm:tower-periodicity-dichotomy, thm:vershik-stage-transitive, thm:coordination-h1rank}
+The wrap count $k$ of \texttt{toNat\_vershikIter} is unique
+(\texttt{toNat\_vershikIter\_unique}), so an $m$-step run at stage $n$ has a
+well-defined winding number, and a periodic return spends exactly $m = k
+\cdot 2^n$ steps for $k$ windings. Identify this with the coordination
+cohomology: derive the stage orbit graph's cover-nerve counts ($2^n$
+vertices and edges from \cref{thm:vershik-stage-transitive}, one component
+from transitivity, needing the missing component counter), giving
+$\check H^1 = 1$ --- each stage carries exactly one independent cycle, one
+Landauer bit, and the winding number is the pairing of the run against that
+one $\check H^1$ generator. The open work: a derived component counter for
+orbit graphs, the cover-nerve instance, and the pairing statement.
+\end{theorem}
+
+\begin{theorem}[The Artin--Mazur zeta of the tower]\label{thm:tower-artin-mazur-zeta}\notready\uses{thm:tower-periodicity-dichotomy}
+Assemble the fixed-point counts of \cref{thm:tower-periodicity-dichotomy}
+into the Artin--Mazur zeta $\zeta_n(t) = \exp\bigl(\sum_m
+|\mathrm{Fix}|\, t^m/m\bigr)$ over the library's own rational/formal-series
+stack: stage $n$ has $\zeta_n(t) = (1 - t^{2^n})^{-1}$, rational with all
+inverse zeros of modulus $1$, and the hull has $\zeta = 1$. This is the
+trace-formula exchange in miniature: local periodic-orbit counts against a
+spectral side, the exchange whose archimedean case is the Riemann explicit
+formula and whose finite-field case (Frobenius eigenvalues on $H^1$, weights
+on the critical line) is the proved Riemann hypothesis of Weil--Deligne. The
+open work: a formal-power-series carrier over the Bishop rationals, the
+rationality statement, and the identification of the stage spectra as the
+$2^n$-th roots of unity.
+\end{theorem}
+
+\begin{proposition}[The Bernoulli cylinder law]\label{thm:bernoulli-cylinder-law}\lean{Obsmetrologia.Odometer.bernoulliLaw}\leanok\uses{thm:dyadic-tower}
+A cylinder law assigns each cylinder word a pre-rational mass, with a
+cylinder's mass cross-multiplicatively equal to the sum of its two
+children's and unit mass on the empty word; the laws are stated at the
+\texttt{PreRat} setoid level. The uniform assignment $1/2^n$ per depth-$n$
+cylinder is such a law (\texttt{bernoulliMass\_split}, unit total), and
+each stage distribution is uniform (\texttt{bernoulliMass\_uniform}). The
+quotient-level face is \texttt{bernoulli\_split} /
+\texttt{bernoulli\_total} over the derived rationals.
+\end{proposition}
+
+\begin{theorem}[The odometer preserves the Bernoulli law]\label{thm:bernoulli-vershik-invariant}\lean{Obsmetrologia.Odometer.bernoulliLaw_vershik_invariant}\leanok\uses{thm:bernoulli-cylinder-law, thm:vershik}
+The adic successor carries each cylinder to a cylinder of equal Bernoulli
+mass --- an equality of pre-rationals, by length preservation
+(\texttt{bernoulliMass\_vershik} via \texttt{vershik\_length}) --- so the
+Bernoulli law is invariant under the odometer.
+\end{theorem}
+
+\begin{theorem}[Stage unique ergodicity]\label{thm:odometer-stage-unique-ergodicity}\notready\uses{thm:bernoulli-vershik-invariant, thm:vershik-stage-transitive}
+Each stage is a single $2^n$-cycle (\cref{thm:vershik-stage-transitive}),
+so a vershik-invariant stage distribution is constant along the orbit: the
+uniform stage mass of \cref{thm:bernoulli-cylinder-law} is the only
+invariant one. The open work: the constancy argument over the derived
+rationals, and the inverse-limit statement identifying the Bernoulli law
+as the hull odometer's unique invariant law.
+\end{theorem}

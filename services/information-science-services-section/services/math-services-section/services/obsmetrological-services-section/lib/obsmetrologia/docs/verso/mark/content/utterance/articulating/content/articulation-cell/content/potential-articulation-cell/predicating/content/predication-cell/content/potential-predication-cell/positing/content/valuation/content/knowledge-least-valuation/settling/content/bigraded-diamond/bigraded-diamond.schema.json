@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/content/bigraded-diamond",
+  "title": "bigraded-diamond",
+  "description": "The first math structure below settling: the settled section's underlying Heyting algebra closed under its two commuting nuclei (knowledge and truth), generating at each grade a nuclear quartet and, stacked by the (truth, knowledge) Klein-four, the post-settling diamond tower on which the richer fiber algebras are built.",
+  "type": "object",
+  "required": ["heytingAlgebra", "knowledgeNucleus", "truthNucleus", "nucleiCommute", "grading"],
+  "properties": {
+    "heytingAlgebra": {
+      "const": "heyting-algebra",
+      "description": "the free carrier A: the settled section's underlying Heyting algebra, on which both closures act"
+    },
+    "knowledgeNucleus": {
+      "const": "nucleus",
+      "description": "the knowledge closure j_k on A: a nucleus along the bilattice's knowledge order"
+    },
+    "truthNucleus": {
+      "const": "nucleus",
+      "description": "the truth closure j_t on A: a nucleus along the bilattice's truth order"
+    },
+    "nucleiCommute": {
+      "const": true,
+      "description": "j_k . j_t = j_t . j_k, so the composite is again a nucleus and the two paths A -> A* agree, making the four sub-algebras a commuting square rather than a single fixed point"
+    },
+    "nuclearQuartet": {
+      "$ref": "mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/content/bigraded-diamond/content/nuclear-quartet",
+      "description": "the diamond at each grade: the four canonical fixed-point sub-algebras (A, Fix(j_k), Fix(j_t), A* = Fix(j_k) cap Fix(j_t))"
+    },
+    "grading": {
+      "const": "klein-four",
+      "description": "the (truth, knowledge) Klein-four grading that stacks the nuclear quartets into the diamond tower as the closures are applied at successive grades"
+    }
+  }
+}

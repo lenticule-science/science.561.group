@@ -1,0 +1,389 @@
+\section{The frontier}
+
+\begin{theorem}[Parent-barrier gap holds]
+  \label{thm:collatz-gap-holds}
+  \lean{Obsmetrologia.Closure.Collatz.parentBarrierGap_holds}
+  \notready
+  \uses{thm:collatz-gap, thm:collatz-gap-small-oddcount-slice}
+  \emph{(Open frontier --- stated, not proved.)} The gap property itself: nontrivial parent
+  barriers never represent $C$. Supported by the finite audit
+  \texttt{pnpm run collatz:audit:parent-gap}: through parent-prefix length \(28\)
+  it enumerates \(1{,}166{,}059\) parent barriers, checks \(1{,}166{,}057\)
+  nontrivial cases, and finds zero residue-gap violations, zero positive
+  carry-quotient violations, zero cylinder-realization violations, zero
+  bad-cylinder violations, and zero mismatches between the proved-equivalent
+  faces. This is evidence, not a proof. The residue refinement is the modular gap
+  \(D\cdot r-C>0\) with \(r=C\cdot D^{-1}\bmod M\); Lean constructs the inverse
+  from B\'ezout and proves that this residue inequality is equivalent to the
+  semigroup gap (\cref{thm:collatz-residue-gap},
+  \cref{thm:collatz-residue-gap-reduces}). The two-adic refinement names the
+  exact quotient \((D\cdot r-C)/M\), and proves that positivity of that quotient
+  is the same open frontier (\cref{thm:collatz-two-adic-carry-quotient-positive}).
+  Beyond numerical audit, the gap is now proved unconditionally --- for every
+  barrier of the shape, not merely checked ones --- on the whole
+  $\mathrm{oddCount}\le3$ slice (\cref{thm:collatz-gap-small-oddcount-slice}): the
+  unique two-\(O\) shape \(OOE\) and the two three-\(O\) shapes \(OOEO\), \(OOOE\)
+  all satisfy the gap by direct computation, closed off by the trace-exponent
+  sandwich that pins their length. The general node remains open at
+  $\mathrm{oddCount}\ge4$.
+\end{theorem}
+\begin{theorem}[Parent-barrier residue gap holds]
+  \label{thm:collatz-residue-gap-holds}
+  \lean{Obsmetrologia.Closure.Collatz.parentBarrierResidueGap_holds}
+  \notready
+  \uses{thm:collatz-gap-holds, thm:collatz-residue-gap-reduces}
+  \emph{(Same open frontier, residue form.)} The parent-barrier frontier transported
+  across the proved equivalence \texttt{ParentBarrierGap} \(\leftrightarrow\)
+  \texttt{ParentBarrierResidueGap}. This is the modular inequality statement
+  \(C<D\cdot r\) for every nontrivial parent barrier. It introduces no second
+  hole: its only unproved input is \cref{thm:collatz-gap-holds}.
+\end{theorem}
+\begin{theorem}[Parent-barrier residue carry gap holds]
+  \label{thm:collatz-residue-carry-gap-holds}
+  \lean{Obsmetrologia.Closure.Collatz.parentBarrierResidueCarryGap_holds}
+  \notready
+  \uses{thm:collatz-residue-gap-holds, thm:collatz-residue-gap-carry}
+  \emph{(Same open frontier, carry form.)} The parent-barrier frontier transported
+  across the proved carry equivalence. Under the residue congruence, \(C<D\cdot r\)
+  is the same as \(M\le D\cdot r-C\), with \(M=2^{|p|+1}\); this is the
+  high-\(2\)-adic-digit face of the same red node.
+\end{theorem}
+\begin{theorem}[Every nonterminal seed has a crossing]
+  \label{thm:collatz-crossing-holds}
+  \lean{Obsmetrologia.Closure.Collatz.crossingSweep_holds}
+  \lean{Obsmetrologia.Closure.Collatz.everyNonterminalContracts_below_wide}
+  \notready
+  \uses{thm:collatz-crossing-firstpassage, thm:collatz-parent-one-lock-supplies-stream-frontier}
+  \emph{(Open frontier --- stated, not proved.)} No nonterminal seed runs an infinite
+  coefficient-noncontracting barrier; equivalently every $n>2$ has a finite crossing. This is
+  the ``no positive infinite barrier stream'' content. It is no longer a second
+  Lean \texttt{sorry}; in the one-lock accounting it is absorbed by the named
+  implication \texttt{ParentBarrierOneLockCollapse}. The proved receipt
+  \cref{thm:collatz-parent-one-lock-supplies-stream-frontier} says that the
+  crossing/no-stream condition follows from the parent-barrier gap once that
+  named implication is supplied. The Collatz frontier audit writes this guardrail
+  to \texttt{sites/docs/coverage/collatz-frontier-audit.\{json,md\}}: no hard
+  trust surfaces, plus a checked one-lock proposition/equivalence layer rather
+  than a proved one-lock implication. The finite kernel-checked witness range is
+  also substantially widened: \texttt{everyNonterminalContracts\_below\_wide}
+  proves the exact open-frontier statement
+  ($\exists k,\ \texttt{CoeffContracting}(\mathrm{parityWord}\ n\ k)$, no depth
+  bound in the conclusion) for every $2<n<50{,}000$, a hundredfold widening of
+  the earlier \texttt{everyNonterminalContracts\_below} range ($n<500$). The
+  widening uses a near-linear, tail-recursive \texttt{Bool} verifier
+  (\texttt{crossingBool}/\texttt{crossingSweep}) carrying the running trace
+  coefficients forward one letter at a time instead of recomputing
+  \texttt{parityWord}/\texttt{traceOfWord} from scratch at each candidate depth,
+  proved sound once against the exact \texttt{CoeffContracting} semantics and
+  then decided on the resulting closed \texttt{Bool} computation alone
+  (\texttt{crossingSweep\_holds}, plain kernel \texttt{decide}, no
+  \texttt{native\_decide}). It strictly supersedes the earlier audit in range
+  without touching it; it does not close the open frontier itself.
+\end{theorem}
+\begin{theorem}[Crossing is no positive infinite barrier stream]
+  \label{thm:collatz-crossing-no-infinite-stream}
+  \lean{Obsmetrologia.Closure.Collatz.everyNonterminalHasCrossing_iff_noPositiveInfiniteBarrierStream}
+  \leanok
+  \uses{thm:collatz-crossing-firstpassage}
+  The crossing hypothesis is equivalent, constructively, to the absence of positive infinite
+  coefficient-barrier streams: every nonterminal seed's stream has a finite contracting break.
+  Lean also records the two pointwise directions: a crossing excludes an infinite barrier stream,
+  while failure to reach a first crossing makes every finite prefix noncontracting.
+\end{theorem}
+\begin{theorem}[Crossing reduces to "eventually contracts"]
+  \label{thm:collatz-crossing-reduces}
+  \lean{Obsmetrologia.Closure.Collatz.everyNonterminalContracts_iff_crossing}
+  \leanok
+  \uses{thm:collatz-crossing-no-infinite-stream}
+  A \emph{first} coefficient crossing exists as soon as \emph{any} contracting prefix does: the
+  least contracting length is automatically a first crossing (\texttt{firstCoeffCrossing\_of\_contracting},
+  via a from-scratch well-ordering \texttt{exists\_least} since this core lacks \texttt{Nat.find}).
+  Hence the sharp form \texttt{EveryNonterminalContracts} --- every $n>2$ has \emph{some}
+  contracting parity prefix ($3^{\mathrm{oddCount}}<2^{\mathrm{len}}$) --- is equivalent to
+  \texttt{EveryNonterminalHasCrossing}, dropping the all-prior-noncontracting bookkeeping. The hole
+  is thus exactly the bare statement ``every nonterminal seed eventually contracts.''
+\end{theorem}
+\begin{theorem}[Eventual contraction is no positive infinite barrier stream]
+  \label{thm:collatz-eventual-contracts-no-infinite-stream}
+  \lean{Obsmetrologia.Closure.Collatz.everyNonterminalContracts_iff_noPositiveInfiniteBarrierStream}
+  \leanok
+  \uses{thm:collatz-crossing-reduces, thm:collatz-crossing-no-infinite-stream}
+  The bare eventual-contraction frontier is equivalent to the absence of positive infinite
+  coefficient-barrier streams. This is the dynamical obstruction stripped of first-passage
+  bookkeeping: a proof by residue-tree, inverse-thread, or symbolic-dynamical machinery must
+  prove this statement, not merely rename the crossing hypothesis.
+\end{theorem}
+\begin{theorem}[No-stream is parent-barrier cylinder extraction]
+  \label{thm:collatz-no-stream-parent-cylinder-extraction}
+  \lean{Obsmetrologia.Closure.Collatz.EveryNonterminalHasParentBarrierCylinder}
+  \lean{Obsmetrologia.Closure.Collatz.everyNonterminalHasParentBarrierCylinder_iff_crossing}
+  \lean{Obsmetrologia.Closure.Collatz.everyNonterminalHasParentBarrierCylinder_iff_noPositiveInfiniteBarrierStream}
+  \lean{Obsmetrologia.Closure.Collatz.infiniteBarrierStream_excludes_parentBarrierCylinder}
+  \lean{Obsmetrologia.Closure.Collatz.CylinderAvoidingBarrierStream}
+  \lean{Obsmetrologia.Closure.Collatz.cylinderAvoidingBarrierStream_iff_positive_infiniteBarrierStream}
+  \lean{Obsmetrologia.Closure.Collatz.cylinderAvoidingBarrierStream_iff_infinite_and_no_parentCylinder}
+  \lean{Obsmetrologia.Closure.Collatz.cylinderAvoidingBarrierStream_excludes_noPositiveInfiniteBarrierStream}
+  \lean{Obsmetrologia.Closure.Collatz.noPositiveInfiniteBarrierStream_excludes_cylinderAvoiding}
+  \leanok
+  \uses{thm:collatz-crossing-no-infinite-stream, thm:collatz-firstpassage-iff}
+  The no-stream frontier is exactly finite parent-barrier cylinder extraction:
+  every nonterminal seed has a crossing iff it realizes some first-passage
+  cylinder \(pE\) with \(p\) a parent barrier. Lean also proves the important
+  negative guardrail: a genuine infinite coefficient-barrier stream cannot
+  already realize such a cylinder, because \(pE\) is contracting at its last
+  letter. Thus the next red move is not extraction of a bad cylinder from an
+  infinite stream; it is proving that every positive nonterminal stream reaches
+  a parent-barrier cylinder at all. Lean now names this tightened complement as
+  \texttt{CylinderAvoidingBarrierStream}: it is exactly a positive infinite
+  barrier stream, because parent-cylinder avoidance is forced by infinitude.
+  Such a stream refutes \texttt{NoPositiveInfiniteBarrierStream}; conversely,
+  the no-stream frontier excludes all cylinder-avoiding streams.
+\end{theorem}
+\begin{theorem}[The purl: descent contains the crossing]
+  \label{thm:collatz-purl}
+  \lean{Obsmetrologia.Closure.Collatz.everyNonterminalContracts_of_allFallBelow}
+  \leanok
+  \uses{thm:collatz-descent-iff, thm:collatz-crossing-reduces, thm:collatz-no-stream-parent-cylinder-extraction}
+  The surplus $S=A\cdot n+C-B\cdot n$ is the single gauge: descent $\iff S<0$. Its two faces are
+  the coefficient crossing ($A<B$) and the offset gap ($C<(B-A)\cdot n$). Because $C\ge0$, $S<0$
+  forces $A<B$ (\texttt{contracting\_of\_descent}): a descending step \emph{is} a contracting step.
+  Hence universal descent below self contains the crossing hypothesis
+  (\texttt{everyNonterminalContracts\_of\_allFallBelow}). This explains why crossing appears once
+  descent is known, but it does not remove the crossing input from the forward reduction: before a
+  seed has a first-passage word, \texttt{ParentBarrierGap} has no parent barrier to act on.
+\end{theorem}
+\begin{theorem}[Accelerated Collatz]
+  \label{thm:collatz-accelerated}
+  \notready
+  \uses{thm:collatz-conditional, thm:collatz-gap-holds, thm:collatz-crossing-holds}
+  \emph{(Open frontier --- derived, rests on the two holes.)} Every positive seed reaches the
+  terminal cycle. The derivation from \cref{thm:collatz-conditional} is complete; the node is
+  red because it depends on exactly \cref{thm:collatz-gap-holds} and
+  \cref{thm:collatz-crossing-holds} and nothing else. The semigroup half can now be replaced by
+  the sharper residue inequality via \cref{thm:collatz-residue-conditional}; crossing remains a
+  separate red alias in the live Lean graph. More sharply,
+  \cref{thm:collatz-frontier-inputs-gap-and-one-lock} proves that the whole frontier package is
+  the gap together with the named one-lock implication; after assuming the residue gap,
+  accelerated termination is equivalent to absence of a positive infinite barrier stream
+  (\cref{thm:collatz-residue-exact-obstruction}).
+\end{theorem}
+\begin{theorem}[Residue-frontier accelerated Collatz]
+  \label{thm:collatz-residue-frontier-accelerated}
+  \notready
+  \uses{thm:collatz-residue-gap-holds, thm:collatz-crossing-holds, thm:collatz-residue-conditional}
+  The same headline routed through the modular frontier node:
+  \texttt{parentBarrierResidueGap\_holds} plus the crossing frontier implies
+  accelerated Collatz. This theorem has no new mathematical content beyond
+  \cref{thm:collatz-accelerated}; it makes the visible arithmetic red node the
+  modular inequality \(C<D\cdot r\).
+\end{theorem}
+
+\begin{theorem}[The arithmetic zeta-star finite bridge]
+  \label{thm:arithmetic-zeta-star-finite-bridge}
+  \lean{Obsmetrologia.AperiodicOrder.Tiling.zetaStar_bridge_evidence}
+  \leanok
+  \uses{thm:collatz-affine-trace, thm:finite-displacement-delone, thm:finite-diffraction-mass, thm:salem-pisot-regime-split}
+  The finite zeta-star object is the affine-trace residual read on the finite
+  displacement carrier \(\mathrm{Fin}(N+1)\).  Lean proves that the residual
+  vanishes at every displacement, so its zero-set is the full finite carrier;
+  that zero-set is Delone in the finite displacement sense of
+  \texttt{Diffraction.lean}, has total finite diffraction mass \(N+1\), and its
+  finite pure-point readout is exactly the Pisot side of the existing StepN
+  phase classifier.  The bundled bridge also exposes the Pisot-side finite
+  diffraction readout as a positive pure-point atom and a finite pure-point
+  quasicrystal surrogate.  This is a finite carrier theorem, not an analytic
+  zeta function.
+\end{theorem}
+
+\begin{theorem}[The zeta-star arithmetic settling certificate]
+  \label{thm:zeta-star-arithmetic-settling-certificate}
+  \lean{Obsmetrologia.AperiodicOrder.Tiling.zetaStar_arithmeticSettling_certificate}
+  \leanok
+  \uses{thm:arithmetic-zeta-star-finite-bridge, thm:collatz-saturating-depth, thm:stepn-chu-cayley-hamilton, thm:finite-predictor-phase-type}
+  Lean bundles the finite zeta-star bridge as an arithmetic-settling
+  certificate: affine-trace zeros fill the finite displacement carrier, the
+  affine-trace identity holds at every finite displacement with denominator
+  coefficient \(2^d\), the zero-set is finite-discrete Delone, the total finite
+  diffraction mass is \(N+1\), odd seeds carry the 2-adic shortcut valuation
+  witness, the retained Fibonacci substitution matrix is primitive and
+  satisfies its characteristic polynomial, and the finite Fourier-side readout
+  agrees with
+  \(\texttt{phaseType}\).  This is the strongest statement currently proved that
+  ζ-star is over the corpus's Collatz/2-adic/substitution machinery.
+\end{theorem}
+
+\begin{theorem}[The zeta-star finite mass has Pisot pure-point readout]
+  \label{thm:zeta-star-finite-mass-pure-point}
+  \lean{Obsmetrologia.AperiodicOrder.Tiling.zetaStar_finiteDiffractionMass_purePoint_of_pisot}
+  \leanok
+  \uses{thm:zeta-star-arithmetic-settling-certificate, thm:salem-pisot-regime-split}
+  On the Pisot side of the existing StepN phase classifier, Lean packages
+  \(\mathrm{finiteDiffractionMass}(Z(\zeta^\star))\) as the atom mass of a
+  finite Fourier-side readout whose component is pure point.  The theorem also
+  records that this atom mass is positive and exactly the finite diffraction
+  mass of the zeta-star zero-set.  This is the pure-point
+  statement currently proved by the finite carrier machinery.
+\end{theorem}
+
+\begin{theorem}[There exists a zeta-star with pure-point finite mass]
+  \label{thm:exists-zeta-star-finite-mass-pure-point}
+  \lean{Obsmetrologia.AperiodicOrder.Tiling.exists_zetaStar_finiteDiffractionMass_purePoint}
+  \leanok
+  \uses{thm:zeta-star-finite-mass-pure-point, thm:zeta-star-arithmetic-settling-certificate}
+  For every finite displacement window \(N\), Lean constructs the canonical
+  zeta-star witness and proves the finite form of the pure-point diffraction
+  claim: its finite phase is the consistent face, its finite Fourier-side
+  component is pure-point, and the readout atom is exactly
+  \(\mathrm{finiteDiffractionMass}(Z(\zeta^\star))\) with positive mass.
+\end{theorem}
+
+\begin{theorem}[The zeta-star zero-set is a finite pure-point quasicrystal on the Pisot side]
+  \label{thm:zeta-star-finite-pure-point-quasicrystal}
+  \lean{Obsmetrologia.AperiodicOrder.Tiling.zetaStar_finitePurePointQuasicrystal_of_pisot}
+  \leanok
+  \uses{thm:exists-zeta-star-finite-mass-pure-point, thm:zeta-star-arithmetic-settling-certificate, thm:finite-pure-point-quasicrystal}
+  On the Pisot side, \(Z(\zeta^\star)\) instantiates the finite quasicrystal
+  carrier now defined in \texttt{Diffraction.lean}: its zero-set is
+  finite-displacement Delone, its finite Fourier-side readout is pure-point,
+  and its atom mass is the total finite diffraction mass.  This is the
+  finite surrogate proved for the requested quasicrystal statement.
+\end{theorem}
+
+\begin{theorem}[There exists a finite zeta-star quasicrystal witness]
+  \label{thm:exists-zeta-star-finite-quasicrystal}
+  \lean{Obsmetrologia.AperiodicOrder.Tiling.exists_zetaStar_finitePurePointQuasicrystal}
+  \leanok
+  \uses{thm:zeta-star-arithmetic-settling-certificate, thm:zeta-star-finite-pure-point-quasicrystal}
+  For every finite displacement window \(N\), Lean constructs a concrete
+  zeta-star object: the canonical witness has Collatz seed \(1\) and the Pisot
+  StepN side.  It carries the arithmetic-settling certificate and instantiates
+  the finite pure-point quasicrystal surrogate over \(Z(\zeta^\star)\).  This is
+  the finite existential theorem the corpus currently proves.
+\end{theorem}
+
+\begin{theorem}[The bundled finite Dyson quasicrystal form of zeta-star]
+  \label{thm:zeta-star-finite-dyson-quasicrystal-form}
+  \lean{Obsmetrologia.AperiodicOrder.Tiling.exists_zetaStar_finiteDysonQuasicrystalForm}
+  \leanok
+  \uses{thm:exists-zeta-star-finite-mass-pure-point, thm:exists-zeta-star-finite-quasicrystal, thm:zeta-star-arithmetic-settling-certificate}
+  Lean packages the single finite diffraction statement currently proved:
+  there exists a zeta-star witness whose arithmetic certificate is present,
+  whose zero-set is Delone on the finite displacement carrier, whose finite
+  diffraction mass is \(N+1\), whose phase lies in the bigraded trichotomy and
+  is the consistent face, whose finite Fourier-side readout is pure-point with
+  positive atom mass exactly equal to \(\mathrm{finiteDiffractionMass}
+  (Z(\zeta^\star))\), and whose zero-set inhabits the finite pure-point
+  quasicrystal carrier.
+\end{theorem}
+
+\begin{theorem}[The zeta-star coalgebraic promotion apparatus]
+  \label{thm:zeta-star-coalgebraic-promotion-apparatus}
+  \lean{Obsmetrologia.AperiodicOrder.Tiling.zetaStar_coalgebraicPromotion_apparatus}
+  \leanok
+  \uses{thm:zeta-star-finite-dyson-quasicrystal-form, thm:metallic-power-dichotomy, thm:coalgebra-dual-of-algebra, thm:finite-scott-continuous, thm:coalgebraic-crossbase-mld}
+  Lean packages the finite zeta-star form together with the existing
+  coalgebraic machinery: the metallization dichotomy supplies the
+  finite-algebra/limit-coalgebra boundary, finite directed joins are attained,
+  finite charge closures are Scott-continuous, settling already has the
+  algebra/coalgebra duality package, and up-to-closure coinduction classifies
+  geometric MLD by settled equality.  This is the current internal apparatus
+  for the analytic promotion; it does not yet instantiate the zeta-star
+  displacement coalgebra.
+\end{theorem}
+
+\begin{theorem}[The zeta-star algebra/coalgebra boundary]
+  \label{thm:zeta-star-algebra-coalgebra-boundary}
+  \lean{Obsmetrologia.AperiodicOrder.Tiling.zetaStar_algebraCoalgebraBoundary}
+  \leanok
+  \uses{thm:zeta-star-coalgebraic-promotion-apparatus, thm:metallic-power-dichotomy}
+  Lean records the reframe explicitly: the finite displacement windows carry
+  the zeta-star finite Dyson form, the already-proved metallization dichotomy is
+  the finite algebra versus limit coalgebra boundary, and the Scott/coinductive
+  apparatus is the analytic side.  This proves the ``finite = algebra,
+  analytic = coalgebra'' correspondence so far; the remaining red work is to build the actual
+  zeta-star displacement coalgebra and prove its diffraction theorem.
+\end{theorem}
+
+\begin{theorem}[The finite observed zeta-star displacement coalgebra]
+  \label{thm:zeta-star-finite-observed-displacement-coalgebra}
+  \lean{Obsmetrologia.AperiodicOrder.Tiling.canonicalZetaStarDisplacementCoalgebra_quasicrystal}
+  \leanok
+  \uses{thm:zeta-star-finite-dyson-quasicrystal-form, thm:zeta-star-algebra-coalgebra-boundary}
+  Lean constructs the finite observed displacement coalgebra proved so far:
+  its state carrier is the finite zeta-star state space, its observation is the
+  tuple consisting of zero-set, finite diffraction mass, finite component, and
+  phase readout, and its finite unfold step preserves that observation.  At the
+  canonical seed, this coalgebra carries the finite pure-point quasicrystal
+  witness.  This is still the idempotent finite carrier, not the analytic
+  displacement coalgebra.
+\end{theorem}
+
+\begin{theorem}[The zeta-star analytic-richness recovery interface]
+  \label{thm:zeta-star-analytic-richness-recovery}
+  \lean{Obsmetrologia.AperiodicOrder.Tiling.zetaStar_analyticRichnessRecovery}
+  \leanok
+  \uses{thm:zeta-star-finite-observed-displacement-coalgebra, thm:observed-upto-closure-coinduction}
+  Lean identifies why the coalgebraic bridge was losing analytic content: the
+  bare settled-value kernel classified MLD but did not carry an observation.
+  The recovered interface uses observed up-to-closure coinduction, so any
+  diffraction, phase, spectral, or mass readout that is proved compatible with
+  closure is preserved by the coalgebra.  It now includes the finite observed
+  zeta-star displacement coalgebra as the carrier constructed so far.  The remaining
+  zeta-star gap is the non-idempotent analytic displacement coalgebra and the
+  observed-closure compatibility of its diffraction observation, not an unnamed
+  analytic fog.
+\end{theorem}
+
+\begin{theorem}[There exists a finite zeta-star arithmetic witness with odd shortcut]
+  \label{thm:exists-zeta-star-arithmetic-odd-shortcut}
+  \lean{Obsmetrologia.AperiodicOrder.Tiling.exists_zetaStar_arithmeticSettling_with_odd_shortcut}
+  \leanok
+  \uses{thm:zeta-star-analytic-richness-recovery, thm:zeta-star-arithmetic-settling-certificate}
+  The canonical finite witness can be read with all currently proved arithmetic
+  facts visible at once: seed \(1\), Pisot StepN phase, the arithmetic
+  settling certificate, the finite pure-point quasicrystal surrogate, and the
+  explicit odd-seed 2-adic shortcut valuation for \(3\cdot\texttt{seed}+1\).
+  This sharpens the finite existential bridge; it is still not the analytic
+  Delone or Dyson/RH theorem.
+\end{theorem}
+
+\begin{theorem}[The zeta-star finite readout agrees with phaseType]
+  \label{thm:zeta-star-finite-phase-type}
+  \lean{Obsmetrologia.AperiodicOrder.Tiling.zetaStar_phaseType_readout}
+  \leanok
+  \uses{thm:exists-zeta-star-arithmetic-odd-shortcut, thm:zeta-star-finite-pure-point-quasicrystal, thm:zeta-star-arithmetic-settling-certificate, thm:zeta-star-finite-mass-pure-point, thm:finite-predictor-phase-type}
+  The finite Fourier-side readout of \(Z(\zeta^\star)\) lands in the corpus's
+  existing finite predictor-level \(\texttt{phaseType}\) map: applying
+  \(\texttt{lebesgueType}\) to the zeta-star readout component gives exactly
+  \(\texttt{zetaStarPhaseType}\).  Lean also proves the companion equivalence
+  \(\texttt{zetaStar\_readout\_purePoint\_iff\_phaseType\_consistent}\):
+  finite pure-point readout is the same as the consistent/Pisot phase.  The
+  certificate also records the zeta-star phase's entry into the corpus's
+  bigraded trichotomy.
+\end{theorem}
+
+\begin{theorem}[The zeta-star zero-set is analytically Delone]
+  \label{thm:zeta-star-analytic-delone}
+  \notready
+  \uses{thm:zeta-star-coalgebraic-promotion-apparatus, thm:arithmetic-zeta-star-finite-bridge, thm:zeta-star-finite-pure-point-quasicrystal, thm:zeta-star-finite-phase-type}
+  \emph{(Open coalgebraic/Scott frontier --- stated, not formalized.)} Promote
+  the finite zero-set approximants of \(\zeta^\star\) from the algebraic carrier
+  \(\mathrm{Fin}(N+1)\) to the directed-join displacement coalgebra, then prove
+  the Delone conditions there.  This is the dual fixpoint problem: the finite
+  side is the initial-algebra approximation, while the analytic side is the
+  final-coalgebra/Scott limit.  The current Lean theorem supplies only the
+  finite-discrete Delone surrogate and its bundled finite diffraction form.
+\end{theorem}
+
+\begin{theorem}[Dyson/RH as pure-point diffraction of \(Z(\zeta^\star)\)]
+  \label{thm:zeta-star-rh-pure-point}
+  \notready
+  \uses{thm:zeta-star-analytic-delone, thm:zeta-star-finite-phase-type, thm:salem-color-line-fourier-atom}
+  \emph{(Open coalgebraic/Scott frontier --- stated, not formalized.)} The
+  intended RH form is that the diffraction measure of the coalgebraic
+  directed-join zero-set \(Z(\zeta^\star)\) is pure point in the corpus's
+  quasicrystal sense.  The finite bridge shows where the statement attaches to
+  Collatz affine traces, finite diffraction mass, and the Pisot/Salem phase
+  readout; the missing step is the Scott-continuous promotion from finite
+  approximants to the final-coalgebra displacement object.
+\end{theorem}

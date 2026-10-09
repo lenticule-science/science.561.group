@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/predication-cell-set",
+  "title": "predication-cell-set",
+  "description": "The set Phi := E x Pi x E, the Cartesian product of an entity set, a predicate set, and the entity set; its elements are the predication cells at which predication valuations assign values.",
+  "type": "object",
+  "required": ["entitySet", "predicateSet", "elements"],
+  "properties": {
+    "entitySet": { "const": "set", "description": "the entity set E, supplying both the subject and object factors" },
+    "predicateSet": { "const": "set", "description": "the predicate set Pi, the middle factor" },
+    "elements": {
+      "type": "array",
+      "description": "the predication cells of Phi = E x Pi x E, each an ordered triple (subject, predicate, object)",
+      "items": { "$ref": "mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell" }
+    },
+    "cartesianProduct": { "const": true, "description": "Phi = E x Pi x E: every element is a triple of an entity, a predicate, and an entity" }
+  }
+}

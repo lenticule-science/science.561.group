@@ -1,0 +1,23 @@
+\subsection{Truth-order quantifiers}
+
+\begin{proposition}[Truth-order list join and meet]\label{thm:charge-joinTList}\lean{Obsmetrologia.Reading.joinTList}\leanok\uses{thm:four-bilattice, thm:settling}
+The truth-join \texttt{joinTList} folds $\vee_t$ with unit $f$, while the
+truth-meet folds $\wedge_t$ with unit $t$. Truth-order fiber aggregation
+therefore uses the truth poles rather than the knowledge poles.
+\end{proposition}
+
+\begin{proposition}[Truth-order valuation order and quantifiers]\label{thm:existsT}\lean{Obsmetrologia.Valuation.existsT}\leanok\uses{thm:valuation, thm:finiteFibration, thm:charge-joinTList}
+Reading valuations pointwise in $\le_t$, the truth-order existential is the
+fiber truth-join and the truth-order universal is the fiber truth-meet.
+\end{proposition}
+
+\begin{theorem}[Truth-order existential adjunction]\label{thm:existsT-adjunction}\lean{Obsmetrologia.Valuation.existsT_adjunction}\leanok\uses{thm:existsT, thm:reindex, thm:tle}
+The truth-order existential is left adjoint to reindexing:
+$\exists^t_f \dashv f^*$.
+\end{theorem}
+
+\begin{theorem}[Truth-order universal adjunction]\label{thm:forallT-adjunction}\lean{Obsmetrologia.Valuation.forallT_adjunction}\leanok\uses{thm:existsT, thm:reindex, thm:tle}
+Reindexing is left adjoint to the truth-order universal:
+$f^* \dashv \forall^t_f$. Together with the previous theorem, this gives the
+truth-order adjoint triple.
+\end{theorem}

@@ -1,0 +1,29 @@
+---
+kind: morphism
+type: morphism
+symbol: "\\phi"
+depends-on: [spatiotemporal-knowledge-presheaf, residuated-lattice, entity-set, predicate-category, settling-bound, predication-fiber-algebra, bilattice-homomorphism, knowledge-order]
+---
+
+# Spatiotemporal knowledge presheaf morphism
+
+Let $v, v'$ be [spatiotemporal knowledge presheaves](../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../content/text/glossary/terms/spatiotemporal-knowledge-presheaf.md) over $(\mathbf{L}, \mathcal{C}, E, \lambda)$ and $(\mathbf{L}', \mathcal{C}', E', \lambda')$ respectively. A **knowledge-presheaf morphism** $\phi : v \to v'$ is the cross-base notion: it consists of
+
+1. A homomorphism $\ell : \mathbf{L} \to \mathbf{L}'$ of integral commutative [residuated lattices](../objects/residuated-lattice.md).
+2. A function $e : E \to E'$ between [entity sets](../objects/entity-set.md).
+3. A functor $\pi : \mathcal{C} \to \mathcal{C}'$ between [predicate categories](../objects/predicate-category.md), preserving generator classes.
+4. An order-preserving map $\phi_\lambda : \lambda \to \lambda'$ between [settling bounds](../objects/settling-bound.md).
+5. A family $\phi = (\phi_{p, \tau})$ of [bilattice homomorphisms](bilattice-homomorphism.md) $\phi_{p, \tau} : A_p \to A_{\pi(p)}'$ on the [predication fiber algebras](../objects/predication-fiber-algebra.md), each induced by $\ell^\bowtie$ and $e \times e$, such that
+$$\phi_{p, \tau}(v_\tau(p)) \leq_k v'_{\phi_\lambda(\tau)}(\pi(p))$$
+for all $p, \tau$, where $\leq_k$ is the [knowledge order](../concepts/knowledge-order.md).
+
+The cross-base data $(\ell, e, \pi, \phi_\lambda)$ is the morphism in the [parameter base category](../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../philosophy-services-section/services/logic-services-section/content/text/documents/articles/notes/undated/parameter-base-category.md) $\mathbf{B}$; the bilattice-hom family $(\phi_{p, \tau})$ is the cellwise lift to fiber algebras. Knowledge-presheaf morphisms are the 1-cells of the total category over $\mathbf{B}$.
+
+## Two other morphism notions
+
+Two same-base notions on knowledge presheaves carry different structure and have their own files:
+
+- The [knowledge-presheaf preorder morphism](knowledge-presheaf-preorder-morphism.md) is the same-base $\leq_k$-preorder relation: $v \to v'$ exists iff $v \leq_k v'$ pointwise. This is the morphism class of the [knowledge-presheaf category](../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/notes/undated/knowledge-presheaf-category.md) and underwrites $\leq_k$-completeness theorems.
+- The [settling-morphism](settling-morphism.md) is the same-base strict notion: state *equality* with ordinal shift $\delta$, plus [settling endofunctor](settling-endofunctor.md) commutation. This underwrites [mutually-locally-derivable](../concepts/mutually-locally-derivable.md) equivalence and the [aperiodic-regime classification theorem](../../../../../../aperiodic-settling/references/aperiodic-regime-classification.md).
+
+Knowledge-presheaf morphisms (this file), knowledge-presheaf preorder morphisms, and settling-morphisms are three genuinely different mathematical objects. See [equivalence hierarchy](../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../philosophy-services-section/services/logic-services-section/content/text/documents/articles/notes/undated/equivalence-hierarchy.md) for how they assemble at the moduli level.
