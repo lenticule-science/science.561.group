@@ -26,7 +26,8 @@
   },
   "receivingTests": [
     "test/metroplat-root.test.mjs",
-    "test/metroplat-receiving.test.mjs"
+    "test/metroplat-receiving.test.mjs",
+    "test/oauth-grant-profile.test.mjs"
   ],
   "exports": {
     "./site": "./src/site.mjs",
