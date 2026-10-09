@@ -20,15 +20,17 @@ projects in `lib/formalization/infomaterial/` and `lib/formalization/relmath/`.
 They are mathematical research carriers, separate from the proof-assistant
 tooling that checks them.
 
-Earlier work attempted a dedicated-repository / gitlink formation for
-Obsmetrologia, but that is no longer the current source topology. The proof tree
-is tracked directly in the `bare-cedar-fog` monorepo under this Services
-Section; `lib/obsmetrologia` is an ordinary Git tree, not a mode-160000
-gitlink. Commit `3b122bf9a5638b1a13351dc2993b87ddb2dd7beb` records the
-ownership correction: proof changes use package-scoped staging against the
-monorepo's `main`, preserving this section's custody without inventing a
-standalone-repository boundary. Historical dedicated-repository/gitlink records
-remain provenance, not current operating topology.
+The Lean library has its own canonical carrier: the repository
+`emsenn/obsmetrologia`, which is the sole Git owner of the Lean source. This
+section consumes it as the Git submodule `lib/obsmetrologia`, pinned by
+`lenticule-science/obsmetrological-services-section`; a service repository must
+not vendor or independently commit copies of the proof tree. A transfer of the
+carrier to `lenticule-science/obsmetrologia` is proposed in
+`emsenn/obsmetrologia` issue #29 and has not happened. The `lib/obsmetrologia`
+tree in this monorepo is a vendored copy being carried into the owner; it is
+not the current source of truth, and proof changes land in
+`emsenn/obsmetrologia`. The earlier monorepo-ownership correction (commit
+`3b122bf9a5638b1a13351dc2993b87ddb2dd7beb`) is superseded by this topology.
 
 No absence of an application from Obsmetrologia makes the application invalid.
 Program-logic carriers that extend Obsmetrologia's own grammar live in the
@@ -86,8 +88,11 @@ the theorem-facts trace under `data/state/`.
 
 - **Over:** Lenticule Science (lab of the 561 Group).
 - **Intended role:** Sovereign State Enterprise.
-- **Current repository status:** tracked directly in the
-  `emsenn/bare-cedar-fog` monorepo under this section; `lib/obsmetrologia`
-  is an ordinary Git tree, not a gitlink. Package-scoped proof commits preserve
-  the section boundary while landing on monorepo `main`.
+- **Current repository status:** the Lean library is carried by
+  `emsenn/obsmetrologia` (canonical, sole Git owner of the Lean source) and
+  pinned here as the submodule `lib/obsmetrologia` by
+  `lenticule-science/obsmetrological-services-section`. A transfer to
+  `lenticule-science/obsmetrologia` is proposed (`emsenn/obsmetrologia`
+  issue #29), not done. The copy of `lib/obsmetrologia` in this monorepo is
+  vendored and not authoritative.
 - **Holds:** the Obsmetrologia library and the proof line that extends it.
