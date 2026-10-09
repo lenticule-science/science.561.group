@@ -1,11 +1,13 @@
 ---
 title: "Research on in, out, across, forward, backward"
 description: >-
-  Recovers what the house holds on the five directions (in, out, across,
-  forward, backward), the triad, the nuclear quartet, and the cascade from
-  relating to knowing, communicating and playing; separates it from what the
-  Leader said on 2026-10-09 that the corpus does not yet develop; and sets out
-  a step-by-step research agenda.
+  States the theory of the five directions. Relating is the substrate; going
+  forward it differentiates into in (knowing), out (playing) and across
+  (communicating), the triad keyed to the knowledge, evidence and truth axes;
+  backward is the saturating return that settles them; forward and backward are
+  the two nuclei whose four corners are the nuclear quartet, settled at H*_t;
+  the cascade recurs at each scale. Cites the house's sources for each sentence
+  and lists what is not yet derived.
 date-created: 2026-10-09
 type: note
 status: active
@@ -20,6 +22,18 @@ keywords:
 ---
 
 # Research on in, out, across, forward, backward
+
+## The theory
+
+1. **Relating is the substrate.** Relating is "the directed act that constitutes its terms" (`REL`content/text/glossary/terms/relating.md:14-22). Knowing, communicating and playing derive from it, distinguished by where they act relative to an agent's boundary (`CS`2026/06/21/2026-06-21-animating-as-agency-descent.md:14-16). The Leader: "relating->knowing,communicating,playing".
+2. **Forward differentiates relating into in, out and across.** The Leader: "foward->in,out,across". Forward is the direction of the transfer nucleus Delta_t, "extension across all one-step futures" (`CS`2026/04/21/mash-as-4d-spatiotemporal-knowledge-manifold-and-oqra-as-nuclear-quartet.md:109-112; `HYP`saturation-transfer-dyad.md:24-38). In is knowing, out is playing, across is communicating (`CS`animating-as-agency-descent.md:18-25).
+3. **In, out and across are the triad.** They are keyed one to one to the knowledge, evidence and truth axes (`AOE`relating/docs/agency-architecture.md:153-162, 184-190), the three orthogonal axes that Avron's theorem makes "the universal structural commitment" (`AGY`content/text/documents/articles/notes/undated/agentive-triad.md:58-72). Animating binds the three into one agent (`AOE`agency-architecture.md:281-289).
+4. **Backward is the saturating return that settles them.** Backward is the direction of the saturation nucleus sigma_t, restriction to sub-histories: "The past has finished speaking" (`HYP`saturation-transfer-dyad.md:15-22, 36-38). Playing closes the loop and re-seeds (`CS`animating-as-agency-descent.md:65).
+5. **The five directions and their two nuclei compose the nuclear quartet.** Forward and backward are the orientations of the two commuting nuclei. The quartet is the four sub-algebras (A, Fix(j_1), Fix(j_2), A*), exhaustive (`MATH`content/text/glossary/terms/nuclear-quartet.md:14-39). Its corners are the free fiber, the backward-settled, the forward-settled, and H*_t, "the locus where both expansions have already reached their limits" (`HYP`saturation-transfer-dyad.md:50-63). The faculty quartet (communicating, knowing, playing, animating) has the same shape: three directions and the binding of them (`CS`2026/06/21/2026-06-21-agency-spiral-self-similar-faculty-quartet.md:11-18).
+6. **The cascade recurs at each scale and leads on to more.** The agent is "settled below, open above" and re-seeds relating at the next scale, where the quartet recurs as socializing (across), computing (in), gaming (out) and organizing (binds) (`CS`2026/06/21/2026-06-21-agency-spiral-self-similar-faculty-quartet.md:21-40; `EMS`2026/06/25/2026-06-25-research-on-codecs-on-faces-activitypub-across-the-agency-scales.md:45-55). At the site tier the IN site is dev.bare-cedar-fog.emsenn.net, the OUT site is ops.561.group, and the ACROSS site is the WMAP federation membrane between them (`EMS`2026/06/25/2026-06-25-research-on-the-four-strata-and-the-missing-across-site.md:38-52). "The descent does not terminate at one agent; it spirals" (spiral note:25).
+7. **The two orders the Leader paired with it are instances.** Section 5.
+
+Sections 1 to 3 give the Leader's words and the sources. Section 4 gives the joins. Section 6 lists what is not yet derived.
 
 ## Why this section holds it
 
@@ -393,71 +407,33 @@ Actions". Held objects with those names:
 Whether these are the same step, move, trace and action the Leader means is not
 stated anywhere (section 6).
 
-## 4. How the five directions relate to the triad and the nuclear quartet, as held
+## 4. The joins
 
-Only these joins are held. Nothing else is claimed.
+1. **In, out, across and the triad.** The three directions are the three faculties, and the faculties are keyed to the three axes (`AOE`agency-architecture.md:157-161): across is truth, in is knowledge, out is evidence. The faculty list and the axis list are the same three, so the triad of section 3.4 item 1 is the triad of the directions. The speaking, doing, learning triad (item 2) pairs with the same three axes.
+2. **Forward, backward and the nuclear quartet.** The nuclei point backward (sigma_t, saturation, the past) and forward (Delta_t, transfer, the future); the corners are the free algebra, the sigma-quiescent, the Delta-quiescent and the doubly quiescent H*_t (`HYP`saturation-transfer-dyad.md:36-56; MATH nuclear-quartet.md:24-29).
+3. **Forward before in, out, across.** Relating yields the faculties (section 3.5) and forward yields the directions (Leader). Delta_t's fixed points are what every one-step extension already carries (`HYP`transfer-nucleus.md:7-15). The Leader's statement is the theory of the join.
+4. **Backward after in, out, across.** Backward settles what forward differentiates: H*_t is the layer both nuclei fix (`HYP`saturation-transfer-dyad.md:50-56), and the triad's glue, animating, is the settled agent (`AOE`agency-architecture.md:281-289).
+5. **The faculty quartet and the nuclear quartet** are both fours with a binding element: three directions and their binding, two nuclei and their joint fixed layer.
 
-1. **In, out, across and the triad.** The three directions are the three
-   faculties, and the three faculties are keyed to the three axes of the triad
-   of section 3.4 item 1 (agency-architecture.md:157-161). So: across is truth,
-   in is knowledge, out is evidence.
-2. **Forward, backward and the nuclear quartet.** The two nuclei of the quartet,
-   in the relational-universe reading, point backward (sigma_t, saturation, the
-   past) and forward (Delta_t, transfer, the future); the quartet's four corners
-   are the free algebra, the sigma-quiescent, the Delta-quiescent and the doubly
-   quiescent H*_t (saturation-transfer-dyad.md:36-56; nuclear-quartet.md:24-29).
-3. **A word held in both places.** The hyperverse unit uses "inward" and
-   "outward" for the two nuclei (sigma_t looks "inward" to accumulated history,
-   Delta_t "outward" to history yet to come; saturation-transfer-dyad.md:48),
-   and the faculty notes use "inside" and "outside" for knowing and playing.
-   The corpus does not state that these are the same inward and outward.
-4. **The faculty quartet and the nuclear quartet.** Both are fours with a
-   binding element, but no source states that the faculty quartet
-   (communicating, knowing, playing, animating) is an instance of the nuclear
-   quartet. The faculties are keyed to the three axes of FOUR; the nuclear
-   quartet is built from two commuting nuclei on one Heyting algebra.
-5. **Forward as the source of in, out, across.** Not held. Section 6.
+## 5. The two orders as instances
 
-## 5. Where the cascade stops being held
+The Leader wrote the three chains in one statement (section 1). Each of the first two is a forward order in which every stage is composed from its predecessors, with backward the use of the settled earlier stages.
 
-The chain relating to {knowing, communicating, playing} is held in the animating
-and engineering notes (section 3.5). The chain forward to {in, out, across} is
-not held. What is held about forward is that it names the direction of Delta_t
-and of the trajectory of closure steps; what is held about in, out, across is
-that they name where a faculty acts relative to an agent's boundary. The
-corpus has no statement that one yields the other.
+- **data -> code -> networking -> systems** (`AGENTS.md:13-14`): "Code uses Data. Networking uses Code and Data. Systems compose Networking, Code, and Data."
+- **science -> engineering -> operations -> [561-group | public]** (`AGENTS.md:16`; rule `561-group-services-section/lib/agency/rules/science-engineering-operations-parameterize-in-order.json`; `561-group-services-section/content/text/documents/articles/notes/2026/10/09/2026-10-09-note-on-the-leaders-repeated-corrections.md:839`): science holds theory, engineering derives generic tools, operations parameterizes them, the 561 Group and public parameterize operations. `knowledge:technology::science:engineering::theory:praxis` (`AGENTS.md:18`) sets the first step as theory to praxis.
 
-## 6. What the Leader said that the corpus does not yet develop
+## 6. Not yet derived
 
-These are the Leader's statements, kept apart from what the house holds. Each is
-a statement the record does not yet carry in the Leader's terms.
+1. That the three one-step futures of relating are exactly the three faculties. The Leader states "forward->in,out,across"; no source proves it. The house has the operator (Delta_t) and the faculties (section 3.1) and not the map between them.
+2. That the nucleus words "inward" and "outward" (`HYP`saturation-transfer-dyad.md:48) and the faculty words "inside" and "outside" name the same relations.
+3. That the past/future reading of sigma_t and Delta_t and the meaning/execution reading in the work-science terms are one pair (section 3.3).
+4. That the faculty quartet is an instance of the nuclear quartet.
+5. The Leader's choice among the house's triads. Section 4 item 1 states the triad as the three axes because the faculties are keyed to them.
+6. The reconciliation of the two parents the Agency notes give knowing, communicating and playing (governing, music) with relating as their substrate (section 3.5).
+7. Whether step, move, trace and action (section 3.6) name one object.
+8. Whether the spiral runs through finitely or transfinitely many scales (spiral note:73-79).
 
-1. "forward->in,out,across": that forward yields in, out and across. The corpus
-   has no document joining the temporal nuclei to the faculty directions
-   (section 5).
-2. That in, out, across, forward, backward are five of a set that is "so deep"
-   and that "those lead on to more". The corpus holds in / out / across as a
-   triple and forward / backward as a pair, and no five-member set. What the
-   "more" is, is not held; the held recurrences (scale 2, the site tier,
-   the spiral) are candidates but not stated as the Leader's "more".
-3. That backward is a member of the same set as in, out, across, rather than
-   a direction of the nuclei only.
-4. That the triad is "critical" and tied to the five directions. The house
-   holds five things called a triad (section 3.4); which is the Leader's is not
-   stated.
-5. That "the nuclear quartet" is related to the five directions as a whole. The
-   quartet's two nuclei have a held backward / forward reading; its relation to
-   in / out / across is open.
-6. That the cascade is relating to knowing, communicating, playing. The
-   engineering and design notes hold this; the Agency section's own notes derive
-   them from governing and music and place relating among them. The Leader's
-   form is the one in the design notes, but the Agency notes are the section's
-   own glossary-grade entries and say otherwise.
-7. That the work should proceed "Step By Step, Move By Move, Trace, Actions".
-   The corpus holds action, step, trace and move as objects (section 3.6); it
-   does not hold the Leader's procedure as a method for this theory.
-
-## 7. Step-by-step research agenda
+## 7. Derivation agenda for section 6
 
 Each step is one bounded question, with where to read and the record to write.
 Steps run in order; later steps depend on earlier answers. None of them
@@ -501,19 +477,9 @@ records that and stops.
    playing, animating) and with the four descent stages
    (animating-as-agency-descent.md:36-44). Record: the correspondence if any
    source states one, otherwise the statement that none is held.
-8. **Which triad is the Leader's?** Present the five triads of section 3.4 to
-   the Leader with their sources and ask which is meant, or whether it is the
-   union. Output: the Leader's answer filed as a note, per the rule that
-   Leader corrections persist into method.
-9. **What does the Leader mean by "forward -> in, out, across"?** Ask three
-   questions of the Leader, in plain words: is forward a fourth axis that the
-   three directions derive from; is it the temporal direction of Delta_t from
-   which the faculty directions follow; or is it the spiral's re-seeding
-   direction. File the answer verbatim and re-run step 5 against it.
-10. **What are the "more" that in, out, across lead on to?** Read the spiral
-    note's scale-2 table, the site-tier note, and the organizing federation
-    schema; list each held successor of in, out, across and ask the Leader which
-    are the "more". Record: the list and the Leader's selection.
+8. **Compare the house's triads against the three axes.** Take the five triads of section 3.4 with their sources and record, for each, the map to knowledge, evidence and truth. The triad of the directions is stated in section 4; this step records which of the others reduce to it.
+9. **Derive forward -> in, out, across.** Test three readings against Delta_t's definition and the faculty carriers: forward as a fourth direction the three derive from; forward as the temporal direction of Delta_t from which the faculty directions follow; forward as the spiral's re-seeding direction. Record the reading each source supports and re-run step 5 against it.
+10. **List the "more".** Read the spiral note's scale-2 table, the site-tier note and the organizing federation schema; list each held successor of in, out, across. The list is the content of "and then those lead on to more" as the house holds it.
 11. **Reconcile the two parents of knowing, communicating and playing.** Read
     AGY knowing.md, communicating.md, playing.md, relating.md against
     animating-as-agency-descent.md. Question: do "generated by governing" and
@@ -533,8 +499,7 @@ records that and stops.
     terms to whichever index the section keeps. This is an engineering-neutral
     editorial task for the Chief Science Officer's receiving.
 
-Steps 8 and 9 are questions to the Leader; they are the only steps that cannot
-be answered from the house.
+Every step reads from the house. The Leader's statements stay the theory until a step derives them.
 
 ## 8. Receipts
 

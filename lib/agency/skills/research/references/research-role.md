@@ -109,7 +109,7 @@ bibliography record-references <record> --write
 
 ## Duties, prohibitions, privileges
 
-The frontmatter encodes the role's normative profile by pointing at named entities, not by stating the rules in prose. Each [duty](../../../../library/domains/humanities/domains/sociology/domains/work/domains/governance/terms/duty.md), [prohibition](../../../services/information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/prohibition.md), and [privilege](../../../../library/domains/humanities/domains/sociology/domains/work/domains/governance/terms/privilege.md) is a slug that resolves to its own definition; the role file does not restate them. The intent is that an agent reading this file follows the slugs to learn what each obligation entails, rather than reading a bespoke summary that drifts from the canonical source.
+The frontmatter encodes the role's normative profile by pointing at named entities, not by stating the rules in prose. Each [duty](../../../../../../library/domains/humanities/domains/sociology/domains/work/domains/governance/terms/duty.md), [prohibition](../../../../../services/information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/prohibition.md), and [privilege](../../../../../../library/domains/humanities/domains/sociology/domains/work/domains/governance/terms/privilege.md) is a slug that resolves to its own definition; the role file does not restate them. The intent is that an agent reading this file follows the slugs to learn what each obligation entails, rather than reading a bespoke summary that drifts from the canonical source.
 
 ## Distinction from adjacent roles
 
@@ -119,7 +119,7 @@ The research role differs from an *analyst* role in what it produces: the analys
 
 ## See Also
 
-- [research](../../../../library/domains/science/terms/research.md) — the practice the role enacts
-- [researcher](../../../../public-services-section/services/personal-services-section/services/emsenn-services-section/content/text/glossary/terms/emsenn-archive-org/researcher.md) — the canonical filling
-- [office](../../../../library/domains/humanities/domains/sociology/domains/work/domains/governance/terms/office.md) — the institutional position the role attaches to
-- [role](../../../../library/domains/humanities/domains/sociology/domains/work/terms/role.md) — the general concept of an agent role
+- [research](../../../../../../library/domains/science/terms/research.md) — the practice the role enacts
+- [researcher](../../../../../../public-services-section/services/personal-services-section/services/emsenn-services-section/content/text/glossary/terms/emsenn-archive-org/researcher.md) — the canonical filling
+- [office](../../../../../../library/domains/humanities/domains/sociology/domains/work/domains/governance/terms/office.md) — the institutional position the role attaches to
+- [role](../../../../../../library/domains/humanities/domains/sociology/domains/work/terms/role.md) — the general concept of an agent role

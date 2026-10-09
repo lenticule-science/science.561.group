@@ -1,0 +1,141 @@
+{
+  "id": "adderall-microdosing-2-5-and-5-mg-international-research",
+  "name": "Lenticule Science researches adderall microdosing at 2.5 mg and 5 mg, internationally",
+  "kind": "requirement",
+  "raised-by": "emsenn",
+  "asks": "we need lenticule science to research adderall microdosing\n\nlet's look for more research, international research, etc. we are curious about 2.5mg and 5mg specifically\n\nMake our research engineering and operations better so you can do research more methodically according to our best methods",
+  "met-when": [
+    {
+      "cell": "adderall-microdosing:both-doses-framed",
+      "target": "held",
+      "command": "sh -c 'jq -e '\\''.frame.exposure|test(\"2.5 mg\") and test(\"5 mg\")'\\'' lib/emsenn/services/561-group/services/science-services-section/services/natural-science-services-section/services/biological-science-services-section/services/medical-science-services-section/services/pharmacology-services-section/data/records/2026-10-07-low-dose-amphetamine-literature.json && grep -q \"^### What this means for 2.5 and 5 mg Adderall\" lib/emsenn/services/561-group/services/science-services-section/services/natural-science-services-section/services/biological-science-services-section/services/medical-science-services-section/services/pharmacology-services-section/content/text/documents/articles/notes/amphetamine-microdosing.md'",
+      "expected-exit": 0
+    },
+    {
+      "cell": "adderall-microdosing:non-us-sources",
+      "target": "held",
+      "command": "sh -c 'jq -e '\\''[.sources[].country[]?]|unique|map(select(.!=\"US\"))|length>=2'\\'' lib/emsenn/services/561-group/services/science-services-section/services/natural-science-services-section/services/biological-science-services-section/services/medical-science-services-section/services/pharmacology-services-section/data/records/2026-10-07-low-dose-amphetamine-literature.json'",
+      "expected-exit": 0
+    },
+    {
+      "cell": "adderall-microdosing:searches-recorded",
+      "target": "held",
+      "command": "sh -c 'jq -e '\\''(.searches|length)>0 and all(.searches[]; .register and .variables and .observedAt)'\\'' lib/emsenn/services/561-group/services/science-services-section/services/natural-science-services-section/services/biological-science-services-section/services/medical-science-services-section/services/pharmacology-services-section/data/records/2026-10-07-low-dose-amphetamine-literature.json'",
+      "expected-exit": 0
+    },
+    {
+      "cell": "adderall-microdosing:dose-equivalence-stated",
+      "target": "held",
+      "command": "sh -c 'jq -e '\\''.frame.exposure|test(\"equivalent\")'\\'' lib/emsenn/services/561-group/services/science-services-section/services/natural-science-services-section/services/biological-science-services-section/services/medical-science-services-section/services/pharmacology-services-section/data/records/2026-10-07-low-dose-amphetamine-literature.json'",
+      "expected-exit": 0
+    }
+  ],
+  "tier": "routine",
+  "x-provenance": {
+    "recorded-by": "program-manager (bare-cedar-fog-claude, dispatched under the Leader standing direction of 2026-10-09)",
+    "recorded-on": "2026-10-09",
+    "customer": "urn:leader:emsenn",
+    "basis": "Opening prompt of the Leader on Bare Cedar Fog, carried as a requirement record by the board-requirement-intake skill. The raised-by field and asks are the Leader's own words; the requirements below are the program manager's EARS rendering of what those words ask, and carry no scope the words do not.",
+    "board-opening": {
+      "speech-act": "request",
+      "need": "The Group holds a methodical, internationally sourced literature record of what 2.5 mg and 5 mg of mixed amphetamine salts do in adults without ADHD.",
+      "scope": [
+        "section:services/science-services-section/services/natural-science-services-section/services/biological-science-services-section/services/medical-science-services-section/services/pharmacology-services-section"
+      ],
+      "requirements": [
+        {
+          "id": "R1",
+          "says": "The amphetamine literature record shall report, for adults without ADHD, the measured effects of mixed amphetamine salts at 2.5 mg and at 5 mg as separate findings.",
+          "class": "functional",
+          "moscow": "must",
+          "rationale": "The Leader: \"we are curious about 2.5mg and 5mg specifically\"."
+        },
+        {
+          "id": "R2",
+          "says": "The amphetamine literature record shall include sources from research conducted outside the United States.",
+          "class": "functional",
+          "moscow": "must",
+          "rationale": "The Leader: \"international research\"."
+        },
+        {
+          "id": "R3",
+          "says": "The amphetamine literature record shall carry the register, query and inclusion decision of every search it rests on.",
+          "class": "process",
+          "moscow": "should",
+          "rationale": "The Leader: \"do research more methodically according to our best methods\"; the literature-measurement schema is that method."
+        },
+        {
+          "id": "R4",
+          "says": "When a source reports a dose other than 2.5 mg or 5 mg, the amphetamine literature record shall state the dose-equivalence it used to relate that dose to the two asked doses.",
+          "class": "functional",
+          "moscow": "should",
+          "rationale": "Without it, a 10 mg d-amphetamine trial cannot be read against a 2.5 mg or 5 mg question."
+        }
+      ],
+      "conditions": [
+        {
+          "id": "adderall-microdosing:both-doses-framed",
+          "says": "The literature record's exposure frame names 2.5 mg and 5 mg.",
+          "method": "assay",
+          "verifies": [
+            "R1"
+          ]
+        },
+        {
+          "id": "adderall-microdosing:non-us-sources",
+          "says": "The record's sources span at least two countries other than the United States.",
+          "method": "assay",
+          "verifies": [
+            "R2"
+          ]
+        },
+        {
+          "id": "adderall-microdosing:searches-recorded",
+          "says": "Every search carries its register, variables and observation time.",
+          "method": "assay",
+          "verifies": [
+            "R3"
+          ]
+        },
+        {
+          "id": "adderall-microdosing:dose-equivalence-stated",
+          "says": "The exposure frame states the d-amphetamine equivalence used.",
+          "method": "assay",
+          "verifies": [
+            "R4"
+          ]
+        }
+      ],
+      "context": "Held already: the 2026-10-07 note and the literature-measurement record (24 sources, Europe PMC searches) were produced in the opening session; this requirement stands the ask as work so the remaining gaps (non-US coverage, per-dose findings, dose equivalence) are checked by the conditions rather than by chat. The third sentence of the Leader's message asks for better research engineering and operations; it is carried by the literature-measurement method the record cites, and any gap in that method is raised to the research-engineering owner as an obstacle against this request.",
+      "sources": [
+        {
+          "session": "claude session 86ca9e1e-7d3a-494a-a9d5-e44ba787ec04",
+          "at-utc": "2026-10-07T19:17:21",
+          "words": "we need lenticule science to research adderall microdosing"
+        },
+        {
+          "session": "claude session 86ca9e1e-7d3a-494a-a9d5-e44ba787ec04",
+          "at-utc": "2026-10-07T19:21:03",
+          "words": "let's look for more research, international research, etc. we are curious about 2.5mg and 5mg specifically"
+        },
+        {
+          "session": "claude session 86ca9e1e-7d3a-494a-a9d5-e44ba787ec04",
+          "at-utc": "2026-10-07T19:33:19",
+          "words": "Make our research engineering and operations better so you can do research more methodically according to our best methods"
+        }
+      ],
+      "serves": [],
+      "after": [],
+      "traces": []
+    },
+    "held-research": [
+      "science-services-section/services/natural-science-services-section/services/biological-science-services-section/services/medical-science-services-section/services/pharmacology-services-section/content/text/documents/articles/notes/amphetamine-microdosing.md",
+      "science-services-section/services/natural-science-services-section/services/biological-science-services-section/services/medical-science-services-section/services/pharmacology-services-section/data/records/2026-10-07-low-dose-amphetamine-literature.json",
+      "science-services-section/services/natural-science-services-section/services/biological-science-services-section/services/medical-science-services-section/services/pharmacology-services-section/content/text/documents/articles/notes/dose-response-relationships.md",
+      "science-services-section/services/natural-science-services-section/services/biological-science-services-section/services/medical-science-services-section/services/pharmacology-services-section/content/text/documents/articles/notes/pharmacology-and-harm-reduction.md",
+      "science-services-section/services/information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/microdosing.md"
+    ],
+    "not-held": "The note (line 318 onward) already states the 2.5 mg and 5 mg findings and the record already spans non-US sources, so the conditions are expected to hold now; what is not held is any search of non-English-language or regulator (EMA, TGA, PMDA) literature, which the Leader's \"international research, etc.\" leaves open.",
+    "unresolved-authority": "None. The outcome is the owning section's to realize; acceptance is the assayer's."
+  }
+}

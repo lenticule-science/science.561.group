@@ -20,6 +20,8 @@ ast:
 
 # Flatfile Agent Resource System
 
+This is the March 2026 seating of the concept. Its current term is [flatfile agentic resource system](./flatfile-agentic-resource-system.md), which keeps the acronym FARS, takes the Leader's word *agentic*, and states which of FARS, FERN, FROG, FAE and FAdRS is which. The seven conditions below remain the closure content of that term.
+
 ## What it is
 
 A **FlatfileAgentResourceSystem** is an AgentRelationsSystem whose substrate is flatfiles: all entities live as plain text markdown and YAML files, human-readable without tooling.
