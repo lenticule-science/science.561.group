@@ -27,10 +27,12 @@
   "receivingTests": [
     "test/metroplat-root.test.mjs",
     "test/metroplat-receiving.test.mjs",
-    "test/oauth-grant-profile.test.mjs"
+    "test/oauth-grant-profile.test.mjs",
+    "test/reader-policy.test.mjs"
   ],
   "exports": {
     "./site": "./src/site.mjs",
-    "./metroplat": "./src/metroplat.mjs"
+    "./metroplat": "./src/metroplat.mjs",
+    "./reader-policy": "./src/archive-policy.mjs"
   }
 }

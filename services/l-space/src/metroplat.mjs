@@ -20,7 +20,7 @@ import { selectMetroplatCorpusRoot, assertMetroplatCorpusRoot } from './metropla
 import { searchAndFetchTools, vaultMcpTools } from '@red-cup-engineering/knowledge-system-server/mcp-tools';
 import { textRepr } from '@red-cup-engineering/http-services-section/representation';
 
-import { EXCLUDED_SEGMENTS } from './archive-policy.mjs';
+import { EXCLUDED_SEGMENTS, lSpaceReaderPolicy } from './archive-policy.mjs';
 const escape = (value) => String(value ?? '').replace(/[&<>"']/gu, (c) => ({'&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;'}[c]));
 const documentPath = (id) => `/knowledge?document=${encodeURIComponent(id)}`;
 const page = (body) => textRepr(`<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>L-Space · MetroPlat</title></head><body><nav><a href="/play">MetroPlat</a> · <a href="/knowledge">L-Space</a></nav><main><h1>L-Space</h1><form action="/knowledge" method="get"><label>Search the knowledge corpus <input name="query" type="search" required></label><button>Search</button></form>${body}</main></body></html>`, {type: 'text/html; charset=utf-8', cacheControl: {noStore:true}});
@@ -58,8 +58,7 @@ export function lSpaceMetroplat({config, admission, configuration = {}, archive:
     ? ni.handler(context) : new Response('Reader admission required',{status:401,headers:{'cache-control':'no-store'}})}]};
   let opened;
   const archive = () => suppliedArchive ?? (opened ??= Promise.resolve().then(() => assertMetroplatCorpusRoot(root)).then(() => openArchive({
-    root, excludes: configuration.excludes ?? EXCLUDED_SEGMENTS,
-    admitPath:path=>!sciencePrefix || path.startsWith(sciencePrefix+'/') || path.includes('/content/text/'),
+    root, ...lSpaceReaderPolicy({sciencePrefix, excludes: configuration.excludes}),
     observations: join(config.stateDir, 'knowledge', 'observations.jsonl'),
     fullText: join(config.stateDir, 'knowledge', 'full-text.sqlite'),
   })).then(held=>sciencePrefix ? Object.freeze({...held,
