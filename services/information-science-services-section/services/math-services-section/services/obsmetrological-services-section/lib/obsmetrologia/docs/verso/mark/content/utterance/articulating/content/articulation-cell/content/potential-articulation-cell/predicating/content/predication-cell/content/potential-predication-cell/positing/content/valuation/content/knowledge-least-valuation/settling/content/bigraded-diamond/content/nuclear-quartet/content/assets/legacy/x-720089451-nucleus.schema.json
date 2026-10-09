@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://active.development.561.group/articulating/library/aperiodic-articulation-category/library/aperiodic-articulation-cell/library/potential-aperiodic-articulation-cell/predicating/library/transfinite-predication-category/hacking/library/variety/library/lattice/library/closure-operator/library/nucleus/nucleus.schema.json",
+  "title": "nucleus",
+  "description": "A nucleus j on a Heyting algebra A is a closure operator (extensive, idempotent) that additionally preserves finite meets: j(a ∧ b) = j(a) ∧ j(b). The meet-preservation is what forces Fix(j) to inherit the full Heyting algebra structure (not merely the lattice structure) from A. Equivalently, a nucleus is a KZ-lax-idempotent monad on the poset A. Saturating and transferring at the articulating regime each act as a nucleus on the per-fiber Heyting algebra.",
+  "type": "object",
+  "properties": {
+    "name": { "type": "string", "const": "nucleus" }
+  },
+  "required": ["name"]
+}

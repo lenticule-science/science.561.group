@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing",
+  "title": "positing",
+  "description": "Admits value into the value-free predication cell - seeds the knowledge-least valuation, a bilattice charge on every cell.",
+  "type": "object",
+  "required": [
+    "morphism",
+    "domain",
+    "codomain"
+  ],
+  "properties": {
+    "morphism": {
+      "const": "positing",
+      "description": "a one-way generative arrow"
+    },
+    "domain": {
+      "$ref": "mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell",
+      "description": "the potential predication cell - the oriented triple present but value-free"
+    },
+    "codomain": {
+      "$ref": "mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation",
+      "description": "a valuation assigning a bilattice charge to each cell"
+    }
+  }
+}

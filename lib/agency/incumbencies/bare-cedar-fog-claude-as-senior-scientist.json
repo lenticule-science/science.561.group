@@ -1,0 +1,12 @@
+{
+  "id": "bare-cedar-fog-claude-as-senior-scientist",
+  "office": "senior-scientist",
+  "holder": "actor:bZH6KBOlPVWbYpqp04izN_Xtwykn0XgsMBStm_FkPPw",
+  "recognition": "t",
+  "induction": "t",
+  "from": "2026-10-02",
+  "note": "The Bare Cedar Fog Claude character serves Lenticule Science as Senior scientist under the Chief Science Officer, a seat distinct from its Senior engineer seat in Red Cup Engineering: what it specifies as scientist it never receives as engineer, and what it builds as engineer it never judges as scientist. Which model and effort carry a given allocation is derived by staffing.",
+  "x-provenance": {
+    "source": "Founder instruction 2026-10-02: act as a Senior within Lenticule Science and a different Senior within Red Cup Engineering."
+  }
+}

@@ -1,0 +1,5 @@
+{"e":"lattice","a":"describing","v":"A bounded lattice ⟨L, ⊓, ⊔⟩ — algebra on a carrier L with binary meet and join satisfying idempotence, commutativity, associativity, absorption. Induces the partial order a ≤ b iff a ⊓ b = a. Bounded means carries ⊥, ⊤ with ⊥ ≤ a ≤ ⊤.","t":"2026-05-19T23:00:00Z"}
+{"e":"lattice","a":"meeting","v":"lattice","t":"2026-05-19T23:00:00Z"}
+{"e":"lattice","a":"joining","v":"lattice","t":"2026-05-19T23:00:00Z"}
+{"e":"lattice","a":"parameter-of-twist-product","v":"twist-product","t":"2026-05-19T23:00:00Z"}
+{"e":"lattice","a":"parameter-of-residuated-lattice","v":"residuated-lattice","t":"2026-05-19T23:00:00Z"}

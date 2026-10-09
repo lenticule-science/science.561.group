@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://research-notes.561.group/hacking/library/predication-notes/composting/library/identifier/library/name/name.schema.json",
+  "$dynamicAnchor": "name-shape",
+  "title": "Name",
+  "description": "JSON Schema for a name — a kebab-case identifier. Lowercase ASCII letters, digits, and hyphens; begins and ends with a letter or digit; no consecutive hyphens. The schema captures the lexical shape only. Whether the name parses correctly against the project's name-grammar (gerund-headed for transformers, bare-noun for structures) is the resolution-conformance predicate enforced by the checking-a-name-for-grammar transformer. The schema declares $dynamicAnchor 'name-shape' so other schemas referencing a name field can $dynamicRef '#name-shape' rather than restating the pattern.",
+  "type": "string",
+  "pattern": "^[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$",
+  "minLength": 1
+}

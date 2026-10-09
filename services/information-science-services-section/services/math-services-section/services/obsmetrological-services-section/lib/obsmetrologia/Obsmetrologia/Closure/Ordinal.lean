@@ -1,0 +1,169 @@
+import Obsmetrologia.Closure.OrdinalCore
+import Obsmetrologia.Closure.Regime
+
+/-!
+# Ordinal regimes — the four regimes read off the real ordinal
+
+`OrdinalCore` generated the chain's own ordinal `Ord` (`zero | succ | limit`) with its
+finite embedding, `isFinite`, and the limit-as-supremum law. `ClosureOrdinalRegime` carried
+the four regimes as **Boolean metadata flags** — "Lean core has no transfinite ordinals".
+That was a scoping: the transfinite was named but not built.
+
+With the ordinal in hand the four regimes are read off the **actual shape of `κ`**:
+`isFinite` (a real recursion on the ordinal, replacing the free `finiteBase` Bool) splits
+strict from the rest; the corpus's Scott-continuity and cofinality witnesses split the three
+transfinite regimes. The Bool-flag `classify` of `ClosureOrdinalRegime` is then proven to be
+the **projection** of reading the regime off the real ordinal (`regime_of_ord_refines_classify`).
+-/
+
+namespace Obsmetrologia
+namespace Ord
+
+/-! ## (D) Regime read off the real ordinal shape
+
+`regimeOfOrd` reads the four-regime stratum from the ordinal: `isFinite`
+(a real recursion, not the free `finiteBase` flag) splits strict; the corpus's
+Scott-continuity and cofinality witnesses split the three transfinite regimes — the
+SAME two witnesses `ClosureRegimeData` uses, now over a real `κ`. -/
+
+/-- Classify a settling by the **shape of its closure ordinal** `κ : Ord`: strict if
+`κ` is finite (`κ < ω`); else Scott if the closure is Scott-continuous (`κ = ω`); else
+transfinite-bounded if the cofinality is countable (`ω < κ < ω₁`); else aperiodic
+(`κ ≥ ω₁`). The `finiteBase` Bool of `ClosureRegimeData` is replaced by the `isFinite κ`. -/
+def regimeOfOrd (κ : Ord) (scottContinuous countableCofinality : Bool) : ClosureRegime :=
+  if isFinite κ then ClosureRegime.strict
+  else if scottContinuous then ClosureRegime.scott
+  else if countableCofinality then ClosureRegime.transfiniteBounded
+  else ClosureRegime.aperiodic
+
+/-- **A finite closure ordinal is strict-regime.** `regimeOfOrd (ofNat n) _ _ = strict`
+— the strict-finite regime is exactly the finite-ordinal shape, read off `κ` itself. -/
+theorem finite_ord_is_strict (n : Nat) (sc cc : Bool) :
+    regimeOfOrd (ofNat n) sc cc = ClosureRegime.strict := by
+  simp [regimeOfOrd, ofNat_isFinite n]
+
+/-- **`κ = ω` with a Scott-continuous closure is Scott-regime.** -/
+theorem omega_scott_is_scott (cc : Bool) :
+    regimeOfOrd omega true cc = ClosureRegime.scott := by
+  simp [regimeOfOrd, omega_not_isFinite]
+
+/-- **A non-Scott countable-cofinality limit ordinal is transfinite-bounded.** -/
+theorem limit_countable_is_transfiniteBounded (f : Nat → Ord) :
+    regimeOfOrd (limit f) false true = ClosureRegime.transfiniteBounded := by
+  simp [regimeOfOrd, limit_not_isFinite]
+
+/-- **A non-Scott uncountable-cofinality limit ordinal is aperiodic.** -/
+theorem limit_uncountable_is_aperiodic (f : Nat → Ord) :
+    regimeOfOrd (limit f) false false = ClosureRegime.aperiodic := by
+  simp [regimeOfOrd, limit_not_isFinite]
+
+/-! ## (E) The Bool-flag classifier is the projection of the real ordinal
+
+`ClosureOrdinalRegime.classify` decided the regime from three free Booleans. We now
+prove it is exactly `regimeOfOrd` read off an ordinal whose finiteness matches
+the `finiteBase` flag — so the flag classifier was the projection of the ordinal. -/
+
+/-- **The Bool-flag classifier is the ordinal-shape classifier.** Given regime data `d`
+and any ordinal `κ` whose real finiteness `isFinite κ` matches the `finiteBase` flag,
+`regimeOfOrd κ` (over the same Scott/cofinality witnesses) agrees with `classify d`.
+The ordinal subsumes the metadata: `classify` is its projection. -/
+theorem regime_of_ord_refines_classify
+    (d : ClosureRegimeData) (κ : Ord) (hκ : isFinite κ = d.finiteBase) :
+    regimeOfOrd κ d.scottContinuous d.countableCofinality = classify d := by
+  obtain ⟨s, f, c, hsc, hcc⟩ := d
+  simp only [regimeOfOrd, classify]
+  rw [hκ]
+
+/-! ## (F) Headline -/
+
+/-- **The transfinite ordinal, internal to the chain.** Bundles the four
+facts that retire the "Lean core has no transfinite ordinals" scoping:
+
+* **(limit = LUB)** `f n ≤ limit f` and `limit f ≤ b` whenever every `f n ≤ b` — the
+  limit ordinal IS the supremum of its fundamental sequence (settling-continuity's
+  directed-join-at-limits, now a theorem over a real ordinal);
+* **(finite = strict)** a finite closure ordinal `ofNat n` classifies to the strict
+  regime, read off the ordinal's own `isFinite`, not a free flag;
+* **(ω = Scott)** `ω` is non-finite and, Scott-continuous, classifies to the Scott
+  regime;
+* **(projection)** the old Bool-flag `classify` is exactly `regimeOfOrd` over any ordinal
+  whose finiteness matches `finiteBase` — the metadata was the ordinal's projection.
+
+Depends only on `propext` (`regime_of_ord_refines_classify` via `ClosureRegimeData`
+proof fields). -/
+theorem transfinite_ordinal_internal
+    (f : Nat → Ord) (b : Ord) (n : Nat) (hb : ∀ m, Le (f m) b)
+    (d : ClosureRegimeData) (κ : Ord) (hκ : isFinite κ = d.finiteBase) :
+    (Le (f n) (limit f) ∧ Le (limit f) b)
+    ∧ regimeOfOrd (ofNat n) d.scottContinuous d.countableCofinality = ClosureRegime.strict
+    ∧ (isFinite omega = false ∧ regimeOfOrd omega true d.countableCofinality = ClosureRegime.scott)
+    ∧ regimeOfOrd κ d.scottContinuous d.countableCofinality = classify d :=
+  ⟨⟨fund_le_limit f n, limit_isLUB f b hb⟩,
+   finite_ord_is_strict n _ _,
+   ⟨omega_not_isFinite, omega_scott_is_scott _⟩,
+   regime_of_ord_refines_classify d κ hκ⟩
+
+/-! ## (G) Every ordinal here is countably cofinal — `aperiodic` cannot be reached
+
+`regimeOfOrd` still takes `scottContinuous` **and** `countableCofinality` as free Bool
+parameters, exactly as `ClosureRegimeData` did; only `finiteBase` was upgraded to the `isFinite κ`. This section closes that remaining gap for `countableCofinality`
+specifically: `Ord.limit` only ever takes a `Nat`-indexed fundamental sequence, so
+*every* value this type can construct already carries a witness that its own cofinality
+is countable. Unlike `scottContinuous` (a property of the settling process being
+classified at a limit stage, external data — see `Reading.settled_is_omega_lub`
+for a case where it is established), `countableCofinality` is not free: it is forced, and
+`false` never describes an `Ord` built in this system. Consequently
+`ClosureRegime.aperiodic` (`κ ≥ ω₁`, uncountable cofinality) is not merely unbuilt but
+structurally unreachable from `Ord` evidence here — a boundary of this
+dependency-free ordinal encoding, not a missing construction. -/
+
+/-- A `Nat`-indexed sequence `g` is cofinal in `κ`: it sits below `κ` at every stage, and
+`κ` is the least upper bound of it (so no cofinal witness for `κ` needs more than
+countably many stages). -/
+def IsCofinalWitness (g : Nat → Ord) (κ : Ord) : Prop :=
+  (∀ n, Le (g n) κ) ∧ ∀ b, (∀ n, Le (g n) b) → Le κ b
+
+/-- **Every ordinal this type can build has a countable cofinal witness.** `zero` and
+`succ o` are witnessed by the constant sequence at themselves (a single value repeated
+is trivially cofinal and a least upper bound of itself); `limit f` is witnessed by its
+own fundamental sequence `f` (`fund_le_limit`, `limit_isLUB`). No case needs an
+uncountable-length witness, because the constructors never offer one. -/
+theorem exists_countable_cofinal_witness : ∀ κ : Ord, ∃ g : Nat → Ord, IsCofinalWitness g κ
+  | zero => ⟨fun _ => zero, fun _ => le_refl zero, fun _ hb => hb 0⟩
+  | succ o => ⟨fun _ => succ o, fun _ => le_refl (succ o), fun _ hb => hb 0⟩
+  | limit f => ⟨f, fun n => fund_le_limit f n, fun b hb => limit_isLUB f b hb⟩
+
+/-- Like `regimeOfOrd`, but with `countableCofinality` dropped rather than taken as a free
+flag (`exists_countable_cofinal_witness` shows it is always `true` here). Reads `finiteBase`
+off `isFinite` and asks only for the external `scottContinuous` witness; never returns
+`aperiodic`, since a real ordinal only ever decides between `strict` and
+`scott`-or-`transfiniteBounded`. -/
+def regimeOfOrdHonest (κ : Ord) (scottContinuous : Bool) : ClosureRegime :=
+  if isFinite κ then ClosureRegime.strict
+  else if scottContinuous then ClosureRegime.scott
+  else ClosureRegime.transfiniteBounded
+
+/-- **The classifier never outputs `aperiodic`.** Immediate from
+`regimeOfOrdHonest`'s definition, which has no branch that produces it — the absence is
+the content: `exists_countable_cofinal_witness` is exactly what rules that branch out,
+so it was never written in rather than merely not yet reached. -/
+theorem regimeOfOrdHonest_ne_aperiodic (κ : Ord) (scottContinuous : Bool) :
+    regimeOfOrdHonest κ scottContinuous ≠ ClosureRegime.aperiodic := by
+  unfold regimeOfOrdHonest
+  split
+  · decide
+  · split <;> decide
+
+/-- **`regimeOfOrdHonest` agrees with `regimeOfOrd` off the aperiodic branch.** Reading
+`countableCofinality` (always `true`, `exists_countable_cofinal_witness`)
+collapses `regimeOfOrd`'s three-flag classifier to the two-flag one; the two
+classifiers coincide on every regime `regimeOfOrdHonest` can actually reach. -/
+theorem regimeOfOrdHonest_eq_regimeOfOrd_true (κ : Ord) (scottContinuous : Bool) :
+    regimeOfOrdHonest κ scottContinuous = regimeOfOrd κ scottContinuous true := by
+  unfold regimeOfOrdHonest regimeOfOrd
+  split
+  · rfl
+  · split <;> rfl
+
+end Ord
+end Obsmetrologia

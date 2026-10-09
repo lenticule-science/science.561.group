@@ -1,0 +1,19 @@
+# Configuration for the engineering/tools/research toolkit.
+# Tools auto-discover this file by walking up from CWD; pass --root to override.
+
+[program]
+title = "Agentic Orchestration Platform"
+subtitle = "An engineering monograph on agent orchestration over the relational substrate"
+
+[corpus]
+lib_dirs = [
+    "concepts", "objects", "morphisms", "theorems",
+    "examples", "narratives", "questions", "references",
+]
+bib = "references.bib"
+
+[validate]
+min_body_chars = 200
+
+[compose]
+output = "publications/monograph.md"

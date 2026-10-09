@@ -1,0 +1,64 @@
+\section{Finite batches of posits, order-independently}
+
+\Cref{thm:posit-comm,thm:posit-posit-same} give the two-posit facts a
+CRDT-style merge needs, but leave the finite-batch induction itself open.
+This section carries that induction out: \texttt{positList} folds a finite
+list of \((\mathtt{Claim}, \mathtt{Charge})\) posit-instructions into a
+valuation, and the closed-form algebra promised for it follows --- most of
+all, \textbf{order-independence}, the CRDT/order-independence payoff this
+machinery exists for. Everything here is again stated pointwise; no
+\texttt{funext} is used.
+
+\begin{definition}[Batch positing]\label{thm:positlist}\lean{Obsmetrologia.Valuation.positList}\leanok\uses{thm:posit}
+\texttt{positList}~\(ws\)~\(v\) folds a list of posit-instructions into \(v\),
+left to right: \texttt{List.foldl}~\((\lambda\,acc\,w \Rightarrow
+\texttt{posit}\,w.1\,w.2\,acc)\)~\(v\)~\(ws\).
+\end{definition}
+
+\begin{proposition}[Computation rules]\label{thm:positlist-computation}\lean{Obsmetrologia.Valuation.positList_nil, Obsmetrologia.Valuation.positList_cons}\leanok\uses{thm:positlist}
+The empty batch is the identity, and \(w :: ws\) posits \(w\) first, then
+folds the rest into the result. Both hold definitionally.
+\end{proposition}
+
+\begin{theorem}[Order-independence]\label{thm:positlist-perm}\lean{Obsmetrologia.Valuation.positList_perm}\leanok\uses{thm:positlist-computation, thm:posit-comm}
+If \(ws\) and \(ws'\) are permutations of each other, they posit to the same
+result at every claim point. Proved by structural induction on the
+\texttt{List.Perm} witness: \texttt{nil} is trivial, \texttt{cons} is a
+congruence over the recursive permutation, \texttt{swap} is
+\cref{thm:posit-comm} pushed through the shared tail, \texttt{trans}
+composes. This is the CRDT-style merge property: a batch of posits behaves
+as a \emph{set} of instructions, not a sequence, as far as its outcome is
+concerned --- the order-independence payoff the algebra of
+\cref{thm:posit-comm,thm:posit-posit-same,thm:posit-idem} was built for.
+\end{theorem}
+
+\begin{proposition}[Batches concatenate]\label{thm:positlist-append}\lean{Obsmetrologia.Valuation.positList_append}\leanok\uses{thm:positlist}
+Positing \(as \mathbin{{+}\!\!+} bs\) is positing \(as\), then folding \(bs\)
+into the result --- from \texttt{List.foldl\_append}.
+\end{proposition}
+
+\begin{definition}[The delta sum of a batch]\label{thm:deltasum}\lean{Obsmetrologia.Valuation.deltaSum}\leanok\uses{thm:delta}
+The knowledge-join of the point-mass deltas of every instruction in \(ws\),
+evaluated at one claim point.
+\end{definition}
+
+\begin{proposition}[The delta-sum computation rule]\label{thm:deltasum-cons}\lean{Obsmetrologia.Valuation.deltaSum_cons}\leanok\uses{thm:deltasum}
+\(\texttt{deltaSum}\,(w :: ws)\,\psi = \delta_{w.1,w.2}(\psi) \vee_k
+\texttt{deltaSum}\,ws\,\psi\): the head's delta joins in with the tail's sum.
+\end{proposition}
+
+\begin{theorem}[The batch as a single join]\label{thm:positlist-eq-joink-deltasum}\lean{Obsmetrologia.Valuation.positList_eq_joinK_deltaSum}\leanok\uses{thm:positlist, thm:deltasum-cons}
+\texttt{positList}~\(ws\)~\(v\)~\(\psi\) equals \(v\,\psi \vee_k
+\texttt{deltaSum}\,ws\,\psi\) --- the closed form underneath
+\cref{thm:positlist-perm}: a batch is, semantically, just one big join, and
+joins do not care about the order their arguments were listed in.
+\end{theorem}
+
+\begin{theorem}[Inflationary, monotone, idempotent lifts]\label{thm:positlist-lifts}\lean{Obsmetrologia.Valuation.positList_inflationary, Obsmetrologia.Valuation.positList_monotone, Obsmetrologia.Valuation.positList_idem}\leanok\uses{thm:positlist-eq-joink-deltasum, thm:posit-inflationary, thm:posit-monotone}
+A batch never retracts knowledge already held (from
+\cref{thm:positlist-eq-joink-deltasum} and \(\bot_k\)-inflation of
+\(\vee_k\)); batching is monotone in the starting valuation, by induction
+using \cref{thm:posit-monotone} at each step; and applying the same batch
+twice is the same as applying it once, regardless of whether \(ws\) repeats
+a cell internally, from idempotence of \(\vee_k\).
+\end{theorem}

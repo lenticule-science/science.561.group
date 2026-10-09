@@ -1,0 +1,27 @@
+\subsection{Parity and temporal witnesses}
+
+\begin{theorem}[The Mermin--Peres magic square is strongly contextual]\label{thm:magic-square-strong-contextual}\lean{Obsmetrologia.QuantumContextuality.magicSquare_strongly_contextual}\leanok\uses{thm:possibilistic-model}
+The magic square gives a state-independent all-versus-nothing obstruction:
+all declared required line contexts are locally satisfiable, but no global assignment
+satisfies their parity constraints.
+\end{theorem}
+
+\begin{theorem}[Leggett--Garg violates macrorealism]\label{thm:leggett-garg-macrorealism-violated}\lean{Obsmetrologia.QuantumContextuality.lgPerfect_macrorealism_violated}\leanok\uses{thm:possibilistic-model}
+The temporal Leggett--Garg support model is strongly contextual: the pairwise
+time constraints cannot come from one definite trajectory.
+\end{theorem}
+
+\begin{theorem}[The Leggett--Garg quantum value is not macrorealist]\label{thm:leggett-garg-real-separation}\lean{Obsmetrologia.QuantumContextuality.lg_quantum_value_not_macrorealist}\leanok\uses{thm:leggett-garg-macrorealism-violated}
+Over the internal real/rational value layer, no definite macrorealist
+trajectory realizes the \(3/2\) quantum value.
+\end{theorem}
+
+\begin{theorem}[The PR box's parity obstruction is a nonvanishing Čech class]\label{thm:pr-cohomological-contextuality}\lean{Obsmetrologia.QuantumContextuality.prBox_no_global_cohomological}\leanok\uses{thm:pr-box-strong-contextual}
+The PR box's four contexts form a 4-cycle in the measurement graph (vertices
+the four measurements, edges the contexts); its required-XOR target's value
+around that cycle is nonzero, so the target is not a \(\delta^0\)-coboundary
+of the graph's Čech complex with \((\mathrm{Bool}, \mathrm{xor}) \cong
+\mathbb{Z}/2\mathbb{Z}\) coefficients. This is an independent, cohomological
+proof that the PR box has no global section, agreeing with the Boolean-
+exhaustion proof of \ref{thm:pr-box-strong-contextual}.
+\end{theorem}

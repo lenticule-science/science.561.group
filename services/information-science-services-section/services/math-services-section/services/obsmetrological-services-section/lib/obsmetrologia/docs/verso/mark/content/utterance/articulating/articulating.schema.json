@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mark/content/utterance/articulating",
+  "title": "articulating",
+  "description": "Brings a relation into being. One-way and inverse-less: to articulate a cell and for that cell to exist are the same act. The base morphism of the whole library.",
+  "type": "object",
+  "required": [
+    "morphism",
+    "domain",
+    "codomain"
+  ],
+  "properties": {
+    "morphism": {
+      "const": "articulating",
+      "description": "a one-way generative arrow"
+    },
+    "domain": {
+      "$ref": "mark/content/utterance",
+      "description": "an utterance - the ordered pair of a token and a claim"
+    },
+    "codomain": {
+      "$ref": "mark/content/utterance/articulating/content/articulation-cell",
+      "description": "an articulation cell whose subject is filled"
+    }
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "type": "OlfactoryMeasurementComparabilityAssayContract",
+  "serviceId": "urn:561:csm:olfactory-metrology:v1",
+  "recordedAt": "2026-10-03",
+  "purpose": "Assess repeatability, reproducibility, transferability, drift, and domain support of an olfactory measurement system without representing the result as accredited proficiency testing, certification, or accreditation advice.",
+  "measurementSystem": {
+    "systemId": null,
+    "kind": null,
+    "allowedKinds": [
+      "human-panel",
+      "dynamic-olfactometry-lab",
+      "remote-sensory-panel",
+      "electronic-nose",
+      "instrument-plus-human-hybrid"
+    ],
+    "methodReference": null,
+    "siteOrLab": null,
+    "operatorOrPanel": null,
+    "instrument": null
+  },
+  "targetDomain": {
+    "odorFamilies": [],
+    "mixtureRegime": null,
+    "concentrationRange": null,
+    "presentationMethod": null,
+    "environmentalRange": null,
+    "application": null
+  },
+  "referenceEvidence": [
+    {
+      "referenceId": null,
+      "referenceType": null,
+      "nominalValue": null,
+      "uncertainty": null,
+      "traceability": null,
+      "source": null
+    }
+  ],
+  "observations": [
+    {
+      "observationId": null,
+      "sampleOrReference": null,
+      "assessorOrSensorPseudonym": null,
+      "replicate": null,
+      "environment": null,
+      "result": null,
+      "timestamp": null
+    }
+  ],
+  "analysis": {
+    "repeatability": null,
+    "reproducibility": null,
+    "biasOrAccuracy": null,
+    "referenceTransferability": null,
+    "drift": null,
+    "environmentalInterference": null,
+    "panelOrSensorHeterogeneity": null,
+    "domainSupportEnvelope": null,
+    "unsupportedRegions": [],
+    "uncertainty": null
+  },
+  "multiReferenceBasis": {
+    "candidateReferences": [],
+    "selectionObjective": "maximize held-out target-domain performance and support while minimizing reference count and operational burden",
+    "singleReferenceBaseline": null,
+    "selectedBasis": [],
+    "coverageMap": null,
+    "gluingObstructions": []
+  },
+  "recommendedNextExperiment": {
+    "question": null,
+    "referencesOrSamples": [],
+    "replicates": null,
+    "environmentalConditions": [],
+    "acceptanceCriterion": null,
+    "expectedInformationGain": null
+  },
+  "claimBoundary": {
+    "notAccreditedProficiencyTesting": true,
+    "notCertification": true,
+    "notAccreditationConsultancy": true,
+    "notUniversalCalibrationClaim": true,
+    "domainSpecificSupportOnly": true,
+    "unknownMustNotBecomePass": true
+  },
+  "receipt": {
+    "inputDigest": null,
+    "methodDigest": null,
+    "referenceEvidenceDigest": null,
+    "analysisVersion": null,
+    "generatedAt": null
+  }
+}

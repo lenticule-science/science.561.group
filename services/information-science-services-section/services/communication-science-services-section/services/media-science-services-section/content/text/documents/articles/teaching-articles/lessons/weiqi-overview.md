@@ -1,0 +1,51 @@
+---
+title: "Weiqi Overview"
+type: "lesson"
+date-created: 2026-03-09
+description: "Audience: readers who want a first structural map of weiqi before studying joseki, life and death, or advanced strategy."
+---
+
+Learning objectives
+
+- Weiqi Overview
+
+Prerequisites
+
+- /games/curricula/what-is-a-game.md
+- /games/topics/board-games/index.md
+
+Audience: readers who want a first structural map of weiqi before studying joseki, life and death, or advanced strategy.
+
+Learning goal: explain how liberties, capture, territory, and ko organize play in weiqi.
+
+## Worked example: surrounding one stone
+
+Imagine an empty 9 by 9 board. Black places one stone near the center. White then places stones on each of the four adjacent intersections around it. Once Black&rsquo;s stone has no remaining [liberties](../../../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/services/being-services-section/services/doing-services-section/services/playing-services-section/services/gaming-services-section/services/board-games-services-section/services/weiqi-services-section/content/text/glossary/terms/liberty.md), White removes it from the board. That is a [capture](../../../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/services/being-services-section/services/doing-services-section/services/playing-services-section/services/gaming-services-section/services/board-games-services-section/services/weiqi-services-section/content/text/glossary/terms/capture.md).
+
+This small example shows the core logic of the game. Stones do not move after placement. They remain in place, connect to neighboring stones of the same color, and survive only while the group retains at least one liberty. Much of weiqi can be understood as managing that relation between extension and enclosure.
+
+Weiqi is a two-player territorial board game played by placing black and white stones on grid intersections, usually on a 19 by 19 board [@britannica2026go; @nagofed2026thisisgo]. Black moves first. Stones normally remain where they are played unless they are captured. Because the board state is almost fully public, the game rewards long-range spatial judgment rather than hidden-information inference.
+
+The central tactical unit is the liberty. A single stone in open space has four liberties, fewer on the edge, and fewer again in the corner. Connected stones share liberties, which is why groups matter more than isolated stones. When a move removes the last liberty from an opposing stone or group, the player captures it and removes it from the board [@nagofed2026thisisgo]. A stone or group reduced to one liberty is in [atari](../../research/2026/07/31/lenticule-import/library/arts/ludics/games/terms/atari.md), which is the game&rsquo;s simplest tactical alarm.
+
+The strategic objective is [territory](../../../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/services/being-services-section/services/doing-services-section/services/playing-services-section/services/gaming-services-section/services/board-games-services-section/services/weiqi-services-section/content/text/glossary/terms/territory.md), not only capture. Players try to secure vacant points by surrounding them more solidly than the opponent can invade or reduce [@britannica2026go; @nagofed2026thisisgo]. This is why a move that does not capture anything immediately can still be strong: it may stabilize a large territorial framework or prevent the opponent from doing so.
+
+The game also needs a rule to prevent immediate infinite repetition. That rule is [ko](../../research/2026/07/31/lenticule-import/library/arts/ludics/games/terms/ko.md): after a capture that would allow the opponent to recreate the exact previous board position with one move, that immediate recapture is forbidden [@britgo2025default]. Ko turns some local fights into timing problems that reach across the whole board, because the player who is blocked from recapturing must play elsewhere first.
+
+## Exercises
+
+- Why is a group of connected stones usually stronger than the same number of isolated stones?
+
+Answer
+
+Connected stones share liberties. That usually makes them harder to capture because the opponent must remove the liberties of the whole group, not each stone separately.
+
+- Why is ko important even though it applies only to a narrow kind of local repetition?
+
+Answer
+
+Without ko, some local captures could repeat forever and stop the game from progressing. Ko forces the fight to break and often links a local struggle to the wider board because one player must play elsewhere first.
+
+## What comes next
+
+The next step is [Living Groups and Eyes](../../../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/services/being-services-section/services/doing-services-section/services/playing-services-section/services/gaming-services-section/services/board-games-services-section/services/weiqi-services-section/content/text/documents/articles/teaching-articles/tutorials/living-groups-and-eyes.md), which explains why [connection](../../research/2026/07/31/lenticule-import/library/arts/ludics/games/terms/connection.md) and [eyes](../../research/2026/07/31/lenticule-import/library/arts/ludics/games/terms/eye.md) determine whether groups survive. For scoring and matchmaking structure, continue with [Komi and Handicap](../../../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/services/being-services-section/services/doing-services-section/services/playing-services-section/services/gaming-services-section/services/board-games-services-section/services/weiqi-services-section/content/text/documents/articles/teaching-articles/tutorials/komi-and-handicap.md). For vocabulary work, continue with [Terms](../../research/2026/07/31/lenticule-import/library/arts/ludics/games/terms/index.md), especially [liberty](../../../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/services/being-services-section/services/doing-services-section/services/playing-services-section/services/gaming-services-section/services/board-games-services-section/services/weiqi-services-section/content/text/glossary/terms/liberty.md), [atari](../../research/2026/07/31/lenticule-import/library/arts/ludics/games/terms/atari.md), [eye](../../research/2026/07/31/lenticule-import/library/arts/ludics/games/terms/eye.md), and [life and death](../../../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/services/being-services-section/services/doing-services-section/services/playing-services-section/services/gaming-services-section/services/board-games-services-section/services/weiqi-services-section/content/text/glossary/terms/life-and-death.md).

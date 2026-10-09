@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/content/predication-hyperdoctrine/content/paraconsistent-equality",
+  "title": "paraconsistent-equality",
+  "description": "The equality predicate on a predication hyperdoctrine, obtained as the knowledge-order Lawvere image of the constant-top valuation along the diagonal predicate specialization; it carries top on the diagonal and bottom off it, so equal entities are information-maximal while distinct ones make no claim, making it stable under knowledge-merge.",
+  "type": "object",
+  "required": ["diagonalDomain", "image", "onDiagonal", "offDiagonal", "mergeStable"],
+  "properties": {
+    "diagonalDomain": {
+      "const": "set",
+      "description": "the diagonal sub-support Delta_E = {(s,s) : s in E} of the entity set E"
+    },
+    "image": {
+      "const": true,
+      "description": "Delta_E^k := exists_g^k(1_q^k): the knowledge-order Lawvere existential image of the constant-top valuation along the diagonal predicate specialization g"
+    },
+    "onDiagonal": {
+      "const": "top",
+      "description": "Delta_E^k(s,o) = top when s = o (information-maximal)"
+    },
+    "offDiagonal": {
+      "const": "bottom",
+      "description": "Delta_E^k(s,o) = bottom when s != o (no claim)"
+    },
+    "mergeStable": {
+      "const": true,
+      "description": "stable under join-merge in the knowledge order, suitable for distributed and paraconsistent reasoning"
+    }
+  }
+}

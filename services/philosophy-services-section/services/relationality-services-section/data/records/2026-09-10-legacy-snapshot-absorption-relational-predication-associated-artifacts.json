@@ -1,0 +1,14 @@
+{
+  "date": "2026-09-10",
+  "task": "absorb-then-delete one lib/legacy snapshot, per the 2026-08-31 campaign's information-loss law: a snapshot is deletable only after everything it uniquely holds has been reasoned into the live corpus",
+  "section_root": "/home/emsenn/info/lib/emsenn/services/561-group/services/science-services-section/services/philosophy-services-section/services/relationality-services-section",
+  "snapshot": "lib/legacy/2026-05-25-relational-predication-associated-artifacts",
+  "snapshot_contents": [
+    "2026-08-17-vps-561-group-relational-admissibility-predicate--002039.md",
+    "relational-admissibility-predicate--002039.md"
+  ],
+  "finding": "The two files were the same content, differing only in line-wrap column width (confirmed by diff -- every hunk is a rewrap, no wording differs). Defined one concept, 'relational admissibility predicate' (R), a predicate induced by a 'collapse induction function' (kappa): R(x,y) := (x,y) in dom(kappa). Searched the live corpus (content/text/glossary/{terms,concepts}) for this name and for 'collapse induction function' -- not present under this name (only an unrelated specific instance, myth-collapse-induction-function.md, in the same collapse-dynamics constraint-function family). This was novel, unabsorbed content.",
+  "action": "Wrote content/text/glossary/terms/relational-admissibility-predicate.md, matching the live schema already established for this constraint-function family this session (type/symbol/produced-by frontmatter, blockquote formula, one-paragraph gloss -- same shape as the sibling recursive-constraint-closure-predicate.md). Deleted the snapshot directory: both files' full content is now live, byte-for-byte the same claim.",
+  "verification": "term-cli.mjs recognize against the new file: one finding, 'unknown-key: symbol' -- the same, already-documented gap the rest of this function family has (no schema slot for symbol/domain/codomain metadata), not a new problem. `npm test` in this package still passes 11/11.",
+  "campaign_context": "First entry processed from the 2026-08-31 campaign's legacy revival queue (36 snapshots at the time, ~239M). Picked as the smallest (12K, 2 files) to establish and verify the absorb-then-delete procedure end to end before attempting a larger snapshot. lib/legacy now holds one fewer entry."
+}

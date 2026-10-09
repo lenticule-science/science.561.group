@@ -1,0 +1,84 @@
+{
+  "kind": "lenticule.relconlang.stance-report-vs-target-evidence-assay",
+  "version": "0.1",
+  "status": "candidate-model",
+  "invariant": "Linguistic stance is evidence about the utterance/speaker stance report; it is not automatically evidence for or against the target proposition.",
+  "cases": [
+    {
+      "surface": "sha mi ga ran do sava.",
+      "stanceReport": {
+        "particle": "sha",
+        "aggregateReading": "stable"
+      },
+      "targetProposition": "ran(mi,sava)",
+      "targetEvidenceBefore": {
+        "for": [],
+        "against": []
+      },
+      "targetEvidenceAfterParsing": {
+        "for": [],
+        "against": []
+      },
+      "interpretation": "The speaker reports/marks the proposition as both-sided or contradicted; parsing alone does not fabricate the underlying positive and negative witnesses."
+    },
+    {
+      "surface": "ta mi ga ran do sava.",
+      "stanceReport": {
+        "particle": "ta",
+        "aggregateReading": "potential",
+        "profile": {
+          "truth": "potential",
+          "falsity": "absurd"
+        }
+      },
+      "targetEvidenceAfterParsing": {
+        "for": [],
+        "against": []
+      },
+      "interpretation": "The stance report has a truth-oriented profile. Whether the utterance itself counts as evidence-for the proposition is a separate evidential policy question."
+    },
+    {
+      "surface": "na mi ga ran do sava.",
+      "stanceReport": {
+        "particle": "na",
+        "aggregateReading": "potential",
+        "profile": {
+          "truth": "absurd",
+          "falsity": "potential"
+        }
+      },
+      "targetEvidenceAfterParsing": {
+        "for": [],
+        "against": []
+      },
+      "interpretation": "The stance report differs from ta despite identical aggregate reading; the Chu profile is preserved."
+    },
+    {
+      "surface": "mu mi ga ran do sava.",
+      "stanceReport": {
+        "particle": "mu",
+        "aggregateReading": "absurd"
+      },
+      "targetEvidenceAfterParsing": {
+        "for": [],
+        "against": []
+      },
+      "interpretation": "The grammar can report an unwitnessed/void stance without deleting or overwriting whatever target evidence another subsystem may already hold."
+    },
+    {
+      "externalEvidence": {
+        "target": "ran(mi,sava)",
+        "for": [
+          "witness-A"
+        ],
+        "against": [
+          "witness-B"
+        ]
+      },
+      "derivedTargetReading": "stable",
+      "interpretation": "A target proposition becomes stable because both evidence sides are actually populated, independently of whether any utterance used sha."
+    }
+  ],
+  "analogy": "SignStuff source-statement resources distinguish evidence that a source asserted a statement from a truth judgment about the statement itself.",
+  "nextTest": "Project current SignCraft clause readings into stance-report objects while leaving proposition evidence empty; then inject independent evidence and verify the target FOUR reading changes only from evidence."
+}

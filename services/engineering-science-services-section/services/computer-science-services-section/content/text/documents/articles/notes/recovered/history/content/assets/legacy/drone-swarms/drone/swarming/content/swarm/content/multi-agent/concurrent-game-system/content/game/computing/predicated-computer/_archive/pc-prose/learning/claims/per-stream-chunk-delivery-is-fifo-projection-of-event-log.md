@@ -1,0 +1,50 @@
+---
+type: theorem
+class: engineering-claim
+status: proved
+depends-on: [monotonic-clock-discipline, closure-rule-system-realizes-closure-2-monad, modal-restriction-as-substrate-authorization-primitive, encryption-as-visibility-restriction-via-invisible-automorphism]
+see-also: [streaming-replay-equivalence, cache-coherence-via-functorial-projection, paraconsistency-as-substrate-discipline]
+---
+
+# Per-stream chunk delivery is a FIFO projection of the event log
+
+**Claim.** Fix a `(session-id, process-handle, stream)` triple $T$. Let $\Sigma_n$ denote the substrate's event log up to ord $n$, and let $\mathrm{chunks}_T(\Sigma_n)$ denote the subsequence of $\Sigma_n$ consisting of `stream-chunk` events whose `(session-id, process-handle, stream)` equals $T$, in event-ord order. Fix a subscriber $A$ holding a single WebSocket subscription with filter selecting triple $T$, observed across an interval $[\mathrm{ord}_a, \mathrm{ord}_b]$ during which the connection is continuously open and the substrate's emit path for $T$ is operating normally. Let $V \subseteq \mathrm{chunks}_T(\Sigma_n) \cap [\mathrm{ord}_a, \mathrm{ord}_b]$ denote the chunks $A$ is authorized to see — those whose authorization premise $A$'s capability fiber satisfies (per [modal-restriction-as-substrate-authorization-primitive](modal-restriction-as-substrate-authorization-primitive.md)) and whose contents are not encryption-region-restricted out of $A$'s vantage (per [encryption-as-visibility-restriction-via-invisible-automorphism](encryption-as-visibility-restriction-via-invisible-automorphism.md)).
+
+Then:
+
+1. The `chunk-seq` field on $\mathrm{chunks}_T(\Sigma_n)$ is a strictly increasing function of position in that subsequence — i.e. $\mathrm{chunk\text{-}seq}$ restricted to $T$-chunks is an order-preserving injection $\mathrm{chunks}_T \hookrightarrow \mathbb{N}$.
+2. The subscriber-visible set $V$ is delivered to $A$ over the connection in event-ord order (equivalently, in `chunk-seq` order on $T$).
+3. *Within the connection's lifetime*, a chunk $c \in \mathrm{chunks}_T(\Sigma_n) \cap [\mathrm{ord}_a, \mathrm{ord}_b]$ omitted from $V$ is detectable by $A$ as a gap in the observed `chunk-seq` sequence **whenever there exists a later chunk in $V$ with strictly greater `chunk-seq`** (the omission is then bracketed and visible as a missing integer between two observed values). Detected gaps within a healthy single-connection interval are attributable to either authorization restriction or encryption-region restriction (these being the only two omission mechanisms admissible inside such an interval). Terminal-suffix omissions — a contiguous tail of $\mathrm{chunks}_T$ omitted with no later observed chunk — are not detectable from the chunk-seq sequence alone; the subscriber needs the §3 `stream-end` sentinel or an out-of-band signal to distinguish "stream ended" from "tail omitted." Gaps caused by transport interruption, subscription error, or connection close fall outside the claim's scope and require the subscriber to distinguish them via the WebSocket close-code (§5 of the WebSocket spec).
+
+## Why this holds
+
+**Part 1: chunk-seq is monotone-injective per triple.** The dev spec ([`process/session-output-streaming.md`](../../../../../../../../../operations/engineering/tools/predication-computer/pypredcomp/docs/dev/specs/process/session-output-streaming.md) §1) defines `chunk-seq` as a per-`(session-id, process-handle, stream)` monotone integer assigned at chunk-emit time. Each `stream-chunk` event is appended to the event log under [monotonic-clock-discipline](monotonic-clock-discipline.md): event-ord is fresh and strictly greater than all prior ords, including all prior `stream-chunk` events for the same triple $T$.
+
+Within the substrate's emit path for a given triple, the chunk-seq counter is incremented exactly once per emitted chunk — the dev spec's "per non-empty PTY read or per non-empty `read(2)`" §1.2 plus the §1.2 codepoint-buffer discipline (which moves bytes between chunks but emits exactly one chunk per non-empty read after coalescing). The increment happens within the same write that stamps event-ord; the substrate's append-only event-log discipline forbids two writes for the same triple to interleave their chunk-seq stamping (each is a single substrate operation per [closure-rule-system-realizes-closure-2-monad](closure-rule-system-realizes-closure-2-monad.md), and substrate operations on the same fiber serialize at the σ/Δ pass boundary).
+
+Consequently the map `position-in-chunks_T → chunk-seq` is strictly increasing — each successor chunk has both a strictly greater event-ord *and* a strictly greater chunk-seq.
+
+**Part 2: subscriber delivery preserves event-ord.** The dev spec ([`process/session-output-streaming.md`](../../../../../../../../../operations/engineering/tools/predication-computer/pypredcomp/docs/dev/specs/process/session-output-streaming.md) §4 + [`network/websocket.md`](../../../../../../../../../operations/engineering/tools/predication-computer/pypredcomp/docs/dev/specs/network/websocket.md) §2) specifies that subscriber delivery on the `substrate-events.v1` subprotocol emits one event per WebSocket frame, and that the substrate's emit path drives frames out in event-log scan order.
+
+The subscription `filter` in §4 is a positive predicate over event fields — `kind = "stream-chunk"` ∧ `session-id = ...` ∧ `process-handle = ...` ∧ `stream = ...`. A positive predicate filter applied to a sequence selects a subsequence by elementwise admit/reject without consulting the sequence's order or other elements; the surviving elements therefore retain their original relative order. (This is the elementary subsequence-of-a-sequence fact: for any predicate $\phi$ that depends only on the element, $\{x_i : \phi(x_i)\}$ in original index order is order-preserving.)
+
+The capability filter applied per [modal-restriction-as-substrate-authorization-primitive](modal-restriction-as-substrate-authorization-primitive.md) (the WebSocket §4 capability gate) is likewise an elementwise positive predicate: it admits a chunk to $A$'s view iff $A$'s capability fiber satisfies the chunk's authorization premise, with no dependence on prior or subsequent chunks. Composition of elementwise filters is again an elementwise filter, preserving order.
+
+WebSocket per RFC 6455 (cited by [`network/websocket.md`](../../../../../../../../../operations/engineering/tools/predication-computer/pypredcomp/docs/dev/specs/network/websocket.md) §1) delivers frames within a single open connection in the order the sender wrote them. Within the connection's lifetime $[\mathrm{ord}_a, \mathrm{ord}_b]$, therefore, $A$ observes $V$ in event-ord order, which by Part 1 equals `chunk-seq` order.
+
+**Part 3: gaps are detectable and localizable within the connection's lifetime, when bracketed by a later observed chunk.** If chunk $k$ is in $\mathrm{chunks}_T \cap [\mathrm{ord}_a, \mathrm{ord}_b]$ but not in $V$, *and there exists some later chunk $k' > k$ in $V$*, $A$ observes `chunk-seq` values $\ldots, k-1, k+1, \ldots, k'$ (or a wider gap). The dev spec §1 explicitly names this: "Lets a subscriber detect missed chunks." Within the healthy single-connection interval defined by the claim, the only mechanisms that drop a chunk between event-log append and subscriber delivery are:
+
+- Capability rejection (the chunk's $\Box_R$-licensing premise fails for $A$'s fiber, per [modal-restriction-as-substrate-authorization-primitive](modal-restriction-as-substrate-authorization-primitive.md)). The drop is auditable — the substrate's authorization-decision event records it.
+- Encryption-region projection where $A$ lacks the visibility key (per [encryption-as-visibility-restriction-via-invisible-automorphism](encryption-as-visibility-restriction-via-invisible-automorphism.md)). The drop is structural; from $A$'s vantage the chunk does not exist.
+
+Both are positive-filter projections, not reorderings, so the surviving sequence remains in chunk-seq order with a visible gap at $k$.
+
+## Engineering consequence (in the narrative)
+
+See [per-stream-chunk-delivery-fifo](teaching/explanations/per-stream-chunk-delivery-fifo.md) for what this rules out (chunk reordering, silent loss, chunk-seq-as-deduplication-key abuse) and what the dev spec is doing that the theorem doesn't capture (the codepoint-boundary discipline, the coalescing budget).
+
+## Limits of the claim
+
+- **One subscription = one WebSocket connection.** The FIFO guarantee is per-connection. A subscriber that reconnects mid-stream sees the chunks delivered after reconnect; chunks delivered to the prior connection are not redelivered. The chunk-seq gap then signals the connection-boundary loss, not an authorization restriction. (Implementations that wish to backfill from event-log replay are exercising [streaming-replay-equivalence](streaming-replay-equivalence.md), which is a separate guarantee.)
+- **Different triples are not co-ordered.** Two triples $T_1, T_2$ — e.g. the `stdout` and `stderr` of the same subprocess, or two subprocesses' streams — have no per-pair FIFO claim beyond what event-ord provides globally. A subscriber that interleaves chunks from $T_1$ and $T_2$ sees them in event-ord order, which interleaves the two streams arbitrarily as the substrate emits them.
+- **`stream-end` terminates the per-triple lifecycle.** The §3 sentinel `stream-end` event for triple $T$ carries no `chunk-seq` of its own, but is appended to the event log after all prior $T$-chunks (by [monotonic-clock-discipline](monotonic-clock-discipline.md): its event-ord is fresh and strictly greater than every prior $T$-chunk's event-ord). By Parts 1–2 it therefore arrives at $A$ after every prior $T$-chunk in $V$. A subscriber that observes `stream-end` for $T$ then later observes another `stream-chunk` for $T$ is observing a substrate violation that the substrate itself rejects on the emit side with `PCS_STREAM_AFTER_END` (§3); the violation surfaces through the $\top$-cell discipline per [paraconsistency-as-substrate-discipline](paraconsistency-as-substrate-discipline.md).

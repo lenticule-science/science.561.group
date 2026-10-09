@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "glossary/terms/translation-variance-record",
+  "title": "translation variance record",
+  "description": "How one Daodejing/Yijing term is rendered across published English translations, set beside this section's own house reading. One shared shape for every term in this glossary that carries a translation-variance record, rather than one near-identical JSON Schema per term: dao, de, wu-wei, ziran, pu, and daodejing all instantiate this same structure, parameterized by `term`, `hanzi`, `pinyin`, `locus`, `translations`, and `houseTranslation` — the mechanics of comparing translators do not vary by which term is being compared. Each term's own thin schema (e.g. dao.schema.json) fixes `term` and $refs this file, mirroring how functor.schema.json $refs the shared category.schema.json rather than restating category structure per functor.",
+  "type": "object",
+  "required": ["term", "hanzi", "pinyin", "locus", "translations", "houseTranslation"],
+  "additionalProperties": false,
+  "properties": {
+    "term": {
+      "description": "the glossary term identity this record is about; must equal the filename stem of the paired content/text/glossary/terms/<term>.md carrier",
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9]*(-[a-z0-9]+)*$"
+    },
+    "hanzi": {
+      "description": "the term's Chinese characters as written in the received text",
+      "type": "string",
+      "minLength": 1
+    },
+    "pinyin": {
+      "description": "the term's pinyin romanization with tone marks",
+      "type": "string",
+      "minLength": 1
+    },
+    "locus": {
+      "description": "the Daodejing chapter(s), or other textual location, where the term is discussed",
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string" }
+    },
+    "translations": {
+      "description": "grounded renderings of the term by named published translators, most-central locus first",
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "./translation-rendering.schema.json" }
+    },
+    "houseTranslation": {
+      "description": "this section's own reading of the term, graded in the estate's own [B]/PROVED/FRAMING/VALVE vocabulary rather than asserted as a resolution of the translations compared above",
+      "$ref": "./house-translation.schema.json"
+    }
+  }
+}

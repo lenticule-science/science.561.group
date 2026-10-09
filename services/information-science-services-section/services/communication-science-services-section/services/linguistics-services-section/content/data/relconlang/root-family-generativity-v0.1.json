@@ -1,0 +1,76 @@
+{
+  "kind": "lenticule.relconlang.root-family-generativity-assay",
+  "version": "0.1",
+  "status": "experimental",
+  "currentImplementation": {
+    "rootPatternRules": "recognize listed/pattern-matched surfaces and attach root/template/features",
+    "verbAdmission": "independent suffixRules regexes",
+    "rootTemplateGeneration": false,
+    "nounVerbFamilyDerivation": false
+  },
+  "families": [
+    {
+      "root": "k-d",
+      "noun": "koda",
+      "verb": "kod",
+      "semantic": "obligation",
+      "compiledRootOnNoun": true,
+      "compiledRootOnVerb": false
+    },
+    {
+      "root": "k-n",
+      "noun": "kano",
+      "verb": "kan",
+      "semantic": "capability",
+      "compiledRootOnNoun": true,
+      "compiledRootOnVerb": false
+    },
+    {
+      "root": "v-m",
+      "noun": "voma",
+      "verb": "vom",
+      "semantic": "promise",
+      "compiledRootOnNoun": true,
+      "compiledRootOnVerb": false
+    },
+    {
+      "root": "d-v",
+      "noun": "davu",
+      "verb": "dav",
+      "semantic": "doubt",
+      "compiledRootOnNoun": true,
+      "compiledRootOnVerb": false
+    },
+    {
+      "root": "r-n",
+      "noun": "rena",
+      "verb": "ren",
+      "semantic": "repair",
+      "compiledRootOnNoun": true,
+      "compiledRootOnVerb": false
+    },
+    {
+      "root": "n-l",
+      "noun": "nulu",
+      "verb": "nul",
+      "semantic": "refusal",
+      "compiledRootOnNoun": true,
+      "compiledRootOnVerb": false
+    },
+    {
+      "root": "v-r",
+      "noun": "vara",
+      "verb": "var",
+      "semantic": "transformation",
+      "compiledRootOnNoun": true,
+      "compiledRootOnVerb": false
+    }
+  ],
+  "proposedAssays": [
+    "derive known noun and verb siblings from one root declaration",
+    "reject an unattested template where the root's declared lexical category does not license it",
+    "coin a roadmap root such as m-s and generate only forms allowed by declared templates",
+    "round-trip generated surface -> parser features -> same root/template identity"
+  ],
+  "caution": "Do not equate phonotactic validity with semantic legitimacy."
+}

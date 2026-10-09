@@ -1,0 +1,111 @@
+{
+  "kind": "lenticule.research-program-manifest",
+  "id": "lenticule:artificial-abiogenesis-smartgoo",
+  "title": "Artificial Abiogenesis / Smartgoo",
+  "status": "active",
+  "date": "2026-10-01",
+  "canonicalRoot": "content/documents/articles/notes/2026/10/01/2026-10-01-artificial-abiogenesis-smartgoo-research-program.md",
+  "service": "lib/emsenn/services/561-group/services/lenticule-science",
+  "claimClasses": {
+    "D": "demonstrated internally",
+    "E": "externally supported",
+    "P": "engineering proposal",
+    "M": "mathematical conjecture/model",
+    "I": "imaginative possibility"
+  },
+  "ladders": {
+    "material": [
+      "R0-searchable-populations",
+      "R1-persistent-memory",
+      "R2-adaptive-response-learning",
+      "R3-self-repair",
+      "R4-directed-growth",
+      "R5-energy-coupled-maintenance",
+      "R6-compartmentalization",
+      "R7-reproduction",
+      "R8-heredity-variation",
+      "R9-darwinian-selection",
+      "R10-open-ended-evolution"
+    ],
+    "semiotic": [
+      "S0-transduction",
+      "S1-state-dependence",
+      "S2-closed-functional-cycle",
+      "S3-self-maintaining-coupling",
+      "S4-inherited-relation"
+    ]
+  },
+  "families": {
+    "A": {
+      "id": "dynamic-siloxane",
+      "targets": [
+        "R1",
+        "R3"
+      ],
+      "status": "protocol-defined"
+    },
+    "B": {
+      "id": "magnesium-silicate-chemical-garden",
+      "targets": [
+        "R4",
+        "R6"
+      ],
+      "status": "protocol-defined"
+    },
+    "R5": {
+      "id": "energy-coupled-maintenance",
+      "targets": [
+        "R5"
+      ],
+      "status": "protocol-defined"
+    },
+    "J26": {
+      "id": "challenger-morphology",
+      "status": "proposal-under-falsification"
+    }
+  },
+  "schemas": [
+    "content/schemas/artificial-abiogenesis/specimen-v0.1.schema.json",
+    "content/schemas/artificial-abiogenesis/selection-event-v0.1.schema.json",
+    "content/schemas/artificial-abiogenesis/material-offspring-event-v0.1.schema.json",
+    "content/schemas/artificial-abiogenesis/energy-maintenance-run-v0.1.schema.json"
+  ],
+  "questions": [
+    "content/documents/articles/notes/2026/10/01/questions/can-abiotic-siloxane-rich-matter-reproduce-with-heredity.md",
+    "content/documents/articles/notes/2026/10/01/questions/when-does-material-memory-become-learning.md",
+    "content/documents/articles/notes/2026/10/01/questions/when-is-material-maintained-by-environmental-free-energy.md"
+  ],
+  "upstream": [
+    "content/documents/articles/notes/2026/07/25/2026-07-25-note-on-physarum-zeosemiocenum-system-specification.md",
+    "content/documents/articles/notes/2026/07/25/2026-07-25-note-on-physarum-zeosemiocenum-fabrication.md",
+    "content/documents/articles/notes/2026/07/25/2026-07-25-note-on-silica-ring-topology-as-disclination-holonomy.md"
+  ],
+  "runtime": {
+    "holofoam": {
+      "historicalOperations": [
+        "holofoam_holofoam_admit",
+        "holofoam_holofoam_step",
+        "holofoam_holofoam_observe",
+        "holofoam_holofoam_intervene",
+        "holofoam_holofoam_fork_compare"
+      ],
+      "currentCatalogObservation": "2026-10-01: no Holofoam operation exposed",
+      "status": "recovery-needed"
+    },
+    "signstuff": {
+      "status": "exact-historical-referent-unresolved"
+    }
+  },
+  "selectionSemantics": {
+    "missing": "unknown-not-zero",
+    "realityLayers": [
+      "physical",
+      "simulation",
+      "reference-oracle"
+    ],
+    "crossRealityCompetition": false,
+    "fitness": "cohort-local-pareto-plus-explicit-novelty",
+    "materialReproductionEdge": "material-offspring"
+  },
+  "nextFrontier": "R2 learning assay: material itself must persistently change so held-out task performance improves while external decoder/controller remains frozen"
+}

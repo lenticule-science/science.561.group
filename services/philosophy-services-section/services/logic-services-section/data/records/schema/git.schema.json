@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://research-notes.561.group/hacking/library/predication-notes/composting/library/object/library/thing/library/system/library/git/git.schema.json",
+  "title": "git",
+  "description": "The git content-addressed version-control system — a distributed object database whose objects (blobs, trees, commits, tags) are Merkle-DAG nodes addressed by SHA-1/SHA-256 hash. Provides the pre-commit/post-commit/pre-push lifecycle hooks the 561 OS gates on.",
+  "type": "object",
+  "properties": {
+    "name": { "type": "string", "const": "git" }
+  },
+  "required": ["name"]
+}

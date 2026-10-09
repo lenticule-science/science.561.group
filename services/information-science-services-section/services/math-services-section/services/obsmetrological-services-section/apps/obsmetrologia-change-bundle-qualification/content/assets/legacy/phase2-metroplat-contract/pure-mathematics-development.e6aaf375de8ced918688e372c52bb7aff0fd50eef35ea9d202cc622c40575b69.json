@@ -1,0 +1,37 @@
+{
+  "kind": "metroplat.contract",
+  "id": "pure-mathematics-development",
+  "precondition": {
+    "id": "mathematical-demand-admitted",
+    "description": "The customer supplies an immutable Obsmetrologia baseline, a mathematical obligation, its corpus source, and exact verification requirements."
+  },
+  "move": {
+    "id": "develop-and-offer-mathematical-change",
+    "description": "OML derives the mathematical change, uses Lean diagnostics and proof checks, performs the required axiom audit, and packages the delta and evidence without writing the customer's checkout.",
+    "domain": "mathematical-demand",
+    "codomain": "content-addressed-change-bundle-or-refusal",
+    "partial": false,
+    "deterministic": false,
+    "effects": [
+      "evidence",
+      "provider-local-records"
+    ]
+  },
+  "postcondition": {
+    "id": "customer-retains-admission",
+    "description": "The customer receives a content-addressed proposal and evidence or a typed refusal; Obsmetrologia alone decides and records admission."
+  },
+  "boundary": {
+    "customerOwned": [
+      "Obsmetrologia source and history",
+      "mathematical release decision",
+      "Blueprint and Verso admission"
+    ],
+    "providerOwned": [
+      "development proposal",
+      "proof evidence",
+      "axiom audit",
+      "provider refusal"
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://active.development.561.group/articulating/library/aperiodic-articulation-category/commutating/library/aperiodic-nuclear-quartet-category/library/joint-quiescent-corner/library/aperiodic-autopoiesis-cell/library/structural-coupling/structural-coupling.schema.json",
+  "title": "structural-coupling",
+  "description": "The property of an aperiodic-autopoiesis-cell that environmental perturbations are interpreted through the cell's own internal nuclei. The cell is perturbed by histories t' ≠ t but does not directly inherit external structure: the perturbation reshapes (σ_t', Δ_t') via fiberwise variation, and the cell's content at t' is what the new internal nuclei produce, not what the environment directly imposes.",
+  "type": "object",
+  "properties": {
+    "name": { "type": "string", "const": "structural-coupling" }
+  },
+  "required": ["name"]
+}

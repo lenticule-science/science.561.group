@@ -1,0 +1,310 @@
+{
+  "type": "ObsmetrologiaH1DefinitionsMap",
+  "createdAt": "2026-09-04",
+  "office": "emsenn/office/obsmetrologia-consultant",
+  "packageRoot": "lib/emsenn/services/561-group/services/science-services-section/services/information-science-services-section/services/math-services-section/services/obsmetrological-services-section",
+  "leanRoot": "lib/obsmetrologia/Obsmetrologia",
+  "sourceThread": "content/text/documents/articles/notes/2026/07/11/2026-07-11-research-on-infomaterial-top-h1-exchange-thread.md",
+  "auditCommand": "node scripts/audit-set-of-theorems.mjs --source <file> <full name> [...]",
+  "auditFriction": "The audit script's parseAxiomAuditOutput split lake env lean output into lines and matched the 'depends on axioms: [...]' pattern per line; Lean's pretty-printer wraps that message across lines for a long fully-qualified name, so the wrapped case always misreported exists:null. Fixed in src/theorem-audit.mjs (rejoinWrappedAxiomLines) this session; 16/16 existing tests in test/theorem-audit.test.mjs still pass.",
+  "entries": [
+    {
+      "id": "a-settling-cech-h1",
+      "letter": "(a)",
+      "name": "H1Vanishes / h1_vanishes (settling-associated sheaf Čech H¹)",
+      "module": "Obsmetrologia/Cohomology/SettlingCohomologyH1.lean",
+      "cohomologyOf": "A Čech datum Cech1 (a Sheaf.Cover of the settling site's cell base, plus one local F_U-cochain per patch) over the settling-associated sheaf F_U (the AssocSheaf of wave 3) on the bitopological settling site.",
+      "coefficients": "AssocSheaf.Cochain — the bilattice-charge cochain carrier of the settling site itself, not ℤ or ℤ/2.",
+      "leanShape": "def H1Vanishes (D : Cech1) : Prop (Cocycle D → (∃ g, Coboundary D g) ∧ uniqueness); H0 (v)(cells) : Nat is a separate count.",
+      "docstring": "\"H¹ is the obstruction to gluing local sections into one global section. The corpus's load-bearing fact: H¹ = 0 is exactly the cascade settling. It vanishes in the strict (κ < ω) and Scott-continuous (κ = ω) regimes, and can be nonzero only in the non-Scott (transfinite-bounded / aperiodic) regimes.\"",
+      "relations": [
+        {
+          "theorem": "h1_vanishes",
+          "module": "Obsmetrologia/Cohomology/SettlingCohomologyH1.lean",
+          "statement": "H¹ vanishes UNCONDITIONALLY for every Čech datum D (any cover, any local sections) — existence by pointwise gluing (glue_coboundary), uniqueness by Sheaf separation (glue_unique)."
+        },
+        {
+          "theorem": "settling_cohomology_h1_vanishes",
+          "module": "Obsmetrologia/Cohomology/SettlingCohomologyH1.lean",
+          "statement": "Bundles the regime gate (cohomologyVanishes r = true ⟺ r ∈ {strict, scott}) with the unconditional gluing (h1_vanishes) and vanishing above degree 1 (hn_vanishes_above_one). This is the ONE theorem in the whole tree that actually connects Closure.Regime's cohomologyVanishes table to a real Cech1 gluing fact."
+        },
+        {
+          "theorem": "classifying_invariant_zero_strict",
+          "module": "Obsmetrologia/Cohomology/SettlingCohomologyH1.lean",
+          "statement": "cl-inv(v) = [1_F_U] is a coboundary (the identity cochain), hence zero, in the strict/Scott regime."
+        },
+        {
+          "theorem": "bigraded_les_from_ses",
+          "module": "Obsmetrologia/Cohomology/SettlingCohomologyH1.lean",
+          "statement": "The wave-3 SES 0 → F_U → F_U^(k) → F_U^(⊤) → 0 is exact and split, so the truth-knowledge LES degenerates to a direct-sum decomposition of cohomology."
+        },
+        {
+          "theorem": "ofCech1",
+          "module": "Obsmetrologia/Settlement.lean",
+          "statement": "def ofCech1 (D : Cech1) (hcoc : Cocycle D) : Settlement (Base := Cech1) ... packages an agreeing family's glued section (content := glue D, admits := glue_coboundary D hcoc) as one of the four instances of the recurring Settlement cell (tiles_beads_hole_cech1_are_settlements)."
+        }
+      ]
+    },
+    {
+      "id": "b-cover-nerve-h1rank",
+      "letter": "(b)",
+      "name": "CoverNerve.H1rank (coordination cohomology cycle rank)",
+      "module": "Obsmetrologia/Cohomology/CoordinationCohomology.lean",
+      "cohomologyOf": "A CoverNerve — the source–stance bipartite nerve of one logical cell of a federated cover, carried by three Euler counts: entities (0-cells |V|), cells (1-cells |E|), components (Ȟ⁰, union-find connected components |C|).",
+      "coefficients": "Nat — a rank/count (not a group; the shipped cohomologyOfCells' first-cohomology 'magnitude').",
+      "leanShape": "def H1rank (N : CoverNerve) : Nat := (N.cells + N.components) - N.entities.",
+      "docstring": "\"Ȟ¹ — the cycle rank |E| − |V| + |C|. Exactly the shipped cohomologyOfCells first-cohomology rank (magnitude (|E| − |V| + |C|)); the union-find invariant makes the truncated subtraction exact. The number of independent coordination obstructions.\"",
+      "relations": [
+        {
+          "theorem": "h1_vanishes_iff_forest",
+          "module": "Obsmetrologia/Cohomology/CoordinationCohomology.lean",
+          "statement": "H1rank = 0 ⟺ entities = cells + components (the nerve is a forest/acyclic)."
+        },
+        {
+          "theorem": "tree_coordination_free",
+          "module": "Obsmetrologia/Cohomology/CoordinationCohomology.lean",
+          "statement": "Every finite tree's cover nerve has H1rank = 0, fully graph-backed via Discrete.Graph.FinTree.edge_count."
+        },
+        {
+          "theorem": "laplacian_kernel_cokernel",
+          "module": "Obsmetrologia/Cohomology/CoordinationCohomology.lean",
+          "statement": "H0rank = |V| - ρ (kernel), H1rank = |E| - ρ (cokernel) around the incidence rank ρ = |V| - |C| — the Laplacian L = δ⁰ᵀδ⁰ dual reading."
+        },
+        {
+          "theorem": "landauer_zero_iff_reversible / landauer_eq_coordination_cost",
+          "module": "Obsmetrologia/Cohomology/LandauerEntropy.lean",
+          "statement": "landauerBits N := N.H1rank; vanishes iff forest (reversible); equals the coordination cost |E| - (|V| - |C|). Landauer.landauerBits is a bare rename of H1rank, not a new object."
+        },
+        {
+          "theorem": "index_balance",
+          "module": "Obsmetrologia/Cohomology/AntiLandauerEntropy.lean",
+          "statement": "antiLandauerBits N (:= N.H0rank) minus landauerBits N (:= N.H1rank), over Int, equals eulerChar N = |V| - |E| — the discrete index theorem H⁰ - H¹ = χ."
+        },
+        {
+          "theorem": "h1At_eq_landauerBitsAt",
+          "module": "Obsmetrologia/AperiodicOrder/Crystal/Glass.lean",
+          "statement": "Basin-indexed instance: β.h1At b (:= (β.nerveAt b).H1rank) = β.landauerBitsAt b, by rfl. Not a new H¹ definition — a per-basin read of (b)."
+        },
+        {
+          "theorem": "legs_order_into_rank",
+          "module": "Obsmetrologia/Cohomology/CurrencyCocone.lean",
+          "statement": "AUDITED. Every currency price (Čech=0, mint, top/merge, mass, causal) is bounded by the base CoverNerve's H1rank — (b) is the ceiling every other H¹-shadow provably factors through.",
+          "axiomProfile": []
+        }
+      ]
+    },
+    {
+      "id": "c-bigraded-truth-knowledge-h1",
+      "letter": "(c)",
+      "name": "H1T / H1K / H1Top (bigraded truth–knowledge LES quotient H¹s) and the connecting map conn",
+      "module": "Obsmetrologia/Cohomology/BigradedTruthKnowledgeLES.lean",
+      "cohomologyOf": "A GradedTwoTerm — a finite two-term integer cochain complex with a truth grading (Cell/Edge, incidence d, truth masks tCell/tEdge, subcomplex law truth_closed) — the cochain-level model of the bigraded settling site's truth/ambient(knowledge)/record(⊤) sheaves.",
+      "coefficients": "Int (ℤ), taken modulo coboundaries via genuine Setoid quotients: K.truthSetoid, K.ambientSetoid, K.recordSetoid.",
+      "leanShape": "abbrev H1T : Type := Quotient K.truthSetoid; abbrev H1K : Type := Quotient K.ambientSetoid; abbrev H1Top : Type := Quotient K.recordSetoid — the ONLY entries in this map that are genuine algebraic quotient types rather than Nat/Bool/Prop.",
+      "docstring": "H1T: \"H¹ of the truth complex: truth 1-cochains modulo truth coboundaries.\" H1K: \"H¹ of the ambient (knowledge) complex.\" H1Top: \"H¹ of the record (quotient) complex.\" conn: \"δ : H⁰_⊤ → H¹_t — the connecting map: the ambient coboundary of a record cocycle, which is truth-supported, taken as a truth class.\"",
+      "relations": [
+        {
+          "theorem": "six_term_les_objects",
+          "module": "Obsmetrologia/Cohomology/BigradedTruthKnowledgeLES.lean",
+          "statement": "The six-term sequence 0 → H⁰_t → H⁰_k → H⁰_⊤ → H¹_t → H¹_k → H¹_⊤ → 0 is exact at every node (injectivity at the start, exactness at four middle nodes, surjectivity at the end)."
+        },
+        {
+          "theorem": "connecting_zero_of_split",
+          "module": "Obsmetrologia/Cohomology/BigradedTruthKnowledgeLES.lean",
+          "statement": "If record cells are also incident only to truth edges (the split case), the connecting map is identically zero on every record cocycle."
+        },
+        {
+          "theorem": "measurement_connecting_model",
+          "module": "Obsmetrologia/Cohomology/BigradedTruthKnowledgeLES.lean",
+          "statement": "The minimal nonzero-connecting instance: the record generator's connecting class in H¹_t is nonzero and not a truth coboundary — the connecting map δ ≠ 0 is genuinely witnessed, not merely possible."
+        },
+        {
+          "theorem": "quench_connecting_model",
+          "module": "Obsmetrologia/Cohomology/BigradedTruthKnowledgeLES.lean",
+          "statement": "On a stage that preserves the inconsistency mask the connecting map vanishes (connecting_zero_of_charge_invariant); on the quench (orbit cut at the record) the record source's connecting class is a truth coboundary iff the two cut records agree — 'connecting map ≠ 0 ⟺ irreversible step', per the exchange thread's own reading (c)."
+        },
+        {
+          "theorem": "topSupport_eq_mints_add_jumps",
+          "module": "Obsmetrologia/Dynamics/Flow/FreeEnergyLyapunov.lean",
+          "statement": "AUDITED. WELD (c)↔(d): on any ⊤-free predecessor step, the merge's topCount(target) = mints + jumps. The settling-flow register (c, the ledger mint register) and the merge's ℤ/2 context-graph support (d, topCount) differ by exactly the jump register — the exact defect between (c) and (d).",
+          "axiomProfile": ["propext", "Quot.sound"]
+        }
+      ]
+    },
+    {
+      "id": "d-context-graph-h1",
+      "letter": "(d)",
+      "name": "Coboundary / delta0 (ℤ/2 context-graph Čech H¹ for parity contextuality)",
+      "module": "Obsmetrologia/QuantumContextuality/CohomologicalContextuality.lean",
+      "cohomologyOf": "The context graph of a parity (XOR-constraint) measurement scenario — measurements as vertices, jointly-measurable two-element contexts as edges (a graph, not a poset order complex or a settling-site cover).",
+      "coefficients": "Bool with xor — (Bool, xor) ≅ ℤ/2ℤ.",
+      "leanShape": "def delta0 (f : M → Bool) (i j : M) : Bool := f i != f j; def Coboundary (S : Scenario M) (φ : M → M → Bool) : Prop := ∃ f, ∀ i j (context edge), φ i j = delta0 f i j. No named quotient-type H¹ — the obstruction lives as the negated Prop ¬ Coboundary S φ, witnessed by nonvanishing 4-/3-cycle sums.",
+      "docstring": "\"the obstruction is an ordinary Čech H¹ of the context graph (measurements as vertices, contexts as edges) valued in the two-element group (Bool, xor) ≅ ℤ/2ℤ, computed by a coboundary map δ⁰ exactly as Causal.Cohomology.delta0 computes the causal order complex's, generalized here from a poset's order complex to an arbitrary graph.\" Header also states, of (a): \"the single-section Čech H¹ of Cohomology.SettlingCohomologyH1 is vacuous for measurement scenarios (Cohomology.h1_vanishes makes every single-valued sheaf flasque)\" — quoting QuantumContextuality.SupportContextuality's own header verbatim.",
+      "relations": [
+        {
+          "theorem": "hasGlobalSection_iff_coboundary",
+          "module": "Obsmetrologia/QuantumContextuality/CohomologicalContextuality.lean",
+          "statement": "For a ParityModel whose contexts are all pairs, HasGlobalSection ⟺ Coboundary — the possibilistic gluing question IS the graph-cohomology coboundary question."
+        },
+        {
+          "theorem": "not_coboundary_of_cycle_sum_true",
+          "module": "Obsmetrologia/QuantumContextuality/CohomologicalContextuality.lean",
+          "statement": "A 4-cycle (or 3-cycle) whose φ-edge XOR-sum is true witnesses ¬ Coboundary — a nonvanishing H¹ class, e.g. the PR box."
+        },
+        {
+          "theorem": "two_spread_ledger",
+          "module": "Obsmetrologia/QuantumContextuality/CohomologicalContextuality.lean",
+          "statement": "AUDITED. The idempotent Belnap price (topCount, = (d)), the counting record mass (massSum), and the cycle rank ((b), H1rank) are three distinct prices for one obstruction, ordered topCount ≤ massSum ≤ H1rank, with the two inequalities strict on different carriers (figure-eight opens cover/mass; theta graph opens mass/rank).",
+          "axiomProfile": ["propext", "Quot.sound"]
+        },
+        {
+          "theorem": "topCount_le_massSum",
+          "module": "Obsmetrologia/QuantumContextuality/CohomologicalContextuality.lean",
+          "statement": "The idempotent Belnap topCount never exceeds the counting merge's massSum — pointwise, the indicator is bounded by the mass it indicates."
+        }
+      ]
+    },
+    {
+      "id": "e-causal-order-complex-h1",
+      "letter": "(e)",
+      "name": "Cocycle / Coboundary (causal order-complex H¹)",
+      "module": "Obsmetrologia/CausalSets/Causal/Cohomology.lean",
+      "cohomologyOf": "The order complex (nerve) of the causal poset: OneSimplex = causally-related pairs a ≤ b, TwoSimplex = composable chains a ≤ b ≤ c.",
+      "coefficients": "Int (ℤ).",
+      "leanShape": "def Cocycle (φ : C1 C) : Prop := delta1 C φ = fun _ => 0; def Coboundary (φ : C1 C) : Prop := ∃ f, φ = delta0 C f. Like (e)'s neighbour (d), no named quotient type — H¹ is stated in prose as 'cocycles / coboundaries', not constructed as a Lean Quotient.",
+      "docstring": "\"A cocycle is a closed 1-cochain (δ¹ φ = 0), a coboundary is an exact one (φ = δ⁰ f); every coboundary is a cocycle, and H¹ = cocycles / coboundaries is the obstruction — it can be nonzero (that is the cl-inv class; finite causal sets are not order-complex-acyclic in general).\"",
+      "relations": [
+        {
+          "theorem": "delta1_delta0",
+          "module": "Obsmetrologia/CausalSets/Causal/Cohomology.lean",
+          "statement": "δ¹ ∘ δ⁰ = 0 — the defining cochain-complex identity, telescoping over ℤ."
+        },
+        {
+          "theorem": "coboundary_cocycle",
+          "module": "Obsmetrologia/CausalSets/Causal/Cohomology.lean",
+          "statement": "Every coboundary is a cocycle — im δ⁰ ⊆ ker δ¹, the inclusion whose quotient is H¹ (H¹ itself is never constructed as a Lean type here)."
+        },
+        {
+          "theorem": "causal_cochain_complex",
+          "module": "Obsmetrologia/CausalSets/Causal/Cohomology.lean",
+          "statement": "Bundled headline: δ¹∘δ⁰=0, coboundaries are cocycles, and an empty wavefront forces a trivial (coboundary) class."
+        },
+        {
+          "theorem": "reduced_coboundary_is_parity_gradient",
+          "module": "Obsmetrologia/CausalSets/Causal/Cohomology.lean",
+          "statement": "AUDITED. WELD (e)↔(d): mod-two reduction of the causal ℤ-gradient is a chain map onto the merge's ℤ/2 Boolean gradient; the merge's frustrated support (d) sits inside the causal wavefront (e) — 'the causal ordering cost dominates the contextuality cost'.",
+          "axiomProfile": ["propext", "Quot.sound"]
+        },
+        {
+          "theorem": "intGrad_even_iff_parity_agree",
+          "module": "Obsmetrologia/CausalSets/Causal/Cohomology.lean",
+          "statement": "The causal ℤ-gradient is even on an edge exactly when the reduced endpoints share parity — the chain-map fact reduced_coboundary_is_parity_gradient rests on."
+        }
+      ]
+    },
+    {
+      "id": "unlettered-anderson-putnam-clinv",
+      "letter": "unlettered",
+      "name": "OneVertexComplex.NonzeroH1Class / H1Class / H1Carrier — the Anderson–Putnam classifying-invariant model (cl-inv)",
+      "module": "Obsmetrologia/AperiodicOrder/Tiling/Witness/JeandelRao.lean (base complex); Obsmetrologia/AperiodicOrder/Tiling/Classification.lean (H1Class, H1Carrier, Settling.clInv); Obsmetrologia/Cohomology/FiringGenerators.lean (the transfinite-bounded concrete witness)",
+      "cohomologyOf": "A finite ONE-VERTEX Anderson–Putnam cochain complex: C0 = ℤ (single vertex, so δ⁰ = 0 for free), C1 = ℤ^Edge, C2 = ℤ^Face, δ¹ via boundary map d2. Since δ⁰ = 0 identically, the only coboundary is 0, so every nonzero cocycle already IS a nonzero H¹ class.",
+      "coefficients": "Int (ℤ). H1Class models a class abstractly as a single Int coord (a rank-1 free-generator coordinate).",
+      "leanShape": "structure OneVertexComplex (Edge, Face, edges, d2); def OneVertexComplex.NonzeroH1Class (phi) : Prop := IsCocycle phi ∧ ∃ e, phi e ≠ 0; structure H1Class (coord : Int); structure H1Carrier (K : OneVertexComplex, cochain, gen, closed); def H1Carrier.clInv (c) : H1Class := ⟨c.cochain c.gen⟩; structure Settling (regime, carrier, vanishing).",
+      "docstring": "OneVertexComplex.NonzeroH1Class: \"A nonzero H¹ class in the one-vertex complex: a cocycle with a nonzero value somewhere. Since δ⁰ = 0 here, the only coboundary is 0, so a nonzero cocycle is a nonzero class.\" H1Class: \"An abstract H¹-class type — the values of cl-inv. A model: the cohomology H¹(T*_{≤κ}, F_U) realized as an additive group of classes, with a distinguished zero... We keep it abstract via a carrier with a distinguished zero so the dichotomy can speak of cl-inv = 0.\"",
+      "note": "H1Class's own docstring calls it a model of the SAME object as (a) (H¹(T*_{≤κ}, F_U)), read in the aperiodic/transfinite-bounded regime where (a)'s Cech1 model does not itself construct a nonzero witness. It is not one of the exchange thread's lettered five, but it is the concrete carrier the thread's (a) points to for its nonvanishing case ('the content of the next module').",
+      "relations": [
+        {
+          "theorem": "firingGen_nonzero_h1_class",
+          "module": "Obsmetrologia/Cohomology/FiringGenerators.lean",
+          "statement": "Every firing generator firingGen i (a Kronecker-delta cochain scaled by the derived jumpValue = 1) is a NonzeroH1Class of the one-vertex firingComplex — the transfinite-bounded regime's H¹-generators e_μ."
+        },
+        {
+          "theorem": "transfiniteBounded_h1_generators",
+          "module": "Obsmetrologia/Cohomology/FiringGenerators.lean",
+          "statement": "Headline: the 3 firing generators are ℤ-linearly independent (firingLinComb_eq_zero_iff), the concrete Settling tbWitness classifies to ClosureRegime.transfiniteBounded via BOTH the decidable-flag and real-ordinal routes with clInv ≠ H1Class.zero, and the Scott-continuous contrast has NO nonzero H¹ class at all."
+        },
+        {
+          "theorem": "aperiodicWitness_clinv_nonzero",
+          "module": "Obsmetrologia/AperiodicOrder/Tiling/Classification.lean",
+          "statement": "The aperiodic-regime witness has clInv ≠ H1Class.zero — the base case this module's cohomEquiv/mld_refines_cohEquiv classification frontier is built on."
+        },
+        {
+          "theorem": "coordCarrier_clInv",
+          "module": "Obsmetrologia/AperiodicOrder/Tiling/Classification.lean",
+          "statement": "The one-edge no-face 'coordinate carrier' realizes any integer class n directly: (coordCarrier n).clInv = ⟨n⟩ — H¹ ≅ ℤ in this rank-1 model."
+        }
+      ]
+    },
+    {
+      "id": "unlettered-h1-homology-verdier-dual",
+      "letter": "unlettered",
+      "name": "H1Homology — the cosheaf-homology Verdier dual of H1Class",
+      "module": "Obsmetrologia/AperiodicOrder/Tiling/CoClassifying.lean",
+      "cohomologyOf": "The dual cosheaf F̌_v of the settling-associated sheaf, on the Boolean d-frame (DFrame.dframe_of_bitopological) — the strict-Boolean case only, by the module's own scope statement.",
+      "coefficients": "Int (ℤ), as dualCoord — an isomorphic copy of H1Class's coord.",
+      "leanShape": "structure H1Homology (dualCoord : Int); def dSpatial (x : H1Class) : H1Homology := ⟨x.coord⟩ — a bijection proved by rfl in both directions.",
+      "docstring": "\"H1Homology is a coordinate-isomorphic copy of H1Class, and the spatial Verdier map dSpatial : H1Class → H1Homology, dSpatial ⟨c⟩ = ⟨c⟩, is a bijection definitionally (rfl) — not a proof that the cosheaf homology of the dual cosheaf F̌_v computes to H₁ in general. That general Verdier duality (via the derived-functor 𝔻, q-fuzzy) is open, recorded as blueprint node thm:aperiodic-verdier-duality.\"",
+      "note": "Explicitly NOT an independently-derived cohomology computation — it is a renamed copy of the previous entry's H1Class, with the module's own header stating the general (non-strict-Boolean) identification is open.",
+      "relations": [
+        {
+          "theorem": "dSpatial_injective / dSpatial_surjective",
+          "module": "Obsmetrologia/AperiodicOrder/Tiling/CoClassifying.lean",
+          "statement": "dSpatial : H1Class → H1Homology is a bijection (both directions rfl-proved)."
+        },
+        {
+          "theorem": "dSpatial_zero",
+          "module": "Obsmetrologia/AperiodicOrder/Tiling/CoClassifying.lean",
+          "statement": "dSpatial H1Class.zero = H1Homology.zero — the duality is zero-preserving."
+        },
+        {
+          "theorem": "coClInv_aperiodicWitness_nonzero",
+          "module": "Obsmetrologia/AperiodicOrder/Tiling/CoClassifying.lean",
+          "statement": "The co-classifying invariant transports aperiodicWitness's nonvanishing across dSpatial: coClInv aperiodicWitness ≠ H1Homology.zero."
+        }
+      ]
+    },
+    {
+      "id": "unlettered-regime-cohomology-table",
+      "letter": "unlettered",
+      "name": "cohomologyVanishes (Closure.Regime) and curvatureRank (Dynamics.Flow.CurvatureRegime) — the regime-indexed H¹ summary table",
+      "module": "Obsmetrologia/Closure/Regime.lean (cohomologyVanishes); Obsmetrologia/Dynamics/Flow/CurvatureRegime.lean (curvatureRank)",
+      "cohomologyOf": "NOT itself a cohomology object — a table of Bool / Option Nat values indexed by the four ClosureRegime values (strict/scott/transfiniteBounded/aperiodic), whose own docstring claims to report whether (a)'s settling-associated-sheaf H¹ vanishes in each regime.",
+      "coefficients": "Bool (cohomologyVanishes); Option Nat (curvatureRank — some 0 = zero rank/flat, none = positive and possibly-uncountable rank/curved).",
+      "leanShape": "def cohomologyVanishes : ClosureRegime → Bool | strict => true | scott => true | transfiniteBounded => false | aperiodic => false; def curvatureRank : ClosureRegime → Option Nat | strict => some 0 | scott => some 0 | transfiniteBounded => none | aperiodic => none.",
+      "docstring": "cohomologyVanishes: \"Whether the settling-associated sheaf's H¹ vanishes in a given regime: true (cohomology vanishes) in the strict and Scott regimes; false in the transfinite-bounded and aperiodic regimes, where the cohomological content is concentrated.\" curvatureRank: \"The curvature-module rank rank H¹ : ClosureRegime → Option Nat. A flat regime has zero curvature events, so rank H¹ = some 0... A curved regime has ≥ 1 curvature event and possibly uncountably many... so we record it as none.\"",
+      "relations": [
+        {
+          "theorem": "cohomologyVanishes_iff",
+          "module": "Obsmetrologia/Closure/Regime.lean",
+          "statement": "cohomologyVanishes r = true ⟺ r = strict ∨ r = scott. Proved by exhaustion over the Bool table — a stipulation confirmed decidable, not derived from any Cech1/CoverNerve/GradedTwoTerm object at this point in the tree."
+        },
+        {
+          "theorem": "settling_cohomology_h1_vanishes",
+          "module": "Obsmetrologia/Cohomology/SettlingCohomologyH1.lean",
+          "statement": "THE theorem that connects this table to entry (a)'s real Cech1 object: given cohomologyVanishes r = true, every Čech datum's agreeing family glues uniquely (H¹ = 0 for the settling sheaf). This is the only theorem in the tree tying the Regime.lean table to an actual gluing computation."
+        },
+        {
+          "theorem": "rank_zero_iff_vanishes",
+          "module": "Obsmetrologia/Dynamics/Flow/CurvatureRegime.lean",
+          "statement": "curvatureRank r = some 0 ⟺ cohomologyVanishes r = true — the Option Nat rank model and the Bool gate agree exhaustively (both stipulated tables, cross-checked against each other, not against a computed rank)."
+        },
+        {
+          "theorem": "rank_nonzero_has_nsc_firing (named in CurvatureRegime.lean, not separately audited here)",
+          "module": "Obsmetrologia/Dynamics/Flow/CurvatureRegime.lean",
+          "statement": "Ties curvatureRank's curved case to a witnessing NSC firing (Flow.NSCFiring.IsNSC), which is what FiringGenerators.lean's concrete NonzeroH1Class witnesses (the 'unlettered-anderson-putnam-clinv' entry) realize as an actual nonzero class — the one place in the tree where the table's 'false'/'none' case is backed by a constructed nonzero cocycle rather than left as an unwitnessed stipulation."
+        }
+      ]
+    }
+  ],
+  "provenPartialUnification": {
+    "name": "PricedNerve / colimitPrice — the currency cocone over (a)-(e)",
+    "module": "Obsmetrologia/Cohomology/CurrencyCocone.lean",
+    "statement": "A structure PricedNerve bundles Nat-valued PRICES read off five of the objects above (cechPrice=0 for (a), massPrice/topPrice for (d), mintPrice/jumpPrice for (c), causalPrice for (e), base.H1rank for (b)), constrained by three proved edges (spread: topPrice ≤ massPrice ≤ base.H1rank; ledger_split: mintPrice + jumpPrice = topPrice; causal_dominates: topPrice ≤ causalPrice). legs_order_into_rank (audited, zero axioms) proves every leg factors through legRank = (b)'s H1rank. colimitPrice := max(massPrice, causalPrice) is PROVED to be the least upper bound (colimit_universal, legs_le_colimitPrice, colimitPrice_unique) in the poset category (ℕ, ≤) — this is a genuine, already-built, machine-checked colimit.",
+    "scope": "This unifies the five objects' NAT-VALUED PRICES (Landauer-bit shadows) under one order-theoretic colimit. It does NOT unify the five objects THEMSELVES, which live in different Lean types (Prop for (a) and (e)'s raw Cocycle/Coboundary, Nat for (b), Quotient types for (c), Bool-valued Coboundary-Prop for (d)) — the cocone is a colimit of DERIVED NUMBERS, not a colimit of cohomology functors."
+  },
+  "regimeTableRefersTo": {
+    "claimedReferent": "The settling-associated sheaf F_U's Čech H¹ — SettlingCohomologyH1.lean's Cech1/H1Vanishes object (entry a) — per cohomologyVanishes's own docstring: \"Whether the settling-associated sheaf's H¹ vanishes in a given regime\".",
+    "connectingTheorem": "settling_cohomology_h1_vanishes (Obsmetrologia/Cohomology/SettlingCohomologyH1.lean) takes cohomologyVanishes r = true as a hypothesis and discharges it into a real Cech1-gluing statement — this IS the connecting theorem the table's claim rests on.",
+    "caveat": "The gluing/uniqueness conjunct of settling_cohomology_h1_vanishes is proved UNCONDITIONALLY (h1_vanishes holds for every Cech1 with no regime hypothesis at all, per that module's own header note); hr is used only to discharge the regime-dichotomy conjunct (r = strict ∨ r = scott), not to gate the gluing itself. So the table's Bool value is checked against the regime-membership fact, not against a computed nonvanishing H¹ in the transfiniteBounded/aperiodic cases — nonvanishing is witnessed only downstream, by FiringGenerators.lean's concrete NonzeroH1Class construction (via CurvatureRegime.lean's rank_nonzero_has_nsc_firing bridge), which is a DIFFERENT Lean object (the AperiodicOrder OneVertexComplex model) from Cech1."
+  }
+}

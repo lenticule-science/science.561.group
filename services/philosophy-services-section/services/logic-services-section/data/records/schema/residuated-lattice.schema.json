@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://research-notes.561.group/hacking/library/predication-notes/composting/library/lattice/library/residuated-lattice/residuated-lattice.schema.json",
+  "title": "Residuated lattice",
+  "description": "JSON Schema for a bounded integral commutative residuated lattice as data: a lattice ⟨L, ⊓, ⊔, ⊥, ⊤⟩ extended with a binary fusion operation ⊗ and its right residual →, where ⊗ is commutative monoidal with unit = ⊤. The residuation law a ⊗ b ≤ c iff a ≤ b → c and the monoidal axioms are not expressible in JSON Schema and must be checked by a verifier.",
+  "type": "object",
+  "required": ["carrier", "meet", "join", "bottom", "top", "fusion", "right-residual", "unit"],
+  "additionalProperties": false,
+  "properties": {
+    "carrier": {
+      "description": "The underlying set L as a finite array of distinct symbolic values.",
+      "type": "array",
+      "items": {"type": "string"},
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "meet":           {"$ref": "#/$defs/binaryOperation", "description": "⊓ : L × L → L."},
+    "join":           {"$ref": "#/$defs/binaryOperation", "description": "⊔ : L × L → L."},
+    "bottom":         {"type": "string", "description": "Lattice bottom ⊥."},
+    "top":            {"type": "string", "description": "Lattice top ⊤. Equal to the fusion unit for integrality."},
+    "fusion":         {"$ref": "#/$defs/binaryOperation", "description": "⊗ : L × L → L; fusion[a][b] is a ⊗ b. Commutative monoidal with unit = top."},
+    "right-residual": {"$ref": "#/$defs/binaryOperation", "description": "→ : L × L → L; right-residual[a][b] is a → b. Adjoint to fusion: a ⊗ b ≤ c iff a ≤ b → c."},
+    "unit":           {"type": "string", "description": "Monoidal unit of fusion. Integrality requires unit == top."}
+  },
+  "$defs": {
+    "binaryOperation": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": {"type": "string"}
+      }
+    }
+  }
+}

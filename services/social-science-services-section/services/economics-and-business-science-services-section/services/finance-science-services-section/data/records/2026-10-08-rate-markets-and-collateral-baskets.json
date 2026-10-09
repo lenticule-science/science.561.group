@@ -1,0 +1,260 @@
+{
+  "$schema": "../../../../../../../../data/records/schema/literature-measurement.schema.json",
+  "id": "rate-markets-and-collateral-baskets",
+  "kind": "literature-measurement",
+  "question": "How do Liquity v2 (user-set interest rates, rate-ordered redemption), Reserve (basket RTokens with staked-RSR first loss) and Mento (reserve-backed FX stables) price and bear risk in pooled collateral?",
+  "frame": {
+    "population": "collateralised stablecoin and basket-token protocols",
+    "exposure": "contract source, docs, DeFiLlama",
+    "comparator": "a Tidepool pool pricing its own credit",
+    "outcomes": [
+      "rate setting",
+      "redemption order",
+      "loss ordering",
+      "scale"
+    ]
+  },
+  "notes": [
+    "../../content/text/documents/articles/notes/2026/10/08/2026-10-08-rate-markets-and-collateral-baskets.md"
+  ],
+  "sources": [
+    {
+      "item": {
+        "id": "liquitybold2026",
+        "type": "software",
+        "title": "liquity/bold (Liquity v2): Constants.sol and README",
+        "author": [
+          {
+            "literal": "Liquity V2 Source"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              8
+            ]
+          ]
+        },
+        "URL": "https://github.com/liquity/bold"
+      },
+      "design": "protocol-source-code",
+      "findings": [
+        {
+          "finding": "Borrowers set their own annual interest rate on each Trove, within MIN_ANNUAL_INTEREST_RATE 0.5 percent and MAX_ANNUAL_INTEREST_RATE 250 percent; changing it earlier than INTEREST_RATE_ADJ_COOLDOWN (7 days) after the last change costs an upfront fee of UPFRONT_INTEREST_PERIOD (7 days) of interest at the system average rate.",
+          "exactSourceLanguage": "uint256 constant MIN_ANNUAL_INTEREST_RATE = _1pct / 2; // 0.5%"
+        },
+        {
+          "finding": "Redemption: redeemCollateral swaps BOLD for collateral from the Troves with the lowest interest rates first (SortedTroves ordered by rate); redemption fee floor REDEMPTION_FEE_FLOOR 0.5 percent; base rate decays with a 6-hour half-life (REDEMPTION_MINUTE_DECAY_FACTOR); initial base rate 100 percent so no redemptions unless BOLD depegs below 0.95. A low-rate borrower is therefore the first to be redeemed against: the rate is a price paid for redemption protection.",
+          "exactSourceLanguage": "Splits the BOLD redemption according to the redemption routing logic"
+        },
+        {
+          "finding": "Interest split: SP_YIELD_SPLIT = 75 percent of minted interest goes to the Stability Pool and the rest to a yield router for DEX LP incentives (a mock contract in the repository). Interest can be delegated: setInterestIndividualDelegate lets a delegate adjust a Trove's rate within [min, max]; batch managers set one rate for a batch of Troves and charge an annual fee up to 10 percent (MAX_ANNUAL_BATCH_MANAGEMENT_FEE)."
+        },
+        {
+          "finding": "Collateral-branch shutdown on severe price collapse or oracle failure freezes borrower operations except closing, freezes interest accrual and enables urgent redemptions with a 2 percent bonus (URGENT_REDEMPTION_BONUS). Zombie Troves: redemptions leave Troves open and flag those below MIN_DEBT (2,000 BOLD). Last commit in clone 2026-09-26."
+        }
+      ],
+      "readFrom": "source-code",
+      "observedAt": "2026-10-08"
+    },
+    {
+      "item": {
+        "id": "reservesource2026",
+        "type": "software",
+        "title": "reserve-protocol/protocol: overview, recollateralization docs, audits",
+        "author": [
+          {
+            "literal": "Reserve Protocol Source"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              8
+            ]
+          ]
+        },
+        "URL": "https://github.com/reserve-protocol/protocol"
+      },
+      "design": "protocol-source-code",
+      "findings": [
+        {
+          "finding": "An RToken is an ERC-20 for a basket of multi-unit value (USD, ETH, other units with collateral). Components: Main, AssetRegistry, BasketHandler, BackingManager (holds collateral, rebalances through Broker trades when undercollateralized), Broker (dutch auctions, Gnosis EasyAuction batch fallback), Distributor, Furnace (melts RTokens slowly to pay yield to holders), StRSR (staked RSR, slashed on seizure), RToken, RevenueTrader.",
+          "exactSourceLanguage": "Furnace: This contract is responsible for melting RTokens, distributing yield to RToken holders."
+        },
+        {
+          "finding": "Loss ordering: the protocol first trades to restore backing, then seizes staked RSR (the overcollateralization layer), and only then \"takes a haircut\" by reducing RToken.basketsNeeded() to current holdings so the RToken becomes collateralized by definition. StRSR warns that when all RSR is seized balances reset to zero.",
+          "exactSourceLanguage": "take a haircut"
+        },
+        {
+          "finding": "Audits in repo: Ackee, Certora (FixLib), Code4rena releases 2.1.0, 3.0.0 (core and collaterals), 4.0.0, Halborn, Oak Security 2026-03-12 (Reserve Updates). Deployed as immutable implementations; users deploy proxies through a Deployer. Last commit in clone 2026-09-23."
+        }
+      ],
+      "readFrom": "source-code",
+      "observedAt": "2026-10-08"
+    },
+    {
+      "item": {
+        "id": "mentodocs2026",
+        "type": "webpage",
+        "title": "docs.mento.org: Mento V3 overview",
+        "author": [
+          {
+            "literal": "Mento Docs"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              8
+            ]
+          ]
+        },
+        "URL": "https://docs.mento.org/mento"
+      },
+      "design": "protocol-documentation",
+      "findings": [
+        {
+          "finding": "Mento V3 is described as \"A decentralized exchange (DEX) for onchain foreign exchange (FX)\" using Fixed-Price Market Makers that quote an oracle rate instead of deriving price from reserves; \"Today, Chainlink is the only oracle source used in Mento V3\". USDm and EURm are backed by the Reserve, other stables such as GBPm by collateralized debt positions.",
+          "exactSourceLanguage": "Today, Chainlink is the only oracle source used in Mento V3."
+        }
+      ],
+      "readFrom": "first-party-docs",
+      "observedAt": "2026-10-08",
+      "notFound": [
+        "Reserve composition, Broker and BiPoolManager mechanics, the Celo L2 transition text and a full list of stablecoins; not on the page read"
+      ]
+    },
+    {
+      "item": {
+        "id": "ratesdefillama2026",
+        "type": "software",
+        "title": "DeFiLlama reads: Liquity v2, Reserve Protocol, Mento v2, Sky Lending",
+        "author": [
+          {
+            "literal": "DeFiLlama Rate Markets"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              8
+            ]
+          ]
+        },
+        "URL": "https://api.llama.fi/protocols"
+      },
+      "design": "dashboard-measurement",
+      "findings": [
+        {
+          "finding": "TVL on 2026-10-08 with peak: Liquity V2 100,310,300 USD (peak 180,025,138 at unix 1759795200), Liquity V1 182,353,910; Reserve Protocol 38,600,043 (Ethereum 36,041,021; Base 2,550,976; staking 7,322,842; peak 529,713,328 at unix 1757721600); Mento V2 12,853,660 (Ethereum 6,783,122; Celo 5,351,797; Monad 718,740; peak 858,703,706 at unix 1635292800); Mento V3 4,701,027; Sky Lending 5,905,627,762 (staking series 797,998,846; peak 19,820,031,254)."
+        }
+      ],
+      "readFrom": "api-read",
+      "observedAt": "2026-10-08"
+    },
+    {
+      "item": {
+        "id": "celochain2026",
+        "type": "software",
+        "title": "Celo mainnet reads via forno.celo.org (block 79591962)",
+        "author": [
+          {
+            "literal": "Celo Chain Reads"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              8
+            ]
+          ]
+        },
+        "URL": "https://forno.celo.org"
+      },
+      "design": "on-chain-measurement",
+      "findings": [
+        {
+          "finding": "chain id 42220, latest block 79,591,962 at unix 1791492720. The OP-stack predeploys answer: GasPriceOracle 0x420000000000000000000000000000000000000F isEcotone() = true and L2ToL1MessagePasser 0x4200000000000000000000000000000000000016 has code, so Celo mainnet is an OP-stack L2."
+        },
+        {
+          "finding": "Token 0x765DE816845861e75A25fCA122bb6898B8B1282a (the former cUSD address) reads name \"Mento Dollar\", symbol \"USDm\", totalSupply 13,571,678.948 on that block."
+        }
+      ],
+      "readFrom": "on-chain-read",
+      "observedAt": "2026-10-08",
+      "notFound": [
+        "cCOP and other Mento regional stable supplies; not queried",
+        "Toucan and Regen on Celo; no first-party surface read"
+      ]
+    }
+  ],
+  "searches": [
+    {
+      "register": "other",
+      "variables": {
+        "q": "git clone liquity/bold; reserve-protocol/protocol"
+      },
+      "observedAt": "2026-10-08",
+      "count": 2,
+      "included": [
+        "liquitybold2026",
+        "reservesource2026"
+      ]
+    },
+    {
+      "register": "defillama-api",
+      "variables": {
+        "path": "/protocol/liquity-v2, reserve-protocol, mento-v2, sky-lending"
+      },
+      "observedAt": "2026-10-08",
+      "count": 4,
+      "included": [
+        "ratesdefillama2026"
+      ]
+    },
+    {
+      "register": "web",
+      "variables": {
+        "q": "docs.celo.org L2 and docs.regen.network"
+      },
+      "observedAt": "2026-10-08",
+      "count": 1,
+      "included": [],
+      "reading": "docs.celo.org/what-is-celo/about-celo-l2 returned 404; docs.regen.network is a landing page that names Cosmos SDK ecocredits and gives no statistics, so Regen and Toucan are not claimed."
+    },
+    {
+      "register": "other",
+      "variables": {
+        "q": "forno.celo.org chain reads"
+      },
+      "observedAt": "2026-10-08",
+      "count": 1,
+      "included": [
+        "celochain2026"
+      ]
+    },
+    {
+      "register": "web",
+      "variables": {
+        "q": "docs.mento.org Mento reserve composition cUSD cCOP"
+      },
+      "observedAt": "2026-10-08",
+      "count": 1,
+      "included": [
+        "mentodocs2026"
+      ],
+      "reading": "cUSD and cCOP are not named on the V3 overview; the stablecoins are named USDm, EURm and GBPm there."
+    }
+  ]
+}

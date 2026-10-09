@@ -1,0 +1,55 @@
+---
+author: emsenn
+id: 9f14134d-6d59-4317-9352-b3a200193a4b
+title: "Post to @emsenn@kolektiva.social, 2025-09-20 08:29h, On Oktoberfest as Bavarian genring and its relationship to Indianthusiasm"
+date-created: 2025-09-20
+type: post to @emsenn@kolektiva.social
+visibility: public
+description: My last post was on talking like a pirate, since yesterday was Talk Like a Pirate Day.
+---
+
+My last post was on talking like a pirate, since yesterday was Talk Like a Pirate Day.
+
+That post was popular, so I figured I'd try something similar for today, the start of Oktoberfest.
+
+So, Oktoberfest. Beer tents, Tracht, dirndls. A feel-good return to Volk roots, especially for people of German descent who now live outside of Germany. Here in the Upper Midwest, it's a popular thing. The specific aesthetic comes the 19th century, when urban German elites romanticizied Alpine peasant dress as their "heritage." (I recall an adorable photograph of a young Ludwig Wittgenstein looking very grumpy in a woolen hat.)
+
+But - perhaps not surprising - this fun manifestation of quirky German nationalism has troubling roots: what's known in German scholarship (thanks to Hartmut Lutz) as "Indianthusiasm": the fetishization of Native American culture, especially Plains Indians like the Lakota (like me). (Actually it might be worth mentioning that I'm Lakota and Swiss, so share a rather broad experience with the ideas below.)
+
+My nation, and others, were transformed into props for a German story of authenticity that will get reproduced in naive ways all over the United States today.
+
+The misunderstanding of Plains culture within German understanding really started with Karl May's *Winnetou* novels, the first of which was published in 1875. (Winnetou was often represented in Plains territory, despite being Apache, showing how badly the misunderstanding ran.)
+
+Karl May, still one of the best-selling German authors, never visited America, but that didn't stop him from churning out books that established what it meant to be a Native American, in the minds of German readership - and many other readers, as the books were translated into other European languages.
+
+The books established a phenomenonal number of the tropes that I still find people rely on to shape their understanding of my culture and who I am, which, as a personal aside, is very frustrating. Imagine, white settler reader, if everyone treated you like a character from Great Expectations, everywhere you went? Or, perhaps more accurately, assumed you would behave like the characters in Atlas Shrugged.
+
+What May’s novels really did was reduce Lakota and other Plains nations to a set of repeatable genres. The “noble savage,” the feathered warrior, the mystical medicine man, the tipi-and-buffalo camp: these all became fixtures of story, not life. Lakota people became legible only when they fit those roles, which were endlessly copied in pulp, plays, Wild West shows, and hobby clubs. The result is that “being Lakota” was re-written as “being recognizable as Winnetou.” Anything else (politics, farming, modernity) disappeared.
+
+This wasn't just happening in Germany, though. Buffalo Bill's Wild West Show was re-teaching Americans how to view us Lakota: not as a mortal threat to the settler ability to continue genocide, but as quirky historical relics that shows… well, again, I don't need to repeat Nazi rhetoric.
+
+And when the Wild West Show went to Germany, it taught those same messages.
+
+These messages were incredibly popular among the German public and its politicians, especially after World War I. When the Nazi regime was banning most books, Winnetou was actively promoted, because… well, I don't need to explain Nazi rhetoric here.
+
+After the war, there were many Winnetou movies made, and there were even festivals established to celebrate Winnetou, Karl-May-Festspiele in Bad Segeberg. These festivals developed into the many "Indianer" clubs that stage events for appropriating Plains culture.
+
+And, like I said, this hasn't been a neutral process. German scholarship shows how from the Kaiserreich to Third Reich, Plains Indians were the stage and props for German debates about identity, nature, and empire. We were even used as a surrogate for power they lacked: imagined to naturalize the Volksgemeinschaft.
+
+This imagination didn't require Native people, but certain ideas about native people: those built through the racist treatment that had unfolded over the previous 150+ years.
+
+Oktoberfest does the same kind of work, only turned inward. Bavarians (and Germans more broadly) get staged through their own set of stereotypes: the dirndl maiden, the lederhosen farmer, the hearty beer-drinker, the yodeling band. These, too, were codified in the late 19th century, just like May’s Indians: an urban elite invention that re-packaged Alpine peasant life into a consumable image. Again, the living complexity of German society disappears, and what remains is the costume, the mug, the cheer.
+
+What ties the “noble Indian” and the “hearty Bavarian” together is that they are not two different sets of characters, but the same genre figure deployed in different directions. Both were produced by the same nineteenth-century Romantic nationalist belief system, which tried to stabilize identity through images of “authentic folk.”
+
+For Germans looking outward, the Plains Indian became the fantasy of the natural, noble, unspoiled other: close to land, simple, communal, timeless.
+
+For Germans looking inward, the Bavarian peasant was cast in almost the exact same terms: rustic, hearty, close to land, simple, communal, timeless.
+
+In both cases, the character is constructed by genring: freezing living peoples into literary tropes that justify a Volk narrative. Whether in buckskin or lederhosen, the figure represents the same thing: a romanticized primitive who guarantees that “real” community and authenticity exist somewhere, and can be claimed by the nation.
+
+This is why the mechanism fed both racism and fascism. Once you accept that the nation is made up of pure, authentic “folk types,” then anyone who doesn’t match becomes a threat to the genre coherence of the Volk. Exclusion and violence follow directly from the logic of the story.
+
+So the tipi at Bad Segeberg and the beer tent in Munich aren’t just parallel kitsch. They are two stagings of the same archetype, produced by the same nineteenth-century nationalist imagination, and both used to naturalize the Volksgemeinschaft.
+
+I'll stop here; to go further would require either deepening the theroetical grounding of what I've said, or move toward looking at the relationship between these processes and contemporary American white nationalism, and both of those are worth their own considerations.

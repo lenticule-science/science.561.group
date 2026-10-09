@@ -1,0 +1,42 @@
+\section{The lenticular fiber and directional sampling}
+
+This section records claim nodes and dependency edges. Literature provenance lives in the
+note \texttt{.../notes/2026/08/26/2026-08-26-lenticular-sampling-and-holographic-}
+\texttt{reconstruction.md} (Lucente 1994; Lippmann 1908; Levoy--Hanrahan and Gortler et al.\
+1996; Gu--Gortler--Cohen 1997; Chai--Tong--Chan--Shum 2000; Ng 2005).
+
+\begin{proposition}[Directional ports]\label{thm:directional-port}\lean{Obsmetrologia.AperiodicOrder.Tiling.PortGraph.DirectionalPort}\notready\uses{thm:bead-portgraph-carrier, thm:glass-beads-port-law-condensate}
+\emph{(Open frontier --- stated, not formalized.)} \texttt{PortGraph}'s own named next
+step, the multi-hole port system: generalize $\texttt{Port}(B) := B \times \texttt{Bool}$
+to $B \times D$ for a finite direction index $D$, thread passes to $B \times D \times D$,
+and the plain-weave law \texttt{holeTransition} to the multi-port transition graph whose
+two-point instance recovers \texttt{warpAlt} exactly. The condensate charge and the
+bead-layer carriers are already parametric and unchanged. A lenticule with $|D| = k$ is a
+$k$-way lenslet; the corpus's own gloss --- ``a lens that focuses the thread-rays through
+its ports'' --- becomes literal at this node.
+\end{proposition}
+
+\begin{theorem}[The lenticular fiber sample]\label{thm:lenticular-fiber-sample}\lean{Obsmetrologia.Valuation.lenticularSample, Obsmetrologia.Valuation.lenticularSample_adjunction}\notready\uses{thm:sampling-fibration, thm:pixelize-adjoint-triple, thm:directional-port}
+\emph{(Open frontier --- stated, not formalized.)} Ray space is the product carrier
+$\texttt{Domain} \times D$ (position $\times$ direction), one sampling fibration with two
+projection axes. Pixelize/voxelize is $\exists$ along the position axis;
+\texttt{lenticularSample} --- the literature's \emph{hogel} (Lucente 1994) --- is
+$\exists$ along the direction axis, the fiber knowledge-join over $D$ at one base point.
+Both are instances of \cref{thm:pixelize-adjoint-triple} at different base maps, so the
+voxel/hogel distinction the imaging literature keeps informal is: \emph{which axis of one
+fibration the left adjoint runs along}. No prior categorical statement of ray-space
+sampling exists; the closest is incidence-geometric (Gu--Gortler--Cohen 1997).
+\end{theorem}
+
+\begin{theorem}[The elemental image glues at the lenticule]\label{thm:lenticule-elemental-cocycle}\lean{Obsmetrologia.AperiodicOrder.Tiling.LenticleIdentification.lenticle_elemental_cocycle}\notready\uses{thm:lenticule-hole, thm:glass-bead-material-realization, thm:lenticular-fiber-sample, thm:pixel-cech-glue}
+\emph{(Open frontier --- stated, not formalized.)} A lenticule is already the clopen
+overlap of two covering patches with fiber morphisms into each
+(\cref{thm:glass-bead-material-realization}); a directional sample at the lenticule ---
+the \emph{elemental image} of integral imaging (Lippmann 1908) --- restricts along those
+morphisms, and its consistency across the two patches is a cocycle condition in the sense
+of \cref{thm:pixel-cech-glue}. The proved refraction/diffraction dichotomy is the
+agree/disagree fork of exactly this condition: agreement propagates absorbingly
+(refraction), disagreement is a held $\top_k$ carrying an explicit obstruction
+(diffraction). This node states the identification; the dichotomy it reuses is already
+green in the lenticle-identification stratum.
+\end{theorem}

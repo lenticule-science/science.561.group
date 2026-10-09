@@ -1,0 +1,26 @@
+---
+title: Babble, 2025-09-15 10:55 – Install Cubical Agda in GnoponEmacs
+author: emsenn
+date-created: 2025-09-15
+type: babble
+status: draft
+keywords:
+  - babble
+  - agda
+  - tooling
+publish_to:
+  - emsenn-net
+aliases:
+  - 2025-09-15-1055-notes-on-stop-cop-city-article
+publish-to:
+  - emsenn-net
+description: "Simple enough to install: sudo apt install agda"
+tags:
+  - babble
+  - agda
+  - tooling
+---
+
+Simple enough to install: `sudo apt install agda`
+
+Didn't get it set up in GnoponEmacs though, I'll need to learn more about Agda first.

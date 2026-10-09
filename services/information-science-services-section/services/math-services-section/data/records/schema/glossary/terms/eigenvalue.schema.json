@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "glossary/terms/eigenvalue",
+  "title": "eigenvalue",
+  "description": "A scalar λ with T(v)=λv for some nonzero v (eigenvector) of an endomorphism T:V→V; a root of the characteristic polynomial.",
+  "type": "object",
+  "required": [
+    "linear-map"
+  ],
+  "properties": {
+    "linear-map": {
+      "description": "the endomorphism T:V→V",
+      "$ref": "./linear-map.schema.json"
+    }
+  }
+}

@@ -1,0 +1,6 @@
+---
+id: 496f5eec-d900-4baa-897a-7f16d9f542f8
+name: postliberal cybernetics
+date-created: 2025-09-29
+---
+

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/pre-bilattice/content/bilattice",
+  "title": "bilattice",
+  "description": "A pre-bilattice equipped with a unary negation - the value structure positing opens, the distributive bilattice over the two-element residuated lattice. Four slot-presence charges carrying two orders and a negation.",
+  "allOf": [
+    {
+      "$ref": "mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/pre-bilattice"
+    }
+  ],
+  "type": "object",
+  "required": [
+    "negation"
+  ],
+  "properties": {
+    "negation": {
+      "$ref": "mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/pre-bilattice/content/bilattice/content/negation",
+      "description": "the involution swapping evidence sides: antitone in <=_t, monotone in <=_k, self-inverse"
+    }
+  }
+}

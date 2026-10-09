@@ -1,0 +1,48 @@
+{
+  "kind": "lenticule.relconlang.generation-stance-erasure-audit",
+  "version": "0.1",
+  "status": "established-current-behavior",
+  "currentSignCraft": {
+    "learner": "witnessCells",
+    "generator": "speak",
+    "facts": [
+      "predicate count increments for every parsed cell regardless of cell.reading",
+      "subject/object fibers are populated as potential incidence regardless of cell.reading",
+      "speak() samples predicate from count and arguments from role fibers",
+      "speak() emits only `subject ga predicate do object.`",
+      "speak() does not inspect model.cells[].reading when selecting or realizing output",
+      "speak() receipt records sampling probabilities/excluded mass, not epistemic warrant"
+    ]
+  },
+  "minimalCounterexample": {
+    "corpus": [
+      "mu sa ga mor do rama."
+    ],
+    "learned": {
+      "predicate": "mor",
+      "subjectFiber": [
+        "sa"
+      ],
+      "objectFiber": [
+        "rama"
+      ],
+      "sourceCellReading": "absurd"
+    },
+    "predictedOnlyGeneration": "sa ga mor do rama.",
+    "loss": [
+      "source mu stance",
+      "fact that source cell was absurd",
+      "any distinction between corpus attestation and present assertion"
+    ],
+    "interpretation": "The current generator can convert a stance-marked corpus example into an unmarked surface clause. This is generation-time stance erasure."
+  },
+  "secondCounterexample": {
+    "corpus": [
+      "sha ni ga lin do tilo."
+    ],
+    "predictedOnlyGeneration": "ni ga lin do tilo.",
+    "loss": "contradiction-held source stance is absent from generated text"
+  },
+  "notNecessarilyBug": "This is acceptable if speak() is understood only as a corpus-saturation/selectional continuation generator. It is unsafe as evidence-sensitive semantic realization.",
+  "receiptCaution": "A stochastic choice receipt explains how a token was sampled; it is not a warrant that the generated proposition is supported."
+}

@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "glossary/terms/tally-credit",
+  "title": "tally credit",
+  "description": "A line of credit whose limit is a function of the counterparty's record of matched tallies, the release and admission receipts that agree on each past crossing, and never of the balance the counterparty holds. The limit is the count of matched pairs in the window times the median settled size, times a factor that falls to zero with any unmatched half-tally older than the settlement window; every draw is itself a crossing, and a default is a mismatch held in FOUR, never an eviction.",
+  "type": "object",
+  "required": ["counterparty", "window", "matched-pairs", "median-settled-size", "unmatched-half-tallies", "factor", "limit", "limit-is-a-function-of-the-record-only", "default-is-a-held-mismatch"],
+  "additionalProperties": false,
+  "properties": {
+    "counterparty": {
+      "type": "string",
+      "minLength": 1,
+      "description": "the account whose tally record the line is derived from"
+    },
+    "window": {
+      "type": "object",
+      "description": "the settlement window the record is read over",
+      "required": ["start", "end"],
+      "properties": {
+        "start": { "type": "string", "format": "date-time" },
+        "end": { "type": "string", "format": "date-time" }
+      }
+    },
+    "unit": {
+      "type": "string",
+      "minLength": 1,
+      "description": "the commodity the market settles in (ENERGY, HBD, wit when the assay contract prices it)"
+    },
+    "matched-pairs": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "n: the count of crossings in the window whose release and admission receipts agree on case, resource set, paths, and digests"
+    },
+    "median-settled-size": {
+      "type": "string",
+      "pattern": "^-?[0-9]+(\\.[0-9]+)?$",
+      "description": "m: the median settled amount of those matched pairs, an exact decimal string, never a float"
+    },
+    "unmatched-half-tallies": {
+      "type": "array",
+      "description": "every release or admission receipt in the record whose matching half has not arrived",
+      "items": {
+        "type": "object",
+        "required": ["ref", "age"],
+        "properties": {
+          "ref": { "type": "string", "minLength": 1 },
+          "age": { "type": "string", "description": "ISO 8601 duration since the half-tally was recorded" }
+        }
+      }
+    },
+    "factor": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1,
+      "description": "f: 1 when no unmatched half-tally is older than the window, falling to 0 when any is"
+    },
+    "limit": {
+      "type": "string",
+      "pattern": "^-?[0-9]+(\\.[0-9]+)?$",
+      "description": "L = n × m × f, an exact decimal string in the unit"
+    },
+    "limit-is-a-function-of-the-record-only": {
+      "const": true,
+      "description": "L depends on matched-pairs, median-settled-size, and factor alone; no balance held by the counterparty enters it"
+    },
+    "default-is-a-held-mismatch": {
+      "const": true,
+      "description": "a draw whose admission half never arrives closes the line, stays on the worklist as an unmatched half-tally, and is read into the next limit; it is never an eviction"
+    }
+  }
+}

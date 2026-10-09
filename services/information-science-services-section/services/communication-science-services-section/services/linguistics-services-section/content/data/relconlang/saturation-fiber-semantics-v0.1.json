@@ -1,0 +1,55 @@
+{
+  "kind": "lenticule.relconlang.saturation-fiber-semantics-audit",
+  "version": "0.1",
+  "status": "candidate-reinterpretation",
+  "currentImplementation": {
+    "source": "@red-cup-engineering/signcraft/inference/speak",
+    "rule": "every parsed (s,P,o) cell contributes subject/object incidence to P's fibers with potential, regardless of the cell's own stance reading",
+    "codeShape": [
+      "subjFiber[arg] := knowledgeJoin(previous, potential)",
+      "objFiber[arg] := knowledgeJoin(previous, potential)",
+      "cell.reading is stored separately on model.cells"
+    ]
+  },
+  "executableEvidence": {
+    "test": "signcraft/test/inference/speak.test.mjs",
+    "case": [
+      "tu ga nes do kelu.",
+      "sha ni ga lin do tilo.",
+      "mu sa ga mor do rama.",
+      "ta mi ga ran do sava."
+    ],
+    "observation": "cells preserve potential/stable/absurd/potential stance readings while hole fibers still treat encountered arguments as positive saturation incidence"
+  },
+  "interpretations": [
+    {
+      "id": "truth-evidence",
+      "meaning": "fiber potential means evidence that the proposition/argument relation is true",
+      "assessment": "rejected as too strong under current behavior",
+      "reason": "mu/absurd and sha/contradicted clauses still populate the same positive fibers"
+    },
+    {
+      "id": "usage-incidence",
+      "meaning": "fiber potential means the argument has been witnessed occupying that grammatical/selectional hole in an utterance",
+      "assessment": "preferred",
+      "reason": "fits stance-insensitive ingestion and FCA incidence semantics without asserting world truth"
+    },
+    {
+      "id": "selectional-compatibility",
+      "meaning": "fiber records that a lexical argument is an observed compatible saturator for predicate+role",
+      "assessment": "preferred refinement",
+      "caution": "observed compatibility is corpus-relative and may include quoted, denied, absurd, hypothetical, or contradictory material"
+    }
+  ],
+  "consequences": [
+    "speak() samples grammatical/usage continuations, not warranted world claims",
+    "comprehend() subject/object readings should not be described as proposition truth readings",
+    "mu or sha utterances may legitimately teach lexical selection while contributing no target-proposition evidence",
+    "a future truth-sensitive learner must use a separate evidence-aware carrier/filter rather than overloading the existing hole fibers"
+  ],
+  "proposedTerminology": {
+    "current": "evidence-for saturation",
+    "preferred": "attested saturation incidence / selectional fiber",
+    "propositionEvidence": "reserved for SignCell for/against witnesses on the proposition cell"
+  }
+}

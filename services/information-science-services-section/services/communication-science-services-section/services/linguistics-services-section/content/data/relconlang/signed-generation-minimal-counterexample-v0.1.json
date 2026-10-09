@@ -1,0 +1,113 @@
+{
+  "kind": "lenticule.relconlang.signed-generation-minimal-counterexample",
+  "version": "0.1",
+  "date": "2026-10-01",
+  "status": "source-established-design-decision-open",
+  "question": "Can current SignCraft inference generation directly propose an against-side move when the supported closure basis entails a denied conclusion?",
+  "sourceEvidence": {
+    "generate": {
+      "repository": "emsenn/bare-cedar-fog",
+      "path": "lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/lib/signstuff/signcraft/src/inference/generate.mjs",
+      "blob": "ad6668d2d5988cbb4a8dbde891601bc50b618bca",
+      "observations": [
+        "enabledMoves skips every basis conclusion satisfying isDenied(a)",
+        "realized-continuation moves range over ctx.M base attributes and never construct a NEG-prefixed candidate",
+        "opened and closed simulate every candidate by adjoining the reading potential"
+      ]
+    },
+    "settlement": {
+      "repository": "emsenn/bare-cedar-fog",
+      "path": "lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/lib/signstuff/signcraft/src/inference/nuclei.mjs",
+      "blob": "a6e544eefcac4c62aa88401ff5bf9ac380e7fbfb",
+      "observations": [
+        "heldSigned carries for-side and against-side evidence into one signed closure input",
+        "sigma forces a denied conclusion into the active reading and emits a neg-lane witness"
+      ]
+    },
+    "existingDenialFixture": {
+      "repository": "emsenn/bare-cedar-fog",
+      "path": "lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/lib/signstuff/signcraft/test/inference/denial.test.mjs",
+      "blob": "a05a9d93008b45a844f77eed3b149bcaca97cfd0",
+      "fixture": "penguins are witnessed penguin+bird and denied flies; robins are bird+flies",
+      "existingAssertion": "lawfulBasis contains a supported implication with penguin in the premise and NEG+flies in the conclusion; settling a fresh penguin derives flies=active with a neg-lane witness",
+      "freshExecutionObservedThisAssay": false
+    },
+    "energy": {
+      "repository": "emsenn/bare-cedar-fog",
+      "path": "lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/lib/signstuff/signcraft/src/inference/generate.mjs",
+      "observation": "disagreementEnergyChange uses a single held-for indicator x and computes the energy change for gaining a positive attribute; no against-seed analogue is defined"
+    }
+  },
+  "derivedResult": {
+    "epistemicKind": "source-level proposition; not machine-checked",
+    "statement": "Every move current enabledMoves can return is an unsigned base attribute, and current generation evaluates it by adding for-side evidence. Therefore generate() is positive-seeded even though its closure substrate is signed.",
+    "minimalCounterexample": {
+      "reuseExistingFixture": true,
+      "seed": "fresh object x with penguin=potential",
+      "supportedLaw": "penguin ... -> NEG+flies",
+      "settlementPrediction": "settle derives flies=active",
+      "generationPrediction": "enabledMoves does not return an against-side flies candidate because denied basis conclusions are skipped",
+      "whyItDiscriminates": "the same supported negative consequence is available to settlement but unavailable as a direct generation seed"
+    }
+  },
+  "designImplications": [
+    {
+      "id": "positive-continuation-plus-refutation",
+      "status": "currently best-specified",
+      "reading": "Treat generate() as constructive/positive continuation and define a distinct refutational or against-side proposal operation if autonomous denial proposals are needed.",
+      "support": "This matches the current source boundary and has a literature precedent in Fitting's dual refutation mechanism for four-valued logic programming."
+    },
+    {
+      "id": "unified-signed-move",
+      "status": "underspecified",
+      "reading": "Generalize the move carrier to include a lane/sign and allow both positive and negative seeds.",
+      "missingSemantics": [
+        "opened currently hard-codes potential",
+        "closed currently counts the positive-only enabled cone",
+        "disagreementEnergyChange currently measures a for-side held indicator only",
+        "sampling witness currently names only attr, not lane",
+        "stable/contested behavior under a signed seed needs explicit tests"
+      ]
+    }
+  ],
+  "candidateEnergyExtension": {
+    "status": "hypothesis-not-adopted",
+    "assumptions": [
+      "FOUR evidence lanes are treated as a product carrier for this metric",
+      "conductance is the same on both evidence lanes",
+      "energy is additive/separable across lanes",
+      "there is no cross-lane coupling term"
+    ],
+    "formula": "E_K(x_plus,x_minus)=x_plus^T L x_plus + x_minus^T L x_minus",
+    "consequence": "Under these assumptions, a negative seed has the same local Laplacian update law on x_minus that a positive seed has on x_plus.",
+    "caution": "The assumptions are scientific choices, not consequences of current code. A separate contradiction/frustration term may be required if cross-lane conflict is meant to carry energetic cost."
+  },
+  "externalLineage": [
+    {
+      "citation": "Melvin Fitting, Negation as refutation, LICS 1989",
+      "relevance": "demonstrates a refutation mechanism dual to proof in a Belnap four-valued setting"
+    },
+    {
+      "citation": "Melvin Fitting, Logic Programming on a Topological Bilattice, Fundamenta Informaticae 11(2), 1988",
+      "relevance": "treats truth values as evidence for and against in bilattice-based logic programming"
+    }
+  ],
+  "refusalConditions": [
+    "Do not call current generate() a general signed inference generator.",
+    "Do not add against-side candidates by only tagging moves with a sign while leaving the present positive-only energy and closed/opened definitions unchanged.",
+    "Do not infer that a generated denial is warranted merely because settlement could derive a denied conclusion.",
+    "Do not treat the absence of a discovered complementary operation as proof that none exists; repository code search indexing was unavailable and this assay inspected the current inference source and tests directly."
+  ],
+  "engineeringAcceptanceTest": {
+    "owner": "Red Cup Engineering / SignCraft",
+    "changeType": "test-only first",
+    "fixture": "reuse denial.test.mjs penguin/bird/flies context",
+    "checks": [
+      "lawfulBasis contains the supported denied flies conclusion",
+      "settle on a fresh penguin yields flies=active with a neg-lane witness",
+      "enabledMoves for the same pre-settlement seed contains no direct against-side flies move",
+      "the test records whether any positive candidate can indirectly trigger the denial after settlement"
+    ],
+    "purpose": "Make the current asymmetry executable and regression-visible without yet changing behavior."
+  }
+}

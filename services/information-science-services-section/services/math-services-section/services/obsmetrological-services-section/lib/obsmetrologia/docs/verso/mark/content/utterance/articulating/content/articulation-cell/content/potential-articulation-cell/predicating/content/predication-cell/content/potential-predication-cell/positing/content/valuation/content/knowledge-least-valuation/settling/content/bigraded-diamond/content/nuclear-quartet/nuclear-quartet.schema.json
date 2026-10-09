@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/content/bigraded-diamond/content/nuclear-quartet",
+  "title": "nuclear-quartet",
+  "description": "The four canonical sub-algebras determined by two commuting nuclei on a Heyting algebra - the free carrier, the two individual fixed-point algebras, and their joint fixed point - forming an exhaustive commuting square of inclusions; the single diamond sitting at each grade of the bigraded diamond.",
+  "type": "object",
+  "required": ["carrier", "j1", "j2", "fixJ1", "fixJ2", "jointFixed", "commuting", "exhaustive"],
+  "properties": {
+    "carrier": { "const": "heyting-algebra", "description": "A, the free carrier: the Heyting algebra on which neither nucleus has acted" },
+    "j1": { "const": "nucleus", "description": "the first nucleus j_1, a knowledge- or truth-order closure" },
+    "j2": { "const": "nucleus", "description": "the second nucleus j_2, the other closure" },
+    "fixJ1": { "const": "set", "description": "Fix(j_1), the j_1-active sub-algebra: all j_1-closure applied" },
+    "fixJ2": { "const": "set", "description": "Fix(j_2), the j_2-active sub-algebra: all j_2-closure applied" },
+    "jointFixed": { "const": "set", "description": "A* = Fix(pi) = Fix(j_1) cap Fix(j_2), the doubly active corner where both nuclei act as identity" },
+    "commuting": { "const": true, "description": "j_1 . j_2 = j_2 . j_1, so the composite pi := j_1 . j_2 is itself a nucleus and the intersection becomes a canonical fixed-point sub-algebra" },
+    "exhaustive": { "const": true, "description": "the four corners exhaust the canonical options: apply neither (A), j_1 alone, j_2 alone, or both (A*) - the same four-corner shape met at the articulation phases and the bilattice charge" }
+  }
+}

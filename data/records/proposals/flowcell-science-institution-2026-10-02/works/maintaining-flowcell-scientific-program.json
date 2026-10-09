@@ -1,0 +1,11 @@
+{
+  "id": "maintaining-flowcell-scientific-program",
+  "name": "maintaining the FlowCell scientific program",
+  "from": "A FlowCell hypothesis, engineering anomaly, morphology/material idea, or unresolved evidence boundary exists.",
+  "to": "A current scientific frontier names hypotheses, assay state, killed/demoted branches, unresolved anomalies, and the next discriminating experiments capable of changing a scientific or engineering decision.",
+  "cost": "Scientific attention, source-reading effort, experiment-design effort, and consumed experimental resources when separately authorized.",
+  "otherwise": "FlowCell ideas drift between conversations, novelty is mistaken for evidence, or failed branches are forgotten and rediscovered.",
+  "needs": [
+    "design-falsifiable-flowcell-assay"
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "kind": "lenticule.relconlang.particle-admission-audit",
+  "version": "0.1",
+  "status": "experimental",
+  "finding": "Current parser can recognize intended role particles while simultaneously treating some of them as legacy determiners; FOUR witnessJournal mappings are not consumed by compiledBundleFromLanguageManifest.",
+  "compilerFacts": {
+    "closedClassPrecedence": [
+      "determiner",
+      "preposition",
+      "pronoun",
+      "conjunction",
+      "auxiliary"
+    ],
+    "manifestCompilation": "compiledBundleFromLanguageManifest passes only manifest.bundle to load(); witnessJournal is emitted as receipts but not compiled into parser semantics"
+  },
+  "cases": [
+    {
+      "text": "ta mi ga ran do sava.",
+      "intended": [
+        "ta clause stance",
+        "ga nsubj receipt",
+        "do dobj receipt"
+      ],
+      "predictedCurrentSurfaceTags": {
+        "ta": [
+          "det"
+        ],
+        "ga": [
+          "det"
+        ],
+        "do": [
+          "det"
+        ]
+      },
+      "predictedCurrentRoleArcs": [
+        "ran --nsubj--> mi",
+        "ran --dobj--> sava"
+      ],
+      "predictedExtraGenericArcs": [
+        "mi --det--> ta",
+        "sava --det--> ga",
+        "sava --det--> do"
+      ],
+      "semanticChargeFromTa": "not established by parseCommunication"
+    },
+    {
+      "text": "mi ga ran do kelu.",
+      "intended": [
+        "ga nsubj receipt",
+        "do dobj receipt"
+      ],
+      "predictedCurrentSurfaceTags": {
+        "ga": [
+          "det"
+        ],
+        "do": [
+          "det"
+        ]
+      },
+      "predictedCurrentRoleArcs": [
+        "ran --nsubj--> mi",
+        "ran --dobj--> kelu"
+      ],
+      "predictedExtraGenericArcs": [
+        "kelu --det--> ga",
+        "kelu --det--> do"
+      ]
+    },
+    {
+      "text": "mi ga vom do ve tu ga ran do sava.",
+      "intended": [
+        "matrix subject",
+        "ccomp marked by ve",
+        "embedded subject/object"
+      ],
+      "predictedRisk": "ga/do/ve can also receive generic determiner attachments because lexical admission and grammatical function are separate paths"
+    }
+  ],
+  "maturityCorrection": {
+    "FOURParticles": {
+      "surfaceRecognition": "built",
+      "manifestReceipt": "built",
+      "propositionalChargeSemantics": "not demonstrated by current parser tests"
+    },
+    "roleParticles": {
+      "intendedRoleArcs": "built",
+      "absenceOfSpuriousLegacyClassArcs": "not demonstrated"
+    }
+  }
+}

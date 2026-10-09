@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "glossary/terms/tensor-product",
+  "title": "tensor-product",
+  "description": "The bifunctor ⊗ : C × C → C of a monoidal category, combining two objects into one and two morphisms into one, associative up to coherent isomorphism with the unit object as neutral element. The categorical lift of a monoid's multiplication.",
+  "type": "object",
+  "required": [
+    "bifunctor",
+    "monoidal-category"
+  ],
+  "properties": {
+    "bifunctor": {
+      "description": "⊗ : C × C → C, functorial in both arguments",
+      "$ref": "./functor.schema.json"
+    },
+    "monoidal-category": {
+      "description": "the monoidal category whose tensor this is",
+      "$ref": "./monoidal-category.schema.json"
+    }
+  }
+}

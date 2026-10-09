@@ -1,0 +1,26 @@
+\subsection{Plasma and fluid obstruction projections}
+
+\begin{theorem}[Quasineutrality is fixed screening]\label{thm:quasineutral-iff-screen-fixed}\lean{Obsmetrologia.KineticTheory.Plasma.quasineutral_iff_screen_fixed}\leanok\uses{thm:discrete-collision-conservation}
+A finite plasma charge list is quasineutral exactly when the screening step
+fixes it.
+\end{theorem}
+
+\begin{theorem}[Debye screening is a least fixed-point projection]\label{thm:debye-screened-potential-lfp}\lean{Obsmetrologia.KineticTheory.Plasma.screened_potential_is_lfp}\leanok\uses{thm:tarski-sheaf-closure, thm:quasineutral-iff-screen-fixed}
+The screened potential is the least fixed-point projection of the graph-screening
+closure.
+\end{theorem}
+
+\begin{theorem}[Reconnection is curved \(H^1\) obstruction]\label{thm:reconnection-h1-obstruction}\lean{Obsmetrologia.KineticTheory.Plasma.reconnection_event_implies_H1_nonzero}\leanok\uses{thm:causal-cohomology-h2, thm:curvature-regime-correspondence}
+A finite reconnection event implies nonzero \(H^1\) in the curvature-regime
+projection.
+\end{theorem}
+
+\begin{theorem}[Topological wave edge modes carry \(H^1\)]\label{thm:topological-wave-edge-h1}\lean{Obsmetrologia.KineticTheory.Plasma.edge_obstruction_implies_H1_nonzero}\leanok\uses{thm:reconnection-h1-obstruction}
+An edge obstruction in the finite band-sheaf criterion implies a nonzero \(H^1\)
+curvature obstruction.
+\end{theorem}
+
+\begin{theorem}[Vortex circulation witnesses non-gradient \(H^1\)]\label{thm:vortex-h1-obstruction}\lean{Obsmetrologia.KineticTheory.Fluid.vortex_obstruction_implies_H1_nonzero}\leanok\uses{thm:causal-cohomology-h2, thm:curvature-regime-correspondence}
+Nonzero discrete circulation obstructs being a gradient and witnesses the
+finite \(H^1\) vortex projection.
+\end{theorem}

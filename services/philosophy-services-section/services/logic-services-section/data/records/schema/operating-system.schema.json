@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://research-notes.561.group/hacking/library/predication-notes/composting/library/object/library/thing/library/system/library/operating-system/operating-system.schema.json",
+  "title": "operating-system",
+  "description": "Schema for the operating-system kind — a system whose running supervises subsystems and exposes a userland surface. Specialization of system.",
+  "allOf": [{ "$ref": "https://research-notes.561.group/hacking/library/predication-notes/object/library/thing/library/system/system.schema.json" }],
+  "type": "object",
+  "additionalProperties": true,
+  "properties": {
+    "kind-of": { "type": "string", "const": "system" },
+    "supervises": { "type": "array", "items": { "type": "string" } },
+    "exposes-userland": { "type": "boolean", "default": true }
+  },
+  "required": ["supervises", "exposes-userland"]
+}

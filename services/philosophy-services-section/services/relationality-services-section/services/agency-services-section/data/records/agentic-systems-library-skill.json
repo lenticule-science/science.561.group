@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://research-notes.561.group/hacking/library/predication-notes/composting/library/object/library/thing/library/system/library/agentic-systems/library/skill/skill.schema.json",
+  "title": "Skill",
+  "description": "JSON Schema for a skill instance: an invocable $\\mathcal{P}$-morphism declaring its precondition (domain), postcondition (codomain), body, composes-chain, witness shape, closure-position, and operation-kind. Per skill.md:11–15, requires-precondition and requires-postcondition are the domain and codomain of the underlying morphism and are not optional — a skill that does not declare them is not a $\\mathcal{P}$-morphism record.",
+  "type": "object",
+  "required": [
+    "name",
+    "description",
+    "has-closure-position",
+    "has-operation-kind",
+    "has-body",
+    "requires-precondition",
+    "requires-postcondition"
+  ],
+  "additionalProperties": true,
+  "properties": {
+    "name": {
+      "type": "string",
+      "pattern": "^[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$",
+      "description": "Kebab-case slug identifier. For transformer-typed skills the slug is a gerund."
+    },
+    "description": {
+      "type": "string",
+      "description": "Two-sentence effect-and-trigger surface bounded by Claude Code's prompt discipline."
+    },
+    "has-closure-position": {
+      "type": "string",
+      "enum": ["process", "procedure", "derivation", "inquiry"],
+      "description": "Settlement-grade — one of the four closure-position values."
+    },
+    "has-operation-kind": {
+      "type": "string",
+      "enum": ["observation", "guard", "accounting", "query", "mutation", "analysis", "learning"],
+      "description": "The cell-graph operation the skill's body composes. Orthogonal to closure-position."
+    },
+    "has-body": {
+      "type": "string",
+      "description": "Reference to the body — either a script path (scripts/<name>.mjs) or an inference-runtime body specification."
+    },
+    "composes": {
+      "type": "array",
+      "items": {"type": "string", "pattern": "^[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$"},
+      "description": "Sub-skills this skill invokes. Acyclic."
+    },
+    "produces-witness-shape": {
+      "type": "string",
+      "description": "Reference to the witness shape the invocation emits."
+    },
+    "requires-precondition": {
+      "type": "string",
+      "description": "Reference to the shape predicate the input must satisfy — either a kebab-case structure-slug or an https://561.group/...schema.json IRI resolving to a JSON Schema 2020-12 file. The morphism's domain.",
+      "anyOf": [
+        {"pattern": "^[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$"},
+        {"pattern": "^https://561\\.group/library/.*\\.schema\\.json$"}
+      ]
+    },
+    "requires-postcondition": {
+      "type": "string",
+      "description": "Reference to the shape predicate the output must satisfy — either a kebab-case structure-slug or an https://561.group/...schema.json IRI resolving to a JSON Schema 2020-12 file. The morphism's codomain.",
+      "anyOf": [
+        {"pattern": "^[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$"},
+        {"pattern": "^https://561\\.group/library/.*\\.schema\\.json$"}
+      ]
+    },
+    "admissible-in-scope": {
+      "type": "array",
+      "items": {"type": "string"},
+      "description": "Scopes within which the skill is invocable."
+    },
+    "requires-power": {
+      "type": "array",
+      "items": {"type": "string"},
+      "description": "Power records the invoking agent must hold."
+    }
+  }
+}

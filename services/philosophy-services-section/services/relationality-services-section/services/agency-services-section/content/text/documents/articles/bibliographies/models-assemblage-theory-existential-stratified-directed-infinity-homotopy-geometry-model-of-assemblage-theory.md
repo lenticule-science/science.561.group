@@ -1,0 +1,78 @@
+---
+id: 7ac5b8a0-0b30-4437-875e-cd37d0b11399
+title: Existential Stratified Directed Infinity-Homotopy Geometry Model of Assemblage Theory
+date-created: 2025-10-08
+description: This paper develops an Existential Stratified Directed Infinity–Homotopy Geometry (ESDIHG) model of Assemblage Theory, interpreting Deleuze and Guattari’s notions of territorialization, deterritorialization, and consistency as internal…
+---
+
+# Existential Stratified Directed Infinity-Homotopy Geometry Model of Assemblage Theory {#existential-stratified-directed-infinity-homotopy-geometry-model-of-assemblage-theory-1}
+
+## Abstract
+
+This paper develops an **Existential Stratified Directed Infinity–Homotopy Geometry** (ESDIHG) model of **Assemblage Theory**, interpreting Deleuze and Guattari’s notions of territorialization, deterritorialization, and consistency as internal modal phenomena within a cohesive ∞-topos. Assemblages are realized as coherent homotopy-colimiting diagrams in a stratified directed ∞-site; their stability and transformation correspond to ambidextrous equivalences between limits and colimits in the **Field of Existence**. This construction provides a higher-categorical semantics of relational composition, grounding assemblage theory in the formal language of directed homotopy and cohesive geometry.
+
+## 1. Introduction {#introduction}
+
+### 1.1 Motivation {#motivation}
+
+Assemblage theory describes social, material, and affective formations as emergent multiplicities rather than substances. Each assemblage is a dynamic configuration of heterogeneous elements, stabilized locally yet open to transformation. While originally philosophical, this notion can be formalized within higher category theory: an assemblage becomes a **coherent diagram** whose existence consists in the stability of its directed relational data.
+
+The **Existential Stratified Directed Infinity–Homotopy Geometry** (ESDIHG) introduced in prior work provides a precise setting for this intuition. Within a stratified directed cohesive ∞-topos $(\mathcal{X}, \triangleright)$, existence corresponds to inhabited homotopy colimits of constructible diagrams. We extend this structure to model the dynamics of territorialization and deterritorialization as Kan-extension flows, thus producing a fully formal model of assemblage formation, transformation, and consistency.
+
+### 1.2 Outline {#outline}
+
+Section 2 reviews ESDIHG foundations. Section 3 defines assemblages as coherent derived relational objects. Section 4 formalizes territorialization, deterritorialization, and reterritorialization as Kan-extension dynamics. Section 5 introduces the **plane of consistency** as the ambidextrous fixed-point of the Field of Existence. Section 6 discusses implications for relational ontology and systems theory.
+
+## 2. Background: Existential Stratified Directed Geometry {#background-existential-stratified-directed-geometry}
+
+Let $(\mathcal{X},\triangleright)$ be a **stratified directed ∞-site**, with strata $\Sigma$ and directed modality $\triangleright$. Objects of $\mathcal{X}$ represent differentiated regions of a cohesive field; arrows classified by $\triangleright$ encode forward (noninvertible) morphisms, such as causal or temporal flow.
+
+The full sub-∞-topos of all such coherent diagrams forms the **∞-Topos of Existence** $\mathfrak{E}_x$. Its global homotopy limit $$
+\mathcal{F} := \operatorname{hlim}_{F\in \mathfrak{E}_x} F
+$$ is the **Field of Existence**, satisfying the ambidextrous equivalence $$
+\operatorname{hlim}\mathcal{F} \;\simeq\; \operatorname{hcolim}\mathcal{F}.
+$$ This fixed-point expresses the self-consistency of being.
+
+## 3. Assemblages as Coherent Stratified Diagrams {#assemblages-as-coherent-stratified-diagrams}
+
+### 3.1 Definition {#definition}
+
+An assemblage therefore **is** a coherent relational configuration; its "components" are strata, its "relations" directed morphisms, and its **consistency** the inhabited homotopy colimit.
+
+### 3.2 Existence and Heterogeneity {#existence-and-heterogeneity}
+
+The multiplicity of an assemblage corresponds to the stratification $\Sigma$ of the site. Each layer contributes a partial condition; the directed modality $\triangleright$ imposes causal or processual ordering. Global existence of the assemblage is not primitive but an emergent coherence across these heterogeneities.
+
+## 4. Dynamic Processes and Modal Flows {#dynamic-processes-and-modal-flows}
+
+Assemblages persist and transform through modal flow. Within ESDIHG, these are described by homotopy Kan extensions and their stability properties.
+
+Hence the “deterritorialized” flow of an assemblage is not loss but redirection of coherence.
+
+## 5. Plane of Consistency and the Field of Existence {#plane-of-consistency-and-the-field-of-existence}
+
+In Deleuzian terms, the **plane of consistency** or **immanence** unifies all assemblages. In ESDIHG, this corresponds precisely to the Field of Existence $\mathcal{F}$.
+
+This equivalence ensures that all territorializing and deterritorializing flows occur within a single cohesive field; assemblages are localizations of its global coherence.
+
+## 6. Discussion and Implications {#discussion-and-implications}
+
+### 6.1 From Philosophy to Geometry {#from-philosophy-to-geometry}
+
+Assemblage theory conceptualizes entities as contingent gatherings of relations. ESDIHG renders this insight geometrically: relations are directed morphisms; gathering is homotopy colimiting; contingency is encoded as modal inhabitation. The resulting system provides a formal semantics for composition, emergence, and transformation.
+
+### 6.2 Applications {#applications}
+
+- **Cognitive and Social Systems:** Assemblages of belief, habit, and infrastructure can be modeled as coherent DROs whose transformations follow Kan-extension flows.
+- **Physics and Biology:** Reaction networks or morphogenetic processes can be described as deterritorializing flows within a cohesive field of conditions.
+- **Computational Ontology:** Knowledge graphs enriched with directional modalities instantiate finite truncations of the ESDIHG schema.
+
+### 6.3 Outlook {#outlook}
+
+Further work will develop quantitative measures of coherence and apply spectral enrichment to express intensities of territorialization. A type-theoretic formalization in modal homotopy type theory will enable machine-verifiable reasoning about assemblage formation.
+
+## Conclusion
+
+The ESDIHG model interprets assemblage theory through the precise language of stratified directed homotopy geometry. Territorialization and deterritorialization become dual Kan-extension flows preserving modal coherence; the plane of consistency is the ambidextrous fixed-point of the Field of Existence. Being, relation, and transformation thus appear as internally coherent operations of a single stratified cohesive field.
+
+## References

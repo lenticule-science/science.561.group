@@ -1,0 +1,34 @@
+{
+  "id": "measure-flowcell-comparably",
+  "type": "skill",
+  "name": "measure-flowcell-comparably",
+  "verb-phrase": "measuring FlowCell comparably",
+  "description": "Use when FlowCell morphologies, materials, or survivability configurations must be measured on a defensible common basis.",
+  "preconditions": [
+    "exact specimen/configuration id is known",
+    "calibration set and resource measurement are available or their gaps are explicit"
+  ],
+  "postconditions": [
+    "synchronized raw evidence and calibration references are preserved",
+    "fixture/parasitic losses and uncertainty are reported",
+    "replicates, failed runs, anomalies and pre/post inspection remain visible"
+  ],
+  "witness": {
+    "records": [
+      "FlowCell measurement packet",
+      "raw-trace references",
+      "calibration identities",
+      "uncertainty budget",
+      "replicate inventory"
+    ]
+  },
+  "closure-kind": "procedure",
+  "input-shape": "FlowCell scientific/configuration evidence appropriate to the named procedure",
+  "output-shape": "Typed FlowCell scientific evidence packet described by the postconditions",
+  "install": [
+    "claude",
+    "codex"
+  ],
+  "requires-capabilities": [],
+  "method": "# Measure FlowCell comparably\n\nBind every run to an exact configuration id and calibration set.\n\nRecord at minimum:\n- environmental/resource state;\n- geometry/material revision;\n- synchronized raw traces;\n- calibration references;\n- fixture/parasitic losses;\n- derived metrics and derivation version;\n- replicate identity;\n- interventions and anomalies;\n- uncertainty;\n- pre/post inspection.\n\nFor morphology tests report net power, relevant support/mooring loads, wet mass, operating bandwidth, intervention time, and submerged precision-interface count.\n\nNever compare architectures using nameplate or nominal resource values when direct measurements exist. Preserve failed and contradictory runs."
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/content/preorder/content/order/content/lattice/content/complete-lattice",
+  "title": "complete-lattice",
+  "description": "A lattice in which every subset, not only every pair, has a meet and a join — including the empty and the infinite. The setting Knaster–Tarski needs; the value structure settling ascends.",
+  "allOf": [
+    {
+      "$ref": "mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/content/preorder/content/order/content/lattice"
+    }
+  ],
+  "type": "object",
+  "required": [
+    "arbitrary-meets",
+    "arbitrary-joins"
+  ],
+  "properties": {
+    "arbitrary-meets": {
+      "description": "every subset S has a meet ⋀S (greatest lower bound of all of S)",
+      "const": true
+    },
+    "arbitrary-joins": {
+      "description": "every subset S has a join ⋁S (least upper bound of all of S); each half forces the other",
+      "const": true
+    }
+  }
+}

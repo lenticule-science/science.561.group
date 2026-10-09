@@ -1,0 +1,8 @@
+---
+name: Bedtime Story
+date-created: 2026-03-04
+type: definition
+visibility: public
+---
+
+A ***bedtime story*** is (definition:: a [story](story) to help someone with [falling asleep](falling asleep)).

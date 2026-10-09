@@ -1,0 +1,16 @@
+name = "ObsmetrologiaPhysicalScience"
+defaultTargets = ["ObsmetrologiaPhysicalScience"]
+description = "Physical science over Obsmetrologia: causal sets, condensed matter (crystal, glass, glass dynamics, defects, affine holonomy, condensate matter, percolation), kinetic theory, thermodynamics, dense matter, quantum contextuality, and chemical reaction networks."
+license = "Apache-2.0"
+
+[leanOptions]
+autoImplicit = false
+relaxedAutoImplicit = false
+pp.unicode.fun = true
+
+[[require]]
+name = "Obsmetrologia"
+path = "../../../../../information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/obsmetrologia"
+
+[[lean_lib]]
+name = "ObsmetrologiaPhysicalScience"

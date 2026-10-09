@@ -1,0 +1,526 @@
+{
+  "$schema": "../../../../../../../../data/records/schema/literature-measurement.schema.json",
+  "id": "demurrage-and-local-currency-evidence",
+  "kind": "literature-measurement",
+  "question": "What do measured local-currency and demurrage systems (Worgl, Chiemgauer, Regiogeld, Fisher stamp scrip) show about velocity, circulation and real effects?",
+  "frame": {
+    "population": "local and complementary currency users and issuers",
+    "exposure": "demurrage / stamp-scrip / Regiogeld issuance",
+    "comparator": "national currency",
+    "outcomes": [
+      "velocity",
+      "circulation ratio",
+      "local economic effects",
+      "duration"
+    ]
+  },
+  "notes": [
+    "../../content/text/documents/articles/notes/2026/10/08/2026-10-08-demurrage-and-local-currency-evidence.md"
+  ],
+  "sources": [
+    {
+      "item": {
+        "id": "fisher1933",
+        "type": "chapter",
+        "title": "Stamp Scrip (Chapter III, Stamp Scrip Described)",
+        "author": [
+          {
+            "family": "Fisher",
+            "given": "Irving"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              1933
+            ]
+          ]
+        },
+        "container-title": "Stamp Scrip",
+        "publisher": "Adelphi Company",
+        "URL": "https://userpage.fu-berlin.de/~roehrigw/fisher/stamp3.html"
+      },
+      "findings": [
+        {
+          "finding": "Design: 52 weekly dated stamps at 2 cents; scrip returns to the treasury finding $1.04 per dollar of scrip, so the issue is self-liquidating; it is redeemed in cash after a year.",
+          "exactSourceLanguage": "At the end of the 52 weeks of the allotted year, when a dollar of scrip returns to the city treasury for redemption, it finds there the $1.04 which paid for the 52 stamps now carried on the back of the certificate."
+        },
+        {
+          "finding": "Speed claim: unloaded at least twice a week, four times an average dollar in normal times, twelve times the depression average.",
+          "exactSourceLanguage": "At the very least, the average scrip certificate will be unloaded twice a week - a speed that is four times the speed of an average dollar in normal times. In depression times, the average dollar circulates only about a third as fast as usual so that a turnover of twice a week becomes twelve times the depression average for conventional money."
+        },
+        {
+          "finding": "The tax falls on holding, not on sales: a grocer turning over $60 of scrip a week pays about one-third of one per cent of sales.",
+          "exactSourceLanguage": "Thus, the stamp is more like a tax on hoarding than a sales tax."
+        }
+      ],
+      "readFrom": "full-text",
+      "observedAt": "2026-10-08",
+      "design": "primary-text",
+      "country": [
+        "US"
+      ],
+      "population": "municipal and association stamp scrip issues, United States 1932-33",
+      "notFound": [
+        "Fisher gives a design-level estimate of speed here, not a measured velocity series."
+      ]
+    },
+    {
+      "item": {
+        "id": "keynes1936",
+        "type": "chapter",
+        "title": "The General Theory of Employment, Interest and Money, chapter 23 section VI",
+        "author": [
+          {
+            "family": "Keynes",
+            "given": "John Maynard"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              1936
+            ]
+          ]
+        },
+        "container-title": "The General Theory of Employment, Interest and Money",
+        "URL": "https://www.marxists.org/reference/subject/economics/keynes/general-theory/ch23.htm"
+      },
+      "findings": [
+        {
+          "finding": "Keynes endorses the stamped-money principle and names the obstacle: money is not unique in carrying a liquidity premium, so taxing it moves liquidity into substitutes.",
+          "exactSourceLanguage": "If currency notes were to be deprived of their liquidity-premium by the stamping system, a long series of substitutes would step into their shoes — bank-money, debts at call, foreign money, jewellery and the precious metals generally, and so forth."
+        },
+        {
+          "finding": "Keynes on Gesell.",
+          "exactSourceLanguage": "the future will learn more from the spirit of Gesell than from that of Marx."
+        }
+      ],
+      "readFrom": "full-text",
+      "observedAt": "2026-10-08",
+      "design": "primary-text",
+      "population": "Silvio Gesell stamped-money proposal"
+    },
+    {
+      "item": {
+        "id": "ottacher2024",
+        "type": "book",
+        "title": "Der Welt ein Zeichen geben: Das Freigeldexperiment von Wörgl 1932/33",
+        "author": [
+          {
+            "family": "Ottacher",
+            "given": "Gebhard"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024
+            ]
+          ]
+        },
+        "publisher": "Verlag für Sozialökonomie",
+        "URL": "https://www.silvio-gesell.de/files/luxe/img/Download-Dateien/Ottacher.W%C3%B6rgl.1932-33.korr24.pdf"
+      },
+      "findings": [
+        {
+          "finding": "Design: AB-Scheine in denominations of 1, 5, 10 Schilling, 32,000 Schilling initially printed; 1 percent of face value per month (12 percent per year) stamp; redeemable at the municipality for a 2 percent fee.",
+          "exactSourceLanguage": "Die Arbeitsbestätigungen werden mit einer Notabgabe von monatlich 1 % des Nennwertes belastet, die der jeweilige Besitzer durch Aufkleben einer entsprechenden Klebemarke zu Monatsbeginn zu tragen hat."
+        },
+        {
+          "finding": "Volume and turnover: no more than ATS 12,600 needed to be put in circulation; on average ATS 5,490 was in circulation, ATS 1.3 per citizen against ATS 158.76 of Nationalbank money per citizen; the notes passed through the municipal treasury 36.43 times a year.",
+          "exactSourceLanguage": "Im Schnitt waren AB-Scheine im Wert von ATS 5.490,– in Umlauf. Auf jeden Bürger entfielen somit nur ATS 1,3 in Freigeld, während die Österreichische Nationalbank ATS 158,76 pro Staatsbürger in Umlauf hatte. Die AB-Scheine durchliefen jährlich durchschnittlich 36,43 mal die Gemeindekasse."
+        },
+        {
+          "finding": "Tax arrears were ATS 118,000 at the start; arrears receipts in the first 8.5 months rose 53.8 percent over the previous year; holders paid taxes at month end to avoid the stamp.",
+          "exactSourceLanguage": "In den ersten 8 1/2 Monaten des Experiments 1932 stiegen die Einnahmen aus der Zahlung von Steuerrückständen im Vergleich zum Vorjahr um 53,8 Prozent."
+        },
+        {
+          "finding": "Employment: the often-quoted 25 percent unemployment fall (Schwarz) is corrected by Wendel to 11 to 16 percent, against a 19 percent national rise.",
+          "exactSourceLanguage": "Nach Einrechnung derselben ergibt sich ein 11 bis 16 prozentiger Rückgang der Wörgler Arbeitslosigkeit vom Sommer 1932 bis Sommer 1933."
+        },
+        {
+          "finding": "No price rise was observed; the sum of notes was too small to affect prices. Extra municipal investment about ATS 150,000. The interest-rate reduction Gesell theory predicts did not occur because circulation was local.",
+          "exactSourceLanguage": "Eine Senkung des Zinsniveaus, wie sie sich der Theorie zufolge hätte einstellen müssen, trat aufgrund der lokalen Begrenztheit des Notenumlaufs nicht ein."
+        },
+        {
+          "finding": "Critics attributed the success to the high tax arrears; the Tiroler Anzeiger held that success requires unemployment, business stagnation and tax arrears together. Ended by court and National Bank action in September 1933.",
+          "exactSourceLanguage": "nur in den Fällen, wo die drei Voraussetzungen: Arbeitslosigkeit, Geschäftsstockung und Steuerrückstände vorliegen"
+        }
+      ],
+      "readFrom": "full-text",
+      "observedAt": "2026-10-08",
+      "design": "historical-case-study",
+      "country": [
+        "AT"
+      ],
+      "population": "market town Wörgl, Tyrol, about 4,200 inhabitants; 13.5 months July 1932 to September 1933",
+      "notFound": [
+        "A velocity ratio of Worgl notes to the Schilling is not computed in this source; the figure of 36.43 passes per year is the source number."
+      ]
+    },
+    {
+      "item": {
+        "id": "september2026",
+        "type": "article-journal",
+        "title": "A sustainable miracle? Examining the long-term viability of the Wörgl experiment",
+        "author": [
+          {
+            "family": "September",
+            "given": "Jeremy"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "container-title": "International Journal of Community Currency Research",
+        "DOI": "10.26034/zh.ijccr.2026.9551",
+        "URL": "https://www.ijccr.net/article/view/9551"
+      },
+      "findings": [
+        {
+          "finding": "Redemption data inconsistency: 34,500 Schilling (von Muralt 9 months) or 66,300 Schilling (from the 1,326 Schilling 2 percent fee) of certificates were redeemed for Schillings, far above the 12,000 Schilling deposit and the at most 8,000 Schilling in circulation at one time.",
+          "exactSourceLanguage": "a potential inconsistency in the data related to redemption of the Wörgl labor certificates for Austrian Schilling"
+        },
+        {
+          "finding": "Tax-acceptance made circulation fast: from the first day certificates were accepted for municipal taxes, which drove rapid circulation; about 100,000 Schilling of projects were completed, of which 12,000 was government emergency credit; tax backlog fell about 79,000 Schilling.",
+          "exactSourceLanguage": "their use for tax obligations served as a major stimulus for their exceptionally rapid circulation"
+        }
+      ],
+      "readFrom": "full-text",
+      "observedAt": "2026-10-08",
+      "design": "historical-case-study",
+      "country": [
+        "AT"
+      ],
+      "population": "Wörgl labour certificates 1932-33",
+      "notFound": [
+        "The paper states the long-term viability question is left largely unanswered."
+      ]
+    },
+    {
+      "item": {
+        "id": "gelleri2009",
+        "type": "article-journal",
+        "title": "Chiemgauer Regiomoney: theory and practice of a local currency",
+        "author": [
+          {
+            "family": "Gelleri",
+            "given": "Christian"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2009
+            ]
+          ]
+        },
+        "container-title": "International Journal of Community Currency Research",
+        "DOI": "10.15133/j.ijccr.2009.006",
+        "URL": "https://ijccr.net/2012/05/29/chiemgauer-regiomoney-theory-and-practice-of-a-local-currency"
+      },
+      "findings": [
+        {
+          "finding": "Design: euro-backed at 1:1, demurrage 2 percent per quarter (8 percent per year), 5 percent fee for reconversion to euro (of which 1 in 21 goes to non-profits), 3 percent of purchase to chosen non-profit.",
+          "exactSourceLanguage": "The demurrage fee (=negative interest rate) is 2% per quarter or 8% per year."
+        },
+        {
+          "finding": "Velocity: after five years the Chiemgauer velocity was three times that of the euro; turnover grew 30 percent in 2008 to about 3.6 million euro, of which one third (about 600,000 euro) was judged new; 50 issuing offices sold 100,000 Chiemgauer per month and took back 98,000; circulation 300,000 in January 2009.",
+          "exactSourceLanguage": "After five years the velocity of the Chiemgauer has become three times greater than that of the Euro."
+        },
+        {
+          "finding": "Businesses pay about 2 percent of Chiemgauer turnover to the issuer.",
+          "exactSourceLanguage": "Currently businesses pay about 2% of their Chiemgauer turnover to the issuing organization."
+        }
+      ],
+      "readFrom": "full-text",
+      "observedAt": "2026-10-08",
+      "design": "historical-case-study",
+      "country": [
+        "DE"
+      ],
+      "population": "Chiemgauer, Bavaria, 2003 to 2009; issuer-manager account",
+      "notFound": [
+        "No control group or counterfactual for the 600,000 euro estimate."
+      ]
+    },
+    {
+      "item": {
+        "id": "delarosastodder2015",
+        "type": "article-journal",
+        "title": "On velocity in several complementary currencies",
+        "author": [
+          {
+            "family": "De La Rosa",
+            "given": "Josep Lluis"
+          },
+          {
+            "family": "Stodder",
+            "given": "James"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2015
+            ]
+          ]
+        },
+        "container-title": "International Journal of Community Currency Research",
+        "DOI": "10.15133/j.ijccr.2015.012",
+        "URL": "https://doi.org/10.15133/j.ijccr.2015.012"
+      },
+      "findings": [
+        {
+          "finding": "Velocity and annual turnover, 2011: WIR 2.60 (CHF 1.55 billion), RES 1.89 (31.76 million), Talente 4.00 (2.92 million), Chiemgauer 11.30 (6,198,411), Berkshares 4.05 (512,472), Palmas 13.50 (1.02 million), Sol Violette 4.49 (150,000); Bristol Pound 0.79 and RES Catalonia 1.56 in 2013.",
+          "exactSourceLanguage": "WIR velocity is 2.6 while RES velocity is 1.9 despite being similar currencies."
+        },
+        {
+          "finding": "Chiemgauer is 4.97 times faster than the euro in Germany (velocity 2.27 in 2011 by GDP/M2); Palmas five times faster than the real.",
+          "exactSourceLanguage": "4.97 times faster than the Euro in Germany (which velocity is of 2.27 in 2011 calculated by GDP/M2)"
+        },
+        {
+          "finding": "Velocity of the dollar fell from 3.42 (1929) to 2.19 (1933) in the Great Depression, while transaction-based scrip reached 50 or more (Okmulgee almost 100), reported from Godschalk.",
+          "exactSourceLanguage": "A velocity of transaction-based scrip of 50 or more indicates that this kind of local scrip worked very well in these areas compared to the striking conventional money during this crisis."
+        },
+        {
+          "finding": "Not only demurrage raises velocity: blended loans, purely virtual accounts being slower than partly paper currencies, and unregistered members all feature.",
+          "exactSourceLanguage": "the article explores a number of possible explanations on the increases in velocity, apart from prevailing demurrage approaches"
+        }
+      ],
+      "readFrom": "full-text",
+      "observedAt": "2026-10-08",
+      "design": "empirical-study",
+      "n": 9,
+      "population": "nine complementary currencies, data harmonised to 2011 (Bristol Pound and RES Catalonia 2013)"
+    },
+    {
+      "item": {
+        "id": "zeller2020",
+        "type": "article-journal",
+        "title": "Economic advantages of community currencies",
+        "author": [
+          {
+            "family": "Zeller",
+            "given": "Sarah"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2020
+            ]
+          ]
+        },
+        "container-title": "Journal of Risk and Financial Management",
+        "DOI": "10.3390/jrfm13110271",
+        "URL": "https://doi.org/10.3390/jrfm13110271"
+      },
+      "findings": [
+        {
+          "finding": "Community currencies are economically advantageous only where national currency liquidity is seasonally insufficient.",
+          "exactSourceLanguage": "We find community currencies are only economically advantageous in an environment of insufficient liquidity."
+        }
+      ],
+      "readFrom": "abstract",
+      "observedAt": "2026-10-08",
+      "design": "historical-case-study",
+      "n": 2,
+      "country": [
+        "DE",
+        "KE"
+      ],
+      "population": "Chiemgauer (Germany) and Sarafu Credit (Kenya)"
+    },
+    {
+      "item": {
+        "id": "rehme2024",
+        "type": "article-journal",
+        "title": "On rusting money: Silvio Gesell’s Schwundgeld reconsidered, Parts I and II",
+        "author": [
+          {
+            "family": "Rehme",
+            "given": "Guenther"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024
+            ]
+          ]
+        },
+        "container-title": "Review of Economic Analysis",
+        "URL": "https://doi.org/10.15353/rea.v16i2.4942"
+      },
+      "findings": [
+        {
+          "finding": "In a Sidrauski model with love of wealth, Gesell’s short-run claim holds in a demand-determined equilibrium; money depreciation overcomes the zero lower bound; checked against the 2016 Indian demonetization.",
+          "exactSourceLanguage": "Gesell’s conjectures may indeed be valid in a demand-determined, short-run equilibrium and why money depreciation overcomes the zero lower bound on nominal interest rates."
+        },
+        {
+          "finding": "In the long run depreciation alone may be non-beneficial; coupled with expansionary monetary policy it is necessary for a positive Mundell-Tobin effect and creates wealth in the model.",
+          "exactSourceLanguage": "money depreciation, when coupled with expansionary monetary policy, is a necessary condition for a positive Mundell-Tobin effect on long-run real variables and so creates wealth in the model"
+        }
+      ],
+      "readFrom": "abstract",
+      "observedAt": "2026-10-08",
+      "design": "theoretical"
+    },
+    {
+      "item": {
+        "id": "fareouldahmed2017",
+        "type": "article-journal",
+        "title": "Complementary currency systems and their ability to support economic and social changes",
+        "author": [
+          {
+            "family": "Fare",
+            "given": "Marie"
+          },
+          {
+            "family": "Ould Ahmed",
+            "given": "Pepita"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2017
+            ]
+          ]
+        },
+        "container-title": "Development and Change",
+        "DOI": "10.1111/dech.12322",
+        "URL": "https://doi.org/10.1111/dech.12322"
+      },
+      "findings": [
+        {
+          "finding": "Literature review of objectives, forms, governance and connection with political authorities; asks whether systems can support local economies and social inclusion.",
+          "exactSourceLanguage": "This article aims to investigate the capability of complementary currency systems to foster social and economic changes."
+        }
+      ],
+      "readFrom": "abstract",
+      "observedAt": "2026-10-08",
+      "design": "narrative-review",
+      "population": "complementary currency systems (literature)"
+    }
+  ],
+  "searches": [
+    {
+      "register": "openalex",
+      "variables": {
+        "search": "Chiemgauer regional currency velocity of circulation",
+        "per_page": "8"
+      },
+      "observedAt": "2026-10-08",
+      "count": 28,
+      "included": [
+        "delarosastodder2015",
+        "zeller2020"
+      ],
+      "reading": "Velocity paper and a seasonal-liquidity case study qualify; a sociological dissertation summary on Regiogeld origins (Thiel 2011) carries no velocity figure."
+    },
+    {
+      "register": "openalex",
+      "variables": {
+        "search": "Wörgl stamp scrip velocity of money",
+        "per_page": "8"
+      },
+      "observedAt": "2026-10-08",
+      "count": 22,
+      "included": [
+        "september2026"
+      ],
+      "reading": "Returns the 2026 long-term viability paper; no register-listed study measures Wörgl velocity against the Schilling."
+    },
+    {
+      "register": "openalex",
+      "variables": {
+        "search": "demurrage complementary currency holding cost circulation",
+        "per_page": "8"
+      },
+      "observedAt": "2026-10-08",
+      "count": 51,
+      "included": [
+        "fareouldahmed2017"
+      ]
+    },
+    {
+      "register": "openalex",
+      "variables": {
+        "search": "Silvio Gesell free money demurrage",
+        "per_page": "8"
+      },
+      "observedAt": "2026-10-08",
+      "count": 62,
+      "included": [
+        "rehme2024"
+      ],
+      "reading": "Returns Rehme on Schwundgeld and 2026 American Journal of Economics and Sociology Gesell pieces (not read)."
+    },
+    {
+      "register": "openalex",
+      "variables": {
+        "search": "Fisher stamp scrip depression 1933",
+        "per_page": "8"
+      },
+      "observedAt": "2026-10-08",
+      "count": 73,
+      "included": [],
+      "reading": "Returns Iowa scrip histories (Elvins 2005, Warner 2012), not read; Fisher read from the 1933 chapter directly."
+    },
+    {
+      "register": "web",
+      "variables": {
+        "url": "https://enviro.fss.muni.cz/media/3100367/theory-and-practice-of-a-local-currency.pdf"
+      },
+      "observedAt": "2026-10-08",
+      "count": 1,
+      "included": [
+        "gelleri2009"
+      ],
+      "reading": "Gelleri 2009 IJCCR full text."
+    },
+    {
+      "register": "web",
+      "variables": {
+        "url": "https://www.silvio-gesell.de/files/luxe/img/Download-Dateien/Ottacher.W%C3%B6rgl.1932-33.korr24.pdf"
+      },
+      "observedAt": "2026-10-08",
+      "count": 1,
+      "included": [
+        "ottacher2024"
+      ],
+      "reading": "Ottacher text on Wörgl, full text, German."
+    },
+    {
+      "register": "web",
+      "variables": {
+        "url": "https://userpage.fu-berlin.de/~roehrigw/fisher/stamp3.html"
+      },
+      "observedAt": "2026-10-08",
+      "count": 1,
+      "included": [
+        "fisher1933"
+      ],
+      "reading": "Chapter III of Fisher Stamp Scrip."
+    },
+    {
+      "register": "web",
+      "variables": {
+        "url": "https://www.marxists.org/reference/subject/economics/keynes/general-theory/ch23.htm"
+      },
+      "observedAt": "2026-10-08",
+      "count": 1,
+      "included": [
+        "keynes1936"
+      ],
+      "reading": "General Theory chapter 23 section VI on Gesell."
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://research-notes.561.group/hacking/library/predication-notes/composting/library/object/library/thing/library/category/library/functor/library/yoneda-embedding/yoneda-embedding.schema.json",
+  "title": "Yoneda embedding",
+  "description": "JSON Schema for the Yoneda embedding 𝒴 : C → [C^op, Set], A ↦ Hom_C(-, A) — the fully faithful functor sending each object of C to its contravariant hom-functor (Yoneda 1954; Mac Lane 1971 Ch. III §2). The Yoneda lemma makes this functor full and faithful, identifying C with a full subcategory of its presheaf category.",
+  "allOf": [{ "$ref": "https://research-notes.561.group/hacking/library/predication-notes/object/library/thing/library/category/library/functor/functor.schema.json" }],
+  "type": "object",
+  "required": ["source-category"],
+  "properties": {
+    "source-category": {
+      "$dynamicRef": "#name-shape",
+      "description": "The category C being embedded. The Yoneda embedding takes C into its presheaf category [C^op, Set]."
+    }
+  }
+}

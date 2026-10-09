@@ -1,0 +1,5 @@
+{"e":"residuated-lattice","a":"describing","v":"A bounded integral commutative residuated lattice ⟨L, ⊓, ⊔, ⊥, ⊤, ⊗, →, e⟩ extending a bounded lattice with commutative monoidal fusion ⊗ and its right-residual →, where the fusion unit e equals the lattice top ⊤ (integrality).","t":"2026-05-19T23:00:00Z"}
+{"e":"residuated-lattice","a":"extending","v":"lattice","t":"2026-05-19T23:00:00Z"}
+{"e":"residuated-lattice","a":"fusing","v":"residuated-lattice","t":"2026-05-19T23:00:00Z"}
+{"e":"residuated-lattice","a":"right-residuating","v":"residuated-lattice","t":"2026-05-19T23:00:00Z"}
+{"e":"residuated-lattice","a":"parameter-of-predication-fiber-algebra","v":"predication-fiber-algebra","t":"2026-05-19T23:00:00Z"}

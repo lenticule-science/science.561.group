@@ -1,0 +1,126 @@
+\section{It to bit to byte}
+
+The phrase \texttt{it -> bit -> byte} is not added here as a new vocabulary
+layer.  It is a reading discipline for structures already present in the
+library: \texttt{Articulating.head}, \texttt{Articulating.moved}, articulation
+cells, traces, K4 bit axes, format carriers, and cohomological ledgers.
+
+The primitive side is process.  In the articulation spine, the current
+``it'' is recovered by looking backward at a process that has already happened:
+\texttt{head} reads the current utterance and \texttt{floor} reads the primitive
+floor.  A move is the same articulation looked at after the fact: the question
+of whether movement has continued past the present layer.
+
+\begin{definition}[Head as recovered it]\label{def:articulating-head-it}\lean{Obsmetrologia.Articulating.head}\leanok\uses{def:articulating}
+The head readout recovers the utterance at the current layer of an
+\texttt{Articulating}.  This is the first strict local meaning of ``it'': not a
+free substance, but the utterance recovered from a process.
+\end{definition}
+
+\begin{definition}[Moved as retrospective move status]\label{def:articulating-moved}\lean{Obsmetrologia.Articulating.moved}\leanok\uses{def:articulating-head-it}
+The \texttt{moved} readout distinguishes a floor utterance from a continued
+\texttt{pair}.  It is the backward-facing movement bit: articulation while it is
+happening, move when read back from the completed process.
+\end{definition}
+
+\begin{definition}[Flip movement]\label{def:articulating-flip-move}\lean{Obsmetrologia.Articulating.flipMove}\leanok\uses{def:articulating-moved}
+\texttt{flipMove} toggles the two visible movement shapes while preserving the
+head utterance.
+\end{definition}
+
+\begin{definition}[Replace head]\label{def:articulating-replace-head}\lean{Obsmetrologia.Articulating.replaceHead}\leanok\uses{def:articulating-head-it}
+\texttt{replaceHead} changes the recovered utterance while preserving whether
+the process is a floor or a continued movement.
+\end{definition}
+
+\begin{theorem}[It and move are jointly onto]\label{thm:it-move-joint-onto}\lean{Obsmetrologia.Articulating.head_moved_joint_onto}\leanok\uses{def:articulating-head-it, def:articulating-moved}
+For every utterance \(u\) and movement status \(b\), there is an
+\texttt{Articulating} whose head is \(u\) and whose \texttt{moved} status is
+\(b\).
+\end{theorem}
+
+\begin{theorem}[Move toggles while it is fixed]\label{thm:move-toggles-it-fixed}\lean{Obsmetrologia.Articulating.head_flipMove, Obsmetrologia.Articulating.moved_flipMove}\leanok\uses{def:articulating-flip-move}
+\texttt{flipMove} preserves the head readout and flips the movement readout.
+\end{theorem}
+
+\begin{theorem}[Move toggle restores visible readouts]\label{thm:flip-move-visible-readouts}\lean{Obsmetrologia.Articulating.flipMove_flipMove_readouts}\leanok\uses{def:articulating-flip-move}
+Applying \texttt{flipMove} twice restores the head and movement readouts.  It
+does not assert recovery of any tail discarded by the toggle.
+\end{theorem}
+
+\begin{theorem}[It varies while move is fixed]\label{thm:it-varies-move-fixed}\lean{Obsmetrologia.Articulating.head_varies_moved_fixed}\leanok\uses{def:articulating-replace-head}
+For any articulating and any requested utterance, there is another articulating
+with that utterance as head and the same movement status.
+\end{theorem}
+
+\begin{definition}[Articulation cell slots]\label{def:articulation-cell-bits}\lean{Obsmetrologia.Articulating.Cell}\leanok\uses{def:articulating-head-it}
+After a process has yielded an utterance, an articulation cell pairs that
+utterance with two forward-facing witness slots, \texttt{tokenSlot} and
+\texttt{claimSlot}. The bit reading used below is derived from these slots'
+presence, not carried as free Boolean data: a slot is a \texttt{List Token},
+lossless, and only its emptiness is read as a bit.
+\end{definition}
+
+\begin{definition}[Four-corner bit record]\label{def:articulation-four-corner-bit-record}\lean{Obsmetrologia.Articulating.FourCorner}\leanok\uses{def:articulation-cell-bits}
+The local bit record is the existing \texttt{Bool x Bool} four-corner status:
+token-slot presence and claim-slot presence, read off the cell's two witness
+slots by \texttt{Articulating.Cell.fourCorner}.
+\end{definition}
+
+\begin{theorem}[Articulation phase is charge]\label{thm:articulation-it-bit-byte}\lean{Obsmetrologia.articulation_phase_is_reading}\leanok\uses{def:articulation-four-corner-bit-record}
+The four-corner articulation phase is already identified with charge.  This is
+the first bit layer derived internally; it is not a machine bit imported from outside.
+\end{theorem}
+
+\begin{definition}[Trace as folded carrier]\label{def:trace-fold-carrier}\lean{Obsmetrologia.Trace}\leanok\uses{def:articulating}
+A trace is the existing finite fold data that accumulates a word of steps into
+one carrier: an initial carrier, a finite word, and the one-step advance
+operation.
+\end{definition}
+
+\begin{theorem}[Articulating traces reconstruct carriers]\label{thm:articulating-trace-reconstructs}\lean{Obsmetrologia.Trace.ofArticulating_carrier}\leanok\uses{def:trace-fold-carrier}
+Reading a trace from an \texttt{Articulating} carrier and folding it back
+returns the original carrier.
+\end{theorem}
+
+\begin{theorem}[Collatz affine trace is a Trace specialization]\label{thm:collatz-affine-trace-specializes}\lean{Obsmetrologia.Closure.Collatz.traceOfWord_eq_trace_carrier}\leanok\uses{def:trace-fold-carrier}
+The Collatz affine trace fold is exactly the \texttt{Branch}/\texttt{AffineTrace}
+specialization of the general Trace carrier fold.
+\end{theorem}
+
+\begin{theorem}[K4 bits are the bigraded axes]\label{thm:k4-it-bit-byte}\lean{Obsmetrologia.Positing.BigradedTower.axes_independent}\leanok\uses{thm:k4-group}
+At the K4 layer, the bit-data is the independent knowledge/truth bigrading:
+each generator toggles its own coordinate and fixes the other.
+\end{theorem}
+
+\begin{theorem}[Formats cover content corners]\label{thm:format-corner-byte-surface}\lean{Obsmetrologia.Format.corner_onto}\leanok\uses{thm:formats-closure-hierarchy}
+At the computing surface, format carriers cover every content corner.  Raw
+bytes are one strict potential carrier surface, not the primitive unit of
+meaning.
+\end{theorem}
+
+\begin{theorem}[Formats cover completion regimes]\label{thm:format-regime-byte-surface}\lean{Obsmetrologia.Format.regime_onto}\leanok\uses{thm:formats-closure-hierarchy}
+The same format carrier surface covers every completion regime, keeping content
+corner and completion behavior as separate readouts.
+\end{theorem}
+
+\begin{theorem}[Landauer ledger balances]\label{thm:ledger-it-bit-byte}\lean{Obsmetrologia.AntiLandauer.index_balance}\leanok\uses{thm:anti-landauer-index-balance}
+At the finite ledger layer, the byte-like carrier is the cover nerve satisfying
+the index balance \(H^0-H^1=\chi\).
+\end{theorem}
+
+\begin{definition}[Causal carrier readout]\label{def:causal-carrier-readout}\lean{Obsmetrologia.Computing.CausalCarrierReadout}\leanok\uses{thm:cone-field-geometry, thm:bitopological-site-grothendieck}
+A causal carrier readout bundles finite causal support, observable site support,
+and the boundary presentation value that a runtime channel may present.
+\end{definition}
+
+\begin{theorem}[Causality packets are boundary presentations]\label{thm:causality-packet-boundary-presentation}\lean{Obsmetrologia.Computing.causalityPacket_is_boundary_presentation}\leanok\uses{def:causal-carrier-readout}
+A causality packet is subordinate to its causal carrier readout: it presents the
+carrier's boundary value rather than replacing the carrier with a free packet.
+\end{theorem}
+
+\begin{theorem}[Causality packets inherit causal composition]\label{thm:causality-packet-reaches-trans}\lean{Obsmetrologia.Computing.causalityPacket_reaches_trans}\leanok\uses{thm:causality-packet-boundary-presentation, thm:causal-settling-transitive-closure}
+The causality carried by such a packet composes only through the underlying
+causal support.  If the carrier reaches from \(a\) to \(b\) and from \(b\) to
+\(c\), then it reaches from \(a\) to \(c\).
+\end{theorem}

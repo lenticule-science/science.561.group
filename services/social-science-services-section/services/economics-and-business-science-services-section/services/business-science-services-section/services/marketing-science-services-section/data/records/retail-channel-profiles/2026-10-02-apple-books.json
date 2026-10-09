@@ -1,0 +1,13 @@
+{
+  "type": "RetailChannelProfile",
+  "version": 1,
+  "observedOn": "2026-10-02",
+  "channel": "apple-books",
+  "name": "Apple Books for Authors",
+  "finalFileDue": {
+    "businessDays": 10
+  },
+  "sources": [
+    "https://itunespartner.apple.com/books/support/31-set-up-book-pre-order"
+  ]
+}

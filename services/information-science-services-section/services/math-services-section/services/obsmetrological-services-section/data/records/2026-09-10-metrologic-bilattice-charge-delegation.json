@@ -1,0 +1,84 @@
+{
+  "type": "MetrologicBilatticeChargeDelegationRecord",
+  "recordedAt": "2026-09-10",
+  "change": {
+    "summary": "@red-cup-engineering/metrologic/bilattice/charge no longer implements the Charge/FOUR bilattice. Its join, meet, involution and order operations are delegated to @lenticule-science/articulating/predicating/positing/bilattice-charge, the one implementation, which self-verifies its bilattice laws (chargeBilatticeLawReceipt) and ties its Klein-four gauge to RelMath.KleinFour.K4.isGroup. What remains in charge.mjs is a representation binding only: side bit <-> ChargeSide, bare witness <-> mark payload.",
+    "files": [
+      "apps/metrologic/bilattice/src/charge.mjs",
+      "apps/metrologic/bilattice/src/internal.mjs",
+      "apps/metrologic/package.json"
+    ],
+    "removed": [
+      "the local componentwise bilattice algebra in charge.mjs",
+      "internal.mjs union(), the local evidence-accumulation rule, now the owner's mergeEvidence"
+    ]
+  },
+  "behaviourDifferential": {
+    "method": "every exported operation compared against the superseded implementation over all four value pairs crossed with a battery of evidence carriers",
+    "comparisons": 6041,
+    "mismatches": 0,
+    "correctedDivergences": [
+      {
+        "case": "a carrier that already holds a literal duplicate witness on one side",
+        "superseded": "kept both copies (union deduped only the right-hand list against the left)",
+        "owner": "collapses to one",
+        "reachable": false,
+        "note": "the superseded union could never itself produce such a carrier, so no metrologic caller can observe it"
+      },
+      {
+        "case": "two structurally equal objects differing only in key order, merged on the same side",
+        "superseded": "kept both (JSON.stringify dedup is key-order sensitive)",
+        "owner": "collapses to one (coincides is key-order insensitive, so coincidence survives a transport round trip)",
+        "reachable": true,
+        "note": "the owner's reading is canonical; a caller depending on the key-order-sensitive reading is wrong"
+      }
+    ]
+  },
+  "consumerEvidence": {
+    "note": "every consumer pins its own metrologic (0.1.0/0.1.1/0.2.x) and resolves its own installed copy, so each suite was run twice: once as installed, once with the new charge.mjs and internal.mjs overlaid into that installed copy",
+    "suites": [
+      { "package": "@red-cup-engineering/metrologic", "before": "176 pass, 0 fail", "after": "176 pass, 0 fail" },
+      { "package": "@red-cup-engineering/predicated-inference-kernel", "before": "101 pass, 0 fail", "after": "101 pass, 0 fail" },
+      { "package": "relating (test/lib/metrologic-conformance.test.mjs)", "before": "7 pass, 0 fail", "after": "7 pass, 0 fail" },
+      { "package": "eavt-engineering-services-section", "before": "131 pass, 0 fail", "after": "131 pass, 0 fail" },
+      { "package": "forecasting-services-section", "before": "74 pass, 0 fail", "after": "74 pass, 0 fail" },
+      { "package": "aletheon-services-section", "before": "142 pass, 0 fail", "after": "142 pass, 0 fail" },
+      { "package": "trading-belief-service", "before": "28 pass, 0 fail", "after": "28 pass, 0 fail" },
+      { "package": "@red-cup-engineering/hierarchical-circuit-law", "before": "13 pass, 0 fail", "after": "13 pass, 0 fail", "note": "no metrologic dependency; already imports articulating directly" },
+      { "package": "articulation-services-section (test:node)", "before": "51 pass, 0 fail", "after": "51 pass, 0 fail", "note": "unchanged baseline" }
+    ]
+  },
+  "openObligations": [
+    {
+      "kind": "browser-delivery",
+      "severity": "blocking for the browser faces at repin time, inert until then",
+      "statement": "apps/metrologic/bilattice/src/charge.mjs is served raw to browsers and now carries a bare specifier. Three faces vendor it and must gain both an import-map entry for @lenticule-science/articulating/predicating/positing/bilattice-charge and the articulating dist files it needs (bilattice-charge.mjs, twist-product.mjs, utterance.mjs, plus @red-cup-engineering/computer-data-type-engine/mark for articulating 0.3+).",
+      "faces": [
+        {
+          "package": "durante",
+          "path": "apps/durante/web/index.html",
+          "detail": "its import map maps @red-cup-engineering/metrologic/bilattice/charge to /vendor/@red-cup-engineering/metrologic/bilattice/src/charge.mjs. The generic /vendor route already allows the @lenticule-science scope, so one map entry suffices, but @lenticule-science/articulating is not currently installed for durante and must be added as a dependency.",
+          "testGap": "src/server.test.mts asserts the file is served (status 200 plus a regex) but never executes it, so no Node test would catch the missing map entry; only a real browser would."
+        },
+        {
+          "package": "equivo-service",
+          "path": "web/build/sync-vendor.mjs",
+          "detail": "syncMath() copies the metrologic bilattice sources byte-identical on the stated premise that they are zero-dependency browser-safe ESM. That premise no longer holds; the script must also vendor articulating's dist files and the page import map must resolve the new specifier. articulating is already installed for equivo."
+        },
+        {
+          "package": "crucible-service",
+          "path": "web/server.mjs",
+          "detail": "same bare-specifier resolution note; articulating is already installed."
+        }
+      ],
+      "whyNotDoneHere": "every browser face still pins metrologic 0.1.x and resolves its own installed copy, so the change is inert for them until metrologic is republished and each face repinned. The obligation lands at repin time and cannot be verified before it."
+    },
+    {
+      "kind": "dependency-cycle",
+      "severity": "structural, needs an owner decision",
+      "statement": "@lenticule-science/articulating depends on @red-cup-engineering/metrologic (0.1.1, for /chu and /chu/four; metrologic's chu/src/four.mjs in turn imports bilattice/charge). Declaring @lenticule-science/articulating in metrologic's dependencies closes a package-level cycle: metrologic 0.2.x -> articulating 0.4.2 -> metrologic 0.1.1. npm installs it, but the house publish gate wants exact pins and this is self-referential.",
+      "rootCause": "the direction is inverted at the stratum as well: articulating is a lib/src-stratum package and metrologic is apps/metrologic, so articulating depending on metrologic is a lib depending on an app.",
+      "resolutionSketch": "the FOUR reading articulating needs from metrologic/chu should move down to a package articulating may own or import without an app hop, or chu should be re-seated. Recorded, not fixed here: import-stratification law says a violation found in existing code is a finding, never an en-passant fix."
+    }
+  ]
+}

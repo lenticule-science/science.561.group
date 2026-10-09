@@ -1,0 +1,95 @@
+\section{Guarded predicating: discharging the proof obligation}
+
+\Cref{thm:predicating-proper} states that predicating is defined on an
+articulation cell only with a proof that the cell is in the potential corner,
+but the carrier it is stated against, \texttt{Articulating.PotentialCell}, is
+an unconstrained wrapper: its ``potential''-ness is asserted by the type's
+name, not demanded by a hypothesis. This section discharges the promise
+literally, against a general \texttt{Articulating.Cell} with an explicit
+incidence proof as an argument, and records the resulting carrier as
+equivalent to the existing typed one.
+
+\begin{proposition}[The typed potential cell]\label{thm:potential-cell}\lean{Obsmetrologia.Articulating.PotentialCell}\leanok\uses{thm:articulation-cell}
+The typed potential cell is an utterance alone, read as told-true (token
+witnessed, claim not) by construction: \texttt{toCell} forgets it to the
+ambient \texttt{Articulating.Cell} via \texttt{articulate}, giving token slot
+\texttt{[utterance.token]} and empty claim slot, and \texttt{toCell\_corner}
+confirms the forgotten cell always sits in the \texttt{potential} corner. The
+incidence fact is true of every value of this type, but nothing in the type
+itself forces a caller to supply it.
+\end{proposition}
+
+\begin{proposition}[Predicating, guarded]\label{thm:predicating-guarded}\lean{Obsmetrologia.Articulating.Cell.predicatingOf}\leanok\uses{thm:predicating-proper, thm:corner}
+\texttt{predicatingOf} takes a general articulation cell \(c\) together with
+an explicit proof \(c.\mathrm{corner} = \mathtt{potential}\) as its second
+argument, and returns the seed of \(c\)'s utterance. Computationally this is
+the same construction \texttt{PredicationCell.predicating} always was; the
+proof argument is not consumed in the body. What changes is the type: the
+incidence condition the prose promised is now a hypothesis the caller must
+supply, not a name the caller must trust.
+\end{proposition}
+
+\begin{theorem}[The guarded and typed carriers agree]\label{thm:predicating-guarded-agree}\lean{Obsmetrologia.PredicationCell.predicatingOf_toCell}\leanok\uses{thm:predicating-guarded, thm:potential-cell, thm:predicating-proper}
+Guarded predicating on the cell \(pc.\mathrm{toCell}\) underlying a typed
+potential cell \(pc\), fed the proof \texttt{toCell\_corner} already supplies,
+equals \texttt{predicating}~\(pc\). Both sides reduce to
+\texttt{seed}~\(pc.\mathrm{utterance}\); the equality is definitional.
+\end{theorem}
+
+\begin{proposition}[The potential-corner subtype]\label{thm:potential-subtype}\lean{Obsmetrologia.Articulating.PotentialCell.Potential}\leanok\uses{thm:corner, thm:articulation-cell-corner}
+The second carrier of ``a cell known to sit in the potential corner'': the
+subtype of articulation cells \(c\) paired with a proof
+\(c.\mathrm{corner} = \mathtt{potential}\). This is the general-purpose,
+Mathlib-shaped presentation of the same incidence condition
+\texttt{PotentialCell} carries by convention rather than by type.
+\end{proposition}
+
+\begin{theorem}[The two carriers are a retract, not a bijection]\label{thm:potential-roundtrip}\lean{Obsmetrologia.Articulating.PotentialCell.ofSubtype_toSubtype, Obsmetrologia.Articulating.PotentialCell.toSubtype_ofSubtype}\leanok\uses{thm:potential-cell, thm:potential-subtype}
+\texttt{toSubtype} carries a typed potential cell to the potential-corner
+subtype, and \texttt{ofSubtype} forgets a subtype element's incidence proof
+back to a typed potential cell, keeping only its utterance. Under the slot
+cell, \texttt{PotentialCell} is a \emph{retract} of the subtype, not an
+equivalence with it: forward-then-back,
+\texttt{ofSubtype\,(toSubtype\,pc) = pc}, is unconditional and definitional
+(\texttt{ofSubtype\_toSubtype}). Back-then-forward,
+\texttt{toSubtype\,(ofSubtype\,c) = c}, needs the extra hypothesis
+\(c.\mathrm{val}.\mathrm{tokenSlot} = [c.\mathrm{val}.\mathrm{utterance}.\mathrm{token}]\)
+(\texttt{toSubtype\_ofSubtype}): the incidence proof
+\(c.\mathrm{val}.\mathrm{corner} = \mathtt{potential}\) alone only pins the
+claim slot empty and the token slot non-empty, not to the singleton
+\([c.\mathrm{val}.\mathrm{utterance}.\mathrm{token}]\) --- a potential cell may
+carry further token witnesses beyond the one \texttt{articulate} would have
+put there, and \texttt{ofSubtype} (which keeps only the utterance) silently
+forgets them. Without the hypothesis the round trip is false in general; with
+it, the two carriers of ``told-true'' coincide on the canonical, measured
+shape.
+\end{theorem}
+
+\begin{proposition}[What always survives the round trip]\label{thm:potential-roundtrip-survives}\lean{Obsmetrologia.Articulating.PotentialCell.toSubtype_ofSubtype_utterance, Obsmetrologia.Articulating.PotentialCell.toSubtype_ofSubtype_corner}\leanok\uses{thm:potential-roundtrip}
+Even without the singleton hypothesis, \texttt{toSubtype\,(ofSubtype\,c)}
+always keeps \(c\)'s own utterance and its \texttt{potential} corner: the
+back-then-forward composite is unconditionally a potential cell over the same
+utterance as \(c\), and only the extra token witnesses beyond the head's own
+token can be lost. This is the honest unconditional remainder of the full
+round trip \cref{thm:potential-roundtrip} loses in general.
+\end{proposition}
+
+\begin{proposition}[A cell at the un-articulated position cannot predicate]\label{thm:absurd-cannot-predicate}\lean{Obsmetrologia.Articulating.Cell.absurd_cannot_predicate}\leanok\uses{thm:predicating-guarded, thm:articulation-cell-initial}
+A cell in the \texttt{absurd} corner --- the un-articulated position --- can
+never supply \texttt{predicatingOf}'s hypothesis: \texttt{absurd} and
+\texttt{potential} are distinct constructors of \texttt{Corner}. This is
+deliberately shallow --- a naming of constructor-distinctness, not a deep
+result --- but it is the honest Lean shape of the qualitative claim that
+predicating cannot proceed from the un-articulated position: at least one
+articulation, witnessing the token, is required first. Since articulating
+itself never produces the absurd corner (\cref{thm:cell-corner-ne-absurd}),
+this hypothesis is idle against anything articulating actually generates; it
+guards only against a cell built by fiat.
+\end{proposition}
+
+This section leaves \texttt{PredicationCell.predicating} itself untouched;
+it does not retrofit the guard onto the carrier the rest of the predicating
+chapter is built against, nor does it claim the retract of
+\cref{thm:potential-roundtrip} is the unique such relation between the two
+carriers of ``potential'' --- only that this one exists, with its hypothesis
+made explicit rather than smoothed over.

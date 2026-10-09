@@ -1,0 +1,158 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "lenticule/relconlang/proposition-nucleus-v0.1",
+  "title": "RelConLang Proposition Nucleus v0.1",
+  "description": "Experimental structural identity carrier for proposition comparison. Excludes dialogue force and indexed FOUR stance from nucleus identity; retains separate update coordinates.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "kind",
+    "predicate",
+    "arguments",
+    "obliques",
+    "complements",
+    "aspect",
+    "polarity"
+  ],
+  "properties": {
+    "kind": {
+      "const": "lenticule.relconlang.proposition-nucleus"
+    },
+    "predicate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "surface",
+        "canonical",
+        "warrant"
+      ],
+      "properties": {
+        "surface": {
+          "type": "string"
+        },
+        "canonical": {
+          "type": "string"
+        },
+        "warrant": {
+          "enum": [
+            "declared-root",
+            "derived",
+            "surface-only",
+            "unknown"
+          ]
+        }
+      }
+    },
+    "arguments": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "role",
+          "surface",
+          "referent",
+          "grounding"
+        ],
+        "properties": {
+          "role": {
+            "enum": [
+              "agent",
+              "patient",
+              "recipient",
+              "instrument",
+              "location",
+              "other"
+            ]
+          },
+          "surface": {
+            "type": "string"
+          },
+          "referent": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "grounding": {
+            "enum": [
+              "deictic",
+              "anaphoric",
+              "lexical",
+              "unresolved"
+            ]
+          }
+        }
+      }
+    },
+    "obliques": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "role",
+          "surface",
+          "referent"
+        ],
+        "properties": {
+          "role": {
+            "enum": [
+              "provenance",
+              "locus",
+              "kind",
+              "other"
+            ]
+          },
+          "surface": {
+            "type": "string"
+          },
+          "referent": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    },
+    "complements": {
+      "type": "array",
+      "items": {
+        "anyOf": [
+          {
+            "$ref": "lenticule/relconlang/proposition-nucleus-v0.1"
+          },
+          {
+            "type": "string"
+          }
+        ]
+      }
+    },
+    "aspect": {
+      "enum": [
+        "unmarked",
+        "inchoative",
+        "process",
+        "settled",
+        "release",
+        "unknown"
+      ]
+    },
+    "polarity": {
+      "enum": [
+        "positive",
+        "negative",
+        "open",
+        "unknown"
+      ]
+    },
+    "modal": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "description": "Lexical or grammatical modality kept as an update coordinate until its identity behavior is derived."
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://561.group/swarm-intelligence/agentic-orchestration-platform/memory/idea-record/idea-record.schema.json",
+  "title": "Idea record (agent's emitted candidate-thought)",
+  "description": "Per lab/.../memory/idea-record/: a candidate-thought the agent emitted, with provenance to its triggering observation. Distinct from memory-record (recall of external entity) — idea-records are recall of the agent's own emissions. Important for the agent-561 derivation work: derived $things start as idea-records before settling into proposals.",
+  "kind": "object",
+  "type": "object",
+  "required": ["agent", "content", "triggeredBy", "emittedAt"],
+  "additionalProperties": false,
+  "properties": {
+    "agent": { "type": "string", "minLength": 1 },
+    "content": { "type": "string", "minLength": 1 },
+    "triggeredBy": { "type": "string", "minLength": 1 },
+    "emittedAt": { "type": "string", "minLength": 1 }
+  }
+}

@@ -1,0 +1,39 @@
+---
+type: theorem
+status: proved
+depends-on: [combined-cohomology-classifying-morphism, mutually-locally-derivable, aperiodic-regime-classification, settling-morphism, settling-associated-sheaf]
+title: Combined classifying morphism is MLD-invariant across regimes
+description: "The combined cohomology classifying morphism $\\mathrm{cl}\\text{-}\\mathrm{inv}^{(0, 1)}$ is well-defined on MLD-classes: if $v \\sim{\\mathrm{MLD}} v'$ then"
+---
+
+# Combined classifying morphism is MLD-invariant across regimes
+
+The [combined cohomology classifying morphism](../../research/2026/07/31/lenticule-import/yet-another-unsorted-archive-dump/predication-categories/_archive/bucket-4/articulating/library/aperiodic-articulation-category/library/aperiodic-articulation-cell/library/potential-aperiodic-articulation-cell/predicating/library/transfinite-predication-category/library/transfinite-predication-cell/library/potential-transfinite-predication-cell/positing/library/scott-continuous-posit-category/library/scott-continuous-posit-cell/library/potential-scott-continuous-posit-cell/settling/library/finite-settlement-algebra/hacking/library/mutually-locally-derivable/docs/dev/morphisms/combined-cohomology-classifying-morphism.md) $\mathrm{cl}\text{-}\mathrm{inv}^{(0, 1)}$ is well-defined on [MLD-classes](../../research/2026/07/31/lenticule-import/yet-another-unsorted-archive-dump/predication-categories/_archive/bucket-4/articulating/library/aperiodic-articulation-category/library/aperiodic-articulation-cell/library/potential-aperiodic-articulation-cell/predicating/library/transfinite-predication-category/library/transfinite-predication-cell/library/potential-transfinite-predication-cell/positing/library/scott-continuous-posit-category/library/scott-continuous-posit-cell/library/potential-scott-continuous-posit-cell/settling/library/finite-settlement-algebra/hacking/library/mutually-locally-derivable/docs/dev/concepts/mutually-locally-derivable.md): if $v \sim_{\mathrm{MLD}} v'$ then
+
+$$\mathrm{cl}\text{-}\mathrm{inv}^{(0, 1)}(v) \;=\; \mathrm{cl}\text{-}\mathrm{inv}^{(0, 1)}(v').$$
+
+The statement holds in all four regimes.
+
+## Proof
+
+An invertible [settling-morphism](../../research/2026/07/31/lenticule-import/yet-another-unsorted-archive-dump/predication-categories/_archive/bucket-4/articulating/library/aperiodic-articulation-category/library/aperiodic-articulation-cell/library/potential-aperiodic-articulation-cell/predicating/library/transfinite-predication-category/library/transfinite-predication-cell/library/potential-transfinite-predication-cell/positing/library/scott-continuous-posit-category/library/scott-continuous-posit-cell/library/potential-scott-continuous-posit-cell/settling/library/finite-settlement-algebra/hacking/library/mutually-locally-derivable/docs/dev/morphisms/settling-morphism.md) $(\delta, \phi) : v \to v'$ induces a sheaf isomorphism $\phi_* : \mathcal{F}_U \xrightarrow{\sim} \mathcal{F}_{U'}[\delta]$ on the [bitopological settling site](../../../../../../../../../information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/obsmetrologia/docs/verso/mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/content/bitopological-settling-site/bitopological-settling-site.md), as in the [aperiodic-regime classification](../../../../../../../../../information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/obsmetrologia/docs/verso/mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/content/aperiodic-settling/references/aperiodic-regime-classification.md) proof Step 3. Functoriality of cohomology then gives an iso $\phi_*$ on each cohomology group:
+
+- $H^0$: $\phi_*$ sends the global identity section to the global identity section, so $[\mathbf{1}_{H^0(v)}] \mapsto [\mathbf{1}_{H^0(v')}]$.
+- $H^1$: $\phi_*$ sends $\mathrm{cl}\text{-}\mathrm{inv}(v) \mapsto \mathrm{cl}\text{-}\mathrm{inv}(v')$ in the appropriate identification.
+
+Both components of $\mathrm{cl}\text{-}\mathrm{inv}^{(0, 1)}$ are preserved. $\square$
+
+## Applies in all regimes
+
+The proof is regime-independent: it uses only that an MLD-morphism induces a sheaf isomorphism, which holds for any regime. In particular:
+
+- **the strict and Scott-continuous regimes.** $H^1 = 0$, so the $H^1$-component is trivially preserved. MLD-invariance reduces to $H^0$-invariance, which holds because the morphism preserves designated-cell sets.
+- **the transfinite-bounded and aperiodic regimes.** Both $H^0$ and $H^1$ components are preserved by the sheaf-iso.
+
+## Consequence
+
+$\mathrm{cl}\text{-}\mathrm{inv}^{(0, 1)}$ descends to a function on the [coarse settling moduli](../../../../../../../relationality-services-section/services/agency-services-section/content/text/documents/articles/notes/undated/coarse-settling-moduli.md). On each regime stratum, injectivity of the descent is the classification claim:
+
+- Aperiodic regime: [aperiodic-regime moduli classification](../../../../../../../../../information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/obsmetrologia/docs/verso/mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/content/aperiodic-settling/references/aperiodic-regime-moduli-classification.md) gives injectivity (with $|E| \geq \omega_1$).
+- Transfinite-bounded regime: [transfinite-bounded-regime moduli classification](../../../../../../../../../information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/obsmetrologia/docs/verso/mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/references/transfinite-bounded-regime-moduli-classification.md) gives injectivity.
+- the strict and Scott-continuous regimes: [combinatorial classification across regimes](../../research/2026/07/31/lenticule-import/yet-another-unsorted-archive-dump/predication-categories/_archive/bucket-4/articulating/library/aperiodic-articulation-category/library/aperiodic-articulation-cell/library/potential-aperiodic-articulation-cell/predicating/library/transfinite-predication-category/library/transfinite-predication-cell/library/potential-transfinite-predication-cell/positing/library/scott-continuous-posit-category/library/scott-continuous-posit-cell/library/potential-scott-continuous-posit-cell/settling/library/finite-settlement-algebra/hacking/library/mutually-locally-derivable/docs/dev/theorems/combinatorial-classification-across-regimes.md) gives the combinatorial form, equivalent to MLD via [biequivalence-cohomological collapse](../../../../../../../../../information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/obsmetrologia/docs/verso/mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/content/sheaf/content/settling-cohomology/references/biequivalence-cohomological-collapse.md).

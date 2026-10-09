@@ -1,0 +1,34 @@
+{
+  "kind": "lenticule.relconlang.interrogativity-carrier-audit",
+  "version": "0.1",
+  "status": "experimental-audit",
+  "currentCarriers": [
+    {
+      "carrier": "ku",
+      "layer": "grammar/dialogue",
+      "currentShared": "feature force:directive + dialogue:question; discourse arc to governing verb",
+      "currentSignCraft": "discourse event row value=question",
+      "machineReadableQuestion": true
+    },
+    {
+      "carrier": "?",
+      "layer": "orthography/segmentation",
+      "currentShared": "sentence terminator only; no question force inferred from punctuation",
+      "currentSignCraft": "stripped by tokenizer before parsing; no question force inferred",
+      "machineReadableQuestion": false
+    },
+    {
+      "carrier": "prosody/nonmanual marking",
+      "layer": "speech/signing",
+      "current": "roadmap/not represented",
+      "machineReadableQuestion": false
+    }
+  ],
+  "conflictCase": {
+    "text": "ko tu kan kano?",
+    "documentedReading": "contrastive question: you rather than another candidate?",
+    "currentMachineReading": "contrast-marked proposition with no ku-derived dialogue:question force",
+    "implication": "prose/orthography and parser-level dialogue semantics disagree"
+  },
+  "principle": "Treat interrogative carriers as distinct witnesses. Do not infer that '?' and ku are semantically identical until an explicit composition/precedence rule exists."
+}

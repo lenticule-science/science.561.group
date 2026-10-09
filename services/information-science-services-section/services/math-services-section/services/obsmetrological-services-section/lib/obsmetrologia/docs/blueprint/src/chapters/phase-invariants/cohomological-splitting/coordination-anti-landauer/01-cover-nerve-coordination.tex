@@ -1,0 +1,34 @@
+\subsubsection{Cover-nerve coordination cohomology}
+
+\begin{proposition}[Cover nerve (Euler counts)]\label{thm:cover-nerve}\lean{Obsmetrologia.Cohomology.CoverNerve}\leanok\uses{thm:settling-cohomology-h1-vanishes, thm:h0-count}
+The cover nerve of one federated logical cell is carried by its entity,
+cell, and component counts. Its well-formedness fields are the finite
+union-find bounds needed for the Euler cycle-rank calculation.
+\end{proposition}
+
+\begin{proposition}[Coordination $\check H^1$ as cycle rank]\label{thm:coordination-h1rank}\lean{Obsmetrologia.Cohomology.CoverNerve.H1rank}\leanok\uses{thm:cover-nerve}
+The first cohomology rank of the cover nerve is
+$|E|-|V|+|C|$, truncated in $\mathbb N$ and exact under the carried
+well-formedness invariant.
+\end{proposition}
+
+\begin{theorem}[Coordination--cohomology correspondence (direction 1, the iff)]\label{thm:coordination-h1-iff-forest}\lean{Obsmetrologia.Cohomology.CoverNerve.h1_vanishes_iff_forest}\leanok\uses{thm:coordination-h1rank}
+The coordination obstruction vanishes exactly when the finite nerve is a
+forest: $\check H^1=0$ iff $|V|=|E|+|C|$.
+\end{theorem}
+
+\begin{theorem}[Rank $\check H^1$ $=$ coordination cost]\label{thm:coordination-cost}\lean{Obsmetrologia.Cohomology.CoverNerve.h1rank_is_coordination_cost}\leanok\uses{thm:coordination-h1-iff-forest}
+The rank $\check H^1$ counts cells in excess of a spanning forest. These
+independent cycles are the finite coordination obstructions.
+\end{theorem}
+
+\begin{theorem}[The Laplacian dual: $\check H^0=\ker$, $\check H^1=\mathrm{coker}$]\label{thm:coordination-laplacian-dual}\lean{Obsmetrologia.Cohomology.CoverNerve.laplacian_kernel_cokernel}\leanok\uses{thm:coordination-h1rank, thm:settling-hodge-iso, thm:lawvere-harmonic-clinv-zero}
+With incidence rank $\rho=|V|-|C|$, the cover nerve satisfies
+$\check H^0=|V|-\rho$ and $\check H^1=|E|-\rho$. This is the finite
+kernel/cokernel form of the coordination calculation.
+\end{theorem}
+
+\begin{theorem}[A finite tree-cover is coordination-free (graph-backed)]\label{thm:tree-coordination-free}\lean{Obsmetrologia.Cohomology.tree_coordination_free}\leanok\uses{thm:coordination-h1-iff-forest}
+A finite tree cover has $\check H^1=0$, derived from the graph-theoretic
+spanning identity $|E|+1=|V|$.
+\end{theorem}

@@ -1,0 +1,132 @@
+---
+kind: theorem
+status: proved
+depends-on: [void-cone-cohomology, continuous-valued-settling, stochastic-settling, continuous-state-regime-classification]
+title: Value-category-agnostic void cone
+description: Generalizes the void-cone cohomology theorem from bilattice-valued to general $\mathcal{V}$-valued settlings.
+---
+
+# Value-category-agnostic void cone
+
+Generalizes the [void-cone cohomology theorem](../../../../../../../information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/obsmetrologia/docs/verso/mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/content/lorentzian-causal-settling/references/void-cone-cohomology.md) from bilattice-valued to general $\mathcal{V}$-valued settlings. The void cone of a $\mathcal{V}$-enriched closure operator is the descending family of cells valued at the closure-trivial element of $\mathcal{V}$ — recovering the standard $\bot$-void in the bilattice case, the *zero-probability* void in the stochastic case, and the *no-path* void in the Lawvere-quantale case.
+
+## Statement
+
+**Setup.** A **closure-pointed value category** is a triple $(\mathcal{V}, \leq_T, \mathbf{0}_\mathcal{V})$ where:
+
+- $\mathcal{V}$ is a value category for $\mathcal{V}$-enriched presheaves (per [continuous-valued settling](../../../../../../../information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/obsmetrologia/docs/verso/mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/content/continuous-valued-settling/continuous-valued-settling.md)).
+- $\leq_T$ is a *closure-monotonic* partial order on $\mathcal{V}$ — the order under which the closure operator $T_\mathcal{V}$ is monotone and inflationary.
+- $\mathbf{0}_\mathcal{V} := \min_{\leq_T} \mathcal{V}$ — the **closure-trivial element**, the $\leq_T$-bottom.
+
+A closure operator $T_\mathcal{V}$ is **support-respecting** iff the constant presheaf $\mathbf{0}_\mathcal{V}$-everywhere is a fixed point: $T_\mathcal{V}(v_{\equiv \mathbf{0}}) = v_{\equiv \mathbf{0}}$.
+
+**Theorem (value-agnostic void cone).** *For a $\mathcal{V}$-enriched, $\leq_T$-monotone-and-inflationary, support-respecting closure operator $T_\mathcal{V}$, define the void cone*
+
+$$\mathrm{Void}_v := \{V_\tau\}_{\tau \leq \kappa}, \quad V_\tau := \{(s, o, q) \in E \times E \times \mathcal{C} : v_\tau(q)(s, o) = \mathbf{0}_\mathcal{V}\}.$$
+
+*Then:*
+
+1. *(Monotone descent.) $V_\tau \supseteq V_{\tau+1}$ for all $\tau$.*
+
+2. *(Limit void.) $V_\infty := \bigcap_{\tau < \kappa} V_\tau$ exists; cells in $V_\infty$ are the **structurally-unreachable** cells — cells the closure never moves away from $\mathbf{0}_\mathcal{V}$.*
+
+3. *(Cohomological pairing, when firings are discrete.) For each NSC firing $\mu \in L_\mathrm{ns}$ — defined as a stage at which some cell transitions from $\mathbf{0}_\mathcal{V}$ to non-$\mathbf{0}_\mathcal{V}$ — there is a void-cohomology generator $\bar e_\mu \in H^0(\mathrm{Void}_v)$ recording "cell $\mathrm{cell}(\mu)$ stops being void at stage $\mu$." The void cohomology is dually paired with the apex cohomology by the same $L_\mathrm{ns}$ indexing.*
+
+## Proof
+
+### Step 1: Monotone descent
+
+$T_\mathcal{V}$ is $\leq_T$-inflationary, so $v_\tau \leq_T v_{\tau+1}$ pointwise. If $v_{\tau+1}(s, o) = \mathbf{0}_\mathcal{V}$, then $v_\tau(s, o) \leq_T \mathbf{0}_\mathcal{V}$, which forces $v_\tau(s, o) = \mathbf{0}_\mathcal{V}$ since $\mathbf{0}_\mathcal{V}$ is the $\leq_T$-bottom. Hence $V_{\tau+1} \subseteq V_\tau$. $\square$ (Step 1)
+
+### Step 2: Limit void
+
+The descending chain $V_0 \supseteq V_1 \supseteq \cdots$ has intersection $V_\infty = \bigcap V_\tau$. By the support-respecting property, a cell $(s, o, q) \in V_\infty$ has $v_\tau(q)(s, o) = \mathbf{0}_\mathcal{V}$ for all $\tau$ — closure has never moved this cell away from the trivial value. These are *structurally-unreachable* cells (no closure-rule chain reaches them from the support of $v_0$).
+
+The support-respecting hypothesis is crucial here: without it, a cell could appear $\mathbf{0}_\mathcal{V}$ at every stage by accident even though closure could in principle reach it. Support-respecting rules that out. $\square$ (Step 2)
+
+### Step 3: Cohomological pairing
+
+Define the **firing-set** $L_\mathrm{ns} := \{\mu : \text{some cell transitions from } \mathbf{0}_\mathcal{V} \text{ to non-} \mathbf{0}_\mathcal{V} \text{ at stage } \mu\}$. For $\mathcal{V}$ discrete (finite or countable order-structure), each cell either stays at $\mathbf{0}_\mathcal{V}$ forever or has a unique first-firing-ordinal $\mu(\mathrm{cell})$.
+
+The void cone $\{V_\tau\}$ as an inverse system has *cokernel* at each NSC firing $\mu$ generated by the cell that fires at $\mu$:
+
+$$\mathrm{coker}(V_\mu \hookrightarrow V_{<\mu}) \cong R_\mu$$
+
+where $R_\mu$ is a coefficient ring depending on $\mathcal{V}$ (typically $\mathbb{Z}$ for discrete $\mathcal{V}$, or the Grothendieck group of the value-category-of-firings for continuous $\mathcal{V}$).
+
+Summing: $H^0(\mathrm{Void}_v) := \bigoplus_{\mu \in L_\mathrm{ns}} R_\mu$.
+
+Apex pairing: per the [aperiodic-regime cohomology via direct limit theorem](../../../../../../../information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/obsmetrologia/docs/verso/mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/content/aperiodic-settling/references/aperiodic-regime-cohomology-via-direct-limit.md), apex $H^1$ has the same indexing $L_\mathrm{ns}$ with the same $R_\mu$ coefficients (each apex generator records "cell acquires non-trivial value"; each void generator records "cell stops being void" — same event). $\square$ (Step 3)
+
+## Specialization to the four canonical cases
+
+### Bilattice case ($\mathcal{V} = \mathbf{FOUR}$, $\mathbf{0}_\mathcal{V} = \bot$, $R_\mu = \mathbb{Z}$)
+
+Closure-monotonic order $\leq_k$ has $\bot$ as bottom. Support-respecting holds for all standard closure operators in the corpus. Recovers the [void-cone cohomology theorem](../../../../../../../information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/obsmetrologia/docs/verso/mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/content/lorentzian-causal-settling/references/void-cone-cohomology.md):
+
+$$H^0(\mathrm{Void}_v) \cong \bigoplus_{\mu \in L_\mathrm{ns}} \mathbb{Z}$$
+
+— one generator per NSC firing, dually paired with apex $H^1$.
+
+### Stochastic case ($\mathcal{V} = ([0, 1], \cdot, +)$, $\mathbf{0}_\mathcal{V} = 0$, $R_\mu = \mathbb{Z}$)
+
+Closure-monotonic order: $0 \leq_T x$ for all $x$ (the closure operator $T_\mathrm{stoch}$ is non-decreasing in cell values, since it's a non-negative-coefficient sum). Support-respecting: if $v \equiv 0$ then $T(v)(s, o) = \sum_z 0 \cdot P(z, o) = 0$.
+
+The void cone: $V_\tau = \{(s, o) : v_\tau(s, o) = 0\}$ — cells with zero $k$-step transition probability. $V_\infty = $ cells with no-path-of-positive-probability from $s$ to $o$ = structurally-unreachable transitions in the support graph of $P$.
+
+For absorbing chains where some states cannot transition backward, $V_\infty$ has positive cardinality. The [probabilistic belief-propagation benchmark](../../documents/articles/notes/undated/benchmark-probabilistic-belief-propagation.md) shows the absorbing-chain case with $|V_\infty| = 3$.
+
+### Lawvere-quantale case ($\mathcal{V} = ([0, \infty], +, \min)$, $\mathbf{0}_\mathcal{V} = \infty$, $R_\mu = \mathbb{Z}$)
+
+Closure-monotonic order: $a \leq_T b$ iff $a \geq b$ in the natural order (smaller distance = more closure-content). The closure-trivial element is $\infty$ (no path = no closure-progress).
+
+Support-respecting: if $v \equiv \infty$ everywhere except diagonal-zeros, then $T(v)(s, o) = \min(v(s, o), \min_z v(s, z) + v(z, o)) = \infty$ for $s \neq o$ (since both terms are $\infty$). ✓
+
+The void cone: $V_\tau = \{(s, o) : v_\tau(s, o) = \infty\}$ — cells with no $k$-hop path from $s$ to $o$. $V_\infty = $ cells with no-path-at-any-length = unreachable in the graph.
+
+For disconnected graphs, $V_\infty$ has positive cardinality: the cells crossing between components.
+
+### Continuous-Lorentzian case ($\mathcal{V} = \{0, 1\}$ Boolean, $\mathbf{0}_\mathcal{V} = 0$)
+
+Boolean settling on causal-set events. Closure-monotonic order: $0 \leq_T 1$. Support-respecting holds for transitive closure.
+
+$V_\infty = $ cells $(e_1, e_2)$ with no causal path from $e_1$ to $e_2$. By the [Lorentzian apex/void as timelike/spacelike theorem](lorentzian-apex-void-as-timelike-spacelike.md), $V_\infty$ (taken bidirectionally) is the spacelike-separated pairs.
+
+## Empirical verification
+
+Computational check: `tools/lawvere-quantale-settling/verify_zero_preservation.py` verifies the support-respecting condition empirically on all three value categories:
+
+- Bilattice: all-$\bot$ initial → all-$\bot$ after closure.
+- Stochastic: all-zero initial → all-zero after closure.
+- Lawvere quantale: all-$\infty$-off-diagonal initial → all-$\infty$-off-diagonal after closure.
+
+In each case, isolated nontrivial cells produce only locally-propagated content — confirming the closure is support-respecting.
+
+## What this gives us
+
+A unified void-cone framework that's **value-category-agnostic**: the same construction, the same descent property, the same cohomological pairing, all parameterized by the choice of $(\mathcal{V}, \leq_T, \mathbf{0}_\mathcal{V})$ and a support-respecting closure operator.
+
+The bilattice's "cells permanently $\bot$" is one instance. The stochastic's "structurally-unreachable transitions" is another. The Lawvere quantale's "graph-disconnected pairs" is a third. The Lorentzian's "spacelike-separated pairs" is a fourth. **Each is the same structural object — the void cone — instantiated in a different value category.**
+
+## Alternative proof paths
+
+Two complementary paths to the same statement:
+
+- [Per-category proof](value-agnostic-void-cone-per-category.md) — proves the descent + pairing separately for bilattice / stochastic / Lawvere quantale / Boolean Lorentzian, then unifies. Concrete-then-abstract; backed by the [cross-instance comparison tool](../../documents/articles/research/2026/07/31/lenticule-import/yet-another-unsorted-archive-dump/predication-categories/_archive/bucket-3/tools/void-cone-comparison).
+- [Axiomatic minimality](value-agnostic-void-cone-axiomatic.md) — extracts the minimal axioms (A1–A4) on $(\mathcal{V}, \leq_T, \mathbf{0}_\mathcal{V}, T_\mathcal{V})$ that suffice for the result, and proves it from those alone. Most abstract; surfaces what structure is genuinely required.
+
+The original abstract proof here, the per-category concrete proof, and the axiomatic minimal-hypothesis proof together establish the value-agnostic statement on three independent foundations.
+
+## Position in the program
+
+Generalizes [void-cone cohomology](../../../../../../../information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/obsmetrologia/docs/verso/mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/content/lorentzian-causal-settling/references/void-cone-cohomology.md) to value-category-agnostic settings. Settles the question of whether the stochastic benchmark's "void cone in continuous-valued form" language is justified: yes, it's an instance of this theorem, not a metaphorical extension.
+
+Pairs with:
+- The [void-cone cohomology theorem](../../../../../../../information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/obsmetrologia/docs/verso/mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/content/lorentzian-causal-settling/references/void-cone-cohomology.md) — the bilattice case, now an instance.
+- The [continuous-valued settling](../../../../../../../information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/obsmetrologia/docs/verso/mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/content/continuous-valued-settling/continuous-valued-settling.md) — the value-category framework.
+- The [stochastic settling](../../../../../../../information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/obsmetrologia/docs/verso/mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/content/continuous-valued-settling/content/stochastic-settling/stochastic-settling.md) and [Lorentzian causal settling](../../../../../../../information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/obsmetrologia/docs/verso/mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/content/lorentzian-causal-settling/lorentzian-causal-settling.md) — concrete instances.
+
+Open downstream:
+- *Continuous coefficients*: when $\mathcal{V}$ is continuum-valued (like $[0, 1]$), the firing set $L_\mathrm{ns}$ may itself be uncountable. The cohomology then has $\mathbb{R}$- or $\mathcal{V}$-valued generators, and the pairing structure refines. Open structural classification.
+- *Void-cone $V_\infty$ as a value-category-agnostic dimension estimator*: the Lorentzian benchmark showed $|V_\infty|$ correlates with spatial extent. Whether this generalizes to other value categories (and what dimension means in each) is open.
+- *Support-respecting as a definitional axiom for closure operators*: this theorem assumes the closure is support-respecting. Whether *all* well-formed closure operators are support-respecting, or whether non-support-respecting closures form a structurally-distinct class, is an axiom-level question.
