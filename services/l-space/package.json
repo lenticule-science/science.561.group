@@ -24,6 +24,11 @@
     "@red-cup-engineering/oauth-services-section": "workspace:*",
     "@red-cup-engineering/markdown-engineering-services-section": "workspace:*"
   },
+  "receivingTests": [
+    "test/metroplat-root.test.mjs",
+    "test/metroplat-receiving.test.mjs",
+    "test/oauth-grant-profile.test.mjs"
+  ],
   "exports": {
     "./site": "./src/site.mjs",
     "./metroplat": "./src/metroplat.mjs"
