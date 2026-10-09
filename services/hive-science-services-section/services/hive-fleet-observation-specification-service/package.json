@@ -1,0 +1,9 @@
+{
+  "name": "@lenticule-science/hive-fleet-observation-specification-service",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./schema": "./observation.schema.json"
+  }
+}
