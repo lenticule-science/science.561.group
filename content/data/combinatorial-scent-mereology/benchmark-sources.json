@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "type": "CombinatorialScentMereologyBenchmarkSourceManifest",
+  "recordedAt": "2026-10-03",
+  "claimBoundary": "This manifest records benchmark/source provenance and software/data-use boundaries. Presence here does not authorize commercial training or imply that any benchmark measures text-to-formula fragrance quality.",
+  "sources": [
+    {
+      "id": "dream-olfaction-prediction",
+      "kind": "repository",
+      "title": "DREAM Olfaction Prediction models and related resources",
+      "repository": "dream-olfaction/olfaction-prediction",
+      "defaultBranch": "master",
+      "license": {
+        "software": "MIT",
+        "licenseFileSha": "b131a531624912f66d45c7c9cc0d1ef104ada24a"
+      },
+      "scope": [
+        "single-molecule olfactory prediction challenge data",
+        "data-loading utilities",
+        "scoring utilities",
+        "published challenge reproduction workflows"
+      ],
+      "admission": "usable-for-reproducible-benchmarking-subject-to-file-level-data-provenance",
+      "notes": "Do not assume the repository-level software license independently relicenses every upstream data artifact. Preserve dataset-specific provenance when importing files."
+    },
+    {
+      "id": "physsim-olfactory-mixture-similarity",
+      "kind": "repository",
+      "title": "PhysSim: Physics-Simulated Molecular Interactions Predict Olfactory Perception Without Pretrained Models",
+      "repository": "junseong2im/PhysSim-Olfactory-Mixture-Similarity",
+      "defaultBranch": "main",
+      "license": {
+        "software": "MIT",
+        "licenseFileSha": "0d3a0c40bace7c0d53a1610e505f09e4e0672c6c"
+      },
+      "reportedBenchmarks": [
+        {
+          "name": "Snitz 2013",
+          "task": "mixture-pair perceptual similarity",
+          "n": 360,
+          "role": "primary training/cross-validation"
+        },
+        {
+          "name": "Ravia 2020",
+          "task": "mixture-pair perceptual similarity",
+          "n": 182,
+          "role": "zero-shot cross-dataset transfer"
+        },
+        {
+          "name": "Bushdid 2014",
+          "task": "mixture discriminability",
+          "n": 264,
+          "role": "zero-shot cross-task transfer"
+        }
+      ],
+      "admission": "usable-as-a-comparison-implementation-and-reproducibility-target",
+      "notes": "Treat reported performance as an upstream claim until independently reproduced. The repository itself states that the underlying datasets are publicly available from DREAM sources."
+    },
+    {
+      "id": "pellegrino-linear-mixture-2026",
+      "kind": "paper-and-supplementary-data",
+      "title": "Odors Smell Like Their Components: A Linear Framework for Predicting Olfactory Mixture Perception",
+      "doi": "10.64898/2026.07.03.736426",
+      "publicationState": "preprint",
+      "license": {
+        "paper": "CC-BY-NC-4.0",
+        "data": "verify-supplementary-file-specific-terms-before-ingestion"
+      },
+      "reportedDesign": {
+        "components": 144,
+        "mixtures": 432,
+        "descriptorCount": 51,
+        "panel": "trained human panel; n >= 15; two repetitions"
+      },
+      "admission": "research-benchmark-only-until-data-license-is-verified",
+      "notes": "Do not promote this source into a commercial model-training corpus by default. Reproduce the simple component-average baseline first if data access and license permit."
+    },
+    {
+      "id": "sea-driven-odornet-2026",
+      "kind": "dataset-paper",
+      "title": "SEA-Driven OdorNet: A Large-Scale Standardized Molecular Olfactory Dataset Based on a Hybrid Semantic Taxonomy",
+      "doi": "10.1038/s41597-026-08429-z",
+      "publicationState": "published-2026-10-02",
+      "license": {
+        "data": "verify-official-data-record-before-ingestion"
+      },
+      "admission": "metadata-only-until-official-data-artifact-and-license-are-captured",
+      "notes": "Candidate source for descriptor normalization and single-molecule representation benchmarks. CSM should add mixture/time/intervention/provenance structure rather than duplicate its scope."
+    }
+  ],
+  "requiredIngestionInvariants": [
+    "preserve immutable raw source bytes or source commit/file identifiers",
+    "record source-specific license and attribution separately from software license",
+    "never rewrite source descriptors in place; project normalized vocabulary separately",
+    "represent unresolved descriptor mappings explicitly",
+    "reproduce a published baseline before introducing a more complex model",
+    "separate research-benchmark eligibility from commercial-training eligibility"
+  ]
+}
