@@ -1,0 +1,43 @@
+{
+  "schemaVersion": "ptgae-migration/v1",
+  "createdAt": "2026-10-07T03:51:16+05:00",
+  "workRef": "cro-ptgae-science-section-descriptions-2026-10-07",
+  "status": "planned-harness-blocked",
+  "edits": [
+    {
+      "path": "science-services-section/services/information-science-services-section/services/communication-science-services-section/services/media-science-services-section/services/music-services-section/README.md",
+      "expectedRevision": "sha256:ef5a324cdfc85e87b7d5a69c137e96efa8e29e1a0c6d3c47ed4b1204dc7461de",
+      "rule": "PTR027",
+      "before": "The Music Services Section maintains knowledge and practices for this service domain.",
+      "after": "Description incomplete."
+    },
+    {
+      "path": "science-services-section/services/social-science-services-section/services/sociology-science-services-section/README.md",
+      "expectedRevision": "sha256:2ede1f299e213229932cc1c42cbad41d9f704fa4b3440639c01c4a1d226501dc",
+      "rule": "PTR026",
+      "before": "The Sociology Services Section maintains knowledge and practices for the\\nstudy of social structure, association, and collective life: networks\\nand their topology, ritual and ceremony, social capital, commons\\ngovernance, and the empirics of community formation and dissolution.",
+      "after": "The Sociology Services Section studies social structure, association, and collective life: networks and their topology, ritual and ceremony, social capital, commons governance, and the empirics of community formation and dissolution."
+    },
+    {
+      "path": "science-services-section/services/natural-science-services-section/services/biological-science-services-section/services/physiology-services-section/README.md",
+      "expectedRevision": "sha256:10bcb4f417cbb4f8a7570ca8c7c071515030c38f6b4a55e04dadbdee88358735",
+      "rule": "PTR026",
+      "before": "The Physiology Services Section maintains knowledge and practices for\\nthe study of the functions and regulatory mechanisms of living\\norganisms: homeostasis and allostasis, stress physiology, metabolic\\nregulation, and the bodily economics of demand and recovery.",
+      "after": "The Physiology Services Section studies the functions and regulatory mechanisms of living organisms: homeostasis and allostasis, stress physiology, metabolic regulation, and the bodily economics of demand and recovery."
+    },
+    {
+      "path": "science-services-section/services/natural-science-services-section/services/biological-science-services-section/services/ethology-services-section/README.md",
+      "expectedRevision": "sha256:3f8343afc6729ea0d663acf9da502d9046e6d76f91a6e44ce3a920b4f3ab3cf5",
+      "rule": "PTR026",
+      "before": "The Ethology Services Section maintains knowledge and practices for the\\nstudy of animal behavior in its natural context: play and its\\npreconditions, signaling, umwelt theory, and the behavioral repertoires\\nfrom which the 561 Group's play-and-freedom analyses draw their evidence.",
+      "after": "The Ethology Services Section studies animal behavior in its natural context: play and its preconditions, signaling, umwelt theory, and the behavioral repertoires from which the 561 Group's play-and-freedom analyses draw their evidence."
+    },
+    {
+      "path": "science-services-section/services/natural-science-services-section/services/biological-science-services-section/services/neuroscience-services-section/README.md",
+      "expectedRevision": "sha256:b0e436c4e44547a3b4bfabb3ef4fbba94f663569e547458282e6cad23930c709",
+      "rule": "PTR026",
+      "before": "The Neuroscience Services Section maintains knowledge and practices for\\nthe study of nervous systems: attention and its allocation, prospection\\nand simulation, threat and safety learning, and the neural substrates of\\naffect.",
+      "after": "The Neuroscience Services Section studies nervous systems: attention and its allocation, prospection and simulation, threat and safety learning, and the neural substrates of affect."
+    }
+  ]
+}

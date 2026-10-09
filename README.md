@@ -2,7 +2,7 @@
 
 The [561 Group](https://561.group) operates Lenticule Science.
 
-Lenticule Science conducts scientific research for the 561 Group. It coordinates with Red Cup Engineering, Coesite Operations, and Causeway Services.
+Lenticule Science conducts research for the 561 Group. Red Cup Engineering turns accepted research into technology. Coesite Operations turns accepted technology into operating practice. Causeway Services turns accepted practice into services.
 
 ## Writing standard
 
@@ -12,6 +12,7 @@ The current PTGAE standard is in `docs/plain-technical-general-american-english.
 
 - Run `node tools/ptgae-lint.mjs FILE [...]` to lint specific files.
 - Run `node tools/ptgae-corpus-scan.mjs PATH [...]` to scan a text corpus.
+- Run `node tools/ptgae-corpus-scan.mjs --literal='TEXT' PATH [...]` to verify exact occurrences before a migration.
 - Run `node tools/ptgae-rewrite.mjs FILE [...]` only for allow-listed semantics-preserving rewrites.
 - Run `node tools/ptgae-corpus-rewrite.mjs PATH [...]` for a dry-run corpus rewrite report; add `--write` only after reviewing the proposed changes.
 

@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "ptgae-migration/v1",
+  "workRef": "cro-ptgae-generic-sections-2026-10-07",
+  "part": 1,
+  "status": "planned-harness-blocked",
+  "edits": [
+    {
+      "path": "science-services-section/services/information-science-services-section/services/knowledge-services-section/services/spirituality-services-section/README.md",
+      "expectedRevision": "sha256:65d6099b3453ddec7581628e3946ecda08aecc1cb232369e530b68f6fda0b47d",
+      "rule": "PTR027",
+      "before": "The Spirituality Services Section maintains knowledge and practices for this service domain.",
+      "after": "Description incomplete."
+    },
+    {
+      "path": "science-services-section/services/philosophy-services-section/services/black-philosophy-services-section/services/abolition-services-section/README.md",
+      "expectedRevision": "sha256:764b6a415049542b1f0453f757993d32b318864211d142586998202d8ea949c8",
+      "rule": "PTR027",
+      "before": "The Abolition Services Section maintains knowledge and practices for this service domain.",
+      "after": "Description incomplete."
+    },
+    {
+      "path": "science-services-section/services/social-science-services-section/services/education-science-services-section/services/pedagogy-services-section/README.md",
+      "expectedRevision": "sha256:2144af5f7793af5b879e2ea0fe33f93bc7b441c344d465765911188170f4429f",
+      "rule": "PTR027",
+      "before": "The Pedagogy Services Section maintains knowledge and practices for this service domain.",
+      "after": "Description incomplete."
+    },
+    {
+      "path": "science-services-section/services/social-science-services-section/services/law-science-services-section/services/jurisdiction-services-section/README.md",
+      "expectedRevision": "sha256:6eff739bdd11c29081e8ac09df263682ab6c11dc954de44988fa365696c76828",
+      "rule": "PTR027",
+      "before": "The Jurisdiction Services Section maintains knowledge and practices for this service domain.",
+      "after": "Description incomplete."
+    },
+    {
+      "path": "science-services-section/services/social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section/services/affect-theory-services-section/services/berlantian-services-section/README.md",
+      "expectedRevision": "sha256:cc6d4363cae961c0ec31521e93c90551580f5a44c988640ecca1d8d0095d22d8",
+      "rule": "PTR027",
+      "before": "The Berlantian Services Section maintains knowledge and practices for this service domain.",
+      "after": "Description incomplete."
+    },
+    {
+      "path": "science-services-section/services/social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section/services/anarchism-services-section/README.md",
+      "expectedRevision": "sha256:f8784f43c4f5349f443f8f9883b8800a7117be545c8eae3355349ecda0119341",
+      "rule": "PTR027",
+      "before": "The Anarchism Services Section maintains knowledge and practices for this service domain.",
+      "after": "Description incomplete."
+    },
+    {
+      "path": "science-services-section/services/social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section/services/anarchism-services-section/services/state-services-section/README.md",
+      "expectedRevision": "sha256:85b1302a1372a78076e722dc82f60d322a9e454e9717adb7b4910c9461117af0",
+      "rule": "PTR027",
+      "before": "The State Services Section maintains knowledge and practices for this service domain.",
+      "after": "Description incomplete."
+    },
+    {
+      "path": "science-services-section/services/social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section/services/anarchism-services-section/services/strategy-services-section/README.md",
+      "expectedRevision": "sha256:f93308ea8fecfce5e557ddd25e214e838df43c0d669df489f124c4070b66e51c",
+      "rule": "PTR027",
+      "before": "The Strategy Services Section maintains knowledge and practices for this service domain.",
+      "after": "Description incomplete."
+    },
+    {
+      "path": "science-services-section/services/social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section/services/biopolitics-services-section/README.md",
+      "expectedRevision": "sha256:08ba6189c077d01ee654ef42c109775552fa13dd60f4d7cf2518d22195afb4c9",
+      "rule": "PTR027",
+      "before": "The Biopolitics Services Section maintains knowledge and practices for this service domain.",
+      "after": "Description incomplete."
+    }
+  ],
+  "omitted": []
+}

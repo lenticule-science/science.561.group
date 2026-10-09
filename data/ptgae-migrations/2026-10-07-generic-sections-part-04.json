@@ -1,0 +1,73 @@
+{
+  "schemaVersion": "ptgae-migration/v1",
+  "workRef": "cro-ptgae-generic-sections-2026-10-07",
+  "part": 4,
+  "status": "planned-harness-blocked",
+  "edits": [
+    {
+      "path": "science-services-section/services/social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section/services/anarchism-services-section/services/anarcho-nihilism-services-section/README.md",
+      "expectedRevision": "sha256:b5b935f18eefc7b8eddb81fc3400ccd994734fe3be478ae31de9bebd8d093319",
+      "rule": "PTR027",
+      "before": "The Anarcho Nihilism Services Section maintains knowledge and practices for this service domain.",
+      "after": "Description incomplete."
+    },
+    {
+      "path": "science-services-section/services/social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section/services/povinellian-services-section/services/settler-colonialism-services-section/README.md",
+      "expectedRevision": "sha256:94650c004199ff3bc86859ce14f3a8ea3054e20c9aa6a7c6469b04cc223b66cb",
+      "rule": "PTR027",
+      "before": "The Settler Colonialism Services Section maintains knowledge and practices for this service domain.",
+      "after": "Description incomplete."
+    },
+    {
+      "path": "science-services-section/services/social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/predicated-work-services-section/README.md",
+      "expectedRevision": "sha256:77f0858ef9ce10d5f484856ed807223021a6721d5d06bea589948b22a6712218",
+      "rule": "PTR027",
+      "before": "The Predicated Work Services Section maintains knowledge and practices for this service domain.",
+      "after": "Description incomplete."
+    },
+    {
+      "path": "science-services-section/services/social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/predicated-work-services-section/services/predicated-governance-services-section/README.md",
+      "expectedRevision": "sha256:f6c34e0e7fbd8abe2e91fe1790cdef081bf579f374b5d762fcb6448382323c6b",
+      "rule": "PTR027",
+      "before": "The Predicated Governance Services Section maintains knowledge and practices for this service domain.",
+      "after": "Description incomplete."
+    },
+    {
+      "path": "science-services-section/services/social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section/services/marxism-services-section/services/political-economy-services-section/README.md",
+      "expectedRevision": "sha256:eacc15987410e55d16bacb5624ca492b28497c8907d522515feb19ee63436cdb",
+      "rule": "PTR027",
+      "before": "The Political Economy Services Section maintains knowledge and practices for this service domain.",
+      "after": "Description incomplete."
+    },
+    {
+      "path": "science-services-section/services/philosophy-services-section/services/black-philosophy-services-section/services/black-radical-tradition-services-section/README.md",
+      "expectedRevision": "sha256:82f8cece9f0485106a3febd273b4d06a718e9c480c14f25277a877b8feaa4c96",
+      "rule": "PTR027",
+      "before": "The Black Radical Tradition Services Section maintains knowledge and practices for this service domain.",
+      "after": "Description incomplete."
+    },
+    {
+      "path": "science-services-section/services/philosophy-services-section/services/relationality-services-section/services/agency-services-section/services/being-services-section/services/doing-services-section/services/playing-services-section/services/gaming-services-section/services/role-playing-games-services-section/README.md",
+      "expectedRevision": "sha256:b03fc36667f25ec03ea6b53f6dd418dd87ba05429ada5a638be0d48697c38bcd",
+      "rule": "PTR027",
+      "before": "The Role Playing Games Services Section maintains knowledge and practices for this service domain.",
+      "after": "Description incomplete."
+    },
+    {
+      "path": "science-services-section/services/philosophy-services-section/services/relationality-services-section/services/agency-services-section/services/being-services-section/services/doing-services-section/services/playing-services-section/services/gaming-services-section/services/role-playing-games-services-section/services/tabletop-role-playing-games-services-section/README.md",
+      "expectedRevision": "sha256:b7ad0bf3b46b5c817df82ae7b840cd1afaca022c637e2130e34841318281b511",
+      "rule": "PTR027",
+      "before": "The Tabletop Role Playing Games Services Section maintains knowledge and practices for this service domain.",
+      "after": "Description incomplete."
+    }
+  ],
+  "omitted": [
+    {
+      "path": "science-services-section/services/philosophy-services-section/services/relationality-services-section/services/agency-services-section/services/being-services-section/services/doing-services-section/services/playing-services-section/services/gaming-services-section/services/board-games-services-section/services/weiqi-services-section/README.md",
+      "revision": "sha256:c7b992f653e5e904d6c4db7d7523e10513bd0c47f3cad90ac29d9c16aa02db91",
+      "matchingLines": [
+        "The Weiqi Services Section maintains knowledge and practices for this service domain, and is the constituted home for the weiqi web platform build described below."
+      ]
+    }
+  ]
+}

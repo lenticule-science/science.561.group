@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "ptgae-migration/v1",
+  "workRef": "cro-ptgae-generic-sections-2026-10-07",
+  "part": 3,
+  "status": "planned-harness-blocked",
+  "edits": [
+    {
+      "path": "science-services-section/services/social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section/services/queer-services-section/services/kyriarchism-services-section/README.md",
+      "expectedRevision": "sha256:749d4f3bb8113026245b36c0ee06151534fe07c22f37c9ec7861fc5905c29e5f",
+      "rule": "PTR027",
+      "before": "The Kyriarchism Services Section maintains knowledge and practices for this service domain.",
+      "after": "Description incomplete."
+    },
+    {
+      "path": "science-services-section/services/philosophy-services-section/services/black-philosophy-services-section/services/abolition-services-section/services/state-repression-services-section/README.md",
+      "expectedRevision": "sha256:e754d1261136dc7ce0cd757e6375d2160ea6096e51334fa867903ed29f8fd392",
+      "rule": "PTR027",
+      "before": "The State Repression Services Section maintains knowledge and practices for this service domain.",
+      "after": "Description incomplete."
+    },
+    {
+      "path": "science-services-section/services/philosophy-services-section/services/relationality-services-section/services/agency-services-section/services/being-services-section/services/doing-services-section/services/playing-services-section/services/gaming-services-section/services/board-games-services-section/README.md",
+      "expectedRevision": "sha256:3370a6f42bff6405c3eb828a519e61b93d54e2dcaa3302524be400c82ba477a9",
+      "rule": "PTR027",
+      "before": "The Board Games Services Section maintains knowledge and practices for this service domain.",
+      "after": "Description incomplete."
+    },
+    {
+      "path": "science-services-section/services/philosophy-services-section/services/relationality-services-section/services/agency-services-section/services/being-services-section/services/doing-services-section/services/playing-services-section/services/gaming-services-section/services/card-games-services-section/README.md",
+      "expectedRevision": "sha256:43a769d6f51a5b70fb8d35c22f2a26bacbf91af49ec77b523fe9634680ac28aa",
+      "rule": "PTR027",
+      "before": "The Card Games Services Section maintains knowledge and practices for this service domain.",
+      "after": "Description incomplete."
+    },
+    {
+      "path": "science-services-section/services/philosophy-services-section/services/relationality-services-section/services/agency-services-section/services/being-services-section/services/doing-services-section/services/playing-services-section/services/gaming-services-section/services/dice-games-services-section/README.md",
+      "expectedRevision": "sha256:2ead5b5ebe857544bde47d3649f2471fbb6dab6d680e9476ba1e963ef8f4f722",
+      "rule": "PTR027",
+      "before": "The Dice Games Services Section maintains knowledge and practices for this service domain.",
+      "after": "Description incomplete."
+    },
+    {
+      "path": "science-services-section/services/social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section/README.md",
+      "expectedRevision": "sha256:8e539ba75e845eaefcb0a11d48363d2e8cc38c74f9a2b3bda5a04b962e9f5a0a",
+      "rule": "PTR027",
+      "before": "The Critical Theory Services Section maintains knowledge and practices for this service domain.",
+      "after": "Description incomplete."
+    },
+    {
+      "path": "science-services-section/services/social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section/services/affect-theory-services-section/README.md",
+      "expectedRevision": "sha256:bad9705b5c9d312fb5a87e7e0f1b41cd3aab3a02318defefd5f5dc16de80abb8",
+      "rule": "PTR027",
+      "before": "The Affect Theory Services Section maintains knowledge and practices for this service domain.",
+      "after": "Description incomplete."
+    },
+    {
+      "path": "science-services-section/services/social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section/services/anarchism-services-section/services/green-anarchism-services-section/README.md",
+      "expectedRevision": "sha256:421057e7852a9ad2abd78950e482b30f9904c4c8d0cb0c703919df24df730f64",
+      "rule": "PTR027",
+      "before": "The Green Anarchism Services Section maintains knowledge and practices for this service domain.",
+      "after": "Description incomplete."
+    },
+    {
+      "path": "science-services-section/services/social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section/services/anarchism-services-section/services/indigenous-anarchism-services-section/README.md",
+      "expectedRevision": "sha256:5a8280cb818ee26b5a6ebacc724e50511fb82c78d39d36da20f73fc57f989173",
+      "rule": "PTR027",
+      "before": "The Indigenous Anarchism Services Section maintains knowledge and practices for this service domain.",
+      "after": "Description incomplete."
+    }
+  ],
+  "omitted": []
+}

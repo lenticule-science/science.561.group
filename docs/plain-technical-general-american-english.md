@@ -117,6 +117,14 @@ Treat a defect as systemic when the same empty construction appears in two or mo
 
 Do not automatically condemn a frequent phrase whose meaning depends on context. For example, `designed to`, `helps`, and `home` can state real design, effect, or custody. A detector must target the defective construction, not merely a common word.
 
+### Verify search hits against source bytes
+
+Search indexes are discovery surfaces, not literal-count authorities. Before a corpus migration, read the source bytes or run an exact detector against the admitted source snapshot. A quoted search that returns a document does not prove that the literal phrase occurs in that document.
+
+Record the source revision used for the exact check. Count only verified occurrences. Fuzzy or semantic search results may nominate files for inspection, but they must not become migration counts, lint receipts, or evidence that a phrase is house style.
+
+`tools/ptgae-literal-verify.mjs` or the exact-literal mode of the corpus scanner is the acceptance mechanism for literal claims. A result is safe to migrate only after the literal verifier and the semantic PTGAE rule agree on the defect.
+
 ## Detection is not rewrite authorization
 
 A linter may flag text that still needs human or domain judgment. Automatic rewriting requires a narrow semantics-preserving rule with positive and negative regression fixtures.

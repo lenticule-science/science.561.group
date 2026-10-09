@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
 import os from 'node:os';
 import path from 'node:path';
-import { scanPTGAE, summarizeScan } from '../tools/ptgae-corpus-scan.mjs';
+import { scanPTGAE, summarizeScan, verifyLiteralOccurrences } from '../tools/ptgae-corpus-scan.mjs';
 
 const root = await fs.mkdtemp(path.join(os.tmpdir(), 'ptgae-scan-'));
 try {
@@ -36,8 +36,16 @@ try {
   assert.equal(summary.systemic[0].files, 2);
   assert.equal(summary.systemic[0].findings, 2);
   if (symlinkCreated) assert.ok(!results.some(x => path.basename(x.file) === 'linked-poison.md'));
+
+  await fs.writeFile(path.join(root, 'docs', 'literal.md'), 'The change may potentially matter.\nThe change may potentially recur.\n');
+  await fs.writeFile(path.join(root, 'docs', 'near.md'), 'The change may matter.\n');
+  const literals = await verifyLiteralOccurrences([root], ['may potentially', 'in an effort to']);
+  assert.equal(literals.length, 2, 'exact literal verification must not inherit fuzzy search candidates');
+  assert.ok(literals.every(x => path.basename(x.file) === 'literal.md'));
+  assert.ok(literals.every(x => x.literal === 'may potentially'));
 } finally {
   await fs.rm(root, { recursive: true, force: true });
 }
 
 console.log('ok corpus scanner finds text defects, identifies systemic recurrence, and skips excluded sources and symlinks');
+console.log('ok corpus scanner finds text defects, verifies exact literals, and skips excluded sources and symlinks');

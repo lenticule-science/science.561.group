@@ -22,6 +22,35 @@ async function collect(target, files) {
   }
 }
 
+function sourceLocation(source, index) {
+  const before = source.slice(0, index);
+  const line = before.split('\n').length;
+  const lastNewline = before.lastIndexOf('\n');
+  return { line, column: index - lastNewline };
+}
+
+export async function verifyLiteralOccurrences(targets, literals) {
+  const files = [];
+  for (const target of targets) await collect(target, files);
+  files.sort();
+  const occurrences = [];
+  for (const file of files) {
+    const source = await fs.readFile(file, 'utf8');
+    for (const literal of literals) {
+      if (!literal) continue;
+      let from = 0;
+      while (from <= source.length) {
+        const index = source.indexOf(literal, from);
+        if (index === -1) break;
+        const at = sourceLocation(source, index);
+        occurrences.push({ file, literal, line: at.line, column: at.column });
+        from = index + Math.max(1, literal.length);
+      }
+    }
+  }
+  return occurrences;
+}
+
 export async function scanPTGAE(targets) {
   const files = [];
   for (const target of targets) await collect(target, files);
@@ -84,22 +113,32 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   const args = process.argv.slice(2);
   const json = args.includes('--json');
   const failOnWarning = args.includes('--fail-on-warning');
+  const literals = args
+    .filter(arg => arg.startsWith('--literal='))
+    .map(arg => arg.slice('--literal='.length))
+    .filter(Boolean);
   const targets = args.filter(arg => !arg.startsWith('--'));
   if (!targets.length) {
-    console.error('usage: node ptgae-corpus-scan.mjs [--json] [--fail-on-warning] PATH [...]');
+    console.error('usage: node ptgae-corpus-scan.mjs [--json] [--fail-on-warning] [--literal=TEXT] PATH [...]');
     process.exit(2);
   }
 
   const results = await scanPTGAE(targets);
   const summary = summarizeScan(results);
+  const literalOccurrences = literals.length
+    ? await verifyLiteralOccurrences(targets, literals)
+    : [];
 
   if (json) {
-    console.log(JSON.stringify({ summary, results }, null, 2));
+    console.log(JSON.stringify({ summary, literalOccurrences, results }, null, 2));
   } else {
     for (const result of results) {
       for (const finding of result.findings) {
         console.log(result.file + ':' + finding.line + ':' + finding.column + ' ' + finding.code + ' ' + finding.severity + ' ' + finding.message);
       }
+    }
+    for (const occurrence of literalOccurrences) {
+      console.log(occurrence.file + ':' + occurrence.line + ':' + occurrence.column + ' LITERAL ' + JSON.stringify(occurrence.literal));
     }
     console.log(JSON.stringify(summary));
   }
