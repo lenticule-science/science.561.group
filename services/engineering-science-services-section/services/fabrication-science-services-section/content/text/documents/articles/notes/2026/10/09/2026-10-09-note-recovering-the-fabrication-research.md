@@ -101,7 +101,7 @@ Under the rule that a capitalized Leader statement marks a failed carrier (`capi
 
 ### 3.5 Martial holdings
 
-22. I found no document named for glass shrimp or martial artists in the index (names tried: `*glass-shrimp*`, `*spongicol*`, `*kung*`; `*shrimp*` returns only the three 2026-08-19 notes and one triage file; the strings "martial", "combat" and "tai chi" do not occur in either SHRIMP brief, in the SHRIMP and sponge terms, or in the reconstruction note; in the glass-sponge note "fight" occurs once, in a Weiqi table at line 1166). The shrimp holdings (items 18-21) and the martial holdings below are separate. If the "intense notes on glass shrimp martial artists" exist, they are not in the git index under a name I tried; they may be in chat or agent-session records outside the index, which this task did not search (section 7, step 2).
+22. I found no document named for glass shrimp or martial artists in the index (names tried: `*glass-shrimp*`, `*spongicol*`, `*kung*`; `*shrimp*` returns only the three 2026-08-19 notes and one triage file; the strings "martial", "combat" and "tai chi" do not occur in either SHRIMP brief, in the SHRIMP and sponge terms, or in the reconstruction note; in the glass-sponge note "fight" occurs once, in a Weiqi table at line 1166). The shrimp holdings (items 18-21) and the martial holdings below are separate. Correction, same day: the join is held by name in the glass-sponge note's ecology sentence ("JIANGHU SHRIMP", lines 175-177) and in the Jianghu monograph; See `agent-science-services-section/content/text/documents/articles/notes/2026/10/09/2026-10-09-note-on-the-glass-shrimp-martial-artist.md` (term `glass-shrimp-martial-artist`) for the synthesis. The statement that follows, that no record joins them, is withdrawn. If further notes exist, they are not in the git index under a name I tried; they may be in chat or agent-session records outside the index, which this task did not search (section 7, step 2).
 23. The martial holdings: `EMSENN/content/text/glossary/terms/martial-gesture-grammar.md` (read 2.5 KB; a survival-first, system-neutral combat discipline of gesture-based modulation, with lineage from Filipino martial arts, Systema and internal Chinese arts); `EMSENN/content/text/glossary/terms/telekinetic metacombat.md` (read 2.5 KB; a field-oriented combat discipline of state selection in place of action selection); `SCI/services/social-science-services-section/services/sociology-science-services-section/services/cybernetic-postliberalism-services-section/content/text/documents/articles/notes/from-iron-sights-to-telekinetic-metacombat.md` (identified); `SCI/services/social-science-services-section/services/education-science-services-section/services/learning-services-section/content/text/glossary/terms/martial-space.md` (3.5 KB; martial space as a design metaphor for the learner, "sparring is conversation under pressure, and dojo grading is the house's own evidence-grading discipline applied to skill claims", Claude Opus, 2026-08-21); the tai chi systems (science README and `taijiquan.md` under `SCI/services/natural-science-services-section/services/biological-science-services-section/services/medical-science-services-section/services/medical-services-section/services/health-services-section/services/fitness-services-section/services/martial-arts-services-section/`; engineering `tai-chi-computer-system-services-section` with a 2026-08-19 "tai chi practice system constitution" and a skeletal-trace verifier; personal `emsenn-tai-chi-services-section`); `SCI/.../military-science-services-section/.../2026-08-29-note-on-morale-as-the-bridge-between...` (identified). Class: theory and glossary, tai chi partly implemented as a computer system (presence of lib, scripts, tests; not run). None of these mentions SHRIMP; any connection is not recorded.
 
 ### 3.6 Flatfile resource systems (FARS, FERN, FROG, FAE)
@@ -173,8 +173,8 @@ Determined by file name in the index; a concept with a differently named file is
 | 10 | Vitrimer, semiotic vitrimer | no | yes, emergency alpha contract (item 17) | |
 | 11 | Glass sponge | `sponge.md` (as a constituent of SHRIMP); no `glass-sponge` term | architecture note, accepted for specification (item 18) | the eight documents not written |
 | 12 | SHRIMP | yes | no | analogy disclaimed in `sponge.md` |
-| 13 | Glass shrimp martial artists | no | no | no record by name (item 22) |
-| 14 | Martial gesture grammar, telekinetic metacombat, martial space | yes (terms) | no | unrelated to SHRIMP in the record |
+| 13 | Glass shrimp martial artists | yes (`glass-shrimp-martial-artist`, agent science, 2026-10-09) | note (`2026-10-09-note-on-the-glass-shrimp-martial-artist.md`) | held in pieces; synthesized there |
+| 14 | Martial gesture grammar, telekinetic metacombat, martial space | yes (terms) | no | the note on the glass-shrimp martial artist joins them to the shrimp as stance, gesture and sect vocabulary |
 | 15 | Flatfile, FARS, FERN, FROG, FAE | yes (two FROG terms, differing names) | partial (March 2026 notes) | |
 | 16 | Flatfile agentic resource system (the Leader's phrase) | no (FARS term says "Agent", not "Agentic"; the AOP library is named "agentic") | partial (AOP library, item 27) | spelling and naming vary across the house |
 | 17 | Drone swarm / agentic drone swarm | no (`drone` is a music term) | draft survey; sub-theory theorems at `sketch` | the survey says nothing was lifted into 561's own layers |
@@ -224,7 +224,7 @@ Each step names the wanted outcome and its judge, not its builder. Offices follo
 These are questions the held record raises; I have not answered them.
 
 - Is the "triad" the Leader means the free, quotient and fixed triad, the modal triad, or another? (section 5, rows 22-23)
-- What is the relation, if any, between SHRIMP (a repair player in a glass sponge) and a martial artist? No record joins them (item 22).
+- Answered 2026-10-09: the relation between SHRIMP and a martial artist is stated in the note on the glass-shrimp martial artist.
 - Is the work order in the nuclear quartet's meaning-closure or its execution-closure? Open since 2026-09-04 (`work-order-nucleus-assignment`).
 - Is tests-before-source with a blind source provider a sufficient second channel? (`tests-before-source-as-independent-channel`; the source-free line in item 38 appears to implement it, which makes the question measurable.)
 - What fraction of code work orders a deterministic generator can derive without buying inference? (`deterministic-derivation-lane-coverage`)
@@ -234,3 +234,24 @@ These are questions the held record raises; I have not answered them.
 ## 9. What I did not do
 
 I did not run any code, test, tool or search over the tree. I read the documents named "read" above in the ranges stated and identified the rest by name, size and frontmatter only: the AOP flatfile library (293 files), the AOP predicated drone swarm library (21 files), the 2026-07-15 MetroPlat design set beyond the SRS head, the codemod attempt evidence, the 2026-10-08 survey set, the vitrimer and physarum notes beyond their descriptions, and the legacy SWARM source. Claims about them above are their own frontmatter descriptions and filenames. I wrote no theory, changed no existing file, and did not touch `/home/emsenn/info/AGENTS.md` or `README.md`.
+
+## 10. Terms seated from this index (2026-10-09)
+
+Section 7, step 4 is carried out for the terms below. Each states the held theory with its sources and links to the others. They close the rows of section 5 named beside them; the rows keep their original text as the state of the index when it was written.
+
+- [electronic design automation](../../../../../../glossary/terms/electronic-design-automation.md) (section 5 row 6)
+- [process design kit](../../../../../../glossary/terms/process-design-kit.md) (row 7)
+- [kinetic proofreading](../../../../../../glossary/terms/kinetic-proofreading.md) (row 4)
+- [codegen](../../../../../../glossary/terms/codegen.md) (row 20)
+- [folding (the 89-byte stub, expanded)](../../../../../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/folding.md) (row 8)
+- [zeolite](../../../../../../../../../materials-services-section/services/smart-materials-service-section/services/abiotic-smart-material-services-section/services/semiotic-smart-material-services-section/content/text/glossary/terms/zeolite.md) (row 9)
+- [zeolitization](../../../../../../../../../materials-services-section/services/smart-materials-service-section/services/abiotic-smart-material-services-section/services/semiotic-smart-material-services-section/content/text/glossary/terms/zeolitization.md) (row 9)
+- [diagenesis](../../../../../../../../../materials-services-section/services/smart-materials-service-section/services/abiotic-smart-material-services-section/services/semiotic-smart-material-services-section/content/text/glossary/terms/diagenesis.md) (row 9)
+- [vitrimer](../../../../../../../../../materials-services-section/services/smart-materials-service-section/services/abiotic-smart-material-services-section/services/semiotic-smart-material-services-section/content/text/glossary/terms/vitrimer.md) (row 10)
+- [glass sponge](../../../../../../../../../../../../../engineering-services-section/content/text/glossary/terms/glass-sponge.md) (row 11)
+- [software requirements specification (SRS)](../../../../../../../../../systems-engineering-science-services-section/content/text/glossary/terms/software-requirements-specification.md) (row 21)
+- [system architecture specification (SAS)](../../../../../../../../../systems-engineering-science-services-section/content/text/glossary/terms/system-architecture-specification.md) (row 21)
+- [high level design (HLD)](../../../../../../../../../systems-engineering-science-services-section/content/text/glossary/terms/high-level-design.md) (row 21)
+- [low level design (LLD)](../../../../../../../../../systems-engineering-science-services-section/content/text/glossary/terms/low-level-design.md) (row 21)
+
+Still without a term after this work: semiocenic material, proof pore, game foam, the flatfile agentic resource system naming, the agentic drone swarm, in/out/across/forward/backward and the triad, and requirement management (section 7, steps 1, 4, 5, 10).
