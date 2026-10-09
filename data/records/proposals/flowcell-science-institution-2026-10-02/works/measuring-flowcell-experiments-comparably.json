@@ -1,0 +1,11 @@
+{
+  "id": "measuring-flowcell-experiments-comparably",
+  "name": "measuring FlowCell experiments comparably",
+  "from": "A FlowCell specimen and test plan require measurement against other configurations or against a release gate.",
+  "to": "A configuration-bound comparable measurement packet preserves calibrated raw traces, resource state, uncertainty, fixture losses, replicates, derived metrics, anomalies, and pre/post inspection.",
+  "cost": "Instrument time, calibration attention, data storage, specimen/test-facility consumption.",
+  "otherwise": "Architecture comparisons become confounded by different resource conditions, fixtures, calibration states, or selective best runs.",
+  "needs": [
+    "measure-flowcell-comparably"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/content/sheaf/content/inconsistency-sheaf",
+  "title": "inconsistency-sheaf",
+  "description": "The cokernel of the inclusion of the truth-side settling-associated sheaf into the paraconsistent settling-associated sheaf, the free abelian group on newly-added top-valued ('told both') cells alone. It is the sheaf refinement that isolates the paraconsistent-evidence content of a knowledge presheaf settling.",
+  "allOf": [
+    {
+      "$ref": "mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/content/sheaf"
+    }
+  ],
+  "type": "object",
+  "required": ["sections", "tracksTopCellsOnly", "vanishesWhenConsistent"],
+  "properties": {
+    "sections": {
+      "const": "free-abelian-group",
+      "description": "F_U^{(top)}(q, tau, U) := Z^{Delta^{+,*,top}_tau(q) cap U}, the free abelian group on the newly-added top-valued cells lying in the pairwise-Stone clopen U"
+    },
+    "tracksTopCellsOnly": {
+      "const": true,
+      "description": "isolates the top-only summand Delta^{+,top}_tau(q) of the newly-added designated cells, the contradictory ('told both') evidence, treated as designated rather than as logical collapse"
+    },
+    "cokernel": {
+      "const": true,
+      "description": "arises as the cokernel of F_U hookrightarrow F_U^{(k)}; equivalently the F_U^{(top)} summand of the splitting F_U^{(k)} cong F_U^{(t)} oplus F_U^{(top)}"
+    },
+    "vanishesWhenConsistent": {
+      "const": true,
+      "description": "F_U^{(top)} = 0 identically for a consistent knowledge presheaf that never produces top-cells; non-zero exactly when the presheaf is inconsistent"
+    }
+  }
+}

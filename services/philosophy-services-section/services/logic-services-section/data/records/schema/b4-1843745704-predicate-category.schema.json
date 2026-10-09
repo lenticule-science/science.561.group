@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://research-notes.561.group/hacking/library/predication-notes/composting/library/object/library/thing/library/category/library/predicate-category/predicate-category.schema.json",
+  "title": "Predicate category",
+  "description": "JSON Schema for a small predicate category C: an object-set (predicate-set Π = Ob(C)) together with four morphism tables, one per canonical generator class. Each table lists morphisms as (source, target) pairs in that class; composition is generated freely modulo the identities required by the class semantics, and is not stored. Composition closure, Sym(E)-equivariance, and the 'four classes exhaust bottom-preserving bilattice homomorphisms' theorem from code/structures/predicate-category.md must be checked by a verifier.",
+  "type": "object",
+  "required": ["objects", "specialization", "converse", "subject-projection", "object-projection"],
+  "additionalProperties": false,
+  "properties": {
+    "objects": {
+      "description": "The predicate-set Π = Ob(C). References the predicate-set schema by inline structural copy.",
+      "$ref": "https://research-notes.561.group/hacking/library/predication-notes/object/library/thing/library/category/library/predicate-category/library/predicate-set/predicate-set.schema.json"
+    },
+    "specialization": {
+      "description": "Specialization morphisms — pairs (source, target) meaning the morphism refines source to the more-specific target.",
+      "$ref": "#/$defs/morphismList"
+    },
+    "converse": {
+      "description": "Converse morphisms — pairs (source, target) such that the morphism takes the (s p o) interpretation of source to the (o p s) interpretation of target. Converse is an involution: applying twice returns to source.",
+      "$ref": "#/$defs/morphismList"
+    },
+    "subject-projection": {
+      "description": "Subject-projection morphisms — pairs (source, target) such that the morphism collapses cells of source along the diagonal (s, o) ↦ (s, s), yielding a unary predicate target depending only on the subject coordinate.",
+      "$ref": "#/$defs/morphismList"
+    },
+    "object-projection": {
+      "description": "Object-projection morphisms — pairs (source, target) such that the morphism collapses cells of source along the diagonal (s, o) ↦ (o, o), yielding a unary predicate target depending only on the object coordinate.",
+      "$ref": "#/$defs/morphismList"
+    }
+  },
+  "$defs": {
+    "morphismList": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["source", "target"],
+        "additionalProperties": false,
+        "properties": {
+          "source": {"type": "string", "pattern": "^[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$"},
+          "target": {"type": "string", "pattern": "^[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$"}
+        }
+      },
+      "uniqueItems": true
+    }
+  }
+}

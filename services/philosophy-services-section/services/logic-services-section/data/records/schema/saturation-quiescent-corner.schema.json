@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://active.development.561.group/articulating/library/aperiodic-articulation-category/commutating/library/aperiodic-nuclear-quartet-category/library/saturation-quiescent-corner/saturation-quiescent-corner.schema.json",
+  "title": "saturation-quiescent-corner",
+  "description": "The σ-quiescent corner of a commutative nuclear square: Fix(σ) = {a ∈ A : σ(a) = a}. The sub-history-determined layer. σ has done its work; Δ may still have work. Corresponds to the potential phase of articulation (token-axis articulated, claim-axis free).",
+  "type": "object",
+  "properties": {
+    "name": { "type": "string", "const": "saturation-quiescent-corner" }
+  },
+  "required": ["name"]
+}

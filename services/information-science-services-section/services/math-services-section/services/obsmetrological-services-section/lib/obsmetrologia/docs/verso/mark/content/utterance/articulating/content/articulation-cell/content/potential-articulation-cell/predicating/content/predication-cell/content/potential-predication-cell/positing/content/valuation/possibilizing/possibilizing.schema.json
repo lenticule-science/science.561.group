@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/possibilizing",
+  "title": "possibilizing",
+  "description": "The modal diamond operation of the valuation: it raises each cell's charge to the knowledge-join of the charges assigned at that cell across the fiber-algebras and appends the result as a new knowledge-monotone valuation on the trace. Inflationary, left adjoint of necessitating's box.",
+  "type": "object",
+  "required": ["morphism", "domain", "codomain"],
+  "properties": {
+    "morphism": { "const": "possibilizing", "description": "a one-way generative arrow; moves each charge up the knowledge order to the knowledge-join across the fiber-algebras, appending a new valuation to the trace" },
+    "domain": { "$ref": "mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation", "description": "the valuation it maps out of - the charge assignment over the trace" },
+    "codomain": { "$ref": "mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation", "description": "the new knowledge-monotone valuation appended to the trace" }
+  }
+}

@@ -1,0 +1,218 @@
+import ObsmetrologiaManual.DocSetup
+import Obsmetrologia
+
+open Verso.Genre Manual InlineLean
+open Obsmetrologia
+
+/-!
+The core-spine overview, written to the welded form: every cited declaration is a
+build-failing `{name …}` reference, and the load-bearing conflations are elaborated
+`lean` witnesses rather than restated prose. This is the generative path of Obsmetrologia —
+the part a reader must hold before any later recovered mathematics makes sense.
+
+`{docstring …}` is used only for the two light signatures (`Articulating.Corner`, `FourCorner`)
+that render within the native stack on Windows; everything heavier is welded with
+`{name …}`. Heavy `{docstring …}` rendering belongs on WSL/CI, as elsewhere in the
+manual.
+-/
+
+#doc (Manual) "Core spine overview" =>
+
+# Core Spine
+
+This is the generative path of Obsmetrologia: the chain Mark → Utterance → Articulating →
+Articulating.Cell → Predicating → Positing → Settling, with the recurring four
+({name Obsmetrologia.four_fold}`four_fold`) read off it. A reader should understand this
+chain before interpreting any later recovered mathematics. The point of this page is
+that the chain is not a vocabulary — every step is a declaration, and the conflations
+that make it _one_ structure are checked here.
+
+## 1. The admitted data: marks and kinds
+
+Free data enters in exactly two places in the whole library. The first is the atom.
+A {name Obsmetrologia.Mark}`Mark` is a finite surface presentation; identity is role, not
+surface, and role is supplied downstream.
+
+A mark stands on one of two sides, {name Obsmetrologia.Kind}`Kind` — `token` (the
+identity-carrying side) and `claim` (the content-carrying side). That there are
+_exactly_ two, and that they are distinct, are theorems, not stipulations:
+
+```lean
+example (k : Kind) :
+    k = Kind.token ∨ k = Kind.claim :=
+  Kind.two_kinds k
+
+example : Kind.token = Kind.claim → False :=
+  Kind.token_ne_claim
+```
+
+## 2. Utterance: the two typed hands
+
+{name Obsmetrologia.Utterance}`Utterance` pairs a {name Obsmetrologia.Token}`Token` (a
+mark carried on the left hand) with a {name Obsmetrologia.Claim}`Claim` (a mark carried
+on the right hand) — the hand is now carried by the carrier's own type, not read off
+position after the fact. It is the _domain_ that articulating acts on, and the sole
+admission boundary: the one place a mark is let in. Its accessor
+{name Obsmetrologia.Utterance.at_}`at_` reads the bare mark back off a named hand,
+definitionally agreeing with the two typed projections:
+
+```lean
+example (u : Utterance) :
+    u.at_ Kind.token = u.token.mark := rfl
+```
+
+## 3. Articulating: the second admitted recursion
+
+{name Obsmetrologia.Articulating}`Articulating` is the only other free data — the
+`[utterance, articulating]` recursion, everything below it derived. It carries a
+{name Obsmetrologia.Articulating.depth}`depth`, and its two constructors are genuinely
+distinct: a bare utterance is never an articulated pair
+({name Obsmetrologia.Articulating.utter_ne_pair}`utter_ne_pair`).
+
+## 4. The first fourfold: articulation cells and corners
+
+When articulating acts on an utterance, each hand receives its own **witness slot**,
+a lossless list that only grows.
+{name Obsmetrologia.Articulating.Cell}`Articulating.Cell` records the two slots, and
+their two independent presence statuses partition the cell into four corners,
+{name Obsmetrologia.Articulating.Corner}`Articulating.Corner`. To articulate is to
+measure, not to seed: {name Obsmetrologia.Articulating.Cell.articulate}`articulate`
+witnesses the token and always lands at `potential`, never at `absurd`.
+
+{docstring Obsmetrologia.Articulating.Corner}
+
+The cardinality is _derived_, not chosen — one side would give two cells, three would
+give eight; two-sidedness gives exactly four. This is
+{name Obsmetrologia.Articulating.Corner.card_eq_four}`card_eq_four`:
+
+```lean
+example : Articulating.Corner.all.length = 4 :=
+  Articulating.Corner.card_eq_four
+```
+
+The corner of a cell is read by {name Obsmetrologia.Articulating.Cell.corner}`corner`, and
+the un-articulated (neither-slot-witnessed) position
+{name Obsmetrologia.Articulating.Cell.unarticulated}`unarticulated` sits at the `absurd`
+corner — the knowledge-least point a cell would sit at before any articulation,
+never articulating's own output
+(see {name Obsmetrologia.Articulating.cell_corner_ne_absurd}`cell_corner_ne_absurd`).
+The separately typed
+{name Obsmetrologia.Articulating.PotentialCell}`PotentialCell` sits at `potential`
+and is the source from which predicating proceeds:
+
+```lean
+example (u : Utterance) :
+    (Articulating.Cell.unarticulated u).corner
+      = Articulating.Corner.absurd := rfl
+
+example (u : Utterance) :
+    (Articulating.PotentialCell.initial u).toCell.corner
+      = Articulating.Corner.potential := rfl
+```
+
+Every corner is reached by some cell over a fixed utterance
+({name Obsmetrologia.Articulating.Cell.corner_surjective}`corner_surjective`), so the
+fourfold is genuinely populated, not a formal four-element type.
+
+## 5. Predicating: categorical shape from the potential cell
+
+Only the `potential` cell carries forward into predication.
+{name Obsmetrologia.PredicationCell}`PredicationCell` is the subject–predicate–object
+triple over {name Obsmetrologia.Entity}`Entity` and {name Obsmetrologia.Predicate}`Predicate`
+— abbreviations of {name Obsmetrologia.Token}`Token` and {name Obsmetrologia.Claim}`Claim`
+respectively, the two typed hands, not of the bare {name Obsmetrologia.Mark}`Mark`
+underneath them.
+{name Obsmetrologia.PredicationCell.predicating}`predicating` builds it from a potential
+cell; {name Obsmetrologia.PredicationCell.converse}`converse` swaps subject and object, and
+is a genuine involution that moves any non-symmetric cell
+({name Obsmetrologia.PredicationCell.converse_ne}`converse_ne`). This is where category-like
+structure first appears — _downstream_ of predication, never assumed before it.
+
+## 6. Positing: value as the FOUR reading
+
+{name Obsmetrologia.Reading}`Reading` is the four-point value structure positing admits — and
+it is _definitionally_ the same four-corner object, `Reading := Articulating.Corner`. The two
+lattice orders live on it as {name Obsmetrologia.Reading.joinK}`joinK` /
+{name Obsmetrologia.Reading.meetK}`meetK` (knowledge) with bounds
+{name Obsmetrologia.Reading.kBot}`kBot` and {name Obsmetrologia.Reading.kTop}`kTop`, and
+{name Obsmetrologia.Reading.negate}`negate` linking the two orders.
+
+That a bilattice reading _is_ an articulation phase is definitional at the carrier
+level, because `Reading := Articulating.Corner`:
+
+```lean
+example (c : Articulating.Corner) : (c : Reading) = c :=
+  rfl
+```
+
+## 7. Predication forces FOUR and presents Chu
+
+The oriented claim has no intrinsic value coordinate.  A
+{name Obsmetrologia.Valuation}`Valuation` supplies standing while preserving
+evidence for and evidence against independently.  The two coordinates round-trip
+losslessly through FOUR by
+{name Obsmetrologia.independentEvidenceReading_slots}`independentEvidenceReading_slots`
+and
+{name Obsmetrologia.independentEvidenceReading_exhaustive}`independentEvidenceReading_exhaustive`.
+
+The canonical evaluation matrix
+{name Obsmetrologia.predicationChu}`predicationChu` has claims as points,
+valuations as states, and `r claim valuation = valuation claim`.  Thus the same
+FOUR-valued standing of the same predication is already a Chu matrix.  The
+compact theorem restoring this once-diffused claim is
+{name Obsmetrologia.fregean_predication_forces_four_and_chu}`fregean_predication_forces_four_and_chu`:
+
+```lean
+example : FregeanPredicationForcesFourAndChu :=
+  fregean_predication_forces_four_and_chu
+```
+
+## 8. Settling: closure to a fixed regime
+
+Settling turns evidence and closure into a fixed regime. The knowledge order becomes a
+partial order {name Obsmetrologia.Reading.KLE}`KLE` — reflexive, transitive, and antisymmetric
+({name Obsmetrologia.Reading.kle_antisymm}`kle_antisymm`). A
+{name Obsmetrologia.Reading.Closure}`Closure` is an extensive, monotone, idempotent operator;
+{name Obsmetrologia.Reading.settle}`settle` applies it to a seed, and the result is the
+_least_ fixed point above the seed ({name Obsmetrologia.Reading.settle_least}`settle_least`) —
+the regime the seed settles into.
+
+## 9. The recurring four, identified as one object
+
+{name Obsmetrologia.Articulating.FourCorner}`FourCorner` is the canonical status pair `Bool × Bool` that
+every later quartet is an instance of.
+
+{docstring Obsmetrologia.Articulating.FourCorner}
+
+The four-fold identity {name Obsmetrologia.four_fold}`four_fold` records that the
+articulation phases and the predicate generators
+({name Obsmetrologia.Generator}`Generator`) both have exactly four elements; the bijection
+{name Obsmetrologia.cornerStatus}`cornerStatus` is the canonical identification. The
+load-bearing conflation — that the `(token, claim)` partition articulating produces
+and the four-point value positing admits are _one object_ — is
+{name Obsmetrologia.articulation_phase_is_reading}`articulation_phase_is_reading`:
+
+```lean
+example (c : Articulating.Cell) :
+    Articulating.FourCorner.toCorner c.fourCorner
+      = c.corner :=
+  articulation_phase_is_reading c
+```
+
+and the descent's start is a single point in both readings at once:
+
+```lean
+example (u : Utterance) :
+    Articulating.FourCorner.toCorner
+        (Articulating.Cell.unarticulated u).fourCorner
+      = Reading.kBot := rfl
+```
+
+## Reader warning
+
+The spine must not be read as "ordinary category theory plus some vocabulary."
+Category-like structure appears — but it appears _downstream_ of predication
+(§5), and the four-point value is _the same object_ as the articulation phase (§6,
+§9), not a separate semantic gadget bolted on. Every later recovered theory in the
+library is a re-meeting of this one cell at a greater depth; that is the claim the
+keystone (Part III) makes precise.

@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://research-notes.561.group/hacking/library/predication-notes/composting/library/predication-settling-category/library/predication-settling/doing/doing.schema.json",
+  "title": "Doing-act",
+  "description": "JSON Schema for a doing-act — one settling-step v_τ → v_{τ+1} of a predication-settling, realized as a single nucleus application (σ-firing or Δ-stabilization) at one affected cell. Carries the cell coordinate, the before- and after- bilattice-values witnessing settling monotonicity (value-before ≤_k value-after), the kind discriminator pinning stratum, the non-empty deps-chain of premise cell-ids, the derived-via gerund slug naming the closure-rule or stabilization operator, the Belnap classification of the produced value, the ISO-8601 transaction-id, and the optional post-act closure-status label.",
+  "type": "object",
+  "required": ["cell", "value-before", "value-after", "kind", "stratum", "derived-from", "derived-via", "belnap-class", "t"],
+  "additionalProperties": false,
+  "properties": {
+    "cell": {"$ref": "https://research-notes.561.group/hacking/library/predication-notes/predication-cell-set/library/predication-cell/predication-cell.schema.json"},
+    "value-before": {
+      "description": "v_τ at the affected cell — the predication-valuation's value at this cell before the step. Witnesses the source of the morphism.",
+      "$ref": "https://research-notes.561.group/hacking/library/predication-notes/lattice/library/twist-product/library/bilattice-value/bilattice-value.schema.json"
+    },
+    "value-after": {
+      "description": "v_{τ+1} at the affected cell — the predication-valuation's value at this cell after the step. Must be ≥_k value-before per settling monotonicity; the script enforces this constraint, which JSON Schema cannot express directly.",
+      "$ref": "https://research-notes.561.group/hacking/library/predication-notes/lattice/library/twist-product/library/bilattice-value/bilattice-value.schema.json"
+    },
+    "kind": {
+      "description": "Which nucleus realized the step. 'sigma' is the closure-operator (σ-nucleus) — emits a stratum-1 saturated atom from a closure-rule firing. 'delta' is the bilattice-stabilization-nucleus (Δ-nucleus) — emits a stratum-2 settled atom from a T_a^* fixed-point.",
+      "enum": ["sigma", "delta"]
+    },
+    "stratum": {
+      "description": "The output stratum, pinned from kind. 'saturated' (stratum-1) for σ-acts; 'settled' (stratum-2) for Δ-acts. Stratum 'asserted' is the positing-face (predicating) and is not a doing-act.",
+      "enum": ["saturated", "settled"]
+    },
+    "derived-from": {
+      "description": "Non-empty list of premise cell-ids — atoms at strata ≤ 1 (for σ) or ≤ 2 (for Δ) consumed by the firing. Records the deps-chain in the stratified-predication-fiber's witness graph; acyclicity along the trajectory is the fiber's structural property.",
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "https://research-notes.561.group/hacking/library/predication-notes/predication-cell-set/library/predication-cell/library/cell-record/library/cell-id/cell-id.schema.json"},
+      "uniqueItems": true
+    },
+    "derived-via": {
+      "description": "Gerund-slug naming the closure-rule (for σ-acts) or stabilization operator (for Δ-acts; conventionally 'bilattice-stabilization').",
+      "type": "string",
+      "pattern": "^[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$"
+    },
+    "belnap-class": {
+      "description": "By-produced-value Belnap classification of value-after's symbol: 'inferring' (t), 'refuting' (f), 'idling' (bot), 'conflicting' (top).",
+      "enum": ["inferring", "refuting", "idling", "conflicting"]
+    },
+    "closure-status": {
+      "description": "Optional post-act closure-status of the affected cell, from the orthogonal taxonomy: 'fully-settled' (σ-fixed ∧ Δ-fixed), 'saturation-pending' (¬σ-fixed ∧ Δ-fixed), 'stabilization-pending' (σ-fixed ∧ ¬Δ-fixed), 'fully-open' (neither fixed).",
+      "enum": ["fully-settled", "saturation-pending", "stabilization-pending", "fully-open"]
+    },
+    "t": {
+      "description": "ISO-8601 transaction-id of the firing.",
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"kind": {"const": "sigma"}}, "required": ["kind"]},
+      "then": {"properties": {"stratum": {"const": "saturated"}}}
+    },
+    {
+      "if": {"properties": {"kind": {"const": "delta"}}, "required": ["kind"]},
+      "then": {"properties": {"stratum": {"const": "settled"}}}
+    }
+  ]
+}

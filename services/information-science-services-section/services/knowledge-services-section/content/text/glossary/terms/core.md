@@ -1,0 +1,27 @@
+# Core
+
+## Modality
+
+## Topology
+
+## Dynamics
+
+## Physics
+
+# Media
+
+## Literature
+
+- Reproducible Paracosmic Standard
+
+# Science
+
+## Research
+
+### Relational Research Modality
+
+# Sociology
+
+## Politics
+
+## Culture

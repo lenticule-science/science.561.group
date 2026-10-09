@@ -1,0 +1,452 @@
+{
+  "$schema": "../../../../../../../../data/records/schema/literature-measurement.schema.json",
+  "id": "streaming-and-distribution-protocols",
+  "kind": "literature-measurement",
+  "question": "How do Superfluid (CFA, GDA, Flow Councils) and Sablier (Lockup, Flow) compute balances, who holds their upgrade keys, what is their scale on 2026-10-08, and where have they failed?",
+  "frame": {
+    "population": "on-chain streaming and distribution-pool protocols",
+    "exposure": "contract source, deployed Base contracts, subgraph and DeFiLlama reads",
+    "comparator": "a Tidepool member credit stream or yield-routing stream",
+    "outcomes": [
+      "balance computation",
+      "collateral and liquidation",
+      "admin keys",
+      "scale",
+      "failures"
+    ]
+  },
+  "notes": [
+    "../../content/text/documents/articles/notes/2026/10/08/2026-10-08-streaming-and-distribution-protocols.md"
+  ],
+  "sources": [
+    {
+      "item": {
+        "id": "superfluidsource2026",
+        "type": "software",
+        "title": "Superfluid protocol-monorepo: ConstantFlowAgreementV1, GDA, SuperfluidPool (ethereum-contracts v1.15.3)",
+        "author": [
+          {
+            "literal": "Superfluid Protocol Source"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              8
+            ]
+          ]
+        },
+        "URL": "https://github.com/superfluid-finance/protocol-monorepo"
+      },
+      "design": "protocol-source-code",
+      "findings": [
+        {
+          "finding": "CFA stores, per account, one FlowData {timestamp, flowRate, deposit, owedDeposit}; a balance is not stored but computed: dynamicBalance = (time - state.timestamp) * state.flowRate, added to the static balance of the Super Token. Money moves with no transaction after the flow is opened.",
+          "exactSourceLanguage": "dynamicBalance = (time.toInt256() - state.timestamp.toInt256()) * state.flowRate;"
+        },
+        {
+          "finding": "Every flow locks a deposit sized by the governance-set liquidation period: deposit = flowRate * liquidationPeriod. A sender whose Super Token balance runs below the deposit can be liquidated by a third party (patrician period first, then pleb), so streams are collateralised by a buffer the sender must hold.",
+          "exactSourceLanguage": "deposit = uint256(int256(flowRate * int96(uint96(liquidationPeriod))));"
+        },
+        {
+          "finding": "A flow is keyed by keccak256(abi.encode(flowSender, flowReceiver)) so there is one flow per ordered pair; flow-operator permissions (create/update/delete, with a flowRateAllowance) let a third contract manage a sender's flows.",
+          "exactSourceLanguage": "FlowId = keccak256(abi.encode(flowSender, flowReceiver))"
+        },
+        {
+          "finding": "GDA pools: a pool has an admin and integer member units; updateMemberUnits(member, newUnits) is described in code as mint/burn of units seen through the ERC20 lens. A distributor either distributes a lump (distribute) or sets a flow rate into the pool (distributeFlow); each member earns flowRate * units / totalUnits. Members who have not connected the pool accrue a claimable amount that claimAll settles; connected members are settled continuously.",
+          "exactSourceLanguage": "Unit updates by admin are effectively mint/burn operations when viewed through the ERC20 lens."
+        },
+        {
+          "finding": "The host, CFA and GDA are UUPS proxies (UUPSProxiable.updateCode); the governance contract that sets liquidation periods and approves agreement and Super Token logic upgrades is owned by a multisig (see the chain row)."
+        },
+        {
+          "finding": "Release ethereum-contracts@v1.15.3 and metadata@v1.6.5 were published 2026-10-01; the repo had a push on 2026-10-07; licence reported as NOASSERTION by GitHub with AGPLv3 headers in the contracts and MIT-LICENSE in ethereum-contracts."
+        },
+        {
+          "finding": "Audit files in packages/ethereum-contracts/audits: PeckShield 2021-01, Halborn 2022-02, Trail of Bits 2023-12 (comprehensive report with fix review), \"2026-01-27 Final Superfluid Collaborative Audit Report\", \"2026-05-25 Final Superfluid Public Best Efforts Audit Contest Report\". bug-bounty.md: Immunefi; Critical USD 30,000 to 200,000, High 10,000 to 30,000, Medium 5,000, Low 2,000."
+        }
+      ],
+      "readFrom": "source-code",
+      "observedAt": "2026-10-08"
+    },
+    {
+      "item": {
+        "id": "superfluidchain2026",
+        "type": "software",
+        "title": "Superfluid governance on Base: host.getGovernance() and its owner",
+        "author": [
+          {
+            "literal": "Superfluid Base Reads"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              8
+            ]
+          ]
+        },
+        "URL": "https://basescan.org/address/0x4C073B3baB6d8826b8C5b229f3cfdC1eC6E47E74"
+      },
+      "design": "on-chain-measurement",
+      "findings": [
+        {
+          "finding": "cast against https://mainnet.base.org at block 52348910 (unix 1791487167): host 0x4C073B3baB6d8826b8C5b229f3cfdC1eC6E47E74 getGovernance() = 0x55F7758dd99d5e185f4CC08d4Ad95B71f598264D; governance owner() = 0x06a858185b3B2ABB246128Bb9415D57e5C09aEB6; that owner is a Safe with getThreshold() = 2 and four owners 0x4289a2b29be2555b0973422167321bF42CC39A3B, 0x2770cC972a7666C974B1b1269F4F31b97f99f898, 0x9c4033F637cbc6170349B079C2114c599de30dDE, 0x069C4343EF842Df2A3b7a77486A5DeceaB528295. CFA is 0x19ba78B9cDB05A877718841c574325fdB53601bb and GDA 0xfE6c87BE05feDB2059d2EC41bA0A09826C9FD7aa (from host.getAgreementClass); super token factory 0xe20B9a38E0c96F61d1bA6b42a61512D56Fea1Eb3."
+        },
+        {
+          "finding": "So on Base the keys that can upgrade agreement logic and set liquidation parameters are a 2-of-4 Safe, not the SUP token vote directly."
+        }
+      ],
+      "readFrom": "on-chain-read",
+      "observedAt": "2026-10-08"
+    },
+    {
+      "item": {
+        "id": "superfluidsubgraph2026",
+        "type": "software",
+        "title": "Superfluid protocol-v1 subgraph, base-mainnet and other chains",
+        "author": [
+          {
+            "literal": "Superfluid Subgraph"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              8
+            ]
+          ]
+        },
+        "URL": "https://subgraph-endpoints.superfluid.dev/base-mainnet/protocol-v1"
+      },
+      "design": "on-chain-measurement",
+      "findings": [
+        {
+          "finding": "tokenStatistics queried 2026-10-08. Base: SUP (0xa69f80524381275a7ffdb3ae01c54150644c8792) 30,952 active streams across 113,706 accounts; BORING 30,025 active streams across 7,206 accounts; DEGENx 3,330 / 31,325; ETHx 1,169 / 24,576. Largest SUP distribution pools by totalMembers: 32,999; 20,957; 19,641 (pool 0xb7d7331529dc6fb68cb602d9b738cabd84d3ae6d first)."
+        },
+        {
+          "finding": "Optimism: USDCx 3,785 active streams, 30,115 accounts, 7 indexes; Polygon: MATICx 13,199 active streams and 149,611 accounts, USDCx 1,233 / 39,416 with 76 indexes; Gnosis: xDAIx 1,861 / 17,475 with 163 indexes."
+        },
+        {
+          "finding": "The active-stream leaders on Base are reward and campaign tokens (SUP, BORING, DEGENx), not payroll stablecoins: the dominant observed use is programmatic token distribution."
+        }
+      ],
+      "readFrom": "api-read",
+      "observedAt": "2026-10-08",
+      "notFound": [
+        "cumulative USD streamed per year; the subgraph returns raw token base units per token and no price"
+      ]
+    },
+    {
+      "item": {
+        "id": "superfluiddefillama2026",
+        "type": "software",
+        "title": "DeFiLlama protocol read: Superfluid",
+        "author": [
+          {
+            "literal": "DeFiLlama Superfluid"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              8
+            ]
+          ]
+        },
+        "URL": "https://api.llama.fi/protocol/superfluid"
+      },
+      "design": "dashboard-measurement",
+      "findings": [
+        {
+          "finding": "totalLiquidityUSD 5,591,213 at unix 1791469523 (2026-10-08 09:25 CDT). By chain: Ethereum 1,297,899; Optimism 1,567,229; Polygon 1,060,434; Base 1,251,689; Arbitrum 156,931; Celo 109,291; Gnosis (xDai) 85,502; Avalanche 27,894; Scroll 21,833; BNB 12,512. Category Payments."
+        }
+      ],
+      "readFrom": "api-read",
+      "observedAt": "2026-10-08"
+    },
+    {
+      "item": {
+        "id": "superfluidgovernance2026",
+        "type": "post-weblog",
+        "title": "Superfluid DAO governance and tokenomics (forum thread 69) and docs governance page",
+        "author": [
+          {
+            "literal": "Superfluid Forum"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              8
+            ]
+          ]
+        },
+        "URL": "https://forum.superfluid.org/t/superfluid-dao-governance-and-tokenomics/69"
+      },
+      "design": "governance-record",
+      "findings": [
+        {
+          "finding": "SUP: 1 billion minted at genesis; 60 percent community (35 percent DAO treasury, 25 percent Foundation treasury) and 40 percent investors and team (about 15 and 25), unlocking one-third after a one-year cliff and the rest streaming linearly over two years. No inflation planned at the outset; DAO retains the right to mint after the initial 2 years.",
+          "exactSourceLanguage": "1 billion SUP will be minted at genesis."
+        },
+        {
+          "finding": "Structure: the Superfluid DAO of token holders; the Superfluid Foundation (Cayman Islands) for legal and admin support; a 3-member Security Council elected by the DAO every 6 months with emergency and non-emergency powers that the DAO can narrow or dissolve."
+        },
+        {
+          "finding": "Voting: SIPs get a 7-day discussion, then a 14 to 16 day vote; a Constitutional SIP passes on majority with at least 5 percent of Votable Tokens voting for or abstaining and a 7-day wait; a Non-Constitutional SIP uses a 3 percent threshold, with a 3-day wait for treasury items. SUP rewards stream through Streaming Programmatic Rewards, withdrawable linearly over up to 12 months."
+        }
+      ],
+      "readFrom": "forum-post",
+      "observedAt": "2026-10-08",
+      "notFound": [
+        "whether voting requires locking or staking SUP; the page does not say"
+      ]
+    },
+    {
+      "item": {
+        "id": "superfluidexploit2022",
+        "type": "webpage",
+        "title": "Halborn: Explained, the Superfluid hack (February 2022)",
+        "author": [
+          {
+            "literal": "Halborn Superfluid Hack"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2022,
+              2,
+              14
+            ]
+          ]
+        },
+        "URL": "https://halborn.com/explained-the-superfluid-hack-february-2022/"
+      },
+      "design": "audit-report",
+      "findings": [
+        {
+          "finding": "On 2022-02-08 an attacker injected a forged ctx through callAgreement; the calldata held a real and a fake ctx, the agreement kept the first (the malicious one), and the hash check was skipped for calldata coming from the trusted Host. Halborn puts the loss at 13 million USD; REKT put the drain at 8.7 million USD.",
+          "exactSourceLanguage": "it kept the first version of ctx (the malicious one) and discarded the other."
+        }
+      ],
+      "readFrom": "first-party-docs",
+      "observedAt": "2026-10-08",
+      "notFound": [
+        "Superfluid's own post-mortem text; Halborn links it but the page read did not carry it"
+      ]
+    },
+    {
+      "item": {
+        "id": "flowcouncilsource2026",
+        "type": "software",
+        "title": "flow-state-coop/flow-council: FlowCouncil.sol and FlowCouncilFactory.sol",
+        "author": [
+          {
+            "literal": "Flow Council Source"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              8
+            ]
+          ]
+        },
+        "URL": "https://github.com/flow-state-coop/flow-council"
+      },
+      "design": "protocol-source-code",
+      "findings": [
+        {
+          "finding": "Flow Council is a voting system that streams funds among recipients by weighted votes. FlowCouncil.sol keeps voters (uint96 votingPower) and recipients, with roles DEFAULT_ADMIN_ROLE, VOTER_MANAGER_ROLE, RECIPIENT_MANAGER_ROLE; vote(Vote[]) spreads a voter's power over recipients, rejected above maxVotingSpread, and the Superfluid GDA pool units of recipients are the vote totals so the stream splits proportionally.",
+          "exactSourceLanguage": "Flow Council is a voting system that enables organizations to dynamically stream funds among recipients based on weighted votes."
+        },
+        {
+          "finding": "Factory 0x589232342bfeCb372dbbc01d17e8D112a27fF125 on Optimism, Base, Arbitrum One and Celo per the README; last push 2026-07-15. The voter set is chosen by the council admin: there is no token-weighted or identity-proof gate in the contract."
+        }
+      ],
+      "readFrom": "source-code",
+      "observedAt": "2026-10-08"
+    },
+    {
+      "item": {
+        "id": "sabliersource2026",
+        "type": "software",
+        "title": "sablier-labs monorepo: lockup and flow packages",
+        "author": [
+          {
+            "literal": "Sablier Source"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              8
+            ]
+          ]
+        },
+        "URL": "https://github.com/sablier-labs/lockup"
+      },
+      "design": "protocol-source-code",
+      "findings": [
+        {
+          "finding": "Lockup: a stream is an ERC-721 NFT; models are LOCKUP_LINEAR, LOCKUP_DYNAMIC, LOCKUP_TRANCHED, LOCKUP_PRICE_GATED. The full amount is deposited at creation; per-stream flags cancelable and transferable; functions withdraw, withdrawMax, cancel, renounce, burn. Streamed amount is a pure function of time and the stream parameters."
+        },
+        {
+          "finding": "Flow: open-ended streams with no deposit up front and no end time. Stream struct {balance, ratePerSecond (UD21x18), sender, snapshotTime, isStream, isTransferable, isVoided, token, tokenDecimals, snapshotDebtScaled}; debt accrues as elapsed * ratePerSecond and is withdrawn against the balance; functions deposit, pause, refund, refundAndPause, refundMax, adjustRatePerSecond, void, withdraw; uncoveredDebtOf reports the shortfall when balance is less than debt.",
+          "exactSourceLanguage": "struct Stream { uint128 balance; UD21x18 ratePerSecond; address sender; uint40 snapshotTime; ... uint256 snapshotDebtScaled; }"
+        },
+        {
+          "finding": "Packages in the monorepo: airdrops (Merkle distribution with optional vesting), bob (price-gated vaults with optional yield adapters), flow, lockup, utils (comptroller). README: license changed from BUSL-1.1 to GPL on 2026-07-13; repository no longer maintained and not accepting pull requests, source must stay byte-for-byte verifiable against deployed addresses."
+        },
+        {
+          "finding": "SECURITY.md: \"Sablier does not operate a bug bounty program\"; audits are listed in sablier-labs/audits, by Cantina and independent auditors; protocol assumptions exclude fee-on-transfer, rebasing, ERC-777 and native-wrapper tokens."
+        }
+      ],
+      "readFrom": "source-code",
+      "observedAt": "2026-10-08"
+    },
+    {
+      "item": {
+        "id": "sablierchain2026",
+        "type": "software",
+        "title": "Sablier Lockup v4.0 and Flow v3.0 on Base: cast reads",
+        "author": [
+          {
+            "literal": "Sablier Base Reads"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              8
+            ]
+          ]
+        },
+        "URL": "https://docs.sablier.com/guides/lockup/deployments"
+      },
+      "design": "on-chain-measurement",
+      "findings": [
+        {
+          "finding": "Lockup v4.0 on Base 0xc19a09A66887017F603E5dF420ed3Cb9a5c07C0A (name \"Sablier Lockup NFT\", nextStreamId() = 1227 on 2026-10-08, so 1,226 streams created on this deployment); batch 0xE001bae5Ef0d86362Ca258bff994a97CAE1245F5; NFT descriptor 0x87e437030b7439150605a641483de98672E26317. Not a proxy (no implementation slot)."
+        },
+        {
+          "finding": "Flow v3.0 on Base 0x0cbfe6ce6f05c47d6243bb3818837971c6ccb46b with nextStreamId() = 5 (4 streams); FlowNFTDescriptor 0x5b5e742305Be3A484EacCB124C83456463c24E6a. Both read comptroller() = 0x0000008ABbFf7a84a2fE09f9A9b74D3BC2072399 whose admin() is the Safe 0x58290bbdb51A4c6B022A81e9cDeD24BE19Ca57fd, threshold 2, four owners (0xf8878b97..., 0xb7EC1009..., 0xD427d37B..., 0x1f708f6E...). The comptroller controls protocol fee settings."
+        }
+      ],
+      "readFrom": "on-chain-read",
+      "observedAt": "2026-10-08",
+      "notFound": [
+        "cumulative volume streamed; no first-party volume statistic located in docs or repo"
+      ]
+    },
+    {
+      "item": {
+        "id": "sablierdefillama2026",
+        "type": "software",
+        "title": "DeFiLlama protocol read: Sablier (parent, lockup, flow)",
+        "author": [
+          {
+            "literal": "DeFiLlama Sablier"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              8
+            ]
+          ]
+        },
+        "URL": "https://api.llama.fi/protocol/sablier"
+      },
+      "design": "dashboard-measurement",
+      "findings": [
+        {
+          "finding": "Parent sablier TVL (unix 1791469343): Ethereum 3,192,097; Arbitrum 209,862; BSC 53,040; Base 45,379; Polygon 27,124; OP Mainnet 12,940; Sonic 10,752; total liquidity 3,555,457 USD. A separate \"vesting\" series reads 4,864,140,556 (includes unvested positions of token vesting). Child listings: sablier-lockup 2,297,118; sablier-flow 727,934; sablier-legacy 530,406."
+        }
+      ],
+      "readFrom": "api-read",
+      "observedAt": "2026-10-08"
+    }
+  ],
+  "searches": [
+    {
+      "register": "github-api",
+      "variables": {
+        "q": "org:superfluid-finance pushed>2026-01-01"
+      },
+      "observedAt": "2026-10-08",
+      "count": 1,
+      "included": [
+        "superfluidsource2026"
+      ],
+      "reading": "Only protocol-monorepo and superboring-docs were pushed in 2026; the organisation's other repos are stale."
+    },
+    {
+      "register": "github-api",
+      "variables": {
+        "q": "flow council superfluid"
+      },
+      "observedAt": "2026-10-08",
+      "count": 1,
+      "included": [
+        "flowcouncilsource2026"
+      ],
+      "reading": "The one repository for Flow Councils is flow-state-coop/flow-council, outside the Superfluid organisation."
+    },
+    {
+      "register": "web",
+      "variables": {
+        "q": "Superfluid Flow Councils docs.superfluid.org"
+      },
+      "observedAt": "2026-10-08",
+      "count": 0,
+      "included": [],
+      "reading": "The docs governance page and the web search returned no Flow Councils description from Superfluid itself; the contract README is the only first-party surface read."
+    },
+    {
+      "register": "defillama-api",
+      "variables": {
+        "path": "/protocol/superfluid, /protocol/sablier"
+      },
+      "observedAt": "2026-10-08",
+      "count": 2,
+      "included": [
+        "superfluiddefillama2026",
+        "sablierdefillama2026"
+      ]
+    },
+    {
+      "register": "other",
+      "variables": {
+        "q": "Superfluid and Sablier chain reads and subgraph"
+      },
+      "observedAt": "2026-10-08",
+      "count": 4,
+      "included": [
+        "superfluidchain2026",
+        "superfluidsubgraph2026",
+        "sablierchain2026"
+      ]
+    }
+  ]
+}

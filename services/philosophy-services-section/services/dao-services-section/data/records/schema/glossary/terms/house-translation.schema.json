@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "glossary/terms/house-translation",
+  "title": "house translation",
+  "description": "This section's own reading of one term, graded in the estate's own evidence vocabulary rather than asserted as a resolution of the translations it is compared against. A structural building block $ref'd by translation-variance-record.schema.json.",
+  "type": "object",
+  "required": ["text", "grade", "isNewToThisGlossary"],
+  "additionalProperties": false,
+  "properties": {
+    "text": {
+      "description": "the house reading itself, quoted verbatim from its source carrier when one already exists, or newly stated here when none does",
+      "type": "string",
+      "minLength": 1
+    },
+    "grade": {
+      "description": "the estate's own evidence grade, from the 2026 book of changes' own vocabulary: [B] background fact inherited rather than made; PROVED mechanically checked; FRAMING an offered interpretive move; VALVE deliberately ungraded speculation",
+      "type": "string",
+      "enum": ["B", "PROVED", "FRAMING", "VALVE"]
+    },
+    "isNewToThisGlossary": {
+      "description": "false when this reading is quoted from an existing carrier this section already held before this glossary was built; true when this glossary entry is the first place the estate states it",
+      "type": "boolean"
+    },
+    "citesCarrier": {
+      "description": "repo-relative path to the carrier this reading is quoted from, required when isNewToThisGlossary is false",
+      "type": "string"
+    },
+    "formalAnchor": {
+      "description": "when this reading extends the estate's own bilattice/causal-cone/settling-closure apparatus, the specific mechanism it extends; omitted when the reading is offered in plain prose without a formal anchor, which this glossary treats as an honest choice rather than a gap to be filled by force",
+      "type": "string"
+    }
+  },
+  "if": { "properties": { "isNewToThisGlossary": { "const": false } } },
+  "then": { "required": ["citesCarrier"] }
+}

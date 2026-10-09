@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://research-notes.561.group/hacking/library/predication-notes/composting/library/object/library/thing/library/category/library/colimit/colimit.schema.json",
+  "title": "Colimit",
+  "description": "JSON Schema for a colimit — the universal cocone under a diagram (Mac Lane 1971 Ch. III §3-4; Awodey 2010 §5). Dual to limit. Same primary-oneOf discriminator pattern over colimit-kind ∈ {initial, coproduct, coequalizer, pushout, general}.",
+  "type": "object",
+  "required": ["name", "in-category", "colimit-kind"],
+  "properties": {
+    "name": { "$dynamicRef": "#name-shape" },
+    "in-category": { "$dynamicRef": "#name-shape" },
+    "colimit-kind": {
+      "enum": ["initial", "coproduct", "coequalizer", "pushout", "general"],
+      "description": "The kind of colimit, used as a tag-union discriminator."
+    }
+  },
+  "oneOf": [
+    {
+      "title": "Initial colimit",
+      "properties": {
+        "colimit-kind": { "const": "initial" },
+        "initial-witness": { "$dynamicRef": "#name-shape" }
+      },
+      "required": ["colimit-kind", "initial-witness"]
+    },
+    {
+      "title": "Coproduct colimit",
+      "properties": {
+        "colimit-kind": { "const": "coproduct" },
+        "coproduct-witness": { "$dynamicRef": "#name-shape" }
+      },
+      "required": ["colimit-kind", "coproduct-witness"]
+    },
+    {
+      "title": "Coequalizer colimit",
+      "properties": {
+        "colimit-kind": { "const": "coequalizer" },
+        "coequalizer-witness": { "$dynamicRef": "#name-shape" }
+      },
+      "required": ["colimit-kind", "coequalizer-witness"]
+    },
+    {
+      "title": "Pushout colimit",
+      "properties": {
+        "colimit-kind": { "const": "pushout" },
+        "pushout-witness": { "$dynamicRef": "#name-shape" }
+      },
+      "required": ["colimit-kind", "pushout-witness"]
+    },
+    {
+      "title": "General colimit",
+      "properties": {
+        "colimit-kind": { "const": "general" },
+        "diagram": { "$dynamicRef": "#name-shape" },
+        "colimit-cocone": { "$dynamicRef": "#name-shape" }
+      },
+      "required": ["colimit-kind", "diagram", "colimit-cocone"]
+    }
+  ]
+}

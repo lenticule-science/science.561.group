@@ -1,0 +1,206 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "lenticule/relconlang/dialogue-relevance-state-v0.1",
+  "title": "RelConLang Dialogue Relevance State v0.1",
+  "description": "Experimental conversational state for conditional relevance and response relations. It intentionally does not equate conversational relevance with deontic obligation.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "kind",
+    "throughTurn",
+    "open",
+    "relations"
+  ],
+  "properties": {
+    "kind": {
+      "const": "lenticule.relconlang.dialogue-relevance-state"
+    },
+    "throughTurn": {
+      "type": "integer",
+      "minimum": -1
+    },
+    "open": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "openedBy",
+          "move",
+          "content",
+          "responseFamilies"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "openedBy": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "move": {
+            "enum": [
+              "question",
+              "request",
+              "repair-initiation",
+              "offer",
+              "other"
+            ]
+          },
+          "content": {},
+          "responseFamilies": {
+            "type": "array",
+            "items": {
+              "enum": [
+                "answer",
+                "refusal",
+                "acceptance",
+                "acknowledgement",
+                "counter-question",
+                "repair",
+                "clarification",
+                "account",
+                "other"
+              ]
+            }
+          },
+          "deontic": {
+            "const": false,
+            "description": "Conditional relevance is not itself a duty. Explicit deontic content belongs in a separate carrier."
+          }
+        }
+      }
+    },
+    "relations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "from",
+          "to",
+          "relation",
+          "compatibility",
+          "evidence"
+        ],
+        "properties": {
+          "from": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "to": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "relation": {
+            "enum": [
+              "question-answer",
+              "question-refusal",
+              "question-counter-question",
+              "request-acceptance",
+              "request-refusal",
+              "request-acknowledgement",
+              "repair-response",
+              "answer-uptake",
+              "other"
+            ]
+          },
+          "compatibility": {
+            "enum": [
+              "supported",
+              "opposed",
+              "partial",
+              "irrelevant",
+              "unknown"
+            ]
+          },
+          "evidence": {
+            "type": "array",
+            "items": {}
+          }
+        }
+      }
+    },
+    "closed": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "relevance",
+          "closedBy",
+          "disposition"
+        ],
+        "properties": {
+          "relevance": {
+            "type": "string",
+            "minLength": 1
+          },
+          "closedBy": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "disposition": {
+            "enum": [
+              "answered",
+              "refused",
+              "accepted",
+              "acknowledged",
+              "repaired",
+              "superseded",
+              "abandoned",
+              "other"
+            ]
+          }
+        }
+      }
+    },
+    "deonticState": {
+      "description": "Optional separate deontic reading. Never inferred merely from conditional relevance.",
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "transitionReceipts": {
+      "description": "Optional experimental receipts explaining why a relevance item opened, remained open, or closed.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "law",
+          "turn",
+          "effect"
+        ],
+        "properties": {
+          "law": {
+            "type": "string",
+            "minLength": 1
+          },
+          "turn": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "effect": {
+            "enum": [
+              "open",
+              "close",
+              "preserve",
+              "transform"
+            ]
+          },
+          "target": {
+            "type": "string"
+          },
+          "evidence": {
+            "type": "array",
+            "items": {}
+          }
+        }
+      }
+    }
+  }
+}

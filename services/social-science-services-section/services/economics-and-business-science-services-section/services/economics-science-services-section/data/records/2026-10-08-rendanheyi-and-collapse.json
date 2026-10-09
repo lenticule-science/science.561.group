@@ -1,0 +1,324 @@
+{
+  "$schema": "../../../../../../../../data/records/schema/literature-measurement.schema.json",
+  "id": "rendanheyi-and-collapse",
+  "kind": "literature-measurement",
+  "question": "What do Rendanheyi/Haier case studies and the collapse/complexity literature (Tainter) establish?",
+  "frame": {
+    "population": "Haier; complex societies",
+    "exposure": "micro-enterprise self-organisation; rising complexity costs",
+    "comparator": "bureaucratic hierarchy",
+    "outcomes": [
+      "structure",
+      "performance",
+      "marginal return on complexity"
+    ]
+  },
+  "notes": [
+    "../../content/text/documents/articles/notes/2026/10/08/2026-10-08-rendanheyi-and-collapse.md"
+  ],
+  "sources": [
+    {
+      "item": {
+        "id": "frynas2018",
+        "type": "article-journal",
+        "title": "Management innovation made in China: Haier’s Rendanheyi",
+        "author": [
+          {
+            "family": "Frynas",
+            "given": "Jedrzej George"
+          },
+          {
+            "family": "Mol",
+            "given": "Michael J."
+          },
+          {
+            "family": "Mellahi",
+            "given": "Kamel"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2018
+            ]
+          ]
+        },
+        "container-title": "California Management Review",
+        "DOI": "10.1177/0008125618790244",
+        "URL": "https://doi.org/10.1177/0008125618790244"
+      },
+      "findings": [
+        {
+          "finding": "Haier developed Rendanheyi to transform from a conventional hierarchical manufacturing firm to a highly responsive online-based entrepreneurial company; organizational, competitive, institutional and technological contexts mattered, so such innovations are context-dependent.",
+          "exactSourceLanguage": "This article shows how Haier developed a platform of management practices called Rendanheyi to transform itself from a conventional hierarchical manufacturing firm to a highly responsive online-based entrepreneurial company."
+        }
+      ],
+      "readFrom": "abstract",
+      "observedAt": "2026-10-08",
+      "design": "historical-case-study",
+      "country": [
+        "CN"
+      ],
+      "population": "Haier Group transformation from hierarchical manufacturer to platform of micro-enterprises",
+      "notFound": [
+        "Body text is in a subscription journal; the Copenhagen repository copy has no PDF link."
+      ]
+    },
+    {
+      "item": {
+        "id": "haier2015",
+        "type": "webpage",
+        "title": "Haier Group Announces Phase 2.0 of its Cornerstone ‘RenDanHeYi’ Business Model",
+        "author": [
+          {
+            "literal": "Haier Group"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2015
+            ]
+          ]
+        },
+        "container-title": "Haier Group Official Website",
+        "URL": "https://www.haier.com/global/press-events/news/20150922_142614.shtml"
+      },
+      "findings": [
+        {
+          "finding": "Adopted in 2005; almost 200 internal micro-enterprises had been established, 77 percent of them with more than CNY 100 million in annual revenue in 2014; Haier’s 2014 profit was twelvefold the pre-transformation level, a 28 percent compound annual growth rate over nine years.",
+          "exactSourceLanguage": "Almost 200 such internal start-ups have been established to date, with 77 percent of these micro-enterprises realizing more than CNY 100 million (USD 15.7 million) in annual revenue last year."
+        },
+        {
+          "finding": "Phase 2.0 turns Haier into a co-creation platform of micro-enterprises in which the company becomes a shareholder of its micro-enterprises and employees are entrepreneurs with decision-making authority who can distribute benefits.",
+          "exactSourceLanguage": "Haier as a company is no longer providing jobs to employees; we are instead offering a platform to become an entrepreneur."
+        }
+      ],
+      "readFrom": "first-party-docs",
+      "observedAt": "2026-10-08",
+      "design": "primary-text",
+      "country": [
+        "CN"
+      ],
+      "population": "Haier micro-enterprises, 2014 financial year",
+      "notFound": [
+        "Self-reported by Haier; no independent audit of the micro-enterprise revenue figures was read."
+      ]
+    },
+    {
+      "item": {
+        "id": "haier2016",
+        "type": "webpage",
+        "title": "Discovering Haier’s management transformation process, the management guru Gary Hamel gives the prediction",
+        "author": [
+          {
+            "literal": "Haier Global News"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2016
+            ]
+          ]
+        },
+        "container-title": "Haier Group Official Website",
+        "URL": "https://www.haier.com/global/press-events/news/20160224_142598.shtml"
+      },
+      "findings": [
+        {
+          "finding": "After eliminating bureaucracy Haier was said to be a platform with more than 3,800 nodes of micro-enterprise, with employees turning into entrepreneurs; Hamel’s reported view was that decisions made only at the top of a hierarchy make failure inevitable.",
+          "exactSourceLanguage": "the company is now transforming into an platform, which accumulated more than 3,800 node of Microenterprise and thousands of micro-enterprise"
+        }
+      ],
+      "readFrom": "first-party-docs",
+      "observedAt": "2026-10-08",
+      "design": "primary-text",
+      "country": [
+        "CN"
+      ],
+      "population": "Haier, February 2016",
+      "notFound": [
+        "Hamel’s own text was not read; this is Haier’s account of his presentation."
+      ]
+    },
+    {
+      "item": {
+        "id": "haierar2024",
+        "type": "report",
+        "title": "Haier Smart Home Annual Report 2024",
+        "author": [
+          {
+            "literal": "Haier Smart Home Annual Report"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025
+            ]
+          ]
+        },
+        "publisher": "Haier Smart Home Co., Ltd.",
+        "URL": "https://smart-home.haier.com/media/adrjuuk3/h24ar-report.pdf"
+      },
+      "findings": [
+        {
+          "finding": "2024 revenue RMB 285.971 billion, up 4.3 percent from RMB 274.198 billion (restated) in 2023; profit attributable to owners RMB 18.741 billion, up 12.9 percent; 122,733 employees at 31 December 2024 against 112,458.",
+          "exactSourceLanguage": "The total number of employees of the Group increased by 9.1% to 122,733 as at 31 December 2024 from 112,458 as at 31 December 2023."
+        },
+        {
+          "finding": "The report defines Rendanheyi: Ren = creators, Dan = user value, Heyi = integration of values realised by employees and values created for users; it is applied in acquired companies as a value-added sharing mechanism for the whole-process team under a common goal.",
+          "exactSourceLanguage": "In Haier’s “Rendanheyi” (人 單 合 一) model, “Ren” refers to creators; “Dan” refers to user value; “Heyi” refers to the integration of values realised by employees and the values created for users."
+        }
+      ],
+      "readFrom": "full-text",
+      "observedAt": "2026-10-08",
+      "design": "primary-text",
+      "country": [
+        "CN"
+      ],
+      "population": "Haier Smart Home Group, financial year 2024",
+      "notFound": [
+        "The annual report contains no count of micro-enterprises or ecosystem micro-enterprise communities."
+      ]
+    }
+  ],
+  "searches": [
+    {
+      "register": "crossref",
+      "variables": {
+        "query.bibliographic": "Haier Rendanheyi management innovation made in China",
+        "rows": "5"
+      },
+      "observedAt": "2026-10-08",
+      "count": 6259312,
+      "included": [
+        "frynas2018"
+      ]
+    },
+    {
+      "register": "crossref",
+      "variables": {
+        "query.bibliographic": "Haier rendanheyi micro-enterprise ecosystem microenterprises self-management Zhang Ruimin",
+        "rows": "5"
+      },
+      "observedAt": "2026-10-08",
+      "count": 309840,
+      "included": [],
+      "reading": "Haier hits are a 1994 Zhang Ruimin speech (Management and Organization Review) and ecosystem-entrepreneur studies; not read. Haier’s own press releases and annual report were read instead (below)."
+    },
+    {
+      "register": "crossref",
+      "variables": {
+        "query.bibliographic": "Hamel Zanini Haier Humanocracy 4000 microenterprises",
+        "rows": "5"
+      },
+      "observedAt": "2026-10-08",
+      "count": 30535,
+      "included": [],
+      "reading": "Hamel and Zanini items found (SSRN 2016, London Business School Review 2017, Innovations 2023); the SSRN and MIT Press PDFs returned a bot check and the Crossref records carry no abstract, so no Hamel and Zanini row is made. Hamel is read through Haier’s own account of his 2016 visit."
+    },
+    {
+      "register": "crossref",
+      "variables": {
+        "query.bibliographic": "Tainter Social complexity and sustainability",
+        "rows": "5"
+      },
+      "observedAt": "2026-10-08",
+      "count": 3922790,
+      "included": [],
+      "reading": "Tainter 2006 (Ecological Complexity, doi 10.1016/j.ecocom.2005.07.004), Tainter 2011 (doi 10.1016/j.eist.2010.12.001) and Tainter 2000 (doi 10.1023/a:1006632214612) are listed but closed: the publisher pages, Semantic Scholar and Unpaywall carry no abstract and no open copy. No Tainter row is made."
+    },
+    {
+      "register": "crossref",
+      "variables": {
+        "query.bibliographic": "Tainter The Collapse of Complex Societies",
+        "rows": "5"
+      },
+      "observedAt": "2026-10-08",
+      "count": 1127487,
+      "included": [],
+      "reading": "Tainter 1988 The Collapse of Complex Societies appears only as book reviews in the register (Trigger 1989, Jones 1989, Rousselle 1990, Bowersock 1991) and as Tainter and Patzek, Drilling Down (doi 10.1007/978-1-4419-7677-2); none read."
+    },
+    {
+      "register": "crossref",
+      "variables": {
+        "query.bibliographic": "Tainter Patzek Drilling Down: The Gulf Oil Debacle and Our Energy Dilemma",
+        "rows": "5"
+      },
+      "observedAt": "2026-10-08",
+      "count": 61718,
+      "included": [],
+      "reading": "Tainter and Patzek, Drilling Down (Springer 2012) is listed with chapters on the energy-complexity spiral; the book text was not reachable and no row is made."
+    },
+    {
+      "register": "crossref",
+      "variables": {
+        "query.bibliographic": "Turchin Nefedov Secular Cycles",
+        "rows": "5"
+      },
+      "observedAt": "2026-10-08",
+      "count": 136407,
+      "included": [],
+      "reading": "Secular Cycles (Princeton 2009) is listed; the book was not read, no row."
+    },
+    {
+      "register": "crossref",
+      "variables": {
+        "query.bibliographic": "marginal returns on investment in complexity declining sociopolitical collapse empirical test",
+        "rows": "5"
+      },
+      "observedAt": "2026-10-08",
+      "count": 1622004,
+      "included": [],
+      "reading": "No empirical test of marginal returns to complexity was readable; the one hit, a 2021 SSRN note on investments in societal complexity, was not read."
+    },
+    {
+      "register": "web",
+      "variables": {
+        "url": "https://www.haier.com/global/press-events/news/20150922_142614.shtml"
+      },
+      "observedAt": "2026-10-08",
+      "count": 1,
+      "included": [
+        "haier2015"
+      ],
+      "reading": "Haier press release, full text."
+    },
+    {
+      "register": "web",
+      "variables": {
+        "url": "https://www.haier.com/global/press-events/news/20160224_142598.shtml"
+      },
+      "observedAt": "2026-10-08",
+      "count": 1,
+      "included": [
+        "haier2016"
+      ],
+      "reading": "Haier news item on Gary Hamel’s February 2016 visit, full text."
+    },
+    {
+      "register": "web",
+      "variables": {
+        "url": "https://smart-home.haier.com/media/adrjuuk3/h24ar-report.pdf"
+      },
+      "observedAt": "2026-10-08",
+      "count": 1,
+      "included": [
+        "haierar2024"
+      ],
+      "reading": "Haier Smart Home Annual Report 2024, full text; contains no count of micro-enterprises."
+    },
+    {
+      "register": "web",
+      "variables": {
+        "url": "sites carrying the text of Tainter 1988 / 1996 chapter"
+      },
+      "observedAt": "2026-10-08",
+      "count": 0,
+      "included": [],
+      "reading": "dieoff.org (page134) now serves unrelated content and energyskeptic.com returned no text; no first-party Tainter text was reached."
+    }
+  ]
+}

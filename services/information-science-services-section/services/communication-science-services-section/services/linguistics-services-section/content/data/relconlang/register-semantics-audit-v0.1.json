@@ -1,0 +1,49 @@
+{
+  "kind": "lenticule.relconlang.register-semantics-audit",
+  "version": "0.1",
+  "status": "experimental-audit",
+  "sharedSubstrate": {
+    "carrier": "communicating.language-register-fiber",
+    "axes": [
+      "register",
+      "style",
+      "evidentiality",
+      "politeness",
+      "genre"
+    ],
+    "implication": "register and evidentiality are structurally distinct in the shared language algebra"
+  },
+  "currentRelConLang": {
+    "manifestRegisterFiber": "not populated",
+    "corpusLabels": [
+      "everyday",
+      "technical",
+      "proof",
+      "ritual"
+    ],
+    "tests": "fixture-level: trust register label, parse lines, then check selected constraints; no register inference or realization policy"
+  },
+  "issues": [
+    {
+      "register": "everyday",
+      "sourceRule": "fixture maxTokensPerLine=3",
+      "audit": "useful sample guardrail, explicitly documented as not a language law"
+    },
+    {
+      "register": "technical",
+      "sourceRule": "fixture requires provenance+locus+kind+aspect and uses ga/do",
+      "audit": "one maximally explicit example does not establish that every technical utterance must realize every oblique/aspect dimension"
+    },
+    {
+      "register": "proof",
+      "sourceRule": "fixture requires stable-charge + embedded-proposition + repair and begins sha",
+      "audit": "sha is the language's contradiction-held stance, not a generic proof/certainty marker; proof register should not force contradiction stance"
+    },
+    {
+      "register": "ritual",
+      "sourceRule": "tested structural parallelism plus a final ha-marked line",
+      "audit": "parallelism is a register/style property; ha remains a dialogue move and should not be required merely because speech is ritual"
+    }
+  ],
+  "conclusion": "Treat register as a realization/selection profile over independently modeled semantic coordinates. Do not let register labels fabricate stance, evidence, dialogue force, or proof status."
+}

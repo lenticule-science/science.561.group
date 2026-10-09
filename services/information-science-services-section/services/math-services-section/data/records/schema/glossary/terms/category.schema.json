@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "glossary/terms/category",
+  "title": "category",
+  "description": "Morphisms closed under an associative composition that has an identity on every object — the structure arrows assemble into. The objects are not primitive: they are recovered from the morphisms (an object is its hom-set, Yoneda). The corpus's canonical instance is the predicate-category, a Lawvere hyperdoctrine whose fibers are the bilattice FOUR.",
+  "type": "object",
+  "required": [
+    "morphisms",
+    "composition",
+    "identities",
+    "associativity"
+  ],
+  "properties": {
+    "morphisms": {
+      "description": "the arrows; a collection Hom(A, B) for every ordered pair of objects",
+      "$ref": "./morphism.schema.json"
+    },
+    "composition": {
+      "description": "associative combination of composable morphisms",
+      "$ref": "./composition.schema.json"
+    },
+    "identities": {
+      "description": "an identity morphism id_A for every object",
+      "$ref": "./identity-morphism.schema.json"
+    },
+    "associativity": {
+      "description": "composition is associative and unital — the two and only laws",
+      "const": true
+    }
+  }
+}

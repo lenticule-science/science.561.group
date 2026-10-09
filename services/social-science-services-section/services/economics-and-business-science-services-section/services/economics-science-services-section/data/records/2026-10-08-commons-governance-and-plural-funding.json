@@ -1,0 +1,430 @@
+{
+  "$schema": "../../../../../../../../data/records/schema/literature-measurement.schema.json",
+  "id": "commons-governance-and-plural-funding",
+  "kind": "literature-measurement",
+  "question": "What do tests of Ostrom's design principles and the empirical quadratic/plural funding studies establish?",
+  "frame": {
+    "population": "commons institutions; public-goods funding rounds",
+    "exposure": "Ostrom principles; quadratic funding; cluster matching",
+    "comparator": "unmatched donations; one-person-one-vote",
+    "outcomes": [
+      "principle-robustness",
+      "funding distribution",
+      "collusion and sybil resistance"
+    ]
+  },
+  "notes": [
+    "../../content/text/documents/articles/notes/2026/10/08/2026-10-08-commons-governance-and-plural-funding.md"
+  ],
+  "sources": [
+    {
+      "item": {
+        "id": "cox2010",
+        "type": "article-journal",
+        "title": "A review of design principles for community-based natural resource management",
+        "author": [
+          {
+            "family": "Cox",
+            "given": "Michael"
+          },
+          {
+            "family": "Arnold",
+            "given": "Gwen"
+          },
+          {
+            "family": "Villamayor Tomás",
+            "given": "Sergio"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2010
+            ]
+          ]
+        },
+        "container-title": "Ecology and Society 15(4):38",
+        "URL": "https://www.ecologyandsociety.org/vol15/iss4/art38/"
+      },
+      "findings": [
+        {
+          "finding": "Of 91 studies evaluating Ostrom’s eight design principles, the principles are well supported empirically; the mean support score was 3.73, slightly below \"moderately supportive\"; every principle had at least twice as many supportive as unsupportive cases; the nested enterprises principle was moderately supported and significant only at the 10 percent level.",
+          "exactSourceLanguage": "We analyzed 91 such studies to evaluate the principles empirically and to consider what theoretical issues have arisen since their introduction. We found that the principles are well supported empirically and that several important theoretical issues warrant discussion."
+        },
+        {
+          "finding": "The authors reformulate the principles, splitting several into sub-principles (user boundaries 1A and resource boundaries 1B; congruence with local conditions 2A; monitoring, collective choice, graduated sanctions, conflict resolution and nested enterprises retained).",
+          "exactSourceLanguage": "Table 4. List of proposed, modified design principles. Principle Description 1A User boundaries: Clear boundaries between legitimate users and nonusers must be clearly defined. 1B Resource boundaries"
+        }
+      ],
+      "readFrom": "full-text",
+      "observedAt": "2026-10-08",
+      "design": "systematic-review",
+      "n": 91,
+      "population": "91 studies and 77 coded cases of community-based natural resource management"
+    },
+    {
+      "item": {
+        "id": "buterin2019",
+        "type": "article-journal",
+        "title": "A flexible design for funding public goods",
+        "author": [
+          {
+            "family": "Buterin",
+            "given": "Vitalik"
+          },
+          {
+            "family": "Hitzig",
+            "given": "Zoë"
+          },
+          {
+            "family": "Weyl",
+            "given": "E. Glen"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2019
+            ]
+          ]
+        },
+        "container-title": "Management Science",
+        "DOI": "10.1287/mnsc.2019.3337",
+        "URL": "https://doi.org/10.1287/mnsc.2019.3337"
+      },
+      "findings": [
+        {
+          "finding": "The funding a project receives is proportional to the square of the sum of the square roots of contributions; under the standard model this yields first-best public goods provision.",
+          "exactSourceLanguage": "The amount received by the project is (proportional to) the square of the sum of the square roots of contributions received. Under the “standard model” this mechanism yields first best public goods provision."
+        },
+        {
+          "finding": "The capital-constrained variant mixes alpha of the quadratic rule with (1 minus alpha) of unmatched private contributions, so alpha can be set to keep any budget B from being exceeded.",
+          "exactSourceLanguage": "The first feature to note about ΦCQF is that for any budget B, α may be adjusted to ensure the budget is not exceeded."
+        },
+        {
+          "finding": "Gitcoin used the capital-constrained mechanism to dedicate $25,000 to open source software projects in February 2019.",
+          "exactSourceLanguage": "The organization Gitcoin used the CQF mechanism to dedicate $25,000 to open source software projects in February 2019"
+        }
+      ],
+      "readFrom": "full-text",
+      "observedAt": "2026-10-08",
+      "design": "theoretical",
+      "population": "citizens contributing to projects under a matching pool"
+    },
+    {
+      "item": {
+        "id": "pasquini2022",
+        "type": "manuscript",
+        "title": "Optimal allocation of limited funds in quadratic funding",
+        "author": [
+          {
+            "family": "Pasquini",
+            "given": "Ricardo A."
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2022
+            ]
+          ]
+        },
+        "container-title": "arXiv:2207.14775",
+        "URL": "https://arxiv.org/abs/2207.14775"
+      },
+      "findings": [
+        {
+          "finding": "A capital-constrained quadratic funding variant that distributes only the matching pool achieves a socially optimal allocation of limited funds.",
+          "exactSourceLanguage": "We show that this mechanism achieves a socially optimal allocation of limited funds."
+        }
+      ],
+      "readFrom": "abstract",
+      "observedAt": "2026-10-08",
+      "design": "theoretical"
+    },
+    {
+      "item": {
+        "id": "miller2023",
+        "type": "post-weblog",
+        "title": "Collusion resistance and plurality in quadratic mechanisms (paper summary)",
+        "author": [
+          {
+            "family": "Miller",
+            "given": "Joel"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2023
+            ]
+          ]
+        },
+        "container-title": "Ethereum Research",
+        "URL": "https://ethresear.ch/t/collusion-resistance-and-plurality-in-quadratic-mechanisms-paper-summary/14545"
+      },
+      "findings": [
+        {
+          "finding": "Collusion resistance is defined as diminishing returns for agents, for groups and for adding members: external matching must be O(sqrt x) for an agent or a group contributing x; cluster match lacks the first two, pairwise discounting lacks the third, offset match can eat a donation entirely.",
+          "exactSourceLanguage": "a group can contribute x collectively and get matching funds that grow linearly in x or faster"
+        },
+        {
+          "finding": "Connection-Oriented Cluster Match combines pairwise discounting and cluster match to satisfy all three properties; Eigen Match calibrates with eigenvectors of the social graph adjacency matrix; the analysis assumes accurate knowledge of group memberships.",
+          "exactSourceLanguage": "we were able to design a new mechanism, Connection Oriented Cluster Match, that essentially combines ideas from both Pairwise Discounting and Cluster Match to achieve all three of the sub-properties in our definition of collusion resistance"
+        }
+      ],
+      "readFrom": "forum-post",
+      "observedAt": "2026-10-08",
+      "design": "theoretical",
+      "notFound": [
+        "The SSRN paper (Miller, Weyl and Erichsen, December 2022) was not read."
+      ]
+    },
+    {
+      "item": {
+        "id": "miller2025",
+        "type": "paper-conference",
+        "title": "Fair decisions through plurality: results from a crowdfunding platform",
+        "author": [
+          {
+            "family": "Miller",
+            "given": "Joel"
+          },
+          {
+            "family": "Weyl",
+            "given": "E. Glen"
+          },
+          {
+            "family": "Kanich",
+            "given": "Chris"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025
+            ]
+          ]
+        },
+        "container-title": "EAAMO 2025",
+        "DOI": "10.1145/3757887.3763019",
+        "URL": "https://arxiv.org/abs/2509.18343"
+      },
+      "findings": [
+        {
+          "finding": "Connection-Oriented Quadratic Funding was adopted in 89 percent of Gitcoin’s grant-awarding ventures over one and a half years and distributed just over 4 million dollars, and performed better than plain QF in simulation on social welfare.",
+          "exactSourceLanguage": "CO-QF has achieved an 89% adoption rate at the platform and has distributed over $4 Million to date. In simulations we show that it provides better social welfare than QF."
+        },
+        {
+          "finding": "Stakeholders found plain QF funding results exceedingly flat and unclear in how good projects were prioritized; a round manager felt CO-QF reduced the effects of basic fraud and Sybil patterns although not designed primarily for that.",
+          "exactSourceLanguage": "it does reduce the effects of some basic fraud and Sybil attacks patterns"
+        }
+      ],
+      "readFrom": "full-text",
+      "observedAt": "2026-10-08",
+      "design": "field-experiment",
+      "n": 8,
+      "country": [
+        "US"
+      ],
+      "population": "Gitcoin: rounds with fixed subsidy pools of usually 50,000 to 200,000 dollars; eight non-employee round managers interviewed",
+      "notFound": [
+        "Counts of grantees and donors per round are not in the text read."
+      ]
+    },
+    {
+      "item": {
+        "id": "hanson2013",
+        "type": "article-journal",
+        "title": "Shall we vote on values, but bet on beliefs?",
+        "author": [
+          {
+            "family": "Hanson",
+            "given": "Robin"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2013
+            ]
+          ]
+        },
+        "container-title": "Journal of Political Philosophy",
+        "DOI": "10.1111/jopp.12008",
+        "URL": "https://doi.org/10.1111/jopp.12008"
+      },
+      "findings": [
+        {
+          "finding": "Futarchy: elected representatives define a measure of national welfare; conditional markets on adopting or not adopting a proposed policy estimate its effect, and when markets clearly estimate an increase the policy becomes law.",
+          "exactSourceLanguage": "when speculative markets clearly estimate that a proposed policy would increase national welfare, that policy becomes law"
+        },
+        {
+          "finding": "Manipulators are noise traders and do not reduce average price accuracy, verified in theory, laboratory experiments and the field; a market that influences policy cannot be thin.",
+          "exactSourceLanguage": "Thus adding manipulators to speculative markets doesn’t reduce average price accuracy."
+        }
+      ],
+      "readFrom": "full-text",
+      "observedAt": "2026-10-08",
+      "design": "theoretical",
+      "notFound": [
+        "The author states he offers no formal model and no statistical analysis; no operating futarchy is measured in this paper."
+      ]
+    }
+  ],
+  "searches": [
+    {
+      "register": "crossref",
+      "variables": {
+        "query.bibliographic": "Cox Arnold Villamayor-Tomas review of design principles for community-based natural resource management",
+        "rows": "5"
+      },
+      "observedAt": "2026-10-08",
+      "count": 1656660,
+      "included": [
+        "cox2010"
+      ]
+    },
+    {
+      "register": "crossref",
+      "variables": {
+        "query.bibliographic": "Buterin Hitzig Weyl flexible design for funding public goods",
+        "rows": "5"
+      },
+      "observedAt": "2026-10-08",
+      "count": 4596430,
+      "included": [
+        "buterin2019"
+      ]
+    },
+    {
+      "register": "crossref",
+      "variables": {
+        "query.bibliographic": "Miller Weyl Erichsen beyond collusion resistance plural funding voting social information",
+        "rows": "5"
+      },
+      "observedAt": "2026-10-08",
+      "count": 133319,
+      "included": [
+        "miller2023"
+      ]
+    },
+    {
+      "register": "crossref",
+      "variables": {
+        "query.bibliographic": "Gitcoin grants quadratic funding empirical analysis",
+        "rows": "5"
+      },
+      "observedAt": "2026-10-08",
+      "count": 6926022,
+      "included": [],
+      "reading": "Crossref returns no Gitcoin quadratic funding study; the empirical study was found through the arXiv API (below)."
+    },
+    {
+      "register": "crossref",
+      "variables": {
+        "query.bibliographic": "Hanson shall we vote on values but bet on beliefs futarchy",
+        "rows": "5"
+      },
+      "observedAt": "2026-10-08",
+      "count": 833167,
+      "included": [
+        "hanson2013"
+      ]
+    },
+    {
+      "register": "crossref",
+      "variables": {
+        "query.bibliographic": "Graeber dead zones of the imagination interpretive labor",
+        "rows": "5"
+      },
+      "observedAt": "2026-10-08",
+      "count": 456802,
+      "included": [],
+      "reading": "Graeber, Dead zones of the imagination (HAU 2012, doi 10.14318/hau2.2.007) is listed; the publisher and journal sites returned HTTP 403 and a bot check, no open copy was reached, so no row is made. The house term interpretive-debt carries the concept."
+    },
+    {
+      "register": "crossref",
+      "variables": {
+        "query.bibliographic": "Ostrom Governing the Commons evolution of institutions for collective action",
+        "rows": "5"
+      },
+      "observedAt": "2026-10-08",
+      "count": 1805747,
+      "included": [],
+      "reading": "Ostrom, Governing the Commons (1990) is listed; the book was not reachable, and Ostrom’s principles are read through the Cox et al. 2010 test of them."
+    },
+    {
+      "register": "arxiv",
+      "variables": {
+        "search_query": "abs:\"quadratic funding\"",
+        "max_results": "15"
+      },
+      "observedAt": "2026-10-08",
+      "count": 3,
+      "included": [
+        "miller2025",
+        "pasquini2022"
+      ],
+      "reading": "Three arXiv records carry quadratic funding in the abstract; the Gitcoin empirical paper and the limited-funds optimality paper qualified."
+    },
+    {
+      "register": "web",
+      "variables": {
+        "url": "https://www.ecologyandsociety.org/vol15/iss4/art38/ES-2010-3704.pdf"
+      },
+      "observedAt": "2026-10-08",
+      "count": 1,
+      "included": [
+        "cox2010"
+      ],
+      "reading": "Full text."
+    },
+    {
+      "register": "web",
+      "variables": {
+        "url": "https://arxiv.org/abs/1809.06421"
+      },
+      "observedAt": "2026-10-08",
+      "count": 1,
+      "included": [
+        "buterin2019"
+      ],
+      "reading": "Full text."
+    },
+    {
+      "register": "web",
+      "variables": {
+        "url": "https://ethresear.ch/t/collusion-resistance-and-plurality-in-quadratic-mechanisms-paper-summary/14545"
+      },
+      "observedAt": "2026-10-08",
+      "count": 1,
+      "included": [
+        "miller2023"
+      ],
+      "reading": "Author summary post; the SSRN paper (abstract 4311507) was not read."
+    },
+    {
+      "register": "web",
+      "variables": {
+        "url": "https://mason.gmu.edu/~rhanson/futarchy2013.pdf"
+      },
+      "observedAt": "2026-10-08",
+      "count": 1,
+      "included": [
+        "hanson2013"
+      ],
+      "reading": "Author-hosted full text."
+    },
+    {
+      "register": "web",
+      "variables": {
+        "url": "https://roundoperations.gitcoin.co/round-operations/post-round/cluster-matching-and-csv-upload"
+      },
+      "observedAt": "2026-10-08",
+      "count": 0,
+      "included": [],
+      "reading": "Gitcoin round operations page did not load; the cluster-match description is taken from the author post and the Miller et al. 2025 paper."
+    }
+  ]
+}

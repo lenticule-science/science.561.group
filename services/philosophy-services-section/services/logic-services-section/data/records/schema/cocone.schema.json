@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://research-notes.561.group/hacking/library/predication-notes/composting/library/object/library/thing/library/category/library/cocone/cocone.schema.json",
+  "title": "Cocone",
+  "description": "JSON Schema for a cocone under a diagram — an object N together with a family of morphisms (legs) n_j : D(j) → N from each vertex of the diagram, such that for every morphism f : j → j' in the index category, n_{j'} ∘ D(f) = n_j (Mac Lane 1971 Ch. III §3). Dual to cone. Cocones are the candidate solutions for colimits; the colimit is the universal cocone.",
+  "type": "object",
+  "required": ["name", "cobase", "under-diagram", "legs"],
+  "properties": {
+    "name": { "$dynamicRef": "#name-shape" },
+    "cobase": {
+      "$dynamicRef": "#name-shape",
+      "description": "The cocone's cobase object N — the common target of all the legs."
+    },
+    "under-diagram": {
+      "$dynamicRef": "#name-shape",
+      "description": "The diagram D : J → C this cocone is under."
+    },
+    "legs": {
+      "type": "array",
+      "items": { "$dynamicRef": "#name-shape" },
+      "uniqueItems": true,
+      "minItems": 1,
+      "description": "The leg morphisms n_j : D(j) → N, one per object of the index category."
+    }
+  },
+  "unevaluatedProperties": false
+}

@@ -1,0 +1,57 @@
+{
+  "kind": "lenticule.relconlang.unmarked-stance-audit",
+  "version": "0.1",
+  "status": "candidate-resolved-no-explicit-stance",
+  "observations": [
+    {
+      "system": "RelConLang documentation/corpus",
+      "finding": "many ordinary clauses have no ta/na/sha/mu particle",
+      "implicitTaRuleFound": false
+    },
+    {
+      "system": "current @red-cup-engineering/signcraft RelConLang intake",
+      "finding": "parseLine initializes reading='potential' before checking for a stance particle",
+      "consequence": "an unmarked clause and explicit ta clause receive the same flat reading"
+    },
+    {
+      "system": "current SignCraft nuclei / SignCell evidence substrate",
+      "finding": "an absent valuation/evidence cell reads as absurd; evidence must be added to reach potential/active/stable",
+      "consequence": "potential is not the substrate's generic absence/default state"
+    }
+  ],
+  "competingModels": [
+    {
+      "id": "implicit-ta",
+      "rule": "absence of a stance particle grammatically means ta",
+      "consequence": "unmarked and ta-marked clauses are semantically stance-equivalent",
+      "evidence": "current SignCraft parser behavior",
+      "missing": "no recovered language specification explicitly states this rule"
+    },
+    {
+      "id": "no-explicit-stance",
+      "rule": "absence of a stance particle means no stance report is grammatically supplied",
+      "consequence": "the proposition may still be asserted by illocution, but stance profile is null/unspecified",
+      "evidence": "fits stance-report separation and SignCell evidence defaults"
+    },
+    {
+      "id": "assertion-default-separate-from-stance",
+      "rule": "ordinary clause assertion may create an assertive speech act or defeasible source report while stance remains unmarked",
+      "consequence": "default assertivity and explicit ta must not be identified automatically"
+    }
+  ],
+  "discriminatingAssays": [
+    "compare mi ga ran do kelu. with ta mi ga ran do kelu. under stance-report projection",
+    "test whether downstream behavior differs when explicit ta provenance is retained",
+    "ask realization plan whether omitting ta loses a semantic coordinate or is canonical zero-marking",
+    "explicit-vs-unmarked-stance-v0.1.json"
+  ],
+  "rule": "Do not treat current parser default potential as a language fact until one model is selected.",
+  "preferredModel": "no-explicit-stance",
+  "preferredInterpretation": "Zero marking supplies no explicit stance report. Ordinary assertion/illocution remains a separate question; current SignCraft potential default is an implementation projection, not the language's zero-marking semantics.",
+  "additionalEvidence": [
+    "grammar-reference uses optional [charge/dialogue] slot",
+    "lesson 01 instructs users to add a charge particle when they need to state how the claim is held",
+    "many ordinary corpus clauses are unmarked",
+    "2026-09-02 correction establishes ta=potential but does not establish implicit ta"
+  ]
+}

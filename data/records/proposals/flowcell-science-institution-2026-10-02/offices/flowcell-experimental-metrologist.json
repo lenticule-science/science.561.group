@@ -1,0 +1,27 @@
+{
+  "id": "flowcell-experimental-metrologist",
+  "name": "FlowCell experimental metrologist",
+  "kind": "office",
+  "normative-structure": "The office that answers for measurement comparability across FlowCell experiments: exact configurations, calibration, resource state, synchronized raw traces, uncertainty, fixture losses, replicates, and failed runs remain reconstructable before any morphology or material is compared.",
+  "deontic-profile": {
+    "measuring-flowcell-experiments-comparably": "duty"
+  },
+  "bears-duty": [
+    "emsenn/duty/measuring-flowcell-experiments-comparably"
+  ],
+  "provides-skill": [
+    "measure-flowcell-comparably"
+  ],
+  "jurisdiction": "lenticule-science",
+  "theory-basis": [
+    "emsenn/schema/office office-as-double-settlement and current deontic-profile law",
+    "FlowCell Science requirement ni:///sha-256;gRCQ64aIWRYi5-rb_IVjuvyw9q0UiJlAhoRc4zTinWA",
+    "FlowCell institution proposal ni:///sha-256;KFsjTfvLbMZJhoq9uZ1CDPEMjPkWzCyzIznyWZqrHOs",
+    "FlowCell scientific method: falsifiable assays, comparable metrology, negative-evidence retention, and bounded science-to-engineering qualification"
+  ],
+  "founded": "2026-10-01",
+  "x-provenance": {
+    "status": "draft-for-agency-admission",
+    "source-branch": "flowcell-institution-v0-1"
+  }
+}

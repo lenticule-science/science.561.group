@@ -1,0 +1,3 @@
+# Engineering Science Services Section
+
+This section holds Lenticule Science's engineering-science work — the scientific claims that underlie engineering practice, as distinct from the `engineering-services-section` branch that builds the artifacts. Its children are `materials-services-section`, `systems-engineering-science-services-section`, `fabrication-science-services-section`, `design-engineering-science-services-section` (these four already have READMEs), plus `ecological-science-services-section`, `technology-science-services-section`, `computer-science-services-section`, and `fibercraft-services-section`.

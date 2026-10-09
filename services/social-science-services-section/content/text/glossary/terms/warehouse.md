@@ -1,0 +1,55 @@
+---
+name: "Warehouse"
+date-created: 2026-03-08
+authors:
+  - claude
+aliases:
+  - "warehouses"
+keywords:
+  - DisasterStudies
+  - Logistics
+  - Infrastructure
+  - MutualAid
+description: "A storage and coordination site where incoming goods are received, sorted, held, and redistributed during disaster response."
+cites:
+  - wachtendorf2010
+  - watters2014
+references:
+  wachtendorf2010:
+    authors:
+      - Tricia Wachtendorf
+      - Bethany Brown
+      - Jose Holguin-Veras
+      - Satish Ukkusuri
+    title: "Catastrophe Characteristics and Their Impact on Critical Supply Chains: Problematizing Material Convergence and Management Following Hurricane Katrina"
+    year: 2010
+    publication: Disaster Research Center
+    url: https://udspace.udel.edu/items/d050fc11-cbbe-4ded-b4dd-79c3257e871c
+  watters2014:
+    authors:
+      - Siobhan Watters
+    title: Mutual Aid and Distribution in Occupy Sandy
+    year: 2014
+    publication: MIT 3874G lecture manuscript
+    url: https://mutualaiddisasterrelief.org/wp-content/uploads/2019/11/Mutual_Aid_and_Distribution_in_Occupy_Sandy.pdf
+tags:
+  - disaster-studies
+  - logistics
+  - infrastructure
+  - mutual-aid
+---
+
+A warehouse is a storage and coordination site where incoming goods are received, sorted, held, and redistributed during disaster response [@wachtendorf2010; @watters2014].
+
+Within emergent disaster response, the term matters because donated and converged materials become useful only if there is a place where they can be made legible and movable.
+Warehouses are therefore not merely storage containers.
+They are operational sites where classification, prioritization, and routing occur.
+
+A warehouse can be temporary, improvised, or embedded inside a larger [mutual aid hub](mutual-aid-hub.md).
+What defines it is its function in the logistics chain, not whether it looks like a formal facility.
+
+## Related terms
+
+- [Resource Cataloging](resource-cataloging.md) - the practice that makes stored goods legible and retrievable
+- [Dispatch](dispatch.md) - the coordination practice that moves goods out of storage toward need
+- [Supply Sorting and Resource Routing in Emergent Disaster Response](../../../../services/sociology-science-services-section/services/critical-theory-science-services-section/services/anarchism-services-section/services/disaster-response-services-section/services/emergent-disaster-response-services-section/content/text/documents/articles/notes/supply-sorting-and-resource-routing-in-emergent-disaster-response.md) - a wider text on the logistics problem warehouses help solve

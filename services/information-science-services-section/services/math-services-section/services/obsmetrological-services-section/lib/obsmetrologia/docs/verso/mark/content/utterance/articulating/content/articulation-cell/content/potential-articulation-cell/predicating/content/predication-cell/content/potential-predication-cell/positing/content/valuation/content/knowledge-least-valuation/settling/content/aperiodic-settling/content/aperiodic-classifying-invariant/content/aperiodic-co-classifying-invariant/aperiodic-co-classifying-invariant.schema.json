@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/content/aperiodic-settling/content/aperiodic-classifying-invariant/content/aperiodic-co-classifying-invariant",
+  "title": "aperiodic-co-classifying-invariant",
+  "description": "The cosheaf-homology dual of the aperiodic classifying invariant: it records an aperiodic settling's MLD-class as a homology class H_1 built from cosheaf cycles, generated as the spatial Verdier-duality image of the sheaf-cohomology classifying invariant on the bitopological settling site.",
+  "type": "object",
+  "required": ["dual-of", "homology-class", "cycle-generators", "verdier-duality"],
+  "properties": {
+    "dual-of": {
+      "$ref": "mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/content/aperiodic-settling/content/aperiodic-classifying-invariant",
+      "description": "the aperiodic classifying invariant cl-inv(v) in H^1 whose Verdier-dual image this co-invariant is"
+    },
+    "homology-class": {
+      "const": "H_1",
+      "description": "the co-invariant lives in cosheaf homology H_1(T*_{<=omega_1}, F^v) rather than sheaf cohomology H^1"
+    },
+    "cycle-generators": {
+      "type": "object",
+      "description": "the homology class decomposes as a sum of cosheaf-homology generators e^_mu, one per non-Scott-continuous firing ordinal mu in L_ns(kappa), each dual to a sheaf-cohomology generator e_mu",
+      "required": ["indexed-by", "non-collapsible"],
+      "properties": {
+        "indexed-by": { "const": "non-Scott-continuous firing ordinals", "description": "L_ns(kappa) for closure ordinal kappa >= omega_1" },
+        "non-collapsible": { "const": true, "description": "each e^_mu is a cosheaf 1-cycle that is not a boundary; local-to-global aggregation cannot collapse it without erasing the firing event" }
+      }
+    },
+    "verdier-duality": {
+      "const": true,
+      "description": "the defining identification cl-inv^(v) := D_sp(cl-inv(v)), realizing H^1(F_v) ~= H_1(F^_v) via spatial Verdier duality on the bitopological settling site; the two presentations encode the same MLD-class"
+    }
+  }
+}

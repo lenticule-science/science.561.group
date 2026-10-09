@@ -1,0 +1,120 @@
+{
+  "kind": "lenticule.relconlang.dual-parser-differential-assay",
+  "version": "0.1",
+  "status": "experimental",
+  "instruments": [
+    {
+      "id": "shared-communicating",
+      "package": "@red-cup-engineering/communicating",
+      "character": "language-neutral compiled-bundle dependency parser",
+      "strengths": [
+        "shared grammar profiles",
+        "parse forests",
+        "charged grammatical hypotheses",
+        "generic semantics/discourse readers"
+      ],
+      "currentRelConLangWeaknesses": [
+        "legacy lexical buckets for particles",
+        "Proposal.rule provenance dropped",
+        "witnessJournal not compiled into proposition stance",
+        "surface verb retained by generic semantic readers"
+      ]
+    },
+    {
+      "id": "signcraft-relconlang",
+      "package": "@red-cup-engineering/signcraft/inference/relconlang",
+      "character": "strict language-specific normalized event-row parser",
+      "strengths": [
+        "declared lexeme admission",
+        "canonical verb root",
+        "separate aspect",
+        "clause reading",
+        "explicit oblique attributes",
+        "ccomp event links",
+        "dialogue move row"
+      ],
+      "currentRelConLangWeaknesses": [
+        "hard-coded lexicon/particles",
+        "ta/na collapse before richer Chu profile is retained",
+        "no speaker/addressee deixis",
+        "no cross-turn relevance inference"
+      ]
+    }
+  ],
+  "cases": [
+    {
+      "text": "ta mi ga ran-en do kelu.",
+      "compare": [
+        "acceptance",
+        "spurious det arcs",
+        "canonical predicate",
+        "aspect",
+        "clause stance/profile",
+        "role-license provenance"
+      ]
+    },
+    {
+      "text": "sava pa na mi ga dav do luma.",
+      "compare": [
+        "fronted provenance",
+        "stance profile vs aggregate",
+        "predicate identity",
+        "semantic oblique retention"
+      ]
+    },
+    {
+      "text": "mi ga vom do ve tu ga ran do sava.",
+      "compare": [
+        "ccomp structure",
+        "matrix predicate identity",
+        "embedded-event identity",
+        "object-null convention",
+        "logical-form preservation"
+      ]
+    },
+    {
+      "text": "ku tu ga kan do kano?",
+      "compare": [
+        "coarse illocutionary family",
+        "fine dialogue move",
+        "deictic argument unresolvedness",
+        "proposition nucleus"
+      ]
+    },
+    {
+      "text": "blarg-um ga ran do kelu.",
+      "compare": [
+        "unknown lexical admission",
+        "regex morphology leakage",
+        "strict refusal"
+      ]
+    },
+    {
+      "text": "sava pa na mi ga dav do luma.",
+      "compare": [
+        "prefield order",
+        "fronted provenance",
+        "stance placement",
+        "accept/refuse",
+        "scope preservation"
+      ],
+      "predicted": {
+        "sharedCommunicating": "accept",
+        "signcraft": "refuse under current parseLine/parseClause control flow"
+      },
+      "significance": "documented stance-system example exposes a real grammar divergence between current instruments"
+    }
+  ],
+  "outputs": [
+    "accepted/refused",
+    "surface tags/features",
+    "dependency arcs + licensing provenance",
+    "normalized event rows",
+    "proposition nucleus",
+    "stance Chu profile",
+    "aggregate FOUR reading",
+    "dialogue move",
+    "unresolved deictic bindings"
+  ],
+  "goal": "Identify a minimal shared semantic contract while preserving the different experimental purposes of the two parsers; do not merge implementations merely to eliminate duplication."
+}

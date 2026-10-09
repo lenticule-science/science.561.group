@@ -1,0 +1,50 @@
+---
+name: "Therapeutic Index"
+description: "The ratio between the dose that produces toxicity and the dose that produces therapeutic effect, quantifying a drug's margin of safety"
+date-created: 2026-03-06
+authors:
+  - claude-opus-4-6
+aliases:
+  - "therapeutic index"
+  - "therapeutic window"
+  - "margin of safety"
+keywords:
+  - Pharmacology
+measures: [pharmacodynamics, dose-response-relationships]
+governed-by: [half-life, drug-interaction, bioavailability]
+enables: [harm-reduction, naloxone-distribution, drug-checking, safe-supply]
+governs: [dosing-protocol, therapeutic-drug-monitoring]
+---
+
+The **therapeutic index** (TI) is the ratio between the dose of a drug that produces toxicity and the dose that produces the desired therapeutic effect. A drug with a wide therapeutic index (TI = 100) is relatively safe — there is a large margin between the dose that helps and the dose that harms. A drug with a narrow therapeutic index (TI = 2) is dangerous — the dose that helps is close to the dose that kills.
+
+More precisely, the therapeutic index is defined as:
+
+> TI = TD₅₀ / ED₅₀
+
+Where TD₅₀ is the dose that produces toxicity in 50% of the population and ED₅₀ is the dose that produces the desired effect in 50% of the population.
+
+## Clinical significance
+
+Drugs with narrow therapeutic indices require careful dosing, frequent monitoring, and heightened awareness of factors that alter drug levels:
+
+- **Digoxin** (cardiac glycoside) — the therapeutic range is 0.8-2.0 ng/mL; toxicity (life-threatening arrhythmias) occurs just above this range. Renal impairment, electrolyte disturbances (hypokalemia, hypomagnesemia), and [drug interactions](./drug-interaction.md) can push levels into the toxic range at standard doses.
+- **Warfarin** (anticoagulant) — the therapeutic range requires regular monitoring (INR testing) because genetic variation in CYP2C9 and VKORC1, dietary vitamin K intake, and innumerable drug interactions produce wide inter-patient variability in response.
+- **Lithium** (mood stabilizer) — therapeutic range 0.6-1.2 mEq/L; toxicity begins at 1.5 mEq/L. Dehydration, renal impairment, and sodium restriction all raise lithium levels.
+- **Opioids** — the therapeutic index varies by drug and tolerance status. In opioid-naive patients, the margin between analgesia and respiratory depression is narrow. In tolerant patients, tolerance to analgesia and tolerance to respiratory depression develop at different rates — the patient needs higher doses for pain relief while their protection against respiratory depression has not increased proportionally.
+
+## The therapeutic index and harm reduction
+
+The therapeutic index provides the pharmacological basis for understanding overdose risk — and for [harm reduction](../../../../../public-health-services-section/content/text/glossary/terms/harm-reduction.md) interventions:
+
+**Naloxone distribution** works because opioid antagonists have extremely wide therapeutic indices. Naloxone can be administered to someone suspected of opioid overdose with minimal risk of harm if the person is not actually experiencing opioid toxicity. The cost of unnecessary naloxone is low; the cost of withholding it is death.
+
+**Drug checking services** (testing substances for composition and potency) reduce harm by providing information about what people are actually consuming. When the illicit drug supply contains fentanyl (which has a narrower therapeutic index than heroin), users who expect heroin potency and receive fentanyl potency die from the pharmacological mismatch. Knowing what is in the supply allows users to adjust their dosing — a harm reduction application of therapeutic index reasoning.
+
+**Safe supply programs** address the therapeutic index problem at the structural level: by providing pharmaceutical-grade substances of known potency, they eliminate the variability in the illicit supply that makes dosing impossible to calibrate.
+
+## Related terms
+
+- [Pharmacodynamics](./pharmacodynamics.md) — the mechanisms through which therapeutic and toxic effects are produced
+- [Half-Life](./half-life.md) — determines accumulation, which can narrow the effective therapeutic index
+- [Drug Interaction](./drug-interaction.md) — interactions can alter drug levels and narrow the margin of safety

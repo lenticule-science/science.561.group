@@ -1,0 +1,26 @@
+\section{Reindexing: the fibration}
+
+This section records claim nodes and dependency edges.
+
+\begin{proposition}[Knowledge-meet of valuations]\label{thm:valuation-meetK}\lean{Obsmetrologia.Valuation.meetK}\leanok\uses{thm:valuation, thm:four-bilattice}
+For valuations $v, w$, the pointwise knowledge-meet $\texttt{meetK}\,v\,w$ sends
+each cell $\varphi$ to the \texttt{Charge} knowledge-meet $v\,\varphi \sqcap_k
+w\,\varphi$. It is the companion to the knowledge-join and supplies the
+conjunction that Frobenius reciprocity will preserve.
+\end{proposition}
+\begin{proposition}[Reindexing]\label{thm:reindex}\lean{Obsmetrologia.Valuation.reindex}\leanok\uses{thm:valuation, thm:predication, thm:four-bilattice}
+Reindexing along a base map $r$ on predication cells acts on valuations by
+precomposition, $\texttt{reindex}\,r\,v = v \circ r$, i.e.\ $(r^{*}v)(\varphi) =
+v(r\,\varphi)$. This is the substitution functor of the fibration: it carries no
+free data, being nothing but composition with the base map.
+\end{proposition}
+\begin{theorem}[Contravariant functoriality]\label{thm:reindex-comp}\lean{Obsmetrologia.Valuation.reindex_comp}\leanok\uses{thm:reindex}
+Reindexing is contravariantly functorial: $r^{*}(s^{*}v) = (s\circ r)^{*}v$, and
+$\texttt{id}^{*} = \texttt{id}$. The fibers thus assemble into a genuine
+indexed family over the base.
+\end{theorem}
+\begin{theorem}[Monotonicity]\label{thm:reindex-mono}\lean{Obsmetrologia.Valuation.reindex_mono}\leanok\uses{thm:reindex, thm:valuation, thm:four-bilattice}
+Reindexing is monotone in the knowledge order: if $v \le_k w$ then $r^{*}v \le_k
+r^{*}w$. Each $r^{*}$ is therefore a morphism of the knowledge-ordered fibers,
+the prerequisite for it to possess order-adjoints.
+\end{theorem}

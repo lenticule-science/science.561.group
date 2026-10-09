@@ -1,0 +1,108 @@
+           __________________________________________________
+
+             CONJECTURING AFFECT AND LIBIDINAL ECONOMIES AS
+                  COMPLEMENTARY POSTLIBERAL COMPLEXES
+
+                                 emsenn
+           __________________________________________________
+
+
+                         [2025-09-29 Mon 17:40]
+
+
+Considering [On Fediverse narrating contradictions into aesthetic cruel
+optimism], if we consider [postliberal cybernetics] as the analytical
+frame, then I might say:
+
+The [affect economy] and [libidinal economy] are [complementary
+postliberal complexes] that [process] [experience] into [liberal
+subjectivity].
+
+By complementary complexes, I mean two distinct but interdependent
+[postliberal complexes] acting in response to the same [pressures]: the
+libidinal economy incites investment in response to [desiring], the
+affect economy orients feedback, and together they stabilize the
+[postliberal circuit of liberal subjectivity].
+
+I think I'm drawing most on [Jean-François Lyotard]'s [Libidinal
+Economy], which explicitly treats [libido] as an [energetic flow] that
+moves through [social] and [economic systems], but I'm also influenced
+by [Jacques Lacan], who discussed desire not as a lack to be filled but
+a circulating structural function of investing in the [Other], and [A
+Thousand Plateaus], which also rejected [Freudian lack] to look at
+[generative desiring]. The three share the claim that desire is not
+simply personal or interior, but circulates through system, and those
+systems are animated and sustained by that circulation.
+
+Looking at the [Fediverse], we can say that these investments are in a
+sense of preserving ethics, cultivating them in community, and doing it
+([using social media]) "right:" the desire is routed into a system that
+generates it into an [affect of ethicalness], which is shaped by the
+[feeling rules of the Fediverse].
+
+On [Twitter], the same desire is captured the enjoyment of competing for
+visibility, and the system regulates toward that [affective of
+virality].
+
+
+[On Fediverse narrating contradictions into aesthetic cruel optimism]
+See file babble-20250720094800-0500.org
+
+[postliberal cybernetics] See file postliberal-cybernetics.org
+
+[affect economy] See file affect-economy.org
+
+[libidinal economy] See file libidinal-economy.org
+
+[complementary postliberal complexes] See file
+complementary-postliberal-complex.org
+
+[process] See file postliberal-processing.org
+
+[experience] See file experience.org
+
+[liberal subjectivity] See file liberal-subjectivity.org
+
+[postliberal complexes] See file postliberal-complex.org
+
+[pressures] See file postliberal-pressure.org
+
+[desiring] See file desiring.org
+
+[postliberal circuit of liberal subjectivity] See file
+postliberal-circuit-of-liberal-subjectivity.org
+
+[Jean-François Lyotard] See file jean-francois-lyotard.org
+
+[Libidinal Economy] See file libidinal-economy.org
+
+[libido] See file libido.org
+
+[energetic flow] See file energetic-flow.org
+
+[social] See file social-system.org
+
+[economic systems] See file economic-system.org
+
+[Jacques Lacan] See file jacques-lacan.org
+
+[Other] See file other.org
+
+[A Thousand Plateaus] See file a-thousand-plateaus.org
+
+[Freudian lack] See file freudian-lack.org
+
+[generative desiring] See file generative-desiring.org
+
+[Fediverse] See file fediverse.org
+
+[using social media] See file using-social-media.org
+
+[affect of ethicalness] See file affect-of-ethicalness.org
+
+[feeling rules of the Fediverse] See file
+feeling-rules-of-the-fediverse.org
+
+[Twitter] See file twitter.org
+
+[affective of virality] See file affective-of-virality.org

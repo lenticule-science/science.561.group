@@ -1,0 +1,50 @@
+{
+  "date": "2026-09-10",
+  "task": "make glossary/terms carriers admit through the house term-engineering-services-section (@red-cup-engineering/term-engineering-services-section, apps/term-cli.mjs recognize/admit) instead of only reading as plausible Markdown",
+  "section_root": "/home/emsenn/info/lib/emsenn/services/561-group/services/science-services-section/services/philosophy-services-section/services/relationality-services-section",
+  "tool": "engineering-services-section/.../term-engineering-services-section (74/74 of its own tests pass; verified by running them before relying on it). recognizeTermMarkdown()/admitTermMarkdown() from src/term-carrier.mjs, called directly and via the term CLI, both agree.",
+  "baseline": "159 glossary/terms/*.md, 89 admitted cleanly, 70 refused.",
+  "after": "158 files (vanonic-python-engine.md relocated out, see below), 97 admitted cleanly, 61 refused.",
+  "fixes_applied": [
+    {
+      "kind": "key rename: informal predicate -> the house's authorized relation-predicate vocabulary (data/records/schema/glossary/term/relation-predicates.json in the term-engineering-services-section), matched against ontology.ttl's own naming for the same relations (rel:derivesFrom, rel:produces)",
+      "arises-from -> derives-from": ["relating.md", "false.md", "true.md"],
+      "emerges-from -> derives-from": ["recursive-collapse-closure-theorem.md"],
+      "induces -> produces / induced by -> produced-by": [
+        "recursive-critique-re-entry-function.md", "recursive-emergence-bifurcation-function.md", "recursive-modulation-evaluation-function.md",
+        "recursive-negentropic-convergence-potential.md", "recursive-symbolic-reflexivity-function.md", "semantic-differentiation-predicate.md",
+        "stabilization-depth-function.md", "stabilize-time-crystale-recursion.md", "symbolic-forgiveness-function.md",
+        "terminal-constraint-adjacency-field.md", "trace-echo-set-function.md",
+        "recursive-constraint-modulation-function.md", "recursive-identity-closure-function.md", "recursive-modulation-substrate-detector.md",
+        "recursive-symbolic-belief-field-function.md", "recursive-symbolic-grammar-function.md", "recursive-symbolic-modulation-resolution-function.md",
+        "resolve-symbolic-mismatch-through-recursive-reinterpretation.md", "stabilize-persistent-unresolved-modulation.md",
+        "stabilize-resolution-through-constraint-mismatch.md", "symbolic-modulation-attractor-function.md", "symbolic-modulation-prediction-function.md"
+      ],
+      "inductors -> produced-by": ["recursive-constraint-closure-predicate.md"],
+      "implements -> instance-of": ["relational-codomain.md", "relational-domain.md", "relational-source.md", "relational-target.md"]
+    },
+    {
+      "kind": "structural repair: a broken double-frontmatter shape (`---\\n\\n# <name>.md\\n\\n---\\n<real frontmatter>\\n---`) that made the real frontmatter unparseable as YAML (the parser saw the bare H1 line as the whole frontmatter document, which is not a mapping). The spurious first delimiter pair plus its H1 (which only ever repeated the `name:` field with a literal `.md` suffix -- no unique content) was removed, leaving the real frontmatter block that already followed as the file's one frontmatter.",
+      "files": [
+        "recursive-constraint-modulation-function.md", "recursive-identity-closure-function.md", "recursive-modulation-substrate-detector.md",
+        "recursive-symbolic-belief-field-function.md", "recursive-symbolic-grammar-function.md", "recursive-symbolic-modulation-resolution-function.md",
+        "resolve-symbolic-mismatch-through-recursive-reinterpretation.md", "stabilize-persistent-unresolved-modulation.md",
+        "stabilize-resolution-through-constraint-mismatch.md", "symbolic-modulation-attractor-function.md", "symbolic-modulation-prediction-function.md"
+      ]
+    },
+    {
+      "kind": "misfiled-carrier relocation",
+      "file": "vanonic-python-engine.md",
+      "finding": "Its frontmatter was corrupted by an unescaped code-fence value (`description: ```python`), which broke everything after it. Recovering the real content showed it is not a term at all -- a runnable Python class simulation (Vanon/VanonicModulationEngine), no definition, no distinction, no consequence, just source code with a __main__ demo block.",
+      "action": "Removed the corrupted glossary/terms copy. content/text/triage/vanonic-python-engine.md already held the same Python content under its own, correctly-formed frontmatter (title/date-created) -- confirmed by diff before acting, so nothing was lost. (First attempt overwrote that triage file with the corrupted frontmatter via a careless `mv` fallback; caught immediately via `git status`/`git diff` and reverted with `git checkout` before this was committed.)"
+    }
+  ],
+  "left_alone_with_reason": [
+    { "keys": ["symbol", "domains", "codomain", "function-type", "function-name", "operator"], "count_files": "~15", "reason": "A coherent, consistently-used mathematical function-signature schema (symbol/domain/codomain of a named function) with no slot in the term-engineering-services-section's TERM_KEYS/CARRIER_METADATA_KEYS. Real information; not this section's schema to extend unilaterally -- that engine has its own owner and custody." },
+    { "keys": ["theorem-field", "stabilized-equation", "establishes", "scope"], "files": ["recursive-collapse-closure-theorem.md", "stabilized-propagation-and-field-differentiation-from-trace.md"], "reason": "Same kind of gap: structured theorem-statement metadata, no schema slot, not guessed into a lossy substitute." },
+    { "keys": ["identity kebab-case"], "count_files": 21, "reason": "Every instance is a `*--archive-2026-08-17.md` file: the section's own established historical-archive naming convention for a superseded draft kept beside its live counterpart (contemporarySurvey in the 2026-08-31 campaign record already counted these as archivePairs: 24). Not live terms; not this repair's business to make them admit." },
+    { "keys": ["describes", "grounding", "superseded-by", "composes/specified-by/pursuer/etymology", "minimum-math", "derivative-status/derivative-stabilized-on", "history", "structure-type/date-introduced/derived-in"], "files": ["relational-entity.md", "relational-operation.md", "relational-unit.md", "endeavor.md", "lean.md", "oldreflex.md", "deriving-tension.md", "reflexive-relational-depth.md"], "reason": "Single-file, low-count custom keys with no confident 1:1 authorized-predicate match. relational-unit.md in particular is a deliberate, well-written supersession tombstone (RelationalUnit renamed to RelationalEntity, self-documents why) -- correct as it stands, not a defect to paper over with a guessed relation key." },
+    { "finding": "circular-definition: term body must define its concept, not only its position in a compound", "file": "relation.md", "reason": "False positive: the check's regex (`\\b(?:constituent|component|word)\\s+of\\b`) matched the unrelated phrase 'a foundational component of all higher-order dynamics' inside the Consolidated triage formulation trailer. relation.md's main body is a full, thorough primitive definition -- not touching the content to satisfy a heuristic's false match." }
+  ],
+  "verification": "npm test in this package (11/11 pass); apps/term-cli.mjs recognize run directly (not just the direct-import survey script) against every file this repair touched, confirming the intended finding disappeared and no new one appeared."
+}

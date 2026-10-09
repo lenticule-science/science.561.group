@@ -1,0 +1,23 @@
+---
+title: "Elinor Ostrom"
+description: "American political scientist (1933-2012). Her fieldwork-based analysis of how groups govern shared resources without privatization or central state control won her the 2009 Nobel Memorial Prize in Economic Sciences, the first awarded to a woman."
+date-created: 2026-09-05
+---
+
+Elinor Ostrom (1933-2012) was an American political scientist who spent her career studying how real communities — irrigation systems, fisheries, forests, grazing commons — govern resources that are costly to exclude anyone from and that one user's taking depletes for others. Against the presumption that such resources are doomed to overuse unless privatized or handed to a central authority, she assembled case evidence showing that groups of users regularly build durable institutions that sustain the resource themselves. The work won her the 2009 Nobel Memorial Prize in Economic Sciences, shared with Oliver Williamson, making her the first woman to receive it.
+
+## Core ideas
+
+- **The eight design principles.** Comparing long-enduring commons institutions across many settings, Ostrom identified recurring features of the ones that lasted: clearly defined boundaries on the resource and its users; rules for provision and appropriation matched to local conditions; collective-choice arrangements letting most users affect the rules; monitoring, by the users or someone accountable to them; graduated sanctions for rule violation; low-cost, accessible conflict-resolution mechanisms; at least minimal recognition of the users' right to organize by outside authorities; and, for resources that are part of larger systems, nested layers of governance.
+- **Against the inevitability of the tragedy of the commons.** Garrett Hardin's 1968 argument treated overuse of a shared resource as the automatic outcome of individually rational behavior, with privatization or state control as the only exits. Ostrom's case evidence showed a third path was common in practice: self-organized governance by the resource's own users, without either exit, sustained over long periods.
+- **Polycentric governance.** Developed with Vincent Ostrom, the idea that complex systems are often governed well not by one central authority but by many formally independent decision-making centers operating at different scales, which interact through both competition and cooperation and can correct one another's failures.
+- **No panacea.** No single institutional form — market, private property, or centralized state regulation — is universally the right fit for governing a shared resource. What works depends on the resource's physical characteristics and the social conditions of its users, which is why the design principles are drawn from comparison across cases rather than derived from one preferred model.
+
+## Key works
+
+- *Governing the Commons: The Evolution of Institutions for Collective Action* (1990)
+- "Beyond Markets and States: Polycentric Governance of Complex Economic Systems" (2010, Nobel lecture, *American Economic Review*)
+
+## Where their work figures in this library
+
+Ostrom's case for self-governed, non-privatized management of shared resources is the [common-pool resource](../../../../../services/social-science-services-section/services/economics-and-business-science-services-section/services/economics-science-services-section/content/text/glossary/terms/common-pool-resource.md) concept this library uses, and sits at the head of the [cooperative finance](../../../../../services/social-science-services-section/services/economics-and-business-science-services-section/services/economics-science-services-section/content/text/glossary/topics/cooperative-finance.md) topic against which the rotating-credit-association literature is read. Her answer to [Hardin (1968)](../../../../../services/social-science-services-section/services/economics-and-business-science-services-section/services/economics-science-services-section/content/text/documents/articles/bibliographies/hardin1968.md) is cited directly in [Ostrom (1990)](../../../../../services/social-science-services-section/services/economics-and-business-science-services-section/services/economics-science-services-section/content/text/documents/articles/bibliographies/ostrom1990.md), and both inform the house's [note on the pool as a priced rotating credit association](../../../../../services/social-science-services-section/services/economics-and-business-science-services-section/services/economics-science-services-section/content/text/documents/articles/notes/2026/09/05/2026-09-05-note-on-the-pool-as-a-priced-rotating-credit-association.md).

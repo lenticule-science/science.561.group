@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mark/content/utterance/articulating/content/articulation-cell/content/stable-articulation-cell",
+  "title": "stable-articulation-cell",
+  "description": "The corner of the articulation-cell partition where both token and claim are articulated (yes, yes), told both - the terminus of the token-before-claim progression. Absorbing: no further telling moves the cell. It refines the articulation cell by fixing both statuses positive.",
+  "allOf": [
+    { "$ref": "mark/content/utterance/articulating/content/articulation-cell" }
+  ],
+  "type": "object",
+  "required": ["token", "claim"],
+  "properties": {
+    "token": { "const": true, "description": "the identity-carrying token side is articulated" },
+    "claim": { "const": true, "description": "the content-carrying claim side is articulated" }
+  }
+}

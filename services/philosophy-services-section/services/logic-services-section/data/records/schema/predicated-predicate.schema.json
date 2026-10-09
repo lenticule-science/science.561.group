@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://research-notes.561.group/hacking/library/predication-notes/composting/library/predication-cell-set/library/predication-cell/library/predicated-predicate/predicated-predicate.schema.json",
+  "title": "Predicated predicate",
+  "description": "A predicate in the role of the second coordinate of a predication cell — the typed coordinate that indexes which fiber algebra A_p the cell's value lives in. Derives from predicate by positional role: structurally a predicated-predicate is a predicate (an object of the small predicate-category C), and the role is fixed by this schema's $id. The data shape is therefore exactly predicate's data shape, expressed as a $ref. The name is 'predicated-predicate' for symmetry with library/predicated-subject and library/predicated-object — the three together name the typed coordinates of a predication-cell at the cell-handling kernel surface.",
+  "$ref": "https://research-notes.561.group/hacking/library/predication-notes/object/library/thing/library/category/library/predicate-category/library/predicate/predicate.schema.json"
+}

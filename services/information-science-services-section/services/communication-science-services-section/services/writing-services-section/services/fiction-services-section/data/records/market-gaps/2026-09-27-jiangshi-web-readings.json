@@ -1,0 +1,162 @@
+{
+  "type": "MarketGapReadings",
+  "version": 1,
+  "study": "science-services-section/services/information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/fiction-services-section/data/records/market-gaps/2026-09-27-jiangshi-web.json",
+  "question": "Where does a work set in the Jiangshi Web paracosm (near-future AI, Chinese folklore and Daoist cosmology, climate breakdown, horror turning to a new xianxia) meet readers, and in which forms: a literary novel, a serial, a Mandarin original?",
+  "works": 14,
+  "readings": [
+    {
+      "id": "literary-horror-jiangshi-web",
+      "wants": [
+        "english-original",
+        "literary",
+        "horror",
+        "near-future",
+        "ai-central",
+        "chinese-folklore"
+      ],
+      "witnessed": [],
+      "agenda": [],
+      "missing": [
+        {
+          "dropped": "english-original",
+          "supply": []
+        },
+        {
+          "dropped": "literary",
+          "supply": []
+        },
+        {
+          "dropped": "horror",
+          "supply": []
+        },
+        {
+          "dropped": "near-future",
+          "supply": []
+        },
+        {
+          "dropped": "ai-central",
+          "supply": []
+        },
+        {
+          "dropped": "chinese-folklore",
+          "supply": []
+        }
+      ],
+      "gap": "true",
+      "demand": "both",
+      "evidence": {
+        "for": 3,
+        "against": 1
+      }
+    },
+    {
+      "id": "cultivation-horror-serial",
+      "wants": [
+        "serialized",
+        "progression",
+        "horror",
+        "chinese-folklore",
+        "near-future",
+        "ai-central"
+      ],
+      "witnessed": [],
+      "agenda": [],
+      "missing": [
+        {
+          "dropped": "serialized",
+          "supply": []
+        },
+        {
+          "dropped": "progression",
+          "supply": []
+        },
+        {
+          "dropped": "horror",
+          "supply": []
+        },
+        {
+          "dropped": "chinese-folklore",
+          "supply": []
+        },
+        {
+          "dropped": "near-future",
+          "supply": []
+        },
+        {
+          "dropped": "ai-central",
+          "supply": []
+        }
+      ],
+      "gap": "true",
+      "demand": "true",
+      "evidence": {
+        "for": 2,
+        "against": 0
+      }
+    },
+    {
+      "id": "mandarin-literary-jiangshi-web",
+      "wants": [
+        "mandarin-original",
+        "literary",
+        "horror",
+        "near-future",
+        "ai-central",
+        "chinese-folklore"
+      ],
+      "witnessed": [],
+      "agenda": [
+        {
+          "work": "hospital",
+          "unknown": [
+            "near-future",
+            "chinese-folklore"
+          ]
+        },
+        {
+          "work": "waste-tide",
+          "unknown": [
+            "literary",
+            "horror"
+          ]
+        }
+      ],
+      "missing": [
+        {
+          "dropped": "mandarin-original",
+          "supply": []
+        },
+        {
+          "dropped": "literary",
+          "supply": []
+        },
+        {
+          "dropped": "horror",
+          "supply": []
+        },
+        {
+          "dropped": "near-future",
+          "supply": []
+        },
+        {
+          "dropped": "ai-central",
+          "supply": []
+        },
+        {
+          "dropped": "chinese-folklore",
+          "supply": []
+        }
+      ],
+      "gap": "neither",
+      "demand": "true",
+      "evidence": {
+        "for": 1,
+        "against": 0
+      }
+    }
+  ],
+  "candidates": [
+    "cultivation-horror-serial"
+  ]
+}

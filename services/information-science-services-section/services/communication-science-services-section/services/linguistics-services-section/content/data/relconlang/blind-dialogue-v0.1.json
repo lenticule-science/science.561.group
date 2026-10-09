@@ -1,0 +1,124 @@
+{
+  "kind": "lenticule.relconlang.blind-dialogue-corpus",
+  "version": "0.1",
+  "status": "experimental-provisional-deixis",
+  "rule": "Evaluator receives input only; gold is hidden until scoring. Legacy gold relations involving first/second-person deixis are provisional until speaker/addressee grounding is specified.",
+  "scenes": [
+    {
+      "id": "bd-001-relevant-answer",
+      "input": [
+        {
+          "turn": 0,
+          "speaker": "mi",
+          "text": "ku tu ga kan do kano?"
+        },
+        {
+          "turn": 1,
+          "speaker": "tu",
+          "text": "se tu ga kan do kano."
+        }
+      ],
+      "gold": {
+        "relations": [
+          {
+            "from": 0,
+            "to": 1,
+            "type": "question-answer",
+            "compatibility": "supported"
+          }
+        ],
+        "note": "Existing RelConLang corpus question/answer pair. Gold relation is inherited from the legacy corpus but is not semantically certified until mi/tu are grounded to speaker/addressee context.",
+        "status": "provisional-deixis"
+      }
+    },
+    {
+      "id": "bd-002-irrelevant-answer",
+      "input": [
+        {
+          "turn": 0,
+          "speaker": "mi",
+          "text": "ku tu ga kan do kano?"
+        },
+        {
+          "turn": 1,
+          "speaker": "tu",
+          "text": "se mi ga ran do sava."
+        }
+      ],
+      "gold": {
+        "relations": [
+          {
+            "from": 0,
+            "to": 1,
+            "type": "purported-answer",
+            "compatibility": "irrelevant"
+          }
+        ],
+        "note": "Both utterances are existing built RelConLang forms; the second is syntactically answer-marked but does not answer the capability question."
+      }
+    },
+    {
+      "id": "bd-003-request-uptake",
+      "input": [
+        {
+          "turn": 0,
+          "speaker": "mi",
+          "text": "du tu ga ran do kelu."
+        },
+        {
+          "turn": 1,
+          "speaker": "tu",
+          "text": "ha tu ga ran-en do kelu."
+        }
+      ],
+      "gold": {
+        "relations": [
+          {
+            "from": 0,
+            "to": 1,
+            "type": "request-acknowledgement",
+            "compatibility": "supported"
+          }
+        ],
+        "note": "Existing RelConLang corpus pair. Gold relation is inherited from the legacy corpus but is not semantically certified until mi/tu are grounded to speaker/addressee context.",
+        "status": "provisional-deixis"
+      }
+    },
+    {
+      "id": "bd-004-answer-uptake",
+      "input": [
+        {
+          "turn": 0,
+          "speaker": "tu",
+          "text": "se tu ga kan do kano."
+        },
+        {
+          "turn": 1,
+          "speaker": "mi",
+          "text": "ha mi ga lin do hena."
+        }
+      ],
+      "gold": {
+        "relations": [
+          {
+            "from": 0,
+            "to": 1,
+            "type": "answer-acknowledgement",
+            "compatibility": "supported"
+          }
+        ],
+        "note": "Existing RelConLang corpus pair."
+      }
+    }
+  ],
+  "plannedContrasts": [
+    "question-refusal",
+    "question-counter-question",
+    "request-refusal",
+    "request-capability-denial",
+    "assertion-contradiction",
+    "contradiction-retracting-repair",
+    "contradiction-affirming-repair",
+    "contradiction-acknowledgement-with-persistence"
+  ]
+}

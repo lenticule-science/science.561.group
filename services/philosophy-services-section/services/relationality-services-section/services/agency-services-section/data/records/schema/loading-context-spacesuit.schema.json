@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://561.group/swarm-intelligence/agentic-orchestration-platform/loading-context-spacesuit/loading-context-spacesuit.schema.json",
+  "title": "Loading-context-spacesuit (predicating-regime extension morphism; ω < κ < ω₁)",
+  "description": "Regime: transfinite-predication-category (predicating morphism, ω < κ < ω₁). Morphism: (agent, context-spacesuit) → agent with loaded fiber. Variance: extension (⊙). Per lab/.../discourse-domain-locus/library/technology/context-spacesuit/context-spacesuit.md: 'Loading the suit is extension (⊙) — adding the agent's context to the bare world.' Closure ordinal κ < ω₁ because suit-loading may require ω-many composition steps as nested skills/rules saturate (rules referencing other rules, skills depending on other skills) but converges below ω₁. The output is the same agent entity with its predication fiber extended by the suit's content; the suit's content does not replace the agent's identity, it composes with it.",
+  "kind": "morphism",
+  "domain": "(agent, context-spacesuit)",
+  "codomain": "agent-with-loaded-suit",
+  "variance": "extension",
+  "monotone": true,
+  "type": "object",
+  "required": ["agent", "spacesuit", "output", "evidence"],
+  "additionalProperties": false,
+  "properties": {
+    "agent": {
+      "type": "object",
+      "required": ["slug"],
+      "properties": {
+        "slug": { "type": "string", "minLength": 1 }
+      }
+    },
+    "spacesuit": {
+      "type": "object",
+      "required": ["slug"],
+      "properties": {
+        "slug": { "type": "string", "minLength": 1 }
+      }
+    },
+    "output": {
+      "type": "object",
+      "required": ["slug", "loadedSuit"],
+      "additionalProperties": true,
+      "properties": {
+        "slug": { "type": "string", "minLength": 1 },
+        "loadedSuit": { "type": "string", "minLength": 1 }
+      }
+    },
+    "evidence": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "minItems": 1,
+      "uniqueItems": true
+    }
+  }
+}

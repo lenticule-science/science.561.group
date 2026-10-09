@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "category-theory/category/scripts/functoring/content/functor/scripts/extending/content/kan-extension",
+  "title": "kan-extension",
+  "description": "The universal extension of a functor F : C → D along a functor K : C → E. The left Kan extension Lan_K(F) : E → D is the best approximation of F factoring through K, characterized by a universal natural transformation. Limits, colimits, adjunctions, and sheafification are all Kan extensions. Itself a functor, refined by the universal property.",
+  "allOf": [
+    {
+      "$ref": "category-theory/category/scripts/functoring/content/functor"
+    }
+  ],
+  "type": "object",
+  "required": [
+    "along",
+    "extends",
+    "universal"
+  ],
+  "properties": {
+    "along": {
+      "description": "the functor K : C → E the extension is taken along",
+      "$ref": "category-theory/category/scripts/functoring/content/functor"
+    },
+    "extends": {
+      "description": "the functor F : C → D being extended",
+      "$ref": "category-theory/category/scripts/functoring/content/functor"
+    },
+    "universal": {
+      "description": "universal natural transformation η : F ⇒ Lan_K(F) ∘ K (left), dually ε for the right Kan extension",
+      "const": true
+    }
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "kind": "lenticule.relconlang.emission-policy-assay",
+  "version": "0.1",
+  "status": "experimental",
+  "principle": "Grammar/selectional learning answers what can plausibly be said; semantic realization answers what this speaker intends and is warranted to say now.",
+  "cases": [
+    {
+      "id": "mu-only-corpus-continuation",
+      "training": [
+        "mu sa ga mor do rama."
+      ],
+      "mode": "corpus-continuation",
+      "currentSignCraftOutput": "sa ga mor do rama.",
+      "acceptableIf": [
+        "output is explicitly typed as corpus continuation/synthetic utterance",
+        "sampling receipt is not presented as epistemic warrant",
+        "no downstream system interprets the unmarked output as a warranted assertion merely because speak() emitted it"
+      ]
+    },
+    {
+      "id": "mu-only-semantic-realization",
+      "training": [
+        "mu sa ga mor do rama."
+      ],
+      "mode": "semantic-realization",
+      "target": "mor(sa,rama)",
+      "currentTargetEvidence": {
+        "for": [],
+        "against": [],
+        "derivedReading": "absurd"
+      },
+      "expected": "selectional fibers may license the lexical combination, but emission policy must not convert corpus incidence into positive proposition evidence",
+      "stanceOptions": [
+        "no emission/assertion",
+        "explicitly planned mu report",
+        "other explicitly warranted nonassertive/reportative realization"
+      ],
+      "forbidden": "automatic unmarked assertive emission solely from saturation incidence"
+    },
+    {
+      "id": "sha-source-current-new-evidence",
+      "training": [
+        "sha ni ga lin do tilo."
+      ],
+      "mode": "semantic-realization",
+      "target": "lin(ni,tilo)",
+      "newTargetEvidence": {
+        "for": [
+          "current-witness"
+        ],
+        "against": [],
+        "derivedReading": "potential"
+      },
+      "expected": "current stance decision comes from the current plan/evidence policy, not the historical sha training example"
+    },
+    {
+      "id": "selectional-learning-from-denied-material",
+      "training": [
+        "candidate denial/report or quoted use containing P"
+      ],
+      "expected": "arguments may still teach lexical compatibility while target evidence remains separately negative/quoted/unknown"
+    },
+    {
+      "id": "receipt-separation",
+      "output": "any generated clause",
+      "expectedReceipts": [
+        "sampling receipt: why lexical choices were sampled",
+        "semantic-preservation receipt: which realization-plan coordinates survived",
+        "evidential warrant receipt only when a policy actually licenses an evidential/assertive claim"
+      ],
+      "forbidden": "calling the sampling receipt a proof/warrant of truth"
+    }
+  ],
+  "successCriterion": "A generated surface form never obtains assertive/evidential authority merely because its lexical components were attested in stance-marked corpus material."
+}

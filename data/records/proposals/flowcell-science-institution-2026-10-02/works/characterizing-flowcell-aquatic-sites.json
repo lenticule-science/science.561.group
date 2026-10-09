@@ -1,0 +1,11 @@
+{
+  "id": "characterizing-flowcell-aquatic-sites",
+  "name": "characterizing FlowCell aquatic sites",
+  "from": "A candidate FlowCell test/deployment site or site class is proposed.",
+  "to": "A bounded hydraulic, sediment, scour, ice, ecological, AIS/decontamination, navigation, jurisdiction, and recovery envelope exists, or a precise data-acquisition gap is stated.",
+  "cost": "Field/source research attention and measurement resources.",
+  "otherwise": "A current-speed number is mistaken for a deployable site and environmental/recovery constraints arrive after hardware commitment.",
+  "needs": [
+    "characterize-flowcell-aquatic-site"
+  ]
+}

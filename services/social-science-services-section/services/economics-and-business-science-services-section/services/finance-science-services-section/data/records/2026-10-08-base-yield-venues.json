@@ -1,0 +1,513 @@
+{
+  "$schema": "../../../../../../../../data/records/schema/literature-measurement.schema.json",
+  "id": "base-yield-venues",
+  "kind": "literature-measurement",
+  "question": "Which on-chain yield venues on Base can hold pooled USDC, at what size, rate, fee and admin model, as of 2026-10-08?",
+  "frame": {
+    "population": "EVM contracts on Base (chain 8453)",
+    "exposure": "USDC or USDS deposited into lending markets, ERC-4626 vaults, savings modules and AMMs",
+    "comparator": "one venue against another",
+    "outcomes": [
+      "address and verification",
+      "TVL",
+      "supply APY",
+      "fee",
+      "timelock and admin",
+      "audit link"
+    ]
+  },
+  "notes": [
+    "../../content/text/documents/articles/notes/2026/10/08/2026-10-08-base-yield-venues.md"
+  ],
+  "sources": [
+    {
+      "item": {
+        "id": "morphocontracts2026",
+        "type": "software",
+        "title": "Morpho Blue, MetaMorpho and Vault V2 deployments on Base (read with cast and Sourcify)",
+        "author": [
+          {
+            "literal": "Morpho Contracts"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              8
+            ]
+          ]
+        },
+        "URL": "https://docs.morpho.org/get-started/resources/addresses/"
+      },
+      "design": "on-chain-measurement",
+      "findings": [
+        {
+          "finding": "Morpho Blue singleton on Base is 0xBBBBBbbBBb9cC5e90e3b3Af64bdAF62C37EEFFCb; Sourcify match \"match\" (contract Morpho, not a proxy). owner() is the Safe 0xcBa28b38103307Ec8dA98377ffF9816C164f9AFa, getThreshold() = 5, getOwners() returns 9 addresses.",
+          "exactSourceLanguage": "owner() -> 0xcBa28b38103307Ec8dA98377ffF9816C164f9AFa; getThreshold() -> 5"
+        },
+        {
+          "finding": "MetaMorpho factory v1.0 0xA9c3D3a366466Fa809d1Ae982Fb2c46E5fC41101 (Sourcify exact_match, MetaMorphoFactory) created Gauntlet USDC Prime and Steakhouse USDC; MetaMorpho factory v1.1 0xFf62A7c278C62eD665133147129245053Bbf5918 (MetaMorphoV1_1Factory, exact_match) created Spark USDC Vault. isMetaMorpho(vault) returned true on the matching factory and false on the other.",
+          "exactSourceLanguage": "isMetaMorpho(0x7BfA7C4f...) on 0xFf62A7c2... -> true"
+        },
+        {
+          "finding": "Vault V2 factory on Base is 0x4501125508079A99ebBebCE205DeC9593C2b5857 (46,251 hex chars of code; no Sourcify match). isVaultV2(0xbeeff2490FEffa212faC2f6553682C219E6a8845) -> true. Adapter factory 0xF42D9c36b34c9c2CF3Bc30eD2a52a90eEB604642, Public Allocator 0xAED282B8aD9257BB1272e93aE63A32A53621e412, Bundler3 0x6BFd8137e702540E7A42B74178A4a49Ba43920C4 all have code on Base (addresses taken from the Morpho docs address page and tested with cast code)."
+        },
+        {
+          "finding": "Largest Vault V2 on Base, Steakhouse High Yield USDC Edition 0xbeeff2490FEffa212faC2f6553682C219E6a8845 (Sourcify match, VaultV2, solc 0.8.28): asset() = USDC 0x8335...2913; totalAssets() = 459,259,955.143965 USDC; curator() 0x827e86072B06674a077f592A531dcE4590aDeCdB; owner() Safe 0x639bfA26472906Ccd40513408284a8aD292bC5D6; performanceFee() = 0.25e18; managementFee() = 0; adaptersLength() = 1; timelock(addAdapter) = 259200 s; timelock(setPerformanceFee) = 0; decimals() = 18.",
+          "exactSourceLanguage": "performanceFee() -> 250000000000000000"
+        },
+        {
+          "finding": "Largest MetaMorpho v1 on Base, Gauntlet USDC Prime 0xeE8F4eC5672F09119b96Ab6fB59C27E1b7e44b61 (exact_match): name \"Gauntlet USDC Prime\"; totalAssets() = 414,484,171.277003 USDC; timelock() = 604800 s; fee() = 0; curator 0x9E33faAE38ff641094fa68c65c2cE600b3410585; owner 0x5a4E19842e09000a582c20A4f524C26Fb48Dd4D0; guardian 0x7084bF4dB6c21e1834dD6482f6056a39A33584cD.",
+          "exactSourceLanguage": "timelock() -> 604800"
+        },
+        {
+          "finding": "Spark USDC Vault 0x7BfA7C4f149E7415b73bdeDfe609237e29CBF34A: curator 0x0f963A8A8c01042B69054e787E5763ABbB0646A3, owner 0xF93B7122450A50AF3e5A76E1d546e95Ac1d0F579 (the same owner as Spark PSM3), timelock 864000 s, fee 0.10. Steakhouse USDC 0xbeeF010f9cb27031ad51e3333f9aF9C6B1228183: fee 0.25, timelock 604800 s, supplyQueueLength 6."
+        },
+        {
+          "finding": "Audit repositories: Vault V2 https://github.com/morpho-org/vault-v2/tree/main/audits lists Spearbit 2025-05-19, 2025-08-11, 2025-09-15; Zellic 2025-07-15; competition 2025-07-15; Blackthorn and ChainSecurity 2025-09-15; fee-wrapper Spearbit 2025-12-04. MetaMorpho https://github.com/morpho-org/metamorpho/tree/main/audits lists Cantina managed review 2023-11-14, OpenZeppelin 2023-11-16, Cantina competition 2024-01-05."
+        }
+      ],
+      "readFrom": "on-chain-read",
+      "observedAt": "2026-10-08",
+      "notFound": [
+        "Vault V2 factory has no Sourcify match.",
+        "Audit link for Morpho Blue itself was not listed in the shallow clone of the metamorpho repository."
+      ]
+    },
+    {
+      "item": {
+        "id": "morphoapi2026",
+        "type": "dataset",
+        "title": "Morpho GraphQL API vault listing for chain 8453",
+        "author": [
+          {
+            "literal": "Morpho API"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              8
+            ]
+          ]
+        },
+        "URL": "https://api.morpho.org/graphql"
+      },
+      "design": "dashboard-measurement",
+      "findings": [
+        {
+          "finding": "Vault V1 USDC on Base ranked by totalAssetsUsd: Gauntlet USDC Prime $414.3M netApy 4.62% fee 0 timelock 604800; Spark USDC Vault $354.8M netApy 4.16% fee 10% timelock 864000; Steakhouse USDC $122.0M netApy 3.45% fee 25% timelock 604800; Grove x Steakhouse USDC High Yield $103.4M (listed false) timelock 1209600; Steakhouse Prime USDC $13.9M; Pangolins USDC $12.1M timelock 259200; Moonwell Flagship USDC $3.7M fee 15% timelock 345600; Gauntlet USDC Core $1.8M; Yearn OG USDC $1.7M."
+        },
+        {
+          "finding": "Vault V2 on Base ranked by totalAssetsUsd: Steakhouse High Yield USDC Edition (sirloinUSDC) $459.1M, performanceFee 0.25; Steakhouse Prime USDC (steakUSDC) $272.2M, fee 0; Grove x Steakhouse USDC (grove-steakUSDC) $196.0M, curator 0x622E19d6903BD4507cfc70b31d5B99535114C0FC; Gauntlet USDC Prime (gtusdcp) $177.1M; Clearstar cbAssets Vault (CSCBUSDC)."
+        }
+      ],
+      "readFrom": "api-read",
+      "observedAt": "2026-10-08",
+      "notFound": [
+        "The Vault V2 query rejects an assetSymbol_in filter, so Vault V2 rows were ranked unfiltered."
+      ]
+    },
+    {
+      "item": {
+        "id": "defillamaprotocols2026",
+        "type": "dataset",
+        "title": "DeFiLlama protocols endpoint, chainTvls for Base, read 2026-10-08",
+        "author": [
+          {
+            "literal": "DeFiLlama Protocols"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              8
+            ]
+          ]
+        },
+        "URL": "https://api.llama.fi/protocols"
+      },
+      "design": "dashboard-measurement",
+      "findings": [
+        {
+          "finding": "Base TVL in USD: morpho-blue 4,399,416,600; steakhouse-financial (curator) 1,036,858,852; gauntlet (curator) 611,433,047; aave-v3 543,913,883; spark-liquidity-layer 354,633,183; uniswap-v3 314,988,862; aerodrome-slipstream 208,640,869; aerodrome-v1 144,224,611; uniswap-v2 104,655,428; uniswap-v4 68,135,151; compound-v3 26,623,012; fluid-lending 23,088,475; euler-v2 16,048,175; moonwell-lending 10,920,544; moonwell-vaults 10,143,918; yo-protocol 27,191,882; spark-savings 5,760,279; pendle-v2 3,324,846; superfluid 1,251,689; sablier-flow 39,857; sablier-lockup 5,522."
+        }
+      ],
+      "readFrom": "api-read",
+      "observedAt": "2026-10-08"
+    },
+    {
+      "item": {
+        "id": "defillamayields2026",
+        "type": "dataset",
+        "title": "DeFiLlama yields pools endpoint, Base USDC and USDS pools, read 2026-10-08",
+        "author": [
+          {
+            "literal": "DeFiLlama Yields"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              8
+            ]
+          ]
+        },
+        "URL": "https://yields.llama.fi/pools"
+      },
+      "design": "dashboard-measurement",
+      "findings": [
+        {
+          "finding": "Base USDC pools by tvlUsd as listed: midas-rwa mGLO $51.5M 6.20%; centrifuge-protocol JAAA $22.7M 6.23%; aave-v3 USDC $16.9M apy 4.37%; spark-savings USDS $12.0M 3.80%; fluid-lending $11.9M 9.31%; yo-protocol yoUSD $7.9M 4.48%; compound-v3 USDC $0.9M 6.07%; euler-v2 EVK Vault eUSDC-49 $0.2M 6.13%; morpho-blue USDC market entry $0.2M. The aave-v3 listed tvlUsd ($16.9M) differs from aToken totalSupply read on-chain (181.2M USDC), so listed tvlUsd is net of borrows."
+        }
+      ],
+      "readFrom": "api-read",
+      "observedAt": "2026-10-08"
+    },
+    {
+      "item": {
+        "id": "aavepool2026",
+        "type": "software",
+        "title": "Aave v3 Base market: Pool, PoolAddressesProvider, USDC reserve, governance executor",
+        "author": [
+          {
+            "literal": "Aave Pool"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              8
+            ]
+          ]
+        },
+        "URL": "https://github.com/bgd-labs/aave-address-book/blob/main/src/AaveV3Base.sol"
+      },
+      "design": "on-chain-measurement",
+      "findings": [
+        {
+          "finding": "PoolAddressesProvider 0xe20fCBdBfFC4Dd138cE8b2E6FBb6CB49777ad64D getMarketId() = \"Aave V3 BASE Market\"; getPool() = 0xA238Dd80C259a72e81d7e4664a9801593F98d1c5, an InitializableImmutableAdminUpgradeabilityProxy (Sourcify exact_match, EIP-1967) whose implementation slot holds 0xA4AbC5FcBA6D0d7E3D144d6dbF6cb6128599dFdB; PoolConfigurator 0x5731a04B1E775f0fdd454Bf70f3335886e9A96be; ACLManager 0x43955b0899Ab7232E3a454cf84AedD22Ad46FD33; oracle 0x2Cc0Fc26eD4563A5ce5e8bdcfe1A2878676Ae156.",
+          "exactSourceLanguage": "getMarketId() -> \"Aave V3 BASE Market\""
+        },
+        {
+          "finding": "USDC reserve via getReserveData(USDC): currentLiquidityRate 4.4878e25 ray = 4.49% supply rate; currentVariableBorrowRate 5.4921e25 ray = 5.49%; aToken 0x4e65fE4DbA92790696d040ac24Aa414708F5c0AB name \"Aave Base USDC\", totalSupply() = 181,228,930.716353 USDC; variable debt token 0x59dca05b6c26dbd64b5381374aAaC5CD05644C28.",
+          "exactSourceLanguage": "name() -> \"Aave Base USDC\""
+        },
+        {
+          "finding": "Admin model: ACL_ADMIN is 0x9390B1735def18560c509E2d0bc090E9d6BA257a (Sourcify \"Executor\"), the Aave Governance V3 level-1 executor on Base; owner() of that executor is 0x2DC219E716793fb4b21548C0f009Ba3Af753ab01; CrossChainController 0x529467C76f234F2bD359d7ecF7c660A2846b04e2; GovernanceV3Base also lists a granular guardian and a governance guardian.",
+          "exactSourceLanguage": "EXECUTOR_LVL_1 = 0x9390B1735def18560c509E2d0bc090E9d6BA257a"
+        },
+        {
+          "finding": "Audit repository https://github.com/aave-dao/aave-v3-origin/tree/main/audits lists OpenZeppelin 2021-11-01, Trail of Bits 2022-01-07, PeckShield 2022-01-14, Certora 2022-01-24, ABDK 2022-01-27, Sigma Prime 2022-01-27, and later PeckShield and Sigma Prime reports for v3.0.1."
+        },
+        {
+          "finding": "The Aave address book lists AaveV4Base with an equities hub 0xa4d5947Eb727A052bae69C593FfC84247EC9864E and spokes whose price feeds are named for tokenized AAPL, AMZN, GOOGL, META, MSFT, NVDA and TSLA; UmbrellaEthereum.sol and UmbrellaBaseSepolia.sol exist in the address book and no Umbrella file exists for Base mainnet."
+        }
+      ],
+      "readFrom": "on-chain-read",
+      "observedAt": "2026-10-08",
+      "notFound": [
+        "Umbrella (safety module) on Base mainnet: no address-book entry."
+      ]
+    },
+    {
+      "item": {
+        "id": "sparkpsm2026",
+        "type": "software",
+        "title": "Spark PSM3, sUSDS and Savings USDC vault on Base",
+        "author": [
+          {
+            "literal": "Spark PSM"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              8
+            ]
+          ]
+        },
+        "URL": "https://github.com/sparkdotfi/spark-psm"
+      },
+      "design": "on-chain-measurement",
+      "findings": [
+        {
+          "finding": "PSM3 on Base 0x1601843c5E9bC251A3272907010AFa41Fa18347E (Sourcify exact_match, PSM3): usdc() 0x833589fC...2913, usds() 0x820C137fa70C8691f0e44Dc420a5e53c168921Dc, susds() 0x5875eEE11Cf8398102FdAd704C9E96607675467a, pocket() = itself, owner() 0xF93B7122450A50AF3e5A76E1d546e95Ac1d0F579, rateProvider() 0x65d946e533748A998B1f0E430803e39A6388f7a1; totalAssets() = 3,052,279.67 (18-decimal USD units); totalShares() = 2,889,971.42.",
+          "exactSourceLanguage": "pocket() -> 0x1601843c5E9bC251A3272907010AFa41Fa18347E"
+        },
+        {
+          "finding": "Rate provider 0x65d946e5... is SSRAuthOracle (exact_match): getSSR() = 1000000001182641576793209935 ray per second, which compounds to 3.80% APY (0.0380 computed over 31,536,000 s); getChi() = 1.1121e27; getAPR() = 3.73e25. Chainlink feed \"sUSDS / USDS Exchange Rate\" 0x906B24a339b848369B24Dc9Ed368b947fB9693bf answers 1112109753988095896 with 24-hour heartbeat.",
+          "exactSourceLanguage": "getSSR() -> 1000000001182641576793209935"
+        },
+        {
+          "finding": "sUSDS on Base 0x5875eEE11Cf8398102FdAd704C9E96607675467a name \"Savings USDS\": ERC1967Proxy with implementation 0x982f2DF63Fe38AB8d55f4B1464e8cfDc8eA5dEC8; totalSupply() = 10,829,128.84 sUSDS; USDS 0x820C137f... totalSupply on Base = 3,010,914.07."
+        },
+        {
+          "finding": "Spark Savings USDC vault on Base 0x3128a0F7f0ea68E7B7c9B00AFa7E41045828e858: name \"Spark USDC Vault\", symbol sUSDC, ERC1967Proxy to 0x6ACC02ddd82206a44ff4EC13977E63d1a29C7723 (Sourcify exact_match, UsdcVaultL2); asset() USDC; totalAssets() = 5,761,445.713431 USDC (DeFiLlama spark-savings Base TVL 5,760,279). vsr(), chi() and depositCap() calls reverted on this vault."
+        },
+        {
+          "finding": "Audit repositories: https://github.com/sparkdotfi/spark-psm/tree/main/audits lists Cantina 2024-09-09, ChainSecurity 2024-10-22, Cantina 2024-10-23; https://github.com/sparkdotfi/spark-vaults-v2/tree/main/audits lists v1.0.0 and v1.0.1 reports from Cantina and ChainSecurity."
+        }
+      ],
+      "readFrom": "on-chain-read",
+      "observedAt": "2026-10-08",
+      "notFound": [
+        "Spark PSM3 owner contract type was not read."
+      ]
+    },
+    {
+      "item": {
+        "id": "compoundcomet2026",
+        "type": "software",
+        "title": "Compound III USDC Comet on Base",
+        "author": [
+          {
+            "literal": "Compound Comet"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              8
+            ]
+          ]
+        },
+        "URL": "https://github.com/compound-finance/comet"
+      },
+      "design": "on-chain-measurement",
+      "findings": [
+        {
+          "finding": "Comet 0xb125E6687d4313864e53df431d5425969c15Eb2F name \"Compound USDC\", baseToken USDC; TransparentUpgradeableProxy (exact_match) with implementation 0xC1455ae6Df6cd808ed677F048E434E22892682a7. totalSupply() = 9,556,669.773950 USDC; totalBorrow() = 8,697,383.051773 USDC; getUtilization() = 0.910085; getSupplyRate(utilization) = 2,049,446,871 per second (1e18 scale), = 6.46% annualized; numAssets() = 5.",
+          "exactSourceLanguage": "getUtilization() -> 910084905066773759"
+        },
+        {
+          "finding": "Admin model: governor() is 0xCC3E7c85Bb0EE4f09380e041fee95a0caeDD4a02 (Sourcify Timelock) with delay() = 86400 s and admin() 0x18281dfC4d00905DA1aaA6731414EABa843c468A; pauseGuardian() 0x3cb4653F3B45F448D9100b118B75a1503281d2ee. DeFiLlama compound-v3 Base TVL $26,623,012."
+        },
+        {
+          "finding": "The comet repository root lists SPEC.pdf under the audit scan; no per-auditor report files were found in a shallow clone."
+        }
+      ],
+      "readFrom": "on-chain-read",
+      "observedAt": "2026-10-08",
+      "notFound": [
+        "Compound III audit report files in the comet repository."
+      ]
+    },
+    {
+      "item": {
+        "id": "moonwellcore2026",
+        "type": "software",
+        "title": "Moonwell Comptroller and Flagship vault on Base",
+        "author": [
+          {
+            "literal": "Moonwell Core"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              8
+            ]
+          ]
+        },
+        "URL": "https://github.com/moonwell-fi/moonwell-contracts-v2"
+      },
+      "design": "on-chain-measurement",
+      "findings": [
+        {
+          "finding": "Comptroller (Unitroller) 0xfBb21d0380beE3312B33c4353c8936a0F13EF26C, Sourcify exact_match; getAllMarkets() returns 21 markets including mUSDC 0xEdc817A28E8B93B03976FBd4a3dDBc9f7D176c22; admin() 0x8b621804a7637b781e2BbD58e256a591F2dF7d51 (Temporal Governor, Sourcify match) and pauseGuardian() 0xB9d4acf113a423Bc4A64110B8738a52E51C2AB38. DeFiLlama Base TVL moonwell-lending $10,920,544; moonwell-vaults $10,143,918."
+        },
+        {
+          "finding": "Moonwell Flagship USDC MetaMorpho vault 0xc1256Ae5FF1cf2719D4937adb3bbCCab2E00A2Ca: $3.73M, netApy 3.97%, fee 15%, timelock 345600 s, curator 0x08eDEbFFaE68970DCf751baa826182b3a4aCFC05."
+        },
+        {
+          "finding": "Audit repository https://github.com/moonwell-fi/moonwell-contracts-v2/tree/main/audits lists reports on cross-chain governance, ERC4626, Axelar bridge adapter, Chainlink OEV wrappers and Curve multirewards (Halborn)."
+        }
+      ],
+      "readFrom": "on-chain-read",
+      "observedAt": "2026-10-08",
+      "notFound": [
+        "mUSDC totalBorrows and supply rate were not read."
+      ]
+    },
+    {
+      "item": {
+        "id": "eulervault2026",
+        "type": "software",
+        "title": "Euler v2 EVC and EVK GenericFactory on Base",
+        "author": [
+          {
+            "literal": "Euler Vault Kit"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              8
+            ]
+          ]
+        },
+        "URL": "https://github.com/euler-xyz/euler-vault-kit"
+      },
+      "design": "on-chain-measurement",
+      "findings": [
+        {
+          "finding": "Ethereum Vault Connector on Base 0x5301c7dD20bD945D2013b48ed0DEE3A284ca8989 (Sourcify exact_match, EthereumVaultConnector, not a proxy). EVK GenericFactory 0x7F321498A801A191a93C840750ed637149dDf8D0 (exact_match): getProxyListLength() = 432; implementation() 0x30a9A9654804F1e5b3291a86E83EdeD7cF281618; upgradeAdmin() 0x605Aaf2CAD625dd5F855Bb055625cc1926f10A56. DeFiLlama Base TVL euler-v2 $16,048,175; EVK Vault eUSDC-49 TVL $0.2M apy 6.13%."
+        },
+        {
+          "finding": "Audit repositories: https://github.com/euler-xyz/euler-vault-kit/tree/main/audits lists Cantina competition, Certora, ChainSecurity, Electisec, Enigma Dark, M4rio.eth, Omniscia and OpenZeppelin reports; https://github.com/euler-xyz/ethereum-vault-connector/tree/main/audits lists Cantina, Certora, ChainSecurity, Hunter Security, Omniscia, OpenZeppelin, Spearbit and Trail of Bits reports."
+        }
+      ],
+      "readFrom": "on-chain-read",
+      "observedAt": "2026-10-08",
+      "notFound": [
+        "Vault addresses for Euler USDC vaults on Base were not read from the labels repository."
+      ]
+    },
+    {
+      "item": {
+        "id": "uniswapv4core2026",
+        "type": "software",
+        "title": "Uniswap v4 PoolManager on Base and Hooks.sol permission flags",
+        "author": [
+          {
+            "literal": "Uniswap v4 Core"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              8
+            ]
+          ]
+        },
+        "URL": "https://github.com/Uniswap/v4-core"
+      },
+      "design": "on-chain-measurement",
+      "findings": [
+        {
+          "finding": "PoolManager on Base 0x498581fF718922c3f8e6A244956aF099B2652b2b (Sourcify match, PoolManager). owner() 0x31FAfd4889FA1269F7a13A66eE0fB458f27D72A9 (Sourcify CrossChainAccount); protocolFeeController() 0xc53DD825dedBE7814562528A1A30e8e5BCbB4b55. Also with code on Base: PositionManager 0x7C5f5A4bBd8fD63184577525326123B519429bDc, UniversalRouter 0x6fF5693b99212Da76ad316178A184AB56D299b43, V4 Router 0x00000000000044a361Ae3cAc094c9D1b14Eece97, Quoter 0x0d5e0F971ED27FBfF6c2837bf31316121532048D. DeFiLlama Base TVL uniswap-v4 $68,135,151."
+        },
+        {
+          "finding": "Hook permissions are the low 14 bits of the hook contract address, from Hooks.sol: BEFORE_INITIALIZE 1<<13, AFTER_INITIALIZE 1<<12, BEFORE_ADD_LIQUIDITY 1<<11, AFTER_ADD_LIQUIDITY 1<<10, BEFORE_REMOVE_LIQUIDITY 1<<9, AFTER_REMOVE_LIQUIDITY 1<<8, BEFORE_SWAP 1<<7, AFTER_SWAP 1<<6, BEFORE_DONATE 1<<5, AFTER_DONATE 1<<4, BEFORE_SWAP_RETURNS_DELTA 1<<3, AFTER_SWAP_RETURNS_DELTA 1<<2, AFTER_ADD_LIQUIDITY_RETURNS_DELTA 1<<1, AFTER_REMOVE_LIQUIDITY_RETURNS_DELTA 1<<0.",
+          "exactSourceLanguage": "uint160 internal constant ALL_HOOK_MASK = uint160((1 << 14) - 1);"
+        },
+        {
+          "finding": "Audit directory https://github.com/Uniswap/v4-core/tree/main/docs/security lists ABDK, Certora and Spearbit (draft), OpenZeppelin and Trail of Bits core audits and Known_Effects_of_Hook_Permissions.pdf."
+        }
+      ],
+      "readFrom": "source-code",
+      "observedAt": "2026-10-08",
+      "notFound": [
+        "Notable production hooks on Base were not enumerated."
+      ]
+    },
+    {
+      "item": {
+        "id": "aerodromecontracts2026",
+        "type": "software",
+        "title": "Aerodrome v1 and Slipstream contracts on Base",
+        "author": [
+          {
+            "literal": "Aerodrome Contracts"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              8
+            ]
+          ]
+        },
+        "URL": "https://github.com/aerodrome-finance/slipstream"
+      },
+      "design": "on-chain-measurement",
+      "findings": [
+        {
+          "finding": "Sourcify matches on Base: AERO token 0x940181a94A35A4569E4529A3CDfB74e38FD98631 (name \"Aerodrome\", totalSupply 1,997,645,621.87); Voter 0x16613524e02ad97eDfeF371bC883F2F5d6C480A5; Router 0xcF77a3Ba9A5CA399B7c97c74d54e5b1Beb874E43; VotingEscrow 0xeBf418Fe2512e7E6bd9b87a8F0f294aCDC67e6B4; Slipstream CLFactory 0x5e7BB104d84c7CB9B682AaC2F3d509f5F406809A; NonfungiblePositionManager 0x827922686190790b37229fd06084350E74485b72. DeFiLlama Base TVL aerodrome-slipstream $208.6M, aerodrome-v1 $144.2M; top v1 pool USDC-AERO $43.5M."
+        },
+        {
+          "finding": "Audit directory https://github.com/aerodrome-finance/slipstream/tree/main/audits holds ABDK (audits/abdk/audit.pdf) and Trail of Bits (audits/tob/audit.pdf)."
+        }
+      ],
+      "readFrom": "on-chain-read",
+      "observedAt": "2026-10-08",
+      "notFound": [
+        "Voter governor and emergency council addresses were not read."
+      ]
+    }
+  ],
+  "searches": [
+    {
+      "register": "other",
+      "variables": {
+        "q": "Aave Umbrella safety module Base mainnet address"
+      },
+      "observedAt": "2026-10-08",
+      "count": 0,
+      "included": [],
+      "reading": "The Aave address book (bgd-labs/aave-address-book/src) holds UmbrellaEthereum.sol and UmbrellaBaseSepolia.sol and no Umbrella file for Base mainnet; Umbrella is not deployed on Base."
+    },
+    {
+      "register": "defillama-api",
+      "variables": {
+        "endpoint": "yields.llama.fi/pools",
+        "filter": "chain=Base symbol=USDC"
+      },
+      "observedAt": "2026-10-08",
+      "count": 45,
+      "included": [
+        "defillamayields2026"
+      ],
+      "reading": "Largest Base USDC pools read; rows listed in the source finding."
+    },
+    {
+      "register": "defillama-api",
+      "variables": {
+        "endpoint": "api.llama.fi/protocols",
+        "filter": "chainTvls.Base"
+      },
+      "observedAt": "2026-10-08",
+      "count": 44,
+      "included": [
+        "defillamaprotocols2026"
+      ],
+      "reading": "Base TVL per protocol read."
+    },
+    {
+      "register": "other",
+      "variables": {
+        "q": "Morpho GraphQL vaults and vaultV2s chain 8453"
+      },
+      "observedAt": "2026-10-08",
+      "count": 12,
+      "included": [
+        "morphoapi2026",
+        "morphocontracts2026"
+      ],
+      "reading": "Largest USDC vaults read from the API and verified with cast."
+    }
+  ]
+}

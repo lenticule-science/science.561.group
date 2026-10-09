@@ -1,0 +1,176 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "lenticule/relconlang/realization-plan-v0.1",
+  "title": "RelConLang Realization Plan v0.1",
+  "description": "Experimental language-specific plan for producing RelConLang surface text after an emission policy has selected intended communicative content. It does not determine whether the content should be said; it only plans how the selected content is realized.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "kind",
+    "nucleus",
+    "roleVisibility",
+    "register",
+    "interrogativity"
+  ],
+  "properties": {
+    "kind": {
+      "const": "lenticule.relconlang.realization-plan"
+    },
+    "nucleus": {
+      "$ref": "lenticule/relconlang/proposition-nucleus-v0.1"
+    },
+    "deicticContext": {
+      "anyOf": [
+        {
+          "$ref": "lenticule/relconlang/dialogue-deictic-context-v0.1"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "stanceReport": {
+      "anyOf": [
+        {
+          "$ref": "lenticule/relconlang/stance-report-v0.1"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "illocutionaryForce": {
+      "enum": [
+        "assertive",
+        "directive",
+        "commissive",
+        "expressive",
+        "declaration",
+        "unknown"
+      ]
+    },
+    "dialogueMove": {
+      "enum": [
+        "none",
+        "question",
+        "request",
+        "answer",
+        "acknowledgement",
+        "refusal",
+        "repair",
+        "counter-question",
+        "other",
+        "unknown"
+      ]
+    },
+    "interrogativity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "grammatical",
+        "orthographic"
+      ],
+      "properties": {
+        "grammatical": {
+          "enum": [
+            "ku",
+            "none",
+            "undetermined"
+          ]
+        },
+        "orthographic": {
+          "enum": [
+            "question-mark",
+            "period",
+            "exclamation",
+            "undetermined"
+          ]
+        }
+      }
+    },
+    "informationStructure": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "relation",
+          "targetRole"
+        ],
+        "properties": {
+          "relation": {
+            "enum": [
+              "topic",
+              "focus",
+              "contrast",
+              "replacement"
+            ]
+          },
+          "targetRole": {
+            "enum": [
+              "agent",
+              "patient",
+              "provenance",
+              "locus",
+              "kind",
+              "predicate",
+              "other"
+            ]
+          }
+        }
+      }
+    },
+    "roleVisibility": {
+      "enum": [
+        "explicit-ga-do",
+        "position-only",
+        "mixed",
+        "undetermined"
+      ],
+      "description": "Whether semantically recoverable core roles should be realized with explicit role receipts."
+    },
+    "register": {
+      "enum": [
+        "everyday",
+        "technical",
+        "proof",
+        "poetic-ritual",
+        "undetermined"
+      ]
+    },
+    "prefieldOrder": {
+      "type": "array",
+      "description": "Ordered slots actually selected for this realization; remains experimental while prefield law is unsettled.",
+      "items": {
+        "enum": [
+          "dialogue",
+          "stance",
+          "provenance",
+          "topic",
+          "contrast",
+          "other"
+        ]
+      }
+    },
+    "punctuation": {
+      "enum": [
+        ".",
+        "?",
+        "!",
+        "undetermined"
+      ]
+    },
+    "provenance": {
+      "description": "Optional realization provenance/decision receipts, not proposition evidence.",
+      "type": "array",
+      "items": {}
+    },
+    "emissionPolicyRef": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Optional reference to the emission-policy resource that authorized/selected this realization. The realization plan itself does not confer evidential or assertive authority."
+    }
+  }
+}

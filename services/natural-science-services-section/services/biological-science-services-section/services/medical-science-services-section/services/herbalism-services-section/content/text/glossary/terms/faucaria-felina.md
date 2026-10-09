@@ -1,0 +1,31 @@
+---
+identity: faucaria-felina
+name: "Faucaria felina"
+description: "Faucaria felina (Tiger Jaws): a medicinal herb in the herbal materia medica."
+aliases:
+  - "Tiger Jaws"
+relations:
+  component-of: herbalism
+---
+*Faucaria felina*, known as Tiger Jaws, is recorded in this section's herbal materia medica as follows. Its properties and uses are the herbal tradition's account, drawn from the sources listed; they are not clinical evidence, and the warnings should be read before any use.
+
+## Hardiness
+
+- 30
+
+## Conditions
+
+- light: bright light
+
+## Habit
+
+- form: rosette
+
+## Cycle
+
+- perennial: true
+
+## Morphology
+
+- **leaves:**
+  - texture: fleshy

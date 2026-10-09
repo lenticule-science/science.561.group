@@ -1,0 +1,25 @@
+\section{The settling sheaf and its CRDT section merge}
+
+This section records claim nodes and dependency edges.
+
+\begin{proposition}[Settling sheaf]\label{thm:settling-sheaf}\lean{Obsmetrologia.Sheaf}\leanok\uses{thm:settling, thm:valuation, thm:four-bilattice}
+The \emph{settling sheaf} $\mathcal{S}$ packages the settled fixed point as a single datum: its \texttt{section\_} is a \texttt{Valuation}, a charge at every cell of the base of predication. This is $H^0$ realized --- the settled valuation read as one coherent global whole, the section that the settling dynamics converge upon. It is the central object of the chapter; the cohomology developed below is the cohomology of this sheaf.
+\end{proposition}
+\begin{proposition}[Designated cell]\label{thm:sheaf-designated}\lean{Obsmetrologia.Sheaf.designated}\leanok\uses{thm:settling-sheaf, thm:valuation, thm:four-bilattice}
+A cell $\varphi$ is \emph{designated} for a section $\mathcal{S}$ when its settled charge is truth-top: $\mathcal{S}.\texttt{section\_}\,\varphi = \texttt{Reading.tTop}$ --- supported, with no counter-evidence. The extent of the designated cells is the realized $H^0$: the count of cells the settling has driven to settled truth.
+\end{proposition}
+\begin{theorem}[Section merge is a CRDT (bounded join-semilattice)]\label{thm:section-merge-crdt}\lean{Obsmetrologia.Valuation.joinK_comm'}\leanok\uses{thm:valuation, thm:four-bilattice, thm:settling-sheaf}
+The pointwise knowledge join \texttt{joinK} on sections is a bounded join-semilattice: it is commutative (\texttt{joinK\_comm'}), idempotent (\texttt{joinK\_idem'}), and associative (\texttt{joinK\_assoc'}), each obtained by \texttt{funext} from the corresponding charge-level law of \cref{thm:four-bilattice}. These are exactly the convergence laws of a state-based CRDT: a merge that is insensitive to the order and multiplicity in which sections are combined.
+\end{theorem}
+\begin{lemma}[The merge is an upper bound]\label{thm:section-lub}\lean{Obsmetrologia.Valuation.le_joinK_left}\leanok\uses{thm:section-merge-crdt, thm:valuation, thm:le-joink}
+Each section sits below the merge in the knowledge order: \texttt{leK v (joinK v w)} and \texttt{leK w (joinK v w)} (\texttt{le\_joinK\_left}, \texttt{le\_joinK\_right}). Moreover the merge is the \emph{least} such upper bound: if \texttt{leK v u} and \texttt{leK w u} then \texttt{leK (joinK v w) u} (\texttt{section\_lub}). Gluing is therefore least-upper-bound: two local settlements glue to a unique global section with no obstruction.
+\end{lemma}
+\begin{theorem}[Vanishing $H^1$ in CRDT form]\label{thm:vanishing-h1-crdt}\lean{Obsmetrologia.Reading.joinList_congr}\leanok\uses{thm:four-bilattice, thm:section-merge-crdt, thm:charge-joinList, thm:kle-antisymm}
+The knowledge join of a list of deltas depends only on the \emph{set} of deltas, not their order or multiplicity: if $l$ and $l'$ have the same membership then $\texttt{joinList}\,l = \texttt{joinList}\,l'$ (\texttt{joinList\_congr}, proved by \texttt{kle\_antisymm} from the lattice laws). Deltas integrate without coordination. This is exactly $H^1 = 0$ in the finite regime --- the CRDT/CALM convergence form. As a corollary, integrating an already-absorbed delta changes nothing (\texttt{joinList\_cons\_mem}): idempotent integration.
+\end{theorem}
+\begin{proposition}[Cover of the base]\label{thm:sheaf-cover}\lean{Obsmetrologia.Sheaf.Cover}\leanok\uses{thm:settling-sheaf, thm:bitopological-site-grothendieck}
+A \emph{cover} is a list of patches (Boolean predicates on cells) whose union is every cell: for each $\varphi$ there is a patch $p$ in the list with $p\,\varphi = \texttt{true}$. Two sections \emph{agree on a patch} (\texttt{agreeOn}) when they coincide wherever the patch holds. The cover is the open-cover data along which local sections are glued.
+\end{proposition}
+\begin{theorem}[Sheaf separation]\label{thm:sheaf-separated}\lean{Obsmetrologia.Sheaf.separated}\leanok\uses{thm:sheaf-cover, thm:settling-sheaf, thm:valuation}
+A section is determined by its restrictions to a cover: if two sections $v$, $w$ agree on every patch of a cover, then $v = w$ (\texttt{separated}, by \texttt{funext} through the covering patch of each cell). This is the injectivity half of the sheaf condition --- there are no hidden global degrees of freedom --- and it furnishes the uniqueness half of $H^1 = 0$.
+\end{theorem}

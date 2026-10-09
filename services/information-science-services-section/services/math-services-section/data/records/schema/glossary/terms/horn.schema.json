@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "glossary/terms/horn",
+  "title": "horn",
+  "description": "The simplicial set Λⁿₖ obtained from the boundary of the standard n-simplex Δⁿ by removing its k-th face — all faces but one. Whether the missing face can be filled determines the higher-categorical structure. A simplicial set refined by a missing face.",
+  "allOf": [
+    {
+      "$ref": "./simplicial-set.schema.json"
+    }
+  ],
+  "type": "object",
+  "required": [
+    "missing-face"
+  ],
+  "properties": {
+    "missing-face": {
+      "description": "index k of the removed face; the horn is inner when 0 < k < n, outer otherwise",
+      "type": "integer"
+    }
+  }
+}

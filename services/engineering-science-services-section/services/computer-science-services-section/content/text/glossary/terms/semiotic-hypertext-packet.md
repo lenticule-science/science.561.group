@@ -1,0 +1,26 @@
+---
+aliases:
+  - SHP
+description: One packet that carries a settled section's semantics as self-contained HTML and its syntax as JavaScript in a single document, so the two never travel as separate artifacts. Named 2026-09-04; L-Space rooms are renderings of it.
+identity: semiotic-hypertext-packet
+name: Semiotic Hypertext Packet
+date-created: 2026-09-04
+provenance:
+  authors:
+    - emsenn
+    - claude-fable-5-1
+  sources:
+    - /home/emsenn/.claude/projects/-home-emsenn-info/be3336b6-3478-4c9a-8123-588ec75b4209.jsonl
+    - /home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/agent-computer-system-engineering-services-section/services/agent-computer-platform-system-engineering-services-section/services/multi-agent-computer-platform-system-engineering-services-section/apps/spotcomp/hacking/library/shp/specification.md
+    - /home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/semiotic-computer-system-services-section/lib/legacy/computer/lib/shp/README.md
+    - /home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-interface-system-services-section/services/terminal-computer-interface-system-engineering-services-section/services/terminal-eavt-projectors/README.md
+    - /home/emsenn/info/lib/emsenn/services/561-group/services/science-services-section/services/engineering-science-services-section/services/computer-science-services-section/content/text/documents/articles/notes/2026/07/05/2026-07-05-research-on-the-informational-programming-paradigm.md
+    - /home/emsenn/info/lib/emsenn/services/561-group/services/science-services-section/sites/l-space.561.group/README.md
+---
+An SHP (Semiotic Hypertext Packet) is one packet in which a settled section's semantics are carried as self-contained HTML and its syntax is carried as JavaScript, both inside a single document, so the two never travel as separate artifacts. SHP means Semiotic Hypertext Packet. L-space rooms can be rendered as SHPs; more generally, a single SHP can carry semantics as HTML and syntax as JavaScript.
+
+Two prior house implementations converge on the same shape without yet using the founder's "semiotic" spelling. The SPOTCOMP SHP specification (`apps/spotcomp/hacking/library/shp/specification.md`) defines SHP as "the finite hypertext packet surface of SPOTCOMP" and "a packet projection from a settled trace frontier, not the trace itself and not the typed resource catalog." The retired `@561-group/computer-lib-shp` package defined "SHP — the semantic-hypertext-packet data format" that "projects a settled section into a semantic `<article>`," emitting one `<span>` per charged cell with the predicate named in `class` and the `(e, a, v)` carrier in `data-e`/`data-a`/`data-v`, and its own README states the packet has "no `<script>`, no `<style>`, no external reference" — a packet-safety rule against script execution during inspection that the SPOTCOMP specification repeats ("no executable scripts required for inspection; no required external resources for packet semantics"). `arnold` and `daleske`, the house terminal and pixel TUI frameworks, both describe SHP as "the HTML projector" in `@561-group/computer` that their own section-to-frame projectors mirror.
+
+SHP differs from a plain HTML page or a bare JSON payload in what each carries and how it is produced. A plain HTML page carries presentation and, when scripted, behavior, but no declared linkage back to a settled trace, frontier, or projection rule; a bare JSON payload carries structured data but no hypertext surface a person can read directly. An SHP packet is instead a deterministic, monotone projection of a settled section: the SPOTCOMP specification requires it to declare "source trace or trace family; finite frontier; finite settlement evidence; projection morphism; packet carrier; projection evidence" and states the projection "MUST be deterministic for a fixed frontier and projection rule set" and "MUST be monotone: later evidence can produce a later packet, but cannot mutate the historical packet witness in place." The 2026-07-05 note on the informational programming paradigm places SHP among the system's representations as "a leg of a cone whose apex is the CHL/RMN term language," alongside JSON, EAVT rows, English prose, and Lean — one settled-section rendering among several, not a generic web-page format.
+
+A room, a page, or a terminal frame renders an SHP that already carries the settled section's semantics and syntax together, rather than creating a second authored artifact beside it; a renderer that takes its content from Markdown or a catalog directly bypasses the packet.
