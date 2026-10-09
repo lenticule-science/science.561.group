@@ -1,0 +1,53 @@
+{
+  "type": "ObsmetrologiaProofWorkOrder",
+  "version": 1,
+  "id": "articulating-mark-provenance",
+  "title": "Every articulating carries an explicit finite provenance of primitive marks",
+  "module": "Obsmetrologia.Articulation.Articulating.MarkProvenance",
+  "headline": "Obsmetrologia.Articulating.head_mark_mem_markList",
+  "declarations": [
+    "Obsmetrologia.Utterance.markList",
+    "Obsmetrologia.Utterance.token_mark_mem_markList",
+    "Obsmetrologia.Utterance.claim_mark_mem_markList",
+    "Obsmetrologia.Utterance.markList_length",
+    "Obsmetrologia.Articulating.markList",
+    "Obsmetrologia.Articulating.mark_mem_pair_head",
+    "Obsmetrologia.Articulating.mark_mem_pair_tail",
+    "Obsmetrologia.Articulating.head_token_mark_mem_markList",
+    "Obsmetrologia.Articulating.head_claim_mark_mem_markList",
+    "Obsmetrologia.Articulating.floor_token_mark_mem_markList",
+    "Obsmetrologia.Articulating.floor_claim_mark_mem_markList",
+    "Obsmetrologia.Articulating.head_mark_mem_markList",
+    "Obsmetrologia.Articulating.floor_mark_mem_markList",
+    "Obsmetrologia.Articulating.traceMarkList",
+    "Obsmetrologia.Articulating.mem_traceMarkList_of_mem_trace"
+  ],
+  "axiomBudget": [],
+  "requirements": [
+    {"id":"utterance-only-marks","statement":"An utterance mark list contains exactly the primitive marks already carried by its token and claim."},
+    {"id":"recursion-provenance","statement":"An articulating mark list is obtained recursively from head utterance marks and tail articulating marks."},
+    {"id":"head-floor-provenance","statement":"The head and floor token and claim marks belong to the articulating mark list."},
+    {"id":"trace-provenance","statement":"A mark carried by an articulating in a trace belongs to the trace mark list."}
+  ],
+  "prohibitions": [
+    {"id":"no-free-mark-carrier","statement":"Do not introduce a new primitive mark carrier; provenance is read only from existing utterance and articulating constructors."}
+  ],
+  "openQuestions": [],
+  "corpus": [
+    "lib/emsenn/services/561-group/services/science-services-section/services/information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/obsmetrologia/Obsmetrologia/Primitive/Mark.lean",
+    "lib/emsenn/services/561-group/services/science-services-section/services/information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/obsmetrologia/Obsmetrologia/Articulation/Articulating/Utterance.lean",
+    "lib/emsenn/services/561-group/services/science-services-section/services/information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/obsmetrologia/Obsmetrologia/Articulation/Articulating.lean"
+  ],
+  "references": [],
+  "blueprint": {
+    "chapter": "two-primitives",
+    "chapterFile": "02-two-primitives",
+    "file": "primitives/03-articulating-mark-provenance",
+    "section": "Articulating carries primitive-mark provenance",
+    "label": "thm:articulating-mark-provenance",
+    "title": "Every articulated carrier is supported by admitted primitive marks",
+    "statement": "Primitive marks visible at an articulating head or floor, and marks carried by any articulating in a trace, occur in a recursively accumulated mark-provenance list derived only from the utterances already present.",
+    "uses": ["def:mark","def:utterance","def:articulating"]
+  },
+  "verse": {"module":"ObsmetrologiaManual.BookI.ArticulatingMarkProvenance"}
+}

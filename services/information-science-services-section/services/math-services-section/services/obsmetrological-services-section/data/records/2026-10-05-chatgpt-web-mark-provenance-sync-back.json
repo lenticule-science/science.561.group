@@ -1,0 +1,13 @@
+{
+  "type": "ObsmetrologiaDegradedModeSyncBack",
+  "version": 1,
+  "canonicalReceiver": "Semioverse/MetroPlat",
+  "sourceCarrier": "emsenn/bare-cedar-fog",
+  "sourceBase": "10080c3984dc290c5fcb4a9a3dbc4c92f5726b5b",
+  "proofCandidateBranch": "chatgpt-web/obsmetrologia-mark-provenance",
+  "proofCandidateHead": "b94ef092e7a12279ab2fff85db66992b87ad5fb9",
+  "stateDelta": "Three red proof-work frontiers and three source modules now make mark provenance explicit through articulating, predication and measured evidence.",
+  "canonicalReceiverState": "ERROR/DEGRADED",
+  "wake": "Admit the three proof work orders through the canonical proof line, run build/axiom/blueprint/manual gates, then read accepted receipts back into Semioverse.",
+  "syncBackRequired": true
+}
