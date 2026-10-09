@@ -82,5 +82,6 @@ import Obsmetrologia.Closure.RegimeGate
 import Obsmetrologia.Closure.RegimeCofinality
 import Obsmetrologia.Closure.RegimeCycle
 import Obsmetrologia.Closure.RegimeComposition
+import Obsmetrologia.Closure.OmegaJump
 import Obsmetrologia.Closure.Monad.LaxSlack
 import Obsmetrologia.Settlement
