@@ -127,9 +127,14 @@
       "science-services-section/services/engineering-science-services-section/services/systems-engineering-science-services-section/content/text/glossary/terms/mape-k.md",
       "science-services-section/content/text/documents/articles/notes/2026/07/11/2026-07-11-research-on-mape-k.md",
       "engineering-services-section/content/text/documents/articles/notes/2026/10/09/2026-10-09-note-on-receiving-the-open-pull-requests.md",
-      "pr:red-cup-engineering/computer-services-section#49"
+      "pr:red-cup-engineering/computer-services-section#49",
+      "science-services-section/services/natural-science-services-section/services/biological-science-services-section/services/botany-services-section/data/records/2026-10-10-minnesota-indoor-cannabis-cultivation.json",
+      "science-services-section/services/natural-science-services-section/services/biological-science-services-section/services/botany-services-section/data/records/2026-10-10-minnesota-cannabis-sourcing.json",
+      "science-services-section/services/natural-science-services-section/services/biological-science-services-section/services/agricultural-science-services-section/content/text/documents/articles/notes/2026/10/10/2026-10-10-note-on-indoor-cannabis-cultivation.md",
+      "science-services-section/services/social-science-services-section/services/law-science-services-section/content/text/documents/articles/notes/2026/10/10/2026-10-10-note-on-minnesota-adult-use-home-cultivation.md",
+      "engineering-services-section/services/computer-engineering-services-section/content/text/documents/articles/notes/2026/10/10/2026-10-10-note-on-re-homing-the-home-grow-pull-request.md"
     ],
-    "not-held": "No Minnesota cultivation law or indoor-cultivation setpoint record is held in the science section; the data sit in pull request computer-services-section#49 and a lenticule-science dataset it copies.",
+    "not-held": "Held since 2026-10-10 (grow-assist pass): the Minnesota cultivation record (legal limits cited, per-stage setpoints with vapor-pressure deficit, chemotype link) and the Minnesota sourcing record are in the botany section's data/records, re-homed from computer-services-section#49; open questions remain in the agronomy and law notes.",
     "unresolved-authority": "What \"finding cannabis\" means is not stated by the Leader. The record reads it as sourcing and holds R4 at could."
   }
 }
