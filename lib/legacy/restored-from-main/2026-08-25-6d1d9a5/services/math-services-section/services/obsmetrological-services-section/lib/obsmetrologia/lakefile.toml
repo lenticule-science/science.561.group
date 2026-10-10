@@ -1,0 +1,22 @@
+name = "Obsmetrologia"
+defaultTargets = ["Obsmetrologia"]
+
+[leanOptions]
+autoImplicit = false
+relaxedAutoImplicit = false
+pp.unicode.fun = true
+
+[[lean_lib]]
+name = "Obsmetrologia"
+
+[[lean_exe]]
+name = "checknames"
+root = "scripts.CheckNames"
+
+[[lean_exe]]
+name = "auditfrontier"
+root = "scripts.AuditFrontier"
+
+[[lean_exe]]
+name = "conformance"
+root = "conformance.ConformanceVectors"

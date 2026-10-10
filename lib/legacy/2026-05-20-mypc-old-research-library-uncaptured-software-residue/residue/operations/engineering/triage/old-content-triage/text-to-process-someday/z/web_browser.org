@@ -1,0 +1,12 @@
+#+title: Web browser
+#+begin_head
+#+ghe_schema: reference-0.1.1
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-22 Tue 16:01]
+#+roam_tags: term
+#+end_head
+#+name: web-browser-definition-text
+#+begin_quote
+A */Web browser/* is a piece of [[file:software.org][software]] which allows the [[file:computer_user.org][user]] to request [[file:web.org][Web]] resources, usually via [[file:http.org][HTTP]].
+#+end_quote

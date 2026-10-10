@@ -1,0 +1,31 @@
+#+TITLE: teraum
+#+author: emsenn
+* development logs
+** a fresh look at things
+I've been away from working on the MUD for a bit as I think about what a decolonial MUD would look like.
+
+I've been wondering if the concept of a /thing/, or "entity" in more common game-design lingo, is something I should leave behind
+
+it's encouraged to view lakhotiyapi - and other languages of the cultures indigenous to Turtle Island - as an action-based language
+
+in coding this could be viewed as, perhaps, centering the function (if not meeting the definition of functional programming)
+
+so, lets say we've got a rabbit, Sniffs Often
+
+what makes it a rabbit is that it can do rabbit-like actions
+
+perhaps that's the difference:
+
+rather than qualities of things (components of entities), actions?
+
+=(sniff air)= would return a scent, but what that scent would be perceived as would change based on the perceiver
+
+and other actions, =(dig dirt)=, return a scoop of dirt - this time the volume would change depending on what did the digging
+
+...well, that's still not...
+
+the scent would be meant to be its own "action," right? as would the dirt that got dug
+
+#+begin_src racket
+  (define sniffs-often (lambda (f) (f sniffs-often)
+#+end_src

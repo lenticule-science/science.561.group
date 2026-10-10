@@ -1,0 +1,10 @@
+Written to `operations/engineering/fars/docs/contacts-design.md`. Key decisions:
+
+- **Three entity types**: `person`, `organization`, `group` — all with the same frontmatter pattern the repo already uses
+- **`relationship-to` as structured list**: each entry has `target`, `type`, `since`, `context`, `active` — bidirectional by convention, enforceable by validation
+- **Directory**: `operations/command/personnel/contacts/` with `people/`, `organizations/`, `groups/` subdirs — operational records, not library content
+- **Privacy**: private contacts gitignored at `contacts/private/`; no plaintext PII in tracked files
+- **Graph**: zero changes needed — existing EAVT pipeline already converts frontmatter to graph entities and edges
+- **Migration path**: existing person files (sungmanitu, es) get contact files; project directories stay for work artifacts
+
+The existing `sungmanitu.md` already has `type: person` with the right shape, so the design is consistent with what's already in the repo.

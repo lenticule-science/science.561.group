@@ -1,0 +1,62 @@
+name: Lean Audit
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "37 9 * * 3"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: lean-audit-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  independent-checkers:
+    name: Independent Lean checkers
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Build and run independent checkers
+        uses: leanprover/lean-action@v1
+        with:
+          auto-config: false
+          lake-package-directory: .
+          leanchecker: true
+          nanoda: true
+          nanoda-allow-sorry: true
+          use-mathlib-cache: false
+
+      - name: Run local verification contract
+        run: make check
+
+  project-audits:
+    name: Project structure audits
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Set up Node from package manager metadata
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24
+
+      - name: Enable pnpm through Corepack
+        run: corepack enable
+
+      - name: Run project audits
+        run: pnpm run lean:audit
+
+      - name: Upload audit surfaces
+        if: always()
+        uses: actions/upload-artifact@v5
+        with:
+          name: infomaterial-audit-surfaces
+          path: sites/docs/coverage/
+          if-no-files-found: ignore

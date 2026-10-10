@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://561.group/swarm-intelligence/agentic-orchestration-platform/agent-community/agent-community.schema.json",
+  "title": "Agent community (entity-set view of agent grouping)",
+  "description": "Per lab/.../entity-set/library/entity/library/agent-community/: a community of agent-entities, distinguished from agentic-system by perspective — agent-community is the entity-set view (a set of agents), agentic-system is the structured-system view (a system containing those agents). Swarm is a specific kind of agent-community AND a specific kind of agentic-system.",
+  "kind": "object",
+  "type": "object",
+  "required": ["id", "agents", "relationsSystem", "evidence"],
+  "additionalProperties": false,
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$" },
+    "agents": {
+      "type": "array",
+      "items": { "type": "string", "pattern": "^[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$" },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "relationsSystem": { "type": "string", "minLength": 1 },
+    "evidence": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "minItems": 1,
+      "uniqueItems": true
+    }
+  }
+}

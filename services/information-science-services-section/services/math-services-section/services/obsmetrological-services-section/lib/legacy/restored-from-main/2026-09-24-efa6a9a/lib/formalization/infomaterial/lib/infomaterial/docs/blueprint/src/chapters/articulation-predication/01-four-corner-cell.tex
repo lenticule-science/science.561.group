@@ -1,0 +1,51 @@
+\section{The articulation four-cell}
+
+\begin{proposition}[Articulation cell]\label{thm:articulation-cell}\lean{Infomaterial.Articulating.Cell}\leanok\uses{def:utterance, def:articulating}
+An \emph{articulation cell} is articulating's codomain over an utterance:
+the utterance together with two Boolean status bits,
+\texttt{tokenArticulated} and \texttt{claimArticulated}. It introduces no
+new semantic datum; it records the two-sided status of the utterance that
+articulating has brought into view.
+\end{proposition}
+
+\begin{proposition}[The four corners]\label{thm:corner}\lean{Infomaterial.Articulating.Corner}\leanok\uses{thm:articulation-cell}
+The \emph{corners} are the four names for the four status pairs in
+$\mathrm{Bool}\times\mathrm{Bool}$: \texttt{potential}, \texttt{active},
+\texttt{absurd}, and \texttt{stable}. The partition is the two-slot shape of
+an utterance read as an incidence object, not an added taxonomy.
+\end{proposition}
+
+\begin{proposition}[Status correspondence]\label{thm:status-correspondence}\lean{Infomaterial.Articulating.Corner.ofStatus}\leanok\uses{thm:corner}
+The map \texttt{ofStatus} classifies a token/claim status pair as a corner,
+and \texttt{toStatus} reads the named corner back as that pair. This is the
+coordinate chart through which the four-corner cell is read.
+\end{proposition}
+
+\begin{lemma}[Corners biject with status pairs]\label{thm:corner-iso}\lean{Infomaterial.Articulating.Corner.ofStatus_toStatus}\leanok\uses{thm:corner, thm:status-correspondence}
+Reading a corner to its status pair and classifying back recovers the same
+corner. Together with the converse status round-trip, this says the named
+corners are exactly the points of $\mathrm{Bool}\times\mathrm{Bool}$.
+\end{lemma}
+
+\begin{theorem}[There are exactly four cells]\label{thm:corner-card}\lean{Infomaterial.Articulating.Corner.card_eq_four}\leanok\uses{thm:corner, thm:corner-iso}
+The list of all corners has length four. The cardinality is forced by the
+two independent articulation statuses: two sides give four corners.
+\end{theorem}
+
+\begin{proposition}[The corner of a cell]\label{thm:articulation-cell-corner}\lean{Infomaterial.Articulating.Cell.corner}\leanok\uses{thm:articulation-cell, thm:corner, thm:status-correspondence}
+Every articulation cell has a unique corner, obtained by classifying its two
+status bits. This is the projection from articulating's codomain to the
+four-corner incidence base.
+\end{proposition}
+
+\begin{proposition}[The potential presentation]\label{thm:articulation-cell-initial}\lean{Infomaterial.Articulating.Cell.initial}\leanok\uses{thm:articulation-cell-corner}
+For an utterance $u$, the initial cell $\texttt{initial}\,u$ has both status
+bits false. It is the potential corner over $u$, the presentation from which
+predicating is allowed to depart.
+\end{proposition}
+
+\begin{proposition}[No empty cell]\label{thm:corner-surjective}\lean{Infomaterial.Articulating.Cell.corner_surjective}\leanok\uses{thm:articulation-cell-corner, thm:corner-iso}
+Over any utterance, every corner is realized by some articulation cell. The
+four-corner partition is therefore inhabited at every point of the utterance
+base.
+\end{proposition}

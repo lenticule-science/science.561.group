@@ -14,7 +14,9 @@
     ]
   },
   "notes": [
-    "../../content/text/documents/articles/notes/2026/10/08/2026-10-08-cybernetic-planning.md"
+    "../../content/text/documents/articles/notes/2026/10/08/2026-10-08-cybernetic-planning.md",
+    "../../services/cooperative-pooling-science-services-section/content/text/documents/articles/notes/2026/10/08/2026-10-08-note-on-the-pool-as-a-viable-system.md",
+    "../../services/cooperative-pooling-science-services-section/content/text/documents/articles/notes/2026/10/08/2026-10-08-note-on-interpretive-load-per-settled-row.md"
   ],
   "sources": [
     {
@@ -180,6 +182,78 @@
       "notFound": [
         "Journal, volume and pages are not stated in the author-hosted PDF; it is dated July 1993."
       ]
+    },
+    {
+      "item": {
+        "id": "medina2006",
+        "type": "article-journal",
+        "title": "Designing Freedom, Regulating a Nation: Socialist Cybernetics in Allende's Chile",
+        "author": [
+          {
+            "family": "MEDINA",
+            "given": "EDEN"
+          }
+        ],
+        "container-title": "Journal of Latin American Studies",
+        "publisher": "Cambridge University Press (CUP)",
+        "volume": "38",
+        "issue": "3",
+        "page": "571-606",
+        "issued": {
+          "date-parts": [
+            [
+              2006
+            ]
+          ]
+        },
+        "DOI": "10.1017/s0022216x06001179",
+        "URL": "https://doi.org/10.1017/s0022216x06001179"
+      },
+      "readFrom": "abstract",
+      "findings": [
+        {
+          "finding": "Under Stafford Beer's guidance a Chilean team built cybernetic models of nationalised factories and a network for rapid transmission of economic data between government and factory floor; the structure reflected the government's ideology.",
+          "exactSourceLanguage": "created a network for the rapid transmission of economic data between the government and the factory floor."
+        }
+      ],
+      "observedAt": "2026-10-08",
+      "design": "other",
+      "population": "Project Cybersyn, Chile 1970-1973"
+    },
+    {
+      "item": {
+        "id": "espejo2011",
+        "type": "chapter",
+        "title": "The Viable System Model: Effective Strategies to Manage Complexity",
+        "author": [
+          {
+            "family": "Espejo",
+            "given": "Raul"
+          },
+          {
+            "family": "Reyes",
+            "given": "Alfonso"
+          }
+        ],
+        "container-title": "Organizational Systems",
+        "publisher": "Springer Berlin Heidelberg",
+        "page": "91-112",
+        "issued": {
+          "date-parts": [
+            [
+              2011
+            ]
+          ]
+        },
+        "DOI": "10.1007/978-3-642-19109-1_6",
+        "URL": "https://doi.org/10.1007/978-3-642-19109-1_6"
+      },
+      "readFrom": "abstract",
+      "findings": [],
+      "observedAt": "2026-10-08",
+      "notFound": [
+        "No abstract is carried by the register; the chapter or book body was not read. The record holds this row as a pointer only and no claim in a note rests on it."
+      ]
     }
   ],
   "searches": [
@@ -300,6 +374,116 @@
         "peters2016"
       ],
       "reading": "Publisher description for Peters 2016 carried in the Crossref record; the book itself was not read."
+    },
+    {
+      "register": "crossref",
+      "variables": {
+        "query.bibliographic": "Beer Brain of the Firm",
+        "rows": "4"
+      },
+      "observedAt": "2026-10-08",
+      "count": 1204999,
+      "included": []
+    },
+    {
+      "register": "crossref",
+      "variables": {
+        "query.bibliographic": "Medina Cybernetic Revolutionaries Technology and Politics in Allende's Chile",
+        "rows": "4"
+      },
+      "observedAt": "2026-10-08",
+      "count": 5592162,
+      "included": []
+    },
+    {
+      "register": "crossref",
+      "variables": {
+        "query.bibliographic": "Beer Platform for Change",
+        "rows": "4"
+      },
+      "observedAt": "2026-10-08",
+      "count": 1392199,
+      "included": []
+    },
+    {
+      "register": "crossref",
+      "variables": {
+        "query.bibliographic": "Espejo Gill The viable system model as a framework for understanding organizations",
+        "rows": "4"
+      },
+      "observedAt": "2026-10-08",
+      "count": 8217698,
+      "included": []
+    },
+    {
+      "register": "crossref",
+      "variables": {
+        "query.bibliographic": "Medina Designing freedom, regulating a nation: socialist cybernetics in Allende's Chile",
+        "rows": "3"
+      },
+      "observedAt": "2026-10-08",
+      "count": 908697,
+      "included": []
+    },
+    {
+      "register": "crossref",
+      "variables": {
+        "query.bibliographic": "Beer Stafford Brain of the Firm managerial cybernetics of organization",
+        "rows": "5"
+      },
+      "observedAt": "2026-10-08",
+      "count": 1730560,
+      "included": []
+    },
+    {
+      "register": "crossref",
+      "variables": {
+        "query.bibliographic": "Espejo viable system model Beer",
+        "rows": "5"
+      },
+      "observedAt": "2026-10-08",
+      "count": 6682121,
+      "included": []
+    },
+    {
+      "register": "crossref",
+      "variables": {
+        "query.bibliographic": "Beer Heart of Enterprise",
+        "rows": "5"
+      },
+      "observedAt": "2026-10-08",
+      "count": 1150771,
+      "included": []
+    },
+    {
+      "register": "crossref",
+      "variables": {
+        "query.bibliographic": "Cockshott Cottrell Towards a New Socialism computerised planning",
+        "rows": "5"
+      },
+      "observedAt": "2026-10-08",
+      "count": 5971510,
+      "included": []
+    },
+    {
+      "register": "crossref",
+      "variables": {
+        "query.bibliographic": "Cockshott Cottrell Information and economics: a critique of Hayek",
+        "rows": "5"
+      },
+      "observedAt": "2026-10-08",
+      "count": 4014354,
+      "included": []
+    },
+    {
+      "register": "crossref",
+      "variables": {
+        "query.bibliographic": "Peters Red Plenty OGAS Soviet cybernetics Glushkov",
+        "rows": "5"
+      },
+      "observedAt": "2026-10-08",
+      "count": 1051015,
+      "included": []
     }
   ]
 }
