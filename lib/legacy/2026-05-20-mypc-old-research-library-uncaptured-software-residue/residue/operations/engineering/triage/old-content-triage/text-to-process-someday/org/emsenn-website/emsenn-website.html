@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2019-06-11 Tue 16:22 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>emsenn's Website</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="emsenn" />
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2019 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">emsenn's Website</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#emsenn-website">emsenn's Website</a>
+<ul>
+<li><a href="#org21998c5">Overview</a></li>
+<li><a href="#operations">Operations</a></li>
+<li><a href="#hugo-configuration">Hugo Configuration</a></li>
+<li><a href="#git-configuration">Git Configuration</a></li>
+<li><a href="#native-content">Native Content</a></li>
+<li><a href="#native-data">Native Data</a></li>
+</ul>
+</li>
+<li><a href="#org489d838">Supplements</a>
+<ul>
+<li><a href="#org1ea67dc">Index</a></li>
+<li><a href="#readme">README</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgfcce000" class="outline-2">
+<h2 id="introduction">Introduction</h2>
+<div class="outline-text-2" id="text-introduction">
+<p>
+This collection of texts and data is a <i>draft</i>: it is unfinished and that should be considered when reading it. Special attention should be paid to text marked DRAFT, EDIT, or TK.
+</p>
+
+<p>
+This collection of texts and data contains the implementation of my <i>personal website</i>,
+and to a lesser extent an explanation of how and why it works.
+</p>
+
+<p>
+This collection of texts and data was created by me, emsenn, in the United States. To the extent possible under law, I have waived all copyright and related or neighboring rights to this document. This document was created for the benefit of the public. If you're viewing it on a remote server, you're encouraged to download your own copy. To learn how you can support me, see <a href="https://emsenn.net/donate">https://emsenn.net/donate</a>.
+</p>
+</div>
+</div>
+<div id="outline-container-org4e8935d" class="outline-2">
+<h2 id="emsenn-website">emsenn's Website</h2>
+<div class="outline-text-2" id="text-emsenn-website">
+</div>
+<div id="outline-container-org21998c5" class="outline-3">
+<h3 id="org21998c5">Overview</h3>
+<div class="outline-text-3" id="text-org21998c5">
+<p>
+My <i>personal website</i> is a <i>static website</i>: a collection of
+unchanging files on a <i>webserver</i>, that folk can retrieve. I emphasize
+the static nature of the site to highlight that there's no
+interactivity on the site - no comments or anything like that.
+</p>
+
+<p>
+I create the files with <i>Hugo</i>, a <i>static site generator</i>, from
+information extracted from this file. For instructions on using this
+file, see the <a href="#operations">"Operations"</a> section.
+</p>
+
+<p>
+Other sections contain the information to I extract:
+</p>
+<ul class="org-ul">
+<li><a href="#hugo-configuration">"Hugo Configuration"</a> contains <i>Hugo configuration</i> that informs
+<i>Hugo</i> and my chosen <i>Hugo themes</i>.</li>
+<li><a href="#git-configuration">"Git Configuration"</a> contains a few configuration files used by
+<i>Git</i>.</li>
+<li><a href="#native-content">"Native Content"</a> contains sections that I export with <i>Ox-Hugo</i>, into
+<i>Hugo</i>-compatible <i>Markdown</i>. The text of the webpage is here, in
+this document, formatted as <i>Org-mode</i> text (for the most part).</li>
+<li><a href="#native-data">"Native Data"</a> contains sections of <i>TOML</i>-serialized data, such as
+my recent activities and plans.</li>
+<li>[BROKEN LINK: included-content] includes sections that I export with <i>Ox-Hugo</i>,
+but the content itself is inside other files, outside the directory
+where I keep my website.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgd4d471b" class="outline-3">
+<h3 id="operations">Operations</h3>
+<div class="outline-text-3" id="text-operations">
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org7feb6d6">Install This Website</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org7feb6d6" class="outline-4">
+<h4 id="org7feb6d6">Install This Website</h4>
+<div class="outline-text-4" id="text-org7feb6d6">
+<p>
+Regardless of how you install this website, you'll need to install
+<i>Hugo</i>, which is not covered in this document.
+</p>
+</div>
+<div id="outline-container-orge2d6e24" class="outline-5">
+<h5 id="orge2d6e24">Install with Git</h5>
+<div class="outline-text-5" id="text-orge2d6e24">
+<div class="org-src-container">
+<pre class="src src-sh">git clone https://git.sr.ht/~emsenn/emsenn-website
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orgacad610" class="outline-5">
+<h5 id="orgacad610">Install from Org-mode Source</h5>
+<div class="outline-text-5" id="text-orgacad610">
+<p>
+This shell script makes all the directories Hugo will expect to have.
+</p>
+<div class="org-src-container">
+<pre class="src src-sh">mkdir -p ../{content,data,static}
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org253ebe1" class="outline-3">
+<h3 id="hugo-configuration">Hugo Configuration</h3>
+<div class="outline-text-3" id="text-hugo-configuration">
+<p>
+The configuration below <i>tangles</i> to <code>./build/theme.toml</code>. Explaining
+it in detail is beyond the scope of this document. <a href="https://gohugo.io/themes/">https://gohugo.io/themes/</a>
+</p>
+<div class="org-src-container">
+<pre class="src src-toml"><span style="color: #b9b9b9;"># </span><span style="color: #ababab;">baseURL = "https://emsenn.net"</span>
+<span style="color: #7c7c7c;">title</span> = <span style="color: #8e8e8e;">"emsenn"</span>
+<span style="color: #7c7c7c;">theme</span> = [<span style="color: #8e8e8e;">"hugo-personal-website-theme"</span>]
+[<span style="color: #a0a0a0;">author</span>]
+  <span style="color: #7c7c7c;">name</span> = <span style="color: #8e8e8e;">"emsenn"</span>
+  <span style="color: #7c7c7c;">homepage</span> = <span style="color: #8e8e8e;">"https://emsenn.net"</span>
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orgba08568" class="outline-3">
+<h3 id="git-configuration">Git Configuration</h3>
+<div class="outline-text-3" id="text-git-configuration">
+</div>
+<div id="outline-container-org669a4b7" class="outline-4">
+<h4 id="org669a4b7">Gitignore Configuration</h4>
+<div class="outline-text-4" id="text-org669a4b7">
+<div class="org-src-container">
+<pre class="src src-text">hugo
+emsenn-website.aux
+emsenn-website.log
+emsenn-website.out
+emsenn-website.toc
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orgb972d6d" class="outline-4">
+<h4 id="orgb972d6d">Gitmodules Configuration</h4>
+<div class="outline-text-4" id="text-orgb972d6d">
+<div class="org-src-container">
+<pre class="src src-text">[submodule "src/build/themes/hugo-personal-website-theme"]
+           path = themes/hugo-personal-website-theme
+           url = https://git.sr.ht/~emsenn/hugo-personal-website-theme
+</pre>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org92f7bcd" class="outline-3">
+<h3 id="native-content">Native Content</h3>
+<div class="outline-text-3" id="text-native-content">
+</div>
+<div id="outline-container-orgdf8decc" class="outline-4">
+<h4 id="orgdf8decc">My name is emsenn</h4>
+<div class="outline-text-4" id="text-orgdf8decc">
+<p>
+I'm a <b>writer</b> and <b>software</b> developer with a focus on the
+intersection of the two. This website is a collection of information
+about me as a person.
+</p>
+</div>
+</div>
+<div id="outline-container-orgb5ee7e0" class="outline-4">
+<h4 id="orgb5ee7e0">Contact</h4>
+<div class="outline-text-4" id="text-orgb5ee7e0">
+<p>
+<b><i>In a hurry?</i></b> Send an email to <a href="mailto:emsenn@emsenn.net">emsenn.net</a>.
+</p>
+</div>
+
+<div id="outline-container-org16437e6" class="outline-5">
+<h5 id="org16437e6">Overview</h5>
+<div class="outline-text-5" id="text-org16437e6">
+<p>
+This website is just one part of my representation online, and doesn't
+itself provide a means for people to communicate back with me. Below
+is a list of other digital representations I maintain. Interested in
+all my accounts? See ["Public Accounts"](<i>public-accounts</i>).
+</p>
+</div>
+</div>
+<div id="outline-container-orgc0c1915" class="outline-5">
+<h5 id="orgc0c1915">Email</h5>
+<div class="outline-text-5" id="text-orgc0c1915">
+<p>
+You can <b><i>send an email</i></b> to either me, privately or to my "public
+inbox." My private email is <a href="mailto:emsenn@emsenn.net">emsenn@emsenn.net</a>.
+</p>
+
+<p>
+But I prefer to receive messages through my "public inbox," in case
+whatever you want to say is something others would like to read my
+response to. And if you're asking a question about a piece of software
+I've made, you're more likely to get a quick response.
+</p>
+</div>
+</div>
+<div id="outline-container-org57a8948" class="outline-5">
+<h5 id="org57a8948">Microblogging</h5>
+<div class="outline-text-5" id="text-org57a8948">
+<p>
+I'm active within the <i>Fediverse</i>, a network of communication
+platforms. My main account is at <a href="https://tenforward.social/@emsenn">@emsenn@tenforward.social</a>.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org8965491" class="outline-4">
+<h4 id="org8965491">Support</h4>
+<div class="outline-text-4" id="text-org8965491">
+<p>
+I release as much of my work as I can into the <i>public domain</i>, so
+that anyone can use and change it however serves them best. That is
+made possible with financial contributions from humans like you. Thank
+you!
+</p>
+
+<p>
+I currently accept support through the following platforms:
+</p>
+
+<ul class="org-ul">
+<li>One-time through...
+<ul class="org-ul">
+<li><a href="https://www.paypal.me/emsenn">Paypal</a></li>
+<li><a href="https://ko-fi.com/emsenn">Ko-fi</a></li>
+</ul></li>
+<li>Recurring through...
+<ul class="org-ul">
+<li><a href="https://liberapay.com/emsenn/donate">Liberapay</a></li>
+</ul></li>
+</ul>
+
+<p>
+If there is another service through which you'd like to contribute,
+please <a href="mailto:emsenn@emsenn.net">send an email</a>. <b><i>Please note,</i></b> as my work is released into the
+public domain, financial contributions do not provide access to any
+"exclusive" content.
+</p>
+</div>
+</div>
+<div id="outline-container-orgb7c8404" class="outline-4">
+<h4 id="orgb7c8404">Services</h4>
+<div class="outline-text-4" id="text-orgb7c8404">
+</div>
+<div id="outline-container-orgc048d2d" class="outline-5">
+<h5 id="orgc048d2d">Tarot Reading</h5>
+<div class="outline-text-5" id="text-orgc048d2d">
+<p>
+I think <b><i>tarot readings</i></b> can be a wonderful problem-solving tool,
+regardless of the beliefs of anyone involved: they're a great way for
+<i>framing a question in a unique way</i>.
+</p>
+
+<p>
+I've structured my tarot readings like my other consultation sessions:
+you can click the button below to fill out a short form to apply. If
+my service seems like a good fit, we can schedule your session.
+Otherwise, I'll try to refer you to more useful information.
+</p>
+
+<p>
+Generally, I consider a tarot reading to be most useful when you
+<i>feel</i> like you're struggling with something, but can't seem to
+<i>think</i> clearly about the problem.
+</p>
+
+<p>
+If I accept you for a session, it'll take 30 to 40 minutes. We'll meet
+through an online video conference, but you don't have to use your
+microphone or video if you don't want. Afterward, you'll get a brief
+reporting on the cards that were drawn, and a recording of the
+session.
+</p>
+
+<blockquote>
+<p>
+"I wasn't interested in any of the mysticism behind tarot, but it
+didn't matter: emsenn's reading still helped me understand why I was
+butting heads with my coworker." -- Anonymous Client
+</p>
+</blockquote>
+
+<p>
+To apply for a session, please [send an
+email](<a href="mailto:emsen@emsenn.net">mailto:emsen@emsenn.net</a>) containing the following information:
+</p>
+<ul class="org-ul">
+<li>Some <b><i>personal information</i></b>: the <i>name</i> you'd like me to call you,
+and the <i>pronouns</i> you'd like me to use in reference to you.</li>
+<li>A mention of <b><i>this service</i></b>: Put <i>Tarot Reading</i> as your email's
+subject, or include it prominently in the body.</li>
+</ul>
+
+<p>
+/(I'm also developing free reading materials on this topic, so please
+[send an email](<a href="mailto:emsenn@emsenn.net">mailto:emsenn@emsenn.net</a>) if you're interested in
+receiving updates about that.)/
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgff95259" class="outline-4">
+<h4 id="orgff95259">Projects</h4>
+<div class="outline-text-4" id="text-orgff95259">
+<div class="org-src-container">
+<pre class="src src-markdown">+++
+<span style="color: #7c7c7c;">title </span><span style="color: #ababab;">= </span><span style="color: #8e8e8e;">"Projects"</span>
+<span style="color: #7c7c7c;">layout </span><span style="color: #ababab;">= </span><span style="color: #8e8e8e;">"media-package-list"</span>
+<span style="color: #7c7c7c;">mediaPackages </span><span style="color: #ababab;">= </span><span style="color: #8e8e8e;">[</span>
+  "<span style="color: #686868; text-decoration: underline;">https://git.sr.ht/~emsenn/brutstrap-css/blob/master/media-package.json"</span>
+]
+[menu.index]
+  weight = 4000
+  indentifier = "projects"
++++
+This page lists my projects.
+</pre>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org7c25797" class="outline-3">
+<h3 id="native-data">Native Data</h3>
+<div class="outline-text-3" id="text-native-data">
+</div>
+<div id="outline-container-org91a0b50" class="outline-4">
+<h4 id="org91a0b50">Recent Activities</h4>
+<div class="outline-text-4" id="text-org91a0b50">
+<div class="org-src-container">
+<pre class="src src-toml"><span style="color: #7c7c7c;">2019-06-09</span> = <span style="color: #8e8e8e;">"Started re-doing my personal site in _Hugo_."</span>
+<span style="color: #7c7c7c;">2019-06-10</span> = <span style="color: #8e8e8e;">"""</span>
+<span style="color: #8e8e8e;">Read Dan Wang's ["</span>Violence and the Sacred: College as an
+incubator of Girardian
+terror,<span style="color: #8e8e8e;">"](https://danwang.co/college-girardian-terror/),</span>
+<span style="color: #8e8e8e;">which discusses how our sameness leads to fierce and useless</span>
+<span style="color: #8e8e8e;">competition. Read Mike Mariani's ["</span>The Tragic, Forgotten History
+of
+Zombies,<span style="color: #8e8e8e;">"](https://www.theatlantic.com/entertainment/archive/2015/10/how-america-erased-the-tragic-history-of-the-zombie/412264/)</span>
+<span style="color: #8e8e8e;">which talks about how America's representation of zombies has</span>
+<span style="color: #8e8e8e;">lost its message.</span>
+<span style="color: #8e8e8e;">"""</span>
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org4fa8da5" class="outline-4">
+<h4 id="org4fa8da5">Plans</h4>
+<div class="outline-text-4" id="text-org4fa8da5">
+<div class="org-src-container">
+<pre class="src src-toml"><span style="color: #7c7c7c;">soon</span> = [
+  <span style="color: #8e8e8e;">"Improve this website."</span>,
+]
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org489d838" class="outline-2">
+<h2 id="org489d838">Supplements</h2>
+<div class="outline-text-2" id="text-org489d838">
+<p>
+:CUSTOM_ID: included-projects
+</p>
+</div>
+<div id="outline-container-org1ea67dc" class="outline-3">
+<h3 id="org1ea67dc">Index</h3>
+<div class="outline-text-3" id="text-org1ea67dc">
+<dl class="org-dl">
+<dt>personal website</dt><dd></dd>
+</dl>
+</div>
+</div>
+<div id="outline-container-org5873042" class="outline-3">
+<h3 id="readme">README</h3>
+<div class="outline-text-3" id="text-readme">
+</div>
+<div id="outline-container-orga959187" class="outline-4">
+<h4 id="orga959187">emsenn's Website</h4>
+<div class="outline-text-4" id="text-orga959187">
+<p>
+This collection of texts and data is a <i>draft</i>: it is unfinished and that should be considered when reading it. Special attention should be paid to text marked DRAFT, EDIT, or TK.
+</p>
+
+<p>
+This collection of texts and data contains the implementation of my <i>personal website</i>,
+and to a lesser extent an explanation of how and why it works.
+</p>
+
+<p>
+This collection of texts and data was created by me, emsenn, in the United States. To the extent possible under law, I have waived all copyright and related or neighboring rights to this document. This document was created for the benefit of the public. If you're viewing it on a remote server, you're encouraged to download your own copy. To learn how you can support me, see <a href="https://emsenn.net/donate">https://emsenn.net/donate</a>.
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: emsenn</p>
+<p class="date">Created: 2019-06-11 Tue 16:22</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

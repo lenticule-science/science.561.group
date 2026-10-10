@@ -1,0 +1,12 @@
+Report written to `operations/command/records/analyses/library-structural-health.md`.
+
+Key findings:
+
+- **2,808 content files** across 5 top-level domains (humanities 48%, science 31%, engineering 21%)
+- **3 missing `_index.md`** — `applied-sciences/` and `technology/` are invisible to Hugo
+- **Stray `technology/` domain** (4 files) duplicates content already in `engineering/tech/.../AI/agents/`
+- **14 files violate kebab-case** naming (spaces, uppercase)
+- **~10-15% broken cross-domain links** — mostly `../concepts/` vs `../terms/` mismatches and references to nonexistent files
+- **8 stub domains** with _index.md but zero content (african philosophy, chinese philosophy, etc.)
+- **12 empty terms/texts directories**
+- Top cross-referenced term: `sign.md` (semiotics) — linked 157 times across 77 files

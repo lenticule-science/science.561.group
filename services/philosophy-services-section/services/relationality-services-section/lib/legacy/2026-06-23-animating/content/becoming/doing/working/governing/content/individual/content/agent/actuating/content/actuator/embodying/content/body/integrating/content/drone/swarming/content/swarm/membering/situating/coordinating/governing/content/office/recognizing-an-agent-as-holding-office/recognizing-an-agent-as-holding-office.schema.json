@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://561.group/swarm-intelligence/agentic-orchestration-platform/office/recognizing-an-agent-as-holding-office/recognizing-an-agent-as-holding-office.schema.json",
+  "title": "Recognizing-an-agent-as-holding-office (positing-regime stance-commitment morphism; κ = ω)",
+  "description": "Regime: scott-continuous-posit-category (positing morphism, κ = ω). Recognition IS the act of committing a stance — the recognizer commits to 'this agent holds this office' and the agential-relations-system records the commitment. Per lab/.../agentic-systems/library/leader/library/leader-of-a-swarm/doing/working/recognizing-a-character-as-leader-of-a-swarm/_index.md (with 'character' → 'agent' per stabilized grammar): recognition's substrate-effect is operation-kind: mutation. The morphism's act-class is positing (committing-a-stance is the canonical positing-regime morphism); its substrate-effect classification (when projected into the seven operation-kinds) is mutation. The closure converges at exactly ω as the recognition propagates through the agential-relations-system to all participants — Scott-continuous because directed suprema commute (a recognition by participant A and an independent recognition by participant B compose as the supremum of their effects). Per lab's threshold pattern: 'the role's standing is the aggregate count of recognition files for the subject; today the threshold is one (any single recognition activates the role).' Lab uses doing/working/ wrapping (pre-stabilization grammar); current grammar drops it.",
+  "kind": "morphism",
+  "domain": "(agent, office, recognizer)",
+  "codomain": "agential-relations-system-row",
+  "variance": "extension",
+  "monotone": true,
+  "type": "object",
+  "required": ["agent", "office", "recognizer", "output", "evidence"],
+  "additionalProperties": false,
+  "properties": {
+    "agent": {
+      "type": "object",
+      "required": ["slug"],
+      "properties": {
+        "slug": { "type": "string", "minLength": 1 }
+      }
+    },
+    "office": {
+      "type": "object",
+      "required": ["slug"],
+      "properties": {
+        "slug": { "type": "string", "minLength": 1 }
+      }
+    },
+    "recognizer": {
+      "type": "object",
+      "required": ["slug"],
+      "properties": {
+        "slug": { "type": "string", "minLength": 1 }
+      }
+    },
+    "at": { "type": "string", "minLength": 1 },
+    "output": {
+      "type": "object",
+      "required": ["fromAgent", "predicate", "toAgent", "value", "regime", "operationKind"],
+      "additionalProperties": false,
+      "properties": {
+        "fromAgent": { "type": "string", "minLength": 1 },
+        "predicate": { "const": "recognizes-as-holding" },
+        "toAgent": { "type": "string", "minLength": 1 },
+        "office": { "type": "string", "minLength": 1 },
+        "value": { "enum": ["true", "top"] },
+        "regime": { "const": "scott-continuous-posit-category" },
+        "operationKind": { "const": "mutation" },
+        "at": { "type": "string", "minLength": 1 }
+      }
+    },
+    "evidence": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "minItems": 1,
+      "uniqueItems": true
+    }
+  }
+}

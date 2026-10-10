@@ -1,0 +1,1261 @@
+% RelMath blueprint — main content.
+%
+% This file is shared by both the web build (src/web.tex) and the print build
+% (src/print.tex). Author chapters here. Each formal claim links to its RelMath
+% declaration with \lean{...}; mark it \leanok once that declaration is built and
+% green (it then shows GREEN in the dependency graph; RED means stated-but-unproven).
+%
+% Conventions for this blueprint:
+%   \lean{RelMath.Foo}   names the formal declaration (checked by `leanblueprint checkdecls`)
+%   \leanok              this statement is formalized AND compiling in RelMath
+%   \uses{lbl}           this node depends on the node \label{lbl} (draws the graph edge)
+%   \notready            (omit \leanok) leaves the node RED — the open frontier
+%
+% The chapter skeleton below mirrors the RelMath import spine (see lean/RelMath.lean).
+% Chapters 1–2 are authored as the validated pattern. The remaining chapters are
+% stubs for the ultracode docs/prose workflow to expand, one module-cluster each.
+
+\chapter{Introduction}
+\label{ch:intro}
+
+RelMath is a dependency-free Lean~4 formalization of the mathematics latent in the
+561 corpus. It is not a port of received mathematics onto a Lean substrate; it is an
+\emph{inductive derivation tree}, read top-to-bottom as a single proof. The library
+admits free data in exactly two places --- the atomic \emph{marks}
+(Chapter~\ref{ch:primitives}) and the \emph{articulating} recursion --- and every
+construction below those two is \emph{derived}: no \texttt{axiom}, \texttt{opaque},
+\texttt{constant}, or \texttt{sorry} appears past the base.
+
+This blueprint is the prose half of that project. Where the corpus states a notion in
+sloppy natural language, a blueprint node restates it precisely and links it (via the
+\texttt{\textbackslash lean\{\dots\}} macro) to the Lean declaration that discharges it.
+The dependency graph this generates is the project's live frontier: green nodes are
+formalized, red nodes are the prose that still awaits its proof.
+
+\chapter{The two primitives}
+\label{ch:primitives}
+
+Everything in RelMath flows from two admissions of free data. This chapter fixes
+them. They are the \emph{only} primitives; the discipline of the whole library is
+that nothing below them is free.
+
+\section{Marks}
+
+\begin{definition}[Mark]
+  \label{def:mark}
+  \lean{RelMath.Mark}
+  \leanok
+  A \emph{mark} is the arbitrary atomic primitive of the system: assembled from
+  nothing, with no internal structure, it is where decomposition stops. Its on-disk
+  surface form is a finite string, but the string is \emph{presentation, not
+  identity} --- two marks may share a surface yet differ in role.
+\end{definition}
+
+\begin{definition}[Kind]
+  \label{def:kind}
+  \lean{RelMath.Kind}
+  \leanok
+  \uses{def:mark}
+  A mark is a genus with two \emph{kinds}, \emph{token} and \emph{claim}, dual and
+  distinguished by position: in an utterance the token is first (identity-carrying,
+  ``which one'') and the claim second (content-carrying, ``what is said'').
+\end{definition}
+
+\begin{lemma}[Exactly two kinds]
+  \label{lem:two-kinds}
+  \lean{RelMath.Kind.two_kinds}
+  \leanok
+  \uses{def:kind}
+  Every kind is either \texttt{token} or \texttt{claim}. The cardinality \emph{two}
+  is forced, not chosen: one kind would collapse the four-cell codomain of
+  articulating to two statuses, and three kinds would oversaturate it to eight cells,
+  for which the system has no derivation.
+\end{lemma}
+
+\begin{lemma}[Token and claim are distinct]
+  \label{lem:token-ne-claim}
+  \lean{RelMath.Kind.token_ne_claim}
+  \leanok
+  \uses{def:kind}
+  The duality of the two kinds is real, not nominal: \texttt{token} $\neq$
+  \texttt{claim}.
+\end{lemma}
+
+\section{Utterances and articulating}
+
+\begin{definition}[Utterance]
+  \label{def:utterance}
+  \lean{RelMath.Utterance}
+  \leanok
+  \uses{def:mark, def:kind}
+  An \emph{utterance} is the ordered pair $(\text{token}, \text{claim})$ --- the
+  domain of articulating. The ordering of the pair \emph{is} the kind distinction of
+  Definition~\ref{def:kind}.
+\end{definition}
+
+\begin{definition}[Articulating]
+  \label{def:articulating}
+  \lean{RelMath.Articulating}
+  \leanok
+  \uses{def:utterance}
+  \emph{Articulating} is the base morphism: the first arrow of the generative
+  unfolding, from which every other morphism is reached. Inductively it is either an
+  innermost utterance (\texttt{utter}, the recursion's primitive floor) or an
+  utterance articulated over a further articulating (\texttt{pair}, the pair
+  $[\text{utterance}, \text{articulating}]$). This is the \emph{second and last}
+  admission of free data in RelMath.
+\end{definition}
+
+\begin{definition}[Floor]
+  \label{def:floor}
+  \lean{RelMath.Articulating.floor}
+  \leanok
+  \uses{def:articulating}
+  Every articulating bottoms out at a primitive utterance, its \emph{floor},
+  recovered by descending through the \texttt{pair} chain. Totality of \texttt{floor}
+  witnesses that grounding in primitive marks yields finite inhabitants.
+\end{definition}
+
+\begin{lemma}[Articulating is one-way]
+  \label{lem:articulating-oneway}
+  \lean{RelMath.Articulating.utter_ne_pair}
+  \leanok
+  \uses{def:articulating}
+  A primitive floor is never a nested pair: \texttt{utter}~$u \neq$ \texttt{pair}~$v\
+  a$. No arrow collapses the one-way structure --- to descend is to derive, never to
+  un-derive. This is the Curry--Howard directionality the filepath-as-proof
+  discipline rests on.
+\end{lemma}
+
+\chapter{The Articulation Cell and Predication}\label{ch:predicating}
+
+The previous chapter left us with articulating: the act that takes an utterance --- a two-sided datum carrying a token in identity role and a claim in content role --- and brings it into being as something on which work can begin. But articulating, considered in isolation, only \emph{produces} a thing; it does not yet say what becomes of that thing as the two sides are worked through. This chapter supplies the missing codomain. We ask: once articulating has acted, what \emph{shape} does its output inhabit? The answer is forced, not chosen. Because an utterance has exactly two articulable sides --- token and claim --- and each side is either articulated or not, the codomain partitions into precisely four cells. This is the articulation four-cell, and it is the first place in the corpus where a cardinality is \emph{derived} rather than posited.
+
+We then take the single most important morphism out of that codomain: the one issuing from the \emph{potential} cell, the corner where neither side has yet been articulated. This morphism is predicating. Where articulating merely brings a cell into being, predicating says something \emph{of} it --- it asserts a predicate over the cell and orients that assertion from a subject toward an object. The remarkable fact, and the organizing claim of this chapter, is that the assertions predicating produces are \emph{arrows}: they compose, they carry identities, and so they generate a category. Category theory, in this development, is not a neighboring discipline filed for reference; it is literally \emph{what this morphism produces}. The object of that generated category is the predication cell $\varphi = (s, p, o)$, an oriented assertion-position running from a subject $s$, through a predicate $p$, to an object $o$, with $(s,p,o)$ and $(o,p,s)$ kept distinct so that orientation is real.
+
+Throughout, the discipline of the corpus holds: no free data is introduced. A cell is an utterance together with two Booleans; the four corners are recovered as the image of $\mathrm{Bool}\times\mathrm{Bool}$. An entity is a mark in identity role and a predicate is a mark in content role, so both descend from the mark of Chapter~1. The seed of a predication is the reflexive triple $(t, c, t)$ read straight off an utterance's token and claim; cells with $s \neq o$ arise only by composing such seeds drawn from sibling utterances of the articulating recursion, never by postulating an entity from nothing.
+
+\section{The articulation four-cell}
+
+Articulating's codomain is not a fresh datum but a record kept against the utterance: for each of its two sides, whether that side has yet been articulated. We package this as a structure over \texttt{Utterance} carrying two Boolean statuses, and we name the four resulting corners. The headline of the section is that there are exactly four of them --- a partition cardinality proved from two-sidedness, where one kind would have given two corners and three kinds eight.
+
+\begin{definition}[Articulation cell]\label{def:articulation-cell}\lean{RelMath.ArticulationCell}\leanok\uses{def:utterance, def:articulating}
+An \emph{articulation cell} is what an utterance becomes once articulating acts on it: the underlying \texttt{Utterance} together with two Boolean flags, \texttt{tokenArticulated} and \texttt{claimArticulated}, recording for each side whether it has been articulated. It is pure structure over \texttt{Utterance} and \texttt{Bool}; no new data is introduced. The codomain of articulating is exactly the type of these cells.
+\end{definition}
+
+\begin{definition}[The four corners]\label{def:corner}\lean{RelMath.Corner}\leanok\uses{def:articulation-cell}
+The \emph{corners} are four names --- \texttt{potential}, \texttt{active}, \texttt{absurd}, \texttt{stable} --- for the four points of $\mathrm{Bool}\times\mathrm{Bool}$. They carry no data of their own. By $(\text{token},\text{claim})$ status: \texttt{potential} is $(\text{no},\text{no})$, the initial cell where neither side is articulated; \texttt{active} is $(\text{yes},\text{no})$, the token articulated and the claim not, next on the natural path; \texttt{absurd} is $(\text{yes},\text{yes})$, both sides articulated; \texttt{stable} is $(\text{no},\text{yes})$, a claim without a token, off the natural path.
+\end{definition}
+
+\begin{definition}[Status correspondence]\lean{RelMath.Corner.ofStatus}\leanok\uses{def:corner}
+The classification \texttt{ofStatus} sends a $(\text{token},\text{claim})$ Boolean pair to the corner it names, and its inverse \texttt{toStatus} reads a corner back to its status pair. These witness the bijection between the corners and $\mathrm{Bool}\times\mathrm{Bool}$ through which the whole four-cell structure runs.
+\end{definition}
+
+\begin{lemma}[Corners biject with status pairs]\label{def:corner-iso}\lean{RelMath.Corner.ofStatus_toStatus}\leanok\uses{def:corner}
+Reading a corner to its status pair and classifying back recovers the corner: $\texttt{ofStatus}(c.\texttt{toStatus}.1)(c.\texttt{toStatus}.2) = c$. Together with the converse round-trip on status pairs, this establishes that \texttt{Corner} is a faithful set of names for $\mathrm{Bool}\times\mathrm{Bool}$ --- the corners neither collapse nor multiply.
+\end{lemma}
+
+\begin{theorem}[There are exactly four cells]\label{def:corner-card}\lean{RelMath.Corner.card_eq_four}\leanok\uses{def:corner, def:corner-iso}
+The list of all corners has length four: $\texttt{all.length} = 4$. This is the headline of the stage. The partition's cardinality is \emph{derived} from the two-sidedness of the utterance, not posited: a single articulable side would give two cells, three would give eight, and exactly two gives four. The four-cell shape that pervades the corpus has its origin here.
+\end{theorem}
+
+\begin{definition}[The corner of a cell]\label{def:articulation-cell-corner}\lean{RelMath.ArticulationCell.corner}\leanok\uses{def:articulation-cell, def:corner}
+Every articulation cell sits in exactly one corner, read off its two statuses by \texttt{ofStatus}. This is the projection of the codomain onto the four-element partition.
+\end{definition}
+
+\begin{definition}[The potential presentation]\label{def:articulation-cell-initial}\lean{RelMath.ArticulationCell.initial}\leanok\uses{def:articulation-cell-corner}
+For any utterance $u$, the cell $\texttt{initial}\,u = \langle u, \text{false}, \text{false}\rangle$ is the one articulating's codomain initially presents: neither side articulated. It sits in the \texttt{potential} corner, as \texttt{corner\_initial} records. This is the source from which predicating departs.
+\end{definition}
+
+\begin{proposition}[No empty cell]\label{def:corner-surjective}\lean{RelMath.ArticulationCell.corner_surjective}\leanok\uses{def:articulation-cell-corner}
+The corner classification is surjective: over any chosen utterance, every corner is realized by some cell. The partition is genuine --- each of the four corners is inhabited, none is vacuous.
+\end{proposition}
+
+\section{Predication: the morphism out of the potential cell}
+
+We now take the morphism issuing from the \texttt{potential} corner. Its codomain is the predication category, whose object is the oriented triple $\varphi = (s, p, o)$. We first build the object and the seed that predicating produces, then exhibit the four canonical morphism classes --- the generators --- and the laws that make them a category.
+
+\begin{definition}[Entity and predicate]\label{def:entity-predicate}\lean{RelMath.Entity}\leanok\uses{def:mark, def:kind}
+An \emph{entity} is a mark in identity-carrying (token) role: a subject or object position of a predication. A \emph{predicate} is a mark in content-carrying (claim) role: the typed middle coordinate. Both are abbreviations for \texttt{Mark}; no new data is introduced, and proper typing of the predicate is deferred downstream to positing and valuation rather than imposed at this base. The companion declaration \texttt{RelMath.Predicate} fixes the second role.
+\end{definition}
+
+\begin{definition}[The predication cell]\label{def:predication}\lean{RelMath.PredicationCell}\leanok\uses{def:entity-predicate, def:articulation-cell-corner}
+The object of the predication category is the \emph{predication cell} $\varphi = (s, p, o)$: an oriented triple recording an assertion-position from subject $s$, through predicate $p$, to object $o$. As a structure it bundles \texttt{subject} and \texttt{object} entities around a \texttt{predicate}. Orientation is part of the datum: $(s,p,o)$ and $(o,p,s)$ are distinct cells whenever $s \neq o$. This is the headline export of the chapter, on which the downstream development of category theory and predicate logic rests.
+\end{definition}
+
+\begin{definition}[The reflexive seed]\label{def:predication-seed}\lean{RelMath.PredicationCell.seed}\leanok\uses{def:predication, def:utterance}
+From an utterance $u$ carrying token $t$ and claim $c$, predicating produces the \emph{seed} $\langle t, c, t\rangle$: the reflexive oriented triple whose subject and object are the same token. This is how two entities arise from one utterance without free data --- the diagonal case first, with off-diagonal cells reached only by later composition of sibling seeds.
+\end{definition}
+
+\begin{definition}[Predicating proper]\lean{RelMath.PredicationCell.predicating}\leanok\uses{def:predication-seed, def:articulation-cell-initial}
+\emph{Predicating} is the morphism out of the potential articulation cell. It is defined only where the cell sits in the \texttt{potential} (initial) corner --- this hypothesis is a required argument --- and there it returns the seed of the cell's utterance. Predicating thus descends precisely from the corner where neither side has yet been articulated, turning a brought-into-being cell into an asserted oriented triple.
+\end{definition}
+
+\section{The four canonical morphism classes and the category laws}
+
+The generators of the predication category are cellular reindexings of the $(\text{subject},\text{object})$ pair, together with specialization of the typed middle coordinate. We record each generator and then the laws --- involution, idempotence, functoriality, and the reality of orientation --- that exhibit them as a genuine category structure rather than mere notation.
+
+\begin{definition}[Converse]\label{def:predication-converse}\lean{RelMath.PredicationCell.converse}\leanok\uses{def:predication}
+The \emph{converse} of $\varphi = (s, p, o)$ is $(o, p, s)$: the orientation-reversing reindexing that swaps subject and object while fixing the predicate. It is the morphism class that witnesses directedness.
+\end{definition}
+
+\begin{definition}[Projections]\label{def:predication-proj}\lean{RelMath.PredicationCell.subjProj}\leanok\uses{def:predication}
+The \emph{subject-projection} collapses the object coordinate onto the subject, sending $(s, p, o)$ to $(s, p, s)$; the dual \emph{object-projection} \texttt{objProj} collapses the subject onto the object, sending $(s, p, o)$ to $(o, p, o)$. Each lands in the reflexive diagonal.
+\end{definition}
+
+\begin{definition}[Specialization]\label{def:predication-specialize}\lean{RelMath.PredicationCell.specialize}\leanok\uses{def:predication}
+\emph{Specialization} by a predicate move $f$ refines the typed middle coordinate while acting as the identity on the entity pair: $(s, p, o) \mapsto (s, f\,p, o)$. It is the morphism class that operates on the predicate rather than on orientation.
+\end{definition}
+
+\begin{theorem}[Converse is an involution]\lean{RelMath.PredicationCell.converse_converse}\leanok\uses{def:predication-converse}
+Converse is its own inverse: $\texttt{converse}(\texttt{converse}\,\varphi) = \varphi$. Reversing orientation twice returns the original cell, so the converse generator has order two.
+\end{theorem}
+
+\begin{theorem}[The seed is self-converse]\lean{RelMath.PredicationCell.converse_seed}\leanok\uses{def:predication-converse, def:predication-seed}
+The seed of any utterance is its own converse: $\texttt{converse}(\texttt{seed}\,u) = \texttt{seed}\,u$. Because subject and object coincide on the seed, reversing orientation does nothing --- the reflexive triple sits on the diagonal that converse fixes.
+\end{theorem}
+
+\begin{theorem}[Orientation is real]\lean{RelMath.PredicationCell.converse_ne}\leanok\uses{def:predication-converse}
+When subject and object differ, $s \neq o$, the converse is a genuinely different cell: $\texttt{converse}\,\varphi \neq \varphi$. This is the directed asymmetry articulating introduced, inherited intact at the predication level. Off the diagonal, $(s,p,o)$ and $(o,p,s)$ are not the same arrow --- orientation carries information.
+\end{theorem}
+
+\begin{proposition}[Projections are idempotent]\lean{RelMath.PredicationCell.subjProj_idem}\leanok\uses{def:predication-proj}
+Each projection is idempotent: applying \texttt{subjProj} twice equals applying it once, and likewise for \texttt{objProj} (recorded as \texttt{objProj\_idem}). Once a cell has been collapsed onto its diagonal, further projection has no effect.
+\end{proposition}
+
+\begin{theorem}[Specialization is functorial]\lean{RelMath.PredicationCell.specialize_comp}\leanok\uses{def:predication-specialize}
+Specialization composes by composing predicate moves: $\texttt{specialize}\,f\,(\texttt{specialize}\,g\,\varphi) = \texttt{specialize}\,(f \circ g)\,\varphi$. The typed coordinate thus carries a functorial action, with the identity move acting as the identity morphism (\texttt{specialize\_id}). These laws are precisely the category structure --- composition associative through function composition, identities present --- that makes the predicates over cells the arrows of a category.
+\end{theorem}
+
+\chapter{Value: the FOUR bilattice}\label{ch:positing}
+
+Predicating produced a value-free predication cell $\varphi = (s, p, o)$: a subject, a predicate, an object, posed but not yet asserted with any standing. A cell so constructed is a question, not a claim. To turn the corpus from a graph of potential predications into a body of asserted ones, we need a morphism that says \emph{with what standing} a cell is held. That morphism is \emph{positing}, and the standing it admits is a \emph{bilattice charge}.
+
+The decisive design choice of this chapter is that the value carrier is not new data. It is the very same four-point object that the articulation phases already exhibited (Chapter~2's \texttt{Corner}: potential, active, stable, absurd), now \emph{met as value rather than as articulation status}. A charge records two independent Boolean slots --- evidence \emph{for} (the positive slot) and evidence \emph{against} (the negative slot) --- and the four phases are exactly the four ways those two slots can be filled. No evidence either way is knowledge-bottom $\bot_k$ (the potential phase); evidence for only is the positive value $t$ (active); evidence against only is the negative value $f$ (stable); and evidence both ways is a held contradiction, knowledge-top $\top_k$ (absurd). Value is therefore \emph{derived}, not postulated: positing reuses the floor's four corners and reads them as charges.
+
+What makes these four charges a \emph{bilattice} rather than a mere lattice is that two genuinely different orders live on the same carrier. The \emph{knowledge} order $\le_k$ asks how much evidence we have, with both slots increasing: $\bot_k$ sits below $t$ and $f$, which both sit below $\top_k$. The \emph{truth} order $\le_t$ asks how true the cell is, with the positive slot increasing and the negative slot decreasing: $f$ sits below $\bot_k$ and $\top_k$, which both sit below $t$. The two orders share the carrier but disagree on which corners are extreme, and a single map --- \emph{negation}, the swap of the two slots --- ties them together by preserving one order while reversing the other. This chapter admits the charge carrier and its six operations, seeds the knowledge-least valuation that settling will later raise, and then (in the second module) proves the truth order is itself a bounded lattice and that negation is exactly the duality between the two orders. Both orders being bounded lattices on the four corners is precisely what earns the name FOUR.
+
+\section{The charge carrier and its slots}
+
+\begin{definition}[Charge]\label{def:charge}\lean{RelMath.Charge}\leanok\uses{def:floor}
+  A \emph{charge} is the bilattice value admitted by positing. It is defined to be the same four-point object \texttt{Corner} as the articulation phases of Chapter~2, met here as \emph{value} rather than as articulation status. There is no fresh inductive: \texttt{Charge} is an abbreviation for \texttt{Corner}, so the four corners (potential, active, stable, absurd) are exactly the four charges.
+\end{definition}
+
+\begin{definition}[Evidence slots]\label{def:charge-slots}\lean{RelMath.Charge.pos}\leanok\uses{def:charge}
+  Each charge decomposes into two independent Boolean slots. The positive slot $\texttt{pos}$ records evidence \emph{for} and the negative slot $\texttt{neg}$ records evidence \emph{against}; \texttt{ofSlots} reassembles a charge from a chosen pair of slots. The round-trip laws \texttt{pos\_ofSlots}, \texttt{neg\_ofSlots}, and \texttt{ofSlots\_pos\_neg} show that a charge \emph{is} its pair of slots, recovering the four-point object as $\{0,1\}^2$.
+\end{definition}
+
+\begin{definition}[The four distinguished charges]\label{def:four-charges}\lean{RelMath.Charge.kBot}\leanok\uses{def:charge-slots}
+  The four corners receive their bilattice names. Knowledge-bottom $\bot_k$ (\texttt{kBot}, no evidence, the potential phase) is the value positing seeds; knowledge-top $\top_k$ (\texttt{kTop}, evidence both ways, a held contradiction, the absurd phase); truth-top $t$ (\texttt{tTop}, evidence for only, the active phase); and truth-bottom $f$ (\texttt{tBot}, evidence against only, the stable phase). The two orders read these same four points oppositely, which is the seed of the whole bilattice structure.
+\end{definition}
+
+\section{The six operations and the FOUR bilattice}
+
+\begin{definition}[The FOUR bilattice operations]\label{def:four-bilattice}\lean{RelMath.Charge.joinK}\leanok\uses{def:four-charges, def:predication, def:articulating}
+  The bilattice carries six operations, all defined by Boolean slot algebra. Knowledge-join $\vee_k$ (\texttt{joinK}, slotwise \emph{or}) and knowledge-meet $\wedge_k$ (\texttt{meetK}, slotwise \emph{and}) are the lub and glb of $\le_k$; truth-join $\vee_t$ (\texttt{joinT}, positive union, negative intersection) and truth-meet $\wedge_t$ (\texttt{meetT}, positive intersection, negative union) are the lub and glb of $\le_t$; negation (\texttt{negate}, swap the two slots) links the two orders; and the comparisons \texttt{leK}/\texttt{leT} witness the two orders themselves. This four-point structure with two interlaced orders is the FOUR bilattice on which the rest of the corpus's logic of value runs.
+\end{definition}
+
+\begin{theorem}[Knowledge order is a lattice]\label{thm:joinK-lattice}\lean{RelMath.Charge.joinK_assoc}\leanok\uses{def:four-bilattice}
+  Knowledge-join and knowledge-meet satisfy the bounded-lattice laws by finite exhaustion over the four charges: commutativity (\texttt{joinK\_comm}, \texttt{meetK\_comm}), associativity (\texttt{joinK\_assoc}, \texttt{meetK\_assoc}), idempotence (\texttt{joinK\_idem}, \texttt{meetK\_idem}), and absorption (\texttt{absorbK\textsubscript{1}}, \texttt{absorbK\textsubscript{2}}). The same finite check (\texttt{joinT\_assoc}, \texttt{meetT\_assoc}) establishes the truth operations as a lattice as well.
+\end{theorem}
+
+\begin{theorem}[Distributivity and interlacing]\label{thm:bilattice-distrib}\lean{RelMath.Charge.meetK_joinK_distrib}\leanok\uses{thm:joinK-lattice}
+  The bilattice is \emph{distributive}: knowledge-meet distributes over knowledge-join (\texttt{meetK\_joinK\_distrib}). More tellingly, the law \texttt{meetT\_joinK\_distrib} shows a \emph{truth} operation distributing over a \emph{knowledge} operation --- an \emph{interlaced} law that crosses the two orders. Interlacing of this kind, where each order's operations are monotone for the other order, is the structural hallmark of a distributive bilattice.
+\end{theorem}
+
+\begin{theorem}[The seeded bottom $\bot_k$]\label{thm:kBot-least}\lean{RelMath.Charge.kBot_leK}\leanok\uses{def:four-bilattice}
+  The knowledge-bottom charge is the identity of knowledge-join (\texttt{joinK\_kBot}) and the $\le_k$-least element: every charge sits above it (\texttt{kBot\_leK}), with $\top_k$ dually greatest (\texttt{meetK\_kTop}, \texttt{leK\_kTop}). This is exactly the value positing seeds on every cell: before any assertion, the corpus knows nothing either way, so all cells start at $\bot_k$.
+\end{theorem}
+
+\begin{theorem}[Negation links the two orders]\label{thm:negate-duality}\lean{RelMath.Charge.negate_leT}\leanok\uses{def:four-bilattice}
+  Negation, the slot swap, is self-inverse (\texttt{negate\_negate}). It \emph{preserves} the knowledge order (\texttt{negate\_leK}) and \emph{reverses} the truth order (\texttt{negate\_leT}), fixing the knowledge poles ($\bot_k$, $\top_k$) while swapping the truth poles ($t \leftrightarrow f$, via \texttt{negate\_tTop}, \texttt{negate\_tBot}, \texttt{negate\_kBot}, \texttt{negate\_kTop}). This single map carrying $\le_t$ to its opposite while leaving $\le_k$ alone is the four-point geometry that makes FOUR a bilattice with a negation.
+\end{theorem}
+
+\section{Valuations and the seeded knowledge-least state}
+
+\begin{definition}[Valuation]\label{def:valuation}\lean{RelMath.Valuation}\leanok\uses{def:four-bilattice, def:predication}
+  A \emph{valuation} assigns a charge to each predication cell: it is a function $\texttt{PredicationCell} \to \texttt{Charge}$. Equivalently, under the fiber-algebra reading, it is a family $\texttt{Predicate} \to \texttt{Entity} \times \texttt{Entity} \to \texttt{Charge}$. A valuation is the state of the asserted corpus: it records, cell by cell, the standing with which each potential predication is currently held.
+\end{definition}
+
+\begin{definition}[The knowledge-least valuation positing seeds]\label{def:knowledge-least}\lean{RelMath.Valuation.knowledgeLeast}\leanok\uses{def:valuation, thm:kBot-least}
+  Positing seeds the \emph{knowledge-least} valuation: $\bot_k$ on \emph{every} cell of the predication base $\Phi = E \times \Pi \times E$ (\texttt{knowledgeLeast}). This is not the empty graph but a total assignment of ``no evidence'' everywhere --- the starting state from which settling will raise individual cells toward $t$, $f$, or $\top_k$ as evidence arrives. Valuations carry their own pointwise knowledge order (\texttt{leK}) and pointwise knowledge-join (\texttt{joinK}).
+\end{definition}
+
+\begin{theorem}[The seed is below every valuation]\label{thm:knowledgeLeast-le}\lean{RelMath.Valuation.knowledgeLeast_le}\leanok\uses{def:knowledge-least}
+  The knowledge-least valuation lies pointwise below every valuation in the knowledge order (\texttt{knowledgeLeast\_le}), because at each cell $\bot_k$ is the $\le_k$-least charge. It is therefore the $\bot$ of the valuation knowledge-order --- the seed that the settling closure will monotonically raise.
+\end{theorem}
+
+\section{The truth order as a bounded lattice}
+
+The knowledge order earned its lattice structure above and, in the settling chapter, its closure operator that raises cells $\bot \to t/f \to \top$ by adding information. The bilattice's second order, the truth order on the \emph{same} four charges, deserves the symmetric treatment: it too is a bounded lattice, it too admits a closure operator (now adding \emph{truthfulness}, moving cells $f \to \bot/\top \to t$), and negation is precisely the duality that exchanges the two pictures.
+
+\begin{definition}[The truth order as a relation]\label{def:tle}\lean{RelMath.Charge.TLE}\leanok\uses{def:four-bilattice}
+  The truth order is presented as a \texttt{Prop}-valued relation \texttt{TLE} $a\,b$, defined as $\texttt{leT}\,a\,b = \texttt{true}$ so that it is decidable by finite exhaustion. It is a genuine partial order: reflexive (\texttt{tle\_refl}), transitive (\texttt{tle\_trans}), and antisymmetric (\texttt{tle\_antisymm}).
+\end{definition}
+
+\begin{theorem}[$\vee_t$ and $\wedge_t$ are the truth lub and glb]\label{thm:truth-lattice}\lean{RelMath.Charge.joinT_le}\leanok\uses{def:tle}
+  Truth-join is the least upper bound for $\le_t$: it lies above both arguments (\texttt{le\_joinT\_left}, \texttt{le\_joinT\_right}) and below any common upper bound (\texttt{joinT\_le}). Dually truth-meet is the greatest lower bound (\texttt{meetT\_le\_left}, \texttt{meetT\_le\_right}, \texttt{le\_meetT}). With bounds $f$ least and $t$ greatest (\texttt{tBot\_le}, \texttt{le\_tTop}), identities (\texttt{joinT\_tBot}, \texttt{meetT\_tTop}), the truth order is a bounded lattice --- the second lattice that, alongside the knowledge lattice, makes FOUR a bilattice.
+\end{theorem}
+
+\begin{theorem}[Negation is the order duality]\label{thm:negate-tle}\lean{RelMath.Charge.negate_tle}\leanok\uses{thm:truth-lattice, thm:negate-duality}
+  Restated as order equivalences, negation \emph{reverses} the truth order, $\texttt{TLE}(\neg a)(\neg b) \iff \texttt{TLE}\,b\,a$ (\texttt{negate\_tle}), while \emph{preserving} the knowledge order, $\texttt{KLE}(\neg a)(\neg b) \iff \texttt{KLE}\,a\,b$ (\texttt{negate\_kle}). A single involution carrying one bounded lattice to the opposite of the other, with the second lattice fixed, is exactly the bilattice duality.
+\end{theorem}
+
+\section{Truth-order closure and settling}
+
+\begin{definition}[Truth-order closure operator]\label{def:tclosure}\lean{RelMath.Charge.TClosure}\leanok\uses{def:tle}
+  A \emph{truth-order closure} \texttt{TClosure} is an operator on charges that is inflationary, monotone, and idempotent \emph{with respect to} $\le_t$ --- the exact parallel of the knowledge-order closure of the settling chapter, now for the second order. The Knaster--Tarski facts follow: \texttt{op a} is a fixed point (\texttt{TClosure.op\_fixed}) and is the least fixed point above $a$ in $\le_t$ (\texttt{TClosure.op\_least}).
+\end{definition}
+
+\begin{definition}[The canonical truth closure and truth-settling]\label{def:settleT}\lean{RelMath.Charge.joinTClosure}\leanok\uses{def:tclosure, thm:truth-lattice}
+  The canonical truth-order closure raises a charge toward a chosen truth bound $k$ by truth-join, \texttt{joinTClosure}~$k$ with $\texttt{op}\,a = \vee_t\,k\,a$. Truth-settling \texttt{settleT} takes the fixed point reached from a seed under such a closure (\texttt{settleT\_fixed}). Settling the truth-least charge $f$ toward a bound $k$ lands exactly on $k$ (\texttt{settleT\_tBot}), the precise mirror of knowledge-settling from $\bot_k$ --- confirming that both orders of FOUR support the same settling discipline.
+\end{definition}
+
+\chapter{Settling}\label{ch:settling}
+
+The faculties of the previous chapters deposit knowledge, but they do not yet
+\emph{settle} it. A positing leaves a trace whose valuation may still be revised
+by its own consequences: what one charge asserts may force another up the
+knowledge order, and that ascent may force a third, and so on. Settling is the
+morphism that drives this revision to completion. It iterates the modal closure
+$\Diamond\circ\Box$ --- possibilize after necessitate --- on the
+knowledge-least valuation, and stops exactly when the last valuation no longer
+changes. The stopping point is a fixed point, and the engine that guarantees it
+is reached is Knaster--Tarski: every step is monotone in the bounded knowledge
+lattice, so the orbit cannot wander forever; it climbs and stabilizes.
+
+The decisive observation of this chapter is that settling is not merely
+\emph{compatible with} order theory --- it is the morphism that \emph{generates}
+order. Because the closure is monotone, because its fixed point is a least upper
+bound, and because the settling trace is a graded $\le_k$-chain, order is not a
+neighbour filed near settling by topical resemblance. Order is the structure
+settling \emph{is}. We therefore derive order theory itself, here, at the point
+the chain first produces it. Nothing is imported as free data: the knowledge
+relation $\le_k$ is \emph{proven} to be a partial order on the four charges, the
+join $\vee_k$ and meet $\wedge_k$ are \emph{proven} to be its lub and glb, and
+the closure operator with its least fixed point is \emph{proven} over the finite
+\texttt{Charge} carrier of the FOUR bilattice (Chapter on the floor).
+
+Three movements organize the development. First (\texttt{Settling.lean}) the
+idempotent-closure model: $\le_k$ as a bounded lattice, a \texttt{Closure}
+structure --- inflationary, monotone, idempotent --- and its least fixed point,
+the one-step settled value. Second (\texttt{ClosureOrdinal.lean}) the general
+iterated model: a monotone inflationary endomap need not be idempotent, so we
+iterate it and measure the \emph{closure ordinal} $\kappa$, the least stage at
+which the orbit stops. Over the finite charge lattice every such endomap settles
+by step three, $\kappa \le 3$ --- the strict-finite regime, with no transfinite
+tail. Third (\texttt{ClosureMonad.lean}) the categorical reading: the closure is
+the shadow of a KZ (Kock--Z\"oberlein), lax-idempotent $2$-monad, and on the
+antisymmetric knowledge order its lax-idempotence inequality collapses to strict
+idempotence --- the order is thin, so the genuine diamond $2$-cell degenerates.
+
+\section{Order, generated as a partial order on charges}
+
+\begin{definition}[The knowledge order $\le_k$]\label{def:kle}\lean{RelMath.Charge.KLE}\leanok\uses{def:four-bilattice}
+\texttt{KLE a b} is the proposition that the decidable knowledge comparison
+$\texttt{leK}\,a\,b$ holds, i.e.\ that charge $a$ carries no more knowledge than
+$b$. It is declared reducible so the underlying boolean is visible to
+\texttt{decide}. This is the relation settling generates and climbs.
+\end{definition}
+
+\begin{theorem}[$\le_k$ is reflexive]\label{thm:kle-refl}\lean{RelMath.Charge.kle_refl}\leanok\uses{def:kle}
+Every charge stands in the knowledge order to itself: $\texttt{KLE}\,a\,a$.
+\end{theorem}
+
+\begin{theorem}[$\le_k$ is transitive]\label{thm:kle-trans}\lean{RelMath.Charge.kle_trans}\leanok\uses{def:kle}
+If $a \le_k b$ and $b \le_k c$ then $a \le_k c$; proven by exhausting the
+finite charge lattice with \texttt{decide}.
+\end{theorem}
+
+\begin{theorem}[$\le_k$ is antisymmetric]\label{thm:kle-antisymm}\lean{RelMath.Charge.kle_antisymm}\leanok\uses{def:kle}
+If $a \le_k b$ and $b \le_k a$ then $a = b$. Together with reflexivity and
+transitivity this makes $\le_k$ a genuine \emph{partial order}, not merely a
+preorder --- the antisymmetry is exactly the thinness that later forces
+lax-idempotence to collapse to strict idempotence.
+\end{theorem}
+
+\section{The knowledge lattice}
+
+\begin{theorem}[$\vee_k$ is an upper bound]\label{thm:le-joink}\lean{RelMath.Charge.le_joinK_left}\leanok\uses{def:kle}
+$a \le_k a \vee_k b$. The companion \texttt{le\_joinK\_right} gives
+$b \le_k a \vee_k b$, so the knowledge join dominates both arguments.
+\end{theorem}
+
+\begin{theorem}[$\vee_k$ is the least upper bound]\label{thm:joink-le}\lean{RelMath.Charge.joinK_le}\leanok\uses{thm:le-joink, thm:kle-antisymm}
+If $a \le_k c$ and $b \le_k c$ then $a \vee_k b \le_k c$. Hence $\vee_k$ is the
+\emph{least} upper bound in the knowledge order.
+\end{theorem}
+
+\begin{theorem}[$\wedge_k$ is a lower bound]\label{thm:meetk-le}\lean{RelMath.Charge.meetK_le_left}\leanok\uses{def:kle}
+$a \wedge_k b \le_k a$. The companion \texttt{meetK\_le\_right} gives
+$a \wedge_k b \le_k b$, so the knowledge meet is below both arguments.
+\end{theorem}
+
+\begin{theorem}[$\wedge_k$ is the greatest lower bound]\label{thm:le-meetk}\lean{RelMath.Charge.le_meetK}\leanok\uses{thm:meetk-le}
+If $c \le_k a$ and $c \le_k b$ then $c \le_k a \wedge_k b$. Hence $\wedge_k$ is
+the \emph{greatest} lower bound.
+\end{theorem}
+
+\begin{theorem}[Bounds $\bot_k$ and $\top_k$]\label{thm:kbot-ktop}\lean{RelMath.Charge.kBot_le}\leanok\uses{def:kle}
+$\bot_k$ is the least element, $\texttt{KLE}\,\bot_k\,a$ for every $a$ --- the
+knowledge-least seed settling climbs from --- and dually
+\texttt{le\_kTop} gives $a \le_k \top_k$. With the join and meet results this
+makes \texttt{Charge} a \emph{bounded lattice}, derived rather than assumed.
+\end{theorem}
+
+\section{The closure operator and its least fixed point}
+
+\begin{definition}[Closure operator]\label{def:closure-operator}\lean{RelMath.Charge.Closure}\leanok\uses{def:kle}
+A \texttt{Closure} bundles an endomap $\texttt{op}:\texttt{Charge}\to\texttt{Charge}$
+that is \emph{inflationary} ($a \le_k \texttt{op}\,a$), \emph{monotone}
+($a \le_k b \Rightarrow \texttt{op}\,a \le_k \texttt{op}\,b$), and
+\emph{idempotent} ($\texttt{op}(\texttt{op}\,a) = \texttt{op}\,a$). At the finite
+regime settling's modal closure $\Diamond\circ\Box$ is one such operator.
+\end{definition}
+
+\begin{theorem}[Knaster--Tarski: $\texttt{op}\,a$ is a fixed point]\label{thm:op-fixed}\lean{RelMath.Charge.Closure.op_fixed}\leanok\uses{def:closure-operator}
+For any closure $c$ and seed $a$, $c.\texttt{op}(c.\texttt{op}\,a) =
+c.\texttt{op}\,a$: settling stops changing after the closure is applied once.
+This is the closure form of the Knaster--Tarski fixed-point theorem.
+\end{theorem}
+
+\begin{theorem}[$\texttt{op}\,a$ is the least fixed point above $a$]\label{thm:op-least}\lean{RelMath.Charge.Closure.op_least}\leanok\uses{def:closure-operator, thm:le-joink}
+Any fixed point $x$ with $a \le_k x$ and $c.\texttt{op}\,x = x$ satisfies
+$c.\texttt{op}\,a \le_k x$. Thus the settled value is the \emph{least} upper
+bound among fixed points above the seed --- the lub character of settling made
+precise.
+\end{theorem}
+
+\begin{definition}[The canonical join-closure]\label{def:join-closure}\lean{RelMath.Charge.joinClosure}\leanok\uses{def:closure-operator, thm:joink-le}
+\texttt{joinClosure k} is the closure $a \mapsto k \vee_k a$: raise to the
+knowledge bound $k$ by joining. Inflation, monotonicity, and idempotence are
+each discharged over the finite lattice. It is the prototype settling dynamic
+``possibilize toward $k$.''
+\end{definition}
+
+\begin{definition}[Settling]\label{def:settling}\lean{RelMath.Charge.settle}\leanok\uses{def:closure-operator, thm:op-fixed}
+\texttt{settle c seed} is the fixed point reached from \texttt{seed} under the
+closure $c$, namely $c.\texttt{op}\,\texttt{seed}$. For an idempotent closure the
+orbit stabilizes in a single step --- the finite-regime confluence
+$\Diamond\Box = \Box\Diamond$ that drains the residue to zero. This is the
+headline export of the chapter: the morphism that brings a trace to its fixed
+point and, in doing so, generates the order it settles within.
+\end{definition}
+
+\begin{theorem}[The settled value is a fixed point]\label{thm:settle-fixed}\lean{RelMath.Charge.settle_fixed}\leanok\uses{def:settling}
+$c.\texttt{op}(\texttt{settle}\,c\,\texttt{seed}) = \texttt{settle}\,c\,\texttt{seed}$:
+once settled, nothing remains to descend.
+\end{theorem}
+
+\begin{theorem}[The settled value is least]\label{thm:settle-least}\lean{RelMath.Charge.settle_least}\leanok\uses{def:settling, thm:op-least}
+For any fixed point $x$ above the seed, $\texttt{settle}\,c\,\texttt{seed} \le_k x$:
+settling lands on the least fixed point above its seed, never overshooting.
+\end{theorem}
+
+\begin{theorem}[Worked instance: settling $\bot_k$ toward $k$]\label{thm:settle-kbot}\lean{RelMath.Charge.settle_kBot}\leanok\uses{def:settling, def:join-closure}
+$\texttt{settle}\,(\texttt{joinClosure}\,k)\,\bot_k = k$: settling the
+knowledge-least charge toward a bound $k$ lands exactly on $k$, confirming that
+the deposited positing's seed climbs to its target.
+\end{theorem}
+
+\section{Lifting settling to valuations}
+
+\begin{definition}[Pointwise valuation settling]\label{def:valuation-settle}\lean{RelMath.Valuation.settle}\leanok\uses{def:settling}
+\texttt{Valuation.settle op v} applies a charge-closure pointwise to a whole
+valuation, $\varphi \mapsto \texttt{op}(v\,\varphi)$, lifting the single-charge
+fixed-point dynamic to entire traces.
+\end{definition}
+
+\begin{theorem}[Settling the knowledge-least valuation]\label{thm:settle-knowledgeleast}\lean{RelMath.Valuation.settle_knowledgeLeast}\leanok\uses{def:valuation-settle, def:join-closure}
+Settling the knowledge-least valuation toward a target charge $k$ yields the
+constant-$k$ valuation: the fixed point the modal dynamic climbs to from the
+seed the positing deposited.
+\end{theorem}
+
+\section{The closure ordinal and the strict-finite regime}
+
+The idempotent closure settles in one step, but the corpus's settling is more
+general: it iterates a closure $T = \Diamond\circ\Box$ that is monotone and
+inflationary but \emph{need not} be idempotent, until the orbit stops at the
+closure ordinal $\kappa(F,x) = \text{least } \tau$ with $F^{\tau+1}(x) =
+F^{\tau}(x)$. This section proves that over the FOUR bilattice every inflationary
+endomap settles by step three: $\kappa \le 3$, one more than the height of the
+knowledge lattice. This is the strict-finite regime; the Scott-continuous
+($\kappa=\omega$), transfinite-bounded, and aperiodic ($\kappa \ge \omega_1$)
+regimes are the refinements that appear only once the index set is infinite.
+
+\begin{definition}[The settling orbit $f^n$]\label{def:iter}\lean{RelMath.Charge.iter}\leanok\uses{def:closure-operator}
+$\texttt{iter}\,f\,n\,x = f^n(x)$, plain recursion iterating an endomap $n$ times
+from $x$. This is the orbit whose stabilization stage is the closure ordinal.
+\end{definition}
+
+\begin{theorem}[Fixed points stay fixed]\label{thm:iter-fixed-of}\lean{RelMath.Charge.iter_fixed_of}\leanok\uses{def:iter}
+If $f\,a = a$ then $\texttt{iter}\,f\,n\,a = a$ for all $n$: once the orbit
+reaches a fixed point it never leaves it.
+\end{theorem}
+
+\begin{theorem}[Iteration adds]\label{thm:iter-add}\lean{RelMath.Charge.iter_add}\leanok\uses{def:iter}
+$f^{n+m}(x) = f^m(f^n(x))$, the additive law of iteration, by induction on $m$.
+\end{theorem}
+
+\begin{theorem}[The orbit is a $\le_k$-chain]\label{thm:iter-step-le}\lean{RelMath.Charge.iter_step_le}\leanok\uses{def:iter, thm:kbot-ktop}
+For an inflationary $f$, each step climbs: $f^n(x) \le_k f^{n+1}(x)$. The
+settling orbit is therefore an ascending knowledge chain.
+\end{theorem}
+
+\begin{theorem}[No ascending chain of four distinct charges]\label{thm:kchain-height}\lean{RelMath.Charge.kchain_height}\leanok\uses{def:kle}
+For any $a \le_k b \le_k c \le_k d$, at least one of $a=b$, $b=c$, $c=d$ holds:
+the knowledge order has height two, so a chain of four must collapse somewhere.
+A finite \texttt{decide} check; this is the pigeonhole that bounds the closure
+ordinal.
+\end{theorem}
+
+\begin{theorem}[Propagation from coincidence]\label{thm:iter-propagate}\lean{RelMath.Charge.iter_propagate}\leanok\uses{thm:iter-add, thm:iter-fixed-of}
+If two consecutive iterates coincide at stage $k$ then the orbit is constant
+from $k$ on: $\texttt{iter}\,f\,(k+j)\,x = \texttt{iter}\,f\,k\,x$ for all $j$.
+Once it stops, it stays stopped.
+\end{theorem}
+
+\begin{theorem}[Strict-finite termination: $f^3 = f^4$]\label{thm:settles-by-three}\lean{RelMath.Charge.settles_by_three}\leanok\uses{thm:iter-step-le, thm:kchain-height, thm:iter-propagate}
+Every inflationary endomap on the charge lattice reaches its fixed point by step
+three: $\texttt{iter}\,f\,3\,x = \texttt{iter}\,f\,4\,x$. The height-two chain
+bound forces one of the first three steps to be stationary, and propagation
+carries it forward. The closure ordinal is $\le 3$.
+\end{theorem}
+
+\begin{definition}[The settling bound $\texttt{SettlesBy}$]\label{def:settles-by}\lean{RelMath.Charge.SettlesBy}\leanok\uses{def:iter}
+$\texttt{SettlesBy}\,f\,x\,n$ holds when $f^{n+1}(x) = f^n(x)$ --- the orbit is
+fixed from stage $n$. The least such $n$ is the closure ordinal $\kappa$; any
+such $n$ is a settling bound $\lambda$.
+\end{definition}
+
+\begin{theorem}[The strict-finite regime: $\kappa \le 3$]\label{thm:strict-finite}\lean{RelMath.Charge.strict_finite}\leanok\uses{def:settles-by, thm:settles-by-three}
+Every inflationary endomap on the charge lattice satisfies
+$\texttt{SettlesBy}\,f\,x\,3$ --- a uniform finite settling bound with no
+transfinite tail. This is the strict-finite regime named in the module
+docstring.
+\end{theorem}
+
+\begin{theorem}[The settled value is genuinely fixed]\label{thm:settled-fixed}\lean{RelMath.Charge.settled_fixed}\leanok\uses{thm:settles-by-three}
+$f(f^3(x)) = f^3(x)$: after three steps the orbit is at an honest fixed point,
+not merely slowing.
+\end{theorem}
+
+\begin{corollary}[Every closure settles in $\le 3$ steps]\label{cor:closure-strict-finite}\lean{RelMath.Charge.closure_strict_finite}\leanok\uses{def:closure-operator, thm:strict-finite}
+Since every \texttt{Closure} is inflationary, $\texttt{SettlesBy}\,c.\texttt{op}\,x\,3$
+holds --- consistent with idempotent closures settling in one step. The two
+models agree: the one-step idempotent settling is the degenerate case of the
+$\kappa \le 3$ iterated settling.
+\end{corollary}
+
+\section{The KZ / lax-idempotence shadow}
+
+The closure-2-monad $\mathrm{Cl}$ is the operational engine of settling: a KZ
+(Kock--Z\"oberlein), lax-idempotent $2$-monad with unit $\eta$ (inclusion into
+closure, i.e.\ inflation) and multiplication $\mu$ (nested-closure collapse).
+Lax-idempotence is the Kelly--Lack condition K1, $\mu \dashv \eta_{\mathrm{Cl}}$
+with identity counit, so being a $\mathrm{Cl}$-algebra is a property, not data
+(K2). This section derives the faithful $1$-categorical shadow of that structure
+over the charges. The central phenomenon is that on the antisymmetric knowledge
+order --- a thin $2$-category, a poset --- the lax-idempotence inequality
+collapses to strict idempotence: the genuine diamond $2$-cell only survives where
+antisymmetry fails, the aperiodic regime $\kappa \ge \omega_1$.
+
+\begin{theorem}[KZ $\Leftrightarrow$ strict, on a poset]\label{thm:kz-iff-strict}\lean{RelMath.Charge.kz_iff_strict}\leanok\uses{thm:kle-antisymm, thm:iter-step-le}
+For a monotone-inflationary $f$, the Kock--Z\"oberlein inequality
+$f(f\,a) \le_k f\,a$ (lax-idempotence) is \emph{equivalent} to strict
+idempotence $f(f\,a) = f\,a$, because $\le_k$ is antisymmetric. This is the
+order-theoretic shadow of ``lax-idempotence $+$ Scott-continuity $\Rightarrow$
+strict idempotence'': collapse happens exactly where the order is thin.
+\end{theorem}
+
+\begin{theorem}[The orbit is monotone in its index]\label{thm:iter-le-add}\lean{RelMath.Charge.iter_le_add}\leanok\uses{thm:iter-step-le, thm:kle-trans}
+$\texttt{iter}\,f\,m\,v \le_k \texttt{iter}\,f\,(m+d)\,v$ for every $d$: later
+iterates dominate earlier ones in the knowledge order, by induction on $d$
+through transitivity.
+\end{theorem}
+
+\begin{theorem}[No non-trivial periodic orbits]\label{thm:no-periodic-orbits}\lean{RelMath.Charge.no_periodic_orbits}\leanok\uses{def:closure-operator, thm:iter-le-add, thm:kle-antisymm}
+A closure has only period-$1$ orbits: if $\texttt{iter}\,c.\texttt{op}\,k\,v = v$
+for some $k \ge 1$, then $c.\texttt{op}\,v = v$ already. The orbit ascends and
+cannot cycle --- the dynamical face of lax-idempotence.
+\end{theorem}
+
+\begin{definition}[The settling-endofunctor $F_U = \mathrm{Cl} \vee_k u$]\label{def:settle-step}\lean{RelMath.Charge.settleStep}\leanok\uses{def:closure-operator, thm:le-joink}
+$\texttt{settleStep}\,c\,u\,v = c.\texttt{op}\,v \vee_k u$: one settling step
+saturates under the closure (the inferential engine), then knowledge-joins the
+external increment $u$ (the input). This is $F_U(v) = \mathrm{Cl}(v) \vee_k
+u_\tau$ of the module docstring.
+\end{definition}
+
+\begin{theorem}[The settling step is inflationary]\label{thm:settle-step-infl}\lean{RelMath.Charge.settleStep_infl}\leanok\uses{def:settle-step, thm:kle-trans}
+$v \le_k \texttt{settleStep}\,c\,u\,v$: each step only adds knowledge, by
+composing the closure's inflation with the join's upper bound.
+\end{theorem}
+
+\begin{theorem}[Settling terminates]\label{thm:settle-step-settles}\lean{RelMath.Charge.settleStep_settles}\leanok\uses{thm:settle-step-infl, thm:settles-by-three}
+The settling-endofunctor reaches its fixed point in $\le 3$ steps:
+$\texttt{iter}\,(\texttt{settleStep}\,c\,u)\,3\,v =
+\texttt{iter}\,(\texttt{settleStep}\,c\,u)\,4\,v$ --- the strict-finite regime
+applied to the full engine, closure plus increment.
+\end{theorem}
+
+\begin{theorem}[The KZ unit $\eta$]\label{thm:kz-unit}\lean{RelMath.Charge.unit}\leanok\uses{def:closure-operator}
+The unit of the closure monad is inclusion into closure: $v \le_k c.\texttt{op}\,v$,
+i.e.\ inflation. This is $\eta$ of the KZ $2$-monad.
+\end{theorem}
+
+\begin{theorem}[The KZ multiplication $\mu$]\label{thm:kz-mult}\lean{RelMath.Charge.mult}\leanok\uses{def:closure-operator, thm:op-fixed}
+The multiplication is nested-closure collapse, $c.\texttt{op}(c.\texttt{op}\,v) =
+c.\texttt{op}\,v$ --- idempotence as the strict $\mu$.
+\end{theorem}
+
+\begin{theorem}[The Kelly--Lack K1 counit triangle]\label{thm:counit-triangle}\lean{RelMath.Charge.counit_triangle}\leanok\uses{thm:kz-unit, thm:kz-mult}
+The K1 counit triangle $\mu \cdot \eta_{\mathrm{Cl}} = 1_{\mathrm{Cl}}$ holds: at
+$c\,v$ the composite $c\,v \xrightarrow{\eta} c(c\,v) \xrightarrow{\mu} c\,v$ is
+the identity, which is exactly idempotence at $c\,v$. This is the property
+witnessing that $\mathrm{Cl}$-algebra structure is a property, not data ---
+settling's lax-idempotence, made strict by the thinness of $\le_k$.
+\end{theorem}
+
+\chapter{Quantifiers and the hyperdoctrine}\label{ch:hyperdoctrine}\label{def:hyperdoctrine}
+
+The previous chapters built a single predication and the four-valued bilattice
+\texttt{Charge} in which a predication is scored. A predication, however, never
+stands alone: it lives in a fibration over a base of \emph{predication cells},
+and the logical life of that fibration is the passage between fibers. This
+chapter is about that passage. When we substitute terms, swap the roles of
+subject and object, or collapse an argument place, we move along a map $f$ of the
+base, and every such move induces a \emph{reindexing} $f^{*}$ that pulls a
+valuation back along $f$. The mathematics of quantification is nothing more than
+the assertion that these reindexings have adjoints on both sides --- that the
+syntactic operations of substitution, projection, and converse each come with a
+best existential approximation below and a best universal approximation above.
+This is Lawvere's hyperdoctrine, and it is the natural habitat of the corpus's
+two equalities.
+
+The derivation is deliberately frugal. We do not posit quantifiers as new
+primitive data; we \emph{compute} them. Reindexing is literally precomposition,
+$f^{*}v = v \circ f$, so it is functorial and monotone for free. The adjoints are
+then forced: for a bijective base map the reindexing is an order-isomorphism and
+hence its own two-sided adjoint, while for a general base map with finite
+preimages the existential and universal are the fiber join and fiber meet of the
+underlying lattice \texttt{Charge}. Because \texttt{Charge} is a \emph{bilattice}
+--- two complete lattice orders woven on one carrier --- the whole construction
+runs twice, once in the knowledge order and once in the truth order. The two runs
+are not redundant: applied to the diagonal terminal they yield two genuinely
+different equalities, classical and paraconsistent, neither of which we ever
+write down by hand. This is the chapter's payoff: equality is \emph{derived} from
+the adjoint structure, exactly as Lawvere taught, and the corpus's distinctive
+two-valued/four-valued split is the shadow of the bilattice's two orders.
+
+We work throughout at the \emph{settling} level, the lowest node where all three
+ingredients are simultaneously in scope: reindexing belongs to predicating, the
+two orders and the fibers belong to positing, and the closure that makes the
+adjunctions land belongs to settling itself. The hyperdoctrine is therefore not
+an extra layer bolted onto the corpus but the logical face of settling read
+fibrationally.
+
+\section{Reindexing: the fibration}
+
+Before quantifiers there is the fibration. A valuation is a function from
+predication cells to charges, and the only structural operation we need on the
+base is to move valuations between fibers by precomposition. Everything in the
+chapter is an adjoint of this one operation.
+
+\begin{definition}[Knowledge-meet of valuations]\label{def:valuation-meetK}\lean{RelMath.Valuation.meetK}\leanok\uses{def:four-bilattice}
+For valuations $v, w$, the pointwise knowledge-meet $\texttt{meetK}\,v\,w$ sends
+each cell $\varphi$ to the \texttt{Charge} knowledge-meet $v\,\varphi \sqcap_k
+w\,\varphi$. It is the companion to the knowledge-join and supplies the
+conjunction that Frobenius reciprocity will preserve.
+\end{definition}
+
+\begin{definition}[Reindexing]\label{def:reindex}\lean{RelMath.Valuation.reindex}\leanok\uses{def:predication, def:four-bilattice}
+Reindexing along a base map $r$ on predication cells acts on valuations by
+precomposition, $\texttt{reindex}\,r\,v = v \circ r$, i.e.\ $(r^{*}v)(\varphi) =
+v(r\,\varphi)$. This is the substitution functor of the fibration: it carries no
+free data, being nothing but composition with the base map.
+\end{definition}
+
+\begin{theorem}[Contravariant functoriality]\label{thm:reindex-comp}\lean{RelMath.Valuation.reindex_comp}\leanok\uses{def:reindex}
+Reindexing is contravariantly functorial: $r^{*}(s^{*}v) = (s\circ r)^{*}v$, and
+$\texttt{id}^{*} = \texttt{id}$. The fibers thus assemble into a genuine
+indexed family over the base.
+\end{theorem}
+
+\begin{theorem}[Monotonicity]\label{thm:reindex-mono}\lean{RelMath.Valuation.reindex_mono}\leanok\uses{def:reindex, def:four-bilattice}
+Reindexing is monotone in the knowledge order: if $v \le_k w$ then $r^{*}v \le_k
+r^{*}w$. Each $r^{*}$ is therefore a morphism of the knowledge-ordered fibers,
+the prerequisite for it to possess order-adjoints.
+\end{theorem}
+
+\section{The adjunction shape and the converse system}
+
+The abstract shape of a quantifier is a Galois connection between fibers. We
+isolate that shape, prove it holds automatically whenever the base map is a
+bijection, and read off the converse generator --- an involution on cells --- as
+the first concrete quantifier adjunction.
+
+\begin{definition}[Galois connection in the knowledge order]\label{def:galoisK}\lean{RelMath.Valuation.GaloisK}\leanok\uses{def:reindex}
+A pair $L \dashv R$ of valuation operators forms a knowledge-order Galois
+connection, $\texttt{GaloisK}\,L\,R$, when $L\,v \le_k w \iff v \le_k R\,w$ for
+all $v, w$. This is the exact adjunction shape an existential--reindexing or
+reindexing--universal pair must satisfy.
+\end{definition}
+
+\begin{definition}[Base isomorphism]\label{def:baseIso}\lean{RelMath.Valuation.BaseIso}\leanok\uses{def:predication}
+A base isomorphism packages a bijection on predication cells: a forward map, a
+backward map, and the two round-trip laws witnessing that they are mutually
+inverse. It is the data along which reindexing becomes an order-isomorphism.
+\end{definition}
+
+\begin{theorem}[Reindexing along a bijection is self-dual adjoint]\label{thm:galois-reindex}\lean{RelMath.Valuation.galois_reindex}\leanok\uses{def:galoisK, def:baseIso}
+For a base isomorphism $e$, the pair $e_{\mathrm{fwd}}^{*} \dashv
+e_{\mathrm{bwd}}^{*}$ is a knowledge-order Galois connection. Swapping the roles
+gives $e_{\mathrm{bwd}}^{*} \dashv e_{\mathrm{fwd}}^{*}$ as well, so along a
+bijection the existential and universal quantifiers both coincide with reindexing
+along the inverse.
+\end{theorem}
+
+\begin{definition}[Converse as a base isomorphism]\label{def:converseIso}\lean{RelMath.Valuation.converseIso}\leanok\uses{def:baseIso, def:predication}
+The converse generator --- which swaps subject and object --- is an involution on
+predication cells, and so packages directly as a base isomorphism whose forward
+and backward maps are both \texttt{converse}, with both round-trip laws supplied
+by the involutivity $\texttt{converse}\circ\texttt{converse} = \texttt{id}$.
+\end{definition}
+
+\begin{theorem}[Converse quantifier adjunction]\label{thm:converse-adjunction}\lean{RelMath.Valuation.converse_adjunction}\leanok\uses{thm:galois-reindex, def:converseIso}
+The converse quantifier adjunction $\exists_{\mathrm{converse}} \dashv
+\texttt{converse}^{*} \dashv \forall_{\mathrm{converse}}$ holds, with all three
+operators equal to $\texttt{reindex}\,\texttt{converse}$. This is the first of
+Lawvere's hyperdoctrine conditions (B1) realized for a concrete generator.
+\end{theorem}
+
+\begin{theorem}[Frobenius reciprocity for converse]\label{thm:converse-frobenius}\lean{RelMath.Valuation.converse_frobenius}\leanok\uses{thm:converse-adjunction, def:valuation-meetK}
+Frobenius reciprocity holds for the converse quantifier:
+$\exists_{f}(f^{*}\alpha \sqcap_k \varphi) = \alpha \sqcap_k \exists_{f}\varphi$,
+where $\exists_{f} = f^{*} = \texttt{reindex}\,\texttt{converse}$. The quantifier
+commutes with knowledge-conjunction against a reindexed parameter --- condition
+(B2).
+\end{theorem}
+
+\begin{theorem}[Beck--Chevalley for bijections]\label{thm:beck-chevalley}\lean{RelMath.Valuation.beck_chevalley}\leanok\uses{thm:reindex-comp}
+In the bijection case Beck--Chevalley (B3) reduces to the commutation of
+reindexings: if $s\circ r = r\circ s$ then $r^{*}(s^{*}v) = s^{*}(r^{*}v)$. Over
+a pullback of bijections the canonical comparison map is the identity.
+\end{theorem}
+
+\section{Fiber quantifiers for the projections}
+
+The bijective generators are the easy case. The projection generators ---
+subject and object --- collapse the entity pair and are not injective, so their
+quantifiers are genuine fiber joins and meets rather than reindexings along an
+inverse. We make this constructive by recording each preimage as a finite list of
+charges and folding the bilattice operations over it.
+
+\begin{definition}[List join and meet of charges]\label{def:charge-joinList}\lean{RelMath.Charge.joinList}\leanok\uses{def:four-bilattice, def:settling}
+The knowledge-join $\texttt{joinList}$ of a finite list of charges is the right
+fold of $\vee_k$ with unit $\bot_k$; the knowledge-meet $\texttt{meetList}$ is the
+right fold of $\wedge_k$ with unit $\top_k$. These finite folds are the
+existential and universal aggregations over a finite fiber, with the empty fiber
+landing at the respective knowledge pole.
+\end{definition}
+
+\begin{definition}[Finite fibration]\label{def:finiteFibration}\lean{RelMath.Valuation.FiniteFibration}\leanok\uses{def:predication}
+A finite fibration records a base map together with, for each cell $\varphi$, its
+preimage presented as a finite list, plus the membership law $\psi \in
+\texttt{fiber}\,\varphi \iff \texttt{base}\,\psi = \varphi$. This is exactly the
+data that makes $\exists_{f}$ and $\forall_{f}$ computable for a non-injective
+generator.
+\end{definition}
+
+\begin{definition}[Fiber existential and universal]\label{def:existsF}\lean{RelMath.Valuation.existsF}\leanok\uses{def:finiteFibration, def:charge-joinList}
+The existential $\texttt{existsF}\,F\,v$ sends $\varphi$ to the knowledge-join of
+$v$ over the fiber of $\varphi$; the universal $\texttt{forallF}\,F\,v$ sends
+$\varphi$ to the knowledge-meet over that fiber. These are the fiberwise
+$\bigsqcup_k$ and $\bigsqcap_k$ that the hyperdoctrine demands.
+\end{definition}
+
+\begin{theorem}[Existential left adjoint to reindexing]\label{thm:existsF-adjunction}\lean{RelMath.Valuation.existsF_adjunction}\leanok\uses{def:existsF, def:reindex}
+$\exists_{f} \dashv f^{*}$: for any valuations $v, w$, $\texttt{existsF}\,F\,v
+\le_k w \iff v \le_k \texttt{reindex}\,(F.\texttt{base})\,w$. The fiber join is the
+best lower existential approximation, proved straight from the least-upper-bound
+laws of \texttt{Charge}.
+\end{theorem}
+
+\begin{theorem}[Reindexing left adjoint to the universal]\label{thm:forallF-adjunction}\lean{RelMath.Valuation.forallF_adjunction}\leanok\uses{def:existsF, def:reindex}
+$f^{*} \dashv \forall_{f}$: for any valuations $v, w$,
+$\texttt{reindex}\,(F.\texttt{base})\,v \le_k w \iff v \le_k
+\texttt{forallF}\,F\,w$. Together with the previous theorem this completes the
+adjoint triple $\exists_{f} \dashv f^{*} \dashv \forall_{f}$ for every finite
+fibration.
+\end{theorem}
+
+\begin{theorem}[Coherence with the bijection case]\label{thm:existsF-converse}\lean{RelMath.Valuation.existsF_converse}\leanok\uses{def:existsF, def:converseIso, thm:converse-adjunction}
+Presented as a finite fibration with singleton fibers $[\texttt{converse}\,
+\varphi]$ (\texttt{converseFib}), the converse generator's fiber existential
+agrees with reindexing along converse: $\texttt{existsF}\,\texttt{converseFib}\,v
+= \texttt{reindex}\,\texttt{converse}\,v$. The bijection adjoints of the previous
+section are exactly the singleton-fiber instance of the general construction.
+\end{theorem}
+
+The witnessing fibration is \texttt{RelMath.Valuation.converseFib}, whose fibers
+are the singletons $[\texttt{converse}\,\varphi]$.
+
+\section{The truth-order system and derived equality}
+
+The bilattice has a second complete order, the truth order, and the entire
+adjoint construction runs again in it. The point of doing so is not symmetry for
+its own sake: applying the two systems to the diagonal terminal yields the two
+equalities of the corpus, and they differ precisely because the two orders have
+different bottoms (the truth bottom is the value $f$, the knowledge bottom is
+$\bot$).
+
+\begin{definition}[Truth-order list join and meet]\label{def:charge-joinTList}\lean{RelMath.Charge.joinTList}\leanok\uses{def:four-bilattice, def:settling}
+The truth-join $\texttt{joinTList}$ folds $\vee_t$ with unit $f$ (the truth
+bottom); the truth-meet $\texttt{meetTList}$ folds $\wedge_t$ with unit $t$ (the
+truth top). The empty-fiber value is the truth pole, in contrast to the knowledge
+pole of the knowledge-order folds.
+\end{definition}
+
+\begin{definition}[Truth-order valuation order and quantifiers]\label{def:existsT}\lean{RelMath.Valuation.existsT}\leanok\uses{def:finiteFibration, def:charge-joinTList}
+Reading valuations pointwise in $\le_t$ (\texttt{leT}), the truth-order
+existential $\texttt{existsT}\,F\,v$ is the fiber truth-join and the truth-order
+universal $\texttt{forallT}\,F\,v$ is the fiber truth-meet. These are the
+truth-order analogues of the fiber quantifiers.
+\end{definition}
+
+\begin{theorem}[Truth-order existential adjunction]\label{thm:existsT-adjunction}\lean{RelMath.Valuation.existsT_adjunction}\leanok\uses{def:existsT, def:reindex}
+$\exists^{t}_{f} \dashv f^{*}$ in the truth order: $\texttt{existsT}\,F\,v
+\le_t w \iff v \le_t \texttt{reindex}\,(F.\texttt{base})\,w$. The proof reuses the
+truth-order least-upper-bound laws, mirroring the knowledge-order case.
+\end{theorem}
+
+\begin{theorem}[Truth-order universal adjunction]\label{thm:forallT-adjunction}\lean{RelMath.Valuation.forallT_adjunction}\leanok\uses{def:existsT, def:reindex}
+$f^{*} \dashv \forall^{t}_{f}$ in the truth order: $\texttt{reindex}\,
+(F.\texttt{base})\,v \le_t w \iff v \le_t \texttt{forallT}\,F\,w$. Together the
+two theorems give the second adjoint triple $\exists^{t}_{f} \dashv f^{*} \dashv
+\forall^{t}_{f}$ that the hyperdoctrine carries in parallel with the
+knowledge-order one.
+\end{theorem}
+
+\begin{definition}[Diagonal fiber]\label{def:diagFiber}\lean{RelMath.diagFiber}\leanok
+The diagonal fiber over a pair $(s, o)$ of entities is a single point when $s = o$
+and empty otherwise --- the preimage of the diagonal sub-support under the map $e
+\mapsto (e, e)$. It is the base data along which Lawvere's diagonal-$\Sigma$
+construction produces equality.
+\end{definition}
+
+\begin{definition}[Classical and paraconsistent equality]\label{def:classicalEq}\lean{RelMath.classicalEq, RelMath.paraconsistentEq}\leanok\uses{def:diagFiber, def:existsT, def:existsF, def:charge-joinTList, def:charge-joinList}
+Classical equality $=_E\,:=\,\exists^{t}_{g}(1^{t})$ is the truth-order
+existential image of the diagonal $t$-terminal (\texttt{classicalEq});
+paraconsistent equality $\Delta^{k}_E\,:=\,\exists^{k}_{g}(1^{k})$ is the
+knowledge-order existential image of the diagonal $\top$-terminal
+(\texttt{paraconsistentEq}). Both are Lawvere's diagonal-$\Sigma$, run once in
+each order --- equality is constructed, never postulated.
+\end{definition}
+
+\begin{theorem}[Classical equality is two-valued]\label{thm:classicalEq-eq}\lean{RelMath.classicalEq_eq}\leanok\uses{def:classicalEq, thm:existsT-adjunction}
+$=_E(s,o) = t$ if $s = o$ and $f$ otherwise. The truth-order $\exists$ extends the
+diagonal $t$-terminal by the truth bottom $f$ off the diagonal, recovering exactly
+classical two-valued equality without it ever being assumed.
+\end{theorem}
+
+\begin{theorem}[Paraconsistent equality is $\top$/$\bot$]\label{thm:paraconsistentEq-eq}\lean{RelMath.paraconsistentEq_eq}\leanok\uses{def:classicalEq, thm:existsT-adjunction, def:four-bilattice}
+$\Delta^{k}_E(s,o) = \top$ if $s = o$ and $\bot$ otherwise. The knowledge-order
+$\exists$ extends the diagonal $\top$-terminal by the knowledge bottom $\bot$ off
+the diagonal: the diagonal carries the information-maximal $\top$, the off-diagonal
+the no-claim $\bot$. The literature postulates classical equality as primitive;
+here both equalities fall out of the dual adjoint triple.
+\end{theorem}
+
+\begin{corollary}[Reflexivity in both orders]\label{cor:eq-refl}\lean{RelMath.classicalEq_refl, RelMath.paraconsistentEq_refl}\leanok\uses{thm:classicalEq-eq, thm:paraconsistentEq-eq}
+Both equalities are reflexive: $=_E(s,s) = t$ and $\Delta^{k}_E(s,s) = \top$. They
+agree on \emph{where} they hold --- the diagonal --- but disagree on the charge
+carried there, classical landing at the truth pole $t$ and paraconsistent at the
+knowledge pole $\top$. This is the bilattice's two orders made visible as two
+notions of identity.
+\end{corollary}
+
+\chapter{Sheaf and cohomology}\label{ch:sheaf}
+
+The settling operator (\cref{def:settling}) drives a valuation toward a fixed point in the knowledge order of the four-valued bilattice (\cref{def:four-bilattice}). Once that fixed point is reached, the corpus does not merely have a stable value: it has a globally coherent assignment of settled charge to every cell of predication. This chapter is the reading that turns the settled fixed point into a \emph{geometric} object --- a sheaf over the base of cells --- and then computes its cohomology. The pay-off is a single load-bearing identity: the obstruction group $H^1$ vanishes exactly when the cascade settles, and that vanishing \emph{is} the convergence of a CRDT and the coordination-freedom of a CALM monotone computation. Consensus cost, in this corpus, is a cohomology class.
+
+The motivation is structural and derives directly from the previous chapter. Settling reaches a fixed point by repeatedly merging evidence under the knowledge join $\vee_k$. That join is the merge operation of a bounded join-semilattice: commutative, idempotent, associative, and equipped with least upper bounds. These are precisely the algebraic laws that make a replicated data type \emph{convergent} --- order-independent, duplication-insensitive integration of deltas. So the settled valuation, viewed as a global assignment, can always be reconstructed from local pieces glued along their overlaps, with no obstruction to the gluing. We package the global assignment as a \emph{section} of a sheaf, identify the count of designated (settled-true) cells as $H^0$, and identify the obstruction-to-gluing as $H^1$. The whole content of settling cohomology lives in those two degrees: there are no nondegenerate cochains above degree one.
+
+We proceed in three movements, mirroring the three modules. First (\texttt{Sheaf}) we define the settling sheaf, prove that its section merge is a bounded join-semilattice (a CRDT), and obtain the two halves of $H^1 = 0$ in elementary form: order-independent merge (existence/gluing) and sheaf separation (uniqueness). Second (\texttt{SettlingCohomologyH1}) we lift this to genuine \v{C}ech cohomology over an arbitrary cover: $H^0$ becomes a count, $H^1 = 0$ becomes the theorem that every agreeing family of local sections glues to a unique global section, gated by the regime dichotomy, and the classifying invariant $[1_{F_U}]$ is forced to zero in the settling regimes. Third (\texttt{CRDTCohomologicalCALM}) we close the equivalence chain $H^1 = 0 \iff$ order-independent merge $\iff$ predicatory confluence $\iff$ unique settled fixed point, and read off the CALM theorem: monotone settling needs no coordination.
+
+\section{The settling sheaf and its CRDT section merge}
+
+We begin with the geometric repackaging. A settled valuation is read as the global section of a sheaf over the base of predication cells; a cell is \emph{designated} when its settled charge is truth-top. The merge of sections is the pointwise knowledge join, and we establish that this merge satisfies the bounded join-semilattice laws --- the algebraic content of a state-based CRDT.
+
+\begin{definition}[Settling sheaf]\label{def:settling-sheaf}\lean{RelMath.Sheaf}\leanok\uses{def:settling, def:four-bilattice}
+The \emph{settling sheaf} $\mathcal{S}$ packages the settled fixed point as a single datum: its \texttt{section\_} is a \texttt{Valuation}, a charge at every cell of the base of predication. This is $H^0$ realized --- the settled valuation read as one coherent global whole, the section that the settling dynamics converge upon. It is the central object of the chapter; the cohomology developed below is the cohomology of this sheaf.
+\end{definition}
+
+\begin{definition}[Designated cell]\label{def:sheaf-designated}\lean{RelMath.Sheaf.designated}\leanok\uses{def:settling-sheaf, def:four-bilattice}
+A cell $\varphi$ is \emph{designated} for a section $\mathcal{S}$ when its settled charge is truth-top: $\mathcal{S}.\texttt{section\_}\,\varphi = \texttt{Charge.tTop}$ --- supported, with no counter-evidence. The extent of the designated cells is the realized $H^0$: the count of cells the settling has driven to settled truth.
+\end{definition}
+
+\begin{theorem}[Section merge is a CRDT (bounded join-semilattice)]\label{def:section-merge-crdt}\lean{RelMath.Valuation.joinK_comm'}\leanok\uses{def:four-bilattice, def:settling-sheaf}
+The pointwise knowledge join \texttt{joinK} on sections is a bounded join-semilattice: it is commutative (\texttt{joinK\_comm'}), idempotent (\texttt{joinK\_idem'}), and associative (\texttt{joinK\_assoc'}), each obtained by \texttt{funext} from the corresponding charge-level law of \cref{def:four-bilattice}. These are exactly the convergence laws of a state-based CRDT: a merge that is insensitive to the order and multiplicity in which sections are combined.
+\end{theorem}
+
+\begin{lemma}[The merge is an upper bound]\label{thm:section-lub}\lean{RelMath.Valuation.le_joinK_left}\leanok\uses{def:section-merge-crdt}
+Each section sits below the merge in the knowledge order: \texttt{leK v (joinK v w)} and \texttt{leK w (joinK v w)} (\texttt{le\_joinK\_left}, \texttt{le\_joinK\_right}). Moreover the merge is the \emph{least} such upper bound: if \texttt{leK v u} and \texttt{leK w u} then \texttt{leK (joinK v w) u} (\texttt{section\_lub}). Gluing is therefore least-upper-bound: two local settlements glue to a unique global section with no obstruction.
+\end{lemma}
+
+\begin{theorem}[Vanishing $H^1$ in CRDT form]\label{def:vanishing-h1-crdt}\lean{RelMath.Charge.joinList_congr}\leanok\uses{def:four-bilattice, def:section-merge-crdt}
+The knowledge join of a list of deltas depends only on the \emph{set} of deltas, not their order or multiplicity: if $l$ and $l'$ have the same membership then $\texttt{joinList}\,l = \texttt{joinList}\,l'$ (\texttt{joinList\_congr}, proved by \texttt{kle\_antisymm} from the lattice laws). Deltas integrate without coordination. This is exactly $H^1 = 0$ in the finite regime --- the CRDT/CALM convergence form. As a corollary, integrating an already-absorbed delta changes nothing (\texttt{joinList\_cons\_mem}): idempotent integration.
+\end{theorem}
+
+\begin{definition}[Cover of the base]\label{def:sheaf-cover}\lean{RelMath.Sheaf.Cover}\leanok\uses{def:settling-sheaf}
+A \emph{cover} is a list of patches (Boolean predicates on cells) whose union is every cell: for each $\varphi$ there is a patch $p$ in the list with $p\,\varphi = \texttt{true}$. Two sections \emph{agree on a patch} (\texttt{agreeOn}) when they coincide wherever the patch holds. The cover is the open-cover data along which local sections are glued.
+\end{definition}
+
+\begin{theorem}[Sheaf separation]\label{thm:sheaf-separated}\lean{RelMath.Sheaf.separated}\leanok\uses{def:sheaf-cover, def:settling-sheaf}
+A section is determined by its restrictions to a cover: if two sections $v$, $w$ agree on every patch of a cover, then $v = w$ (\texttt{separated}, by \texttt{funext} through the covering patch of each cell). This is the injectivity half of the sheaf condition --- there are no hidden global degrees of freedom --- and it furnishes the uniqueness half of $H^1 = 0$.
+\end{theorem}
+
+\section{\v{C}ech cohomology of the associated sheaf}
+
+We now lift the elementary picture to genuine \v{C}ech cohomology of the settling-associated sheaf $F_U$ over an arbitrary cover. $H^0$ becomes a count of designated cells; $H^1$ becomes the gluing obstruction, computed by a constructive pointwise glue and shown to vanish. The vanishing is gated by the closure-ordinal regime, and the classifying invariant of the identity cochain is forced to zero in the settling regimes.
+
+\begin{definition}[$H^0$ --- count of designated cells]\label{def:h0-count}\lean{RelMath.Cohomology.H0}\leanok\uses{def:sheaf-designated}
+$H^0(T^*, F_U)$ realized is a \emph{count}: \texttt{H0 v cells} is the number of $d_T$-designated (settled-true) cells of the valuation $v$ among a clopen's cell support, computed by \texttt{List.countP} of the truth-side mask. This is the extent of the truth-designated cells the settling reaches --- the corpus's ``count of designated cells.''
+\end{definition}
+
+\begin{theorem}[$H^0$ is the designated-cell count]\label{thm:settling-cohomology-h1-vanishes}\lean{RelMath.Cohomology.h0_is_designated_count}\leanok\uses{def:h0-count}
+\texttt{H0 v cells} counts exactly the cells where the charge is truth-firing ($d_T\,v\,\varphi = \texttt{isTruthFiring}(v\,\varphi)$), and it is strictly positive iff there is truth-content in the support (\texttt{h0\_is\_designated\_count}). Thus $H^0 = 0$ iff no cell is designated: $H^0$ is precisely the count of the designated cells, the global section the settling reaches.
+\end{theorem}
+
+\begin{definition}[\v{C}ech $1$-datum]\label{def:cech1}\lean{RelMath.Cohomology.Cech1}\leanok\uses{def:sheaf-cover}
+A \emph{\v{C}ech $1$-datum} for $F_U$ carries a cover together with a local $F_U$-cochain \texttt{local\_ p} on each patch $p$ (a \texttt{Cochain} being \texttt{PredicationCell} $\to \mathbb{Z}$). The local section on a patch is read on the cells where that patch holds; off the patch it is irrelevant. This is the data of which $H^1$ measures the gluing obstruction.
+\end{definition}
+
+\begin{definition}[$1$-cocycle --- agreeing family]\label{def:cocycle}\lean{RelMath.Cohomology.Cocycle}\leanok\uses{def:cech1}
+A datum is a \emph{$1$-cocycle} when its local sections coincide on every overlap: wherever two patches $p$, $p'$ both hold at a cell $\varphi$, their local sections agree there. This is the \v{C}ech $1$-cocycle condition ($\delta^1$ vanishing) for $F_U$ --- the agreeing-family condition.
+\end{definition}
+
+\begin{definition}[Coboundary]\label{def:coboundary}\lean{RelMath.Cohomology.Coboundary}\leanok\uses{def:cech1}
+A datum is a \emph{coboundary} for a global cochain $g$ when each local section arises by reading $g$ through its patch: on every patch $p$, the local section equals $g$ wherever $p$ holds. This is the restriction $\delta^0 g$ of a single global section to the cover --- a coboundary is a family that comes from one global section.
+\end{definition}
+
+\begin{definition}[The glued global section]\label{def:glue}\lean{RelMath.Cohomology.glue}\leanok\uses{def:cech1}
+The \emph{glue} of a datum reads off, at each cell $\varphi$, the local value of the first patch of the cover that contains $\varphi$, found constructively by \texttt{List.find?} (which succeeds because the cover guarantees a covering patch). This is the pointwise gluing on the designated cells; being choice-free it stays within $\{\texttt{propext}, \texttt{Quot.sound}\}$.
+\end{definition}
+
+\begin{theorem}[Existence --- an agreeing family glues]\label{thm:h1-vanishes}\lean{RelMath.Cohomology.glue_coboundary}\leanok\uses{def:glue, def:cocycle, def:coboundary}
+For a $1$-cocycle (agreeing family), \texttt{glue D} restricts back to each local section: on every patch, \texttt{glue D} agrees with the local section wherever the patch holds (\texttt{glue\_coboundary}). The proof reads the \texttt{find?}-chosen covering patch $q$ of $\varphi$; since $q$ and $p$ both hold at $\varphi$, the cocycle condition forces their local values to coincide. So the family is a coboundary of \texttt{glue D} --- existence of the global section.
+\end{theorem}
+
+\begin{theorem}[Uniqueness --- by separation]\label{thm:classifying-invariant-zero}\lean{RelMath.Cohomology.glue_unique}\leanok\uses{def:coboundary, thm:sheaf-separated}
+Two global sections that both restrict to the same agreeing family are equal (\texttt{glue\_unique}). This reuses \v{C}ech-level separation, which is \cref{thm:sheaf-separated} (a section is determined by its restrictions to a cover); vanishing cohomology is not re-derived but reused. Existence and uniqueness together package as \texttt{H1Vanishes}, and the gluing theorem \texttt{h1\_vanishes} establishes $H^1(\text{cover}, F_U) = 0$ for \emph{any} cover and \emph{any} agreeing family.
+\end{theorem}
+
+\begin{theorem}[$H^1$ vanishes; cohomology trivial above degree one]\label{thm:h1-zero-iff-confluent}\lean{RelMath.Cohomology.settling_cohomology_h1_vanishes}\leanok\uses{thm:h1-vanishes, thm:classifying-invariant-zero, def:settling}
+In the strict ($\kappa < \omega$) and Scott-continuous ($\kappa = \omega$) regimes, settling cohomology $H^1$ vanishes. The headline \texttt{settling\_cohomology\_h1\_vanishes} bundles three facts: the regime gate ($\texttt{cohomologyVanishes}\,r = \texttt{true}$ iff $r$ is \texttt{strict} or \texttt{scott} --- exactly the regimes where the cascade settles); the gluing/uniqueness of every \v{C}ech datum (\texttt{h1\_vanishes}); and vanishing above degree one (\texttt{hn\_vanishes\_above\_one}: $H^n$ is the zero group for $n \geq 2$, all content sitting in $H^0$ and $H^1$). $H^1$ can be nonzero only in the non-Scott, aperiodic regimes.
+\end{theorem}
+
+\begin{theorem}[The classifying invariant is zero in the settling regime]\lean{RelMath.Cohomology.classifying_invariant_zero_strict}\leanok\uses{thm:h1-zero-iff-confluent, def:coboundary}
+The classifying invariant $\mathrm{cl\text{-}inv}(v) := [1_{F_U}] \in H^1$ is the cohomology class of the identity cochain (\texttt{identityCochain}: coefficient $1$ on each designated cell, $0$ elsewhere). Its canonical representative datum (\texttt{clInvDatum}: every patch carries the same $1_{F_U}$) is trivially a $1$-cocycle (\texttt{clInvDatum\_cocycle}) and is a coboundary of $1_{F_U}$ itself (\texttt{clInv\_coboundary}). Hence in any strict/Scott regime $\mathrm{cl\text{-}inv} = 0$, with the witness unique (\texttt{classifying\_invariant\_zero\_strict}). It is forced to zero precisely because $H^1 = 0$; it can be nonzero only in the aperiodic regime.
+\end{theorem}
+
+\begin{remark}[Truth--knowledge long exact sequence]\lean{RelMath.Cohomology.bigraded_les_from_ses}\leanok\uses{def:four-bilattice}
+The bilattice's two orders refine the graded invariant to a bigraded settling cohomology $H^{m,n}_{k,t}$. The wave-3 short exact sequence $0 \to F_U \to F_U^{(k)} \to F_U^{(\top)} \to 0$ induces the truth--knowledge comparison long exact sequence. Because $d_T$ and $d_\top$ are disjoint with $d_K = d_T \sqcup d_\top$, the sequence splits ($F_U^{(k)} \cong F_U \oplus F_U^{(\top)}$), every connecting map is zero, and the LES degenerates into the direct-sum decomposition $H^n(F_U^{(k)}) \cong H^n(F_U) \oplus H^n(F_U^{(\top)})$ --- the two bigrading axes. The structural witness \texttt{bigraded\_les\_from\_ses} re-exports exactness ($\iota$ injective, $\pi$ surjective, $\operatorname{im}\iota = \ker\pi$) and the splitting.
+\end{remark}
+
+\section{Convergence: CRDT, CALM, and predicatory confluence}
+
+The final movement reads the cohomological vanishing operationally. The chapter's deepest claim is that four superficially different statements are one: $H^1 = 0$, order-independent merge, predicatory confluence (divergent settling paths join), and uniqueness of the settled fixed point. Each link reuses an already-derived theorem; none is a fresh postulate. We then extract the CALM theorem's shadow and the Mayer--Vietoris overlap-gluing fact.
+
+\begin{definition}[Confluence (order form)]\label{def:confluent}\lean{RelMath.CRDT.Confluent}\leanok\uses{def:settling, def:four-bilattice}
+Two valuations $u$, $w$ are \emph{confluent} when they have a common upper bound in the knowledge order: $\exists z,\ u \leq_k z \wedge w \leq_k z$. The divergent settling paths from a common source reach a common $z$ by adding evidence --- predicatory confluence in its order reading.
+\end{definition}
+
+\begin{theorem}[Confluence is total --- the join is the witness]\lean{RelMath.CRDT.confluent_joinK}\leanok\uses{def:confluent, thm:section-lub}
+For \emph{any} two valuations the knowledge join $u \vee_k w$ is a common upper bound, so \texttt{Confluent u w} always holds (\texttt{confluent\_joinK}, reusing the lub laws of \cref{thm:section-lub}). Predicatory confluence is therefore not a contingent fact about particular reductions but a structural fact of the knowledge order: the least upper bound always exists, and operational posit/merge paths reach it because they are $\leq_k$-increasing evidence additions.
+\end{theorem}
+
+\begin{theorem}[CRDT convergence --- order-independent merge]\lean{RelMath.CRDT.crdt_merge_order_independent}\leanok\uses{def:vanishing-h1-crdt}
+The knowledge join of a list of deltas depends only on the set of deltas, not their order or multiplicity (\texttt{crdt\_merge\_order\_independent}, a re-export of \cref{def:vanishing-h1-crdt}). Replicas integrating the same set of deltas converge to the same value without coordination --- ``deltas integrate without coordination'' $=$ $H^1 = 0$ in the finite regime.
+\end{theorem}
+
+\begin{theorem}[The convergence equivalence chain]\lean{RelMath.CRDT.h1_zero_iff_confluent}\leanok\uses{thm:h1-vanishes, def:vanishing-h1-crdt, def:confluent, def:settling}
+For a modal settling frame, the four readings of convergence hold simultaneously and are pinned as one equivalence (\texttt{h1\_zero\_iff\_confluent}): \textbf{(i)} $H^1 = 0$ --- every agreeing family glues to a unique global section (\texttt{h1\_vanishes}); \textbf{(ii)} order-independent merge --- lists with equal membership join to the same charge (\cref{def:vanishing-h1-crdt}); \textbf{(iii)} confluence --- every pair of valuations joins at $u \vee_k w$; \textbf{(iv)} unique settled fixed point --- quiescence is being a closure fixed point, and antisymmetry of $\leq_k$ makes the settled value the unique normal form. Thus $H^1 = 0 \iff$ order-independent merge $\iff$ confluence $\iff$ unique fixed point. This is the chapter's cohomological reading of consensus cost.
+\end{theorem}
+
+\begin{theorem}[CALM --- monotone settling is coordination-free]\lean{RelMath.CRDT.calm_monotone_coordination_free}\leanok\uses{def:vanishing-h1-crdt, def:settling}
+For a modal settling frame and any seed, the closure orbit is $\leq_k$-monotone in the settle index --- no information is retracted across steps (the CALM monotonicity hypothesis) --- and the delta merge is order/multiplicity independent (\cref{def:vanishing-h1-crdt}). Bundled (\texttt{calm\_monotone\_coordination\_free}), this is the CALM theorem's shadow on settling: a monotone computation can be merged in any order with the same result, so replicas need no coordination.
+\end{theorem}
+
+\begin{theorem}[Mayer--Vietoris overlap gluing]\lean{RelMath.CRDT.mayer_vietoris_overlap_glues}\leanok\uses{thm:section-lub, def:sheaf-cover}
+The pre-images of a closure-stable value $w$ are closed under the overlap join: if $\operatorname{cl} v = w$ and $\operatorname{cl} v' = w$ then $\operatorname{cl}(v \vee_k v') = w$ (\texttt{mayer\_vietoris\_overlap\_glues}). This cosettling join-subsemilattice is the algebraic shadow of Mayer--Vietoris gluing: local cosettling data on a cover glue along their overlaps, the open-cover structure behind $H^1 = 0$.
+\end{theorem}
+
+\section{Alexandrov topology and the Husainov comparison}
+
+The settling site of the previous sections is the Alexandrov topology of a poset: its opens
+are the up-sets, closed under \emph{arbitrary} intersection. This identifies the combinatorial
+poset with a genuine topological space and lets the \v{C}ech cohomology above be read as the
+cohomology of a sheaf on that space. Husainov's theorem then asks the sharp question --- when
+does the \v{C}ech computation agree with the true \emph{derived-functor} cohomology? --- and the
+honest answer here separates cleanly into what this core proves and what it does not.
+
+\begin{theorem}[The Alexandrov topology recovers the poset]\label{thm:alexandrov-recovers-poset}\lean{RelMath.Alexandrov.alexandrov_specialization_recovers_poset}\leanok\uses{def:kle}
+For the Alexandrov topology of a poset $(P,\le)$ --- opens are the up-sets --- the opens are
+closed under \emph{arbitrary} intersection and union (the defining Alexandrov property), the
+specialization order recovers $\le$ exactly ($x \rightsquigarrow y \iff x \le y$, as predicates
+$\rightsquigarrow\ =\ \le$), and a map is continuous iff it is monotone. This is the classical
+equivalence \emph{Alexandrov spaces $\cong$ preorders}, proved over the derived poset
+infrastructure ($\texttt{alexandrov\_specialization\_recovers\_poset}$).
+\end{theorem}
+
+\begin{theorem}[\v{C}ech cohomology vanishes on the bounded sub-sites]\label{thm:husainov-cech-acyclic}\lean{RelMath.Alexandrov.husainov_cech_acyclic_on_bounded_sites}\leanok\uses{thm:h1-zero-iff-confluent, thm:alexandrov-recovers-poset}
+On the bounded sub-sites --- the strict ($\kappa<\omega$) / Scott ($\kappa=\omega$) regime --- the
+\v{C}ech $H^1$ of every cover vanishes ($\texttt{CechAcyclic}$, reusing
+\cref{thm:h1-zero-iff-confluent}) and \v{C}ech cohomology is trivial above degree one. This is a
+statement about the \v{C}ech computation \emph{alone}; it makes no comparison with the derived
+functor. In this model the \v{C}ech vanishing is in fact unconditional --- every cover glues ---
+so the regime here gates only the general dichotomy, where $H^1$ may be nonzero in the non-Scott
+regimes.
+\end{theorem}
+
+\begin{theorem}[Husainov: \v{C}ech $=$ derived-functor cohomology]\label{thm:husainov-cech-derived}\notready\uses{thm:husainov-cech-acyclic, thm:alexandrov-recovers-poset}
+\emph{(Open frontier --- stated, not formalized.)} On an Alexandrov poset, \v{C}ech cohomology
+agrees with the \emph{derived-functor} sheaf cohomology of the sheafification,
+$\check{H}^n(F_U) \cong R^n\Gamma(F_U)$, exactly when the poset's Dedekind--MacNeille cuts are
+acyclic --- a necessary-and-sufficient condition, algorithmically computable for finite posets
+([@husainov2026]). The load-bearing content is the comparison itself, and it requires
+\emph{derived-functor} cohomology $R^n\Gamma$ --- the right-derived functors of global sections,
+built from an injective or flasque resolution of $F_U$. That resolution machinery is not
+available in the dependency-free core, and without it there is no honest non-trivial Lean
+statement of the comparison: defining $R\Gamma := \check{H}$ makes it a tautology (the exact
+defect this pass removed), while conditioning it on an unconstrained abstract $R\Gamma$ makes it
+refutable. This node therefore stays \textbf{red} until the resolution machinery is formalized;
+it is the genuine frontier this corner of the library reaches, recorded here at full strength
+rather than faked in Lean. \cref{thm:husainov-cech-acyclic} supplies the \v{C}ech half it will
+build on.
+\end{theorem}
+
+\chapter{The recurring FOUR}\label{ch:four}
+
+Four is the number the corpus cannot stop meeting. The four articulation phases of a cell --- potential, active, stable, absurd --- recur as the four charges of the bilattice, as the four status pairs \texttt{Bool}~$\times$~\texttt{Bool}, as the four predicate generators, as the four corners of a nuclear quartet, and as the four modal readings $\{$neither, $\Diamond$, $\Box$, both$\}$. A weaker book would call these analogies. The 561 corpus makes the strong claim, and this chapter formalizes it: these are not four resembling structures but \emph{one four-element object met at successive depths of the spine}. Where the descent of Chapters~1--2 produced the articulation phases as a quotient of utterances, and where the bilattice (\ref{def:four-bilattice}) furnished them with two orders, here we prove that the phase, the charge, the status pair, the quartet corner, and the modal corner are interchangeable names for a single carrier --- and we equip that carrier with its natural symmetry group.
+
+The chapter has three movements. First, the \emph{keystone identification}: a chain of bijections through which every incarnation of the recurring four collapses to one object, with the charge/phase identity holding \emph{definitionally} (the bilattice charge \emph{is} the articulation corner, re-met as a value). Second, the \emph{Klein-four symmetry} $K_4 = \langle{\sim},{-}\rangle$: negation~$\sim$ (the slot swap) and conflation~$-$ (the complemented swap) are commuting involutions whose four composites act as $\mathbb{Z}/2 \times \mathbb{Z}/2$, with each generator preserving one of the bilattice's two orders and reversing the other --- the duality of the two orders made into a group object. Third, the \emph{nuclear quartet}: two commuting nuclei on a Heyting algebra cut out four fixed-point sub-algebras, indexed again by the same four corners, and --- crucially --- this quartet is allowed to \emph{vary fiberwise}, which is what later promotes aperiodicity from an assumption to a theorem. The movements close on the keystone proper: the commuting square of $K_4$ at the articulating birth-corner and the commuting square of the two nuclei on a settled fiber-algebra are exhibited as instances of one generic coherence cell.
+
+Throughout, the discipline of the library holds: \emph{no free data}. Every claim of identity is a bijection proven by finite exhaustion over the four-element \texttt{Corner}; every group law and order-effect is a \texttt{cases}/\texttt{rfl}/\texttt{decide} over the finite charge type, building only on what the descent already produced.
+
+\section{The keystone: the recurring four is one object}
+
+We first fix the elementary apparatus --- a bare bijection record, since the library carries no Mathlib \texttt{Equiv} --- and then identify the four-element incarnations pairwise, with the headline definition collecting them into the canonical four-corner object.
+
+\begin{definition}[Bare bijection]\label{def:bij}\lean{RelMath.Bij}\leanok
+A \texttt{Bij}~$\alpha$~$\beta$ is a function $\mathrm{to} : \alpha \to \beta$ together with an inverse $\mathrm{inv} : \beta \to \alpha$ and the two round-trip laws $\mathrm{inv}\,(\mathrm{to}\,a) = a$ and $\mathrm{to}\,(\mathrm{inv}\,b) = b$. It is the dependency-free witness of ``these two finite objects are the same,'' used everywhere the chapter asserts an identity of readings.
+\end{definition}
+
+\begin{definition}[Corner as status pair]\label{def:corner-status}\lean{RelMath.cornerStatus}\leanok\uses{def:bij, def:articulating, def:four-bilattice}
+The bijection $\texttt{cornerStatus} : \texttt{Bij}\;\texttt{Corner}\;(\texttt{Bool} \times \texttt{Bool})$ sends an articulation phase to its status pair $(\text{token-articulated}, \text{claim-articulated}) = (\text{positive}, \text{negative})$ and back. The four articulation phases are exactly the four two-sided status pairs; the identification is proven by exhausting the four corners.
+\end{definition}
+
+\begin{definition}[The four predicate generators]\label{def:generator}\lean{RelMath.Generator}\leanok\uses{def:predication}
+\texttt{Generator} is the four-constructor inductive of morphism classes of the predication category: specialization, converse, subject-projection, object-projection. Its enumeration \texttt{Generator.all} has length four (\texttt{Generator.card\_eq\_four}); these are the recurring four met as the generators of predicate morphisms.
+\end{definition}
+
+\begin{theorem}[The four-fold identity]\label{thm:four-fold}\lean{RelMath.four_fold}\leanok\uses{def:corner-status, def:generator}
+\texttt{four\_fold} states that \texttt{Corner.all} and \texttt{Generator.all} each have length four: every incarnation of the recurring four has exactly four elements, with no fifth reading.
+\end{theorem}
+
+\begin{theorem}[Charge is phase, definitionally]\label{thm:charge-is-phase}\lean{RelMath.charge_is_phase}\leanok\uses{def:four-bilattice, def:articulating}
+\texttt{charge\_is\_phase} proves $(c : \texttt{Charge}) = c$ for every corner $c$ --- because \texttt{Charge} is \emph{defined} to be \texttt{Corner}. A bilattice charge is not merely isomorphic to an articulation phase; it \emph{is} one, re-met as a value rather than as a stage of descent. This definitional collapse is the spine of the keystone.
+\end{theorem}
+
+\begin{definition}[The canonical four-corner object]\label{def:four-object}\lean{RelMath.FourCorner}\leanok\uses{def:corner-status, thm:charge-is-phase}
+\texttt{FourCorner} is the abbreviation $\texttt{Bool} \times \texttt{Bool}$: two binary slot-presences. This is the headline object of the chapter --- the canonical carrier of which every quartet in the corpus is an instance. The bijection \texttt{FourCorner.cornerBij} identifies it with \texttt{Corner}, and since \texttt{Charge}~$=$~\texttt{Corner}, also with \texttt{Charge}: the canonical four-corner \emph{is} the bilattice value object.
+\end{definition}
+
+\begin{definition}[A cell's four-corner]\label{def:cell-fourcorner}\lean{RelMath.ArticulationCell.fourCorner}\leanok\uses{def:four-object, def:articulating}
+\texttt{ArticulationCell.fourCorner} reads the articulation phase of a cell as the four-corner $(\text{tokenArticulated}, \text{claimArticulated})$. It is the bridge across which a stage of the descent becomes a value of the canonical object.
+\end{definition}
+
+\begin{theorem}[Conflation: articulating $\cong$ positing]\label{thm:articulation-phase-is-charge}\lean{RelMath.articulation_phase_is_charge}\leanok\uses{def:cell-fourcorner, def:four-object}
+\texttt{articulation\_phase\_is\_charge} proves that \texttt{FourCorner.toCorner} of a cell's four-corner equals the cell's corner --- and since \texttt{Corner}~$=$~\texttt{Charge}, equals its bilattice charge. The two-sided $(\text{token}, \text{claim})$ partition that articulating produces and the four-point value that positing admits are one object. The two verbs are the same four-corner cell met at two depths --- a theorem, not a comment.
+\end{theorem}
+
+\begin{theorem}[The descent's start is one point]\label{thm:potential-is-kbot}\lean{RelMath.potential_is_kBot}\leanok\uses{thm:articulation-phase-is-charge, def:settling}
+\texttt{potential\_is\_kBot} proves that the initial (potential) cell of any utterance sits at the $(\texttt{false}, \texttt{false})$ corner, which is the knowledge-bottom charge $\bot_k$ that positing seeds. The start of the descent is a single point in both the articulation reading and the value reading.
+\end{theorem}
+
+\section{The Klein-four symmetry $K_4 = \langle{\sim},{-}\rangle$}
+
+The recurring four carries two orders --- the knowledge order $\leq_k$ and the truth order $\leq_t$ of the bilattice. The natural symmetries of FOUR are exactly the maps that respect this two-order structure up to duality. There are two basic ones: negation $\sim$ (the slot swap, defined upstream in positing) which preserves $\leq_k$ and reverses $\leq_t$, and conflation $-$ (the complemented swap) which does the opposite. Their interplay is the Klein-four group.
+
+\begin{definition}[Conflation and its composite]\label{def:conflate}\lean{RelMath.Charge.conflate}\leanok\uses{def:four-object}
+\texttt{Charge.conflate}, written~$-$, is the knowledge-negation $\langle a, b\rangle \mapsto \langle \neg b, \neg a\rangle$: it swaps $\bot_k \leftrightarrow \top_k$ and fixes $t$ and $f$. Together with negation~$\sim$ it generates $K_4$. The companion \texttt{Charge.negConf} is the coordinatewise complement $\langle a, b\rangle \mapsto \langle \neg a, \neg b\rangle$, the third nontrivial element ${\sim}\circ{-}$.
+\end{definition}
+
+\begin{theorem}[The generators commute]\label{thm:negate-conflate-comm}\lean{RelMath.Charge.negate_conflate_comm}\leanok\uses{def:conflate}
+\texttt{Charge.negate\_conflate\_comm} proves ${\sim}\circ{-} = {-}\circ{\sim}$: negation and conflation commute. \texttt{Charge.negate\_conflate} identifies their common value as \texttt{negConf}, the coordinatewise complement. Commutation is the hinge that makes the four composites close into a group rather than a larger structure.
+\end{theorem}
+
+\begin{theorem}[Negation's order-effects]\label{thm:negate-orders}\lean{RelMath.Charge.negate_preserves_kle}\leanok\uses{def:conflate, def:four-bilattice}
+\texttt{Charge.negate\_preserves\_kle} proves $\sim$ preserves the knowledge order ($\mathrm{KLE}\,({\sim}a)\,({\sim}b) \leftrightarrow \mathrm{KLE}\,a\,b$), while \texttt{Charge.negate\_reverses\_tle} proves $\sim$ reverses the truth order ($\mathrm{TLE}\,({\sim}a)\,({\sim}b) \leftrightarrow \mathrm{TLE}\,b\,a$). Negation is the symmetry that fixes knowledge and dualizes truth.
+\end{theorem}
+
+\begin{theorem}[Conflation's order-effects]\label{thm:conflate-orders}\lean{RelMath.Charge.conflate_reverses_kle}\leanok\uses{def:conflate, def:four-bilattice}
+Dually, \texttt{Charge.conflate\_reverses\_kle} proves $-$ reverses the knowledge order and \texttt{Charge.conflate\_preserves\_tle} proves $-$ preserves the truth order. The two generators partition the two orders' duties between them: each fixes one order and reverses the other.
+\end{theorem}
+
+\begin{theorem}[The composite reverses both]\label{thm:negconf-reverses}\lean{RelMath.Charge.negConf_reverses_kle}\leanok\uses{thm:negate-orders, thm:conflate-orders}
+\texttt{Charge.negConf\_reverses\_kle} (with its truth-order companion) proves ${\sim}\circ{-}$ reverses \emph{both} orders. The product of two symmetries each reversing exactly one order reverses both --- the $\mathbb{Z}/2 \times \mathbb{Z}/2$ structure read off the order-effects.
+\end{theorem}
+
+\begin{theorem}[The Klein-four group]\label{def:klein-four-symmetry}\lean{RelMath.Charge.klein_four}\leanok\uses{thm:negate-conflate-comm, thm:negconf-reverses}
+\texttt{Charge.klein\_four} bundles the group facts of $\{\mathrm{id}, \sim, -, {\sim}\circ{-}\}$: each of the three nontrivial elements is an involution, and the products $\sim\circ- = {\sim}\circ{-} = -\circ\sim$ close the set. This is $K_4 \cong \mathbb{Z}/2 \times \mathbb{Z}/2$, the natural symmetry group of FOUR equipped with both negation and conflation --- the two orders' duality made a group.
+\end{theorem}
+
+\subsection{$K_4$ as a first-class group object}
+
+The element-by-element facts above are repackaged as a single group object: a four-element carrier with a Cayley table, an action, and the full group laws proven over it.
+
+\begin{definition}[The carrier $K_4$ and its action]\label{def:k4-group}\lean{RelMath.KleinFour.K4}\leanok\uses{def:klein-four-symmetry}
+\texttt{KleinFour.K4} is the four-constructor inductive $\{\texttt{id}, \texttt{neg}, \texttt{conf}, \texttt{negConf}\}$ --- the Klein-four group as a first-class carrier. Its action \texttt{KleinFour.K4.act} sends each element to the corresponding map on \texttt{Charge} (\texttt{neg}~$\mapsto\sim$, \texttt{conf}~$\mapsto-$, \texttt{negConf}~$\mapsto{\sim}\circ{-}$), and \texttt{KleinFour.K4.mul} is the explicit $4\times 4$ Cayley table.
+\end{definition}
+
+\begin{theorem}[The Cayley table]\label{thm:cayley}\lean{RelMath.KleinFour.K4.cayley}\leanok\uses{def:k4-group}
+\texttt{KleinFour.K4.cayley} records the full $4\times 4$ multiplication grid, one \texttt{rfl} per cell. It fixes the group's combinatorics before any law is proven from it.
+\end{theorem}
+
+\begin{theorem}[The action is a homomorphism]\label{thm:act-mul}\lean{RelMath.KleinFour.K4.act_mul}\leanok\uses{thm:cayley, def:k4-group}
+\texttt{KleinFour.K4.act\_mul} proves $\mathrm{act}\,(g \cdot h)\,a = \mathrm{act}\,g\,(\mathrm{act}\,h\,a)$: the Cayley table is precisely composition of the underlying \texttt{Four} maps. This is what makes $K_4$ a group \emph{acting on} FOUR rather than an abstract table, and it is here that the involution and commutation laws of the symmetry are consumed.
+\end{theorem}
+
+\begin{theorem}[$K_4$ is an abelian group object]\label{thm:k4-isgroup}\lean{RelMath.KleinFour.K4.isGroup}\leanok\uses{thm:act-mul}
+\texttt{KleinFour.K4.isGroup} bundles associativity (\texttt{mul\_assoc}), the two-sided identity \texttt{id}, the self-inverse law \texttt{mul\_self} ($g \cdot g = \texttt{id}$ for every $g$), commutativity (\texttt{mul\_comm}), and the homomorphism law into one ``group object'' certificate. With $g^{-1} = g$ for all $g$, this is the abelian group $\mathbb{Z}/2 \times \mathbb{Z}/2$, proven by finite exhaustion over the $64$ triples.
+\end{theorem}
+
+\begin{definition}[The internal $\mathbb{Z}/2$ gauge]\label{def:gauge}\lean{RelMath.KleinFour.K4.inGauge}\leanok\uses{thm:k4-isgroup}
+\texttt{KleinFour.K4.inGauge} marks the subgroup $\langle\sim\rangle = \{\texttt{id}, \texttt{neg}\} \cong \mathbb{Z}/2$ --- the internal gauge of FOUR. Its action on valuations is \texttt{KleinFour.K4.gaugeAct}, where the nontrivial element \texttt{neg} acts as pointwise negation; \texttt{KleinFour.K4.gauge\_closed} proves the subgroup is closed under multiplication.
+\end{definition}
+
+\begin{theorem}[Gauge stability and movement]\label{thm:gauge-stable}\lean{RelMath.KleinFour.K4.paraconsistent_gauge_stable}\leanok\uses{def:gauge}
+\texttt{KleinFour.K4.paraconsistent\_gauge\_stable} proves that if every cell of a valuation is $\bot_k$ or $\top_k$, the whole $\mathbb{Z}/2$ gauge fixes it: paraconsistent points are gauge-stable. Dually \texttt{KleinFour.K4.classical\_gauge\_moves} proves a classical $t$-cell is moved by the gauge generator. The gauge fixes the inconsistency side and sign-flips the truth side --- a $\mathbb{Z}/2$ symmetry that distinguishes paraconsistent from classical content.
+\end{theorem}
+
+\section{The nuclear quartet: two commuting nuclei}
+
+The previous movements treated FOUR as one object with a symmetry group. The nuclear quartet is the complementary structure: not one object but a recurrent \emph{pattern} --- two commuting nuclei on a Heyting algebra, cutting out four fixed-point sub-algebras indexed once more by the four corners. Where the Klein-four maps are involutions, the nuclei are idempotent closures; the shared content is only the commuting square. This is the categorical shadow, in one dimension, of the corpus's KZ closure-diamond.
+
+\begin{definition}[Heyting algebra]\label{def:heyting}\lean{RelMath.HeytingAlgebra}\leanok\uses{def:floor}
+\texttt{HeytingAlgebra} is a meet-semilattice (commutative, associative, idempotent \texttt{meet}) with a relative pseudocomplement \texttt{imp} adjoint to meet via the Heyting adjunction $b \sqcap a \leq c \leftrightarrow b \leq (a \Rightarrow c)$, the order being $a \leq b := a \sqcap b = a$. Its induced order is reflexive, transitive and antisymmetric, meet is monotone, and modus ponens holds --- the algebraic floor on which nuclei act.
+\end{definition}
+
+\begin{definition}[Nucleus]\label{def:nucleus}\lean{RelMath.Nucleus}\leanok\uses{def:heyting}
+A \texttt{Nucleus} on a Heyting algebra is an inflationary ($a \leq j\,a$), idempotent ($j\,(j\,a) = j\,a$), meet-preserving ($j\,(a \sqcap b) = j\,a \sqcap j\,b$) endomap. Monotonicity follows from meet-preservation. A nucleus is a closure operator that respects the Heyting structure, not merely the lattice.
+\end{definition}
+
+\begin{theorem}[Fixed points are closed under $\Rightarrow$]\label{thm:fix-imp}\lean{RelMath.Nucleus.fix_imp}\leanok\uses{def:nucleus}
+\texttt{Nucleus.fix\_imp} proves that if $b$ is $j$-fixed, so is $a \Rightarrow b$. This is why meet-preservation matters: it makes $\mathrm{Fix}(j)$ a Heyting \emph{sub-algebra}, not merely a sub-lattice. Without the meet law the fixed points would reflect only the lattice order.
+\end{theorem}
+
+\begin{definition}[Nuclear square]\label{def:nuclear-square}\lean{RelMath.NuclearSquare}\leanok\uses{def:nucleus}
+A \texttt{NuclearSquare} on a Heyting algebra is a pair of nuclei $j_1, j_2$ together with the commutation law $j_1\,(j_2\,a) = j_2\,(j_1\,a)$. The pair is read either as the two orders $(j_k, j_t)$ of the bilattice or as the temporal pair $(\sigma, \Delta)$ --- saturation and transfer.
+\end{definition}
+
+\begin{theorem}[Nuclear Quartet Theorem]\label{thm:nuclear-quartet}\lean{RelMath.NuclearSquare.compNucleus}\leanok\uses{def:nuclear-square, thm:fix-imp}
+The joint closure $\pi = j_1 \circ j_2$ is itself a nucleus: \texttt{NuclearSquare.compNucleus} constructs it, with idempotency turning on the commutation law. Its companion \texttt{NuclearSquare.fix\_pi\_iff} proves $\mathrm{Fix}(\pi) = \mathrm{Fix}(j_1) \cap \mathrm{Fix}(j_2)$ --- the joint-quiescent corner is exactly the joint fixed point, the hinge again being commutativity. \texttt{NuclearSquare.square} restates the commuting square: both paths $A \to A^{*}$ agree.
+\end{theorem}
+
+\begin{definition}[The four corners of the quartet]\label{def:quartet-corner}\lean{RelMath.NuclearSquare.corner}\leanok\uses{thm:nuclear-quartet, def:four-object}
+\texttt{NuclearSquare.corner} reads the four sub-algebras off the four articulation phases: potential $\mapsto$ the free carrier (neither nucleus), active $\mapsto j_1$-quiescent, stable $\mapsto j_2$-quiescent, absurd $\mapsto$ joint-quiescent ($\pi$). The quartet's corners are the recurring FOUR, lifted from values to fixed-point sub-algebras.
+\end{definition}
+
+\subsection{The fiberwise-varying family --- the recurrence}
+
+The nuclear quartet is not a single object but a pattern instantiated at every fiber, and the pattern is allowed to \emph{vary} from fiber to fiber. That variation is the recurrence the bigraded diamond \emph{is}, and it is what later makes aperiodicity a theorem rather than an assumption: a constant nuclear pair would leave automorphisms invisible.
+
+\begin{definition}[Family of nuclear squares]\label{def:square-family}\lean{RelMath.SquareFamily}\leanok\uses{def:nuclear-square}
+A \texttt{SquareFamily} over an index type $I$ assigns a \texttt{NuclearSquare} to each fiber (history or step). The nuclear pair $(j_1^i, j_2^i)$ may differ per fiber --- this is the recurrence: not one square but a square at every fiber.
+\end{definition}
+
+\begin{definition}[The family varies]\label{def:varies}\lean{RelMath.SquareFamily.Varies}\leanok\uses{def:square-family}
+\texttt{SquareFamily.Varies} asserts that some two fibers carry genuinely different nuclear pairs. Constant families leave automorphisms invisible; a varying family is what makes history-separation (aperiodicity) provable. \texttt{SquareFamily.fiber\_quartet} confirms that every fiber realizes the Nuclear Quartet Theorem regardless of variation.
+\end{definition}
+
+\begin{example}[A concrete varying family]\label{ex:varying-family}\lean{RelMath.Charge.varyingFamily}\leanok\uses{def:varies, def:four-bilattice}
+On the charge knowledge-Heyting-algebra \texttt{Charge.heytingK} (with \texttt{Charge.joinNucleusK} the nucleus raising toward a bound by $\vee_k$), \texttt{Charge.varyingFamily} is a two-fiber family: fiber \texttt{true} raises toward $t$, fiber \texttt{false} toward $\top_k$. \texttt{Charge.varyingFamily\_varies} proves the $j_1$ nuclei genuinely differ --- a concrete bigraded-diamond recurrence over the finite charge bilattice.
+\end{example}
+
+\section{The four-corner coherence cell at successive depths}
+
+The two movements --- the Klein-four involutions and the nuclear idempotents --- look unrelated until one strips both to their common structure. What they share is exactly the commuting square. The keystone of the chapter exhibits this shared cell abstractly, proves its generic coherence once, and instantiates it at two depths of the spine: the twist of $K_4$ at the articulating birth-corner, and the commutation of the two nuclei on a settled fiber-algebra.
+
+\begin{theorem}[The modal four]\label{def:modal}\lean{RelMath.Modal}\leanok\uses{def:four-object, def:quartet-corner}
+\texttt{Modal} is the four-constructor inductive $\{\texttt{neither}, \texttt{dia}, \texttt{box}, \texttt{both}\}$ --- the $\{$neither, $\Diamond$, $\Box$, both$\}$ reading of the recurring FOUR, naming the four ways of acting on the free carrier with two commuting closures. Its bijection \texttt{Modal.cornerBij} with \texttt{Corner} certifies that the modal four-corner is the \emph{same} object as the articulation phase, the bilattice charge, and the nuclear-quartet corner, re-met under modal names.
+\end{theorem}
+
+\begin{theorem}[The master conflation --- the keystone]\label{thm:quartet-recurrence}\lean{RelMath.quartet_recurrence}\leanok\uses{def:modal, thm:articulation-phase-is-charge, thm:four-fold}
+\texttt{QuartetRecurrence} bundles the round-trip witnesses, and \texttt{quartet\_recurrence} proves it: the articulation-cell phase, \texttt{FourCorner} ($\texttt{Bool} \times \texttt{Bool}$), \texttt{Charge} ($=\texttt{Corner}$), the nuclear-quartet corner index, and \texttt{Modal} are \emph{all one object}. Every reading's round-trip is the identity, the articulation phase is the charge, and the cell is exhaustively four-cornered with no fifth reading. This is the corpus's ``one four-corner cell met at successive depths,'' made a single theorem depending on no axioms beyond \texttt{propext} and \texttt{Quot.sound}.
+\end{theorem}
+
+\begin{definition}[The abstract commuting pair]\label{def:commuting-pair}\lean{RelMath.CommutingPair}\leanok\uses{thm:quartet-recurrence}
+A \texttt{CommutingPair} on a carrier $C$ is two endomaps $f, g$ with $f \circ g = g \circ f$ --- the bare data shared by twistoring (two involutions) and commutating (two nuclei). The involution and idempotency laws of the specific depth are deliberately absent: they are not part of the shared coherence cell. Its \texttt{CommutingPair.cornerOp} reads the four corners as identity, $f$ alone, $g$ alone, and $f \circ g$.
+\end{definition}
+
+\begin{theorem}[The recurring coherence 2-cell]\label{thm:commuting-square}\lean{RelMath.CommutingPair.square}\leanok\uses{def:commuting-pair}
+\texttt{CommutingPair.square} proves the generic coherence: the \texttt{absurd} corner operator $f \circ g$ agrees with $g \circ f$ --- both paths from the free corner to the doubly-acted corner coincide. This single lemma is the commuting-square 2-cell that recurs at every depth of the spine.
+\end{theorem}
+
+\begin{theorem}[Twistoring equals commutating]\label{thm:twistoring-eq-commutating}\lean{RelMath.twistoring_eq_commutating}\leanok\uses{thm:commuting-square, def:klein-four-symmetry, thm:nuclear-quartet}
+\texttt{twistoringPair} instantiates the cell on \texttt{Charge} with $f = {\sim}$, $g = {-}$, commuting by the $K_4$ law; \texttt{commutatingPair} instantiates it on a Heyting algebra with $f = j_1$, $g = j_2$, commuting by the nuclear square. \texttt{twistoring\_eq\_commutating} proves both satisfy the \emph{same} generic \texttt{CommutingPair.square} at every point and index the same exhaustive four corners. The $\sigma\circ\Delta = \Delta\circ\sigma$ commuting square at aperiodic settling and the ${\sim}\circ{-} = {-}\circ{\sim}$ twist at the articulating birth-corner are one coherence 2-cell. The depth-specific laws differ --- involutions at articulating, idempotent nuclei at settling --- but neither enters the shared cell, which is only the commuting square. This is precisely the corpus's claim that commutating is the analogue, on settled fiber-algebras, of twistoring at the articulating birth-corner.
+\end{theorem}
+
+\chapter{Aperiodic classification (frontier)}\label{ch:aperiodic}
+
+In the aperiodic regime ($\kappa \ge \omega_1$) the classifying invariant $\mathrm{cl\text{-}inv}$
+can be nonzero, and the corpus reads it as a complete invariant for settlings up to
+\emph{mutual-local-derivability} (MLD), with a cosheaf-homology dual $\check{\mathrm{cl}}\text{-}\mathrm{inv}$
+paired to it by Verdier duality. This chapter is careful about a distinction the prose can
+blur: what the formalization establishes (an abstract \texttt{cl-inv} model and its regime
+dichotomy) versus what remains open (the genuine MLD classification and the genuine Verdier
+duality, both of which the corpus itself states only at draft level).
+
+\begin{theorem}[The \texttt{cl-inv} regime dichotomy]\label{thm:clinv-dichotomy}\lean{RelMath.Aperiodic.clinv_zero_iff_settles}\leanok\uses{thm:h1-zero-iff-confluent}
+The genuine content of the abstract classifying-invariant model: $\mathrm{cl\text{-}inv} = 0$
+throughout the strict/Scott regimes (forced from the settling's vanishing constraint, reusing
+\cref{thm:h1-zero-iff-confluent}), and $\mathrm{cl\text{-}inv}$ \emph{can} be nonzero in the
+aperiodic regime --- witnessed by a concrete \texttt{aperiodicWitness} with
+$\mathrm{cl\text{-}inv} = [1] \neq 0$ (\texttt{clinv\_zero\_iff\_settles}).
+\end{theorem}
+
+\begin{theorem}[The strict-Boolean co-classifying model]\label{thm:coclinv-strict-boolean}\lean{RelMath.CoClassify.co_classifying_strict_boolean_model}\leanok\uses{thm:clinv-dichotomy}
+The cosheaf-homology dual is modeled \emph{strictly}, by construction: $H_1$ is taken to be a
+coordinate-isomorphic copy of $H^1$ and the spatial Verdier map is the coordinate identity, so
+$\check{\mathrm{cl}}\text{-}\mathrm{inv} = \mathbb{D}_{\mathrm{sp}}(\mathrm{cl\text{-}inv})$ and
+$\mathbb{D}_{\mathrm{sp}}$ is a bijection by $\mathtt{rfl}$. This transports the witness's
+nonvanishing to the cosheaf side; it is the identification, not a computation of genuine
+cosheaf homology (\texttt{co\_classifying\_strict\_boolean\_model}).
+\end{theorem}
+
+\begin{theorem}[Aperiodic MLD classification]\label{thm:aperiodic-mld-classification}\notready\uses{thm:clinv-dichotomy}
+\emph{(Open frontier --- stated, not formalized.)} The substantive classification: an
+\emph{independently defined} mutual-local-derivability relation on aperiodic settlings (each
+locally derivable from the other) is cut out exactly by equality of $\mathrm{cl\text{-}inv}$.
+The current formalization \emph{defines} MLD as $\mathrm{cl\text{-}inv}$-equality, making
+completeness hold by construction; the real theorem requires an independent MLD relation and a
+proof that $\mathrm{cl\text{-}inv}$ is a complete invariant for it. This node stays red until
+that relation is formalized.
+\end{theorem}
+
+\begin{theorem}[Aperiodic Verdier duality]\label{thm:aperiodic-verdier-duality}\notready\uses{thm:coclinv-strict-boolean}
+\emph{(Open frontier --- stated, not formalized.)} The genuine Verdier duality:
+$H^1(\mathcal{F}_v) \simeq H_1(\check{\mathcal{F}}_v)$, where $H_1$ is the \emph{actual} cosheaf
+homology of the Verdier-dual cosheaf (not a renamed copy of $H^1$), in q-fuzzy generality via
+the derived-functor $\mathbb{D}$. The corpus states this only at draft level; the strict-Boolean
+case (\cref{thm:coclinv-strict-boolean}) is a model of it, not a proof. This node stays red
+until the cosheaf homology and the comparison are constructed.
+\end{theorem}
+
+% ---------------------------------------------------------------------------
+% Further frontier chapters (step-n RG tower, etc.) follow the ROADMAP
+% "Frontier backlog"; a later workflow run appends them as their modules are mapped.

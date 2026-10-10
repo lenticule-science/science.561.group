@@ -1,0 +1,16 @@
+\section{Valuations and the seeded knowledge-least state}
+
+\begin{proposition}[Valuation]\label{thm:valuation}\lean{Infomaterial.Valuation}\leanok\uses{thm:four-bilattice, thm:predication}
+A \emph{valuation} assigns a charge to each predication cell. It is the
+pointwise value surface over the predication base.
+\end{proposition}
+
+\begin{proposition}[The knowledge-least valuation positing seeds]\label{thm:knowledge-least}\lean{Infomaterial.Valuation.knowledgeLeast}\leanok\uses{thm:valuation, thm:kBot-least}
+The knowledge-least valuation sends every predication cell to $\bot_k$. It is
+a total assignment of no evidence, not an absent graph.
+\end{proposition}
+
+\begin{theorem}[The seed is below every valuation]\label{thm:knowledgeLeast-le}\lean{Infomaterial.Valuation.knowledgeLeast_le}\leanok\uses{thm:knowledge-least}
+The knowledge-least valuation is pointwise below every valuation, because
+$\bot_k$ is below every charge in the knowledge order.
+\end{theorem}

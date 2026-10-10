@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://561.group/swarm-intelligence/articulating/library/aperiodic-articulation-category/library/aperiodic-articulation-cell/library/stable-aperiodic-articulation-cell/governing/governing.schema.json",
+  "title": "Governing (theory → governance, bound over a collective)",
+  "description": "Governing selects a governance theory (one object of Gov) and binds it over a collective. Generator of the governance object. orchestrating is governing restricted to the orchestration theory. Per docs/ORCHESTRATION-GENEALOGY.md; grounded in the lab surveys (orchestration-vs-choreography, kyriarchical-agentics, tiyospaye/wolakȟota).",
+  "kind": "morphism",
+  "variance": "restriction",
+  "type": "object",
+  "required": ["input", "output"],
+  "additionalProperties": false,
+  "properties": {
+    "input": {
+      "type": "object",
+      "required": ["theory"],
+      "additionalProperties": false,
+      "properties": {
+        "theory": { "enum": ["orchestration", "choreography", "kyriarchical", "kin-relational"] },
+        "over": { "type": ["string", "null"], "description": "collective id/kind reference to bind over" }
+      }
+    },
+    "output": { "$ref": "https://561.group/swarm-intelligence/articulating/library/aperiodic-articulation-category/library/aperiodic-articulation-cell/library/stable-aperiodic-articulation-cell/governing/library/governance/governance.schema.json" }
+  }
+}

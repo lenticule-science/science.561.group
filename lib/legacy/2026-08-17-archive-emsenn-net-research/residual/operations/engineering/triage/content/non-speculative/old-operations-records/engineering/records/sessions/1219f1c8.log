@@ -1,0 +1,14 @@
+All 6 task files exist:
+
+| Task ID | Exists |
+|---------|--------|
+| `pta-install-tooling` | yes |
+| `pta-design-chart-of-accounts` | yes |
+| `pta-create-ledger-files` | yes |
+| `pta-bookkeeper-office` | yes |
+| `pta-reporting-commands` | yes |
+| `pta-crypto-integration` | yes |
+
+No missing task files. The plan references 6 tasks and all 6 have corresponding files in `operations/command/records/tasks/`.
+
+Notable from the plan: Step 0 (evaluate native vs external tooling) is a blocking decision that must be made before other steps proceed. The plan is `active` with `date-created: 2026-04-05`.

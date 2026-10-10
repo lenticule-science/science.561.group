@@ -1,0 +1,3 @@
+#+title: Web
+#+date: [2020-12-15 15:21]
+The */Web/* is a conglomerate of services hosted on the [[file:internet.org][Internet]]

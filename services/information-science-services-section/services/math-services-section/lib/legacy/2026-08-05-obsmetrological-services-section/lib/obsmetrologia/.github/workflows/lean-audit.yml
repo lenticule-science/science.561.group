@@ -1,0 +1,75 @@
+name: Lean Audit
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "37 9 * * 3"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: lean-audit-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  independent-checkers:
+    name: Independent Lean checkers
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Set up Node for CI reporting
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24
+
+      - name: Build and run independent checkers
+        uses: leanprover/lean-action@v1
+        with:
+          auto-config: false
+          lake-package-directory: .
+          leanchecker: true
+          nanoda: true
+          nanoda-allow-sorry: true
+          use-mathlib-cache: false
+
+      - name: Run Lean build and checknames with failure summary
+        run: node scripts/ci-report.mjs --name "Scheduled Lean build and checknames" -- make check
+
+  project-audits:
+    name: Project structure audits
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Set up Node from package manager metadata
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24
+
+      - name: Run project audits with failure summary
+        run: node scripts/ci-report.mjs --name "Scheduled project audits" -- npm run lean:audit
+
+      - name: Add frontier audit to job summary
+        if: always()
+        run: |
+          if [ -f sites/docs/coverage/lean-frontier-audit.md ]; then
+            cat sites/docs/coverage/lean-frontier-audit.md >> "$GITHUB_STEP_SUMMARY"
+          fi
+          if [ -f sites/docs/coverage/cross-surface-audit.md ]; then
+            printf '\n\n' >> "$GITHUB_STEP_SUMMARY"
+            cat sites/docs/coverage/cross-surface-audit.md >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: Upload audit surfaces
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: obsmetrologia-audit-surfaces
+          path: sites/docs/coverage/
+          if-no-files-found: ignore

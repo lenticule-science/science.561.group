@@ -1,0 +1,12 @@
+Done. The pre-compact hook now injects an 8-section structured template after the existing orientation content. The template instructs the compaction to preserve:
+
+1. **Primary Request and Intent** — the session's goal
+2. **Key Technical Decisions Made** — with rationale
+3. **Files Modified** — with change summaries
+4. **What Worked** — with evidence
+5. **What Did NOT Work** — with root cause (marked CRITICAL to prevent retries)
+6. **Current Work Status** — specific progress
+7. **Exact Next Step** — concrete and actionable
+8. **Required Files** — paths to re-read post-compaction
+
+The existing orientation (memory paths, active goals/plans, current plan focus) is preserved above the template. The hook still follows the dual entry point pattern and all JS conventions.

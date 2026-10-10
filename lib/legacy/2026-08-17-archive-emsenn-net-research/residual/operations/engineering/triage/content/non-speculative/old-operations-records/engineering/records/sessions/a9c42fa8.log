@@ -1,0 +1,1 @@
+Both issues fixed. Output unchanged — dedup logic was correct, just cleaner now with no mixed-type field mutation.

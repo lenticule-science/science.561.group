@@ -1,0 +1,15 @@
+.lake/
+**/.lake/
+node_modules/
+dist/
+
+docs/blueprint/web/
+docs/verso/_rendered/
+sites/docs/
+
+.claude/
+*.sonnet-bak
+*.tmp
+*.tmp.*
+*.swp
+*~

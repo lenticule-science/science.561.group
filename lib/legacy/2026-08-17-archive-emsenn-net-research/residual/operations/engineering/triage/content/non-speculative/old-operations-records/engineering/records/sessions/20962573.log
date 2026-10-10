@@ -1,0 +1,16 @@
+Done. Here's what was delivered:
+
+**New file:** `operations/engineering/fars/agentic/tools/verify-plan-consistency.js` (143 lines)
+- Scans all departments (`operations/*/records/plans/` and `tasks/`)
+- 5 checks: missing tasks, bad part-of refs, orphans, circular deps, stale active plans
+- `--fix` flag auto-adds orphan tasks to their plan's task list when part-of is set
+- Formatted report with exit code 0 (pass) or 1 (fail)
+
+**Updated:** `operations/engineering/fars/agentic/commands/verify.md`
+- Added check #6 (Plan Consistency) between Graph and Convention checks
+- Added `plans` argument for targeted runs
+- Added Plans line to output summary
+
+**First run found 59 real issues:** 6 missing task files, 47 orphan tasks, 1 stale active plan — no circular dependencies.
+
+**Task marked completed:** `gvc-add-plan-consistency-checks`

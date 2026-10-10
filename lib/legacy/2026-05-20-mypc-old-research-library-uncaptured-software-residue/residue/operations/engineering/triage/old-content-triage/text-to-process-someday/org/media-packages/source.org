@@ -1,0 +1,177 @@
+#+TITLE: Media Packages
+#+EXPORT_FILE_NAME: ./media-packages
+#+OPTIONS: broken-links:mark H:10
+#+MACRO: document-type proposal
+#+TOC: headlines 3
+* Introduction
+  :PROPERTIES:
+  :CUSTOM_ID: introduction
+  :END:
+{{{document-is-prototype(specification)}}}
+
+This {{{doc}}} contains the specifications for /media packages/ and
+/media package channels/, formats for maintaining a manifest about a
+piece of media content and a listing of those manifests.
+
+{{{document-eli(default)}}}
+* Media Packages
+  :PROPERTIES:
+  :header-args: :results value silence :eval no-export :noweb yes :tangle ./emsems.el :padline no
+  :END:
+** Overview
+A */media package/* is a manifest of information about a piece of
+media content, providing information about the piece as well as
+information about from where it can be obtained.
+
+#+name: media-package-example-1 :eval no
+#+caption: A basic /media package/ implemented as an /Elisp expression/.
+#+begin_src elisp :eval no :tangle nil
+  '("shaggy-dog-tale"
+    ("versions"
+     ("current"
+      ("sourcehut"
+       ("location" . "https://example.org/shaggy-dog-tale/")
+       ("formats" . ("html"))))))
+#+end_src
+
+This example includes all the package's currently required elements.
+This tells us the package's /identifier/, =shaggy-dog-tale=, and gives
+us information on the one /version/ available, =current=: it is
+available at a single /origin/, =sourcehut=, in one /format/, =html=.
+With that information and that origin's /location/,
+=https://example.org/shaggy-dog-tale/=, we have all
+the information necessary to download the current version of "A Shaggy
+Dog Tale" from =example.org=.
+
+An actual /media package/ may have additional elements, such as a
+/description/ and /license/.
+
+A /media package channel/ is a list of /media packages/. There must
+not be any duplicated /identifiers/ in a list.
+
+** Media Package Data Structure
+This section summarizes all possible elements in a /media package/.
+**** Name
+**** Description
+**** Creator
+**** License
+**** Versions
+***** Origin
+****** Location
+****** Formats
+** Media Package Channel Data Structure
+A /media package channel/ is a list of packages. In the future, it may
+include information about the channel such as contact information for
+its maintainer or when it was last updated.
+** Example Package Channel
+   :PROPERTIES:
+   :CUSTOM_ID: example-package-channel
+   :END:
+This is my actual package channel.
+#+name: my-package-channel
+#+caption: An included version of my personal /media package channel/.
+#+begin_src elisp
+  (setq emsems-example-package-channel
+	'(("brutstrap-css"
+	   ("name" . "Brutstrap CSS")
+	   ("description" . "a cascading stylesheet for representing HTML content as it is constructed.")
+	   ("creator" . "emsenn")
+	   ("license" . "CC0")
+	   ("versions"
+	    ("current"
+	     ("sourcehut"
+	      ("location" . "https://git.sr.ht/~emsenn/brutstrap-css/blob/master/")
+	      ("formats" . ("html" "md" "pdf" "tex" "txt"))))))))
+#+end_src
+** Functions
+   :PROPERTIES:
+   :END:
+*** Overview
+Given a /media package channel/, there are several operations one
+might wish to do, such as downloading a given /format/ of a /version/
+of a package from a specific /origin/, or return the list of origins
+for a given package, or search for all packages. This section contains
+implementations of such operations.
+
+Because this project exists for my benefit, the /channel/ used in
+these examples is my own, available in the [[#example-package-channel]["Example Package Channel"]]
+section in the [[#supplements]["Supplements"]].
+*** Channel Functions
+**** Get Packages List
+This expression builds a list of all the /identifiers/ in a given
+/channel/. This is useful for browsing what's available on a channel.
+#+name: define-get-packages-list
+#+caption: An /Elisp expression/ defining the function =get-list-of-packages-from-channel=, which returns a list of all packages given a /channel/.
+#+begin_src elisp
+  (defun emsems-get-packages-list
+      (channel)
+    "Return a list of the media package identifiers available on
+    this channel."
+    (loop for package
+	  in channel
+	  collect (car package)))
+#+end_src
+**** Get Package from Channel
+#+name: define-get-manifest-from-channel
+#+caption: An /Elisp expression/ which, given an /identifier/, returns a /media package manifest/.
+#+begin_src elisp
+  (defun emsems-get-manifest-from-channel
+      (channel id)
+    "Get the media package manifest for ID from media package
+    channel CHANNEL."
+    (assoc id channel))
+#+end_src
+*** Package Functions
+**** Get List of Versions of Package
+This expression builds a list of all the /versions/ under which a
+/package/ is available.
+#+begin_src elisp
+#+end_src
+**** Get List of Origins of Package Version
+This expression builds a list of all the /origins/ through which a
+given /package/ is available.
+#+name: define-get-list-of-origins
+#+begin_src elisp
+  (defun emsems-get-origins
+      (channel id version)
+    "Return a list of origins for version VERSION of media package
+    ID."
+    (emsems-get-manifest channel id)
+    )
+#+end_src
+** Operations
+* Supplements
+  :PROPERTIES:
+  :CUSTOM_ID: supplements
+  :END:
+** Example Package Channel
+   :PROPERTIES:
+   :CUSTOM_ID: example-package-channel
+   :END:
+#+name: my-package-channel
+#+caption: An included version of my personal /media package channel/.
+#+begin_src elisp :exports code :eval no-export :tangle nil
+  '(("brutstrap-css"
+     ("name" . "Brutstrap CSS")
+     ("description" . "a cascading stylesheet for representing HTML content as it is constructed.")
+     ("creator" . "emsenn")
+     ("license" . "CC0")
+     ("versions"
+      ("current"
+       ("sourcehut"
+	("location" . "https://git.sr.ht/~emsenn/brutstrap-css/blob/master/")
+	("formats" . ("html" "md" "pdf" "tex" "txt")))))))
+
+#+end_src
+** Index
+- Elisp expression ::
+- Elisp ::
+- Sourcehut ::
+- media package description ::
+- media package license ::
+- media package, location ::
+- media package origin ::
+- media package version ::
+- media package identifier ::
+- media package channel ::
+- media package ::

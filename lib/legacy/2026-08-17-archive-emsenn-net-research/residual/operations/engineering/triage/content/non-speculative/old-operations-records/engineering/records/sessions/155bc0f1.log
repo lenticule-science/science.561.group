@@ -1,0 +1,10 @@
+Done. `message-queue.js` is at `operations/engineering/fars/agentic/tools/message-queue.js` — 165 lines, stdlib-only, all four operations tested:
+
+| Operation | What it does |
+|-----------|-------------|
+| `--enqueue SOURCE TARGET BODY` | Creates a priority-tagged JSON file in the queue dir |
+| `--dequeue [--count N]` | Reads + removes top N messages (priority, then timestamp) |
+| `--peek [--count N]` | Reads without removing |
+| `--status` | Counts by source and priority |
+
+Priority defaults from source (`captain→urgent`, `officer→normal`, `system→low`), overridable with `--priority`. The daemon's world-tick calls `--dequeue`, the MUD interface calls `--enqueue captain`, officer completion hooks call `--enqueue officer`.

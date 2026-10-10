@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://research-notes.561.group/hacking/library/predication-notes/composting/library/object/library/thing/library/system/library/operating-system/library/computer-operating-system/library/work-item/library/phase/phase.schema.json",
+  "title": "Phase",
+  "description": "A temporal segment of a plan — a coherent sub-period during which a set of work-items advance together.",
+  "allOf": [
+    {"$ref": "../../work-item.schema.json"},
+    {"properties": {"has-kind": {"const": "phase"}}}
+  ]
+}

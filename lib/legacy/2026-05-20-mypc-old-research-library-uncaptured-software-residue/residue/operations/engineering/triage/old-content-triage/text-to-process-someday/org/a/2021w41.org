@@ -1,0 +1,12 @@
+* Tasks
+** Routine
+*** Maintenance
+**** TODO Prepare next week's operations
+SCHEDULED: <2021-10-16 Sat>
+:PROPERTIES:
+:EFFORT:   1:00
+:END:
+:LOGBOOK:
+CLOCK: [2021-10-16 Sat 14:52]--[2021-10-16 Sat 15:47] =>  0:55
+CLOCK: [2021-10-16 Sat 13:58]--[2021-10-16 Sat 14:52] =>  0:54
+:END:
