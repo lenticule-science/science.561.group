@@ -26,10 +26,10 @@ Research: `services/philosophy-services-section/services/relationality-services-
 | merge-peer: idempotent, commutative, associative, monotone union | feltos-enterprise-host `work-replication.mjs` `mergeMoves`; computer-system-engine `journal/exchange.mjs` `mergeSettlementTransfer`; signcell `merge` | Realized |
 | A sovereign node's outbound envelopes accumulate and are delivered on rejoin | `shipWorkSince` ledger; `catchUpOutcome` holds an away known-intermittent peer | Realized for push |
 | Absence reads ⊥, refusal reads f | `deliveryAway` separates away from refused | Realized for one delivery; no persisted reading |
-| PeerRecord holds the peer's signing key; a colony that cannot be dialed is still verified | computer-system-engine `systemNodeDeclaredPeerKeys`, `SYSTEM_NODE_PEER_KEYS` | Realized by the `pinned-peer-keys` change (requirement `swarm-peer-verified-by-declared-key`) |
-| replay-from-peer: a node requests, admits and merges what it lacks | computer-system-engine `/settlement/pull`, `system-federate --pull` | Realized at the settlement layer by the `replay-from-peer` change (requirement `swarm-replay-from-peer`); the work-board pull is not built |
+| PeerRecord holds the peer's signing key; a colony that cannot be dialed is still verified | computer-system-engine `systemNodeDeclaredPeerKeys`, `SYSTEM_NODE_PEER_KEYS` | Realized, computer-services-section#168 (requirement `swarm-peer-verified-by-declared-key`) |
+| replay-from-peer: a node requests, admits and merges what it lacks | computer-system-engine `/settlement/pull`, `system-federate --pull` | Realized at the settlement layer, computer-services-section#169 (requirement `swarm-replay-from-peer`); the work-board pull is not built |
 | One PeerRecord per federation-graph entry: work peers are a set | — | Unrealized (requirement `swarm-work-peers-as-a-set`; see also computer-services-section#144) |
-| Failure detection as bilattice modal suspicion: ⊥ until θ, suspicion only forward | — | Unrealized (requirement `swarm-peer-liveness-forward-only-suspicion`) |
+| Failure detection as bilattice modal suspicion: ⊥ until θ, suspicion only forward | feltos-enterprise-host `peer-liveness.mjs` on the work-peer catch-up | Realized, computer-services-section#171 (requirement `swarm-peer-liveness-forward-only-suspicion`); per-peer for the one configured work peer until work peers are a set |
 | Federation trust as bilattice-graded: silence never writes f | — (no trust store exists) | Unrealized (requirement `swarm-silence-never-writes-false-trust`) |
 | Handedness is a property of the boundary | organizing `agency/organs.mjs` for bearers only | Partial (requirement `swarm-transport-handedness`) |
 | merge-peer re-settles under the receiver's rules | `work-replication.mjs` re-admits under the move's recorded edition | Deliberate divergence; needs a ruling |
@@ -48,7 +48,16 @@ Each has a requirement record in its owning engineering section in `emsenn/bare-
 | obsmetrologia-computing context transport | descent to the actor quotient | `actor-identity-descent-is-checked` |
 | relationality `check-noninterference.md` | noninterference across channels and ports | `information-flow-noninterference-checked` |
 | semiotics `accountable-agentic-newsrooms.md` | correction as dependency invalidation | `newswire-correction-invalidates-dependents` |
-| hearing access `RESEARCH-PROGRAM.md` | antiphasic DIN carries more routing information | `din-assay-supports-antiphasic-presentation` |
+| hearing access `RESEARCH-PROGRAM.md` | antiphasic DIN carries more routing information | `din-assay-supports-antiphasic-presentation`, realized by engineering-services-section#57 |
+
+## Fabrication science (the line's unbuilt stages)
+
+| Research | Claim | Realized by |
+|---|---|---|
+| kinetic-proofing term (math, 2026-09-04) | "two passes of the same model on the same evidence are one channel; the system should record which channel caught which defect" | jsnode line `assay-channels.mjs`, computer-coding-services-section#12 (stage 7) |
+| folding-protein note (2026-07-24, section 5) | "A misfold is a wrapper ... deposited beside the territory instead of folded from the proof" | jsnode line `misfold.mjs`, computer-coding-services-section#12 (stage 10) |
+| code-fabrication specification (2026-09-04) | a work order is the meaning-closure and carries no source or tests | language-neutral `OperationMeaningClosure` with Node, Racket, Guile and Python bindings (stage 2), in review |
+| in, out, across, forward, backward (relationality term, 2026-10-09) | which line stages are its moves | open for the Leader; requirement `fabrication-stages-read-as-the-five-directions` keeps it checked |
 
 ## Already realized elsewhere (sample)
 
