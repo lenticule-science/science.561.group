@@ -36,3 +36,15 @@ Defences 1 to 7 are one family: they are the configuration of one host class, an
 ## Open
 
 Whether the sparse-disk setting, the crash-dump setting and gradual memory reclaim that the 2026-10-06 12:21 configuration carried should return is not derived; the current file omits them.
+
+
+## What the Leader reported on the Windows side (added 2026-10-10)
+
+The Leader's reports of 2026-08-26 to 2026-10-09 (listed in the operations note `2026-10-10-note-on-what-the-leader-reported-of-the-laptop-under-agent-load.md`) add Windows-side effects to this model, each a symptom of the host's shared resources being drained by the VM and its processes:
+
+- Constant heat and load with only a browser, a shell and an editor open (`ni:///sha-256;K-7SW029wjPdkbpKgo_3r8Ocdlg5nHiYHOBhl2X_rIc`).
+- Slow shell commands, Edge tabs that do not load, a mouse that does not move smoothly, applications that do not start, browser crashes, and delayed delivery of messages to an agent session (`ni:///sha-256;Yv3lvM2jb9xSzCTyRgn6Jcfh-57UpH8U3Cd2tTxi7TQ`, `ni:///sha-256;YGnn9GUsDr_6ORxGtGNU_h78JwSJ8ltrO6AqaQNGYOI`, `ni:///sha-256;LSUH-lIPhv6PeloxK5tSHY4jMzg0o7RcoLrCv868PmU`, `ni:///sha-256;m8yA4_2D_c5ZuqaGxQGGNjzFoXMIuY_vN1WtMwhx8_Y`).
+- A crash that also took down the router and modem (`ni:///sha-256;cmYWuoat9pdVmaXkXtwm68h2SSSoBuKnT3rYHMiZZ3U`). Resource 3 above (virtual NIC segment offload stalling the host's Wi-Fi transmit path) is one candidate path; no measurement connects it to the router and modem restart.
+- A Windows foreground application choking on swap while WSL runs, and the question whether swap on Windows can be disabled (`ni:///sha-256;nVEr3zR_axjFA60LTMivECQdGIn1Dub99T1pIsTX3T4`, `ni:///sha-256;rs9SUTRrbhasDm4f2LC4Cjm4xvnFsLn-sg0AukAKCLc`). The theory is that the Windows pagefile and the VM's memory compete for the same RAM and storage path (resource 5), so the foreground application's priority is a host parameter, not a property of WSL.
+
+The failure model treats memory, storage and network and does not measure CPU temperature or Windows-side interactive latency. The requirement `agent-use-of-a-host-is-admitted-measured-and-bounded.json` R7, R8 and R11 at computer-engineering holds those measurements.
