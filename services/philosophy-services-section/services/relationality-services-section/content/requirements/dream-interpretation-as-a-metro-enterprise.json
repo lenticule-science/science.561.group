@@ -1,0 +1,34 @@
+{
+  "id": "dream-interpretation-as-a-metro-enterprise",
+  "name": "dream interpretation as a metro enterprise",
+  "kind": "requirement",
+  "raised-by": "emsenn",
+  "asks": "But of course, interpretting dreams should itself be a metro-enterprise that other enterprises can contract, to get their dreams compactificatizabilitized (jfc math words suck sometimes). [emsenn, session of 2026-07-16, immediately following re-realize-the-dreaming-research-for-output-compactification in the same prompt.]",
+  "from-idea": "emsenn/idea/dream-interpretation-as-a-metro-enterprise",
+  "met-when": [
+    {
+      "cell": "dream-interpretation-as-a-metro-enterprise:conditions-stated",
+      "target": "held"
+    }
+  ],
+  "x-provenance": {
+    "recorded-by": "561-group capture session (claude session 017x7ZhpkZQAx5VZSv2Hz5Q9)",
+    "recorded-on": "2026-10-10",
+    "sources": [
+      {
+        "words": "But of course, interpretting dreams should itself be a metro-enterprise that other enterprises can contract, to get their dreams compactificatizabilitized (jfc math words suck sometimes). [emsenn, session of 2026-07-16, immediately following re-realize-the-dreaming-research-for-output-compactification in the same prompt.]",
+        "at": "2026-07-17",
+        "locator": "lib/emsenn/services/561-group/services/561-group-services-section/services/561-group-operations-services-section/lib/legacy/restored-from-main/2026-09-13-ccf2d7a/services/561-group-enterprise-services-section/services/561-group-board-of-directors/lib/legacy/2026-08-03-executive-office/data/records/ideas/ideas/dream-interpretation-as-a-metro-enterprise.json"
+      }
+    ],
+    "carried-from-idea-record": "lib/emsenn/services/561-group/services/561-group-services-section/services/561-group-operations-services-section/lib/legacy/restored-from-main/2026-09-13-ccf2d7a/services/561-group-enterprise-services-section/services/561-group-board-of-directors/lib/legacy/2026-08-03-executive-office/data/records/ideas/ideas/dream-interpretation-as-a-metro-enterprise.json",
+    "pending-conditions": "Carried from the 2026-07 executive office's idea record under ideas-dispose-through-the-requirement-term; no met-when that exercises this idea's capability has been stated yet. The owning section states it.",
+    "linked-carriers": [
+      "lib/emsenn/services/561-group/services/561-group-services-section/content/text/documents/articles/notes/2026/07/18/2026-07-18-research-on-what-the-union-is-postgrad-monograph-for-fable.md"
+    ],
+    "coverage": "lib/emsenn/services/561-group/services/public-services-section/services/personal-services-section/services/emsenn-services-section/data/records/leader-utterances/coverage/executive-office-ideas-2026-07.md",
+    "idea-record-fields": {
+      "prompted-by": "emsenn/idea/metro-enterprises-are-induced-not-constituted"
+    }
+  }
+}
