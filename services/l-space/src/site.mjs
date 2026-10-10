@@ -26,7 +26,7 @@ import { createVaultMazeRuntime } from '@red-cup-engineering/graphical-knowledge
 import { createReviewStore } from '@red-cup-engineering/graphical-knowledge-game-server/review-store';
 import { mergeApps } from '@red-cup-engineering/computer-web-server/compose';
 import { healthResources } from '@red-cup-engineering/computer-web-server/edge/health';
-import { sha256Hex } from "@red-cup-engineering/cryptographic-data-service/integrity";
+import { sha256Hex } from "@red-cup-engineering/cryptographic-computer-data-engineering-services-section/integrity";
 import { createImmutableContentCustody } from '@red-cup-engineering/immutable-content-custody-service';
 import { createFileStore, createPathContent } from '@red-cup-engineering/immutable-content-custody-service/file-store';
 import { niResource } from '@red-cup-engineering/http-services-section/ni';

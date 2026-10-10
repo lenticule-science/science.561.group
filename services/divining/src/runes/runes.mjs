@@ -139,4 +139,4 @@ export function castRunes(query, count = DEFAULT_RUNE_COUNT, seedSalt = "rune-ca
     provenance: Object.freeze({ method: SEEDED_CAST_METHOD, seed }),
   });
 }
-import { mulberry32 } from "@red-cup-engineering/computer-data-services-section/randomization";
+import { mulberry32 } from "@red-cup-engineering/computer-data-engineering-services-section/randomization";

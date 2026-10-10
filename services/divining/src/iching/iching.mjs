@@ -174,4 +174,4 @@ export function castIChing(query) {
     provenance: Object.freeze({ method: THREE_COINS_METHOD, seed: query }),
   });
 }
-import { mulberry32 } from "@red-cup-engineering/computer-data-services-section/randomization";
+import { mulberry32 } from "@red-cup-engineering/computer-data-engineering-services-section/randomization";
