@@ -135,6 +135,11 @@
       "engineering-services-section/services/computer-engineering-services-section/content/text/documents/articles/notes/2026/10/10/2026-10-10-note-on-re-homing-the-home-grow-pull-request.md"
     ],
     "not-held": "Held since 2026-10-10 (grow-assist pass): the Minnesota cultivation record (legal limits cited, per-stage setpoints with vapor-pressure deficit, chemotype link) and the Minnesota sourcing record are in the botany section's data/records, re-homed from computer-services-section#49; open questions remain in the agronomy and law notes.",
-    "unresolved-authority": "What \"finding cannabis\" means is not stated by the Leader. The record reads it as sourcing and holds R4 at could."
+    "unresolved-authority": "What \"finding cannabis\" means is not stated by the Leader. The record reads it as sourcing and holds R4 at could.",
+    "sign-cell": {
+      "type": "emsenn/schema/requirement",
+      "mark": "ni:///sha-256;AKa049RseaYOOXs1FfKZUQpGvu8kfs3mQqLd-vHuqjQ",
+      "cell": "ni:///sha-256;y-MXs7cBbmKLHE6HgNrJtvD-tJbOfDFTikf-2B07Zl8"
+    }
   }
 }

@@ -157,6 +157,11 @@
       "repo:red-cup-engineering/kalshi-engineering-services-section"
     ],
     "not-held": "No shared typed vocabulary for players, rules, arena and strategies is cited by one name; the arena notes and agent-organization-engine playing/gaming libraries hold parts.",
-    "unresolved-authority": "None. The outcome is the owning section's to realize; acceptance is the assayer's."
+    "unresolved-authority": "None. The outcome is the owning section's to realize; acceptance is the assayer's.",
+    "sign-cell": {
+      "type": "emsenn/schema/requirement",
+      "mark": "ni:///sha-256;vgZeOwmQ27GmKAtVL3R562qvzoDlpkoCzdA3EefZchE",
+      "cell": "ni:///sha-256;VzrLi79qjcoN2TwMjSqD4bTTuQTSi49lUuTge3nwrQ4"
+    }
   }
 }

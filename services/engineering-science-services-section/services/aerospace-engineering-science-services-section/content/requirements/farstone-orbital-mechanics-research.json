@@ -55,6 +55,10 @@
       "farstone-ksp-planet-rotation"
     ],
     "conversion": "pending: signcell predication cell",
-    "owned-elsewhere": "The error of patched conics against n-body gravitation is the astronomy section's (its 2026-10-10 note) and the capabilities requirement's F6; it is not repeated here."
+    "owned-elsewhere": "The error of patched conics against n-body gravitation is the astronomy section's (its 2026-10-10 note) and the capabilities requirement's F6; it is not repeated here.",
+    "sign-cell": {
+      "type": "emsenn/schema/requirement",
+      "mark": "ni:///sha-256;B-WtSNRftkQqoinphNGf2GOUaTbgFQS7PXCvSLgwk_w"
+    }
   }
 }

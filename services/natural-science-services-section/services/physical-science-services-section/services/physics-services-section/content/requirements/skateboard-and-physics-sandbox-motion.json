@@ -84,6 +84,11 @@
       "serves": [],
       "after": [],
       "traces": []
+    },
+    "sign-cell": {
+      "type": "emsenn/schema/requirement",
+      "mark": "ni:///sha-256;RxQIQnKq1353nwB0KB_51ZtNRfVo-tiJfi2radjHM8k",
+      "cell": "ni:///sha-256;jAKcyhaZOqdaMBHkdtUvxuvLMNUoDE_DFhDXKuYoLU4"
     }
   }
 }

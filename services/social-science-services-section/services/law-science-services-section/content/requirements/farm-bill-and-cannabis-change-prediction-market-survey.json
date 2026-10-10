@@ -113,6 +113,11 @@
       "561-group-services-section/content/text/documents/articles/notes/2026/07/18/2026-07-18-note-on-event-contract-arbitrage-enterprise-planning.md"
     ],
     "not-held": "No farm-bill, hemp or cannabis-scheduling research is held by name; the held cannabis notes cover botany and chemotype only.",
-    "unresolved-authority": "The law-science section is the nearest existing home; the Leader has not named the owning section."
+    "unresolved-authority": "The law-science section is the nearest existing home; the Leader has not named the owning section.",
+    "sign-cell": {
+      "type": "emsenn/schema/requirement",
+      "mark": "ni:///sha-256;OHKu-jXuct5xwX_zhfIXJHuamxPV_NnMt5NuH1ns2dk",
+      "cell": "ni:///sha-256;3ZluwygJ5Prr4jAaJXMFHYK_QC3n5L6jqcm1NV-CEGI"
+    }
   }
 }

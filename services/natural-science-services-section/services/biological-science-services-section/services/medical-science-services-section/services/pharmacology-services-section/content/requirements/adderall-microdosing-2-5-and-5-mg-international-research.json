@@ -136,6 +136,11 @@
       "science-services-section/services/information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/microdosing.md"
     ],
     "not-held": "The note (line 318 onward) already states the 2.5 mg and 5 mg findings and the record already spans non-US sources, so the conditions are expected to hold now; what is not held is any search of non-English-language or regulator (EMA, TGA, PMDA) literature, which the Leader's \"international research, etc.\" leaves open.",
-    "unresolved-authority": "None. The outcome is the owning section's to realize; acceptance is the assayer's."
+    "unresolved-authority": "None. The outcome is the owning section's to realize; acceptance is the assayer's.",
+    "sign-cell": {
+      "type": "emsenn/schema/requirement",
+      "mark": "ni:///sha-256;iKyv0tlsawptSoiPt9j7mlH146S_VnGwDNNECiOT0RI",
+      "cell": "ni:///sha-256;YNBJw6UgJ3objxbO6mkgVAOYB2y0a-gG887t2kTBgoM"
+    }
   }
 }

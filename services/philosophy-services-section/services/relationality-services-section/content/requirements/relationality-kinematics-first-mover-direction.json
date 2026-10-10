@@ -153,6 +153,11 @@
     "unresolved-authority": "None; but the triad the Leader means by \"forward, backward, in, out, across\" is not derived by the held note and R1 depends on it.",
     "utterances": [
       "ni:///sha-256;nX48bLCnuNp5CmJtvTkkWMiGVq0Qx4iE3B0bKTQvRVc"
-    ]
+    ],
+    "sign-cell": {
+      "type": "emsenn/schema/requirement",
+      "mark": "ni:///sha-256;hnwoyNN90YmG3xa8RUnJt0L-HUoHohpi1LScLobFmdg",
+      "cell": "ni:///sha-256;T6vA2IQOw6vMz2eHINoAJl0HD3JnSB8YI0RIR9azfco"
+    }
   }
 }
