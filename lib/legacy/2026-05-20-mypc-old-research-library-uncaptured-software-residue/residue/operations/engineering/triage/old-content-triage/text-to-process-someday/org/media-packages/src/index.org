@@ -1,0 +1,83 @@
+#+TITLE: Media Packages
+#+EXPORT_FILE_NAME: ../media-packages
+#+OPTIONS: broken-links:mark H:10
+#+MACRO: document-type document
+#+TOC: headlines 1
+* Introduction
+  :PROPERTIES:
+  :CUSTOM_ID: introduction
+  :END:
+{{{document-is-software-prototype}}}
+
+This {{{doc}}} contains the specifications for /media packages/ and
+/media package channels/, formats for maintaining a manifest about a
+piece of media content and a listing of those manifests.
+
+{{{document-eli(default)}}}
+
+* Media Packages
+#+TOC: headlines 1 local
+** Overview
+A */media package/* is a manifest of information about a piece of
+media content, providing information about the piece as well as
+information about from where it can be obtained.
+
+A */media package channel/* provides a listing of /media packages/.
+** Media Package Specification
+A /media package/ is the core concept around which these
+specifications are built, representing information about a piece of
+media content, such as a painting, song, or story.
+
+Here's the currently defined parts of a /media package/:
+- Required:
+  - =identifier=
+  - =version=
+- Optional:
+  - =title=
+  - =creator=
+*** Media Package Requirements
+#+TOC: headlines 1 local
+**** Media Package Identifier
+Every /media package/ must have a unique =identifier= - unique to the
+channel, at least. In the /Hugo Media Package Channel Generator/, each
+package is identified by its /slug/, which is the "kebab-case"
+filename at which the package is saved, stripped of its extension.
+
+The =identifier= is expected to be semantically meaningful.
+**** Media Package Versions
+Every /media package/ must have at least one =version=
+*** Media Package Supplements
+#+TOC: headlines 1 local
+**** Media Package Title
+**** Media Package Creator
+
+** Media Package Channels
+A */media package channel/* is a listing of /media packages/.
+** Implementations
+*** Media Package Channel Generators
+A */media package channel generator/* is a piece of software that
+creates a /media package channel/. In my implementation, it does that
+by reading files written in /TOML/ and /Markdown/ and, using /Hugo/,
+generates /HTML/ and /JSON/ files.
+
+- I'm working on a collection of /Hugo/ templates that take
+  /Hugo/-compatible /Markdown/ (a combination of /Markdown/ and
+  /TOML/) /media packages/ and turn them into a /media package
+  channel/ in /HTML/ and /JSON/.
+* Index
+- dictionary :: {{{define(dictionary)}}}
+- Git forge :: {{{define(git-forge)}}}
+- Git :: {{{ref(git)}}}
+- Guix :: {{{ref(guix)}}}
+- HTML :: {{{ref(html)}}}
+- Hugo content type :: {{{ref(hugo-content-type)}}}
+- Hugo front matter :: {{{ref(hugo-front-matter)}}}
+- Hugo layout :: {{{ref(hugo-layout)}}}
+- Hugo :: {{{ref(hugo)}}}
+- JSON :: {{{ref(json)}}}
+- literate programming :: {{{ref(literate-programming)}}}
+- Markdown :: {{{ref(markdown)}}}
+- Org-mode :: {{{ref(org-mode)}}}
+- Ox-Hugo :: {{{ref(ox-hugo)}}}
+- TOML :: {{{ref(toml)}}}
+- WriteFreely :: {{{ref(writefreely)}}}

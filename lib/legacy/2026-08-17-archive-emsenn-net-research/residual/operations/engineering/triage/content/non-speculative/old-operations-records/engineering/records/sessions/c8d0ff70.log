@@ -1,0 +1,9 @@
+No instincts qualify for archival. All three have confidence well above 0.1:
+
+| Instinct | Confidence | Last Seen |
+|----------|-----------|-----------|
+| read-before-write | 0.65 | 2026-04-04 |
+| check-term-definitions | 0.77 | 2026-03-31 |
+| grep-before-edit | 0.67 | 2026-03-31 |
+
+Heartbeat complete — nothing to prune.

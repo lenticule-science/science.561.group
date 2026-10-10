@@ -1,0 +1,8 @@
+Audit complete. Written to `operations/command/records/analyses/fars-terms-audit.md`.
+
+**Results:**
+- **11 ship-as-is** (9%): The work-type lattice (process, procedure, derivation, inquiry, work, task, workflow, method, practice, endeavor, objective) is clean and ready for the library now.
+- **68 ship-with-summary** (57%): Excellent governance terms grounded in real theory (Hohfeld, Searle, Aristotle, Lakatos, maritime law) but each leads with formal math notation. Each needs a 2-4 sentence plain-English summary inserted before the formal definition.
+- **40 dont-ship** (34%): Internal FARS implementation details — frontmatter field specs, file conventions, deprecated terms.
+
+**Key finding:** The governance vocabulary (accountability, duty, delegation, charter, institution, enterprise, etc.) is better than most encyclopedia entries. The fix is consistent and mechanical — add a plain-English summary paragraph at the top of each. The content itself doesn't need rewriting.

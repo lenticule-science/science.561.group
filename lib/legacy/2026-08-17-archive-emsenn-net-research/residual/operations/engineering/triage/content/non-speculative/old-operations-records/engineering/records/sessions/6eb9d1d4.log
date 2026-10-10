@@ -1,0 +1,9 @@
+Done. Created `operations/engineering/fars/agentic/hooks/tool-call-logger.js` (82 lines) and registered it in the harness settings.
+
+**What it does:**
+- PostToolUse hook matching `*` — logs every tool call, not just Bash
+- Writes JSONL to `operations/engineering/records/tool-calls.jsonl`
+- Schema matches ECC2's `ToolCallEvent`: timestamp, tool, session, input/output summaries (200 char), duration_ms, file_path
+- Profiles: standard,strict (skipped in minimal)
+- Async with 3s timeout, always exits 0
+- 5 MB rotation with archive, no external deps

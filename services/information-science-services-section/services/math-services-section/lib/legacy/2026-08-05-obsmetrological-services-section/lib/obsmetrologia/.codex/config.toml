@@ -1,0 +1,11 @@
+# Activate the heavyweight Lean MCP provider only inside its owning package.
+[mcp_servers.obsmetrologia-lean-lsp]
+command = "uvx"
+args = [
+  "lean-lsp-mcp",
+  "--lean-project-path",
+  ".",
+  "--instructions",
+  "Obsmetrologia Lean proofing server. Use Lean LSP tools before shell/read/grep for Lean questions: diagnostics for file errors, term goal for proof state, hover/outline/local search for declarations, run_code with #print axioms for axiom audits, and multi_attempt for tactic trials. The Lean package root is this package; LSP file paths are package-root-relative source paths such as Obsmetrologia/Primitive.lean.",
+]
+enabled = true

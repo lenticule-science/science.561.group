@@ -1,0 +1,59 @@
+#+title: 2020-01-05
+#+ghe_schema: daily-record-0.1.1
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2021-01-05 Tue 07:57]
+#+roam_tags: daily-record
+
+#+name: definition
+This is some of what I (emsenn) experienced and wrote on on [2021-01-05 Tue].
+
+#+toc: headlines 2
+
+* Journal                                                          :noexport:
+** [2021-01-05 Tue 10:37]
+
+   [[file:../esther_davis.org][Esther]] is going to start doing research for their independent study program today, and I'm really hoping to get them to use [[file:../org_roam.org][Org-roam]] for it instead of [[file:../scrivener.org][Scrivener]].
+** [2021-01-05 Tue 16:31]
+
+   Update, nope, [[file:../esther_davis.org][Esther]] is going to use [[file:../scrivener.org][Scrivener]]. Shame too, I've watched them not take note of two papers so far that aren't relevant to their current study but would be relevant to them down the line.
+* News log
+** Looking at Portland's new pro-Indigenous directives
+   :LOGBOOK:
+   - Note taken on [2021-01-06 Wed 13:28] \\
+     Back on [[file:2020-12-12.org][December 12th]], the [[file:../portland_city_council.org][Portland City Council]] approved a series of directives designed to facilitate a better relationship between the city and its [[file:../indigenous.org][Indigenous]] residents and neighbors. The biggest directive is an official [[file:../land_acknowledgement.org][land acknowledgement]] that the city will give sometime this year. The directives also establish [[file:../indigenous_peoples_day.org][Indigenous Peoples Day]] as a paid holiday for city employees, an exploration of park fee waivers for Indigenous [[file:../ceremony.org][ceremonies]], strategizing to increase how many Indigenous employees the city has, creating a recurring training for all city employees, and departments have to create plans on developing collaboration with sovereign tribal nations in providing services to urban Indigenous communities.
+     
+     While any appreciation of the need to change our relationship is good, I'm unsure if Portland appreciates that... well, it's a city, and it's a bit telling of the relationship they want to have with Indigenous communities that "city departments" and "sovereign tribal nations" are supposed to communicate as peers. I see glimmers of a future that's much like the relationship between [[file:../anthropology.org][anthropologists]] and Indigenous peoples, where any old colonial student feels fully entitled to consult with the leaders of tribal nations.
+   :END:
+   - Source :: https://indiancountrytoday.com/news/portland-paves-new-path-toward-inclusion-WvzDRk0BYk-MNlkQW1-hXg
+** Conservatives argue against immigration restructions
+   :LOGBOOK:
+   - Note taken on [2021-01-07 Thu 13:26] \\
+     Writing for the [[file:../cato_institute.org][Cato Institute]], [[file:../alex_nowrasteh.org][Alex Nowrasteh]] analyzes the risks of "liberalized immigration" on American institutions.
+   :END:
+   - Source :: https://www.cato.org/blog/immigration-restrictionists-are-undermining-american-institutions
+** University of Oklahoma project helps visualize the "Exile to Indian Country"
+   :LOGBOOK:
+   - Note taken on [2021-01-06 Wed 13:45] \\
+     A new exhibit, [[file:../exiled_to_indian_country.org][Exiled to Indian Country]], from the [[file:../university_of_oklahoma.org][University of Oklahoma]], looks at the [[file:../displacement.org][displacement]] and [[file:../diaspora.org][diaspora]] conducted by the [[file:../united-states-of-america.org][U.S.A.]] during their settlement of [[file:../turtle_island.org][Turtle Island]].
+   :END:
+   - Source :: https://www.ou.edu/gaylord/exiled-to-indian-country
+** Trump auctions Arctic refuge to oil extraction
+   :LOGBOOK:
+   - Note taken on [2021-01-06 Wed 13:39] \\
+     President [[file:../donald_j_trump.org][Donald J. Trump]] is auctioning off parts of the [[file:../arctic_national_wildlife_refuge.org][Arctic National Wildlife Refuge]] for [[file:../oil_extraction.org][oil extraction]].
+   :END:
+   - Source :: https://www.theguardian.com/environment/2021/jan/05/trump-arctic-national-wildlife-refuge-lease-sales
+** Non-anthropocentric views on climate action
+   :LOGBOOK:
+   - Note taken on [2021-01-06 Wed 13:41] \\
+     [[file:../julianne_yip.org][Julianne Yip]], writing for [[file:../sapiens.org][Sapiens]], discusses the [[file:../anthropocentric.org][anthropocentric]] [[file:../perspective.org][perspective]] on many of the plans to address [[file:../climate_collapse.org][climate collapse]].
+   :END:
+   - Source :: https://www.sapiens.org/culture/arctic-sea-ice/
+** Hundreds wear ribbon skirts after Saskatchewan girl shamed for hers
+   :LOGBOOK:
+   - Note taken on [2021-01-06 Wed 12:11] \\
+     Isabella Kulak, a 10-year-old member of the [[file:../cote_first_nation.org][Cote First Nation]] in eastern [[file:../saskatchewan.org][Saskatchewan]], wore a [[file:../ribbon_skirt.org][ribbon skirt]] to her school for a "formal day," but was told her mismatched skirt and shrit were inappropriate, suggesting Isabella should have worn a store-bought dress. In support, hundreds of [[file:../indigenous.org][Indigenous]] people have posted photographs of themselves in their ribbon skirts, including in formal settings.
+   :END:
+   - Source :: https://www.cbc.ca/news/canada/saskatchewan/ribbon-skirt-movement-1.5862052
+

@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://561.group/swarm-intelligence/library/modeled-player/modeled-player.schema.json",
+  "title": "Modeled player (P = (id, K, Cap, Obs, Act, Gov, In, Out, Strat))",
+  "description": "Per spotcomp/MODELED-PLAYERS §3 and PLAYER-CHARACTER-BOUNDARY §6. A modeled player is the system-held local settling representing an external player. Distinct from character (which is the bearer); modeled-player binding adds local-settling reference and CGS strategy. Handedness has 4 bounds: recv/send/actuate/observe.",
+  "kind": "object",
+  "type": "object",
+  "required": [
+    "playerId",
+    "character",
+    "externalPlayerRef",
+    "inbox",
+    "outbox",
+    "localSettling",
+    "cgsProfile",
+    "handedness",
+    "capabilities",
+    "governance",
+    "evidence"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "playerId": { "type": "string", "minLength": 1 },
+    "character": {
+      "description": "Character slug this player is bound to.",
+      "type": "string",
+      "pattern": "^[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$"
+    },
+    "externalPlayerRef": { "type": "string", "minLength": 1 },
+    "inbox": { "type": "string", "minLength": 1 },
+    "outbox": { "type": "string", "minLength": 1 },
+    "localSettling": { "type": "string", "minLength": 1 },
+    "cgsProfile": { "type": "string", "minLength": 1 },
+    "handedness": {
+      "type": "object",
+      "required": ["recv", "send", "actuate", "observe"],
+      "additionalProperties": false,
+      "properties": {
+        "recv": { "type": "string", "minLength": 1 },
+        "send": { "type": "string", "minLength": 1 },
+        "actuate": { "type": "string", "minLength": 1 },
+        "observe": { "type": "string", "minLength": 1 }
+      }
+    },
+    "capabilities": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "governance": { "type": "string", "minLength": 1 },
+    "evidence": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "minItems": 1,
+      "uniqueItems": true
+    }
+  }
+}

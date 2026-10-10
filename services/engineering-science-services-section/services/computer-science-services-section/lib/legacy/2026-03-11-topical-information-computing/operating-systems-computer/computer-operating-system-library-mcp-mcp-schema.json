@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://research-notes.561.group/hacking/library/predication-notes/composting/library/object/library/thing/library/system/library/operating-system/library/computer-operating-system/library/mcp/mcp.schema.json",
+  "title": "MCP server",
+  "description": "JSON Schema for an mcp instance: a long-running server speaking the Model Context Protocol that exposes a bound character's skills:G generator set as tools.",
+  "type": "object",
+  "required": ["bound-to", "transport", "exposes-skill"],
+  "additionalProperties": true,
+  "properties": {
+    "bound-to": {
+      "type": "string",
+      "pattern": "^[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$",
+      "description": "Character slug the MCP server is bound to."
+    },
+    "transport": {
+      "type": "string",
+      "enum": ["stdio", "http"]
+    },
+    "exposes-skill": {
+      "type": "array",
+      "items": {"type": "string", "pattern": "^[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$"},
+      "description": "Slugs of skills exposed as tools (the character's skills:G generator set)."
+    },
+    "started-at": {"type": "string", "format": "date-time"},
+    "pid": {"type": "integer", "minimum": 1},
+    "mcp-config-path": {
+      "type": "string",
+      "description": "Path to the .mcp.json config the server was launched from."
+    }
+  }
+}

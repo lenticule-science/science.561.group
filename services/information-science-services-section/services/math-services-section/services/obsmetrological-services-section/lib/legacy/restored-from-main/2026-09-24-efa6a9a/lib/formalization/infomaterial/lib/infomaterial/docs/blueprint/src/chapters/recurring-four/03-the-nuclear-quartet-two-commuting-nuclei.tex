@@ -1,0 +1,34 @@
+\section{The nuclear quartet: two commuting nuclei}
+
+This section records claim nodes and dependency edges.
+
+\begin{proposition}[Heyting algebra]\label{thm:heyting}\lean{Infomaterial.HeytingAlgebra}\leanok\uses{thm:floor}
+\texttt{HeytingAlgebra} is a meet-semilattice (commutative, associative, idempotent \texttt{meet}) with a relative pseudocomplement \texttt{imp} adjoint to meet via the Heyting adjunction $b \sqcap a \leq c \leftrightarrow b \leq (a \Rightarrow c)$, the order being $a \leq b := a \sqcap b = a$. Its induced order is reflexive, transitive and antisymmetric, meet is monotone, and modus ponens holds --- the algebraic floor on which nuclei act.
+\end{proposition}
+\begin{proposition}[Nucleus]\label{thm:nucleus}\lean{Infomaterial.Nucleus}\leanok\uses{thm:heyting}
+A \texttt{Nucleus} on a Heyting algebra is an inflationary ($a \leq j\,a$), idempotent ($j\,(j\,a) = j\,a$), meet-preserving ($j\,(a \sqcap b) = j\,a \sqcap j\,b$) endomap. Monotonicity follows from meet-preservation. A nucleus is a closure operator that respects the Heyting structure, not merely the lattice.
+\end{proposition}
+\begin{theorem}[Fixed points are closed under $\Rightarrow$]\label{thm:fix-imp}\lean{Infomaterial.Nucleus.fix_imp}\leanok\uses{thm:nucleus}
+\texttt{Nucleus.fix\_imp} proves that if $b$ is $j$-fixed, so is $a \Rightarrow b$. This is why meet-preservation matters: it makes $\mathrm{Fix}(j)$ a Heyting \emph{sub-algebra}, not merely a sub-lattice. Without the meet law the fixed points would reflect only the lattice order.
+\end{theorem}
+\begin{proposition}[Nuclear square]\label{thm:nuclear-square}\lean{Infomaterial.NuclearSquare}\leanok\uses{thm:nucleus}
+A \texttt{NuclearSquare} on a Heyting algebra is a pair of nuclei $j_1, j_2$ together with the commutation law $j_1\,(j_2\,a) = j_2\,(j_1\,a)$. The pair is read either as the two orders $(j_k, j_t)$ of the bilattice or as the temporal pair $(\sigma, \Delta)$ --- saturation and transfer.
+\end{proposition}
+\begin{theorem}[Nuclear Quartet Theorem]\label{thm:nuclear-quartet}\lean{Infomaterial.NuclearSquare.compNucleus}\leanok\uses{thm:nuclear-square, thm:fix-imp}
+The joint closure $\pi = j_1 \circ j_2$ is itself a nucleus: \texttt{NuclearSquare.compNucleus} constructs it, with idempotency turning on the commutation law. Its companion \texttt{NuclearSquare.fix\_pi\_iff} proves $\mathrm{Fix}(\pi) = \mathrm{Fix}(j_1) \cap \mathrm{Fix}(j_2)$ --- the joint-quiescent corner is exactly the joint fixed point, the hinge again being commutativity. \texttt{NuclearSquare.square} restates the commuting square: both paths $A \to A^{*}$ agree.
+\end{theorem}
+\begin{proposition}[The four corners of the quartet]\label{thm:quartet-corner}\lean{Infomaterial.NuclearSquare.corner}\leanok\uses{thm:nuclear-quartet, thm:four-object}
+\texttt{NuclearSquare.corner} reads the four sub-algebras off the four articulation phases: potential $\mapsto$ the free carrier (neither nucleus), active $\mapsto j_1$-quiescent, stable $\mapsto j_2$-quiescent, absurd $\mapsto$ joint-quiescent ($\pi$). The quartet's corners are the recurring FOUR, lifted from values to fixed-point sub-algebras.
+\end{proposition}
+
+This section records claim nodes and dependency edges.
+
+\begin{proposition}[Family of nuclear squares]\label{thm:square-family}\lean{Infomaterial.SquareFamily}\leanok\uses{thm:nuclear-square}
+A \texttt{SquareFamily} over an index type $I$ assigns a \texttt{NuclearSquare} to each fiber (history or step). The nuclear pair $(j_1^i, j_2^i)$ may differ per fiber --- this is the recurrence: not one square but a square at every fiber.
+\end{proposition}
+\begin{proposition}[The family varies]\label{thm:varies}\lean{Infomaterial.SquareFamily.Varies}\leanok\uses{thm:square-family}
+\texttt{SquareFamily.Varies} asserts that some two fibers carry genuinely different nuclear pairs. Constant families leave automorphisms invisible; a varying family is what makes history-separation (aperiodicity) provable. \texttt{SquareFamily.fiber\_quartet} confirms that every fiber realizes the Nuclear Quartet Theorem regardless of variation.
+\end{proposition}
+\begin{example}[A concrete varying family]\label{ex:varying-family}\lean{Infomaterial.Charge.varyingFamily}\leanok\uses{thm:varies, thm:four-bilattice}
+On the charge knowledge-Heyting-algebra \texttt{Charge.heytingK} (with \texttt{Charge.joinNucleusK} the nucleus raising toward a bound by $\vee_k$), \texttt{Charge.varyingFamily} is a two-fiber family: fiber \texttt{true} raises toward $t$, fiber \texttt{false} toward $\top_k$. \texttt{Charge.varyingFamily\_varies} proves the $j_1$ nuclei genuinely differ --- a concrete bigraded-diamond recurrence over the finite charge bilattice.
+\end{example}

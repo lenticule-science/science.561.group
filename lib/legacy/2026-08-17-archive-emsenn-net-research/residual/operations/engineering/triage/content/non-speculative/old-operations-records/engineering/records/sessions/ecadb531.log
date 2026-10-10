@@ -1,0 +1,5 @@
+Both review issues fixed:
+- **HIGH**: JSON parse now validates input starts with `[` before parsing, logs to stderr on failure
+- **MEDIUM**: `runTool()` now logs the tool name and error message to stderr on failure
+
+Script is complete, tested, and registered in the deterministic tools table.

@@ -1,0 +1,10 @@
+#+title: police
+#+begin_head
+#+ghe_schema: record-0.1.2
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-23 Wed 08:38]
+#+end_head
+
+#+name: police-definition
+The */[[file:police.org][police]]/* are [[file:person.org][people]] employed by the [[file:state.org][state]] to use [[file:violence.org][violence]].

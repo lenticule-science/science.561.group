@@ -1,0 +1,21 @@
+\subsection{Probabilistic no-signaling projections}
+
+\begin{proposition}[Probabilistic finite empirical model]\label{thm:probabilistic-model}\lean{Infomaterial.Relational.Quantum.PModel}\leanok\uses{thm:measurement-scenario}
+A probabilistic empirical model assigns a finite weighted distribution to each
+context.
+\end{proposition}
+
+\begin{theorem}[A global distribution is no-signaling]\label{thm:global-dist-no-signaling}\lean{Infomaterial.Relational.Quantum.globalDist_implies_noSignaling}\leanok\uses{thm:probabilistic-model}
+Any model induced by one global weighted distribution satisfies no-signaling:
+shared-measurement marginals agree across overlapping contexts.
+\end{theorem}
+
+\begin{theorem}[The PR distribution is no-signaling]\label{thm:pr-box-p-no-signaling}\lean{Infomaterial.Relational.Quantum.prBoxP_noSignaling}\leanok\uses{thm:probabilistic-model}
+The finite PR distribution is no-signaling even though its support is
+contextual.
+\end{theorem}
+
+\begin{theorem}[The no-signaling PR support is strongly contextual]\label{thm:pr-support-strong-contextual}\lean{Infomaterial.Relational.Quantum.prBoxP_support_strongly_contextual}\leanok\uses{thm:pr-box-p-no-signaling, thm:pr-box-strong-contextual}
+Forgetting weights from the no-signaling PR distribution yields a support
+model with no global section.
+\end{theorem}

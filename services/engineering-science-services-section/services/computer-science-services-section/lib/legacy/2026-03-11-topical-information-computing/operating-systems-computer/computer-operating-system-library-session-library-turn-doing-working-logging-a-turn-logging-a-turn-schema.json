@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://research-notes.561.group/hacking/library/predication-notes/composting/library/object/library/thing/library/system/library/operating-system/library/computer-operating-system/library/session/library/turn/doing/working/logging-a-turn/logging-a-turn.schema.json",
+  "title": "Logging-a-turn (transformer)",
+  "description": "Specializes logging by binding the v-payload to a turn. Input requires a turn-record (validated against the turn schema) and the target jsonl path; output is the appended row plus success indicator.",
+  "allOf": [{ "$ref": "https://research-notes.561.group/hacking/library/predication-notes/object/library/thing/library/transformer/transformer.schema.json" }],
+  "type": "object",
+  "properties": {
+    "input": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "$ref": "https://research-notes.561.group/hacking/library/predication-notes/object/library/thing/library/system/library/operating-system/library/computer-operating-system/library/session/library/turn/turn.schema.json"
+        }
+      }
+    }
+  }
+}

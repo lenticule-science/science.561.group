@@ -1,0 +1,4 @@
+Created both idea files:
+
+- `operations/command/ideas/continuous-learning-pipeline.md` — failure-driven learning that leverages structured work types and the knowledge graph, tighter than generic pattern detection
+- `operations/command/ideas/github-issues-integration.md` — bidirectional sync between EAVT issue entities and GitHub Issues for external collaboration

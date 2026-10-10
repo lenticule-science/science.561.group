@@ -1,0 +1,7 @@
+#+title: human
+#+roam_alias: "humans"
+#+author: emsenn
+#+email: emsenn@emsenn.net
+A */human/* is any type of person that's genetically a [[file:homo_sapien.org][Homo sapien]].
+
+There's some other thoughts about what a human might be, for example [[file:charles_keil.org][Charles Keil]], an [[file:anthropology.org][anthropologist]], proposes that there are classes of humans, for example a co-taxonomy of [[file:humo_ludens_collaborans.org][Humo ludens collaborans]]; see [[file:charles_keil_dear_gretas.org][Charles Keil: "dear gretas"]].

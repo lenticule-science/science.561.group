@@ -1,0 +1,10 @@
+Written to `operations/engineering/fars/docs/academy-operations-manual.md`.
+
+The manual covers all four deliverables:
+
+- **How to onboard** — 6-step flow for humans (first contact through commissioning), parallel AI flow with model-tier routing
+- **How to train** — Cadet (read-only) -> Apprentice (supervised, with a 4-task progression) -> Officer (autonomous), with PQS card structure and review procedures
+- **How to certify** — 5 levels (0-4), evidence thresholds for each, dispatch rules tied to certification level
+- **How to demote** — trigger conditions (3+ failures in 10 tasks), what happens after (supervision resumes, re-qualification path), common causes
+
+Also covers cross-training paths, PQS card templates, and operational procedures for running certification checks and reviewing apprentice work.

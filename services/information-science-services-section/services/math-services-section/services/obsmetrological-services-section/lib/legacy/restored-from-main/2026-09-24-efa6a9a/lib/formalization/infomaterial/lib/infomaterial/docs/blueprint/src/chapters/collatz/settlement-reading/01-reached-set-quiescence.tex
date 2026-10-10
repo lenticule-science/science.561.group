@@ -1,0 +1,47 @@
+\subsection{Reached-set quiescence}
+
+\begin{theorem}[Collatz settlement realised ($Cl = id$)]
+  \label{thm:collatz-settlement-realised}
+  \lean{Infomaterial.Closure.Collatz.settlement_accumulates}
+  \leanok
+  \uses{thm:valuation, thm:settle-step, thm:closure-rule-lfp}
+  The Collatz settling $F_U(E)_\tau = Cl(E)\vee_k u_\tau$ with $Cl=id$ is not a
+  new tier: Infomaterial's \texttt{Valuation} already hosts the infinite entity set
+  (\texttt{Entity = Mark} is string-backed), and the increment-driven flow
+  \texttt{ModalFrame.drive} is $F_U$. The discrete frame
+  (fiber $\varphi$ = [$\varphi$]) realizes $Cl=id$ (\texttt{closureOp\_discrete}),
+  so the Collatz settlement is pure reached-cell accumulation:
+  \texttt{settlement (n+1) = settlement n $\vee_k$ u_n}.
+\end{theorem}
+
+\begin{theorem}[Stopping time is the closure ordinal]
+  \label{thm:collatz-kappa-stopping-time}
+  \lean{Infomaterial.Closure.Collatz.reachedQuiesces_iff_reachesTerminal}
+  \notready
+  \uses{thm:collatz-settlement-realised, thm:collatz-quiesce-of-terminal, thm:collatz-reduction, thm:collatz-gap-holds, thm:collatz-crossing-holds}
+  The Collatz reached-set --- realized over Infomaterial's internal set theory
+  \texttt{Discrete.Set}~$\mathbb{N}$ --- quiesces at a finite stage iff the seed
+  reaches the terminal cycle: the closure ordinal $\kappa$ is the total stopping
+  time, and Collatz is strict-finite ($\kappa<\omega$) exactly when it
+  terminates. Both directions are proved, and $\mathsf{Classical}$-free
+  (revisit uses propositional equality \texttt{Nat.decEq}, not Bool
+  \texttt{==}). The converse goes through the descent half
+  (\cref{thm:collatz-reduction}): quiescence forces an orbit revisit, hence
+  finitely many values with a global minimum $V$ that cannot fall below itself,
+  so $V\le 2$. Red only because it inherits the two descent holes
+  (\cref{thm:collatz-gap-holds}, \cref{thm:collatz-crossing-holds}) --- the
+  missing weight function of the arithmetic reading is thereby identified with
+  the descent ordinal.
+\end{theorem}
+
+\begin{theorem}[Revisit makes the reached-set quiesce]
+  \label{thm:collatz-quiesce-of-terminal}
+  \lean{Infomaterial.Closure.Collatz.quiesce_of_revisit}
+  \leanok
+  \uses{thm:collatz-settlement-realised}
+  If the orbit revisits an already-reached value, the reached-set settles (adds
+  nothing new); over \texttt{Discrete.Set}~$\mathbb{N}$ this is a clean
+  Bool-union fact. With the terminal cycle 2-periodic ($T^2(1)=1$,
+  $T^2(2)=2$) it gives the easy half of the bridge: reaching $\{1,2\}$ forces
+  quiescence.
+\end{theorem}

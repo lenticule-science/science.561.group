@@ -1,0 +1,9 @@
+{
+  "enterprise": "occupation-entropy-readout",
+  "offices": [
+    {
+      "id": "occupation-entropy-broker",
+      "record": "content/offices/occupation-entropy-broker.json"
+    }
+  ]
+}

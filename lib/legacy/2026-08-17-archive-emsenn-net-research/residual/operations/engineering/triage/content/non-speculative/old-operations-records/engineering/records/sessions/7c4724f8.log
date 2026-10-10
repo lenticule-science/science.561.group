@@ -1,0 +1,13 @@
+Written to `operations/engineering/fars/docs/inventory-tracking-design.md`.
+
+The design:
+
+- **One file per asset**, same markdown+frontmatter pattern as everything else
+- **Frontmatter schema** covers classification, location, condition, acquisition, maintenance, and component hierarchy (`part-of`)
+- **Directory** at `operations/command/records/inventory/` organized by asset-type
+- **Graph integration** is free — `type: asset` files get indexed like tasks and terms; queryable via `graph_query_attr("type", "asset")`, `graph_query_attr("asset-type", "server")`, etc.
+- **Lifecycle** via the existing `record_event` system: acquired, maintained, moved, assigned, retired, disposed
+- **Financial** ties to the existing ledger via physical asset accounts
+- **Three examples**: the VPS, a plant, and mash-engine as a software asset
+
+The knowledge graph already indexes all frontmatter, so no new infrastructure is needed — just files in the right shape.

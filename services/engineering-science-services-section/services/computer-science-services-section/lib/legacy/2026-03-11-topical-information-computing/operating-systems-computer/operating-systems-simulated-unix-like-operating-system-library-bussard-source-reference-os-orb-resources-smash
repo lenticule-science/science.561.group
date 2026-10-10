@@ -1,0 +1,53 @@
+-- -*- lua -*-
+
+local env, args = ...
+
+local interp = function(s, tab)
+   return (s:gsub('($%b{})', function(w) return tab[w:sub(3, -2)] or w end))
+end
+
+if(args[1] == "--help") then
+   print("An interactive command shell.\n")
+   print("Usage:")
+   print("  smash")
+else
+   if(io.exists(env.HOME .. "/_smashrc")) then
+      assert(loadstring(io.readfile(env.HOME .. "/_smashrc")))(env, args)
+   else
+      local motd = io.exists("/etc/motd") and io.readfile("/etc/motd") or ""
+      print("\n" .. motd .. "\nType \"logout\" to exit and \"ls /bin\"" ..
+               " to see commands available.")
+   end
+
+   while true do
+      set_prompt(interp(env.PROMPT, env))
+      local input = io.read()
+      if(input) then input = orb.expand_globs(interp(input, env), env) end
+      if not input or input == "exit" or input == "logout" then return end
+
+      local var, value = input:match("export (.+)=(.*)")
+      local change_dir = input:match("cd +(.+)")
+      change_dir = change_dir and orb.normalize(change_dir, env.CWD)
+
+      -- inlining primitives this way is kinda tacky
+      if(input == "cd") then
+         env.CWD = env.HOME
+      elseif(change_dir and not io.exists(change_dir)) then
+         print(change_dir .. " not found.")
+      elseif(change_dir and not io.isdir(change_dir)) then
+         print(change_dir .. " is not a directory")
+      elseif(change_dir) then
+         env.CWD = change_dir
+      elseif(var) then
+         env[var] = value
+      elseif(not input:match("^ *$")) then
+         local success, msg = orb.pexec(env, input, orb.extra_sandbox)
+         if(not success) then
+            print(msg)
+            env.LAST_ERROR = msg
+         else
+            env.LAST_ERROR = nil
+         end
+      end
+   end
+end

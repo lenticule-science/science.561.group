@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://research-notes.561.group/hacking/library/predication-notes/composting/library/object/library/thing/library/system/library/operating-system/library/computer-operating-system/library/work-item/doing/working/scheduling-a-work-item/scheduling-a-work-item.schema.json",
+  "title": "scheduling-a-work-item",
+  "description": "Asserts (target, has-deadline, <iso-date>) on a work-item. Writes to the has-deadline characteristic cell.",
+  "type": "object",
+  "required": ["status"],
+  "properties": {
+    "status": {"type": "string", "enum": ["ok", "rejected"]}
+  }
+}

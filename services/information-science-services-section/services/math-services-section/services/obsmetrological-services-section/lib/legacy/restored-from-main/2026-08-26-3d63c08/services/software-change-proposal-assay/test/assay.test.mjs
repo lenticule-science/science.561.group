@@ -1,0 +1,17 @@
+import assert from "node:assert/strict";
+import { createHash } from "node:crypto";
+import { mkdirSync, mkdtempSync, readFileSync, writeFileSync } from "node:fs";
+import { tmpdir } from "node:os";
+import { dirname, join, resolve } from "node:path";
+import test from "node:test";
+import { assaySoftwareChangeProposal, record } from "../src/assay.mjs";
+const sha = (bytes) => `sha256:${createHash("sha256").update(bytes).digest("hex")}`;
+test("behavioral assay replays customer oracle against candidate bytes without customer mutation", () => {
+  const territory = mkdtempSync(join(tmpdir(), "candidate-assay-customer-")), services = resolve(import.meta.dirname, "../../../../../../../.."), after = readFileSync(join(services, "engineering-services-section/services/computer-services-section/services/computer-code-services-section/services/computer-code-development-services-section/services/deterministic-intent-compiler-supplier/content/templates/bounded-inference-intent-compiler.mjs")), oracle = Buffer.from(`import assert from "node:assert/strict";\nconst { compileBoundedInferenceIntent } = await import("../../src/generated-resolvers/bounded-inference-intent-compiler.mjs");\nconst considerationPolicy = { type: "ConsiderationPolicy", acceptableAlternatives: [{ id: "credit", obligations: [{ kind: "credit", asset: "urn:credit:q", maximumAmount: 17, unit: "q", settlementAdapters: ["urn:adapter:direct"] }] }] };\nconst compiled = compileBoundedInferenceIntent({ taskType: "analysis", objective: "o", desiredUse: "d", context: { sourceDigests: ["sha256:x"] }, outputSchema: { type: "object" }, considerationPolicy, maxTokens: 4000, difficulty: 0.9 });\nassert.deepEqual(compiled.constraints, { considerationPolicy, maxTokens: 700, difficulty: 0.45, refinement: "downward-only", upwardEscalationAuthorized: false, customerAcceptanceRequired: true });\nassert.throws(() => compileBoundedInferenceIntent({ ...compiled, requestedModel: "large" }), /model selection/u);\n`), oracleRel = "content/acceptance-oracles/bounded-inference-intent-compiler.oracle.mjs";
+  mkdirSync(dirname(join(territory, oracleRel)), { recursive: true }); writeFileSync(join(territory, oracleRel), oracle);
+  const lot = { type: "SoftwareDevelopmentWorkLot", id: "urn:lot", consumer: "urn:customer", productContract: { type: "BoundedInferenceIntentCompiler" }, ownedTargetRoots: ["src/generated-resolvers"], forbiddenRoots: ["content"], sourceDigests: [sha(oracle)], acceptanceArtifacts: [{ path: oracleRel, digest: sha(oracle) }], acceptanceCommands: [{ runner: "node", argv: [oracleRel] }], resourceCeilings: { runtimeMs: 3000 }, boardTerms: { territory } };
+  const award = record({ type: "Accept", object: { type: "ImprovementProposalAward", lot: lot.id, supplier: "urn:supplier" } });
+  const candidate = record({ type: "SoftwareChangeProposal", lot: lot.id, award: award.id, supplier: "urn:supplier", changes: [{ path: "src/generated-resolvers/bounded-inference-intent-compiler.mjs", beforeExisted: false, beforeDigest: sha(Buffer.alloc(0)), afterDigest: sha(after), afterBytesBase64: after.toString("base64") }], upwardEscalationAuthorized: false });
+  const review = assaySoftwareChangeProposal({ type: "SoftwareChangeProposalAssayRequest", lot, award, candidate });
+  assert.equal(review.accepted, true, review.reason); assert.equal(review.evidence.inferenceCalls, 0); assert.equal(review.evidence.customerFilesystemWrites, 0);
+});

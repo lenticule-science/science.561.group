@@ -1,0 +1,361 @@
+{
+  "id": "minnesota-cannabis-sourcing",
+  "type": "SourcingResearchRecord",
+  "asOf": "2026-10-07",
+  "readsAs": "\"finding cannabis\" (Leader, 2026-10-07) read as lawful sourcing of flower and of cultivation stock (seeds, clones, seedlings); the reading is the intake's and awaits the Leader's confirmation.",
+  "lawfulSourceKinds": [
+    {
+      "kind": "licensed-retailer",
+      "offers": [
+        "flower",
+        "products",
+        "immature plants (clones, cuttings, seedlings, mother plants)",
+        "seedlings (no flowers, <= 8 in tall)"
+      ],
+      "terms": "buyer 21 or older; products from a licensed business and labeled",
+      "cite": [
+        "Minn. Stat. ch. 342",
+        "Minn. R. ch. 9810"
+      ]
+    },
+    {
+      "kind": "tribal",
+      "offers": [
+        "flower",
+        "products"
+      ],
+      "terms": "operated under tribal sovereignty; menus and terms per dispensary",
+      "cite": []
+    },
+    {
+      "kind": "seed-vendor",
+      "offers": [
+        "cannabis seed"
+      ],
+      "terms": "cannabis seed may not be labeled or sold as hemp seed",
+      "cite": [
+        "https://www.mda.state.mn.us/cannabis-seed"
+      ]
+    },
+    {
+      "kind": "cultivator",
+      "offers": [
+        "flower",
+        "immature plants where licensed to sell them"
+      ],
+      "terms": "licensed",
+      "cite": [
+        "Minn. Stat. ch. 342"
+      ]
+    },
+    {
+      "kind": "gift",
+      "offers": [
+        "flower <= 2 oz",
+        "concentrate <= 8 g"
+      ],
+      "terms": "from an adult 21 or older to an adult 21 or older, no remuneration",
+      "cite": [
+        "Minn. Stat. § 342.09, subd. 1"
+      ]
+    }
+  ],
+  "geneticsChecks": [
+    "seed type: regular, feminized or autoflowering",
+    "flowering days",
+    "stretch",
+    "mold resistance",
+    "clones: hop latent viroid (HLVd) test claim; a clone without one is flagged"
+  ],
+  "pricing": "Menu prices exclude the cannabis gross-receipts tax (stated by #49 as 15 %), 6.875 % state sales tax and local tax; the rate is unverified in this pass.",
+  "observedSources": {
+    "note": "lat/lon are city centroids, not storefronts. platform manual = paste an export under <state>/manual/<id>.csv|json. Verify listing membership live.",
+    "sources": [
+      {
+        "id": "waabigwan-mashkiki---mahnomen",
+        "name": "Waabigwan Mashkiki - Mahnomen",
+        "kind": "tribal",
+        "address": "515 E Jefferson Ave, Mahnomen",
+        "url": "https://waabigwan.com/",
+        "platform": "dutchie",
+        "note": "Menus are an embedded Dutchie storefront (checked 2026-10-07); the site JSON-LD carries LocalBusiness store data, not offers."
+      },
+      {
+        "id": "waabigwan-mashkiki---moorhead",
+        "name": "Waabigwan Mashkiki - Moorhead",
+        "kind": "tribal",
+        "address": "2902 US-10, Moorhead",
+        "url": "https://waabigwan.com/",
+        "platform": "dutchie",
+        "note": "Menus are an embedded Dutchie storefront (checked 2026-10-07); the site JSON-LD carries LocalBusiness store data, not offers."
+      },
+      {
+        "id": "waabigwan-mashkiki---saint-cloud",
+        "name": "Waabigwan Mashkiki - Saint Cloud",
+        "kind": "tribal",
+        "address": "141 33rd Ave S, Saint Cloud",
+        "url": "https://waabigwan.com/",
+        "platform": "dutchie",
+        "note": "Menus are an embedded Dutchie storefront (checked 2026-10-07); the site JSON-LD carries LocalBusiness store data, not offers."
+      },
+      {
+        "id": "waabigwan-mashkiki---east-grand-forks",
+        "name": "Waabigwan Mashkiki - East Grand Forks",
+        "kind": "tribal",
+        "address": "926 Central Avenue NE, East Grand Forks",
+        "url": "https://waabigwan.com/",
+        "platform": "dutchie",
+        "note": "Menus are an embedded Dutchie storefront (checked 2026-10-07); the site JSON-LD carries LocalBusiness store data, not offers."
+      },
+      {
+        "id": "waabigwan-mashkiki---chanhassen",
+        "name": "Waabigwan Mashkiki - Chanhassen",
+        "kind": "tribal",
+        "address": "951 W 78th St, Chanhassen",
+        "url": "https://waabigwan.com/",
+        "platform": "dutchie",
+        "note": "Menus are an embedded Dutchie storefront (checked 2026-10-07); the site JSON-LD carries LocalBusiness store data, not offers."
+      },
+      {
+        "id": "nativecare---beltrami-county--red-lake-nation",
+        "name": "NativeCare - Beltrami County (Red Lake Nation)",
+        "kind": "tribal",
+        "address": "On tribal land, Beltrami County",
+        "url": null,
+        "platform": "manual"
+      },
+      {
+        "id": "nativecare---west-st--paul",
+        "name": "NativeCare - West St. Paul",
+        "kind": "tribal",
+        "address": "2067 S Robert Street, Ten Acres Center, West St. Paul",
+        "url": null,
+        "platform": "manual"
+      },
+      {
+        "id": "sweetest-grass---walker",
+        "name": "Sweetest Grass - Walker",
+        "kind": "tribal",
+        "address": "6838 Y Frontage Road NW, Walker",
+        "url": null,
+        "platform": "manual"
+      },
+      {
+        "id": "sweetest-grass---cass-lake",
+        "name": "Sweetest Grass - Cass Lake",
+        "kind": "tribal",
+        "address": "TBD, Cass Lake",
+        "url": null,
+        "platform": "manual"
+      },
+      {
+        "id": "island-peži",
+        "name": "Island Peži",
+        "kind": "tribal",
+        "address": "Highway 316 west of Red Wing, near Treasure Island Resort & Casino, Welch",
+        "url": null,
+        "platform": "manual"
+      },
+      {
+        "id": "natural-harvest",
+        "name": "Natural Harvest",
+        "kind": "seed-vendor",
+        "address": "Edina",
+        "url": null,
+        "platform": "manual"
+      },
+      {
+        "id": "limited-run-seeds-llc",
+        "name": "Limited Run Seeds LLC",
+        "kind": "seed-vendor",
+        "address": "Spicer",
+        "url": null,
+        "platform": "manual"
+      },
+      {
+        "id": "lucky-duck-genetics-llc",
+        "name": "Lucky Duck Genetics LLC",
+        "kind": "seed-vendor",
+        "address": "Cambridge",
+        "url": null,
+        "platform": "manual"
+      },
+      {
+        "id": "grown-rogue-international---fridley",
+        "name": "Grown Rogue International - Fridley",
+        "kind": "cultivator",
+        "address": "Fridley",
+        "url": null,
+        "platform": "manual"
+      },
+      {
+        "id": "green-goods-bloomington",
+        "name": "Green Goods - Bloomington",
+        "kind": "dispensary",
+        "address": "Bloomington, MN",
+        "url": null,
+        "platform": "iheartjane",
+        "note": "Site embeds an iHeartJane menu (checked 2026-10-07)."
+      },
+      {
+        "id": "green-goods-moorhead",
+        "name": "Green Goods - Moorhead",
+        "kind": "dispensary",
+        "address": "Moorhead, MN",
+        "url": null,
+        "platform": "iheartjane",
+        "note": "Site embeds an iHeartJane menu (checked 2026-10-07)."
+      },
+      {
+        "id": "green-goods-eagan",
+        "name": "Green Goods - Eagan",
+        "kind": "dispensary",
+        "address": "Eagan, MN",
+        "url": null,
+        "platform": "iheartjane",
+        "note": "Site embeds an iHeartJane menu (checked 2026-10-07)."
+      },
+      {
+        "id": "green-goods-woodbury",
+        "name": "Green Goods - Woodbury",
+        "kind": "dispensary",
+        "address": "Woodbury, MN",
+        "url": null,
+        "platform": "iheartjane",
+        "note": "Site embeds an iHeartJane menu (checked 2026-10-07)."
+      },
+      {
+        "id": "green-goods-burnsville",
+        "name": "Green Goods - Burnsville",
+        "kind": "dispensary",
+        "address": "Burnsville, MN",
+        "url": null,
+        "platform": "iheartjane",
+        "note": "Site embeds an iHeartJane menu (checked 2026-10-07)."
+      },
+      {
+        "id": "green-goods-duluth",
+        "name": "Green Goods - Duluth",
+        "kind": "dispensary",
+        "address": "Duluth, MN",
+        "url": null,
+        "platform": "iheartjane",
+        "note": "Site embeds an iHeartJane menu (checked 2026-10-07)."
+      },
+      {
+        "id": "green-goods-minneapolis",
+        "name": "Green Goods - Minneapolis",
+        "kind": "dispensary",
+        "address": "Minneapolis, MN",
+        "url": null,
+        "platform": "iheartjane",
+        "note": "Site embeds an iHeartJane menu (checked 2026-10-07)."
+      },
+      {
+        "id": "rise-dispensaries-baxter",
+        "name": "RISE Dispensaries - Baxter",
+        "kind": "dispensary",
+        "address": "Baxter, MN",
+        "url": null,
+        "platform": "manual",
+        "note": "Site refuses automated requests (HTTP 403, 2026-10-07); use an operator export."
+      },
+      {
+        "id": "rise-dispensaries-willmar",
+        "name": "RISE Dispensaries - Willmar",
+        "kind": "dispensary",
+        "address": "Willmar, MN",
+        "url": null,
+        "platform": "manual",
+        "note": "Site refuses automated requests (HTTP 403, 2026-10-07); use an operator export."
+      },
+      {
+        "id": "rise-dispensaries-eagan",
+        "name": "RISE Dispensaries - Eagan",
+        "kind": "dispensary",
+        "address": "Eagan, MN",
+        "url": null,
+        "platform": "manual",
+        "note": "Site refuses automated requests (HTTP 403, 2026-10-07); use an operator export."
+      },
+      {
+        "id": "rise-dispensaries-duluth",
+        "name": "RISE Dispensaries - Duluth",
+        "kind": "dispensary",
+        "address": "Duluth, MN",
+        "url": null,
+        "platform": "manual",
+        "note": "Site refuses automated requests (HTTP 403, 2026-10-07); use an operator export."
+      }
+    ]
+  },
+  "menuPlatforms": {
+    "asOf": "2026-10-07",
+    "rule": "Automated access to a menu platform is default-deny: only an automatedAccess value of exactly \"permitted\" allows an automated fetch; operator-saved pages and exports are always permitted; a dispensary's own site is fetched only where robots.txt allows.",
+    "platforms": [
+      {
+        "id": "dutchie",
+        "name": "Dutchie Plus",
+        "automatedAccess": "previously-permitted-deprecated",
+        "deprecationStatus": "sunset-announced-2026",
+        "termsUrl": "https://supergood.ai/api-report-card/dutchie",
+        "notes": "GraphQL API deprecated in 2026; automated access via Plus API ending",
+        "source": "https://supergood.ai/docs/dutchie-api"
+      },
+      {
+        "id": "leafly",
+        "name": "Leafly",
+        "automatedAccess": "restricted-to-authorized-partners",
+        "deprecationStatus": null,
+        "termsUrl": "https://apis.io/providers/leafly/index.md",
+        "notes": "Menu Integration API is documented OpenAPI; access requires business agreement. Order (Reservations) API also available to partners.",
+        "source": "https://flowhub.com/press-release/leafly-flowhub-partner-deliver-real-time-cannabis-menus-online"
+      },
+      {
+        "id": "iheartjane",
+        "name": "iHeartJane (Jane Technologies)",
+        "automatedAccess": "restricted-to-authorized-partners",
+        "deprecationStatus": null,
+        "termsUrl": "https://supergood.ai/api-report-card/i-heart-jane",
+        "notes": "Swagger API at api.iheartjane.com; no self-serve credentials or OAuth. 2,500+ dispensaries use Jane platform.",
+        "source": "https://supergood.ai/docs/i-heart-jane-api"
+      },
+      {
+        "id": "weedmaps",
+        "name": "Weedmaps",
+        "automatedAccess": "prohibited-direct-access",
+        "deprecationStatus": null,
+        "termsUrl": null,
+        "notes": "Weedmaps Orders and Menu are powered by Treez API rails. BLAZE + Weedmaps partnership integrates 340,000+ product catalog.",
+        "source": "https://www.blaze.me/blog/news/weedmaps-blaze-solutions-launch-comprehensive-global-cannabis-product-catalog/"
+      },
+      {
+        "id": "blaze",
+        "name": "BLAZE POS",
+        "automatedAccess": "prohibited-direct-access",
+        "deprecationStatus": null,
+        "termsUrl": null,
+        "notes": "BLAZE partners with Weedmaps and integrates global product catalog (340,000+ products).",
+        "source": "https://help.blaze.me/can/home/why-dutchie"
+      },
+      {
+        "id": "treez",
+        "name": "Treez (SellTreez POS)",
+        "automatedAccess": "prohibited-direct-access",
+        "deprecationStatus": null,
+        "termsUrl": null,
+        "notes": "Weedmaps Orders and Menu powered by Treez API rails; dispensaries manage Weedmaps orders in SellTreez POS.",
+        "source": "https://treez.io/blog/introducing-weedmaps-orders-and-menu-integration"
+      }
+    ]
+  },
+  "x-provenance": {
+    "carried-from": "red-cup-engineering/computer-services-section#49 (closed 2026-10-09), refs/archive/2026-10-09/senior/indoor-grow-autonomic-system at dcc986bd19",
+    "utterances": [
+      "ni:///sha-256;iOEf1dsqSmKb_UpuMDTvvhHBO52eH5FtabD-CdpaJJM",
+      "leader message 2026-10-10T01:08Z, quoted in the grow-assist brief of 2026-10-09-leader-words-pass-order.md"
+    ],
+    "recorded-by": "grow-assist pass of debt-2026-10-09-leader-words-held-in-corpus (Lenticule Science Senior)",
+    "recorded-on": "2026-10-10"
+  }
+}

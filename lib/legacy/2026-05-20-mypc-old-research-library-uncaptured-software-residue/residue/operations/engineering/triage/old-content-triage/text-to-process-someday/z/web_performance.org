@@ -1,0 +1,11 @@
+#+title: performing on the Web
+#+begin_head
+#+ghe_schema: record-0.1.1
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-22 Tue 10:23]
+#+roam_alias: "Web performance"
+#+roam_tags: term
+#+end_head
+
+*/Performing on the Web/* is a [[file:craft.org][craft]] that involves maintaining an active and social [[file:web.org][Web]] presence, in [[file:collaboration.org][Collaboration]] with the [[file:contemporary_kyriarchy.org][contemporary settler-colonial kyriarchy]] in order to earn one's [[file:means_of_survival.org][means of survival]].

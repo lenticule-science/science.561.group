@@ -44,3 +44,7 @@ In this governance vocabulary, a Directive is the raw speech act: one authority-
 - [Norm](./norm.md) — the propositional structure a directive asserts should hold
 - [Authority](./authority.md) — the capacity a directive exercises when uttered by an agent who holds it
 - [Duty](./duty.md) — what a properly-enacted policy, not a bare directive, generates for agents in its scope
+
+## The Leader's form of a directive (pass general-1, 2026-09-11)
+
+The Leader's ontology gives the directive a form this term did not state: a directive is a (subject, predicate, object) triplet in which every subject and object is a resource of the Group's system and the predicate is an action an agent can make, if capable. Policies are the directives active over a resource, and rules are the policies that apply under the preconditions of a program; so rules derive from policies and policies from directives (Leader, 2026-09-11 19:43). Only what the Leader said to an agent counts as a directive; a statement an agent wrote in a file does not. See the note on directives, policies and rules (agency-services-section/content/text/documents/articles/notes/2026/10/10/2026-10-10-note-on-directives-policies-and-rules.md).

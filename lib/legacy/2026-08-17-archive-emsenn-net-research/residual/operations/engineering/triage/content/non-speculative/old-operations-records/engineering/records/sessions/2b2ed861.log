@@ -1,0 +1,1 @@
+Cleaned up. The file is at the path you specified, marked `readiness: draft`, with sources from Courtès's original paper, LWN, Guix blog posts on derivations/G-expressions/bootstrap. No stray files left behind.
