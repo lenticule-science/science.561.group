@@ -9,6 +9,12 @@ authors:
 status: draft-for-review
 keywords: ["obsmetrologia", "release", "axiom-law", "quot-sound", "biextensional-collapse", "utterance", "four-generators", "regime", "lineage"]
 tags: ["draft"]
+leader-utterances:
+  - "ni:///sha-256;K7KzRJpiDjKGanLXTD4uIzKXGfTOdRM6d2u3yttZ9k4"
+  - "ni:///sha-256;3LfuO1PforRrICkNqylh1me6gsMs_Pon2EacALRkTsw"
+  - "ni:///sha-256;sq8yz9zx8K9JHq2NQARa8p_n-2DCVcy-uSO0Kaz4gsY"
+  - "ni:///sha-256;MEyrjCUfRJ36DcfXbmttGa3XxGQHdTsDbufsYAeXjlw"
+  - "ni:///sha-256;FazwP8J3rfFECLa5OnFTJ_p8tGFQQpvr9bggsLOeSEI"
 ---
 
 ## The thesis a release has to make true
