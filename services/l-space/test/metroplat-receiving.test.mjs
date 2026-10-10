@@ -83,6 +83,7 @@ async function applicationFixture(t, { materialize = true, rootExists = true, co
       excludedPaths.push(`${source.declaration.sciencePrefix}/${segment}/receiving-control.md`);
     }
     excludedPaths.push('unadmitted-section/services/receiving-control.md');
+    excludedPaths.push('unadmitted-section/content/text/receiving-control.md');
     for (const path of excludedPaths) {
       const file = join(root, path);
       await mkdir(dirname(file), { recursive: true });
@@ -230,7 +231,8 @@ test('missing corpus refuses before scanning and an empty real directory cannot 
   });
   await t.test('empty root never substitutes for the selected authored source', async child => {
     const fixture = await applicationFixture(child, { materialize: false });
-    await assert.rejects(() => receiveDeclaredDocument(fixture), /must search and find the declared source/);
+    await assert.rejects(() => receiveDeclaredDocument(fixture),
+      error => error.code === 'LSPACE_CORPUS_SECTION_UNAVAILABLE' && error.section === fixture.source.declaration.sciencePrefix);
     await assert.rejects(() => fixture.call('fetch', { id: fixture.source.declaration.canonicalPath }),
       error => error instanceof RangeError && error.reason === 'not-found');
   });

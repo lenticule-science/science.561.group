@@ -34,6 +34,7 @@ export function lSpaceMetroplat({config, admission, configuration = {}, archive:
   }
   const root = selectMetroplatCorpusRoot(config.repositoryRoot, configuration.root);
   const sciencePrefix=configuration.sciencePrefix;
+  const readerPolicy = lSpaceReaderPolicy({sciencePrefix, excludes: configuration.excludes});
   const authorRoot=sciencePrefix ? resolve(root,sciencePrefix) : root;
   const environmentFile = configuration.environmentFileKey && process.env[configuration.environmentFileKey];
   const settings = environmentFile ? parseEnv(readFileSync(environmentFile, 'utf8')) : {};
@@ -57,8 +58,8 @@ export function lSpaceMetroplat({config, admission, configuration = {}, archive:
   const media={resources:[{...ni,handler:async context=>await admission?.identifyContext(context)
     ? ni.handler(context) : new Response('Reader admission required',{status:401,headers:{'cache-control':'no-store'}})}]};
   let opened;
-  const archive = () => suppliedArchive ?? (opened ??= Promise.resolve().then(() => assertMetroplatCorpusRoot(root)).then(() => openArchive({
-    root, ...lSpaceReaderPolicy({sciencePrefix, excludes: configuration.excludes}),
+  const archive = () => suppliedArchive ?? (opened ??= Promise.resolve().then(() => assertMetroplatCorpusRoot(root, undefined, {requiredSection: sciencePrefix})).then(() => openArchive({
+    root, ...readerPolicy,
     observations: join(config.stateDir, 'knowledge', 'observations.jsonl'),
     fullText: join(config.stateDir, 'knowledge', 'full-text.sqlite'),
   })).then(held=>sciencePrefix ? Object.freeze({...held,
@@ -88,7 +89,8 @@ export function lSpaceMetroplat({config, admission, configuration = {}, archive:
   const authoring = authoringRoot && resolve(authoringRoot) === authorRoot && authoringRegion === ''
     ? fetchApplication(async (request, context) => {
       if (!await isAuthor(context)) return new Response('Author access required',{status:403,headers:{'cache-control':'no-store'}});
-      workbench ??= createGeodeWorkspace(sciencePrefix ? {root:authorRoot,excludes:configuration.excludes ?? EXCLUDED_SEGMENTS} : {archive:await archive()}).then(workspace=>createGeodeFetchHandler({workspace,basePath:'/geode'})).catch(error=>{workbench=undefined;throw error;});
+      assertMetroplatCorpusRoot(root, undefined, {requiredSection: sciencePrefix});
+      workbench ??= createGeodeWorkspace(sciencePrefix ? {root:authorRoot,excludes:readerPolicy.excludes} : {archive:await archive()}).then(workspace=>createGeodeFetchHandler({workspace,basePath:'/geode'})).catch(error=>{workbench=undefined;throw error;});
       const response=await (await workbench)(request);
       if (sciencePrefix && !['GET','HEAD'].includes(request.method) && response.ok) await (await archive()).refresh();
       return response;
@@ -143,7 +145,7 @@ export function lSpaceMetroplat({config, admission, configuration = {}, archive:
           const sharing=source.properties?.visibility === 'public'
             ? `<p><a href="/knowledge/public?document=${escape(encodeURIComponent(id))}">Public reading link</a></p>` : '';
           const parsed=await resolveReadingLinks(parseBody(source.body ?? ''),{document:sourceId,archive:await archive(),documentUrl:target=>new URL(documentPath(target),config.publicBaseUrl).href});
-          const rendered=renderBody(await retainDocumentEmbeds(parsed,{root,document:sourceId,custody,excludes:configuration.excludes ?? EXCLUDED_SEGMENTS}), {resolve:target=>({href:`/knowledge?name=${encodeURIComponent(target)}`,type:'knowledge-name',title:target})});
+          const rendered=renderBody(await retainDocumentEmbeds(parsed,{root,document:sourceId,custody,excludes:readerPolicy.excludes}), {resolve:target=>({href:`/knowledge?name=${encodeURIComponent(target)}`,type:'knowledge-name',title:target})});
           return page(`<article><h2>${escape(note.title)}</h2><p>${escape(note.id)}</p>${sharing}<section>${rendered}</section><details><summary>Full source document</summary><pre style="white-space:pre-wrap">${escape(note.text)}</pre></details><details><summary>Source metadata</summary><pre>${escape(JSON.stringify(note.metadata,null,2))}</pre></details></article>`);
         }
         const name=url.searchParams.get('name');
