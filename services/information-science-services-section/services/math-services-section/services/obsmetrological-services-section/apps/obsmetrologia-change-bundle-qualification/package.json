@@ -19,10 +19,10 @@
     "verify": "npm run check"
   },
   "dependencies": {
-    "@red-cup-engineering/semiotic-eavt-services-section": "0.1.0",
-    "@red-cup-engineering/witness-journal-document-service": "0.1.0",
-    "@red-cup-engineering/activitypub-services-section": "0.8.1",
-    "@red-cup-engineering/computer-content-engineering-services-section": "0.1.0"
+    "@red-cup-engineering/semiotic-eavt-services-section": "workspace:*",
+    "@red-cup-engineering/witness-journal-document-service": "workspace:*",
+    "@red-cup-engineering/activitypub-services-section": "workspace:*",
+    "@red-cup-engineering/computer-content-engineering-services-section": "workspace:*"
   },
   "exports": {
     ".": "./src/contract-change-bundle-qualification.mjs"
