@@ -1,0 +1,7 @@
+Done. Two command files created:
+
+1. **`save-session.md`** — Reviews the conversation and writes a structured save document with 7 mandatory sections: What Worked, What Did NOT Work, What Has NOT Been Tried, Current Work Status, Exact Next Step, WHAT NOT TO RETRY, Required Files. Saves to `operations/engineering/records/sessions/{id}-save.md`.
+
+2. **`resume-session.md`** — Lists available saves or loads a specific one. Presents WHAT NOT TO RETRY first and prominently, then status/next-step, then loads required files. Confirms before proceeding.
+
+These need `/install-harness` to become active in `.claude/commands/`.

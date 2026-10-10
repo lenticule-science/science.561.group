@@ -1,0 +1,10 @@
+Working. The data confirms the patterns from the research: Grep→Read 53%, self-loops dominate (Read→Read 52%, Bash→Bash 55%, WebSearch→WebSearch 70%), and the edit cycle Read→Edit→Bash shows clearly at 43%.
+
+Key findings for harness optimization:
+- **Grep→Read** (53%) — after searching, you almost always read what you found
+- **Edit→Bash** (45%) — after editing, you run something (tests, install, verify)
+- **Write→Bash** (43%) — same pattern for new files
+- **Glob→Read** (33%) — find file, then read it
+- **Self-loops** are strongest — batched operations are the dominant pattern
+
+767 calls, 19 unique tools, 85 trigram states. Model saved to `operations/engineering/records/tool-prediction-model.json`.

@@ -1,0 +1,43 @@
+\section{The Klein-four symmetry $K_4 = \langle{\sim},{-}\rangle$}
+
+This section records claim nodes and dependency edges.
+
+\begin{proposition}[Conflation and its composite]\label{thm:conflate}\lean{Infomaterial.Charge.conflate}\leanok\uses{thm:four-object}
+\texttt{Charge.conflate}, written~$-$, is the knowledge-negation $\langle a, b\rangle \mapsto \langle \neg b, \neg a\rangle$: it swaps $\bot_k \leftrightarrow \top_k$ and fixes $t$ and $f$. Together with negation~$\sim$ it generates $K_4$. The companion \texttt{Charge.negConf} is the coordinatewise complement $\langle a, b\rangle \mapsto \langle \neg a, \neg b\rangle$, the third nontrivial element ${\sim}\circ{-}$.
+\end{proposition}
+\begin{theorem}[The generators commute]\label{thm:negate-conflate-comm}\lean{Infomaterial.Charge.negate_conflate_comm}\leanok\uses{thm:conflate}
+\texttt{Charge.negate\_conflate\_comm} proves ${\sim}\circ{-} = {-}\circ{\sim}$: negation and conflation commute. \texttt{Charge.negate\_conflate} identifies their common value as \texttt{negConf}, the coordinatewise complement. Commutation is the hinge that makes the four composites close into a group rather than a larger structure.
+\end{theorem}
+\begin{theorem}[Negation's order-effects]\label{thm:negate-orders}\lean{Infomaterial.Charge.negate_preserves_kle}\leanok\uses{thm:conflate, thm:four-bilattice}
+\texttt{Charge.negate\_preserves\_kle} proves $\sim$ preserves the knowledge order ($\mathrm{KLE}\,({\sim}a)\,({\sim}b) \leftrightarrow \mathrm{KLE}\,a\,b$), while \texttt{Charge.negate\_reverses\_tle} proves $\sim$ reverses the truth order ($\mathrm{TLE}\,({\sim}a)\,({\sim}b) \leftrightarrow \mathrm{TLE}\,b\,a$). Negation is the symmetry that fixes knowledge and dualizes truth.
+\end{theorem}
+\begin{theorem}[Conflation's order-effects]\label{thm:conflate-orders}\lean{Infomaterial.Charge.conflate_reverses_kle}\leanok\uses{thm:conflate, thm:kle, thm:four-bilattice}
+Dually, \texttt{Charge.conflate\_reverses\_kle} proves $-$ reverses the knowledge order and \texttt{Charge.conflate\_preserves\_tle} proves $-$ preserves the truth order. The two generators partition the two orders' duties between them: each fixes one order and reverses the other.
+\end{theorem}
+\begin{theorem}[The composite reverses both]\label{thm:negconf-reverses}\lean{Infomaterial.Charge.negConf_reverses_kle}\leanok\uses{thm:negate-orders, thm:conflate-orders}
+\texttt{Charge.negConf\_reverses\_kle} (with its truth-order companion) proves ${\sim}\circ{-}$ reverses \emph{both} orders. The product of two symmetries each reversing exactly one order reverses both --- the $\mathbb{Z}/2 \times \mathbb{Z}/2$ structure read off the order-effects.
+\end{theorem}
+\begin{theorem}[The Klein-four group]\label{thm:klein-four-symmetry}\lean{Infomaterial.Charge.klein_four}\leanok\uses{thm:negate-conflate-comm, thm:negconf-reverses}
+\texttt{Charge.klein\_four} bundles the group facts of $\{\mathrm{id}, \sim, -, {\sim}\circ{-}\}$: each of the three nontrivial elements is an involution, and the products $\sim\circ- = {\sim}\circ{-} = -\circ\sim$ close the set. This is $K_4 \cong \mathbb{Z}/2 \times \mathbb{Z}/2$, the natural symmetry group of FOUR equipped with both negation and conflation --- the two orders' duality made a group.
+\end{theorem}
+
+This section records claim nodes and dependency edges.
+
+\begin{proposition}[The carrier $K_4$ and its action]\label{thm:k4-group}\lean{Infomaterial.Positing.Gauge.K4}\leanok\uses{thm:klein-four-symmetry}
+\texttt{Positing.Gauge.K4} is the four-constructor inductive $\{\texttt{id}, \texttt{neg}, \texttt{conf}, \texttt{negConf}\}$ --- the Klein-four group as a first-class carrier. Its action \texttt{Positing.Gauge.K4.act} sends each element to the corresponding map on \texttt{Charge} (\texttt{neg}~$\mapsto\sim$, \texttt{conf}~$\mapsto-$, \texttt{negConf}~$\mapsto{\sim}\circ{-}$), and \texttt{Positing.Gauge.K4.mul} is the explicit $4\times 4$ Cayley table.
+\end{proposition}
+\begin{theorem}[The Cayley table]\label{thm:cayley}\lean{Infomaterial.Positing.Gauge.K4.cayley}\leanok\uses{thm:k4-group}
+\texttt{Positing.Gauge.K4.cayley} records the full $4\times 4$ multiplication grid, one \texttt{rfl} per cell. It fixes the group's combinatorics before any law is proven from it.
+\end{theorem}
+\begin{theorem}[The action is a homomorphism]\label{thm:act-mul}\lean{Infomaterial.Positing.Gauge.K4.act_mul}\leanok\uses{thm:cayley, thm:k4-group}
+\texttt{Positing.Gauge.K4.act\_mul} proves $\mathrm{act}\,(g \cdot h)\,a = \mathrm{act}\,g\,(\mathrm{act}\,h\,a)$: the Cayley table is precisely composition of the underlying \texttt{Four} maps. This is what makes $K_4$ a group \emph{acting on} FOUR rather than an abstract table, and it is here that the involution and commutation laws of the symmetry are consumed.
+\end{theorem}
+\begin{theorem}[$K_4$ is an abelian group object]\label{thm:k4-isgroup}\lean{Infomaterial.Positing.Gauge.K4.isGroup}\leanok\uses{thm:act-mul}
+\texttt{Positing.Gauge.K4.isGroup} bundles associativity (\texttt{mul\_assoc}), the two-sided identity \texttt{id}, the self-inverse law \texttt{mul\_self} ($g \cdot g = \texttt{id}$ for every $g$), commutativity (\texttt{mul\_comm}), and the homomorphism law into one ``group object'' certificate. With $g^{-1} = g$ for all $g$, this is the abelian group $\mathbb{Z}/2 \times \mathbb{Z}/2$, proven by finite exhaustion over the $64$ triples.
+\end{theorem}
+\begin{proposition}[The internal $\mathbb{Z}/2$ gauge]\label{thm:gauge}\lean{Infomaterial.Positing.Gauge.K4.inGauge}\leanok\uses{thm:k4-isgroup}
+\texttt{Positing.Gauge.K4.inGauge} marks the subgroup $\langle\sim\rangle = \{\texttt{id}, \texttt{neg}\} \cong \mathbb{Z}/2$ --- the internal gauge of FOUR. Its action on valuations is \texttt{Positing.Gauge.K4.gaugeAct}, where the nontrivial element \texttt{neg} acts as pointwise negation; \texttt{Positing.Gauge.K4.gauge\_closed} proves the subgroup is closed under multiplication.
+\end{proposition}
+\begin{theorem}[Gauge stability and movement]\label{thm:gauge-stable}\lean{Infomaterial.Positing.Gauge.K4.paraconsistent_gauge_stable}\leanok\uses{thm:gauge, thm:valuation}
+\texttt{Positing.Gauge.K4.paraconsistent\_gauge\_stable} proves that if every cell of a valuation is $\bot_k$ or $\top_k$, the whole $\mathbb{Z}/2$ gauge fixes it: paraconsistent points are gauge-stable. Dually \texttt{Positing.Gauge.K4.classical\_gauge\_moves} proves a classical $t$-cell is moved by the gauge generator. The gauge fixes the inconsistency side and sign-flips the truth side --- a $\mathbb{Z}/2$ symmetry that distinguishes paraconsistent from classical content.
+\end{theorem}

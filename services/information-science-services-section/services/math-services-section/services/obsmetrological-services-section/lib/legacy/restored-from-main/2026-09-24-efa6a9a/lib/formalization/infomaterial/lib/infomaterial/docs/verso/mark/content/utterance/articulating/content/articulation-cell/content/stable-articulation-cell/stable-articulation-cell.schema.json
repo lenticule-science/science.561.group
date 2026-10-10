@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mark/content/utterance/articulating/content/articulation-cell/content/stable-articulation-cell",
+  "title": "stable-articulation-cell",
+  "description": "The articulation-cell corner where the claim side is articulated but the token side is not (token: no, claim: yes) - content committed without its anchoring identity. Under token-before-claim ordering this is the off-path corner.",
+  "allOf": [
+    { "$ref": "mark/content/utterance/articulating/content/articulation-cell" }
+  ],
+  "type": "object",
+  "required": ["token", "claim", "off-path"],
+  "properties": {
+    "token": { "const": false, "description": "the token (identity) side is not articulated" },
+    "claim": { "const": true, "description": "the claim (content) side is articulated" },
+    "off-path": { "const": true, "description": "under token-before-claim ordering, a claim articulated before its expected prior token lies off the natural progression" }
+  }
+}

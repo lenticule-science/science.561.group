@@ -1,0 +1,66 @@
+---
+kind: narrative
+status: current
+introduces: [d-frame, d-frame-morphism, d-frame-valued-sheaf, d-frame-valued-sheaf-condition, d-frame-cohomology-comparison, negative-paraconsistent-settling-sheaf, strict-regime-d-frame-cohomology, scott-continuous-regime-d-frame-cohomology, transfinite-bounded-regime-d-frame-cohomology, aperiodic-regime-d-frame-cohomology, quantale-enriched-sheaf, q-enriched-cohomology, lawvere-laplacian-grothendieck-sites, q-enriched-cohomology-higher-degree-vanishing]
+discusses: [settling-associated-sheaf, inconsistency-sheaf, bigraded-settling-cohomology, paired-priestley-space]
+---
+
+# Bilattice-valued cohomology
+
+The cohomology developed in the [Cohomology chapter](cohomology-series-position.md) values sheaves in $\mathbf{Ab}$. The choice was made on homological-algebra-availability grounds — $\mathbf{Ab}$ has enough injectives, derived functors, Godement resolutions, and Čech comparison off the shelf. The structural cost is that the resulting invariants see only the $\mathbb{Z}$-rank of newly-designated cell sets: which order they live in (truth vs knowledge), how they relate under negation, whether they sit on consistent or inconsistent overlaps — all of this is lost in the abelianization.
+
+The [bigraded refinement](bigraded-cohomology-opener.md) recovers part of the lost content by separately tracking truth-side and inconsistency-side cohomologies. But the bigraded version still factors through $\mathbf{Ab}$ on each component; the *interaction* between truth-side and inconsistency-side — the consistency and totality of jointly held positive-and-negative evidence — is reconstructed via comparison maps rather than recorded intrinsically.
+
+A *bilattice-native* cohomology, by contrast, values sheaves in a category that carries the bilattice's $(\leq_t, \leq_k)$ content directly. The intended payoff: invariants whose definition itself reflects the bilattice's full four-state structure, with the bigraded content visible *as the value type*, not extracted afterward.
+
+## The bigraded value-type axis
+
+The [bilattice-valued sheaves question](../questions/bilattice-valued-sheaves.md) flagged this development as the bigraded-axis slice of axis-aware cohomology. Three candidate value categories present themselves:
+
+- **Distributive [bilattices](../objects/bilattice.md)** — algebraic side, native to the [predication fiber algebras](../objects/predication-fiber-algebra.md) which are themselves distributive bilattices.
+- **[d-frames](../objects/d-frame.md)** — bitopological-algebraic side ([@jung-moshier2006], [@jakl2018]), with off-the-shelf homological-algebra infrastructure.
+- **[Paired Priestley spaces](../objects/paired-priestley-space.md)** — spatial side, self-dual with the bitopological settling site's fibers via [Priestley dualizability](../theorems/priestley-dualizability.md).
+
+By [Jung–Rivieccio duality](../theorems/jung-rivieccio-duality.md) and the bilattice ↔ d-frame correspondence ([@jakl2025] §4.1), the three candidates are derived-equivalent — coordinate charts on one structural axis. The choice between them is which side of the duality is most ergonomic for each proof.
+
+## This chapter: the d-frame chart
+
+This chapter develops the d-frame chart specifically. d-frames have the most-developed homological-algebra infrastructure of the three candidates: enough injectives (Jakl 2018 Ch. 5–6), derived functors, named generators, the algebraic side of bitopological Stone duality. Adapting that infrastructure to the bitopological settling site gives a workable bilattice-valued cohomology with minimal new homological-algebra development.
+
+The chapter's central objects:
+
+- The [d-frame](../objects/d-frame.md) itself: a quadruple $(L_+, L_-, \mathrm{con}, \mathrm{tot})$ recording positive-and-negative-evidence frames with consistency and totality relations.
+- [d-frame morphisms](../morphisms/d-frame-morphism.md): structure-preserving frame-pair maps.
+- The [d-frame-valued settling sheaf](../objects/d-frame-valued-sheaf.md) $\mathbb{F}_U$: a sheaf on the [bitopological settling site](../objects/bitopological-settling-site.md) whose values record both the newly-truth-positive cells and the newly-falsehood-positive cells at each stage, with consistency and totality intrinsic to the value structure.
+
+The chapter's foundational theorems:
+
+- [d-frame-valued sheaf condition](../theorems/d-frame-valued-sheaf-condition.md): $\mathbb{F}_U$ satisfies the sheaf gluing axioms on the bitopological settling site. *Status: proved.* Component-wise reduction — the four pieces of the d-frame ($L_+, L_-, \mathrm{con}, \mathrm{tot}$) each glue independently using powerset-on-subset sheafhood plus locality of consistency and totality. Foundational well-definedness, independent of derived-functor framework choices.
+- [d-frame ↔ $\mathbf{Ab}$-valued cohomology comparison](../theorems/d-frame-cohomology-comparison.md): the *shadow functor* $\mathbb{S} : \mathbf{dFrm} \to \mathbf{Ab} \times \mathbf{Ab}$ on sections gives the pair $(\mathcal{F}_U^{(k)}, \mathcal{F}_U^{(k, -)})$ of [paraconsistent settling-associated sheaf](../objects/paraconsistent-settling-associated-sheaf.md) and its negation-mirror, the [negative-paraconsistent settling-associated sheaf](../objects/negative-paraconsistent-settling-sheaf.md). *Status: section-level proved; derived-functor-level sketch.* The section-level part is unfolding-of-definitions; the derived-functor-level commutation is queued behind the d-frame cohomological framework choice.
+
+- [Strict-regime d-frame cohomology](../theorems/strict-regime-d-frame-cohomology.md): the framework's first concrete cohomological theorem. In the strict regime — finite $\mathbf{L}, E, \mathcal{C}$ and closure ordinal $\kappa < \omega$ — the bitopological settling site reduces to a finite Grothendieck site with finite paired-Priestley cellular fibers; the [@ghrist-riess2022] Tarski Laplacian framework applies directly. Result: $H^n_{\mathbf{dFrm}} = 0$ for $n \geq 1$, with $H^0$ given by global d-frame data agreeing with the shadow $(\mathcal{F}_v^{(k)}, \mathcal{F}_v^{(k, -)})$ via the comparison and adding consistency / totality structure beyond what the shadow records. *Status: proved.* See [strict-regime d-frame computation](../examples/strict-regime-d-frame-computation.md) for a concrete worked instance.
+
+- [Scott-continuous-regime d-frame cohomology](../theorems/scott-continuous-regime-d-frame-cohomology.md): the framework's first non-finite application. Scott-continuous regime: closure ordinal $\kappa \leq \omega$, paired-Priestley fibers locally finite. The Tarski Laplacian framework extends via filtered-colimit machinery — the d-frame analogue of AB5 in the existing $\mathbf{Ab}$-valued setting. Result: $H^{\geq 1}_{\mathbf{dFrm}} = 0$, $H^0_{\mathbf{dFrm}}$ a directed colimit of finite-stage d-frames. *Status: proved.* The strict and Scott-continuous theorems together complete the "directly-applicable region" of the framework, where the published machinery applies without needing the [cellular extension plan](../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../philosophy-services-section/services/logic-services-section/content/text/documents/articles/notes/undated/cellular-extension-plan.md)'s Layer 2 / 3.
+
+- [Transfinite-bounded-regime d-frame cohomology](../theorems/transfinite-bounded-regime-d-frame-cohomology.md): the chapter's first substantive open theorem. Transfinite-bounded regime ($\omega < \kappa < $ state-space cofinality) introduces non-Scott-continuous firings — limit ordinals where the closure adds content not derivable from finite earlier stages. These firings produce $H^1$-generators on each evidence side, packaged as d-frame generators $D_\mu$ that record consistency-totality data per firing. *Status: sketch — depends on Layer 2 of the cellular extension plan.* The substantive open work is the Tarski / Lawvere Laplacian framework's extension to fibered cellular sites with non-Scott-continuous transitions.
+
+- [Aperiodic-regime d-frame cohomology](../theorems/aperiodic-regime-d-frame-cohomology.md): the chapter's deepest open theorem. Aperiodic regime ($\kappa \geq \omega_1$): direct-limit assembly across $\omega_1$-cofinal truncations, with $H^1 = \bigoplus_{\mu \in L_{\mathrm{ns}}(\kappa)} D_\mu$. Refines the existing aperiodic-regime $\mathbf{Ab}$-valued direct-limit theorem with d-frame structure on each generator. *Status: sketch — depends on Layers 2 + 3 of the cellular extension plan.* The d-frame analogue of AB5 at uncountable cofinality is the deepest extension required.
+
+## What's open after the comparison
+
+Once the comparison theorem is firm, the next substantive open theorem is the **d-frame analogue of [vanishing above degree 1](../theorems/settling-cohomology-vanishes-above-degree-1.md)**. The $\mathbf{Ab}$-valued vanishing proof uses a 3-axis decomposition (fiber Boolean-algebra dimension 0 plus settling-axial and predicate-axial dimensions 1 each). The fiber-Boolean axis is what changes under d-frame value type: a distributive bilattice has its own cohomological dimension, possibly nonzero. Whether vanishing lifts is a substantive open question — the answer is the chapter's headline theorem and connects directly to the [exceptional-$H^{\geq 2}$ question](../questions/exceptional-higher-cohomology.md).
+
+If vanishing lifts: the d-frame chart gives a strict refinement of the bigraded cohomology, with extra structure but the same vanishing pattern. If vanishing fails: the d-frame chart identifies *new* invariants in higher degrees that the $\mathbf{Ab}$-valued version cannot see — a substantive new layer of the program.
+
+## Position in the program
+
+This chapter is structurally a *Part 2 chapter* — a refinement of the cohomology that doesn't feed back into the Part 1 spine. It parallels the [bigraded cohomology refinements](bigraded-cohomology-opener.md) chapter: bigraded refines by truth-vs-knowledge axes within $\mathbf{Ab}$; bilattice-valued refines by enriching the value category itself. The two refinements are compatible — bilattice-valued is the *bilattice-native* form of which bigraded is the $\mathbf{Ab}$-shadow.
+
+Downstream, the chapter unblocks:
+
+- [Deformation theory](../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../philosophy-services-section/services/logic-services-section/content/text/documents/articles/notes/undated/deformation-theory-of-skhs.md) — bilattice-flavored tangent classes that distinguish truth-side and inconsistency-side deformations, qualitatively richer than the $\mathbb{Z}$-flavored deformations a $\mathbf{Ab}$-valued cohomology supports.
+- [Six-functor formalism](../questions/six-functor-formalism-for-settling-cohomology.md) and [Verdier duality](../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../philosophy-services-section/services/logic-services-section/content/text/documents/articles/notes/undated/verdier-duality-on-bitopological-site.md) — both have natural bilattice-native formulations on the d-frame side, and the comparison theorem lets results transport between $\mathbf{Ab}$ and d-frame settings.
+- Refined [strong-MLD invariants](../questions/strong-mld-classification.md) — pairs (truth-class, inconsistency-class) with consistency/totality together-data, finer than the existing $\mathrm{cl}\text{-}\mathrm{inv}^{(0,1)}$.
+- The [other two charts](../questions/bilattice-valued-sheaves.md) of the bigraded value-type axis (paired-Priestley-space-valued and distributive-bilattice-valued sheaves), via duality transport from the d-frame chart.
+
+The chapter is the foundational rewrite the program has been deferring. Its homological-algebra cost is bounded — most of what's needed already exists in d-frame literature — and its structural payoff is large.

@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Play &mdash; weiqi-web</title>
+  <meta name="description" content="Capture Go (atari-go) on 7x7 against a scripted greedy-capture bot, powered by the weiqi rules kernel." />
+  <link rel="stylesheet" href="css/theme.css" />
+  <link rel="stylesheet" href="css/shelf-chrome.css" />
+</head>
+<body>
+  <header class="site-header">
+    <svg class="shelf-mark" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true">
+      <ellipse cx="24" cy="24" rx="18" ry="11"/>
+      <path d="M13 17q11-6 22 0" stroke-width="1.3" opacity="0.6"/>
+      <path d="M11 24 14.25 21.5 17.5 24 20.75 21.5 24 24 27.25 21.5 30.5 24 33.75 21.5 37 24"/>
+    </svg>
+    <a class="brand" href="index.html">weiqi-web</a>
+    <nav>
+      <a href="play.html" aria-current="page">Play</a>
+      <a href="learn.html">Learn</a>
+      <a href="tsumego.html">Tsumego</a>
+      <a href="glossary.html">Glossary</a>
+    </nav>
+  </header>
+
+  <main class="wide">
+    <h1>Capture Go</h1>
+    <p class="subtitle">
+      An onboarding ladder: first capture wins each rung. You are <strong>Black</strong>; each rung
+      pairs a board size with one bot from the ladder (see the rung list below &mdash; none of them
+      carry a kyu/dan rank claim, see the README for why). Click an empty intersection to play; on
+      a touchscreen, press and drag to preview (a magnified view follows above your finger) and
+      release over the board to place the stone &mdash; release anywhere else to cancel with
+      nothing played. Prefer tap-then-confirm instead? Switch it in Settings. Hover or focus an
+      <span class="term-hover" data-term="atari" tabindex="0">atari</span> or
+      <span class="term-hover" data-term="capture" tabindex="0">capture</span> badge on the board to
+      see the glossary's own definition &mdash; or watch for the toast that names the concept the
+      moment it happens.
+    </p>
+
+    <section class="card ladder-panel">
+      <h2 style="margin-top:0; font-size:1rem;">Onboarding ladder</h2>
+      <div id="ladder-rungs" class="ladder-rungs" role="tablist" aria-label="Ladder rungs"></div>
+      <div id="ladder-intro" class="ladder-intro"></div>
+      <div id="ladder-celebration" class="ladder-celebration" role="status" hidden></div>
+    </section>
+
+    <div class="board-layout">
+      <div class="board-wrap" id="board-wrap">
+        <div id="board-host"></div>
+      </div>
+      <aside class="side-panel">
+        <div id="status-line" class="status-line" aria-live="off">Black to move.</div>
+        <div class="controls-row">
+          <button id="new-game-btn" class="primary">Restart this rung</button>
+        </div>
+        <div class="card settings-panel">
+          <h2 style="font-size:1rem; margin:0 0 0.2rem;">Settings</h2>
+          <div class="settings-row">
+            <label for="sound-toggle-btn">Sound</label>
+            <button id="sound-toggle-btn" class="toggle-btn" type="button" aria-pressed="true">On</button>
+          </div>
+          <div class="settings-row">
+            <label for="concept-tier-select">Concept toasts</label>
+            <select id="concept-tier-select">
+              <option value="beginner">Beginner (all)</option>
+              <option value="intermediate">Intermediate (rare)</option>
+              <option value="off">Off</option>
+            </select>
+          </div>
+          <div class="settings-row">
+            <label for="touch-mode-select">Touch controls</label>
+            <select id="touch-mode-select">
+              <option value="drag">Magnifier (drag &amp; release)</option>
+              <option value="confirm">Tap to confirm</option>
+            </select>
+          </div>
+        </div>
+        <div>
+          <h2 style="font-size:1rem; margin-bottom:0.4rem;">Event log</h2>
+          <div id="event-log" class="event-log"></div>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    weiqi-web &mdash; rules enforced entirely by <code>@lenticule-science/weiqi-kernel</code>.
+    <p class="shelf-footer-line">
+      <svg class="shelf-mark" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true">
+        <ellipse cx="24" cy="24" rx="18" ry="11"/>
+        <path d="M13 17q11-6 22 0" stroke-width="1.3" opacity="0.6"/>
+        <path d="M11 24 14.25 21.5 17.5 24 20.75 21.5 24 24 27.25 21.5 30.5 24 33.75 21.5 37 24"/>
+      </svg>
+      Part of the <a href="https://play.561.group">561 shelf</a>.
+    </p>
+  </footer>
+
+  <script type="module" src="js/play-app.mjs"></script>
+</body>
+</html>

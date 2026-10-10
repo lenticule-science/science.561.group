@@ -1,0 +1,6 @@
+#+title: craft
+#+roam_alias: "crafted" "crafting"
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-18 Fri 19:54]
+A */craft/* is a action that performs work resulting in an [[file:artifact.org][artifact]].

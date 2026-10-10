@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mark/content/utterance/articulating/content/articulation-cell/content/absurd-articulation-cell",
+  "title": "absurd-articulation-cell",
+  "description": "The corner of articulating's codomain partition where both token and claim are articulated (yes, yes) - the saturated terminus of the token-before-claim progression. It refines the articulation cell by fixing both statuses positive.",
+  "allOf": [
+    { "$ref": "mark/content/utterance/articulating/content/articulation-cell" }
+  ],
+  "type": "object",
+  "required": ["token", "claim"],
+  "properties": {
+    "token": { "const": true, "description": "the identity-carrying token side is articulated" },
+    "claim": { "const": true, "description": "the content-carrying claim side is articulated" }
+  }
+}

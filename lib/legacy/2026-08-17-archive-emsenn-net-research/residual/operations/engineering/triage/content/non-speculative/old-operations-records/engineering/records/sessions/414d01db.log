@@ -1,0 +1,7 @@
+Glob returns results sorted by modification time (most recent first). The 5 most recently modified:
+
+1. `_index.md`
+2. `continuous-learning-pipeline.md`
+3. `github-issues-integration.md`
+4. `double-entry-operational-accounting.md`
+5. `mud-chat-as-messaging.md`

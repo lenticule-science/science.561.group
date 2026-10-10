@@ -1,0 +1,11 @@
+Done. Built `operations/engineering/fars/agentic/tools/propagate-dependencies.js` with:
+
+**Propagate mode** (`--task ID --status STATUS`):
+- Completed tasks: checks if dependents have ALL deps met, unblocks them (removes `blocked-by`, sets `open`)
+- Blocked/failed tasks: cascades transitively — blocks all downstream dependents, adds `blocked-by` field
+
+**Check mode** (`--check`):
+- Scans 317 tasks, found 34 inconsistencies (tasks marked `open` with unmet deps)
+- Fixes by setting status to `blocked` with `blocked-by` populated
+
+Both modes support `--dry-run` and record events to the JSONL event log. Exports `loadTasks`, `buildDependents`, `parseFrontmatter` for use as a module.

@@ -1,0 +1,8 @@
+Charter v0.2.0 written. Changes from v0.1.0:
+
+- **Tighter preamble** — cut from ~12 lines to 6, same content
+- **All 10 policies now represented** — Policy 007 (build then fill gaps) folded into Guideline 1, Policy 008 (prompts become artifacts) added as Preference 3, Policy 010 (match plan abstraction) added as Guideline 7
+- **Rules decouple from repo tooling** — addressed the self-critique that Rule 3 and Rule 4 were "file-management dressed as governance." Rule 4 is now "Claims Require Construction" (the principle, not the file format). Rule 3 stays about visible labor (always general), Rule 5 explicitly guards against tooling lock-in
+- **Each rule has a *Verify* line** — concrete test an agent can check
+- **164 lines**, under the 200 limit
+- **Kept known-gaps in frontmatter** — membership, dispute resolution, crew articles, dissolution still need future work

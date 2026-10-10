@@ -1,0 +1,7 @@
+Done. Summary:
+
+- **beancount 3.2.0** installed at `~/.local/bin/bean-check`
+- **fava 1.30.12** installed at `~/.local/bin/fava`
+- **hledger** not installed (needs sudo)
+- `bean-check` validates `main.beancount` — 3 warnings about unused pad entries, no real errors
+- Used `--break-system-packages --user` since no sudo means no pipx/venv. Worth migrating to pipx if sudo becomes available.

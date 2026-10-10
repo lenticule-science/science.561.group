@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://research-notes.561.group/hacking/library/predication-notes/composting/library/object/library/thing/library/system/library/operating-system/library/computer-operating-system/library/thing-directory-file/library/semantic-closure/semantic-closure.schema.json",
+  "title": "semantic-closure",
+  "description": "The semantic-integrity closure on a thing-directory-file's state-poset: every referenced concept resolves, every relation is reciprocated, every definition is self-standing.",
+  "type": "object",
+  "properties": {
+    "name": { "type": "string", "const": "semantic-closure" }
+  },
+  "required": ["name"]
+}

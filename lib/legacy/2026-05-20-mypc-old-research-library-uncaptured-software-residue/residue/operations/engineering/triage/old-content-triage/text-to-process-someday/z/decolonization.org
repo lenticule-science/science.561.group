@@ -1,0 +1,6 @@
+#+title: decolonization
+#+roam_alias: "decolonial"
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-20 Sun 09:31]
+*/Decolonization/* is the process of identifying and removing personal and systemic dependence on the [[file:contemporary_kyriarchy.org][contemporary-kyriarchy]].

@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://research-notes.561.group/hacking/library/predication-notes/composting/library/object/library/thing/library/system/library/operating-system/library/computer-operating-system/library/work-item/learning/answering/projecting-completion-date/projecting-completion-date.schema.json",
+  "title": "projecting-completion-date",
+  "description": "Projects a completion date for a target work-item based on the depends-on chain length and historical velocity from the jsonl history.",
+  "type": "object"
+}

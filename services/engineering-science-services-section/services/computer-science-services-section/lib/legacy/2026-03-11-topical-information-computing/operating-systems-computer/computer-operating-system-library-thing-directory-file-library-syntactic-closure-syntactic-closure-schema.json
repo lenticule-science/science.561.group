@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://research-notes.561.group/hacking/library/predication-notes/composting/library/object/library/thing/library/system/library/operating-system/library/computer-operating-system/library/thing-directory-file/library/syntactic-closure/syntactic-closure.schema.json",
+  "title": "syntactic-closure",
+  "description": "The syntactic-conformance closure on a thing-directory-file's state-poset: frontmatter is complete and well-typed, style is conformant, placement matches type, markdown links are syntactically valid, tags are well-formed.",
+  "type": "object",
+  "properties": {
+    "name": { "type": "string", "const": "syntactic-closure" }
+  },
+  "required": ["name"]
+}

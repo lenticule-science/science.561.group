@@ -1,0 +1,6 @@
+#+title: person
+#+roam_alias: "people"
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-18 Fri 10:20]
+A */person/* is an autonomous entity.

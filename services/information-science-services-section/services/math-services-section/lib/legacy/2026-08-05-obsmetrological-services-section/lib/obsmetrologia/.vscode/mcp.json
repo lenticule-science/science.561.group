@@ -1,0 +1,15 @@
+{
+  "servers": {
+    "obsmetrologia-lean-lsp": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "lean-lsp-mcp",
+        "--lean-project-path",
+        ".",
+        "--instructions",
+        "Obsmetrologia Lean proofing server. Use Lean LSP tools before shell/read/grep for Lean questions. The Lean package root is this package; LSP file paths are package-root-relative source paths such as Obsmetrologia/Primitive.lean."
+      ]
+    }
+  }
+}

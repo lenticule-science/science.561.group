@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://research-notes.561.group/hacking/library/predication-notes/composting/library/object/library/thing/library/system/library/operating-system/library/computer-operating-system/library/work-item/doing/working/claiming-a-work-item/claiming-a-work-item.schema.json",
+  "title": "claiming-a-work-item",
+  "description": "Asserts (target, claimed-by, <actor>) and transitions open to in-progress. The actor commits to executing the work.",
+  "type": "object",
+  "required": ["status"],
+  "properties": {
+    "status": {"type": "string", "enum": ["ok", "rejected"]}
+  }
+}
