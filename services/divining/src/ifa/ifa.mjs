@@ -124,4 +124,4 @@ export function castOpele(query) {
     compound: `${right.odu}${left.odu}`,
   });
 }
-import { mulberry32 } from "@red-cup-engineering/computer-data-services-section/randomization";
+import { mulberry32 } from "@red-cup-engineering/computer-data-engineering-services-section/randomization";

@@ -166,4 +166,4 @@ export function castShield(query) {
   const judge = xorFigures(rightWitness, leftWitness);
   return Object.freeze({ query, mothers, daughters, nieces, rightWitness, leftWitness, judge });
 }
-import { mulberry32 } from "@red-cup-engineering/computer-data-services-section/randomization";
+import { mulberry32 } from "@red-cup-engineering/computer-data-engineering-services-section/randomization";

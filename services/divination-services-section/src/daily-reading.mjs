@@ -1,7 +1,7 @@
 import { computeChart, signPlacement, aspectsInChart, lunationOf, BODIES } from "@lenticule-science/divining/astrology";
 import { lectionFor } from "@lenticule-science/divining/liturgy";
-import { typedListTerm } from "@red-cup-engineering/computer-data-services-section/semiotic-expression-notation/json-codec";
-import { inferTerm } from "@red-cup-engineering/computer-data-services-section/semiotic-expression-notation/typing";
+import { typedListTerm } from "@red-cup-engineering/computer-data-engineering-services-section/semiotic-expression-notation/json-codec";
+import { inferTerm } from "@red-cup-engineering/computer-data-engineering-services-section/semiotic-expression-notation/typing";
 
 // A daily reading is a SEN term over marks, pairs and array-encoded lists;
 // alternatives (an optional mark, a found or absent lection) are tagged pairs,
