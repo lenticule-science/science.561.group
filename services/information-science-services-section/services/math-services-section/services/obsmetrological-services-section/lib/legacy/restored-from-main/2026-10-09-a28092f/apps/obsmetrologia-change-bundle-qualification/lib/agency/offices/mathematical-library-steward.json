@@ -1,0 +1,26 @@
+{
+  "id": "mathematical-library-steward",
+  "name": "mathematical library steward",
+  "kind": "office",
+  "normative-structure": "Whether a proposed Obsmetrologia change is mathematical, corpus-grounded, honestly stated, and ready to offer across the library admission boundary is this office's own record.",
+  "deontic-profile": {
+    "ground-proposals-in-the-mathematical-corpus": "duty",
+    "produce-proof-and-axiom-evidence": "duty",
+    "keep-applications-outside-the-library": "duty",
+    "release-a-change-bundle": "deontic-power",
+    "resist-direct-write-demands": "deontic-immunity"
+  },
+  "authority-scope": [
+    "lib/",
+    "content/",
+    "data/"
+  ],
+  "jurisdiction": "oml",
+  "part-of": "obsmetrological-services-section",
+  "reports-to": [],
+  "founded": "2026-07-18",
+  "provides-skill": [
+    "research",
+    "check-enrichment-data"
+  ]
+}
