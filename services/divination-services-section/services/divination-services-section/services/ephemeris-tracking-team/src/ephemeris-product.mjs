@@ -16,7 +16,7 @@ import {
   motionOf,
   signPlacement,
 } from "@lenticule-science/divining/astrology";
-import { normalizeInstant } from "@lenticule-science/astronomy-services-section";
+import { normalizeInstant } from "@lenticule-science/astronomy-position-computation-service";
 export { normalizeInstant };
 
 export const EPHEMERIS_RANGE = Object.freeze({ minYear: 1800, maxYear: 2050 });

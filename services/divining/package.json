@@ -54,7 +54,7 @@
     "./src/divination/indicators.mjs": "./src/divination/indicators.mjs"
   },
   "dependencies": {
-    "@lenticule-science/astronomy-services-section": "workspace:*",
+    "@lenticule-science/astronomy-position-computation-service": "workspace:*",
     "@red-cup-engineering/signchain": "workspace:*",
     "@red-cup-engineering/signcell": "workspace:*",
     "@red-cup-engineering/computer-data-engineering-services-section": "workspace:*"

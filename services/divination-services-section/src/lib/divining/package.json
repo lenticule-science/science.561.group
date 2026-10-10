@@ -29,7 +29,7 @@
     "./divination/codecs/glyph": "./src/divination/codecs/glyph.mjs"
   },
   "dependencies": {
-    "@lenticule-science/astronomy-services-section": "workspace:*",
+    "@lenticule-science/astronomy-position-computation-service": "workspace:*",
     "@red-cup-engineering/metrologic": "workspace:*",
     "@red-cup-engineering/computer-code-engineering-services-section": "workspace:*",
     "@red-cup-engineering/computer-data-engineering-services-section": "workspace:*",
