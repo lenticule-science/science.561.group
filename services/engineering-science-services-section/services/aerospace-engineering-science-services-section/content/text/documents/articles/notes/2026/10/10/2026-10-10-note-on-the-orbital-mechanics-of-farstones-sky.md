@@ -11,7 +11,10 @@ provenance:
   serves:
     - lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-game-system-services-section/content/requirements/farstone-orbital-flight-game-beyond-kerbal-space-program.json
     - ../../../../../../requirements/farstone-orbital-mechanics-research.json
-  engineering: lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-game-system-services-section/services/computer-mud-engineering-services-section/content/text/documents/articles/specifications/2026-10-10-specification-farstone-orbital-flight.md
+  engineering: lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-game-system-services-section/services/computer-mud-engineering-services-section/content/text/documents/articles/specifications/2026-10-10-specification-of-farstone-orbital-flight.md
+  siblings:
+    - astronomy-services-section notes/2026/10/10/2026-10-10-note-on-patched-conics-and-n-body-gravitation-for-a-shared-spaceflight-world.md
+    - physics-services-section notes/2026/10/10/2026-10-10-note-on-integrators-coordinates-and-joints-for-a-spaceflight-game.md
 ---
 
 The Leader asked for a Kerbal Space Program-like game in Farstone that uses "everything the
@@ -42,7 +45,7 @@ definition; this note is about its use.
 
 ## The Group's own results in use
 
-The engineering specification names them: Obsmetrologia Book VIII (segments of flight as causal
+The engineering specification (`2026-10-10-specification-of-farstone-orbital-flight.md`, computer-mud-engineering) names them, with their proof status: Obsmetrologia Book VIII (segments of flight as causal
 diamonds ordered by sequencing; visibility and communication as kinematic regions); merge
 cohomology (two laws at one vessel and epoch are a seam, H¹, never silently resolved); and the
 body-bar rigidity sheaf for the vehicle's structure. The relationality idea note
@@ -59,7 +62,7 @@ body-bar rigidity sheaf for the vehicle's structure. The relationality idea note
    is 21,549.425 s (174.94 m/s at the equator). Built in Holofoam the same day: early in the ascent the
    gravity turn must steer by velocity relative to the turning ground (v − ω × r), or inertial
    prograde, mostly the ground's own eastward motion, pitches the rocket into the surface.
-3. **How wrong patched conics are.** Measure, for Holofoam's default sky, the position error of a
-   patched-conic Moon transfer against a direct n-body integration of the same initial state, as
-   a function of flight time. That bounds where Farstone can trust its sky and where a richer law
-   (an n-body segment kind) is needed.
+3. **How wrong patched conics are** is the astronomy section's question, answered in its note of
+   the same day (patched conics against n-body gravitation for a shared spaceflight world), and
+   the integrators are the physics section's (its note on integrators, coordinates and joints).
+   This section keeps what is aerospace: the atmosphere, the rocket and the launch.

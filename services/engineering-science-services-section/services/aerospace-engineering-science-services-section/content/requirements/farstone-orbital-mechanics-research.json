@@ -12,12 +12,6 @@
       "expected-exit": 0
     },
     {
-      "cell": "farstone-orbital-mechanics-research:patched-conic-error",
-      "target": "held",
-      "command": "sh -c 'ls lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-simulation-system-services-section/apps/holofoam/test/*n-body* >/dev/null 2>&1 && cd lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-simulation-system-services-section/apps/holofoam && node --test test/*n-body*'",
-      "expected-exit": 0
-    },
-    {
       "cell": "farstone-orbital-mechanics-research:atmosphere-law",
       "target": "held",
       "command": "sh -c 'grep -l -i \"drag\" lib/emsenn/services/561-group/services/science-services-section/services/engineering-science-services-section/services/aerospace-engineering-science-services-section/content/text/documents/articles/notes/*/*/*/*atmosphere*.md'",
@@ -35,11 +29,6 @@
         "id": "R1",
         "says": "The aerospace section shall hold the orbital mechanics and rocketry Farstone's flight uses, naming classical and Group results apart.",
         "moscow": "must"
-      },
-      {
-        "id": "R2",
-        "says": "The section shall measure the error of patched conics against n-body integration for Holofoam's default sky.",
-        "moscow": "should"
       },
       {
         "id": "R3",
@@ -65,6 +54,7 @@
       "farstone-ksp-atmosphere-and-drag",
       "farstone-ksp-planet-rotation"
     ],
-    "conversion": "pending: signcell predication cell"
+    "conversion": "pending: signcell predication cell",
+    "owned-elsewhere": "The error of patched conics against n-body gravitation is the astronomy section's (its 2026-10-10 note) and the capabilities requirement's F6; it is not repeated here."
   }
 }
