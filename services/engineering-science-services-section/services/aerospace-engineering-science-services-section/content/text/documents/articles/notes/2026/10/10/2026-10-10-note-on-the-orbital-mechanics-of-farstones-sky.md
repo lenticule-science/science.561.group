@@ -56,7 +56,9 @@ body-bar rigidity sheaf for the vehicle's structure. The relationality idea note
    written as a dissipative flow in the relational-physics sense (`relational-physics-sim.md`),
    rather than added as a force term.
 2. **Rotation.** A body's sidereal period gives the launch site's surface velocity ω × r. Kerbin's
-   is 21,549.425 s (174.94 m/s at the equator).
+   is 21,549.425 s (174.94 m/s at the equator). Built in Holofoam the same day: early in the ascent the
+   gravity turn must steer by velocity relative to the turning ground (v − ω × r), or inertial
+   prograde, mostly the ground's own eastward motion, pitches the rocket into the surface.
 3. **How wrong patched conics are.** Measure, for Holofoam's default sky, the position error of a
    patched-conic Moon transfer against a direct n-body integration of the same initial state, as
    a function of flight time. That bounds where Farstone can trust its sky and where a richer law
