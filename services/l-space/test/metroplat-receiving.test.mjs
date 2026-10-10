@@ -234,6 +234,7 @@ test('missing corpus refuses before scanning and an empty real directory cannot 
     await assert.rejects(() => receiveDeclaredDocument(fixture),
       error => error.code === 'LSPACE_CORPUS_SECTION_UNAVAILABLE' && error.section === fixture.source.declaration.sciencePrefix);
     await assert.rejects(() => fixture.call('fetch', { id: fixture.source.declaration.canonicalPath }),
-      error => error instanceof RangeError && error.reason === 'not-found');
+      error => error.code === 'LSPACE_CORPUS_SECTION_UNAVAILABLE' && error.section === fixture.source.declaration.sciencePrefix,
+      'repeated fetch must fail closed at missing section after first search fails');
   });
 });
