@@ -25,16 +25,12 @@
   "dependencies": {
     "@lenticule-science/astronomy-services-section": "workspace:*",
     "@lenticule-science/divining": "workspace:*",
-    "@red-cup-engineering/a2a-services-section": "workspace:*",
     "@red-cup-engineering/computer-code-engineering-services-section": "workspace:*",
     "@red-cup-engineering/semiotic-eavt-services-section": "workspace:*",
     "@red-cup-engineering/computer-web-server": "workspace:*",
-    "@red-cup-engineering/json-schema-services-section": "workspace:*",
     "@red-cup-engineering/computer-inference-engine": "workspace:*",
     "@red-cup-engineering/activitypub-services-section": "workspace:*",
     "@red-cup-engineering/computer-content-engineering-services-section": "workspace:*",
-    "@red-cup-engineering/signcell": "workspace:*",
-    "@red-cup-engineering/signchain": "workspace:*",
     "@red-cup-engineering/computer-data-engineering-services-section": "workspace:*"
   },
   "keywords": [
