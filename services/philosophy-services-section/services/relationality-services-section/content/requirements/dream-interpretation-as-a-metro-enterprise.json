@@ -29,6 +29,10 @@
     "coverage": "lib/emsenn/services/561-group/services/public-services-section/services/personal-services-section/services/emsenn-services-section/data/records/leader-utterances/coverage/executive-office-ideas-2026-07.md",
     "idea-record-fields": {
       "prompted-by": "emsenn/idea/metro-enterprises-are-induced-not-constituted"
+    },
+    "sign-cell": {
+      "type": "emsenn/schema/requirement",
+      "mark": "ni:///sha-256;C_IEDerCCm-PfvTL9MGhhpBFq8t2V7zWPtELhY5j6ro"
     }
   }
 }
