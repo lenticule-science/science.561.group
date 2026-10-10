@@ -25,6 +25,7 @@ Theory notes and glossary for the Tidepool protocol (master specification 2026-1
 - Goal: `2026-10-09-note-on-the-pool-as-a-viable-system.md`: the VSM map in spec §7 (S1–S5, S3\*, the algedonic channel) with Beer's definitions cited from the `cybernetic-planning` record, Cybersyn's opsroom as the public face's ancestor, the ship rule (interpretive load) as the S5 criterion, and what a pool loses if any system is missing.
 - Acceptance: cites the `cybernetic-planning` record; each VSM system names the contract that realizes it.
 - Depends: TP-SCI-001.
+- Status: done (2026-10-08); note `2026-10-08-note-on-the-pool-as-a-viable-system`.
 
 ### TP-SCI-005 Energy commons and EROEI-scored allocation
 - Goal: `2026-10-09-note-on-the-energy-commons.md` written with the solar-economics section: the net-energy-positive assets a float may finance (heat pump, insulation, rooftop PV, stove efficiency) with the EROEI boundary each needs stated (solar-economics' `energy-storage-return-on-investment`, `energy-cannibalism`, `net-metering` terms), kWh repayment as attested savings, the EROEI-scored allocation weight, and the measurement the energy-descent note's §3.10 asks for (joules per settled row) as this instrument's own unit.
@@ -35,6 +36,7 @@ Theory notes and glossary for the Tidepool protocol (master specification 2026-1
 - Goal: `2026-10-10-note-on-interpretive-load-per-settled-row.md`: a measurement design for the ship rule (what a member must parse to use each instrument; a count of distinct questions a member must answer before and after a cycle; the comparison to the incumbents' fee schedules and dispute flows), with the sociology section's criterion quoted and the prediction that a californicated instrument raises the count.
 - Acceptance: a measurable procedure a later operations task can run; cites the cybernetic-postliberalism overview.
 - Depends: TP-SCI-004.
+- Status: done (2026-10-08); note `2026-10-08-note-on-interpretive-load-per-settled-row`.
 
 ### TP-SCI-007 Mutual credit, clearing and demurrage
 - Goal: `2026-10-10-note-on-clearing-and-demurrage-for-a-pool.md`: Sardex, WIR, Cycles/MTCS and the bancor plan as prior art for B1; Wörgl and Circles as prior art for B3's demurrage on idle float and persistent credit (never on holdings); the open question of what rate; the statement of `Netting.clear_conserves_net` and `Demurrage.step_conserves`.
