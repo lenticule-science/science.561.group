@@ -15,7 +15,6 @@ bound-by-rules:
   - no-whole-tree-scans-on-bare-cedar-fog
   - group-material-on-bare-cedar-fog-lives-under-info
   - no-harness-private-memory
-models: the model and effort the allocation's staffing names; this skill does not choose one
 fuel-cap:
   turns: 80
   tokens: 600000
