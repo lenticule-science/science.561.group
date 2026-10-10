@@ -91,7 +91,7 @@ that ordinary URL is actually served and independently received.
 
 L-Space is deployed as a dependency/companion of:
 
-`@561-group/bare-cedar-fog-host-deployment`
+`@561-group/bare-cedar-fog-services-section`
 
 The host release, not an L-Space-local shell command, decides which committed
 source revision is live. Source merge, host release, process readiness and public

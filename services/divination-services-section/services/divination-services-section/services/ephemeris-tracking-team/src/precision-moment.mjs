@@ -5,7 +5,7 @@ import {
   computePrecisionAstronomyPositions,
   executeOxiEphemeris,
   normalizePrecisionAstronomyRequest,
-} from "@lenticule-science/astronomy-services-section/node";
+} from "@lenticule-science/astronomy-position-computation-service/node";
 
 const HOUSE_SYSTEMS = new Set(["placidus", "koch", "whole-sign", "equal", "porphyry", "regiomontanus", "campanus"]);
 const SIDEREAL_MODES = new Set(["fagan-bradley", "lahiri", "krishnamurti", "raman"]);

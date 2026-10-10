@@ -41,7 +41,7 @@ export const ZODIAC_SIGNS = Object.freeze(
 );
 
 /** Fold any degree value onto the circle: the representative in [0, 360). */
-import { normalizeDegrees, signedArc } from "@lenticule-science/astronomy-services-section";
+import { normalizeDegrees, signedArc } from "@lenticule-science/astronomy-position-computation-service";
 export { normalizeDegrees, signedArc };
 
 /**

@@ -22,7 +22,7 @@ export {
 
   J2000, julianDayFromIso, isoFromJulianDay, deltaTSeconds, terrestrialJulianDay, julianCenturies,
   EPHEMERIS_PROVENANCE, computeChart, bodyLongitude, findStations, findExactAspects, findLunationQuarters,
-} from "@lenticule-science/astronomy-services-section";
+} from "@lenticule-science/astronomy-position-computation-service";
 
 export {
   ASPECTS,
