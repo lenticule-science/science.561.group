@@ -8,7 +8,11 @@ derives-from:
   - "[[existing]]"
 title: Deriving the Domain of Relating
 description: This conditioning field cannot be passive or inert; it must be actively constituted through acts that position existing things relative to one another.
+status: superseded
+superseded-by: ../../../../../../services/relationality-services-section/content/text/documents/articles/notes/2026/10/10/2026-10-10-note-on-one-theory-in-three-registers.md
 ---
+
+> **Superseded (2026-10-10).** This derivation treats "unrelating" as an act opposite to relating (`¬r := unrelating`). The Leader corrected this on 2026-09-27 (utterances `ni:///sha-256;ymyix5PqaVjJwIrWVZSbjcTCtLhar15aqyh7sfagaVM`, `ni:///sha-256;Szo5k4M_lr5N1zW9U9T9oaQXjhtRMZjX6Q_k2jcJAlI`): there is no unrelating. The note is kept as a record of the contamination, not as theory; the theory is stated in the relationality note of 2026-10-10, *One theory in three registers*.
 
 - [[summary]]:: From the foundational assertion that [[existing]] necessarily entails **differentiated existence,** it must be derived that [[zeds/Relationality/triage/00-probably-redundant/modules/relating]] is the essential act that generates and structures the field of relation. Relating is not an optional feature but the **mandatory mechanism** by which **positional difference** is constituted. From this generative necessity, it must further be derived that [[unrelating]] exists as its **complementary act,** and that together they induce a minimal [[ternary relational structure]]. Through recursive application of [[reflex]], a sequence of progressively deeper relational structures must arise, extending both **relational depth** and **ordered breadth.**
 
