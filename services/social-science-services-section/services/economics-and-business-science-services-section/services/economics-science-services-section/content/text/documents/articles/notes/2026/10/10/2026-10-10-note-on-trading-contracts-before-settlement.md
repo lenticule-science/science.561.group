@@ -42,9 +42,36 @@ provenance:
 - Bürgi, Deng and Whelan, "Makers and Takers: The Economics of the Kalshi Prediction Market" (CESifo working paper, 2026): the spread arises from matching makers with takers; Kalshi prices are informative and sharpen near close; a favourite-longshot bias is present. https://www.ifo.de/en/cesifo/publications/2026/working-paper/makers-and-takers-economics-kalshi-prediction-market. Read from the abstract only.
 - The Group's 2026-07-18 note on event-contract arbitrage records fee formulas and cross-venue spread windows for Kalshi and Polymarket US (`561-group-services-section/content/text/documents/articles/notes/2026/07/18/2026-07-18-note-on-event-contract-arbitrage-enterprise-planning.md`).
 
+## What the Group has measured on Kalshi
+
+Sources: the research records and pull requests 23-53 of `red-cup-engineering/kalshi-engineering-services-section`, and the desk's ledger on Cold Red Gate. EV is per contract after fees.
+
+**Edges that hold**
+
+- **Outcomes already decided by observation.** Of 430 brackets the station observations ruled out over 240 settled events (48 series, 2026-10-02..06), none settled YES; rounding the observed extreme instead of using its precise bound would have made 21 errors. The edge is time: a decided bracket still priced 2-80c lasts about two minutes, and METAR read from tgftp arrives about 2.5 minutes after the reading against 15-35 minutes for api.weather.gov. The desk's live record on this lane and the tail lane: 5 won, 0 lost, USD +1.63.
+- **The rain market's favourite-longshot bias.** Taking NO where the mid is 10c or less returned +0.9% to +3.0% of cost; taking YES where the mid is 80c or more returned +0.9% to +4.9%; both are positive in each half of 2,798 rows over 68 dates. Mid-range rain contracts (10-60c) lose after fees. Pooling a weather model with the market adds nothing significant: the edge is the market's own bias.
+- **Far temperature tails.** Highs: 0 of 150 settled YES in sample, 0 of 272 out of sample; lows: 1 of 253, then 0 of 195. Resting sells earn +2.6 to +3.6c, taking +1.0 to +1.2c. Counted by settlement day the out-of-sample record is 0 of 32 days, a 95% upper bound of about 8.9%.
+
+**Leads not yet tested forward**
+
+- Jobless-claims thresholds resolve YES 10-18 points less often than priced (t = -4.4 and -2.8); forward test C1.
+- Deep-terminal favourites; forward test DT.
+- The parlay premium rises with flex width (+4.8c wide, +1.0c narrow); forward test F1.
+- KXWTI daily: +9c, 95% interval [+3.9, +14.8].
+- GDP against GDPNow: +8 to +12c, on four releases a year.
+- Kalshi soccer favourites priced 3-5c above DraftKings.
+
+**No edge after costs**
+
+Late favourites (-1.16c ± 0.57 out of sample; the in-sample gain was a look-ahead artefact); sports favourites at 90-98c (+0.7c, interval [-0.65, +2.1]); crypto combos (killed out of sample); combo maker pricing; coherence and Dutch books (one pathwise basket clears fees, for USD 0.09); cross-venue arbitrage; liquidity-incentive and maker programs (USD -2.1 per market-day net of adverse selection); live mention markets at agent latency; earnings mentions (-3.2c); price-trajectory round trips (none of about 2,450 measured cells survives costs); resting bids on published-series favourites (0 of 33 filled); an LLM forecaster (worse than the market); weather-conditioned sports totals in a calm season.
+
+**The house's temperature models** score 0.03-0.10 worse than the market mid on pooled Brier over 3-4 dates, and none is admitted.
+
+**Capacity.** Taking every weather edge yields about USD 9-13 a day on a USD 1,000 bankroll and USD 0.24-0.38 on USD 25. Contracts on observation-decided brackets trade about 1.2 million a day, mostly at 1c, which is far more than the account's capital.
+
 ## What remains open
 
-- Whether the price-movement strategy clears a round trip of taker fees plus spread on any Kalshi market class is untested; the experiment in item 8 decides it.
-- Whether favourite-longshot bias and the overbet-YES surplus are exploitable by a small account at USD 25 scale is not known.
+- Whether a price-movement strategy on live game state (item 8) clears a round trip of taker fees plus spread.
+- Why the house's temperature models lose to the market mid: weak models, or a systematic error such as bias, rounding or the climate-day boundary.
 - Which Obsmetrologia result measures coordination and conflict among the market's participants in the belief-trajectory setting is not yet named.
 - The Leader's phrase "Sports Prop Combo" refers to text the Leader pasted from another AI (not in the utterance record); its content is not held.
