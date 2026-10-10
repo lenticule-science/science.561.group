@@ -1,0 +1,9 @@
+Session reaping is working. It reaped 9 dead sessions and now only shows completed/failed sessions with their correct final state.
+
+The fix was already implemented by the earlier officer:
+
+- **`reap_dead_sessions`** in `manager.rs:55-89` — checks exitcode files and PID liveness via `libc::kill(pid, 0)`
+- **`mash-engine sessions`** in `main.rs:86-87` — calls `reap_dead_sessions` before listing
+- **`mash-engine status`** in `main.rs:109` — also reaps before overview
+
+Just rebuilt and reinstalled. The 9 stale "running" sessions were correctly reaped on first invocation.

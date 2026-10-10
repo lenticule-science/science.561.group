@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://research-notes.561.group/hacking/library/predication-notes/composting/library/object/library/thing/library/system/library/operating-system/library/computer-operating-system/library/consensus/consensus.schema.json",
+  "title": "Consensus",
+  "description": "JSON Schema for a consensus record: the cellwise ∨_k-join of multiple proposals on a shared target, settled when proposals agree and refusing when they contradict.",
+  "type": "object",
+  "required": ["combines-proposals", "for-target", "has-state"],
+  "additionalProperties": true,
+  "properties": {
+    "combines-proposals": {
+      "type": "array",
+      "items": {"type": "string"},
+      "description": "References to the proposal records being combined."
+    },
+    "for-target": {
+      "type": "string",
+      "description": "Reference to the shared target the proposals address."
+    },
+    "has-state": {
+      "type": "string",
+      "enum": ["settled", "refuses-to-settle", "in-flight"]
+    },
+    "settled-value": {
+      "description": "The consensus value when state = settled. Shape depends on the target."
+    },
+    "refusal-reason": {
+      "type": "array",
+      "items": {"type": "string"},
+      "description": "Identifiers of proposals whose contradiction produced the refusal."
+    },
+    "combiner": {
+      "type": "string",
+      "description": "Reference to the closure-rule that produced this consensus."
+    },
+    "at-time": {"type": "string", "format": "date-time"}
+  }
+}

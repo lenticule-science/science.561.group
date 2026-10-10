@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://research-notes.561.group/hacking/library/code/transformers/writing.schema.json",
+  "title": "writing-transformer-contract",
+  "description": "The contract every writing-<noun> skill inherits: its run function's args shape (the write-spec, per code/transformers/writing.md's stated domain) and its return shape (the witness, per the stated codomain). The `input` and `output` sub-schemas are the per-skill contract the MCP harness compiles and enforces at invocation time.",
+  "input": {
+    "type": "object",
+    "properties": {
+      "path": {
+        "type": "string",
+        "minLength": 1,
+        "description": "The address being written to: absolute, or relative to repo_root."
+      },
+      "content": {
+        "type": "string",
+        "description": "The bytes to write. Validity of the bytes as a typed instance of the named noun (e.g. a resource-file) is a post-write lint concern, not an input-gate concern."
+      },
+      "if_exists": {
+        "enum": ["error", "overwrite", "skip"],
+        "default": "error",
+        "description": "Disposition when the target file already exists."
+      },
+      "repo_root": {
+        "type": "string",
+        "description": "Repository root used to resolve relative paths. Defaults to CWD."
+      }
+    },
+    "required": ["path", "content"]
+  },
+  "output": {
+    "type": "object",
+    "properties": {
+      "path": {
+        "type": "string",
+        "description": "Absolute path of the written file."
+      },
+      "created": {
+        "type": "boolean",
+        "description": "True iff the file did not exist before this call."
+      },
+      "skipped": {
+        "type": "boolean",
+        "description": "True iff if_exists=skip and the file pre-existed; in that case bytes_written is zero."
+      },
+      "bytes_written": {
+        "type": "integer",
+        "minimum": 0,
+        "description": "Byte count written. Zero on skip."
+      }
+    },
+    "required": ["path", "created", "skipped", "bytes_written"]
+  }
+}

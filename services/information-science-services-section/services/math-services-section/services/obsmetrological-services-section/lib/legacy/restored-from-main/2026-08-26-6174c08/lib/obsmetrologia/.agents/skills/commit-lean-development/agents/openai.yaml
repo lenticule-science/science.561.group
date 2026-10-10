@@ -1,0 +1,4 @@
+interface:
+  display_name: "Commit Lean Development"
+  short_description: "Keep proof changes coherent and recoverable"
+  default_prompt: "Use $commit-lean-development to prepare and publish one coherent Obsmetrologia proof change."

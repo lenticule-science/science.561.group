@@ -1,0 +1,11 @@
+All five commands installed (56 total, up from 51). Here's what's now available:
+
+| Command | What it does |
+|---------|-------------|
+| `/balance` | Trial balance + today's transactions — quick accounting view |
+| `/crew` | Running/completed/failed sessions with crew language |
+| `/dispatch-batch [N]` | Auto-dispatch top N ready tasks to duty officers (default 3) |
+| `/validate [--fix]` | Entity validation + plan consistency — record health check |
+| `/partition [--beta N]` | Partition function Z(β) — where value sits across depth levels |
+
+Each wraps the existing tools (`query-events.js`, `finance-report.js`, `dispatch-work.js`, `validate-entity.js`, `verify-plan-consistency.js`) and follows the same markdown command pattern as `bridge.md` and `fleet.md`.

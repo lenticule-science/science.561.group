@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://research-notes.561.group/hacking/library/predication-notes/composting/library/object/library/thing/library/system/library/operating-system/library/computer-operating-system/library/session/library/turn/doing/working/logging-a-turn/logging-a-turn-in-a-session/logging-a-turn-in-a-session.schema.json",
+  "title": "Logging-a-turn-in-a-session (transformer)",
+  "description": "Specializes logging-a-turn by resolving the target jsonl from a session-id. Input replaces target-jsonl with session-id; the transformer computes the target path internally.",
+  "allOf": [{ "$ref": "https://research-notes.561.group/hacking/library/predication-notes/object/library/thing/library/system/library/operating-system/library/computer-operating-system/library/session/library/turn/doing/working/logging-a-turn/logging-a-turn.schema.json" }],
+  "type": "object",
+  "properties": {
+    "input": {
+      "type": "object",
+      "required": ["session-id", "value"],
+      "properties": {
+        "session-id": {
+          "description": "The session-id naming the session whose jsonl is the append target.",
+          "$ref": "https://research-notes.561.group/hacking/library/predication-notes/identifier/library/name/name.schema.json"
+        }
+      }
+    }
+  }
+}

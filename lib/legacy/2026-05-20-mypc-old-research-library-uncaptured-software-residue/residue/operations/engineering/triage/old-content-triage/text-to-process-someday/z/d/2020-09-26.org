@@ -1,0 +1,25 @@
+#+title: 2020-09-26
+#+ghe_schema: daily-record-0.1.1
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-09-26 Sat 09:09]
+#+roam_tags: daily-record
+
+#+name: definition
+This is some of what I (emsenn) experienced and wrote on on [2020-09-26 Sat].
+
+#+toc: headlines 2
+
+* News log
+** Essay about the "language famine" in Africa
+   :LOGBOOK:
+   - Note taken on [2021-01-06 Wed 11:52] \\
+     This is a lovely write-up from [[file:../rasna_warah.org][Rasna Warah]] about the effects of [[file:../colonization.org][colonization]] on [[file:../africa.org][Africa]], specifically its many [[file:../language.org][languages]]. What the author refers to here as "language famine," I've heard elsewhere called [[file:../language_apartheid.org][language apartheid]], in recognition of the [[file:../human.org][human]] [[file:../labor.org][labor]] it takes to maintain such a "famine."
+
+     The piece touches on the pressures of [[file:../assimilation.org][assimilation]], the mis-[[file:../perception.org][perception]] of those pressures, and their place in [[file:../kyriarchy.org][kyriarchist]] [[file:../violence.org][violence]].
+
+     #+begin_quote
+     [[[file:../ngugi_wa_thiong_o.org][Ngũgi wa Thiong’o]]] believes that when you erase a people’s language, you erase their [[file:../memory.org][memories]]. And people without memories are rudderless, unconnected to their own [[file:../history.org][histories]] and [[file:../culture.org][culture]], mimics who have placed their memories in a “psychic tomb” in the mistaken belief that if they master [[file:../colonial.org][their colonizer]]’s language, they will own it. Because erasure of memory and culture is a condition for successful assimilation, the burial of [[file:../african_languages.org][African languages]] by Africans themselves has ensured their total immersion into colonial culture. He calls this phenomenon a “[[file:../death_wish.org][death wish]]” that occurs in [[file:../society.org][societies]] that have never fully acknowledged their loss - like [[file:../trauma.org][trauma]] victims who resort to [[file:../drug.org][drugs]] to kill the [[file:../pain.org][pain]].
+     #+end_quote
+   :END:
+   - Source :: https://africasacountry.com/2020/09/black-sahibs-decolonizing-language

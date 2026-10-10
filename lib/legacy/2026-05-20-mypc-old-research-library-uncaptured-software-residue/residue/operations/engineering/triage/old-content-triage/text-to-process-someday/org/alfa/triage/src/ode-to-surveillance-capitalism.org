@@ -1,0 +1,46 @@
+#+SETUPFILE: ./default-setup.inc
+#+TITLE: Ode to Surveillance Capitalism
+#+ALT_TITLE: /Ode to Surveillance Capitalism/
+#+EXPORT_FILE_NAME: ../pub/ode-to-surveillance-capitalism
+#+DATE: 2016-04-28
+#+MACRO: document-type poem
+#+INDEX: surveillance capitalism!/Ode to Surveillance Capitalism/
+#+INDEX: post-modernism!/Ode to Surveillance Capitalism/
+* Introduction
+In this {{{document-type}}}, I playfully discuss the prevalance of
+personal data collection and resale among social media websites.
+#+INCLUDE: "./plates.inc::default-eli"
+#+INCLUDE: "./plates.inc::contemporary"
+* Ode to Surveillance Capitalism
+#+BEGIN_VERSE
+Roses are red,
+violets are blue.
+In the post-modern world,
+the poems read you.
+
+Do you want ads
+for fresh-fruit bouquets?
+Or to have misconstrued
+things your opponents say?
+
+Twitter doesn't care
+if privacy is harmed.
+It's quite profitable
+for your data to be farmed.
+
+Reddit is orange,
+Facebook is blue.
+Your friends are the product,
+and so are you.
+#+END_VERSE
+* Supplements
+** Contribute
+   :PROPERTIES:
+   :CUSTOM_ID: supplements-contribute
+   :END:
+#+INCLUDE: "./plates.inc::personal-contribute"
+** License
+   :PROPERTIES:
+   :CUSTOM_ID: supplements-license
+   :END:
+#+INCLUDE: "./plates.inc::mit-license"

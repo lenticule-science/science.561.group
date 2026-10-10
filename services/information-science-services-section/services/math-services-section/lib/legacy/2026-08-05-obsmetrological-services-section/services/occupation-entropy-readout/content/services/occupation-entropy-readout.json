@@ -1,0 +1,26 @@
+{
+  "id": "occupation-entropy-readout",
+  "provider": "occupation-entropy-readout",
+  "serviceLevel": "union",
+  "status": "available-local-and-a2a-network-boundaries",
+  "operations": [
+    "occupation-entropy readout over the signed A2A face",
+    "signed agent-card discovery",
+    "compute-boltzmann-occupation-entropy over signed A2A 1.0 (JSONRPC and HTTP+JSON), local face 127.0.0.1:8812 and public face https://bare-cedar-fog.561.group/a2a/occupation-entropy-readout"
+  ],
+  "accepts": "a non-empty array of non-negative safe-integer occupation counts, one per cell",
+  "returns": "cell count, total object count N, configH (Σ log2(n_i!)), entropyBits (log2(N!) − configH), source attestation, evidence qualification, and locally measured resource use. The solicited offer's terms carry an explicit resource-price declaration naming which of the six canonical resource dimensions (asset, compute, erasure, gas, time, wit) are charged and how each is measured; compute (cpu-microseconds via process.cpuUsage) and time (seconds via process.hrtime) are priced by measurement method only, and asset/erasure/gas/wit are not priced. The completion readout reports the actual measured vector for that execution alongside the quoted terms, so quoted-vs-actual is auditable. No cash price or x402 settlement is created.",
+  "refusal": [
+    "malformed A2A request",
+    "non-array, empty, negative, non-integer, or non-finite occupation input",
+    "admitted Obsmetrologia source digest drift",
+    "request for a formal extraction or proof of implementation equivalence",
+    "request for cross-settlement mutation or unsettled pricing authority"
+  ],
+  "notImplemented": [
+    "ActivityStreams contract boundary",
+    "x402 receipt settlement",
+    "public-network deployment",
+    "formally verified extraction from Lean"
+  ]
+}

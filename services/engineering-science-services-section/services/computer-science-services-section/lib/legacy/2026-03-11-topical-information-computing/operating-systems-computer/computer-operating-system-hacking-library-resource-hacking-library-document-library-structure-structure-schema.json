@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://research-notes.561.group/hacking/library/code/structures/library/document/structure.schema.json",
+  "title": "structure-observation",
+  "description": "Per-role observation schema for a structure record at code/structures/<slug>.md. Frontmatter MUST carry name (the structure's name as content) and description. The structure spec §7.1 mentions `category` but the corpus does not carry it as a frontmatter cell, and emsenn has confirmed it is neither required nor suggested. Cell-graph signature and invariant conformance is out of band for a flat-file schema and stays out of scope.",
+  "type": "object",
+  "required": ["roleClass", "frontmatter"],
+  "properties": {
+    "roleClass": { "const": "structure" },
+    "frontmatter": {
+      "type": "object",
+      "required": ["name", "description"],
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Structure name as content. The filename slug is the address (enforced by the resource-slug check in the envelope's check manifest); the content name may be human-readable with spaces."
+        },
+        "description": { "type": "string", "minLength": 1 }
+      }
+    }
+  }
+}

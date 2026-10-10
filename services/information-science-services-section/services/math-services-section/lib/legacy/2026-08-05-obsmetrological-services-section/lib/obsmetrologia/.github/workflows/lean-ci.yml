@@ -1,0 +1,78 @@
+name: Lean CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: lean-ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  lean-local-verification:
+    name: Lean build and checknames
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Set up Node for CI reporting
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24
+
+      - name: Set up Lean project
+        uses: leanprover/lean-action@v1
+        with:
+          auto-config: false
+          lake-package-directory: .
+          use-mathlib-cache: false
+
+      - name: Run Lean build and checknames with failure summary
+        run: node scripts/ci-report.mjs --name "Lean build and checknames" -- make check
+
+  packaging-audit:
+    name: Package structure audit
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Set up Node for project audits
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24
+
+      - name: Run packaging audit with failure summary
+        run: node scripts/ci-report.mjs --name "Package structure audit" -- node scripts/audit-obsmetrologia-packaging.mjs --fail
+
+  frontier-trust-audit:
+    name: Frontier trust audit
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Set up Node for project audits
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24
+
+      - name: Run frontier trust audit with failure summary
+        run: node scripts/ci-report.mjs --name "Frontier trust audit" -- node scripts/audit-lean-frontier.mjs --fail-on-trust
+
+      - name: Add frontier audit to job summary
+        if: always()
+        run: |
+          if [ -f sites/docs/coverage/lean-frontier-audit.md ]; then
+            cat sites/docs/coverage/lean-frontier-audit.md >> "$GITHUB_STEP_SUMMARY"
+          fi

@@ -1,0 +1,19 @@
+#+title: 2020-10-23
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-10-23 Fri 09:32]
+#+roam_tags: daily-record
+
+#+name: ${slug}-definition
+This is some of what I ({{{author}}}) experienced, read, and wrote on on [2020-10-23 Fri].
+
+#+toc: headlines 2
+
+** Camp Mniluzahan moves onto Lakota lands
+   :LOGBOOK:
+   - Note taken on [2021-01-09 Sat 10:12] \\
+     After the [[file:../police.org][police]] in [[file:../rapid-city-south-dakota-u-s-a.org][Rapid City, South Dakota, U.S.A.]] ordered [[file:../creek-patrol.org][Creek Patrol]] take down the [[file:../tipi.org][tipis]] at [[file:../camp-mniluzahan.org][Camp Mniluzahan]], the camp relocated onto forested lands owned by the [[file:../oglala-lakota.org][Oglala]], [[file:../rosebud_reservation.org][Rosebud]], and [[file:../cheyenne-river-sioux.org][Cheyenne River Sioux]] tribes.
+     
+     It's worth noting the [[file:../website.org][Website]] for the camp, [[https://www.campmniluzahan.org/][https://www.campmniluzahan.org/]], the term [[file:../landback.org][LandBack]] is used heavily.
+   :END:
+   - Source :: https://rapidcityjournal.com/news/local/mniluzahan-winter-camp-set-up-on-tribal-land-near-west-rapid-city/article_929b2a8f-d7a9-5276-9040-09442bf595c2.html

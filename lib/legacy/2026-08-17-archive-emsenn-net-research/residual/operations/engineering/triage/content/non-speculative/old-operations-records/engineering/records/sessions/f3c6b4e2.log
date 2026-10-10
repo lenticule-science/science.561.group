@@ -1,0 +1,12 @@
+There's a stale `.git/index.lock` file blocking the commit. Can you remove it? Run:
+
+```bash
+rm .git/index.lock
+```
+
+Then I can proceed with the commit. The two files are ready:
+
+- **`operations/engineering/fars/agentic/tools/changelog.js`** — reads events.jsonl + git log, groups by category (tasks completed, plans completed, content written, errors, sessions, etc.), supports `--since` and `--json`
+- **`operations/engineering/fars/agentic/commands/changelog.md`** — `/changelog` command that runs the tool
+
+The test run showed it working: 111 tasks completed, 38 plans completed, 353 commits, 18 sessions, all properly categorized for the last 7 days.

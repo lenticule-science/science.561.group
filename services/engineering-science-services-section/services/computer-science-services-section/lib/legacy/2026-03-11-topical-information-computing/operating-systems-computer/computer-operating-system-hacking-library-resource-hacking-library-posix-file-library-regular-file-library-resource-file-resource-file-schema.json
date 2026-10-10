@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://research-notes.561.group/hacking/library/code/structures/library/resource/resource-file.schema.json",
+  "title": "resource-file-observation",
+  "description": "Observation extracted from one repository file for resource-file linting. The envelope schema validates path, frontmatter shape, body, and roleClass; per-role content rules are validated by the matching per-role schema, dispatched via allOf+if/then on roleClass.",
+  "type": "object",
+  "properties": {
+    "path": { "type": "string" },
+    "relativePath": { "type": "string" },
+    "filename": { "type": "string" },
+    "stem": { "type": "string" },
+    "extension": { "type": "string" },
+    "isMarkdown": { "type": "boolean" },
+    "isMarker": { "type": "boolean" },
+    "frontmatter": {
+      "anyOf": [
+        { "type": "object" },
+        { "type": "null" }
+      ]
+    },
+    "frontmatterParseError": {
+      "anyOf": [
+        { "type": "string" },
+        { "type": "null" }
+      ]
+    },
+    "body": { "type": "string" },
+    "roleClass": {
+      "anyOf": [
+        { "type": "string" },
+        { "type": "null" }
+      ]
+    },
+    "skill": {
+      "type": "object",
+      "description": "Per-role projection populated when roleClass === 'skill'. See skill/schema.json."
+    }
+  },
+  "required": [
+    "path",
+    "relativePath",
+    "filename",
+    "stem",
+    "extension",
+    "isMarkdown",
+    "isMarker",
+    "frontmatter",
+    "frontmatterParseError",
+    "body",
+    "roleClass"
+  ],
+  "allOf": [
+    {
+      "if": { "properties": { "isMarkdown": { "const": true } }, "required": ["isMarkdown"] },
+      "then": { "$ref": "https://research-notes.561.group/hacking/library/code/structures/library/resource/markdown-resource-file.schema.json" }
+    },
+    {
+      "if": { "properties": { "roleClass": { "const": "skill" } }, "required": ["roleClass"] },
+      "then": { "$ref": "https://research-notes.561.group/hacking/library/code/structures/library/agent/skill.schema.json" }
+    },
+    {
+      "if": { "properties": { "roleClass": { "const": "transformer" } }, "required": ["roleClass"] },
+      "then": { "$ref": "https://research-notes.561.group/hacking/library/code/structures/library/document/transformer.schema.json" }
+    },
+    {
+      "if": { "properties": { "roleClass": { "const": "structure" } }, "required": ["roleClass"] },
+      "then": { "$ref": "https://research-notes.561.group/hacking/library/code/structures/library/document/structure.schema.json" }
+    },
+    {
+      "if": { "properties": { "roleClass": { "const": "character" } }, "required": ["roleClass"] },
+      "then": { "$ref": "https://research-notes.561.group/hacking/library/code/structures/library/agent/character.schema.json" }
+    },
+    {
+      "if": { "properties": { "roleClass": { "const": "specification" } }, "required": ["roleClass"] },
+      "then": { "$ref": "https://research-notes.561.group/hacking/library/code/structures/library/document/specification.schema.json" }
+    },
+    {
+      "if": { "properties": { "roleClass": { "const": "work" } }, "required": ["roleClass"] },
+      "then": { "$ref": "https://research-notes.561.group/hacking/library/code/structures/library/planning/work.schema.json" }
+    },
+    {
+      "if": { "properties": { "roleClass": { "const": "inference-model" } }, "required": ["roleClass"] },
+      "then": { "$ref": "https://research-notes.561.group/hacking/library/code/structures/library/records/inference-model-record.schema.json" }
+    }
+  ]
+}

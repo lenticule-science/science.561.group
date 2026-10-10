@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://research-notes.561.group/hacking/library/predication-notes/composting/library/object/library/thing/library/system/library/operating-system/library/computer-operating-system/library/work-item/doing/working/transitioning-a-work-items-state/transitioning-a-work-items-state.schema.json",
+  "title": "Transitioning-a-work-items-state",
+  "description": "JSON Schema for the transitioning-a-work-items-state output.",
+  "type": "object",
+  "required": ["status"],
+  "oneOf": [
+    {
+      "properties": {
+        "status": {"const": "transitioned"},
+        "target": {"type": "string"},
+        "from": {"type": "string"},
+        "to": {"type": "string"},
+        "witnessAppendedTo": {"type": "string"}
+      },
+      "required": ["target", "from", "to"]
+    },
+    {
+      "properties": {
+        "status": {"const": "rejected"},
+        "reason": {"type": "string", "enum": ["stale-observation", "invalid-transition", "missing-blocked-by-reason", "no-target", "no-status-in-target"]},
+        "details": {"type": "string"}
+      },
+      "required": ["reason"]
+    }
+  ]
+}

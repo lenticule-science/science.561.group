@@ -1,0 +1,4 @@
+#!/usr/bin/env node
+import { spawnSync } from "node:child_process"; import { dirname, join } from "node:path"; import { fileURLToPath } from "node:url";
+const service=process.argv[2], expected="knowledge-services-section/identifier-services-section/resolving-an-identifier"; if(process.env.EMSENN_SECTION_CONTRACT!=="knowledge-services-section-contracts-descendants"||service!==expected){process.stderr.write("refused: identifier services require an exact knowledge-services contract route\n");process.exit(1)}
+const r=spawnSync(process.execPath,[join(dirname(fileURLToPath(import.meta.url)),"../services/resolving-an-identifier/src/resolve-an-identifier.js"),...process.argv.slice(3)],{stdio:"inherit",env:{...process.env,EMSENN_SUBSECTION_CONTRACT:"identifier-services-section-contracts-resolving-an-identifier"}});process.exit(r.status??1);

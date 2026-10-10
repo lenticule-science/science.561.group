@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mark/content/utterance/articulating/content/articulation-cell/content/active-articulation-cell",
+  "title": "active-articulation-cell",
+  "description": "The corner of the articulation-cell partition where the token side is articulated and the claim side is not - the identity committed while the content stays open. The first step out of the potential cell under the token-before-claim progression.",
+  "allOf": [
+    { "$ref": "mark/content/utterance/articulating/content/articulation-cell" }
+  ],
+  "type": "object",
+  "required": ["token", "claim"],
+  "properties": {
+    "token": { "const": "yes", "description": "the identity-carrying token side is articulated" },
+    "claim": { "const": "no", "description": "the content-carrying claim side is not yet articulated" }
+  }
+}

@@ -1,0 +1,12 @@
+#+title: license
+#+begin_head
+#+ghe_schema: reference-0.1.1
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-22 Tue 21:48]
+#+roam_tags: term
+#+end_head
+#+name: license-definition-text
+#+begin_quote
+A */license/* is a [[file:record.org][record]] that has [[file:information.org][information]] about a [[file:person.org][person]]'s [[file:permission.org][permission]] within an [[file:environment.org][environment]] or with a [[file:tool.org][tool]].
+#+end_quote

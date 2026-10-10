@@ -1,0 +1,9 @@
+Here's the report:
+
+**1. Knowledge Graph** — Current. Regenerated just now: **11,366 entities**, 132,417 facts, 1,659 unique attributes. Top types: research (4,042), term (2,076), act (621), text (523).
+
+**2. Operations Graph** — 51 entities, 609 facts. Breakdown: **41 sessions**, **8 events**, **2 transactions**. The operations graph is populated but light — most operational data is still in session logs rather than structured EAVT facts.
+
+**3. MCP Server** — Responds correctly. Returns `561-datastore` v0.1.0 with `tools.listChanged` capability. All 7 tools registered.
+
+**4. Quick Reference** — Written to `operations/engineering/records/sessions/research/mcp-quick-reference.md`. Lists all 7 MCP tools (`graph_search`, `graph_entity`, `graph_stats`, `graph_query_attr`, `sessions_list`, `ledger_summary`, `channel`) with descriptions, data sources, and usage notes.

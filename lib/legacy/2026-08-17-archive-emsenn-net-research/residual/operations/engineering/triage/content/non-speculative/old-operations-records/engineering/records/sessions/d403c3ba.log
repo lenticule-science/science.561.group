@@ -1,0 +1,9 @@
+Created `operations/engineering/fars/agentic/commands/fleet.md`. The command:
+
+1. Runs `561d sessions` + `561d status {id}` for each session to gather data
+2. Shows **running** sessions with elapsed time and task preview
+3. Shows **completed** sessions with tokens, cost, and first line of the log as result preview
+4. Shows **failed** sessions highlighted with failure reason
+5. Shows **daily fleet summary** — session counts and total cost/tokens
+
+It follows the same pattern as `/duty-status` and `/bridge`. After installing the harness (`/install-harness`), it'll be available as `/fleet`.
