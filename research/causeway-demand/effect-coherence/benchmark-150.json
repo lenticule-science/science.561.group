@@ -1,0 +1,40 @@
+{
+  "scope": "synthetic methodological controls, not empirical service measurement",
+  "cases": 150,
+  "naiveFalsePositives": 100,
+  "strictConditionalFalsePositives": 0,
+  "naiveTruePositives": 25,
+  "strictConditionalTruePositives": 25,
+  "byCase": {
+    "valid-independent-component-join": {
+      "n": 25,
+      "naivePositive": 25,
+      "strictPositive": 25
+    },
+    "spliced-effects": {
+      "n": 25,
+      "naivePositive": 25,
+      "strictPositive": 0
+    },
+    "wrong-component-revision": {
+      "n": 25,
+      "naivePositive": 25,
+      "strictPositive": 0
+    },
+    "reported-not-observed": {
+      "n": 25,
+      "naivePositive": 25,
+      "strictPositive": 0
+    },
+    "missing-independent-verifier": {
+      "n": 25,
+      "naivePositive": 25,
+      "strictPositive": 0
+    },
+    "missing-stage": {
+      "n": 25,
+      "naivePositive": 0,
+      "strictPositive": 0
+    }
+  }
+}
