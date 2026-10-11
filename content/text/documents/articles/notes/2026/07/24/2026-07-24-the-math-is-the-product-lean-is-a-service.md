@@ -32,6 +32,13 @@ The statements below give the doctrine directly.
 > *need to be die*. Like RML. Like enterprises. That people pay to use.
 > Leaving it all one giant thing is exactly the stupid thing."
 
+> "'LEAN PROOF' IS A FUCKING SERVICE. 'OBSMETRIC LEAN PROOFS' IS A SERVICE.
+> I DO NOT PERSONALLY GIVE ONE SINGLE FUCK ABOUT LEAN. IT IS LITERALLY JUST
+> THERE because it was - you'll find this funny - convince you that this math
+> was worth writing code around, and not spending every session - you'll find
+> this ironic - bickering with me about the *form* of the semantics in front
+> of us."
+
 ## The settled reading
 
 1. **The mathematics is the product.** Obsmetrologia's functions (e.g.
@@ -55,7 +62,7 @@ The statements below give the doctrine directly.
    (`.../2026/07/11/2026-07-11-research-on-metroplat-architecture-model.md`).
    Purge on sight; never add.
 
-## What a cast die IS (2026-07-24 follow-on session)
+## What a cast die IS (Leader ruling, 2026-07-24 follow-on session)
 
 "One script edited" is exactly wrong. Each die is cast whole, all parts at
 once — literally each one:
@@ -90,4 +97,7 @@ orders `wo-terms-obsmetrologia-lean-thing-*` and
 
 ## Sources
 
-The doctrine is stated here directly, without relying on personal attribution.
+- Leader speech: `lib/emsenn/services/561-group/services/board-of-directors/services/executive-office/services/leader-movement-team/data/records/leader-speech/2026/07/24/2026-07-24-leader-movement-team-leader-speech.jsonl` (session `9f0d386d-6ebc-4b4e-966c-cd2f5cf2ac13`).
+- Session transcript: `~/.claude/projects/-home-emsenn-info/9f0d386d-6ebc-4b4e-966c-cd2f5cf2ac13.jsonl`.
+- Operator correction on badge cruft: character-emsenn note of 2026-07-11 (metroplat architecture model research).
+- Precursor complaint arc: leader-speech records 2026-07-16, -18, -19, -23 (same demand, six sessions running).
