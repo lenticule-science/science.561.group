@@ -1,0 +1,77 @@
+\section{The articulation measure: charge derived from articulation status}
+
+\texttt{Language.Spine} names a gap directly: nothing in that module derives
+either coordinate of a charge, and any reading of a supplied \texttt{Charge}
+or \texttt{Record} as evidence remains a caller-side requirement. This
+section closes that gap for the one coordinate that needs no caller at all:
+an articulation cell's own status record already \emph{is} an evidence pair,
+once read through the corner convention (\cref{thm:corner}).
+
+\begin{proposition}[The measured charge]\label{thm:measure}\lean{Obsmetrologia.Articulating.Cell.measure}\leanok\uses{thm:articulation-cell-corner, thm:charge}
+\texttt{measure}~\(c\) is the charge \(c.\mathrm{corner}\): the corner a cell
+already sits in, handed back as its charge. Since \(\mathtt{Charge} :=
+\mathtt{Articulating.Corner}\) definitionally, this is the identity read at
+two depths --- trivial as a construction, but name-load-bearing, because it
+lets a caller obtain a charge \emph{from the articulation record itself},
+where \texttt{Spine.posit} otherwise demands one admitted from outside.
+\end{proposition}
+
+\begin{proposition}[The measured meme]\label{thm:meme}\lean{Obsmetrologia.Articulating.Cell.meme}\leanok\uses{thm:measure}
+\texttt{meme}~\(c\) is the posit at \(c\)'s own claim
+(\(\texttt{Claim.seed}\,c.\mathrm{utterance}\)) whose charge is
+\texttt{measure}~\(c\) --- derived from the cell's own status, not admitted
+by a caller, unlike \texttt{Spine.posit}.
+\end{proposition}
+
+\begin{proposition}[The four tellings, by name]\label{thm:measure-tellings}\lean{Obsmetrologia.Articulating.Cell.measure_absurd, Obsmetrologia.Articulating.Cell.measure_potential, Obsmetrologia.Articulating.Cell.measure_active, Obsmetrologia.Articulating.Cell.measure_stable}\leanok\uses{thm:measure, thm:four-charges}
+Measuring the four corners by their explicit status pairs recovers the four
+distinguished charges by name: \((\mathrm{false}, \mathrm{false}) \mapsto
+\bot_k\), \((\mathrm{true}, \mathrm{false}) \mapsto t\),
+\((\mathrm{false}, \mathrm{true}) \mapsto f\), \((\mathrm{true},
+\mathrm{true}) \mapsto \top_k\).
+\end{proposition}
+
+\begin{theorem}[The initial cell measures --- and posits --- to bottom]\label{thm:meme-initial-charge}\lean{Obsmetrologia.Articulating.Cell.meme_initial_charge}\leanok\uses{thm:meme, thm:measure-tellings, thm:articulation-cell-initial, thm:kBot-least}
+A freshly initial cell (born absurd, told none) measures --- and posits ---
+to \(\bot_k\): the derived reading and the seeded reading of
+\cref{thm:knowledge-least} agree at the one point both are pinned.
+\end{theorem}
+
+\begin{definition}[The status order on cells]\label{thm:statusle}\lean{Obsmetrologia.Articulating.Cell.statusLe}\leanok\uses{thm:articulation-cell}
+\texttt{statusLe}~\(c\)~\(d\) holds when each of \(c\)'s two articulation
+statuses implies the like status of \(d\). It compares evidence tellings
+directly on the status pairs; no shared utterance is required, since this is
+not a comparison of two cells over one claim.
+\end{definition}
+
+\begin{theorem}[To articulate is to raise the measured charge]\label{thm:measure-mono}\lean{Obsmetrologia.Articulating.Cell.measure_mono}\leanok\uses{thm:statusle, thm:measure, thm:kle}
+If \(d\) tells everything \(c\) tells (and possibly more), \(d\)'s measured
+charge sits above \(c\)'s in the knowledge order: \(\texttt{statusLe}\,c\,d
+\to \bot_k \le_k \dots\), exhausted over the four \((\mathrm{token},
+\mathrm{claim})\) bools of each cell.
+\end{theorem}
+
+\begin{definition}[The delta valuation of a cell]\label{thm:deltavaluation}\lean{Obsmetrologia.Articulating.Cell.deltaValuation}\leanok\uses{thm:measure, thm:knowledge-least}
+The knowledge-least valuation, except at \(c\)'s own claim, where it carries
+\(c\)'s measured charge: the exact shape the meme-folding valuation trace
+advances by one step, specialized to a knowledge-least base.
+\end{definition}
+
+\begin{theorem}[Articulation history is visible one level up]\label{thm:deltavaluation-mono}\lean{Obsmetrologia.Articulating.Cell.deltaValuation_mono}\leanok\uses{thm:deltavaluation, thm:measure-mono}
+At a \emph{shared} claim --- \(c\) and \(d\) over the same utterance --- a
+status-increasing pair of cells measures to a \(\le_k\)-increasing pair of
+delta valuations: articulation history driving one claim's charge upward is
+visible one level up, as a pointwise \(\le_k\) step between valuations.
+\end{theorem}
+
+\begin{theorem}[The measured-vs-seeded semantics question]\label{thm:measured-vs-seeded}\notready\uses{thm:meme-initial-charge, thm:knowledge-least}
+This section derives one coordinate --- the charge a cell's own articulation
+status supplies --- from that status alone. It does not resolve, and is not
+built to resolve, whether a \emph{measured} charge (\cref{thm:measure}) and
+an independently \emph{seeded}, caller-supplied charge (\texttt{Spine.posit})
+at the same claim should ever be required to agree, or how the two interact
+under settling. \texttt{docs/history/corner-naming-convention.md} records
+this exact question as open --- the closure-of-assertions reading against
+the LFP-of-the-measured-carrier reading --- and this section leaves it there,
+open, rather than picking a side.
+\end{theorem}

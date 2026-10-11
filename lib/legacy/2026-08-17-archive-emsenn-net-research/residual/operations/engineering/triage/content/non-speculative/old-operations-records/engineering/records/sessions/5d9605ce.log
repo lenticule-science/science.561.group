@@ -1,0 +1,5 @@
+Fixed. RegExp injection vulnerability patched with `escapeRegex()`. The same vulnerability exists in `instinct-decay.js:41` and `instinct-cli.js:110` — those are pre-existing and out of scope for this task, but worth noting for a future cleanup pass that extracts shared frontmatter utils.
+
+Final state:
+- `memory-consolidator.js`: 269 lines, all 3 modes working, security fix applied
+- `HEARTBEAT.md`: wired as 24-hour "Memory Consolidation" check with `--apply`

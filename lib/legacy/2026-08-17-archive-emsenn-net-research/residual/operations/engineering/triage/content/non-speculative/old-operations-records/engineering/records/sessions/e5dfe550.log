@@ -1,0 +1,10 @@
+Done. Created `operations/engineering/fars/agentic/hooks/failure-analyzer.js`:
+
+- **Scans** `operations/engineering/records/sessions/` for `.failure` files
+- **Dispatches** up to 3 per run via `execFileSync('561d', ['start', '-t', prompt])` — no shell interpolation, safe from injection
+- **Renames** processed files to `.failure.dispatched` to prevent re-processing
+- **Always exits 0** — never blocks
+- Prompt asks for a 3-sentence diagnosis (prompt quality, office match, missing knowledge)
+- Reads stdin per hook convention but only needs the failure files on disk
+
+To activate it, register it in settings.json as an async Stop hook (via `/install-harness` or the source settings). Since it's async and dispatches external processes, it won't slow down session teardown.

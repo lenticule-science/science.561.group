@@ -1,0 +1,35 @@
+{
+  "$schema": "../../node_modules/wrangler/config-schema.json",
+  "name": "lenticule-science-knowledge-vault",
+  "main": "src/worker.mjs",
+  "compatibility_date": "2026-08-18",
+  // The Worker is the single public delivery binding. Reader admission remains
+  // in the Worker; a provider-level Access application must not become a
+  // second, competing authorization boundary.
+  "workers_dev": false,
+  "routes": [{ "pattern": "l-space.561.group", "custom_domain": true }],
+  // The origin Google redirects back to. Pinned rather than taken from the
+  // request, so the redirect URI always matches the one registered with Google.
+  "vars": { "PUBLIC_BASE_URL": "https://l-space.561.group" },
+  // Google operator admission uses GOOGLE_CLIENT_ID, GOOGLE_CLIENT_SECRET and
+  // LSPACE_ALLOWED_EMAILS. Turntide islander admission uses DISCORD_CLIENT_ID,
+  // DISCORD_CLIENT_SECRET, DISCORD_GUILD_ID and TURNTIDE_ISLANDER_ROLE_ID.
+  // SESSION_SECRET protects both providers. All are Worker secrets set with
+  // `wrangler secret put` and are deliberately absent from this file.
+  // They are deliberately absent here: this file is committed, and an allowlist
+  // of readers is no more publishable than the client secret beside it.
+  "assets": {
+    "directory": "../../dist",
+    "binding": "ASSETS",
+    "run_worker_first": true,
+    "not_found_handling": "single-page-application"
+  },
+  "d1_databases": [{
+    "binding": "LEARNER_STATE",
+    "database_name": "lenticule-science-vaultmaze",
+    "database_id": "__LENTICULE_SCIENCE_D1_DATABASE_ID__",
+    "migrations_dir": "migrations"
+  }],
+  "observability": { "enabled": true },
+  "triggers": { "crons": ["17 4 * * *"] }
+}

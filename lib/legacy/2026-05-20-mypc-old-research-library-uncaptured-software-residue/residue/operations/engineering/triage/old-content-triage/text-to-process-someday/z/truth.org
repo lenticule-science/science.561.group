@@ -1,0 +1,14 @@
+#+title: truth
+#+begin_head
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-21 Mon 17:12]
+#+roam_alias: "true"
+#+roam_tags: term
+#+end_head
+
+#+name: truth-definition-text
+#+begin_quote
+A */truth/* is an idea that a [[file:person.org][person]] believes is correct.
+#+end_quote
+

@@ -1,0 +1,10 @@
+Updated. The key improvements:
+
+1. **Task ID resolution** — reads the task file, extracts frontmatter (`goal`, `work-type`, `part-of`, `produces`), reads the plan file for context, checks status before dispatching stale work
+2. **Automatic agent matching** — runs `dispatch-work.js --json` to score agents, with an inline fallback heuristic table mapping work-type/domain to agents
+3. **Rich prompt assembly** — the duty officer gets the task ID, goal, plan context, detailed instructions from the task body, and a completion protocol (update status, record event)
+4. **First-officer workflow** — `/duty-officer agent-capability-frontmatter` just works. No prompt construction needed.
+
+The command still supports the original description-based dispatch as a fallback when there's no task file, and comma-separated IDs for batch dispatch.
+
+Source is at `operations/engineering/fars/agentic/commands/duty-officer.md` — run `/install-harness` to push it to `.claude/`.

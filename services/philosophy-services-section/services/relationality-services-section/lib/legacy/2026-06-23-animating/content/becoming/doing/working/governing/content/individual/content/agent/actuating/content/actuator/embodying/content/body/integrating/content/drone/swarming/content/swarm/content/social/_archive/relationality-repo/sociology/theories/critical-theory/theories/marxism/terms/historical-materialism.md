@@ -1,0 +1,27 @@
+---
+name: "Historical Materialism"
+date-created: 2026-03-03T00:00:00
+aliases:
+  - "historical materialism"
+keywords:
+  - marxism
+description: "Marx and Engels's method of analyzing societies through their material conditions of production, treating economic relations as the foundation of social, political, and intellectual life."
+date-modified: 2026-03-09
+---
+
+Historical [materialism](../../../../../../philosophy/theories/western/theories/metaphysics/terms/materialism.md) is the method [Karl Marx](../../../../../../../../../references/people/karl-marx.md) and Friedrich Engels developed for analyzing human societies.
+Its central claim: the way a society organizes the production of its material life — who works, with what tools, under what relations of ownership — determines the general character of its social, political, and intellectual processes.
+The economic structure (the "base") shapes the legal, political, religious, and cultural institutions (the "superstructure") that arise from it.
+
+The base-superstructure model operates through a specific mechanism.
+As productive forces (technology, knowledge, [labor](../../../../../terms/labor.md) power) develop, they come into conflict with the existing relations of production ([property](../../anarchism/terms/property.md) relations, class structure).
+This contradiction generates [class struggle](./class-struggle.md), which drives historical transformation.
+Feudalism gives way to [capitalism](../../anarchism/terms/capitalism.md) not through the progress of ideas but through the material inability of feudal relations to contain the productive forces developing within them.
+[Marx](../../../../../../../../../references/people/karl-marx.md) argued that [capitalism](../../anarchism/terms/capitalism.md) would face the same fate: the contradiction between socialized production and private appropriation would generate the conditions for [communism](./communism.md).
+
+The method has faced sustained critique.
+The base-superstructure model tends to reduce social life to economic relations, treating culture, [kinship](../../../../../terms/kinship.md), spirituality, and ecology as derivative rather than constitutive.
+[Dialectical](../../../../../../philosophy/theories/western/theories/marxism/terms/dialectics.md) readings within the Marxist tradition — [Gramsci](../../../../../../../../../references/people/antonio-gramsci.md) on [hegemony](../theories/gramscian/terms/hegemony.md), the Frankfurt School on [ideology](../../../../../terms/ideology.md) — attempted to loosen this determinism by insisting on reciprocal influence between base and superstructure.
+But the deeper problem, from a relational perspective, is the assumption that one domain of social life (the economic) is ontologically prior to others.
+A relational approach treats relations as constitutive of all domains simultaneously — economic structures do not ground social life; they are one expression of a relational field that also includes [kinship](../../../../../terms/kinship.md), land relations, ceremony, and ecological practice.
+The reduction of this field to its economic dimension is itself a product of the capitalist imaginary that historical [materialism](../../../../../../philosophy/theories/western/theories/metaphysics/terms/materialism.md) claims to critique.

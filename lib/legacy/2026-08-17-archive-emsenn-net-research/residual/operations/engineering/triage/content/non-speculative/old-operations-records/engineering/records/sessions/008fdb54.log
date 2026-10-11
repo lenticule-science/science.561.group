@@ -1,0 +1,7 @@
+Audit complete. Three findings:
+
+1. **Missing file**: `project_vps-migration.md` is referenced in MEMORY.md but doesn't exist in the repo memory directory — it was written to `~/.claude/` instead.
+2. **Stale framing**: `feedback_hooks-nodejs-windows.md` still cites Windows as the reason for Node.js hooks, but the system is now on Linux. The rule is still valid; the justification is outdated.
+3. **Stale paths**: `project_computer-system-taxonomy.md` references `library/domains/science/domains/relationality/` which no longer exists. The tagging work it describes may need re-survey.
+
+Report written to `operations/engineering/records/sessions/memory-audit-2026-04-04.log`. No files were modified or deleted.

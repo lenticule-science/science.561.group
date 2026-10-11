@@ -1,0 +1,10 @@
+Done. Wrote the spec at `operations/engineering/fars/docs/specs/mash-engine-api-spec.md` covering:
+
+- **7 CLI commands** (`dashboard`, `start`, `sessions`, `status`, `stop`, `log`, `graph`, `daemon`) with usage, args, output format, exit codes, and examples
+- **16 MCP tools** with parameter types, return formats, error conditions, and timeouts
+- **4 Web API endpoints** with JSON response schemas
+- **5 MCP prompts** for agent discovery
+- **Session lifecycle** state machine
+- **Event/accounting model** with double-entry semantics
+
+Task `mash-pkg-api-spec` marked done.

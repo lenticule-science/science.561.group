@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://561.group/swarm-intelligence/articulating/library/aperiodic-articulation-category/library/aperiodic-articulation-cell/library/stable-aperiodic-articulation-cell/characterizing/library/character/character.schema.json",
+  "title": "Character (an agent-bearer carrying a stable disposition)",
+  "description": "A character is a stable articulation: a persistent agent that bears a disposition. The disposition is a nucleus χ on its behavioral fiber — idempotent, monotone, inflationary — whose fixed set Fix(χ) is the behavioral space it endorses; 'in character' is χ(a)=a. The persona/character/role triad: role = capability-signature (what it MAY do — external capability references), character = the nucleus χ (HOW), persona = the entity bearing it. This schema is the serializable character: role + persona + the endorsed set that generates χ. The nucleus itself is reconstructed by characterizing's chiOf/inCharacter helpers (χ(S) = S ∪ endorse), not stored. Codomain of characterizing.",
+  "kind": "object",
+  "type": "object",
+  "required": ["kind", "role", "endorse"],
+  "additionalProperties": false,
+  "properties": {
+    "kind": { "const": "character" },
+    "role": {
+      "type": "object",
+      "required": ["slug", "capabilitySignature"],
+      "additionalProperties": false,
+      "description": "the role: a capability-signature naming what the character MAY do (external capability references, like tool names)",
+      "properties": {
+        "slug": { "type": "string", "minLength": 1 },
+        "capabilitySignature": { "type": "array", "items": { "type": "string", "minLength": 1 } }
+      }
+    },
+    "persona": { "type": ["string", "null"], "description": "the entity bearing the character (a reference), or null if unbound" },
+    "endorse": {
+      "type": "array",
+      "description": "the endorsed behaviors generating the nucleus χ(S) = S ∪ endorse; Fix(χ) = behavior sets containing endorse",
+      "items": { "type": "string", "minLength": 1 }
+    }
+  }
+}

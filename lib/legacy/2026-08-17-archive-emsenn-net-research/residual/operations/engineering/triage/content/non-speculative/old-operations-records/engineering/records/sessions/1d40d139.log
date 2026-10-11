@@ -1,0 +1,12 @@
+Done. The `/dispatch-batch` command is installed and live. Here's what changed:
+
+**Before**: 3-step spec that just shelled out to `dispatch-work.js --dispatch` with no error handling or reporting detail.
+
+**After**: Full 5-step procedure:
+1. Parse N from arguments (default 5)
+2. Get dispatch report via `dispatch-work.js --json`
+3. Filter and sort by score, take top N with valid agent matches
+4. For each task: read task file + plan context, build duty officer prompt (matching `duty-officer.md` template), dispatch via `mash-engine start -t`, continue on failure
+5. Output a `Dispatched` table (Task/Agent/Score/Session) and a `Held Back` table for skips with reasons
+
+The prompt template reuses the same completion protocol as `/duty-officer` — task-focused, status update on completion, event recording, no scope creep.

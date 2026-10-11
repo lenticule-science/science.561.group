@@ -1,0 +1,106 @@
+#+title: 2021-01-09
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2021-01-09 Sat 09:32]
+#+roam_tags: daily-record
+
+#+name: ${slug}-definition
+This is some of what I ({{{author}}}) experienced, read, and wrote on on [2021-01-09 Sat].
+
+#+toc: headlines 2
+
+* Activity log                                                     :noexport:
+
+* Journal                                                          :noexport:
+** [2021-01-09 Sat 09:33]
+
+   Over the past couple days I've felt like I've actually been able to use my [[file:../personal_records.org][personal records]], compared to the past three weeks when it felt more like I was still setting them up. At this point, my biggest inhibition in using the system seems to be my own habit of kind of milling around my apartment, reading and pacing, so I can't actually sit and think and take notes.
+
+   That sounds like a bad habit, outright, though, so I'm going to try and curb it today but trying to avoid my computer unless I'm actually sitting down at it. Hard in a small apartment during winter, but I'll try.
+** [2021-01-09 Sat 10:42]
+
+   So near as I can tell I don't currently have any news items to log or anything... which is the first time I think since I really started keeping this [[file:../records_catalog.org][records catalog]] that I can say that.
+
+   I really should finish importing in the posts from the Wordpress I have that I care about today, and I'd like to get to writing up the piece on "survival hygiene" I have an idea for, even though we're now like a solid month past me posting the first part of that thought, in my "False Profits" post. (Which... might not be imported here yet? Hmm.)
+
+   I guess that gets me thinking about my records catalog and moving forward, but I'm going to try and stop that thought here. No sense thinking about how to cultivate it, when it's being cultivated just fine how it is now.
+** [2021-01-09 Sat 13:14]
+
+   So, I really dislike [[file:../windows_10.org][Windows 10]]. Yesterday, pressing =SUPER-LEFT= pegged a window to the left half of the screen. Today, the left top quarter. Why is its behavior different now? I'm sure there's a reason, but it is entirely opaque to me while pressing hotkeys trying to distribute windows on [[file:../esther_davis.org][Esther]]'s screen.
+** [2021-01-09 Sat 13:25]
+
+   I'm sitting here working on the record for [[file:../brave_old_world.org][Brave Old World]], and I'm remembering that I wanted to start manually indexing records and entries. Whoops! I'll try and get back to that.
+
+   What makes indexing a little tricky is I don't have any firm rules for how to organize the index, beyond "don't duplicate records."
+
+   Or... maybe it should kind of duplicate records, but be for "intentional" mentions of a thing, not just casual references back to it?
+* Posts
+** Looking at the Capitol as a "sacred" space
+   :LOGBOOK:
+   - Note taken on [2021-01-09 Sat 10:52] \\
+     I shared this into the [[file:../fediverse.org][Fediverse]] and [[file:../jeremy_friesen.org][Jeremy Friesen]] pointed out that [[file:../university-of-notre-dame.org][University of Notre Dame]] has many similar works. They also shared some nice commentary:
+
+     #+begin_quote
+     Crucial in all of this is: "Art says who we aspire to be."  By framing as history, it also uses Orwells statement that: "Who controls the past controls the future. Who controls the present controls the past."
+     #+end_quote
+
+     Notably, Notre Dame has [[https://www.nd.edu/about/history/columbus-murals/][covered the art with tapestries]]. I hadn't heard of this approach to compromising on these works before, and while my opinion might change, right now I think it's a good one. Like I said to Jeremy, "It really seems like the realistic alternative is wait for them to be destroyed as a political action and I... don't prefer that, honestly."
+   :END:
+
+   #+index: U.S.A.!US culture!"Looking at the Capitol as a 'sacred' space", 2020-01-09
+   #+index: sacred!sacred spaces!"Looking at the Capitol as a 'sacred' space", 2020-01-09
+   
+   In response to the [[file:../2021_storming_of_the_u_s_capitol.org][Storming of the U.S. Capitol]] back so long ago, on the [[file:2021-01-06.org][6th]], many members of our [[file:../u_s_federal_government.org][federal government]] referred to the [[file:../u_s_capitol.org][U.S. Capitol]] as a "[[file:../sacred-space.org][sacred space]]."
+
+   The Capitol building is known for its white dome. Under that dome is a large room known as the Rotunda. There are, around this room, eight alcoves, each containing an oil painting. Each painting is twelve feet tall and eighteen feet wide. The figures in these paintings are almost life-sized.
+
+   Four paintings depict the relationship between the [[file:../united-states-of-america.org][U.S.A.]] and [[file:../uk.org][Great Britian]]: the signing of the [[file:../declaration-of-independence.org][Declaration of Independence]], two British surrenders during the [[file:../u-s-revolutionary-war.org][U.S. Revolutionary War]], and [[file:../george-washington.org][George Washington]] preparing to assume the [[file:../u-s-president.org][U.S. presidency]].
+
+   Those four paintings were added between [[file:../1820.org][1820]] and [[file:../1826.org][1826]]. The other four were added between [[file:../1840.org][1840]] and [[file:../1855.org][1855]].
+
+   The /Baptism of Pocahontas/ was installed in 1840, demonstrating the [[file:../assimilation.org][assimilation]] of [[file:../pocahontas.org][Pocahontas]], notably from before the U.S. existed. /Embarkation of the Pilgrims/ went up in 1844 and is also from before the creation of the U.S., and shows the [[file:../pilgrims.org][Pilgrims]] in [[file:../england.org][England]], about to depart for [[file:../turtle_island.org][Turtle Island]]. A year after the /Embarkation/ was installed, the term "[[file:../manifest-destiny.org][manifest destiny]]" was coined, and two years later, [[file:../colonial.org][colonials]] were openly [[file:../massacre.org][massacring]] [[file:../indigenous_people.org][Indigenous people]] in what would become [[file:../nevada.org][Nevada]], [[file:../texas-u-s-a.org][Texas]], and [[file:../washington-u-s-a.org][Washington]].
+
+   And the /Landing of Columbus/ was put up in the Rotunda. This one goes even further back before the creation of the United States, to lands very distant from [[file:../concord-massachussetts.org][Concord]] and [[file:../plymouth-colony.org][Plymouth]]. In the /Landing/, [[file:../christopher-columbus.org][Christopher Columbus]] is shown driving a flag into the sand as naked [[file:../taino.org][Taino]] women run into the forest.
+
+   In 1855 the final painting was installed, as the [[file:../indian-wars.org][Indian Wars]] were escalating across the [[file:../great-plains.org][Great Plains]]. The /Discovery of the Mississippi/ shows [[file:../hernando-de-soto.org][Hernando de Soto]] riding into a [[file:../native_american.org][Native]] camp on a bank of the [[file:../mississippi-river.org][Mississippi River]], heavily armed, while women cower before him and his white [[file:../horse.org][horse]].
+
+   So, in the center of this "sacred" space, there are three giant paintings depicting naked or captive Native women, women who have been raped or are about to be raped. That is what is sacred to this space: a myth of [[file:../white-supremacy.org][white supremacy]] and entitlement to [[file:../ethnic-cleansing.org][ethnic cleansing]] and [[file:../genocide.org][genocide]].
+
+   
+
+   
+** Preparing for a neo-liberal administration
+
+   #+index: Biden administration!"Preparing for a neo-liberal administration", 2020-01-09
+
+   I'm sure I'll have a lot to say about the [[file:../biden-administration.org][Biden administration]] once it's here, but I'd like to share one piece I appreciate: [[https://puraacracia.club/2020/08/23/pura-acracia/]["Pura Acracia: anti-politics and the police"]]. A quote, to draw y'all in:
+
+   #+begin_quote
+   The perfection of politics can be found in democracy: class-collaboration at its finest. As the writers of Dixie Be Damned put it, “White supremacy’s greatest ally in this country has been democracy, not fascism.” But the anti-blackness of the racial regime of Capital is more than just a formalized White supremacy.
+   #+end_quote
+
+   The piece also might be relevant reading for people wishing to understand the [[file:../2021_storming_of_the_u_s_capitol.org][2021 Storming of the U.S. Capitol]], though the piece is referring to the [[file:../george_floyd_uprising.org][George Floyd Uprising]] and [[file:../riot.org][riots]] in general:
+
+   #+begin_quote
+   [T]he instrumentalization of the riot as a thing that ‘works’ misunderstands the riot. This is projected onto the riot after the fact. It is an attempt to make the riot political. To make it legible to State power.…
+
+   Though the riot, as expressed by racialized proles, is essentially anti-political. The white racist riot is fascism in its extra-legal street mode (see the Tulsa Race Riot & the Zoot Suit Riots).
+   #+end_quote
+
+   
+* News log
+
+** Ruth Hopkins writes about the seventh direction
+   :LOGBOOK:
+   - Note taken on [2021-01-09 Sat 10:26] \\
+     [[file:../ruth_h_hopkins.org][Ruth H. Hopkins]] writes about [[file:../black-elk.org][Black Elk]], [[file:../six-grandfathers.org][Six Grandfathers]], and the [[file:../seventh-direction.org][seventh direction]].
+   :END:
+
+   - Source :: https://atmos.earth/sacred-ecology-directions-history/
+** Camp Mniluzahan is nearly three months old
+   :LOGBOOK:
+   - Note taken on [2021-01-09 Sat 10:15] \\
+     Located on tribal lands just west of [[file:../rapid-city-south-dakota-u-s-a.org][Rapid City, South Dakota, U.S.A.]], [[file:../camp-mniluzahan.org][Camp Mniluzahan]] was established on [[file:2020-10-20.org][October 20th]] and moved on the [[file:2020-10-23.org][23rd]]. Consisting of several [[file:../tipi.org][tipis]] and other infrastrucutre, the camp was set up by [[file:../creek-patrol.org][Creek Patrol]], a volunteer group of [[file:../lakota.org][Lakota]], to help the homeless in Rapid City.
+   :END:
+   - Source :: https://rapidcityjournal.com/news/local/camp-mniluzahan-provides-shelter-community/article_ad73b852-3b71-55f8-b152-77364adc1c57.html
+
