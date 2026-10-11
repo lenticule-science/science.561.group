@@ -1,0 +1,12 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+import {admitPublicFeedback, publicProjection, assessCurrentEditorialTarget} from './evidence-assay.mjs';
+const load=p=>JSON.parse(readFileSync(new URL(p,import.meta.url),'utf8'));
+const row=load('./koios-current-reported-intake.json');
+const samples=load('./koios-issue-reported-sample-20261011.json');
+const currentPolicy={profiles:{'current-news-brief/v1':{evidenceBudget:{targetWords:{minimum:300},minimumSections:1}}}};
+test('latest issue observation remains reported, never independent field measurement',()=>{const a=admitPublicFeedback(row);assert.deepEqual(a.statuses,[{id:'reported-batch-20261011',status:'reported'}]);assert.equal(a.claimFalsified,false);assert.equal(a.customerAcceptance,'unverified');assert.equal(a.engineeringSpecificationAuthorized,false);assert.deepEqual(publicProjection(row).observations[0].publicEvidence,[]);});
+test('none of reported issue examples can be certified without a publisher profile',()=>{for(const sample of samples.examples){const a=assessCurrentEditorialTarget(sample,currentPolicy,{verifyPolicy:()=>true,verifyArticle:()=>true});assert.equal(a.classification,'indeterminate');assert.equal(a.currentTargetGap,'unknown');}});
+test('a profile guess does not turn a maintenance report into a confirmed gap',()=>{const r={...samples.examples[0],profile:'current-news-brief/v1',profileEvidence:'headline-guess'};const a=assessCurrentEditorialTarget(r,currentPolicy,{verifyPolicy:()=>true,verifyArticle:()=>true});assert.equal(a.classification,'indeterminate');});
+test('policy evidence plus assigned profile without article readback stays reported',()=>{const r={...samples.examples[0],profile:'current-news-brief/v1',profileEvidence:'publisher-profile-receipt',articleVersionDigest:'a'.repeat(64),versionObservedAt:'2026-10-11T03:04:38Z'};const a=assessCurrentEditorialTarget(r,currentPolicy,{verifyPolicy:()=>true});assert.equal(a.classification,'reported-current-target');assert.equal(a.currentTargetGap,true);assert.equal(a.historicalPolicyBreach,'unassessed');assert.equal(a.readerComprehensionImpact,'unmeasured');});
