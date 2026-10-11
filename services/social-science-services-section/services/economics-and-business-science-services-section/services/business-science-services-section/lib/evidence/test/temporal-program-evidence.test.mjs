@@ -80,3 +80,33 @@ test('empty corpus returns unresolved rather than asserting closed',()=>{
 test('input remains unchanged across negative/positive controls',()=>{
  const input=[structuredClone(base)];const before=JSON.stringify(input);query(input);assert.equal(JSON.stringify(input),before);
 });
+
+test('fresh unrelated evidence cannot launder a stale active source',()=>{
+ const old=override({record_id:'old',authority_id:'agency-1'});
+ const fresh=override({record_id:'fresh',authority_id:'agency-2',source_url:'https://agency2.example/program',revision:'v1',published_at:t(7),retrieved_at:t(9)});
+ const single=query([old],10,10,{max_age_days:2});
+ const withExtra=query([old,fresh],10,10,{max_age_days:2});
+ assert.equal(single.disposition,'STALE_SOURCE_UNRESOLVED');
+ assert.equal(withExtra.disposition,'STALE_SOURCE_UNRESOLVED');
+ assert.deepEqual(withExtra.source_freshness.stale_source_ids,['old']);
+ assert.equal(withExtra.source_freshness.newest_age_days,1);
+ assert.equal(withExtra.source_freshness.oldest_age_days,8);
+});
+test('explicit eligible supersession clears only the stale source it actually replaces',()=>{
+ const old=override({record_id:'old'});
+ const revised=override({record_id:'new',published_at:t(7),retrieved_at:t(9),effective_from:t(7),revision:'v2',supersedes:['old']});
+ const x=query([old,revised],10,10,{max_age_days:2});
+ assert.equal(x.disposition,'CONSISTENT_REPORTED_SOURCE');
+ assert.deepEqual(x.active_source_ids,['new']);
+ assert.deepEqual(x.superseded_source_ids,['old']);
+ assert.deepEqual(x.source_freshness.stale_source_ids,[]);
+ assert.equal(x.source_freshness.oldest_age_days,1);
+});
+test('missing source has no ages, and no threshold does not invent staleness',()=>{
+ const empty=query([],10,10,{max_age_days:2});
+ assert.deepEqual(empty.source_freshness,{newest_age_days:null,oldest_age_days:null,stale_source_ids:[]});
+ assert.equal(empty.disposition,'NO_CURRENT_SOURCE');
+ const noThreshold=query([base],10,10);
+ assert.equal(noThreshold.disposition,'CONSISTENT_REPORTED_SOURCE');
+ assert.deepEqual(noThreshold.source_freshness.stale_source_ids,[]);
+});
