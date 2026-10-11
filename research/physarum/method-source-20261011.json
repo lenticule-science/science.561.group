@@ -8,17 +8,13 @@
     "observedSurface": "author-uploaded full-text HTML rendering, sections 2.1-2.3 and Tables 1-2",
     "nativePdfPageImageInspected": false,
     "trialLevelDataAvailable": false,
-    "meaning": "source-method text checked in earlier research; neither physical metrology nor experimental outcome"
+    "meaning": "source-method text checked; neither physical metrology nor experimental outcome"
   },
   "reportedNominalGeometry": {
     "corridorWidthMm": 5,
     "startCorridorLengthMm": 50,
     "choiceArmLengthMm": 20,
-    "singleTurnDecisionDistancesMm": [
-      3,
-      7,
-      14
-    ],
+    "singleTurnDecisionDistancesMm": [3,7,14],
     "doubleTurnSeparationMm": 7,
     "mazeUnitsPerComplex": 8,
     "fourCardinalDirectionsBalanced": true,
@@ -42,11 +38,7 @@
     "ninePrintedPValuesNotReproducedByStatedUnadjustedExactBinomial": true,
     "nativeSourceOrRawDataDisposition": "NOT_YET_RECONCILED"
   },
-  "experimentalEndpoint": [
-    "alternating",
-    "nonalternating",
-    "undecided"
-  ],
+  "experimentalEndpoint": ["alternating", "nonalternating", "undecided"],
   "unmeasuredOrUnspecified": {
     "actualPrintMaterial": null,
     "wallHeightMm": null,
