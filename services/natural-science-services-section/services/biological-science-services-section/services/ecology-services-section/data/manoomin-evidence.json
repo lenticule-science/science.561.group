@@ -26,7 +26,15 @@
       "kind": "primary_study",
       "url": "https://doi.org/10.1007/s00284-019-01693-w",
       "date": "2019-04-24",
-      "name": "Tu et al., Microbial Diversity in the Edible Gall"
+      "name": "Tu et al., Microbial Diversity in the Edible Gall",
+      "study_extraction": {
+        "evidence_access": "Publisher/PubMed abstract and bibliographic metadata checked; complete methods and sampling appendix not independently reviewed.",
+        "sampling_unit": "Five harvested Zizania latifolia edible gall samples at differing growth/swelling stages; number of independent source farms or commerce lots not established from abstract.",
+        "method": "Culture-based isolation of microorganisms from gall material; fungal colony identity by DNA sequencing, bacteria by MALDI-TOF, plus qPCR and ARISA microbial profiling.",
+        "directly_observed": "Several Ustilago esculenta strains recovered in culture from sampled harvested edible gall material; qPCR DNA found across assessed stages.",
+        "not_measured": "Not an infection challenge, experimental shipping/storage viability trial, retail consignment survey, fungal strain representativeness study, or North American native-host assay.",
+        "decision_relevance": "Establishes recoverable fungal material at harvest in selected samples; cannot determine 2026 retail shipment infectivity."
+      }
     },
     {
       "id": "chigira-2023",
@@ -34,7 +42,15 @@
       "url": "https://doi.org/10.1264/jsme2.ME23034",
       "date": "2023",
       "name": "Chigira et al., Mating types of Ustilago esculenta in Japan",
-      "date_precision": "year"
+      "date_precision": "year",
+      "study_extraction": {
+        "evidence_access": "PMC full-text abstract, methods framing, Results on mating-type typing and laboratory crosses checked.",
+        "sampling_unit": "Two Zizania latifolia cultivars from Japanese paddy fields, plus ten previously collected fungal genetic-resource strains (including one from China) described in the Results.",
+        "method": "Sporidial and haploid isolation, PCR mating-type genotyping and in-vitro pairwise mating to observe hyphal development.",
+        "directly_observed": "MAT-2/MAT-3 predominance in studied Japanese cultivars and mating/filament production from tested distinct mating types.",
+        "not_measured": "No challenge test of American Zizania species, imported product, live edible material following US distribution, or a quantified native-rice infection probability.",
+        "decision_relevance": "Demonstrates diversity of mating types and laboratory mating competence, not that any real imported retail stem initiates disease."
+      }
     },
     {
       "id": "eppo-2024",
@@ -76,7 +92,15 @@
       "name": "Zhang et al. 2017, BMC Microbiology 17:228, differential T/MT strain development and infection assays",
       "doi": "10.1186/s12866-017-1138-8",
       "source_section": "Abstract; Results; Discussion",
-      "evidence_unit": "zhang-2017-longjiao2-strains"
+      "evidence_unit": "zhang-2017-longjiao2-strains",
+      "study_extraction": {
+        "evidence_access": "Full open-access article abstract, Results (growth, mating, inoculation) and Discussion including mixed pairing outcome checked.",
+        "sampling_unit": "Four selected fungal sporidial isolates: UeMT10/UeMT46 from edible white galls and UeT14/UeT55 from gray galls of Asian cultivar Longjiao 2; selected pairs are not a population prevalence sample.",
+        "method": "In-vitro growth, germination and mating assays; inoculation on Zizania latifolia; microscopy and fungal genome resequencing.",
+        "directly_observed": "MT/MT pairing under tested conditions showed impaired infection and growth; T types retained full cycle; certain tested T/MT cross pairings could mate and infect the Asian cultivar.",
+        "not_measured": "No native American host was inoculated, no commercial shipment was sampled, no postharvest environmental dispersal was measured.",
+        "decision_relevance": "Supports strain-specific infection differences and a crucial mixed-pair exception; no generic 'white gall equals safe' inference."
+      }
     },
     {
       "id": "fws-2025",
@@ -94,7 +118,15 @@
       "date": "2015",
       "date_precision": "year",
       "name": "Guo et al., Z. latifolia host genome after longstanding U. esculenta infection",
-      "source_section": "Summary and Introduction: infected rhizome crop propagation versus wild host"
+      "source_section": "Summary and Introduction: infected rhizome crop propagation versus wild host",
+      "study_extraction": {
+        "evidence_access": "Publisher full-text summary and accessible introduction consulted; full underlying genomic methods not independently reconstructed.",
+        "sampling_unit": "Comparison of cultivated fungus-associated Asian Zizania latifolia host plant material with wild Asian Zizania latifolia host material (detailed accession counts not reverified).",
+        "method": "Comparative host genome and transcriptome analysis in the context of long-term cultivated fungal association.",
+        "directly_observed": "Cultivated fungus-associated Z. latifolia showed differences in immune receptor and plant–pathogen interaction genes; edible-gall cultivars are maintained via infected rhizomes rather than flowering.",
+        "not_measured": "No demonstrated infection of North American Zizania, no imported food viability experiment, no proof that all wild Z. latifolia is sterile.",
+        "decision_relevance": "Distinguishes selected vegetatively maintained culinary crop from the living plant species capable of establishment as an invader."
+      }
     },
     {
       "id": "usfws-2025-pdf",
@@ -519,5 +551,13 @@
     "scholarly_accepted": false,
     "note": "Do not derive a store-violation report, outbreak warning or accepted scientific release from this dataset without current primary receiving evidence and appropriate authority."
   },
-  "source_notes": "Evidence statuses describe what source texts support in their own host/material context, not independent scientific acceptance, measured contemporary risk, or official U.S. commodity compliance. Sources may reference overlapping scientific study populations; event identifiers must not be treated as counts of independent infected plants. Added source-critical differentiators: partial MT infection phenotype is not a categorical safety rule because some T/MT mixed pairings infected cultivated Asian hosts; FWS 2025 documents old living-plant research introductions; NZ live-plant management differs from US food import status. Existing stewardship plans are public, not external consent."
+  "source_notes": "Evidence statuses describe what source texts support in their own host/material context, not independent scientific acceptance, measured contemporary risk, or official U.S. commodity compliance. Sources may reference overlapping scientific study populations; event identifiers must not be treated as counts of independent infected plants. Added source-critical differentiators: partial MT infection phenotype is not a categorical safety rule because some T/MT mixed pairings infected cultivated Asian hosts; FWS 2025 documents old living-plant research introductions; NZ live-plant management differs from US food import status. Existing stewardship plans are public, not external consent.",
+  "extraction_protocol": {
+    "completed_on": "2026-10-11",
+    "description": "Targeted source-critical extraction from four selected primary studies. Each row states access scope, actual sampling unit, tests, direct findings and absent measurements. Not a systematic literature screen, secondary independent peer-review receipt or an exhaustive risk appraisal.",
+    "inclusion": "Original experiments or comparative genomics on Zizania latifolia–Ustilago esculenta biology relevant to edible tissue, strain behavior, mating or vegetative cultivation.",
+    "exclusion": "Agency secondary host lists, historic specimen catalogues and regulatory webpages are kept as separate source kinds, not miscast as laboratory experiments.",
+    "reproducibility_limit": "Candidate search histories, complete screening counts, all full methods, and original raw data have not been independently reanalysed. No PRISMA/ROSES compliance claim until those exist.",
+    "ethics": "No experiments with live pathogens or plant material and no public disclosure of protected manoomin locations or traditional knowledge."
+  }
 }
