@@ -38,3 +38,9 @@ test('input source records are immutable under analysis',()=>{
  const snapshot=JSON.stringify([method,table1,table2]);assay();
  assert.equal(JSON.stringify([method,table1,table2]),snapshot);
 });
+
+test('claimed native-page verification triggers provenance requalification',()=>{
+ const edited=structuredClone(table1);
+ edited.source.nativePdfPageImageVerified=true;
+ assert.throws(()=>assay(method,edited,table2),/source-verification upgrade/);
+});
