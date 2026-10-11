@@ -178,3 +178,42 @@ test('experimental observations cannot be promoted into retail viability prevale
  assert.match(cross.directly_observed,/T\/MT/);
  assert.match(cross.not_measured,/commercial shipment/);
 });
+
+test('Climate 6 score is not an invasion probability',()=>{
+ const claim=byId(source,'great-lakes-high-climate-match');
+ assert.equal(claim.status,'source_report');
+ assert.equal(claim.measurement.quantity,0.814);
+ assert.equal(claim.measurement.forecast_probability,false);
+ assert.match(claim.measurement.denominator,/target points/);
+ assert.match(claim.limits.join(' '),/not an 81.4% invasion probability/);
+ const broken=copy();byId(broken,'great-lakes-high-climate-match').measurement.forecast_probability=true;
+ assert.match(validateEvidence(broken).join(' '),/must not be relabeled invasion probability/);
+});
+
+test('wrong denominator or impossible climate ratio fails scientific admission',()=>{
+ const broken=copy();byId(broken,'great-lakes-high-climate-match').measurement.denominator='';
+ assert.match(validateEvidence(broken).join(' '),/measurement lacks valid quantity unit or denominator/);
+ const badFraction=copy();byId(badFraction,'great-lakes-high-climate-match').measurement.quantity=1.12;
+ assert.match(validateEvidence(badFraction).join(' '),/fraction outside unit interval/);
+});
+
+test('herbarium, planted records and wild established populations remain distinct',()=>{
+ const claim=byId(source,'contiguous-us-mapped-records-not-wild');
+ assert.equal(claim.track,'us_introductions');
+ assert.match(claim.statement,/do not represent established wild populations/);
+ assert.match(claim.source_locator,/Figure 2/);
+ const old=byId(source,'historic-us-living-plantings');
+ assert.match(old.limits.join(' '),/non-established wild populations/);
+});
+
+test('Guo and Chigira primary samples have actual accession and country provenance',()=>{
+ const guo=source.sources.find(s=>s.id==='guo-2015').study_extraction;
+ assert.match(guo.sampling_unit,/HSD2/);
+ assert.match(guo.sampling_unit,/Zhejiao2/);
+ assert.match(guo.sampling_unit,/Jiayou1/);
+ assert.match(guo.evidence_access,/Table 1/);
+ const chigira=source.sources.find(s=>s.id==='chigira-2023').study_extraction;
+ assert.match(chigira.sampling_unit,/nine sourced from Japan/);
+ assert.match(chigira.sampling_unit,/MAFF 305616/);
+ assert.match(chigira.evidence_access,/Table 4/);
+});
