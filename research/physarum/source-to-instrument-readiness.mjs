@@ -1,3 +1,7 @@
+/** Science #27: independently derive source-accounting gate for an instrument proposal.
+ * This is a static provenance/arithmetic review of transcribed literature, not
+ * an observation, independent epistemic receiving, or fabrication release.
+ */
 import {auditForcedTurnTable,crossAuditDirectionTables} from './forced-turn-audit.mjs';
 import {assayInstrumentMethods} from './instrument-assay.mjs';
 
