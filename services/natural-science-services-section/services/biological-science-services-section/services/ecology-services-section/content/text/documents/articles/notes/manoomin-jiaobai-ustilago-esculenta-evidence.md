@@ -53,6 +53,8 @@ The 2024 EPPO biological datasheet independently documents invasive *Z. latifoli
 
 Independently, a **U.S. Fish and Wildlife Service ecological risk screening revised March 2023 and issued as an April 2025 web version** rated introduced *Z. latifolia* **High Risk** for the contiguous United States [S27]. Its conclusion integrates reported invasiveness and climate matching, with broad medium-to-high climate matches across much of the contiguous country. This is a stronger U.S.-specific screening basis for **plant establishment and wetland displacement**, not a finding that *U. esculenta* has infected American wild rice, nor a prediction that every suitable waterway will be invaded. EPPO and USFWS partly draw on the same historical introduced populations; these two agency syntheses do **not** count as two independent field invasions.
 
+**Great Lakes-specific climate screen, not a probability:** The federal assessment names high climate match around the Great Lakes Basin and calculates a **contiguous-U.S. Climate 6 score of 0.814**, the fraction of assessed target points meeting a climate similarity threshold [S28, §§6–7]. Neither 0.814 nor the map is a probability of invasion or a site-specific manoomin damage estimate. FWS also states its mapped Maryland and Virginia records were **not established wild populations**. Habitat suitability and occurrence must remain separately measured.
+
 The [full USFWS screening](https://www.fws.gov/sites/default/files/documents/2025-06/ecological-risk-screening-summary-manchurian-wildrice-april-2025.pdf) cites **Terrell and Batra (1982)** on historical *living-plant* introductions into U.S. research facilities and universities, including a University of Minnesota transfer, and notes a seed listing observed in 2023 [S28]. It does **not** establish that those research collections survive today or prove fresh edible stems currently breach import rules. Those are distinct introduction mechanisms. More consequentially, [Biosecurity New Zealand](https://www.mpi.govt.nz/biosecurity/exotic-pests-and-diseases-in-new-zealand/long-term-biosecurity-management-programmes/national-interest-pest-responses-programme/manchurian-wild-rice-eradication) documents established invasive populations, an approximately 500-hectare Northland containment area, and an eradication programme for *living* plants [S29]. This is real management evidence, not a U.S. legal precedent.
 
 Cultivated jiaobai lines maintained through infected rhizomes often lose flowering [S3], but **the perennial plant species is not universally sterile**: seed and rhizome fragments can disperse in introduced populations [S28, S29]. We must not substitute the reproduction of a selected edible cultivar for the whole invasive-plant species.
@@ -66,6 +68,8 @@ CDFA [S1] independently lists *Z. aquatica* as a host, while the 2020 primary st
 In a 2018 CDFA discussion [S11], a botanist said *Z. palustris* had not been tested as a host. This contemporary uncertainty matters more to present-day native-host risk than the species printed on a 1911 greenhouse label.
 
 ### What edible white versus gray jiaobai establishes
+
+The full Guo et al. (2015) Results and Table 1 compare **one wild Asian plant genome (HSD2)** with **two cultivated Asian genomes (Zhejiao2 and Jiayou1)**; those are not replicated native American host experiments [S3]. Chigira et al. (2023), Table 4, lists **nine Japanese archived strains and one Chinese-origin strain (yeast4, MAFF 305616)** among its ten strain resources [S12]; an abstract's geographic shorthand should not replace the original sample table. The source-owned machine-readable extraction records those sample identities and the parts of the experiments that were not conducted.
 
 A 2016 Indian morphogenesis study of *Z. latifolia* used plant microsatellite and fungal ITS comparisons to identify the Asian host–fungus association [S21]. This is independent modern evidence for the established **Asian** association, not a diagnostic test of native American *Zizania*.
 
@@ -144,8 +148,8 @@ These existing primary institutional accounts should anchor useful applied resea
 
 This ecology research currently has two distinct, **unreviewed** manuscripts, retained in the owning Science repository rather than reproduced in a news or app repository:
 
-- [Native-host and fungal evidence assessment, working paper v0.6](2026/10/11/2026-10-11-ustilago-esculenta-host-records-working-paper.md): disputed *Zizania* host records, fungal strain infection biology, original source limitations and archival appendix.
-- [Two-pathway assessment, working paper v0.3](2026/10/11/2026-10-11-two-pathways-to-wild-rice-risk-working-paper.md): imported aquatic perennial establishment versus harvested-food fungal movement, independent causal gates and U.S. federal plant-risk screening.
+- [Native-host and fungal evidence assessment, working paper v0.7](2026/10/11/2026-10-11-ustilago-esculenta-host-records-working-paper.md): disputed *Zizania* host records, fungal strain infection biology, original source limitations and archival appendix.
+- [Two-pathway assessment, working paper v0.4](2026/10/11/2026-10-11-two-pathways-to-wild-rice-risk-working-paper.md): imported aquatic perennial establishment versus harvested-food fungal movement, independent causal gates and U.S. federal plant-risk screening.
 
 The primary-study records now additionally preserve the **material sampled, experimental assays, direct observations, unmeasured outcomes and abstract/full-text access boundary**, so downstream reporting can check what was *actually* tested. No sample-size estimate for U.S. retail lots or native-host infection has been inferred from the Asian experimental studies.
 
