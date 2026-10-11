@@ -63,7 +63,7 @@ A surviving voucher, exchange duplicate, original laboratory accession, associat
 
 The California Department of Food and Agriculture's **2017 fungus assessment** lists *Z. aquatica*, *Z. latifolia* and *Zizania* sp. as hosts and reports PCR/sequencing confirmation of *U. esculenta* in introduced *Z. latifolia* tissue from Riverside County [CDFA 2017]. The latter is a real introduced-host diagnosis, but it does **not** verify the former native-host list entry. That assessment also records an infected 1991 planting near Modesto, an interception in 1998, and 1999 Louisiana plots eradicated in 2000. These event types must remain distinct.
 
-In the same agency's **2018 *Z. latifolia* assessment**, a responding CDFA botanist stated that *Z. latifolia* was the only **known** host and that infection of *Z. palustris* had **not** been tested [CDFA 2018]. A 2015 genomic study of the cultivated interaction also described *Z. latifolia* as the only known host [Guo 2015]. The contradictions are not resolved merely by counting how many sources mention the native taxon.
+In the same agency's **2018 *Z. latifolia* assessment**, a responding CDFA botanist stated that *Z. latifolia* was the only **known** host and that infection of *Z. palustris* had **not** been tested [CDFA 2018]. A 2015 genomic study described *Z. latifolia* as the only known host [Guo 2015]. A 2016 Indian microscopy/genetic study independently identified *U. esculenta* on the Asian host [Sinha 2016], without testing an American host. The contradictions are not resolved merely by counting how many sources mention the native taxon.
 
 A USDA-NRCS **2024 native *Z. aquatica* guide** says that the plant's culms may be infected by *U. esculenta* but cites Kealey, Kosikowski and Gray (1981). That cited article is explicitly about **corn smut (*U. maydis*) as a food source** [NRCS 2024; Kealey 1981]. The citation does not establish *U. esculenta* infecting native *Z. aquatica*. We cannot determine from this miscitation whether the guide's biological claim originated elsewhere. Consequently, it is a provenance defect, **not** proof of resistance.
 
@@ -117,6 +117,20 @@ This manuscript is a **targeted desk review** with directly identified records; 
 
 To advance this draft toward publication, preserve a dated source/selection log with complete query strings, retrieval dates, included/excluded candidate records, archived primary material where lawful, and a falsifiable extraction protocol; validate original fungal and host identifications; seek source-critical independent Science receiving and relevant external review; settle ownership and reuse rights; and explicitly label any public working-paper distribution as **unreviewed** until those conditions are met. The [scientific evidence note](../../../manoomin-jiaobai-ustilago-esculenta-evidence.md) lists the further science/reporting gates; no new science-publishing system is proposed.
 
+## Appendix A. Targeted discovery and audit trail
+
+The work was assembled on **2026-10-11** by directed source tracing, not by exhaustive screening. These are example **exact search strings actually used** to find or cross-check the linked scientific records; search-engine rankings and counts were not retained, so they cannot support a retrospective PRISMA flow chart:
+
+- `Ustilago esculenta Zizania aquatica palustris wild rice infection host range original specimen herbarium`
+- `"Ustilago esculenta" "Zizania aquatica" "1911" specimen`
+- `"Zizania aquatica" "latifolia" "synonym" 1890 1910 botanical host`
+- `"Microbial Diversity in the Edible Gall on White Bamboo" Ustilago esculenta authors 2019 culturing harvested five samples`
+- `2018 2018-05424 importation of plants for planting 7 CFR 319.37 rule`
+
+Source categories admitted into this targeted set were original archival catalogue entries, taxonomic authority records, modern scientific papers with resolved authors/DOI, first-party agency risk material and current published institutional records. Secondary unattributed host lists were retained as **claims to trace**, not upgraded to experimental observations. The publicly accessible USDA 1922 PDF and USDA-NRCS 2024 guide were read for the specifically cited entries; neither was treated as a modern taxonomic redetermination. Commercial source previews and database abstracts are marked as limited evidence where original full experimental methods were not independently checked.
+
+The following **cannot** be reported as completed: independent duplicate screeners, systematic search of all databases, full-text access to every cited study, sensitivity assessment, an exhaustive native-host-negative survey, licensed release, accepted scientific review, and definitive federal commodity admissibility. The protocol should be frozen prospectively before any later systematic claim.
+
 ## References
 
 - **CDFA (2017).** [*Ustilago esculenta* pest-rating assessment](https://blogs.cdfa.ca.gov/Section3162/?p=4271). Original agency account of 2017 introduced-host PCR/sequencing and historical US introduction events.
@@ -128,6 +142,7 @@ To advance this draft toward publication, preserve a dated source/selection log 
 - **Terrell E. E. and Batra L. R. (1982).** [*Zizania latifolia* and *Ustilago esculenta*, a grass-fungus association](https://doi.org/10.2307/4254397). *Economic Botany* 36:274–285.
 - **NRCS, Snell S. C. (2024).** [Annual wildrice (*Zizania aquatica*) plant guide](https://plants.sc.egov.usda.gov/DocumentLibrary/plantguide/pdf/pg_ZIAQ.pdf), pp. 6 and 8 of the PDF.
 - **Kealey K. S., Kosikowski F. V., Gray W. D. (1981).** [Corn smut as a food source—perspectives on biology, composition and nutrition](https://doi.org/10.1080/10408398109527320). *Critical Reviews in Food Science and Nutrition* 15:321–351.
+- **Sinha S. K., Deka A. C., Bharalee R. (2016).** [Morphogenesis of edible gall in *Zizania latifolia* due to *Ustilago esculenta* infection in India](https://doi.org/10.5897/AJMR2016.8207). *African Journal of Microbiology Research* 10:1215–1223. Asian host only.
 - **Tu Z. et al. (2019).** [Microbial diversity in the edible gall on white bamboo](https://doi.org/10.1007/s00284-019-01693-w). *Current Microbiology* 76:824–834; PMID 31020346.
 - **Chigira Y. et al. (2023).** [Mating types of *U. esculenta* infecting *Z. latifolia* cultivars in Japan](https://doi.org/10.1264/jsme2.ME23034). *Microbes and Environments* 38:ME23034.
 - **EPPO (2024).** [*Zizania latifolia* datasheet](https://doi.org/10.1111/epp.13044). *EPPO Bulletin* 54:355–360.
