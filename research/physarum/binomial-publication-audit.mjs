@@ -13,6 +13,10 @@ export function exactTwoSidedHalfBinomial(success,n){
  for(let j=0;j<=k;j++)logp=logadd(logp,nf-logFact(j)-logFact(n-j)-n*ln2);
  return Math.min(1,2*Math.exp(logp));
 }
+/** Each case has success/n from Table 1 and a printed p-value. p<.001
+ * readings are censored and can only be tested for consistency with bound.
+ * Numeric p-values are checked to the printed three decimals.
+ */
 export function auditPrintedPValues(cases){
  if(!Array.isArray(cases)||!cases.length)throw new TypeError('nonempty hypothesis cases required');
  const ids=new Set();
@@ -31,6 +35,11 @@ export function auditPrintedPValues(cases){
  });
  return {assay:'conditional binomial H0=0.5; exact two-sided unadjusted',status:rows.every(r=>r.consistentWithClaimedTest)?'CONSISTENT':'FAILED_P_RECONCILIATION',rows};
 }
+
+/** Join published Table 1 counts and printed p-values by their condition IDs,
+ * not their presentation order. The DOI/workRef are self-declared corpus
+ * provenance guards, NOT authentication of the publisher or trial data.
+ */
 export function buildPublishedBinomialCases(countTable,printedTable){
  if(typeof countTable?.workRef!=='string'||!countTable.workRef||printedTable?.workRef!==countTable.workRef)
   throw new TypeError('publication workRef mismatch');
@@ -64,6 +73,9 @@ export function buildPublishedBinomialCases(countTable,printedTable){
   ];
  });
 }
+/** FDR correction for an explicitly specified scientific hypothesis family.
+ * Does not decide the family or infer physical mechanism.
+ */
 export function benjaminiHochberg(pValues){
  if(!Array.isArray(pValues)||pValues.length===0)throw new TypeError('nonempty probability family required');
  const n=pValues.length;
