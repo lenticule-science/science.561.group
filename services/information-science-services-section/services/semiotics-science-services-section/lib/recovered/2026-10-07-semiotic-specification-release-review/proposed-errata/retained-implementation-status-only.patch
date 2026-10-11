@@ -1,0 +1,92 @@
+--- a/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/content/text/documents/articles/specifications/2026-09-23-specification-of-the-semiotic-expression-notation.md
++++ b/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/content/text/documents/articles/specifications/2026-09-23-specification-of-the-semiotic-expression-notation.md
+@@ -1,7 +1,7 @@
+ ---
+ title: "Specification of the semiotic expression notation"
+ date-created: 2026-09-23
+-status: core stated from the 2026-06-18 reference and the Lean development; the implementation admits exactly the core and the four executable forms
++status: core stated from the 2026-06-18 reference and the Lean development; later implementation extensions are recorded separately
+ part-of: computer-code-engineering-services-section
+ version: 0.1.0
+ stability: draft
+@@ -122,3 +122,21 @@
+   identity of an arbitrary term, which must first be normalized, is the code
+   runtime's (`semiotic-expression-notation/semantic-content-identity`).
+ - Readable path surfaces: semiotic resource names, which read to SEN terms.
++
++## Implementation status at the October 6 source review
++
++This 0.1.0 draft specifies the core-plus-four profile above. At source revision
++`36116a727f8993d64063341d9ed5cbd281ecd00f`, the implementation's grammar
++descriptor additionally declares `prim`, `inl`, `inr`, `case` and `abort`,
++and the types `empty` and `sum`. The typing engine has cases for the sums
++and empty elimination but no `prim` case. The evaluator's `prim` rule
++requires a supplied interpreter primitive table. These are implementation
++observations; this note does not add them to the normative profile or extend
++the cited proof's scope. Their governing specification revision remains to
++be reconciled.
++
++The `sen-core-v2.tsv` fixture includes a `four-neither` carrier-identity
++vector for the retired `four` constructor. Its bytes still have their
++recorded content identity; that does not make it an admitted current SEN
++term. The typed conformance boundary is `["ascribe", Type, Term]`, an
++envelope checked before and after bounded evaluation.
+--- a/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/content/text/documents/articles/specifications/2026-09-23-specification-of-the-semiotic-eavt.md
++++ b/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/content/text/documents/articles/specifications/2026-09-23-specification-of-the-semiotic-eavt.md
+@@ -1,7 +1,7 @@
+ ---
+ title: "Specification of the semiotic EAVT"
+ date-created: 2026-09-23
+-status: realized; the semiotic-eavt modules of the code section
++status: implemented in semiotic-eavt-services-section; executable interface checked at revision 36116a727f8993d64063341d9ed5cbd281ecd00f
+ part-of: computer-code-engineering-services-section
+ version: 0.1.0
+ stability: draft
+@@ -20,14 +20,20 @@
+ 
+ SEAVT is plain EAVT underneath: rows are JSONL lines in dated journals
+ (`data/logs/YYYY/MM/DD/<feed>.jsonl`), written and read by the EAVT section.
+-SEAVT adds only the admission that e, a and v are notation terms, which is why
+-it lives in the code section beside the notation
+-(`@red-cup-engineering/computer-code-engineering-services-section/semiotic-eavt/*`)
+-and depends downward on EAVT in the data section.
++SEAVT adds the admission that e, a and v are notation terms. At source
++revision `36116a727f8993d64063341d9ed5cbd281ecd00f`, the implementation is
++`@red-cup-engineering/semiotic-eavt-services-section`, nested under the
++data/content/JSONL/EAVT section. It uses the data section's SEN statics for
++coordinate admission. The package placement is implementation information;
++the row definition above is unchanged.
+ 
+ ## Rows
+ 
+-- `seavtRow({e, a, v, t})` admits a row; `normalizeSeavtRow` normalizes then admits.
++- `seavtRow({e, a, v, t})` admits a row whose coordinates are closed and have
++  inferable SEN types. A term that requires an explicit expected type is
++  not admitted by this boundary merely because it can be checked against it.
++- `normalizeSeavtRow` normalizes the EAVT row representation and then admits
++  it; it does not reduce the coordinate terms to normal form.
+ - `seavt(e, a, v, t)` builds a row from notation terms.
+ - `seavtOfJson(entity, attribute, value, time)` builds a row from JSON
+   coordinates through the notation's JSON bridge, for a boundary that
+@@ -48,7 +54,7 @@
+ 
+ ## Operations
+ 
+-Each operation is implemented in its named module of `src/semiotic-eavt/`, with exported input/output schemas and a command face accepting one JSON value on stdin.
++Each operation is implemented in its named module of the package's `src/`, with exported input/output schemas and a command face accepting one JSON value on stdin.
+ 
+ | Effect | Script |
+ | --- | --- |
+@@ -61,7 +67,12 @@
+ | Check references and responses | `check-semantic-record-references.mjs`, `check-semantic-record-responses.mjs` |
+ | Inventory and replay historical record stores | `inventory-semantic-record-retirement.mjs`, `replay-semantic-record-retirement.mjs` |
+ 
+-Recording takes `{root, objectKind, category, record, recordedAt, charge, relation?}`. `charge` contains independent `support` and `refutation` booleans. The record receives its semantic-content identity, and the journal stores RMN coordinates. Querying by `{root, objectKind, category}` verifies those identities before returning content.
++Recording takes
++`{root, objectKind, category, record, recordedAt, told, relation?, causes?, origin?}`.
++`told` contains independent `for` and `against` booleans. The record receives
++its semantic-content identity, and the journal carries SEN coordinates with
++the evidence claim. Querying by `{root, objectKind, category}` verifies those
++identities before returning content.
+ 
+ Template binding takes `{template, parameters}` and replaces a sole `{$pointer:"/path"}` object with the referenced parameter value. Missing pointers refuse the request. Domain admission checks the supplied JSON Schema before any journal write.
