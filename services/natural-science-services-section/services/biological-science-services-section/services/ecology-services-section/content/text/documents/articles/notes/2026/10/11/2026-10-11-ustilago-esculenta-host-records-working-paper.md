@@ -11,7 +11,7 @@ tags: [ecology, mycology, botany, plant-pathology, biosecurity, scientific-revie
 
 # *Ustilago esculenta* and native North American wild rice: an evidence assessment
 
-**Working paper, version 0.5 — 11 October 2026. Not independently scientifically received, peer reviewed, or accepted for L-Space scholarly release.**
+**Working paper, version 0.6 — 11 October 2026. Not independently scientifically received, peer reviewed, or accepted for L-Space scholarly release.**
 
 Research synthesis: ChatGPT-Web for Lenticule Science. No other authorship or tribal institutional endorsement is asserted. The [underlying ecological evidence register](../../../manoomin-jiaobai-ustilago-esculenta-evidence.md) is the maintained source record; this manuscript states the argument and its current limits.
 
@@ -38,6 +38,8 @@ For Anishinaabe and other nations, manoomin is also a living relation, food reso
 The immediate questions are: (1) which commodities and origins APHIS currently allows; (2) whether credible evidence demonstrates a viable introduction route from harvested food or propagative plants; (3) whether any native *Zizania* species is a demonstrated host; and (4) what invasive-plant effects are documented independently of fungal infection. These questions can inform prevention without awaiting resolution of a century-old taxonomic label. The historical host record matters only if a primary specimen can resolve a disputed host claim. Other threats to manoomin—including hydrology, water quality and known wild-rice pathogens—must not be collapsed into this one hypothesis.
 
 ## 2. Methods and admissible evidence
+
+**Primary-study extraction and audit:** The related [source-owned experiment records](https://github.com/lenticule-science/science-services-section/blob/main/services/natural-science-services-section/services/biological-science-services-section/services/ecology-services-section/data/manoomin-evidence.json) distinguish material, assay and limits for Guo (2015), Zhang (2017), Tu (2019) and Chigira (2023). The Zhang finding is based on **four selected Asian-host fungal isolates**, including mixed T/MT pairings capable of infecting that Asian host; Tu's culturing uses **five harvested galls**, not independent national consignments; Chigira's laboratory mating tests do not challenge American *Zizania*; and Guo's comparative host genomics does not assay retail transmission. A reader should not count those four primary studies as replicated native-host infection tests. The full experimental source extract and its [tests](https://github.com/lenticule-science/science-services-section/blob/main/tests/manoomin-evidence.test.mjs) separate observed results, sample independence and unmeasured links.
 
 The accompanying **machine-readable evidence extract** lives in this ecology section at [`data/manoomin-evidence.json`](https://github.com/lenticule-science/science-services-section/blob/main/services/natural-science-services-section/services/biological-science-services-section/services/ecology-services-section/data/manoomin-evidence.json). It records bounded assertions, independent source identifiers, material/species scope and explicit limits; `data/manoomin-evidence.mjs` and `tests/manoomin-evidence.test.mjs` reject ungrounded promotion of a retail report to a violation, an unresolved species question to a native infection, or these unreviewed findings to accepted scholarly publication. This structured extract is a **subset** of the narrative research, not a separate primary source, substitute for the full papers, or automatic editorial warrant.
 
@@ -200,4 +202,4 @@ A curator's high-resolution original label scan, associated host voucher, exchan
 - **Tricco A. C. et al. (2018).** [PRISMA extension for scoping reviews](https://doi.org/10.7326/M18-0850). *Annals of Internal Medicine* 169:467–473.
 - **Haddaway N. R. et al. (2018).** [ROSES reporting standards](https://doi.org/10.1186/s13750-018-0121-7). *Environmental Evidence* 7:7.
 
-*Version 0.5: targeted evidence synthesis; scientific receiving, full literature screening, current APHIS determination, original specimen examination, rights decision and external review remain open.*
+*Version 0.6: targeted evidence synthesis; scientific receiving, full literature screening, current APHIS determination, original specimen examination, rights decision and external review remain open.*

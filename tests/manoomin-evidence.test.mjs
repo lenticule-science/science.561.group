@@ -145,3 +145,36 @@ test('noxious-weed enumeration absence is never U.S. import authorization',()=>{
  assert.match(enumeration.limits.join(' '),/not an import approval/);
  assert.equal(byId(source,'current-import-eligibility').status,'unresolved');
 });
+
+test('primary studies require a real experimental extraction',()=>{
+ const primaries=source.sources.filter(s=>s.kind==='primary_study');
+ assert.equal(primaries.length,4);
+ for(const row of primaries){
+  assert.ok(row.study_extraction?.sampling_unit);
+  assert.ok(row.study_extraction?.method);
+  assert.ok(row.study_extraction?.directly_observed);
+  assert.ok(row.study_extraction?.not_measured);
+ }
+ const broken=copy();
+ delete broken.sources.find(s=>s.id==='zhang-2017').study_extraction.sampling_unit;
+ assert.match(validateEvidence(broken).join(' '),/primary study missing sampling_unit: zhang-2017/);
+});
+
+test('downstream evidence projection carries primary study methods and missing tests',()=>{
+ const facts=forEditorialReview(source);
+ const finding=facts.find(c=>c.id==='cultivated-strain-pathogenicity-diff');
+ const zhang=finding.source_refs.find(s=>s.id==='zhang-2017');
+ assert.match(zhang.sampling_unit,/Four selected|Four/);
+ assert.match(zhang.not_measured,/North American|native American/);
+ assert.match(zhang.directly_observed,/MT\/MT/);
+ assert.equal(finding.eligible_for_publication,false);
+});
+
+test('experimental observations cannot be promoted into retail viability prevalence',()=>{
+ const tu=source.sources.find(s=>s.id==='tu-2019').study_extraction;
+ assert.match(tu.sampling_unit,/Five harvested/);
+ assert.match(tu.not_measured,/retail consignment survey/);
+ const cross=source.sources.find(s=>s.id==='zhang-2017').study_extraction;
+ assert.match(cross.directly_observed,/T\/MT/);
+ assert.match(cross.not_measured,/commercial shipment/);
+});

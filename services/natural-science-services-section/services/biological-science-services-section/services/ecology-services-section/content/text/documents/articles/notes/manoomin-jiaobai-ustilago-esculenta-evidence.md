@@ -144,8 +144,10 @@ These existing primary institutional accounts should anchor useful applied resea
 
 This ecology research currently has two distinct, **unreviewed** manuscripts, retained in the owning Science repository rather than reproduced in a news or app repository:
 
-- [Native-host and fungal evidence assessment, working paper v0.5](2026/10/11/2026-10-11-ustilago-esculenta-host-records-working-paper.md): disputed *Zizania* host records, fungal strain infection biology, original source limitations and archival appendix.
-- [Two-pathway assessment, working paper v0.2](2026/10/11/2026-10-11-two-pathways-to-wild-rice-risk-working-paper.md): imported aquatic perennial establishment versus harvested-food fungal movement, independent causal gates and U.S. federal plant-risk screening.
+- [Native-host and fungal evidence assessment, working paper v0.6](2026/10/11/2026-10-11-ustilago-esculenta-host-records-working-paper.md): disputed *Zizania* host records, fungal strain infection biology, original source limitations and archival appendix.
+- [Two-pathway assessment, working paper v0.3](2026/10/11/2026-10-11-two-pathways-to-wild-rice-risk-working-paper.md): imported aquatic perennial establishment versus harvested-food fungal movement, independent causal gates and U.S. federal plant-risk screening.
+
+The primary-study records now additionally preserve the **material sampled, experimental assays, direct observations, unmeasured outcomes and abstract/full-text access boundary**, so downstream reporting can check what was *actually* tested. No sample-size estimate for U.S. retail lots or native-host infection has been inferred from the Asian experimental studies.
 
 The [machine-readable claim register and its source locators](https://github.com/lenticule-science/science-services-section/blob/main/services/natural-science-services-section/services/biological-science-services-section/services/ecology-services-section/data/manoomin-evidence.json) are verified by [conservative evidence checks](https://github.com/lenticule-science/science-services-section/blob/main/tests/manoomin-evidence.test.mjs). A source file's existence, valid checks or branch merge is **not** a scientific peer-review acceptance or permission to advertise confirmed native infection, a current illegal import or an independently received outbreak report.
 
