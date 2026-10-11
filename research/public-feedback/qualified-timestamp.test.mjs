@@ -15,6 +15,28 @@ test('impossible Gregorian days, 24-hour normalization and illegal offsets fail 
     assert.throws(() => admitPublicFeedback(row, fixtureVerifier), /invalid observation/, at);
   }
 });
+test('Science and Coesite agree on nanosecond timestamp precision at both admission boundaries', () => {
+  for (const at of ['2026-10-10T23:25:15.1Z', '2026-10-10T23:25:15.123456789Z',
+    '2026-10-10T23:25:15.123456789+14:00']) {
+    const row = sample();
+    row.observations[0].at = at;
+    assert.equal(admitPublicFeedback(row, fixtureVerifier).customerAcceptance, 'unverified', at);
+  }
+  for (const at of ['2026-10-10T23:25:15.1234567890Z',
+    '2026-10-10T23:25:15.123456789012345Z',
+    '2026-10-10T23:25:15.1234567890+14:00']) {
+    const row = sample();
+    row.observations[0].at = at;
+    assert.throws(() => admitPublicFeedback(row, fixtureVerifier), /invalid observation/, at);
+    const policy = {profiles:{brief:{evidenceBudget:{targetWords:{minimum:300},minimumSections:1}}}};
+    const snapshot = {articleUrl:'https://example.org/article',profile:'brief',
+      profileEvidence:'publisher-profile-receipt',articleVersionDigest:'a'.repeat(64),
+      versionObservedAt:at,bodyWords:100,contextSections:0};
+    assert.equal(assessCurrentEditorialTarget(snapshot, policy, {
+      verifyPolicy:()=>true, verifyArticle:()=>true
+    }).classification, 'indeterminate', at);
+  }
+});
 test('real leap day, bounded offset, and existing dated fixture remain syntactically valid', () => {
   for (const at of ['2024-02-29T23:25:15Z', '2026-10-11T23:25:15+14:00']) {
     const row = sample();
