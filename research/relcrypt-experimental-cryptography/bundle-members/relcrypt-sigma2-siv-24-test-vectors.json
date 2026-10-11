@@ -1,0 +1,121 @@
+{
+  "algorithm": "RelCrypt-Sigma2-SIV-24",
+  "status": "experimental research cipher; not production cryptography",
+  "generated_utc": "2026-06-24T03:41:18.407646+00:00",
+  "rounds": 24,
+  "tag_len_bytes": 16,
+  "vectors": [
+    {
+      "name": "empty_ad_empty_plaintext",
+      "rounds": 24,
+      "tag_len": 16,
+      "key_hex": "0000000000000000000000000000000000000000000000000000000000000000",
+      "nonce_hex": "00000000000000000000000000000000",
+      "associated_data_hex": "",
+      "plaintext_hex": "",
+      "ciphertext_hex": "",
+      "tag_hex": "592f9309948cc44aad84c399e32576a9",
+      "decryption_ok": true
+    },
+    {
+      "name": "empty_plaintext_nonempty_ad",
+      "rounds": 24,
+      "tag_len": 16,
+      "key_hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f",
+      "nonce_hex": "000102030405060708090a0b0c0d0e0f",
+      "associated_data_hex": "52656c4372797074206173736f6369617465642064617461",
+      "plaintext_hex": "",
+      "ciphertext_hex": "",
+      "tag_hex": "75e1c152a6aba50e7f48482f7b4a0b5d",
+      "decryption_ok": true
+    },
+    {
+      "name": "one_byte_plaintext",
+      "rounds": 24,
+      "tag_len": 16,
+      "key_hex": "1010101010101010101010101010101010101010101010101010101010101010",
+      "nonce_hex": "20202020202020202020202020202020",
+      "associated_data_hex": "",
+      "plaintext_hex": "00",
+      "ciphertext_hex": "0e",
+      "tag_hex": "5b40a9b89011379fc072eab76d30e7e3",
+      "decryption_ok": true
+    },
+    {
+      "name": "short_ascii",
+      "rounds": 24,
+      "tag_len": 16,
+      "key_hex": "393c1834ac9e1c8e9f8703ab15a4af4eec1c6cd1e1b65a46b6ce905aa17ca30f",
+      "nonce_hex": "17f3e86f503ed7889029d1f1b0ad892f",
+      "associated_data_hex": "6865616465723a72656c6d617468",
+      "plaintext_hex": "464f55522f4b342f534956206772656d6c696e20656e6372797074696f6e",
+      "ciphertext_hex": "310384ab8068dfdfc552f8f1ec92800bbdfa34fe8364fe28df2016661bf0",
+      "tag_hex": "28a500e4897f98cb89234fb88d3e73e3",
+      "decryption_ok": true
+    },
+    {
+      "name": "all_zero_64",
+      "rounds": 24,
+      "tag_len": 16,
+      "key_hex": "a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5",
+      "nonce_hex": "5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a",
+      "associated_data_hex": "61642d7a65726f",
+      "plaintext_hex": "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "ciphertext_hex": "422031e82968041cf3401ce7c6d8baf83461743d5832992b7eee89a09555528795299c0715312bd417dc922d721d6dc8ee3132c798f789f5197a9fa2df6aa827",
+      "tag_hex": "ea19cd764e93d01610b1e495ce4f93bf",
+      "decryption_ok": true
+    },
+    {
+      "name": "all_ff_64",
+      "rounds": 24,
+      "tag_len": 16,
+      "key_hex": "3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c",
+      "nonce_hex": "c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3",
+      "associated_data_hex": "61642d6666",
+      "plaintext_hex": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "ciphertext_hex": "c0cdf366297351d3e7bd02c6be208729485a81e8f426935e2bdd2fd9ce6faaf96536e2cd51abf0f6c4f5e2aa09b4bb23cced6db9a1136ed45322d79bdf08c79e",
+      "tag_hex": "63b79e329054f5bec9a383f7cf2dbbcd",
+      "decryption_ok": true
+    },
+    {
+      "name": "incrementing_0_255",
+      "rounds": 24,
+      "tag_len": 16,
+      "key_hex": "00112233445566778899aabbccddeeff00112233445566778899aabbccddeeff",
+      "nonce_hex": "0f1e2d3c4b5a69788796a5b4c3d2e1f0",
+      "associated_data_hex": "696e6372656d656e74696e67",
+      "plaintext_hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff",
+      "ciphertext_hex": "0e2e72c55770ad95214f93adda2cbe5edef178e25c550e8a636aea24e009895739d84c21125e044e550d2ee85b02dd3ac0b3f8847a52609bee6bf9004a4534261846aa58b484fee7b839b6681e5e2290be9c6851fafdddc6f4eecc89f2254894784f3d870ef941bbd2b09a8dd8b0ddd54c2c84ce84f986ffc7af018131de7167865646e9725963984f1dd03944435e1f25ccab94b173cd11d7d18b41a8f07d50ac8d845ae3d0a207674a31ff4fe1baf27907d8be71b07ddbe13e4440e9264c3a5be9dfc52ab4042376f9a15c048dd922c91ae3af631a0ff11f5c865fa60e9c3b38df4af0c0d43113487b1862cd22e64f6da113fcfc070ff1d0f9b01e6288a067",
+      "tag_hex": "9abb7f1560cc8fc053523d37eef540f1",
+      "decryption_ok": true
+    },
+    {
+      "name": "two_block_plus_tail",
+      "rounds": 24,
+      "tag_len": 16,
+      "key_hex": "828326fe7284a241f211d54b9b3315fb2cc77df5eee052feeb8bfa7c9eaf8e4b",
+      "nonce_hex": "e4cdd8cf83be16a453e3f0066ef42f24",
+      "associated_data_hex": "6173736f63696174656420646174612063726f7373696e67207468652073706f6e6765207261746520626f756e646172793a2030313233343536373839",
+      "plaintext_hex": "0b30557a9fc4e90e33587da2c7ec11365b80a5caef14395e83a8cdf2173c6186abd0f51a3f6489aed3f81d42678cb1d6fb20456a8fb4d9fe23486d92b7dc01264b7095badf04294e7398bde2072c51769bc0e50a2f54799ec3e80d32577ca1c6eb",
+      "ciphertext_hex": "32ef281bb5525041cb0a65ef5f6002ac1cb678e25d5fb8dd888f02e8fca308d44244f11ef9bcdbc8dfaffb3d257a3ab416378238983dcdb5249dda9fca4ab5cf4cdae1546e588fbf074e44006a22de9b0e8340ca2cfe7b1736bec5aecc8e5a524d",
+      "tag_hex": "8188d36f2ae7759706004bfb5f8b161e",
+      "decryption_ok": true
+    }
+  ],
+  "nonce_reuse_demo": {
+    "name": "nonce_reuse_distinct_plaintexts",
+    "rounds": 24,
+    "key_hex": "f4535d80b3f1edeb3d1226774bfa7b66e85ef34056a52c480031e8ca5f2c5998",
+    "nonce_hex": "4f9e450bf01d39553413d4937738bae9",
+    "associated_data_hex": "73616d65206e6f6e636520616e64204144",
+    "plaintext_1_hex": "666972737420706c61696e7465787420756e64657220726575736564206e6f6e6365",
+    "ciphertext_1_hex": "4e5786c9f2223f06f953f1ae27c2348d5748ee39b75c9b84bd0b2046fbf2539bc468",
+    "tag_1_hex": "acc927903d44ccab1d3180720a6882a9",
+    "plaintext_2_hex": "7365636f6e6420706c61696e7465787420756e64657220726575736564206e6f6e6365",
+    "ciphertext_2_hex": "0ef34fc2b346fcf89c459d0af1d3b44540dc9931398b27c7c996ba64b4d61eb2a4fe95",
+    "tag_2_hex": "a74fcabc2c54312cf1596fd0d5003bc1",
+    "ciphertexts_equal": false,
+    "tags_equal": false,
+    "xor_ciphertexts_equals_xor_plaintexts_for_common_prefix": false
+  }
+}

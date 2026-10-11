@@ -1,0 +1,29 @@
+{
+  "none": {
+    "corr_hw_top": 0.8172861982090492,
+    "corr_hw_bottom": -0.8171895433200066,
+    "corr_hw_classical": -0.0002524915521712647,
+    "corr_absdev_pole": 1.0,
+    "corr_absdev_classical": -0.9999999999999999,
+    "corr_dev2_pole": 1.0,
+    "corr_dev2_classical": -0.9999999999999999
+  },
+  "gauge2_uniform": {
+    "corr_hw_top": 0.8166949681333465,
+    "corr_hw_bottom": -0.8172292668528615,
+    "corr_hw_classical": 0.0013929128573498123,
+    "corr_absdev_pole": 1.0,
+    "corr_absdev_classical": -1.0,
+    "corr_dev2_pole": 1.0,
+    "corr_dev2_classical": -1.0
+  },
+  "k4_uniform": {
+    "corr_hw_top": -0.0024920912784695422,
+    "corr_hw_bottom": 0.0019849217557522877,
+    "corr_hw_classical": 0.0004388405314430385,
+    "corr_absdev_pole": 1.0,
+    "corr_absdev_classical": -1.0,
+    "corr_dev2_pole": 1.0,
+    "corr_dev2_classical": -1.0
+  }
+}

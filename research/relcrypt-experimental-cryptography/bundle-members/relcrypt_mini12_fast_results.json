@@ -1,0 +1,1102 @@
+{
+  "params": {
+    "nvars": 12,
+    "space": 4096,
+    "branch_bits": 3
+  },
+  "sidechannel": {
+    "none": {
+      "corr_hw_pos": 0.7080690841677535,
+      "corr_hw_neg": 0.7080678588142627,
+      "corr_hw_truth": -0.0004711220051014153,
+      "corr_hw_false": -0.00047301371340684455,
+      "corr_hw_top": 0.8170236728001061,
+      "corr_hw_bottom": -0.8167101010282756,
+      "corr_hw_classical_orbit": -0.0008169058657757144,
+      "corr_leakpos_pos": 1.0,
+      "corr_leakpos_neg": 0.00272192063997965,
+      "corr_leakpos_truth": 0.5756780125125736,
+      "corr_leakpos_false": -0.57692702399844
+    },
+    "gauge2_uniform": {
+      "corr_hw_pos": 0.7082302261739114,
+      "corr_hw_neg": 0.7082302665685917,
+      "corr_hw_truth": -5.697432013296787e-05,
+      "corr_hw_false": -5.691192983385893e-05,
+      "corr_hw_top": 0.8169485677734167,
+      "corr_hw_bottom": -0.8169107664789054,
+      "corr_hw_classical_orbit": -9.852411585703295e-05,
+      "corr_leakpos_pos": 0.5049801086986121,
+      "corr_leakpos_neg": 0.49819999728696057,
+      "corr_leakpos_truth": 0.003778711791879467,
+      "corr_leakpos_false": -0.0040586558412754985
+    },
+    "k4_uniform": {
+      "corr_hw_pos": -0.004598260232119585,
+      "corr_hw_neg": -0.004603440817285463,
+      "corr_hw_truth": -0.0007307086541743247,
+      "corr_hw_false": -0.0007347404361422242,
+      "corr_hw_top": -0.004585844952707068,
+      "corr_hw_bottom": 0.0060277448755703495,
+      "corr_hw_classical_orbit": -0.00126806917963327,
+      "corr_leakpos_pos": -0.0043953018099548175,
+      "corr_leakpos_neg": -0.002119118272452879,
+      "corr_leakpos_truth": -0.0018133056274995086,
+      "corr_leakpos_false": 0.0008185007427544687
+    }
+  },
+  "variants": {
+    "mini_omega_full": {
+      "config": {
+        "name": "mini_omega_full",
+        "gauge": true,
+        "adj": true,
+        "comm": true,
+        "chu": true,
+        "k4": true,
+        "bridge": true
+      },
+      "rounds": {
+        "1": {
+          "bijective": true,
+          "anf": {
+            "degrees": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              7,
+              7,
+              7
+            ],
+            "max_degree": 7,
+            "min_degree": 1,
+            "avg_degree": 2.5,
+            "avg_terms": 65.75,
+            "terms": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              267,
+              251,
+              262
+            ]
+          },
+          "differential": {
+            "num_deltas": 12,
+            "worst_probability": 1.0,
+            "worst_count": 4096,
+            "worst_input_delta_hex": "0x1",
+            "worst_output_delta_hex": "0x200",
+            "avg_max_probability": 0.3688151041666667,
+            "median_max_probability": 0.16015625
+          }
+        },
+        "2": {
+          "bijective": true,
+          "anf": {
+            "degrees": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              7,
+              7,
+              7,
+              10,
+              10,
+              10
+            ],
+            "max_degree": 10,
+            "min_degree": 1,
+            "avg_degree": 4.75,
+            "avg_terms": 506.25,
+            "terms": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              267,
+              251,
+              262,
+              1748,
+              1761,
+              1780
+            ]
+          },
+          "differential": {
+            "num_deltas": 20,
+            "worst_probability": 0.19921875,
+            "worst_count": 816,
+            "worst_input_delta_hex": "0x2",
+            "worst_output_delta_hex": "0x680",
+            "avg_max_probability": 0.0609130859375,
+            "median_max_probability": 0.028076171875
+          }
+        },
+        "3": {
+          "bijective": true,
+          "anf": {
+            "degrees": [
+              1,
+              1,
+              1,
+              7,
+              7,
+              7,
+              10,
+              10,
+              10,
+              11,
+              11,
+              11
+            ],
+            "max_degree": 11,
+            "min_degree": 1,
+            "avg_degree": 7.25,
+            "avg_terms": 1013.6666666666666,
+            "terms": [
+              1,
+              1,
+              1,
+              267,
+              251,
+              262,
+              1748,
+              1761,
+              1780,
+              2056,
+              1987,
+              2049
+            ]
+          },
+          "differential": {
+            "num_deltas": 20,
+            "worst_probability": 0.0361328125,
+            "worst_count": 148,
+            "worst_input_delta_hex": "0x2",
+            "worst_output_delta_hex": "0xd0",
+            "avg_max_probability": 0.0140380859375,
+            "median_max_probability": 0.0087890625
+          }
+        },
+        "4": {
+          "bijective": true,
+          "anf": {
+            "degrees": [
+              7,
+              7,
+              7,
+              10,
+              10,
+              10,
+              11,
+              11,
+              11,
+              11,
+              11,
+              11
+            ],
+            "max_degree": 11,
+            "min_degree": 7,
+            "avg_degree": 9.75,
+            "avg_terms": 1529.6666666666667,
+            "terms": [
+              267,
+              251,
+              262,
+              1748,
+              1761,
+              1780,
+              2056,
+              1987,
+              2049,
+              2103,
+              2038,
+              2054
+            ]
+          },
+          "differential": {
+            "num_deltas": 20,
+            "worst_probability": 0.00732421875,
+            "worst_count": 30,
+            "worst_input_delta_hex": "0x2",
+            "worst_output_delta_hex": "0x5da",
+            "avg_max_probability": 0.00380859375,
+            "median_max_probability": 0.003173828125
+          },
+          "coordinate_zero_invariants": {
+            "found": false,
+            "count": 0,
+            "masks_hex": []
+          },
+          "linear_invariants": {
+            "found": false,
+            "count": 0,
+            "masks_hex": []
+          }
+        },
+        "6": {
+          "bijective": true,
+          "anf": {
+            "degrees": [
+              11,
+              11,
+              11,
+              11,
+              11,
+              11,
+              11,
+              11,
+              11,
+              11,
+              11,
+              11
+            ],
+            "max_degree": 11,
+            "min_degree": 11,
+            "avg_degree": 11.0,
+            "avg_terms": 2045.3333333333333,
+            "terms": [
+              2056,
+              1987,
+              2049,
+              2103,
+              2038,
+              2054,
+              2056,
+              2037,
+              1992,
+              2049,
+              2069,
+              2054
+            ]
+          },
+          "differential": {
+            "num_deltas": 20,
+            "worst_probability": 0.00341796875,
+            "worst_count": 14,
+            "worst_input_delta_hex": "0x21c",
+            "worst_output_delta_hex": "0xf08",
+            "avg_max_probability": 0.002392578125,
+            "median_max_probability": 0.00244140625
+          },
+          "coordinate_zero_invariants": {
+            "found": false,
+            "count": 0,
+            "masks_hex": []
+          },
+          "linear_invariants": {
+            "found": false,
+            "count": 0,
+            "masks_hex": []
+          }
+        }
+      }
+    },
+    "mini_xi_no_commutator": {
+      "config": {
+        "name": "mini_xi_no_commutator",
+        "gauge": true,
+        "adj": true,
+        "comm": false,
+        "chu": true,
+        "k4": true,
+        "bridge": true
+      },
+      "rounds": {
+        "1": {
+          "bijective": true,
+          "anf": {
+            "degrees": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              7,
+              8,
+              7
+            ],
+            "max_degree": 8,
+            "min_degree": 1,
+            "avg_degree": 2.5833333333333335,
+            "avg_terms": 65.25,
+            "terms": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              267,
+              257,
+              250
+            ]
+          },
+          "differential": {
+            "num_deltas": 12,
+            "worst_probability": 1.0,
+            "worst_count": 4096,
+            "worst_input_delta_hex": "0x1",
+            "worst_output_delta_hex": "0x200",
+            "avg_max_probability": 0.369140625,
+            "median_max_probability": 0.162109375
+          }
+        },
+        "2": {
+          "bijective": true,
+          "anf": {
+            "degrees": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              7,
+              8,
+              7,
+              10,
+              10,
+              10
+            ],
+            "max_degree": 10,
+            "min_degree": 1,
+            "avg_degree": 4.833333333333333,
+            "avg_terms": 504.5833333333333,
+            "terms": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              267,
+              257,
+              250,
+              1680,
+              1888,
+              1707
+            ]
+          },
+          "differential": {
+            "num_deltas": 20,
+            "worst_probability": 0.1796875,
+            "worst_count": 736,
+            "worst_input_delta_hex": "0x2",
+            "worst_output_delta_hex": "0xa80",
+            "avg_max_probability": 0.061328125,
+            "median_max_probability": 0.02978515625
+          }
+        },
+        "3": {
+          "bijective": true,
+          "anf": {
+            "degrees": [
+              1,
+              1,
+              1,
+              7,
+              8,
+              7,
+              10,
+              10,
+              10,
+              11,
+              11,
+              11
+            ],
+            "max_degree": 11,
+            "min_degree": 1,
+            "avg_degree": 7.333333333333333,
+            "avg_terms": 1011.0833333333334,
+            "terms": [
+              1,
+              1,
+              1,
+              267,
+              257,
+              250,
+              1680,
+              1888,
+              1707,
+              1968,
+              2065,
+              2048
+            ]
+          },
+          "differential": {
+            "num_deltas": 20,
+            "worst_probability": 0.03076171875,
+            "worst_count": 126,
+            "worst_input_delta_hex": "0x1",
+            "worst_output_delta_hex": "0xc08",
+            "avg_max_probability": 0.0143798828125,
+            "median_max_probability": 0.010009765625
+          }
+        },
+        "4": {
+          "bijective": true,
+          "anf": {
+            "degrees": [
+              7,
+              8,
+              7,
+              10,
+              10,
+              10,
+              11,
+              11,
+              11,
+              11,
+              11,
+              11
+            ],
+            "max_degree": 11,
+            "min_degree": 7,
+            "avg_degree": 9.833333333333334,
+            "avg_terms": 1513.5833333333333,
+            "terms": [
+              267,
+              257,
+              250,
+              1680,
+              1888,
+              1707,
+              1968,
+              2065,
+              2048,
+              2044,
+              2038,
+              1951
+            ]
+          },
+          "differential": {
+            "num_deltas": 20,
+            "worst_probability": 0.0078125,
+            "worst_count": 32,
+            "worst_input_delta_hex": "0x4",
+            "worst_output_delta_hex": "0x944",
+            "avg_max_probability": 0.003857421875,
+            "median_max_probability": 0.003173828125
+          },
+          "coordinate_zero_invariants": {
+            "found": false,
+            "count": 0,
+            "masks_hex": []
+          },
+          "linear_invariants": {
+            "found": false,
+            "count": 0,
+            "masks_hex": []
+          }
+        },
+        "6": {
+          "bijective": true,
+          "anf": {
+            "degrees": [
+              11,
+              11,
+              11,
+              11,
+              11,
+              11,
+              11,
+              11,
+              11,
+              11,
+              11,
+              11
+            ],
+            "max_degree": 11,
+            "min_degree": 11,
+            "avg_degree": 11.0,
+            "avg_terms": 2030.3333333333333,
+            "terms": [
+              1968,
+              2065,
+              2048,
+              2044,
+              2038,
+              1951,
+              2032,
+              2065,
+              1998,
+              2041,
+              2087,
+              2027
+            ]
+          },
+          "differential": {
+            "num_deltas": 20,
+            "worst_probability": 0.00244140625,
+            "worst_count": 10,
+            "worst_input_delta_hex": "0x1",
+            "worst_output_delta_hex": "0x7f6",
+            "avg_max_probability": 0.0022705078125,
+            "median_max_probability": 0.00244140625
+          },
+          "coordinate_zero_invariants": {
+            "found": false,
+            "count": 0,
+            "masks_hex": []
+          },
+          "linear_invariants": {
+            "found": false,
+            "count": 0,
+            "masks_hex": []
+          }
+        }
+      }
+    },
+    "mini_phi_baseline": {
+      "config": {
+        "name": "mini_phi_baseline",
+        "gauge": true,
+        "adj": false,
+        "comm": false,
+        "chu": false,
+        "k4": true,
+        "bridge": true
+      },
+      "rounds": {
+        "1": {
+          "bijective": true,
+          "anf": {
+            "degrees": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              8,
+              8,
+              7
+            ],
+            "max_degree": 8,
+            "min_degree": 1,
+            "avg_degree": 2.6666666666666665,
+            "avg_terms": 62.166666666666664,
+            "terms": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              252,
+              258,
+              227
+            ]
+          },
+          "differential": {
+            "num_deltas": 12,
+            "worst_probability": 1.0,
+            "worst_count": 4096,
+            "worst_input_delta_hex": "0x1",
+            "worst_output_delta_hex": "0x200",
+            "avg_max_probability": 0.3844401041666667,
+            "median_max_probability": 0.185546875
+          }
+        },
+        "2": {
+          "bijective": true,
+          "anf": {
+            "degrees": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              8,
+              8,
+              7,
+              10,
+              10,
+              10
+            ],
+            "max_degree": 10,
+            "min_degree": 1,
+            "avg_degree": 4.916666666666667,
+            "avg_terms": 522.4166666666666,
+            "terms": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              252,
+              258,
+              227,
+              1827,
+              1851,
+              1848
+            ]
+          },
+          "differential": {
+            "num_deltas": 20,
+            "worst_probability": 0.2109375,
+            "worst_count": 864,
+            "worst_input_delta_hex": "0x1",
+            "worst_output_delta_hex": "0xc40",
+            "avg_max_probability": 0.0725341796875,
+            "median_max_probability": 0.032958984375
+          }
+        },
+        "3": {
+          "bijective": true,
+          "anf": {
+            "degrees": [
+              1,
+              1,
+              1,
+              8,
+              8,
+              7,
+              10,
+              10,
+              10,
+              11,
+              10,
+              11
+            ],
+            "max_degree": 11,
+            "min_degree": 1,
+            "avg_degree": 7.333333333333333,
+            "avg_terms": 1028.4166666666667,
+            "terms": [
+              1,
+              1,
+              1,
+              252,
+              258,
+              227,
+              1827,
+              1851,
+              1848,
+              2031,
+              2023,
+              2021
+            ]
+          },
+          "differential": {
+            "num_deltas": 20,
+            "worst_probability": 0.0400390625,
+            "worst_count": 164,
+            "worst_input_delta_hex": "0x4",
+            "worst_output_delta_hex": "0x4a0",
+            "avg_max_probability": 0.0164794921875,
+            "median_max_probability": 0.013427734375
+          }
+        },
+        "4": {
+          "bijective": true,
+          "anf": {
+            "degrees": [
+              8,
+              8,
+              7,
+              10,
+              10,
+              10,
+              11,
+              10,
+              11,
+              11,
+              11,
+              11
+            ],
+            "max_degree": 11,
+            "min_degree": 7,
+            "avg_degree": 9.833333333333334,
+            "avg_terms": 1535.3333333333333,
+            "terms": [
+              252,
+              258,
+              227,
+              1827,
+              1851,
+              1848,
+              2031,
+              2023,
+              2021,
+              2084,
+              2008,
+              1994
+            ]
+          },
+          "differential": {
+            "num_deltas": 20,
+            "worst_probability": 0.0087890625,
+            "worst_count": 36,
+            "worst_input_delta_hex": "0x1",
+            "worst_output_delta_hex": "0x831",
+            "avg_max_probability": 0.0044921875,
+            "median_max_probability": 0.003662109375
+          },
+          "coordinate_zero_invariants": {
+            "found": false,
+            "count": 0,
+            "masks_hex": []
+          },
+          "linear_invariants": {
+            "found": false,
+            "count": 0,
+            "masks_hex": []
+          }
+        },
+        "6": {
+          "bijective": true,
+          "anf": {
+            "degrees": [
+              11,
+              10,
+              11,
+              11,
+              11,
+              11,
+              11,
+              11,
+              11,
+              11,
+              11,
+              11
+            ],
+            "max_degree": 11,
+            "min_degree": 10,
+            "avg_degree": 10.916666666666666,
+            "avg_terms": 2024.6666666666667,
+            "terms": [
+              2031,
+              2023,
+              2021,
+              2084,
+              2008,
+              1994,
+              2056,
+              2042,
+              2018,
+              2015,
+              2002,
+              2002
+            ]
+          },
+          "differential": {
+            "num_deltas": 20,
+            "worst_probability": 0.0029296875,
+            "worst_count": 12,
+            "worst_input_delta_hex": "0x40",
+            "worst_output_delta_hex": "0x8f9",
+            "avg_max_probability": 0.0022705078125,
+            "median_max_probability": 0.00244140625
+          },
+          "coordinate_zero_invariants": {
+            "found": false,
+            "count": 0,
+            "masks_hex": []
+          },
+          "linear_invariants": {
+            "found": false,
+            "count": 0,
+            "masks_hex": []
+          }
+        }
+      }
+    },
+    "mini_no_flow_bridge": {
+      "config": {
+        "name": "mini_no_flow_bridge",
+        "gauge": true,
+        "adj": true,
+        "comm": true,
+        "chu": true,
+        "k4": true,
+        "bridge": false
+      },
+      "rounds": {
+        "1": {
+          "bijective": true,
+          "anf": {
+            "degrees": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              7,
+              7,
+              7
+            ],
+            "max_degree": 7,
+            "min_degree": 1,
+            "avg_degree": 2.5,
+            "avg_terms": 65.66666666666667,
+            "terms": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              266,
+              254,
+              259
+            ]
+          },
+          "differential": {
+            "num_deltas": 12,
+            "worst_probability": 1.0,
+            "worst_count": 4096,
+            "worst_input_delta_hex": "0x1",
+            "worst_output_delta_hex": "0x200",
+            "avg_max_probability": 0.3717447916666667,
+            "median_max_probability": 0.1640625
+          }
+        },
+        "2": {
+          "bijective": true,
+          "anf": {
+            "degrees": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              7,
+              7,
+              7,
+              9,
+              10,
+              10
+            ],
+            "max_degree": 10,
+            "min_degree": 1,
+            "avg_degree": 4.666666666666667,
+            "avg_terms": 504.25,
+            "terms": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              266,
+              254,
+              259,
+              1707,
+              1789,
+              1770
+            ]
+          },
+          "differential": {
+            "num_deltas": 20,
+            "worst_probability": 0.203125,
+            "worst_count": 832,
+            "worst_input_delta_hex": "0x1",
+            "worst_output_delta_hex": "0x840",
+            "avg_max_probability": 0.06787109375,
+            "median_max_probability": 0.0361328125
+          }
+        },
+        "3": {
+          "bijective": true,
+          "anf": {
+            "degrees": [
+              1,
+              1,
+              1,
+              7,
+              7,
+              7,
+              9,
+              10,
+              10,
+              10,
+              10,
+              10
+            ],
+            "max_degree": 10,
+            "min_degree": 1,
+            "avg_degree": 6.916666666666667,
+            "avg_terms": 1004.0833333333334,
+            "terms": [
+              1,
+              1,
+              1,
+              266,
+              254,
+              259,
+              1707,
+              1789,
+              1770,
+              1987,
+              1996,
+              2018
+            ]
+          },
+          "differential": {
+            "num_deltas": 20,
+            "worst_probability": 0.0439453125,
+            "worst_count": 180,
+            "worst_input_delta_hex": "0x1",
+            "worst_output_delta_hex": "0x708",
+            "avg_max_probability": 0.01708984375,
+            "median_max_probability": 0.01123046875
+          }
+        },
+        "4": {
+          "bijective": true,
+          "anf": {
+            "degrees": [
+              7,
+              7,
+              7,
+              9,
+              10,
+              10,
+              10,
+              10,
+              10,
+              10,
+              10,
+              10
+            ],
+            "max_degree": 10,
+            "min_degree": 7,
+            "avg_degree": 9.166666666666666,
+            "avg_terms": 1513.75,
+            "terms": [
+              266,
+              254,
+              259,
+              1707,
+              1789,
+              1770,
+              1987,
+              1996,
+              2018,
+              2052,
+              2062,
+              2005
+            ]
+          },
+          "differential": {
+            "num_deltas": 20,
+            "worst_probability": 0.0087890625,
+            "worst_count": 36,
+            "worst_input_delta_hex": "0x1",
+            "worst_output_delta_hex": "0xb9",
+            "avg_max_probability": 0.005224609375,
+            "median_max_probability": 0.0048828125
+          },
+          "coordinate_zero_invariants": {
+            "found": false,
+            "count": 0,
+            "masks_hex": []
+          },
+          "linear_invariants": {
+            "found": false,
+            "count": 0,
+            "masks_hex": []
+          }
+        },
+        "6": {
+          "bijective": true,
+          "anf": {
+            "degrees": [
+              10,
+              10,
+              10,
+              10,
+              10,
+              10,
+              10,
+              10,
+              10,
+              10,
+              10,
+              10
+            ],
+            "max_degree": 10,
+            "min_degree": 10,
+            "avg_degree": 10.0,
+            "avg_terms": 2025.5833333333333,
+            "terms": [
+              1987,
+              1996,
+              2018,
+              2052,
+              2062,
+              2005,
+              2032,
+              2095,
+              1972,
+              2050,
+              1960,
+              2078
+            ]
+          },
+          "differential": {
+            "num_deltas": 20,
+            "worst_probability": 0.00390625,
+            "worst_count": 16,
+            "worst_input_delta_hex": "0x1",
+            "worst_output_delta_hex": "0x323",
+            "avg_max_probability": 0.003466796875,
+            "median_max_probability": 0.00390625
+          },
+          "coordinate_zero_invariants": {
+            "found": false,
+            "count": 0,
+            "masks_hex": []
+          },
+          "linear_invariants": {
+            "found": false,
+            "count": 0,
+            "masks_hex": []
+          }
+        }
+      }
+    }
+  }
+}

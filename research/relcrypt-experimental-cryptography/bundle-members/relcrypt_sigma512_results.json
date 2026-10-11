@@ -1,0 +1,183 @@
+{
+  "algorithm": "RelCrypt-Sigma-512",
+  "status": "research AEAD / stream encryption candidate, not production cryptography",
+  "quick_results_8192": [
+    {
+      "rounds": 12,
+      "size": 8192,
+      "perm_inverse": true,
+      "aead_roundtrip": true,
+      "tamper_reject": true,
+      "wrong_ad_reject": true,
+      "entropy": 7.979203294812356,
+      "chi_square": 233.63742690058479,
+      "monobit_z": -0.5307319598962933,
+      "serial_corr": 0.015135285471116531,
+      "key_avalanche": 0.499604044834308,
+      "nonce_avalanche": 0.5034722222222222,
+      "ad_avalanche": 0.49955835769980506,
+      "perm_avalanche_avg": 255.203125,
+      "perm_avalanche_min": 231,
+      "perm_avalanche_max": 276,
+      "speed_MB_s": 0.08298951156224624,
+      "ct_tag_len": 8208
+    },
+    {
+      "rounds": 16,
+      "size": 8192,
+      "perm_inverse": true,
+      "aead_roundtrip": true,
+      "tamper_reject": true,
+      "wrong_ad_reject": true,
+      "entropy": 7.9757200115720535,
+      "chi_square": 269.44249512670564,
+      "monobit_z": -1.3892689538461795,
+      "serial_corr": -0.007819109877949095,
+      "key_avalanche": 0.499604044834308,
+      "nonce_avalanche": 0.49593384502923976,
+      "ad_avalanche": 0.5012183235867447,
+      "perm_avalanche_avg": 254.203125,
+      "perm_avalanche_min": 226,
+      "perm_avalanche_max": 273,
+      "speed_MB_s": 0.07153903189054275,
+      "ct_tag_len": 8208
+    },
+    {
+      "rounds": 20,
+      "size": 8192,
+      "perm_inverse": true,
+      "aead_roundtrip": true,
+      "tamper_reject": true,
+      "wrong_ad_reject": true,
+      "entropy": 7.979511131817478,
+      "chi_square": 231.32943469785576,
+      "monobit_z": -0.2809757434745082,
+      "serial_corr": -0.002112390169999297,
+      "key_avalanche": 0.5013706140350878,
+      "nonce_avalanche": 0.5021625243664717,
+      "ad_avalanche": 0.5017361111111112,
+      "perm_avalanche_avg": 253.71875,
+      "perm_avalanche_min": 228,
+      "perm_avalanche_max": 279,
+      "speed_MB_s": 0.060001600677470505,
+      "ct_tag_len": 8208
+    },
+    {
+      "rounds": 24,
+      "size": 8192,
+      "perm_inverse": true,
+      "aead_roundtrip": true,
+      "tamper_reject": true,
+      "wrong_ad_reject": true,
+      "entropy": 7.978688746705519,
+      "chi_square": 239.93762183235867,
+      "monobit_z": 0.6400003045808242,
+      "serial_corr": -0.0088191282321028,
+      "key_avalanche": 0.4986598440545809,
+      "nonce_avalanche": 0.4994365253411306,
+      "ad_avalanche": 0.5025584795321637,
+      "perm_avalanche_avg": 256.421875,
+      "perm_avalanche_min": 225,
+      "perm_avalanche_max": 281,
+      "speed_MB_s": 0.04533275768699729,
+      "ct_tag_len": 8208
+    }
+  ],
+  "chosen_24_round_65536": {
+    "rounds": 24,
+    "size": 65536,
+    "perm_inverse": true,
+    "aead_roundtrip": true,
+    "tamper_reject": true,
+    "wrong_ad_reject": true,
+    "entropy": 7.997314670561237,
+    "chi_square": 242.96802538442762,
+    "monobit_z": 0.07733036502653991,
+    "serial_corr": -0.003530541697049083,
+    "key_avalanche": 0.499710153771052,
+    "nonce_avalanche": 0.5008638180375885,
+    "ad_avalanche": 0.5010125549182328,
+    "perm_avalanche_avg": 256.234375,
+    "perm_avalanche_min": 229,
+    "perm_avalanche_max": 279,
+    "speed_MB_s": 0.04758064276600003,
+    "ct_tag_len": 65552
+  },
+  "reduced_round_avalanche": [
+    {
+      "rounds": 1,
+      "avg": 28.5,
+      "min": 1,
+      "max": 44,
+      "inverse": true
+    },
+    {
+      "rounds": 2,
+      "avg": 59.2578125,
+      "min": 27,
+      "max": 78,
+      "inverse": true
+    },
+    {
+      "rounds": 3,
+      "avg": 92.0859375,
+      "min": 56,
+      "max": 112,
+      "inverse": true
+    },
+    {
+      "rounds": 4,
+      "avg": 124.375,
+      "min": 85,
+      "max": 145,
+      "inverse": true
+    },
+    {
+      "rounds": 5,
+      "avg": 156.359375,
+      "min": 115,
+      "max": 184,
+      "inverse": true
+    },
+    {
+      "rounds": 6,
+      "avg": 188.453125,
+      "min": 146,
+      "max": 211,
+      "inverse": true
+    },
+    {
+      "rounds": 8,
+      "avg": 251.7109375,
+      "min": 205,
+      "max": 279,
+      "inverse": true
+    },
+    {
+      "rounds": 10,
+      "avg": 256.6875,
+      "min": 225,
+      "max": 281,
+      "inverse": true
+    },
+    {
+      "rounds": 12,
+      "avg": 255.2890625,
+      "min": 226,
+      "max": 276,
+      "inverse": true
+    }
+  ],
+  "balanced_encoding_leakage_sim": {
+    "n": 100000,
+    "raw_hw_corr_top": 0.8159788574255172,
+    "raw_hw_corr_bottom": -0.8171262047162426,
+    "raw_hw_corr_classical": 0.0029821246971409934,
+    "balanced_code_weight_min": 2,
+    "balanced_code_weight_max": 2,
+    "balanced_code_weight_variance": 0,
+    "balanced_hw_corr_top": null,
+    "balanced_hw_corr_bottom": null,
+    "balanced_hw_corr_classical": null
+  }
+}

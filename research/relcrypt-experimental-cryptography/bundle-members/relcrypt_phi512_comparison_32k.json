@@ -1,0 +1,164 @@
+{
+  "aes_ctr_baseline": {
+    "byte_chi_square_df255": 229.875,
+    "entropy_bits_per_byte": 7.994921951745701,
+    "linear_complexity_8192": 4097,
+    "matrix_rank_32x32_distribution": {
+      "30": 14,
+      "31": 72,
+      "32": 42
+    },
+    "monobit_z": 0.18359375,
+    "name": "AES-256-CTR via cryptography backend",
+    "runs_p_approx": 0.6074542100907624,
+    "sample_bytes": 32768,
+    "serial_corr_bytes": 0.0034473122129470976,
+    "speed_MB_s_backend": 1959.9849493571985
+  },
+  "rounds": {
+    "12": {
+      "permutation_avalanche": {
+        "avg_changed_output_bits": 256.048828125,
+        "flips": 1024,
+        "ideal_avg_changed_output_bits": 256,
+        "max_changed_output_bits": 291,
+        "min_changed_output_bits": 221,
+        "rounds": 12,
+        "samples": 2
+      },
+      "permutation_inverse_ok_300_trials": true,
+      "stream_avalanche": {
+        "key_avalanche_fraction": 0.4978370666503906,
+        "nonce_avalanche_fraction": 0.5018539428710938,
+        "rounds": 12,
+        "sample_bytes": 32768
+      },
+      "stream_metrics": {
+        "byte_chi_square_df255": 280.109375,
+        "entropy_bits_per_byte": 7.993831887811576,
+        "linear_complexity_8192": 4096,
+        "matrix_rank_32x32_distribution": {
+          "29": 1,
+          "30": 16,
+          "31": 84,
+          "32": 27
+        },
+        "monobit_z": 0.0390625,
+        "rounds": 12,
+        "runs_p_approx": 0.8770722445143531,
+        "sample_bytes": 32768,
+        "serial_corr_bytes": -0.003842037211970446,
+        "speed_MB_s_pure_python": 0.22186596819142704
+      },
+      "stream_roundtrip_ok": true
+    },
+    "16": {
+      "permutation_avalanche": {
+        "avg_changed_output_bits": 256.498046875,
+        "flips": 1024,
+        "ideal_avg_changed_output_bits": 256,
+        "max_changed_output_bits": 295,
+        "min_changed_output_bits": 220,
+        "rounds": 16,
+        "samples": 2
+      },
+      "permutation_inverse_ok_300_trials": true,
+      "stream_avalanche": {
+        "key_avalanche_fraction": 0.5017127990722656,
+        "nonce_avalanche_fraction": 0.4998664855957031,
+        "rounds": 16,
+        "sample_bytes": 32768
+      },
+      "stream_metrics": {
+        "byte_chi_square_df255": 269.75,
+        "entropy_bits_per_byte": 7.994032685044618,
+        "linear_complexity_8192": 4096,
+        "matrix_rank_32x32_distribution": {
+          "29": 1,
+          "30": 22,
+          "31": 66,
+          "32": 39
+        },
+        "monobit_z": 0.34765625,
+        "rounds": 16,
+        "runs_p_approx": 0.4328758179400811,
+        "sample_bytes": 32768,
+        "serial_corr_bytes": 0.0003124514511704192,
+        "speed_MB_s_pure_python": 0.18475205083496138
+      },
+      "stream_roundtrip_ok": true
+    },
+    "20": {
+      "permutation_avalanche": {
+        "avg_changed_output_bits": 255.783203125,
+        "flips": 1024,
+        "ideal_avg_changed_output_bits": 256,
+        "max_changed_output_bits": 293,
+        "min_changed_output_bits": 214,
+        "rounds": 20,
+        "samples": 2
+      },
+      "permutation_inverse_ok_300_trials": true,
+      "stream_avalanche": {
+        "key_avalanche_fraction": 0.499298095703125,
+        "nonce_avalanche_fraction": 0.5000877380371094,
+        "rounds": 20,
+        "sample_bytes": 32768
+      },
+      "stream_metrics": {
+        "byte_chi_square_df255": 260.671875,
+        "entropy_bits_per_byte": 7.9942413727769255,
+        "linear_complexity_8192": 4097,
+        "matrix_rank_32x32_distribution": {
+          "30": 14,
+          "31": 77,
+          "32": 37
+        },
+        "monobit_z": 0.3984375,
+        "rounds": 20,
+        "runs_p_approx": 0.6727419849125092,
+        "sample_bytes": 32768,
+        "serial_corr_bytes": -0.0016725582110837594,
+        "speed_MB_s_pure_python": 0.14818053694501157
+      },
+      "stream_roundtrip_ok": true
+    },
+    "8": {
+      "permutation_avalanche": {
+        "avg_changed_output_bits": 256.2685546875,
+        "flips": 1024,
+        "ideal_avg_changed_output_bits": 256,
+        "max_changed_output_bits": 290,
+        "min_changed_output_bits": 218,
+        "rounds": 8,
+        "samples": 2
+      },
+      "permutation_inverse_ok_300_trials": true,
+      "stream_avalanche": {
+        "key_avalanche_fraction": 0.4998893737792969,
+        "nonce_avalanche_fraction": 0.4995994567871094,
+        "rounds": 8,
+        "sample_bytes": 32768
+      },
+      "stream_metrics": {
+        "byte_chi_square_df255": 258.8125,
+        "entropy_bits_per_byte": 7.994277090301678,
+        "linear_complexity_8192": 4096,
+        "matrix_rank_32x32_distribution": {
+          "30": 16,
+          "31": 74,
+          "32": 38
+        },
+        "monobit_z": 0.73828125,
+        "rounds": 8,
+        "runs_p_approx": 0.4955575630696061,
+        "sample_bytes": 32768,
+        "serial_corr_bytes": 0.007132799020276778,
+        "speed_MB_s_pure_python": 0.3446047690410533
+      },
+      "stream_roundtrip_ok": true
+    }
+  },
+  "version": "RelCrypt-\u03a6-512 lab v0.1",
+  "warning": "research cipher workbench; not production cryptography"
+}

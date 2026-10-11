@@ -1,0 +1,58 @@
+{
+  "version": "RelCrypt-\u03a9-512 lab v0.1",
+  "sample_bytes": 2048,
+  "rounds": {
+    "16": {
+      "permutation_inverse_passed": true,
+      "stream_roundtrip_passed": true,
+      "stream_metrics": {
+        "sample_bytes": 2048,
+        "rounds": 16,
+        "entropy_bits_per_byte": 7.903476524756885,
+        "monobit_z": 0.703125,
+        "byte_chi_square_df255": 271.75,
+        "serial_corr_bytes": 0.03129580392660123,
+        "runs_p_approx": 0.8482371672203737,
+        "linear_complexity_8192": 4096,
+        "matrix_rank_32x32_distribution": {
+          "31": 9,
+          "32": 4,
+          "30": 3
+        },
+        "speed_MB_s_pure_python": 0.01083804235464509
+      },
+      "stream_avalanche": {
+        "rounds": 16,
+        "sample_bytes": 2048,
+        "key_avalanche_fraction": 0.49139404296875,
+        "nonce_avalanche_fraction": 0.49810791015625
+      },
+      "permutation_avalanche": {
+        "rounds": 16,
+        "samples": 2,
+        "flips": 1024,
+        "avg_changed_output_bits": 255.560546875,
+        "min_changed_output_bits": 222,
+        "max_changed_output_bits": 292,
+        "ideal_avg_changed_output_bits": 256
+      },
+      "rotational_symmetry_probe": {
+        "rounds": 16,
+        "trials": 16,
+        "avg_distance_from_rotational_symmetry_bits": 257.625,
+        "min_distance": 242,
+        "max_distance": 272,
+        "random_baseline_bits": 256
+      },
+      "low_weight_probe": {
+        "rounds": 16,
+        "one_bit_avg_distance": 257.80645161290323,
+        "one_bit_min_distance": 238,
+        "one_bit_max_distance": 285,
+        "four_bit_avg_distance": 258.4166666666667,
+        "four_bit_min_distance": 236,
+        "four_bit_max_distance": 279
+      }
+    }
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "aggregate_ranking": [
+    {
+      "avg_rank": 2.25,
+      "avg_score": 0.5996907552083339,
+      "variant": "omega_full",
+      "worst_perm_min": 229,
+      "worst_low_weight_min": 221,
+      "worst_rotational_min": 231,
+      "avg_speed_MB_s": 0.016921063628270807
+    },
+    {
+      "avg_rank": 5,
+      "avg_score": 0.8061319986979187,
+      "variant": "phi_baseline",
+      "worst_perm_min": 225,
+      "worst_low_weight_min": 223,
+      "worst_rotational_min": 222,
+      "avg_speed_MB_s": 0.13058390392738323
+    },
+    {
+      "avg_rank": 5.25,
+      "avg_score": 0.8625284830729161,
+      "variant": "no_commutator",
+      "worst_perm_min": 227,
+      "worst_low_weight_min": 222,
+      "worst_rotational_min": 223,
+      "avg_speed_MB_s": 0.0275821142777913
+    },
+    {
+      "avg_rank": 5.5,
+      "avg_score": 0.8494059244791661,
+      "variant": "no_flow_observer",
+      "worst_perm_min": 228,
+      "worst_low_weight_min": 223,
+      "worst_rotational_min": 227,
+      "avg_speed_MB_s": 0.014625144528711137
+    },
+    {
+      "avg_rank": 5.5,
+      "avg_score": 0.9367268880208348,
+      "variant": "no_chu_fca",
+      "worst_perm_min": 223,
+      "worst_low_weight_min": 228,
+      "worst_rotational_min": 228,
+      "avg_speed_MB_s": 0.018271195389398823
+    },
+    {
+      "avg_rank": 6.5,
+      "avg_score": 0.8684692382812518,
+      "variant": "no_k4_boundary",
+      "worst_perm_min": 231,
+      "worst_low_weight_min": 229,
+      "worst_rotational_min": 230,
+      "avg_speed_MB_s": 0.016925426529673635
+    },
+    {
+      "avg_rank": 6.75,
+      "avg_score": 0.9945271809895839,
+      "variant": "no_gauge2",
+      "worst_perm_min": 229,
+      "worst_low_weight_min": 224,
+      "worst_rotational_min": 233,
+      "avg_speed_MB_s": 0.01740783616633314
+    },
+    {
+      "avg_rank": 7,
+      "avg_score": 0.9282023111979161,
+      "variant": "no_d4_boundary",
+      "worst_perm_min": 227,
+      "worst_low_weight_min": 211,
+      "worst_rotational_min": 224,
+      "avg_speed_MB_s": 0.01709614650407456
+    },
+    {
+      "avg_rank": 8,
+      "avg_score": 0.953226725260417,
+      "variant": "no_adjoint",
+      "worst_perm_min": 220,
+      "worst_low_weight_min": 226,
+      "worst_rotational_min": 223,
+      "avg_speed_MB_s": 0.01874976066175455
+    },
+    {
+      "avg_rank": 8.25,
+      "avg_score": 1.056966145833333,
+      "variant": "flow_bridge_only",
+      "worst_perm_min": 226,
+      "worst_low_weight_min": 224,
+      "worst_rotational_min": 227,
+      "avg_speed_MB_s": 0.049881089345616796
+    },
+    {
+      "avg_rank": 8.25,
+      "avg_score": 1.227030436197916,
+      "variant": "no_flow_bridge",
+      "worst_perm_min": 222,
+      "worst_low_weight_min": 216,
+      "worst_rotational_min": 222,
+      "avg_speed_MB_s": 0.017029176318244757
+    },
+    {
+      "avg_rank": 9.75,
+      "avg_score": 1.1436564127604152,
+      "variant": "gf2_only_core",
+      "worst_perm_min": 228,
+      "worst_low_weight_min": 231,
+      "worst_rotational_min": 221,
+      "avg_speed_MB_s": 0.016525448541011414
+    }
+  ],
+  "recommendation": "Keep omega_full as robust branch; create RelPerm-Xi-512 by pruning nuclear commutator for targeted larger probes; keep flow bridge and K4 boundary for now.",
+  "source_files": [
+    "relcrypt_ablation_results_r6.json",
+    "relcrypt_ablation_results_r10.json",
+    "relcrypt_ablation_results_r12.json",
+    "relcrypt_ablation_results_r16.json",
+    "relcrypt_ablation_harness.py"
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "created_utc": "2026-06-24T03:20:37.849596+00:00",
+  "archive": "relcrypt_docs_reports.zip",
+  "file_count": 14,
+  "files": [
+    {
+      "path": "relcrypt_ablation_synthesis_report.md",
+      "size_bytes": 10839,
+      "sha256": "2e6f66ceb399fe72baf8c6c5673c22f71fde3d6d702c8731e0cf9e27a1c7ee47"
+    },
+    {
+      "path": "relcrypt_algorithm_specs.md",
+      "size_bytes": 17228,
+      "sha256": "ee5ef2436aca2309683fe56d85b9a5f76b964281f64de695af757b5bcad4cad4"
+    },
+    {
+      "path": "relcrypt_bitslice_notes.md",
+      "size_bytes": 3335,
+      "sha256": "deda2f44b106ec5f80b95a5f4d0f25b20ffd643115d10c2613a33288d119f26c"
+    },
+    {
+      "path": "relcrypt_mini12_attack_report.md",
+      "size_bytes": 7047,
+      "sha256": "25fff7f2f801463601e9dfce522431016af07f59eca350bfbe838c51ec3ec7de"
+    },
+    {
+      "path": "relcrypt_omega512_report.md",
+      "size_bytes": 4213,
+      "sha256": "592065c760be0b19c17d200a10b43e36502427db8d3b5f2823273cfd1579bd90"
+    },
+    {
+      "path": "relcrypt_phi512_algorithm_and_results.md",
+      "size_bytes": 4934,
+      "sha256": "5f6dee472ba0dad8533986022defdc42db961c2c16954859428247bd08a49384"
+    },
+    {
+      "path": "relcrypt_phi512b_algorithm_and_results.md",
+      "size_bytes": 2424,
+      "sha256": "9ccf66f7e466d69ec09322ac32cf93ce9e899824612261b49966c37d01e3399a"
+    },
+    {
+      "path": "relcrypt_phi_pro_design.md",
+      "size_bytes": 12529,
+      "sha256": "94902cfac2a4c23e3ff0694478a64eacba89b2d6b199c06062149dd9339ae52c"
+    },
+    {
+      "path": "relcrypt_proceeding_report.md",
+      "size_bytes": 5493,
+      "sha256": "4aeb309daa98be27e9d31bbe91f63f35cd9f0ffd336f01cead46cc9c42ff61d7"
+    },
+    {
+      "path": "relcrypt_psi1024x_hardcore_report.md",
+      "size_bytes": 6992,
+      "sha256": "14a472807315256de9b129b90459f2e081e6402d4b0327dddbc963ae83b87d4d"
+    },
+    {
+      "path": "relcrypt_sigma2_report.md",
+      "size_bytes": 10301,
+      "sha256": "2d5e9ece4f5ba9a3ffb89f7d9db3f42e5c17e2e958fc00cc27f0f20cd76f1663"
+    },
+    {
+      "path": "relcrypt_sigma512_report.md",
+      "size_bytes": 7927,
+      "sha256": "6bb16939e0d094d746b37346a7d0f26469a1f9d0bde71dc91dc6489e627a2495"
+    },
+    {
+      "path": "relmask_lab_notes.md",
+      "size_bytes": 1420,
+      "sha256": "b9b0758b503f713ee1a6c780926c86930b23bef81b14b12df853609e4b66ab77"
+    },
+    {
+      "path": "relmath_lean_crypto_toolkit.md",
+      "size_bytes": 16015,
+      "sha256": "8465fb17c6f1ec6f31b2ba5438a5af5ab9724a0e034d0a7e1d458ee0d08d780c"
+    }
+  ]
+}
