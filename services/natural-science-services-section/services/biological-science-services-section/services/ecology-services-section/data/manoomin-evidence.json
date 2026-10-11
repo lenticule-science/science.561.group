@@ -1,0 +1,237 @@
+{
+  "schema_version": 1,
+  "maintained_at": "2026-10-11",
+  "paper": "../content/text/documents/articles/notes/2026/10/11/2026-10-11-ustilago-esculenta-host-records-working-paper.md",
+  "note": "../content/text/documents/articles/notes/manoomin-jiaobai-ustilago-esculenta-evidence.md",
+  "purpose": "Structured, bounded claim evidence and known unknowns for scientific review and downstream journalism. This is not a scientifically accepted release or legal determination.",
+  "sources": [
+    {
+      "id": "cd-2017",
+      "kind": "agency_assessment",
+      "url": "https://blogs.cdfa.ca.gov/Section3162/?p=4271",
+      "date": "2017-12-01",
+      "name": "CDFA Ustilago esculenta pest rating"
+    },
+    {
+      "id": "cd-2018",
+      "kind": "agency_assessment",
+      "url": "https://blogs.cdfa.ca.gov/Section3162/?p=4338",
+      "date": "2018-01-05",
+      "name": "CDFA Manchurian wild rice assessment and comments"
+    },
+    {
+      "id": "tu-2019",
+      "kind": "primary_study",
+      "url": "https://doi.org/10.1007/s00284-019-01693-w",
+      "date": "2019-04-24",
+      "name": "Tu et al., Microbial Diversity in the Edible Gall"
+    },
+    {
+      "id": "chigira-2023",
+      "kind": "primary_study",
+      "url": "https://doi.org/10.1264/jsme2.ME23034",
+      "date": "2023-01-01",
+      "name": "Chigira et al., Mating types of Ustilago esculenta in Japan",
+      "date_precision": "year"
+    },
+    {
+      "id": "eppo-2024",
+      "kind": "agency_assessment",
+      "url": "https://gd.eppo.int/taxon/ZIZLA/datasheet",
+      "date": "2024-11-09",
+      "name": "EPPO Zizania latifolia datasheet; first published in Bulletin in 2024",
+      "date_precision": "month"
+    },
+    {
+      "id": "datcp-2025",
+      "kind": "agency_guidance",
+      "url": "https://datcp.wi.gov/Pages/Programs_Services/PlantIndustryLab.aspx",
+      "date": "2025-01-01",
+      "date_precision": "year",
+      "name": "Wisconsin DATCP plant laboratory and WTCAC 2025 manoomin survey description"
+    },
+    {
+      "id": "aphis-2026",
+      "kind": "agency_guidance",
+      "url": "https://www.aphis.usda.gov/plant-imports/commodity-approval",
+      "date": "2026-01-12",
+      "name": "USDA APHIS commodity import approval process"
+    },
+    {
+      "id": "reddit-2026",
+      "kind": "public_report",
+      "url": "https://www.reddit.com/r/IndianCountry/comments/1x2x418/huge_threat_to_american_wild_ricemanoomin/",
+      "date": "2026-10-11",
+      "date_precision": "observed",
+      "name": "Unverified public retail observations"
+    }
+  ],
+  "claims": [
+    {
+      "id": "asian-host-fungus-association",
+      "track": "pathogen_biology",
+      "status": "documented",
+      "species": "Zizania latifolia",
+      "scope": "Cultivated Asian edible gall association",
+      "statement": "Edible jiaobai gall tissue involves Zizania latifolia associated with Ustilago esculenta.",
+      "source_ids": [
+        "tu-2019",
+        "chigira-2023"
+      ],
+      "independent_event": "studies-asian-cultivated-galls",
+      "limits": [
+        "Does not establish infection in any North American native Zizania species.",
+        "Does not establish environmental transmission from retailed food."
+      ]
+    },
+    {
+      "id": "riverside-2017-introduced-host",
+      "track": "us_introductions",
+      "status": "documented",
+      "species": "Zizania latifolia",
+      "scope": "Riverside County, California, introduced host, November 2017",
+      "statement": "CDFA reported PCR and sequencing detection of Ustilago esculenta in introduced Zizania latifolia tissue.",
+      "source_ids": [
+        "cd-2017"
+      ],
+      "independent_event": "california-riverside-2017",
+      "limits": [
+        "This is not a native manoomin detection.",
+        "Does not show current establishment."
+      ]
+    },
+    {
+      "id": "culturable-at-harvest",
+      "track": "viable_exposure",
+      "status": "documented",
+      "species": "Zizania latifolia",
+      "scope": "Laboratory culture from five harvested edible galls in Japan",
+      "statement": "Tu et al. reported culturing several Ustilago esculenta strains from harvested Zizania latifolia galls.",
+      "source_ids": [
+        "tu-2019"
+      ],
+      "independent_event": "tu-2019-five-samples",
+      "limits": [
+        "Does not test imported retail consignments, shipping survival, disposal or infection of native hosts."
+      ]
+    },
+    {
+      "id": "white-versus-gray-galls",
+      "track": "viable_exposure",
+      "status": "documented",
+      "species": "Zizania latifolia",
+      "scope": "Cultivated Japanese white versus gray gall stages",
+      "statement": "Chigira et al. distinguish white edible galls and gray galls containing mature teliospores.",
+      "source_ids": [
+        "chigira-2023"
+      ],
+      "independent_event": "chigira-2023",
+      "limits": [
+        "A white gall is not fungus-free.",
+        "Visible spore stage does not establish phytosanitary status of a consignment."
+      ]
+    },
+    {
+      "id": "introduced-plant-spread",
+      "track": "plant_invasion",
+      "status": "source_report",
+      "species": "Zizania latifolia",
+      "scope": "EPPO synthesis of established introduced plant populations, including Hawaii and British Columbia",
+      "statement": "EPPO reports introduced Zizania latifolia populations in Hawaii and British Columbia and wetland invasion effects.",
+      "source_ids": [
+        "eppo-2024"
+      ],
+      "independent_event": "eppo-2024-invasion-synthesis",
+      "limits": [
+        "This is evidence about the plant, not a native-host fungal outbreak.",
+        "EPPO regulatory listing is not U.S. import law."
+      ]
+    },
+    {
+      "id": "cd-2018-stem-prohibition",
+      "track": "commodity_rule",
+      "status": "source_report",
+      "species": "Zizania latifolia",
+      "scope": "California agency assessment in 2018",
+      "statement": "CDFA's 2018 assessment said imports of Zizania latifolia stems were prohibited at that time.",
+      "source_ids": [
+        "cd-2018"
+      ],
+      "independent_event": "cd-2018-agency-assessment",
+      "limits": [
+        "Does not establish the current 2026 federal status of fresh or processed food products."
+      ]
+    },
+    {
+      "id": "wtcac-2025-survey",
+      "track": "tribal_stewardship",
+      "status": "source_report",
+      "species": "Zizania species",
+      "scope": "2025 Wisconsin Tribal Conservation Advisory Council and DATCP manoomin survey",
+      "statement": "Wisconsin DATCP describes a 2025 tribal-directed manoomin survey addressing other pathogens.",
+      "source_ids": [
+        "datcp-2025"
+      ],
+      "independent_event": "wtcac-datcp-2025",
+      "limits": [
+        "Not evidence of Ustilago esculenta presence or absence.",
+        "Does not grant outside field access or governance authority."
+      ]
+    },
+    {
+      "id": "retail-jiaobai-reports",
+      "track": "retail_observations",
+      "status": "reported",
+      "species": "Zizania latifolia (unverified product ID)",
+      "scope": "October 2026 Reddit report, no direct independent item examination by 561",
+      "statement": "A Reddit participant reported observing U.S. retail jiaobai and said they reported observations to USDA.",
+      "source_ids": [
+        "reddit-2026"
+      ],
+      "independent_event": "reddit-indian-country-1x2x418",
+      "limits": [
+        "Not an independently verified product identity, importer record, rule violation or biological sample."
+      ]
+    },
+    {
+      "id": "current-import-eligibility",
+      "track": "current_us_import_status",
+      "status": "unresolved",
+      "species": "Zizania latifolia",
+      "scope": "Fresh cut edible stems from China, imported for consumption in 2026",
+      "statement": "The current commodity-specific U.S. admissibility determination was not available to this review.",
+      "source_ids": [
+        "aphis-2026",
+        "cd-2018"
+      ],
+      "independent_event": "regulatory-question-fresh-stems-china-2026",
+      "limits": [
+        "APHIS general commodity guidance is not a Zizania-specific approval or denial.",
+        "Do not accuse stores based on this unresolved question."
+      ]
+    },
+    {
+      "id": "american-native-host-infection",
+      "track": "native_host_infection",
+      "status": "unresolved",
+      "species": "Zizania aquatica, Zizania palustris, Zizania texana",
+      "scope": "Modern North American native Zizania, no confirmed direct host record in reviewed set",
+      "statement": "The reviewed sources do not resolve modern native-host susceptibility or establish an actual native-bed infection.",
+      "source_ids": [
+        "cd-2017",
+        "cd-2018"
+      ],
+      "independent_event": "native-host-question",
+      "limits": [
+        "An uncertain host range is not proof of resistance or infection.",
+        "A secondary agency list is not a directly verified native diagnosis."
+      ]
+    }
+  ],
+  "release_gates": {
+    "current_us_violation_confirmed": false,
+    "native_infection_confirmed": false,
+    "scholarly_accepted": false,
+    "note": "Do not derive a store-violation report, outbreak warning or accepted scientific release from this dataset without current primary receiving evidence and appropriate authority."
+  }
+}
