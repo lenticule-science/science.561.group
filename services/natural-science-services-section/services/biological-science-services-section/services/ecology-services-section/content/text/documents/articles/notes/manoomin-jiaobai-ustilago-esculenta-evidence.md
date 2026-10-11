@@ -130,6 +130,15 @@ A negative survey only constrains the species, assay, place and time actually su
 - **S26.** Zhang Y. et al. (2017). [Investigation on the differentiation of two *Ustilago esculenta* strains — implications of a relationship with the host phenotypes appearing in the fields](https://pmc.ncbi.nlm.nih.gov/articles/PMC5719756/). *BMC Microbiology* 17:228. doi:10.1186/s12866-017-1138-8. Experimental MT- vs T-type strain comparison on the Asian Longjiao 2 cultivar; infection defects cannot be generalized to all strains or to American hosts.
 - **S27.** U.S. Fish and Wildlife Service (28 April 2025). [Ecological Risk Screening Summary: Manchurian Wildrice (*Zizania latifolia*) — High Risk](https://www.fws.gov/media/ecological-risk-screening-summary-manchurian-wildrice-zizania-latifolia-high-risk). Federal ecological screening of introduced **plant** invasion and contiguous-U.S. climate match; neither an observed native infection nor a legal ruling.
 
+## Current manuscripts and evidence
+
+This ecology research currently has two distinct, **unreviewed** manuscripts, retained in the owning Science repository rather than reproduced in a news or app repository:
+
+- [Native-host and fungal evidence assessment, working paper v0.4](2026/10/11/2026-10-11-ustilago-esculenta-host-records-working-paper.md): disputed *Zizania* host records, fungal strain infection biology, original source limitations and archival appendix.
+- [Two-pathway assessment, working paper v0.1](2026/10/11/2026-10-11-two-pathways-to-wild-rice-risk-working-paper.md): imported aquatic perennial establishment versus harvested-food fungal movement, independent causal gates and U.S. federal plant-risk screening.
+
+The [machine-readable claim register and its source locators](https://github.com/lenticule-science/science-services-section/blob/main/services/natural-science-services-section/services/biological-science-services-section/services/ecology-services-section/data/manoomin-evidence.json) are verified by [conservative evidence checks](https://github.com/lenticule-science/science-services-section/blob/main/tests/manoomin-evidence.test.mjs). A source file's existence, valid checks or branch merge is **not** a scientific peer-review acceptance or permission to advertise confirmed native infection, a current illegal import or an independently received outbreak report.
+
 ## Research publication method (work not yet accepted as a paper)
 
 **Research aim:** Determine what can be defensibly established about the *U. esculenta* introduction pathway, native *Zizania* susceptibility, and consequences for manoomin. The existing evidence note is a research input, not a peer-reviewed manuscript or an independently received scientific release.
