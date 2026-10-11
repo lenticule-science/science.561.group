@@ -1,0 +1,3 @@
+0bca260b1ca7d3641282099bdfe10a171858f8352d6bca08e974301f750d6359  choice-incentive-invariance.mjs
+71ed7874dcc54882d139212168ddca3ebfbda010bc333495fd22b123218cff12  choice-incentive-invariance.test.mjs
+7eddc0ea20cbc93dfb9dd56bbc926d23802878e2c6eb1b6fcf118f55072febbf  RESEARCH-SPECIFICATION.md
