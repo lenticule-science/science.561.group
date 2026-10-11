@@ -1,9 +1,10 @@
+import {readPublishedTable1} from './published-table1-fixture.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {crossAuditDirectionTables,WORK_REF} from '../forced-turn-audit.mjs';
 // Table 1 transcribed from Kuttner/Freiberg, Protist 181 (2026), p3.
 import {readFileSync} from 'node:fs';
-const table1=JSON.parse(readFileSync(new URL('../paper-table1.json',import.meta.url),'utf8'));
+const table1=readPublishedTable1();
 // Table 2 transcribed from same paper p4; source is an accessible text rendering
 // rather than an independently inspected native PDF table/image.
 const table2=JSON.parse(readFileSync(new URL('../paper-table2-transcribed.json',import.meta.url),'utf8'));

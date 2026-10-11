@@ -1,8 +1,8 @@
+import {readPublishedTable1} from './published-table1-fixture.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {auditForcedTurnTable,WORK_REF} from '../forced-turn-audit.mjs';
-import {readFileSync} from 'node:fs';
-const data=JSON.parse(readFileSync(new URL('../paper-table1.json',import.meta.url),'utf8'));
+const data=readPublishedTable1();
 const clone=()=>structuredClone(data);
 const eq=(actual,expected)=>assert.ok(Math.abs(actual-expected)<1e-8,`${actual} != ${expected}`);
 test('all four rows reconcile to 1274 tested / 316 undecided / 958 decisive',()=>{assert.deepEqual(auditForcedTurnTable(data).totals,{tested:1274,undecided:316,decisive:958,undecidedFraction:316/1274})});

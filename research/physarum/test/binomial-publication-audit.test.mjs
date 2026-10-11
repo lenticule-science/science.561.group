@@ -1,8 +1,9 @@
+import {readPublishedTable1} from './published-table1-fixture.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {exactTwoSidedHalfBinomial,auditPrintedPValues} from '../binomial-publication-audit.mjs';
 import {readFileSync} from 'node:fs';
-const table=JSON.parse(readFileSync(new URL('../paper-table1.json',import.meta.url),'utf8'));
+const table=readPublishedTable1();
 const printed=JSON.parse(readFileSync(new URL('../paper-table1-pvalues-transcribed.json',import.meta.url),'utf8')).rows;
 const cases=table.conditions.flatMap((r,i)=>[
  {id:r.id+':all',alternate:r.alternate,decisive:r.decisive,printedP:printed[i].all},
