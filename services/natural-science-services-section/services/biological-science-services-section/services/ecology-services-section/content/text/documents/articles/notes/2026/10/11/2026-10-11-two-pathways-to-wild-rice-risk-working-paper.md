@@ -11,7 +11,7 @@ tags: [ecology, invasive-plants, plant-pathology, risk-assessment, indigenous-st
 
 # Two introduction pathways relevant to manoomin: introduced *Zizania latifolia* and the *Ustilago esculenta* food question
 
-**Working paper v0.4, 11 October 2026. This is a targeted research synthesis, not a measured probability model, independent scientific receiving, peer review, or a current federal import ruling.** Companion to [the native-host evidence assessment](2026-10-11-ustilago-esculenta-host-records-working-paper.md) and the [source-owned evidence register](../../../manoomin-jiaobai-ustilago-esculenta-evidence.md).
+**Working paper v0.5, 11 October 2026. This is a targeted research synthesis, not a measured probability model, independent scientific receiving, peer review, or a current federal import ruling.** Companion to [the native-host evidence assessment](2026-10-11-ustilago-esculenta-host-records-working-paper.md) and the [source-owned evidence register](../../../manoomin-jiaobai-ustilago-esculenta-evidence.md).
 
 ## Abstract
 
@@ -145,6 +145,12 @@ This work also has timely public government records beyond disease surveillance.
 
 A source-critical literature paper can be written without access to Tribal ecological knowledge. Any future collection, diagnosis or community-facing research must be scoped with the appropriate nations and research stewards, honoring provenance, consent and restricted knowledge rather than treating public interest as blanket permission.
 
+### 6.3 A native-rice fungal disease is not automatically this Asian fungus
+
+A practical diagnosis must distinguish known native-rice pathogens before advancing a foreign-host explanation. The 2023 *Crop Science* review of northern *Z. palustris* describes **fungal brown spot caused by *Bipolaris oryzae***, stem smut now classified as ***Eballistra lineata***, and other diseases in cultivated production [McGilp et al. 2023, §5.2]. The older name ***Entyloma lineatum*** is explicitly treated as a synonym of *Eballistra lineata* by Species Fungorum. Its earlier combination ***Ustilago lineata*** is likewise **not *Ustilago esculenta***.
+
+The original North American observations have bounded host and locality: Bowden and Eschen (1986) identified *E. lineatum* smut in native *Z. aquatica* in an Idaho field/lake survey, while Nyvall and Percich (1999) identified *B. oryzae* and *B. sorokiniana* in Minnesota cultivated *Z. palustris* lesion studies. These are **positive comparator diagnoses**. They demonstrate that the presence of smut or fungal symptoms is not specific evidence of *U. esculenta*. They do **not** prove that the Asian fungus could never infect native hosts, and the surveyed fields are not modern pathogen-absence surveillance. This distinction prevents generic symptom photos, old common-name records and secondary smut references from inflating the proposed import threat.
+
 ## 7. Evidence gaps with decision value
 
 The table below distinguishes *what would be learned* from a future evidence source; it is not a prescription for uncredentialed experiments.
@@ -168,6 +174,10 @@ Koios.News can investigate verified primary developments with its own editorial 
 
 ## References
 
+- **McGilp L. et al. (2023).** [Northern Wild Rice breeding, genetics, and conservation](https://doi.org/10.1002/csc2.20973), *Crop Science* §5.2 on established *Z. palustris* pathogens, including *Eballistra lineata*.
+- **Species Fungorum.** [*Eballistra lineata* accepted name, including *Entyloma lineatum* synonym](https://www.speciesfungorum.org/names/Synonymy.asp?RecordId=467756), accession 467756.
+- **Bowden R. L., Eschen D. J. (1986).** [First Report of Wild Rice Diseases in Idaho](https://www.apsnet.org/publications/plantdisease/backissues/Documents/1986Abstracts/PD_70_800b.htm), *Plant Disease* 70:800, native *Z. aquatica* disease survey.
+- **Nyvall R. F., Percich J. A. (1999).** [Fungal brown spot and spot blotch of cultivated wild rice](https://doi.org/10.1094/PDIS.1999.83.10.936), *Plant Disease* 83:936–938, cultivated *Z. palustris* disease studies.
 - **GLIFWC (public programme page).** [Ganawenindiwag Manoomin Anishinaabeg](https://glifwc.org/stewardship/ganawenindiwag-manoomin-anishinaabeg). GLIFWC's account of ongoing manoomin stewardship, habitat concerns and Tribal research authority; no implied collaboration with this project.
 - **Biosecurity New Zealand MPI (public programme page).** [Manchurian wild rice eradication](https://www.mpi.govt.nz/biosecurity/exotic-pests-and-diseases-in-new-zealand/long-term-biosecurity-management-programmes/national-interest-pest-responses-programme/manchurian-wild-rice-eradication). Introduced-plant impacts, ~500 ha Northland area and government eradication work; policy does not apply to United States.
 - **USFWS (March 2023 revised; web version April 28, 2025).** [Full *Z. latifolia* Ecological Risk Screening Summary](https://www.fws.gov/sites/default/files/documents/2025-06/ecological-risk-screening-summary-manchurian-wildrice-april-2025.pdf), pp. 1–3, historical U.S. plantings and 2023 seed trade leads. Historical data explicitly labeled as such.
@@ -186,4 +196,4 @@ Koios.News can investigate verified primary developments with its own editorial 
 - **Watson T. et al. (1991).** [Smut of Manchurian Wild Rice Caused by *Ustilago esculenta* in California](https://www.apsnet.org/publications/plantdisease/backissues/Documents/1991Abstracts/PD_75_1075D.htm). *Plant Disease* 75:1075.
 - **Zhang Y. et al. (2017).** [Investigation on the differentiation of two *Ustilago esculenta* strains](https://pmc.ncbi.nlm.nih.gov/articles/PMC5719756/). *BMC Microbiology* 17:228; experimental comparison of MT- and T-type strains, not native-host or shipping viability trials.
 
-*Working manuscript v0.4: unreviewed; no independent scientific acceptance, federal commodity adjudication or public environmental outcome is claimed.*
+*Working manuscript v0.5: unreviewed; no independent scientific acceptance, federal commodity adjudication or public environmental outcome is claimed.*
