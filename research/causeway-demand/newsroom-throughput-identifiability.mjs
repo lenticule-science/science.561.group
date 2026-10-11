@@ -8,7 +8,9 @@ const CLASS=Object.freeze(['causeway-reported','provider-receipt','independent-p
 const text=x=>typeof x==='string'&&x.trim().length>0;
 const object=x=>x!==null&&typeof x==='object'&&!Array.isArray(x);
 const stamp=x=>typeof x==='string'&&/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d+)?Z$/u.test(x)&&
- Number.isFinite(Date.parse(x))&&new Date(x).toISOString().slice(0,19)===x.slice(0,19);
+ Number.isFinite(Date.parse(x))&&new Date(x).toISOString().slice(0,19)===x.slice(0,19)&&(!x.includes('.')||/\.\d{1,9}Z$/u.test(x));
+// Canonical nine-place UTC fractions make lexicographic comparisons temporal.
+const instant=x=>x.replace(/(?:\.(\d+))?Z$/u,(_,digits='')=>'.'+digits.padEnd(9,'0')+'Z');
 const sha=x=>typeof x==='string'&&/^[a-f0-9]{40}$/u.test(x);
 const allowed=(v,values)=>values.includes(v);
 export function assayNewsroomThroughput(packet={},verifyCoverage) {
@@ -17,7 +19,7 @@ export function assayNewsroomThroughput(packet={},verifyCoverage) {
     !object(source)||!text(source.repository)||!sha(source.revision)||
     !stamp(source.observedAt)||!allowed(source.evidenceClass,['causeway-issue-claim','causeway-source-report'])||
     source.rightsClass!=='internal-aggregate-only'||!object(window)||!stamp(window.start)||
-    !stamp(window.end)||window.start>=window.end||
+    !stamp(window.end)||instant(window.start)>=instant(window.end)||
     !Array.isArray(events)||events.length>10000||!Array.isArray(coverageClaims)||
     coverageClaims.length>STAGES.length)throw new TypeError('invalid provenance or window');
  const claimed=new Map();
@@ -34,7 +36,7 @@ export function assayNewsroomThroughput(packet={},verifyCoverage) {
      !text(e.effectRef)||!allowed(e.stage,STAGES)||
      !allowed(e.outcome,['succeeded','failed','unknown'])||
      !allowed(e.evidenceClass,CLASS)||!text(e.evidenceRef)||
-     !stamp(e.observedAt)||e.observedAt<window.start||e.observedAt>=window.end)
+     !stamp(e.observedAt)||instant(e.observedAt)<instant(window.start)||instant(e.observedAt)>=instant(window.end))
    throw new TypeError('invalid or duplicated event');
   seen.add(e.eventRef);
   byStage.get(e.stage).push(e);
