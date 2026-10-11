@@ -1,0 +1,225 @@
+{
+  "repository": "emsenn/bare-cedar-fog",
+  "revision": "36116a727f8993d64063341d9ed5cbd281ecd00f",
+  "observation": "2026-10-06T02:59:00Z",
+  "sourceRole": "snapshot evidence, not current write ownership",
+  "files": [
+    {
+      "file": "originals/2026-09-23-specification-of-the-semiotic-expression-notation.md",
+      "bytes": 6544,
+      "gitBlobSha1": "ef930a346698dd30b20b954a12e2adcaf673eff5",
+      "sha256": "38068b1e3b170cafdd2007741fcf21e0ca27babddd672b00ebff2fd9d93bbb70",
+      "source": "https://github.com/emsenn/bare-cedar-fog/blob/36116a727f8993d64063341d9ed5cbd281ecd00f/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/content/text/documents/articles/specifications/2026-09-23-specification-of-the-semiotic-expression-notation.md"
+    },
+    {
+      "file": "originals/2026-09-23-specification-of-the-semiotic-eavt.md",
+      "bytes": 3672,
+      "gitBlobSha1": "675c12f1bbf09bae57a8a0ba6e2d9d9ae2b2220e",
+      "sha256": "fec416e2271920d0200369993f5367dc357dface838f14f7806efce9debce2df",
+      "source": "https://github.com/emsenn/bare-cedar-fog/blob/36116a727f8993d64063341d9ed5cbd281ecd00f/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/content/text/documents/articles/specifications/2026-09-23-specification-of-the-semiotic-eavt.md"
+    },
+    {
+      "file": "originals/2026-09-23-specification-of-the-semiotic-content-address.md",
+      "bytes": 6906,
+      "gitBlobSha1": "63d5682ac9ab5f83150c56236df0fe7ce6d534da",
+      "sha256": "fbdb3e19c70a9dfe674b16f3f178965ca7cc4eb9f14722e166dafc1e00219cdf",
+      "source": "https://github.com/emsenn/bare-cedar-fog/blob/36116a727f8993d64063341d9ed5cbd281ecd00f/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-data-engineering-services-section/services/computer-content-engineering-services-section/content/text/documents/articles/specifications/2026-09-23-specification-of-the-semiotic-content-address.md"
+    },
+    {
+      "file": "originals/sen-core-v2.tsv",
+      "bytes": 457,
+      "gitBlobSha1": "c34a8afae1ff35f5371d25bcdf7596d34a0b8c17",
+      "sha256": "a78ac2190ab70bfe192757b19e13e4350b69ea7716ab322e78bc89b1585c38a6",
+      "source": "https://github.com/emsenn/bare-cedar-fog/blob/36116a727f8993d64063341d9ed5cbd281ecd00f/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/test/content/vectors/sen-core-v2.tsv"
+    },
+    {
+      "file": "originals/sen-conformance.mjs",
+      "bytes": 3817,
+      "gitBlobSha1": "621a9df297c11e94cd86224a6e431c766cdc74b1",
+      "sha256": "78b9a4f696bc5b1118d32cd9ae9df8db2183c6d4a5b5755d9869c55fdd9f8fed",
+      "source": "https://github.com/emsenn/bare-cedar-fog/blob/36116a727f8993d64063341d9ed5cbd281ecd00f/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/src/semiotic-expression-notation/runtime/conformance.mjs"
+    },
+    {
+      "file": "originals/signcell-README.md",
+      "bytes": 1815,
+      "gitBlobSha1": "f269a6623c4833cd2fa7feb54a8a4218e996afa1",
+      "sha256": "90139f3190af7396b1526de7783e3dcc89e6363f8374d9b02f6af0e2e7ffe6b6",
+      "source": "https://github.com/emsenn/bare-cedar-fog/blob/36116a727f8993d64063341d9ed5cbd281ecd00f/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-data-engineering-services-section/apps/signcell/src/README.md"
+    },
+    {
+      "file": "originals/signcell-package.json",
+      "bytes": 1184,
+      "gitBlobSha1": "667dbe26b56355e44c508475da2bbe5c8189cbb3",
+      "sha256": "235fe6197d02597c1525e0d67d829b1b4ea7f31e338e3aa3d1be3de138019818",
+      "source": "https://github.com/emsenn/bare-cedar-fog/blob/36116a727f8993d64063341d9ed5cbd281ecd00f/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-data-engineering-services-section/apps/signcell/package.json"
+    },
+    {
+      "file": "originals/signcraft-README.md",
+      "bytes": 2593,
+      "gitBlobSha1": "a99d86a00a8fc4375c0e6108eb08121187c4288f",
+      "sha256": "fed9cd2e41a1d62c0924bdf50f3eba2a5462103db739ba0a46d5d2ef4e263b9e",
+      "source": "https://github.com/emsenn/bare-cedar-fog/blob/36116a727f8993d64063341d9ed5cbd281ecd00f/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/apps/signcraft/src/README.md"
+    },
+    {
+      "file": "originals/signcraft-package.json",
+      "bytes": 2273,
+      "gitBlobSha1": "9467f2a57a33d4fd956f49ab9d387106d419a4d9",
+      "sha256": "9f8bed2b0a616e7bb9fb3d3e2ab98646c9f71328010e10a894f5d52f782d969d",
+      "source": "https://github.com/emsenn/bare-cedar-fog/blob/36116a727f8993d64063341d9ed5cbd281ecd00f/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/apps/signcraft/package.json"
+    },
+    {
+      "file": "originals/notation-forms.mjs",
+      "bytes": 1570,
+      "gitBlobSha1": "e730b56d7bfee8c52df5bf55f566b2ba3aadaa05",
+      "sha256": "2bc9661a8c6392fe340c7ca18f8d21a8c949c62b8b0b2d4d5b61c11d139b1541",
+      "source": "https://github.com/emsenn/bare-cedar-fog/blob/36116a727f8993d64063341d9ed5cbd281ecd00f/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-data-engineering-services-section/src/semiotic-expression-notation/notation/forms.mjs"
+    },
+    {
+      "file": "originals/notation-types.mjs",
+      "bytes": 1807,
+      "gitBlobSha1": "d2f5f3a9ebe54a0df48496bddc843c3756b122f1",
+      "sha256": "b197dea6eff8126feeca27b077c8a66110b018b52bc2aeab36b8b879bb6c7db6",
+      "source": "https://github.com/emsenn/bare-cedar-fog/blob/36116a727f8993d64063341d9ed5cbd281ecd00f/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-data-engineering-services-section/src/semiotic-expression-notation/notation/types.mjs"
+    },
+    {
+      "file": "originals/typing.mjs",
+      "bytes": 10071,
+      "gitBlobSha1": "5c58e078e149abb8a494809907474f0d6d89b0f6",
+      "sha256": "7e9a02501257d2c50e8bc6a62696cb406cfb7e7243305a514d107b9ca4baeaed",
+      "source": "https://github.com/emsenn/bare-cedar-fog/blob/36116a727f8993d64063341d9ed5cbd281ecd00f/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-data-engineering-services-section/src/semiotic-expression-notation/typing.mjs"
+    },
+    {
+      "file": "originals/eval.mjs",
+      "bytes": 12907,
+      "gitBlobSha1": "df0a646cc0772e8e64f40fcca31fe1f8cfa23c65",
+      "sha256": "80d1b631e090481b1f05384820cae92b48a20c7564a05e3a142efd97ea923251",
+      "source": "https://github.com/emsenn/bare-cedar-fog/blob/36116a727f8993d64063341d9ed5cbd281ecd00f/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/src/semiotic-expression-notation/eval.mjs"
+    },
+    {
+      "file": "originals/runtime.mjs",
+      "bytes": 10180,
+      "gitBlobSha1": "5c9e1f26f81ac0fc80b53db1bfee14ecc4858ffa",
+      "sha256": "4e38b561bc9a16330a61fbd1aafe0a4f840a403716bedd54337d855774024da7",
+      "source": "https://github.com/emsenn/bare-cedar-fog/blob/36116a727f8993d64063341d9ed5cbd281ecd00f/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/src/semiotic-expression-notation/runtime.mjs"
+    },
+    {
+      "file": "originals/admit-seavt-row.mjs",
+      "bytes": 2009,
+      "gitBlobSha1": "f58ff22a668f4a0c637fc81dca44adbae506e4f0",
+      "sha256": "2607c59ba056e2a666882d14295ad0aa0c7b3552458dd29548eba66ddb9c519f",
+      "source": "https://github.com/emsenn/bare-cedar-fog/blob/36116a727f8993d64063341d9ed5cbd281ecd00f/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-data-engineering-services-section/services/computer-content-engineering-services-section/services/computer-serialized-content-engineering-services-section/services/json-services-section/services/jsonl-services-section/services/eavt-services-section/services/semiotic-eavt-services-section/src/admit-seavt-row.mjs"
+    },
+    {
+      "file": "originals/normalize-seavt-row.mjs",
+      "bytes": 1044,
+      "gitBlobSha1": "457ca896761165fea5038b0df1ae3316653f1ec8",
+      "sha256": "65814353809e89ba91e73e04c65e7b844d34f3854bebaa5f482054ea468203e6",
+      "source": "https://github.com/emsenn/bare-cedar-fog/blob/36116a727f8993d64063341d9ed5cbd281ecd00f/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-data-engineering-services-section/services/computer-content-engineering-services-section/services/computer-serialized-content-engineering-services-section/services/json-services-section/services/jsonl-services-section/services/eavt-services-section/services/semiotic-eavt-services-section/src/normalize-seavt-row.mjs"
+    },
+    {
+      "file": "originals/record-semantic-record.mjs",
+      "bytes": 7818,
+      "gitBlobSha1": "32816378cd75bdcf96bf6d85241670478b7f9c15",
+      "sha256": "6d77f8e38006c5f034225f4247ac30ee761571bbae08c2063b337da0372ff975",
+      "source": "https://github.com/emsenn/bare-cedar-fog/blob/36116a727f8993d64063341d9ed5cbd281ecd00f/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-data-engineering-services-section/services/computer-content-engineering-services-section/services/computer-serialized-content-engineering-services-section/services/json-services-section/services/jsonl-services-section/services/eavt-services-section/services/semiotic-eavt-services-section/src/record-semantic-record.mjs"
+    },
+    {
+      "file": "originals/semantic-record.mjs",
+      "bytes": 19991,
+      "gitBlobSha1": "94cf7ecb96a8925454596084c8731fd87b4e2e57",
+      "sha256": "ace1109a3c2355e25fc1ffd3c50f6433334fffa6fc486f40004cf9346ea68b74",
+      "source": "https://github.com/emsenn/bare-cedar-fog/blob/36116a727f8993d64063341d9ed5cbd281ecd00f/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-data-engineering-services-section/services/computer-content-engineering-services-section/services/computer-serialized-content-engineering-services-section/services/json-services-section/services/jsonl-services-section/services/eavt-services-section/services/semiotic-eavt-services-section/src/semantic-record.mjs"
+    },
+    {
+      "file": "originals/seavt-carriers.test.mjs",
+      "bytes": 4851,
+      "gitBlobSha1": "238d7f159b9b6c9f5c5f7b45764ad8a22063535c",
+      "sha256": "4a3ab436b7c765207fefcfd5562eb80b1025076a2807eaddd5d40a89a32642fd",
+      "source": "https://github.com/emsenn/bare-cedar-fog/blob/36116a727f8993d64063341d9ed5cbd281ecd00f/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-data-engineering-services-section/services/computer-content-engineering-services-section/services/computer-serialized-content-engineering-services-section/services/json-services-section/services/jsonl-services-section/services/eavt-services-section/services/semiotic-eavt-services-section/test/seavt-carriers.test.mjs"
+    },
+    {
+      "file": "originals/old-2026-06-18-note-on-relation-model-notation.md",
+      "bytes": 13690,
+      "gitBlobSha1": "b63e161a797d197a7c96b2f7e71438d8ffbe5552",
+      "sha256": "0ecf86198e1b2e89f0b0e9817674099e545ac78bf81e97d495aadf9eced9947e",
+      "source": "https://github.com/red-cup-engineering/relation-model-notation-services-section/blob/main/content/documents/articles/notes/2026/06/18/2026-06-18-note-on-relation-model-notation.md"
+    },
+    {
+      "file": "originals/old-LICENSE",
+      "bytes": 1063,
+      "gitBlobSha1": "7d427315b67775719141e746383b8f2d64ea04dd",
+      "sha256": "90a2dd233759db00a3e63d5d6ff6c2c58630ea3c54ec8b1e04068f5e9fe809b5",
+      "source": "https://github.com/red-cup-engineering/relation-model-notation-services-section/blob/main/services/relation-model-notation-runtime-service/LICENSE"
+    },
+    {
+      "file": "originals/old-package.json",
+      "bytes": 359,
+      "gitBlobSha1": "ef51410fac8870b2df6a6b7d3d90fc3de38b57d0",
+      "sha256": "baac78c5928cae88fc74739dc2e3935ad05923f548735de4740d4287f0a5c16c",
+      "source": "https://github.com/red-cup-engineering/relation-model-notation-services-section/blob/main/package.json"
+    },
+    {
+      "file": "originals/publishing-a-specification-SKILL.md",
+      "bytes": 3783,
+      "gitBlobSha1": "fe5249cb1c564d0b519c672ca7398cf43c141407",
+      "sha256": "1d229695bd06b86141e98e4bcccc5c4178dca5d6753bb992637363a48bdbe47d",
+      "source": "https://github.com/emsenn/bare-cedar-fog/blob/36116a727f8993d64063341d9ed5cbd281ecd00f/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-data-engineering-services-section/services/computer-content-engineering-services-section/services/computer-documents-engineering-services-section/services/computer-article-engineering-services-section/services/specification-engineering-services-section/lib/agency/skills/publishing-a-specification/SKILL.md"
+    },
+    {
+      "file": "originals/specification.schema.json",
+      "bytes": 8810,
+      "gitBlobSha1": "fd2ce70ea5a67ff9c701edd0c609b8b1e467aa5d",
+      "sha256": "eb01c694ffb8c4d8dae3c1892ef531319d348389f2235a429a92cfe589ad424c",
+      "source": "https://github.com/emsenn/bare-cedar-fog/blob/36116a727f8993d64063341d9ed5cbd281ecd00f/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-data-engineering-services-section/services/computer-content-engineering-services-section/services/computer-documents-engineering-services-section/services/computer-article-engineering-services-section/services/specification-engineering-services-section/data/records/schema/specification.schema.json"
+    },
+    {
+      "file": "originals/derive-specification.mjs",
+      "bytes": 1212,
+      "gitBlobSha1": "7e9e43c6bb6c3308b5e4f803647e5c261fbf5fdc",
+      "sha256": "3588c4670c6ab18d0e394400d528a0782f0e7a3f50641cb89f3706844137456d",
+      "source": "https://github.com/emsenn/bare-cedar-fog/blob/36116a727f8993d64063341d9ed5cbd281ecd00f/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-data-engineering-services-section/services/computer-content-engineering-services-section/services/computer-documents-engineering-services-section/services/computer-article-engineering-services-section/services/specification-engineering-services-section/scripts/derive-specification.mjs"
+    },
+    {
+      "file": "originals/render-specification.mjs",
+      "bytes": 828,
+      "gitBlobSha1": "36833971e1abb1c35dd68fd0e3f83e4f13255a81",
+      "sha256": "ad1d54aa4b714b09540bcb86baa9ca4f405c514e0a05fe4cd8a972b6125b9942",
+      "source": "https://github.com/emsenn/bare-cedar-fog/blob/36116a727f8993d64063341d9ed5cbd281ecd00f/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-data-engineering-services-section/services/computer-content-engineering-services-section/services/computer-documents-engineering-services-section/services/computer-article-engineering-services-section/services/specification-engineering-services-section/scripts/render-specification.mjs"
+    },
+    {
+      "file": "originals/render-specification-rfcxml.mjs",
+      "bytes": 913,
+      "gitBlobSha1": "3931546bf575f04e1e20d0b740e4645f460f70aa",
+      "sha256": "44eec92e2300d906a47bcea3e05a453ca8f43c8f2a0534596f8fa5a6c68a48f0",
+      "source": "https://github.com/emsenn/bare-cedar-fog/blob/36116a727f8993d64063341d9ed5cbd281ecd00f/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-data-engineering-services-section/services/computer-content-engineering-services-section/services/computer-documents-engineering-services-section/services/computer-article-engineering-services-section/services/specification-engineering-services-section/scripts/render-specification-rfcxml.mjs"
+    },
+    {
+      "file": "originals/content-semantic-content-identity.mjs",
+      "bytes": 14096,
+      "gitBlobSha1": "8402ce106bad9349c5a1e250ef71cbaddc43c35e",
+      "sha256": "0b45afbe9d8eb4781fc98bbf7ea4f571c59471fcb9ec8e24fa63c046e506a0bf",
+      "source": "https://github.com/emsenn/bare-cedar-fog/blob/36116a727f8993d64063341d9ed5cbd281ecd00f/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-data-engineering-services-section/services/computer-content-engineering-services-section/src/semiotic-content-address/semantic-content-identity.mjs"
+    },
+    {
+      "file": "originals/2026-09-27-specification-of-activitypub-plus-plus.md",
+      "bytes": 15916,
+      "gitBlobSha1": "633a911f399e43caf1489e8bdb04debfd76c62b2",
+      "sha256": "a4801ead96230f94b99f88ebc4b632f3b4e889261eb516dab4da5b2ff155d98f",
+      "source": "https://github.com/emsenn/bare-cedar-fog/blob/36116a727f8993d64063341d9ed5cbd281ecd00f/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-networking-engineering-services-section/services/activitypub-services-section/content/text/documents/articles/specifications/2026-09-27-specification-of-activitypub-plus-plus.md"
+    },
+    {
+      "file": "originals/2026-09-27-specification-of-activitypub-plus-plus.specification.json",
+      "bytes": 38309,
+      "gitBlobSha1": "2a3f080531561ab0d0fc451868ff25e5e8349f85",
+      "sha256": "ff47eb5c4aa7e66e6051f5e1280a491266aa3d7f159134fcc497c8307de7e1ef",
+      "source": "https://github.com/emsenn/bare-cedar-fog/blob/36116a727f8993d64063341d9ed5cbd281ecd00f/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-networking-engineering-services-section/services/activitypub-services-section/content/text/documents/articles/specifications/2026-09-27-specification-of-activitypub-plus-plus.specification.json"
+    },
+    {
+      "file": "originals/draft-emsenn-activitypub-plus-plus-00.xml",
+      "bytes": 20811,
+      "gitBlobSha1": "f2d65260d61bc0b591c23b9d174743e1904df662",
+      "sha256": "d30cba332658d37007bd8d614d6a55841283f5f7e361d6692700f0fd9ac44492",
+      "source": "https://github.com/emsenn/bare-cedar-fog/blob/36116a727f8993d64063341d9ed5cbd281ecd00f/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-networking-engineering-services-section/services/activitypub-services-section/content/text/documents/articles/specifications/draft-emsenn-activitypub-plus-plus-00.xml"
+    }
+  ]
+}

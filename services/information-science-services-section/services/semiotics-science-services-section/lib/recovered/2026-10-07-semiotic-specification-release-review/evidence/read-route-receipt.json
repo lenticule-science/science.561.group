@@ -1,0 +1,59 @@
+{
+  "observed": "2026-10-07T10:17:00Z",
+  "rootNativeSourceRecovery": {
+    "reportedQuery": "\"SEN\" \"SEAVT\" \"publication\"",
+    "time": "10:10 UTC",
+    "result": "ordinary empty"
+  },
+  "targetReconciliation": {
+    "nativeQuery": "\"2026-09-23-specification-of-the-semiotic-expression-notation\"",
+    "result": "ordinary empty",
+    "time": "10:15 UTC"
+  },
+  "currentTrees": [
+    {
+      "key": "currentComputerTree",
+      "sha": "7793ffbee67a27d969287549949655f75ef69775",
+      "count": 3609,
+      "truncated": false,
+      "standardPaths": []
+    },
+    {
+      "key": "computer-coding-services-sectionTree",
+      "sha": "9611f10196b31dde05be2cbf337a36face5920c6",
+      "count": 153,
+      "truncated": false,
+      "standardPaths": []
+    },
+    {
+      "key": "computer-data-services-sectionTree",
+      "sha": "11af7fab70512e05a3f670e1d0a138a0a28d590a",
+      "count": 451,
+      "truncated": false,
+      "standardPaths": []
+    },
+    {
+      "key": "notationTree",
+      "sha": "f26dba34d38fd0b6748bfeed581e6748c942be70",
+      "count": 114,
+      "truncated": false,
+      "standardPaths": []
+    },
+    {
+      "key": "legacyTree",
+      "sha": "13f73be05595932a7e7425b4a508532b8e935e74",
+      "count": 3,
+      "truncated": false,
+      "standardPaths": []
+    },
+    {
+      "key": "textTree",
+      "sha": "df2d945d584571918bcceb48c127ad30961f789a",
+      "count": 21,
+      "truncated": false,
+      "standardPaths": []
+    }
+  ],
+  "bounds": "Read-only source recovery. No Computer14 integration, publisher pointer lookup, parser grammar/forest, or RMN parser payload. No source write, publication, license, visibility, deployment or sharing change.",
+  "retentionSource": "https://drive.google.com/drive/folders/1V_CXRXpEUdN7kaXJXGS6neJYs2lS1iji"
+}
