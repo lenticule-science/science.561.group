@@ -1,7 +1,7 @@
 // Lenticule Ecology: conservatively project source-bounded claims; never confer scientific, legal or editorial acceptance.
 
 export function validateEvidence(d){
- const problems=[],statuses=new Set(["documented","source_report","reported","unresolved"]),kinds=new Set(["primary_study","agency_assessment","agency_guidance","public_report","official_specific_ruling","primary_native_host_diagnosis","primary_field_observation"]);
+ const problems=[],statuses=new Set(["documented","source_report","reported","unresolved"]),kinds=new Set(["primary_study","agency_assessment","agency_guidance","public_report","official_specific_ruling","primary_native_host_diagnosis","primary_field_observation","peer_reviewed_review","taxonomic_authority"]);
  const isString=x=>typeof x==="string"&&x.trim().length>0;
  const seenSources=new Map(),seenClaims=new Set();
  if(d?.schema_version!==1)problems.push("unsupported schema_version");
