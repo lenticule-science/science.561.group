@@ -1,0 +1,34 @@
+{
+  "sourceLineage": {
+    "scienceOwner": "lenticule-science/science-services-section#69",
+    "scienceSourceMerge": "lenticule-science/science-services-section#70",
+    "scope": "Public service issue evidence only; no client records, eligibility, credentials, subscribers, or individual financial facts",
+    "authorityNote": "Issue existence and JSON Schema validation do not authenticate Group Board authorization or constitute scientific acceptance"
+  },
+  "cases": [
+    {
+      "origin": "Causeway Services",
+      "work_ref": "causeway-services/public-services-section#6",
+      "science_question": "Separately observe AI crawl eligibility, entity resolution, retrieval, citation, factual representation, and customer action. Test whether a six-layer, source-stratified measurement vector predicts independently labelled buyer-task outcomes better than a single composite score under platform/time drift. Pure robots/header/HTTP reachability verification needs no new science and belongs to Engineering tests.",
+      "evidence_class": "reported",
+      "falsifier": "Held-out platform/time and blinded task strata show no incremental predictive validity over the prespecified null baseline, or independent annotators cannot reproduce the supposedly observed representation classifications within a preregistered error bound. A provider-reported impression without query context and independent readback fails observation admission.",
+      "acceptance": "Lenticule independent research receiver approves a fixed sampling frame, annotation codebook, error estimates, platform/time stratification, negative controls, and outcome-linked analysis. Engineering may implement deterministic source/reachability checks now, but no predictive score, paid impact claim, or intervention effect is accepted absent observed evidence."
+    },
+    {
+      "origin": "Causeway Services",
+      "work_ref": "causeway-services/public-services-section#14",
+      "science_question": "Formalize public-program identity, source observations, effective interval, retrieval date, contradictory revision and supersession independently from tenant-local eligibility. Extracting current posted program details against one authoritative source is a deterministic Engineering operation and needs no separate empirical study.",
+      "evidence_class": "reported",
+      "falsifier": "A dual-source contradiction, delayed republication, or effective-date reversal is silently treated as a single current rule, or any shared registry test fixture requires a client-specific protected/financial eligibility attribute. Such cases falsify a proposed temporal/evidence model's adequacy.",
+      "acceptance": "Independent Science receiving checks timeline counterexamples and provenance semantics; Engineering implements observable source IDs, effective intervals, revision/freshness, contradictions and change receipts. Client eligibility facts stay in customer territory and a public program listing never implies award or filing authority."
+    },
+    {
+      "origin": "Causeway Services",
+      "work_ref": "causeway-services/public-services-section#16",
+      "science_question": "Specify a typed authority/state model separating draft preparation, customer review, publication approval, provider draft, send/schedule authorization, public-state observation, correction and customer acceptance. Testing a specific provider receipt field or public URL directly is deterministic Engineering verification; no fresh empirical science is necessary for that subtask.",
+      "evidence_class": "reported",
+      "falsifier": "A model transition permits provider send after mere customer review without a distinct send authorization, or equates a provider API success receipt with public publication/reader acceptance. An independently reproduced counterexample invalidates the authority model.",
+      "acceptance": "Lenticule formally reviews the authority transition model and negative-control counterexamples. Red Cup Engineering can implement deterministic transition/replay tests with explicit customer-scoped authorization and independent public witness; neither Science nor the provider self-accepts the customer's editorial outcome."
+    }
+  ]
+}
