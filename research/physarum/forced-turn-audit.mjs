@@ -8,11 +8,6 @@ export const WORK_REF = 'lenticule-science/science-services-section#27';
 const integer=(x,name)=>{if(!Number.isSafeInteger(x)||x<0)throw new TypeError(name+' must be a nonnegative integer');return x};
 const countKeys=['tested','undecidedBothArms','decisive','alternate','repeat'];
 const sides=['right','left'];
-const forcedTurnSummary=(decisive,alternating)=>({
-  decisive,alternating,
-  alternationAmongDecisive:decisive===0?null:alternating/decisive,
-  conditionalRateDisposition:decisive===0?'NO_DECISIVE_OBSERVATIONS':'COMPUTED_FROM_DECISIVE_COUNTS'
-});
 export function auditForcedTurnTable(input) {
   if(input?.workRef!==WORK_REF)throw new TypeError('workRef must identify owning Science requirement');
   if(!Array.isArray(input.conditions)||!input.conditions.length)throw new TypeError('nonempty conditions required');
@@ -27,10 +22,13 @@ export function auditForcedTurnTable(input) {
       throw new Error('inconsistent three-outcome accounting: '+row.id);
     const forcedRightN=row.forcedRight.right+row.forcedRight.left;
     const forcedLeftN=row.forcedLeft.right+row.forcedLeft.left;
+    // Right forced turn: left is alternate; left forced turn: right is alternate.
     const armAlternate=row.forcedRight.left+row.forcedLeft.right;
     const armRepeat=row.forcedRight.right+row.forcedLeft.left;
     const sourceResidual={decisive:row.decisive-(forcedRightN+forcedLeftN),
       alternate:row.alternate-armAlternate,repeat:row.repeat-armRepeat};
+    // Do not alter published counts to make them agree. Other row analyses remain
+    // usable as arithmetic, but the aggregate cannot be admitted as reconciled.
     const sourceArmCountsReconciled=Object.values(sourceResidual).every(x=>x===0);
     if(typeof row.printedUndecidedPercent!=='number'||!Number.isFinite(row.printedUndecidedPercent)||
       row.printedUndecidedPercent<0||row.printedUndecidedPercent>100)throw new TypeError('invalid published percentage');
@@ -44,12 +42,14 @@ export function auditForcedTurnTable(input) {
       alternationAmongDecisive:row.alternate/row.decisive,
       observedAlternationAmongAllTrials:row.alternate/row.tested,
       undecidedAmongAllTrials:row.undecidedBothArms/row.tested,
-      forcedRight:forcedTurnSummary(forcedRightN,row.forcedRight.left),
-      forcedLeft:forcedTurnSummary(forcedLeftN,row.forcedLeft.right),
+      forcedRight:{decisive:forcedRightN,alternating:row.forcedRight.left,alternationAmongDecisive:row.forcedRight.left/forcedRightN},
+      forcedLeft:{decisive:forcedLeftN,alternating:row.forcedLeft.right,alternationAmongDecisive:row.forcedLeft.right/forcedLeftN},
       printedUndecidedPercent:row.printedUndecidedPercent,
       computedUndecidedPercent:computedUndecided,
       printedMatchesCorrectDenominator:Math.abs(computedUndecided-row.printedUndecidedPercent)<0.011,
       printedMatchesExtraDenominator:Math.abs(extraDenominator-row.printedUndecidedPercent)<0.011,
+      // ONLY a mathematical worst-case allocation of undecided trials to
+      // hypothetical binary choices. Not confidence intervals or measurements.
       latentBinaryCompletionBounds:[row.alternate/row.tested,(row.alternate+row.undecidedBothArms)/row.tested],
       forcedTurnExposureIdentified:false,
       limitation:'undecided counts lack forced-turn stratification; cannot infer attempted-turn denominators from decisive counts'
@@ -61,11 +61,21 @@ export function auditForcedTurnTable(input) {
     acceptance:'Arithmetic and outcome-label reconciliation only; no preregistered N, CAD tolerance, causal attribution, or live measurement approved.'};
 }
 
+/** Independent arithmetic triangulation of published Table 1 and Table 2.
+ * Both tables are *transcribed from the article text*, not raw trials.
+ * Cardinal sums may agree where right/left and arm-specific sums do not.
+ */
 export function crossAuditDirectionTables(table1,table2){
  const primary=auditForcedTurnTable(table1);
- if(!Array.isArray(table2)||table2.length!==primary.conditions.length)throw new TypeError('one Table 2 row per Table 1 condition required');
+ if(table2?.workRef!==WORK_REF||table2.workRef!==table1.workRef)
+  throw new TypeError('Table 2 workRef must match the Science study');
+ if(typeof table1.source?.doi!=='string'||!table1.source.doi||
+    typeof table2.source?.doi!=='string'||table2.source.doi!==table1.source.doi)
+  throw new TypeError('Table 1 and Table 2 DOI must match and be present');
+ if(!Array.isArray(table2.conditions)||table2.conditions.length!==primary.conditions.length)
+  throw new TypeError('one Table 2 row per Table 1 condition required');
  const seen=new Set();
- const rows=table2.map(r=>{
+ const rows=table2.conditions.map(r=>{
   if(typeof r?.id!=='string'||seen.has(r.id))throw new TypeError('duplicate or invalid Table 2 condition');
   seen.add(r.id);
   const one=table1.conditions.find(x=>x.id===r.id);
@@ -77,11 +87,10 @@ export function crossAuditDirectionTables(table1,table2){
   const residual={decisiveMinusCardinal:one.decisive-cardinal,
     decisiveMinusLateral:one.decisive-rightLeft,
     lateralMinusArm:(rightLeft-(armRight+armLeft))};
-  const table2LateralMatchesTable1Arms=r.right===armRight&&r.left===armLeft;
   return {id:r.id,aggregateDecisive:one.decisive,cardinalTotal:cardinal,
     lateralTotal:rightLeft,armTotal:armRight+armLeft,
-    table2LateralMatchesTable1Arms,
-    residual,fullyReconciled:table2LateralMatchesTable1Arms&&Object.values(residual).every(x=>x===0)};
+    table2LateralMatchesTable1Arms:r.right===armRight&&r.left===armLeft,
+    residual,fullyReconciled:r.right===armRight&&r.left===armLeft&&Object.values(residual).every(x=>x===0)};
  });
  return {workRef:WORK_REF,sourceStatus:'two transcribed aggregate tables only; native-page and trial-level verification outstanding',
   status:rows.every(r=>r.fullyReconciled&&r.table2LateralMatchesTable1Arms)?'RECONCILED':'FAILED_CROSS_TABLE_RECONCILIATION',rows};
