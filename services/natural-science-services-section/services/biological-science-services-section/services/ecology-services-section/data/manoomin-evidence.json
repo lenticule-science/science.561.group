@@ -30,7 +30,7 @@
       "id": "chigira-2023",
       "kind": "primary_study",
       "url": "https://doi.org/10.1264/jsme2.ME23034",
-      "date": "2023-01-01",
+      "date": "2023",
       "name": "Chigira et al., Mating types of Ustilago esculenta in Japan",
       "date_precision": "year"
     },
@@ -46,7 +46,7 @@
       "id": "datcp-2025",
       "kind": "agency_guidance",
       "url": "https://datcp.wi.gov/Pages/Programs_Services/PlantIndustryLab.aspx",
-      "date": "2025-01-01",
+      "date": "2025",
       "date_precision": "year",
       "name": "Wisconsin DATCP plant laboratory and WTCAC 2025 manoomin survey description"
     },
