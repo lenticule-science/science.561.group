@@ -1,0 +1,236 @@
+#+title: Groundhog Autonomous Zone Domestic Workgroup
+#+title: GAZ-DOM
+* Purpose
+The GAZ-DOM workgroup handles the maintenance and improvement of the GAZ "Burrow," the indoor space at the GAZ.
+* Guides
+** Burrow Map
+This section is a map of the GAZ Burrow.
+*** Kitchen
+Located in the southwest corner of the Burrow, the kitchen contains a supply of food and appliances related to food.
+*** Dining
+The dining area is north of the kitchen.
+*** Bedroom
+The bedroom is in the southeast corner of the Burrow, and is where Es and emsenn stay.
+*** Library
+The library is in the northwest corner of the Burrow, and has our books, as well as games and other items.
+*** Loom
+The loom is (going to be) located east of the library.
+*** Gift-area
+The area with gifts the GAZ can give to accomplices is located east of the loom.
+*** Fibercrafts
+The area with fibercraft tools is located east of the gift area. (Note: the fibers are stored in the bedroom wall.
+** Temperature Regulation
+There are a few different ways to regulate the temperature in the Burrow. Some notes:
+
+- The central HVAC system (hereafter HVAC) is not under our control.[fn:: It kept the Burrow at around 63f during Summer2021, so has a notable effect on the space.]
+- The fridge in the kitchen outputs heat on its own, regardless of season, as well.
+- Human activity adds heat too!
+- There is a carbon monoxide detector in the bedroom
+- There are fire extinguishers in the kitchen (under the bar where it meets the south wall) and bedroom (next to the water heater)
+* Inventory
+#+begin_src beancount
+  ,** Plants
+  2021-11-07 commodity PLANT-TRADES-PALLID
+    name: "plant, Tradescantia pallida"
+    asset-class: "plant"
+  ,** Accounts
+  2021-11-07 open Equity:Opening
+  2021-11-07 open Assets:Inventory:House:Kitchen:Plants:Can25
+  ,** Inventory
+  2021-11-07 * "Inventory"
+    Equity:Opening
+    Assets:Inventory:House:Kitchen:Plants:Can25    1 PLANT-TRADES-PALLID
+    Assets:Inventory:House:Kitchen:Plants:Can25    9 COMPOST {0.5 GAZ}
+    Assets:Inventory:House:Kitchen:Plants:Can25    1 SODA-CAN {1 GAZ}
+#+end_src
+* Operations 
+** Routine
+*** Maintenance
+**** TODO [#B] Check the water containers
+SCHEDULED: <2021-11-02 Tue 07:00 ++1d>
+:PROPERTIES:
+:Effort:   0:10
+:LAST_REPEAT: [2021-11-01 Mon 08:38]
+:END:
+**** TODO [#B] Maintain the cutting boards
+SCHEDULED: <2021-11-02 Tue ++2w>
+:PROPERTIES:
+:EFFORT:   0:20
+:LAST_REPEAT: [2021-10-19 Tue 12:15]
+:END:
+**** TODO [#B] Water the houseplants
+SCHEDULED: <2021-12-06 Mon ++1w>
+:PROPERTIES:
+:EFFORT:   0:30
+:LAST_REPEAT: [2021-12-05 Sun 09:55]
+:END:
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2021-12-05 Sun 09:55]
+- State "DONE"       from "TODO"       [2021-10-27 Wed 18:00]
+- State "DONE"       from "TODO"       [2021-10-27 Wed 18:00]
+- State "DONE"       from "TODO"       [2021-10-27 Wed 18:00]
+- State "DONE"       from "TODO"       [2021-10-27 Wed 18:00]
+- State "DONE"       from "TODO"       [2021-10-27 Wed 17:59]
+CLOCK: [2021-10-26 Tue 21:01]--[2021-10-26 Tue 21:07] =>  0:06
+:END:
+**** TODO [#C] Do laundry 
+SCHEDULED: <2021-11-07 Sun ++1w>
+:PROPERTIES:
+:EFFORT:   3:00
+:LAST_REPEAT: [2021-10-31 Sun 13:15]
+:END:
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2021-10-31 Sun 13:15]
+- State "DONE"       from "TODO"       [2021-10-25 Mon 15:12]
+:END:
+**** TODO [#C] Wash the dishes 
+SCHEDULED: <2021-11-01 Mon 10:45 ++1d>
+:PROPERTIES:
+:EFFORT:   0:30
+:LAST_REPEAT: [2021-10-31 Sun 13:15]
+:END:
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2021-12-06 Mon 12:00]
+- Note taken on [2021-12-06 Mon 12:09] \\
+  4gal of water into the garden
+- State "DONE"       from "TODO"       [2021-11-25 Thu 12:45]
+CLOCK: [2021-11-25 Thu 12:12]--[2021-11-25 Thu 12:45] => 0:43
+- State "DONE"       from "TODO"       [2021-10-31 Sun 13:15]
+CLOCK: [2021-10-29 Fri 13:47]--[2021-10-29 Fri 17:10] =>  3:23
+- State "DONE"       from "TODO"       [2021-10-29 Fri 09:52]
+- Note taken on [2021-10-29 Fri 09:52] \\
+  skipping
+- State "DONE"       from "TODO"       [2021-10-24 Sun 11:24]
+- Note taken on [2021-10-24 Sun 11:15] \\
+  1.5gal to white potpond
+CLOCK: [2021-10-24 Sun 10:41]--[2021-10-24 Sun 11:24] =>  0:43
+:END:
+**** TODO [#C] Refill catfood container
+SCHEDULED: <2021-11-02 Tue ++8d>
+:PROPERTIES:
+:LAST_REPEAT: [2021-10-25 Mon 15:14]
+:END:
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2021-10-25 Mon 15:14]
+- Note taken on [2021-10-24 Sun 19:00] \\
+  8 cups from larder
+CLOCK: [2021-10-24 Sun 18:55]--[2021-10-24 Sun 19:00] =>  0:05
+:END:
+*** Self-Inspections
+**** TODO [#B] Check smoke alarms 
+SCHEDULED: <2021-12-23 Thu +2w>
+:PROPERTIES:
+:EFFORT:   0:10
+:END:
+
+*** Inventory
+*** Temperature Management
+- We need heating fuel in place
+** Special Operations
+*** Omnicron Winter
+The winter of 2021 is set to be a strange one. We gotta plan and react accordingly.
+**** Goals
+- Brownout Insurance :: We gotta make sure we'll be prepared even if our power goes out intermittently for hours.
+  - In-case-of-brownout
+    - Food preservation :: If the power goes out, the timer starts on stuff in our freezer unfreezing.
+    - Heating :: How are we gonna make sure we're warm even without electricity?
+      - Es & ems
+	- Ethanol heater -> water bottles -> blankets.
+      - Upstairs
+	- */???/*
+  - Brownout prevention
+    - Use solar power where possible
+      - Use phones only, rely on solar charger
+      - Use the radio not streaming
+    - Use biocarbon where possible
+      - Rocket-stove for boiling water
+      - Fireplace?
+    - Use bio-oil where possible
+      - Oil lamps for outdoor lighting
+    - Use ethanol where possible
+      - Ethanol lamps for indoor lighting
+      - Ethanol heater
+**** TODO Schedule fireplace & chimney cleaning
+CONCLUSION: This operation was cancelled; VRHM's activities moved out of the GAZ. However, the math here is close enough for horseshoes, and the procedure is useful, so should be... proceduralized.
+
+*** Flashing Lights
+**** The Situation
+VRHM[fn:: IYKYK] requires accommodations due to their physical proximity to GAZ acitivities. They are, daily, in the Burrow, and will not adhere to PPE requirements. This requires the ongoing ventilation of the space while they are present, and afterward until the atmosphere has been replaced.[fn:: The /Air Change Rate/ (=ACR=) equation is used: =f/v=, where =f= is the /fresh airflow rate/ and =v= is the /volume of the Burrow/ is used to calculate this time.]
+**** Tasks
+***** Calculate ACR for the Burrow
+****** Measure the Burrow's volume
+****** Measure the fresh airflow rate
+How the fuck do I do this?
+
+Looks like [[http://www.fsec.ucf.edu/en/publications/pdf/FSEC-CR-163-86.pdf][this resource]] might have some answers.
+
+This has [[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8404377/][info on covid concentrations in the air specifically]]
+***** Buy screens for the windows
+Did this, was only able to get one, it was $11.21 and had a tear, apparnetly, but I stitched it with dental floss. ugly, and doesn't really fit the window, fuck this dystopia.
+***** Create ventilation procedures
+that means, create an org-mode subtree somewhere that represents actually doing the task, so time spent on it, etc., can be tracked.
+- begin
+  - collect screens
+  - open storm door
+  - open north window, install screen
+  - open south window, install screen
+  - start timer
+- end
+  - end timer
+  - remove screen from south window, close window
+  - remove screen from north window, close window
+  - close storm door
+  - store screens
+***** Vent equation
+:PROPERTIES:
+:header-args: :var vol=6800 aws=0.5 awo=40 wap=2 wre=0.4 p=2 cyc=5
+:END:
+vol = volume of room
+aws = average wind speed
+awo = average wind offset from window
+wap = window aperature
+wre = window resistance (due to screen)
+p = playtime
+****** Cycle Time
+See http://www.fsec.ucf.edu/en/publications/pdf/FSEC-CR-163-86.pdf
+#+begin_src elisp
+  (/ (/ (/ vol (* (* (* (* aws (* awo 0.015)) 1.4667) wap) (- 1 wre))) 60) 60)
+#+end_src
+#+RESULTS:
+: 3.577359773809855
+****** Cycles-to-decon
+See https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8404377/
+#+begin_src elisp
+  (* (* p 200) (expt 0.66 (+ p cyc))))
+#+end_src
+
+#+RESULTS:
+: 21.820642804224008
+****** Decon time
+#+begin_src elisp
+  (* 3.577 cyc)
+#+end_src
+
+#+RESULTS:
+: 17.884999999999998
+****** End of operation
+** Burrow Layout 2021
+DEADLINE: <2022-04-01 Fri>
+*** Brief
+Solicit from each workgroup if they need a workspace in the Burrow (and what their workspace needs are), and then allocate all necessary workspaces.
+*** Tasks
+**** TODO Request comment from each workgroup
+DEADLINE: <2022-02-01 Tue>
+#+begin_src org
+  ,* 2021-12-04, GAZ-DOM, Burrow space allocation
+  Does your group require any space within the Burrow? If so, please specify your needs. Please respond by February 1st.
+#+end_src
+**** TODO Collate space needs
+DEADLINE: <2022-02-14 Mon>
+Once you have the space allotments requested by all the workgroups, collect them and see if they can actually be met.
+* Procedures
+** Outdoor dishwashing
+** Water Container Routine Fillings
+The west-most water container is the last-filled, so use it to fill the tiny containers in the bedroom and kitchen when you need to.
+** Cutting Board Maintenace
+Use the butchers block oil, kept on the steel wire shelves immediately south when you go into the garage.

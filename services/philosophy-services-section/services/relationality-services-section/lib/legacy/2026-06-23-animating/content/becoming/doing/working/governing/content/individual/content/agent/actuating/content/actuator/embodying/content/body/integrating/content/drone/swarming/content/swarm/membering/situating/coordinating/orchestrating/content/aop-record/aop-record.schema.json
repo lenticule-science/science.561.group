@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://561.group/swarm-intelligence/agentic-orchestration-platform/aop-record/aop-record.schema.json",
+  "title": "AOP record (frozen platform snapshot at a tick; stable-aperiodic-articulation-cell)",
+  "description": "Regime: stable-aperiodic-articulation-cell (platform-level snapshot). A frozen P = (R, A, D, H, F) at a specific tick index, used for audit and federation. Per lab aop-record.md: snapshots make the platform's state at time t replayable and witnessable. Distinct from operations-loop (which is the live, evolving record) — aop-record is an immutable point-in-time freeze.",
+  "kind": "object",
+  "type": "object",
+  "required": ["slug", "loopRef", "tickIndex", "substrate", "agentialRelationsSystem", "dispatchTable", "heartbeat", "federationGraph", "frozenAt", "evidence"],
+  "additionalProperties": false,
+  "properties": {
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$"
+    },
+    "loopRef": { "type": "string", "minLength": 1 },
+    "tickIndex": { "type": "integer", "minimum": 0 },
+    "substrate": { "type": "string", "minLength": 1 },
+    "agentialRelationsSystem": { "type": "string", "minLength": 1 },
+    "dispatchTable": { "type": "string", "minLength": 1 },
+    "heartbeat": { "type": "string", "minLength": 1 },
+    "federationGraph": { "type": "string", "minLength": 1 },
+    "frozenAt": { "type": "string", "minLength": 1 },
+    "evidence": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "minItems": 1,
+      "uniqueItems": true
+    }
+  }
+}

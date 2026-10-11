@@ -1,0 +1,15 @@
+Both changes work:
+
+**record-event.js** — Added 8 optional args in two groups:
+- Transaction: `--resource`, `--commodity`, `--quantity`, `--source-account`, `--destination-account`
+- Messaging: `--audience`, `--channel`, `--body`
+
+Existing calls without new args still work identically.
+
+**daemon.rs** `record_session_event()` — Now writes transaction attributes on every session event:
+- `resource=computation`, `commodity=tokens`, `source=budget/tokens`
+- Completed sessions: `destination=active/sessions/{id}`
+- Failed sessions: `destination=waste/failed-sessions`
+- `quantity` = total tokens (tokens_in + tokens_out) when metrics are available
+
+The function signature gained `metrics_path: Option<&std::path::Path>` — call sites with metrics pass `Some(&metrics_path)`, crash/recovery paths pass `None`.

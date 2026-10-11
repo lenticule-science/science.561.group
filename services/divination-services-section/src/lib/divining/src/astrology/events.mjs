@@ -10,7 +10,7 @@ import {
   julianDayFromIso,
   terrestrialJulianDay,
 
-} from "@lenticule-science/astronomy-services-section";
+} from "@lenticule-science/astronomy-position-computation-service";
 import { ZODIAC_SIGNS } from "@lenticule-science/divining/src/astrology/zodiac.mjs";
 
 /**

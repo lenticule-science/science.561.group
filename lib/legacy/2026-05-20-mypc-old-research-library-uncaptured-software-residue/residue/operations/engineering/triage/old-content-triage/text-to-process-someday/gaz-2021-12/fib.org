@@ -1,0 +1,14 @@
+#+title: Groundhog Autonomous Zone Fibercrafts Workgroup
+#+title: GAZ-FIB
+#+todo: DIS DRA | RES
+* RFC
+** DIS 2021-12-04, GAZ-DOM, Burrow space allocation
+Does your group require any space within the Burrow? If so, please specify your needs. Please respond by February 1st.
+** DIS 2021-12-04, GAZ-FIB, Electric knitting machine
+A new, contemporary knitting machine would be ~$750. Do we need one?
+
+
+* Operations
+** Routine Operations
+*** Fibercraft Project Planning
+- Have extra metal bottles? Knit thick cozies for them so they can be used to hold hot water.

@@ -1,14 +1,36 @@
 # Lenticule Science
 
+***Shaping the future's potential.***
+
 The [561 Group](https://561.group) operates Lenticule Science.
 
+*"Lenticule Science: we do what we can; we cannot not.
+For the truth of all of us, except the ones who are right."*
+
 Lenticule Science conducts research for the 561 Group. Red Cup Engineering turns accepted research into technology. Coesite Operations turns accepted technology into operating practice. Causeway Services turns accepted practice into services.
+
+## Sections
+
+- [`domestic-science-services-section`](services/domestic-science-services-section/README.md) — the household-scale systems that sustain everyday life.
+- [`engineering-science-services-section`](services/engineering-science-services-section/README.md) — the scientific claims that underlie engineering practice.
+- [`history-and-archaeology-science-services-section`](services/history-and-archaeology-science-services-section/README.md) — OECD FORD 6.1, history and archaeology.
+- [`hive-science-services-section`](services/hive-science-services-section/services/hive-fleet-observation-specification-service/README.md) — the Hive fleet observation specification.
+- [`information-science-services-section`](services/information-science-services-section/README.md) — information-science work, including math, semiotics, and knowledge.
+- [`natural-science-services-section`](services/natural-science-services-section/README.md) — natural science and its subdomains: astronomy, biology, chemistry, cosmology, earth science, and geography.
+- [`philosophy-services-section`](services/philosophy-services-section/README.md) — philosophical material, including relationality, the Group's own metaphysical research program.
+- [`social-science-services-section`](services/social-science-services-section/README.md) — research on people, institutions, collective activity, and social relations.
+
+`natural-science-services-section` frames nature under the four regimes proved in Obsmetrologia — kinetic, quantum, causal, thermodynamic — gathered in its [four regimes of natural existence](services/natural-science-services-section/content/text/glossary/topics/four-regimes-of-natural-existence.md) topic.
+
+- [consumer-goods-science-services-section](services/consumer-goods-science-services-section/README.md) — research supporting the 561 Group consumer-goods program.
+
+[`sites/l-space.561.group`](sites/l-space.561.group/README.md) is the L-Space site over this section's files.
 
 ## Writing standard
 
 Lenticule Science uses Plain Technical General American English (PTGAE) for technical prose. State the proposition first. Encode uncertainty as a precise claim status when it changes meaning, action, safety, or evidence.
 
-The current PTGAE standard is in `docs/plain-technical-general-american-english.md`.
+The existing PTGAE writing standard is in `docs/plain-technical-general-american-english.md`. The new [PlainEng/PTGAE science research section](services/information-science-services-section/services/communication-science-services-section/services/language-science-services-section/services/english-science-services-section/services/ptgae-science-services-section/README.md) develops its scientific basis and evidence with Red Cup Engineering, without silently replacing the current standard.
 
 - Run `node tools/ptgae-lint.mjs FILE [...]` to lint specific files.
 - Run `node tools/ptgae-corpus-scan.mjs PATH [...]` to scan a text corpus.
@@ -17,3 +39,7 @@ The current PTGAE standard is in `docs/plain-technical-general-american-english.
 - Run `node tools/ptgae-corpus-rewrite.mjs PATH [...]` for a dry-run corpus rewrite report; add `--write` only after reviewing the proposed changes.
 
 The linter ignores Markdown code and quoted source text. Automatic rewriting is narrower than linting: a flagged phrase is not permission to change substantive meaning. Automatic rewriting also preserves Markdown blockquotes and straight or curly quoted source text. Corpus scanning does not follow symbolic links.
+
+## Repository and canonicality
+
+This section's canonical repository is `lenticule-science/science-services-section`. Bare Cedar Fog is a superrepo and will carry this section as a git submodule at this directory path. This repository's directory layout is the superrepo's layout for the section; each section with its own repository is mounted as a submodule at its place in that layout.

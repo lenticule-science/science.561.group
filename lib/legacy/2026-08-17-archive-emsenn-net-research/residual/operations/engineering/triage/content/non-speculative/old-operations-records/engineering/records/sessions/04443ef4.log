@@ -1,0 +1,13 @@
+Done. The inventory is at `operations/command/records/ideas-inventory.md`.
+
+**22 ideas surveyed** across `operations/command/ideas/` (20) and `operations/command/records/ideas/` (2):
+
+- **6 READY FOR PLAN** — double-entry accounting, chart of accounts, FARS/MASH packaging, node/rust split, graph-as-composition, naming coherence
+- **6 NEEDS RESEARCH** — unified records, MUD messaging, live-swap, dual-cone architecture, praxis-driven development, four math constructs
+- **4 ALREADY COVERED** — CL pipeline, daemon world-tick, ideas-to-plans pipeline, skill manifests
+- **4 DEFERRED** — web GUI, companion agent, Guix/Guile, relational expression syntax, GitHub issues
+
+Top promotion recommendations by leverage:
+1. Extend `plaintext-accounting-operations` with the double-entry + chart of accounts sketches (implementation-ready)
+2. Create project records for FARS/MASH packaging and Voidfleet Academy (captain directives)
+3. Encode node/rust responsibility split as an architecture decision record

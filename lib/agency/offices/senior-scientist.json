@@ -29,15 +29,18 @@
   "reports-to": "emsenn/services/561-group/services/561-group-services-section#chief-science-officer",
   "jurisdiction": "lib/emsenn/services/561-group/services/science-services-section",
   "bears-duty": [
-    "emsenn/duty/realizing-allocated-science-work"
+    "emsenn/duty/realizing-allocated-science-work",
+    "emsenn/duty/persisting-leader-corrections"
   ],
   "provides-skill": [
-    "research"
+    "research",
+    "persisting-a-leader-correction"
   ],
   "deontic-profile": {
     "realizing-allocated-science-work": "duty",
     "opening-the-requests-a-specification-obliges": "deontic-power",
-    "accepting-its-own-work": "deontic-immunity"
+    "accepting-its-own-work": "deontic-immunity",
+    "persisting-leader-corrections": "duty"
   },
   "presides-over": []
 }

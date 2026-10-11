@@ -1,0 +1,5 @@
+**Stale Plans: 0**
+
+No active plans have tasks without activity in the last 7 days. All 45 active plans with tasks show `date-created` or `date-completed` timestamps within the past week (76 total plans counting no-task shells; 23 of those have no tasks and thus no activity signal — but these are mostly consume-stubs or unstarted initiatives, not stale-by-drift).
+
+Out of 382 tasks across plans, recent activity dominates — the fleet has been actively creating and closing tasks.

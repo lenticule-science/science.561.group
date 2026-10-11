@@ -1,0 +1,6 @@
+Done. Here's what was added:
+
+- **`MAX_STDERR` (4KB)** and **`MAX_STDOUT` (64KB)** limits — stderr is tight because it's diagnostic noise; stdout is larger because it carries hook payloads
+- **`truncateOutput(text, limit, hookId, stream)`** — clips at the limit, appends `...[truncated]`, and logs which hook/stream was truncated to stderr
+- Applied in all three output paths: `emitHookResult` (direct require path + async), and the legacy `spawnSync` path
+- No behavioral change for hooks under the limits — `truncateOutput` is a no-op when text fits

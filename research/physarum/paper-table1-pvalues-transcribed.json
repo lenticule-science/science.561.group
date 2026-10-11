@@ -1,0 +1,17 @@
+{
+  "workRef": "lenticule-science/science-services-section#27",
+  "source": {
+    "doi": "10.1016/j.protis.2026.126156",
+    "table": "Table 1",
+    "page": 3,
+    "kind": "printed p-values transcribed from publicly accessible full-text HTML rendering",
+    "nativePageImageVerified": false,
+    "claimedStatisticalProcedure": "two-tailed binomial tests; null success probability 0.5; Benjamini-Hochberg for multiplicity"
+  },
+  "rows": [
+    {"id":"short-3mm","all":"<0.001","forcedRight":"<0.001","forcedLeft":"<0.001"},
+    {"id":"medium-7mm","all":0.056,"forcedRight":0.055,"forcedLeft":0.180},
+    {"id":"long-14mm","all":0.219,"forcedRight":0.030,"forcedLeft":0.202},
+    {"id":"double-7mm","all":0.269,"forcedRight":0.125,"forcedLeft":0.025}
+  ]
+}

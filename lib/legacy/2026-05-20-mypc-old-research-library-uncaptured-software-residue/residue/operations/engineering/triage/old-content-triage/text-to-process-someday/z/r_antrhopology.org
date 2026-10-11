@@ -1,0 +1,7 @@
+#+title: r/Anthropology
+#+roam_key: https://reddit.com/r/Anthropology
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-20 Sun 15:13]
+#+roam_tags: term
+*/r/Anthropology* is a [[file:bulletin_board.org][bulletin board]] on the [[file:web.org][Web]].

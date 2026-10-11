@@ -1,0 +1,1471 @@
+{
+  "$schema": "../../../../../../../../data/records/schema/literature-measurement.schema.json",
+  "id": "treasury-and-contribution-primitives",
+  "kind": "literature-measurement",
+  "question": "How do the deployed treasury and contribution primitives adjacent to a cooperative financial pool (Drips, Juicebox and Revnet, Moloch v3 Baal, 0xSplits, Regen Network, Toucan and KlimaDAO, Safe allowance and Zodiac Roles, Hats) work at contract level, at what scale do they run, and what do they fail to do?",
+  "frame": {
+    "population": "deployed on-chain treasury, streaming, splitting, role and ecological-credit protocols read from first-party source, contracts, governance records and dated DeFiLlama reads",
+    "exposure": "contract-level mechanism, admin and upgrade surfaces, deployment addresses, dated scale measurements",
+    "comparator": "one another, and a cooperative pooling protocol needing treasury, contribution accounting, exit rights and role delegation",
+    "outcomes": [
+      "fund-flow mechanism",
+      "share and vote computation",
+      "admin keys and upgradeability",
+      "scale",
+      "failure modes"
+    ]
+  },
+  "notes": [
+    "../../content/text/documents/articles/notes/2026/10/08/2026-10-08-treasury-and-contribution-primitives.md"
+  ],
+  "sources": [
+    {
+      "item": {
+        "id": "dripscontracts2026",
+        "type": "software",
+        "title": "Radicle Drips protocol V2 smart contracts (drips-network/contracts, commit 07c3924)",
+        "author": [
+          {
+            "literal": "Drips Contracts"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              4,
+              29
+            ]
+          ]
+        },
+        "URL": "https://github.com/drips-network/contracts"
+      },
+      "readFrom": "source-code",
+      "observedAt": "2026-10-08",
+      "design": "protocol-source-code",
+      "findings": [
+        {
+          "finding": "Drips is a single ERC-20 streaming-and-splitting contract. An account tops up a streams balance and names up to 100 stream receivers; funds leave the streams balance per second but become receivable only at global cycle boundaries of cycleSecs (an immutable set at deployment).",
+          "exactSourceLanguage": "Every `cycleSecs` seconds the protocol adds streamed funds to the receivers' balances, so recently streamed funds may not be receivable immediately. `cycleSecs` is a constant configured when the Drips contract is deployed."
+        },
+        {
+          "finding": "Received funds are then split: an account sets up to 200 splits receivers with weights summing to 1,000,000; split() pushes each receiver's weight share into that receiver's own splittable balance and the remainder becomes collectable. Anybody may call split for any account, which is how a dependency chain is forced to flow. Splits are non-cycle-gated: they are available immediately and are themselves splittable.",
+          "exactSourceLanguage": "Funds received from splits are available for collection immediately regardless of the cycle. They aren't exempt from being split, so they too can be split when collected. Accounts can build chains and networks of splits between each other. Anybody can request collection of funds for any account, which can be used to enforce the flow of funds in the network of splits."
+        },
+        {
+          "finding": "The split arithmetic is cumulative-weight rounding: receiver i gets floor(amount*cumulativeWeight/1e6) minus what was already assigned, so remainders go to the account itself.",
+          "exactSourceLanguage": "uint128 currSplitAmt =\n                    uint128(collectableAmt * splitsWeight / _TOTAL_SPLITS_WEIGHT) - splitAmt;"
+        },
+        {
+          "finding": "Hard constants: 100 stream receivers per account, 200 splits receivers, 9 extra decimals on amtPerSec, total splits weight 1,000,000, minimum stream rate of 1 token per cycle, per-token protocol balance capped at int128 max.",
+          "exactSourceLanguage": "uint256 internal constant _MAX_STREAMS_RECEIVERS = 100; ... uint8 internal constant _AMT_PER_SEC_EXTRA_DECIMALS = 9; ... uint256 internal constant _MAX_SPLITS_RECEIVERS = 200; ... uint32 internal constant _TOTAL_SPLITS_WEIGHT = 1_000_000;"
+        },
+        {
+          "finding": "Account identity is pluggable through numbered drivers: the high 32 bits of every 256-bit account ID name the controlling driver. AddressDriver (account = Ethereum address), NFTDriver (account = ERC-721 token, holder controls it), ImmutableSplitsDriver (anybody creates a splits configuration nobody can change afterwards, always giving away 100 percent), RepoDriver (account = a GitHub repository), RepoSubAccountDriver, RepoDeadlineDriver, and Giver.",
+          "exactSourceLanguage": "Every account ID is a 256-bit integer constructed by concatenating:\n    /// `driverId (32 bits) | driverCustomData (224 bits)`."
+        },
+        {
+          "finding": "Repository accounts have no owner until an oracle-signed payload assigns one; funds sent to a GitHub repo wait in the account until its maintainer proves control. The current RepoDriver source still contains the Lit-oracle owner-update path and an updatable oracle address; the deployment file lists a separate 'RepoDriver tasks owner' address.",
+          "exactSourceLanguage": "By default the accounts have no owners and they can't be controlled by anybody,\n/// use `updateOwnerByLit` to update the owner using signed payload obtained from the oracle."
+        },
+        {
+          "finding": "Control surface: every deployed Drips instance is a Managed proxy with an ERC-1967 admin and a set of pausers; the admin upgrades the logic and can pause. Unmanaged implementations are forever paused with admin 0x00.",
+          "exactSourceLanguage": "All instances of the contracts have admin address `0x00` and are forever paused."
+        },
+        {
+          "finding": "Anybody can squeeze streams from a sender's published streams history before a cycle ends, so a recipient can access funds mid-cycle by presenting the sender's configuration history.",
+          "exactSourceLanguage": "Only funds streamed before `block.timestamp` can be squeezed."
+        },
+        {
+          "finding": "Only amount-preserving ERC-20s are supported; rebasing, fee-on-transfer or restricted tokens can get stuck or lost.",
+          "exactSourceLanguage": "Tokens which rebase the holders' balances, collect taxes on transfers, or impose any restrictions on holding or transferring tokens are not supported. If you use such tokens in the protocol, they can get stuck or lost."
+        },
+        {
+          "finding": "Deployment files exist for Ethereum (cycle 604800 s), Optimism (cycle 86400 s), Filecoin, Metis and testnets. Ethereum Drips 0xd0Dd053392db676D57317CD4fe96Fc2cCf42D0b4, AddressDriver 0x1455d9bD6B98f95dd8FEB2b3D60ed825fcef0610, NFTDriver 0xcf9c49B0962EDb01Cdaa5326299ba85D72405258, ImmutableSplitsDriver 0x1212975c0642B07F696080ec1916998441c2b774, RepoDriver 0x770023d55D09A9C110694827F1a6B32D5c2b373E, Caller 0x60F25ac5F289Dc7F640f948521d486C964A248e5. Optimism Drips 0xd320F59F109c618b19707ea5C5F068020eA333B3 (RepoDriver 0xe75f56B26857cAe06b455Bfc9481593Ae0FB4257, NFTDriver 0x2F23217A87cAf04ae586eed7a3d689f6C48498dB, LZBridgedGovernor 0x07791819560264627e9c4B1308e546667E83B564).",
+          "exactSourceLanguage": "\"Drips\": \"0xd0Dd053392db676D57317CD4fe96Fc2cCf42D0b4\", \"Drips cycle seconds\": 604800 (ethereum.json); \"Drips\": \"0xd320F59F109c618b19707ea5C5F068020eA333B3\", \"Drips cycle seconds\": 86400 (optimism.json)"
+        }
+      ],
+      "notFound": [
+        "a pull-based claim, vesting, cliff, or contribution-weighted allocation primitive: Drips moves funds by configured rates and weights only; no contract in src/ computes shares from work",
+        "any rule by which a recipient can refuse or cap a split chain; an account that is named in splits receives the weight regardless"
+      ],
+      "population": "deployed protocol source"
+    },
+    {
+      "item": {
+        "id": "dripsdocs2026",
+        "type": "webpage",
+        "title": "Drips documentation (drips-network/docs, docs/pages)",
+        "author": [
+          {
+            "literal": "Drips Docs"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              8,
+              12
+            ]
+          ]
+        },
+        "URL": "https://github.com/drips-network/docs"
+      },
+      "readFrom": "first-party-docs",
+      "observedAt": "2026-10-08",
+      "design": "protocol-documentation",
+      "findings": [
+        {
+          "finding": "Drip Lists are the dependency-funding surface: a donor creates a list of up to 200 GitHub repositories, Ethereum addresses or other Drip Lists, with percentages, and streams or gives to the list; the list forwards after each settlement period. The docs name the period monthly on Ethereum mainnet and daily on other chains; the Ethereum Drips contract reads cycleSecs 604800 (seven days) and the Optimism contract 86400 (one day). A maintainer who claims a repository states their own dependencies and the share of earnings forwarded to them.",
+          "exactSourceLanguage": "On Drips, anyone can create a _Drip List_ to flexibly send funds to a list of up to 200 open-source GitHub repositories, Ethereum addresses, or other Drip Lists at a time. As project maintainers come to Drips to claim their funds, they themselves are asked to provide a list of other projects they depend on, and can choose to automatically forward a percentage of their earnings to them."
+        },
+        {
+          "finding": "A list that includes another owner's list trusts that owner not to change it.",
+          "exactSourceLanguage": "If you choose to include someone else's Drip List on yours, **make sure that you trust the list's owner**, because they may at any point in the future change its recipients."
+        },
+        {
+          "finding": "Drips Wave is a recurring bounty program, not a Drips-contract flow: one week per month, issues scored 100/150/200 points, the reward budget divided by point share, payout in USDC on the Stellar network after a seven-day Compliment window, with KYC required to withdraw. Launched with the Stellar ecosystem in January 2026. Operated by the Public Goods Association (Zug, Switzerland) with discretion to adjust points and withhold rewards.",
+          "exactSourceLanguage": "Drips Wave is currently launching with select partners, starting with the Stellar ecosystem in January 2026. ... At the end of each Wave, we calculate your percentage of all points issued during the Wave, and allocate the reward pool accordingly. ... To withdraw your rewards, you must have a verified identity (**KYC"
+        },
+        {
+          "finding": "Wave points act as shares of a fixed per-wave pool; complexity fixes the points per issue (Trivial 100, Medium 150, High 200).",
+          "exactSourceLanguage": "These points act similar to \"shares\" in the total Reward Pool for the given Wave. The more points a contributor earns relative to others, the larger their slice of the total rewards."
+        },
+        {
+          "finding": "Drips also hosts retroactive public-goods funding rounds (application, badgeholder voting, payout), available only to select partners.",
+          "exactSourceLanguage": "Drips RPGF is currently only available for select partners."
+        },
+        {
+          "finding": "Security record: Spearbit review (November 2023), Code4rena contest (26 wardens, January 2023), internal and independent reviews, Cantina reviews of BridgedGovernor/Giver, the RepoDriver migration to Gelato, and later drivers, Certora formal verification of parts, Immunefi bounty.",
+          "exactSourceLanguage": "A complete audit of the smart contracts has been completed by [Spearbit](https://spearbit.com/) as of November 2023 ... The `RepoDriver` migration to Gelato was audited separately, see the [Cantina Security Report]"
+        }
+      ],
+      "notFound": [
+        "a funding-volume, donor-count or recipient-count figure on any docs page",
+        "Drips Wave payout amounts for any completed wave"
+      ],
+      "population": "Drips documentation"
+    },
+    {
+      "item": {
+        "id": "dripsonchain2026",
+        "type": "dataset",
+        "title": "Drips protocol on-chain reads on Ethereum and Optimism, 2026-10-08",
+        "author": [
+          {
+            "literal": "Drips Onchain Reads"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              8
+            ]
+          ]
+        },
+        "URL": "https://eth.blockscout.com/address/0xd0Dd053392db676D57317CD4fe96Fc2cCf42D0b4"
+      },
+      "readFrom": "on-chain-read",
+      "observedAt": "2026-10-08",
+      "design": "on-chain-measurement",
+      "findings": [
+        {
+          "finding": "Ethereum Drips: cycleSecs 604800, nextDriverId 100, admin 0x8dA8f82d2BbDd896822de723F55D6EdF416130ba, a verified Compound-style Timelock (delay 172800 s = 2 days, MAXIMUM_DELAY 2592000, GRACE_PERIOD 1209600) whose admin is 0xD64D01D04498bFc60f04178e0B62a757C5048212.",
+          "exactSourceLanguage": "cast call 0xd0Dd...D0b4 'admin()(address)' -> 0x8dA8f82d2BbDd896822de723F55D6EdF416130ba; Timelock.delay() -> 172800; admin() -> 0xD64D01D04498bFc60f04178e0B62a757C5048212"
+        },
+        {
+          "finding": "Optimism Drips: cycleSecs 86400, admin is the LZBridgedGovernor 0x07791819560264627e9c4B1308e546667E83B564, whose owner() is the Ethereum Timelock 0x8dA8f82d...6130ba: Optimism upgrades are LayerZero-relayed from the Ethereum timelock.",
+          "exactSourceLanguage": "cast call 0xd320...33B3 'admin()(address)' -> 0x07791819560264627e9c4B1308e546667E83B564; LZBridgedGovernor.owner() -> 0x8dA8f82d2BbDd896822de723F55D6EdF416130ba"
+        },
+        {
+          "finding": "Balances held in Drips on 2026-10-08: Ethereum, USDC streams 12.000111 and splits 251,612.452659 (splits = received, awaiting collection); DAI streams 12.10 and splits 700.57; WETH streams 0.0000063 and splits 23.5766. Optimism, USDC splits 14,171.867461 and streams 0.002315; OP token streams 2.1858 and splits 28.986.",
+          "exactSourceLanguage": "balances(USDC) -> (12000111, 251612452659); balances(DAI) -> (12101246880000000010, 700570595289659785429); balances(WETH) -> (6337962962980, 23576601047876774234) [Ethereum]; balances(0x0b2C...Ff85) -> (2315, 14171867461) [Optimism]"
+        },
+        {
+          "finding": "Transaction counts (Blockscout, 2026-10-08): Ethereum Drips 4,908 transactions to the contract, RepoDriver 126, AddressDriver 121; Optimism Drips 85, RepoDriver 49.",
+          "exactSourceLanguage": "{\"transactions_count\":\"4908\",\"token_transfers_count\":\"1061\"} (eth Drips); {\"transactions_count\":\"85\"} (optimism Drips)"
+        }
+      ],
+      "notFound": [
+        "a DeFiLlama protocol page for Drips (api.llama.fi/protocol/drips returns 'Protocol not found'; the 8,543-protocol list contains only 'Taiko Drips', an unrelated farm)"
+      ],
+      "population": "deployed contracts"
+    },
+    {
+      "item": {
+        "id": "nanacorev52025",
+        "type": "software",
+        "title": "Bananapus nana-core-v5: Juicebox V5 core contracts (commit cb1f992)",
+        "author": [
+          {
+            "literal": "Nana Core V5"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              12,
+              18
+            ]
+          ]
+        },
+        "URL": "https://github.com/Bananapus/nana-core-v5"
+      },
+      "readFrom": "source-code",
+      "observedAt": "2026-10-08",
+      "design": "protocol-source-code",
+      "findings": [
+        {
+          "finding": "A project is an ERC-721 in JBProjects; its behaviour is a queue of rulesets. A ruleset has duration, weight (tokens minted per unit of base currency), a weightCutPercent applied each cycle when the ruleset re-starts, an approvalHook that gates the next queued ruleset, reservedPercent, cashOutTaxRate, baseCurrency, and permission flags (pausePay, allowOwnerMinting, allowTerminalMigration, ownerMustSendPayouts, holdFees, ...).",
+          "exactSourceLanguage": "struct JBRulesetConfig { uint48 mustStartAtOrAfter; uint32 duration; uint112 weight; uint32 weightCutPercent; ... } struct JBRulesetMetadata { uint16 reservedPercent; uint16 cashOutTaxRate; uint32 baseCurrency; bool pausePay; bool pauseCreditTransfers; bool allowOwnerMinting; ..."
+        },
+        {
+          "finding": "When a ruleset ends the next queued one starts; with an empty queue the same ruleset cycles again, with weight reduced by weightCutPercent. Duration 0 with an empty queue lasts indefinitely and a newly queued ruleset takes effect immediately. A JBDeadline approval hook (1 day, 3 days, 7 days deployed) forces a delay between queuing and effect.",
+          "exactSourceLanguage": "When a ruleset ends: - If there are rulesets in the queue, the project will move on to the next one. - If the ruleset queue is empty, the current ruleset keeps cycling (_i.e._ re-starting with the same duration)."
+        },
+        {
+          "finding": "Funds leave a project in two ways: payouts (up to per-ruleset payout limits, resetting each ruleset, split among JBSplits recipients, callable by anybody unless ownerMustSendPayouts) and a surplus allowance (does not reset). Everything above the payout limits is surplus and backs token cash-outs.",
+          "exactSourceLanguage": "Payout limits reset at the start of each ruleset – projects can use rulesets as a regular cadence for recurring payouts. ... Funds in excess of the payout limits are \"surplus funds\"."
+        },
+        {
+          "finding": "Cash-out is a bonding curve on surplus: reclaim = surplus*x/t * ((1-r) + r*x/t), with r the cashOutTaxRate out of 10,000; r=10,000 reclaims nothing and cashing out the whole supply returns all surplus. Issuance is tokens = amount (in base currency) * weight, minus reservedPercent to the reserved split group.",
+          "exactSourceLanguage": "return mulDiv(base, (JBConstants.MAX_CASH_OUT_TAX_RATE - cashOutTaxRate) + mulDiv(cashOutTaxRate, cashOutCount, totalSupply), JBConstants.MAX_CASH_OUT_TAX_RATE);"
+        },
+        {
+          "finding": "Protocol fee: JBMultiTerminal charges FEE = 25 out of 1000 (2.5 percent) on payouts, surplus-allowance use and cash-outs, paid into fee-beneficiary project ID 1 (hardcoded), which mints the payer's tokens in that project; addresses can be registered feeless in JBFeelessAddresses; held fees can be returned on balance addition.",
+          "exactSourceLanguage": "uint256 public constant override FEE = 25; // 2.5% ... uint256 internal constant _FEE_BENEFICIARY_PROJECT_ID = 1;"
+        },
+        {
+          "finding": "Extensibility is by hooks: data hooks rewrite pay and cash-out accounting, pay hooks, cash-out hooks and split hooks run after; this is how 721 tiers, buyback (Uniswap route versus mint), Revnets and Defifa games are built without changing core.",
+          "exactSourceLanguage": "useDataHookForPay; useDataHookForCashOut; address dataHook;"
+        },
+        {
+          "finding": "V5 is described as a fork of V4 fixing one buyback-hook bug, deployed identically (CREATE2 via Sphinx) on Ethereum, Optimism, Base and Arbitrum. Ethereum V5: JBProjects 0x885f707efa18d2cb12f05a3a8eba6b4b26c8c1d4, JBController 0x27da30646502e2f642be5281322ae8c394f7668a, JBMultiTerminal 0x2db6d704058e552defe415753465df8df0361846, JBRulesets 0x6292281d69c3593fcf6ea074e5797341476ab428, JBDirectory 0x0061e516886a0540f63157f112c0588ee0651dcf, JBTokens 0x4d0edd347fb1fa21589c1e109b3474924be87636, JBSplits 0x7160a322fea44945a6ef9adfd65c322258df3c5e, JBTerminalStore 0xfe33b439ec53748c87dcedacb83f05add5014744, JBPermissions 0x04fd6913d6c32d8c216e153a43c04b1857a7793d; 5.1 set: JBController5_1 0xf3cc99b11bd73a2e3b8815fb85fe0381b29987e1, JBMultiTerminal5_1 0x52869db3d61dde1e391967f2ce5039ad0ecd371c, JBRulesets5_1 0xd4257005ca8d27bbe11f356453b0e4692414b056.",
+          "exactSourceLanguage": "This repository contains the core protocol contracts for Bananapus' Juicebox V5 – a fork of V4 that fixes one essential bug in the buyback hook of revnets."
+        }
+      ],
+      "notFound": [
+        "a mechanism that computes member weight from contributed labour: weight is a function of payment amount only",
+        "an audit report file inside the repository (README names none)"
+      ],
+      "population": "deployed protocol source"
+    },
+    {
+      "item": {
+        "id": "nanacorev62026",
+        "type": "webpage",
+        "title": "Bananapus nana-core-v6 README and ADMINISTRATION.md (commit 53914d2)",
+        "author": [
+          {
+            "literal": "Nana Core V6"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              9,
+              24
+            ]
+          ]
+        },
+        "URL": "https://github.com/Bananapus/nana-core-v6"
+      },
+      "readFrom": "first-party-docs",
+      "observedAt": "2026-10-08",
+      "design": "protocol-documentation",
+      "findings": [
+        {
+          "finding": "Juicebox V6 core is in development and deployed (deployment files for Ethereum, Optimism, Base, Arbitrum; project tokens NANA, REV, BAN, CPN, DEFIFA, MARKEE) with a documentation set (ARCHITECTURE, INVARIANTS, ADMINISTRATION, RISKS, AUDIT_INSTRUCTIONS).",
+          "exactSourceLanguage": "`@bananapus/core-v6` is the base protocol package for Juicebox on EVM chains. It defines projects, rulesets, terminals, permissions, token issuance, cash outs, splits, price feeds, and the accounting that the rest of the V6 ecosystem builds on."
+        },
+        {
+          "finding": "V6 admin surface: Ownable protocol-wide contracts JBDirectory, JBProjects, JBPrices, JBFeelessAddresses; project owner is the project NFT holder; operators via JBPermissions; price feeds append-only; the fee-beneficiary project ID hardcoded; a project creation fee settable by the owner within a hardcoded ceiling of 0.001 ether.",
+          "exactSourceLanguage": "Protocol-wide `Ownable` surfaces exist on `JBDirectory`, `JBProjects`, `JBPrices`, and `JBFeelessAddresses`. ... The project creation fee owner can set in `JBProjects` is bounded by the hardcoded `MAX_CREATION_FEE` (`0.001 ether`)."
+        },
+        {
+          "finding": "The workspace states its own recovery limits: immutable infrastructure mistakes require replacement and migration; highest-risk actions are controller migration, terminal migration, token binding, price-feed fallback installation, feeless-list changes, and broad permission grants.",
+          "exactSourceLanguage": "Recovery posture | Project-local mistakes may be fixable if rulesets allow it; immutable infra mistakes usually require replacement and migration"
+        },
+        {
+          "finding": "Ethereum V6 addresses (same on Base, Optimism, Arbitrum): JBProjects 0x6017d1fba9dc279bfa0b03fd931c22e242ab3691, JBMultiTerminal 0x130f5dd2bd8805443cf41755253d778a75a67f53, JBTerminalStore 0x7497ae014a60561925b51c0a3b4ade7460b9927c, JBController 0x3fcec3572e84b624477bcff4e2cf1f7deab648f1, JBDirectory 0x5aff29060e023e6fb87be5596652b33c65af535b, REV token 0x3dd82a891c80db068e95708e83583d626e2c1fac, NANA token 0x6b50843c88290c180df24c445e37b296d9760fa8.",
+          "exactSourceLanguage": "deployments/ethereum/JBProjects.json address 0x6017d1fba9dc279bfa0b03fd931c22e242ab3691"
+        }
+      ],
+      "notFound": [
+        "audit reports for V6 in the files read"
+      ],
+      "population": "protocol documentation"
+    },
+    {
+      "item": {
+        "id": "revnetcore2025",
+        "type": "software",
+        "title": "rev-net/revnet-core-v5: REVDeployer and REVLoans (commit 024d584)",
+        "author": [
+          {
+            "literal": "Revnet Core"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              9,
+              19
+            ]
+          ]
+        },
+        "URL": "https://github.com/rev-net/revnet-core-v5"
+      },
+      "readFrom": "source-code",
+      "observedAt": "2026-10-08",
+      "design": "protocol-source-code",
+      "findings": [
+        {
+          "finding": "A Revnet is a Juicebox project whose owner is the REVDeployer contract itself: it has no human owner after deployment and runs a fixed schedule of stages set at launch.",
+          "exactSourceLanguage": "/// @notice `REVDeployer` deploys, manages, and operates Revnets.\n/// @dev Revnets are unowned Juicebox projects which operate autonomously after deployment."
+        },
+        {
+          "finding": "A stage is {startsAtOrAfter, initialIssuance, issuanceCutFrequency (at least 24 hours), issuanceCutPercent, splitPercent to the operator, cashOutTaxRate, autoIssuances}. Issuance per unit of base currency falls on a fixed schedule, so earlier payers receive more tokens per unit; cash-out value is the Juicebox bonding curve on surplus with the stage's tax rate.",
+          "exactSourceLanguage": "@custom:member issuanceCutFrequency The number of seconds between applied issuance decreases. This should be at least 24 hours. ... @custom:member cashOutTaxRate The factor determining how much each token can cash out from the revnet once cashed out."
+        },
+        {
+          "finding": "Revnets cannot turn cash-outs off completely. A 30-day cash-out delay (CASH_OUT_DELAY = 2,592,000 s) applies only when an existing revnet deploys onto a new network, to prevent arbitrage against a brand-new treasury.",
+          "exactSourceLanguage": "Only applies to existing revnets which are deploying onto a new network. - To prevent liquidity/arbitrage issues which might arise when an existing revnet adds a brand-new treasury. @dev 30 days, in seconds."
+        },
+        {
+          "finding": "The deployer charges a 2.5 percent cash-out fee (FEE = 25 of 1000) when the cash-out tax rate is above zero, paid to the fee revnet; suckers (cross-chain bridges) pay none.",
+          "exactSourceLanguage": "The cash out fee (as a fraction out of `JBConstants.MAX_FEE`). Cashout fees are paid to the revnet with the `FEE_REVNET_ID`. @dev Fees are charged on cashouts if the cash out tax rate is greater than 0%. @dev When suckers withdraw funds, they do not pay cash out fees."
+        },
+        {
+          "finding": "REVLoans lets a holder borrow against tokens: the collateral tokens are burned and reminted on repayment, the borrowable amount equals the cash-out amount, and the loan is an ERC-721. Upfront fee: 2.5 percent to the underlying protocol, 2.5 percent to the issuing revnet, and a borrower-chosen prepaid percent (minimum 2.5, maximum 50) to the fee-receiving revnet that buys a prepaid duration; afterwards repayment costs more, and after 3650 days the collateral cannot be recouped.",
+          "exactSourceLanguage": "Tokens used as collateral are burned, and reminted when the loan is paid off. ... The borrowable amount is the same as the cash out amount. ... After the prepaid duration, the loan will increasingly cost more to pay off. After 10 years, the loan collateral cannot be recouped."
+        },
+        {
+          "finding": "Deployed instance (Ethereum): REVDeployer 0x2ca27bde7e7d33e353b44c27acfcf6c78dde251d, REVLoans 0x1880d832aa283d05b8eab68877717e25fbd550bb; REVLoans is Ownable (owner 0x6b92c73682f0e1fac35A18ab17efa5e77DDE9fE1).",
+          "exactSourceLanguage": "deployments/revnet-core-v5/ethereum/REVDeployer.json address 0x2ca27bde7e7d33e353b44c27acfcf6c78dde251d; REVLoans.owner() -> 0x6b92c73682f0e1fac35A18ab17efa5e77DDE9fE1"
+        }
+      ],
+      "notFound": [
+        "an exit mechanism other than cash-out against a surplus that depends on later payers: the schedule rewards early payers and the curve is only as deep as inflows"
+      ],
+      "population": "deployed protocol source"
+    },
+    {
+      "item": {
+        "id": "juiceboxonchain2026",
+        "type": "dataset",
+        "title": "Juicebox V5 and V6 on-chain reads, 2026-10-08",
+        "author": [
+          {
+            "literal": "Juicebox Onchain Reads"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              8
+            ]
+          ]
+        },
+        "URL": "https://etherscan.io/address/0x6017d1fba9dc279bfa0b03fd931c22e242ab3691"
+      },
+      "readFrom": "on-chain-read",
+      "observedAt": "2026-10-08",
+      "design": "on-chain-measurement",
+      "findings": [
+        {
+          "finding": "V5 JBProjects.count() on 2026-10-08: Ethereum 113, Optimism 73, Base 161, Arbitrum 86 projects. V6 JBProjects.count(): Ethereum 11, Optimism 11, Base 26, Arbitrum 12.",
+          "exactSourceLanguage": "JBProjects.count() -> 113 (eth), 73 (op), 161 (base), 86 (arb) [V5 0x885f...c1d4]; 11, 11, 26, 12 [V6 0x6017...3691]"
+        },
+        {
+          "finding": "Fee-beneficiary project 1 and fee revnet project 3 (REV) are both owned by the REVDeployer 0x2cA27BDe7e7D33E353b44c27aCfCf6c78ddE251d: the protocol's fee sink is itself an unowned Revnet. V5 JBProjects and JBDirectory owner is 0x80a8F7a4bD75b539CE26937016Df607fdC9ABeb5; JBMultiTerminal.FEE() returns 25.",
+          "exactSourceLanguage": "JBProjects.ownerOf(1) and ownerOf(3) -> 0x2cA27BDe7e7D33E353b44c27aCfCf6c78ddE251d; JBProjects.owner() -> 0x80a8F7a4bD75b539CE26937016Df607fdC9ABeb5; FEE() -> 25"
+        },
+        {
+          "finding": "Native-token terminal balances on 2026-10-08 are small: V5 project 1 holds 0.0000491 ETH (Ethereum), 0.0374 ETH (Base); project 3 (REV) 0.0000534 ETH (Ethereum), 0.000525 ETH (Base). V6 project 3 (REV) 0.0995 ETH on Base and 0 elsewhere; V6 project 1 0.1187 ETH on Base. V5.1 terminals hold 0 for projects 1 and 3 in native token and USDC on all four chains.",
+          "exactSourceLanguage": "JBTerminalStore.balanceOf(terminal, 3, 0x...EEEe) -> 53434811427125 (eth V5), 524701440891346 (base V5); V6 base -> 99495709307265268"
+        },
+        {
+          "finding": "REV token supply on Base: V5 token 0x1Bf077855a17b4Dd12eB3aDe29D94cfF27Fe56d0 totalSupply 57,949.56 REV; V6 token 0x3dd82a891c80db068e95708e83583d626e2c1fac totalSupply 57,985.25 REV on Base and 1,130,130.26 REV on Ethereum.",
+          "exactSourceLanguage": "totalSupply() -> 57949559339789802665668 (V5 REV, Base); 57985254319432491339172 (V6 REV, Base); 1130130258069698905346873 (V6 REV, Ethereum)"
+        }
+      ],
+      "notFound": [
+        "revenue, payment-volume or cumulative-raised figures: no free first-party API was reachable (the subgraph/indexer endpoints require keys); only balances and counts read from contracts are recorded"
+      ],
+      "population": "deployed contracts"
+    },
+    {
+      "item": {
+        "id": "defillamajuicebox2026",
+        "type": "dataset",
+        "title": "DeFiLlama api.llama.fi/protocol/juicebox-v1, juicebox-v2, juicebox-v3 (read 2026-10-08)",
+        "author": [
+          {
+            "literal": "DeFiLlama Juicebox"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              8
+            ]
+          ]
+        },
+        "URL": "https://api.llama.fi/protocol/juicebox-v1"
+      },
+      "readFrom": "api-read",
+      "observedAt": "2026-10-08",
+      "design": "dashboard-measurement",
+      "findings": [
+        {
+          "finding": "Juicebox V1 is listed at $13,014,889 TVL (all WETH) on 2026-10-08, peak $24,944,589 on 2025-08-23 (listed 2023-04-15 at $12,732,237). Juicebox V3: $168,967 now, peak $3,950,284 on 2023-05-29. Juicebox V2: $24,537 now. No DeFiLlama listing for Juicebox V4, V5, V6 or Revnet exists in the 8,543-protocol list.",
+          "exactSourceLanguage": "juicebox-v1 tvl 13014889.24 ['Ethereum']; juicebox-v3 tvl 168967.47; juicebox-v2 tvl 24537.40; category Launchpad"
+        }
+      ],
+      "notFound": [
+        "DeFiLlama entries for Juicebox V4/V5/V6, Revnet, Defifa, Bananapus (name/slug/url scan of api.llama.fi/protocols)"
+      ],
+      "population": "DeFiLlama listings"
+    },
+    {
+      "item": {
+        "id": "baalcontracts2024",
+        "type": "software",
+        "title": "HausDAO/Baal: Moloch v3 contracts (commit ee3d5ab)",
+        "author": [
+          {
+            "literal": "Baal Contracts"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024,
+              6,
+              11
+            ]
+          ]
+        },
+        "URL": "https://github.com/HausDAO/Baal"
+      },
+      "readFrom": "source-code",
+      "observedAt": "2026-10-08",
+      "design": "protocol-source-code",
+      "findings": [
+        {
+          "finding": "Baal is a Zodiac Module on a Safe avatar: the Safe holds the treasury; Baal executes transfers by module call. Membership is two ERC-20 tokens: Shares (voting weight, BaalVotes delegation with ERC-20 snapshots, Ownable and UUPS-upgradeable) and Loot (economic weight, no vote).",
+          "exactSourceLanguage": "contract Baal is Module, EIP712Upgradeable, ReentrancyGuardUpgradeable, BaseRelayRecipient { ... (bool success, ) = execAndReturnData(to, amount, \"\", Enum.Operation.Call);"
+        },
+        {
+          "finding": "Proposal lifecycle is Unborn, Submitted, Voting, Grace, Ready, Processed (or Cancelled, Defeated). A proposal is sponsored by anyone holding at least sponsorThreshold shares; non-members may submit with an optional proposalOffering tribute; voting runs votingPeriod seconds, then gracePeriod seconds in which members may exit; processing requires the previous proposal to be finished, so proposals execute in order.",
+          "exactSourceLanguage": "/// @return Unborn -> Submitted -> Voting -> Grace -> Ready -> Processed\n    ///         \\-> Cancelled  \\-> Defeated"
+        },
+        {
+          "finding": "Passing requires more yes than no votes, quorumPercent of maxTotalSharesAtSponsor in yes votes, and the minRetentionPercent guard: if total shares plus loot has fallen below minRetentionPercent of the high-water mark during the vote (people exited), the proposal auto-fails.",
+          "exactSourceLanguage": "if (okToExecute && prop.yesVotes * 100 < quorumPercent * prop.maxTotalSharesAtSponsor) okToExecute = false; ... (totalSupply()) < (prop.maxTotalSharesAndLootAtVote * minRetentionPercent) / 100"
+        },
+        {
+          "finding": "Ragequit: at any time (not only in the grace period) a member burns shares and/or loot and receives pro-rata (burned/(totalShares+totalLoot)) of each listed token the Safe holds, ETH included; tokens must be passed in ascending address order.",
+          "exactSourceLanguage": "uint256 amountToRagequit = ((lootToBurn + sharesToBurn) * balance) / _totalSupply; /*calculate 'fair shair' claims*/"
+        },
+        {
+          "finding": "Shamans are contracts with bitmask permissions (admin 1, manager 2, governor 4) set only by the Baal itself; shamans may pause/unpause share and loot transfers, mint and burn shares and loot, or change governance configuration. lockAdmin, lockManager and lockGovernor permanently forbid granting each class.",
+          "exactSourceLanguage": "function setShamans(address[] calldata _shamans, uint256[] calldata _permissions) external baalOnly { ... require(permission != 1 && permission != 3 && permission != 5 && permission != 7, \"admin lock\");"
+        },
+        {
+          "finding": "Execution of passed proposals is a Safe multisend with a stored hash of the calldata and an optional baalGas guard; a failed action flags the proposal 'actionFailed' but it counts as processed.",
+          "exactSourceLanguage": "require(hashOperation(proposalData) == prop.proposalDataHash, \"incorrect calldata\"); ... prop.status[3] = true;"
+        },
+        {
+          "finding": "Audits in repo: Hacken (2022-02-08) and Quantstamp (2022-10-18). Deployments directories exist for mainnet, gnosis, polygon, optimism, arbitrum, base, goerli, sepolia. BaalAndVaultSummoner proxy 0x594E630efbe8dbd810c168e3878817a4094bB312 (mainnet, gnosis, polygon), 0x2eF2fC8a18A914818169eFa183db480d31a90c5D (Base), 0xb04111e7b4576164145EF97EB81fd43DA0F2D675 (Optimism), 0xC39E8D4DE75c6aC025a0C07dCd8Aeb0728C5DBF1 (Arbitrum); BaalSummoner proxy 0x7e988A9db2F8597735fc68D21060Daed948a3e8C. The gnosis BaalSummoner owner() is 0x4A9a27d614a74Ee5524909cA27bdBcBB7eD3b315, a Safe with threshold 1 and the single owner 0xda338f3E2cbEE191abde150704edd02d66a5f890.",
+          "exactSourceLanguage": "audits: Hacken-02082022.pdf, Quantstamp-10182022.pdf; gnosis BaalSummoner_Proxy.json address 0x7e988A9db2F8597735fc68D21060Daed948a3e8C"
+        }
+      ],
+      "notFound": [
+        "a cap or rate limit on ragequit, or a cooldown after voting: ragequit() is callable immediately by any holder",
+        "a way to weight shares by contribution: shares are minted by proposal, shaman or tribute at whatever ratio the DAO sets"
+      ],
+      "population": "deployed protocol source"
+    },
+    {
+      "item": {
+        "id": "hausdaoagents2026",
+        "type": "webpage",
+        "title": "HausDAO/moloch-skills, moloch-agent, daohaus-admin, Baal repositories (GitHub API and READMEs, 2026-10-08)",
+        "author": [
+          {
+            "literal": "HausDAO Agent Repositories"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              8
+            ]
+          ]
+        },
+        "URL": "https://github.com/HausDAO/moloch-skills"
+      },
+      "readFrom": "first-party-docs",
+      "observedAt": "2026-10-08",
+      "design": "protocol-documentation",
+      "findings": [
+        {
+          "finding": "In 2026 HausDAO built agent tooling on Moloch v3/Baal on Base: moloch-skills (created 2026-05-06) provides skills for an agent to summon a DAO, submit, sponsor, vote, process and cancel proposals, and read DAO state; moloch-agent (2026-05-08) is a CLI where wallet signing stays local and Graph reads and IPFS pinning go through a hosted service; DAOhaus Admin is the hosted UI at admin.daohaus.club.",
+          "exactSourceLanguage": "This directory contains Codex skills and a shared script for interacting with DAOhaus/Moloch V3/Baal DAOs on Base. ... CLI runtime for autonomous DAOhaus/Moloch agents."
+        },
+        {
+          "finding": "The Baal repository itself was last pushed 2024-06-11; the older DAOhaus monorepo is named 'daohaus-monorepo-deprecated' (last push 2023-02-16).",
+          "exactSourceLanguage": "HausDAO/Baal pushed 2024-06-11; HausDAO/daohaus-monorepo-deprecated pushed 2023-02-16"
+        }
+      ],
+      "notFound": [
+        "DeFiLlama listing for DAOhaus, Moloch or Baal (the only name match, 'Degen Haus', is a DEX)",
+        "a count of Baal DAOs: the summoner proxies expose no counter, and Blockscout transaction counters for the BaalAndVaultSummoner proxies read 61 (Gnosis), 37 (Optimism) and 0 (Ethereum)"
+      ],
+      "population": "HausDAO repositories"
+    },
+    {
+      "item": {
+        "id": "splitscontracts2026",
+        "type": "software",
+        "title": "0xSplits/splits-contracts-monorepo: splits-v2, smart-vaults, smart-vault-modules (commit efec4ac)",
+        "author": [
+          {
+            "literal": "Splits Contracts"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              2
+            ]
+          ]
+        },
+        "URL": "https://github.com/0xSplits/splits-contracts-monorepo"
+      },
+      "readFrom": "source-code",
+      "observedAt": "2026-10-08",
+      "design": "protocol-source-code",
+      "findings": [
+        {
+          "finding": "Splits v2 is a split-wallet plus warehouse design. SplitsWarehouse is an ERC-6909 multi-token ledger (token id = uint256(uint160(tokenAddress))); PullSplit distributes by crediting recipients inside the warehouse for later withdrawal, PushSplit transfers directly. A split is {recipients[], allocations[], totalAllocation, distributionIncentive}, stored on-chain only as its hash, and every distribute call must resubmit the struct.",
+          "exactSourceLanguage": "SplitsWarehouse: Central ERC6909 token warehouse. All deposits/withdrawals flow through here. Token IDs = `uint256(uint160(tokenAddress))`. ... struct Split { address[] recipients; uint256[] allocations; uint256 totalAllocation; uint16 distributionIncentive; }"
+        },
+        {
+          "finding": "distribute() is permissionless and pays the distributor a reward of amount*distributionIncentive/1e6 (the doc comment limits the incentive to 6.5 percent); the owner of a split wallet can replace the split with updateSplit; splits are not time-gated.",
+          "exactSourceLanguage": "function updateSplit(SplitV2Lib.Split calldata _split) external onlyOwner { ... function distribute(SplitV2Lib.Split calldata _split, address _token, address _distributor) external virtual;"
+        },
+        {
+          "finding": "Splits v2 has pausable distribution and was audited by an independent researcher (Zach Obront, 19 to 23 February 2023); factories exist in V2, V2.1 and V2.2 revisions. Ethereum: SplitsWarehouse 0x8fb66F38cF86A3d5e8768f8F1754A24A6c661Fb8 (same address on every chain in deployments/), PullSplitFactoryV2.2 0x6B9118074aB15142d7524E8c4ea8f62A3Bdb98f1, PushSplitFactoryV2.2 0x8E8eB0cC6AE34A38B67D5Cf91ACa38f60bc3Ecf4; 32 deployment files cover mainnets and testnets.",
+          "exactSourceLanguage": "\"SplitsWarehouse\": \"0x8fb66F38cF86A3d5e8768f8F1754A24A6c661Fb8\", \"PullSplitFactoryV2.2\": \"0x6B9118074aB15142d7524E8c4ea8f62A3Bdb98f1\", \"PushSplitFactoryV2.2\": \"0x8E8eB0cC6AE34A38B67D5Cf91ACa38f60bc3Ecf4\""
+        },
+        {
+          "finding": "The monorepo has grown past splitting into account abstraction: smart-vaults is an ERC-4337 v0.7 multi-sig account with m-of-n signers including passkeys, and smart-vault-modules holds AutoEarnModule and AutoEarnEnrollerModule.",
+          "exactSourceLanguage": "SmartVault (`src/vault/SmartVault.sol`): ERC-4337 v0.7 multi-sig smart account with m-of-n signing. ... Signers (`src/signers/`): `MultiSigner`, `AccountSigner` (EOA), `PasskeySigner` (WebAuthn)"
+        }
+      ],
+      "notFound": [
+        "pods, teams or any membership/shares primitive in the monorepo (grep of src for pod/team returned nothing)",
+        "a split that changes automatically with on-chain data: allocations are static until the owner rewrites them"
+      ],
+      "population": "deployed protocol source"
+    },
+    {
+      "item": {
+        "id": "splitswaterfall2026",
+        "type": "software",
+        "title": "0xSplits/splits-waterfall: WaterfallModule and WaterfallModuleFactory",
+        "author": [
+          {
+            "literal": "Splits Waterfall"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              7,
+              17
+            ]
+          ]
+        },
+        "URL": "https://github.com/0xSplits/splits-waterfall"
+      },
+      "readFrom": "source-code",
+      "observedAt": "2026-10-08",
+      "design": "protocol-source-code",
+      "findings": [
+        {
+          "finding": "WaterfallModule is a clone-per-deployment contract for one token: recipients are an ordered list of tranches with cumulative thresholds (stored in clone immutable args); distributed funds fill tranche 1 up to its threshold before tranche 2, and a residual 'nonWaterfallRecipient' receives everything after the last threshold. Push (waterfallFunds) and pull (waterfallFundsPull, then withdraw) variants exist. Anybody can trigger distribution.",
+          "exactSourceLanguage": "A maximally-composable waterfall contract allowing multiple recipients to receive preferential payments before residual funds flow to a final address. ... Only one token can be waterfall'd for a given deployment."
+        },
+        {
+          "finding": "The repository carries no README (the raw README URL returns 404); the Waterfall contract and its sibling splits-vesting, splits-swapper, splits-diversifier, splits-oracle and splits-pact repositories were all last touched on 2026-07-17 in one sweep, and splits-pact is labelled an unaudited prototype for raising small rounds by selling ERC-1155 along a bonding curve on Base in USDC.",
+          "exactSourceLanguage": "PACT (Purchase Agreement for Community Tokens) is a prototype for raising small rounds by creating a cap table and selling a slice of the project's tokens (ERC-1155) along a bonding curve. ... **Status: prototype.** The contracts are unaudited"
+        }
+      ],
+      "notFound": [
+        "a priority order that can be changed by recipients; tranches are fixed in the clone's immutable args"
+      ],
+      "population": "deployed protocol source"
+    },
+    {
+      "item": {
+        "id": "splitsdocs2026",
+        "type": "webpage",
+        "title": "0xSplits/splits-docs: Splits app documentation (src/pages, commit of 2026-09-24)",
+        "author": [
+          {
+            "literal": "Splits App Docs"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              9,
+              24
+            ]
+          ]
+        },
+        "URL": "https://github.com/0xSplits/splits-docs"
+      },
+      "readFrom": "first-party-docs",
+      "observedAt": "2026-10-08",
+      "design": "protocol-documentation",
+      "findings": [
+        {
+          "finding": "The current product is a self-custodied onchain operations platform: multisig accounts with passkey signers and thresholds, invoicing, bank on/off-ramps and vendor payments, scheduled payroll, crypto accounting exports, and compliance (W9/W8, 1099) - not a splitter UI. The protocol docs for the splitter contracts are separate.",
+          "exactSourceLanguage": "**Splits is the onchain operations platform for builders.** Manage assets, process revenue, move money, and run operations instantly, via [the app](https://app.splits.org) or [API/CLI]. ... These docs cover the Splits app. Docs for the Splits protocol (the splitter contracts) live at [splits.org/protocol/docs]."
+        },
+        {
+          "finding": "Agent accounts: an AI agent holds its own signing key on a dedicated operating account; the account balance bounds reach; threshold 1 lets the agent act alone, threshold 2 or more requires a human co-signature on every action; the parent Treasury account can remove the agent's key.",
+          "exactSourceLanguage": "An **agent account** is an operating account whose signer set includes a signing key that the agent generated and holds itself. ... The account's owner, the Treasury, can remove the agent's key at any time."
+        },
+        {
+          "finding": "Modules are allowlisted addresses that can execute any call from an account without signer approvals regardless of threshold; the docs advise strictly limited modules (AutoEarnModule).",
+          "exactSourceLanguage": "An enabled module can execute any call from the account via `executeFromModule`, **without signer approvals and regardless of the account's threshold**."
+        },
+        {
+          "finding": "Earn: idle USDC on Base is deposited into a Morpho Vault V2 curated by Steakhouse Financial (Splits Earn USDC 0x189A1a23F46321a196646314E6a078a404513C8F family), with a performance fee on yield only and no deposit or withdrawal fee.",
+          "exactSourceLanguage": "Today Earn supports USDC on Base, deposited into [Morpho](https://morpho.org/) through a vault curated by [Steakhouse Financial]. ... Splits charges a [performance fee] on the yield a position earns; **there is no fee on deposits, withdrawals, or principal**."
+        }
+      ],
+      "notFound": [
+        "Pods or Teams: a case-insensitive search of every page under src/pages for 'pod' returned no match; 'teams' appears only in marketing text",
+        "waterfall or vesting in the app docs: not in the page list"
+      ],
+      "population": "Splits app documentation"
+    },
+    {
+      "item": {
+        "id": "regenledger2026",
+        "type": "software",
+        "title": "regen-network/regen-ledger: x/ecocredit spec and CHANGELOG (commit 493da6d)",
+        "author": [
+          {
+            "literal": "Regen Ledger"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              5
+            ]
+          ]
+        },
+        "URL": "https://github.com/regen-network/regen-ledger"
+      },
+      "readFrom": "source-code",
+      "observedAt": "2026-10-08",
+      "design": "protocol-source-code",
+      "findings": [
+        {
+          "finding": "Regen Ledger is a Cosmos SDK chain with an x/ecocredit module: credit types (governance-listed units, abbreviation plus unit plus precision), credit classes (admin plus approved issuers, methodology metadata hashed to an IRI), projects (jurisdiction, created only by a class issuer), credit batches (issued under a project by a class issuer), baskets (fungible pools keyed by credit type with filters), a marketplace of sell orders, and bridge to Polygon for allowed chains.",
+          "exactSourceLanguage": "A credit class is the primary abstraction for an ecosystem service credit. Each credit class is associated with a credit type that represents the primary unit of measurement that the credit accounts for (e.g. metric tons of CO2e sequestered)."
+        },
+        {
+          "finding": "The list of credit types is changed by on-chain governance (a parameter change proposal), and class creation can be restricted by an allowlist, and costs a fee in REGEN.",
+          "exactSourceLanguage": "The list of allowed credit types is managed via on-chain governance. Adding a new credit type to the list requires a parameter change proposal."
+        },
+        {
+          "finding": "An x/data module anchors content hashes of documents and attestations on-chain; regen.data.v1 was deprecated in favour of v2 (off-chain coordination of supported algorithms).",
+          "exactSourceLanguage": "Deprecate `regen.data.v1` and migrate to the `regen.data.v2` protobuf API which enables off-chain coordination of supported algorithm"
+        }
+      ],
+      "notFound": [
+        "a mechanism by which retiring a credit pays or credits the person who did the work: batches are issued to the project's issuer, and any payment to labourers is off-chain"
+      ],
+      "population": "deployed protocol source"
+    },
+    {
+      "item": {
+        "id": "regenchain2026",
+        "type": "dataset",
+        "title": "Regen mainnet (regen-1) LCD reads via regen-api.polkachu.com, 2026-10-08",
+        "author": [
+          {
+            "literal": "Regen Chain Reads"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              8
+            ]
+          ]
+        },
+        "URL": "https://regen-api.polkachu.com/regen/ecocredit/v1/classes"
+      },
+      "readFrom": "api-read",
+      "observedAt": "2026-10-08",
+      "design": "on-chain-measurement",
+      "findings": [
+        {
+          "finding": "Registry size on 2026-10-08: 14 credit classes (C01-C09, KSH01, BT01, MBS01, USS01, VSH01), 188 projects, 80 credit batches. Credit types listed include carbon (C, metric ton CO2e), BT BioTerra, KSH kilo-sheep-hour, MBS Marine Biodiversity Stewardship, USS Umbrella Species Stewardship, and VSH verified stewardship hour. Class creation costs 5,000 REGEN and basket creation 1,000 REGEN; the creator allowlist is disabled; allowed bridge chain is polygon. Baskets: eco.uC.NCT and eco.uVSH.WORK.",
+          "exactSourceLanguage": "{\"total\":\"14\"} classes; {\"total\":\"188\"} projects; {\"total\":\"80\"} batches; \"credit_class_fee\":[{\"denom\":\"uregen\",\"amount\":\"5000000000\"}],\"allowlist_enabled\":false,\"allowed_bridge_chains\":[\"polygon\"]"
+        },
+        {
+          "finding": "REGEN supply 239,826,669.588209 (uregen 239826669588209); 81,078,539.728 REGEN bonded and 42,144,726.548 not bonded; mint inflation 0.000000 after proposal 74; max_validators 11; 11 bonded validators holding 16, 10, 9, 7, 7, 7, 6, 5, 5, 2, 1 million REGEN; min_commission_rate 0; unbonding 1,814,400 s; gov deposit 2,000 REGEN, voting period 604,800 s, quorum 0.40, threshold 0.50, veto 0.334.",
+          "exactSourceLanguage": "{\"amount\":{\"denom\":\"uregen\",\"amount\":\"239826669588209\"}}; {\"inflation\":\"0.000000000000000000\"}; max_validators 11; min_commission_rate 0.000000000000000000; quorum 0.400000000000000000, threshold 0.500000000000000000, veto_threshold 0.334000000000000000"
+        },
+        {
+          "finding": "The community pool read 5,035,750 REGEN at proposal build time (2026-09-07 per proposals 77 and 78).",
+          "exactSourceLanguage": "the pool holds 5,035,750 REGEN."
+        }
+      ],
+      "notFound": [
+        "total credits issued or retired in tonnes: summing 80 batches was not done; basket supply not read",
+        "community pool balance on 2026-10-08: the distribution endpoint returned HTTP 500",
+        "a free first-party indexer for REGEN trading volume"
+      ],
+      "population": "Regen mainnet"
+    },
+    {
+      "item": {
+        "id": "regengovernance2026",
+        "type": "dataset",
+        "title": "regen-1 governance proposals 67 to 81 (/cosmos/gov/v1/proposals), 2026-07-30 to 2026-10-02",
+        "author": [
+          {
+            "literal": "Regen Governance Proposals"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              8
+            ]
+          ]
+        },
+        "URL": "https://regen-api.polkachu.com/cosmos/gov/v1/proposals"
+      },
+      "readFrom": "api-read",
+      "observedAt": "2026-10-08",
+      "design": "governance-record",
+      "findings": [
+        {
+          "finding": "Between 2026-07-30 and 2026-09-14 Regen governance moved the chain from proof of stake to a proof-of-authority style set: proposal 67 clamped emissions to a flat 3.50 percent, 72 corrected blocks_per_year (4,360,000 to 5,604,080), 73 set max_validators to 11 (passed), 74 set inflation_max and inflation_min to 0 (passed 2026-09-03, tally 35,041,983 REGEN yes, 0 no); supply is fixed at about 239.7 million REGEN. Proposal 71 (max_validators 7) and 70 were rejected first.",
+          "exactSourceLanguage": "PoA transition (Plan A): set REGEN emissions to zero (inflation_max = inflation_min = 0) ... Supply becomes fixed at ~239.7M REGEN."
+        },
+        {
+          "finding": "Proposal 75 (passed 2026-09-03, 35.04M yes, 0 no) added credit type VSH 'verified stewardship hour': hours of verified ecological stewardship labour, precision 6, with verification defined at class or project level. Its text states the limit: a VSH credit attests verified labour, not an ecological outcome.",
+          "exactSourceLanguage": "a VSH credit attests to VERIFIED LABOR under a verification method the credit class or project declares — it does not claim an ecological outcome quantity."
+        },
+        {
+          "finding": "Proposal 78 (passed) pays 396,000 REGEN from the community pool (7.86 percent of 5,035,750) to the 11 bonded validators, 36,000 each, as a 6-month operating floor, because emission no longer pays them and the fee-routing upgrade is not written. Proposal 77 (passed, 53.64M yes, 0 no) moves 100,000 REGEN into a payout account paying 10,000 REGEN per accepted VSH hour, up to 10 hours, unspent returning after 365 days; the board had 0 accepted hours at drafting.",
+          "exactSourceLanguage": "The 11 validators who secure this chain run at a loss. ... one bounded payment out of the community pool, divided equally, covering 6 months. ... The board has 0 accepted hours settled to date across 0 settlements"
+        },
+        {
+          "finding": "Proposal 81 (text, 5,000 REGEN per accepted hour of digital work, each paid by a later governance vote) was rejected on 2026-10-02 with 28.51M yes and 0 no (below quorum 0.40 of bonded stake); proposal 80 (every chain upgrade announced and reviewed in public) was rejected the same way with 28.52M yes. Proposals 74 to 81 all show abstain 0, no 0, no_with_veto 0.",
+          "exactSourceLanguage": "PROPOSAL_STATUS_REJECTED ... final_tally_result {'yes_count': '28510098955887', 'abstain_count': '0', 'no_count': '0', 'no_with_veto_count': '0'}"
+        },
+        {
+          "finding": "Proposal 79 (Regen Ledger v7.3.0) upgraded the chain at height 28,971,032 on 2026-09-24; per proposal 80's text the chain produced no blocks from 14:58 to 16:29 UTC and 3 of the 11 validators (about 26 percent of voting power, the largest among them) were missing on restart, 7 points above the two-thirds halt line.",
+          "exactSourceLanguage": "At its upgrade height, 28,971,032 on 24 September 2026, the chain made no blocks from 14:58 to 16:29 UTC, about an hour and a half. When blocks resumed, 3 of the 11 validators were missing, together about 26% of voting power"
+        },
+        {
+          "finding": "Proposals 74, 77, 78, 80 and 81 carry the same proposer address regen1jfheyvsah5wqfyawmedme43te056z8gzdnpf3j; the forum threads for 637 and 638 are posted by the user 'brawlaphant'.",
+          "exactSourceLanguage": "proposer regen1jfheyvsah5wqfyawmedme43te056z8gzdnpf3j"
+        }
+      ],
+      "notFound": [
+        "a vote-by-vote breakdown by validator",
+        "the on-chain proposer of proposal 75 (field read for 74, 77, 78, 80, 81 only)"
+      ],
+      "population": "regen-1 governance"
+    },
+    {
+      "item": {
+        "id": "regenforum2026",
+        "type": "webpage",
+        "title": "forum.regen.network topics 70, 637, 638 and latest (Discourse JSON), 2024-06-06 to 2026-10-01",
+        "author": [
+          {
+            "literal": "Regen Forum"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              1
+            ]
+          ]
+        },
+        "URL": "https://forum.regen.network/t/638"
+      },
+      "readFrom": "forum-post",
+      "observedAt": "2026-10-08",
+      "design": "governance-record",
+      "findings": [
+        {
+          "finding": "Topic 70 'Regen Network Proof of Authority Consensus RFC' (2024-06-06, 18 posts) opened the proof-of-authority discussion two years before the 2026 proposals executed it.",
+          "exactSourceLanguage": "This is a post to initiate conversation on the consensus changes, based on our conversations with Aaron Craelius, Will Szal and the $regen tokenomics group"
+        },
+        {
+          "finding": "Topic 638 (2026-09-25) states the digital stewardship authority: the worker signs an offer for a posted digital job, does the work, publishes evidence, a human accepts, and a governance vote pays. The 2026-10-01 reply posted by user Gregory_Regen on behalf of RND states it will not vote on proposals 80 and 81 before they close ('That isn't a No on either one') and that it is working on claims-side evidence attestation in regen-network/regen-data-standards.",
+          "exactSourceLanguage": "RND won't be casting a vote on #80 or #81 before they close. That isn't a No on either one."
+        },
+        {
+          "finding": "Topic 637 (2026-09-24) reports there was no forum announcement for the v7.3.0 upgrade proposal, window or outcome.",
+          "exactSourceLanguage": "I can't find a single forum post about it — not when it went up, not during the upgrade, and not after."
+        },
+        {
+          "finding": "The forum's latest list includes July 2026 threads proposing an M013 burn pool (network revenue to a standing REGEN burn), a bounded-grant agent kit, and 'Proof of Authority for agentic Regen: automate on bounded, revocable, on-chain grants'.",
+          "exactSourceLanguage": "Activate the M013 Burn Pool (Phase 1): turn network revenue into a standing REGEN burn; Proof of Authority for agentic Regen: automate on bounded, revocable, on-chain grants — never a mast"
+        }
+      ],
+      "notFound": [
+        "a Regen Foundation or Regen Network Development statement on proposal 75 or 77 beyond the 2026-10-01 reply"
+      ],
+      "population": "Regen forum"
+    },
+    {
+      "item": {
+        "id": "toucancontracts2025",
+        "type": "software",
+        "title": "ToucanProtocol/contracts: pools, TCO2, registry (commit 9afe180)",
+        "author": [
+          {
+            "literal": "Toucan Contracts"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              12,
+              17
+            ]
+          ]
+        },
+        "URL": "https://github.com/ToucanProtocol/contracts"
+      },
+      "readFrom": "source-code",
+      "observedAt": "2026-10-08",
+      "design": "protocol-source-code",
+      "findings": [
+        {
+          "finding": "Toucan bridges registry credits into per-vintage TCO2 ERC-20s (ToucanCarbonOffsets; CarbonOffsetBatches, CarbonProjects and CarbonProjectVintages contracts hold the registry data) and pools them: BaseCarbonTonne (BCT) and NatureCarbonTonne (NCT) accept any TCO2 passing the pool's filter (vintage start time, standards, regions, methodologies, internal and external allow/deny lists) and mint pool tokens 1:1 per tonne, so a pool token is fungible across vintages and projects.",
+          "exactSourceLanguage": "/// @notice Pool template contract ... /// @dev For generic Pool contract the minting is 1:1 ... /// @notice Returns minimum vintage start time for this pool ... /// @notice Checks if region is eligible for this pool"
+        },
+        {
+          "finding": "Redemption is selective and fee-bearing: redeemMany(tco2s, amounts) lets the redeemer name the specific TCO2s taken out, paying a redemption fee with a burn share and fee exemptions per address or TCO2, and the pool has an admin-set supplyCap that starts at 0; admin can pause. Because the redeemer chooses which TCO2 to take, deposits of cheap credits and withdrawals of the best ones follow the fee structure.",
+          "exactSourceLanguage": "/// @notice Function to limit the maximum pool supply /// @dev supplyCap is initially set to 0 and must be increased before deposits ... function addRedeemFeeExemptedTCO2(address _tco2) external"
+        },
+        {
+          "finding": "Pool filters and lists are mutable by the pool owner or a granted role, and the pool is a UUPS upgradeable proxy.",
+          "exactSourceLanguage": "function addToInternalWhiteList(address[] memory erc20Addr) external; function addToInternalBlackList(address[] memory erc20Addr) external; function _authorizeUpgrade(address) internal virtual override"
+        },
+        {
+          "finding": "Toucan's repository README states the repo is 'slightly ahead or behind' the on-chain contracts, the README carries an SPDX header 'LicenseRef-Proprietary' and describes a planned incremental open-sourcing programme, and the company claims $100 million of carbon credits brought on-chain and $4 billion transactional volume since launch in 2021.",
+          "exactSourceLanguage": "bringing $100 million in carbon credits onchain and enabling $4 billion in transactional volume"
+        }
+      ],
+      "notFound": [
+        "the BCT pool's composition by project type (not read from chain)",
+        "Verra's May 2022 statement and its tokenization rule change: verra.org returned a Cloudflare challenge page, so it was not read"
+      ],
+      "population": "deployed protocol source"
+    },
+    {
+      "item": {
+        "id": "toucanblog2025",
+        "type": "webpage",
+        "title": "Toucan Protocol is Going Open Source, and Introducing Cedar (blog.toucan.earth, 2025-05-08)",
+        "author": [
+          {
+            "literal": "Toucan Blog"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              5,
+              8
+            ]
+          ]
+        },
+        "URL": "https://blog.toucan.earth/toucan-protocol-is-going-open-source-and-introducing-cedar/"
+      },
+      "readFrom": "first-party-docs",
+      "observedAt": "2026-10-08",
+      "design": "protocol-documentation",
+      "findings": [
+        {
+          "finding": "Toucan's own account of the outcome: the voluntary carbon market met 'questionable integrity in some major projects, political and regulatory uncertainties, and significant market fragmentation', leading to slowdown and contraction; the company says it combined the VCM and crypto markets 'perhaps too early', moves Toucan Protocol to an open-source community-driven project without VC timelines, and spins out Cedar (AI agents for sustainability teams), having acquired Neutral.",
+          "exactSourceLanguage": "In hindsight, we combined the VCM and crypto markets early—perhaps too early."
+        }
+      ],
+      "notFound": [
+        "a published post-mortem of the BCT pool"
+      ],
+      "population": "Toucan blog"
+    },
+    {
+      "item": {
+        "id": "klimacontracts2025",
+        "type": "software",
+        "title": "KlimaDAO/klimadao-solidity: protocol, bonds, staking, Infinity diamond (commit of 2025-10-21)",
+        "author": [
+          {
+            "literal": "Klima Contracts"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              10,
+              21
+            ]
+          ]
+        },
+        "URL": "https://github.com/KlimaDAO/klimadao-solidity"
+      },
+      "readFrom": "source-code",
+      "observedAt": "2026-10-08",
+      "design": "protocol-source-code",
+      "findings": [
+        {
+          "finding": "The deployed address constants show the original OlympusDAO-style design plus a retirement layer: KLIMA 0x4e78011Ce80ee02d2c3e649Fb657E45898257815, sKLIMA 0xb0C22d8D350C67420f06F48936654f567C73E8C8, wsKLIMA 0x6f370dba99E32A3cAD959b341120DB3C9E280bA6, Staking 0x25d28a24Ceb6F81015bB0b2007D795ACAc411b4d, Treasury 0x7Dd4f0B986F032A44F913BF92c9e8b7c17D77aD7, BCT 0x2F800Db0fdb5223b3C3f354886d907A671414A7F, NCT 0xD838290e877E0188a4A44700463419ED96c16107; the Infinity diamond retires Toucan, Moss, C3, Carbonmark and ICR credits and redeems from Toucan and C3 pools.",
+          "exactSourceLanguage": "address private constant KLIMA = 0x4e78011Ce80ee02d2c3e649Fb657E45898257815; ... TREASURY = 0x7Dd4f0B986F032A44F913BF92c9e8b7c17D77aD7; ... BCT = 0x2F800Db0fdb5223b3C3f354886d907A671414A7F; NCT = 0xD838290e877E0188a4A44700463419ED96c16107;"
+        },
+        {
+          "finding": "The repository holds a bond depository for carbon-retirement bonds, allocators, staking and a pKLIMA presale token, with multisig proposal scripts numbered 01 to 11 for facet upgrades.",
+          "exactSourceLanguage": "01-update-swap-routes.ts ... 11-update-bct-swap-paths.ts"
+        }
+      ],
+      "notFound": [
+        "the treasury's token balances: balanceOf reads on Polygon for the treasury returned rate-limit errors on the public RPC and were not obtained (KLIMA balance of the treasury read 0)"
+      ],
+      "population": "deployed protocol source"
+    },
+    {
+      "item": {
+        "id": "klimarepos2026",
+        "type": "webpage",
+        "title": "KlimaDAO GitHub organisation: relay-fee-skim, Klima-Protocol-x402-MCP-documentation, fair-launch-monorepo (2026-10-08)",
+        "author": [
+          {
+            "literal": "Klima Protocol Repositories"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              8
+            ]
+          ]
+        },
+        "URL": "https://github.com/KlimaDAO/Klima-Protocol-x402-MCP-documentation"
+      },
+      "readFrom": "first-party-docs",
+      "observedAt": "2026-10-08",
+      "design": "protocol-documentation",
+      "findings": [
+        {
+          "finding": "By 2026 the project calls itself Klima Protocol and works on Base: an x402 HTTP endpoint lets an AI agent retire tokenized carbon credits on Base paying in USDC or kVCM, through the Retirement Aggregator, with certificate issuance.",
+          "exactSourceLanguage": "Docs and ai-agent plugins for retiring tokenized carbon credits on Base via Klima's x402 endpoint ... Retirement is irreversible: it permanently burns the carbon credit."
+        },
+        {
+          "finding": "relay-fee-skim (2026-09-15) is a 90-line immutable contract on Base at 0xa9bE0D3279eC1E0fF5e62be19793A06F47ba88Fb that claims an Aerodrome Metadex Maxi Relay's rewards and forwards a fixed 5 percent to a fixed sink.",
+          "exactSourceLanguage": "It claims the Relay's rewards on anyone's behalf and pulls a fixed 5% of what the claim brought in to a fixed sink. It never swaps ... holds no storage and has no owner."
+        },
+        {
+          "finding": "A fair-launch-monorepo (created 2025-02-07) exists with a fair-launch directory and a solidity directory; no README text beyond the file list was read.",
+          "exactSourceLanguage": "fair-launch-monorepo: Frontend, Solidity, Subgraphs and other code related to the fair launch initiative."
+        }
+      ],
+      "notFound": [
+        "a governance forum for KlimaDAO: forum.klimadao.finance does not resolve (curl: could not resolve host)",
+        "a treasury report after 2024"
+      ],
+      "population": "KlimaDAO repositories"
+    },
+    {
+      "item": {
+        "id": "defillamaklima2026",
+        "type": "dataset",
+        "title": "DeFiLlama api.llama.fi/protocol/klimadao and /protocol/toucan-protocol; coins.llama.fi prices; Polygon totalSupply reads (2026-10-08)",
+        "author": [
+          {
+            "literal": "DeFiLlama Klima and Toucan"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              8
+            ]
+          ]
+        },
+        "URL": "https://api.llama.fi/protocol/klimadao"
+      },
+      "readFrom": "api-read",
+      "observedAt": "2026-10-08",
+      "design": "dashboard-measurement",
+      "findings": [
+        {
+          "finding": "KlimaDAO staking TVL (counting own-token staking) was $488.7 million on 2021-10-19, peaked at $1,106,096,188 on 2021-10-25, and reads $4,523.90 on 2026-10-08; Base pool2 TVL $10,085.49 (first $2.36 million 2025-01-17). Polygon (non-staking) TVL peaked at $20,884,708 on 2024-04-03 and reads 0.",
+          "exactSourceLanguage": "Polygon-staking first 2021-10-19 488745341 peak 2021-10-25 1106096188 last 2026-10-08 4523; Base-pool2 first 2025-01-17 2363145 last 10085; Polygon peak 2024-04-03 20884708 last 0"
+        },
+        {
+          "finding": "KLIMA price (DeFiLlama coins): $3,155.33 on 2021-10-25; $270.61 on 2022-01-01; $4.70 on 2022-06-01; $1.59 on 2023-01-01; $0.99 on 2024-01-01; $0.78 on 2025-01-01; $0.0709 on 2026-01-01; $0.00165 on 2026-10-08. KLIMA totalSupply on Polygon 13,700,791.35 (13700791350940452, 9 decimals): a market capitalisation near $22,600.",
+          "exactSourceLanguage": "polygon:0x4e78011Ce80ee02d2c3e649Fb657E45898257815 price 0.0016496199682044458 (2026-10-08); totalSupply 13700791350940452"
+        },
+        {
+          "finding": "BCT price $5.69 on 2021-10-25, $2.10 on 2022-06-01, $0.97 on 2023-01-01, $0.28 on 2024-01-01, $0.38 on 2025-01-01, $0.103 on 2026-01-01. NCT $0.230 on 2026-10-08. BCT totalSupply 15,677,735.25 tonnes and NCT 1,413,796.49 on Polygon on 2026-10-08, valued near $1.6 million (BCT at $0.103) and $0.33 million.",
+          "exactSourceLanguage": "BCT totalSupply 15677735253130240812180188 (18 decimals); NCT totalSupply 1413796494585001988911086"
+        },
+        {
+          "finding": "Toucan Protocol TVL: Polygon $38.6 million on listing (2021-10-20), peak $118.7 million on 2021-12-30; $44.1 million on 2022-06-30; $19.5 million on 2022-12-31; $7.06 million on 2023-12-31; $1.48 million on 2024-06-30; $0.84 million on 2025-06-30; total across chains $542,536 on 2026-10-08 (Polygon $320,601, Celo $158,527, Base $34,523, Regen $28,885).",
+          "exactSourceLanguage": "toucan-protocol tvl 542535.87; currentChainTvls Base 34522.89, Regen 28885.25, Polygon 320600.79, Celo 158526.93"
+        }
+      ],
+      "notFound": [
+        "KlimaDAO treasury market value after 2022: the DeFiLlama treasuries endpoint requires the paid plan ('Upgrade to the paid API plan')"
+      ],
+      "population": "DeFiLlama listings"
+    },
+    {
+      "item": {
+        "id": "ballesterosrodriguez2024",
+        "type": "article-journal",
+        "title": "Tokenized carbon credits in voluntary carbon markets: the case of KlimaDAO",
+        "author": [
+          {
+            "family": "Ballesteros-Rodriguez",
+            "given": "Alberto"
+          },
+          {
+            "family": "de-Lucio",
+            "given": "Juan"
+          },
+          {
+            "family": "Sicilia",
+            "given": "Miguel-Angel"
+          }
+        ],
+        "container-title": "Frontiers in Blockchain",
+        "volume": "7",
+        "issued": {
+          "date-parts": [
+            [
+              2024,
+              10,
+              23
+            ]
+          ]
+        },
+        "DOI": "10.3389/fbloc.2024.1474540",
+        "URL": "https://doi.org/10.3389/fbloc.2024.1474540"
+      },
+      "readFrom": "abstract",
+      "observedAt": "2026-10-08",
+      "design": "empirical-study",
+      "findings": [
+        {
+          "finding": "The peer-reviewed case study of KlimaDAO (established August 2021) finds initial significant engagement followed by challenges of market maturity and participant retention, from analysis of market capitalisation, token prices, staking participation, retirements, participation and concentration.",
+          "exactSourceLanguage": "The analysis reveals that while KlimaDAO initially achieved significant engagement and activity, it now faces challenges associated with market maturity and participant retention."
+        }
+      ],
+      "notFound": [
+        "effect sizes or retirement counts: the abstract carries none and the full text was not read"
+      ],
+      "population": "KlimaDAO"
+    },
+    {
+      "item": {
+        "id": "safeallowance2026",
+        "type": "software",
+        "title": "safe-global/safe-modules: AllowanceModule.sol",
+        "author": [
+          {
+            "literal": "Safe Allowance Module"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              9,
+              23
+            ]
+          ]
+        },
+        "URL": "https://github.com/safe-global/safe-modules/blob/main/modules/allowances/contracts/AllowanceModule.sol"
+      },
+      "readFrom": "source-code",
+      "observedAt": "2026-10-08",
+      "design": "protocol-source-code",
+      "findings": [
+        {
+          "finding": "The Safe Allowance Module lets a Safe grant a delegate a per-token spending allowance that resets on a fixed minute period: Allowance {uint96 amount; uint96 spent; uint16 resetTimeMin; uint32 lastResetMin; uint16 nonce}. The Safe calls setAllowance(delegate, token, allowanceAmount, resetTimeMin, resetBaseMin); the delegate calls executeAllowanceTransfer with a signature; the maximum reset span is 65k minutes (about 45 days). Only token transfers - no call data conditions.",
+          "exactSourceLanguage": "struct Allowance { uint96 amount; uint96 spent; uint16 resetTimeMin; // Maximum reset time span is 65k minutes uint32 lastResetMin; uint16 nonce; } function setAllowance(address delegate, address token, uint96 allowanceAmount, uint16 resetTimeMin, uint32 resetBaseMin) public"
+        },
+        {
+          "finding": "Deployed at 0xCFbFaC74C26F8647cBDb8c5caf80BB5b32E43134 (code present on Ethereum, 2026-10-08).",
+          "exactSourceLanguage": "eth_getCode(0xCFbFaC74C26F8647cBDb8c5caf80BB5b32E43134) -> 0x608060405234801561..."
+        }
+      ],
+      "notFound": [
+        "a per-contribution accrual rule: the allowance is a fixed amount per period set by the Safe"
+      ],
+      "population": "deployed protocol source"
+    },
+    {
+      "item": {
+        "id": "zodiacroles2026",
+        "type": "software",
+        "title": "gnosisguild/zodiac-modifier-roles: packages/evm contracts (commit 820e5bc)",
+        "author": [
+          {
+            "literal": "Zodiac Roles Modifier"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              8,
+              25
+            ]
+          ]
+        },
+        "URL": "https://github.com/gnosisguild/zodiac-modifier-roles"
+      },
+      "readFrom": "source-code",
+      "observedAt": "2026-10-08",
+      "design": "protocol-source-code",
+      "findings": [
+        {
+          "finding": "Roles is a Safe-interface modifier between modules and the Safe: roles assigned to addresses with assignRoles; each role scopes targets, functions and parameter conditions (allowTarget, scopeTarget, allowFunction, scopeFunction) and whether call, delegatecall or send is allowed; a member calls execTransactionWithRole and the Safe executes only if the call matches the role's permission tree.",
+          "exactSourceLanguage": "Modules that have been granted a role are able to unilaterally make calls to any approved addresses, approved functions, and using approved parameters."
+        },
+        {
+          "finding": "Allowances are keyed budgets with refill: Allowance {refill, maxRefill, period, balance, timestamp}; each period adds refill up to maxRefill; consumption is tracked per allowance key (Consumption {allowanceKey, balance, consumed}) so one budget can be shared across permissions; setAllowance is onlyOwner (the Safe).",
+          "exactSourceLanguage": "struct Allowance { uint128 refill; uint128 maxRefill; uint64 period; uint128 balance; uint64 timestamp; } ... function setAllowance(bytes32 key, uint128 balance, uint128 maxRefill, uint128 refill, uint64 period, uint64 timestamp) external onlyOwner"
+        },
+        {
+          "finding": "Mastercopy 0xF2964CE6161ce0e75964Fe7927cE114cb0B283D5 is listed on Mainnet, Optimism, Gnosis, Polygon, Polygon zkEVM, Arbitrum, Avalanche; code present on Ethereum on 2026-10-08. Audits by G0 Group and Omniscia are in packages/evm/docs.",
+          "exactSourceLanguage": "Audits have been performed by the [G0 group] and [Omniscia]. ... [Mainnet](https://etherscan.io/address/0xF2964CE6161ce0e75964Fe7927cE114cb0B283D5#code)"
+        }
+      ],
+      "notFound": [
+        "a role that is earned or revoked by on-chain evidence: roles are assigned by the owner Safe"
+      ],
+      "population": "deployed protocol source"
+    },
+    {
+      "item": {
+        "id": "hatsprotocol2024",
+        "type": "software",
+        "title": "Hats-Protocol/hats-protocol: Hats.sol and HatsIdUtilities.sol (commit cccb71a) with lastTopHatId reads",
+        "author": [
+          {
+            "literal": "Hats Contracts"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024,
+              5,
+              29
+            ]
+          ]
+        },
+        "URL": "https://github.com/Hats-Protocol/hats-protocol"
+      },
+      "readFrom": "source-code",
+      "observedAt": "2026-10-08",
+      "design": "protocol-source-code",
+      "findings": [
+        {
+          "finding": "Hats are non-transferable ERC-1155 role tokens arranged in trees: one top hat per tree, admins at each level (max 14 levels, hat ids pack the path), a hat has a wearer set (max supply), an eligibility module (can the wearer wear it, and are they in good standing) and a toggle module (is the hat active), both either an address or a contract queried on every balanceOf, so a hat is revoked by changing module state with no transaction against the wearer.",
+          "exactSourceLanguage": "Hats Protocol is a protocol for DAO-native roles and credentials that supports revocable delegation of authority and responsibility. Hats are represented on-chain by non-transferable tokens that conform to the ERC1155 interface. An address with a balance of a given Hat token \"wears\" that hat"
+        },
+        {
+          "finding": "Hats.sol contains no owner, proxy or upgrade code (zero matches for Ownable, upgrade, Proxy); hats can be made immutable by their admin (makeHatImmutable); top-hat trees can be linked under another tree with a request and approval pair (requestLinkTopHatToTree, approveLinkTopHatToTree).",
+          "exactSourceLanguage": "function makeHatImmutable(uint256 _hatId) external; function requestLinkTopHatToTree(uint32 _topHatDomain, uint256 _requestedAdminHat) external; function approveLinkTopHatToTree("
+        },
+        {
+          "finding": "Audits: Trust Security (2023-02-23) and Sherlock (2023-05-03). Hats v1 deployment 0x3bc1A0Ad72417f2d411118085256fC53CBdDd137: lastTopHatId on 2026-10-08 is 68 on Ethereum, 314 on Optimism, 1899 on Base, 1820 on Gnosis, 93 on Arbitrum, 82 on Polygon (the number of trees ever minted on each chain).",
+          "exactSourceLanguage": "lastTopHatId() -> 68 (eth), 314 (op), 1899 (base), 1820 (gnosis), 93 (arb), 82 (polygon)"
+        }
+      ],
+      "notFound": [
+        "DeFiLlama's 'Hats.V1/V2' entries are the unrelated Hats Finance bug-bounty protocol and were not used",
+        "hat-wearer counts per tree"
+      ],
+      "population": "deployed protocol source"
+    }
+  ],
+  "searches": [
+    {
+      "register": "openalex",
+      "variables": {
+        "search": "Moloch DAO ragequit minimal DAO governance",
+        "per_page": "5"
+      },
+      "observedAt": "2026-10-08",
+      "count": 3,
+      "included": [],
+      "reading": "Three hits: a 2026 DAO governance-design article (Jungnickel et al., Blockchain: Research and Applications, DOI 10.1016/j.bcra.2026.100473; Crossref carries no abstract so it was not read and is not a row) and two editions of Schneider's book Governable Spaces; none names Moloch, Baal or ragequit in the record fields read. Moloch v3 is therefore measured from source code only."
+    },
+    {
+      "register": "openalex",
+      "variables": {
+        "search": "KlimaDAO carbon credit tokenization Toucan base carbon tonne",
+        "per_page": "5"
+      },
+      "observedAt": "2026-10-08",
+      "count": 18,
+      "included": [
+        "ballesterosrodriguez2024"
+      ],
+      "reading": "18 hits. The peer-reviewed KlimaDAO case study (Frontiers in Blockchain 2024) is the one that analyses KLIMA market capitalisation, staking and retirements; its abstract was read from Crossref. Other hits (RWA tokenization surveys, a carbon-credit ecosystem paper, a price-dynamics paper) were not read."
+    },
+    {
+      "register": "openalex",
+      "variables": {
+        "search": "Juicebox programmable treasury DAO fundraising",
+        "per_page": "5"
+      },
+      "observedAt": "2026-10-08",
+      "count": 0,
+      "included": [],
+      "reading": "Zero hits in OpenAlex for Juicebox treasury literature. Juicebox is measured from source, docs and contracts only."
+    },
+    {
+      "register": "openalex",
+      "variables": {
+        "search": "Regen Network ecological asset ledger",
+        "per_page": "5"
+      },
+      "observedAt": "2026-10-08",
+      "count": 40,
+      "included": [],
+      "reading": "40 hits, none about Regen Network's ledger in the first five (a 2020 Frontiers paper on socio-technical economics and unrelated medical and software papers). Regen is measured from chain reads, source and governance records."
+    },
+    {
+      "register": "crossref",
+      "variables": {
+        "query.bibliographic": "Toucan Protocol base carbon tonne tokenized carbon credits pool",
+        "rows": "5"
+      },
+      "observedAt": "2026-10-08",
+      "count": 1761803,
+      "included": [],
+      "reading": "Crossref returned 1.76 million works for a bibliographic query that matched on generic words; the top five were tokenized-carbon-credit titles (taxation, visualization, recycling credits), none about the Toucan BCT pool design. Toucan is measured from source, DeFiLlama and the company blog."
+    },
+    {
+      "register": "crossref",
+      "variables": {
+        "query.bibliographic": "Gnosis Safe module role-based permissions DAO treasury",
+        "rows": "5"
+      },
+      "observedAt": "2026-10-08",
+      "count": 8726872,
+      "included": [],
+      "reading": "Crossref returned 8.7 million works on generic words; the top hits were unrelated figure captions and access-control papers. Safe Allowance and Zodiac Roles are measured from source only."
+    },
+    {
+      "register": "openalex",
+      "variables": {
+        "search": "Hats Protocol DAO roles on-chain credentials",
+        "per_page": "5"
+      },
+      "observedAt": "2026-10-08",
+      "count": 52,
+      "included": [],
+      "reading": "52 hits dominated by unrelated titles (Daoism, DeFi security). Hats Protocol has no academic hit in the first five; measured from source and on-chain reads."
+    },
+    {
+      "register": "openalex",
+      "variables": {
+        "search": "Drips Network Radicle streaming splitting funding",
+        "per_page": "5"
+      },
+      "observedAt": "2026-10-08",
+      "count": 3,
+      "included": [],
+      "reading": "Three hits, all unrelated agricultural abstracts. No academic literature found on Drips streaming and splitting."
+    },
+    {
+      "register": "github-api",
+      "variables": {
+        "repos": "drips-network/contracts; drips-network/docs"
+      },
+      "observedAt": "2026-10-08",
+      "count": 2,
+      "included": [
+        "dripscontracts2026",
+        "dripsdocs2026",
+        "dripsonchain2026"
+      ],
+      "reading": "Cloned at depth 1; src/ read, deployments/*.json read; docs/pages read; Ethereum and Optimism contracts read with cast. Looked for a funding-volume or recipient-count figure: none in docs, none in contracts."
+    },
+    {
+      "register": "defillama-api",
+      "variables": {
+        "endpoint": "api.llama.fi/protocols name/slug/url scan for drips, juicebox, revnet, defifa, moloch, baal, daohaus, splits, regen, toucan, klima, hats, bananapus"
+      },
+      "observedAt": "2026-10-08",
+      "count": 8543,
+      "included": [
+        "defillamajuicebox2026",
+        "defillamaklima2026"
+      ],
+      "reading": "Listed: juicebox-v1 ($13.0M), juicebox-v2, juicebox-v3, toucan-protocol, klimadao, breadchain (out of cluster), hats.v1/v2 (a different protocol, Hats Finance bug bounty). Not listed: Drips (only the unrelated Taiko Drips), Juicebox V4/V5/V6, Revnet, Defifa, Moloch/Baal/DAOhaus, 0xSplits, Regen Network."
+    },
+    {
+      "register": "github-api",
+      "variables": {
+        "repos": "Bananapus/nana-core-v5; Bananapus/nana-core-v6; rev-net/revnet-core-v5; org Bananapus pushed list"
+      },
+      "observedAt": "2026-10-08",
+      "count": 4,
+      "included": [
+        "nanacorev52025",
+        "nanacorev62026",
+        "revnetcore2025",
+        "juiceboxonchain2026"
+      ],
+      "reading": "Cloned v5 and revnet; read v6 README and ADMINISTRATION.md from raw.githubusercontent.com; V5/V5.1/V6 deployment addresses read from deployments/. Org listing shows version-6 and nana-*-v6 repositories pushed 2026-09-12 to 2026-09-25 and juice-sdk-v4 pushed 2026-10-08. Looked for payment-volume figures: needs an indexer key, not found free."
+    },
+    {
+      "register": "github-api",
+      "variables": {
+        "repos": "HausDAO/Baal; HausDAO org by pushed"
+      },
+      "observedAt": "2026-10-08",
+      "count": 2,
+      "included": [
+        "baalcontracts2024",
+        "hausdaoagents2026"
+      ],
+      "reading": "Baal cloned at depth 1 and Baal.sol, BaalSummoner.sol read; org listing shows moloch-skills, moloch-agent, daohaus-admin created April to May 2026. Looked for a count of DAOs: none exposed by the summoners; Blockscout counters recorded."
+    },
+    {
+      "register": "github-api",
+      "variables": {
+        "repos": "0xSplits/splits-contracts-monorepo; splits-waterfall; splits-docs; org by pushed"
+      },
+      "observedAt": "2026-10-08",
+      "count": 3,
+      "included": [
+        "splitscontracts2026",
+        "splitswaterfall2026",
+        "splitsdocs2026"
+      ],
+      "reading": "Cloned and read. Looked for Pods, Teams and Vesting in the monorepo and docs: the monorepo contains splits-v2, smart-vaults and smart-vault-modules only; splits-vesting exists as a separate repository (touched 2026-07-17) not read; no 'pod' string in the docs pages."
+    },
+    {
+      "register": "other",
+      "variables": {
+        "endpoint": "regen-api.polkachu.com LCD; forum.regen.network Discourse JSON"
+      },
+      "observedAt": "2026-10-08",
+      "count": 4,
+      "included": [
+        "regenledger2026",
+        "regenchain2026",
+        "regengovernance2026",
+        "regenforum2026"
+      ],
+      "reading": "Chain parameters, registry totals, proposals 67 to 81 and topics 70, 637, 638 read on 2026-10-08. Community pool balance endpoint returned HTTP 500. Free indexers for REGEN volume not found."
+    },
+    {
+      "register": "github-api",
+      "variables": {
+        "repos": "ToucanProtocol/contracts; blog.toucan.earth; verra.org"
+      },
+      "observedAt": "2026-10-08",
+      "count": 3,
+      "included": [
+        "toucancontracts2025",
+        "toucanblog2025"
+      ],
+      "reading": "Toucan contracts cloned; blog post of 2025-05-08 read. verra.org pages for the May 2022 Toucan statement returned a Cloudflare challenge and were not read; no Verra row is made."
+    },
+    {
+      "register": "github-api",
+      "variables": {
+        "repos": "KlimaDAO/klimadao-solidity; klimadao; relay-fee-skim; Klima-Protocol-x402-MCP-documentation; fair-launch-monorepo"
+      },
+      "observedAt": "2026-10-08",
+      "count": 5,
+      "included": [
+        "klimacontracts2025",
+        "klimarepos2026",
+        "defillamaklima2026"
+      ],
+      "reading": "Contracts and READMEs read; DeFiLlama klimadao and toucan-protocol histories and coins.llama.fi prices read; Polygon totalSupply read. forum.klimadao.finance did not resolve. The DeFiLlama treasuries endpoint requires a paid plan."
+    },
+    {
+      "register": "github-api",
+      "variables": {
+        "repos": "safe-global/safe-modules; gnosisguild/zodiac-modifier-roles; Hats-Protocol/hats-protocol"
+      },
+      "observedAt": "2026-10-08",
+      "count": 3,
+      "included": [
+        "safeallowance2026",
+        "zodiacroles2026",
+        "hatsprotocol2024"
+      ],
+      "reading": "AllowanceModule.sol fetched raw; Roles and Hats cloned; lastTopHatId read on six chains."
+    }
+  ]
+}

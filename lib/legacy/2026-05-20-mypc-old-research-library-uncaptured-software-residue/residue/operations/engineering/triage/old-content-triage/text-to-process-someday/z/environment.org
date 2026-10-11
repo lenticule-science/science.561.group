@@ -1,0 +1,6 @@
+#+title: environment
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-20 Sun 09:36]
+#+roam_tags: term
+An */environment/* is the thing in which another thing exists.

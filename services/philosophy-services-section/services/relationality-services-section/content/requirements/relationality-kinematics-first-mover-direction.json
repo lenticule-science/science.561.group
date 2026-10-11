@@ -1,0 +1,163 @@
+{
+  "id": "relationality-kinematics-first-mover-direction",
+  "name": "Research and apply relationality (kinematics), looking backward from the future into the real world",
+  "kind": "requirement",
+  "raised-by": "emsenn",
+  "asks": "Our goal in this session is to explore how the 561 Group is gaining a \"first mover advantage\" in, broadly, research and engineering of kinematics, but in practice this reflects as moving early into agentics; despite being a single individual without capital, we come with a tremendous body of knowledge informed by my experience and then validated mathematically.\n\nSo our key direction is research and application of relationality (kinematics), and using those to establish the 561 Group as the strongest organization in that field, and as a consequence, the only one approaching *other* fields from that perspective, basically looking \"backward\" from our futuristic science and engineering into the real world, while the 561 Group looks forward. (This lines up weirdly with our math: 561 Group sits at the boundary of necessary and potential, 561-group-services-section looking to potential, public-services-section looking to what's necessary, and this induces the unfolding of our science and engineering.)\n\nThis is all grounded in an significantly sophisticated set of resources you have access to, but the resources are early alpha \"vibeslop\" so part of our goal in this session is using this perspective of first-movers into kinematic space, providing quantum and classical knowledge backward, to help stabilize the 561 Group's internal imagination, mythopoetry, praxis.\n\nWe have so many wild ideas: UHC, ANT, SSE. Web as zeolite-siloxane vitrimers. Web as jiangshi.\n\nBut truly we want to take the day, as it is Theorsday, with full-throated conviction in our wildest ideas, and go, yup, that's who we are, those people with wild ideas, and we are going to do our fidicuary duty to ourselves to take being first movers into this world that others don't even know exists yet, seriously.\n\nThe space opened up by relationality and obsmetrologia - paraconsistent transfinitely-valued linear logic - is *massive*; like the difference between being stuck on earth, and being able to travel the stars.\n\nBut it's *information* space, so travel is instant, so it's even more mind-boggling.",
+  "met-when": [
+    {
+      "cell": "kinematics:boundary-theory-stated",
+      "target": "held",
+      "command": "sh -c 'grep -l -i \"necessary\" lib/emsenn/services/561-group/services/science-services-section/services/philosophy-services-section/services/relationality-services-section/content/text/documents/articles/notes/2026/10/*/*kinematics*first-mover*.md'",
+      "expected-exit": 0
+    },
+    {
+      "cell": "kinematics:backward-map",
+      "target": "held",
+      "command": "sh -c 'ls lib/emsenn/services/561-group/services/science-services-section/services/philosophy-services-section/services/relationality-services-section/data/records/*kinematics*backward*.json >/dev/null 2>&1'",
+      "expected-exit": 0
+    },
+    {
+      "cell": "kinematics:wild-idea-notes",
+      "target": "held",
+      "command": "sh -c 'ls lib/emsenn/services/561-group/services/science-services-section/services/philosophy-services-section/services/relationality-services-section/content/text/glossary/terms/uhc.md lib/emsenn/services/561-group/services/science-services-section/services/philosophy-services-section/services/relationality-services-section/content/text/glossary/terms/web-as-jiangshi.md >/dev/null 2>&1'",
+      "expected-exit": 0
+    },
+    {
+      "cell": "kinematics:nearest-checked",
+      "target": "held",
+      "command": "sh -c 'grep -l -i \"nearest\" lib/emsenn/services/561-group/services/science-services-section/services/philosophy-services-section/services/relationality-services-section/content/text/documents/articles/notes/2026/10/*/*kinematics*first-mover*.md'",
+      "expected-exit": 0
+    }
+  ],
+  "tier": "strategic",
+  "x-provenance": {
+    "recorded-by": "program-manager (bare-cedar-fog-claude, dispatched under the Leader standing direction of 2026-10-09)",
+    "recorded-on": "2026-10-09",
+    "customer": "urn:leader:emsenn",
+    "basis": "Opening prompt of the Leader on Bare Cedar Fog, carried as a requirement record by the board-requirement-intake skill. The raised-by field and asks are the Leader's own words; the requirements below are the program manager's EARS rendering of what those words ask, and carry no scope the words do not.",
+    "board-opening": {
+      "speech-act": "request",
+      "need": "The Group holds relationality (kinematics) research that makes it the strongest organization in the field and the only one approaching other fields from it, carrying quantum and classical knowledge backward into each field it enters.",
+      "scope": [
+        "section:services/science-services-section/services/philosophy-services-section/services/relationality-services-section"
+      ],
+      "requirements": [
+        {
+          "id": "R1",
+          "says": "The relationality research record shall state that the 561 Group sits at the boundary of necessary and potential, with the 561-group-services-section looking to potential and the public-services-section to what is necessary.",
+          "class": "functional",
+          "moscow": "must",
+          "rationale": "The Leader: \"561 Group sits at the boundary of necessary and potential\"; stated as theory first, not as a question."
+        },
+        {
+          "id": "R5",
+          "says": "The relationality research record shall derive how the Group's position at that boundary induces the unfolding of its science and engineering.",
+          "class": "functional",
+          "moscow": "must",
+          "rationale": "The Leader: \"this induces the unfolding of our science and engineering\"."
+        },
+        {
+          "id": "R2",
+          "says": "The relationality research record shall map each field the Group enters to the quantum and classical knowledge it carries backward into that field.",
+          "class": "functional",
+          "moscow": "must",
+          "rationale": "The Leader: \"providing quantum and classical knowledge backward\" and \"the only one approaching *other* fields from that perspective\"."
+        },
+        {
+          "id": "R3",
+          "says": "The relationality research record shall hold a note for each wild idea the Leader names (UHC, ANT, SSE, web as zeolite-siloxane vitrimers, web as jiangshi), stated as theory with its evidence.",
+          "class": "functional",
+          "moscow": "should",
+          "rationale": "The Leader: \"go, yup, that's who we are, those people with wild ideas\"."
+        },
+        {
+          "id": "R4",
+          "says": "The relationality research record shall state what the Group has that no other organization holds in this field, with a dated check of the nearest organization.",
+          "class": "functional",
+          "moscow": "should",
+          "rationale": "The Leader: \"establish the 561 Group as the strongest organization in that field\"."
+        }
+      ],
+      "conditions": [
+        {
+          "id": "kinematics:boundary-theory-stated",
+          "says": "A dated note states the boundary theory.",
+          "method": "assay",
+          "verifies": [
+            "R1",
+            "R5"
+          ]
+        },
+        {
+          "id": "kinematics:backward-map",
+          "says": "A record maps fields to the knowledge carried backward.",
+          "method": "assay",
+          "verifies": [
+            "R2"
+          ]
+        },
+        {
+          "id": "kinematics:wild-idea-notes",
+          "says": "Terms exist for the named ideas.",
+          "method": "assay",
+          "verifies": [
+            "R3"
+          ]
+        },
+        {
+          "id": "kinematics:nearest-checked",
+          "says": "The note names the nearest organization and the check date.",
+          "method": "assay",
+          "verifies": [
+            "R4"
+          ]
+        }
+      ],
+      "context": "The 2026-10-09 research note on in, out, across and forward, backward keeps two readings of the triad open and derives neither; it is the closest held research to the \"looking backward / looking forward\" claim and must be read before R1 is written. The first answer the session produced was judged by the Leader \"a pretty bad interpretation of my prompt\": it dwelt on woo and ran phases concurrently. The prompt asks for research, then reasoning, then engineering, in that order.",
+      "sources": [
+        {
+          "session": "claude session 13494296-9997-48c2-a50e-23e6b22eeafa and 0fbf24cb-8855-48f1-9c7e-852e0b4fb748 (same pasted prompt)",
+          "at-utc": "2026-10-08T16:33:28",
+          "words": "So our key direction is research and application of relationality (kinematics), and using those to establish the 561 Group as the strongest organization in that field, and as a consequence, the only one approaching *other* fields from that perspective"
+        },
+        {
+          "session": "claude session 13494296-9997-48c2-a50e-23e6b22eeafa and 0fbf24cb-8855-48f1-9c7e-852e0b4fb748 (same pasted prompt)",
+          "at-utc": "2026-10-08T16:33:28",
+          "words": "561 Group sits at the boundary of necessary and potential, 561-group-services-section looking to potential, public-services-section looking to what's necessary, and this induces the unfolding of our science and engineering"
+        },
+        {
+          "session": "claude session 13494296-9997-48c2-a50e-23e6b22eeafa and 0fbf24cb-8855-48f1-9c7e-852e0b4fb748 (same pasted prompt)",
+          "at-utc": "2026-10-08T16:33:28",
+          "words": "We have so many wild ideas: UHC, ANT, SSE. Web as zeolite-siloxane vitrimers. Web as jiangshi."
+        }
+      ],
+      "serves": [
+        "first-mover-lead-converted-into-positions"
+      ],
+      "after": [],
+      "traces": []
+    },
+    "held-research": [
+      "science-services-section/services/philosophy-services-section/services/relationality-services-section/content/text/documents/articles/notes/2026/10/09/2026-10-09-research-on-in-out-across-forward-backward.md",
+      "science-services-section/services/philosophy-services-section/services/relationality-services-section/README.md",
+      "561-group-services-section/content/text/documents/articles/notes/2026/10/08/2026-10-08-note-on-the-first-mover-session-brief.md",
+      "561-group-services-section/content/text/documents/articles/notes/2026/07/18/2026-07-18-research-on-union-of-harmonious-colonies-fable-guidance-request.md",
+      "science-services-section/services/information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/actor-network-theory.md",
+      "science-services-section/services/engineering-science-services-section/services/materials-services-section/services/smart-materials-service-section/services/abiotic-smart-material-services-section/services/semiotic-smart-material-services-section/content/text/documents/articles/notes/2026/07/25/semiotic-vitrimer-runtime-specification.md",
+      "science-services-section/services/engineering-science-services-section/services/materials-services-section/services/smart-materials-service-section/services/abiotic-smart-material-services-section/services/semiotic-smart-material-services-section/content/text/documents/articles/notes/2026/07/25/2026-07-25-note-on-macromolecular-dsa-of-j26-and-sacrificial-zeolite-scaffolds.md",
+      "public-services-section/services/public-media-services-section/services/public-fiction-media-services-section/services/public-paracosm-media-services-section/services/jiangshi-web-paracosm-services-section/README.md",
+      "science-services-section/services/engineering-science-services-section/services/fabrication-science-services-section/content/text/documents/articles/notes/2026/07/23/2026-07-23-note-on-eda-as-diagenetic-zeolitization-of-digital-information.md"
+    ],
+    "not-held": "No term exists for UHC (outside the Union of Harmonious Colonies research note), SSE or kinematics by name in the relationality section; the web-as-jiangshi idea is held as a paracosm, not as science.",
+    "unresolved-authority": "None; but the triad the Leader means by \"forward, backward, in, out, across\" is not derived by the held note and R1 depends on it.",
+    "utterances": [
+      "ni:///sha-256;nX48bLCnuNp5CmJtvTkkWMiGVq0Qx4iE3B0bKTQvRVc"
+    ],
+    "sign-cell": {
+      "type": "emsenn/schema/requirement",
+      "mark": "ni:///sha-256;hnwoyNN90YmG3xa8RUnJt0L-HUoHohpi1LScLobFmdg",
+      "cell": "ni:///sha-256;T6vA2IQOw6vMz2eHINoAJl0HD3JnSB8YI0RIR9azfco"
+    }
+  }
+}

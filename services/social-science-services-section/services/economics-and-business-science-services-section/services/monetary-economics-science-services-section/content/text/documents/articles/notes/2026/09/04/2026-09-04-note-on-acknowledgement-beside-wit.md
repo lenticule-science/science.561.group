@@ -220,12 +220,12 @@ to answer the question from carriers already on disk.
 **The demand side, as the corpus already states it.** Attention
 allocation is proved as the demand side of reconciliation, distinct from
 the cost side the currency cocone prices
-([`AttentionAllocation.lean`](../../../../../../../../../../../../../information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/obsmetrologia/Obsmetrologia/Cohomology/AttentionAllocation.lean)): "A bounded agent has
+([`AttentionAllocation.lean`](../../../../../../../../../economics-science-services-section/lib/obsmetrologia-economics/ObsmetrologiaEconomics/AttentionAllocation.lean)): "A bounded agent has
 a finite attention budget `B` and many obstructions, each with a
 reconciliation cost... and a benefit... A jump — the irreversible
 timelike spend... is committed once and cannot be refunded, so the
 budget is consumed monotonically." The solver over this structure
-([`AllocationSolver.lean`](../../../../../../../../../../../../../information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/obsmetrologia/Obsmetrologia/Cohomology/AllocationSolver.lean)) is "a two-handed
+([`AllocationSolver.lean`](../../../../../../../../../economics-science-services-section/lib/obsmetrologia-economics/ObsmetrologiaEconomics/AllocationSolver.lean)) is "a two-handed
 knapsack": both a left fold and a right fold reach the same optimal
 *value*, but a benefit tie is broken oppositely by each — "the
 optimising *selection* is chirality-biased... The optimum is
@@ -240,7 +240,7 @@ reading: "Attention is which obstructions the organism can afford to
 discharge."
 
 **The single-agent boundary.** The knowing app's inside-face carrier
-([`face.mts`](../../../../../../../../../../../../../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/agent-computer-system-engineering-services-section/apps/knowing/src/face.mts)) states that one agent's own
+([`face.mjs`](../../../../../../../../../../../../../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/agent-computer-system-engineering-services-section/apps/agent-organization-engine/lib/knowing/src/face.mjs)) states that one agent's own
 scale-1 self is reconstructed from three boundary faces — communicating
 (across, truth), knowing (inside, knowledge), playing (outside,
 evidence) — glued by a replica Mayer–Vietoris, and states the resulting

@@ -1,0 +1,10 @@
+#+title: Fediverse
+#+begin_head
+#+ghe_schema: record-0.1.1
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-22 Tue 10:37]
+#+roam_tags: term
+#+end_head
+
+The */Fediverse/* is a subset of the [[file:web.org][Web]] which uses the [[file:activitypub.org][ActivityPub]] to pass [[file:message.org][messages]] between [[file:computer_user.org][users]].

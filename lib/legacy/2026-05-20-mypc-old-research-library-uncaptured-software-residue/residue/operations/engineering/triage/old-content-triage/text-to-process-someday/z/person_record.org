@@ -1,0 +1,12 @@
+#+title: person record
+#+begin_head
+#+ghe_schema: reference-0.1.1
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-22 Tue 16:18]
+#+roam_tags: term
+#+end_head
+#+name: person-record-definition-text
+#+begin_quote
+A */person record/* is a [[file:record.org][record]] about a [[file:person.org][person]].
+#+end_quote

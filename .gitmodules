@@ -1,31 +1,44 @@
-[submodule "lib/legacy"]
-	path = lib/legacy
-	url = https://github.com/lenticule-science/lenticule-science-legacy.git
-[submodule "services/math-services-section"]
-	path = services/math-services-section
+[submodule "services/information-science-services-section/services/math-services-section"]
+	path = services/information-science-services-section/services/math-services-section
 	url = https://github.com/lenticule-science/math-services-section.git
-[submodule "services/materials-services-section"]
-	path = services/materials-services-section
-	url = https://github.com/lenticule-science/materials-services-section.git
-[submodule "services/social-services-section"]
-	path = services/social-services-section
-	url = https://github.com/lenticule-science/social-services-section.git
-[submodule "services/media-services-section"]
-	path = services/media-services-section
-	url = https://github.com/lenticule-science/media-services-section.git
-[submodule "services/communicating-services-section"]
-	path = services/communicating-services-section
-	url = https://github.com/lenticule-science/communicating-services-section.git
-[submodule "services/games-services-section"]
-	path = services/games-services-section
-	url = https://github.com/lenticule-science/games-services-section.git
-[submodule "services/knowledge-services-section"]
-	path = services/knowledge-services-section
+	branch = main
+[submodule "services/information-science-services-section/services/knowledge-services-section"]
+	path = services/information-science-services-section/services/knowledge-services-section
 	url = https://github.com/lenticule-science/knowledge-services-section.git
 	branch = main
-[submodule "services/computer-science-services-section"]
-	path = services/computer-science-services-section
+[submodule "services/engineering-science-services-section/services/computer-science-services-section"]
+	path = services/engineering-science-services-section/services/computer-science-services-section
 	url = https://github.com/lenticule-science/computer-science-services-section.git
-[submodule "services/ecological-science-services-section"]
-	path = services/ecological-science-services-section
+	branch = main
+[submodule "services/engineering-science-services-section/services/materials-services-section"]
+	path = services/engineering-science-services-section/services/materials-services-section
+	url = https://github.com/lenticule-science/materials-services-section.git
+	branch = main
+[submodule "services/engineering-science-services-section/services/ecological-science-services-section"]
+	path = services/engineering-science-services-section/services/ecological-science-services-section
 	url = https://github.com/lenticule-science/ecological-science-services-section.git
+	branch = main
+[submodule "services/information-science-services-section/services/communication-science-services-section/services/linguistics-services-section"]
+	path = services/information-science-services-section/services/communication-science-services-section/services/linguistics-services-section
+	url = https://github.com/lenticule-science/linguistics-services-section.git
+	branch = main
+[submodule "services/information-science-services-section/services/communication-science-services-section/services/media-science-services-section/services/web-media-services-section"]
+	path = services/information-science-services-section/services/communication-science-services-section/services/media-science-services-section/services/web-media-services-section
+	url = https://github.com/lenticule-science/web-media-services-section.git
+	branch = main
+[submodule "services/social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section"]
+	path = services/social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section
+	url = https://github.com/lenticule-science/governance-services-section.git
+	branch = main
+[submodule "services/social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section/services/anarchism-services-section/services/organization-services-section"]
+	path = services/social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section/services/anarchism-services-section/services/organization-services-section
+	url = https://github.com/lenticule-science/organization-services-section.git
+	branch = main
+[submodule "services/social-science-services-section/services/economics-and-business-science-services-section/services/business-science-services-section/services/business-research-services-section"]
+	path = services/social-science-services-section/services/economics-and-business-science-services-section/services/business-science-services-section/services/business-research-services-section
+	url = https://github.com/lenticule-science/business-research-services-section.git
+	branch = main
+[submodule "services/social-science-services-section/services/economics-and-business-science-services-section/services/gambling-services-section"]
+	path = services/social-science-services-section/services/economics-and-business-science-services-section/services/gambling-services-section
+	url = https://github.com/lenticule-science/gambling-services-section.git
+	branch = main

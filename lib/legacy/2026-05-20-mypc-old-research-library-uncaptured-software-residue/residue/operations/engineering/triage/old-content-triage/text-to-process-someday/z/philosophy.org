@@ -1,0 +1,10 @@
+#+title: philosophy
+#+begin_head
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2021-01-08 Fri 20:24]
+#+roam_tags: term
+#+end_head
+
+#+name: philosophy-definition
+*/Philosophy/* is the [[file:study.org][study]] of the results of [[file:human.org][human]] [[file:cognition.org][cognition]].

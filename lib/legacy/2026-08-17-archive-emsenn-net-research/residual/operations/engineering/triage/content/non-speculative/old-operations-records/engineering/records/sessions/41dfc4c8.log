@@ -1,0 +1,8 @@
+Clean parse. The `channel` tool is registered with these channels:
+
+- **`bridge`** — all events, transactions, and sessions from the ops graph
+- **`fleet`** — sessions only, sorted by recency
+- **`engineering`** — events where `action` contains "task"
+- **`failures`** — failed sessions + `task-failed` events
+
+Each entry shows timestamp, action/state, subject/session-id, and a truncated preview of the task or description. Results are sorted newest-first and capped at `limit` (default 10).

@@ -1,0 +1,443 @@
+{
+  "$schema": "../../../../../../../../data/records/schema/literature-measurement.schema.json",
+  "id": "ergodicity-and-pooling",
+  "kind": "literature-measurement",
+  "question": "What does ergodicity economics establish about growth-rate gains from pooling and sharing, and what does it say a pooling instrument should do?",
+  "frame": {
+    "population": "multiplicative wealth processes; cooperators; insurance networks",
+    "exposure": "resource pooling and sharing among agents with multiplicative growth",
+    "comparator": "non-cooperating agents",
+    "outcomes": [
+      "time-average growth rate",
+      "ruin probability",
+      "stability of cooperation"
+    ]
+  },
+  "notes": [
+    "../../content/text/documents/articles/notes/2026/10/08/2026-10-08-ergodicity-and-pooling.md",
+    "../../content/text/documents/articles/notes/2026/10/08/2026-10-08-note-on-pooling-as-a-manufactured-ensemble.md",
+    "../../services/cooperative-pooling-science-services-section/content/text/documents/articles/notes/2026/10/08/2026-10-08-note-on-federation-topology-and-poverty-traps.md"
+  ],
+  "sources": [
+    {
+      "item": {
+        "id": "peters2019",
+        "type": "article-journal",
+        "title": "The ergodicity problem in economics",
+        "author": [
+          {
+            "family": "Peters",
+            "given": "Ole"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2019
+            ]
+          ]
+        },
+        "container-title": "Nature Physics",
+        "DOI": "10.1038/s41567-019-0732-0",
+        "URL": "https://doi.org/10.1038/s41567-019-0732-0"
+      },
+      "findings": [
+        {
+          "finding": "Expected utility theory and its descendants assume ergodicity indiscriminately; carefully addressing it resolves many economic puzzles in a testable way.",
+          "exactSourceLanguage": "the prevailing formulations of economic theory — expected utility theory and its descendants — make an indiscriminate assumption of ergodicity."
+        }
+      ],
+      "readFrom": "abstract",
+      "observedAt": "2026-10-08",
+      "design": "theoretical",
+      "population": "economic formalism (expected utility theory)",
+      "notFound": [
+        "The coin-toss gamble numbers and the growth-rate formulae are in the article body, which is behind the journal paywall; the same formulae were read in the preprints below."
+      ]
+    },
+    {
+      "item": {
+        "id": "petersadamou2022",
+        "type": "article-journal",
+        "title": "The ergodicity solution of the cooperation puzzle",
+        "author": [
+          {
+            "family": "Peters",
+            "given": "Ole"
+          },
+          {
+            "family": "Adamou",
+            "given": "Alexander"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2022
+            ]
+          ]
+        },
+        "container-title": "Philosophical Transactions of the Royal Society A",
+        "DOI": "10.1098/rsta.2020.0425",
+        "URL": "https://doi.org/10.1098/rsta.2020.0425"
+      },
+      "findings": [
+        {
+          "finding": "Repeated pooling and sharing reduces the effective fluctuation size and raises the time-average growth rate toward the ensemble-average growth rate as cooperators multiply.",
+          "exactSourceLanguage": "Repeated pooling and sharing of resources reduces the effective size of fluctuations and increases the time-average growth rate, which approaches the ensemble-average growth rate in the many-cooperator limit."
+        },
+        {
+          "finding": "The model needs no complementarity or threshold benefit for cooperation to pay.",
+          "exactSourceLanguage": "Classical treatments assume circumstances where combining resources creates an immediate benefit, e.g. through complementarity or thresholds. Here we ask whether cooperation is predictable without such circumstances."
+        }
+      ],
+      "readFrom": "abstract",
+      "observedAt": "2026-10-08",
+      "design": "theoretical",
+      "population": "resources that self-multiply with fluctuations (viral spread to financial investment)",
+      "notFound": [
+        "Formulae are taken from the preprint row, not from the journal text."
+      ]
+    },
+    {
+      "item": {
+        "id": "petersadamou2018",
+        "type": "manuscript",
+        "title": "An evolutionary advantage of cooperation",
+        "author": [
+          {
+            "family": "Peters",
+            "given": "Ole"
+          },
+          {
+            "family": "Adamou",
+            "given": "Alexander"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2018
+            ]
+          ]
+        },
+        "container-title": "arXiv:1506.03414v2",
+        "URL": "https://arxiv.org/abs/1506.03414"
+      },
+      "findings": [
+        {
+          "finding": "Non-cooperators grow at g = mu - sigma^2/2; N cooperators who pool and share every step grow at g = mu - sigma^2/(2N); the premium is (sigma^2/2)(1 - 1/N), so larger cooperatives are favored.",
+          "exactSourceLanguage": "ḡ y (N ) = µ − σ²/2N ... The premium increases with the number of cooperators as 1 − 1/N ... implying that larger cooperatives are favored over smaller ones."
+        },
+        {
+          "finding": "With pairwise correlation rho in fluctuations the many-cooperator limit is mu - sigma^2 rho/2: cooperation benefit exists unless fluctuations are perfectly correlated, and relies on diversity of individual outcomes.",
+          "exactSourceLanguage": "provided fluctuations are not perfectly correlated, a cooperation benefit always exists ... In our setup, cooperation relies on diversity in individual outcomes."
+        },
+        {
+          "finding": "A faster grower should share with a slower grower for N = 2 when mu1 - 3 sigma1^2/4 < mu2 - sigma2^2/4.",
+          "exactSourceLanguage": "the fast grower should share with the slow grower if µ1 − 3σ1²/4 < µ2 − σ2²/4."
+        }
+      ],
+      "readFrom": "full-text",
+      "observedAt": "2026-10-08",
+      "design": "theoretical",
+      "population": "N entities with independent multiplicative noisy growth",
+      "notFound": [
+        "Partial cooperation (sharing only a fraction, as in taxation) is deferred in the paper to a separate manuscript."
+      ]
+    },
+    {
+      "item": {
+        "id": "petersadamou2017",
+        "type": "manuscript",
+        "title": "Insurance makes wealth grow faster",
+        "author": [
+          {
+            "family": "Peters",
+            "given": "Ole"
+          },
+          {
+            "family": "Adamou",
+            "given": "Alexander"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2017
+            ]
+          ]
+        },
+        "container-title": "arXiv:1507.04655v2",
+        "URL": "https://arxiv.org/abs/1507.04655"
+      },
+      "findings": [
+        {
+          "finding": "Judged by time-average growth, a voluntary insurance contract raises both parties growth: shipowner +0.24% per month (1.9% to 2.2%), insurer +0.0071% per month from zero.",
+          "exactSourceLanguage": "here +0.24% per month ... here +0.0071% per month. Hence, in the time paradigm not only the shipowner but also the insurer should sign the contract."
+        },
+        {
+          "finding": "Expectation-value evaluation makes insurance a zero-sum puzzle; the puzzle goes away under time-average evaluation without utility functions or information asymmetry.",
+          "exactSourceLanguage": "Our reasoning is generalisable: business happens when both parties grow faster."
+        }
+      ],
+      "readFrom": "full-text",
+      "observedAt": "2026-10-08",
+      "design": "theoretical",
+      "population": "a shipowner of wealth $100,000 and an insurer of wealth $1,000,000 (worked example)"
+    },
+    {
+      "item": {
+        "id": "wand2024",
+        "type": "manuscript",
+        "title": "Cooperation in a non-ergodic world on a network: insurance and beyond",
+        "author": [
+          {
+            "family": "Wand",
+            "given": "Tobias"
+          },
+          {
+            "family": "Kamps",
+            "given": "Oliver"
+          },
+          {
+            "family": "Skjold",
+            "given": "Benjamin"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024
+            ]
+          ]
+        },
+        "container-title": "arXiv:2403.12095",
+        "DOI": "10.48550/arxiv.2403.12095",
+        "URL": "https://arxiv.org/abs/2403.12095"
+      },
+      "findings": [
+        {
+          "finding": "Restricting insurance contracts to lattice neighbours, every agent still profits from cooperating.",
+          "exactSourceLanguage": "Under these restrictions, we still find that all agents profit from cooperating through insurance."
+        },
+        {
+          "finding": "Clusters of rich and poor agents emerge endogenously and wealth inequality persists for long durations, matching the poverty-trap phenomenon; a rich agent collapses unless other rich agents are nearby to insure it.",
+          "exactSourceLanguage": "clusters of poor and rich agents emerge endogenously on the two-dimensional map and that wealth inequalities persist for a long duration, consistent with the phenomenon known as the poverty trap."
+        }
+      ],
+      "readFrom": "full-text",
+      "observedAt": "2026-10-08",
+      "design": "simulation",
+      "n": 4096,
+      "population": "agents on a 64 x 64 periodic square lattice (coordination number four), 200 time units",
+      "notFound": [
+        "Quantitative growth-rate gains per agent are given only in figures."
+      ]
+    },
+    {
+      "item": {
+        "id": "vanhoyweghen2025",
+        "type": "article-journal",
+        "title": "Investigating the origins of redistributive behaviour in non-ergodic contexts",
+        "author": [
+          {
+            "family": "Vanhoyweghen",
+            "given": "Arne"
+          },
+          {
+            "family": "Macharis",
+            "given": "Cathy"
+          },
+          {
+            "family": "Ginis",
+            "given": "Vincent"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025
+            ]
+          ]
+        },
+        "container-title": "Proceedings of the Royal Society A",
+        "DOI": "10.1098/rspa.2025.0598",
+        "URL": "https://doi.org/10.1098/rspa.2025.0598"
+      },
+      "findings": [
+        {
+          "finding": "Participants shared potential gains and losses in multiplicative gambles in ways consistent with time-average growth optimisation rather than expected gain.",
+          "exactSourceLanguage": "The observed behaviour supports the hypothesis that an element of human decision-making prefers time-average optimization over expected outcomes."
+        }
+      ],
+      "readFrom": "abstract",
+      "observedAt": "2026-10-08",
+      "design": "empirical-study",
+      "n": 200,
+      "country": [
+        "BE"
+      ],
+      "population": "human decision-makers, two independent experiments of n = 200 each, 30 multiplicative gambles each",
+      "notFound": [
+        "Country of recruitment and effect sizes not in the abstract."
+      ]
+    },
+    {
+      "item": {
+        "id": "jolakoski2024",
+        "type": "manuscript",
+        "title": "The impact of stochastic resetting on resource allocation: the case of reallocating geometric Brownian motion",
+        "author": [
+          {
+            "family": "Jolakoski",
+            "given": "Petar"
+          },
+          {
+            "family": "Trajanovski",
+            "given": "Pece"
+          },
+          {
+            "family": "Pal",
+            "given": "A."
+          },
+          {
+            "family": "Stojkoski",
+            "given": "Viktor"
+          },
+          {
+            "family": "Kocarev",
+            "given": "Ljupčo"
+          },
+          {
+            "family": "Sandev",
+            "given": "Trifce"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024
+            ]
+          ]
+        },
+        "container-title": "arXiv:2411.12390",
+        "DOI": "10.48550/arxiv.2411.12390",
+        "URL": "https://doi.org/10.48550/arxiv.2411.12390"
+      },
+      "findings": [
+        {
+          "finding": "Optimal resetting balances growth and redistribution and reduces inequality in the resource distribution of reallocating geometric Brownian motion.",
+          "exactSourceLanguage": "We demonstrate that optimal resetting can effectively balance growth and redistribution, reducing inequality in the resource distribution."
+        }
+      ],
+      "readFrom": "abstract",
+      "observedAt": "2026-10-08",
+      "design": "theoretical"
+    }
+  ],
+  "searches": [
+    {
+      "register": "openalex",
+      "variables": {
+        "search": "ergodicity solution of the cooperation puzzle",
+        "per_page": "5"
+      },
+      "observedAt": "2026-10-08",
+      "count": 613,
+      "included": [
+        "petersadamou2022"
+      ],
+      "reading": "First hit is the Philosophical Transactions paper (DOI 10.1098/rsta.2020.0425)."
+    },
+    {
+      "register": "crossref",
+      "variables": {
+        "query.bibliographic": "Peters Adamou ergodicity solution cooperation puzzle",
+        "rows": "3"
+      },
+      "observedAt": "2026-10-08",
+      "count": 861626,
+      "included": [
+        "petersadamou2022"
+      ],
+      "reading": "Crossref returns the same DOI as top hit."
+    },
+    {
+      "register": "openalex",
+      "variables": {
+        "search": "ergodicity economics insurance cooperation time average growth",
+        "per_page": "8"
+      },
+      "observedAt": "2026-10-08",
+      "count": 263,
+      "included": [
+        "wand2024",
+        "vanhoyweghen2025",
+        "petersadamou2017"
+      ],
+      "reading": "Network extension, a stated-preference experiment, and the insurance paper."
+    },
+    {
+      "register": "openalex",
+      "variables": {
+        "search": "Wand Peters pooling resources networks ergodicity",
+        "per_page": "6"
+      },
+      "observedAt": "2026-10-08",
+      "count": 0,
+      "included": [],
+      "reading": "No results for this phrasing; the network paper was found by the preceding search."
+    },
+    {
+      "register": "openalex",
+      "variables": {
+        "search": "Kelly criterion insurance ergodicity reciprocity growth rate",
+        "per_page": "6"
+      },
+      "observedAt": "2026-10-08",
+      "count": 2,
+      "included": [
+        "vanhoyweghen2025"
+      ],
+      "reading": "Two results; only the stated-preference experiment qualified."
+    },
+    {
+      "register": "web",
+      "variables": {
+        "url": "https://arxiv.org/abs/1506.03414"
+      },
+      "observedAt": "2026-10-08",
+      "count": 1,
+      "included": [
+        "petersadamou2018"
+      ],
+      "reading": "arXiv preprint of the cooperation paper under its earlier title; full text read."
+    },
+    {
+      "register": "web",
+      "variables": {
+        "url": "https://www.nature.com/articles/s41567-019-0732-0"
+      },
+      "observedAt": "2026-10-08",
+      "count": 1,
+      "included": [
+        "peters2019"
+      ],
+      "reading": "Publisher page; abstract readable, article body behind the journal paywall."
+    },
+    {
+      "register": "openalex",
+      "variables": {
+        "search": "Berman Peters Adamou wealth inequality reallocating geometric Brownian motion",
+        "per_page": "5"
+      },
+      "observedAt": "2026-10-08",
+      "count": 5,
+      "included": [
+        "jolakoski2024"
+      ],
+      "reading": "Only the 2024 resetting-RGBM paper qualified; the Berman, Peters and Adamou RGBM papers did not come back from this register query."
+    }
+  ]
+}
