@@ -53,6 +53,8 @@ A much earlier lead deserves specific provenance checking: USDA Department Circu
 
 The most useful next scientific step is to request original specimen metadata or a taxonomic re-determination of USDA specimen no. 58 and the primary evidence supporting CDFA's *Z. aquatica* host listing. Do not treat a secondary database host association as an independently verified infection, and do not erase that association merely because it conflicts with more recent papers.
 
+A 2016 Indian morphogenesis study of *Z. latifolia* used plant microsatellite and fungal ITS comparisons to identify the Asian host–fungus association [S21]. This is independent modern evidence for the established **Asian** association, not a diagnostic test of native American *Zizania*.
+
 ### What edible white versus gray jiaobai establishes
 
 A 2023 peer-reviewed study [S12] distinguishes edible **white** galls, associated with mycelial-teliospore (M-T) strains that lack visible sori at the harvesting stage, from **gray** galls full of mature teliospores. White edible tissue still contains fungal hyphae. It follows that a swollen edible stem is **not** equivalent to a visibly sporulating gall, but neither the absence of visible spores nor ordinary retail sale proves the tissue contains no fungus or presents zero phytosanitary risk. Tu et al. (2019) cultured several *U. esculenta* strains from **harvested galls** sampled at different swelling stages [S17]. Thus at least some harvested gall tissue contains culturable fungus: presence is not merely inferred from DNA or a visible gall. However, this study did **not** quantify organism survival after international shipping, retail storage, cooking or disposal, nor competence to infect an American native host. Those links remain **unmeasured**, not zero.
@@ -105,6 +107,8 @@ A negative survey only constrains the species, assay, place and time actually su
 - **S18.** EPPO (2024). [*Zizania latifolia* datasheet](https://doi.org/10.1111/epp.13044), *EPPO Bulletin* 54(3):355–360. Differentiates spread of the introduced perennial plant and possible fungal impacts; documents populations in Hawaii and British Columbia. EPPO regulation and risk are not US regulation or a finding of local native infection.
 - **S19.** Wisconsin Office of Governor (19 May 2026). [Wild Rice Stewardship Council membership and treaty-rights mandate](https://content.govdelivery.com/accounts/WIGOV/bulletins/417ec2b). The council includes representatives of Wisconsin's Tribal nations, GLIFWC and relevant state agencies. This is public institutional evidence, **not** consent for the 561 Group to represent its members or presume partnership.
 - **S20.** USDA APHIS (19 March 2018), [Restructuring of Regulations on the Importation of Plants for Planting](https://regulations.justia.com/regulations/fedreg/2018/03/19/2018-05424.html), effective 18 April 2018; [7 CFR 319.37-1(c)](https://www.law.cornell.edu/cfr/text/7/319.37-1) excludes consumption/processing from that planting-specific subpart while allowing other restrictions. This is not a ruling that a particular food commodity is admissible.
+
+- **S21.** Sinha S. K., Deka A. C., Bharalee R. (2016). [Morphogenesis of edible gall in *Zizania latifolia* due to *Ustilago esculenta* infection in India](https://doi.org/10.5897/AJMR2016.8207), *African Journal of Microbiology Research* 10(31):1215–1223. The specimens were the Asian host, not identified American native *Zizania*.
 
 ## Research publication method (work not yet accepted as a paper)
 
