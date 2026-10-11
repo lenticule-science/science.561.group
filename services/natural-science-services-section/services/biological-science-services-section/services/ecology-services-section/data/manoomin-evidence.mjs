@@ -1,7 +1,7 @@
 // Lenticule Ecology: conservatively project source-bounded claims; never confer scientific, legal or editorial acceptance.
 
 export function validateEvidence(d){
- const problems=[],statuses=new Set(["documented","source_report","reported","unresolved"]),kinds=new Set(["primary_study","agency_assessment","agency_guidance","public_report","official_specific_ruling","primary_native_host_diagnosis","primary_field_observation"]);
+ const problems=[],statuses=new Set(["documented","source_report","reported","unresolved"]),kinds=new Set(["primary_study","agency_assessment","agency_guidance","public_report","official_specific_ruling","primary_native_host_diagnosis","primary_field_observation","peer_reviewed_review","taxonomic_authority"]);
  const isString=x=>typeof x==="string"&&x.trim().length>0;
  const seenSources=new Map(),seenClaims=new Set();
  if(d?.schema_version!==1)problems.push("unsupported schema_version");
@@ -27,6 +27,12 @@ export function validateEvidence(d){
   if(!Array.isArray(c?.source_ids)||c.source_ids.length===0)problems.push("no sources: "+c?.id);
   if(!Array.isArray(c?.limits)||c.limits.length===0||c.limits.some(v=>!isString(v)))problems.push("no bounded limitations: "+c?.id);
   const sourceKinds=(c?.source_ids||[]).map(id=>{const s=seenSources.get(id);if(!s)problems.push("unresolved source ref "+id+": "+c?.id);return s?.kind;});
+  if(c.measurement!==undefined){
+   const m=c.measurement;
+   if(!m||!Number.isFinite(m.quantity)||!isString(m.unit)||!isString(m.denominator))problems.push("measurement lacks valid quantity unit or denominator: "+c.id);
+   if(m?.unit?.startsWith("fraction_")&&!(m.quantity>=0&&m.quantity<=1))problems.push("fraction outside unit interval: "+c.id);
+   if(m?.forecast_probability!==false)problems.push("measured climate fraction must not be relabeled invasion probability: "+c.id);
+  }
   if(c.status==="documented"&&sourceKinds.every(k=>k==="public_report"||k===undefined))problems.push("public repost promoted to documented evidence: "+c.id);
   if(c.status==="documented"&&sourceKinds.every(k=>k!=="primary_study"&&k!=="primary_native_host_diagnosis"&&k!=="agency_assessment"))problems.push("documented claim has no competent primary or official assessment source: "+c.id);
   if(c.track==="fungal_life_cycle"&&c.status!=="unresolved"&&!sourceKinds.includes("primary_study"))problems.push("strain pathogenicity claim requires experimental study: "+c.id);

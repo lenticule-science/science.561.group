@@ -11,7 +11,7 @@ tags: [ecology, mycology, botany, plant-pathology, biosecurity, scientific-revie
 
 # *Ustilago esculenta* and native North American wild rice: an evidence assessment
 
-**Working paper, version 0.6 — 11 October 2026. Not independently scientifically received, peer reviewed, or accepted for L-Space scholarly release.**
+**Working paper, version 0.8 — 11 October 2026. Not independently scientifically received, peer reviewed, or accepted for L-Space scholarly release.**
 
 Research synthesis: ChatGPT-Web for Lenticule Science. No other authorship or tribal institutional endorsement is asserted. The [underlying ecological evidence register](../../../manoomin-jiaobai-ustilago-esculenta-evidence.md) is the maintained source record; this manuscript states the argument and its current limits.
 
@@ -39,6 +39,8 @@ The immediate questions are: (1) which commodities and origins APHIS currently a
 
 ## 2. Methods and admissible evidence
 
+**Primary-source readback refinement (October 11, 2026):** Guo et al.'s full published Results and Table 1 identify **one wild Asian host reference (HSD2)** and **two cultivated Asian genomes (Zhejiao2 and Jiayou1)**, rather than an unspecified replicated wild-versus-crop comparison. Chigira et al.'s **Table 4** identifies nine archived Japanese strains and **one Chinese-origin strain (yeast4, MAFF 305616)** among ten. Its abstract's compressed geographic description should not override the study's actual table. The underlying [source-extraction JSON](https://github.com/lenticule-science/science-services-section/blob/main/services/natural-science-services-section/services/biological-science-services-section/services/ecology-services-section/data/manoomin-evidence.json) records these sample units and the experimental limitations; the data were not independently reprocessed.
+
 **Primary-study extraction and audit:** The related [source-owned experiment records](https://github.com/lenticule-science/science-services-section/blob/main/services/natural-science-services-section/services/biological-science-services-section/services/ecology-services-section/data/manoomin-evidence.json) distinguish material, assay and limits for Guo (2015), Zhang (2017), Tu (2019) and Chigira (2023). The Zhang finding is based on **four selected Asian-host fungal isolates**, including mixed T/MT pairings capable of infecting that Asian host; Tu's culturing uses **five harvested galls**, not independent national consignments; Chigira's laboratory mating tests do not challenge American *Zizania*; and Guo's comparative host genomics does not assay retail transmission. A reader should not count those four primary studies as replicated native-host infection tests. The full experimental source extract and its [tests](https://github.com/lenticule-science/science-services-section/blob/main/tests/manoomin-evidence.test.mjs) separate observed results, sample independence and unmeasured links.
 
 The accompanying **machine-readable evidence extract** lives in this ecology section at [`data/manoomin-evidence.json`](https://github.com/lenticule-science/science-services-section/blob/main/services/natural-science-services-section/services/biological-science-services-section/services/ecology-services-section/data/manoomin-evidence.json). It records bounded assertions, independent source identifiers, material/species scope and explicit limits; `data/manoomin-evidence.mjs` and `tests/manoomin-evidence.test.mjs` reject ungrounded promotion of a retail report to a violation, an unresolved species question to a native infection, or these unreviewed findings to accepted scholarly publication. This structured extract is a **subset** of the narrative research, not a separate primary source, substitute for the full papers, or automatic editorial warrant.
@@ -62,6 +64,14 @@ The California Department of Food and Agriculture's **2017 fungus assessment** l
 In the same agency's **2018 *Z. latifolia* assessment**, a responding CDFA botanist stated that *Z. latifolia* was the only **known** host and that infection of *Z. palustris* had **not** been tested [CDFA 2018]. A 2015 genomic study described *Z. latifolia* as the only known host [Guo 2015]. A 2016 Indian microscopy/genetic study independently identified *U. esculenta* on the Asian host [Sinha 2016], without testing an American host. The contradictions are not resolved merely by counting how many sources mention the native taxon.
 
 A USDA-NRCS **2024 native *Z. aquatica* guide** says that the plant's culms may be infected by *U. esculenta* but cites Kealey, Kosikowski and Gray (1981). That cited article is explicitly about **corn smut (*U. maydis*) as a food source** [NRCS 2024; Kealey 1981]. The citation does not establish *U. esculenta* infecting native *Z. aquatica*. We cannot determine from this miscitation whether the guide's biological claim originated elsewhere. Consequently, it is a provenance defect, **not** proof of resistance.
+
+### 3.1a. An observed native smut is a different fungus
+
+An overlooked source of diagnostic confusion is that **North American wild rice already has documented fungal diseases**. A 2023 *Crop Science* review of northern wild rice (*Zizania palustris*) identifies its established smut as ***Eballistra lineata***, with fungal brown spot from ***Bipolaris oryzae*** among the most damaging cultivated-rice diseases [McGilp et al. 2023, §5.2]. **Species Fungorum** explicitly lists ***Entyloma lineatum***, the name used in older North American disease literature, as a synonym of ***Eballistra lineata***. It is **not** the Asian jiaobai fungus ***Ustilago esculenta*** [Species Fungorum, taxon 467756].
+
+This comparison is supported by original disease observations rather than a modern review alone. Bowden and Eschen's 1986 *Plant Disease* note reports smut attributable to *Entyloma lineatum* in *Zizania aquatica* examined at Idaho fields and Benewah Lake in 1984 [Bowden & Eschen 1986]. Nyvall and Percich (1999) investigated Minnesota cultivated *Z. palustris* lesions and documented ***Bipolaris oryzae*** brown spot and ***B. sorokiniana*** spot blotch [Nyvall & Percich 1999]. Neither is direct evidence of *U. esculenta* infecting native wild rice. The studies were bounded by locality, host, assay and date; their lack of a report about a different pathogen is **not** a powered negative *U. esculenta* survey.
+
+Thus three statements must never be conflated: **(1)** there is diagnosed smut or fungal disease in native wild rice; **(2)** that smut is specifically *U. esculenta*; **(3)** viable *U. esculenta* has spread from a present imported commodity to an identified native stand. The reviewed native literature establishes examples of (1), but not (2) or (3). A plant pathology reviewer should be able to check this distinction without assuming native rice is disease-free.
 
 | Evidence item | Host printed | Direct evidence type | Native-host conclusion |
 | --- | --- | --- | --- |
@@ -87,7 +97,7 @@ The inference therefore has at least three different units: **harvested tissue c
 
 A 2024 EPPO datasheet reports establishment of *Z. latifolia* in **Hawaii**, a locality in **British Columbia**, and multiple invaded European and New Zealand wetland systems, with rhizomatous spread and displacement of other aquatic plants [EPPO 2024]. Such spread concerns the Asian perennial **plant** as an invader. It does not identify *U. esculenta* in the populations, establish native *Zizania* infection, or create US import law. The introduced plant's impacts warrant separate evaluation even if cross-species fungal pathogenicity is eventually found absent.
 
-A **2025 U.S. Fish and Wildlife Service ecological-risk screen** independently classifies *Z. latifolia* as **High Risk** for the United States, citing its documented invasion history and broad climate match for potential establishment across much of the contiguous country [USFWS 2025]. Its assessment provides a more current **U.S. federal plant-invasion risk determination**, not a specific diagnosis of a local manoomin bed and not a prohibition on a cut food product. The EPPO and USFWS assessments depend in part on the same underlying invasion history; their agreement is not two independent experiments or two additional field introductions. The plant invasion pathway remains actionable as a distinct ecological research question even if native-host susceptibility to *U. esculenta* is eventually excluded.
+A **2025 U.S. Fish and Wildlife Service ecological-risk screen** independently classifies *Z. latifolia* as **High Risk** for the United States, citing its documented invasion history and broad climate match for potential establishment across much of the contiguous country [USFWS 2025]. Its §7 explicitly names the **Great Lakes Basin** among areas of high climate match and defines the continental **Climate 6 score 0.814** as the fraction of continental target points with match score at least six. This is a **geographic climate-match fraction, not an 81.4% chance of invasion or local manoomin damage**. The §6 mapped Maryland and Virginia records were specifically **not established wild populations**, so neither their appearance on a map nor old planted research specimens proves present-day naturalization. Its assessment provides a more current **U.S. federal plant-invasion risk determination**, not a specific diagnosis of a local manoomin bed and not a prohibition on a cut food product. The EPPO and USFWS assessments depend in part on the same underlying invasion history; their agreement is not two independent experiments or two additional field introductions. The plant invasion pathway remains actionable as a distinct ecological research question even if native-host susceptibility to *U. esculenta* is eventually excluded.
 
 ## 4. Causal interpretation and falsifiable claims
 
@@ -112,6 +122,8 @@ The original evidence is compatible with a precautionary response while remainin
 
 Taxonomic ambiguity is material because the 1901 variety combination and the abbreviated 1911 greenhouse label are consistent with more than one modern species interpretation. The correct question is not “Did the printed record say *Z. aquatica*?”—it did—but whether the original biological object was the native species currently bearing that name. Evidence about *Z. latifolia* cannot be silently promoted to evidence about *Z. palustris*, and data about *Entyloma lineatum* must not be assigned to *U. esculenta*.
 
+The ecological map must not silently become a risk prediction: USFWS reports a strong Great Lakes climate match, but such matching is neither propagule delivery nor presence in a documented manoomin bed. National climate suitability is a reason to study the introduced *plant* independently, not evidence the fungus has crossed a host boundary.
+
 The fungal life-stage distinction is equally material. No visible mature spores in a typical edible white gall is not equivalent to sterile tissue. Tu et al.'s cultures narrow this uncertainty at the moment of sampling, but no reviewed source establishes the downstream transport and host links. Quantitative risk estimates or definitive regulatory accusations would require assumptions unsupported by the current data.
 
 Finally, manoomin stewardship and Indigenous treaty/resource governance are subjects of responsibility, not merely a rhetorically appended “stakeholder” subsection. Public evidence about a council, plant ecology or agency process cannot substitute for Tribal permission to use field locations, specimens, stewardship knowledge or institutional endorsements.
@@ -135,6 +147,28 @@ The work was assembled on **2026-10-11** by directed source tracing and later sa
 - `"NCU-F-0024676" "Zizania" host fungus`
 - `"WIS-F-0064092" "Zizania aquatica" Ustilago`
 - `"Mycological Exchange of 1921" 58 Zizania aquatica`
+
+### Targeted modern host/pathology screen, 11 October 2026
+
+A second directed search pass targeted **modern North American host diagnoses**, not the 1911 specimen. Three literal search queries executed this date were:
+
+- `Ustilago esculenta Zizania palustris pathogen laboratory host susceptibility inoculation primary study`
+- `Zizania aquatica Ustilago esculenta original pathogenicity record North America native wild rice molecular`
+- `Zizania palustris fungal diseases Fusarium brown spot false smut Ustilago esculenta wild rice`
+
+This is a **screen of specific inspected leads**, not a complete list of all web-search hits, a database-wide search history or a basis for an exhaustive negative claim. Source disposition preserves **which observable is actually supported**:
+
+| Inspected source | Admitted use in this review | Why this is not direct native *U. esculenta* diagnosis |
+| --- | --- | --- |
+| Watson, Tidwell & Fogle (1991), *Plant Disease* 75:1075 | Original North American introduced-host incursion | Diagnosed *U. esculenta* on **Asian *Z. latifolia***, not a native species |
+| Bowden & Eschen (1986), *Plant Disease* 70:800 | Positive native ***Z. aquatica*** disease comparison | Smut named ***Entyloma lineatum***, a different organism |
+| Nyvall & Percich (1999), *Plant Disease* 83:936–938 | Positive native ***Z. palustris*** crop pathology comparison | Brown spot and blotch attributed to ***Bipolaris*** spp., not *U. esculenta* |
+| McGilp et al. (2023), *Crop Science*, §5.2 | Modern peer-reviewed native fungal-disease overview | Lists ***Eballistra lineata*** smut and other diseases; omission of *U. esculenta* is **not** a powered negative |
+| Species Fungorum, record 467756 | Check *Entyloma lineatum* → ***Eballistra lineata*** accepted synonym | A nomenclatural identity, not evidence of a recent native infection |
+| Xu et al. (2010), *Molecular Phylogenetics and Evolution* | Correct four-species North American/Asian *Zizania* relationships | Plant phylogeny does not assay fungal host range |
+| Chigira et al. (2023), *Microbes and Environments* | Asian fungal mating-type diversity; Japanese/Chinese accession identities | Does not inoculate or sample North American *Zizania* |
+
+**Observed review result:** no primary assay verifying ***U. esculenta*** in a correctly identified native North American ***Zizania*** species emerged **from this bounded inspected set**. That sentence describes this screen, not a biological absence, resistance demonstration, literature-wide conclusion, or denominator suitable for a formal review. A broader study must save search-platform name, exact date/range, query, full returned hit list, deduplicated records, full-text retrieval status, named screeners, exclusions and risk-of-bias before PRISMA-ScR/ROSES reporting.
 
 Source categories admitted into this targeted set were original archival catalogue entries, taxonomic authority records, modern scientific papers with resolved authors/DOI, first-party agency risk material and current published institutional records. Secondary unattributed host lists were retained as **claims to trace**, not upgraded to experimental observations. The publicly accessible USDA 1922 PDF and USDA-NRCS 2024 guide were read for the specifically cited entries; neither was treated as a modern taxonomic redetermination. Commercial source previews and database abstracts are marked as limited evidence where original full experimental methods were not independently checked.
 
@@ -175,6 +209,10 @@ A curator's high-resolution original label scan, associated host voucher, exchan
 
 ## References
 
+- **McGilp L. et al. (2023).** [Northern Wild Rice (*Zizania palustris*) breeding, genetics, and conservation](https://doi.org/10.1002/csc2.20973). *Crop Science*, §5.2 details known fungal brown spot, smut (*Eballistra lineata*) and other diseases; a narrative review, not a negative *U. esculenta* study.
+- **Species Fungorum.** [*Eballistra lineata*, synonymy record 467756](https://www.speciesfungorum.org/names/Synonymy.asp?RecordId=467756), showing *Entyloma lineatum* and *Ustilago lineata* (a different epithet from *esculenta*) in its nomenclatural history.
+- **Bowden R. L., Eschen D. J. (1986).** [First Report of Wild Rice Diseases in Idaho](https://www.apsnet.org/publications/plantdisease/backissues/Documents/1986Abstracts/PD_70_800b.htm), *Plant Disease* 70:800, original 1984 *Z. aquatica* surveys and *E. lineatum* smut.
+- **Nyvall R. F., Percich J. A. (1999).** [Development of fungal brown spot and spot blotch on cultivated wild rice in Minnesota](https://doi.org/10.1094/PDIS.1999.83.10.936), *Plant Disease* 83:936–938, original *Z. palustris* lesion isolation.
 - **GLIFWC.** [Ganawenindiwag Manoomin Anishinaabeg](https://glifwc.org/stewardship/ganawenindiwag-manoomin-anishinaabeg). Steward-owned public account of manoomin research, hydrology and existing work.
 - **Wisconsin DNR (2026-09-10).** [Wild Rice Stewardship Council October 7 agenda](https://dnr.wisconsin.gov/calendar/meeting/130251), scheduled agenda only.
 - **Minnesota DNR (2026-07-28).** [Proposed Cedar Lake Manoomin Restoration Project](https://www.dnr.state.mn.us/news/2026/07/28/minnesota-dnr-accepting-comments-environmental-review-documents-proposed-cedar-lake-manoomin-restoration-project), Fond du Lac collaboration proposal, not completed construction.
@@ -202,4 +240,4 @@ A curator's high-resolution original label scan, associated host voucher, exchan
 - **Tricco A. C. et al. (2018).** [PRISMA extension for scoping reviews](https://doi.org/10.7326/M18-0850). *Annals of Internal Medicine* 169:467–473.
 - **Haddaway N. R. et al. (2018).** [ROSES reporting standards](https://doi.org/10.1186/s13750-018-0121-7). *Environmental Evidence* 7:7.
 
-*Version 0.6: targeted evidence synthesis; scientific receiving, full literature screening, current APHIS determination, original specimen examination, rights decision and external review remain open.*
+*Version 0.8: targeted evidence synthesis; scientific receiving, full literature screening, current APHIS determination, original specimen examination, rights decision and external review remain open.*
