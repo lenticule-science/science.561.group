@@ -1,0 +1,39 @@
+{
+  "schema": "public-science-publisher-audit-coverage/v0.1",
+  "workRef": "561-group/bare-cedar-fog#260",
+  "publicWorkRef": "causeway-services/koios-news#4",
+  "source": {
+    "website": "causeway-services/koios-news",
+    "websiteCommit": "cec00cb8bcf8d082bfcf14af886894b1612b6a7a",
+    "submodule": "data",
+    "gitlinkTarget": "e2380b45646668db3c8e818d508d1f6f9601f92e",
+    "data": "causeway-services/koios-news-data:feedback/latest.json",
+    "dataBlobSha": "62e0bb15d3d3766eddc1b34b2d9f43cb4033a666",
+    "observedAt": "2026-10-11T11:05:36.449Z"
+  },
+  "observationKind": "producer-source-readback",
+  "auditRecords": 76,
+  "manifestRoutes": 92,
+  "unassessedManifestRoutes": 16,
+  "perRecordDepthOrContextFlagCount": 38,
+  "issueReportedCount": 38,
+  "failureFlagCounts": {
+    "insufficientReportingDepth": 37,
+    "missingContextSections": 36,
+    "union": 38
+  },
+  "passedProducerAssays": 38,
+  "caveats": {
+    "routePopulationAndAuditPopulationDiffer": true,
+    "eligibilityOfUnassessedRoutes": "unverified",
+    "producerClaimIndependence": "one-source",
+    "independentArticleDepth": "not_measured",
+    "readerComprehension": "not_measured",
+    "historicalPolicyCompliance": "not_adjudicated",
+    "customerAcceptance": "not_verified",
+    "publisherPassIsNotScientificQualityPass": true
+  },
+  "scienceDecision": "unadjudicated",
+  "engineeringSpecificationAuthorized": false,
+  "nextAssay": "Compare the 16 unassessed publication routes against policy-effective-date and profile eligibility before publishing a population coverage claim; independently fingerprint source-version article bodies before causal inference."
+}
