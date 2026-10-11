@@ -1,0 +1,6 @@
+<PARSED TEXT FOR SHEET: 1 / 1 TABS
+TAB NAME: flowcell_EVT_mesh_manifest_v0_1.csv>index,mesh,vertices,faces,watertight,volume_mm3,file
+0,T0 blade,607,1210,True,1664.1,flowcell_T0_rotor_blade_NACA4412_v0_1.stl
+1,T0 rotor assembly,1951,3886,True,6629.2,flowcell_T0_rotorcell_151mm_v0_1.stl
+2,T1A rigid fin,324,644,True,177528.7,flowcell_T1A_fincell_NACA0012_120x150_v0_1.stl
+3,T1B reed body,194,384,True,847624.6,flowcell_T1B_reedcell_60x300_v0_1.stl
