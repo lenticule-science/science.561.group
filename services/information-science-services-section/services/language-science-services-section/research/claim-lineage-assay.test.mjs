@@ -1,0 +1,15 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {assayClaimLineage as assay} from './claim-lineage-assay.mjs';
+const source=()=>({claimRef:'s1',sourceRef:'public-source',propositionRef:'p1',scopeRef:'scope1',sourceRevision:'r1',kind:'fact'});
+const rendered=()=>({claimRef:'r1',sourceClaimRef:'s1',propositionRef:'p1',scopeRef:'scope1',sourceRevision:'r1',kind:'fact'});
+const packet=()=>({workRef:'causeway/koios-news#4',sourceRevision:'r1',requiredClaimRefs:['s1'],sourceClaims:[source()],renderedClaims:[rendered()]});
+test('complete matched source is structural only',()=>{const r=assay(packet());assert.equal(r.status,'structurally-consistent');assert.equal(r.taskCoverage,1);});
+test('long manuscript omitting required source is incomplete',()=>{const p=packet();p.renderedClaims=[];const r=assay(p);assert.equal(r.status,'task-incomplete');assert.equal(r.taskCoverage,0);});
+test('commitment may not become a fact',()=>{const p=packet();p.sourceClaims[0].kind='commitment';p.sourceClaims[0].horizonRef='2027';p.sourceClaims[0].conditionsRef='promise';const r=assay(p);assert.equal(r.status,'structural-mismatch');assert.equal(r.findings[0].status,'changed-proposition-or-scope');});
+test('same proposition but changed evidential act is rejected',()=>{const p=packet();p.renderedClaims[0].kind='scenario';assert.equal(assay(p).findings[0].status,'changed-evidential-act');});
+test('forecast missing horizon cannot be interpreted',()=>{const p=packet();p.sourceClaims[0].kind='forecast';assert.throws(()=>assay(p),/temporal/);});
+test('fabricated source claim cannot establish lineage',()=>{const p=packet();p.renderedClaims[0].sourceClaimRef='not-present';assert.equal(assay(p).findings[0].status,'no-declared-source');});
+test('duplicate rendered identities fail closed',()=>{const p=packet();p.renderedClaims.push(rendered());assert.throws(()=>assay(p),/duplicate rendered/);});
+test('source revision drift fails closed',()=>{const p=packet();p.renderedClaims[0].sourceRevision='r2';assert.equal(assay(p).taskCoverage,0);});
+test('empty reporting requirement abstains from task coverage',()=>{const p=packet();p.requiredClaimRefs=[];assert.equal(assay(p).status,'task-unassessable');assert.equal(assay(p).taskCoverage,null);});
