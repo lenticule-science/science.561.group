@@ -25,8 +25,11 @@ export function validateEvidence(d){
   if(c.track==="native_host_infection"&&c.status!=="unresolved"&&!sourceKinds.includes("primary_native_host_diagnosis"))problems.push("native infection lacks direct diagnosis: "+c.id);
   if(c.track==="retail_observations"&&c.status==="documented"&&!sourceKinds.includes("primary_field_observation"))problems.push("reposted retail report promoted to direct observation: "+c.id);
  }
+ if(d?.release_gates?.current_us_violation_confirmed===true)problems.push("dataset cannot independently certify a public violation");
  if(d?.release_gates?.current_us_violation_confirmed!==false&&!isString(d?.release_gates?.official_violation_determination_ref))problems.push("public violation allegation has no official determination");
+ if(d?.release_gates?.native_infection_confirmed===true)problems.push("dataset cannot independently certify native infection");
  if(d?.release_gates?.native_infection_confirmed!==false&&!isString(d?.release_gates?.primary_native_diagnosis_ref))problems.push("native outbreak allegation has no direct diagnosis");
+ if(d?.release_gates?.scholarly_accepted===true)problems.push("dataset cannot grant scientific acceptance");
  if(d?.release_gates?.scholarly_accepted!==false&&!isString(d?.release_gates?.independent_science_acceptance_ref))problems.push("scientific acceptance has no independent receipt");
  return problems;
 }
