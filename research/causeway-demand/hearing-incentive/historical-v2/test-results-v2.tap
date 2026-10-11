@@ -1,0 +1,88 @@
+TAP version 13
+# Subtest: two contradictory upstream rank assignments both pass the exact Causeway presentation gate
+ok 1 - two contradictory upstream rank assignments both pass the exact Causeway presentation gate
+  ---
+  duration_ms: 1.684774
+  type: 'test'
+  ...
+# Subtest: paired comparison detects rank/default change given hypothetical independently authenticated frozen evidence
+ok 2 - paired comparison detects rank/default change given hypothetical independently authenticated frozen evidence
+  ---
+  duration_ms: 7.97602
+  type: 'test'
+  ...
+# Subtest: with no independent verifier, demonstration remains unassessable
+ok 3 - with no independent verifier, demonstration remains unassessable
+  ---
+  duration_ms: 0.197868
+  type: 'test'
+  ...
+# Subtest: commissions changing alone do not force a changed recommendation
+ok 4 - commissions changing alone do not force a changed recommendation
+  ---
+  duration_ms: 8.749854
+  type: 'test'
+  ...
+# Subtest: swapped source ranks remain a violation even if every local rank check passes
+ok 5 - swapped source ranks remain a violation even if every local rank check passes
+  ---
+  duration_ms: 1.074477
+  type: 'test'
+  ...
+# Subtest: suppressing otherwise eligible options under payout perturbation is detected
+ok 6 - suppressing otherwise eligible options under payout perturbation is detected
+  ---
+  duration_ms: 0.281924
+  type: 'test'
+  ...
+# Subtest: changed consumer price or suitability record is not misdiagnosed as incentive bias
+ok 7 - changed consumer price or suitability record is not misdiagnosed as incentive bias
+  ---
+  duration_ms: 0.200041
+  type: 'test'
+  ...
+# Subtest: unverified evidence never supports invariant or violated findings
+ok 8 - unverified evidence never supports invariant or violated findings
+  ---
+  duration_ms: 0.276657
+  type: 'test'
+  ...
+# Subtest: zero contrast and crossed case identities are unassessable
+ok 9 - zero contrast and crossed case identities are unassessable
+  ---
+  duration_ms: 0.152069
+  type: 'test'
+  ...
+# Subtest: changed option class/source evidence is not a payout-only comparison
+ok 10 - changed option class/source evidence is not a payout-only comparison
+  ---
+  duration_ms: 0.523628
+  type: 'test'
+  ...
+# Subtest: malformed or duplicate option/payout identities fail closed
+ok 11 - malformed or duplicate option/payout identities fail closed
+  ---
+  duration_ms: 0.423157
+  type: 'test'
+  ...
+# Subtest: permutation of presented option order does not change assessment
+ok 12 - permutation of presented option order does not change assessment
+  ---
+  duration_ms: 0.381384
+  type: 'test'
+  ...
+# Subtest: remuneration-only presentation-order drift is not called invariant
+ok 13 - remuneration-only presentation-order drift is not called invariant
+  ---
+  duration_ms: 0.46523
+  type: 'test'
+  ...
+1..13
+# tests 13
+# suites 0
+# pass 13
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 68.67738
