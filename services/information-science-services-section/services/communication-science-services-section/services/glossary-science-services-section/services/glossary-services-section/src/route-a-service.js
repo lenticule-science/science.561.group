@@ -1,0 +1,4 @@
+#!/usr/bin/env node
+import { spawnSync } from "node:child_process"; import { dirname, join } from "node:path"; import { fileURLToPath } from "node:url";
+const service=process.argv[2]; if(process.env.EMSENN_SECTION_CONTRACT!=="communicating-services-section-contracts-descendants"||!service?.startsWith("communicating-services-section/glossary-services-section/term-services/")){process.stderr.write("refused: glossary services require the communicating-services contract\n");process.exit(1)}
+const target=join(dirname(fileURLToPath(import.meta.url)),"../services/term-services/src/route-a-service.js"); const r=spawnSync(process.execPath,[target,service,...process.argv.slice(3)],{stdio:"inherit",env:{...process.env,EMSENN_SUBSECTION_CONTRACT:"glossary-services-section-contracts-term-services"}});process.exit(r.status??1);
