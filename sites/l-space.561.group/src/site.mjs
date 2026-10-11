@@ -13,7 +13,7 @@
 import { execFileSync } from 'node:child_process';
 import { readFileSync } from 'node:fs';
 import { timingSafeEqual } from 'node:crypto';
-import { basename, dirname, join, relative, sep } from 'node:path';
+import { join, relative, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { SIGN_IN_PATH, createWebAdmissionApplication, defaultPublicRoute } from '@red-cup-engineering/computer-web-server/admission/application';
 import { createPrincipalRegistry } from '@red-cup-engineering/computer-web-server/admission/principals';
@@ -30,7 +30,6 @@ import { sha256Hex } from "@red-cup-engineering/cryptographic-computer-data-engi
 import { createImmutableContentCustody } from '@red-cup-engineering/immutable-content-custody-service';
 import { createFileStore, createPathContent } from '@red-cup-engineering/immutable-content-custody-service/file-store';
 import { niResource } from '@red-cup-engineering/http-services-section/ni';
-import { s3Resource } from '@red-cup-engineering/http-services-section/s3';
 
 /** The 561 Group's root, against which a garden's section path (and so its glossary's concept IRIs) is named. */
 export const GROUP_ROOT = fileURLToPath(new URL('../../../../../', import.meta.url));
@@ -39,7 +38,8 @@ export const GROUP_ROOT = fileURLToPath(new URL('../../../../../', import.meta.u
 export const SCIENCE_ROOT = fileURLToPath(new URL('../../../', import.meta.url));
 
 /** Path segments that are custody, triage, private, or working strata, never rooms. */
-export const EXCLUDED_SEGMENTS = Object.freeze(['legacy', 'triage', 'private', 'dev', 'test', 'fixtures', 'dist', 'sites', 'lib']);
+import { EXCLUDED_SEGMENTS } from './archive-policy.mjs';
+export { EXCLUDED_SEGMENTS } from './archive-policy.mjs';
 
 /** Frontmatter fields whose values form concept halls. */
 export const ATTRIBUTE_FIELDS = Object.freeze([
@@ -138,16 +138,8 @@ export function mediaContent(environment = process.env) {
   return root === undefined ? undefined : createImmutableContentCustody({ store: createFileStore(root), maximumBytes: 1024 ** 3 });
 }
 
-/** The author's view of the Gemini notebooks as S3 buckets, signed in with this machine's notebooklm login on first use. */
-export const BUCKETS_PATH = '/buckets';
-export function notebookBuckets() {
-  let opened;
-  const buckets = () => (opened ??= import('@red-cup-engineering/gemini-notebook-services-section/gemini-notebook-buckets')
-    .then(({ createGeminiNotebookBuckets }) => createGeminiNotebookBuckets())
-    .catch((error) => { opened = undefined; throw error; }));
-  const delegate = (name) => async (...args) => (await buckets())[name](...args);
-  return s3Resource({ listBuckets: delegate('listBuckets'), listObjects: delegate('listObjects'), headObject: delegate('headObject'), getObject: delegate('getObject') }, { mount: BUCKETS_PATH, id: 'gemini-notebook-buckets', title: 'Gemini Notebook' });
-}
+import { BUCKETS_PATH, notebookBuckets } from './notebooks.mjs';
+export { BUCKETS_PATH, notebookBuckets } from './notebooks.mjs';
 const isBucketsRoute = (path) => path === BUCKETS_PATH || path.startsWith(`${BUCKETS_PATH}/`);
 
 /** The routes the MCP and OAuth faces answer for themselves: a bearer token or a sign-in redirect, never the admission gate's 401. */
@@ -184,14 +176,7 @@ export const lSpaceExcludes = (environment = process.env) => setting('LSPACE_EXC
 const lSpaceCatalog = (environment) => ({ ...LSPACE_CATALOG, wing: setting('LSPACE_WING', environment) ?? LSPACE_CATALOG.wing, exclude: lSpaceExcludes(environment) });
 /** Where a garden's root sits in the 561 Group: `services/science-services-section` for the Lenticule Science forest. */
 export const lSpaceSectionPath = (root) => {
-  // The admitted live corpus can reside outside the application release checkout.
-  let group = GROUP_ROOT;
-  if (relative(group, root).startsWith('..')) {
-    group = root;
-    while (basename(group) !== '561-group' && dirname(group) !== group) group = dirname(group);
-  }
-  if (basename(group) !== '561-group') throw new TypeError(`L-Space root ${root} has no 561 Group carrier`);
-  const path = relative(group, root).split(sep).join('/');
+  const path = relative(GROUP_ROOT, root).split(sep).join('/');
   if (path.startsWith('..')) throw new TypeError(`L-Space root ${root} is outside the 561 Group`);
   return path;
 };
@@ -221,7 +206,7 @@ export async function lSpaceApplication(environment = process.env) {
     authorEmail: author.email,
     // GEODE's writes are the author's; its reads are any admitted reader's; /ns/ is public by doctrine.
     // The notebook buckets read the author's own Google account, so they are the author's alone.
-    authorRoute: (path, method) => isBucketsRoute(path) || path.startsWith('/geode/') || (method === 'POST' && (path === '/api/action' || path === '/api/refresh')),
+    authorRoute: (path, method) => isBucketsRoute(path) || (method === 'POST' && (path === '/api/action' || path === '/api/refresh')),
     realm: publicBaseUrl(environment) === undefined ? 'l-space.561.group' : new URL(publicBaseUrl(environment)).host,
     authors: author.subjects,
     publicRoute: lSpacePublicRoute,
@@ -254,7 +239,7 @@ export async function lSpaceApplication(environment = process.env) {
       observations: join(stateDir, 'cairn', 'geode-observations.jsonl'),
       fullText,
     });
-    composed.push(geodeApplication({ workspace, basePath: '/geode' }));
+    composed.push(geodeApplication({ workspace }));
     archive = workspace.archive;
   }
   // The archive's parsed documents persist in the state directory, so a restart reparses only what changed.
@@ -291,11 +276,14 @@ export function mcpApplications({ admission, environment = process.env, archive 
   const base = publicBaseUrl(environment) ?? 'https://l-space.561.group';
   const resource = `${base}/mcp`;
   const grants = setting('LSPACE_OAUTH_STATE', environment) ?? (stateDirectory(environment) === undefined ? undefined : join(stateDirectory(environment), 'oauth'));
+  const grantStoreProfile = setting('OAUTH_GRANT_STORE_PROFILE', environment);
+  const grantStore = grants === undefined ? undefined : createJsonFileGrantStore(grants, { profile: grantStoreProfile });
+  if (grantStoreProfile !== undefined && grantStore?.profile !== grantStoreProfile) throw new TypeError('requested OAuth grant custody profile is unavailable');
   const authorization = createAuthorizationServer({
     issuer: base,
     name: 'L-Space',
     resources: [resource],
-    ...(grants === undefined ? {} : { store: createJsonFileGrantStore(grants) }),
+    ...(grantStore === undefined ? {} : { store: grantStore }),
     authenticate: async (context) => {
       const principal = await admission.identifyContext(context);
       return principal === null ? undefined : { subject: `${principal.provider}:${principal.subjectHash}`, name: principal.label, ...(principal.email === undefined ? {} : { email: principal.email }), author: principal.author === true };
