@@ -8,7 +8,7 @@ Lenticule Science conducts research for the 561 Group. Red Cup Engineering turns
 
 Lenticule Science uses Plain Technical General American English (PTGAE) for technical prose. State the proposition first. Encode uncertainty as a precise claim status when it changes meaning, action, safety, or evidence.
 
-The current PTGAE standard is in `docs/plain-technical-general-american-english.md`.
+The existing PTGAE writing standard is in `docs/plain-technical-general-american-english.md`. The new [PlainEng/PTGAE science research section](services/information-science-services-section/services/language-science-services-section/services/english-science-services-section/services/ptgae-science-services-section/README.md) develops its scientific basis and evidence with Red Cup Engineering, without silently replacing the current standard.
 
 - Run `node tools/ptgae-lint.mjs FILE [...]` to lint specific files.
 - Run `node tools/ptgae-corpus-scan.mjs PATH [...]` to scan a text corpus.
