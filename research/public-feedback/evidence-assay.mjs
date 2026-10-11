@@ -11,8 +11,8 @@ const REF = /^(?:[\w.-]+\/[\w.-]+#\d+|ni:\/\/\/sha-256;[A-Za-z0-9_-]+)$/;
 function assert(condition, message) { if (!condition) throw new TypeError(message); }
 function nonempty(value) { return typeof value === 'string' && value.trim().length > 0; }
 // Coesite and Science must agree on which observations name possible instants.
-// Date.parse alone normalizes impossible Gregorian days and 24:00.
-const INSTANT = /^(\d{4})-(\d{2})-(\d{2})T([01]\d|2[0-3]):([0-5]\d):([0-5]\d)(?:\.(\d+))?(Z|[+-](?:0\d|1[0-4]):[0-5]\d)$/u;
+// Date.parse alone normalizes impossible Gregorian days, 24:00, and excessive fractional digits.
+const INSTANT = /^(\d{4})-(\d{2})-(\d{2})T([01]\d|2[0-3]):([0-5]\d):([0-5]\d)(?:\.(\d{1,9}))?(Z|[+-](?:0\d|1[0-4]):[0-5]\d)$/u;
 function timestamp(value) {
   const m = typeof value === 'string' ? INSTANT.exec(value) : null;
   if (!m) return false;
