@@ -1,0 +1,35 @@
+{
+  "kind": "science.individuation.lumpability-independent-check.v1",
+  "source": "research/group-demand/institutional-individuation-lumpability-cases.json",
+  "source_git_blob_sha": "65d2ec61d6800eed79a6b623816203999480fba0",
+  "method": "Independent block-sum and pairwise total-variation recomputation, not imported from Engineering evaluator",
+  "numerical_tolerance": 1e-10,
+  "cases": [
+    {
+      "id": "exact_nontrivial",
+      "epsilon_tv": 2.7755575615628914e-17,
+      "nontrivial": true,
+      "pass": true
+    },
+    {
+      "id": "one_representative_changed",
+      "epsilon_tv": 0.09999999999999998,
+      "nontrivial": true,
+      "pass": true
+    },
+    {
+      "id": "one_block_degenerate",
+      "epsilon_tv": 5.551115123125783e-17,
+      "nontrivial": false,
+      "pass": true
+    },
+    {
+      "id": "identity_degenerate",
+      "epsilon_tv": 0,
+      "nontrivial": false,
+      "pass": true
+    }
+  ],
+  "row_stochastic_checks": "passed",
+  "scope": "Deterministic synthetic mathematical test only. Not a field observation, deployment test, institutional legitimacy finding or governance decision."
+}
