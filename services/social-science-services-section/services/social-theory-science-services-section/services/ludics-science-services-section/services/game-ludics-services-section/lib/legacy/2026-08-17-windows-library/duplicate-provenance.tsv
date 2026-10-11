@@ -1,0 +1,4 @@
+# Exact-byte duplicate provenance; the first path is the retained canonical payload.
+hash	retained	removed
+d127c4f92c8e269a873e0843e3b36cbaeb0693f56174e16a6458078eec31878d	ludics/archive/multi-user-dungeon/tab/worlds/teraum-docs-bcf/domains/enc/halfling-country.org	ludics/archive/library/terraum/references/places/halfling-country/halfling-country--003022.org
+b1acf2a21e575fd775c517d3bc93d16b5e0d65886358505dc2bceceec65de639	ludics/archive/library/worldbuilding/references/ack/copper-ward/copper-ward--003021.org	ludics/archive/multi-user-dungeon/tab/worlds/teraum-docs-bcf/domains/enc/copper-ward.org

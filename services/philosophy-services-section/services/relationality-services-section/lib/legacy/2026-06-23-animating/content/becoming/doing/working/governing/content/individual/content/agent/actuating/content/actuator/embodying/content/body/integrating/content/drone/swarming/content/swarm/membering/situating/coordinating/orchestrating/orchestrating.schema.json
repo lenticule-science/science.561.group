@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://561.group/swarm-intelligence/articulating/library/aperiodic-articulation-category/library/aperiodic-articulation-cell/library/stable-aperiodic-articulation-cell/orchestrating/orchestrating.schema.json",
+  "title": "Orchestrating (ensemble → orchestration)",
+  "description": "Orchestrating = governing restricted to the orchestration theory: reads an ensemble's governance and yields the orchestration object (centralized dispatch by a single conductor office), or reports the actual non-orchestration theory. Generator of the orchestration object. Variance: restriction. Per docs/ORCHESTRATION-GENEALOGY.md.",
+  "kind": "morphism", "variance": "restriction", "type": "object",
+  "required": ["input","output"], "additionalProperties": false,
+  "properties": {
+    "input": { "type":"object", "required":["ensemble"], "additionalProperties": false, "properties": { "ensemble": { "type":"object" } } },
+    "output": { "$ref": "https://561.group/swarm-intelligence/articulating/library/aperiodic-articulation-category/library/aperiodic-articulation-cell/library/stable-aperiodic-articulation-cell/orchestrating/library/orchestration/orchestration.schema.json" }
+  }
+}

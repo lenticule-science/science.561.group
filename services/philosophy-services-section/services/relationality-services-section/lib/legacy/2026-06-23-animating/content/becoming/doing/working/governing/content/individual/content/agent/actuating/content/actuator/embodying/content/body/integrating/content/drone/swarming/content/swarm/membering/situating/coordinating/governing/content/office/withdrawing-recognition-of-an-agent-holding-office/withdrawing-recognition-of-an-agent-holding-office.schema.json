@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://561.group/swarm-intelligence/agentic-orchestration-platform/office/withdrawing-recognition-of-an-agent-holding-office/withdrawing-recognition-of-an-agent-holding-office.schema.json",
+  "title": "Withdrawing-recognition-of-an-agent-holding-office (positing-regime stance withdrawal; κ = ω)",
+  "description": "Regime: scott-continuous-posit-category (positing morphism, κ = ω). Inverse of recognizing-an-agent-as-holding-office: the recognizer withdraws their prior stance. Per lab/.../leader-of-a-swarm/doing/working/withdrawing-recognition-of-a-character-as-leader-of-a-swarm. Per memory [Active tree is the default workspace]: withdrawal is monotone via the bilattice value (relevance→bottom), not via physical deletion — the prior recognition row is preserved in the trace; a new row records the withdrawal. Operation-kind: mutation (substrate-effect). Act-class: positing.",
+  "kind": "morphism",
+  "domain": "(agent, office, recognizer)",
+  "codomain": "agential-relations-system-row",
+  "variance": "extension",
+  "monotone": true,
+  "type": "object",
+  "required": ["agent", "office", "recognizer", "output", "evidence"],
+  "additionalProperties": false,
+  "properties": {
+    "agent": {
+      "type": "object",
+      "required": ["slug"],
+      "properties": { "slug": { "type": "string", "minLength": 1 } }
+    },
+    "office": {
+      "type": "object",
+      "required": ["slug"],
+      "properties": { "slug": { "type": "string", "minLength": 1 } }
+    },
+    "recognizer": {
+      "type": "object",
+      "required": ["slug"],
+      "properties": { "slug": { "type": "string", "minLength": 1 } }
+    },
+    "at": { "type": "string", "minLength": 1 },
+    "output": {
+      "type": "object",
+      "required": ["fromAgent", "predicate", "toAgent", "value", "regime", "operationKind"],
+      "additionalProperties": false,
+      "properties": {
+        "fromAgent": { "type": "string", "minLength": 1 },
+        "predicate": { "const": "withdraws-recognition-of-holding" },
+        "toAgent": { "type": "string", "minLength": 1 },
+        "office": { "type": "string", "minLength": 1 },
+        "value": { "enum": ["true", "top"] },
+        "regime": { "const": "scott-continuous-posit-category" },
+        "operationKind": { "const": "mutation" },
+        "at": { "type": "string", "minLength": 1 }
+      }
+    },
+    "evidence": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "minItems": 1,
+      "uniqueItems": true
+    }
+  }
+}

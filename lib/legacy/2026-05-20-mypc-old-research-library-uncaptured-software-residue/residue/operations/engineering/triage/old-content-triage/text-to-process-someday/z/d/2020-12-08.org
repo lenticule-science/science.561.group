@@ -1,0 +1,52 @@
+#+title: 2020-12-08
+#+begin_head
+#+ghe_schema: daily-record-0.1.0
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-08 Wed 08:37]
+#+roam_tags: daily-record
+#+end_head
+
+#+begin_summary
+#+name: 2020-12-09-summary
+This is my personal record for [2020-12-09 Wed]. If you are viewing this record outside of its original environment, please be aware it maybe be heavily redacted.
+#+end_summary
+
+#+toc: headlines 2
+* Media Log
+** Music
+*** Tall Paul: "All Kingz"
+    - Source :: https://www.youtube.com/watch?v=flRioXTuGd4
+** Writing
+*** Antillia: Flora and Fauna of the Central Kingdoms
+    :LOGBOOK:
+    - Note taken on [2021-01-03 Sun 16:34] \\
+      The latest from the [[file:../world.org][world]] of [[file:../antillia.org][Antillia]].
+    :END:
+    - https://wanderingbeekeeper.itch.io/antillia4foldland/devlog/202305/2020-12-08-flora-and-fauna-of-the-central-kingdoms
+* News log
+** War over water in Morelos, Mexico, continues
+   :LOGBOOK:
+   - Note taken on [2021-01-03 Sun 16:28] \\
+     From the [[file:../chiapas_support_commitee.org][Chiapas Support Committee]], a look at the [[file:../war.org][war]] for [[file:../water.org][water]] occurring in [[file:../morelos_mexico.org][Morelos, Mexico]].
+   :END:
+   - Source :: https://chiapas-support.org/2020/12/08/the-war-for-water-in-morelos/
+** California water futures begin trade
+   :LOGBOOK:
+   - Note taken on [2021-01-03 Sun 16:36] \\
+     Future [[file:../water.org][water]] availability is now available for trade. The move is seen as useful by lots of [[file:../colonial.org][colonials]] as a means of mitigating the risk of [[file:../water_scarcity.org][water scarcity]], which sounds about as reasonable as [[file:../carbon_credit.org][carbon credits]].
+   :END:
+   - Source :: https://www.bloomberg.com/news/articles/2020-12-06/water-futures-to-start-trading-amid-growing-fears-of-scarcity
+** MMIWG2S is the top "censored" story of 2019/2020
+   :LOGBOOK:
+   - Note taken on [2021-01-03 Sun 16:29] \\
+     According to [[file:../project_censored.org][Project Censored]], [[file:../mmiwg2s.org][#MMIWG2S]] is the most under-reported story of 2019 and 2020.
+   :END:
+   - Source :: https://www.projectcensored.org/1-missing-and-murdered-indigenous-women-and-girls/
+** CDC reports wider racial disparity in COVID-19 deaths
+   :LOGBOOK:
+   - Note taken on [2021-01-03 Sun 16:32] \\
+     The [[file:../cdc.org][CDC]] has released a report outlining that the racial disparity in deaths from [[file:../covid_19.org][COVID-19]] is greater than previously reported. (See [[file:../medical_apartheid.org][medical apartheid]].)
+   :END:
+   - Source :: https://www.theroot.com/cdc-acknowledges-black-and-latino-americans-dying-at-hi-1845816843
+* Supplements

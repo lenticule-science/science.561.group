@@ -1,0 +1,9 @@
+The auto-commit sweep already committed both files as part of a prior sweep. The working tree is clean for these files — my changes are committed.
+
+Done. Created:
+
+1. **`operations/engineering/fars/agentic/tools/storyteller.js`** — State-aware heartbeat that reads plan progress, session error rates, capacity utilization, cost trajectory, and plan staleness. Scores 7 potential signals by urgency and returns top 3 recommendations. Supports `--json` and `--all` flags.
+
+2. **`operations/engineering/fars/agentic/commands/whats-next.md`** — `/whats-next` command that runs the storyteller and presents recommendations.
+
+Current output shows the system correctly identifying: 22 stale plans (100% urgency), 38 ready tasks with 0 running sessions (100% urgency), and high context overhead on cost (30% urgency).

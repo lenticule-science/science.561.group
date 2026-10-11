@@ -1,0 +1,13 @@
+Done. Two files delivered:
+
+**`file-watcher.js`** (169 lines) — CLI entry point with three modes:
+- `--watch`: long-lived process using `fs.watch(recursive)` on `library/` and `operations/command/records/`, 2-second debounce per file, batched flush
+- `--once`: full scan comparing file mtimes against graph mtime, applies patches
+- `--dry-run`: reports changes without writing (combinable with `--watch`)
+
+**`graph-patcher.js`** (160 lines) — Incremental EAVT patch logic:
+- Loads graph, indexes entities by `file-path`
+- Updates: removes old triples for entity, inserts new ones at same eid
+- Adds: assigns next available eid
+- Removes: filters out all triples for deleted entity
+- Falls back to full `generateGraph()` when a changed file introduces attributes not in the current attribute map

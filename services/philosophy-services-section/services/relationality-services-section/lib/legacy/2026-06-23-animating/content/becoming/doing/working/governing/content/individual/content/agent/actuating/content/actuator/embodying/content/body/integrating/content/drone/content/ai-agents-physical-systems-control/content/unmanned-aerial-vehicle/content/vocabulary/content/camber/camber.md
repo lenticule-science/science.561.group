@@ -1,0 +1,38 @@
+---
+title: "Camber"
+date-created: 2026-03-06T00:00:00
+type: term
+aliases:
+  - "Camber"
+  - "camber"
+  - "wing camber"
+  - "airfoil camber"
+authors:
+  - emsenn
+  - claude-opus-4-6
+keywords:
+  - Aerodynamics
+description: "The curvature of an airfoil's mean line, which determines lift at zero angle of attack and shapes the pressure distribution."
+---
+
+Camber is the asymmetry between the upper and lower surfaces of an [airfoil](./airfoil.md), measured as the maximum distance between the mean camber line (the curve equidistant from upper and lower surfaces) and the [chord](./chord.md) line.
+It is expressed as a percentage of chord — a "4% camber" airfoil has a mean line that deviates from the chord by 4% of the chord length at its maximum point.
+
+Cambered airfoils produce [lift](./lift.md) at zero [angle of attack](./angle-of-attack.md).
+This means a cambered wing can cruise in a level attitude while still generating the lift needed for flight, reducing fuselage drag.
+The trade-off is a higher pitching moment — cambered airfoils tend to pitch nose-down — which must be trimmed by a tail surface or reflex at the trailing edge.
+
+**Symmetric airfoils** (zero camber) produce no lift at zero AoA.
+They are used on acrobatic aircraft that must fly equally well inverted, and on some UAV vertical tails and control surfaces.
+
+**Reflex camber** — where the trailing edge curves upward — produces a nose-up pitching moment, enabling tailless and flying-wing configurations to trim without a dedicated horizontal stabilizer.
+This is essential for delta and flying-wing UAV [planforms](../concepts/wing-planform-selection-for-uavs.md) that lack a tail.
+
+At low [Reynolds numbers](./reynolds-number.md) (small UAVs, slow flight), the amount and distribution of camber strongly affects whether the [boundary layer](./boundary-layer.md) transitions smoothly from laminar to turbulent or separates into a drag-inducing bubble.
+Excessive camber at Re < 100,000 can increase drag rather than reduce it.
+
+## Related terms
+
+- [Airfoil](./airfoil.md) — the cross-sectional shape that camber describes
+- [Angle of Attack](./angle-of-attack.md) — the variable that, with camber, determines lift coefficient
+- [Chord](./chord.md) — the reference length against which camber is measured

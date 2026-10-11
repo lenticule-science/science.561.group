@@ -1,0 +1,11 @@
+Done. Written at 107 lines (under the 120 limit).
+
+The text makes one claim: **action is change attributed to an agent**, requiring both causal structure (something changed) and normative structure (someone is responsible). It surveys three layers:
+
+1. **Philosophy of action** — Anscombe (intention under description), Davidson (reasons as causes), Bratman (planning agency)
+2. **Theory of change** — Aristotle (potentiality/actuality, four types of metabole), Whitehead (actual occasions as primary), event calculus
+3. **Formal action theory** — dynamic logic (Harel), situation calculus (McCarthy/Reiter), STRIPS planning (Fikes/Nilsson)
+
+The closing section ties it to the system's own event/actor tracking pattern: events capture causal structure, actor fields capture normative structure. Ten primary sources cited.
+
+Task `research-action-and-change` marked done.

@@ -1,0 +1,64 @@
+{
+  "id": "farstone-orbital-mechanics-research",
+  "name": "The orbital mechanics and rocketry Farstone's spaceflight rests on, researched before it is engineered",
+  "kind": "requirement",
+  "raised-by": "emsenn",
+  "asks": "I want us to start working toward Farstone having a full-on game like Kerbal Space Program in it, but obviously, we want to beat Kerbal Space Program using everything the world has learned between when it was designed and now, and critically, use our own math as much as we can to help us.\n\n---\n\nyou aren't doing this right you're tyring to make a normal 3d physics engine\n\nPLEASE READ MY FIRST PROMPT\n\nTHEN HANDLE UNDISCHARGED DEBTS AND TECH FLAWS REVEALED THROUGH THIS SESSION\n\nTHEN READ THE FIRST PROMPT AGAIN\n\nTHEN ACTUALLY READ THE FUCKING SCIENCE AN DMATH",
+  "met-when": [
+    {
+      "cell": "farstone-orbital-mechanics-research:note",
+      "target": "held",
+      "command": "sh -c 'ls lib/emsenn/services/561-group/services/science-services-section/services/engineering-science-services-section/services/aerospace-engineering-science-services-section/content/text/documents/articles/notes/*/*/*/*orbital-mechanics*.md >/dev/null 2>&1'",
+      "expected-exit": 0
+    },
+    {
+      "cell": "farstone-orbital-mechanics-research:atmosphere-law",
+      "target": "held",
+      "command": "sh -c 'grep -l -i \"drag\" lib/emsenn/services/561-group/services/science-services-section/services/engineering-science-services-section/services/aerospace-engineering-science-services-section/content/text/documents/articles/notes/*/*/*/*atmosphere*.md'",
+      "expected-exit": 0
+    }
+  ],
+  "tier": "major",
+  "x-provenance": {
+    "recorded-by": "Farstone sci-fi wings session (Claude Code, under the orchestrator of 2026-10-10)",
+    "recorded-on": "2026-10-10",
+    "customer": "urn:leader:emsenn",
+    "basis": "The Leader's order is science, then engineering, then operations. The asks are the Leader's own words (leader-utterances lines 1423 and 1451); the conditions are this session's rendering of what the next engineering jobs need from science. Marked for conversion to signed SignCell predication cells (four-valued charge).",
+    "requirements": [
+      {
+        "id": "R1",
+        "says": "The aerospace section shall hold the orbital mechanics and rocketry Farstone's flight uses, naming classical and Group results apart.",
+        "moscow": "must"
+      },
+      {
+        "id": "R3",
+        "says": "The section shall state the atmosphere law (pressure, density, drag, Isp by pressure) the engine will implement, and whether drag is written as a relational dissipative flow.",
+        "moscow": "must"
+      }
+    ],
+    "sources": [
+      {
+        "session": "claude session 0fbf24cb-8855-48f1-9c7e-852e0b4fb748",
+        "at-utc": "2026-10-08T16:44:52",
+        "words": "use our own math as much as we can to help us"
+      },
+      {
+        "session": "claude session 0fbf24cb-8855-48f1-9c7e-852e0b4fb748",
+        "at-utc": "2026-10-08T17:17:47",
+        "words": "you aren't doing this right you're tyring to make a normal 3d physics engine"
+      }
+    ],
+    "serves": [
+      "farstone-orbital-flight-game-beyond-kerbal-space-program",
+      "holofoam-as-physics-simulation-engine",
+      "farstone-ksp-atmosphere-and-drag",
+      "farstone-ksp-planet-rotation"
+    ],
+    "conversion": "pending: signcell predication cell",
+    "owned-elsewhere": "The error of patched conics against n-body gravitation is the astronomy section's (its 2026-10-10 note) and the capabilities requirement's F6; it is not repeated here.",
+    "sign-cell": {
+      "type": "emsenn/schema/requirement",
+      "mark": "ni:///sha-256;B-WtSNRftkQqoinphNGf2GOUaTbgFQS7PXCvSLgwk_w"
+    }
+  }
+}

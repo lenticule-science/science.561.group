@@ -1,0 +1,244 @@
+{
+  "$schema": "../../../../../../../../data/records/schema/literature-measurement.schema.json",
+  "id": "arbitrum-and-solana-specifics",
+  "kind": "literature-measurement",
+  "question": "What do Arbitrum One, Base and Solana offer a pool contract beyond the EVM baseline: Stylus, Timeboost, BoLD, fees, Flashblocks, and Token-2022 extensions, as of 2026-10-08?",
+  "frame": {
+    "population": "Arbitrum One, Base, Solana",
+    "exposure": "chain features and fees",
+    "comparator": "plain EVM contract on a rollup",
+    "outcomes": [
+      "execution model",
+      "fee level",
+      "sequencing and finality features",
+      "token-level interest and privacy features"
+    ]
+  },
+  "notes": [
+    "../../content/text/documents/articles/notes/2026/10/08/2026-10-08-arbitrum-and-solana-specifics.md"
+  ],
+  "sources": [
+    {
+      "item": {
+        "id": "arbitrumdocs2026",
+        "type": "webpage",
+        "title": "docs.arbitrum.io: Stylus gentle introduction, Timeboost, BoLD, Arbitrum vs Ethereum comparison",
+        "author": [
+          {
+            "literal": "Arbitrum Docs"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "URL": "https://docs.arbitrum.io/stylus/gentle-introduction"
+      },
+      "design": "protocol-documentation",
+      "readFrom": "first-party-docs",
+      "observedAt": "2026-10-08",
+      "findings": [
+        {
+          "finding": "Stylus adds a WASM virtual machine beside the EVM (Rust first-class, also C and C++); Solidity and Stylus contracts call each other; cost advantage is in compute and memory, \"Storage operations cost roughly the same as in the EVM\"; contracts must be activated and reactivated each 365 days or after an upgrade; \"The Arbitrum Security Council has temporarily paused new Stylus contract activations on Arbitrum One and Arbitrum Nova.\"",
+          "exactSourceLanguage": "\"Ink works like gas but is thousands of times smaller.\""
+        },
+        {
+          "finding": "Timeboost: sealed-bid second-price auction for an express lane per round, round 60 seconds, non-express transactions delayed 200 ms by default, default reserve 0.001 WETH, proceeds to a beneficiary the chain owner designates; live on Arbitrum One and Nova.",
+          "exactSourceLanguage": "\"the default duration of a round is 60 seconds.\"; \"default 200-millisecond artificial delay\""
+        },
+        {
+          "finding": "BoLD: permissionless validation, anyone can open challenges, dispute window 6.4 days plus a 2-day Security Council grace period as stated, live on Arbitrum One, Nova and Sepolia.",
+          "exactSourceLanguage": "\"allows anyone to participate in validating chain state (including challenges).\""
+        },
+        {
+          "finding": "Fees are an L2 execution component plus a component covering posting calldata to the parent chain.",
+          "exactSourceLanguage": "\"Arbitrum transactions must also pay a fee component to cover the cost of posting their calldata to the parent chain\""
+        }
+      ],
+      "notFound": [
+        "AnyTrust and data availability committee text (not fetched)",
+        "BoLD bond amounts (page points elsewhere)",
+        "ArbOS description on the comparison page"
+      ]
+    },
+    {
+      "item": {
+        "id": "arbitrumonchain2026",
+        "type": "dataset",
+        "title": "cast reads on Arbitrum One precompiles ArbSys 0x64 and ArbGasInfo 0x6c (2026-10-08)",
+        "author": [
+          {
+            "literal": "Arbitrum On Chain"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "URL": "https://arbiscan.io/address/0x0000000000000000000000000000000000000064"
+      },
+      "design": "on-chain-measurement",
+      "readFrom": "on-chain-read",
+      "observedAt": "2026-10-08",
+      "findings": [
+        {
+          "finding": "Block 512,999,361; arbOSVersion() returns 116; getMinimumGasPrice() 20,000,000 wei (0.02 gwei); eth gas price 20,474,000 wei; getL1BaseFeeEstimate() 5,483,794 wei.",
+          "exactSourceLanguage": "cast call 0x...64 arbOSVersion()(uint256)=116; 0x...6C getMinimumGasPrice()(uint256)=20000000"
+        }
+      ]
+    },
+    {
+      "item": {
+        "id": "basedocs2026",
+        "type": "webpage",
+        "title": "docs.base.org Flashblocks overview and Base Account page",
+        "author": [
+          {
+            "literal": "Base Docs"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "URL": "https://docs.base.org/base-chain/flashblocks/overview"
+      },
+      "design": "protocol-documentation",
+      "readFrom": "first-party-docs",
+      "observedAt": "2026-10-08",
+      "findings": [
+        {
+          "finding": "Flashblocks: preconfirmations every 200 ms inside a 2 s block, built by the sequencer's base-builder; ordering is locked once a Flashblock is built and broadcast. The page does not say whether they are live on mainnet or how an app reads them over RPC.",
+          "exactSourceLanguage": "Flashblocks \"reduce effective block times from 2 seconds to 200 milliseconds through preconfirmations.\""
+        },
+        {
+          "finding": "The Base Account documentation has moved to the Coinbase Developer Platform and the SDK is now called the Coinbase Wallet SDK.",
+          "exactSourceLanguage": "\"Base Account SDK and Base MCP documentation has moved from Base docs to Coinbase Developer Platform.\""
+        }
+      ],
+      "notFound": [
+        "Flashblocks mainnet status",
+        "Base Account feature list (moved)"
+      ]
+    },
+    {
+      "item": {
+        "id": "baseonchain2026",
+        "type": "dataset",
+        "title": "cast reads on Base mainnet (chain id 8453, 2026-10-08)",
+        "author": [
+          {
+            "literal": "Base On Chain"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "URL": "https://mainnet.base.org"
+      },
+      "design": "on-chain-measurement",
+      "readFrom": "on-chain-read",
+      "observedAt": "2026-10-08",
+      "findings": [
+        {
+          "finding": "Chain id 8453; eth_gasPrice 6,000,000 wei (0.006 gwei).",
+          "exactSourceLanguage": "cast gas-price --rpc-url https://mainnet.base.org = 6000000"
+        }
+      ]
+    },
+    {
+      "item": {
+        "id": "solanatoken2026",
+        "type": "webpage",
+        "title": "solana-program.com Token-2022 docs and extensions guide",
+        "author": [
+          {
+            "literal": "Solana Token Docs"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "URL": "https://www.solana-program.com/docs/token-2022/extensions"
+      },
+      "design": "protocol-documentation",
+      "readFrom": "first-party-docs",
+      "observedAt": "2026-10-08",
+      "findings": [
+        {
+          "finding": "Mint extensions: confidential transfers, transfer fees, interest-bearing tokens, non-transferable tokens, permanent delegate, transfer hook; account extension: default account state; extensions are opt-in at mint creation and combinable.",
+          "exactSourceLanguage": "\"it's possible to create a mint with only transfer fees, only interest-bearing tokens, both, or neither!\""
+        },
+        {
+          "finding": "Interest-bearing is cosmetic: balances do not change, the displayed amount adds continuously compounded interest by network timestamp, and the rate authority can change the rate at any time.",
+          "exactSourceLanguage": "\"No new tokens are ever created, the UI amount returns the amount of tokens plus all interest the tokens have accumulated.\""
+        },
+        {
+          "finding": "Permanent delegate has unlimited privileges over any account of the mint (burn or transfer any amount) and does not work on confidential balances; transfer hook runs after other transfer logic and is skipped for self-transfers.",
+          "exactSourceLanguage": "\"This authority has unlimited delegate privileges over any account for that mint\""
+        }
+      ],
+      "notFound": [
+        "confidential transfer limits and ZK program status (extension guide links to a separate page)"
+      ]
+    },
+    {
+      "item": {
+        "id": "solanarpc2026",
+        "type": "dataset",
+        "title": "api.mainnet-beta.solana.com getAccountInfo and getSlot (2026-10-08)",
+        "author": [
+          {
+            "literal": "Solana RPC"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "URL": "https://api.mainnet-beta.solana.com"
+      },
+      "design": "on-chain-measurement",
+      "readFrom": "on-chain-read",
+      "observedAt": "2026-10-08",
+      "findings": [
+        {
+          "finding": "Token-2022 program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb is an executable account owned by the upgradeable BPF loader; slot 454,660,731; RPC apiVersion 4.3.0.",
+          "exactSourceLanguage": "getAccountInfo executable true, owner BPFLoaderUpgradeab1e11111111111111111111111"
+        }
+      ]
+    }
+  ],
+  "searches": [
+    {
+      "register": "other",
+      "variables": {
+        "q": "Base Account feature list"
+      },
+      "observedAt": "2026-10-08",
+      "count": 1,
+      "included": [],
+      "reading": "The Base docs page for Base Account contained only a notice that the documentation moved to the Coinbase Developer Platform; features were not read."
+    }
+  ]
+}

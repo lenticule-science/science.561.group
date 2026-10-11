@@ -1,0 +1,314 @@
+{
+  "$schema": "../../../../../../../../data/records/schema/literature-measurement.schema.json",
+  "id": "tax-of-cooperative-yield-routing",
+  "kind": "literature-measurement",
+  "question": "What do Subchapter T, the entity classification regulation, the staking-reward ruling, the assignment-of-income cases and Public Law 119-5 establish about the tax treatment of member-directed yield, patronage dividends and DeFi broker reporting, as of 2026-10-08?",
+  "frame": {
+    "population": "a US cooperative pool whose members direct protocol yield to it and receive patronage dividends",
+    "exposure": "26 U.S.C. 1381, 1382, 1388; 26 CFR 301.7701-3; Rev. Rul. 2023-14; Lucas v. Earl; Helvering v. Horst; Pub. L. 119-5",
+    "comparator": "a member who keeps the yield",
+    "outcomes": [
+      "who is taxed on directed yield",
+      "conditions for a patronage dividend deduction",
+      "entity classification path to Subchapter T",
+      "timing of staking income",
+      "DeFi broker reporting"
+    ]
+  },
+  "notes": [
+    "../../content/text/documents/articles/notes/2026/10/08/2026-10-08-tax-of-cooperative-yield-routing.md"
+  ],
+  "sources": [
+    {
+      "item": {
+        "id": "irc1381",
+        "type": "legislation",
+        "title": "26 U.S.C. 1381, Organizations to which Subchapter T part applies",
+        "author": [
+          {
+            "literal": "Subchapter T Scope"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2017
+            ]
+          ]
+        },
+        "URL": "https://www.law.cornell.edu/uscode/text/26/1381"
+      },
+      "design": "statute",
+      "country": [
+        "US"
+      ],
+      "findings": [
+        {
+          "finding": "Part I of Subchapter T applies to farmers' cooperatives exempt under Section 521 and to any corporation operating on a cooperative basis, other than exempt organizations, savings institutions, insurance companies and rural electric or telephone providers.",
+          "exactSourceLanguage": "(a) In generalThis part shall apply to— (1) any organization exempt from tax under section 521 (relating to exemption of farmers’ cooperatives from tax), and (2) any corporation operating on a cooperative basis other than an organization— (A) which is exempt from tax under this chapter, (B) which is subject to the provisions of— (i) part II of subchapter H (relating to mutual savings banks, etc.), or (ii) subchapter L (relating to insurance companies), or (C) which is engaged in furnishing electric energy, or providing telephone service, to persons in rural areas."
+        }
+      ],
+      "readFrom": "legal-text",
+      "observedAt": "2026-10-08"
+    },
+    {
+      "item": {
+        "id": "irc1382",
+        "type": "legislation",
+        "title": "26 U.S.C. 1382, Taxable income of cooperatives",
+        "author": [
+          {
+            "literal": "Subchapter T Taxable Income"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "URL": "https://www.law.cornell.edu/uscode/text/26/1382"
+      },
+      "design": "statute",
+      "country": [
+        "US"
+      ],
+      "findings": [
+        {
+          "finding": "In determining a cooperative's taxable income, patronage dividends paid in money, qualified written notices of allocation or other property with respect to patronage of the taxable year are not taken into account (they are deducted).",
+          "exactSourceLanguage": "(b) Patronage dividends and per-unit retain allocationsIn determining the taxable income of an organization to which this part applies, there shall not be taken into account amounts paid during the payment period for the taxable year— (1) as patronage dividends (as defined in section 1388(a)), to the extent paid in money, qualified written notices of allocation (as defined in section 1388(c)), or other property (except nonqualified written notices of allocation (as defined in section 1388(d))) with respect to patronage occurring during such taxable year;"
+        }
+      ],
+      "readFrom": "legal-text",
+      "observedAt": "2026-10-08"
+    },
+    {
+      "item": {
+        "id": "irc1388",
+        "type": "legislation",
+        "title": "26 U.S.C. 1388, Definitions; patronage dividend",
+        "author": [
+          {
+            "literal": "Subchapter T Definitions"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "URL": "https://www.law.cornell.edu/uscode/text/26/1388"
+      },
+      "design": "statute",
+      "country": [
+        "US"
+      ],
+      "findings": [
+        {
+          "finding": "A patronage dividend is an amount paid to a patron on the basis of quantity or value of business done with the patron, under an obligation that existed before the organization received the amount, determined by reference to net earnings from business done with or for patrons.",
+          "exactSourceLanguage": "(a) Patronage dividendFor purposes of this subchapter, the term “patronage dividend” means an amount paid to a patron by an organization to which part I of this subchapter applies— (1) on the basis of quantity or value of business done with or for such patron, (2) under an obligation of such organization to pay such amount, which obligation existed before the organization received the amount so paid, and (3) which is determined by reference to the net earnings of the organization from business done with or for its patrons."
+        },
+        {
+          "finding": "A patronage dividend excludes amounts out of earnings other than from business with patrons, or out of earnings from business with other patrons to whom smaller amounts are paid for substantially identical transactions.",
+          "exactSourceLanguage": "Such term does not include any amount paid to a patron to the extent that (A) such amount is out of earnings other than from business done with or for patrons, or (B) such amount is out of earnings from business done with or for other patrons to whom no amounts are paid, or to whom smaller amounts are paid, with respect to substantially identical transactions."
+        },
+        {
+          "finding": "A qualified written notice of allocation is redeemable in cash at stated amount for at least 90 days or consented to by the distributee, and is excluded from the term unless 20 percent or more of the patronage dividend is paid in money or by qualified check.",
+          "exactSourceLanguage": "(1) DefinedFor purposes of this subchapter, the term “qualified written notice of allocation” means— (A) a written notice of allocation which may be redeemed in cash at its stated dollar amount at any time within a period beginning on the date such written notice of allocation is paid and ending not earlier than 90 days from such date, but only if the distributee receives written notice of the right of redemption at the time he receives such written notice of allocation; and (B) a written notice of allocation which the distributee has consented, in the manner provided in paragraph (2), to take into account at its stated dollar amount as provided in section 1385(a). Such term does not include any written notice of allocation which is paid as part of a patronage dividend or as part of a payment described in section 1382(c)(2)(A), unless 20 percent or more of the amount of such patronage dividend, or such payment, is paid in money or by qualified check."
+        }
+      ],
+      "readFrom": "legal-text",
+      "observedAt": "2026-10-08"
+    },
+    {
+      "item": {
+        "id": "treasreg3017701",
+        "type": "legislation",
+        "title": "26 CFR 301.7701-3, Classification of certain business entities",
+        "author": [
+          {
+            "literal": "Entity Classification Rule"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "URL": "https://www.law.cornell.edu/cfr/text/26/301.7701-3"
+      },
+      "design": "statute",
+      "country": [
+        "US"
+      ],
+      "findings": [
+        {
+          "finding": "An eligible entity with at least two members can elect to be classified as an association (a corporation under 301.7701-2(b)(2)) or a partnership, by filing Form 8832.",
+          "exactSourceLanguage": "An eligible entity with at least two members can elect to be classified as either an association (and thus a corporation under § 301.7701-2(b)(2)) or a partnership,"
+        }
+      ],
+      "readFrom": "legal-text",
+      "observedAt": "2026-10-08",
+      "notFound": [
+        "Whether an LCA is an \"eligible entity\" or a per se corporation under 301.7701-2(b) was not read; the classification of a Colorado LCA is not stated in the sources read."
+      ]
+    },
+    {
+      "item": {
+        "id": "revrul202314",
+        "type": "report",
+        "title": "Revenue Ruling 2023-14 (staking rewards)",
+        "author": [
+          {
+            "literal": "Staking Revenue Ruling"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2023
+            ]
+          ]
+        },
+        "URL": "https://www.irs.gov/pub/irs-drop/rr-23-14.pdf"
+      },
+      "design": "regulatory-guidance",
+      "country": [
+        "US"
+      ],
+      "findings": [
+        {
+          "finding": "A cash-method taxpayer who stakes proof-of-stake cryptocurrency and receives rewards includes the fair market value in gross income in the year the taxpayer gains dominion and control over them.",
+          "exactSourceLanguage": "If a cash-method taxpayer stakes cryptocurrency native to a proof-of-stake blockchain and receives additional units of cryptocurrency as rewards when validation occurs, the fair market value of the validation rewards received is included in the taxpayer's gross income in the taxable year in which the taxpayer gains dominion and control over the validation rewards."
+        }
+      ],
+      "readFrom": "full-text",
+      "observedAt": "2026-10-08",
+      "notFound": [
+        "Treatment of yield earned in a lending vault or pooled lending protocol; the ruling addresses validation rewards only."
+      ]
+    },
+    {
+      "item": {
+        "id": "lucasearl1930",
+        "type": "legal_case",
+        "title": "Lucas v. Earl, 281 U.S. 111 (1930)",
+        "author": [
+          {
+            "literal": "Lucas Opinion"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              1930
+            ]
+          ]
+        },
+        "URL": "https://www.law.cornell.edu/supremecourt/text/281/111"
+      },
+      "design": "court-decision",
+      "country": [
+        "US"
+      ],
+      "findings": [
+        {
+          "finding": "Income is taxed to the person who earned it despite anticipatory arrangements: the fruits cannot be attributed to a different tree from that on which they grew.",
+          "exactSourceLanguage": "There is no doubt that the statute could tax salaries to those who earned them and provide that the tax could not be escaped by anticipatory arrangements and contracts however skilfully devised to prevent the salary when paid from vesting even for a second in the man who earned it. That seems to us the import of the statute before us and we think that no distinction can be taken according to the motives leading to the arrangement by which the fruits are attributed to a different tree from that on which they grew."
+        }
+      ],
+      "readFrom": "full-text",
+      "observedAt": "2026-10-08"
+    },
+    {
+      "item": {
+        "id": "helveringhorst1940",
+        "type": "legal_case",
+        "title": "Helvering v. Horst, 311 U.S. 112 (1940)",
+        "author": [
+          {
+            "literal": "Horst Opinion"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              1940
+            ]
+          ]
+        },
+        "URL": "https://www.law.cornell.edu/supremecourt/text/311/112"
+      },
+      "design": "court-decision",
+      "country": [
+        "US"
+      ],
+      "findings": [
+        {
+          "finding": "The power to dispose of income is the equivalent of ownership of it; exercising it to procure payment to another is enjoyment and realization of the income by the person who exercises it.",
+          "exactSourceLanguage": "The power to dispose of income is the equivalent of ownership of it. The exercise of that power to procure the payment of income to another is the enjoyment and hence the realization of the income by him who exercises it."
+        }
+      ],
+      "readFrom": "full-text",
+      "observedAt": "2026-10-08"
+    },
+    {
+      "item": {
+        "id": "publiclaw1195",
+        "type": "dataset",
+        "title": "Public Law 119-5 (H.J. Res. 25), congressional disapproval of IRS rule \"Gross Proceeds Reporting by Brokers That Regularly Provide Services Effectuating Digital Asset Sales\" (Congress.gov API)",
+        "author": [
+          {
+            "literal": "DeFi Broker Disapproval"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              4,
+              10
+            ]
+          ]
+        },
+        "URL": "https://api.congress.gov/v3/bill/119/hjres/25"
+      },
+      "design": "statute",
+      "country": [
+        "US"
+      ],
+      "findings": [
+        {
+          "finding": "H.J. Res. 25 became Public Law 119-5 on April 10, 2025, disapproving the IRS rule on broker reporting that reached DeFi brokers.",
+          "exactSourceLanguage": "Became Public Law No: 119-5."
+        },
+        {
+          "finding": "The title of the disapproved rule.",
+          "exactSourceLanguage": "Providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Internal Revenue Service relating to \"Gross Proceeds Reporting by Brokers That Regularly Provide Services Effectuating Digital Asset Sales\"."
+        }
+      ],
+      "readFrom": "api-read",
+      "observedAt": "2026-10-08",
+      "notFound": [
+        "The text of the disapproved rule was not read; that it reached DeFi brokers is not shown by the API record read."
+      ]
+    }
+  ],
+  "searches": [
+    {
+      "register": "web",
+      "variables": {
+        "query": "tax treatment of directing staking or vault yield to a cooperative; charitable donation of yield; Subchapter T LCA"
+      },
+      "observedAt": "2026-10-08",
+      "count": 0,
+      "included": [],
+      "reading": "No IRS ruling, notice or case was located in this session on a member directing yield from a lending vault to a cooperative, or on whether an LCA is taxed as a Subchapter T corporation. The sources read establish the statutory test (1388(a) obligation before receipt, business-with-patrons earnings, no unequal treatment of identical transactions), the entity classification election, the assignment-of-income principle, and the staking-reward timing ruling. The IRS staking safe-harbor revenue procedure for exchange-traded products was not read."
+    }
+  ]
+}

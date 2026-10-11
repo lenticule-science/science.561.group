@@ -1,0 +1,10 @@
+Done. Four new terms created in `library/domains/science/domains/relationality/terms/`:
+
+| File | Defines |
+|------|---------|
+| `saturation-nucleus.md` | σ_t — backward closure, meaning-settlement |
+| `transfer-nucleus.md` | Δ_t — forward closure, execution-settlement |
+| `dual-nucleus.md` | The (σ_t, Δ_t) pair, non-adjointness, shadow classes |
+| `fiber-nuclear-quartet.md` | The four sub-algebras (H_t, Fix(σ), Fix(Δ), H*_t) at each history |
+
+No work-domain terms were moved — they're genuinely about work, grounded in the nuclear formalism. Updated `gap.md` to cross-link the new relationality terms and updated the relationality domain `_index.md` to mention the nuclear structure.

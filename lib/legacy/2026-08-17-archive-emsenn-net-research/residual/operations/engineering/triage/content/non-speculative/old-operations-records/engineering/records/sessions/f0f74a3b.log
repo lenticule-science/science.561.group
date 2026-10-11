@@ -1,0 +1,16 @@
+Committed as `5056c56f2`.
+
+**What was built:**
+
+- **`operations/engineering/fars/agentic/hooks/reflect-on-failure.js`** — PostToolUse async hook that:
+  - Detects failures via regex patterns (BLOCKED, Error, failed, denied, timed out, etc.) in tool output
+  - Skips noise tools (Read, Glob, Grep, ToolSearch, TodoWrite) and subagent calls
+  - Finds instincts whose triggers match the failure context using token similarity (threshold 0.25)
+  - Generates reflections following the Reflexion paper pattern: "Tool X failed: [context]. Verify preconditions and tool input before retry."
+  - Appends reflections to instinct frontmatter with a sliding window of 3 most recent
+  - Deduplicates reflections (0.7 similarity threshold)
+  - Records events to `events.jsonl`
+  - Uses dual entry point (`run()` export + stdin fallback)
+  - Always exits 0, even on errors
+
+- **Registered** in `settings.json` as `PostToolUse` async hook with 5s timeout, `standard,strict` profiles

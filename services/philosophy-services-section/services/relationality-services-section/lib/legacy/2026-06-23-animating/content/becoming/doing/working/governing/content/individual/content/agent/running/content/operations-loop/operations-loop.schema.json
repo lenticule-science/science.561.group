@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://561.group/swarm-intelligence/agentic-orchestration-platform/operations-loop/operations-loop.schema.json",
+  "title": "Operations-loop (the AOP record P = (R, A, D, H, F); platform-level stable-aperiodic-articulation-cell host)",
+  "description": "Regime: stable-aperiodic-articulation-cell (platform-level host that composes morphisms across all four regimes; the platform's identity is articulation-committed). Per lab/.../predicated-agentic-orchestration-platform/aop-record/aop-record.md the platform is formally P = (R, A, D, H, F) where R is the predicated computer substrate (spans all four regimes internally), A is the agential-relations-system (stable-aperiodic-articulation-cell), D is the dispatch table (scott-continuous-posit-category), H is the heartbeat scheduler (platform-level), F is the federation graph (stable-aperiodic-articulation-cell). Per theory-of-predicated-agentic-orchestration-platform.md: 'The platform runs heartbeat ticks until settling, at which point it either awaits external input (a new observation) or generates the next heartbeat.' The five components are not loosely coupled: A is itself a section of R's predication-graph store; D is a sub-graph of the same store and structurally a sub-rule-system of R's closure-rule system; H is itself an entity in the store with its own scheduling-policy predications.",
+  "kind": "object",
+  "type": "object",
+  "required": ["slug", "substrate", "agentialRelationsSystem", "dispatchTable", "heartbeat", "federationGraph", "evidence"],
+  "additionalProperties": false,
+  "properties": {
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$"
+    },
+    "substrate": { "type": "string", "minLength": 1 },
+    "agentialRelationsSystem": { "type": "string", "minLength": 1 },
+    "dispatchTable": { "type": "string", "minLength": 1 },
+    "heartbeat": { "type": "string", "minLength": 1 },
+    "federationGraph": { "type": "string", "minLength": 1 },
+    "evidence": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "minItems": 1,
+      "uniqueItems": true
+    }
+  }
+}

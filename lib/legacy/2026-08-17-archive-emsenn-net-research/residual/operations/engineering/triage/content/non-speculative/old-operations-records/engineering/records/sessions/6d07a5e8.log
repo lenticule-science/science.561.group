@@ -1,0 +1,9 @@
+Done. The MASH architecture doc now has:
+
+- **New "Four RelationalMachine Components" section** with a table mapping each component to its math role, concrete implementation, and a one-line spec quote
+- **ASCII diagram** showing how the four components connect in the data flow
+- **ExpertSystem confirmation** linking back to that spec
+
+The existing implementation detail (561d binary, EAVT store, MCP server, daemon, sessions, accounting, etc.) is preserved under a renamed "Implementation Detail" heading. Final doc is 236 lines.
+
+Task `ssa-name-four-components` marked completed.

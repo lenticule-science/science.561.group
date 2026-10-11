@@ -1,0 +1,8 @@
+Done. Built `operations/engineering/fars/agentic/tools/record-hygiene.js` with four subcommands:
+
+- **`--stale`** — finds tasks open >14d with no events referencing them. `--apply` defers them.
+- **`--redundant`** — Jaccard similarity on goal+title tokens, configurable threshold. `--apply` flags task files.
+- **`--incorporated`** — finds completed session JSONs. `--apply` archives them to `sessions/archive/`.
+- **`--retractable`** — finds records with `status: retracted` or `retract: true`. `--apply` archives them.
+
+All subcommands record events to `events.jsonl` when applying. Test run found 36 redundant pairs (all the `enrich-*` batch — correctly flagged as structurally similar) and 92 archivable sessions. Marked `rh-detect-redundant-tasks` and `rh-detect-incorporated-sessions` as completed.
