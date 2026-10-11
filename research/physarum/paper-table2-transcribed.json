@@ -1,0 +1,17 @@
+{
+  "workRef": "lenticule-science/science-services-section#27",
+  "source": {
+    "doi": "10.1016/j.protis.2026.126156",
+    "table": "Table 2",
+    "page": 4,
+    "kind": "transcribed from publicly accessible full-text HTML rendering",
+    "nativePageImageVerified": false,
+    "sourceUrl": "https://www.researchgate.net/publication/401981060_Inducing_chirality_in_slime_mold_-_spontaneous_alternation_behavior_may_reveal_spatial_memory_in_Physarum_polycephalum"
+  },
+  "conditions": [
+    {"id":"short-3mm","right":107,"left":109,"north":43,"south":58,"east":54,"west":61},
+    {"id":"medium-7mm","right":119,"left":127,"north":61,"south":70,"east":50,"west":67},
+    {"id":"long-14mm","right":125,"left":155,"north":49,"south":84,"east":76,"west":71},
+    {"id":"double-7mm","right":92,"left":122,"north":45,"south":64,"east":56,"west":49}
+  ]
+}
