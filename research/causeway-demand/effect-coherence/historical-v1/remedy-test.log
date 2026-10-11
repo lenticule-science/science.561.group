@@ -1,0 +1,172 @@
+TAP version 13
+# Subtest: empty trace is unknown, never zero problems or success
+ok 1 - empty trace is unknown, never zero problems or success
+  ---
+  duration_ms: 1.652972
+  type: 'test'
+  ...
+# Subtest: visible link alone is not verified intake
+ok 2 - visible link alone is not verified intake
+  ---
+  duration_ms: 0.609985
+  type: 'test'
+  ...
+# Subtest: provider delivery without independent acknowledgement fails closure
+ok 3 - provider delivery without independent acknowledgement fails closure
+  ---
+  duration_ms: 0.42498
+  type: 'test'
+  ...
+# Subtest: same actor switching office labels is not independent acknowledgement
+ok 4 - same actor switching office labels is not independent acknowledgement
+  ---
+  duration_ms: 0.413584
+  type: 'test'
+  ...
+# Subtest: mismatched submission IDs cannot correlate
+ok 5 - mismatched submission IDs cannot correlate
+  ---
+  duration_ms: 0.21586
+  type: 'test'
+  ...
+# Subtest: mismatched receiver binding cannot correlate
+ok 6 - mismatched receiver binding cannot correlate
+  ---
+  duration_ms: 0.193597
+  type: 'test'
+  ...
+# Subtest: reported public route is not observed even if verifier returns true
+ok 7 - reported public route is not observed even if verifier returns true
+  ---
+  duration_ms: 0.218234
+  type: 'test'
+  ...
+# Subtest: missing external verification cannot establish observed service
+ok 8 - missing external verification cannot establish observed service
+  ---
+  duration_ms: 1.379235
+  type: 'test'
+  ...
+# Subtest: verified complete correlated live trace supports only structural intake
+ok 9 - verified complete correlated live trace supports only structural intake
+  ---
+  duration_ms: 0.376148
+  type: 'test'
+  ...
+# Subtest: synthetic pass cannot be misrepresented as production effect
+ok 10 - synthetic pass cannot be misrepresented as production effect
+  ---
+  duration_ms: 0.383348
+  type: 'test'
+  ...
+# Subtest: independent decision plus public witness can establish a correction only when correlated
+ok 11 - independent decision plus public witness can establish a correction only when correlated
+  ---
+  duration_ms: 0.311092
+  type: 'test'
+  ...
+# Subtest: same actor cannot independently witness its own correction publication
+ok 12 - same actor cannot independently witness its own correction publication
+  ---
+  duration_ms: 0.160648
+  type: 'test'
+  ...
+# Subtest: mis-correlated public readback cannot establish correction
+ok 13 - mis-correlated public readback cannot establish correction
+  ---
+  duration_ms: 0.133248
+  type: 'test'
+  ...
+# Subtest: published correction is not assumed from acknowledgement
+ok 14 - published correction is not assumed from acknowledgement
+  ---
+  duration_ms: 0.112026
+  type: 'test'
+  ...
+# Subtest: observed failed path produces explicit failure, not unverified success
+ok 15 - observed failed path produces explicit failure, not unverified success
+  ---
+  duration_ms: 0.118215
+  type: 'test'
+  ...
+# Subtest: contradictory authenticated observations are contested
+ok 16 - contradictory authenticated observations are contested
+  ---
+  duration_ms: 0.12146
+  type: 'test'
+  ...
+# Subtest: missing keyboard or screen-reader mode blocks functional claim
+ok 17 - missing keyboard or screen-reader mode blocks functional claim
+  ---
+  duration_ms: 0.23558
+  type: 'test'
+  ...
+# Subtest: future evidence is rejected
+ok 18 - future evidence is rejected
+  ---
+  duration_ms: 0.333254
+  type: 'test'
+  ...
+# Subtest: impossible Gregorian evidence timestamp rejected
+ok 19 - impossible Gregorian evidence timestamp rejected
+  ---
+  duration_ms: 0.111415
+  type: 'test'
+  ...
+# Subtest: proof URI with token and fragment is rejected
+ok 20 - proof URI with token and fragment is rejected
+  ---
+  duration_ms: 0.172256
+  type: 'test'
+  ...
+# Subtest: duplicate evidence IDs rejected
+ok 21 - duplicate evidence IDs rejected
+  ---
+  duration_ms: 0.124184
+  type: 'test'
+  ...
+# Subtest: wrong stage method rejected
+ok 22 - wrong stage method rejected
+  ---
+  duration_ms: 0.127559
+  type: 'test'
+  ...
+# Subtest: unauthorized positive editorial disposition rejected
+ok 23 - unauthorized positive editorial disposition rejected
+  ---
+  duration_ms: 0.137484
+  type: 'test'
+  ...
+# Subtest: Gregorian month lengths admit October 31 and December 31 but not November 31
+ok 24 - Gregorian month lengths admit October 31 and December 31 but not November 31
+  ---
+  duration_ms: 0.213787
+  type: 'test'
+  ...
+# Subtest: mixed site revisions with each stage in their union never verify any one service effect
+ok 25 - mixed site revisions with each stage in their union never verify any one service effect
+  ---
+  duration_ms: 0.241097
+  type: 'test'
+  ...
+# Subtest: correction decision and public witness cannot be spliced across revisions
+ok 26 - correction decision and public witness cannot be spliced across revisions
+  ---
+  duration_ms: 0.133938
+  type: 'test'
+  ...
+# Subtest: records without a service-effect context fail closed
+ok 27 - records without a service-effect context fail closed
+  ---
+  duration_ms: 0.564978
+  type: 'test'
+  ...
+1..27
+# tests 27
+# suites 0
+# pass 27
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 67.185147
