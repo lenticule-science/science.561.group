@@ -43,3 +43,30 @@ test('7mm published aggregate has exactly two decisive observations absent from 
   assert.deepEqual(audit.conditions[1].sourceResidual,{decisive:2,alternate:0,repeat:2});
 });
 test('input is unchanged by assay',()=>{const x=clone();const before=JSON.stringify(x);auditForcedTurnTable(x);assert.equal(JSON.stringify(x),before)});
+for(const emptyForce of ['forcedRight','forcedLeft'])test(`empty ${emptyForce} stratum retains zero counts and explicitly has no conditional rate`,()=>{
+ const x=clone();x.conditions=[x.conditions[0]];
+ const row=x.conditions[0];
+ const observedForce=emptyForce==='forcedRight'?'forcedLeft':'forcedRight';
+ row[emptyForce]={right:0,left:0};
+ row[observedForce]=observedForce==='forcedRight'?{right:row.repeat,left:row.alternate}:{right:row.alternate,left:row.repeat};
+ const before=structuredClone(x);
+ const audit=auditForcedTurnTable(x),result=audit.conditions[0];
+ assert.equal(audit.sourceCountDisposition,'AGGREGATES_RECONCILE');
+ assert.deepEqual(result[emptyForce],{decisive:0,alternating:0,alternationAmongDecisive:null,conditionalRateDisposition:'NO_DECISIVE_OBSERVATIONS'});
+ assert.deepEqual(result[observedForce],{decisive:216,alternating:152,alternationAmongDecisive:152/216,conditionalRateDisposition:'COMPUTED_FROM_DECISIVE_COUNTS'});
+ assert.equal(result.forcedTurnExposureIdentified,false);
+ assert.deepEqual(JSON.parse(JSON.stringify(audit)),audit);
+ assert.deepEqual(x,before);
+});
+test('observed strata with zero alternating counts retain a defined zero rate',()=>{
+ const x=clone();x.conditions=[x.conditions[0]];
+ const row=x.conditions[0];row.alternate=0;row.repeat=row.decisive;
+ row.forcedRight={right:100,left:0};row.forcedLeft={right:0,left:116};
+ const before=structuredClone(x),result=auditForcedTurnTable(x).conditions[0];
+ assert.equal(result.sourceArmCountsReconciled,true);
+ for(const force of ['forcedRight','forcedLeft']){
+  assert.equal(result[force].alternationAmongDecisive,0);
+  assert.equal(result[force].conditionalRateDisposition,'COMPUTED_FROM_DECISIVE_COUNTS');
+ }
+ assert.deepEqual(x,before);
+});

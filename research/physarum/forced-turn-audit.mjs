@@ -8,6 +8,11 @@ export const WORK_REF = 'lenticule-science/science-services-section#27';
 const integer=(x,name)=>{if(!Number.isSafeInteger(x)||x<0)throw new TypeError(name+' must be a nonnegative integer');return x};
 const countKeys=['tested','undecidedBothArms','decisive','alternate','repeat'];
 const sides=['right','left'];
+const forcedTurnSummary=(decisive,alternating)=>({
+  decisive,alternating,
+  alternationAmongDecisive:decisive===0?null:alternating/decisive,
+  conditionalRateDisposition:decisive===0?'NO_DECISIVE_OBSERVATIONS':'COMPUTED_FROM_DECISIVE_COUNTS'
+});
 export function auditForcedTurnTable(input) {
   if(input?.workRef!==WORK_REF)throw new TypeError('workRef must identify owning Science requirement');
   if(!Array.isArray(input.conditions)||!input.conditions.length)throw new TypeError('nonempty conditions required');
@@ -39,8 +44,8 @@ export function auditForcedTurnTable(input) {
       alternationAmongDecisive:row.alternate/row.decisive,
       observedAlternationAmongAllTrials:row.alternate/row.tested,
       undecidedAmongAllTrials:row.undecidedBothArms/row.tested,
-      forcedRight:{decisive:forcedRightN,alternating:row.forcedRight.left,alternationAmongDecisive:row.forcedRight.left/forcedRightN},
-      forcedLeft:{decisive:forcedLeftN,alternating:row.forcedLeft.right,alternationAmongDecisive:row.forcedLeft.right/forcedLeftN},
+      forcedRight:forcedTurnSummary(forcedRightN,row.forcedRight.left),
+      forcedLeft:forcedTurnSummary(forcedLeftN,row.forcedLeft.right),
       printedUndecidedPercent:row.printedUndecidedPercent,
       computedUndecidedPercent:computedUndecided,
       printedMatchesCorrectDenominator:Math.abs(computedUndecided-row.printedUndecidedPercent)<0.011,
@@ -72,10 +77,11 @@ export function crossAuditDirectionTables(table1,table2){
   const residual={decisiveMinusCardinal:one.decisive-cardinal,
     decisiveMinusLateral:one.decisive-rightLeft,
     lateralMinusArm:(rightLeft-(armRight+armLeft))};
+  const table2LateralMatchesTable1Arms=r.right===armRight&&r.left===armLeft;
   return {id:r.id,aggregateDecisive:one.decisive,cardinalTotal:cardinal,
     lateralTotal:rightLeft,armTotal:armRight+armLeft,
-    table2LateralMatchesTable1Arms:r.right===armRight&&r.left===armLeft,
-    residual,fullyReconciled:Object.values(residual).every(x=>x===0)};
+    table2LateralMatchesTable1Arms,
+    residual,fullyReconciled:table2LateralMatchesTable1Arms&&Object.values(residual).every(x=>x===0)};
  });
  return {workRef:WORK_REF,sourceStatus:'two transcribed aggregate tables only; native-page and trial-level verification outstanding',
   status:rows.every(r=>r.fullyReconciled&&r.table2LateralMatchesTable1Arms)?'RECONCILED':'FAILED_CROSS_TABLE_RECONCILIATION',rows};

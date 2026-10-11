@@ -23,3 +23,16 @@ test('bad categories and duplicate or malformed Table 2 fields are refused',()=>
  const b=structuredClone(table2);b[0].id=b[1].id;assert.throws(()=>crossAuditDirectionTables(table1,b),/unknown|duplicate/);
  const c=structuredClone(table2);c[2].west=-1;assert.throws(()=>crossAuditDirectionTables(table1,c),/nonnegative/);
 });
+for(const direction of [1,-1])test(`conserved lateral total cannot conceal a directional shift of ${direction}`,()=>{
+ const one=structuredClone(table1);one.conditions=[one.conditions[0]];
+ const two=[structuredClone(table2[0])];
+ assert.equal(crossAuditDirectionTables(one,two).status,'RECONCILED');
+ two[0].right+=direction;two[0].left-=direction;
+ const before=structuredClone({one,two});
+ const audit=crossAuditDirectionTables(one,two),row=audit.rows[0];
+ assert.deepEqual(row.residual,{decisiveMinusCardinal:0,decisiveMinusLateral:0,lateralMinusArm:0});
+ assert.equal(row.table2LateralMatchesTable1Arms,false);
+ assert.equal(row.fullyReconciled,false);
+ assert.equal(audit.status,'FAILED_CROSS_TABLE_RECONCILIATION');
+ assert.deepEqual({one,two},before);
+});
