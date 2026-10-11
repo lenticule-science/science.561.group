@@ -6,6 +6,7 @@ import { dirname, join } from 'node:path';
 import test from 'node:test';
 
 import { servedResponseFromRepr } from '@red-cup-engineering/http-services-section/representation';
+import { openFullTextIndex } from '@red-cup-engineering/markdown-engineering-services-section/vault/full-text-index';
 import { markdownFileRevision } from '@red-cup-engineering/markdown-engineering-services-section/write-markdown-file';
 import { createMcpServer } from '@red-cup-engineering/mcp-engineering-services-section/server';
 import { EXCLUDED_SEGMENTS } from '../src/archive-policy.mjs';
@@ -153,8 +154,18 @@ test('real L-Space and CAIRN receive the declared document with canonical and le
     assert.equal(reading.markdown, source.text);
     assert.equal(reading.revision, source.revision);
   }
-  // The real search path must have used its isolated persistent index/catalogue.
-  assert.ok((await readFile(join(stateDir, 'knowledge', 'full-text.sqlite'))).length > 0);
+  // Reopen the native index independently: persisted identity, revision and
+  // search results must survive without reindexing through the application.
+  const indexFile = join(stateDir, 'knowledge', 'full-text.sqlite');
+  await assert.rejects(() => readFile(indexFile), error => error.code === 'ENOENT');
+  const reopened = openFullTextIndex({ file: indexFile });
+  try {
+    assert.equal(reopened.root, `${indexFile}.journal`);
+    assert.deepEqual(reopened.paths(), [source.declaration.canonicalPath]);
+    assert.equal(reopened.revisionOf(source.declaration.canonicalPath), source.revision);
+    assert.deepEqual(reopened.search(source.declaration.query).map(hit => hit.path),
+      [source.declaration.canonicalPath]);
+  } finally { reopened.close(); }
   const observations = (await readFile(join(stateDir, 'knowledge', 'observations.jsonl'), 'utf8'))
     .trim().split('\n').map(line => JSON.parse(line));
   assert.ok(observations.some(row => row.path === source.declaration.canonicalPath && row.revision === source.revision));
@@ -234,6 +245,7 @@ test('missing corpus refuses before scanning and an empty real directory cannot 
     await assert.rejects(() => receiveDeclaredDocument(fixture),
       error => error.code === 'LSPACE_CORPUS_SECTION_UNAVAILABLE' && error.section === fixture.source.declaration.sciencePrefix);
     await assert.rejects(() => fixture.call('fetch', { id: fixture.source.declaration.canonicalPath }),
-      error => error instanceof RangeError && error.reason === 'not-found');
+      error => error.code === 'LSPACE_CORPUS_SECTION_UNAVAILABLE' && error.section === fixture.source.declaration.sciencePrefix,
+      'repeated fetch must fail closed at missing section after first search fails');
   });
 });
