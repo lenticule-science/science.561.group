@@ -15,6 +15,10 @@ The research program must explain what makes a message useful to a given reader 
 ## Current research artifacts
 
 - [Research program](research/research-program.md): scientific questions, experimental plan, program boundaries.
+- [Constrained English theory](research/plaineng-constrained-english-theory.md): formalized subset construction, typed semantics and discriminating cases.
+- [Sign-stack fiber/sheaf interpretation](research/signstack-fiber-sheaf-interpretations.md): actual upstream relation/fiber APIs, local/globally compatible meanings and strict limitations of Laplacian models.
+- [Controlled-language predecessors](research/controlled-language-predecessors.md): ACE, GF, STE100, CLCE, PENG, UD and federal Plain Language.
+- [Agent-readable English](research/agent-readable-english-contracts.md): speech acts, evidence, source, pragmatic repair and effect authority.
 - [Interpretation and conformance model](research/interpretation-and-conformance.md): conditional meaning preservation, evidence and normative force.
 - [Formalization path](research/formalization-path.md): marks, utterances and restricted Obsmetrologia/Lean proof obligations (proposed, not compiled).
 - [Research evaluation protocol](research/evaluation-protocol.md): preregistration and reader-task experiments.
