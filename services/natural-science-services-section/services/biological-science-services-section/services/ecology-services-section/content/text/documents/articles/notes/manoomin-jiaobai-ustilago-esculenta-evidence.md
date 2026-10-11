@@ -22,6 +22,18 @@ bridges:
 
 **Finding:** The introduction hazard is credible enough to warrant ordinary plant-health reporting and commodity-rule clarification. Infection of an American native *Zizania* stand by *Ustilago esculenta*, a current US outbreak, and the legality of a particular retail vegetable shipment are **not established** by the evidence examined here. The risk claim must not silently become any of those stronger claims.
 
+## What is worth resolving first
+
+The goal is to protect manoomin, not to solve every historical nomenclature puzzle. The next research efforts should be ordered by how directly an answer changes present decisions. These questions can proceed in parallel where evidence and qualified expertise are available:
+
+1. **Present import status and actual reports.** Establish the current APHIS/ACIR rule for fresh edible *Z. latifolia* culms from the specified origin, separately from processed foods and propagative plants. Avoid extrapolating a 2018 state assessment into a current federal ruling. Distinguish independently witnessed observations from online reposts.
+2. **Viable exposure pathway.** Determine what direct evidence exists for viable *U. esculenta* in harvested edible tissue, and what is actually known about persistence through shipping, retail storage and disposal. A culturable harvested gall does not by itself establish transmission into a wetland.
+3. **Modern native-host evidence.** Look for original diagnoses or defensible host-range studies for *Z. aquatica*, *Z. palustris* and *Z. texana*, keeping each species separate. The consequence of infection in an annual grain species is important, but cannot be treated as a measured outbreak.
+4. **Independent introduced-plant risk and stewardship.** Evaluate actual establishment/dispersal of *Z. latifolia* and existing Tribal-led manoomin protections. Do not require proof of fungal host-switching to examine an invasive aquatic plant, and do not infer authority to use protected ecological knowledge.
+5. **Historical labels (secondary).** Check the 1911 greenhouse packet only if its original host determination can be resolved with reasonable effort. An old name is a useful source-critical caution, not the primary evidence needed to answer contemporary regulatory, infection or exposure questions.
+
+These are priorities for further evidence gathering, **not claims that any agency determination, experiment, Tribal partnership or survey has been completed**.
+
 ## Source-checked distinctions
 
 | Proposition | Status on 2026-10-11 | Evidence and limitation |
@@ -45,35 +57,11 @@ The USDA-NRCS 2024 *Zizania aquatica* guide [S5, p. 6, “Pests and Potential Pr
 
 CDFA [S1] independently lists *Z. aquatica* as a host, while the 2020 primary study [S4] names only *Z. latifolia*. A qualified plant pathologist should trace the original host record behind the two agency claims. Do not cite the NRCS passage as if it were confirmed cross-species infection.
 
-### Historical host records and an agency contradiction
-
-The CDFA *U. esculenta* profile [S1, 2017] lists *Z. aquatica* as a host. However, California's own **2018 *Z. latifolia* plant assessment** [S11] records the responsible botanist's statement that *Z. latifolia* was the **only known host** and that infection of *Z. palustris* had **not been tested** at that time. The apparent host-range disagreement exists within the same agency's contemporary materials; it is not merely an agency-versus-academic dispute.
-
-A much earlier lead deserves specific provenance checking: USDA Department Circular 195, issued February 1922, lists exchange specimen **no. 58, *U. esculenta* “on *Zizania aquatica*,”** attributed to a USDA greenhouse in Washington, D.C. on November 15, 1911, communicated by C. S. Scofield [S13]. This establishes a *historical labelled greenhouse specimen entry*, not authenticated infection of native *Z. aquatica* in a natural US rice bed. The old plant name is demonstrably ambiguous: the combination *Zizania aquatica* var. *latifolia*, published in 1901, is a synonym of the Asian *Z. latifolia* [S15]. The 1922 printed entry does **not** specify a variety or current taxonomic determination. However, modern specimen catalogues now index **multiple collection records for exchange no. 58** [S22], so the earlier assertion that no voucher identifier was located has been superseded. Therefore its host might have been native *Z. aquatica*, an Asian plant classified under an old broad concept, or a misidentified planting; the printed record cannot discriminate these alternatives. It is unknown whether entry no. 58 underlies later fungal-host databases and CDFA's 2017 host list. The original USDA catalogue also lists a different smut, *Entyloma lineatum* on *Z. aquatica* from Winona, Minnesota (1888; no. 9); neither record may be used as evidence for the other fungus [S13].
-
-The most useful next scientific step is to request original specimen metadata or a taxonomic re-determination of USDA specimen no. 58 and the primary evidence supporting CDFA's *Z. aquatica* host listing. Do not treat a secondary database host association as an independently verified infection, and do not erase that association merely because it conflicts with more recent papers.
-
-### Identified institutional records for the 1911 exchange specimen
-
-**Discovery dated 2026-10-11:** The [Mycology Collections Portal's *Mycological Exchange of 1921* no. 58 index](https://mycoportal.org/portal/collections/exsiccati/index.php?omenid=77159) explicitly links the old *U. esculenta* exchange label to three institutional catalogue entries [S22]:
-
-| Collection | Catalogue ID | What the public index identifies |
-| --- | --- | --- |
-| USDA U.S. National Fungus Collections (BPI) | **BPI 989821** | *U. esculenta*; “Mycological Exchange of 1921” number 58; United States |
-| University of North Carolina Herbarium (NCU–F) | **NCU-F-0024676** | *U. esculenta*, C. S. Scofield, 15 Nov 1911, USDA Washington, D.C. greenhouse |
-| University of Wisconsin–Madison, Wisconsin State Herbarium (WIS–F) | **WIS-F-0064092** | *U. esculenta*, 15 Nov 1911, USDA Washington, D.C. greenhouse |
-
-Another public [MyCoPortal collection listing](https://www.mycoportal.org/portal/collections/list.php?db=7&reset=1&taxa=Ustilaginaceae&taxontype=3) lists **TENN-F-002576** (collector string “Comm. by C.S. Scofield,” number “CSS58”) and **TENN-F-002577** (“CSS2577”), both at the same greenhouse on 15 Nov 1911, under *U. esculenta* [S23]. These are **possible related exchange material**; individual label imagery, accession relationships, physical presence and independent determinations have not been checked. A USDA ARS Biocollections result also reports **BPI 156812**, dated January 1912 at a Washington “Dept. Greenhouse” [S24]; its relation to the 1911 exchange is unknown and must not be inferred from proximity in time or taxon name.
-
-**Critical unit of observation:** Three collection records linked to exchange no. 58 and two apparent 1911 collection counterparts are **not five independent infections**. They may be exsiccata duplicates from a *single* harvested greenhouse event. Their scientific value is that packet labels, determination annotations, host specimens and historical provenance may be recoverable from specific archives. The public lists do not prove a currently extant physical object, plant identity under modern taxonomy, fungal re-identification, or field transmission.
-
-The [Species Fungorum nomenclatural entry for *U. esculenta*](https://www.speciesfungorum.org/names/NamesRecord.asp?RecordId=183635) independently reports the original 1895 taxon's type as **Balansa 4931 on flowers of *Zizania latifolia* from Vietnam** [S25]. This is an original Asian host association, separate from the ambiguous 1911 greenhouse exchange. It does not solve the 1911 identification or establish a North American native host.
-
-**Highest-value next archival check:** ask the BPI, NCU and WIS curators, referencing their exact catalogue IDs, for existing high-resolution specimen/label images, original host annotation, determiner, any herbarium/seed counterpart, cross-exchange records and later taxonomic revisions. Seek guidance on whether identification can be established without disturbing objects or requesting new laboratory work. If a confirmed host is obtained, update claims S1/S5/this record and its dependent manuscript; otherwise record the unanswered status. No collection access, specimen shipment or destructive analysis has been authorized.
-
-A 2016 Indian morphogenesis study of *Z. latifolia* used plant microsatellite and fungal ITS comparisons to identify the Asian host–fungus association [S21]. This is independent modern evidence for the established **Asian** association, not a diagnostic test of native American *Zizania*.
+In a 2018 CDFA discussion [S11], a botanist said *Z. palustris* had not been tested as a host. This contemporary uncertainty matters more to present-day native-host risk than the species printed on a 1911 greenhouse label.
 
 ### What edible white versus gray jiaobai establishes
+
+A 2016 Indian morphogenesis study of *Z. latifolia* used plant microsatellite and fungal ITS comparisons to identify the Asian host–fungus association [S21]. This is independent modern evidence for the established **Asian** association, not a diagnostic test of native American *Zizania*.
 
 A 2023 peer-reviewed study [S12] distinguishes edible **white** galls, associated with mycelial-teliospore (M-T) strains that lack visible sori at the harvesting stage, from **gray** galls full of mature teliospores. White edible tissue still contains fungal hyphae. It follows that a swollen edible stem is **not** equivalent to a visibly sporulating gall, but neither the absence of visible spores nor ordinary retail sale proves the tissue contains no fungus or presents zero phytosanitary risk. Tu et al. (2019) cultured several *U. esculenta* strains from **harvested galls** sampled at different swelling stages [S17]. Thus at least some harvested gall tissue contains culturable fungus: presence is not merely inferred from DNA or a visible gall. However, this study did **not** quantify organism survival after international shipping, retail storage, cooking or disposal, nor competence to infect an American native host. Those links remain **unmeasured**, not zero.
 
@@ -160,7 +148,6 @@ Two candidate papers address materially different questions; their boundaries sh
 
 | Gate | Present position | Required evidence |
 | --- | --- | --- |
-| Archival host record | 1911 labeled greenhouse accession located via 1922 inventory; identification unresolved | Primary specimen metadata, determiner, later taxonomic revision, accession trace |
 | Modern host range | CDFA secondary host list conflicts with other CDFA and scientific sources | Original confirmed observations for each named native species, properly attributed positive/negative assays if they exist |
 | Pathogen and product stage | White-vs-gray gall literature located | Assessed primary paper and limits of its inference for shipped edible stems |
 | US occurrences | Historical agency accounts located | Trace original incident reports, dates, lab confirmations, and eradication follow-up; no unsupported claim of current establishment |
@@ -168,5 +155,36 @@ Two candidate papers address materially different questions; their boundaries sh
 | Systematic literature completeness | Not yet established | Reproducible dated query log, screened count and exclusions |
 | Manuscript acceptance | Not yet established | Independent Science receiving and explicit rights/distribution decision |
 | Downstream Koios/video | Not yet authorized as factual products | Accepted research claims with source IDs, uncertainty, approved framing, separate newsroom or video editorial acceptance |
+| Archival host record | 1911 labeled greenhouse accession located via 1922 inventory; identification unresolved | Primary specimen metadata, determiner, later taxonomic revision, accession trace |
 
 **Downstream communication:** Koios.News and video channels should derive explainers or news reports from accepted, citation-bound scientific claims and relevant current developments, then undergo their own editorial and production controls. A scientific study is not proof of a recent retail violation. Koios's current newsroom explicitly separates source ingestion, reporting, independent editorial assessment and publication receipts; do not bypass it with a direct content-file publish. For a proposed Civics ASSIST reporting flow, research output should first identify whether a regulatory violation exists for the exact commodity and jurisdiction. Until then, offer only neutral agency routing and reporting of independently observed facts. Never pre-populate guilt or invite duplicate allegations.
+
+## Appendix — Historical host labels and specimen provenance
+
+This material is retained because it may help correct a secondary host list. It is **not** a current-disease observation and does not need to be resolved before the import-status, exposure, native-host or plant-invasion questions above can be investigated.
+
+### Historical host records and an agency contradiction
+
+The CDFA *U. esculenta* profile [S1, 2017] lists *Z. aquatica* as a host. However, California's own **2018 *Z. latifolia* plant assessment** [S11] records the responsible botanist's statement that *Z. latifolia* was the **only known host** and that infection of *Z. palustris* had **not been tested** at that time. The apparent host-range disagreement exists within the same agency's contemporary materials; it is not merely an agency-versus-academic dispute.
+
+A much earlier lead deserves specific provenance checking: USDA Department Circular 195, issued February 1922, lists exchange specimen **no. 58, *U. esculenta* “on *Zizania aquatica*,”** attributed to a USDA greenhouse in Washington, D.C. on November 15, 1911, communicated by C. S. Scofield [S13]. This establishes a *historical labelled greenhouse specimen entry*, not authenticated infection of native *Z. aquatica* in a natural US rice bed. The old plant name is demonstrably ambiguous: the combination *Zizania aquatica* var. *latifolia*, published in 1901, is a synonym of the Asian *Z. latifolia* [S15]. The 1922 printed entry does **not** specify a variety or current taxonomic determination. However, modern specimen catalogues now index **multiple collection records for exchange no. 58** [S22], so the earlier assertion that no voucher identifier was located has been superseded. Therefore its host might have been native *Z. aquatica*, an Asian plant classified under an old broad concept, or a misidentified planting; the printed record cannot discriminate these alternatives. It is unknown whether entry no. 58 underlies later fungal-host databases and CDFA's 2017 host list. The original USDA catalogue also lists a different smut, *Entyloma lineatum* on *Z. aquatica* from Winona, Minnesota (1888; no. 9); neither record may be used as evidence for the other fungus [S13].
+
+The most useful next scientific step is to request original specimen metadata or a taxonomic re-determination of USDA specimen no. 58 and the primary evidence supporting CDFA's *Z. aquatica* host listing. Do not treat a secondary database host association as an independently verified infection, and do not erase that association merely because it conflicts with more recent papers.
+
+### Identified institutional records for the 1911 exchange specimen
+
+**Discovery dated 2026-10-11:** The [Mycology Collections Portal's *Mycological Exchange of 1921* no. 58 index](https://mycoportal.org/portal/collections/exsiccati/index.php?omenid=77159) explicitly links the old *U. esculenta* exchange label to three institutional catalogue entries [S22]:
+
+| Collection | Catalogue ID | What the public index identifies |
+| --- | --- | --- |
+| USDA U.S. National Fungus Collections (BPI) | **BPI 989821** | *U. esculenta*; “Mycological Exchange of 1921” number 58; United States |
+| University of North Carolina Herbarium (NCU–F) | **NCU-F-0024676** | *U. esculenta*, C. S. Scofield, 15 Nov 1911, USDA Washington, D.C. greenhouse |
+| University of Wisconsin–Madison, Wisconsin State Herbarium (WIS–F) | **WIS-F-0064092** | *U. esculenta*, 15 Nov 1911, USDA Washington, D.C. greenhouse |
+
+Another public [MyCoPortal collection listing](https://www.mycoportal.org/portal/collections/list.php?db=7&reset=1&taxa=Ustilaginaceae&taxontype=3) lists **TENN-F-002576** (collector string “Comm. by C.S. Scofield,” number “CSS58”) and **TENN-F-002577** (“CSS2577”), both at the same greenhouse on 15 Nov 1911, under *U. esculenta* [S23]. These are **possible related exchange material**; individual label imagery, accession relationships, physical presence and independent determinations have not been checked. A USDA ARS Biocollections result also reports **BPI 156812**, dated January 1912 at a Washington “Dept. Greenhouse” [S24]; its relation to the 1911 exchange is unknown and must not be inferred from proximity in time or taxon name.
+
+**Critical unit of observation:** Three collection records linked to exchange no. 58 and two apparent 1911 collection counterparts are **not five independent infections**. They may be exsiccata duplicates from a *single* harvested greenhouse event. Their scientific value is that packet labels, determination annotations, host specimens and historical provenance may be recoverable from specific archives. The public lists do not prove a currently extant physical object, plant identity under modern taxonomy, fungal re-identification, or field transmission.
+
+The [Species Fungorum nomenclatural entry for *U. esculenta*](https://www.speciesfungorum.org/names/NamesRecord.asp?RecordId=183635) independently reports the original 1895 taxon's type as **Balansa 4931 on flowers of *Zizania latifolia* from Vietnam** [S25]. This is an original Asian host association, separate from the ambiguous 1911 greenhouse exchange. It does not solve the 1911 identification or establish a North American native host.
+
+**Highest-value next archival check:** ask the BPI, NCU and WIS curators, referencing their exact catalogue IDs, for existing high-resolution specimen/label images, original host annotation, determiner, any herbarium/seed counterpart, cross-exchange records and later taxonomic revisions. Seek guidance on whether identification can be established without disturbing objects or requesting new laboratory work. If a confirmed host is obtained, update claims S1/S5/this record and its dependent manuscript; otherwise record the unanswered status. No collection access, specimen shipment or destructive analysis has been authorized.
