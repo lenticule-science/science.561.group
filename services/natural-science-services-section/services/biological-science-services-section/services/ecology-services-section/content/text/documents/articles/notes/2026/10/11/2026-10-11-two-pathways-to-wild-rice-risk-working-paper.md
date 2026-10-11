@@ -11,7 +11,7 @@ tags: [ecology, invasive-plants, plant-pathology, risk-assessment, indigenous-st
 
 # Two introduction pathways relevant to manoomin: introduced *Zizania latifolia* and the *Ustilago esculenta* food question
 
-**Working paper v0.2, 11 October 2026. This is a targeted research synthesis, not a measured probability model, independent scientific receiving, peer review, or a current federal import ruling.** Companion to [the native-host evidence assessment](2026-10-11-ustilago-esculenta-host-records-working-paper.md) and the [source-owned evidence register](../../../manoomin-jiaobai-ustilago-esculenta-evidence.md).
+**Working paper v0.3, 11 October 2026. This is a targeted research synthesis, not a measured probability model, independent scientific receiving, peer review, or a current federal import ruling.** Companion to [the native-host evidence assessment](2026-10-11-ustilago-esculenta-host-records-working-paper.md) and the [source-owned evidence register](../../../manoomin-jiaobai-ustilago-esculenta-evidence.md).
 
 ## Abstract
 
@@ -38,6 +38,21 @@ This is a **targeted source-critical desk synthesis** completed on 11 October 20
 Sources were kept in five distinguishable classes: **direct experimental evidence** (with named isolates, strains, plant hosts and trial conditions), **agency occurrence accounts** (identified event, species and technique), **agency risk screening** (assessment, extrapolation and assumptions), **regulatory process guidance** (where a current rule is obtained), and **anecdotal reports** (observations not independently checked by this research). A publication or commentary citing a primary study is not counted as another independent event.
 
 A source can be strong for one question but silent for another. Fungal culture from harvested galls is primary evidence for fungal recovery; it is not a transport-challenge experiment. A global invasion synthesis is relevant to potential plant spread; it cannot act as a diagnostic assay in a manoomin bed. Historical regulatory text informs earlier status but cannot automatically replace an APHIS commodity rule in October 2026. The supporting [JSON evidence extract and tests](https://github.com/lenticule-science/science-services-section/blob/main/services/natural-science-services-section/services/biological-science-services-section/services/ecology-services-section/data/manoomin-evidence.json) keep direct evidence, secondary assessments, reported sightings and unresolved questions distinguishable for downstream editorial use. No machine-generated status constitutes independent scientific acceptance.
+
+### 2.1 Primary experimental evidence: sample units and missing observations
+
+The four primary studies cited for the cultivated Asian plant–fungus system answer different questions. Counting them as four independent confirmations of an American invasion or fungal outbreak would be a category error. The source-owned [machine-readable experiment extraction](https://github.com/lenticule-science/science-services-section/blob/main/services/natural-science-services-section/services/biological-science-services-section/services/ecology-services-section/data/manoomin-evidence.json) records the exact material and study limits, and the accompanying tests require that every primary-study record carry a sampling unit, method, observed result and unmeasured quantities.
+
+| Original study | Material and design actually checked | Finding supported | Important thing not measured |
+| --- | --- | --- | --- |
+| Guo et al. (2015) | Comparative host genome and expression analysis of cultivated fungus-associated versus wild Asian *Z. latifolia*; accession counts not independently rechecked | Long-term selection and infected-rhizome cultivation alter host genomes; edible cultivars are not a proxy for seed-fertile wild plants | Fungus infecting American *Zizania*, survival in commerce, invasion probability |
+| Zhang et al. (2017) | **Four selected isolates** (MT10/MT46 from white galls and T14/T55 from gray galls) on **Asian cultivar Longjiao 2**; in vitro mating and plant inoculation | MT/MT infection defect, T-type life cycle, and **some T/MT cross-pair infections** on the tested Asian host | Any native American host, shipment survival, prevalence in commercial lots |
+| Tu et al. (2019) | **Five harvested edible-gall samples** at different swelling stages; microbial culture and species determination by sequencing/MALDI-TOF plus molecular profiling | Several strains of *U. esculenta* were **culturable at sampling**, distinct from DNA-only detection | Probability of contamination across shops/import lots, infectious stage after transport, native host compatibility |
+| Chigira et al. (2023) | Two Japanese *Z. latifolia* cultivars plus ten accessioned strains (one collected from China); PCR mating-type assignment and **in vitro** crosses | Distinct mating types can produce hyphae under tested laboratory conditions; types MAT-2 and MAT-3 were frequent in examined material | New plant infection by commercial product, American native host challenge, import legality |
+
+These are source-critical, **selected** examples, not a systematically screened global sample. The accessible abstract of Tu et al. does not establish the number of originating farms or independent sampled shipments; no estimate should be reconstructed from five growth-stage tissue samples. For Guo et al., the accessible summary and introduction were checked, but the full raw genomic accession design has not been independently reproduced. Zhang and Chigira original accessible methods and results were examined at the bounded claims cited, not reanalysed from all deposited raw datasets.
+
+A meaningful follow-up study would independently validate each experiment's methods and assess transportability to one explicitly defined exposure scenario. An observational *Z. latifolia* infestation, an isolated fungal colony and a public retail listing are **different sample units** and must never be substituted into each other's denominator.
 
 ## 3. Path A — introduction and establishment of the Asian aquatic grass
 
@@ -166,4 +181,4 @@ Koios.News can investigate verified primary developments with its own editorial 
 - **Watson T. et al. (1991).** [Smut of Manchurian Wild Rice Caused by *Ustilago esculenta* in California](https://www.apsnet.org/publications/plantdisease/backissues/Documents/1991Abstracts/PD_75_1075D.htm). *Plant Disease* 75:1075.
 - **Zhang Y. et al. (2017).** [Investigation on the differentiation of two *Ustilago esculenta* strains](https://pmc.ncbi.nlm.nih.gov/articles/PMC5719756/). *BMC Microbiology* 17:228; experimental comparison of MT- and T-type strains, not native-host or shipping viability trials.
 
-*Working manuscript: unreviewed; no independent scientific acceptance, federal commodity adjudication or public environmental outcome is claimed.*
+*Working manuscript v0.3: unreviewed; no independent scientific acceptance, federal commodity adjudication or public environmental outcome is claimed.*
