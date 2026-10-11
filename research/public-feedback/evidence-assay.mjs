@@ -10,9 +10,19 @@ const HEX = /^[a-f0-9]{40}$/;
 const REF = /^(?:[\w.-]+\/[\w.-]+#\d+|ni:\/\/\/sha-256;[A-Za-z0-9_-]+)$/;
 function assert(condition, message) { if (!condition) throw new TypeError(message); }
 function nonempty(value) { return typeof value === 'string' && value.trim().length > 0; }
+// Coesite and Science must agree on which observations name possible instants.
+// Date.parse alone normalizes impossible Gregorian days and 24:00.
+const INSTANT = /^(\d{4})-(\d{2})-(\d{2})T([01]\d|2[0-3]):([0-5]\d):([0-5]\d)(?:\.(\d+))?(Z|[+-](?:0\d|1[0-4]):[0-5]\d)$/u;
 function timestamp(value) {
-  return typeof value === 'string' && /^\d{4}-\d\d-\d\dT/.test(value) &&
-    /(Z|[+-]\d\d:\d\d)$/.test(value) && Number.isFinite(Date.parse(value));
+  const m = typeof value === 'string' ? INSTANT.exec(value) : null;
+  if (!m) return false;
+  const year = Number(m[1]), month = Number(m[2]), day = Number(m[3]);
+  const leap = year % 4 === 0 && (year % 100 !== 0 || year % 400 === 0);
+  const days = [31, leap ? 29 : 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+  if (month < 1 || month > 12 || day < 1 || day > days[month - 1]) return false;
+  const offset = m[8];
+  if (offset !== 'Z' && Number(offset.slice(1, 3)) === 14 && offset.slice(4) !== '00') return false;
+  return Number.isFinite(Date.parse(value));
 }
 function url(value) { try { const u=new URL(value); return u.protocol === 'https:' && !u.username && !u.password && !u.search && !u.hash; } catch { return false; } }
 function validate(row, {verifyObservation} = {}) {
