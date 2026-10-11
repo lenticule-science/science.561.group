@@ -44,12 +44,13 @@
       "name": "Chigira et al., Mating types of Ustilago esculenta in Japan",
       "date_precision": "year",
       "study_extraction": {
-        "evidence_access": "PMC full-text abstract, methods framing, Results on mating-type typing and laboratory crosses checked.",
-        "sampling_unit": "Two Zizania latifolia cultivars from Japanese paddy fields, plus ten previously collected fungal genetic-resource strains (including one from China) described in the Results.",
-        "method": "Sporidial and haploid isolation, PCR mating-type genotyping and in-vitro pairwise mating to observe hyphal development.",
+        "evidence_access": "J-STAGE full HTML inspected on 2026-10-11: Methods—NARO Genebank strains; Results—Identification of mating types; Table 4 and Discussion. Abstract's compressed 'ten from Japan' description conflicts with actual Table 4 listing one from China.",
+        "sampling_unit": "Two Japanese cultivated Zizania latifolia varieties (Shirakawa and Ittenkou) sampled in authors' paddies; a separate panel of ten NARO genebank Ustilago esculenta strains: nine sourced from Japan and one from China (yeast4, MAFF 305616), as itemized in Table 4.",
+        "method": "Mating-type gene PCR and in-vitro mating/hyphal formation tests on selected fungal isolates; supplementary panel of ten NARO bank strains genotyped, with single Chinese-origin resource strain.",
         "directly_observed": "MAT-2/MAT-3 predominance in studied Japanese cultivars and mating/filament production from tested distinct mating types.",
         "not_measured": "No challenge test of American Zizania species, imported product, live edible material following US distribution, or a quantified native-rice infection probability.",
-        "decision_relevance": "Demonstrates diversity of mating types and laboratory mating competence, not that any real imported retail stem initiates disease."
+        "decision_relevance": "Demonstrates diversity of mating types and laboratory mating competence, not that any real imported retail stem initiates disease.",
+        "source_locator": "Chigira et al. 2023 J-STAGE full HTML: Methods 'U. esculenta strains from the Genebank of the National Agriculture and Food Research Organization'; Table 4 (China yeast4 MAFF 305616)."
       }
     },
     {
@@ -120,12 +121,13 @@
       "name": "Guo et al., Z. latifolia host genome after longstanding U. esculenta infection",
       "source_section": "Summary and Introduction: infected rhizome crop propagation versus wild host",
       "study_extraction": {
-        "evidence_access": "Publisher full-text summary and accessible introduction consulted; full underlying genomic methods not independently reconstructed.",
-        "sampling_unit": "Comparison of cultivated fungus-associated Asian Zizania latifolia host plant material with wild Asian Zizania latifolia host material (detailed accession counts not reverified).",
-        "method": "Comparative host genome and transcriptome analysis in the context of long-term cultivated fungal association.",
+        "evidence_access": "Wiley full HTML text inspected on 2026-10-11, Results—Genome sequencing, assembly and annotation, Table 1; supplementary raw sequence files and computational pipeline not independently reproduced.",
+        "sampling_unit": "One fungus-free wild Asian Zizania latifolia reference plant (accession HSD2, Taihu Lake region) whole-genome assembled; two cultivated Jiaobai accessions Zhejiao2 and Jiayou1 genome re-sequenced. These accessions are not biological replicate population samples of native North American rice.",
+        "method": "Whole-genome shotgun assembly of wild HSD2 reference (83.4 Gb high-quality Illumina reads, ~140-fold coverage); genome resequencing of cultivated Zhejiao2 (24.0 Gb, 43.6x) and Jiayou1 (21.6 Gb, 39.1x); comparative genome and expression analysis.",
         "directly_observed": "Cultivated fungus-associated Z. latifolia showed differences in immune receptor and plant–pathogen interaction genes; edible-gall cultivars are maintained via infected rhizomes rather than flowering.",
-        "not_measured": "No demonstrated infection of North American Zizania, no imported food viability experiment, no proof that all wild Z. latifolia is sterile.",
-        "decision_relevance": "Distinguishes selected vegetatively maintained culinary crop from the living plant species capable of establishment as an invader."
+        "not_measured": "No native North American Zizania examined; no fungal host-switch assay, imported edible-gall viability, shipping experiment, or representative estimate for all wild/cultivated plant populations.",
+        "decision_relevance": "Distinguishes selected vegetatively maintained culinary crop from the living plant species capable of establishment as an invader.",
+        "source_locator": "Guo et al. 2015 Wiley full HTML: Results section 'Genome sequencing, assembly and annotation', Table 1 comparing HSD2, Zhejiao2 and Jiayou1."
       }
     },
     {
@@ -134,7 +136,8 @@
       "url": "https://www.fws.gov/sites/default/files/documents/2025-06/ecological-risk-screening-summary-manchurian-wildrice-april-2025.pdf",
       "date": "2025-04-28",
       "name": "FWS ERSS full 21-page report, March 2023 revision with April 2025 web version",
-      "source_section": "PDF pp. 1–3: historical US status, 1982 planting report, trade leads, regulatory caveat"
+      "source_section": "PDF title p.1: revised March 2023 / web edition 4/28/2025; pp. 2–3 US living-plant research history; p.9 mapped MD/VA records; p.10 Great Lakes climate match and score definition.",
+      "evidence_access": "Text extracted from official USFWS 21-page PDF reviewed 2026-10-11. The source reports Climate 6 score 0.814 as fraction of mapped target points scoring >=6; this is not an invasion probability."
     },
     {
       "id": "nz-mpi",
@@ -473,7 +476,8 @@
       "independent_event": "terrell-batra-1982-historical-plantings",
       "limits": [
         "These are historical plantings described in a 1982 account and repeated in a 2025 screening, not evidence those facilities still maintain them.",
-        "A living research planting is a distinct category from contemporary imported cut vegetable products."
+        "A living research planting is a distinct category from contemporary imported cut vegetable products.",
+        "USFWS separately labels MD and VA mapped records as non-established wild populations; do not turn 1982 research plantings into contemporary naturalization evidence."
       ]
     },
     {
@@ -543,6 +547,40 @@
         "Absence from this named federal noxious-weed list is not an import approval, and other laws, import orders, or state rules can apply.",
         "This is a legal-text observation, not a commodity-specific APHIS admissibility determination for China-origin jiaobai."
       ]
+    },
+    {
+      "id": "great-lakes-high-climate-match",
+      "track": "plant_invasion",
+      "status": "source_report",
+      "species": "Zizania latifolia",
+      "scope": "USFWS ERSS, 16 climate variables and Climate 6 match score for contiguous United States",
+      "statement": "USFWS identifies high climatic matches for Zizania latifolia in the Great Lakes Basin, among other contiguous U.S. regions; its continental Climate 6 score is 0.814, defined as the fraction of target points with score at least 6.",
+      "source_ids": [
+        "usfws-2025-pdf"
+      ],
+      "source_locator": "USFWS 2025 PDF text pp. 9–10, Section 7 Climate Matching: high-match regions and definition of Climate 6 score = count target points with score >=6 divided by all target points; 16 climatic variables.",
+      "independent_event": "usfws-2023-model-april2025-release",
+      "limits": [
+        "A climate-match fraction is not an 81.4% invasion probability, forecast of invasion, quantified risk to a particular manoomin bed, or direct species occurrence.",
+        "The USFWS High Risk assessment combines invasion history and climate match; weather suitability does not itself establish introduction or survival."
+      ]
+    },
+    {
+      "id": "contiguous-us-mapped-records-not-wild",
+      "track": "us_introductions",
+      "status": "source_report",
+      "species": "Zizania latifolia",
+      "scope": "USFWS ERSS mapped GBIF-US 2023 occurrence records for Maryland and Virginia",
+      "statement": "USFWS states that mapped Maryland and Virginia records of Zizania latifolia do not represent established wild populations; they were excluded from the climate source-point calculation.",
+      "source_ids": [
+        "usfws-2025-pdf"
+      ],
+      "source_locator": "USFWS 2025 PDF text p. 9, Section 6 Distribution Within the United States, caption of Figure 2, MD/VA GBIF-US records not established wild populations.",
+      "independent_event": "usfws-2023-nonwild-md-va-observations",
+      "limits": [
+        "The excluded mapped records do not justify declaring naturalized Z. latifolia in Maryland or Virginia.",
+        "They also do not establish that introduced research plants are currently absent; they specify the evidentiary meaning of the mapped records as characterized by FWS."
+      ]
     }
   ],
   "release_gates": {
@@ -554,7 +592,7 @@
   "source_notes": "Evidence statuses describe what source texts support in their own host/material context, not independent scientific acceptance, measured contemporary risk, or official U.S. commodity compliance. Sources may reference overlapping scientific study populations; event identifiers must not be treated as counts of independent infected plants. Added source-critical differentiators: partial MT infection phenotype is not a categorical safety rule because some T/MT mixed pairings infected cultivated Asian hosts; FWS 2025 documents old living-plant research introductions; NZ live-plant management differs from US food import status. Existing stewardship plans are public, not external consent.",
   "extraction_protocol": {
     "completed_on": "2026-10-11",
-    "description": "Targeted source-critical extraction from four selected primary studies. Each row states access scope, actual sampling unit, tests, direct findings and absent measurements. Not a systematic literature screen, secondary independent peer-review receipt or an exhaustive risk appraisal.",
+    "description": "Targeted source-critical extraction from four selected primary studies. Each row states access scope, actual sampling unit, tests, direct findings and absent measurements. Not a systematic literature screen, secondary independent peer-review receipt or an exhaustive risk appraisal. 2026-10-11 source audit additionally verified Guo Table 1 accession units, Chigira Table 4 archived strain origins, and USFWS Figure 2 and Climate 6 score interpretation.",
     "inclusion": "Original experiments or comparative genomics on Zizania latifolia–Ustilago esculenta biology relevant to edible tissue, strain behavior, mating or vegetative cultivation.",
     "exclusion": "Agency secondary host lists, historic specimen catalogues and regulatory webpages are kept as separate source kinds, not miscast as laboratory experiments.",
     "reproducibility_limit": "Candidate search histories, complete screening counts, all full methods, and original raw data have not been independently reanalysed. No PRISMA/ROSES compliance claim until those exist.",
