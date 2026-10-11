@@ -148,6 +148,28 @@ The work was assembled on **2026-10-11** by directed source tracing and later sa
 - `"WIS-F-0064092" "Zizania aquatica" Ustilago`
 - `"Mycological Exchange of 1921" 58 Zizania aquatica`
 
+### Targeted modern host/pathology screen, 11 October 2026
+
+A second directed search pass targeted **modern North American host diagnoses**, not the 1911 specimen. Three literal search queries executed this date were:
+
+- `Ustilago esculenta Zizania palustris pathogen laboratory host susceptibility inoculation primary study`
+- `Zizania aquatica Ustilago esculenta original pathogenicity record North America native wild rice molecular`
+- `Zizania palustris fungal diseases Fusarium brown spot false smut Ustilago esculenta wild rice`
+
+This is a **screen of specific inspected leads**, not a complete list of all web-search hits, a database-wide search history or a basis for an exhaustive negative claim. Source disposition preserves **which observable is actually supported**:
+
+| Inspected source | Admitted use in this review | Why this is not direct native *U. esculenta* diagnosis |
+| --- | --- | --- |
+| Watson, Tidwell & Fogle (1991), *Plant Disease* 75:1075 | Original North American introduced-host incursion | Diagnosed *U. esculenta* on **Asian *Z. latifolia***, not a native species |
+| Bowden & Eschen (1986), *Plant Disease* 70:800 | Positive native ***Z. aquatica*** disease comparison | Smut named ***Entyloma lineatum***, a different organism |
+| Nyvall & Percich (1999), *Plant Disease* 83:936–938 | Positive native ***Z. palustris*** crop pathology comparison | Brown spot and blotch attributed to ***Bipolaris*** spp., not *U. esculenta* |
+| McGilp et al. (2023), *Crop Science*, §5.2 | Modern peer-reviewed native fungal-disease overview | Lists ***Eballistra lineata*** smut and other diseases; omission of *U. esculenta* is **not** a powered negative |
+| Species Fungorum, record 467756 | Check *Entyloma lineatum* → ***Eballistra lineata*** accepted synonym | A nomenclatural identity, not evidence of a recent native infection |
+| Xu et al. (2010), *Molecular Phylogenetics and Evolution* | Correct four-species North American/Asian *Zizania* relationships | Plant phylogeny does not assay fungal host range |
+| Chigira et al. (2023), *Microbes and Environments* | Asian fungal mating-type diversity; Japanese/Chinese accession identities | Does not inoculate or sample North American *Zizania* |
+
+**Observed review result:** no primary assay verifying ***U. esculenta*** in a correctly identified native North American ***Zizania*** species emerged **from this bounded inspected set**. That sentence describes this screen, not a biological absence, resistance demonstration, literature-wide conclusion, or denominator suitable for a formal review. A broader study must save search-platform name, exact date/range, query, full returned hit list, deduplicated records, full-text retrieval status, named screeners, exclusions and risk-of-bias before PRISMA-ScR/ROSES reporting.
+
 Source categories admitted into this targeted set were original archival catalogue entries, taxonomic authority records, modern scientific papers with resolved authors/DOI, first-party agency risk material and current published institutional records. Secondary unattributed host lists were retained as **claims to trace**, not upgraded to experimental observations. The publicly accessible USDA 1922 PDF and USDA-NRCS 2024 guide were read for the specifically cited entries; neither was treated as a modern taxonomic redetermination. Commercial source previews and database abstracts are marked as limited evidence where original full experimental methods were not independently checked.
 
 The following **cannot** be reported as completed: independent duplicate screeners, systematic search of all databases, full-text access to every cited study, sensitivity assessment, an exhaustive native-host-negative survey, licensed release, accepted scientific review, and definitive federal commodity admissibility. The protocol should be frozen prospectively before any later systematic claim.
