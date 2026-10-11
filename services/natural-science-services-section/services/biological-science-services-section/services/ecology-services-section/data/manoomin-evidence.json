@@ -181,6 +181,58 @@
       "date_precision": "webpage",
       "name": "7 CFR 360.200 named Federal noxious weed taxa",
       "source_section": "Aquatic and wetland weed enumerated list as inspected 2026-10-11"
+    },
+    {
+      "id": "mcgilp-2023-native-wildrice",
+      "kind": "peer_reviewed_review",
+      "url": "https://doi.org/10.1002/csc2.20973",
+      "date": "2023",
+      "date_precision": "year",
+      "name": "McGilp et al. 2023 Crop Science, Northern Wild Rice breeding, genetics and conservation",
+      "source_section": "Section 5.2 Fungal pathogens: Bipolaris oryzae and Eballistra lineata, and differential disease impact."
+    },
+    {
+      "id": "speciesfungorum-eballistra",
+      "kind": "taxonomic_authority",
+      "url": "https://www.speciesfungorum.org/names/Synonymy.asp?RecordId=467756",
+      "date": "undated",
+      "date_precision": "webpage",
+      "name": "Species Fungorum accepted Eballistra lineata, synonym Entyloma lineatum",
+      "source_section": "Synonymy and nomenclatural authority: Entyloma lineatum (Cooke) Davis and Ustilago lineata Cooke correspond to Eballistra lineata, not Ustilago esculenta."
+    },
+    {
+      "id": "bowden-1986-idaho",
+      "kind": "primary_study",
+      "url": "https://www.apsnet.org/publications/plantdisease/backissues/Documents/1986Abstracts/PD_70_800b.htm",
+      "date": "1986",
+      "date_precision": "year",
+      "name": "Bowden and Eschen 1986, First Report of Wild Rice Diseases in Idaho",
+      "source_section": "Plant Disease 70:800, 1984 Idaho survey abstract, identified Entyloma lineatum stem smut, among other pathogens.",
+      "study_extraction": {
+        "evidence_access": "Original peer-reviewed Plant Disease disease note abstract read via APS 2026-10-11; complete methods/tables not independently obtained.",
+        "sampling_unit": "Three Idaho commercial Zizania aquatica fields totaling 50 hectares and a 20-ha Benewah Lake location surveyed during anthesis and maturity in 1984.",
+        "method": "Field plant-disease survey; fungi and bacteria isolated from stem and foliar lesions; smut identified by characteristic leaf/culm/sheath symptoms.",
+        "directly_observed": "Smut diagnosed and reported as Entyloma lineatum along with named other pathogens at low incidence (<5%) and severity (<1%) in the examined 1984 sites.",
+        "not_measured": "Not a species-specific Ustilago esculenta molecular screen, not a susceptibility challenge of North American native hosts, and not a broad absence survey of all future pathogen introductions.",
+        "decision_relevance": "An original native wild-rice smut example is a different fungal taxon, so the word 'smut' alone cannot identify U. esculenta."
+      }
+    },
+    {
+      "id": "nyvall-1999-brownspot",
+      "kind": "primary_study",
+      "url": "https://doi.org/10.1094/PDIS.1999.83.10.936",
+      "date": "1999",
+      "date_precision": "year",
+      "name": "Nyvall and Percich 1999, fungal brown spot and spot blotch in cultivated Minnesota wild rice",
+      "source_section": "Plant Disease 83:936–938; publisher/UMN abstract on disease source and lesion observations.",
+      "study_extraction": {
+        "evidence_access": "PubMed/University of Minnesota indexed abstract read 2026-10-11; full paper tables and raw lesion assays not independently reproduced.",
+        "sampling_unit": "Cultivated Zizania palustris leaf/stem lesions sampled across development stages in Minnesota wild-rice fields; full field count and design not reconstructed from abstract.",
+        "method": "Original field disease observations and fungal isolation from lesions, compared over plant growth stages.",
+        "directly_observed": "Fungal brown spot attributed to Bipolaris oryzae and spot blotch to Bipolaris sorokiniana in Minnesota cultivated wild rice, with stage-specific lesion isolation results.",
+        "not_measured": "Not Ustilago esculenta isolation, a contemporary native-bed disease census, or a host challenge for Asian jiaobai fungus.",
+        "decision_relevance": "Provides a primary, positive native-wild-rice disease comparator rather than inferring native smut from unrelated Asian fungal biology."
+      }
     }
   ],
   "claims": [
@@ -590,6 +642,60 @@
         "The excluded mapped records do not justify declaring naturalized Z. latifolia in Maryland or Virginia.",
         "They also do not establish that introduced research plants are currently absent; they specify the evidentiary meaning of the mapped records as characterized by FWS."
       ]
+    },
+    {
+      "id": "native-wildrice-smut-eballistra-not-ustilago",
+      "track": "differential_diagnosis",
+      "status": "source_report",
+      "species": "Zizania palustris and Zizania aquatica",
+      "scope": "Published North American wild-rice disease literature and recognized smut nomenclature",
+      "statement": "The smut reported on native wild rice as Entyloma lineatum is now treated taxonomically as Eballistra lineata, a different fungal species from Ustilago esculenta.",
+      "source_ids": [
+        "bowden-1986-idaho",
+        "mcgilp-2023-native-wildrice",
+        "speciesfungorum-eballistra"
+      ],
+      "source_locator": "Bowden and Eschen 1986 Plant Disease 70:800 abstract (native Z. aquatica smut); McGilp et al. 2023 Crop Science §5.2 lists Eballistra lineata for northern Z. palustris; Species Fungorum record 467756 synonyms of Eballistra lineata.",
+      "independent_event": "native-wildrice-smut-taxonomic-record",
+      "limits": [
+        "A symptom or the generic word smut does not identify Ustilago esculenta or establish a native host switch.",
+        "A 1984/1986 regional disease record is not a 2026 field screen or proof that future U. esculenta introductions cannot occur."
+      ]
+    },
+    {
+      "id": "minnesota-documented-brownspot",
+      "track": "established_native_disease",
+      "status": "documented",
+      "species": "Zizania palustris",
+      "scope": "1999 Minnesota wild-rice crop fungal brown spot and spot blotch study",
+      "statement": "Nyvall and Percich documented Bipolaris oryzae fungal brown spot and Bipolaris sorokiniana spot blotch in Minnesota cultivated northern wild rice.",
+      "source_ids": [
+        "nyvall-1999-brownspot",
+        "mcgilp-2023-native-wildrice"
+      ],
+      "source_locator": "Nyvall and Percich 1999 Plant Disease 83:936–938 indexed abstract; McGilp et al. 2023 Crop Science §5.2 reviewed fungal pathogens and their known impact.",
+      "independent_event": "nyvall-1999-minnesota-bipolaris-diagnosis",
+      "limits": [
+        "Positive evidence for these native-rice pathogens is not a Ustilago esculenta assay and not an estimate of manoomin disease across all natural waters.",
+        "Severity in commercial rice paddies cannot be transferred to Tribal-managed natural beds without conditions."
+      ]
+    },
+    {
+      "id": "modern-native-pathology-review",
+      "track": "evidence_review_scope",
+      "status": "source_report",
+      "species": "Zizania palustris",
+      "scope": "Peer-reviewed 2023 Crop Science review of northern wild-rice pathogens and crop management",
+      "statement": "The 2023 northern wild-rice review enumerates fungal brown spot, Eballistra lineata smut and several other established pathogens; it does not report a confirmed Ustilago esculenta infection of native wild rice among its listed diseases.",
+      "source_ids": [
+        "mcgilp-2023-native-wildrice"
+      ],
+      "source_locator": "McGilp et al. 2023 Crop Science §5.2 'Fungal pathogens', crop disease list and cited literature; not a systematic absence screen of Ustilago.",
+      "independent_event": "mcgilp-2023-review-native-disease-literature",
+      "limits": [
+        "Absence of U. esculenta from a review's list is not evidence of resistance, negative molecular assays, or proof of no case anywhere.",
+        "The review focuses northern Z. palustris and production/stewardship science, not all North American species or wild-rice habitats."
+      ]
     }
   ],
   "release_gates": {
@@ -601,7 +707,7 @@
   "source_notes": "Evidence statuses describe what source texts support in their own host/material context, not independent scientific acceptance, measured contemporary risk, or official U.S. commodity compliance. Sources may reference overlapping scientific study populations; event identifiers must not be treated as counts of independent infected plants. Added source-critical differentiators: partial MT infection phenotype is not a categorical safety rule because some T/MT mixed pairings infected cultivated Asian hosts; FWS 2025 documents old living-plant research introductions; NZ live-plant management differs from US food import status. Existing stewardship plans are public, not external consent.",
   "extraction_protocol": {
     "completed_on": "2026-10-11",
-    "description": "Targeted source-critical extraction from four selected primary studies. Each row states access scope, actual sampling unit, tests, direct findings and absent measurements. Not a systematic literature screen, secondary independent peer-review receipt or an exhaustive risk appraisal. 2026-10-11 source audit additionally verified Guo Table 1 accession units, Chigira Table 4 archived strain origins, and USFWS Figure 2 and Climate 6 score interpretation.",
+    "description": "Targeted source-critical extraction from four selected primary studies. Each row states access scope, actual sampling unit, tests, direct findings and absent measurements. Not a systematic literature screen, secondary independent peer-review receipt or an exhaustive risk appraisal. 2026-10-11 source audit additionally verified Guo Table 1 accession units, Chigira Table 4 archived strain origins, and USFWS Figure 2 and Climate 6 score interpretation. Added an original 1986 Idaho native-wild-rice smut survey and 1999 Minnesota primary brownspot study, plus 2023 northern wild-rice review and taxonomic synonymy to distinguish real native pathogens from U. esculenta.",
     "inclusion": "Original experiments or comparative genomics on Zizania latifolia–Ustilago esculenta biology relevant to edible tissue, strain behavior, mating or vegetative cultivation.",
     "exclusion": "Agency secondary host lists, historic specimen catalogues and regulatory webpages are kept as separate source kinds, not miscast as laboratory experiments.",
     "reproducibility_limit": "Candidate search histories, complete screening counts, all full methods, and original raw data have not been independently reanalysed. No PRISMA/ROSES compliance claim until those exist.",
