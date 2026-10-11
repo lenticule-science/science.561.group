@@ -11,7 +11,7 @@ tags: [ecology, mycology, botany, plant-pathology, biosecurity, scientific-revie
 
 # *Ustilago esculenta* and native North American wild rice: an evidence assessment
 
-**Working paper, version 0.7 — 11 October 2026. Not independently scientifically received, peer reviewed, or accepted for L-Space scholarly release.**
+**Working paper, version 0.8 — 11 October 2026. Not independently scientifically received, peer reviewed, or accepted for L-Space scholarly release.**
 
 Research synthesis: ChatGPT-Web for Lenticule Science. No other authorship or tribal institutional endorsement is asserted. The [underlying ecological evidence register](../../../manoomin-jiaobai-ustilago-esculenta-evidence.md) is the maintained source record; this manuscript states the argument and its current limits.
 
@@ -64,6 +64,14 @@ The California Department of Food and Agriculture's **2017 fungus assessment** l
 In the same agency's **2018 *Z. latifolia* assessment**, a responding CDFA botanist stated that *Z. latifolia* was the only **known** host and that infection of *Z. palustris* had **not** been tested [CDFA 2018]. A 2015 genomic study described *Z. latifolia* as the only known host [Guo 2015]. A 2016 Indian microscopy/genetic study independently identified *U. esculenta* on the Asian host [Sinha 2016], without testing an American host. The contradictions are not resolved merely by counting how many sources mention the native taxon.
 
 A USDA-NRCS **2024 native *Z. aquatica* guide** says that the plant's culms may be infected by *U. esculenta* but cites Kealey, Kosikowski and Gray (1981). That cited article is explicitly about **corn smut (*U. maydis*) as a food source** [NRCS 2024; Kealey 1981]. The citation does not establish *U. esculenta* infecting native *Z. aquatica*. We cannot determine from this miscitation whether the guide's biological claim originated elsewhere. Consequently, it is a provenance defect, **not** proof of resistance.
+
+### 3.1a. An observed native smut is a different fungus
+
+An overlooked source of diagnostic confusion is that **North American wild rice already has documented fungal diseases**. A 2023 *Crop Science* review of northern wild rice (*Zizania palustris*) identifies its established smut as ***Eballistra lineata***, with fungal brown spot from ***Bipolaris oryzae*** among the most damaging cultivated-rice diseases [McGilp et al. 2023, §5.2]. **Species Fungorum** explicitly lists ***Entyloma lineatum***, the name used in older North American disease literature, as a synonym of ***Eballistra lineata***. It is **not** the Asian jiaobai fungus ***Ustilago esculenta*** [Species Fungorum, taxon 467756].
+
+This comparison is supported by original disease observations rather than a modern review alone. Bowden and Eschen's 1986 *Plant Disease* note reports smut attributable to *Entyloma lineatum* in *Zizania aquatica* examined at Idaho fields and Benewah Lake in 1984 [Bowden & Eschen 1986]. Nyvall and Percich (1999) investigated Minnesota cultivated *Z. palustris* lesions and documented ***Bipolaris oryzae*** brown spot and ***B. sorokiniana*** spot blotch [Nyvall & Percich 1999]. Neither is direct evidence of *U. esculenta* infecting native wild rice. The studies were bounded by locality, host, assay and date; their lack of a report about a different pathogen is **not** a powered negative *U. esculenta* survey.
+
+Thus three statements must never be conflated: **(1)** there is diagnosed smut or fungal disease in native wild rice; **(2)** that smut is specifically *U. esculenta*; **(3)** viable *U. esculenta* has spread from a present imported commodity to an identified native stand. The reviewed native literature establishes examples of (1), but not (2) or (3). A plant pathology reviewer should be able to check this distinction without assuming native rice is disease-free.
 
 | Evidence item | Host printed | Direct evidence type | Native-host conclusion |
 | --- | --- | --- | --- |
@@ -179,6 +187,10 @@ A curator's high-resolution original label scan, associated host voucher, exchan
 
 ## References
 
+- **McGilp L. et al. (2023).** [Northern Wild Rice (*Zizania palustris*) breeding, genetics, and conservation](https://doi.org/10.1002/csc2.20973). *Crop Science*, §5.2 details known fungal brown spot, smut (*Eballistra lineata*) and other diseases; a narrative review, not a negative *U. esculenta* study.
+- **Species Fungorum.** [*Eballistra lineata*, synonymy record 467756](https://www.speciesfungorum.org/names/Synonymy.asp?RecordId=467756), showing *Entyloma lineatum* and *Ustilago lineata* (a different epithet from *esculenta*) in its nomenclatural history.
+- **Bowden R. L., Eschen D. J. (1986).** [First Report of Wild Rice Diseases in Idaho](https://www.apsnet.org/publications/plantdisease/backissues/Documents/1986Abstracts/PD_70_800b.htm), *Plant Disease* 70:800, original 1984 *Z. aquatica* surveys and *E. lineatum* smut.
+- **Nyvall R. F., Percich J. A. (1999).** [Development of fungal brown spot and spot blotch on cultivated wild rice in Minnesota](https://doi.org/10.1094/PDIS.1999.83.10.936), *Plant Disease* 83:936–938, original *Z. palustris* lesion isolation.
 - **GLIFWC.** [Ganawenindiwag Manoomin Anishinaabeg](https://glifwc.org/stewardship/ganawenindiwag-manoomin-anishinaabeg). Steward-owned public account of manoomin research, hydrology and existing work.
 - **Wisconsin DNR (2026-09-10).** [Wild Rice Stewardship Council October 7 agenda](https://dnr.wisconsin.gov/calendar/meeting/130251), scheduled agenda only.
 - **Minnesota DNR (2026-07-28).** [Proposed Cedar Lake Manoomin Restoration Project](https://www.dnr.state.mn.us/news/2026/07/28/minnesota-dnr-accepting-comments-environmental-review-documents-proposed-cedar-lake-manoomin-restoration-project), Fond du Lac collaboration proposal, not completed construction.
@@ -206,4 +218,4 @@ A curator's high-resolution original label scan, associated host voucher, exchan
 - **Tricco A. C. et al. (2018).** [PRISMA extension for scoping reviews](https://doi.org/10.7326/M18-0850). *Annals of Internal Medicine* 169:467–473.
 - **Haddaway N. R. et al. (2018).** [ROSES reporting standards](https://doi.org/10.1186/s13750-018-0121-7). *Environmental Evidence* 7:7.
 
-*Version 0.7: targeted evidence synthesis; scientific receiving, full literature screening, current APHIS determination, original specimen examination, rights decision and external review remain open.*
+*Version 0.8: targeted evidence synthesis; scientific receiving, full literature screening, current APHIS determination, original specimen examination, rights decision and external review remain open.*
