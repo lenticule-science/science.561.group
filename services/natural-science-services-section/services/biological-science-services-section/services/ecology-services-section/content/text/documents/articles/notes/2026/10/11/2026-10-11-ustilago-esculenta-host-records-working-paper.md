@@ -11,7 +11,7 @@ tags: [ecology, mycology, botany, plant-pathology, biosecurity, scientific-revie
 
 # *Ustilago esculenta* and native North American wild rice: an evidence assessment
 
-**Working paper, version 0.8 — 11 October 2026. Not independently scientifically received, peer reviewed, or accepted for L-Space scholarly release.**
+**Working paper, version 0.9 — 11 October 2026. Not independently scientifically received, peer reviewed, or accepted for L-Space scholarly release.**
 
 Research synthesis: ChatGPT-Web for Lenticule Science. No other authorship or tribal institutional endorsement is asserted. The [underlying ecological evidence register](../../../manoomin-jiaobai-ustilago-esculenta-evidence.md) is the maintained source record; this manuscript states the argument and its current limits.
 
@@ -65,6 +65,10 @@ In the same agency's **2018 *Z. latifolia* assessment**, a responding CDFA botan
 
 A USDA-NRCS **2024 native *Z. aquatica* guide** says that the plant's culms may be infected by *U. esculenta* but cites Kealey, Kosikowski and Gray (1981). That cited article is explicitly about **corn smut (*U. maydis*) as a food source** [NRCS 2024; Kealey 1981]. The citation does not establish *U. esculenta* infecting native *Z. aquatica*. We cannot determine from this miscitation whether the guide's biological claim originated elsewhere. Consequently, it is a provenance defect, **not** proof of resistance.
 
+**A useful directly observed host comparison comes from wild *Asian* rice, not American manoomin.** Zhao et al. (2019) sampled **824 putatively wild *Zizania latifolia* plants in 32 populations across China**, recording **five infected individuals** and isolating *U. esculenta* from five wild and 32 cultivated host accessions. This establishes field association of the fungus with **wild populations of its known Asian host**, not exclusively selected swollen-stem food cultivars. The authors also found that several putatively wild plant samples had cultivar-like genetic assignments; infection status was not independently re-stratified for those samples in this review. No extrapolated population prevalence or probability for American *Z. palustris*, *Z. aquatica*, or *Z. texana* is justified. **Five field-infected Asian wild plants in Zhao (2019) are also not the same sample as five harvested edible galls in Tu (2019).** Their outcomes, independent units and sampling frames differ.
+
+Zou et al. (2024) subsequently resequenced **168 wild Chinese *Z. latifolia* plants from 42 populations** for genomic adaptation and climate offset. They *cited* Zhao's earlier five-in-824 finding; this later plant-genomic dataset is **not an independent fungus-infection survey** or a Great Lakes invasive-plant forecast. Tracking source dependence is essential: two articles mentioning the same field record are not two confirmed wild-infection studies.
+
 ### 3.1a. An observed native smut is a different fungus
 
 An overlooked source of diagnostic confusion is that **North American wild rice already has documented fungal diseases**. A 2023 *Crop Science* review of northern wild rice (*Zizania palustris*) identifies its established smut as ***Eballistra lineata***, with fungal brown spot from ***Bipolaris oryzae*** among the most damaging cultivated-rice diseases [McGilp et al. 2023, §5.2]. **Species Fungorum** explicitly lists ***Entyloma lineatum***, the name used in older North American disease literature, as a synonym of ***Eballistra lineata***. It is **not** the Asian jiaobai fungus ***Ustilago esculenta*** [Species Fungorum, taxon 467756].
@@ -72,6 +76,14 @@ An overlooked source of diagnostic confusion is that **North American wild rice 
 This comparison is supported by original disease observations rather than a modern review alone. Bowden and Eschen's 1986 *Plant Disease* note reports smut attributable to *Entyloma lineatum* in *Zizania aquatica* examined at Idaho fields and Benewah Lake in 1984 [Bowden & Eschen 1986]. Nyvall and Percich (1999) investigated Minnesota cultivated *Z. palustris* lesions and documented ***Bipolaris oryzae*** brown spot and ***B. sorokiniana*** spot blotch [Nyvall & Percich 1999]. Neither is direct evidence of *U. esculenta* infecting native wild rice. The studies were bounded by locality, host, assay and date; their lack of a report about a different pathogen is **not** a powered negative *U. esculenta* survey.
 
 Thus three statements must never be conflated: **(1)** there is diagnosed smut or fungal disease in native wild rice; **(2)** that smut is specifically *U. esculenta*; **(3)** viable *U. esculenta* has spread from a present imported commodity to an identified native stand. The reviewed native literature establishes examples of (1), but not (2) or (3). A plant pathology reviewer should be able to check this distinction without assuming native rice is disease-free.
+
+### 3.1b. A real native-host causal demonstration exists—but for another organism
+
+Doan and Davis (2019) provide an appropriate methodological comparison for modern manoomin pathology. Working with symptomatic *Zizania palustris* and the newly described **oomycete *Pythiogeton manoomin***, they isolated and identified the organism using morphology and ITS sequence analysis, inoculated the named native host in controlled greenhouse trials, observed root/basal stalk rot in **84% of their inoculated plants** and damping-off in **71% of tested seedlings**, and re-isolated the same organism from diseased plants. These are **experimental outcomes for *Pythiogeton manoomin***, not national incidence and emphatically **not *Ustilago esculenta***.
+
+The study illustrates evidence missing for a native *U. esculenta* claim: specifically identified native host, specifically identified suspected pathogen, deliberately controlled inoculation, suitable negative controls, symptom reproduction, and organism re-isolation or independent molecular confirmation. It does **not** authorize our corporation or unqualified observers to transport fungi or conduct pathogen challenge tests. Such work belongs in competent, duly authorized plant-health laboratories and with Tribal stewardship authority.
+
+**Replication caveat:** the published greenhouse-methods text prints daytime/nighttime temperatures of approximately **80–85°C and 65–70°C**, inconsistent with live-host physiology and the paper's own reported pathogen optimum near 25°C. This appears to be a temperature-unit reporting error (possibly Fahrenheit), **not** permission to silently reinterpret the numbers. The original authors or an official correction would need to settle a literal replication protocol. We note the problem rather than claiming to have reproduced the greenhouse test.
 
 | Evidence item | Host printed | Direct evidence type | Native-host conclusion |
 | --- | --- | --- | --- |
@@ -209,6 +221,9 @@ A curator's high-resolution original label scan, associated host voucher, exchan
 
 ## References
 
+- **Zhao Y. et al. (2019).** [Inferring the origin of cultivated *Zizania latifolia*, an aquatic vegetable of a plant–fungus complex](https://doi.org/10.3389/fpls.2019.01406), *Frontiers in Plant Science* 10:1406. Original Chinese sampling of 824 putatively wild hosts/32 populations and five observed *U. esculenta*-infected individuals, with cultivarlike genotype caveats.
+- **Zou Y. et al. (2024).** [Signatures of local adaptation and maladaptation to future climate in wild *Zizania latifolia*](https://doi.org/10.1038/s42003-024-07036-1), *Communications Biology* 7:1313. Independent Chinese plant-genomic study of 168/42, **not** an independent verification of Zhao's infection count.
+- **Doan H. K., Davis R. M. (2019).** [*Pythiogeton manoomin*, a new species causing root and basal stalk rot of wild rice in the United States](https://doi.org/10.1080/21501203.2019.1635216), *Mycology* 10:243–249. Controlled native-host inoculation/re-isolation of a **different oomycete**, with apparent greenhouse temperature-unit discrepancy requiring clarification.
 - **McGilp L. et al. (2023).** [Northern Wild Rice (*Zizania palustris*) breeding, genetics, and conservation](https://doi.org/10.1002/csc2.20973). *Crop Science*, §5.2 details known fungal brown spot, smut (*Eballistra lineata*) and other diseases; a narrative review, not a negative *U. esculenta* study.
 - **Species Fungorum.** [*Eballistra lineata*, synonymy record 467756](https://www.speciesfungorum.org/names/Synonymy.asp?RecordId=467756), showing *Entyloma lineatum* and *Ustilago lineata* (a different epithet from *esculenta*) in its nomenclatural history.
 - **Bowden R. L., Eschen D. J. (1986).** [First Report of Wild Rice Diseases in Idaho](https://www.apsnet.org/publications/plantdisease/backissues/Documents/1986Abstracts/PD_70_800b.htm), *Plant Disease* 70:800, original 1984 *Z. aquatica* surveys and *E. lineatum* smut.
@@ -240,4 +255,4 @@ A curator's high-resolution original label scan, associated host voucher, exchan
 - **Tricco A. C. et al. (2018).** [PRISMA extension for scoping reviews](https://doi.org/10.7326/M18-0850). *Annals of Internal Medicine* 169:467–473.
 - **Haddaway N. R. et al. (2018).** [ROSES reporting standards](https://doi.org/10.1186/s13750-018-0121-7). *Environmental Evidence* 7:7.
 
-*Version 0.8: targeted evidence synthesis; scientific receiving, full literature screening, current APHIS determination, original specimen examination, rights decision and external review remain open.*
+*Version 0.9: targeted evidence synthesis; scientific receiving, full literature screening, current APHIS determination, original specimen examination, rights decision and external review remain open.*
