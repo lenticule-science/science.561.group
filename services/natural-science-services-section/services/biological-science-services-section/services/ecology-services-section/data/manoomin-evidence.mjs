@@ -12,6 +12,11 @@ export function validateEvidence(d){
   if(!/^https:\/\//.test(s?.url||""))problems.push("missing HTTPS source: "+s?.id);
   if(s.date_precision==="year"&&!/^[0-9]{4}$/.test(s.date||""))problems.push("imprecise year recorded as exact date: "+s.id);
   if(s.date_precision==="webpage"&&s.date!=="undated")problems.push("undated webpage given false publication date: "+s.id);
+  if(s.kind==="primary_study"){
+   for(const k of ["evidence_access","sampling_unit","method","directly_observed","not_measured","decision_relevance"]){
+    if(!isString(s?.study_extraction?.[k]))problems.push("primary study missing "+k+": "+s.id);
+   }
+  }
   if(typeof s?.id==="string")seenSources.set(s.id,s);
  }
  for(const c of d.claims){
@@ -56,7 +61,7 @@ export function forEditorialReview(d){
  const failures=validateEvidence(d);
  if(failures.length)throw new Error(failures.join("; "));
  return d.claims.filter(c=>c.status==="documented"||c.status==="source_report").map(c=>({
-  id:c.id,proposition:c.statement,source_refs:c.source_ids.map(id=>{const s=d.sources.find(x=>x.id===id);return {id:s.id,url:s.url,kind:s.kind}}),
+  id:c.id,proposition:c.statement,source_refs:c.source_ids.map(id=>{const s=d.sources.find(x=>x.id===id);return {id:s.id,url:s.url,kind:s.kind,...(s.kind==="primary_study"?{sampling_unit:s.study_extraction.sampling_unit,method:s.study_extraction.method,directly_observed:s.study_extraction.directly_observed,not_measured:s.study_extraction.not_measured,evidence_access:s.study_extraction.evidence_access}:{})}}),
   evidence_status:c.status,scope:c.scope,limitations:c.limits,independent_event:c.independent_event,
   eligible_for_publication:false
  }));
