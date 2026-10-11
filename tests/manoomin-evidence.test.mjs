@@ -148,7 +148,7 @@ test('noxious-weed enumeration absence is never U.S. import authorization',()=>{
 
 test('primary studies require a real experimental extraction',()=>{
  const primaries=source.sources.filter(s=>s.kind==='primary_study');
- assert.equal(primaries.length,4);
+ assert.equal(primaries.length,6);
  for(const row of primaries){
   assert.ok(row.study_extraction?.sampling_unit);
   assert.ok(row.study_extraction?.method);
@@ -216,4 +216,45 @@ test('Guo and Chigira primary samples have actual accession and country provenan
  assert.match(chigira.sampling_unit,/nine sourced from Japan/);
  assert.match(chigira.sampling_unit,/MAFF 305616/);
  assert.match(chigira.evidence_access,/Table 4/);
+});
+
+test('native rice stem smut uses correct accepted taxonomy, not the Asian pathogen',()=>{
+ const claim=byId(source,'native-wildrice-smut-eballistra-not-ustilago');
+ assert.equal(claim.status,'source_report');
+ assert.match(claim.statement,/Entyloma lineatum/);
+ assert.match(claim.statement,/Eballistra lineata/);
+ assert.match(claim.limits.join(' '),/does not identify Ustilago esculenta/);
+ const synonym=source.sources.find(s=>s.id==='speciesfungorum-eballistra');
+ assert.equal(synonym.kind,'taxonomic_authority');
+ assert.match(synonym.url,/467756/);
+});
+
+test('native disease positive controls cannot be treated as pathogen absence',()=>{
+ const brown=byId(source,'minnesota-documented-brownspot');
+ assert.equal(brown.status,'documented');
+ assert.match(brown.statement,/Bipolaris oryzae/);
+ assert.match(brown.statement,/Bipolaris sorokiniana/);
+ assert.match(brown.limits.join(' '),/not a Ustilago esculenta assay/);
+ const review=byId(source,'modern-native-pathology-review');
+ assert.match(review.limits.join(' '),/not evidence of resistance/);
+ assert.equal(byId(source,'american-native-host-infection').status,'unresolved');
+});
+
+test('new native fungal field studies also have bounded primary extraction',()=>{
+ for(const id of ['bowden-1986-idaho','nyvall-1999-brownspot']){
+  const s=source.sources.find(row=>row.id===id);
+  assert.equal(s.kind,'primary_study');
+  assert.ok(s.study_extraction.sampling_unit);
+  assert.ok(s.study_extraction.not_measured);
+  assert.match(s.study_extraction.not_measured,/not|Not/);
+ }
+});
+
+test('primary review does not masquerade as a native host challenge',()=>{
+ const review=source.sources.find(s=>s.id==='mcgilp-2023-native-wildrice');
+ assert.equal(review.kind,'peer_reviewed_review');
+ assert.equal(byId(source,'modern-native-pathology-review').status,'source_report');
+ const d=copy();byId(d,'american-native-host-infection').status='documented';
+ byId(d,'american-native-host-infection').source_ids=['mcgilp-2023-native-wildrice'];
+ assert.match(validateEvidence(d).join(' '),/native infection lacks direct diagnosis/);
 });
