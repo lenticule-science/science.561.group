@@ -1,10 +1,11 @@
+import {readPublishedTable1} from './published-table1-fixture.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {assaySourceToInstrument} from '../source-to-instrument-readiness.mjs';
 const read=(path)=>JSON.parse(readFileSync(new URL(path,import.meta.url),'utf8'));
 const method=read('../method-source-20261011.json');
-const table1=read('../paper-table1.json');
+const table1=readPublishedTable1();
 const table2=read('../paper-table2-transcribed.json');
 const assay=(m=method,a=table1,b=table2)=>assaySourceToInstrument(m,a,b);
 

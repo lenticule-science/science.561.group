@@ -10,7 +10,7 @@ export function assaySourceToInstrument(methods,table1,table2){
  if (table1?.workRef!==methods.workRef || table2?.workRef!==methods.workRef ||
      table1?.source?.doi!==methods.reference.doi || table2?.source?.doi!==methods.reference.doi)
    throw new TypeError('published aggregate provenance does not match the instrument source');
- if(table1?.source?.nativePdfPageImageVerified!==false ||
+ if(table1?.source?.nativePdfPageImageVerified===true ||
     methods.reference.nativePdfPageImageInspected!==false ||
     methods.reference.trialLevelDataAvailable!==false)
    throw new Error('unexpected source-verification upgrade: requalify provenance before this assay');

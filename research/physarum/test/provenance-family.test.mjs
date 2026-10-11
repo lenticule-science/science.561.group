@@ -1,10 +1,11 @@
+import {readPublishedTable1} from './published-table1-fixture.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {crossAuditDirectionTables} from '../forced-turn-audit.mjs';
 import {buildPublishedBinomialCases, auditPrintedPValues, benjaminiHochberg} from '../binomial-publication-audit.mjs';
 const read=(p)=>JSON.parse(readFileSync(new URL(p,import.meta.url),'utf8'));
-const table1=read('../paper-table1.json');
+const table1=readPublishedTable1();
 const table2=read('../paper-table2-transcribed.json');
 const printed=read('../paper-table1-pvalues-transcribed.json');
 const clone=structuredClone;
