@@ -1,0 +1,123 @@
+{
+  "status": "DRAFT-FOR-LEADER-REVIEW",
+  "admission": "unadmitted local preparation",
+  "created": "2026-10-07",
+  "intendedRepository": "red-cup-engineering/text-services-section",
+  "intendedOwnerRelativePath": "services/document-services-section/services/standard-document-release-team/content/documents/specifications/2026/10/07/semiotic-specification-release-review",
+  "packagingMethodRevision": "df2d945d584571918bcceb48c127ad30961f789a",
+  "relatedExecutiveEndeavor": "demand-15b1f81a150f7c950990d6b6100c1e86",
+  "lmtClassDefineWorkOrder": null,
+  "acceptanceDisposition": null,
+  "normativeSourceCustody": "unresolved; historical exact sources retained",
+  "transformation": "Copy seven byte-verified historical sources, three byte-verified current packaging-method artifacts, retained proposal artifacts and read evidence; add review wrapper and pinned source locator list. Original normative sources unchanged.",
+  "manifestCoverage": "Payload files only; this manifest and SHA256SUMS are excluded to avoid self-reference. SHA256SUMS includes this manifest and all payload files.",
+  "files": [
+    {
+      "path": "REVIEW.md",
+      "bytes": 6794,
+      "sha256": "bd8bcef6699d63f4054d90fcd157fcd462d8a6e2a87c23b2261ad55c5271e7a9"
+    },
+    {
+      "path": "SOURCE-LOCATORS.md",
+      "bytes": 7977,
+      "sha256": "bf8b1e67e6dea7cd8e5a5d0e21d309e3c05a154db9db1b966feb5ac985012a27"
+    },
+    {
+      "path": "current-method/PROCESS.md",
+      "bytes": 2310,
+      "sha256": "352128d33e246fd33fc99d8653c48f6461f02c1bdec0af97ec5579ec047c2d76"
+    },
+    {
+      "path": "current-method/source-and-contract-receipt.json",
+      "bytes": 4139,
+      "sha256": "6f735cc9956f2f7666d39b2093f1b1057cda1ac8c9dae628e818fed43c6fe857"
+    },
+    {
+      "path": "current-method/standard-document-release-cycle.json",
+      "bytes": 1711,
+      "sha256": "85304d1a0fd7af5a1c1d9ab740a6dd58ca4fb623492105a6b9d56c2a49b7dab4"
+    },
+    {
+      "path": "current-method/standard-document-release-team.json",
+      "bytes": 1550,
+      "sha256": "2c8ed65bb50c734037573e23536214a2f7160946eedf2ab242ceb32c80cd5dc5"
+    },
+    {
+      "path": "evidence/manifest.json",
+      "bytes": 19823,
+      "sha256": "8c7244781444b8e3ae725802b5d2ec2bf4fe357873f3df654d96687012d6d14a"
+    },
+    {
+      "path": "evidence/read-route-receipt.json",
+      "bytes": 1782,
+      "sha256": "78dd21fd5f4ce15c983d4e8ea8d6dde3ef456b35ca047ecba66492087fb66d6b"
+    },
+    {
+      "path": "evidence/verification.json",
+      "bytes": 2104,
+      "sha256": "495c694046f7bcd7edd848748fa96b77fb8c9fb4b7cc7de8db70c6b94c7cc406"
+    },
+    {
+      "path": "originals/2026-09-23-specification-of-the-semiotic-content-address.md",
+      "bytes": 6906,
+      "sha256": "fbdb3e19c70a9dfe674b16f3f178965ca7cc4eb9f14722e166dafc1e00219cdf",
+      "originalSource": "https://github.com/emsenn/bare-cedar-fog/blob/36116a727f8993d64063341d9ed5cbd281ecd00f/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-data-engineering-services-section/services/computer-content-engineering-services-section/content/text/documents/articles/specifications/2026-09-23-specification-of-the-semiotic-content-address.md"
+    },
+    {
+      "path": "originals/2026-09-23-specification-of-the-semiotic-eavt.md",
+      "bytes": 3672,
+      "sha256": "fec416e2271920d0200369993f5367dc357dface838f14f7806efce9debce2df",
+      "originalSource": "https://github.com/emsenn/bare-cedar-fog/blob/36116a727f8993d64063341d9ed5cbd281ecd00f/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/content/text/documents/articles/specifications/2026-09-23-specification-of-the-semiotic-eavt.md"
+    },
+    {
+      "path": "originals/2026-09-23-specification-of-the-semiotic-expression-notation.md",
+      "bytes": 6544,
+      "sha256": "38068b1e3b170cafdd2007741fcf21e0ca27babddd672b00ebff2fd9d93bbb70",
+      "originalSource": "https://github.com/emsenn/bare-cedar-fog/blob/36116a727f8993d64063341d9ed5cbd281ecd00f/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/content/text/documents/articles/specifications/2026-09-23-specification-of-the-semiotic-expression-notation.md"
+    },
+    {
+      "path": "originals/2026-09-27-specification-of-activitypub-plus-plus.md",
+      "bytes": 15916,
+      "sha256": "a4801ead96230f94b99f88ebc4b632f3b4e889261eb516dab4da5b2ff155d98f",
+      "originalSource": "https://github.com/emsenn/bare-cedar-fog/blob/36116a727f8993d64063341d9ed5cbd281ecd00f/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-networking-engineering-services-section/services/activitypub-services-section/content/text/documents/articles/specifications/2026-09-27-specification-of-activitypub-plus-plus.md"
+    },
+    {
+      "path": "originals/2026-09-27-specification-of-activitypub-plus-plus.specification.json",
+      "bytes": 38309,
+      "sha256": "ff47eb5c4aa7e66e6051f5e1280a491266aa3d7f159134fcc497c8307de7e1ef",
+      "originalSource": "https://github.com/emsenn/bare-cedar-fog/blob/36116a727f8993d64063341d9ed5cbd281ecd00f/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-networking-engineering-services-section/services/activitypub-services-section/content/text/documents/articles/specifications/2026-09-27-specification-of-activitypub-plus-plus.specification.json"
+    },
+    {
+      "path": "originals/draft-emsenn-activitypub-plus-plus-00.xml",
+      "bytes": 20811,
+      "sha256": "d30cba332658d37007bd8d614d6a55841283f5f7e361d6692700f0fd9ac44492",
+      "originalSource": "https://github.com/emsenn/bare-cedar-fog/blob/36116a727f8993d64063341d9ed5cbd281ecd00f/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-networking-engineering-services-section/services/activitypub-services-section/content/text/documents/articles/specifications/draft-emsenn-activitypub-plus-plus-00.xml"
+    },
+    {
+      "path": "originals/publishing-a-specification-SKILL.md",
+      "bytes": 3783,
+      "sha256": "1d229695bd06b86141e98e4bcccc5c4178dca5d6753bb992637363a48bdbe47d",
+      "originalSource": "https://github.com/emsenn/bare-cedar-fog/blob/36116a727f8993d64063341d9ed5cbd281ecd00f/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-data-engineering-services-section/services/computer-content-engineering-services-section/services/computer-documents-engineering-services-section/services/computer-article-engineering-services-section/services/specification-engineering-services-section/lib/agency/skills/publishing-a-specification/SKILL.md"
+    },
+    {
+      "path": "proposed-errata/2026-09-23-specification-of-the-semiotic-eavt.md",
+      "bytes": 4205,
+      "sha256": "b28c1f760b112702316fb868e0bcb0449382cae794de19c64c4400680769f4c5"
+    },
+    {
+      "path": "proposed-errata/2026-09-23-specification-of-the-semiotic-expression-notation.md",
+      "bytes": 7539,
+      "sha256": "da34a09a6013ff24a1115427445c6e4b3c203db57cf80eccdce017135e3faec7"
+    },
+    {
+      "path": "proposed-errata/retained-implementation-status-only.patch",
+      "bytes": 6413,
+      "sha256": "bc9b58a72504b157b20b1ddac959cdd62d63a0eaad2d5c41c00996f9d5ebcb00"
+    },
+    {
+      "path": "proposed-errata/retained-release-notes.md",
+      "bytes": 7559,
+      "sha256": "072f594829eb9653c345d99c989d0d5c23643d1585c0a11dabc3f71aa8826d3a"
+    }
+  ]
+}
