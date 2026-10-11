@@ -66,3 +66,38 @@ test('newsroom projection carries only bounded assertions, never automatic publi
  assert.equal(claims.some(c=>c.id==='retail-jiaobai-reports'),false);
  assert.equal(claims.some(c=>c.id==='culturable-at-harvest'),true);
 });
+
+
+test('every claim carries an exact reader-checkable source locator',()=>{
+ assert.ok(source.claims.every(c=>typeof c.source_locator==='string'&&c.source_locator.length>25));
+ const broken=copy();byId(broken,'culturable-at-harvest').source_locator='';
+ assert.match(validateEvidence(broken).join(' '),/missing source_locator/);
+});
+
+test('strain experiments cannot be replaced by a reddit post or generic advice',()=>{
+ const broken=copy(),claim=byId(broken,'cultivated-strain-pathogenicity-diff');
+ claim.source_ids=['reddit-2026'];
+ assert.match(validateEvidence(broken).join(' '),/strain pathogenicity claim requires experimental study/);
+});
+
+test('a federal high-risk screen establishes neither native infection nor a retail prohibition',()=>{
+ const claim=byId(source,'fws-introduced-plant-high-risk');
+ assert.equal(claim.status,'source_report');
+ assert.equal(claim.track,'plant_invasion');
+ assert.match(claim.limits.join(' '),/not a documented local/);
+ const broken=copy();byId(broken,'fws-introduced-plant-high-risk').source_ids=['reddit-2026'];
+ assert.match(validateEvidence(broken).join(' '),/invasive plant claim lacks plant-specific evidence/);
+});
+
+test('imprecise publication dates cannot quietly become specific invented dates',()=>{
+ const broken=copy();broken.sources.find(s=>s.id==='eppo-2024').date='2024-11-09';
+ assert.match(validateEvidence(broken).join(' '),/imprecise year recorded as exact date/);
+ const other=copy();other.sources.find(s=>s.id==='datcp-2025').date='2025-01-01';
+ assert.match(validateEvidence(other).join(' '),/undated webpage given false publication date/);
+});
+
+test('the organism life-cycle question and food survival question are separate',()=>{
+ assert.equal(byId(source,'cultivated-strain-pathogenicity-diff').status,'documented');
+ assert.equal(byId(source,'retail-strain-and-shipping-risk').status,'unresolved');
+ assert.equal(forEditorialReview(source).some(c=>c.id==='retail-strain-and-shipping-risk'),false);
+});

@@ -51,6 +51,8 @@ These are priorities for further evidence gathering, **not claims that any agenc
 
 The 2024 EPPO biological datasheet independently documents invasive *Z. latifolia* establishment in Hawaii and British Columbia and effects on wetland plant communities [S18]. This supports a **plant-invasion concern**, irrespective of whether *U. esculenta* can infect native annual *Zizania*. EPPO's A2 listing and policy recommendations concern the EPPO region; they are **not** United States federal prohibitions. A more recent EPPO distribution or occurrence claim does not itself prove the plant's current status at an exact US site.
 
+Independently, a **2025 U.S. Fish and Wildlife Service ecological risk screening** rated introduced *Z. latifolia* **High Risk** for the contiguous United States [S27]. Its conclusion integrates reported invasiveness and climate matching, with broad medium-to-high climate matches across much of the contiguous country. This is a stronger U.S.-specific screening basis for **plant establishment and wetland displacement**, not a finding that *U. esculenta* has infected American wild rice, nor a prediction that every suitable waterway will be invaded. EPPO and USFWS partly draw on the same historical introduced populations; these two agency syntheses do **not** count as two independent field invasions.
+
 ### Important bibliographic conflict
 
 The USDA-NRCS 2024 *Zizania aquatica* guide [S5, p. 6, “Pests and Potential Problems”] says that native annual-wild-rice culms may be infected by *U. esculenta*, citing **Kealey, Kosikowski & Gray (1981)**. The identified Kealey–Kosikowski–Gray 1981 publication is a **review of corn smut as food** [S7], not an experimental report confirming *U. esculenta* infection of *Z. aquatica*. This is a **citation-provenance discrepancy**, not proof that native *Zizania* is resistant.
@@ -64,6 +66,10 @@ In a 2018 CDFA discussion [S11], a botanist said *Z. palustris* had not been tes
 A 2016 Indian morphogenesis study of *Z. latifolia* used plant microsatellite and fungal ITS comparisons to identify the Asian host–fungus association [S21]. This is independent modern evidence for the established **Asian** association, not a diagnostic test of native American *Zizania*.
 
 A 2023 peer-reviewed study [S12] distinguishes edible **white** galls, associated with mycelial-teliospore (M-T) strains that lack visible sori at the harvesting stage, from **gray** galls full of mature teliospores. White edible tissue still contains fungal hyphae. It follows that a swollen edible stem is **not** equivalent to a visibly sporulating gall, but neither the absence of visible spores nor ordinary retail sale proves the tissue contains no fungus or presents zero phytosanitary risk. Tu et al. (2019) cultured several *U. esculenta* strains from **harvested galls** sampled at different swelling stages [S17]. Thus at least some harvested gall tissue contains culturable fungus: presence is not merely inferred from DNA or a visible gall. However, this study did **not** quantify organism survival after international shipping, retail storage, cooking or disposal, nor competence to infect an American native host. Those links remain **unmeasured**, not zero.
+
+A particularly important **2017 controlled study** compared tested MT-type isolates from edible **white** galls with T-type isolates from **gray** galls on the Asian cultivar Longjiao 2 [S26]. In the study's mating and inoculation system, MT isolates showed impaired teliospore formation and germination and an infection defect; T isolates retained a more complete infection life cycle. The paper's finding is **strain- and experimental-context-specific**. It does **not** show that all edible jiaobai is biologically sterile, that retail material can never transmit fungus, or that an MT strain can infect an untested American host. It does show why detecting culturable fungus in an edible gall [S17] is not interchangeable with documenting an infection-competent, transmissible stage [S26].
+
+**Four observations must remain distinct:** (1) fungal DNA or hyphae in tissue; (2) culturable fungus recovered from tissue; (3) viable reproductive material capable of initiating an infection in a known susceptible host; and (4) a demonstrated infection of a properly identified native North American *Zizania*. Evidence currently advances observation (2) for some harvested galls and strain-specific laboratory results relevant to (3) on **Asian** hosts. It does not establish observation (4), nor (3) for current U.S. retail specimens.
 
 This changes evidence handling: record product form and declared processing state, but do not ask the public to dissect a culm, search for sori, culture tissue, or transport specimens. A plant-health specialist, not an uninstructed observer, must decide whether and how to assess viability.
 
@@ -121,6 +127,18 @@ A negative survey only constrains the species, assay, place and time actually su
 - **S24.** USDA ARS Biocollections, [Ustilago occurrence result listing](https://biocollections.ars.usda.gov/collections/list.php?comingFrom=newsearch&page=21&taxa=164618&taxontype=2&usethes=1), consulted 2026-10-11. BPI 156812, January 1912, Washington department greenhouse; no demonstrated relation to no. 58.
 - **S25.** Species Fungorum, [*Ustilago esculenta* Henn. (1895), record 183635](https://www.speciesfungorum.org/names/NamesRecord.asp?RecordId=183635), original typification Balansa 4931 on *Z. latifolia* flowers, Vietnam. Separate original host/type record, not 1911 DC specimen.
 
+- **S26.** Zhang Y. et al. (2017). [Investigation on the differentiation of two *Ustilago esculenta* strains — implications of a relationship with the host phenotypes appearing in the fields](https://pmc.ncbi.nlm.nih.gov/articles/PMC5719756/). *BMC Microbiology* 17:228. doi:10.1186/s12866-017-1138-8. Experimental MT- vs T-type strain comparison on the Asian Longjiao 2 cultivar; infection defects cannot be generalized to all strains or to American hosts.
+- **S27.** U.S. Fish and Wildlife Service (28 April 2025). [Ecological Risk Screening Summary: Manchurian Wildrice (*Zizania latifolia*) — High Risk](https://www.fws.gov/media/ecological-risk-screening-summary-manchurian-wildrice-zizania-latifolia-high-risk). Federal ecological screening of introduced **plant** invasion and contiguous-U.S. climate match; neither an observed native infection nor a legal ruling.
+
+## Current manuscripts and evidence
+
+This ecology research currently has two distinct, **unreviewed** manuscripts, retained in the owning Science repository rather than reproduced in a news or app repository:
+
+- [Native-host and fungal evidence assessment, working paper v0.4](2026/10/11/2026-10-11-ustilago-esculenta-host-records-working-paper.md): disputed *Zizania* host records, fungal strain infection biology, original source limitations and archival appendix.
+- [Two-pathway assessment, working paper v0.1](2026/10/11/2026-10-11-two-pathways-to-wild-rice-risk-working-paper.md): imported aquatic perennial establishment versus harvested-food fungal movement, independent causal gates and U.S. federal plant-risk screening.
+
+The [machine-readable claim register and its source locators](https://github.com/lenticule-science/science-services-section/blob/main/services/natural-science-services-section/services/biological-science-services-section/services/ecology-services-section/data/manoomin-evidence.json) are verified by [conservative evidence checks](https://github.com/lenticule-science/science-services-section/blob/main/tests/manoomin-evidence.test.mjs). A source file's existence, valid checks or branch merge is **not** a scientific peer-review acceptance or permission to advertise confirmed native infection, a current illegal import or an independently received outbreak report.
+
 ## Research publication method (work not yet accepted as a paper)
 
 **Research aim:** Determine what can be defensibly established about the *U. esculenta* introduction pathway, native *Zizania* susceptibility, and consequences for manoomin. The existing evidence note is a research input, not a peer-reviewed manuscript or an independently received scientific release.
@@ -149,7 +167,7 @@ Two candidate papers address materially different questions; their boundaries sh
 | Gate | Present position | Required evidence |
 | --- | --- | --- |
 | Modern host range | CDFA secondary host list conflicts with other CDFA and scientific sources | Original confirmed observations for each named native species, properly attributed positive/negative assays if they exist |
-| Pathogen and product stage | White-vs-gray gall literature located | Assessed primary paper and limits of its inference for shipped edible stems |
+| Pathogen and product stage | 2017 MT/T inoculation contrast and 2019 gall culture reported; 2023 morphology reviewed | Confirm tested strain-specific infection competence and any **independent** postharvest transport/disposal evidence; do not equate recoverable tissue fungus with infectivity |
 | US occurrences | Historical agency accounts located | Trace original incident reports, dates, lab confirmations, and eradication follow-up; no unsupported claim of current establishment |
 | Regulatory status | 2018 statement of stem prohibition; present entry unknown | APHIS ACIR/legal text or written commodity/origin-specific determination |
 | Systematic literature completeness | Not yet established | Reproducible dated query log, screened count and exclusions |

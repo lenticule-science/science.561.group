@@ -10,17 +10,22 @@ export function validateEvidence(d){
   if(!isString(s?.id)||seenSources.has(s.id))problems.push("missing or duplicate source id");
   if(!kinds.has(s?.kind))problems.push("unknown source kind: "+s?.id);
   if(!/^https:\/\//.test(s?.url||""))problems.push("missing HTTPS source: "+s?.id);
+  if(s.date_precision==="year"&&!/^[0-9]{4}$/.test(s.date||""))problems.push("imprecise year recorded as exact date: "+s.id);
+  if(s.date_precision==="webpage"&&s.date!=="undated")problems.push("undated webpage given false publication date: "+s.id);
   if(typeof s?.id==="string")seenSources.set(s.id,s);
  }
  for(const c of d.claims){
   if(!isString(c?.id)||seenClaims.has(c.id))problems.push("missing or duplicate claim id");
   seenClaims.add(c?.id);
-  for(const field of ["track","statement","species","scope","independent_event"])if(!isString(c?.[field]))problems.push("missing "+field+": "+c?.id);
+  for(const field of ["track","statement","species","scope","independent_event","source_locator"])if(!isString(c?.[field]))problems.push("missing "+field+": "+c?.id);
   if(!statuses.has(c?.status))problems.push("invalid claim status: "+c?.id);
   if(!Array.isArray(c?.source_ids)||c.source_ids.length===0)problems.push("no sources: "+c?.id);
   if(!Array.isArray(c?.limits)||c.limits.length===0||c.limits.some(v=>!isString(v)))problems.push("no bounded limitations: "+c?.id);
   const sourceKinds=(c?.source_ids||[]).map(id=>{const s=seenSources.get(id);if(!s)problems.push("unresolved source ref "+id+": "+c?.id);return s?.kind;});
   if(c.status==="documented"&&sourceKinds.every(k=>k==="public_report"||k===undefined))problems.push("public repost promoted to documented evidence: "+c.id);
+  if(c.status==="documented"&&sourceKinds.every(k=>k!=="primary_study"&&k!=="primary_native_host_diagnosis"&&k!=="agency_assessment"))problems.push("documented claim has no competent primary or official assessment source: "+c.id);
+  if(c.track==="fungal_life_cycle"&&c.status!=="unresolved"&&!sourceKinds.includes("primary_study"))problems.push("strain pathogenicity claim requires experimental study: "+c.id);
+  if(c.track==="plant_invasion"&&c.status!=="unresolved"&&!sourceKinds.some(k=>k==="primary_study"||k==="agency_assessment"))problems.push("invasive plant claim lacks plant-specific evidence: "+c.id);
   if(c.track==="current_us_import_status"&&c.status!=="unresolved"&&!sourceKinds.includes("official_specific_ruling"))problems.push("commodity status lacks official specific ruling: "+c.id);
   if(c.track==="native_host_infection"&&c.status!=="unresolved"&&!sourceKinds.includes("primary_native_host_diagnosis"))problems.push("native infection lacks direct diagnosis: "+c.id);
   if(c.track==="retail_observations"&&c.status==="documented"&&!sourceKinds.includes("primary_field_observation"))problems.push("reposted retail report promoted to direct observation: "+c.id);

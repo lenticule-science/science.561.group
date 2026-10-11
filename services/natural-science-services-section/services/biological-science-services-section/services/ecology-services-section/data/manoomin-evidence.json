@@ -9,15 +9,17 @@
       "id": "cd-2017",
       "kind": "agency_assessment",
       "url": "https://blogs.cdfa.ca.gov/Section3162/?p=4271",
-      "date": "2017-12-01",
-      "name": "CDFA Ustilago esculenta pest rating"
+      "date": "2017",
+      "name": "CDFA Ustilago esculenta pest rating",
+      "date_precision": "year"
     },
     {
       "id": "cd-2018",
       "kind": "agency_assessment",
       "url": "https://blogs.cdfa.ca.gov/Section3162/?p=4338",
-      "date": "2018-01-05",
-      "name": "CDFA Manchurian wild rice assessment and comments"
+      "date": "2018",
+      "name": "CDFA Manchurian wild rice assessment and comments",
+      "date_precision": "year"
     },
     {
       "id": "tu-2019",
@@ -38,17 +40,18 @@
       "id": "eppo-2024",
       "kind": "agency_assessment",
       "url": "https://gd.eppo.int/taxon/ZIZLA/datasheet",
-      "date": "2024-11-09",
+      "date": "2024",
       "name": "EPPO Zizania latifolia datasheet; first published in Bulletin in 2024",
-      "date_precision": "month"
+      "date_precision": "year"
     },
     {
       "id": "datcp-2025",
       "kind": "agency_guidance",
       "url": "https://datcp.wi.gov/Pages/Programs_Services/PlantIndustryLab.aspx",
-      "date": "2025",
-      "date_precision": "year",
-      "name": "Wisconsin DATCP plant laboratory and WTCAC 2025 manoomin survey description"
+      "date": "undated",
+      "date_precision": "webpage",
+      "name": "Wisconsin DATCP plant laboratory and WTCAC 2025 manoomin survey description",
+      "event_year": 2025
     },
     {
       "id": "aphis-2026",
@@ -64,6 +67,25 @@
       "date": "2026-10-11",
       "date_precision": "observed",
       "name": "Unverified public retail observations"
+    },
+    {
+      "id": "zhang-2017",
+      "kind": "primary_study",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5719756/",
+      "date": "2017-12-06",
+      "name": "Zhang et al. 2017, BMC Microbiology 17:228, differential T/MT strain development and infection assays",
+      "doi": "10.1186/s12866-017-1138-8",
+      "source_section": "Abstract; Results; Discussion",
+      "evidence_unit": "zhang-2017-longjiao2-strains"
+    },
+    {
+      "id": "fws-2025",
+      "kind": "agency_assessment",
+      "url": "https://www.fws.gov/media/ecological-risk-screening-summary-manchurian-wildrice-zizania-latifolia-high-risk",
+      "date": "2025-04-28",
+      "name": "US Fish and Wildlife Service, Ecological Risk Screening Summary: Manchurian Wildrice (High Risk)",
+      "source_section": "Publication summary; history of invasiveness and contiguous-US climate match",
+      "evidence_unit": "usfws-2025-risk-screen"
     }
   ],
   "claims": [
@@ -82,7 +104,8 @@
       "limits": [
         "Does not establish infection in any North American native Zizania species.",
         "Does not establish environmental transmission from retailed food."
-      ]
+      ],
+      "source_locator": "Tu 2019 PubMed abstract and Chigira 2023 introduction: Z. latifolia galls contain U. esculenta"
     },
     {
       "id": "riverside-2017-introduced-host",
@@ -98,22 +121,25 @@
       "limits": [
         "This is not a native manoomin detection.",
         "Does not show current establishment."
-      ]
+      ],
+      "source_locator": "CDFA 2017 pest-rating account, sample identification in Riverside County"
     },
     {
       "id": "culturable-at-harvest",
       "track": "viable_exposure",
       "status": "documented",
       "species": "Zizania latifolia",
-      "scope": "Laboratory culture from five harvested edible galls in Japan",
+      "scope": "2019 Japanese study: five harvested galls at differing swelling stages; laboratory isolation",
       "statement": "Tu et al. reported culturing several Ustilago esculenta strains from harvested Zizania latifolia galls.",
       "source_ids": [
         "tu-2019"
       ],
       "independent_event": "tu-2019-five-samples",
       "limits": [
-        "Does not test imported retail consignments, shipping survival, disposal or infection of native hosts."
-      ]
+        "Culturing U. esculenta from gall tissue establishes recoverability at sampling, not infectious competence, spores at retail, or viability after shipping.",
+        "Five sampled galls at different swelling stages do not estimate the prevalence of viable fungus in the U.S. retail food supply."
+      ],
+      "source_locator": "Tu 2019 abstract: five harvested swollen-gall samples, isolates identified by DNA sequencing; not a post-shipment challenge"
     },
     {
       "id": "white-versus-gray-galls",
@@ -127,9 +153,10 @@
       ],
       "independent_event": "chigira-2023",
       "limits": [
-        "A white gall is not fungus-free.",
-        "Visible spore stage does not establish phytosanitary status of a consignment."
-      ]
+        "Edible white tissue can contain fungal mycelium even without visible mature spore-bearing sori.",
+        "Strain-level infectivity and life-cycle differences matter; color is not a validated diagnostic test for a retail consignment."
+      ],
+      "source_locator": "Chigira 2023 introduction: M-T edible white galls with low sorus formation, T gray galls with abundant sori"
     },
     {
       "id": "introduced-plant-spread",
@@ -145,7 +172,8 @@
       "limits": [
         "This is evidence about the plant, not a native-host fungal outbreak.",
         "EPPO regulatory listing is not U.S. import law."
-      ]
+      ],
+      "source_locator": "EPPO 2024 datasheet distribution and impact summary, a regulatory-region synthesis"
     },
     {
       "id": "cd-2018-stem-prohibition",
@@ -160,7 +188,8 @@
       "independent_event": "cd-2018-agency-assessment",
       "limits": [
         "Does not establish the current 2026 federal status of fresh or processed food products."
-      ]
+      ],
+      "source_locator": "CDFA Z. latifolia assessment dated 2018; historical stated restriction, not current federal advice"
     },
     {
       "id": "wtcac-2025-survey",
@@ -176,7 +205,8 @@
       "limits": [
         "Not evidence of Ustilago esculenta presence or absence.",
         "Does not grant outside field access or governance authority."
-      ]
+      ],
+      "source_locator": "DATCP Plant Industry Bureau Laboratory webpage, WTCAC 2025 study description and named survey targets"
     },
     {
       "id": "retail-jiaobai-reports",
@@ -191,7 +221,8 @@
       "independent_event": "reddit-indian-country-1x2x418",
       "limits": [
         "Not an independently verified product identity, importer record, rule violation or biological sample."
-      ]
+      ],
+      "source_locator": "Public October 2026 Reddit account: author describes sightings and having contacted USDA; no independent chain of custody"
     },
     {
       "id": "current-import-eligibility",
@@ -208,7 +239,8 @@
       "limits": [
         "APHIS general commodity guidance is not a Zizania-specific approval or denial.",
         "Do not accuse stores based on this unresolved question."
-      ]
+      ],
+      "source_locator": "APHIS commodity approval guide gives the process, not a Zizania-specific import ruling"
     },
     {
       "id": "american-native-host-infection",
@@ -225,6 +257,61 @@
       "limits": [
         "An uncertain host range is not proof of resistance or infection.",
         "A secondary agency list is not a directly verified native diagnosis."
+      ],
+      "source_locator": "CDFA 2017 species list; CDFA 2018 botanist commentary; primary native host diagnosis missing from reviewed corpus"
+    },
+    {
+      "id": "cultivated-strain-pathogenicity-diff",
+      "track": "fungal_life_cycle",
+      "status": "documented",
+      "species": "Ustilago esculenta on cultivated Zizania latifolia",
+      "scope": "2017 Chinese study of Longjiao 2 cultivar, two selected sexually compatible pairs of T and MT isolates, laboratory and greenhouse conditions",
+      "statement": "Zhang et al. (2017) observed T-type isolates from gray galls with more complete mating/infection and teliospore development than MT-type isolates from edible white galls; the tested MT isolates showed impaired infection and germination.",
+      "source_ids": [
+        "zhang-2017"
+      ],
+      "source_locator": "Zhang et al. 2017, PMC5719756, Abstract Results/Conclusion and infection assays; compare tested isolate pairs, not all field strains",
+      "independent_event": "zhang-2017-longjiao2-strains",
+      "limits": [
+        "The assay tested specific isolates under laboratory/greenhouse conditions on Asian Z. latifolia; no American Zizania host was tested.",
+        "Impaired infection for MT isolates does not prove complete noninfectiousness of every edible gall or every strain during all possible exposures.",
+        "This study does not assay imported market products or occurrence in North American habitats."
+      ]
+    },
+    {
+      "id": "fws-introduced-plant-high-risk",
+      "track": "plant_invasion",
+      "status": "source_report",
+      "species": "Zizania latifolia",
+      "scope": "USFWS April 2025 Ecological Risk Screening Summary, contiguous-US climate match and global invasion history",
+      "statement": "The U.S. Fish and Wildlife Service classified Zizania latifolia as High Risk based on demonstrated invasive history and broad contiguous-U.S. establishment climate match.",
+      "source_ids": [
+        "fws-2025"
+      ],
+      "source_locator": "USFWS ERSS public summary, risk category, establishment climate matching and described history of invasiveness",
+      "independent_event": "usfws-2025-risk-screen",
+      "limits": [
+        "The high-risk screening result is a potential establishment risk, not a documented local manoomin-bed displacement or a state/federal prohibitory rule.",
+        "The conclusion concerns the introduced plant's ecological invasion risk; it does not establish U. esculenta host switching."
+      ]
+    },
+    {
+      "id": "retail-strain-and-shipping-risk",
+      "track": "transmission_after_distribution",
+      "status": "unresolved",
+      "species": "Ustilago esculenta",
+      "scope": "US retail edible stems from specified foreign origin, postharvest transport, disposal and exposure",
+      "statement": "Neither the presence of an infectious T-type strain nor the viability of a transmissible life stage after real food-distribution conditions has been established for the reported U.S. retail observations.",
+      "source_ids": [
+        "zhang-2017",
+        "tu-2019",
+        "aphis-2026"
+      ],
+      "source_locator": "Contrast Zhang 2017 isolate-specific infection assays and Tu 2019 harvest isolation with missing shipment-specific retail sample and plant-health determination",
+      "independent_event": "unassayed-2026-retail-distribution",
+      "limits": [
+        "No conclusion of pathogen absence is justified by a missing commercial shipment assay.",
+        "No claim of infectious retail inoculum is justified by culturing an unrelated harvested gall."
       ]
     }
   ],
@@ -233,5 +320,6 @@
     "native_infection_confirmed": false,
     "scholarly_accepted": false,
     "note": "Do not derive a store-violation report, outbreak warning or accepted scientific release from this dataset without current primary receiving evidence and appropriate authority."
-  }
+  },
+  "source_notes": "Evidence statuses describe what source texts support in their own host/material context, not independent scientific acceptance, measured contemporary risk, or official U.S. commodity compliance. Sources may reference overlapping scientific study populations; event identifiers must not be treated as counts of independent infected plants."
 }
