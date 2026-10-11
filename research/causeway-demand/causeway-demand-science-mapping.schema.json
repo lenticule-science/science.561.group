@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Causeway demand science mapping",
+  "type": "object",
+  "required": [
+    "origin",
+    "work_ref",
+    "science_question",
+    "evidence_class",
+    "falsifier",
+    "acceptance"
+  ],
+  "properties": {
+    "origin": {
+      "const": "Causeway Services"
+    },
+    "work_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "science_question": {
+      "type": "string",
+      "minLength": 1
+    },
+    "evidence_class": {
+      "enum": [
+        "observed",
+        "reported",
+        "contested",
+        "modeled",
+        "normative"
+      ]
+    },
+    "falsifier": {
+      "type": "string",
+      "minLength": 1
+    },
+    "acceptance": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "additionalProperties": false
+}
