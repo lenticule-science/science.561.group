@@ -1,0 +1,33 @@
+name: Verify manoomin scientific evidence
+
+on:
+  pull_request:
+    paths:
+      - services/natural-science-services-section/services/biological-science-services-section/services/ecology-services-section/data/manoomin-evidence.json
+      - services/natural-science-services-section/services/biological-science-services-section/services/ecology-services-section/data/manoomin-evidence.mjs
+      - tests/manoomin-evidence.test.mjs
+      - .github/workflows/manoomin-evidence.yml
+  push:
+    branches: [main]
+    paths:
+      - services/natural-science-services-section/services/biological-science-services-section/services/ecology-services-section/data/manoomin-evidence.json
+      - services/natural-science-services-section/services/biological-science-services-section/services/ecology-services-section/data/manoomin-evidence.mjs
+      - tests/manoomin-evidence.test.mjs
+      - .github/workflows/manoomin-evidence.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  evidence:
+    name: Evidence admission and negative controls
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out science source
+        uses: actions/checkout@v4
+      - name: Execute actual Node scientific evidence tests
+        run: |
+          node --version
+          node --test tests/manoomin-evidence.test.mjs
