@@ -274,12 +274,13 @@
       "name": "Doan and Davis 2019 Mycology, Pythiogeton manoomin native Zizania palustris root/stalk rot",
       "source_section": "Original open-access study Abstract, Materials/Methods: host range trials; Results: pathogenicity tests including re-isolation and ITS sequencing",
       "study_extraction": {
-        "evidence_access": "Full open-access article snippets and PubMed original abstract accessed 2026-10-11; independent rerun of greenhouse inoculations and sequence comparison not conducted.",
+        "evidence_access": "Original open-access Mycology article full-text methods and Results checked via scholarly indexed text 2026-10-11; original data and ITS sequences not independently reanalyzed.",
         "sampling_unit": "California symptomatic wild-rice plants and controlled greenhouse inoculations on Zizania palustris cultivar Franklin plus other crop seedlings; inoculation test described as randomized block with ten replications and three repeat trials.",
         "method": "Isolate previously unknown Pythiogeton from diseased native rice; morphological and ITS phylogenetic identification; greenhouse pathogenicity challenge with mock-inoculated controls and recovery/re-isolation of organism from symptomatic plants.",
         "directly_observed": "Named oomycete Pythiogeton manoomin identified from wild rice; 84% of inoculated wild rice developed root/stalk rot in the study and 71% damping-off among tested seedlings; inoculation plus re-isolation supported causal diagnosis.",
         "not_measured": "No Ustilago esculenta diagnosis or inoculation, no cross-host test for Asian jiaobai fungus, no prevalence survey of naturally managed Great Lakes beds; 84% is an experimental result and not field population incidence.",
-        "decision_relevance": "Positive methodological comparator for what a species- and host-resolved causal native-rice disease demonstration requires. Pythiogeton is an oomycete, not another name for Ustilago or Eballistra."
+        "decision_relevance": "Positive methodological comparator for what a species- and host-resolved causal native-rice disease demonstration requires. Pythiogeton is an oomycete, not another name for Ustilago or Eballistra.",
+        "method_reporting_issue": "The printed greenhouse methods state daytime 80–85 °C and nighttime 65–70 °C. Those units are physiologically implausible for host plants and inconsistent with the species' reported 25 °C optimum; this is an apparent temperature-unit error (possibly °F). Do not treat these Celsius figures as a replication protocol without author correction or original method confirmation."
       }
     }
   ],
@@ -761,7 +762,17 @@
         "Five observations in a geographically sampled set are not a national/time-invariant infection incidence, probability for all wild populations, or evidence that North American native Zizania are hosts.",
         "Sampled wild accessions included plants later classified as cultivar-like based on genotype; archived isolates and botanical identities have not been independently rechecked.",
         "Zou et al. 2024 cites this field observation but does not independently replicate its infected-plants count."
-      ]
+      ],
+      "sample_observation": {
+        "observed_positive": 5,
+        "sampled_hosts": 824,
+        "sampled_populations": 32,
+        "host_origin": "wild or putatively wild Z. latifolia sampled in China",
+        "sampled_unit": "individual host plants, not commercial lots",
+        "general_population_prevalence_estimate": false,
+        "reclassified_cultivar_like_samples": "study detected some cultivar-like genotypes among nominally wild samples; infection positives not independently stratified here",
+        "reference": "Zhao et al. 2019, Methods/Results, 824 wild accession sampling, five infected wild samples"
+      }
     },
     {
       "id": "wild-asian-climate-popgen-not-host-trial",
@@ -809,7 +820,7 @@
   "source_notes": "Evidence statuses describe what source texts support in their own host/material context, not independent scientific acceptance, measured contemporary risk, or official U.S. commodity compliance. Sources may reference overlapping scientific study populations; event identifiers must not be treated as counts of independent infected plants. Added source-critical differentiators: partial MT infection phenotype is not a categorical safety rule because some T/MT mixed pairings infected cultivated Asian hosts; FWS 2025 documents old living-plant research introductions; NZ live-plant management differs from US food import status. Existing stewardship plans are public, not external consent.",
   "extraction_protocol": {
     "completed_on": "2026-10-11",
-    "description": "Targeted source-critical extraction from four selected primary studies. Each row states access scope, actual sampling unit, tests, direct findings and absent measurements. Not a systematic literature screen, secondary independent peer-review receipt or an exhaustive risk appraisal. 2026-10-11 source audit additionally verified Guo Table 1 accession units, Chigira Table 4 archived strain origins, and USFWS Figure 2 and Climate 6 score interpretation. Added an original 1986 Idaho native-wild-rice smut survey and 1999 Minnesota primary brownspot study, plus 2023 northern wild-rice review and taxonomic synonymy to distinguish real native pathogens from U. esculenta.",
+    "description": "Targeted source-critical extraction from four selected primary studies. Each row states access scope, actual sampling unit, tests, direct findings and absent measurements. Not a systematic literature screen, secondary independent peer-review receipt or an exhaustive risk appraisal. 2026-10-11 source audit additionally verified Guo Table 1 accession units, Chigira Table 4 archived strain origins, and USFWS Figure 2 and Climate 6 score interpretation. Added an original 1986 Idaho native-wild-rice smut survey and 1999 Minnesota primary brownspot study, plus 2023 northern wild-rice review and taxonomic synonymy to distinguish real native pathogens from U. esculenta. Zhao 2019 wild Asian infected-host sample and Zou 2024 genomic-only recitation are independent studies but not two independent pathogen prevalence observations. Doan and Davis native oomycete positive challenge requires re-isolation and had a temperature-unit reporting anomaly in published Methods.",
     "inclusion": "Original experiments or comparative genomics on Zizania latifolia–Ustilago esculenta biology relevant to edible tissue, strain behavior, mating or vegetative cultivation.",
     "exclusion": "Agency secondary host lists, historic specimen catalogues and regulatory webpages are kept as separate source kinds, not miscast as laboratory experiments.",
     "reproducibility_limit": "Candidate search histories, complete screening counts, all full methods, and original raw data have not been independently reanalysed. No PRISMA/ROSES compliance claim until those exist.",
