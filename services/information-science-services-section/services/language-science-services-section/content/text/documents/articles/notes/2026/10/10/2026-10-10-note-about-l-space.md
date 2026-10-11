@@ -1,7 +1,8 @@
 ---
 title: "L-Space: the Semioverse language space"
-description: "The content-addressed language space of tokens and claims, its categorical and causal structure, and its possible quantum representation."
+description: "The Semioverse language space of content-addressed tokens and claims, with distinct proof, categorical, causal, kinematic and possible Hilbert-space readings."
 date-created: 2026-10-10
+date-updated: 2026-10-11
 type: note
 id: note-about-l-space
 name: l-space
@@ -49,13 +50,17 @@ The four-valued **FOUR** reading distinguishes lack of testimony, positive suppo
 
 ## Why the space is categorical
 
-### Curry–Howard–Lambek: claims can acquire types and proof paths
+### Curry–Howard–Lambek: proof, program and morphism
 
-The ordinary Curry–Howard–Lambek (CHL) correspondence relates propositions, types, proofs/programs, and morphisms of an appropriate category. It explains why a properly typed derivation can be represented as computation and composition. It does **not** turn arbitrary natural-language claims into proofs, and it does not show that every Semioverse token is automatically a type.
+The Curry–Howard–Lambek (CHL) correspondence relates an appropriate logic's propositions to types, derivations to typed terms, and proof composition to category morphisms. **It applies to a specified typed fragment**, not to any natural-language claim, arbitrary token, or guessed interpretation. An L-Space proof path retains its premises, typing/context judgment, transformations and witnesses; equal endpoints do not erase different proofs or provenance.
 
-For L-Space, CHL suggests a typed route from a claim and its admissible premises to a checkable derivation. A language cone or local context determines which premises can be used; a term or morphism witnesses the transformation when the chosen logic permits it. Provenance and authority constraints are additional to simple type correctness.
+[Obsmetrologia's CHL module](https://github.com/emsenn/obsmetrologia/blob/main/Obsmetrologia/Language/Predicating/CurryHowardLambek.lean) models a simply typed lambda calculus, reductions/confluence, categorical products and exponentials, and a FOUR-related quartet. It does not prove that the whole Semioverse is cartesian closed. Earlier [CHL quartet](https://github.com/lenticule-science/science-services-section/blob/main/services/philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/research/predicated-agentic-orchestration-platform/library/relational-hyperverse-repository/math/curry-howard-lambek-quartet.md) and [tetrad](https://github.com/lenticule-science/science-services-section/blob/main/services/philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/research/predicated-agentic-orchestration-platform/library/relational-hyperverse-repository/math/curry-howard-lambek-tetrad.md) notes contain proposed extensions, not additional certified correspondences.
 
-The current [Obsmetrologia CHL source](https://github.com/emsenn/obsmetrologia/blob/main/Obsmetrologia/Language/Predicating/CurryHowardLambek.lean) defines a small simply typed lambda calculus, reduction and confluence constructions, a categorical-product/exponential reading, and a connection to FOUR via a four-former bijection. Those declarations support a **specific formal projection**, not a theorem that all of L-Space is a cartesian closed category or quantum language. Earlier [quartet](https://github.com/lenticule-science/science-services-section/blob/main/services/philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/research/predicated-agentic-orchestration-platform/library/relational-hyperverse-repository/math/curry-howard-lambek-quartet.md) and [tetrad](https://github.com/lenticule-science/science-services-section/blob/main/services/philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/research/predicated-agentic-orchestration-platform/library/relational-hyperverse-repository/math/curry-howard-lambek-tetrad.md) notes are conjectural extensions, not independent proofs of this identification.
+### The categorical Language Cone (A8)
+
+The linguistics program's **Language Cone** is a category-theoretic cone over a diagram of type-theoretic, proof-theoretic, categorical, domain-theoretic, path-theoretic and transfer representations. Its proposed apex is a common language object and its legs map into these distinct readings. A *commuting cone* satisfies compatibility with the diagram's arrows; its universal **limit** property needs a separate proof. The usual CHL correspondence is only a projection of this broader proposed construction.
+
+At learner scale, a partial cone connects hearing, comprehension, production and socially admitted use. The proposed per-item mastery test asks whether these legs commute. The global coincidence theorem (PPA-FR-040) is **open**, and the empirical adequacy of speaker-level mastery is unverified. See the independent [commuting-cone mastery glossary](https://github.com/lenticule-science/linguistics-services-section/blob/main/services/obsmetrological-linguistics-services-section/content/text/glossary/terms/commuting-cone-mastery.md) and [witnessed-field A8 source](https://github.com/lenticule-science/linguistics-services-section/blob/main/content/text/documents/articles/notes/2026-08-20-language-as-witnessed-field-working-theory.md).
 
 ### Yoneda: tokens are understood through admissible relations
 
@@ -86,15 +91,17 @@ For L-Space, a bounded and sourced selection of tokens/claims can provide \(G,M,
 
 [Obsmetrologia's FCA–Lambek source](https://github.com/emsenn/obsmetrologia/blob/main/Obsmetrologia/Calculus/Logic/FCALambekCircle.lean) declares the FCA closure laws, complete concept-lattice data and a residuated-algebra-to-commutative-Lambek construction. It expressly leaves the cited general completeness result for Lambek calculus as a documented external theorem rather than a formalized result in that module. The [Information Science glossary](https://github.com/lenticule-science/science-services-section/blob/main/services/information-science-services-section/content/text/glossary/terms/formal-concept-analysis.md) defines FCA's standard extent, intent and Galois-connection use.
 
-## Light cones and the kinematic interpretation
+## Causal language light cones and kinematic structure
 
-A **language light cone** is a proposed constraint on admissible propagation and inference among typed articulations. Given an event or articulation \(a\), its past consists of those events that could supply it with premises; its future consists of those it could inform under the declared relation. If \(a\preceq b\), a directed route may be possible. If two events are incomparable, they are *spacelike in the order-theoretic model*; that does not establish physical spacelike separation or independent observation.
+**The language light cone (A6) is a causal-order construction, not the categorical Language Cone (A8).** For a witnessed utterance-event \(a\), its possible past \(J^-(a)\) consists of events that could inform it; its possible future \(J^+(a)\) contains events it could inform under a declared precedence/reachability relation. A possible causal edge does not establish actual linguistic influence.
 
-CHL supplies the **logical type of an admissible step**; the causal order constrains **which premises are available**; a chromatic or FOUR-valued decoration can carry **kind, compatibility and competing evidence**. Together these suggest proof paths inside causal cones. They are different roles of one proposed language-space model, not competing definitions of a light cone.
+The [linguistics light-cone definition](https://github.com/lenticule-science/linguistics-services-section/blob/main/services/obsmetrological-linguistics-services-section/content/text/glossary/terms/language-light-cone.md) proposes this structure for acquisition, meaning change and reconstruction. Its reverse-lightcone emergence operator \(\mathcal R\) would calculate admissible histories for a target linguistic state. Those are **empirical bridge hypotheses** requiring witnessed uptake and tests, not logical consequences of a partial order.
 
-The current [causal-cone Lean source](https://github.com/emsenn/obsmetrologia/blob/main/Obsmetrologia/CausalSets/Causal/Cone.lean) names future/past cones and diamonds from directed reachability. [Paraconsistent cone reports](https://github.com/emsenn/obsmetrologia/blob/main/Obsmetrologia/CausalSets/Causal/ParaconsistentCone.lean) preserve inconsistent causal *reports* without making physical causality itself inconsistent. [Chromatic-Lorentzian settling](https://github.com/emsenn/obsmetrologia/blob/main/Obsmetrologia/AperiodicOrder/Tiling/ChromaticLorentzian.lean) gives a concrete non-idempotent propagation example on the natural-number causal chain, with closure reached at the countable limit. It is **not** a construction of a smooth four-dimensional Lorentzian manifold.
+CHL constrains **valid proof and typing**; A8 constrains **coherence of representation legs**; A6 constrains **possible causal reachability**. FOUR or chromatic markings can attach distinct evidential charge and edge kinds. The phrase “CHL chromatic Lorentzian lightcones” does not make the three structures identical.
 
-A broader **two-chain light-cone lattice**, in which token-side and claim-side articulation orders define a 1+1 causal grid, is explicitly an [open research item](https://github.com/emsenn/obsmetrologia/blob/main/docs/loop/items/light-cone-lattice.md), not an existing theorem of the language space. This proposal is especially relevant to the idea of a *kinematic manifold of knowledge*: before introducing amplitudes or metric length, specify events, causal order, composition, locality and distinguishability. Any continuum limit is a later theorem to seek, not an automatic reward for drawing cones.
+[Obsmetrologia's causal-cone module](https://github.com/emsenn/obsmetrologia/blob/main/Obsmetrologia/CausalSets/Causal/Cone.lean) defines causal cones and diamonds by reachability. [Chromatic-Lorentzian settling](https://github.com/emsenn/obsmetrologia/blob/main/Obsmetrologia/AperiodicOrder/Tiling/ChromaticLorentzian.lean) uses an \(\mathbb N\) causal chain with Boolean marks whose propagation is non-idempotent but settles at a countable limit: a mathematical example, **not** a four-dimensional physical Lorentzian manifold. The proposed [two-articulation-chain 1+1 light-cone lattice](https://github.com/emsenn/obsmetrologia/blob/main/docs/loop/items/light-cone-lattice.md) remains an open research item.
+
+A [Lean-backed teaching route to kinematic space](https://github.com/emsenn/obsmetrologia/blob/main/docs/verso/ObsmetrologiaManual/Curricula/IntroductionToInformationalMathematics/FromPredicationToKinematicSpace.lean) develops the dependency mark → utterance → articulation → predication cell → articulation chain → diamond point → kinematic regions. These are relevant *upstream mathematical carriers* for an L-Space kinematic interpretation. The route does not prove that all language claims inhabit a unique continuum geometry or that a quantum Hilbert representation follows.
 
 ## Is L-Space a Hilbert space?
 
@@ -112,30 +119,29 @@ To claim a *quantum* L-Space, the research must identify a principled physical o
 
 The Group's research direction treats information and kinematic distinctions as prior to an eventual quantum, relativistic and thermal description. The [informational-spacetime glossary](https://github.com/lenticule-science/science-services-section/blob/main/services/natural-science-services-section/services/physical-science-services-section/services/physics-services-section/content/text/glossary/terms/informational-spacetime.md) argues for such a descent, but its cosmological identification is a research claim, not a consequence of the generic \(\ell^2\) construction. Thus **Grothendieck site/topos** describes potential *local-to-global logic*, **causal cones** describe potential *kinematics*, and **Hilbert space** describes a possible *quantum-state representation*. They can coexist in a specified theory; they are not interchangeable labels.
 
-## From notes to language-space claims
+## From source notes to language-space claims
 
-A document is useful to L-Space when it contributes attributable, typed, resolvable articulations:
+A document is a **source of possible articulations**, not the token universe. The route to L-Space is:
 
-1. Read a note as a **source**, keeping its repository, content revision, original author when known, time, access terms, and claim status.
-2. Distinguish names and aliases from canonical encodings. Resolve token identities or create new content-addressed token candidates using the Semioverse's accepted representation and hashing rule.
-3. Extract candidate utterances and predications, retaining supporting and opposing evidence and their actual provenance. A YAML \`about\` field or a parsed sentence is **not** automatically an admitted claim.
-4. Admit or revise claims through the real authorized language/knowledge operation. An archive read, EAVT assertion projection, SPARQL query, embedding search, or Git commit is only an interface until the admission and verification conditions hold.
-5. Derive categorical, FCA, causal or optional Hilbert representations as **views with declared input sets and methods**. They must preserve the difference between claims, attestations, formal proofs and observed effects.
-6. Expose meaningful queries and explanations to readers without confusing source text or the presentation layer with the underlying language space.
+1. Preserve source repository/revision, original authorship where known, access conditions, exact utterance, time and evidence for/against.
+2. Resolve names and aliases to **typed token kinds** and canonical encodings. An immutable hash does not establish semantic equivalence or a claim's truth.
+3. Extract candidate articulations and typed predications, retaining context, witnesses, contested testimony and authority.
+4. Use the real Semioverse admission/settlement operations to create addressed claims and derivations. A Markdown \`about\` field, SPARQL query, EAVT projection or indexed document is **not itself semantic admission**.
+5. Derive FCA lattices, category/site structures, causal cones or an optional Hilbert-space model as *views of a declared input context*, with their assumptions and status intact.
 
-The [L-Space application README](https://github.com/lenticule-science/science-services-section/blob/main/services/l-space/README.md) uses the same name for the Lenticule Science knowledge garden and its CAIRN-backed document-reading projection. That name is an application/service identity. Its current documented search and archive functions do not, by themselves, establish this complete semantic language-space implementation. **CAIRN stores and addresses information objects; FeltOS coordinates agents and operations; neither substitutes for the meaning-and-claims substrate of L-Space.**
+CAIRN's information-object custody, document search and FeltOS agent orchestration are adjacent services; none redefines L-Space. A previous reference to \`science-services-section/services/l-space/README.md\` does not resolve in the inspected repository, so it cannot substantiate a current application or deployment claim.
 
 ## Mathematical research obligations
 
 The immediate scientific work is precise:
 
 1. Specify the token sorts, canonical encodings and address laws; test equivalence and provenance without conflating a surface name, a content hash and semantic identity.
-2. Define the context category, typed predication morphisms and reindexing operations. Establish the CHL fragment valid there and its exact relationship to the current Obsmetrologia proofs.
+2. Define the context category, typed predication morphisms and reindexing; establish the CHL fragment and the A8 categorical Language Cone's actual diagram, commutation laws and any limiting property.
 3. Choose candidate covers \(J\), construct claim-valued presheaves, and establish or refute the sheaf gluing conditions in the presence of partial and contested evidence.
-4. Formalize the two-articulation-chain causal lattice; check which Lorentzian statements are order-theoretic and which require additional metric or continuum structure.
+4. Formalize the A6 causal language order and the two-articulation-chain lattice, preserving the distinction from A8. Specify which Lorentzian statements require metric, dimension, measure or continuum structure.
 5. Derive FCA concepts from a bounded admitted language context, preserving provenance and dispute rather than canonizing a clustering output.
 6. If the Hilbert route is pursued, state the chosen Hilbert completion and operators; test whether any non-arbitrary quantum structure follows from the kinematic/semantic data, rather than treating an arbitrary \(\ell^2\) encoding as the physical derivation.
 
-The listed Lean files were **inspected as source** for named declarations and the absence of literal \`sorry\`/\`admit\` in those files. This pass did **not** run the Lean kernel or verify dependency/CI state; their status is *checked-in formal work awaiting independent compilation readback*, not a newly certified theorem about L-Space.
+The named Lean modules are **source references**, not a fresh compilation receipt. This note does not claim a kernel-verified theorem about L-Space as a whole.
 
-**Conceptual test:** a reader or agent can identify what L-Space's objects are, what counts as a claim, how local interpretations and proofs relate, what causal propagation would mean, and which part of the proposed quantum reading has actually been established. The single name **L-Space** continues to denote the shared content-addressed language space, not a folder, index, website, or an already proved physical Hilbert space.
+**Receiving test:** a reader can distinguish address, meaning, claim, proof, causal possibility, and Hilbert representation without mistaking a document service for L-Space.
