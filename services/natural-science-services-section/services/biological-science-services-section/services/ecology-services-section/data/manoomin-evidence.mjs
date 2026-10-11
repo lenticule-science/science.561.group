@@ -33,6 +33,13 @@ export function validateEvidence(d){
    if(m?.unit?.startsWith("fraction_")&&!(m.quantity>=0&&m.quantity<=1))problems.push("fraction outside unit interval: "+c.id);
    if(m?.forecast_probability!==false)problems.push("measured climate fraction must not be relabeled invasion probability: "+c.id);
   }
+  if(c.sample_observation!==undefined){
+   const m=c.sample_observation;
+   if(!m||!Number.isInteger(m.observed_positive)||!Number.isInteger(m.sampled_hosts)||!Number.isInteger(m.sampled_populations)||m.sampled_hosts<=0||m.sampled_populations<=0||m.observed_positive<0||m.observed_positive>m.sampled_hosts)problems.push("invalid bounded host count: "+c.id);
+   if(m?.general_population_prevalence_estimate!==false)problems.push("observed host fraction is not a population prevalence estimate: "+c.id);
+   if(!isString(m?.sampled_unit)||!isString(m?.host_origin))problems.push("host observation missing sampled unit or origin: "+c.id);
+   if(!sourceKinds.includes("primary_study"))problems.push("host observation requires original study: "+c.id);
+  }
   if(c.status==="documented"&&sourceKinds.every(k=>k==="public_report"||k===undefined))problems.push("public repost promoted to documented evidence: "+c.id);
   if(c.status==="documented"&&sourceKinds.every(k=>k!=="primary_study"&&k!=="primary_native_host_diagnosis"&&k!=="agency_assessment"))problems.push("documented claim has no competent primary or official assessment source: "+c.id);
   if(c.track==="fungal_life_cycle"&&c.status!=="unresolved"&&!sourceKinds.includes("primary_study"))problems.push("strain pathogenicity claim requires experimental study: "+c.id);

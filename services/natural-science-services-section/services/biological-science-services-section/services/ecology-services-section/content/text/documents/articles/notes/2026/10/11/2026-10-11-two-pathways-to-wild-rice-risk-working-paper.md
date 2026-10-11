@@ -11,7 +11,7 @@ tags: [ecology, invasive-plants, plant-pathology, risk-assessment, indigenous-st
 
 # Two introduction pathways relevant to manoomin: introduced *Zizania latifolia* and the *Ustilago esculenta* food question
 
-**Working paper v0.5, 11 October 2026. This is a targeted research synthesis, not a measured probability model, independent scientific receiving, peer review, or a current federal import ruling.** Companion to [the native-host evidence assessment](2026-10-11-ustilago-esculenta-host-records-working-paper.md) and the [source-owned evidence register](../../../manoomin-jiaobai-ustilago-esculenta-evidence.md).
+**Working paper v0.6, 11 October 2026. This is a targeted research synthesis, not a measured probability model, independent scientific receiving, peer review, or a current federal import ruling.** Companion to [the native-host evidence assessment](2026-10-11-ustilago-esculenta-host-records-working-paper.md) and the [source-owned evidence register](../../../manoomin-jiaobai-ustilago-esculenta-evidence.md).
 
 ## Abstract
 
@@ -41,7 +41,7 @@ A source can be strong for one question but silent for another. Fungal culture f
 
 ### 2.1 Primary experimental evidence: sample units and missing observations
 
-The four primary studies cited for the cultivated Asian plant–fungus system answer different questions. Counting them as four independent confirmations of an American invasion or fungal outbreak would be a category error. The source-owned [machine-readable experiment extraction](https://github.com/lenticule-science/science-services-section/blob/main/services/natural-science-services-section/services/biological-science-services-section/services/ecology-services-section/data/manoomin-evidence.json) records the exact material and study limits, and the accompanying tests require that every primary-study record carry a sampling unit, method, observed result and unmeasured quantities.
+The selected primary studies address different questions in Asian host sampling, genomics, fungal strain biology and diagnosed American rice diseases. Their different sampling frames cannot be counted as independent replications of one putative U.S. *Ustilago* introduction. The source-owned [machine-readable experiment extraction](https://github.com/lenticule-science/science-services-section/blob/main/services/natural-science-services-section/services/biological-science-services-section/services/ecology-services-section/data/manoomin-evidence.json) records the exact material and study limits, and the accompanying tests require that every primary-study record carry a sampling unit, method, observed result and unmeasured quantities.
 
 | Original study | Material and design actually checked | Finding supported | Important thing not measured |
 | --- | --- | --- | --- |
@@ -49,6 +49,10 @@ The four primary studies cited for the cultivated Asian plant–fungus system an
 | Zhang et al. (2017) | **Four selected isolates** (MT10/MT46 from white galls and T14/T55 from gray galls) on **Asian cultivar Longjiao 2**; in vitro mating and plant inoculation | MT/MT infection defect, T-type life cycle, and **some T/MT cross-pair infections** on the tested Asian host | Any native American host, shipment survival, prevalence in commercial lots |
 | Tu et al. (2019) | **Five harvested edible-gall samples** at different swelling stages; microbial culture and species determination by sequencing/MALDI-TOF plus molecular profiling | Several strains of *U. esculenta* were **culturable at sampling**, distinct from DNA-only detection | Probability of contamination across shops/import lots, infectious stage after transport, native host compatibility |
 | Chigira et al. (2023) | Two Japanese cultivars Shirakawa and Ittenkou, plus **ten banked strains (nine Japanese, one Chinese: yeast4 / MAFF 305616)**; mating-type PCR and **in vitro** crosses (Table 4) | Distinct mating types can produce hyphae under tested laboratory conditions; types MAT-2 and MAT-3 were frequent in examined material | New plant infection by commercial product, American native host challenge, import legality |
+
+| Zhao et al. (2019) | **824 putatively wild Asian *Z. latifolia* from 32 Chinese populations**, plus 135 cultivated accessions; field observation, 12 SSR marker plant genotyping and fungal isolate collection | **Five** field-observed wild *Z. latifolia* infected by *U. esculenta*; fungal isolates from five wild and 32 cultivated hosts | No American host challenge, US commerce sampling or general infection prevalence; some putative wild samples later classified as cultivar-like |
+| Zou et al. (2024) | **168 other wild Asian *Z. latifolia* plants from 42 populations**; population genome resequencing and genotype–climate association | Two regional genetic lineages and modeled climatic genomic offsets in **China** | Not a new *U. esculenta* survey; it **cites** Zhao's earlier 5/824, so cannot be counted as a second infected-host field event |
+| Doan & Davis (2019) | Native ***Z. palustris*** with symptomatic root/stalk rot in California, plus controlled greenhouse inoculation, negative controls and **re-isolation** | Identified the different oomycete ***Pythiogeton manoomin***; observed disease in **84% of treated plants** and damping-off in **71% of tested seedlings** | No *U. esculenta* infection; greenhouse treatment percentages are not field prevalence; published temperature units require correction |
 
 These are source-critical, **selected** examples, not a systematically screened global sample. The accessible abstract of Tu et al. does not establish the number of originating farms or independent sampled shipments; no estimate should be reconstructed from five growth-stage tissue samples. For Guo et al., the published **full HTML Results and Table 1** now identify HSD2, Zhejiao2 and Jiayou1 and read-depth values, but the deposited sequencing reads and full assembly pipeline have not been independently reproduced. Zhang and Chigira original accessible methods and results were examined at the bounded claims cited, not reanalysed from all deposited raw datasets.
 
@@ -86,6 +90,9 @@ For immediate prevention, the relevant evidence includes **actual planted or gro
 ## 4. Path B — edible jiaobai as a possible fungal transport pathway
 
 ### 4.1 The original host association and food product
+
+A key piece of missing context is **direct evidence of natural infection in wild *Asian* plants**. Zhao et al. (2019) sampled 824 putatively wild *Z. latifolia* plants across 32 Chinese populations and reported five naturally infected with *U. esculenta*; fungi were isolated from the five wild plants and from 32 cultivated host accessions. Infection was therefore not observed only in selected jiaobai crop fields. Still, the sample includes some plants whose genotypes were later judged cultivar-like, and it cannot be used to assign a global prevalence of infection or extrapolate native American susceptibility. The 2024 wild-plant genomics study by Zou et al. (**168 plants, 42 Chinese populations**) quotes the 2019 finding; it is **not another infection dataset**. Likewise, Zhao's five infected wild plants and Tu's five harvested edible-gall samples are **not the same five individuals or even the same sampling question**.
+
 
 Cultivated jiaobai is not a seed crop. *U. esculenta* colonizes the Asian perennial and promotes gall development in swollen culms. Harvested white galls are food; gray or dark galls contain more mature fungal reproductive structures and are generally not desirable for consumption [Chigira 2023]. The distinction between white/gray galls matters biologically, but gross appearance is not a validated phytosanitary inspection method.
 
@@ -147,6 +154,9 @@ A source-critical literature paper can be written without access to Tribal ecolo
 
 ### 6.3 A native-rice fungal disease is not automatically this Asian fungus
 
+A native-host **causal test** is not merely the opposite of an absence report. For example, Doan and Davis (2019) isolated and identified ***Pythiogeton manoomin***, an **oomycete**, from diseased *Z. palustris* and confirmed greenhouse disease with controlled challenge and re-isolation. Their 84% root/stalk rot and 71% seedling damping-off are outcomes of that specific experimental treatment, not estimates of present Great Lakes prevalence and not *U. esculenta*. The printed greenhouse temperature units appear erroneous (80–85°C by day and 65–70°C by night); replication must use clarified original protocols, not unexamined literal Celsius settings. The value of this comparator is methodological: what a properly identified, experimentally supported native-host disease inference actually looks like.
+
+
 A practical diagnosis must distinguish known native-rice pathogens before advancing a foreign-host explanation. The 2023 *Crop Science* review of northern *Z. palustris* describes **fungal brown spot caused by *Bipolaris oryzae***, stem smut now classified as ***Eballistra lineata***, and other diseases in cultivated production [McGilp et al. 2023, §5.2]. The older name ***Entyloma lineatum*** is explicitly treated as a synonym of *Eballistra lineata* by Species Fungorum. Its earlier combination ***Ustilago lineata*** is likewise **not *Ustilago esculenta***.
 
 The original North American observations have bounded host and locality: Bowden and Eschen (1986) identified *E. lineatum* smut in native *Z. aquatica* in an Idaho field/lake survey, while Nyvall and Percich (1999) identified *B. oryzae* and *B. sorokiniana* in Minnesota cultivated *Z. palustris* lesion studies. These are **positive comparator diagnoses**. They demonstrate that the presence of smut or fungal symptoms is not specific evidence of *U. esculenta*. They do **not** prove that the Asian fungus could never infect native hosts, and the surveyed fields are not modern pathogen-absence surveillance. This distinction prevents generic symptom photos, old common-name records and secondary smut references from inflating the proposed import threat.
@@ -174,6 +184,9 @@ Koios.News can investigate verified primary developments with its own editorial 
 
 ## References
 
+- **Zhao Y. et al. (2019).** [Inferring the Origin of Cultivated *Zizania latifolia*](https://doi.org/10.3389/fpls.2019.01406), *Frontiers in Plant Science* 10:1406, plant/fungus field sample: 824 putatively wild Asian hosts / 32 populations, 5 infected wild plants, 135 cultivated accessions.
+- **Zou Y. et al. (2024).** [Signatures of local adaptation and maladaptation to future climate in wild *Zizania latifolia*](https://doi.org/10.1038/s42003-024-07036-1), *Communications Biology* 7:1313, genomic survey of 168 Asian wild host plants / 42 populations, not an independent pathogenicity sample.
+- **Doan H. K., Davis R. M. (2019).** [*Pythiogeton manoomin*, a new species causing root and basal stalk rot of wild rice](https://doi.org/10.1080/21501203.2019.1635216), *Mycology* 10:243–249, controlled native host assay/re-isolation of a different **oomycete**.
 - **McGilp L. et al. (2023).** [Northern Wild Rice breeding, genetics, and conservation](https://doi.org/10.1002/csc2.20973), *Crop Science* §5.2 on established *Z. palustris* pathogens, including *Eballistra lineata*.
 - **Species Fungorum.** [*Eballistra lineata* accepted name, including *Entyloma lineatum* synonym](https://www.speciesfungorum.org/names/Synonymy.asp?RecordId=467756), accession 467756.
 - **Bowden R. L., Eschen D. J. (1986).** [First Report of Wild Rice Diseases in Idaho](https://www.apsnet.org/publications/plantdisease/backissues/Documents/1986Abstracts/PD_70_800b.htm), *Plant Disease* 70:800, native *Z. aquatica* disease survey.
@@ -196,4 +209,4 @@ Koios.News can investigate verified primary developments with its own editorial 
 - **Watson T. et al. (1991).** [Smut of Manchurian Wild Rice Caused by *Ustilago esculenta* in California](https://www.apsnet.org/publications/plantdisease/backissues/Documents/1991Abstracts/PD_75_1075D.htm). *Plant Disease* 75:1075.
 - **Zhang Y. et al. (2017).** [Investigation on the differentiation of two *Ustilago esculenta* strains](https://pmc.ncbi.nlm.nih.gov/articles/PMC5719756/). *BMC Microbiology* 17:228; experimental comparison of MT- and T-type strains, not native-host or shipping viability trials.
 
-*Working manuscript v0.5: unreviewed; no independent scientific acceptance, federal commodity adjudication or public environmental outcome is claimed.*
+*Working manuscript v0.6: unreviewed; no independent scientific acceptance, federal commodity adjudication or public environmental outcome is claimed.*
