@@ -32,7 +32,7 @@ For empirical comparison choose a task loss function $L_t$. Under an explicitly 
 
 $$
  \Delta_{a,t}=\mathbb{E}[L_t(O_t(J(d',c,a)))]-
- \mathbb{E}[L_t(O_t$J(d,c,a)$)].
+ \mathbb{E}[L_t(O_t(J(d,c,a)))].
 $$
 
 A negative `Delta` may support better reader performance for that population/task. Failure to detect drift does not prove equivalence. Register preference, factual correctness, legal effect and reader-task success need separate evidence.

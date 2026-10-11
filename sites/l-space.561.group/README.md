@@ -1,6 +1,12 @@
-# L-Space
+# L-Space knowledge-garden application
 
-L-Space is the Lenticule Science knowledge garden at `https://l-space.561.group`.
+This package serves Lenticule Science's knowledge garden at
+`https://l-space.561.group`. Its name is shared with the underlying
+[Semioverse L-Space](../information-science-services-section/services/language-science-services-section/content/text/documents/articles/notes/2026/10/10/2026-10-10-note-about-l-space.md):
+the language space of content-addressed tokens and their claims.
+The garden's corpus, search, and document views are *projections*; this application
+does not define or realize the whole language-space semantics.
+
 Its current deployable application is `src/site.mjs`, exported as
 `@lenticule-science/l-space/site` and loaded as a companion of the Bare Cedar
 Fog FeltOS host.

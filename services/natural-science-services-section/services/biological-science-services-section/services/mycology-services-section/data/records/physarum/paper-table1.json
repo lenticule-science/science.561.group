@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "lenticule-physarum-paper-table1/v1",
+  "workRef": "lenticule-science/science-services-section#27",
+  "source": {
+    "doi": "10.1016/j.protis.2026.126156",
+    "publication": "Kuttner & Freiberg, Protist 181 (2026) 126156",
+    "table": "Table 1",
+    "kind": "transcribed published aggregate data",
+    "rights": "Article stated CC BY 4.0"
+  },
+  "conditions": [
+    {
+      "id": "short-3mm",
+      "tested": 390,
+      "undecidedBothArms": 174,
+      "decisive": 216,
+      "alternate": 152,
+      "repeat": 64,
+      "forcedRight": {
+        "right": 37,
+        "left": 82
+      },
+      "forcedLeft": {
+        "right": 70,
+        "left": 27
+      },
+      "printedUndecidedPercent": 30.85
+    },
+    {
+      "id": "medium-7mm",
+      "tested": 296,
+      "undecidedBothArms": 48,
+      "decisive": 248,
+      "alternate": 136,
+      "repeat": 112,
+      "forcedRight": {
+        "right": 55,
+        "left": 72
+      },
+      "forcedLeft": {
+        "right": 64,
+        "left": 55
+      },
+      "printedUndecidedPercent": 13.95
+    },
+    {
+      "id": "long-14mm",
+      "tested": 345,
+      "undecidedBothArms": 65,
+      "decisive": 280,
+      "alternate": 146,
+      "repeat": 134,
+      "forcedRight": {
+        "right": 58,
+        "left": 79
+      },
+      "forcedLeft": {
+        "right": 67,
+        "left": 76
+      },
+      "printedUndecidedPercent": 15.85
+    },
+    {
+      "id": "double-7mm",
+      "tested": 243,
+      "undecidedBothArms": 29,
+      "decisive": 214,
+      "alternate": 103,
+      "repeat": 111,
+      "forcedRight": {
+        "right": 49,
+        "left": 60
+      },
+      "forcedLeft": {
+        "right": 43,
+        "left": 62
+      },
+      "printedUndecidedPercent": 10.66
+    }
+  ]
+}

@@ -12,3 +12,11 @@ The existing [Lenticule linguistics repository](https://github.com/lenticule-sci
 This section is private within the Lenticule Science research program. The service hierarchy is logical; a future separate repository needs governed formation and explicit ownership, not an assumed nested GitHub namespace.
 
 **Founding research carrier:** [PlainEng/PTGAE science](services/english-science-services-section/services/ptgae-science-services-section/README.md).
+
+
+## Deeper scientific program
+
+- [L-Space: the Semioverse language space](content/text/documents/articles/notes/2026/10/10/2026-10-10-note-about-l-space.md) defines the content-addressed token-and-claim subject; its [glossary term](content/text/glossary/terms/l-space.md) distinguishes the language space from the knowledge-garden application. This research complements the marks-to-interpretation model below.
+
+- [Language science from marks to interpretation](research/marks-utterances-and-contextual-semantics.md) separates utterance, grammatical analysis, possible meaning, evidence and authority, with precise limits for contextual gluing.
+- [English science](services/english-science-services-section/research/english-language-research-program.md) studies real English grammar, history, pragmatics, variation and human–agent language requirements; PlainEng is only one restricted derivative.

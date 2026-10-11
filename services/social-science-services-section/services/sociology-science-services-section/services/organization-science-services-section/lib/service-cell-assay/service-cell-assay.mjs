@@ -4,12 +4,22 @@
  */
 const DAY = 86400000;
 const ARMS = new Set(["cell", "central"]);
+// Dates are measurements. JS Date.parse normalizes impossible calendar days,
+// so validate the stated wall-date before converting the offset to an instant.
+const INSTANT = /^(\d{4})-(\d{2})-(\d{2})T([01]\d|2[0-3]):([0-5]\d):([0-5]\d)(?:\.(\d+))?(Z|[+-](?:0\d|1[0-4]):[0-5]\d)$/u;
 function parseTime(value, label) {
-  if (typeof value !== "string" || !/^\d{4}-\d{2}-\d{2}T/.test(value))
-    throw new TypeError(label + " must be ISO-8601 timestamp");
+  const m = typeof value === "string" ? INSTANT.exec(value) : null;
+  if (!m) throw new TypeError(label + " must be a timezone-qualified ISO-8601 instant");
+  const year=Number(m[1]), month=Number(m[2]), day=Number(m[3]);
+  const leap=year%4===0 && (year%100!==0 || year%400===0);
+  const days=[31,leap?29:28,31,30,31,30,31,31,30,31,30,31];
+  if (month<1 || month>12 || day<1 || day>days[month-1])
+    throw new TypeError(label + " contains an impossible Gregorian calendar date");
+  const offset=m[8];
+  if (offset!=="Z" && Math.abs(Number(offset.slice(1,3)))===14 && offset.slice(4)!=="00")
+    throw new TypeError(label + " contains an impossible UTC offset");
   const ms = Date.parse(value);
-  if (!Number.isFinite(ms) || !/(Z|[+-]\d\d:\d\d)$/.test(value))
-    throw new TypeError(label + " must carry a timezone");
+  if (!Number.isFinite(ms)) throw new TypeError(label + " cannot be represented as an instant");
   return ms;
 }
 function validate(row) {
@@ -61,12 +71,33 @@ export function assessWorkCohorts(rows, options={}) {
     return bounded({arm,n,accepted:s.reduce((x,g)=>x+g.accepted,0),unresolved:s.reduce((x,g)=>x+g.unresolved,0),notAccepted:s.reduce((x,g)=>x+g.notAccepted,0)});
   });
   const [cell,central]=totals;
+  const byStratum = new Map();
+  for (const g of strata) {
+    const arms = byStratum.get(g.stratum) ?? {};
+    arms[g.arm] = g;
+    byStratum.set(g.stratum, arms);
+  }
+  const shared = [...byStratum.entries()].filter(([, arms]) => arms.cell && arms.central);
+  const sharedN = shared.reduce((total, [, arms]) => total + arms.cell.n + arms.central.n, 0);
+  const standardized = sharedN === 0 ? null : shared.reduce((total, [stratum, arms]) => {
+    const weight = (arms.cell.n + arms.central.n) / sharedN;
+    total.lower += weight * (arms.cell.lower - arms.central.upper);
+    total.upper += weight * (arms.cell.upper - arms.central.lower);
+    total.strata.push({stratum, weight, cellN:arms.cell.n, centralN:arms.central.n});
+    return total;
+  }, {lower:0, upper:0, strata:[]});
+  const excludedStrata = [...byStratum.entries()].filter(([, arms]) => !(arms.cell && arms.central))
+    .map(([stratum]) => stratum).sort();
   return {
     estimand:"Assigned-work receiver acceptance within " + (options.horizonDays??7) + " days",
     claimStatus:"DESCRIPTIVE_ONLY",
     totals,strata,
     contrast:cell.n && central.n ? {lower:cell.lower-central.upper,upper:cell.upper-central.lower}:null,
+    commonSupportContrast: standardized,
+    excludedStrata,
     limitations:[
+      "The pooled contrast mixes arm composition; use the common-support contrast to detect stratum imbalance.",
+      "The common-support contrast excludes strata absent in either arm; do not extrapolate it.",
       "Observational arm differences are not causal estimates.",
       "Retain all eligible demands, unknown followup and negative results.",
       "Causal claims require assignment, interference, pretrends and validity review."
