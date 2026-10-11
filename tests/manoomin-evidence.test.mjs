@@ -148,7 +148,7 @@ test('noxious-weed enumeration absence is never U.S. import authorization',()=>{
 
 test('primary studies require a real experimental extraction',()=>{
  const primaries=source.sources.filter(s=>s.kind==='primary_study');
- assert.equal(primaries.length,6);
+ assert.equal(primaries.length,9);
  for(const row of primaries){
   assert.ok(row.study_extraction?.sampling_unit);
   assert.ok(row.study_extraction?.method);
@@ -257,4 +257,49 @@ test('primary review does not masquerade as a native host challenge',()=>{
  const d=copy();byId(d,'american-native-host-infection').status='documented';
  byId(d,'american-native-host-infection').source_ids=['mcgilp-2023-native-wildrice'];
  assert.match(validateEvidence(d).join(' '),/native infection lacks direct diagnosis/);
+});
+
+
+test('five observed wild Asian hosts are a bounded count, not population prevalence',()=>{
+ const claim=byId(source,'wild-asian-ustilago-field-detections');
+ assert.equal(claim.status,'documented');
+ assert.equal(claim.sample_observation.observed_positive,5);
+ assert.equal(claim.sample_observation.sampled_hosts,824);
+ assert.equal(claim.sample_observation.sampled_populations,32);
+ assert.equal(claim.sample_observation.general_population_prevalence_estimate,false);
+ assert.match(claim.limits.join(' '),/not a national/);
+ const broken=copy();byId(broken,'wild-asian-ustilago-field-detections').sample_observation.general_population_prevalence_estimate=true;
+ assert.match(validateEvidence(broken).join(' '),/not a population prevalence estimate/);
+ const impossible=copy();byId(impossible,'wild-asian-ustilago-field-detections').sample_observation.observed_positive=825;
+ assert.match(validateEvidence(impossible).join(' '),/invalid bounded host count/);
+});
+
+test('citing the wild Asian field study is not an independent fungus sample',()=>{
+ const zhao=byId(source,'wild-asian-ustilago-field-detections');
+ const zou=byId(source,'wild-asian-climate-popgen-not-host-trial');
+ assert.equal(zhao.track,'wild_asian_host_observation');
+ assert.equal(zou.track,'plant_genetic_adaptation');
+ assert.match(zou.limits.join(' '),/not an independent infected population sample/);
+ assert.equal(countIndependentEvents(source.claims,'wild_asian_host_observation'),1);
+ const origin=source.sources.find(s=>s.id==='zou-2024-popgen');
+ assert.match(origin.study_extraction.sampling_unit,/168/);
+ assert.match(origin.study_extraction.sampling_unit,/42 populations/);
+});
+
+test('causal native-rice disease proof is a distinct oomycete not the jiaobai fungus',()=>{
+ const confirmed=byId(source,'native-rice-pythiogeton-causal-positive');
+ const unknown=byId(source,'american-native-host-infection');
+ assert.equal(confirmed.status,'documented');
+ assert.equal(unknown.status,'unresolved');
+ assert.match(confirmed.statement,/Pythiogeton manoomin/);
+ assert.match(confirmed.statement,/recovery of the organism/);
+ assert.match(confirmed.limits.join(' '),/oomycete/);
+ assert.match(confirmed.limits.join(' '),/not.*U\. esculenta|not.*Ustilago/i);
+});
+
+test('a publishing-unit error in the native-pathogen experiment remains visible',()=>{
+ const methods=source.sources.find(s=>s.id==='doan-davis-2019-pythiogeton').study_extraction;
+ assert.match(methods.method_reporting_issue,/80–85 °C/);
+ assert.match(methods.method_reporting_issue,/physiologically implausible/);
+ assert.match(methods.method_reporting_issue,/without author correction/);
 });
