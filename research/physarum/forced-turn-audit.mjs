@@ -22,10 +22,13 @@ export function auditForcedTurnTable(input) {
       throw new Error('inconsistent three-outcome accounting: '+row.id);
     const forcedRightN=row.forcedRight.right+row.forcedRight.left;
     const forcedLeftN=row.forcedLeft.right+row.forcedLeft.left;
+    // Right forced turn: left is alternate; left forced turn: right is alternate.
     const armAlternate=row.forcedRight.left+row.forcedLeft.right;
     const armRepeat=row.forcedRight.right+row.forcedLeft.left;
     const sourceResidual={decisive:row.decisive-(forcedRightN+forcedLeftN),
       alternate:row.alternate-armAlternate,repeat:row.repeat-armRepeat};
+    // Do not alter published counts to make them agree. Other row analyses remain
+    // usable as arithmetic, but the aggregate cannot be admitted as reconciled.
     const sourceArmCountsReconciled=Object.values(sourceResidual).every(x=>x===0);
     if(typeof row.printedUndecidedPercent!=='number'||!Number.isFinite(row.printedUndecidedPercent)||
       row.printedUndecidedPercent<0||row.printedUndecidedPercent>100)throw new TypeError('invalid published percentage');
@@ -45,6 +48,8 @@ export function auditForcedTurnTable(input) {
       computedUndecidedPercent:computedUndecided,
       printedMatchesCorrectDenominator:Math.abs(computedUndecided-row.printedUndecidedPercent)<0.011,
       printedMatchesExtraDenominator:Math.abs(extraDenominator-row.printedUndecidedPercent)<0.011,
+      // ONLY a mathematical worst-case allocation of undecided trials to
+      // hypothetical binary choices. Not confidence intervals or measurements.
       latentBinaryCompletionBounds:[row.alternate/row.tested,(row.alternate+row.undecidedBothArms)/row.tested],
       forcedTurnExposureIdentified:false,
       limitation:'undecided counts lack forced-turn stratification; cannot infer attempted-turn denominators from decisive counts'
@@ -56,6 +61,10 @@ export function auditForcedTurnTable(input) {
     acceptance:'Arithmetic and outcome-label reconciliation only; no preregistered N, CAD tolerance, causal attribution, or live measurement approved.'};
 }
 
+/** Independent arithmetic triangulation of published Table 1 and Table 2.
+ * Both tables are *transcribed from the article text*, not raw trials.
+ * Cardinal sums may agree where right/left and arm-specific sums do not.
+ */
 export function crossAuditDirectionTables(table1,table2){
  const primary=auditForcedTurnTable(table1);
  if(table2?.workRef!==WORK_REF||table2.workRef!==table1.workRef)
