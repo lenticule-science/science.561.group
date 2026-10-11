@@ -1,29 +1,71 @@
 {
+  "$schema": "../../../../../../../../../../data/records/schema/literature-measurement.schema.json",
   "id": "low-dose-amphetamine-literature",
   "kind": "literature-measurement",
   "question": "What do 2.5 mg and 5 mg of mixed amphetamine salts do in adults without ADHD?",
+  "frame": {
+    "population": "adults without ADHD",
+    "exposure": "mixed amphetamine salts 2.5 mg and 5 mg (≈1.9 and 3.75 mg d-amphetamine-equivalent), single and repeated",
+    "comparator": "placebo",
+    "outcomes": [
+      "cognitive performance",
+      "subjective effects",
+      "cardiovascular effects",
+      "tolerance and sensitization"
+    ]
+  },
   "notes": [
-    "lib/emsenn/services/561-group/services/science-services-section/services/natural-science-services-section/services/biological-science-services-section/services/medical-science-services-section/services/pharmacology-services-section/content/text/documents/articles/notes/amphetamine-microdosing.md"
+    "../../content/text/documents/articles/notes/amphetamine-microdosing.md"
   ],
   "sources": [
     {
-      "id": "weyandt-2018-neurocognitive-autonomic-and-mood",
-      "citation": "Weyandt et al. 2018",
-      "title": "Neurocognitive, Autonomic, and Mood Effects of Adderall: A Pilot Study of Healthy College Students",
-      "authors": [
-        "Weyandt LL",
-        "White TL",
-        "Gudmundsdottir BG",
-        "Nitenson AZ",
-        "Rathkey ES",
-        "De Leon KA",
-        "Bjorn SA"
-      ],
-      "journal": "Pharmacy (Basel, Switzerland)",
-      "year": 2018,
-      "doi": "10.3390/pharmacy6030058",
-      "pmid": "29954141",
-      "pmcid": "PMC6165228",
+      "item": {
+        "id": "weyandt-2018-neurocognitive-autonomic-and-mood",
+        "type": "article-journal",
+        "title": "Neurocognitive, Autonomic, and Mood Effects of Adderall: A Pilot Study of Healthy College Students",
+        "author": [
+          {
+            "family": "Weyandt",
+            "given": "LL"
+          },
+          {
+            "family": "White",
+            "given": "TL"
+          },
+          {
+            "family": "Gudmundsdottir",
+            "given": "BG"
+          },
+          {
+            "family": "Nitenson",
+            "given": "AZ"
+          },
+          {
+            "family": "Rathkey",
+            "given": "ES"
+          },
+          {
+            "family": "De Leon",
+            "given": "KA"
+          },
+          {
+            "family": "Bjorn",
+            "given": "SA"
+          }
+        ],
+        "container-title": "Pharmacy (Basel, Switzerland)",
+        "issued": {
+          "date-parts": [
+            [
+              2018
+            ]
+          ]
+        },
+        "DOI": "10.3390/pharmacy6030058",
+        "PMID": "29954141",
+        "PMCID": "PMC6165228",
+        "URL": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6165228/"
+      },
       "findings": [
         {
           "finding": "Small, mixed cognitive effects; large autonomic, subjective and activated-emotion effects.",
@@ -31,7 +73,6 @@
         }
       ],
       "readFrom": "full-text",
-      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6165228/",
       "observedAt": "2026-10-07",
       "design": "randomized-crossover",
       "n": 13,
@@ -47,20 +88,41 @@
       ]
     },
     {
-      "id": "bowman-2023-not-so-smart-smart",
-      "citation": "Bowman et al. 2023",
-      "title": "Not so smart? \"Smart\" drugs increase the level but decrease the quality of cognitive effort",
-      "authors": [
-        "Bowman E",
-        "Coghill D",
-        "Murawski C",
-        "Bossaerts P"
-      ],
-      "journal": "Science advances",
-      "year": 2023,
-      "doi": "10.1126/sciadv.add4165",
-      "pmid": "37315143",
-      "pmcid": "PMC10266726",
+      "item": {
+        "id": "bowman-2023-not-so-smart-smart",
+        "type": "article-journal",
+        "title": "Not so smart? \"Smart\" drugs increase the level but decrease the quality of cognitive effort",
+        "author": [
+          {
+            "family": "Bowman",
+            "given": "E"
+          },
+          {
+            "family": "Coghill",
+            "given": "D"
+          },
+          {
+            "family": "Murawski",
+            "given": "C"
+          },
+          {
+            "family": "Bossaerts",
+            "given": "P"
+          }
+        ],
+        "container-title": "Science advances",
+        "issued": {
+          "date-parts": [
+            [
+              2023
+            ]
+          ]
+        },
+        "DOI": "10.1126/sciadv.add4165",
+        "PMID": "37315143",
+        "PMCID": "PMC10266726",
+        "URL": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10266726/"
+      },
       "findings": [
         {
           "finding": "On knapsack optimization, all three drugs raised effort and lowered solution value; productivity fell.",
@@ -68,7 +130,6 @@
         }
       ],
       "readFrom": "abstract",
-      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10266726/",
       "observedAt": "2026-10-07",
       "design": "randomized-crossover",
       "n": 40,
@@ -92,42 +153,77 @@
       ]
     },
     {
-      "id": "ilieva-2015-prescription-stimulants-effects-on",
-      "citation": "Ilieva, Hook & Farah 2015",
-      "title": "Prescription Stimulants' Effects on Healthy Inhibitory Control, Working Memory, and Episodic Memory: A Meta-analysis",
-      "authors": [
-        "Ilieva IP",
-        "Hook CJ",
-        "Farah MJ"
-      ],
-      "journal": "Journal of cognitive neuroscience",
-      "year": 2015,
-      "doi": "10.1162/jocn_a_00776",
-      "pmid": "25591060",
+      "item": {
+        "id": "ilieva-2015-prescription-stimulants-effects-on",
+        "type": "article-journal",
+        "title": "Prescription Stimulants' Effects on Healthy Inhibitory Control, Working Memory, and Episodic Memory: A Meta-analysis",
+        "author": [
+          {
+            "family": "Ilieva",
+            "given": "IP"
+          },
+          {
+            "family": "Hook",
+            "given": "CJ"
+          },
+          {
+            "family": "Farah",
+            "given": "MJ"
+          }
+        ],
+        "container-title": "Journal of cognitive neuroscience",
+        "issued": {
+          "date-parts": [
+            [
+              2015
+            ]
+          ]
+        },
+        "DOI": "10.1162/jocn_a_00776",
+        "PMID": "25591060",
+        "URL": "https://pubmed.ncbi.nlm.nih.gov/25591060/"
+      },
       "findings": [
         {
           "finding": "Small effects of prescription stimulants on inhibitory control and delayed episodic memory in healthy adults; working-memory effects small and inconsistent."
         }
       ],
       "readFrom": "abstract",
-      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/25591060/",
       "observedAt": "2026-10-07",
       "design": "meta-analysis"
     },
     {
-      "id": "wardle-2012-effect-of-d-amphetamine-on",
-      "citation": "Wardle, Yang & de Wit 2012",
-      "title": "Effect of d-amphetamine on post-error slowing in healthy volunteers",
-      "authors": [
-        "Wardle MC",
-        "Yang A",
-        "de Wit H"
-      ],
-      "journal": "Psychopharmacology",
-      "year": 2012,
-      "doi": "10.1007/s00213-011-2462-6",
-      "pmid": "21894485",
-      "pmcid": "PMC4241763",
+      "item": {
+        "id": "wardle-2012-effect-of-d-amphetamine-on",
+        "type": "article-journal",
+        "title": "Effect of d-amphetamine on post-error slowing in healthy volunteers",
+        "author": [
+          {
+            "family": "Wardle",
+            "given": "MC"
+          },
+          {
+            "family": "Yang",
+            "given": "A"
+          },
+          {
+            "family": "de Wit",
+            "given": "H"
+          }
+        ],
+        "container-title": "Psychopharmacology",
+        "issued": {
+          "date-parts": [
+            [
+              2012
+            ]
+          ]
+        },
+        "DOI": "10.1007/s00213-011-2462-6",
+        "PMID": "21894485",
+        "PMCID": "PMC4241763",
+        "URL": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4241763/"
+      },
       "findings": [
         {
           "finding": "5 mg had no significant effect on any outcome; only 20 mg changed behavior.",
@@ -135,7 +231,6 @@
         }
       ],
       "readFrom": "full-text",
-      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4241763/",
       "observedAt": "2026-10-07",
       "design": "randomized-crossover",
       "n": 110,
@@ -151,19 +246,37 @@
       ]
     },
     {
-      "id": "mccloskey-2010-are-attention-lapses-related",
-      "citation": "McCloskey, Palmer & de Wit 2010",
-      "title": "Are attention lapses related to d-amphetamine liking?",
-      "authors": [
-        "McCloskey M",
-        "Palmer AA",
-        "de Wit H"
-      ],
-      "journal": "Psychopharmacology",
-      "year": 2010,
-      "doi": "10.1007/s00213-009-1719-9",
-      "pmid": "19936714",
-      "pmcid": "PMC4004179",
+      "item": {
+        "id": "mccloskey-2010-are-attention-lapses-related",
+        "type": "article-journal",
+        "title": "Are attention lapses related to d-amphetamine liking?",
+        "author": [
+          {
+            "family": "McCloskey",
+            "given": "M"
+          },
+          {
+            "family": "Palmer",
+            "given": "AA"
+          },
+          {
+            "family": "de Wit",
+            "given": "H"
+          }
+        ],
+        "container-title": "Psychopharmacology",
+        "issued": {
+          "date-parts": [
+            [
+              2010
+            ]
+          ]
+        },
+        "DOI": "10.1007/s00213-009-1719-9",
+        "PMID": "19936714",
+        "PMCID": "PMC4004179",
+        "URL": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4004179/"
+      },
       "findings": [
         {
           "finding": "5 mg produced near-zero 'feel drug' ratings (adjusted mean 0.10).",
@@ -171,7 +284,6 @@
         }
       ],
       "readFrom": "full-text",
-      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4004179/",
       "observedAt": "2026-10-07",
       "design": "randomized-crossover",
       "n": 99,
@@ -187,20 +299,41 @@
       ]
     },
     {
-      "id": "murray-2021-subjective-responses-predict-d-amphetamine",
-      "citation": "Murray et al. 2021",
-      "title": "Subjective responses predict d-amphetamine choice in healthy volunteers",
-      "authors": [
-        "Murray CH",
-        "Li J",
-        "Weafer J",
-        "de Wit H"
-      ],
-      "journal": "Pharmacology, biochemistry, and behavior",
-      "year": 2021,
-      "doi": "10.1016/j.pbb.2021.173158",
-      "pmid": "33675838",
-      "pmcid": "PMC8018542",
+      "item": {
+        "id": "murray-2021-subjective-responses-predict-d-amphetamine",
+        "type": "article-journal",
+        "title": "Subjective responses predict d-amphetamine choice in healthy volunteers",
+        "author": [
+          {
+            "family": "Murray",
+            "given": "CH"
+          },
+          {
+            "family": "Li",
+            "given": "J"
+          },
+          {
+            "family": "Weafer",
+            "given": "J"
+          },
+          {
+            "family": "de Wit",
+            "given": "H"
+          }
+        ],
+        "container-title": "Pharmacology, biochemistry, and behavior",
+        "issued": {
+          "date-parts": [
+            [
+              2021
+            ]
+          ]
+        },
+        "DOI": "10.1016/j.pbb.2021.173158",
+        "PMID": "33675838",
+        "PMCID": "PMC8018542",
+        "URL": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8018542/"
+      },
       "findings": [
         {
           "finding": "81 of 112 chose amphetamine over placebo; choosers had greater positive mood, elation and systolic blood pressure rise.",
@@ -208,7 +341,6 @@
         }
       ],
       "readFrom": "full-text",
-      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8018542/",
       "observedAt": "2026-10-07",
       "design": "randomized-crossover",
       "n": 112,
@@ -224,17 +356,29 @@
       ]
     },
     {
-      "id": "kassim-2023-systematic-reviews-of-the",
-      "citation": "Kassim 2023",
-      "title": "Systematic reviews of the acute effects of amphetamine on working memory and other cognitive performances in healthy individuals, with a focus on the potential influence of personality traits",
-      "authors": [
-        "Kassim FM"
-      ],
-      "journal": "Human psychopharmacology",
-      "year": 2023,
-      "doi": "10.1002/hup.2856",
-      "pmid": "36251504",
-      "pmcid": "PMC10078276",
+      "item": {
+        "id": "kassim-2023-systematic-reviews-of-the",
+        "type": "article-journal",
+        "title": "Systematic reviews of the acute effects of amphetamine on working memory and other cognitive performances in healthy individuals, with a focus on the potential influence of personality traits",
+        "author": [
+          {
+            "family": "Kassim",
+            "given": "FM"
+          }
+        ],
+        "container-title": "Human psychopharmacology",
+        "issued": {
+          "date-parts": [
+            [
+              2023
+            ]
+          ]
+        },
+        "DOI": "10.1002/hup.2856",
+        "PMID": "36251504",
+        "PMCID": "PMC10078276",
+        "URL": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10078276/"
+      },
       "findings": [
         {
           "finding": "Tabulates a 5 mg d-amphetamine study (Schmedtje 1988) with no main effect on digit span, digit-symbol substitution, memory or simple reaction time."
@@ -244,28 +388,57 @@
         }
       ],
       "readFrom": "full-text",
-      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10078276/",
       "observedAt": "2026-10-07",
       "design": "systematic-review"
     },
     {
-      "id": "pfoser-poschacher-2026-effect-of-a-single",
-      "citation": "Pfoser-Poschacher et al. 2026",
-      "title": "Effect of a Single Oral Dose of Dexamphetamine or Zolpidem on Attention and Reaction Time in Healthy Men",
-      "authors": [
-        "Pfoser-Poschacher V",
-        "Wolf M",
-        "Bayerle-Eder M",
-        "Wimmer T",
-        "Boryshchuk D",
-        "Gerner C",
-        "Wolzt M"
-      ],
-      "journal": "Fundamental & clinical pharmacology",
-      "year": 2026,
-      "doi": "10.1111/fcp.70092",
-      "pmid": "42087266",
-      "pmcid": "PMC13144445",
+      "item": {
+        "id": "pfoser-poschacher-2026-effect-of-a-single",
+        "type": "article-journal",
+        "title": "Effect of a Single Oral Dose of Dexamphetamine or Zolpidem on Attention and Reaction Time in Healthy Men",
+        "author": [
+          {
+            "family": "Pfoser-Poschacher",
+            "given": "V"
+          },
+          {
+            "family": "Wolf",
+            "given": "M"
+          },
+          {
+            "family": "Bayerle-Eder",
+            "given": "M"
+          },
+          {
+            "family": "Wimmer",
+            "given": "T"
+          },
+          {
+            "family": "Boryshchuk",
+            "given": "D"
+          },
+          {
+            "family": "Gerner",
+            "given": "C"
+          },
+          {
+            "family": "Wolzt",
+            "given": "M"
+          }
+        ],
+        "container-title": "Fundamental & clinical pharmacology",
+        "issued": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "DOI": "10.1111/fcp.70092",
+        "PMID": "42087266",
+        "PMCID": "PMC13144445",
+        "URL": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13144445/"
+      },
       "findings": [
         {
           "finding": "Modest effects at 3 h; fewer sustained-attention omissions at 8 h; no relation between plasma concentration and performance.",
@@ -273,7 +446,6 @@
         }
       ],
       "readFrom": "full-text",
-      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13144445/",
       "observedAt": "2026-10-07",
       "design": "randomized-parallel",
       "n": 60,
@@ -289,20 +461,44 @@
       ]
     },
     {
-      "id": "strakowski-2001-human-response-to-repeated",
-      "citation": "Strakowski et al. 2001",
-      "title": "Human response to repeated low-dose d-amphetamine: evidence for behavioral enhancement and tolerance",
-      "authors": [
-        "Strakowski SM",
-        "Sax KW",
-        "Rosenberg HL",
-        "DelBello MP",
-        "Adler CM"
-      ],
-      "journal": "Neuropsychopharmacology : official publication of the American College of Neuropsychopharmacology",
-      "year": 2001,
-      "doi": "10.1016/s0893-133x(01)00253-6",
-      "pmid": "11557168",
+      "item": {
+        "id": "strakowski-2001-human-response-to-repeated",
+        "type": "article-journal",
+        "title": "Human response to repeated low-dose d-amphetamine: evidence for behavioral enhancement and tolerance",
+        "author": [
+          {
+            "family": "Strakowski",
+            "given": "SM"
+          },
+          {
+            "family": "Sax",
+            "given": "KW"
+          },
+          {
+            "family": "Rosenberg",
+            "given": "HL"
+          },
+          {
+            "family": "DelBello",
+            "given": "MP"
+          },
+          {
+            "family": "Adler",
+            "given": "CM"
+          }
+        ],
+        "container-title": "Neuropsychopharmacology : official publication of the American College of Neuropsychopharmacology",
+        "issued": {
+          "date-parts": [
+            [
+              2001
+            ]
+          ]
+        },
+        "DOI": "10.1016/s0893-133x(01)00253-6",
+        "PMID": "11557168",
+        "URL": "https://pubmed.ncbi.nlm.nih.gov/11557168/"
+      },
       "findings": [
         {
           "finding": "Vigor and euphoria peaked after the third dose; liking peaked at the first; effects greater in women.",
@@ -310,7 +506,6 @@
         }
       ],
       "readFrom": "abstract",
-      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/11557168/",
       "observedAt": "2026-10-07",
       "design": "randomized-parallel",
       "n": 59,
@@ -327,20 +522,44 @@
       ]
     },
     {
-      "id": "roberts-2020-how-effective-are-pharmaceuticals",
-      "citation": "Roberts et al. 2020",
-      "title": "How effective are pharmaceuticals for cognitive enhancement in healthy adults? A series of meta-analyses of cognitive performance during acute administration of modafinil, methylphenidate and D-amphetamine",
-      "authors": [
-        "Roberts CA",
-        "Jones A",
-        "Sumnall H",
-        "Gage SH",
-        "Montgomery C"
-      ],
-      "journal": "European neuropsychopharmacology : the journal of the European College of Neuropsychopharmacology",
-      "year": 2020,
-      "doi": "10.1016/j.euroneuro.2020.07.002",
-      "pmid": "32709551",
+      "item": {
+        "id": "roberts-2020-how-effective-are-pharmaceuticals",
+        "type": "article-journal",
+        "title": "How effective are pharmaceuticals for cognitive enhancement in healthy adults? A series of meta-analyses of cognitive performance during acute administration of modafinil, methylphenidate and D-amphetamine",
+        "author": [
+          {
+            "family": "Roberts",
+            "given": "CA"
+          },
+          {
+            "family": "Jones",
+            "given": "A"
+          },
+          {
+            "family": "Sumnall",
+            "given": "H"
+          },
+          {
+            "family": "Gage",
+            "given": "SH"
+          },
+          {
+            "family": "Montgomery",
+            "given": "C"
+          }
+        ],
+        "container-title": "European neuropsychopharmacology : the journal of the European College of Neuropsychopharmacology",
+        "issued": {
+          "date-parts": [
+            [
+              2020
+            ]
+          ]
+        },
+        "DOI": "10.1016/j.euroneuro.2020.07.002",
+        "PMID": "32709551",
+        "URL": "https://pubmed.ncbi.nlm.nih.gov/32709551/"
+      },
       "findings": [
         {
           "finding": "47 studies; small overall effects for modafinil and methylphenidate; none for d-amphetamine.",
@@ -348,7 +567,6 @@
         }
       ],
       "readFrom": "abstract",
-      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/32709551/",
       "observedAt": "2026-10-07",
       "design": "meta-analysis",
       "country": [
@@ -356,28 +574,73 @@
       ]
     },
     {
-      "id": "moran-2024-risk-of-incident-psychosis",
-      "citation": "Moran et al. 2024",
-      "title": "Risk of Incident Psychosis and Mania With Prescription Amphetamines",
-      "authors": [
-        "Moran LV",
-        "Skinner JP",
-        "Shinn AK",
-        "Nielsen K",
-        "Rao V",
-        "Taylor ST",
-        "Cohen TR",
-        "Erkol C",
-        "Merchant J",
-        "Mujica CA",
-        "Perlis RH",
-        "Ongur D"
-      ],
-      "journal": "The American journal of psychiatry",
-      "year": 2024,
-      "doi": "10.1176/appi.ajp.20230329",
-      "pmid": "39262211",
-      "pmcid": "PMC11905971",
+      "item": {
+        "id": "moran-2024-risk-of-incident-psychosis",
+        "type": "article-journal",
+        "title": "Risk of Incident Psychosis and Mania With Prescription Amphetamines",
+        "author": [
+          {
+            "family": "Moran",
+            "given": "LV"
+          },
+          {
+            "family": "Skinner",
+            "given": "JP"
+          },
+          {
+            "family": "Shinn",
+            "given": "AK"
+          },
+          {
+            "family": "Nielsen",
+            "given": "K"
+          },
+          {
+            "family": "Rao",
+            "given": "V"
+          },
+          {
+            "family": "Taylor",
+            "given": "ST"
+          },
+          {
+            "family": "Cohen",
+            "given": "TR"
+          },
+          {
+            "family": "Erkol",
+            "given": "C"
+          },
+          {
+            "family": "Merchant",
+            "given": "J"
+          },
+          {
+            "family": "Mujica",
+            "given": "CA"
+          },
+          {
+            "family": "Perlis",
+            "given": "RH"
+          },
+          {
+            "family": "Ongur",
+            "given": "D"
+          }
+        ],
+        "container-title": "The American journal of psychiatry",
+        "issued": {
+          "date-parts": [
+            [
+              2024
+            ]
+          ]
+        },
+        "DOI": "10.1176/appi.ajp.20230329",
+        "PMID": "39262211",
+        "PMCID": "PMC11905971",
+        "URL": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11905971/"
+      },
       "findings": [
         {
           "finding": "Past-month prescription amphetamine: adjusted OR 2.68 for incident psychosis or mania; >30 mg dextroamphetamine-equivalent: 5.28-fold.",
@@ -385,7 +648,6 @@
         }
       ],
       "readFrom": "abstract",
-      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11905971/",
       "observedAt": "2026-10-07",
       "design": "case-control",
       "n": 4122,
@@ -395,22 +657,49 @@
       "population": "ages 16–35, McLean Hospital admissions 2005–2019"
     },
     {
-      "id": "moran-2019-psychosis-with-methylphenidate-or",
-      "citation": "Moran et al. 2019",
-      "title": "Psychosis with Methylphenidate or Amphetamine in Patients with ADHD",
-      "authors": [
-        "Moran LV",
-        "Ongur D",
-        "Hsu J",
-        "Castro VM",
-        "Perlis RH",
-        "Schneeweiss S"
-      ],
-      "journal": "The New England journal of medicine",
-      "year": 2019,
-      "doi": "10.1056/nejmoa1813751",
-      "pmid": "30893533",
-      "pmcid": "PMC6543546",
+      "item": {
+        "id": "moran-2019-psychosis-with-methylphenidate-or",
+        "type": "article-journal",
+        "title": "Psychosis with Methylphenidate or Amphetamine in Patients with ADHD",
+        "author": [
+          {
+            "family": "Moran",
+            "given": "LV"
+          },
+          {
+            "family": "Ongur",
+            "given": "D"
+          },
+          {
+            "family": "Hsu",
+            "given": "J"
+          },
+          {
+            "family": "Castro",
+            "given": "VM"
+          },
+          {
+            "family": "Perlis",
+            "given": "RH"
+          },
+          {
+            "family": "Schneeweiss",
+            "given": "S"
+          }
+        ],
+        "container-title": "The New England journal of medicine",
+        "issued": {
+          "date-parts": [
+            [
+              2019
+            ]
+          ]
+        },
+        "DOI": "10.1056/nejmoa1813751",
+        "PMID": "30893533",
+        "PMCID": "PMC6543546",
+        "URL": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6543546/"
+      },
       "findings": [
         {
           "finding": "New-onset psychosis in 0.21% on amphetamine vs 0.10% on methylphenidate; HR 1.65.",
@@ -418,7 +707,6 @@
         }
       ],
       "readFrom": "abstract",
-      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6543546/",
       "observedAt": "2026-10-07",
       "design": "cohort",
       "n": 221846,
@@ -428,18 +716,36 @@
       "population": "ages 13–25 with ADHD starting a stimulant"
     },
     {
-      "id": "ilieva-2013-objective-and-subjective-cognitive",
-      "citation": "Ilieva, Boland & Farah 2013",
-      "title": "Objective and subjective cognitive enhancing effects of mixed amphetamine salts in healthy people",
-      "authors": [
-        "Ilieva I",
-        "Boland J",
-        "Farah MJ"
-      ],
-      "journal": "Neuropharmacology",
-      "year": 2013,
-      "doi": "10.1016/j.neuropharm.2012.07.021",
-      "pmid": "22884611",
+      "item": {
+        "id": "ilieva-2013-objective-and-subjective-cognitive",
+        "type": "article-journal",
+        "title": "Objective and subjective cognitive enhancing effects of mixed amphetamine salts in healthy people",
+        "author": [
+          {
+            "family": "Ilieva",
+            "given": "I"
+          },
+          {
+            "family": "Boland",
+            "given": "J"
+          },
+          {
+            "family": "Farah",
+            "given": "MJ"
+          }
+        ],
+        "container-title": "Neuropharmacology",
+        "issued": {
+          "date-parts": [
+            [
+              2013
+            ]
+          ]
+        },
+        "DOI": "10.1016/j.neuropharm.2012.07.021",
+        "PMID": "22884611",
+        "URL": "https://pubmed.ncbi.nlm.nih.gov/22884611/"
+      },
       "findings": [
         {
           "finding": "No enhancement of any of 13 cognitive measures for participants in general; participants believed they were enhanced.",
@@ -447,7 +753,6 @@
         }
       ],
       "readFrom": "abstract",
-      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/22884611/",
       "observedAt": "2026-10-07",
       "design": "randomized-crossover",
       "country": [
@@ -465,19 +770,40 @@
       ]
     },
     {
-      "id": "ward-1997-effects-of-d-amphetamine-on",
-      "citation": "Ward et al. 1997",
-      "title": "Effects of d-amphetamine on task performance and social behavior of humans in a residential laboratory",
-      "authors": [
-        "Ward AS",
-        "Kelly TH",
-        "Foltin RW",
-        "Fischman MW"
-      ],
-      "journal": "Experimental and clinical psychopharmacology",
-      "year": 1997,
-      "doi": "10.1037//1064-1297.5.2.130",
-      "pmid": "9234049",
+      "item": {
+        "id": "ward-1997-effects-of-d-amphetamine-on",
+        "type": "article-journal",
+        "title": "Effects of d-amphetamine on task performance and social behavior of humans in a residential laboratory",
+        "author": [
+          {
+            "family": "Ward",
+            "given": "AS"
+          },
+          {
+            "family": "Kelly",
+            "given": "TH"
+          },
+          {
+            "family": "Foltin",
+            "given": "RW"
+          },
+          {
+            "family": "Fischman",
+            "given": "MW"
+          }
+        ],
+        "container-title": "Experimental and clinical psychopharmacology",
+        "issued": {
+          "date-parts": [
+            [
+              1997
+            ]
+          ]
+        },
+        "DOI": "10.1037//1064-1297.5.2.130",
+        "PMID": "9234049",
+        "URL": "https://pubmed.ncbi.nlm.nih.gov/9234049/"
+      },
       "findings": [
         {
           "finding": "Faster responding without accuracy change; no change in self-reported drug effects.",
@@ -485,7 +811,6 @@
         }
       ],
       "readFrom": "abstract",
-      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/9234049/",
       "observedAt": "2026-10-07",
       "design": "residential-laboratory",
       "n": 6,
@@ -502,18 +827,36 @@
       ]
     },
     {
-      "id": "kelly-1991-the-effects-of-repeated",
-      "citation": "Kelly, Foltin & Fischman 1991",
-      "title": "The effects of repeated amphetamine exposure on multiple measures of human behavior",
-      "authors": [
-        "Kelly TH",
-        "Foltin RW",
-        "Fischman MW"
-      ],
-      "journal": "Pharmacology, biochemistry, and behavior",
-      "year": 1991,
-      "doi": "10.1016/0091-3057(91)90301-h",
-      "pmid": "2057510",
+      "item": {
+        "id": "kelly-1991-the-effects-of-repeated",
+        "type": "article-journal",
+        "title": "The effects of repeated amphetamine exposure on multiple measures of human behavior",
+        "author": [
+          {
+            "family": "Kelly",
+            "given": "TH"
+          },
+          {
+            "family": "Foltin",
+            "given": "RW"
+          },
+          {
+            "family": "Fischman",
+            "given": "MW"
+          }
+        ],
+        "container-title": "Pharmacology, biochemistry, and behavior",
+        "issued": {
+          "date-parts": [
+            [
+              1991
+            ]
+          ]
+        },
+        "DOI": "10.1016/0091-3057(91)90301-h",
+        "PMID": "2057510",
+        "URL": "https://pubmed.ncbi.nlm.nih.gov/2057510/"
+      },
       "findings": [
         {
           "finding": "Behavioral effects (food intake, task accuracy, talking, smoking) showed no tolerance; subjective ratings showed rapid tolerance.",
@@ -521,7 +864,6 @@
         }
       ],
       "readFrom": "abstract",
-      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/2057510/",
       "observedAt": "2026-10-07",
       "design": "residential-laboratory",
       "n": 6,
@@ -538,17 +880,32 @@
       ]
     },
     {
-      "id": "horrigan-2000-low-dose-amphetamine-salts-and",
-      "citation": "Horrigan & Barnhill 2000",
-      "title": "Low-dose amphetamine salts and adult attention-deficit/hyperactivity disorder",
-      "authors": [
-        "Horrigan JP",
-        "Barnhill LJ"
-      ],
-      "journal": "The Journal of clinical psychiatry",
-      "year": 2000,
-      "doi": "10.4088/jcp.v61n0604",
-      "pmid": "10901338",
+      "item": {
+        "id": "horrigan-2000-low-dose-amphetamine-salts-and",
+        "type": "article-journal",
+        "title": "Low-dose amphetamine salts and adult attention-deficit/hyperactivity disorder",
+        "author": [
+          {
+            "family": "Horrigan",
+            "given": "JP"
+          },
+          {
+            "family": "Barnhill",
+            "given": "LJ"
+          }
+        ],
+        "container-title": "The Journal of clinical psychiatry",
+        "issued": {
+          "date-parts": [
+            [
+              2000
+            ]
+          ]
+        },
+        "DOI": "10.4088/jcp.v61n0604",
+        "PMID": "10901338",
+        "URL": "https://pubmed.ncbi.nlm.nih.gov/10901338/"
+      },
       "findings": [
         {
           "finding": "54% responded; mean responder end dose 10.77 mg/day.",
@@ -556,7 +913,6 @@
         }
       ],
       "readFrom": "abstract",
-      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/10901338/",
       "observedAt": "2026-10-07",
       "design": "open-label",
       "n": 24,
@@ -573,20 +929,44 @@
       ]
     },
     {
-      "id": "dolder-2018-acute-effects-of-lisdexamfetamine",
-      "citation": "Dolder et al. 2018",
-      "title": "Acute effects of lisdexamfetamine and D-amphetamine on social cognition and cognitive performance in a placebo-controlled study in healthy subjects",
-      "authors": [
-        "Dolder PC",
-        "Strajhar P",
-        "Vizeli P",
-        "Odermatt A",
-        "Liechti ME"
-      ],
-      "journal": "Psychopharmacology",
-      "year": 2018,
-      "doi": "10.1007/s00213-018-4849-0",
-      "pmid": "29511807",
+      "item": {
+        "id": "dolder-2018-acute-effects-of-lisdexamfetamine",
+        "type": "article-journal",
+        "title": "Acute effects of lisdexamfetamine and D-amphetamine on social cognition and cognitive performance in a placebo-controlled study in healthy subjects",
+        "author": [
+          {
+            "family": "Dolder",
+            "given": "PC"
+          },
+          {
+            "family": "Strajhar",
+            "given": "P"
+          },
+          {
+            "family": "Vizeli",
+            "given": "P"
+          },
+          {
+            "family": "Odermatt",
+            "given": "A"
+          },
+          {
+            "family": "Liechti",
+            "given": "ME"
+          }
+        ],
+        "container-title": "Psychopharmacology",
+        "issued": {
+          "date-parts": [
+            [
+              2018
+            ]
+          ]
+        },
+        "DOI": "10.1007/s00213-018-4849-0",
+        "PMID": "29511807",
+        "URL": "https://pubmed.ncbi.nlm.nih.gov/29511807/"
+      },
       "findings": [
         {
           "finding": "Improved go-accuracy and vigilance; no digit-span effect.",
@@ -594,7 +974,6 @@
         }
       ],
       "readFrom": "abstract",
-      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/29511807/",
       "observedAt": "2026-10-07",
       "design": "randomized-crossover",
       "n": 24,
@@ -614,21 +993,48 @@
       ]
     },
     {
-      "id": "silber-2005-the-effects-of-dexamphetamine",
-      "citation": "Silber et al. 2005",
-      "title": "The effects of dexamphetamine on simulated driving performance",
-      "authors": [
-        "Silber BY",
-        "Papafotiou K",
-        "Croft RJ",
-        "Ogden E",
-        "Swann P",
-        "Stough C"
-      ],
-      "journal": "Psychopharmacology",
-      "year": 2005,
-      "doi": "10.1007/s00213-004-2061-x",
-      "pmid": "15614573",
+      "item": {
+        "id": "silber-2005-the-effects-of-dexamphetamine",
+        "type": "article-journal",
+        "title": "The effects of dexamphetamine on simulated driving performance",
+        "author": [
+          {
+            "family": "Silber",
+            "given": "BY"
+          },
+          {
+            "family": "Papafotiou",
+            "given": "K"
+          },
+          {
+            "family": "Croft",
+            "given": "RJ"
+          },
+          {
+            "family": "Ogden",
+            "given": "E"
+          },
+          {
+            "family": "Swann",
+            "given": "P"
+          },
+          {
+            "family": "Stough",
+            "given": "C"
+          }
+        ],
+        "container-title": "Psychopharmacology",
+        "issued": {
+          "date-parts": [
+            [
+              2005
+            ]
+          ]
+        },
+        "DOI": "10.1007/s00213-004-2061-x",
+        "PMID": "15614573",
+        "URL": "https://pubmed.ncbi.nlm.nih.gov/15614573/"
+      },
       "findings": [
         {
           "finding": "Worse daytime simulated driving; incorrect signalling, red-light failures, slow reactions.",
@@ -636,7 +1042,6 @@
         }
       ],
       "readFrom": "abstract",
-      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/15614573/",
       "observedAt": "2026-10-07",
       "design": "randomized-crossover",
       "n": 20,
@@ -652,18 +1057,33 @@
       ]
     },
     {
-      "id": "weafer-2013-inattention-impulsive-action-and",
-      "citation": "Weafer & de Wit 2013",
-      "title": "Inattention, impulsive action, and subjective response to D-amphetamine",
-      "authors": [
-        "Weafer J",
-        "de Wit H"
-      ],
-      "journal": "Drug and alcohol dependence",
-      "year": 2013,
-      "doi": "10.1016/j.drugalcdep.2013.05.021",
-      "pmid": "23790566",
-      "pmcid": "PMC3786022",
+      "item": {
+        "id": "weafer-2013-inattention-impulsive-action-and",
+        "type": "article-journal",
+        "title": "Inattention, impulsive action, and subjective response to D-amphetamine",
+        "author": [
+          {
+            "family": "Weafer",
+            "given": "J"
+          },
+          {
+            "family": "de Wit",
+            "given": "H"
+          }
+        ],
+        "container-title": "Drug and alcohol dependence",
+        "issued": {
+          "date-parts": [
+            [
+              2013
+            ]
+          ]
+        },
+        "DOI": "10.1016/j.drugalcdep.2013.05.021",
+        "PMID": "23790566",
+        "PMCID": "PMC3786022",
+        "URL": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3786022/"
+      },
       "findings": [
         {
           "finding": "Attention lapses predict less, impulsive action more, subjective response; associations strengthen with dose.",
@@ -671,7 +1091,6 @@
         }
       ],
       "readFrom": "abstract",
-      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3786022/",
       "observedAt": "2026-10-07",
       "design": "randomized-crossover",
       "n": 165,
@@ -687,20 +1106,41 @@
       ]
     },
     {
-      "id": "looby-2026-to-choose-or-not",
-      "citation": "Looby et al. 2026",
-      "title": "To choose or not to choose: Examining the influence of choice on elicitation of subjective and objective prescription stimulant placebo effects in the laboratory",
-      "authors": [
-        "Looby A",
-        "Berry KA",
-        "Petrey AM",
-        "Winterlind EL"
-      ],
-      "journal": "Experimental and clinical psychopharmacology",
-      "year": 2026,
-      "doi": "10.1037/pha0000824",
-      "pmid": "41411020",
-      "pmcid": "PMC13470850",
+      "item": {
+        "id": "looby-2026-to-choose-or-not",
+        "type": "article-journal",
+        "title": "To choose or not to choose: Examining the influence of choice on elicitation of subjective and objective prescription stimulant placebo effects in the laboratory",
+        "author": [
+          {
+            "family": "Looby",
+            "given": "A"
+          },
+          {
+            "family": "Berry",
+            "given": "KA"
+          },
+          {
+            "family": "Petrey",
+            "given": "AM"
+          },
+          {
+            "family": "Winterlind",
+            "given": "EL"
+          }
+        ],
+        "container-title": "Experimental and clinical psychopharmacology",
+        "issued": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "DOI": "10.1037/pha0000824",
+        "PMID": "41411020",
+        "PMCID": "PMC13470850",
+        "URL": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13470850/"
+      },
       "findings": [
         {
           "finding": "Believing one took Adderall produced medium-large subjective effects and no objective cognitive effects.",
@@ -708,7 +1148,6 @@
         }
       ],
       "readFrom": "abstract",
-      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13470850/",
       "observedAt": "2026-10-07",
       "design": "randomized-parallel",
       "n": 183,
@@ -724,19 +1163,37 @@
       ]
     },
     {
-      "id": "chan-2025-effect-of-amphetamines-on",
-      "citation": "Chan, Chan & Wright 2025",
-      "title": "Effect of amphetamines on blood pressure",
-      "authors": [
-        "Chan M",
-        "Chan JJ",
-        "Wright JM"
-      ],
-      "journal": "The Cochrane database of systematic reviews",
-      "year": 2025,
-      "doi": "10.1002/14651858.cd007896.pub4",
-      "pmid": "40152309",
-      "pmcid": "PMC11951410",
+      "item": {
+        "id": "chan-2025-effect-of-amphetamines-on",
+        "type": "article-journal",
+        "title": "Effect of amphetamines on blood pressure",
+        "author": [
+          {
+            "family": "Chan",
+            "given": "M"
+          },
+          {
+            "family": "Chan",
+            "given": "JJ"
+          },
+          {
+            "family": "Wright",
+            "given": "JM"
+          }
+        ],
+        "container-title": "The Cochrane database of systematic reviews",
+        "issued": {
+          "date-parts": [
+            [
+              2025
+            ]
+          ]
+        },
+        "DOI": "10.1002/14651858.cd007896.pub4",
+        "PMID": "40152309",
+        "PMCID": "PMC11951410",
+        "URL": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11951410/"
+      },
       "findings": [
         {
           "finding": "Daily oral amphetamines raise SBP 1.93 mmHg, DBP 1.84 mmHg, heart rate 3.71 bpm, sustained at ≥8 weeks.",
@@ -744,28 +1201,51 @@
         }
       ],
       "readFrom": "abstract",
-      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11951410/",
       "observedAt": "2026-10-07",
       "design": "meta-analysis",
       "n": 10583,
       "population": "56 RCTs, adults and children; North America, Europe, Japan, Australia"
     },
     {
-      "id": "poulton-2024-the-impact-of-dexamphetamine",
-      "citation": "Poulton et al. 2024",
-      "title": "The Impact of Dexamphetamine Treatment for Obesity on Executive Function: A Double-Blind Randomised Controlled Pilot Study",
-      "authors": [
-        "Poulton A",
-        "Gauci N",
-        "Khalifa H",
-        "Hibbert EJ",
-        "Poulton AS"
-      ],
-      "journal": "Brain sciences",
-      "year": 2024,
-      "doi": "10.3390/brainsci14121274",
-      "pmid": "39766473",
-      "pmcid": "PMC11674214",
+      "item": {
+        "id": "poulton-2024-the-impact-of-dexamphetamine",
+        "type": "article-journal",
+        "title": "The Impact of Dexamphetamine Treatment for Obesity on Executive Function: A Double-Blind Randomised Controlled Pilot Study",
+        "author": [
+          {
+            "family": "Poulton",
+            "given": "A"
+          },
+          {
+            "family": "Gauci",
+            "given": "N"
+          },
+          {
+            "family": "Khalifa",
+            "given": "H"
+          },
+          {
+            "family": "Hibbert",
+            "given": "EJ"
+          },
+          {
+            "family": "Poulton",
+            "given": "AS"
+          }
+        ],
+        "container-title": "Brain sciences",
+        "issued": {
+          "date-parts": [
+            [
+              2024
+            ]
+          ]
+        },
+        "DOI": "10.3390/brainsci14121274",
+        "PMID": "39766473",
+        "PMCID": "PMC11674214",
+        "URL": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11674214/"
+      },
       "findings": [
         {
           "finding": "Six weeks of dexamphetamine had no effect on executive function versus placebo.",
@@ -773,7 +1253,6 @@
         }
       ],
       "readFrom": "abstract",
-      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11674214/",
       "observedAt": "2026-10-07",
       "design": "randomized-parallel",
       "n": 52,
@@ -790,17 +1269,29 @@
       ]
     },
     {
-      "id": "arnsten-2011-catecholamine-influences-on-dorsolateral",
-      "citation": "Arnsten 2011",
-      "title": "Catecholamine influences on dorsolateral prefrontal cortical networks",
-      "authors": [
-        "Arnsten AF"
-      ],
-      "journal": "Biological psychiatry",
-      "year": 2011,
-      "doi": "10.1016/j.biopsych.2011.01.027",
-      "pmid": "21489408",
-      "pmcid": "PMC3145207",
+      "item": {
+        "id": "arnsten-2011-catecholamine-influences-on-dorsolateral",
+        "type": "article-journal",
+        "title": "Catecholamine influences on dorsolateral prefrontal cortical networks",
+        "author": [
+          {
+            "family": "Arnsten",
+            "given": "AF"
+          }
+        ],
+        "container-title": "Biological psychiatry",
+        "issued": {
+          "date-parts": [
+            [
+              2011
+            ]
+          ]
+        },
+        "DOI": "10.1016/j.biopsych.2011.01.027",
+        "PMID": "21489408",
+        "PMCID": "PMC3145207",
+        "URL": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3145207/"
+      },
       "findings": [
         {
           "finding": "Prefrontal function follows an inverted U in catecholamine level.",
@@ -808,19 +1299,29 @@
         }
       ],
       "readFrom": "abstract",
-      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3145207/",
       "observedAt": "2026-10-07",
       "design": "narrative-review"
     },
     {
-      "id": "adderall-prescribing-information-2022",
-      "citation": "Adderall prescribing information",
-      "title": "ADDERALL (dextroamphetamine saccharate, amphetamine aspartate, dextroamphetamine sulfate and amphetamine sulfate tablets)",
-      "authors": [
-        "Teva Pharmaceuticals USA"
-      ],
-      "journal": "FDA label",
-      "year": 2022,
+      "item": {
+        "id": "adderall-prescribing-information-2022",
+        "type": "report",
+        "title": "ADDERALL (dextroamphetamine saccharate, amphetamine aspartate, dextroamphetamine sulfate and amphetamine sulfate tablets)",
+        "author": [
+          {
+            "literal": "Teva Pharmaceuticals USA"
+          }
+        ],
+        "publisher": "FDA label",
+        "issued": {
+          "date-parts": [
+            [
+              2022
+            ]
+          ]
+        },
+        "URL": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2022/011522s044lbl.pdf"
+      },
       "design": "drug-label",
       "country": [
         "US"
@@ -831,125 +1332,150 @@
         }
       ],
       "readFrom": "drug-label",
-      "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2022/011522s044lbl.pdf",
       "observedAt": "2026-10-07"
     }
   ],
   "searches": [
     {
       "register": "europepmc",
-      "query": "AUTH:\"Roberts CA\" AND TITLE:\"cognitive enhancement in healthy adults\" AND PUB_YEAR:2020",
+      "variables": {
+        "query": "AUTH:\"Roberts CA\" AND TITLE:\"cognitive enhancement in healthy adults\" AND PUB_YEAR:2020"
+      },
       "observedAt": "2026-10-07",
-      "hitCount": 1,
-      "qualifyingHits": [
+      "count": 1,
+      "included": [
         "roberts-2020-how-effective-are-pharmaceuticals"
       ]
     },
     {
       "register": "europepmc",
-      "query": "AUTH:\"Moran LV\" AND (TITLE:\"amphetamine\" OR TITLE:\"psychosis\") AND PUB_YEAR:[2019 TO 2024]",
+      "variables": {
+        "query": "AUTH:\"Moran LV\" AND (TITLE:\"amphetamine\" OR TITLE:\"psychosis\") AND PUB_YEAR:[2019 TO 2024]"
+      },
       "observedAt": "2026-10-07",
-      "hitCount": 4,
-      "qualifyingHits": [
+      "count": 4,
+      "included": [
         "moran-2024-risk-of-incident-psychosis",
         "moran-2019-psychosis-with-methylphenidate-or"
       ]
     },
     {
       "register": "europepmc",
-      "query": "AUTH:\"Ilieva I\" AND TITLE:\"mixed amphetamine salts\"",
+      "variables": {
+        "query": "AUTH:\"Ilieva I\" AND TITLE:\"mixed amphetamine salts\""
+      },
       "observedAt": "2026-10-07",
-      "hitCount": 1,
-      "qualifyingHits": [
+      "count": 1,
+      "included": [
         "ilieva-2013-objective-and-subjective-cognitive"
       ]
     },
     {
       "register": "europepmc",
-      "query": "AUTH:\"Ward AS\" AND TITLE:\"d-amphetamine\" AND PUB_YEAR:1997",
+      "variables": {
+        "query": "AUTH:\"Ward AS\" AND TITLE:\"d-amphetamine\" AND PUB_YEAR:1997"
+      },
       "observedAt": "2026-10-07",
-      "hitCount": 1,
-      "qualifyingHits": [
+      "count": 1,
+      "included": [
         "ward-1997-effects-of-d-amphetamine-on"
       ]
     },
     {
       "register": "europepmc",
-      "query": "AUTH:\"Foltin RW\" AND TITLE:\"repeated amphetamine exposure\"",
+      "variables": {
+        "query": "AUTH:\"Foltin RW\" AND TITLE:\"repeated amphetamine exposure\""
+      },
       "observedAt": "2026-10-07",
-      "hitCount": 1,
-      "qualifyingHits": [
+      "count": 1,
+      "included": [
         "kelly-1991-the-effects-of-repeated"
       ]
     },
     {
       "register": "europepmc",
-      "query": "AUTH:\"Horrigan JP\" AND TITLE:\"amphetamine\"",
+      "variables": {
+        "query": "AUTH:\"Horrigan JP\" AND TITLE:\"amphetamine\""
+      },
       "observedAt": "2026-10-07",
-      "hitCount": 1,
-      "qualifyingHits": [
+      "count": 1,
+      "included": [
         "horrigan-2000-low-dose-amphetamine-salts-and"
       ]
     },
     {
       "register": "europepmc",
-      "query": "AUTH:\"Dolder PC\" AND TITLE:\"lisdexamfetamine\"",
+      "variables": {
+        "query": "AUTH:\"Dolder PC\" AND TITLE:\"lisdexamfetamine\""
+      },
       "observedAt": "2026-10-07",
-      "hitCount": 3,
-      "qualifyingHits": [
+      "count": 3,
+      "included": [
         "dolder-2018-acute-effects-of-lisdexamfetamine"
       ]
     },
     {
       "register": "europepmc",
-      "query": "AUTH:\"Silber BY\" AND TITLE:\"dexamphetamine\" AND TITLE:\"driving\"",
+      "variables": {
+        "query": "AUTH:\"Silber BY\" AND TITLE:\"dexamphetamine\" AND TITLE:\"driving\""
+      },
       "observedAt": "2026-10-07",
-      "hitCount": 1,
-      "qualifyingHits": [
+      "count": 1,
+      "included": [
         "silber-2005-the-effects-of-dexamphetamine"
       ]
     },
     {
       "register": "europepmc",
-      "query": "AUTH:\"Weafer J\" AND TITLE:\"inattention\" AND TITLE:\"amphetamine\"",
+      "variables": {
+        "query": "AUTH:\"Weafer J\" AND TITLE:\"inattention\" AND TITLE:\"amphetamine\""
+      },
       "observedAt": "2026-10-07",
-      "hitCount": 1,
-      "qualifyingHits": [
+      "count": 1,
+      "included": [
         "weafer-2013-inattention-impulsive-action-and"
       ]
     },
     {
       "register": "europepmc",
-      "query": "AUTH:\"Schmedtje\" AND TITLE:\"amphetamine\"",
+      "variables": {
+        "query": "AUTH:\"Schmedtje\" AND TITLE:\"amphetamine\""
+      },
       "observedAt": "2026-10-07",
-      "hitCount": 0,
-      "qualifyingHits": [],
+      "count": 0,
+      "included": [],
       "reading": "Not indexed in Europe PMC; the study is known through the Kassim 2023 review's table."
     },
     {
       "register": "europepmc",
-      "query": "(\"2.5 mg\" OR \"2.5mg\") AND (amphetamine OR dextroamphetamine OR \"mixed amphetamine salts\" OR Adderall) AND (healthy OR volunteers) AND (placebo)",
+      "variables": {
+        "query": "(\"2.5 mg\" OR \"2.5mg\") AND (amphetamine OR dextroamphetamine OR \"mixed amphetamine salts\" OR Adderall) AND (healthy OR volunteers) AND (placebo)"
+      },
       "observedAt": "2026-10-07",
-      "hitCount": 476,
-      "qualifyingHits": [
+      "count": 476,
+      "included": [
         "chan-2025-effect-of-amphetamines-on"
       ],
       "reading": "Full-text matching; no hit is a 2.5 mg amphetamine study in healthy adults."
     },
     {
       "register": "europepmc",
-      "query": "(microdose OR microdosing) AND (amphetamine OR Adderall OR dextroamphetamine)",
+      "variables": {
+        "query": "(microdose OR microdosing) AND (amphetamine OR Adderall OR dextroamphetamine)"
+      },
       "observedAt": "2026-10-07",
-      "hitCount": 161,
-      "qualifyingHits": [],
+      "count": 161,
+      "included": [],
       "reading": "Hits concern psychedelic microdosing; none studies amphetamine microdosing."
     },
     {
       "register": "europepmc",
-      "query": "\"5 mg\" AND (d-amphetamine OR dextroamphetamine) AND healthy AND placebo AND (cognitive OR performance OR memory)",
+      "variables": {
+        "query": "\"5 mg\" AND (d-amphetamine OR dextroamphetamine) AND healthy AND placebo AND (cognitive OR performance OR memory)"
+      },
       "observedAt": "2026-10-07",
-      "hitCount": 814,
-      "qualifyingHits": [
+      "count": 814,
+      "included": [
         "pfoser-poschacher-2026-effect-of-a-single",
         "looby-2026-to-choose-or-not",
         "poulton-2024-the-impact-of-dexamphetamine"
@@ -957,38 +1483,33 @@
     },
     {
       "register": "clinicaltrials-gov",
-      "query": "amphetamine OR dextroamphetamine healthy volunteers",
+      "variables": {
+        "query.term": "amphetamine OR dextroamphetamine healthy volunteers"
+      },
       "observedAt": "2026-10-07",
-      "hitCount": 735,
-      "qualifyingHits": []
+      "count": 735,
+      "included": []
     },
     {
       "register": "europepmc",
-      "query": "ABSTRACT:\"2.5 mg\" AND (ABSTRACT:amphetamine OR ABSTRACT:dextroamphetamine OR ABSTRACT:Adderall OR ABSTRACT:dexamphetamine) AND (ABSTRACT:healthy) AND ABSTRACT:placebo",
+      "variables": {
+        "query": "ABSTRACT:\"2.5 mg\" AND (ABSTRACT:amphetamine OR ABSTRACT:dextroamphetamine OR ABSTRACT:Adderall OR ABSTRACT:dexamphetamine) AND (ABSTRACT:healthy) AND ABSTRACT:placebo"
+      },
       "observedAt": "2026-10-07",
-      "hitCount": 1,
-      "qualifyingHits": [],
+      "count": 1,
+      "included": [],
       "reading": "The one hit is a 1983 bupropion study. No published abstract reports 2.5 mg amphetamine against placebo in healthy adults."
     },
     {
       "register": "europepmc",
-      "query": "AUTH:\"Arnsten AF\" AND TITLE:\"catecholamine\" AND TITLE:\"prefrontal\"",
+      "variables": {
+        "query": "AUTH:\"Arnsten AF\" AND TITLE:\"catecholamine\" AND TITLE:\"prefrontal\""
+      },
       "observedAt": "2026-10-07",
-      "hitCount": 7,
-      "qualifyingHits": [
+      "count": 7,
+      "included": [
         "arnsten-2011-catecholamine-influences-on-dorsolateral"
       ]
     }
-  ],
-  "frame": {
-    "population": "adults without ADHD",
-    "exposure": "mixed amphetamine salts 2.5 mg and 5 mg (≈1.9 and 3.75 mg d-amphetamine-equivalent), single and repeated",
-    "comparator": "placebo",
-    "outcomes": [
-      "cognitive performance",
-      "subjective effects",
-      "cardiovascular effects",
-      "tolerance and sensitization"
-    ]
-  }
+  ]
 }

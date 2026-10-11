@@ -1,0 +1,79 @@
+{
+  "query": {
+    "template": "https://api.openalex.org/works{?search,filter,per_page,sort,mailto}",
+    "variables": {
+      "per_page": "25",
+      "mailto": "morgan.sennhauser@gmail.com"
+    },
+    "results": "/results",
+    "count": "/meta/count"
+  },
+  "item": {
+    "id": {
+      "first": [
+        "doi",
+        "id"
+      ]
+    },
+    "type": {
+      "path": "type",
+      "as": "type",
+      "aliases": {
+        "article": "article-journal",
+        "review": "review",
+        "book": "book",
+        "book-chapter": "chapter",
+        "dissertation": "thesis",
+        "preprint": "manuscript",
+        "report": "report",
+        "dataset": "dataset",
+        "editorial": "article-journal",
+        "letter": "article-journal",
+        "paratext": "document"
+      }
+    },
+    "title": {
+      "path": "title",
+      "as": "title"
+    },
+    "author": {
+      "path": "authorships[].author",
+      "as": "names",
+      "literal": "display_name"
+    },
+    "container-title": "primary_location.source.display_name",
+    "publisher": "primary_location.source.host_organization_name",
+    "volume": "biblio.volume",
+    "issue": "biblio.issue",
+    "page": {
+      "first": [
+        {
+          "template": "{biblio.first_page}-{biblio.last_page}"
+        },
+        "biblio.first_page"
+      ]
+    },
+    "issued": {
+      "first": [
+        {
+          "path": "publication_date",
+          "as": "date"
+        },
+        {
+          "path": "publication_year",
+          "as": "year"
+        }
+      ]
+    },
+    "DOI": {
+      "path": "doi",
+      "as": "doi"
+    },
+    "URL": {
+      "first": [
+        "doi",
+        "id"
+      ]
+    }
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "id": "farm-bill-and-cannabis-change-prediction-market-survey",
+  "name": "Prediction markets on the November/December farm-bill and cannabis changes",
+  "kind": "requirement",
+  "raised-by": "emsenn",
+  "asks": "build on any existing research we have and then look on all prediction market sto see if the farm bill/cannabis changes being planned for november/december are actualy predicted to go through",
+  "met-when": [
+    {
+      "cell": "farm-bill-prediction:survey-record-present",
+      "target": "held",
+      "command": "sh -c 'ls lib/emsenn/services/561-group/services/science-services-section/services/social-science-services-section/services/law-science-services-section/data/records/*farm-bill*.json >/dev/null 2>&1'",
+      "expected-exit": 0
+    },
+    {
+      "cell": "farm-bill-prediction:resolution-criteria-stated",
+      "target": "held",
+      "command": "sh -c 'grep -l -i \"resolution\" lib/emsenn/services/561-group/services/science-services-section/services/social-science-services-section/services/law-science-services-section/data/records/*farm-bill*.json'",
+      "expected-exit": 0
+    },
+    {
+      "cell": "farm-bill-prediction:extends-cannabis-research",
+      "target": "held",
+      "command": "sh -c 'grep -l \"cannabis-sativa\" lib/emsenn/services/561-group/services/science-services-section/services/social-science-services-section/services/law-science-services-section/data/records/*farm-bill*.json'",
+      "expected-exit": 0
+    }
+  ],
+  "tier": "routine",
+  "x-provenance": {
+    "recorded-by": "program-manager (bare-cedar-fog-claude, dispatched under the Leader standing direction of 2026-10-09)",
+    "recorded-on": "2026-10-09",
+    "customer": "urn:leader:emsenn",
+    "basis": "Opening prompt of the Leader on Bare Cedar Fog, carried as a requirement record by the board-requirement-intake skill. The raised-by field and asks are the Leader's own words; the requirements below are the program manager's EARS rendering of what those words ask, and carry no scope the words do not.",
+    "board-opening": {
+      "speech-act": "request",
+      "need": "The Group knows, from every prediction market that quotes one, whether the farm-bill and cannabis changes planned for November and December 2026 are predicted to go through.",
+      "scope": [
+        "section:services/science-services-section/services/social-science-services-section/services/law-science-services-section"
+      ],
+      "requirements": [
+        {
+          "id": "R1",
+          "says": "The prediction-market survey shall list every venue that quotes a contract on the federal farm bill or on the planned cannabis or hemp changes, with each contract's quoted probability and the time it was observed.",
+          "class": "functional",
+          "moscow": "must",
+          "rationale": "The Leader: \"look on all prediction market sto\"."
+        },
+        {
+          "id": "R2",
+          "says": "The prediction-market survey shall state, for each contract, how its resolution criteria relate to the change the Leader asked about.",
+          "class": "functional",
+          "moscow": "must",
+          "rationale": "A contract that resolves on something else does not predict \"go through\"."
+        },
+        {
+          "id": "R3",
+          "says": "If no venue quotes a contract on a planned change, then the prediction-market survey shall record that absence as an observation naming the venues searched.",
+          "class": "functional",
+          "moscow": "must",
+          "rationale": "An unreported search is indistinguishable from an unrun one."
+        },
+        {
+          "id": "R4",
+          "says": "The prediction-market survey shall cite the existing Group research on cannabis it extends.",
+          "class": "process",
+          "moscow": "should",
+          "rationale": "The Leader: \"build on any existing research we have\"."
+        }
+      ],
+      "conditions": [
+        {
+          "id": "farm-bill-prediction:survey-record-present",
+          "says": "A dated survey record on the farm-bill and cannabis changes exists in the law-science section.",
+          "method": "assay",
+          "verifies": [
+            "R1",
+            "R3"
+          ]
+        },
+        {
+          "id": "farm-bill-prediction:resolution-criteria-stated",
+          "says": "The survey record states resolution criteria for the contracts it lists.",
+          "method": "assay",
+          "verifies": [
+            "R2"
+          ]
+        },
+        {
+          "id": "farm-bill-prediction:extends-cannabis-research",
+          "says": "The survey record cites the held cannabis research it extends.",
+          "method": "assay",
+          "verifies": [
+            "R4"
+          ]
+        }
+      ],
+      "context": "The session read prediction-market data in chat on 2026-10-07; no survey of the farm-bill contracts is held in the corpus under a farm-bill or hemp name. The related market questions are Kalshi event contracts; the engineering that reads them is the Kalshi system record of this batch.",
+      "sources": [
+        {
+          "session": "claude session 59d3dcee-11e1-4a19-b5d7-d164a85527dc",
+          "at-utc": "2026-10-07T23:03:45",
+          "words": "build on any existing research we have and then look on all prediction market sto see if the farm bill/cannabis changes being planned for november/december are actualy predicted to go through"
+        }
+      ],
+      "serves": [],
+      "after": [
+        "kalshi-one-system-for-more-and-better-predictions"
+      ],
+      "traces": []
+    },
+    "held-research": [
+      "science-services-section/services/natural-science-services-section/services/biological-science-services-section/services/botany-services-section/content/text/glossary/terms/cannabis-sativa.md",
+      "science-services-section/services/natural-science-services-section/services/biological-science-services-section/services/botany-services-section/content/text/documents/articles/notes/2026/08/26/2026-08-26-note-on-cannabis-trichomes-and-chemotypes.md",
+      "561-group-services-section/content/text/documents/articles/notes/2026/07/18/2026-07-18-note-on-event-contract-arbitrage-enterprise-planning.md"
+    ],
+    "not-held": "No farm-bill, hemp or cannabis-scheduling research is held by name; the held cannabis notes cover botany and chemotype only.",
+    "unresolved-authority": "The law-science section is the nearest existing home; the Leader has not named the owning section.",
+    "sign-cell": {
+      "type": "emsenn/schema/requirement",
+      "mark": "ni:///sha-256;OHKu-jXuct5xwX_zhfIXJHuamxPV_NnMt5NuH1ns2dk",
+      "cell": "ni:///sha-256;3ZluwygJ5Prr4jAaJXMFHYK_QC3n5L6jqcm1NV-CEGI"
+    }
+  }
+}
