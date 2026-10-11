@@ -86,6 +86,66 @@
       "name": "US Fish and Wildlife Service, Ecological Risk Screening Summary: Manchurian Wildrice (High Risk)",
       "source_section": "Publication summary; history of invasiveness and contiguous-US climate match",
       "evidence_unit": "usfws-2025-risk-screen"
+    },
+    {
+      "id": "guo-2015",
+      "kind": "primary_study",
+      "url": "https://doi.org/10.1111/tpj.12912",
+      "date": "2015",
+      "date_precision": "year",
+      "name": "Guo et al., Z. latifolia host genome after longstanding U. esculenta infection",
+      "source_section": "Summary and Introduction: infected rhizome crop propagation versus wild host"
+    },
+    {
+      "id": "usfws-2025-pdf",
+      "kind": "agency_assessment",
+      "url": "https://www.fws.gov/sites/default/files/documents/2025-06/ecological-risk-screening-summary-manchurian-wildrice-april-2025.pdf",
+      "date": "2025-04-28",
+      "name": "FWS ERSS full 21-page report, March 2023 revision with April 2025 web version",
+      "source_section": "PDF pp. 1–3: historical US status, 1982 planting report, trade leads, regulatory caveat"
+    },
+    {
+      "id": "nz-mpi",
+      "kind": "agency_assessment",
+      "url": "https://www.mpi.govt.nz/biosecurity/exotic-pests-and-diseases-in-new-zealand/long-term-biosecurity-management-programmes/national-interest-pest-responses-programme/manchurian-wild-rice-eradication",
+      "date": "undated",
+      "date_precision": "webpage",
+      "name": "New Zealand Ministry for Primary Industries, primary public invasive-plant impact and eradication programme assessment",
+      "source_section": "Why we don't want; Where found; control and eradication; legally unwanted/notifiable"
+    },
+    {
+      "id": "glifwc-manoomin",
+      "kind": "agency_guidance",
+      "url": "https://glifwc.org/stewardship/ganawenindiwag-manoomin-anishinaabeg",
+      "date": "undated",
+      "date_precision": "webpage",
+      "name": "Great Lakes Indian Fish and Wildlife Commission: Ganawenindiwag Manoomin Anishinaabeg programme",
+      "source_section": "Manoomin relationship, traditional ecological knowledge, habitat and research priorities"
+    },
+    {
+      "id": "wi-wrsc-oct2026",
+      "kind": "agency_guidance",
+      "url": "https://dnr.wisconsin.gov/calendar/meeting/130251",
+      "date": "2026-09-10",
+      "name": "Wisconsin DNR public agenda for Wild Rice Stewardship Council October 7 summit",
+      "source_section": "Published agenda, goals and State/Tribal Technical Committee"
+    },
+    {
+      "id": "mn-fdl-2026",
+      "kind": "agency_guidance",
+      "url": "https://www.dnr.state.mn.us/news/2026/07/28/minnesota-dnr-accepting-comments-environmental-review-documents-proposed-cedar-lake-manoomin-restoration-project",
+      "date": "2026-07-28",
+      "name": "Minnesota DNR: proposed Cedar Lake Manoomin Restoration Project and Fond du Lac partnership",
+      "source_section": "Proposed water level restoration; partners; EAW comment window Aug 27"
+    },
+    {
+      "id": "ecrf-360-2026",
+      "kind": "agency_guidance",
+      "url": "https://www.ecfr.gov/current/title-7/subtitle-B/chapter-III/part-360/section-360.200",
+      "date": "undated",
+      "date_precision": "webpage",
+      "name": "7 CFR 360.200 named Federal noxious weed taxa",
+      "source_section": "Aquatic and wetland weed enumerated list as inspected 2026-10-11"
     }
   ],
   "claims": [
@@ -313,6 +373,144 @@
         "No conclusion of pathogen absence is justified by a missing commercial shipment assay.",
         "No claim of infectious retail inoculum is justified by culturing an unrelated harvested gall."
       ]
+    },
+    {
+      "id": "mixed-strain-pairs-infect-asian-host",
+      "track": "fungal_life_cycle",
+      "status": "documented",
+      "species": "Ustilago esculenta, Zizania latifolia",
+      "scope": "2017 controlled cross mating/inoculation study on Asian cultivar Longjiao 2",
+      "statement": "In Zhang et al. 2017, some T-type and MT-type fungal isolate combinations mated and produced successful infection in Asian Z. latifolia despite the tested MT/MT pair's infection defect.",
+      "source_ids": [
+        "zhang-2017"
+      ],
+      "source_locator": "Zhang et al. 2017 PMC5719756 Discussion, paragraph beginning 'Additionally, the sporidia from the T and MT strains could mate with each other'; Figures 5–6",
+      "independent_event": "zhang-2017-longjiao2-strains",
+      "limits": [
+        "This is a cross among selected isolates in experimental conditions, not measured mixing or infection of actual market produce.",
+        "It invalidates an unconditional assumption that all MT-bearing material is unable to contribute to infection; it does not establish host compatibility with native American wild rice."
+      ]
+    },
+    {
+      "id": "cultivar-vs-plant-reproduction",
+      "track": "plant_invasion",
+      "status": "documented",
+      "species": "Zizania latifolia",
+      "scope": "Comparison of fungus-maintained edible cultivars with wild or introduced populations of the same plant species",
+      "statement": "Artificially maintained edible jiaobai cultivars are propagated using infected rhizomes and lose flowering, while Z. latifolia as a plant species can reproduce and disperse via rhizomes and, in some settings, viable seeds.",
+      "source_ids": [
+        "guo-2015",
+        "usfws-2025-pdf",
+        "nz-mpi"
+      ],
+      "source_locator": "Guo 2015 Summary/Introduction on crop selection; USFWS 2025 ERSS pp.2, 4–5 ecology; NZ MPI eradication webpage on seed and fragment spread",
+      "independent_event": "z-latifolia-domestication-and-life-history",
+      "limits": [
+        "Inferring that an edible cultivar typically fails to set seed does not establish all wild/introduced Z. latifolia are sterile.",
+        "The extent of seed-based establishment depends on locality and cultivar; no site-specific North American field estimate is supplied."
+      ]
+    },
+    {
+      "id": "nz-established-manchurian-wild-rice",
+      "track": "plant_invasion",
+      "status": "source_report",
+      "species": "Zizania latifolia",
+      "scope": "New Zealand Ministry for Primary Industries: National Interest Pest Responses programme and site management",
+      "statement": "New Zealand's biosecurity authority documents established Z. latifolia infestations and an active national eradication/containment programme, including an approximately 500-hectare Northland infestation area.",
+      "source_ids": [
+        "nz-mpi"
+      ],
+      "source_locator": "MPI 'Where manchurian wild rice has been found in NZ' and 'control and eradication' sections",
+      "independent_event": "nz-mpi-established-manchurian-wild-rice",
+      "limits": [
+        "New Zealand's Biosecurity Act restrictions do not create corresponding U.S. import prohibitions.",
+        "Reported treatment duration and area are programme context, not a measured risk to any named American manoomin bed."
+      ]
+    },
+    {
+      "id": "historic-us-living-plantings",
+      "track": "us_introductions",
+      "status": "source_report",
+      "species": "Zizania latifolia",
+      "scope": "USFWS April 2025 risk summary quoting Terrell and Batra 1982 historical U.S. planting records",
+      "statement": "USFWS 2025 summarizes an older report of U.S. introduced living Z. latifolia plantings at federal research facilities and transfers to university researchers, separate from edible-stem retail reports.",
+      "source_ids": [
+        "usfws-2025-pdf"
+      ],
+      "source_locator": "Full ERSS first two PDF pages, Status in United States; 1982 Terrell and Batra passage quoted, including Patuxent and University of Minnesota research transfer",
+      "independent_event": "terrell-batra-1982-historical-plantings",
+      "limits": [
+        "These are historical plantings described in a 1982 account and repeated in a 2025 screening, not evidence those facilities still maintain them.",
+        "A living research planting is a distinct category from contemporary imported cut vegetable products."
+      ]
+    },
+    {
+      "id": "glifwc-manoomin-program",
+      "track": "tribal_stewardship",
+      "status": "source_report",
+      "species": "Zizania palustris",
+      "scope": "Great Lakes Indian Fish and Wildlife Commission public Manoomin stewardship programme",
+      "statement": "GLIFWC describes a manoomin stewardship programme guided by Tribal rice chiefs, elders and member nations' natural-resource departments, connecting traditional ecological knowledge with scientific research on decline and habitat.",
+      "source_ids": [
+        "glifwc-manoomin"
+      ],
+      "source_locator": "GLIFWC 'Ganawenindiwag Manoomin Anishinaabeg' public programme description, opening paragraphs and Habitat Requirements",
+      "independent_event": "glifwc-manoomin-governance",
+      "limits": [
+        "Public programme description does not constitute partnership or permission to disclose Traditional Ecological Knowledge and protected rice-bed locations.",
+        "Climate and water pollution pressures are active steward priorities, not evidence of U. esculenta presence."
+      ]
+    },
+    {
+      "id": "wrsc-2026-oct7-agenda",
+      "track": "tribal_stewardship",
+      "status": "source_report",
+      "species": "Zizania palustris",
+      "scope": "Wisconsin DNR published 2026-10-07 Wild Rice Stewardship Council summit agenda",
+      "statement": "Wisconsin DNR published an October 7, 2026 council summit agenda with State/Tribal Technical Committee updates, review of priorities, and discussion of possible partners.",
+      "source_ids": [
+        "wi-wrsc-oct2026"
+      ],
+      "source_locator": "Wisconsin DNR 2026-09-10 event page: 2026-10-07 agenda items 1:30–2:45 p.m.",
+      "independent_event": "wi-wrsc-public-agenda-oct2026",
+      "limits": [
+        "An announced agenda does not verify that the summit occurred as planned or that any resolution or partnership was adopted.",
+        "No assumption of invitation or endorsement of 561 Group research is justified."
+      ]
+    },
+    {
+      "id": "mn-fdl-restoration-proposal-2026",
+      "track": "tribal_stewardship",
+      "status": "source_report",
+      "species": "Zizania palustris",
+      "scope": "2026 Fond du Lac Band, Minnesota Land Trust and DNR proposed Cedar Lake manoomin restoration",
+      "statement": "Minnesota DNR described a proposed project with the Fond du Lac Band and Minnesota Land Trust to restore water levels favorable to manoomin at Cedar Lake; the EAW public comment deadline was August 27, 2026.",
+      "source_ids": [
+        "mn-fdl-2026"
+      ],
+      "source_locator": "Minnesota DNR 2026-07-28 press release, project description and comment deadline",
+      "independent_event": "mn-fdl-2026-restoration-proposal",
+      "limits": [
+        "A proposal and past comment period are not proof the project was approved, funded, or completed.",
+        "Protected on-reservation restoration access is not permission for outside environmental observation or intervention."
+      ]
+    },
+    {
+      "id": "not-designated-federal-noxious-weed-in-list",
+      "track": "regulatory_classification",
+      "status": "source_report",
+      "species": "Zizania latifolia",
+      "scope": "Inspection of the enumerated federal noxious-weed taxa in 7 CFR 360.200 as of 2026-10-11",
+      "statement": "Zizania latifolia does not appear by name in the examined enumerated taxa of the federal noxious-weed list at 7 CFR 360.200.",
+      "source_ids": [
+        "ecrf-360-2026"
+      ],
+      "source_locator": "7 CFR 360.200, aquatic/wetland, parasitic and terrestrial weed lists; complete named-taxon search for 'Zizania' on 2026-10-11",
+      "independent_event": "named-rule-7cfr360-200-2026",
+      "limits": [
+        "Absence from this named federal noxious-weed list is not an import approval, and other laws, import orders, or state rules can apply.",
+        "This is a legal-text observation, not a commodity-specific APHIS admissibility determination for China-origin jiaobai."
+      ]
     }
   ],
   "release_gates": {
@@ -321,5 +519,5 @@
     "scholarly_accepted": false,
     "note": "Do not derive a store-violation report, outbreak warning or accepted scientific release from this dataset without current primary receiving evidence and appropriate authority."
   },
-  "source_notes": "Evidence statuses describe what source texts support in their own host/material context, not independent scientific acceptance, measured contemporary risk, or official U.S. commodity compliance. Sources may reference overlapping scientific study populations; event identifiers must not be treated as counts of independent infected plants."
+  "source_notes": "Evidence statuses describe what source texts support in their own host/material context, not independent scientific acceptance, measured contemporary risk, or official U.S. commodity compliance. Sources may reference overlapping scientific study populations; event identifiers must not be treated as counts of independent infected plants. Added source-critical differentiators: partial MT infection phenotype is not a categorical safety rule because some T/MT mixed pairings infected cultivated Asian hosts; FWS 2025 documents old living-plant research introductions; NZ live-plant management differs from US food import status. Existing stewardship plans are public, not external consent."
 }

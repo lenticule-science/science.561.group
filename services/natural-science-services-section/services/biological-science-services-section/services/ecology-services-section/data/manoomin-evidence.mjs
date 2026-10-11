@@ -39,8 +39,17 @@ export function validateEvidence(d){
  return problems;
 }
 
-export function countIndependentEvents(claims){
- return new Set((claims||[]).filter(c=>c.status==="documented"||c.status==="source_report").map(c=>c.independent_event).filter(Boolean)).size;
+/** Count distinct recorded provenance keys *within one specified track*.
+ * A repeated herbarium packet or another synopsis of the same event counts once.
+ * These are provenance-key counts, NEVER estimated numbers of infected hosts,
+ * independent publications, ecological outbreaks, or statistically independent trials.
+ * Mixed scientific tracks require explicit selection instead of a misleading total.
+ */
+export function countIndependentEvents(claims,track=null){
+ const included=(claims||[]).filter(c=>c.status==="documented"||c.status==="source_report");
+ const kinds=new Set(included.map(c=>c.track).filter(Boolean));
+ if(track===null&&kinds.size>1)throw new Error("specify a single evidence track before counting provenance keys");
+ return new Set(included.filter(c=>track===null||c.track===track).map(c=>c.independent_event).filter(Boolean)).size;
 }
 
 export function forEditorialReview(d){

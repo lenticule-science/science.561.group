@@ -101,3 +101,47 @@ test('the organism life-cycle question and food survival question are separate',
  assert.equal(byId(source,'retail-strain-and-shipping-risk').status,'unresolved');
  assert.equal(forEditorialReview(source).some(c=>c.id==='retail-strain-and-shipping-risk'),false);
 });
+
+test('mixed evidence tracks cannot masquerade as independent biological events',()=>{
+ assert.throws(()=>countIndependentEvents(source.claims),/specify a single evidence track/);
+ assert.ok(countIndependentEvents(source.claims,'plant_invasion')>=2);
+ const cases=[
+  {track:'historical_specimen',independent_event:'same-1911-exchange',status:'source_report'},
+  {track:'historical_specimen',independent_event:'same-1911-exchange',status:'source_report'},
+  {track:'historical_specimen',independent_event:'same-1911-exchange',status:'source_report'}
+ ];
+ assert.equal(countIndependentEvents(cases,'historical_specimen'),1);
+});
+
+test('mixed strain experiments refute a blanket sterile edible gall conclusion',()=>{
+ const mixed=byId(source,'mixed-strain-pairs-infect-asian-host');
+ assert.equal(mixed.status,'documented');
+ assert.equal(mixed.track,'fungal_life_cycle');
+ assert.ok(mixed.source_ids.includes('zhang-2017'));
+ assert.match(mixed.statement,/MT-type.*T-type|T-type.*MT-type/);
+ assert.match(mixed.limits.join(' '),/not establish host compatibility|not measured/);
+});
+
+test('contemporary market evidence remains separate from historic US research plantings',()=>{
+ const historical=byId(source,'historic-us-living-plantings');
+ assert.equal(historical.status,'source_report');
+ assert.match(historical.limits.join(' '),/historical plantings/);
+ assert.equal(byId(source,'current-import-eligibility').status,'unresolved');
+});
+
+test('published tribal stewardship agendas cannot become completed work by implication',()=>{
+ const agenda=byId(source,'wrsc-2026-oct7-agenda');
+ const restoration=byId(source,'mn-fdl-restoration-proposal-2026');
+ assert.equal(agenda.status,'source_report');
+ assert.equal(restoration.status,'source_report');
+ assert.match(agenda.limits.join(' '),/does not verify/);
+ assert.match(restoration.limits.join(' '),/not proof/);
+});
+
+test('noxious-weed enumeration absence is never U.S. import authorization',()=>{
+ const enumeration=byId(source,'not-designated-federal-noxious-weed-in-list');
+ assert.equal(enumeration.track,'regulatory_classification');
+ assert.equal(enumeration.status,'source_report');
+ assert.match(enumeration.limits.join(' '),/not an import approval/);
+ assert.equal(byId(source,'current-import-eligibility').status,'unresolved');
+});

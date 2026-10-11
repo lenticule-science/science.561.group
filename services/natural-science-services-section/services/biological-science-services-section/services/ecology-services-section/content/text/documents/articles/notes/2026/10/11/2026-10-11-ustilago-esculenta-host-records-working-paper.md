@@ -11,7 +11,7 @@ tags: [ecology, mycology, botany, plant-pathology, biosecurity, scientific-revie
 
 # *Ustilago esculenta* and native North American wild rice: an evidence assessment
 
-**Working paper, version 0.4 — 11 October 2026. Not independently scientifically received, peer reviewed, or accepted for L-Space scholarly release.**
+**Working paper, version 0.5 — 11 October 2026. Not independently scientifically received, peer reviewed, or accepted for L-Space scholarly release.**
 
 Research synthesis: ChatGPT-Web for Lenticule Science. No other authorship or tribal institutional endorsement is asserted. The [underlying ecological evidence register](../../../manoomin-jiaobai-ustilago-esculenta-evidence.md) is the maintained source record; this manuscript states the argument and its current limits.
 
@@ -33,7 +33,7 @@ Research synthesis: ChatGPT-Web for Lenticule Science. No other authorship or tr
 
 *Zizania* comprises the Asian perennial *Z. latifolia* and three North American species, *Z. aquatica*, *Z. palustris* and *Z. texana*. A molecular analysis places the North American taxa in a clade sister to *Z. latifolia*, rather than treating their shared genus as equivalent infection biology [Xu 2010]. The annual North American species depend on reproduction by seed. If a foreign fungus suppressed their inflorescences, consequences could be serious, but such a conditional consequence is **not** evidence that the fungus can infect them.
 
-For Anishinaabe and other nations, manoomin is also a living relation, food resource and exercise of stewardship and treaty rights. Research priorities, protected sites, traditional knowledge and access to specimens belong with the relevant nations and authorized research partners, not with an unaffiliated GitHub publication. A 2026 Wisconsin state release documents an existing multi-Tribal Wild Rice Stewardship Council; that public record is evidence of governance, not consent to a 561 Group project [Wisconsin 2026].
+For Anishinaabe and other nations, manoomin is also a living relation, food resource and exercise of stewardship and treaty rights. The [Great Lakes Indian Fish and Wildlife Commission](https://glifwc.org/stewardship/ganawenindiwag-manoomin-anishinaabeg) describes existing manoomin stewardship guided by tribal rice chiefs, elders and natural-resource offices, with climate, sulfates and hydrology among documented concerns. A [Wisconsin DNR summit agenda for October 7, 2026](https://dnr.wisconsin.gov/calendar/meeting/130251) describes council priorities and a State/Tribal Technical Committee, not an independently verified final decision. A [Fond du Lac Band/Minnesota Land Trust proposal with Minnesota DNR](https://www.dnr.state.mn.us/news/2026/07/28/minnesota-dnr-accepting-comments-environmental-review-documents-proposed-cedar-lake-manoomin-restoration-project) concerns restoring lake water levels, not a confirmed fungal outbreak. Research priorities, protected sites, traditional knowledge and access to specimens belong with the relevant nations and authorized research partners, not with an unaffiliated GitHub publication. A 2026 Wisconsin state release documents an existing multi-Tribal Wild Rice Stewardship Council; that public record is evidence of governance, not consent to a 561 Group project [Wisconsin 2026].
 
 The immediate questions are: (1) which commodities and origins APHIS currently allows; (2) whether credible evidence demonstrates a viable introduction route from harvested food or propagative plants; (3) whether any native *Zizania* species is a demonstrated host; and (4) what invasive-plant effects are documented independently of fungal infection. These questions can inform prevention without awaiting resolution of a century-old taxonomic label. The historical host record matters only if a primary specimen can resolve a disputed host claim. Other threats to manoomin—including hydrology, water quality and known wild-rice pathogens—must not be collapsed into this one hypothesis.
 
@@ -91,7 +91,7 @@ A **2025 U.S. Fish and Wildlife Service ecological-risk screen** independently c
 
 Let \(V_h\) denote culturable *U. esculenta* in harvested gall tissue, \(V_t\) viability after a specified transport/storage sequence, \(E\) environmental exposure to suitable inoculum, \(H_n\) compatibility with a rigorously identified native host, and \(I_n\) a confirmed infection of that native host. The required empirical chain is **not** the assertion \(V_h \Rightarrow I_n\). Observation of \(V_h\) alone does not entail \(V_t\), \(E\), \(H_n\) or \(I_n\).
 
-The available literature supports at least some \(V_h\) through Tu et al.'s culture work. Zhang et al.'s strain comparisons show that *culturable fungus need not be able to establish a new infection in the tested host*: this would be a separate infectivity variable \(C\). The reviewed sources have not established \(V_t\), \(C\) for a representative 2026 imported edible shipment, \(E\), or \(H_n\) for a native host.
+The available literature supports at least some \(V_h\) through Tu et al.'s culture work. Zhang et al.'s strain comparisons show that *culturable fungus need not be able to establish a new infection when the tested MT strains are paired together*, but the same study reports successful Asian-host infection for some MT/T mixed pairings: this would be a separate infectivity variable \(C\). The reviewed sources have not established \(V_t\), \(C\) for a representative 2026 imported edible shipment, \(E\), or \(H_n\) for a native host.
 
 These quantities cannot be multiplied to generate a numerical risk estimate without data and a stated dependence model. A closed exposure chain for one strain/host combination would not close the separate living-plant invasion pathway. A species-specific voucher/sequence finding would change \(H_n\); a retail product's availability would not. Likewise the invasive plant's ability to dominate a wetland does not imply the fungus can infect North American congeners.
 
@@ -173,6 +173,9 @@ A curator's high-resolution original label scan, associated host voucher, exchan
 
 ## References
 
+- **GLIFWC.** [Ganawenindiwag Manoomin Anishinaabeg](https://glifwc.org/stewardship/ganawenindiwag-manoomin-anishinaabeg). Steward-owned public account of manoomin research, hydrology and existing work.
+- **Wisconsin DNR (2026-09-10).** [Wild Rice Stewardship Council October 7 agenda](https://dnr.wisconsin.gov/calendar/meeting/130251), scheduled agenda only.
+- **Minnesota DNR (2026-07-28).** [Proposed Cedar Lake Manoomin Restoration Project](https://www.dnr.state.mn.us/news/2026/07/28/minnesota-dnr-accepting-comments-environmental-review-documents-proposed-cedar-lake-manoomin-restoration-project), Fond du Lac collaboration proposal, not completed construction.
 - **CDFA (2017).** [*Ustilago esculenta* pest-rating assessment](https://blogs.cdfa.ca.gov/Section3162/?p=4271). Original agency account of 2017 introduced-host PCR/sequencing and historical US introduction events.
 - **CDFA (2018).** [*Zizania latifolia* pest-rating assessment and botanist's response](https://blogs.cdfa.ca.gov/Section3162/?p=4338). Host-range uncertainty and historical import-stem claim.
 - **Patterson F. W., Diehl W. W., Cash E. K. (1922).** [*A List of Fungi (Ustilaginales and Uredinales) Prepared for Exchange*, USDA Department Circular 195](https://upload.wikimedia.org/wikipedia/commons/8/86/A_list_of_fungi_%28ustilaginales_and_uredinales%29_prepared_for_exchange_%28IA_listoffungiustil195patt%29.pdf), printed pp. 7 and 9, exchange numbers 9 and 58.
@@ -197,4 +200,4 @@ A curator's high-resolution original label scan, associated host voucher, exchan
 - **Tricco A. C. et al. (2018).** [PRISMA extension for scoping reviews](https://doi.org/10.7326/M18-0850). *Annals of Internal Medicine* 169:467–473.
 - **Haddaway N. R. et al. (2018).** [ROSES reporting standards](https://doi.org/10.1186/s13750-018-0121-7). *Environmental Evidence* 7:7.
 
-*Version 0.4: targeted evidence synthesis; scientific receiving, full literature screening, current APHIS determination, original specimen examination, rights decision and external review remain open.*
+*Version 0.5: targeted evidence synthesis; scientific receiving, full literature screening, current APHIS determination, original specimen examination, rights decision and external review remain open.*
