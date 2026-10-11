@@ -1,0 +1,8 @@
+<PARSED TEXT FOR SHEET: 1 / 1 TABS
+TAB NAME: flowcell_tournament_preregistration_v0_1.csv>index,test,candidate,hypothesis,kill_rule,pass_gate
+0,T0,RotorCell,Reference/control,No product kill,Repeatability <=10%; complete load/power map
+1,T1A,FinCell,Lower intervention or load with useful power,Demote if <50% rotor power with no compensating load/interface/bandwidth gain,F1/F2/F3 gate
+2,T1B,ReedCell,Simple VIV harvester with broad enough useful bandwidth,Demote if narrow resonance and no intervention advantage,Stable over >=40% tested speed range plus >=35% rotor power OR strong intervention advantage
+3,T3,VascularReef,Shared hydraulic PTO deletes generators/interfaces while preserving useful energy,Demote if hydraulic/interface losses erase part-count benefit,Shared PTO >=65% aggregate potential; single branch fault tolerated; 4->1 wet generators
+4,T3.1,Reed->Hydraulic,VIV pumps shared accumulator/storage more effectively than direct PTO,Demote if conversion chain loses more value than smoothing/storage adds,Beat direct-VIV architecture on lifetime/service objective
+5,T4,Electrofluid,One fluid provides hydraulic transmission + storage with multifunction dividend,Separate functions if chemistry/hydraulics coupling imposes net penalty,"Independent hydraulic + electrochemical success, then combined system must delete hardware or add enough useful storage"
