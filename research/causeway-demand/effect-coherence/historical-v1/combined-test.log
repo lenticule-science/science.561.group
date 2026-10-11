@@ -1,0 +1,316 @@
+TAP version 13
+# Subtest: one effect with all seven facets is structurally complete, not customer accepted
+ok 1 - one effect with all seven facets is structurally complete, not customer accepted
+  ---
+  duration_ms: 1.310553
+  type: 'test'
+  ...
+# Subtest: spliced stages from unrelated revisions never establish one complete effect
+ok 2 - spliced stages from unrelated revisions never establish one complete effect
+  ---
+  duration_ms: 8.278346
+  type: 'test'
+  ...
+# Subtest: missing stage is incomplete and cannot be silently filled by another effect
+ok 3 - missing stage is incomplete and cannot be silently filled by another effect
+  ---
+  duration_ms: 0.240256
+  type: 'test'
+  ...
+# Subtest: contradictory pass/fail for same effect and stage blocks completion
+ok 4 - contradictory pass/fail for same effect and stage blocks completion
+  ---
+  duration_ms: 0.143843
+  type: 'test'
+  ...
+# Subtest: a completed effect and a separate incomplete effect do not contaminate each other
+ok 5 - a completed effect and a separate incomplete effect do not contaminate each other
+  ---
+  duration_ms: 0.410689
+  type: 'test'
+  ...
+# Subtest: reused evidence identifiers across effects are rejected
+ok 6 - reused evidence identifiers across effects are rejected
+  ---
+  duration_ms: 0.353814
+  type: 'test'
+  ...
+# Subtest: unknown/rejected effect, malformed evidence and unlisted stages fail closed
+ok 7 - unknown/rejected effect, malformed evidence and unlisted stages fail closed
+  ---
+  duration_ms: 0.185705
+  type: 'test'
+  ...
+# Subtest: order invariance and no evidence do not create acceptance
+ok 8 - order invariance and no evidence do not create acceptance
+  ---
+  duration_ms: 0.300436
+  type: 'test'
+  ...
+# Subtest: empty trace is unknown, never zero problems or success
+ok 9 - empty trace is unknown, never zero problems or success
+  ---
+  duration_ms: 1.225176
+  type: 'test'
+  ...
+# Subtest: visible link alone is not verified intake
+ok 10 - visible link alone is not verified intake
+  ---
+  duration_ms: 0.463187
+  type: 'test'
+  ...
+# Subtest: provider delivery without independent acknowledgement fails closure
+ok 11 - provider delivery without independent acknowledgement fails closure
+  ---
+  duration_ms: 0.484438
+  type: 'test'
+  ...
+# Subtest: same actor switching office labels is not independent acknowledgement
+ok 12 - same actor switching office labels is not independent acknowledgement
+  ---
+  duration_ms: 0.391491
+  type: 'test'
+  ...
+# Subtest: mismatched submission IDs cannot correlate
+ok 13 - mismatched submission IDs cannot correlate
+  ---
+  duration_ms: 0.298653
+  type: 'test'
+  ...
+# Subtest: mismatched receiver binding cannot correlate
+ok 14 - mismatched receiver binding cannot correlate
+  ---
+  duration_ms: 0.234668
+  type: 'test'
+  ...
+# Subtest: reported public route is not observed even if verifier returns true
+ok 15 - reported public route is not observed even if verifier returns true
+  ---
+  duration_ms: 0.22294
+  type: 'test'
+  ...
+# Subtest: missing external verification cannot establish observed service
+ok 16 - missing external verification cannot establish observed service
+  ---
+  duration_ms: 1.111218
+  type: 'test'
+  ...
+# Subtest: verified complete correlated live trace supports only structural intake
+ok 17 - verified complete correlated live trace supports only structural intake
+  ---
+  duration_ms: 0.331802
+  type: 'test'
+  ...
+# Subtest: synthetic pass cannot be misrepresented as production effect
+ok 18 - synthetic pass cannot be misrepresented as production effect
+  ---
+  duration_ms: 0.404009
+  type: 'test'
+  ...
+# Subtest: independent decision plus public witness can establish a correction only when correlated
+ok 19 - independent decision plus public witness can establish a correction only when correlated
+  ---
+  duration_ms: 0.233256
+  type: 'test'
+  ...
+# Subtest: same actor cannot independently witness its own correction publication
+ok 20 - same actor cannot independently witness its own correction publication
+  ---
+  duration_ms: 0.19517
+  type: 'test'
+  ...
+# Subtest: mis-correlated public readback cannot establish correction
+ok 21 - mis-correlated public readback cannot establish correction
+  ---
+  duration_ms: 0.147679
+  type: 'test'
+  ...
+# Subtest: published correction is not assumed from acknowledgement
+ok 22 - published correction is not assumed from acknowledgement
+  ---
+  duration_ms: 0.12768
+  type: 'test'
+  ...
+# Subtest: observed failed path produces explicit failure, not unverified success
+ok 23 - observed failed path produces explicit failure, not unverified success
+  ---
+  duration_ms: 0.121651
+  type: 'test'
+  ...
+# Subtest: contradictory authenticated observations are contested
+ok 24 - contradictory authenticated observations are contested
+  ---
+  duration_ms: 0.124084
+  type: 'test'
+  ...
+# Subtest: missing keyboard or screen-reader mode blocks functional claim
+ok 25 - missing keyboard or screen-reader mode blocks functional claim
+  ---
+  duration_ms: 0.19576
+  type: 'test'
+  ...
+# Subtest: future evidence is rejected
+ok 26 - future evidence is rejected
+  ---
+  duration_ms: 0.372132
+  type: 'test'
+  ...
+# Subtest: impossible Gregorian evidence timestamp rejected
+ok 27 - impossible Gregorian evidence timestamp rejected
+  ---
+  duration_ms: 0.118215
+  type: 'test'
+  ...
+# Subtest: proof URI with token and fragment is rejected
+ok 28 - proof URI with token and fragment is rejected
+  ---
+  duration_ms: 0.154329
+  type: 'test'
+  ...
+# Subtest: duplicate evidence IDs rejected
+ok 29 - duplicate evidence IDs rejected
+  ---
+  duration_ms: 0.119077
+  type: 'test'
+  ...
+# Subtest: wrong stage method rejected
+ok 30 - wrong stage method rejected
+  ---
+  duration_ms: 0.088201
+  type: 'test'
+  ...
+# Subtest: unauthorized positive editorial disposition rejected
+ok 31 - unauthorized positive editorial disposition rejected
+  ---
+  duration_ms: 0.120969
+  type: 'test'
+  ...
+# Subtest: Gregorian month lengths admit October 31 and December 31 but not November 31
+ok 32 - Gregorian month lengths admit October 31 and December 31 but not November 31
+  ---
+  duration_ms: 0.213487
+  type: 'test'
+  ...
+# Subtest: mixed site revisions with each stage in their union never verify any one service effect
+ok 33 - mixed site revisions with each stage in their union never verify any one service effect
+  ---
+  duration_ms: 0.192976
+  type: 'test'
+  ...
+# Subtest: correction decision and public witness cannot be spliced across revisions
+ok 34 - correction decision and public witness cannot be spliced across revisions
+  ---
+  duration_ms: 0.47848
+  type: 'test'
+  ...
+# Subtest: records without a service-effect context fail closed
+ok 35 - records without a service-effect context fail closed
+  ---
+  duration_ms: 0.160969
+  type: 'test'
+  ...
+# Subtest: several provider components can substantiate one effect when version manifest binds them
+ok 36 - several provider components can substantiate one effect when version manifest binds them
+  ---
+  duration_ms: 2.588108
+  type: 'test'
+  ...
+# Subtest: complete union of evidence across incompatible effect manifests proves neither
+ok 37 - complete union of evidence across incompatible effect manifests proves neither
+  ---
+  duration_ms: 12.953619
+  type: 'test'
+  ...
+# Subtest: component revision mismatch cannot be re-labelled as a valid receipt
+ok 38 - component revision mismatch cannot be re-labelled as a valid receipt
+  ---
+  duration_ms: 0.354676
+  type: 'test'
+  ...
+# Subtest: a forged effectRef does not borrow the manifest owner
+ok 39 - a forged effectRef does not borrow the manifest owner
+  ---
+  duration_ms: 0.306554
+  type: 'test'
+  ...
+# Subtest: a foreign work reference cannot be substituted
+ok 40 - a foreign work reference cannot be substituted
+  ---
+  duration_ms: 0.178094
+  type: 'test'
+  ...
+# Subtest: self-asserted manifest and receipts never count without verification callbacks
+ok 41 - self-asserted manifest and receipts never count without verification callbacks
+  ---
+  duration_ms: 0.164023
+  type: 'test'
+  ...
+# Subtest: failed or throwing manifest verification rejects all related observations
+ok 42 - failed or throwing manifest verification rejects all related observations
+  ---
+  duration_ms: 0.223541
+  type: 'test'
+  ...
+# Subtest: unverified provider receipt does not imply stage completion
+ok 43 - unverified provider receipt does not imply stage completion
+  ---
+  duration_ms: 0.163542
+  type: 'test'
+  ...
+# Subtest: reported evidence does not count as independent observation
+ok 44 - reported evidence does not count as independent observation
+  ---
+  duration_ms: 0.333454
+  type: 'test'
+  ...
+# Subtest: contested report prevents silent positive classification
+ok 45 - contested report prevents silent positive classification
+  ---
+  duration_ms: 0.409777
+  type: 'test'
+  ...
+# Subtest: missing manifest and unattested component are rejected without promotion
+ok 46 - missing manifest and unattested component are rejected without promotion
+  ---
+  duration_ms: 0.315248
+  type: 'test'
+  ...
+# Subtest: future evidence is excluded even on the same UTC day
+ok 47 - future evidence is excluded even on the same UTC day
+  ---
+  duration_ms: 0.129572
+  type: 'test'
+  ...
+# Subtest: Gregorian invalid dates rejected, leap days handled correctly
+ok 48 - Gregorian invalid dates rejected, leap days handled correctly
+  ---
+  duration_ms: 0.385812
+  type: 'test'
+  ...
+# Subtest: duplicate IDs and duplicate manifests reject before calculating coverage
+ok 49 - duplicate IDs and duplicate manifests reject before calculating coverage
+  ---
+  duration_ms: 3.583554
+  type: 'test'
+  ...
+# Subtest: results are input-order invariant
+ok 50 - results are input-order invariant
+  ---
+  duration_ms: 0.174579
+  type: 'test'
+  ...
+# Subtest: zero evidence is never accepted
+ok 51 - zero evidence is never accepted
+  ---
+  duration_ms: 0.083123
+  type: 'test'
+  ...
+1..51
+# tests 51
+# suites 0
+# pass 51
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 92.940773
