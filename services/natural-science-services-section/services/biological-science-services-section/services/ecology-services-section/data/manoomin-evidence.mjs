@@ -10,7 +10,7 @@ export function validateEvidence(d){
   if(!isString(s?.id)||seenSources.has(s.id))problems.push("missing or duplicate source id");
   if(!kinds.has(s?.kind))problems.push("unknown source kind: "+s?.id);
   if(!/^https:\/\//.test(s?.url||""))problems.push("missing HTTPS source: "+s?.id);
-  if(s.date_precision==="year"&&!/^\\d{4}$/.test(s.date||""))problems.push("imprecise year recorded as exact date: "+s.id);
+  if(s.date_precision==="year"&&!/^[0-9]{4}$/.test(s.date||""))problems.push("imprecise year recorded as exact date: "+s.id);
   if(s.date_precision==="webpage"&&s.date!=="undated")problems.push("undated webpage given false publication date: "+s.id);
   if(typeof s?.id==="string")seenSources.set(s.id,s);
  }
