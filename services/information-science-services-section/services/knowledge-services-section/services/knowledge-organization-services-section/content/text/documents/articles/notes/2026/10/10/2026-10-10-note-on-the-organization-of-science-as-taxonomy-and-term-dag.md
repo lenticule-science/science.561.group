@@ -27,7 +27,7 @@ cites-utterances:
 
 - Science holds the (K)nowledge of the MAPE-K system distributed across the Group's ecosystem.
 - Science stands alone as a consumer of Engineering. Engineering provides the M, A and E of MAPE-K and has found dogfooding hard.
-- The simple-planning-engine under `dev/` is standalone and dependency-free, and provides the P. Evidence: `561-group-services-section/data/records/knowing/namings.jsonl` and the 2026-09-20 note above.
+- The simple-planning-engine under `dev/` is standalone and dependency-free, and provides the P. Evidence: `561-group-services-section/data/records/knowing-records/namings.jsonl` and the 2026-09-20 note above.
 
 ## What the work is for
 

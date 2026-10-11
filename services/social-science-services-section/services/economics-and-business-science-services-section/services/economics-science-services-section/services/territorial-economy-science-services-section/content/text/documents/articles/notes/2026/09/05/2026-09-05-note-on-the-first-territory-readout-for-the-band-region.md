@@ -62,7 +62,7 @@ Three of the four materials show a region positioned, so far as any source state
 
 ## Read through the value-chain reader (2026-09-05, after the price ladders landed)
 
-The research analyst's ladders (`../../../../../../../../data/records/2026-09-05-band-region-price-ladder-measurement.json`) were run through `@red-cup-engineering/derive-value-chain-shares-service` 0.1.0 by the executive session; the readings are in `../../../../../../../../data/records/2026-09-05-band-region-value-chain-readings.json`.
+The research analyst's ladders (`../../../../../../../../data/records/measurement-records/2026-09-05-band-region-price-ladder-measurement.json`) were run through `@red-cup-engineering/derive-value-chain-shares-service` 0.1.0 by the executive session; the readings are in `../../../../../../../../data/records/reading-records/2026-09-05-band-region-value-chain-readings.json`.
 Every ladder has two positions, producer and retail, because no wholesale or processor price was found, so each producer share is a share of retail across an unmeasured middle, not of a full ladder.
 
 | Material | Producer | Retail | Producer's share of retail |

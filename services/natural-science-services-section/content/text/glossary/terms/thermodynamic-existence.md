@@ -30,7 +30,7 @@ proved by exhaustion in `cohomologyVanishes_iff` in
 `lib/emsenn/services/561-group/services/science-services-section/services/information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/obsmetrologia/Obsmetrologia/Closure/Regime.lean`.
 No theorem under `Thermodynamics/` instantiates the classifier at all: the
 2026-09-04 regime-instantiation census
-(`lib/emsenn/services/561-group/services/science-services-section/services/information-science-services-section/services/math-services-section/services/obsmetrological-services-section/data/records/2026-09-04-regime-instantiation-census.json`)
+(`lib/emsenn/services/561-group/services/science-services-section/services/information-science-services-section/services/math-services-section/services/obsmetrological-services-section/data/records/census-records/2026-09-04-regime-instantiation-census.json`)
 counts zero theorems there using `ClosureRegime`, `ClosureRegimeData`, or
 `classify`. The library's own concrete strict-regime instance is the
 spine's `spineData` (`spine_is_strict`, spending `propext` — the axiom

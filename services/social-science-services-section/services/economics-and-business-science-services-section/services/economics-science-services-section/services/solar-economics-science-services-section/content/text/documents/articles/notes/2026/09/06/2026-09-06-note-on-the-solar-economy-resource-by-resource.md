@@ -30,7 +30,7 @@ the section order of the founder's own
 note. The sixteen resource rows this note cites live in
 `data/records/2026-09-06-solar-economy-resource-rows.json` (this section),
 validated against
-`computer-economic-systems-engineering-services-section/data/records/schema/resource-row.schema.json`
+`computer-economic-systems-engineering-services-section/schemas/resource-row.schema.json`
 — 16 of 16 valid, verbatim gate output below. Nothing measured by
 This section's field note or the business plan's incumbent
 measurement is re-measured here; both are cited by row and by path. Money
@@ -372,7 +372,7 @@ not re-deriving a yield figure by hand here.
 - Sizing-without-a-bank: `economics-science-services-section/content/text/documents/articles/notes/2026/09/04/2026-09-04-note-on-sizing-without-a-bank.md`.
 - Finance sizing terms: `finance-science-services-section/content/text/glossary/terms/{risk-of-ruin,kelly-criterion,fractional-kelly,absorbing-barrier}.md`.
 - Five economies of earning: `participation-economy-science-services-section/content/text/glossary/concepts/five-economies-of-earning.md`.
-- Resource-row schema: `computer-economic-systems-engineering-services-section/data/records/schema/resource-row.schema.json`.
+- Resource-row schema: `computer-economic-systems-engineering-services-section/schemas/resource-row.schema.json`.
 - `position-sizing-service` `src/sleeve.mjs` (`barrierJoules`, `JOULES_PER_KWH`), read directly for rows 14-15 and Sec. 8.3.
 - IRS: `https://www.irs.gov/credits-deductions/residential-clean-energy-credit`;
   `https://www.irs.gov/newsroom/faqs-for-modification-of-sections-25c-25d-25e-30c-30d-45l-45w-and-179d-under-public-law-119-21-139-stat-72-july-4-2025-commonly-known-as-the-one-big-beautiful-bill-obbb`

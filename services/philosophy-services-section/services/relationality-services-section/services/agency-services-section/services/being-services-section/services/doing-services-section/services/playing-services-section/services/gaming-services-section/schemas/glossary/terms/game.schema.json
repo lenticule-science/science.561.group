@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "glossary/terms/game",
+  "title": "game",
+  "description": "A game is a voluntary activity conducted within agreed-upon boundaries — rules, a playing space, a duration — where participants make choices that affect outcomes. Four features recur: rules, objectives, uncertainty, voluntariness. Not itself play — a game is play plus agreed structure (see ../../../../../schemas/glossary/terms/play.schema.json).",
+  "type": "object",
+  "required": ["rules", "objectives", "uncertainty", "voluntary"],
+  "properties": {
+    "rules": {
+      "$ref": "./rules.schema.json",
+      "description": "The constraints on legal action; rules make choice meaningful — without constraint there is free play, not a game."
+    },
+    "objectives": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1,
+      "description": "What participants orient toward; need not be competitive (a collaborative story counts), but participants can distinguish moves that advance it from moves that don't."
+    },
+    "uncertainty": {
+      "type": "array",
+      "items": { "enum": ["hidden-information", "randomness", "opponent-behavior", "skill-variation"] },
+      "minItems": 1,
+      "description": "The sources that make choices matter; a known outcome makes the activity a performance, not a game."
+    },
+    "voluntary": {
+      "const": true,
+      "description": "Entering the game is a choice held under the lusory attitude; compelled participation retains the mechanics while losing the character of a game."
+    },
+    "players": {
+      "type": "array",
+      "items": { "$ref": "./player.schema.json" },
+      "description": "The participants whose choices affect the outcome."
+    },
+    "state": {
+      "$ref": "./game-state.schema.json",
+      "description": "The complete description of the game at a moment."
+    }
+  }
+}

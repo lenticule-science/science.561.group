@@ -25,7 +25,7 @@ authors:
 # Toward the one H¹
 
 Owner movement, 2026-09-04: "Fixing it so we only have one thing called H would probably be a good use of a Sonnet." This note answers that from the formal record, not from memory: the full map lives in
-[`data/records/2026-09-04-h1-definitions-map.json`](../../../../../../../../data/records/2026-09-04-h1-definitions-map.json)
+[`data/records/definitions-map-records/2026-09-04-h1-definitions-map.json`](../../../../../../../../data/records/definitions-map-records/2026-09-04-h1-definitions-map.json)
 (`ObsmetrologiaH1DefinitionsMap`), every claim below cites it. All theorem names were checked
 present by `grep -c` in their own module (report: zero misses), and the four weld theorems
 named in section 2 were checked live with

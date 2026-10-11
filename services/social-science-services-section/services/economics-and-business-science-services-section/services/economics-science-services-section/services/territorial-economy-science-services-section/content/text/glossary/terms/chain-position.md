@@ -6,7 +6,7 @@ date-created: 2026-09-05
 provenance:
   sources:
     - /home/emsenn/info/lib/emsenn/services/561-group/services/science-services-section/services/social-science-services-section/services/economics-and-business-science-services-section/services/economics-science-services-section/services/territorial-economy-science-services-section/content/text/documents/articles/notes/2026/09/05/2026-09-05-research-on-the-value-chain-technologies-of-narcotics-empires.md
-    - /home/emsenn/info/lib/emsenn/services/561-group/services/science-services-section/services/social-science-services-section/services/economics-and-business-science-services-section/services/economics-science-services-section/services/territorial-economy-science-services-section/data/records/2026-09-05-narcotics-empire-value-chain-measurement.json
+    - /home/emsenn/info/lib/emsenn/services/561-group/services/science-services-section/services/social-science-services-section/services/economics-and-business-science-services-section/services/economics-science-services-section/services/territorial-economy-science-services-section/data/records/measurement-records/2026-09-05-narcotics-empire-value-chain-measurement.json
 ---
 A chain position is a named position on a value chain's price ladder — producer, refiner, exporter, wholesaler, retailer — together with its share of the retail price. The producer's share is the first number a chain-position reading reports.
 

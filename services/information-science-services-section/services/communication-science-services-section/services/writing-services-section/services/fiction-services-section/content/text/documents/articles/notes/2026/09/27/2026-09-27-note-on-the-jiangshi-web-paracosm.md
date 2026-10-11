@@ -102,7 +102,7 @@ The book may lean on these; each is stated with its grade. When it goes past the
 ## What the market says (assay of 2026-09-27)
 
 The study and its readings are
-`science-services-section/.../fiction-services-section/data/records/market-gaps/2026-09-27-jiangshi-web{,-readings}.json`.
+`science-services-section/.../fiction-services-section/data/records/market-gap-records/2026-09-27-jiangshi-web{,-readings}.json`.
 It codes fourteen comparable works.
 
 - **The serial is the candidate.** A near-future cultivation-horror serial in Chinese folklore, with AI at its center and a legible ascent, reads gap *true*, demand *true*.

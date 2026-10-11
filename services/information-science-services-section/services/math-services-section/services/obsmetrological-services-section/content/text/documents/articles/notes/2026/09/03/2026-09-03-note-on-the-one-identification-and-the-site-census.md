@@ -45,7 +45,7 @@ Both were taken with `lake env lean` against the built package at
 `lib/obsmetrologia`, by Lean meta programs whose source is embedded in the
 records so each census reproduces from its record alone.
 
-**Axiom census** (`data/records/2026-09-03-theorem-axiom-census.json`, rows in
+**Axiom census** (`data/records/census-records/2026-09-03-theorem-axiom-census.json`, rows in
 the sibling `-rows.tsv`): every theorem under `Obsmetrologia.`, its axiom set by
 `Lean.collectAxioms`.
 
@@ -65,7 +65,7 @@ conjectures in `Closure/Collatz` and `AperiodicOrder/Tiling`, and five
 carries a sorry. The library uses no choice anywhere.
 
 **Identification-site census**
-(`data/records/2026-09-03-identification-site-census.json`, rows in the sibling
+(`data/records/census-records/2026-09-03-identification-site-census.json`, rows in the sibling
 `-rows.tsv`): a constant is an identification site when its own value or type
 directly uses `Quot.sound`, `Quot.mk`, `Quot.lift`, `Quot.ind`, `Quot.rec`, or a
 `Quotient.*` constructor or eliminator; a theorem inherits every site in the

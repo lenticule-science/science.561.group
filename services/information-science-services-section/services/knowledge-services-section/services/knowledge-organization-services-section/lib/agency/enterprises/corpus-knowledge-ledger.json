@@ -9,7 +9,7 @@
   ],
   "host": "bare-cedar-fog",
   "derives": [
-    "lib/emsenn/services/561-group/services/561-group-services-section/data/records/knowledge/corpus/reports.json"
+    "lib/emsenn/services/561-group/services/561-group-services-section/data/records/knowledge-census-records/corpus/reports.json"
   ],
   "x-provenance": {
     "recorded-by": "claude-opus-5-5",

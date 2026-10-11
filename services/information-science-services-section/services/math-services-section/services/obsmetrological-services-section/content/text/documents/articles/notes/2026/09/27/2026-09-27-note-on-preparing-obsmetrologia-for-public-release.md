@@ -53,7 +53,7 @@ construction costs `Quot.sound` and nothing more (08-17 note, §5.1).
 
 - `lake build` succeeds: 396 jobs, 393 modules, about 108,000 lines, Lean
   v4.31.0, no dependencies.
-- Axiom law, from the 2026-09-21b census (`data/records/2026-09-21b-axiom-law-gate.json`):
+- Axiom law, from the 2026-09-21b census (`data/records/axiom-law-gate-records/2026-09-21b-axiom-law-gate.json`):
   - 6,636 house theorems: 3,085 axiom-free and 205 `Quot.sound` only.
   - 3,346 violations, almost all `propext`.
   - 9 depend on `sorry`. There is one live `sorry`, at

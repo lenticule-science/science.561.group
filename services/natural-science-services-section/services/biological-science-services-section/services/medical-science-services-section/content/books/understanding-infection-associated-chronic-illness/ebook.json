@@ -7,7 +7,7 @@
   "date": "2026-09-30",
   "bookDir": ".",
   "distDir": "../../../data/state/editions/understanding-infection-associated-chronic-illness",
-  "tokens": "../../../../../../../../../../561-group-services-section/services/561-group-content-design-services-section/data/records/design-tokens/561-group.tokens.json",
+  "tokens": "../../../../../../../../../../561-group-services-section/services/561-group-content-design-services-section/data/records/design-token-records/561-group.tokens.json",
   "cover": "typographic",
   "description": "A public guide to Long COVID, post-exertional malaise, and infection-associated chronic illness: what is established, what is a well-supported hypothesis, and what remains contested. This is educational material, not medical advice.",
   "keywords": [
