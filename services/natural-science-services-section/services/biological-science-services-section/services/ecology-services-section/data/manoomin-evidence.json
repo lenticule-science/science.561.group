@@ -47,7 +47,7 @@
         "evidence_access": "J-STAGE full HTML inspected on 2026-10-11: Methods—NARO Genebank strains; Results—Identification of mating types; Table 4 and Discussion. Abstract's compressed 'ten from Japan' description conflicts with actual Table 4 listing one from China.",
         "sampling_unit": "Two Japanese cultivated Zizania latifolia varieties (Shirakawa and Ittenkou) sampled in authors' paddies; a separate panel of ten NARO genebank Ustilago esculenta strains: nine sourced from Japan and one from China (yeast4, MAFF 305616), as itemized in Table 4.",
         "method": "Mating-type gene PCR and in-vitro mating/hyphal formation tests on selected fungal isolates; supplementary panel of ten NARO bank strains genotyped, with single Chinese-origin resource strain.",
-        "directly_observed": "MAT-2/MAT-3 predominance in studied Japanese cultivars and mating/filament production from tested distinct mating types.",
+        "directly_observed": "Mating-type assays and in-vitro mating among Japanese cultivars and archived accessions; 10 archived strains comprised nine Japan-origin and one Chinese-origin 'yeast4' (MAFF 305616), shown in Table 4. MAT-2/MAT-3 predominated in examined material; no native American host was assayed.",
         "not_measured": "No challenge test of American Zizania species, imported product, live edible material following US distribution, or a quantified native-rice infection probability.",
         "decision_relevance": "Demonstrates diversity of mating types and laboratory mating competence, not that any real imported retail stem initiates disease.",
         "source_locator": "Chigira et al. 2023 J-STAGE full HTML: Methods 'U. esculenta strains from the Genebank of the National Agriculture and Food Research Organization'; Table 4 (China yeast4 MAFF 305616)."
@@ -563,7 +563,16 @@
       "limits": [
         "A climate-match fraction is not an 81.4% invasion probability, forecast of invasion, quantified risk to a particular manoomin bed, or direct species occurrence.",
         "The USFWS High Risk assessment combines invasion history and climate match; weather suitability does not itself establish introduction or survival."
-      ]
+      ],
+      "measurement": {
+        "quantity": 0.814,
+        "unit": "fraction_of_contiguous_US_climate_target_points",
+        "qualifying_condition": "FWS Climate 6 match score >= 6",
+        "denominator": "all FWS contiguous-US climate matching target points",
+        "forecast_probability": false,
+        "regional_specificity": "Great Lakes region named among areas with high match; 0.814 is a continental ratio, not a Great Lakes-specific probability",
+        "source_location": "FWS ERSS section 7, Summary of Climate Matching Analysis"
+      }
     },
     {
       "id": "contiguous-us-mapped-records-not-wild",
