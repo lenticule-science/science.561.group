@@ -56,6 +56,8 @@ Deloria's time/place distinction. Historical source work should be served by
 the existing History and Archaeology Science Section where appropriate.
 
 ### Meaningless labor, invisible work, and confusion as crisis deferral
+**Current scientific working article:** [Work visibility, perceived usefulness, and institutional decision deferral](content/text/documents/articles/notes/2026/10/12/2026-10-12-work-visibility-and-institutional-decision-deferral.md). This **28 KB independent paper** distinguishes unrecognized necessary work, perceived uselessness, counterfactually low-contribution tasks, and decision delay, and proposes competing hypotheses and a controlled study; its causal claims are **not yet established by original data**. The thematic title remains larger than this single paper.
+
 
 This is a **family of researchable propositions**, not a Substack essay
 assignment. Reuse existing scientific surveys already resident here:
