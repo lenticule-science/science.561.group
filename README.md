@@ -43,3 +43,21 @@ The linter ignores Markdown code and quoted source text. Automatic rewriting is 
 ## Repository and canonicality
 
 This section's canonical repository is `lenticule-science/science-services-section`. Bare Cedar Fog is a superrepo and will carry this section as a git submodule at this directory path. This repository's directory layout is the superrepo's layout for the section; each section with its own repository is mounted as a submodule at its place in that layout.
+
+## Research operations and publication boundary
+
+This repository is the canonical **scientific domain** tree, not a consolidated
+method-operations bureau or publishing ledger. Reusable research **execution**
+(source collection, study running, evidence custody, reproducibility and receiving)
+is supplied by [Coesite Research Operations](https://github.com/coesite-operations/operations-services-section/tree/main/services/research-operations-services-section).
+Scientific questions, domain-appropriate methodology, reviewed results, and
+formal proofs remain with their actual scientific field or separately owned
+specialist repository; the operations provider does not determine their truth.
+
+An author's essay is a distinct literary/publication resource. In particular,
+[emsenn's Substack service](https://github.com/emsenn/substack) owns its published
+editions, manuscript custody, and publication-state accounting. Neither a
+poetic research-program title nor a missing local manuscript establishes that
+an essay is unpublished. Literature and experiments must not be written to
+imitate an author, and authored writing must not be rewritten as a science paper
+merely to satisfy an editorial workflow.
