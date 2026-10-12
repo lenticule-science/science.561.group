@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
+import { put } from "@red-cup-engineering/semiotic-eavt-services-section/store";
 import { readFileSync } from "node:fs";
 import { basename, dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -46,9 +47,8 @@ function response(type, source, object, at) {
   return identify({ "@context": ACTIVITYSTREAMS_CONTEXT, type, actor: ACTOR, target: source?.actor ?? null,
     inReplyTo: source?.id ?? null, object, published: at });
 }
-async function append(store, category, record) {
-  await store.record({ category: `pure-mathematics-change-bundle-qualification-${category}`,
-    recordedAt: record.published ?? record.recordedAt, record });
+async function append(root, category, record) {
+  put(root, "change-bundle-qualification", { category, at: record.published ?? record.recordedAt, record });
 }
 async function reject(store, source, reason, at, unmet = []) {
   const value = response("Reject", source, { type: "PureMathematicsChangeBundleQualificationRefusal", reason, unmet,
@@ -206,8 +206,7 @@ async function invoke(store, activity, at) {
 
 export async function run(activity, op = "invoke-service", at = new Date().toISOString(), options = {}) {
   const dataRoot = resolve(options.dataRoot ?? process.env.OML_DATA_ROOT ?? join(NODE_ROOT, "data"));
-  const { createSettlementStore } = await import("@red-cup-engineering/semiotic-eavt-services-section/record-semantic-record");
-  const store = createSettlementStore({ settlementRoot: dataRoot, objectKind: "lenticule.oml.change-bundle-qualification.record", actor: ACTOR });
+  const store = dataRoot;
   if (op === "solicit-service") return solicit(store, activity, at);
   if (op === "invoke-service") return invoke(store, activity, at);
   return reject(store, activity, `unknown-provider-operation:${op}`, at);
