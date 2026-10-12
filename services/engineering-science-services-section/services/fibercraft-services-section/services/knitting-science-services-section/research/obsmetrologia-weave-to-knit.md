@@ -11,8 +11,8 @@ status: source-grounded-with-open-hypotheses
 
 The user asked specifically about our weaving math. Read the real code:
 
-- [Fibercraft package / WeaveDraft](../../../../lib/obsmetrologia-fibercraft/ObsmetrologiaFibercraft/WeaveDraft.lean) — downstream domain-specific package ObsmetrologiaFibercraft; the current science-services checkout uses **Reading** terminology.
-- [Fibercraft package / LenticleCrossing](../../../../lib/obsmetrologia-fibercraft/ObsmetrologiaFibercraft/LenticleCrossing.lean) — connects crossings with clopen overlap and bead ports.
+- [Fibercraft package / WeaveDraft](../../../lib/obsmetrologia-fibercraft/ObsmetrologiaFibercraft/WeaveDraft.lean) — downstream domain-specific package ObsmetrologiaFibercraft; the current science-services checkout uses **Reading** terminology.
+- [Fibercraft package / LenticleCrossing](../../../lib/obsmetrologia-fibercraft/ObsmetrologiaFibercraft/LenticleCrossing.lean) — connects crossings with clopen overlap and bead ports.
 - [Upstream Obsmetrologia / PortGrowth](https://github.com/lenticule-science/obsmetrologia/blob/main/Obsmetrologia/AperiodicOrder/Tiling/PortGrowth.lean) — stationary port-incidence towers and composition law.
 - [Upstream Obsmetrologia / SubstitutionMatrix](https://github.com/lenticule-science/obsmetrologia/blob/main/Obsmetrologia/AperiodicOrder/Tiling/StepN/SubstitutionMatrix.lean) — Padovan/Fibonacci substitutions and the Padovan identity.
 - [Upstream / PortGraph](https://github.com/lenticule-science/obsmetrologia/blob/main/Obsmetrologia/AperiodicOrder/Tiling/PortGraph.lean) — bead/ported routing as a walk, not a mere line segment.
