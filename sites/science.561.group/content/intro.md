@@ -1,6 +1,6 @@
 ---
 title: "What would count as knowing?"
-description: "A testable proposition is not the same thing as an appealing explanation, and a machine-checkable proof is not the same thing as evidence about the world."
+description: "A field guide to observations, estimates, proofs, and predictions—and the different kinds of uncertainty they carry."
 date-created: 2026-10-12
 kind: article
 status: potential
@@ -8,34 +8,104 @@ tags:
   - scientific-method
   - evidence
   - obsmetrologia
-  - epistemology
+  - four-valued-logic
+  - prediction
 ---
 
 # What would count as knowing?
 
-A research institution ought to be able to answer a basic question about every claim it makes: **what would change our minds?**
+**A measurement is not an inference. An inference is not a proof. A proof about
+a model is not proof that the model describes the world.** Much of the trouble
+in public scientific argument comes from compressing those sentences into
+"the data proves it."
 
-A mathematical theorem needs a stated formal system, an exact proposition, and a derivation that can be checked in that system. An empirical claim needs observations, measurement conditions, error accounting, and a result that other observers can try to reproduce. A proposed engineering design needs operating assumptions, an implementation or experiment, and independently received behavior. These are related disciplines, but they do not share a single shortcut to truth.
+Lenticule Science studies how claims acquire evidence, how information changes
+what can be inferred, and how a formal result may—or may not—be carried into
+experimental and operating systems. Obsmetrologia is part of that research
+program. Its mathematical ambition is not a license to call every forecast a
+theorem. The interesting work begins by specifying the boundary between them.
 
-Lenticule Science works on the conditions under which information can become evidence. Its research includes logic, information and semiotics, physical systems, social relations, agency, and the mathematical research program Obsmetrologia. The intent is not to make every problem sound mathematical. It is to say precisely which parts have been formalized, which have been measured, and which are still hypotheses.
+## A weather example with actual stakes
 
-## Four distinct statements
+Suppose an event pays out if an official weather station records a daily high
+of at least 100°F. At 2:30 p.m., the last available observation is 96°F. A
+forecast predicts cooling. What can we say?
 
-Consider the prediction that an outdoor city's daily temperature maximum has already passed.
+- **Observation:** the station reported 96°F at the observation time.
+  Publication lag, sensor quality, time zone, units, and missing samples still
+  matter.
+- **Estimate:** the available weather model makes crossing 100°F unlikely.
+  This is a probability or confidence judgment conditional on a model and
+  evidence. It is not an impossibility result.
+- **Conditional bound:** if a justified upper bound for every remaining
+  admissible temperature trajectory is *strictly below* 100°F, then crossing
+  the threshold is impossible **within that constrained model**. A bound of
+  exactly 100°F does not rule out an event whose rule says "at least 100°F."
+- **Official settlement:** the market's named authority publishes the day's
+  qualifying maximum under its own rule. A trader's interpretation of a
+  nearby sensor is not that settlement record.
 
-1. **Observation:** a particular station reported a particular temperature at a particular time. The station, units, timestamp, and missing samples matter.
-2. **Inference:** given an explicit model and the observations available so far, further warming is considered unlikely. The model's assumptions and failure modes matter.
-3. **Necessity:** under stated upper bounds on all future trajectories, a threshold can no longer be reached. This stronger claim requires the bound, not merely an intuitive cooling trend.
-4. **Settlement:** the event's official measuring authority reports the final value. A market's payout rule may depend on this statement, not on the earlier inference.
+The third statement is stronger than the second only when the bounds and
+their applicability have been established. The fourth may arrive after all
+trading decisions are finished. Their distinction creates opportunities for
+better decisions, but also sharply limits claims of certainty.
 
-Calling the second statement a proof would obscure the very uncertainty that makes the prediction interesting.
+## What evidence says, and what futures permit
 
-## Publish a claim with its test
+Two different questions should not be merged.
 
-A useful research publication makes the route from question to answer navigable. It should identify what the result says, where the evidence or formal derivation lives, what it does *not* establish, and what an interested reader can attempt next. Contradictory observations should remain visible rather than being quietly erased.
+**Evidence question:** do we possess support or refutation for a particular
+statement? A four-valued, paraconsistent reading can retain two independent
+bits:
 
-This is also why the Group's division of responsibility matters. Lenticule researches the claim; Red Cup Engineering may implement an accepted result; Coesite Operations may establish that it behaves in a real operating environment; Causeway Services may provide a service built from it. Each handoff earns a new receipt. A research note alone cannot certify a production service.
+| Support | Refutation | Reading |
+| --- | --- | --- |
+| No | No | Neither: evidence is missing |
+| Yes | No | Supported without recorded refutation |
+| No | Yes | Refuted without recorded support |
+| Yes | Yes | Both: competing evidence must be examined |
 
-The public science site is intended to expose that work in a form readers can navigate: explanations first, original claims and sources within reach, and accessible feeds when articles have actually been accepted and released. The fuller knowledge garden remains at [L-Space](https://l-space.561.group/).
+"Both" does not make every proposition true. "Neither" does not mean the
+statement is false. This is about the *state of evidence*, not a four-choice
+weather forecast. A correction should add or revise the attributable evidence;
+it should not erase the fact that an earlier conflicting observation was made.
 
-**The invitation:** challenge an assumption, reproduce a result, or identify the observation that would distinguish competing accounts. That is more valuable than accepting a slogan.
+**Modal question:** relative to an explicit set of admissible futures, is
+crossing the threshold impossible, still possible, or necessary? A future is
+possible if at least one admissible trajectory meets the condition; necessary
+if all do; and impossible if none do. These are conditional statements about
+the admitted trajectories. If the set is poorly constrained, a perfectly
+correct deduction from it may be useless for deciding a real event.
+
+An estimated 1% chance is not the same as "impossible." A report of 100°F at
+the wrong station is not the same as event settlement. A formally verified
+upper bound is not a guarantee that the measurement process or weather model
+was correct. Keep all three distinctions in view.
+
+## What a reader should be able to check
+
+A useful scientific account should let a skeptical reader reconstruct the
+claim without guessing what "we know" meant:
+
+1. **Question and rule.** What is the exact event, threshold, time window,
+   observation source, and settlement authority?
+2. **Evidence and provenance.** Which observation, with what timestamp,
+   location, uncertainty, version, and known omissions, supports or refutes it?
+3. **Method.** Is the conclusion a direct reading, statistical estimate,
+   conditional theorem, simulation, laboratory finding, or proposed analogy?
+4. **Assumptions and countercases.** What could change the conclusion? Does a
+   missing observation, inconsistent instrument, alternative model, or revised
+   event rule break it?
+5. **Receiving.** Has somebody independently checked the relevant proof,
+   reproduced the reported measurement, or observed the supposed operating
+   behavior? If not, say what remains unverified.
+
+This same discipline extends well beyond weather. Economic claims require
+definitions of prices and transactions; claims about agency require models of
+action and observation; mathematical constructions require exact premises and
+proof obligations. A usable scientific language should connect these without
+pretending the domains are identical.
+
+**The point is not to replace uncertainty with impressive terminology. It is
+to make uncertainty precise enough that new evidence can change the right
+claim, for the right reason.**
