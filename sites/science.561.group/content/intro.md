@@ -70,6 +70,15 @@ statement is false. This is about the *state of evidence*, not a four-choice
 weather forecast. A correction should add or revise the attributable evidence;
 it should not erase the fact that an earlier conflicting observation was made.
 
+This account uses the Dunn–Belnap family of four-valued logics as a point of
+reference. The [Stanford Encyclopedia of Philosophy's discussion of
+many-valued logic](https://plato.stanford.edu/entries/logic-manyvalued/#TrueFalsNeitBoth)
+sets out the neither/both distinction; an
+[open research review published in 2026](https://link.springer.com/article/10.1007/s11225-026-10230-3)
+examines connections to computer science. These references explain the
+background logic. They do not establish that every proposed application or
+Obsmetrologia bridge has already been formally proved or deployed.
+
 **Modal question:** relative to an explicit set of admissible futures, is
 crossing the threshold impossible, still possible, or necessary? A future is
 possible if at least one admissible trajectory meets the condition; necessary
