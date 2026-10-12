@@ -16,6 +16,11 @@ complete Git tree and a selected path scope. Let an explicit path mapping name
 the intended current locations. Compare object IDs together with modes and types;
 preserve symlinks, child commits and empty directories. A complete-tree hash must
 be reconstructible from the supplied metadata before using it as an observation.
+For a selected location, a chain of complete immediate-tree identities can bind
+that location to the commit root without reading every descendant. The chain
+must end at the observed object, proven absence or unread child boundary. Only
+those locations and explicitly observed complete subtrees establish coverage;
+omitted paths cannot be labelled absent.
 
 The resulting predicates have limited meanings:
 
