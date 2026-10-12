@@ -72,7 +72,7 @@ it should not erase the fact that an earlier conflicting observation was made.
 
 This account uses the Dunn–Belnap family of four-valued logics as a point of
 reference. The [Stanford Encyclopedia of Philosophy's discussion of
-many-valued logic](https://plato.stanford.edu/entries/logic-manyvalued/#TrueFalsNeitBoth)
+many-valued logic](https://plato.stanford.edu/entries/logic-manyvalued/)
 sets out the neither/both distinction; an
 [open research review published in 2026](https://link.springer.com/article/10.1007/s11225-026-10230-3)
 examines connections to computer science. These references explain the
