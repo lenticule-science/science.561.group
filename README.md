@@ -44,6 +44,9 @@ The linter ignores Markdown code and quoted source text. Automatic rewriting is 
 
 This section's canonical repository is `lenticule-science/science-services-section`. Bare Cedar Fog is a superrepo and will carry this section as a git submodule at this directory path. This repository's directory layout is the superrepo's layout for the section; each section with its own repository is mounted as a submodule at its place in that layout.
 
+**Receiving caution (2026-10-12).** The intended parent submodule is **not yet installed** in Bare Cedar Fog. Its [October 9 superrepo-forest audit](https://github.com/561-group/bare-cedar-fog/blob/main/lib/emsenn/services/561-group/services/561-group-services-section/services/561-group-operations-services-section/services/bare-cedar-fog-services-section/content/text/documents/articles/notes/2026/10/09/2026-10-09-note-on-the-superrepo-forest.md) measured **18,372 identical blobs, 9 differing, 692 only in this repository and 9,088 only in the house copy** at that time. Those historical counts have not been remeasured here. Consequently, a science commit to this authoritative section does **not** automatically reach the house/superrepo checkout. Do not overwrite either tree with the other or create duplicate papers to simulate delivery. Reconcile both sides following the already-recorded [superrepo forest migration](https://github.com/561-group/bare-cedar-fog/blob/main/lib/emsenn/services/561-group/services/561-group-services-section/services/561-group-operations-services-section/services/bare-cedar-fog-services-section/content/text/documents/specifications/2026-10-09-superrepo-forest-migration.md), then replace the duplicated section with a real pinned submodule.
+
+
 ## Research operations and publication boundary
 
 This repository is the canonical **scientific domain** tree, not a consolidated
