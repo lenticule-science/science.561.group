@@ -54,7 +54,7 @@ metrics that drive the work queue. The house has the parts of most of these and 
 ## Ledger measurement (2026-09-30, commit `b42d6bf5c28`)
 
 Wave 1.1 landed as `corpus-census-service` (bin `census-corpus`), and these are its first readings.
-Its dated census record and wanted queue live in `561-group-services-section/data/records/knowledge/corpus/`.
+Its dated census record and wanted queue live in `561-group-services-section/data/records/knowledge-census-records/corpus/`.
 The per-carrier rows are a derived payload Git ignores; the record names their count and SHA-256, so a re-derivation at the commit is checkable.
 It reads the commit, not the working tree, and counts link and citekey occurrences, so its figures differ from the survey's above, which counted distinct keys over the working tree.
 Where the two disagree, the ledger's figure is the one later waves gate on.
@@ -311,7 +311,7 @@ This is the shape that uses many agents and machines at once. The deriver (Wave 
    - outgoing links with each one resolved or unresolved;
    - citekeys with each one resolved or unresolved;
    - visibility.
-   The rows are EAVT-compatible, so Lot 6 lifts them unmodified. The dated ledger and its census land in `561-group-services-section/data/records/knowledge/`.
+   The rows are EAVT-compatible, so Lot 6 lifts them unmodified. The dated ledger and its census land in `561-group-services-section/data/records/knowledge-census-records/`.
    Gate: 100% of tracked `content/**/*.md` and `*.org` carriers have a row, and two runs over the same commit are byte-identical.
    **Landed 2026-09-30** (`corpus-census-service`).
    Rows cover every tracked `.md` and `.org` file, not only `content/`, so READMEs and package documents are subjects too.
@@ -324,7 +324,7 @@ This is the shape that uses many agents and machines at once. The deriver (Wave 
    The stated `type` values (`theorem`, `reference`, `question`, `person`, `place`, `event`) become subtypes of the directory kinds that carry them, not rival kinds.
    Gate: OWL plus SHACL generated for each schema, with no hand-written Turtle. Live carriers under no schema fall from 18,860 to under 2,700.
    **`note` landed 2026-09-30.**
-   - The canonical schema is knowledge organization's `data/records/schema/carriers/note.schema.json` (`$id` `carriers/note`).
+   - The canonical schema is knowledge organization's `schemas/carriers/note.schema.json` (`$id` `carriers/note`).
      It replaces the knowledge-system server's `vault/note`, the app-held copy the note contract compiled.
    - `json-schema-to-owl-shacl-service` now reads `$ref` as JSON Schema does: a pointer fragment reuses that subschema in place, and a reference schema resolves `$ref`s without minting a class.
      It generates `data/ontology/carriers/{ontology,shapes}.ttl`, with the term schema as the reference.

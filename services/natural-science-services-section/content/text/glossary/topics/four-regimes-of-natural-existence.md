@@ -109,7 +109,7 @@ stipulated `countableCofinality = false` flag in one hand-built
 flow.
 
 The 2026-09-04 regime-instantiation census
-(`lib/emsenn/services/561-group/services/science-services-section/services/information-science-services-section/services/math-services-section/services/obsmetrological-services-section/data/records/2026-09-04-regime-instantiation-census.json`)
+(`lib/emsenn/services/561-group/services/science-services-section/services/information-science-services-section/services/math-services-section/services/obsmetrological-services-section/data/records/census-records/2026-09-04-regime-instantiation-census.json`)
 counted every regime-bearing theorem in the library by how it reaches its
 regime conclusion. Of 199 total: 70 assume a regime as a `∀`-bound
 hypothesis (hypothesized), 27 reach a concrete hand-built

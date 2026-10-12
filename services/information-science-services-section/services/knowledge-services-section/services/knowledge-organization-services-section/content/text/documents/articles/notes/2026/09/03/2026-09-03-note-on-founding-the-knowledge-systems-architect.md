@@ -84,7 +84,7 @@ not a rival program.
 
 ## House evidence read from disk
 
-- **The relationality ontology** — `services/philosophy-services-section/services/relationality-services-section/data/records/ontology.ttl`
+- **The relationality ontology** — `services/philosophy-services-section/services/relationality-services-section/data/records/ontology-records/ontology.ttl`
   and `shapes.ttl` are hand-authored OWL/SHACL Turtle, **source-only**: 10
   `owl:Class` declarations (`grep -c owl:Class ontology.ttl` = 10), with no
   projector that derives them from a section's ruled frontmatter, and no

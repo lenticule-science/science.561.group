@@ -12,7 +12,7 @@ provenance:
     - "ni:///sha-256;KV99rE (2026-09-11 23:33)"
     - "ni:///sha-256;EJBJy1 (2026-09-11 23:29)"
     - "ni:///sha-256;CtDZ7I (2026-09-11 22:07)"
-  full-addresses: "lib/emsenn/services/561-group/services/public-services-section/services/personal-services-section/services/emsenn-services-section/data/records/leader-utterances/coverage/general-1.md"
+  full-addresses: "lib/emsenn/services/561-group/services/public-services-section/services/personal-services-section/services/emsenn-services-section/data/records/leader-utterance-records/coverage/general-1.md"
 ---
 
 # The theory

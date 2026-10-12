@@ -102,7 +102,7 @@ terms, its owning section and its consumer. If reading shows the original
 question was wrong, replace it and record the replacement and the reason. When
 the question is about evidence outside the house (a disease, a protocol, a
 statute, a material), write the source record the
-[literature-measurement schema](../../../../data/records/schema/literature-measurement.schema.json)
+[literature-measurement schema](../../../../schemas/literature-measurement.schema.json)
 describes and run the searches through the bibliography CLI, as the
 [research role reference](references/research-role.md) sets out: search the
 registers, read each source from its first-party surface, write the rows, then

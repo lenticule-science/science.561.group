@@ -19,7 +19,7 @@ keywords:
 
 # What the narcotics empires teach a territorial economy
 
-The rows are in `../../../../../../../../data/records/2026-09-05-narcotics-empire-value-chain-measurement.json` and the researcher's synthesis is beside this note; that researcher was given the question and no knowledge of the house.
+The rows are in `../../../../../../../../data/records/measurement-records/2026-09-05-narcotics-empire-value-chain-measurement.json` and the researcher's synthesis is beside this note; that researcher was given the question and no knowledge of the house.
 This note is the other half: the house's theory read against those rows, for the program carrier at `561-group-territorial-economy-services-section`.
 Every figure below is one of the rows, cited by its source title; every theory claim is cited to its carrier.
 

@@ -18,7 +18,7 @@ concept's own statement that this is the method every one of the five
 economies is studied by. The rows this note cites are projected once, ahead
 of this prose, at
 [`2026-09-05-participation-economy-resource-rows.json`](../../../../../../../../../../../../../../../../../561-group-services-section/services/561-group-operations-services-section/services/561-group-economic-operations-services-section/data/records/2026-09-05-participation-economy-resource-rows.json)
-(24 rows, each validated against the [resource-row schema](../../../../../../../../../../../../../../../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-economic-systems-engineering-services-section/data/records/schema/resource-row.schema.json)),
+(24 rows, each validated against the [resource-row schema](../../../../../../../../../../../../../../../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-economic-systems-engineering-services-section/schemas/resource-row.schema.json)),
 projected from the two measurement records the 561 Group No Buy Services
 Section's Rain Barrel already holds
 (`2026-09-05-no-buy-broad-surface-measurement.json`,

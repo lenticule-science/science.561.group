@@ -367,7 +367,7 @@ none sets `countableCofinality = false` — every named datum in the
 corpus commits to countable cofinality. Of the 42 theorems that conclude
 aperiodic, 24 are table-only, 10 hypothesized, 6 derived, 1 mixed, and 1
 hand-built (
-[2026-09-04-regime-instantiation-census.json](../../../../../../../../services/information-science-services-section/services/math-services-section/services/obsmetrological-services-section/data/records/2026-09-04-regime-instantiation-census.json)).
+[2026-09-04-regime-instantiation-census.json](../../../../../../../../services/information-science-services-section/services/math-services-section/services/obsmetrological-services-section/data/records/census-records/2026-09-04-regime-instantiation-census.json)).
 Falsifier/forced work: a fourth `ClosureRegimeData` datum with
 `countableCofinality = false`, built from real ordinal evidence rather
 than stipulated by hand.

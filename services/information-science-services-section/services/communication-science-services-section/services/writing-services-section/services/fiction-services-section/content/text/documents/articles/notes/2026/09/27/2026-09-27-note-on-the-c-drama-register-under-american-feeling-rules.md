@@ -32,7 +32,7 @@ statistics compilation).
 ## The market reading
 
 The study and its readings are
-`science-services-section/.../fiction-services-section/data/records/market-gaps/2026-09-27-cdrama-register-romance{,-readings}.json`,
+`science-services-section/.../fiction-services-section/data/records/market-gap-records/2026-09-27-cdrama-register-romance{,-readings}.json`,
 assayed by the method in the note on finding a market gap
 (`science-services-section/.../business-science-services-section/content/text/documents/articles/notes/2026/09/27/2026-09-27-note-on-finding-a-market-gap.md`).
 In a sample of nine comparable titles:

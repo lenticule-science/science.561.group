@@ -243,7 +243,7 @@ ks-04, ks-06, ks-07, ks-09, and ks-10 exist as published, tested,
 fabricated services (ks-04 also live on l-space) but are not yet metroplat
 verbs; ks-11's measurement against LangChain, LangGraph, and LangSmith's
 own documentation is the dated record
-`knowledge-organization-services-section/data/records/2026-09-04-knowledge-systems-meet-then-beat-measurement.json`
+`knowledge-organization-services-section/data/records/meet-then-beat-measurement-records/2026-09-04-knowledge-systems-meet-then-beat-measurement.json`
 (ten customer jobs: beat 5, partial 5, gap 0; the partials are the
 unserved services and the absence of a reusable latency instrument). What the next forms need is data before code: a
 converse-predicate ledger so contested cells can exist, disposition rows

@@ -63,7 +63,7 @@ The role is filled at three different depths, depending on what the task require
 
 A research question is measured before it is written. The measurement is a
 source record kept in the owning section's `data/records/`, whose `$schema` is
-`science-services-section/data/records/schema/literature-measurement.schema.json`.
+`science-services-section/schemas/literature-measurement.schema.json`.
 The registers it is measured against are data in
 `science-services-section/data/registers/` (`europepmc.json`,
 `clinicaltrials-gov.json`): each is a query and the CSL projection of its
