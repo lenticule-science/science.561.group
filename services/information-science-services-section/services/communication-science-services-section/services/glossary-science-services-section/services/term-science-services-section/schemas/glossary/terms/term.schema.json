@@ -80,9 +80,10 @@
         "id": {"type": "string", "minLength": 1},
         "domain": {"type": "string", "minLength": 1},
         "scheme": {"type": "string", "minLength": 1},
-        "status": {"type": "string", "minLength": 1}
+        "status": {"type": "string", "minLength": 1},
+        "utterances": {"type": "array", "uniqueItems": true, "items": {"type": "string", "pattern": "^ni:///sha-256;[A-Za-z0-9_-]{43}$"}, "description": "Content addresses of the Leader utterances the record was written from, as the leader-utterances records name them."}
       },
-      "description": "Custody, carrier metadata, and dates for the record, separate from its semantic assertions. date-created/date-modified/date-updated/authors/tags/id/domain/scheme/status are carrier bookkeeping keys folded here by the admission path when a carrier states them at frontmatter top level; they are never admitted as relations."
+      "description": "Custody, carrier metadata, dates, and the Leader utterances the record answers, separate from its semantic assertions. date-created/date-modified/date-updated/authors/tags/id/domain/scheme/status are carrier bookkeeping keys folded here by the admission path when a carrier states them at frontmatter top level; they are never admitted as relations."
     },
     "status-function": {
       "type": "object",
