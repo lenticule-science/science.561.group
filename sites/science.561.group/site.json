@@ -1,0 +1,35 @@
+{
+  "name": "Lenticule Science",
+  "baseIri": "https://science.561.group/",
+  "language": "en",
+  "license": "Reuse terms are stated on each publication.",
+  "description": "Researching the material and informational conditions of knowledge, agency, and organized matter—then making claims inspectable.",
+  "eyebrow": "561 Group · Research",
+  "cellLabel": "Research",
+  "menu": [
+    {
+      "href": "/",
+      "label": "Writing"
+    },
+    {
+      "href": "https://l-space.561.group/",
+      "label": "Knowledge garden"
+    },
+    {
+      "href": "https://561.group/",
+      "label": "561 Group"
+    },
+    {
+      "href": "/feed.rss.xml",
+      "label": "RSS"
+    }
+  ],
+  "home": true,
+  "archives": {
+    "enabled": true,
+    "pageSize": 12
+  },
+  "search": true,
+  "tufte": true,
+  "showRecordMetadata": true
+}
