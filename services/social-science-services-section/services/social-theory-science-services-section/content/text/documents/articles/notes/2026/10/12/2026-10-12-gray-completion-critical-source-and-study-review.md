@@ -10,7 +10,7 @@ scientific-disposition: major-revision-before-submission
 
 # The Gray Completion: evidence boundaries and an identified research program
 
-**Scope.** This is Lenticule Social Theory Science's *internal critical examination* of the working research article [The Gray Completion: Place, Time, and Language Models as State-Realizers of Governance](../07/10/2026-07-10-the-gray-completion-working-research-article.md). It is not an independent external peer review, a published scientific paper, the author's similarly titled Substack essay, or a universal research-operations procedure. The original received manuscript remains unchanged. General research execution, source custody and experimental operation should be commissioned from Coesite Research Operations; scientific inference and disciplinary adequacy remain with Lenticule.
+**Scope.** This is Lenticule Social Theory Science's *internal critical examination* of the working research article [The Gray Completion: Place, Time, and Language Models as State-Realizers of Governance](../../07/10/2026-07-10-the-gray-completion-working-research-article.md). It is not an independent external peer review, a published scientific paper, the author's similarly titled Substack essay, or a universal research-operations procedure. The original received manuscript remains unchanged. General research execution, source custody and experimental operation should be commissioned from Coesite Research Operations; scientific inference and disciplinary adequacy remain with Lenticule.
 
 ## 1. Thesis and the strongest defensible contribution
 
