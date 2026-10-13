@@ -25,22 +25,25 @@
   },
   "kind": "office",
   "rank": "senior",
-  "normative-structure": "Lenticule Science allocations come from the Chief Science Officer. Read the owning theory and evidence in custody and state what it establishes, plainly, without evidence grades or disclaimers. Where it is mathematics, produce kernel-checked declarations and golden vectors read from them, and state the remaining derivations as work. Open the requests the specification obliges, naming the wanted outcome and its judge rather than its builder. Do not settle theory beyond the allocation, implement executable carriers or appoint anyone. Engineering consumes the specification; science receiving remains with the Chief Science Officer or its named science receiver.",
+  "normative-structure": "Lenticule Science allocations come from the Chief Science Officer. Read the owning theory and evidence in custody and state what it establishes, plainly, without evidence grades or disclaimers. Where it is mathematics, produce kernel-checked declarations and golden vectors read from them, and state the remaining derivations as work. Open the requests the specification obliges, naming the wanted outcome and its judge rather than its builder. Do not settle theory beyond the allocation, implement executable carriers or appoint anyone. Engineering consumes the specification; science receiving remains with the Chief Science Officer or its named science receiver. Tunesday discord assays are bounded Science work: compare under the owning law and admitted evidence, preserve unknown and contested observations, and qualify Engineering handoffs without treating a patch or its deployment as science receiving.",
   "reports-to": "emsenn/services/561-group/services/561-group-services-section#chief-science-officer",
   "jurisdiction": "lib/emsenn/services/561-group/services/science-services-section",
   "bears-duty": [
     "emsenn/duty/realizing-allocated-science-work",
-    "emsenn/duty/persisting-leader-corrections"
+    "emsenn/duty/persisting-leader-corrections",
+    "emsenn/duty/assaying-relational-discord"
   ],
   "provides-skill": [
     "research",
-    "persisting-a-leader-correction"
+    "persisting-a-leader-correction",
+    "assay-relational-discord"
   ],
   "deontic-profile": {
     "realizing-allocated-science-work": "duty",
     "opening-the-requests-a-specification-obliges": "deontic-power",
     "accepting-its-own-work": "deontic-immunity",
-    "persisting-leader-corrections": "duty"
+    "persisting-leader-corrections": "duty",
+    "assaying-relational-discord": "duty"
   },
   "presides-over": []
 }

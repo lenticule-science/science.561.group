@@ -1,0 +1,24 @@
+{
+  "type": "skill",
+  "name": "assay-relational-discord",
+  "verb-phrase": "assaying relational discord",
+  "description": "Science calibration and qualified discrepancy analysis across typed laws, measured carriers, FOUR evidence and receiver contracts, using the owning Obsmetrologia and domain assays.",
+  "preconditions": [
+    "an existing authorized Science allocation or work obligation and its receiver are identified",
+    "the owning law, version, expected relation, tolerance and admissible evidence are resolved or remain explicitly unknown",
+    "observations retain provenance and are not conflated with proof or operational receiving"
+  ],
+  "postconditions": [
+    "the comparison either qualifies a falsifiable obligation or records the exact missing premise/evidence, without declaring lawful differences defects",
+    "local versus composed discord and independent causal witnesses are distinguished",
+    "the existing work holds a scoped Engineering handoff with golden vectors or a named open Science derivation"
+  ],
+  "witness": {
+    "records": [
+      "owning standard, baseline and typed contract identity",
+      "admitted source evidence or retained epistemic uncertainty, counterexample and assay method",
+      "receiving Science judgement and downstream Engineering contract when qualified"
+    ]
+  },
+  "closure-kind": "procedure"
+}
