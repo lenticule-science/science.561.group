@@ -69,7 +69,9 @@
       "design_source": "patterns/city-loops-pattern-capsule-development-v01.md",
       "pilot": "PLATFORM CARDIGAN",
       "first_test": "stockinette/rib and directional-rib front-band swatches; target provisional 18–22 st per 10 cm",
-      "receiving_services": "Red Cup Engineering (patterns); Coesite Operations (test knitting); Causeway Public Services (media), pending service intake"
+      "receiving_services": "Red Cup Engineering (patterns); Coesite Operations (test knitting); Causeway Public Services (media), pending service intake",
+      "first_test_source": "patterns/platform-cardigan-two-first-swatches-v01.md",
+      "first_test_status": "instructions-written-not-physically-knitted"
     }
   ],
   "known_source_defect": "Untagged warpClaim/weftClaim and assignmentOf length-based decoding erase handed crossing selection"
