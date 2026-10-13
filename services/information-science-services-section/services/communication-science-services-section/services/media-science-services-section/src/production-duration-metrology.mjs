@@ -214,3 +214,124 @@ export function measureStudioProductionDuration({
   note:'Read-only empirical statistics from external source-owned reviewed work. Nothing is generated, costed, staffed or appointed by this scientific calculation.'
  });
 }
+
+/**
+ * Measure the conditional occupation of one *observed* production resource
+ * calendar, without claiming actual worker/provider execution or inventing a
+ * second scheduler. Single-client and multi-client Coesite results use the
+ * same assay. Only original source worklot labels and measured time intervals
+ * contribute; held and already accepted work consumes no forecast capacity.
+ */
+export function measureStudioCapacityPlan({schedule,resourceCalendars,asOf}={}){
+ insist(schedule && ['FiniteCapacityMediaProductionSchedule',
+  'FiniteCapacityMediaProductionPortfolioSchedule'].includes(schedule.type) &&
+  Array.isArray(schedule.workOrders),'existing Coesite media schedule required');
+ const now=millis(asOf,'capacity observation as-of');
+ insist(millis(schedule.asOf,'original Coesite planning time')===now,
+  'capacity assay must use the exact original planning instant');
+ insist(Array.isArray(resourceCalendars)&&resourceCalendars.length>=1&&
+  resourceCalendars.length<=64,'capacity needs 1-64 observed original pool calendars');
+ const pools=new Map();
+ for(const calendar of resourceCalendars){
+  insist(row(calendar),'capacity pool must be a structured record');
+  const poolId=text(calendar.poolId,'original resource pool');
+  insist(!pools.has(poolId),'duplicate resource pool observation');
+  const capacity=calendar.concurrency;
+  insist(Number.isSafeInteger(capacity)&&capacity>=1&&capacity<=64,
+   'resource pool capacity must be a bounded positive integer');
+  const observed=millis(calendar.observedAt,'pool observation');
+  const expires=millis(calendar.expiresAt,'pool evidence expiry');
+  insist(observed<=now&&expires>now,'stale or future resource capacity evidence');
+  insist(Array.isArray(calendar.windows)&&calendar.windows.length>=1&&
+   calendar.windows.length<=500,'original capacity windows are required');
+  const windows=calendar.windows.map(w=>{
+   const start=millis(w.startAt,'observed window start');
+   const end=millis(w.endAt,'observed window end');
+   insist(start<end&&end<=expires,'resource interval exceeds observed time window');
+   return {start,end};
+  }).sort((a,b)=>a.start-b.start);
+  for(let i=1;i<windows.length;i++)
+   insist(windows[i].start>=windows[i-1].end,'overlapping resource calendar windows');
+  const remainingWindows=windows.map(w=>({
+   start:Math.max(w.start,now),end:w.end
+  })).filter(w=>w.end>w.start);
+  const availableMs=remainingWindows.reduce((sum,w)=>sum+(w.end-w.start)*capacity,0);
+  pools.set(poolId,{capacity,availableMs,windows:remainingWindows,segments:[],bookedMs:0});
+ }
+ const attributed=new Map(),seen=new Set();
+ const commissions=schedule.type==='FiniteCapacityMediaProductionPortfolioSchedule'?
+  schedule.sourceCommissions:[schedule.sourceCommission];
+ insist(Array.isArray(commissions)&&commissions.length>=1&&
+  commissions.every(x=>typeof x==='string'&&x.trim()),
+  'schedule must preserve source customer identities');
+ for(const work of schedule.workOrders){
+  insist(row(work)&&typeof work.worklotId==='string'&&!seen.has(work.worklotId),
+   'source worklots must retain unique identities');
+  seen.add(work.worklotId);
+  const source=work.origin?.commissionId??schedule.sourceCommission;
+  insist(commissions.includes(source),'worklot lacks original customer identity');
+  insist(Array.isArray(work.segments),'worklot must retain actual schedule segments');
+  if(work.state!=='CONDITIONAL_BOOKING_NOT_EXECUTION'){
+   insist(work.segments.length===0,
+    'held or already received work cannot consume conditional compute capacity');
+   continue;
+  }
+  const pool=pools.get(work.resourcePoolId),lane=work.resourceLane;
+  insist(pool&&Number.isSafeInteger(lane)&&lane>=0&&lane<pool.capacity,
+   'booked work refers to unavailable pool or resource lane');
+  insist(work.segments.length>0,'conditional booking needs bounded source intervals');
+  let duration=0,lastEnd=-Infinity;
+  for(const raw of work.segments){
+   const start=millis(raw.startAt,'scheduled resource start'),
+    end=millis(raw.endAt,'scheduled resource end');
+   insist(start>=now&&start<end&&start>=lastEnd,
+    'source work segments overlap or precede the planning observation');
+   insist(pool.windows.some(w=>start>=w.start&&end<=w.end),
+    'booked resource time is outside observed availability');
+   duration+=end-start;lastEnd=end;
+   pool.segments.push({start,end,lane,worklotId:work.worklotId});
+  }
+  insist(millis(work.startAt,'source work start')===
+   millis(work.segments[0].startAt,'first resource segment')&&
+   millis(work.finishAt,'source work finish')===lastEnd,
+   'booked work start/finish disagrees with original timed segments');
+  insist(Number.isSafeInteger(work.estimatedEffortMinutes)&&
+   duration===work.estimatedEffortMinutes*60000,
+   'booked time differs from source observed work effort');
+  pool.bookedMs+=duration;
+  attributed.set(source,(attributed.get(source)??0)+duration);
+ }
+ const findings=[...pools.entries()].sort((a,b)=>a[0].localeCompare(b[0]))
+  .map(([poolId,pool])=>{
+   const segments=[...pool.segments].sort((a,b)=>a.lane-b.lane||a.start-b.start);
+   for(let i=1;i<segments.length;i++)
+    if(segments[i].lane===segments[i-1].lane)
+     insist(segments[i].start>=segments[i-1].end,
+      'multiple original commissions double-book one physical resource lane');
+   insist(pool.bookedMs<=pool.availableMs,'conditional bookings exceed available capacity');
+   return Object.freeze({poolId,capacity:pool.capacity,
+    observedAvailableLaneMinutes:round(pool.availableMs/60000),
+    conditionallyBookedLaneMinutes:round(pool.bookedMs/60000),
+    conditionallyUnallocatedLaneMinutes:round((pool.availableMs-pool.bookedMs)/60000),
+    conditionalOccupancyFraction:pool.availableMs>0?
+     round(pool.bookedMs/pool.availableMs):null});
+  });
+ const totalAvailable=findings.reduce((sum,p)=>sum+p.observedAvailableLaneMinutes,0);
+ const totalBooked=findings.reduce((sum,p)=>sum+p.conditionallyBookedLaneMinutes,0);
+ const body={
+  type:'StudioCapacityPlanningMetrology',version:1,
+  asOf:new Date(now).toISOString(),sourceSchedule:schedule.id,
+  pools:Object.freeze(findings),
+  byOriginalCustomer:Object.freeze([...attributed.entries()]
+   .sort((a,b)=>a[0].localeCompare(b[0]))
+   .map(([commissionId,ms])=>Object.freeze({
+    commissionId,conditionallyBookedLaneMinutes:round(ms/60000)
+   }))),
+  totalObservedAvailableLaneMinutes:round(totalAvailable),
+  totalConditionallyBookedLaneMinutes:round(totalBooked),
+  conditionalOccupancyFraction:totalAvailable>0?
+   round(totalBooked/totalAvailable):null,
+  limitation:'A conditional booking measures forecast occupation of independently claimed provider/crew windows, NOT actual hardware utilization, spent cloud credits, verified resource reservations, executed work, editorial acceptance, audience effects or source consent. Unallocated forecast time is not necessarily usable by an unqualified provider.'
+ };
+ return Object.freeze({id:digest(body),...body});
+}

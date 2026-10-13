@@ -5,7 +5,7 @@ import {mkdtempSync,writeFileSync,rmSync} from 'node:fs';
 import {join} from 'node:path';
 import {tmpdir} from 'node:os';
 import {measureProductionFile} from '../apps/measure-production-duration.mjs';
-import {measureStudioProductionDuration} from '../src/production-duration-metrology.mjs';
+import {measureStudioProductionDuration,measureStudioCapacityPlan} from '../src/production-duration-metrology.mjs';
 const source='ni:///sha-256;'+'A'.repeat(43);
 const asOf='2026-10-13T17:00:00Z';
 const time=(minutes)=>new Date(Date.parse('2026-10-13T10:00:00Z')+minutes*60000).toISOString();
@@ -152,6 +152,78 @@ test('real multiple-shift labor is counted once; total observed effort and work 
  assert.equal(evidence.providerOperationEvidence[0].observedActiveMinutes,165);
  assert.equal(evidence.providerOperationEvidence[0].conditionalOnAcceptedP75Minutes,165);
  assert.equal(evidence.providerOperationEvidence[0].planningMinutesP75,null);
+});
+
+test('the same science instrument assays finite shared media capacity for independent customer works without claiming GPU execution',async()=>{
+ const sourceA='ni:///sha-256;'+'X'.repeat(43),sourceB='ni:///sha-256;'+'Y'.repeat(43);
+ const first='2026-10-13T12:00:00Z',
+  after=(minutes)=>new Date(Date.parse(first)+minutes*60000).toISOString();
+ const book=(id,commissionId,lane,start,minutes)=>({
+  worklotId:id,origin:{commissionId},
+  state:'CONDITIONAL_BOOKING_NOT_EXECUTION',
+  resourcePoolId:'actual-media-crew',resourceLane:lane,estimatedEffortMinutes:minutes,
+  startAt:after(start),finishAt:after(start+minutes),
+  segments:[{startAt:after(start),endAt:after(start+minutes)}]
+ });
+ const sourceSchedule={
+  type:'FiniteCapacityMediaProductionPortfolioSchedule',
+  id:'ni:///sha-256;'+'Z'.repeat(43),asOf:first,
+  sourceCommission:null,sourceCommissions:[sourceA,sourceB],
+  workOrders:[
+   book('fiction-original-treatment',sourceA,0,0,45),
+   book('licensed-cinematic-edit',sourceB,1,15,60),
+   {worklotId:'native-source-held',origin:{commissionId:sourceA},
+    state:'HELD_SOURCE_CAPACITY_OR_QUALIFICATION',segments:[]},
+   {worklotId:'licensed-output-received',origin:{commissionId:sourceB},
+    state:'ACCEPTED_RECEIPT_CLAIM',segments:[]}
+  ]
+ };
+ const resourceCalendars=[{
+  poolId:'actual-media-crew',concurrency:2,observedAt:after(-120),
+  expiresAt:after(360),windows:[{startAt:first,endAt:after(180)}]
+ }];
+ const measure=(schedule=sourceSchedule,resource=resourceCalendars)=>
+  measureStudioCapacityPlan({schedule,resourceCalendars:resource,asOf:first});
+ const result=measure();
+ assert.equal(result.type,'StudioCapacityPlanningMetrology');
+ assert.equal(result.totalObservedAvailableLaneMinutes,360);
+ assert.equal(result.totalConditionallyBookedLaneMinutes,105);
+ assert.equal(result.conditionalOccupancyFraction,Math.round((105/360)*10000)/10000);
+ assert.equal(result.pools[0].conditionallyUnallocatedLaneMinutes,255);
+ assert.deepEqual(result.byOriginalCustomer.map(x=>x.conditionallyBookedLaneMinutes),[45,60]);
+ assert.equal(measure().id,result.id,'original source and calendar projections are immutable observations');
+ assert.match(result.limitation,/NOT actual hardware utilization/u);
+ const conflict={...sourceSchedule,workOrders:[
+  sourceSchedule.workOrders[0],
+  book('cross-customer-lane-collision',sourceB,0,15,60)
+ ]};
+ assert.throws(()=>measure(conflict),/double-book one physical resource lane/u);
+ const unavailable={...sourceSchedule,workOrders:[
+  sourceSchedule.workOrders[0],book('outside-window',sourceB,1,181,60)
+ ]};
+ assert.throws(()=>measure(unavailable),/outside observed availability/u);
+ const falselyBooked={...sourceSchedule,workOrders:[
+  {...sourceSchedule.workOrders[0],
+   state:'HELD_SOURCE_CAPACITY_OR_QUALIFICATION'},
+  sourceSchedule.workOrders[1]
+ ]};
+ assert.throws(()=>measure(falselyBooked),/cannot consume conditional compute/u);
+ const stale=resourceCalendars.map(pool=>({...pool,expiresAt:after(-1)}));
+ assert.throws(()=>measure(sourceSchedule,stale),/stale or future resource capacity/u);
+ const root=mkdtempSync(join(tmpdir(),'microdrama-scientific-capacity-'));
+ try{
+  const schedulePath=join(root,'source-schedule.json'),
+   calendarPath=join(root,'source-resource-claim.json');
+  writeFileSync(schedulePath,JSON.stringify({schedule:sourceSchedule}));
+  writeFileSync(calendarPath,JSON.stringify({resourceCalendars}));
+  const command=['capacity',schedulePath,calendarPath,first];
+  const received=await measureProductionFile(command);
+  assert.deepEqual(received,result);
+  const fromCli=JSON.parse(execFileSync(process.execPath,[
+   new URL('../apps/measure-production-duration.mjs',import.meta.url).pathname,...command
+  ],{encoding:'utf8',timeout:15000}));
+  assert.deepEqual(fromCli,result);
+ }finally{rmSync(root,{recursive:true,force:true});}
 });
 
 test('scientific office CLI reads real-shaped external work events and returns source-bound metrology ready for separate operations',async()=>{

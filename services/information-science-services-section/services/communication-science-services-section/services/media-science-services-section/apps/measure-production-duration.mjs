@@ -4,8 +4,22 @@
  * record, model invocation, or financial settlement is created here.
  */
 import {readFile} from 'node:fs/promises';
-import {measureStudioProductionDuration} from '../src/production-duration-metrology.mjs';
+import {measureStudioProductionDuration,measureStudioCapacityPlan} from '../src/production-duration-metrology.mjs';
 export async function measureProductionFile(args){
+ if(args[0]==='capacity'){
+  const [,schedulePath,calendarsPath,asOf,...extra]=args;
+  if(!schedulePath||!calendarsPath||!asOf||extra.length)
+   throw new TypeError('Usage: measure-production-duration.mjs capacity SOURCE-SCHEDULE.json ORIGINAL-CALENDARS.json AS_OF');
+  const [scheduleBytes,calendarBytes]=await Promise.all([
+   readFile(schedulePath,'utf8'),readFile(calendarsPath,'utf8')]);
+  if(scheduleBytes.length>5_000_000||calendarBytes.length>5_000_000)
+   throw new TypeError('original capacity input exceeds 5 MB');
+  const schedulePacket=JSON.parse(scheduleBytes),calendarPacket=JSON.parse(calendarBytes);
+  return measureStudioCapacityPlan({
+   schedule:schedulePacket.schedule??schedulePacket,
+   resourceCalendars:calendarPacket.resourceCalendars??calendarPacket,
+   asOf});
+ }
  const [path,asOf,minSamples,freshDays,...extra]=args;
  if(!path||!asOf||minSamples===undefined||freshDays===undefined||extra.length)
   throw new TypeError('Usage: measure-production-duration.mjs ORIGINAL-ATTEMPTS.json AS_OF MIN_ACCEPTED_CASES MAX_AGE_DAYS');
