@@ -58,6 +58,18 @@
       "title": "Kinematic Knit",
       "category": "research-hypothesis",
       "status": "proposal-only"
+    },
+    {
+      "id": "city-loops-2021-2024",
+      "title": "CITY LOOPS — early-2020s urban Chinese fashion into original knitting patterns and public media",
+      "category": "knitwear science / design research for downstream media",
+      "status": "research-and-design-proposed-patterns-not-charted",
+      "physical_tested": false,
+      "canonical_source": "research/2026-10-12-city-loops-urban-china-knitwear-research.md",
+      "design_source": "patterns/city-loops-pattern-capsule-development-v01.md",
+      "pilot": "PLATFORM CARDIGAN",
+      "first_test": "stockinette/rib and directional-rib front-band swatches; target provisional 18–22 st per 10 cm",
+      "receiving_services": "Red Cup Engineering (patterns); Coesite Operations (test knitting); Causeway Public Services (media), pending service intake"
     }
   ],
   "known_source_defect": "Untagged warpClaim/weftClaim and assignmentOf length-based decoding erase handed crossing selection"
