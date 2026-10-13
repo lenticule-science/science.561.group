@@ -42,6 +42,10 @@ Cross-disciplinary material gets one owner according to its main
 research question and may link to other fields. A cross-cutting topic is not a
 reason to invent another top-level bucket.
 
+## Current organization-science research
+
+- [The agent as micro-enterprise: RenDanHeYi, Huidu Guanli, and Trusted Personal Executive Assistance on iLands](https://github.com/lenticule-science/science-services-section/blob/main/services/social-science-services-section/services/economics-and-business-science-services-section/services/business-science-services-section/content/text/documents/articles/notes/2026/10/13/2026-10-13-agent-as-micro-enterprise-rendanheyi-huidu-ilands-tpea.md) (2026-10-13) is a **working, unreviewed Business Science research synthesis**. It extends the existing 561 Group enterprise/FOAM and Semioverse vocabulary; defines a bounded T-PEA service mandate and counterparty acceptance; and proposes falsifiable comparisons against reactive and centralized assistants. It does **not** report a completed field experiment or deployed service. Its source of truth is the Business Science document above, not a copied paper.
+
 ## Humanities boundary
 
 FORD separates humanities and the arts (class 6) from social sciences (class
