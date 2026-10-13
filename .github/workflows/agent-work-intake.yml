@@ -9,7 +9,7 @@ permissions:
   issues: write
   pull-requests: write
 concurrency:
-  group: agent-work-${{ github.event.pull_request.head.ref || github.ref_name }}
+  group: agent-work-${{ github.event_name }}-${{ github.event.pull_request.head.ref || github.ref_name }}
   cancel-in-progress: false
 jobs:
   receive:
