@@ -12,6 +12,8 @@ project-id: city-loops-2021-2024
 
 **This is not a working pattern.** No cast-on counts, shaping, yarn yardage, sizing or chart below is certified. Do not market or hand it to knitters as finished directions. Finish each design as an actual knit and tech-edited, test-knit pattern.
 
+**First executable experiments (not yet test-knit):** [two detailed PLATFORM swatches](platform-cardigan-two-first-swatches-v01.md) for picked-up 2×2 front-band stability and optical stepping-rib legibility. They give actual stitches and rows but no verified garment construction.
+
 ## A. PLATFORM CARDIGAN — the pilot
 
 **What a knitter sees:** a genuinely good-looking oversized cardigan: relaxed square body, prominent structured front bands, weighty rib cuffs that hold the sleeves above the wrist, a clear drop shoulder and subtly different-length front/back hems. Wear it with a white shirt, denim or wide-leg black trousers. It should look deliberate hanging open. No fake calligraphy, logos or token motifs.
