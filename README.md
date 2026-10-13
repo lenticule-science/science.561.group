@@ -26,6 +26,10 @@ Lenticule Science conducts research for the 561 Group. Red Cup Engineering turns
 
 [`sites/l-space.561.group`](sites/l-space.561.group/README.md) is the L-Space site over this section's files.
 
+## Current cross-field scientific receiving
+
+The [2026-10-13 relational-space frontiers program](research/group-demand/relational-space-frontiers-20261013.md) records six **selected, falsifiable** research directions—counterfactual machinery, navigable proofs, energy-coupled organic memory, least-cost future evidence, prevention economics, and AI-native sports. Each question has an existing disciplinary owner and a specific test or falsifier; this intake creates no new office, simulated results, or rival world-model ecology. Relationality and the rendanheyi board ecology already cover possible worlds, artificial speciation and computational metabolism.
+
 ## Writing standard
 
 Lenticule Science uses Plain Technical General American English (PTGAE) for technical prose. State the proposition first. Encode uncertainty as a precise claim status when it changes meaning, action, safety, or evidence.

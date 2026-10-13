@@ -28,6 +28,14 @@ separate Lean 4 project under the math services section), with
 `@lenticule-science/metrologic` (JS) and `pymetrologic` (Python) as
 distinct shadow implementations, not this section itself.
 
+## 2026-10-13 scope clarification: mathematics and possible worlds
+
+The Leader states the research thesis in its stronger form: **all mathematics is a degenerate shadow of the relationality theory developed through Obsmetrologia, and all possible universes are situated within its relational space**. The aim is not to manufacture autonomous external universes and bolt a mathematical substrate under them. Mathematical theories, model worlds, and inhabited computational ecologies are studied as constructions, restrictions, projections, or articulations of prior relationality.
+
+This is the **program's asserted scope and direction**, not a blanket certification that the corresponding formal theorems have already been checked. Specific instances require definitions and independently verified preservation, embedding, degeneration or counterexample claims in the actual formal program. The existing rendanheyi board ecology already houses artificial-world experiments, cognitive speciation and computational-metabolism institutional phenomena; do not clone their governance or technical stacks into separate research institutes.
+
+The 2026-10-13 frontier [scientific receiving program](../../../../research/group-demand/relational-space-frontiers-20261013.md) distinguishes six newly selected domain questions from those already-established ecological structures. Research claims remain owned by their proper fields, with this section owning the relationality premise and its formal obligations.
+
 The section's `content/text/` holds `documents/` (surveys, dated notes, teaching
 articles), `glossary/` (concepts, terms, and topic entries), and `triage/` — an
 unprocessed backlog, not curated content. Its `lib/legacy/` holds dated historical
