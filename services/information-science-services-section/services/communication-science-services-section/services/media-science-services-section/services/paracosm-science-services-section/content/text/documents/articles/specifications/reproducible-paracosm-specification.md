@@ -271,6 +271,112 @@ Thus \(\mathcal{C}_{\text{RPS}}\) constitutes the minimal constructive configura
 -   ****Version Control:**** Changes to $S$, $N$, or $\Box$ increment major version.
 
 
+## 8.1 Applied realization boundary: one world, several media
+
+**Interpretation as of 2026-10-12; not a new theorem.** A coherent
+paracosm is a source resource. A video, book, game state, web page, or
+fabrication specification is a *consumer-specific observation* of that source,
+not an independently maintained second canon. A generative asset need not be
+bit-identical across reruns for its source interpretation to be reproducible.
+
+Let \(P\) be an admitted paracosm, represented by source-indexed typed objects
+with evidence; let \(c\) be a receiving consumer. The candidate transformation
+
+\[
+  F_c : (P,\mathrm{source\ revision},\mathrm{constraints})
+    \longrightarrow \mathrm{ArtifactSpecification}_c
+\]
+
+is a **source-to-specification projection**, not an action that authorizes
+a model inference, prints an object, changes a live multiplayer world, or
+publishes anything. A receiver may realize \(F_c(P)\) with an authorized
+provider, retain the exact output and its source/rights/compute provenance,
+and separately accept or refuse that output. A consumer's implementation
+does not get to modify \(P\) while trying to produce its artifact.
+
+In the current 561 Group implementation, the relevant already owned
+technology and responsibilities are:
+
+- **The paracosm content schema v0.2** (the adjacent specification)
+  names world `being`, `place`, `thing`, `dynamic`, `novum`, `modality`, `work`,
+  `text`, `faction`, and other typed source entries.
+- **Flatfile Resource Graph** projects Markdown frontmatter and separate
+  body-content NI identities into attributable resource cells; it retains
+  source paths as *coordinates*, not substitute internal content identities.
+  Source:
+  [Computer Data / Flatfile provider](https://github.com/red-cup-engineering/computer-data-engineering-services-section/blob/main/services/computer-content-engineering-services-section/services/flatfile-resource-graph-service/src/adapters/markdown-directory.mjs).
+- **SignCell and SignCraft** (via FeltOS world history) retain claims,
+  evidence and their changes without flattening contradictory testimony
+  into a single unproven truth.
+  Source:
+  [FeltOS World](https://github.com/red-cup-engineering/feltos/blob/main/src/world.mjs).
+- **FeltOS paracosm** loads canonical source, checks its currently
+  implemented finite RPS conditions, derives a StoryBible *view* with
+  exact source/body identities, and reports source-change candidates.
+  Source:
+  [FeltOS Paracosm](https://github.com/red-cup-engineering/feltos/blob/main/src/paracosm.mjs).
+- **Consuming services** project an accepted work into their own artifact
+  specifications and receiving mechanisms, for example Causeway Public
+  Fiction's general narrative compiler and existing media demand contracts.
+  Red Cup's artifact-fabrication specification and FeltOS game capabilities
+  remain their own accountable implementations. New format demands shall
+  not fork either capability.
+
+### Conditions required before cross-media propagation can claim correctness
+
+1. **Source completeness.** Source identity must distinguish a change to
+   narrative text/body from unchanged frontmatter. Every referenced
+   character, time, place, modality or original dialogue source is admitted,
+   or the projection reports precisely what remains unknown. Stale NI
+   identity or source revision is a hold, not an implicit equality.
+2. **Coherence and descent.** The changes' local entries must assemble
+   according to \(J\) and the model's declared canon. Intentional
+   contradictory *testimony* remains a typed pair of witnesses;
+   contradictory *functional values* and accidental broken references
+   are checked separately.
+3. **Normalization and meaning.** The relevant rewriting procedure
+   \(N\) must terminate and give stable meanings for a receiver's declared
+   observations. Determinism of the **build specification** is testable;
+   bitwise equality of separately sampled diffusion/video outputs is not
+   promised without an actual deterministic renderer.
+4. **Dependency soundness.** For a change \(\alpha:P\to P'\), an alleged
+   unaffected consumer must have a complete, independently assayed
+   dependency cover. No observed difference in a subset of files
+   establishes equivalence of the entire world. When the cover is missing,
+   conservatively re-evaluate the whole canon.
+5. **Modal and institutional invariance.** A multimedia consumer must
+   justify which world observations survive its projection and which
+   differences are intentionally unobservable. The six RPS conditions
+   are *proof obligations*; a finite implementation test, a world linter's
+   success, or an accepted StoryBible does not itself prove the
+   categorical theorem.
+6. **Resource conservation and receiving.** A source change produces an
+   impact candidate. A separate consuming authority decides on a demand,
+   provider award, budget, asset acceptance, and public/runtime delivery.
+   Every stage binds back to a canonical source revision, derivation and
+   actual byte receipt. This prevents source editing from becoming an
+   unreviewed public-form-to-code or credit-spending path.
+
+**Naturality test to develop.** For a verified source morphism
+\(\alpha:P\to P'\), and a consumer-specific transformation \(F_c\),
+derive the appropriate source-to-specification morphism
+\(F_c(\alpha)\). Test whether applying it to a previously derived
+specification agrees, up to that consumer's declared observational
+equivalence, with deriving \(F_c(P')\) from scratch. Do not call this square
+commutative before those mappings and tests exist. Generated output custody
+and consent are separate from this mathematical property.
+
+**Existing implementation evidence:** [FeltOS pure paracosm delta
+tests](https://github.com/red-cup-engineering/feltos/blob/main/test/paracosm-impact.test.mjs)
+exercise bounded source changes, holds, and producer-independent consumer
+impact. They do **not** yet verify a full end-to-end realization of
+\(J,N,O,\Box\), nor deployment of a video, a persistent game world, or a
+fabricated object. The next research/engineering obligation is to exercise
+one changed typed paracosm with independently accepted video and game
+projections, and test observation equivalence and dependency coverage,
+before adding other output kinds.
+
+
 # 9. Conclusion
 
 The RPS v0.1 standard translates the categorical sufficiency of the **Theorem of Reproducible Paracosmic Modal Models** into a constructive schema.  
