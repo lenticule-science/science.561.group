@@ -163,13 +163,18 @@ export function measureStudioProductionDuration({
   const freshnessMs=maxAgeDays*86400000;
   const fresh=group.filter(x=>x.lastObservedAt+freshnessMs>now);
   const freshAccepted=fresh.filter(x=>x.status==='accepted');
+  const freshUnresolved=fresh.filter(x=>x.status==='pending');
+  const expiredUnresolved=unresolved.length-freshUnresolved.length;
   const expiredCases=group.length-fresh.length;
   const completed=freshAccepted.map(x=>Math.ceil(x.totalActiveMs/60000));
   const lastObserved=Math.max(...group.map(x=>x.lastObservedAt));
   const expiry=lastObserved+maxAgeDays*86400000;
   const current=lastObserved<=now&&expiry>now;
   const enough=freshAccepted.length>=minAcceptedSamples;
-  const uncontested=unresolved.length===0;
+  // Unresolved current work censors a current provider estimate. Historical
+  // unresolved cases remain explicit, but cannot impose a permanent veto on
+  // a new independently reviewed cohort after the stated evidence horizon.
+  const uncontested=freshUnresolved.length===0;
   const p50=quantile(completed,.5),p75=quantile(completed,.75),
    p90=quantile(completed,.9);
   const dispersion=completed.length?median(completed.map(x=>Math.abs(x-median(completed)))):null;
@@ -187,6 +192,8 @@ export function measureStudioProductionDuration({
    expiredHistoricalWorklots:expiredCases,
    rejectedWithoutAcceptance:rejected.length,
    unresolvedWorklots:unresolved.length,
+   freshUnresolvedWorklots:freshUnresolved.length,
+   expiredUnresolvedWorklots:expiredUnresolved,
    observedWorklots:group.length,
    observedAttempts:group.reduce((n,x)=>n+x.attempts,0),
    rejectedAttempts:group.reduce((n,x)=>n+x.rejectedAttempts,0),
@@ -201,7 +208,7 @@ export function measureStudioProductionDuration({
     !enough?'INSUFFICIENT_ACCEPTED_SOURCE_EVIDENCE':
     !uncontested?'CENSORED_UNREVIEWED_WORK_REQUIRES_RECEIVING':
     'CONDITIONAL_EMPIRICAL_DURATION_READY_FOR_SCHEDULING',
-   limitation:'Observed effort/approval per original source worklot, stratified by actual provider and operation. Quantiles condition on independent accepted outcomes; censored and rejected work remain separately visible. Sample counts are not iid-model success probabilities, warranties, supplier availability, source rights, contractor acceptance or customer-paid costs.'
+   limitation:'Observed effort/approval per original source worklot, stratified by actual provider and operation. Quantiles condition on fresh independent accepted outcomes; fresh unresolved work blocks conditional planning, whereas expired unresolved cases stay reported without a permanent embargo. Censored and rejected work remain separately visible. Sample counts are not iid-model success probabilities, warranties, supplier availability, source rights, contractor acceptance or customer-paid costs.'
   };
   results.push(Object.freeze({id:digest(body),...body}));
  }

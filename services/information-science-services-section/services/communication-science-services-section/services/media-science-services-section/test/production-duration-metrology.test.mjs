@@ -76,6 +76,32 @@ test('a failed unaccepted production and a pending provider operation remain vis
   'descriptive accepted-only estimate is retained separately from blocked planning use');
  assert.equal(row.observedAcceptanceFraction,Math.round((4/6)*10000)/10000);
 });
+test('historical unresolved video attempts remain visible without permanently vetoing fresh independently reviewed work',()=>{
+ const old=attempt({worklotId:'historical-unreviewed-film',
+  attemptId:'historical-pending',outcome:'pending',minutes:22});
+ old.sessions=[{startedAt:'2026-09-01T10:00:00Z',endedAt:'2026-09-01T10:22:00Z'}];
+ old.observedAt='2026-09-01T10:30:00Z';
+ const projection=measure([...sample(),old],{maxAgeDays:14});
+ const row=projection.providerOperationEvidence[0];
+ assert.equal(row.unresolvedWorklots,1);
+ assert.equal(row.freshUnresolvedWorklots,0);
+ assert.equal(row.expiredUnresolvedWorklots,1);
+ assert.equal(row.expiredHistoricalWorklots,1);
+ assert.equal(row.freshAcceptedWorklots,4);
+ assert.equal(row.status,'CONDITIONAL_EMPIRICAL_DURATION_READY_FOR_SCHEDULING');
+ assert.equal(row.planningMinutesP75,100);
+ assert.equal(row.observedWorklots,5);
+ const current=attempt({worklotId:'current-unreviewed-film',
+  attemptId:'current-pending',outcome:'pending',minutes:18});
+ const blocked=measure([...sample(),old,current],{maxAgeDays:14})
+  .providerOperationEvidence[0];
+ assert.equal(blocked.unresolvedWorklots,2);
+ assert.equal(blocked.freshUnresolvedWorklots,1);
+ assert.equal(blocked.expiredUnresolvedWorklots,1);
+ assert.equal(blocked.status,'CENSORED_UNREVIEWED_WORK_REQUIRES_RECEIVING');
+ assert.equal(blocked.planningMinutesP75,null);
+});
+
 test('report separates suppliers and film functions rather than pooling incompatible work types',()=>{
  const other=[...sample(),
   attempt({worklotId:'edit-1',attemptId:'editor-work',
