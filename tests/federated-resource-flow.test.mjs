@@ -68,7 +68,7 @@ test("thousands of bounded synthetic admissions, cancellations and transfers con
       completion.push(d); withdrawal.push(x); send.push(f);
     }
     s=advance(s,{arrival,completion,withdrawal,send,receive});
-    assert.ok(conserved(s), \`conservation failed at step \${t}\`);
+    assert.ok(conserved(s), `conservation failed at step ${t}`);
   }
   assert.ok(s.admitted>0n);
   assert.ok(s.completed>0n);
