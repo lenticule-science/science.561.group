@@ -188,6 +188,11 @@ export function lSpaceMetroplat({config, admission, configuration = {}, archive:
         }
         const name=url.searchParams.get('name');
         if (name) {
+          // A bounded lexical lookup is not a place to parse user HTML or
+          // arbitrarily large full-text expressions. Preserve prior source links.
+          if (name.length > 256 || /[<>\\0]/u.test(name)) {
+            return {...page('<p role="alert">This is not an admissible term name.</p>'),status:400};
+          }
           const dossier=await call('vault_topic',{name,limit:25});
           return page(renderSourceTermDossier(dossier));
         }
