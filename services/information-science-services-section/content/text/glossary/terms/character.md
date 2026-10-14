@@ -1,6 +1,6 @@
 ---
 id: character
-description: "A Character is a pair (χ, F_χ) — an internal nuclear endomorphism χ : H → H in the relational universe R distinct from the normative nuclei σ and Δ, and the fixed sub-Heyting-algebra F_χ = Fix(χ) ⊆ H it determines — such that F_χ is the agent's characteristic behavioral space: the sublattice of propositions the agent characteristically endorses, produces, and reasons within. The defining structure: character is a third nucleus — not the institutional saturation nucleus σ nor the transfer nucleus Δ, but the agent-side dispositional nucleus that shapes how this agent processes the fiber independently of what the institution has settled."
+description: "Historical research model of a Character as a nucleus χ on a specified Heyting/frame fiber H, with fixed-point locale Fix(χ). This is a conditional mathematical interpretation of disposition, not the authoritative organizational definition of a named agent or a proof that actual agents carry such nuclei. Fixed points inherit meets; joins generally require nucleus closure. Every nucleus fixes top, so any finite family of such nuclei shares top."
 date-created: 2026-03-20
 date-modified: 2026-03-20
 params:
@@ -18,6 +18,8 @@ ast:
 
 # Character
 
+**Scientific standing (requalified 2026-10-14):** This March 20 source proposes an **idealized nucleus-based model of character**, conditional on a declared common Heyting algebra/frame \(H\), actual meet-preserving nuclei \(\chi,\sigma,\Delta\), and compatible restriction maps. A real 561 Group `character`, `office`, `incumbent` or `duty` is an institutional typed resource owned by its actual organization; no structural metaphor, behavioral profile or frontmatter declaration grants incumbency or authority. A nucleus theorem proved below is valid under its algebraic assumptions, but there is **no theorem here** deriving a unique \(\chi\) for a human or agent, nor a verified causal interpretation of their messages. See the [L-Space semantic admission and agency requirements](https://github.com/lenticule-science/linguistics-services-section/blob/main/specifications/l-space-semantic-architecture.md).
+
 ## Formal definition
 
 A **Character** is a pair $\mathcal{X} = (\chi, F_\chi)$:
@@ -34,7 +36,7 @@ where:
 
 2. **Distinctness**: $\chi \neq \sigma$ and $\chi \neq \Delta$. Character is not normative saturation and not transfer-fixedness. $\sigma$ and $\Delta$ are determined by the relational universe's axiomatic structure — they are what the normative system does to propositions. $\chi$ is what THIS agent characteristically does — an additional nucleus structure on top of, or alongside, the normative nuclear pair.
 
-3. **Non-degeneracy**: $F_\chi \subsetneq H$ (character actually constrains — an agent with $F_\chi = H$ has no character, responds to everything as written) and $F_\chi \neq \emptyset$ (character has fixed points — an agent with $F_\chi = \emptyset$ endorses nothing and is incoherent).
+3. **Proposed expressive non-degeneracy**: the nucleus does not act as identity on all of \(H\) (\(F_\chi\subsetneq H\)), **and** its fixed points contain an element other than \(\top\) if this model must represent nontrivial character content. Mere nonemptiness cannot be an independent axiom: every inflationary map on a bounded poset fixes \(\top\). The one-point fixed space \(\{\top\}\) is algebraically legitimate but semantically uninformative without further interpretation.
 
 4. **Internal naturality**: $\chi : H \to H$ is a morphism in $R$ — it commutes with the sheaf-theoretic structure: for all $t \leq t'$, $\rho_{t'|t} \circ \chi_{t'} = \chi_t \circ \rho_{t'|t}$. A character that behaved differently under restriction would be a character that changes with changing context — a behavioral trait that shifts with the wind, not a stable disposition.
 
@@ -49,7 +51,7 @@ The nucleus structure captures this precisely:
 
 The behavioral space $F_\chi = \mathrm{Fix}(\chi)$ is the set of propositions the character fully endorses: $a \in F_\chi$ iff $\chi(a) = a$, meaning the character adds nothing to $a$ — $a$ is already fully in the character's style. Acting in character means producing elements of $F_\chi$. A response that falls outside $F_\chi$ is not fully in character: the character nucleus would have amplified it further toward $F_\chi$.
 
-## Character vs. the normative nuclei
+**A nucleus-fixed carrier uses induced, not necessarily inherited, joins.** For \(a,b\in F_\chi\), the fixed-point join is \(a\vee_\chi b:=\chi(a\vee_H b)\); \(a\vee_H b\) need not itself be fixed. Existing references here to a “sub-Heyting algebra” or “sublattice” must be read as the **induced fixed-point Heyting/frame structure**, not an assertion that every operation is inherited unchanged from \(H\). Finite meets are inherited because a nucleus preserves finite meets.\n\n## Character vs. the normative nuclei
 
 The nucleus monoid of $H$ contains $\sigma$, $\Delta$, and all other nuclear endomorphisms. The character $\chi$ lives in the same monoid. The differences:
 
@@ -59,13 +61,13 @@ The nucleus monoid of $H$ contains $\sigma$, $\Delta$, and all other nuclear end
 | $\Delta$ (transfer) | The history structure | Forward — what is extension-stable | What persists faithfully through time |
 | $\chi$ (character) | The agent's disposition | Agent-side — what this agent characteristically produces | What this agent endorses and acts within |
 
-$\sigma$ and $\Delta$ are determined by the relational universe's axioms — they are not a choice but a structural given of $(R, H, \sigma, \Delta, H^*)$. $\chi$ is a choice: the specific additional nucleus introduced when a character or persona is specified. A bare entity in the relational universe has $\sigma$ and $\Delta$ acting on its fiber; an entity with character has $\chi$ as well.
+$\sigma$ and $\Delta$ are postulated by this relational-universe model — their actual existence and meaning must be established in the selected carrier of $(R, H, \sigma, \Delta, H^*)$. $\chi$ is a choice: the specific additional nucleus introduced when a character or persona is specified. A bare entity in the relational universe has $\sigma$ and $\Delta$ acting on its fiber; an entity with character has $\chi$ as well.
 
 **Interaction with $H^*$**: the behavioral space $F_\chi$ is a sub-Heyting-algebra of $H_t$ but does not generally equal $H^*_t$. Three distinct cases:
 
 - $F_\chi \subseteq H^*_t$: the character only endorses propositions that are already normatively settled. A highly conformist disposition — the character produces only what the institution recognizes.
-- $F_\chi \cap H^*_t = \emptyset$: the character endorses nothing that is normatively settled. A fully countercultural disposition — everything the character endorses is outside the settled canon. (Rare; requires a very specific nucleus.)
-- $F_\chi \cap H^*_t \neq \emptyset$ and $F_\chi \not\subseteq H^*_t$: the normal case — some of what the character endorses is settled, some is not yet. The character has its own behavioral space that partially overlaps the settled propositions and partially ventures beyond them.
+- \(F_\chi\cap H_t^*=\{\top\}\) and \(F_\chi\not\subseteq H_t^*\): **no non-top common fixed point**, even though the three nuclei still share top. This is a candidate model of nontrivial institutional/behavioral incompatibility, not an empty intersection.
+- \(F_\chi\not\subseteq H_t^*\), with some \(a\neq\top\) fixed by \(\chi,\sigma,\Delta\): **nontrivial partial overlap**, alongside some character-fixed elements not shared by the normative nuclei. The actual occurrence of such a case requires the specific model.
 
 ## Character vs. role
 
@@ -113,7 +115,7 @@ An agent without character produces outputs distributed over all of $H_t$. An ag
 
 **Remark (Character vs. normative nuclei).** The nuclei $\sigma_t$ and $\Delta_t$ are determined by the sheaf structure of the relational universe — they are not a choice, they are structural invariants of $H_t$. The character nucleus $\chi_t$ is additional: it is introduced when a specific agent is specified. No act at $t$ changes $\sigma_t$ or $\Delta_t$; these are fixed by the sheaf. The character $\chi_t$ characterizes what this agent does with the fiber, on top of the institutional nuclear structure.
 
-**Non-derivability note.** Whether $F_\chi \cap H^*_t$ is non-empty — whether an agent's character is compatible with the normative system's settled propositions — is not derivable from the nuclear axioms. It requires that $\chi_t$, $\sigma_t$, and $\Delta_t$ have at least one common fixed point. The axioms guarantee the structure of each fixed-point set individually; they do not guarantee their intersection is non-empty. A character with $F_\chi \cap H^*_t = \varnothing$ is a fully countercultural character: not derivable as impossible by the axioms, but requiring specific sheaf data to rule out.
+**Theorem (common top fixed point; correction).** Let \(H_t\) be a bounded Heyting algebra and \(\chi_t,\sigma_t,\Delta_t:H_t\to H_t\) nuclei (in particular inflationary endomaps). Each fixes \(\top\): \(\top\leq j(\top)\) by inflationarity, and \(j(\top)\leq\top\) because top is greatest. Hence \(j(\top)=\top\), and \(\top\in\mathrm{Fix}(\chi_t)\cap\mathrm{Fix}(\sigma_t)\cap\mathrm{Fix}(\Delta_t)=F_\chi\cap H_t^*\). **The intersection is necessarily nonempty.** What the axioms do *not* establish is a **non-top** common fixed point, a particular compatible meaningful behavior, or any installed organizational authority. This distinction replaces the earlier impossible empty-intersection conjecture.
 
 ## Open questions
 
