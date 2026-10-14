@@ -19,8 +19,12 @@ function advance(s, {arrival, completion, withdrawal, send, receive}) {
     assert.equal(xs.length, 3);
     xs.forEach(nat);
   }
+  const incident = (units, endpoint) =>
+    s.q.map((_, node) => sum(units.filter((_, edge) => edges[edge][endpoint] === node)));
+  const outbound = incident(send, 0);
+  const inbound = incident(receive, 1);
   const q = s.q.map((old, i) => old + arrival[i] - completion[i] -
-    withdrawal[i] - send[i] + receive[(i + 2) % 3]);
+    withdrawal[i] - outbound[i] + inbound[i]);
   const z = s.z.map((old, i) => old + send[i] - receive[i]);
   q.forEach(nat);
   z.forEach(nat);
@@ -59,7 +63,7 @@ test("thousands of bounded synthetic admissions, cancellations and transfers con
     const receive=s.z.map(held => held === 0n ? 0n : rand(Number(held)+1));
     const completion=[], withdrawal=[], send=[];
     for (let i=0; i<3; i++) {
-      let available=s.q[i]+arrival[i]+receive[(i+2)%3];
+      let available=s.q[i]+arrival[i]+sum(receive.filter((_,edge)=>edges[edge][1]===i));
       const d=rand(Number((available<4n?available:4n)+1n));
       available-=d;
       const x=rand(Number((available<3n?available:3n)+1n));
