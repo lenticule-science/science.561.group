@@ -1,0 +1,240 @@
+---
+title: "One vote per market: fixed-unit participation, marginal edge, and correlated risk"
+date-created: 2026-10-14
+type: note
+status: "research note — exploratory mathematical model; derivations not formally verified; no operational policy adopted"
+producer: "Lenticule Science / Finance Science Services Section"
+origin: "emsenn's question on holding each market allocation to a fixed dollar unit while expanding participation with the purse"
+tags: [finance, strategy, event-contracts, fixed-unit-staking, diversification, correlation, risk-of-ruin, market-portfolio]
+description: "Formalize equal-dollar allocation per eligible economic event; derive capital-demand, expected payoff, rank-edge decay, an independence-dependent diversification theorem, and tests against correlated exposure. Scientific research only; no change to current Kalshi trading."
+---
+
+# One vote per market: fixed-unit participation, marginal edge, and correlated risk
+
+## Status and question
+
+**Status:** exploratory finance-science research, dated 2026-10-14. This document does not authorize a Kalshi trade, revise a live allocation strategy, set a risk limit for an account, or claim empirical success. The formulae are algebraic derivations under stated assumptions, not Lean-checked theorems or an empirically validated algorithm.
+
+**Question.** Suppose every distinct eligible market can receive one equal dollar allocation, for example $10. The allocation to a market does not depend on Kelly sizing or scale with the purse. As the purse grows, one seeks more markets: the participation frontier expands from the best measured opportunities into the long tail of weaker opportunities, but only within an explicitly defined tolerance. How does this change expected profit, downside risk, capital use, the ability to survive forecast error, and the meaning of diversification?
+
+The motivating metaphor is **one vote per market**. Each independently identified proposition receives at most one capital unit. This is a rule of equal *maximum dollars at risk*, not equal numbers of contracts, equal probability, equal payoff variance, or an entitlement to trade every listed market. It is a candidate objective in its own right, not a claim that it maximizes geometric wealth growth.
+
+This work belongs to finance science (economic allocation under uncertainty). The mathematical questions may subsequently inform gambling science and market-strategy engineering, but source research is not a live strategy or an implementation request. The existing finance note on settlement versus belief-path trading supplies relevant price and execution distinctions, not permission to change its desk: [Trading the belief path (2026-10-04)](https://github.com/lenticule-science/science-services-section/blob/main/services/social-science-services-section/services/economics-and-business-science-services-section/services/finance-science-services-section/content/text/documents/articles/notes/2026/10/04/2026-10-04-note-on-trading-the-belief-path.md).
+
+## 1. The capital unit and its allocation rule
+
+Let:
+
+- \(W_t>0\) be purse wealth at decision time \(t\), with explicit accounting for already encumbered funds;
+- \(b>0\) be a fixed nominal dollar unit, initially \(b=\$10\), not a bankroll fraction;
+- \(\rho\in[0,1]\) be a *target* upper fraction of purse wealth available for outstanding allocations;
+- \(L_t\geq0\) be previously committed capital counted against this same budget;
+- \(A_t\geq0\) be cash currently free to commit;
+- \(\mathcal E_t\) be the set of distinct economically identifiable and eligible exposures.
+
+For a fresh, unencumbered purse, the target number of simultaneous units is
+
+\[
+N_t^{\rm target}=\left\lfloor \frac{\rho W_t}{b}\right\rfloor.
+\]
+
+With existing commitments and limited liquid cash, new capacity is bounded by
+
+\[
+N_t^{\rm new}\leq
+\min\left\{
+\left\lfloor\frac{(\rho W_t-L_t)_+}{b}\right\rfloor,\,
+\left\lfloor\frac{A_t}{b}\right\rfloor,\,
+|\mathcal E_t|
+\right\},
+\qquad x_+=\max(0,x).
+\]
+
+Further constraints may reduce the admitted number: correlation groups, scarce order-book liquidity, market terms, fees, settlement deadlines, and unacceptable downside exposures. A target is not an obligation to fill.
+
+In the idealized fresh-purse model, \(\rho=0.6\) and \(b=\$10\) yield 6 units for a $100 purse, 30 for $500, 120 for $2,000, and 600 for $10,000. These are arithmetic capacity examples, *not advisable allocation levels*.
+
+**Logical distinction.** A cap \(b\) alone does not imply that the number of markets must grow with wealth: surplus cash could remain idle. The extra premise is a chosen utilization or participation objective. Conversely, a fixed utilization objective cannot force qualifying opportunities into existence. If fewer than \(N_t^{\rm target}\) eligible economic events exist, the cash remainder stays uncommitted unless a separately justified hedge or information-purchase objective is declared.
+
+**No trivial splitting.** The economic unit cannot be a click, order ID, or successive $10 order on the same outcome. Otherwise the rule can be evaded by dividing a $100 position into ten orders. The exposure identifier must track the same settlement question, sides of the same contract, mutually exclusive brackets, linked outcomes, and open orders, including positions at other times or venues when relevant. One unit per exchange ticker is a weaker and potentially misleading variant.
+
+## 2. Binary settlement model and breakeven
+
+For a long binary contract, let \(X_i\in\{0,1\}\) indicate a winning settlement, \(a_i\in(0,1)\) be the actual per-contract *executable entry price* in dollars, and \(q_i=P(X_i=1)\) be the trader's true but unknown outcome probability. For a continuous-contract approximation, a stake of \(b\) acquires \(b/a_i\) claims.
+
+With an all-in deterministic order cost \(f_i\) and holding to settlement, the profit is
+
+\[
+Y_i=b\left(\frac{X_i}{a_i}-1\right)-f_i,
+\quad
+E[Y_i]=b\left(\frac{q_i}{a_i}-1\right)-f_i.
+\]
+
+Define the estimated *net return on the staked dollar* as
+
+\[
+g_i=\frac{q_i}{a_i}-1-\frac{f_i}{b}.
+\]
+
+Under these assumptions, the individually profitable admission condition is
+
+\[
+g_i>0
+\quad\Longleftrightarrow\quad
+q_i>a_i\left(1+\frac{f_i}{b}\right).
+\]
+
+In actual markets one must replace \(q_i\) with a forecast distribution or defensible interval, \(a_i\) with executable order-book depth at the proposed size, and \(f_i\) with the venue's real, price-, size-, and outcome-dependent fee/rounding rules. If fees depend on settlement, the expected fee belongs inside the expectation. Integer contract sizes, spreads, slippage, market impact, funding and settlement delay invalidate a naive division by displayed midpoint. Buying NO is the same analysis after renaming the winning event.
+
+**Illustration, not a market claim.** At \(a=0.50\), \(q=0.60\), \(b=\$10\), and zero fees, the position earns $10 on a win, loses $10 on a loss, and has expected profit $2. At \(a=0.10\), \(q=0.12\), and the same stake, expected profit is also $2, but the position earns $90 on a win and loses $10 otherwise. Equal stake and equal expected dollar edge do **not** equalize payoff dispersion or loss frequency.
+
+The true \(q_i\) is not observable when deciding. A research hypothesis may use an estimate \(\widehat q_i\), a lower uncertainty bound \(q_i^{-}\), and an explicit friction budget. An uncertainty-robust admissibility proposal is \(q_i^{-}>a_i(1+f_i/b)\), subject to coverage validation. This is a **testable proposal**, not a certified decision rule. Selection among many apparently positive edges invites winner's curse, correlated model error, and multiple-testing bias.
+
+## 3. Equal participation and its mathematical meaning
+
+Suppose exactly \(N\) unique economic exposures each receive \(b\) dollars, with total committed amount \(Nb\). Their notional capital weights are \(w_i=1/N\). Equal weighting maximizes Shannon allocation entropy
+
+\[
+H(w)=-\sum_{i=1}^{N}w_i\log w_i\leq\log N
+\]
+
+and minimizes the Herfindahl concentration \(\sum_i w_i^2\geq1/N\), with equality in both cases only for equal weights. The bounds follow from the concavity of \(\log\) or nonnegativity of relative entropy, and Cauchy–Schwarz, respectively.
+
+Thus the metaphor *one vote per market* has a coherent formal interpretation: maximum nominal participation diversity **conditional on the selected set and total commitment**. Its participation-effective count is \(N_{\rm nominal}=\exp H=N\).
+
+This conclusion says nothing by itself about stochastic outcome independence. A collection of 100 highly correlated temperature markets may have nominal participation count 100 while representing very few independent weather exposures. Nor does equal staking make an inexpensive longshot and an expensive favorite equally volatile.
+
+The rule differs from a traditional fixed-\(N\) 1/N portfolio: here \(N\) is *endogenous to wealth and opportunity supply*. It also differs from Kelly sizing, which allocates according to a specified log-wealth objective and probability/odds information. Kelly remains a scientific comparator, not the rule proposed here.
+
+## 4. How the long tail consumes additional capital
+
+At time \(t\), rank admissible candidate exposures by their *estimated net unit edge* \(g_{(1)}\geq g_{(2)}\geq\cdots\), while preserving a separate measure of forecast uncertainty, dependence, and capital lock time. In the restricted case of equally priced exposure units, no correlations, equal timing, and an objective of maximum expected dollar profit at exactly \(N\) selections, the best \(N\) are the highest \(g_i\). This exchange argument does **not** hold unchanged for risk-, duration-, hedge-, or learning-aware utility.
+
+For \(N\) selected opportunities, expected nominal profit is
+
+\[
+E[\Delta W_N]=b\sum_{k=1}^{N}g_{(k)}
+\]
+
+and the expected return on **committed** funds is
+
+\[
+\overline g_N=\frac{1}{N}\sum_{k=1}^{N}g_{(k)}.
+\]
+
+If edges decline with rank, adding still-positive units raises expected dollar profit but generally lowers average return on committed capital. Adding a negative-edge unit reduces expected dollar profit unless that position has a distinct hedging, informational, or nonfinancial value that is explicitly accounted for. Maximizing the number of votes is therefore a separate normative objective from maximizing profit.
+
+**Illustrative edge-decay model; not an empirical law.** Suppose the gross per-unit advantage before friction is \(u_k=u_0k^{-\alpha}\), \(\alpha>0\), and proportional friction is \(c>0\). Then
+
+\[
+g_k=u_0k^{-\alpha}-c,\qquad
+E[\Delta W_N]=b\left(u_0 H_{N,\alpha}-cN\right),
+\]
+
+where \(H_{N,\alpha}=\sum_{k=1}^{N}k^{-\alpha}\). Marginal expected profit turns nonpositive once \(k\geq(u_0/c)^{1/\alpha}\). If there is no friction and \(0<\alpha<1\), aggregate expected profits grow sublinearly as \(N^{1-\alpha}\), while average committed-capital advantage decays as \(N^{-\alpha}\). For \(\alpha=1\), cumulative edge grows logarithmically; for \(\alpha>1\), the no-friction cumulative edge converges. Thus increased breadth need not generate proportional profits.
+
+For a numeric counterexample, let \(u_0=0.10\), \(\alpha=1/2\), and \(c=0.01\). The 100th opportunity is only breakeven; ranks 101 onward have negative expected edge. With \(W=\$2{,}000\), \(b=\$10\), and target deployment \(\rho=0.6\), capacity asks for 120 units, but fewer than 100 satisfy strict positive expected edge. A policy that insists on spending $1,200 under these assumptions destroys some of the expected value of the first 99 units. A tolerant policy may instead preserve cash.
+
+**Admissibility has to precede utilization.** "Within tolerance" could mean a minimum net expected edge, a lower confidence bound, a maximum forecast-error budget, a maximum correlated loss, or a priced hedge/learning benefit. Those are different mathematical hypotheses. A small negative standalone edge can be rational as insurance against existing risks, but only if its negative dependence or other value is measured: it is not justified simply by a larger purse.
+
+## 5. When more votes reduce risk — and when they do not
+
+For the idealized binary model with deterministic entry prices and costs,
+
+\[
+\operatorname{Var}(Y_i)
+=b^2\frac{q_i(1-q_i)}{a_i^2},
+\quad
+\operatorname{Cov}(Y_i,Y_j)
+=b^2\frac{\operatorname{Cov}(X_i,X_j)}{a_i a_j}.
+\]
+
+The portfolio variance is the sum of all individual variances **plus every pairwise covariance**. Merely adding exchange markets does not remove shared forecast errors or adverse scenarios.
+
+A useful controlled special case assumes that each unit-dollar return \(R_i=Y_i/b\) has variance \(\sigma^2\) and every distinct pair has correlation \(r\), with a feasible positive \(r\). Then, for \(N\) simultaneous equal-sized positions,
+
+\[
+\operatorname{Var}(\Delta W_N)
+=b^2\sigma^2N[1+(N-1)r].
+\]
+
+If \(N=\rho W/b\) exactly, normalized profit volatility becomes
+
+\[
+\boxed{\frac{\operatorname{SD}(\Delta W_N)}{W}
+=\sigma\sqrt{\frac{\rho b}{W}(1-r)+\rho^2r}.}
+\]
+
+**Result A (independent case, conditional).** If \(r=0\), \(b\) and \(\rho\) are fixed, the assumptions remain stable, and enough independent eligible opportunities exist, relative volatility decreases as \(W^{-1/2}\), even while the number of outstanding bets rises approximately linearly with wealth.
+
+**Result B (shared-risk case, conditional).** If \(r>0\) remains positive as opportunities multiply, relative volatility approaches the nonzero floor \(\sigma\rho\sqrt r\). Growing nominal breadth cannot wash out the common risk. A fixed dollar unit therefore does not, by itself, produce a law of vanishing drawdown probability.
+
+A numerical model exposes the difference. With \(a=0.50\), \(q=0.60\), fee zero, \(b=\$10\), \(\rho=0.6\), the per-dollar return variance is \(\sigma^2=0.96\). At \(W=\$500\), \(N=30\): independent one-round P&L standard deviation is about $53.67, or 10.7% of the purse. At \(W=\$2{,}000\), \(N=120\): it is about $107.33, or 5.4%. But under constant pairwise correlation \(r=0.20\), these proportions are about 28.0% and 26.7%, heading toward a 26.3% common-risk floor. The parameters are artificial; no actual market portfolio is asserted to have these correlations.
+
+**Exposure construction is the difficult part.** Mutually exclusive temperature bins on one station and hour, opposite contract sides, brackets determined by a shared weather model, related political contracts, and outcomes settling under one economic release may have substantial deterministic or stochastic dependence. They are not independent votes merely because the venue gives them different market identifiers. Family, common driver, resolution event and model-provenance relationships need to be recoverable before one can count diversification.
+
+## 6. Downside, survival and capital velocity
+
+For fully funded, long-only binary positions on one isolated round, with total committed principal no greater than \(\rho W\), ignoring fees and other obligations, the simultaneous maximum principal loss is \(\rho W\). If \(\rho<1\), that round alone cannot reduce the remaining purse below \((1-\rho)W\). This is a **one-round bound only**, not a guarantee against drawdown over repeated rounds, operational failure, liquidity loss or bankruptcy elsewhere. Repeated losses, fees and correlated exposure can still erode wealth severely. Taking \(\rho=1\) leaves no protected cash.
+
+The objective matters. Expected arithmetic profit is linear in marginal edges. Long-run geometric growth instead examines expressions of the form
+
+\[
+E[\log(W+\Delta W)-\log W]
+\]
+
+where defined, and penalizes deep losses. Holding many equal-dollar positive-edge positions does not prove superiority under log growth, mean-variance preference, drawdown constraints, or a survival objective. For small normalized profit \(Z=\Delta W/W\), the approximation is \(E[\log(1+Z)]\approx E[Z]-E[Z^2]/2\): both variance and the squared mean enter the second term. Without stable estimation and bounded downside, this is not a guarantee or Kelly result.
+
+Settlement time creates a second frontier. With expected lock duration \(\tau_i\), a candidate's expected money return \(g_i\) and indicative advantage per dollar-time \(g_i/\tau_i\) distinguish rapid turnover from large profit per contract. One six-hour opportunity and one three-day opportunity with the same expected net return tie on per-bet profit but not capital turnover; repeated availability and refill risk matter. Ranking solely by \(g_i/\tau_i\) still ignores dependent outcomes, timing risk, future opportunity arrivals, and changing bankroll, so it is a descriptive statistic, not an accepted optimization formula.
+
+The precise study should separate (i) a fixed maximum loss per economically distinct event, (ii) concurrent capital commitments, (iii) rate of principal recycling, (iv) expected return on deployed principal, and (v) total wealth return including deliberately idle cash. Otherwise a strategy can look attractive simply because idle money was excluded from the denominator.
+
+## 7. Proposed objectives and testable hypotheses
+
+Three objectives should remain distinct rather than collapsing into one "optimal bet" calculation:
+
+1. **Egalitarian participation:** maximize the number or entropy of independently qualified event exposures, with one stake unit each.
+2. **Economic effectiveness:** maximize net realizable profit, log wealth, or reward per capital-time under measured uncertainty, including the value of leaving cash unspent.
+3. **Survival:** bound stressed joint losses, total outstanding principal, loss concentration in shared drivers, and adverse forecast-error sensitivity.
+
+A candidate scientific strategy might select the largest admissible set up to purse capacity, subject to calibrated edge-uncertainty floors, economic-event grouping, liquidity and stress-loss budgets, breaking ties using marginal portfolio contribution. It may also consider low- or negative-edge hedges when their risk-reduction value is explicit. This is a hypothesis to compare, not an instruction to change the live desk.
+
+**Falsifiable hypotheses:**
+
+- H1. With calibrated, sufficiently independent eligible events, a growing purse and fixed unit lower normalized one-round portfolio volatility, as the model predicts.
+- H2. Once common event drivers and forecast-model provenance are grouped, apparent market count materially overstates effective diversification in at least some dense market families.
+- H3. Increasing participation reaches declining marginal *net* expected edge; beyond a class- and horizon-specific threshold, additional events worsen realized returns after fees, slippage and selection error.
+- H4. Under finite-sample probability error, fixed-unit participation can sometimes outperform probability-sensitive stake sizing on out-of-sample drawdown or geometric growth, but not uniformly; the advantage, if found, must survive comparisons at matched total risk and capital utilization.
+- H5. At short settlement horizons, capital recycling can improve return per unit time, but only when executable liquidity, fees and opportunity arrival rates sustain the claimed advantage.
+
+**Discriminating counterexamples:** All \(N\) positions depend on one binary event (nominal breadth \(N\), no genuine diversification); all added opportunities have slightly negative true edge (forced breadth reduces expected profit); low-priced longshots share identical expected return but much larger payoff variance than favorites; two highly correlated high-edge bets can be inferior under a downside objective to one lower-edge hedge; \(W\) increases while qualified markets remain finite (cash must rise unless stake or admissibility changes).
+
+## 8. Research design before any operational interpretation
+
+A retrospective, non-trading study can compare fixed units such as $5, $10, $25 and $50 with multiple utilization targets, explicit eligibility tolerances, and matched alternatives: (a) top-ranked concentrated units, (b) unrestricted equal-weight 1/N within a predeclared fixed universe, (c) fractional-Kelly or other probability-sensitive sizing as *scientific comparators only*, (d) cash, and (e) one unit per shared-risk cluster. A fair comparison must hold the data, time window, execution assumptions, risk budget and opportunity universe constant and separately report unmatched variants.
+
+The dataset must preserve contemporaneous executable bid/ask depth, fee schedules and changes, timestamps, contract specifications, resolution criteria, model probability vintages, ex ante forecasts, economic-event linkage, dependence clusters, settled outcomes, canceled or unfilled orders, and capital availability at each decision time. No hindsight-ranked edge, future data leakage, midpoint fills, cross-side double counting, repeated apparent units, or invented independent samples are admissible.
+
+Use a time-ordered evaluation with held-out periods and class-level splits; report calibration and uncertainty coverage as well as predictions. Estimate dependence under weather-day/station, games, releases, and shared model shocks; stress test a common forecast miss and settlement delay. Report realized net P&L, annualized or horizon-matched wealth growth only where warranted, return on total purse, return on committed cash, drawdown distributions, left-tail conditional loss, catastrophic-loss frequency, capital turnover, active distinct economic exposures, effective outcome diversity, and uncertainty intervals. Prevent cherry-picking among many \(b,\rho,\delta\) settings by predeclaring primary tests and checking stability beyond the selected set.
+
+The study has **not** been run. It has no backtest result, acceptance threshold selected for deployment, capital allocation approval, or engineering handoff. Independent science review should precede any later attempt to use it in a venue-specific system.
+
+## 9. Relationship to literature and existing evidence
+
+**Kelly (1956)** establishes log-growth betting within its model and frames a different objective than nominally equal market participation. The fixed-unit hypothesis is not mathematically a Kelly theorem. J. L. Kelly Jr., "A New Interpretation of Information Rate," *Bell System Technical Journal* 35 (1956), 917–926, https://doi.org/10.1002/j.1538-7305.1956.tb03809.x .
+
+**DeMiguel, Garlappi and Uppal (2009)** show that equal 1/N allocations can resist the estimation error that defeats more elaborately optimized weights out of sample, in the stock portfolios they studied. This motivates an empirical comparison, not a proof about prediction contracts or an expanding opportunity universe. "Optimal Versus Naive Diversification," *Review of Financial Studies* 22 (2009), 1915–1953, https://doi.org/10.1093/rfs/hhm075 .
+
+**MacLean, Thorp and Ziemba (2010)** analyze the long-run appeal and short-run risks of Kelly and fractional Kelly strategies. Their conclusions supply benchmarks, not a mandate to adopt the criterion. "Long-term capital growth: the good and bad properties of the Kelly and fractional Kelly capital growth criteria," *Quantitative Finance* 10 (2010), 681–687, https://escholarship.org/uc/item/5mr5k8qj .
+
+**Kalshi Research (August 2026)** reports strong aggregate calibration near resolution on a large historical collection of resolved event markets. Good aggregate calibration does not imply all classes, quotes, horizons or executable spreads are well priced, nor that any particular fixed-unit strategy has positive net expected value. "Calibration in Prediction Markets — Theory and Evidence," https://kalshi.com/research/publications/calibration .
+
+**Existing Lenticule Science context (2026-10-04)** distinguishes executable entry price, bid-at-exit, marked midpoint, settlement profit and path-trading profit; those distinctions are inherited as research definitions, not live policy changes. [Trading the belief path](https://github.com/lenticule-science/science-services-section/blob/main/services/social-science-services-section/services/economics-and-business-science-services-section/services/finance-science-services-section/content/text/documents/articles/notes/2026/10/04/2026-10-04-note-on-trading-the-belief-path.md).
+
+## 10. Current finding
+
+The proposal is mathematically coherent as a **bounded unit of participation plus a chosen breadth objective**. It equalizes nominal principal at risk per identified exposure, raises the number of capital participations with wealth when enough admissible events exist, and can reduce idiosyncratic risk without scaling the wager size.
+
+It does **not** ensure that extra markets have edge, that listed markets are independent, that a fixed dollar risks the same variance at different odds, that wider portfolios beat concentrated portfolios, or that compulsory deployment is prudent. The empirical science question is the shape of the *admissible, dependence-adjusted, time-priced long tail*: how many genuinely distinct opportunities exist, at what marginal net value and common-loss cost, as capital expands?
+
+**Boundary:** research note only. No changes to Kalshi production, allocation settings, venue accounts, risk policy, executables or deployed strategies follow from this note.
