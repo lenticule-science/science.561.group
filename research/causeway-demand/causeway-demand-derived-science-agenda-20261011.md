@@ -1,187 +1,76 @@
-# Causeway demand → Lenticule Science agenda
+# Causeway demand → Lenticule Science: shared research and Coesite receiving contract
 
-Date: 2026-10-11
-Status: research-demand synthesis
-Source boundary: Causeway Services public/service GitHub only; no personal/client-finance data.
+**Status (2026-10-13):** program specification and proposed operational studies; synthetic scientific instruments exist, but this document records **no independently completed Coesite field study, validated client outcome or customer acceptance**. It is the sole active Science/Scientific Operations parameterization for the four Causeway demand classes (formerly separate agenda and Coesite parameter note).
 
-## Purpose
+**Custody:** Causeway Public Services owns demand, customer authority and external acceptance; Lenticule Science (receiver [#69](https://github.com/lenticule-science/science-services-section/issues/69)) owns constructs, hypotheses, analysis and scientific qualification; Coesite Scientific Operations/Enterprise/Data (receiver [#122](https://github.com/coesite-operations/operations-services-section/issues/122)) owns authorized data acquisition, measurement execution, immutable run manifests, storage, provenance and independent operational readback. Red Cup Engineering receives deterministic conformance obligations. The existence of a receiving issue is not proof of execution.
 
-Causeway's live service work is generating a recurring class of scientific demand that should not be answered by one-off feature work:
+## One evidence chain, multiple irreducible statuses
 
-1. What exactly is being observed?
-2. What construct does the observation measure?
-3. Is the evidence source authoritative, current, and attributable?
-4. Does the measurement matter to a real customer decision?
-5. Can an intervention be causally distinguished from ordinary change?
-6. What independent receiver can establish that an outcome actually improved?
+Trace each bounded effect as:
 
-This agenda turns those recurring demands into reusable Lenticule research rather than duplicating them in each service.
+    Causeway demand → eligible observations → declared construct → test/analysis
+      → qualified scientific finding → Engineering contract or explicit no-finding
+      → implemented effect → independent public/customer receiving
 
-## Current Causeway demand signals
+Each transition has its *own* provenance and acceptance authority. Separate: (a) owner-reported status, (b) independently witnessed public observation, (c) independently adjudicated measurement, (d) causal inference, (e) provider execution and (f) downstream customer acceptance. A source commit, dataset count, green test, cloud log or publication endpoint is not an interchangeable receipt. Missing/unreachable provider evidence is **missing**, never implicitly a zero outcome; an unobserved result cannot be assigned success or failure.
 
-### AI Visibility Assurance — public-services-section#6
+For a study run, record at minimum:
+- `work_ref`, `causeway_owner`, `causeway_issue_url`, `observed_at`, `source_revision`, `evidence_class` (owner-reported, independently public, independently adjudicated), `rights_class`;
+- `research_question`, `construct_and_units`, `observable_variables`, `population_and_sampling`, `instrument_revision`, `null_or_falsifier`, `missingness`, `uncertainty_method`;
+- `study_cost`, `decision_threshold`, `independent_receiver`, `receipt_uri`, `status`, and the independently signed/inspectable readback if one exists.
 
-Causeway is developing an independent service for deciding whether AI-mediated discovery is materially failing an organization and, only then, what least-cost action is warranted.
+Cohort identity, source revision, event/effect identity, observation time, effective-time window and customer authority remain separately typed. Do not join unrelated effects merely because provider stage labels match. Freeze eligibility, sampling, analysis and stopping thresholds **before** outcome access; never manufacture source observations, participants or customer acceptance. This research carrier accepts public or legitimate aggregate data only, not client eligibility, account identifiers, subscriber records, PII, credentials or commercial secrets.
 
-The current service model distinguishes:
-- crawl/index eligibility;
-- entity resolution;
-- retrieval for buyer-relevant questions;
-- citation/mention;
-- factual representation/prominence;
-- conversion into observable customer action.
+## CS-01 — AI visibility: construct validity and customer decision value
 
-Science demand:
+**Demand:** [AI Visibility Assurance #6](https://github.com/causeway-services/public-services-section/issues/6). The incubating service has provisional metrics and a mock-client gate; not an accepted customer effect.
 
-**Can these layers be measured as distinct observables with known uncertainty, and which combinations actually predict a customer-relevant outcome?**
+**Question:** Which observable layers—crawl/index eligibility, entity resolution, model retrieval, source citation/mention, factual representation and real customer action—predict a buyer-relevant outcome after considering uncertainty, measurement costs and alternatives? Define each layer independently; do not collapse a vector into one opaque visibility score.
 
-Research questions:
-- Define each layer independently and specify observable proxies.
-- Quantify measurement error and surface-dependence.
-- Test whether a composite score loses information compared with a vector of layer-specific evidence.
-- Define causal designs for intervention → change in retrieval/representation → customer outcome.
-- Establish when a free triage, existing vendor, one-time audit, monitoring service, or no action is the scientifically warranted recommendation.
+**Coesite assay:** predeclare fixed prompts, entities, locales, models/surfaces, versions, time windows and replicated retrieval samples. Record surface-dependent errors, factual citation fidelity and drift separately from independently scored user-task completion. Compare layer-specific models and candidate composites against a simple baseline on held-out cases; remeasure identical cases for reliability.
 
-### Public Grants Services — public-services-section#14
+**Falsifier:** a proposed assurance metric fails preregistered test/retest reliability or does not improve held-out prediction/decision quality over the simpler metric. **Disposition:** engineering may implement reproducible component observations and abstention now; do not claim causal SEO/GEO uplift, a customer's benefit or a generalizable “assurance score” without field evidence. A scientifically valid outcome may be no service purchase or a cheaper existing solution.
 
-Causeway is designing a reusable provider of funding intelligence shared across Personal Services clients while keeping client-specific eligibility facts tenant-local.
+## CS-02 — Grants: temporal public knowledge without tenant leakage
 
-Science demand:
+**Demand:** [Public Grants Services #14](https://github.com/causeway-services/public-services-section/issues/14). A shared official public-program registry is proposed, but private household/client eligibility must stay tenant-local.
 
-**How should time-varying public-program knowledge be represented so source identity, freshness, eligibility predicates, program kind, application mechanics, and changes remain queryable without importing client-private facts?**
+**Question:** Can source-backed program identity, kind (grant, benefit, rebate, scholarship, financing, forgiveness, procurement/RFP, technical assistance), application mechanics, eligibility rules, effective dates and conflicting revisions be reconstructed reproducibly?
 
-Research questions:
-- Temporal source/evidence model for programs and rules.
-- Typed distinction among grant, benefit, rebate, scholarship, loan forgiveness, financing, RFP, and technical assistance.
-- Freshness and contradiction model for official program changes.
-- De-identified demand signals that improve shared coverage without exposing client eligibility.
-- Independent research-receipt semantics.
+**Coesite assay:** version public funder pages with issuer identity, capture timestamp, source revision, published/effective windows, deadline and supersession. Compare extraction and change detection against independently adjudicated current official terms; separate source observation from inferred program eligibility.
 
-### Customer Publishing Service — public-services-section#16
+**Falsifier:** silent deadline changes, invalid source-time ordering or materially incorrect effective-date attribution persist beyond a preregistered tolerance. **Disposition:** deterministic link reachability and date parsing go to Engineering; empirically measure recall, source drift and risk-limited abstention before external assurance claims. Neither historical public pages nor shared de-identified demand authorize storage of a client's eligibility.
 
-Causeway needs shared publishing capabilities without letting the provider become owner of a customer's identity, corpus, editorial authority, or publication decisions.
+## CS-03 — Publishing: evidence, editorial authority and reader outcome
 
-Science demand:
+**Demands:** [Customer Publishing #16](https://github.com/causeway-services/public-services-section/issues/16), [Koios editorial depth #4](https://github.com/causeway-services/koios-news/issues/4), [execution freshness #15](https://github.com/causeway-services/koios-news/issues/15), [public correction intake](https://github.com/causeway-services/koios-news-site/issues/16).
 
-**What formal distinctions are necessary to preserve customer sovereignty across preparation, review, provider draft, schedule/send, publication, archival verification, correction, and acceptance?**
+**Question:** Which claim-source and context measures predict independently evaluated accuracy, accessibility, comprehension and reader task success—not just body length or an owner depth threshold? Separately, what typed authority/effect states preserve client sovereignty across preparation, review, approval, scheduling, sending/publication, public witness, correction and final acceptance?
 
-Research questions:
-- Model authority as typed transitions rather than one publish permission.
-- Separate provenance, factual warrant, customer approval, provider execution, and public-state observation.
-- Test whether provider receipts are sufficient evidence of public effect or require an independent public witness.
-- Link these semantics to PlainEng/PTGAE and SignCell/SignChain where useful.
+**Pinned observation:** the [Koios structural-validity assay](./koios-structural-validity-identifiability-20261011.md) records a 2026-10-11 76-article owner cohort: 38 owner structural passes and 38 failures; all 76 with unavailable source-evidence sensors. No reader truth is identified by this rate. Do not repeat that measurement as a live 2026-10-13 count without new sampling. The [newsroom throughput protocol](./koios-throughput-causal-study-20261011.md) tests a distinct causal bottleneck—whether writing capacity changes **independently released** editions; do not reuse its story-attempt units as article-quality cases without a typed mapping.
 
-### Koios.News service evidence
+**Coesite assay:** freeze article cohorts and sample inclusion probabilities; obtain independent blinded source-claim labels, omission/uncertainty assessments, accessible reader tasks, inter-rater disagreement/abstention and independent public effect readbacks. Trace approval authority and correction acknowledgments by revision. Compare source/context metrics against a word-count-only baseline. Distinguish owner score, provenance observability, validated claim, reader result and customer receiving as separate fields.
 
-Current Causeway issues report:
-- article-depth/context deficiency (#4);
-- stale newsroom execution (#15);
-- Cloudflare analytics permission deficiency (#3);
-- Google Analytics API availability (#2);
-- AdSense rejection requiring exact current diagnostics (#45).
+**Falsifier:** the richer measure fails to improve prespecified held-out reader/source adjudication performance; provider execution cannot be tied to an independently authorized/observed public effect; or an alleged released new edition has no independently identifiable fresh content/witness. **Disposition:** typed publishing state invariants can go to Engineering; reader utility, causal quality and customer value remain scientific field questions.
 
-Science demand:
+Related existing precise protocols: [field-effect validation](./field-effect-validation-protocol.md) and [temporal source/revision fact checking](./temporal-source-revision-factchecking-20261011.md). Maintain their specialized instruments rather than cloning them into this program document.
 
-**How should service-health observations be separated from their causes, and how can a reported count or dashboard metric become a reproducible measurement with an immutable cohort, scoring-rule revision, source timestamp, and independent recount?**
+## CS-04 — Instrument validity, opportunity cost and abstention
 
-This is directly connected to existing PlainEng reader-task research (#56), semantic/provenance research (#54, #57), and citation/provenance work.
+**Demands:** Koios [analytics access #2](https://github.com/causeway-services/koios-news/issues/2), [analytics permission #3](https://github.com/causeway-services/koios-news/issues/3), [AdSense diagnostic #45](https://github.com/causeway-services/koios-news/issues/45), and cross-service assurance under Science #69.
 
-## Shared scientific program
+**Question:** When does paying to observe additional data change a decision enough to justify observation/intervention cost, compared with provider repair, a public witness or no action?
 
-### A. Measurement validity for services
+**Coesite assay:** classify missingness (permission denied, unsupported API, delayed freshness, invalid credentials, selection gaps, censored outcome) and compare the expected action change under cheaper and more costly observations. EVI = expected decision-loss reduction from new information **minus** information and operational costs; estimate with bounded uncertainty and consider reversibility and consequence. Do not infer traffic, revenue, cause or customer outcomes from missing provider access.
 
-Develop a general model:
+**Falsifier:** newly purchased/collected evidence does not change decisions, reduce out-of-sample regret or meet predeclared minimum net value. **Disposition:** repairing a broken authorized provider permission or validating a required receipt field is an Operations/Engineering task, *not* new Science unless construct uncertainty remains. No credentials, billing acts or paid data acquisitions are authorized by this document.
 
-`claim -> observation -> measurement construct -> decision relevance -> intervention -> outcome -> independent acceptance`
+## Reusable scientific obligations and receiving gates
 
-For every link, record:
-- source and timestamp;
-- principal/authority;
-- uncertainty;
-- measurement error;
-- falsifier;
-- known missing coverage;
-- whether the quantity is observed, inferred, modeled, or normative.
+1. **Measurement:** declare observation, scientific construct, unit, instrument revision, discriminant validity, uncertainty and missingness; preserve observed/inferred/modelled/normative distinctions.
+2. **Time:** source identity, revision, published/effective/observed/received instants, contradiction and supersession form one provenance chain; conflicting assertions remain visible rather than silently overwritten.
+3. **Authority:** who asserted, who verified, who may authorize and who independently received an actual effect are different relations. Align with existing PTGAE and SignCell/SignChain semantics instead of inventing a parallel ontology.
+4. **Decision:** assess task success, accessibility, cost, uncertainty, alternatives and when *not* to intervene. Compare EVI against a no-new-measurement baseline.
+5. **Handoff:** Coesite furnishes a real manifest, frozen selection, verified rights, executable outputs, uncertainty and independent run receipt; Science either qualifies the conclusion, refutes it, or returns **unassayed/not identifiable**; Engineering receives reproducible deterministic tests; Causeway independently accepts customer effects. Neither an issue nor a source commit closes the chain.
 
-Core question:
-
-**When is a service metric evidence of a customer-relevant outcome rather than merely an internal activity measure?**
-
-### B. Temporal provenance and source freshness
-
-Develop a typed evidence object that supports:
-- source identity;
-- revision/edition;
-- observation time;
-- effective-from/effective-to;
-- retrieval time;
-- contradictory observations;
-- supersession;
-- independent corroboration.
-
-This should support both public-program intelligence and newsroom/service-health evidence.
-
-### C. Authority, provenance, and acceptance
-
-Formalize independent dimensions of:
-- who said it;
-- what evidence supports it;
-- who may authorize an effect;
-- whether the effect occurred;
-- whether the customer accepted the outcome.
-
-This should align with PlainEng/PTGAE semantics without collapsing epistemic status, normative authority, and deployment state.
-
-### D. Service outcome science
-
-Build experimental methods for testing:
-- comprehension;
-- task success;
-- decision quality;
-- accessibility;
-- customer value;
-- intervention effects.
-
-Prefer task-based evaluation over generic readability, rankings, or self-reported satisfaction when the service claim concerns actual performance.
-
-### E. Least-cost decision science
-
-Causeway repeatedly requires a possible outcome of "do nothing" or "use an existing cheaper tool."
-
-Research a decision rule that compares:
-- expected value of more information;
-- cost of measurement;
-- cost of intervention;
-- uncertainty;
-- reversibility;
-- materiality of the customer consequence.
-
-The output should be a recommendation over actions, not a proprietary score.
-
-## Explicit no-research-needed dispositions
-
-Some Causeway demands can be satisfied by deterministic engineering assertions once their evidence sources are fixed. Examples:
-- direct citation reachability;
-- whether a link resolves;
-- whether a required official eligibility statement appears in an article;
-- whether a provider API permission exists;
-- whether a required receipt field is present.
-
-These should become test specifications, not inflated scientific projects.
-
-## Existing Lenticule work to connect
-
-- #54 — PTGAE semantics, conformance, epistemic status, rewrite invariants.
-- #56 — reader-task evaluation and accessibility.
-- #57 — restricted rewrite proofs and Obsmetrologia/Lean.
-- #59 — mature English science and controlled-register theory.
-- #60 — SignCell/SignChain/SignGraph/SignCraft semantics.
-- #3/#4 — research-attention routing and relational/substrate research remain separate source lineages; do not conflate them with service-assurance work.
-
-## Acceptance criteria for this agenda
-
-1. Each Causeway demand above maps to a typed research question or explicit no-research-needed disposition.
-2. Research outputs identify observable variables, uncertainty, falsifiers, and independent receiving conditions.
-3. No customer-private eligibility, financial, subscriber, or account data enters shared Science source.
-4. A future Science result can be consumed by Engineering as an executable specification without Science silently deciding the implementation.
-5. Service outcomes are never self-accepted merely because a source commit, build, or deployment succeeded.
+Already studied or implemented instruments remain in their owning modules; see [effect evidence field protocol](./field-effect-validation-protocol.md), [owner-metric identifiability](./koios-structural-validity-identifiability-20261011.md), [newsroom-throughput study](./koios-throughput-causal-study-20261011.md), and [recovery ledger](./recovery-ledger-20261011.md). Reuse relevant Lenticule work on PTGAE #54, reader-task/accessibility #56, restricted rewrite proof #57, English #59 and SignCell/Chain/Graph/Craft #60. Old standalone CS-01…04 Coesite parameter notes are superseded by this contract; preserved Git history remains available for audit.
