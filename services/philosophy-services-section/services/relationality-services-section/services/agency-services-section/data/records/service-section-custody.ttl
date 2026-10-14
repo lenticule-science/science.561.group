@@ -1,0 +1,125 @@
+@prefix sec: <https://561.group/ontology/service-section-custody#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+
+# Science-owned assertions of institutional service-section form. These are
+# normative source rules, not evidence that a checked-out or live package
+# conforms. OWL is open-world; SHACL applies only to a declared data graph.
+# Section source custody is not a grant of agency, execution, or incumbency.
+sec: a owl:Ontology ;
+    rdfs:label "561 service-section custody and parameterization" ;
+    rdfs:comment "Source-role constraints for service-section packages; not a second Work, SignCell, ontology, or code engine." ;
+    rdfs:seeAlso <https://github.com/561-group/561-group-services-section/blob/main/content/text/glossary/concepts/method-for-work-in-the-561-group.md> ,
+                 <https://github.com/coesite-operations/operations-services-section/blob/main/content/documents/articles/specifications/operations-agentic-data-contract.md> .
+
+sec:ServiceSection a owl:Class ; rdfs:label "source-owned service section" .
+sec:SectionArtifact a owl:Class ; rdfs:subClassOf prov:Entity .
+sec:Knowledge a owl:Class ; rdfs:subClassOf sec:SectionArtifact ;
+    rdfs:comment "Scientific knowledge, formal results, and ontological declarations; this class alone does not assert a theorem is proved." .
+sec:EngineeringImplementation a owl:Class ; rdfs:subClassOf sec:SectionArtifact ;
+    rdfs:comment "Executable source, engine, networking/system code, or generic software implementation; only Engineering source owns it." .
+sec:OperationParameter a owl:Class ; rdfs:subClassOf sec:SectionArtifact ;
+    rdfs:comment "Reusable declared skill, duty, procedure, operation, policy, or runbook data interpreted by Engineering code." .
+sec:InstanceParameter a owl:Class ; rdfs:subClassOf sec:SectionArtifact ;
+    rdfs:comment "Group or Public purpose, actor, authority, tenancy, customer, and operational-instance bindings. This record does not grant authority." .
+[] a owl:AllDisjointClasses ; owl:members (
+    sec:Knowledge sec:EngineeringImplementation sec:OperationParameter sec:InstanceParameter
+) .
+
+sec:Custody a owl:Class .
+sec:Science a sec:Custody ; rdfs:label "Science" .
+sec:Engineering a sec:Custody ; rdfs:label "Engineering" .
+sec:Operations a sec:Custody ; rdfs:label "Operations" .
+sec:Group a sec:Custody ; rdfs:label "561 Group corporate instance" .
+sec:Public a sec:Custody ; rdfs:label "Public/receiver instance" .
+sec:sourceCustody a owl:ObjectProperty ;
+    rdfs:domain sec:ServiceSection ; rdfs:range sec:Custody ;
+    rdfs:comment "Source ownership, not a runtime principal, delegation, or access grant." .
+sec:sectionName a owl:DatatypeProperty ;
+    rdfs:domain sec:ServiceSection ; rdfs:range xsd:string .
+sec:holds a owl:ObjectProperty ;
+    rdfs:domain sec:ServiceSection ; rdfs:range sec:SectionArtifact .
+sec:parameterizes a owl:ObjectProperty ;
+    rdfs:domain sec:SectionArtifact ; rdfs:range sec:SectionArtifact ;
+    rdfs:comment "Declared data configures the following qualified consumer, without asserting running installation." .
+sec:constrains a owl:ObjectProperty ;
+    rdfs:comment "Science knowledge constrains engineering under its actual proof conditions; this relation is not a proof." .
+sec:installedBy a owl:ObjectProperty ;
+    rdfs:comment "Separate observed installation/receiving relationship, never inferred from parameterizes." .
+sec:sourceRevision a owl:DatatypeProperty ; rdfs:range xsd:string .
+sec:sourcePath a owl:DatatypeProperty ; rdfs:range xsd:string .
+
+# Engineering's own dependency/abstraction order: data -> code -> networking
+# -> systems. This is an ordering of responsibilities, not a claim that every
+# import edge follows a straight line or that any stage has been installed.
+sec:EngineeringConcern a owl:Class .
+sec:Data a sec:EngineeringConcern .
+sec:Code a sec:EngineeringConcern .
+sec:Networking a sec:EngineeringConcern .
+sec:Systems a sec:EngineeringConcern .
+sec:precedes a owl:ObjectProperty , owl:TransitiveProperty ;
+    rdfs:domain sec:EngineeringConcern ; rdfs:range sec:EngineeringConcern .
+sec:Data sec:precedes sec:Code .
+sec:Code sec:precedes sec:Networking .
+sec:Networking sec:precedes sec:Systems .
+
+# Naming rules apply to section packages (not every engine, import, or npm
+# library: e.g. computer-code-development-engine is an Engineering package).
+# A declared custody does not derive from a string, and name matching alone
+# cannot confer compliance, licensing, office, or execution authority.
+sec:ServiceSectionShape a sh:NodeShape ;
+    sh:targetClass sec:ServiceSection ;
+    sh:property [ sh:path sec:sourceCustody ; sh:minCount 1 ; sh:maxCount 1 ;
+                  sh:in ( sec:Science sec:Engineering sec:Operations sec:Group sec:Public ) ] ;
+    sh:property [ sh:path sec:sectionName ; sh:minCount 1 ; sh:maxCount 1 ;
+                  sh:datatype xsd:string ; sh:minLength 1 ] ;
+    sh:sparql [ sh:message "Service-section name contradicts its declared source custody" ;
+      sh:select """
+        PREFIX sec: <https://561.group/ontology/service-section-custody#>
+        SELECT $this WHERE {
+          $this sec:sourceCustody ?role ; sec:sectionName ?name .
+          FILTER (
+            (?role = sec:Science && !REGEX(?name, "(^|-)science-services-section$")) ||
+            (?role = sec:Engineering && !REGEX(?name, "(^|-)engineering-services-section$")) ||
+            (?role = sec:Operations && !REGEX(?name, "(^|-)operations-services-section$")) ||
+            (?role = sec:Group && !REGEX(?name, "^561-group(-[a-z0-9-]+)?-services-section$")) ||
+            (?role = sec:Public && !REGEX(?name, "^public(-[a-z0-9-]+)?-services-section$"))
+          )
+        }
+      """ ] ;
+    sh:sparql [ sh:message "Executable implementation is held outside Engineering custody" ;
+      sh:select """
+        PREFIX sec: <https://561.group/ontology/service-section-custody#>
+        SELECT $this WHERE {
+          $this sec:sourceCustody ?role ; sec:holds ?asset .
+          ?asset a sec:EngineeringImplementation .
+          FILTER (?role != sec:Engineering)
+        }
+      """ ] .
+
+sec:OperationParameterShape a sh:NodeShape ;
+    sh:targetClass sec:OperationParameter ;
+    sh:property [ sh:path sec:parameterizes ; sh:minCount 1 ;
+                  sh:class sec:EngineeringImplementation ;
+                  sh:message "Reusable Operations data must name its Engineering interpreter/consumer" ] .
+sec:InstanceParameterShape a sh:NodeShape ;
+    sh:targetClass sec:InstanceParameter ;
+    sh:property [ sh:path sec:parameterizes ; sh:minCount 1 ;
+                  sh:class sec:OperationParameter ;
+                  sh:message "Group/Public instance data must name its Operations template" ] .
+
+# Reference custodians only. These assertions do NOT assert source conformance.
+<https://github.com/lenticule-science/science-services-section> a sec:ServiceSection ;
+    sec:sectionName "science-services-section" ; sec:sourceCustody sec:Science .
+<https://github.com/red-cup-engineering/engineering-services-section> a sec:ServiceSection ;
+    sec:sectionName "engineering-services-section" ; sec:sourceCustody sec:Engineering .
+<https://github.com/coesite-operations/operations-services-section> a sec:ServiceSection ;
+    sec:sectionName "operations-services-section" ; sec:sourceCustody sec:Operations .
+<https://github.com/561-group/561-group-services-section> a sec:ServiceSection ;
+    sec:sectionName "561-group-services-section" ; sec:sourceCustody sec:Group .
+<https://github.com/causeway-services/public-services-section> a sec:ServiceSection ;
+    sec:sectionName "public-services-section" ; sec:sourceCustody sec:Public .
