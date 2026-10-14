@@ -210,18 +210,24 @@ This theory already has more proved structure than the historical
 | Same module | `residuals_coincide_iff_comp_comm`, `comp_comm_iff_subsingleton`, `residuals_differ_of_ne` | Composition is noncommutative once `X` has distinct points; subject-side and object-side residual demands are not interchangeable |
 | Same module | `primeA_iff_lres`, `primeB_iff_rres`, `closeA_iff_rres_lres`, `prime_adjunction_from_biresiduation` | The ordinary two-valued FCA concept closure is expressible via those relation residuals at an admitted incidence; this **settles the pure relational/FCA sub-bridge** |
 | [`TwistProductResiduation.lean`](https://github.com/lenticule-science/obsmetrologia/blob/2ae077eed16dd1c9f2345d0a3360563fbb3cc47e/Obsmetrologia/Calculus/Logic/TwistProductResiduation.lean) | `TwistProduct.fuse_leT_iff`, `FOUR.four_is_twist_two` | TWO's twist product represents the four charges and their bilattice orders, while twist-product fusion is **commutative** and does not itself create handedness |
-| [`LinearLogicChu.lean`](https://github.com/lenticule-science/obsmetrologia/blob/2ae077eed16dd1c9f2345d0a3360563fbb3cc47e/Obsmetrologia/Calculus/Logic/LinearLogicChu.lean) | `ChuSpace`, `ChuMap`, `ChuSpace.dual_involution`, `four_star_autonomous` | A FOUR-valued matrix is an actual Chu-space alphabet/model; lawful Chu transforms satisfy the stated adjointness equation |
+| [`LinearLogicChu.lean`](https://github.com/lenticule-science/obsmetrologia/blob/2ae077eed16dd1c9f2345d0a3360563fbb3cc47e/Obsmetrologia/Calculus/Logic/LinearLogicChu.lean) | `ChuSpace`, `ChuMap`, `ofEvidence_reconstruct`, `adjoint_iff_both_evidences`, `positive_evidence_not_faithful` | A FOUR-valued pairing is recovered from **both** Boolean incidence matrices. Chu-map adjointness is equivalent to preserving both; the positive FCA projection alone is provably unfaithful. [Lean core passed at 6ec9e24](https://github.com/lenticule-science/obsmetrologia/actions/runs/38561908209) |
 | [`ChuComparison.lean`](https://github.com/lenticule-science/obsmetrologia/blob/2ae077eed16dd1c9f2345d0a3360563fbb3cc47e/Obsmetrologia/Calculus/Logic/ChuComparison.lean) | `Charge.symmetricEvidenceDifference_eq_kBot_iff`, `ChuCandidate.defect_vanishes_iff_adjoint`, `ChuCandidate.toChuMap` | The **pointwise four-valued defect is zero iff a candidate translation preserves its pairing**. This is an existing rigorous conformance operator, not a speculative numerical "semantic distance" |
 
-For any chosen predicate `p`, the formal
-`Valuation.posIncidence v p` projects its positive-evidence part to a
-two-valued incidence `I_p : Entity → Entity → Prop`. FCA prime/closure
-then applies to that chosen incidence. Its result does **not** collapse
-the negative-evidence slot: a complete FOUR-valued reading retains
-both testimonies and their source witnesses. The `FOUR` twist-product
-algebra and the *binary-relation* residuation are separate structures;
-the former's commutative fusion must never be confused with the
-latter's noncommutative predicate composition.
+For a fixed, typed predicate `p`, `Valuation.posIncidence v p`
+selects the positive Boolean incidence `I⁺` for ordinary FCA closure.
+The separate negative incidence `I⁻` records opposition. The newly
+compiled `ChuSpace.ofEvidence_reconstruct` proves that **their pair
+recovers every FOUR matrix entry**, including both testimony and no
+testimony. `ChuSpace.adjoint_iff_both_evidences` proves that a
+candidate translation is a Chu map exactly when both binary incidence
+functions commute with its forward/backward legs; its counterexample
+`positive_evidence_not_faithful` forbids promoting the **positive-only**
+FCA concept lattice to a complete information model. This is an
+exact result on a specified TWO-coordinate evidence pairing, not an
+identification of those evidence coordinates with the two spatial
+slots of Frege/SPO. The `FOUR` twist-product's **commutative** fusion
+and the independently proved **noncommutative** binary-relation
+composition remain distinct operations.
 
 **Executable law correspondence.** Red Cup's existing [FOUR-valued Chu
 implementation](https://github.com/red-cup-engineering/computer-data-engineering-services-section/blob/main/lib/metrologic/src/chu.mjs) now derives its positive FCA `extension` from the
