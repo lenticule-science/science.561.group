@@ -2,10 +2,11 @@
 
 This package serves Lenticule Science's knowledge garden at
 `https://l-space.561.group`. Its name is shared with the underlying
-[Semioverse L-Space](../information-science-services-section/services/language-science-services-section/content/text/documents/articles/notes/2026/10/10/2026-10-10-note-about-l-space.md):
+[Semioverse L-Space](https://github.com/lenticule-science/science-services-section/blob/aaa5312fb8f8868c51976889930acb8b000fed2f/services/information-science-services-section/services/language-science-services-section/content/text/documents/articles/notes/2026/10/10/2026-10-10-note-about-l-space.md):
 the language space of content-addressed tokens and their claims.
 The garden's corpus, search, and document views are *projections*; this application
 does not define or realize the whole language-space semantics.
+The [LS-SAS-001 semantic specification](https://github.com/lenticule-science/linguistics-services-section/blob/main/specifications/l-space-semantic-architecture.md) qualifies the terms/claims/concepts/topics and scientific proof scope; the [Engineering HLD](https://github.com/red-cup-engineering/capability-cell-fabrication-services-section/blob/main/specifications/l-space-hld.md) and [LLD](https://github.com/red-cup-engineering/capability-cell-fabrication-services-section/blob/main/specifications/l-space-lld.md) govern opt-in source-pinned capability fabrication. Neither a corpus garden route nor a document hash is itself a semantically admitted term, independently received scientific finding, or deployed CapCell.
 
 Its current deployable application is `src/site.mjs`, exported as
 `@lenticule-science/l-space/site` and loaded as a companion of the Bare Cedar
