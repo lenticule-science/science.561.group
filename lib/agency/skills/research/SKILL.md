@@ -21,7 +21,7 @@ fuel-cap:
   seconds: 3600
   on-exhaustion: stop, write the note of what is established so far, name the next question as the output, and report the cap that was reached
 input: an allocation naming the question, the theory it answers from, and the engineering consumer if any
-output: one note and its glossary terms in the owning section, the source record when the question is measured against literature, and the opened requests for the engineering consumer; or the stated result that the territory is empty
+output: a source- and proof-qualified update to the existing canonical Science carrier and needed terms, or a justified new carrier only if none exists; a recipient-bound Engineering requirement or evidenced unknown result
 requires-capabilities:
   - read
   - path-corpus
@@ -129,23 +129,31 @@ derived coordination framework with its provenance kept
 A rule that no longer fits reality has its revision opened with the evidence.
 Settle nothing beyond the allocation.
 
-### 5. Write the note and the terms in the owning section
+### 5. Consolidate the owning Science carrier; create only missing terms
 
-State the theory in declarative sentences, with the Leader's statements taken as
-theory and cited by their record, and the house's by path and line
-([rule](../../../../../561-group-services-section/lib/agency/rules/notes-state-the-theory.json)).
-The note makes no evidence grades and no disclaimers. What is not yet derived
-comes after the statement, briefly, and never in place of it. The conflicts of
-step 4 follow the statement, each with both sides.
+State supported theory in declarative, falsifiable sentences, with every
+premise cited to the exact owning paper, external source or Lean declaration
+and scope ([rule](../../../../../561-group-services-section/lib/agency/rules/notes-state-the-theory.json)).
+**Edit an existing canonical document before making a nearby new note.**
+When two documents repeat one result, first preserve all unique definitions,
+counterexamples, source provenance, historic authority, and counterevidence
+in the survivor; only then retire the demonstrably redundant text, checking
+inbound links and preserving retrievable revision history. Distinguish
+proved-in-scope, observed, externally supported, analogy, hypothesized,
+contested, and unassayed claims where their engineering consequences differ.
+A Lean theorem proves its stated formal result, not the analogies built on it.
+Unknown derivations and both sides of scientific conflicts remain explicit.
 
-- The note goes in the owning section at
-  `content/text/documents/articles/notes/YYYY/MM/DD/YYYY-MM-DD-note-on-<subject>.md`
-  with `title`, `description`, `date-created`, `keywords` and `authors`. A
-  measured question cites its source record's rows and carries the derived
-  `references:`; `record-check` ships at zero errors.
-- Each term the note defines or revises goes in the same section at
-  `content/text/glossary/terms/<term>.md`, as an enrichment of the entry if one
-  exists. A term is not duplicated beside the existing one.
+- Locate the **current Science owner-held** note or research paper first.
+  Enrich it and reconcile its assertions and source identities. Only if no
+  authoritative existing carrier answers this question may the Scientist
+  create `content/text/documents/articles/notes/YYYY/MM/DD/YYYY-MM-DD-note-on-<subject>.md`.
+  Measured questions retain source-record rows and `references:` with
+  `record-check` passing before receiving.
+- Enrich the owner's existing canonical `content/text/glossary/terms/<term>.md`.
+  Create a term only when there is genuinely no semantic home. Distinct senses,
+  languages, contradictory testimony and dated changes are not duplicates
+  merely because their spelling matches.
 - The record is at least as rich as what is reported in chat
   ([rule](../../../../../561-group-services-section/lib/agency/rules/durable-record-at-least-as-rich-as-chat.json)).
   Findings reach the corpus inside `/home/emsenn/info`, never `/tmp` or a
@@ -158,13 +166,17 @@ the request on the work board with `agency-work-propose`. It names the wanted
 outcome and the judge that will receive it, never the builder or the
 implementation. Each request carries, in the owning engineering section's terms:
 
-1. requirements in EARS form, one `shall` each, each traceable to a sentence of
-   the note;
-2. the specification the note and any golden vectors give;
-3. the design constraints the theory sets, without code, data or brand
+1. Stable, numbered EARS `shall` requirements, each traced to the exact
+   Science claim, external source or kernel-checked declaration;
+2. A candidate or existing **SAS** with explicit evidence and falsifiers,
+   addressing stakeholder concerns under ISO/IEC/IEEE 42010 as applicable;
+3. Constraints the engineering owner **HLD** must allocate and **LLD** must
+   express as typed contracts, checks and refusals, without taking away that
+   owner's design authority
    ([order rule](../../../../../561-group-services-section/lib/agency/rules/science-engineering-operations-parameterize-in-order.json));
-4. the receiving conditions: how the receiving office judges that the
-   requirements hold.
+4. An independent Operations/consumer receiving condition for an actual
+   installed effect, admissible rights, measured resources and buyer/customer
+   value. CI success and source hashes alone cannot satisfy it.
 
 Where the engineering is too large for one request, write the requirements and
 specification in the owning section and name the slices.
@@ -179,8 +191,9 @@ Return the output the skill declares.
 
 One of:
 
-- the note, the terms and the opened requests, each named by path or work-item
-  id, with the one-line statement of what the theory now says;
+- the changed canonical Science carrier (or explicitly justified new one),
+  needed term revisions, proof/observation status, and typed receiving work
+  references named by exact source path or Semioverse work identity;
 - the statement that the territory is empty or not yet reachable, with the
   searches that show it and the nearest held theory, which is a valid result;
 - a further inquiry, when the question transformed or the cap was reached,
