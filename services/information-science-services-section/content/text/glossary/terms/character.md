@@ -28,7 +28,7 @@ $$\mathcal{X} = (\chi : H \to H,\; F_\chi = \mathrm{Fix}(\chi) \hookrightarrow H
 
 where:
 - $\chi : H \to H$ is the **character nucleus** — an internal nuclear endomorphism of the Heyting algebra object $H$ in the relational universe $R = \mathbf{Sh}(T, J)$; it is fiberwise a nucleus: at each history $t$, $\chi_t : H_t \to H_t$ is idempotent ($\chi_t \circ \chi_t = \chi_t$), monotone ($a \leq b \implies \chi_t(a) \leq \chi_t(b)$), and inflationary ($a \leq \chi_t(a)$); $\chi$ is an element of the nucleus monoid of $H$ and is distinct from $\sigma$ and $\Delta$
-- $F_\chi = \mathrm{Fix}(\chi)$ is the **behavioral space** — the internal sub-Heyting-algebra of $H$ fixed by $\chi$: the sublattice $\{a \in H_t : \chi_t(a) = a\}_{t \in T}$; acting in character means operating within $F_\chi$; the character closes $F_\chi$ under the Heyting operations inherited from $H_t$
+- $F_\chi = \mathrm{Fix}(\chi)$ is the proposed **behavioral space** — the fixed-point Heyting/frame structure induced by the nucleus on $H$, with inherited finite meets but **nucleus-closed joins**, not generally a sub-Heyting algebra under every inherited operation. This construction models a particular disposition only if the selected interpretation justifies it
 
 **Four invariants.** $\mathcal{X}$ is a character iff it satisfies:
 
@@ -63,7 +63,7 @@ The nucleus monoid of $H$ contains $\sigma$, $\Delta$, and all other nuclear end
 
 $\sigma$ and $\Delta$ are postulated by this relational-universe model — their actual existence and meaning must be established in the selected carrier of $(R, H, \sigma, \Delta, H^*)$. $\chi$ is a choice: the specific additional nucleus introduced when a character or persona is specified. A bare entity in the relational universe has $\sigma$ and $\Delta$ acting on its fiber; an entity with character has $\chi$ as well.
 
-**Interaction with $H^*$**: the behavioral space $F_\chi$ is a sub-Heyting-algebra of $H_t$ but does not generally equal $H^*_t$. Three distinct cases:
+**Interaction with $H^*$**: the behavioral space $F_\chi$ has a nucleus-induced Heyting structure over $H_t$ but does not generally equal $H^*_t$. Three distinguishable cases follow under the stated common-carrier assumptions:
 
 - $F_\chi \subseteq H^*_t$: the character only endorses propositions that are already normatively settled. A highly conformist disposition — the character produces only what the institution recognizes.
 - \(F_\chi\cap H_t^*=\{\top\}\) and \(F_\chi\not\subseteq H_t^*\): **no non-top common fixed point**, even though the three nuclei still share top. This is a candidate model of nontrivial institutional/behavioral incompatibility, not an empty intersection.
@@ -87,9 +87,9 @@ An agent can hold a role while having any character compatible with the role's s
 
 From information theory: a stationary ergodic source has a unique, characteristic entropy rate — an irreducible distributional identity. The LZ complexity of an individual sequence identifies it without reference to any generating distribution. Both are formal analogs of character: the invariant that identifies *this* process as itself.
 
-In the relational universe, $F_\chi = \mathrm{Fix}(\chi)$ is the exact analog of the ergodic source's characteristic distribution: the sublattice of propositions the agent characteristically produces. The character nucleus $\chi$ is the formal identity of the agent's behavioral process — its invariant fingerprint across all interactions.
+In the proposed relational model, $F_\chi = \mathrm{Fix}(\chi)$ is a **possible analogy** for a source's characteristic distribution: neither an ergodic theorem nor an observed distribution for a particular agent follows from the nucleus axioms. The character nucleus $\chi$ is the formal identity of the agent's behavioral process — its invariant fingerprint across all interactions.
 
-An agent without character produces outputs distributed over all of $H_t$. An agent with character $\chi$ has outputs that converge to $F_\chi$: repeated interactions reveal the fixed-point set as the characteristic behavioral space. This is the information-theoretic content of character consistency.
+A candidate operational test would examine whether an agent's observed outputs fit a specified subset or converge under a declared update rule. The existence of $\chi$ as an idempotent mathematical operator **does not prove** an agent's outputs are distributed across $H_t$, converge to $F_\chi$, or allow $\chi$ to be inferred uniquely from samples. Those are hypotheses requiring measured outputs, sampling assumptions and independently checked inference.
 
 ## Nuclear reading
 
@@ -119,8 +119,8 @@ An agent without character produces outputs distributed over all of $H_t$. An ag
 
 ## Open questions
 
-- Whether the character nucleus $\chi$ must commute with $\sigma$ and $\Delta$ for the Persona to be coherent — whether $\chi \circ \sigma = \sigma \circ \chi$ and $\chi \circ \Delta = \delta \circ \chi$ are required or merely desirable, and whether violation of these conditions produces specific failure modes (identity inconsistency, normative conflict, etc.).
-- Whether the ordering on the nucleus monoid — $\chi_1 \leq \chi_2$ iff $F_{\chi_2} \subseteq F_{\chi_1}$ — constitutes a meaningful ordering on characters, and whether the meet $\chi_1 \wedge \chi_2$ (the nucleus whose fixed space is $F_{\chi_1} \cup F_{\chi_2}$) represents character combination or character conflict.
+- Whether the character nucleus $\chi$ must commute with $\sigma$ and $\Delta$ for the Persona to be coherent — whether $\chi \circ \sigma = \sigma \circ \chi$ and $\chi \circ \Delta = \Delta \circ \chi$ are required or merely desirable, and whether violation of these conditions produces specific failure modes (identity inconsistency, normative conflict, etc.).
+- Whether the ordering on the nucleus monoid — $\chi_1 \leq \chi_2$ iff $F_{\chi_2} \subseteq F_{\chi_1}$ — constitutes a meaningful ordering on characters, and how the meet $\chi_1 \wedge \chi_2$ acts on the induced fixed-point carrier (whose fixed points are **not generally** the raw union $F_{\chi_1} \cup F_{\chi_2}$), and whether the resulting operation could model character combination or conflict.
 - Whether the **entropy rate** of the behavioral space $F_\chi$ (in the information-theoretic analog) has a formal counterpart in the relational universe — a nucleus-theoretic measure of how "rich" or "constrained" a character is, and whether more constrained characters ($F_\chi$ smaller) correspond to more determinate identities.
 - Whether an agent can have **multiple simultaneous characters** — a family $\{\chi_i\}$ of nuclei — and whether the meet $\bigwedge_i \chi_i$ in the nucleus monoid represents the composite character, or whether multiple nuclei produce an inconsistent behavioral space.
 - The relationship between character and the **haecceity** of the persistent identity: whether the character nucleus $\chi$ partially constitutes the haecceity of the persona-bearing agent — whether knowing $\chi$ (and $F_\chi$) individuates the agent, or whether haecceity is additional to and independent of the behavioral profile.
