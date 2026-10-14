@@ -14,7 +14,7 @@ keywords:
   - electronic-design-automation
   - central-dogma
   - source-integrity
-status: source-reconciled-candidate
+status: design
 declared-by: claude-interactive-session-supplying-leader-movement-team
 current-revision-by: chatgpt-web
 ---
