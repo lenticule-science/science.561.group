@@ -214,7 +214,21 @@ a physical free-energy gradient likewise requires an explicit
 structure-preserving model and measured energy; a protein-folding
 metaphor cannot substitute for an executable unit test.
 
-**Electronic design automation.** A useful analogy is the
+**Electronic design automation.** The actual
+[OpenROAD developer guide](https://openroad.readthedocs.io/en/latest/contrib/DeveloperGuide.html)
+makes a strong practical comparison: its implementation puts multiple
+tools in one application with one database, discouraging file-based
+handoffs and process forks in the design flow. That is an engineering
+precedent for reusing the house's existing source/term/evidence carrier
+rather than serializing an independent pseudo-registry at every stage.
+Its [native autonomous RTL-to-GDSII flow](https://openroad.readthedocs.io/en/latest/)
+is a real external benchmark for repeatable stage verification,
+throughput and resource accounting, not evidence that the Group has
+already reached that performance. The source's ordered and independently
+testable design gates are distinct from semantics that only appear
+structurally similar.
+
+**Electronic design automation, as the translation analogy.** A useful analogy is the
 specification → typed model → netlist/build → stage verification →
 released artifact → independent acceptance pipeline. A single
 successful local check does not establish the entire chain.
@@ -300,6 +314,13 @@ the private Node workspace suites must actually execute, and
 Coesite must read provider deployment and independent consumer
 effects. Source changes or these notes cannot settle those
 independent institutional obligations.
+
+### Primary external research sources and proof-method provenance
+
+- C. A. R. Hoare (1969), [“An axiomatic basis for computer programming”](https://doi.org/10.1145/363235.363259), *Communications of the ACM* 12(10), 576–580: source for the original axiomatic pre/postcondition programme. The Group's Rendanheyi/Huidu organizational interpretation remains a separate design claim, not a theorem of Hoare's paper.
+- Francis Crick (1970), [“Central Dogma of Molecular Biology”](https://doi.org/10.1038/227561a0), *Nature* 227, 561–563: precise sequential-information-transfer constraint in molecular biology, not an assertion that software systems literally inherit biological mechanisms.
+- J. J. Hopfield (1974), [“Kinetic Proofreading: A New Mechanism for Reducing Errors in Biosynthetic Processes Requiring High Specificity”](https://pmc.ncbi.nlm.nih.gov/articles/PMC434344/), *PNAS* 71(10), 4135–4139: driven nonequilibrium discrimination mechanism. A multi-agent verification budget is at most a falsifiable analogy until modeled and measured; Hopfield does not prove a three-agent organizational minimum.
+- OpenROAD Project, [developer guidance](https://openroad.readthedocs.io/en/latest/contrib/DeveloperGuide.html) and [toolflow overview](https://openroad.readthedocs.io/en/latest/): a concrete public autonomous EDA baseline, with real implementation and signoff objectives.
 
 ### References and revision owners
 
