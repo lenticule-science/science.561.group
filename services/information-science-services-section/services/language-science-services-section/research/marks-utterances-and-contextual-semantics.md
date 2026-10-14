@@ -139,9 +139,35 @@ the lawfully authorized local effect has the precise form
 The Lean positing development proves knowledge inflation, idempotence,
 monotonicity, and commutation for this *information-adding* operation.
 Independent positive and negative charges can produce a contested
-FOUR valuation; one charge must not overwrite the other. This does not
-model evidence retraction, every Austin/Searle illocutionary force,
-or a legislator's institutional declaration without separate rules.
+FOUR valuation; one charge must not overwrite the other. The
+[2026-10-14 Lean source revision](https://github.com/lenticule-science/obsmetrologia/blob/668feb557a80c99c7918b6bed88cfbfa04b760ae/Obsmetrologia/Language/Positing/Morphism.lean)
+further establishes **`asserting_then_denying_is_contesting`** and
+**`asserting_denying_commute`** over the existing exact claim-point
+carrier; [Lean core CI](https://github.com/lenticule-science/obsmetrologia/actions/runs/38520546846)
+passed on that revision. These are logical evidence-injection theorems,
+not the human speaker's subjective intention.
+
+The corresponding Engineering implementation is **already owned**:
+[SignCell semantic-claim admission/confluence](https://github.com/red-cup-engineering/computer-data-engineering-services-section/blob/main/apps/signcell/src/semantic-claim.mjs)
+wraps typed `subject/predicate/object` refs and separate
+`for/against` witness sets; [the existing cell
+kernel](https://github.com/red-cup-engineering/computer-data-engineering-services-section/blob/main/apps/signcell/src/cell.mjs)
+combines witnesses by knowledge join while keeping the claim's
+content identity stable. The
+[source-level SignCell conformance suite](https://github.com/red-cup-engineering/computer-data-engineering-services-section/blob/509785df8660a6de2b9f7669a5413634bdfc97c4/apps/signcell/test/semantic-claim.test.mjs)
+now checks knowledge-join commutation, associativity,
+idempotence, contradiction retention, typed proposition separation
+and refusal of unsupported `force`, `authority` or
+`perlocution` fields. **These JS tests are authored and
+source-inspected, not yet confirmed by a successful native SignCell
+workspace test run.** The available
+[FOUR math tests](https://github.com/red-cup-engineering/computer-data-engineering-services-section/blob/main/test/four.test.mjs)
+are distinct from integration assurance; a CI queue or source
+syntax check is not an attested source-to-service effect.
+
+This does not model evidence retraction, every Austin/Searle
+illocutionary force, or a legislator's institutional declaration
+without separate rules.
 
 Let \(C_{\mathcal S}:V\to V\) be a lawfully selected rule-system
 closure, if one has actually been defined and proved extensive,
