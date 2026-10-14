@@ -78,6 +78,34 @@ test("thousands of bounded synthetic admissions, cancellations and transfers con
   assert.ok(s.completed>0n);
 });
 
+test("a separately received spare node increases synthetic completions without inventing capacity", () => {
+  function run(withAuthorizedTransfer) {
+    let s=initial([0n,0n,0n]);
+    for(let t=0;t<100;t++){
+      const received=s.z[0];
+      const atA=s.q[0]+2n;
+      const atB=s.q[1]+received;
+      const completeA=atA>0n?1n:0n;
+      const completeB=atB>0n?1n:0n;
+      // One transport slot and one CPU job/tick at each node. The rest
+      // of B's apparent unused capacity is not spent or billed in this assay.
+      const send=withAuthorizedTransfer && atA>completeA ? 1n : 0n;
+      s=advance(s,{arrival:[2n,0n,0n],
+        completion:[completeA,completeB,0n],withdrawal:[0n,0n,0n],
+        send:[send,0n,0n],receive:[received,0n,0n]});
+      assert.ok(conserved(s));
+    }
+    return s;
+  }
+  const fixed=run(false), redistributed=run(true);
+  assert.equal(fixed.completed,100n);
+  assert.equal(redistributed.completed,199n);
+  assert.equal(sum(fixed.q)+sum(fixed.z),100n);
+  assert.equal(sum(redistributed.q)+sum(redistributed.z),1n);
+  // These results require an admissible transport and a separately
+  // received second compute actor; the numerical example is not a cloud fact.
+});
+
 test("lost or fabricated transport receipts cannot be mistaken for completed throughput", () => {
   let s=advance(initial(), {arrival:[0n,0n,0n], completion:[0n,0n,0n],
     withdrawal:[0n,0n,0n], send:[2n,0n,0n], receive:[0n,0n,0n]});
