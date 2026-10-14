@@ -169,6 +169,9 @@ This does not model evidence retraction, every Austin/Searle
 illocutionary force, or a legislator's institutional declaration
 without separate rules.
 
+**Software receiving update (2026-10-14):** The existing [communicating speech-act owner](https://github.com/emsenn/communicating/blob/main/src/speaking/illocuting/index.mts) now checks its five Searle force names at runtime instead of confusing them with the four independently valued evidence states. Its `perlocute` carrier reports a proposed consequence, while the separate `observePerlocution` operation requires a distinct receiving actor, attributable observation, and caller-supplied verifier returning exactly true. The verifier's actual authority remains a provider obligation, and the [negative tests](https://github.com/emsenn/communicating/blob/main/test/speech-act-receiving.test.mjs) are not proof of a deployed consumer receipt. This implements one bounded part of LS-SAS-022 without claiming a general theorem about all force operators.
+
+
 Let \(C_{\mathcal S}:V\to V\) be a lawfully selected rule-system
 closure, if one has actually been defined and proved extensive,
 monotone and idempotent. A bounded formal transition can then be
