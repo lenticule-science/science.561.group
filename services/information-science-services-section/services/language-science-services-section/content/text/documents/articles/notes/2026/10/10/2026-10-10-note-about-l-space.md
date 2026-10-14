@@ -127,6 +127,36 @@ The Leader's proposed names are **1D L-Space = SCA**, **3D L-Space = SEN**, **4D
 | **3D · SEN** (semiotic expression notation) | [notation statics/typing/JSON bridge](https://github.com/red-cup-engineering/computer-data-engineering-services-section/blob/main/src/semiotic-expression-notation/json-codec.mjs), [typed runtime](https://github.com/red-cup-engineering/computer-code-engineering-services-section/blob/main/src/semiotic-expression-notation/runtime.mjs), [revised 2026-09-23 source specification](https://drive.google.com/file/d/1rB0RGTywUQTNMgcgUd1RZbhmn2QDdI5j/view) | The **chosen relational projection** is `(s,p,o)`: three typed positions for subject, predicate, object, each represented as an admitted SEN term or address-bearing mark. This is a *triple of coordinates*, not a proof that all SEN expressions are triples (SEN is a typed term calculus with higher structure) or three orthogonal spatial axes. Claim evidence has an additional FOUR valuation; it is not secretly a fourth SEN coordinate. |
 | **4D · SEAVT** (semiotic entity–attribute–value–time) | [later 2026-09-23 source specification](https://drive.google.com/file/d/1xWirQe_hzKOn6YOn_-6f62w4XG7oLwpN/view) vs [earlier copy](https://drive.google.com/file/d/1-qxfXcUCKQnwhDbpM8C5FzzYhHd0QUSo/view) | An admitted event row is `(e,a,v,t)`, with first three **closed, typed SEN terms**, `t` its recorded **witness time**, and separate provenance/evidence standing. This is temporalized predication; it is not a four-dimensional Lorentzian metric. The later source records relocation to a `semiotic-eavt-services-section` at commit `36116a7…`, while the earlier copy asserts the code-section implementation and an obsolete `charge.support/refutation` field. The later `told.for/against` interface must be independently checked against executable source before either copy is used as current production documentation. |
 
+**Implementation status checked 2026-10-14.** The [source-owned
+Data Engineering SEAVT package](https://github.com/red-cup-engineering/computer-data-engineering-services-section/tree/main/services/computer-content-engineering-services-section/services/computer-serialized-content-engineering-services-section/services/json-services-section/services/jsonl-services-section/services/eavt-services-section/services/semiotic-eavt-services-section)
+currently exists at the nested EAVT section, exporting
+`@red-cup-engineering/semiotic-eavt-services-section/admit-seavt-row`
+with `seavtRow`, `seavtOfJson`, `seavtOfSignCell` and
+`signCellOfSeavt`. Its [source tests](https://github.com/red-cup-engineering/computer-data-engineering-services-section/blob/main/services/computer-content-engineering-services-section/services/computer-serialized-content-engineering-services-section/services/json-services-section/services/jsonl-services-section/services/eavt-services-section/services/semiotic-eavt-services-section/test/signcell-seavt.test.mjs)
+specifically cover retained FOUR for/against testimony, the unchanged
+SCA address of a predicated cell as evidence accumulates, distinct
+SEAVT row addresses when evidence or observation time changes,
+and refusal of forged cell addresses. The [clock implementation](https://github.com/red-cup-engineering/computer-data-engineering-services-section/blob/main/services/computer-content-engineering-services-section/services/computer-serialized-content-engineering-services-section/services/json-services-section/services/jsonl-services-section/services/eavt-services-section/services/semiotic-eavt-services-section/src/clock.mjs)
+distinguishes absolute observed instants at submillisecond precision.
+The generic SEAVT carrier `seavtRow` admits typed syntax, while
+source-clock requirements are **separate gates** in SignCell projection
+and the chronological resource-head service; passing these tests
+does not authenticate the issuing clock.
+
+This existing **SCA → SEN → SEAVT projection** is concrete and
+source-testable; it is not yet a theorem establishing 1+3 physical
+dimensions, a complete causal order, or a market-installed semantic
+reasoning engine. In particular,
+[the resource head](https://github.com/red-cup-engineering/computer-data-engineering-services-section/blob/main/services/computer-content-engineering-services-section/services/computer-serialized-content-engineering-services-section/services/json-services-section/services/jsonl-services-section/services/eavt-services-section/services/semiotic-eavt-services-section/src/causal-resource-head.mjs)
+selects the most recent **source-clock** observations and keeps
+same-time alternatives, but timestamp ranking alone cannot decide
+whether different-time reports were causally dependent; a
+`(t_1<t_2)` comparison is not a proof of `event_1→event_2`.
+The [LS-HLD](https://github.com/red-cup-engineering/capability-cell-fabrication-services-section/blob/main/specifications/l-space-hld.md)
+and [LS-LLD](https://github.com/red-cup-engineering/capability-cell-fabrication-services-section/blob/main/specifications/l-space-lld.md)
+now cite the actual existing owner and keep the later
+operational/causal receiving tests distinct.
+
 The derived maps need qualifications. An SCA can enter SEN as an **opaque** `mark(ni)` after RFC-6920 admission; this does not infer a predicate or meaning. A typed SEN predication can be witnessed as an SEAVT row only after a specific **time source, observation authority and SEAVT admission** are provided. Forgetting `t` projects a valid SEAVT record to an SEN triple, losing temporal provenance: distinct events may yield the same triple. Therefore the reverse map is **not canonical**. Hashing the SEAVT *row* creates that row's content identity, normally distinct from an SCA naming any of its term components. On all three projections, source/witness validity and customer receiving remain separate from content identity.
 
 ### Dimensionality must survive an ablation assay (2026-10-14)
