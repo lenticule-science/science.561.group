@@ -38,7 +38,8 @@ export function assayClaimLineage({workRef,sourceRevision,requiredClaimRefs,
                                   sourceClaims,renderedClaims}={}) {
   if (!nonempty(workRef) || !nonempty(sourceRevision) ||
       !Array.isArray(requiredClaimRefs) || !requiredClaimRefs.every(nonempty) ||
-      !unique(requiredClaimRefs) || !Array.isArray(sourceClaims) ||
+      !unique(requiredClaimRefs) || requiredClaimRefs.length>10000 ||
+      !Array.isArray(sourceClaims) ||
       !Array.isArray(renderedClaims) || sourceClaims.length>10000 ||
       renderedClaims.length>10000)
     throw new TypeError('invalid claim-lineage packet');
