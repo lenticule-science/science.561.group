@@ -63,9 +63,15 @@ carry the normative authority and current implementation state.
 
 ## 1. What this note adds, and what it does not
 
-Biology's own information-to-machine pipeline — DNA transcribed to a transient, single-gene mRNA, translated
-by a ribosome into a protein, which folds into function — is external biology, not repo law
-([X], background only). Mapped loosely onto the fabrication tower: committed repo law is the durable genome,
+The biological transmission and translation story is **background science,
+not organizational law**. [Crick (1970)](https://doi.org/10.1038/227561a0)
+defines the central dogma in terms of prohibited residue-by-residue
+sequence information transfer out of proteins; it does not assert that
+all biological products follow a simple DNA→single-gene mRNA→protein
+linear pipeline, or that one software work item is literally one gene.
+Transcription, translation, folding and regulation are separable
+mechanisms, and their organizational analogies require separately
+stated structure-preserving maps. Mapped loosely onto the fabrication tower: committed repo law is the durable genome,
 minting a work order is transcription, a hired provider is the ribosome, settling is the fold (downstream of
 this note, in `2026-07-24-the-union-evm-chain-as-a-folding-protein.md`).
 
@@ -79,7 +85,11 @@ no new claim about durability. What the central-dogma frame is for is a differen
 germline/soma frame does not ask: **given that a change must eventually pass through a hired provider to get
 made, where must the specificity for that change originate?** The kinetic-proofreading note answers *how
 fidelity is bought* (real cost — a distinct author, assayer, and closure verifier, burning three hires
-because Hopfield's 1974 result says no single-read discrimination step can beat the equilibrium error floor).
+as an engineering choice. [Hopfield's 1974 primary paper](https://pmc.ncbi.nlm.nih.gov/articles/PMC434344/)
+establishes a kinetic proofreading mechanism under particular
+nonequilibrium biochemical assumptions; it does **not** prove that
+three separate AI hires are necessary, sufficient, or optimal for
+software correctness).
 This note answers *where the information must already be, before that machinery ever runs* — in the work
 order, never assumed to be recoverable from the provider. These are complementary, not redundant: kinetic
 proofreading prices the check; this note prices the input to the check.
@@ -180,9 +190,13 @@ roles already buy, whatever its distance from literal codon degeneracy.
 
 ## 5. Plasmids: a package as a portable, atomic capability
 
-A plasmid is a self-contained gene cassette that transfers capability laterally — organism to organism —
-rather than only by vertical descent, and it expresses correctly in whatever cell receives it because it
-folds on its own, independent of its origin. A package, skill, or die that a settlement hires or imports from
+A plasmid is transferable genetic material, but stable maintenance and
+expression depend on its actual host, regulatory, compatibility and
+selection conditions; correct expression in *every* receiving cell is
+not a biological law. The Group's portable package comparison is
+therefore conditional: a versioned capability may cross an enterprise
+boundary when its dependencies, authority, interface, assay and
+receiving environment are demonstrably compatible. A package, skill, or die that a settlement hires or imports from
 another settlement is the same structure: capability spreading across a boundary rather than only down a
 lineage, and it can do this only because it is atomic — the Leader's sovereignty grammar states this exactly
 as `capability == die == enterprise` (`…research-on-the-union-as-a-cell…` §1), not the looser
@@ -192,9 +206,16 @@ let it transfer at all — a plasmid folded into the chromosome loses its mobili
 
 ## 6. Proved, settled, and interpretive — an honest accounting
 
-**External fact, background only [X]:** the central dogma itself (DNA→mRNA→protein), ribosome mechanics,
-codon degeneracy, gene regulation, plasmids and horizontal transfer, Hopfield's 1974 kinetic-proofreading
-result cited by the sibling note.
+**External sources, background not executable laws [X]:**
+[Crick (1970)](https://doi.org/10.1038/227561a0) for the central
+dogma's restricted sequential-information-transfer statement;
+[Hopfield (1974)](https://pmc.ncbi.nlm.nih.gov/articles/PMC434344/)
+for nonequilibrium kinetic discrimination; and
+[Hoare (1969)](https://doi.org/10.1145/363235.363259)
+for axiomatic reasoning about program pre/postconditions.
+The *Rendanheyi as Hoare Program* and ribosome/translator images
+are house research interpretations, not claims those authors proved
+organizational inference markets or provider fungibility.
 
 **Operative conventions [R]:** author exclusion and the seven-stage unionification tower
 (`…research-on-fabrication-with-fidelity…` §§1, 6) — the
