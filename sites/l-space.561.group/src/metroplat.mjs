@@ -23,7 +23,45 @@ import { textRepr } from '@red-cup-engineering/http-services-section/representat
 import { EXCLUDED_SEGMENTS, lSpaceReaderPolicy } from './archive-policy.mjs';
 const escape = (value) => String(value ?? '').replace(/[&<>"']/gu, (c) => ({'&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;'}[c]));
 const documentPath = (id) => `/knowledge?document=${encodeURIComponent(id)}`;
-const page = (body) => textRepr(`<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>L-Space · MetroPlat</title></head><body><nav><a href="/play">MetroPlat</a> · <a href="/knowledge">L-Space</a></nav><main><h1>L-Space</h1><form action="/knowledge" method="get"><label>Search the knowledge corpus <input name="query" type="search" required></label><button>Search</button></form>${body}</main></body></html>`, {type: 'text/html; charset=utf-8', cacheControl: {noStore:true}});
+/** A browser reading of the existing CAIRN topic operation. These are sourced
+ * documentary relations, not automatically authorized work or RDF entailments.
+ * This is the human counterpart of the already-installed lspace_vault_topic.
+ * All linked paths come from the same admitted archive as /knowledge?document.
+ */
+function renderSourceTermDossier(topic) {
+  if (!topic || topic.type !== 'CairnTopic' || !Array.isArray(topic.homes)
+    || !Array.isArray(topic.namesakes) || !Array.isArray(topic.pointing)
+    || !Array.isArray(topic.gaps)) throw new TypeError('an admitted CairnTopic reading is required');
+  const source = (path, title = path) =>
+    `<a href="${escape(documentPath(path))}">${escape(title)}</a>`;
+  const items = (rows, render, empty) =>
+    rows.length ? `<ul>${rows.map(item=>`<li>${render(item)}</li>`).join('')}</ul>`
+      : `<p>${escape(empty)}</p>`;
+  const cite = item => `${source(item.path, item.title ?? item.path)}${item.locale ? ` <small>(${escape(item.locale)})</small>` : ''}`;
+  const links = (topic.mentioning ?? []).map(path=>source(path));
+  const mentions = topic.mentioningCount ?? links.length;
+  const neighbourhood = topic.neighbourhood ?? {};
+  const facet = (label, values = []) =>
+    values.length ? `<h4>${escape(label)}</h4>${items(values,
+      value=>`${escape(value.value)} (${escape(value.count)})`, 'No values')}` : '';
+  const gaps = topic.gaps.map(gap=>`<strong>${escape(gap.gap)}</strong> — ${escape(gap.reason)}`);
+  return `<article><h2>Language-space readings of “${escape(topic.name)}”</h2>
+    <p>Read source-claimed relations and their contexts. A document, repeated word, or frontmatter key does not establish a proof, a current office appointment, or a received action.</p>
+    <section><h3>Source-owned glossary homes</h3>${items(topic.homes,cite,'No qualified glossary home answers to this name.')}</section>
+    <section><h3>Other readings of this name</h3>${items(topic.namesakes,cite,'No additional namesakes.')}</section>
+    <section><h3>Documents that refer to it through a named relation (${escape(topic.pointingCount ?? topic.pointing.length)})</h3>
+      ${items(topic.pointing,item=>`${source(item.path)} — ${escape(item.through.join(', '))}`,'No source relation references found.')}</section>
+    <section><h3>Textual mentions without an identified typed relation (${escape(mentions)})</h3>
+      ${items(links,item=>item,'No additional textual mentions.')}</section>
+    <section><h3>Context of nearby documents (${escape(neighbourhood.documents ?? 0)})</h3>
+      ${facet('Source types',neighbourhood.byType)}
+      ${facet('Keywords',neighbourhood.byKeyword)}
+      ${facet('Source locales',neighbourhood.byLocale)}</section>
+    <section><h3>Open source-resolution questions</h3>${items(gaps,item=>item,'No source-resolution gap found by this reading.')}</section>
+    <p><small>Counts describe the selected admitted corpus, not truth or independent evidence. Check source revisions, authority, competing testimony, and exact receiver conditions before relying on a claim.</small></p>
+  </article>`;
+}
+const page = (body) => textRepr(`<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>L-Space · MetroPlat</title></head><body><nav><a href="/play">MetroPlat</a> · <a href="/knowledge">L-Space</a></nav><main><h1>L-Space</h1><form action="/knowledge" method="get"><label>Search source documents <input name="query" type="search" required></label><button>Search</button></form><form action="/knowledge" method="get"><label>Explore a term and its source relations <input name="name" type="search" required></label><button>Explore</button></form>${body}</main></body></html>`, {type: 'text/html; charset=utf-8', cacheControl: {noStore:true}});
 
 /** One installed, read-only archive projection. The FeltOS entrance admits both
  * people and machine clients; this application opens no listener or OAuth server.
@@ -150,8 +188,8 @@ export function lSpaceMetroplat({config, admission, configuration = {}, archive:
         }
         const name=url.searchParams.get('name');
         if (name) {
-          const found=await call('vault_names',{name,limit:200});
-          return page(`<h2>Readings of ${escape(name)}</h2><p>These documents answer to this name; their differences remain available.</p><ul>${found.results.map(note=>`<li><a href="${escape(documentPath(note.path))}">${escape(note.title ?? note.path)}</a><p>${escape(note.path)}</p></li>`).join('')}</ul>${found.results.length ? '' : '<p>No document currently answers to this name.</p>'}`);
+          const dossier=await call('vault_topic',{name,limit:25});
+          return page(renderSourceTermDossier(dossier));
         }
         const query=url.searchParams.get('query');
         if (!query) {
