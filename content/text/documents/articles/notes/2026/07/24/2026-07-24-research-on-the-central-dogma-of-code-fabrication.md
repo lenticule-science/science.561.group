@@ -83,16 +83,22 @@ dies with the session, and `induct-work-products.mjs` being the only actor with 
 is that barrier made mechanical (§3 of that note). Relabeling germline as "genome" and soma as "message" adds
 no new claim about durability. What the central-dogma frame is for is a different question that the
 germline/soma frame does not ask: **given that a change must eventually pass through a hired provider to get
-made, where must the specificity for that change originate?** The kinetic-proofreading note answers *how
-fidelity is bought* (real cost — a distinct author, assayer, and closure verifier, burning three hires
-as an engineering choice. [Hopfield's 1974 primary paper](https://pmc.ncbi.nlm.nih.gov/articles/PMC434344/)
-establishes a kinetic proofreading mechanism under particular
-nonequilibrium biochemical assumptions; it does **not** prove that
-three separate AI hires are necessary, sufficient, or optimal for
-software correctness).
-This note answers *where the information must already be, before that machinery ever runs* — in the work
-order, never assumed to be recoverable from the provider. These are complementary, not redundant: kinetic
-proofreading prices the check; this note prices the input to the check.
+made, where must the specificity for that change originate?** The kinetic-proofreading note instead asks **what verification costs**
+and which independent roles can reject an invalid change. Its distinct
+author, assayer, and closure reviewer are an organizational design
+choice. [Hopfield's 1974 original research](https://pmc.ncbi.nlm.nih.gov/articles/PMC434344/)
+establishes a nonequilibrium biochemical discrimination mechanism
+under specific assumptions; it does **not** establish a theorem that
+exactly three AI hires are necessary, sufficient or optimal.
+
+This note asks a complementary question: **which intended
+specifications must be recoverable from the authorized work order
+before translation?** The answer depends on stakeholder authority,
+declared assumptions, typed inputs and independently testable
+postconditions; absent customer intent cannot be silently recovered by
+provider confidence. Verification effort and completeness of the
+upstream specification are different, measurable costs, not two names
+for one biological free-energy law.
 
 ## 2. The ribosome correspondence and its counterexamples
 
@@ -197,8 +203,11 @@ not a biological law. The Group's portable package comparison is
 therefore conditional: a versioned capability may cross an enterprise
 boundary when its dependencies, authority, interface, assay and
 receiving environment are demonstrably compatible. A package, skill, or die that a settlement hires or imports from
-another settlement is the same structure: capability spreading across a boundary rather than only down a
-lineage, and it can do this only because it is atomic — the Leader's sovereignty grammar states this exactly
+another settlement **resembles** a horizontally transferred capacity
+only when its authority and runtime dependencies remain separately
+admissible. Atomicity of the capability is a house governance requirement,
+not proof of universal biological transfer or expression. The Leader's
+sovereignty grammar states its chosen identity exactly
 as `capability == die == enterprise` (`…research-on-the-union-as-a-cell…` §1), not the looser
 "capability == skill == script == die == package" an earlier draft attributed to it. A capability absorbed
 into a parent so that it can no longer be hired, mounted, or released on its own has lost the atomicity that
