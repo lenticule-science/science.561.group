@@ -1,7 +1,7 @@
 # Systems Engineering Science Services Section
 
-The Systems Engineering Science Services Section is Red Cup Engineering's
-home for the systematic study of closed-loop regulation: how a system
+The Systems Engineering Science Services Section is Lenticule Science's
+source-owned home for the scientific study of closed-loop regulation: how a system
 observes its own condition, decides whether and how to change it, and acts
 on that decision through a persistent body of operational knowledge.
 
@@ -23,5 +23,8 @@ systems (operating systems, interfaces, and the like) as artifacts, which is
 a narrower and different concern. Dated source corpora are preserved under
 `lib/legacy/`.
 
-The engineering practice this theory grounds lives under
-`engineering-services-section/services/systems-engineering-services-section/`.
+The reusable engineering programs that may realize this theory belong to
+Red Cup Engineering; their running operating methods belong to Coesite Operations
+and the actual customer or Group instance owns its configured resources and
+independent receiving. This scientific section does not implement a scheduler,
+appoint a cloud account's operator, or certify a production outcome from theory.
