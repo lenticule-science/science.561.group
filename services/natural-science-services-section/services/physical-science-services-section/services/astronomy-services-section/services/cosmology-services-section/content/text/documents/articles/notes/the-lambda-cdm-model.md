@@ -3,6 +3,8 @@
 title: "The Lambda-CDM Model"
 description: "Modern cosmology has a standard model, and it is embarrassingly successful."
 date-created: 2026-03-31
+date-updated: 2026-10-14
+status: reviewed-background
 teaches:
   - lambda-cdm-model
 requires:
@@ -35,9 +37,7 @@ The dynamics are governed by the [Friedmann equations](../../../../../../../cont
 
 ## How well it works
 
-The model fits all major observations. The CMB power spectrum predicted by Lambda-CDM matches the Planck satellite data to extraordinary precision. The predicted baryon-to-photon ratio from the CMB agrees with the independent measurement from primordial deuterium abundances. The predicted matter power spectrum matches galaxy survey data. The predicted expansion history matches [Type Ia supernova](../../../../../../../content/text/glossary/terms/type-ia-supernova.md) distances.
-
-This is not one test. It is a web of independent, mutually constraining observations that all converge on the same set of parameter values. The probability that this agreement is accidental is negligible.
+The base model fits the Planck cosmic-microwave-background spectrum, large-scale structure, primordial abundance constraints and Type Ia-supernova distance relations remarkably well **under its stated assumptions**. These are independent observational probes, not proof of exact concordance or uniqueness. [Planck's parameter analysis](https://doi.org/10.1051/0004-6361/201833910) reports the base-model assumptions and the Hubble-constant discrepancy. The [DESI DR2 BAO result](https://doi.org/10.1103/tr6y-kpc6) finds a good flat-ΛCDM fit to BAO distances while noting CMB-parameter tension and conditional improvement from time-evolving dark-energy parametrizations. Different tests and model extensions do **not** automatically measure exactly the same parameters with identical systematics.
 
 ## What it cannot explain
 
@@ -53,7 +53,7 @@ Lambda-CDM is a parametric model, not a derivation from first principles. It fit
 
 ## The Hubble tension
 
-The model also faces an empirical puzzle: the [Hubble parameter](../../../../../../../content/text/glossary/terms/hubble-parameter.md) measured locally (~73 km/s/Mpc via the [distance ladder](../../../../../../../content/text/glossary/terms/cosmic-distance-ladder.md)) disagrees with the value inferred from the CMB (~67 km/s/Mpc). If this is not a measurement error, it may point to physics beyond Lambda-CDM.
+The [Hubble parameter](../../../../../../../content/text/glossary/terms/hubble-parameter.md) inferred from Planck CMB observations under flat base-ΛCDM is about **67.4 km/s/Mpc**, while several direct distance-ladder determinations are near **73 km/s/Mpc**. This is a **model- and calibration-dependent discrepancy**, not evidence that physical space is mathematically inconsistent. Alternatives include unrecognized systematic effects or extensions to the cosmological model; neither explanation is presently compelled by these two numbers alone. See the [Planck analysis](https://doi.org/10.1051/0004-6361/201833910) and [DESI DR2 scientific results](https://data.desi.lbl.gov/doc/papers/dr2/).
 
 ## Why this matters
 
