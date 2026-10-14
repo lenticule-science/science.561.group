@@ -213,6 +213,41 @@ test('shared MCP serialization and real reading resources preserve the same sour
   assert.equal(publicReading.status, 404);
 });
 
+test('native term dossier exposes source relations without elevating names or frontmatter to institutional facts', async t => {
+  const fixture = await applicationFixture(t, {controls: true});
+  const {request, call, source, excludedPaths} = fixture;
+  const dossier = await call('vault_topic', {name: 'L-Space', limit: 25});
+  assert.equal(dossier.type, 'CairnTopic');
+  assert.equal(dossier.name, 'L-Space');
+  assert.equal(dossier.homes.length, 0, 'a source README is not itself a glossary');
+  assert.ok(dossier.namesakes.some(item=>item.path===source.declaration.canonicalPath),
+    'the name is read from the real admitted archive, not a synthesized lexical record');
+  const response = await servedResponseFromRepr(await request('lspace.metroplat',
+    '/knowledge?name=L-Space'), 'GET');
+  assert.equal(response.status, 200);
+  assert.match(response.body, /Language-space readings of/);
+  assert.ok(response.body.includes(`href="${documentPath(source.declaration.canonicalPath)}"`),
+    'source-backed reading retains the existing complete-document address');
+  assert.match(response.body, /No qualified glossary home answers to this name/u);
+  assert.match(response.body, /does not establish a proof/u);
+  assert.match(response.body, /Context of nearby documents/u);
+  for (const path of excludedPaths) assert.ok(!response.body.includes(path),
+    'nonadmitted custody strata must never leak through topic readouts');
+
+  const notAName = await servedResponseFromRepr(await request('lspace.metroplat',
+    '/knowledge?name=unrecorded-officer-not-in-vault'), 'GET');
+  assert.equal(notAName.status, 200);
+  assert.match(notAName.body, /No qualified glossary home answers to this name/u);
+  assert.doesNotMatch(notAName.body, /href="[^"]*unrecorded-officer-not-in-vault/u);
+
+  // A user-supplied HTML-shaped alias remains text, not markup or executable JS.
+  const hostile = await servedResponseFromRepr(await request('lspace.metroplat',
+    '/knowledge?name=%3Cscript%3Ealert(1)%3C%2Fscript%3E'), 'GET');
+  assert.equal(hostile.status, 200);
+  assert.ok(!hostile.body.includes('<script>alert(1)</script>'));
+  assert.match(hostile.body, /&lt;script&gt;/u);
+});
+
 test('real reader excludes custody/working strata, unadmitted and missing documents', async t => {
   const fixture = await applicationFixture(t, { controls: true });
   await receiveDeclaredDocument(fixture);
