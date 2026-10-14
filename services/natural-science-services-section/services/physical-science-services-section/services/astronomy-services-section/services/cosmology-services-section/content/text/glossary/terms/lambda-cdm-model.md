@@ -20,6 +20,8 @@ enables: []
 
 The Lambda-CDM model is the standard model of cosmology. It describes a universe that is spatially flat, governed by [general relativity](./general-relativity.md), and composed of approximately 5% [baryonic matter](../../../../../../content/text/glossary/terms/baryonic-matter.md), 27% cold [dark matter](../../../../../../content/text/glossary/terms/dark-matter.md) (CDM), and 68% [dark energy](../../../../../../content/text/glossary/terms/dark-energy.md) in the form of a cosmological constant (Lambda, $\Lambda$).
 
+The related [six open cosmological questions](../../documents/articles/notes/open-questions-in-cosmology.md) distinguish the dark sector, inflation, baryogenesis, quantum gravity, and the observational **Hubble and \(S_8\) tensions**. These tensions must be expressed as comparisons between named instruments, calibrated estimators and model assumptions. They are test cases for cosmology, not proof that a particular alternative mathematics or physical dimensionality is correct.
+
 The model has six free parameters:
 
 1. **$\Omega_b h^2$** -- baryon density
