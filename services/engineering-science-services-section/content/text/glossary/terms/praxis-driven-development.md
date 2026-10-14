@@ -23,9 +23,9 @@ The original April 4, 2026 formulation says that the practices necessary to adva
 
 Praxis is an observed, situated activity under agents' actual rights and constraints, not a code editor's sequence of trial executions. For an endeavor E and observation time t, let P(E,t) be a provenance-bearing set of practical demands, existing capabilities, recipient conditions, permissions and measurable costs. Let R be feasible candidate requirements; let V(r|P) be the *hypothesized* receiver value of satisfying requirement r in context P, including maintenance, risk and opportunity cost. Practical selection is the constrained decision:
 
-[
-r^* in operatorname*{argmax}_{r in R_{mathrm{admissible}}} V(rmid P(E,t)).
-]
+$
+r^{*} \in \operatorname*{arg\,max}_{r\in R_{\mathrm{admissible}}} V\!\left(r\,\middle|\,P(E,t)\right).
+$
 
 This is a model for inquiry; it is not a proved universal utility law, a claim of cardinal comparability among all obligations, or an Obsmetrologia theorem. Some requirements are only partially ordered; legal, safety, preservation and customer duties may be hard constraints. The empirical claim is narrower: selecting development by real practice and verifiable beneficiary value should outperform selecting by the convenience of a particular source file, an attractive feature, or an incidental failing build, under a stated comparison.
 
