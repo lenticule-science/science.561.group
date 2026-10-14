@@ -297,6 +297,58 @@ To claim a *quantum* L-Space, the research must identify a principled physical o
 
 The Group's research direction treats information and kinematic distinctions as prior to an eventual quantum, relativistic and thermal description. The [informational-spacetime glossary](https://github.com/lenticule-science/science-services-section/blob/main/services/natural-science-services-section/services/physical-science-services-section/services/physics-services-section/content/text/glossary/terms/informational-spacetime.md) argues for such a descent, but its cosmological identification is a research claim, not a consequence of the generic \(\ell^2\) construction. Thus **Grothendieck site/topos** describes potential *local-to-global logic*, **causal cones** describe potential *kinematics*, and **Hilbert space** describes a possible *quantum-state representation*. They can coexist in a specified theory; they are not interchangeable labels.
 
+## March 28: the utterance as a locally witnessed relation (source recovered 2026-10-14)
+
+**Historical source and custody.** The original authored *emsenn's Log, 2026-03-28, 1016h* (authored March 28, 2026, still held as an emsenn **personal** document) has now been read at source. This is a research extraction, **not republication of the personal log** or a promotion of its philosophical conjectures into Group policy. Its relevant antecedents and independent historical elaborations include the [2026-03-18 Markdown frontmatter hypothesis](https://github.com/emsenn/561-theory/blob/main/engineering/theories/tech/concepts/markdown-frontmatter.md), the [frontmatter-as-presentation distinction](https://github.com/emsenn/561-theory/blob/main/engineering/theories/tech/theories/computing/theories/continuous-computation/theories/artificial-intelligence/theories/agents/theories/agentic-orchestration-platforms/theories/predicated-agentic-orchestration-platform/theories/flatfile-agentic-resource-system/concepts/frontmatter-as-presentation.md), the [predicated frontmatter-relation account](https://github.com/emsenn/561-theory/blob/main/science/theories/information/theories/knowledge-systems/theories/markdown-vault-knowledge-system/theories/predicated-markdown-vault-knowledge-system/concepts/frontmatter-relation.md), and the [2026-04-05 candidate invariant stack](https://drive.google.com/file/d/110jnqTycSZoK7i3L_MOT4li9jVRKNwQV/view). These are *dated sources*, not today's current code authority.
+
+### Two independent distinctions, not one flattened four-valued logic
+
+The March 28 inquiry studies an **epistemic/articulation progression**: *Absurd → Possible → Necessary → Determined*. Here **Absurd** is a locally assumed, relation-poor datum or irreducible starting premise; **Possible** is an admissible relational continuation; **Necessary** is a constraint relative to accepted premises and rules; **Determined** is a witnessed result under those rules. “An assertion is determined relative to its presentation” is not “it is true in the external world.” The historical conjecture that each result becomes a possible premise for later interpretation motivates **iterated, context-indexed reconstruction**, not an established transfinite theorem.
+
+This four-stage vocabulary is **not** the four elements of Belnap's FOUR evidence bilattice. FOUR's \(\bot_k\), positive-only, negative-only and both-sided valuations concern **two independent evidence polarities** for a *fixed typed claim*. A claim may be determined *within one explicit set of premises* while evidence concerning its empirical accuracy remains \(\bot_k\); likewise an externally contested claim may still have a source-complete, deterministic parsing/provenance. No automatic order-isomorphism, Boolean collapse, illicit contradiction elimination, or “all absurd claims are true” rule is admitted. The relevant interpretive information is a tuple of **kind of reading, context, assumptions, evidence charge, and witnessed consequence**—not a single scalar masquerading as all five.
+
+### From presentation to articulated predication
+
+For one *source-revision* \(s\), frontmatter mapping entry \((k,v)\), contextual interpreter \(i\), and an explicit source location \(\ell\), define only a **candidate articulation**:
+
+\[
+\operatorname{present}(s,\ell,k,v)
+\dashrightarrow_{i}
+\operatorname{candidate}(\operatorname{subject}(s),\operatorname{predicate}_i(k),\operatorname{object}_i(v)).
+\]
+
+The dashed arrow is **partial, source-bound and potentially multivalued**: the parser establishes that an author encoded a key/value, but its interpretation needs a typed predicate definition, term resolution, lexical register, mapping/shape version, and the actual jurisdiction of the assertion. For example, a file carrying `incumbent: character-X` records a presentation about incumbency. It does **not** nominate the office or grant `character-X` a duty merely through YAML. Only the authoritative corporate office/incumbency source and its qualified actor may warrant an actual appointment.
+
+A source file is the **subject of an authored/documentary claim**; it is not necessarily the real-world subject denoted by the sentence. Its declared `author` or `date-created` is self-attributed evidence of what its frontmatter says, not independent attribution or verified physical time. The older proposal to interpret *every* key as an RDF predicate is useful **only under a declared vocabulary mapping and RDF term typing**: a raw YAML key is not automatically an absolute RDF predicate IRI, and the omission of a key is not a negative property assertion. Refusing a malformed declaration or treating it as incomplete is a typed response; a divergent but well-formed statement may remain legitimate, separately attributable evidence.
+
+An **articulated (token, claim) utterance** should therefore carry at least: (a) token *occurrence* \((s,\ell,\text{surface})\), rather than just vocabulary spelling; (b) candidate term/sense resolution; (c) source-bound locution and its chosen semantic interpretation; (d) exact typed proposition or predication, where admitted; (e) force and claimant/authority separately; (f) positive and negative evidence with source and valid time separately; and (g) observed receiver uptake, if any. Relations **between claims**, not only between two primitive bases, require typed claim-valued references or existing SEN/SCA identification; this is not license to call arbitrary strings typed proofs.
+
+### Proof paths and knowledge-space movement
+
+The research question becomes operational when a qualified reader can follow **every justified transformation**:
+
+```
+source-revision + span -> parsed frontmatter/utterance
+  -> locally interpreted token/sense -> typed claim
+  -> signed witness/evidence reading -> bounded FCA context/profile
+  -> context-restricted inference / derivation or an explicit obstruction
+  -> witnessed receiving (only for independently observed effects)
+```
+
+These arrows are deliberately **different judgments**. Source identity and PPA earned paths describe defensible coordinates; CHL discharges *specified well-typed derivations*, not the truth of arbitrary prose. FCA describes a closed object/attribute concept under an explicit incidence relation and context version, not an organizationally binding type hierarchy. A causal future/past cone requires independently witnessed edges of possible influence rather than merely earlier timestamps; the already proved chromatic-Lorentzian chain results cannot be reused as an L-Space physical metric without the extra mapping and hypotheses. If a required map, premise, authority, or observation is absent, publish the **obstruction and open derivation**, not a synthetic successful proof or completed task.
+
+The March 28 proposal also asks for queries **about an absent claim**: which local relations and obligations would be required to support it? That is a legitimate **candidate/what-if query** over the existing typed relations and permissible interpretations, not an assertion inserted into the corpus. Source-stable positive, negative, contested, and missing readings make such queries scientifically useful. A “most determined” relation requires a specified measurable local constraint/support relation, not raw frequency: 800 identical copied `author` claims cannot become 800 independent witnesses or establish an authorized office.
+
+### Consequences for the Group's work and governance corpus
+
+The April 5 frontmatter-foundations source proposes a *candidate* admission sequence—parseable presentation; content identity; declared predicate terms; typed scalar/list/reference values; resolved references; signatures; and predicate **presuppositions**. The reusable technical demand is a **dependent, source-qualified admission**, not another global YAML schema. Presuppositions must be tested at the owning vocabulary and receiving state; e.g. a `blocked-by` claim must point to a real in-scope work dependency, but the presence or absence of a status field alone cannot establish its current unsatisfied state. A proposed `incumbent` relation requires an actually authorized office-instance and temporal validity, not just a syntactically correct `type: office`.
+
+The Group's actual endeavor→campaign→project→plan→task→work-item spine, office/duty/incumbency data, contracts, accounting and messages retain their **independently authoritative owners**. L-Space reads and interprets their typed claims. A reported `done` in an assistant message is a locution and possibly an illocution; only verified execution and distinct receiving warrant a settled task. A ledger's posted transfer is not settlement, and settlement is not receiver acceptance. Contradictory governance proposals remain separately witnessed pending the lawful resolution process.
+
+**Assays required for this interpretation:** the same text in two source revisions must yield distinct occurrence identity; a wrong-typed or unknown YAML predicate must refuse qualified RDF assertion; frontmatter claiming office authority must not create it; different for/against evidence must not collapse in OWL/JSON-LD projection; a source-known task without receiving stays unsettled; an absent hypothetical claim must not become a factual triple; source-qualified FCA closure must change when its context changes. A legitimate, separately verified appointment or receiving transition serves as the positive control.
+
+This extraction changes the scientific *question and falsifiers*, not the original personal source, its rights, or the installed L-Space garden. Actual code and consumer implementation belongs with Red Cup's existing typed PPA, SignCell, EAVT, RDF/OWL/SHACL and SPARQL operators, through LS-SAS-030–035 and its HLD/LLD. No current source edit alone establishes conformance or publication by the Cold Red Gate host.
+
 ## From source notes to language-space claims
 
 A document is a **source of possible articulations**, not the token universe. The route to L-Space is:
