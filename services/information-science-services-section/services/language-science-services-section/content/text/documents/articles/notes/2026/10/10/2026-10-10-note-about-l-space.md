@@ -110,9 +110,57 @@ The derived maps need qualifications. An SCA can enter SEN as an **opaque** `mar
 
 The older “Fregean predication forces FOUR” research often treats **two argument slots** as the two binary **support/refutation slots**. These must not be conflated. Frege's unsaturated functions can be unary, binary or of greater arity (see [Stanford Encyclopedia: Frege, §§2.1.1–2.1.2](https://plato.stanford.edu/entries/frege/)). The binary SPO cell is the Group's selected **relational realization**, not a theorem that Frege only admitted binary predicates. Under an **additional independent evidence-polarity assumption**, a predication valuation in `Bool×Bool` gives precisely the four Belnap statuses `⊥,t,f,⊤`. The [conditional October 6 ruling and its literature table](https://github.com/lenticule-science/obsmetrologia/blob/2ae077eed16dd1c9f2345d0a3360563fbb3cc47e/docs/history/marks-absurd-and-handedness-ruling.md) validates the four-valued witness representation and insists that **FOUR fusion alone is commutative and does not generate handedness**.
 
-With `φ=(s,p,o)` and `v(φ)∈FOUR`, a Chu evaluation can use `e(s,(p,o))=v(s,p,o)`, with points `s`, states `(p,o)`, and evaluation alphabet FOUR. Chu duality reverses the point/state view, and a Chu transform must preserve each pairing. The **two-valued** incidence case gives ordinary FCA, while FOUR-valued incidence requires the chosen enriched/residuated context and appropriate proof. **FOUR is not automatically the Chu construction `Chu(2,0)`**: the [October 6 ruling](https://github.com/lenticule-science/obsmetrologia/blob/2ae077eed16dd1c9f2345d0a3360563fbb3cc47e/docs/history/marks-absurd-and-handedness-ruling.md) records the latter's missing fourth pair.
+### The recovered formal bridge: relational residuation, FOUR, Chu and FCA
 
-For typed relation composition `(R;S)(x,z) ⇔ ∃y. R(x,y)∧S(y,z)`, Lambek's left/right residuals may differ; the [current open proof item](https://github.com/lenticule-science/obsmetrologia/blob/2ae077eed16dd1c9f2345d0a3360563fbb3cc47e/docs/loop/items/twistor-residuation-key-idea.md) asks for exactly the Frege/SPO/FCA residual bridge and is **blocked**, not settled. [`Quartet.lean`](https://github.com/lenticule-science/obsmetrologia/blob/2ae077eed16dd1c9f2345d0a3360563fbb3cc47e/Obsmetrologia/Language/Positing/Quartet.lean) proves that the birth-corner involution pair and the settled-fiber commuting nuclei instantiate a **generic commuting-pair coherence square**, not that Penrose twistors or physical spatial dimensions have been constructed. Any identification with twistor geometry needs new typed maps and preservation theorems.
+A *chosen* subject/predicate/object reading `φ=(s,p,o)` and its
+qualified evidence-for/evidence-against pair give the evaluation
+`v(φ)∈FOUR`; the evidence polarity is an additional assumption, not
+the number of argument slots forced by Frege.
+
+This theory already has more proved structure than the historical
+"open SPO-to-FCA residual bridge" label suggests:
+
+| Existing formal carrier | Exact pinned theorem / construction | Established scope, not extrapolation |
+| --- | --- | --- |
+| [`Language/Predicating/Residuation.lean`](https://github.com/lenticule-science/obsmetrologia/blob/2ae077eed16dd1c9f2345d0a3360563fbb3cc47e/Obsmetrologia/Language/Predicating/Residuation.lean) | `Residuation.comp_sub_iff_sub_lres`, `comp_sub_iff_sub_rres` | Binary relations `X → X → Prop` compose existentially; both left and right residuals satisfy their typed adjunctions under inclusion |
+| Same module | `residuals_coincide_iff_comp_comm`, `comp_comm_iff_subsingleton`, `residuals_differ_of_ne` | Composition is noncommutative once `X` has distinct points; subject-side and object-side residual demands are not interchangeable |
+| Same module | `primeA_iff_lres`, `primeB_iff_rres`, `closeA_iff_rres_lres`, `prime_adjunction_from_biresiduation` | The ordinary two-valued FCA concept closure is expressible via those relation residuals at an admitted incidence; this **settles the pure relational/FCA sub-bridge** |
+| [`TwistProductResiduation.lean`](https://github.com/lenticule-science/obsmetrologia/blob/2ae077eed16dd1c9f2345d0a3360563fbb3cc47e/Obsmetrologia/Calculus/Logic/TwistProductResiduation.lean) | `TwistProduct.fuse_leT_iff`, `FOUR.four_is_twist_two` | TWO's twist product represents the four charges and their bilattice orders, while twist-product fusion is **commutative** and does not itself create handedness |
+| [`LinearLogicChu.lean`](https://github.com/lenticule-science/obsmetrologia/blob/2ae077eed16dd1c9f2345d0a3360563fbb3cc47e/Obsmetrologia/Calculus/Logic/LinearLogicChu.lean) | `ChuSpace`, `ChuMap`, `ChuSpace.dual_involution`, `four_star_autonomous` | A FOUR-valued matrix is an actual Chu-space alphabet/model; lawful Chu transforms satisfy the stated adjointness equation |
+| [`ChuComparison.lean`](https://github.com/lenticule-science/obsmetrologia/blob/2ae077eed16dd1c9f2345d0a3360563fbb3cc47e/Obsmetrologia/Calculus/Logic/ChuComparison.lean) | `Charge.symmetricEvidenceDifference_eq_kBot_iff`, `ChuCandidate.defect_vanishes_iff_adjoint`, `ChuCandidate.toChuMap` | The **pointwise four-valued defect is zero iff a candidate translation preserves its pairing**. This is an existing rigorous conformance operator, not a speculative numerical "semantic distance" |
+
+For any chosen predicate `p`, the formal
+`Valuation.posIncidence v p` projects its positive-evidence part to a
+two-valued incidence `I_p : Entity → Entity → Prop`. FCA prime/closure
+then applies to that chosen incidence. Its result does **not** collapse
+the negative-evidence slot: a complete FOUR-valued reading retains
+both testimonies and their source witnesses. The `FOUR` twist-product
+algebra and the *binary-relation* residuation are separate structures;
+the former's commutative fusion must never be confused with the
+latter's noncommutative predicate composition.
+
+In a candidate Chu realization of `φ`, one possible presentation is
+`points = subjects`, `states = predicate/object pairs`, and
+`e(s,(p,o)) = v(s,p,o)`. A complete `ChuSpace` requires an admitted
+`pts` type, `sts` type and `r` function; it is not conjured by
+concatenating three names. Any proposed inter-office/cross-language
+translation becomes `ChuCandidate`; its **proof obligation** is
+vanishing FOUR-valued defect at every required point/state pair before
+`toChuMap` can certify it. Observed violations remain positive or
+negative evidence, not a fabricated homomorphism.
+
+**Residual research debt:** the [twistor-residuation open item](https://github.com/lenticule-science/obsmetrologia/blob/2ae077eed16dd1c9f2345d0a3360563fbb3cc47e/docs/loop/items/twistor-residuation-key-idea.md)
+still asks for a *full contextual bridge* from Fregean/SPO
+predication and its time/causal witnesses into the intended twistor
+and geometric interpretations. Its **pure binary-relation/FCA
+sub-problem now has the proof modules cited above**, whereas a
+structure-preserving mapping from an actual SEN or SEAVT runtime
+carrier to these mathematical types, and from that mapping to
+a 3-spatial+1-temporal Lorentzian geometry, remain open.
+The [`Quartet.lean`](https://github.com/lenticule-science/obsmetrologia/blob/2ae077eed16dd1c9f2345d0a3360563fbb3cc47e/Obsmetrologia/Language/Positing/Quartet.lean)
+commuting square alone is not a Penrose twistor construction, and the
+four-valued letter `FOUR` must not be identified with the special
+four-object claim `Chu(2,0)` in the absence of its fourth pair.
 
 A witnessed `t` in SEAVT supplies a **temporal observation coordinate**. A separate causation/dependency relation `≼` must distinguish actual precedence, concurrency, late arrival, retractions and effective time from mere sorted timestamps. Only with additional compatible topology, cones and Lorentzian metric/signature could a 3+1 *geometric* interpretation be claimed. The [existing chromatic-Lorentzian example](https://github.com/lenticule-science/obsmetrologia/blob/2ae077eed16dd1c9f2345d0a3360563fbb3cc47e/Obsmetrologia/AperiodicOrder/Tiling/ChromaticLorentzian.lean) proves countable-chain, non-idempotent mark propagation in its specified carrier; **it does not prove that arbitrary SEAVT histories are spacetime manifolds**.
 
