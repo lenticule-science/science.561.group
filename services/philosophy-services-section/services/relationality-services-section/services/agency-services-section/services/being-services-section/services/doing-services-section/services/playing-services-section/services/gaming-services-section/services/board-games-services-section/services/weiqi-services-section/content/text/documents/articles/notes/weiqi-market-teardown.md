@@ -13,6 +13,12 @@ date: 2026-08-19
 
 Research provenance: compiled 2026-08-19 by a web-research agent; sourced with URLs inline. Companion to the Weiqi Platform Plan — this document is the Phase 2 (parity) feature spec's evidence base.
 
+## Decision correction — 2026-10-14
+
+The 2026-08-19 and 2026-08-29 profiles below are **dated observations**, not a current live feature census. In particular, the older `GoMagic is curriculum-only` claim, the profile's `Play: none`, and the feature table's `GoMagic AI bots: ❌` are no longer admissible as contemporary product requirements: GoMagic's first-party [July–September 2026 changelog](https://gomagic.org/changelog/) explicitly announces **Play against bots** and **New mini-games**. This does **not** demonstrate live human matchmaking or correspondence play, so mark those as unverified rather than transferring a bot announcement into a human-opponent claim.
+
+For current competitor selection, include GoMagic in both educational and single-player bot/mini-game comparisons. Recheck third-party offers before using the original table to decide an investment; the August wording remains below to preserve the historical survey's provenance. The meaningful house differentiator to *measure*, not claim exclusively, is a rules-valid game that explains glossary concepts where they happen and improves a learner's delayed ability. Evaluate its actual receipt alongside reliable 9×9 play, restart, SGF, offline behavior, accessibility and optional funded value; observed user demand is still unmeasured.
+
 ## Headline findings
 
 1. **The differentiator is validated open territory.** No incumbent — including PlayGo.gg, the ambitious chess.com-for-Go entrant launched February 2026 — links live gameplay to contextual concept teaching. Every glossary found (Sensei's Library, GoMagic's term pages, PlayGo.gg's terms page) is a static reference the player must leave the board to consult. Glossary-linked play (the kernel recognizes atari/ko/seki as they occur and surfaces the definition in place) is claimed by nobody.
