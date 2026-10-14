@@ -15,7 +15,7 @@ keywords:
   - plasmid
   - gene-regulation
   - fabrication
-status: research-hypothesis-source-reconciled
+status: design
 declared-by: claude-interactive-session-supplying-leader-movement-team
 ---
 
@@ -86,7 +86,7 @@ proofreading prices the check; this note prices the input to the check.
 
 ## 2. The ribosome correspondence and its counterexamples
 
-The [sibling fidelity study](https://github.com/lenticule-science/science-services-section/blob/main/content/text/documents/articles/notes/2026/07/24/2026-07-24-research-on-the-central-dogma-of-code-fabrication.md)
+The [Fabrication with Fidelity: kinetic proofreading, germline and error catastrophe](https://drive.google.com/file/d/1tjdOTNNZK8VUU0N7THrXTGeCG6jetsbp/view)
 distinguishes *who may author* from *who may verify*; the present note
 adds the separate question of *which information a translator is
 authorized to assume*. A valid admitted work order names not merely
