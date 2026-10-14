@@ -2,13 +2,25 @@
 title: Weiqi Platform Plan
 description: "Audience: the 561 Group board and future implementing agents. A full-spectrum plan for building the richest weiqi web gaming platform this repository's research supports, with new-player education as the organizing principle."
 date-created: 2026-08-18
-date-updated: 2026-08-18
-type: specification
+date-updated: 2026-10-14
+type: research
 authors:
   - claude-fable-5
 tags: []
 ---
 
+
+## Current scientific and product authority (2026-10-14)
+
+This is the **Science source for the original product hypothesis and historical design**, not a current admitted Engineering SRS/HLD, installed game or accepted commercial offer. The operative [Red Cup Game Systems requirement](https://github.com/red-cup-engineering/computer-engineering-services-section/blob/main/services/computer-systems-engineering-services-section/services/computer-game-system-services-section/content/requirements/games-pressure-upstream-and-the-sports-weiqi-lines.json) now makes modern enjoyable gameplay, upstream reuse, native integration, actual market comparison, customer payments and net profit necessary receiver outcomes. Causeway [Public Games](https://github.com/causeway-services/public-media-services-section/blob/main/services/public-games-services-section/README.md) owns the entertainment product and commercial offer. Science retains rights over its verified Go glossary and comparative research. Older August assertions below are historical design context, not present-state measurements.
+
+**Established existing suppliers, not conjectural packages:** Red Cup [Weiqi engine](https://github.com/red-cup-engineering/computer-engineering-services-section/tree/main/services/computer-systems-engineering-services-section/services/computer-game-system-services-section/services/weiqi-engine) already supplies legal game commands, SGF, count/settlement, semantic events and a principal-attributed match record; the [web app](https://github.com/red-cup-engineering/computer-engineering-services-section/tree/main/services/computer-systems-engineering-services-section/services/computer-game-system-services-section/services/go-engine-services-section/apps/weiqi-web) contains game/puzzle/lesson consumers and two Cloudflare custom-domain declarations. Game Systems has `cast/runner` for named opponents, `resonator/game` and `resonator/audio-engine` for complete game-audio rendering, `footing/submission` for verified daily scores, `energy-bank` for exact game-account economics, and external `go-engine-services-section` for GNU Go GTP and KataGo review. The [Computer Web](https://github.com/red-cup-engineering/computer-web-engineering-services-section) package `qwzspace` provides actual room/reconnect/scene rendering, and its native `stripe-services-section` plus `digital-goods-storefront-services-section` provide checkout, signed payment-event acceptance, buyer entitlements, durable fulfillment and goods delivery. Source presence is **not** proof that any of these suppliers are incorporated into the selected, running Weiqi application.
+
+**Contemporary competitor requirement:** as of October 2026, [BadukPop's current Android offer](https://play.google.com/store/apps/details?id=com.coreplane.badukpop.prod) advertises thousands of curated problems, ranked practice, professional-strength AI and online competition; [GoMagic's 2026 changelog](https://gomagic.org/changelog/) confirms bot play, mini-games and recurring leagues. Weiqi cannot be called at parity based on its 56 local puzzle problems, CSS lobby, five non-calibrated bot policies or correctness tests. A native strong-opponent/room, game-audio, replay-authoritative competition and paid entitlement must be **real product effects**, not additional shallow browser UI.
+
+**Material architecture distinctions requiring Engineering admission:** `footing/submitDailyRun` requires independent match replay, trusted timing, actor identity and a scored-attempt lock—the current client-only Puzzle Rush timer does not supply these. `cast` supplies a runner but no ready Weiqi policy; `qwzspace` supplies rooms and animated scene technology but is not an alternative Go legality engine; `resonator` supplies the real cue/mixer machinery but not Weiqi-specific authored music; existing Stripe digital-goods fulfillment grants goods and paid releases, so a specific **game entitlement consumer** must be designed under that authority before a premium experience can be sold. A native ZBD/Lightning outgoing payment is separate from Stripe incoming charges and game `ENERGY`, and requires an actual contracted merchant and received settlement.
+
+**Scientific product decision:** qualify the best modern player experience and saleable recurring value *first*; compare the existing static/local-only design with a composed game-platform design on measurable first-session enjoyment, latency, repeat challenge, opponent quality, optional idle value, lawful customer payment, marginal profit, reliability and reuse. Red Cup owns the specification, HLD/LLD and native fabrication through its existing admission machinery. Do not hand-produce a new Web game engine or payment adapter to simulate this integration.
 
 ## Thesis
 
@@ -28,9 +40,9 @@ The build motto, consistent with house doctrine: the engine is the executable fo
 
 ## What we do not have
 
-- **No game code anywhere.** No engine, board renderer, SGF handling, or server. The platform is a greenfield build; only infrastructure and content are reusable.
+- **Source is no longer greenfield.** The real Weiqi engine and a static browser game exist; the unfinished obligations are integrated multiplayer, a compelling persistent game economy and opponents, product-grade game audio/visuals, trusted competition, native purchased game entitlements, a real financial provider and independently received public release.
 - **An incomplete ruleset.** The corpus covers simple ko but not superko, suicide, seki, area-vs-territory scoring, pass/end-of-game procedure, dead-stone settlement, handicap placement conventions, or standard komi values. These must be authored as content *and* encoded in the kernel.
-- **No strategy or training material.** No joseki, fuseki, tesuji, yose, tsumego, rank-system explainer, or annotated games; no SGF records at all.
+- **Content depth and received learning value remain limited relative to incumbents.** The current science corpus contains 40 compiled terms, four lesson projections and a game client with 56 problem entries, not zero strategy or a complete commercial-level training catalog.
 - **Corpus hygiene debt.** A 174-file ludics triage inbox mixing stale weiqi duplicates with unrelated material, four inconsistent provenance conventions, missing index/landing pages and dead relative links, a missing README/package.json on the game-science ludics section, and a name collision between two `ludics-services-section` packages (play-theory vs Girard proof-theory).
 
 ## Product vision: three faces, one graph
@@ -131,11 +143,11 @@ Per the service-section constitution, new sections need constituted authority, s
 
 ## Deployment, operations, economics
 
-Deploy via the proven wrangler + GitHub Actions pattern; DNS-edit token allows `weiqi.561.group` (or a dedicated domain — board decision). Cloudflare costs are near-zero at hobby scale and degrade gracefully (Workers paid plan, D1/R2 free tiers are generous); the KataGo box is the only real capacity cost and is deferred to Phase 3. Stripe exists if premium features (deep reviews, courses) ever warrant it — explicitly out of scope until the platform has users. Decide a public license for the content and kernel before any public launch; everything is currently UNLICENSED/private.
+Deploy via the proven wrangler + GitHub Actions pattern; DNS-edit token allows `weiqi.561.group` (or a dedicated domain — board decision). Cloudflare costs are near-zero at hobby scale and degrade gracefully (Workers paid plan, D1/R2 free tiers are generous); the KataGo box is the only real capacity cost and is deferred to Phase 3. The native Group Stripe service and shared digital-goods storefront already exist. Saleable game products, authoritative premium entitlement use, customer checkout and net-margin receiving are now **first-priority commercial requirements**, not deferred until an arbitrary education milestone. ZBD payouts are a separate, optional contracted money-out boundary. Decide a public license for the content and kernel before any public launch; everything is currently UNLICENSED/private.
 
 ## Roadmap
 
-Each phase ships something complete and usable on its own.
+**Historical August 18 sequencing follows for provenance only.** The current customer demand makes integrated compelling play, profitable offers and reuse of real upstream game/commerce suppliers the primary admission criteria. Do not interpret the old education-first phase order as permission to delay a modern game or to ship a thin homepage instead of a coherent interactive system.
 
 **Phase 0 — Foundation.** Corpus hygiene (the five-item list above); author the rules-completeness suite; write and ratify the section constitutions; resolve the experimental-site README/package.json deployment discrepancy so the deploy story is unambiguous.
 
@@ -158,7 +170,7 @@ Each phase ships something complete and usable on its own.
 ## Board decisions requested
 
 1. Approve platform placement inside `weiqi-services-section` and the two child-section constitutions (kernel, platform app).
-2. Choose the domain (`weiqi.561.group` vs dedicated).
+2. Receive the selected canonical player domain `weiqi.play.561.group` and verify source identity, DNS, active public artifacts and a real completed match; the old domain is only an additional declared host.
 3. Confirm Cloudflare-first architecture with the bare-metal box reserved for engine analysis.
 4. Set the public-license posture for kernel and content ahead of launch.
-5. Confirm education-first sequencing (Phase 1 ships before any multiplayer).
+5. Admit a **game-first, profit-first** product requirement and source-reuse architecture through Red Cup's actual correctness-by-construction stages, with Science's concept-linked pedagogy as one differentiated commercial capability rather than the blocker for competition.
