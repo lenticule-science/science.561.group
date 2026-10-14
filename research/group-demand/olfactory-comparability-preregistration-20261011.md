@@ -2,6 +2,8 @@
 
 Status: protocol candidate, 2026-10-11. No measurements, lab participation, accreditation, or market validation are claimed.
 
+**Canonical intake (supersedes the short 2026-10-11 Science Intake):** The test is whether a laboratory's uncertainty statement survives cross-site transfer, not whether it repeats closely within one laboratory. Predeclare the between-site transfer tolerance and interval-coverage criterion before evaluating holdouts. If between-site predictive error exceeds that threshold despite narrow within-site agreement, that scoped comparability claim fails. The service remains a proposed, non-accredited assay; no empirical acceptance is recorded.
+
 ## Founding demand and receiver
 
 Group source: https://github.com/561-group/561-group-opportunity-services-section/issues/23
