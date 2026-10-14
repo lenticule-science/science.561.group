@@ -243,9 +243,9 @@ test('native term dossier exposes source relations without elevating names or fr
   // A user-supplied HTML-shaped alias remains text, not markup or executable JS.
   const hostile = await servedResponseFromRepr(await request('lspace.metroplat',
     '/knowledge?name=%3Cscript%3Ealert(1)%3C%2Fscript%3E'), 'GET');
-  assert.equal(hostile.status, 200);
+  assert.equal(hostile.status, 400);
   assert.ok(!hostile.body.includes('<script>alert(1)</script>'));
-  assert.match(hostile.body, /&lt;script&gt;/u);
+  assert.match(hostile.body, /not an admissible term name/u);
 });
 
 test('real reader excludes custody/working strata, unadmitted and missing documents', async t => {
