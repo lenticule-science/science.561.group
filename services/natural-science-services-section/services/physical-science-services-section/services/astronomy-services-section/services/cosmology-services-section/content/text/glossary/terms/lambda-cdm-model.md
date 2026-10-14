@@ -7,6 +7,7 @@ aliases:
   - "concordance model"
   - "standard model of cosmology"
 date-created: 2026-03-31
+date-updated: 2026-10-14
 requires:
   - general-relativity
   - cosmological-principle
@@ -30,4 +31,4 @@ The model has six free parameters:
 
 These six numbers, combined with the [Friedmann equations](../../../../../../content/text/glossary/terms/friedmann-equations.md) and the physics of the pre-recombination plasma, predict the angular power spectrum of the [cosmic microwave background](../../../../../../content/text/glossary/terms/cosmic-microwave-background.md), the distribution of [galaxies](../../../../../../content/text/glossary/terms/galaxy.md), the abundances of light elements, the expansion history, and the age of the universe. The predictions match observations across all these independent tests.
 
-The model is called the "concordance model" because all major observations agree on the same parameter values. It is remarkably successful and remarkably unsatisfying: it works, but 95% of the universe's content is "dark" -- we know its gravitational effects but not its fundamental nature. Lambda-CDM is a parametric fit, not a derivation from first principles. Why $\Lambda$ has the value it does (the cosmological constant problem), what dark matter is, and whether general relativity is the correct theory at all scales remain open questions.
+It is called the **concordance model** because its six-parameter base version fits an exceptionally broad class of cosmological observations; this is **not** a claim of universal agreement or that flat spatial geometry is proven exactly. [Planck 2018 cosmological parameters](https://doi.org/10.1051/0004-6361/201833910) infer $H_0=67.4\pm0.5$ km/s/Mpc within base-ΛCDM, in tension with local distance-ladder estimates near 73. The [DESI DR2 BAO analysis](https://doi.org/10.1103/tr6y-kpc6) finds a successful flat-ΛCDM fit to its distances but some parameter tension with CMB; combined datasets also motivate **conditional** tests of evolving dark energy, not an established detection of a new component. [DESI's July 2026 DR2 interpretation](https://www.desi.lbl.gov/2026/07/30/new-desi-dr2-lyman-alpha-results-shed-light-on-dark-energy/) is a contemporary data source. The model's component identities and parameters are empirically constrained, not derived from Obsmetrologia or any other metaphysical framework. Why $\Lambda$ has the value it does (the cosmological constant problem), what dark matter is, and whether general relativity is the correct theory at all scales remain open questions.
