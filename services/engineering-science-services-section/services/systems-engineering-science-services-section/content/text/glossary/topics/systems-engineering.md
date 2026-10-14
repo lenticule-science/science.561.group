@@ -193,7 +193,7 @@ rollback and receipt *operation data*; the 561 Group and any public/customer
 actor independently receive their own execution and economic consequence.
 A source edit, synthetically passing conservation example, and provider
 pricing page do not establish installed capacity. The repository's
-[`tests/federated-resource-flow.test.mjs`](../../../../../../../../../../tests/federated-resource-flow.test.mjs)
+[`tests/federated-resource-flow.test.mjs`](../../../../../../../../tests/federated-resource-flow.test.mjs)
 executes the finite-state conservation, transport-loss refusal, local-chart
 holonomy invariance and resource-unit nonfungibility **toy assays**. They
 are checks on this proposed finite model, not a proof that the installed
