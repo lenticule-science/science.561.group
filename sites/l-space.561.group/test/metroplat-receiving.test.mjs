@@ -284,3 +284,41 @@ test('missing corpus refuses before scanning and an empty real directory cannot 
       'repeated fetch must fail closed at missing section after first search fails');
   });
 });
+
+test('consent restrictions cannot be bypassed through direct or room public URLs',async()=>{
+  // The real L-Space application resource; source ownership is supplied by the
+  // archive contract. A successful source assay is not a live-host receipt.
+  const documents=new Map([
+    ['science/public.md',{title:'Public',body:'Public source',properties:{visibility:'public'}}],
+    ['science/held.md',{title:'Held',body:'Restricted source',properties:{visibility:'public','consent-status':'pending'}}],
+    ['science/held-null.md',{title:'Held null',body:'Restricted null',properties:{visibility:'public','consent-status':null}}],
+    ['science/private.md',{title:'Private',body:'Private source',properties:{visibility:'authenticated'}}],
+  ]);
+  const app=lSpaceMetroplat({
+    config:{repositoryRoot:join(tmpdir(),'lspace-source-policy'),stateDir:tmpdir(),publicBaseUrl:'https://lspace-policy.invalid'},
+    configuration:{root:'source'},
+    archive:{paths:[...documents.keys()],read:async id=>{
+      const source=documents.get(id);
+      if(!source)throw new Error('not admitted');
+      return source;
+    }},
+  });
+  const route=app.applications.flatMap(application=>application.resources??[])
+    .find(resource=>resource.id==='lspace.public-reading');
+  assert.ok(route,'existing public reading is an installed application resource');
+  async function fetchPublic(query){
+    return servedResponseFromRepr(await route.handler({url:new URL('https://lspace-policy.invalid/knowledge/public?'+query)}),'GET');
+  }
+  const open=await fetchPublic('document=science%2Fpublic.md');
+  assert.equal(open.status,200);
+  assert.match(open.body,/Public source/u);
+  for(const id of ['science/held.md','science/held-null.md','science/private.md']){
+    const direct=await fetchPublic('document='+encodeURIComponent(id));
+    const room=await fetchPublic('room='+sha256(id));
+    for(const response of [direct,room]){
+      assert.equal(response.status,404,id);
+      assert.doesNotMatch(response.body,/Restricted source|Restricted null|Private source/u);
+    }
+  }
+});
+
