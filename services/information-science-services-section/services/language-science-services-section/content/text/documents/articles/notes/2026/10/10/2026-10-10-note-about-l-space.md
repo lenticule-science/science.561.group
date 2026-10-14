@@ -235,7 +235,7 @@ A document is a **source of possible articulations**, not the token universe. Th
 4. Use the real Semioverse admission/settlement operations to create addressed claims and derivations. A Markdown \`about\` field, SPARQL query, EAVT projection or indexed document is **not itself semantic admission**.
 5. Derive FCA lattices, category/site structures, causal cones or an optional Hilbert-space model as *views of a declared input context*, with their assumptions and status intact.
 
-CAIRN's information-object custody, document search and FeltOS agent orchestration are adjacent services; none redefines L-Space. A previous reference to \`science-services-section/services/l-space/README.md\` does not resolve in the inspected repository, so it cannot substantiate a current application or deployment claim.
+CAIRN's information-object custody, document search and FeltOS agent orchestration are adjacent services; none redefines L-Space. The [actual L-Space application](https://github.com/lenticule-science/science-services-section/blob/main/sites/l-space.561.group/README.md) exists under **sites/l-space.561.group**, not the obsolete **services/l-space** location. Its source names the actual companion `src/site.mjs`, the CAIRN/MetroPlat corpus projection, admitted reader identity and the FeltOS host binding. A repository path or computed route is not proof that public crawlable HTTP or authenticated tool service is currently reachable: those require separate outside receiving. The standalone [emsenn/l-space.561.group](https://github.com/emsenn/l-space.561.group) repository is presently empty and must not be substituted for the owner application.
 
 ### Actor-local enabled arenas: the EDA and folding research bridge
 
