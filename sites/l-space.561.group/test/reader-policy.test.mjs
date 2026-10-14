@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {EXCLUDED_SEGMENTS, lSpaceReaderPolicy} from '../src/archive-policy.mjs';
+import {EXCLUDED_SEGMENTS, lSpaceReaderPolicy, publicSourceVisible} from '../src/archive-policy.mjs';
 
 test('the shared reader policy preserves default exclusions exactly', () => {
   const policy = lSpaceReaderPolicy({sciencePrefix: 'science-services-section'});
@@ -89,4 +89,16 @@ test('invalid exclusion configurations fail closed', () => {
   for (const invalid of [false, 'private', {}, 42, ['../private'], [''], ['.'], ['..'], ['a/b'], ['a\\b'], [null]]) {
     assert.throws(() => lSpaceReaderPolicy({excludes: invalid}), TypeError);
   }
+});
+
+test('public metadata never overrules a present consent restriction or absent publication grant',()=>{
+  const source=properties=>({properties});
+  assert.equal(publicSourceVisible(source({visibility:'public'})),true);
+  for(const v of [
+    undefined,null,{},source({visibility:'authenticated'}),
+    source({visibility:'public','consent-status':'pending'}),
+    source({visibility:'public','consent-status':null}),
+    source({visibility:'public','consent-status':false}),
+    source({visibility:'public','consent-status':'declared-granted-but-not-independently-received'})
+  ]) assert.equal(publicSourceVisible(v),false,JSON.stringify(v));
 });
