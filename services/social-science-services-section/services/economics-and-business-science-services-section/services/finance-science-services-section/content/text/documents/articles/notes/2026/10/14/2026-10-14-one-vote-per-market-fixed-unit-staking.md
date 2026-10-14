@@ -1,15 +1,15 @@
 ---
-title: "One vote per market: fixed-unit participation, marginal edge, and correlated risk"
+title: "One vote per market: fixed-unit participation and the capital–diversity frontier"
 date-created: 2026-10-14
 type: note
 status: "research note — exploratory mathematical model; derivations not formally verified; no operational policy adopted"
 producer: "Lenticule Science / Finance Science Services Section"
 origin: "emsenn's question on holding each market allocation to a fixed dollar unit while expanding participation with the purse"
 tags: [finance, strategy, event-contracts, fixed-unit-staking, diversification, correlation, risk-of-ruin, market-portfolio]
-description: "Formalize equal-dollar allocation per eligible economic event; derive capital-demand, expected payoff, rank-edge decay, an independence-dependent diversification theorem, and tests against correlated exposure. Scientific research only; no change to current Kalshi trading."
+description: "Formalize fixed-dollar equal participation, opportunity-supply capacity, dependence-adjusted effective breadth, and their two-way triangulation with purse wealth; compare real scholarship without altering trading operations."
 ---
 
-# One vote per market: fixed-unit participation, marginal edge, and correlated risk
+# One vote per market: fixed-unit participation and the capital–diversity frontier
 
 ## Status and question
 
@@ -231,7 +231,161 @@ The study has **not** been run. It has no backtest result, acceptance threshold 
 
 **Existing Lenticule Science context (2026-10-04)** distinguishes executable entry price, bid-at-exit, marked midpoint, settlement profit and path-trading profit; those distinctions are inherited as research definitions, not live policy changes. [Trading the belief path](https://github.com/lenticule-science/science-services-section/blob/main/services/social-science-services-section/services/economics-and-business-science-services-section/services/finance-science-services-section/content/text/documents/articles/notes/2026/10/04/2026-10-04-note-on-trading-the-belief-path.md).
 
-## 10. Current finding
+## 10. Capital–diversity–opportunity triangulation (2026-10-14 extension)
+
+**Claim status:** the following are new, elementary algebraic consequences of explicitly stated models. They are not empirical findings about Kalshi. The "frontier" is a derived mapping between three measurable quantities, not a proposed platform configuration.
+
+### 10.1 Three different quantities, not two synonyms
+
+For a fresh purse with no previous encumbrance, define:
+
+1. **Purse** \(W\), the total wealth supporting allocations; **stake unit** \(b\), a constant chosen independently of purse wealth; and **deployment target** \(\rho\), not necessarily a mandate.
+2. **Eligible market supply** \(M_{\delta,t}\), the number of *distinct economically described exposures* that pass a predeclared uncertainty, fee, venue-liquidity, admissibility and edge-tolerance test \(\delta\) at time \(t\). Distinct exchange tickers are not necessarily distinct exposures, and not all identified exposures are mutually independent.
+3. **Effective risk breadth** \(D_t\), a measure derived from the joint distribution of accepted outcomes, **not** from the number of tickers and not automatically the Shannon entropy of nominal stake weights.
+
+The basic count relation is
+
+\[
+N_t^{\rm cap}=\left\lfloor\frac{\rho W}{b}\right\rfloor,\qquad
+N_t^{\rm accepted}\leq\min(N_t^{\rm cap},M_{\delta,t}).
+\]
+
+Equality in the second relation is only possible when liquidity, account encumbrance, venue rules, dependence restrictions and other guards do not constrain acceptance further. Actual utilization is \(\rho_{\rm actual}=bN_t^{\rm accepted}/W\) in the constant-unit idealization. Unlike conventional fixed-1/N portfolios, \(N_t^{\rm cap}\) grows with capital but \(M_{\delta,t}\) is an external, potentially finite economic supply.
+
+The **inverse, supply-to-capital direction** is as informative as the demand direction. Given \(M\) simultaneously eligible unit opportunities, the continuous crossover wealth for the chosen utilization target is
+
+\[
+\boxed{W_{\rm cross}=\frac{bM}{\rho}}\qquad(\rho>0).
+\]
+
+For wealth above this crossover, the required target *in continuous units* exceeds supply. Because real allocations use integer units, the first strict underfill of the \(\lfloor \rho W/b\rfloor\) target happens at \(W\geq b(M+1)/\rho\), assuming all \(M\) can actually be bought in full. These are different thresholds; the distinction matters near saturation. The unallocated fraction must increase as \(W\) increases beyond supportable breadth **unless** the unit, eligibility boundary, target deployment or opportunity production rate changes.
+
+**Worked counterexample.** Let \(b=\$10\), \(\rho=0.6\), and suppose exactly \(M=100\) economically eligible simultaneous markets. The continuous crossover is \(W=\$1{,}666.67\) (rounded), while integer-unit target underfill begins at \(W=\$1{,}683.33\) (rounded). At a $2,000 purse the target is 120 units, but only 100 can be accepted; therefore at most $1,000, or 50% of wealth, can be deployed without abandoning one of the assumptions. If all 100 trade opportunities do not fit the $10 unit because of lot size or order depth, actual capacity is lower still. Holding cash is a valid result, not a mathematical failure.
+
+### 10.2 An inverse law for genuinely diversified exposure
+
+The equicorrelated, equal-variance model in §5 provides a tractable controlled test. Let the unit-return variance be \(\sigma^2>0\), with constant pairwise correlation \(r\in[0,1)\) among the selected events. Define *variance-equivalent independent units* as the number \(D_{\rm var}\) of independent, equally volatile equal-weight investments that would produce the same variance of average unit return. This gives
+
+\[
+\boxed{D_{\rm var}(N,r)=\frac{N}{1+(N-1)r}
+=\frac{1}{r+(1-r)/N}.}
+\]
+
+The equality follows by comparing \(\sigma^2[1+(N-1)r]/N\), the variance of the mean of \(N\) equicorrelated unit returns, to \(\sigma^2/D_{\rm var}\), the variance of a mean of independent units. It assumes equal unit-return variances, common pairwise correlation, and equal weighting. It is **not** identical to Meucci's entropy-derived effective-number-of-bets (ENB), which decomposes correlated portfolios into uncorrelated sources of risk. Nor is \(D_{\rm var}\) a count of independent ontological events; it is a model-dependent variance equivalent.
+
+For any fixed positive \(r\), \(\lim_{N\to\infty}D_{\rm var}(N,r)=1/r\). A larger purse can finance more listed contracts while barely adding a unit of independent risk breadth:
+
+| Purse \(W\) | Nominal units at \(b=\$10,\rho=0.6\) | \(D_{\rm var}\) with illustrative \(r=0.20\) |
+|---|---:|---:|
+| $500 | 30 | 4.4118 |
+| $2,000 | 120 | 4.8387 |
+| $10,000 | 600 | 4.9669 |
+
+These numbers assume **unlimited eligible markets**. If only 100 qualify, effective breadth stops at \(100/[1+99(0.20)]=4.8077\), regardless of purse size, under the same covariance assumptions.
+
+**Reverse design equation.** Given a target independent-variance equivalent \(D^\star>0\), positive correlation \(0\leq r<1\), and target utilization, the minimum nominal exposure count in this model is
+
+\[
+N_{\min}(D^\star,r)=
+\left\lceil\frac{D^\star(1-r)}{1-D^\star r}\right\rceil
+\quad\text{when }D^\star r<1.
+\]
+
+The budget needed to have capacity for \(N_{\min}\) positions is then
+
+\[
+W_{\min}=\frac{bN_{\min}}{\rho}
+\]
+
+provided at least \(N_{\min}\) opportunities are admissible, independently fundable, liquid at \(b\), and not prohibited by stress-loss constraints. This is a capacity condition, **not an instruction to accumulate or spend** a particular wealth amount. If \(D^\star r\geq1\), the strict target is impossible for any finite \(N\) in the \(r>0\) equicorrelation model (for equality \(D^\star r=1\), it can be approached only as \(N\to\infty\)). If \(r=0\), \(D_{\rm var}=N\). For negative correlations or heterogeneous variances the simple "effective number" can cease to behave like a count, and the complete covariance or scenario distribution must replace it.
+
+**Exact arithmetic check.** When \(r=1/5\), \(D^\star=4\), the inverse requires exactly 16 units, so with \(b=\$10\), \(\rho=3/5\), one needs capacity \(W\geq \$800/3\). Raising the target to \(D^\star=49/10=4.9\) requires exactly 196 units, or \(W\geq \$9{,}800/3\). A supply of only 100 eligible exposures makes 4.9 infeasible at that correlation even with unbounded purse wealth. A target of 5 is asymptotic, not feasible with finite units. These rational checks illustrate why floating-point ceilings near exact integers need care; they are *model arithmetic*, not finance observations.
+
+**Research problem:** observed or estimated outcome covariance is not constant, and extreme co-loss often differs from average correlation. Our future measure of market diversity should therefore report (a) distinct settlement/economic events, (b) entropy of stake weights, (c) dependence-adjusted variance equivalence under declared scenarios, (d) factor-entropy ENB when its decomposition and risk contributions are well-defined, and (e) stressed joint loss. One scalar should not pretend to replace all five.
+
+### 10.3 Opportunity supply is a tolerance-dependent frontier
+
+Let \(\delta\) denote a chosen eligibility tolerance, \(\ell\) a liquidity boundary, and \(\mathcal U_t\) the universe of contemporaneously available economic events. Define, schematically,
+
+\[
+M_{\delta,\ell,t}
+=\#\{i\in\mathcal U_t:
+\text{identity distinct};\
+\text{liquidity at }b\geq\ell;\
+\text{net-edge lower bound }g_i^-\geq\delta;\
+\text{eligible under other declared guards}\}.
+\]
+
+All quantities must be evaluated with only information available *at the decision time*. If \(\delta\) is lowered to admit less favorable bids, \(M_{\delta,\ell,t}\) can grow, but that is not necessarily an increase in the number of profitable opportunities. If the bound is not calibrated, apparent growth in "eligible" supply may just be more forecast error. Dependencies between events also change with selection: a threshold may admit many new markets whose payoffs all depend on one latent variable.
+
+For equally sized, independent, simultaneously settled and correctly priced candidate units ordered by decreasing true net edge \(g_{(k)}\), the discrete increments satisfy
+
+\[
+E[\Delta W_{N+1}]-E[\Delta W_N]=b\,g_{(N+1)}.
+\]
+
+The purse increase needed to support each *additional* target unit is \(b/\rho\) away from integer-boundary subtleties. Thus, in a continuous interpolation, the **marginal expected dollars returned per additional purse dollar** while opportunities last is approximately \(\rho\,g_{(N)}\). This is the precise "triangulation" between purse growth, rank-dependent edge supply and realized deployment capacity. If marginal true \(g_{(N)}\) crosses zero, *forcing* the target has negative marginal expected profit. If qualified supply saturates, the numerator of expected profit cannot continue growing merely because the purse grows, so expected return measured against the *whole purse* may decline.
+
+Those conditions are intentionally stronger than the general situation: in practice probabilities, execution costs, adverse selection, horizons, dependence and liquidity vary, and true \(g_i\) is unobservable. A portfolio-wide objective may admit a negative standalone edge for hedging, but that requires a measured joint benefit, not a higher purse balance.
+
+### 10.4 The time axis: a market supply *flow* as well as a market supply *stock*
+
+For rapidly resolving markets, the instantaneous number of eligible open positions is only one measure of diversity. Let \(\lambda\) be the average rate of **new, qualifying, economically distinct accepted events** per unit time and \(\tau\) their mean time from capital commitment to capital release. Under a stable and stationary flow satisfying Little's law,
+
+\[
+E[N_{\rm outstanding}]=\lambda E[\tau].
+\]
+
+Consequently, a full $b unit in every qualifying outstanding event supports approximately \(b\lambda E[\tau]\) dollars of concurrent principal, and the corresponding continuous purse crossover is
+
+\[
+W_{\rm flow}\approx \frac{b\lambda E[\tau]}{\rho}.
+\]
+
+This is an application of an established queueing theorem to **funding-inventory accounting**, not a claim that market events obey its conditions automatically. The throughput of fresh committed principal is instead approximately \(b\lambda\) dollars *per unit time*; turnover cannot be inferred from the stock count alone. If a fixed group of event families generates successive highly correlated hourly contracts, its large event flow need not imply large cross-sectional risk diversity. Common delays, failed fills, nonstationary event arrivals, settlement bottlenecks and recycled losses may violate the stationary model.
+
+**Illustrative controlled case:** five eligible accepted events arrive per hour and each locks capital for four hours. The stationary model predicts around 20 concurrently occupied $10 units, or $200 in committed principal. A 60% target can be filled at the continuous crossover only for a purse of about $333.33; buying 100 superficially different tickers in the same four hours would change this conclusion only if their economic identities, supply and liquidity actually warranted it.
+
+### 10.5 Hypotheses produced by triangulation
+
+- **H6 — capital saturation.** Holding \(b,\rho,\delta,\ell\) fixed, rising wealth eventually causes target deployment shortfalls if the admissible economic-event supply is bounded, even while realized nominal participation may remain profitable.
+- **H7 — breadth saturation.** Adding event-contract listings that share drivers increases nominal \(N\) much faster than realized effective risk diversity or reduces neither forecast-error loss nor stress drawdown proportionately.
+- **H8 — opportunity-quality frontier.** When purse growth pushes selection farther down an ex-ante ranked opportunity list, the incremental realized, friction-adjusted benefit decreases faster than a stationary constant-edge model predicts; an explicit idle-cash policy may outperform forced utilization.
+- **H9 — flow-stock distinction.** Shorter lock time improves the funding-stock/throughput relation conditional on qualified arrival rate, but is insufficient evidence of higher net economic profit or independent risk breadth.
+
+Research should estimate the **surface** \(D_{\rm risk}(W,b,\rho,\delta,\ell,t,\text{dependence model})\), together with expected profit on total purse, drawdown, stressed covariance and capital-time, not just a curve of listed tickers versus wealth. A threshold or entropy measure selected after seeing profits must be tested on a later held-out period. No production policy is inferred.
+
+## 11. Primary research consulted, with transfer boundaries
+
+The following sources are actual scholarly publications or identifiable working papers with a publisher, journal, central-bank, NBER or original author record checked on 2026-10-14. **Access boundary:** this pass checked publication metadata, primary abstracts and available official descriptions; it does not claim that every paywalled full article was read. A mathematical derivation in §10 remains *our model* even where these papers motivate its structure. The key literature is deliberately adversarial rather than a handpicked endorsement.
+
+| Source and permanent locator | What it actually addresses | Legitimate role here, and limitation |
+|---|---|---|
+| H. Markowitz, "Portfolio Selection," *Journal of Finance* 7 (1952), 77–91. https://doi.org/10.1111/j.1540-6261.1952.tb01525.x | Portfolio risk is a property of allocations and joint returns, not a count of assets alone. Publisher's article record confirmed. | Foundation for covariance-based risk; not a model of resolved binary event contracts, order books or fixed-dollar tickets. |
+| J. L. Evans and S. H. Archer, "Diversification and the Reduction of Dispersion," *Journal of Finance* 23 (1968), 761–767. https://doi.org/10.1111/j.1540-6261.1968.tb00315.x | Empirical diversification by portfolio breadth in securities. Publisher bibliographic record confirmed. | Precedent for asking how quickly marginal diversity gains saturate; **no empirical coefficient from that paper is carried into this note** without full review. |
+| R. C. Grinold, "The Fundamental Law of Active Management," *Journal of Portfolio Management* 15 (1989), 30–37. https://doi.org/10.3905/jpm.1989.409211 | Relates active investment performance to forecasting skill and **independent** decision breadth under its theoretical assumptions. Publisher record confirmed; full article not accessed. | Research lead for why skill, independent opportunities and breadth interact; not a proof that adding weak-edge event markets increases wealth or that empirical information ratio obeys an exact square-root law here. |
+| A. Meucci, "Managing Diversification," *Risk* (2009), 74–79; expanded working-paper abstract. https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1358533 | Constructs a diversification distribution over uncorrelated bets and a factor-entropy-based effective number of bets (ENB); proposes a mean-diversification frontier. Indexed author-paper abstract checked; original PDF not accessed in this pass. | Most directly relevant methodology for effective diversity. **Do not equate** ENB with \(N\), nominal stake entropy, or our equicorrelation variance-equivalent count without a worked transformation. |
+| V. DeMiguel, L. Garlappi and R. Uppal, "Optimal Versus Naive Diversification," *Review of Financial Studies* 22 (2009), 1915–1953. https://doi.org/10.1093/rfs/hhm075 | In seven stock datasets and 14 tested models, none of the optimized methods consistently beat 1/N out of sample on stated criteria; estimation error undermined naive optimization's competitors. Publisher abstract checked. | Motivates testing simple equal units when probability/covariance estimates are noisy, **not** universal optimality of 1/N or event-market stake sizes. |
+| C. Kirby and B. Ostdiek, "It's All in the Timing: Simple Active Portfolio Strategies that Outperform Naïve Diversification," *Journal of Financial and Quantitative Analysis* (2012). https://www.cambridge.org/core/journals/journal-of-financial-and-quantitative-analysis/article/its-all-in-the-timing-simple-active-portfolio-strategies-that-outperform-naive-diversification/05D18E04B226C6E9B8441482CC92F943 | Counterpoint to broad reading of DeMiguel: with different designs and controls, optimized strategies can outperform 1/N; turnover and transaction costs are crucial. Publisher abstract checked. | Prevents mistakenly declaring equal-unit betting superior by appeal to one paper; timing and frictions must be explicit. |
+| J. B. Berk and R. C. Green, "Mutual Fund Flows and Performance in Rational Markets," *Journal of Political Economy* 112 (2004), 1269–1295. https://doi.org/10.1086/424739 | Rational model of decreasing returns to scale in active investment management and competitive capital flows. Publisher and NBER abstracts checked. | Distinct theoretical analogue for capital outgrowing alpha/capacity; **does not empirically establish** our chosen power-law rank-edge decay in prediction markets. |
+| C. F. Manski, "Interpreting the Predictions of Prediction Markets," *Economics Letters* 91 (2006), 425–429. https://doi.org/10.1016/j.econlet.2006.01.004 | Formal market equilibrium with heterogeneous traders; contract price need not simply identify a universally agreed event probability. Publisher abstract checked. | Justifies treating \(q_i\) as an independently estimated and uncertainty-bearing quantity rather than copying the ask/mid price into it. |
+| J. Wolfers and E. Zitzewitz, "Interpreting Prediction Market Prices as Probabilities," Federal Reserve Bank of San Francisco Working Paper 2006-11; NBER 12200. https://www.frbsf.org/research-and-insights/publications/working-papers/2006/04/interpreting-prediction-market-prices-as-probabilities/ | Provides conditions under which prices approximate mean beliefs; recognizes risk aversion and belief heterogeneity as important parameters. Fed and NBER abstracts checked. | Necessary balancing evidence against overgeneralizing Manski: prices can be useful signals but an estimated *edge* still requires a tested probability model and executable prices. |
+| E. Snowberg and J. Wolfers, "Explaining the Favorite–Long Shot Bias: Is it Risk-Love or Misperceptions?," *Journal of Political Economy* 118 (2010), 723–746. https://doi.org/10.1086/655844 | Uses horse-race betting data and compound bets to study probability misperception behind observed longshot bias. Publisher and NBER abstracts checked. | Motivates investigating whether the weak-opportunity tail is systematically mispriced, **not** assuming every event market or side exhibits horse-race bias. |
+| J. D. C. Little, "A Proof for the Queuing Formula: L = λW," *Operations Research* 9 (1961), 383–387. https://doi.org/10.1287/opre.9.3.383 | Under its stationary, finite-mean conditions, mean work-in-progress equals arrival rate times mean time in system. Publisher's original abstract checked. | Supplies stock–flow accounting in §10.4 when opportunities arrive and funded contracts settle; says nothing about profitability or statistical independence. |
+| Kalshi Research, "Calibration in Prediction Markets — Theory and Evidence," published August 2026. https://kalshi.com/research/publications/calibration | Venue-sponsored analysis of 2,243,741 historically resolved markets reports strong aggregate calibration near settlement, with class/volume variation. Primary venue abstract checked. | **Not independent peer review**, and aggregate calibration is not evidence that the proposed long-tail trades have positive edge after fees. Useful as a provenance-marked empirical context, not a substitute for an independent out-of-sample study. |
+
+The next scientific receiving test is *not* a connector configuration: verify the algebra on synthetic independent, positively correlated and perfect-common-shock cases; estimate an effective-risk measure on real historical outcomes with event-family clustering; build a later-period, shadow-only evaluation of purse-size/stake-size/opportunity-supply surfaces. Preserve any failures and contrary findings. A successful historical simulation, if eventually obtained, must not be called a deployed or profitable strategy.
+
+## 12. Current finding
+
+The proposal is mathematically coherent as a **bounded unit of participation plus a chosen breadth objective**. It equalizes nominal principal at risk per identified exposure, raises the number of capital participations with wealth when enough admissible events exist, and can reduce idiosyncratic risk without scaling the wager size.
+
+The newly identified **two-way triangulation** is that eligible opportunity supply imposes an upper bound on capital supportable at a chosen fixed dollar unit and utilization target, while the dependence structure imposes a potentially much stricter bound on *effective* diversity. Bigger purse \(\not\Rightarrow\) more independent bets once economic-event supply or common-risk saturation binds. Conversely a required risk breadth, combined with a fixed unit, determines a conditional minimum purse capacity—*only* when enough suitable exposures exist.
+
+It does **not** ensure that extra markets have edge, that listed markets are independent, that a fixed dollar risks the same variance at different odds, that wider portfolios beat concentrated portfolios, or that compulsory deployment is prudent. The empirical science question is the shape of the *admissible, dependence-adjusted, time-priced long tail*: how many genuinely distinct opportunities exist, at what marginal net value and common-loss cost, as capital expands?
+
+**Boundary:** research note only. No changes to Kalshi production, allocation settings, venue accounts, risk policy, executables or deployed strategies follow from this note.
+
 
 The proposal is mathematically coherent as a **bounded unit of participation plus a chosen breadth objective**. It equalizes nominal principal at risk per identified exposure, raises the number of capital participations with wealth when enough admissible events exist, and can reduce idiosyncratic risk without scaling the wager size.
 
