@@ -106,6 +106,37 @@ The Leader's proposed names are **1D L-Space = SCA**, **3D L-Space = SEN**, **4D
 
 The derived maps need qualifications. An SCA can enter SEN as an **opaque** `mark(ni)` after RFC-6920 admission; this does not infer a predicate or meaning. A typed SEN predication can be witnessed as an SEAVT row only after a specific **time source, observation authority and SEAVT admission** are provided. Forgetting `t` projects a valid SEAVT record to an SEN triple, losing temporal provenance: distinct events may yield the same triple. Therefore the reverse map is **not canonical**. Hashing the SEAVT *row* creates that row's content identity, normally distinct from an SCA naming any of its term components. On all three projections, source/witness validity and customer receiving remain separate from content identity.
 
+### Dimensionality must survive an ablation assay (2026-10-14)
+
+The 1/3/4 ladder is a **presentation arity**, not yet an intrinsic
+dimension result. For a specific receiving task, define the observations,
+allowed chart transformations and decision tests *before* assigning
+dimensions. Test whether a one-address reading loses semantic context,
+whether an SPO projection retains subject/object handedness, whether
+removing one FOUR polarity erases the distinction between unknown and
+contested, and whether forgetting the SEAVT witness time conflates
+causally incomparable events. Deliberate, actor-attributed abstention
+can also be distinct from no event even though the Lean bottom-posit
+is identity on the value projection.
+
+One candidate FOUR-valued Chu matrix is
+$r_v:E\times(\Pi\times E)\to FOUR$ with
+$r_v(s,(p,o))=v(s,p,o)$. The two FCA incidences come from
+independent positive and negative coordinates of this matrix.
+A claimed Chu chart change must preserve evaluations
+$r(s,g(x'))=r'(f(s),x')$ as well as declared typing and authority.
+A matching tuple size is not enough. Falsify minimality with a
+reproducible task whose correct decision changes when a proposed
+coordinate is erased; report failed decisions, compute and repair
+costs. This is a test of the existing [LS-SAS-001](https://github.com/lenticule-science/linguistics-services-section/blob/main/specifications/l-space-semantic-architecture.md)
+research/engineering boundary, not a separate coordinate engine.
+
+Deriving **three spatial dimensions** from typed SPO residuals and
+**one physical temporal dimension** from directionality requires a
+separate causal/metric carrier, dimension estimator and proof
+of preserved structure. Neither the chromatic Lorentzian model nor
+the event-time field by itself settles that stronger claim.
+
 ### Fregean predication, FOUR, Chu, handedness and causal order
 
 The older “Fregean predication forces FOUR” research often treats **two argument slots** as the two binary **support/refutation slots**. These must not be conflated. Frege's unsaturated functions can be unary, binary or of greater arity (see [Stanford Encyclopedia: Frege, §§2.1.1–2.1.2](https://plato.stanford.edu/entries/frege/)). The binary SPO cell is the Group's selected **relational realization**, not a theorem that Frege only admitted binary predicates. Under an **additional independent evidence-polarity assumption**, a predication valuation in `Bool×Bool` gives precisely the four Belnap statuses `⊥,t,f,⊤`. The [conditional October 6 ruling and its literature table](https://github.com/lenticule-science/obsmetrologia/blob/2ae077eed16dd1c9f2345d0a3360563fbb3cc47e/docs/history/marks-absurd-and-handedness-ruling.md) validates the four-valued witness representation and insists that **FOUR fusion alone is commutative and does not generate handedness**.
@@ -205,6 +236,47 @@ A document is a **source of possible articulations**, not the token universe. Th
 5. Derive FCA lattices, category/site structures, causal cones or an optional Hilbert-space model as *views of a declared input context*, with their assumptions and status intact.
 
 CAIRN's information-object custody, document search and FeltOS agent orchestration are adjacent services; none redefines L-Space. A previous reference to \`science-services-section/services/l-space/README.md\` does not resolve in the inspected repository, so it cannot substantiate a current application or deployment claim.
+
+### Actor-local enabled arenas: the EDA and folding research bridge
+
+The next useful reading of L-Space for an autonomous Actor is its
+**enabled arena**: the subset of typed proposed actions whose
+inputs, producer outputs, authorization, resource limits and
+consumer preconditions hold at the current causal position.
+That is an Actor-relative projection, **not a new global scheduler
+or a generated folder of tasks**.
+
+[Relating's current manifold](https://github.com/emsenn/relating/blob/main/src/running/manifold.mts)
+already finds *candidate* edges from equal carrier IDs.
+Its own [specification](https://github.com/emsenn/relating/blob/main/docs/operations-manifold.md)
+explicitly denies that this proves a real cross-package pipeline
+or executes an action. The missing semantics is the actual
+Hoare compatibility judgment: does the producer's postcondition
+imply the consumer's precondition *under the admitted authority,
+law and environment*? When that judgment holds, a bounded model
+can propose fabrication in the EDA sense—specify, synthesize,
+integrate, check and receive—rather than inventing an entire
+organizational runtime from context.
+
+The [Central Dogma of Code Fabrication](https://github.com/lenticule-science/science-services-section/blob/main/content/text/documents/articles/notes/2026/07/24/2026-07-24-research-on-the-central-dogma-of-code-fabrication.md)
+owns the LLM-as-ribosome specificity hypothesis; the
+[Union folding research](https://github.com/lenticule-science/science-services-section/blob/main/content/text/documents/articles/notes/2026/07/24/2026-07-24-the-union-evm-chain-as-a-folding-protein.md)
+owns the constrained-conformation/metastability hypothesis;
+the [SAS](https://github.com/lenticule-science/linguistics-services-section/blob/main/specifications/l-space-semantic-architecture.md),
+[HLD](https://github.com/red-cup-engineering/capability-cell-fabrication-services-section/blob/main/specifications/l-space-hld.md)
+and [LLD](https://github.com/red-cup-engineering/capability-cell-fabrication-services-section/blob/main/specifications/l-space-lld.md)
+own their actual requirements and code gates.
+
+**Discriminating experiment:** compare one real demand executed
+with repository-wide retrieved context versus the same model
+given only the current admitted arena, source-pinned premises,
+allowed moves and specified receiver. Measure invalid proposals,
+missing necessary options, inference tokens, accepted outcomes,
+elapsed time, operating cost and independent customer acceptance.
+An arena that excludes an action necessary for acceptance fails.
+Any advantage must be measured rather than derived from a
+biological metaphor. This preserves the ambitious non-LLM
+inference direction as a concrete research-and-market test.
 
 ## Recurrent forms: one quartet, several triads and fives, and a physical J26 (2026-10-14)
 
