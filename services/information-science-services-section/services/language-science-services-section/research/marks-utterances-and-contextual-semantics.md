@@ -93,7 +93,148 @@ A text body can be understood without authorizing a transaction. Keep distinct:
 
 Typed ActivityStreams/CloudEvents or a Semioverse exchange is an operational envelope for some of these events, not a replacement for semantics. A valid natural-language parse cannot grant a capability.
 
-## 7. Research acceptance
+## 7. Locution, illocution, rule closure and actual perlocution: the recovered predication factorization
+
+The earlier 561 Group [locution–illocution–perlocution factorization
+sketch](https://github.com/emsenn/561-theory/blob/04a09cb4f14dfa58994db7a6864fe7771ddca882/humanities/theories/math/theories/categories/theories/predication-categories/prose/learning/claims/locution-illocution-perlocution-factorization.md)
+and its [Klein-four stratification
+sketch](https://github.com/emsenn/561-theory/blob/04a09cb4f14dfa58994db7a6864fe7771ddca882/humanities/theories/math/theories/categories/theories/predication-categories/prose/learning/claims/klein-four-stratifies-locution-illocution-perlocution.md)
+are genuine archival research, not newly invented interpretations. They propose:
+choose a predication cell (locution), add a signed piece of evidence at it
+(illocution), and close the amended valuation under a rule system
+(perlocution). **Both sources label themselves \`status: sketch\`.** The
+mathematical parts that are actually proved in the current corpus are in
+[Obsmetrologia's positing morphism](https://github.com/lenticule-science/obsmetrologia/blob/2ae077eed16dd1c9f2345d0a3360563fbb3cc47e/Obsmetrologia/Language/Positing/Morphism.lean),
+where \`Valuation.delta\`, \`posit\`, \`posit_kBot\`,
+\`posit_inflationary\`, \`posit_posit_same\`, \`posit_comm\`, \`posit_idem\`
+and \`posit_converse_natural\` are source-located Lean declarations.
+The [Curry–Howard–Lambek development](https://github.com/lenticule-science/obsmetrologia/blob/2ae077eed16dd1c9f2345d0a3360563fbb3cc47e/Obsmetrologia/Language/Predicating/CurryHowardLambek.lean)
+provides a distinct typed proof/program calculus. Neither Lean file
+asserts Austin's entire speech-act theory or proves the archival
+Grothendieck-construction sketch.
+
+### Precisely typed scope
+
+Let \(\Phi\) be the **admitted claim-point type** (not an English string)
+and \(V = (\Phi\to\mathrm{FOUR})\) be the space of valuations of those
+claims. Here the two evidence bits of FOUR express independently told
+for and told against; they are not the subject and object slots of an
+SPO triple. A source-anchored utterance \(u\) under discourse context
+\(c\) has a **partial, possibly multiply-valued** interpretation
+\(\mathrm{loc}(u,c)\subseteq\Phi\). An illocution requires an additional
+attributed actor, force \(f\), lawful authority or standing \(a\), and a
+target \(\phi\in\mathrm{loc}(u,c)\). **Choosing a cell does not give its
+speaker the authority to posit evidence there.**
+
+For the specifically **assertive/denying evidence** subset of forces,
+the lawfully authorized local effect has the precise form
+
+\[
+ \mathrm{posit}_{\phi,q}(v)(\psi)
+ = v(\psi)\vee_k \delta_{\phi,q}(\psi),\qquad
+ \delta_{\phi,q}(\psi)
+ = \begin{cases}q&\psi=\phi\\\bot_k&\psi\ne\phi.\end{cases}
+\]
+
+The Lean positing development proves knowledge inflation, idempotence,
+monotonicity, and commutation for this *information-adding* operation.
+Independent positive and negative charges can produce a contested
+FOUR valuation; one charge must not overwrite the other. This does not
+model evidence retraction, every Austin/Searle illocutionary force,
+or a legislator's institutional declaration without separate rules.
+
+Let \(C_{\mathcal S}:V\to V\) be a lawfully selected rule-system
+closure, if one has actually been defined and proved extensive,
+monotone and idempotent. A bounded formal transition can then be
+described by the *conditional* composite
+
+\[
+  v
+ \xrightarrow{\mathrm{posit}_{\phi,q}}
+  v\vee_k\delta_{\phi,q}
+ \xrightarrow{C_{\mathcal S}}
+  C_{\mathcal S}(v\vee_k\delta_{\phi,q}).
+\]
+
+This is a **selection + evidence act + rule-consequence**
+decomposition; its last arrow is *inferential rule closure*. Austin's
+**perlocution** means actual effects on an audience or another actor:
+understanding, believing, refusing, installing, paying, becoming angry,
+or acting. An inferential consequence in the producer's store is not
+therefore a real-world perlocution. The two are connected only by an
+independently witnessed receiving relation
+\(\mathrm{uptake}(receiver,act,effect,witness)\); its absence means
+*unobserved*, not *successful by default*. [Austin's original
+distinction](https://plato.stanford.edu/entries/speech-acts/) makes
+force and downstream effects separate, just as the Group's existing
+Work Arena distinguishes a reported move from a received outcome.
+
+**Historical sketch corrections required before theorem status.**
+The archived construction calls a proposed
+\(\mathbf{PS}_{\Phi}=\int_{\Phi}\mathbf{PS}\) a Grothendieck construction,
+but it has not supplied the requisite indexed category/pseudofunctor or
+valid base-change functors; its asserted fiber
+\(\mathbf{PS}_{/\phi}\) is not typed until \(\phi\) is an object of the
+appropriate source category. The sketched *locution arrow* is an
+identity on \((v,\phi)\): an identity cannot by itself record the
+nontrivial decision that selected \(\phi\). Preserve cell selection as
+input/witness until a valid fibration is constructed. Nor is a unique
+\((\phi,q)\) determined by the final closed valuation without extra
+minimality/faithfulness assumptions: distinct positing histories may
+have equal closures.
+
+The [historical K₄ stratification](https://github.com/emsenn/561-theory/blob/04a09cb4f14dfa58994db7a6864fe7771ddca882/humanities/theories/math/theories/categories/theories/predication-categories/prose/learning/claims/klein-four-stratifies-locution-illocution-perlocution.md)
+is usefully tested as follows: locution's chosen \(\phi\) stays fixed
+under **cellwise value** symmetries; positing transforms according to
+the symmetry's knowledge-order variance (join for monotone maps,
+dual/meet under order reversal where lawful); a consequence operator
+commutes with a symmetry **only if that actual operator commutes**.
+Syntactic closure of a presentation of rules is neither necessary
+nor sufficient without proving soundness, completeness and the action
+on rule interpretations. For a receiving actor, equivariance further
+depends on their own authority and environment; do not infer it from
+FOUR's truth tables.
+
+### Operationally consequential negative cases
+
+The ordinary 561 Group Work Arena already distinguishes what a
+message **does** from what an agent **wants** to happen:
+\`request\` demands a receiver-dependent effect, \`ask\` seeks
+information, \`report\` contributes testimony about a condition,
+\`propose\` suggests a possible undertaking, and \`declare\` requires
+competent institutional authority. A \`promise\` is a different
+commitment from posting a request; a \`deliver\` assertion is distinct
+from the independent \`accept\`/receiving result. These are existing
+typed arena moves, not new concepts to implement in a second ontology.
+The [FeltOS Work Arena journal](https://github.com/red-cup-engineering/feltos/blob/main/src/work/work-board.mjs)
+admits move records and independently replays their legality; the
+[MetroPlat tellings view](https://github.com/red-cup-engineering/metroplat/blob/main/src/world-tellings.mjs)
+tells *even moves rejected by replay* as speech. **A telling is a
+locution/illocution witness, not an authorization or perlocution
+receipt.** A producer saying “I delivered” may be told without a
+competent recipient ever accepting.
+
+Conformance tests must distinguish: the same utterance content used as
+a question versus a directive; contradictory posits at the same claim
+versus contextual ambiguity about different claims; a delivered message
+whose target service never ran; a purported \`accept\` utterance that
+the arena refused; two timestamps for identical SPO triples; and a
+historically valid report with no action authority. The test reads the
+**actual replayed board position** and independently authenticated
+receiver if any; it must not promote the told text or a digest
+to evidence of a changed institution.
+
+The desired next non-LLM reasoning mechanism is accordingly more
+specific than “attach an LLM to a knowledge graph”: admit typed claim
+cells with provenance, perform kernel-checked local evidence algebra and
+rule closure, admit speech-act force under the real jurisdiction,
+and expose both derived consequences **and** unresolved/contested
+evidence; only separately witnessed actions update operative work.
+The formalization of force-specific authority and proof of the indexed
+category remain Science research obligations, not liberties of a
+fabrication provider.
+
+## 8. Research acceptance
 
 Define a typed prototype with genuine source-span anchors, parser candidates, multiple distinct ambiguity forms and signed/linked evidence from one real English package revision. Make two local interpretations that do and do not glue; preserve honest unknowns. Produce restricted Lean propositions about source identity, restriction composition and no implicit authority change. Test the linguistic adequacy empirically against sampled utterances. No existing results are upgraded by this proposal.
 
