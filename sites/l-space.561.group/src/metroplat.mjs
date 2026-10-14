@@ -20,7 +20,7 @@ import { selectMetroplatCorpusRoot, assertMetroplatCorpusRoot } from './metropla
 import { searchAndFetchTools, vaultMcpTools } from '@red-cup-engineering/knowledge-system-server/mcp-tools';
 import { textRepr } from '@red-cup-engineering/http-services-section/representation';
 
-import { EXCLUDED_SEGMENTS, lSpaceReaderPolicy } from './archive-policy.mjs';
+import { EXCLUDED_SEGMENTS, lSpaceReaderPolicy, publicSourceVisible } from './archive-policy.mjs';
 const escape = (value) => String(value ?? '').replace(/[&<>"']/gu, (c) => ({'&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;'}[c]));
 const documentPath = (id) => `/knowledge?document=${encodeURIComponent(id)}`;
 /** A browser reading of the existing CAIRN topic operation. These are sourced
@@ -142,7 +142,7 @@ export function lSpaceMetroplat({config, admission, configuration = {}, archive:
   const vocabulary=fetchApplication(async request=>handleVocabularyRequest(request,{
     archive:await archive(), baseUrl:configuration.vocabularyBaseUrl ?? config.publicBaseUrl,
     documentUrl:(document,{public:published,identity})=>new URL(
-      published && !Object.hasOwn(document.properties ?? {},'consent-status')
+      published && publicSourceVisible(document)
         ? `/knowledge/public?document=${encodeURIComponent(document.path)}`
         : `/knowledge?name=${encodeURIComponent(identity)}`,config.publicBaseUrl).href,
   }), {matches:ownsVocabularyRequest});
@@ -180,7 +180,7 @@ export function lSpaceMetroplat({config, admission, configuration = {}, archive:
           const note=await call('fetch',{id});
           const source=await (await archive()).read(id);
           const sourceId=source.path ?? id;
-          const sharing=source.properties?.visibility === 'public'
+          const sharing=publicSourceVisible(source)
             ? `<p><a href="/knowledge/public?document=${escape(encodeURIComponent(id))}">Public reading link</a></p>` : '';
           const parsed=await resolveReadingLinks(parseBody(source.body ?? ''),{document:sourceId,archive:await archive(),documentUrl:target=>new URL(documentPath(target),config.publicBaseUrl).href});
           const rendered=renderBody(await retainDocumentEmbeds(parsed,{root,document:sourceId,custody,excludes:readerPolicy.excludes}), {resolve:target=>({href:`/knowledge?name=${encodeURIComponent(target)}`,type:'knowledge-name',title:target})});
@@ -218,7 +218,7 @@ export function lSpaceMetroplat({config, admission, configuration = {}, archive:
       try {
         const document=await (await archive()).read(id);
         // Publication belongs to the source, never to a URL or a prior search.
-        if (document.properties?.visibility !== 'public') return unavailable();
+        if (!publicSourceVisible(document)) return unavailable();
         return page(`<article><h2>${escape(document.title ?? id)}</h2><pre style="white-space:pre-wrap">${escape(document.markdown ?? document.body ?? '')}</pre></article>`);
       } catch {return unavailable();}
     },
