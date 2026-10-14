@@ -223,6 +223,19 @@ algebra and the *binary-relation* residuation are separate structures;
 the former's commutative fusion must never be confused with the
 latter's noncommutative predicate composition.
 
+**Executable law correspondence.** Red Cup's existing [FOUR-valued Chu
+implementation](https://github.com/red-cup-engineering/computer-data-engineering-services-section/blob/main/lib/metrologic/src/chu.mjs) now derives its positive FCA `extension` from the
+**positive evidence bit**, as in `Valuation.posIncidence`. Consequently a
+positive-and-negative (`stable`/`both`) observation belongs to the
+positive incidence as well as retaining its opposing testimony. The
+[regression cases](https://github.com/red-cup-engineering/computer-data-engineering-services-section/blob/main/lib/metrologic/test/chu.test.mjs)
+check every FOUR corner, a joined opposing pair in both orders, and
+a crucial counterexample: two Chu spaces can have the **same Boolean
+positive extension** but differ in their negative evidence, so they
+fail Chu-map equality. This repairs one actual finite projection,
+**not** the still-open general SEN-to-Chu functor or the Group's
+physical dimension conjecture.
+
 In a candidate Chu realization of `φ`, one possible presentation is
 `points = subjects`, `states = predicate/object pairs`, and
 `e(s,(p,o)) = v(s,p,o)`. A complete `ChuSpace` requires an admitted
