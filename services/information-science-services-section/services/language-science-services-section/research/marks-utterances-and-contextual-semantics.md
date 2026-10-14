@@ -221,6 +221,20 @@ on rule interpretations. For a receiving actor, equivariance further
 depends on their own authority and environment; do not infer it from
 FOUR's truth tables.
 
+### An anti-gauge obstruction: why the quartet cannot make all effects symmetric
+
+The [historical Klein-four speech-act stratification sketch](https://drive.google.com/file/d/1DpDR9o44BNnYELNFatzTPs30OaSjdSBf/view) proposes that rule closure is K₄-equivariant exactly when its rules are K₄-closed. This needs a **structural correction**: K₄ contains the *knowledge-order reversing* conflation, whereas ordinary consequence closure is *knowledge-extensive*. A nontrivial extensive closure **cannot** commute with an order-reversing involution on every input.
+
+**No-go statement (any poset).** Let (X,≤) be a poset, c:X→X extensive (x≤c(x)), and g:X→X an order-reversing involution (g²=1). If g(c(x))=c(g(x)) for all x, then **c=id**. Indeed g(x)≤c(g(x)); applying order reversal gives g(c(g(x)))≤g(g(x))=x. Commutation makes the left side c(x). Extensivity also gives x≤c(x); antisymmetry gives equality. **No finiteness, distributivity, biology or “gauge magic” is required.** This applies to knowledge-Heyting nuclei. The [generic Lean theorem source](https://github.com/lenticule-science/obsmetrologia/blob/9e00042df11118679ebf4fad6eac7726ea90451a/Obsmetrologia/Language/Positing/NucleusAndCommutingNuclei.lean) is named Nucleus.antitone_involution_commuting_eq_identity (authored 2026-10-14; only the corresponding Lean CI readback can establish actual compilation).
+
+The productive correction is **variance-aware transportation of operators**. Under a knowledge-order automorphism such as negation, an admitted closure *may* commute when its rule semantics is equivariant; under antitone conflation, an extensive closure conjugates to a **reductive interior**, not another extensive closure on the original order. A dispatch or inference system claiming unchanged resource authorization after reversing for/against evidence makes a type error. The paper sketch's claim that syntactic K₄-closure is *iff* for closure-equivariance cannot hold without modifying the operator types and substantial hypotheses.
+
+The companion [skill-invocation/illocutionary-body research](https://drive.google.com/file/d/1VYUQtQm6d_m2_oIFbDThnKXTBZ4D9aD8/view) records a distinct **five-way action reading**, currently a research construction rather than an independently compiled program theorem: four emitted positing acts indexed by FOUR (including **explicit abstention** at the knowledge-least value) and a fifth **non-act** identity (nothing emitted). Joining with knowledge-least changes no charge. A projection of the current truth bits thus erases the difference between “the actor deliberately withheld judgment” and “nobody acted.” Work Arena/SEAVT must retain the source, occurrence, force and receipt even when the charge projection stays the same. This is four evidence *values* plus one different kind of *act*, not five truth values.
+
+A finite falsifier uses X=Bool×Bool with coordinatewise knowledge order, g(p,n)=(not n,not p) and c(p,n)=(true,n). This c is extensive, monotone and idempotent, but nontrivial; the square g∘c=c∘g consequently fails. Check the counterexample exhaustively before claiming K₄-equivariant perlocution. Under the correctly transported *interior* (rather than c itself) the conjugacy square can commute by definition.
+
+Engineering consequence: the existing source-evidence join remains monotone and FOUR-valued; every proposed symmetry declares which order and which action it preserves, and authorization/settlement/market effects require independent receiving. No FOR/AGAINST involution may silently confer permissions. **This order-theoretic theorem does not derive physical 3+1 dimensions, quantum improvement, artificial general intelligence, or gyrobifastigial civilization.** Those are distinct, testable research programmes.
+
 ### Operationally consequential negative cases
 
 The ordinary 561 Group Work Arena already distinguishes what a
