@@ -125,7 +125,7 @@ metering interval, unit, quantity, revision and source observation, with
 separate ownership/rights and recipient authority. Prefer mapping to
 [OpenTelemetry resource attributes](https://opentelemetry.io/docs/specs/semconv/resource/)
 and [W3C PROV-O](https://www.w3.org/TR/prov-o/) for observation provenance,
-and [FOCUS billing](https://focus.finops.org/docs/specification/v1-2/sections/introduction/)
+and [FOCUS billing 1.4](https://focus.finops.org/docs/specification/v1-4/sections/introduction/)
 for provider *invoiced* cost and usage. These standards serve different
 readings: do not post a Cloud Monitoring estimate, an internal exchange,
 a reserved capacity forecast, a resource transfer, and a settled payable as
@@ -197,4 +197,13 @@ pricing page do not establish installed capacity. The repository's
 executes the finite-state conservation, transport-loss refusal, local-chart
 holonomy invariance and resource-unit nonfungibility **toy assays**. They
 are checks on this proposed finite model, not a proof that the installed
-Semioverse currently satisfies it or that gauges improve scheduling.
+Semioverse currently satisfies it or that gauges improve scheduling. In a
+fixed 100-tick, two-node **synthetic** workload of two arrivals per tick and
+one completion per tick per eligible node, the admitted extra node and
+one-transfer-per-tick channel raise completed units from 100 to 199 while
+conserving every unit (pending 100 down to 1). This is a constructive
+counterexample to the claim that all capacity improvements require faster
+single-host CPU; it is neither an estimate of our providers' current spare
+capacity nor a live throughput measurement. Actual FOCUS exports must be
+read under the source provider's declared version and compliance, even
+though FOCUS 1.4 is the current published standard.
