@@ -1,7 +1,8 @@
 ---
 title: "The Central Dogma of Code Fabrication — Transcription, Translation, and the Ribosome"
-description: "Argues a specific, falsifiable claim: fabrication fidelity is set by the completeness of the work order, not the skill of the provider, because the provider is structurally a ribosome — universal, interchangeable, and blind to intent that the message did not carry. Distinguishes this from the sibling kinetic-proofreading note's claim (fidelity costs energy) by locating a different question (where must specificity live), corrects an FourMix misattribution and an unverifiable node-count figure from the prior draft, and closes with an honest proved-vs-interpretive accounting."
+description: "Source-reconciled testable argument for work-order specificity and bounded provider authority, separating specification completeness, model capability, independent verification, and resource cost. Preserves the ribosome analogy while withdrawing the unproved provider-independence universal."
 date-created: 2026-07-24
+date-modified: 2026-10-13
 kind: research-note
 keywords:
   - unionification
@@ -14,25 +15,51 @@ keywords:
   - plasmid
   - gene-regulation
   - fabrication
-status: design
+status: research-hypothesis-source-reconciled
 declared-by: claude-interactive-session-supplying-leader-movement-team
 ---
 
-## Thesis
+## Thesis — the experimentally testable, not universal, claim
 
-The fidelity of a fabricated change is set by the completeness of the work order handed to a provider, not
-by which provider was hired. This is not a hope about diligence; it is a structural claim about where
-specificity is allowed to live. A fabrication provider — any hired inferential-computing process, any model
-tier — occupies the role a ribosome occupies in the cell: universal, interchangeable, and constitutionally
-blind to intent the message did not carry. A ribosome does not know which protein it is making; it reads
-whatever mRNA is threaded through it, codon by codon, and produces whatever the message specifies. Swap the
-message and the same machine makes a different protein. If a provider fills a gap in an under-specified
-order with its own guess about intent, that is not the provider being helpful — structurally, it is the
-ribosome editing its own message, which is a translation error by definition, not a judgment call. The
-corrective is never a more capable provider; it is a more complete order. This yields a falsifiable
-prediction: fabrication defects should correlate with work-order incompleteness, not with provider tier —
-a claim the demand-to-hire ledger (order specificity vs. resulting misfold rate) could test and this note
-does not test.
+A specification that leaves required outcomes unexpressed makes the intended
+result **unidentifiable from the message alone**. An inference provider cannot
+derive an absent stakeholder preference as a logical consequence of the work
+order. It may infer a plausible preference using background context; that
+inference is a *proposal* requiring the receiver's authorization, not
+permission to silently rewrite the contract. This is the sound structural
+reading of a provider as a "ribosome": one replaceable translator of a
+bounded message, not the source of the customer's authority.
+
+The original July 24 thesis was stronger: "fabrication fidelity is set by
+work-order completeness, not by which provider was hired." That is **not
+established by the sources or any theorem here** and is not a defensible
+universal engineering guarantee. A perfectly complete specification can
+still exceed a model's capabilities; an incomplete one may happen to produce
+an acceptable result; different provider skill, inference cost, context
+length, tool reliability and failure modes alter measured yield. Completeness
+and provider competence are **separate causal candidates with interactions**.
+
+The narrower falsifiable programme is: holding the qualified provider and
+test fixed, an independently measured reduction in missing/ambiguous
+requirements should improve the rate of *authorized and verified* effects, up
+to the limitations of the provider. Holding requirement completeness and
+acceptance test fixed, changing the provider can separately alter correctness,
+latency, cost and refusal. This makes specificity in the work order
+**necessary for transparent accountability** but not sufficient for
+reliable fabrication.
+
+The currently implemented
+[CapCell source-pinned fabrication gate](https://github.com/red-cup-engineering/capability-cell-fabrication-services-section/blob/main/services/capcell-manifest-fabrication-service/src/fabricate-local-capcell.mjs)
+shows why the distinction matters. A candidate has a normalized specification
+identity and a typed missing-evidence set; an opt-in v2 candidate cannot
+pretend unread SAS/HLD/LLD digests were verified. The
+[package-backed composition](https://github.com/red-cup-engineering/capability-cell-fabrication-services-section/blob/main/services/package-backed-capcell-fabrication-service/src/fabricate-package-backed-capcell.mjs)
+separately refuses provider self-reported source verification and package
+settlement. These are *enforcement rules*, not a theorem that any provider
+will produce correct code from complete input. Science's current
+[Emergency Repair Discipline source reconciliation](2026-07-24-capability-cells-and-emergency-repair-discipline.md)
+and [L-Space SAS](https://github.com/lenticule-science/linguistics-services-section/blob/main/specifications/l-space-semantic-architecture.md)
+carry the normative authority and current implementation state.
 
 ## 1. What this note adds, and what it does not
 
@@ -57,23 +84,56 @@ This note answers *where the information must already be, before that machinery 
 order, never assumed to be recoverable from the provider. These are complementary, not redundant: kinetic
 proofreading prices the check; this note prices the input to the check.
 
-## 2. The ribosome argument, precisely
+## 2. The ribosome correspondence and its counterexamples
 
-The fabrication-with-fidelity note states that "author exclusion is the chaperone law" (its §6).
-That rule is about who may *verify*. The ribosome argument is
-a distinct, narrower claim about who may *specify*: a provider that receives an incomplete work order and
-supplies the missing intent itself has not merely skipped verification — it has performed translation
-without a template for the part it invented. Author-exclusion catches a bad *check*; the ribosome constraint
-is about preventing a bad *read* from ever being called correct just because it was plausible. A provider
-that improves on an incomplete order is indistinguishable, from the outside, from a provider that guessed
-correctly — until the next order from a different provider guesses differently. Fungibility is exactly what
-makes this dangerous: because providers are meant to be interchangeable, hireable at random, and rotated
-without consequence, an incomplete order lets whichever provider was hired leak its own unaccountable
-judgment into the product. A complete order removes that leak by removing the need for a guess at all. The
-practical consequence is procurement policy, not model selection: spend engineering effort on work-order
-completeness (`mint-work-order`, classification) before spending it on hiring a "smarter" provider — the
-smarter provider has no more license to invent intent than a dumber one, so smartness applied to the wrong
-place is wasted, and may be actively worse if it invents more convincingly.
+The [sibling fidelity study](https://github.com/lenticule-science/science-services-section/blob/main/content/text/documents/articles/notes/2026/07/24/2026-07-24-research-on-the-central-dogma-of-code-fabrication.md)
+distinguishes *who may author* from *who may verify*; the present note
+adds the separate question of *which information a translator is
+authorized to assume*. A valid admitted work order names not merely
+a goal but its bounded source, admissible data/materials, machine-readable
+interfaces, Hoare preconditions, postconditions, refusals, authority and
+independent receiving test. Upstream Science determines truth/assumptions;
+SAS records falsifiable requirements; HLD allocates the existing providers;
+LLD states exact tests. A provider's prose or token output is a candidate
+implementation. A missing postcondition stays unknown even if a powerful
+model produces an aesthetically persuasive result.
+
+**Why model quality still matters:** a well-typed, fully specified service
+can require more reasoning, tool reach, deterministic compute or contextual
+memory than a particular provider can supply. A low-capability provider can
+produce a wrong implementation even if every acceptance criterion was
+known; a high-capability provider can detect an under-specified order and
+refuse rather than hallucinating. Thus "smartness applied to the wrong
+place is wasted" is a policy heuristic, not a blanket statement that
+smarter providers are useless or harmful. Market interchangeability is
+earned by measured substitution under the **same qualified tests and
+resource constraints**, not assigned by analogy to protein translation.
+
+**Experimental falsifier.** Assemble a lawful sample of bounded tasks whose
+outcomes can be independently evaluated. Factorially vary (a) complete
+versus deliberately omitted/ambiguous requirements and (b) provider
+identity/capacity. Keep the output acceptance rubric, rights, test
+budget, execution environment and other material conditions fixed
+or record and stratify them. Randomize allocation where permitted.
+Measure specification omissions detected before hiring, qualified
+outcome yield, hidden-assumption failures, explicit refusals, inference
+tokens, CPU/RAM/network, correction cycles and total economic cost.
+Estimate the main effect of requirement completeness, provider effect,
+and their interaction, with uncertainty intervals. Report countercases:
+a complete order with a failed provider; an incomplete order whose
+result happened to pass; an incomplete order correctly refused. No
+experiment has been performed by this source amendment.
+
+**Hoare-contract implementation.** For an admitted service effect
+P {translator} Q, P includes authority and input interpretation,
+Q includes the specified outcome and rejection of forbidden effects.
+The model may generate source under P but cannot certify Q. A separate
+assayer checks conformance, Coesite observes installation, and the
+customer receives the effect. In the L-Space language-space programme,
+SCA supplies exact source names, SEN the typed expression and work
+contract, and SEAVT independently witnessed temporal facts. Their
+one/three/four-coordinate presentations do not themselves prove
+spatiotemporal geometry, biochemistry or operator reliability.
 
 ## 3. Why a work order is one gene, not the genome
 
@@ -150,8 +210,8 @@ carrier substitution is not a symmetry of the proved FOUR bilattice charge latti
 (`…research-on-atomic-articulation…`, Thesis and §2) — proved for EVM-account minting specifically; §3
 above borrows its shape for work-order scope by analogy, and that borrowing is not itself proved.
 
-**This note's own interpretive claim, unproved [T/C]:** that a fabrication provider is well-modeled as a
-ribosome and that fidelity is therefore a function of message completeness rather than provider tier (§2);
+**This note's own interpretive claim, unproved [T/C]:** that a fabrication provider is usefully modeled as a
+bounded message translator; that specification completeness and provider capability have independently measurable effects and interactions on qualified outcome yield (§2). The older assertion that fidelity is independent of provider tier is superseded and is retained in revision history, not presented as a theorem;
 that partial, on-demand work-order readout is correctly explained by an expression-economy argument rather
 than only by the already-settled atomicity/Growth-Faces-Only discipline (§3). Both are falsifiable against
 the demand-to-hire ledger and neither has been tested here.
