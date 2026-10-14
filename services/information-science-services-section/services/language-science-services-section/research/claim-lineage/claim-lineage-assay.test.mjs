@@ -47,6 +47,17 @@ test('forecast cannot silently change conditions',()=>{
  const x=assay(pack([s],[render(s,{conditionsRef:'if-another-condition'})]));
  assert.equal(x.status,'structural-mismatch');
 });
+test('a forecast without required horizon or conditions refuses admission',()=>{
+ const s=source('market','forecast',{horizonRef:undefined});
+ assert.throws(()=>assay(pack([s],[])),/temporal\/conditional scope required/);
+ const c=source('market','commitment',{conditionsRef:undefined});
+ assert.throws(()=>assay(pack([c],[])),/temporal\/conditional scope required/);
+});
+test('oversized commissioned source set refuses before allocating a worklist',()=>{
+ const s=source('a');
+ const input=pack([s],[render(s)],Array.from({length:10001},(_,i)=>'required-'+i));
+ assert.throws(()=>assay(input),/invalid claim-lineage packet/);
+});
 test('source revision mismatch cannot silently pass',()=>{
  const s=source('a');
  assert.equal(assay(pack([s],[render(s,{sourceRevision:'v8'})])).status,'structural-mismatch');
