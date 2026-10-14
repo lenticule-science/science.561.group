@@ -1,7 +1,12 @@
 ---
 
 title: "Heteroglossia"
+id: note-about-heteroglossia
+about: [heteroglossia]
+type: note
+status: research-synthesis
 date-created: 2026-04-02
+date-modified: 2026-10-14
 aliases:
   - "heteroglossia"
   - "raznorečie"
@@ -18,6 +23,8 @@ references:
     issued:
       - year: 1981
 ---
+
+The [short source-owned term](../../../../../../glossary/terms/linguistics-domains-semiotics-terms-heteroglossia.md) defines this concept; this article retains the examples, distinctions and interpretation.
 
 Heteroglossia (*raznorečie*) is Mikhail Bakhtin's term for the coexistence of multiple social languages within any living community. Not merely dialects or accents, but entire registers, worldviews, evaluative stances, and ways of being. A community contains farmers and poets, traditionalists and radicals, the pious and the profane, the ambitious and the content. These voices are not reconciled into a single perspective. They coexist in tension, answering and contesting one another. This multi-voicedness is the normal condition of any living culture.
 
