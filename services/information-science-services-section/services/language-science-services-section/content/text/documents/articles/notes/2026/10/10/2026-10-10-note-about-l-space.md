@@ -81,6 +81,29 @@ A **Grothendieck site** is a category equipped with a Grothendieck topology spec
 
 The proposed L-Space base category has admissible interpretation contexts as objects and restriction/translation morphisms as arrows. A proposed coverage \(J\) says which families of local readings jointly count as an adequate view. A presheaf of claim valuations or proof obligations can then restrict from a broad context to a narrower one. A **sheaf claim** requires proof that compatible local readings glue and that the result is unique in the stipulated sense.
 
+Obsmetrologia already supplies a **bounded formal test case** rather than
+only a proposed Grothendieck site:
+[Site.Basic](https://github.com/lenticule-science/obsmetrologia/blob/main/Obsmetrologia/Site/Basic.lean)
+proves cover identity, pullback and transitivity on a finite
+pairwise-Stone clopen fiber, with **coverings fixed at the same
+claim/stratum** and temporal advances carried in a separate morphism
+direction. Its `no_temporal_covers` theorem does not turn the
+time coordinate into an extra cover direction.
+[Site.ProtectedCover](https://github.com/lenticule-science/obsmetrologia/blob/main/Obsmetrologia/Site/ProtectedCover.lean)
+proves a more surprising counterexample: two patches may cover a
+whole region geometrically and still fail the **protected** cover
+condition, because neither contains the indivisible protected
+part whole. This is a precise mathematical reason to distinguish
+local semantic adequacy from authorization to distribute protected
+institutional or customer content. **The protected territory itself
+must be declared by its lawful owner**; the theorem does not decide
+rights. The [reconciled Grothendieck-site
+research](https://github.com/lenticule-science/science-services-section/blob/main/services/philosophy-services-section/services/relationality-services-section/content/text/documents/articles/notes/2026/03/19/2026-03-19-site.md)
+separates this finite formal carrier from the open conjecture that
+the entire relational-history or agentic economy is one such site.
+This is a constructive boundary for the proposed 3+1 L-Space
+interpretation—not proof of a physical dimension.
+
 Inconsistent testimony cannot be made compatible merely by declaring a sheaf. FOUR-valued evidence may preserve opposed reports while a *settled interpretation* is held pending. A local-to-global obstruction is meaningful only after the covering, coefficient system and compatibility law have been defined. The [Grothendieck-site research](https://github.com/lenticule-science/science-services-section/blob/main/services/philosophy-services-section/services/logic-services-section/content/text/documents/articles/notes/undated/q-enriched-curry-grothendieck-site.md) and [Yoneda exposition](https://github.com/lenticule-science/science-services-section/blob/main/services/philosophy-services-section/services/logic-services-section/content/text/documents/articles/notes/undated/yoneda-embedding.md) motivate this route; neither establishes a specific L-Space site without its missing data.
 
 ### FCA: concepts emerge from contexts
