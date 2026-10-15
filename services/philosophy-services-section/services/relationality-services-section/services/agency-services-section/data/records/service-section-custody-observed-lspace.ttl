@@ -2,54 +2,22 @@
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-# PINNED SCIENCE-LOCAL EXECUTABLE DEBT: 5 files remain after Digital Garden Engineering received MetroPlat.
-# Qualified Git source revision: acca1dd510bc8ecabb149526d621c18c1c391b44 (qualified after Engineering PR #409/#17, Science PR #143/#144).
+# PINNED SCIENCE-LOCAL EXECUTABLE DEBT: one unreceived NI regression remains in this historical site.
+# Qualified Git source revision: ab54d08cb53a959d8ff3d57fd017c4e1b70d2566 (qualified after Engineering PR #409/#17, Science PR #143/#144).
 # Each source file's Git blob SHA was checked independently against the pinned tree.
 # This deliberately supplies explicit sec:holds evidence to the Science law's
 # SHACL + SPARQL input graph. Unexamined repositories and paths remain UNKNOWN.
 # Prior 14-file inventory remains recoverable in this file's Git history.
 # Relocated: links -> CAIRN; notebooks -> Gemini Notebook; directory validation -> File Engineering; MetroPlat reader and admission tests -> Digital Garden Engineering. Unexported index retired.
-# All 5 remaining Science code/tests are still misplaced; absence from this
+# The sole remaining site test is still misplaced until Engineering PR #414 is received; absence from this
 # snapshot does not assert installed host receiving.
 
 <https://github.com/lenticule-science/science-services-section> sec:holds
-  <https://github.com/lenticule-science/science-services-section/blob/acca1dd510bc8ecabb149526d621c18c1c391b44/sites/l-space.561.group/src/config.mjs>,
-  <https://github.com/lenticule-science/science-services-section/blob/acca1dd510bc8ecabb149526d621c18c1c391b44/sites/l-space.561.group/src/site.mjs>,
-  <https://github.com/lenticule-science/science-services-section/blob/acca1dd510bc8ecabb149526d621c18c1c391b44/sites/l-space.561.group/test/config.test.mjs>,
-  <https://github.com/lenticule-science/science-services-section/blob/acca1dd510bc8ecabb149526d621c18c1c391b44/sites/l-space.561.group/test/ni-content-effects.test.mjs>,
-  <https://github.com/lenticule-science/science-services-section/blob/acca1dd510bc8ecabb149526d621c18c1c391b44/sites/l-space.561.group/test/oauth-grant-profile.test.mjs>,
+  <https://github.com/lenticule-science/science-services-section/blob/ab54d08cb53a959d8ff3d57fd017c4e1b70d2566/sites/l-space.561.group/test/ni-content-effects.test.mjs>,
 
-<https://github.com/lenticule-science/science-services-section/blob/acca1dd510bc8ecabb149526d621c18c1c391b44/sites/l-space.561.group/src/config.mjs>
-  a sec:EngineeringImplementation ;
-  sec:sourcePath "sites/l-space.561.group/src/config.mjs" ;
-  sec:sourceRevision "acca1dd510bc8ecabb149526d621c18c1c391b44" ;
-  sec:primaryEngineeringConcern sec:Systems ;
-  prov:wasDerivedFrom <https://api.github.com/repos/lenticule-science/science-services-section/git/blobs/307296f251574f090bd4103dc294ecd7e85d2eb4> .
-
-<https://github.com/lenticule-science/science-services-section/blob/acca1dd510bc8ecabb149526d621c18c1c391b44/sites/l-space.561.group/src/site.mjs>
-  a sec:EngineeringImplementation ;
-  sec:sourcePath "sites/l-space.561.group/src/site.mjs" ;
-  sec:sourceRevision "acca1dd510bc8ecabb149526d621c18c1c391b44" ;
-  sec:primaryEngineeringConcern sec:Systems ;
-  prov:wasDerivedFrom <https://api.github.com/repos/lenticule-science/science-services-section/git/blobs/ed91019ccae43082d3931a41b06c1f6742371727> .
-
-<https://github.com/lenticule-science/science-services-section/blob/acca1dd510bc8ecabb149526d621c18c1c391b44/sites/l-space.561.group/test/config.test.mjs>
-  a sec:EngineeringImplementation ;
-  sec:sourcePath "sites/l-space.561.group/test/config.test.mjs" ;
-  sec:sourceRevision "acca1dd510bc8ecabb149526d621c18c1c391b44" ;
-  sec:primaryEngineeringConcern sec:Code ;
-  prov:wasDerivedFrom <https://api.github.com/repos/lenticule-science/science-services-section/git/blobs/9703b64fdffe5139cc109c4514358e005c7aec6a> .
-
-<https://github.com/lenticule-science/science-services-section/blob/acca1dd510bc8ecabb149526d621c18c1c391b44/sites/l-space.561.group/test/ni-content-effects.test.mjs>
+<https://github.com/lenticule-science/science-services-section/blob/ab54d08cb53a959d8ff3d57fd017c4e1b70d2566/sites/l-space.561.group/test/ni-content-effects.test.mjs>
   a sec:EngineeringImplementation ;
   sec:sourcePath "sites/l-space.561.group/test/ni-content-effects.test.mjs" ;
-  sec:sourceRevision "acca1dd510bc8ecabb149526d621c18c1c391b44" ;
+  sec:sourceRevision "ab54d08cb53a959d8ff3d57fd017c4e1b70d2566" ;
   sec:primaryEngineeringConcern sec:Code ;
   prov:wasDerivedFrom <https://api.github.com/repos/lenticule-science/science-services-section/git/blobs/dd9a5204cb451148145a8ce9f3629f33ee1eb0ed> .
-
-<https://github.com/lenticule-science/science-services-section/blob/acca1dd510bc8ecabb149526d621c18c1c391b44/sites/l-space.561.group/test/oauth-grant-profile.test.mjs>
-  a sec:EngineeringImplementation ;
-  sec:sourcePath "sites/l-space.561.group/test/oauth-grant-profile.test.mjs" ;
-  sec:sourceRevision "acca1dd510bc8ecabb149526d621c18c1c391b44" ;
-  sec:primaryEngineeringConcern sec:Code ;
-  prov:wasDerivedFrom <https://api.github.com/repos/lenticule-science/science-services-section/git/blobs/52801f9696ddf11f70e9827e94dac00b35e2b157> .

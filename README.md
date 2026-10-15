@@ -24,7 +24,7 @@ Lenticule Science conducts research for the 561 Group. Red Cup Engineering turns
 
 - [consumer-goods-science-services-section](services/consumer-goods-science-services-section/README.md) — research supporting the 561 Group consumer-goods program.
 
-[`sites/l-space.561.group`](sites/l-space.561.group/README.md) is the L-Space site over this section's files.
+The former [`sites/l-space.561.group`](sites/l-space.561.group/README.md) executable site is retired; the Science-owned L-Space language research remains in its originating fields, while Red Cup Digital Garden Engineering implements the current MetroPlat reader selected by Group-owned machine instances.
 
 ## Current cross-field scientific receiving
 
