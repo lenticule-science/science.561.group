@@ -5,16 +5,9 @@ type: skill
 skill-closure-kind: inquiry
 discharges: emsenn/duty/realizing-allocated-science-work
 bound-by-rules:
-  - notes-state-the-theory
-  - read-the-house-notes-for-a-leader-term
-  - context-discovery-before-change
-  - leader-prompts-become-research-before-code
-  - existing-work-is-judged-before-it-is-discarded
-  - science-engineering-operations-parameterize-in-order
-  - durable-record-at-least-as-rich-as-chat
-  - no-whole-tree-scans-on-bare-cedar-fog
-  - group-material-on-bare-cedar-fog-lives-under-info
-  - no-harness-private-memory
+  - reality-outranks-stale-rules
+  - mesh-resilience-outranks-local-optimization
+  - complex-inter-office-conflict-uses-formal-coordination
 fuel-cap:
   turns: 80
   tokens: 600000
@@ -50,6 +43,15 @@ the typed rules, **not a certificate that every current repository conforms**.
 Classify the real artifact and trace its original consumer before migration:
 executable code found outside Engineering is extraction debt to be preserved
 until its proper owner and independent receiving are established.
+
+The previous `bound-by-rules` names included ten archived rules not present
+in the current 561 Group rule store. They have not been treated as ten
+available executables: the applicable surviving *method obligations* are in the
+current [561 Group Operational Method](https://github.com/561-group/561-group-services-section/blob/main/content/text/glossary/concepts/method-for-work-in-the-561-group.md)
+and the source-owned scientific research process below. The current active
+rule identifiers above resolve to actual JSON rule sources. Historical
+provenance and unique obligations remain in their original revisions; absence
+of a local rule file never licenses a conflicting action.
 
 The skill discharges the duty `realizing-allocated-science-work`. Its receiver
 is the Chief Science Officer or the science office it names; the Senior
