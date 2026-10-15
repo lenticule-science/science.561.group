@@ -1,5 +1,4 @@
-import { resolveReadingLinks } from './reading-links.mjs';
-import { retainDocumentEmbeds } from '@red-cup-engineering/knowledge-system-server/vault-catalog';
+import { resolveReadingLinks, retainDocumentEmbeds } from '@red-cup-engineering/knowledge-system-server/vault-catalog';
 import { createImmutableContentCustody } from '@red-cup-engineering/immutable-content-custody-service';
 import { createFileStore } from '@red-cup-engineering/immutable-content-custody-service/file-store';
 import { niResource } from '@red-cup-engineering/http-services-section/ni';
