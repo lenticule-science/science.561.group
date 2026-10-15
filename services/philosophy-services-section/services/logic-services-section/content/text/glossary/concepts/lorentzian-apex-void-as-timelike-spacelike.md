@@ -16,7 +16,7 @@ For a [Lorentzian causal-structure settling](../../../../../../../information-sc
 
 1. *(Apex = causally-connected pairs.) The apex cone $\mathrm{Apex}_v := \{(e_1, e_2) : v_\kappa(e_1, e_2) = \mathbf{t}\}$ equals the set of pairs with $e_1 \preceq e_2$ — the causal-precedence relation.*
 
-2. *(Void = spacelike pairs.) The void cone $V_\infty := \{(e_1, e_2) : v_\kappa(e_1, e_2) = \bot\}$, restricted to pairs with $e_1 \neq e_2$, equals the set of pairs with neither $e_1 \preceq e_2$ nor $e_2 \preceq e_1$ — the spacelike-separated relation.*
+2. *(Void = spacelike pairs.) The bidirectional void cone $V_\infty^{\leftrightarrow} := \{(e_1, e_2) : e_1 \neq e_2,\ v_\kappa(e_1, e_2) = \bot \text{ and } v_\kappa(e_2, e_1) = \bot\}$ equals the set of pairs with neither $e_1 \preceq e_2$ nor $e_2 \preceq e_1$ — the spacelike-separated relation. The one-way void $V_\infty := \{(e_1, e_2) : v_\kappa(e_1, e_2) = \bot\}$ is larger: it also holds every pair $(e_1, e_2)$ with $e_2 \prec e_1$.*
 
 3. *(Cohomological pairing.) The apex / void cohomologies $H^1(\mathcal{F}_{v_\kappa})$ and $H^0(V_\infty)$ are dually paired (per [void-cone cohomology](../../../../../../../information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/obsmetrologia/docs/verso/mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/content/lorentzian-causal-settling/references/void-cone-cohomology.md)) and provide the Lorentzian causal invariants:*
 
@@ -33,9 +33,9 @@ Therefore $\mathrm{Apex}_v = \{(e_1, e_2) : e_1 \preceq e_2\}$. $\square$ (Step 
 
 ### Step 2: void = spacelike
 
-A cell $(e_1, e_2)$ is in $V_\infty$ iff $v_\kappa(e_1, e_2) = \bot$, iff there's no directed $\prec_0$-path from $e_1$ to $e_2$, iff $e_1 \not\preceq e_2$.
+A cell $(e_1, e_2)$ is in $V_\infty$ iff $v_\kappa(e_1, e_2) = \bot$, iff there's no directed $\prec_0$-path from $e_1$ to $e_2$, iff $e_1 \not\preceq e_2$. This one-way set $V_\infty$ is not the spacelike relation: it also contains every pair with $e_2 \prec e_1$.
 
-For the *void cone* in the bitopological sense (per [void-cone-structure](../../documents/articles/notes/undated/narratives-void-cone-structure.md)), we typically consider $(e_1, e_2)$ in the void *bidirectionally*: both $v_\kappa(e_1, e_2) = \bot$ and $v_\kappa(e_2, e_1) = \bot$. This is exactly $e_1 \not\preceq e_2$ and $e_2 \not\preceq e_1$ — i.e., $e_1$ and $e_2$ are *incomparable* under $\preceq$, which is the definition of **spacelike separated** in a causal set. $\square$ (Step 2)
+For the *void cone* in the bitopological sense (per [void-cone-structure](../../documents/articles/notes/undated/narratives-void-cone-structure.md)), the theorem uses the bidirectional void $V_\infty^{\leftrightarrow}$: the pairs $(e_1, e_2)$ with $e_1 \neq e_2$ and both $v_\kappa(e_1, e_2) = \bot$ and $v_\kappa(e_2, e_1) = \bot$. This is exactly $e_1 \not\preceq e_2$ and $e_2 \not\preceq e_1$ — i.e., $e_1$ and $e_2$ are *incomparable* under $\preceq$, which is the definition of **spacelike separated** in a causal set. $\square$ (Step 2)
 
 ### Step 3: cohomological pairing
 
@@ -56,7 +56,7 @@ Combining: the corpus's apex/void cohomological framework, applied to a Lorentzi
 
 $E = \{a, b, c, d\}$, $\prec_0 = \{(a, b), (a, c), (b, d), (c, d)\}$.
 
-Closure adds $(a, d)$. Apex: 5 pairs $\{(a, b), (a, c), (b, d), (c, d), (a, d)\}$ — all causally connected. Void: $(b, c)$ and $(c, b)$ — $b$ and $c$ are spacelike separated.
+Closure adds $(a, d)$. Apex: 5 pairs $\{(a, b), (a, c), (b, d), (c, d), (a, d)\}$ — all causally connected. Bidirectional void $V_\infty^{\leftrightarrow}$: $(b, c)$ and $(c, b)$ — $b$ and $c$ are spacelike separated. The one-way void $V_\infty$ holds 7 ordered pairs of distinct events: $(b, c)$, $(c, b)$, $(b, a)$, $(c, a)$, $(d, a)$, $(d, b)$, $(d, c)$.
 
 $H^1 = \mathbb{Z}^1$ (one NSC firing: the transitivity firing $(a, d)$ via $(a, b), (b, d)$ — or via $(a, c), (c, d)$, but both yield the same firing event).
 
@@ -64,7 +64,7 @@ Wait — actually there are *two* witnesses for $(a, d)$: via $b$ and via $c$. I
 
 $H^0(\mathrm{Void}) = \mathbb{Z}^?$. Per the theorem, $H^0(\mathrm{Void})$ is dually paired with $H^1$, so should be $\mathbb{Z}^1$ as well. The single generator records "$(a, d)$ became non-void at the transitivity firing."
 
-But there are *two* permanently-spacelike pairs $\{(b, c), (c, b)\}$ in $V_\infty$. These are *not counted by $H^0(\mathrm{Void})$ in the firing-counting sense* — they're at the *void cone's apex* (the structurally-spacelike component, never resolved).
+But there are *two* permanently-spacelike pairs $\{(b, c), (c, b)\}$ in $V_\infty^{\leftrightarrow}$. These are *not counted by $H^0(\mathrm{Void})$ in the firing-counting sense* — they're at the *void cone's apex* (the structurally-spacelike component, never resolved).
 
 This distinction is real: $H^0(\mathrm{Void})$ counts firings (cells that *stop* being void); the *void cone's apex* (cells that *never* stop being void) is a separate invariant. Per [void-cone cohomology](../../../../../../../information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/obsmetrologia/docs/verso/mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/content/lorentzian-causal-settling/references/void-cone-cohomology.md), the corpus has both:
 
@@ -76,7 +76,7 @@ For the diamond: $H^0_{\mathrm{apex of Void}} = \{(b, c), (c, b)\}$ — the spac
 
 The number of permanently-spacelike pairs (apex of void) is a structural invariant of the causal set. For Minkowski 1+1 spacelike-distinct events, every pair of events at the same time slice but different spatial position is spacelike. So *spacelike content* counts events that are "simultaneous in some frame."
 
-In the corpus: the *apex of void* ($V_\infty$) for a Lorentzian causal settling counts **structurally-distinct spatial events** — events on the same "time slice" (in the Lorentzian sense). This gives a discrete-causal-set analog of the *spatial-dimensionality* of the underlying spacetime.
+In the corpus: the *apex of void* ($V_\infty^{\leftrightarrow}$) for a Lorentzian causal settling counts **structurally-distinct spatial events** — events on the same "time slice" (in the Lorentzian sense). This gives a discrete-causal-set analog of the *spatial-dimensionality* of the underlying spacetime.
 
 For a 1+1 Minkowski sprinkling of $N$ events with diameter $\Delta$, the number of spacelike pairs scales as $\sim N^2 \cdot (\text{spatial-extent}/\Delta)$, capturing the spatial dimension count. For $D+1$ Minkowski, scales as $N^2 \cdot (\text{spatial-volume}/\text{lightcone-volume})$, capturing $D$.
 

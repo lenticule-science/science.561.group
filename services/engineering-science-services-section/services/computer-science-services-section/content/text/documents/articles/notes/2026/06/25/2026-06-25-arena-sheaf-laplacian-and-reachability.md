@@ -21,7 +21,7 @@ The headline identification: **best-response reachability = `ker(L)` fixed-point
 A state is best-response-stable exactly when it is a fixed point of the arena diffusion — and the existing `reachability` reading (which already counts conflicted events and escapes best-response cycles via the no-periodic-orbit theorem) is the runtime shadow of that harmonic characterization.
 
 Runtime status: `gamingFace(...).cohomology` now makes the arena conflict obstruction proof-carrying.
-Its `first` field is a normalized `cohomologyTerms.settlingFirst` carrier whose generators are exactly the arena `#` conflict edges, and whose rank agrees with `gamingFace(...).obstruction`.
+Its `first` field is a normalized `cohomologyTerms.settlingFirst` structure whose generators are exactly the arena `#` conflict edges, and whose rank agrees with `gamingFace(...).obstruction`.
 
 ## Our edge
 
@@ -36,10 +36,10 @@ This is the natural home for the **multi-agent coordination / swarm** applicatio
 - **Tarski–Lawvere diffusion kernel on the arena membrane** *(top build)* — extend the Grothendieck-site Laplacian to the arena: prove `(≤, #)` give a topology, the event-stalk d-frame values form a sheaf, and `L` is `Q`-continuous; characterize Lean-verified reachability as the `ker(L)` fixed point.
 - **Bilattice harmonic consensus** — conflict as stable `⊤`-content among concurrent strategies.
 - **Sheaf-Hodge decomposition of the arena event membrane** — partially realized by `gamingFace(...).cohomology` for live conflict generators; remaining work is to attach the same receipt style to aperiodic orbits and redundant event/market cycles.
-- **Best-response reachability as a sheaf-Laplacian iteration invariant** — connect the existing `reachability` carrier to the diffusion fixed point, with the no-periodic-orbit escape as the convergence guarantee.
+- **Best-response reachability as a sheaf-Laplacian iteration invariant** — connect the existing `reachability` structure to the diffusion fixed point, with the no-periodic-orbit escape as the convergence guarantee.
 
 ## Grounding
 
-`lib/gaming/src/.../reachability`, `lib/gaming/src/face.mts`, and the CGS arena/event-structure carriers; Lean `LawvereHarmonicCohomology`, the Grothendieck-site Laplacian note, `ClosureMonad.no_periodic_orbits`, `AperiodicClassification`.
+`lib/gaming/src/.../reachability`, `lib/gaming/src/face.mts`, and the CGS arena/event-structure structures; Lean `LawvereHarmonicCohomology`, the Grothendieck-site Laplacian note, `ClosureMonad.no_periodic_orbits`, `AperiodicClassification`.
 Related: playing Tarski–bilattice-Laplacian (single-agent), computing proof-carrying-synchronization (multi-agent coordination), relating non-reductive-computation thesis.
 See memory: gaming = multi-agent playing, layer-2 attacks impossibility (best-response-cycles).
