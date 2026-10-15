@@ -37,3 +37,25 @@ The relational field generates the obligation and the obligation generates the r
 Leanne Betasamosake Simpson's grounded normativity and Kyle Powys Whyte's Indigenous climate ethics both describe governance systems in which obligation operates this way: not through universal frameworks applied to particular cases, but through particular relations generating particular responsibilities that universal frameworks could not have predicted.
 The strength of this model under collapse is that it does not depend on institutional infrastructure — on the meeting space, the communication channel, the shared evaluative framework — that collapse destroys.
 It depends on relations, and relations persist where infrastructure does not.
+
+
+## Witness, acknowledgment and remaining duty
+
+An obligation can precede its public witnessing, acknowledgment, formal
+recognition, or institutional procedure. Bearing witness may make a relation
+visible; acknowledgment may register that a claim has been heard; attention may
+be allocated toward investigating or meeting its demands. None of those acts
+alone establishes that the obligation has been met.
+
+It is also a mistake to infer a universal or unlimited duty from witnessing.
+The actual relation identifies who owes what to whom, under which constraints.
+Different observers may have different capacities, permissions and obligations.
+Delegation can distribute work, but the existence of an electoral or
+bureaucratic acknowledgment does not by itself authorize an obligor to declare
+themselves discharged.
+
+For the conditional electoral version of this problem, see Lenticule Political
+Science's [working research note on witnessing, acknowledgment, attention and
+obligation](https://github.com/lenticule-science/science-services-section/blob/main/services/social-science-services-section/services/political-science-services-section/content/text/documents/articles/notes/2026/10/14/2026-10-14-witness-acknowledgment-attention-obligation-electoralism.md).
+It proposes a hypothesis about *perceived discharge*, not a finding that all
+electoral participation reduces action.
