@@ -15,6 +15,12 @@ Exploratory program to model combinatorial scent/mereology concepts as
 recognitions so olfactory experience and perfumery can live in the relational
 universe with explicit part–whole structure.
 
+## Canonical CSM evidence records
+
+The surviving machine-readable CSM research sources are maintained **once** in the [Neuroscience olfactory corpus](https://github.com/lenticule-science/science-services-section/tree/main/services/natural-science-services-section/services/biological-science-services-section/services/neuroscience-services-section/data/records/combinatorial-scent-mereology). Benchmark-source rights, perceptual evidence, assay contracts, vendor-source observations, proposed scene IR and service contracts retain their **distinct** claim types; they are not automatically proved, accredited or implemented by being present in this Science corpus.
+
+On October 15, 2026, the ten byte-identical copies formerly in this Relationality directory and in Chemistry were retired from active Git paths after exact blob comparison. They remain recoverable from the Git ancestry; readers of this relationality program and of chemical materials should reference the canonical files rather than copy or edit local analogues. The neuroscience/chemistry/relationality disciplines remain distinct—only duplicate file storage is retired. New executable parsing, validation or manufacturing belongs with its actual Red Cup owner rather than under any of these Science record paths.
+
 ## Behaviour
 - Represent odour/accord/whole scents as recognitions with explicit
   part–whole links:
