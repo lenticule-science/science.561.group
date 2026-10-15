@@ -2,7 +2,7 @@ import { resolveReadingLinks, retainDocumentEmbeds } from '@red-cup-engineering/
 import { createImmutableContentCustody } from '@red-cup-engineering/immutable-content-custody-service';
 import { createFileStore } from '@red-cup-engineering/immutable-content-custody-service/file-store';
 import { niResource } from '@red-cup-engineering/http-services-section/ni';
-import { notebookBuckets } from './notebooks.mjs';
+import { createGeminiNotebookBucketResource } from '@red-cup-engineering/gemini-notebook-services-section/gemini-notebook-buckets';
 import { handleVocabularyRequest, ownsVocabularyRequest } from '@red-cup-engineering/knowledge-system-server/vocabulary';
 import { parseBody, renderBody } from '@red-cup-engineering/markdown-engineering-services-section/relational-markdown';
 import { createHash } from 'node:crypto';
@@ -132,7 +132,7 @@ export function lSpaceMetroplat({config, admission, configuration = {}, archive:
       if (sciencePrefix && !['GET','HEAD'].includes(request.method) && response.ok) await (await archive()).refresh();
       return response;
     }, {matches:request=>new URL(request.url).pathname.startsWith('/geode/')}) : undefined;
-  const bucketResource = settings.LSPACE_NOTEBOOK_BUCKETS === 'false' ? undefined : notebookBuckets();
+  const bucketResource = settings.LSPACE_NOTEBOOK_BUCKETS === 'false' ? undefined : createGeminiNotebookBucketResource();
   const notebooks = bucketResource ? {resources:[{...bucketResource,
     handler:async context => await isAuthor(context)
       ? bucketResource.handler(context)

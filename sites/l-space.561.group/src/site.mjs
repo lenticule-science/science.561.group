@@ -138,8 +138,7 @@ export function mediaContent(environment = process.env) {
   return root === undefined ? undefined : createImmutableContentCustody({ store: createFileStore(root), maximumBytes: 1024 ** 3 });
 }
 
-import { BUCKETS_PATH, notebookBuckets } from './notebooks.mjs';
-export { BUCKETS_PATH, notebookBuckets } from './notebooks.mjs';
+import { createGeminiNotebookBucketResource } from '@red-cup-engineering/gemini-notebook-services-section/gemini-notebook-buckets';
 const isBucketsRoute = (path) => path === BUCKETS_PATH || path.startsWith(`${BUCKETS_PATH}/`);
 
 /** The routes the MCP and OAuth faces answer for themselves: a bearer token or a sign-in redirect, never the admission gate's 401. */
@@ -220,7 +219,7 @@ export async function lSpaceApplication(environment = process.env) {
     createVaultMazeApplication({ reviews: createReviewStore({ root: stateDir }), subjectOf: (ctx) => admission.subjectOf(ctx) }),
     vaultMaze.application,
     // Media is the store's, or a file beside a note a rendered room named by its content.
-    { resources: [niResource([...(media === undefined ? [] : [media]), createPathContent((ni) => vaultMaze.media.get(ni))]), ...(setting('LSPACE_NOTEBOOK_BUCKETS', environment) === 'false' ? [] : [notebookBuckets()])] },
+    { resources: [niResource([...(media === undefined ? [] : [media]), createPathContent((ni) => vaultMaze.media.get(ni))]), ...(setting('LSPACE_NOTEBOOK_BUCKETS', environment) === 'false' ? [] : [createGeminiNotebookBucketResource()])] },
   ];
   const authoringRoot = setting('GEODE_AUTHORING_ROOT', environment);
   // One archive serves the garden, GEODE's where it is configured; its full-text index persists either way.
