@@ -15,7 +15,7 @@ import { createVaultMazeApplication } from '@red-cup-engineering/graphical-knowl
 import { createReviewStore } from '@red-cup-engineering/graphical-knowledge-game-server/review-store';
 import { join, resolve } from 'node:path';
 import { openArchive } from '@red-cup-engineering/knowledge-system-server/archive';
-import { selectMetroplatCorpusRoot, assertMetroplatCorpusRoot } from './metroplat-root.mjs';
+import { selectDeclaredDirectoryRoot, assertDeclaredDirectoryRoot } from '@red-cup-engineering/computer-file-engineering-services-section/declared-directory-root';
 import { searchAndFetchTools, vaultMcpTools } from '@red-cup-engineering/knowledge-system-server/mcp-tools';
 import { textRepr } from '@red-cup-engineering/http-services-section/representation';
 
@@ -69,7 +69,7 @@ export function lSpaceMetroplat({config, admission, configuration = {}, archive:
   if (typeof configuration.root !== 'string' || !configuration.root.trim()) {
     throw new TypeError('L-Space requires its corpus root in the installed application configuration');
   }
-  const root = selectMetroplatCorpusRoot(config.repositoryRoot, configuration.root);
+  const root = selectDeclaredDirectoryRoot(config.repositoryRoot, configuration.root, { override: process.env.METROPLAT_LSPACE_CORPUS_ROOT });
   const sciencePrefix=configuration.sciencePrefix;
   const readerPolicy = lSpaceReaderPolicy({sciencePrefix, excludes: configuration.excludes});
   const authorRoot=sciencePrefix ? resolve(root,sciencePrefix) : root;
@@ -95,7 +95,7 @@ export function lSpaceMetroplat({config, admission, configuration = {}, archive:
   const media={resources:[{...ni,handler:async context=>await admission?.identifyContext(context)
     ? ni.handler(context) : new Response('Reader admission required',{status:401,headers:{'cache-control':'no-store'}})}]};
   let opened;
-  const archive = () => suppliedArchive ?? (opened ??= Promise.resolve().then(() => assertMetroplatCorpusRoot(root, undefined, {requiredSection: sciencePrefix})).then(() => openArchive({
+  const archive = () => suppliedArchive ?? (opened ??= Promise.resolve().then(() => assertDeclaredDirectoryRoot(root, { requiredChild: sciencePrefix })).then(() => openArchive({
     root, ...readerPolicy,
     observations: join(config.stateDir, 'knowledge', 'observations.jsonl'),
     fullText: join(config.stateDir, 'knowledge', 'full-text.sqlite'),
@@ -126,7 +126,7 @@ export function lSpaceMetroplat({config, admission, configuration = {}, archive:
   const authoring = authoringRoot && resolve(authoringRoot) === authorRoot && authoringRegion === ''
     ? fetchApplication(async (request, context) => {
       if (!await isAuthor(context)) return new Response('Author access required',{status:403,headers:{'cache-control':'no-store'}});
-      assertMetroplatCorpusRoot(root, undefined, {requiredSection: sciencePrefix});
+      assertDeclaredDirectoryRoot(root, { requiredChild: sciencePrefix });
       workbench ??= createGeodeWorkspace(sciencePrefix ? {root:authorRoot,excludes:readerPolicy.excludes} : {archive:await archive()}).then(workspace=>createGeodeFetchHandler({workspace,basePath:'/geode'})).catch(error=>{workbench=undefined;throw error;});
       const response=await (await workbench)(request);
       if (sciencePrefix && !['GET','HEAD'].includes(request.method) && response.ok) await (await archive()).refresh();
