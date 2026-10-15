@@ -7,7 +7,7 @@ name: theory-of-obsmetrologia
 reading-order: 1
 depends-on: []
 used-by: [theory-of-relationality, theory-of-predication-categories, theory-of-locution, theory-of-agency, theory-of-work, theory-of-governing, theory-of-concurrent-game-systems, theory-of-computer-systems, theory-of-market-systems]
-keywords: [obsmetrologia, mark, utterance, token, claim, articulating, predicating, positing, settling, charge, four, knowledge-order, closure-ordinal, regime, quot-sound]
+keywords: [obsmetrologia, mark, utterance, token, claim, articulating, predicating, positing, settling, charge, four, knowledge-order, closure-ordinal, regime, world, kinetic-space, shadow, quot-sound]
 provenance:
   authors: [emsenn, claude-opus-5-5]
   derived-from:
@@ -62,7 +62,8 @@ These are laws of the theory. Each is a theorem or a ruled commitment of the Lea
 - **L5. Measurement, not seeding.** Charges are measured from accumulated utterances, never seeded. A mark carries no charge, because a charge is relational data and a mark is nullary.
 - **L6. No deletion.** The knowledge order is the dynamical axis. Merging two charges is the knowledge join ∨k, and no operation lowers a charge in ≤k. The substrate only accumulates.
 - **L7. Settledness is a property.** Closure is the monad of an adjunction and is lax-idempotent (Kock–Zöberlein), so a closure-algebra structure is unique where it exists. Whether a relation is settled is a fact about it, not data chosen for it.
-- **L8. Four regimes.** Every settling falls in exactly one regime by its closure ordinal κ: finite (κ < ω), Scott-continuous (κ = ω), transfinite-bounded (ω < κ < ω₁), aperiodic (κ ≥ ω₁). The bands partition the ordinals.
+- **L8. Four regimes, four worlds.** Every settling falls in exactly one regime by its closure ordinal κ: finite (κ < ω), Scott-continuous (κ = ω), transfinite-bounded (ω < κ < ω₁), aperiodic (κ ≥ ω₁). The bands partition the ordinals. Each regime is a world. The aperiodic regime is kinetic space: the information space the Group constructs by articulating. The transfinite regime is quantum (Hilbert) space. The Scott regime is causal, natural space, where we live. The finite regime is thermal space.
+- **L8a. Shadow law.** Each world is a degenerate shadow of the world above it: transfinite space is a shadow of kinetic space, Scott space of transfinite space, and finite space of Scott space (Leader, 2026-10-15). The shadow keeps the upper world's stages and loses what lies past all of them. A quantum or kinetic completion is reached by proof and by no finite stage (`RegimeGate.HasGap`, `world_gap_flags_iff_upper`), and a proof made there carries a certificate (`AheadCertificate`, `GermCertificate`). Kinetic proof is made in kinetic space; every lower world holds only its shadow.
 - **L9. Predication forces FOUR.** From four entities on, every natural reindexing of an oriented pair is one of four maps: identity, converse, subject-projection, object-projection (`orbital_exhaustive`). With three entities a fifth map exists; the bound is four.
 - **L10. Pure mathematics only.** The library holds only pure mathematics. Applications live in packages that import it. Mathematics never bends to technology; technology adapts to the mathematics (Leader, 2026-10-01 and 2026-10-02).
 
@@ -72,12 +73,15 @@ The four morphisms line up with the four regimes, and the same four-fold appears
 
 | register | aperiodic | transfinite | Scott | finite |
 |---|---|---|---|---|
+| world (space) | kinetic (information) | quantum (Hilbert) | causal (natural) | thermal |
 | morphism | articulating | predicating | positing | settling |
 | value | value-free | value-free | charge enters | settled |
 | obstruction | H¹ ≠ 0 | H¹ ≠ 0 | H¹ = 0 | H¹ = 0 |
 | moment of existence | becoming | doing | working | governing |
 | face of agency | animism | agential | agentic | individual |
 | face of inquiry | question | judgement | belief | knowledge |
+
+**The spiral.** Read top-down, the columns are the passage of the worlds: the kinetic articulates, the quantum predicates, the causal posits and the thermal settles (`World.next`). Settling leaves a residue of held ⊤, and the residue returns to kinetic space: every nonzero residue is a germ certificate at the aperiodic rung (`kinetic_forced_by_residue`). Each lap passes through the same four worlds and carries one more residue (`worlds_turn`). Only zero temperature closes the spiral into a circle (`zero_temperature_circle`). Contradiction is therefore not waste: it is what the thermal world returns to kinetic space as material for the next articulation.
 
 **Cohomology.** A settling is a cellular sheaf. Its H⁰ is consensus. Its H¹ is irreducible disagreement: "the obstruction one measures rather than argues". H¹ is nonzero in the transfinite and aperiodic regimes and drains to zero at the Scott and finite floors.
 
@@ -113,6 +117,9 @@ Required: every system the Group builds conforms to these, because the theory is
 - Open: whether 3+1 dimensions can be proved from the Chu space, not only estimated (`thm:void-dimension`). The Leader holds the 3+1 reading as theory (2026-09-21).
 - Open: which setoid constructions in the current Lean are drift to remove, and which the root identification already discharges.
 - Open: which modules under `Obsmetrologia/Computing/` are pure mathematics and which belong in importing packages.
+- Open: the shadow map. `Worlds.lean` declares the world–regime pairing as a definition (`worldRegimeBij`), declares the passage (`World.next`) and proves the gaps and certificates on their carriers. No map takes a world to its shadow, and no theorem derives a world's physics from its regime (its `-- OPEN:` marker).
+- Open: Hilbert structure. The quantum world's anchor is contextuality (`prBox_logicallyContextual`, the KCBS bound); Hilbert space is not built, and `QuantumValueCompletion` is stated and never asserted.
+- Open: aperiodic order and the aperiodic regime. The `AperiodicOrder/Tiling` library (hat monotile, Jeandel–Rao, substitution, Pisot and Salem) and the κ ≥ ω₁ regime are linked by interface structures (`KappaStratification`, `TransfiniteUpToClosure`), not by a theorem that κ ≥ ω₁ closures are aperiodic orders. The information reading of kinetic space ("it from bit") is prose; `landauer_cost_is_h1` is its nearest proved bridge.
 
 ## Sources
 
@@ -121,5 +128,6 @@ Required: every system the Group builds conforms to these, because the theory is
 - The axiom law, admission boundary and orbital theorem: `OBS/content/text/documents/articles/notes/2026/09/21/2026-09-21-note-on-the-axiom-law-spine-lineage-and-the-light-cone.md`.
 - The release plan: `OBS/content/text/documents/articles/notes/2026/09/27/2026-09-27-note-on-preparing-obsmetrologia-for-public-release.md`.
 - The Lean library and Blueprint: `OBS/lib/obsmetrologia/` (canonical carrier `lenticule-science/obsmetrologia`).
+- The four regimes and their gaps: `OBS/lib/obsmetrologia/Obsmetrologia/Closure/{Regime,RegimeGate,RegimeCycle}.lean`. The four worlds, the passage and the residue: `natural-science-services-section/services/physical-science-services-section/lib/obsmetrologia-physical-science/ObsmetrologiaPhysicalScience/Worlds.lean` (relative to `science-services-section/services/`). The prose glossary of the four spaces: `…/physical-science-services-section/services/physics-services-section/content/text/glossary/terms/{informational,quantum,classical,thermal}-spacetime.md`.
 - The pre-Lean formal library (175 theorems, deleted from the corpus): `git show 9be46127758:lib/emsenn/services/561-group/lib/legacy/2026-03-30-research-library/library/domains/humanities/domains/math/theories/categories/theories/predication-categories/`.
 - The earliest first-person statement: `emsenn/2025-12-15-on-relationality`, `proposing-a-reflexive-existence.org` (2025-11).
