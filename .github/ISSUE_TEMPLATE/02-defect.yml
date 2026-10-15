@@ -1,0 +1,35 @@
+name: "Defect — observed and expected"
+description: "Report one reproducible divergence without starting a parallel work queue."
+title: "[Defect] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Search existing defect issues and pull requests before opening a new one.
+        Keep exact source and receiver evidence. Redact secrets and private customer data.
+  - type: textarea
+    id: divergence
+    attributes:
+      label: Observed behavior and expected behavior
+      description: State both, with a specific example. Do not confuse source status with independent receiving.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction and evidence
+      description: Exact revision, steps, inputs, errors, logs or independent receipts; describe what was actually run.
+    validations:
+      required: true
+  - type: input
+    id: receiver
+    attributes:
+      label: Affected receiver
+      description: What actor, consumer or operation is harmed?
+    validations:
+      required: true
+  - type: textarea
+    id: related
+    attributes:
+      label: Existing work and guardrails
+      description: Link original Work, owner and known blocker, resource budget, applicable refusals or candidate repair.
