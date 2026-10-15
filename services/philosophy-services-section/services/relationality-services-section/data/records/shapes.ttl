@@ -1,7 +1,9 @@
 @prefix rel:    <https://emsenn.net/relationality/ontology#> .
 @prefix sh:     <http://www.w3.org/ns/shacl#> .
+@prefix owl:    <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix skos:   <http://www.w3.org/2004/02/skos/core#> .
 
 # =============================================================
@@ -143,3 +145,44 @@ rel:AdjunctionTargetShape a sh:NodeShape ;
         sh:class rel:Operator ;
         sh:message "leftAdjointOf must point to an Operator." ;
     ] .
+
+
+# Source-qualified lexical world. The six related spellings below are NOT
+# interchangeable with FOUR, modal □/◇, or the later relational derivation
+# operators. Require one actual context, definition, exclusion scope and
+# cited Science analysis; never infer owl:sameAs from same surface spelling.
+rel:March28InquirySenseShape a sh:NodeShape ;
+    sh:targetNode rel:March28AbsurdSense, rel:March28PossibleSense,
+                  rel:March28NecessarySense, rel:March28DeterminedSense,
+                  rel:March28RelatingSense, rel:March28RelationlessnessSense ;
+    sh:class skos:Concept ;
+    sh:property [
+        sh:path skos:inScheme ;
+        sh:minCount 1 ; sh:maxCount 1 ;
+        sh:hasValue rel:March28InquirySenseScheme ;
+        sh:message "Each admitted March 28 lexical sense must name exactly its original inquiry world." ;
+    ] ;
+    sh:property [
+        sh:path skos:prefLabel ;
+        sh:minCount 1 ; sh:maxCount 1 ;
+        sh:message "A contextual sense needs exactly one distinct preferred label in this scheme." ;
+    ] ;
+    sh:property [
+        sh:path skos:definition ;
+        sh:minCount 1 ; sh:maxCount 1 ; sh:minLength 1 ;
+        sh:message "Do not admit a lexical label without a substantive definition." ;
+    ] ;
+    sh:property [
+        sh:path skos:scopeNote ;
+        sh:minCount 1 ; sh:minLength 1 ;
+        sh:message "Each term must state what other worlds and operators it is NOT." ;
+    ] ;
+    sh:property [
+        sh:path dcterms:source ;
+        sh:minCount 1 ; sh:nodeKind sh:IRI ;
+        sh:message "Each term must trace to a source-owned, attributable analysis." ;
+    ] ;
+    sh:property [ sh:path owl:sameAs ; sh:maxCount 0 ;
+        sh:message "No lexical substitution or cross-world equality without an independently proved identity." ] ;
+    sh:property [ sh:path skos:exactMatch ; sh:maxCount 0 ;
+        sh:message "Same spelling in two worlds is not an SKOS exact match." ] .
