@@ -105,15 +105,18 @@ before concluding the territory is empty.
 
 Restate the question as one sentence the answer can be judged against, with its
 terms, its owning section and its consumer. If reading shows the original
-question was wrong, replace it and record the replacement and the reason. When
-the question is about evidence outside the house (a disease, a protocol, a
-statute, a material), write the source record the
-[literature-measurement schema](../../../../data/records/schema/literature-measurement.schema.json)
-describes and run the searches through the bibliography CLI, as the
-[research role reference](references/research-role.md) sets out: search the
-registers, read each source from its first-party surface, write the rows, then
-the prose. A statement that something has not been studied rests on a search
-row with an empty `included`.
+question was wrong, replace it and record the replacement and the reason. When the question concerns outside evidence, select the **field-correct
+source register** before searching. Biomedical questions use the existing
+literature-measurement record and the Europe PMC/ClinicalTrials.gov reader
+described in the [research role reference](references/research-role.md).
+Culture, idol fandom, sociology, media and economics questions must instead
+read original publisher/university scholarship, primary-language observations
+and attributable producer/customer records; retain search terms, date,
+selection/exclusion and citation evidence in the owning discipline's existing
+carrier. Clinical-register silence is not evidence that cultural scholarship
+is absent. Read original sources, write evidence rows, then derive the prose.
+A bounded claim of no evidence requires an actual search of the relevant
+discipline, not simply a missing PubMed hit.
 
 ### 3. Read the sources and derive the theory
 

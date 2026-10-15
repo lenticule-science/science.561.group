@@ -61,7 +61,7 @@ The role is filled at three different depths, depending on what the task require
 
 ## Procedure
 
-A research question is measured before it is written. The measurement is a
+A research question is measured through a register appropriate to its discipline before it is written. The Europe PMC and ClinicalTrials.gov workflow below applies to biomedical questions; sociology and culture research requires original scholarly, producer, and community sources instead. The measurement is a
 `literature-measurement` record (schema:
 `science-services-section/data/records/schema/literature-measurement.schema.json`)
 kept in the owning section's `data/records/`, and the meter is
@@ -77,19 +77,24 @@ literature sources <record> --write
 ```
 
 1. **Recover.** Read what the library already holds on the question.
-2. **Frame.** Write the record's `frame`: population, exposure (in the
-   literature's units: convert brand doses to the studied agent), comparator,
-   outcomes. The frame decides which hits qualify.
-3. **Search the registers, not the web.** Run every search through
-   `literature search`; each run is a row whether or not it hits. Europe PMC
-   covers PubMed, PMC and international journals. Use `ABSTRACT:`/`TITLE:`/
-   `AUTH:` fields: bare terms match full text and flood the result. Search
-   ClinicalTrials.gov for registered and non-US trials. Web search finds
-   leads; a lead becomes evidence only once it is read from a register.
-   Mark each search's `qualifyingHits`, and write its `reading` when nothing
-   qualified: that row is what a statement that something has not been
-   studied rests on.
-4. **Read each source from its first-party surface.** `literature read`
+2. **Frame for the discipline.** Name the unit studied, population,
+   time, location, comparison and disconfirming outcome. For a biomedical
+   intervention use population/exposure/dose/comparator/outcome; for a social
+   practice use actors, meaning, voluntary acts, institutions, prices,
+   material relations and an empirical counterfactual. Do not turn fandom
+   membership or cultural affiliation into a dose variable.
+3. **Select the relevant field's original records.** For biomedical
+   questions, run `literature search` in Europe PMC and ClinicalTrials.gov;
+   use TITLE/ABSTRACT/AUTH fields to keep a reproducible search scope and
+   record each hit or miss. For sociology, media, culture and economics,
+   read original scholarly publishers, university publication records,
+   original-language sources and attributed provider/customer observations.
+   Record register, terms, date, locale, selection and exclusion for these
+   questions in the owning section's established evidence carrier. Discovery
+   via a search engine is a lead, not evidence until the original publication
+   is read. An absent clinical-register hit cannot establish the absence
+   of scholarship on fandom, games or cultural practice.
+4. **Read each source from its first-party surface.** The following `literature read` and exposure fields govern the biomedical specialization; outside biomedicine read the original scholar/publisher, university, original-language field source, standard or documented producer/receiver, and record the actual unit, sample, date, evidence class and limits. `literature read`
    adds the row from Europe PMC and prints the abstract. Write `findings`
    with the source's own words in `exactSourceLanguage`, plus design, n,
    country and exposures. Set `readFrom` to what was read. A figure the
