@@ -19,8 +19,7 @@ as current deployment instructions.
 
 ## MetroPlat corpus access
 
-The Group profile installs `@lenticule-science/l-space/metroplat` as
-`lSpaceMetroplat`. Inside FeltOS's existing entrance, `/knowledge` and
+The Group and Cold Red Gate profiles now select Red Cup's `@red-cup-engineering/digital-garden-systems-services-section/l-space-metroplat` export `lSpaceMetroplat`. The source, native admission policy, and receiving tests belong to the Digital Garden Systems Engineering section; the Science repository no longer exports or implements this MetroPlat application. Inside FeltOS's existing entrance, `/knowledge` and
 `lspace_search`/`lspace_fetch` read one CAIRN archive over the Science corpus.
 People search and open complete source documents; agent results name those same
 `/knowledge?document=...` URLs and retain source revisions and metadata.

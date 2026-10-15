@@ -38,8 +38,7 @@ export const GROUP_ROOT = fileURLToPath(new URL('../../../../../', import.meta.u
 export const SCIENCE_ROOT = fileURLToPath(new URL('../../../', import.meta.url));
 
 /** Path segments that are custody, triage, private, or working strata, never rooms. */
-import { EXCLUDED_SEGMENTS } from './archive-policy.mjs';
-export { EXCLUDED_SEGMENTS } from './archive-policy.mjs';
+import { EXCLUDED_SEGMENTS } from '@red-cup-engineering/digital-garden-systems-services-section/l-space-reader-policy';
 
 /** Frontmatter fields whose values form concept halls. */
 export const ATTRIBUTE_FIELDS = Object.freeze([
