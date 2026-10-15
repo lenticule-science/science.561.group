@@ -2,7 +2,7 @@
 title: WeiqIdol Product Vision
 description: "Audience: the 561 Group board and future implementing agents. Product vision: Keya the mascot, the WeiqIdol wuxia-idol fiction layer with its AI-idol sect-recruitment mechanic, the Reigns-style noodle-bar hub loop, and the ticket-arcade idle lane. Not yet built or constitutionally admitted."
 date-created: 2026-08-29
-date-updated: 2026-08-29
+date-updated: 2026-10-14
 type: text
 authors:
   - claude-sonnet-5
@@ -11,6 +11,24 @@ keywords: ["weiqi", "product-vision", "weiqidol", "fiction-layer"]
 
 
 This product vision is not yet built or constitutionally admitted. Read alongside [Reframe and Standards](2026-08-29-note-on-reframe-and-standards.md), whose full-feature-web frame (rich AI games as first-class peers, not just "an AI opponent") this vision concretizes, and the [Weiqi Market Teardown](weiqi-market-teardown.md)'s 2026-08-29 addendum, whose ranked differentiator list is referenced by number below.
+
+## WXWQ / Wu(x)weiqi — October 14, 2026 continuation of this original vision
+
+**Leader's direction, recovering rather than superseding the August 29 source:** Wu(x)weiqi / Wuxweiqi / WXWQ reintroduces Go moves as **tactics read within strategies**, and strategies as a fictional world of agentic characters inhabiting sects, teaching, challenging and recruiting through recognizable Weiqi lineages. *WeiqIdol* is the existing idol-wuxia product hypothesis; WXWQ is an additional working program/title and may coexist. Neither label is a verified brand clearance or a guarantee that a Chinese/Japanese/Korean historical tradition has been represented.
+
+**A substantive intellectual progression:**
+
+1. **Accepted event:** One legal Go move, color, ruleset, known history, stones/captures and source-identified semantic observation. A tactical invitation from a captured group is grounded in precisely this fact; a legal alternative can re-create or refute its target under the same rules.
+2. **Tactic under counterplay:** A move is a tactic when the position, the opponent's threatening replies and the relevant local objective support that reading. A semantic event such as capture, simple-eye completion or giving atari is evidence of a *local effect*, not by itself evidence of good strategy.
+3. **Strategy:** Global objective, initiative/sente, influence/territory, tenuki, timing and risk are readings of *sequences, alternatives, constraints and actual opposing decisions*. Distinguish a rhetorical character doctrine from a warranted position evaluation. Derive compatible formal meanings and tests under Obsmetrologia and the existing SCA/SEN/SEAVT language work rather than using labels as ungrounded strength scores.
+4. **Fictional sect and character lineage:** A sect's strategy doctrine is authored IP, its human/agent practitioners have distinct actor identities and optional affiliative history, and an invitation changes playable missions, rivalries, lesson access or narrative consequences. Let sects notice *evidence* in a player's recorded actions, offer a contradictory doctrine or send the player to a rival. Membership is an actual elected relationship, not automatically granted by a score. Red Cup Cast/Runner and Qwzspace are incumbent agent/presentation suppliers, not things to rewrite in a downstream web page.
+5. **Teaching lineage and documented real-world traditions:** Real teacher→student lineage comes only from actual consented instruction (see the existing Red Cup **Lineage and Clubs** specification); **historical playing traditions** are a separate source-based education corpus. We can teach Japanese, Korean, Chinese and much more specific named-player/school histories through their original languages, contextual matches, openings, joseki and tactics, but we must research and source these lessons rather than classify a person's nationality or expertise from one game. The player may choose the historical or language-study route through encounters with a fictional visitor.
+
+**Actual present fabrication rung (2026-10-14):** Red Cup's original Weiqi engine now exports a deterministic [planTacticalTryouts](https://github.com/red-cup-engineering/computer-engineering-services-section/blob/main/services/computer-systems-engineering-services-section/services/computer-game-system-services-section/services/weiqi-engine/src/tactics.mjs). It takes accepted Study frames, isolates actual Black/White source moves, and offers event-verified one-move tryouts with valid replay positions. The incumbent Play and Study pages carry visible visitor invitations and their original engine-backed branch and glossary path. This **does not yet** constitute persistent NPC agents, reciprocal sect relationships, AI-authored episodic characters, historical-style recognition, richer strategic evaluation, source-qualified culture curricula, native end-to-end tests or a public deployment. Retain those as substantive work, not simulated UI success. Reuse the existing eight authored Opponent Cast personalities and the full WeiqIdol noodle-bar/recruitment vision rather than opening a rival game.
+
+**Commercial relation:** An interactive character world could sell narrative seasons, rival campaigns, creator/teacher content and premium clubs; teaching creates separate retail, institutional, language study, real mentor and certification/assessment *opportunities*. The actual seller and price choices belong to the corrected [Causeway Public Games portfolio](https://github.com/causeway-services/public-media-services-section/blob/main/services/public-games-services-section/README.md), not Science speculation. No "$2.99 first sale" condition precedes WXWQ research or gameplay. Each offer still needs real rights, paid receiving and net contribution. One match may generate educational, entertainment and media products without duplicating its Go record.
+
+**Research and disconfirmation owed:** Differentiate historical claims from fictional schools; model at least two counterposed lines under consistent Go rules before attributing a strategic doctrine; analyze teaching outcomes against unseen games rather than counting animation; study culture-specific written Go source and named historical figures before public claims. An engine-detected atari can support a playable challenge, but cannot establish a learner is "Korean-style", a winning strategy, or an actually enrolled sect follower. These are the claims for Lenticule to test, not excuses to postpone rich actual gameplay.
 
 ## Keya (mascot)
 
