@@ -16,3 +16,13 @@ But a settling depends on both the closure operator and the increment sequence: 
 - A closure operator that *would* stabilize finitely on a single isolated task might not stabilize at all if increments keep arriving with new related cells.
 
 The question is what "the operations settling is in regime $X$" actually quantifies over: the closure operator's structural commitments alone, the closure operator together with a particular increment sequence, or some intermediate notion. The [regime-of-task theorem](../../../glossary/concepts/regime-of-task.md) treats regime as a closure-operator property, but the increment sequence is part of the data of an operations settling, and the math program's regime classification is stated for the joint object. The exact scope of the regime claim — and whether the dichotomy admits a refinement that distinguishes operator-regime from operator-plus-increment-regime — is unsettled.
+
+## Current research boundary
+
+The [active scope analysis](../../../../../../content/text/documents/articles/notes/undated/regime-classification-scope.md)
+now separates one-step fixed-input saturation, an idempotent completed closure,
+and open increment histories. Its finite and Scott-continuous bounds are
+conditional, and its counterexamples rule out several stronger readings.
+This question remains open for a formal work realization: recover the actual
+regime theorem, define the admitted input family and current carrier, and prove
+which operator/orbit invariant the operational consumer preserves.

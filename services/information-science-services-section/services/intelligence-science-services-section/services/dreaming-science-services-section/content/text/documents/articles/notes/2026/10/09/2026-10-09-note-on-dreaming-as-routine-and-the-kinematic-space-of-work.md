@@ -178,50 +178,51 @@ allocation are runs, and each is a point in the space.
 
 ## Statements: the causal set of an agent's moves from its capabilities
 
-**C1.** The moves lawful to an agent are the moves its offices, duties and
-skills permit and no others. An incumbency binds a holder to an office
+**C1.** A move type is the source quadruple (incumbency, office, duty, skill).
+An incumbency binds its holder to an office
 (`science-services-section/lib/agency/incumbencies/bare-cedar-fog-claude-as-senior-scientist.json`);
 the office bears duties (`senior-scientist.json`, `bears-duty`) and provides
-skills (`provides-skill`); a duty names the skills that discharge it
-(`realizing-allocated-science-work.json`, `skills`); a skill names the
-capabilities it requires and its input and output
-(`research/SKILL.md:26-40`). The rule `no-work-outside-an-office-duty-and-skill`
-states the closure: a session does no Group work that no office it holds or
-dispatches bears as a duty realized by a skill. A **move type** is a quadruple
-(incumbency, office, duty, skill) whose skill's required capabilities the holder's
-node provides. Because offices, duties and skills are finitely many, the set of
-move types is finite.
+skills (`provides-skill`); a duty names its discharging skills
+(`realizing-allocated-science-work.json`, `skills`); the skill states its
+required capabilities and input/output contract (`research/SKILL.md`). The
+source’s rule `no-work-outside-an-office-duty-and-skill` remains the admission
+condition: a session does no Group work that no office it holds or dispatches
+bears as a duty realized by a skill. The applicable rule’s current identity
+and scope must be resolved by its owner; the mathematical correction here
+does not remove that institutional constraint. Capability, authority, input
+and resource conditions additionally constrain the occurrence’s admission. A bounded source snapshot yields a
+finite candidate type set; its actual registry must be derived from the
+agency records rather than copied into a second hand-kept list.
 
-**C2.** The move types are ordered. Move type m precedes move type m' when the
-`to` of m's duty, which includes its receiver's act, establishes what the `from`
-of m''s duty requires. The order is the transitive closure of that
-dependence. It is irreflexive across holders: a duty's receiver-condition
-names a different office, so the receiving of a move is always a later move type
-held by another incumbent. For science work the chain is the Chief Science
-Officer's allocation, the Senior Scientist's `realizing-allocated-science-work`,
-the Chief Science Officer's receiving of its outcome, and engineering's
-consumption of the specification, which engineering's own receiving then judges
-(`realizing-allocated-science-work.json`, `from`, `to`, `receiver-condition`).
-This finite poset is the **causal set of the agent's moves**; for the character
-`bare-cedar-fog-claude` it is the union over its incumbencies, among them the
-Senior Scientist and the Senior Engineer
-(`2026-10-09-note-on-the-leaders-repeated-corrections.md:23-27`).
+**C2.** A duty's `to` can establish another duty's `from`, including receiving
+conditions. These dependencies define a type graph, not automatically a
+partial order. Review and revision can revisit the same types. Distinct
+holders do not rule out cycles. Use either a demonstrated acyclic type graph
+or explicitly indexed occurrences whose evidenced prerequisites are acyclic.
+Containment remains grouping, as in K3.
 
-**C3.** Every real move is an instance of a move type, and the instance map
-preserves order: the predecessor of a move is an instance of a predecessor of its
-type. The kinematic space of work therefore maps into the causal set of lawful
-moves. A recorded move with no image is work outside method and is the subject
-of the rule above. A move type with no instance whose every predecessor type has
-a received instance is an **available move**. The available moves are the
-frontier of the causal set that history has not yet entered.
+**C3.** Each real move retains its type reference and its actual prerequisite
+occurrences. An order-preserving instance map into a type-level poset requires
+that poset and preservation law to be constructed; it does not follow from
+the quadruple alone. An available candidate occurrence discharges a particular
+open obligation, has its own received prerequisites and satisfied admission
+conditions, and has no equivalent active occurrence. A previous instance of
+the same type does not suppress a new cycle or revised-input occurrence.
 
-**C4.** The work board reads the two causal sets together. A card is an
-instance of a move type, in one of four positions: *available* (type reachable,
-no instance), *in flight* (instance with a lower endpoint and no exit),
-*awaiting receipt* (instance with an exit and no received successor held by the
-receiving office), *received*. The board orders cards by sequencing and groups
-them by containment (K3). A board whose columns are statuses chosen by hand
-holds neither set.
+**C4.** The board reads admitted obligations, agency types and recorded
+occurrences together. It distinguishes available candidates, in-flight runs,
+outputs awaiting the required receiving, and received outcomes. A failed
+terminal attempt does not fulfill its parent goal. The applicable receiver
+must be read from the current contract; a self-check cannot silently count as
+independent receiving. Source conflict: the Science research skill says its
+producer does not receive its own outcome, while the current
+`realizing-allocated-science-work.json` describes producer check/merge as
+receiving with later CSO review. This unresolved policy difference must remain
+visible to the consumer rather than be decided by this mathematical note.
+
+The active [kinematic term](../../../../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/kinematic-space-of-work.md)
+states the occurrence, containment and capability-slice contract. The previous
+type-poset assertion remains in the [prior source revision](https://github.com/lenticule-science/science-services-section/blob/aa46e2f11aff49635bfbd7a381ee4c8b261db63c/services/information-science-services-section/services/intelligence-science-services-section/services/dreaming-science-services-section/content/text/documents/articles/notes/2026/10/09/2026-10-09-note-on-dreaming-as-routine-and-the-kinematic-space-of-work.md) as provenance.
 
 **C5.** A dream is a move under a dreaming duty held by an office on the node. It
 precedes the governance move that articulates its proposals (D7), so
@@ -274,9 +275,9 @@ Each is judged against the statements above.
 
 ## Not yet derived
 
-- The Lean statement that the instance map of C3 is a causal-set morphism, and
-  that the available frontier of C3 is the set of minimal elements of the
-  complement of the image's past.
+- The occurrence/typing construction and any claimed causal-set morphism in
+  C3, including acyclicity, local finiteness, receiving and the admissible
+  occurrence frontier. A cyclic type graph is not itself a poset.
 - The closure regime of run settlement. If settlement is reopenable, the strict
   and Scott vanishing tools do not apply on the nose, and the merge semantics of
   the space change (`2026-07-01-research-on-the-kinematic-space-of-runs.md:64-67`).
@@ -360,14 +361,17 @@ The work board as the causal set:
 - **R25** (C1) The board shall derive the set of move types for each incumbency
   from the agency records (incumbency, office, duty, skill, required capabilities)
   without a second hand-kept list.
-- **R26** (C2) The board shall order move types by the dependence of a duty's `to`
-  on another duty's `from`, and shall place a duty's receiving as a later move type
-  held by its receiver.
+- **R26** (C2) The board shall derive type dependencies from duty `to`/`from`
+  contracts, preserve their source basis, and distinguish a cyclic type graph
+  from the acyclic causal order of actual occurrences. Required receiving
+  shall be represented as its own occurrence under the applicable contract.
 - **R27** (C3) When a move is recorded that is an instance of no move type, the
   board shall mark it as outside method and open a revision against the owning
   record.
-- **R28** (C3, C4) The board shall show a move type as available when it has no
-  instance and every predecessor type has a received instance.
+- **R28** (C3, C4) The board shall show a candidate occurrence as available
+  when a specific open obligation calls for it, its own prerequisites and
+  admission conditions hold, and no equivalent active occurrence carries it.
+  An earlier occurrence of its type shall not suppress legitimate recurrence.
 - **R29** (C4) The board shall classify each card as available, in flight,
   awaiting receipt or received from the witnessed records alone.
 - **R30** (C5) The board shall place a dream before the move that articulates its
@@ -381,20 +385,22 @@ The work board as the causal set:
    `resources` (content addresses). A run with no `exit` is in flight.
 2. **Sequencing.** `a` precedes `b` iff `a.exit` reaches `b.ingress` in the
    witnessed-event causal set; `parent-run` is never read as precedence.
-3. **Move type.** `(incumbency, office, duty, skill)` read from the agency
-   records; its predecessors are the move types whose duty `to` establishes this
-   duty's `from`, closed transitively; its receiving type is the duty's
-   `receiver-condition` office.
+3. **Move type and occurrence.** `(incumbency, office, duty, skill)` comes from
+   the agency records. Type dependencies retain the relevant duty `to`/`from`
+   contract. An occurrence names its input, open obligation, actual prerequisite
+   occurrences and applicable receiver. Cyclic type dependencies require
+   occurrence indexing before being read as causal precedence.
 4. **Dream record.** `window` (start mark, end mark), `regime`, `rule-set`
    (content address), `enactor` (or absent), `proposals` (list), `refusals`
    (list), `witness-count`.
 5. **Proposal.** `cell` (subject, predicate, object), `status` bottom-opened,
    `raised-by` (terms or witnesses), `dream` (dream record address), `judgment`
    (absent, then accepted, declined or lapsed, with the judging office).
-6. **Board position.** `available` iff the move type has no instance and every
-   predecessor type has a received instance; `in-flight` iff an instance has no
-   `exit`; `awaiting-receipt` iff an instance has an `exit` and its receiving type
-   has no instance by the receiving office; `received` otherwise.
+6. **Board position.** `available` is assessed per open obligation and candidate
+   occurrence under R28; `in-flight` means an admitted occurrence lacks an
+   evidenced exit; `awaiting-receipt` means its required assessment is missing;
+   `received` requires that assessment. Terminal attempt outcome, successful
+   goal satisfaction and commitment state remain separately readable.
 
 ## Design constraints
 
@@ -432,9 +438,10 @@ running node, observed from its records:
    with its duration (R16).
 4. A proposal is receivable by a non-dreaming office, and its judgment is stored
    with it (R11, R12).
-5. For the Senior Scientist incumbency, the board's derived move types and
-   order equal the chain in C2 and contain no type absent from the agency
-   records (R25, R26).
+5. For the Senior Scientist incumbency, derived move types resolve to the
+   actual agency records. A review→revision→review example repeats types
+   without creating a cycle among occurrences; the receiver-policy conflict
+   is reported rather than silently resolved (R25, R26).
 6. A session whose work left witnesses but no board moves appears as a hole, and
    a recorded move with no move type is marked outside method (R24, R27).
 7. A killed run keeps its lower endpoint and has no exit (R19), and a session
@@ -449,8 +456,9 @@ running node, observed from its records:
    admission, the scheduler witnessing repair. Receiver: CEngO.
 2. **Kinematic work board** (R18 to R24, R29, R30): the run record, sequencing,
    grouping, holes, the resource binding. Receiver: CEngO.
-3. **Capability causal set** (R25 to R28): the reader that derives move types and
-   their order from agency records and the available frontier. Receiver: CEngO.
+3. **Capability-constrained work frontier** (R25 to R28): the reader derives
+   types and dependencies from agency records, relates them to actual work
+   occurrences, and evaluates the obligation-bound frontier. Receiver: CEngO.
 4. **Agency records for the routine** (R17): an office, duty and skill for each
    node's dreamer. Opening them is the Chief Science Officer's and the
    appointing authority's act, not the Senior Scientist's.

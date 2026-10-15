@@ -10,7 +10,7 @@ can-be-part-of: campaign
 has: [status, goal, completion-criteria]
 coordinated-by-takes: campaign
 date-created: 2026-03-20
-date-modified: 2026-04-06
+date-modified: 2026-10-15
 uses: Plan
 params:
   goal: relational-universe
@@ -33,11 +33,11 @@ A project has three defining properties:
 
 2. **A bounded set of plans.** A project names its plans explicitly. Plans do not self-assign to projects. Each plan belongs to exactly one project, establishing clear ownership and preventing scope confusion.
 
-3. **Completion criteria.** A project is complete when its plans are complete and its goal is satisfied. Because plans contain [tasks](./task.md) with defined completion states, project completion rolls up deterministically.
+3. **Completion criteria.** A project is complete when its plans are complete and its goal is satisfied. The roll-up must evaluate the declared goal and receiving conditions. Terminal failed, abandoned or recalled work is not successful fulfillment; completion labels alone do not discharge the project.
 
 ## Default work
 
-Some projects designate certain plans as "default" — work to fall back to when no other task is urgent. Default plans capture north-star work: important, perpetually open, never urgent, but always worth doing when the potential queue is clear. This prevents the system from idling when all urgent work is done.
+Some projects designate certain plans as "default" — work to fall back to when no other task is urgent. A default designation selects fallback work. A standing function can issue successive bounded plans; an indefinitely open list is not itself proof of a finite plan or an available action. This prevents the system from idling when all urgent work is done.
 
 ## Hierarchy
 

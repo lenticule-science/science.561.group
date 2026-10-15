@@ -12,7 +12,7 @@ owner-is: office
 requires-concepts-takes: term
 coordinated-by-takes: campaign
 date-created: 2026-03-20
-date-modified: 2026-04-06
+date-modified: 2026-10-15
 aliases:
   - plans
 params:
@@ -61,7 +61,7 @@ Four properties distinguish a plan from a wish, a list, or a policy:
 
 2. **Dependency structure.** Steps are connected by ordering constraints: step A must complete before step B can begin, because A produces something B needs. Steps without ordering constraints can proceed in any order or concurrently. The dependency structure is a directed acyclic graph — cycles would make the plan unexecutable.
 
-3. **Goal orientation.** Every step contributes to the plan's goal through a chain of means-end relations. A step that could be removed without affecting the goal is not part of the plan — it is padding. Plans are lean: they include what is necessary and nothing else.
+3. **Goal orientation.** Every step contributes to the plan's goal through a chain of means-end relations. Each step needs a stated contribution to the goal, assurance, contingency or receiving. Irredundancy is a possible optimization criterion, not a defining law: a contingency or independent check may be justified even when one successful execution would not need it.
 
 4. **Defeasible stability.** Plans resist casual revision. Once adopted, a plan constrains future deliberation — you do not re-deliberate from scratch at each moment. But plans can be abandoned or revised when circumstances change. The key distinction: reconsideration requires reasons, not just preference (Bratman 1987).
 
@@ -82,7 +82,7 @@ The hierarchy runs: goal → [project](./project.md) → plan → task. A projec
 Plans serve two coordination functions (Bratman 1987):
 
 - **Coordination over time.** A plan settled upon now guides future sessions. Without a plan, each session would deliberate from scratch about what to do — a waste of the system's most constrained resource (context).
-- **Coordination with others.** Shared plans allow agents (human and artificial) to work in parallel without continuous negotiation. Two agents with access to the same plan can each take different tasks, confident their work will compose.
+- **Coordination with others.** Shared plans allow agents (human and artificial) to work in parallel without continuous negotiation. A shared plan exposes dependencies, but independent execution also requires compatible interfaces, resources and effects. Access to the same plan alone does not establish that the work composes.
 
 ## Reconsideration
 
@@ -123,9 +123,9 @@ The plan $(\mathcal{O}, \prec)$ is **valid** iff: there exists a total ordering 
 
 3. **Causal groundedness**: every ordering constraint $o_1 \prec o_2$ in $\prec$ is **causally grounded** — $o_1$ must precede $o_2$ either because $o_1$ produces an effect that $o_2$ requires (producer-consumer dependency), or because $o_1$'s execution would threaten $o_2$'s precondition if done after (threat ordering). Ordering constraints without causal grounding are arbitrary serializations, not plan structure.
 
-4. **Means-end coherence**: every step $o \in \mathcal{O}$ is connected to the goal by a chain of **means-end relations** — $o$ is included in the plan because it contributes (as a necessary or sufficient means) to some subgoal $G'$ that itself contributes to the plan's goal $G$. Formally: there is no step $o \in \mathcal{O}$ such that removing $o$ from $\mathcal{O}$ (and dropping all constraints involving $o$) leaves $\mathrm{goal}$ achievable from $\mathrm{pre}$. A step that can be removed without affecting plan validity is not part of the plan's means-end structure — it is redundant. Means-end coherence ensures plans are not padded with irrelevant steps.
+4. **Means-end coherence**: every step $o \in \mathcal{O}$ is connected to the goal by a chain of **means-end relations** — $o$ is included in the plan because it contributes (as a necessary or sufficient means) to some subgoal $G'$ that itself contributes to the plan's goal $G$. This requires a documented means-end contribution, not globally minimal cardinality. Removing one step while retaining one successful linearization does not prove that assurance, contingency coverage or the accepted quality conditions are preserved.
 
-**Plan refinement.** Plans over the same goal admit a **refinement preorder**: $\Pi_1 \sqsubseteq \Pi_2$ iff $\mathrm{Lin}(\Pi_2) \subseteq \mathrm{Lin}(\Pi_1)$, where $\mathrm{Lin}(\Pi)$ is the set of total orderings (linearizations) of $\mathcal{O}$ consistent with $\prec$. A refinement $\Pi_2$ commits to more — it permits fewer execution orderings but every ordering it permits is also permitted by $\Pi_1$. In terms of the ordering relation: $\Pi_1 \sqsubseteq \Pi_2$ iff $\prec_1 \subseteq \prec_2$ (the concrete plan adds ordering constraints). A total ordering of $\mathcal{O}$ consistent with $\prec_1$ is the most refined plan: it selects a single linearization. The partial-order plan $(\mathcal{O}, \emptyset)$ with no ordering constraints is the least refined plan — all linearizations are permitted.
+**Plan refinement.** For plans over the same fixed set of step occurrences and the same interpretation of those steps, added ordering constraints admit a **refinement preorder**: $\Pi_1 \sqsubseteq \Pi_2$ iff $\mathrm{Lin}(\Pi_2) \subseteq \mathrm{Lin}(\Pi_1)$, where $\mathrm{Lin}(\Pi)$ is the set of total orderings (linearizations) of $\mathcal{O}$ consistent with $\prec$. A refinement $\Pi_2$ commits to more — it permits fewer execution orderings but every ordering it permits is also permitted by $\Pi_1$. In terms of the ordering relation: $\Pi_1 \sqsubseteq \Pi_2$ iff $\prec_1 \subseteq \prec_2$ (the concrete plan adds ordering constraints). Each consistent total ordering is a maximal order refinement selecting one linearization; different linearizations need not be comparable, so there is no unique greatest refinement. The empty strict order is least in the ambient order-constraint poset, but may omit required causal constraints. Adding order constraints only proves inclusion of allowed schedules. Under an existential plan-validity definition, one must separately check that at least one successful execution remains; a refinement can exclude the only successful schedule.
 
 ## Fikes and Nilsson: STRIPS
 
