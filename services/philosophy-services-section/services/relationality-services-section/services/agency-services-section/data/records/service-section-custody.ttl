@@ -183,3 +183,43 @@ sec:InstanceParameterShape a sh:NodeShape ;
     sec:sectionName "561-group-services-section" ; sec:sourceCustody sec:Group .
 <https://github.com/causeway-services/public-services-section> a sec:ServiceSection ;
     sec:sectionName "public-services-section" ; sec:sourceCustody sec:Public .
+
+
+# Pinned-source qualification. A branch name is not an immutable revision.
+# Check only explicitly held assets in the qualified inventory graph.
+# Relative safe paths preserve owner identity; they do not assert deployment.
+sec:ReproducibleArtifactSourceShape a sh:NodeShape ;
+    sh:targetObjectsOf sec:holds ;
+    sh:sparql [
+        sh:message "Source revision is a mutable selector, not an immutable source identity" ;
+        sh:select """
+          PREFIX sec: <https://561.group/ontology/service-section-custody#>
+          SELECT $this ?value WHERE {
+            $this sec:sourceRevision ?value .
+            FILTER (
+              LCASE(STR(?value)) IN ("main", "master", "head", "latest") ||
+              STRSTARTS(LCASE(STR(?value)), "refs/heads/") ||
+              STRSTARTS(LCASE(STR(?value)), "branches/")
+            )
+          }
+        """
+    ] ;
+    sh:sparql [
+        sh:message "Current asset source path must be a relative path inside its declared owner" ;
+        sh:select """
+          PREFIX sec: <https://561.group/ontology/service-section-custody#>
+          SELECT $this ?value WHERE {
+            $this sec:sourcePath ?value .
+            FILTER (
+              STRSTARTS(STR(?value), "/") ||
+              STRSTARTS(STR(?value), "../") ||
+              STR(?value) IN (".", "..") ||
+              CONTAINS(STR(?value), "/../") ||
+              STRENDS(STR(?value), "/..") ||
+              STRSTARTS(STR(?value), "./") ||
+              CONTAINS(STR(?value), "/./") ||
+              STR(?value) = ""
+            )
+          }
+        """
+    ] .

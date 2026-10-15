@@ -1,0 +1,83 @@
+@prefix agsv: <https://emsenn.net/mathematics/objects/universes/agential-semioverse#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# Consumer validation of explicit, attributed agency data.
+# This is not an authority issuer, graph inventory, or execution engine.
+# OWL is open-world; these constraints apply only to named typed graph nodes.
+# An absent violation is not evidence of installation or completed work.
+
+agsv:IncumbencyShape a sh:NodeShape ;
+  sh:targetClass agsv:Incumbency ;
+  sh:property [
+    sh:path agsv:incumbentActor ; sh:minCount 1 ; sh:maxCount 1 ;
+    sh:class agsv:Actor ;
+    sh:message "Incumbency needs an accountable actor, not only a character name." ] ;
+  sh:property [
+    sh:path agsv:incumbentOffice ; sh:minCount 1 ; sh:maxCount 1 ;
+    sh:class agsv:Office ;
+    sh:message "Incumbency needs its particular office." ] ;
+  sh:property [
+    sh:path agsv:authorityEvidence ; sh:minCount 1 ;
+    sh:class prov:Entity ;
+    sh:message "Office occupancy must cite the distinct authority evidence." ] ;
+  sh:property [
+    sh:path agsv:effectiveFrom ; sh:maxCount 1 ; sh:datatype xsd:dateTime ] ;
+  sh:property [
+    sh:path agsv:effectiveUntil ; sh:maxCount 1 ; sh:datatype xsd:dateTime ] .
+
+agsv:AdmittedTaskShape a sh:NodeShape ;
+  sh:targetClass agsv:AdmittedTask ;
+  sh:property [
+    sh:path agsv:taskAssignedUnder ; sh:minCount 1 ; sh:maxCount 1 ;
+    sh:class agsv:Incumbency ;
+    sh:message "An admitted task requires a distinct evidenced incumbency; a message cannot appoint its own actor." ] ;
+  sh:property [
+    sh:path agsv:taskDischargesDuty ; sh:minCount 1 ;
+    sh:class agsv:Duty ;
+    sh:message "An admitted task requires at least one accountable duty." ] ;
+  sh:property [
+    sh:path agsv:taskUsesProcedure ; sh:minCount 1 ;
+    sh:class agsv:Procedure ;
+    sh:message "An admitted task must select an existing declarative procedure, not a hidden executable." ] .
+
+agsv:ObligationShape a sh:NodeShape ;
+  sh:targetClass agsv:Obligation ;
+  sh:property [
+    sh:path agsv:obligationOwedBy ; sh:minCount 1 ; sh:maxCount 1 ;
+    sh:class agsv:Actor ;
+    sh:message "An obligation has one accountable debtor in the declared scope." ] ;
+  sh:property [
+    sh:path agsv:obligationOwedTo ; sh:minCount 1 ;
+    sh:class agsv:Actor ;
+    sh:message "An obligation must identify its beneficiary." ] ;
+  sh:or (
+    [ sh:property [
+        sh:path [ sh:inversePath agsv:dutyGroundsObligation ] ;
+        sh:minCount 1 ; sh:class agsv:Duty ] ]
+    [ sh:property [
+        sh:path agsv:obligationUnderContract ;
+        sh:minCount 1 ; sh:class agsv:Contract ] ]
+  ) ;
+  sh:message "An obligation must cite a grounding duty or an attributed contract." .
+
+agsv:AcceptedReceiptShape a sh:NodeShape ;
+  sh:targetClass agsv:AcceptedReceipt ;
+  sh:property [
+    sh:path agsv:receiptForTask ; sh:minCount 1 ; sh:maxCount 1 ;
+    sh:class agsv:Task ;
+    sh:message "Receipt must identify which actual task it concerns." ] ;
+  sh:property [
+    sh:path agsv:receiptEvidence ; sh:minCount 1 ;
+    sh:class prov:Entity ;
+    sh:message "Receipt requires identifiable evidence, not a success label." ] ;
+  sh:property [
+    sh:path agsv:receiptAcceptedBy ; sh:minCount 1 ;
+    sh:class agsv:Actor ;
+    sh:message "Acceptance must be attributed to a receiving actor." ] .
+
+agsv:MessageShape a sh:NodeShape ;
+  sh:targetClass agsv:Message ;
+  sh:property [ sh:path agsv:messageFrom ; sh:minCount 1 ; sh:class agsv:Actor ] ;
+  sh:property [ sh:path agsv:messageTo ; sh:minCount 1 ; sh:class agsv:Actor ] .

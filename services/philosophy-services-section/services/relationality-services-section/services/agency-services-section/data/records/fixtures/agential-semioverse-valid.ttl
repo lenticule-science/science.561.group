@@ -1,0 +1,44 @@
+@prefix agsv: <https://emsenn.net/mathematics/objects/universes/agential-semioverse#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix ex: <https://561.group/examples/agency-work#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# Synthetic competence fixture, not an actual office appointment or receipt.
+ex:workingActor a agsv:Actor, prov:Agent .
+ex:receivingActor a agsv:Actor, prov:Agent .
+ex:character a agsv:Character, prov:Entity .
+ex:workingActor agsv:hasCharacter ex:character .
+ex:scienceEvidence a prov:Entity .
+ex:outputEvidence a prov:Entity .
+ex:office a agsv:Office ; agsv:officeDefinesDuty ex:duty .
+ex:incumbency a agsv:Incumbency ;
+  agsv:incumbentActor ex:workingActor ;
+  agsv:incumbentOffice ex:office ;
+  agsv:authorityEvidence ex:scienceEvidence ;
+  agsv:effectiveFrom "2026-10-14T00:00:00Z"^^xsd:dateTime .
+ex:mission a agsv:Mission .
+ex:endeavor a agsv:Endeavor ;
+  agsv:endeavorPursuesMission ex:mission ;
+  agsv:endeavorAdvancesGoal ex:goal .
+ex:goal a agsv:Goal ; agsv:goalRequiresTask ex:task .
+ex:duty a agsv:Duty ; agsv:dutyGroundsObligation ex:obligation .
+ex:obligation a agsv:Obligation ;
+  agsv:obligationOwedBy ex:workingActor ;
+  agsv:obligationOwedTo ex:receivingActor ;
+  agsv:obligationReceivedThrough ex:receipt .
+ex:procedure a agsv:Procedure, prov:Plan .
+ex:task a agsv:AdmittedTask, agsv:Task ;
+  agsv:taskAssignedUnder ex:incumbency ;
+  agsv:taskDischargesDuty ex:duty ;
+  agsv:taskUsesProcedure ex:procedure .
+ex:receipt a agsv:AcceptedReceipt, agsv:Receipt ;
+  agsv:receiptForTask ex:task ;
+  agsv:receiptAcceptedBy ex:receivingActor ;
+  agsv:receiptEvidence ex:outputEvidence .
+ex:ledger a agsv:Ledger ;
+  agsv:ledgerRecordsObligation ex:obligation ;
+  agsv:ledgerRecordsReceipt ex:receipt .
+ex:message a agsv:Message ;
+  agsv:messageFrom ex:workingActor ;
+  agsv:messageTo ex:receivingActor ;
+  agsv:messageProposesTask ex:task .

@@ -1,0 +1,13 @@
+PREFIX sec: <https://561.group/ontology/service-section-custody#>
+
+# Qualification coverage, not a score. Five zero-count rows for the custody
+# law alone indicate that NO source asset has been inventoried and checked.
+SELECT ?section ?name ?role (COUNT(DISTINCT ?artifact) AS ?observedArtifacts)
+WHERE {
+  ?section a sec:ServiceSection ;
+           sec:sourceCustody ?role ;
+           sec:sectionName ?name .
+  OPTIONAL { ?section sec:holds ?artifact . }
+}
+GROUP BY ?section ?name ?role
+ORDER BY ?name

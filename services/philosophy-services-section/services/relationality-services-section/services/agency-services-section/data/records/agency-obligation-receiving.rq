@@ -1,0 +1,32 @@
+PREFIX agsv: <https://emsenn.net/mathematics/objects/universes/agential-semioverse#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+
+# Competency question: for declared obligations, which attributed tasks and
+# independently accepted receipts exist in this *qualified input graph*?
+# Missing rows/receipts mean "not evidenced here", not "nothing happened".
+# No source document, task message, ledger row or test run self-grants authority.
+SELECT DISTINCT ?obligation ?debtor ?beneficiary ?groundingDuty ?task
+       ?incumbent ?receiver ?receipt ?evidence ?statusInGraph
+WHERE {
+  ?obligation a agsv:Obligation ;
+              agsv:obligationOwedBy ?debtor ;
+              agsv:obligationOwedTo ?beneficiary .
+  OPTIONAL {
+    ?groundingDuty agsv:dutyGroundsObligation ?obligation .
+    ?task a agsv:AdmittedTask ;
+          agsv:taskDischargesDuty ?groundingDuty ;
+          agsv:taskAssignedUnder ?incumbency .
+    ?incumbency agsv:incumbentActor ?incumbent ;
+                agsv:authorityEvidence ?authorityRecord .
+  }
+  OPTIONAL {
+    ?obligation agsv:obligationReceivedThrough ?receipt .
+    ?receipt a agsv:AcceptedReceipt ;
+             agsv:receiptAcceptedBy ?receiver ;
+             agsv:receiptEvidence ?evidence .
+  }
+  BIND(IF(BOUND(?receipt) && BOUND(?receiver) && BOUND(?evidence),
+          "accepted receipt explicitly asserted in this graph",
+          "independent receiving not evidenced in this graph") AS ?statusInGraph)
+}
+ORDER BY ?obligation ?task

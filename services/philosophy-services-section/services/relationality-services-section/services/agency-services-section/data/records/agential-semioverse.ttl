@@ -3,6 +3,7 @@
 @prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
 @prefix skos:   <http://www.w3.org/2004/02/skos/core#> .
 @prefix sh:     <http://www.w3.org/ns/shacl#> .
+@prefix prov:   <http://www.w3.org/ns/prov#> .
 @prefix emsenn: <https://emsenn.net/> .
 @prefix agsv:   <https://emsenn.net/mathematics/objects/universes/agential-semioverse#> .
 @prefix isv:    <https://emsenn.net/mathematics/objects/universes/interactive-semioverse#> .
@@ -321,3 +322,130 @@ agsv:Tool agsv:isMonotone true ;
 agsv:Skill agsv:isMonotone true ;
     agsv:isFragmentPreserving true ;
     agsv:isClosureCompatible true .
+
+# ---------------------------------------------------------------------------
+# Institutional agency and work: typed semantic projections, not a second
+# Work/Action/Move engine, corporate appointment registry or permission issuer.
+#
+# Retain the distinction between a mathematical Agent handle, a responsible
+# Actor, a portrayed Character, an Office, and an evidenced Incumbency.
+# See PROV-O for accountable agents, activities and provenance. The named
+# relations below do not imply execution, proof, authorization or discharge.
+# ---------------------------------------------------------------------------
+
+agsv:Actor a owl:Class ; rdfs:subClassOf prov:Agent ;
+    rdfs:label "Actor" ;
+    rdfs:comment "A responsible human, organization, or software principal; never inferred merely from a character name or a Git author." .
+agsv:Character a owl:Class ; rdfs:subClassOf prov:Entity ;
+    rdfs:label "Character" ;
+    rdfs:comment "A particular presentation or continuity of persona, distinct from actor identity and authority." .
+agsv:Office a owl:Class ; rdfs:subClassOf prov:Entity ;
+    rdfs:label "Office" ;
+    rdfs:comment "Institutional locus of duties, not an agent, an occupant, or a grant by itself." .
+agsv:Incumbency a owl:Class ; rdfs:subClassOf prov:Entity ;
+    rdfs:label "Incumbency" ;
+    rdfs:comment "Source-evidenced, time-scoped relation binding one actor to an office under a named authority; absent proof is not a vacant office." .
+
+agsv:Mission a owl:Class ; rdfs:subClassOf prov:Entity ;
+    rdfs:label "Mission" ;
+    rdfs:comment "Standing purpose whose realization is pursued across endeavors; not the same thing as an executable task." .
+agsv:Endeavor a owl:Class ; rdfs:subClassOf prov:Entity ;
+    rdfs:label "Endeavor" ;
+    rdfs:comment "Organized pursuit of a mission by specified actors and resources, potentially with several goals." .
+agsv:Goal a owl:Class ; rdfs:subClassOf prov:Entity ;
+    rdfs:label "Goal" ;
+    rdfs:comment "Typed desired state or achievement criterion; a goal statement does not assert its satisfaction." .
+agsv:Task a owl:Class ; rdfs:subClassOf prov:Entity ;
+    rdfs:label "Task" ;
+    rdfs:comment "Bounded proposed work. Its existence as an uttered request does not authorize an effect." .
+agsv:AdmittedTask a owl:Class ; rdfs:subClassOf agsv:Task ;
+    rdfs:label "Admitted task" ;
+    rdfs:comment "Task with separately evidenced responsible incumbency and governing duty; not inferred from a message or a repository issue." .
+agsv:Procedure a owl:Class ; rdfs:subClassOf prov:Plan ;
+    rdfs:label "Procedure" ;
+    rdfs:comment "Declarative reusable work method interpreted by Engineering; not a script, skill execution, or instance permission." .
+
+agsv:Duty a owl:Class ; rdfs:subClassOf prov:Entity ;
+    rdfs:label "Duty" ;
+    rdfs:comment "Normative responsibility attached to an office or other lawful authority." .
+agsv:Obligation a owl:Class ; rdfs:subClassOf prov:Entity ;
+    rdfs:label "Obligation" ;
+    rdfs:comment "Specific performance or restraint owed by an accountable actor to a distinct beneficiary, with grounds and discharge evidence." .
+agsv:Contract a owl:Class ; rdfs:subClassOf prov:Entity ;
+    rdfs:label "Contract" ;
+    rdfs:comment "Attributed governing agreement; it may ground obligations but its presence alone is not assent or legal validity." .
+agsv:Ledger a owl:Class ; rdfs:subClassOf prov:Entity ;
+    rdfs:label "Ledger" ;
+    rdfs:comment "Attributed view of recorded obligations, actions or receipts; a ledger entry is not the underlying event." .
+agsv:Message a owl:Class ; rdfs:subClassOf prov:Entity ;
+    rdfs:label "Message" ;
+    rdfs:comment "Communicated artifact or envelope with source and recipient, distinct from its interpretation, authorization, and observed perlocution." .
+agsv:Receipt a owl:Class ; rdfs:subClassOf prov:Entity ;
+    rdfs:label "Receipt" ;
+    rdfs:comment "Attributed claim and evidence of a specified work effect; distinguish performer reports from independent receiver acceptance." .
+agsv:AcceptedReceipt a owl:Class ; rdfs:subClassOf agsv:Receipt ;
+    rdfs:label "Independently received effect" ;
+    rdfs:comment "Receipt explicitly tied to a receiving actor and corroborating source; no acceptance is inferred from a successful source commit." .
+
+agsv:hasCharacter a owl:ObjectProperty ;
+    rdfs:domain agsv:Actor ; rdfs:range agsv:Character ;
+    rdfs:label "presents character" .
+agsv:incumbentActor a owl:ObjectProperty ;
+    rdfs:domain agsv:Incumbency ; rdfs:range agsv:Actor ;
+    rdfs:label "incumbent actor" .
+agsv:incumbentOffice a owl:ObjectProperty ;
+    rdfs:domain agsv:Incumbency ; rdfs:range agsv:Office ;
+    rdfs:label "incumbent office" .
+agsv:authorityEvidence a owl:ObjectProperty ;
+    rdfs:domain agsv:Incumbency ; rdfs:range prov:Entity ;
+    rdfs:label "source of authority" .
+agsv:effectiveFrom a owl:DatatypeProperty ;
+    rdfs:domain agsv:Incumbency ; rdfs:range xsd:dateTime .
+agsv:effectiveUntil a owl:DatatypeProperty ;
+    rdfs:domain agsv:Incumbency ; rdfs:range xsd:dateTime .
+
+agsv:officeDefinesDuty a owl:ObjectProperty ;
+    rdfs:domain agsv:Office ; rdfs:range agsv:Duty .
+agsv:dutyGroundsObligation a owl:ObjectProperty ;
+    rdfs:domain agsv:Duty ; rdfs:range agsv:Obligation .
+agsv:obligationOwedBy a owl:ObjectProperty ;
+    rdfs:domain agsv:Obligation ; rdfs:range agsv:Actor .
+agsv:obligationOwedTo a owl:ObjectProperty ;
+    rdfs:domain agsv:Obligation ; rdfs:range agsv:Actor .
+agsv:obligationUnderContract a owl:ObjectProperty ;
+    rdfs:domain agsv:Obligation ; rdfs:range agsv:Contract .
+agsv:obligationReceivedThrough a owl:ObjectProperty ;
+    rdfs:domain agsv:Obligation ; rdfs:range agsv:AcceptedReceipt ;
+    rdfs:comment "An explicit claim of discharged obligation, subject to the receiver's criteria; not inferred from task completion." .
+
+agsv:endeavorPursuesMission a owl:ObjectProperty ;
+    rdfs:domain agsv:Endeavor ; rdfs:range agsv:Mission .
+agsv:endeavorAdvancesGoal a owl:ObjectProperty ;
+    rdfs:domain agsv:Endeavor ; rdfs:range agsv:Goal .
+agsv:goalRequiresTask a owl:ObjectProperty ;
+    rdfs:domain agsv:Goal ; rdfs:range agsv:Task .
+agsv:taskUsesProcedure a owl:ObjectProperty ;
+    rdfs:domain agsv:Task ; rdfs:range agsv:Procedure .
+agsv:taskAssignedUnder a owl:ObjectProperty ;
+    rdfs:domain agsv:AdmittedTask ; rdfs:range agsv:Incumbency .
+agsv:taskDischargesDuty a owl:ObjectProperty ;
+    rdfs:domain agsv:AdmittedTask ; rdfs:range agsv:Duty ;
+    rdfs:comment "Duty that an authorized task is intended to discharge; actual discharge needs independent evidence." .
+
+agsv:messageFrom a owl:ObjectProperty ;
+    rdfs:domain agsv:Message ; rdfs:range agsv:Actor .
+agsv:messageTo a owl:ObjectProperty ;
+    rdfs:domain agsv:Message ; rdfs:range agsv:Actor .
+agsv:messageProposesTask a owl:ObjectProperty ;
+    rdfs:domain agsv:Message ; rdfs:range agsv:Task ;
+    rdfs:comment "Speech-act proposal, never a self-authorizing work allocation." .
+agsv:receiptForTask a owl:ObjectProperty ;
+    rdfs:domain agsv:Receipt ; rdfs:range agsv:Task .
+agsv:receiptEvidence a owl:ObjectProperty ;
+    rdfs:domain agsv:Receipt ; rdfs:range prov:Entity .
+agsv:receiptAcceptedBy a owl:ObjectProperty ;
+    rdfs:domain agsv:AcceptedReceipt ; rdfs:range agsv:Actor .
+agsv:ledgerRecordsObligation a owl:ObjectProperty ;
+    rdfs:domain agsv:Ledger ; rdfs:range agsv:Obligation .
+agsv:ledgerRecordsReceipt a owl:ObjectProperty ;
+    rdfs:domain agsv:Ledger ; rdfs:range agsv:Receipt .

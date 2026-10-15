@@ -1,0 +1,20 @@
+@prefix agsv: <https://emsenn.net/mathematics/objects/universes/agential-semioverse#> .
+@prefix ex: <https://561.group/examples/agency-invalid#> .
+
+# Deliberate negative example. This must violate SHACL.
+# A persona and a message do not appoint a worker or settle an obligation.
+ex:character a agsv:Character .
+ex:office a agsv:Office .
+ex:incumbency a agsv:Incumbency ;
+  agsv:incumbentActor ex:character ;
+  agsv:incumbentOffice ex:office .
+ex:task a agsv:AdmittedTask, agsv:Task ;
+  agsv:taskAssignedUnder ex:incumbency .
+ex:message a agsv:Message ;
+  agsv:messageFrom ex:character ;
+  agsv:messageProposesTask ex:task .
+ex:receipt a agsv:AcceptedReceipt, agsv:Receipt ;
+  agsv:receiptForTask ex:task ;
+  agsv:receiptAcceptedBy ex:character .
+ex:obligation a agsv:Obligation ;
+  agsv:obligationOwedBy ex:character .
