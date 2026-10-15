@@ -3,7 +3,7 @@ name: L-Space
 id: l-space
 type: term
 date-created: 2026-10-10
-date-updated: 2026-10-11
+date-updated: 2026-10-15
 aliases:
   - language space
   - Semioverse language space
@@ -12,6 +12,12 @@ see-also:
   - formal-concept-analysis
   - yoneda-embedding
   - claim-lineage
+  - frontmatter-presentation
+  - token-occurrence
+  - documentary-source
+  - world-indexed-term-sense
+  - intension
+  - secondary-intension
 ---
 
 **L-Space** is the Semioverse's shared language space of content-addressed tokens and the attributable claims made with, about and between them. Its vocabulary arises downstream of **marks and uttered articulations**. Typed predications, proof paths, contexts, supporting or opposing evidence and admitted relationships give tokens interpretive use. A content hash identifies an encoding, not an established meaning, a proved proposition or the authority to act.
@@ -22,6 +28,6 @@ The linguistics [categorical Language Cone (A8)](https://github.com/lenticule-sc
 
 An [attributed claim lineage](claim-lineage.md) preserves a source proposition and its speech-act standing through later tellings. A recorded claim to have **delivered** something is not the consumer's independently received effect; FOUR evidence about the claim and permission to act remain separate.
 
-**Frontmatter as locally situated utterance.** In the original author-held March 28, 2026 inquiry, a file's `key: value` is examined as a source-local witness to a directional relation. The follow-on language-science construction distinguishes the **authored presentation** from a vocabulary-controlled, typed interpretation of its source, predicate and referent. Its *Absurd → Possible → Necessary → Determined* stages concern conditional grounding and are **not identical to** the four evidence valuations of FOUR. A well-formed `incumbent: X` entry is evidence of an asserted incumbent relation, not a license for X to act; an absent key is not evidence against that relation. See the [source-owned March 28 extraction](../../documents/articles/notes/2026/10/10/2026-10-10-note-about-l-space.md#march-28-the-utterance-as-a-locally-witnessed-relation-source-recovered-2026-10-14), [LS-SAS-036](https://github.com/lenticule-science/linguistics-services-section/blob/main/specifications/l-space-semantic-architecture.md), and existing Red Cup proof-coordinate and RDF reading providers.
+**Frontmatter as locally situated utterance.** In the original author-held March 28, 2026 inquiry, a file's `key: value` is examined as a local witness to a directional relation. Use the separate [frontmatter presentation](frontmatter-presentation.md), [documentary source](documentary-source.md), [token occurrence](token-occurrence.md) and [world-indexed term sense](world-indexed-term-sense.md) to distinguish **what a file encoded** from vocabulary-controlled, typed interpretation, source attribution and external authority. Its *Absurd → Possible → Necessary → Determined* roles have [distinct relationality glossary entries](https://github.com/lenticule-science/science-services-section/tree/main/services/philosophy-services-section/services/relationality-services-section/content/text/glossary/terms) and a [source-owned SKOS inquiry scheme](https://github.com/lenticule-science/science-services-section/blob/main/services/philosophy-services-section/services/relationality-services-section/data/records/ontology.ttl), **not** four evidence values in FOUR or the modal `□/◇` operators. A well-formed `incumbent: X` is an attributed declaration, not a lawful appointment; an omitted key does not deny the real-world relation. An equivalent label across worlds is not a proved secondary intension or a valid alias. See the [source-owned March 28 extraction](../../documents/articles/notes/2026/10/10/2026-10-10-note-about-l-space.md#march-28-the-utterance-as-a-locally-witnessed-relation-source-recovered-2026-10-14), [LS-SAS-036](https://github.com/lenticule-science/linguistics-services-section/blob/main/specifications/l-space-semantic-architecture.md), and existing Red Cup proof-coordinate and RDF reading providers.
 
 Markdown notes, archive search, frontmatter graph projections, CAIRN storage and the L-Space-named knowledge-garden application are **sources or interfaces**, not L-Space itself. See the single [L-Space concept note](../../documents/articles/notes/2026/10/10/2026-10-10-note-about-l-space.md) for the proposed structures, formal carriers and proof obligations.

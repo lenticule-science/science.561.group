@@ -1683,3 +1683,63 @@ constructors at increasing dimensional levels.""" ;
     rel:correspondsTo rel:Coherence ;
     rel:mathematicalCorrespondence "Higher Inductive Type in Cubical Agda / HoTT; nontrivial 2-cell topology" ;
     rel:attestedIn "draft 7 (system/units/minimal coherence.md, Relational Dynamic Cubical Agba Formalism.md)" .
+
+# Context-qualified lexical senses from the authored March 28, 2026 inquiry.
+# A source-local lexical role is not an OWL class, a verified theorem, a
+# semantic-content address, or a natural-language synonym for any other
+# world-specific sort. Source: Science's critical reading of a PRIVATE
+# personal essay; this scheme does not publicly redistribute that essay.
+# The later derivation operators rel:Relating, rel:Necessitating and
+# rel:Possibilizing are not owl:sameAs these authored inquiry senses.
+rel:March28InquirySenseScheme a skos:ConceptScheme ;
+    skos:prefLabel "March 28 relational inquiry: contextual term senses"@en ;
+    dcterms:source <https://github.com/lenticule-science/science-services-section/blob/main/services/information-science-services-section/services/language-science-services-section/content/text/documents/articles/notes/2026/10/10/2026-10-10-note-about-l-space.md> ;
+    skos:scopeNote "Historical, attributed, context-relative terminology; distinguish lexical intensions from FOUR evidence and modal truth. This scheme asserts no proof or institutional permission."@en .
+
+rel:March28AbsurdSense a skos:Concept ;
+    skos:inScheme rel:March28InquirySenseScheme ;
+    skos:prefLabel "Absurd"@en ;
+    skos:definition "A given/premise in one declared relational inquiry before further relations have been supplied to constrain it locally."@en ;
+    skos:scopeNote "The March 28 inquiry role only; neither objective truth nor FOUR's no-evidence bottom; not equivalent to rel:Relationlessness or an unverified assertion."@en ;
+    dcterms:source <https://github.com/lenticule-science/science-services-section/blob/main/services/information-science-services-section/services/language-science-services-section/content/text/documents/articles/notes/2026/10/10/2026-10-10-note-about-l-space.md> ;
+    rdfs:seeAlso <https://github.com/lenticule-science/science-services-section/blob/main/services/philosophy-services-section/services/relationality-services-section/content/text/glossary/terms/absurd.md> .
+
+rel:March28PossibleSense a skos:Concept ;
+    skos:inScheme rel:March28InquirySenseScheme ;
+    skos:prefLabel "Possible"@en ;
+    skos:definition "A context-admissible continuation opened by relating an accepted datum in the source inquiry."@en ;
+    skos:scopeNote "Not modal diamond; not feasibility, permission or empirical occurrence. This is distinct from the later named rel:Possibilizing operator."@en ;
+    dcterms:source <https://github.com/lenticule-science/science-services-section/blob/main/services/information-science-services-section/services/language-science-services-section/content/text/documents/articles/notes/2026/10/10/2026-10-10-note-about-l-space.md> ;
+    rdfs:seeAlso <https://github.com/lenticule-science/science-services-section/blob/main/services/philosophy-services-section/services/relationality-services-section/content/text/glossary/terms/possible.md> .
+
+rel:March28NecessarySense a skos:Concept ;
+    skos:inScheme rel:March28InquirySenseScheme ;
+    skos:prefLabel "Necessary"@en ;
+    skos:definition "A condition forced by named premises and rules for a proposed continuation within the particular inquiry."@en ;
+    skos:scopeNote "Not modal box, legal obligation, actual authorization, or guaranteed global theorem; distinct from the later rel:Necessitating operator."@en ;
+    dcterms:source <https://github.com/lenticule-science/science-services-section/blob/main/services/information-science-services-section/services/language-science-services-section/content/text/documents/articles/notes/2026/10/10/2026-10-10-note-about-l-space.md> ;
+    rdfs:seeAlso <https://github.com/lenticule-science/science-services-section/blob/main/services/philosophy-services-section/services/relationality-services-section/content/text/glossary/terms/necessary.md> .
+
+rel:March28DeterminedSense a skos:Concept ;
+    skos:inScheme rel:March28InquirySenseScheme ;
+    skos:prefLabel "Determined"@en ;
+    skos:definition "A local result attributed to the inquiry's actual givens, constraints and witnessed relational configuration."@en ;
+    skos:scopeNote "Not truth of an external claim, not an institutionally accepted result, and never FOUR's contested both-evidence top."@en ;
+    dcterms:source <https://github.com/lenticule-science/science-services-section/blob/main/services/information-science-services-section/services/language-science-services-section/content/text/documents/articles/notes/2026/10/10/2026-10-10-note-about-l-space.md> ;
+    rdfs:seeAlso <https://github.com/lenticule-science/science-services-section/blob/main/services/philosophy-services-section/services/relationality-services-section/content/text/glossary/terms/determination.md> .
+
+rel:March28RelatingSense a skos:Concept ;
+    skos:inScheme rel:March28InquirySenseScheme ;
+    skos:prefLabel "Relating"@en ;
+    skos:definition "The directional generative process proposed by the original relationality inquiry, before separately typed interpretation as predication."@en ;
+    skos:scopeNote "Not identical to arbitrary directed edges, causal influence, an executed process or the later rel:Relating derivational operator without a qualifying bridge."@en ;
+    dcterms:source <https://github.com/lenticule-science/science-services-section/blob/main/services/information-science-services-section/services/language-science-services-section/content/text/documents/articles/notes/2026/10/10/2026-10-10-note-about-l-space.md> ;
+    rdfs:seeAlso <https://github.com/lenticule-science/science-services-section/blob/main/services/philosophy-services-section/services/relationality-services-section/content/text/glossary/terms/relating.md> .
+
+rel:March28RelationlessnessSense a skos:Concept ;
+    skos:inScheme rel:March28InquirySenseScheme ;
+    skos:prefLabel "Relationlessness"@en ;
+    skos:definition "The source paradox of declaring absence of relation in an articulation that itself presents a directed relation."@en ;
+    skos:scopeNote "Not FOUR neither/both, not physical vacuum, and not an unrestricted theorem that all predication cells descend from this origin."@en ;
+    dcterms:source <https://github.com/lenticule-science/science-services-section/blob/main/services/information-science-services-section/services/language-science-services-section/content/text/documents/articles/notes/2026/10/10/2026-10-10-note-about-l-space.md> ;
+    rdfs:seeAlso <https://github.com/lenticule-science/science-services-section/blob/main/services/philosophy-services-section/services/relationality-services-section/content/text/glossary/terms/relationlessness.md> .
