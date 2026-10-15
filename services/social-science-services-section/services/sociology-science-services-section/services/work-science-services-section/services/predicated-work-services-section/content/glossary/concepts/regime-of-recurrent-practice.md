@@ -1,48 +1,58 @@
 ---
 type: theorem
-status: sketch
+status: draft
 depends-on: [recurrent-practice, four-regime-dichotomy, scott-continuous-closure, aperiodic-settling]
 title: Regime of a recurrent practice
-description: "A recurrent practice $R = (\\mathcal{S}R, TR, \\alphaR)$ embedded in an operations settling lives in a specific regime determined by its aggregation structure $\\alphaR$:"
+description: "Recurrent work requires separate cycle, history, aggregation and saturation semantics; indefinite practice does not determine a closure ordinal."
+date-modified: 2026-10-15
 ---
 
 # Regime of a recurrent practice
 
-A [recurrent practice](../../text/glossary/terms/recurrent-practice.md) $R = (\mathcal{S}_R, T_R, \alpha_R)$ embedded in an [operations settling](../../../../../../../../../../../../public-services-section/services/personal-services-section/services/emsenn-services-section/content/text/glossary/terms/operations-settling.md) lives in a specific regime determined by its aggregation structure $\alpha_R$:
+A recurrent practice contains repeated work occurrences and a rule connecting
+them. Its period, history dependence and saturation construction are different
+data. A practice can continue indefinitely while every admitted cycle is a
+finite task.
 
-| $\alpha_R$ | Regime of $R$ as a sub-settling |
-|---|---|
-| Cycle-independent | Strict-or-Scott-continuous (Scott-continuous if $T_R$ is countably infinite) |
-| Markov | Scott-continuous |
-| Finite-history (depth $k$) | Scott-continuous |
-| Limit-aggregating, countable cofinality | Transfinite-bounded |
-| Limit-aggregating, uncountable cofinality | Aperiodic |
+## State the recurrence
 
-## Sketch
+For the draft structure R=(S_R,T_R,α_R), name the cycle index T_R, local rule
+system S_R, and aggregation α_R. Say whether a cycle reads only its current
+input, a bounded prior window, or a specified limit of prior valuations.
+Retain each occurrence's input, output, receiving and causal dependencies.
 
-By the [four-regime dichotomy](../../../../../../../../../../information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/obsmetrologia/docs/verso/mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/references/four-regime-dichotomy.md), regime is determined by the closure ordinal $\kappa$ of the closure operator. For a recurrent practice's closure-rule subsystem, $\kappa$ tracks the cycle-aggregation structure:
+Finite-history dependence can support Scott continuity when each rule's
+output is determined by finite evidence in the stated domain. It does not
+force exact ω behavior: an already-fixed input or identity operator settles
+immediately. Indefinite recurrence is a property of the schedule, not by
+itself a closure ordinal of one fixed-input computation.
 
-**Cycle-independent and Markov-and-finite-history.** Each cycle's closure rule depends on at most a finite history. A finite-history closure rule is [Scott-continuous](../../../../../../../../../../information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/obsmetrologia/docs/verso/mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/pre-bilattice/content/bilattice/content/predication-fiber-algebra/content/closure-operator/content/scott-continuous-closure/scott-continuous-closure.md): its antecedent is determined by finitely many prior stages, which is preserved under directed joins. By the regime dichotomy, $\kappa = \omega$ when $T_R$ is countably infinite (the practice runs forever), or $\kappa < \omega$ if $T_R$ is finite.
+## Limit aggregation requires a construction
 
-**Limit-aggregating.** At limit ordinals in $T_R$, the closure rule's antecedent reads $\bigvee_k \{v_{\tau_i} : \tau_i < \mu\}$ — the join of all prior cycles' settled content. This is non-Scott-continuous: the join cannot be computed from any finite sub-family of the prior cycles. By the regime dichotomy, the closure ordinal is at least $\omega + 1$. The cofinality of the limit-aggregation determines the regime:
+To claim non-Scott continuity, exhibit a directed family whose supremum enables
+an output that no member of that directed family enables. Then derive the resulting closure bound.
+Merely mentioning all prior cycles, annual recurrence or multiple generations
+does not supply this example. A review of seven generations has a finite
+horizon; it is not evidence of uncountable cofinality. Cultural practices
+require their own primary evidence and cannot be used as ordinal examples by
+word association.
 
-- Countable cofinality (the limit aggregations are over countable sub-families): $\omega < \kappa < \omega_1$ — transfinite-bounded.
-- Uncountable cofinality (some limit aggregations require $\omega_1$-many cycles to stabilize): $\kappa \geq \omega_1$ — aperiodic. $\square$
+A substitution sequence can be combinatorially aperiodic while generated by
+finite local rules. Such aperiodicity is distinct from the historical
+closure-ordinal label “aperiodic.” State which meaning and invariant is used.
 
-## Examples per regime
+## Receiving questions
 
-- **Cycle-independent.** A daily standup whose content is determined entirely by that day's witnesses, with no carry-over between days. Strict per cycle; Scott-continuous overall.
-- **Markov.** A weekly review whose agenda is determined by the prior week's review outputs and the current week's increments. Scott-continuous: each cycle's closure rule needs only one prior cycle.
-- **Finite-history (depth $k$).** A quarterly planning that draws on the prior $k$ quarters' goals. Scott-continuous: depth-$k$ history is finite at any stage.
-- **Limit-aggregating, countable cofinality.** An annual ceremony whose enacted form depends on all prior annual instances cumulatively (e.g., reciting names of all prior office-holders). Transfinite-bounded.
-- **Limit-aggregating, uncountable cofinality.** The practice that aggregates across uncountably-many prior cycle stages — the natural home for the [function as aperiodic settling](function-as-aperiodic-settling.md). Aperiodic.
+1. Which cycle is currently owed, and what constitutes its accepted output?
+2. Which prior outputs are prerequisites for this occurrence?
+3. Is the aggregation finite and effective, or a proposed idealized limit?
+4. What hypothesis would make the claimed continuity or bound false?
+5. Does completion concern one cycle, a bounded campaign, or a standing
+   function whose continuation is itself intended?
 
-## Connection to function-as-aperiodic-settling
-
-The [function-as-aperiodic-settling theorem](function-as-aperiodic-settling.md) places the function of an endeavor in the aperiodic regime. By the present theorem, this requires the function's closure-rule structure to include limit-aggregating rules with uncountable cofinality. The Haudenosaunee 7-generations principle — decisions evaluated against their consequences seven generations forward — is the operational shape of such a rule: each settlement consults aggregations over future-generational cohorts, and cumulatively over all prior generations as they pass into history. The aggregation structure is what places the function in aperiodic-regime; without it, even an indefinite endeavor would be Scott-continuous (running forever but with finite-history closure at each step).
-
-## Connection to substitution-rule structure
-
-The math program's [step-$n$ substitution rule](../../../../../../../../../../library/theories/humanities/theories/math/theories/categories/theories/predication-categories/objects/step-n-substitution-rule.md) is a finite-history closure rule (depth-$n$) whose iterated firing produces an aperiodic sequence — but the aperiodicity comes from the *combinatorial structure* of the substitution matrix, not from limit-aggregation in the closure rule itself. Step-$n$ rules are Scott-continuous as closure operators (depth-$n$ history is finite); the aperiodic sequences they produce live in the aperiodic regime via the cofinality of $E$, not the closure structure. So substitution-rule recurrent practices are Scott-continuous in the regime classification above, but their *associated combinatorial dynamical system* exhibits aperiodicity in a different (Sadun, Anderson-Putnam) sense.
-
-This means: substitution-rule patterns and limit-aggregating recurrent practices are *two different routes* to non-trivial cohomology. Substitution rules produce aperiodic combinatorial dynamics on a Scott-continuous closure; limit-aggregating practices produce non-Scott-continuous closure with potentially aperiodic regime placement. The math program's [aperiodic-regime classification theorem](../../../../../../../../../../information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/obsmetrologia/docs/verso/mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/content/aperiodic-settling/references/aperiodic-regime-classification.md) handles the second route directly; the substitution-rule examples (Fibonacci, Padovan, etc.) handle the first. The predicated-work program's recurrent practices may exhibit either or both.
+An enterprise's evolving aims do not by themselves establish a cohomology
+class, a closure ordinal, or a direction of improvement. Those bridges remain
+formalization work. The former exact regime table and generation-based
+ordinal examples are retained only in the [prior source revision](https://github.com/lenticule-science/science-services-section/blob/aa46e2f11aff49635bfbd7a381ee4c8b261db63c/services/social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/predicated-work-services-section/content/glossary/concepts/regime-of-recurrent-practice.md), not as current proofs.
+See [Work regime](../../../../../content/text/glossary/concepts/work-regime.md)
+and [task bounds](regime-of-task.md) for the admissible conditional arguments.

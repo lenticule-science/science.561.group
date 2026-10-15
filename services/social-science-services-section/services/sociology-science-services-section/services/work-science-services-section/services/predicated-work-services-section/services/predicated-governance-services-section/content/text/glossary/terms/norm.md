@@ -7,54 +7,132 @@ depends-on: [normative-system, jural-relation, closure-rule]
 realizes: [norm]
 aliases:
   - Norm
+date-modified: 2026-10-15
 ---
 
 # Norm
 
-The mathematical realization of a [norm](../../../../../../../governance-services-section/content/glossary/terms/norm.md): the unit of which a [normative system](../../../../../../../governance-services-section/content/text/glossary/terms/normative-system.md) is composed. A norm is a triple $\mathcal{N} = (\varphi, O, N)$ — a propositional content $\varphi$, a deontic operator $O \in \{\mathrm{Obl}, \mathrm{Per}, \mathrm{Proh}\}$, and a normative system $N$ within which the norm is operative.
+A norm is a triple (φ, O, N): prescribed content φ, a deontic operator O
+(obligation, permission or prohibition), and the normative system N in which
+it is operative. This is a draft predicated representation of normative
+relations, not a claim that recording a rule performs the required act.
 
-## Data
+## Representation
 
-A norm $\mathcal{N} \in E_{\mathrm{op}}$ is a substrate entity carrying:
+The existing vocabulary records `propositional-content`, `deontic-operator`
+and `operative-in`, with `antecedent` for a conditional norm. The norm's
+authority and current scope must be established by the governing system.
+These predicates describe a norm; they do not directly set the truth/evidence
+value of its prescribed performance.
 
-- $\langle \mathcal{N}, \texttt{propositional-content}, \varphi\rangle = \mathbf{t}$ — references the cell-pattern $\varphi \subseteq \Phi_W$ that the norm prescribes.
-- $\langle \mathcal{N}, \texttt{deontic-operator}, k\rangle = \mathbf{t}$ where $k \in \{\texttt{Obl}, \texttt{Per}, \texttt{Proh}\}$.
-- $\langle \mathcal{N}, \texttt{operative-in}, N\rangle = \mathbf{t}$ — references the [normative system](../../../../../../../governance-services-section/content/text/glossary/terms/normative-system.md) within which $\mathcal{N}$ has force.
+| Norm | Consequence of valid activation | Evidence still owed |
+| --- | --- | --- |
+| Obligation of φ | A bearer owes specified performance to its beneficiary under the norm | Evidence that the bearer actually performed φ and the receiving condition is met |
+| Permission of φ | φ is permitted within N and its scope under N’s permission semantics | Capability, preconditions and effect admission for this occurrence |
+| Prohibition of φ | The applicable authority disallows φ within a named scope | Evidence of a prohibited occurrence before asserting a violation |
 
-Conditional norms ("if $\psi$ then $\mathrm{Obl}(\varphi)$") carry an additional cell $\langle \mathcal{N}, \texttt{antecedent}, \psi\rangle = \mathbf{t}$ — the condition under which the deontic operator applies.
+Conditional obligation ψ ⇒ Obl(φ) can establish an obligation when ψ holds;
+it cannot infer φ. A charter requiring a report does not create the report.
+The original norm source deliberately defines weak permission as no norm in
+N prohibiting φ, and gives the nuclear reading Per(φ) iff ¬φ is not fixed
+by σ. That absence-based definition is retained. It concerns the applicable
+N, not the subset of documents a reader happened to retrieve. For example,
+a corpus containing no prohibition record can be the same partial view of
+N₁ with no prohibition and N₂ with an unreturned prohibition. The view alone
+cannot decide which permission result is warranted. An implementation must
+therefore identify N and its current scope, and establish its chosen
+completeness/default semantics before applying the absence test.
 
-## Realization as a closure rule
+## Independence of norm, performance and assessment
 
-A norm $\mathcal{N} = (\varphi, O, N)$ corresponds to a [closure rule](../../../../../../../../../../../../../library/theories/humanities/theories/math/theories/categories/theories/predication-categories/concepts/closure-rule.md) in $\mathcal{S}_N \subseteq \mathcal{S}_{\mathrm{op}}$:
+Norm validity, actual performance and assessment of compliance are distinct
+predications. A breach assessment requires a bearer, required act, relevant
+deadline or other triggering condition, applicable norm and sufficient
+evidence. Unknown performance alone is not proof of breach; it can justify
+an inquiry or an evidence request under the stated policy. A separate duty
+to furnish a witness by a deadline, or an N-defined evidentiary default, can
+support an assessment that required evidence was not provided. Preserve that
+auditing rule and its scope without inferring that φ itself never occurred.
 
-| Deontic operator | Closure-rule shape |
-|---|---|
-| $\mathrm{Obl}(\varphi)$ | $\psi \Longrightarrow $ each cell in $\varphi$ at $\geq_k \mathbf{t}$. Failure to produce $\varphi$-witnesses leaves the cells at $\bot$, which the auditing closure rule detects as a duty-breach. |
-| $\mathrm{Per}(\varphi)$ | No closure rule fires *against* $\varphi$. Permission is the absence of a prohibition; the substrate-algebraic witness is the *non-existence* of a $\mathrm{Proh}(\varphi)$ rule in $\mathcal{S}_N$. |
-| $\mathrm{Proh}(\varphi)$ | $\psi \,\wedge\,$ (each cell in $\varphi$ at $\mathbf{t}$) $\Longrightarrow$ violation cell $\langle V, \texttt{prohibited-cell-asserted}, \varphi\rangle$ at $\mathbf{t}$. The prohibition is a closure rule that fires *on the assertion* of the prohibited content. |
+The traditional consistency condition Obl(φ) ⇒ Per(φ) is a property of a
+chosen normative logic, not evidence that φ occurred. Conflicting obligations
+and prohibitions form a normative conflict to adjudicate. They must not be
+collapsed into invented positive and negative reports about the act itself.
 
-This is exactly the input/output logic of Boella & van der Torre cited in the [normative-system](../../../../../../../governance-services-section/content/text/glossary/terms/normative-system.md) text: a norm is a $(\psi, \varphi)$ pair encoded as a closure rule.
-
-## The four invariants as substrate properties
-
-Per the library's norm text, four invariants characterize a norm:
-
-1. **Independence from compliance.** A norm's substrate cells (the closure rule's existence in $\mathcal{S}_N$, the deontic-operator cell, the operative-in cell) persist regardless of whether the norm's prescribed content is being asserted in the substrate. Violation does not retract the rule; it produces violation-witness cells while the rule persists. By [settling-monotonicity](../../../../../../../../../../../../../library/theories/humanities/theories/math/theories/categories/theories/predication-categories/concepts/settling-monotonicity.md), once a norm's existence is settled at $\mathbf{t}$, it remains at $\mathbf{t}$ until explicitly retired (e.g., by repeal — see novation).
-
-2. **Authority-derived force.** The norm's force derives from $N$'s authority grounding $\beta_N$. A norm with no operative-in cell, or one operative in a normative system whose $\beta_N$ is at $\bot$, lacks substrate-algebraic force: no closure rule fires from it.
-
-3. **Deontic consistency** ($\mathrm{Obl}(\varphi) \Rightarrow \mathrm{Per}(\varphi)$). At the closure-rule level: a norm system $\mathcal{S}_N$ that contains both $\mathrm{Obl}(\varphi)$ and $\mathrm{Proh}(\varphi)$ rules drives any cell in $\varphi$ to $\top$ (both positive and negative evidence), an internal-conflict state. A consistent normative system avoids this; the [precedence-in-least-fixed-point question](../../documents/notes/questions-on-precedence-in-least-fixed-point.md) addresses how systems with apparent conflicts resolve.
-
-4. **Hohfeldian-relations generation.** An operative obligation $\mathrm{Obl}(\varphi)$ produces a [jural-relation](../../../../../../../../../../../../../../../public-services-section/services/personal-services-section/services/emsenn-services-section/content/text/glossary/terms/jural-relation.md) of `kind: duty` for each agent subject to $N$, with correlative claim-rights via [correlate-of](correlate-of.md). The substrate-algebraic content: the closure rule fires *both* the $\varphi$-cell update *and* the duty/claim jural-relation cells. Norms don't merely describe the system; they actively constitute the deontic profile of agents within it.
-
-## Conditional structure
-
-A conditional norm "if $\psi$ then $\mathrm{Obl}(\varphi)$" is the closure rule $\psi \Longrightarrow $ each cell in $\varphi$ at $\geq_k \mathbf{t}$, with $\psi$ as the antecedent. The closure-rule firing is gated by $\psi$'s settlement; if $\psi$ remains at $\bot$, the rule never fires and the obligation never activates.
+Normative priority also requires a construction. The least fixed point of the
+union of two contradictory inference rules does not automatically prefer the
+higher-ranked rule; the [precedence question](../../documents/notes/questions-on-precedence-in-least-fixed-point.md)
+records this exact unresolved point. Name the priority policy, applicability
+conditions and conflict behavior in any executable realization.
 
 ## Operativity through joint settlement
 
-Per [normative-system](../../../../../../../governance-services-section/content/text/glossary/terms/normative-system.md), a norm is *operative at stage $\tau$* iff both required predicates have reached affirming settlement: the recognition predicate $\langle \varphi, \texttt{recognized-as-norm-in}, N\rangle = \mathbf{t}$ and the execution predicate $\langle \varphi, \texttt{forward-binding-in}, N\rangle = \mathbf{t}$. The four-corner joint-settlement reading at the norm level matches the corresponding office-incumbency reading at the office level: same two-axis structure, different content.
+The prior predicated source and the current normative-system source also give
+a joint-predicate reading: a norm is operative at stage τ when
+recognized-as-norm-in(φ,N)=t and forward-binding-in(φ,N)=t. Recognition and
+continued binding are different evidence dimensions. Neither is the actual
+performance of φ. This construction is retained as an authored draft model;
+its comparison to office-incumbency is a proposed structural correspondence,
+not a proved equivalence merely because both have two axes.
 
-## Validity vs. truth
+The source distinguishes a norm’s validity/in-force assessment from a truth
+assessment of an ordinary factual proposition. A norm’s moral appraisal is
+likewise distinct from whether it is operative in the chosen N. The σ-fixed,
+transfer-shadow and joint-predicate readings need their carriers and maps
+reconciled. The performance-projection correction does not settle that
+research question or discard any of those authored constructions.
 
-Per Kelsen, a norm is *valid* (in force) or *invalid* (not in force); it is not true or false. In substrate terms: validity is the joint-settlement state of the two required predicates. Truth-or-falsity applies to facts (cells at $\mathbf{t}$/$\mathbf{f}$ in the substrate); validity applies to whether a norm's closure rule fires. An unjust law is a valid norm — its closure rule is in $\mathcal{S}_N$ — even though its content cells, when settled, may be at values that the surrounding moral framework would call $\mathbf{f}$.
+## Rights and transformations
+
+The Hohfeldian model distinguishes claim/duty, privilege/no-claim,
+power/liability and immunity/disability. Its governance operations transform
+those relations with explicit parties, scope and authority conditions:
+
+- [Assignment](assignment.md) changes a claim-holder subject to the governing
+  conditions; it is not ordinary task dispatch.
+- [Delegation](delegation.md) grants bounded authority derived from a source
+  grant; scope, accountability and subdelegation conditions remain explicit.
+- [Revocation](revocation.md) records a valid withdrawal of a grant under its
+  own authority and notice rules; it does not erase the historical grant.
+- [Succession](succession.md) changes the bearer of an office while preserving
+  the institution and its accountable obligations under the succession rule.
+
+These are draft mathematical models of particular normative traditions. A
+Mission's commission/order supplies its own recall and abandonment rights.
+Neither a generic capability match nor a work-queue transition grants them.
+
+## Exact source premises and counterexamples
+
+The [original norm](https://github.com/emsenn/561-theory/blob/04a09cb4f14dfa58994db7a6864fe7771ddca882/humanities/theories/sociology/theories/work/theories/governance/terms/norm.md#L20)
+defines absence-based permission at line 20 and gives its σ-fixed-point
+reading at lines 102–104. Its independence-from-compliance invariant at line
+26 and norm-persistence Proposition 2 allow an operative norm with a
+noncompliant act. Taking φ as “the report is submitted” supplies the direct
+counterexample: obligation can remain operative while no report was submitted.
+An inference that settles performance merely from Obl(φ) loses that model.
+
+The current [normative-system source](https://github.com/lenticule-science/governance-services-section/blob/main/content/text/glossary/terms/normative-system.md)
+(blob dcbfeed0068e223dbd0dfc01bbe04bfa311404ec) explicitly says its agents may
+follow or violate norms and retains permission-by-default. Its geometric
+reading places obligation at a transfer-fixed shadow, whereas the original
+norm's nuclear reading puts operativity in Fix(σ). Those readings, together with the joint-predicate construction above, require
+reconciliation of histories, nuclei and meanings; this revision does not
+silently equate them or substitute a new deontic axiom. The correction is to
+the operational projection from norms to performed facts and from partial
+retrieval to claimed absence in N.
+
+## Receiving and revision
+
+Tests must reject the following inferences: duty ⇒ completed act; no known
+prohibition ⇒ permission in an open corpus; office membership ⇒ arbitrary
+authority; a producer's output ⇒ independent receiving; revocation ⇒ deletion
+of prior evidence. Retain valid authority paths and effective scope alongside
+historical assertions and conflicts.
+
+The pre-October-15 version rendered obligation as a direct update of
+performance cells and left the evidence boundary for its absence-based
+permission test unspecified.
+It remains in the [prior source revision](https://github.com/lenticule-science/science-services-section/blob/aa46e2f11aff49635bfbd7a381ee4c8b261db63c/services/social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/predicated-work-services-section/services/predicated-governance-services-section/content/text/glossary/terms/norm.md). This revision preserves the norm structure and
+replaces those conflated projections with separate normative and operational
+obligations. The precise inference system and its formal verification remain
+with the owning governance/mathematics program.

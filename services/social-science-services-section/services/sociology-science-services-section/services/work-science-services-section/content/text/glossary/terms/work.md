@@ -1,7 +1,7 @@
 ---
 id: work
 description: "An episode of doing with a defined output — the base concept of which all work types are specializations."
-aliases: [ work-unit, Work ]
+aliases: [ Work ]
 characterized-by: output
 types: process, procedure, derivation, inquiry
 organized-by: task
@@ -25,7 +25,7 @@ ast:
     - result:
         - capacity
         - situation
-date-modified: 2026-09-27
+date-modified: 2026-10-15
 see-also: process-application-procedure-inquiry-derivation-activity-operation
 ---
 
@@ -42,9 +42,9 @@ This is the base concept. All organized activity is work when it has a defined o
 
  Work that has a documented, repeatable [method](../../../../../../../../content/text/glossary/terms/method.md) is skillful work. Work that does not yet have a method is ad-hoc — it may become skillful when someone writes down how to do it.
 
-A work unit is a concrete instance of work: it names what it acts on (domain), which aspect changes (affected), how the change is produced (operation), and the specific values that make this instance distinct from other instances of the same operation (parameters). A work unit without parameters is a template, not an instance.
+A work unit is a concrete instance of work: it names what it acts on (domain), which aspect changes (affected), how the change is produced (operation), and the specific values that make this instance distinct from other instances of the same operation (parameters). A work-unit description with unbound required arguments is a template; a nullary operation can be ground with no parameter values. Repeated executions of the same ground description retain distinct occurrence identities.
 
-Work composes. A [workflow](./workflow.md) is a set of work units with the constraint that the initial input type equals the final output type — the workflow takes something of type X and produces something of type X. A [task](./task.md) is a named planning container for work units with a completion condition. Workflows are algebraic (they compose); tasks are organizational (they group work for planning and tracking).
+Work can be studied through matched boundaries: work A→B can feed work B→C when their preconditions, effects and receiving contracts also compose. The house [workflow](./workflow.md) convention restricts a composite to the same external type X→X. The predicated composition proposal studies general A→B boundaries separately; that generalization does not silently replace the house term. A [task](./task.md) supplies a goal and completion condition. A work unit is a specified invocation, a workflow composes invocations, and a task organizes them by purpose; these are related structures rather than interchangeable identities.
 
 Work is the thing that [practice](../../../../../../../../content/text/glossary/terms/practice.md) does and [method](../../../../../../../../content/text/glossary/terms/method.md) governs. Practice without work is idle; method without work is shelfware; work without method is improvisation; work without practice is a plan that never executes.
 
@@ -58,7 +58,7 @@ $$(a : \mathrm{Agent},\; \kappa : a \vdash \mathrm{Capacity},\; r : \mathrm{Situ
 
 together with a **result** $w = \kappa(a, r) \in \mathrm{Results}$, where:
 - $a$ is the **agent** — the entity that works; the agent possesses the capacity $\kappa$ and exercises it; without an agent, there is transformation but not work; the agent is what makes work an act, not merely a change
-- $\kappa$ is the **capacity** (or **capability**, or **power**) — what the agent is able to do; $\kappa$ is the agent's potential, the general power that the work actualizes; a capacity that is never exercised is a dormant power; work is the exercise of $\kappa$ in situation $r$
+- $\kappa$ is the **capacity** or **capability** — what the agent is able to do; agential power here is distinct from normative authority; $\kappa$ is the agent's potential, the general power that the work actualizes; a capacity that is never exercised is a dormant power; work is the exercise of $\kappa$ in situation $r$
 - $r$ is the **situation** — the circumstances in which the capacity is exercised; the situation provides the material, the context, and the occasion for work; work is always situated — there is no work in a vacuum, only capacities waiting for situations to actualize them
 - $w = \kappa(a, r)$ is the **result** — what the work produces; the result is the work's contribution to the world; it may be a transformed artifact, a judgment, a service rendered, a message sent, or a state changed; the result is what distinguishes a completed work from an abandoned or blocked attempt
 

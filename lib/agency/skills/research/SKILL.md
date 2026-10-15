@@ -168,6 +168,73 @@ Unknown derivations and both sides of scientific conflicts remain explicit.
   Findings reach the corpus inside `/home/emsenn/info`, never `/tmp` or a
   harness memory.
 
+### 5a. Improve a connected corpus through its next use
+
+When the allocation covers several related resources, take a bounded slice
+of the existing term, note, mathematical and procedure dependency graph.
+Record the owning repository, revision/blob, resource identity, original
+authorship and exact statement for each claim on which a consumer depends.
+A filename, matching word or absent search hit does not establish identity,
+co-reference or the completeness of the applicable corpus. Reuse established
+Thing/SignCell and Work identities when they resolve; record unresolved
+identities as unresolved rather than generating a competing registry.
+
+1. **Compare meanings before merging.** Mark statements as identical,
+   compatible under a stated scope, competing, historical or unverified.
+   Distinct senses and time scopes can coexist. A current owner and an older
+   source may differ; preserve the source and the actual reason for revision.
+2. **State the type of each bridge.** For being, doing, working and governing,
+   name what a transformation takes, produces and preserves. For category
+   claims, require objects, morphisms, boundaries, identity, composition,
+   equality and laws. For closure claims, require the carrier, order, operator,
+   initial input and increment assumptions. A record schema is not a recovered
+   category, and a directory hierarchy is not a proof of a functor.
+3. **Correct active contradictions together.** Change the defining paragraph
+   and dependent examples/requirements in their existing owners. Do not leave
+   a false active rule beside a newly appended caveat. For each correction,
+   supply the exact source premise and derivation or counterexample; preserve
+   deliberately authored institutional semantics rather than substituting a
+   generic ontology or policy. Permission by absence, for example, is applied
+   in its specified normative system, not inferred from a partial fetch.
+4. **Separate evidence grades.** Mark a prose definition, conditional proof,
+   conjecture, source declaration and actual kernel-check receipt distinctly.
+   Preserve witness history and scope when current effective state changes.
+   Capability evidence, authority, action occurrence, goal satisfaction and
+   receiving are separate claims and require their own evidence.
+5. **Validate the changed surface.** Check metadata parses, retained identities
+   and authorship, exact source refs, added links, affected inbound references,
+   and consistent examples. A source-only check is not execution, deployment,
+   production receiving or a new kernel result. Route a discovered conflicting
+   receiver rule as a named conflict; do not silently self-receive.
+6. **Receive on a real consumer.** State the question a later agent must answer
+   using the improved corpus, its expected decision and falsifying case.
+   For work orchestration, exercise both a general agency endeavor/mission and
+   a specialist fabrication consumer. Resolve the Group Thing and constituent
+   work by existing content-addressed identity, distinguish containment from
+   causality, and select a candidate occurrence by its open obligation,
+   prerequisites, capability, authority and receiving conditions. A prior run
+   of the same type must not suppress legitimate recurrence.
+7. **Feed back the result.** The receiver returns either accepted evidence or
+   an exact counterexample to the same owner-held work. The next revision
+   changes that source and its downstream contract, with before/after identity
+   and provenance retained. Do not create a parallel summary, queue or generic
+   capability record to bypass an inaccessible canonical resource.
+
+The reusable Research Operations consumer owns repeatable collection and
+execution parameters; Science owns the claims and their evidence. Engineering
+owns reusable implementations, and Operations/Group consumers judge installed
+effect. This loop is useful even while a runtime is unreachable: a reviewed
+source correction can proceed, while unresolved installation and receiving
+remain explicit work under the same identity.
+
+For a current cross-owner example, the [Rendanheyi office receiving work](https://github.com/causeway-services/public-services-section/issues/54)
+indexes a Science glossary, an Operations glossary with a historical rehoming
+claim, an unreceived proposed office bundle and distinct instance/engineering
+consumers. The issue’s reported duplicate-body comparisons are discovery
+claims to verify, not permission to select a new canonical owner or copy a
+third glossary. Reconcile that existing work and its exact source bodies;
+a valid source bundle does not establish installed office authority.
+
 ### 6. Hand engineering the requirements
 
 If the allocation names an engineering consumer, or the theory obliges one,

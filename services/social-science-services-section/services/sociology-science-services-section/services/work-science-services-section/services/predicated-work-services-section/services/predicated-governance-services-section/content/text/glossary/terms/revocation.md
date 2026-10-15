@@ -11,25 +11,25 @@ aliases:
 
 # Revocation
 
-The Hohfeldian operation by which a power-holder *retracts* a power they previously granted to a beneficiary. The dual of [delegation](delegation.md): where delegation transfers a power downward (with accountability retained), revocation pulls that transferred power back.
+The Hohfeldian operation by which a power-holder *retracts* a power they previously granted to a beneficiary. It counteracts the effective grant made by [delegation](delegation.md), with accountability retained at the principal. The notation ρ⁻¹ denotes retraction here; no categorical inverse law is established, since delegation followed by revocation retains both historical acts.
 
 ## Definition
 
 Given a delegation $R^B$ — $\langle R^B, \texttt{kind}, \texttt{power}\rangle = \mathbf{t}$, $\langle R^B, \texttt{potential-holder}, B\rangle = \mathbf{t}$, $\langle R^B, \texttt{derived-from}, R^P\rangle = \mathbf{t}$ — and the principal $Q$'s revocation power $R^{\mathrm{revoke}}$ on the action of revoking $R^B$, the revocation $\rho^{-1}$ produces:
 
 - $\langle R^B, \texttt{revoked-by}, Q\rangle = \mathbf{t}$ — explicit revocation-witness.
-- $\langle R^B, \texttt{potential}, \mathrm{op}\rangle$ moves from $\mathbf{t}$ toward retired-state.
+- The grant is ineffective in the scope in which the admitted revocation takes effect; its former effectiveness, classification as a power, and source relation remain recorded.
 - The correlative liability that arose with $R^B$ (the affected agent's susceptibility to $B$'s exercise of the delegated power) retires symmetrically via [correlate-of](correlate-of.md).
 
 ## Felicity condition: revocation power exists
 
 The closure rule that admits a revocation increment requires the principal $Q$ to hold the revocation power: $R^{\mathrm{revoke}}$ exists with $\langle R^{\mathrm{revoke}}, \texttt{potential-holder}, Q\rangle = \mathbf{t}$. The library's [delegation term](../../../../../../../../../../../../../library/theories/humanities/theories/sociology/theories/work/terms/delegation.md) names *revocability* as one of the four delegation invariants — the principal "may revoke the grant at will unless constrained by an external obligation." This corresponds to: the revocation power exists by default unless explicitly disabled by a stronger constraint.
 
-When revocation is *constrained* — by contract, by a power-coupled-with-an-interest, by statutory protection — the revocation power's `active` cell is at $\mathbf{f}$, and the closure rule blocks the revocation. Constrained-irrevocable delegations are substrate-detectable as `revocation-blocked` cells.
+When revocation is constrained under the applicable normative system, the effective authorization check records the blocking constraint and its scope. The original default and its exceptions remain institutional semantics to be supplied by that system. A partial fetched corpus cannot witness the absence of a stronger constraint in the applicable system. A new blocking witness does not erase historical positive evidence; use scoped current-state claims or an explicit evidence-preserving revision operation, as in [assignment](assignment.md).
 
 ## Notice to the delegate
 
-Like [assignment](assignment.md), revocation has a two-stage structure: stage 1 is the principal's revocation act; stage 2 is the delegate's notice. Until $\langle B, \texttt{notified-of}, \rho^{-1}\rangle = \mathbf{t}$, the delegate may continue to exercise the power (and third parties relying on $B$'s authority are protected). After notice, $B$'s exercise of $R^B$ produces a charter-violation witness because $R^B$'s `active` cell is at $\mathbf{f}$.
+Like [assignment](assignment.md), revocation has a two-stage structure: stage 1 is the principal's revocation act; stage 2 is the delegate's notice. Until $\langle B, \texttt{notified-of}, \rho^{-1}\rangle = \mathbf{t}$, the delegate may continue to exercise the power (and third parties relying on $B$'s authority are protected). After notice, $B$'s exercise of $R^B$ produces a charter-violation witness because the scoped current-authority projection records the grant as inactive. The original positive grant witness remains in its historical scope.
 
 ## Effect on sub-delegations
 
@@ -50,7 +50,7 @@ Revocation is to *delegation* what waiver is to *first-quartet claims*: a unilat
 
 ## Connection to lifecycle of an office
 
-When an officer is *removed* from an office (the inverse of [installation](../../../../../../../../../../../../../../../public-services-section/services/personal-services-section/services/emsenn-services-section/content/text/glossary/terms/installation.md)), the operation is closer to revocation than to waiver: the installer's power to install carries an implicit revocation power for the same action. Removing an officer drives $\langle \iota, \texttt{recognized-as-incumbent-of}, O\rangle$ from $\mathbf{t}$ toward $\mathbf{f}$ (revocation of recognition), with corresponding cascade-retirement of all delegated powers the officer held by virtue of the office.
+When an officer is *removed* from an office (the inverse of [installation](../../../../../../../../../../../../../../../public-services-section/services/personal-services-section/services/emsenn-services-section/content/text/glossary/terms/installation.md)), the operation is closer to revocation than to waiver: the installer's power to install carries an implicit revocation power for the same action. Removing an officer drives $\langle \iota, \texttt{recognized-as-incumbent-of}, O\rangle$ to an ineffective current recognition in the removal’s scope (while retaining the earlier recognition witness), with corresponding cascade-retirement of all delegated powers the officer held by virtue of the office.
 
 In governance traditions using [conduct-teachings-as-evaluation-predicates](conduct-teachings-as-evaluation-predicates.md), standing degrades without any external revocation act. When teaching-evaluation cells drop below the conjunction threshold, the [authority-gate](../../../../../../../../../../../social-theory-science-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/library/social-sciences/working/_archive/teaching/explanations/authority-gate.md) fails as a structural consequence of cell-value changes — not because a principal exercised a revocation power. This endogenous failure is formalized in [teachings-loss-as-authority-gate-revision](../../../../../../../../content/text/documents/articles/notes/undated/teachings-loss-as-authority-gate-revision.md).
 

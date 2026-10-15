@@ -23,13 +23,32 @@ Given a [jural-relation](../../../../../../../../../../../../../../../public-ser
 - $\langle R^{C'}, \texttt{scope-action}, X\rangle = \mathbf{t}$ — same scope
 - $\langle R^{C'}, \texttt{derived-from}, R^C\rangle = \mathbf{t}$ — explicit linkage to the source
 
-and simultaneously drives $\langle R^C, \texttt{potential-holder}, Q\rangle$ from $\mathbf{t}$ toward $\mathbf{f}$ — $Q$ no longer holds the claim. (Implementation note: by [settling-monotonicity](../../../../../../../../../../../../../library/theories/humanities/theories/math/theories/categories/theories/predication-categories/concepts/settling-monotonicity.md), the cell moves to $\top$ rather than to $\mathbf{f}$ outright; the substrate's repair operation that resolves $\top$ to $\mathbf{f}$ fires under the assignment-witness-justified condition.)
+The effective holder changes under the admitted assignment and its notice
+conditions; the historical source relation and assignment witness remain.
+This is not a knowledge-monotone update from t through ⊤ to f of one unscoped
+cell. In FOUR's knowledge order, t ≤ₖ ⊤, but ⊤ is not ≤ₖ f: deleting the positive
+coordinate would lose evidence. State the scope/time/version of the holder
+claim, or provide a separate revision operation with its laws and history
+retention. The old text explicitly invokes a separate witness-justified repair; it does
+not supply that repair’s definition or preservation law here. Recover that
+contract before implementing the effective-state change.
+The effective-state projection must show Q before the admitted transfer and B
+after its applicable conditions, without falsifying that Q historically held
+it. This is a mathematical representation requirement, not a new assignment
+or notice policy.
 
 ## Three substrate-algebraic invariants
 
 The library's three invariants for a valid assignment render as closure-rule conditions:
 
-**Assignability.** $C$ must be assignable: not personal to $Q$, not made non-assignable by the governing normative system. As a substrate condition: a closure rule fires the assignment increment only when $\langle R^C, \texttt{personal-to-holder}, Q\rangle \neq \mathbf{t}$ and $\langle R^C, \texttt{non-assignable-in}, N\rangle \neq \mathbf{t}$ for the governing normative system $N$. Failure produces a failure-witness, not an assignment.
+**Assignability.** $C$ must be assignable: not personal to $Q$, not made non-assignable by the governing normative system. The admitting rule must determine these blocking conditions under the
+applicable normative system N and its default/completeness and conflict policy.
+The former test “blocking cell ≠ t” is not equivalent to absence of positive
+blocking evidence: ⊤ differs from t but contains its positive coordinate.
+Unknown (⊥), negative-only (f) and contradictory (⊤) evidence must be kept
+distinct. The governing system supplies which states admit assignment; this
+term does not silently choose a new institutional conflict policy. A failed
+assignability condition produces a failure-witness, not an assignment.
 
 **Obligor's duty preserved.** The correlative duty of $P$ (the obligor) remains. Per [correlate-of](correlate-of.md), the duty is the predicate-converse of the claim. Since both $R^C$ and $R^{C'}$ have the same $P$ in the passive-party slot, the converse $R^{D}$ on $P$ — $\langle R^D, \texttt{kind}, \texttt{duty}\rangle$, $\langle R^D, \texttt{potential-holder}, P\rangle$ — has its `passive-party` cell update from $Q$ to $B$ (the obligation now runs to $B$) but the duty itself persists.
 
@@ -42,7 +61,7 @@ Assignment is structurally distinct from [delegation](delegation.md):
 - **Assignment** transfers a *claim* (right). $Q$ no longer has $C$ after $\alpha$.
 - **Delegation** transfers a *power* (authority to act on behalf). $Q$ retains accountability after delegating; $B$ acts on $Q$'s behalf.
 
-The work vocabulary's distinction lives in the cell-level structure: assignment removes the potential-holder cell on $R^C$ from $Q$, while delegation creates a new $R^B$ derived from $R^P$ without removing the source. Sub-delegation (delegatus non potest delegare) and partial assignment have parallel structural treatments via predicate-specialization on the scope-action cell.
+The work vocabulary's distinction lives in the cell-level structure: assignment ends Q’s effective holding under the applicable transfer conditions while retaining its historical cell, whereas delegation creates a derived grant and retains the principal’s accountability. Sub-delegation (delegatus non potest delegare) and partial assignment have parallel structural treatments via predicate-specialization on the scope-action cell.
 
 ## Notice as a witness
 

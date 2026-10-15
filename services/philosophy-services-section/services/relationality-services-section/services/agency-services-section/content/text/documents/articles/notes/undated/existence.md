@@ -2,59 +2,107 @@
 node: existence
 status: holding-exploration
 $thing: existence
-note: Headline for the `existence` exploration, grounded only in this node's dev/journal entries (2026-05-31 .. 2026-06-01). Not merged with algebra's archive — its own chunk. The canonical animating descent lives elsewhere (animating/content/becoming); this records the existence framing of the same four-regime descent.title: existence
-description: existence is the four-regime descent — the same descent that voidmath runs as articulate → predicate → posit → settle and cosmogenerating runs as information → place → value → flow — stated in existence's own vocabulary.
+note: "Source-owned exploration, reconciled with its May 31 and June 1 journals; regime placements remain exploratory."
+title: "Existence: the action tower and its spiral"
+description: "The source-owned being, doing, working, governing action tower, its recursive social-scale reading, and the typed bridges still required."
+date-modified: 2026-10-15
 ---
 
-# existence
+# Existence: the action tower and its spiral
 
-`existence` is the four-regime descent — the same descent that `voidmath` runs as
-`articulate → predicate → posit → settle` and `cosmogenerating` runs as
-`information → place → value → flow` — stated in existence's own vocabulary. Read upward it
-is one sentence: **being → doing → working → governing.** (Per
-[dev/journal/2026-06-01.md](../2026/06/01/2026-06-01-2026-06-01.md) and
-[dev/journal/2026-05-31.md](../2026/05/31/2026-05-31-2026-05-31.md).)
+The action tower reads **being → doing → working → governing** as four
+determinations of agency. Being yields an agent; doing yields an act; working
+yields a shared work-process; governing yields governance. A bounded individual
+can become the carrier of another descent at social scale.
 
-The four regimes, as the journals state them as identities (not as a spiral "importing" voidmath):
+## Source-owned construction
 
-| regime | face | codomain |
-|---|---|---|
-| aperiodic (κ≥ω₁) | **being** | the agent |
-| transfinite (ω<κ<ω₁) | **doing** | the act |
-| scott-continuous (κ=ω) | **working** | the work-process |
-| finite (κ<ω) | **governing** | governance |
+| Face | Output | Acts placed by the source program | Proposed regime reading |
+| --- | --- | --- | --- |
+| Being | Agent, a distinguishable someone | Opening a question | Aperiodic |
+| Doing | Attributable act | Speaking; judging | Transfinite |
+| Working | Contributions to a shared work-process | Teaching; learning; holding belief | Scott-continuous |
+| Governing | Bounded normative order and recognized individual | Adjudication; knowing under current evidence | Finite |
 
-The acts are seated where they belong: speaking under **doing** (locution = cell-select,
-illocution = the positing morphism where the charge enters, perlocution = closure);
-teaching/learning under **working**; adjudication under **governing**.
+The table records the existential program's intended correspondence. The
+[June 1 journal](https://github.com/lenticule-science/science-services-section/blob/aa46e2f11aff49635bfbd7a381ee4c8b261db63c/services/philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/notes/2026/06/01/2026-06-01-2026-06-01.md)
+explicitly marks the κ placements exploratory. Opening four cells in a program
+demonstrates those cell operations, not a proof that every act has a particular
+closure ordinal. A mathematical realization must name the carrier, increment
+schedule, operator, fixed-point notion and structure-preserving maps for each
+row. The [Work regime contract](../../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/content/text/glossary/concepts/work-regime.md)
+states the corresponding work-side obligations.
 
-## Method recorded here (the disambiguation engine)
+## Concrete phenomenon-first examples
 
-A soft word is soft because ordinary language smears it across all four regimes at once; its
-cloud of near-synonyms is the four regime-faces tangled together. Deriving a soft word =
-**sort its cloud onto the four regimes and name each face precisely** — the closure-ordinal
-tower does the cutting. Worked examples the journals give:
+The [phenomenon-first journal](https://github.com/lenticule-science/science-services-section/blob/aa46e2f11aff49635bfbd7a381ee4c8b261db63c/services/philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/notes/2026/06/01/2026-06-01-2026-06-01-phenomenon-first.md#the-method-now-explicit-and-it-makes-soft-words-tractable)
+initially sorts the doxastic family as wondering → judging → believing →
+knowing, and cites Morgan’s agency quartet **animism / agential / agentic /
+individual** as the preceding example of the same method. These are concrete
+attempts to separate a word-family’s regime faces, not replace them with the
+house word “settlement.” The agency faces remain part of this program.
 
-- doxastic family: **wondering** (aperiodic) → **judging** (transfinite) → **believing** (scott)
-  → **knowing** (finite) — i.e. doxa → episteme, each word's seat fixed by the tower.
-- agency quartet: **animism / agential / agentic / individual** — agency's four faces.
+The journal then [corrects the doxastic seed](https://github.com/lenticule-science/science-services-section/blob/aa46e2f11aff49635bfbd7a381ee4c8b261db63c/services/philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/notes/2026/06/01/2026-06-01-2026-06-01-phenomenon-first.md#the-doxastic-quartet-completed-and-the-seed-settled-with-morgan):
+wondering takes mystery as its object, whereas questioning opens a determinate
+question. Mystery is pre-articulate; this descent starts with a determinate
+carrier whose two slots are empty. Its corrected act→object table is:
 
-See [dev/journal/2026-06-01-phenomenon-first.md](../2026/06/01/2026-06-01-2026-06-01-phenomenon-first.md):
-derive the *phenomenon*, do not copy the house-word (e.g. the doxastic phenomenon under
-"settlement" is **belief**, not "settlement").
+| Face | Act → object | Source’s proposed carrier reading |
+| --- | --- | --- |
+| Being | Questioning → question | Potential cell, ⊥ held open |
+| Doing | Judging → judgement | Value-free fiber; weighing rather than a final verdict |
+| Working | Believing → belief | Charged presheaf; evidence-weighted and defeasible |
+| Governing | Knowing → knowledge | Determination under current witnessings, re-openable |
 
-## The world is a topos, not a rung
+The source also separates judging-as-weighing from judgment-as-verdict across
+two regimes. These distinctions make the model operationally useful: an open
+question, an assessment act, a held belief and an accepted determination are
+different outputs with different subsequent work. Their suggested κ placement
+retains the journals’ exploratory status; naming the phenomena or observing
+an “outside” dependence is not itself a closure-ordinal proof.
 
-Per [dev/journal/2026-06-01-world-from-first-principles.md](../2026/06/01/2026-06-01-2026-06-01-world-from-first-principles.md):
-the relational-**field** is the **topos / hyperdoctrine** — the ambient category a descent runs
-in — with **entities emerging as sheaves** on its site. A topos is *not a rung* of the descent
-(the rungs are cell → site → presheaf → sheaf); it is the setting those rungs inhabit. The field
-is prior to its entities and perspectival ("different starting absurdities produce different
-relational fields; none is the true field").
+## Parallel generators, semantic descent and recursive re-entry
 
-## Status
+The [May 31 journal](https://github.com/lenticule-science/science-services-section/blob/aa46e2f11aff49635bfbd7a381ee4c8b261db63c/services/philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/notes/2026/05/31/2026-05-31-2026-05-31.md)
+reports an earlier correction: the four action generators are parallel
+second-tier generators downstream of their respective primitive openers.
+The later [animating account](animating.md) organizes their meanings as a
+nested descent. These are distinct structural claims. The semantic sequence
+does not itself supply composition maps between the generators, and a folder
+path does not establish a theorem about them.
 
-Holding/exploration node. Its substance is the dated `dev/journal/` record below; this headline
-only restates what those entries assert. The four regimes are not given separate node files here
-because the journals are the only content (no per-regime term files exist to place), and the
-journals themselves caution against authoring from memory.
+The [phenomenon-first journal](https://github.com/lenticule-science/science-services-section/blob/aa46e2f11aff49635bfbd7a381ee4c8b261db63c/services/philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/notes/2026/06/01/2026-06-01-2026-06-01-phenomenon-first.md)
+states the recursive hinge: the individual is settled at one scale and carries
+potential for a social-scale descent. Relating between individuals presupposes
+those individuals; it cannot simultaneously be the act that first constitutes
+them without an explicit change of scale. Keep the carrier and scale on every
+claimed transformation. This is the spiral's research question, not a rule to
+erase the distinctions between being, doing, working and governing.
+
+## The field is the setting
+
+The [world correction](https://github.com/lenticule-science/science-services-section/blob/aa46e2f11aff49635bfbd7a381ee4c8b261db63c/services/philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/notes/2026/06/01/2026-06-01-2026-06-01-world-from-first-principles.md)
+retracts an invented source quotation and distinguishes the ambient
+topos/hyperdoctrine from entities modeled as sheaves on its site. A world is
+the setting of a descent; it is not thereby the terminal sheaf of that descent.
+The phenomenon-first journal linked above (line 90) distinguishes a determined
+claim from certainty:
+later evidence may reopen a question. Such revision must not be represented as
+erasing contradictory evidence in one monotone valuation.
+
+## Use in work and governance
+
+The [Work Science owner](../../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/README.md) supplies the vocabulary of
+work units, tasks, plans, workflows, Endeavors and Missions. Its operational
+`working` sense (performing an available unit) and this shared-field sense
+address different scales. Normative rules constrain acts and admissions; they
+do not create the performance evidence that discharges a duty. A Mission's
+commissioner, executor and end-state remain distinguishable through the whole
+spiral.
+
+To extend this program, derive the phenomenon rather than copy a house word:
+state the act and its output, source the prior meaning, identify its carrier
+and scale, construct the proposed map, and test the claimed preservation law.
+Record a counterexample or unproved bridge as research work at its owner.
+The historical journals remain evidence of the program's development; their
+retracted quotations and exploratory placements are not current proof receipts.
