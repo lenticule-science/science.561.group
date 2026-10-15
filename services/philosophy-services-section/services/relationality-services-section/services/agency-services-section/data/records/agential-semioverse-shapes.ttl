@@ -101,3 +101,54 @@ agsv:MessageShape a sh:NodeShape ;
   sh:targetClass agsv:Message ;
   sh:property [ sh:path agsv:messageFrom ; sh:minCount 1 ; sh:class agsv:Actor ] ;
   sh:property [ sh:path agsv:messageTo ; sh:minCount 1 ; sh:class agsv:Actor ] .
+
+
+# Reusable Operations forms are not institutional appointments. The graph
+# must preserve qualified physical source identity even when the caller's Git
+# revision assertion remains independently unverified. All targets below are
+# explicit; missing forms cannot be treated as vacuous success.
+
+agsv:RepertoireOfficeFormShape a sh:NodeShape ;
+  sh:targetClass agsv:RepertoireOfficeForm ;
+  sh:property [
+    sh:path <http://www.w3.org/2000/01/rdf-schema#label> ;
+    sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ] ;
+  sh:property [
+    sh:path prov:wasDerivedFrom ; sh:minCount 1 ; sh:maxCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:pattern "^ni:///sha-256;" ;
+    sh:message "A repertoire form needs an NI identity computed from complete original source bytes." ] ;
+  sh:property [
+    sh:path agsv:officeFormReferencesDuty ;
+    sh:class agsv:RepertoireDutyForm ;
+    sh:message "An office form reference must resolve to a distinct named duty form, not an incumbent or arbitrary source name." ] .
+
+agsv:RepertoireDutyFormShape a sh:NodeShape ;
+  sh:targetClass agsv:RepertoireDutyForm ;
+  sh:property [
+    sh:path prov:wasDerivedFrom ; sh:minCount 1 ; sh:maxCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:pattern "^ni:///sha-256;" ] ;
+  sh:property [ sh:path agsv:dutyFormReferencesWork ; sh:class agsv:RepertoireWorkForm ] .
+
+agsv:RepertoireWorkFormShape a sh:NodeShape ;
+  sh:targetClass agsv:RepertoireWorkForm ;
+  sh:property [
+    sh:path prov:wasDerivedFrom ; sh:minCount 1 ; sh:maxCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:pattern "^ni:///sha-256;" ] .
+
+
+agsv:RepertoireNormativePositionShape a sh:NodeShape ;
+  sh:targetClass agsv:RepertoireNormativePosition ;
+  sh:property [
+    sh:path agsv:positionKind ; sh:minCount 1 ; sh:maxCount 1 ;
+    sh:datatype xsd:string ;
+    sh:in ( "duty" "deontic-power" "deontic-immunity" "liberty" ) ;
+    sh:message "Declared position must be one of the four sorts witnessed across all 31 canonical professional office forms." ] ;
+  sh:property [
+    sh:path agsv:positionProposition ; sh:minCount 1 ; sh:maxCount 1 ;
+    sh:datatype xsd:string ; sh:minLength 1 ] ;
+  sh:property [
+    sh:path prov:wasDerivedFrom ; sh:minCount 1 ; sh:maxCount 1 ;
+    sh:nodeKind sh:IRI ; sh:pattern "^ni:///sha-256;" ] .

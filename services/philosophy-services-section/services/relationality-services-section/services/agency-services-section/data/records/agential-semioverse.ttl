@@ -449,3 +449,94 @@ agsv:ledgerRecordsObligation a owl:ObjectProperty ;
     rdfs:domain agsv:Ledger ; rdfs:range agsv:Obligation .
 agsv:ledgerRecordsReceipt a owl:ObjectProperty ;
     rdfs:domain agsv:Ledger ; rdfs:range agsv:Receipt .
+
+
+# ---------------------------------------------------------------------------
+# Reusable professional forms (Coesite Operations corpus) versus actual seats.
+# A template is a normative design, not an Office, Incumbency, Duty discharged,
+# Contract entered, or actor empowered. The same canonical Science vocabulary
+# controls typed source graphs emitted by the Red Cup Organizing reader.
+# These classes DO NOT add another Work/Action/Move engine.
+# ---------------------------------------------------------------------------
+
+agsv:RepertoireOfficeForm a owl:Class ;
+    rdfs:subClassOf prov:Plan ;
+    owl:disjointWith agsv:Incumbency ;
+    rdfs:label "Reusable professional office form" ;
+    rdfs:comment "An Operations-authored reusable form describing an office's normative structure, duties, skills and deontic vocabulary. It does not establish that such an office is currently constituted or occupied." .
+
+agsv:RepertoireDutyForm a owl:Class ;
+    rdfs:subClassOf prov:Plan ;
+    owl:disjointWith agsv:Obligation ;
+    rdfs:label "Reusable professional duty form" ;
+    rdfs:comment "A reusable Operations definition of a duty or service obligation. Merely selecting its form does not make an accountable actor owe or discharge an individual obligation." .
+
+agsv:RepertoireWorkForm a owl:Class ;
+    rdfs:subClassOf prov:Plan ;
+    owl:disjointWith agsv:AdmittedTask ;
+    rdfs:label "Reusable professional work form" ;
+    rdfs:comment "A reusable source description of desired before, after, cost and counterfactual. It is not a scheduled execution or independently received result." .
+
+agsv:officeFormReferencesDuty a owl:ObjectProperty ;
+    rdfs:domain agsv:RepertoireOfficeForm ;
+    rdfs:range agsv:RepertoireDutyForm ;
+    rdfs:label "office form references duty form" ;
+    rdfs:comment "Source-level reference between reusable professional definitions, not a power, incumbency, or assertion that any particular task is owed." .
+
+agsv:dutyFormReferencesWork a owl:ObjectProperty ;
+    rdfs:domain agsv:RepertoireDutyForm ;
+    rdfs:range agsv:RepertoireWorkForm ;
+    rdfs:label "duty form references work form" ;
+    rdfs:comment "Source-level selection of a reusable work form. Does not imply its performance." .
+
+agsv:workFormFrom a owl:DatatypeProperty ;
+    rdfs:domain agsv:RepertoireWorkForm ; rdfs:range xsd:string ;
+    rdfs:label "work-form starting condition" .
+agsv:workFormTo a owl:DatatypeProperty ;
+    rdfs:domain agsv:RepertoireWorkForm ; rdfs:range xsd:string ;
+    rdfs:label "work-form desired outcome" .
+agsv:workFormCost a owl:DatatypeProperty ;
+    rdfs:domain agsv:RepertoireWorkForm ; rdfs:range xsd:string ;
+    rdfs:label "work-form cost" ;
+    rdfs:comment "Authored description, not measured resource expenditure or an accounting entry." .
+agsv:workFormOtherwise a owl:DatatypeProperty ;
+    rdfs:domain agsv:RepertoireWorkForm ; rdfs:range xsd:string ;
+    rdfs:label "work-form otherwise condition" .
+
+
+# Each named Hohfeldian/office-position claim belongs to its authored form,
+# not to a seated principal. A "power" label here neither enacts a change nor
+# constitutes an actual deontic power in a particular jurisdiction.
+agsv:RepertoireNormativePosition a owl:Class ;
+  rdfs:subClassOf prov:Entity ;
+  owl:disjointWith agsv:Incumbency ;
+  rdfs:label "Authored professional normative-position form" ;
+  rdfs:comment "One source-authored proposition and declared deontic sort (duty, power, immunity, etc.). Not itself a grant, work event or proved lawfulness judgment." .
+agsv:officeFormStatesPosition a owl:ObjectProperty ;
+  rdfs:domain agsv:RepertoireOfficeForm ; rdfs:range agsv:RepertoireNormativePosition ;
+  rdfs:label "office form states normative position" .
+agsv:positionKind a owl:DatatypeProperty ;
+  rdfs:domain agsv:RepertoireNormativePosition ; rdfs:range xsd:string ;
+  rdfs:label "declared deontic sort" .
+agsv:positionProposition a owl:DatatypeProperty ;
+  rdfs:domain agsv:RepertoireNormativePosition ; rdfs:range xsd:string ;
+  rdfs:label "authored normative proposition token" .
+agsv:officeFormUnrealized a owl:DatatypeProperty ;
+  rdfs:domain agsv:RepertoireOfficeForm ; rdfs:range xsd:string ;
+  rdfs:label "originally acknowledged unrealized condition" ;
+  rdfs:comment "Original author's outstanding limitation, not proof that a particular operational receiver failed." .
+agsv:officeFormJurisdictionName a owl:DatatypeProperty ;
+  rdfs:domain agsv:RepertoireOfficeForm ; rdfs:range xsd:string ;
+  rdfs:label "authored jurisdiction name" ;
+  rdfs:comment "Text of an Operations form, not a legal grant or proven enterprise namespace." .
+agsv:dutyFormAuthorityName a owl:DatatypeProperty ;
+  rdfs:domain agsv:RepertoireDutyForm ; rdfs:range xsd:string ;
+  rdfs:label "authored authority name" ;
+  rdfs:comment "A source label, never authority evidence of particular action." .
+agsv:dutyFormClaimName a owl:DatatypeProperty ;
+  rdfs:domain agsv:RepertoireDutyForm ; rdfs:range xsd:string ;
+  rdfs:label "authored claim name" .
+agsv:dutyFormRequiresSkill a owl:DatatypeProperty ;
+  rdfs:domain agsv:RepertoireDutyForm ; rdfs:range xsd:string ;
+  rdfs:label "required skill token" ;
+  rdfs:comment "Names a reusable capability requirement; does not assert the current actor or installed runtime possesses it." .
