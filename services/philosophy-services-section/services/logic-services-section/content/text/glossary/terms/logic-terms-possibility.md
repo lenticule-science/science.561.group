@@ -1,43 +1,30 @@
 ---
-name: "Possibility"
-aliases:
-  - "possibility"
-  - "possible"
-  - "diamond"
+name: Possibility (modal-logic sense)
+description: "The modal operator ◇ evaluated relative to an explicit model and accessibility relation; not the Possible stage of the March 28 relational inquiry."
 date-created: 2025-12-26
-tags: []
-mathematical-object: heyting-algebra
-references:
-  - "Blackburn, de Rijke & Venema, Modal Logic, Cambridge University Press, 2001"
-description: Let $H$ be a Heyting algebra equipped with a closure operator $j \colon H \to H$.
+date-updated: 2026-10-15
+see-also: [logic-terms-necessity, logic-terms-possible-world, logic-terms-kripke-model]
 ---
 
-Let $H$ be a [Heyting algebra](../../documents/articles/research/2026/concepts/heyting-algebra/index.md) equipped with a [closure operator](../../documents/articles/research/2026/concepts/closure-operator/index.md) $j \colon H \to H$.
+# Possibility — modal-logic world
 
-**Definition.** The *possibility operator* (or *interior operator*) dual to $j$ is the map $\Diamond \colon H \to H$ defined by
+A **modal possibility** is a judgment under an explicitly specified modal language, world set, accessibility relation and interpretation. In the standard **classical Kripke semantics**, for a model \`M = (W, R, V)\`:
 
-$$\Diamond a \;=\; \bigvee \{c \in H^j : c \leq a\},$$
+\[
+M,w \models \Diamond \varphi \quad\Longleftrightarrow\quad
+\exists v\in W\;(wRv\ \land\ M,v\models\varphi).
+\]
 
-where $H^j = \{c \in H : j(c) = c\}$ is the set of $j$-closed elements. Equivalently, $\Diamond a$ is the largest $j$-closed element below $a$.
+This says the proposition is satisfied at **some world accessible from \`w\`** under \`R\`. It does not claim the proposition occurred at \`w\`, has been observed, or could be made true by an authorized actor. Change \`R\`, \`V\`, the context or the formula and the same surface spelling may have a different result.
 
-In a [Kripke model](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/kripke-model.md) $(W, R, V)$, the semantic clause is:
+In **classical** modal logic, \`◇φ\` is interdefinable with \`¬□¬φ\`. Do not assert that exact equivalence in every intuitionistic, paraconsistent or resource-sensitive logic without stating the negation and modal rules. Nor does every relation \`R\` make \`◇\` idempotent: \`◇◇φ ↔ ◇φ\` requires additional frame conditions, not just the existence of an accessibility relation.
 
-$$M, w \models \Diamond\varphi \quad \text{iff} \quad \exists v\,(wRv \;\text{and}\; M, v \models \varphi).$$
+## A distinct secondary sense, not a synonym
 
-**Proposition.** *$\Diamond$ is a co-closure (interior) operator: $\Diamond a \leq a$, $\Diamond$ is monotone, and $\Diamond\Diamond a = \Diamond a$.*
+- The [March 28 relational Possible](https://github.com/lenticule-science/science-services-section/blob/main/services/philosophy-services-section/services/relationality-services-section/content/text/glossary/terms/possible.md) is an **inquiry role**: a continuation opened by relating a given. It is not this \`◇\` operator.
+- A prediction, feasible action, deontic permission, unruled-out possibility, hypothetical missing claim and evidentially \`⊥ₖ\` claim are also not substitutes for modal \`◇\`.
+- A \`possible world\` here is an **element of the selected Kripke model**, not a guarantee that it exists as a physical universe or L-Space's causal future.
 
-*Proof sketch.* $\Diamond a \leq a$ by definition. Monotonicity: $a \leq b$ implies every $j$-closed element below $a$ is below $b$, so $\Diamond a \leq \Diamond b$. Idempotence: $\Diamond a \in H^j$, so $\Diamond\Diamond a = \Diamond a$. $\square$
+**Previous defect corrected:** this glossary had identified \`◇\` unconditionally with “the greatest fixed point below \`a\` of an arbitrary extensive closure \`j\`,” then asserted Kripke-style dualities. Those constructions do not coincide without additional algebraic and relational assumptions. A topology/interior construction should be named with its own frame and laws, not silently substituted for Kripke possibility.
 
-**Proposition.** *In classical [modal logic](../../documents/articles/research/2026/07/31/index.md) (where $H$ is Boolean), $\Diamond a = \neg\Box\neg a$ and $\Box a = \neg\Diamond\neg a$.*
-
-*Proof sketch.* In a Boolean algebra, $\neg$ is an order-reversing involution, so $\Diamond a = \neg j(\neg a)$. $\square$
-
-**Proposition.** *In intuitionistic [modal logic](../../documents/articles/research/2026/07/31/index.md), the classical interdefinability $\Diamond a = \neg\Box\neg a$ fails precisely when $H$ is non-Boolean. The operators $\Box$ and $\Diamond$ carry independent information.*
-
-*Proof sketch.* In a non-Boolean Heyting algebra, $\neg$ is not an involution, so $\neg j(\neg a)$ equals the largest $j$-closed element below $a$ iff $H$ is Boolean; in a non-Boolean Heyting algebra, $\neg j(\neg a) < \bigvee\{c \in H^j : c \leq a\}$ is possible. $\square$
-
-**Examples.**
-
-- In a [Kripke frame](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/kripke-frame.md) $(W, R)$, $\Diamond_R(S) = \{w \in W : \exists v\,(wRv \;\text{and}\; v \in S)\}$. This is the $R$-preimage operator on $\mathcal{P}(W)$.
-- In S5, $\Diamond\varphi$ holds at $w$ iff $\varphi$ holds somewhere in $w$'s equivalence class under $R$.
-- On the open-set [lattice](../../documents/articles/research/2026/objects/posets/terms/lattice.md) $\mathcal{O}(X)$ with $j = \mathrm{id}$, $\Diamond = \mathrm{id}$; every [proposition](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/proposition.md) is already "possible." Nontrivial possibility operators arise from nontrivial Lawvere-Tierney topologies in topos theory.
+For conditional algebraic presentations, state the particular Heyting/Boolean algebra, modality, order and frame correspondence and prove the claimed laws. In this entry the governing semantics is the equation above.
