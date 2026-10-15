@@ -66,7 +66,7 @@ agsv:AcceptedReceiptShape a sh:NodeShape ;
   sh:targetClass agsv:AcceptedReceipt ;
   sh:property [
     sh:path agsv:receiptForTask ; sh:minCount 1 ; sh:maxCount 1 ;
-    sh:class agsv:Task ;
+    sh:class agsv:AdmittedTask ;
     sh:message "Receipt must identify which actual task it concerns." ] ;
   sh:property [
     sh:path agsv:receiptEvidence ; sh:minCount 1 ;
@@ -75,7 +75,27 @@ agsv:AcceptedReceiptShape a sh:NodeShape ;
   sh:property [
     sh:path agsv:receiptAcceptedBy ; sh:minCount 1 ;
     sh:class agsv:Actor ;
-    sh:message "Acceptance must be attributed to a receiving actor." ] .
+    sh:message "Acceptance must be attributed to a receiving actor." ] ;
+  sh:sparql [
+    sh:message "Independent acceptance cannot be claimed by the task's own incumbent actor" ;
+    sh:select """
+      PREFIX agsv: <https://emsenn.net/mathematics/objects/universes/agential-semioverse#>
+      SELECT $this ?value WHERE {
+        $this agsv:receiptAcceptedBy ?value ;
+              agsv:receiptForTask ?task .
+        ?task agsv:taskAssignedUnder/agsv:incumbentActor ?value .
+      }
+    """
+  ] ;
+  sh:sparql [
+    sh:message "A receipt cannot serve as its own receipt evidence" ;
+    sh:select """
+      PREFIX agsv: <https://emsenn.net/mathematics/objects/universes/agential-semioverse#>
+      SELECT $this WHERE {
+        $this agsv:receiptEvidence $this .
+      }
+    """
+  ] .
 
 agsv:MessageShape a sh:NodeShape ;
   sh:targetClass agsv:Message ;

@@ -1,10 +1,11 @@
 PREFIX agsv: <https://emsenn.net/mathematics/objects/universes/agential-semioverse#>
 PREFIX prov: <http://www.w3.org/ns/prov#>
 
-# Competency question: for declared obligations, which attributed tasks and
-# independently accepted receipts exist in this *qualified input graph*?
-# Missing rows/receipts mean "not evidenced here", not "nothing happened".
-# No source document, task message, ledger row or test run self-grants authority.
+# What task effects are both grounded in this exact duty and explicitly
+# accepted by an actor distinct from the authorized task performer?
+# Other receipt links cannot settle this obligation by accidental joins.
+# A contract-only obligation needs a separately qualified settlement path.
+# Missing receiving evidence means UNKNOWN in this qualified graph, not undone.
 SELECT DISTINCT ?obligation ?debtor ?beneficiary ?groundingDuty ?task
        ?incumbent ?receiver ?receipt ?evidence ?statusInGraph
 WHERE {
@@ -18,15 +19,17 @@ WHERE {
           agsv:taskAssignedUnder ?incumbency .
     ?incumbency agsv:incumbentActor ?incumbent ;
                 agsv:authorityEvidence ?authorityRecord .
-  }
-  OPTIONAL {
-    ?obligation agsv:obligationReceivedThrough ?receipt .
-    ?receipt a agsv:AcceptedReceipt ;
-             agsv:receiptAcceptedBy ?receiver ;
-             agsv:receiptEvidence ?evidence .
+    OPTIONAL {
+      ?obligation agsv:obligationReceivedThrough ?receipt .
+      ?receipt a agsv:AcceptedReceipt ;
+               agsv:receiptForTask ?task ;
+               agsv:receiptAcceptedBy ?receiver ;
+               agsv:receiptEvidence ?evidence .
+      FILTER (?receiver != ?incumbent && ?receipt != ?evidence)
+    }
   }
   BIND(IF(BOUND(?receipt) && BOUND(?receiver) && BOUND(?evidence),
-          "accepted receipt explicitly asserted in this graph",
+          "distinct receiver and duty-matched receipt explicitly asserted in this graph",
           "independent receiving not evidenced in this graph") AS ?statusInGraph)
 }
 ORDER BY ?obligation ?task
