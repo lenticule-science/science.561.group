@@ -46,6 +46,24 @@ reconciled pair of receipts — see tally. Known namespace collision, flagged at
 minor external cryptocurrency (Witnet's WIT) uses the ticker; the Union unit is defined by the
 assay contract, not by ticker.
 
-## Current Group term
 
-The Group glossary carries the [wit](wit.md) definition. The collection provenance above records its earlier location.
+## Counting discipline and incomplete bridges
+
+WIT is **not** a synonym for a statement, an eyewitness, or an EAVT row.
+It is a cover in FOUR's knowledge order. The four charges are the two
+evidence flags; a 0→1 change in exactly one flag is one cover. An
+uninterrupted bottom-to-both change traverses two covers, not one.
+Obsmetrologia's [Record](https://github.com/lenticule-science/obsmetrologia/blob/main/Obsmetrologia/Language/Positing/Record.lean)
+carries the finer multiplicities `(pos, neg) ∈ ℕ²`; an additional
+told-true report after the positive tally is already nonzero increases
+`pos` but does not itself produce another FOUR cover.
+
+The [WitLedger](https://github.com/lenticule-science/obsmetrologia/blob/main/scripts/WitLedger.lean)
+counts actual Lean identification-instrument uses on proof terms and
+tests them against a committed ledger. This gate is implemented.
+The [2026-10-06 audit](https://github.com/lenticule-science/obsmetrologia/blob/main/docs/history/quot-sound-as-residue.md)
+does **not** prove that every physical Landauer bit, one `Quot.sound`
+site, a FOUR cover, a coordination H¹ cycle, and a matched economic tally
+are the same mathematical object. The distinction-denomination bridge
+is still an open proof obligation. Do not treat pricing analogies as
+settled equalities or count every Record increment as another FOUR wit.

@@ -34,6 +34,19 @@ grain matched across both halves at settlement so neither party could alter the 
 alone, circulated as money in the English Exchequer for six centuries. A content-addressed
 receipt pair matched on digests is the same design executed in bytes.
 
-## Current Group term
 
-The Group glossary carries the [tally](tally.md) definition. The collection provenance above records its earlier location.
+## Different counting carrier
+
+The word *tally* also appears in Obsmetrologia's
+[`Record`](https://github.com/lenticule-science/obsmetrologia/blob/main/Obsmetrologia/Language/Positing/Record.lean):
+the positive and negative natural-number evidence counts
+`(pos, neg)`. These are **not by definition** the economic tally's
+independently issued release/admission receipt pair. `Record.add`
+accumulates multiplicity, while `Record.charge` projects to the
+four-valued positivity flags and forgets it. Matching an economic tally
+instead requires both counterparties' exact settlement identifiers.
+The 2026-10-06
+[Obsmetrologia audit](https://github.com/lenticule-science/obsmetrologia/blob/main/docs/history/quot-sound-as-residue.md)
+explicitly lists multiple senses of tally and an unproved bridge.
+A valid tally for one transaction does not settle an unrelated claim
+or discharge a different charged obligation.

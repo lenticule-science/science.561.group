@@ -38,24 +38,28 @@ Leanne Betasamosake Simpson's grounded normativity and Kyle Powys Whyte's Indige
 The strength of this model under collapse is that it does not depend on institutional infrastructure — on the meeting space, the communication channel, the shared evaluative framework — that collapse destroys.
 It depends on relations, and relations persist where infrastructure does not.
 
+## Distinction-ledger and discharge boundary
 
-## Witness, acknowledgment and remaining duty
+The economic research program offers a sharper claim than "people feel a
+responsibility": obligation is a **charged relation** that preserves who owes
+what to whom, with attributable witnesses, and whose discharge is meant to be
+consumed once. See [Money as Witness-Forgetting](https://github.com/lenticule-science/science-services-section/blob/main/content/text/documents/articles/notes/2026/08/21/2026-08-21-note-on-money-as-witness-forgetting.md).
+That account is a research hypothesis with a proposed linear-logic reading,
+not an already-proved universal theorem.
 
-An obligation can precede its public witnessing, acknowledgment, formal
-recognition, or institutional procedure. Bearing witness may make a relation
-visible; acknowledgment may register that a claim has been heard; attention may
-be allocated toward investigating or meeting its demands. None of those acts
-alone establishes that the obligation has been met.
+The existence of an obligation is not an inference from the agent's having
+seen evidence, produced one FOUR [WIT](https://github.com/lenticule-science/science-services-section/blob/main/services/social-science-services-section/services/economics-and-business-science-services-section/services/monetary-economics-science-services-section/content/text/glossary/terms/wit.md),
+received a border [ACK](https://github.com/lenticule-science/science-services-section/blob/main/services/social-science-services-section/services/economics-and-business-science-services-section/services/monetary-economics-science-services-section/content/text/glossary/terms/ack.md),
+or made an [ATT](https://github.com/lenticule-science/science-services-section/blob/main/services/social-science-services-section/services/economics-and-business-science-services-section/services/monetary-economics-science-services-section/content/text/glossary/terms/att.md)
+of that ACK. Those acts record distinct transitions in a knowledge and
+settlement system; none *by itself* is the required performance, discharge,
+or beneficiary's settlement. The specific relation, beneficiary, obligor,
+authority and performance condition determine the latter.
 
-It is also a mistake to infer a universal or unlimited duty from witnessing.
-The actual relation identifies who owes what to whom, under which constraints.
-Different observers may have different capacities, permissions and obligations.
-Delegation can distribute work, but the existence of an electoral or
-bureaucratic acknowledgment does not by itself authorize an obligor to declare
-themselves discharged.
-
-For the conditional electoral version of this problem, see Lenticule Political
-Science's [working research note on witnessing, acknowledgment, attention and
-obligation](https://github.com/lenticule-science/science-services-section/blob/main/services/social-science-services-section/services/political-science-services-section/content/text/documents/articles/notes/2026/10/14/2026-10-14-witness-acknowledgment-attention-obligation-electoralism.md).
-It proposes a hypothesis about *perceived discharge*, not a finding that all
-electoral participation reduces action.
+A matched [economic tally](https://github.com/lenticule-science/science-services-section/blob/main/services/social-science-services-section/services/economics-and-business-science-services-section/services/monetary-economics-science-services-section/content/text/glossary/terms/tally.md)
+settles the crossing it names; it does not extinguish a different obligation
+merely because both are legible to the same institution. A charged
+obligation cannot be replaced by a generic "responsible participant"
+status without losing its provenance. Whether such a projection occurs
+in electoralism is the question in Political Science's
+[WIT/ACK/ATT analysis](https://github.com/lenticule-science/science-services-section/blob/main/services/social-science-services-section/services/political-science-services-section/content/text/documents/articles/notes/2026/10/14/2026-10-14-witness-acknowledgment-attention-obligation-electoralism.md).
