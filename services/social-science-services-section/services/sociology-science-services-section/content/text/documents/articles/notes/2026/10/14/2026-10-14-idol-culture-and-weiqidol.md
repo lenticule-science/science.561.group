@@ -7,9 +7,11 @@ owner: lenticule-science/sociology-science-services-section
 consumer: red-cup-engineering/computer-game-system-services-section
 ---
 
-# Idol culture and the economics of WeiqIdol
+# Idol culture: distinct practices, evidence limits, and the unresolved WeiqIdol hypothesis
 
-**Question.** What does empirical and critical scholarship on Japanese oshi-katsu and Korean platform fandom actually support for a repeat-play, profitable Go entertainment world?
+**Research question.** What do independently published studies actually establish about idol performance, supporter participation, virtual/mediated encounter and fan purchases in their *specific* settings? Which of those mechanisms—if any—help explain the 561 Group's **unmeasured** opportunity to make Weiqi more entertaining and profitable, without preselecting the product or transferring a population's norms?
+
+**2026-10-14 source-method correction.** The prior version asked which fandom mechanisms would *support a profitable Go idol world*, then treated a recurring-performer season, purchaser cohort and membership as the obvious experimental endpoint. This presupposed the answer and imported Korean platform commerce and Japanese oshi-katsu into a Chinese board-game/wuxia concept without customer selection. Its SC/WI clauses are retained below as **generated hypotheses**, not admitted scientific propositions, Leader requirements or mandated feature specification. Neither an eight-rival season nor any price can be inferred from this literature. Alternative product forms include competitive tactical drama with no fan monetization, live Go performance/creator entertainment, community-led play and optional commercial learning. The original Leader asked to *study* idol culture and substantially improve the real existing game and upstream science/technology; they did not select the industry's most familiar commercial trope.
 
 This is the sociology evidence owner, not a replacement for the [existing original WeiqIdol vision](https://github.com/lenticule-science/science-services-section/blob/main/services/philosophy-services-section/services/relationality-services-section/services/agency-services-section/services/being-services-section/services/doing-services-section/services/playing-services-section/services/gaming-services-section/services/board-games-services-section/services/weiqi-services-section/content/text/documents/articles/notes/2026-08-29-note-on-weiqidol-product-vision.md). A commercial product hypothesis is not an observed player result or a formal theorem.
 
@@ -30,13 +32,19 @@ This is the sociology evidence owner, not a replacement for the [existing origin
 
 **Cross-study inclusion rule.** EC-05 addresses character-game purchasing in a selected Japanese market; EC-06 addresses real fan–idol physical mementos; EC-07 addresses the mediation of actual idol interactions. EC-01–04 cover broader attachment/platform labor. These are **different populations, technologies and outcome units**. Their common implication is a *design hypothesis* that support, personal encounter, social display, materialized memory and purchases are separable relations; aggregating them into one “fan engagement” score would destroy the distinctions these studies measure. No paper shows that the 561 Group will earn a specified amount from any of them.
 
+**Direct-reading limit and population translation test.** EC-01/02/03/05/07 above were qualified from original institutional, publisher or author **abstracts/landing records**, not a full systematic reading of each paper's model, sample and robustness. EC-06's original Keio paper abstract provides its reported methods but not an experimental analogue for software mementos. EC-04 is producer self-report. Any prior statement that these sources *demonstrate* buyer conversion, loyalty retention, causal design superiority, K-pop best practices or typical Go player preferences exceeds their observed scope and is withdrawn. The original-language Japanese J-STAGE abstract supports distinct purchase associations in one selected female-oriented mobile-game setting; applying its groups to Weiqi requires a newly sampled actual population, not a classifier in code. At least three plausible counterexamples must remain live: players value real opponents without adopting an oshi; spectators value a match even without personality intimacy; players buy Go instruction or club access while rejecting idol merchandise. No empty clinical registry can refute these alternatives.
+
 ## Analytical distinctions
 
 An **oshi** (favored figure), **idol** (public performing role), **performer** (responsible operating actor), **character** (authored fiction), **fan** (voluntary supporter), **sect member** (authorized affiliation), **follower** (communication subscription), and **customer** (party to an exchange) are different relations. A Weiqi capture establishes none of them automatically. A **match** is an engine-accepted legal history; a **performance** is a staged appearance; an **episode** is an edited media artifact; an **event ticket** is a purchased right; an **earning** is a funded, provider-settled liability. Projected spectacle may cite game results but cannot author them.
 
-These are provisional terms to reconcile with the existing Science/Obsmetrologia actor, work, message, obligation and ledger owners, **not** independently proven functors or a competing game ontology.
+These are **analytical senses in the cited literature**, not new universal ontological classes. Before a tool, message, contract or game command is built, recover its exact term and lawful operation from the existing Science-owned agential-semioverse and Obsmetrologia, L-Space/SCA/SEN/SEAVT and the actual Group agency/work/ledger owners. A fiction *Character*, Cast software persona, authenticated *Actor*, Go player-seat principal, performer/creative author, follower and payment recipient may overlap in a particular authorized instance but are not equal by label. No faithful functor, join of evidential fragments or general morphism between them is established here; names do not constitute formal conformance.
 
-## Mechanisms to test, not imported facts about our audience
+## Generated candidate interpretations (SC-01–SC-10), neither market authorization nor proofs
+
+The following ten SC scenarios were written by an AI as plausible *product questions*. They **do not** constitute independent ten-study findings, a balanced research sample, a normative definition of idol culture, or admitted software requirements. The prior titles and use cases are retained for provenance, but their implied causal direction is not warranted. For each one, the negative alternative is equally live until original Go-player, performer/creator or paying-customer evidence settles it. A product that is compelling without character attachment remains fully compatible with the original Weiqi goal.
+
+
 
 **SC-01 — Voluntary favorites and named career history.** EC-01 studies the practice of actively favoring a figure. Our hypothesis is that players will return to *the same specific rival* because the rival remembers real accepted matches, not because we attach a character portrait to anonymous bots. The fan chooses their oshi; no telemetry may silently enroll them. Compare seven- and thirty-day rematches against skill-matched anonymous opponents, and ask whether players can independently identify two rivals' previously observed strategies. An AI rival must really lose, change policy when authorized, and have a replayable history; random dialogue is not character continuity.
 
@@ -58,7 +66,11 @@ These are provisional terms to reconcile with the existing Science/Obsmetrologia
 
 **SC-10 — Competing on a market is an empirical comparison.** BadukPop's official [product site](https://badukpop.com/) and app-market representations demonstrate that large puzzle catalogs, named AI strength and online rank exist. Our offline Weiqi app's 56 problems, legal rules, five bot tiers and one-move visitors are real capabilities but not evidence of competitive entertainment parity. Compare observed first-session satisfaction, legal match depth, return behavior and willingness-to-pay on contemporaneous opponent products. Screenshots, smoke-test passes and speculative “world class” rankings cannot receive market fitness.
 
-## Source-grounded WeiqIdol mechanism hypotheses for Engineering and Operations
+## Additional hypothetical transfers (H-01–H-05), not five further product requirements
+
+Each H below is an *analogy under test* and retains its source citation only as evidence about the **original study population**. A consumer-visible mechanic becomes justified only after an actual receiving game encounter or an independently observed buyer/creator practice; a citation is not permission to produce a feature, recruit a fan, charge a price or bind a product edition. Do not count H-01–H-05 plus SC-01–SC-10 as fifteen independent market needs.
+
+
 
 **H-01 — Performance memory versus routine dialogue.** The old WeiqIdol engine detects a legal capture, and the shared Cast can now emit authored lines about it. That constitutes a source-linked *utterance*, not the fans' personal experience of a durable performer. To test the proposed product, a returning human must encounter the *same principal/character*, recognize a true old match result and choose another genuine match. Test this against an anonymous strength-matched opponent; measure recognition, voluntarily initiated rematches and the additional production/inference cost, not only chat volume. A runner generating a friendly line in isolation **refuses** this claim.
 
