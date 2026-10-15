@@ -42,10 +42,14 @@ states the theory that answers it, in the section that owns the science, and
 engineering can derive tools from that statement. The skill is one inquiry:
 neither what the answer is nor how to reach it is settled going in, so it runs
 under the fuel cap above and its output type is not fixed beforehand. The
-knowledge-first order is science, then engineering, then operations
-([rule](../../../../../561-group-services-section/lib/agency/rules/science-engineering-operations-parameterize-in-order.json)).
-Science holds theory and research, so nothing this skill produces carries a
-tool's code, a section's data or a brand.
+source-custody order is Science knowledge/ontology → Red Cup reusable code
+(Data → Code → Networking → Systems) → Coesite reusable operation parameters
+→ Group/Public instance parameters. The current
+[Science-owned OWL/SHACL custody law](https://github.com/lenticule-science/science-services-section/blob/main/services/philosophy-services-section/services/relationality-services-section/services/agency-services-section/data/records/service-section-custody.ttl) records
+the typed rules, **not a certificate that every current repository conforms**.
+Classify the real artifact and trace its original consumer before migration:
+executable code found outside Engineering is extraction debt to be preserved
+until its proper owner and independent receiving are established.
 
 The skill discharges the duty `realizing-allocated-science-work`. Its receiver
 is the Chief Science Officer or the science office it names; the Senior
@@ -69,7 +73,7 @@ settled what is to be stated.
 ### 1. Locate the held theory by term and note
 
 Read what the house already holds before reasoning from any association of
-your own ([rule](../../../../../561-group-services-section/lib/agency/rules/read-the-house-notes-for-a-leader-term.json)).
+your own ([rule](https://github.com/561-group/561-group-services-section/blob/main/lib/agency/skills/improve-operating-skills/SKILL.md)).
 
 - For each term in the question, read the glossary entry in the science section
   that owns it (`content/text/glossary/terms/<term>.md`), through the term
@@ -84,10 +88,10 @@ your own ([rule](../../../../../561-group-services-section/lib/agency/rules/read
 - Find the open work: the work-board items, open pull requests and branches on
   the subject. Judge each against the house's theory (aligned, misaligned,
   superseded, already landed) before building anything beside it
-  ([rule](../../../../../561-group-services-section/lib/agency/rules/existing-work-is-judged-before-it-is-discarded.json)).
+  ([rule](https://github.com/561-group/561-group-services-section/blob/main/lib/agency/skills/improve-operating-skills/SKILL.md)).
 - Never scan the tree. Reach the corpus by terms, notes, indexes and
   `ls-files` pathspecs
-  ([rule](../../../../../561-group-services-section/lib/agency/rules/no-whole-tree-scans-on-bare-cedar-fog.json)).
+  ([rule](https://github.com/561-group/561-group-services-section/blob/main/lib/agency/skills/improve-operating-skills/SKILL.md)).
   A held statement may be spread across several notes; collect every place it
   appears.
 
@@ -125,7 +129,7 @@ Write each side with its path and line, the point of disagreement, and which
 one the question depends on. Do not flatten a disagreement into a priority. A
 complex disagreement between offices about reality goes to the Obsmetrologia-
 derived coordination framework with its provenance kept
-([rule](../../../../../561-group-services-section/lib/agency/rules/complex-inter-office-conflict-uses-formal-coordination.json)).
+([rule](https://github.com/561-group/561-group-services-section/blob/main/lib/agency/rules/complex-inter-office-conflict-uses-formal-coordination.json)).
 A rule that no longer fits reality has its revision opened with the evidence.
 Settle nothing beyond the allocation.
 
@@ -133,7 +137,7 @@ Settle nothing beyond the allocation.
 
 State supported theory in declarative, falsifiable sentences, with every
 premise cited to the exact owning paper, external source or Lean declaration
-and scope ([rule](../../../../../561-group-services-section/lib/agency/rules/notes-state-the-theory.json)).
+and scope ([rule](https://github.com/561-group/561-group-services-section/blob/main/content/text/glossary/concepts/method-for-work-in-the-561-group.md)).
 **Edit an existing canonical document before making a nearby new note.**
 When two documents repeat one result, first preserve all unique definitions,
 counterexamples, source provenance, historic authority, and counterevidence
@@ -155,25 +159,29 @@ Unknown derivations and both sides of scientific conflicts remain explicit.
   languages, contradictory testimony and dated changes are not duplicates
   merely because their spelling matches.
 - The record is at least as rich as what is reported in chat
-  ([rule](../../../../../561-group-services-section/lib/agency/rules/durable-record-at-least-as-rich-as-chat.json)).
+  ([rule](https://github.com/561-group/561-group-services-section/blob/main/content/text/glossary/concepts/method-for-work-in-the-561-group.md)).
   Findings reach the corpus inside `/home/emsenn/info`, never `/tmp` or a
   harness memory.
 
 ### 6. Hand engineering the requirements
 
-If the allocation names an engineering consumer, or the theory obliges one, open
-the request on the work board with `agency-work-propose`. It names the wanted
+If the allocation names an engineering consumer, or the theory obliges one,
+use the original work-board obligation through `agency-work-propose` **where
+actually available**. When a known-down host prevents that operation, do not
+contact that host or invent a parallel queue: advance the owning GitHub
+issue/source/PR under its existing Work identity and original receiver. It names the wanted
 outcome and the judge that will receive it, never the builder or the
 implementation. Each request carries, in the owning engineering section's terms:
 
 1. Stable, numbered EARS `shall` requirements, each traced to the exact
    Science claim, external source or kernel-checked declaration;
-2. A candidate or existing **SAS** with explicit evidence and falsifiers,
-   addressing stakeholder concerns under ISO/IEC/IEEE 42010 as applicable;
-3. Constraints the engineering owner **HLD** must allocate and **LLD** must
-   express as typed contracts, checks and refusals, without taking away that
-   owner's design authority
-   ([order rule](../../../../../561-group-services-section/lib/agency/rules/science-engineering-operations-parameterize-in-order.json));
+2. A behaviorally precise **specification** with explicit evidence and
+   falsifiers; a historical SAS filename is not an Architecture admission;
+3. Architectural concerns and responsibilities for an ISO/IEC/IEEE 42010
+   architecture description, followed by constraints for Engineering's
+   high-level and detailed **design** contracts and tests. HLD is not a
+   synonym for Architecture, and LLD is not the whole Design stage
+   ([order rule](https://github.com/lenticule-science/science-services-section/blob/main/services/philosophy-services-section/services/relationality-services-section/services/agency-services-section/data/records/service-section-custody.ttl));
 4. An independent Operations/consumer receiving condition for an actual
    installed effect, admissible rights, measured resources and buyer/customer
    value. CI success and source hashes alone cannot satisfy it.
