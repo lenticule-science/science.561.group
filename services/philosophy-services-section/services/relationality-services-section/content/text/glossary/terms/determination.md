@@ -1,45 +1,30 @@
 ---
-name: "Determination"
-description: "The mode in which a claim has been structurally witnessed by its relations to other claims; the settled outcome of relational witnessing. The contrasting mode to absurdity; what relating produces when its activity stabilizes locally."
+name: Determination
+description: "A locally witnessed relational configuration under explicit givens and constraints in the March 28 inquiry; neither global truth nor FOUR's both-evidence top."
 date-created: 2026-04-28
-aliases:
-  - determined
-see-also:
-  - "true"
-  - "false"
-  - absurd
-  - settlement
-  - relating
+date-updated: 2026-10-15
+see-also: [absurd, possible, necessary, relating, relationlessness]
 ---
 
-**Determination** is the mode in which a claim has become structurally witnessed: the relational acts that compose around it have settled, and the claim now stands not on its own assertion but on the structure of relations that hold it in place. Where [absurd](absurd.md) is the bare-assertion mode, determined is the witnessed-outcome mode. The two are paired: absurd is what holds because nothing relates to it; determined is what holds because relations witness it.
+# Determination — relational-inquiry sense
 
-A determination is not a proof in the global sense. The [relationality](../../../../../../content/text/glossary/_index.md) framework does not commit to a single notion of proof against which all claims are measured; instead, it tracks what is structurally settled relative to what is structurally given. Every determination carries an implicit *given these absurdities, this claim is determined*. The determination is local to the configuration of absurdities the framework has accepted. Different sets of absurdities give rise to different determinations, all internally coherent, none globally arbitrating.
+A **Determination** is what the March 28, 2026 inquiry can articulate as **locally determined by a particular configuration of givens, relations and necessary constraints**. “Determined” means *relative to that inquiry and its accepted presentation*, not proven true of the external world and not institutionally settled. The inquiry's proposed progression is [Absurd](absurd.md) → [Possible](possible.md) → [Necessary](necessary.md) → Determined; every local result can become a new premise for another inquiry.
 
-## Determination as the end of inquiry
+A determination therefore must carry its **frame**: the given source or premise, admitted relation or inference rules, actual connecting structure, and the kind of witness that established the result. Where these are missing, report an **open conjecture or missing determination**, not a successful proof. The word cannot substitute for proof, acceptance, closure, completion or certainty.
 
-[Inquiry](../../../../../../content/text/glossary/terms/inquiry.md) under the relationality commitment moves from [absurd](absurd.md) toward determined: a claim begins absurd (no relational structure constrains it), passes through [possibility](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/possible.md) (some relations hold), through [necessity](necessary.md) (the relations are tight enough to force the claim's shape), to determination (the relations are tight enough that the claim is settled and adding more does not change what it says). Each step adds [witnessing](../../../../services/agency-services-section/content/text/documents/articles/notes/undated/witnessing.md) structure; determination is the local fixed point.
+## What a frontmatter determination actually determines
 
-This is not global termination. There is always more [relating](../../../../../../content/text/glossary/terms/relating.md) that could occur, more witnessings that could be added. Determination is stability under the relations the framework has so far. A claim that is determined locally may become unsettled again if new relations introduce evidence the determination did not account for. This is not a defect but the framework's honesty about what determination means: settlement up to current witnessing, not finality.
+If a particular source revision contains \`date-created: 2026-03-28T10:18:00\`, a qualified parser can determine that **those bytes encode that field and value** under its selected YAML mapping. This does not determine when the author physically wrote the file, whether the value is accurate, or whether later source revisions preserved it. A separately qualified vocabulary mapping may admit a proposition that the file *declares* a date; an independently verified time claim requires different evidence.
 
-## True and false within determination
+The result remains open to more structure. Another source revision might say something different; two source attestations might conflict. The earlier local parsing result is not thereby erased. Source-complete interpretation, external evidential standing, and receiver acceptance are separate dimensions.
 
-[True](true.md) and [false](false.md) are the truth-valued shapes a determination can take. A determined claim may be determined-true (the witnessing structure affirms the claim), determined-false (the witnessing structure denies the claim), or both (in the paraconsistent case, where evidence is registered in both directions and the framework records the conflict rather than collapsing it). [Absurd](absurd.md) claims do not yet take a stable truth value because no witnessing structure yet shapes them — true and false are positions on the truth axis, and that axis only resolves once the knowledge axis has moved off the absurd corner.
+## Explicit nonidentities
 
-The two axes — true/false on the truth axis, absurd/determined on the knowledge axis — are independent. They compose to give the four-cornered [settlement](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/settlement.md) shape that runs through both the philosophical articulation and the framework's mathematical layer.
+- **Determination ≠ \`⊤ₖ\` in Belnap FOUR.** FOUR's top on the *knowledge* order is **both positive and negative testimony** about a single fixed claim. That can be contested and wholly undecided. A locally determined parsing can instead have FOUR value \`⊥ₖ\` for its *external truth claim*.
+- **Determination ≠ modal necessity \`□φ\`.** Necessitation needs a nominated modal frame and its quantification over accessible worlds.
+- **Determination ≠ a theorem.** A CHL proof must exhibit the exact typing judgment and derivation; a source parser's result is not one.
+- **Determination ≠ discharge, settlement, publication, payment or independently received work.** An assistant writing “done” is at most an attributable utterance until its alleged effect is verified by the proper receiver.
 
-## Determination and the math layer
+This entry is the **relational-inquiry lexical sense**, not a synonym for the unrelated use of “determination” in law, administration, mathematics, or service-delivery registers. Keep those senses at their real owners with separate constraints, rather than attaching their authority to this entry.
 
-The mathematical articulation treats determination as the top of the [knowledge order](../../../../../../math/theories/voidmath/terms/predication-fiber-algebra.md): the value at a [predication cell](../../../../../../math/theories/voidmath/terms/predication-cell.md) when evidence in both affirming and denying directions has fully accumulated. In bilattice terms, this is the value $\top$, the *both* corner of the four-cornered structure. The dual to absurdity ($\bot$, no evidence) is determination ($\top$, full evidence); these are the two extremes of the knowledge axis, and the truth-axis positions (true, false) are the orthogonal degree of freedom.
-
-## Distinction from certainty
-
-Determination is not the same as certainty. A determined claim is one whose relational structure has settled; the framework remains open about whether the structure is itself complete. The settled determination *can* still be wrong — it is just internally coherent under the witnessings the framework has performed. Certainty is a global notion the framework does not claim; determination is a local one the framework can support.
-
-## See also
-
-- [Absurd](absurd.md) — the contrasting mode; the un-witnessed assertion.
-- [True](true.md), [False](false.md) — the truth-valued shapes a determination can take.
-- [Settlement](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/settlement.md) — the joint four-cornered structure of which determination is one corner.
-- [Relating](../../../../../../content/text/glossary/terms/relating.md) — the activity by which absurd claims become determined.
-- [Predication fiber algebra](../../../../../../math/theories/voidmath/terms/predication-fiber-algebra.md) — the math articulation of the two-axis structure.
+Source: the original March 28 authored inquiry, interpreted in the [single L-Space Language Science account](https://github.com/lenticule-science/science-services-section/blob/main/services/information-science-services-section/services/language-science-services-section/content/text/documents/articles/notes/2026/10/10/2026-10-10-note-about-l-space.md#march-28-the-utterance-as-a-locally-witnessed-relation-source-recovered-2026-10-14). Its iterated metaphysical dynamics remain research conjectures unless formalized and proved.
