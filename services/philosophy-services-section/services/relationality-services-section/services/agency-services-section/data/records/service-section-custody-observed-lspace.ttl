@@ -1,23 +1,42 @@
-@prefix sec: <https://561.group/ontology/service-section-custody#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-# PINNED SCIENCE-LOCAL EXECUTABLE DEBT: one unreceived NI regression remains in this historical site.
-# Qualified Git source revision: ab54d08cb53a959d8ff3d57fd017c4e1b70d2566 (qualified after Engineering PR #409/#17, Science PR #143/#144).
-# Each source file's Git blob SHA was checked independently against the pinned tree.
-# This deliberately supplies explicit sec:holds evidence to the Science law's
-# SHACL + SPARQL input graph. Unexamined repositories and paths remain UNKNOWN.
-# Prior 14-file inventory remains recoverable in this file's Git history.
-# Relocated: links -> CAIRN; notebooks -> Gemini Notebook; directory validation -> File Engineering; MetroPlat reader and admission tests -> Digital Garden Engineering. Unexported index retired.
-# The sole remaining site test is still misplaced until Engineering PR #414 is received; absence from this
-# snapshot does not assert installed host receiving.
+# Historical custody reconciliation, NOT a current repository-wide
+# sec:holds inventory and NOT a compliance certificate.
+# The exact Science site Git tree below was inspected through GitHub's
+# recursively enumerated native tree object: THREE documentation blobs,
+# ZERO live .mjs executables, ZERO site package manifests or runtime tests.
+# Original executable observations (14 -> 12 -> 9 -> 5 -> 1) remain available
+# in this source's actual Git revision history, not duplicated as live assets.
+# This one-directory observation cannot certify the rest of Science or Group.
 
-<https://github.com/lenticule-science/science-services-section> sec:holds
-  <https://github.com/lenticule-science/science-services-section/blob/ab54d08cb53a959d8ff3d57fd017c4e1b70d2566/sites/l-space.561.group/test/ni-content-effects.test.mjs>,
+<https://github.com/lenticule-science/science-services-section/tree/eb7145545db457d20158914262e7431cf62ff740/sites/l-space.561.group>
+  a prov:Entity ;
+  rdfs:label "Retired Science-local L-Space executable directory" ;
+  rdfs:comment "Git tree eb7145545db457d20158914262e7431cf62ff740: README.md and two recovered 2026-10-04 historical documentation files only; no executable source, test, or package manifest in the enumerated directory." ;
+  prov:wasGeneratedBy <https://561.group/provenance/l-space/custody-extraction-2026-10-14> .
 
-<https://github.com/lenticule-science/science-services-section/blob/ab54d08cb53a959d8ff3d57fd017c4e1b70d2566/sites/l-space.561.group/test/ni-content-effects.test.mjs>
-  a sec:EngineeringImplementation ;
-  sec:sourcePath "sites/l-space.561.group/test/ni-content-effects.test.mjs" ;
-  sec:sourceRevision "ab54d08cb53a959d8ff3d57fd017c4e1b70d2566" ;
-  sec:primaryEngineeringConcern sec:Code ;
-  prov:wasDerivedFrom <https://api.github.com/repos/lenticule-science/science-services-section/git/blobs/dd9a5204cb451148145a8ce9f3629f33ee1eb0ed> .
+<https://561.group/provenance/l-space/custody-extraction-2026-10-14>
+  a prov:Activity ;
+  rdfs:label "L-Space Science site code moved or retired to its existing Engineering and instance owners" ;
+  prov:used
+    <https://github.com/lenticule-science/science-services-section/blob/311f42395f9466417ad5546aeaac0cea0e04722f/sites/l-space.561.group/test/ni-content-effects.test.mjs> ;
+  prov:wasInformedBy
+    <https://github.com/red-cup-engineering/computer-engineering-services-section/pull/414>,
+    <https://github.com/red-cup-engineering/computer-engineering-services-section/pull/412>,
+    <https://github.com/lenticule-science/science-services-section/pull/150>,
+    <https://github.com/lenticule-science/science-services-section/pull/151>,
+    <https://github.com/561-group/cold-red-gate/pull/154>,
+    <https://github.com/561-group/bare-cedar-fog/pull/829> ;
+  prov:generated
+    <https://github.com/lenticule-science/science-services-section/tree/eb7145545db457d20158914262e7431cf62ff740/sites/l-space.561.group> .
+
+<https://github.com/lenticule-science/science-services-section/blob/311f42395f9466417ad5546aeaac0cea0e04722f/sites/l-space.561.group/test/ni-content-effects.test.mjs>
+  a prov:Entity ;
+  prov:wasInvalidatedBy <https://561.group/provenance/l-space/custody-extraction-2026-10-14> .
+
+<https://github.com/red-cup-engineering/computer-engineering-services-section/blob/3933d453acb41c348beaddf36cb53e5adfb4c8df/services/computer-systems-engineering-services-section/services/computer-knowledge-systems-services-section/services/digital-garden-systems-services-section/test/l-space-ni-content-effects.test.mjs>
+  a prov:Entity ;
+  rdfs:comment "The exact NI/media HTTP regression has Git blob dd9a5204cb451148145a8ce9f3629f33ee1eb0ed in both historical Science source and Engineering recipient. Source fidelity is not a live test result." ;
+  prov:wasDerivedFrom
+    <https://github.com/lenticule-science/science-services-section/blob/311f42395f9466417ad5546aeaac0cea0e04722f/sites/l-space.561.group/test/ni-content-effects.test.mjs> .

@@ -1,6 +1,0 @@
-dist/
-lib/cloudflare/.wrangler/
-lib/cloudflare/wrangler.generated.jsonc
-public/js/
-.dev.vars
-lib/cloudflare/.dev.vars

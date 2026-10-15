@@ -6,6 +6,8 @@ The standalone Science garden executable was retired: **there is no current `@le
 
 The original `l-space.561.group` ingress redirect is owned by [Cold Red Gate deployment/ingress.json](https://github.com/561-group/cold-red-gate/blob/main/deployment/ingress.json). The copy formerly in Science was byte-for-byte identical at the Caddy stanza and is retired. An ingress declaration is **not evidence of a responsive service**.
 
-The sole remaining executable regression here, `test/ni-content-effects.test.mjs`, remains only because its byte-identical destination in [Engineering PR #414](https://github.com/red-cup-engineering/computer-engineering-services-section/pull/414) has not been merged. Do not publish or depend on this temporary Science package. Once the original test is received by Engineering, retire this test and package metadata, not merely their import errors.
+The last executable NI/media HTTP regression has been received **byte-identically** by [Digital Garden Engineering PR #414](https://github.com/red-cup-engineering/computer-engineering-services-section/pull/414), merged at commit `3933d453acb41c348beaddf36cb53e5adfb4c8df`. Its original Git blob was `dd9a5204cb451148145a8ce9f3629f33ee1eb0ed`; the Engineering source retained that exact blob. The Science-side test, package metadata and obsolete npm settings are retired. There is no executable package remaining in this historical Science site path.
+
+**This verifies source custody only.** A successful merge does not demonstrate a native Node test run, an installed Guix/LAGOON release, or successful public L-Space receiving; the machine instance and upstream Engineering application must each be checked independently.
 
 Unique earlier proposals under `docs/recovered/` are historical source evidence, not current deployment instructions. Reconstruct current behavior from the owner-held code and machine instances.
