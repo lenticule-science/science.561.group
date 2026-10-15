@@ -1,0 +1,43 @@
+name: "Migration — source and state transition"
+description: "Preserve ownership, history, and recovery through a bounded migration."
+title: "[Migration] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Search existing migration work first. Preserve original source and receiver identity.
+        Never paste credentials, secrets or private customer records.
+        A source transfer, installed consumer and independently accepted outcome are distinct.
+  - type: textarea
+    id: current-target
+    attributes:
+      label: Current state and intended destination
+      description: Name existing owner, exact source or state revision, destination and expected changed behavior.
+    validations:
+      required: true
+  - type: textarea
+    id: custody
+    attributes:
+      label: Authority, dependencies and custody
+      description: Who can move what? Identify source and recipient offices, lawful rights, active writers and consuming dependencies.
+    validations:
+      required: true
+  - type: textarea
+    id: preservation
+    attributes:
+      label: Preservation, interruption and rollback
+      description: Identify history, unique behavior, records, live consumers, interruption controls and independent rollback or recovery evidence.
+    validations:
+      required: true
+  - type: textarea
+    id: receiving
+    attributes:
+      label: Migration acceptance and refusal cases
+      description: Give exact independent source, destination and receiver checks; name collision, data-loss and unauthorized-write refusals.
+    validations:
+      required: true
+  - type: textarea
+    id: related
+    attributes:
+      label: Existing work and cost constraints
+      description: Link original issue/PR/specification, known operational hold, compute budget or previously accepted receipt.
