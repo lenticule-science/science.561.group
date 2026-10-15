@@ -101,3 +101,25 @@ layers — coarse enough to have nameable functions, fine
 enough to be tractably studied. Most published mechanistic
 interpretability results name specific heads (by layer,
 head-index pair) and assign each a role.
+
+## Disambiguation from 561 ATT
+
+This page uses *attention* as the **transformer attention
+mechanism**, a distinct named algorithmic operation. For queries
+`Q`, keys `K`, values `V`, head dimension `d`,
+a typical scaled-dot-product head calculates
+`softmax(QKᵀ/√d)V`. We must not call one head
+operation “one ATT”: the computation specifies
+matrix scores and value mixing, not a
+FOUR knowledge-order cover, independent border
+ACK, or WIT taken of that ACK.
+
+The [canonical ATT](https://github.com/lenticule-science/science-services-section/blob/main/services/social-science-services-section/services/economics-and-business-science-services-section/services/monetary-economics-science-services-section/content/text/glossary/terms/att.md)
+is an agent's finite WIT-denominated
+reconciliation budget and its second-order
+WIT-of-ACK reading. An empirical bridge
+between transformer computation cost and
+that budget needs a declared resource map
+(e.g. `inference-token`, `FLOPs`,
+`joules`) and measurement. A common
+word is not such a map.

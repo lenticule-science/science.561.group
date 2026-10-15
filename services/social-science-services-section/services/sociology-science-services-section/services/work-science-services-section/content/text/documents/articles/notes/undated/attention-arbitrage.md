@@ -2,7 +2,20 @@
 title: Names for the Attention-Arbitrage Media System
 description: A taxonomy memo arguing that content farms, clickbait, SEO spam, Made-for-Advertising sites, junk news, AI slop, affiliate spam, and engagement bait are not separate genres but one socio-technical system of attention arbitrage. Distinguishes packaging tactics, production organizations, labor arrangements, search manipulation, and ad-tech monetization, and proposes "attention-arbitrage media system" as the umbrella term, with the recurring four moves of cheap supply, distribution gaming, monetization arbitrage, and adaptation.
 keywords: ["attention-arbitrage", "content-farm", "clickbait", "seo-spam", "made-for-advertising", "junk-news", "ai-slop", "engagement-bait", "taxonomy", "media-economy"]
+status: domain-qualified-research
 ---
+
+## Canonicality and measured subject
+
+The published external phrase “attention arbitrage” is a **media-market research label**, not the 561 Group's ATT. The observable substrate here is ad-impression volume, click-throughs, auction price per impression/click, conversion counts, source/content costs, referral revenue and retained profit. For a measured market unit q, let margin(q)=receipts(q)-acquisitionAndProductionCost(q), with units and time bounds specified. Neither an impression nor a click is a WIT of a counterparty ACK. There is no proved conversion map from q to canonical ATT.
+
+Where the historical taxonomy says a publisher “buys attention,” the admissible economic claim must instead name its purchased instrument (advertiser reach, delivered impressions, estimated exposures, measured dwell intervals or other contract-defined metric) and the source that recorded it. These quantities cannot be substituted for the bounded WIT-denominated reconciliation budget B or an ATT(WIT-of-ACK) event. Claims about causal effect on an audience need their own identified measurements, not lexical inference.
+
+**Research status:** the taxonomy and its attributed industry terminology remain useful as a qualified market study. They are **not** a second WIT/ACK/ATT ontology or a canonical definition of ATT; retrieve the Science-owned monetary terms before comparing the two domains.
+
+---
+
+## Historical research text (retained as source, not terminological authority)
 
 *A taxonomy memo on mass-produced low-quality attention media*
 

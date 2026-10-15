@@ -1,5 +1,5 @@
 ---
-description: "Attention: a WIT taken of an ACK, the irreversible look by which an agent witnesses that its assertion was taken up. ATT names attention and nothing else."
+description: "ATT: the finite WIT-denominated reconciliation budget of an agent; at a receiving border, the second-order WIT taken of another party's ACK. These are separate sorts of one theory, not synonyms for subjective interest."
 identity: att
 name: ATT
 aliases:
@@ -22,42 +22,70 @@ relations:
     - wit
     - ack
 ---
-ATT is attention. The Leader stated on 2026-10-09: "WIT ACK ATT are not meant
-to be ambiguous, ATT is attention and there's meant to be good theory on
-this." ATT is never read as an abbreviation of anything else in the house.
 
-ATT is a [WIT](wit.md) taken of an [ACK](ack.md): the inside face
-witnesses another party's uptake, across the border, of the originating
-distinction. The WIT–ACK–ATT spiral is nested, not a psychological scale or
-three interchangeable activities. ATT does not mean "hours interested",
-"likes", "concern", or the actor's own declared approval. An ACK not
-observed by the originating actor does not by itself produce that actor's
-ATT; a mere claim that somebody acknowledged something is not a verified
-counterparty ACK. The "look that cannot be un-looked" supplies the
-proposed irreversible reading; its exact Landauer-bit identification is
-an **open mathematical bridge**, not a proved equality.
+ATT is the Group's **attention** term, not an open synonym for concern,
+reading time, employee hours, impressions or a generic mental state. The
+Leader's [2026-10-09 ruling](../../documents/articles/notes/2026/10/09/2026-10-09-note-on-wit-ack-and-att.md)
+holds two mathematically different but connected *sorts*.
 
-What is proved is *part of the mathematics of bounded allocation*,
-not the identification of ATT with every attention expenditure.
-Obsmetrologia's
-[AttentionAllocation](https://github.com/lenticule-science/obsmetrologia/blob/main/Obsmetrologia/Cohomology/AttentionAllocation.lean)
-proves feasibility, monotone budget consumption, and residual benefit
-order for selected obstructions. `AllocationSolver` derives finite
-optimization properties. `budget_splits` records
-`commits + mints + 2·jumps` at the specified closing step. The
-[September 4 synthesis](../../documents/articles/notes/2026/09/04/2026-09-04-note-on-acknowledgement-beside-wit.md)
-uses the TCP three-way handshake as an analogy for WIT–ACK–ATT and
-**conjectures** that the factor of two prices two looks. Neither the
-handshake analogy nor an asserted API route proves the identification
-`ATT = one Landauer bit` or the effectiveness of any deployed service.
-An ATT requires a concrete second-order WIT over a particular ACK.
+## ATT: budget and allocation
 
-WIT, ACK and ATT are the house's units for the 2026-09-26 bigger picture the
-Leader asked agents to read alongside the distal bypass and EROEI: a money
-generated text cannot print, built on wits and matched tallies.
+Let `B : ℕ` be the finite reconciliation budget of a bounded agent.
+For a list `S` of priced obstructions, define
 
-Open: construct and check the WIT–ACK–ATT bridge, including the
-conditions for an outside-face acknowledgment, an inside-face
-second-order WIT, and the relation (if any) between one such completed
-turn, a FOUR cover, a `Record` tally increment, and `Landauer.landauerBits`.
-Neither `budget_splits` nor the index balance already proves that bridge.
+`Feasible(B,S) := totalCost(S) ≤ B`
+
+and `residual(U,S) := totalBenefit(U) − totalBenefit(S)`.
+[`ObsmetrologiaEconomics/AttentionAllocation.lean`](../../../../../economics-science-services-section/lib/obsmetrologia-economics/ObsmetrologiaEconomics/AttentionAllocation.lean)
+proves feasibility of the empty selection, monotonicity of spent cost,
+downward closure of feasibility, and antitonicity of the residual in
+captured benefit. [`AllocationSolver.lean`](../../../../../economics-science-services-section/lib/obsmetrologia-economics/ObsmetrologiaEconomics/AllocationSolver.lean)
+provides the exhaustive finite optimizer and handed tie-selection
+results. The budget is denominated in witness-step costs on the
+October 9 source's reading; the general identification between
+these units and every physical or logical Landauer count is **not proved**.
+
+An agent's `B` is capacity; `totalCost(S)` is expenditure. An
+unspent budget is not a completed border ACK and not an instance of
+second-order witnessing. No automatically generated assertion may
+silently equate `B` with `totalCost(S)` or a single WIT.
+
+## ATT: a WIT of ACK at a border
+
+The nested receiving act is `WIT(ACK(w))`. The originator bears
+WIT `w` on a cell; another party produces a [counterparty ACK](ack.md)
+on `w` across a boundary; the originator then WITs **that ACK**.
+The second-order witnessing act is a distinct transition, not
+automatically produced by transmitting the first WIT or by the
+other party issuing its ACK. The [September 4 source
+synthesis](../../documents/articles/notes/2026/09/04/2026-09-04-note-on-acknowledgement-beside-wit.md)
+models the receiving geometry as faces of an agent and names the
+second-order move ATT.
+
+The September 4 and October 9 records propose a correspondence
+between this nested act and the finite WIT-denominated expenditure
+from the budget. That correspondence is a **research reading** of
+the existing formal structures, not a checked general theorem
+that every ACK yields one ATT or exactly one Landauer bit.
+The proved `budget_splits` uses `2 × jumps` as two knowledge-order
+covers; identifying that factor with the two agents' looks in a
+handshake is explicitly conjectural.
+
+## Term conformance
+
+- Use `ATT(B,S)` when discussing bounded allocation.
+- Use `ATT(w,a)`, with `a=ACK(w)` and a distinct second-order
+  witnessing act, when discussing uptake at a border.
+- Use `operator-hours`, `compute-tokens`, `joules`, `impressions`,
+  `watched-minutes` or the appropriate measured resource when
+  those are the actual observations; do not call them ATT without
+  a valid mapping and its evidence.
+- A [FOUR WIT](wit.md), a [counterparty ACK](ack.md) and a
+  [matched economic tally](tally.md) remain distinct. A valid
+  tally on transaction `b` does not discharge another obligation
+  `o` merely because both were discussed politically.
+
+This lexical policy is machine-addressable through the section's
+[`wit-ack-att-lexical-admission.json`](../../../../data/records/wit-ack-att-lexical-admission.json).
+The profile only nominates exact spans for semantic review; it does
+not certify a theorem or a deployed recipient.

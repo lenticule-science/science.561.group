@@ -2,14 +2,32 @@
 name: "Witness Propagation"
 keywords: ["agent-teams", "descent-cohomology", "witness-propagation"]
 status: "draft"
+description: "Candidate transport of an identified evidence-cell increment over team communication channels; source WIT count, receiver uptake, and descent compatibility remain separate."
 ---
 
-Witness propagation is the movement of a witnessed cell-pattern from one local agent view into the wider team topology. In the local research program, a witness starts as an increment in one cell-system; propagation tries to transport that increment across communication channels so the team can share or adjudicate it.
+# Witness propagation
 
-The source theorem [Witness-network propagation as fibration-comonad descent](../../../../services/social-theory-science-services-section/content/text/documents/articles/notes/undated/witness-network-propagation-as-fibration-comonad-descent.md) states the stronger reading: witness-sharing protocol design is descent-data design. Broadcast, gossip, BFT consensus, and eventual consistency are choices about when and how the team enforces cocycle compatibility.
+**Carrier:** a particular cell `c`, source/local position `i`,
+evidence value `v_i(c)`, source identifier and propagation map
+`ρ_{ij}` to receiver `j`. Transport produces a proposed receiver
+reading `ρ_{ij}(v_i(c))`. The receiver's existing evidence tally and
+FOUR knowledge charge determine whether incorporating it produces
+**a new local WIT cover**. A retransmission of the same source
+evidence is not, by itself, another source WIT.
 
-The operational companion is [Organizations as bilattice network sheaves](../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/teaching-articles/explanations/organizations-as-bilattice-network-sheaves.md), where teams are communication covers whose local valuations either glue into consensus or expose disagreement cells.
+An independent receiver may issue [ACK](https://github.com/lenticule-science/science-services-section/blob/main/services/social-science-services-section/services/economics-and-business-science-services-section/services/monetary-economics-science-services-section/content/text/glossary/terms/ack.md)
+for that particular WIT at the crossing. **Transport ≠ ACK**:
+delivery, incorporation and counterparty uptake are different events.
+An [ATT](https://github.com/lenticule-science/science-services-section/blob/main/services/social-science-services-section/services/economics-and-business-science-services-section/services/monetary-economics-science-services-section/content/text/glossary/terms/att.md)
+of that ACK requires the second-order WIT, not just a broadcast log.
 
-## Use
+The [fibration/comonad descent paper](../../../../services/social-theory-science-services-section/content/text/documents/articles/notes/undated/witness-network-propagation-as-fibration-comonad-descent.md)
+is marked `status: sketch`; its `descent-clean` condition is a
+proposed compatibility test, **not** a Lean-verified theorem or a
+measured `H¹` value of a real team. Specify the cover, restrictions
+and overlaps before claiming a cocycle or obstruction.
 
-Use this term when an agent, office, team, or subsystem submits a claim that must become visible to other local views. The question is not only whether the witness is true, but whether its propagation is descent-clean, descent-failed, or awaiting adjudication.
+This entry concerns transporting source-bound evidence. It does not
+introduce a second definition of WIT. Use the
+[canonical WIT](https://github.com/lenticule-science/science-services-section/blob/main/services/social-science-services-section/services/economics-and-business-science-services-section/services/monetary-economics-science-services-section/content/text/glossary/terms/wit.md)
+knowledge-cover condition for each new receiving cell.

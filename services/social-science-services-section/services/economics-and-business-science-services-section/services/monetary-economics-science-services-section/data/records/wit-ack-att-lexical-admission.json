@@ -1,0 +1,184 @@
+{
+  "kind": "ptgae.canonical-term-admission/v1",
+  "id": "lenticule-monetary-wit-ack-att-20261014",
+  "sourceOwner": "lenticule-science/science-services-section",
+  "scienceDomain": "monetary-economics-science-services-section",
+  "scope": "Authored 561 Group prose, excluding quotations, citations, code, vendor identifiers, original titles and archival evidence",
+  "intendedConsumer": "red-cup-engineering/ptgae-engineering-services-section:controlled-term-admission",
+  "status": "operative-lexical-review-profile",
+  "canonicalTerms": [
+    {
+      "id": "WIT",
+      "collisionForms": [
+        "wit",
+        "wits",
+        "witness",
+        "witnesses",
+        "witnessed",
+        "witnessing"
+      ],
+      "source": "https://github.com/lenticule-science/science-services-section/blob/main/services/social-science-services-section/services/economics-and-business-science-services-section/services/monetary-economics-science-services-section/content/text/glossary/terms/wit.md",
+      "admissibleSorts": [
+        {
+          "id": "four-cover",
+          "required": [
+            "cellRef",
+            "fromCharge",
+            "toCharge",
+            "evidenceRef"
+          ]
+        },
+        {
+          "id": "definition",
+          "required": [
+            "sourceRef"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ACK",
+      "collisionForms": [
+        "ack",
+        "acks",
+        "acknowledge",
+        "acknowledges",
+        "acknowledged",
+        "acknowledging",
+        "acknowledgment",
+        "acknowledgments",
+        "acknowledgement",
+        "acknowledgements"
+      ],
+      "source": "https://github.com/lenticule-science/science-services-section/blob/main/services/social-science-services-section/services/economics-and-business-science-services-section/services/monetary-economics-science-services-section/content/text/glossary/terms/ack.md",
+      "admissibleSorts": [
+        {
+          "id": "counterparty-uptake",
+          "required": [
+            "witRef",
+            "issuerRef",
+            "receiverRef",
+            "borderRef",
+            "uptakeRef"
+          ]
+        },
+        {
+          "id": "definition",
+          "required": [
+            "sourceRef"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ATT",
+      "collisionForms": [
+        "att",
+        "atts",
+        "attention",
+        "attend",
+        "attends",
+        "attended",
+        "attending",
+        "attentive",
+        "attentiveness"
+      ],
+      "source": "https://github.com/lenticule-science/science-services-section/blob/main/services/social-science-services-section/services/economics-and-business-science-services-section/services/monetary-economics-science-services-section/content/text/glossary/terms/att.md",
+      "admissibleSorts": [
+        {
+          "id": "bounded-budget",
+          "required": [
+            "agentRef",
+            "budgetRef",
+            "obstructionSetRef",
+            "allocationRef"
+          ]
+        },
+        {
+          "id": "wit-of-ack",
+          "required": [
+            "witRef",
+            "ackRef",
+            "originatorRef",
+            "uptakeRef"
+          ]
+        },
+        {
+          "id": "definition",
+          "required": [
+            "sourceRef"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "TALLY",
+      "collisionForms": [
+        "tally",
+        "tallies",
+        "tallied",
+        "tallying"
+      ],
+      "source": "https://github.com/lenticule-science/science-services-section/blob/main/services/social-science-services-section/services/economics-and-business-science-services-section/services/monetary-economics-science-services-section/content/text/glossary/terms/tally.md",
+      "admissibleSorts": [
+        {
+          "id": "economic-settlement",
+          "required": [
+            "crossingRef",
+            "releaseRef",
+            "admissionRef",
+            "matchEvidenceRef"
+          ]
+        },
+        {
+          "id": "record-count",
+          "required": [
+            "recordRef",
+            "positiveTallyRef",
+            "negativeTallyRef"
+          ]
+        },
+        {
+          "id": "definition",
+          "required": [
+            "sourceRef"
+          ]
+        }
+      ]
+    }
+  ],
+  "foreignSenseRule": {
+    "disposition": "review-required-until-explicitly-attributed",
+    "reviewerMustSupply": [
+      "sourceRef",
+      "domain",
+      "reason"
+    ],
+    "prohibitedAction": "Never infer a monetary WIT/ACK/ATT from a constructive proof witness, legal testimonial witness, transformer attention head, cognitive-science attention, marketing impressions, or a historical source quotation."
+  },
+  "receipt": {
+    "fileContentSha256": "Exact UTF-8 bytes of the whole source, as SHA-256 lowercase hex",
+    "sourceSpan": "UTF-16 half-open [start,end] of the exact candidate text",
+    "matchedText": "Exact source substring",
+    "term": "One canonicalTerms[].id",
+    "sort": "One of that term's admissibleSorts[].id, or foreign-discipline",
+    "details": "Object containing all required fields for that sort",
+    "sourceRef": "Non-empty URI of the canonical or independent distinct-discipline authority",
+    "reviewedBy": "Non-empty human or authorized office identity; a parser alone cannot admit meaning"
+  },
+  "invariants": [
+    "A scanner reports candidate spans, not mathematical facts.",
+    "Receipts are invalidated by any change to the exact source SHA-256 or occurrence offsets.",
+    "A collision form is a review trigger, never a synonym or permission to replace a canonical term.",
+    "Validating receipt shape does not prove the cited sources or semantic judgment.",
+    "Canonical WIT refers to exactly one FOUR knowledge-order cover, not a whole encounter or an arbitrary Record increment.",
+    "ACK requires an actor other than the original assertion actor, not merely an author's declaration.",
+    "ATT distinguishes bounded budget allocation and second-order WIT of ACK; a balance is not identical to an individual move.",
+    "Evidence Record tallies and economic paired settlement tallies must remain distinct."
+  ],
+  "referenceNotes": [
+    "https://github.com/lenticule-science/science-services-section/blob/main/services/social-science-services-section/services/economics-and-business-science-services-section/services/monetary-economics-science-services-section/content/text/documents/articles/notes/2026/10/09/2026-10-09-note-on-wit-ack-and-att.md",
+    "https://github.com/lenticule-science/obsmetrologia/blob/main/docs/history/quot-sound-as-residue.md",
+    "https://github.com/lenticule-science/science-services-section/blob/main/docs/plain-technical-general-american-english.md"
+  ]
+}

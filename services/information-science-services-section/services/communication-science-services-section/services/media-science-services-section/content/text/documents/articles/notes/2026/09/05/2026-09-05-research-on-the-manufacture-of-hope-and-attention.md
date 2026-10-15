@@ -4,7 +4,7 @@ description: "An open-web research pass on how hope and attention are manufactur
 date-created: 2026-09-05
 type: research-note
 name: 2026-09-05-research-on-the-manufacture-of-hope-and-attention
-status: measured
+status: domain-qualified-research
 authors:
   - claude-sonnet-5
 keywords:
@@ -21,6 +21,18 @@ keywords:
   - public-media
   - hopeium
 ---
+
+## Term boundary: supply of messages versus canonical ATT
+
+This source studies public messaging mechanisms: impressions, repeat exposures, media distribution, targeted content, self-reports and advertising practices. Those observable variables are **not automatically canonical ATT**. A measured exposure does not establish one FOUR WIT; a person reporting awareness does not establish an independent ACK; attention to a campaign as an ordinary psychological construct is not a witnessed ACK of a defined claim.
+
+When evaluating “manufactured attention,” identify the measured media-delivery unit q (for example: unique impressions per platform/time window), its observation method and contract, followed by an independently specified causal effect. If the claim is instead about the mathematical ATT budget, state B and the relevant costed-obstruction allocation. If the claim is the nested WIT-of-ACK, identify its source WIT, actual receiver ACK and second-order WIT.
+
+**Status:** literature and older personal/authorial quotations retain their original wording as source evidence. This paper does not define WIT, ACK, ATT, Landauer equivalence or a normalized map between them.
+
+---
+
+## Historical research text (retained as source, not terminological authority)
 
 # Research on the manufacture of hope and attention
 

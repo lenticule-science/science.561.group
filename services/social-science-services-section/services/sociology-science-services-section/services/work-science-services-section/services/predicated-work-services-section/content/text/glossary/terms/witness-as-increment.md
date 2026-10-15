@@ -1,62 +1,88 @@
 ---
-type: morphism
+type: definition
 class: correspondence
 status: draft
+name: "Event attestation as operational increment"
+previous-title: "Witness as increment"
 depends-on: [operations-settling, increment-sequence]
-realizes: [witness, observation, event-log]
-aliases:
-  - Witness as increment
 ---
 
-# Witness as increment
+# Event attestation and FOUR WIT are different objects
 
-The correspondence between the operational *witnesses* of a working community and the *increment sequence* of the [operations settling](../../../../../../../../../../../../../public-services-section/services/personal-services-section/services/emsenn-services-section/content/text/glossary/terms/operations-settling.md).
+**Definitions.** An event attestation \`e\` records an attributed
+operation, claim, source, stage and, where present, the affected
+predication cell \`φ_e\`. An evidence increment \`u_τ(φ_e)\`
+proposes a change to that cell's evidence \`Record\`. A
+[WIT](https://github.com/lenticule-science/science-services-section/blob/main/services/social-science-services-section/services/economics-and-business-science-services-section/services/monetary-economics-science-services-section/content/text/glossary/terms/wit.md)
+is **one FOUR knowledge-order cover**. The former is not
+automatically the latter.
 
-A witness, in the engineering vocabulary of [the predicated-computing theory](../../../../../../../../../../../engineering-services-section/services/computer-services-section/services/computer-systems-services-section/services/semiotic-computer-system-services-section/content/text/glossary/concepts/witness.md), is a substrate-recorded entry attesting that an event happened — an agent invoked a skill, a task was completed, a capability was asserted, a charter rule fired. Witnesses accumulate in the [event log](../../../../../../../../../../../engineering-services-section/services/computer-services-section/services/computer-systems-services-section/services/semiotic-computer-system-services-section/content/text/glossary/terms/event-log.md), which is the chronological sequence of all witnesses recorded.
+Let \`R_τ(c)=(p_τ,n_τ)∈ℕ²\`, and
+\`charge(R_τ(c))=(1[p_τ>0],1[n_τ>0])\`. For
+a new attestation \`e\`, the proposed tally update is
+\`R_{τ+1}(c)=R_τ(c)+Δ_e\`, where
+\`Δ_e∈ℕ²\` is its nonnegative evidence-count contribution,
+and the same attestation must not be double-booked on replay.
 
-Because witness increments are $\leq_k$-monotone (each witness raises a cell's knowledge-order value, never lowers it), the CALM (Consistency As Logical Monotonicity) result applies directly.
-By the [predication-settling CALM corollary](../../../../../../../../../../../information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/formalization/infomaterial/lib/infomaterial/docs/verso/mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/content/sheaf/content/settling-cohomology/references/settling-calm-corollary.md):
+A **new FOUR WIT cover** at \`c\` exists only if the two charges
+differ by one coordinate rising from 0 to 1. A transition
+\`(0,0)→(1,1)\` consumes two covers, not one; a transition
+\`(1,0)→(2,0)\` adds a tally but **zero** new FOUR covers.
+The unverified assertion of a task's completion is evidence of
+the speaker's assertion; it is not independent fulfillment.
 
-Any positive query about the witness history — "has this event been witnessed?" — is coordination-free: a replica that has received the increment $u_\tau(\phi_w) = v_w$ can confirm the witness locally.
-The event log's key property is that positive witness queries are coordination-free in a distributed setting: any node with a local replica of the event log can confirm that a specific witness exists without central coordination.
+**Source relationship:** the historical “witness as increment”
+correspondence was an informal alignment between records of work
+and a monotone evidence log. Its correct scope is
+\`attestation(e) ↦ proposed Δ_e\`; only the
+derived \`charge\` transition can be counted in WIT units.
+Calling an entire event log record “one wit” violates the unit.
 
-Negative queries — "has this event *not* been witnessed?" — require coordination, as they confirm the absence of an increment.
-This is the CALM-theoretic reason that "proving non-completion" requires coordination in distributed work systems: it requires establishing the absence of a completion-witness across all log replicas.
+## Separate reception and contested evidence
 
-When two witnesses at the same cell assert opposing values — $u_\tau(\phi) = \mathbf{t}$ (completion claim) and $u_{\tau'}(\phi) = \mathbf{f}$ (failure record) for $\tau' > \tau$ — the cell is driven to $\top$ (both values recorded).
-The [truth-knowledge long exact sequence](../../../../../../../../../../../information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/obsmetrologia/docs/verso/mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/content/sheaf/content/settling-cohomology/references/truth-knowledge-cohomology-long-exact-sequence.md) applied to the witness sheaf $\mathcal{F}_{\mathrm{wit}}$ captures this:
+A remote copy of an attestation does not create a second **source**
+WIT. A receiver may undergo a distinct *local* FOUR cover after
+admitting the evidence. To issue [ACK](https://github.com/lenticule-science/science-services-section/blob/main/services/social-science-services-section/services/economics-and-business-science-services-section/services/monetary-economics-science-services-section/content/text/glossary/terms/ack.md),
+the other party must record uptake of a **particular WIT**
+at a border. Delivery, local storage and ACK are not synonyms.
+An [ATT](https://github.com/lenticule-science/science-services-section/blob/main/services/social-science-services-section/services/economics-and-business-science-services-section/services/monetary-economics-science-services-section/content/text/glossary/terms/att.md)
+of the ACK requires a second-order witnessing event.
 
-$\mathcal{F}^{(\top)}_{\mathrm{wit}} \neq 0$ at the contradicted cell.
-The connecting morphism $\partial: H^0(\mathcal{F}^{(\top)}_{\mathrm{wit}}) \to H^1_t(\mathcal{F}^{(t)}_{\mathrm{wit}})$ is non-zero — the conflicting witness pair produces a degree-1 cohomological obstruction.
-The audit log is replayable to any stage (by the determinism/replayability property above); the LES class identifies the specific stage-range where the contradiction arose.
+Conflicting evidence \`p>0 ∧ n>0\` gives FOUR charge \`⊤\`.
+This fact **does not entail nonzero cohomology**. The assertion
+\`H¹≠0\` requires a specified cover, coefficient system,
+restriction maps, cocycle and calculation showing nontriviality.
+A one-cell contradiction can coexist with \`H¹=0\` on a
+trivial/contractible cover. A local \`⊤\` and a global
+descent obstruction have different types.
 
-Adjudication (determining how the contradiction is resolved) is the substrate operation that moves the $\top$-cell forward in the [repair-resolution poset](../../../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/content/individual/content/agent/actuating/content/actuator/embodying/content/body/integrating/content/drone/swarming/content/swarm/content/humanities/theories/math/theories/categories/theories/predication-categories/objects/repair-resolution-poset.md).
-It is realized by the [adjudicate-witness-conflict morphism](../../../../../../../../../social-theory-science-services-section/content/text/documents/articles/notes/undated/adjudicate-witness-conflict.md), which takes a $\top$-cell witness and a resolution-kind $\kappa \in \{\textsf{affirm}, \textsf{retract}, \textsf{acknowledge}\}$ and issues an increment whose effect on $H^0(\mathcal{F}^{(\top)}_{\mathrm{wit}})$ depends on the kind: affirm/retract drive the contributing class to zero (collapsing the LES at that cell), while acknowledge preserves the $\top$-cell and its $H^1$-class — see [adjudication-modes-and-h1](../../../../../../../../../social-theory-science-services-section/content/text/documents/articles/notes/undated/adjudication-modes-and-h1.md) for the full cohomological accounting.
+## Operational query scope
 
-The math's [increment](../../../../../../../../../../../library/theories/humanities/theories/math/theories/categories/theories/predication-categories/objects/increment-sequence.md) at stage $\tau$, written $u_\tau$, is the new evidence introduced at that stage — a [predication valuation](../../../../../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/predication-valuation.md) representing the cells whose values the substrate is asserting at $\tau$.
+- An append-only log allows a replica to establish **local
+  membership** of a known event identifier without a
+  coordinator. It cannot by itself prove that the claimed event
+  actually occurred.
+- A local *absence* of an entry does not prove global
+  nonexistence across asynchronously replicated stores.
+- A closure-rule consequent is a **derived reading**, not
+  an independent attributed attestation. No closure process
+  may fabricate the source's actor, signature, witness event
+  or counterparty ACK.
+- Replayability requires a specified deterministic transition
+  rule, canonical source inputs, event order and recorded
+  nondeterminism. A bare event-log name proves none of these.
 
-The correspondence:
+## Adjudication
 
-$$\text{witness } w \text{ at stage } \tau \;\;\longleftrightarrow\;\; \text{increment cell } u_\tau(\phi_w) = v_w$$
+For evidence \`R(c)=(p,n)\` with both tallies positive,
+an adjudicator may add an authorized **disposition record**
+marking one source's *standing* as superseded, or retain the
+contested standing. This does **not subtract** evidence from
+the append-only record. If a new active-evidence projection
+excludes a superseded source, name that projection and its
+authority; do not state that FOUR's monotone join itself
+changed from \`⊤\` to \`t\` or \`f\`.
 
-where $\phi_w$ is the predication cell the witness attests, and $v_w \in \mathbf{FOUR}$ is the value the witness asserts.
-
-## Witness kinds and their increments
-
-Each witness kind in the engineering vocabulary is a specific shape of increment:
-
-- **Completion witness** — agent $A$ claims task $T$ is complete. Increment cell: $\langle T, \texttt{completed-by}, A\rangle$ at $\mathbf{t}$.
-- **Failure witness** — task $T$ failed, recorded by $A$. Increment cell: $\langle T, \texttt{failed-by}, A\rangle$ at $\mathbf{t}$, plus a $\mathbf{f}$-value increment on the task's goal cells (settling them to negative evidence).
-- **Enrollment witness** — agent $A$ has joined office $O$. Increment cell: $\langle A, \texttt{member-of}, O\rangle$ at $\mathbf{t}$. The capability-propagation closure rule then fires at the next closure step.
-- **Observation witness** — agent $A$ records observation $X$ about scope $\sigma$. Increment cell: $\langle X, \texttt{observed-by}, A\rangle$ at $\mathbf{t}$, plus the substantive content cells of the observation.
-- **Charter-violation witness** — a charter rule fired and detected a violation pattern. Increment cell: $\langle \texttt{violation-record}, \texttt{detected-by}, \texttt{rule}\rangle$ at $\mathbf{t}$.
-
-## Determinism and replayability
-
-Because $v^{\mathrm{op}}_{\tau+1}$ is determined by $v^{\mathrm{op}}_\tau$, $u_\tau$, and $\mathcal{S}_{\mathrm{op}}$ via [closure-drivenness](../../../../../../../../../../../library/theories/humanities/theories/math/theories/categories/theories/predication-categories/concepts/closure-drivenness.md), the operations settling can be reconstructed at any stage from the initial state plus the witness/increment sequence. This is what makes the [event log audit-replayable](../../../../../../../../../engineering/theories/tech/theories/computing/theories/predicated-computing/concepts/provenance.md): the log alone, plus the closure-rule system, regenerates the operational state at every past moment.
-
-## What the correspondence forbids
-
-The correspondence is not bidirectional in shape: every witness corresponds to an increment cell, but not every increment cell needs a witness. Closure-rule consequents are *derived* values, not witnesses — they are what the closure operator produces from the prior state plus the witness-driven increments. The witness/increment correspondence is between *external evidence* and the increment sequence; the *internal* propagation of that evidence under closure is a separate concern.
-
-This forbids a class of operational pathology: closure rules cannot synthesize witnesses. An agent's claim to have completed a task must be a witness — an increment cell at a specific stage, signed by the agent — not a derived value the closure rules conjured. The settling-monotonicity property guarantees that derived values cannot retract witnesses; the witness/increment correspondence guarantees that witnesses cannot be substituted by derivations.
+See [Adjudicate contested source evidence](https://github.com/lenticule-science/science-services-section/blob/main/services/social-science-services-section/services/social-theory-science-services-section/content/text/documents/articles/notes/undated/adjudicate-witness-conflict.md).
+That draft explicitly distinguishes case disposition, receiver
+ACK, and a cohomological assertion not yet proved.

@@ -21,7 +21,21 @@ keywords:
 date-created: 2026-06-19
 date-modified: 2026-06-19
 tags: [hive, attention-stake-economy, delegated-proof-of-stake, hive-power, hbd, resource-credits, curation-rewards, downvote, decentralized-hive-fund, whale-dependence, stake-concentration, peg-risk, real-yield, small-wallet-strategy]
+status: domain-qualified-research
 ---
+
+## Two independent source vocabularies
+
+**Hive witness** is the Hive blockchain's designated block-producer/governance protocol role; it is NOT one WIT knowledge-order cover. Quantify it using the actual witness-vote, producer-schedule, block and reward records, with exact network, date and block range. The string “witness vote” is a historical/protocol identifier, not a unit of Obsmetrologia WIT. One registered blockchain vote does not establish a receiving counterparty ACK for an unrelated claim.
+
+**Hive attention-stake economy** is a provisional sociological name for stake-weighted curation, social interactions and reward flows. Define independent measurements as (votes, vote weights, vested stake, curation payouts, author payouts, comment/post events, recipient account balances), not as undefined “attention capital.” A Hive reward payout can be settled according to its contract while canonical ATT(w,a) remains unobserved. A monetary yield is not a WIT(ACK) event by verbal similarity.
+
+Separate (i) an on-chain event, (ii) its receiving/network confirmation, (iii) an Obsmetrologia FOUR transition on an exactly identified cell, and (iv) an actor's WIT of a border ACK. These require different evidence. The historical sociological hypothesis about how stake affects distribution remains testable; the apparent WIT/ATT synonymy is not a permitted inference.
+
+---
+
+## Historical research text (retained as source, not terminological authority)
+
 # Hive as an Attention-Stake Economy: Capital, Yield, Labor, Governance, and Liquidity
 
 ## Abstract

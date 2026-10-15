@@ -1,26 +1,45 @@
 ---
-description: The attention economy is an economic order in which a person's attention, not material wealth or labor, is the scarce resource being allocated, monetized, and paid for.
+description: "External literature's attention-economy market: exchange involving measured impressions, viewing intervals or user interactions; these are not canonical ATT without a typed mapping."
 identity: attention-economy
 name: Attention economy
 date-created: 2026-09-05
 references:
   simon1971:
-    authors:
-      - Herbert A. Simon
+    authors: ["Herbert A. Simon"]
     title: Designing Organizations for an Information-Rich World
-    publication: in Martin Greenberger (ed.), Computers, Communications, and the Public Interest
-    publisher: Johns Hopkins University Press
     year: 1971
   goldhaber1997:
-    authors:
-      - Michael H. Goldhaber
+    authors: ["Michael H. Goldhaber"]
     title: The Attention Economy and the Net
     publication: First Monday 2(4)
     year: 1997
     url: https://firstmonday.org/ojs/index.php/fm/article/view/519
 ---
-The attention economy names an economic order in which human attention, not material wealth or labor, is the scarce resource that structures production, payment, and status. Herbert Simon's 1971 essay states the founding move: "a wealth of information creates a poverty of attention," arguing that an information-rich environment makes attention, not information, the resource a system must economize [@simon1971]. Michael Goldhaber's 1997 essay names the economy itself: in a network-saturated world, attention becomes the resource whose allocation drives the rest of economic life [@goldhaber1997].
 
-The attention economy is distinguished from a labor market by what is being paid for: a labor market pays for a specified deliverable a worker produces, while an attention-economy surface pays for the fact of a person's attention being directed somewhere, independent of any output. It is distinguished from advertising in the older sense by directness: earlier advertising paid a publisher for placing content in front of an audience without paying the audience itself, while an attention-economy surface (a poll, an ad-watching app) shares a portion of that same advertiser or offer-wall revenue directly with the person whose attention was captured.
+# Attention economy (external market label)
 
-The engineering consequence is that an attention-economy reward's rate is set by what a third party (an advertiser, a data buyer) is willing to pay for that attention, not by any labor-market wage floor, so a no-buy catalog entry for an attention-economy surface should expect and record a rate far below minimum wage when annualized against the time actually spent, and should record any daily cap the platform imposes, since the cap — not the per-unit rate — is usually what determines the surface's total possible payout to one person.
+**Literature:** Herbert Simon (1971) analyzes the scarcity of
+human information-processing capacity under information abundance;
+Goldhaber (1997) uses the *attention economy* name. These works
+do not specify the 561 Group's mathematical ATT, and their term is
+recorded here under its **distinct bibliographic meaning**, not
+adopted as a synonym for WIT-of-ACK.
+
+**Market observables:** a provider may sell
+`impressions`, `watched-minutes`, `clicks`,
+`qualified-completions`, `ad-auction placements` or
+`verified offer-wall actions`. Let `q` be the contracted
+unit and `p(q)` its price. Gross operator receipts are
+`∑ p(q)·count(q)`, subject to any actual caps, fraud controls
+and settlement. Without an explicit, checked map
+`f : q → ATT`, **the provider's q is not ATT**.
+The site recording a click or watched-minute supplies no automatic
+WIT of an independent receiving ACK.
+
+**Group interpretation:** [canonical ATT](https://github.com/lenticule-science/science-services-section/blob/main/services/social-science-services-section/services/economics-and-business-science-services-section/services/monetary-economics-science-services-section/content/text/glossary/terms/att.md)
+has a bounded reconciliation-budget sort and a nested WIT-of-ACK
+sort. The external market exchanges its own observed `q`
+units; it may price one agent's limited capacity but does not
+inherit our ATT identity by verbal similarity. The recorded
+rate `p(q)`, cap and realized payments determine economics,
+not claims that a person was "paid for attention".

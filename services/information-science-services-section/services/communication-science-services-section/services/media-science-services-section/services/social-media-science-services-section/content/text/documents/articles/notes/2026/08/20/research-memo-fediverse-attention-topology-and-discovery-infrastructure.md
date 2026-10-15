@@ -12,7 +12,21 @@ keywords:
   - search
 title: "Research memo: Fediverse attention topology and discovery infrastructure"
 description: The Fediverse is often described as “non-algorithmic,” but that description is misleading.
+status: domain-qualified-research
 ---
+
+## Topology measurement is not ATT
+
+The named subject of this historical memo is **Fediverse discovery and reach**. Candidate observables are delivery graph edges, relays, fetched posts, local/remote timeline inclusion, followers, public interactions, searches and instance-specific visibility policies. Each variable must include observation time, instance/scope and the documented query. Calling their aggregation “attention” is a sociological name, not a WIT-denominated reconciliation budget or an individual WIT of ACK.
+
+An ActivityPub message being delivered to an inbox is not automatically a canonical ACK. A protocol Accept activity may be an explicit uptake for the particular Follow request it references; to classify it as the Group's ACK, exhibit the original WIT, genuinely separate receiving party and matched case. WIT/ATT counts cannot be reconstructed simply by counting Likes, Announces, feeds or impressions. The social topology findings must not be stated as H¹ calculations unless the required cover/restrictions/cochains and a non-exact cocycle are supplied.
+
+The old title is retained as the study's published research label, NOT a new synonym for the canonical mathematical term.
+
+---
+
+## Historical research text (retained as source, not terminological authority)
+
 # Research memo: Fediverse attention topology and discovery infrastructure  
 **Scope:** ActivityPub-conformant Web, not Mastodon alone.  
 **Date:** June 11, 2026.  

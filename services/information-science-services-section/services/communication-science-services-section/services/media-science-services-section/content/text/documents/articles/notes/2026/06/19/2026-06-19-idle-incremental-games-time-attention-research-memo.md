@@ -6,7 +6,20 @@ date-modified: 2026-06-19
 keywords: ["idle-games", "time-as-resource", "supervised-accumulation", "return-ritual", "monetized-time", "rewarded-ads", "offline-cap", "dark-patterns", "loot-box", "procedural-rhetoric", "game-studies", "duplicate-intake"]
 aliases:
   - "Idle Machines: Time, Attention, and Monetized Return in Idle Games"
+status: archived-triage
 ---
+
+## Terminology qualification
+
+This imported game-study memo uses “player attention” for observed screen time, return frequency, clicks, ad views or session-continuation decisions. These are **time/behavior/advertising observables**, not canonical ATT. A rewarded-ad completion is not by definition a FOUR WIT or an independent counterparty ACK. Specify the SDK event, on-screen duration, completion receipt, issuer, receiver and payout rule as separate events.
+
+To count Group WIT/ACK/ATT on a game event, identify a particular source claim, before/after FOUR knowledge charge, genuinely independent receiving ACK, and second-order witnessing, rather than rebranding user minutes as a witness denomination. Historical media/game literature may retain its own original word choice as cited source evidence.
+
+**Status:** the original frontmatter already states duplicate intake preserved for triage. It is excluded from canonical term-generation exemplars.
+
+---
+
+## Historical research text (retained as source, not terminological authority)
 
 # Idle Machines: Time, Attention, Accumulation, and Monetized Return in Idle and Incremental Games
 

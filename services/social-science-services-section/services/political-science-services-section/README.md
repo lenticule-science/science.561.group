@@ -53,3 +53,18 @@ The maintained, source-qualified Political Science question is
 [WIT/ACK/ATT: electoral receipts and unmatched obligations](content/text/documents/articles/notes/2026/10/14/2026-10-14-witness-acknowledgment-attention-obligation-electoralism.md).
 It is a proposed application of *existing* structures, not a second ledger
 or social-engagement taxonomy.
+
+## Source-qualified political vocabulary
+
+Political Science does **not** own new aliases for WIT,
+ACK or ATT. The canonical [Science lexical admission profile](../economics-and-business-science-services-section/services/monetary-economics-science-services-section/data/records/wit-ack-att-lexical-admission.json)
+must be consulted together with the substantive law.
+Where one election's independently matched tally is cited
+as fulfillment of a different obligation, show the exact
+authorized bridge to the harmed relation's performance and
+beneficiary-side receiving. Absent that bridge, conclude only
+that the election-side transaction is evidenced; do not
+infer an obligation-specific discharge. The
+[October 14 Electoral Receipts note](content/text/documents/articles/notes/2026/10/14/2026-10-14-witness-acknowledgment-attention-obligation-electoralism.md)
+is a source-corrected, **untested** political mechanism,
+not a claim about all voters.

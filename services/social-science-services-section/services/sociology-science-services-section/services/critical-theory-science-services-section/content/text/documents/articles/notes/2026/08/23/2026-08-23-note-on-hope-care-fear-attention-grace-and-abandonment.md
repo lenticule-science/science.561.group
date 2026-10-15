@@ -18,11 +18,22 @@ keywords:
   - precarity
 tags:
   - draft
-status: draft-for-iteration
+status: superseded-untyped-hypothesis
 authors:
   - Claude Fable
 ---
 
+## Source correction: the attention equalities below are not current law
+
+The historical thesis that “care is attention committed through time” and that hope, fear, care, grace and abandonment are transformations of one unspecified finite stock is **not a definition or proof of canonical ATT**. The current Science term has a bounded reconciliation-budget sort B and a different second-order WIT-of-counterparty-ACK sort. A care relation, actor concern, expected future outcome or time expenditure is not by definition either structure.
+
+To test a relation among these phenomena, specify a formal map and its domain: for example, a candidate f from observed person-hours or independently measured care acts into a costed-obstruction budget; specify units, residual and evidence before assigning ATT denomination. A person can perform care with no documented counterparty ACK; this is a direct counterexample to any automatic claim care = WIT(ACK). “Grace without attention” requires a separate care-ethics definition of its observables and cannot be read as a theorem of the ATT budget.
+
+**Status:** the remaining essay is preserved as an attributed August 2026 hypothesis and literature survey, not an accepted 561 mathematical identity, conformance source or generation exemplar. The proposed equivalences require Science review and measurement.
+
+---
+
+## Historical research text (retained as source, not terminological authority)
 
 ## 0. Abstract and plan
 

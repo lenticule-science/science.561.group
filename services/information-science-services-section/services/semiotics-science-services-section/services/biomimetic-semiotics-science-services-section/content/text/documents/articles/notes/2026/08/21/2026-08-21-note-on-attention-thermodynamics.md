@@ -15,8 +15,20 @@ keywords:
   - silica
   - annealing
   - landauer
+status: superseded-untyped-hypothesis
 ---
 
+## Correction: water ≠ ATT ≠ heat
+
+The assertions “water is attention,” “attention is heat” and “a witnessed archive is necessarily hydrothermal” are **not mathematical identities in Obsmetrologia**. Water mass/flux, energy/heat flow Q (joules), inference compute, WIT knowledge-order covers and ATT have different carriers and units. A shared narrative about scarce resources does not supply an isomorphism or equality. This note's original propositions are retained below solely as **historical conjectures/metaphors**, not 561 Group formal law.
+
+Landauer's kT ln 2 is a lower bound per logically irreversible bit erasure in the specified thermodynamic regime; it does not prove “one ATT equals one joule,” “one WIT equals one erased physical bit” or “a transformer attention head is canonical ATT.” Transformer softmax uses normalized exponentials and can admit a Gibbs-form mathematical comparison under selected parameters; this is a distinct algorithmic construction, not a proof that water, human focus or canonical ATT are heat.
+
+The later [2026-08-26 audit](https://github.com/lenticule-science/science-services-section/blob/main/services/information-science-services-section/services/semiotics-science-services-section/services/biomimetic-semiotics-science-services-section/content/text/documents/articles/notes/2026/08/26/2026-08-26-note-on-attention-thermodynamics-audited.md) already reports overreach. Only a specified, dimensionally consistent map to the canonical WIT/ACK/ATT carriers and checked proof may promote these conjectures.
+
+---
+
+## Historical research text (retained as source, not terminological authority)
 
 The grove doctrine already held that water is attention — a linear
 resource, consumed once, carried on the transpiration stream. The owner's

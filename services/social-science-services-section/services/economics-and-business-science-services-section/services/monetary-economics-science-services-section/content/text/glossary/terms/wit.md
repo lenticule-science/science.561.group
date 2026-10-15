@@ -24,15 +24,30 @@ invariants (token first, claim second; one economic bit payload is one ordered p
 articulation is separate production work; price forms only at a counterparty border) define
 what one wit is.
 
-The unit is not metaphorical. The same distinction-step is already denominated four ways in
-this firm's own carriers: physically, one bit erased costs kT ln 2 (Landauer's principle;
-Obsmetrologia's LandauerEntropy counts one erased bit per collapsed coordination cycle);
-topologically, kept bits minus erased bits is the Euler characteristic (the index balance
-H⁰ − H¹ = χ, machine-checked); in proof, the local law prices `Quot.sound` as one unpriced
-collapsed distinction, so axiom debt is exactly unwitting change — change that occurred
-without the wit being paid; in the market, the witness bit is the traded commodity form. The
-open theorem tying every carrier's accounting to one ledger is the blueprint node
-`thm:distinction-denomination-functor`.
+**Established unit:** one WIT is one cover in FOUR's knowledge
+order. `⊥→t`, `⊥→f`, `t→⊤` and `f→⊤` are covers; a
+direct `⊥→⊤` jump traverses two. The claim/cell and evidence
+polarity must be specified. `Record.pos`/`Record.neg` retain the
+number of supporting/opposing attestations; once a polarity is
+positive, an extra same-polarity increment can leave the FOUR charge
+unchanged, producing **no new cover**.
+
+**Proposed denomination bridges, not identities proved by the unit's
+name:** one physically erased bit incurs the Landauer lower bound
+`kT ln 2` under the applicable physical conditions; Obsmetrologia
+proves that a coordination nerve's `H¹rank` counts certain cycles and
+that `H⁰ − H¹ = χ` in its domain. The
+[`WitLedger`](https://github.com/lenticule-science/obsmetrologia/blob/main/scripts/WitLedger.lean)
+counts identification-instrument occurrences in Lean declaration values.
+None of these results is by itself a proof that one physical
+bit-erasure, one `Quot.sound` use, one FOUR cover, one `Record`
+increment, one `H¹` cycle and one market witness-bit transfer have
+equal cardinality in general. The universal denomination result
+`thm:distinction-denomination-functor` remains an open proof target;
+the [2026-10-06 audit](https://github.com/lenticule-science/obsmetrologia/blob/main/docs/history/quot-sound-as-residue.md)
+records the tension between the counts. The ledger's *unwitting
+change* is a new identification not reflected in the committed
+instrument accounting, not any lawful `Quot.sound` use as such.
 
 The etymology is load-bearing, not decorative. Wit descends from the root *weid-*, to see or
 know — the root of witness, and of the knowledge order the unit steps through. The negative

@@ -74,3 +74,19 @@ Each proposed binding is a candidate instinct, awaiting captain ratification int
 It is not a message bus, a topic system, or a pub/sub layer — there is no separate routing infrastructure.
 The witness already exists; the routing predicates are two additional fields on the existing record.
 The substrate has gained a routable view, not a new substrate.
+
+## Routing is not acknowledgment or attention
+
+A `witness_channel` or `witness_origin`
+field is source metadata on a transported
+**event-attestation record**. Routing, copying
+and ledger projection do **not** mint another
+FOUR WIT merely because the record has
+moved. An independent receiving actor
+must issue a particular
+[ACK](https://github.com/lenticule-science/science-services-section/blob/main/services/social-science-services-section/services/economics-and-business-science-services-section/services/monetary-economics-science-services-section/content/text/glossary/terms/ack.md)
+before border uptake can be claimed.
+A subsequent WIT of that ACK is
+a distinct ATT act. Querying a channel
+or charging an expense does not constitute
+either receipt.

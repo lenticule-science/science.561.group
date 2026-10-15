@@ -1,7 +1,21 @@
 ---
 title: "Exposed Attention-Capital Graphs: Topological and Fiber-Algebraic Analysis of Social-Financial Media Networks"
 description: "The central thesis is substantially viable: exposed social-financial networks make it possible to model attention, reputation, governance, and capital as coupled flows rather than as separate “engagement” dashboards."
+status: unverified-formal-interpretation
 ---
+
+## Non-equivalence of platform events and WIT/ATT
+
+This research's graph observables include platform posts, votes, stake balances, user interactions and financial payout events. They may be linked by a *typed temporal multigraph* G=(V,E,T), but **the presence of graph edges is not a measurement of canonical WIT or ATT**. Specify node/event identities, edge predicate, clock, provenance and sampling boundary before computing any graph statistics.
+
+A platform “witness” (such as a Hive block producer) is a protocol role, not one FOUR cover. Stake-weighted platform votes are not automatically counterparty ACKs. To derive an Obsmetrologia WIT from a platform event, exhibit a particular claim, the before/after FOUR charge and source evidence; to derive ATT(w,a), exhibit the genuinely independent ACK of that WIT and its second-order witnessed uptake. Platform-impression counts and monetary flows are different physical/economic coordinates.
+
+Calling a network a sheaf, measuring H¹, or claiming a conserved attention-capital flow requires explicit fiber assignments, overlap restrictions, differentials and measured quantities. The graph/fiber claims in the historical body are **hypotheses** unless those structures and calculations are supplied.
+
+---
+
+## Historical research text (retained as source, not terminological authority)
+
 # Exposed Attention-Capital Graphs: Topological and Fiber-Algebraic Analysis of Social-Financial Media Networks
 
 ## Abstract

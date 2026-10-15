@@ -77,3 +77,28 @@ Per [two-store coherence](../../../../../../../../../../../../../../../../engine
 `Witness` is the output side of every operator that performs substrate work.
 [`respond`](../transformers/respond.md), [`settle`](../transformers/settle.md), [`dispatch`](../morphisms/dispatch.md), [`interpret`](../transformers/interpret.md) (when invoked as a step inside a witnessed chain), and the substrate's edit operators all return a `Witness` alongside their primary output.
 The record is what makes the substrate's [self-representation](../../../../../../../../../../../../../../../../engineering-services-section/content/text/glossary/concepts/self-representation.md) commitment operational: every operator's behavior is itself substrate content, recorded in witnesses, replayable from the substrate.
+
+## Audit record versus a FOUR WIT
+
+The capitalized `Witness` in this historical
+FARS interface is **an attributed invocation
+record**, not an assertion that one invocation
+causes one FOUR
+[WIT](https://github.com/lenticule-science/science-services-section/blob/main/services/social-science-services-section/services/economics-and-business-science-services-section/services/monetary-economics-science-services-section/content/text/glossary/terms/wit.md).
+A record can name inputs, operator, outputs,
+hashes, cost and time, but does not itself
+establish the truth of the reported effect.
+For WIT counting, identify a predication cell,
+its prior FOUR charge, the admitted evidence
+and the later charge. A repeated event may
+add no new knowledge-order cover.
+
+An independent receiver ACK requires a
+second actor and uptake of that particular
+WIT, not successful local serialization.
+A later WIT of the ACK is separate ATT.
+No content hash alone proves either act;
+the exact signature/custody protocol is an
+Engineering responsibility. This historical
+interface is not a second source of WIT
+terminology.

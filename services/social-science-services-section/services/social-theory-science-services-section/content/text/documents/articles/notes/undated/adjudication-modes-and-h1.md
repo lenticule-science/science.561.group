@@ -1,57 +1,127 @@
 ---
-type: theorem
-status: sketch
-symbol: ""
+type: hypothesis
+status: research-frontier
 depends-on: [adjudicate-witness-conflict, operations-settling, repair-resolution-poset, inconsistency-sheaf]
-see-also: [truth-knowledge-cohomology-long-exact-sequence, bigraded-settling-cohomology, function-as-aperiodic-settling]
-title: Adjudication modes and $H^1$-class
-description: The cohomological consequence of an adjudicate-witness-conflict increment depends on its resolution-kind $\kappa \in \{\textsf{affirm}, \textsf{retract}, \textsf{acknowledge}\}$.
+title: "Adjudication dispositions and H¹: unproved correspondence"
+description: "The relation between source-evidence dispositions and cohomological classes requires a specified cover and a proved bridge. The earlier universal H¹ claims are withdrawn."
 ---
 
-# Adjudication modes and $H^1$-class
+# Adjudication dispositions and H¹
 
-The cohomological consequence of an [adjudicate-witness-conflict](adjudicate-witness-conflict.md) increment depends on its resolution-kind $\kappa \in \{\textsf{affirm}, \textsf{retract}, \textsf{acknowledge}\}$. Affirm and retract resolutions collapse the $H^1$-class of the resolved $\top$-cell in the truth-knowledge long exact sequence; acknowledge resolutions preserve it. The kind distribution of an organization's adjudications is therefore an observable signature carried in the cohomology of its operations settling.
+**Withdrawn theorem claim.** The earlier version asserted that
+\`affirm\` or \`retract\` automatically kills a
+nonzero \`H¹\` class, while a third mode named
+\`acknowledge\` necessarily preserves it. It also
+treated each local \`⊤\` cell as producing a
+nontrivial cohomology class. Neither result follows
+from FOUR, monotone evidence accumulation or the
+definitions of [WIT](https://github.com/lenticule-science/science-services-section/blob/main/services/social-science-services-section/services/economics-and-business-science-services-section/services/monetary-economics-science-services-section/content/text/glossary/terms/wit.md)
+and [ACK](https://github.com/lenticule-science/science-services-section/blob/main/services/social-science-services-section/services/economics-and-business-science-services-section/services/monetary-economics-science-services-section/content/text/glossary/terms/ack.md).
 
-## Assumptions
+## Minimum apparatus
 
-Throughout: $v^{\mathrm{op}}$ is an [operations settling](../../../../../../../../../../../public-services-section/services/personal-services-section/services/emsenn-services-section/content/text/glossary/terms/operations-settling.md); $w \in \mathrm{Wit}_\tau$ is a $\top$-cell witness on the predication cell $\phi_w$ at stage $\tau$; $u_{\tau+1}$ is an adjudication increment $\alpha(w, J, \kappa)$ landing at stage $\tau + 1$. Let $\partial: H^0(\mathcal{F}^{(\top)}_{\mathrm{wit}}) \to H^1_t(\mathcal{F}^{(t)}_{\mathrm{wit}})$ be the connecting morphism of the [truth-knowledge long exact sequence](../../../../../../../../../information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/obsmetrologia/docs/verso/mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/content/sheaf/content/settling-cohomology/references/truth-knowledge-cohomology-long-exact-sequence.md) on the witness sheaf, and let $[\phi_w] \in H^1_t(\mathcal{F}^{(t)}_{\mathrm{wit}})$ denote the $H^1$-class of the contradiction at $\phi_w$.
+Fix a cover \(\mathcal U=\{U_i\}\) of a
+specified site \((X,J)\), coefficient presheaf or
+sheaf \(\mathcal F\), and explicit restrictions
+\(r_{ij}\) on overlaps. Define the cochain
+complex \(C^\bullet(\mathcal U,\mathcal F)\) and
+differentials \(\delta^k\) satisfying
+\(\delta^{k+1}\circ\delta^k=0\). Then
 
-The three claims below depend on the [repair-resolution poset](../../humanities/theories/math/theories/categories/theories/predication-categories/objects/repair-resolution-poset.md) §action statements as follows:
+\[
+H^1(\mathcal U,\mathcal F)
+=\ker(\delta^1)/\operatorname{im}(\delta^0).
+\]
 
-- **Clearing** uses *§action bullet 1* (the affirm/retract subfragment witnesses the existence of a later cell whose merge cleared the $\top$-valuation, and thereby contributes a coboundary to the $H^1$ generator at the firing ordinal of the contradiction) plus the substrate's [closure-drivenness](../../humanities/theories/math/theories/categories/theories/predication-categories/concepts/closure-drivenness.md).
-- **Persistence** uses *§action bullet 2* (the acknowledge-resolved subfragment is *not* a coboundary contributor — its $\top$-cells remain in $\mathcal{F}_U^{(\top)}$). It additionally requires the side condition that no later adjudication increment on $\phi_w$ supersedes the acknowledge resolution; supersession is an appeal-class event, treated separately.
-- **Stratification** is currently a *target statement* — its proof requires a witness-set decomposition lemma not yet written.
+The cochains and differentials must represent
+**the particular evidence/settlement problem**.
+A FOUR charge \`⊤\` at one cell only
+states \`Record.pos>0\` and \`Record.neg>0\`.
+It does not supply \(\mathcal U,\mathcal F,\delta\);
+its presence alone cannot establish a nonzero
+class. For example, a singleton cover with no
+nonempty distinct overlaps can have \(H^1=0\)
+even with conflicting local evidence.
 
-## Statement
+## Separate state transitions
 
-1. **Clearing.** If $\kappa \in \{\textsf{affirm}, \textsf{retract}\}$, then at stage $\tau + 2$ (one closure step after the adjudication lands) the cell $\phi_w$ has $v^{\mathrm{op}}_{\tau+2}(\phi_w) \in \{\mathbf{t}, \mathbf{f}\}$ and $[\phi_w] = 0$ in $H^1_t(\mathcal{F}^{(t)}_{\mathrm{wit}})$ — the contradiction has become a coboundary.
+An authority may issue one of the **disposition
+kinds** \`affirm\`, \`retract\`, or
+\`record-contest\` described in
+[Adjudicate contested source evidence](adjudicate-witness-conflict.md).
+Those are decisions over source *standing*.
+They do not delete evidence tallies from the
+append-only Record, and an internal
+\`record-contest\` is not an independent
+border ACK.
 
-2. **Persistence (under no-supersession).** Suppose $\kappa = \textsf{acknowledge}$ and no later increment $\alpha(w', J', \kappa')$ with $\kappa' \in \{\textsf{affirm}, \textsf{retract}\}$ targets the same $\top$-cell witness $w$ via an appeal-class event. Then for all $\tau' > \tau + 1$ the cell $\phi_w$ has $v^{\mathrm{op}}_{\tau'}(\phi_w) = \top$ and $[\phi_w] \neq 0$ in $H^1_t(\mathcal{F}^{(t)}_{\mathrm{wit}})$ — the contradiction remains a non-trivial cohomology class.
+Let \(R_\tau(c)\) be the evidence
+Record and \(D_\tau(c)\) the disposition
+set. A distinct active-evidence projection, if
+formally specified, can read \((R_\tau,D_\tau)\)
+under a named authority and policy. Without
+that projection, monotone additions keep
+\(\operatorname{charge}(R_\tau(c))=\top\)
+once both polarity tallies are positive.
 
-3. **Stratification (target).** Let $K_{\textsf{cleared}}, K_{\textsf{ack}} \subseteq H^1_t(\mathcal{F}^{(t)}_{\mathrm{wit}})$ denote the subgroups generated by classes resolved via affirm/retract and via acknowledge respectively, and let $K_{\textsf{open}}$ be the subgroup of unadjudicated $\top$-cells. *Conjectured:* $H^1_t(\mathcal{F}^{(t)}_{\mathrm{wit}}) / K_{\textsf{cleared}} \cong K_{\textsf{ack}} \oplus K_{\textsf{open}}$, so that the kind distribution of adjudications is directly readable from the cohomology stratification. The proof requires a per-witness independence lemma — that the $H^1$-generators of distinct witnesses lie in independent subgroups — which has not been written out.
+Changes to \(H^1\) after adjudication
+must be shown by an induced cochain map
+or by calculating new restrictions/
+coboundaries on the same specified site.
+One cannot infer those changes from the
+name \`affirm\` or \`record-contest\`.
 
-## Sketch
+## Checkable research hypotheses
 
-**Clearing.** A retraction increment on the dissenting witness drives that witness's *potential* cell to $\mathbf{f}$ at stage $\tau + 1$. By [closure-drivenness](../../humanities/theories/math/theories/categories/theories/predication-categories/concepts/closure-drivenness.md), the next stage's value of $\phi_w$ is computed from the surviving potential witness alone, yielding $v^{\mathrm{op}}_{\tau+2}(\phi_w) \in \{\mathbf{t}, \mathbf{f}\}$. By [repair-resolution poset](../../humanities/theories/math/theories/categories/theories/predication-categories/objects/repair-resolution-poset.md) §action, the affirm/retract subfragment of $\rho_\tau^{-1}(\{\textsf{resolved}\})$ contributes a coboundary to the $H^1$ generator at the firing ordinal of the contradiction; equivalently, $[\phi_w]$ becomes the boundary of the chain witnessing the retraction.
+**H1 (clearing).** In a specified
+site with a valid active-evidence
+projection, a particular authorized
+disposition might change the overlap
+compatibility conditions and make a
+previously computed cocycle exact.
+A proof requires displaying the
+cocycle before and its coboundary
+witness afterward; the disposition
+name alone has no force.
 
-**Persistence.** An acknowledge increment issues no retraction; both witnesses remain active, and by [settling-monotonicity](../../humanities/theories/math/theories/categories/theories/predication-categories/concepts/settling-monotonicity.md) the cell's $\top$-classification cannot decrease. The witness reaches $\rho(w) = \textsf{resolved}$ via the acknowledgement arrow in $W^{\flat}$, but per [repair-resolution poset](../../humanities/theories/math/theories/categories/theories/predication-categories/objects/repair-resolution-poset.md) §action, the acknowledge-resolved subfragment is *not* a coboundary contributor — its $\top$-cells remain in $\mathcal{F}_U^{(\top)}$. Therefore $[\phi_w]$ persists as a non-trivial class.
+**H2 (holding).** A case retained as
+contested might preserve an existing
+nonzero class if the same carrier,
+cover and restriction maps are
+unchanged. A valid new ACK could
+record independent uptake of one WIT
+without changing the underlying
+contested Record. Neither event
+alone proves cohomological persistence.
 
-**Stratification (target).** Per-witness, the resolution-trajectory in $W^{\flat}$ is unique by the forward-only structure of the poset, so each witness contributes its $H^1$-generator to exactly one of $K_{\textsf{cleared}}, K_{\textsf{ack}}, K_{\textsf{open}}$ at any given stage. The decomposition claim then reduces to whether distinct witnesses' generators are independent in $H^1_t(\mathcal{F}^{(t)}_{\mathrm{wit}})$. This independence is plausible — the cells $\phi_w$ for distinct $w$ are distinct elements of the predication cell set, so their inclusion-induced classes have disjoint support — but the formal argument requires a Mayer-Vietoris-style decomposition on the witness sheaf that has not been carried out here.
+**H3 (aggregation).** Counts of
+dispositions are \(\mathbb N\)-valued
+observables. They cannot be equated
+to dimensions or direct summands of
+\(H^1\) without an explicitly
+proved injective/independence map
+from the counted cases into
+cohomology generators.
 
-## Operational reading
+## Falsifiers and receiving
 
-The kind distribution of an organization's adjudications, observable as a ratio $|K_{\textsf{cleared}}| : |K_{\textsf{ack}}| : |K_{\textsf{open}}|$, classifies the organization's stance toward operational contradiction:
+A toy model with \(\top\)-charged
+cells but \(H^1=0\) falsifies the
+previous universal “contradiction
+implies nonzero H¹” claim. A
+retraction with unchanged
+\(\delta\) and unchanged class
+falsifies universal “retraction
+kills H¹.” A case with documented
+external ACK yet persistent \(\top\)
+disproves any identification of
+ACK with contradiction clearing.
 
-- **High $K_{\textsf{cleared}}$ fraction.** The organization preferentially resolves contradictions by retraction. Its operations settling carries low cumulative $H^1$. The classical-consistency reading of its operational state is closely tracked. This is the *audit-clean* mode characteristic of high-formality organizations and bureaucratic-Hohfeldian governance patterns.
-- **High $K_{\textsf{ack}}$ fraction.** The organization preferentially resolves contradictions by acknowledgement. Its operations settling carries persistent $H^1$ classes that grow over time. The substrate records the lived disagreements of the working community as standing structural features. This is the *cohomologically-rich* mode characteristic of [restorative-accountability](../../../../../../../sociology-science-services-section/services/work-science-services-section/services/predicated-work-services-section/services/predicated-governance-services-section/content/text/glossary/terms/restorative-accountability.md) and consensus-pluralist governance patterns.
-- **High $K_{\textsf{open}}$ fraction.** The organization is not adjudicating its $\top$-cells at all; the $H^1$-classes are accumulating without any resolution-trajectory. This is the *governance-failure* mode — the operations settling continues to function, but the unresolved contradictions act as a growing cohomological tax on its decidability.
-
-A working community can read its own kind distribution off its event log, and the distribution is a substantive characterization of its governance practice: not whether it has adjudication procedures (every functioning organization does), but which $W^{\flat}$ arrows its adjudications actually traverse.
-
-## Connection to the function
-
-The aim-generative function of an enterprise — per [function-as-aperiodic-settling](../../research/2026/07/31/lenticule-import/library/social-sciences/working/_archive/function-as-aperiodic-settling.md) — sits in the aperiodic regime, where $H^1$ is nontrivial in the substrate sense (the function's cohomological invariant is its structural classifier). For a function whose generative structure is the *standing recognition of irreducible contradictions*, a high $K_{\textsf{ack}}$ fraction is part of the function's operational fingerprint, not a defect of its adjudication practice. For a function whose generative structure is *the production of decidable artifacts*, a high $K_{\textsf{cleared}}$ fraction is correspondingly part of its fingerprint. The theorem connects the two scales: per-cell adjudication kinds aggregate to the operations settling's cumulative $H^1$, which sits inside the function's $\omega_1$-stratum cohomological invariant.
-
-## Status
-
-Sketch. The clearing claim follows directly from [repair-resolution poset](../../humanities/theories/math/theories/categories/theories/predication-categories/objects/repair-resolution-poset.md) §action bullet 1 plus closure-drivenness. The persistence claim follows from §action bullet 2 under the no-supersession side condition explicitly stated above. The stratification claim is recorded as a *target* — its operational interpretation is the load-bearing content for the predicated-work program, but its formal proof depends on a witness-set independence lemma that belongs in the [bigraded settling cohomology](../../../../../../../../../information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/obsmetrologia/docs/verso/mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/content/sheaf/content/settling-cohomology/content/bigraded-settling-cohomology/bigraded-settling-cohomology.md) chapter and has not been carried out.
+Mathematical receiving requires
+actual defined sites, sheaves,
+differentials, before/after
+cochains, and mechanically checked
+claims in Obsmetrologia. A
+literature analogy or source
+repository merge is not such
+receiving.

@@ -68,3 +68,26 @@ poetic research-program title nor a missing local manuscript establishes that
 an essay is unpublished. Literature and experiments must not be written to
 imitate an author, and authored writing must not be rewritten as a science paper
 merely to satisfy an editorial workflow.
+
+### Canonical WIT/ACK/ATT terminology
+
+The Science-owned
+[WIT/ACK/ATT/tally admission profile](services/social-science-services-section/services/economics-and-business-science-services-section/services/monetary-economics-science-services-section/data/records/wit-ack-att-lexical-admission.json)
+and the
+[PTGAE source rule](docs/plain-technical-general-american-english.md#canonical-scientific-terms-wit-ack-att-tally)
+are normative for **561 Group-authored technical prose**. They define
+lexical collision forms requiring semantic review, not synonyms or
+automatic find-and-replace instructions. The independent Red Cup
+[canonical-term audit](https://github.com/red-cup-engineering/ptgae-engineering-services-section/blob/main/src/canonical-term-check-cli.mjs)
+can report candidate source spans, verify *declared* review receipts,
+and scan a Markdown checkout. A pass is **not** a theorem,
+authenticated reviewer identity, correct empirical meaning,
+a complete corpus scan, or a deployed receiving service.
+
+All usage must preserve the distinct FOUR WIT cover, other-party
+ACK, ATT's finite budget and WIT-of-ACK sorts, Record tallies,
+economic matched tallies and charged obligation discharge.
+Historical, quoted and externally formal meanings require
+explicitly separate source/domain scopes, not flattening to the
+local monetary sense. Source-corrected historical notes are
+excluded from live terminology exemplars unless newly reviewed.

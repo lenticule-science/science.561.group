@@ -17,8 +17,20 @@ keywords:
   - dissipative-adaptation
   - defect-mediated-growth
   - calibration
+status: domain-qualified-research
 ---
 
+## Audit correction: scoped mathematical mechanisms
+
+This historical physics review already challenges the “attention is heat” identity; its surviving *machine-side* claim is about **transformer attention softmax** as a normalized-exponential/Gibbs-form readout under identified parameters. That is a statement about an algorithm or statistical-mechanical analogy, **not** canonical ATT. A transformer head computes attention weights with Q,K,V projections and a softmax; it does not, merely by existing, create an independent counterparty ACK or WIT-of-ACK.
+
+The physically defined quantities (joules, kelvin, physical erasures) must retain units, while the 561 Group WIT is one FOUR knowledge-order cover and ATT has the budget/allocation and nested WIT-of-ACK sorts. The universal equalities WIT = physical Landauer bit = H¹ class = arbitrary algorithmic step are **not proved**. The audit's phrase “machine-side identity” is valid only for the stated algorithmic transformation, not between mathematical ATT and physical heat.
+
+**Status:** this is a critical reference for rejecting the August 21 overclaim. Do not interpret its analogy as certifying a cross-carrier theorem.
+
+---
+
+## Historical research text (retained as source, not terminological authority)
 
 The 2026-08-21 note made four escalating identifications: attention is heat
 because softmax is a Boltzmann measure and transformer attention is modern-Hopfield
