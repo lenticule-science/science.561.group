@@ -1,47 +1,28 @@
 ---
-name: "Necessary"
-description: "The mode in which a claim has been witnessed tightly enough that the relations force its shape — the third mode in the inquiry trajectory from absurd to determined. The structural-pressure mode, where a claim is no longer optional but not yet finally settled."
+name: Necessary
+description: "In the March 28 relational inquiry, a condition required for an admitted relational continuation under stated givens and rules; not modal □, a legal obligation or a completed proof."
 date-created: 2026-04-28
-aliases:
-  - necessity
-see-also:
-  - absurd
-  - possible
-  - determination
-  - inquiry
-  - relating
+date-updated: 2026-10-15
+see-also: [absurd, possible, determination, relating]
 ---
 
-In the [relationality](../../../../../../content/text/glossary/_index.md) framework, **necessary** names the mode in which a claim has been witnessed tightly enough that the relations *force* its shape. Where [possible](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/possible.md) is the opening mode (relations have begun to apply, but loosely), necessary is the *binding* mode: the witnessings have accumulated to the point where the claim is no longer optional within the structure of accepted relations.
+# Necessary — relational-inquiry sense
 
-Necessity is the third mode in the four-mode trajectory of [inquiry](../../../../../../content/text/glossary/terms/inquiry.md): [absurd](absurd.md) → possible → necessary → [determination](determination.md). It is the trajectory's penultimate stage — the structural-pressure mode, where a claim is bound by the relations but the binding has not yet been finalized into a settled determination.
+**Necessary** is a *relative structural requirement* in the March 28 inquiry: **given** an Absurd premise, an admitted Possible continuation and a specified relating, a condition becomes required for that continuation to be articulated or determined. Without naming the premises, rules, selected source and relevant interpretation world, “necessary” is an unsupported claim of force.
 
-## Necessity is structural, not metaphysical
+The authored progression **Absurd → Possible → Necessary → Determined** is a proposal about repeated contextual relational witnessing. “Necessary” denotes its **constraint role**; it does not guarantee that the proposed continuation has actually occurred, that a mathematical fixed point was computed or that later evidence must agree. In another context, what was just determined can be treated as the next inquiry's starting datum.
 
-The framework's *necessary* is not necessity in the modal-metaphysical sense (true in all possible worlds), nor in the logical-modal sense (provable from axioms). It is *structurally forced* given the [witnessings](../../../../services/agency-services-section/content/text/documents/articles/notes/undated/witnessing.md) the inquiry has performed and the [absurdities](absurd.md) it has accepted. A claim is necessary when the relations the inquiry has built up admit no other shape for it — but this is local to the inquiry's structure, not a global metaphysical claim.
+## Example from source frontmatter
 
-This relativization is not a softening. A necessary claim within an inquiry is genuinely forced; its shape is not negotiable while the inquiry's relations hold. What is relativized is the *frame* — different inquiries with different absurdities can produce different necessities, all internally rigorous.
+For an admitted typed claim that a source *declares* \`authors: [emsenn]\`, successful interpretation requires a readable source revision, a parsed value, a declared semantics for the specific predicate, a qualified source/referent distinction and whatever admissibility rules apply. Those are candidate **requirements for that claim**. A field being written does **not** itself establish the actual writer; a constraint being necessary does **not** mean its witness has been obtained.
 
-## Necessity versus determination
+A missing requirement is an **obstruction** or an open derivation. It must not be reported as already satisfied just because the key exists, a title sounds authoritative, or the same words recur many times.
 
-Necessity and [determination](determination.md) are close but not identical. A necessary claim is one that is *required* to take its current shape by the witnessings already in place; a determined claim is one whose witnessing has reached the local fixed point — adding more witnessings of the kind the inquiry can perform would not change the claim's settlement.
+## Separate worlds and senses
 
-The difference is small but real. A necessary claim could in principle be unsettled by witnessings that have not yet been performed (and might never be performed); a determined claim has been settled enough that further witnessings, of the kind the inquiry can perform, do not change the position. Necessity is *structural pressure*; determination is *settled outcome*. Most inquiries pass through necessity en route to determination; some claims become necessary without ever achieving determination, because the inquiry stops or turns elsewhere.
+- **Relational Necessary** here is **not** the [modal-logic necessity \`□\`](https://github.com/lenticule-science/science-services-section/blob/main/services/philosophy-services-section/services/logic-services-section/content/text/glossary/terms/logic-terms-necessity.md). The latter is interpreted by accessibility and truth across selected worlds, or by an explicitly qualified algebraic modality.
+- **Necessary ≠ a deontic obligation.** A constraint being required for a derivation does not make an actor *owe* anything; institutional duties require their own authorizing office, agreement, legal basis, scope and valid time.
+- **Necessary ≠ \`⊤ₖ\`, \`⊥ₖ\` or either polarity of FOUR.** Evidential charge and conditional relational necessity answer different questions.
+- **Necessary ≠ Determined.** Naming a required step cannot establish that it was actually carried out.
 
-## Necessity is what reflexive structure produces
-
-In the framework's mathematical articulation, necessity corresponds to the *forced* shape of a fixed-point computation: when reflexive iteration tightens the value at a [predication cell](../../../../../../math/theories/voidmath/terms/predication-cell.md) to a position the iteration cannot move it from, the value is necessary in that structure. The fixed point is what determination *is*; the *reaching* of the fixed point passes through necessity.
-
-The reflexive iteration the framework rests on (in [reflexivity](reflexivity.md)) is what produces necessity from possibility: each round of iteration tightens the constraints, and eventually the constraints close on a single shape.
-
-## Necessity in practice
-
-Most of what gets reported as *certain* in ordinary inquiry is necessary in the framework's sense rather than determined: it is forced by the relations available right now, but the inquiry has not yet ruled out the possibility that further witnessings would unsettle it. The framework treats this as the realistic case. Determination is rare; necessity is common; possibility is the working zone of most inquiry.
-
-## See also
-
-- [Absurd](absurd.md) — the trajectory's start.
-- [Possible](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/possible.md) — the previous mode; what necessity tightens out of.
-- [Determination](determination.md) — the next mode; the trajectory's terminus.
-- [Inquiry](../../../../../../content/text/glossary/terms/inquiry.md) — the broader process.
-- [Reflexivity](reflexivity.md) — the structural feature that produces necessity from possibility.
+Do not infer a universal “necessity operator” or guaranteed termination from this lexical formulation. Those are separate mathematical obligations. Original source: March 28 personal inquiry; qualified context: [L-Space research](https://github.com/lenticule-science/science-services-section/blob/main/services/information-science-services-section/services/language-science-services-section/content/text/documents/articles/notes/2026/10/10/2026-10-10-note-about-l-space.md#march-28-the-utterance-as-a-locally-witnessed-relation-source-recovered-2026-10-14).
