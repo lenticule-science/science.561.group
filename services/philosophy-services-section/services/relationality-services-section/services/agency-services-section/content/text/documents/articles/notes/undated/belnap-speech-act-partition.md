@@ -43,7 +43,7 @@ The two orbits do not mix under the Klein-four action.
 
 ## Proof
 
-The partition claim follows immediately from the structure of $\mathbf{FOUR}$: the four values are the only elements, and the truth-order places $\mathbf{f} <_t \bot, \top <_t \mathbf{t}$ (strictly), so truth-designated ($\geq_t \mathbf{t}$) is exactly $\{\mathbf{t}\}$, truth-antidesignated ($\leq_t \mathbf{f}$) is exactly $\{\mathbf{f}\}$, and knowledge-maximal ($\geq_k \mathbf{t} \wedge_k \mathbf{f}$, i.e., $= \top$) is exactly $\{\top\}$.
+The partition claim follows immediately from the structure of $\mathbf{FOUR}$: the four values are the only elements, and the truth-order places $\mathbf{f} <_t \bot, \top <_t \mathbf{t}$ (strictly), so truth-designated ($\geq_t \mathbf{t}$) is exactly $\{\mathbf{t}\}$, truth-antidesignated ($\leq_t \mathbf{f}$) is exactly $\{\mathbf{f}\}$, and knowledge-maximal ($\geq_k \mathbf{t} \vee_k \mathbf{f}$, i.e., $= \top$) is exactly $\{\top\}$.
 Together with $\bot$, these are the four elements.
 The classes are disjoint and exhaustive.
 

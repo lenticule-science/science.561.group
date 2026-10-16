@@ -23,6 +23,10 @@ $\mathbf{FOUR} \cong \mathbf{2} \times \mathbf{2}$ is the bilattice of external 
 | $\bot = (\bot, \bot)$ | undecidable | neither $P$ nor $\neg P$ is $\neg\neg$-closed |
 | $\top = (\top, \top)$ | contradictory | logically impossible in consistent theory |
 
+**Conflict with the glossary term `bilattice` (choice for the owner).** The row for $\top$ calls it logically impossible in a consistent theory. The glossary term `bilattice` holds $\top$ as a legitimate value, a held conflict that is high in the knowledge order and is not an error, and the note `belnap-speech-act-partition` names it Contesting. The map $\rho(P) = (\neg\neg P, \neg\neg\neg P)$ below takes the value $(\top, \top)$ only if $\neg\neg P$ and $\neg\neg\neg P$ both hold, and together they give absurdity, so the image of $\rho$ has at most three values. The owner of this entry must decide whether $\top$ is impossible as a value of $\rho$ (and $\mathbf{FOUR}$ is then a chosen codomain, not the image) or is a value that can be held.
+
+The same four values carry three vocabularies, listed in the order $\mathbf{t}, \mathbf{f}, \bot, \top$: verified, refuted, undecidable, contradictory (this entry); potential, active, absurd, stable (the knowledge-order names in the glossary term `bilattice`); Asserting, Denying, Abstaining, Contesting (the note `belnap-speech-act-partition`). The glossary term `bilattice` also gives the Belnap names true, false, neither, both.
+
 ## The two dimensions
 
 $\mathbf{FOUR} = \mathbf{2} \times \mathbf{2}$ has two independent Boolean dimensions:
