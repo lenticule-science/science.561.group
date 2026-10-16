@@ -67,19 +67,20 @@
     "sourceRepository": "red-cup-engineering/github-engineering-services-section",
     "requestPath": "data/records/github-repository-declarations/requests/lenticule-science--l-space.561.group.json",
     "requestId": "lspace-lenticule-site-20261016",
-    "sourceCommit": "758712c2346a05a7f4458b810ce73b8fad8606df",
+    "sourceCommit": "110116a9a733d8188c890714f341fbfdc88dabeb",
     "latestObservedWorkflowRun": "https://github.com/red-cup-engineering/github-engineering-services-section/actions/runs/38975572487",
-    "providerOutcome": "failure-before-any-job-steps",
+    "providerOutcome": "private GitHub Actions runner failed with no steps; formation effect not performed",
     "requestedSeedPaths": [
       "README.md",
       "package.json",
       "data/records/site-instance.json",
       "data/records/host-binding.json"
-    ]
+    ],
+    "packageSource": "Science package exports ./instance and ./host-binding; target GitHub repository not yet created"
   },
   "actualFabrication": {
     "owner": "red-cup-engineering/knowledge-system-server",
-    "sourceCommit": "c65fc9c5bd0d4d061a52b7bb07619ea53b1b7fdb",
+    "sourceCommit": "171fff55b218d75a77711dabe81eb66a2e45a8f9",
     "package": "@red-cup-engineering/knowledge-system-server",
     "candidateVersion": "0.1.7",
     "hostExport": "./lspace-site",
@@ -91,6 +92,7 @@
       "/api/marks/fiber",
       "/api/marks/cover"
     ],
-    "scope": "source-owned cross-media binary mark identity, typed FOUR claim fibers, finite sheaf covers, JSON-LD manifest"
+    "scope": "source-owned cross-media binary mark identity, typed FOUR claim fibers, finite sheaf covers, JSON-LD manifest",
+    "sourcePackageExport": "./lspace-site"
   }
 }
