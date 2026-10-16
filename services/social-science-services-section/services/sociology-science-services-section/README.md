@@ -18,3 +18,13 @@ subdomains continue under `services/`.
 
 [`work-science-services-section/`](services/work-science-services-section/README.md)
 holds the work, governance, gig-work, and formal work research program.
+
+## Research working papers
+
+[Reference Without Deference: Radical Political Learning, Anarchist Praxis,
+and the Nihilist–Insurrectionary Horizon](content/text/documents/articles/notes/2026/10/15/2026-10-15-note-on-reference-without-deference-and-radical-political-learning.md)
+(15 October 2026) develops a conditional model of political consultation
+and adoption, with an evidence/access register, explicit counterarguments,
+formal distinctions, and a prospective empirical protocol. This is an
+AI-assisted conceptual working paper, not a completed empirical study or
+an independently peer-reviewed publication.
