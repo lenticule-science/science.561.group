@@ -1,0 +1,64 @@
+{
+  "kind": "lenticule-science.l-space-site-custody",
+  "version": 1,
+  "service": "https://l-space.561.group/",
+  "githubRepository": "lenticule-science/l-space.561.group",
+  "packageName": "@lenticule-science/l-space.561.group",
+  "parentRepository": "lenticule-science/science-services-section",
+  "submodulePath": "sites/l-space.561.group",
+  "submoduleUrl": "https://github.com/lenticule-science/l-space.561.group.git",
+  "sourceStatus": "target-repository-not-created",
+  "parentStatus": "ordinary-historical-directory-not-submodule",
+  "namespaceMigration": {
+    "retireCandidate": "emsenn/l-space.561.group",
+    "observed": "empty-personal-repository",
+    "authority": "repository-transfer-or-creation-not-available-through-current-connected-GitHub-actions"
+  },
+  "scientificDomain": {
+    "name": "Language Space",
+    "scope": "all-admitted-digital-resources",
+    "minimalDigitalObservation": [
+      "address",
+      "bit",
+      "value"
+    ],
+    "additionalStructures": [
+      "sort",
+      "predicate",
+      "context",
+      "source-revision",
+      "positive-evidence",
+      "negative-evidence",
+      "restriction",
+      "gluing-obstruction",
+      "inference-operator"
+    ],
+    "regime": "operator-dependent-not-global"
+  },
+  "upstreamProviders": [
+    {
+      "role": "typed-evidence-and-settlement",
+      "package": "@red-cup-engineering/signcraft",
+      "repo": "red-cup-engineering/signcraft"
+    },
+    {
+      "role": "content-archive-inspection-revision-navigation",
+      "package": "@red-cup-engineering/knowledge-system-server",
+      "repo": "red-cup-engineering/knowledge-system-server"
+    }
+  ],
+  "excludedDependencies": [
+    "Digital Garden",
+    "red-cup-engineering/digital-garden-systems-services-section",
+    "emsenn/web-digital-garden"
+  ],
+  "notEstablished": [
+    "repository-transfer",
+    "submodule-gitlink",
+    "npm-publication",
+    "CAIRN-adapter-for-every-media-type",
+    "installed-release",
+    "public-receiving"
+  ],
+  "nextTransition": "Create or transfer the target repository, populate authentic Science knowledge and package metadata, archive the historic parent directory, pin target commit as gitlink, then receive native consumer/deployment."
+}

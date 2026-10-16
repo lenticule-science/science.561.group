@@ -1,13 +1,30 @@
-# L-Space — source custody
+# L-Space — Lenticule Science source and migration boundary
 
-The L-Space *language space* remains Lenticule Science's subject: articulated, content-addressed marks, tokens, claims, contexts, proofs and evidence. Its semantic research and OWL/SHACL reside in Science, not this former web application.
+**Canonical target (Leader-directed, 2026-10-16)**
 
-The standalone Science garden executable was retired: **there is no current `@lenticule-science/l-space/site` or `/metroplat` export**. The existing Red Cup [Digital Garden Systems](https://github.com/red-cup-engineering/computer-engineering-services-section/tree/main/services/computer-systems-engineering-services-section/services/computer-knowledge-systems-services-section/services/digital-garden-systems-services-section) owns the bounded MetroPlat L-Space reader; the original [Cold Red Gate](https://github.com/561-group/cold-red-gate/blob/main/deployment/profile.json) and [Bare Cedar Fog](https://github.com/561-group/bare-cedar-fog) instance data select it.
+- Public service: `https://l-space.561.group/`.
+- GitHub repository: `lenticule-science/l-space.561.group`.
+- npm package identity: `@lenticule-science/l-space.561.group`.
+- Pinned parent mount: `lenticule-science/science-services-section/sites/l-space.561.group`, as a **Git submodule** to that exact repository.
 
-The original `l-space.561.group` ingress redirect is owned by [Cold Red Gate deployment/ingress.json](https://github.com/561-group/cold-red-gate/blob/main/deployment/ingress.json). The copy formerly in Science was byte-for-byte identical at the Caddy stanza and is retired. An ingress declaration is **not evidence of a responsive service**.
+**Present state:** the target repository does **not yet exist** in the connected GitHub installation. This path is still an ordinary historical directory, **not a submodule**. It must not be called deployed, source-transferred, installed, or received. Do not create a dangling gitlink or publish an alternative package under `emsenn`. The empty `emsenn/l-space.561.group` repository is a migration/retirement candidate, not the source owner.
 
-The last Science NI/media HTTP regression was received in [Digital Garden PR #414](https://github.com/red-cup-engineering/computer-engineering-services-section/pull/414), then moved again, **byte-identically**, to its actual Networking owner in [HTTP Services PR #424](https://github.com/red-cup-engineering/computer-engineering-services-section/pull/424), merged at `3b979d70023054cb5375e69dc733670573c88de6`. That code belongs with `http-services-section/src/ni.mjs`, not the downstream Digital Garden. The test's Git blob remains `dd9a5204cb451148145a8ce9f3629f33ee1eb0ed` through the entire chain. The Science-side test, package metadata and obsolete npm settings are retired. This historical Science site directory is not an executable package.
+## What L-Space actually is
 
-**This verifies source custody only.** A successful merge does not demonstrate a native Node test run, an installed Guix/LAGOON release, or successful public L-Space receiving; the machine instance and upstream Engineering application must each be checked independently.
+L-Space is the mathematical and language space of addressed marks, tokens, claims, typed relationships, contexts, proof obligations, and local/global interpretations. Its domain is **all admitted digital resources**, not just files with Markdown frontmatter or a few selected directories. An `(address, bit, value)` observation is a minimal digital-coordinate projection; typed predicates, source/provenance, scoping, bit offsets, valuation, order, restriction, and claims about effects need separately specified and admitted structure. The resulting addressable topology, its covers, Chu/FOUR incidence, FCA/Heyting fibers, possible sheaf gluing and closure operators are mathematical *constructions and hypotheses*, not features established by a directory scanner.
 
-Unique earlier proposals under `docs/recovered/` are historical source evidence, not current deployment instructions. Reconstruct current behavior from the owner-held code and machine instances.
+The relation to the Scott-continuous regime is operator-dependent. Do not assign the whole L-Space a closure ordinal from the cardinality of its addresses. Where operators fail Scott continuity, preserve the exact counterexample and separately qualified transfinite claims rather than asserting that content addressing proves them.
+
+## Supplier and consumer chain
+
+- `@red-cup-engineering/signcraft` and its native SignCell → SignChain → SignGraph/Fiber → SignCraft machinery construct and settle typed evidence and can produce genuine SHP packets.
+- **CAIRN**, `@red-cup-engineering/knowledge-system-server` at `red-cup-engineering/knowledge-system-server`, is **Content Archive Inspection, Revision, and Navigation**: the downstream content-addressed archive interface for arbitrary digital materials, their revisions, relationships, queries and retrieval. Markdown is its first adapter only.
+- The Science-owned L-Space package specifies and composes the shared mathematical/linguistic address space over those existing providers. Further specific sites, GEODE, VICTOR/TUFTE, readers and services are consumers/projections with their own authority and operations.
+
+**The Digital Garden is entirely outside this dependency chain.** It is neither the owner, required upstream provider, alternative implementation, site name nor completeness boundary for L-Space. Do not move or re-export Digital Garden code to satisfy the L-Space migration.
+
+## Legacy custody and installation
+
+Historical site proposals remain preserved at `docs/recovered/` until moved into the originating Science research record as part of replacing this directory with the real submodule. Those old proposals are evidence, not executable policy or a deployment plan.
+
+The earlier L-Space routing/ingress declarations are instance-owned, and their current deployment must be received separately from source. Only after the canonical repository is created/transferred and populated, with a source-identified commit, may the parent directory be replaced by a gitlink and `.gitmodules` entry. Then reconcile the house checkout and release to `l-space.561.group` through the actual Coesite/Red Cup/Causeway deployment and public receiving path, without breaking an existing service during transition.
