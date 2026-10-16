@@ -3,7 +3,7 @@
   "name": "L-Space",
   "kind": "market",
   "entity": "561-group-llc",
-  "faces": "Readers and researchers of Lenticule Science's research corpus, published as the public knowledge garden at l-space.561.group and walked as the VaultMaze world.",
+  "faces": "Researchers, agents and authorized readers of the Semioverse's cross-media, content-addressed language space: digital marks, typed token/claim relationships, contexts, evidence, sheaf covers and proof paths. The site l-space.561.group is one presentation of that space, not its mathematical extent; Digital Garden and VaultMaze are distinct applications.",
   "offices": [
     "l-space-lead"
   ],
@@ -12,9 +12,10 @@
     "words": [
       "l-space",
       "lspace",
-      "vaultmaze",
-      "knowledge garden",
-      "lenticule"
+      "l-space.561.group",
+      "addressed language space",
+      "token claim hyperverse",
+      "content addressed mark space"
     ]
   },
   "assesses": {
