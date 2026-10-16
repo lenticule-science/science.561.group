@@ -7,12 +7,12 @@
   "parentRepository": "lenticule-science/science-services-section",
   "submodulePath": "sites/l-space.561.group",
   "submoduleUrl": "https://github.com/lenticule-science/l-space.561.group.git",
-  "sourceStatus": "target-repository-not-created",
+  "sourceStatus": "formation-request-seeded-but-target-repository-not-created",
   "parentStatus": "ordinary-historical-directory-not-submodule",
   "namespaceMigration": {
     "retireCandidate": "emsenn/l-space.561.group",
     "observed": "empty-personal-repository",
-    "authority": "repository-transfer-or-creation-not-available-through-current-connected-GitHub-actions"
+    "authority": "Governed repository-formation source exists; GitHub Actions runner fails before job steps. No installed create-repository actuator."
   },
   "scientificDomain": {
     "name": "Language Space",
@@ -53,12 +53,44 @@
     "emsenn/web-digital-garden"
   ],
   "notEstablished": [
-    "repository-transfer",
+    "repository-formation-provider-effect",
     "submodule-gitlink",
-    "npm-publication",
-    "CAIRN-adapter-for-every-media-type",
-    "installed-release",
-    "public-receiving"
+    "npm-publication-of-new-CAIRN-and-site-package",
+    "install-of-candidate-host-export",
+    "replacement-of-current-legacy-ingress",
+    "anonymous-public-receiving",
+    "reader-authorized-private-source-receiving",
+    "global-Grothendieck-or-Scott-continuity-theorem"
   ],
-  "nextTransition": "Create or transfer the target repository, populate authentic Science knowledge and package metadata, archive the historic parent directory, pin target commit as gitlink, then receive native consumer/deployment."
+  "nextTransition": "Recover the existing governed GitHub formation runner/credential path and execute the exact requestId; only once target GitHub main exists replace the historical ordinary directory with a correctly pinned gitlink; publish/install the CAIRN host export and Science instance, replace the legacy ingress atomically and receive public domain.",
+  "formation": {
+    "sourceRepository": "red-cup-engineering/github-engineering-services-section",
+    "requestPath": "data/records/github-repository-declarations/requests/lenticule-science--l-space.561.group.json",
+    "requestId": "lspace-lenticule-site-20261016",
+    "sourceCommit": "758712c2346a05a7f4458b810ce73b8fad8606df",
+    "latestObservedWorkflowRun": "https://github.com/red-cup-engineering/github-engineering-services-section/actions/runs/38975572487",
+    "providerOutcome": "failure-before-any-job-steps",
+    "requestedSeedPaths": [
+      "README.md",
+      "package.json",
+      "data/records/site-instance.json",
+      "data/records/host-binding.json"
+    ]
+  },
+  "actualFabrication": {
+    "owner": "red-cup-engineering/knowledge-system-server",
+    "sourceCommit": "c65fc9c5bd0d4d061a52b7bb07619ea53b1b7fdb",
+    "package": "@red-cup-engineering/knowledge-system-server",
+    "candidateVersion": "0.1.7",
+    "hostExport": "./lspace-site",
+    "origin": "https://l-space.561.group",
+    "routes": [
+      "/",
+      "/.well-known/l-space",
+      "/api/marks",
+      "/api/marks/fiber",
+      "/api/marks/cover"
+    ],
+    "scope": "source-owned cross-media binary mark identity, typed FOUR claim fibers, finite sheaf covers, JSON-LD manifest"
+  }
 }
