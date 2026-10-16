@@ -12,7 +12,7 @@ classification: "OECD FORD 5.4 Sociology / sociology of work; linked to FORD 5.2
 
 **Gonzo Ghettoism** is the Leader's proposed name for a particular *work philosophy*, not an ethnic, racial or neighborhood identity, a diagnosis, or a claim that poor neighborhoods invariably rely on drugs. The term is maintained here as a deliberately provocative research name, with its contested language and referent disclosed. It refers to a historically situated pattern of street-level hustle in segregated, capital-constrained American environments, including but not limited to settings where drug markets, criminalization, dependency, policing, and prohibition prices shape opportunity. Neither drugs nor illegality is a necessary attribute of the underlying work mechanisms.
 
-This is a **new cultural-economic specialization of the existing Work theory**, not a rival definition of [Work](../content/text/glossary/terms/work.md). It takes the latter's attributable exercise of capacity in a situation with a nameable result as the work event; it studies the social, economic, moral and institutional context around that event. Its primary owner is Sociology / Work Science. The linked economics-and-business science field studies the market and enterprise consequences. This source does not create a standing office, authorize transactions, or claim a deployed enterprise.
+This is a **new cultural-economic specialization of the existing Work theory**, not a rival definition of [Work](../../content/text/glossary/terms/work.md). It takes the latter's attributable exercise of capacity in a situation with a nameable result as the work event; it studies the social, economic, moral and institutional context around that event. Its primary owner is Sociology / Work Science. The linked economics-and-business science field studies the market and enterprise consequences. This source does not create a standing office, authorize transactions, or claim a deployed enterprise.
 
 ## What the section makes
 
@@ -22,7 +22,7 @@ This is a **new cultural-economic specialization of the existing Work theory**, 
 
 ## Research procedure: culture → mechanism → economics → recipient
 
-This is a domain-specific application of the existing [Science research skill](../../../../../../lib/agency/skills/research/SKILL.md) and [Coesite Research Operations](https://github.com/coesite-operations/operations-services-section/tree/main/services/research-operations-services-section), not a duplicate general runbook.
+This is a domain-specific application of the existing [Science research skill](https://github.com/lenticule-science/science-services-section/blob/main/lib/agency/skills/research/SKILL.md) and [Coesite Research Operations](https://github.com/coesite-operations/operations-services-section/tree/main/services/research-operations-services-section), not a duplicate general runbook.
 
 1. **Qualify representation.** Treat clipping.'s *Work Work* and associated art as representations with credited authors, genre conventions and particular narrators. Use the label's own release notes, not an assumption that a rap narrator is an interview subject or that the artwork describes all of a population.
 2. **Identify a situated work occurrence.** For a candidate practice, specify actor (only when publicly known or consented), capacity, situation and output using the existing Work carrier. Record customer/receiver, capital access, legitimacy, exposure, remuneration and externalities as additional context; do not redefine the base event.
