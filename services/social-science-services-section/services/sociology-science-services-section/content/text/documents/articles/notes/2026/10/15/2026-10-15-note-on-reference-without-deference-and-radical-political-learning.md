@@ -57,7 +57,7 @@ The source base has also changed in substance. Some first-edition claims relied 
 
 ### 2.3 Relation to the existing Lenticule corpus
 
-The owning Sociology corpus already contains an [anarcho-nihilism note](../../../../undated/anarcho-nihilism.md) and an [anarchist-grammar note](../../../../2026/04/27/2026-04-27-anarchist-grammar.md). Their inspected blobs were, respectively, `13826cb10bd4de1e8d663fbe171943a47f80e9fe` and `3671c345501a22ffb0c4dcf3d60025f9d809ba28`. They are local theoretical inputs, not independent observations of a population. Their broad claims about constructive programs or recurrent rhetorical forms are not treated here as established prevalence results. This paper does not overwrite those distinct arguments or turn resemblance to them into evidence of influence.
+The owning Sociology corpus already contains an [anarcho-nihilism note](../../../undated/anarcho-nihilism.md) and an [anarchist-grammar note](../../04/27/2026-04-27-anarchist-grammar.md). Their inspected blobs were, respectively, `13826cb10bd4de1e8d663fbe171943a47f80e9fe` and `3671c345501a22ffb0c4dcf3d60025f9d809ba28`. They are local theoretical inputs, not independent observations of a population. Their broad claims about constructive programs or recurrent rhetorical forms are not treated here as established prevalence results. This paper does not overwrite those distinct arguments or turn resemblance to them into evidence of influence.
 
 The paper remains in Sociology because its main question concerns learning relations, collective practice, and transmission. It draws on political theory and intellectual history without creating a competing general encyclopedia. No executable implementation or new institutional authority is created by the model.
 
