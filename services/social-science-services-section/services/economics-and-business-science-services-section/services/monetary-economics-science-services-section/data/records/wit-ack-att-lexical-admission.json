@@ -159,7 +159,7 @@
   "receipt": {
     "fileContentSha256": "Exact UTF-8 bytes of the whole source, as SHA-256 lowercase hex",
     "profileContentSha256": "Exact UTF-8 bytes of the source-owned Science JSON profile, as SHA-256 lowercase hex",
-    "sourceVersion": "Exact source document path/revision on which the review was performed, or null if none",
+    "sourceVersion": "Nonempty reviewed document path/revision; an anonymous location may be scanned but cannot be review-receipted",
     "sourceSpan": "UTF-16 half-open [start,end] of the exact candidate text",
     "matchedText": "Exact source substring",
     "term": "One canonicalTerms[].id",
@@ -172,6 +172,7 @@
     "A scanner reports candidate spans, not mathematical facts.",
     "Receipts are invalidated by any change to the exact source SHA-256 or occurrence offsets.",
     "A review receipt requires this exact Science policy source SHA-256 and its reviewed document identity; an unchanged excerpt under another policy or path is not pre-approved.",
+    "The Engineering reviewer must hash the same exact UTF-8 profile bytes it parses; a caller-supplied policy hash or anonymous document identity alone never qualifies a receipt.",
     "A collision form is a review trigger, never a synonym or permission to replace a canonical term.",
     "Validating receipt shape does not prove the cited sources or semantic judgment.",
     "Canonical WIT refers to exactly one FOUR knowledge-order cover, not a whole encounter or an arbitrary Record increment.",
