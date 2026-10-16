@@ -1,6 +1,6 @@
 {
   "kind": "ptgae.canonical-term-admission/v1",
-  "id": "lenticule-monetary-wit-ack-att-20261014",
+  "id": "lenticule-monetary-wit-ack-att-20261016",
   "sourceOwner": "lenticule-science/science-services-section",
   "scienceDomain": "monetary-economics-science-services-section",
   "scope": "Authored 561 Group prose, excluding quotations, citations, code, vendor identifiers, original titles and archival evidence",
@@ -158,6 +158,8 @@
   },
   "receipt": {
     "fileContentSha256": "Exact UTF-8 bytes of the whole source, as SHA-256 lowercase hex",
+    "profileContentSha256": "Exact UTF-8 bytes of the source-owned Science JSON profile, as SHA-256 lowercase hex",
+    "sourceVersion": "Exact source document path/revision on which the review was performed, or null if none",
     "sourceSpan": "UTF-16 half-open [start,end] of the exact candidate text",
     "matchedText": "Exact source substring",
     "term": "One canonicalTerms[].id",
@@ -169,6 +171,7 @@
   "invariants": [
     "A scanner reports candidate spans, not mathematical facts.",
     "Receipts are invalidated by any change to the exact source SHA-256 or occurrence offsets.",
+    "A review receipt requires this exact Science policy source SHA-256 and its reviewed document identity; an unchanged excerpt under another policy or path is not pre-approved.",
     "A collision form is a review trigger, never a synonym or permission to replace a canonical term.",
     "Validating receipt shape does not prove the cited sources or semantic judgment.",
     "Canonical WIT refers to exactly one FOUR knowledge-order cover, not a whole encounter or an arbitrary Record increment.",
