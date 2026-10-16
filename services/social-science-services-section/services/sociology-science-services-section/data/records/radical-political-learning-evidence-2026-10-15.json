@@ -1,0 +1,198 @@
+{
+  "record_type": "documentary-evidence-register",
+  "version": "1.0",
+  "date": "2026-10-15",
+  "paper_version": "2.0",
+  "paper": "../../content/text/documents/articles/notes/2026/10/15/2026-10-15-note-on-reference-without-deference-and-radical-political-learning.md",
+  "question_origin": "emsenn, Theorsday, 2026-10-15",
+  "scope": "Purposively selected published arguments about political learning; not a roster of activists, a prevalence sample, or an operational network.",
+  "analysis_status": "Single AI-assisted interpretive pass. Source passages inspected; no independent coding, author verification, interviews, behavioral verification, or causal estimation.",
+  "counting_rule": "Ten records come from six receiving documents. Multiple records in one document are dependent; these counts describe the register, not a population.",
+  "privacy_rule": "Retain only public publication names and source locators. Do not resolve pseudonyms, infer private affiliations, or extract operational activities.",
+  "sources": [
+    {
+      "source_id": "S05",
+      "author": "Aragorn!",
+      "title": "Nihilism, Anarchy, and the 21st century",
+      "url": "https://theanarchistlibrary.org/library/aragorn-nihilism-anarchy-and-the-21st-century",
+      "date_status": "Original year unresolved in inspected edition; archive records retrieval on 2009-03-02. The paper's former 2004 attribution is not independently verified here.",
+      "access": "Full archival HTML; Introduction and argumentative sections inspected. The historical narrative was not independently verified."
+    },
+    {
+      "source_id": "S07",
+      "author": "Workers Solidarity Movement, attribution on inspected page",
+      "title": "Anarchism, insurrections and insurrectionalism",
+      "url": "https://libcom.org/article/anarchism-insurrections-and-insurrectionalism",
+      "date_status": "Original date unresolved; libcom posting dated 2022-01-03.",
+      "access": "Full HTML; critique and numbered source notes inspected. Original editions of the quotations were not collated."
+    },
+    {
+      "source_id": "S22",
+      "author": "Serafinski",
+      "title": "Blessed is the Flame: An introduction to concentration camp resistance and anarcho-nihilism",
+      "url": "https://theanarchistlibrary.org/library/serafinski-blessed-is-the-flame",
+      "date_status": "2016, as identified by archive and reproduced publishing information.",
+      "access": "Archival HTML, especially Anarcho-nihilism and Collision. Archive describes an OCR-derived source; original printed edition not collated."
+    },
+    {
+      "source_id": "S23",
+      "author": "John Zerzan",
+      "title": "Why Hope? (Critique of the Nihilist tendency in Anarchism)",
+      "url": "https://theanarchistlibrary.org/library/john-zerzan-why-hope",
+      "date_status": "2013, archive date and linked source provenance.",
+      "access": "Complete short archival HTML text."
+    },
+    {
+      "source_id": "S24",
+      "author": "Flower Bomb",
+      "title": "Why Nihilism? A (Friendly) Response to John Zerzans Why Hope?",
+      "url": "https://theanarchistlibrary.org/library/flower-bomb-why-nihilism-a-response-to-john-zerzans-why-hope-critique-of-the-nihilist-tendency",
+      "date_status": "2019 as assigned by the archive; Warzone Distro's January 2020 index also lists the piece. These are not two independent observations.",
+      "access": "Complete short archival HTML text; embedded Zerzan quotations distinguished from the responding author's statements."
+    },
+    {
+      "source_id": "S25",
+      "author": "Anonymous contributor introduced by CrimethInc. as an anarchist",
+      "title": "Ya Ghazze Habibti—Gaza, My Love: Understanding the Genocide in Palestine",
+      "url": "https://crimethinc.com/2024/10/03/ya-ghazze-habibti-gaza-my-love-understanding-the-genocide-in-palestine",
+      "date_status": "2024-10-03, publisher date.",
+      "access": "Publisher HTML; framing, Serafinski passage, and reading list inspected. Other historical, legal, and strategic claims were not audited."
+    }
+  ],
+  "observations": [
+    {
+      "episode_id": "E01",
+      "document_cluster": "S05",
+      "recipient_document": "S05",
+      "referenced_source": "Nihilist arguments assembled in the pamphlet; not a single externally identified teacher",
+      "locator": "Introduction, first two paragraphs",
+      "retrieval_anchor": "my evaluation of this subject material comes from an anarchist orientation",
+      "observed": "The writer explicitly situates the evaluation within anarchism while introducing nihilist contributions to other anarchists.",
+      "evidence_basis": ["authorial self-positioning", "observable textual synthesis", "invitation to readers"],
+      "mode": ["theoretical"],
+      "stance": "constructive engagement",
+      "limit": "Reader reception and behavioral adoption are not demonstrated by the invitation."
+    },
+    {
+      "episode_id": "E02",
+      "document_cluster": "S22",
+      "recipient_document": "S22",
+      "referenced_source": "Bæden and an unnamed-in-this-passage Warsaw Ghetto memoir",
+      "locator": "Collision, paragraph beginning This collision of anarcho-nihilism",
+      "retrieval_anchor": "At the same time as I pored my way through Bæden",
+      "observed": "The author reports simultaneous reading as the origin of the juxtaposition developed in the book.",
+      "evidence_basis": ["retrospective author report", "observable thematic juxtaposition"],
+      "mode": ["theoretical"],
+      "stance": "selective combination",
+      "limit": "Do not identify the unnamed memoir from another citation without additional evidence. The report does not verify the book's historical analogy."
+    },
+    {
+      "episode_id": "E03",
+      "document_cluster": "S22",
+      "recipient_document": "S22",
+      "referenced_source": "Aragorn!'s account of nihilism",
+      "locator": "Anarcho-nihilism, paragraph beginning In short and following attribution",
+      "retrieval_anchor": "Aragorn! traces the history of nihilism",
+      "observed": "The text explicitly uses Aragorn! in constructing its account.",
+      "evidence_basis": ["attributed textual use"],
+      "mode": ["theoretical"],
+      "stance": "affirmative use of an account",
+      "limit": "This verifies attributed use, not the historical accuracy of that account, independent behavioral uptake, or another recipient."
+    },
+    {
+      "episode_id": "E04",
+      "document_cluster": "S24",
+      "recipient_document": "S24",
+      "referenced_source": "John Zerzan's writing and Why Hope?",
+      "locator": "Opening paragraph; subsequent response to the quoted essay",
+      "retrieval_anchor": "For years, John Zerzan has inspired my understanding",
+      "observed": "The writer credits an existing influence while disputing the essay's interpretation of nihilism.",
+      "evidence_basis": ["retrospective influence report", "observable critical engagement"],
+      "mode": ["theoretical"],
+      "stance": "mixed",
+      "limit": "Influence and disagreement coexist; this is not evidence of either total deference or complete disaffiliation."
+    },
+    {
+      "episode_id": "E05",
+      "document_cluster": "S24",
+      "recipient_document": "S24",
+      "referenced_source": "Unspecified nihilist, individualist anarchists named as a category by the author",
+      "locator": "Paragraph beginning During the conclusion of my participation",
+      "retrieval_anchor": "inspired me to see anarchy in an entirely different way",
+      "observed": "The author attributes a change of understanding following an organizing impasse to this source category.",
+      "evidence_basis": ["retrospective self-reported conceptual change"],
+      "mode": ["theoretical", "normative orientation"],
+      "stance": "affirmative",
+      "limit": "No specific people, exact encounter date, exclusive cause, or verified later practice can be inferred."
+    },
+    {
+      "episode_id": "E06",
+      "document_cluster": "S24",
+      "recipient_document": "S24",
+      "referenced_source": "Blessed is the Flame, S22",
+      "locator": "Passage introduced In response to this I would like to share a quote and attributed to the book",
+      "observed": "An attributed excerpt is used to support the reply's argument.",
+      "evidence_basis": ["observable attributed quotation used argumentatively"],
+      "mode": ["theoretical"],
+      "stance": "affirmative reuse",
+      "limit": "Textual reuse is not independent verification of the quotation's claims or of enacted practice."
+    },
+    {
+      "episode_id": "E07",
+      "document_cluster": "S24",
+      "recipient_document": "S24",
+      "referenced_source": "Desert",
+      "locator": "First response paragraph after Zerzan's opening discussion of Desert",
+      "observed": "The responding author explicitly states they have not read this text.",
+      "evidence_basis": ["explicit non-reading declaration"],
+      "mode": ["direct-reading negative control"],
+      "stance": "not applicable to direct reading",
+      "limit": "Bounded to the time of the statement. Secondhand exposure through Zerzan remains possible; do not code absence of all influence."
+    },
+    {
+      "episode_id": "E08",
+      "document_cluster": "S23",
+      "recipient_document": "S23",
+      "referenced_source": "Max Stirner, The Ego and its Own",
+      "locator": "Paragraph beginning Did Max Stirner",
+      "retrieval_anchor": "I recommend Stirner's The Ego and its Own",
+      "observed": "A selective recommendation appears within a critical discussion of egoism and nihilism.",
+      "evidence_basis": ["explicit selective recommendation"],
+      "mode": ["theoretical"],
+      "stance": "mixed",
+      "limit": "Stirner is not automatically a nihilist or an insurrectionary in the study's classification; this record tests stance separation, not the target category's prevalence."
+    },
+    {
+      "episode_id": "E09",
+      "document_cluster": "S07",
+      "recipient_document": "S07",
+      "referenced_source": "Insurrectionalist arguments, including Bonanno texts identified in the source notes",
+      "locator": "The ideas of insurrectionalism; Waiting for the revolution?; Critique of organisation; numbered notes naming The Anarchist Tension and Armed Joy",
+      "observed": "The article quotes and disputes organizational and strategic arguments, with some partial agreements.",
+      "evidence_basis": ["observable argumentative engagement with attributed texts"],
+      "mode": ["theoretical", "discussion of practical organization"],
+      "stance": "predominantly critical, with partial agreements",
+      "limit": "No new organizational practice is shown to result. Do not substitute The Insurrectional Project for the different Bonanno works actually cited."
+    },
+    {
+      "episode_id": "E10",
+      "document_cluster": "S25",
+      "recipient_document": "S25",
+      "referenced_source": "Serafinski, Blessed is the Flame, S22",
+      "locator": "Paragraph beginning One last note before we move forward; concluding reading list",
+      "observed": "The contributor explicitly brings the book's argument into a different political interpretation.",
+      "evidence_basis": ["attributed argumentative recontextualization"],
+      "mode": ["theoretical"],
+      "stance": "affirmative reuse in that passage",
+      "limit": "Publication is not proof of all CrimethInc. contributors' agreement, audience uptake, historical equivalence, or practical efficacy. Analysis does not endorse violence against civilians."
+    }
+  ],
+  "interpretation_boundaries": [
+    "A document's stance toward a source and its learning from that source are separate variables.",
+    "The register establishes textual relations and reported learning episodes, not a representative gradient.",
+    "No inspected record independently verifies subsequent enactment of a specific practice.",
+    "The evidence selection followed references and theoretical contrasts, so source prominence within this register cannot estimate prominence outside it.",
+    "Retrieval anchors are brief locators; typographic apostrophes may differ across archived editions.",
+    "All source access for this register occurred during the second revision round on 2026-10-15; this does not certify the first edition's claimed search history."
+  ]
+}
