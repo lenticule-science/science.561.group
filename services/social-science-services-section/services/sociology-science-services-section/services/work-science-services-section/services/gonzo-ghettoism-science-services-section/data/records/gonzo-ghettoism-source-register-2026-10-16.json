@@ -96,13 +96,14 @@
     },
     {
       "id": "S08",
-      "author": "Eloise Dunlap, Bruce D. Johnson, Jennifer L. Fackler et al.",
+      "author": "Eloise Dunlap, Bruce D. Johnson, Joseph A. Kotarba, and Jennifer L. Fackler",
       "year": 2010,
       "title": "Macro-Level Social Forces and Micro-Level Consequences: Poverty, Alternate Occupations, and Drug Dealing",
       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2924206/",
       "role": "qualitative-mechanism-study",
       "finding": "Empirical New Orleans analysis links poverty, restricted opportunity, social capital and neighborhood structure to entry into drug markets.",
-      "limit": "Does not show drug markets are economically optimal or transferable skills yield wealth."
+      "limit": "Does not show drug markets are economically optimal or transferable skills yield wealth.",
+      "doi": "10.1080/15332641003772611"
     },
     {
       "id": "S09",
