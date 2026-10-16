@@ -23,13 +23,14 @@ holds the work, governance, gig-work, and formal work research program.
 
 [Reference Without Deference: Radical Political Learning, Anarchist Praxis,
 and the Nihilist–Insurrectionary Horizon](content/text/documents/articles/notes/2026/10/15/2026-10-15-note-on-reference-without-deference-and-radical-political-learning.md)
-(version 2.0, 15 October 2026) investigates problem-relative political learning,
-including documented reception of nihilist and insurrectionary arguments.
+(version 3.0, 15 October 2026) examines problem-relative political learning
+and selective borrowing without assuming ideological succession.
 Its [documentary evidence register](data/records/radical-political-learning-evidence-2026-10-15.json)
-contains ten source-located observations from six purposively selected receiving
-documents, including an explicit non-reading control. The revised model separates
-critical stance from learning, direct reading from mediated transmission, and
-textual uptake from enacted practice. It adds incomplete-observation bounds and
-a prospective content-versus-prestige experiment. This is AI-assisted conceptual
-and documentary research, not a representative population study, an executed
-experiment, independently coded fieldwork, or a peer-reviewed publication.
+contains fourteen source-located records from ten purposively selected receiving
+documents. The third round adds cross-setting DSA references and XR's declared
+Holacracy source, current scholarly comparisons, normalized outcome fields,
+an observation-bias counterexample, and a better-matched experimental proposal.
+Textual use, reported learning, posted rules, reported adoption, implemented
+practice, and deference remain distinct. This is AI-assisted conceptual and
+documentary research, not a population estimate, executed experiment,
+independently coded field study, or peer-reviewed publication.
