@@ -11,7 +11,18 @@ description: "The minimal constructive configuration for a reproducible paracosm
 
 # Reproducible Paracosm Specification (RPS v0.1)
 
-This specification instantiates the [theorem of reproducible paracosmic models](../notes/2025/10/10/2025-10-10-note-on-reproducible-paracosmic-models.md).
+This specification extends the [historical proposal on reproducible paracosmic models](../notes/2025/10/10/2025-10-10-note-on-reproducible-paracosmic-models.md). The word *theorem* in the earlier paper is its historical title, **not a statement that it has been formally proved**.
+
+## Scientific status and admissibility correction (2026-10-17)
+
+**Status: research specification with unproved categorical claims.** RPS v0.1 is retained as the historical seven-artifact interface and hypothesis set; its "Modal Encoding Theorem," "Reproducibility Theorem" and constructive corollary must **not** be asserted as established from the supplied proof sketches. In particular, the conditions displayed here do not by themselves establish a reflective localization, completeness of a quotient, equivalence of modal-object categories, or a finite algorithm deciding every required property. Science does not supply a Lean proof identity for those propositions. The case study [Alice as a paracosmic stress test](../notes/2026/10/17/2026-10-17-note-on-alice-as-a-paracosmic-stress-test.md) includes an explicit finite counterexample to an insufficient observer.
+
+**Three distinctions are binding for interpretation:**
+1. **Representation normalization versus world dynamics.** A world can branch, contain unresolved testimony, or have unbounded unfolding. A source serializer or consumer projection may still normalize deterministically. Do not force fictional events themselves into a terminating confluent system.
+2. **Claims versus settled fictional facts.** An utterance, narrator report, institutional order, witnessed act, and accepted canon fact have different evidence and authority. FOUR \(\top\) requires supported positive and negative readings of the **same typed scoped proposition**, not two texts linked by a generic disagreement field.
+3. **Source proof versus finite executable check.** A bounded fixture can demonstrate a mismatch or refute a proposed mapping; passing finitely many fixtures does not prove a general categorical theorem or a consumer's complete dependency coverage.
+
+The legacy tuple \((S,\Theta,J,N,O,\Box,\Diamond)\) has seven mathematical slots, but the earlier **seven-artifact table** uses \`verification.suite\` as its seventh artifact, rather than \(\Diamond\). An implementation must state where each adjoint is declared and how the verification suite separately records proof identities, counterexamples and unknowns. The map between artifacts and tuple is not a bijection as written.
 
 ## Abstract
 
@@ -22,7 +33,7 @@ The result is a standard minimal schema for representing coherent, modal, and re
 
 # 1. Derivation from the Theorem
 
-The **Theorem of Reproducible Paracosmic Modal Models** establishes that:
+The historical **proposal** called the Theorem of Reproducible Paracosmic Modal Models claims, without a complete proof in this source, that:
 $$
 \mathsf{RP}(S) = \mathbf{Mod}(S)/{\!\!\sim_{\!J,N,O}}
 $$
@@ -158,7 +169,7 @@ Given a configuration $\mathcal{C}_{\text{RPS}}$, the following constructions ar
 
 # 5. Verification Conditions (Constructive Form)
 
-A configuration is valid **iff** it passes the following finite verifications derived from the theorem’s hypotheses:
+The proposal declares a configuration valid when six obligations are discharged. The listed operational checks are **not sufficient evidence by themselves** for the category-theoretic claims:
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -219,7 +230,7 @@ A configuration is valid **iff** it passes the following finite verifications de
 
 # 6. Derived Guarantees
 
-From a verified configuration, the theorem guarantees:
+The historical proposal lists the following **intended guarantees**, which remain unproved unless independently established for the specified model category and construction:
 
 1.  ****Existence:****  
     The canonical reproducible world $\mathsf{RP}(S)$ exists.
@@ -377,9 +388,24 @@ projections, and test observation equivalence and dependency coverage,
 before adding other output kinds.
 
 
+## 8.2 Research profile: observation scopes, local time, and explicit proof status (2026-10-17)
+
+This is an **optional research extension**, not a newly accepted v0.2 schema or a claim about existing FeltOS parser support. It exists to protect admitted cases such as the two Alice books without weakening already defined consumers.
+
+- **Source identity:** record work, edition, chapter, exact source span, source revision, narrator or speaker, and the difference between textual occurrence, proposed interpretation, and an admitted world claim.
+- **Assertion scope:** identify canon, frame (dream, remembered event, narrated event), local context, typed proposition, polarity and authority. Preserve separate positive/negative evidence when the proposition keys match; never infer that a disagreement of utterances alone yields settled world contradiction.
+- **Clocks and event order:** distinguish a narrative presentation order from a causal event relation and each area's local clock-reading. A strictly advancing universal clock is an additional world-law hypothesis, not a paracosm-wide requirement.
+- **Observation family:** distinguish what each actual receiver observes (body, grin, spoken claim, readable manuscript, game action). Require preservation only for a named receiver's admitted observables, and expose lost information with a counterexample.
+- **Dynamics and normal forms:** separate world transitions from source-record normalization. Demanding a unique fixed ending would be a lossy consumer requirement for intentionally branching or unresolved stories.
+- **Formal status:** for every law, distinguish defined term, literary evidence, proposed mathematical model, finite derivation, countermodel, independent mechanized theorem and real consumer acceptance.
+
+For a total explicitly defined observation \(O_c:X\to Y_c\), the relation \(x\equiv_c x'\) iff \(O_c(x)=O_c(x')\) is an equivalence relation. **Nothing in this elementary construction implies** that it respects transition behavior, is a categorical localization, or preserves observations \(O_d\) for another receiver \(d\). Those are separately stated obligations.
+
+The already implemented [FeltOS paracosm impact tests](https://github.com/red-cup-engineering/feltos/blob/main/test/paracosm-impact.test.mjs) remain relevant **bounded tests**; they do not supply the missing categorical proofs. Do not fork an Alice-specific runtime to compensate. Engineering should reuse the existing source-indexed observation pipeline after Science admits an exact test requirement.
+
 # 9. Conclusion
 
-The RPS v0.1 standard translates the categorical sufficiency of the **Theorem of Reproducible Paracosmic Modal Models** into a constructive schema.  
+The RPS v0.1 standard translates the **proposed** categorical requirements into a constructive schema. The claimed categorical sufficiency is not established by the present proof sketches or finite software checks.  
 It identifies the minimal data necessary to instantiate a reproducible world and the precise verification conditions required to guarantee its existence and invariance.  
 This specification serves as the canonical interface between theoretical world models and their concrete publication, simulation, or interpretive realization.
 
