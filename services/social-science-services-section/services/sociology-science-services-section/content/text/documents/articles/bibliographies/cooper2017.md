@@ -22,4 +22,4 @@ Cooper argues that an alliance of market liberalism and conservative family valu
 
 A publisher synopsis is insufficient to support a detailed causal case in any named jurisdiction. Do not equate conservative family rhetoric with a documented commitment to an unreachable racial breeder ideal. Full chapter reading, primary policy records and class/racial stratification are still required.
 
-**Linked existing science:** [Institutional reproductive expendability](../../../../glossary/terms/institutional-reproductive-expendability.md), [White-fertility and material-reproduction mechanism design](../notes/2026/10/17/2026-10-17-white-fertility-estimand-conflicts.md), and [Commission evidence crosswalk](bibliography-and-evidence-crosswalk-2026-10-17.md).
+**Linked existing science:** [Institutional reproductive expendability](../../../glossary/terms/institutional-reproductive-expendability.md), [White-fertility and material-reproduction mechanism design](../notes/2026/10/17/2026-10-17-white-fertility-estimand-conflicts.md), and [Commission evidence crosswalk](bibliography-and-evidence-crosswalk-2026-10-17.md).

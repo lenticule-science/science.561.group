@@ -22,4 +22,4 @@ The decline in U.S. birthrates 2007–2020 occurred across several groups includ
 
 The nonidentification result does not prove economics has no role, nor that personal priorities are exogenous to class/policy. It requires reading the full empirical specification and trying the replication package before drawing stronger causal conclusions. It does not identify genetic white decline or arbitrary purity selection.
 
-**Linked existing science:** [Institutional reproductive expendability](../../../../glossary/terms/institutional-reproductive-expendability.md), [White-fertility and material-reproduction mechanism design](../notes/2026/10/17/2026-10-17-white-fertility-estimand-conflicts.md), and [Commission evidence crosswalk](bibliography-and-evidence-crosswalk-2026-10-17.md).
+**Linked existing science:** [Institutional reproductive expendability](../../../glossary/terms/institutional-reproductive-expendability.md), [White-fertility and material-reproduction mechanism design](../notes/2026/10/17/2026-10-17-white-fertility-estimand-conflicts.md), and [Commission evidence crosswalk](bibliography-and-evidence-crosswalk-2026-10-17.md).
