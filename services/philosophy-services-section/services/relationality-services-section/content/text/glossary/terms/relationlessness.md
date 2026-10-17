@@ -12,6 +12,9 @@ keywords:
   - paradox
   - directed-relating
   - induction
+  - concept-horse
+  - fregean-predication
+  - unsaturation
 see-also:
   - relating
   - reflexivity
@@ -73,6 +76,32 @@ The current [Mark-origin incidence investigation](https://github.com/lenticule-s
 A proposed proof must first show **which new act is forced by each unresolved predecessor**, what distinguishes it observationally, and why the competing routes cannot simply be thrown away. Only then can it recover a graph or count its cycles. This is the stronger purpose of the [Attending](../concepts/attending.md) and [Turn](../concepts/turn.md) research.
 
 For the authorial genealogy, read [Relational Derivatives](https://github.com/emsenn/content/blob/main/triage/relational%20derivatives/Relational%20Derivatives.md) and [Deriving Relationlessness](https://github.com/emsenn/content/blob/main/triage/relational%20derivatives/Deriving%20Relationlessness.md). Their sequences of reflex, determining, comparing, orienting, differentiating, returning and further reflex are **attempts at generative derivation**. Where they assume equality, a tuple, truth values or a constructor without deriving them, that is the specific point to improve—not permission to substitute a received graph theory for the original sequence.
+
+## The Concept Horse: a generated problem of attending to a relation
+
+**We conjecture that the failure of relationlessness generates the problem exemplified by Frege's *concept horse*.** An excluding relation is an **act** that remains incomplete until its excluding/excluded orientation is attended. When a further act treats that first relation *as its subject*, it must present the earlier act without making the presentation identical to the performance.
+
+Frege's example is the difference between the unsaturated predicate **“is a horse”** and the singular phrase **“the concept horse.”** The predicate has an open argument place; the nominal phrase can fill an argument place in another predication. Calling the phrase an object does not perform the original predicate. This is the historical *concept horse* problem, not a theorem that Frege invented FOUR. See Frege, *Concept and Object* (1892), and [the Stanford Encyclopedia's propositional-function account](https://plato.stanford.edu/entries/propositional-function/).
+
+Our conjecture gives the distinction a **generative origin** rather than installing a concept/object partition at the start:
+
+1. **Attempted exclusion:** relating attempts to make all relating absent, including its own excluding act.
+2. **Irresolvable performance:** the act necessarily differentiates the roles **excluding** and **excluded**. Claiming that it finished cannot undo its own performance.
+3. **Re-attending the act:** the next act must be able to *present* the previous unfinished relating as something to be attended. That presentation becomes an argument **position** of the further act, while the previous act remains an unfinished relation. It cannot simply be identified with the new presentation without losing which act did the excluding.
+4. **Unsaturation and predication:** a relational act thus has a place awaiting its further relation, and a presentation can occupy that place. The same source can be **used as a relation** or **mentioned as material for the next relation**; the roles are not identical. This is the generative question behind Frege's unsaturated concept and its nominalization.
+5. **Another Turn:** an attempted reconciliation of the two roles is itself a further Attending. Its witnesses and unresolved differences can become a new Turn's articulations.
+
+To make the type distinction explicit, let \(a(\square)\) denote an **open relation in use**, and let \(\ulcorner a\urcorner\) denote its **presentation as a term** in a later utterance. The expression
+
+\[
+a(\square)=\ulcorner a\urcorner
+\]
+
+is not a proved equality or inequality: **the two expressions have different roles and do not yet inhabit one comparison type**. The desired mathematical construction is a lawful **use–mention transport** that retains the provenance of the open act when it becomes material for the next act. The transport cannot be created by placing an already-formed Fregean function or entity in the original relationless field.
+
+The current Lean [Articulating recursion](https://github.com/lenticule-science/obsmetrologia/blob/main/Obsmetrologia/Articulation/Articulating.lean) already distinguishes a performed continuation `pair u a` from its predecessor `a` through `pair_ne_self`. But it receives \(u\) as an input; [Predicating](https://github.com/lenticule-science/obsmetrologia/blob/main/Obsmetrologia/Language/Predicating/Cell.lean) also presents entities and predicates as different **positions of Marks**, not as a construction that has already derived Fregean function–argument unsaturation. **The missing arrow is the formation of the next admissible open predication from the retained impossibility of closing the preceding relation.**
+
+That is where **relationlessness → concept horse → Fregean predication** belongs. The next two arrows—predication's independent positive and negative tellings generating **FOUR**, and the published twist/Chu correspondence together with the distinct **Chu spaces valued in FOUR**—are accounted in [Obsmetrologia's source-owned predication explanation](https://github.com/lenticule-science/obsmetrologia/blob/main/docs/verso/mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/docs/explanations/why-predication-is-not-simply-fregean.md). Those downstream structures must not be offered as the explanation of the first act.
 
 ## Relationlessness and the FOUR charges
 
