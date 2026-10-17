@@ -24,8 +24,7 @@ cognitively or computationally meaningful sense.
 
 A modern LLM has a context window of $n$ tokens (currently
 $n$ ranges from $\sim 4{,}000$ to several million depending
-on model). Within this window, the model attends to all
-tokens with full bidirectional access. From the agent's
+on model). In a decoder-only autoregressive LLM, each generated token may attend to preceding permitted positions under a causal mask, **not future positions**. Some other model architectures use bidirectional attention. The presence of text in the context window does **not** guarantee faithful attention, retrieval, or correct application. From the agent's
 perspective, the context window contains:
 
 - The system prompt.
@@ -43,19 +42,13 @@ window are accessible to the agent, items outside are not.
 The context window differs from cognitive working memory and
 from classical computational memory in several ways:
 
-- **No persistence across sessions.** When the conversation
-  ends, the context is gone. There is no consolidation into
-  long-term storage.
-- **No automatic encoding.** The agent does not choose what
-  to remember. Whatever falls in the context is "remembered";
-  whatever falls out is gone.
+- **No automatic durability from inclusion.** A single inference context is temporary. A product may retain conversation histories, write an external memory, or retrieve them later; that durability is a **separate storage and authorization action**, not a consequence of the context tokens having been presented.
+- **No automatic equivalence of exposure and memory.** Context inclusion supplies a possible information source, not a guaranteed memory, endorsed proposition, or future recall. Runtime designs can select, write, reject, or retrieve durable memories; each action must be observed and attributed.
 - **Lossy at scale.** Beyond a certain context length,
   retrieval from within the window degrades — the
   "lost-in-the-middle" effect. See
   [context-window-limits](../../documents/articles/notes/undated/context-window-limits.md).
-- **No procedural component.** Working memory in cognitive
-  psychology includes manipulation; the LLM's context
-  participates in computation only via attention.
+- **Distinct cognitive/computational meanings.** Cognitive working memory, transformer context, external episodic stores, and fine-tuned weights are different mechanisms. An LLM uses learned computations as well as attention; the paper must not define all computation as attention or assume a human memory model.
 
 ## The compromise position
 
@@ -77,10 +70,7 @@ The terminology shapes architectural decisions:
   long-context models are agents with a larger buffer; they
   still need a separate memory system for persistent storage.
 
-Most production agent architectures have settled on the
-second view, pairing models with explicit memory stores
-(vector databases, knowledge bases, conversation history
-logs) rather than relying on context length alone.
+A concrete agent system may pair inference context with external stores such as databases, knowledge bases or retained conversation histories. Whether an individual installation actually writes, indexes, and retrieves these is an empirical architectural question; a general industry-consensus claim cannot substitute for its source.
 
 ## Status
 
