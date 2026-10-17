@@ -16,28 +16,28 @@ The arrows point from a **restricted child to its admitted parent**, not to sepa
 
 ### What is actually restricted
 
-Fix an original **admitted** English parser edition (v), source-grounded utterances (U_v), contexts (C), and typed candidate readings (R_v(u,c)). Retain all competing readings as candidates, and abstain if the parser cannot identify them. An English fragment (L) denotes a subfamily (R_L(u,c)\subseteq R_v(u,c)) with its own recognized source/grammar edition and stated admissibility obligations.
+Fix an original **admitted** English parser edition \(v\), source-grounded utterances \(U_v\), contexts \(C\), and typed candidate readings \(R_v(u,c)\). Retain all competing readings as candidates, and abstain if the parser cannot identify them. An English fragment \(L\) denotes a subfamily \(R_L(u,c)\subseteq R_v(u,c)\) with its own recognized source/grammar edition and stated admissibility obligations.
 
-Given a *parent* (P) and a versioned, source-qualified **restriction** (q), construct the child by comprehension of the **already present** reading relation:
+Given a *parent* \(P\) and a versioned, source-qualified **restriction** \(q\), construct the child by comprehension of the **already present** reading relation:
 
-[
+\[
 R_{P\restriction q}(u,c)
- = \{,r\in R_P(u,c)\mid q(u,c,r)=\mathrm{member}\,\}.
-]
+ = \{\,r\in R_P(u,c)\mid q(u,c,r)=\mathrm{member}\,\}.
+\]
 
-A rule's judgments are **member**, **outside**, or **unknown**. `outside` excludes a candidate from the narrower fragment but says nothing negative about its English grammaticality or truth. `unknown` records missing scope, referent, version, parse or rule information. This decision algebra is **not** FOUR evidence: two competing parses are not opposing testimonies about a typed proposition. A restriction cannot admit a parent-excluded or parent-unknown reading; without a defined (q), it cannot claim a child profile exists.
+A rule's judgments are **member**, **outside**, or **unknown**. `outside` excludes a candidate from the narrower fragment but says nothing negative about its English grammaticality or truth. `unknown` records missing scope, referent, version, parse or rule information. This decision algebra is **not** FOUR evidence: two competing parses are not opposing testimonies about a typed proposition. A restriction cannot admit a parent-excluded or parent-unknown reading; without a defined \(q\), it cannot claim a child profile exists.
 
-Every restriction has the canonical **identity-on-readings inclusion** (\iota_{P\restriction q,P}:R_{P\restriction q}\hookrightarrow R_P): it retains exactly the same source marks, occurrence spans, parser identities, typed interpretation and contextual attribution, rather than reparsing or translating. The construction yields the elementary law
-(r\in R_{P\restriction q}(u,c)\Rightarrow r\in R_P(u,c)).
+Every restriction has the canonical **identity-on-readings inclusion** \(\iota_{P\restriction q,P}:R_{P\restriction q}\hookrightarrow R_P\): it retains exactly the same source marks, occurrence spans, parser identities, typed interpretation and contextual attribution, rather than reparsing or translating. The construction yields the elementary law
+\(r\in R_{P\restriction q}(u,c)\Rightarrow r\in R_P(u,c)\).
 For each composable pair the inclusions compose by identity, so the five-step canonical embedding is
 
-[
+\[
 \iota_{\mathrm{PTGAE,English}} =
 \iota_{\mathrm{American,English}}\circ
 \iota_{\mathrm{GAE,American}}\circ
 \iota_{\mathrm{TGAE,GAE}}\circ
 \iota_{\mathrm{PTGAE,TGAE}}.
-]
+\]
 
 **This is a constructive inclusion law over an abstract admitted reading family, not a proof that every actual English sentence can be parsed, that colloquial American usage is a homogeneous class, or that any draft in the present PTGAE corpus belongs to the final child.** In particular, a selector returning an `en-US` locale and a prose linter reporting no findings have not discharged any of the four missing language-membership morphisms.
 
