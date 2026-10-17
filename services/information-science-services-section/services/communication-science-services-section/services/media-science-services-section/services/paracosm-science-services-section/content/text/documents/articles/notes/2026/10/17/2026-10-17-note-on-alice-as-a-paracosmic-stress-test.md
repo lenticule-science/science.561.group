@@ -16,7 +16,7 @@ Can the 561 Group's **existing** paracosm theory reproduce distinct observations
 
 **Answer as of 2026-10-17:** A *scoped finite observational model* can preserve these features, subject to the stated observations. This is a constructive research proposal and a hand-checked counterexample to one overstrong projection, **not** a proof of the categorical Reproducible Paracosm Theorem, a complete encoding of the books, or an accepted runtime realization.
 
-This work extends, rather than replaces, the section's [RPS v0.1](../../../specifications/reproducible-paracosm-specification.md), [content schema v0.2](../../../specifications/paracosm-content-schema.md), [relational worlding grammar](../../../guides/relational-worlding-grammar.md), [praxonic worldbuilding](../../../guides/praxonic-worldbuilding-guide.md), and [epic paracosms study](../../09/28/2026-09-28-note-on-the-science-of-epic-paracosms.md). The distinction between *paracosm* (sustained imaginative activity) and *secondary world* (the articulated world artifact) remains in force. The study does not claim that Carroll knowingly used these formalisms or that fiction supplies empirical evidence about natural physics.
+This work extends, rather than replaces, the section's [RPS v0.1](../../../../specifications/reproducible-paracosm-specification.md), [content schema v0.2](../../../../specifications/paracosm-content-schema.md), [relational worlding grammar](../../../../guides/relational-worlding-grammar.md), [praxonic worldbuilding](../../../../guides/praxonic-worldbuilding-guide.md), and [epic paracosms study](../../09/28/2026-09-28-note-on-the-science-of-epic-paracosms.md). The distinction between *paracosm* (sustained imaginative activity) and *secondary world* (the articulated world artifact) remains in force. The study does not claim that Carroll knowingly used these formalisms or that fiction supplies empirical evidence about natural physics.
 
 **Original fictional sources.** Lewis Carroll, *Alice's Adventures in Wonderland* (1865), Project Gutenberg [eBook 11](https://www.gutenberg.org/ebooks/11), chapters V–VII and XII; Lewis Carroll, *Through the Looking-Glass* (1871), Project Gutenberg [eBook 12](https://www.gutenberg.org/ebooks/12), chapters II, V, VI and XII. These are separate texts and source editions. Passage locators in the table below are citations to narrative events, not proof of a mathematical model. The books are public-domain in the United States; the source text and our interpretive claims retain separate attribution.
 
@@ -66,7 +66,7 @@ This is an elementary finite argument, not a Lean-checked proof and not evidence
 
 ## 4. What the legacy RPS must stop assuming
 
-The science source [RPS v0.1](../../../specifications/reproducible-paracosm-specification.md) historically states two categorical theorems as proved. Its current text does not furnish proofs of all claimed conclusions. In particular:
+The science source [RPS v0.1](../../../../specifications/reproducible-paracosm-specification.md) historically states two categorical theorems as proved. Its current text does not furnish proofs of all claimed conclusions. In particular:
 
 1. The old modal-object arrow \(\Box M\rightarrow M\) is an **algebra-like** structure, although the source calls it a coalgebra. Its displayed multiplication law uses an adjunction counit without establishing the needed types. A category of such objects must not be identified with a category of coalgebras or with a reflective localization by assertion.
 2. A family indexed by \(I\) does not on its own furnish the transition functors and coherence data required for a pseudofunctor \(I\to\mathbf{Cat}\). Even a well-defined Grothendieck construction does not automatically have every stated fibration, reflection or equivalence.
@@ -78,7 +78,7 @@ The science source [RPS v0.1](../../../specifications/reproducible-paracosm-spec
 
 ## 5. Coupling to praxonic and Obsmetrologia inquiry
 
-The [relational worlding grammar](../../../guides/relational-worlding-grammar.md) preserves field, actor, alignment, emission, trace and irresolved noise. Applied to Carroll:
+The [relational worlding grammar](../../../../guides/relational-worlding-grammar.md) preserves field, actor, alignment, emission, trace and irresolved noise. Applied to Carroll:
 
 - The Queen's order is an **emission**; fear, the court's reaction and any actually executed act are distinct **traces**. Do not replace them with the claim "execution happened".
 - Humpty Dumpty's asserted lexical authority generates a **field of negotiation** with Alice. The dispute's continuance is meaningful, not dirty data to normalize away.
