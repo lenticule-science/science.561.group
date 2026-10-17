@@ -101,6 +101,12 @@ Neither \(N_{\rm history}=A\) nor \(\rho\) being a bijection, functor, isomorphi
 
 The *stable door* gives a particularly sharp example: treat "inside" as an observed portal destination in \(A\), not automatically a measurable subset of the stable's exterior region in \(N_{\rm history}\). A locality or metric may change across this boundary. The logical task is to state the domain and measurement before testing containment.
 
+### Source-to-Mark and Obsmetrologia boundary
+
+This research **starts at the source, not with primitive magical cosmology**. The textual scene/edition and source-span record is a **Mark-bearing input** for the existing Obsmetrologia research program. A narrator's or character's utterance is articulated with its speaker and frame; possible readings ("the wardrobe connects world E to N", "the witch claims a rule") are predicated under explicit types; affirmative or adverse evidence is posited; and settlement may occur **only** under the corresponding source, scope, authority and proof conditions. A reader's alternate interpretation is not automatically an opposite FOUR truth witness. A typed bridge event, an event-order relation or a source-backed world claim is therefore a proposed **downstream derivative**, not an independent replacement foundation.
+
+This ordering is *conjectural as an end-to-end mathematical derivation*: no Lean declaration, unique Obsmetrologia normal form, Landauer/quot.sound energy-accounting correspondence, or installed SignCraft rule for a Narnian portal is evidenced here. Engineering must use source-derived finite vectors only when their Science status permits, and not assert a primitive portal ontological law before its type and sources are admitted.
+
 ## 4. Finite results and their proof status
 
 ### Lemma 1 — A single increasing re-indexing cannot preserve incompatible work orders
