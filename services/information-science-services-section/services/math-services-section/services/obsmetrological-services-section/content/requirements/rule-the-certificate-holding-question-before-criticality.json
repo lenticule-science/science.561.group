@@ -1,0 +1,33 @@
+{
+  "id": "rule-the-certificate-holding-question-before-criticality",
+  "name": "rule the certificate holding question before criticality",
+  "kind": "requirement",
+  "raised-by": "claude-fable",
+  "asks": "The gadget note commits the firm to a no-ground-truth incoherence detector and a sovereignty instrument, and the archive holds the lived rule that legibility infrastructure kills when it leaks (the Standing Rock check-in letter: 'when me and my team did this the first time, it led to someone's death'). Yet no record states who may hold the gadget's certificates and under what refusals. The same instrument that detects a settler legal order's contradictions can be pointed at an insurgent network by whoever holds it. The object-capability layer (UCAN, macaroons: certificates are held, not broadcast) is where the answer lives technically, but the ruling is a general-counsel work product - a contract-register entry stating who may hold, who may never hold, and what refusals bind every holder - and it belongs on the board BEFORE any criticality experiment runs in any medium. General-counsel currently sits with zero dispatches.",
+  "from-idea": "emsenn/idea/rule-the-certificate-holding-question-before-criticality",
+  "met-when": [
+    {
+      "cell": "rule-the-certificate-holding-question-before-criticality:conditions-stated",
+      "target": "held"
+    }
+  ],
+  "x-provenance": {
+    "recorded-by": "561-group capture session (claude session 017x7ZhpkZQAx5VZSv2Hz5Q9)",
+    "recorded-on": "2026-10-10",
+    "sources": [
+      {
+        "words": "The gadget note commits the firm to a no-ground-truth incoherence detector and a sovereignty instrument, and the archive holds the lived rule that legibility infrastructure kills when it leaks (the Standing Rock check-in letter: 'when me and my team did this the first time, it led to someone's death'). Yet no record states who may hold the gadget's certificates and under what refusals. The same instrument that detects a settler legal order's contradictions can be pointed at an insurgent network by whoever holds it. The object-capability layer (UCAN, macaroons: certificates are held, not broadcast) is where the answer lives technically, but the ruling is a general-counsel work product - a contract-register entry stating who may hold, who may never hold, and what refusals bind every holder - and it belongs on the board BEFORE any criticality experiment runs in any medium. General-counsel currently sits with zero dispatches.",
+        "at": "2026-07-16",
+        "locator": "lib/emsenn/services/561-group/services/561-group-services-section/services/561-group-operations-services-section/lib/legacy/restored-from-main/2026-09-13-ccf2d7a/services/561-group-enterprise-services-section/services/561-group-board-of-directors/lib/legacy/2026-08-03-executive-office/data/records/ideas/ideas/rule-the-certificate-holding-question-before-criticality.json"
+      }
+    ],
+    "carried-from-idea-record": "lib/emsenn/services/561-group/services/561-group-services-section/services/561-group-operations-services-section/lib/legacy/restored-from-main/2026-09-13-ccf2d7a/services/561-group-enterprise-services-section/services/561-group-board-of-directors/lib/legacy/2026-08-03-executive-office/data/records/ideas/ideas/rule-the-certificate-holding-question-before-criticality.json",
+    "pending-conditions": "Carried from the 2026-07 executive office's idea record under ideas-dispose-through-the-requirement-term; no met-when that exercises this idea's capability has been stated yet. The owning section states it.",
+    "linked-carriers": [],
+    "coverage": "lib/emsenn/services/561-group/services/public-services-section/services/personal-services-section/services/emsenn-services-section/data/records/leader-utterances/coverage/executive-office-ideas-2026-07.md",
+    "sign-cell": {
+      "type": "emsenn/schema/requirement",
+      "mark": "ni:///sha-256;yWE4ga4Q5YKcVbliamxQYNHpVmsVk3RrX0_DtWE-IDo"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://research-notes.561.group/hacking/library/predication-notes/composting/library/object/library/thing/library/system/library/operating-system/library/computer-operating-system/library/thing-directory-file/thing-directory-file.schema.json",
+  "title": "thing-directory-file",
+  "description": "JSON Schema for an audit object describing a POSIX directory file that holds a $thing per the SPEC's recursive template. The audit object is built by reading the directory's contents (basename, list of regular files, list of subdirectories). The schema constrains the shape of the audit object; the validator script enforces the basename rule (identity files must use the directory's basename) and the subdir-naming rule (subdirs not in the known set must be gerund-named transformer subdirs) dynamically, because those rules quantify across audit fields and JSON Schema cannot express that with declarative properties alone.",
+  "type": "object",
+  "required": ["name", "files", "subdirs"],
+  "additionalProperties": false,
+  "properties": {
+    "name": {
+      "description": "Basename of the directory. Must be a slug per the OS-wide slug pattern.",
+      "type": "string",
+      "pattern": "^[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$"
+    },
+    "files": {
+      "description": "Regular file names directly in the directory (not recursive).",
+      "type": "array",
+      "items": {"type": "string", "minLength": 1},
+      "uniqueItems": true
+    },
+    "subdirs": {
+      "description": "Subdirectory names directly in the directory (not recursive).",
+      "type": "array",
+      "items": {"type": "string", "minLength": 1},
+      "uniqueItems": true
+    },
+    "path": {
+      "description": "Optional absolute or repo-relative path, used for diagnostic output in validator errors.",
+      "type": "string"
+    }
+  }
+}

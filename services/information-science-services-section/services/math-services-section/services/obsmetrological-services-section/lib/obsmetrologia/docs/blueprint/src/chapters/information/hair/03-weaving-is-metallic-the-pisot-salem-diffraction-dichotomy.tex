@@ -1,0 +1,182 @@
+\section{Weaving is metallic: the Pisot/Salem diffraction dichotomy}
+
+This subgraph records the StepN hair that the textile reading projects.  The
+green nodes are the algebraic and regime facts Lean has settled.  The actual
+identification of float-bounded textile families with those metallic
+substitutions remains an explicit frontier claim.
+
+\begin{theorem}[The metallic family satisfies its quadratic recurrence]\label{thm:metallic-family-cayley-hamilton}\lean{Obsmetrologia.AperiodicOrder.Tiling.StepN.cayleyHamilton_metallic}\leanok\uses{thm:stepn-chu-cayley-hamilton}
+The matrix \(\begin{pmatrix}n&1\\1&0\end{pmatrix}\) is annihilated by
+\(x^2-nx-1\).  This is the metallic substitution family as a formal
+matrix recurrence, not yet a textile identification.
+\end{theorem}
+
+\begin{theorem}[The metallic mean is an internal real]\label{thm:metallic-mean-real}\lean{Obsmetrologia.AperiodicOrder.Tiling.StepN.metallic_root}\leanok\uses{thm:metallic-family-cayley-hamilton}
+For every \(n\), the metallic double \(z=n+\sqrt{n^2+4}\) exists in the
+internal real carrier and satisfies \(z^2=(n+n)z+4\).
+\end{theorem}
+
+\begin{theorem}[Metallic powers resolve through a finite lens]\label{thm:metallic-power-lens}\lean{Obsmetrologia.AperiodicOrder.Tiling.StepN.metallic_power_expansion}\leanok\uses{thm:metallic-mean-real}
+Every natural power of the metallic double resolves as \(z^k=P_kz+Q_k\).
+The Hair magnitude is therefore carried by a graded coefficient pair,
+not by an unstructured real continuum.
+\end{theorem}
+
+\begin{theorem}[The Salem/Pisot split is algebraic]\label{thm:salem-pisot-algebraic-split}\lean{Obsmetrologia.AperiodicOrder.Tiling.StepN.salem_vs_pisot}\leanok\uses{thm:metallic-family-cayley-hamilton}
+The Salem quartic is reciprocal and has a unit-circle trace witness, while
+the metallic polynomial is non-reciprocal and has a contracting conjugate.
+This is the algebraic boundary between contraction and neutral rotation.
+\end{theorem}
+
+\begin{theorem}[The Salem trace root is an internal real]\label{thm:salem-trace-real-root}\lean{Obsmetrologia.AperiodicOrder.Tiling.StepN.salem_trace_root}\leanok\uses{thm:salem-pisot-algebraic-split, thm:metallic-mean-real}
+The Salem trace sign-change is cashed as an internal real root, parallel to
+the golden/metallic real root.  The boundary is no longer only a polynomial
+sign pattern.
+\end{theorem}
+
+\begin{theorem}[The Salem/Pisot split is the settling-regime split]\label{thm:salem-pisot-regime-split}\lean{Obsmetrologia.AperiodicOrder.Tiling.StepN.salem_vs_pisot_regime}\leanok\uses{thm:salem-pisot-algebraic-split, thm:strict-finite}
+A contracting Pisot direction lands in the strict settling regime, while a
+neutral Salem direction lands in the aperiodic regime.  This is the closure
+ordinal reading of the algebraic split.
+\end{theorem}
+
+\begin{theorem}[The color predictor is a proved algebraic-regime bundle]\label{thm:color-predictor-evidence}\lean{Obsmetrologia.AperiodicOrder.Tiling.color_predictor_evidence}\leanok\uses{thm:salem-pisot-regime-split, thm:metallic-power-dichotomy, thm:salem-trace-real-root}
+The predictor-level color claim holds at the level Lean proves:
+Salem supplies trace evidence in \((-2,0)\), the golden/Pisot member supplies
+contracting trace evidence in \((-1,0)\), the Salem/Pisot axis is the
+aperiodic/strict regime split, and metallization separates the finite metallic
+power lens from the chromatic \(\omega\)-settling residue.
+\end{theorem}
+
+\begin{theorem}[The predicted Salem color line is a finite Fourier-dual atom]\label{thm:salem-color-line-fourier-atom}\lean{Obsmetrologia.AperiodicOrder.Tiling.finiteFourierDual_color_readout}\leanok\uses{thm:color-predictor-evidence, thm:homometric-finite-diffraction-mass, thm:finite-diffraction-classifier-agreement}
+The finite readout theorem holds on the carrier currently present in
+Lean: the finite Fourier-side component is pure-point iff the StepN side is
+Pisot, singular-continuous iff it is Salem, and the Salem side carries the
+trace-localized line read as \(\theta=\arccos(\mathrm{root}/2)\).  Its atom mass
+is the total finite diffraction mass and is positive; homometric patterns keep
+that atom mass fixed.  This settles the finite readout, not the later analytic
+Fourier transform of a translation-bounded draft.
+\end{theorem}
+
+\begin{theorem}[The C-Lehmer skeleton is a finite StepN reduction]\label{thm:c-lehmer-green-skeleton}\lean{Obsmetrologia.AperiodicOrder.Tiling.StepN.cLehmer_green_skeleton}\leanok\uses{thm:salem-pisot-regime-split, thm:salem-color-line-fourier-atom}
+On the current Obsmetrologia Lean carrier, the C-Lehmer side is decidable at the
+finite StepN level: the approach-to-unit-circle classifier, the Mahler-side
+receipt label visible to Lean, the strict/aperiodic regime readout, and the
+finite diffraction readout all select the same Pisot/Salem split.  This is the
+green skeleton only; it does not prove the analytic Salem-root-regime gap.
+\end{theorem}
+
+\begin{proposition}[The Salem-root-regime gap is the named C-Lehmer frontier]\label{thm:c-lehmer-salem-root-regime-gap}\lean{Obsmetrologia.AperiodicOrder.Tiling.StepN.SalemRootRegimeGap}\leanok\uses{thm:c-lehmer-green-skeleton}
+For a chosen approach predicate on the current two-point StepN carrier,
+\texttt{SalemRootRegimeGap} says that every Salem inflation side is separated
+from that approach.  This node is the Lehmer/Mahler analogue of Collatz's
+modular residue inequality: the proposition is formalized and named, while its
+truth for the intended analytic predicate is the frontier.
+\end{proposition}
+
+\begin{theorem}[C-Lehmer reduces to the Pisot receipt and the Salem-root-regime gap]\label{thm:c-lehmer-finite-reduction}\lean{Obsmetrologia.AperiodicOrder.Tiling.StepN.cLehmerStatement_iff_pisotReceipt_and_salemRootRegimeGap}\leanok\uses{thm:c-lehmer-green-skeleton, thm:c-lehmer-salem-root-regime-gap}
+For any proposed ``approaches the unit circle'' predicate on the current
+two-point StepN carrier, the C-Lehmer statement is equivalent to two explicit
+separations: the already-separated Pisot receipt and the named
+\texttt{SalemRootRegimeGap}.  When the approach predicate is decidable, the
+remaining statement is a decidable finite-regime statement; the analytic work is
+to build the correct Mahler-measure predicate and prove its Salem-root gap.
+\end{theorem}
+
+\begin{theorem}[The Salem-root-regime gap is the single Salem-side decision]\label{thm:c-lehmer-salem-root-regime-decision}\lean{Obsmetrologia.AperiodicOrder.Tiling.StepN.salemRootRegimeGap_iff_noSalemApproach}\leanok\uses{thm:c-lehmer-salem-root-regime-gap}
+On the present finite carrier, \texttt{SalemRootRegimeGap approaches} is
+equivalent to \(\neg\texttt{approaches cLehmerSalem}\).  This is the decidable
+Salem-root-regime statement produced by the Mahler/Salem reduction; it is not a
+proof of the analytic predicate itself.
+\end{theorem}
+
+\begin{theorem}[The Salem-root-regime gap holds for the intended Lehmer predicate]\label{thm:c-lehmer-salem-analytic-gap}\notready\uses{thm:c-lehmer-finite-reduction, thm:c-lehmer-salem-root-regime-decision}
+\emph{(Open analytic frontier --- stated, not formalized.)} Supply, inside
+Obsmetrologia Lean, the theorem that the Salem regimes capable of approaching the
+unit circle are excluded for the C-Lehmer predicate under study.  This is the
+named hole \(\texttt{SalemRootRegimeGap}\), exactly parallel to Collatz's
+modular inequality node.  Until this theorem is built, the C-Lehmer result is a
+finite reduction over the StepN Salem spine, not a Lehmer theorem.
+\end{theorem}
+
+\begin{theorem}[The C-Lehmer carrier is a charge shadow]\label{thm:c-lehmer-cyclotomic-face}\notready\uses{thm:c-lehmer-green-skeleton, thm:permutation-cayley-hamilton}
+The circle question carries two witnesses, not one: \emph{contact}
+(a root on the unit circle) and \emph{escape} (a root off it) --- two slots,
+hence a FOUR-valued classifier, of which \texttt{CLehmerSide} is a Boolean
+shadow. The corners assign themselves from receipts already in the tree:
+$\mathbf{t}$ = contact without escape, the cyclotomic family
+(\cref{thm:permutation-cayley-hamilton}: $x^{2^n}-1$, all roots on the
+circle, Mahler measure exactly $1$; decidable contact receipt
+$\texttt{evalIntPoly}\,(\texttt{charPolyCycle}\,N)\,1 = 0$) --- the
+\texttt{CLehmerMahlerFace.unit} face, already declared and unreachable from
+the Boolean carrier; $\mathbf{f}$ = escape without contact, Pisot
+(\texttt{charPolyMetallic\_not\_reciprocal}, the metallic real root);
+$\top$ = both, Salem, with both slots machine-checked
+(\texttt{salemTraceResolvent\_unit\_circle},
+\texttt{salemTraceResolvent\_real\_root}); $\bot$ = no receipt. The open
+work: define the Charge-valued circle-contact classifier on coefficient
+lists, prove \texttt{cLehmerApproachClassifier} is its $\top$-detector
+composed with the projection (the collapse forced, in the pattern of
+\texttt{bottom\_reflecting\_hom\_eq\_charge} and
+\texttt{padovanMatrix\_is\_chu\_incidence}), read Kronecker as ``no escape
+$\Rightarrow$ corner in $\{\bot, \mathbf t\}$'', and state the Salem-root
+regime gap (\cref{thm:c-lehmer-salem-root-regime-gap}) as a $\top$-corner
+statement: the approach to Mahler measure $1$ is carried by the
+$\top$-charged (Salem) corner --- Lehmer's own candidate minimizer is a
+Salem polynomial.
+\end{theorem}
+
+\begin{theorem}[The three families occupy three coefficient symmetry classes]\label{thm:signature-receipts}\lean{Obsmetrologia.AperiodicOrder.Tiling.StepN.charPolyCycle_antireciprocal}\leanok\uses{thm:salem-pisot-algebraic-split, thm:permutation-cayley-hamilton}
+Coefficient facts only, all axiom-free. \texttt{charPolySalem} is reciprocal
+and not antireciprocal; \texttt{charPolyMetallic} is not reciprocal;
+\texttt{charPolyCycle}\,$(k{+}1)$ is antireciprocal
+(\texttt{antireciprocal}: the list equals its negated reverse) and not
+reciprocal; and \texttt{evalIntPoly}\,(\texttt{charPolyCycle}\,$N$)\,$1 = 0$.
+Three lists, three distinct symmetry classes, one integer evaluation --- the
+node claims nothing about roots.
+\end{theorem}
+
+\begin{theorem}[The circle reading of the signature receipts]\label{thm:signature-receipts-reading}\notready\uses{thm:signature-receipts, thm:salem-trace-real-root, thm:c-lehmer-cyclotomic-face}
+The interpretation ladder for \cref{thm:signature-receipts} and the Salem
+sign-change certificates, each rung a claim currently carried by prose and
+discharged only when it is a \texttt{\textbackslash lean}-linked theorem:
+(1) \emph{sign change $\to$ real root}: discharged for the Salem escape
+direction (\cref{thm:salem-trace-real-root}, $z = 1 + \sqrt{13}$); open for
+the neutral direction ($z = 1 - \sqrt{13}$, same quadratic, same Bishop
+machinery). (2) \emph{Interval bounds}: $-2 < (1-\sqrt{13})/2 < 0$ and
+$(1+\sqrt{13})/2 > 2$ need order lemmas for \texttt{sqrtNat} on the Bishop
+reals. (3) \emph{Trace interval $\to$ unit-circle conjugate pair}: $|y| < 2
+\Rightarrow$ the pair $\lambda, 1/\lambda$ with $\lambda + 1/\lambda = y$
+is non-real of modulus $1$ --- needs a complex carrier (the $J^2 = -1$
+harmonic-cohomology thread); red until then, and the docstrings of
+\texttt{salemTraceResolvent\_unit\_circle} /
+\texttt{salemTraceResolvent\_real\_root} carry this rung as prose today.
+(4) \emph{Evaluation $\to$ contact}: \texttt{evalIntPoly}\,$p\,1 = 0$ read
+as ``$1$ is a root lying on the unit circle'' — the first half is a
+definition away (an integer-root predicate), the second needs the same
+circle carrier as (3). Until these rungs close, every use of the receipts
+as circle statements cites this node, not the certificates.
+\end{theorem}
+
+\begin{theorem}[A float-bounded weave is a metallic-mean substitution]\label{thm:weave-is-metallic}\notready\uses{thm:metallic-family-cayley-hamilton, thm:salem-pisot-regime-split, thm:weave-entropy-collapse}
+A float-bounded twill of float length \(k\) should be carried by the
+\(k\)-metallic-mean substitution tower, with plain weave as the degenerate
+periodic floor.  The StepN algebra and regime split are formalized; the
+textile-to-substitution identification is not yet a Lean declaration.
+\end{theorem}
+
+\begin{theorem}[Textile diffraction is pure-point iff the float is Pisot]\label{thm:weave-diffraction-pisot}\notready\uses{thm:weave-is-metallic, thm:salem-pisot-regime-split, thm:salem-color-line-fourier-atom, thm:draft-diffraction-spectrum}
+\emph{(Open frontier --- stated, not formalized.)} The diffraction \emph{type} of a metallic
+weave is its inflation's Pisot/Salem character (\cref{thm:weave-is-metallic}): a Pisot float
+diffracts pure-point (sharp Bragg peaks, the Bombieri--Taylor / Pisot-substitution case for the
+unimodular metallic matrices), a Salem float singular-continuously.  The residue is
+the explicit translation-bounded measure, not the finite readout dichotomy.
+\end{theorem}
+
+\begin{theorem}[Recognizability holds because metallic substitutions are Pisot]\label{thm:metallic-weave-recognizable-mosse}\notready\uses{thm:weave-is-metallic, thm:metallic-family-cayley-hamilton, thm:quasiperiodic-weave-recognizable}
+\emph{(Open frontier --- stated, not formalized.)} A metallic-mean weave is recognizable
+(reads back to a unique warp programme, \cref{thm:quasiperiodic-weave-recognizable}) because its
+inflation is Pisot and primitive --- the hypothesis of Moss\'e's recognizability theorem.
+\Cref{thm:weave-is-metallic} supplies the growth-degree witness; the residue is
+the explicit desubstitution map.
+\end{theorem}

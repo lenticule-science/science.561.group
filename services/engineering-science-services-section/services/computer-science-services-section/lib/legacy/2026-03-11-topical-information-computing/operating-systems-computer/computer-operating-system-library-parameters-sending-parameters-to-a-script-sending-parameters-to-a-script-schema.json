@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://research-notes.561.group/hacking/library/predication-notes/composting/library/object/library/thing/library/system/library/operating-system/library/computer-operating-system/library/parameters/sending-parameters-to-a-script/sending-parameters-to-a-script.schema.json",
+  "title": "sending-parameters-to-a-script",
+  "description": "Input and output shape for invoking a POSIX-addressable ESM Node script function with JSON parameters. The called script's transformer supplies the domain/codomain contract; this transformer records the local invocation envelope.",
+  "type": "object",
+  "required": ["input", "output"],
+  "additionalProperties": false,
+  "properties": {
+    "input": {
+      "type": "object",
+      "required": ["scriptPath"],
+      "additionalProperties": false,
+      "properties": {
+        "scriptPath": {
+          "type": "string",
+          "minLength": 1
+        },
+        "parameters": {
+          "type": "object",
+          "default": {}
+        }
+      }
+    },
+    "output": {
+      "$ref": "#/$defs/send-result"
+    }
+  },
+  "$defs": {
+    "send-result": {
+      "type": "object",
+      "required": ["scriptPath", "parameters", "return-value", "sent-at"],
+      "additionalProperties": false,
+      "properties": {
+        "scriptPath": {
+          "type": "string",
+          "minLength": 1
+        },
+        "parameters": {
+          "type": "object"
+        },
+        "return-value": {},
+        "sent-at": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    }
+  }
+}

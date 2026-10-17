@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://research-notes.561.group/hacking/library/predication-notes/composting/library/object/library/thing/library/system/library/operating-system/library/computer-operating-system/library/work-item/doing/working/declaring-a-contribution-to-a-goal/declaring-a-contribution-to-a-goal.schema.json",
+  "title": "declaring-a-contribution-to-a-goal",
+  "description": "Writes (a, contributes-to, parent) — asserts that a contributes to parent in the work hierarchy. Used by rolling-up-progress for completion derivation.",
+  "type": "object"
+}

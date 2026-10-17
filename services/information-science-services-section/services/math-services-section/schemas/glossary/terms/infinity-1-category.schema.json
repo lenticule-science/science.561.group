@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "glossary/terms/infinity-1-category",
+  "title": "infinity-1-category",
+  "description": "An ∞-category in which every k-morphism for k > 1 is invertible — the higher morphisms witness homotopies, not directed transformations. The setting of most ∞-categories arising in practice: spaces, spectra, derived and sheaf categories. An ∞-category refined by higher invertibility.",
+  "allOf": [
+    {
+      "$ref": "./infinity-category.schema.json"
+    }
+  ],
+  "type": "object",
+  "required": [
+    "higher-morphisms-invertible"
+  ],
+  "properties": {
+    "higher-morphisms-invertible": {
+      "description": "every k-morphism for k > 1 is invertible",
+      "const": true
+    }
+  }
+}

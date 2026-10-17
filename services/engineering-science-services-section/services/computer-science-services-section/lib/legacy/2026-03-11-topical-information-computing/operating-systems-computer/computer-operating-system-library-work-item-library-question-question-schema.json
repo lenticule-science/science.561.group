@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://research-notes.561.group/hacking/library/predication-notes/composting/library/object/library/thing/library/system/library/operating-system/library/computer-operating-system/library/work-item/library/question/question.schema.json",
+  "title": "Question",
+  "description": "A pending decision the operator must answer before downstream work can proceed.",
+  "allOf": [
+    {"$ref": "../../work-item.schema.json"},
+    {"properties": {"has-kind": {"const": "question"}}}
+  ]
+}

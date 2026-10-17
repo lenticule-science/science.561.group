@@ -1,0 +1,12 @@
+version: 2
+jobs:
+  build:
+    working_directory: ~/bussard
+    docker:
+      - image: debian:stretch-slim
+#      - image: lambdaindie/love2d:latest
+#      - image: nidup/love2d:0.10.2 # this image doesn't give root access
+    steps:
+      - checkout
+      - run: ./bootstrap-deb.sh
+      - run: make ci

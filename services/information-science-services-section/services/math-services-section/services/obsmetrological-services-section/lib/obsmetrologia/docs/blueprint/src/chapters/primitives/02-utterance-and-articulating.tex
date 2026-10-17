@@ -1,0 +1,75 @@
+\section{Utterance and articulating}
+
+Owner ruling 2026-09-21, ``the admission boundary, restored'': the utterance's
+two hands are \emph{types}, not positions read off a bare pair of marks
+afterward. A token is a mark carried on the left hand; a claim is a mark
+carried on the right hand; the utterance is the pair of the two typed
+carriers, and it is the theory's sole admission boundary --- the one place a
+mark is let in.
+
+\begin{definition}[Token]
+  \label{def:token}
+  \lean{Obsmetrologia.Token}
+  \leanok
+  \uses{def:mark}
+  A \emph{token} is a mark carried on the left hand: the one-field structure
+  $\{\text{mark} : \texttt{Mark}\}$. It is the identity-carrying side of an
+  utterance --- \emph{which one} --- distinguished from a claim by its own
+  type, not recovered afterward by position.
+\end{definition}
+
+\begin{definition}[Claim]
+  \label{def:claim}
+  \lean{Obsmetrologia.Claim}
+  \leanok
+  \uses{def:mark}
+  A \emph{claim} is a mark carried on the right hand: the one-field structure
+  $\{\text{mark} : \texttt{Mark}\}$, dual to \cref{def:token}. It is the
+  content-carrying side of an utterance --- \emph{what is said}.
+\end{definition}
+
+\begin{definition}[Utterance]
+  \label{def:utterance}
+  \lean{Obsmetrologia.Utterance}
+  \leanok
+  \uses{def:token, def:claim, thm:kind}
+  An \emph{utterance} is the ordered pair of a token and a claim --- the two
+  typed hands, token first, claim second --- and the domain of articulating.
+  The ordering of the pair is the kind distinction of \cref{thm:kind}, now
+  carried at the level of the two hands' own types.
+\end{definition}
+
+\begin{definition}[Articulating]
+  \label{def:articulating}
+  \lean{Obsmetrologia.Articulating}
+  \leanok
+  \uses{def:utterance}
+  \emph{Articulating} is the base morphism: the first arrow of the generative
+  unfolding, from which every other morphism is reached. Inductively it is
+  either an innermost utterance (\texttt{utter}, the recursion's primitive
+  floor) or an utterance articulated over a further articulating
+  (\texttt{pair}, the pair $[\text{utterance}, \text{articulating}]$). This is
+  the second and last admission of free data in Obsmetrologia.
+\end{definition}
+
+\begin{proposition}[Floor]
+  \label{thm:floor}
+  \lean{Obsmetrologia.Articulating.floor}
+  \leanok
+  \uses{def:articulating}
+  Every articulating bottoms out at a primitive utterance, its \emph{floor},
+  recovered by descending through the \texttt{pair} chain. Totality of
+  \texttt{floor} witnesses that grounding in primitive marks yields finite
+  inhabitants.
+\end{proposition}
+
+\begin{lemma}[Articulating is one-way]
+  \label{lem:articulating-oneway}
+  \lean{Obsmetrologia.Articulating.utter_ne_pair}
+  \leanok
+  \uses{def:articulating}
+  A primitive floor is never a nested pair:
+  \texttt{utter}~$u \neq$ \texttt{pair}~$v~a$. No arrow collapses the one-way
+  structure; to descend is to derive, never to un-derive. This is the
+  Curry--Howard directionality the filepath-as-proof discipline rests on.
+\end{lemma}

@@ -1,0 +1,5 @@
+{"e":"twist-product","a":"describing","v":"The twist product of a lattice L is the pre-bilattice on L × L with operations mixing the two coordinates as described in twist-product.md. Equipped with the swap-negation ~⟨a,b⟩ = ⟨b,a⟩ it is a bilattice, denoted L^⋈. Specializing to L = 2 (Boolean) gives FOUR.","t":"2026-05-19T21:48:19Z"}
+{"e":"twist-product","a":"constructing-from-lattice","v":"pre-bilattice","t":"2026-05-19T21:48:19Z"}
+{"e":"twist-product","a":"constructing-with-swap-negation","v":"bilattice","t":"2026-05-19T21:48:19Z"}
+{"e":"twist-product","a":"having-canonical-specialization","v":"four-bilattice","t":"2026-05-19T21:48:19Z"}
+{"e":"twist-product","a":"representing-interlaced-bounded-bilattice","v":"bilattice","t":"2026-05-19T21:48:19Z"}

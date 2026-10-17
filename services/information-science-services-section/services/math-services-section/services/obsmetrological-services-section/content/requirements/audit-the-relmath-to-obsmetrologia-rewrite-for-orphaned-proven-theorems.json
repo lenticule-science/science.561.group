@@ -1,0 +1,33 @@
+{
+  "id": "audit-the-relmath-to-obsmetrologia-rewrite-for-orphaned-proven-theorems",
+  "name": "audit the relmath to obsmetrologia rewrite for orphaned proven theorems",
+  "kind": "requirement",
+  "raised-by": "claude-fable",
+  "asks": "The legacy archive holds 5,178 Lean files (relmath-lean: Sheaf, LinearLogicChu, LawvereLaplacianSpectralGap, TemporalTwoCategory, SettlingOverValueCategory, ...) against Obsmetrologia's 355 current files. Which proven results died in the rewrite without being re-seated? Orphaned proven theorems are exactly 'legacy misallocated resources' in the Union Recovery Service's mandate, applied to mathematical capital rather than files-in-the-wrong-settlement: proven work the firm paid real inference for, now stranded where no current apparatus cites or re-runs it. A bounded dossier comparing declaration inventories across the two generations would either recover real capital or witness that the rewrite lost nothing — an evidenced empty watch being valid here as everywhere. Only an instrument that can read both generations at once can do this.",
+  "from-idea": "emsenn/idea/audit-the-relmath-to-obsmetrologia-rewrite-for-orphaned-proven-theorems",
+  "met-when": [
+    {
+      "cell": "audit-the-relmath-to-obsmetrologia-rewrite-for-orphaned-proven-theorems:conditions-stated",
+      "target": "held"
+    }
+  ],
+  "x-provenance": {
+    "recorded-by": "561-group capture session (claude session 017x7ZhpkZQAx5VZSv2Hz5Q9)",
+    "recorded-on": "2026-10-10",
+    "sources": [
+      {
+        "words": "The legacy archive holds 5,178 Lean files (relmath-lean: Sheaf, LinearLogicChu, LawvereLaplacianSpectralGap, TemporalTwoCategory, SettlingOverValueCategory, ...) against Obsmetrologia's 355 current files. Which proven results died in the rewrite without being re-seated? Orphaned proven theorems are exactly 'legacy misallocated resources' in the Union Recovery Service's mandate, applied to mathematical capital rather than files-in-the-wrong-settlement: proven work the firm paid real inference for, now stranded where no current apparatus cites or re-runs it. A bounded dossier comparing declaration inventories across the two generations would either recover real capital or witness that the rewrite lost nothing — an evidenced empty watch being valid here as everywhere. Only an instrument that can read both generations at once can do this.",
+        "at": "2026-07-18",
+        "locator": "lib/emsenn/services/561-group/services/561-group-services-section/services/561-group-operations-services-section/lib/legacy/restored-from-main/2026-09-13-ccf2d7a/services/561-group-enterprise-services-section/services/561-group-board-of-directors/lib/legacy/2026-08-03-executive-office/data/records/ideas/ideas/audit-the-relmath-to-obsmetrologia-rewrite-for-orphaned-proven-theorems.json"
+      }
+    ],
+    "carried-from-idea-record": "lib/emsenn/services/561-group/services/561-group-services-section/services/561-group-operations-services-section/lib/legacy/restored-from-main/2026-09-13-ccf2d7a/services/561-group-enterprise-services-section/services/561-group-board-of-directors/lib/legacy/2026-08-03-executive-office/data/records/ideas/ideas/audit-the-relmath-to-obsmetrologia-rewrite-for-orphaned-proven-theorems.json",
+    "pending-conditions": "Carried from the 2026-07 executive office's idea record under ideas-dispose-through-the-requirement-term; no met-when that exercises this idea's capability has been stated yet. The owning section states it.",
+    "linked-carriers": [],
+    "coverage": "lib/emsenn/services/561-group/services/public-services-section/services/personal-services-section/services/emsenn-services-section/data/records/leader-utterances/coverage/executive-office-ideas-2026-07.md",
+    "sign-cell": {
+      "type": "emsenn/schema/requirement",
+      "mark": "ni:///sha-256;LEQRLzYXU7p_0_Mge9feacWLR8dgL8PPGWvx7FK7aGY"
+    }
+  }
+}

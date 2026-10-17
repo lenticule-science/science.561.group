@@ -1,0 +1,83 @@
+run: ; love . --server Tana --port 6641
+headless: ; love . --server Tana --port 6641 --headless
+
+VERSION=beta-4-pre
+
+SERVER_CODE=*.lua *.fnl data/*lua
+CLIENT_CODE=client/*
+SHIP_CODE=client/disk/*
+OS_CODE=os/orb/*.lua os/lisp/*.lua os/rover/*.lua os/*.lua
+DEPS_CODE=lib/* polywell/* polywell/frontend/* polywell/lib/*
+
+SHADERS=*.glsl
+
+ALL_CODE=$(SERVER_CODE) $(CLIENT_CODE) $(SHIP_CODE) $(OS_CODE) $(DEPS_CODE) $(SHADERS)
+
+PROSE=manual.md doc/*.md data/motd/* data/ships.txt
+MEDIA=assets/* assets/fonts/*
+META=readme.md LICENSE credits.md Changelog.md
+
+todo: ; grep -nH -e TODO $(GAME_LUA) || true
+blockers: ; grep TODO/blocker $(GAME_LUA) || true
+wipe: ; love . --wipe
+wipe_fs: ; rm -rf $(HOME)/.local/share/love/bussard/fs
+
+luacheck:
+	luacheck --std luajit *.lua data/*.lua
+	luacheck --config .luacheckrc-os --std luajit $(OS_CODE)
+
+test: ; love . --test
+
+fuzz: ; love . --fuzz
+
+ci: luacheck test fuzz count
+
+count: ; cloc $(SERVER_CODE) $(CLIENT_CODE) $(SHIP_CODE) $(OS_CODE) $(SHADERS)
+
+count_deps: ; cloc $(DEPS_CODE)
+
+count_all: ; cloc $(ALL_CODE)
+
+count_prose: ; find $(PROSE) -type f -print0 | xargs -0 wc -l
+
+clean: ; rm -rf releases/ bussard.love
+
+REL="$(PWD)/love-release.sh"
+FLAGS=-a 'Phil Hagelberg' -x spoilers -x savedir \
+	--description 'A space flight programming adventure game.' \
+	--love 0.10.2 --url https://technomancy.itch.io/bussard --version $(VERSION)
+
+releases/bussard-$(VERSION).love: $(ALL_LUA) $(SHADERS) $(PROSE) $(MEDIA) $(META) $(POLYWELL) Makefile
+	mkdir -p releases/
+	find $(ALL_LUA) $(SHADERS) $(PROSE) $(MEDIA) $(META) $(POLYWELL) -type f | LC_ALL=C sort | \
+               env TZ=UTC zip -r -q -9 -X $@ -@
+
+love: releases/bussard-$(VERSION).love
+
+mac: love
+	$(REL) $(FLAGS) --lovefile releases/bussard-$(VERSION).love -M
+	mv releases/Bussard-macosx-x64.zip releases/bussard-$(VERSION)-macosx-x64.zip
+
+windows: love
+	$(REL) $(FLAGS) --lovefile releases/bussard-$(VERSION).love -W32
+	mv releases/Bussard-win32.zip releases/bussard-$(VERSION)-windows.zip
+
+deb: love
+	dpkg-buildpackage -us -uc -b
+
+# don't use this until https://github.com/itchio/butler/issues/51 is fixed!
+pushlove: love
+	butler push releases/bussard-$(VERSION).love technomancy/bussard:love
+
+pushmac: mac
+	butler push releases/bussard-$(VERSION)-macosx-x64.zip technomancy/bussard:mac
+
+pushwindows: windows
+	butler push releases/bussard-$(VERSION)-windows.zip technomancy/bussard:windows
+
+push: pushmac pushwindows
+	echo "Upload releases/bussard-$(VERSION).love manually in the browser for now."
+
+# upload prerelease versions to scratch site instead of itch.io
+preupload: love mac windows
+	scp releases/bussard-$(VERSION)-* p.hagelb.org:p/

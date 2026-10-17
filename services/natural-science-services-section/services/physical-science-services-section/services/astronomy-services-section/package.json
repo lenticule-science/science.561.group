@@ -1,0 +1,7 @@
+{
+  "name": "@lenticule-science/astronomy-services-section",
+  "version": "0.4.2",
+  "private": true,
+  "type": "module",
+  "description": "The astronomy science section's own content: research, notes and glossary. Its code is @lenticule-science/astronomy-position-computation-service, held in computer-simulation-system-services-section."
+}

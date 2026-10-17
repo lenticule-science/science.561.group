@@ -1,0 +1,397 @@
+{
+  "type": "ObsmetrologiaRegimeInstantiationCensus",
+  "checkedAt": "2026-09-04T06:01:14.947Z",
+  "packageRoot": "/home/emsenn/info/lib/emsenn/services/561-group/services/science-services-section/services/information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/obsmetrologia/",
+  "leanSourcePath": "/home/emsenn/info/lib/emsenn/services/561-group/services/science-services-section/services/information-science-services-section/services/math-services-section/services/obsmetrological-services-section/scripts/census-set-of-regime-instantiations.lean",
+  "reading": "199 regime-bearing theorems: 81 table-only, 70 hypothesized, 27 hand-built, 15 derived, 6 mixed. 3 concrete ClosureRegimeData datums exist, 0 with countableCofinality = false. 42 theorems conclude aperiodic. Physics-lineage modules with zero regime-bearing theorems: Thermodynamics, QuantumContextuality, ReactionNetworks, DenseMatter.",
+  "summary": {
+    "total": 199,
+    "modeCounts": {
+      "hypothesized": 70,
+      "table-only": 81,
+      "hand-built": 27,
+      "derived": 15,
+      "mixed": 6
+    },
+    "byModule": {
+      "Alexandrov": {
+        "hypothesized": 1
+      },
+      "AperiodicOrder": {
+        "table-only": 22,
+        "hand-built": 13,
+        "derived": 3,
+        "hypothesized": 4
+      },
+      "Bigraded": {
+        "hypothesized": 1
+      },
+      "CausalSets": {
+        "table-only": 3,
+        "hypothesized": 5
+      },
+      "Closure": {
+        "hand-built": 1,
+        "hypothesized": 2,
+        "table-only": 1
+      },
+      "ClosureRegime": {
+        "table-only": 4,
+        "hypothesized": 1
+      },
+      "ClosureRegimeData": {
+        "hypothesized": 2,
+        "table-only": 3
+      },
+      "CohFramework": {
+        "table-only": 11
+      },
+      "Cohomology": {
+        "hypothesized": 12,
+        "hand-built": 5,
+        "derived": 1,
+        "mixed": 4
+      },
+      "Dynamics": {
+        "derived": 2,
+        "table-only": 3
+      },
+      "Flow": {
+        "hypothesized": 15,
+        "table-only": 4,
+        "hand-built": 4
+      },
+      "Format": {
+        "hypothesized": 2,
+        "table-only": 1
+      },
+      "InconSheaf": {
+        "hypothesized": 1
+      },
+      "KineticTheory": {
+        "hypothesized": 6,
+        "table-only": 4,
+        "hand-built": 1
+      },
+      "LocalConstancy": {
+        "hypothesized": 1
+      },
+      "Ord": {
+        "derived": 7,
+        "mixed": 2
+      },
+      "Positing": {
+        "hypothesized": 2
+      },
+      "Probability": {
+        "hypothesized": 1
+      },
+      "Real": {
+        "hypothesized": 1
+      },
+      "RegimeCofinality": {
+        "table-only": 3,
+        "derived": 1
+      },
+      "RegimeGate": {
+        "table-only": 15,
+        "hypothesized": 2
+      },
+      "Site": {
+        "table-only": 1
+      },
+      "Trace": {
+        "derived": 1
+      },
+      "Valuation": {
+        "hypothesized": 3
+      },
+      "classify": {
+        "hypothesized": 1
+      },
+      "classify_aperiodic": {
+        "hypothesized": 1
+      },
+      "classify_exhaustive": {
+        "hypothesized": 1
+      },
+      "classify_scott": {
+        "hypothesized": 1
+      },
+      "classify_strict": {
+        "hypothesized": 1
+      },
+      "classify_transfiniteBounded": {
+        "hypothesized": 1
+      },
+      "cohomologyVanishes": {
+        "table-only": 4
+      },
+      "cohomologyVanishes_iff": {
+        "hypothesized": 1
+      },
+      "four_regime_dichotomy": {
+        "hypothesized": 1
+      },
+      "mu_content_exactly_at_charged_gate": {
+        "hand-built": 1
+      },
+      "regime_is_four_corner": {
+        "table-only": 1
+      },
+      "spine_cohomology_vanishes": {
+        "hand-built": 1
+      },
+      "spine_is_strict": {
+        "hand-built": 1
+      },
+      "unattained_settling_gate": {
+        "table-only": 1
+      }
+    },
+    "datumCount": 3,
+    "datumsWithCountableCofinalityFalse": 0,
+    "datums": [
+      {
+        "name": "Obsmetrologia.Cohomology.ScottFace.regimeData",
+        "module": "Cohomology",
+        "countableCofinalityFalse": false
+      },
+      {
+        "name": "Obsmetrologia.Flow.NSCFiring.nscRegimeData",
+        "module": "Flow",
+        "countableCofinalityFalse": false
+      },
+      {
+        "name": "Obsmetrologia.spineData",
+        "module": "spineData",
+        "countableCofinalityFalse": false
+      }
+    ],
+    "aperiodicConclusions": [
+      {
+        "theorem": "Obsmetrologia.AperiodicOrder.Defect.defect_exists",
+        "module": "AperiodicOrder",
+        "mode": "table-only"
+      },
+      {
+        "theorem": "Obsmetrologia.AperiodicOrder.Tiling.Autopoiesis.history_separation_aperiodicity",
+        "module": "AperiodicOrder",
+        "mode": "table-only"
+      },
+      {
+        "theorem": "Obsmetrologia.AperiodicOrder.Tiling.PredictorLevelColorEvidence.salem_is_aperiodic",
+        "module": "AperiodicOrder",
+        "mode": "table-only"
+      },
+      {
+        "theorem": "Obsmetrologia.AperiodicOrder.Tiling.StepN.cLehmer_green_skeleton",
+        "module": "AperiodicOrder",
+        "mode": "table-only"
+      },
+      {
+        "theorem": "Obsmetrologia.AperiodicOrder.Tiling.StepN.inflation_salem",
+        "module": "AperiodicOrder",
+        "mode": "table-only"
+      },
+      {
+        "theorem": "Obsmetrologia.AperiodicOrder.Tiling.StepN.salem_vs_pisot_regime",
+        "module": "AperiodicOrder",
+        "mode": "table-only"
+      },
+      {
+        "theorem": "Obsmetrologia.AperiodicOrder.Tiling.clinv_dichotomy",
+        "module": "AperiodicOrder",
+        "mode": "table-only"
+      },
+      {
+        "theorem": "Obsmetrologia.AperiodicOrder.Tiling.cohEquiv_classification_model",
+        "module": "AperiodicOrder",
+        "mode": "table-only"
+      },
+      {
+        "theorem": "Obsmetrologia.AperiodicOrder.Tiling.phaseType_evidence",
+        "module": "AperiodicOrder",
+        "mode": "table-only"
+      },
+      {
+        "theorem": "Obsmetrologia.AperiodicOrder.Tiling.regimeSpin_cycle",
+        "module": "AperiodicOrder",
+        "mode": "table-only"
+      },
+      {
+        "theorem": "Obsmetrologia.AperiodicOrder.Tiling.regimeSpin_regimeSpin",
+        "module": "AperiodicOrder",
+        "mode": "table-only"
+      },
+      {
+        "theorem": "Obsmetrologia.Closure.Scott.scott_excludes_nonscott",
+        "module": "Closure",
+        "mode": "hypothesized"
+      },
+      {
+        "theorem": "Obsmetrologia.ClosureRegime.aperiodic.sizeOf_spec",
+        "module": "ClosureRegime",
+        "mode": "table-only"
+      },
+      {
+        "theorem": "Obsmetrologia.CohFramework.cohomological_equivalence_framework",
+        "module": "CohFramework",
+        "mode": "table-only"
+      },
+      {
+        "theorem": "Obsmetrologia.Cohomology.differential_bypass_sound",
+        "module": "Cohomology",
+        "mode": "mixed"
+      },
+      {
+        "theorem": "Obsmetrologia.Cohomology.obstruction_charged_iff",
+        "module": "Cohomology",
+        "mode": "hypothesized"
+      },
+      {
+        "theorem": "Obsmetrologia.Dynamics.Flow.FiringSpiral.firing_spiral_respects_the_cut",
+        "module": "Dynamics",
+        "mode": "derived"
+      },
+      {
+        "theorem": "Obsmetrologia.Dynamics.Flow.FiringSpiral.spikeSpiral_regime_never_aperiodic",
+        "module": "Dynamics",
+        "mode": "table-only"
+      },
+      {
+        "theorem": "Obsmetrologia.Dynamics.Flow.FiringSpiral.spiral_ord_never_aperiodic",
+        "module": "Dynamics",
+        "mode": "derived"
+      },
+      {
+        "theorem": "Obsmetrologia.Flow.CurvatureRegime.IsCurved.eq_1",
+        "module": "Flow",
+        "mode": "hypothesized"
+      },
+      {
+        "theorem": "Obsmetrologia.Flow.CurvatureRegime.curvatureRank.eq_4",
+        "module": "Flow",
+        "mode": "table-only"
+      },
+      {
+        "theorem": "Obsmetrologia.Format.top_corner_multi_regime",
+        "module": "Format",
+        "mode": "table-only"
+      },
+      {
+        "theorem": "Obsmetrologia.Ord.limit_uncountable_is_aperiodic",
+        "module": "Ord",
+        "mode": "derived"
+      },
+      {
+        "theorem": "Obsmetrologia.Ord.regimeOfOrd.eq_1",
+        "module": "Ord",
+        "mode": "derived"
+      },
+      {
+        "theorem": "Obsmetrologia.Ord.regimeOfOrdHonest_ne_aperiodic",
+        "module": "Ord",
+        "mode": "derived"
+      },
+      {
+        "theorem": "Obsmetrologia.Positing.Value.four_regime_v_independent",
+        "module": "Positing",
+        "mode": "hypothesized"
+      },
+      {
+        "theorem": "Obsmetrologia.Probability.Stochastic.stochastic_is_value_settling",
+        "module": "Probability",
+        "mode": "hypothesized"
+      },
+      {
+        "theorem": "Obsmetrologia.Real.Internal.RReal.reals_close_the_value_settling_hub",
+        "module": "Real",
+        "mode": "hypothesized"
+      },
+      {
+        "theorem": "Obsmetrologia.RegimeCofinality.regimeDataOfCountableFiring_ne_aperiodic",
+        "module": "RegimeCofinality",
+        "mode": "table-only"
+      },
+      {
+        "theorem": "Obsmetrologia.RegimeCofinality.regime_cofinality_headline",
+        "module": "RegimeCofinality",
+        "mode": "derived"
+      },
+      {
+        "theorem": "Obsmetrologia.RegimeGate.aperiodic_gap_matches_lax_slack",
+        "module": "RegimeGate",
+        "mode": "table-only"
+      },
+      {
+        "theorem": "Obsmetrologia.RegimeGate.aperiodic_has_gap",
+        "module": "RegimeGate",
+        "mode": "table-only"
+      },
+      {
+        "theorem": "Obsmetrologia.RegimeGate.cohomologyVanishes_iff_attained_aperiodic",
+        "module": "RegimeGate",
+        "mode": "table-only"
+      },
+      {
+        "theorem": "Obsmetrologia.RegimeGate.gap_matches_nonvanishing",
+        "module": "RegimeGate",
+        "mode": "table-only"
+      },
+      {
+        "theorem": "Obsmetrologia.RegimeGate.gate_aperiodic",
+        "module": "RegimeGate",
+        "mode": "table-only"
+      },
+      {
+        "theorem": "Obsmetrologia.classify.eq_1",
+        "module": "classify",
+        "mode": "hypothesized"
+      },
+      {
+        "theorem": "Obsmetrologia.classify_aperiodic",
+        "module": "classify_aperiodic",
+        "mode": "hypothesized"
+      },
+      {
+        "theorem": "Obsmetrologia.classify_exhaustive",
+        "module": "classify_exhaustive",
+        "mode": "hypothesized"
+      },
+      {
+        "theorem": "Obsmetrologia.cohomologyVanishes.eq_4",
+        "module": "cohomologyVanishes",
+        "mode": "table-only"
+      },
+      {
+        "theorem": "Obsmetrologia.four_regime_dichotomy",
+        "module": "four_regime_dichotomy",
+        "mode": "hypothesized"
+      },
+      {
+        "theorem": "Obsmetrologia.mu_content_exactly_at_charged_gate",
+        "module": "mu_content_exactly_at_charged_gate",
+        "mode": "hand-built"
+      },
+      {
+        "theorem": "Obsmetrologia.unattained_settling_gate",
+        "module": "unattained_settling_gate",
+        "mode": "table-only"
+      }
+    ],
+    "aperiodicByMode": {
+      "table-only": 24,
+      "hypothesized": 10,
+      "mixed": 1,
+      "derived": 6,
+      "hand-built": 1
+    },
+    "physicsModulesWithZeroRegimeTheorems": [
+      "Thermodynamics",
+      "QuantumContextuality",
+      "ReactionNetworks",
+      "DenseMatter"
+    ]
+  }
+}

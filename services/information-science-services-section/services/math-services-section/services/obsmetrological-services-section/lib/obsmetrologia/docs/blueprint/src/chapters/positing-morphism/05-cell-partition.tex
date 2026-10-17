@@ -1,0 +1,76 @@
+\section{The predication cell's four-corner partition, valuation-relative}
+
+The predication cell schema forbids a value field: admitting one would make
+cell identity valuation-dependent and collapse the fibration
+(\cref{thm:predication}). So ``which of the four corners a claim point is
+in'' cannot be a property of the claim point alone; it can only be a property
+\emph{relative to a valuation}. This section states that relative reading
+precisely. It adds no new mathematical content beyond
+\cref{thm:posit,thm:posit-inflationary,thm:posit-kbot} and the finite
+exhaustiveness of \texttt{Corner} (\cref{thm:corner}); what it adds is the
+partition-shaped statement of those facts.
+
+\begin{proposition}[The four corners are pairwise distinct]\label{thm:corner-pairwise-ne}\lean{Obsmetrologia.Articulating.Corner.pairwise_ne}\leanok\uses{thm:corner, thm:corner-card}
+The six pairwise \(\ne\)-facts among \texttt{absurd}, \texttt{potential},
+\texttt{active}, \texttt{stable} --- packaging what the corner list's
+\texttt{Nodup} witness already establishes collectively, in the shape a
+partition case-split consumes.
+\end{proposition}
+
+\begin{definition}[The phase of a claim under a valuation]\label{thm:phase}\lean{Obsmetrologia.Valuation.phase}\leanok\uses{thm:valuation, thm:charge}
+\texttt{phase}~\(v\)~\(\varphi\) is \(v\,\varphi\), named under the
+cell-partition vocabulary: since \(\mathtt{Charge} :=
+\mathtt{Articulating.Corner}\) definitionally, a claim's phase under \(v\)
+already \emph{is} one of the four corners --- the value coordinate the
+predication-cell schema forbids intrinsically is exactly the coordinate a
+valuation supplies extrinsically.
+\end{definition}
+
+\begin{theorem}[Exhaustiveness]\label{thm:phase-cases}\lean{Obsmetrologia.Valuation.phase_cases}\leanok\uses{thm:phase, thm:corner-pairwise-ne}
+Every \((v, \varphi)\) lands in one of the four named phases --- a finite
+case split on \texttt{Corner}, the same argument
+\cref{thm:corner-card,thm:corner-surjective} run for the articulation cell,
+transported to the valuation-relative reading.
+\end{theorem}
+
+\begin{theorem}[Born absurd]\label{thm:phase-knowledgeleast}\lean{Obsmetrologia.Valuation.phase_knowledgeLeast}\leanok\uses{thm:phase, thm:knowledge-least}
+The knowledge-least valuation --- positing's own seed --- has phase
+\texttt{absurd} at every claim, with no exception: nothing is ever born
+anywhere else in the partition.
+\end{theorem}
+
+\begin{theorem}[Positing only ever raises phase]\label{thm:phase-posit-le}\lean{Obsmetrologia.Valuation.phase_posit_le}\leanok\uses{thm:phase, thm:posit-inflationary}
+A posit anywhere never lowers a claim's phase in the knowledge order --- the
+partition-named restatement of \cref{thm:posit-inflationary}.
+\end{theorem}
+
+\begin{theorem}[Reaching a corner from the seed]\label{thm:phase-posit-knowledgeleast}\lean{Obsmetrologia.Valuation.phase_posit_knowledgeLeast}\leanok\uses{thm:phase-knowledgeleast, thm:posit}
+From the born-absurd seed, a single posit of charge \(q\) at \(\varphi\) puts
+\(\varphi\)'s phase at exactly \(q\): the point-mass update lands exactly
+where aimed, by the \(\bot_k\)-unit law for \(\vee_k\).
+\end{theorem}
+
+\begin{proposition}[The four speech-acts, by the phase they reach]\label{thm:phase-belnap-reach}\lean{Obsmetrologia.Valuation.phase_asserting_knowledgeLeast, Obsmetrologia.Valuation.phase_denying_knowledgeLeast, Obsmetrologia.Valuation.phase_contesting_knowledgeLeast, Obsmetrologia.Valuation.phase_abstaining_knowledgeLeast}\leanok\uses{thm:phase-posit-knowledgeleast, thm:belnap-classes}
+From the seed: asserting reaches \texttt{potential} (\(t\)); denying reaches
+\texttt{active} (\(f\)); contesting reaches \texttt{stable} (\(\top_k\));
+abstaining leaves \texttt{absurd} (\(\bot_k\)), a no-op.
+\end{proposition}
+
+\begin{proposition}[Left absorption into \(\top_k\)]\label{thm:joink-ktop-left}\lean{Obsmetrologia.Reading.joinK_kTop_left}\leanok\uses{thm:four-bilattice}
+\(\top_k \vee_k a = \top_k\) for any charge \(a\) --- the left-handed mirror,
+by commutativity, of the fact \cref{thm:contest-absorbs} already uses on the
+right.
+\end{proposition}
+
+\begin{theorem}[Stability of stable]\label{thm:phase-stable-absorbs}\lean{Obsmetrologia.Valuation.phase_stable_absorbs}\leanok\uses{thm:joink-ktop-left, thm:phase-knowledgeleast}
+Once a claim's phase under \(v\) is \texttt{stable} (\(\top_k\), told both),
+any further posit at that claim leaves it there. Together with
+\cref{thm:phase-knowledgeleast} this makes precise, as two theorems, the
+scaffolding prose's own line that the stable corner is only ever reached,
+never born into: born-absurd rules out the second half, and this theorem
+rules out ever leaving once reached.
+\end{theorem}
+
+This section does not derive a \emph{cell-intrinsic} corner --- one property
+of a claim point alone --- the schema forbids that, and no theorem above
+claims it. \texttt{phase} reads a valuation; it does not manufacture one.

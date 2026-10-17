@@ -1,0 +1,45 @@
+-- -*- lua -*-
+
+local _env, args = ...
+
+local prices = cargo_prices()
+
+if(not prices) then
+   print("This station does not sell cargo.")
+   return
+end
+
+-- TODO: better message when amount is missing
+if(args[1] == "list") then
+   print("Prices: (buy/sell)")
+   for good, price in pairs(prices) do
+      print("  " .. good .. ": " .. price.buy .. "/" .. price.sell)
+   end
+
+   print("Stock:")
+   for good, amount in pairs(cargo_amounts()) do
+      print("  " .. good .. ": " .. amount)
+   end
+
+   print("Your hold:")
+   for good, amount in pairs(cargo_hold()) do
+      print("  " .. good .. ": " .. amount)
+   end
+elseif(args[1] == "buy" or args[1] == "sell") then
+   local direction, good, amount = unpack(args)
+   local success_price, msg = cargo_transfer(direction, good, tonumber(amount))
+
+   if(success_price) then
+      local verb = direction == "buy" and "Bought" or "Sold"
+      print(verb .. " " .. amount .. " of " .. good .. " for " ..
+               success_price .. ".")
+   else
+      print(msg)
+   end
+else
+   print("Buy, sell, and list prices for cargo.\n")
+   print("Usage:")
+   print("  cargo list")
+   print("  cargo buy GOOD AMOUNT")
+   print("  cargo sell GOOD AMOUNT")
+end

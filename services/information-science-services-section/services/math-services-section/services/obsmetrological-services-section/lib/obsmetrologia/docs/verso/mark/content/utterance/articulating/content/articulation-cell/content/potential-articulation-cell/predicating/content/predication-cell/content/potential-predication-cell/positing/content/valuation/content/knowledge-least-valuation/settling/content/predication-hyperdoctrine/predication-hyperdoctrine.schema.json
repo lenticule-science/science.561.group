@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/content/predication-hyperdoctrine",
+  "title": "predication-hyperdoctrine",
+  "description": "A predication-fibration of bilattice-valued fiber algebras over the predicate-category base that additionally satisfies Lawvere's hyperdoctrine conditions in both the knowledge and the truth order; it supplies the spine's first-order quantifier theory and is stated at settling because it carries the closure 2-monad and depends on the bilattice and predicate-category already in scope.",
+  "type": "object",
+  "required": ["base", "fiber", "closure2Monad", "quantifierAdjoints", "frobeniusReciprocity", "beckChevalley", "comprehension"],
+  "properties": {
+    "base": {
+      "$ref": "mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predicate-category",
+      "description": "the predicate-category over which the fibration reindexes; each f : q -> p gives a reindexing functor f*"
+    },
+    "fiber": {
+      "$ref": "mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/pre-bilattice/content/bilattice",
+      "description": "the bilattice-valued fiber algebra sitting over each base object, supplying the knowledge order and the truth order"
+    },
+    "closure2Monad": {
+      "$ref": "mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/content/closure-2-monad",
+      "description": "the closure 2-monad it carries, the structure settling iterates, placing the hyperdoctrine at the settling level"
+    },
+    "quantifierAdjoints": {
+      "const": true,
+      "description": "(B1k/B1t) for every f, exists_f -| f* -| forall_f in BOTH the knowledge order and the truth order"
+    },
+    "frobeniusReciprocity": {
+      "const": true,
+      "description": "(B2k/B2t) exists_f(f*alpha meet phi) = alpha meet exists_f phi for both meets meet_k and meet_t"
+    },
+    "beckChevalley": {
+      "const": true,
+      "description": "(B3) the canonical map is an iso over every pullback in C, for both adjoint systems"
+    },
+    "comprehension": {
+      "const": true,
+      "description": "(B4) the extension functor has a right adjoint {p:-} in both orders, yielding two derived equality predicates (classical and paraconsistent)"
+    },
+    "fusionFrobeniusFails": {
+      "const": true,
+      "description": "recorded caveat: knowledge-order Frobenius for the fusion odot fails for three of the four generator classes because odot is non-integral (its absorber f is not the knowledge-bottom the extension fills by)"
+    }
+  }
+}

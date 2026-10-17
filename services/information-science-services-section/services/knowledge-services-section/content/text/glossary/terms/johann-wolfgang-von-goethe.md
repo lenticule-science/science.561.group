@@ -1,0 +1,6 @@
+---
+id: 9db841c1-3d56-4e5e-ba87-6e34159c7117
+name: Johann Wolfgang von Goethe
+date-created: 2025-10-05
+---
+

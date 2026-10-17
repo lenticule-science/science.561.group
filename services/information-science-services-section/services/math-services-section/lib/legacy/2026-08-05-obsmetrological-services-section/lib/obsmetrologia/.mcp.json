@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "obsmetrologia-lean-lsp": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "lean-lsp-mcp",
+        "--lean-project-path",
+        "/home/emsenn/info/lib/emsenn/src/lib/obsmetrologia",
+        "--instructions",
+        "Obsmetrologia Lean proofing server. Use Lean LSP tools before shell/read/grep for Lean questions: diagnostics for file errors, term goal for proof state, hover/outline/local search for declarations, run_code with #print axioms for axiom audits, and multi_attempt for tactic trials. The Lean package root is lib/emsenn/src/lib/obsmetrologia; LSP file paths are package-root-relative source paths such as Obsmetrologia/Primitive.lean. Whole-project checks use make build or make check from the package root."
+      ],
+      "cwd": "/home/emsenn/info/lib/emsenn/src/lib/obsmetrologia"
+    }
+  }
+}

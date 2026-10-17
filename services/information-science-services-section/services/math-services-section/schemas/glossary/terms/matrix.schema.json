@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "glossary/terms/matrix",
+  "title": "matrix",
+  "description": "A rectangular array of field scalars representing a linear map once bases are chosen; n×n matrices over F form a ring.",
+  "type": "object",
+  "required": [
+    "linear-map",
+    "field"
+  ],
+  "properties": {
+    "linear-map": {
+      "description": "the linear map this represents",
+      "$ref": "./linear-map.schema.json"
+    },
+    "field": {
+      "description": "the field the entries are drawn from",
+      "$ref": "./field.schema.json"
+    }
+  }
+}

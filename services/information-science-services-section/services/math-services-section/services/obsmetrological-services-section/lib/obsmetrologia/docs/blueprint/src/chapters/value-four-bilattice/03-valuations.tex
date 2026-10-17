@@ -1,0 +1,22 @@
+\section{Valuations and the seeded knowledge-least state}
+
+\begin{proposition}[Valuation]\label{thm:valuation}\lean{Obsmetrologia.Valuation}\leanok\uses{thm:four-bilattice, thm:predication}
+A \emph{valuation} assigns a charge to each claim point. It is the pointwise
+value surface over the predication-generated claim base.
+\end{proposition}
+
+\begin{theorem}[Valuations are charge assignments on claim points]\label{thm:valuation-claim-charge}\lean{Obsmetrologia.Valuation.isClaimReading}\leanok\uses{thm:valuation, thm:claim-point}
+The valuation carrier is definitionally the function type from claim points to
+charges. This records that positing values claims, while the implementation
+uses the predication cell generated under the claim point.
+\end{theorem}
+
+\begin{proposition}[The knowledge-least valuation positing seeds]\label{thm:knowledge-least}\lean{Obsmetrologia.Valuation.knowledgeLeast}\leanok\uses{thm:valuation-claim-charge, thm:kBot-least}
+The knowledge-least valuation sends every predication cell to $\bot_k$. It is
+a total assignment of no evidence, not an absent graph.
+\end{proposition}
+
+\begin{theorem}[The seed is below every valuation]\label{thm:knowledgeLeast-le}\lean{Obsmetrologia.Valuation.knowledgeLeast_le}\leanok\uses{thm:knowledge-least}
+The knowledge-least valuation is pointwise below every valuation, because
+$\bot_k$ is below every charge in the knowledge order.
+\end{theorem}

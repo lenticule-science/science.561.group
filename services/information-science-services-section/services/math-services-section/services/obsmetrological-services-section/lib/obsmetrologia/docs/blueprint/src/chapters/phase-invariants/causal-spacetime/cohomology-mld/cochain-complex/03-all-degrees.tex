@@ -1,0 +1,56 @@
+\subsubsection{All degrees}
+
+\begin{theorem}[Causal $H^n$ --- the cochain complex in every degree]\label{thm:causal-cohomology-n}\lean{Obsmetrologia.CausalSets.Causal.Cohomology.N.causal_cohomology_n}\leanok\uses{thm:causal-cohomology-h2}
+The all-degree capstone: a single coboundary $\delta$ with
+$\delta \circ \delta = 0$ in every degree, so
+$H^n = \ker\delta / \operatorname{im}\delta$ is well-defined for all $n$. The
+standard simplicial alternating-sum route needs machinery Obsmetrologia lacks; the
+incidence-algebra reading instead gives the cone-contraction recursion:
+a simplex is a chain, and
+$\delta\varphi(a\!\cdot\!\tau) =
+\varphi(\tau) - \delta(a\!\cdot\!\varphi)(\tau)$, with
+$(a\!\cdot\!\varphi)(l) = \varphi(a\!\cdot\! l)$. From it,
+$\delta\circ\delta = 0$ is induction on chain length. This subsumes the
+degreewise complex --- $H^1$ for the $\mathrm{cl\text{-}inv}$/chromatic
+obstruction (\cref{thm:causal-cochain-complex}) and $H^2$ for the exact
+symplectic form's ambient degree (\cref{thm:causal-cohomology-h2}) --- into
+one graded object $C^0 \to C^1 \to C^2 \to \cdots$.
+\end{theorem}
+
+\begin{theorem}[The reconciliation currency is graded --- mod-two reduction at every degree]\label{thm:reconciliation-currency-graded}\lean{Obsmetrologia.CausalSets.Causal.Cohomology.N.delta_mod_two}\leanok\uses{thm:causal-cohomology-n, thm:causal-mod-two-reduction, thm:two-spread-ledger}
+The degree-one causal-to-merge reduction (\cref{thm:causal-mod-two-reduction})
+lifts to the whole tower. Because $\delta$ is $\mathbb Z$-linear (\texttt{delta\_sub})
+and built from subtraction, reduction mod two is a chain map in \emph{every} degree
+(\texttt{delta\_mod\_two}): cochains agreeing mod two have $\delta$'s agreeing mod
+two, so $\delta$ descends to the $\mathbb Z/2$ complex at all $n$. The
+$\mathbb Z/2$ reconciliation currency is therefore graded --- it reduces
+consistently up the whole $H^n$ tower, the high-energy generalization of the
+one-loop currency cluster. A purely-even obstruction (a $2$-divisible cochain,
+pure multiplicity) is mod-two trivial at every degree
+(\texttt{even\_obstruction\_mod\_two\_trivial}): the multiplicity the counting
+merge carries and the idempotent merge discards
+(\cref{thm:two-spread-ledger}) carries no parity charge at any energy level,
+not only at one loop. Axiom profile: \texttt{propext}, \texttt{Quot.sound}
+(integer parity induction); no choice.
+\end{theorem}
+
+\begin{theorem}[The high-energy reconciliation gap --- $n$-ary irreducible contradiction]\label{thm:high-energy-reconciliation-gap}\lean{Obsmetrologia.QuantumContextuality.reconciliation_cost_total}\leanok\uses{thm:reconciliation-currency-graded, thm:currency-cocone}
+The pair-context spread (\cref{thm:two-spread-ledger}) prices a degree-one
+obstruction. A degree-$n$ obstruction with no lower shadow --- GHZ/Mermin's
+three-party contradiction, an $n$-ary XOR not implied by its pairs
+(\texttt{ghz\_not\_pairs}) --- is refuted by an all-versus-nothing certificate: a
+family of contexts with even measurement incidence but odd target, summing the
+constraints to $0 = 1$ over $\mathbb F_2$ (\texttt{not\_hasGlobalSection\_of\_avn},
+the $t \notin$ row-space reading). Its cost is the certificate size --- the number
+of contexts one must hold together to derive the contradiction: at least one
+(\texttt{avnCertificate\_nonempty}, no axioms) and realised at four for GHZ
+(\texttt{ghz\_priced}: the four contexts are an even-incidence, odd-target
+certificate). So the reconciliation cost is \emph{total}
+(\texttt{reconciliation\_cost\_total}): every obstruction, pair or $n$-ary,
+carries a number --- the degree-$n$ price is the attention cost of the
+irreducibly-global contradiction, the family that must be attended together to be
+seen. Axiom profile: \texttt{propext} (certificate arithmetic;
+\texttt{avnCertificate\_nonempty} and \texttt{not\_hasGlobalSection\_of\_certificate}
+are axiom-free). The graded Minkowski light cone over these degree-$n$ registers
+remains the open extension.
+\end{theorem}

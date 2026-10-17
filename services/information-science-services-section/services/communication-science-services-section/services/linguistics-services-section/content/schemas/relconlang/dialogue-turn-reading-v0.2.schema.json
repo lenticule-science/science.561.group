@@ -1,0 +1,260 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "lenticule/relconlang/dialogue-turn-reading-v0.2",
+  "title": "RelConLang Blind Dialogue Turn Reading v0.2",
+  "description": "Experimental reading of one turn. Separates proposition content, explicit stance report, target evidence, illocution/dialogue move, conditional relevance, repair report, and deixis. Absence of a stance particle is represented as no explicit stance report, not as an implicit FOUR value.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "kind",
+    "turn",
+    "speaker",
+    "text",
+    "syntax",
+    "content",
+    "surfaceStance",
+    "stanceReport",
+    "targetEvidence",
+    "illocutionaryForce",
+    "dialogueMove",
+    "deicticContext",
+    "opens",
+    "addresses",
+    "remaining"
+  ],
+  "properties": {
+    "kind": {
+      "const": "lenticule.relconlang.dialogue-turn-reading-v0.2"
+    },
+    "turn": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "speaker": {
+      "type": "string",
+      "minLength": 1
+    },
+    "text": {
+      "type": "string",
+      "minLength": 1
+    },
+    "syntax": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "complete",
+        "obstructions"
+      ],
+      "properties": {
+        "complete": {
+          "type": "boolean"
+        },
+        "obstructions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "content": {
+      "type": "object",
+      "description": "Proposition/content projection, preferably proposition-nucleus-v0.1 or a reference to it."
+    },
+    "surfaceStance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "explicit",
+        "particle"
+      ],
+      "properties": {
+        "explicit": {
+          "type": "boolean"
+        },
+        "particle": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "enum": [
+            "ta",
+            "na",
+            "sha",
+            "mu",
+            null
+          ]
+        }
+      }
+    },
+    "stanceReport": {
+      "anyOf": [
+        {
+          "$ref": "lenticule/relconlang/stance-report-v0.1"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "description": "Null when no explicit stance construction is present."
+    },
+    "targetEvidence": {
+      "description": "Evidence actually held for/against the target proposition. Null when this assay has no evidence substrate loaded. It is never synthesized merely from stance grammar.",
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "for",
+            "against",
+            "derivedReading"
+          ],
+          "properties": {
+            "for": {
+              "type": "array",
+              "items": {}
+            },
+            "against": {
+              "type": "array",
+              "items": {}
+            },
+            "derivedReading": {
+              "enum": [
+                "absurd",
+                "potential",
+                "active",
+                "stable"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "illocutionaryForce": {
+      "enum": [
+        "assertive",
+        "directive",
+        "commissive",
+        "expressive",
+        "declaration",
+        "unknown"
+      ]
+    },
+    "dialogueMove": {
+      "enum": [
+        "none",
+        "question",
+        "request",
+        "answer",
+        "acknowledgement",
+        "refusal",
+        "repair",
+        "counter-question",
+        "other",
+        "unknown"
+      ]
+    },
+    "informationStructure": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "relation",
+          "target"
+        ],
+        "properties": {
+          "relation": {
+            "enum": [
+              "topic",
+              "focus",
+              "contrast",
+              "replacement"
+            ]
+          },
+          "target": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "deicticContext": {
+      "anyOf": [
+        {
+          "$ref": "lenticule/relconlang/dialogue-deictic-context-v0.1"
+        },
+        {
+          "type": "string",
+          "minLength": 1
+        }
+      ]
+    },
+    "opens": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "kind"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "kind": {
+            "type": "string"
+          },
+          "content": {}
+        }
+      }
+    },
+    "addresses": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "relevance",
+          "compatibility"
+        ],
+        "properties": {
+          "relevance": {
+            "type": "string"
+          },
+          "compatibility": {
+            "enum": [
+              "supported",
+              "opposed",
+              "partial",
+              "irrelevant",
+              "unknown"
+            ]
+          },
+          "evidence": {
+            "type": "array",
+            "items": {}
+          }
+        }
+      }
+    },
+    "repairReport": {
+      "anyOf": [
+        {
+          "$ref": "lenticule/relconlang/repair-report-v0.1"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "remaining": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

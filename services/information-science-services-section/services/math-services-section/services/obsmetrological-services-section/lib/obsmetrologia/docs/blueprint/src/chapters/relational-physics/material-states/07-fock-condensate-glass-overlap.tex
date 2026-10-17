@@ -1,0 +1,35 @@
+\subsection{Fock condensates and glass-overlap entanglement}
+
+\begin{theorem}[Finite C4 ledger generates Fock sectors]\label{thm:c4-ledger-fock-sector}\lean{Obsmetrologia.QuantumContextuality.C4Ledger.fockSector_particleNumber, Obsmetrologia.QuantumContextuality.C4Ledger.particleNumber_nil, Obsmetrologia.QuantumContextuality.C4Ledger.particleNumber_single_create, Obsmetrologia.QuantumContextuality.C4Ledger.particleNumber_single_annihilate}\leanok\uses{thm:glass-beads-port-law-condensate, thm:hole-region, thm:molecular-chaos-factorization}
+The four-entry creation/annihilation ledger generates a finite Fock carrier by
+assigning each ledger a particle-number sector.  Creation entries raise the
+generated sector count, annihilation entries subtract in the finite
+\(\mathbb N\)-ledger, and the generated Fock sector has exactly the ledger's
+particle number.
+\end{theorem}
+
+\begin{theorem}[Condensate holes carry coherent indefinite support]\label{thm:condensate-hole-coherent-support}\lean{Obsmetrologia.QuantumContextuality.CoherentCondensate.has_indefinite_particle_number, Obsmetrologia.QuantumContextuality.CoherentCondensate.orderParameterCount_eq_one, Obsmetrologia.QuantumContextuality.CondensateHole.indefinite_particle_number, Obsmetrologia.QuantumContextuality.CondensateHole.one_order_parameter}\leanok\uses{thm:c4-ledger-fock-sector, thm:hole-region}
+A condensate hole is the no-readout hole carrier equipped with a
+coherent Fock support.  The proved coherent-state content is finite and exact:
+the support contains two sectors with distinct particle numbers, and the carrier
+retains one order parameter.
+\end{theorem}
+
+\begin{theorem}[Glass overlap is the finite entanglement order parameter]\label{thm:glass-overlap-entanglement-order-parameter}\lean{Obsmetrologia.QuantumContextuality.GlassOverlapEntanglement.orderParameter_eq_overlapCount, Obsmetrologia.QuantumContextuality.GlassOverlapEntanglement.joint_fails_to_factor, Obsmetrologia.QuantumContextuality.GlassOverlapEntanglement.not_factorized_gluing, Obsmetrologia.QuantumContextuality.eprGlassOverlapEntanglement_orderParameter, Obsmetrologia.QuantumContextuality.eprGlassOverlapEntanglement_not_factorizes}\leanok\uses{thm:glass-overlap-symmetric, thm:molecular-chaos-factorization, thm:condensate-hole-coherent-support}
+For a two-condensate joint, the retained order parameter is the finite glass
+overlap count of the two configurations.  The entanglement witness is not
+factorized gluing: the joint state fails to factor into separated
+one-condensate sections.  The concrete two-site correlated witness has full
+overlap and provably does not factor.
+\end{theorem}
+
+\begin{theorem}[Analytic Fock/coherent-field frontier]\label{thm:analytic-fock-coherent-field-frontier}\notready\uses{thm:c4-ledger-fock-sector, thm:condensate-hole-coherent-support, thm:glass-overlap-entanglement-order-parameter, thm:real-ratio-temperature-connectivity-frontier}
+The stronger analytic statement remains red: construct a Hilbert-space Fock
+completion, creation and annihilation operators satisfying the intended algebra,
+a normalized coherent state with analytic amplitudes over all particle numbers,
+and a glass-overlap distribution that recovers the corresponding continuum
+entanglement order parameter.  The current green Lean theorem proves the finite
+ledger-to-sector carrier, indefinite support with one retained order parameter,
+and nonfactorizing two-condensate joint witness; it does not prove the analytic
+completion or operator calculus.
+\end{theorem}

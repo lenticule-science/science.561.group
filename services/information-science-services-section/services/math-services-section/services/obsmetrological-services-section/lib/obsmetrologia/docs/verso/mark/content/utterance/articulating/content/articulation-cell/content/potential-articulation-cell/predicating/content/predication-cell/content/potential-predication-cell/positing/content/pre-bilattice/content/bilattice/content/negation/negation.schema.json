@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/pre-bilattice/content/bilattice/content/negation",
+  "title": "negation",
+  "description": "The involution that swaps the two sides of evidence - positive for an assertion becomes evidence against and vice versa, informational content unchanged. The operation that makes a pre-bilattice a bilattice.",
+  "type": "object",
+  "required": [
+    "operation",
+    "truth-antitone",
+    "knowledge-monotone",
+    "involution"
+  ],
+  "properties": {
+    "operation": {
+      "const": "unary-operation",
+      "description": "a unary operation ~ on the value space"
+    },
+    "truth-antitone": {
+      "const": true,
+      "description": "a <=_t b implies ~b <=_t ~a - well-supported-true becomes well-supported-false"
+    },
+    "knowledge-monotone": {
+      "const": true,
+      "description": "a <=_k b implies ~a <=_k ~b - informational content preserved"
+    },
+    "involution": {
+      "const": true,
+      "description": "~~a = a - negating twice restores the original"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://research-notes.561.group/hacking/library/predication-notes/composting/library/object/library/thing/library/system/library/operating-system/library/computer-operating-system/library/session/library/turn/doing/working/realizing-a-turn/realizing-a-turn-in-a-session/realizing-a-turn-in-a-session-with-an-inference-model/realizing-a-turn-in-a-session-with-an-inference-model.schema.json",
+  "title": "Realizing-a-turn-in-a-session-with-an-inference-model (transformer)",
+  "description": "Leaf of the realizing specialization chain. Input is {session-id, inference-model, turn}; output is {realized, row?, error?}.",
+  "type": "object",
+  "required": ["input", "output"],
+  "additionalProperties": false,
+  "properties": {
+    "input": {
+      "type": "object",
+      "required": ["session-id", "inference-model", "turn"],
+      "additionalProperties": false,
+      "properties": {
+        "session-id": { "$ref": "https://research-notes.561.group/hacking/library/predication-notes/identifier/library/name/name.schema.json" },
+        "inference-model": { "type": "string", "minLength": 1 },
+        "turn": { "$ref": "https://research-notes.561.group/hacking/library/predication-notes/object/library/thing/library/system/library/operating-system/library/computer-operating-system/library/session/library/turn/turn.schema.json" }
+      }
+    },
+    "output": {
+      "type": "object",
+      "required": ["realized"],
+      "additionalProperties": false,
+      "properties": {
+        "realized": { "type": "boolean" },
+        "row": {
+          "type": "object",
+          "required": ["e", "a", "v", "t"],
+          "properties": {
+            "e": { "type": "string" },
+            "a": { "type": "string" },
+            "v": {},
+            "t": { "type": "string", "format": "date-time" }
+          }
+        },
+        "error": { "type": "string" }
+      }
+    }
+  }
+}

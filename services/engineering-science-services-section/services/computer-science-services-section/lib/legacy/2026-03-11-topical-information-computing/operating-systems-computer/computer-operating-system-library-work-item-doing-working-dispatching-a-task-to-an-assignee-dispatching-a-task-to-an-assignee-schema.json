@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://research-notes.561.group/hacking/library/predication-notes/composting/library/object/library/thing/library/system/library/operating-system/library/computer-operating-system/library/work-item/doing/working/dispatching-a-task-to-an-assignee/dispatching-a-task-to-an-assignee.schema.json",
+  "title": "dispatching-a-task-to-an-assignee",
+  "description": "Writes (target, assigned-to, <actor>) on a work-item, optionally transitioning open to in-progress if the actor accepts the dispatch.",
+  "type": "object"
+}

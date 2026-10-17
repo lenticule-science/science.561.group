@@ -1,0 +1,67 @@
+\subsection{Direct-limit persistence}
+
+\begin{theorem}[Jeandel--Rao substitution tower --- $b_3$ persists to a nonzero direct-limit class]\label{thm:jeandel-rao-substitution-tower}\lean{Obsmetrologia.AperiodicOrder.Tiling.Witness.jr_substitution_tower}\leanok\uses{thm:jeandel-rao-substitution}
+The marker-domino rung is closed into an iterable endomorphism by a
+recognizability return $\mathrm{recPull}$. The return sends the decorated
+witness back to the core, $\mathrm{recPull}\,\varphi=b_3$. Hence the composite
+$\sigma\,\psi=\mathrm{recPull}(\mathrm{subPull}\,\psi)$ is a substitution
+endomorphism of the marker-ring complex. It preserves cocycles, fixes the core
+class $\sigma b_3=b_3$, and therefore every iterate fixes it,
+$\sigma^n b_3=b_3$. No iterate is a coboundary, so $b_3$ is nonzero in the
+direct limit of the constant directed system
+$H^1 \xrightarrow{\sigma^\ast} H^1 \xrightarrow{\sigma^\ast}\cdots$. The
+mechanism required by the persistence frontier is now built: a chain map per
+stage, class compatibility, and nonzero-ness in the colimit.
+\end{theorem}
+
+\begin{theorem}[The decorated-witness instance $\sigma_{\mathrm{edge}}$ persists unconditionally, on a characterized subfamily]
+  \label{thm:jeandel-rao-persistence-instance}
+  \lean{Obsmetrologia.AperiodicOrder.Tiling.Witness.sigmaEdge_cocycle}
+  \lean{Obsmetrologia.AperiodicOrder.Tiling.Witness.sigmaEdge_phi}
+  \lean{Obsmetrologia.AperiodicOrder.Tiling.Witness.sigmaEdge_iter_phi}
+  \lean{Obsmetrologia.AperiodicOrder.Tiling.Witness.jeandel_rao_persistence_instance}
+  \lean{Obsmetrologia.AperiodicOrder.Tiling.Witness.sigmaEdge_eq}
+  \lean{Obsmetrologia.AperiodicOrder.Tiling.Witness.sigmaEdge_zero_iff}
+  \lean{Obsmetrologia.AperiodicOrder.Tiling.Witness.sigmaEdge_idem}
+  \lean{Obsmetrologia.AperiodicOrder.Tiling.Witness.iterate_sigmaEdge_succ}
+  \lean{Obsmetrologia.AperiodicOrder.Tiling.Witness.sigmaEdge_persistence_subfamily}
+  \leanok
+  \uses{thm:jeandel-rao-substitution-tower}
+  Composing the marker-ring substitution $\sigma$ with the marker/desubstitution
+  chain maps gives a concrete decorated-cochain self-map
+  $\sigma_{\mathrm{edge}}=\mathrm{subPull}\circ\sigma\circ\mathrm{recPull}$, which is
+  cocycle-preserving unconditionally and fixes $\varphi$ on the nose at every
+  iterate; this instantiates the abstract persistence hypothesis at the single
+  class $[\varphi]$, giving a genuinely unconditional persistence theorem for the
+  concrete witness (\texttt{jeandel\_rao\_persistence\_instance}). Chasing
+  $\sigma_{\mathrm{edge}}$'s definition through its case splits shows it in fact
+  reads out only two coordinates of its argument --- $\chi\,e_0$ on four of the six
+  edges, $\chi\,e_2$ on the remaining two (\texttt{sigmaEdge\_eq}) --- so
+  $\sigma_{\mathrm{edge}}$ is idempotent (\texttt{sigmaEdge\_idem}) and the whole
+  tower stabilizes after one step (\texttt{iterate\_sigmaEdge\_succ}). Consequently
+  \emph{every} cocycle $\chi$ with $\chi\,e_0\ne0$ or $\chi\,e_2\ne0$ --- not only
+  $\varphi$ --- survives the entire $\sigma_{\mathrm{edge}}$ tower
+  (\texttt{sigmaEdge\_persistence\_subfamily}), widening the instantiated
+  persistence hypothesis from the single point $\varphi$ to this whole
+  two-coordinate subfamily. This does not close
+  \cref{thm:jeandel-rao-persistence}: a cocycle with $\chi\,e_0=\chi\,e_2=0$ but
+  nonzero elsewhere is a nonzero class annihilated by $\sigma_{\mathrm{edge}}$
+  (\texttt{sigmaEdge\_zero\_iff}), so the unconditional statement over
+  \emph{every} nonzero class remains open, and the identification of
+  $\sigma_{\mathrm{edge}}$ with the literal Labb\'e recognizable substitution
+  matrix is untouched.
+\end{theorem}
+
+\begin{theorem}[Persistence of the Jeandel--Rao witness to a cl-inv class]\label{thm:jeandel-rao-persistence}\notready\uses{thm:jeandel-rao-substitution-tower, thm:jeandel-rao-persistence-instance, thm:aperiodic-mld-classification}
+\emph{Open frontier: the persistence mechanism is built; one identification
+remains.} The finite witness $[\varphi]$ extends through a directed system of
+marker/desubstitution chain maps to a nonzero direct-limit class. What keeps
+this node red is the remaining identification that $\sigma$ is the literal
+Labb\'e recognizable substitution matrix of the Jeandel--Rao shift, rather
+than only a faithful recognizable substitution fixing the transcribed class.
+The mechanism, colimit, and nonzero-ness are no longer the gap; the concrete
+decorated-witness instance (\cref{thm:jeandel-rao-persistence-instance}) proves
+persistence unconditionally along $\varphi$'s own orbit and along a
+characterized two-coordinate subfamily beyond it, but not for an arbitrary
+nonzero class, so the abstract hypothesis is not yet fully discharged.
+\end{theorem}

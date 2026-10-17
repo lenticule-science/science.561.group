@@ -1,0 +1,28 @@
+\section{Voxelizability as carving}
+
+This section records claim nodes and dependency edges. Prior art: Seitz--Dyer voxel
+coloring (1997) and Kutulakos--Seitz space carving (IJCV 2000), which prove existence and
+uniqueness of the maximal photo-consistent shape --- the \emph{photo hull} --- by
+monotone carving to stability, without ever stating the construction order-theoretically.
+
+\begin{proposition}[The carving interior]\label{thm:carving-interior}\lean{Obsmetrologia.Valuation.carve, Obsmetrologia.Valuation.carve_defl, Obsmetrologia.Valuation.carve_mono, Obsmetrologia.Valuation.carve_idem}\notready\uses{thm:pixelization-closure, thm:lenticular-fiber-sample, thm:closure-operator}
+\emph{(Open frontier --- stated, not formalized.)} Photo-consistency is a Boolean
+observable per voxel: do the directional samples (\cref{thm:lenticular-fiber-sample})
+from every patch that sees the voxel agree? The carving step removes inconsistent voxels
+--- deflationary, monotone, stabilizing --- the \emph{interior} (co-closure) dual of the
+pixelization closure of \cref{thm:pixelization-closure}: carving shrinks toward a
+greatest fixed point where settling grows toward a least. The dual of the
+\cref{thm:closure-operator} laws, at the same finite-carrier generality.
+\end{proposition}
+
+\begin{theorem}[The photo hull is the greatest fixed point]\label{thm:photo-hull}\lean{Obsmetrologia.Valuation.photoHull, Obsmetrologia.Valuation.photoHull_greatest, Obsmetrologia.Valuation.voxelizableCount}\notready\uses{thm:carving-interior, thm:voxel-instance, thm:pixelizable-count, thm:no-periodic-orbits}
+\emph{(Open frontier --- stated, not formalized.)} Kutulakos--Seitz's theorem, stated at
+last in its native order theory: the carving orbit on a finite carrier cannot cycle
+(\cref{thm:no-periodic-orbits}, dualized) and terminates at the unique \emph{greatest}
+consistent voxel set --- the photo hull --- with \texttt{photoHull\_greatest} the dual of
+\texttt{op\_least}. Voxelizability is then measured, never asserted: per the register of
+\cref{thm:pixelizable-count}, ``this family of directional samples is voxelizable'' is
+the decidable count-style observable ``the hull reprojects to the given samples
+consistently.'' The underlying convergence proof exists in the vision literature since
+2000; the closure-theoretic statement and the observable are the new content.
+\end{theorem}

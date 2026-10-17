@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "glossary/terms/signature",
+  "title": "signature",
+  "description": "A many-sorted specification S = (Sorts, Ops, ar): the purely syntactic skeleton of a theory — which operations a structure must provide, with typed profiles, but no axioms. Adding axioms to a signature yields a theory; an algebraic structure (magma, group, ring) is a model of a signature plus axioms.",
+  "type": "object",
+  "required": [
+    "sorts",
+    "operations",
+    "arity-function"
+  ],
+  "properties": {
+    "sorts": {
+      "description": "a finite set of sort (carrier-type) names",
+      "type": "array"
+    },
+    "operations": {
+      "description": "a finite set of named operation symbols",
+      "type": "array",
+      "items": {
+        "$ref": "./operation.schema.json"
+      }
+    },
+    "arity-function": {
+      "description": "ar : Ω → Sorts* × Sorts assigning each operation a typed profile",
+      "const": true
+    }
+  }
+}

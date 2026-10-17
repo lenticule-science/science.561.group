@@ -42,7 +42,7 @@ and citations instead state why and when the record is warranted.
 A **term record** is the information object that associates a carrier identity,
 the admitted name and aliases, a defining body, citations, provenance, and
 semantic relations. The paired
-[science schema](../../../../data/records/schema/glossary/terms/term.schema.json)
+[science schema](../../../../schemas/glossary/terms/term.schema.json)
 specifies that record. A Markdown file is one possible carrier of such a
 record, not the term itself.
 

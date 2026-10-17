@@ -1,0 +1,45 @@
+\subsection{Modular frontier}
+
+\begin{theorem}[Parity projections commute on residues mod 4]
+  \label{thm:collatz-mod6-commute}
+  \lean{Obsmetrologia.Closure.Collatz.sigma}
+  \lean{Obsmetrologia.Closure.Collatz.Delta}
+  \lean{Obsmetrologia.Closure.Collatz.sigma_Delta_comm_iff_mod4}
+  \lean{Obsmetrologia.Closure.Collatz.sigmaDelta_domain_iff}
+  \lean{Obsmetrologia.Closure.Collatz.DeltaSigma_domain_iff}
+  \lean{Obsmetrologia.Closure.Collatz.sigmaDelta_composite_domains_disjoint}
+  \lean{Obsmetrologia.Closure.Collatz.sigma_Delta_not_forall_comm}
+  \lean{Obsmetrologia.Closure.Collatz.mod6_does_not_determine_comm}
+  \leanok
+  \uses{thm:collatz-kappa-stopping-time}
+  The even branch is the saturating nucleus-projection $\sigma(n)=\lfloor n/2\rfloor$
+  (contraction), the odd branch the transferring projection
+  $\Delta(n)=\lfloor(3n+1)/2\rfloor$ (expansion); the two commute on residue classes,
+  but the governing modulus is $\mathbf{4}$, not $\mathrm{lcm}(2,3-1)=6$ as originally
+  conjectured here: $\sigma(\Delta n)=\Delta(\sigma n)$ holds exactly on
+  $n\equiv 0$ or $n\equiv 3\pmod 4$. Read as branch-consistent composites instead of
+  raw everywhere-defined formulas, the picture sharpens further: $\sigma\circ\Delta$
+  (parity word $[O,E]$) is branch-consistent exactly on $n\equiv1\pmod4$, and
+  $\Delta\circ\sigma$ (word $[E,O]$) exactly on $n\equiv2\pmod4$ --- two \emph{disjoint}
+  residue classes, so the literal square $\sigma\Delta=\Delta\sigma$ never has a point
+  at which both sides are branch-consistent instances of the accelerated map at once.
+
+  \emph{The original mod-6 conjecture is refuted in Lean.} Lean exhibits $n=1$ and
+  $n=7$, congruent mod $6$, with opposite commuting behavior
+  ($\sigma(\Delta 1)=1\ne0=\Delta(\sigma 1)$, while $\sigma(\Delta 7)=\Delta(\sigma 7)$):
+  no refinement at modulus $6$ can determine the equality. The correct modulus is
+  $4=2^2$, matching the corpus's existing power-of-two moduli for length-$2$ parity
+  words (\texttt{AffineTrace.trace\_B\_eq\_two\_pow\_length}), not the
+  $\mathrm{lcm}(2,3-1)$ arithmetic originally guessed.
+\end{theorem}
+
+\begin{theorem}[Prime-power reduction via local settledness]
+  \label{thm:collatz-prime-power}
+  \notready
+  \uses{thm:collatz-kappa-stopping-time}
+  \emph{Open settlement frontier, stated but not formalized.} If the arithmetic
+  nuclei factor along prime-power commutation covers, local settledness reduces
+  Collatz from all positive integers to all prime powers. This depends on the
+  unverified nuclear-decomposition hypothesis; it is a reduction, not a
+  resolution, because the expansion step does not preserve prime powers.
+\end{theorem}

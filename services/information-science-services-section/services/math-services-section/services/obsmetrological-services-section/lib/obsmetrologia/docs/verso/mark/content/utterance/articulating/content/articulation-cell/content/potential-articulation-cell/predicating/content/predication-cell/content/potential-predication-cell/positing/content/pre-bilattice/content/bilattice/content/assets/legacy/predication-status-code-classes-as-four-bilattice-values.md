@@ -1,0 +1,71 @@
+---
+type: theorem
+class: engineering-claim
+status: proved
+depends-on: [endpoint, emit-response, handle-request, http-method-discipline-via-fibration-generators, four-bilattice, knowledge-order, truth-order, negation, paraconsistency-as-substrate-discipline]
+see-also: [routing-as-predication-fibration-base-change, idempotent-methods-via-closure-2-monad-lax-idempotence, content-negotiation-as-modal-possibility-projection]
+---
+
+# HTTP status-code classes are the four-bilattice corners
+
+**Claim.** The four HTTP status-code outcome classes — `2xx` (success), `3xx` (redirect), `4xx` (client error), `5xx` (server error) — are not a discretionary partition. They are the four corners of [`FOUR`](../../../../../../../../../humanities/theories/math/theories/categories/theories/predication-categories/objects/four-bilattice.md) read in the substrate's epistemic register: `2xx` is $\mathbf{t}$ (told true), `4xx` is $\mathbf{f}$ (told false), `3xx` is $\bot$ (told nothing here), `5xx` is $\top$ (told both — substrate self-inconsistency). The HTTP [negation](../../../../../../../../../humanities/theories/math/theories/categories/theories/predication-categories/morphisms/negation.md) symmetry — `4xx`/`2xx` are swappable under "did the client misstate or did we?" while `3xx`/`5xx` are negation-fixed — is the substrate-side image of $\sim$ on `FOUR`.
+
+The `1xx` (informational) class is *not* a fifth corner; it is a sub-step witness, structurally below the bilattice.
+
+## The assignment
+
+For a request $r$ handled at an [endpoint](teaching/explanations/endpoint.md) bound by [routing-as-predication-fibration-base-change](routing-as-predication-fibration-base-change.md) to morphism $f$, with method-action $\alpha_m$ per [http-method-discipline-via-fibration-generators](http-method-discipline-via-fibration-generators.md), let $w \in \mathbf{FOUR}$ be the substrate's epistemic verdict on $\alpha_m(f^*(v_r))$ where $v_r$ is the request-induced fiber input. The status-code class returned by [emit-response](../morphisms/emit-response.md) is determined by $w$:
+
+| $w \in \mathbf{FOUR}$ | Twist-product cell $\langle l, r \rangle$ | HTTP class | Engineering meaning |
+|---|---|---|---|
+| $\mathbf{t}$ | $\langle 1, 0 \rangle$ | `2xx` | Substrate fulfilled the request; positive truth at the route's fiber, no negative evidence |
+| $\mathbf{f}$ | $\langle 0, 1 \rangle$ | `4xx` | Substrate has positive evidence the request is malformed/unauthorized/conflicting at the route's fiber, no positive truth |
+| $\bot$ | $\langle 0, 0 \rangle$ | `3xx` | Substrate has no content at the route's fiber for this request; the answer (if any) is at another fiber |
+| $\top$ | $\langle 1, 1 \rangle$ | `5xx` | Substrate has both positive and negative evidence — internal contradiction; the request cannot be fulfilled because the substrate cannot decide its own state |
+
+Within each class, the second and third digits refine: `200 OK`, `201 Created`, `204 No Content` are all $\mathbf{t}$ but at different stages of $\alpha_m$'s in-fiber action; `400 Bad Request`, `401 Unauthorized`, `404 Not Found` are all $\mathbf{f}$ at different gates of [admit](../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../engineering-services-section/content/text/glossary/terms/admit.md). The within-class refinements are below the bilattice's resolution and are not theorem content.
+
+## Why this holds
+
+The substrate's state at any moment carries a [predication-fiber-algebra](../../../../../../../../../humanities/theories/math/theories/categories/theories/predication-categories/objects/predication-fiber-algebra.md) value at every cell. Per [paraconsistency-as-substrate-discipline](../../../theorems/paraconsistency-as-substrate-discipline.md), the substrate's value-domain is bilattice-valued — every fiber cell carries a knowledge-order $\leq_k$ component (how much do we know?) and a truth-order $\leq_t$ component (do we know it as true or as false?). For the smallest non-trivial bilattice, [`FOUR`](../../../../../../../../../humanities/theories/math/theories/categories/theories/predication-categories/objects/four-bilattice.md), this gives exactly four corners.
+
+A request-response cycle's *outcome* is the substrate's epistemic verdict on whether $\alpha_m$ succeeded at the route's fiber. The verdict is a fiber-cell value, and projecting it to `FOUR` (which can always be done because `FOUR` is the initial bilattice and every bilattice has a unique homomorphism from `FOUR` per [bilattice-homomorphism](../../../../../../../../../humanities/theories/math/theories/categories/theories/predication-categories/morphisms/bilattice-homomorphism.md)) produces one of four corners. The status-code class records this corner.
+
+**`2xx` ($\mathbf{t}$).** $\alpha_m(f^*(v_r))$ produced the requested fiber value with positive evidence and no contradiction. Per [request-response-determinism](request-response-determinism.md), the response body is the determined fiber projection. In `FOUR`'s twist-product representation, $\mathbf{t} = \langle 1, 0 \rangle$ — positive at the truth-affirming side, zero at the truth-denying side.
+
+**`4xx` ($\mathbf{f}$).** $\alpha_m$ was rejected at one of [admit](../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../engineering-services-section/content/text/glossary/terms/admit.md)'s five gates, or the route resolved to a fiber whose contents positively contradict the request. The substrate has positive evidence of falsity *attributable to the client*: the client sent malformed bytes, lacked capability, requested a contradiction-with-existing-state, or addressed a fiber that the substrate has positively recorded as absent (e.g., `404` after a sublocale-bounded retraction recorded the absence). In `FOUR`: $\mathbf{f} = \langle 0, 1 \rangle$ — zero at affirming, positive at denying.
+
+**`3xx` ($\bot$).** The substrate has *no content* at the route's fiber but knows of another fiber that does (per [routing-as-predication-fibration-base-change](routing-as-predication-fibration-base-change.md), redirects are themselves substrate-content predications: a redirect-record cites the alternate route). $\bot = \langle 0, 0 \rangle$ in the twist product — zero on both sides; *told nothing here*. The redirect's `Location:` header carries the alternate-fiber address; the client re-issues against the alternate. `301` (permanent), `302` (temporary), `304` (cached value still valid), `307`/`308` (method-preserving variants) are all $\bot$-class because each says "this fiber has nothing; look at *that* fiber."
+
+**`5xx` ($\top$).** The substrate has *both* positive and negative evidence about $\alpha_m$'s fulfillment — typically because a closure rule's premises matched but its conclusion contradicts another already-derived cell, or because a downstream substrate-component (database, federation peer) returned an answer inconsistent with the substrate's local state. $\top = \langle 1, 1 \rangle$ — positive on both sides; *told both*. The substrate cannot proceed because it cannot decide which side to commit to without further information. Per [paraconsistency-as-substrate-discipline](../../../theorems/paraconsistency-as-substrate-discipline.md), the substrate does not silently coerce $\top$ to $\mathbf{t}$ or $\mathbf{f}$; it surfaces the contradiction in the response. `500` (unhandled exception), `502`/`503`/`504` (federation peer disagreement, capacity-saturated, federation-peer-timeout) are all $\top$-class because the substrate cannot resolve the contradiction within the request's deadline.
+
+## The negation symmetry on FOUR descends to HTTP
+
+[Negation](../../../../../../../../../humanities/theories/math/theories/categories/theories/predication-categories/morphisms/negation.md) on `FOUR` swaps $\mathbf{t} \leftrightarrow \mathbf{f}$ and fixes $\bot$ and $\top$. The HTTP status-code structure realizes the same symmetry:
+
+- **`2xx` $\leftrightarrow$ `4xx`.** The negation move "this is true, told to me as false" or "this is false, told to me as true" is the locus-flipping of fault-attribution. A request that the client sent in good faith but the substrate has learned violates a constraint (`409 Conflict`) is the negation of a request the client was right to send (`200 OK`). The wire response differs by class, but the substrate's $\sim$-image of the verdict is the same operation as `FOUR`'s negation.
+- **`3xx` is negation-fixed.** A redirect doesn't carry truth-polarity; it carries direction. $\sim \bot = \bot$ — "told nothing here, told nothing here'd-negation" is still "told nothing here." Per `FOUR`'s structure, $\bot$ is fixed under $\sim$.
+- **`5xx` is negation-fixed.** A substrate inconsistency is symmetric in the truth/falsity confusion: the substrate has been told both sides and cannot pick. $\sim \top = \top$. The substrate's `5xx` doesn't flip class under "what if the polarity were reversed" because the substrate is already on both sides.
+
+This is why HTTP retries differ by class: `5xx` is conventionally retryable (the substrate's contradiction may resolve when the inconsistency is repaired); `4xx` is conventionally not (the negation $\mathbf{f} \to \mathbf{t}$ requires the *client* to send a different request); `3xx` is auto-followed by clients (redirect to the located fiber); `2xx` is the terminal case.
+
+## What `1xx` is
+
+`1xx` (informational: `100 Continue`, `101 Switching Protocols`, `102 Processing`) is *not* a fifth bilattice corner. Per [http-method-discipline-via-fibration-generators](http-method-discipline-via-fibration-generators.md), the action $\alpha_m$ has not yet completed when a `1xx` is emitted; the substrate is reporting a sub-step witness — a [witness](../../../objects/witness.md)-chain entry that says "admission gate $i$ passed, proceeding to gate $i+1$." Structurally `1xx` is below the bilattice — a stepping report rather than a verdict. The eventual response carries the bilattice-corner class.
+
+## Engineering consequence
+
+- **Status-code class is a substrate-side commitment.** The substrate cannot legally return `2xx` for a `5xx`-class outcome (that would be silent coercion of $\top$ to $\mathbf{t}$, which [paraconsistency-as-substrate-discipline](../../../theorems/paraconsistency-as-substrate-discipline.md) rules out). Conformance per [run-conformance-test](../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../engineering-services-section/content/text/glossary/terms/run-conformance-test.md) verifies that the response class matches the substrate's epistemic verdict on each test request.
+- **Within-class refinements are application data.** The choice between `200`, `201`, `204` (all $\mathbf{t}$) is application-layer data carried in the witness chain; the substrate-side commitment is "verdict is $\mathbf{t}$." Two substrates implementing the same endpoint may legitimately disagree on `200` vs `201` while agreeing on the bilattice corner.
+- **Federation handles class-monotone projection.** Per [federation-convergence](../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../engineering-services-section/content/text/glossary/concepts/federation-convergence.md), the bilattice-corner of a federated request's response is the join (in `FOUR`'s knowledge order) of the federation peers' responses: if any peer reports $\top$, the federated response is $\top$ (any peer's contradiction surfaces); if all peers report $\bot$, the federated response is $\bot$; otherwise $\mathbf{t}$ or $\mathbf{f}$ as the unanimous evidence dictates.
+- **Client retry policy follows the bilattice.** A correct HTTP client's retry policy is exactly: retry $\top$ (substrate may resolve), follow $\bot$ (client re-issues against the located fiber), do not retry $\mathbf{f}$ (client must change the request), do not retry $\mathbf{t}$ (the request succeeded). Retry policies that violate this — retrying `4xx` indefinitely, ignoring `3xx` redirects — are negation-of-bilattice misalignments.
+
+## What the theorem rules out
+
+- **Tunneling errors as `2xx`.** A pattern in the wild — return `200 OK` with a JSON envelope `{"error": ...}` — is a substrate-side coercion of $\mathbf{f}$ or $\top$ to $\mathbf{t}$ at the wire boundary. Per the theorem, this is a fibration violation: the response's bilattice-corner does not match the substrate's verdict. The substrate's audit trail will record the verdict honestly; the wire response is then a doctrine-fidelity violation per [doctrine-fidelity-via-faithful-interfacer-functor](../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../engineering-services-section/content/text/glossary/concepts/doctrine-fidelity-via-faithful-interfacer-functor.md).
+- **Discretionary `5xx` for `4xx` cases.** Returning `500` for what is structurally a `4xx` (e.g., the client sent a malformed token) hides client-attributable falsity behind substrate-side contradiction. This is also a fibration violation — the bilattice-corner is wrong — and additionally undermines the retry-policy claim.
+- **Status codes outside the four classes.** A response code that does not fit `2xx`/`3xx`/`4xx`/`5xx` (e.g., a non-standard `9xx`) cannot be assigned a `FOUR` corner; the substrate refuses such codes. Per [self-representation](../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../engineering-services-section/content/text/glossary/concepts/self-representation.md), the substrate's status-code table is substrate content; codes not in the table are not admitted.
+
+## Position
+
+This theorem closes the web-server-platform's account of the HTTP triple (route, method, response): per [routing-as-predication-fibration-base-change](routing-as-predication-fibration-base-change.md), routes are base-change in the predication fibration; per [http-method-discipline-via-fibration-generators](http-method-discipline-via-fibration-generators.md), methods are generator-actions on those routes; per this theorem, response classes are the bilattice-corner verdicts on those actions. The substrate's HTTP commitment is, on every axis, derived from predication-categories machinery rather than from HTTP convention.

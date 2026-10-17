@@ -1,0 +1,49 @@
+\section{The settlement genus}
+
+This section formalizes the site/settlement genus/species distinction: a bare
+carrier/rule/topology (a site) paired with actual accreted content admitted by
+its own law (a settlement). One abstract cell, instantiated independently at
+material tiling, lenticular beadwork, causal boundary theory, and the
+bitopological settling site's own \v{C}ech gluing --- none of the four built
+with the others in mind.
+
+\begin{definition}[Settlement]\label{def:settlement}\lean{Obsmetrologia.Settlement}\leanok
+A settlement of a base is a pair of admitted content and a proof it is
+admitted by the base's own law: \texttt{content : Content base} together
+with \texttt{admits : Admits base content}.
+\end{definition}
+
+\begin{theorem}[Tiles are settlements of a finite local rule]\label{thm:settlement-of-tiles}\lean{Obsmetrologia.Settlement.ofTiles}\leanok\uses{def:settlement, thm:glass-substance-bundle}
+A \texttt{Tiles} value is a settlement of its carrier/rule pair: the listed
+pattern is the content, and the SFT \texttt{Path} admissibility is the
+admission law.
+\end{theorem}
+
+\begin{theorem}[Beads are settlements of the lenticular hole-transition rule]\label{thm:settlement-of-beads-thread}\lean{Obsmetrologia.Settlement.ofBeadsThread}\leanok\uses{def:settlement, thm:glass-substance-bundle}
+A \texttt{Beads} thread is a settlement of its lenticule carrier: the routed
+thread is the content, and \texttt{ThreadLegal} --- every pass threading
+through its lenticule via the hole-transition rule shared with the weave
+crossing --- is the admission law.
+\end{theorem}
+
+\begin{theorem}[A Hole's effect relation is a settlement of its causal boundary substrate]\label{thm:settlement-of-hole}\lean{Obsmetrologia.Settlement.ofHole}\leanok\uses{def:settlement, thm:hole-shroud}
+A \texttt{Hole}'s effect relation is a settlement of its causal substrate and
+chosen readout: the effect relation is the content, and shroud-support
+(\texttt{effect\_source\_shrouded}) is the admission law. The substrate and
+readout alone already determine the shroud combinatorially, with no observed
+activity presupposed --- the bare corner of this instance.
+\end{theorem}
+
+\begin{theorem}[A \v{C}ech datum's glued section is a settlement of the bitopological settling site]\label{thm:settlement-of-cech1}\lean{Obsmetrologia.Settlement.ofCech1}\leanok\uses{def:settlement, thm:glue, thm:cocycle, thm:h1-vanishes}
+For an agreeing family (a \texttt{Cocycle}) over a \v{C}ech datum, the glued
+global section is a settlement of the datum: the section is the content, and
+being a \texttt{Coboundary} of the family is the admission law --- reusing
+\texttt{glue}/\texttt{glue\_coboundary} rather than re-deriving gluing.
+\end{theorem}
+
+\begin{theorem}[The recurring settlement cell, met four times]\label{thm:settlement-recurring-cell}\lean{Obsmetrologia.Settlement.tiles_beads_hole_cech1_are_settlements}\leanok\uses{thm:settlement-of-tiles, thm:settlement-of-beads-thread, thm:settlement-of-hole, thm:settlement-of-cech1}
+\texttt{Tiles}, a \texttt{Beads} thread, a \texttt{Hole}'s effect relation,
+and a \v{C}ech datum's glued section are each a settlement of their own base
+--- the same two-field shape, independently instantiated in four domains
+built without each other in mind.
+\end{theorem}

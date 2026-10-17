@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/pre-bilattice/content/knowledge-order",
+  "title": "knowledge-order",
+  "description": "The order <=_k of a pre-bilattice's knowledge lattice - the componentwise product order on charges: it raises both positive and negative evidence together. Its bottom is no-evidence, its top evidence-both-ways.",
+  "allOf": [
+    {
+      "$ref": "mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/content/preorder/content/order"
+    }
+  ],
+  "type": "object",
+  "required": [
+    "componentwise"
+  ],
+  "properties": {
+    "componentwise": {
+      "const": true,
+      "description": "[a1,a2] <=_k [b1,b2] iff a1 <= b1 and a2 <= b2 - both evidence slots raised together; negation is monotone in it"
+    }
+  }
+}

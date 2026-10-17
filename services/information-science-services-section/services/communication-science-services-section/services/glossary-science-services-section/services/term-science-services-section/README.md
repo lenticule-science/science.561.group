@@ -9,7 +9,7 @@ identifying their different senses of *term* or *concept*.
 The canonical human-facing definition is
 [`content/text/glossary/terms/term.md`](content/text/glossary/terms/term.md).
 The science-level record specification is
-[`data/records/schema/glossary/terms/term.schema.json`](data/records/schema/glossary/terms/term.schema.json).
+[`schemas/glossary/terms/term.schema.json`](schemas/glossary/terms/term.schema.json).
 The dated synthesis explains the distinctions and their evidence:
 [`2026-09-01-note-on-terminological-and-formal-terms.md`](content/text/documents/articles/notes/2026/09/01/2026-09-01-note-on-terminological-and-formal-terms.md).
 

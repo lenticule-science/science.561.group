@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "glossary/terms/gaming",
+  "title": "gaming",
+  "description": "Gaming is structured playing: the activity of engaging in games — play that has acquired agreed rules, objectives, and outcomes upheld by its participants. An instance describes an episode of gaming: a game being played by players.",
+  "type": "object",
+  "required": ["game", "players"],
+  "properties": {
+    "game": {
+      "$ref": "./game.schema.json",
+      "description": "The agreed structure being played."
+    },
+    "players": {
+      "type": "array",
+      "items": { "$ref": "./player.schema.json" },
+      "minItems": 1,
+      "description": "The participants upholding the shared frame."
+    },
+    "playQuality": {
+      "type": "boolean",
+      "description": "Whether the episode retains the quality of play — voluntary, intrinsically motivated engagement (see ../../../../../schemas/glossary/terms/play.schema.json); gaming without it is the boundary case (compelled gamification, compulsive gambling)."
+    }
+  }
+}
