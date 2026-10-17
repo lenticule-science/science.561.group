@@ -46,3 +46,7 @@
 	path = sites/l-space.561.group
 	url = https://github.com/lenticule-science/l-space.561.group.git
 	branch = main
+[submodule "services/natural-science-services-section/services/earth-science-services-section/services/climate-science-services-section"]
+	path = services/natural-science-services-section/services/earth-science-services-section/services/climate-science-services-section
+	url = https://github.com/lenticule-science/climate-science-services-section.git
+	branch = main
