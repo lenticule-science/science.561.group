@@ -2,6 +2,8 @@
 title: "Note on dreaming as routine and the kinematic space of work"
 description: "States dreaming as the Group's routine night cycle over its records, the kinematic space of the Group's history and work as the causal set of its runs and moves, and the causal set of an agent's moves as derived from its offices, duties and skills; and gives engineering the requirements to run dreaming on every MetroPlat node and to read the work board as that causal set."
 date-created: 2026-10-09
+date-modified: 2026-10-16
+science-owner: dreaming-science-services-section
 type: notes
 keywords:
   - dreaming-routine
@@ -44,7 +46,7 @@ the end trace to them.
 | Dreaming is network-free except at the aperiodic regime; a dream-tick is a mode that narrows authorization | `science-services-section/services/philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/notes/2026/05/28/2026-05-28-2026-05-28-dreaming-tick.md:23-28,49` |
 | What a dream may not certify | `public-services-section/services/personal-services-section/services/emsenn-services-section/content/text/documents/articles/notes/2026/06/28/2026-06-28-dreaming-as-lean-proofing-frontier.md:26-29` (the companion `2026-06-28-research-on-dreaming-as-a-lean-proofing-frontier.md` sits beside it) |
 | Dreaming as an offline pass with the witness-requirement relaxed; compaction as dreamless sleep | `$D/content/text/documents/articles/notes/2026/08/21/2026-08-21-note-on-dreaming-as-unwitnessed-settlement.md:36-52` |
-| Dreams as an entity's fiber composing with itself | `$D/content/text/documents/articles/notes/2026/08/21/2026-09-04-collected-dreams-as-fiber-states.md` |
+| Dreams as an entity's fiber composing with itself | `$D/content/text/documents/articles/notes/2026/09/04/2026-09-04-collected-dreams-as-fiber-states.md` |
 | The four dreaming forms as built code | `engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/agent-computer-system-engineering-services-section/apps/agent-organization-engine/lib/knowing/src/dreaming/index.mjs:1-27` |
 | Runs as diamonds, the space of runs as a causal set | `public-services-section/services/personal-services-section/services/emsenn-services-section/content/text/documents/articles/notes/2026/07/01/2026-07-01-research-on-the-kinematic-space-of-runs.md:30-39,55-70` and its companion `2026-07-01-research-on-agent-run-as-charge.md:62-66`; the reading against metroplat's code is `2026-07-03-research-on-causality-process-ordering-and-kinematic-regions.md` in the same folder |
 | The causal set as mathematics | `science-services-section/services/natural-science-services-section/services/physical-science-services-section/services/physics-services-section/content/text/glossary/terms/causal-set.md` |
@@ -52,9 +54,9 @@ the end trace to them.
 
 ## Statements: dreaming as the Group's routine
 
-**D1.** Dreaming is routine. It is not an experiment or an event. Every node of
-the Group's MetroPlat ecosystem runs it on a schedule, as one of its service
-loops, over the records that node holds. (The Leader, 2026-10-09; the founding
+**D1.** Dreaming is routine. It is not an experiment or an event. The Group requires each admitted MetroPlat node to run it as a scheduled service
+loop over the records that node holds. This is an obligation, not a report that
+all nodes have already deployed it. (The Leader, 2026-10-09; the founding
 note's "real experiment" at `$D/.../2026-08-21-note-on-dreaming-as-unwitnessed-settlement.md:44-49`
 becomes the standing practice.)
 
@@ -68,10 +70,10 @@ The routine is this night cycle.
 
 | Regime | Closure | Act | Network | Emits |
 |---|---|---|---|---|
-| finite | k < omega | recombines held cells to the least fixed point of a closure over a fixed vocabulary | none | proposed cells |
-| scott-continuous | k = omega | consolidates repeated cells by knowledge-join to the directed-supremum limit | none | proposed consolidated claims |
-| transfinite | omega < k < omega-1 | derives new predicates from co-occurrence of predicates on a subject | none | proposed predicates (vocabulary) |
-| aperiodic | k >= omega-1 | channels new generators from outside the settled fibers, through an enactor | the enactor's | proposed cells with no internal fixed point |
+| finite | κ < ω | recombines held cells to the least fixed point of a closure over a fixed vocabulary | none | proposed cells |
+| scott-continuous | κ = ω | consolidates repeated cells by knowledge-join to the directed-supremum limit | none | proposed consolidated claims |
+| transfinite | ω < κ < ω₁ | derives new predicates from co-occurrence of predicates on a subject | none | proposed predicates (vocabulary) |
+| aperiodic | κ ≥ ω₁ | channels new generators from outside the settled fibers, through an enactor | the enactor's | proposed cells with no internal fixed point |
 
 **D4.** The three inward regimes are deterministic, replayable and cost no
 money; the same window of records and the same rule set give the same proposals
@@ -97,9 +99,10 @@ witnessed residue and the rest evaporates rightly
 It does not write a settled cell, articulate its own proposal, mark a theorem
 proved, close an admitted declaration, or upgrade a capability without the
 oracle that certifies it (`2026-06-28-dreaming-as-lean-proofing-frontier.md:29`).
-The dreaming state is a mode that narrows the dreamer's authorization to
-internal composition (`2026-05-28-2026-05-28-dreaming-tick.md:49`), so a dream
-sends nothing outside the node, spends nothing and touches no credential.
+The inward dreaming state narrows the dreamer's authorization to internal
+composition (`2026-05-28-2026-05-28-dreaming-tick.md:49`): it sends nothing
+outside the node, spends nothing and touches no credential. The separately
+admitted, budgeted aperiodic enactor of D4 is not an inward dream-tick.
 
 **D7.** Governance articulates. The office whose duty covers a proposal's
 subject accepts it into the trace, declines it, or lets it lapse, and records
@@ -108,10 +111,11 @@ the judgment (rules `existing-work-is-judged-before-it-is-discarded`,
 receives its own proposals, as the Senior Scientist never receives its own
 outcome (`science-services-section/lib/agency/duties/realizing-allocated-science-work.json`, `receiver-condition`).
 
-**D8.** Compaction and summarization are dreamless sleep: lossy deletion, not
-settlement (`2026-08-21-note-on-dreaming-as-unwitnessed-settlement.md:46-48`).
-The routine keeps the dream's record, and the day's records it read stay in the
-trace. Dreaming consolidates by proposing; it deletes nothing.
+**D8.** Compaction and summarization can abbreviate or discard context;
+the dreaming routine instead retains its input records and emits proposals.
+The phrase "dreamless sleep" in the August founding note is an analogy, not
+a scientific identity between memory compaction and human sleep. The routine
+keeps its dream record and deletes nothing.
 
 **D9.** A dream reads a window bounded by marks on the ledger. Until the
 monotone-transaction-time migration lands, the sound window is the whole log;
