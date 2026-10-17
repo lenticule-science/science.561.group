@@ -8,13 +8,31 @@ date-created: 2025-10-10T22:07:00
 description: We present a unified categorical theory of \paracosms\—formal models of narrative and ludic worlds—grounded in the coexistence of modal structure (possibility, necessity, knowledge, play) and reproducibility (coherence under…
 ---
 
+## Corrigendum on the claimed theorems (2026-10-17)
+
+**Scientific status: historical conjectural research program, NOT a proved categorical theorem.** Retain the original 2025 paper's terminology and theorem headings as a record of its intended claims. The proofs below are incomplete and several constructions are not type-correct as written. The current [RPS scientific status and scoped-observation profile](../../../specifications/reproducible-paracosm-specification.md) governs implementation claims. The [Alice and Looking-Glass case study](../../2026/10/17/2026-10-17-note-on-alice-as-a-paracosmic-stress-test.md) supplies finite counterexamples for an underspecified observer.
+
+1. A map \(\mu:\Box M\to M\) describes an endofunctor **algebra** structure; a **coalgebra** is an arrow \(M\to\Box M\). Do not infer an algebra/coalgebra equivalence. The displayed equation with \(\varepsilon_i\) is not established as well-typed given the declared adjunction, because an algebra multiplication \(\Box^2\Rightarrow\Box\) is not supplied.
+2. \(\int_I\mathcal M\) requires an actual category \(I\), reindexing functors, and coherent comparison maps. A mere finite set of modal labels does not supply these, nor does a Grothendieck construction by itself prove the claimed reflectivity or equivalence.
+3. Gluing is a compatibility and descent condition, not itself an equivalence relation on every model. Rewriting and observational bisimulation require typed definitions. An **objectwise quotient** \(\mathbf{Mod}(S)/{\sim}\) is not automatically a well-defined categorical localization, much less necessarily complete and cocomplete. Specify the inverted arrows and universal property before making such claims.
+4. A globally terminating and confluent **world-event transition** would exclude intended open, cyclic and branching narratives. A terminating/confluent **source normalization** may be specified independently of transitions.
+5. Finite examples can falsify overly strong requirements or validate bounded implementations. They cannot by themselves certify that a general category is complete/cocomplete or that all modal translations preserve satisfaction. Institution theory requires an actual satisfaction condition, not just a reference to Goguen–Burstall.
+
+**A small rigorous replacement lemma (sets).** Given total observation maps \(b:X\to Y\) and \(g:X\to Z\), a unique map \(h:b(X)\to Z\) satisfying \(g=h\circ b\) (with \(b\) regarded as a map onto its image) exists **iff** for all \(x,x'\in X\), \(b(x)=b(x')\) implies \(g(x)=g(x')\).
+
+*Proof.* If \(g=h\circ b\), then equal \(b\)-images have equal \(g\)-images. Conversely, assign \(h(y)=g(x)\) for any \(x\in b^{-1}(y)\), where \(y\in b(X)\). The condition makes this value independent of which \(x\) realizes \(y\), so \(h\) is a well-defined function and its factorization holds. Uniqueness follows from the surjectivity of \(b:X\to b(X)\). \(\square\)
+
+For the Cat's grin, body-only observation \(b\) identifies two admitted states that the grin observation \(g\) distinguishes. Thus **no such factorization exists on those states**. This is a finite mathematical result, **hand-proved here rather than Lean-checked**. It says nothing about whether either literary state is physically realizable, and it does not establish the full original modal or reproducibility theorem.
+
+**Revised research aim:** Define source-indexed, canon-scoped observations; distinguish speaker testimony from world facts; specify a category of world models, valid arrows and observational quotients; test which explicitly named observations descend to the proposed quotient; then prove or refute appropriately bounded modal, descent and invariance propositions. Preserve the 2025 claims below as hypotheses until those obligations are met.
+
 # Abstract
 
 We present a unified categorical theory of \*paracosms\*—formal models of narrative and ludic worlds—grounded in the coexistence of modal structure (possibility, necessity, knowledge, play) and reproducibility (coherence under reconstruction).
-By defining internal modal endofunctors within a reflective localization of the model category of a world sketch, we prove two main results:
+By considering internal modal endofunctors within a proposed reflective localization of a world-sketch model category, the historical program **conjectures** two main results (not proved by the sketches below):
 (1) the **Modal Encoding Theorem**, which establishes a fibred category of modal objects forming a complete and cocomplete extension of the world; and
 (2) the **Reproducibility Theorem**, which shows that gluing, normalization, and bisimulation yield an institutionally invariant quotient.
-Together these results characterize a \*Reproducible Paracosmic Modal Model\*—a world that can be re-narrated, replayed, or re-simulated without loss of truth or potentiality.
+If the missing categorical premises can be supplied, these proposed results would characterize a \*Reproducible Paracosmic Modal Model\*—a world whose specified observations remain coherent under admitted retellings or simulations.
 
 # 1. Introduction — From Narrative Theory to Category Theory
 
@@ -186,9 +204,9 @@ Possibility and actuality coexist as categorical levels within a single invarian
 
 # 6. Conclusion
 
-The **Theorem of Reproducible Paracosmic Modal Models** provides a unified categorical foundation for world-building across narrative and ludic media.
+The historically named **Theorem of Reproducible Paracosmic Modal Models** proposes a unified categorical foundation for world-building across narrative and ludic media; its stated general theorems remain unproved.
 By embedding modal semantics directly within the reproducible model category, we obtain a world that is both **open to potentiality** and **closed under reconstruction.**
-This establishes a formal standard for representing, sharing, and extending coherent paracosmic systems—analogous to how functorial semantics standardizes mathematical theories.
+This motivates an explicit, still-developing research specification for representing and comparing coherent paracosmic systems, without establishing categorical completeness or invariance in general.
 
 # References
 
