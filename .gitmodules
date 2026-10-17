@@ -42,3 +42,7 @@
 	path = services/social-science-services-section/services/economics-and-business-science-services-section/services/gambling-services-section
 	url = https://github.com/lenticule-science/gambling-services-section.git
 	branch = main
+[submodule "sites/l-space.561.group"]
+	path = sites/l-space.561.group
+	url = https://github.com/lenticule-science/l-space.561.group.git
+	branch = main

@@ -24,7 +24,7 @@ Lenticule Science conducts research for the 561 Group. Red Cup Engineering turns
 
 - [consumer-goods-science-services-section](services/consumer-goods-science-services-section/README.md) — research supporting the 561 Group consumer-goods program.
 
-The [L-Space source and migration boundary](sites/l-space.561.group/README.md) targets `lenticule-science/l-space.561.group` as the `@lenticule-science/l-space.561.group` package, mounted here at `sites/l-space.561.group` **as a Git submodule once the repository exists**. L-Space's mathematical and language scope spans admitted digital resources; the Engineering supplier chain is SignCraft → CAIRN (`@red-cup-engineering/knowledge-system-server`) → L-Space consumers. Digital Garden is a separate project, not an L-Space dependency. The present directory is still historical content, not the requested submodule or a deployed service.
+The [canonical L-Space source](sites/l-space.561.group/README.md) is `lenticule-science/l-space.561.group` (`@lenticule-science/l-space.561.group`), mounted as a **pinned Git submodule** at `sites/l-space.561.group`. The original parent-site prose and recovered proposals remain byte-identically preserved under that package's `docs/recovered/`. L-Space spans all admitted digital resources; the Engineering supplier chain is SignCraft → CAIRN (`@red-cup-engineering/knowledge-system-server`) → L-Space consumers. Digital Garden is a separate project. Source installation is **not** an npm release, running host, DNS cutover or public receiving.
 
 ## Current cross-field scientific receiving
 

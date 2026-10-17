@@ -7,12 +7,12 @@
   "parentRepository": "lenticule-science/science-services-section",
   "submodulePath": "sites/l-space.561.group",
   "submoduleUrl": "https://github.com/lenticule-science/l-space.561.group.git",
-  "sourceStatus": "formation-request-seeded-but-target-repository-not-created",
-  "parentStatus": "ordinary-historical-directory-not-submodule",
+  "sourceStatus": "canonical-science-repository-seeded-by-governed-request-source-only",
+  "parentStatus": "pinned-gitlink-to-canonical-science-package-source-only",
   "namespaceMigration": {
     "retireCandidate": "emsenn/l-space.561.group",
     "observed": "empty-personal-repository",
-    "authority": "Governed repository-formation source exists; GitHub Actions runner fails before job steps. No installed create-repository actuator."
+    "authority": "Canonical Science repository exists; governed request lspace-lenticule-site-20261016 was seeded through authenticated GitHub writes. Original private-Actions formation failure is historical, not the present source state."
   },
   "scientificDomain": {
     "name": "Language Space",
@@ -53,30 +53,31 @@
     "emsenn/web-digital-garden"
   ],
   "notEstablished": [
-    "repository-formation-provider-effect",
-    "submodule-gitlink",
     "npm-publication-of-new-CAIRN-and-site-package",
     "install-of-candidate-host-export",
     "replacement-of-current-legacy-ingress",
     "anonymous-public-receiving",
     "reader-authorized-private-source-receiving",
-    "global-Grothendieck-or-Scott-continuity-theorem"
+    "global-Grothendieck-or-Scott-continuity-theorem",
+    "npm-installation-of-source-identified-canonical-lspace-package"
   ],
-  "nextTransition": "Recover the existing governed GitHub formation runner/credential path and execute the exact requestId; only once target GitHub main exists replace the historical ordinary directory with a correctly pinned gitlink; publish/install the CAIRN host export and Science instance, replace the legacy ingress atomically and receive public domain.",
+  "nextTransition": "Install genuinely published CAIRN/TUFTE suppliers and this pinned Science package on an authorized host; provision source permissions and cut over the existing L-Space HTTPS ingress only with independent machine and human readers. Reconcile the house checkout's older Science forest separately.",
   "formation": {
     "sourceRepository": "red-cup-engineering/github-engineering-services-section",
     "requestPath": "data/records/github-repository-declarations/requests/lenticule-science--l-space.561.group.json",
     "requestId": "lspace-lenticule-site-20261016",
     "sourceCommit": "110116a9a733d8188c890714f341fbfdc88dabeb",
     "latestObservedWorkflowRun": "https://github.com/red-cup-engineering/github-engineering-services-section/actions/runs/38975572487",
-    "providerOutcome": "private GitHub Actions runner failed with no steps; formation effect not performed",
+    "providerOutcome": "Target Science repository existed; exact four-file governed seed was committed on 2026-10-17 through authenticated GitHub file writes. Old Actions formation runner did not perform these writes.",
     "requestedSeedPaths": [
       "README.md",
       "package.json",
       "data/records/site-instance.json",
       "data/records/host-binding.json"
     ],
-    "packageSource": "Science package exports ./instance and ./host-binding; target GitHub repository not yet created"
+    "packageSource": "Canonical Science package exports ./instance and ./host-binding; source is not a released or installed server.",
+    "pinnedSiteCommit": "4eb9db66ecebc0112d9c52bcde3fec01f49866e0",
+    "preservedParentSource": "The former parent site README and two recovered October 4 evidence files are byte-identically preserved under lenticule-science/l-space.561.group/docs/recovered/ (same Git blob IDs)."
   },
   "actualFabrication": {
     "owner": "red-cup-engineering/knowledge-system-server",
