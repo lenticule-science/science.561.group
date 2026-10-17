@@ -187,7 +187,7 @@ The source register distinguishes a proposed philosophical definition (GG-C01, G
 
 ## Current result and receiver
 
-The current result is the **reconstructed gonzo work-philosophy account** backed by a register of 22 separately scoped source records and 15 scientific/conceptual claim records. It contains first-party original-art evidence, actual US field evidence connecting humor and drug-selling identity, non-US comparison cases, a model that **retains the drug channels and the clowning as operative**, and concrete economics and falsification questions. It does NOT establish a representative US population, a new mathematical theorem, typical participant earnings, an actual causal advantage or an installed enterprise.
+The current result is the **reconstructed gonzo work-philosophy account** backed by a register of 23 separately scoped source records and 16 scientific/conceptual claim records. It contains first-party original-art evidence, actual US field evidence connecting humor and drug-selling identity, non-US comparison cases, a model that **retains the drug channels and the clowning as operative**, and concrete economics and falsification questions. It does NOT establish a representative US population, a new mathematical theorem, typical participant earnings, an actual causal advantage or an installed enterprise.
 
 **Not claimed:** discovery of a new mathematical law; statistical estimates; typical prosperity; causal mobility effects; new ethics approval; a functioning micro-enterprise; installed runtime; independent scientific or customer acceptance.
 
