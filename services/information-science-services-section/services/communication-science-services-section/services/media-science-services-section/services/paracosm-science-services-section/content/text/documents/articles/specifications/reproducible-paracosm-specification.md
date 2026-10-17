@@ -403,6 +403,23 @@ For a total explicitly defined observation \(O_c:X\to Y_c\), the relation \(x\eq
 
 The already implemented [FeltOS paracosm impact tests](https://github.com/red-cup-engineering/feltos/blob/main/test/paracosm-impact.test.mjs) remain relevant **bounded tests**; they do not supply the missing categorical proofs. Do not fork an Alice-specific runtime to compensate. Engineering should reuse the existing source-indexed observation pipeline after Science admits an exact test requirement.
 
+## 8.3 Research profile: world-bridges, independent time orders, and ontological counterparts (2026-10-17)
+
+**Status: proposed extension of the held RPS proof-obligation program, not a released v0.2 specification.** The [Narnia multiworld study](../notes/2026/10/17/2026-10-17-note-on-narnia-as-a-multiworld-paracosmic-stress-test.md) develops source-anchored examples, independent scholarly readings and finite countermodels. It adds no implementation to the v0.2 [paracosm content schema](paracosm-content-schema.md).
+
+The earlier single-world and Alice-scoped readings need the following **common, reusable** distinctions:
+
+1. **Historical-world index** \(w\): each named world or *frame* has its own events, partial event order, locally available clock readings, laws and sources. A fictional kingdom's name, its host world, the reader's actual world, a connector space and a claimed eternal counterpart need not denote the same object.
+2. **Different orders with provenance:** publishing and encounter order, fictional event order, actor memory/disclosure order, and local clock values are different sorts. A later publication can narrate a world-creation event; a work can occur during events narrated in another published book. Monotone conversion of these orders is **not** an axiom.
+3. **Portal or bridge event** between world-indexed source and target **events**, with carrier, entry medium, claimed subject/object continuity, evidence and scope. A portal is not a function of time values and need not be repeatable, invertible or uniquely positioned in space.
+4. **World-relative default and epocs:** minimal departure from observed actual-world assumptions is a reading heuristic; no real-world law may be promoted to a settled law in newly encountered Narnia, Charn or Aslan's Country without a valid source/model bridge. Local history, regime, ecology, narrated creation and narrated ending stay distinct.
+5. **Reported law versus admitted consequence:** a character who invokes one layer of law may not know a separately reported deeper conditional. Law applicability, epistemic access, actor's utterance, narrative endorsement and observed event are separate. Nested "before Time" language does not itself give an absolute physics clock.
+6. **Historical model and counterpart:** a story's terminal historical world and another source-described "real" counterpart require a typed correspondence relation and explicit consumer observables. "More real", "larger within", "shadow of" and "survives" must not silently turn into equality, inclusion in a shared metric space, a categorical functor, or proven higher ontological status.
+
+**Bounded falsifiers:** A purported work chronology derived by monotonically renumbering original publication order fails for *The Magician's Nephew* and *The Lion, the Witch and the Wardrobe*; a constant Narnian-years-per-Earth-year factor fails for the reported *Prince Caspian* versus *Dawn Treader* visit intervals when tested on their rounded illustrative values. Interpreting the Stable's entire experienced interior as a subset of the old exterior in a **single** monotone measure space contradicts the stated "larger inside" reading. These are finite negative controls, not a complete proof of any general theory. Exact novel text and dates remain edition-bound evidence.
+
+**Receiving condition:** any generalization into an RPS theorem must define a category of scoped histories, actual arrows and portal compositions, admitted local and work orders, the distinction between model morphism and observation projection, and which named observations it preserves. Red Cup's existing FeltOS/SignCraft lineage is the prospective *reusable* engine consumer. Neither creating an Alice/Narnia special parser nor publishing a new application follows from these observations.
+
 # 9. Conclusion
 
 The RPS v0.1 standard translates the **proposed** categorical requirements into a constructive schema. The claimed categorical sufficiency is not established by the present proof sketches or finite software checks.  
