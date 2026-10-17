@@ -54,6 +54,22 @@ The [engineering note on paracosm engineering in FeltOS](../../../../../../../..
 describes the software that reads them. Fields are still added, renamed or
 split as real content lands.
 
+## Research extension: scoped observations and non-linear time (2026-10-17)
+
+**Version/status:** v0.2 remains the current interface. This is a **proposed v0.3 research profile**, not a claim that the FeltOS, TAB, MASH or Hugo consumers implement its features. The motivating source-anchored study is [Alice as a paracosmic stress test](../notes/2026/10/17/2026-10-17-note-on-alice-as-a-paracosmic-stress-test.md).
+
+**Known v0.2 assumptions and their limits:**
+
+1. One universally comparable timeline is a **modeling choice**, not a necessary property of reproducible fictional worlds. Distinguish narrative presentation order, partial event order, dream and remembrance frames, and local clock readings. The Hatter's clock may display six through several different events; the White Queen may report remembering future happenings. The clock reading alone is not an event identity.
+2. \`contradicts:\` indexes **disagreement between texts**. FOUR values apply to the **same typed proposition under a specified source, canon and interpretation scope**, not to any two disputed texts. Speaker claims, character beliefs and narrator reports need distinct authority and evidence.
+3. \`canons:\` distinguishes sets of possible-world assertions but does not establish cross-work character identity or a bridge between a dream, its narrator and its enclosing frame. Candidate bridges need their own provenance and observation-preservation conditions.
+4. Minimal departure is a reader's inference strategy, not a license to promote every unstated real-world assumption to an established fictional-world fact. Inferred default, source-established event, contrary testimony and unknown have different evidence.
+5. Consumers must name the distinctions they preserve. Body visibility alone does not determine grin visibility in all Cheshire Cat states. Projection fidelity is relative to declared observations, and not identical to bitwise reproducibility of generated media.
+
+**Compatibility:** Existing required keys, types, slug resolution, time syntax, and current engine behavior remain **unchanged**. It is admissible to describe partial order, spoken testimony and subjective clock frames in existing text bodies or designer notes with explicit sources; that does not mean a v0.2 engine checks their deeper semantics. Implement none of these candidate fields by unilateral schema extension.
+
+**Types to research before adopting a new schema version:** source edition and span; speaker and assertion polarity; scoped typed claim; event-to-event partial order; local clock and reading; world/dream/narration frame; explicit canon bridge; consumer observation family and information-loss witness; finite-test versus mechanized-proof versus receiving status.
+
 ## Required fields
 
 - `type:` — discriminant. Determines how the entry is interpreted.
@@ -142,9 +158,11 @@ split as real content lands.
 - `concerns:` — list of event or era slugs the text is about. A text
   written after what it concerns is a document from a later era: the
   epic's distance.
-- `contradicts:` — list of text slugs this text disagrees with. Their
-  conflicting claims are then held as a declared contradiction (⊤), as
-  testimony, and are not a continuity error.
+- `contradicts:` — list of text slugs this text disputes. This
+  records a declared disagreement, **not by itself** a FOUR ⊤ world claim.
+  A both-valued claim requires positive and negative evidence for the
+  same typed, canon- and context-scoped proposition. Opposed testimony
+  can remain without becoming a continuity error.
 
 ### `faction`
 
@@ -191,7 +209,11 @@ carry `during:` (an era) and `after:` (events it follows).
 
 A **time value** is the slug of a time entry, an integer on the paracosm's
 timeline, or, when the paracosm's README declares `calendar: gregorian`, an
-ISO date (`YYYY-MM-DD`). Every time value can be compared with every other.
+ISO date (`YYYY-MM-DD`). Under **v0.2**, every time value can be compared with every other on
+its one declared timeline. This is an implemented source-format assumption,
+**not** a scientific requirement that every fictional world has a globally
+comparable clock. The proposed research profile above treats temporal order
+and local clock readings separately.
 The fields that take time values are `at:`, `during:`, `started:`,
 `ended:`, `after:` and `written-at:`; `at-year:` in older entries means
 `at:`.
@@ -233,7 +255,9 @@ is the actual world (minimal departure). Lives in `nova/`.
 - `departs-from:` — the actual-world fact departed from, with `source:`
   (a citation).
 - `consequences:` — slugs of the dynamics, events, factions or things the
-  novum drives. A novum without consequences is decoration.
+  novum drives. A novum without recorded consequences needs editorial review; do not treat
+its lack of an explicit consequence link as a proof that the fictional fact
+or the source author's intention is false.
 
 ### `dynamic`
 
