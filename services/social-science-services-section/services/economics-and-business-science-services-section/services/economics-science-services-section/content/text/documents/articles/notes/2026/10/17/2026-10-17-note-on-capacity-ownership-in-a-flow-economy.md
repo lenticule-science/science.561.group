@@ -80,13 +80,33 @@ The baseline must distinguish naturally wet years from genuine land stewardship.
 
 **Governance:** Fractional ownership does not confer permission to divert, develop, exclude, privatize a watershed, or govern an Indigenous nation. Affected communities and competent governments retain their own authorities and consent requirements. Benefit-sharing, local choice, dispute remedy, revocability, monitoring and domination resistance must be specified before issuance. Remote holders cannot vote themselves new sovereign rights.
 
-## 4. Distal bypass: a bridge still requiring source recovery
+## 4. Distal bypass and the existing differential-bypass theorem
 
-The Leader explicitly connects capacity ownership with **distal bypass**, closure and compaction. **Unknown:** the authoritative Obsmetrologia definition, type signature and proof obligations of distal bypass were not recovered in this research pass; the unavailable L-Space corpus reader is not evidence that no such source exists. The following is a candidate *economic test model*, not a definition of the original mathematical term.
+**Disambiguation:** The Leader connects capacity ownership to **distal bypass**. The authoritative identity and definition of that exact term remain **unrecovered**. A *related but not demonstrated identical* operation exists in [Obsmetrologia's DifferentialBypass Lean module](https://github.com/lenticule-science/obsmetrologia/blob/main/Obsmetrologia/Cohomology/DifferentialBypass.lean) and its [blueprint](https://github.com/lenticule-science/obsmetrologia/blob/main/docs/blueprint/src/chapters/sheaf-cohomology/03-differential-bypass.tex). **Differential bypass must not be silently declared an alias for distal bypass**; an ordinary graph shortcut is not automatically a case of either.
 
-In a network of transformations and receivers, compare a route \(p\) from source \(a\) to receiver \(z\) with an alternative route \(p'\) avoiding an intervening bottleneck. Count **all** exergy losses, new infrastructure, maintenance, delayed damage, jurisdictional duties and ecological constraints under the same boundary. A useful bypass must improve a declared outcome (net deliverable service, robustness or accessible capacity) rather than merely shift cost to a less visible node. An institutional bypass of an intermediary is not automatically a thermodynamic bypass, and neither creates energy.
+### Recovered native formal carrier
 
-**Formal research question:** Can the actual Obsmetrologia distal-bypass operation be typed as a lawful morphism between capacity envelopes, with defined objects, identities, composition, invariants and closure? Recover the original source before deriving any equivalence or numerical reward formula.
+The source defines **MuNuAgreement M E** as equality of the zero-increment settling coalgebra target with the valuation \(E\): \(F_U(E)=E\), where \(F_U(E)=\mathrm{Cl}(E)\) at the knowledge-least increment. **MuNuDifferential M E** is its negation.
+
+The proposition-valued **DifferentialBypass M E d κ** has two fields: **algebra**, of type **ClAlgebraStructure M E**, witnessing closure-algebra structure at \(E\); and **ordinal**, asserting \(\kappa.\mathrm{isFinite}=d.\mathrm{finiteBase}\), relating the ordinal and regime data.
+
+The source declares theorems **differential_bypass_agreement** (certificate implies \(F_U(E)=E\)); **differential_bypass_regime** (ordinal-derived regime equals the classifier); **obstruction_charged_iff** (the regime table reports non-vanishing exactly for **transfiniteBounded** or **aperiodic**); and **differential_bypass_sound**, which bundles those facts. **mu_nu_differential_no_bypass** proves the contrapositive obstruction: a remaining nonzero local differential excludes such a certificate. The blueprint labels these statements as Lean-complete, but **no fresh kernel build was run for this study**. This is a local closure/settling result, **not** a proof of a general initial-algebra/final-coalgebra equivalence or conservation of physical energy.
+
+### A proposed formal bridge, not an identification
+
+The generative order in [Obsmetrologia kinetic-foundation Issue #24](https://github.com/lenticule-science/obsmetrologia/issues/24) is **Mark → Utterance → articulating/cell → predicating/claim → positing/valuation → settling/closure**. Our economic feasible-service envelope is a proposed *downstream projection*, not the mathematical primitive from which this order is derived.
+
+To connect capacity ownership to this carrier, Science would have to:
+
+1. Derive typed field observations, claims, ecological limits, legitimate authorization and receiving from the Mark-generated source; state the projection and information it loses.
+2. Construct a modal frame \(M\), valuation \(E\) and lawful closure for admitted capacity, then obtain **ClAlgebraStructure M E**, not just a simulator that clears transactions.
+3. Define regime data \(d\), closure ordinal \(\kappa\) and prove their alignment. A new transmission line or a faster smart contract supplies neither a closure witness nor ordinal alignment.
+4. Treat **mu_nu_differential_no_bypass** as a potential *negative test*: a nonzero local settling differential cannot be hidden by relabeling a short route as a bypass.
+5. Separately prove that the economic projection respects energy/mass balances, service dependency accounting, ecology, sovereignty, and non-double-issued contractual shares. None of these physical and legal facts follows directly from the Lean differential-bypass package. A numerical bridge from its cohomological \(H^1\) table to Landauer costs must likewise be supplied, calibrated and tested; matching nouns is insufficient.
+
+A candidate *economic analogy* still compares two source-to-receiver routes \(p\) and \(p'\) across the same full energetic and institutional boundary, including infrastructure, loss, restoration, consent and monitoring. This may test whether removing mediation increases admissible productive service capacity. It remains a **candidate empirical design**, not an instantiation of the formal bypass certificate.
+
+**Status:** Differential-bypass source and its stated local results have been recovered; the Leader's exact **distal bypass** meaning, synonymy between the terms, and the economics-to-Obsmetrologia interpretation remain open scientific questions.
 
 ## 5. Falsifiers and assays
 
