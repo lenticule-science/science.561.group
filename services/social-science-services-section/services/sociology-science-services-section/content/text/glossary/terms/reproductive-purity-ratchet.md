@@ -9,6 +9,8 @@ status: conjectured-mechanism
 
 **Reproductive purity ratchet** names an *unassayed historical selection feedback*: institutions unable to produce an imagined acceptable reproductive lineage keep tightening the eligibility rule, consuming the cohort's reproductive continuity before an end condition of **at least two acceptable reproducers** is ever met. Its distinctive prediction concerns **relative times to a moving goal and demographic failure**, not a historical claim that all whiteness converges biologically or that exactly two people remain.
 
+This ratchet is only one possible **mechanism**, not a synonym for the whole original conjecture. A non-ratchet mechanism could exhaust actual white-classified households through economic and political institutions *without* repeatedly tightening explicit reproductive criteria; both require evidence that reproductive sacrifice was accepted in pursuit of the purported ideal rather than merely co-occurring with it.
+
 Evidence that some white people were sterilized or excluded through eugenic criteria (Stubblefield 2007; Caron 2008) establishes an **internal exclusion mechanism** but does not establish self-reinforcing escalation, demographic collapse or deliberate pursuit of extinction.
 
 Test by tracing policy changes, justifications, eligible groups, actual births and survival, migration and pro-natalist countereffects. If the criteria broaden, stop escalating, or do not reduce reproductive continuity, the ratchet hypothesis is weakened or falsified. [Full research specification](../../documents/articles/notes/2026/10/17/2026-10-17-white-increase-and-reproductive-selection-contradiction.md); [white increase](white-increase.md).
