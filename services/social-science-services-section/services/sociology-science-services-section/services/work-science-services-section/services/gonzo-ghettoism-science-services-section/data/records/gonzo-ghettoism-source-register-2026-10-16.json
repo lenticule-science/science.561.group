@@ -4,9 +4,9 @@
   "status": "literature-screen-only",
   "as_of": "2026-10-16",
   "scientific_owner": "lenticule-science/science-services-section / social-science / sociology / work-science / gonzo-ghettoism",
-  "question": "How do drug markets and intoxicant-shaped situations interact with clowning, grotesque humor, provocation and improvisation in a specifically gonzo mode of American street hustling; and what do these interactions produce economically, socially and materially?",
+  "question": "What happens when Gonzo, understood as a historically constituted mode of involved, subjective, self-mythologizing, institution-confronting practice, is brought to hustle as work, especially in American ghetto economies shaped by drugs, informal markets and segregation? Under what circumstances does it create material advantage, or cause failure or harm?",
   "method": {
-    "selection": "Focused interpretive and economic research: primary clipping. song-production testimony and early music as a fictional artistic exemplar; Gonzo-journalism histories as a source for the modifier; original US studies of humor among active drug sellers; field research on specific American street economies; UK/Colombian clowning analogues explicitly outside the target population; skeptical profit-and-harm comparisons. Ordinary hustle scholarship remains control/background, not primary evidence for gonzo.",
+    "selection": "Interpret the established Gonzo historical practice from original Thompson/Steadman and historical/scholarly reception, then derive its typed analogy with Work/Hustle; anchor specific American ghetto hustle questions in historical sources and clipping.'s explicitly fictional artistry; use drug/humor mechanisms as subordinate field observations; finally investigate realistic economic advantage and cost. The study does not require a statistically segregated gonzo population before a coherent philosophical comparison can exist.",
     "searched_on": "2026-10-16",
     "inclusions": [
       "original label description of focal artwork",
@@ -26,7 +26,7 @@
       "unattributed testimonials claiming universal prosperity",
       "unverified biographical claims about performers or neighborhood residents"
     ],
-    "scope": "A research program and literature-grounded concept. No interviews conducted by this team, no measured field effect, no tested social category, no evidence that all American ghettos have drug economies. Artistic personas are not participant testimony."
+    "scope": "Historical/conceptual argument plus scoped comparative evidence; no measured Gonzo Ghettoism population, business profit uplift, field recruitment or causal result. Gonzo is a mode of practice with multiple historically documented expressions, not a drug/clowning checklist or identity assigned by the researcher."
   },
   "sources": [
     {
@@ -271,21 +271,85 @@
       "role": "direct-US research on the distinction between being a hustler, using drugs, and being labeled an addict; comic/status differentiation, NOT gonzo prevalence",
       "finding": "Interviews with 28 men convicted of violent street crimes examine narrative and interactional boundaries between hustler and 'crackhead' identities inside crack-cocaine street economies; demonstrates why working, selling, using and social categorization must be separated.",
       "limit": "Historically bounded, justice-system-selected male interview sample; self-described distinctions do not imply actual drug use, success, superior work performance or ethically acceptable mockery. Some narratives stigmatize and exploit dependent users."
+    },
+    {
+      "id": "S24",
+      "author": "Aram Goudsouzian",
+      "year": 2024,
+      "title": "Hunter S. Thompson: Sportswriter",
+      "url": "https://www.cambridge.org/core/journals/modern-american-history/article/hunter-s-thompson-sportswriter/3D2671CDDC17E9B3C53FD7FEED040153",
+      "doi": "10.1017/mah.2024.26",
+      "role": "historical scholarly source: Gonzo as participatory, first-person social critique revealing American institutional contradictions",
+      "finding": "Gonzo emerged in the sportswriting milieu, when Thompson exposed greed, racism, excess and social hypocrisy by becoming a participant in (and satirist of) the spectacle, using outlaw persona and blurred fact/fantasy; his writing was simultaneously paid work and criticism of the American Dream.",
+      "limit": "History of Gonzo journalism/sportswriting; transfer to economic hustle is an interpretive new construction, not a claim made by this historian."
+    },
+    {
+      "id": "S25",
+      "author": "Rory Feehan",
+      "year": 2018,
+      "title": "The genesis of the Hunter Figure: A study of the dialectic between the biographical and the aesthetic in the early writings of Hunter S. Thompson",
+      "url": "https://dspace.mic.ul.ie/items/f09e70aa-fe49-4795-a5f0-d228213adb49",
+      "role": "scholarly source: Gonzo as work/life/art inseparability and self-produced alter ego",
+      "finding": "Thesis studies the 'Hunter Figure' as the fusion of actual author, fictionalized character, public myth and stylistic production, foundational to Gonzo rather than a side-effect of drugs or pratfalls.",
+      "limit": "Interpretive literary thesis, not economic study or evidence about individuals in ghetto communities."
+    },
+    {
+      "id": "S26",
+      "author": "Jeffrey J. Horvath",
+      "year": 2015,
+      "title": "A Savage Journey to the Heart of Literary Freedom: Gonzo Journalism as a Vehicle for Social Criticism in the Literary Nonfiction of Hunter S. Thompson",
+      "url": "https://cupola.gettysburg.edu/student_scholarship/298/",
+      "role": "scholarly argument: Gonzo form used to expose structural failure of the American Dream",
+      "finding": "Analyzes how subjective, creative, brutal literary freedom in Gonzo enabled Thompson's attacks on class, authority, and exclusion from American freedoms and the promised American Dream.",
+      "limit": "Undergraduate literary-critical interpretation, not proof of an economic effect or participant philosophy."
+    },
+    {
+      "id": "S27",
+      "author": "The Museum of Modern Art (MoMA)",
+      "year": null,
+      "title": "Dada — MoMA Learning",
+      "url": "https://www.moma.org/momaorg/shared/flattened_pages/moma_learning/themes/dada/",
+      "role": "control analogy: historical movement transferred to new practice as method rather than behavioral checklist",
+      "finding": "Dada emerged as an aesthetic, social and philosophical revolt against rationalist and conventional institutional certainties, deploying play/chance/assemblage as expressive strategies but not being reducible to those techniques.",
+      "limit": "About Dada, not Gonzo; cited solely to explain the Leader's 'Dadaist hustle' analogy."
+    },
+    {
+      "id": "S28",
+      "author": "Hunter S. Thompson; illustrated by Ralph Steadman",
+      "year": 1970,
+      "title": "The Kentucky Derby Is Decadent and Depraved",
+      "url": "https://www.blather.net/theblather/2003/08/hunter_s_thompson_the_kentucky/",
+      "original_publication": "Scanlan's Monthly, vol. 1 no. 4 (June 1970); linked transcription is a third-party reproduction, not the publisher's original copy",
+      "role": "primary Gonzo work: reporter and illustrator enter event, change assignment's object, finally become what they satirized",
+      "finding": "Assigned an ordinary horse race, the participants instead produce a first-person grotesque portrait of the crowd and social order in which they become implicated. The economic/artifact-producing assignment itself becomes the site of a changed social relationship.",
+      "limit": "Artistic narrative and third-party transcription; do not treat every hyperbolic event as a literal court-style observation, and do not reproduce extended copyright text."
+    },
+    {
+      "id": "S29",
+      "author": "Ralph Steadman, interviewed in The Irish Times",
+      "year": 2017,
+      "title": "Ralph Steadman: With gonzo, you don't cover the story; you become the story",
+      "url": "https://www.irishtimes.com/culture/art-and-design/ralph-steadman-with-gonzo-you-don-t-cover-the-story-you-become-the-story-1.2944772",
+      "role": "first-hand collaborator testimony: participant/artifact entanglement and reflexive experience",
+      "finding": "Steadman recalls how the Kentucky Derby reporting involved seeking and shaping the spectacle rather than detached coverage, and how his partnership with Thompson contributed to Gonzo's emergent style.",
+      "limit": "Retrospective recollections, not scientific definitions or empirical work-economics observations."
     }
   ],
   "claims": [
     {
       "id": "GG-C01",
-      "status": "conceptual-definition-proposed",
-      "claim": "Gonzo hustle is hustle enacted in an outrageous, chemically charged and clowning mode: a worker participates so dramatically in the absurd economy that jokes, provocations, drug-market/consumption environments and the performance of roles can alter the work and the situation rather than merely decorate it. Gonzo Ghettoism names investigation of that mode in historically specific American ghetto economies.",
+      "status": "conceptual-proposal",
+      "claim": "Gonzo Ghettoism is a proposed American ghetto situated account of hustle practiced in the historical Gonzo orientation—immersed, subjective, self-implicating, institution-confronting and often outraged/absurd—without reducing Gonzo to clowning, drugs, improvisation, or risk.",
       "supports": [
-        "S10",
-        "S14",
-        "S16",
-        "S17",
-        "S20"
+        "S24",
+        "S25",
+        "S26",
+        "S28",
+        "S29",
+        "S10"
       ],
-      "evidence_note": "This is the Leader's concept formation, not a sociological prevalence claim. The historical Gonzo sources explain the modifier; the US drug-market humor study shows some component mechanisms. Neither proves the full combination exists in a population."
+      "evidence_note": "Gonzo is historically known through Thompson, Steadman and reception. Its economic application is the Leader's proposed interpretive bridge, not an established market population.",
+      "category": "gonzo-modal-transfer"
     },
     {
       "id": "GG-H01",
@@ -363,16 +427,16 @@
     },
     {
       "id": "GG-H06",
-      "status": "hypothesis",
-      "category": "gonzo-specific-discriminant-test",
-      "claim": "Drug-saturated conditions and clowning can operate as active, interacting inputs of a gonzo-hustle work episode, modifying how attention, threat, credibility, audience and opportunities are produced instead of merely correlating with general risk-taking.",
+      "status": "hypothesis-subordinate",
+      "category": "drug-humor-mechanisms-within-a-gonzo-interpretation",
+      "claim": "Drug-related markets or intoxication and clowning may be historically salient mechanisms inside some Gonzo hustle episodes and alter exchange, status, perception or harm; they are neither individually nor jointly the definition of Gonzo.",
       "supports": [
         "S14",
         "S15",
         "S16",
         "S10"
       ],
-      "falsifier": "Comparative or longitudinal evidence finds no change in work events, counterparties, status or economic outcome when comic participation and drug-related context vary, beyond ordinary hustle and existing performance effects.",
+      "falsifier": "Given comparable opportunities, changing such conditions yields no relevant observed differences in outcomes or participant meaning; the absence of these in another Gonzo-like case does not alone disprove the modality.",
       "caution": "Direct US observation of humor in drug markets supports some components but does not causally estimate a combined effect; the London study is explicitly a comparator."
     },
     {
@@ -391,16 +455,17 @@
     },
     {
       "id": "GG-C03",
-      "status": "conceptual-distinction",
-      "category": "modifier-transfer",
-      "claim": "The distinction between journalism and gonzo journalism is an altered *mode of participation and production*: active immersion, intoxication, comic excess, persona, grotesque satire and fact/fiction instability. When transferred to hustle, the modifier concerns how work is performed and experienced, not merely the worker's demographics, poverty or business efficiency.",
+      "status": "conceptual-analogy",
+      "category": "mode-of-practice",
+      "claim": "Gonzo modifies a base practice as a historically anchored change in the worker's relation to the scene and its production; Gonzo journalism remains journalism, Gonzo hustle remains resource-seeking work. The Dadaist-hustle analogy clarifies that such modifiers are not behavioral ingredient checklists.",
       "supports": [
-        "S16",
-        "S17",
-        "S10"
+        "S24",
+        "S25",
+        "S27",
+        "S28"
       ],
-      "falsifier": "Conceptual mapping is incoherent when its operative roles are explicitly stated, or primary Gonzo testimony contradicts the supposed ingredients.",
-      "caution": "This is a comparative interpretation across arts and economic work, not a definition asserted by Thompson or clipping."
+      "falsifier": "A comparison that does not identify what practice is preserved and how the Gonzo orientation changes its production is too loose to sustain the analogy.",
+      "caution": "Gonzo is not identical to Dada and need not inherit Dada's political/movement commitments."
     },
     {
       "id": "GG-H08",
@@ -443,17 +508,19 @@
     },
     {
       "id": "GG-H11",
-      "status": "open-empirical-hypothesis",
-      "category": "gonzo-success-and-cost",
-      "claim": "Some practitioners of the proposed gonzo work mode may outperform conventional firms or similarly constrained hustlers on specific dimensions (attention generation, rapid revenue, social coordination or opportunity access) while underperforming on net profits, durability, safety or harms.",
+      "status": "open-hypothesis",
+      "category": "economic-outcome",
+      "claim": "Some historically situated gonzo hustlers may gain exceptional access to markets, attention, customers, resources or livelihood outside conventional institutions because their self-implicating participation changes the transaction or its norms; the average and downside consequences are not established.",
       "supports": [
+        "S24",
+        "S25",
         "S14",
         "S19",
-        "S06",
-        "S20"
+        "S20",
+        "S06"
       ],
-      "falsifier": "Comparable complete-cohort measures show no performance edge on any preregistered relevant dimension or show only selection/visibility effects.",
-      "caution": "No known count or rate of such practitioners and no proven exceptional returns; artist-celebrity wealth is a selected outcome."
+      "falsifier": "Comparable broad samples find no distinctive contribution by the participatory Gonzo mode once market context, capital, opportunity, selection and risks are accounted for.",
+      "caution": "No observed population-level advantage, typical economic mobility, or license to glamorize economic coercion is established."
     },
     {
       "id": "GG-H12",
@@ -479,6 +546,45 @@
       ],
       "falsifier": "The original paper's recorded sample does not support the stated boundary work; the extension to a distinct gonzo causal effect remains untested.",
       "caution": "Do not validate participants' denigration of people with addictions; the economic and ethical consequences of humiliating jokes must be assessed separately."
+    },
+    {
+      "id": "GG-C04",
+      "status": "source-grounded-historical-interpretation",
+      "category": "gonzo-historical-object",
+      "claim": "Gonzo's historical emergence in Thompson and Steadman's Kentucky Derby work transformed the assignment from detached coverage of a race into subjective, self-implicating satire of its participants and institutions, with the makers themselves caught within the object.",
+      "supports": [
+        "S24",
+        "S25",
+        "S28",
+        "S29"
+      ],
+      "falsifier": "Original/collaborator accounts or authoritative historical study contradict the account of transformed assignment and involvement."
+    },
+    {
+      "id": "GG-C05",
+      "status": "theory-method-claim",
+      "category": "non-reductive-mode",
+      "claim": "A Gonzo modifier may be coherently transferred to another activity without reconstructing it as a statistically defined 'type' or counting drugs, jokes and antics; separate the philosophical/aesthetic claim from the empirical prevalence and economic return claims.",
+      "supports": [
+        "S24",
+        "S25",
+        "S27",
+        "S28"
+      ],
+      "falsifier": "Conceptual transfer fails to preserve any intelligible Work object/end or cannot articulate a meaningful distinction between practice and a merely descriptive label."
+    },
+    {
+      "id": "GG-H14",
+      "status": "open-economic-mechanism",
+      "category": "gonzo-enterprise-institutional-relationship",
+      "claim": "Within a specified market, a highly participatory, self-mythologizing Gonzo approach can change the worker's role in producing customer attention, trust, exchange or resistance to institutional authority compared with more detached methods.",
+      "supports": [
+        "S24",
+        "S25",
+        "S14",
+        "S20"
+      ],
+      "falsifier": "Prospectively or through credible case reconstruction the posited change in relations fails to affect activity or returns after accounting for the base hustle and external conditions."
     }
   ],
   "receiving": {
@@ -492,10 +598,10 @@
       "deployed income-generating service"
     ]
   },
-  "revision_note": "2026-10-16: Leader corrected prior conflation of Venkatesh's ordinary hustle scholarship with specifically gonzo hustle. Reclassified the earlier five hypotheses as general-hustle/background or artwork, added original artist account and entrepreneurship comparators, and made the gonzo distinguishing claim explicitly tentative and falsifiable.\n2026-10-16 follow-up: restored drugs and clowning from euphemistic theatrical/risk shorthand to central work-mode mechanisms, based on original user intent; added direct St. Louis empirical humor research, non-US street-clowning comparator, genre history and economic-hustle contextual scholarship. Distinguishes conceptual theory from empirical prevalence, causal and financial claims.\nAdditional direct US drug-hustler identity source Copes/Hochstetler/Williams 2008 distinguishes selling, using, self-presentation and derogatory clowning, including harms to others.",
+  "revision_note": "2026-10-16: Leader corrected prior conflation of Venkatesh's ordinary hustle scholarship with specifically gonzo hustle. Reclassified the earlier five hypotheses as general-hustle/background or artwork, added original artist account and entrepreneurship comparators, and made the gonzo distinguishing claim explicitly tentative and falsifiable.\n2026-10-16 follow-up: restored drugs and clowning from euphemistic theatrical/risk shorthand to central work-mode mechanisms, based on original user intent; added direct St. Louis empirical humor research, non-US street-clowning comparator, genre history and economic-hustle contextual scholarship. Distinguishes conceptual theory from empirical prevalence, causal and financial claims.\nAdditional direct US drug-hustler identity source Copes/Hochstetler/Williams 2008 distinguishes selling, using, self-presentation and derogatory clowning, including harms to others.\n2026-10-16 further Leader correction: the former account had incorrectly reduced Gonzo to drug use and clowning as variables. Like Dadaism in 'Dadaist hustle', Gonzo is a historically constituted artistic/critical practice that must be transported as a whole mode, not reconstituted from checkboxes. Drug culture and grotesque humor remain historically substantive but are not the definition or admission rule. Primary genre and scholarly sources now supersede the behavioral ingredient list; existing empirical humor research is retained as subordinate component evidence.",
   "measurement_design": {
-    "status": "protocol-proposed-not-executed",
-    "observational_unit": "situated work episode + participants, audience, transactions, comic intervention, drug-exposure context and recorded outcomes, not an ethnic or behavioral type assigned to people",
+    "status": "downstream mechanism assay subordinate to historical/philosophical concept; not a checklist for assigning 'gonzo' status",
+    "observational_unit": "historically situated economic Work episode considered first through actor/situation/relation-to-institution, then through subordinate study of substance conditions, comic interventions, audience and observable material effects; no identity category assigned from ingredients",
     "work_carrier": "existing attributable Work(agent, capability, situation, result); this study adds situation/intervention/outcome predicates instead of rewriting the base definition",
     "drug_channels": [
       "commodity sold/exchanged",
@@ -529,7 +635,22 @@
       "co-occurring clown and drug saturation",
       "formal business comparison where materially comparable"
     ],
-    "falsification": "Two independently coded cases with comparable economic and institutional context may fail to show a gonzo pattern or incremental outcomes; then shrink/revise the proposed theory, while retaining any supported source-specific mechanisms.",
+    "falsification": "Empirical hypotheses about results and prevalence can fail even if the historically interpreted Gonzo mode remains a meaningful comparison. If first-party historical literature contradicts the proposed Gonzo-to-Work interpretation, correct that conceptual claim. Do not define Gonzo via a count of drugs/clowning markers.",
     "publication_boundary": "No recruitment, incriminating data, substance testing or claims of clinical efficacy; obtain qualified community-led ethics procedures before primary field research."
+  },
+  "modifier_contract": {
+    "status": "theory-comparative-not-empirically-established-as-social-population",
+    "principle": "Treat 'Gonzo' as an inherited historical, critical-aesthetic *mode of making and acting*, not a freely selectable list of personality traits, a drug-plus-clowning formula, or a work outcome. Dadaist hustle is the parallel construction: Dada's program applied to hustle, not hustle plus randomly selected Dada techniques.",
+    "base_journalism": "An attributable journalistic practice investigating and communicating a public-world claim or experience.",
+    "gonzo_journalism": "Journalistic work enacted through immersion, first-person self-implication, subjective and often mythic narrator, grotesque satire, an active encounter with institutions, fact/fiction friction, and a changed relationship between the reporter and the scene. Drugs/excess and dark comedy are prominent historical expressions, not a standalone universal diagnostic test.",
+    "base_hustle": "Work directed at obtaining resources, sustaining livelihood, initiating or managing exchange and opportunity, often across institutional boundaries.",
+    "gonzo_hustle": "Hustle enacted through that Gonzo orientation: the hustler becomes part of the material social/economic story, co-produces the encounter and a self-implicating account/persona, stretches or exposes the contradictions of market conventions from the inside, sometimes securing value or new access, sometimes being undone by the attempt. Participants' own interpretations must be respected; Gonzo may be a researcher's comparison and need not be self-adopted.",
+    "ghettoism": "Historically and institutionally situated application in US ghetto economies. Economic segregation, exclusion, drug economies and cultural forms are empirical conditions to investigate, not racial traits or universal requirements.",
+    "scope_rules": [
+      "Genre and life/practice are not reducible to intoxication or clowning, though both have distinctive and important histories.",
+      "Self-implication is not a rule that all examples be literally first-person narratives; clipping. stages the social world through fictional multiple perspectives.",
+      "Philosophical intelligibility is established by clear cross-domain interpretation; whether individuals practice it or outperform alternatives remains an empirical matter.",
+      "Preserve difference between doing work, representation of work, commercial success, harm and moral endorsement."
+    ]
   }
 }
