@@ -11,8 +11,13 @@ appropriate operations or enterprise section.
 ## Cross-field business-economics question
 
 [Work Science's Gonzo Ghettoism research](../sociology-science-services-section/services/work-science-services-section/services/gonzo-ghettoism-science-services-section/README.md)
-proposes falsifiable economic tests of liquidity, multi-channel work, resource
-bricolage and capability transfer under restricted capital and institutions.
+first asks whether a distinct *gonzo* mode of work can be identified
+beyond ordinary hustle (Venkatesh and Thieme), urgent/unorthodox entrepreneurial
+hustle (Fisher et al.) and transgressive hustle (Ilan). General mechanisms
+such as multiplex earnings, bricolage and informal credit are **controls**, not
+evidence for a gonzo subtype. If and only if discriminant tests establish a
+meaningful differentia should Economics test additional effects on liquidity,
+venture opportunities, worker harm, earnings or capability transfer.
 The Work Science section owns the sociological theory and its original source
 register. This Economics and Business field is a **potential receiving consumer**
 of appropriately evidenced claims about net earnings, business survival,
