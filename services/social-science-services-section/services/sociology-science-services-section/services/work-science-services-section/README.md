@@ -121,12 +121,15 @@ American platform-work research remains in
 [Gig Work Science](services/gig-work-science-services-section/README.md).
 
 [Gonzo Ghettoism Science](services/gonzo-ghettoism-science-services-section/README.md)
-studies hustle **performed through gonzo drug-shaped economic scenes, clowning,
-black comedy, absurdity and self-implicating risk** in particular American
-ghetto histories. It takes its modifier from Gonzo journalism and its original
-artistic anchor from clipping.'s "Work Work." St. Louis field research on humor
-among drug sellers and explicitly non-US research on "clowning on" give initial
-component evidence. Venkatesh and Thieme remain the **ordinary-hustle
-comparison**, not proof of this specific mode. The scientific product includes
-actual work episodes, their social/economic mechanisms, benefits and injury,
-without mistaking artistic fiction for US field observation.
+develops the Leader's proposed philosophy of **hustle in the historically
+constituted Gonzo mode**, situated in particular American ghetto economies.
+Gonzo changes the worker's relation to the world being made and contested;
+it is not reducible to drugs, clowning, transgression, or a count of
+personal habits, though those can be important local mechanisms.
+The [Dadaist-hustle analogy](services/gonzo-ghettoism-science-services-section/content/text/glossary/terms/gonzo-ghettoism.md)
+clarifies this cross-domain interpretation. Venkatesh's street-hustle literature
+supplies background, clipping.'s early "Work Work" a fictional artistic
+anchor, and Gonzo's own journalism/art history supplies the modifier.
+The live research question is what this mode produces economically beyond
+the professional/institutional routes normally available, including
+extraordinary successes and damaging failures.
