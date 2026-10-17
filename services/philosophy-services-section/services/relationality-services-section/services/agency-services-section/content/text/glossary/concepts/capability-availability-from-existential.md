@@ -2,104 +2,115 @@
 type: theorem
 status: sketch
 depends-on: [capability-fiber-bundle, project-fiber-to-capability, quantifier-adjoints-on-work-fibers, normative-operational-layering, capability-matching]
-title: Capability availability as the existential adjoint over agents
-description: "The capability-availability fiber $\\mathrm{avail}^C : C \\to \\mathbf{FOUR}$ — recording, for each capability $c$, whether some agent in the working community provides $c$ — is the value of the knowledge-order existential adjoint…"
+title: Capability evidence aggregation and coindexed dispatch witnesses
+description: "Distinguish the knowledge-order join of per-agent FOUR evidence from the truth-order existential and the source-witnessed coindexed agent who is capable, authorized, current, and independently receivable."
 ---
 
-# Capability availability as the existential adjoint over agents
+# Capability evidence aggregation and coindexed dispatch witnesses
 
-The *capability-availability* fiber $\mathrm{avail}^C : C \to \mathbf{FOUR}$ — recording, for each capability $c$, whether *some agent* in the working community provides $c$ — is the value of the [knowledge-order existential adjoint](../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/predicated-work-services-section/content/text/glossary/terms/quantifier-adjoints-on-work-fibers.md) $\exists_f^k$ on the `provides-capability` fiber, where $f$ is the subject-projection morphism collapsing the agent argument.
+This corrected **theorem sketch** retains the original knowledge-order adjunction and its useful community-wide information, but refuses to identify the result with a witnessed authorization or an existential claim about an executable actor. We distinguish (1) a projection of distributed **evidence**, (2) a truth-valued **existential over agents**, and (3) an **admitted joint witness** of capability, current institutional authority and bounded effect for the same actor. The third, not the first or second alone, may support dispatch.
 
-Equivalently, $\mathrm{avail}^C = \pi^\exists \sigma$, where $\pi^\exists$ is the [project-fiber-to-capability](../terms/project-fiber-to-capability.md) morphism.
+The original constructions remain [quantifier adjoints on work fibers](../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/predicated-work-services-section/content/text/glossary/terms/quantifier-adjoints-on-work-fibers.md), [project fiber to capability](../terms/project-fiber-to-capability.md), [dispatch readiness](dispatch-readiness.md), and the actual Organizing work/authority consumers. This is a correction of their interpretation, not a duplicate Work or proof engine.
 
-## Sketch (capability layer)
+## Types and a finite counterexample
 
-By definition of $\pi^\exists$, $$\mathrm{avail}^C(c) \;=\; \pi^\exists \sigma(c) \;=\; \bigvee_{A \in E_{\mathrm{op}}}^{(k)} \sigma_A(c).$$
+For Belnap's four information states, write \(\mathbf{FOUR}=\{\bot=(0,0),\mathbf t=(1,0),\mathbf f=(0,1),\top=(1,1)\}\), with coordinates recording positive and negative evidence. The knowledge-order join is componentwise maximum:
 
-The right-hand side is the knowledge-order join of the per-agent provision values at $c$.
-By the four-state reading of $\mathbf{FOUR}$ in $\leq_k$:
+\[
+(p,n)\vee_k(p',n')=(\max(p,p'),\max(n,n')).
+\]
 
-| Per-agent values $\{\sigma_A(c)\}_A$ | $\mathrm{avail}^C(c)$ |
-|---|---|
-| All $\bot$ | $\bot$ |
-| At least one $\mathbf{t}$, no $\mathbf{f}$ | $\mathbf{t}$ |
-| At least one $\mathbf{f}$, no $\mathbf{t}$ | $\mathbf{f}$ |
-| Both $\mathbf{t}$ and $\mathbf{f}$ present (across agents or for one agent) | $\top$ |
+Let \(\sigma_A^C(c)\) be the capability evidence about **actor A** for capability \(c\), within a specified observation frontier. The existing knowledge-order projection is
 
-The knowledge-order join is exactly "the most-informative position consistent with all per-agent positions."
-That this coincides with the operational reading of capability-availability is the substrate-algebraic content of the theorem.
+\[
+K^C(c)=\exists_{\pi}^{k}\sigma^C(c)=\bigvee\nolimits_{A\in E_{\mathrm{op}}}^{k}\sigma_A^C(c).
+\]
 
-By the universal property of the [hyperdoctrine](../../documents/articles/research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/content/individual/content/agent/actuating/content/actuator/embodying/content/body/integrating/content/drone/swarming/content/swarm/content/social/_archive/humanities/theories/math/theories/categories/theories/predication-categories/objects/predication-hyperdoctrine.md) adjunction $\exists_f^k \dashv f^*$, $\mathrm{avail}^C$ is the *least* capability-availability fiber whose pullback along $f$ recovers the per-agent provision fiber up to $\leq_k$.
-This is what makes $\pi^\exists$ the *canonical* projection: any other notion of capability-availability would either lose information ($\not\geq_k$ the per-agent join) or add unjustified content ($\not\leq_k$ the per-agent join). $\square$
+This is a valid left-adjoint projection **when the declared indexed fibers and reindexing satisfy the asserted hyperdoctrine conditions**. It aggregates the positive and negative evidence over agent indices. It is **not** automatically the truth of “some authorized agent can act,” nor the certificate of a particular witness.
 
-## Authority-availability theorem (normative-layer analog)
+| Readings for two actors | \(K^C\) | Correct conclusion |
+| --- | --- | --- |
+| \(\bot,\bot\) | \(\bot\) | No positive or negative observation at this frontier |
+| \(\mathbf t,\mathbf f\) | \(\top\) | Positive evidence about one agent and negative evidence about another; this is **not** a contradiction about one actor or a proof that no actor exists |
+| \(\mathbf f,\bot\) | \(\mathbf f\) | One explicit denial, one unknown; this is **not** universal community absence |
+| \(\top,\bot\) | \(\top\) | Contradicted evidence for one agent; the other is unknown, with no uncontradicted admissible witness |
 
-The identical argument applies to the normative predicate fiber.
-The *authority-availability* fiber $\mathrm{avail}^N : \mathcal{X} \to \mathbf{FOUR}$ — recording, for each action type $X$, whether *some agent* holds the power to perform $X$ — is the existential adjoint over the `holds-power-over` fiber:
+Thus the former statement “knowledge-join \(\mathbf f\) means no agent has the capability” is false without complete negative evidence about the quantified domain. A knowledge-join \(\top\) can mean **heterogeneous reports from different people** as well as a within-actor contradiction. The actor index may not be discarded before testing which case holds.
 
-$$\mathrm{avail}^N(X) \;=\; \bigvee_{A \in E_{\mathrm{op}}}^{(k)} \sigma_A^N(X)$$
+The truth-order existential over \(\mathbf{FOUR}\), when that interpretation is wanted, is a *different* map:
 
-By the same universal-property argument, $\mathrm{avail}^N$ is the canonical community-level authority-availability fiber.
-Its four-state reading:
+\[
+T^C(c)=\bigvee\nolimits_{A\in E_{\mathrm{op}}}^{t}\sigma_A^C(c),\qquad
+(p,n)\vee_t(p',n')=(\max(p,p'),\min(n,n')).
+\]
 
-| Per-agent authority values $\{\sigma_A^N(X)\}_A$ | $\mathrm{avail}^N(X)$ |
-|---|---|
-| All $\bot$ | $\bot$ — no information on who holds authority over $X$ |
-| At least one $\mathbf{t}$, no $\mathbf{f}$ | $\mathbf{t}$ — some agent is authorized for $X$ |
-| At least one $\mathbf{f}$, no $\mathbf{t}$ | $\mathbf{f}$ — no agent is authorized for $X$ |
-| Both $\mathbf{t}$ and $\mathbf{f}$ present | $\top$ — contradicted; adjudication needed |
+For \((\top,\bot)\), it yields \(\mathbf t\), although **neither actor has exactly \(\mathbf t\)**. That may be a legitimate truth-order existential reading, but it is not a safe dispatch certificate. A Boolean existential over actor-indexed **exact readiness** is yet a third predicate. Switching from \(\vee_k\) to \(\vee_t\) does not by itself repair action admission.
 
-A $\mathbf{f}$-valued authority-availability at $X$ means the community has positively recorded that no agent holds power over $X$ — an authority gap, distinguishable from $\bot$ (merely unknown).
-This is the normative-layer analog of a confirmed capability gap.
+## Authority is separately indexed
 
-## Community-dispatchability theorem
+For an action type \(X\), write the knowledge summary
 
-Combining the two layers per [capability-matching](../../../../../../../../../social-science-services-section/services/social-theory-science-services-section/content/text/glossary/concepts/capability-matching.md) and [dispatch-readiness](dispatch-readiness.md), the *community-dispatchability* of a task $T$ is:
+\[
+K^N(X)=\bigvee\nolimits_{A\in E_{\mathrm{op}}}^{k}\sigma_A^N(X).
+\]
 
-$$\mathrm{comm\text{-}disp}(T) \;=\; \Bigl(\bigwedge_{c \in C}^{(t)} \mathrm{avail}^C(c) \Rightarrow \rho_T(c)\Bigr)^* \;\wedge_t\; \Bigl(\bigwedge_{X \in \mathcal{X}}^{(t)} \mathrm{avail}^N(X) \Rightarrow \rho_T^N(X)\Bigr)^*$$
+This summarizes testimony about authority. It does not issue a deontic power, install an Office, establish an Incumbency, grant a delegation, or prove a current institutionally valid effect. In particular, a recorded \(\mathbf f\) at one actor is not a community-wide absence, and heterogeneity \((\mathbf t,\mathbf f)\) across two actors is not a conflict that can be “adjudicated” by erasing one of their lawful differences.
 
-— whether the community has *some agent* who is both capable and authorized for every dimension $T$ requires.
-More precisely, community-dispatchability is positive when:
+An actual authority witness must be tied to the particular actor and its existing recognized/inducted Office, jurisdiction, effective time, bounded power, and the act's applicable rules. An agent's capability witness and an Office's power are distinct types; neither may be inferred from a job title, model session, message, strategy label, or the other witness.
 
-$$\exists A.\; \delta^C(A, T) = \mathbf{t} \;\wedge\; \delta^N(A, T) = \mathbf{t}$$
+## Coindexed dispatch theorem (admission condition)
 
-The $\pi^\exists$ projections provide the *necessary condition* check (if $\mathrm{avail}^C(c) = \mathbf{f}$ for any required $c$, then no agent can have $\delta^C = \mathbf{t}$ for $c$, and the task is community-undispatchable on capability grounds).
-But they do not directly confirm the *existential combined condition* — it is possible that all required capabilities and all required authorities are available, but no single agent has both simultaneously.
+Let \(\operatorname{CapReady}(A,T)\) and \(\operatorname{AuthorityReady}(A,T)\) denote **uncontradicted, source-qualified, current** per-actor decisions for one admitted original Work \(T\). Their FOUR readings may be combined at the **same actor** by the existing truth meet:
 
-The substrate-algebraic content of the combined theorem: community-dispatchability requires not just two separate existential witnesses but a *joint* existential witness — a single agent with both capability and authority.
-The independence of the two fibers does not guarantee the existence of such a joint witness.
+\[
+\delta(A,T)=\delta^C(A,T)\wedge_t\delta^N(A,T).
+\]
 
-## Four failure modes for community non-dispatchability
+That local product is not a projection over the whole community. A necessary candidate condition for dispatch is the indexed existential
 
-| $\mathrm{avail}^C$ status | $\mathrm{avail}^N$ status | Community-dispatchability failure mode |
-|---|---|---|
-| $\mathbf{f}$ on some $c$ | any | *Capability void* — no agent has skill; must train or recruit |
-| any | $\mathbf{f}$ on some $X$ | *Authority void* — no agent has authorization; must install or delegate |
-| $\mathbf{t}$ on all $c$; $\mathbf{t}$ on all $X$ | both | *Joint-agent absence* — capability and authority exist separately but not in one agent |
-| $\bot$ or $\top$ on any dimension | any | *Evidence gap or conflict* — settle evidence before assessing dispatchability |
+\[
+\exists A\in E_{\mathrm{op}}\;[
+  \delta^C(A,T)=\mathbf t
+  \land\delta^N(A,T)=\mathbf t
+  \land\operatorname{CurrentScopeAndGrant}(A,T)
+].
+\]
 
-The joint-agent-absence case is the most subtle: it is invisible to either projection alone.
-It requires examining the intersection of capability-providing agents and authority-holding agents to determine if any agent is in both sets.
+Execution still requires the native Work Arena's real admission and effect/receiver contract. The existential **locates a candidate**, but does not perform the action or create its Obligation. The original signed/typed Work identity, legal boundaries, causal dependencies, permitted effects, and distinct receiving actor remain in force.
 
-## CALM for community-dispatchability queries
+For example, actor A may have \(\delta^C(A,T)=\mathbf t\) but \(\delta^N(A,T)=\bot\), while actor B has \(\delta^C(B,T)=\bot\) and \(\delta^N(B,T)=\mathbf t\). Both knowledge projections are \(\mathbf t\). **No actor is dispatch-ready.** Another example has a single actor with \(\delta^C=\top\), \(\delta^N=\mathbf t\): positive capability testimony exists, but contradictory evidence cannot be silently promoted to exactly-ready.
 
-The existential projections $\mathrm{avail}^C$ and $\mathrm{avail}^N$ are $\leq_k$-monotone: adding capability or authority evidence can only increase (in $\leq_k$) the availability values.
-By the [predication-settling CALM corollary](../../../../../../../../../information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/formalization/infomaterial/lib/infomaterial/docs/verso/mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/content/sheaf/content/settling-cohomology/references/settling-calm-corollary.md):
+This is the **coindexed-witness** requirement: the same authorized bearer must satisfy every required capability and authority condition, rather than collecting a different bearer's witness for each coordinate.
 
-- Confirming "is capability $c$ available in the community?" is coordination-free: any replica with a positive capability cell for any agent can confirm availability.
-- Confirming "is capability $c$ unavailable?" requires coordination — universal negative across all agents.
+## Refusal and information value
 
-The joint-agent-absence failure mode — capability and authority exist separately but no single agent has both — is the one case where both projections are $\mathbf{t}$ yet community-dispatchability still fails.
-Detecting joint-agent absence requires the *intersection* query: "is there an agent $A$ with both $\delta^C(A,T) = \mathbf{t}$ and $\delta^N(A,T) = \mathbf{t}$?"
-This is a positive existential over a *joint* condition — the conjunction is not $\leq_k$-monotone over the set of agents (it requires checking which agents have both, not just some agent having capability and some agent having authority).
-Joint-agent-absence detection requires coordination across the capability and authority fibers simultaneously.
+| Observed condition | Action reading |
+| --- | --- |
+| Some actor has exact \(\mathbf t\) for both layers and all current scoped admission predicates | Candidate for native admission; never an automatic action |
+| One agent is capable, a different agent is authorized, but no jointly valid bearer is established | No admitted bearer; do not compose their powers |
+| An incumbent or ability is \(\bot\) on a required coordinate | Evidence gap; preserve the Work as unresolved |
+| A required coordinate is \(\top\) | Contradiction; preserve both witnesses, refer to the accountable adjudication path |
+| Every actor in a **source-qualified complete current population** has an explicit failing required coordinate | Qualified absence of a ready bearer at that frontier; the population/negative evidence is essential |
+| Incomplete roster, stale seat, unreceived grant, or unavailable producer | Unknown, not negative proof and not permission |
 
-This is the CALM-theoretic reason that "staffing" (finding someone who has *all* the required capabilities and authorities) requires more coordination than "skill inventory" (confirming each capability or authority exists somewhere): the existential projections are individually coordination-free, but their intersection is not.
+This replaces the earlier four-failure-mode table's incorrect deductions from \(K^C=\mathbf f\) or \(K^N=\mathbf f\). Each denied coordinate must retain its original actor and time, and only complete population evidence can justify a universal negative.
 
-## Operational content
+## CALM, concurrency and source-index preservation
 
-The theorem grounds the operational practice of asking "what capabilities are held by someone?" and "is anyone authorized for this?" without naming agents.
-The existential-adjoint projections give the canonical bilattice-valued answers.
-The community-dispatchability theorem grounds the compound question "can someone in this community actually do this task?" — with the four failure modes making the different kinds of non-dispatchability substrate-visible.
+The knowledge summaries \(K^C\) and \(K^N\) are monotone **as evidence maps** in \(\leq_k\): further information only increases the aggregate. That fact must not be conflated with monotonicity of “this exact actor remains uncontradicted and authorized.” New negative testimony changes \(\mathbf t\) to \(\top\), invalidating an exact-\(\mathbf t\) admission decision. Likewise, **no actor is ready** is a universal negative and needs complete, current domain knowledge.
 
-The dual question — "what capabilities are held by *every* agent?" / "is *every* agent authorized for this?" — is the universal-adjoint projection $\pi^\forall \sigma$, identical in shape but with $\bigwedge^{(k)}$ in place of $\bigvee^{(k)}$.
+A positive existence-of-*support* observation can be coordination-free on an append-only source, provided the actor identity is retained. An authoritative **ready-for-effect** decision additionally depends on current scope, revocations, competing Work obligations, resource bounds, and possibly causal nonconfluence. Consequently, the assertion that any knowledge-order monotone formula about community capability may decide live staffing without coordination is stronger than what this projection proves.
+
+In a concurrent game, separate actors' effects can be independent, causally ordered, or conflicting. A witness linearization does not make incomparable events causally successive, and a cross-actor knowledge join does not grant shared institutional powers. The compatible global action must follow actual Work causality and independent receiving; it cannot be inferred from a totalized presentation or from combining local permissions.
+
+## Three reproducible checks (sketch, not Lean certification)
+
+1. **Motivating failure.** Compute \((\mathbf t,\mathbf f)\vee_k=\top\). The result is heterogeneous evidence, not a denial of the capable actor's individual reading.
+2. **Different legitimate case.** Compute \((\mathbf f,\bot)\vee_k=\mathbf f\), while the second actor remains unknown; no universal negative is licensed.
+3. **Refusal case.** Compute \(\top\vee_t\bot=\mathbf t\) but find no actor with exactly \(\mathbf t\). A truth-join existential is refused as an execution witness.
+
+These follow directly from the finite FOUR tables. They are not evidence of a completed Obsmetrologia Lean proof, an actual office induction, a user-approved effect, or an independently received Work. A downstream Engineering consumer must preserve source-indexed readings and test the same-bearer condition, not reuse marginal sums as authorization.
+
+## Operational consequence
+
+Use the original Organizing and Work Arena readers to ask **which exact current actor has the required capabilities and legitimate authority for the same Work**. The knowledge-order adjoint remains useful for evidence aggregation and discovering possible demand. The truth-order existential remains mathematically distinct. Only the source-qualified coindexed bearer can become a candidate for native action admission. Source qualification, native validation, installed runtime and beneficiary receiving must still be independently established.
