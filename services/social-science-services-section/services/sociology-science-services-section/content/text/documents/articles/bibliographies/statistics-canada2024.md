@@ -23,3 +23,13 @@ Primary national official statistical release read: population grew 1,271,872 in
 Changes in population methodology, resident population treatment, revisions, and migrant origin/identity need to be traced. Cannot call 97.6% immigration into Canada a white-settler immigration rate.
 
 **Used by:** [Client publication commission dossier](../notes/2026/10/17/2026-10-17-client-publication-commission.md), comparative settler-society lane; not directly pooled with nineteenth-century slave-birth denominators.
+
+## Commission-specific source audit (2026-10-17)
+
+**Research role:** Migration contribution with exact year and denominator.
+
+**Evidence available at its source:** The official March 27, 2024 *Daily* release attributes 97.6% of **Canada's total population growth in calendar 2023** to international migration of permanent and non-permanent residents. It is a decomposition of national growth, not the number or racial ancestry of new Canadian births.
+
+**Interpretive/measurement limits:** A percentage of total growth is not a percentage of white settlers' births or migration. Immigration can supply prospective parents who later contribute to natural increase, while Indigenous sovereignty and internal migration are not measured by that fraction.
+
+Evidence can be followed through the [23-claim crosswalk](bibliography-and-evidence-crosswalk-2026-10-17.md); the annotation is neither an assertion that every page of the source was read nor an independently replicated dataset.

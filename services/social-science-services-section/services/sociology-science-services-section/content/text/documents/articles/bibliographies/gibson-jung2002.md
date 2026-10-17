@@ -18,3 +18,13 @@ status: evidence-checked
 NC 1950 white population 2,983,121, total population 4,061,929; NC 1960 white population 3,399,285, total population 4,556,155. White classification headcount grew 416,164 or 13.95%, not equivalent to natural increase or eugenic policy treatment effect. Original Table 48 flags changes in race/census conventions.
 
 Used in [the white-increase research note](../notes/2026/10/17/2026-10-17-white-increase-and-reproductive-selection-contradiction.md), together with the machine-readable [evidence record](../../../../../data/records/white-increase-eugenic-selection-measurements-2026-10-17.json). Original racial taxonomy is historical evidence, not biological fact. Administrative operations are not a count of births averted.
+
+## Commission-specific source audit (2026-10-17)
+
+**Research role:** Historically constructed census population.
+
+**Evidence available at its source:** The Census Bureau's Working Paper 56 states that historic census racial categories reflected social usage, not a biological/genetic definition. It documents the 1790–1850 White/Black free/enslaved scheme, the exclusion of 'Indians not taxed', later classifications and shifting geographic coverage. For North Carolina Table 48 it reports white-category populations of 2,983,121 in 1950 and 3,399,285 in 1960.
+
+**Interpretive/measurement limits:** This working paper declares itself less formally reviewed than final Census publications. Census headcount growth is not a fertility or natural-increase calculation, as it conflates surviving births, migration and classification. The absence of Indigenous people from a state enumeration is a limitation and political fact, not an absence of Indigenous births.
+
+Evidence can be followed through the [23-claim crosswalk](bibliography-and-evidence-crosswalk-2026-10-17.md); the annotation is neither an assertion that every page of the source was read nor an independently replicated dataset.

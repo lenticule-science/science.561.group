@@ -21,3 +21,13 @@ Shows historically variable differences between race and color categories and ad
 ## Used in Science
 
 [White increase and the self-consuming reproductive ideal](../notes/2026/10/17/2026-10-17-white-increase-and-reproductive-selection-contradiction.md). This source does not by itself prove that conjecture.
+
+## Commission-specific source audit (2026-10-17)
+
+**Research role:** Legal color category versus shifting racial relation.
+
+**Evidence available at its source:** Guglielmo's *White on Arrival* traces Italian immigrants' status and the difference between formal 'white' color designation and complex social racism, privileges and exclusion in Chicago. It makes assimilation and expanded or shifting membership empirically plausible alternatives to a monotonically shrinking whiteness boundary.
+
+**Interpretive/measurement limits:** Publisher/book description does not provide a time series of Italian fertility. A change in the definition of white is an administrative/social reclassification, not a birth or inheritable mutation; do not substitute modern 'white' classifications for those in the historical actors' records.
+
+Evidence can be followed through the [23-claim crosswalk](bibliography-and-evidence-crosswalk-2026-10-17.md); the annotation is neither an assertion that every page of the source was read nor an independently replicated dataset.
