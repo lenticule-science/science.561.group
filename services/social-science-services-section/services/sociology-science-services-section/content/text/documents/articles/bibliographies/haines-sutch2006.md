@@ -23,3 +23,13 @@ Authoritative historical reconstruction of annual U.S. births (in thousands) fro
 Historical estimates are not national individual birth registrations, and nation-specific population boundaries and historical classification exclusions constrain the denominator. Full underlying method documentation and uncertainty model need an independent review.
 
 **Reused by:** [The Future White](../notes/2026/10/17/2026-10-17-manuscript-selective-futurity-and-settler-continuity.md) and [Birth into Captivity](../notes/2026/10/17/2026-10-17-manuscript-captive-births-and-settler-reproduction.md), each with claim-specific relevance and evidence grades. This annotation does not turn a source's historical propositions into biological facts.
+
+## Commission-specific source audit (2026-10-17)
+
+**Why this source is essential:** Denominator genealogy.
+
+**Recoverable evidence and locators:** Table Aa9–Aa14's annual estimated births are in **thousands** and begin with 1800; summed 1800–1849 totals 30.038 million and 1800–1859 totals 41.732 million. The published 1790–99 birth entries are absent, which is precisely why the paper's 2.486 million figure for that decade is labeled an imputation using a hypothesized crude birth rate and average population. Do not silently supply 1790s births from the population's change.
+
+**Inferential boundary / competing evidence:** Historical national coverage shifts as territories are annexed; classifications and census practices exclude many Indigenous nations. The denominator is *not all births on land now called the USA*. It includes both free and enslaved residents as reconstructed; otherwise dividing enslaved births by it would not give a subset proportion.
+
+The commissioning papers cite the [23-claim source crosswalk](bibliography-and-evidence-crosswalk-2026-10-17.md); this audit records a source's contribution without upgrading a limited read to full-text verification.

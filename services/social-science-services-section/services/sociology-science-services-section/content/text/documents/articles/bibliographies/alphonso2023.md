@@ -21,3 +21,13 @@ Analyzes antebellum law treating enslaved Black women's future increase as prope
 ## Used in Science
 
 [White increase and the self-consuming reproductive ideal](../notes/2026/10/17/2026-10-17-white-increase-and-reproductive-selection-contradiction.md). This source does not by itself prove that conjecture.
+
+## Commission-specific source audit (2026-10-17)
+
+**Why this source is essential:** Prospective issue in property jurisprudence.
+
+**Recoverable evidence and locators:** The 2023 APSA preprint argues antebellum courts increasingly treated enslaved women's **future increase** as a valuable claim differentiated from the woman's already owned labor. That is a direct instance of property claims aimed at unborn potential descendants, which can reproduce slaveholder wealth without reproducing the captive woman's juridical autonomy.
+
+**Inferential boundary / competing evidence:** It is a preprint (not automatically peer-reviewed). The legal cases and their exact holdings, dissents and jurisdictions have not yet been independently verified in this register. Ownership of *possible issue* does not demonstrate the deliberate coercion of all conceptions.
+
+The commissioning papers cite the [23-claim source crosswalk](bibliography-and-evidence-crosswalk-2026-10-17.md); this audit records a source's contribution without upgrading a limited read to full-text verification.

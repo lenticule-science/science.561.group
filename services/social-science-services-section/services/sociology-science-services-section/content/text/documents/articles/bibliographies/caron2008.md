@@ -21,3 +21,13 @@ This chapter documents simultaneous encouragement of reproduction among fit whit
 ## Used in Science
 
 [White increase and the self-consuming reproductive ideal](../notes/2026/10/17/2026-10-17-white-increase-and-reproductive-selection-contradiction.md). This source does not by itself prove that conjecture.
+
+## Commission-specific source audit (2026-10-17)
+
+**Why this source is essential:** Race suicide as conflicting policy goal.
+
+**Recoverable evidence and locators:** The publisher chapter record documents the historical alliance and tension among **race suicide**, pro-natalism for selected white Protestant elites and contraception/negative-eugenic measures against those held to be unfit. Simultaneous calls for more births and fewer births are not an error in our arithmetic; they are an explicit policy conflict worth investigating historically.
+
+**Inferential boundary / competing evidence:** Whether the suppression side actually caused net demographic decline requires sterilization records, the size of the population targeted, age-specific counterfactual births, and positive-natalist compensations. Do not infer that every race-suicide speaker sought zero white births.
+
+The commissioning papers cite the [23-claim source crosswalk](bibliography-and-evidence-crosswalk-2026-10-17.md); this audit records a source's contribution without upgrading a limited read to full-text verification.

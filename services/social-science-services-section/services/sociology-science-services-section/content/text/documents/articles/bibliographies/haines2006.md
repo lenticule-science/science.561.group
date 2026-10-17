@@ -23,3 +23,13 @@ status: publication-grade-bibliography-under-source-review
 Growth decomposition is not a white-subpopulation or local settler cohort estimate; foreign-born parents can have locally born descendants. The missing 1790s crude birth rate is an assumed sensitivity parameter in the companion quantitative note.
 
 **Reused by:** [The Future White](../notes/2026/10/17/2026-10-17-manuscript-selective-futurity-and-settler-continuity.md) and [Birth into Captivity](../notes/2026/10/17/2026-10-17-manuscript-captive-births-and-settler-reproduction.md), each with claim-specific relevance and evidence grades. This annotation does not turn a source's historical propositions into biological facts.
+
+## Commission-specific source audit (2026-10-17)
+
+**Why this source is essential:** Growth components.
+
+**Recoverable evidence and locators:** The source's Table Aa15–Aa21 separates natural increase (births − deaths) from **net migration** in successive decades. Its 1790s mean midperiod population is 4.520 million and natural-increase rate is 26.49 per thousand; this number is *not the crude birth rate*. Its migration fractions of decennial net growth grow to 27.0% in 1840–50 and 32.3% in 1850–60, yet remain a minority of national growth.
+
+**Inferential boundary / competing evidence:** Natural increase can contain locally born descendants of recent immigrants and is a *net* vital rate rather than a claim that historic white settler lines replaced themselves in every county. A national all-residents migration share cannot measure white-specific migration.
+
+The commissioning papers cite the [23-claim source crosswalk](bibliography-and-evidence-crosswalk-2026-10-17.md); this audit records a source's contribution without upgrading a limited read to full-text verification.

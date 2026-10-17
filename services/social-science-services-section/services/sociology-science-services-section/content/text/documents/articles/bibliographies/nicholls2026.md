@@ -23,3 +23,13 @@ Demonstrates early U.S. sociology's competing exclusionary/segregationist and am
 Direct evidence for historical sociology discourses; does not show a time-to-extinction mechanism or the causal effect of any actual birth policy.
 
 **Reused by:** [The Future White](../notes/2026/10/17/2026-10-17-manuscript-selective-futurity-and-settler-continuity.md) and [Birth into Captivity](../notes/2026/10/17/2026-10-17-manuscript-captive-births-and-settler-reproduction.md), each with claim-specific relevance and evidence grades. This annotation does not turn a source's historical propositions into biological facts.
+
+## Commission-specific source audit (2026-10-17)
+
+**Why this source is essential:** Prior original finding constraining novelty.
+
+**Recoverable evidence and locators:** The original 2026 *Sociology Lens* article, vol.39(3):427–435, argues that early U.S. sociology naturalized white settlers as the 'native' social group, overwriting Indigenous polities, and entertained both **purity-oriented exclusion** and **amalgamation/assimilation** as alternative strategies to stabilize imperial rule. That is already published scholarship. It must be cited as the direct prior demonstration of the dual strategy.
+
+**Inferential boundary / competing evidence:** The new manuscript can legitimately test *revealed institutional priority under conflict* or *demographic consequences*, but cannot call the coexistence of eugenic exclusion and incorporation its unique discovery. Nicholls's source neither predicts an unattained ideal causing whole-population death nor estimates births.
+
+The commissioning papers cite the [23-claim source crosswalk](bibliography-and-evidence-crosswalk-2026-10-17.md); this audit records a source's contribution without upgrading a limited read to full-text verification.
