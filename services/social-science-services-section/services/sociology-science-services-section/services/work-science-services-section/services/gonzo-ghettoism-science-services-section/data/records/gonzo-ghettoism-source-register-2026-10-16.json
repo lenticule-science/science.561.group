@@ -4,22 +4,24 @@
   "status": "literature-screen-only",
   "as_of": "2026-10-16",
   "scientific_owner": "lenticule-science/science-services-section / social-science / sociology / work-science / gonzo-ghettoism",
-  "question": "Are constraint-responsive street-economy work practices identifiable, transferable and economically beneficial after including risks, losses, selection and harms?",
+  "question": "Which features, if any, distinguish the proposed gonzo hustle from already documented street hustle and entrepreneurial hustle, and what economic consequences do those distinctive features have?",
   "method": {
-    "selection": "Purposefully sample source-owned music credits, peer-reviewed scholarship and publisher/academic book records on US urban informal livelihoods and drug-market economics, with a cross-geographic comparative theory source; this is not a systematic review.",
+    "selection": "Purposeful *discriminant-concept* review: original artist testimony and production accounts for the focal track; original sociological studies of street hustle as the comparison category; and peer-reviewed entrepreneurial-hustle, exploitation and risk scholarship as alternative explanations. No systematic review or behavioral validation claimed.",
     "searched_on": "2026-10-16",
     "inclusions": [
       "original label description of focal artwork",
       "original university/publisher ethnography",
       "peer-reviewed economic/urban field research",
-      "independent scholarly critical alternative"
+      "independent scholarly critical alternative",
+      "first-party performer/producer explanations of the focal track",
+      "peer-reviewed constructs of entrepreneurial hustle used as competing operational definitions"
     ],
     "exclusions": [
       "reposted song lyrics",
       "unattributed testimonials claiming universal prosperity",
       "unverified biographical claims about performers or neighborhood residents"
     ],
-    "scope": "Illustrative concept-formation corpus; no participant recruitment, new statistics or causal estimate."
+    "scope": "Source comparison and hypotheses only. Street-hustle sources are comparators, not direct witnesses of the proposed gonzo quality. The focal artistic work is not a behavior sample."
   },
   "sources": [
     {
@@ -28,7 +30,7 @@
       "year": 2014,
       "title": "CLPPNG (official label release page)",
       "url": "https://www.subpop.com/releases/clipping/clppng",
-      "role": "primary-artwork-production-context",
+      "role": "primary-artwork-context; cultural material, NOT a behavioral measure",
       "finding": "CLPPNG released 2014-06-10. Work Work is the first single and features Cocc Pistol Cree; the label describes multi-perspective, intentionally citational storytelling.",
       "limit": "Creative representation, not direct observation of a US urban population or the narrator's biography."
     },
@@ -38,7 +40,7 @@
       "year": 2016,
       "title": "Wriggle (official label release notes about earlier CLPPNG)",
       "url": "https://www.subpop.com/releases/clipping/wriggle",
-      "role": "primary-artwork-method",
+      "role": "primary-artwork-production-context; cultural material, NOT a behavioral measure",
       "finding": "The label describes Work Work's beat as constructed from sounds of cinder blocks, beer cans, ball bearings and a thermos.",
       "limit": "Supports artistic bricolage interpretation, not any social-scientific prevalence claim."
     },
@@ -48,9 +50,9 @@
       "year": 2006,
       "title": "Off the Books: The Underground Economy of the Urban Poor",
       "url": "https://www.jstor.org/stable/j.ctv260712v",
-      "role": "urban-economy-ethnography",
+      "role": "background-comparator: ordinary street hustle, NOT evidence for the gonzo modifier",
       "finding": "Detailed observation of distinct lawful informal and unlawful economic activities and their interdependence in a Chicago neighborhood.",
-      "limit": "Site-specific qualitative study; does not imply drugs are essential to every neighborhood's economy or that its participants usually become wealthy."
+      "limit": "Site-specific qualitative study; does not imply drugs are essential to every neighborhood's economy or that its participants usually become wealthy. Specifically does not define, characterize or empirically establish 'gonzo hustle'."
     },
     {
       "id": "S04",
@@ -58,9 +60,9 @@
       "year": 2002,
       "title": "Doin' the Hustle: Constructing the Ethnographer in the American Ghetto",
       "url": "https://journals.sagepub.com/doi/10.1177/1466138102003001004",
-      "role": "sociological-interpretive-ethnography",
+      "role": "background-comparator: ordinary street hustle, NOT evidence for the gonzo modifier",
       "finding": "Describes hustle as a dominant organizing principle within the fieldworker's studied social relations.",
-      "limit": "Interpretive field account, not quantitative estimate of earnings or generalized innate disposition."
+      "limit": "Interpretive field account, not quantitative estimate of earnings or generalized innate disposition. Specifically does not define, characterize or empirically establish 'gonzo hustle'."
     },
     {
       "id": "S05",
@@ -69,9 +71,9 @@
       "title": "The hustle economy: Informality, uncertainty and the geographies of getting by",
       "url": "https://discovery.ucl.ac.uk/id/eprint/1549770/",
       "doi": "10.1177/0309132517690039",
-      "role": "cross-context-theoretical-literature",
+      "role": "background-comparator: general hustle economy, NOT gonzo-specific evidence",
       "finding": "The hustle frame links uncertainty, informality and alternative conceptions of work beyond normative institutions.",
-      "limit": "The framework is cross-geographic; its proposed dynamics are not US-only or proof of superior results."
+      "limit": "The framework is cross-geographic; its proposed dynamics are not US-only or proof of superior results. Explains the wider hustle economy, not the proposed gonzo subtype."
     },
     {
       "id": "S06",
@@ -80,7 +82,7 @@
       "title": "An Economic Analysis of a Drug-Selling Gang's Finances",
       "url": "https://academic.oup.com/qje/article-abstract/115/3/755/1828153",
       "doi": "10.1162/003355300554908",
-      "role": "economic-quantitative-counterevidence",
+      "role": "counterevidence-to-success-romanticization, NOT gonzo-specific evidence",
       "finding": "In the studied street gang earnings averaged only somewhat above the legitimate labor alternative, great risks outweighed the modest premium, and rewards were highly skewed.",
       "limit": "One historically situated gang data source, not a universal estimate of all drug markets."
     },
@@ -114,20 +116,63 @@
       "role": "critical-public-sociological-interpretation",
       "finding": "Argues that the term 'hustle' spans class positions but is structured by economic inequality.",
       "limit": "Interpretive essay, not treated as causal identification or universal community testimony."
+    },
+    {
+      "id": "S10",
+      "author": "clipping. (Daveed Diggs, William Hutson, Jonathan Snipes), interviewed by Hrishikesh Hirway",
+      "year": 2016,
+      "title": "Song Exploder episode 65: Clipping — Work Work (artist interview transcript)",
+      "url": "https://songexploder.net/transcripts/clipping-transcript.pdf",
+      "also": "https://songexploder.net/clipping",
+      "role": "primary-first-person-artistic-explanation; central for proposed gonzo reading, NOT direct sociological observation",
+      "finding": "Members describe making a harsh, broken interpretation of a commercial rap style from non-drum field recordings; deliberate no-first-person, no-true-stories rule; assembled multiple perspectives, drug/gun rap tropes, branching narrative and a contrast of death statistics and wealth-based recognition. The song was created to feature Cocc Pistol Cree.",
+      "limit": "Authors discuss composition, stylization and narrative. They do not name or endorse a distinct gonzo-ghettoism economic philosophy and do not report cohort income data."
+    },
+    {
+      "id": "S11",
+      "author": "Greg Fisher, Regan Stevenson, Emily Neubert, Devin Burnell and Donald F. Kuratko",
+      "year": 2020,
+      "title": "Entrepreneurial Hustle: Navigating Uncertainty and Enrolling Venture Stakeholders through Urgent and Unorthodox Action",
+      "url": "https://onlinelibrary.wiley.com/doi/full/10.1111/joms.12584",
+      "doi": "10.1111/joms.12584",
+      "role": "direct-conceptual-comparator: urgent/unorthodox action is already a defined entrepreneurial-hustle construct",
+      "finding": "Using 48 interviews and a vignette study, defines entrepreneurial hustle through urgent unorthodox actions used to meet immediate challenges and gain stakeholders.",
+      "limit": "Neither general unconventional behavior nor urgency alone can be called a novel gonzo-specific finding."
+    },
+    {
+      "id": "S12",
+      "author": "Jonathan Ilan",
+      "year": 2026,
+      "title": "The hustle society: Mainstream precarity, voracious entrepreneurialism, grift and exploitation in contemporary culture",
+      "url": "https://academic.oup.com/bjc/advance-article/doi/10.1093/bjc/azag033/8655258",
+      "doi": "10.1093/bjc/azag033",
+      "role": "critical-theory comparator: transgression and category ambiguity are already documented hustle phenomena",
+      "finding": "Defines contemporary hustling as transgressing conventional boundaries between labor and reward, including ambiguous categories of work/leisure and legitimate/illegitimate.",
+      "limit": "This preexisting transgression construct directly challenges a simplistic claim that boundary-breaking alone defines the gonzo subtype."
+    },
+    {
+      "id": "S13",
+      "author": "Collins English Dictionary",
+      "year": null,
+      "title": "Gonzo (dictionary entry)",
+      "url": "https://www.collinsdictionary.com/us/dictionary/english/gonzo",
+      "role": "lexical background only",
+      "finding": "The ordinary adjective includes senses such as wild and unconventional; gonzo journalism admits a subjective participatory perspective.",
+      "limit": "A dictionary sense does not define or validate the Leader's intended gonzo work philosophy, and clipping.'s non-first-person writing is not gonzo journalism."
     }
   ],
   "claims": [
     {
       "id": "GG-C01",
       "status": "definition",
-      "claim": "Gonzo Ghettoism is a proposed, situated philosophy of opportunity-responsive work under institutional constraints; it does not predicate racial or neighborhood essence.",
+      "claim": "Gonzo Ghettoism is a proposed work philosophy whose specifically gonzo differentia remains an open question. Documentation of ordinary hustle is the comparison class, not evidence for a gonzo subtype.",
       "supports": [
         "S01",
-        "S03",
-        "S04",
-        "S05"
+        "S10",
+        "S11",
+        "S12"
       ],
-      "evidence_note": "Leader's 2026-10-16 coinage defines scope; scholarly literature identifies neighboring phenomena without validating the new label."
+      "evidence_note": "Leader supplied name and correction 2026-10-16; no cited author defines the new category. Distinctiveness must be inferred cautiously then tested, not assumed."
     },
     {
       "id": "GG-H01",
@@ -137,7 +182,9 @@
         "S03",
         "S05"
       ],
-      "falsifier": "Matched/longitudinal comparison finds no beneficial difference after expenses, income volatility and household liabilities are observed."
+      "falsifier": "Matched/longitudinal comparison finds no beneficial difference after expenses, income volatility and household liabilities are observed.",
+      "category": "general-hustle-background-or-risk-comparator; does-not-discriminate-gonzo",
+      "evidence_note": "This hypothesis may be about hustle generally; a positive result does not establish a gonzo-specific mechanism."
     },
     {
       "id": "GG-H02",
@@ -147,7 +194,9 @@
         "S03",
         "S05"
       ],
-      "falsifier": "Predeclared skill task and enterprise outcome comparisons find no transfer relative to matched peers with other work experience."
+      "falsifier": "Predeclared skill task and enterprise outcome comparisons find no transfer relative to matched peers with other work experience.",
+      "category": "general-hustle-background-or-risk-comparator; does-not-discriminate-gonzo",
+      "evidence_note": "This hypothesis may be about hustle generally; a positive result does not establish a gonzo-specific mechanism."
     },
     {
       "id": "GG-H03",
@@ -157,7 +206,9 @@
         "S06",
         "S07"
       ],
-      "falsifier": "Complete-cohort risk- and harm-adjusted distribution shows stable representative gains rather than heavily selected winner narratives."
+      "falsifier": "Complete-cohort risk- and harm-adjusted distribution shows stable representative gains rather than heavily selected winner narratives.",
+      "category": "general-hustle-background-or-risk-comparator; does-not-discriminate-gonzo",
+      "evidence_note": "This hypothesis may be about hustle generally; a positive result does not establish a gonzo-specific mechanism."
     },
     {
       "id": "GG-H04",
@@ -168,7 +219,9 @@
         "S07",
         "S08"
       ],
-      "falsifier": "A well-defined comparative sample of purported contexts finds drug-market dependence necessary and invariant even as institutional conditions change."
+      "falsifier": "A well-defined comparative sample of purported contexts finds drug-market dependence necessary and invariant even as institutional conditions change.",
+      "category": "general-hustle-background-or-risk-comparator; does-not-discriminate-gonzo",
+      "evidence_note": "This hypothesis may be about hustle generally; a positive result does not establish a gonzo-specific mechanism."
     },
     {
       "id": "GG-H05",
@@ -176,9 +229,51 @@
       "claim": "Artistic bricolage in Work Work productively illustrates, without empirically proving, improvisational value creation from restricted resources.",
       "supports": [
         "S01",
+        "S02",
+        "S10"
+      ],
+      "falsifier": "Producer testimony or composition records contradict the label's claimed sampled-material production.",
+      "category": "source-specific-artistic-production",
+      "evidence_note": "Producer-confirmed techniques are evidence of an artistic act; they do not by themselves distinguish a lived work ethos from broader entrepreneurship."
+    },
+    {
+      "id": "GG-C02",
+      "status": "source-scope-correction",
+      "claim": "Venkatesh (2002, 2006) is evidence for general hustle and informal economic organization, not for the specifically gonzo modifier. Thieme and Fisher likewise address broader constructs; label sources by comparison role.",
+      "supports": [
+        "S03",
+        "S04",
+        "S05",
+        "S11"
+      ],
+      "evidence_note": "Direct Leader correction 2026-10-16."
+    },
+    {
+      "id": "GG-H06",
+      "status": "hypothesis",
+      "category": "gonzo-specific-discriminant-test",
+      "claim": "A proposed gonzo mode, if one is distinct, may combine high-stakes existential framing, stylized role and narrative recombination, boundary-inverting action and conspicuous acceptance of contradictory social rewards beyond ordinary hustle or urgent/unorthodox entrepreneurship.",
+      "supports": [
+        "S10",
+        "S11",
+        "S12",
+        "S13"
+      ],
+      "falsifier": "A blinded operational codebook cannot reliably distinguish gonzo cases from ordinary hustle or entrepreneurial hustle, or putative gonzo markers add no incremental explanatory power after existing hustle, risk, performance and market-context measures.",
+      "caution": "None of the listed sources claims to establish this unique conjunction in economic field participants; case-definition is proposed and may fail."
+    },
+    {
+      "id": "GG-H07",
+      "status": "hypothesis",
+      "category": "source-interpretation-not-empirical-generalization",
+      "claim": "The art of Work Work may supply a bounded representation of risk, money, mortality, drug and gun tropes, conspicuous style and cross-persona montage that motivates a gonzo-specific question rather than ordinary earning tactics.",
+      "supports": [
+        "S10",
+        "S01",
         "S02"
       ],
-      "falsifier": "Producer testimony or composition records contradict the label's claimed sampled-material production."
+      "falsifier": "Source testimony or competing close readings fail to support the proposed markers; distinct economic behavior still requires independent evidence.",
+      "caution": "The creators explicitly describe fictional and composite narrators and do not equate them with real people."
     }
   ],
   "receiving": {
@@ -191,5 +286,6 @@
       "causal or descriptive cohort estimates",
       "deployed income-generating service"
     ]
-  }
+  },
+  "revision_note": "2026-10-16: Leader corrected prior conflation of Venkatesh's ordinary hustle scholarship with specifically gonzo hustle. Reclassified the earlier five hypotheses as general-hustle/background or artwork, added original artist account and entrepreneurship comparators, and made the gonzo distinguishing claim explicitly tentative and falsifiable."
 }
