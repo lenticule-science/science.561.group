@@ -1,25 +1,22 @@
 ---
-name: quantum-spacetime
-kind: category
-is: transfinite-predication-category
-generated-by: condensing
-member-of: informational-spacetime
+name: "Quantum Spacetime"
+description: "The proposed transfinite relational-amplitude regime generated from aperiodic kinematic possibilities and supplying the conditions for an effective causal spacetime."
+date-modified: 2026-10-17
+type: term
+science-owner: physics-services-section
+keywords:
+  - quantum
+  - transfinite
+  - kinematic-space
+  - causal-spacetime
 ---
 
-**Quantum-spacetime is the value-free amplitude fibration** [condensing](../../../../../../../../../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-simulation-system-services-section/services/astronomy-position-computation-service/research-source/_archive/world/scripts/geometrizing/content/informational-spacetime/scripts/condensing/condensing.md) produces from the bit's semantic residue: the transfinite rung, $\omega < \kappa < \omega_1$.
-It **is** the kernel's transfinite-predication-category (what `predicate` generates) — and it **is** quantum mechanics, not a picture of it: the fibration carries a topological quantum field theory in Atiyah's sense (`condensing` proves this), so its structure is the regime *before charge enters*, the value-free substrate physics calls quantum.
+# Quantum spacetime: the transfinite articulation
 
-## Its library
+In our generative-cosmology conjecture, **quantum structure arises within an already articulated kinematic field of possibilities**. The quantum regime concerns composable amplitudes, contextual alternatives, and the structures that allow interference and correlation. These are more than a four-valued truth assignment: quantum physics requires amplitudes, probabilities, transformations, and suitable measurement semantics.
 
-- [amplitude](../../../../../../../../../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-simulation-system-services-section/services/astronomy-position-computation-service/research-source/_archive/world/scripts/geometrizing/content/spacetime/scripts/eventualizing/content/spacetime-entity-set/scripts/predicating/content/light-cone-predicate-category/scripts/settling/content/cosmological-settling/_archive/cosmogenesis-development/content/informational-spacetime/library/condensing/library/quantum-spacetime/library/amplitude/amplitude.md) — the value-free cell $(E, \Pi, E)$: a superposition (the cell forbids a value field, and value-freedom *is* superposition).
-- [quantum](../../../../../../../../../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-simulation-system-services-section/services/astronomy-position-computation-service/research-source/_archive/world/scripts/geometrizing/content/spacetime/scripts/eventualizing/content/spacetime-entity-set/scripts/predicating/content/light-cone-predicate-category/scripts/settling/content/cosmological-settling/_archive/cosmogenesis-development/content/informational-spacetime/library/condensing/library/quantum-spacetime/library/quantum/quantum.md) — the entity dimension $E$: indistinguishable quanta, indistinguishable because condensing kept the shared predicate and discarded which bit carried it.
-- [mode](library/mode/mode.md) — the predicate dimension $\Pi$: what quanta share; a Bose condensate is macroscopic occupation of one mode by exchangeable quanta.
-- [cohering](../../../../../../../../../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-simulation-system-services-section/services/astronomy-position-computation-service/research-source/_archive/world/scripts/geometrizing/content/spacetime/scripts/eventualizing/content/spacetime-entity-set/scripts/predicating/content/light-cone-predicate-category/scripts/settling/content/cosmological-settling/_archive/cosmogenesis-development/content/informational-spacetime/library/condensing/library/quantum-spacetime/library/cohering/cohering.md) — quantum coherence (the Beck–Chevalley comparison): it closes the specialization by composition and holds the value-free superposition together, non-invertible until value appears.
-- [collapsing](../../../../../../../../../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-simulation-system-services-section/services/astronomy-position-computation-service/research-source/_archive/world/scripts/geometrizing/content/informational-spacetime/scripts/condensing/content/quantum-spacetime/scripts/collapsing/collapsing.md) — measurement (= `posit`): value enters as the knowledge-least charge, the superposition collapses to a valued presheaf → [classical-spacetime](classical-spacetime.md).
+We read this as the **transfinite-bounded** stage of a [Turn](https://github.com/lenticule-science/science-services-section/blob/main/services/philosophy-services-section/services/relationality-services-section/content/text/glossary/concepts/turn.md), whose canonical record gives the four-regime and recurrence/Pisot correspondence. Its mathematical construction is the work: a model must exhibit its amplitude carrier, composition, Born-type probability assignment, and the relation of measurements to the downstream causal geometry.
 
-## Why this rung is non-invertible
+“Quantum before spacetime” means **generative precedence**. It does not mean a quantum state existed in an earlier externally clocked epoch where spacetime had not yet begun.
 
-Cohering cannot be inverted here: at the transfinite level there is **no value-algebra yet**, so the comparison leaves a defect — the value-free fiber itself.
-This is the same non-confluent shape as the aperiodic monad's residue, one regime down: the obstruction has not drained, only changed form, from an unreachable claim into an unvalued amplitude.
-It drains further only when `collapsing` admits value and, below that, `balancing` forces the comparison confluent.
-The descent so far: informational → **quantum** → classical → thermal.
+The [aperiodic informational field](informational-spacetime.md) and [kinematic space](kinematic-space.md) are the proposed inputs. [Classical causal spacetime](classical-spacetime.md) is the next reading. The [Obsmetrologia kinematic construction](https://github.com/lenticule-science/obsmetrologia/blob/main/Obsmetrologia/CausalSets/BlackHoles/HoleDiamondCausalSet.lean) gives an existing mathematical counterpart; equating it with pre-quantum reality is a separate generating-map conjecture.

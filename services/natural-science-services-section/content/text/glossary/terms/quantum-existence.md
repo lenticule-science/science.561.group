@@ -1,6 +1,7 @@
 ---
 name: Quantum Existence
 date-created: 2026-09-03
+date-modified: 2026-10-17
 keywords:
   - TransfiniteBoundedRegime
   - ClosureOrdinal
@@ -27,6 +28,8 @@ references:
     publication: "Physical Review Letters"
     year: 1993
 ---
+
+The [Turn](https://github.com/lenticule-science/science-services-section/blob/main/services/philosophy-services-section/services/relationality-services-section/content/text/glossary/concepts/turn.md) owns the generative sequence and the specific Padovan–Fibonacci–Tribonacci–n-bonacci correspondence. This entry instead owns the quantum domain's contextuality, amplitudes, and obstruction evidence.
 
 Quantum existence is the regime of natural existence whose closure ordinal
 `κ` is countable but transfinite (`ω < κ < ω₁`, the *transfinite-bounded*

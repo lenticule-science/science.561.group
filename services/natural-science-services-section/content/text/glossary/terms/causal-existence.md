@@ -1,6 +1,7 @@
 ---
 name: Causal Existence
 date-created: 2026-09-03
+date-modified: 2026-10-17
 keywords:
   - ScottRegime
   - ClosureOrdinal
@@ -17,6 +18,8 @@ references:
     publication: "Physical Review Letters"
     year: 1987
 ---
+
+The [Turn](https://github.com/lenticule-science/science-services-section/blob/main/services/philosophy-services-section/services/relationality-services-section/content/text/glossary/concepts/turn.md) owns the shared regime correspondence and spiral. This entry records the causal domain's own order, topology, curvature, and time-section results.
 
 Causal existence is the regime of natural existence whose closure ordinal
 `κ` equals `ω` exactly (the *Scott* stratum of

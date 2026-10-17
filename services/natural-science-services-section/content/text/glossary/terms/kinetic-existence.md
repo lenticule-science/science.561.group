@@ -1,6 +1,7 @@
 ---
 name: Kinetic Existence
 date-created: 2026-09-03
+date-modified: 2026-10-17
 keywords:
   - AperiodicRegime
   - ClosureOrdinal
@@ -22,6 +23,8 @@ references:
     publication: "Science"
     year: 1972
 ---
+
+The [Turn](https://github.com/lenticule-science/science-services-section/blob/main/services/philosophy-services-section/services/relationality-services-section/content/text/glossary/concepts/turn.md) is the canonical source for the generative correspondence and its regime–Pisot law. **Kinetic** existence names a natural-science domain of evolving matter and transport. **Kinematic** possibility names the admissible relational configurations before their physical dynamics; a bridge between them is part of the research, not a synonym.
 
 Kinetic existence is the regime of natural existence whose closure ordinal
 `κ` is uncountable (`κ ≥ ω₁`, the *aperiodic* stratum of

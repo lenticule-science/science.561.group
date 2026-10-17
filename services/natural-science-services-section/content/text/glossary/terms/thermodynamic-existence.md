@@ -1,6 +1,7 @@
 ---
 name: Thermodynamic Existence
 date-created: 2026-09-03
+date-modified: 2026-10-17
 keywords:
   - StrictRegime
   - ClosureOrdinal
@@ -17,6 +18,8 @@ references:
     publication: "IBM Journal of Research and Development"
     year: 1961
 ---
+
+The [Turn](https://github.com/lenticule-science/science-services-section/blob/main/services/philosophy-services-section/services/relationality-services-section/content/text/glossary/concepts/turn.md) owns the four-regime and recurrence/Pisot correspondence. This entry records the thermodynamic domain's entropy, exchange, and finite-settlement results.
 
 Thermodynamic existence is the regime of natural existence whose closure
 ordinal `κ` is finite (`κ < ω`, the *strict* stratum of
@@ -78,10 +81,7 @@ Per the monograph
 existence](./causal-existence.md)'s local sections into thermodynamic
 existence's thermal-spacetime, the global section with `H¹ = 0` whose
 quantities (temperature, entropy, equilibrium) are properties of the whole
-glued thing rather than of any local section. The descent stops here
-because there is nothing left to thermalize: full thermalization is heat
-death, reached only at the plastic-number floor of the monograph's forced
-inflation-rate tower, and only observerless.
+glued thing rather than of any local section. This Turn's thermalizing operation reaches a finite settlement. We conjecture that its **unabsorbed residual re-enters a new Turn**; completion of one local thermodynamic regime is not the disappearance of all generativity. A cosmological heat death is a possible physical limiting reading, not the definition of every finite settlement. The Turn source retains the plastic/Padovan conjecture that characterizes the finite end.
 
 See also: [causal existence](./causal-existence.md); the topic [four
 regimes of natural existence](../topics/four-regimes-of-natural-existence.md).

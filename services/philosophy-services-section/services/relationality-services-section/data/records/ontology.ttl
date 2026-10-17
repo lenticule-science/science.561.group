@@ -572,7 +572,8 @@ relational. Relationlessness self-contradicts, producing the first act.""" ;
     rel:inMovement rel:Genesis ;
     rel:derivationStep 0 ;
     rel:produces rel:Reflexing ;
-    rel:mathematicalCorrespondence "Bottom (⊥) of the Heyting algebra" ;
+    skos:historyNote "Earlier derivation manuscripts identified Relationlessness with the Heyting bottom. The October 2026 generative theory distinguishes the originating paradox from the already articulated least element of an algebra."@en ;
+    rel:mathematicalCorrespondence "Originating inductive paradox; Heyting bottom is a later formal presentation requiring a derivation map, not the definition of relationlessness" ;
     rel:attestedIn "draft 3 treatise (Relationlessness), PRE (Bottom), draft 4 (Relationlessness), draft 11 (Relationlessness)" .
 
 # --- Genesis acts ---
@@ -1743,3 +1744,22 @@ rel:March28RelationlessnessSense a skos:Concept ;
     skos:scopeNote "Not FOUR neither/both, not physical vacuum, and not an unrestricted theorem that all predication cells descend from this origin."@en ;
     dcterms:source <https://github.com/lenticule-science/science-services-section/blob/main/services/information-science-services-section/services/language-science-services-section/content/text/documents/articles/notes/2026/10/10/2026-10-10-note-about-l-space.md> ;
     rdfs:seeAlso <https://github.com/lenticule-science/science-services-section/blob/main/services/philosophy-services-section/services/relationality-services-section/content/text/glossary/terms/relationlessness.md> .
+
+# The active relationality Turn has one source-owned statement.
+# Legacy derivation concepts and their separate source scopes remain unchanged.
+# The link identifies a Science research concept; it is not an owl:sameAs
+# assertion between distinct historical constructions or a proof certificate.
+rel:GenerativeTurn a rel:RelationalConcept, skos:Concept ;
+    skos:prefLabel "Turn"@en ;
+    skos:altLabel "generative turn"@en, "kinematic closure turn"@en ;
+    skos:definition "One articulation-to-settlement traversal of relational generation whose residual can become the next traversal's admissible articulation."@en ;
+    skos:scopeNote "A Turn is not a scheduled tick, an individual closure-regime label, a conversation turn, or an already constructed causal-set kinematic space. Read the source for its full four-stage structure."@en ;
+    dcterms:source <https://github.com/lenticule-science/science-services-section/blob/main/services/philosophy-services-section/services/relationality-services-section/content/text/glossary/concepts/turn.md> ;
+    rdfs:seeAlso rel:RegimePisotSelectionConjecture .
+
+rel:RegimePisotSelectionConjecture a skos:Concept ;
+    skos:prefLabel "Regime–Pisot selection conjecture"@en ;
+    skos:definition "The substitution matrix generated within an admissible Turn selects a characteristic Pisot/Pisot-family inflation according to its measured closure regime."@en ;
+    skos:scopeNote "The canonical Turn record owns the Padovan, Fibonacci, Tribonacci and n-bonacci correspondence and its source genealogy. This index does not independently assert its universal proof."@en ;
+    dcterms:source <https://github.com/lenticule-science/science-services-section/blob/main/services/philosophy-services-section/services/relationality-services-section/content/text/glossary/concepts/turn.md> ;
+    rdfs:seeAlso rel:GenerativeTurn .
