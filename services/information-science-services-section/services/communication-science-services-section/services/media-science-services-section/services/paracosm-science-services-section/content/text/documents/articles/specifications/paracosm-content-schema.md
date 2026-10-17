@@ -50,9 +50,7 @@ the [Reproducible Paracosm Specification](reproducible-paracosm-specification.md
 - the fields `canons`, `retired-names`, `pronunciation`, `voice`, `foreign`, `written-at`, `concerns` and `contradicts`;
 - formal time fields.
 
-The [engineering note on paracosm engineering in FeltOS](../../../../../../../../../../../../../../engineering-services-section/content/text/documents/articles/notes/2026/09/28/2026-09-28-note-on-paracosm-engineering-in-feltos.md)
-describes the software that reads them. Fields are still added, renamed or
-split as real content lands.
+The [source-owned FeltOS paracosm implementation](https://github.com/red-cup-engineering/feltos/blob/main/src/paracosm.mjs) defines the executable reader for the currently admitted types. The former monorepo-relative link to an "engineering note" no longer resolved from this standalone Science repository; it is replaced here with the verified Engineering source instead of inventing a mirrored document. Fields may change only when Science and existing Engineering consumers receive compatible changes.
 
 ## Research extension: scoped observations and non-linear time (2026-10-17)
 
