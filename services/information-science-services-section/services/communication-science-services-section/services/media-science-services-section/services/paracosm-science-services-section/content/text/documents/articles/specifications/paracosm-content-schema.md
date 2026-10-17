@@ -70,6 +70,20 @@ split as real content lands.
 
 **Types to research before adopting a new schema version:** source edition and span; speaker and assertion polarity; scoped typed claim; event-to-event partial order; local clock and reading; world/dream/narration frame; explicit canon bridge; consumer observation family and information-loss witness; finite-test versus mechanized-proof versus receiving status.
 
+### Proposed multiworld compatibility profile: Narnia
+
+The complementary [Narnia source study](../notes/2026/10/17/2026-10-17-note-on-narnia-as-a-multiworld-paracosmic-stress-test.md) exposes additional information the existing source entries cannot yet convey mechanically without convention.
+
+- **World versus region:** the polity named Narnia, the historical world containing it, the Wood Between the Worlds, Charn, England and Aslan's Country are not automatically regions of one Euclidean place or entries on one clock. Retain the source's distinction when referring to a location, its world and a possible counterpart.
+- **Event-indexed portal:** a transit has a source event, destination event, origin world, destination world, actor/object provenance, portal medium, and source statement. A portal is neither an always-on \`exits:\` edge nor a function sending every source-world clock reading to one target time.
+- **At least four clocks/orders:** publication order, reader encounter or narrated disclosure order, *local* world event order, and local clock reading. Overlapping Golden Age works and a prequel published later must be representable without inventing a single monotone numeric sort.
+- **Epoch and survival:** a world's creation, state changes under governments, terminal event, and a narrator-described real counterpart have different semantic relations. A character's identity persists through world-specific appearances without requiring globally monotone body age.
+- **Law and authority:** a reported law, its actual triggering condition, who knows it and what the story narrates happening are different records. Deeper Magic known to Aslan but unknown to the Witch is not automatically a contradiction cell.
+- **Narrative/ecological evidence:** "Old Narnia" denied by one government can be attested by ruins, survivors and the narrated past; damaged landscapes are consequences rather than lore decoration. Speaker and regime claims do not gain truth from power.
+- **Source authority:** external copyrighted novels and their adaptations remain distinct works with distinct canons and rights. This science corpus only stores analysis and attributed source locators, not a republished Lewis fiction database.
+
+**No new public keys are defined here.** In the existing v0.2 body, a research annotator may record these facts as sourced prose and flags. Acceptance of a machine-readable next version requires Science-owned type definitions, conflict/identity rules, bounded negative controls, an existing Engineering consumer, and separate compatibility and receiving evidence. Do not treat future source fields as features already implemented by FeltOS.
+
 ## Required fields
 
 - `type:` — discriminant. Determines how the entry is interpreted.
