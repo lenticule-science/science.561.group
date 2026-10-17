@@ -2,62 +2,27 @@
 
 **Research proposal 0.2 — 2026-10-10. Not yet adopted as a normative specification.** PlainEng is the program name; Plain Technical General American English (PTGAE) is its starting English register. This program goes beyond sentence cleanup into grammar, semantics, pragmatics, formal derivation, agent communication and human comprehension.
 
-## Canonical nested restriction tower (Leader correction, 2026-10-17)
+## Mathematical ancestry: Obsmetrologia generates language, English restricts its realization
 
-The *PTGAE family* has the directed, typed ancestry
+The **generating object is L-Space**, not English and not a conventional parser's set of acceptable strings. The source-owned [L-Space scientific synthesis](https://github.com/lenticule-science/science-services-section/blob/main/services/information-science-services-section/services/language-science-services-section/content/text/documents/articles/notes/2026/10/10/2026-10-10-note-about-l-space.md#generating-language-from-articulating-rather-than-postulating-english-2026-10-17) recovers the actual mathematical spine: primitive Mark; ordered Utterance of token/claim positions; source-generating Articulating; oriented predication; FOUR-valued telling and independent evidence; FCA closure and term/intension fibers; Chu and context transport; CHL typed proof paths; situated speech acts and causal order. A word's spelling, pronunciation, morphology, referents and socially situated uses are *further claims and relations* in that space. No English phonological, lexical or grammatical table is a primitive axiom of Obsmetrologia.
 
-```text
-English ← American English ← General American English (GAE)
-        ← Technical General American English (TGAE)
-        ← Plain Technical General American English (PTGAE)
-```
-
-The arrows point from a **restricted child to its admitted parent**, not to separate parsers, CLI products, style evaluators or inferred synonym relationships. GAE is **General American English**; TGAE is **Technical General American English**; PTGAE adds a genuinely restricted *Plain* stratum. The descriptive and technical criteria for the as-yet-unimplemented GAE and TGAE profiles are scientific obligations, not permission to make up lexical/morphological tables. An American variety is not automatically a formally admitted instance of GAE. Branching specialized English (legal, sports, literary, accessibility, audience registers) forms additional **incomparable** restrictions where justified; the designated PTGAE lineage is a chain inside that larger partially ordered family.
-
-### What is actually restricted
-
-Fix an original **admitted** English parser edition \(v\), source-grounded utterances \(U_v\), contexts \(C\), and typed candidate readings \(R_v(u,c)\). Retain all competing readings as candidates, and abstain if the parser cannot identify them. An English fragment \(L\) denotes a subfamily \(R_L(u,c)\subseteq R_v(u,c)\) with its own recognized source/grammar edition and stated admissibility obligations.
-
-Given a *parent* \(P\) and a versioned, source-qualified **restriction** \(q\), construct the child by comprehension of the **already present** reading relation:
+**Within that derived space**, the intended family has the specific order of narrower linguistic realizations
 
 \[
-R_{P\restriction q}(u,c)
- = \{\,r\in R_P(u,c)\mid q(u,c,r)=\mathrm{member}\,\}.
+\mathrm{PTGAE}\hookrightarrow\mathrm{TGAE}
+ \hookrightarrow\mathrm{GAE}
+ \hookrightarrow\mathrm{AmericanEnglish}
+ \hookrightarrow\mathrm{English}
+ \hookrightarrow\mathsf{L}_{\mathrm{Obs}}.
 \]
 
-A rule's judgments are **member**, **outside**, or **unknown**. `outside` excludes a candidate from the narrower fragment but says nothing negative about its English grammaticality or truth. `unknown` records missing scope, referent, version, parse or rule information. This decision algebra is **not** FOUR evidence: two competing parses are not opposing testimonies about a typed proposition. A restriction cannot admit a parent-excluded or parent-unknown reading; without a defined \(q\), it cannot claim a child profile exists.
+GAE = General American English, TGAE = Technical General American English. The final inclusion is a **research goal**, not an existing proved map; the same holds for each of the four middle restriction morphisms. English varieties are contingent, socially and historically situated charts, not intrinsic quality rankings. A differently specialized register may form another branch of the subobject system.
 
-Every restriction has the canonical **identity-on-readings inclusion** \(\iota_{P\restriction q,P}:R_{P\restriction q}\hookrightarrow R_P\): it retains exactly the same source marks, occurrence spans, parser identities, typed interpretation and contextual attribution, rather than reparsing or translating. The construction yields the elementary law
-\(r\in R_{P\restriction q}(u,c)\Rightarrow r\in R_P(u,c)\).
-For each composable pair the inclusions compose by identity, so the five-step canonical embedding is
+**The correct restriction target is relational and contextual.** In an admitted context category \(\mathcal C\), a language \(L\) would select a family of permitted articulations, interpretations and typed realization relations \(\mathscr L_L\), with proven restrictions over context changes. A child \(L'\) would require a faithful, componentwise inclusion \(\iota:\mathscr L_{L'}\hookrightarrow\mathscr L_L\) **natural in context** and commuting with the mappings back to originating Articulating histories and their warranted semantic/evidence fibers. Mere inclusion of accepted strings, a boolean `admit` callback, `en-US` locale selection, a style lint result or a new PTGAE token list establishes none of those laws. This is a proposed **subpresheaf** construction, not a claim that a canonical full L-Space category, topology or faithful English functor has already been built.
 
-\[
-\iota_{\mathrm{PTGAE,English}} =
-\iota_{\mathrm{American,English}}\circ
-\iota_{\mathrm{GAE,American}}\circ
-\iota_{\mathrm{TGAE,GAE}}\circ
-\iota_{\mathrm{PTGAE,TGAE}}.
-\]
+**The first construction obligation is upstream of English.** [`Claim.TermContext`](https://github.com/lenticule-science/obsmetrologia/blob/main/Obsmetrologia/Site/Topic.lean) currently takes `incidence : Claim → Term → Prop` as supplied input. It does not derive the term-claim incidence from a performed `Articulating`. Moreover [`UseMention.lean`](https://github.com/lenticule-science/obsmetrologia/blob/main/Obsmetrologia/Language/Predicating/UseMention.lean) exhibits a source-loss counterexample: `a` and `reattendHead(a)` are distinct acts with an indistinguishable head-only `Claim.seed`. Thus a grammar over head-only claims can discard the very distinction from which the language was generated. Construct source-indexed incidence, prove its contextual transports and source-retaining mappings, and preserve both positive/negative Chu evidence before demanding an English→PTGAE restriction proof.
 
-**This is a constructive inclusion law over an abstract admitted reading family, not a proof that every actual English sentence can be parsed, that colloquial American usage is a homogeneous class, or that any draft in the present PTGAE corpus belongs to the final child.** In particular, a selector returning an `en-US` locale and a prose linter reporting no findings have not discharged any of the four missing language-membership morphisms.
-
-### Five distinct sources of narrowing
-
-| Level | Inherited admissibility | New scientific restriction obligations (not claimed complete) |
-| --- | --- | --- |
-| **English** | Source-grounded English parser's finite candidate readings with ambiguity and unsupported cases retained | Full parent source and grammar edition; no assumption that natural English has a total machine semantics |
-| **American English** | An admitted English reading | Explicitly researched American variety, source/context compatibility and locale evidence; not `lang=en-US` alone |
-| **GAE** | An American English reading | Explicit declared General American grammar/phonology/usage conventions and register boundaries, without ranking non-GAE speakers |
-| **TGAE** | A GAE reading | Controlled technical terms/senses, referent resolution, scope, modality, units, time and typed technical utterance constructions |
-| **PTGAE** | A TGAE reading | Additional admissible clear/readable realizations and source-preservation constraints; plain form must retain technical and epistemic distinctions |
-
-A **rewrite** (changing one utterance into another), a **translation** (transport between linguistic bases) and a **register change** (a different situated realization) are different morphisms from restriction. They require a separately justified semantic-preservation relation; a shorter sentence or lower grade-level score is not automatically an inclusion proof. A CLI that counts words is an optional *consumer*, never the source of the restricted language.
-
-### Existing Engineering consumer and its unreceived obligations
-
-The current shared producer is `@red-cup-engineering/communicating`, which already compiles language bundles, parses via its normal grammar pipeline, and records candidate forests. Its `languageFragment` / `restrictLanguage` algebra constructs restrictions by ancestor-first membership, `languageIsRestrictionOf` checks the **constructed** ancestor relationship, and `readLanguageMembership` retains the unchanged reading object and separate membership status. This one general producer is downstream of SignCell/SignChain/SignGraph/SignCraft where appropriate; it must not reimplement their evidence or morphology and has no CLI. The current implementation supplies the **universal subobject construction**, *not* production-admitted criteria for American English/GAE/TGAE/PTGAE, and its natural-language empirical adequacy is not thereby established.
-
-Concrete next receiving requirements are (i) identify an exact current canonical English parser/bundle edition and ensure its parse forest actually contains all relevant candidate alternatives; (ii) derive source-owned predicates for each of the four language restrictions from corpus/grammar science rather than from this paragraph; (iii) use one real English reading in each level, one distinct admitted branch and a rejected/unknown example, with no reparsing or synthetic FOUR witnesses; (iv) feed accepted PTGAE-typed output into an actual authoring/publishing/agent consumer and run task-level comprehension and meaning-preservation experiments. Until then, label PTGAE style JSON and prose linting as **ancillary editorial policy** only.
+**Division of responsibility.** Obsmetrologia and Lenticule Science own the language-generating mathematics and source-qualified grammar/linguistics hypotheses; Red Cup's shared SignCell→SignChain→SignGraph→SignCraft and Communicating layers interpret/realize them at their admitted technological boundaries. The existing PTGAE Engineering style fibers, diagnostic rules and optional prose CLI can serve **later editorial consumers**, but do not define or generate PTGAE-as-language. The 2026-10-17 generic callback-based `languageFragment` added to Communicating was reverted because it proved only syntactic parent-filtering by construction. Qualified development resumes at the missing source-to-incidence morphism, not another standalone English grammar or pseudo-mathematical filter.
 
 ## Thesis: constrain English rather than translate it into private jargon
 
