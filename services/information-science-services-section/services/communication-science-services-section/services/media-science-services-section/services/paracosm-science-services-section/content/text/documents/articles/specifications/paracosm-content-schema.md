@@ -261,15 +261,14 @@ written by hand.
 
 ### `novum`
 
-A departure from the actual world. Everything a paracosm does not declare
-is the actual world (minimal departure). Lives in `nova/`.
+A departure from the actual world. Under the **minimal departure reading convention**, a reader tentatively supplies familiar actual-world details unless a work gives reason otherwise. **That inference is not a settled world claim.** A newly encountered world with its own creation and laws does not automatically inherit all Earth-specific facts. The current `novum` entry type lives in `nova/`; its existing parser contract remains unchanged.
 
 - `departs-from:` — the actual-world fact departed from, with `source:`
   (a citation).
 - `consequences:` — slugs of the dynamics, events, factions or things the
-  novum drives. A novum without recorded consequences needs editorial review; do not treat
-its lack of an explicit consequence link as a proof that the fictional fact
-or the source author's intention is false.
+  novum drives. A novum without recorded consequences needs editorial
+  review. Missing links do not prove that a fictional claim is false or
+  that its source author intended no consequences.
 
 ### `dynamic`
 
