@@ -118,6 +118,25 @@ is absent. Read original sources, write evidence rows, then derive the prose.
 A bounded claim of no evidence requires an actual search of the relevant
 discipline, not simply a missing PubMed hit.
 
+**Historically situated modifiers across domains.** When the Leader asks for a
+named tradition *applied* to a new practice (e.g., "Dadaist hustle," "Gonzo
+hustle"), **recover the tradition as a real prior artistic, philosophical or
+social practice before extracting its component techniques**. Read its
+original work, participants, context and source-critical interpretations;
+identify the practice being modified (e.g., hustle), the activity's end that
+remains, and what changes in the actor's relation to the world, work method,
+product and receiver. Distinguish the historical tradition from particular
+stylistic motifs, substance use, jokes, scenarios and techniques. Do not
+define the modifier by counting conspicuous behaviors, turn it into a generic
+competency, or require a new population prevalence study before stating a
+coherent interpretive comparison. Study such traits as possible situated
+expressions or mechanisms **after** reconstructing the governing tradition.
+Keep separate the sourced historical meaning, the proposed cross-domain
+interpretation, participant self-descriptions, actual observed occurrences,
+and claims about frequency, causal advantage or harms. If the comparison
+breaks down, correct the scope of the interpretation rather than silently
+replacing the named tradition with a collection of symptoms.
+
 ### 3. Read the sources and derive the theory
 
 Read each source named in step 1 or 2 from its first-party surface. Derive what
