@@ -17,4 +17,4 @@ status: evidence-checked
 
 NC 1950 white population 2,983,121, total population 4,061,929; NC 1960 white population 3,399,285, total population 4,556,155. White classification headcount grew 416,164 or 13.95%, not equivalent to natural increase or eugenic policy treatment effect. Original Table 48 flags changes in race/census conventions.
 
-Used in [the white-increase research note](../notes/2026/10/17/2026-10-17-white-increase-and-reproductive-selection-contradiction.md), together with the machine-readable [evidence record](../../../../../../../../../data/records/white-increase-eugenic-selection-measurements-2026-10-17.json). Original racial taxonomy is historical evidence, not biological fact. Administrative operations are not a count of births averted.
+Used in [the white-increase research note](../notes/2026/10/17/2026-10-17-white-increase-and-reproductive-selection-contradiction.md), together with the machine-readable [evidence record](../../../../../data/records/white-increase-eugenic-selection-measurements-2026-10-17.json). Original racial taxonomy is historical evidence, not biological fact. Administrative operations are not a count of births averted.
