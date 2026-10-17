@@ -4,9 +4,9 @@
   "status": "literature-screen-only",
   "as_of": "2026-10-16",
   "scientific_owner": "lenticule-science/science-services-section / social-science / sociology / work-science / gonzo-ghettoism",
-  "question": "Which features, if any, distinguish the proposed gonzo hustle from already documented street hustle and entrepreneurial hustle, and what economic consequences do those distinctive features have?",
+  "question": "How do drug markets and intoxicant-shaped situations interact with clowning, grotesque humor, provocation and improvisation in a specifically gonzo mode of American street hustling; and what do these interactions produce economically, socially and materially?",
   "method": {
-    "selection": "Purposeful *discriminant-concept* review: original artist testimony and production accounts for the focal track; original sociological studies of street hustle as the comparison category; and peer-reviewed entrepreneurial-hustle, exploitation and risk scholarship as alternative explanations. No systematic review or behavioral validation claimed.",
+    "selection": "Focused interpretive and economic research: primary clipping. song-production testimony and early music as a fictional artistic exemplar; Gonzo-journalism histories as a source for the modifier; original US studies of humor among active drug sellers; field research on specific American street economies; UK/Colombian clowning analogues explicitly outside the target population; skeptical profit-and-harm comparisons. Ordinary hustle scholarship remains control/background, not primary evidence for gonzo.",
     "searched_on": "2026-10-16",
     "inclusions": [
       "original label description of focal artwork",
@@ -14,14 +14,19 @@
       "peer-reviewed economic/urban field research",
       "independent scholarly critical alternative",
       "first-party performer/producer explanations of the focal track",
-      "peer-reviewed constructs of entrepreneurial hustle used as competing operational definitions"
+      "peer-reviewed constructs of entrepreneurial hustle used as competing operational definitions",
+      "primary scholarship on street-level humor/clowning among people participating in drug markets",
+      "Gonzo-studies scholarship that distinguishes drugs, clowning, self-implication and distortion from mere unconventional activity",
+      "qualitative cases where humor is used for authority, evasion or collective coordination",
+      "non-US comparators identified as such rather than treated as American evidence",
+      "explicit negative evidence on costs and unsuccessful trajectories"
     ],
     "exclusions": [
       "reposted song lyrics",
       "unattributed testimonials claiming universal prosperity",
       "unverified biographical claims about performers or neighborhood residents"
     ],
-    "scope": "Source comparison and hypotheses only. Street-hustle sources are comparators, not direct witnesses of the proposed gonzo quality. The focal artistic work is not a behavior sample."
+    "scope": "A research program and literature-grounded concept. No interviews conducted by this team, no measured field effect, no tested social category, no evidence that all American ghettos have drug economies. Artistic personas are not participant testimony."
   },
   "sources": [
     {
@@ -159,20 +164,117 @@
       "role": "lexical background only",
       "finding": "The ordinary adjective includes senses such as wild and unconventional; gonzo journalism admits a subjective participatory perspective.",
       "limit": "A dictionary sense does not define or validate the Leader's intended gonzo work philosophy, and clipping.'s non-first-person writing is not gonzo journalism."
+    },
+    {
+      "id": "S14",
+      "author": "Timothy Dickinson and Richard Wright",
+      "year": 2017,
+      "title": "The Funny Side of Drug Dealing: Risk, Humor, and Narrative Identity",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1111/1745-9125.12148",
+      "doi": "10.1111/1745-9125.12148",
+      "role": "direct-US-evidence: humor/clowning adjacent to illicit earning, symbolic authority and risk narration; does not establish profit uplift",
+      "finding": "Based on interview and observation material from 33 active drug sellers in St. Louis, Missouri. Humor delineated 'smart' versus 'stupid' dealer identities, validated subcultural authority, and helped narratively reduce perceived police/informant threat.",
+      "limit": "Qualitative identity/risk-perception study, not a randomized business test; no claim that all participants were intoxicated or were doing 'gonzo hustle'."
+    },
+    {
+      "id": "S15",
+      "author": "Farhan Samanani",
+      "year": 2022,
+      "title": "The long road: Hope, violence, and ethical register in London street culture",
+      "url": "https://anthrosource.onlinelibrary.wiley.com/doi/10.1111/amet.13067",
+      "doi": "10.1111/amet.13067",
+      "role": "NON-US-comparator: witnessed/recounted street clowning, ironic evasion, social authority and ethics, not US estimate",
+      "finding": "London estate ethnography describes collective pranks, exaggerated stories, ironic uncertainty and 'clowning on' rivals/authority. A memorable narrative involves a drug dealer hosting a street party while appearing by video call from jail; the article warns not to confuse narrative force with verified event details.",
+      "limit": "London in 2014-15, not American ghettos; exemplary story is reported as neighborhood storytelling and the author explicitly brackets literal veracity."
+    },
+    {
+      "id": "S16",
+      "author": "David S. Wills",
+      "year": 2025,
+      "title": "What Is Gonzo?",
+      "url": "https://huntersthompson.substack.com/p/what-is-gonzo",
+      "role": "historically focused genre commentary: spells out Gonzo's drug use, dark comedy, exaggeration, violence and personal persona, NOT empirical evidence of street hustles",
+      "finding": "Describes Thompson's gonzo combination of subjectivity, immediacy, fact-fiction distortion, dark comedy, drug use, violence, fantasy, sidekicks and eccentric authorial persona. His own view is that 'true' Gonzo is a one-person historical genre.",
+      "limit": "Essay by a genre commentator, not a universal necessary-and-sufficient list; transposition to economics is explicitly the new theory's interpretive move."
+    },
+    {
+      "id": "S17",
+      "author": "Peter Richardson",
+      "year": 2016,
+      "title": "Between Journalism and Fiction: Hunter S. Thompson and the Birth of Gonzo",
+      "url": "https://online.ucpress.edu/boom/article/6/4/52/106637/Between-Journalism-and-FictionHunter-S-Thompson",
+      "doi": "10.1525/boom.2016.6.4.52",
+      "role": "Gonzo historical and author-persona framework, distinct from general hustle literature",
+      "finding": "Traces Thompson's literary formation and self-making through gonzo journalism, editors and San Francisco's countercultural networks.",
+      "limit": "History of journalistic authorship rather than evidence about economic outcomes among drug-market participants."
+    },
+    {
+      "id": "S18",
+      "author": "Barnaby King",
+      "year": 2013,
+      "title": "Carnivalesque Economies: Clowning and the Neoliberal Impasse",
+      "url": "https://archium.ateneo.edu/kk/vol1/iss21/27/",
+      "doi": "10.13185/1656-152x.1523",
+      "role": "NON-US-comparator: clowning as an intervention in social/economic power and audience rather than a harmless side activity",
+      "finding": "Uses Colombian street/organizational clown performances to analyze ambivalent relations between clowning, neoliberal institutions, public space and communicative disruption.",
+      "limit": "Professional clown and Colombia cases—not a study of American ghettos, drug sellers, or positive business returns."
+    },
+    {
+      "id": "S19",
+      "author": "Loïc Wacquant",
+      "year": 1998,
+      "title": "Inside the Zone: The Social Art of the Hustler in the Black American Ghetto",
+      "url": "https://journals.sagepub.com/doi/10.1177/026327698015002001",
+      "doi": "10.1177/026327698015002001",
+      "role": "US historical neighborhood and predatory enterprise context; general hustling, not evidence of a specifically gonzo subculture",
+      "finding": "Situated Chicago South Side street hustler case shows creative/predatory strategies under state and labor-market retrenchment and warns that some successful-looking tactics produce collective destruction.",
+      "limit": "One ethnographic case in a particular city and era. Not an automatic reason to reduce clowning to pathology."
+    },
+    {
+      "id": "S20",
+      "author": "Nicolai C. Jepsen and Lauren Eaton",
+      "year": 2025,
+      "title": "Hustle: A Conceptual Exploration of Work at the Margins",
+      "url": "https://research.cbs.dk/en/publications/hustle-a-conceptual-exploration-of-work-at-the-margins/",
+      "doi": "10.1080/17449359.2025.2503154",
+      "role": "conceptual-history comparator: US hip-hop, drug-market hustle, legitimacy and commercialization; NOT gonzo-specific field evidence",
+      "finding": "Tracks US hustle language across stigmatized informal work, hip-hop entrepreneurial appropriation, and modern startup rhetoric. Gives concrete cases of artists leveraging cultural success into business ownership.",
+      "limit": "Review/historical analysis, notable superstar cases risk survivorship bias; none measures drug-and-clowning effects."
+    },
+    {
+      "id": "S21",
+      "author": "Terry Williams and Trevor B. Milton",
+      "year": 2015,
+      "title": "The Con Men: Hustling in New York City",
+      "url": "https://cup.columbia.edu/book/the-con-men/9780231540490/",
+      "role": "US comparison of economic performance, persuasion, deceit and social manipulation; not necessarily comic or gonzo",
+      "finding": "Ethnography of New York City confidence artists emphasizes persuasion, misdirection, charm and network participation spanning neighborhood hustles and financial districts.",
+      "limit": "It documents harmful/deceptive hustles; do not equate clowning with fraud or endorse targeting victims."
+    },
+    {
+      "id": "S22",
+      "author": "clipping.",
+      "year": 2013,
+      "title": "midcity (first-party release and credit page)",
+      "url": "https://clppng.bandcamp.com/album/midcity",
+      "role": "first-party early-work context, NOT proof of band members' alleged illicit behavior",
+      "finding": "February 5, 2013 release with early clipping. production, guest performers and credited pieces, useful for a bounded comparison with 2014 CLPPNG.",
+      "limit": "Credits and song titles alone do not establish any performer or listener's drug use or business practice."
     }
   ],
   "claims": [
     {
       "id": "GG-C01",
-      "status": "definition",
-      "claim": "Gonzo Ghettoism is a proposed work philosophy whose specifically gonzo differentia remains an open question. Documentation of ordinary hustle is the comparison class, not evidence for a gonzo subtype.",
+      "status": "conceptual-definition-proposed",
+      "claim": "Gonzo hustle is hustle enacted in an outrageous, chemically charged and clowning mode: a worker participates so dramatically in the absurd economy that jokes, provocations, drug-market/consumption environments and the performance of roles can alter the work and the situation rather than merely decorate it. Gonzo Ghettoism names investigation of that mode in historically specific American ghetto economies.",
       "supports": [
-        "S01",
         "S10",
-        "S11",
-        "S12"
+        "S14",
+        "S16",
+        "S17",
+        "S20"
       ],
-      "evidence_note": "Leader supplied name and correction 2026-10-16; no cited author defines the new category. Distinctiveness must be inferred cautiously then tested, not assumed."
+      "evidence_note": "This is the Leader's concept formation, not a sociological prevalence claim. The historical Gonzo sources explain the modifier; the US drug-market humor study shows some component mechanisms. Neither proves the full combination exists in a population."
     },
     {
       "id": "GG-H01",
@@ -252,28 +354,109 @@
       "id": "GG-H06",
       "status": "hypothesis",
       "category": "gonzo-specific-discriminant-test",
-      "claim": "A proposed gonzo mode, if one is distinct, may combine high-stakes existential framing, stylized role and narrative recombination, boundary-inverting action and conspicuous acceptance of contradictory social rewards beyond ordinary hustle or urgent/unorthodox entrepreneurship.",
+      "claim": "Drug-saturated conditions and clowning can operate as active, interacting inputs of a gonzo-hustle work episode, modifying how attention, threat, credibility, audience and opportunities are produced instead of merely correlating with general risk-taking.",
       "supports": [
-        "S10",
-        "S11",
-        "S12",
-        "S13"
+        "S14",
+        "S15",
+        "S16",
+        "S10"
       ],
-      "falsifier": "A blinded operational codebook cannot reliably distinguish gonzo cases from ordinary hustle or entrepreneurial hustle, or putative gonzo markers add no incremental explanatory power after existing hustle, risk, performance and market-context measures.",
-      "caution": "None of the listed sources claims to establish this unique conjunction in economic field participants; case-definition is proposed and may fail."
+      "falsifier": "Comparative or longitudinal evidence finds no change in work events, counterparties, status or economic outcome when comic participation and drug-related context vary, beyond ordinary hustle and existing performance effects.",
+      "caution": "Direct US observation of humor in drug markets supports some components but does not causally estimate a combined effect; the London study is explicitly a comparator."
     },
     {
       "id": "GG-H07",
       "status": "hypothesis",
       "category": "source-interpretation-not-empirical-generalization",
-      "claim": "The art of Work Work may supply a bounded representation of risk, money, mortality, drug and gun tropes, conspicuous style and cross-persona montage that motivates a gonzo-specific question rather than ordinary earning tactics.",
+      "claim": "clipping.'s Work Work provides a specifically gonzo artistic exemplar through stylized drug/gun hustle, gross slapstick material production, deliberate genre misrecognition, second-/third-person narrative perspective and a death/money punchline, rather than being proof of a real neighborhood's economics.",
       "supports": [
         "S10",
         "S01",
-        "S02"
+        "S02",
+        "S22"
       ],
-      "falsifier": "Source testimony or competing close readings fail to support the proposed markers; distinct economic behavior still requires independent evidence.",
-      "caution": "The creators explicitly describe fictional and composite narrators and do not equate them with real people."
+      "falsifier": "First-party production testimony and observed artwork fail to establish these features. No field-population claim follows even if the art reading stands.",
+      "caution": "The artists explicitly avoid autobiographical true-story narration."
+    },
+    {
+      "id": "GG-C03",
+      "status": "conceptual-distinction",
+      "category": "modifier-transfer",
+      "claim": "The distinction between journalism and gonzo journalism is an altered *mode of participation and production*: active immersion, intoxication, comic excess, persona, grotesque satire and fact/fiction instability. When transferred to hustle, the modifier concerns how work is performed and experienced, not merely the worker's demographics, poverty or business efficiency.",
+      "supports": [
+        "S16",
+        "S17",
+        "S10"
+      ],
+      "falsifier": "Conceptual mapping is incoherent when its operative roles are explicitly stated, or primary Gonzo testimony contradicts the supposed ingredients.",
+      "caution": "This is a comparative interpretation across arts and economic work, not a definition asserted by Thompson or clipping."
+    },
+    {
+      "id": "GG-H08",
+      "status": "empirically-supported-components",
+      "category": "US-qualitative-clowning-drug-market-relationship",
+      "claim": "In an observed St. Louis drug-selling sample, humor helped sustain subcultural identity, authority and threat narratives, so comic self-presentation is not simply irrelevant to the economic situation.",
+      "supports": [
+        "S14"
+      ],
+      "falsifier": "Original study or follow-up evidence fails to support the reported narrative/authority roles; no actual profit or harm reduction is inferred.",
+      "caution": "Findings about narratives and perceived threats do not prove strategic efficiency, reduced objective risk or net wealth gains."
+    },
+    {
+      "id": "GG-H09",
+      "status": "open-causal-hypothesis",
+      "category": "gonzo-business-mechanism",
+      "claim": "Clowning may affect the terms of an exchange—audience arrival, counterparties' perceived authority, willingness to join, credit, bargaining or attention—rather than being only entertainment around completed work.",
+      "supports": [
+        "S14",
+        "S15",
+        "S16",
+        "S21"
+      ],
+      "falsifier": "In comparable settings, observed humor variation does not precede measurable changes in participation, counterparties, exchange terms or audience behavior.",
+      "caution": "Distinguish voluntary customer value and play from misdirection, extraction or non-consensual harm. London/Colombia materials are not US field estimates."
+    },
+    {
+      "id": "GG-H10",
+      "status": "open-causal-hypothesis",
+      "category": "drug-conditions-interaction",
+      "claim": "Drug-market commodities, personal intoxication, drug-related social venues and prohibition/enforcement create different routes by which chemical economies may enter the work event; their effects and interactions with clowning should be measured separately.",
+      "supports": [
+        "S14",
+        "S10",
+        "S07",
+        "S08"
+      ],
+      "falsifier": "The supposed drug-related component is absent or does not change the specified work mechanisms in the studied cases; the same performance is explained by ordinary non-drug enterprise.",
+      "caution": "Never infer participant consumption from selling drugs, musical drug tropes or living in an area with a drug market. No recommendation for intoxication as a work technique."
+    },
+    {
+      "id": "GG-H11",
+      "status": "open-empirical-hypothesis",
+      "category": "gonzo-success-and-cost",
+      "claim": "Some practitioners of the proposed gonzo work mode may outperform conventional firms or similarly constrained hustlers on specific dimensions (attention generation, rapid revenue, social coordination or opportunity access) while underperforming on net profits, durability, safety or harms.",
+      "supports": [
+        "S14",
+        "S19",
+        "S06",
+        "S20"
+      ],
+      "falsifier": "Comparable complete-cohort measures show no performance edge on any preregistered relevant dimension or show only selection/visibility effects.",
+      "caution": "No known count or rate of such practitioners and no proven exceptional returns; artist-celebrity wealth is a selected outcome."
+    },
+    {
+      "id": "GG-H12",
+      "status": "open-interpretive-hypothesis",
+      "category": "gonzo-comic-failure",
+      "claim": "Gonzo hustle can succeed by staging the economy's absurdity and can also become its own self-destructive joke; catastrophic failure is a central possible result, not an excluded counterexample.",
+      "supports": [
+        "S10",
+        "S16",
+        "S17",
+        "S14"
+      ],
+      "falsifier": "Careful case studies show no self-implicating comedy, counterproductive excess or active involvement in outcomes beyond ordinary sober bargaining.",
+      "caution": "Failure or drug-related harm must not be romanticized as proof of authenticity."
     }
   ],
   "receiving": {
@@ -287,5 +470,44 @@
       "deployed income-generating service"
     ]
   },
-  "revision_note": "2026-10-16: Leader corrected prior conflation of Venkatesh's ordinary hustle scholarship with specifically gonzo hustle. Reclassified the earlier five hypotheses as general-hustle/background or artwork, added original artist account and entrepreneurship comparators, and made the gonzo distinguishing claim explicitly tentative and falsifiable."
+  "revision_note": "2026-10-16: Leader corrected prior conflation of Venkatesh's ordinary hustle scholarship with specifically gonzo hustle. Reclassified the earlier five hypotheses as general-hustle/background or artwork, added original artist account and entrepreneurship comparators, and made the gonzo distinguishing claim explicitly tentative and falsifiable.\n2026-10-16 follow-up: restored drugs and clowning from euphemistic theatrical/risk shorthand to central work-mode mechanisms, based on original user intent; added direct St. Louis empirical humor research, non-US street-clowning comparator, genre history and economic-hustle contextual scholarship. Distinguishes conceptual theory from empirical prevalence, causal and financial claims.",
+  "measurement_design": {
+    "status": "protocol-proposed-not-executed",
+    "observational_unit": "situated work episode + participants, audience, transactions, comic intervention, drug-exposure context and recorded outcomes, not an ethnic or behavioral type assigned to people",
+    "work_carrier": "existing attributable Work(agent, capability, situation, result); this study adds situation/intervention/outcome predicates instead of rewriting the base definition",
+    "drug_channels": [
+      "commodity sold/exchanged",
+      "substances personally consumed (only with participant consent and credible evidence)",
+      "shared venue and social networks",
+      "prohibition/enforcement policy and exposure",
+      "drug-shaped cultural imagery independent of personal use"
+    ],
+    "clown_channels": [
+      "live joke/prank/provocation",
+      "role inversion/performative foolishness",
+      "grotesque satire/hyperbole",
+      "audience co-performance and reputational games",
+      "narrative self-mockery or strategic disavowal"
+    ],
+    "outcomes": [
+      "audience size and sustained attention",
+      "legitimate voluntary exchange and repeat buyers",
+      "net proceeds and capital accumulation",
+      "mutual-aid/network response",
+      "reputation/authority",
+      "objective adverse events",
+      "reported injuries and exploitation",
+      "opportunity cost and work time",
+      "externalities borne by community and other actors"
+    ],
+    "minimum_comparisons": [
+      "ordinary informal hustle without clowning",
+      "drug-market activity without clowning",
+      "clowning/showmanship without a drug context",
+      "co-occurring clown and drug saturation",
+      "formal business comparison where materially comparable"
+    ],
+    "falsification": "Two independently coded cases with comparable economic and institutional context may fail to show a gonzo pattern or incremental outcomes; then shrink/revise the proposed theory, while retaining any supported source-specific mechanisms.",
+    "publication_boundary": "No recruitment, incriminating data, substance testing or claims of clinical efficacy; obtain qualified community-led ethics procedures before primary field research."
+  }
 }
