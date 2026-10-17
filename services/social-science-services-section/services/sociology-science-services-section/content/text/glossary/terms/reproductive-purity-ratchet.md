@@ -7,7 +7,7 @@ status: conjectured-mechanism
 
 # Reproductive purity ratchet
 
-**Reproductive purity ratchet** names an *unassayed mechanism* in which failure to realize an imagined ideal white breeder leads institutions to tighten reproductive eligibility repeatedly, shrinking the eligible population even when its ideology claims to preserve that population.
+**Reproductive purity ratchet** names an *unassayed historical selection feedback*: institutions unable to produce an imagined acceptable reproductive lineage keep tightening the eligibility rule, consuming the cohort's reproductive continuity before an end condition of **at least two acceptable reproducers** is ever met. Its distinctive prediction concerns **relative times to a moving goal and demographic failure**, not a historical claim that all whiteness converges biologically or that exactly two people remain.
 
 Evidence that some white people were sterilized or excluded through eugenic criteria (Stubblefield 2007; Caron 2008) establishes an **internal exclusion mechanism** but does not establish self-reinforcing escalation, demographic collapse or deliberate pursuit of extinction.
 
