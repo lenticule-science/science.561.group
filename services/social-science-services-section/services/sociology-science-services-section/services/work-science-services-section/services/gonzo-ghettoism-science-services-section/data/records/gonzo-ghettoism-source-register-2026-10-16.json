@@ -260,6 +260,17 @@
       "role": "first-party early-work context, NOT proof of band members' alleged illicit behavior",
       "finding": "February 5, 2013 release with early clipping. production, guest performers and credited pieces, useful for a bounded comparison with 2014 CLPPNG.",
       "limit": "Credits and song titles alone do not establish any performer or listener's drug use or business practice."
+    },
+    {
+      "id": "S23",
+      "author": "Heith Copes, Andy Hochstetler and J. Patrick Williams",
+      "year": 2008,
+      "title": "'We Weren't Like No Regular Dope Fiends': Negotiating Hustler and Crackhead Identities",
+      "url": "https://academic.oup.com/socpro/article-abstract/55/2/254/1659680",
+      "doi": "10.1525/sp.2008.55.2.254",
+      "role": "direct-US research on the distinction between being a hustler, using drugs, and being labeled an addict; comic/status differentiation, NOT gonzo prevalence",
+      "finding": "Interviews with 28 men convicted of violent street crimes examine narrative and interactional boundaries between hustler and 'crackhead' identities inside crack-cocaine street economies; demonstrates why working, selling, using and social categorization must be separated.",
+      "limit": "Historically bounded, justice-system-selected male interview sample; self-described distinctions do not imply actual drug use, success, superior work performance or ethically acceptable mockery. Some narratives stigmatize and exploit dependent users."
     }
   ],
   "claims": [
@@ -457,6 +468,17 @@
       ],
       "falsifier": "Careful case studies show no self-implicating comedy, counterproductive excess or active involvement in outcomes beyond ordinary sober bargaining.",
       "caution": "Failure or drug-related harm must not be romanticized as proof of authenticity."
+    },
+    {
+      "id": "GG-H13",
+      "status": "supported-qualitative-observation-plus-open-gonzo-mechanism",
+      "category": "US-drug-identity-and-humor",
+      "claim": "In one US study of men convicted of violent street crimes, hustler and crackhead identities were actively negotiated, so people can use styles, humor, status and claims of self-control to separate their economic identities from the stigma of dependence even inside the same drug ecology.",
+      "supports": [
+        "S23"
+      ],
+      "falsifier": "The original paper's recorded sample does not support the stated boundary work; the extension to a distinct gonzo causal effect remains untested.",
+      "caution": "Do not validate participants' denigration of people with addictions; the economic and ethical consequences of humiliating jokes must be assessed separately."
     }
   ],
   "receiving": {
@@ -470,7 +492,7 @@
       "deployed income-generating service"
     ]
   },
-  "revision_note": "2026-10-16: Leader corrected prior conflation of Venkatesh's ordinary hustle scholarship with specifically gonzo hustle. Reclassified the earlier five hypotheses as general-hustle/background or artwork, added original artist account and entrepreneurship comparators, and made the gonzo distinguishing claim explicitly tentative and falsifiable.\n2026-10-16 follow-up: restored drugs and clowning from euphemistic theatrical/risk shorthand to central work-mode mechanisms, based on original user intent; added direct St. Louis empirical humor research, non-US street-clowning comparator, genre history and economic-hustle contextual scholarship. Distinguishes conceptual theory from empirical prevalence, causal and financial claims.",
+  "revision_note": "2026-10-16: Leader corrected prior conflation of Venkatesh's ordinary hustle scholarship with specifically gonzo hustle. Reclassified the earlier five hypotheses as general-hustle/background or artwork, added original artist account and entrepreneurship comparators, and made the gonzo distinguishing claim explicitly tentative and falsifiable.\n2026-10-16 follow-up: restored drugs and clowning from euphemistic theatrical/risk shorthand to central work-mode mechanisms, based on original user intent; added direct St. Louis empirical humor research, non-US street-clowning comparator, genre history and economic-hustle contextual scholarship. Distinguishes conceptual theory from empirical prevalence, causal and financial claims.\nAdditional direct US drug-hustler identity source Copes/Hochstetler/Williams 2008 distinguishes selling, using, self-presentation and derogatory clowning, including harms to others.",
   "measurement_design": {
     "status": "protocol-proposed-not-executed",
     "observational_unit": "situated work episode + participants, audience, transactions, comic intervention, drug-exposure context and recorded outcomes, not an ethnic or behavioral type assigned to people",
