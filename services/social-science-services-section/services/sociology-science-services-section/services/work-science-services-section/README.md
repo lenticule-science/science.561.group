@@ -120,10 +120,12 @@ pre-revision source versions in the [prior source revision](https://github.com/l
 American platform-work research remains in
 [Gig Work Science](services/gig-work-science-services-section/README.md).
 
-The new [Gonzo Ghettoism Science](services/gonzo-ghettoism-science-services-section/README.md)
-studies a proposed work philosophy of resource improvisation and opportunity-responsive
-enterprise under institutional exclusion. It incorporates music as a bounded
-cultural interpretive case, locates quantitative evidence and counterevidence,
-and tests whether specific capabilities can transfer into lawful businesses.
-It does not equate disadvantaged neighborhoods with drug markets or infer
-prosperity from conspicuous successes.
+[Gonzo Ghettoism Science](services/gonzo-ghettoism-science-services-section/README.md)
+asks whether a proposed *gonzo* form of work—suggested by clipping.'s
+non-autobiographical, extreme and self-consciously recombined "Work Work"—is
+empirically distinguishable from ordinary street hustle, existing entrepreneurial
+hustle and transgressive work in general. Venkatesh and Thieme supply the
+**background hustle comparison**, never gonzo-specific proof. Its first
+obligation is a discriminating test; economic transfer and business benefits
+remain downstream unknowns. Neither drug participation nor racial or
+neighborhood identity establishes the proposed class.
