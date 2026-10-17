@@ -19,6 +19,15 @@ subdomains continue under `services/`.
 [`work-science-services-section/`](services/work-science-services-section/README.md)
 holds the work, governance, gig-work, and formal work research program.
 
+## Client research: settler social reproduction (2026-10-17)
+
+The original client's question is treated as an externally commissioned **research problem**, not as an invitation to prove an assumed answer. Results live in two separately assessable scholarly manuscripts, a source-qualified bibliography, and an independently readable historic-demographic data carrier. **Author credit, source-review completion, actual service installation and publication receiving are distinct unresolved gates.**
+
+- [**The Future White** — selective reproductive ideals, ordinary settlers' expendability and reproduction of settler rule](content/text/documents/articles/notes/2026/10/17/2026-10-17-manuscript-selective-futurity-and-settler-continuity.md), historical/conceptual article draft for *Settler Colonial Studies*.
+- [**Birth into Captivity and the Reproductive Generation** — U.S. births 1790–1859](content/text/documents/articles/notes/2026/10/17/2026-10-17-manuscript-captive-births-and-settler-reproduction.md), source-audited demographic data/research note draft for *The History of the Family*.
+- [**Client publication commission and receiving dossier**](content/text/documents/articles/notes/2026/10/17/2026-10-17-client-publication-commission.md), originality boundaries, journal/author gates, exact Science–CAIRN supplier identities, unresolved failure classes, and evidence acceptance.
+- [**Captive-birth source series (actual CAIRN consumer fixture)**](data/records/2026-10-17-captive-birth-shares-source-series.json), period inputs and sensitivity, source NI and executable read described in the dossier; this is not proof of a live L-Space mount.
+
 ## Research working papers
 
 [Reference Without Deference: Radical Political Learning, Anarchist Praxis,
