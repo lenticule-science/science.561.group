@@ -23,7 +23,7 @@ classification: "OECD FORD 5.4 Sociology / sociology of work; linked to FORD 5.2
 
 - [Concept / operative definition](content/text/glossary/terms/gonzo-ghettoism.md): transfers the gonzo modifier onto Work without altering the established meaning of Work; names drug and clowning operators rather than euphemizing them.
 - [Substantive research paper](content/text/documents/articles/notes/2026/10/16/2026-10-16-note-on-gonzo-ghettoism-as-a-work-philosophy.md): interprets the art; compares historical Gonzo to hustle; studies drug-market humor; models economics, work episodes, success and failure.
-- [Source and claim register](data/records/gonzo-ghettoism-source-register-2026-10-16.json): 22 individual scholarly/artistic/lexical sources with roles, caveats, 15 conceptual/empirical claim records and a proposed measurement design.
+- [Source and claim register](data/records/gonzo-ghettoism-source-register-2026-10-16.json): 23 individual scholarly/artistic/lexical sources with roles, caveats, 16 conceptual/empirical claim records and a proposed measurement design.
 
 ## Working practice through the real research provider
 
