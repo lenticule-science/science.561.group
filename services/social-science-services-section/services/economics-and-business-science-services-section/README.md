@@ -11,15 +11,24 @@ appropriate operations or enterprise section.
 ## Cross-field business-economics question
 
 [Work Science's Gonzo Ghettoism research](../sociology-science-services-section/services/work-science-services-section/services/gonzo-ghettoism-science-services-section/README.md)
-first asks whether a distinct *gonzo* mode of work can be identified
-beyond ordinary hustle (Venkatesh and Thieme), urgent/unorthodox entrepreneurial
-hustle (Fisher et al.) and transgressive hustle (Ilan). General mechanisms
-such as multiplex earnings, bricolage and informal credit are **controls**, not
-evidence for a gonzo subtype. If and only if discriminant tests establish a
-meaningful differentia should Economics test additional effects on liquidity,
-venture opportunities, worker harm, earnings or capability transfer.
-The Work Science section owns the sociological theory and its original source
-register. This Economics and Business field is a **potential receiving consumer**
-of appropriately evidenced claims about net earnings, business survival,
-non-extractive enterprise design and representative outcomes. No field trial,
-profitability estimate, business product or transfer effect has yet been received.
+studies **the economics of chemically charged clowning as a mode of hustle**,
+not generic entrepreneurial initiative with a provocative brand name. Relevant
+possible mechanisms include humor as informal authority, audience/crowd
+formation, ridiculous production methods, intoxication-affected work
+constraints, social networks linked to drug markets, and the dramatic
+reframing of an actual transaction. This domain can test who pays, who
+benefits, who loses, how much cash or attention is produced, and whether
+a particularly gonzo practice can succeed outside conventional banking,
+professional presentation or formal business structures. It must report
+successes, failed ventures, injuries and involuntary third-party losses
+separately.
+
+The Work Science section owns the philosophy, situated mechanisms and
+source register. Ordinary street hustle literature (e.g. Venkatesh),
+entrepreneurial hustle (Fisher et al.), and general transgressive hustle
+(Ilan) are comparisons only; they **cannot replace the drugs-and-clowning
+phenomenon that motivates the theory**. The empirical success claim is open:
+no observed population-level net advantage, causal return or live
+business product has been received. Economics and Business Science remains
+a potential receiver of sound research results, not the scientific owner
+of the culture or any authorization for a specific transaction.
