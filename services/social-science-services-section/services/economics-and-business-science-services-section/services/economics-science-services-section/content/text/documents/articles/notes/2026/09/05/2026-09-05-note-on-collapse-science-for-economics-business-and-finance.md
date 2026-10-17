@@ -41,6 +41,12 @@ supports or complicates, and the measurable indicators the literature proposes
 for tracking it. Every claim is marked as the source's own, the fintech note's,
 or this note's reading.
 
+## 2026-10-17 development: capacity ownership is not an EROEI inference
+
+The Leader's [flow-capacity economy research](../../10/17/2026-10-17-note-on-capacity-ownership-in-a-flow-economy.md) defines a new object of economic ownership: a share of ecologically admissible future **service capacity**, with distinct physical feasibility, institutional authority, and distributable monetary surplus. This extends the present note's question from "how does energy descent constrain the three divisions?" to "what must an economy own and reproduce if its object is durable productive capacity?" It is **not** a model-implied conclusion of Hall, Morgan, Odum, or Georgescu-Roegen. Their work motivates physical limits and accounting but does not specify the new capacity-share entitlement.
+
+Correct inference discipline: the net-energy fraction \(1-1/\mathrm{EROEI}\) follows from a stated physical boundary; an overall economic decline, civilizational collapse, or legal entitlement does not follow from that identity alone. Absolute-net-energy-peak dates in earlier source notes are **model projections unless independently observed**, not measurements. Watershed and atmospheric service bundles must be measured by typed, coupled service constraints; EROEI cannot absorb habitat, governance, and finance into a single joule numerator. The new note states counterexamples, baseline and rights requirements, and the still-unrecovered Obsmetrologia meaning of distal bypass. This is a research development, not a revision of the historical 2026-09-05 literature readings below.
+
 ## 1. Economics: the outermost division, energy as the substrate
 
 **What the literature says.** The economics division is where the literature
