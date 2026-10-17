@@ -15,7 +15,7 @@ aliases:
 
 # Generative spiral
 
-The **generative spiral** is the composition of [Turns](turn.md). One Turn articulates, predicates, posits, and settles; its residual may become the next Turn's opening. It is a spiral because the operations return but the inhabited content, generative depth, and available relations can change.
+The **generative spiral** is successive [Attending](attending.md) through [Turns](turn.md). An Attending articulates, predicates, posits, and settles; its Turn holds the resulting codomains and their residual may open another Attending. It is a spiral because the operations return but the inhabited content, generative depth, and available relations can change.
 
 The **Turn** concept is the canonical source for the four-regime correspondence, the Padovan–Fibonacci–Tribonacci–\(n\)-bonacci selection conjecture, and the residual re-entry law. Keep that claim, its formula, and its source genealogy there rather than rebuilding a different regime table under this alias.
 

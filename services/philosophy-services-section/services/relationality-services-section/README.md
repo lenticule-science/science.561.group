@@ -6,7 +6,7 @@ The [inductive paradox of relationlessness](content/text/glossary/terms/relation
 
 ## The canonical generative account
 
-A [**Turn**](content/text/glossary/concepts/turn.md) is one traversal of **articulation → predication → positing → settlement**, with a residual that may generate the next Turn. The Turn record owns the complete generative spiral, the relation between its four operations and closure regimes, and the **Padovan → Fibonacci → Tribonacci → \(n\)-bonacci** Pisot inflation conjecture. Other sections should link to that account rather than independently reinterpret its table.
+[**Attending**](content/text/glossary/concepts/attending.md) is the complete act **articulate → predicate → posit → settle**. A [**Turn**](content/text/glossary/concepts/turn.md) is its stage-indexed diagram of four codomains and connecting maps. [**Caring**](content/text/glossary/concepts/caring.md) is the metaphysical conjecture that the complete Attending is the fundamental form of care. The Turn record owns the generative spiral and the **Padovan → Fibonacci → Tribonacci → \(n\)-bonacci** Pisot inflation conjecture. Other sections should link to that account rather than independently reinterpret its table.
 
 For distinct mathematical meanings, consult [residuation](content/text/glossary/concepts/residuation.md), [KZ lax idempotence](content/text/glossary/terms/kz-lax.md), [twistoring](content/text/glossary/terms/twistoring.md), and the [relational arrow of time](content/text/glossary/terms/relational-arrow-of-time.md). Their proposed joint realization is the Turn's research direction.
 

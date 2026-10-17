@@ -17,7 +17,7 @@ keywords:
 
 **Relationality is our metaphysics of existence.** Relating constitutes entities, rather than joining independently constituted things. The [inductive paradox of relationlessness](../terms/relationlessness.md) supplies the originating argument: absolute exclusion of relation cannot determine itself without articulating a distinction.
 
-The theory proceeds through a [**Turn**](../concepts/turn.md): **articulate → predicate → posit → settle**. We conjecture that the Turn's closure and residual re-entry generate a spiral from kinematic possibility through quantum and causal structure into finite settlement, and back into renewed kinematic possibility. The Turn record gives the full recurrence/Pisot selection conjecture, source genealogy, and exact mathematical bridge.
+The theory calls the complete four-part act [**Attending**](../concepts/attending.md): **articulate → predicate → posit → settle**. Its stage codomains constitute a [**Turn**](../concepts/turn.md). We conjecture that [**Caring**](../concepts/caring.md) is the full relational character of this act. Attending and residual re-entry generate a spiral from kinematic possibility through quantum and causal structure into finite settlement, and back into renewed kinematic possibility. The Turn record gives the full recurrence/Pisot selection conjecture, source genealogy, and exact mathematical bridge.
 
 The [relational hyperverse](../terms/relational-hyperverse.md) is the proposal that completed universes themselves become relata of further universe-generation. [Lambek residuation](../concepts/residuation.md), [KZ lax idempotence](../terms/kz-lax.md), and [twistoring](../terms/twistoring.md) state the mathematical readings to be brought into the one generative construction.
 

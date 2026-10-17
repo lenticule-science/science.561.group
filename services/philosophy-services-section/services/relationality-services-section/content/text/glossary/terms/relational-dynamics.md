@@ -25,7 +25,7 @@ A conversation persists by continued responses and recognition. A settlement per
 
 The [inductive paradox of relationlessness](relationlessness.md) starts the inquiry. Exclusion articulates an orientation that exclusion itself cannot escape. [Reflexivity](reflexivity.md) permits the resulting relation to be taken up in further relating.
 
-The [Turn](../concepts/turn.md) is the unit of this dynamics: articulation, predication, positing, settlement, and residual re-entry. The Turn record states the physical and recurrence correspondences once. The [relational arrow of time](relational-arrow-of-time.md) concerns the direction preserved across Turns.
+The [Attending](../concepts/attending.md) composite is the four-part activity of this dynamics; a [Turn](../concepts/turn.md) is the complete field of stage codomains it produces. The [Caring](../concepts/caring.md) conjecture identifies what this whole directed activity may be at the metaphysical level. The Turn record states the physical and recurrence correspondences once. The [relational arrow of time](relational-arrow-of-time.md) concerns the direction preserved across Turns.
 
 This framework also gives practical questions about collective settlements: which local relations glue, which contradictions remain held, and which new kinds of inquiry appear when an inhabited system composes with others?
 

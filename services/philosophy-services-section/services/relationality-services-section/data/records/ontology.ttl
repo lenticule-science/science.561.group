@@ -1749,13 +1749,27 @@ rel:March28RelationlessnessSense a skos:Concept ;
 # Legacy derivation concepts and their separate source scopes remain unchanged.
 # The link identifies a Science research concept; it is not an owl:sameAs
 # assertion between distinct historical constructions or a proof certificate.
-rel:GenerativeTurn a rel:RelationalConcept, skos:Concept ;
+rel:GenerativeTurn a rel:Structure, skos:Concept ;
     skos:prefLabel "Turn"@en ;
     skos:altLabel "generative turn"@en, "kinematic closure turn"@en ;
-    skos:definition "One articulation-to-settlement traversal of relational generation whose residual can become the next traversal's admissible articulation."@en ;
-    skos:scopeNote "A Turn is not a scheduled tick, an individual closure-regime label, a conversation turn, or an already constructed causal-set kinematic space. Read the source for its full four-stage structure."@en ;
+    skos:definition "The typed stage-indexed diagram of all four codomains and their maps in one complete relational Attending; a particular occurrence supplies one trace through the diagram."@en ;
+    skos:scopeNote "Turn is the structured codomain family, not the Attending composite, the Caring conjecture, a clock tick, or an ordinal regime. The canonical Turn statement owns the regime–Pisot selection conjecture."@en ;
     dcterms:source <https://github.com/lenticule-science/science-services-section/blob/main/services/philosophy-services-section/services/relationality-services-section/content/text/glossary/concepts/turn.md> ;
-    rdfs:seeAlso rel:RegimePisotSelectionConjecture .
+    rdfs:seeAlso rel:Attending, rel:Caring, rel:RegimePisotSelectionConjecture .
+
+rel:Attending a rel:Act, skos:Concept ;
+    skos:prefLabel "Attending"@en ;
+    skos:definition "The oriented four-part composite articulate then predicate then posit then settle, with evidence and closure supplied or lawfully generated in a declared context; its codomains form a Turn."@en ;
+    skos:scopeNote "Not a Turn codomain; not Group ATT, a time budget, institutional receiving, or a verified derivation of all evidential inputs from Marks."@en ;
+    dcterms:source <https://github.com/lenticule-science/science-services-section/blob/main/services/philosophy-services-section/services/relationality-services-section/content/text/glossary/concepts/attending.md> ;
+    rdfs:seeAlso rel:GenerativeTurn, rel:Caring .
+
+rel:Caring a rel:Act, skos:Concept ;
+    skos:prefLabel "Caring"@en ;
+    skos:definition "The metaphysical conjecture that the whole relational act of Attending, not an additional fifth phase, constitutes Caring through articulation, predication, positing, and settlement."@en ;
+    skos:scopeNote "Distinct from ethical caring's additional requirements of response, reception and particular material consequences; not a certificate that an autonomous computation has cared for another person."@en ;
+    dcterms:source <https://github.com/lenticule-science/science-services-section/blob/main/services/philosophy-services-section/services/relationality-services-section/content/text/glossary/concepts/caring.md> ;
+    rdfs:seeAlso rel:Attending, rel:GenerativeTurn .
 
 rel:RegimePisotSelectionConjecture a skos:Concept ;
     skos:prefLabel "Regime–Pisot selection conjecture"@en ;

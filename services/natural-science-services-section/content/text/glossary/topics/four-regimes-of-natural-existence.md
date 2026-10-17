@@ -15,7 +15,7 @@ regimes — [thermodynamic existence](../terms/thermodynamic-existence.md),
 [kinetic existence](../terms/kinetic-existence.md) — together with the deep
 dive on the regime most distinctive of nature's capacity for novelty, [kinetic
 existence as the aperiodic regime](../../documents/articles/teaching-articles/explanations/kinetic-existence-as-the-aperiodic-regime.md).
-Each term names its own scientific subject, source corpus, and proof discipline. The [Turn](https://github.com/lenticule-science/science-services-section/blob/main/services/philosophy-services-section/services/relationality-services-section/content/text/glossary/concepts/turn.md) owns the shared articulate → predicate → posit → settle construction and its **Padovan/Fibonacci/Tribonacci/n-bonacci** regime-inflation conjecture.
+Each term names its own scientific subject, source corpus, and proof discipline. The [Attending](https://github.com/lenticule-science/science-services-section/blob/main/services/philosophy-services-section/services/relationality-services-section/content/text/glossary/concepts/attending.md) composite has the four stages articulate → predicate → posit → settle. The [Turn](https://github.com/lenticule-science/science-services-section/blob/main/services/philosophy-services-section/services/relationality-services-section/content/text/glossary/concepts/turn.md) is their codomain diagram and owns the **Padovan/Fibonacci/Tribonacci/n-bonacci** regime-inflation conjecture.
 
 It sits at this level — the root of `natural-science-services-section`'s own
 glossary, above any one subdomain such as astronomy or biology — because the
