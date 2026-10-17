@@ -54,3 +54,10 @@ What it does not yet do is generate predictive claims at the meso scale — clai
 - Bhattacharyya, Gargi. *Rethinking Racial Capitalism.* Rowman & Littlefield, 2018.
 - Jenkins, Destin, and Justin Leroy, eds. *Histories of Racial Capitalism.* Columbia University Press, 2021.
 - Kelley, Robin D. G. "What Did Cedric Robinson Mean by Racial Capitalism?" *Boston Review*, January 12, 2017.
+
+
+## Research extension: white increase and selective reproduction (2026-10-17)
+
+The [new owning Sociology inquiry](../../../../notes/2026/10/17/2026-10-17-white-increase-and-reproductive-selection-contradiction.md) tests whether a racialized system can reproduce property and rule while the *purification of admissible whiteness* undercuts the reproduction of people whom it nominally claims to preserve. Distinguish total births into a social category, the subset permitted to reproduce an ideal, and the institutional power sustained by both included and excluded people's reproductive labor.
+
+Stubblefield's *tainted whiteness*, Caron's *race suicide*, Murray and Solinger on reproductive stratification, and Alphonso on hereditary captive *increase* bear on different stages of the mechanism. No unbounded purity ratchet, white biological essence, or demographic inevitability is established. The owning note gives explicit alternative models, falsifiers and annotated bibliography rather than offering a second competing definition of racial capitalism.
