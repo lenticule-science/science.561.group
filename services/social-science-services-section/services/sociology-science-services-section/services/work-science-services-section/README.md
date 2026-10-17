@@ -121,11 +121,12 @@ American platform-work research remains in
 [Gig Work Science](services/gig-work-science-services-section/README.md).
 
 [Gonzo Ghettoism Science](services/gonzo-ghettoism-science-services-section/README.md)
-asks whether a proposed *gonzo* form of work—suggested by clipping.'s
-non-autobiographical, extreme and self-consciously recombined "Work Work"—is
-empirically distinguishable from ordinary street hustle, existing entrepreneurial
-hustle and transgressive work in general. Venkatesh and Thieme supply the
-**background hustle comparison**, never gonzo-specific proof. Its first
-obligation is a discriminating test; economic transfer and business benefits
-remain downstream unknowns. Neither drug participation nor racial or
-neighborhood identity establishes the proposed class.
+studies hustle **performed through gonzo drug-shaped economic scenes, clowning,
+black comedy, absurdity and self-implicating risk** in particular American
+ghetto histories. It takes its modifier from Gonzo journalism and its original
+artistic anchor from clipping.'s "Work Work." St. Louis field research on humor
+among drug sellers and explicitly non-US research on "clowning on" give initial
+component evidence. Venkatesh and Thieme remain the **ordinary-hustle
+comparison**, not proof of this specific mode. The scientific product includes
+actual work episodes, their social/economic mechanisms, benefits and injury,
+without mistaking artistic fiction for US field observation.
