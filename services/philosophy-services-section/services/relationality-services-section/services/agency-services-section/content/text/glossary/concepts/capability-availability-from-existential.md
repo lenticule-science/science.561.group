@@ -4,6 +4,39 @@ status: sketch
 depends-on: [capability-fiber-bundle, project-fiber-to-capability, quantifier-adjoints-on-work-fibers, normative-operational-layering, capability-matching]
 title: Capability evidence aggregation and coindexed dispatch witnesses
 description: "Distinguish the knowledge-order join of per-agent FOUR evidence from the truth-order existential and the source-witnessed coindexed agent who is capable, authorized, current, and independently receivable."
+realized-by:
+  repository: red-cup-engineering/agent-organization-engine
+  package: "@red-cup-engineering/organizing"
+  module: lib/organizing/src/work/dispatch.mjs
+  pure-reader: communityDispatchCandidates
+  native-operation: community-dispatch-candidates
+  action-surface: lib/organizing/src/actions.mjs
+  status: source-merged-not-published-or-installed
+  conformance-tests: lib/organizing/test/work/community-dispatch-candidates.test.mjs
+  test-execution: unverified
+witness-invariants:
+  - one-actor-identity-per-evidence-row
+  - same-actor-capability-and-authority
+  - finite-four-readings-preserved
+  - community-population-completeness-unverified
+  - no-office-or-work-authority-from-a-diagnostic
+  - candidate-selection-precedes-bounded-preview
+golden-examples:
+  - left: potential
+    right: active
+    join-order: knowledge
+    expected: stable
+    dispatch-interpretation: heterogeneous-evidence-not-a-power
+  - left: active
+    right: absurd
+    join-order: knowledge
+    expected: active
+    dispatch-interpretation: denial-plus-unknown-not-universal-absence
+  - left: stable
+    right: absurd
+    join-order: truth
+    expected: potential
+    dispatch-interpretation: no-actor-necessarily-has-exact-potential
 ---
 
 # Capability evidence aggregation and coindexed dispatch witnesses
@@ -114,3 +147,31 @@ These follow directly from the finite FOUR tables. They are not evidence of a co
 ## Operational consequence
 
 Use the original Organizing and Work Arena readers to ask **which exact current actor has the required capabilities and legitimate authority for the same Work**. The knowledge-order adjoint remains useful for evidence aggregation and discovering possible demand. The truth-order existential remains mathematically distinct. Only the source-qualified coindexed bearer can become a candidate for native action admission. Source qualification, native validation, installed runtime and beneficiary receiving must still be independently established.
+
+## Source-owned finite vectors and Engineering consumer
+
+The source-owned finite checks above use the actual Computer Data FOUR names:
+\(\mathbf t\leftrightarrow\texttt{potential}\),
+\(\mathbf f\leftrightarrow\texttt{active}\),
+\(\bot\leftrightarrow\texttt{absurd}\), and
+\(\top\leftrightarrow\texttt{stable}\).
+They state observations and expected algebraic results rather than an
+unproved global theorem.
+
+The corresponding original Engineering source now provides
+[the per-actor community candidate reader](https://github.com/red-cup-engineering/agent-organization-engine/blob/main/lib/organizing/src/work/dispatch.mjs)
+and [the native Organizing action](https://github.com/red-cup-engineering/agent-organization-engine/blob/main/lib/organizing/src/actions.mjs)
+with [actor-indexed source tests](https://github.com/red-cup-engineering/agent-organization-engine/blob/main/lib/organizing/test/work/community-dispatch-candidates.test.mjs).
+The output is explicitly bounded, but the candidate calculation observes the
+**entire supplied actor array** before truncating the preview. It never reports
+a community-wide negative without authenticated population coverage, and
+never upgrades a matching candidate to an executor.
+
+This is one finite implementation of the corrected **coindexed-witness**
+requirement. Its actor testimonies remain caller-supplied observations:
+original Office, Incumbency, grant, Work Arena, current time, jurisdiction,
+conflicting evidence, rights and independent recipient qualification remain
+independent requirements. A current source file or a schema-valid pure
+readout is not a package release, deployed provider or completed beneficiary
+receipt. The mathematical theorem's status remains *sketch* pending its owning
+formalization and independent qualification.
