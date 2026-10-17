@@ -37,6 +37,17 @@ golden-examples:
     join-order: truth
     expected: potential
     dispatch-interpretation: no-actor-necessarily-has-exact-potential
+residuation-refusal-examples:
+  - requirement: stable
+    provision: potential
+    residuum-truth: potential
+    operational-ready: false
+    reason: source-requirement-contradiction
+  - requirement: potential
+    provision: stable
+    residuum-truth: stable
+    operational-ready: false
+    reason: provision-contradiction
 ---
 
 # Capability evidence aggregation and coindexed dispatch witnesses
@@ -175,3 +186,57 @@ independent requirements. A current source file or a schema-valid pure
 readout is not a package release, deployed provider or completed beneficiary
 receipt. The mathematical theorem's status remains *sketch* pending its owning
 formalization and independent qualification.
+
+
+## Contradictory input hidden by a positive residuum
+
+A particularly important qualification of the original finite Work Algebra
+comes **before** applying the community existential. Operational readiness
+cannot be inferred from the residuated *result* while forgetting contradiction
+in either operand.
+
+On the \(\mathbf{FOUR}\) truth order, with
+\(\mathrm{resid}(r,p)=\neg r\vee_t p\), let the requirement itself be
+\(\top\) (knowledge-family `stable`, positive **and** negative evidence).
+For the supplied provision \(\mathbf t\) (`potential`):
+
+\[
+\mathrm{resid}(\top,\mathbf t)
+= \neg\top \vee_t\mathbf t
+= \top\vee_t\mathbf t
+= \mathbf t.
+\]
+
+**The algebraic residuation is genuinely positive**—it does not license
+erasing the negative testimony attached to the original requirement.
+An operational dispatch that only checks for `stable` in the *residuum*
+can therefore return a false-ready reading. The correct diagnostic
+distinguishes the raw residue from the original evidentiary inputs:
+
+\[
+\operatorname{AdmissibleMatch}(r,p)
+\Rightarrow
+\mathrm{resid}(r,p)=\mathbf t
+\land r\ne\top
+\land p\ne\top,
+\]
+
+with further actual current-office and Work Arena authority requirements.
+The implication is a **necessary check** for the admitted dimensions,
+not a sufficient authorization law for executing anything.
+
+This concrete finite counterexample led to an original Engineering
+repair in [AOE PR #22](https://github.com/red-cup-engineering/agent-organization-engine/pull/22):
+`dispatchReadiness` preserves separately addressed, contradicted
+requirement/provision/match coordinates and refuses readiness if
+a required source cell is contradicted—even when the pure FOUR
+`delta` is `potential`.
+The existing `residuate` remains algebraically unchanged.
+
+The source-qualified `community-dispatch-candidates` action then
+counts only **uncontested** capability and authority matches for the
+same bearer. Its source tests include an original Work with a
+contradicted requirement and an uncontradicted provision. This is
+machine-readable scientific conformance input and source-level
+Engineering realization, not a claimed Lean certification, current
+host release, or independent Work receipt.
