@@ -21,9 +21,7 @@
 rel:Ontology a owl:Ontology ;
     dcterms:title "Relationality Ontology" ;
     dcterms:creator "emsenn" ;
-    dcterms:description """Formal encoding of the concepts of relationality:
-a metaphysical framework grounded in Lakota epistemologies that treats
-relations as ontologically prior to entities.""" .
+    dcterms:description """A downstream, queryable vocabulary of the relationality research program. The originating metaphysical claim is the productive irresolvability of absolute relationlessness; typed source acts and their obstructions must be generated before these OWL representations or any graph-based query is entitled to describe them.""" .
 
 # =============================================================
 # CLASSES — The Triadic Kinds
@@ -91,9 +89,11 @@ the triadic engine.""" .
 rel:Seed a owl:Class ;
     rdfs:subClassOf rel:RelationalConcept ;
     rdfs:label "Seed" ;
-    rdfs:comment """A starting point of the derivation. Neither act, condition,
-nor structure — the seed is the generative void from which the first
-act arises through self-contradiction.""" .
+    rdfs:comment """A derivation-register starting position, not an inhabited
+relationless substance or a prior mathematical object. The initial
+Relationlessness entry denotes the impossibility of an attempted complete
+exclusion of relating, whose failed finalization supplies the work of
+further articulation.""" .
 
 # =============================================================
 # MOVEMENTS — Phases of the Derivation
@@ -111,8 +111,10 @@ rel:Movement a owl:Class ;
 
 rel:Genesis a rel:Movement ;
     rdfs:label "Genesis" ;
-    skos:definition """The origin: Relationlessness self-contradicts, producing
-Reflexing and Differentiating. Precedes the five movements proper.""" ;
+    skos:definition """Genesis names the generative obligation opened when
+attempted absolute exclusion cannot account for its own oriented act.
+Reflexing and differentiating name the ensuing acts and produced positions;
+this entry is a source order, not a temporal primordial state.""" ;
     rel:derivationStep 0 .
 
 rel:MovementI a rel:Movement ;
@@ -565,10 +567,15 @@ agree.""" ;
 
 rel:Relationlessness a rel:Seed ;
     rdfs:label "Relationlessness" ;
-    skos:definition """The absence of relation. Not a thing, not a structure,
-not an operation — an absence. To describe this absence is to effect an
-exclusion between 'relation' and 'this field,' and exclusion is
-relational. Relationlessness self-contradicts, producing the first act.""" ;
+    skos:definition """The irresolvable demand for complete exclusion of
+relating. The act that attempts to exclude all relation makes a directed
+distinction between excluding and excluded, preventing final relationlessness
+from establishing itself. The retained failure conditions further Attending;
+this is neither an earlier void-object nor a least evidence charge.""" ;
+    skos:scopeNote """rel:Seed and derivationStep 0 are legacy
+source-register indices, not assertions that an inhabited Relationlessness
+object temporally preceded Mark. Graph, lattice, category and equality
+semantics are recoveries after generated relational acts, not their causes."""@en ;
     rel:inMovement rel:Genesis ;
     rel:derivationStep 0 ;
     rel:produces rel:Reflexing ;
@@ -580,10 +587,10 @@ relational. Relationlessness self-contradicts, producing the first act.""" ;
 
 rel:Reflexing a rel:Act ;
     rdfs:label "Reflexing" ;
-    skos:definition """The primitive act: turning back upon itself. Arises from
-Relationlessness's self-contradiction — the void relating to the void.
-Not chosen but compelled. Reflexing is the ENGINE; Differentiating names
-its PRODUCT. reflex(S) = relating(S, S).""" ;
+    skos:definition """Re-attending the act of attempted exclusion after its
+claimed final absence fails. The attempted act and the directed difference
+it produces become material for further relating. No independently existing
+void-object is supplied to a reflexive function as its argument.""" ;
     rel:inMovement rel:Genesis ;
     rel:derivationStep 1 ;
     rel:derivesFrom rel:Relationlessness ;

@@ -22,13 +22,13 @@ The [relationlessness paradox](relationlessness.md) gives the originating argume
 
 ## Relation, predication, and articulation
 
-A **relation** is a structured way positions can hold together or differ. An **act of relating** forms or transforms those positions. A **predication** is a typed articulation, often presented as \((s,p,o)\), whose subject and object coordinates retain their handedness. An **utterance** is a situated act through which a speaker or system presents a predication. These are related constructions, not synonyms.
+A **relating act** generates oriented positions through a consequential distinction. An **utterance** is the formal carrier by which the present system retains two such positions—token and claim—not yet a proved predicate. A **predication** is the later articulated subject–predicate–object structure \((s,p,o)\). A **relation** is the resulting structured way positions can hold together or differ. These are different stages of generation, not prior mathematical objects assembled into a starting world.
 
 Four-valued evidence records how a predication has been told. It does not create the act from a blank primordial evidence bit. This direction—from marks and utterances toward articulated cells, then valuations and closure—is developed in [Obsmetrologia](https://github.com/lenticule-science/obsmetrologia).
 
 ## The movement from one turn to the next
 
-A [Turn](../concepts/turn.md) is the generative traversal from articulation through predication and positing to settlement. Its residual can become another Turn's articulation. The canonical Turn record owns the correspondence between operations, closure regimes, and Pisot recurrences.
+An [Attending](../concepts/attending.md) is the complete act **articulate → predicate → posit → settle**. Its [Turn](../concepts/turn.md) is the family of codomains thereby generated. When an attempted settlement retains an obstruction it cannot resolve, we conjecture that this residue can **force further relating**: another utterance whose roles and content come from that obstruction. The [Relationlessness](relationlessness.md) term owns the originating generative argument, and Turn owns the later regime/Pisot conjecture.
 
 
 [Lambek residuation](../concepts/residuation.md) names the algebraic relation between composition and the distinct left/right conditions under which a composition can hold. [KZ-lax](kz-lax.md) names the higher-dimensional behavior of closure. The proposed twistor connection interprets the paired sides through incidence and the geometry of lightlike separation. Their precise mathematical identification remains the central conjecture.
