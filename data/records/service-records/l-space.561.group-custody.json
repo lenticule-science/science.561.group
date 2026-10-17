@@ -76,8 +76,15 @@
       "data/records/host-binding.json"
     ],
     "packageSource": "Canonical Science package exports ./instance and ./host-binding; source is not a released or installed server.",
-    "pinnedSiteCommit": "4eb9db66ecebc0112d9c52bcde3fec01f49866e0",
-    "preservedParentSource": "The former parent site README and two recovered October 4 evidence files are byte-identically preserved under lenticule-science/l-space.561.group/docs/recovered/ (same Git blob IDs)."
+    "pinnedSiteCommit": "f04a1df91daff80ea99171651219432a961a3734",
+    "preservedParentSource": "The former parent site README and two recovered October 4 evidence files are byte-identically preserved under lenticule-science/l-space.561.group/docs/recovered/ (same Git blob IDs).",
+    "endpointSurfaceAdditions": [
+      "/api/marks/tree",
+      "/api/marks/roots",
+      "/api/marks/walk"
+    ],
+    "endpointSurfaceSource": "red-cup-engineering/knowledge-system-server/src/lspace-site.mjs",
+    "gitlinkSource": "red-cup-engineering/github-engineering-services-section normalize-submodule-pins: science-services-section@595509c407e7fc8ca0efd11d8caf3b78a0f0d710"
   },
   "actualFabrication": {
     "owner": "red-cup-engineering/knowledge-system-server",
