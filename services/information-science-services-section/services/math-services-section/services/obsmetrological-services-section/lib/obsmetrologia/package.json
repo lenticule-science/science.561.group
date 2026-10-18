@@ -3,6 +3,11 @@
   "version": "0.1.1",
   "type": "module",
   "description": "Obsmetrologia's dependency-free Lean 4 library of pure mathematics generated from its mathematical corpus.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lenticule-science/science-services-section.git",
+    "directory": "services/information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/obsmetrologia"
+  },
   "license": "Apache-2.0",
   "engines": {
     "node": ">=24.0.0"
