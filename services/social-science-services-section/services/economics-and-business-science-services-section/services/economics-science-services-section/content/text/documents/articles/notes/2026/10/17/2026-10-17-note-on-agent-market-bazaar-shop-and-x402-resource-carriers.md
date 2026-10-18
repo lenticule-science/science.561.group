@@ -176,3 +176,70 @@ No hypothesis currently has a study result or kernel proof here.
 - **Market** — the broader multi-actor economic institution and play/computation of demands, offers, qualifying choices, obligations, performances, receipts and capital/attention allocation. Not a synonym for a list of API URLs.
 
 The competitive opportunity is to compute **qualified, explainable, source-authorized paths to fulfilled outcomes**, not to describe a catalog as a “category” and a basket of untested listings as “the market”.
+
+
+## 10. 2026-10-17 fabrication readback — source qualified, not live received
+
+The scoped research produced actual changes, NOT an independent production
+receiving, kernel proof of categorical derivation or paid independent demand.
+
+- **Science source correction:** August Bazaar market-measurement note corrected
+  at 45a48e616dcbf1e94f63885501e0f719b78a2199 and the established
+  x402-bazaar glossary term at
+  73b72572b0efdfc592d91a4ad70cb991959c7da5.
+  The old “11× x402 undercount” was retracted and the conditional
+  lower-versus-upper inequality corrected, without turning unmatched
+  historical units into market volume.
+- **Gaming source correction:** Agent Organization Engine existing market
+  arena changed at e3e03cb1b7077a9905ff30050491e247e978e44e.
+  The original equilibrium action identity is retained; its producer
+  now describes a game-engine settle result, explicitly *not* a
+  Nash/Walrasian equilibrium proof. The partial-fill and principal-symmetry
+  counterexamples remain substantive open work.
+- **Networking-owned general read:** Red Cup computer-engineering-services-section
+  at bbd5fad35be5bbe47078c72f7e08ff4708283dd0 extended
+  x402-services-section/src/market/catalog.mjs with
+  selectMarketCoordinateFiber. It reuses the existing
+  selectPublicMarketCatalogRows eligibility/SKU admission before deriving
+  finite source-bound conjunctive fibers, original-coordinate facet counts
+  and one-hop attributed seller-offer graph edges. The engine fabricates
+  no new seller identity, settlement authority or global offer registry.
+  Its negative-control tests were extended at
+  a855245babf7f6d44b2bc35dba3f62a62200b3b9.
+- **Causeway application consumer:** market.561.group/src/market-coordinates.mjs
+  became a bounded HTTP presentation importing the canonical Networking
+  selector at 6515dea0f3ed65ca306e46c07a10e556e9b93af1.
+  Existing market.mjs installs GET/HEAD /v1/market/coordinates,
+  with explicit filter, anchor and pagination parameters in OpenAPI as
+  of bc7729a38d538c3b10eecc774126aaaba74ad4dc. Human and agent
+  machine-navigation entrypoints, site tests and documentation were
+  updated in their existing sources; no external-provider registry
+  or payment machinery was copied into Causeway.
+- **Bounded execution:** an in-process JavaScript runtime compiled the
+  actual fetched Networking and Causeway sources and exercised ten
+  deterministic fixtures: public source admission, conjunctive narrowing,
+  source graph edges, unrelated-neighbor exclusion, refusal of hidden
+  source anchors, engine/HTTP selector equivalence, sensitive payment-field
+  nonexposure, repeated-parameter refusal, unknown-filter refusal and
+  exact seller SKU retention. Ten out of ten passed **for those fixtures**,
+  not as a full workspace test, production measurement or economic outcome.
+
+**Open installation dependency:** the 561 Group workspace must consume the
+updated Networking package revision together with the updated Causeway
+consumer; the in-house dependency is a workspace package. Installing the
+new Causeway consumer against an older x402 package leaves the selector
+unavailable. Original marketplace production receiving and the paid
+outcome test remain with
+https://github.com/causeway-services/market.561.group/issues/4 ;
+multi-provider consent and qualification remain with
+https://github.com/coesite-operations/capability-market-services-section/issues/5 .
+No DNS/TLS/Worker route, independent ActivityPub identity or settlement
+authorization at bazaar.561.group has been installed or received. The
+distinct Bazaar discovery face remains a separate subsequent delivery.
+
+**Falsification test on actual consuming operation:** with the same
+seller-source revision, narrowed demand conditions must never add
+an offer to its admissible fiber; source-coordinate adjacency must not
+authorize trading, and a third-party record lacking independent rights,
+fresh quote and provider receiving must refuse sale. Passing local
+fixture checks does not settle this operating-economy question.
