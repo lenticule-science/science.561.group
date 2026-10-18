@@ -258,6 +258,39 @@ claims to verify, not permission to select a new canonical owner or copy a
 third glossary. Reconcile that existing work and its exact source bodies;
 a valid source bundle does not establish installed office authority.
 
+### 5b. Recover scientific possibility before market-necessary projection
+
+When a receiving Group/Public office asks which technology to build or operate,
+**do not reverse-engineer a scientific 'fact' from the requested feature**.
+Use the exact original attributed demand, the owning research corpus, and the
+current scientific glossary as three distinct resources. Pursue the missing
+scientific question far enough to distinguish permitted constructions,
+excluded constructions, falsifiers, conflicting evidence and unknowns.
+Improve the actual Science owner, not an Operations copy of its theory. A
+glossary is an addressable semantic projection of qualified Science evidence;
+it is not itself a theorem, authorization, demand signal or permission to code.
+
+Apply the [October 18 projection research protocol](https://github.com/lenticule-science/science-services-section/blob/main/research/group-demand/science-to-market-projection-20261018.md),
+which recovers [*The Living Union*](https://github.com/lenticule-science/science-services-section/blob/main/research/organizational-science/the-living-union.md):
+the many **possible** scientific realizations must be compared with **separate**
+dated Group/Causeway evidence of market necessity, rights, standards, cost and
+receiving conditions. The transformation into candidate requirements is a
+partial, source-traceable **research hypothesis** until a specific formal law
+and fixture are independently qualified. One word appearing in the prompt,
+glossary and code does not witness the transformation. Do not mistake
+world/role/persona projections or FOAM observer-relative views for office power,
+and do not discard evidence simply because a selected projection omits it.
+Scientific possibilities that lack buyers remain scientific possibilities.
+
+Handoff minimum: preserve the original full demand's source identity; every
+consequential scientific proposition with exact source and proof/uncertainty;
+existing glossary sense and negative law; separately sourced market constraint
+with a real receiving party; any disputed or unsupported transformation;
+and a falsifying alternate/no-admission case. An Engineering receiver may
+refuse the unqualified portion and continue on an independently admitted
+bounded portion without overwriting the scientific question or pretending
+the complete research-to-SaaS passage has occurred.
+
 ### 6. Hand engineering the requirements
 
 If the allocation names an engineering consumer, or the theory obliges one,
