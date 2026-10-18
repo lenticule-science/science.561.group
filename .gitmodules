@@ -50,3 +50,7 @@
 	path = services/natural-science-services-section/services/earth-science-services-section/services/climate-science-services-section
 	url = https://github.com/lenticule-science/climate-science-services-section.git
 	branch = main
+[submodule "hive-fleet-observation-specification-service"]
+	path = services/hive-science-services-section/services/hive-fleet-observation-specification-service
+	url = https://github.com/lenticule-science/hive-fleet-observation-specification-service.git
+	branch = main
