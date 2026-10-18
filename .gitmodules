@@ -78,7 +78,7 @@
 	path = services/social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/services/hohfeldian-services-section
 	url = https://github.com/lenticule-science/hohfeldian-services-section.git
 	branch = main
-[submodule "predicated-governance-services-section"]
-	path = services/social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/predicated-work-services-section/services/predicated-governance-services-section
-	url = https://github.com/lenticule-science/predicated-governance-services-section.git
+[submodule "predicated-work-services-section"]
+	path = services/social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/predicated-work-services-section
+	url = https://github.com/lenticule-science/predicated-work-services-section.git
 	branch = main
