@@ -70,3 +70,7 @@
 	path = services/social-science-services-section/services/law-science-services-section/services/jurisdiction-services-section
 	url = https://github.com/lenticule-science/jurisdiction-services-section.git
 	branch = main
+[submodule "gig-work-science-services-section"]
+	path = services/social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/gig-work-science-services-section
+	url = https://github.com/lenticule-science/gig-work-science-services-section.git
+	branch = main
