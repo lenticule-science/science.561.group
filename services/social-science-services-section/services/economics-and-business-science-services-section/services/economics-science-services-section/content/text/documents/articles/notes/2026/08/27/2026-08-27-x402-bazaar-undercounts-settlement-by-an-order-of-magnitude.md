@@ -1,6 +1,6 @@
 ---
 name: 2026-08-27-x402-bazaar-undercounts-settlement-by-an-order-of-magnitude
-description: "First-hand comparison of the Coinbase x402 Bazaar discovery catalog's own reported 30-day call volume against directly-measured on-chain EIP-3009 settlement on Base USDC, finding the catalog visible to about 9% of settlement activity — a market sized from the catalog alone understates the protocol by roughly 11x."
+description: "Historical Bazaar calls and Base USDC EIP-3009 comparison; corrected 2026-10-17: shared-rail counts do not establish an x402 undercount or visibility rate, and the conditional bound had been reversed."
 date-created: 2026-08-27
 type: notes
 authors:
@@ -17,11 +17,11 @@ keywords:
 title: 2026-08-27-x402-bazaar-undercounts-settlement-by-an-order-of-magnitude
 ---
 
-# The Bazaar sees about nine percent of on-chain x402 settlement
+# Bazaar calls versus shared EIP-3009: correction to the purported nine-percent x402 figure
 
 ## What this note is, and where it lives
 
-This note's subject is market-sizing method for the [x402](../../../../../../glossary/terms/x402.md) agent-payments protocol: how big the market actually is, measured against how big its own most-visible catalog makes it look.
+This note's subject is the limits of market-sizing from [x402](../../../../../../glossary/terms/x402.md) discovery and shared settlement events. **Correction (2026-10-17): the original headline and conclusion wrongly equated unlike observation units and reversed a conditional inequality.** The original dated observations below are retained, not promoted to a verified estimate of all x402 commerce.
 That is market structure and measurement, the same territory the [2026-08-27 note on agent-to-agent commerce and machine-payable APIs](./2026-08-27-note-on-agent-to-agent-commerce-and-machine-payable-apis.md) already established as this section's home — see that note's "Why this note lives here" section for the full placement reasoning, not repeated here.
 This note reads that earlier note first and does not duplicate or contradict its claims; where the two touch the same ground (the [x402 Bazaar](../../../../../../glossary/terms/x402-bazaar.md)'s listing mechanic, this estate's existing x402 volume figures), this note says so explicitly and cites the earlier note directly rather than re-deriving it.
 
@@ -48,25 +48,28 @@ A single sampled window of Base blocks was read directly; the window size, block
 Event counts sum linearly across non-overlapping windows, so the sampled rate extrapolates (under a stationarity assumption this note flags rather than hides) to a 30-day on-chain authorization-volume estimate; the day- and 30-day-rate figures behind that estimate are in the source record.
 The distinct-address count from the sample is deliberately *not* extrapolated the same way — unique-address counts do not sum across windows the way discrete event counts do, since the same address can recur — so no 30-day unique-authorizer estimate is offered here; see the record for the full reasoning.
 
-## The finding
+## The finding — corrected on 2026-10-17
 
-The exact call-count and extrapolated on-chain-volume figures this finding divides are in the source record cited above.
+The historical August snapshot reported approximately 292,674 trailing-30-day Bazaar calls, and a separate sampled-window extrapolation of about 3.28 million Base USDC EIP-3009 authorizations in 30 days. Their numerical quotient is about 0.0892, and its reciprocal about 11.2. **These are not yet counts of the same event population or equivalent units.** One is a facilitator-reported call metric; the other is an extrapolation of a general-purpose chain authorization event. The original conclusion that the catalog **understates x402 protocol settlement by about eleven-fold is withdrawn**, not merely flagged as uncertain.
 
-The Bazaar catalog's own reported 30-day call count is about **9%** of the volume the on-chain extrapolation implies.
-Inverted, the on-chain estimate runs about **11×** the Bazaar's own reported figure.
-**A market size derived from the Bazaar catalog alone — the only free, keyless, single-request aggregate the protocol publishes — understates the protocol's actual settlement activity by roughly an order of magnitude.**
-This is not a claim that this estate's existing x402 figures are wrong: the [agent-to-agent-commerce note](./2026-08-27-note-on-agent-to-agent-commerce-and-machine-payable-apis.md)'s companion record already carries an x402scan-derived 30-day volume figure that sits close to this note's own on-chain estimate (both figures in their respective records), meaning x402scan (a chain explorer) already tracks something close to true on-chain volume, and is not the figure this finding corrects.
-The specific trap this finding names is narrower and more concrete: the Bazaar discovery catalog specifically, whose registration is gated on a completed settlement through the CDP Facilitator (mechanic detailed in the [agent-to-agent-commerce note](./2026-08-27-note-on-agent-to-agent-commerce-and-machine-payable-apis.md) and its source record) rather than on deployment alone, is a curated opt-in subset of the underlying settlement rail — and its own aggregate call count, taken alone, is the wrong denominator for "how big is this market."
+Let B be the number of Bazaar-reported *settled calls that can be bound one-to-one to actual EIP-3009 authorizations* on the same chain, asset and interval; X be all real x402 authorizations within that exact population; and E be all EIP-3009 authorizations in that population. If independent evidence establishes both the one-to-one binding and B <= X <= E, then B/E <= B/X <= 1 for X > 0. In that properly typed situation, B/E is a **lower**, not upper, bound on the catalog's fraction of x402 settlement. Example: B=9, E=100, X=10 satisfies all premises and gives actual coverage 90%, not at most 9%. If X=9, true coverage is 100%.
 
-## The caveat this finding rests on, stated as prominently as the finding itself
+Those inclusion and event-unit premises have **not** been established for the historical Bazaar and chain reports. Bazaar counts may be calls rather than settled EIP-3009 authorizations; multi-network calls, retry/replay, timing windows and non-EIP x402 schemes differ. Even the conditional lower bound cannot be applied to the August figures without reconciliation. The observations remain useful, independent snapshots of different surfaces; neither is the market's verified denominator.
 
-**[UNVERIFIED]: the share of on-chain EIP-3009 activity on Base USDC that is specifically x402 settlement, as opposed to some other use of the same primitive, has not been established.**
-EIP-3009's `transferWithAuthorization` is a general-purpose gasless-transfer mechanism, not an x402-exclusive one — see [`settlement-primitive`](../../../../../../glossary/terms/settlement-primitive.md) for the general point that a payment protocol's settlement layer is usually shared infrastructure, not something it owns outright. x402's `exact` payment scheme uses EIP-3009 as its settlement primitive, which is exactly what makes the on-chain `AuthorizationUsed` count the best available proxy for x402 volume; it is not, on its own, evidence that every logged authorization was an x402 payment specifically, as opposed to some other meta-transaction relay, wallet gas-abstraction feature, or unrelated protocol built on the same USDC function.
-The correct reading of the 9%/11× figure is therefore: the Bazaar sees at most 9% of on-chain EIP-3009 activity, and since genuine x402 volume is some subset of that EIP-3009 activity, the Bazaar's true visibility fraction into x402 specifically is bounded *above* by 9%, not guaranteed to equal it — it could be considerably smaller if a large share of on-chain EIP-3009 traffic turns out to be non-x402.
-Narrowing this — sampling `AuthorizationUsed` transactions for x402-facilitator calldata fingerprints, for instance — is a concrete next step this note does not attempt.
+For revenue and demand, the same rule applies: resource listings, number of reported calls, unique payers by SKU, successful settlements, delivered outputs, accepted independent customer outcomes and net contribution are distinct measures. Aggregating unique payers across SKUs double counts agents unless identity linkage establishes a union. A chain authorization is not independently proved x402 income or profit.
+## Shared settlement rail, sampling and observational boundaries
 
+**[UNVERIFIED]:** the fraction of Base USDC EIP-3009 authorizations belonging to x402 is unknown. EIP-3009 is a settlement primitive shared with other applications. The August rate was extrapolated from one sample under a stationarity assumption; it was not a complete 30-day census. The Bazaar's reported calls had not been joined by authorization identity, resource, facilitator, chain, asset and observation interval to those logs. In addition, not every x402 transport/scheme/network settles through Base USDC EIP-3009.
+
+In the hypothetical same-population one-to-one case above, reducing X while holding B and E fixed **increases** B/X, contradicting the previous version's "bounded above by 9%" statement. Without that one-to-one premise, there is no justified directional bound; this is not an estimate of all-chain x402 volume. The historical source's potential causes of missing discoverability (opt-in, facilitator registration, unstable indexing, no repeated customers) remain hypotheses requiring paired route-level and buyer-level measurements.
+
+A prospective assay should obtain bounded, dated vendor-native seller-scoped resources/calls, actual x402-scheme-specific independently attributed authorizations and exact 402/Bazaar resource identities, then reconcile one event at a time; only then estimate coverage with explicit uncertainty and scope. It must not equate EIP-3009 transaction totals with marketplace call totals.
 ## What this note does and does not establish
 
-It establishes, from two independently measured first-hand sources: the Bazaar catalog's size, price distribution, and sharp revenue concentration around a single non-computational payment rail; the on-chain EIP-3009 settlement rate in one sampled window and its 30-day extrapolation; the resulting ~9%/~11× visibility gap between the two; and the logical bound that this gap is an upper bound, not a direct measurement, on the equivalent gap for x402 settlement specifically.
-It does not establish why the Bazaar undercounts by this much — candidate mechanisms (resources that never enabled Bazaar discovery, registrations that never stabilized despite qualifying settlements, as documented for one live seller in the [agent-to-agent-commerce note](./2026-08-27-note-on-agent-to-agent-commerce-and-machine-payable-apis.md), or simply direct-integration traffic that never routes through catalog search at all) are named as candidates in the source record but none is tested here.
-It also does not establish the true x402-specific share of on-chain EIP-3009 volume, which stays graded [UNVERIFIED] until someone does the calldata-level sampling work the previous section names as the open lead.
+**Preserved observation:** the dated August seller-index inventory and price concentration claims as recorded by the historical coordinator, and a distinct Base USDC EIP-3009 sampled rate with its stationarity assumption. The underlying raw measurement record referenced earlier has not been re-read during this correction, so these historic figures are source-reported, not freshly reproduced.
+
+**Established by elementary arithmetic:** dividing the two reported numerals gives about 9%, but proves no market-share, market-coverage or protocol-volume relation; under an independently established B <= X <= E mapping the correct fraction inequality runs B/E <= B/X. The previous upper-bound and eleven-fold protocol-undercount conclusions are expressly retracted.
+
+**Not established:** the actual fraction of x402 authorizations in the shared settlement rail, how many Bazaar calls map to unique settled transactions, why listings/calls differ across the two observational surfaces, recurring independent demand, any merchant's net margin or any production transaction from a catalog entry.
+
+**Engineering receiver:** Networking's existing x402 merchant observation tool and Causeway's existing market audit must produce matched paid-transaction evidence before presenting percentages as coverage; Coesite's distributed market matching must use those evidence statuses without constructing a second payments ledger. This correction is not a new dataset, Lean proof or deployed financial observation.
