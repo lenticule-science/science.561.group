@@ -58,3 +58,7 @@
 	path = services/information-science-services-section/services/communication-science-services-section/services/fastmail-science-services-section
 	url = https://github.com/lenticule-science/fastmail-science-services-section.git
 	branch = main
+[submodule "hearing-access-science-services-section"]
+	path = services/natural-science-services-section/services/biological-science-services-section/services/medical-science-services-section/services/hearing-access-science-services-section
+	url = https://github.com/lenticule-science/hearing-access-science-services-section.git
+	branch = main
