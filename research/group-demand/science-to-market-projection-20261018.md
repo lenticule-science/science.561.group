@@ -25,6 +25,26 @@ This document is a *new, bounded research question* about **the transformation b
 6. [The institutional individuation assay](https://github.com/lenticule-science/science-services-section/blob/main/research/group-demand/institutional-individuation-measurement-20261011.md) demonstrates how one precise projection can be tested: a declared finite-state partition can be checked for bounded lumpability against positive, perturbed and degenerate controls. Synthetic success does *not* identify a real institution or confer sovereignty. This is a comparison method, **not evidence that market projections satisfy lumpability**.
 7. [Science issue #60](https://github.com/lenticule-science/science-services-section/issues/60) makes an essential finer distinction: alternate parses of one utterance are not automatically evidence *for and against the same proposition*. FOUR contention applies only where typed propositions and observation contexts coincide. A proposed sheaf of local interpretations requires explicit covers, restrictions and compatibility; a graph named `SignGraph` is not proof of gluing.
 
+## Independent scientific and interoperability baselines
+
+The Group's research does not establish every mathematical property by
+citational resemblance. The following are **external comparators and
+constraints**, with specifically limited scope, useful for falsifying or
+refining the proposed projection:
+
+- [Foster, Greenwald, Moore, Pierce and Schmitt, *Combinators for Bidirectional Tree Transformations* (ACM TOPLAS, 2007)](https://natefoster.org/publications/) established a lens-based family of bidirectional **data-view update** techniques. That research motivates checking whether local projected edits preserve the underlying source, and when view/reconciliation laws fail. But a provenance link from a software requirement back to a science claim is **not an inverse lens**, and an authorized market revision need not be reversible as a transformation of science. Derive any analogous laws rather than borrowing `GetPut`/`PutGet` as a slogan.
+- [Abramsky and Brandenburger, *The Sheaf-Theoretic Structure of Non-Locality and Contextuality* (2011)](https://arxiv.org/abs/1102.0264) rigorously relates compatible measurement-context data and obstruction to global sections in its own mathematical setting. The relevant analogy is testing **overlap restrictions and non-gluing** of locally valid claims, never assuming a public office, a customer, or FOAM data is a quantum measurement scenario. A Group-specific sheaf requires declared base, contexts, restrictions and independently exhibited obstruction.
+- [W3C PROV-O Recommendation (2013)](https://www.w3.org/TR/prov-o/) provides representations for entities, activities, agents, derivation, revisions and *qualified relations* needed to retain who transformed evidence, by which activity and when. This is an interoperability option for **transformation provenance**, not a source of institutional authority or evidence that a scientific proposition is true.
+- [W3C SKOS Recommendation (2009)](https://www.w3.org/TR/skos-reference/) provides concept schemes, labels, notes and related concepts appropriate to a **glossary projection**. SKOS makes terms addressable and interoperable; it does not prove a theorem, define a legal office or decide a market requirement. The Group already has a generated SKOS projection; improve its Engineering generator rather than hand-edit its output.
+- [W3C SHACL Recommendation (2017)](https://www.w3.org/TR/shacl/) checks RDF **data graphs against declared shapes**, making explicit target selection, graph population and validation scope essential. The Group's Science-owned SHACL shapes can reject invalid populated incumbencies or receipt chains; a conformant *empty* target graph says nothing about actual corporate instances.
+- [ISO/IEC/IEEE 29148:2018](https://www.iso.org/standard/72089.html) governs systems/software requirements engineering including services (reviewed and confirmed in 2024). It is an external requirements discipline, not an assertion that every philosophical possibility is commercially necessary or that the Group's specific five-stage admission process is the standard's mandated waterfall.
+
+These references suggest competing methods—source-bound view-update discipline,
+provenance qualification, glossary projection, graph integrity and external
+requirement elicitation—whose relevant behavior can be tested *against*
+the originating Leader request. Neither their combination nor a mathematical
+identification of them with Obsmetrologia is currently proved.
+
 ## Operational constructs proposed for scientific assay
 
 Let the following be *provisional typed carriers*, not freshly introduced foundational axioms:
