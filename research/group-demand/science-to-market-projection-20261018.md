@@ -82,6 +82,48 @@ Counterevidence is retained at the correct typed claim/context with its own time
 
 **Measures:** fraction of material utterance claims retaining attributed source spans; non-coercive recovery of every asserted scientific/market constraint; rate of false admissions and rightful refusals; ability to reconstruct who selected a requirement and with what evidence; revision stability of unrelated descendants; independently measured user/task and operating effects. Predeclare the inventory, sample, expected permissions, observation times and thresholds before interpreting outcomes. A pretty interface is not a measurement of these quantities.
 
+## Measured Group source inconsistency: the first negative fixture
+
+**Bounded observation, October 18, 2026, GitHub `main` at reading time.**
+In [the Group's `lib/agency/incumbencies/`](https://github.com/561-group/561-group-services-section/tree/main/lib/agency/incumbencies),
+all **nine** top-level incumbency JSON files were parsed and compared at the
+*field level* against
+[`data/records/schema/incumbency.schema.json`](https://github.com/561-group/561-group-services-section/blob/main/data/records/schema/incumbency.schema.json).
+Seven of nine carry an additional `note` property while the local schema
+declares `additionalProperties: false` and does not include `note`;
+the two `bare-cedar-fog-codex-as-chief-*-officer` incumbencies additionally
+put an `actor:<content-id>` reference in `holder`, whereas that schema
+requires a lowercase-hyphenated **character identifier**. The other two
+incumbencies (Bea Manucci and Hai Xudi) lack those two observed anomalies.
+This is a reproducible **source/schema discrepancy**, not proof that the
+installed runtime selects this schema or that the actor IDs are illegitimate;
+the Science ontology deliberately distinguishes a principal Actor from a
+portrayed Character. Silently stripping notes or changing holders to match
+syntax could destroy provenance or recognition.
+
+A second different discrepancy appears in the
+[Group's existing corporate-agency requirement](https://github.com/561-group/561-group-services-section/blob/main/lib/agency/requirements/corporate-agency-resources-are-readable-and-revision-writable.json)
+versus
+[`data/records/schema/requirement.schema.json`](https://github.com/561-group/561-group-services-section/blob/main/data/records/schema/requirement.schema.json):
+a prose string `met-when` where a list of typed cell/target conditions is
+required, an attributed free-text `raised-by` instead of the schema's
+slug-shaped principal, and additional fields not admitted by the schema.
+This record's genuine goal (authorized revision-checked agency read/write,
+wrong-authority and stale revision refusal) must survive *any* migration;
+invented machine-success commands are not a valid substitute.
+
+**Engineering/Operations consequence:** before repairs, resolve which exact
+Science ontology and actual Red Cup reader/validator version the running
+Group instance selects, which source fields it consumes, and whether a
+versioned typed view rather than lossy mutation can express both the
+actor identity and the office's authorized incumbency. Require one
+negative case using these *real* incompatible sources and a positive case
+that retains provenance, separately verifies authority, and accepts an
+authorized revision through the genuine reader. Only after accepted design
+and consumer migration should redundant carriers be retired. This is
+better scientific evidence than declaring the L-Space "typed" from folder
+names or unexecuted JSON Schemas.
+
 ## Actual handoff and stop rule
 
 1. **Science** conducts investigation and formal derivation in the *existing* disciplinary owners; refines source-qualified notes into precise research results and owner-held glossary terms. Obsmetrologia accepts only theorems/proof obligations its own kernel or experiment supports. This protocol is currently **research-only; its proposed projection law is unproved**.
