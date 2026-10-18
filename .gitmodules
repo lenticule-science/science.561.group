@@ -74,3 +74,7 @@
 	path = services/social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/gig-work-science-services-section
 	url = https://github.com/lenticule-science/gig-work-science-services-section.git
 	branch = main
+[submodule "hohfeldian-services-section"]
+	path = services/social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/services/hohfeldian-services-section
+	url = https://github.com/lenticule-science/hohfeldian-services-section.git
+	branch = main
