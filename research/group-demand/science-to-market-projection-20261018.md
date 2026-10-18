@@ -25,6 +25,8 @@ This document is a *new, bounded research question* about **the transformation b
 6. [The institutional individuation assay](https://github.com/lenticule-science/science-services-section/blob/main/research/group-demand/institutional-individuation-measurement-20261011.md) demonstrates how one precise projection can be tested: a declared finite-state partition can be checked for bounded lumpability against positive, perturbed and degenerate controls. Synthetic success does *not* identify a real institution or confer sovereignty. This is a comparison method, **not evidence that market projections satisfy lumpability**.
 7. [Science issue #60](https://github.com/lenticule-science/science-services-section/issues/60) makes an essential finer distinction: alternate parses of one utterance are not automatically evidence *for and against the same proposition*. FOUR contention applies only where typed propositions and observation contexts coincide. A proposed sheaf of local interpretations requires explicit covers, restrictions and compatibility; a graph named `SignGraph` is not proof of gluing.
 
+8. **A formal source-level obstruction countermodel already exists.** [`Obsmetrologia/Closure/ProjectionHiddenObstruction.lean`](https://github.com/lenticule-science/obsmetrologia/blob/main/Obsmetrologia/Closure/ProjectionHiddenObstruction.lean), imported by the Obsmetrologia root Closure module, contains `recordDepthDatum`, whose unbounded Record-valued depth tally does not glue; its actual pointwise `Record.charge` projection does glue as a FOUR-charge datum. `charge_projection_erases_record_gluing_obstruction` proves both sides of this **same-datum** result. The additional source candidate `charge_shadow_gluing_does_not_reflect` refutes the universal reflection of Charge-shadow gluing back to Record gluing. This is an exact **negative law in the existing Odometer setting**, not a proof of the market-requirement projection or a locally qualified Lean build. [`Site/DFrame.lean`](https://github.com/lenticule-science/obsmetrologia/blob/main/Obsmetrologia/Site/DFrame.lean) separately defines a d-frame `Shadow`: it retains `source` provenance while omitting `con/tot` from the displayed algebraic sides. Do not identify that object with `CylinderDatum.chargeShadow`, or call the shadow inaccessible merely because its visible side omits source fields.
+
 ## Independent scientific and interoperability baselines
 
 The Group's research does not establish every mathematical property by
@@ -62,6 +64,8 @@ It is *partial* because no warranted science, no observed need, unresolved right
 
 Projection is **not equivalence**. A downstream requirement or software artifact cannot generally reconstruct all of `K` or `U` by inference. Instead, every admitted descendant should retain **addressable source and transformation provenance**, including explicit information omitted by a local view. Proposed invariant `I_prov`: for each admitted requirement `r`, an authorized reader can recover its originating demand span, scientific proposition(s) and status, actual market/standards observations, applied constraints, responsible interpretation, and the scope of information lost. This is a *candidate experimentally decidable invariant for a specific carrier*, not a demonstrated theorem for the Semioverse.
 
+**Obstruction-reflection is a distinct admissibility obligation.** A downstream `held` or gluable readout does not in general entail a richer source or customer outcome is settled. Use either a **source-qualified theorem specific to that projection and property** or an independent assay at the richer type. In the Odometer example, global gluing after `Record.charge` cannot discharge rich Record compatibility. A provenance reference enables *authorized retrieval*, not automatic truth preservation or publication rights. The next Engineering assay must exercise original source+view, a projected-positive/source-obstructed counterexample, and protected-source refusal through the actual native readers; a new shadow evidence database would not settle the question.
+
 **Provisional necessity distinction:** science may permit many realizations `Poss(K)`; market evidence and rights select or reject candidates `Need_(b,j,t)`. Requirements are not mathematically equal to either alone. The nature of their pairing—intersection, fiber product, guarded relation, or another structure—**remains a research choice** pending source-derived types, laws, countermodels and empirical need. Do not import conventional mathematics as the foundations of Obsmetrologia merely to name this pairing. Prove any proposed correspondence in the relevant downstream application theory without strengthening the pure kernel's primitives by assertion.
 
 ## Distinct projected views and refusers
@@ -84,45 +88,13 @@ Counterevidence is retained at the correct typed claim/context with its own time
 
 ## Measured Group source inconsistency: the first negative fixture
 
-**Bounded observation, October 18, 2026, GitHub `main` at reading time.**
-In [the Group's `lib/agency/incumbencies/`](https://github.com/561-group/561-group-services-section/tree/main/lib/agency/incumbencies),
-all **nine** top-level incumbency JSON files were parsed and compared at the
-*field level* against
-[`data/records/schema/incumbency.schema.json`](https://github.com/561-group/561-group-services-section/blob/main/data/records/schema/incumbency.schema.json).
-Seven of nine carry an additional `note` property while the local schema
-declares `additionalProperties: false` and does not include `note`;
-the two `bare-cedar-fog-codex-as-chief-*-officer` incumbencies additionally
-put an `actor:<content-id>` reference in `holder`, whereas that schema
-requires a lowercase-hyphenated **character identifier**. The other two
-incumbencies (Bea Manucci and Hai Xudi) lack those two observed anomalies.
-This is a reproducible **source/schema discrepancy**, not proof that the
-installed runtime selects this schema or that the actor IDs are illegitimate;
-the Science ontology deliberately distinguishes a principal Actor from a
-portrayed Character. Silently stripping notes or changing holders to match
-syntax could destroy provenance or recognition.
+The October 18 field-level comparison found nine current Group incumbencies: **eight** bear historical `note` annotations and two Codex office seats use an `actor:<content-id>` holder **matching the authored Character ID**. The prior local schema admitted only **one of nine** source files; this study's earlier seven-note/two-pass count was wrong. [Group PR #146](https://github.com/561-group/561-group-services-section/pull/146) repaired the existing local shape, preserving all nine originals, but **does not establish native AOE authority, authenticated induction or live MetroPlat consumer adoption**.
 
-A second different discrepancy appears in the
-[Group's existing corporate-agency requirement](https://github.com/561-group/561-group-services-section/blob/main/lib/agency/requirements/corporate-agency-resources-are-readable-and-revision-writable.json)
-versus
-[`data/records/schema/requirement.schema.json`](https://github.com/561-group/561-group-services-section/blob/main/data/records/schema/requirement.schema.json):
-a prose string `met-when` where a list of typed cell/target conditions is
-required, an attributed free-text `raised-by` instead of the schema's
-slug-shaped principal, and additional fields not admitted by the schema.
-This record's genuine goal (authorized revision-checked agency read/write,
-wrong-authority and stale revision refusal) must survive *any* migration;
-invented machine-success commands are not a valid substitute.
+The original corporate agency read/write requirement had a free-text raiser and a prose `met-when` standing in for typed conditions. The Group's [requirement migration branch](https://github.com/561-group/561-group-services-section/tree/refactor/requirements-native-agency-20261018) preserves the original wording and develops five receiving cells; [Red Cup's native admission branch](https://github.com/red-cup-engineering/agent-organization-engine/tree/fix/typed-agency-requirement-admission-20261018) develops the authorized original reader/writer and refusing paths. These are source candidates, not executed signed institutional acts.
 
-**Engineering/Operations consequence:** before repairs, resolve which exact
-Science ontology and actual Red Cup reader/validator version the running
-Group instance selects, which source fields it consumes, and whether a
-versioned typed view rather than lossy mutation can express both the
-actor identity and the office's authorized incumbency. Require one
-negative case using these *real* incompatible sources and a positive case
-that retains provenance, separately verifies authority, and accepts an
-authorized revision through the genuine reader. Only after accepted design
-and consumer migration should redundant carriers be retired. This is
-better scientific evidence than declaring the L-Space "typed" from folder
-names or unexecuted JSON Schemas.
+[Group PR #145](https://github.com/561-group/561-group-services-section/pull/145) removed six self-certifying acceptance commands that merely tested for their own requirement files, retaining seventeen source-authored **unmeasured** receiving conditions. This is a real empirical negative control: a source/readout can pass while the richer Work, market and public-service outcome remains unsatisfied. The mathematical countermodel demonstrates why the corresponding implication cannot be assumed generally; it does **not** certify that real Group software instantiates the Odometer theorem.
+
+**Next discriminating consumer:** select the original AOE Character→Incumbency→Office→Duty→Method→Work view, retain two source-qualified distinct receiver situations, and test an authorized effect against a wrong-holder refusal and an unreceived customer SaaS. Inspect original source identity and its current reader revision before deciding whether projection preserves what that reader needs. Do not make up a market receiver or office appointment.
 
 ## Actual handoff and stop rule
 
