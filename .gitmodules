@@ -66,3 +66,7 @@
 	path = services/natural-science-services-section/services/physical-science-services-section/services/astronomy-services-section
 	url = https://github.com/lenticule-science/astronomy-services-section.git
 	branch = main
+[submodule "jurisdiction-services-section"]
+	path = services/social-science-services-section/services/law-science-services-section/services/jurisdiction-services-section
+	url = https://github.com/lenticule-science/jurisdiction-services-section.git
+	branch = main
