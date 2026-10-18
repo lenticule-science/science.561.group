@@ -147,6 +147,34 @@ Discovery/free navigation can read the existing authoritative marketCatalogReado
 
 An OWL statement may say “offer has provider”; open-world OWL cannot treat silence as *proof* that another provider, price, conflict or authority does not exist. SHACL can enforce presence/typing on **a particular closed admission slice**; it does not validate seller rights or deliverability. Never expose arbitrary SPARQL SERVICE/federated remote fetches to customer input (SSRF), unbounded joins, unmetered inference, arbitrary graph mutation or secret settlement logs. A bounded query budget is itself a service contract.
 
+**RDF/OWL/SPARQL source-recovery and competency questions (not a second market ontology).** The existing Science-owned agential-semioverse.ttl declares agsv:Actor, agsv:Contract, agsv:Obligation, agsv:AcceptedReceipt, agsv:receiptForTask, agsv:receiptAcceptedBy, agsv:receiptEvidence, agsv:obligationUnderContract and receipt attribution constraints; its SHACL requires grounded obligations and independently receiving actors. Exact source: Lenticule Science / Philosophy → Relationality → Agency, data/records/agential-semioverse.ttl and agential-semioverse-shapes.ttl, with independent-receiving query agency-obligation-receiving.rq. Those are the existing semantic owners. A new Bazaar must not invent competing Actor, Contract, Receipt or principal authority classes merely to display search results.
+
+Causeway already has original NI SKU and SCA/SEN/SEAVT offer evidence, compiled ActivityPub++ Offer cells and HTTP MCP/TUFTE; **this does not establish that an RDF named-graph endpoint is installed**. A *candidate* read-only projection may use standard [PROV-O](https://www.w3.org/TR/prov-o/) for source event/actor attribution and [Schema.org Offer](https://schema.org/Offer) for ordinary public Web consumers, while explicitly tracking the lost native semantics (time-scoped payment terms, FOUR contradiction state, independent rights, content identity and unknown versus refused). Schema.org Offer is not an equivalent category of the Group's typed economic Offer.
+
+**Six falsifiable query competencies** for an admitted and versioned source slice: (CQ1) Which original currently public Offer NI identities match an explicit operation/category at one fixed v? (CQ2) Which source actor and original resource URL + HTTP method, or MCP (resource URL, toolName), support each result, with dated attribution? (CQ3) Which independent evidence qualifies the seller's capability, rights and current quote, and which values are unknown? (CQ4) Does adding a hard demand condition at fixed v shrink (never enlarge) the same-NI fiber? (CQ5) Which source-offer pairs have an *unassayed* schema compatibility relation versus actually witnessed executable composition preserving capacity, jurisdiction and rights? (CQ6) Which **independent** accepted receipts discharge a separately admitted obligation, without counting a seller's unsigned challenge or PAYMENT-RESPONSE as customer acceptance?
+
+One **illustrative**, read-only SPARQL SELECT for CQ1/CQ2, conditional on actually manufacturing a qualified public named graph from the source-owned original Offer readout:
+
+~~~sparql
+PREFIX schema: <https://schema.org/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+SELECT ?offer ?seller ?resource ?source
+WHERE {
+  GRAPH ?admittedGraph {
+    ?offer a schema:Offer ;
+           prov:wasAttributedTo ?seller ;
+           schema:itemOffered ?resource ;
+           prov:wasDerivedFrom ?source .
+  }
+}
+ORDER BY ?offer
+LIMIT 20
+~~~
+
+An actual server must **bind the GRAPH variable to one approved, immutable, versioned public graph**; arbitrary client-controlled graph selection or unrestricted SELECT is not admitted. This query neither signs an Offer nor assures a valid payment or resale authorization. CQ6 must reuse/compose with the existing agency-obligation-receiving.rq and its explicit independent receipt predicates, not treat an HTTP 200 or a chain transfer as accepted work. No fake receipt identities are emitted to satisfy these examples.
+
+**Acceptance for a future free semantic-query service:** no user-controlled SPARQL SERVICE, external schema dereferencing, arbitrary RDF update, local file URIs, remote crawler fetches, unlimited property paths, mutable graph writes, private wallet/ledger triples or unmetered inference. Admit only actual versioned named graphs, allowlisted templates and real, measured byte/CPU/time/memory/cardinality budgets; use the original qualified RDF/SPARQL/SHACL suppliers rather than a new engine. SHACL can refuse one *closed input slice* missing a provenance property; it cannot prove the external Web contains no alternative seller or that a commercial license is lawful. An actual agent must be able to trace the same source Offer NI through TUFTE, MCP and RDF result and distinguish source-asserted, observed, independently accepted and unknown.
+
 For an evidence sheaf **candidate**, first specify (a) an actual base of overlapping demand/territory/contract contexts, (b) local source-authorized sections, (c) legal/economic restriction maps that preserve original actor and terms, and (d) equality/compatibility on overlaps. A global section exists only where sections actually agree on required terms; seller A quoting USDC/Base and seller B quoting HBD/Hive are not one globally payable quote, even if both claim the same output. A FOUR contested claim is not by itself a nonzero H¹; constructing a Cech complex, boundary maps and obstruction proof is a separate mathematical obligation, requiring the proper Obsmetrologia derivation and tests.
 
 **Charts** should display historical states/time windows with distinct units: listed resources, externally attempted invocations, valid 402 quotes, authorized calls, independently settled payments, delivered outputs, customer-accepted outcomes and net contribution. A chart is an observation of those units, not a price prediction or invented “market GMV”.
