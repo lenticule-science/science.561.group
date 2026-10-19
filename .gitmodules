@@ -82,3 +82,7 @@
 	path = services/social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/predicated-work-services-section
 	url = https://github.com/lenticule-science/predicated-work-services-section.git
 	branch = main
+[submodule "drafting-a-term"]
+	path = services/information-science-services-section/services/communication-science-services-section/services/glossary-science-services-section/services/glossary-services-section/services/term-services/services/drafting-a-term
+	url = https://github.com/lenticule-science/drafting-a-term.git
+	branch = main
