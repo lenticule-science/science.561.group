@@ -35,7 +35,7 @@ where:
 
 - $\chi : H \to H$ is the **proposed character nucleus** — a fiberwise closure operator on the Heyting/frame object H (monotone, inflationary, idempotent) that additionally **preserves binary meets**: $\chi_t(a \wedge b) = \chi_t(a) \wedge \chi_t(b)$. Internal naturality is a separate stated requirement for a morphism in $R = \mathbf{Sh}(T,J)$. A real actor or collection of exemplar observations has not thereby been proved to supply such a map.
 
-- $F_\chi = \mathrm{Fix}(\chi)$ is the **candidate behavioral space**. For a genuine frame nucleus, its fixed points contain top and are closed under inherited meets; fixed-point joins are $\chi(\bigvee_i a_i)$ (and implication generally requires nucleus closure), not necessarily the ambient joins or implication. Calling this space an inherited *sub-Heyting algebra* without qualification is incorrect.
+- $F_\chi = \mathrm{Fix}(\chi)$ is the **candidate behavioral space**. For a genuine frame nucleus its fixed points contain ambient top and are closed under ambient meets. Joins in the fixed frame are $\chi(\bigvee_i a_i)$, and its bottom is $\chi(\bot)$; these need not be inherited. The Heyting implication **is inherited for fixed operands**: if $a,b$ are fixed, $\chi(a \Rightarrow b) \wedge a=\chi((a \Rightarrow b)\wedge a)\leq\chi(b)=b$, so $\chi(a\Rightarrow b)\leq a\Rightarrow b$ and inflationarity gives equality. Consequently $F_\chi$ is a frame/Heyting algebra with nucleus-induced operations, not automatically a sub-Heyting algebra inheriting every ambient operation.
 
 **Four invariants.** $\mathcal{X}$ is a character iff it satisfies:
 
