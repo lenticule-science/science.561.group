@@ -53,7 +53,10 @@
     },
     {
       "href": "https://561.group/",
-      "label": "561 Group"
+      "label": "561 Group",
+      "labels": {
+        "zh-Hans": "561 集团"
+      }
     }
   ],
   "home": "start-here",
@@ -155,5 +158,17 @@
   },
   "icon": "/favicon.svg",
   "appleTouchIcon": "/apple-touch-icon.png",
-  "image": "/card.png"
+  "image": "/card.png",
+  "languages": {
+    "zh-Hans": {
+      "eyebrow": "561 集团 · 研究",
+      "cellLabel": "研究",
+      "description": "值得检验的问题：测量、模型与形式证明能够——以及不能——确立什么。",
+      "license": "复用条款在每篇出版物中注明。",
+      "machine": true
+    },
+    "lkt": {
+      "machine": true
+    }
+  }
 }

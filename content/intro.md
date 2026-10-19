@@ -1,8 +1,8 @@
 ---
 title: "What would count as knowing?"
-description: "A field guide to observations, estimates, proofs, and predictions—and the different kinds of uncertainty they carry."
+summary: "A field guide to observations, estimates, proofs, and predictions—and the different kinds of uncertainty they carry."
 date-created: 2026-10-12
-kind: article
+type: article
 status: potential
 tags:
   - scientific-method
