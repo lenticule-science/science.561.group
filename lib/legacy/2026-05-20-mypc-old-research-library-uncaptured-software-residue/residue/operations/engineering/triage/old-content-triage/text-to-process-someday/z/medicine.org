@@ -1,6 +1,0 @@
-#+title: medicine
-#+author: emsenn
-#+email: emsenn@emsenn.net
-#+date: [2020-12-19 Sat 21:07]
-#+roam_tags: term
-*/Medicine/* is a thing consumed by a [[file:person.org][person]] to maintain or benefit their [[file:health.org][health]].

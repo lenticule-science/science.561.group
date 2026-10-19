@@ -1,8 +1,0 @@
-Done. The new skill at `operations/engineering/fars/agentic/skills/mcp-server-patterns/SKILL.md` covers:
-
-1. **SDK patterns** from the ECC skill — `McpServer` setup, tool/resource/prompt registration, Zod validation, stdio vs HTTP transport
-2. **Our specific patterns** — repo-root discovery, EAVT graph loading and parsing, reload-on-every-call freshness strategy, result formatting conventions (truncation, caps, content blocks)
-3. **Our actual server** as the reference implementation instead of generic examples
-4. **`.mcp.json` config** — structure, entries for local and npx-based servers
-
-The skill references `operations/engineering/fars/mcp-servers/datastore/server.js` as the canonical example throughout. It'll need a harness install to land in `.claude/skills/`.

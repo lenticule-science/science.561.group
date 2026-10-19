@@ -1,6 +1,0 @@
----
-id: fb63f9e1-b14d-4745-bda3-b018ecd864d5
-name: theory
-date-created: 2025-08-27
----
-

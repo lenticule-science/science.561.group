@@ -1,3 +1,0 @@
-{"e":"projecting-a-predicate-to-object","a":"describing","v":"Return targets of object-projection-class morphisms out of a source predicate. Collapses cells along (s, o) ↦ (o, o).","t":"2026-05-19T23:00:00Z"}
-{"e":"projecting-a-predicate-to-object","a":"querying-class","v":"object-projection","t":"2026-05-19T23:00:00Z"}
-{"e":"projecting-a-predicate-to-object","a":"consuming","v":"predicate-category","t":"2026-05-19T23:00:00Z"}

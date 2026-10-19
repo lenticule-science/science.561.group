@@ -1,8 +1,0 @@
-The hook is working — it's already logging live Bash calls from this session (lines 1-3 were from earlier commands). The smoke test also wrote its entry (line 4).
-
-Created:
-- **`operations/engineering/fars/agentic/hooks/bash-audit-log.js`** — PostToolUse hook, Bash matcher, async with 3s timeout
-- Registered in **`operations/engineering/fars/harnesses/agentic/claude-code/settings.json`** (source of truth)
-- Installed to `.claude/settings.json` via the harness installer
-
-Logs to `operations/engineering/records/session-state/bash-audit.jsonl`, rotates at 5MB to an `archive/` subdirectory.

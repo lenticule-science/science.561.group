@@ -1,6 +1,0 @@
-Review findings addressed:
-
-1. **Sliding window sort** — Reflections are now sorted by date (`localeCompare` on ISO date strings) before slicing to `MAX_REFLECTIONS`. Out-of-order parsing no longer loses the most recent entries.
-2. **Cross-file duplication** — Both copies of `parseReflections` now have comments pointing to the other, so future edits stay in sync.
-
-The two HIGH items about regex fragility were already fixed in the previous round (rewrote from regex-based to line-based parser). The path traversal note is acceptable for an internal tool — this never runs on external input.

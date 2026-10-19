@@ -1,7 +1,0 @@
-Done. Built `instinct-decay.js` with:
-
-- **Decay**: reads all instinct files, calculates weeks since `date-last-seen`, applies `-0.02/week`, floors at `0.1`
-- **Stale marking**: confidence <= 0.15 sets `readiness: stale` in frontmatter
-- **Bump**: `--bump <id>` gives +0.05 confidence, resets `date-last-seen` to today, clears stale status
-- **Dry run**: `--dry-run` previews without writing
-- **Report**: outputs what changed, what was skipped, what stayed the same

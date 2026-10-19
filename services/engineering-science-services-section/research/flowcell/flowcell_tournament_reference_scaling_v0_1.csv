@@ -1,7 +1,0 @@
-<PARSED TEXT FOR SHEET: 1 / 1 TABS
-TAB NAME: flowcell_tournament_reference_scaling_v0_1.csv>index,speed_m_s,water_power_through_ref_area_W,rotor_screen_electrical_W,rotor_screen_thrust_N,rotor_target_rpm_TSR4
-0,0.5,1.12,0.29,1.8,252.0
-1,0.75,3.8,0.97,4.05,378.0
-2,1.0,9.0,2.3,7.2,505.0
-3,1.25,17.58,4.5,11.25,631.0
-4,1.5,30.38,7.78,16.2,757.0

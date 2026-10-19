@@ -1,7 +1,0 @@
-{
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://research-notes.561.group/hacking/library/predication-notes/composting/library/object/library/thing/library/system/library/operating-system/library/computer-operating-system/library/work-item/doing/working/declaring-a-deadline/declaring-a-deadline.schema.json",
-  "title": "declaring-a-deadline",
-  "description": "Writes (target, has-deadline, <iso-date>) — alias for scheduling-a-work-item. Provided for the framing 'I am declaring this is due then' as distinct from 'I am scheduling this'.",
-  "type": "object"
-}

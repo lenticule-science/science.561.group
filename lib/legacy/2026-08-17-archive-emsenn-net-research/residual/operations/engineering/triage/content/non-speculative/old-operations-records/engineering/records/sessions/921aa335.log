@@ -1,3 +1,0 @@
-Done. 65 account entities written — 38 leaf accounts from the chart-of-accounts tables plus 27 inferred group/parent accounts. Template accounts with `{id}` or `{domain}` placeholders were skipped since those are instantiated dynamically.
-
-The script is at `operations/engineering/fars/agentic/tools/seed-chart-of-accounts.js` and the output at `operations/engineering/records/events/account-entities.jsonl`.

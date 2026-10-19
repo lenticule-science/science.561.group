@@ -1,8 +1,0 @@
-Done. Created `operations/engineering/fars/agentic/tools/semantic-search.js` — a TF-IDF semantic search tool that:
-
-- Indexes 22 documents (3 instincts + 19 skills) from their description/trigger frontmatter + first paragraph
-- Ranks results by cosine similarity to a query string
-- Caches the index to `session-state/semantic-index.json` for speed
-- Supports `--type instinct|skill|all`, `--top N`, `--json`, and `--index` flags
-- Follows the dual entry point pattern (`run()` export + stdin fallback)
-- No external dependencies — tokenization, TF-IDF, and cosine similarity implemented directly

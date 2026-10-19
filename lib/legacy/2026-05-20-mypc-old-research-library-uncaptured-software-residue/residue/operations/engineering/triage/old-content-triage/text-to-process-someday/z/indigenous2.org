@@ -1,6 +1,0 @@
-#+title: indigenous
-#+author: emsenn
-#+email: emsenn@emsenn.net
-#+date: [2020-12-20 Sun 09:33]
-#+roam_tags: term
-To be */indigenous/* can mean two different things, depending on if a [[file:person.org][person]] is [[file:human.org][human]] or not. For non-humans, to be indigenous means to have evolved or established a generations-long niche in a physical [[file:environment.org][environment]]. For humans, being indigenous to a thing means to live focused on seeking a balanced relationship with that thing. Most commonly, the term used in that context is to refer to humans being "indigenous to place," ([[file:robin_wall_kimmerer_braiding_sweetgrass.org][Robin Wall-Kimmerer: "Braiding Sweetgrass"]]) meaning that a person (and their culture) are focused on finding a balanced relationship with the other things in their environment.

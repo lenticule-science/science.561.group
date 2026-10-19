@@ -1,7 +1,0 @@
-<PARSED TEXT FOR SHEET: 1 / 1 TABS
-TAB NAME: first_article_inspection_targets.csv>index,station_r_over_R,radius_mm_from_rotor_axis,span_mm_from_active_root,target_chord_mm,target_twist_deg,dimensional_target_note
-0,0.2,15.0,0.0,29.0,21.0,chord ±0.25 mm where practical
-1,0.4,30.0,15.0,25.0,15.0,chord ±0.25 mm where practical
-2,0.6,45.0,30.0,21.0,10.0,chord ±0.25 mm where practical
-3,0.8,60.0,45.0,18.0,6.0,chord ±0.25 mm where practical
-4,1.0,75.5,60.5,15.0,2.0,chord ±0.25 mm where practical

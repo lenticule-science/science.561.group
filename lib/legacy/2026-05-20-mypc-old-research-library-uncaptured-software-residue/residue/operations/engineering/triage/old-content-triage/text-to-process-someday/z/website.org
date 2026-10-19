@@ -1,4 +1,0 @@
-#+title: Website
-#+date: [2020-12-15 Tue 15:19]
-#+roam_alias: "Websites"
-A */Website/* is a collection of [[file:html.org][HTML]] files served over the [[file:web.org][Web]].

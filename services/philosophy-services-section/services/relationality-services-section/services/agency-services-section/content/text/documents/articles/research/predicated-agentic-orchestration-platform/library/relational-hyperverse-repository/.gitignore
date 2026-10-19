@@ -1,4 +1,0 @@
-.env
-build/
-src/engine/_repo.db
-src/engine/*.tmp

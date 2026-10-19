@@ -1,5 +1,0 @@
---- a/research/public-feedback/evidence-assay.test.mjs
-+++ b/research/public-feedback/evidence-assay.test.mjs
-@@ -1,1 +1,2 @@
- test('observations must have valid timestamp',()=>rejects(x=>x.observations[0].at='tomorrow',/invalid observation/));
-+test('impossible Gregorian timestamp cannot be admitted as observed evidence',()=>rejects(x=>x.observations[0].at='2026-02-30T00:00:00Z',/invalid observation/));

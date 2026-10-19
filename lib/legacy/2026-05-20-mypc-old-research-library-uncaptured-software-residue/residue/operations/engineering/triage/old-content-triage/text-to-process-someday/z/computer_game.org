@@ -1,5 +1,0 @@
-#+title: computer game
-#+author: emsenn
-#+email: emsenn@emsenn.net
-#+date: [2020-12-18 Fri 10:18]
-A */computer game/* is a [[file:game.org][game]] that uses a [[file:computer.org][computer]] as its interface and potentially [[file:game_host.org][host]].

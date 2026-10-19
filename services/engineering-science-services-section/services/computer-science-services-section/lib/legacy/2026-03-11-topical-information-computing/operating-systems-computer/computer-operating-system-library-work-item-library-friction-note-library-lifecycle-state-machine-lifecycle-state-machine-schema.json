@@ -1,8 +1,0 @@
-{
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://research-notes.561.group/hacking/library/predication-notes/composting/library/object/library/thing/library/system/library/operating-system/library/computer-operating-system/library/work-item/library/friction-note/library/lifecycle-state-machine/lifecycle-state-machine.schema.json",
-  "title": "friction-note lifecycle-state-machine",
-  "description": "Kind-specific state-machine for friction-note. Narrows the universal lifecycle.",
-  "type": "object",
-  "required": ["transitions"]
-}

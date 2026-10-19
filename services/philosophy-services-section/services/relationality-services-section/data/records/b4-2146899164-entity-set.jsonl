@@ -1,4 +1,0 @@
-{"e":"entity-set","a":"describing","v":"A set E whose elements are entities. The set over which predication fiber algebras index via the pair index E × E. Optionally sort-stratified by a sort-partition map.","t":"2026-05-19T23:00:00Z"}
-{"e":"entity-set","a":"collecting","v":"entity","t":"2026-05-19T23:00:00Z"}
-{"e":"entity-set","a":"indexing-fiber-algebra","v":"predication-fiber-algebra","t":"2026-05-19T23:00:00Z"}
-{"e":"entity-set","a":"parameter-of-predication-fibration","v":"predication-fibration","t":"2026-05-19T23:00:00Z"}

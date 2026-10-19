@@ -1,8 +1,0 @@
-{
-  "users": [
-    { "slug": "user:captain", "display_name": "Captain", "role": "admin",    "capabilities": [] },
-    { "slug": "user:alice",   "display_name": "Alice",   "role": "member",   "capabilities": [] },
-    { "slug": "user:bob",     "display_name": "Bob",     "role": "observer", "capabilities": [] },
-    { "slug": "user:dora",    "display_name": "Dóra Östberg", "role": "member", "capabilities": ["signal:custom:demo"] }
-  ]
-}

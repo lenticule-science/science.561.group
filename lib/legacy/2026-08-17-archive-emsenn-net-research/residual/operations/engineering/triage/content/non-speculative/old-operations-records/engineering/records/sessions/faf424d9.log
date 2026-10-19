@@ -1,9 +1,0 @@
-Clean syntax. Three changes made:
-
-1. **`graph_search` now searches both graphs** — searches library and ops, tags each result with `[library]` or `[ops]`, deduplicates by title.
-
-2. **`start_session` tool added** — wraps `561d start -t <task> [-w]`, returns the session ID. Uses `execFile` (no shell injection).
-
-3. **`read_session_log` tool added** — reads `sessions/{id}.log`, supports `tail` parameter for last N lines, sanitizes session ID to hex-only, truncates at 15KB.
-
-Also cleaned up: moved `mkdirSync`/`appendFileSync`/`execFile` to top-level imports instead of dynamic `await import()` calls.

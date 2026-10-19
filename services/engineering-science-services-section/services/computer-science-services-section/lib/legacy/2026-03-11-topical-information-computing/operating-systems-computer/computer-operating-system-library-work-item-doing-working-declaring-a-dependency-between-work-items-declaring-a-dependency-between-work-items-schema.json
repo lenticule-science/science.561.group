@@ -1,7 +1,0 @@
-{
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://research-notes.561.group/hacking/library/predication-notes/composting/library/object/library/thing/library/system/library/operating-system/library/computer-operating-system/library/work-item/doing/working/declaring-a-dependency-between-work-items/declaring-a-dependency-between-work-items.schema.json",
-  "title": "declaring-a-dependency-between-work-items",
-  "description": "Writes (a, depends-on, b) — a typed predication cell asserting a depends on b. Future block-propagation closure rules can fire on this edge.",
-  "type": "object"
-}

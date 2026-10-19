@@ -1,6 +1,0 @@
-#+title: user interface
-#+author: emsenn
-#+email: emsenn@emsenn.net
-#+date: [2020-12-19 Sat 18:30]
-#+roam_tags: term
-A */user interface/* is the means by which a [[file:computer_user.org][user]] does things with a [[file:tool.org][tool]].

@@ -1,9 +1,0 @@
-Here's the report:
-
-**Hugo Build Check — emsenn-net**
-
-- **Site location**: `operations/engineering/fars/hugo-publishing/emsenn-net/` (not `operations/science/sites/emsenn-net` as referenced in the task prompt — that path doesn't exist)
-- **Build result**: Could not run — **Hugo is not installed** on this VPS. No `hugo` binary found in PATH, `/usr/local/bin/`, or `/snap/bin/`.
-- **Blocker**: Hugo needs to be installed before any site builds can run. This is likely a gap from the VPS migration.
-
-No build errors to report because the build toolchain itself is missing.

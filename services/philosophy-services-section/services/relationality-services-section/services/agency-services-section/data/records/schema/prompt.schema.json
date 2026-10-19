@@ -1,8 +1,0 @@
-{
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://561.group/swarm-intelligence/articulating/library/aperiodic-articulation-category/inferring/library/prompt/prompt.schema.json",
-  "title": "Prompt (the message an inferring call sends to an LLM model)",
-  "description": "The outgoing message inferring sends to an llm-model. A prompt IS a claim — a JSON Schema 2020-12 document — commonly the most-specific type {const: <HTML SHP / text>} carrying the literal message to send (HTML is the inter-LLM format). inferring unpacks the prompt's content into the endpoint request body and packs the reply back as the claim of the produced utterance. The prompt-vs-reply distinction is positional in the produced utterance: the prompt is recorded in the call-provenance token (slot 0), the reply is the claim (slot 1).",
-  "kind": "object",
-  "$ref": "https://561.group/swarm-intelligence/library/claim/claim.schema.json"
-}

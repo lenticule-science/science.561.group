@@ -1,8 +1,0 @@
-Script is built and tested. `pattern-detector.js`:
-
-- **Reads** observations.jsonl, deduplicates by tool_use_id
-- **Detects** three pattern types: repeated tool sequences (n-gram), error→fix (tool_complete errors followed by Edit), user corrections (same tool on same file within 3 calls)
-- **Creates/updates** instincts in `operations/engineering/records/instincts/personal/` with proper frontmatter matching the observer agent's spec
-- **Subcommands**: `--detect` (dry run), `--apply` (write), `--since DATE`, `--min-count N`
-- **Path-safe**: normalizes extracted file paths, rejects traversal
-- **Consistent** with sibling tools (same REPO_ROOT, INSTINCTS_DIR, updateFrontmatterField, tokenSimilarity, event recording patterns)

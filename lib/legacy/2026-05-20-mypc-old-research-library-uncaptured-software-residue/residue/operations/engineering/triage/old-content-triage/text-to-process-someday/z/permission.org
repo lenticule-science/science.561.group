@@ -1,5 +1,0 @@
-#+title: permission
-#+author: emsenn
-#+email: emsenn@emsenn.net
-#+date: [2020-12-18 Fri 10:41]
-On a [[file:computer.org][computer]], */permission/* is used to grant or forbid a [[file:computer_user.org][computer user]] from performing actions on a [[file:file.org][file]] or 

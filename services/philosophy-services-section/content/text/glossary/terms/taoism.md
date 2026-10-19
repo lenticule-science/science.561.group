@@ -1,6 +1,0 @@
----
-id: f28ac924-d5d5-4c07-941c-75a6f5fc3161
-name: Taoism
-date-created: 2025-09-01
----
-

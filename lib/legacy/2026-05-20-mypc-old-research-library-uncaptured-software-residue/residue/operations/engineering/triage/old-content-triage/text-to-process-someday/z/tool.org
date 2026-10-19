@@ -1,6 +1,0 @@
-#+title: tool
-#+roam_alias: "tools"
-#+author: emsenn
-#+email: emsenn@emsenn.net
-#+date: [2020-12-18 Fri 13:46]
-A */tool/* is an [[file:artifact.org][artifact]] for performing an action that's beyond the intrinsic [[file:human.org][human]] [[file:capabilities.org][capabilities]].

@@ -1,9 +1,0 @@
-Done. 30 files updated across:
-
-- **Cargo.toml**: binary name `561d` → `mash-engine`
-- **Agentic harness**: 6 commands, 1 skill, 3 agents, 2 offices, 2 duties, 1 hook, 1 personnel file
-- **MCP server**: command map, tool descriptions, `execFile` calls
-- **Tools**: `dispatch-work.js`, `generate-root-agentic-files.js`, `record-event.js`
-- **Docs**: 8 documentation files updated
-
-Binary installed at `~/.cargo/bin/mash-engine` with `561d` symlink for backward compatibility. `mash-engine --help` confirmed working.

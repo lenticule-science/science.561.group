@@ -1,6 +1,0 @@
-Done. Created:
-
-- **`operations/engineering/fars/agentic/tools/burndown.js`** — reads plan tasks from the knowledge graph, builds a day-by-day burndown timeline from `date-completed` fields, renders ASCII bar chart with velocity and projected completion
-- **`operations/engineering/fars/agentic/commands/burndown.md`** — `/burndown <plan-id>` command
-
-Usage: `node burndown.js <plan-id>` (markdown) or `node burndown.js <plan-id> --json` (structured output). Tested against `foundational-ontology-research` — shows 9 tasks, 1 completed, velocity 0.5/day.

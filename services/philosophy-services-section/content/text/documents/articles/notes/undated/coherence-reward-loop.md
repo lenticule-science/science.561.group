@@ -1,3 +1,0 @@
----
-title: "Coherence Reward Loop"
----

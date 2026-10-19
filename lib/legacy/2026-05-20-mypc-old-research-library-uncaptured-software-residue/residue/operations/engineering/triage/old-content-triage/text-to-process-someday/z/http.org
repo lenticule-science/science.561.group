@@ -1,3 +1,0 @@
-#+title: HTTP
-#+date: [2020-12-15 Tue 15:20]
-*/HyperText Transport Protocol/* is the de facto standard for participating on the [[file:web.org][Web]].

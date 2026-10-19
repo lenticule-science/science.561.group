@@ -1,8 +1,0 @@
-Document written to `operations/engineering/records/sessions/research/smolagents-micromodel-landscape.md` — 144 lines, well-sourced.
-
-Key findings:
-
-- **Smolagents** is an orchestration library, not a fine-tuning tool. Useful for wiring small models into duty execution, but not the core of what we need.
-- **Qwen2-1.5B + QLoRA** is the sweet spot: fine-tune for ~$10 on rented GPU, run inference on VPS CPU at ~1-3 tok/sec in ~1.5GB RAM. Plenty for procedural duties.
-- **The "continuous learning → fine-tuning" loop is a real gap** — the technical pieces exist (distillation, LoRA, continual learning) but nobody has published an operational pipeline wiring agent session logs into micro-model training. This is genuinely novel territory for us.
-- **Start small**: pick one procedural duty (frontmatter validation), collect 500 examples from logs, fine-tune, measure against Claude over 100 runs. If it works, automate the pipeline.

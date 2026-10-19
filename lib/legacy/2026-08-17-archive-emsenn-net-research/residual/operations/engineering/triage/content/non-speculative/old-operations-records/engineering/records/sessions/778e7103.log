@@ -1,9 +1,0 @@
-Done. Summary of changes to `auto-dispatch.js`:
-
-1. **Fixed WIP counting regex** (line 87): Changed from `/running/i` (matched "running" anywhere in prompt text — 36 false positives) to `/^[0-9a-f]{8}\s+\[running\]/` (matches only session status lines — accurate count of 3)
-
-2. **Fixed event type** (line 308): Changed `task-dispatched` to `agent-dispatched` (valid event type)
-
-3. **Updated config**: `enabled: true`, `wip_limit: 5`, `min_score: 7`
-
-Auto-dispatch is live. Just dispatched 2 sessions: `ecc-port-budget-distribution → harness-optimizer` and `ecc-port-dual-entry-hooks → build-error-resolver`.

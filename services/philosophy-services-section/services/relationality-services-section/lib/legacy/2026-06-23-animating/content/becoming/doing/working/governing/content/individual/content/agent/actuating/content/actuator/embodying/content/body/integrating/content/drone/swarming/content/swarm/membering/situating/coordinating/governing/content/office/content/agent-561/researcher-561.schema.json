@@ -1,9 +1,0 @@
-{
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://561.group/swarm-intelligence/library/character/library/researcher-561/researcher-561.schema.json",
-  "title": "Researcher-561 (character restriction to research enactor)",
-  "description": "Restriction of character to the 561-research role. Bearer of studying/deriving/projecting capabilities. Reads the entire trace, derives new $things (categories, objects, morphisms), validates against existing catalog, mints new substrate. The character whose purpose is to extend the swarm's substrate.",
-  "kind": "object",
-  "variance": "restriction",
-  "allOf": [{ "$ref": "../../character.schema.json" }]
-}

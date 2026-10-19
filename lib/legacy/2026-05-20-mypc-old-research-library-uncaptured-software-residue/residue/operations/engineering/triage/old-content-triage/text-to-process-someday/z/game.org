@@ -1,5 +1,0 @@
-#+title: game
-#+author: emsenn
-#+email: emsenn@emsenn.net
-#+date: [2020-12-18 Fri 10:19]
-A */game/* can be defined as a [[file:tool.org][tool]] for [[file:communication.org][communicating]] between [[file:person.org][people]].

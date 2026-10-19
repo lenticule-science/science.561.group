@@ -1,3 +1,0 @@
-{"e":"cell-id","a":"describing","v":"The SHA-256 hex digest of a cell-record's canonical-JSON encoding — a 64-character lowercase hex string. Content-addressable identity; equal content produces equal id on any host.","t":"2026-05-19T23:00:00Z"}
-{"e":"cell-id","a":"identifying","v":"cell-record","t":"2026-05-19T23:00:00Z"}
-{"e":"cell-id","a":"computing-via","v":"identifying-a-cell","t":"2026-05-19T23:00:00Z"}

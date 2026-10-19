@@ -1,8 +1,0 @@
-{
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://research-notes.561.group/hacking/library/predication-notes/composting/library/predication-cell-set/library/predication-cell/library/cell-record/library/cell-id/cell-id.schema.json",
-  "title": "Cell id",
-  "description": "JSON Schema for a cell-id: a fixed-length hex string identifying a cell-record by its content. The identifier function id : CellRecord → CellId depends only on the canonical encoding of the record; two records that canonicalize to the same bytes receive the same id. The pattern below admits 64-character lowercase hex strings, matching the realization choice of SHA-256 over canonical JSON.",
-  "type": "string",
-  "pattern": "^[0-9a-f]{64}$"
-}

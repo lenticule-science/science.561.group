@@ -6,12 +6,7 @@
   "main": "./dist/lib/articulating/index.mjs",
   "types": "./dist/lib/articulating/index.d.mts",
   "files": [
-    "content",
-    "services",
-    "src",
-    "lib",
-    "dist",
-    "foundry.toml"
+    "lib"
   ],
   "scripts": {
     "check:node": "tsc --noEmit",

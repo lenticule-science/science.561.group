@@ -1,8 +1,0 @@
-Done. Added `--channel` flag to `query-events.js` with four channels:
-
-- **bridge** — completions, blocks, anomalies, plan changes (139 events matched)
-- **fleet** — session lifecycle: started, completed, failed, dispatch
-- **engineering** — hooks, builds, metrics, process changes (default for untagged events)
-- **failures** — failed, error, violation, rejected events
-
-Channel matching works two ways: explicit `audience`/`channel` field on the event, or action-pattern matching. Events without an audience default to `engineering`. Output uses compact `timestamp  action  subject` format. Composes with existing filters (`--since`, `--actor`, etc.).

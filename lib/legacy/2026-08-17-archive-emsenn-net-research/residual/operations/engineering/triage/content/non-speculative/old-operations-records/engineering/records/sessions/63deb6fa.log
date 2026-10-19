@@ -1,1 +1,0 @@
-Written to `operations/engineering/fars/docs/specs/event-jsonl-format.md`. 148 lines covering all eight sections: overview, required fields, optional narrative/accounting/messaging fields, action vocabulary (organized by operations stage), channel semantics, three examples (minimal, full accounting, ambient with messaging), and producer/consumer tables.

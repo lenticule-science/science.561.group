@@ -1,6 +1,0 @@
--- -*- lua -*-
-color = false
-exclude_files = {"metatable_monkey.lua"}
-ignore = {"21/_.*"} -- don't warn when _ is an unused argument
-max_line_length = 85 -- small grace for occasionally breaking 80
-globals = {"love", "info", "dbg", "pp"}

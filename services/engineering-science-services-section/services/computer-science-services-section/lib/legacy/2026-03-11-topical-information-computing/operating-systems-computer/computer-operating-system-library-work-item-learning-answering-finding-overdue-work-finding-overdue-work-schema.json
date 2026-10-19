@@ -1,7 +1,0 @@
-{
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://research-notes.561.group/hacking/library/predication-notes/composting/library/object/library/thing/library/system/library/operating-system/library/computer-operating-system/library/work-item/learning/answering/finding-overdue-work/finding-overdue-work.schema.json",
-  "title": "finding-overdue-work",
-  "description": "Walks all work-items with has-deadline cells and returns those whose deadline is in the past and status is not done/abandoned.",
-  "type": "object"
-}

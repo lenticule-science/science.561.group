@@ -1,9 +1,0 @@
-Survey written at `library/domains/science/domains/medicine/domains/medical-technology/domains/air-purification/texts/mid-range-hepa-purifier-comparison.md`.
-
-Covers five models across four performance tiers:
-- **Winix 5500-2 & Coway AP-1512HH** (~240 CFM) — the real mid-range workhorses at $130-200
-- **Honeywell HPA200** (~190 CFM) — awkward middle ground
-- **Levoit Core 300S-P** (~140 CFM) — best value for bedrooms, only one with app/PM2.5 readout
-- **Blueair Blue Pure 411** (~70 CFM) — too small for the target room size
-
-All CADR figures are AHAM Verifide. The survey flags that no manufacturer in this class provides third-party filter media verification (H13 claims are unverified), carbon mass, pressure drop curves, or sensor accuracy specs. It cross-references the existing Levoit compact survey for standards background.

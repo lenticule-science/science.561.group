@@ -1,6 +1,0 @@
-#+TITLE: Looking at How I Organize a Document
-#+EXPORT_FILE_NAME: ../../posts/looking-at-how-i-organize-a-document
-#+TOC: headlines 4
-* Introduction
-{{{document-eli(default)}}}
-#+INCLUDE: "../index.org::#looking-at-how-i-organize-a-document"

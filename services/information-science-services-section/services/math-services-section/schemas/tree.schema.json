@@ -1,4 +1,0 @@
-{ "$schema":"https://json-schema.org/draft/2020-12/schema","$id":"combinatorics/scripts/graphing/content/graph/scripts/spanning/content/tree","title":"tree",
-  "description":"A connected acyclic graph: a unique path between any two vertices. The structure underlying hierarchy and the corpus's own proof trees. A graph refined by connectedness + acyclicity.",
-  "allOf":[{"$ref":"combinatorics/scripts/graphing/content/graph"}],
-  "type":"object","required":["connected","acyclic"],"properties":{"connected":{"const":true},"acyclic":{"description":"no cycles; unique path between vertices","const":true}} }

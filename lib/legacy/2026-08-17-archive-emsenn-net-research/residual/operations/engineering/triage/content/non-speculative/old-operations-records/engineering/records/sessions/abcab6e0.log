@@ -1,6 +1,0 @@
-Done. Created:
-
-- **`operations/engineering/fars/agentic/tools/scope-tracker.js`** — reads plan and task frontmatter, compares `date-created` fields to detect tasks added after plan creation, flags >30% growth as scope creep
-- **`operations/engineering/fars/agentic/commands/scope.md`** — `/scope` command wiring
-
-Results from the first run: 1 plan flagged for scope creep (`agent-governance-enrichment` at +50%), 31 stable plans. Overall 58 tasks added across 116 original (50% organizational growth).

@@ -1,9 +1,0 @@
-Done. Created:
-
-- **`operations/engineering/fars/agentic/tools/weekly-review.js`** — standalone tool with dual entry point pattern (`run()` + stdin fallback). Reads events.jsonl and plan/task files from `operations/command/records/`. Computes:
-  - Tasks completed/created/net, velocity (tasks/day)
-  - Plans advanced (had completions this week) vs stalled (no completions)
-  - Top 3 wins and top 3 blockers (dependency-blocked tasks)
-  - Flags: `--since YYYY-MM-DD`, `--json`, `--save` (writes to `operations/command/records/reviews/weekly-YYYY-MM-DD.md`)
-
-- **Updated `operations/engineering/fars/agentic/commands/weekly-review.md`** — points to the new tool instead of the generic review-protocol.js

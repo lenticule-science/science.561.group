@@ -1,9 +1,0 @@
-Written to `operations/engineering/fars/docs/specs/eavt-graph-format.md`. 175 lines covering all 9 sections.
-
-Key details captured:
-- **Two ID strategies**: Node.js uses sequential 1-based IDs; Rust uses FNV-1a 64-bit hashes. Both are valid.
-- **FNV-1a algorithm** specified with exact constants and pseudocode, matching `eavt.rs:103-110`.
-- **All values are strings** — confirmed by inspecting the real graph (132,700 triples, 100% string values).
-- **Attribute ID assignment** differs between implementations (lexicographic sort vs. sequential encounter), both valid per the spec.
-- **Composition** semantics from `Graph::compose()` — union attrs, merge triples with dedup.
-- **2^53 precision note** for JavaScript consumers if FNV-1a IDs are ever loaded in JS.

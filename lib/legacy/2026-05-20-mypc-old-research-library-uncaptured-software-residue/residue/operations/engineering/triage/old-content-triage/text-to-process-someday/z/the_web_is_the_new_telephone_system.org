@@ -1,2 +1,0 @@
-#+title: the-web-is-the-new-telephone-system
-The [[file:web.org][Web]] is the new [[file:telephone.org][telephone]] system: overrun by [[file:spam.org][spam]], due to be abandoned.

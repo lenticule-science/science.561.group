@@ -1,1 +1,0 @@
-Written: `operations/engineering/fars/docs/fars-reference.md` — 283 lines covering all 8 sections. Documents what exists: the file substrate, knowledge graph (generation, patching, querying), event system (recording, auto-recording, querying, state machine), all 35+ tools, all 35+ hooks organized by category, the agent harness composition, and installation procedures.

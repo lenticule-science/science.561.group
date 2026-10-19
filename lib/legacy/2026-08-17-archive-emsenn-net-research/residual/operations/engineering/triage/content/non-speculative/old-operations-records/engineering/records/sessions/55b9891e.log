@@ -1,3 +1,0 @@
-Written: `operations/engineering/fars/docs/specs/fars-file-format.md` — 196 lines.
-
-Covers all 9 sections: overview, file structure, required fields, type vocabulary (library/operational/infrastructure), type-specific fields for term/text/task/plan/project/goal, status vocabulary with the work state machine states, relation fields with cardinality, file naming and domain placement, and four examples (term, text, task, plan) drawn from real files in the repo.

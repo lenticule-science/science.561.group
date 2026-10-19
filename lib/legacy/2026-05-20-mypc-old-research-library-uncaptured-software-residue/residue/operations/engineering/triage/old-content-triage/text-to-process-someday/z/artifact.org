@@ -1,6 +1,0 @@
-#+title: artifact
-#+roam_alias: "artifacts"
-#+author: emsenn
-#+email: emsenn@emsenn.net
-#+date: [2020-12-18 Fri 19:53]
-*/Artifacts/* are objects 

@@ -1,1 +1,0 @@
-{"users":[{"capabilities":[],"display_name":"Alice","role":"member","slug":"user:alice"},{"capabilities":[],"display_name":"Bob","role":"observer","slug":"user:bob"},{"capabilities":[],"display_name":"Captain","role":"admin","slug":"user:captain"},{"capabilities":["signal:custom:demo"],"display_name":"Dóra Östberg","role":"member","slug":"user:dora"}]}

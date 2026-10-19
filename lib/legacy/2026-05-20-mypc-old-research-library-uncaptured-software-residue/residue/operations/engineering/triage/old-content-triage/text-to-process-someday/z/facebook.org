@@ -1,8 +1,0 @@
-#+title: Facebook
-#+author: emsenn
-#+email: emsenn@emsenn.net
-#+date: [2020-12-20 Sun 09:32]
-#+roam_tags: term
-
-#+name: definition
-*/[[file:facebook.org][Facebook]]/* is a [[file:for_profit_web_service.org][for-profit Web service]] offering communication with other Facebook users.

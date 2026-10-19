@@ -1,6 +1,0 @@
-Done. Created and committed:
-
-- **`operations/engineering/fars/agentic/tools/activity-feed.js`** — reads events.jsonl, git log, and session records; merges into a unified timeline sorted by timestamp. Supports `--since`, `--limit`, and `--json` flags. Follows the dual entry point pattern.
-- **`operations/engineering/fars/agentic/commands/activity.md`** — `/activity` command that runs the tool and offers drill-down.
-
-The feed classifies entries as: task-completed, plan-completed, session-started, session-completed, commit, term-written, text-written, event, error. Default window is 24 hours, default limit is 50 entries.

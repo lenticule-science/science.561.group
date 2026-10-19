@@ -1,4 +1,0 @@
-#+TITLE: 
-
-- [[file:theindex.org][Index]]
-- [[file:index.org][Personal Records]]

@@ -1,6 +1,0 @@
-# Information Science Services Section
-
-This section holds Lenticule Science's information-science work. Its children include [`language-science-services-section`](services/communication-science-services-section/services/language-science-services-section/README.md) (under `communication-science-services-section`), `knowledge-services-section`, `intelligence-science-services-section`, `communication-science-services-section`, `semiotics-science-services-section`, `math-services-section`, `cybernetics-services-section`, and `information-theory-services-section` — several of which (knowledge, semiotics, math) already have their own READMEs. `lib/legacy` holds a 2026-08-17 capture of emsenn's Google Drive library artifacts, and `content/text` holds documents and glossary terms at this level.
-
-
-The [PlainEng/PTGAE Science Services Section](services/communication-science-services-section/services/language-science-services-section/services/english-science-services-section/services/ptgae-science-services-section/README.md) develops research on technical English, reader-task comprehension, semantics and standards conformance in partnership with Red Cup Engineering. The earlier Communication → Writing → PTGAE collection remains source provenance, not a competing scientific owner.

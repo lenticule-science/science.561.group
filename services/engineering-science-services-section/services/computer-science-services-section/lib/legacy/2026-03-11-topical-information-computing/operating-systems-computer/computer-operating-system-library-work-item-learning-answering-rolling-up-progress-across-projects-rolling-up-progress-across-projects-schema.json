@@ -1,7 +1,0 @@
-{
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://research-notes.561.group/hacking/library/predication-notes/composting/library/object/library/thing/library/system/library/operating-system/library/computer-operating-system/library/work-item/learning/answering/rolling-up-progress-across-projects/rolling-up-progress-across-projects.schema.json",
-  "title": "rolling-up-progress-across-projects",
-  "description": "Computes completion percentages for goals/milestones/campaigns/objectives from their contributes-to children's has-status cells. A closure-rule firing over the contribution edges.",
-  "type": "object"
-}
