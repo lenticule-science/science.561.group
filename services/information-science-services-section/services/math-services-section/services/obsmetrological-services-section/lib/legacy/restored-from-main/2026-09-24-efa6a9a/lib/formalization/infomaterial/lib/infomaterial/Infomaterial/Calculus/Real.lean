@@ -1,9 +1,0 @@
-import Infomaterial.Calculus.Real.ExpSeries
-import Infomaterial.Calculus.Real.GoldenLog
-import Infomaterial.Calculus.Real.IVT
-import Infomaterial.Calculus.Real.Internal
-import Infomaterial.Calculus.Real.LogLipschitz
-import Infomaterial.Calculus.Real.Logarithm
-import Infomaterial.Calculus.Real.Multiplication
-import Infomaterial.Calculus.Real.MultiplicationOrder
-import Infomaterial.Calculus.Real.QuadraticSurd

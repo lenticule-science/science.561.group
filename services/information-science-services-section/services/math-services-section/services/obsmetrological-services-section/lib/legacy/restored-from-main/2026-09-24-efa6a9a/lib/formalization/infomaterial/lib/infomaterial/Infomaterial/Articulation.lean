@@ -1,4 +1,0 @@
-import Infomaterial.Articulation.Articulating
-import Infomaterial.Articulation.Articulating.Cell
-import Infomaterial.Articulation.Articulating.FourCorner
-import Infomaterial.Articulation.Articulating.Utterance

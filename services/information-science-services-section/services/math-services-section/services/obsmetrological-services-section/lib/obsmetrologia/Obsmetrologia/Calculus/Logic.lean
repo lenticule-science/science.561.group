@@ -1,5 +1,0 @@
-import Obsmetrologia.Calculus.Logic.TwistProductResiduation
-import Obsmetrologia.Calculus.Logic.LinearLogicChu
-import Obsmetrologia.Calculus.Logic.LinearLogicMix
-import Obsmetrologia.Calculus.Logic.LambekCalculus
-import Obsmetrologia.Calculus.Logic.FCALambekCircle

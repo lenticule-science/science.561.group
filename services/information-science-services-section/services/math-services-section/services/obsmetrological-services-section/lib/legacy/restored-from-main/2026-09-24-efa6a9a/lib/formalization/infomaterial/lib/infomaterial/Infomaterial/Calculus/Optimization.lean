@@ -1,1 +1,0 @@
-import Infomaterial.Calculus.Optimization.FixedPoint

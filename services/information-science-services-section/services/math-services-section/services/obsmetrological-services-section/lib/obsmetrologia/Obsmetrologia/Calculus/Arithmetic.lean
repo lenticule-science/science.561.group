@@ -1,1 +1,0 @@
-import Obsmetrologia.Calculus.Arithmetic.CoreFrontier

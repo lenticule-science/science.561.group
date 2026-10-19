@@ -1,9 +1,0 @@
-{
-  "enterprise": "oml",
-  "offices": [
-    {
-      "id": "mathematical-library-steward",
-      "record": "lib/agency/offices/mathematical-library-steward.json"
-    }
-  ]
-}

@@ -1,5 +1,0 @@
-import HoareProgramMeasurement
-
-#print axioms HoareProgramMeasurement.Program.preservesPost
-#print axioms HoareProgramMeasurement.KeratinousProgram.toProgramPreserves
-#print axioms HoareProgramMeasurement.KeratinousProgram.moveLeastCompatible

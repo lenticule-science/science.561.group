@@ -86,3 +86,7 @@
 	path = services/information-science-services-section/services/communication-science-services-section/services/glossary-science-services-section/services/glossary-services-section
 	url = https://github.com/lenticule-science/glossary-services-section.git
 	branch = main
+[submodule "obsmetrological-services-section"]
+	path = services/information-science-services-section/services/math-services-section/services/obsmetrological-services-section
+	url = https://github.com/lenticule-science/obsmetrological-services-section.git
+	branch = main

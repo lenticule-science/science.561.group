@@ -1,2 +1,0 @@
-import Obsmetrologia.Calculus.Optimization.FixedPoint
-import Obsmetrologia.Calculus.Optimization.Majorization
