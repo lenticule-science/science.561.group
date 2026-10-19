@@ -1,0 +1,10 @@
+{
+  "url": "https://koios.news/coverage.json",
+  "observedAt": "2026-10-19T00:35:47.740977+00:00",
+  "sha256": "ec1c54b8b0df4c93e6fa23c93c954a1ef626368c623c6054bbd6db7134530b9a",
+  "responseHeaders": {
+    "Date": "Mon, 19 Oct 2026 00:35:47 GMT",
+    "Content-Type": "application/json",
+    "ETag": "\"39d83aa86ccb27357321bce0105a4f99\""
+  }
+}

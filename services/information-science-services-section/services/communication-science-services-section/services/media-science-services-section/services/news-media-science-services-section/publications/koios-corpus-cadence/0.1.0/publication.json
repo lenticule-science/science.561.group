@@ -1,0 +1,61 @@
+{
+  "kind": "lenticule.research-publication.v1",
+  "paper_id": "koios-corpus-cadence",
+  "version": "0.1.0",
+  "title": "Koios.News retained-corpus publication cadence",
+  "status": "released-internally",
+  "released_at": null,
+  "publicly_accessible": false,
+  "peer_reviewed": false,
+  "doi": null,
+  "canonical_public_url": null,
+  "publishing_organization": "Lenticule Science",
+  "discipline": "news-media science",
+  "authors": [
+    {
+      "name": "AI assistant",
+      "role": "disclosed-AI-analysis-and-drafting"
+    }
+  ],
+  "ai_disclosure": "An AI assistant collected public metadata and computed these descriptive statistics under the Leader\u2019s direction. No human coauthorship or independent scientific acceptance is claimed.",
+  "source_manuscripts": [
+    "https://github.com/lenticule-science/science-services-section/releases/tag/koios-corpus-cadence-v0.1.0"
+  ],
+  "evidence": {
+    "cadence": "one source-qualified retained-corpus metadata census",
+    "capacity": "unmeasured",
+    "industry baseline": "unmeasured"
+  },
+  "files": {
+    "METHODS.md": {
+      "sha256": "c5503b3d0d63dab8a86b7a33737cedabece391c90ee826bcb6b279eea7a9884d",
+      "bytes": 4387
+    },
+    "articles.csv": {
+      "sha256": "b098293bcfe0df70a907ee465edef9d39ce72dcabb6d12bd776d75d29cf6e452",
+      "bytes": 8305
+    },
+    "daily-counts.csv": {
+      "sha256": "d63ae9cf58efb6f20a6459370796465e41773f321b1db197c76be42db24300cc",
+      "bytes": 266
+    },
+    "source-coverage.json": {
+      "sha256": "ec1c54b8b0df4c93e6fa23c93c954a1ef626368c623c6054bbd6db7134530b9a",
+      "bytes": 154981
+    },
+    "source-observation.json": {
+      "sha256": "40769726724afdce8bc1854bbad3e155415c47e29dd890bb5b29a36d049cfdc0",
+      "bytes": 344
+    },
+    "summary.json": {
+      "sha256": "c7250f5af63b49c0348acfa8186e62151e0caf3e5e9c9eab674c96c8b093c2fa",
+      "bytes": 1001
+    },
+    "dataset.jsonld": {
+      "sha256": "3cfb0cb1a7bb95aa5149f69d204d73fd1bfda373fd4af7e0eedb76e0d6a2f6cb",
+      "bytes": 5155
+    }
+  },
+  "artifact_custody": "Internal versioned research-data release in the private Lenticule Science repository; public-paper reporting admission is absent.",
+  "license_scope": "Source rights retained; no new redistribution license."
+}

@@ -1,0 +1,137 @@
+{
+  "@context": {
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dct": "http://purl.org/dc/terms/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "spdx": "http://spdx.org/rdf/terms#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@id": "https://github.com/lenticule-science/science-services-section/releases/tag/koios-corpus-cadence-v0.1.0#dataset",
+  "@type": "dcat:Dataset",
+  "dct:identifier": "koios-corpus-cadence/0.1.0",
+  "dct:title": "Koios.News retained-corpus publication cadence",
+  "dct:description": "Descriptive census of a single public metadata snapshot; not an industry benchmark or provider capacity estimate.",
+  "dcat:version": "0.1.0",
+  "dct:publisher": {
+    "@id": "https://github.com/lenticule-science",
+    "dct:title": "Lenticule Science"
+  },
+  "dct:accessRights": "Restricted to authorized readers of the private Science repository.",
+  "dct:rights": "No new redistribution license granted; source rights retained.",
+  "prov:wasDerivedFrom": {
+    "@id": "https://koios.news/coverage.json"
+  },
+  "dcat:landingPage": {
+    "@id": "https://github.com/lenticule-science/science-services-section/releases/tag/koios-corpus-cadence-v0.1.0"
+  },
+  "dcat:distribution": [
+    {
+      "@type": "dcat:Distribution",
+      "dct:title": "METHODS.md",
+      "dcat:downloadURL": {
+        "@id": "https://github.com/lenticule-science/science-services-section/releases/download/koios-corpus-cadence-v0.1.0/METHODS.md"
+      },
+      "dcat:byteSize": 4387,
+      "dcat:mediaType": {
+        "@id": "https://www.iana.org/assignments/media-types/text/markdown"
+      },
+      "spdx:checksum": {
+        "@type": "spdx:Checksum",
+        "spdx:algorithm": {
+          "@id": "spdx:checksumAlgorithm_sha256"
+        },
+        "spdx:checksumValue": "c5503b3d0d63dab8a86b7a33737cedabece391c90ee826bcb6b279eea7a9884d"
+      }
+    },
+    {
+      "@type": "dcat:Distribution",
+      "dct:title": "articles.csv",
+      "dcat:downloadURL": {
+        "@id": "https://github.com/lenticule-science/science-services-section/releases/download/koios-corpus-cadence-v0.1.0/articles.csv"
+      },
+      "dcat:byteSize": 8305,
+      "dcat:mediaType": {
+        "@id": "https://www.iana.org/assignments/media-types/text/csv"
+      },
+      "spdx:checksum": {
+        "@type": "spdx:Checksum",
+        "spdx:algorithm": {
+          "@id": "spdx:checksumAlgorithm_sha256"
+        },
+        "spdx:checksumValue": "b098293bcfe0df70a907ee465edef9d39ce72dcabb6d12bd776d75d29cf6e452"
+      }
+    },
+    {
+      "@type": "dcat:Distribution",
+      "dct:title": "daily-counts.csv",
+      "dcat:downloadURL": {
+        "@id": "https://github.com/lenticule-science/science-services-section/releases/download/koios-corpus-cadence-v0.1.0/daily-counts.csv"
+      },
+      "dcat:byteSize": 266,
+      "dcat:mediaType": {
+        "@id": "https://www.iana.org/assignments/media-types/text/csv"
+      },
+      "spdx:checksum": {
+        "@type": "spdx:Checksum",
+        "spdx:algorithm": {
+          "@id": "spdx:checksumAlgorithm_sha256"
+        },
+        "spdx:checksumValue": "d63ae9cf58efb6f20a6459370796465e41773f321b1db197c76be42db24300cc"
+      }
+    },
+    {
+      "@type": "dcat:Distribution",
+      "dct:title": "source-coverage.json",
+      "dcat:downloadURL": {
+        "@id": "https://github.com/lenticule-science/science-services-section/releases/download/koios-corpus-cadence-v0.1.0/source-coverage.json"
+      },
+      "dcat:byteSize": 154981,
+      "dcat:mediaType": {
+        "@id": "https://www.iana.org/assignments/media-types/application/json"
+      },
+      "spdx:checksum": {
+        "@type": "spdx:Checksum",
+        "spdx:algorithm": {
+          "@id": "spdx:checksumAlgorithm_sha256"
+        },
+        "spdx:checksumValue": "ec1c54b8b0df4c93e6fa23c93c954a1ef626368c623c6054bbd6db7134530b9a"
+      }
+    },
+    {
+      "@type": "dcat:Distribution",
+      "dct:title": "source-observation.json",
+      "dcat:downloadURL": {
+        "@id": "https://github.com/lenticule-science/science-services-section/releases/download/koios-corpus-cadence-v0.1.0/source-observation.json"
+      },
+      "dcat:byteSize": 344,
+      "dcat:mediaType": {
+        "@id": "https://www.iana.org/assignments/media-types/application/json"
+      },
+      "spdx:checksum": {
+        "@type": "spdx:Checksum",
+        "spdx:algorithm": {
+          "@id": "spdx:checksumAlgorithm_sha256"
+        },
+        "spdx:checksumValue": "40769726724afdce8bc1854bbad3e155415c47e29dd890bb5b29a36d049cfdc0"
+      }
+    },
+    {
+      "@type": "dcat:Distribution",
+      "dct:title": "summary.json",
+      "dcat:downloadURL": {
+        "@id": "https://github.com/lenticule-science/science-services-section/releases/download/koios-corpus-cadence-v0.1.0/summary.json"
+      },
+      "dcat:byteSize": 1001,
+      "dcat:mediaType": {
+        "@id": "https://www.iana.org/assignments/media-types/application/json"
+      },
+      "spdx:checksum": {
+        "@type": "spdx:Checksum",
+        "spdx:algorithm": {
+          "@id": "spdx:checksumAlgorithm_sha256"
+        },
+        "spdx:checksumValue": "c7250f5af63b49c0348acfa8186e62151e0caf3e5e9c9eab674c96c8b093c2fa"
+      }
+    }
+  ]
+}
