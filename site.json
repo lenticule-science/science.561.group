@@ -8,23 +8,55 @@
   "cellLabel": "Research",
   "menu": [
     {
-      "href": "/",
-      "label": "Writing"
+      "href": "https://science.561.group/",
+      "label": "Science"
     },
     {
-      "href": "https://l-space.561.group/",
-      "label": "L-Space · Language Space"
+      "href": "https://engineering.561.group/",
+      "label": "Engineering"
     },
     {
-      "href": "https://561.group/",
-      "label": "561 Group"
+      "href": "https://operations.561.group/",
+      "label": "Operations"
+    },
+    {
+      "href": "https://services.561.group/",
+      "label": "Services"
+    },
+    {
+      "href": "https://market.561.group/",
+      "label": "Market"
+    },
+    {
+      "href": "https://bazaar.561.group/",
+      "label": "Bazaar"
+    },
+    {
+      "href": "https://shop.561.group/",
+      "label": "Shop"
+    },
+    {
+      "href": "/search/",
+      "label": "Search this site"
+    },
+    {
+      "href": "/resources.json",
+      "label": "Resource JSON"
+    },
+    {
+      "href": "/discovery.json",
+      "label": "Discovery JSON"
     },
     {
       "href": "/feed.rss.xml",
       "label": "RSS"
+    },
+    {
+      "href": "https://561.group/",
+      "label": "561 Group"
     }
   ],
-  "home": true,
+  "home": "start-here",
   "archives": {
     "enabled": true,
     "pageSize": 12
