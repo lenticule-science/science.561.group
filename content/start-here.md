@@ -19,11 +19,11 @@ Lenticule Science develops research about measurements, models, language and for
 
 | Your question | Starting point | What to check |
 | --- | --- | --- |
-| How should observations and claims be related? | The information-science source section | The source of each observation, its time and units, competing evidence, and which inference is being made |
-| What does a natural-science account explain? | The natural-science source section | The system studied, measurement procedure, assumptions, uncertainty and independent replication |
-| What scientific claims underlie a designed artifact? | The engineering-science source section | The theory-to-design relation and a test that could reject the proposed application |
-| What mathematical statements are formalized? | Obsmetrologia's Lean source | Exact declarations, hypotheses, toolchain and actual proof-check results |
-| How are marks, claims and restrictions represented? | The L-Space project source | Addressed resources and witnessed relations, plus the separately authorized host and access boundary |
+| How should observations and claims be related? | [The information-science source section](https://github.com/lenticule-science/science-services-section/blob/5423f648a3aca3ca900563aa68ef3db5220d971d/services/information-science-services-section/README.md) (authorized source) | The source of each observation, its time and units, competing evidence, and which inference is being made |
+| What does a natural-science account explain? | [The natural-science source section](https://github.com/lenticule-science/science-services-section/blob/5423f648a3aca3ca900563aa68ef3db5220d971d/services/natural-science-services-section/README.md) (authorized source) | The system studied, measurement procedure, assumptions, uncertainty and independent replication |
+| What scientific claims underlie a designed artifact? | [The engineering-science source section](https://github.com/lenticule-science/science-services-section/blob/5423f648a3aca3ca900563aa68ef3db5220d971d/services/engineering-science-services-section/README.md) (authorized source) | The theory-to-design relation and a test that could reject the proposed application |
+| What mathematical statements are formalized? | [Obsmetrologia's Lean source](https://github.com/lenticule-science/obsmetrologia) (authorized source) | Exact declarations, hypotheses, toolchain and actual proof-check results |
+| How are marks, claims and restrictions represented? | [The L-Space project source](https://github.com/lenticule-science/l-space.561.group) (authorized source) | Addressed resources and witnessed relations, plus the separately authorized host and access boundary |
 
 The [resource inventory](/resources.json) gives these exact source references. They are for authorized repository readers; anonymous repository access is not established. The descriptions here identify research directions, not a public manuscript archive or a claim that every proposal has been proved.
 
