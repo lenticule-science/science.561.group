@@ -3,7 +3,7 @@
   "baseIri": "https://science.561.group/",
   "language": "en",
   "license": "Reuse terms are stated on each publication.",
-  "description": "Questions worth testing: what measurements, models, and formal proofs can—and cannot—establish.",
+  "description": "Paraconsistent four-valued logic, agent integration, MAPE-K loops, x402 machine payments and Lean 4 formal mathematics: strange research, with limits stated.",
   "eyebrow": "561 Group · Research",
   "cellLabel": "Research",
   "menu": [
@@ -63,5 +63,97 @@
   },
   "search": true,
   "tufte": true,
-  "showRecordMetadata": true
+  "showRecordMetadata": true,
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lenticule Science",
+    "url": "https://science.561.group/",
+    "sameAs": [
+      "https://github.com/lenticule-science",
+      "https://science.561.group/actors/science"
+    ],
+    "parentOrganization": {
+      "@type": "Organization",
+      "name": "561 Group",
+      "url": "https://561.group/"
+    },
+    "logo": "https://science.561.group/logo.png"
+  },
+  "author": {
+    "@type": "Organization",
+    "name": "Lenticule Science",
+    "url": "https://science.561.group/"
+  },
+  "fediverse": {
+    "handle": "@science@science.561.group",
+    "actor": "https://science.561.group/actors/science"
+  },
+  "llms": {
+    "intro": "Lenticule Science is the research company of the 561 Group. It publishes research on paraconsistent (four-valued) logic, concurrent AI-agent integration, the MAPE-K autonomic loop, x402 machine-payable markets, organizational science (Rendanheyi) and formal mathematics in Lean 4. Each publication separates what is proved or measured from what is hypothesized, and states its limits. Papers carry structured citations; glossary pages give short definitions.",
+    "sections": [
+      {
+        "title": "Machine interfaces",
+        "links": [
+          {
+            "title": "Resource inventory",
+            "url": "https://science.561.group/resources.json",
+            "description": "Resource identities, access requirements, media types and next actions."
+          },
+          {
+            "title": "Discovery JSON",
+            "url": "https://science.561.group/discovery.json",
+            "description": "Navigation, search and feeds."
+          },
+          {
+            "title": "JSON Feed",
+            "url": "https://science.561.group/feed.json",
+            "description": "Accepted publications as a JSON Feed."
+          },
+          {
+            "title": "Atom feed",
+            "url": "https://science.561.group/feed.atom.xml",
+            "description": "Accepted publications as Atom."
+          },
+          {
+            "title": "Sitemap",
+            "url": "https://science.561.group/sitemap.xml",
+            "description": "All published URLs."
+          }
+        ]
+      },
+      {
+        "title": "561 Group",
+        "links": [
+          {
+            "title": "561 Group",
+            "url": "https://561.group/",
+            "description": "The parent organization."
+          },
+          {
+            "title": "Engineering",
+            "url": "https://engineering.561.group/",
+            "description": "Engineering publications."
+          },
+          {
+            "title": "Operations",
+            "url": "https://operations.561.group/",
+            "description": "Operations publications."
+          },
+          {
+            "title": "Services",
+            "url": "https://services.561.group/",
+            "description": "Services."
+          },
+          {
+            "title": "Market",
+            "url": "https://market.561.group/",
+            "description": "Dated observations of the x402 machine-payable market."
+          }
+        ]
+      }
+    ]
+  },
+  "icon": "/favicon.svg",
+  "appleTouchIcon": "/apple-touch-icon.png",
+  "image": "/card.png"
 }

@@ -1,46 +1,66 @@
 ---
-title: "Explore Lenticule Science"
-summary: "Research directions, evidence boundaries, and authorized sources for Lenticule Science."
+title: "Lenticule Science: Four-Valued Logic, Agent Integration, x402 Markets and Formal Mathematics"
+page-title: "Lenticule Science: strange research, stated with limits"
+summary: "Lenticule Science, the 561 Group's research company, publishes work on four-valued paraconsistent logic, concurrent AI agents, MAPE-K, x402 and Lean 4."
 date-created: 2026-10-20
 type: article
 status: active
 visibility: public
 tags:
-  - resources
-  - navigation
-  - science
+  - paraconsistent-logic
+  - ai-agents
+  - x402
+  - formal-mathematics
+  - organizational-science
+keywords: [Belnap four-valued logic, bilattice, paraconsistent logic, AI agent orchestration, MAPE-K, x402, Rendanheyi, Lean 4]
 ---
 
-# Explore Lenticule Science
+# Lenticule Science
 
-Lenticule Science develops research about measurements, models, language and formal reasoning. Start with the question you need to answer, the evidence available, and the kind of result the method can support.
+Lenticule Science is the research company of the [561 Group](https://561.group/). It studies how a machine, or an organization of machines, can keep working when its information is incomplete, contradictory and arriving from many sources at once. Every publication here separates what is proved or measured from what is only defined, inferred or hoped, and states its limits.
 
-## Choose a research direction
+## What are the big ideas?
 
-| Your question | Starting point | What to check |
-| --- | --- | --- |
-| How should observations and claims be related? | [The information-science source section](https://github.com/lenticule-science/science-services-section/blob/5423f648a3aca3ca900563aa68ef3db5220d971d/services/information-science-services-section/README.md) (authorized source) | The source of each observation, its time and units, competing evidence, and which inference is being made |
-| What does a natural-science account explain? | [The natural-science source section](https://github.com/lenticule-science/science-services-section/blob/5423f648a3aca3ca900563aa68ef3db5220d971d/services/natural-science-services-section/README.md) (authorized source) | The system studied, measurement procedure, assumptions, uncertainty and independent replication |
-| What scientific claims underlie a designed artifact? | [The engineering-science source section](https://github.com/lenticule-science/science-services-section/blob/5423f648a3aca3ca900563aa68ef3db5220d971d/services/engineering-science-services-section/README.md) (authorized source) | The theory-to-design relation and a test that could reject the proposed application |
-| What mathematical statements are formalized? | [Obsmetrologia's Lean source](https://github.com/lenticule-science/obsmetrologia) (authorized source) | Exact declarations, hypotheses, toolchain and actual proof-check results |
-| How are marks, claims and restrictions represented? | [The L-Space project source](https://github.com/lenticule-science/l-space.561.group) (authorized source) | Addressed resources and witnessed relations, plus the separately authorized host and access boundary |
+1. **Truth with four values.** A claim can be told true, told false, told both (a held contradiction) or told neither. Belnap's four-valued logic lets a system hold a conflict as data instead of crashing or exploding. See [Belnap four-valued logic](/belnap-four-valued-logic/) and [what a bilattice is](/bilattices-and-belnap-dunn-logic/).
+2. **Settling instead of deciding.** Evidence is closed to a least fixed point in stages; the number of stages is the "transfinite" part. Contradiction gets its own record and is never erased. See [paraconsistent settling and comprehension](/paraconsistent-settling-and-comprehension/).
+3. **Agents as offices, claims as records.** Concurrent AI agents can append claims without coordination; only absence and order (advancing a pointer, landing work, declaring something settled) need exactly one owner. See [the agent-integration audit](/paraconsistent-transfinite-linear-agent-integration/).
+4. **Machines that pay machines.** x402 revives the HTTP 402 status code so software can pay per request. We measure that market and refuse to over-read it. See [the x402 economy](/x402-economy-machine-payable-markets/).
+5. **Organizations as programs.** Rendanheyi micro-enterprises, read as persistent customer-coupled programs, and proof libraries built from nothing but marks. See [the Rendanheyi synthesis](/rendanheyi-living-union-organizational-science/) and [Obsmetrologia](/obsmetrologia-formal-mathematics-in-lean-4/).
 
-The [resource inventory](/resources.json) gives these exact source references. They are for authorized repository readers; anonymous repository access is not established. The descriptions here identify research directions, not a public manuscript archive or a claim that every proposal has been proved.
+## Which publications cover paraconsistent and four-valued logic?
 
-## Read a result at the right level
+- [Belnap Four-Valued Logic: Reasoning with Gaps and Gluts](/belnap-four-valued-logic/) (paper): the four values, their two orders, the connectives, and why a machine told things by several sources needs them.
+- [What Is a Bilattice? Belnap-Dunn Logic and the Two Orders](/bilattices-and-belnap-dunn-logic/): why "both true and false" is data, not an error.
+- [Paraconsistent Settling and Comprehension on Four-Valued Evidence](/paraconsistent-settling-and-comprehension/): closing evidence to a fixed point and extracting what is held.
+- [The Adjoint Structure of Predication on Bilattice-Valued Fibers](/adjoint-structure-of-predication-on-bilattice-fibers/) (paper): an extend/restrict adjunction, a decidable modal calculus and a linear-logic reading.
+- [The Nelson Identity on Four-Valued Truth](/nelson-identity-on-four-valued-truth/): a corrected contrapositive.
 
-An observation records what an instrument or source reported. A model explains or predicts under assumptions. A formal proof establishes a statement from explicit premises. A useful application must also show that its premises describe the relevant situation. Keep those results and their limits visible when deciding what to use.
+## Which publications cover AI agents and autonomic loops?
 
-Obsmetrologia is a pure-mathematics Lean library. A source checkout and its local checking procedures do not establish an operating remote proof service. L-Space has separately owned Science instance data and Engineering interfaces; its source description does not authorize publication of private resources or establish a received public host.
+- [Paraconsistent, Transfinite, Linear Logic for Concurrent AI Agent Integration: An Audit](/paraconsistent-transfinite-linear-agent-integration/) (paper): what is proved, what is only defined, what is open.
+- [Dispatching Concurrent AI Agents at Scale](/dispatching-concurrent-ai-agents-at-scale/) (paper): pins, scope, identity and landing.
+- [MAPE-K Autonomic Computing Loop](/mape-k-autonomic-computing-loop/): Monitor, Analyze, Plan, Execute over shared Knowledge, and a staged-closure reading.
 
-For applications you can inspect through the public web, [Market](https://market.561.group/) shows dated, source-scoped observations. [Bazaar](https://bazaar.561.group/) exposes original listing identities and terms. Those are operating examples with their own coverage and qualifications, rather than evidence for a mathematical theorem.
+## Which publications cover x402 and machine-payable markets?
 
-## Explore the Group
+- [The x402 Economy: Machine-Payable Markets, Measured](/x402-economy-machine-payable-markets/): dated figures, filtered and raw.
+- [x402 Bazaar and Agent-Market Resource Discovery](/x402-bazaar-and-agent-market-resource-discovery/): what a catalog can and cannot tell you.
+- Definitions: [what is x402](/what-is-x402/), [x402 facilitator](/x402-facilitator/), [x402 Bazaar](/x402-bazaar/), [machine-payable API](/machine-payable-api/), [micropayment](/micropayment/), [agent-to-agent commerce](/agent-to-agent-commerce/).
+- Live observations: [Market](https://market.561.group/).
 
-[Science](https://science.561.group/) · [Engineering](https://engineering.561.group/) · [Operations](https://operations.561.group/) · [Services](https://services.561.group/) · [Market](https://market.561.group/) · [Bazaar](https://bazaar.561.group/) · [Shop](https://shop.561.group/)
+## Which publications cover organizations and formal mathematics?
+
+- [Rendanheyi Micro-Enterprises as Persistent Programs in a Union of Territories](/rendanheyi-living-union-organizational-science/) (paper).
+- [Obsmetrologia: Formal Mathematics in Lean 4 Without Mathlib](/obsmetrologia-formal-mathematics-in-lean-4/): a Lean 4 library of about 275 files.
+
+## How should a result be read?
+
+An observation records what an instrument or source reported. A model explains or predicts under assumptions. A formal proof establishes a statement from explicit premises. An application must also show that its premises describe the situation. Papers here label their claims accordingly, and a retracted claim is published as retracted.
+
+## Where does this fit in the Group?
+
+[Science](https://science.561.group/) asks what is true; [Engineering](https://engineering.561.group/) builds from it; [Operations](https://operations.561.group/) runs it; [Services](https://services.561.group/) offers it; [Market](https://market.561.group/), [Bazaar](https://bazaar.561.group/) and [Shop](https://shop.561.group/) trade it.
 
 ## For software agents and readers following updates
 
-Read [the resource inventory](/resources.json) for resource identities, access requirements, media types and next actions. [Discovery JSON](/discovery.json) identifies this site's navigation, search and feeds. This publication exposes readable documents and JSON; it does not advertise a new tool-execution endpoint.
-
-Search this site's published material through [Search](/search/). Follow accepted publications through [RSS](/feed.rss.xml), [Atom](/feed.atom.xml), or [JSON Feed](/feed.json). A linked source may require its owner's authorization. Public navigation grants no additional access to source repositories, private knowledge or paid services.
+Read [the resource inventory](/resources.json) for resource identities and access requirements, and [Discovery JSON](/discovery.json) for navigation, search and feeds. Search with [Search](/search/). Follow publications through [RSS](/feed.rss.xml), [Atom](/feed.atom.xml) or [JSON Feed](/feed.json). Source repositories may require their owner's authorization; this site adds no tool-execution endpoint.
