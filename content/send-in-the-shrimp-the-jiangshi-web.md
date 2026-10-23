@@ -93,9 +93,9 @@ We have original mathematical research, source-owned software, real institutiona
 
 There is something worth showing in that gap. A supporter's relevant question is not "Can I already subscribe to a magical self-repairing Internet?" It is **"Is this an accountable program of research and engineering that I want to help become real?"**
 
-A useful way to support the effort today would be to bring a well-documented failure of correction, attribution, or institutional handoff; offer a standards or mathematical critique; help qualify software interfaces; review public writing; or discuss an authorized sponsorship or collaboration. The [561 Group's contact route](https://561.group/contact/) is the proper starting point for an inquiry. We do not claim a working donation checkout, a fixed funding target, or a guaranteed return.
+A useful way to support the effort today would be to bring a well-documented failure of correction, attribution, or institutional handoff; offer a standards or mathematical critique; help qualify software interfaces; review public writing; or discuss an authorized sponsorship or collaboration. The Group identifies a [public contact route](https://561.group/contact/) for inquiries, but its current deployment must be checked before a campaign relies on it. The [public 561.group source](https://github.com/561-group/561.group) provides a separate way to follow the site's development. We do not claim a working donation checkout, a fixed funding target, or a guaranteed return.
 
-This public essay is a *publication candidate*: it has to pass the Group's actual scientific and editorial receiving process before it can be represented as a live release. The research and software can be examined as separate sources even while the complete product is unfinished.
+This public essay is a *publication candidate*: it has to pass the Group's actual scientific and editorial receiving process before it can be represented as a live release. Underlying research and software remain in their original repositories, some of which require authorized access; an independently accepted public release must not be inferred from readable source or a draft.
 
 ## The Web we want
 
