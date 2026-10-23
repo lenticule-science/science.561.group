@@ -1,8 +1,11 @@
 # Lenticule Science publication source
 
-**Proposed address:** `https://science.561.group/`. Source exists; publication and
-provider deployment are **not yet established**. The authoritative property
-status is in Causeway Public Web's `sites/registry.json`.
+**Recorded public address:** `https://science.561.group/`. Causeway Public
+Web's [central estate registry](https://github.com/causeway-services/public-web-services-section/blob/main/sites/registry.json)
+records an independently received canonical portal for **October 21, 2026**,
+bound to that observed source and release. New editorial commits and draft
+articles require their **own** authorized publication and independent readback;
+that earlier receipt does not establish today's production version.
 
 - [`site.json`](site.json) — this organization's TUFTE site parameters.
 - [`content/intro.md`](content/intro.md) — unreleased editorial candidate,

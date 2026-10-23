@@ -27,6 +27,10 @@ Lenticule Science is the research company of the [561 Group](https://561.group/)
 4. **Machines that pay machines.** x402 revives the HTTP 402 status code so software can pay per request. We measure that market and refuse to over-read it. See [the x402 economy](/x402-economy-machine-payable-markets/).
 5. **Organizations as programs.** Rendanheyi micro-enterprises, read as persistent customer-coupled programs, and proof libraries built from nothing but marks. See [the Rendanheyi synthesis](/rendanheyi-living-union-organizational-science/) and [Obsmetrologia](/obsmetrologia-formal-mathematics-in-lean-4/).
 
+## How do changing climates alter what an organization can know?
+
+[Climate breakdown changes the baseline: stationarity, ergodicity and the institutions we can build](/climate-breakdown-ergodicity-and-water-governance/) connects the IPCC's observed water-cycle changes to the mathematical difference between unstable historical distributions and path-dependent outcomes. It separates tested physical findings from proposed watershed governance and energy accounting.
+
 ## Which publications cover paraconsistent and four-valued logic?
 
 - [Belnap Four-Valued Logic: Reasoning with Gaps and Gluts](/belnap-four-valued-logic/) (paper): the four values, their two orders, the connectives, and why a machine told things by several sources needs them.
