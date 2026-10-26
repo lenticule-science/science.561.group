@@ -3,13 +3,41 @@
   "baseIri": "https://science.561.group/",
   "language": "en",
   "license": "Reuse terms are stated on each publication.",
-  "description": "Paraconsistent four-valued logic, agent integration, MAPE-K loops, x402 machine payments and Lean 4 formal mathematics: strange research, with limits stated.",
+  "description": "Research for a living agentic Web: Relationality, Obsmetrologia, four-valued logic, concurrent agents and institutions that can learn.",
   "eyebrow": "561 Group · Research",
   "cellLabel": "Research",
   "menu": [
     {
       "href": "https://science.561.group/",
       "label": "Science"
+    },
+    {
+      "href": "/atlas/",
+      "label": "Research atlas"
+    },
+    {
+      "href": "/send-in-the-shrimp-the-jiangshi-web/",
+      "label": "The living Web"
+    },
+    {
+      "href": "/obsmetrologia-formal-mathematics-in-lean-4/",
+      "label": "Formal mathematics"
+    },
+    {
+      "href": "/belnap-four-valued-logic/",
+      "label": "Four-valued logic"
+    },
+    {
+      "href": "/search/",
+      "label": "Search research"
+    },
+    {
+      "href": "/resources.json",
+      "label": "Research resources"
+    },
+    {
+      "href": "https://561.group/contact/#private-intake",
+      "label": "Ask about research"
     },
     {
       "href": "https://engineering.561.group/",
@@ -24,39 +52,8 @@
       "label": "Services"
     },
     {
-      "href": "https://market.561.group/",
-      "label": "Market"
-    },
-    {
-      "href": "https://bazaar.561.group/",
-      "label": "Bazaar"
-    },
-    {
-      "href": "https://shop.561.group/",
-      "label": "Shop"
-    },
-    {
-      "href": "/search/",
-      "label": "Search this site"
-    },
-    {
-      "href": "/resources.json",
-      "label": "Resource JSON"
-    },
-    {
-      "href": "/discovery.json",
-      "label": "Discovery JSON"
-    },
-    {
-      "href": "/feed.rss.xml",
-      "label": "RSS"
-    },
-    {
       "href": "https://561.group/",
-      "label": "561 Group",
-      "labels": {
-        "zh-Hans": "561 集团"
-      }
+      "label": "561 Group"
     }
   ],
   "home": "start-here",
@@ -92,8 +89,18 @@
     "actor": "https://science.561.group/actors/science"
   },
   "llms": {
-    "intro": "Lenticule Science is the research company of the 561 Group. It publishes research on paraconsistent (four-valued) logic, concurrent AI-agent integration, the MAPE-K autonomic loop, x402 machine-payable markets, organizational science (Rendanheyi) and formal mathematics in Lean 4. Each publication separates what is proved or measured from what is hypothesized, and states its limits. Papers carry structured citations; glossary pages give short definitions.",
+    "intro": "Lenticule Science is the research company of the 561 Group. It develops Relationality and Obsmetrologia into mathematics, philosophy and agent research for a living Web. Publications cover the Jiangshi Web, reflective revision, four-valued logic, concurrent agents, machine-payable markets, organizational science and formal mathematics in Lean 4.",
     "sections": [
+      {
+        "title": "The living agentic Web",
+        "links": [
+          {
+            "title": "Send in the SHRIMP",
+            "url": "https://science.561.group/send-in-the-shrimp-the-jiangshi-web/",
+            "description": "The Jiangshi Web, Jing/Qi/Shen, reflective agents and AI that increases people's practical power."
+          }
+        ]
+      },
       {
         "title": "Machine interfaces",
         "links": [
@@ -159,16 +166,9 @@
   "icon": "/favicon.svg",
   "appleTouchIcon": "/apple-touch-icon.png",
   "image": "/card.png",
-  "languages": {
-    "zh-Hans": {
-      "eyebrow": "561 集团 · 研究",
-      "cellLabel": "研究",
-      "description": "值得检验的问题：测量、模型与形式证明能够——以及不能——确立什么。",
-      "license": "复用条款在每篇出版物中注明。",
-      "machine": true
-    },
-    "lkt": {
-      "machine": true
-    }
+  "tufteTheme": {
+    "name": "lenticule-laboratory",
+    "themeColor": "#00695C",
+    "styles": "body[data-tufte-theme=lenticule-laboratory]{color-scheme:light;--tufte-bg:#F0F7F5;--tufte-surface:#FFFFFF;--tufte-ink:#123431;--tufte-muted:#496760;--tufte-line:#657D76;--tufte-accent:#00695C;--tufte-radius:.3rem;--tufte-gap:1rem;}\n@media(prefers-color-scheme:dark){body[data-tufte-theme=lenticule-laboratory]{color-scheme:dark;--tufte-bg:#102524;--tufte-surface:#183632;--tufte-ink:#E6F6F1;--tufte-muted:#B5CDC6;--tufte-line:#97ACA6;--tufte-accent:#8FE6D0;}}\nbody[data-tufte-theme=lenticule-laboratory] a:focus-visible,body[data-tufte-theme=lenticule-laboratory] button:focus-visible{outline:3px solid var(--tufte-accent);outline-offset:3px;}\nbody[data-tufte-theme=lenticule-laboratory] .tufte-shell{width:min(1110px,100%);}\nbody[data-tufte-theme=lenticule-laboratory] .tufte-masthead{padding:.95rem 0 1.15rem;border-bottom:3px double var(--tufte-accent);}\nbody[data-tufte-theme=lenticule-laboratory] .tufte-masthead h1{font-family:Georgia,\"Iowan Old Style\",serif;font-size:clamp(1.9rem,4vw,2.8rem);letter-spacing:-.02em;}\nbody[data-tufte-theme=lenticule-laboratory] .tufte-tile{border-left:3px solid var(--tufte-accent);border-radius:.1rem;padding:1rem 1.15rem;}\nbody[data-tufte-theme=lenticule-laboratory] .tufte-tile h2{font-family:Georgia,serif;text-transform:none;letter-spacing:0;font-size:.9rem;color:var(--tufte-accent);}\nbody[data-tufte-theme=lenticule-laboratory] .tufte-tile-body{font-family:Georgia,\"Iowan Old Style\",serif;font-size:1.07rem;line-height:1.7;}"
   }
 }
