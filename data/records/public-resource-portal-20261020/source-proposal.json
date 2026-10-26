@@ -1,0 +1,68 @@
+{
+  "type": "PublicResourcePortalSourceProposal",
+  "version": 1,
+  "recordedAt": "2026-10-21T04:33:28.164Z",
+  "sourceOwner": "lenticule-science/science-services-section",
+  "domain": "science.561.group",
+  "requestRecord": "data/records/publication-order-records/2026-10-20-science.561.group-resource-portal.json",
+  "sourceFactBase": "5423f648a3aca3ca900563aa68ef3db5220d971d",
+  "proposalBase": "21b33557a76eb9991b7605335e26293446dc2a57",
+  "proposalHead": "394e41edf59331a604b7910924feee1b1d3de2ff",
+  "proposalTree": "f5b0945f293ee634ffdeeba3084f46d51d58c940",
+  "branch": "codex/public-resource-portal-20261020",
+  "pullRequest": "https://github.com/lenticule-science/science-services-section/pull/245",
+  "nativeCell": {
+    "name": "start-here",
+    "title": "Explore Lenticule Science",
+    "type": "article",
+    "status": "active",
+    "address": "ni:///sha-256;vaR2hPvCM4GugnwOR7ZzQ46wHSCZvJ0clzqVQl-pEEg"
+  },
+  "sourceFiles": {
+    "data/records/publication-order-records/2026-10-20-science.561.group-resource-portal.json": {
+      "sha256": "886c3ad947960beaeacaf86f75b21e64e3becb2f7f1b5c721b142c727812bc21",
+      "blob": "77d2461891c97477637b7d13717a7c4b2b1a5140",
+      "bytes": 2497
+    },
+    "sites/science.561.group/content/start-here.md": {
+      "sha256": "7330c0e0ec85c30e65819e03605ecd6f6c23ce19d5e1b77b5ed0a9f8675f53ee",
+      "blob": "e77f81cc9dce64d052cfd79f5a21ed56371e9f3c",
+      "bytes": 4608
+    },
+    "sites/science.561.group/discovery.json": {
+      "sha256": "ee98f9af72e2e320047178ed246ed87968a16c3c2ebf21849e069a8afc215366",
+      "blob": "d608189e9f761ec7241cb8e1e0eba19ebd028127",
+      "bytes": 1601
+    },
+    "sites/science.561.group/resources.json": {
+      "sha256": "f30038b4d70e4ea11b98e4cf91ad3f2263f79369ff331d3b8be280db30a71e8d",
+      "blob": "95e69ee71e1439ab8ee06a9ba70d52e061ecd3ed",
+      "bytes": 6738
+    },
+    "sites/science.561.group/site.json": {
+      "sha256": "1030f3fec13eb7cabff502758704377fde178429809945c7e758fc06a98f6150",
+      "blob": "da0bde9946a76684adc88fbaae77d9244527978e",
+      "bytes": 1457
+    }
+  },
+  "diffPaths": [
+    "data/records/publication-order-records/2026-10-20-science.561.group-resource-portal.json",
+    "sites/science.561.group/content/start-here.md",
+    "sites/science.561.group/discovery.json",
+    "sites/science.561.group/resources.json",
+    "sites/science.561.group/site.json"
+  ],
+  "unchangedPotentialIntro": {
+    "path": "sites/science.561.group/content/intro.md",
+    "blob": "e22533cb5f78662d31f55a860f57493ac2b5033b",
+    "published": false
+  },
+  "sourcePrefixUnchangedBetweenFactBaseAndProposalBase": true,
+  "independentReview": {
+    "original": "public-web-services-section:data/records/section-sites-20261020/independent-portal-data-review.json",
+    "originalSHA256": "b3296aad85f3dcd07989670f3495ff6ff3edd0ee1e9a2f35020bee56dda858c9",
+    "boundedRefinement": "public-web-services-section:data/records/section-sites-20261020/independent-portal-link-refinement-review.json",
+    "boundedRefinementSHA256": "a55ec140a1ae633ff2054c630cea97835365b2b49127cc1c80e65ebd0fa8c2e9"
+  },
+  "state": "source-proposal-only; no merge or deployment performed by source proposer"
+}

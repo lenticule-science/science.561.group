@@ -20,3 +20,8 @@ itself.
 Do not copy that procedure into this directory. Use the admitted Red Cup TUFTE
 publisher, one authorized release route and independently observed public
 receiving before claiming this address is live.
+
+Publication orders and original source receipts are held in `data/records/`;
+the October 20 portal candidate materialization is in `data/logs/`. Historical
+receipts retain their original revision-relative paths and hashes. These
+artifacts record source and candidate history, not current deployment.

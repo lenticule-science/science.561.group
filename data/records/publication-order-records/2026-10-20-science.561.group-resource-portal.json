@@ -1,0 +1,32 @@
+{
+  "type": "PublicResourcePortalSourceOrder",
+  "version": 1,
+  "sourceOwner": "lenticule-science/science-services-section",
+  "domain": "science.561.group",
+  "sourceBase": "5423f648a3aca3ca900563aa68ef3db5220d971d",
+  "date": "2026-10-20",
+  "unabridgedRequest": "Make sure all three sites link to each other and that the right resources are easy to find and use for both humans and agents. Then let's get [https://science.561.group](https://science.561.group), engineering.561.group, operations.561.group, and services.561.group",
+  "scope": "New subject-owned public navigation guide, site configuration and matching machine-readable inventory. Reuse shared original CAIRN/TUFTE publication and host. No new implementation.",
+  "sourceFacts": {
+    "originalSiteBlob": "5a4ffe968583e608fb71d3f88bf3dd0280cc6d16",
+    "originalIntroBlob": "e22533cb5f78662d31f55a860f57493ac2b5033b",
+    "originalIntroStatus": "potential",
+    "originalIntroDisposition": "unchanged and excluded from explicit acceptance set",
+    "anonymousSourceRepositories": "Selected unauthenticated GitHub repository metadata reads returned404; connected source custody does not prove anonymous access."
+  },
+  "supplier": {
+    "renderer": "@red-cup-engineering/web-page-tiling-engine@0.14.2",
+    "catalog": "@red-cup-engineering/knowledge-system-server@0.1.2/catalog",
+    "adapter": "causeway-services/public-web-services-section@0b56a6a7a21328b2f3391d3dedc62a71af416dfb:sites/compose-publication.mjs",
+    "dialect": "type/summary/title/date-created/status:active; native semantic address under name start-here",
+    "publicationAcceptance": "Candidate only; a distinct independent receiver must bind the exact native CAIRN address before source acceptance and public projection."
+  },
+  "requiredReceiving": [
+    "Exact guide/inventory/site bytes independently reviewed for useful public navigation and rights/access scope.",
+    "Only explicit accepted guide identity projected; unchanged potential introduction and private resources absent from every projection.",
+    "Native home, accepted guide, search, RSS, Atom, JSON Feed, sitemap and missing-route behavior received.",
+    "All seven canonical sites linked; static resources/discovery JSON match human destinations and methods.",
+    "Public/authorized source access remains distinguished; no private-source proxy, repository visibility change, credentials, new actor or payment authority."
+  ],
+  "deployment": "Not performed by this source proposal."
+}
