@@ -1,7 +1,7 @@
 ---
 title: "Lenticule Science: Four-Valued Logic, Agent Integration, x402 Markets and Formal Mathematics"
-page-title: "Lenticule Science: strange research, stated with limits"
-summary: "Lenticule Science, the 561 Group's research company, publishes work on four-valued paraconsistent logic, concurrent AI agents, MAPE-K, x402 and Lean 4."
+page-title: "Lenticule Science: Research for a Living Agentic Web"
+summary: "Lenticule Science develops the mathematics, philosophy and agent research behind a Web that can learn: Obsmetrologia, four-valued logic, relational computation and living institutions."
 date-created: 2026-10-20
 type: article
 status: active
@@ -17,15 +17,25 @@ keywords: [Belnap four-valued logic, bilattice, paraconsistent logic, AI agent o
 
 # Lenticule Science
 
-Lenticule Science is the research company of the [561 Group](https://561.group/). It studies how a machine, or an organization of machines, can keep working when its information is incomplete, contradictory and arriving from many sources at once. Every publication here separates what is proved or measured from what is only defined, inferred or hoped, and states its limits.
+Lenticule Science is the research company of the [561 Group](https://561.group/). We develop the mathematics, philosophy and agent research for systems that can learn through changing relationships. Our work connects Relationality and Obsmetrologia with four-valued logic, concurrent agents and institutions capable of changing their own frames.
+
+We pursue AI that increases people's power to understand, decide, cooperate and leave. Explore the research, use its ideas, challenge its arguments and help build the living Web.
 
 ## What are the big ideas?
 
 1. **Truth with four values.** A claim can be told true, told false, told both (a held contradiction) or told neither. Belnap's four-valued logic lets a system hold a conflict as data instead of crashing or exploding. See [Belnap four-valued logic](/belnap-four-valued-logic/) and [what a bilattice is](/bilattices-and-belnap-dunn-logic/).
 2. **Settling instead of deciding.** Evidence is closed to a least fixed point in stages; the number of stages is the "transfinite" part. Contradiction gets its own record and is never erased. See [paraconsistent settling and comprehension](/paraconsistent-settling-and-comprehension/).
 3. **Agents as offices, claims as records.** Concurrent AI agents can append claims without coordination; only absence and order (advancing a pointer, landing work, declaring something settled) need exactly one owner. See [the agent-integration audit](/paraconsistent-transfinite-linear-agent-integration/).
-4. **Machines that pay machines.** x402 revives the HTTP 402 status code so software can pay per request. We measure that market and refuse to over-read it. See [the x402 economy](/x402-economy-machine-payable-markets/).
+4. **Machines that pay machines.** x402 revives the HTTP 402 status code so software can pay per request. We study the market and the institutions through which machines trade. See [the x402 economy](/x402-economy-machine-payable-markets/).
 5. **Organizations as programs.** Rendanheyi micro-enterprises, read as persistent customer-coupled programs, and proof libraries built from nothing but marks. See [the Rendanheyi synthesis](/rendanheyi-living-union-organizational-science/) and [Obsmetrologia](/obsmetrologia-formal-mathematics-in-lean-4/).
+
+## Can the Web develop the capacity to learn?
+
+[Send in the SHRIMP: Cultivating a Living Agentic Web](/send-in-the-shrimp-the-jiangshi-web/) develops the Jiangshi Web diagnosis through Jing, Qi and Shen: stored structure, operational movement and reflective revision. It connects our agent research to the work of care, the politics of classification and AI that makes people harder to exploit.
+
+## How do changing climates alter what an organization can know?
+
+[Climate breakdown changes the baseline: stationarity, ergodicity and the institutions we can build](/climate-breakdown-ergodicity-and-water-governance/) connects the IPCC's observed water-cycle changes to the mathematical difference between unstable historical distributions and path-dependent outcomes. It explores how changing water, energy and institutional conditions shape the capacity to act.
 
 ## Which publications cover paraconsistent and four-valued logic?
 
@@ -53,14 +63,16 @@ Lenticule Science is the research company of the [561 Group](https://561.group/)
 - [Rendanheyi Micro-Enterprises as Persistent Programs in a Union of Territories](/rendanheyi-living-union-organizational-science/) (paper).
 - [Obsmetrologia: Formal Mathematics in Lean 4 Without Mathlib](/obsmetrologia-formal-mathematics-in-lean-4/): a Lean 4 library of about 275 files.
 
-## How should a result be read?
-
-An observation records what an instrument or source reported. A model explains or predicts under assumptions. A formal proof establishes a statement from explicit premises. An application must also show that its premises describe the situation. Papers here label their claims accordingly, and a retracted claim is published as retracted.
-
 ## Where does this fit in the Group?
 
 [Science](https://science.561.group/) asks what is true; [Engineering](https://engineering.561.group/) builds from it; [Operations](https://operations.561.group/) runs it; [Services](https://services.561.group/) offers it; [Market](https://market.561.group/), [Bazaar](https://bazaar.561.group/) and [Shop](https://shop.561.group/) trade it.
 
+## Discuss a result or work with us
+
+Read [the concurrent-agent logic audit](/paraconsistent-transfinite-linear-agent-integration/) and [the Obsmetrologia formalization account](/obsmetrologia-formal-mathematics-in-lean-4/) for detailed entrances into the mathematics. The [audit manuscript](https://github.com/lenticule-science/science-services-section/blob/7255e295c549ca19414fbc8bbbd1ad646bc983c6/sites/science.561.group/content/paraconsistent-transfinite-linear-agent-integration.md) is also available to authorized repository readers.
+
+Bring an error, a contrasting result, a reproducible example or a research collaboration to the Group's [contact intake](https://561.group/contact/#private-intake). Choose *Question* for a scientific discussion or *Paid service inquiry* for commissioned work, and include the relevant paper and your reply channel. The page prepares an email for you to review and send.
+
 ## For software agents and readers following updates
 
-Read [the resource inventory](/resources.json) for resource identities and access requirements, and [Discovery JSON](/discovery.json) for navigation, search and feeds. Search with [Search](/search/). Follow publications through [RSS](/feed.rss.xml), [Atom](/feed.atom.xml) or [JSON Feed](/feed.json). Source repositories may require their owner's authorization; this site adds no tool-execution endpoint.
+Read [the resource inventory](/resources.json) for resource identities and access requirements, and [Discovery JSON](/discovery.json) for navigation, search and feeds. Search with [Search](/search/). Follow publications through [RSS](/feed.rss.xml), [Atom](/feed.atom.xml) or [JSON Feed](/feed.json). The public site provides research and machine-readable publication interfaces; source repositories have their own access terms.

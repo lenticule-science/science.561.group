@@ -3,10 +3,10 @@
   "version": 1,
   "organization": "Lenticule Science",
   "origin": "https://science.561.group/",
-  "updated": "2026-10-20",
+  "updated": "2026-10-25",
   "guide": "https://science.561.group/",
   "discovery": "https://science.561.group/discovery.json",
-  "scope": "Public resource navigation and explicit access conditions; source reference is not publication or runtime acceptance.",
+  "scope": "Public research, source repositories, publication interfaces and their access conditions.",
   "resources": [
     {
       "id": "guide",
@@ -17,6 +17,22 @@
         "mode": "public-read"
       },
       "humanAction": "Choose the relevant resource and follow its next action.",
+      "agentAccess": {
+        "method": "GET",
+        "mediaType": "text/html",
+        "authorization": "none"
+      }
+    },
+    {
+      "id": "jiangshi-web",
+      "title": "Send in the SHRIMP: Cultivating a Living Agentic Web",
+      "url": "https://science.561.group/send-in-the-shrimp-the-jiangshi-web/",
+      "kind": "public-article",
+      "description": "The Jiangshi Web, reflective revision, relational computation and the political economy of AI.",
+      "access": {
+        "mode": "public-read"
+      },
+      "humanAction": "Read the argument, explore the linked research and take part.",
       "agentAccess": {
         "method": "GET",
         "mediaType": "text/html",
@@ -44,7 +60,7 @@
       "title": "Lenticule Science source",
       "url": "https://github.com/lenticule-science/science-services-section",
       "kind": "source-reference",
-      "description": "Research organization and source-owned scientific material; no public manuscript release is inferred.",
+      "description": "Research organization and scientific source material.",
       "access": {
         "mode": "authorized-repository-reader",
         "anonymousAccess": "not-established"
@@ -108,7 +124,7 @@
       "title": "Obsmetrologia Lean source",
       "url": "https://github.com/lenticule-science/obsmetrologia",
       "kind": "source-reference",
-      "description": "Pure-mathematics Lean source and local checking procedures; not a claimed remote proof service.",
+      "description": "The Obsmetrologia formal mathematics library in Lean, with its checking procedures.",
       "access": {
         "mode": "authorized-repository-reader",
         "anonymousAccess": "not-established"
@@ -125,7 +141,7 @@
       "title": "L-Space project source",
       "url": "https://github.com/lenticule-science/l-space.561.group",
       "kind": "source-reference",
-      "description": "Science-owned instance and mathematical requirements; source description is not a received public runtime or authorization for private marks.",
+      "description": "Science-owned mathematical requirements and project source for L-Space.",
       "access": {
         "mode": "authorized-repository-reader",
         "anonymousAccess": "not-established"
@@ -142,7 +158,7 @@
       "title": "Dated Market observations",
       "url": "https://market.561.group/markets/observations",
       "kind": "public-json-interface",
-      "description": "Public operating example of source-scoped observations, independent of a mathematical proof.",
+      "description": "Dated observations of the machine-payable market.",
       "access": {
         "mode": "public-read"
       },

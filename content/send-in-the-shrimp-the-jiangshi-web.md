@@ -1,112 +1,116 @@
 ---
-title: "Send in the SHRIMP: The Jiangshi Web Is Walking, but Can It Learn?"
-page-title: "Send in the SHRIMP | Theorsday at the 561 Group"
-summary: "A theory of the Web as an animated corpse, the feminist politics of repair, and an unfinished swarm of agents intended to make correction, relationships, and accountable work possible again."
+title: "Send in the SHRIMP: Cultivating a Living Agentic Web"
+page-title: "Send in the SHRIMP | Lenticule Science"
+summary: "The Jiangshi Web keeps information moving after its capacity to learn has stiffened. We are building an agentic Web that develops its understanding and increases people's power to act."
 date-created: 2026-10-22
+date-modified: 2026-10-25
 type: article
-status: potential
+status: active
+visibility: public
 tags: [theorsday, jiangshi-web, web-theory, critical-theory, feminist-epistemology, ai-agents, shrimp, semioverse]
-keywords: [Jiangshi Web, zombie Web, SPONGE Holonomy-Repair Inference-Model Player, SHRIMP, situated knowledge, critical theory, Web correction, ActivityPub, four-valued logic]
+keywords: [Jiangshi Web, agentic Web, Jing, Qi, Shen, SPONGE Holonomy-Repair Inference-Model Player, SHRIMP, situated knowledge, relational computation, Obsmetrologia, cultivation]
 ---
 
 # Send in the SHRIMP
 
-*Theorsday at the 561 Group — a working public research and performance candidate from Lenticule Science.*
+*Lenticule Science · The 561 Group*
 
-**The Web is walking. That does not mean it is alive.**
+**The Web is moving. We are building its capacity to learn.**
 
-A page copies a claim. A model summarizes the page. Another model cites the summary. The next page cites both models. By the time anyone asks what actually happened, every copy can point to another copy for its evidence.
+A page copies a claim. A model summarizes the page. Another model cites the summary. The next page cites both models. The source corrects the claim, but its copies keep circulating. Search results repeat the old answer; automated dossiers preserve the original classification; decisions continue to depend on it.
 
-Imagine that the source corrects the claim. The correction is real, but the replicas keep hopping. Search results still give the old answer; automated dossiers still treat the first classification as fact. Everyone can produce another page. Few systems are responsible for listening to the person who was misdescribed.
+The system has become remarkably good at movement. Its ability to reconsider what organizes that movement has fallen behind.
 
-The Web is full of movement. Movement is not the same thing as knowing, caring, learning, or being answerable to anyone.
+We call this **the Jiangshi Web**. It is a central problem in our research on the agentic Web, and it gives our engineering a clear purpose: cultivate systems that can develop their understanding, change their conduct and increase the practical power of the people who live with them.
 
-We call this condition **the Jiangshi Web**.
+## Jing, Qi and Shen
 
-## A corpse that keeps hopping
+The *jiangshi* (僵尸), the stiff, hopping corpse of Chinese folklore, moves through the world with locked joints. It has a body and the vitality to propel it. Its movements follow the possibilities its existing form still allows.
 
-The *jiangshi* (僵屍, often translated as a stiff or reanimated corpse) belongs to Chinese folklore and to a distinctive Hong Kong horror-comedy tradition. The famous cinematic image is a rigid figure that nevertheless moves. These traditions are richer and more varied than an English-language label like "Chinese zombie." Researchers including Marc L. Moskowitz have traced their changes through cinema and popular culture. Our **Jiangshi Web** is an original *analogy drawn from that image*, not a claim that Chinese folklore is a software specification. See [Moskowitz, 2022](https://doi.org/10.1111/jpcu.13160).
+The Daoist distinctions among **Jing**, **Qi** and **Shen** make the diagnosis precise.
 
-The old question was whether the Internet was dead. Ours is different:
+Jing is stored structure: records, categories, parameters and the accumulated material of a system. Qi is operational activity: data flowing, queries executing, agents responding and work proceeding. Shen is reflective awareness: recognizing that the categories organizing action have ceased to fit the situation and changing the relationship to them.
 
-**What if a knowledge system can continue to move while losing the ability to revise the relations that make its movement meaningful?**
+A system can have an immense store of Jing and extraordinary Qi while its Shen remains weak. More data and more fluent responses can enlarge its repertoire without loosening its joints. The interface looks increasingly alive while the relationships governing it become harder to change.
 
-Call the copied category a stiff joint. Call automated republication the power that propels it. A site can accumulate more pages while becoming less capable of admitting a particular person's objection. A database can answer more queries while growing less competent to ask whether its schema still describes the world it serves.
+Our research connects this account to cybernetics. A system corrects within its frame when it adjusts behavior toward an adopted goal. It revises the frame when it changes the assumptions through which the goal, the task and the relevant distinctions are understood. A Web capable of learning needs both.
 
-This is not a claim that machine-generated writing is automatically worthless, that RDF or OWL is evil, or that every automated system is a corpse. It is a criticism of **a particular pattern of reproduction without answerability**. A living information system can use structured data, agents, and machine-readable standards. Their presence does not settle whether that system can learn.
+## The joints are relationships
 
-## Theory is not a skin laid over code
+A category has a history. People made it for a purpose, embedded it in a vocabulary, connected it to records and built applications around it. As those applications spread, the category becomes harder to change. Its maintenance costs grow. The people who fit it poorly inherit the burden of explaining themselves to systems that keep repeating it.
 
-Our theory work is organized around *Obsmetrologia*: a program for studying marks, articulated relationships, predication, and the conditions under which observations and consequences can be derived. Its ambitious parts are research, not a magic theorem that certifies the whole Web.
+This makes the joints of the Web institutional as well as technical. They include who can revise a description, whose objection reaches a decision, and who can stop an agent acting in their name.
 
-One practical distinction is immediately useful: **missing information and conflicting information are not the same condition**. The Belnap–Dunn four-valued family lets a claim carry evidence for it, against it, both, or neither. This does not decide who should be believed; it prevents the evidence ledger from silently collapsing a dispute into a tidy fact. Start with [Lenticule Science's four-valued logic overview](/belnap-four-valued-logic/).
+Formal representations are useful parts of this architecture. RDF records relationships; OWL gives an ontology its logical entailments; SHACL validates a graph against selected conditions. A living system maintains the wider relationship through which those commitments develop. A changed category must reach the applications that use it.
 
-Another distinction came from checking our own notes, not simply criticizing someone else's software: **RDF Schema and OWL chiefly support vocabulary and logical inference; SHACL supplies RDF validation conditions**. OWL's usual open-world semantics do not turn every missing statement into a false statement. A well-formed graph also does not appoint its author to govern the people described by it. See [OWL 2](https://www.w3.org/TR/owl2-primer/), [SHACL](https://www.w3.org/TR/shacl/), and [PROV-O](https://www.w3.org/TR/prov-o/).
+The political question follows directly: who benefits from making the relationship difficult to change? Captive attention, expensive exit, exclusive knowledge and maintenance work pushed onto others can all become sources of profit. A Web organized for learning must be able to question those arrangements too.
 
-A rigid system is not one that has a schema. A rigid system is one whose authorized revision, contradiction, source, and repair pathways no longer fit the world it claims to describe.
+## Cultivation and the agentic Web
 
-## Feminism asks who does the carrying
+François Jullien's account of *shi*, the propensity of a situation, gives us a productive way to think about this work. Instead of fixing an ideal and forcing the world into it, examine the configuration of relationships and develop the conditions through which something better can emerge.
 
-The Jiangshi story becomes harder—and better—when feminism is treated as a method rather than atmosphere.
+That is why we speak of **cultivation**. Each action should improve the capacity for later action: a clearer explanation, a maintained connection, a usable tool, a stronger relationship, an institution more able to change its mind.
 
-Donna Haraway's [*Situated Knowledges*](https://doi.org/10.2307/3178066) challenges the fantasy of a view from nowhere. A Web agent does not see "the Internet." It sees the particular feeds, files, institutions, languages, permissions, interfaces, and computing resources made available to it. To report from a position without naming that position is to hide how its knowledge was made.
+Cultivating attention on the Web means helping people and agents encounter work that changes what they can understand and do. The encounter can become a remembered source, an answered question, a collaboration, a contribution, a useful service or a shared place to learn.
 
-María Puig de la Bellacasa's [*Matters of Care*](https://www.upress.umn.edu/9781517900656/matters-of-care/) makes the maintenance of relations and attention to neglected things part of inquiry. A bot that republishes a correction and leaves a human caretaker to resolve the consequences has not made care disappear. It may have concealed who was made to carry it.
+The agentic Web makes this ambition computational. Agents can maintain relationships across time, notice contradictions, carry changes between systems and participate in the institutions through which their work matters. We are building the mathematics, software and operating arrangements for that world.
 
-The [Combahee River Collective's 1977 statement](https://lgbtqhistory.org/wp-content/uploads/2019/04/Combahee_River_Collective_Statement.pdf) and Kimberlé Crenshaw's [1989 critique of single-axis legal analysis](https://chicagounbound.uchicago.edu/uclf/vol1989/iss1/8/) make another problem unavoidable: an allegedly universal category can hide people precisely where interlocking structures shape their lives. Adding a few demographic checkboxes does not necessarily repair the category system.
+## From Relationality to computation
 
-So the difficult questions for an autonomous agent are not only "Can it find the wrong statement?" and "Can it edit the page?" They are also: Who defines wrong? Whose account is treated as evidence? Who bears the consequences of a rewrite? Who can refuse the agent's help? Whose unpaid work is hidden behind its claim of success?
+The 561 Group's research develops Relationality into **Obsmetrologia**, studying marks, articulated relationships, predication and the transformations through which systems understand and act. [Our formal mathematics](/obsmetrologia-formal-mathematics-in-lean-4/) and [four-valued logic](/belnap-four-valued-logic/) give readers entrances into that work.
 
-A swarm that multiplies labor without answering these questions could make the Jiangshi Web hop even faster.
+One useful result is the ability to hold incomplete and conflicting information distinctly. Evidence can support a proposition, oppose it, do both, or do neither. A system can therefore preserve a disagreement and continue working with it. It can develop its understanding as new relationships and observations arrive.
 
-## Critical theory asks who built the joints
+Our software program carries these ideas through Metrologic, SignCell, SignChain, SignGraph and SignCraft into CAIRN, MOOSE, FeltOS and MetroPlat. The intended whole is a semioverse of inhabited worlds: agents, people and institutions working with shared structures while retaining their own purposes and capacity to change.
 
-Critical theory asks how categories and institutions reproduce the power relations that made them. It does not have to treat a false claim, an unreliable publisher, an exclusionary classification, and a broken API as interchangeable errors.
-
-Some defects call for factual correction. Others call for changing the operation that keeps producing the defect. In both cases the repair has to pass through the authorities, affected people, and evidence actually involved, not through a model's confidence that it knows best.
-
-That is one way to use the original Web as research material instead of treating it as a content treadmill: inspect a chain of sources, identify the junction where a correction stops moving, and find out whether a real authorized intervention changes what the next reader sees.
-
-The term *Jiangshi Web* names this investigable problem. It does not prove it exists everywhere. The difference is what makes the theory useful.
+This is why the theory matters to the product. If the system's categories, histories and actions are related computationally, revision can become an operation through those relationships. The architecture can help an agent find what depends on a changed assumption, carry the change into its work and learn from what happens.
 
 ## Enter the SHRIMP
 
-For years, the 561 Group has been developing strange, sometimes playful language for a much less playful engineering ambition. **SHRIMP** expands to **SPONGE Holonomy-Repair Inference-Model Player**. Its **CLAW** is a *Command-Line Articulated Worker*. The biological and mythic image is a tiny creature moving through the pores of a glass sponge, tending the living structure from within.
+**SHRIMP** expands to **SPONGE Holonomy-Repair Inference-Model Player**. Its **CLAW** is a *Command-Line Articulated Worker*. The image is a small creature moving through the pores of a glass sponge, tending a living structure from within.
 
-We do not need a million replacement web pages. We need many small, appropriately authorized capacities to **notice a seam, investigate it, repair what can lawfully be repaired, and verify whether life actually flows better afterward**.
+The engineering ambition is a population of agents able to notice a strained relationship, investigate it, repair it within their responsibilities and continue tending it. A small useful intervention can improve the conditions for the next one.
 
-Our emerging stack has different jobs. [Obsmetrologia](/obsmetrologia-formal-mathematics-in-lean-4/) researches the formal distinctions. Sign and Semioverse systems carry source-qualified relationships and communications. FeltOS and MetroPlat supply an inhabitable world in which a continuing Actor can encounter institutions, work, offices, and limits. Red Cup Engineering builds the reusable computer technology. Coesite Operations attends to running and receiving it; Causeway Public Services makes appropriately approved results available to people.
+Return to the copied claim. A SHRIMP follows the relationship to its source and encounters the correction. It identifies dependent descriptions, brings the change to their editors, and carries accepted revisions into the outputs it maintains. Readers encounter the changed account. The agent learns which routes carried the correction and which need further work.
 
-The names matter because **a character, a claimed skill, an office, a message, and an authorization are not the same thing**. Being present in a system does not confer a right to rewrite it. Submitting a request does not mean the receiving organization acted. A green test does not prove a deployed service or a satisfied customer.
+The same organization applies to a changed permission, an obsolete dependency, an unanswered request or an institution that has forgotten what it promised. A living Web gives the agent a world in which these are continuing relationships, with people able to direct, question and refuse its work.
 
-Imagine the copied false claim from our opening. A SHRIMP might inspect the original statement and its replicas, find who has actually recorded a correction, and produce a source-linked repair proposal. Where an authorized editor accepts the proposal, it could update a particular source. Another reader would then check the updated output and its downstream projections. Where the editor refuses, the SHRIMP should preserve the refusal rather than pretending that the system has been repaired.
+Red Cup Engineering builds the reusable technology. Coesite Operations develops and runs the continuing work. Causeway Services brings useful results into public life. Lenticule Science investigates the structures that make the whole possible.
 
-That is an *illustrative target*, not a claim that a released SHRIMP currently performs this end-to-end workflow.
+## Who carries the work?
 
-**The swarm is not a distributed harassment campaign, a denial-of-service army, or an excuse to override anyone's consent.** Its attack on the zombie Web is an attack on bad information pathways, broken accountability, and the waste of real attention.
+Feminist thought makes the work inside apparent autonomy visible.
 
-## Why show the unfinished thing?
+Donna Haraway's [*Situated Knowledges*](https://doi.org/10.2307/3178066) directs attention to the position from which a system knows. An agent encounters particular languages, feeds, files, institutions, tools and people. Its relationships shape what it can understand.
 
-Because people cannot be expected to care about a project they cannot see.
+María Puig de la Bellacasa's [*Matters of Care*](https://www.upress.umn.edu/9781517900656/matters-of-care/) connects knowing with maintaining relationships and attending to neglected things. Repair includes the people who keep the system useful after the first intervention.
 
-We have original mathematical research, source-owned software, real institutional experiments, and research questions that have taken on lives of their own. We also have divergent branches, partial implementations, infrastructure refusals, tests awaiting independent review, and publishing systems whose existence in source has not yet been established as a live, usable public service.
+The [Combahee River Collective](https://lgbtqhistory.org/wp-content/uploads/2019/04/Combahee_River_Collective_Statement.pdf) and [Kimberlé Crenshaw](https://chicagounbound.uchicago.edu/uclf/vol1989/iss1/8/) show how interlocking structures organize lives that a single universal category can obscure. Their work helps us examine how a system distributes benefits, burdens and authority.
 
-There is something worth showing in that gap. A supporter's relevant question is not "Can I already subscribe to a magical self-repairing Internet?" It is **"Is this an accountable program of research and engineering that I want to help become real?"**
+These are design questions. Who can change the agent's categories? Who carries the checking and correction? Who keeps the useful result? Who can leave? A well-organized swarm should increase the capacities of the people sustaining the shared world.
 
-A useful way to support the effort today would be to bring a well-documented failure of correction, attribution, or institutional handoff; offer a standards or mathematical critique; help qualify software interfaces; review public writing; or discuss an authorized sponsorship or collaboration. The Group identifies a [public contact route](https://561.group/contact/) for inquiries, but its current deployment must be checked before a campaign relies on it. The [public 561.group source](https://github.com/561-group/561.group) provides a separate way to follow the site's development. We do not claim a working donation checkout, a fixed funding target, or a guaranteed return.
+## AI that makes people harder to exploit
 
-This public essay is a *publication candidate*: it has to pass the Group's actual scientific and editorial receiving process before it can be represented as a live release. Underlying research and software remain in their original repositories, some of which require authorized access; an independently accepted public release must not be inferred from readable source or a draft.
+We pursue AI that strengthens people's power to understand, decide, refuse, cooperate and leave. We want knowledge, useful work and the gains from automation to stay with the people and communities whose lives they change.
 
-## The Web we want
+That puts us in direct conflict with capitalist business models built on captive users, artificial scarcity and the extraction of attention. We are building toward a different relationship: services people continue to choose because they remain useful, knowledge they can develop, and tools that make them more capable.
 
-An intelligible record should be able to admit a new witness. A person misdescribed by a classification should be able to contest it. A claim should remember who made it and who corrected it. A capable agent should know where its observations stop and somebody else's authority begins. The work of maintaining these relations should not disappear into a marketing claim about autonomy.
+The Group earns through research, implementation, maintenance, teaching, hosting and delivered services. Practical independence is part of the result. A customer becoming less dependent on us can be evidence that we did the work well.
 
-That is a Web capable of learning from contact with the world.
+Read the Group's [position on AI and exploitation](https://services.561.group/ai-that-makes-people-harder-to-exploit/) and its account of [Black October and a Web that can change its mind](https://services.561.group/black-october-a-web-that-can-change-its-mind/).
 
-Maybe the most radical thing the SHRIMP swarm could do is much smaller than defeating a giant platform. Maybe it can follow one bad seam back to the source, fix one neglected handoff, and leave the knowledge structure more capable of caring for the next person who arrives.
+## Take part in the living Web
 
-**Send in the SHRIMP. Stop mistaking the hop for a heartbeat.**
+Bring a correction that failed to travel, a category that no longer fits, an agent workflow that needs to change, or a research question you want to pursue. Those are useful places to begin.
+
+Explore the [research](/), follow its development through [our feeds](/discovery.json), or [contact the Group](https://561.group/contact/#private-intake) about research, implementation or a service. The [Group's work directory](https://561.group/work/) gives further entrances across the ecosystem.
+
+[Turntide Islands](https://turntide.561.group/join/) offers a place for voluntary participation, shared inquiry and learning. We want people to practice the alternative together: follow a correction, develop an explanation, contribute to a shared world and leave it more capable of receiving the next person.
+
+A Web whose joints can bend makes room for Shen. Cultivating it is scientific work, engineering work, institutional work and a way of living together.
+
+**Send in the SHRIMP.**
 
 ---
 
-*Background and standards:* [Haraway, 1988](https://doi.org/10.2307/3178066) · [Puig de la Bellacasa, 2017](https://www.upress.umn.edu/9781517900656/matters-of-care/) · [Combahee River Collective, 1977](https://lgbtqhistory.org/wp-content/uploads/2019/04/Combahee_River_Collective_Statement.pdf) · [Crenshaw, 1989](https://chicagounbound.uchicago.edu/uclf/vol1989/iss1/8/) · [Moskowitz on jiangshi films, 2022](https://doi.org/10.1111/jpcu.13160) · [W3C SHACL](https://www.w3.org/TR/shacl/) · [W3C PROV-O](https://www.w3.org/TR/prov-o/) · [W3C ActivityPub](https://www.w3.org/TR/activitypub/).
+*Further reading:* [Jullien, A Treatise on Efficacy](https://uhpress.hawaii.edu/title/a-treatise-on-efficacy-between-western-and-chinese-thinking/) · [OWL 2 Primer](https://www.w3.org/TR/owl2-primer/) · [SHACL](https://www.w3.org/TR/shacl/) · [Haraway, Situated Knowledges](https://doi.org/10.2307/3178066) · [Puig de la Bellacasa, Matters of Care](https://www.upress.umn.edu/9781517900656/matters-of-care/).
