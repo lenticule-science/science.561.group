@@ -28,6 +28,10 @@
       "label": "Four-valued logic"
     },
     {
+      "href": "/blog/",
+      "label": "Blog"
+    },
+    {
       "href": "/search/",
       "label": "Search research"
     },
@@ -57,6 +61,7 @@
     }
   ],
   "home": "start-here",
+  "blog": true,
   "archives": {
     "enabled": true,
     "pageSize": 12
