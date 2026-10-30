@@ -106,8 +106,21 @@ test('two original climate diagrams have explicit epistemic status, text alterna
     assert.doesNotMatch(svg, /<(?:script|foreignObject|image|use)\b/iu);
     assert.doesNotMatch(svg, /(?:href|xlink:href)\s*=/iu);
     assert.doesNotMatch(svg, /https?:\/\/(?!www\.w3\.org\/2000\/svg)/iu);
-    assert.ok(article.includes('](' + route + ')'), 'original article owns the visible reference');
-    assert.ok(article.includes('!['), 'the image keeps authored alt in the public Markdown');
+    // Associate the *particular* image with its own long alternative and visible
+    // caption. A global "![..." assertion previously passed when one of the
+    // two figures silently lost its accessible text or explanation.
+    const figuresInArticle = [...article.matchAll(
+      /!\\[([^\\]\\n]+)\\]\\((\\/climate-[a-z-]+\\.svg)\\)\\n\\n\\*Figure ([12]) — ([^\\n]+)$/gmu
+    )];
+    assert.equal(figuresInArticle.length, 2, 'exactly two independently explained figures');
+    const image = figuresInArticle.find(match => match[2] === route);
+    assert.ok(image, 'required figure, alt and adjacent caption missing: ' + route);
+    assert.equal(image[3], route.includes('stationarity') ? '1' : '2',
+      'the figure number must remain paired with its owned image');
+    assert.ok(image[1].length >= 100, 'short or missing scientific image alternative: ' + route);
+    assert.ok(/\\b(?:not|no|illustrat|construct)/iu.test(image[1]),
+      'alternative must distinguish illustration from evidence: ' + route);
+    assert.ok(image[4].length >= 160, 'visible interpretive caption is missing: ' + route);
   }
   assert.match(article, /\*Figure 1 — A baseline is an assumption to test\.\*/u);
   assert.match(article, /\*Figure 2 — One trajectory, not a population average\.\*/u);
