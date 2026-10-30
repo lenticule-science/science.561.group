@@ -164,3 +164,19 @@ test('arithmetic bars represent the exact authored 1.0 → 1.5 → 0.9 construct
   assert.match(svg, /NOT, BY ITSELF, A NONERGODICITY PROOF/u);
   assert.match(article, /1\.5 × 0\.6 = 0\.9/u);
 });
+
+
+test('laboratory figure captions stay full-size, sourced, and legible in both themes', () => {
+  const css = site.tufteTheme.styles;
+  const marker = 'body[data-tufte-theme=lenticule-laboratory] .tufte-tile-body figure.markdown-figure>figcaption{';
+  const section = css.split(marker);
+  assert.equal(section.length, 2, 'one original source-owned scientific caption rule');
+  const figure = section[1].split('}')[0];
+  assert.ok(figure.includes('font:500 1em/1.65'), 'do not reduce scientific figure captions to instrument-label size');
+  assert.ok(figure.includes('color:var(--tufte-ink)'), 'use high-contrast source-owned reading ink');
+  assert.ok(figure.includes('overflow-wrap:anywhere'), 'long evidence references cannot clip on phones');
+  const title = css.split('figure.markdown-figure>figcaption>em{');
+  assert.equal(title.length, 2, 'figure label gets its own strong visual hierarchy');
+  assert.ok(title[1].split('}')[0].includes('display:block'), 'figure title separates from interpretation');
+  assert.ok(css.includes('@media(prefers-color-scheme:dark)'), 'retain the original dark palette');
+});
