@@ -131,6 +131,8 @@ test('two original climate diagrams have explicit epistemic status, text alterna
       image.alt.toLowerCase().includes(term)),
       'alt must distinguish schematic or constructed illustration from evidence: ' + route);
     assert.ok(image.caption.length >= 160, 'visible interpretive caption is missing: ' + route);
+    assert.ok(image.caption.includes('[Open Figure ' + number + ' as a scalable SVG](' + route + ')'),
+      'narrow-screen reader must have a labeled original, scalable figure route: ' + route);
   }
   assert.match(article, /\*Figure 1 — A baseline is an assumption to test\.\*/u);
   assert.match(article, /\*Figure 2 — One trajectory, not a population average\.\*/u);
