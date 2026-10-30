@@ -106,21 +106,31 @@ test('two original climate diagrams have explicit epistemic status, text alterna
     assert.doesNotMatch(svg, /<(?:script|foreignObject|image|use)\b/iu);
     assert.doesNotMatch(svg, /(?:href|xlink:href)\s*=/iu);
     assert.doesNotMatch(svg, /https?:\/\/(?!www\.w3\.org\/2000\/svg)/iu);
-    // Associate the *particular* image with its own long alternative and visible
-    // caption. A global "![..." assertion previously passed when one of the
-    // two figures silently lost its accessible text or explanation.
-    const figuresInArticle = [...article.matchAll(
-      /!\\[([^\\]\\n]+)\\]\\((\\/climate-[a-z-]+\\.svg)\\)\\n\\n\\*Figure ([12]) — ([^\\n]+)$/gmu
-    )];
-    assert.equal(figuresInArticle.length, 2, 'exactly two independently explained figures');
-    const image = figuresInArticle.find(match => match[2] === route);
-    assert.ok(image, 'required figure, alt and adjacent caption missing: ' + route);
-    assert.equal(image[3], route.includes('stationarity') ? '1' : '2',
-      'the figure number must remain paired with its owned image');
-    assert.ok(image[1].length >= 100, 'short or missing scientific image alternative: ' + route);
-    assert.ok(/\\b(?:not|no|illustrat|construct)/iu.test(image[1]),
-      'alternative must distinguish illustration from evidence: ' + route);
-    assert.ok(image[4].length >= 160, 'visible interpretive caption is missing: ' + route);
+    // Test the association, not merely the presence of some image or caption.
+    // This follows the source-owned Markdown form without claiming TUFTE
+    // emitted a semantic HTML figure until its real renderer is inspected.
+    const lines = article.split('\n');
+    const figuresInArticle = lines.flatMap((line, index) => {
+      if (!line.startsWith('![') || !line.endsWith(')')) return [];
+      const separator = line.lastIndexOf('](');
+      if (separator < 3) return [];
+      const actualRoute = line.slice(separator + 2, -1);
+      if (!actualRoute.startsWith('/climate-') || !actualRoute.endsWith('.svg')) return [];
+      const caption = lines[index + 2] ?? '';
+      if (lines[index + 1] !== '' || !caption.startsWith('*Figure ')) return [];
+      return [{ route: actualRoute, alt: line.slice(2, separator), caption }];
+    });
+    assert.equal(figuresInArticle.length, 2, 'each source figure needs its own adjacent caption');
+    const image = figuresInArticle.find(figure => figure.route === route);
+    assert.ok(image, 'source figure lost its alternative or caption: ' + route);
+    const number = route.includes('stationarity') ? 1 : 2;
+    assert.ok(image.caption.startsWith('*Figure ' + number + ' — '),
+      'figure numbering must stay paired with the original diagram');
+    assert.ok(image.alt.length >= 100, 'missing extended scientific alternative: ' + route);
+    assert.ok(['not', 'no ', 'illustrat', 'construct'].some(term =>
+      image.alt.toLowerCase().includes(term)),
+      'alt must distinguish schematic or constructed illustration from evidence: ' + route);
+    assert.ok(image.caption.length >= 160, 'visible interpretive caption is missing: ' + route);
   }
   assert.match(article, /\*Figure 1 — A baseline is an assumption to test\.\*/u);
   assert.match(article, /\*Figure 2 — One trajectory, not a population average\.\*/u);
