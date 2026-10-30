@@ -1,5 +1,5 @@
 ---
-title: "Lenticule Science: Four-Valued Logic, Agent Integration, x402 Markets and Formal Mathematics"
+title: "Lenticule Science"
 page-title: "Lenticule Science: Research for a Living Agentic Web"
 summary: "Lenticule Science develops the mathematics, philosophy and agent research behind a Web that can learn: Obsmetrologia, four-valued logic, relational computation and living institutions."
 date-created: 2026-10-20
@@ -14,8 +14,6 @@ tags:
   - organizational-science
 keywords: [Belnap four-valued logic, bilattice, paraconsistent logic, AI agent orchestration, MAPE-K, x402, Rendanheyi, Lean 4]
 ---
-
-# Lenticule Science
 
 Lenticule Science is the research company of the [561 Group](https://561.group/). We develop the mathematics, philosophy and agent research for systems that can learn through changing relationships. Our work connects Relationality and Obsmetrologia with four-valued logic, concurrent agents and institutions capable of changing their own frames.
 
