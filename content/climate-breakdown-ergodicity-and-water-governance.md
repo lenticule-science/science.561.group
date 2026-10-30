@@ -32,7 +32,7 @@ The response is not to declare every dataset unusable or every stationary model 
 
 ![Schematic comparison: a dashed blue line indicates an assumed stable baseline while a solid green line changes over an illustrative progression. No measured values or forecasts are shown.](/climate-stationarity-schematic.svg)
 
-*Figure 1 — A baseline is an assumption to test.* The dashed reference and solid changing curve are **schematic, not observed climate data**; their vertical values have no physical unit or probability interpretation. They illustrate why a historically fitted baseline needs an explicit validity argument before being used for a future water decision.
+*Figure 1 — A baseline is an assumption to test.* The dashed reference and solid changing curve are **schematic, not observed climate data**; their vertical values have no physical unit or probability interpretation. They illustrate why a historically fitted baseline needs an explicit validity argument before being used for a future water decision. [Open Figure 1 as a scalable SVG](/climate-stationarity-schematic.svg).
 
 
 ## Ergodicity: whose average counts?
@@ -43,7 +43,7 @@ Consider a deliberately simple repeated wager: a participating budget is multipl
 
 ![One deterministic budget path: starting at 1.00, multiplying by 1.5 reaches 1.50, then multiplying by 0.6 ends at 0.90. The arithmetic mean multiplier is 1.05, while the per-period geometric mean for this example is approximately 0.949. This is not a proof of nonergodicity.](/climate-pathwise-example.svg)
 
-*Figure 2 — One trajectory, not a population average.* The three bars have a shared scale and follow the exact arithmetic stated above. Their starting, intermediate and final values come from this **constructed teaching example**, not observed economic data. The two arithmetic measures are different; the figure alone makes no claim about the ergodicity of a specified stochastic process.
+*Figure 2 — One trajectory, not a population average.* The three bars have a shared scale and follow the exact arithmetic stated above. Their starting, intermediate and final values come from this **constructed teaching example**, not observed economic data. The two arithmetic measures are different; the figure alone makes no claim about the ergodicity of a specified stochastic process. [Open Figure 2 as a scalable SVG](/climate-pathwise-example.svg).
 
 
 Ole Peters' [*The Ergodicity Problem in Economics*](https://www.nature.com/articles/s41567-019-0732-0) (2019) develops the importance of distinguishing expected and time-averaged outcomes. That program is a theoretical perspective, not a universal empirical finding about every investment, institution or human preference. For 561 Group work it suggests practical questions: Can a participant survive repeated exposures? Who actually bears loss and recovery time? Is expected aggregate improvement masking irreversible failure for some receivers? What depends on path, delay, reserves or rights?
