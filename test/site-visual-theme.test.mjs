@@ -32,8 +32,8 @@ test('one original source-owned Science house theme is scoped and reusable', () 
   assert.ok(css.includes('@media(prefers-color-scheme:dark)'));
   assert.ok(css.includes('@media(prefers-reduced-motion:reduce)'));
   assert.ok(css.includes(':focus-visible'));
-  assert.ok(!/<\\/(?:style|script)/iu.test(css));
-  assert.ok(!/url\\((?:https?:|\\/\\/)/iu.test(css), 'no external asset or tracker');
+  assert.ok(!/<\/(?:style|script)/iu.test(css));
+  assert.ok(!/url\((?:https?:|\/\/)/iu.test(css), 'no external asset or tracker');
 });
 
 test('original lab palette keeps critical ink, instrument and link pairs readable', () => {
@@ -62,11 +62,11 @@ test('science optics specimen is original and does not make a source claim', asy
   const svg = await read('static/crystal-lens.svg');
   assert.match(svg, /^<svg /u);
   assert.match(svg, /viewBox="0 0 520 520"/u);
-  assert.match(svg, /<title id="title">Lenticule relational optics<\\/title>/u);
+  assert.match(svg, /<title id="title">Lenticule relational optics<\/title>/u);
   assert.match(svg, /<desc id="description">/u);
   assert.ok(!/<script|<foreignObject|<image|<use /iu.test(svg));
   assert.ok(!/href=|xlink:href=/iu.test(svg));
-  assert.ok(!/https?:\\/\\/(?!www\\.w3\\.org\\/2000\\/svg)/iu.test(svg));
+  assert.ok(!/https?:\/\/(?!www\.w3\.org\/2000\/svg)/iu.test(svg));
 });
 
 test('visual repair retains accepted work and the original research doorway', async () => {
@@ -75,7 +75,7 @@ test('visual repair retains accepted work and the original research doorway', as
   assert.match(home, /page-title: "Lenticule Science: Research for a Living Agentic Web"/u);
   assert.match(home, /status: active/u);
   assert.match(home, /visibility: public/u);
-  assert.doesNotMatch(home, /^# Lenticule Science\\s*$/mu,
+  assert.doesNotMatch(home, /^# Lenticule Science\s*$/mu,
     'the TUFTE masthead owns the only visual H1');
   for (const route of [
     '/climate-breakdown-ergodicity-and-water-governance/',
