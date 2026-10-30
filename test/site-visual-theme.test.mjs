@@ -88,3 +88,54 @@ test('visual repair retains accepted work and the original research doorway', as
   assert.equal(site.publisher.name, 'Lenticule Science');
   assert.equal(site.publisher.url, site.baseIri);
 });
+
+
+test('two original climate diagrams have explicit epistemic status, text alternatives and no active or external content', async () => {
+  const article = await read('content/climate-breakdown-ergodicity-and-water-governance.md');
+  const figures = [
+    ['static/climate-stationarity-schematic.svg', '/climate-stationarity-schematic.svg', 'Stationarity is an assumption to test'],
+    ['static/climate-pathwise-example.svg', '/climate-pathwise-example.svg', 'A lived budget path differs from the arithmetic average multiplier'],
+  ];
+  for (const [path, route, title] of figures) {
+    const svg = await read(path);
+    assert.match(svg, /^<svg xmlns="http:\/\/www\.w3\.org\/2000\/svg"/u);
+    assert.ok(svg.length < 8000, 'retain light original SVG assets without external fetches');
+    assert.ok(svg.includes('<title id="figure-title">' + title + '</title>'));
+    assert.match(svg, /<desc id="figure-description">[\s\S]+<\/desc>/u);
+    assert.match(svg, /<metadata>Original Lenticule Science/u);
+    assert.doesNotMatch(svg, /<(?:script|foreignObject|image|use)\b/iu);
+    assert.doesNotMatch(svg, /(?:href|xlink:href)\s*=/iu);
+    assert.doesNotMatch(svg, /https?:\/\/(?!www\.w3\.org\/2000\/svg)/iu);
+    assert.ok(article.includes('](' + route + ')'), 'original article owns the visible reference');
+    assert.ok(article.includes('!['), 'the image keeps authored alt in the public Markdown');
+  }
+  assert.match(article, /\*Figure 1 — A baseline is an assumption to test\.\*/u);
+  assert.match(article, /\*Figure 2 — One trajectory, not a population average\.\*/u);
+  assert.match(article, /schematic, not observed climate data/u);
+  assert.match(article, /not observed economic data/u);
+  assert.match(article, /no claim about the ergodicity/u);
+  assert.match(article, /status: active/u);
+  assert.match(article, /visibility: public/u);
+});
+
+test('arithmetic bars represent the exact authored 1.0 → 1.5 → 0.9 constructed trajectory', async () => {
+  const svg = await read('static/climate-pathwise-example.svg');
+  const article = await read('content/climate-breakdown-ergodicity-and-water-governance.md');
+  const spans = [
+    ['Start', '180', '1.00'],
+    ['After ×1.5', '270', '1.50'],
+    ['After ×0.6', '162', '0.90'],
+  ];
+  for (const [label, width, value] of spans) {
+    assert.ok(svg.includes('>' + label + '</text>'));
+    assert.ok(svg.includes('width="' + width + '" height="40"'));
+    assert.ok(svg.includes('>' + value + '</text>'));
+  }
+  assert.equal(270 / 180, 1.5);
+  assert.equal(162 / 180, 0.9);
+  assert.match(svg, /Arithmetic mean multiplier/u);
+  assert.match(svg, /Geometric mean multiplier/u);
+  assert.match(svg, /≈0\.949/u);
+  assert.match(svg, /NOT, BY ITSELF, A NONERGODICITY PROOF/u);
+  assert.match(article, /1\.5 × 0\.6 = 0\.9/u);
+});
