@@ -30,7 +30,7 @@ Milly and colleagues' [*Stationarity Is Dead: Whither Water Management?*](https:
 
 The response is not to declare every dataset unusable or every stationary model false. It is to identify the *specific* stability assumption, its spatial and temporal support, evidence for change, competing models and decision sensitivity. Sometimes a locally stationary approximation remains useful within explicit boundaries. Sometimes the risk decision must examine multiple nonstationary futures.
 
-![Schematic comparison: a dashed blue line indicates an assumed stable baseline while a solid green line changes over an illustrative progression. No measured values or forecasts are shown.](/climate-stationarity-schematic.svg)
+![Schematic, not measured data: dashed blue baseline and a changing green path; see Figure 1 caption.](/climate-stationarity-schematic.svg)
 
 *Figure 1 — A baseline is an assumption to test.* The dashed reference and solid changing curve are **schematic, not observed climate data**; their vertical values have no physical unit or probability interpretation. They illustrate why a historically fitted baseline needs an explicit validity argument before being used for a future water decision. [Open Figure 1 as a scalable SVG](/climate-stationarity-schematic.svg).
 
@@ -41,7 +41,7 @@ Ergodicity is a different question. For a specified observable and dynamical sys
 
 Consider a deliberately simple repeated wager: a participating budget is multiplied by 1.5 in one period and 0.6 in another, in that order. The arithmetic mean multiplier is 1.05, above one, but the budget ends after two periods at `1.5 × 0.6 = 0.9` of its starting value. The per-period compounded multiplier for this *particular trajectory* is `sqrt(0.9) ≈ 0.949`. This is an illustration of arithmetic-versus-compound growth, **not** by itself a proof that a specified stochastic process is nonergodic.
 
-![One deterministic budget path: starting at 1.00, multiplying by 1.5 reaches 1.50, then multiplying by 0.6 ends at 0.90. The arithmetic mean multiplier is 1.05, while the per-period geometric mean for this example is approximately 0.949. This is not a proof of nonergodicity.](/climate-pathwise-example.svg)
+![Constructed, not observed data: budget progresses 1.00 to 1.50 to 0.90; see Figure 2 caption.](/climate-pathwise-example.svg)
 
 *Figure 2 — One trajectory, not a population average.* The three bars have a shared scale and follow the exact arithmetic stated above. Their starting, intermediate and final values come from this **constructed teaching example**, not observed economic data. The two arithmetic measures are different; the figure alone makes no claim about the ergodicity of a specified stochastic process. [Open Figure 2 as a scalable SVG](/climate-pathwise-example.svg).
 
