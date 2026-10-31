@@ -180,3 +180,31 @@ test('laboratory figure captions stay full-size, sourced, and legible in both th
   assert.ok(title[1].split('}')[0].includes('display:block'), 'figure title separates from interpretation');
   assert.ok(css.includes('@media(prefers-color-scheme:dark)'), 'retain the original dark palette');
 });
+
+
+test('scientific source citation and epistemic boundaries survive visual editions', async () => {
+  const article = await read('content/climate-breakdown-ergodicity-and-water-governance.md');
+  // External bibliographic facts independently checked against PubMed (Milly
+  // et al., 2008), Nature Physics (Peters, 2019, Perspective), and OECD's
+  // official water-governance instrument on 2026-10-30. This verifies the
+  // original text's *attribution*, not its empirical results or peer review.
+  const references = [
+    ['Milly DOI', '[*Stationarity Is Dead: Whither Water Management?*](https://doi.org/10.1126/science.1151915) (2008)'],
+    ['Peters Perspective', '[*The Ergodicity Problem in Economics*](https://www.nature.com/articles/s41567-019-0732-0) (2019)'],
+    ['OECD water governance', '[OECD Principles on Water Governance](https://legalinstruments.oecd.org/public/doc/349/body-text.en.html)'],
+  ];
+  for (const [name, source] of references) {
+    assert.ok(article.includes(source), 'original research attribution must remain intact: ' + name);
+  }
+  assert.ok(article.includes('This is an illustration of arithmetic-versus-compound growth, **not** by itself a proof'),
+    'a deterministic arithmetic example cannot be silently published as an ergodicity proof');
+  assert.ok(article.includes('That program is a theoretical perspective, not a universal empirical finding'),
+    'do not turn a theoretical perspective into a blanket empirical claim');
+  assert.ok(article.includes('schematic, not observed climate data'),
+    'a designed baseline diagram must not acquire observed-data authority');
+  assert.ok(article.includes('constructed teaching example'), 'the budget trajectory is not a dataset');
+  assert.ok(article.includes('**Topology is not a title deed or a source of jurisdiction.**'),
+    'a diagram must never be misrepresented as granting territorial or treaty authority');
+  assert.ok(article.includes('energy-based unit of account') && article.includes('energy-backed claim'),
+    'retain the separation of energy accounting and financial obligations');
+});
