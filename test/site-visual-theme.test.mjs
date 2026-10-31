@@ -208,3 +208,27 @@ test('scientific source citation and epistemic boundaries survive visual edition
   assert.ok(article.includes('energy-based unit of account') && article.includes('energy-backed claim'),
     'retain the separation of energy accounting and financial obligations');
 });
+
+
+test('public resource inventory points to the actual extracted Science editorial owner, not the historical parent checkout', async () => {
+  const inventory = JSON.parse(await read('resources.json'));
+  assert.equal(inventory.organization, site.name);
+  assert.equal(inventory.origin, site.baseIri);
+  const resources = inventory.resources;
+  const editorial = resources.filter(resource => resource.id === 'science-publication-source');
+  assert.equal(editorial.length, 1, 'one existing Science editorial source, not competing publishers');
+  assert.equal(editorial[0].url, 'https://github.com/lenticule-science/science.561.group');
+  assert.equal(editorial[0].kind, 'source-reference');
+  assert.equal(editorial[0].operatingClaim, 'source-only',
+    'a public repository cannot itself certify an accepted or deployed Science edition');
+  assert.equal(editorial[0].access.mode, 'public-read');
+  assert.equal(editorial[0].agentAccess.authorization, 'none');
+  assert.match(editorial[0].description, /site\.json and content\//u,
+    'the repository checkout is root-owned following original Science extraction');
+  assert.match(editorial[0].description, /not editorial acceptance, reuse permission, or evidence of deployment/u);
+  const parent = resources.find(resource => resource.id === 'science-source');
+  assert.equal(parent?.url, 'https://github.com/lenticule-science/science-services-section',
+    'keep the historical Science research owner and unrelated source references');
+  assert.ok(!editorial[0].description.includes('sites/science.561.group/content'),
+    'do not revive the obsolete pre-extraction site checkout');
+});
