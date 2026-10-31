@@ -126,7 +126,10 @@ test('two original climate diagrams have explicit epistemic status, text alterna
     const number = route.includes('stationarity') ? 1 : 2;
     assert.ok(image.caption.startsWith('*Figure ' + number + ' — '),
       'figure numbering must stay paired with the original diagram');
-    assert.ok(image.alt.length >= 100, 'missing extended scientific alternative: ' + route);
+    assert.ok(image.alt.length >= 55 && image.alt.length <= 140,
+      'complex images need a concise identifier, with the long explanation visible in the caption: ' + route);
+    assert.ok(image.alt.includes('see Figure ' + number + ' caption'),
+      'help the reader locate the authored extended explanation: ' + route);
     assert.ok(['not', 'no ', 'illustrat', 'construct'].some(term =>
       image.alt.toLowerCase().includes(term)),
       'alt must distinguish schematic or constructed illustration from evidence: ' + route);
@@ -231,4 +234,16 @@ test('public resource inventory points to the actual extracted Science editorial
     'keep the historical Science research owner and unrelated source references');
   assert.ok(!editorial[0].description.includes('sites/science.561.group/content'),
     'do not revive the obsolete pre-extraction site checkout');
+  const home = await read('content/start-here.md');
+  for (const manuscript of [
+    'content/paraconsistent-transfinite-linear-agent-integration.md',
+    'content/climate-breakdown-ergodicity-and-water-governance.md',
+  ]) {
+    assert.ok(home.includes('https://github.com/lenticule-science/science.561.group/blob/main/' + manuscript),
+      'human-readable source and revision history must use the same current owner: ' + manuscript);
+  }
+  assert.ok(home.includes('A new source revision is not itself a newly deployed web edition'),
+    'make source versus public-received edition legible to human readers');
+  assert.ok(!home.includes('science-services-section/blob/7255e295c549ca19414fbc8bbbd1ad646bc983c6/sites/science.561.group/content/'),
+    'avoid presenting the pre-extraction manuscript path as the current editorial checkout');
 });
