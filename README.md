@@ -11,6 +11,25 @@ that earlier receipt does not establish today's production version.
 - [`content/intro.md`](content/intro.md) — unreleased editorial candidate,
   retained as `status: potential` until received by the owning editor.
 
+**Visual habitat (candidate):** The existing `site.json` owns one
+`lenticule-laboratory` TUFTE presentation for the original Science source,
+with bright paper/bone surfaces, witness-blue reference links, restrained
+crystalline green, instrument labels, readable long-form papers and a
+source-owned lightweight optical specimen at
+[`static/crystal-lens.svg`](static/crystal-lens.svg). The existing
+`test/site-visual-theme.test.mjs` checks the source-scoped theme, selected
+contrast pairs, specimen safety and preservation of existing accepted research
+entrances. Those checks are not browser accessibility certification or
+production release. The source selects the optional TUFTE shared-house
+stylesheet improvement so every page can reuse one canonical presentation
+asset **after its upstream renderer and the original Causeway publishing
+release are actually received**. Existing older TUFTE deployments continue
+to inline the same house CSS. Follow the [Group's original
+derive-and-receive brand method](https://github.com/561-group/internal-content-design-services-section/blob/main/content/text/documents/articles/specifications/procedures/derive-and-receive-brand-artifact.md)
+for real desktop/mobile previews and independent visual acceptance. No new
+visual-design authority, claim, publisher or deployment is inferred from a
+committed stylesheet.
+
 **What belongs here:** Explain a research question through its assumptions, observations, formal claims, counterexamples and remaining uncertainty. Treat a model, a proof, a design analogy and a measured result as different things. Link to relevant admitted Science evidence; do not turn an accessible L-Space room into a public publication by inference.
 
 **Publication authority:** Science's own publication and reuse authority. Subject decisions do

@@ -56,6 +56,23 @@
       }
     },
     {
+      "id": "science-publication-source",
+      "title": "Science publication source and manuscript history",
+      "url": "https://github.com/lenticule-science/science.561.group",
+      "kind": "source-reference",
+      "description": "Current editorial source for the Science website, with site.json and content/ at the repository root. Source visibility is not editorial acceptance, reuse permission, or evidence of deployment.",
+      "access": {
+        "mode": "public-read"
+      },
+      "humanAction": "Inspect source and manuscript revisions; use the Science site for released editions.",
+      "agentAccess": {
+        "method": "GET",
+        "mediaType": "text/html",
+        "authorization": "none"
+      },
+      "operatingClaim": "source-only"
+    },
+    {
       "id": "science-source",
       "title": "Lenticule Science source",
       "url": "https://github.com/lenticule-science/science-services-section",

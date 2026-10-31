@@ -1,5 +1,5 @@
 ---
-title: "Lenticule Science: Four-Valued Logic, Agent Integration, x402 Markets and Formal Mathematics"
+title: "Lenticule Science"
 page-title: "Lenticule Science: Research for a Living Agentic Web"
 summary: "Lenticule Science develops the mathematics, philosophy and agent research behind a Web that can learn: Obsmetrologia, four-valued logic, relational computation and living institutions."
 date-created: 2026-10-20
@@ -14,8 +14,6 @@ tags:
   - organizational-science
 keywords: [Belnap four-valued logic, bilattice, paraconsistent logic, AI agent orchestration, MAPE-K, x402, Rendanheyi, Lean 4]
 ---
-
-# Lenticule Science
 
 Lenticule Science is the research company of the [561 Group](https://561.group/). We develop the mathematics, philosophy and agent research for systems that can learn through changing relationships. Our work connects Relationality and Obsmetrologia with four-valued logic, concurrent agents and institutions capable of changing their own frames.
 
@@ -69,7 +67,7 @@ We pursue AI that increases people's power to understand, decide, cooperate and 
 
 ## Discuss a result or work with us
 
-Read [the concurrent-agent logic audit](/paraconsistent-transfinite-linear-agent-integration/) and [the Obsmetrologia formalization account](/obsmetrologia-formal-mathematics-in-lean-4/) for detailed entrances into the mathematics. The [audit manuscript](https://github.com/lenticule-science/science-services-section/blob/7255e295c549ca19414fbc8bbbd1ad646bc983c6/sites/science.561.group/content/paraconsistent-transfinite-linear-agent-integration.md) is also available to authorized repository readers.
+Read [the concurrent-agent logic audit](/paraconsistent-transfinite-linear-agent-integration/) and [the Obsmetrologia formalization account](/obsmetrologia-formal-mathematics-in-lean-4/) for detailed entrances into the mathematics. Inspect the [audit manuscript and revision history](https://github.com/lenticule-science/science.561.group/blob/main/content/paraconsistent-transfinite-linear-agent-integration.md) or the [climate article source](https://github.com/lenticule-science/science.561.group/blob/main/content/climate-breakdown-ergodicity-and-water-governance.md) in our public editorial repository. A new source revision is not itself a newly deployed web edition; compare the live article and feed before citing a published version.
 
 Bring an error, a contrasting result, a reproducible example or a research collaboration to the Group's [contact intake](https://561.group/contact/#private-intake). Choose *Question* for a scientific discussion or *Paid service inquiry* for commissioned work, and include the relevant paper and your reply channel. The page prepares an email for you to review and send.
 

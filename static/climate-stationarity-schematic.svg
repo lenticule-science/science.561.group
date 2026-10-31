@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="440" viewBox="0 0 560 440" role="img" aria-labelledby="figure-title figure-description">
+<title id="figure-title">Stationarity is an assumption to test</title>
+<desc id="figure-description">A dashed indigo line suggests a stable baseline and a solid green line rises over the same illustrated progression. The curves are schematic, not data, probabilities or a forecast. Historical stability must be justified for the decision at hand.</desc>
+<metadata>Original Lenticule Science explanatory diagram candidate, prepared 2026-10-30 from "Climate breakdown changes the baseline" (2026-10-22). No empirical values. Rights and final approval remain with the publishing office.</metadata>
+<style>
+  text{font-family:system-ui,-apple-system,"Segoe UI",Arial,sans-serif;fill:#172A31}
+  .overline{font-weight:750;letter-spacing:1.25px;fill:#00695C;font-size:17px}
+  .headline{font-weight:700;font-size:32px;letter-spacing:-.6px}
+  .body{font-size:21px;fill:#3F5C65}
+  .legend{font-size:19px;fill:#172A31}
+</style>
+<rect x=".5" y=".5" width="559" height="439" fill="#FFFDF7" stroke="#8CA9AF"/>
+<path d="M0 6 H560" stroke="#00695C" stroke-width="6"/>
+<text x="30" y="53" class="overline">01 / STATIONARITY</text>
+<text x="30" y="100" class="headline">When the baseline moves</text>
+<text x="30" y="133" class="body">Schematic only · no observations plotted</text>
+<path d="M60 172 V323 H523" fill="none" stroke="#8CA9AF" stroke-width="2"/>
+<path d="M60 242 C100 231 135 250 174 239 S254 246 297 242 S380 235 415 244 S487 236 523 240" fill="none" stroke="#3D5588" stroke-width="4" stroke-dasharray="10 8" stroke-linecap="round"/>
+<path d="M60 299 C118 304 132 297 167 287 S228 298 263 271 S315 273 347 245 S396 260 422 223 S478 231 523 175" fill="none" stroke="#00695C" stroke-width="6" stroke-linecap="round"/>
+<circle cx="523" cy="175" r="6" fill="#FFFDF7" stroke="#00695C" stroke-width="4"/>
+<text x="60" y="350" class="body">Earlier</text><text x="453" y="350" class="body">Later →</text>
+<path d="M30 386 H74" stroke="#3D5588" stroke-width="4" stroke-dasharray="9 7"/><text x="85" y="392" class="legend">Stable reference</text>
+<path d="M309 386 H353" stroke="#00695C" stroke-width="5"/><text x="365" y="392" class="legend">Changing process</text>
+<text x="30" y="424" class="overline">QUESTION: WHICH ASSUMPTION STILL HOLDS?</text>
+</svg>
