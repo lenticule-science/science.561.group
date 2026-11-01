@@ -3,7 +3,7 @@
   "version": 1,
   "organization": "Lenticule Science",
   "origin": "https://science.561.group/",
-  "updated": "2026-10-25",
+  "updated": "2026-10-31",
   "guide": "https://science.561.group/",
   "discovery": "https://science.561.group/discovery.json",
   "scope": "Public research, source repositories, publication interfaces and their access conditions.",
@@ -17,6 +17,70 @@
         "mode": "public-read"
       },
       "humanAction": "Choose the relevant resource and follow its next action.",
+      "agentAccess": {
+        "method": "GET",
+        "mediaType": "text/html",
+        "authorization": "none"
+      }
+    },
+    {
+      "id": "relational-physics",
+      "title": "What can physics gain by beginning with relations?",
+      "url": "https://science.561.group/relational-physics/",
+      "kind": "public-article",
+      "description": "A research program connecting native relational construction to causal intervals, information and quantum questions. Research exposition; not a new experimental result.",
+      "access": {
+        "mode": "public-read"
+      },
+      "humanAction": "Read the worked argument, inspect its sources and reproduce the finite examples.",
+      "agentAccess": {
+        "method": "GET",
+        "mediaType": "text/html",
+        "authorization": "none"
+      }
+    },
+    {
+      "id": "causal-intervals-and-projection",
+      "title": "Causality from intervals",
+      "url": "https://science.561.group/causal-intervals-and-projection/",
+      "kind": "public-article",
+      "description": "A finite interval transport theorem, a projection-loss counterexample and the assumptions of causal dimension estimates. Research exposition; not a new experimental result.",
+      "access": {
+        "mode": "public-read"
+      },
+      "humanAction": "Read the worked argument, inspect its sources and reproduce the finite examples.",
+      "agentAccess": {
+        "method": "GET",
+        "mediaType": "text/html",
+        "authorization": "none"
+      }
+    },
+    {
+      "id": "information-boundaries-and-physical-records",
+      "title": "What can a boundary tell us about the world inside?",
+      "url": "https://science.561.group/information-boundaries-and-physical-records/",
+      "kind": "public-article",
+      "description": "Exact reconstruction, parity fibers, conditional entropy and the physical assumptions behind Landauer heat bounds. Research exposition; not a new experimental result.",
+      "access": {
+        "mode": "public-read"
+      },
+      "humanAction": "Read the worked argument, inspect its sources and reproduce the finite examples.",
+      "agentAccess": {
+        "method": "GET",
+        "mediaType": "text/html",
+        "authorization": "none"
+      }
+    },
+    {
+      "id": "quantum-contexts-and-probability",
+      "title": "Quantum contexts and probability",
+      "url": "https://science.561.group/quantum-contexts-and-probability/",
+      "kind": "public-article",
+      "description": "An exact family separating classical, quantum and no-signalling correlations, compared with existing Obsmetrologia weighted carriers. Research exposition; not a new experimental result.",
+      "access": {
+        "mode": "public-read"
+      },
+      "humanAction": "Read the worked argument, inspect its sources and reproduce the finite examples.",
       "agentAccess": {
         "method": "GET",
         "mediaType": "text/html",

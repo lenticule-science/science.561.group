@@ -1,27 +1,33 @@
 ---
-title: "Lenticule Science: Four-Valued Logic, Agent Integration, x402 Markets and Formal Mathematics"
-page-title: "Lenticule Science: Research for a Living Agentic Web"
-summary: "Lenticule Science develops the mathematics, philosophy and agent research behind a Web that can learn: Obsmetrologia, four-valued logic, relational computation and living institutions."
+title: "Lenticule Science: Relationality, Physics, Information and Living Systems"
+page-title: "Lenticule Science: Relationality, Physics and a Living Web"
+summary: "Explore Relationality and Obsmetrologia through causal intervals, quantum contexts, information, formal mathematics and systems that can learn."
 date-created: 2026-10-20
 type: article
 status: active
 visibility: public
 tags:
+  - relationality
+  - physics
+  - quantum-foundations
+  - information
   - paraconsistent-logic
   - ai-agents
   - x402
   - formal-mathematics
   - organizational-science
-keywords: [Belnap four-valued logic, bilattice, paraconsistent logic, AI agent orchestration, MAPE-K, x402, Rendanheyi, Lean 4]
+keywords: [Relationality, Obsmetrologia, relational physics, quantum contextuality, causal intervals, information, Belnap four-valued logic, bilattice, paraconsistent logic, AI agent orchestration, MAPE-K, x402, Rendanheyi, Lean 4]
 ---
 
 # Lenticule Science
 
-Lenticule Science is the research company of the [561 Group](https://561.group/). We develop the mathematics, philosophy and agent research for systems that can learn through changing relationships. Our work connects Relationality and Obsmetrologia with four-valued logic, concurrent agents and institutions capable of changing their own frames.
+Lenticule Science is the research company of the [561 Group](https://561.group/). We investigate how distinguishable things, evidence and causal structure arise through relations, and how that mathematics can inform physics, information and systems that learn. Our work connects Relationality and Obsmetrologia with four-valued logic, concurrent agents and institutions capable of changing their own frames.
 
 We pursue AI that increases people's power to understand, decide, cooperate and leave. Explore the research, use its ideas, challenge its arguments and help build the living Web.
 
 ## What are the big ideas?
+
+**Relations can be the starting point of a construction.** Our [relational physics guide](/relational-physics/) follows the program from the formation of distinguishable things to causal intervals, boundary information and quantum questions. It includes arguments, counterexamples and reproducible calculations.
 
 1. **Truth with four values.** A claim can be told true, told false, told both (a held contradiction) or told neither. Belnap's four-valued logic lets a system hold a conflict as data instead of crashing or exploding. See [Belnap four-valued logic](/belnap-four-valued-logic/) and [what a bilattice is](/bilattices-and-belnap-dunn-logic/).
 2. **Settling instead of deciding.** Evidence is closed to a least fixed point in stages; the number of stages is the "transfinite" part. Contradiction gets its own record and is never erased. See [paraconsistent settling and comprehension](/paraconsistent-settling-and-comprehension/).
@@ -36,6 +42,16 @@ We pursue AI that increases people's power to understand, decide, cooperate and 
 ## How do changing climates alter what an organization can know?
 
 [Climate breakdown changes the baseline: stationarity, ergodicity and the institutions we can build](/climate-breakdown-ergodicity-and-water-governance/) connects the IPCC's observed water-cycle changes to the mathematical difference between unstable historical distributions and path-dependent outcomes. It explores how changing water, energy and institutional conditions shape the capacity to act.
+
+## Where can I explore physics, information and causality?
+
+Begin with [What can physics gain by beginning with relations?](/relational-physics/) for the research program and its native mathematical constructions. Three worked articles let you inspect the questions in detail:
+
+- [Causality from intervals](/causal-intervals-and-projection/) constructs events from causal intervals, proves when a map transports them, and shows how a lawful projection can lose independence.
+- [Information at a boundary](/information-boundaries-and-physical-records/) shows exactly when a boundary can reconstruct an interior, then connects that question to conditional entropy and the physical accounting required for a heat bound.
+- [Quantum contexts and probability](/quantum-contexts-and-probability/) separates classical, quantum and stronger no-signalling correlations in one exact family. It connects the example to Obsmetrologia's existing weighted empirical models and identifies the next formal test.
+
+The series presents active research with explicit mathematical and physical scope. Its public source includes two small, reproducible calculations and three exact explanatory figures; it does not report a new physical experiment.
 
 ## Which publications cover paraconsistent and four-valued logic?
 
@@ -61,7 +77,7 @@ We pursue AI that increases people's power to understand, decide, cooperate and 
 ## Which publications cover organizations and formal mathematics?
 
 - [Rendanheyi Micro-Enterprises as Persistent Programs in a Union of Territories](/rendanheyi-living-union-organizational-science/) (paper).
-- [Obsmetrologia: Formal Mathematics in Lean 4 Without Mathlib](/obsmetrologia-formal-mathematics-in-lean-4/): a Lean 4 library of about 275 files.
+- [Obsmetrologia: Formal Mathematics in Lean 4 Without Mathlib](/obsmetrologia-formal-mathematics-in-lean-4/): the formalization approach and its dated source inventory.
 
 ## Where does this fit in the Group?
 
