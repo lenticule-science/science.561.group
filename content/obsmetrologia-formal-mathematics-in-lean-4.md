@@ -11,6 +11,8 @@ keywords: [Lean 4, Obsmetrologia, no Mathlib, formal verification, bilattice, sh
 
 # Obsmetrologia: Formal Mathematics in Lean 4 Without Mathlib
 
+*Inventory date:* the file counts, theorem census and audit observations below describe the source snapshot discussed on 19 October 2026, not a current build receipt. The [relational physics guide](/relational-physics/) and its [quantum comparison](/quantum-contexts-and-probability/) inspect specific causal and empirical-model declarations at revision `a0d8d072` on 31 October without claiming a fresh whole-library qualification.
+
 Obsmetrologia is a Lean 4 library from Lenticule Science that formalizes a body of mathematics built from a single primitive, the mark, using only Lean's core library. It has no Mathlib dependency and no external packages, and it counts roughly 275 source files and about 4,000 theorem declarations. Its own audits police the axioms it relies on, and it keeps one acknowledged unproved statement visible in the source.
 
 ## What is Obsmetrologia?

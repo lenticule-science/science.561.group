@@ -1,0 +1,151 @@
+{
+  "type": "BoundedSourceVerification",
+  "date": "2026-10-31",
+  "repository": "lenticule-science/science.561.group",
+  "base_commit": "6ca78fec8659e3068e85c60970a798dbe23b8df9",
+  "native_source": {
+    "repository": "lenticule-science/obsmetrologia",
+    "commit": "a0d8d07226b57f04c088d96e4d7f91a00c785f9d",
+    "scope": "Selected causal and quantum declarations inspected; no fresh whole-library build."
+  },
+  "changes": [
+    {
+      "path": "content/causal-intervals-and-projection.md",
+      "kind": "new",
+      "sha256": "759f08e4538d1b3f907340829875d90b1ed759f6ec036c880c1503f68eca9734",
+      "git_blob_sha": "f3eeeee78de115740ee0fdd9012298bbf2e6c660"
+    },
+    {
+      "path": "content/information-boundaries-and-physical-records.md",
+      "kind": "new",
+      "sha256": "0b2dd31ee62695b9b332b435410a63e8e4319bffd7e3c753c514f540872c33bb",
+      "git_blob_sha": "b458ca51d2f1e739315705001a3e6bc5ccf32432"
+    },
+    {
+      "path": "content/obsmetrologia-formal-mathematics-in-lean-4.md",
+      "kind": "modified",
+      "sha256": "a936b98f744e64d602867b3c82f6e3bd40311fc310c2343fa1bdca91c0028506",
+      "git_blob_sha": "febf5762d491dfa736ad5aa611311da10505e86e"
+    },
+    {
+      "path": "content/quantum-contexts-and-probability.md",
+      "kind": "new",
+      "sha256": "1f77410b7ad1f5eee7d5e8a733cda6d0a40708233d204c1bbcb99bfc25cde352",
+      "git_blob_sha": "26e828fb4a9feddce85721c4132af30a54a32771"
+    },
+    {
+      "path": "content/relational-physics.md",
+      "kind": "new",
+      "sha256": "3817d4c8242d8128a64d81eae2b8b7cbade48cb1834e8e2714cec2901a5392c0",
+      "git_blob_sha": "a01cac2803a68ff80014f73829f661021c5b86ff"
+    },
+    {
+      "path": "content/start-here.md",
+      "kind": "modified",
+      "sha256": "355b4dcbc29de427bf1a17f219fbd34efbbc31c4bdabee222f2aa55ea295442e",
+      "git_blob_sha": "604319e81d92136300118295cc96cec25927b042"
+    },
+    {
+      "path": "discovery.json",
+      "kind": "modified",
+      "sha256": "d3386a6c4c3e44bdd1817b8e9b467338f2704c1be4c0afecf68e80a3fafe526a",
+      "git_blob_sha": "94089188ad4692ff713c6e6f69ebb653c62e4d5a"
+    },
+    {
+      "path": "examples/README.md",
+      "kind": "new",
+      "sha256": "40afea80054c592fdea6f92b52900a090505b530fb6e31783c8f670752bba82c",
+      "git_blob_sha": "7ae345f044db809639c99e6f766473dae2511ba4"
+    },
+    {
+      "path": "examples/quantum-contexts.py",
+      "kind": "new",
+      "sha256": "5e0863a1a5d40572fda5f2b33bb259dd4ecab718afe6044c358a591b1f678146",
+      "git_blob_sha": "ad70964af25adf1768097883cd2a1a63123821e6"
+    },
+    {
+      "path": "examples/relational-examples.py",
+      "kind": "new",
+      "sha256": "a3065fe0ddf097bfaa15d66323435364a6e35755b52bbfa811d5d2cb90e00e1b",
+      "git_blob_sha": "b1cdf929b70e695eed6f94756815995a442a2894"
+    },
+    {
+      "path": "resources.json",
+      "kind": "modified",
+      "sha256": "74828addcf65cc5b4c398d8d0130ef98a9c2d9b10d0f5b85623e7f44e8473c51",
+      "git_blob_sha": "2aff595b4a08ac18ffc33c17810c4753284b6698"
+    },
+    {
+      "path": "site.json",
+      "kind": "modified",
+      "sha256": "5e1b103b27c94068115f94ddb04d83824b3a3c9031806a8ede0cca3fb572d0a2",
+      "git_blob_sha": "8adc64c416356abd5133cd477e950a8d61daec7a"
+    },
+    {
+      "path": "static/figures/boundary-information.svg",
+      "kind": "new",
+      "sha256": "f72f63bbb573b8f89ad9385048d7dc36a7dcebb7a33695b3b1ede926d83a1896",
+      "git_blob_sha": "37b8557f83a92e034daf66d14c4af78d520d48b9"
+    },
+    {
+      "path": "static/figures/causal-interval-projection.svg",
+      "kind": "new",
+      "sha256": "3eef00fa4fdecfd22f42707eda26cfcdb026a6df557a4a3f22358fba6b4a13c1",
+      "git_blob_sha": "9924200ac8503afa3c3eefd90ef56f011fdbf308"
+    },
+    {
+      "path": "static/figures/quantum-contexts-boundaries.svg",
+      "kind": "new",
+      "sha256": "3235ed6ebf63e8040041a0f0e6fb5ff0e12113c3c130c9a2ae99c58cef9e160a",
+      "git_blob_sha": "d4d268feff09849fe4daeb045380411d9951394c"
+    }
+  ],
+  "executed_commands": [
+    {
+      "command": "python3 examples/relational-examples.py",
+      "exit_code": 0,
+      "stdout_sha256": "417a50efd57ad68f1217ae242225b6df2275ec02c3f81754fb82dec2398911f5",
+      "source_sha256": "a3065fe0ddf097bfaa15d66323435364a6e35755b52bbfa811d5d2cb90e00e1b"
+    },
+    {
+      "command": "python3 examples/quantum-contexts.py",
+      "exit_code": 0,
+      "stdout_sha256": "c1ee414490e8d1d9fb6ba336946fedfb3479faaff09eb962e1912c8dfdace4f2",
+      "source_sha256": "5e0863a1a5d40572fda5f2b33bb259dd4ecab718afe6044c358a591b1f678146"
+    }
+  ],
+  "source_checks": {
+    "json_documents": 3,
+    "markdown_frontmatters": 28,
+    "svg_figures": 3,
+    "existing_unrelated_source_and_theme_preserved": true
+  },
+  "review": {
+    "method": "Three parallel AI reviews, with root integration and exact-source comparison. These are bounded source reviews, not institutional assurance or external peer review.",
+    "native_claims": "Passed against selected pinned native files.",
+    "mathematics": "Passed finite probability, interval and information examples; positive-temperature requirement added.",
+    "publication_source": "Passed local destinations, unique inventories, frontmatter and access/reuse/status descriptions."
+  },
+  "figures": {
+    "method": "SVG XML parsed and all three figures rendered and visually inspected; corrected causal-arrow rendering re-inspected.",
+    "native_page_rendering": "Not executed."
+  },
+  "release": {
+    "status": "Not built or deployed by this verification.",
+    "required_pages": [
+      "relational-physics",
+      "causal-intervals-and-projection",
+      "information-boundaries-and-physical-records",
+      "quantum-contexts-and-probability"
+    ],
+    "existing_publisher_dependency": "https://github.com/red-cup-engineering/web-engineering-services-section/pull/22",
+    "existing_source_selection_dependency": "https://github.com/causeway-services/public-web-services-section/pull/42",
+    "receiving": "Use the existing publisher and its exact-source/page requirements; obtain native build, provider and independent public readback before a live-release claim."
+  },
+  "limits": [
+    "Finite scripts do not instantiate or kernel-check the native Lean definitions.",
+    "No new experimental data, universal quantum derivation, physical holographic theorem or fresh theorem census.",
+    "No additional reuse license.",
+    "Source integration and public serving are separate effects."
+  ]
+}
