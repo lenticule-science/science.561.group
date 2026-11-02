@@ -21,6 +21,11 @@ keywords: [Relationality, Obsmetrologia, relational physics, quantum contextuali
 
 # Lenticule Science
 
+> We do what we can, we cannot not:  
+> for the truth of all of us, except the ones who are right.
+
+**VISITOR NOTICE.** The evidence may say yes, no, both, or nothing at all. Please do not strike the apparatus.
+
 Lenticule Science is the research company of the [561 Group](https://561.group/). We investigate how distinguishable things, evidence and causal structure arise through relations, and how that mathematics can inform physics, information and systems that learn. Our work connects Relationality and Obsmetrologia with four-valued logic, concurrent agents and institutions capable of changing their own frames.
 
 We pursue AI that increases people's power to understand, decide, cooperate and leave. Explore the research, use its ideas, challenge its arguments and help build the living Web.
