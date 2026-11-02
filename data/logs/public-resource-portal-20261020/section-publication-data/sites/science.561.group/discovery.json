@@ -1,0 +1,62 @@
+{
+  "type": "PublicPublicationDiscovery",
+  "version": 1,
+  "organization": "Lenticule Science",
+  "origin": "https://science.561.group/",
+  "home": "https://science.561.group/",
+  "resources": "https://science.561.group/resources.json",
+  "search": {
+    "url": "https://science.561.group/search/",
+    "method": "GET",
+    "queryParameter": "q",
+    "scope": "This site's accepted publications",
+    "client": "browser search with generated local index"
+  },
+  "feeds": [
+    {
+      "url": "https://science.561.group/feed.rss.xml",
+      "mediaType": "application/rss+xml"
+    },
+    {
+      "url": "https://science.561.group/feed.atom.xml",
+      "mediaType": "application/atom+xml"
+    },
+    {
+      "url": "https://science.561.group/feed.json",
+      "mediaType": "application/feed+json"
+    }
+  ],
+  "sitemap": "https://science.561.group/sitemap.xml",
+  "navigation": [
+    {
+      "label": "Science",
+      "url": "https://science.561.group/"
+    },
+    {
+      "label": "Engineering",
+      "url": "https://engineering.561.group/"
+    },
+    {
+      "label": "Operations",
+      "url": "https://operations.561.group/"
+    },
+    {
+      "label": "Services",
+      "url": "https://services.561.group/"
+    },
+    {
+      "label": "Market",
+      "url": "https://market.561.group/"
+    },
+    {
+      "label": "Bazaar",
+      "url": "https://bazaar.561.group/"
+    },
+    {
+      "label": "Shop",
+      "url": "https://shop.561.group/"
+    }
+  ],
+  "tools": [],
+  "toolScope": "This publication adds no tool execution endpoint. Linked services publish their own discovery and tool schemas."
+}
