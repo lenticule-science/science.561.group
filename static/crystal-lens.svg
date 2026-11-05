@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520" role="img" aria-labelledby="title description">
+<title id="title">Lenticule relational optics</title>
+<desc id="description">An original faceted mineral lens with organic curves, specimen outlines and quiet calibration marks.</desc>
+<defs>
+<linearGradient id="glass" x1=".15" x2=".86" y1=".1" y2="1"><stop stop-color="#f7fff9"/><stop offset=".42" stop-color="#c8e7de"/><stop offset="1" stop-color="#4cafa3"/></linearGradient>
+<linearGradient id="facet" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#3d5588" stop-opacity=".48"/><stop offset="1" stop-color="#00695c" stop-opacity=".04"/></linearGradient>
+</defs>
+<g fill="none" stroke="#3d5588" stroke-width="1" opacity=".46">
+<circle cx="260" cy="260" r="208" stroke-dasharray="3 10"/>
+<circle cx="260" cy="260" r="172"/>
+<path d="M260 20V500M20 260H500"/>
+<path d="M104 104L416 416M416 104L104 416" stroke-dasharray="5 13"/>
+<path d="M260 28v18M260 474v18M28 260h18M474 260h18" stroke-width="3"/>
+</g>
+<path d="M258 67 380 110 452 219 423 341 323 427 204 451 102 373 65 254 113 143Z" fill="url(#glass)" stroke="#00695c" stroke-width="5"/>
+<path d="M258 67 264 227 380 110ZM380 110 264 227 452 219ZM452 219 264 227 423 341ZM423 341 264 227 323 427ZM323 427 264 227 204 451ZM204 451 264 227 102 373ZM102 373 264 227 65 254ZM65 254 264 227 113 143ZM113 143 264 227 258 67Z" fill="url(#facet)" stroke="#3d5588" stroke-opacity=".32" stroke-width="1.5"/>
+<path d="M258 67Q217 148 264 227T323 427M113 143Q202 190 264 227T423 341M65 254Q177 276 264 227T380 110M102 373Q205 331 264 227T452 219" fill="none" stroke="#fffdf7" stroke-opacity=".76" stroke-width="3"/>
+<path d="M170 381Q152 298 204 228T350 131M228 435Q280 331 344 302T409 242" stroke="#00695c" stroke-opacity=".5" stroke-width="4" fill="none"/>
+<circle cx="264" cy="227" r="8" fill="#fffdf7" stroke="#3d5588" stroke-width="3"/>
+<g fill="#3d5588"><circle cx="258" cy="67" r="4"/><circle cx="452" cy="219" r="4"/><circle cx="204" cy="451" r="4"/></g>
+</svg>

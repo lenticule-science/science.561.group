@@ -1,0 +1,33 @@
+name: Science publication source assurance
+
+on:
+  push:
+    paths:
+      - "site.json"
+      - "content/**"
+      - "static/**"
+      - "test/site-visual-theme.test.mjs"
+      - ".github/workflows/publication-source.yml"
+  pull_request:
+    paths:
+      - "site.json"
+      - "content/**"
+      - "static/**"
+      - "test/site-visual-theme.test.mjs"
+      - ".github/workflows/publication-source.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  original-site-source-tests:
+    name: Source, claims and figures (Node 24)
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+      - name: Check original editorial visuals and reader entrances
+        run: node --test test/site-visual-theme.test.mjs

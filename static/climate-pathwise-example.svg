@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="468" viewBox="0 0 560 468" role="img" aria-labelledby="figure-title figure-description">
+<title id="figure-title">A lived budget path differs from the arithmetic average multiplier</title>
+<desc id="figure-description">Three horizontal bars show one budget trajectory: starting at 1.00, reaching 1.50 after multiplying by 1.5, and ending at 0.90 after multiplying by 0.6. Arithmetic mean of the two multipliers is 1.05. Per-period geometric mean for this deterministic two-step example is the square root of 0.9, approximately 0.949. This is not a proof of nonergodicity.</desc>
+<metadata>Original Lenticule Science arithmetic illustration candidate, prepared 2026-10-30 from "Climate breakdown changes the baseline" (2026-10-22). Deterministic teaching example, not observed economic data. Rights and final approval remain with the publishing office.</metadata>
+<style>
+  text{font-family:system-ui,-apple-system,"Segoe UI",Arial,sans-serif;fill:#172A31}
+  .overline{font-weight:750;letter-spacing:1.25px;fill:#00695C;font-size:17px}
+  .headline{font-weight:700;font-size:32px;letter-spacing:-.6px}
+  .body{font-size:21px;fill:#3F5C65}
+  .legend{font-size:20px;fill:#172A31}
+  .value{font-size:25px;font-weight:750;font-variant-numeric:tabular-nums}
+  .measure{font-size:31px;font-weight:700;font-variant-numeric:tabular-nums}
+</style>
+<rect x=".5" y=".5" width="559" height="467" fill="#FFFDF7" stroke="#8CA9AF"/>
+<path d="M0 6 H560" stroke="#3D5588" stroke-width="6"/>
+<text x="30" y="53" class="overline">02 / ONE TRAJECTORY</text>
+<text x="30" y="100" class="headline">When the path matters</text>
+<text x="30" y="133" class="body">1.00 × 1.5 × 0.6 = 0.90</text>
+<text x="30" y="200" class="legend">Start</text><rect x="177" y="170" width="180" height="40" fill="#A9BCC2"/><text x="518" y="200" class="value" text-anchor="end">1.00</text>
+<text x="30" y="259" class="legend">After ×1.5</text><rect x="177" y="229" width="270" height="40" fill="#3D5588"/><text x="518" y="259" class="value" text-anchor="end">1.50</text>
+<text x="30" y="318" class="legend">After ×0.6</text><rect x="177" y="288" width="162" height="40" fill="#00695C"/><text x="518" y="318" class="value" text-anchor="end">0.90</text>
+<path d="M30 345 H530" stroke="#9AB1B2" stroke-width="1.5"/>
+<text x="30" y="378" class="body">Arithmetic mean multiplier</text><text x="518" y="378" class="measure" text-anchor="end">1.05</text>
+<text x="30" y="416" class="body">Geometric mean multiplier</text><text x="518" y="416" class="measure" text-anchor="end">≈0.949</text>
+<text x="30" y="448" class="overline">NOT, BY ITSELF, A NONERGODICITY PROOF</text>
+</svg>
