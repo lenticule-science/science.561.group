@@ -1,0 +1,23 @@
+{
+  "id": "science-561-group",
+  "name": "science.561.group",
+  "kind": "market",
+  "entity": "561-group-llc",
+  "faces": "Readers of Lenticule Science's public research at https://science.561.group/: explanations of research questions through their assumptions, observations, formal claims, counterexamples and remaining uncertainty, published on TUFTE through Causeway Public Web's estate.",
+  "offices": [
+    "senior-scientist"
+  ],
+  "host": "bare-cedar-fog",
+  "takes": {
+    "words": [
+      "science.561.group",
+      "lenticule science site",
+      "science site"
+    ]
+  },
+  "x-provenance": {
+    "recorded-by": "bare-cedar-fog-claude, as senior-scientist",
+    "recorded-on": "2026-10-29",
+    "source": "Leader, 2026-10-29: 'services/science-services-section/sites/science.561.group This also needs to be its own repository'; founded under rule unseated-demand-founds-what-takes-it when the request c7uPzt3N was homed at L-Space, whose lead is unseated and whose work is not this site."
+  }
+}

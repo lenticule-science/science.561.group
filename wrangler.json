@@ -1,0 +1,39 @@
+{
+  "$schema": "../../node_modules/wrangler/config-schema.json",
+  "name": "section-science-561-group",
+  "account_id": "337e54ee6dc7d488933f473204a6d89e",
+  "main": "../section-worker.mjs",
+  "compatibility_date": "2026-10-20",
+  "workers_dev": false,
+  "preview_urls": false,
+  "assets": {
+    "directory": "public",
+    "binding": "ASSETS",
+    "not_found_handling": "404-page",
+    "html_handling": "auto-trailing-slash",
+    "run_worker_first": [
+      "/.well-known/*",
+      "/nodeinfo/*",
+      "/actors/*",
+      "/inbox",
+      "/_private",
+      "/_private/*"
+    ]
+  },
+  "services": [
+    {
+      "binding": "ACTIVITYPUB_INSTANCE",
+      "service": "section-services-561-group"
+    }
+  ],
+  "routes": [
+    {
+      "pattern": "science.561.group",
+      "custom_domain": true
+    }
+  ],
+  "observability": {
+    "enabled": true,
+    "head_sampling_rate": 0.1
+  }
+}

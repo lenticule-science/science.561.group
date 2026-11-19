@@ -1,0 +1,220 @@
+{
+  "name": "Lenticule Science",
+  "baseIri": "https://science.561.group/",
+  "language": "en",
+  "license": "Reuse terms are stated on each publication.",
+  "description": "Relationality and Obsmetrologia: causal structure, information, quantum questions, formal mathematics and systems that can learn.",
+  "eyebrow": "561 Group · Research",
+  "cellLabel": "Research",
+  "menu": [
+    {
+      "href": "https://science.561.group/",
+      "label": "Science"
+    },
+    {
+      "href": "/atlas/",
+      "label": "Research atlas"
+    },
+    {
+      "href": "/relational-physics/",
+      "label": "Physics & information"
+    },
+    {
+      "href": "/send-in-the-shrimp-the-jiangshi-web/",
+      "label": "The living Web"
+    },
+    {
+      "href": "/obsmetrologia-formal-mathematics-in-lean-4/",
+      "label": "Formal mathematics"
+    },
+    {
+      "href": "/belnap-four-valued-logic/",
+      "label": "Four-valued logic"
+    },
+    {
+      "href": "/blog/",
+      "label": "Blog"
+    },
+    {
+      "href": "/search/",
+      "label": "Search research"
+    },
+    {
+      "href": "/resources.json",
+      "label": "Research resources"
+    },
+    {
+      "href": "https://561.group/contact/#private-intake",
+      "label": "Ask about research"
+    },
+    {
+      "href": "https://engineering.561.group/",
+      "label": "Engineering"
+    },
+    {
+      "href": "https://operations.561.group/",
+      "label": "Operations"
+    },
+    {
+      "href": "https://services.561.group/",
+      "label": "Services"
+    },
+    {
+      "href": "https://561.group/",
+      "label": "561 Group"
+    }
+  ],
+  "home": "start-here",
+  "blog": true,
+  "archives": {
+    "enabled": true,
+    "pageSize": 12
+  },
+  "search": true,
+  "tufte": true,
+  "showRecordMetadata": true,
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lenticule Science",
+    "url": "https://science.561.group/",
+    "sameAs": [
+      "https://github.com/lenticule-science",
+      "https://science.561.group/actors/science"
+    ],
+    "parentOrganization": {
+      "@type": "Organization",
+      "name": "561 Group",
+      "url": "https://561.group/"
+    },
+    "logo": "https://science.561.group/logo.png"
+  },
+  "author": {
+    "@type": "Organization",
+    "name": "Lenticule Science",
+    "url": "https://science.561.group/"
+  },
+  "fediverse": {
+    "handle": "@science@science.561.group",
+    "actor": "https://science.561.group/actors/science"
+  },
+  "llms": {
+    "intro": "Lenticule Science is the research company of the 561 Group. It develops Relationality and Obsmetrologia into research on causality, information, quantum foundations, formal mathematics and a living Web. Its relational physics series supplies explicit constructions, finite calculations, source references and open physical questions. Other publications cover four-valued logic, concurrent agents, machine-payable markets and organizational science.",
+    "sections": [
+      {
+        "title": "Physics, information and causality",
+        "links": [
+          {
+            "title": "What can physics gain by beginning with relations?",
+            "url": "https://science.561.group/relational-physics/",
+            "description": "A research program connecting native relational construction to causal intervals, information and quantum questions."
+          },
+          {
+            "title": "Causality from intervals",
+            "url": "https://science.561.group/causal-intervals-and-projection/",
+            "description": "A finite interval transport theorem, a projection-loss counterexample and the assumptions of causal dimension estimates."
+          },
+          {
+            "title": "What can a boundary tell us about the world inside?",
+            "url": "https://science.561.group/information-boundaries-and-physical-records/",
+            "description": "Exact reconstruction, parity fibers, conditional entropy and the physical assumptions behind Landauer heat bounds."
+          },
+          {
+            "title": "Quantum contexts and probability",
+            "url": "https://science.561.group/quantum-contexts-and-probability/",
+            "description": "An exact family separating classical, quantum and no-signalling correlations, compared with existing Obsmetrologia weighted carriers."
+          }
+        ]
+      },
+      {
+        "title": "The living agentic Web",
+        "links": [
+          {
+            "title": "Send in the SHRIMP",
+            "url": "https://science.561.group/send-in-the-shrimp-the-jiangshi-web/",
+            "description": "The Jiangshi Web, Jing/Qi/Shen, reflective agents and AI that increases people's practical power."
+          }
+        ]
+      },
+      {
+        "title": "Machine interfaces",
+        "links": [
+          {
+            "title": "Resource inventory",
+            "url": "https://science.561.group/resources.json",
+            "description": "Resource identities, access requirements, media types and next actions."
+          },
+          {
+            "title": "Discovery JSON",
+            "url": "https://science.561.group/discovery.json",
+            "description": "Navigation, search and feeds."
+          },
+          {
+            "title": "JSON Feed",
+            "url": "https://science.561.group/feed.json",
+            "description": "Accepted publications as a JSON Feed."
+          },
+          {
+            "title": "Atom feed",
+            "url": "https://science.561.group/feed.atom.xml",
+            "description": "Accepted publications as Atom."
+          },
+          {
+            "title": "Sitemap",
+            "url": "https://science.561.group/sitemap.xml",
+            "description": "All published URLs."
+          }
+        ]
+      },
+      {
+        "title": "561 Group",
+        "links": [
+          {
+            "title": "561 Group",
+            "url": "https://561.group/",
+            "description": "The parent organization."
+          },
+          {
+            "title": "Engineering",
+            "url": "https://engineering.561.group/",
+            "description": "Engineering publications."
+          },
+          {
+            "title": "Operations",
+            "url": "https://operations.561.group/",
+            "description": "Operations publications."
+          },
+          {
+            "title": "Services",
+            "url": "https://services.561.group/",
+            "description": "Services."
+          },
+          {
+            "title": "Market",
+            "url": "https://market.561.group/",
+            "description": "Dated observations of the x402 machine-payable market."
+          }
+        ]
+      }
+    ]
+  },
+  "icon": "/favicon.svg",
+  "appleTouchIcon": "/apple-touch-icon.png",
+  "image": "/card.png",
+  "tufteTheme": {
+    "name": "lenticule-laboratory",
+    "themeColor": "#00695C",
+    "styles": "body[data-tufte-theme=lenticule-laboratory]{color-scheme:light;--tufte-bg:#F0F7F5;--tufte-surface:#FFFFFF;--tufte-ink:#123431;--tufte-muted:#496760;--tufte-line:#657D76;--tufte-accent:#00695C;--tufte-radius:0;--tufte-gap:1rem;}\n@media(prefers-color-scheme:dark){body[data-tufte-theme=lenticule-laboratory]{color-scheme:dark;--tufte-bg:#102524;--tufte-surface:#183632;--tufte-ink:#E6F6F1;--tufte-muted:#B5CDC6;--tufte-line:#97ACA6;--tufte-accent:#8FE6D0;}}\nbody[data-tufte-theme=lenticule-laboratory] a:focus-visible,body[data-tufte-theme=lenticule-laboratory] button:focus-visible{outline:3px solid var(--tufte-accent);outline-offset:3px;}\nbody[data-tufte-theme=lenticule-laboratory] .tufte-shell{width:min(1110px,100%);}\nbody[data-tufte-theme=lenticule-laboratory] .tufte-masthead{padding:.95rem 0 1.15rem;border-bottom:4px solid var(--tufte-accent);}\nbody[data-tufte-theme=lenticule-laboratory] .tufte-masthead h1{font-family:\"Space Grotesk\",\"DejaVu Sans\",Arial,sans-serif;font-size:clamp(1.9rem,4vw,2.8rem);font-weight:800;letter-spacing:-.045em;}\nbody[data-tufte-theme=lenticule-laboratory] .tufte-tile{border-left:3px solid var(--tufte-accent);border-radius:.1rem;padding:1rem 1.15rem;}\nbody[data-tufte-theme=lenticule-laboratory] .tufte-tile h2{font-family:ui-monospace,Consolas,monospace;text-transform:uppercase;letter-spacing:.09em;font-size:.8rem;color:var(--tufte-accent);}\nbody[data-tufte-theme=lenticule-laboratory] .tufte-tile-body{font-family:Georgia,\"Iowan Old Style\",serif;font-size:1.07rem;line-height:1.7;}"
+  },
+  "languages": {
+    "zh-Hans": {
+      "eyebrow": "561 集团 · 研究",
+      "cellLabel": "研究",
+      "description": "值得检验的问题：测量、模型与形式证明能够——以及不能——确立什么。",
+      "license": "复用条款在每篇出版物中注明。",
+      "machine": true
+    },
+    "lkt": {
+      "machine": true
+    }
+  }
+}

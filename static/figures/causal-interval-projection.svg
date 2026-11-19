@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 720" role="img" aria-labelledby="title desc">
+  <title id="title">Strict causal preservation can lose independence</title>
+  <desc id="desc">The source has only a before b and c before d. Its two intervals do not sequence. The map sends a to u, b and c to v, and d to w. In the target chain u before v before w, the interval u to v sequences before v to w. Both source arrows are preserved, while the distinction between the incomparable events b and c is lost.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#12635d"/></marker>
+  </defs>
+  <rect width="640" height="720" rx="20" fill="#f3f8f6"/>
+  <g font-family="system-ui, sans-serif" fill="#123431">
+    <text x="32" y="46" font-size="27" font-weight="700">A valid map can forget independence</text>
+    <text x="32" y="78" font-size="20">Exact finite construction · no measured spacetime</text>
+    <rect x="24" y="102" width="592" height="246" rx="12" fill="#fff" stroke="#91aaa1"/>
+    <text x="48" y="138" font-size="21" font-weight="700">Source: two intervals, no sequencing</text>
+    <path d="M180 204H453" stroke="#12635d" stroke-width="4" marker-end="url(#arrow)"/>
+    <path d="M180 287H453" stroke="#12635d" stroke-width="4" marker-end="url(#arrow)"/>
+    <circle cx="145" cy="204" r="31" fill="#e1f1eb" stroke="#12635d" stroke-width="2"/>
+    <circle cx="493" cy="204" r="31" fill="#fff1ce" stroke="#8b530a" stroke-width="2"/>
+    <circle cx="145" cy="287" r="31" fill="#fff1ce" stroke="#8b530a" stroke-width="2"/>
+    <circle cx="493" cy="287" r="31" fill="#e1f1eb" stroke="#12635d" stroke-width="2"/>
+    <g text-anchor="middle" font-size="27" font-weight="650"><text x="145" y="213">a</text><text x="493" y="213">b</text><text x="145" y="296">c</text><text x="493" y="296">d</text></g>
+    <text x="320" y="191" text-anchor="middle" font-size="22">a ≺ b</text><text x="320" y="274" text-anchor="middle" font-size="22">c ≺ d</text>
+    <text x="320" y="384" text-anchor="middle" font-size="23">f(a) = u;  f(b) = f(c) = v;  f(d) = w</text>
+    <text x="320" y="417" text-anchor="middle" font-size="21" fill="#774609">The map identifies b and c.</text>
+    <rect x="24" y="442" width="592" height="186" rx="12" fill="#fff" stroke="#91aaa1"/>
+    <text x="48" y="479" font-size="21" font-weight="700">Target: the image intervals do sequence</text>
+    <path d="M146 551H277" stroke="#12635d" stroke-width="4" marker-end="url(#arrow)"/>
+    <path d="M362 551H493" stroke="#12635d" stroke-width="4" marker-end="url(#arrow)"/>
+    <circle cx="110" cy="551" r="31" fill="#e1f1eb" stroke="#12635d" stroke-width="2"/>
+    <circle cx="320" cy="551" r="31" fill="#fff1ce" stroke="#8b530a" stroke-width="3"/>
+    <circle cx="530" cy="551" r="31" fill="#e1f1eb" stroke="#12635d" stroke-width="2"/>
+    <g text-anchor="middle" font-size="27" font-weight="650"><text x="110" y="560">u</text><text x="320" y="560">v</text><text x="530" y="560">w</text></g>
+    <text x="320" y="607" text-anchor="middle" font-size="23">(u, v) ≺ (v, w), because v ≤ v</text>
+    <text x="32" y="665" font-size="22" font-weight="650">Preserved: every strict source relation.</text>
+    <text x="32" y="697" font-size="22" font-weight="650">Lost: the distinction needed for independence.</text>
+  </g>
+</svg>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 720" role="img" aria-labelledby="title desc">
+  <title id="title">Three different boundaries in the same correlation family</title>
+  <desc id="desc">For the family P sub v defined in the article, v ranges from zero to one and CHSH S equals four v. Bell-local models exist up to v equal to one half. Quantum models exist up to v equal to one over square root of two, approximately 0.7071. No-signalling holds through v equal to one. All sixteen global assignments are compatible with the supports for every v below one; at one none is compatible. In particular v equal to three fifths is quantum and Bell-nonlocal despite having all sixteen support assignments.</desc>
+  <rect width="640" height="720" rx="20" fill="#f3f8f6"/>
+  <g font-family="system-ui, sans-serif" fill="#123431">
+    <text x="32" y="46" font-size="27" font-weight="700">Compatible marginals are not enough</text>
+    <text x="32" y="79" font-size="20">One probability family · S = 4v · constructed data</text>
+    <g stroke="#aec1b8" stroke-width="1.5" stroke-dasharray="4 5"><path d="M60 132V491"/><path d="M320 132V491"/><path d="M427.695526 132V491"/><path d="M580 132V491"/></g>
+    <text x="60" y="136" font-size="23" font-weight="650">Bell-local</text>
+    <rect x="60" y="154" width="260" height="39" rx="5" fill="#12635d"/>
+    <text x="320" y="222" font-size="21" text-anchor="middle">1/2</text>
+    <text x="60" y="273" font-size="23" font-weight="650">Quantum-realizable</text>
+    <rect x="60" y="291" width="367.695526" height="39" rx="5" fill="#215a9b"/>
+    <text x="427.695526" y="359" font-size="21" text-anchor="middle">1/√2 ≈ 0.7071</text>
+    <text x="60" y="410" font-size="23" font-weight="650">No-signalling</text>
+    <rect x="60" y="428" width="520" height="39" rx="5" fill="#8b530a"/>
+    <path d="M60 492H580" stroke="#123431" stroke-width="2"/>
+    <g font-size="22"><text x="60" y="524" text-anchor="middle">0</text><text x="580" y="524" text-anchor="middle">1</text><text x="320" y="524" text-anchor="middle">parameter v</text></g>
+    <rect x="24" y="552" width="592" height="143" rx="12" fill="#fff" stroke="#91aaa1"/>
+    <text x="48" y="586" font-size="22" font-weight="650">At v = 3/5: S = 12/5, above the local bound.</text>
+    <text x="48" y="621" font-size="22">All 16 support assignments still exist.</text>
+    <text x="48" y="656" font-size="22">Their weights cannot reproduce the table.</text>
+    <text x="48" y="682" font-size="18">At v = 1, the support itself has no global assignment.</text>
+  </g>
+</svg>
