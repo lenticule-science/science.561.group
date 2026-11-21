@@ -5,7 +5,6 @@ summary: "Lenticule Science's relational research program, explained through gen
 date-created: 2026-10-31
 type: article
 status: draft
-visibility: public
 tags:
   - relationality
   - obsmetrologia

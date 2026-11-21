@@ -4,7 +4,6 @@ summary: "On the four-valued algebra FOUR, naive contrapositive fails but the Ne
 date-created: 2026-10-19
 type: article
 status: active
-visibility: public
 tags: [nelson-identity, four-valued-logic, residuated-lattices, twist-products, contrapositive]
 abstract: "Naive contrapositive fails on the four-valued bilattice FOUR because residuation and bilattice negation do not commute. The Nelson identity restores a corrected form: the knowledge-order meet of a doubly iterated implication and its negation-reversed counterpart equals the single implication. It is proved by enumerating the 16 pairs of FOUR. This article states the identity, explains the failure it repairs, reads it as a conservation-law-shaped invariant, and records why it does not directly carry over to non-idempotent residuated lattices such as Lukasiewicz algebras."
 keywords: [Nelson identity, FOUR, twist product, contrapositive, residuated lattice, idempotence, Lukasiewicz]

@@ -4,7 +4,6 @@ summary: "An x402 facilitator is an optional third party that verifies a buyer's
 date-created: 2026-08-27
 type: glossary-term
 status: active
-visibility: public
 tags: [x402, facilitator, settlement, compliance, payments]
 keywords: [x402 facilitator, CDP facilitator, verify settle, EIP-3009, OFAC screening, payment verification]
 ---

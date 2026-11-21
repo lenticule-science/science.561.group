@@ -4,7 +4,6 @@ summary: "Obsmetrologia is a Lean 4 library of about 275 files that derives bila
 date-created: 2026-10-19
 type: article
 status: active
-visibility: public
 tags: [lean-4, formal-mathematics, obsmetrologia, proof-assistant, paraconsistent-logic, foundations]
 keywords: [Lean 4, Obsmetrologia, no Mathlib, formal verification, bilattice, sheaf cohomology, proof assistant]
 ---

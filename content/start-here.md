@@ -5,7 +5,6 @@ summary: "Explore Relationality and Obsmetrologia through causal intervals, quan
 date-created: 2026-10-20
 type: article
 status: active
-visibility: public
 tags:
   - relationality
   - physics

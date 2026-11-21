@@ -5,7 +5,6 @@ summary: "An exact probability example separates shared measurement contexts, Be
 date-created: 2026-10-31
 type: article
 status: draft
-visibility: public
 math: true
 tags: [relational-physics, quantum-mechanics, contextuality, probability, causality, obsmetrologia]
 ---

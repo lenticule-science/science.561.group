@@ -5,7 +5,6 @@ summary: "A two-bit example makes boundary reconstruction exact, connects ambigu
 date-created: 2026-10-31
 type: article
 status: draft
-visibility: public
 math: true
 tags: [relationality, information, causality, thermodynamics, holography, obsmetrologia]
 keywords: [boundary sufficiency, conditional entropy, information loss, physical records, Landauer principle, relational physics]

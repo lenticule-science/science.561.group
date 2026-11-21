@@ -4,7 +4,6 @@ summary: "The x402 Bazaar is a version 2 discovery extension for payable HTTP re
 date-created: 2026-08-27
 type: glossary-term
 status: active
-visibility: public
 tags: [x402, bazaar, discovery, facilitator, catalog]
 keywords: [x402 Bazaar, resource discovery, x402 discovery extension, payable resources, MCP tools, Coinbase catalog]
 ---

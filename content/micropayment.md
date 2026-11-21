@@ -4,7 +4,6 @@ summary: "A micropayment is a payment so small that processing cost and approval
 date-created: 2026-08-27
 type: glossary-term
 status: active
-visibility: public
 tags: [micropayment, x402, marginal-cost, stablecoin, history]
 keywords: [micropayment, microtransaction, per-use pricing, Millicent, DigiCash, HTTP 402, stablecoin]
 ---

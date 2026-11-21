@@ -4,7 +4,6 @@ summary: "x402 is an open protocol that uses the HTTP 402 Payment Required statu
 date-created: 2026-08-27
 type: glossary-term
 status: active
-visibility: public
 tags: [x402, http-402, stablecoin, protocol, payments]
 keywords: [x402, HTTP 402, Payment Required, stablecoin micropayment, USDC, x402 Foundation, pay per request]
 ---

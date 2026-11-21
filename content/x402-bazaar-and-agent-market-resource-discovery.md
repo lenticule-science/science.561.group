@@ -4,7 +4,6 @@ summary: "The x402 Bazaar is a discovery extension, not a single marketplace; a 
 date-created: 2026-10-17
 type: article
 status: active
-visibility: public
 tags: [x402, bazaar, resource-discovery, agent-commerce, market-measurement, correction]
 keywords: [x402 Bazaar, resource discovery, x402 facilitator, machine-payable API, market measurement, EIP-3009, agent marketplace, shop bazaar market]
 references:

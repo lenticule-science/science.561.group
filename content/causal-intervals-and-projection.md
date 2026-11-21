@@ -5,7 +5,6 @@ summary: "A worked construction from Obsmetrologia's kinematic research: order i
 date-created: 2026-10-31
 type: article
 status: draft
-visibility: public
 math: true
 tags: [relationality, obsmetrologia, causality, kinematics, causal-sets, information]
 keywords: [causal intervals, kinematic space, causal order, strict order preservation, Myrheim Meyer dimension, projection loss]

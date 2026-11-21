@@ -4,7 +4,6 @@ summary: "Belnap-Dunn logic gives each claim one of four statuses: true only, fa
 date-created: 2026-07-08
 type: paper
 status: active
-visibility: public
 tags: [belnap-dunn-logic, four-valued-logic, paraconsistent-logic, bilattices, first-degree-entailment]
 abstract: "Belnap-Dunn logic, also called first-degree entailment (FDE), assigns every proposition one of four informational statuses: supported as true only, supported as false only, supported both ways, or supported neither way. This paper is a primer and survey. It explains the two partial orders on the four values (a truth order and an information order), derives the connectives from independent positive and negative support, and shows exactly how the logic is paraconsistent (explosion fails) and paracomplete (excluded middle fails) at once. It follows the lineage through relevance logic, Dunn's semantics, Scott-style approximation and bilattices, works one small inconsistent-database example, and states what the logic does not provide: a canonical conditional, source trust, provenance, belief revision, or degrees of confidence. It closes with open problems about source-indexed, temporal and typed-consequence extensions. The paper is a synthesis of established literature plus clearly marked research directions; it claims no new theorem."
 keywords: [Belnap-Dunn logic, first-degree entailment, FDE, four-valued logic, paraconsistent logic, paracomplete logic, bilattice, information order, truth order]

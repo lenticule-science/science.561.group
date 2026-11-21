@@ -4,7 +4,6 @@ summary: "Settling closes four-valued evidence to a least fixed point; comprehen
 date-created: 2026-06-20
 type: article
 status: active
-visibility: public
 tags: [paraconsistent-logic, settling, comprehension, bilattices, sheaf-cohomology, hyperdoctrines]
 abstract: "Two linked ideas from the 561 Group's research on bilattice-valued predication: settling, which iterates a monotone closure of four-valued evidence to a least fixed point, and paraconsistent comprehension, which extracts a sub-support from a four-valued predicate by designating the top of the information order. The article defines both, states which results are marked proved, which are examples and which remain sketches, and explains how conflict is tracked in its own sheaf."
 keywords: [settling, comprehension, Lawvere, hyperdoctrine, bilattice, paraconsistent, cohomology, knowledge order]

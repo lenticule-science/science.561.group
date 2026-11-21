@@ -5,7 +5,6 @@ summary: "A perfect copy may fail to preserve an identity, while something trans
 date-created: 2026-10-29
 type: article
 status: active
-visibility: public
 tags:
   - relationality
   - philosophy

@@ -6,7 +6,6 @@ date-created: 2026-10-22
 date-modified: 2026-10-25
 type: article
 status: active
-visibility: public
 tags: [theorsday, jiangshi-web, web-theory, critical-theory, feminist-epistemology, ai-agents, shrimp, semioverse]
 keywords: [Jiangshi Web, agentic Web, Jing, Qi, Shen, SPONGE Holonomy-Repair Inference-Model Player, SHRIMP, situated knowledge, relational computation, Obsmetrologia, cultivation]
 ---

@@ -4,7 +4,6 @@ summary: "A bilattice has two lattice orders, one for truth and one for informat
 date-created: 2026-10-19
 type: article
 status: active
-visibility: public
 tags: [bilattice, belnap-dunn-logic, four-valued-logic, paraconsistent-logic, knowledge-representation]
 abstract: "A bilattice is a set with two lattice orders: a truth order and a knowledge (information) order. The four-element example, FOUR, underlies Belnap-Dunn four-valued logic. This article asks why such a logic treats 'both true and false' as a legitimate state rather than an error."
 keywords: [bilattice, Belnap-Dunn logic, knowledge order, truth order, Ginsberg, Fitting, four-valued logic, paraconsistent]

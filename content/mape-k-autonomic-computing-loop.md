@@ -4,7 +4,6 @@ summary: "MAPE-K is the Monitor-Analyze-Plan-Execute loop over shared Knowledge 
 date-created: 2026-10-06
 type: article
 status: active
-visibility: public
 tags: [mape-k, autonomic-computing, self-adaptive-systems, closure-operators, agent-orchestration]
 keywords: [MAPE-K, autonomic computing, self-adaptive systems, feedback loop, closure operator, residue, agent orchestration, runtime models, Kephart and Chess]
 references:

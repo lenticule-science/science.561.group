@@ -4,7 +4,6 @@ summary: "A machine-payable API charges per call through an inline payment chall
 date-created: 2026-08-27
 type: glossary-term
 status: active
-visibility: public
 tags: [machine-payable-api, x402, api, per-call-pricing, agents]
 keywords: [machine-payable API, pay per call API, x402 API, HTTP 402, metered API, agent payments]
 ---

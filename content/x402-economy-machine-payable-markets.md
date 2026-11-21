@@ -4,7 +4,6 @@ summary: "x402 lets software pay per HTTP request; filtered settlement was about
 date-created: 2026-09-27
 type: article
 status: active
-visibility: public
 tags: [x402, micropayments, machine-payable-api, market-measurement, stablecoins, agent-commerce]
 keywords: [x402, HTTP 402, machine-payable API, stablecoin micropayment, x402 Foundation, GENIUS Act, agentic payments, x402 market size]
 references:

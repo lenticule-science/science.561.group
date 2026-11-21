@@ -4,7 +4,6 @@ summary: "Agent-to-agent commerce is exchange in which an autonomous software ag
 date-created: 2026-08-27
 type: glossary-term
 status: active
-visibility: public
 tags: [agent-commerce, x402, machine-payable-api, two-sided-market, measurement]
 keywords: [agent-to-agent commerce, agentic commerce, AI agent payments, machine economy, x402, autonomous buyers]
 ---

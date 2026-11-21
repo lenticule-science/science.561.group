@@ -5,7 +5,6 @@ summary: "Technical AI alignment can coexist with economic exploitation. An expl
 date-created: 2026-10-27
 type: article
 status: potential
-visibility: public
 tags:
   - ai-alignment
   - political-economy
