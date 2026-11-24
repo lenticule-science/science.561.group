@@ -1,0 +1,284 @@
+{
+  "type": "PublicResourceInventory",
+  "version": 1,
+  "organization": "Lenticule Science",
+  "origin": "https://science.561.group/",
+  "updated": "2026-10-31",
+  "guide": "https://science.561.group/",
+  "discovery": "https://science.561.group/discovery.json",
+  "scope": "Public research, source repositories, publication interfaces and their access conditions.",
+  "resources": [
+    {
+      "id": "guide",
+      "title": "Explore Lenticule Science",
+      "url": "https://science.561.group/",
+      "kind": "public-guide",
+      "access": {
+        "mode": "public-read"
+      },
+      "humanAction": "Choose the relevant resource and follow its next action.",
+      "agentAccess": {
+        "method": "GET",
+        "mediaType": "text/html",
+        "authorization": "none"
+      }
+    },
+    {
+      "id": "relational-physics",
+      "title": "What can physics gain by beginning with relations?",
+      "url": "https://science.561.group/relational-physics/",
+      "kind": "public-article",
+      "description": "A research program connecting native relational construction to causal intervals, information and quantum questions. Research exposition; not a new experimental result.",
+      "access": {
+        "mode": "public-read"
+      },
+      "humanAction": "Read the worked argument, inspect its sources and reproduce the finite examples.",
+      "agentAccess": {
+        "method": "GET",
+        "mediaType": "text/html",
+        "authorization": "none"
+      }
+    },
+    {
+      "id": "causal-intervals-and-projection",
+      "title": "Causality from intervals",
+      "url": "https://science.561.group/causal-intervals-and-projection/",
+      "kind": "public-article",
+      "description": "A finite interval transport theorem, a projection-loss counterexample and the assumptions of causal dimension estimates. Research exposition; not a new experimental result.",
+      "access": {
+        "mode": "public-read"
+      },
+      "humanAction": "Read the worked argument, inspect its sources and reproduce the finite examples.",
+      "agentAccess": {
+        "method": "GET",
+        "mediaType": "text/html",
+        "authorization": "none"
+      }
+    },
+    {
+      "id": "information-boundaries-and-physical-records",
+      "title": "What can a boundary tell us about the world inside?",
+      "url": "https://science.561.group/information-boundaries-and-physical-records/",
+      "kind": "public-article",
+      "description": "Exact reconstruction, parity fibers, conditional entropy and the physical assumptions behind Landauer heat bounds. Research exposition; not a new experimental result.",
+      "access": {
+        "mode": "public-read"
+      },
+      "humanAction": "Read the worked argument, inspect its sources and reproduce the finite examples.",
+      "agentAccess": {
+        "method": "GET",
+        "mediaType": "text/html",
+        "authorization": "none"
+      }
+    },
+    {
+      "id": "quantum-contexts-and-probability",
+      "title": "Quantum contexts and probability",
+      "url": "https://science.561.group/quantum-contexts-and-probability/",
+      "kind": "public-article",
+      "description": "An exact family separating classical, quantum and no-signalling correlations, compared with existing Obsmetrologia weighted carriers. Research exposition; not a new experimental result.",
+      "access": {
+        "mode": "public-read"
+      },
+      "humanAction": "Read the worked argument, inspect its sources and reproduce the finite examples.",
+      "agentAccess": {
+        "method": "GET",
+        "mediaType": "text/html",
+        "authorization": "none"
+      }
+    },
+    {
+      "id": "jiangshi-web",
+      "title": "Send in the SHRIMP: Cultivating a Living Agentic Web",
+      "url": "https://science.561.group/send-in-the-shrimp-the-jiangshi-web/",
+      "kind": "public-article",
+      "description": "The Jiangshi Web, reflective revision, relational computation and the political economy of AI.",
+      "access": {
+        "mode": "public-read"
+      },
+      "humanAction": "Read the argument, explore the linked research and take part.",
+      "agentAccess": {
+        "method": "GET",
+        "mediaType": "text/html",
+        "authorization": "none"
+      }
+    },
+    {
+      "id": "inventory",
+      "title": "Resource inventory",
+      "url": "https://science.561.group/resources.json",
+      "kind": "public-json-interface",
+      "description": "This publication's exact resource links and access descriptions.",
+      "access": {
+        "mode": "public-read"
+      },
+      "humanAction": "Read the response or use the corresponding site guide.",
+      "agentAccess": {
+        "method": "GET",
+        "mediaType": "application/json",
+        "authorization": "none"
+      }
+    },
+    {
+      "id": "science-publication-source",
+      "title": "Science publication source and manuscript history",
+      "url": "https://github.com/lenticule-science/science.561.group",
+      "kind": "source-reference",
+      "description": "Current editorial source for the Science website, with site.json and content/ at the repository root. Source visibility is not editorial acceptance, reuse permission, or evidence of deployment.",
+      "access": {
+        "mode": "public-read"
+      },
+      "humanAction": "Inspect source and manuscript revisions; use the Science site for released editions.",
+      "agentAccess": {
+        "method": "GET",
+        "mediaType": "text/html",
+        "authorization": "none"
+      },
+      "operatingClaim": "source-only"
+    },
+    {
+      "id": "science-source",
+      "title": "Lenticule Science source",
+      "url": "https://github.com/lenticule-science/science-services-section",
+      "kind": "source-reference",
+      "description": "Research organization and scientific source material.",
+      "access": {
+        "mode": "authorized-repository-reader",
+        "anonymousAccess": "not-established"
+      },
+      "humanAction": "Inspect the named source with the repository owner's authorization.",
+      "agentAccess": {
+        "method": "GET",
+        "authorization": "repository-owner-authorized"
+      }
+    },
+    {
+      "id": "information-science",
+      "title": "Information Science source",
+      "url": "https://github.com/lenticule-science/science-services-section/blob/5423f648a3aca3ca900563aa68ef3db5220d971d/services/information-science-services-section/README.md",
+      "kind": "source-reference",
+      "description": "Source section for mathematics, knowledge, semiotics and communication.",
+      "access": {
+        "mode": "authorized-repository-reader",
+        "anonymousAccess": "not-established"
+      },
+      "humanAction": "Inspect the named source with the repository owner's authorization.",
+      "agentAccess": {
+        "method": "GET",
+        "authorization": "repository-owner-authorized"
+      }
+    },
+    {
+      "id": "natural-science",
+      "title": "Natural Science source",
+      "url": "https://github.com/lenticule-science/science-services-section/blob/5423f648a3aca3ca900563aa68ef3db5220d971d/services/natural-science-services-section/README.md",
+      "kind": "source-reference",
+      "description": "Source section for natural-science disciplines and their research questions.",
+      "access": {
+        "mode": "authorized-repository-reader",
+        "anonymousAccess": "not-established"
+      },
+      "humanAction": "Inspect the named source with the repository owner's authorization.",
+      "agentAccess": {
+        "method": "GET",
+        "authorization": "repository-owner-authorized"
+      }
+    },
+    {
+      "id": "engineering-science",
+      "title": "Engineering Science source",
+      "url": "https://github.com/lenticule-science/science-services-section/blob/5423f648a3aca3ca900563aa68ef3db5220d971d/services/engineering-science-services-section/README.md",
+      "kind": "source-reference",
+      "description": "Scientific claims underlying designed artifacts, distinct from implementation delivery.",
+      "access": {
+        "mode": "authorized-repository-reader",
+        "anonymousAccess": "not-established"
+      },
+      "humanAction": "Inspect the named source with the repository owner's authorization.",
+      "agentAccess": {
+        "method": "GET",
+        "authorization": "repository-owner-authorized"
+      }
+    },
+    {
+      "id": "obsmetrologia",
+      "title": "Obsmetrologia Lean source",
+      "url": "https://github.com/lenticule-science/obsmetrologia",
+      "kind": "source-reference",
+      "description": "The Obsmetrologia formal mathematics library in Lean, with its checking procedures.",
+      "access": {
+        "mode": "authorized-repository-reader",
+        "anonymousAccess": "not-established"
+      },
+      "humanAction": "Inspect the named source with the repository owner's authorization.",
+      "agentAccess": {
+        "method": "GET",
+        "authorization": "repository-owner-authorized"
+      },
+      "operatingClaim": "source-only"
+    },
+    {
+      "id": "l-space",
+      "title": "L-Space project source",
+      "url": "https://github.com/lenticule-science/l-space.561.group",
+      "kind": "source-reference",
+      "description": "Science-owned mathematical requirements and project source for L-Space.",
+      "access": {
+        "mode": "authorized-repository-reader",
+        "anonymousAccess": "not-established"
+      },
+      "humanAction": "Inspect the named source with the repository owner's authorization.",
+      "agentAccess": {
+        "method": "GET",
+        "authorization": "repository-owner-authorized"
+      },
+      "operatingClaim": "source-only"
+    },
+    {
+      "id": "market-observations",
+      "title": "Dated Market observations",
+      "url": "https://market.561.group/markets/observations",
+      "kind": "public-json-interface",
+      "description": "Dated observations of the machine-payable market.",
+      "access": {
+        "mode": "public-read"
+      },
+      "humanAction": "Read the response or use the corresponding site guide.",
+      "agentAccess": {
+        "method": "GET",
+        "mediaType": "application/json",
+        "authorization": "none"
+      }
+    }
+  ],
+  "relatedSites": [
+    {
+      "title": "Science",
+      "url": "https://science.561.group/"
+    },
+    {
+      "title": "Engineering",
+      "url": "https://engineering.561.group/"
+    },
+    {
+      "title": "Operations",
+      "url": "https://operations.561.group/"
+    },
+    {
+      "title": "Services",
+      "url": "https://services.561.group/"
+    },
+    {
+      "title": "Market",
+      "url": "https://market.561.group/"
+    },
+    {
+      "title": "Bazaar",
+      "url": "https://bazaar.561.group/"
+    },
+    {
+      "title": "Shop",
+      "url": "https://shop.561.group/"
+    }
+  ]
+}
